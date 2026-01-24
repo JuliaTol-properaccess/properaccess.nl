@@ -4,6 +4,11 @@ date: 2025-10-23
 slug: "hoe-test-ik-contrast-van-focusmarkering"
 categories: 
   - "tips-en-tools"
+description: "Hoe test je het contrast van focusmarkeringen volgens WCAG 1.4.11? Praktische uitleg voor toetsenbord- en focusgebruik."
+keywords:
+  - focusmarkering contrast
+  - wcag 1.4.11 non text contrast
+  - focus contrast testen
 ---
 
 SC.1.4.11 Non-text Contrast (niveau AA)

@@ -6,6 +6,11 @@ categories:
   - "tips-en-tools"
 tags: 
   - "webredactie"
+description: "Is jouw e-mailhandtekening toegankelijk? Praktische uitleg en tips om afbeeldingen en logo’s correct leesbaar te maken voor schermlezers."
+keywords:
+  - toegankelijke e-mailhandtekening
+  - digitale toegankelijkheid e-mail
+  - alternatieve tekst e-mail
 ---
 
 Deze week was ik bij de presentatie van Martine Baadenhuijsen ([https://allinclusiveatwork.nl/](https://allinclusiveatwork.nl/)). Zij is blind en vertelde me hoe vaak ze e-mailhandtekeningen tegenkomt die níét toegankelijk zijn.

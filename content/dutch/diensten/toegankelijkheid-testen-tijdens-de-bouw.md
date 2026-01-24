@@ -4,7 +4,11 @@ date: 2025-07-13
 layout: "second-page"
 slug: "toegankelijkheid-testen-tijdens-de-bouw"
 url: "/toegankelijkheid-testen-tijdens-de-bouw/"
-
+description: "Toegankelijkheidstesten tijdens de bouw of redesign van je website. Handmatige WCAG-tests in de sprint, met directe feedback voor developers."
+keywords:
+  - toegankelijkheid testen tijdens de bouw
+  - wcag testen website
+  - toegankelijkheid qa sprint
 
 ---
 

@@ -6,6 +6,11 @@ categories:
   - "tips-en-tools"
 tags: 
   - "webredactie"
+description: "Stap-voor-stap uitleg om PDF’s te testen op digitale toegankelijkheid met PAC 2024. Praktische handleiding voor webredacties volgens WCAG."
+keywords:
+  - pdf toegankelijkheid testen
+  - pac 2024 pdf testen
+  - wcag pdf testen
 ---
 
   

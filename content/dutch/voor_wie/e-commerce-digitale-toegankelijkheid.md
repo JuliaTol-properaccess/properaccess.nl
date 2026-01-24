@@ -4,6 +4,11 @@ date: 2026-01-26
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"
 layout: "second-page"
+description: "WCAG- en EAA-audits voor webshops en e-diensten. Voorkom boetes, verbeter conversie en maak je e-commerce juridisch en digitaal toegankelijk."
+keywords:
+  - wcag audit webshop
+  - eaa audit e-commerce
+  - digitale toegankelijkheid audit
 
 # Banner
 banner:

@@ -5,6 +5,11 @@ slug: "logo-toegankelijk-maken-wcag"
 categories: 
   - "eaa-voor-bedrijven"
   - "tips-en-tools"
+description: "Hoe maak je een logo met veel tekst toegankelijk volgens WCAG? Praktische tips over alt-tekst, linkdoel en gebruiksvriendelijkheid."
+keywords:
+  - logo toegankelijkheid wcag
+  - alt tekst logo
+  - toegankelijk logo link
 ---
 
 Heeft je website een logo met veel tekst? Linkt dit logo naar de homepagina? Dan kan het lastig zijn om zo’n logo toegankelijk én gebruiksvriendelijk te maken. In dit artikel leggen we uit waar je op moet letten en hoe je de juiste balans vindt.

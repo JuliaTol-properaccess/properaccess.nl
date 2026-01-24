@@ -4,6 +4,11 @@ date: 2025-04-02
 slug: "inclusie-cultuur-sport-en-attracties"
 url: "/inclusie-cultuur-sport-en-attracties/"
 layout: "second-page"
+description: "Professionele WCAG-audits en begeleiding voor musea, theaters, sportorganisaties en attracties. Praktisch, grondig en gericht op echte digitale toegankelijkheid."
+keywords:
+  - wcag audit culturele sector
+  - digitale toegankelijkheid audit
+  - toegankelijkheidsaudit website
 
 # Banner
 banner:

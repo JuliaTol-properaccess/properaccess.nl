@@ -4,6 +4,12 @@ date: 2025-08-04
 slug: "trainen-van-webredactie"
 url: "/trainen-van-webredactie/"
 layout: "home-layout"
+description: "Praktische training digitale toegankelijkheid voor webredacties. Leer toegankelijke webcontent en PDF’s maken met direct toepasbare kennis."
+keywords:
+  - training digitale toegankelijkheid webredactie
+  - training toegankelijke webcontent
+  - webredactie wcag training
+
 ---
 
 # Training Digitale Toegankelijkheid voor Webredactie

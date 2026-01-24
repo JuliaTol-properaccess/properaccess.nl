@@ -4,6 +4,11 @@ date: 2024-08-07
 slug: "google-lighthouse-als-toegankelijkheidstool"
 categories: 
   - "tips-en-tools"
+description: "Hoe betrouwbaar is Google Lighthouse voor toegankelijkheid? Een praktijkexperiment met WCAG-resultaten en vergelijking met handmatige audits."
+keywords:
+  - google lighthouse toegankelijkheid
+  - automatische wcag tests
+  - handmatige toegankelijkheidsaudit
 ---
 
 Vijf jaar geleden werkte ik als webontwikkelaar en wist ik veel minder over digitale toegankelijkheid dan nu. In 2019 leverde ik een website op die mijn teamleider wilde laten testen op het voldoen aan de WCAG-richtlijnen. Ik was ervan overtuigd dat de website toegankelijk was. Drie jaar daarvoor had ik mijn opleiding Informatica aan de Hogeschool van Malmö afgerond, waar aandacht werd besteed aan digitale toegankelijkheid. Ik gebruikte Google Lighthouse als testtool om de homepagina te controleren en behaalde een score van 95%. Mij kon niets gebeuren! Ik was geen moment bang dat er iets zou worden afgekeurd. Het resultaat van het toegankelijkheidsonderzoek was echter teleurstellend: 15 succescriteria onvoldoende! Sindsdien is veel gebeurd in mijn leven. Sinds dat jaar heb ik Google Lighthouse niet meer gebruikt.

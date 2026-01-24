@@ -4,6 +4,11 @@ date: 2025-06-29
 slug: "interview-met-julia-tol-over-digitale-toegankelijkheid-in-het-financieel-dagblad"
 categories: 
   - "eaa-voor-bedrijven"
+description: "Interview met Julia Tol in het Financieel Dagblad over digitale toegankelijkheid, EAA-wetgeving en kansen voor e-commercebedrijven."
+keywords:
+  - digitale toegankelijkheid eaa
+  - interview digitale toegankelijkheid
+  - eaa e-commerce bedrijven
 ---
 
 ## Toegankelijkheid krijgt prioriteit door EAA

@@ -4,6 +4,11 @@ date: 2022-01-26
 slug: "digital_agency"
 url: "/digital_agency/"
 layout: "second-page"
+description: "WCAG-audits en toegankelijkheidsadvies voor digital agencies. Versterk je projecten, voorkom risico’s en lever aantoonbaar toegankelijke websites en apps."
+keywords:
+  - wcag audit agency
+  - digitale toegankelijkheid bureau
+  - toegankelijkheidsaudit websites en apps
 
 
 # Banner

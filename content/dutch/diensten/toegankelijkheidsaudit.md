@@ -4,6 +4,11 @@ layout: "second-page"
 date: 2024-12-05
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
+description: "Diepgaande toegankelijkheidsaudit volgens WCAG en EAA. Heldere rapporten met concrete oplossingen, gericht op compliance, risicoverlaging en groter bereik."
+keywords:
+  - toegankelijkheidsaudit
+  - wcag audit
+  - digitale toegankelijkheid audit
 
 # Banner
 banner:

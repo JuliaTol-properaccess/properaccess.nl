@@ -4,6 +4,12 @@ date: 2024-12-05
 slug: "training-devteams"
 url: "/training-devteams/"
 layout: "home-layout"
+description: "Praktische WCAG-training voor developmentteams. Leer toegankelijk bouwen, testen en implementeren volgens WCAG 2.2 en EAA."
+keywords:
+  - wcag training developers
+  - training digitale toegankelijkheid devteams
+  - toegankelijkheid training webdevelopers
+
 ---
 
 # Training digitale toegankelijkheid voor webdevelopers

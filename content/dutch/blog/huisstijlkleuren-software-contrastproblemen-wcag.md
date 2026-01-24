@@ -4,6 +4,11 @@ date: 2025-12-03
 slug: "huisstijlkleuren-software-contrastproblemen-wcag"
 categories: 
   - "tips-en-tools"
+description: "Hoe voorkom je contrastproblemen bij automatisch toepassen van huisstijlkleuren? Praktische uitleg en WCAG-tips voor toegankelijke software."
+keywords:
+  - huisstijlkleuren wcag
+  - kleurcontrast software
+  - wcag contrastproblemen
 ---
 
 Sommige softwareleveranciers die SAS-achtige platforms aan meerdere klanten aanbieden, bieden de mogelijkheid om de interface automatisch te stylen. Dit gebeurt dan op basis van de huisstijl van de klant.Vaak wordt hiervoor het kleurenpalet uit het logo van de organisatie gebruikt. Hoewel dit op het eerste gezicht logisch en efficiënt lijkt, brengt deze aanpak een belangrijk risico met zich mee. Het gaat daarbij om onvoldoende kleurcontrast van tekst, wat direct invloed heeft op de digitale toegankelijkheid.

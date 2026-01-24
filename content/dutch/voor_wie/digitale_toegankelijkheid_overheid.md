@@ -4,6 +4,11 @@ date: 2025-04-02
 slug: "digitale_toegankelijkheid_overheid"
 url: "/digitale_toegankelijkheid_overheid/" 
 layout: "second-page"
+description: "WCAG-audits voor overheidsorganisaties volgens de Wet Digitale Overheid. Betrouwbare auditrapporten en begeleiding voor websites, apps en verklaringen."
+keywords:
+  - wcag audit overheid
+  - digitale toegankelijkheid overheid
+  - toegankelijkheidsaudit wdo
 
 # Banner
 banner:

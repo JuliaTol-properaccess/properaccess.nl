@@ -4,9 +4,14 @@ date: 2025-10-23
 slug: "hoe-test-ik-focusvolgorde"
 categories: 
   - "tips-en-tools"
+description: "Hoe test je focusvolgorde volgens WCAG 2.4.3? Praktische stappen om toetsenbordnavigatie en logische focus te controleren."
+keywords:
+  - focusvolgorde testen
+  - wcag 2.4.3 focusvolgorde
+  - toetsenbord navigatie testen
 ---
 
-Hoe te testen WCAG SC 2.4.3 - Focusvolgorde:
+# Hoe te testen WCAG SC 2.4.3 - Focusvolgorde:
 
 
 Klik in de adresbalk van de browser. Gebruik de Tab toets om te navigeren en Shift Tab om terug te navigeren.

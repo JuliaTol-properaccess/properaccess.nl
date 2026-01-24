@@ -4,6 +4,11 @@ date: 2025-08-11
 layout: "second-page"
 slug: "quickscan-digitale-toegankelijkheid"
 url: "/quickscan-digitale-toegankelijkheid/"
+description: "Snelle quickscan digitale toegankelijkheid volgens WCAG 2.2 en EAA. Binnen 5 werkdagen inzicht in belangrijkste knelpunten en verbeteracties."
+keywords:
+  - quickscan digitale toegankelijkheid
+  - wcag quickscan
+  - toegankelijkheidsscan website
 
 # Features
 features:

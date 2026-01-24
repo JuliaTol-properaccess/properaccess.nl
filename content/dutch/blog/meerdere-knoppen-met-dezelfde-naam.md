@@ -7,6 +7,11 @@ categories:
 tags: 
   - "2-4-6"
   - "toegankelijke-website"
+description: "Waarom meerdere knoppen met dezelfde naam problematisch zijn voor schermlezers en hoe je dit oplost volgens WCAG."
+keywords:
+  - meerdere knoppen zelfde naam
+  - toegankelijke naam knop
+  - wcag knoppen toegankelijkheid
 ---
 
 In een webshop kom je vaak een pagina tegen met veel producten, elk met een knop om het product aan de winkelmand toe te voegen. Soms heeft deze knop een zichtbare tekst, soms een icoon.
@@ -14,8 +19,6 @@ In een webshop kom je vaak een pagina tegen met veel producten, elk met een knop
 De meeste ziende gebruikers kunnen elke "Toevoegen aan winkelwagen"-knop associëren met het bijbehorende product door middel van visuele aanwijzingen, zoals de positie van de knop naast de naam en de foto van het product. Dus zelfs als de knoppen hetzelfde label of icoon delen, helpt hun visuele context bij het begrijpen bij welk product de knop hoort.
 
 Maar voor blinde schermlezergebruikers die niet kunnen zien wat er op het scherm staat, is dit anders. Wanneer de schermlezer zo'n knop tegenkomt, kondigt hij "Toevoegen aan winkelwagen, knop" aan. Deze tekst is afkomstig van de toegankelijkheidsnaam van de knop. Helaas zie ik veel webshops waar deze naam niet duidelijk maakt met welk product de knop is geassocieerd.
-
-![](https://properaccess.nl/wp-content/uploads/2024/07/Scherm­afbeelding-2024-06-30-om-16.34.56-1024x284.png)
 
 Veel schermlezergebruikers verkennen de inhoud van pagina's met behulp van schermlezersneltoetsen. Een gebruiker kan bijvoorbeeld een lijst met alle knoppen op de pagina oproepen om een overzicht te krijgen van de beschikbare acties en snel naar de gewenste knop te navigeren.
 
@@ -33,4 +36,3 @@ Hierdoor kan een schermlezer de unieke productinformatie aankondigen terwijl de 
 
 Dus nu, als de gebruiker de lijst met knoppen in hun schermlezer oproept, heeft elke knop een unieke toegankelijke naam die duidelijk het doel ervan identificeert.
 
-![](https://properaccess.nl/wp-content/uploads/2024/07/Scherm­afbeelding-2024-07-01-om-19.57.05.png)

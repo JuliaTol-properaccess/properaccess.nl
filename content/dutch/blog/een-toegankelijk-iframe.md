@@ -6,6 +6,11 @@ categories:
   - "achtergrond_wcag"
 tags: 
   - "developer"
+description: "Waar moet een iframe aan voldoen om WCAG-proof te zijn? Praktische uitleg voor developers over titels, toegankelijkheidsnaam en taal."
+keywords:
+  - toegankelijk iframe
+  - wcag iframe
+  - iframe toegankelijkheid
 ---
 
 Waar moet je opletten als je een iframe digitaal toegankelijk wil toevoegen aan een webpagina? De WCAG stelt een aantal eisen aan de implementatie van een iframe. Dit zijn de kritieke punten.

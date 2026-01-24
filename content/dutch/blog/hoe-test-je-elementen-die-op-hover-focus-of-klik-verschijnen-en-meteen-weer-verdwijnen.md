@@ -4,6 +4,11 @@ slug: "hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-we
 date: 2025-10-25
 categories: 
   - "tips-en-tools"
+description: "Hoe test je UI-elementen die op hover, focus of klik verschijnen en weer verdwijnen? Praktische testmethode met Chrome DevTools."
+keywords:
+  - hover focus elementen testen
+  - wcag tijdelijke content testen
+  - toegankelijkheid menus en dropdowns
 ---
 
 Sommige UI-elementen verschijnen alleen kort — bijvoorbeeld vensters, dropdowns of menus die op hover of focus zichtbaar worden. Die kunnen interactieve onderdelen bevatten die je moet testen op toegankelijkheid. Denk aan:

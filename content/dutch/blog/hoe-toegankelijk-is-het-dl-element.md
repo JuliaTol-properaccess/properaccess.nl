@@ -4,6 +4,11 @@ date: 2025-09-04
 slug: "hoe-toegankelijk-is-het-dl-element"
 categories: 
   - "achtergrond_wcag"
+description: "Hoe toegankelijk is het dl-element voor schermlezers? Analyse van WCAG, NVDA-ondersteuning en toegankelijke alternatieven."
+keywords:
+  - dl element toegankelijkheid
+  - wcag definitielijst
+  - dl element screenreader
 ---
 
 Wil je op een webpagina een relatie tussen termen en definities presenteren, dan ligt het gebruik van het `<dl>`\-element voor de hand. Het bestaat uit een container (`<dl>`) waarin je per term een `<dt>` (definition term) gebruikt, gevolgd door een `<dd>` (definition description). Je ziet dit veel terug in juridische teksten, woordenlijsten of bij gegevens die in een tabel lay-out worden gepresenteerd, zoals openingstijden:

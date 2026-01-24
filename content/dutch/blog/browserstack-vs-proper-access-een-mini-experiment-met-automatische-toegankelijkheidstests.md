@@ -6,6 +6,11 @@ categories:
   - "tips-en-tools"
 tags: 
   - "developer"
+description: "Mini-experiment met BrowserStack en automatische toegankelijkheidstests. Wat mis je zonder handmatige WCAG-audit? Een eerlijk developerperspectief."
+keywords:
+  - browserstack toegankelijkheid
+  - automatische toegankelijkheidstests
+  - handmatige wcag audit
 ---
 
 Deze week deed ik een klein experiment. Ik nam een proefabonnement op de betaalde toegankelijkheidstestfunctie van Browserstack en testte twee pagina’s van een website waar mijn team momenteel aan werkt.

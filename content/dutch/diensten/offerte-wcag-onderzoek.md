@@ -4,6 +4,11 @@ date: 2023-10-05
 layout: "second-page"
 slug: "offerte-wcag-onderzoek"
 url: "/offerte-wcag-onderzoek/"
+description: "Vraag een offerte aan voor een WCAG-audit en begeleiding. Onafhankelijke auditrapporten, juridisch onderbouwd en direct toepasbaar voor compliance."
+keywords:
+  - wcag audit offerte
+  - toegankelijkheidsaudit aanvragen
+  - wcag onderzoek kosten
 
 # Features
 features:

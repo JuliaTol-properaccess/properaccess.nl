@@ -4,6 +4,11 @@ date: 2025-08-10
 slug: "hoe-geef-ik-een-applicatie-accessible-name"
 categories: 
   - "tips-en-tools"
+description: "Hoe geef je een applicatie met role=\"application\" een correcte accessible name? Praktische uitleg voor developers met aria-labelledby."
+keywords:
+  - accessible name applicatie
+  - aria-labelledby role application
+  - wcag accessible name
 ---
 
 Beginsituatie: er is een element met `role="application"` en het heeft geen toegankelijkheidsnaam (accessible name). Hoe kun je dit oplossen?

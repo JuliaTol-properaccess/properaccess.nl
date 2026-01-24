@@ -4,9 +4,14 @@ date: 2025-10-23
 slug: "hoe-test-ik-focus-zichtbaarheid"
 categories: 
   - "tips-en-tools"
+description: "Hoe test je focus zichtbaarheid volgens WCAG 2.4.7? Praktische stappen voor toetsenbordnavigatie en zichtbare focus."
+keywords:
+  - focus zichtbaarheid testen
+  - wcag 2.4.7 focus zichtbaarheid
+  - toetsenbord focus testen
 ---
 
-Hoe test ik SC 2.4.7 - Focus zichtbaarheid
+# Hoe test ik SC 2.4.7 - Focus zichtbaarheid
 
 Navigeer met het toetsenbord door alle elementen op de pagina die focus kunnen krijgen. 
 
@@ -21,10 +26,10 @@ Als een element geen zichtbare focusmarkering heeft, controleer dan in de CSS-co
 
 Open de Inspector, klik op een element dat geen focus heeft, klik op de knop met ":hov" en vervolgens op een checkbox naast het label ":focus". De boosdoener is de code ‘outline:none’. Hiermee is de standaard browserfocus verwijderd.
 
-Uitzondering
+## Uitzondering
 
 Het is toegestaan dat een focusmarkering pas zichtbaar wordt zodra het toetsenbord is gebruikt. Zodra de markering eenmaal is weergegeven, moet deze echter zichtbaar blijven.
 
-Controles
+## Controles
 
 - Alle elementen die focus kunnen krijgen, hebben een zichtbare focusmarkering.

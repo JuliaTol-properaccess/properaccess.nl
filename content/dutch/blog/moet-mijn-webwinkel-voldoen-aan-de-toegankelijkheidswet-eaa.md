@@ -6,6 +6,11 @@ categories:
   - "eaa-voor-bedrijven"
 tags: 
   - "eea"
+description: "Moet jouw webwinkel voldoen aan de European Accessibility Act? Uitleg over EAA-verplichtingen, uitzonderingen en wat dit betekent voor webshops."
+keywords:
+  - eaa webwinkel
+  - toegankelijkheidswet webshops
+  - eaa verplichting e-commerce
 ---
 
 ## Moet mijn webwinkel voldoen aan de EAA?
