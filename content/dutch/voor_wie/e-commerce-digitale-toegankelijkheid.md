@@ -1,6 +1,6 @@
 ---
 title: "EAA voor E-commerce en e-diensten"
-date: 2026-01-26
+date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"
 layout: "second-page"
