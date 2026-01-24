@@ -1,0 +1,81 @@
+############# Dutch navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+parent = "Voor wie"
+name = "Overheid"
+url = "/digitale_toegankelijkheid_overheid"
+
+[[main]]
+parent = "Voor wie"
+name = "Cultuur"
+url = "/inclusie-cultuur-sport-en-attracties"
+
+[[main]]
+parent = "Voor wie"
+name = "E-commerce"
+url = "/e-commerce-digitale-toegankelijkheid"
+
+[[main]]
+parent = "Voor wie"
+name = "Digital Agency"
+url = "/digital_agency"
+
+[[main]]
+parent = "Diensten"
+name = "WCAG-audit"
+url = "/toegankelijkheidsaudit"
+weight = 1
+
+[[main]]
+parent = "Diensten"
+name = "Quickscan"
+url = "/quickscan-digitale-toegankelijkheid"
+weight = 2
+
+[[main]]
+parent = "Diensten"
+name = "Training devteam"
+url = "/training-devteams"
+
+[[main]]
+parent = "Diensten"
+name = "Training webredactie"
+url = "/trainen-van-webredactie"
+
+[[main]]
+name = "Blog"
+url = "/blog"
+weight = 6
+
+[[main]]
+name = "Wie zijn we"
+url = "/auditbureau-digitale-toegankelijkheid"
+weight = 5
+
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 99
+
+
+# footer menu
+[[footer]]
+name = "Algemene voorwaarden"
+url = "/algemene-voorwaarden"
+weight = 1
+
+[[footer]]
+name = "Privacy"
+url = "/privacyverklaring"
+weight = 2
+
+[[footer]]
+name = "Samenwerken"
+url = "/samenwerken-proper-access"
+weight = 3
