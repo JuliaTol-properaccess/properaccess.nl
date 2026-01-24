@@ -13,7 +13,7 @@
   {{ $pageTranslations.Set .Language.Lang .Permalink }}
 {{ end }}
 
-<select class="{{ $class }}" onchange="location = this.value">
+<select class="{{ $class }}" onchange="location = this.value" aria-label="NL: taal">
   {{ range site.Languages }}
     {{/* Fill the dropdown with all known languages */}}
     {{ $link := $pageTranslations.Get .Lang }}
