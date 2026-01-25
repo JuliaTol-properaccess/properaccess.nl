@@ -21,9 +21,7 @@ Een veelvoorkomend probleem: het logo bevat meer tekst dan er in de alternatieve
 Is je logo ook een link (bijvoorbeeld naar de homepagina)? Dan moet de bestemming van de link duidelijk zijn voor bezoekers die schermlezers gebruiken. Dit kun je op meerdere manieren aangeven:
 
 - voeg “naar de homepagina” toe aan het einde van de alt-tekst,
-
-- gebruik een extra `<span>`\-element binnen de link,
-
+- gebruik een extra `<span>`-element binnen de link,
 - of gebruik een `aria-label`.  
     
 
@@ -34,10 +32,8 @@ Daarnaast moet de link met stem bedienbaar zijn. Dat betekent: de zichtbare teks
 Je kunt dit op verschillende manieren implementeren:
 
 - via de alt-tekst van de afbeelding,
-
 - via een `aria-label`,
-
-- of via een extra `<span>`\-element met tekst.  
+- of via een extra `<span>`-element met tekst.  
     
 
 ### Het spanningsveld tussen toegankelijkheid en gebruiksvriendelijkheid
@@ -60,7 +56,7 @@ Dat zette me aan het denken.
 
 Het W3C-logo bevat een abstract vignet en de tekst “World Wide Web Consortium”. In de alt-tekst staat simpelweg “W3C”. De toegankelijke naam van de link is “W3C Visit the homepage”.
 
-![screenshot logo W3C](https://properaccess.nl/wp-content/uploads/2025/12/Scherm­afbeelding-2025-12-03-om-15.56.25-1024x377.png)
+![screenshot logo W3C](images/logow3.png)
 
 ✅ Voordeel: Het is kort, helder en prettig om naar te luisteren.
 
@@ -71,13 +67,7 @@ Het W3C-logo bevat een abstract vignet en de tekst “World Wide Web Consortium�
 Als website-eigenaar kun je het jezelf én je bezoekers gemakkelijker maken:
 
 - Houd het logo eenvoudig. Laat de slogan weg uit de afbeelding. Zet deze liever als HTML-tekst naast of onder het logo.  
-    
-
-- Geef het logo een alt-tekst zoals:  
-      
-    “Proper Access, ga naar de homepagina”  
-      
-    – met de zichtbare tekst (bedrijfsnaam) vooraan in de toegankelijke naam.  
+- Geef het logo een alt-tekst zoals: “Proper Access, ga naar de homepagina” met de zichtbare tekst (bedrijfsnaam) vooraan in de toegankelijke naam.  
     
 
 Zo maak je je website zowel toegankelijk als gebruiksvriendelijk. En dat is precies wat je bezoekers nodig hebben.
