@@ -38,51 +38,61 @@
         {{ $active := eq $menuURL $pageURL }}
         {{ if .HasChildren }}
           <li class="nav-item nav-dropdown group relative">
+
             <input
               type="checkbox"
               id="submenu-{{ .Name | urlize }}"
               class="peer hidden" />
-            <label
-              for="submenu-{{ .Name | urlize }}"
-              class="nav-link {{ range .Children }}
-                {{ $childURL := .URL | absLangURL }}
-                {{ $active := eq $childURL $pageURL }}
-                {{ if $active }}active{{ end }}
-              {{ end }} inline-flex items-center">
+
+            <button
+              type="button"
+              class="nav-link inline-flex items-center gap-1
+                {{ range .Children }}
+                  {{ $childURL := .URL | absLangURL }}
+                  {{ $active := eq $childURL $pageURL }}
+                  {{ if $active }}active{{ end }}
+                {{ end }}"
+              aria-expanded="false"
+              aria-controls="submenu-list-{{ .Name | urlize }}"
+              data-submenu-toggle="submenu-{{ .Name | urlize }}"
+            >
               {{ .Name }}
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
               </svg>
-            </label>
+            </button>
+
             <ul
-              class="nav-dropdown-list hidden peer-checked:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+              id="submenu-list-{{ .Name | urlize }}"
+              class="
+                  nav-dropdown-list
+                  hidden
+                  peer-checked:block
+
+                  lg:absolute
+                  lg:opacity-0
+                  lg:invisible
+
+                  lg:peer-checked:visible
+                  lg:peer-checked:opacity-100
+
+                  lg:group-hover:visible
+                  lg:group-hover:opacity-100
+                "
+            >
               {{ range .Children }}
-                {{ $childURL := .URL | absLangURL }}
-                {{ $active := eq $childURL $pageURL }}
                 <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link {{ if $active }}
-                      active
-                    {{- end -}}"
-                    {{ if findRE `^http` .URL }}
-                      target="_blank" rel="noopener"
-                    {{ end }}
-                    href="{{- if findRE `^#` .URL -}}
-                      {{- if not $.IsHome -}}
-                        {{- site.Home.RelPermalink -}}
-                      {{- end }}
-                      {{- .URL -}}
-                    {{- else -}}
-                      {{- .URL | relLangURL -}}
-                    {{- end -}}">
+                  <a class="nav-dropdown-link" href="{{ .URL | relLangURL }}">
                     {{ .Name }}
                   </a>
                 </li>
               {{ end }}
             </ul>
+
           </li>
-        {{ else }}
+          {{ else }}
+
+
           <li class="nav-item">
             <a
               class="nav-link {{ if $active }}active{{- end -}}"
@@ -116,7 +126,7 @@
       {{ with site.Params.search }}
         {{ if .enable }}
           <button
-            aria-label="search"
+            aria-label="Zoek"
             class="border-border text-text-dark hover:text-primary
             dark:border-darkmode-border mr-5 inline-block border-r pr-5
             text-xl dark:text-white cursor-pointer dark:hover:text-darkmode-primary
