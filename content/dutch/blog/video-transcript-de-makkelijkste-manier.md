@@ -4,6 +4,7 @@ date: 2025-07-18
 slug: "video-transcript-de-makkelijkste-manier"
 categories: 
   - "tips-en-tools"
+  - "Webredactie"
 tags: 
   - "webredactie"
 ---

@@ -4,7 +4,7 @@ date: 2025-09-18
 slug: "hoe-toegankelijk-zijn-offertes-in-pdf-formaat"
 categories: 
   - "achtergrond_wcag"
-  - "eaa-voor-bedrijven"
+  - "de EAA"
 description: "Hoe toegankelijk zijn offertes in PDF-formaat? Mini-onderzoek naar WCAG-problemen, EAA-risico’s en wat bedrijven moeten verbeteren."
 keywords:
   - toegankelijke pdf offerte

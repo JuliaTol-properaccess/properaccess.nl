@@ -4,6 +4,8 @@ date: 2025-12-03
 slug: "huisstijlkleuren-software-contrastproblemen-wcag"
 categories: 
   - "tips-en-tools"
+  - "de EAA"
+  - "Webdeveloper"
 description: "Hoe voorkom je contrastproblemen bij automatisch toepassen van huisstijlkleuren? Praktische uitleg en WCAG-tips voor toegankelijke software."
 keywords:
   - huisstijlkleuren wcag

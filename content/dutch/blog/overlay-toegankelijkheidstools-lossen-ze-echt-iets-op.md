@@ -4,6 +4,7 @@ date: 2025-08-23
 slug: "overlay-toegankelijkheidstools-lossen-ze-echt-iets-op"
 categories: 
   - "tips-en-tools"
+  - "de EAA"
 description: "Werken overlay-toegankelijkheidstools echt? Mini-onderzoek naar widgets, WCAG-problemen, EAA/WDO-compliance en gebruikerservaring."
 keywords:
   - overlay toegankelijkheidstools
@@ -14,6 +15,7 @@ keywords:
 ## Waarom dit mini-onderzoek
 
 Veel teams vragen me of je digitale toegankelijkheid kunt “fixen” door een overlay of widget toe te voegen die fouten automatisch oplost. En, in het verlengde daarvan: voldoe je met zo’n tool meteen aan de wet ([EAA](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32016L2102) of [WDO](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/wetgeving/wet-digitale-overheid/))?  
+
 Voor dit mini‑onderzoek bekeek ik drie commerciële toegankelijkheidstools die je als laag over een website plaatst:
 
 - Coderoll – “Accessibility” (getest op fsbnh.bank)
@@ -55,7 +57,7 @@ Overlay‑tools beloven met één tool een pagina “toegankelijker” te maken:
 
 ## Bevindingen per tool
 
-### 1) Coderoll – “Accessibility” (getest op fsbnh.bank)
+### 1. Coderoll – “Accessibility” (getest op fsbnh.bank)
 
 #### Gebruik & UX:
 
@@ -81,7 +83,7 @@ Overlay‑tools beloven met één tool een pagina “toegankelijker” te maken:
 
 > Dimitri: De tool staat helemaal aan het einde van de focusvolgorde, waardoor het onwaarschijnlijk is dat een gebruiker met een screenreader hem überhaupt bereikt. Het is niet duidelijk hoe je hem kunt dwingen om naamloze links van beschrijvingen te voorzien. Een deel van de functies heeft te maken met visuele instellingen, maar voor mij als screenreader-gebruiker zijn die nutteloos.
 
-### 2) AccessiBe – “Accessibility Adjustments” (getest op ifa‑nh.com)
+### 2. AccessiBe – “Accessibility Adjustments” (getest op ifa‑nh.com)
 
 #### Gebruik & UX
 
@@ -117,7 +119,7 @@ Overlay‑tools beloven met één tool een pagina “toegankelijker” te maken:
 
 > Dimitri: De tool biedt aan om de “screenreader-modus” in te schakelen en de handleiding te lezen. Dat roept meteen de vraag op: waarom zou ik opnieuw tijd moeten steken in een extra instructie, terwijl ik al weet hoe ik een screenreader moet gebruiken? De website verandert na activering van de module, maar de nieuwe elementen roepen vragen op: is alles nu echt toegankelijk geworden? Voor een objectieve beoordeling zijn gezamenlijke tests met een ziende onderzoeker nodig.
 
-### 3) EqualWeb – “Accessible” (getest op https://www.zara.com/nl/)
+### 3. EqualWeb – “Accessible” (getest op https://www.zara.com/nl/)
 
 #### Gebruik & UX
 

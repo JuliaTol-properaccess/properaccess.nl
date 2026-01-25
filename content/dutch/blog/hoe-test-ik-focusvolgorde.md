@@ -4,6 +4,9 @@ date: 2025-10-23
 slug: "hoe-test-ik-focusvolgorde"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
+tags:
+ - "2-4-3"
 description: "Hoe test je focusvolgorde volgens WCAG 2.4.3? Praktische stappen om toetsenbordnavigatie en logische focus te controleren."
 keywords:
   - focusvolgorde testen

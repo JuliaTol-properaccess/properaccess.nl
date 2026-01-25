@@ -4,8 +4,7 @@ date: 2025-05-07
 slug: "instructie-pdfs-testen-met-pac-2024"
 categories: 
   - "tips-en-tools"
-tags: 
-  - "webredactie"
+  - "Webredactie"
 description: "Stap-voor-stap uitleg om PDF’s te testen op digitale toegankelijkheid met PAC 2024. Praktische handleiding voor webredacties volgens WCAG."
 keywords:
   - pdf toegankelijkheid testen

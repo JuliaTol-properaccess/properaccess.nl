@@ -4,6 +4,7 @@ date: 2025-05-17
 slug: "button-vreet-de-kop-op"
 categories: 
   - "tips-en-tools"
+  - "1-3-1"
 tags: 
   - "developer"
 description: "Veelgemaakte WCAG-fout bij accordeons: wanneer een button de kop ‘opeet’. Uitleg en oplossing voor toegankelijke headings."

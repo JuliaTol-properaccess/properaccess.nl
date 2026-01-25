@@ -4,6 +4,7 @@ date: 2025-09-08
 slug: "toegankelijke-websites-van-politieke-partijen"
 categories: 
   - "achtergrond_wcag"
+  - "de EAA"
 ---
 
 Met het oog op de verkiezingen in oktober vroeg ik mij af: hoe toegankelijk zijn de websites van politieke partijen die zeggen dat ze staan voor **een betere digitale wereld**?

@@ -4,6 +4,7 @@ date: 2024-04-07
 slug: "toegankelijke_kopteksten_wcag"
 categories: 
   - "achtergrond_wcag"
+  - "Webredactie"
 ---
 
 Doelgroep: webredactie

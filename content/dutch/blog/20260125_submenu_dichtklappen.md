@@ -4,6 +4,7 @@ date: 2026-01-25
 slug: "submenu_dichtklappen"
 categories: 
   - "toegankelijke code"
+  - "developer"
 tags: 
   - "developer"
   - "2-4-3"

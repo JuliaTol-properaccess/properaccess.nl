@@ -3,9 +3,7 @@ title: "Moet mijn webwinkel voldoen aan de toegankelijkheidswet? (EAA)"
 date: 2024-10-23
 slug: "moet-mijn-webwinkel-voldoen-aan-de-toegankelijkheidswet-eaa"
 categories: 
-  - "eaa-voor-bedrijven"
-tags: 
-  - "eea"
+  - "de EAA"
 description: "Moet jouw webwinkel voldoen aan de European Accessibility Act? Uitleg over EAA-verplichtingen, uitzonderingen en wat dit betekent voor webshops."
 keywords:
   - eaa webwinkel

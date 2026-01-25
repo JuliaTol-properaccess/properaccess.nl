@@ -4,6 +4,10 @@ date: 2025-08-10
 slug: "hoe-geef-ik-een-applicatie-accessible-name"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
+tags:
+  - "4-1-2"
+  - "2-4-6"
 description: "Hoe geef je een applicatie met role=\"application\" een correcte accessible name? Praktische uitleg voor developers met aria-labelledby."
 keywords:
   - accessible name applicatie

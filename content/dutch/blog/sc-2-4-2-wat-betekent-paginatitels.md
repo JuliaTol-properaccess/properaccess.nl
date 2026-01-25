@@ -31,7 +31,7 @@ Kort: een goede titel vertelt meteen waar de pagina over gaat.
 
 - Titels die niet overeenkomen met de inhoud van de pagina, zoals “Contact” voor een pagina met algemene informatie.
 
-- Geen tekst in het <title>-element. Er wordt de URL van de pagina getoond.
+- Geen tekst in het `<title>`-element. Er wordt de URL van de pagina getoond.
 
 ## Wat kun je als webredacteur of manager doen?
 

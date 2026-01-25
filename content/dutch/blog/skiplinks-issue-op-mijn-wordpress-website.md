@@ -4,6 +4,7 @@ date: 2024-07-31
 slug: "skiplinks-issue-op-mijn-wordpress-website"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
 tags: 
   - "2-4-1"
   - "skiplink"

@@ -1,9 +1,12 @@
 ---
-title: "Hoe toegankelijk is het `&lt;dl>`-element?"
+title: "Hoe toegankelijk is het `<dl>`-element?"
 date: 2025-09-04
 slug: "hoe-toegankelijk-is-het-dl-element"
 categories: 
   - "achtergrond_wcag"
+  - "Webdeveloper"
+tags:
+  - "1-3-1"
 description: "Hoe toegankelijk is het dl-element voor schermlezers? Analyse van WCAG, NVDA-ondersteuning en toegankelijke alternatieven."
 keywords:
   - dl element toegankelijkheid

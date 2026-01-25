@@ -3,7 +3,7 @@ title: "Gestrand dicht bij de poolcirkel : digitale ontoegankelijkheid"
 date: 2025-10-02
 slug: "toegankelijke_pin_automaat"
 categories: 
-  - "eaa-voor-bedrijven"
+  - "de EAA"
   - "tips-en-tools"
 ---
 

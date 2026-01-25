@@ -4,6 +4,9 @@ date: 2025-10-23
 slug: "hoe-test-ik-focus-zichtbaarheid"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
+tags:
+  - "2-4-7"
 description: "Hoe test je focus zichtbaarheid volgens WCAG 2.4.7? Praktische stappen voor toetsenbordnavigatie en zichtbare focus."
 keywords:
   - focus zichtbaarheid testen

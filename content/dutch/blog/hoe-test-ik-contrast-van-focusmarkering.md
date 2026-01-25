@@ -4,6 +4,10 @@ date: 2025-10-23
 slug: "hoe-test-ik-contrast-van-focusmarkering"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
+tags:
+  - "2-4-7"
+  - "1-4-11"
 description: "Hoe test je het contrast van focusmarkeringen volgens WCAG 1.4.11? Praktische uitleg voor toetsenbord- en focusgebruik."
 keywords:
   - focusmarkering contrast

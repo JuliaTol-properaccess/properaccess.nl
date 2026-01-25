@@ -1,9 +1,10 @@
 ---
 title: "Meerdere knoppen met dezelfde naam"
-date: 2024-07-01
+date: 2025-01-25
 slug: "meerdere-knoppen-met-dezelfde-naam"
 categories: 
   - "achtergrond_wcag"
+  - "Webdeveloper"
 tags: 
   - "2-4-6"
   - "toegankelijke-website"
@@ -13,6 +14,9 @@ keywords:
   - toegankelijke naam knop
   - wcag knoppen toegankelijkheid
 ---
+## Update 25 jan 2026
+Uit ons recent onderzoek met een blinde collega is gebleken dat de meeste mensen liever van kop naar kop navigeren. In plaats van verborgen tekst aan de knop toe te voegen, kun je er voor zorgen dat de naam van een product als een kop is gemarkeerd. 
+
 
 In een webshop kom je vaak een pagina tegen met veel producten, elk met een knop om het product aan de winkelmand toe te voegen. Soms heeft deze knop een zichtbare tekst, soms een icoon.
 
@@ -30,7 +34,11 @@ Bijvoorbeeld, een VoiceOver-gebruiker kan de Web Rotor openen (Control Option U)
 
 In de onderstaande voorbeeld zie je extra HTML in de knop en een CSS class "visually-hidden" die het probleem oplossen.
 
-https://codepen.io/JuliaZjochova/pen/oNRrRwY
+<iframe height="300" style="width: 100%;" scrolling="no" title="Toevoegen aan winkelwagen knop" src="https://codepen.io/JuliaZjochova/embed/oNRrRwY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true">
+      See the Pen <a href="https://codepen.io/JuliaZjochova/pen/oNRrRwY">
+  Toevoegen aan winkelwagen knop</a> by Julia Tol (<a href="https://codepen.io/JuliaZjochova">@JuliaZjochova</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 Hierdoor kan een schermlezer de unieke productinformatie aankondigen terwijl de visueel verborgen tekst niet zichtbaar is voor ziende gebruikers. Dit verbetert de toegankelijkheid zonder de visuele lay-out van de pagina te veranderen.
 

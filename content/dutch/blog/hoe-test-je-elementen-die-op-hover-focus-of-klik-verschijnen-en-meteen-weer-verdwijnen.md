@@ -4,9 +4,12 @@ slug: "hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-we
 date: 2025-10-25
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
+tags:
+  - "4-1-2"
 description: "Hoe test je UI-elementen die op hover, focus of klik verschijnen en weer verdwijnen? Praktische testmethode met Chrome DevTools."
 keywords:
-  - hover focus elementen testen
+  - toegankelijke naam van elementen testen
   - wcag tijdelijke content testen
   - toegankelijkheid menus en dropdowns
 ---

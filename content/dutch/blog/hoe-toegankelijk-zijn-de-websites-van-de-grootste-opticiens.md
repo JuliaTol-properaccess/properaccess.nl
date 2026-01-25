@@ -3,7 +3,10 @@ title: "Hoe toegankelijk zijn de websites van de grootste opticiens?"
 date: 2025-08-26
 slug: "hoe-toegankelijk-zijn-de-websites-van-de-grootste-opticiens"
 categories: 
-  - "eaa-voor-bedrijven"
+  - "de EAA"
+tags:
+  - "1-4-3"
+  - "1-4-11"
 description: "Mini-scan van de digitale toegankelijkheid bij grote opticiens. Inzicht in WCAG-problemen, EAA-risico’s en wat bedrijven nú kunnen verbeteren."
 keywords:
   - toegankelijkheid websites opticiens

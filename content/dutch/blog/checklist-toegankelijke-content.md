@@ -4,6 +4,7 @@ date: 2024-07-30
 slug: "checklist-toegankelijke-content"
 categories: 
   - "tips-en-tools"
+  - "Webredactie"
 tags: 
   - "webredactie"
 description: "Praktische checklist voor toegankelijke webcontent volgens WCAG. Handige tips voor webredacties om content correct en inclusief te publiceren."

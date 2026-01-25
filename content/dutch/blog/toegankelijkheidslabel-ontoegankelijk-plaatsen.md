@@ -4,6 +4,7 @@ date: 2024-06-21
 slug: "toegankelijkheidslabel-ontoegankelijk-plaatsen"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
 tags: 
   - "aria-label"
   - "toegankelijke-website"

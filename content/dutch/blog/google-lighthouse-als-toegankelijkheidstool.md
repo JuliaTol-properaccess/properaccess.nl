@@ -4,6 +4,7 @@ date: 2024-08-07
 slug: "google-lighthouse-als-toegankelijkheidstool"
 categories: 
   - "tips-en-tools"
+  - "de EAA"
 description: "Hoe betrouwbaar is Google Lighthouse voor toegankelijkheid? Een praktijkexperiment met WCAG-resultaten en vergelijking met handmatige audits."
 keywords:
   - google lighthouse toegankelijkheid

@@ -4,9 +4,7 @@ date: 2024-05-13
 slug: "indeling-van-succescriteria-per-type-beperking"
 categories: 
   - "achtergrond_wcag"
-tags: 
-  - "webredactie"
-  - "toegankelijke-website"
+  - "de EAA"
 description: "Overzicht van WCAG 2.2 succescriteria ingedeeld per type beperking. Helpt webredacties en teams om toegankelijkheid beter te begrijpen."
 keywords:
   - wcag succescriteria overzicht

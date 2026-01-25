@@ -4,6 +4,7 @@ date: 2025-11-17
 slug: "tabel-met-knoppen-om-in-de-kolommen-te-sorteren"
 categories: 
   - "tips-en-tools"
+  - "Webdeveloper"
 ---
 
 Sommige tabellen hebben een rij met kolomkoppen met icoontjes waarmee je de inhoud van de kolom oplopend of aflopend kunt sorteren. Vaak is deze functionaliteit niet toegankelijk voor bezoekers die een schermlezer gebruiken.

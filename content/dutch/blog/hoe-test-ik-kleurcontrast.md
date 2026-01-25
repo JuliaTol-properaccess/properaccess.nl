@@ -4,6 +4,10 @@ date: 2025-05-10
 slug: "hoe-test-ik-kleurcontrast"
 categories: 
   - "tips-en-tools"
+  - "Webredactie"
+tags:
+  - "1-4-3"
+  - "1-4-11"
 description: "Stap-voor-stap instructie om kleurcontrast te testen volgens WCAG. Praktische uitleg met de TPGi Colour Contrast Analyser."
 keywords:
   - kleurcontrast testen

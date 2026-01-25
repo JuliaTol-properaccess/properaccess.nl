@@ -4,6 +4,7 @@ date: 2025-06-21
 slug: "browserstack-vs-proper-access-een-mini-experiment-met-automatische-toegankelijkheidstests"
 categories: 
   - "tips-en-tools"
+  - "de EAA"
 tags: 
   - "developer"
 description: "Mini-experiment met BrowserStack en automatische toegankelijkheidstests. Wat mis je zonder handmatige WCAG-audit? Een eerlijk developerperspectief."

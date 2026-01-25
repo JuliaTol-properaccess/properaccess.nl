@@ -4,6 +4,7 @@ slug: "wat-developer-moet-weten-over-de-eaa"
 date: 2025-03-25
 categories: 
   - "achtergrond_wcag"
+  - "de EAA"
 tags: 
   - "toegankelijke-website"
 ---

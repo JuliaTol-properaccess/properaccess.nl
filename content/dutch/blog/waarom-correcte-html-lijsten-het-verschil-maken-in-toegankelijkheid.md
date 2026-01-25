@@ -4,6 +4,7 @@ date: 2025-08-23
 slug: "waarom-correcte-html-lijsten-het-verschil-maken-in-toegankelijkheid"
 categories: 
   - "tips-en-tools"
+  - "Webredactie"
 tags: 
   - "webredactie"
 ---

@@ -4,6 +4,7 @@ date: 2025-09-24
 slug: "hoe-gebruikt-een-blinde-persoon-een-website"
 categories: 
   - "achtergrond_wcag"
+  - "de EAA"
 description: "Hoe gebruikt een blinde persoon een website? Inzichten uit een gesprek over structuur, navigatie en digitale toegankelijkheid."
 keywords:
   - hoe gebruikt een blinde een website
