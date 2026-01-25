@@ -37,7 +37,7 @@ Kortom: het is essentieel dat gebruikersinterfaces niet blindelings de huisstijl
 
 Onderstaand script helpt leveranciers om automatisch alle logokleuren te testen op contrast. Het vergelijkt elke kleur met wit (`#FFFFFF`). Daarnaast verschijnt een melding wanneer het contrast te laag is om te voldoen aan de WCAG-eisen.
 
-```
+```js
 function hexToRgb(hex) {
   hex = hex.replace('#', '');
   return {
@@ -77,6 +77,7 @@ function checkContrastWithWhite(hex) {
 // Voorbeeld
 const logoKleuren = ["#FFD400", "#004C97", "#00AEEF"];
 logoKleuren.forEach(checkContrastWithWhite);
+
 ```
 
 Deze automatische checks voorkomen contrastfouten nog vóórdat de software bij de klant terechtkomt.
