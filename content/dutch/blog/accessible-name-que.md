@@ -12,6 +12,8 @@ keywords:
   - accessible name
   - wcag toegankelijke naam
   - digitale toegankelijkheid developers
+aliases:
+  - /accessible-name-que/
 ---
 
 Bij Proper Access beginnen we al onze trainingen voor webdevelopers met iets dat simpel lijkt, maar reuze belangrijk is. Want wat moet je nou absoluut weten over digitale toegankelijkheid? Als ik je als ontwikkelaar een tip mag geven: dat is begrijpen hoe je de toegankelijke naam (accessibility name) van een interactief element gebruikt. 
