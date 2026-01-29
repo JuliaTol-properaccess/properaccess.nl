@@ -7,6 +7,8 @@ categories:
   - "de EAA"
 tags: 
   - "toegankelijke-website"
+aliases:
+  - /wat-developer-moet-weten-over-de-eaa/
 ---
 
 ## Wat is de toegankelijkheidswet?

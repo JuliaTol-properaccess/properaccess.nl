@@ -12,6 +12,8 @@ keywords:
   - browserstack toegankelijkheid
   - automatische toegankelijkheidstests
   - handmatige wcag audit
+aliases:
+  - /browserstack-vs-proper-access-een-mini-experiment-met-automatische-toegankelijkheidstests/
 ---
 
 Deze week deed ik een klein experiment. Ik nam een proefabonnement op de betaalde toegankelijkheidstestfunctie van Browserstack en testte twee pagina’s van een website waar mijn team momenteel aan werkt.

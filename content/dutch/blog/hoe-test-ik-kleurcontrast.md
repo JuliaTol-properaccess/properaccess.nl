@@ -13,6 +13,8 @@ keywords:
   - kleurcontrast testen
   - wcag kleurcontrast
   - contrast checker wcag
+aliases:
+  - /hoe-test-ik-kleurcontrast/
 ---
 
 ##  **Stap 1: Download en installeer de tool**

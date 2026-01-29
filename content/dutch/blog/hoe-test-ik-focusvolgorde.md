@@ -12,6 +12,8 @@ keywords:
   - focusvolgorde testen
   - wcag 2.4.3 focusvolgorde
   - toetsenbord navigatie testen
+aliases:
+  - /hoe-test-ik-focusvolgorde/
 ---
 
 # Hoe te testen WCAG SC 2.4.3 - Focusvolgorde:

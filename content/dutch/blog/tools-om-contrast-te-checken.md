@@ -9,6 +9,8 @@ tags:
   - "1-4-11"
   - "1-4-3"
   - "webredactie"
+aliases:
+  - /tools-om-contrast-te-checken/
 ---
 
 De TPGi Color Contrast Checker is een gratis tool om te controleren of de kleuren op je website genoeg contrast hebben volgens de WCAG-richtlijnen.

@@ -7,6 +7,8 @@ categories:
   - "Webredactie"
 tags: 
   - "webredactie"
+aliases:
+  - /waarom-correcte-html-lijsten-het-verschil-maken-in-toegankelijkheid/
 ---
 
 Wie wel eens een toegankelijkheidsaudit heeft gezien, weet: de grootste problemen zitten vaak in de kleinste details. Een klassiek voorbeeld? Lijsten in HTML. Wat voor de ogen slechts een rijtje bullets lijkt, kan voor iemand met een schermlezer uitlopen op een mijnenveld van verwarring.

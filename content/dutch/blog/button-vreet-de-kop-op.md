@@ -12,6 +12,8 @@ keywords:
   - wcag accordeon button
   - heading button toegankelijkheid
   - wcag succescriterium 1.3.1
+aliases:
+  - /button-vreet-de-kop-op/
 ---
 
 We zijn fan van de accordeon. Nee, niet het blaasbalginstrument dat klinkt als een complete Duitse jodelband. Ik heb het over de elegante digitale variant (die gelukkig geen muziek maakt): in- en uitklapbare secties waarmee je een bak informatie overzichtelijk kunt presenteren, door alles wat niet direct nodig is in ingeklapte accordeons te verbergen.
