@@ -12,6 +12,8 @@ keywords:
   - toegankelijke naam van elementen testen
   - wcag tijdelijke content testen
   - toegankelijkheid menus en dropdowns
+aliases:
+  - /hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-weer-verdwijnen/
 ---
 
 Sommige UI-elementen verschijnen alleen kort — bijvoorbeeld vensters, dropdowns of menus die op hover of focus zichtbaar worden. Die kunnen interactieve onderdelen bevatten die je moet testen op toegankelijkheid. Denk aan:

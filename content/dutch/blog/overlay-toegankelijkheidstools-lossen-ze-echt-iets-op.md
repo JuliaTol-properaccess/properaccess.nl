@@ -10,6 +10,8 @@ keywords:
   - overlay toegankelijkheidstools
   - accessibility overlay wcag
   - toegankelijkheidswidget eaa
+aliases:
+  - /overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/
 ---
 
 ## Waarom dit mini-onderzoek

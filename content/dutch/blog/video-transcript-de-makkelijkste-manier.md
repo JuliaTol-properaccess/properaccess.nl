@@ -7,6 +7,8 @@ categories:
   - "Webredactie"
 tags: 
   - "webredactie"
+aliases:
+  - /video-transcript-de-makkelijkste-manier/
 ---
 
 Verder op deze pagina staat een video die in een toegankelijkheidsaudit zou worden afgekeurd. In deze video komt informatie in beeld die niet toegankelijk is voor mensen die de video niet kunnen zien. Probeer het zelf te begrijpen:

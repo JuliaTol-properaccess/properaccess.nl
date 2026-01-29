@@ -12,6 +12,8 @@ keywords:
   - toegankelijkheid websites opticiens
   - eaa toegankelijkheid bedrijven
   - wcag quickscan bedrijven
+aliases:
+  - /hoe-toegankelijk-zijn-de-websites-van-de-grootste-opticiens/
 ---
 
 ## Een mini-scan met verrassende inzichten

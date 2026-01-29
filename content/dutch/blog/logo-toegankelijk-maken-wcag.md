@@ -10,6 +10,8 @@ keywords:
   - logo toegankelijkheid wcag
   - alt tekst logo
   - toegankelijk logo link
+aliases:
+  - /logo-toegankelijk-maken-wcag/
 ---
 
 Heeft je website een logo met veel tekst? Linkt dit logo naar de homepagina? Dan kan het lastig zijn om zo’n logo toegankelijk én gebruiksvriendelijk te maken. In dit artikel leggen we uit waar je op moet letten en hoe je de juiste balans vindt.

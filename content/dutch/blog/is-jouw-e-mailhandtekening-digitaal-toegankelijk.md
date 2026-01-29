@@ -10,6 +10,8 @@ keywords:
   - toegankelijke e-mailhandtekening
   - digitale toegankelijkheid e-mail
   - alternatieve tekst e-mail
+aliases:
+  - /is-jouw-e-mailhandtekening-digitaal-toegankelijk/
 ---
 
 Deze week was ik bij de presentatie van Martine Baadenhuijsen ([https://allinclusiveatwork.nl/](https://allinclusiveatwork.nl/)). Zij is blind en vertelde me hoe vaak ze e-mailhandtekeningen tegenkomt die níét toegankelijk zijn.
