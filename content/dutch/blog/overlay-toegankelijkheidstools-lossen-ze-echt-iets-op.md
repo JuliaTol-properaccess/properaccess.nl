@@ -12,6 +12,7 @@ keywords:
   - toegankelijkheidswidget eaa
 aliases:
   - /overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/
+  - /overlay-toegankelijkheidstools/
 ---
 
 ## Waarom dit mini-onderzoek
