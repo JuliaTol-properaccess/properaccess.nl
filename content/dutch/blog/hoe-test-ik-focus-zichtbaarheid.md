@@ -12,6 +12,8 @@ keywords:
   - focus zichtbaarheid testen
   - wcag 2.4.7 focus zichtbaarheid
   - toetsenbord focus testen
+aliases:
+  - /hoe-test-ik-focus-zichtbaarheid/
 ---
 
 # Hoe test ik SC 2.4.7 - Focus zichtbaarheid
