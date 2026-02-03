@@ -10,6 +10,8 @@ keywords:
   - wcag succescriteria overzicht
   - wcag per type beperking
   - digitale toegankelijkheid uitleg
+aliases:
+  - "indeling-van-succescriteria-per-type-beperking"
 ---
 
 Het indelen van de 55 succescriteria (SC) van de Web Content Accessibility Guidelines (WCAG) 2.2 per beperking helpt om duidelijk te maken welke aanpassingen vooral ten goede komen aan specifieke groepen gebruikers met beperkingen. Hieronder volgt een indeling van deze criteria gebaseerd op de primaire beperkingen die zij adresseren. Merk op dat veel succescriteria voordelen kunnen hebben voor meerdere groepen.

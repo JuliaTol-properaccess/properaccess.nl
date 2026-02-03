@@ -9,6 +9,8 @@ tags:
   - "2-4-1"
   - "skiplink"
   - "toegankelijke-website"
+aliases:
+  - "skiplinks-issue-op-mijn-wordpress-website"
 ---
 
 Op mijn WordPress-website werkte de skiplink niet op sommige pagina’s. Op deze pagina's heb ik een externe plugin toegevoegd die andere ID's gebruikt, waardoor de connectie tussen de skiplink in de header en het ID op de content verloren is gegaan.

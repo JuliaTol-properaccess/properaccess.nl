@@ -5,6 +5,8 @@ date: 2025-11-09
 categories: 
   - "tips-en-tools"
   - "Webdeveloper"
+aliases:
+  - "toetsenbord_toegankelijk"
 ---
 
 Als je regelmatig digitale toegankelijkheid test, dan weet je hoe onmisbaar de **Tab-toets** is. Het is dé manier om snel te controleren of een website met alleen het toetsenbord te bedienen is. Tijdens onze audits zeg ik het altijd: **wat niet met de Tab-toets bereikbaar is, is ook niet bereikbaar voor veel hulpsoftware.**

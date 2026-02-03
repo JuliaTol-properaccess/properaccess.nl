@@ -5,6 +5,8 @@ slug: "toegankelijke_kopteksten_wcag"
 categories: 
   - "achtergrond_wcag"
   - "Webredactie"
+aliases:
+  - "toegankelijke_kopteksten_wcag"
 ---
 
 Doelgroep: webredactie
