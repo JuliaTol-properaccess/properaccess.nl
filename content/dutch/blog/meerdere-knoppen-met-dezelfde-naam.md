@@ -13,6 +13,8 @@ keywords:
   - meerdere knoppen zelfde naam
   - toegankelijke naam knop
   - wcag knoppen toegankelijkheid
+aliases:
+  - "meerdere-knoppen-met-dezelfde-naam"
 ---
 ## Update 25 jan 2026
 Uit ons recent onderzoek met een blinde collega is gebleken dat de meeste mensen liever van kop naar kop navigeren. In plaats van verborgen tekst aan de knop toe te voegen, kun je er voor zorgen dat de naam van een product als een kop is gemarkeerd. 
