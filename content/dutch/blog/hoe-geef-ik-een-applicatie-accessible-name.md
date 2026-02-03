@@ -13,6 +13,8 @@ keywords:
   - accessible name applicatie
   - aria-labelledby role application
   - wcag accessible name
+aliases:
+  - "/hoe-geef-ik-een-applicatie-accessible-name/"
 ---
 
 Beginsituatie: er is een element met `role="application"` en het heeft geen toegankelijkheidsnaam (accessible name). Hoe kun je dit oplossen?

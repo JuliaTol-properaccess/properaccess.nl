@@ -12,6 +12,8 @@ keywords:
   - checklist toegankelijke content
   - wcag content checklist
   - toegankelijke webcontent
+aliases:
+  - "/checklist-toegankelijke-content"
 ---
 
 In deze checklist voor het toevoegen van toegankelijke content aan een webpagina bespreken we de belangrijkste punten waar je op moet letten om je content zo toegankelijk mogelijk te maken. Het oplossen van de onderstaande meest voorkomende fouten zorgt ervoor dat je content grotendeels toegankelijk wordt geplaatst en geschikt is voor bezoekers met diverse beperkingen: visuele, motorische, cognitieve en meer. Daarnaast voldoe je aan de [WCAG-richtlijnen](https://www.w3.org/Translations/WCAG22-nl/). Met een kleine inspanning kun je een groot resultaat bereiken!

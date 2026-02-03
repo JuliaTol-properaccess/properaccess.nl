@@ -6,7 +6,7 @@ categories:
   - "achtergrond_wcag"
   - "Webredactie"
 aliases:
-  - "toegankelijke_kopteksten_wcag"
+  - "/toegankelijke_kopteksten_wcag/"
 ---
 
 Doelgroep: webredactie

@@ -12,6 +12,8 @@ keywords:
   - toegankelijk pdf citaat
   - wcag pdf toegankelijkheid
   - citaat taggen pdf
+aliases:
+  - "/citaat-in-toegankelijke-pdf/"
 ---
 
 Als webredacteur werk je dagelijks met teksten, visuals en documenten. Vaak gaat het niet alleen om wat je schrijft, maar ook om hoe je het aanbiedt. Want een document dat er op het eerste gezicht goed uitziet, kan voor iemand die een schermlezer gebruikt juist verwarrend zijn. Een goed voorbeeld hiervan is een citaat in een PDF: hoe zorg je dat dit ook écht als citaat wordt herkend?

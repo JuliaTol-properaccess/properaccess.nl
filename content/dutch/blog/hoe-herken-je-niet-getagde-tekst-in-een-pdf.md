@@ -12,6 +12,8 @@ keywords:
   - niet getagde tekst pdf
   - wcag pdf toegankelijkheid
   - pac pdf testen
+aliases:
+  - "/hoe-herken-je-niet-getagde-tekst-in-een-pdf/"
 ---
 
 Ik gebruik [PAC 2024](https://pac.pdf-accessibility.org/en/download) software om PDF's te testen. Ik wil je laten zien hoe je deze niet-getagde tekst kan herkennen.

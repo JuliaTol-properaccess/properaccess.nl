@@ -10,6 +10,8 @@ keywords:
   - hoe gebruikt een blinde een website
   - digitale toegankelijkheid ervaring
   - websites voor blinden
+aliases:
+  - "/hoe-gebruikt-een-blinde-persoon-een-website/"
 ---
 
 Vandaag had ik een gesprek met mijn collega Dimitri, die op latere leeftijd blind is geworden. Hij vertelde hoe hij websites gebruikt. Sommige inzichten waren voor mij nieuw en verhelderend. Ik deel ze graag met je.
