@@ -13,6 +13,8 @@ keywords:
   - toegankelijk iframe
   - wcag iframe
   - iframe toegankelijkheid
+aliases:
+  - "/een-toegankelijk-iframe/"
 ---
 
 Waar moet je opletten als je een iframe digitaal toegankelijk wil toevoegen aan een webpagina? De WCAG stelt een aantal eisen aan de implementatie van een iframe. Dit zijn de kritieke punten.

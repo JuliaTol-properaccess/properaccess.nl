@@ -13,7 +13,7 @@ keywords:
   - wcag definitielijst
   - dl element screenreader
 aliases:
-  - "hoe-toegankelijk-is-het-dl-element"
+  - "/hoe-toegankelijk-is-het-dl-element/"
 ---
 
 Wil je op een webpagina een relatie tussen termen en definities presenteren, dan ligt het gebruik van het `<dl>`\-element voor de hand. Het bestaat uit een container (`<dl>`) waarin je per term een `<dt>` (definition term) gebruikt, gevolgd door een `<dd>` (definition description). Je ziet dit veel terug in juridische teksten, woordenlijsten of bij gegevens die in een tabel lay-out worden gepresenteerd, zoals openingstijden:

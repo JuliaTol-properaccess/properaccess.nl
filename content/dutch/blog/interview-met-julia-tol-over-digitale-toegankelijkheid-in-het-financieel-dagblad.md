@@ -10,7 +10,7 @@ keywords:
   - interview digitale toegankelijkheid
   - eaa e-commerce bedrijven
 aliases:
-  - "interview-met-julia-tol-over-digitale-toegankelijkheid-in-het-financieel-dagblad"
+  - "/interview-met-julia-tol-over-digitale-toegankelijkheid-in-het-financieel-dagblad/"
 ---
 
 ## Toegankelijkheid krijgt prioriteit door EAA
