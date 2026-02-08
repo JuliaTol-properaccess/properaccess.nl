@@ -10,6 +10,8 @@ keywords:
   - digitale toegankelijkheid leren
   - wcag leren
   - toegankelijkheidsaudit ervaring
+aliases:
+  - /hoeveel_tijd_nodig_om_digitale_toegankelijkheid_te_leren/
 ---
 
 Graag wil ik mijn persoonlijke ervaring delen met iedereen die onlangs is begonnen met het testen van digitale toegankelijkheid van websites en apps.
