@@ -1,14 +1,18 @@
 ---
-title: "SC 1.4.3 - Wat betekent \"Contrast (minimum)\"?"
+title: 'SC 1.4.3 - Wat betekent "Contrast (minimum)"?'
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-4-3"
   - "kleur"
+description: "Goede leesbaarheid begint met voldoende contrast tussen tekst en achtergrond. Hoe test je kleurcontrast?"
+keywords:
+  - kleurcontrast WCAG
+  - WCAG SC 1.4.3
+  - tekst contrast toegankelijkheid
+  - webtoegankelijkheid contrast
 ---
-
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.3-1024x1024.png)
 
 ## Waar gaat het over?
 

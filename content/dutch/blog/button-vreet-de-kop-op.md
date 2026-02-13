@@ -2,10 +2,9 @@
 title: "Button vreet de kop op"
 date: 2025-05-17
 slug: "button-vreet-de-kop-op"
-categories: 
+categories:
   - "tips-en-tools"
-  - "1-3-1"
-tags: 
+tags:
   - "developer"
 description: "Veelgemaakte WCAG-fout bij accordeons: wanneer een button de kop ‘opeet’. Uitleg en oplossing voor toegankelijke headings."
 keywords:
@@ -27,7 +26,6 @@ Deze tekst heeft namelijk twee functies. Het is ten eerste de kop van de informa
 Maar deze tekst heeft meer in zijn mars. Het is óók een knop. Let op: **kNop**. Want met deze tekst voer je een actie uit: je opent of sluit de inhoud eronder. En dat vraagt dan weer om een button-element.
 
 Veel ontwikkelaars komen tot dezelfde conclusie, en plaatsen dus een button-element om de kop heen. Maar helaas, dan begint de tragedie. Het button-element vreet de kop op. The horror! De rol van kop verdwijnt. Gewoon weg. En je mooie accordeon wordt afgekeurd op succescriterium 1.3.1.
-
 
 Hoe los je dit nou op? Eigenlijk heel simpel: door het button-element binnen het heading-element te plaatsen. Dat ziet er dan zo uit: 
 

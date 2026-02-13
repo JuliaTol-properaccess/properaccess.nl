@@ -2,10 +2,10 @@
 title: "Een toegankelijk iframe"
 date: 2024-06-16
 slug: "een-toegankelijk-iframe"
-categories: 
+categories:
   - "achtergrond_wcag"
-  - "developer"
-tags: 
+  - "webdeveloper"
+tags:
   - "2-4-6"
   - "4-1-2"
 description: "Waar moet een iframe aan voldoen om WCAG-proof te zijn? Praktische uitleg voor developers over titels, toegankelijkheidsnaam en taal."

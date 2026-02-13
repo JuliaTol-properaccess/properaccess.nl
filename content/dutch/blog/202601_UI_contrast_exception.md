@@ -2,10 +2,9 @@
 title: "Native HTML-componenten en kleurcontrast volgens WCAG 2.1"
 date: 2026-01-31
 slug: "contrast-ui-wcag"
-categories: 
-  - "toegankelijke code"
-  - "developer"
-tags: 
+categories:
+  - "webdeveloper"
+tags:
   - "1-4-11"
 description: "Wat is een accessible name en waarom is dit cruciaal voor digitale toegankelijkheid? Praktische uitleg voor developers volgens WCAG."
 keywords:
@@ -18,7 +17,7 @@ keywords:
 
 Informatieve en interactieve interface-elementen zoals knoppen, selectievakken en schuifregelaars moeten voldoende contrast hebben zodat ze zichtbaar zijn voor alle bezoekers. In de praktijk roept dit vaak vragen op bij audits en code-reviews: moet ik het kleurcontrast van elk zichtbaar UI-element controleren en verbeteren?
 
-Het korte antwoord is: nee, niet altijd.  
+Het korte antwoord is: nee, niet altijd.
 
 De contrasteis geldt niet voor grafische elementen die volledig door de user agent worden geleverd, mits ze niet zijn aangepast door de auteur.
 
@@ -30,8 +29,8 @@ De contrasteis geldt niet voor grafische elementen die volledig door de user age
   <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 Voorbeelden waarbij contrast verplicht is:
--	Een checkbox gebouwd met `<div>` en CSS
+
+- Een checkbox gebouwd met `<div>` en CSS
 - Een `<select>` waarbij de pijl is vervangen door een SVG
 - Een slider waarvan de thumb en track custom zijn gestyled
 - Eigen focus-indicator
-
