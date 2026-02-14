@@ -1,11 +1,11 @@
 ---
 title: '1.4.12 - Wat betekent "Tekstafstand"'
-date: 2025-05-18
+date: 2026-02-14
 categories:
   - "wcag-uitgelegd"
 tags:
   - "1-4-12"
-description: "WCAG: de tekstafstand aanpassen om hun leeservaring te verbeteren. Hoe test je dit SC?"
+description: "WCAG: de tekstafstand aanpassen om hun leeservaring te verbeteren. Hoe test je dit SC met Stylus. Veelvookomende fouten en oplossigen."
 keywords:
   - WCAG 1.4.12
   - leesbaarheid vergroten WCAG
@@ -39,9 +39,32 @@ Zorg dat je website aan de volgende punten voldoet:
   - als afgesneden tekst onderdeel is van content die via een link volledig kan worden gelezen op een andere pagina (hierover bestaat echter discussie tussen onderzoeksbureaus);
   - als tekst overlapt met andere tekst, maar waarbij de pagina omhoog of omlaag kan worden gescrold om de teksten uit elkaar te halen.
 
-## Hoe test je succescriterium 1.4.12?
+## Stylus tool om SC 1.4.12 te testen
 
-Een veelgebruikte extensie om tekstafstanden aan te passen is de [Stylus Tool](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=nl) van Google Chrome. Daarmee kun je dus goed testen. Maak een nieuwe stijl aan en voeg de volgende code toe:
+Een veelgebruikte extensie om tekstafstanden aan te passen is de [Stylus Tool](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=nl) van Google Chrome.
+
+### Installatie
+
+- Open de Chrome Web Store: ga naar chrome.google.com/webstore
+  Of klik in Chrome op de drie puntjes (⋮) rechtsboven → "Extensies" → "Extensies beheren" → "Chrome Web Store openen" linksonder
+- Zoek naar Stylus: typ "Stylus" in de zoekbalk
+  Let op: kies "Stylus" (met hoofdletter S), niet "Stylish" - dat is een andere extensie
+
+#### Installeer de extensie
+
+- Klik op de extensie "Stylus" in de zoekresultaten
+- Klik op de blauwe knop "Toevoegen aan Chrome"
+- Bevestig door op "Extensie toevoegen" te klikken
+- Het Stylus-icoon (een S-symbool) verschijnt nu rechtsboven in je browser
+
+#### Gebruik
+
+Een eigen style maken:
+
+- Klik op het Stylus-icoon in je browser
+- Klik op "Beheer" of ga naar een website waar je de stijl wilt aanpassen
+- Klik op "Schrijf stijl voor [website]"
+- Voer deze CSS-code in:
 
 ```CSS
 * {
@@ -66,7 +89,7 @@ Volg nu de volgende stappen:
 
 ## Veelgemaakte fouten
 
-Bij onze audits zien we dat het bij dit succescriterium vaak fout gaat op een van de volgende punten:
+Tijdens audits zien we dat het bij dit succescriterium vaak fout gaat op een van de volgende punten:
 
 - Tekst verdwijnt buiten het zicht of achter andere elementen.
 - Tekst wordt deels onzichtbaar en daardoor onleesbaar.
