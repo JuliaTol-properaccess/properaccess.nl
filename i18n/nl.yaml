@@ -1,0 +1,14 @@
+- id: contact_name
+  translation: "Naam"
+- id: contact_email
+  translation: "E-mailadres"
+- id: contact_message
+  translation: "Bericht"
+- id: contact_name_placeholder
+  translation: "Jouw naam"
+- id: contact_email_placeholder
+  translation: "jouw@email.nl"
+- id: contact_message_placeholder
+  translation: "Vertel ons waar we je mee kunnen helpen..."
+- id: contact_submit
+  translation: "Verstuur bericht"
