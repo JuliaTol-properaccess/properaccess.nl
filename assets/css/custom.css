@@ -1,76 +1,96 @@
 /* Add your own custom styles here */
 .faq-section {
-    max-width: 700px;
-    margin: 3rem auto;
-    font-family: system-ui, sans-serif;
-    transition: color 0.3s, background 0.3s;
-  }
+  max-width: 700px;
+  margin: 3rem auto;
+  font-family: system-ui, sans-serif;
+  transition:
+    color 0.3s,
+    background 0.3s;
+}
 
-  .faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-  details.faq-item {
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-  }
+details.faq-item {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
 
-  summary.faq-question {
-    cursor: pointer;
-    font-weight: 600;
-    list-style: none;
-    position: relative;
-    padding: 1rem 0;
-  }
+summary.faq-question {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+  padding: 1rem 0;
+}
 
-  summary.faq-question::marker,
-  summary.faq-question::-webkit-details-marker {
-    display: none;
-  }
+summary.faq-question::marker,
+summary.faq-question::-webkit-details-marker {
+  display: none;
+}
 
-  /* Voeg een + / – icoon toe aan het summary element */
-  summary.faq-question::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-  }
+/* Voeg een + / – icoon toe aan het summary element */
+summary.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
 
-  details[open] summary.faq-question::after {
-    content: "–";
-  }
+details[open] summary.faq-question::after {
+  content: "–";
+}
 
-  .faq-answer {
-    margin-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.5;
-  }
+.faq-answer {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+}
 
-  /* 🌞 Light mode */
-  html.light details.faq-item {
-    background: #f9f9f9;
-    color: #222;
-    border: 1px solid #ddd;
-  }
-  html.light summary.faq-question:hover {
-    color: #000;
-  }
+/* 🌞 Light mode */
+html.light details.faq-item {
+  background: #f9f9f9;
+  color: #222;
+  border: 1px solid #ddd;
+}
+html.light summary.faq-question:hover {
+  color: #000;
+}
 
-  /* 🌙 Dark mode */
-  html.dark details.faq-item {
-    background: #1f1f1f;
-    color: #eee;
-    border: 1px solid #333;
-  }
-  html.dark summary.faq-question:hover {
-    color: #fff;
-  }
+/* 🌙 Dark mode */
+html.dark details.faq-item {
+  background: #1f1f1f;
+  color: #eee;
+  border: 1px solid #333;
+}
+html.dark summary.faq-question:hover {
+  color: #fff;
+}
 
-  details[open] summary.faq-question {
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 0.75rem;
-  }
+details[open] summary.faq-question {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.75rem;
+}
+
+/* Fix input text color in dark mode */
+.dark input,
+.dark textarea {
+  color: #1f2937; /* donkergrijs (Tailwind gray-800) */
+}
+
+/* Fix placeholder kleur */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+/* Optioneel: iets donkerdere achtergrond */
+.dark input,
+.dark textarea {
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+}

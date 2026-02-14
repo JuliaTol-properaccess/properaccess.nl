@@ -41,6 +41,48 @@
                     required
                     class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
                     placeholder="{{ i18n "contact_name_placeholder" }}" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://properaccess.nl/bedankt/" />
+                  <input type="text" name="_gotcha" style="display:none" />
+
+                  <p id="form-status" class="mt-4 text-sm"></p>
+
+                  <script>
+                    document
+                      .querySelector("form")
+                      .addEventListener("submit", async function (e) {
+                        e.preventDefault();
+
+                        const form = e.target;
+                        const status = document.getElementById("form-status");
+                        const data = new FormData(form);
+
+                        try {
+                          const response = await fetch(form.action, {
+                            method: "POST",
+                            body: data,
+                            headers: { Accept: "application/json" },
+                          });
+
+                          if (response.ok) {
+                            status.innerHTML =
+                              "✅ Bericht succesvol verzonden!";
+                            form.reset();
+                          } else {
+                            status.innerHTML =
+                              "❌ Er ging iets mis. Probeer opnieuw.";
+                          }
+                        } catch (error) {
+                          status.innerHTML = "❌ Netwerkfout.";
+                        }
+                      });
+                  </script>
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nieuw bericht via website" />
                 </div>
 
                 <div>

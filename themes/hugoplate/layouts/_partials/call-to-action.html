@@ -6,10 +6,7 @@
         <div
           class="bg-light dark:bg-darkmode-light rounded-xl px-4 py-16 xl:p-20">
           <div class="row items-center justify-between">
-            <div class="md:col-5 lg:col-4 mb-10 md:order-2 md:mb-0">
-              {{ partial "image" (dict "Src" .Params.image "Alt" "call to action" "Class" "w-full" "Context" .) }}
-            </div>
-            <div class="md:col-7 md:order-1">
+            <div class="md:col-7 md:order-1 mb-10 md:mb-0">
               <h2 class="mb-2">
                 {{ .Title | markdownify }}
               </h2>
@@ -23,6 +20,107 @@
                   </a>
                 {{ end }}
               {{ end }}
+            </div>
+
+            <div class="md:col-5 lg:col-4 md:order-2">
+              <form
+                action="https://formspree.io/f/xjgeyqej"
+                method="POST"
+                class="space-y-5">
+                <div>
+                  <label
+                    for="contact-name"
+                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    {{ i18n "contact_name" }}
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
+                    placeholder="{{ i18n "contact_name_placeholder" }}" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://properaccess.nl/bedankt/" />
+                  <input type="text" name="_gotcha" style="display:none" />
+
+                  <p id="form-status" class="mt-4 text-sm"></p>
+
+                  <script>
+                    document
+                      .querySelector("form")
+                      .addEventListener("submit", async function (e) {
+                        e.preventDefault();
+
+                        const form = e.target;
+                        const status = document.getElementById("form-status");
+                        const data = new FormData(form);
+
+                        try {
+                          const response = await fetch(form.action, {
+                            method: "POST",
+                            body: data,
+                            headers: { Accept: "application/json" },
+                          });
+
+                          if (response.ok) {
+                            status.innerHTML =
+                              "✅ Bericht succesvol verzonden!";
+                            form.reset();
+                          } else {
+                            status.innerHTML =
+                              "❌ Er ging iets mis. Probeer opnieuw.";
+                          }
+                        } catch (error) {
+                          status.innerHTML = "❌ Netwerkfout.";
+                        }
+                      });
+                  </script>
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nieuw bericht via website" />
+                </div>
+
+                <div>
+                  <label
+                    for="contact-email"
+                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    {{ i18n "contact_email" }}
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
+                    placeholder="{{ i18n "contact_email_placeholder" }}" />
+                </div>
+
+                <div>
+                  <label
+                    for="contact-message"
+                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    {{ i18n "contact_message" }}
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
+                    placeholder="{{ i18n "contact_message_placeholder" }}"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full">
+                  {{ i18n "contact_submit" }}
+                  <i class="fa fa-paper-plane pl-2"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
