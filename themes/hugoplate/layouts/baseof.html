@@ -11,6 +11,12 @@
     {{ partial "essentials/head.html" . }}
 
 
+    <!-- No index -->
+    {{ with .Params.robots }}
+      <meta name="robots" content="{{ . }}" />
+    {{ end }}
+
+
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
 
