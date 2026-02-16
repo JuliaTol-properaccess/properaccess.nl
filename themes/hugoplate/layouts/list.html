@@ -5,7 +5,7 @@
   <section class="section">
     <div class="container">
       <ul class="text-center">
-        {{ range .RegularPages }}
+        {{ range where .RegularPages "Section" "!=" "offertes" }}
           <li class="m-3">
             <a
               href="{{ .Permalink }}"

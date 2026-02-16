@@ -103,3 +103,12 @@ sidebar = ["categories", "tags"]
 
 [params]
   gtm_id = "GTM-PRMNGCGW"
+
+[params.robots]
+    noindex = false
+    nofollow = false
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

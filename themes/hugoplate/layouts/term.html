@@ -8,7 +8,7 @@
         <!-- posts for this term -->
         <div class="lg:col-8">
           <div class="row">
-            {{ range .Data.Pages }}
+            {{ range .Data.Pages "Section" "!=" "offertes" }}
               <div class="md:col-6 mb-14">
                 {{ partial "components/blog-card" . }}
               </div>
