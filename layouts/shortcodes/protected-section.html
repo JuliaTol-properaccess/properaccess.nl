@@ -1,0 +1,44 @@
+<div
+  class="protected-section"
+  data-token="{{ .Get "token" }}"
+  id="protected-{{ .Ordinal }}">
+  <div
+    class="protected-overlay bg-gray-100 p-6 rounded-lg border-2 border-gray-300">
+    <h3 class="text-xl font-bold mb-3">🔒 Beveiligde inhoud</h3>
+    <p class="mb-4">Voer de toegangscode in om deze sectie te bekijken.</p>
+    <input
+      type="password"
+      class="protected-input border p-2 rounded w-full max-w-xs mb-2"
+      placeholder="Toegangscode"
+      onkeypress="if(event.key==='Enter') unlockSection(this)" />
+    <button
+      onclick="unlockSection(this)"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      Ontgrendel
+    </button>
+    <p class="error-msg text-red-600 mt-2 hidden">Onjuiste code</p>
+  </div>
+
+  <div class="protected-content hidden">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
+
+<script>
+  function unlockSection(btn) {
+    const container = btn.closest(".protected-section");
+    const correctToken = container.dataset.token;
+    const input = container.querySelector(".protected-input");
+    const overlay = container.querySelector(".protected-overlay");
+    const content = container.querySelector(".protected-content");
+    const error = container.querySelector(".error-msg");
+
+    if (input.value === correctToken) {
+      overlay.classList.add("hidden");
+      content.classList.remove("hidden");
+      error.classList.add("hidden");
+    } else {
+      error.classList.remove("hidden");
+    }
+  }
+</script>

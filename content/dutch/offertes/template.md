@@ -4,7 +4,9 @@ date: 2024-02-16
 draft: false
 robots: "noindex, nofollow"
 sitemap_exclude: true
-offerte_token: "kliko"
+_build:
+  list: never
+  render: true
 ---
 
 # Offerte: Digitale toegankelijkheid van Kliko bewonersportaal
@@ -18,6 +20,8 @@ offerte_token: "kliko"
 | **Offertenummer**                 | 202602-03                        |
 
 ---
+
+{{< protected-section token="geheim123" >}}
 
 ## Beste Roland,
 
@@ -184,3 +188,5 @@ CEO & Senior WCAG-auditor
 Proper Access B.V.
 
 _Deze offerte is geldig tot 28 februari 2026_
+
+{{< /protected-section >}}
