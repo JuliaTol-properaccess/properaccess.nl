@@ -1,5 +1,5 @@
 ---
-title: "WCAG 1.1.1 Niet-tekstuele content: wat je moet weten als je digitaal verkoopt of informeert"
+title: "Niet-tekstuele content: wat je moet weten als je digitaal verkoopt of informeert (WCAG 1.1.1)"
 date: 2026-02-15
 categories:
   - "wcag-uitgelegd"
