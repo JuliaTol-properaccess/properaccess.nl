@@ -1,10 +1,4 @@
 ---
-title: "Wie zijn wij"
-date: 2021-08-27
-description: "Auditbureau Proper Access"
-keywords: ["WCAG", "proper access", "web accessibility"]
-slug: "auditbureau-digitale-toegankelijkheid/"
-url: "/auditbureau-digitale-toegankelijkheid/"
 layout: "second-page"
 
 # Banner
@@ -48,7 +42,7 @@ faqs:
   - question: Wat is jullie missie?
     answer: We willen het beste zijn in alles wat we doen. Wij maken digitale toegankelijkheid vanzelfsprekend. Voor iedereen. We helpen organisaties om hun websites, apps en digitale diensten toegankelijk te maken — niet als vinkje, maar als verbetering voor iedereen.
   - question: Wat onderscheidt jullie van andere auditbureaus?
-    answer: Zie onze rapporten. Wij weten hoe het voelt om als een klant een toegankelijkheidsrapport te krijgen. Wij zijn geen inspectie-instelling die alleen maar afkeurt. We willen digitale toegankelijkheid voor jou makkelijker en begrijpelijker maken. 
+    answer: Zie onze rapporten. Wij weten hoe het voelt om als een klant een toegankelijkheidsrapport te krijgen. Wij zijn geen inspectie-instelling die alleen maar afkeurt. We willen digitale toegankelijkheid voor jou makkelijker en begrijpelijker maken.
   - question: Hoe blijven jullie up-to-date met richtlijnen en techniek?
     answer: We volgen internationale ontwikkelingen op het gebied van WCAG, EAA en digitale inclusie op de voet, en zijn actief in vakgroepen, netwerken en kennisuitwisseling.
 ---

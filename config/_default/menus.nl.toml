@@ -54,7 +54,7 @@ url = "/blog"
 weight = 6
 
 [[main]]
-name = "Wie zijn we"
+name = "Over Proper Access"
 url = "/auditbureau-digitale-toegankelijkheid"
 weight = 5
 

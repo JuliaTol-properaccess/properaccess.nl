@@ -1,0 +1,298 @@
+{{ define "main" }}
+  <!-- Banner -->
+  {{ with .Params.banner }}
+    <section class="section pt-14">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-8 text-center">
+            <h1 class="mb-6 text-h3 lg:text-h1">
+              {{ .title | markdownify }}
+            </h1>
+            <div class="mb-8 text-lg">
+              {{ .content | markdownify }}
+            </div>
+
+            {{ with .bulletpoints }}
+              <ul class="mb-8 text-left inline-block">
+                {{ range . }}
+                  <li class="flex items-start mb-3">
+                    <span class="text-primary mr-3 text-xl">✓</span>
+                    <span>{{ . | markdownify }}</span>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+
+            {{ with .button }}
+              {{ if .enable }}
+                <div class="mt-8">
+                  <a class="btn btn-primary" href="{{ .link | relLangURL }}">
+                    {{ .label }}
+                  </a>
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Features -->
+  {{ with .Params.features }}
+    <section class="section">
+      <div class="container">
+        {{ range $index, $feature := . }}
+          <div class="row items-center mb-12">
+            <!-- Content links -->
+            <div class="lg:col-6 mb-6 lg:mb-0">
+              <h2 class="mb-4">{{ $feature.title | markdownify }}</h2>
+              <div class="mb-6">
+                {{ $feature.content | markdownify }}
+              </div>
+
+              {{ with $feature.bulletpoints }}
+                <ul class="space-y-3">
+                  {{ range . }}
+                    <li class="flex items-start">
+                      <span class="text-primary mr-3 mt-1">✓</span>
+                      <span>{{ . | markdownify }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with $feature.button }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-outline-primary mt-6 inline-block"
+                    href="{{ .link | relLangURL }}">
+                    {{ .label }}
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+
+            <!-- Afbeelding rechts -->
+            <div class="lg:col-6">
+              {{ if $feature.image }}
+                <img
+                  src="{{ $feature.image | relURL }}"
+                  alt="{{ $feature.title }}"
+                  class="w-full rounded-lg shadow-lg" />
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Comparison -->
+  {{ with .Params.comparison }}
+    <section class="section bg-theme-light">
+      <div class="container">
+        <div class="row justify-center mb-8">
+          <div class="lg:col-10 text-center">
+            <h2 class="mb-4">{{ .title | markdownify }}</h2>
+            {{ if .content }}
+              <p class="text-lg">{{ .content | markdownify }}</p>
+            {{ end }}
+          </div>
+        </div>
+        <div class="row mb-8">
+          <!-- Not column - neutrale kleuren -->
+          {{ with .not }}
+            <div class="lg:col-6 mb-8 lg:mb-0">
+              <div
+                class="rounded-lg border-2 border-border bg-theme-light dark:bg-content2 p-8 h-full">
+                <h3 class="mb-6 text-h4 text-[#474747] dark:text-white">
+                  {{ .title | markdownify }}
+                </h3>
+                <ul class="space-y-4">
+                  {{ range .items }}
+                    <li class="flex items-start">
+                      <span class="mr-3 text-xl flex-shrink-0">❌</span>
+                      <span class="text-[#474747] dark:text-white"
+                        >{{ . | markdownify }}</span
+                      >
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          {{ end }}
+
+
+          <!-- Yes column - neutrale kleuren -->
+          {{ with .yes }}
+            <div class="lg:col-6">
+              <div
+                class="rounded-lg border-2 border-border bg-white p-8 h-full">
+                <h3 class="mb-6 text-h4 text-[#474747]">
+                  {{ .title | markdownify }}
+                </h3>
+                <ul class="space-y-4">
+                  {{ range .items }}
+                    <li class="flex items-start">
+                      <span class="mr-3 text-xl flex-shrink-0">✅</span>
+                      <span class="text-[#474747]">{{ . | markdownify }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="row justify-center">
+              <div class="text-center">
+                <a class="btn btn-primary" href="{{ .link | relLangURL }}">
+                  {{ .label }}
+                </a>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Team -->
+  {{ with .Params.team }}
+    <section class="section">
+      <div class="container">
+        <div class="row justify-center mb-12">
+          <div class="lg:col-10 text-center">
+            <h2 class="mb-4">{{ .title | markdownify }}</h2>
+          </div>
+        </div>
+
+        {{ range .members }}
+          <div class="row mb-12">
+            <!-- Afbeelding links (3 kolommen) -->
+            <div class="lg:col-3 mb-6 lg:mb-0 text-center lg:text-left">
+              {{ if .image }}
+                <img
+                  src="{{ .image | relURL }}"
+                  alt="{{ .name }}"
+                  class="w-full max-w-xs mx-auto lg:mx-0 rounded-lg shadow-lg" />
+              {{ end }}
+            </div>
+
+            <!-- Content rechts (9 kolommen) -->
+            <div class="lg:col-9">
+              <div class="rounded-lg bg-theme-light p-8">
+                <div class="mb-4">
+                  <h3 class="text-h4 mb-2">{{ .name }}</h3>
+                  <p class="text-primary font-semibold dark:text-white">
+                    {{ .role }}
+                  </p>
+                </div>
+
+                <div class="mb-6">
+                  {{ .bio | markdownify }}
+                </div>
+
+                {{ with .highlights }}
+                  <ul class="space-y-2">
+                    {{ range . }}
+                      <li class="flex items-start">
+                        <span class="text-primary mr-3 mt-1">✓</span>
+                        <span>{{ . | markdownify }}</span>
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Stats -->
+  {{ with .Params.stats }}
+    <section class="section bg-primary text-white">
+      <div class="container">
+        <div class="row justify-center mb-12">
+          <div class="lg:col-10 text-center">
+            <h2 class="mb-4 text-white">{{ .title | markdownify }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          {{ range .items }}
+            <div class="lg:col-4 md:col-6 mb-8">
+              <div class="text-center">
+                <h3 class="mb-2 text-h5 font-bold text-white">{{ .label }}</h3>
+                <p class="text-sm text-white opacity-90">{{ .value }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+
+        {{ if .note }}
+          <div class="row justify-center mt-8">
+            <div class="lg:col-10 text-center text-sm opacity-90">
+              {{ .note | markdownify }}
+            </div>
+          </div>
+        {{ end }}
+
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="row justify-center mt-8">
+              <div class="text-center">
+                <a class="btn btn-outline" href="{{ .link | relLangURL }}">
+                  {{ .label }}
+                </a>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- FAQs -->
+  {{ with .Params.faqs }}
+    <section class="section">
+      <div class="container">
+        <div class="row justify-center mb-12">
+          <div class="lg:col-10 text-center">
+            <h2 class="mb-4">Veelgestelde vragen</h2>
+          </div>
+        </div>
+        <div class="row justify-center">
+          <div class="lg:col-8">
+            {{ range . }}
+              <details
+                class="mb-6 rounded-lg border border-border p-6 bg-white dark:bg-theme-light">
+                <summary
+                  class="cursor-pointer font-semibold text-lg mb-2 text-[#474747]">
+                  {{ .question }}
+                </summary>
+                <div class="mt-4 prose max-w-none text-[#474747]">
+                  {{ .answer | markdownify }}
+                </div>
+              </details>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Call to Action -->
+  {{ partial "call-to-action.html" . }}
+
+{{ end }}
