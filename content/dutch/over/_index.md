@@ -33,7 +33,7 @@ banner:
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"
-    link: "#contact"
+    link: "/auditbureau-digitale-toegankelijkheid/#cta"
 
 features:
   - title: "Waarom doen we dit?"
@@ -63,19 +63,18 @@ team:
       bio: >
         Julia heeft Proper Access opgericht met één doel: digitale toegankelijkheid
         **praktisch** maken. Niet theoretisch, niet academisch, maar toepasbaar.
-        Haar kracht zit niet in certificaten — het zit in begrijpen wat organisaties
-        nodig hebben, en in de drive om te zorgen dat ze daar ook komen.
+        Haar kracht zit het zit in begrijpen wat developers en contentmakers nodig hebben, en in de drive om te zorgen dat ze daar ook komen.
       highlights:
         - "Senior WCAG-auditor"
         - "Betrokken bij DigiToegankelijk TOP Logius 2022–2026"
-        - "IAAP-gecertificeerd (WAS en CPACC)"
+        - "IAAP-gecertificeerd (WAS)"
         - "900+ audits uitgevoerd sinds 2019"
     - name: "Het team"
       role: "Specialisten met passie voor techniek"
       image: "/images/team.png"
       bio: >
         Julia heeft een team samengesteld van mensen met dezelfde passie.
-        We bespreken wekelijks de WCAG-richtlijnen, hulpsoftware support en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
+        We bespreken wekelijks de feedback op onze rapporten, de WCAG-richtlijnen, hulpsoftware support en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
         We doen eigen research — want *"dat staat in de standaard"* is voor ons niet genoeg.
         We willen weten of we de standaard correct interpreteren.
       highlights:
@@ -97,14 +96,14 @@ stats:
     - label: "DigiToegankelijk TOP Logius"
       value: "Betrokken bij overheidsbeleid op digitale toegankelijkheid 2022–2026"
     - label: "Eerlijke tarieven"
-      value: "Geen verrassingen, geen verborgen kosten"
+      value: "We zijn een digitaal bedrijf zonder grote overhedskosten. Geen verrassingen, geen verborgen kosten"
     - label: "Partnerschap"
       value: "Geen eenmalig contact — je mag onbeperkt vragen stellen"
   note: "**Proper Access BV** · KvK: 95350985 · OB-nummer: NL867096755B01"
   button:
     enable: true
     label: "Offerte aanvragen"
-    link: "/offerte-audit/"
+    link: "/offerte-wcag-onderzoek/"
 
 faqs:
   - question: "Waarom zijn jullie beter dan andere auditbureaus?"
@@ -112,8 +111,7 @@ faqs:
       Wij zijn niet per se beter. Maar wij zijn anders.
 
 
-      **Andere bureaus leveren rapporten.** Wij leveren oplossingen. Andere bureaus controleren
-      voor inspectie-instellingen. Wij maken websites toegankelijk voor echte gebruikers.
+      **Andere bureaus leveren rapporten.** Wij leveren oplossingen. Andere bureaus zijn inspectie-instellingen. Wij helpen je je websites toegankelijk te maken voor echte gebruikers.
 
 
       Het verschil zit in de details: rapporten per webpagina en per element (niet per succescriterium),
@@ -139,7 +137,7 @@ faqs:
       Want jouw doel is niet "een rapport hebben" — het is "een toegankelijke website hebben".
 
 
-      Wil je doorlopende ondersteuning? Vraag naar ons [toegankelijkheids-abonnement](/samenwerken/).
+      Wil je doorlopende ondersteuning? Vraag naar ons toegankelijkheids-abonnement.
 
   - question: "Werken jullie ook internationaal?"
     answer: >
