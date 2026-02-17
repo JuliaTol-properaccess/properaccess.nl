@@ -54,28 +54,6 @@ features:
       enable: false
     image: "/images/rapport.webp"
 
-comparison:
-  title: "Hoe werken we samen?"
-  content: "Wij zijn geen bureau dat een rapport oplevert en verdwijnt."
-  not:
-    title: "Wat we **niet** doen"
-    items:
-      - "Een rapport van 50+ pagina's dat je niet begrijpt"
-      - "Een lijst met succescriteria zonder uitleg wat je ermee moet"
-      - "'Zorg ervoor dat het toegankelijk wordt' — en zoek het zelf maar uit"
-      - "Automatisch gegenereerde bevindingen (die mogelijk helemaal geen problemen zijn)"
-  yes:
-    title: "Wat we **wel** doen"
-    items:
-      - "**Een rapport dat prettig leest en zo in Jira past** — per pagina, per element, met screenshots en code-snippets"
-      - "**Een partner die meedenkt** — onbeperkt vragen stellen, ook na de audit"
-      - "**Kennis uit de praktijk** — wekelijks eigen research en testen"
-      - "**Geen bug-list** — wij helpen websites toegankelijk maken voor echte gebruikers"
-  button:
-    enable: true
-    label: "Bekijk hoe een audit eruitziet"
-    link: "/toegankelijkheidsaudit/"
-
 team:
   title: "Wie gaat mij helpen?"
   members:
