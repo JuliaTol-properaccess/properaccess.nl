@@ -1,5 +1,5 @@
 ---
-title: "Offerte voor [Klant]"
+title: "Offerte Digitale Toegankelijkheid [Klant]"
 date: 2024-02-16
 draft: false
 robots: "noindex, nofollow"
@@ -7,23 +7,18 @@ sitemap_exclude: true
 _build:
   list: never
   render: true
----
-
-# Offerte: Digitale toegankelijkheid van Kliko bewonersportaal
-
-| Veld                              | Omschrijving                     |
-| --------------------------------- | -------------------------------- |
-| **Digitale toegankelijkheid van** | Kliko                            |
-| **Website / app**                 | Bewonersportaal (website en app) |
-| **URL**                           | Demo bewonersportaal             |
-| **Datum**                         | 16 februari 2026                 |
-| **Offertenummer**                 | 202602-03                        |
-
+offerte_voor: "Kliko"
+website_app: "Bewonersportaal (website en app)"
+url_klant: "Demo bewonersportaal"
+datum_offerte: "16 februari 2026"
+offertenummer: "202602-03"
 ---
 
 {{< protected-section token="geheim123" >}}
 
-## Beste Roland,
+{{< offerte-section title="Inleiding" >}}
+
+Beste Roland,
 
 Wat mooi dat jullie een bewonersportaal ontwikkelen dat toegankelijk is voor álle inwoners! Een platform waar iedereen zijn zaken kan regelen, ongeacht beperking of hulpmiddel — daar doen we het voor.
 
@@ -34,13 +29,12 @@ Wat ons onderscheidt? We geven niet alleen aan wát er niet werkt, maar ook prec
 In deze offerte vind je onze audit voor de website van het bewonersportaal. Voor de app ontvang je een aparte offerte. Samen zorgen we ervoor dat alle inwoners zonder barrières gebruik kunnen maken van jullie platform!
 
 Hartelijke groet,
-
-**Julia Tol**  
+**Julia Tol**
 CEO Proper Access, senior WCAG-auditor
 
----
+{{< /offerte-section >}}
 
-## Doel van de audit
+{{< offerte-section title="Doel van de audit" subtitle="Wat levert het op?" bg="light" >}}
 
 Met deze audit krijgen jullie drie belangrijke resultaten:
 
@@ -50,9 +44,9 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 
 3. **Beter imago en groter bereik** — Door het bewonersportaal daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor een bredere doelgroep. Dit draagt bij aan een inclusiever imago, verhoogt de gebruiksvriendelijkheid en vergroot het potentiële bereik naar álle inwoners.
 
----
+{{< /offerte-section >}}
 
-## Product: hoe we helpen
+{{< offerte-section title="Product" subtitle="Hoe we helpen" >}}
 
 ### Analyse & bevindingen
 
@@ -85,17 +79,17 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 - **Filteren** op impact, type probleem, WCAG-succescriterium
 - **Bruikbaar als verantwoording** richting toezichthouder én voor interne planning
 
----
+{{< /offerte-section >}}
 
-## Waarom een audit en geen automatische tool?
+{{< offerte-section title="Audit vs. tool" subtitle="Waarom menselijke expertise?" bg="light" >}}
 
 Automatische tools kunnen slechts 20-30% van toegankelijkheidsproblemen detecteren. Voor een betrouwbaar en compleet beeld is menselijke expertise noodzakelijk. Onze senior auditors testen met echte hulpmiddelen (screenreaders, toetsenbordnavigatie) en beoordelen context, gebruikservaring en begrip.
 
-Meer informatie: [https://properaccess.nl/overlay-toegankelijkheidstools/](https://properaccess.nl/overlay-toegankelijkheidstools/)
+Meer informatie: [properaccess.nl/overlay-toegankelijkheidstools/](https://properaccess.nl/overlay-toegankelijkheidstools/)
 
----
+{{< /offerte-section >}}
 
-## Aanbod
+{{< offerte-section title="Aanbod" subtitle="Investering" >}}
 
 | Product                                                                                                                             | Prijs (excl. BTW) |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
@@ -106,15 +100,15 @@ Meer informatie: [https://properaccess.nl/overlay-toegankelijkheidstools/](https
 | Retest van bevindingen                                                                                                              | € 500             |
 | Nabespreking van het rapport online, 1 uur                                                                                          | € 125             |
 
-### Totaal (excl. optionele diensten): € 2.695
+**Totaal (excl. optionele diensten):** € 2.695
 
-### Totaal (incl. retest en nabespreking): € 3.320
+**Totaal (incl. retest en nabespreking):** € 3.320
 
 **Op alle producten en diensten is 21% BTW van toepassing.**
 
----
+{{< /offerte-section >}}
 
-## Retest: waarom adviseren we dit?
+{{< offerte-section title="Retest" subtitle="Waarom adviseren we dit?" bg="light" >}}
 
 Na implementatie van de verbeteringen is een retest essentieel om te controleren of alle knelpunten daadwerkelijk zijn opgelost en of er geen nieuwe problemen zijn ontstaan. Dit geeft jullie:
 
@@ -124,15 +118,15 @@ Na implementatie van de verbeteringen is een retest essentieel om te controleren
 
 We adviseren daarom nadrukkelijk om de retest mee te nemen in jullie planning.
 
----
+{{< /offerte-section >}}
 
-## Planning
+{{< offerte-section title="Planning" >}}
 
 De audits worden in overleg ingepland. We kunnen binnen 3 tot 5 weken na akkoord starten en binnen 4 weken na de start het resultaat opleveren.
 
----
+{{< /offerte-section >}}
 
-## Over ons
+{{< offerte-section title="Over ons" bg="light" >}}
 
 ### Fijne partner
 
@@ -157,36 +151,37 @@ Van toepassing zijn de Algemene Inkoopvoorwaarden VNG GIBIT 2023.
 
 Wij factureren na afronding van de audit. De betaaltermijn is 30 dagen.
 
----
+{{< /offerte-section >}}
 
-## Voorbeeld-rapporten
+{{< offerte-section title="Voorbeeld-rapporten" subtitle="Bekijk onze kwaliteit" >}}
 
 Bekijk voorbeelden van onze rapporten om een indruk te krijgen van de diepgang en praktische bruikbaarheid:
 
-- [https://audit.properaccess.nl/reports/202512_nrc/](https://audit.properaccess.nl/reports/202512_nrc/)
-- [https://audit.properaccess.nl/reports/202510_retest_rijksmuseum/](https://audit.properaccess.nl/reports/202510_retest_rijksmuseum/)
+- [NRC rapport](https://audit.properaccess.nl/reports/202512_nrc/)
+- [Rijksmuseum retest](https://audit.properaccess.nl/reports/202510_retest_rijksmuseum/)
 
----
+{{< /offerte-section >}}
 
-## Contactgegevens
+{{< offerte-section title="Contactgegevens" bg="light" >}}
 
-**Proper Access B.V.**  
-Willemserf 20  
+**Proper Access B.V.**
+Willemserf 20
 3755 XK Eemnes
 
-**Website:** [https://properaccess.nl/](https://properaccess.nl/)  
-**Telefoon:** 06-28742274  
+**Website:** [properaccess.nl](https://properaccess.nl/)
+**Telefoon:** 06-28742274
 **E-mail:** contact@properaccess.nl
 
-**BTW-nummer:** NL867096755B01  
+**BTW-nummer:** NL867096755B01
 **KVK-nummer:** 95350985
 
----
+{{< /offerte-section >}}
 
-**Julia Tol**  
-CEO & Senior WCAG-auditor  
-Proper Access B.V.
-
-_Deze offerte is geldig tot 28 februari 2026_
+<div class="offerte-cta">
+  <div class="container">
+    <p><strong>Julia Tol</strong><br>CEO & Senior WCAG-auditor<br>Proper Access B.V.</p>
+    <p><em>Deze offerte is geldig tot 28 februari 2026</em></p>
+  </div>
+</div>
 
 {{< /protected-section >}}

@@ -1,0 +1,18 @@
+{{ $title := .Get "title" }}
+{{ $subtitle := .Get "subtitle" }}
+{{ $bg := .Get "bg" }}
+{{ $id := .Get "id" }}
+
+<section class="offerte-section{{ if eq $bg "light" }} offerte-section--light{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="container">
+    <div class="offerte-section__grid">
+      <div class="offerte-section__left">
+        <h2>{{ $title }}</h2>
+        {{ with $subtitle }}<p class="offerte-section__subtitle">{{ . }}</p>{{ end }}
+      </div>
+      <div class="offerte-section__right">
+        {{ .Inner | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>

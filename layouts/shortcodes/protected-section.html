@@ -2,25 +2,22 @@
   class="protected-section"
   data-token="{{ .Get "token" }}"
   id="protected-{{ .Ordinal }}">
-  <div
-    class="protected-overlay bg-gray-100 p-6 rounded-lg border-2 border-gray-300">
-    <h3 class="text-xl font-bold mb-3">🔒 Beveiligde inhoud</h3>
-    <p class="mb-4">Voer de toegangscode in om deze sectie te bekijken.</p>
+  <div class="protected-overlay">
+    <h3>Beveiligde inhoud</h3>
+    <p>Voer de toegangscode in om deze offerte te bekijken.</p>
     <input
       type="password"
-      class="protected-input border p-2 rounded w-full max-w-xs mb-2"
+      class="protected-input"
       placeholder="Toegangscode"
       onkeypress="if(event.key==='Enter') unlockSection(this)" />
-    <button
-      onclick="unlockSection(this)"
-      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+    <button onclick="unlockSection(this)">
       Ontgrendel
     </button>
-    <p class="error-msg text-red-600 mt-2 hidden">Onjuiste code</p>
+    <p class="error-msg hidden" style="color: #dc2626; margin-top: 0.75rem; font-size: 0.9rem;">Onjuiste code</p>
   </div>
 
   <div class="protected-content hidden">
-    {{ .Inner | markdownify }}
+    {{ .Inner }}
   </div>
 </div>
 

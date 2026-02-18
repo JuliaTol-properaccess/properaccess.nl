@@ -1,7 +1,49 @@
 {{ define "main" }}
-  <div class="container py-10">
-    <article class="offerte-content">
-      {{ .Content }}
-    </article>
-  </div>
+  <!-- Hero -->
+  <section class="offerte-hero">
+    <div class="container">
+      <div class="offerte-hero__grid">
+        <div class="offerte-hero__title">
+          <h1>{{ .Title }}</h1>
+        </div>
+        <div class="offerte-hero__meta">
+          {{ with .Params.offerte_voor }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Opgesteld voor</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.website_app }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Type</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.url_klant }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">URL</span>
+            <span class="offerte-hero__meta-value"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></span>
+          </div>
+          {{ end }}
+          {{ with .Params.datum_offerte }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Datum</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.offertenummer }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Offertenummer</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <article class="offerte-content">
+    {{ .Content }}
+  </article>
 {{ end }}
