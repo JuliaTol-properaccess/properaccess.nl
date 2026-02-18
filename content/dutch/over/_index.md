@@ -20,7 +20,7 @@ slug: "auditbureau-digitale-toegankelijkheid"
 url: "/auditbureau-digitale-toegankelijkheid/"
 
 banner:
-  title: "Kan ik jullie vertrouwen met iets zo belangrijks?"
+  title: "Over Proper Access"
   content: >
     Je website moet toegankelijk worden. Dat is niet alleen een wettelijke verplichting —
     het bepaalt of je **15–25% van je potentiële klanten** wegjaagt of verwelkomt.
@@ -71,7 +71,7 @@ team:
         - "900+ audits uitgevoerd sinds 2019"
     - name: "Het team"
       role: "Specialisten met passie voor techniek"
-      image: "/images/team.png"
+      image: "/images/pages/iaap.webp"
       bio: >
         Julia heeft een team samengesteld van mensen met dezelfde passie.
         We bespreken wekelijks de feedback op onze rapporten, de WCAG-richtlijnen, hulpsoftware support en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
@@ -141,7 +141,7 @@ faqs:
 
   - question: "Werken jullie ook internationaal?"
     answer: >
-      Ja. WCAG is een internationale standaard. We voeren audits uit in het Nederlands en Engels.
+      Ja. WCAG is een internationale standaard. We voeren audits uit in het Nederlands en Engels zonder extra kosten.
 
 
       Of je nu een Nederlandse overheidsinstelling bent, een internationale e-commerce speler,
