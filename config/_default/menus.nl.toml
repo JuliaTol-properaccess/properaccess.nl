@@ -7,24 +7,38 @@ url = "/"
 weight = 1
 
 [[main]]
+name = "Voor wie"
+weight = 2
+hasChildren = true
+
+[[main]]
 parent = "Voor wie"
 name = "Overheid"
 url = "/digitale_toegankelijkheid_overheid"
+weight = 1
 
 [[main]]
 parent = "Voor wie"
 name = "Cultuur"
 url = "/inclusie-cultuur-sport-en-attracties"
+weight = 2
 
 [[main]]
 parent = "Voor wie"
 name = "E-commerce"
 url = "/e-commerce-digitale-toegankelijkheid"
+weight = 3
 
 [[main]]
 parent = "Voor wie"
 name = "Digital Agency"
 url = "/digital_agency"
+weight = 4
+
+[[main]]
+name = "Diensten"
+weight = 3
+hasChildren = true
 
 [[main]]
 parent = "Diensten"
@@ -42,16 +56,18 @@ weight = 2
 parent = "Diensten"
 name = "Training devteam"
 url = "/training-devteams"
+weight = 3
 
 [[main]]
 parent = "Diensten"
 name = "Training webredactie"
 url = "/trainen-van-webredactie"
+weight = 4
 
 [[main]]
 name = "Blog"
 url = "/blog"
-weight = 6
+weight = 4
 
 [[main]]
 name = "Over Proper Access"
