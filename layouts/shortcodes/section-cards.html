@@ -1,0 +1,12 @@
+{{ $title := .Get "title" }}
+{{ $bg := .Get "bg" }}
+{{ $columns := .Get "columns" | default "3" }}
+
+<section class="section-cards{{ if eq $bg "light" }} section-cards--light{{ end }}">
+  <div class="container">
+    {{ with $title }}<h2 class="section-cards__title">{{ . }}</h2>{{ end }}
+    <div class="section-cards__grid section-cards__grid--{{ $columns }}">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>

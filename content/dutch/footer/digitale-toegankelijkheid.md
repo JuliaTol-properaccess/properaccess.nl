@@ -2,7 +2,7 @@
 title: "Digitale toegankelijkheid"
 date: 2021-11-09
 slug: "digitale-toegankelijkheid"
-url: "/nl/digitale-toegankelijkheid/"
+url: "/digitale-toegankelijkheid/"
 
 ---
 

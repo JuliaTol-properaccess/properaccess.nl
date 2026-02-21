@@ -1,0 +1,11 @@
+{{ $title := .Get "title" }}
+{{ $bg := .Get "bg" }}
+
+<section class="section-faq{{ if eq $bg "light" }} section-faq--light{{ end }}">
+  <div class="container">
+    {{ with $title }}<h2 class="section-faq__title">{{ . }}</h2>{{ end }}
+    <div class="section-faq__list">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>

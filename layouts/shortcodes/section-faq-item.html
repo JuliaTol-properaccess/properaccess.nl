@@ -1,0 +1,8 @@
+{{ $question := .Get "question" }}
+
+<details class="section-faq-item">
+  <summary class="section-faq-item__question">{{ $question }}</summary>
+  <div class="section-faq-item__answer">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

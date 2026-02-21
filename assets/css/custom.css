@@ -1,4 +1,12 @@
 /* Add your own custom styles here */
+
+.cta-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
 .faq-section {
   max-width: 700px;
   margin: 3rem auto;
@@ -138,6 +146,13 @@ html.dark .offerte-hero {
   }
 }
 
+.offerte-hero__subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0.75rem 0 0 0;
+}
+
 .offerte-hero__meta {
   display: grid;
   grid-template-columns: 1fr;
@@ -268,6 +283,131 @@ html.dark .offerte-section__subtitle {
   min-width: 0;
 }
 
+/* SVG text: prevent bold inheritance, keep explicit font-weight on individual elements */
+.offerte-section svg {
+  font-weight: 400;
+}
+
+/* --- Koppen vergelijking (HTML illustratie) --- */
+.koppen-vergelijking {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 640px) {
+  .koppen-vergelijking {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.koppen-vergelijking__fout {
+  background: none;
+  border: 1.5px solid #A30D4B;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.koppen-vergelijking__goed {
+  background: none;
+  border: 1.5px solid #004050;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.koppen-vergelijking__label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.koppen-vergelijking__label--fout {
+  color: #A30D4B;
+}
+
+.koppen-vergelijking__label--goed {
+  color: #004050;
+}
+
+.koppen-vergelijking__doc {
+  background: #ffffff;
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.koppen-vergelijking__heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 0.15rem 0;
+  line-height: 1.4;
+}
+
+.koppen-vergelijking__heading:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+.koppen-vergelijking__body {
+  font-size: 0.8rem;
+  color: #1F2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.koppen-vergelijking__tag {
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-family: monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #1F2937;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
+.koppen-vergelijking__sr {
+  font-size: 0.75rem;
+  margin: 0.75rem 0 0 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+.koppen-vergelijking__sr--fout {
+  background: #f5f5f5;
+  color: #A30D4B;
+}
+
+.koppen-vergelijking__sr--goed {
+  background: #f5f5f5;
+  color: #004050;
+}
+
+/* Dark mode koppen vergelijking */
+html.dark .koppen-vergelijking__doc {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+html.dark .koppen-vergelijking__heading {
+  color: #E5E7EB;
+}
+
+html.dark .koppen-vergelijking__body {
+  color: #9CA3AF;
+}
+
+html.dark .koppen-vergelijking__tag {
+  background: #374151;
+  color: #E5E7EB;
+}
+
 .offerte-section__right h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -303,13 +443,20 @@ html.dark .offerte-section__right p {
   list-style: disc;
 }
 
-.offerte-section__right ul li {
+.offerte-section__right ol {
+  padding-left: 1.25rem;
+  list-style: decimal;
+}
+
+.offerte-section__right ul li,
+.offerte-section__right ol li {
   line-height: 1.7;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
-html.dark .offerte-section__right ul li {
+html.dark .offerte-section__right ul li,
+html.dark .offerte-section__right ol li {
   color: var(--color-darkmode-text);
 }
 
@@ -385,6 +532,77 @@ html.dark .offerte-section__right a {
 
 html.dark .offerte-section__right a:hover {
   text-decoration-color: var(--color-darkmode-text-dark);
+}
+
+/* --- Sectie prose (markdown content in sectie-layout) --- */
+.sectie-prose {
+  max-width: 48rem;
+  padding: 3rem 0;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+html.dark .sectie-prose {
+  color: var(--color-darkmode-text);
+}
+
+.sectie-prose h1,
+.sectie-prose h2,
+.sectie-prose h3,
+.sectie-prose h4 {
+  color: var(--color-text-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+html.dark .sectie-prose h1,
+html.dark .sectie-prose h2,
+html.dark .sectie-prose h3,
+html.dark .sectie-prose h4 {
+  color: var(--color-darkmode-text-dark);
+}
+
+.sectie-prose p {
+  margin-bottom: 1rem;
+}
+
+.sectie-prose ul,
+.sectie-prose ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.sectie-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.sectie-prose a {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 3px;
+}
+
+.sectie-prose a:hover {
+  text-decoration-color: var(--color-text-dark);
+}
+
+html.dark .sectie-prose a {
+  color: var(--color-darkmode-text-dark);
+  text-decoration-color: var(--color-darkmode-border);
+}
+
+.sectie-prose strong {
+  color: var(--color-text-dark);
+}
+
+html.dark .sectie-prose strong {
+  color: var(--color-darkmode-text-dark);
+}
+
+.sectie-prose img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 /* --- CTA / Closing section --- */
@@ -489,4 +707,362 @@ html.dark .offerte-content .protected-input {
 html.dark .offerte-content .protected-overlay button {
   background-color: #ffffff;
   color: var(--color-dark);
+}
+
+
+/* ============================================
+   LANDING PAGE COMPONENTEN
+   ============================================ */
+
+/* --- section-full: full-width gecentreerde tekst --- */
+
+.section-full {
+  padding: 4rem 0;
+}
+
+.section-full--light {
+  background-color: #f5f5f5;
+}
+
+html.dark .section-full--light {
+  background-color: var(--color-darkmode-body);
+}
+
+.section-full__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-full__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+html.dark .section-full__title {
+  color: var(--color-darkmode-text-dark);
+}
+
+.section-full__content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+html.dark .section-full__content {
+  color: var(--color-darkmode-text);
+}
+
+.section-full__content p {
+  margin-bottom: 1rem;
+}
+
+.section-full__content a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+html.dark .section-full__content a {
+  color: #e8a0ba;
+}
+
+.section-full__content ul,
+.section-full__content ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-full__content ul {
+  list-style: disc;
+}
+
+.section-full__content ol {
+  list-style: decimal;
+}
+
+.section-full__content li {
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+html.dark .section-full__content li {
+  color: var(--color-darkmode-text);
+}
+
+.section-full__content strong {
+  color: #1F2937;
+}
+
+html.dark .section-full__content strong {
+  color: var(--color-darkmode-text-dark);
+}
+
+/* --- section-cards: kaarten grid --- */
+
+.section-cards {
+  padding: 4rem 0;
+}
+
+.section-cards--light {
+  background-color: #f5f5f5;
+}
+
+html.dark .section-cards--light {
+  background-color: var(--color-darkmode-body);
+}
+
+.section-cards__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+html.dark .section-cards__title {
+  color: var(--color-darkmode-text-dark);
+}
+
+.section-cards__grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section-cards__grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.section-cards__grid--2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .section-cards__grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-cards__grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- section-card: individuele kaart --- */
+
+.section-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-top: 3px solid #004050;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+html.dark .section-card {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+  border-top-color: #A30D4B;
+}
+
+.section-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #004050;
+  margin-bottom: 0.75rem;
+}
+
+html.dark .section-card__title {
+  color: #e8a0ba;
+}
+
+.section-card__content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+html.dark .section-card__content {
+  color: var(--color-darkmode-text);
+}
+
+.section-card__content p {
+  margin-bottom: 0.75rem;
+}
+
+.section-card__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- section-cta: call-to-action blok --- */
+
+.section-cta {
+  padding: 4rem 0;
+  background-color: #1F2937;
+}
+
+.section-cta__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-cta__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.section-cta__content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.section-cta__content p {
+  margin-bottom: 1rem;
+}
+
+.section-cta__content a {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #A30D4B;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.section-cta__content a:hover {
+  opacity: 0.85;
+}
+
+/* section-cta met afbeelding */
+
+.section-cta--with-image .section-cta__inner {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-cta--with-image .section-cta__inner {
+    flex-direction: row;
+    text-align: left;
+    gap: 3rem;
+  }
+}
+
+.section-cta__image {
+  flex-shrink: 0;
+}
+
+.section-cta__image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- section-faq: FAQ accordion --- */
+
+.section-faq {
+  padding: 4rem 0;
+}
+
+.section-faq--light {
+  background-color: #f5f5f5;
+}
+
+html.dark .section-faq--light {
+  background-color: var(--color-darkmode-body);
+}
+
+.section-faq__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+html.dark .section-faq__title {
+  color: var(--color-darkmode-text-dark);
+}
+
+.section-faq__list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* --- section-faq-item: individuele vraag --- */
+
+.section-faq-item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+html.dark .section-faq-item {
+  border-bottom-color: var(--color-darkmode-border);
+}
+
+.section-faq-item__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1F2937;
+  cursor: pointer;
+  list-style: none;
+}
+
+.section-faq-item__question::-webkit-details-marker {
+  display: none;
+}
+
+html.dark .section-faq-item__question {
+  color: var(--color-darkmode-text-dark);
+}
+
+.section-faq-item__question::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #A30D4B;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.section-faq-item[open] .section-faq-item__question::after {
+  content: "\2212";
+}
+
+.section-faq-item__answer {
+  padding: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+html.dark .section-faq-item__answer {
+  color: var(--color-darkmode-text);
+}
+
+.section-faq-item__answer p {
+  margin-bottom: 0.5rem;
+}
+
+.section-faq-item__answer p:last-child {
+  margin-bottom: 0;
 }

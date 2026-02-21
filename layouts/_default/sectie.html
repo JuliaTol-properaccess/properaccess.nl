@@ -1,0 +1,74 @@
+{{ define "main" }}
+  <!-- Hero -->
+  <section class="offerte-hero">
+    <div class="container">
+      <div class="offerte-hero__grid">
+        <div class="offerte-hero__title">
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.subtitle }}
+          <p class="offerte-hero__subtitle">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ if or .Params.offerte_voor .Params.website_app .Params.url_klant .Params.datum_offerte .Params.offertenummer .Params.hero_meta }}
+        <div class="offerte-hero__meta">
+          {{/* Offerte-specifieke velden */}}
+          {{ with .Params.offerte_voor }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Opgesteld voor</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.website_app }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Type</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.url_klant }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">URL</span>
+            <span class="offerte-hero__meta-value"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></span>
+          </div>
+          {{ end }}
+          {{ with .Params.datum_offerte }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Datum</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Params.offertenummer }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">Offertenummer</span>
+            <span class="offerte-hero__meta-value">{{ . }}</span>
+          </div>
+          {{ end }}
+          {{/* Generieke metadata via hero_meta lijst */}}
+          {{ range .Params.hero_meta }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">{{ .label }}</span>
+            <span class="offerte-hero__meta-value">{{ .value }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  {{ if .Params.sectie_layout }}
+  {{/* Sectie-modus: content bevat offerte-section shortcodes die eigen containers hebben */}}
+  <article class="offerte-content">
+    {{ .Content }}
+  </article>
+  {{ else }}
+  {{/* Standaard: gewone markdown-content met container */}}
+  <article class="offerte-content">
+    <div class="container">
+      <div class="sectie-prose">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+  {{ end }}
+{{ end }}
