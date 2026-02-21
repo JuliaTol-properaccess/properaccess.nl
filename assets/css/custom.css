@@ -1066,3 +1066,242 @@ html.dark .section-faq-item__answer {
 .section-faq-item__answer p:last-child {
   margin-bottom: 0;
 }
+
+/* ============================================
+   WEB APP: SC PER BEPERKING
+   ============================================ */
+
+.webapp-sc {
+  padding: 2rem 0;
+}
+
+.webapp-sc__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+html.dark .webapp-sc__title {
+  color: var(--color-darkmode-text-dark);
+}
+
+.webapp-sc__intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+  max-width: 720px;
+}
+
+html.dark .webapp-sc__intro {
+  color: var(--color-darkmode-text);
+}
+
+/* --- Filter knoppen --- */
+.webapp-sc__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.webapp-sc__filter {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #1F2937;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1F2937;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.webapp-sc__filter:hover {
+  background-color: #f5f5f5;
+}
+
+.webapp-sc__filter:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+
+.webapp-sc__filter--active {
+  background-color: #1F2937;
+  color: #ffffff;
+  border-color: #1F2937;
+}
+
+.webapp-sc__filter--active:hover {
+  background-color: #374151;
+}
+
+html.dark .webapp-sc__filter {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: var(--color-darkmode-text);
+}
+
+html.dark .webapp-sc__filter:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .webapp-sc__filter--active {
+  background-color: #ffffff;
+  color: #1F2937;
+  border-color: #ffffff;
+}
+
+/* --- Teller --- */
+.webapp-sc__count {
+  font-size: 0.9rem;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+html.dark .webapp-sc__count {
+  color: var(--color-darkmode-text);
+}
+
+/* --- Principe koppen --- */
+.webapp-sc__principe-titel {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #A30D4B;
+}
+
+html.dark .webapp-sc__principe-titel {
+  color: var(--color-darkmode-text-dark);
+}
+
+/* --- Richtlijn koppen --- */
+.webapp-sc__richtlijn-titel {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #004050;
+  margin: 1rem 0 0.5rem;
+}
+
+html.dark .webapp-sc__richtlijn-titel {
+  color: #e8a0ba;
+}
+
+/* --- SC lijst --- */
+.webapp-sc__lijst {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.webapp-sc__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.webapp-sc__item[hidden] {
+  display: none;
+}
+
+html.dark .webapp-sc__item {
+  border-bottom-color: var(--color-darkmode-border);
+}
+
+.webapp-sc__nummer {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1F2937;
+  white-space: nowrap;
+}
+
+html.dark .webapp-sc__nummer {
+  color: var(--color-darkmode-text-dark);
+}
+
+.webapp-sc__naam {
+  flex: 1;
+  min-width: 180px;
+  color: #1F2937;
+  font-size: 0.95rem;
+}
+
+html.dark .webapp-sc__naam {
+  color: var(--color-darkmode-text);
+}
+
+.webapp-sc__niveau {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #004050;
+  background: #f5f5f5;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+html.dark .webapp-sc__niveau {
+  background: #374151;
+  color: #E5E7EB;
+}
+
+/* --- Beperking tags --- */
+.webapp-sc__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.webapp-sc__tag {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  font-size: 0.73rem;
+  font-weight: 600;
+  background: #f5f5f5;
+  color: #1F2937;
+  border-left: 3px solid #1F2937;
+}
+
+html.dark .webapp-sc__tag {
+  background: #374151;
+  color: #E5E7EB;
+}
+
+.webapp-sc__tag--visueel { border-left-color: #A30D4B; }
+.webapp-sc__tag--auditief { border-left-color: #004050; }
+.webapp-sc__tag--motorisch { border-left-color: #1F2937; }
+.webapp-sc__tag--cognitief { border-left-color: #A30D4B; }
+.webapp-sc__tag--neurologisch { border-left-color: #004050; }
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .webapp-sc__controls {
+    flex-direction: column;
+  }
+
+  .webapp-sc__filter {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .webapp-sc__item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .webapp-sc__filter {
+    transition: none;
+  }
+}
