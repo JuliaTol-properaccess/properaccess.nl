@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-2-4"
+description: "WCAG 3.2.4 vereist dat dezelfde elementen overal dezelfde naam en functie hebben. Lees hoe je consistentie waarborgt op je website."
 ---
 
 Gebruikers van je website verwachten consistentie. Als knoppen, links en andere interactieve elementen telkens anders genoemd of weergegeven worden, kan dit verwarrend zijn – vooral voor mensen met cognitieve beperkingen of gebruikers van schermlezers.

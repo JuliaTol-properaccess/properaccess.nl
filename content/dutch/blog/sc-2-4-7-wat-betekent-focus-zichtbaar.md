@@ -6,6 +6,7 @@ categories:
 tags: 
   - "2-4-7"
   - "focus"
+description: "WCAG 2.4.7 vereist een zichtbare focus-indicator op interactieve elementen. Lees waarom dit essentieel is en hoe je het implementeert."
 ---
 
 Mensen die hun toetsenbord gebruiken om door een website te navigeren, moeten kunnen zien welk element op dat moment actief is. Zonder een duidelijke focus-indicator kunnen ze de draad kwijt raken en niet zien waar ze zich bevinden op de pagina. Dit is vooral belangrijk voor mensen met een motorische beperking of visuele beperking.

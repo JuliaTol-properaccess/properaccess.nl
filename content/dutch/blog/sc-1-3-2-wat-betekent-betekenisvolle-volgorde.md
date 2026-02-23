@@ -1,8 +1,9 @@
 ---
 title: "1.3.2 - Wat betekent “Betekenisvolle volgorde”?"
 date: 2025-05-17
-categories: 
+categories:
   - "wcag-uitgelegd"
+description: "WCAG 1.3.2 vereist een betekenisvolle volgorde in de broncode. Lees waarom de HTML-volgorde belangrijk is voor schermlezers en hoe je dit goed aanpakt."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.3.2-1024x1024.png)

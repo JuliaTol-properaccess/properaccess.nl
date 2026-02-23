@@ -6,6 +6,7 @@ categories:
 tags: 
   - "2-1-4"
   - "video"
+description: "WCAG 2.1.4 stelt dat sneltoetsen met enkele tekens uitschakelbaar of aanpasbaar moeten zijn. Lees waarom dit belangrijk is voor spraakherkenning."
 ---
 
 Veel webapps en websites gebruiken sneltoetsen om acties sneller uit te voeren. Denk aan **“Ctrl + S”** om iets op te slaan of **“Ctrl + F”** om te zoeken. Maar soms worden ook enkele tekens gebruikt als sneltoets, zoals een **“s”** om naar zoeken te springen. Dit kan problematisch zijn voor mensen die alternatieve invoerapparaten gebruiken, zoals spraakherkenning of braille-toetsenborden, omdat ze onbedoeld acties kunnen triggeren.

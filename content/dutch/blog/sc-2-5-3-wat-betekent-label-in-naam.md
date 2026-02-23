@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-5-3"
+description: "WCAG 2.5.3 vereist dat de zichtbare tekst overeenkomt met de technische naam van een element. Belangrijk voor spraakherkenning en schermlezers."
 ---
 
 Mensen die spraakherkenningssoftware gebruiken om te navigeren, moeten vaak de exacte naam of het label van een knop, link of ander interactief element uitspreken om die te activeren. Als de zichtbare tekst niet overeenkomt met de **technische naam** van het element, kan dit verwarrend zijn of zelfs onbruikbaar worden.

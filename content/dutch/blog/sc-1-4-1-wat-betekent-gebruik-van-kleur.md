@@ -3,8 +3,9 @@ title: "SC 1.4.1 - Wat betekent \"Gebruik van kleur\"?"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-4-1"
+description: "WCAG 1.4.1 stelt dat kleur nooit de enige manier mag zijn om informatie over te brengen. Lees waarom dit belangrijk is en hoe je het goed toepast."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.1-1024x1024.png)

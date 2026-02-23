@@ -3,8 +3,9 @@ title: "SC 1.3.1 - Wat betekent “Informatie en relaties”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-3-1"
+description: "WCAG 1.3.1 vereist dat informatie en relaties in je content programmatisch bepaalbaar zijn. Leer hoe je semantische HTML correct gebruikt voor koppen, lijsten en formulieren."
 ---
 
 Webpagina’s bestaan uit meer dan alleen losse teksten. De manier waarop onderdelen zoals koppen, lijsten, tabellen en formulieren worden gestructureerd, bepaalt hoe gebruikers – vooral die met een schermlezer – de inhoud begrijpen. Zonder duidelijke structuur kan belangrijke context verloren gaan.

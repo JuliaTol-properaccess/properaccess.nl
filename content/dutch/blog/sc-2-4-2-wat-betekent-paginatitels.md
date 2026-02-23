@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-4-2"
+description: "WCAG 2.4.2 vereist dat elke pagina een beschrijvende titel heeft. Lees hoe je goede paginatitels schrijft voor toegankelijkheid en SEO."
 ---
 
 De titel van een webpagina is vaak het eerste wat mensen zien wanneer ze een nieuw tabblad openen, zoeken in hun browsergeschiedenis of naar een zoekresultaat kijken. Voor mensen die schermlezers gebruiken of meerdere tabbladen open hebben, is een duidelijke en specifieke paginatitel essentieel om te begrijpen waar ze zijn.

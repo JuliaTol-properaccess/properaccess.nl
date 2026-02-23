@@ -6,6 +6,7 @@ categories:
 tags: 
   - "2-4-11"
   - "focus"
+description: "WCAG 2.4.11 vereist dat de focus-indicator niet volledig bedekt wordt door andere elementen. Lees de eisen en hoe je dit controleert."
 ---
 
 Voor gebruikers die met het toetsenbord navigeren, is het cruciaal dat ze altijd kunnen zien waar de focus zich bevindt. Als de focus-indicator wordt **bedekt** door andere elementen of uit beeld verdwijnt, kan dit voor grote verwarring zorgen. Gebruikers kunnen dan vastlopen of de context van de pagina kwijtraken.

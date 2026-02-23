@@ -7,6 +7,7 @@ categories:
   - "Webdeveloper"
 aliases:
   - "/toetsenbord_toegankelijk/"
+description: "Hoe verwijder je de melding Google vragen over dit bericht in Chrome? Lees waarom deze melding je toegankelijkheidstests verstoort."
 ---
 
 Als je regelmatig digitale toegankelijkheid test, dan weet je hoe onmisbaar de **Tab-toets** is. Het is dé manier om snel te controleren of een website met alleen het toetsenbord te bedienen is. Tijdens onze audits zeg ik het altijd: **wat niet met de Tab-toets bereikbaar is, is ook niet bereikbaar voor veel hulpsoftware.**

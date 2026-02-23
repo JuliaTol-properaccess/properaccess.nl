@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-2-2"
+description: "WCAG 3.2.2 stelt dat formulieren niet onverwacht mogen veranderen bij het invullen. Lees hoe je voorspelbaar gedrag garandeert."
 ---
 
 Soms verandert er iets op een website zodra je ergens iets invult of selecteert. Bijvoorbeeld een formulier dat meteen verzendt als je een optie aanklikt, of een pagina die direct verspringt naar een andere stap. Voor veel bezoekers – vooral mensen die langzaam navigeren of een schermlezer gebruiken – kan dat verwarrend of zelfs frustrerend zijn.

@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-4-5"
+description: "WCAG 2.4.5 vereist minstens twee manieren om een pagina te vinden, zoals navigatie en zoekfunctie. Lees welke opties je hebt."
 ---
 
 Het doel van succescriterium 2.4.5 - Meerdere manieren van WCAG is om bezoekers minimaal twee mogelijkheden te bieden om elke pagina van de website te vinden. Waarom twee? Omdat we allemaal verschillend zijn en onze voorkeuren voor het zoeken kunnen variëren. De één gebruikt liever een zoekbalk, terwijl een ander de voorkeur geeft aan het doornemen van de volledige sitemap.

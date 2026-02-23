@@ -7,6 +7,7 @@ categories:
   - "tips-en-tools"
 aliases:
   - "/toegankelijke_pin_automaat/"
+description: "Een persoonlijk verhaal over digitale ontoegankelijkheid bij een pinautomaat in Zweden. Over de impact van slechte UX op dagelijkse taken."
 ---
 
 Een maand geleden maakte ik samen met mijn zoon en onze teckels een rondreis door Zweden. Alles verliep soepel: met de trein van Stockholm naar Umeå, waar we dicht bij de poolcirkel een stuga (lees: houten huisje in een bos vol muggen met karakter) hadden gehuurd.

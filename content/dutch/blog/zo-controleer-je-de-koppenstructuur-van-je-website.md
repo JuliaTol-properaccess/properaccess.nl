@@ -9,6 +9,7 @@ tags:
   - "1-3-1"
 aliases:
   - /zo-controleer-je-de-koppenstructuur-van-je-website/
+description: "Controleer de koppenstructuur van je website met de gratis tool HeadingsMap. Stap-voor-stap handleiding voor een logische H1-H6 structuur."
 ---
 
 Een logische koppenstructuur (H1, H2, H3, …) is cruciaal voor webtoegankelijkheid én SEO. Maar hoe weet je of jouw pagina goed is opgebouwd? Met de gratis browserextensie **HeadingsMap** zie je in één oogopslag of de structuur klopt en waar verbeteringen nodig zijn. In deze handleiding lees je stap voor stap hoe je de tool gebruikt en waar je op moet letten.

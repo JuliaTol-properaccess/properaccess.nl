@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-3-7"
+description: "WCAG 3.3.8 vereist toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze implementeert."
 ---
 
 Veel websites en apps vereisen dat gebruikers inloggen of hun identiteit bevestigen, bijvoorbeeld via wachtwoorden, pincodes of puzzels. Voor mensen met een cognitieve beperking, motorische beperking of visuele beperking kunnen deze authenticatiemethoden vaak lastig zijn. Denk aan CAPTCHA’s die alleen werken met ingewikkelde beelden of codes die moeilijk in te typen zijn.

@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-2-1"
+description: "WCAG 2.2.1 vereist dat bezoekers tijdslimieten kunnen aanpassen of uitschakelen. Lees de regels voor formulieren, sessies en automatische time-outs."
 ---
 
 Sommige mensen hebben meer tijd nodig om een taak op een website te voltooien. Denk aan mensen die lezen met een schermlezer, motorische beperkingen hebben, of gewoon rustig willen werken. Als je website een automatische tijdslimiet heeft (bijvoorbeeld bij formulieren, tests, of inlogsessies) en mensen kunnen die niet aanpassen, kunnen ze belangrijke acties verliezen.

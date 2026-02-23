@@ -6,6 +6,7 @@ categories:
 tags: 
   - "3-3-7"
   - "formulier"
+description: "WCAG 3.3.7 stelt dat gebruikers eerder ingevoerde informatie niet opnieuw hoeven in te vullen. Lees hoe je redundante invoer voorkomt."
 ---
 
 Veel formulieren vragen om dezelfde informatie op meerdere plekken, bijvoorbeeld je naam of adres. Voor sommige gebruikers – vooral mensen met motorische beperkingen, cognitieve beperkingen of gebruikers van schermlezers – kan dit **frustrerend en tijdrovend** zijn.

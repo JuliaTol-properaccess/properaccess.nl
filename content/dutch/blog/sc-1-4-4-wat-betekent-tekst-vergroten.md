@@ -1,8 +1,9 @@
 ---
 title: "1.4.4 - Wat betekent \"Tekst vergroten\"?"
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
+description: "WCAG 1.4.4 vereist dat tekst tot 200% vergroot kan worden zonder verlies van inhoud of functionaliteit. Lees hoe je dit als ontwikkelaar correct implementeert."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.4-1-1024x1024.png)

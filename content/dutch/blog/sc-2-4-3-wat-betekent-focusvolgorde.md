@@ -7,6 +7,7 @@ tags:
   - "2-4-3"
   - "focus"
   - "toetsenbord"
+description: "WCAG 2.4.3 vereist een logische focusvolgorde bij toetsenbordnavigatie. Lees wat dit betekent, hoe je het test en veelgemaakte fouten."
 ---
 
 Mensen die met het toetsenbord of andere invoerapparaten navigeren, vertrouwen op een logische focusvolgorde om door een website te bewegen. De focusvolgorde bepaalt in welke volgorde interactieve elementen (zoals knoppen, links en formuliervelden) geselecteerd worden wanneer je de **Tab**\-toets gebruikt. Als de volgorde niet logisch is, kunnen gebruikers verdwalen of belangrijke onderdelen missen.

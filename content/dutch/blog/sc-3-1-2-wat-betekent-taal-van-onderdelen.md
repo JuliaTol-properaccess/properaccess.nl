@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-1-2"
+description: "WCAG 3.1.2 vereist dat anderstalige tekstfragmenten gemarkeerd worden met een lang-attribuut. Lees hoe je dit correct toepast."
 ---
 
 Websites zijn vaak in één hoofdtalen geschreven, zoals Nederlands of Engels. Maar soms gebruik je korte stukjes tekst in een andere taal, bijvoorbeeld een Engelse uitspraak in een Nederlandse tekst. Als je niet aangeeft dat de taal verandert, snappen schermlezers het niet goed en lezen ze de tekst verkeerd voor.

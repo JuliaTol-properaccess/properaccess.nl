@@ -9,6 +9,7 @@ tags:
   - "webredactie"
 aliases:
   - /video-transcript-de-makkelijkste-manier/
+description: "Hoe maak je een transcript voor je video met een gratis tool? Stap-voor-stap handleiding voor toegankelijke videocontent conform WCAG."
 ---
 
 Verder op deze pagina staat een video die in een toegankelijkheidsaudit zou worden afgekeurd. In deze video komt informatie in beeld die niet toegankelijk is voor mensen die de video niet kunnen zien. Probeer het zelf te begrijpen:

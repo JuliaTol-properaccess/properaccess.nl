@@ -3,8 +3,9 @@ title: "SC 1.4.13 - Wat betekent “Inhoud bij hover of focus”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-4-13"
+description: "WCAG 1.4.13 stelt eisen aan content die verschijnt bij hover of focus, zoals tooltips en uitklapmenu's. Lees de drie regels en hoe je ze toepast."
 ---
 
 Sommige informatie verschijnt pas wanneer je ergens met de muis overheen gaat (hover) of wanneer je een element selecteert met je toetsenbord (focus). Denk aan tooltips, uitklapmenu’s of tekstballonnetjes. Dit kan verwarrend zijn voor gebruikers die geen muis gebruiken, motorische beperkingen hebben of een schermlezer gebruiken.

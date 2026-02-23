@@ -3,8 +3,9 @@ title: "1.4.10 - Wat betekent \"Reflow\"?"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-4-10"
+description: "WCAG 1.4.10 (Reflow) vereist dat websites werken zonder horizontaal scrollen bij 400% zoom. Lees wat reflow betekent en hoe je eraan voldoet."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.10-1024x1024.png)

@@ -3,8 +3,9 @@ title: "1.3.3 - Wat betekent \"Zintuiglijke kenmerken\"?"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-3-3"
+description: "WCAG 1.3.3 stelt dat instructies niet alleen mogen verwijzen naar kleur, vorm of locatie. Leer hoe je content begrijpelijk maakt voor iedereen."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.3.3-1-1024x1024.png)

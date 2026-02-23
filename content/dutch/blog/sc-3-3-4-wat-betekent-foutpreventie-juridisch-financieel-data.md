@@ -6,6 +6,7 @@ categories:
 tags: 
   - "3-3-4"
   - "formulier"
+description: "WCAG 3.3.4 vereist foutpreventie bij juridische, financiele of data-transacties. Lees de eisen voor bevestigings- en correctiemogelijkheden."
 ---
 
 Fouten maken op een website kan altijd gebeuren, maar sommige fouten kunnen **grote gevolgen** hebben. Denk aan het verkeerd invullen van een belastingformulier, een verkeerde bestelling in een webshop, of een fout bij het opslaan van medische gegevens. Voor gebruikers met cognitieve beperkingen, laaggeletterdheid of mensen die snel afgeleid zijn, kunnen deze fouten extra lastig zijn om te herstellen.

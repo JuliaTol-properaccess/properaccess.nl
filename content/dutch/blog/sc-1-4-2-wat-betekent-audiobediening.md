@@ -3,9 +3,10 @@ title: "SC 1.4.2 - Wat betekent “Audiobediening”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-4-2"
   - "geluid"
+description: "WCAG 1.4.2 vereist dat automatisch afspelende audio gepauzeerd of gestopt kan worden. Lees de regels, uitzonderingen en veelgemaakte fouten."
 ---
 
 Automatisch afspelende audio kan voor veel gebruikers een probleem zijn. Het kan **verwarrend** zijn voor mensen met cognitieve beperkingen, **storend** voor gebruikers van schermlezers en **onhandig** voor mensen die meerdere tabbladen open hebben. Daarnaast kunnen onverwachte geluiden gebruikers afleiden of irriteren.

@@ -7,6 +7,7 @@ categories:
   - "de EAA"
 aliases:
   - /toegankelijke-websites-van-politieke-partijen/
+description: "Hoe toegankelijk zijn de websites van Nederlandse politieke partijen? Een praktijktest met alleen het toetsenbord laat verrassende resultaten zien."
 ---
 
 Met het oog op de verkiezingen in oktober vroeg ik mij af: hoe toegankelijk zijn de websites van politieke partijen die zeggen dat ze staan voor **een betere digitale wereld**?

@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-2-6"
+description: "WCAG 3.2.6 vereist dat hulpopties zoals chat of FAQ altijd op dezelfde plek te vinden zijn. Lees hoe je consistente hulp biedt."
 ---
 
 Voor veel gebruikers is het belangrijk om snel hulp te kunnen vinden wanneer ze vastlopen op een website. Dit geldt vooral voor mensen met cognitieve beperkingen, lage digitale vaardigheden of gebruikers die stressgevoelig zijn. Als hulpopties zoals chat, hulplijnen of FAQ-secties elke keer op een andere plek staan, kan dit verwarrend zijn.

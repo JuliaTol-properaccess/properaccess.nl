@@ -6,6 +6,7 @@ categories:
 tags: 
   - "2-4-4"
   - "links"
+description: "WCAG 2.4.4 vereist dat het doel van elke link duidelijk is uit de tekst of context. Lees hoe je beschrijvende linkteksten schrijft."
 ---
 
 Links zijn een van de belangrijkste manieren om door een website te navigeren. Voor gebruikers van schermlezers, of mensen die snel door een pagina willen scannen, moet direct duidelijk zijn wat een link doet. Een linktekst als **“Klik hier”** of **“Meer info”** is vaak te vaag en onduidelijk buiten de context van de omringende tekst.

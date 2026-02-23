@@ -11,6 +11,7 @@ tags:
   - "webredactie"
 aliases:
   - /tools-om-contrast-te-checken/
+description: "Overzicht van de beste tools om kleurcontrast te controleren voor WCAG 1.4.3 en 1.4.11. Gratis tools voor designers en webredactie."
 ---
 
 De TPGi Color Contrast Checker is een gratis tool om te controleren of de kleuren op je website genoeg contrast hebben volgens de WCAG-richtlijnen.

@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "3-1-1"
+description: "WCAG 3.1.1 vereist dat de taal van een webpagina is aangegeven in de HTML-code. Lees hoe je het lang-attribuut correct instelt voor schermlezers."
 ---
 
 Succescriterium (SC) 3.1.1 stelt dat de standaardtaal van een webpagina moet worden aangegeven. Dit betekent dat de primaire taal waarin de navigatie, de header en de footer is geschreven, de correcte specificatie in de HTML-code moet krijgen. Dit helpt ondersteunende technologieën, zoals schermlezers, om de inhoud correct uit te spreken.

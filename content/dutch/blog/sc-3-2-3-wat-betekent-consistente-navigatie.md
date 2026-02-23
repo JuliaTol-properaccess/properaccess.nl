@@ -3,6 +3,7 @@ title: "SC 3.2.3 - Wat betekent “Consistente navigatie”"
 date: 2025-05-17
 categories: 
   - "wcag-uitgelegd"
+description: "WCAG 3.2.3 vereist dat navigatie op elke pagina op dezelfde plek en in dezelfde volgorde staat. Lees waarom en hoe je dit aanpakt."
 ---
 
 Bezoekers – vooral mensen met een cognitieve beperking, laaggeletterdheid of schermlezers – vertrouwen op herkenbare patronen op een website. Als navigatie ineens verandert of verspringt tussen pagina’s, raakt de bezoeker in de war en is de site moeilijker te gebruiken.

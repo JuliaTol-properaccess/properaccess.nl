@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-5-7"
+description: "WCAG 2.5.7 vereist een alternatief voor sleepbewegingen (drag-and-drop). Lees waarom dit belangrijk is en welke alternatieven je kunt bieden."
 ---
 
 Veel moderne websites en apps maken gebruik van **sleepbewegingen** om inhoud te verplaatsen, bijvoorbeeld bij fotogalerijen, schuifbalken, kaarttoepassingen of drag-and-drop formulieren. Dit kan lastig of zelfs onmogelijk zijn voor gebruikers met een motorische beperking, zoals tremoren, beperkte handcoördinatie of spraakgestuurde apparaten.

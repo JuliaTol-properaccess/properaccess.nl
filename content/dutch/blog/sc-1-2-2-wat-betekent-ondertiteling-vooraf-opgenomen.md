@@ -3,9 +3,10 @@ title: "SC 1.2.2 - Wat betekent “Ondertiteling (vooraf opgenomen)”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-2-2"
   - "video"
+description: "WCAG 1.2.2 vereist ondertiteling voor vooraf opgenomen video's. Lees wat goede ondertiteling inhoudt, veelgemaakte fouten en praktische tips voor je website."
 ---
 
 Video’s met geluid bevatten vaak belangrijke informatie, zoals gesproken tekst of geluidseffecten. Voor mensen die doof of slechthorend zijn, kan die informatie anders verloren gaan. Ondertiteling zorgt ervoor dat ook zij alles kunnen volgen.

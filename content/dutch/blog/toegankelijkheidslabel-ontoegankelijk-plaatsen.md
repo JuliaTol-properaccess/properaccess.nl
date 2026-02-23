@@ -10,6 +10,7 @@ tags:
   - "toegankelijke-website"
 aliases:
   - "/toegankelijkheidslabel-ontoegankelijk-plaatsen/"
+description: "Het toegankelijkheidslabel van je verklaring moet zelf ook toegankelijk zijn. Lees hoe je het correct plaatst zonder aria-label fouten."
 ---
 
 Wanneer je een toegankelijkheidsverklaring hebt opgesteld, kun je een label ophalen dat je op je website kunt plaatsen om de status van je website te tonen. Je vindt het label op deze pagina: https://www.toegankelijkheidsverklaring.nl/verklaringen

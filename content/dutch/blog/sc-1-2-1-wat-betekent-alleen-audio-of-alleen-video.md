@@ -3,10 +3,11 @@ title: "SC 1.2.1 - Wat betekent \"Alleen audio of alleen video”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-2-1"
   - "podcast"
   - "video"
+description: "Wat eist WCAG 1.2.1 voor alleen-audio en alleen-video content? Leer wanneer je een transcript of tekstbeschrijving moet aanbieden, met voorbeelden en veelgemaakte fouten."
 ---
 
 Sommige media bestaan alleen uit geluid (bijvoorbeeld een podcast) of alleen uit beeld (bijvoorbeeld een instructievideo zonder gesproken uitleg). Voor mensen die doof, slechthorend, blind of slechtziend zijn, kan zo’n bestand onbegrijpelijk zijn zonder extra ondersteuning.

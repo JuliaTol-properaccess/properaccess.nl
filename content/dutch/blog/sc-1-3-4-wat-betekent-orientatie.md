@@ -3,9 +3,10 @@ title: "SC 1.3.4 - Wat betekent “Oriëntatie”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-3-4"
   - "apps"
+description: "WCAG 1.3.4 vereist dat je website in zowel staande als liggende oriëntatie werkt. Lees wanneer je een uitzondering mag maken en veelgemaakte fouten."
 ---
 
 Gebruikers bekijken websites op allerlei apparaten: van grote computerschermen tot kleine telefoons. Soms gebruiken ze hun apparaat in **portretmodus** (staand) en soms in **landschapmodus** (liggend). Mensen met bepaalde fysieke beperkingen kunnen hun apparaat misschien niet makkelijk draaien, of ze gebruiken vaste houders.

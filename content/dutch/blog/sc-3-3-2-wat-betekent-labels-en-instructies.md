@@ -7,6 +7,7 @@ tags:
   - "3-3-2"
   - "formulier"
   - "labels"
+description: "WCAG 3.3.2 vereist duidelijke labels en instructies bij formulieren. Lees hoe je invoervelden begrijpelijk maakt voor alle gebruikers."
 ---
 
 Mensen moeten begrijpen wat ze moeten doen op een website. Vooral bij formulieren, invulvelden of interactieve elementen. Als het niet duidelijk is wat ergens ingevuld moet worden, raken mensen in de war of maken fouten – zeker gebruikers met een cognitieve beperking of mensen die een schermlezer gebruiken.

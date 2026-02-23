@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-4-1"
+description: "WCAG 2.4.1 vereist een mechanisme om herhalende blokken te overslaan, zoals een skiplink. Lees hoe je dit implementeert en test."
 ---
 
 ## Waarom is dit belangrijk?

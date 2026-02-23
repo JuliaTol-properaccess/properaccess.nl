@@ -6,6 +6,7 @@ categories:
 tags: 
   - "2-4-6"
   - "formulier"
+description: "WCAG 2.4.6 vereist beschrijvende koppen en labels die duidelijk maken waar de content over gaat. Lees hoe je dit goed toepast."
 ---
 
 Koppen en labels helpen gebruikers om snel te begrijpen waar een stuk tekst of een formulier over gaat. Ze bieden **structuur** en **context**, vooral voor mensen die schermlezers gebruiken of snel willen navigeren door een pagina. Goede koppen en labels maken de inhoud overzichtelijker en toegankelijker.

@@ -3,9 +3,10 @@ title: "SC 1.3.5 - Wat betekent “Invoerdoel identificeren”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-3-5"
   - "formulier"
+description: "WCAG 1.3.5 vereist dat invoervelden een duidelijk doel hebben via het autocomplete-attribuut. Leer hoe je formulieren slim en toegankelijk maakt."
 ---
 
 Formulieren zijn vaak een belangrijk onderdeel van een website, bijvoorbeeld voor aanmeldingen, contactformulieren of online aankopen. Voor gebruikers met een beperking kan het invullen van formulieren ingewikkeld zijn. Moderne browsers en assistieve technologieën kunnen gebruikers helpen met automatisch invullen of personaliseren – **maar alleen als de velden correct zijn gemarkeerd**.

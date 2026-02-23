@@ -7,6 +7,7 @@ categories:
   - "Webredactie"
 aliases:
   - "/toegankelijke_kopteksten_wcag/"
+description: "Waarom zijn kopteksten (H1-H6) belangrijk voor toegankelijkheid? Lees hoe schermlezers koppen gebruiken en hoe je ze correct opmaakt."
 ---
 
 Doelgroep: webredactie

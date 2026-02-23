@@ -3,10 +3,11 @@ title: "1.2.5 - Wat betekent \"Audiodescriptie\"?"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-2-3"
   - "1-2-5"
   - "video"
+description: "WCAG 1.2.5 verplicht audiodescriptie voor vooraf opgenomen video's (niveau AA). Lees het verschil met 1.2.3 en hoe je audiobeschrijvingen toevoegt."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.2.5-1024x1024.png)

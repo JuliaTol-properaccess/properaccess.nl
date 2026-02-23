@@ -3,9 +3,10 @@ title: "SC 1.2.4 - Wat betekent “Ondertiteling (live)”"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-2-4"
   - "video"
+description: "WCAG 1.2.4 vereist live ondertiteling voor webinars en livestreams. Lees wat er verwacht wordt, veelgemaakte fouten en hoe je dit praktisch aanpakt."
 ---
 
 Live video’s en audiostreams worden steeds populairder voor webinars, evenementen en nieuwsuitzendingen. Maar zonder **live ondertiteling** kunnen mensen die doof of slechthorend zijn deze inhoud niet volgen. Ondertiteling zorgt ervoor dat de gesproken tekst en belangrijke geluiden voor iedereen toegankelijk zijn, ook tijdens live uitzendingen.

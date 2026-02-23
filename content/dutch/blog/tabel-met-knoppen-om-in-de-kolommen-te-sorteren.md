@@ -7,6 +7,7 @@ categories:
   - "Webdeveloper"
 aliases:
   - /tabel-met-knoppen-om-in-de-kolommen-te-sorteren/
+description: "Hoe maak je sorteerbare tabelkolommen toegankelijk voor schermlezers? Lees over de juiste ARIA-attributen en toetsenbordinteractie."
 ---
 
 Sommige tabellen hebben een rij met kolomkoppen met icoontjes waarmee je de inhoud van de kolom oplopend of aflopend kunt sorteren. Vaak is deze functionaliteit niet toegankelijk voor bezoekers die een schermlezer gebruiken.

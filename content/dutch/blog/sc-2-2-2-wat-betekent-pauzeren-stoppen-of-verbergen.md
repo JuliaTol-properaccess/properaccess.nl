@@ -5,6 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-2-2"
+description: "WCAG 2.2.2 vereist dat bewegende of automatisch wisselende content gepauzeerd of gestopt kan worden. Lees de regels en veelgemaakte fouten."
 ---
 
 Bewegende onderdelen op een website – zoals automatisch wisselende banners, schuifende teksten of knipperende advertenties – kunnen mensen afleiden, stress geven of zelfs fysieke klachten veroorzaken (bijvoorbeeld bij mensen met concentratieproblemen of vestibulaire aandoeningen).

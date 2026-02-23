@@ -3,9 +3,10 @@ title: "1.2.3 - Wat betekent “Audiodescriptie of media-alternatief (vooraf opg
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "1-2-3"
   - "video"
+description: "WCAG 1.2.3 vereist een audiodescriptie of transcript voor vooraf opgenomen video's. Lees het verschil met 1.2.5 en wat je moet doen om te voldoen."
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.2.3-1024x1024.png)
