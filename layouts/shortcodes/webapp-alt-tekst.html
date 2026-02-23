@@ -1,0 +1,27 @@
+{{ $data := site.Data.apps.alt_tekst_keuzehulp }}
+
+<section class="webapp-alt" id="webapp-alt-tekst" aria-labelledby="webapp-alt__title">
+
+  <h2 class="webapp-alt__title" id="webapp-alt__title">Kies de juiste alt-tekst</h2>
+
+  <!-- Live regio voor screen readers -->
+  <div class="sr-only" aria-live="polite" aria-atomic="true" id="webapp-alt__live"></div>
+
+  <!-- App container — JS vult deze -->
+  <div class="webapp-alt__app" id="webapp-alt__app" role="region" aria-label="Keuzehulp stappen">
+
+    <!-- Noscript fallback -->
+    <noscript>
+      <p>Deze keuzehulp vereist JavaScript. Schakel JavaScript in om de tool te gebruiken.</p>
+    </noscript>
+
+  </div>
+
+</section>
+
+<!-- Data voor client-side JS -->
+<script type="application/json" id="webapp-alt-data">
+  {{ readFile "data/apps/alt_tekst_keuzehulp.json" | safeJS }}
+</script>
+
+<script src="{{ "js/webapp-alt-tekst.js" | relURL }}" defer></script>

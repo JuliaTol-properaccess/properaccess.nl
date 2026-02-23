@@ -1305,3 +1305,401 @@ html.dark .webapp-sc__tag {
     transition: none;
   }
 }
+
+/* ============================================
+   WEB APP: ALT-TEKST KEUZEHULP
+   ============================================ */
+
+.webapp-alt {
+  padding: 2rem 0;
+}
+
+.webapp-alt__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+}
+
+html.dark .webapp-alt__title {
+  color: var(--color-darkmode-text-dark);
+}
+
+/* --- Navigatie --- */
+.webapp-alt__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.webapp-alt__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border: 1.5px solid #1F2937;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1F2937;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.webapp-alt__back:hover {
+  background-color: #f5f5f5;
+}
+
+.webapp-alt__back:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+
+html.dark .webapp-alt__back {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: var(--color-darkmode-text);
+}
+
+html.dark .webapp-alt__back:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.webapp-alt__stap {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #004050;
+}
+
+html.dark .webapp-alt__stap {
+  color: #e8a0ba;
+}
+
+/* --- Vraag --- */
+.webapp-alt__vraag {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+.webapp-alt__vraag:focus {
+  outline: none;
+}
+
+html.dark .webapp-alt__vraag {
+  color: var(--color-darkmode-text-dark);
+}
+
+.webapp-alt__beschrijving {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+  max-width: 640px;
+}
+
+html.dark .webapp-alt__beschrijving {
+  color: var(--color-darkmode-text);
+}
+
+/* --- Optie kaarten --- */
+.webapp-alt__opties {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.webapp-alt__opties--with-icons {
+  gap: 1rem;
+}
+
+.webapp-alt__optie {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 1.5px solid #1F2937;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1F2937;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.webapp-alt__optie--has-icon {
+  padding: 1rem 1.25rem;
+  gap: 1rem;
+}
+
+.webapp-alt__optie:hover {
+  border-color: #A30D4B;
+  background-color: #f5f5f5;
+}
+
+.webapp-alt__optie:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+
+html.dark .webapp-alt__optie {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--color-darkmode-text);
+}
+
+html.dark .webapp-alt__optie:hover {
+  border-color: #A30D4B;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* --- SVG iconen --- */
+.webapp-alt__optie-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webapp-alt__icon {
+  width: 56px;
+  height: 56px;
+}
+
+.webapp-alt__icon--small {
+  width: 36px;
+  height: 36px;
+}
+
+.webapp-alt__optie-tekst {
+  flex: 1;
+  min-width: 0;
+}
+
+.webapp-alt__optie-label {
+  font-weight: 700;
+  font-size: 1rem;
+  display: block;
+}
+
+.webapp-alt__optie-desc {
+  font-size: 0.85rem;
+  color: #004050;
+  display: block;
+  margin-top: 0.15rem;
+  flex: 1;
+}
+
+html.dark .webapp-alt__optie-desc {
+  color: #9CA3AF;
+}
+
+.webapp-alt__optie-pijl {
+  margin-left: auto;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  color: #A30D4B;
+}
+
+/* --- Resultaat --- */
+.webapp-alt__resultaat {
+  border-left: 4px solid #A30D4B;
+  padding: 1.25rem 1.5rem;
+  background: #f5f5f5;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1.5rem;
+}
+
+html.dark .webapp-alt__resultaat {
+  background: #374151;
+}
+
+.webapp-alt__resultaat-titel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+.webapp-alt__resultaat-titel:focus {
+  outline: none;
+}
+
+html.dark .webapp-alt__resultaat-titel {
+  color: var(--color-darkmode-text-dark);
+}
+
+.webapp-alt__resultaat-advies {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+
+html.dark .webapp-alt__resultaat-advies {
+  color: var(--color-darkmode-text);
+}
+
+/* --- Oplossingen & Voorbeelden --- */
+.webapp-alt__oplossingen,
+.webapp-alt__voorbeelden {
+  margin-bottom: 1rem;
+}
+
+.webapp-alt__oplossingen-titel,
+.webapp-alt__voorbeelden-titel {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #004050;
+  margin-bottom: 0.4rem;
+}
+
+html.dark .webapp-alt__oplossingen-titel,
+html.dark .webapp-alt__voorbeelden-titel {
+  color: #e8a0ba;
+}
+
+.webapp-alt__oplossingen-lijst,
+.webapp-alt__voorbeelden-lijst {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.webapp-alt__oplossingen-lijst li,
+.webapp-alt__voorbeelden-lijst li {
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #1F2937;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.webapp-alt__oplossingen-lijst li:last-child,
+.webapp-alt__voorbeelden-lijst li:last-child {
+  border-bottom: none;
+}
+
+html.dark .webapp-alt__oplossingen-lijst li,
+html.dark .webapp-alt__voorbeelden-lijst li {
+  color: var(--color-darkmode-text);
+  border-bottom-color: var(--color-darkmode-border);
+}
+
+.webapp-alt__oplossingen-lijst code,
+.webapp-alt__voorbeelden-lijst code {
+  font-family: monospace;
+  background: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.82rem;
+  color: #A30D4B;
+}
+
+html.dark .webapp-alt__oplossingen-lijst code,
+html.dark .webapp-alt__voorbeelden-lijst code {
+  background: #1F2937;
+  color: #e8a0ba;
+}
+
+/* --- Tips --- */
+.webapp-alt__tips {
+  margin-bottom: 1.5rem;
+  border: 1.5px solid #1F2937;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+html.dark .webapp-alt__tips {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.webapp-alt__tips-samenvatting {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1F2937;
+  cursor: pointer;
+}
+
+.webapp-alt__tips-samenvatting:hover {
+  background: #f5f5f5;
+}
+
+html.dark .webapp-alt__tips-samenvatting {
+  color: var(--color-darkmode-text-dark);
+}
+
+html.dark .webapp-alt__tips-samenvatting:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.webapp-alt__tips-lijst {
+  list-style: disc;
+  padding: 0 1rem 0.75rem 2.5rem;
+  margin: 0;
+}
+
+.webapp-alt__tips-lijst li {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #1F2937;
+  padding: 0.15rem 0;
+}
+
+html.dark .webapp-alt__tips-lijst li {
+  color: var(--color-darkmode-text);
+}
+
+/* --- Opnieuw beginnen --- */
+.webapp-alt__opnieuw {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  border: 1.5px solid #1F2937;
+  border-radius: 6px;
+  background: #1F2937;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.webapp-alt__opnieuw:hover {
+  background-color: #374151;
+}
+
+.webapp-alt__opnieuw:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+
+html.dark .webapp-alt__opnieuw {
+  background: #ffffff;
+  color: #1F2937;
+  border-color: #ffffff;
+}
+
+html.dark .webapp-alt__opnieuw:hover {
+  background: #f5f5f5;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .webapp-alt__optie {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .webapp-alt__optie,
+  .webapp-alt__back,
+  .webapp-alt__opnieuw {
+    transition: none;
+  }
+}

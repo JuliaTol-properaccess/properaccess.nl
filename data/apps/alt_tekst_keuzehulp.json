@@ -1,0 +1,214 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "question",
+      "title": "Wat voor soort afbeelding is het?",
+      "description": "Beantwoord een paar korte vragen over je afbeelding. Je krijgt direct advies over of een alt-tekst nodig is en wat je het beste kunt schrijven.",
+      "options": [
+        { "label": "Decoratief", "description": "Sfeerbeelden, achtergronden, iconen naast tekst", "next": "route1_stap1", "icon": "decoratief" },
+        { "label": "Informatief", "description": "Grafieken, schema's, foto's met belangrijke informatie", "next": "route2_stap1", "icon": "informatief" },
+        { "label": "Klikbaar / functioneel", "description": "Knoppen, links, iconen die een actie uitvoeren", "next": "route3_stap1", "icon": "functioneel" },
+        { "label": "Logo", "description": "Logo van een organisatie of merk", "next": "route4_stap1", "icon": "logo" },
+        { "label": "Afbeelding van tekst", "description": "Screenshot, poster, of andere tekst als afbeelding", "next": "route5_stap1", "icon": "tekst" }
+      ]
+    },
+
+    {
+      "id": "route1_stap1",
+      "type": "question",
+      "title": "Als je de afbeelding weglaat, gaat er dan informatie verloren?",
+      "description": "Denk na of de afbeelding iets toevoegt aan de inhoud dat niet al in de tekst staat.",
+      "options": [
+        { "label": "Ja, er gaat informatie verloren", "description": "De afbeelding bevat informatie die nergens anders staat", "next": "route2_stap1", "icon": "info_verloren" },
+        { "label": "Nee, de afbeelding is puur decoratief", "description": "De informatie staat al in de tekst, of het is een sfeerfoto", "next": "route1_result", "icon": "puur_decoratief" }
+      ]
+    },
+    {
+      "id": "route1_result",
+      "type": "result",
+      "title": "Decoratieve afbeelding",
+      "advice": "De afbeelding is decoratief. Verberg deze voor hulpsoftware.",
+      "solutions": [
+        "Bij een <code>&lt;img&gt;</code>: gebruik <code>alt=\"\"</code>",
+        "Bij een <code>&lt;svg&gt;</code>: laat <code>&lt;title&gt;</code> en <code>&lt;desc&gt;</code> elementen weg, of voeg <code>aria-hidden=\"true\"</code> toe"
+      ],
+      "examples": [
+        "Sfeerbeelden",
+        "Achtergrondafbeeldingen",
+        "Iconen naast tekst die dezelfde betekenis heeft",
+        "Afbeeldingen waarvan de informatie al in tekst staat"
+      ]
+    },
+
+    {
+      "id": "route2_stap1",
+      "type": "question",
+      "title": "Wat voor informatieve afbeelding is dit?",
+      "description": "Bepaal of de afbeelding op zichzelf staat, klikbaar is, of toch decoratief.",
+      "options": [
+        { "label": "Informatief", "description": "Bevat informatie die niet als tekst op de pagina staat en nodig is om de inhoud te begrijpen", "next": "route2_stap2", "icon": "informatief" },
+        { "label": "Klikbaar zonder tekst", "description": "De afbeelding is een link of knop, zonder begeleidende tekst", "next": "route3_stap1", "icon": "knop_zonder_tekst" },
+        { "label": "Klikbaar met tekst", "description": "De afbeelding is een link of knop, met begeleidende tekst", "next": "route3_stap1", "icon": "knop_met_tekst" },
+        { "label": "Toch decoratief", "description": "De afbeelding voegt geen extra informatie toe", "next": "route1_stap1", "icon": "puur_decoratief" }
+      ]
+    },
+    {
+      "id": "route2_stap2",
+      "type": "question",
+      "title": "Hoeveel informatie bevat de afbeelding?",
+      "description": "Bepaal of een korte beschrijving volstaat, of dat een uitgebreidere uitleg nodig is.",
+      "options": [
+        { "label": "Kort en simpel", "description": "De afbeelding is in 2\u20133 regels te beschrijven", "next": "route2_result_kort", "icon": "kort" },
+        { "label": "Complex / veel data", "description": "De afbeelding bevat veel informatie, zoals een uitgebreide grafiek of schema", "next": "route2_result_complex", "icon": "complex" }
+      ]
+    },
+    {
+      "id": "route2_result_kort",
+      "type": "result",
+      "title": "Korte beschrijving",
+      "advice": "Geef een korte, duidelijke alt-tekst die de belangrijkste informatie overbrengt.",
+      "solutions": [
+        "Gebruik het <code>alt</code>-attribuut op <code>&lt;img&gt;</code>",
+        "Of plaats een tekst of tabel direct boven of onder de afbeelding"
+      ],
+      "examples": [
+        "<code>alt=\"Staafdiagram met groei van bezoekers in 2024. Gemiddeld per maand: 300, hoogste aantal is 400 in mei.\"</code>"
+      ]
+    },
+    {
+      "id": "route2_result_complex",
+      "type": "result",
+      "title": "Complexe afbeelding",
+      "advice": "Bij complexe afbeeldingen heb je twee tekstalternatieven nodig.",
+      "solutions": [
+        "<strong>1. Korte alt-tekst</strong> \u2014 verwijs naar de uitgebreide beschrijving. Voorbeeld: <code>alt=\"Aantal bezoekers in 2024, grafiek. Volledige beschrijving onder de afbeelding\"</code>",
+        "<strong>2. Uitgebreide uitleg</strong> \u2014 plaats onder de afbeelding: een volledige tekstbeschrijving, een tabel met data, of een downloadbaar bestand"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route3_stap1",
+      "type": "question",
+      "title": "Bevat de klikbare afbeelding ook tekst?",
+      "description": "Functionele afbeeldingen voeren een actie uit (knop of link).",
+      "options": [
+        { "label": "Alleen afbeelding (geen tekst)", "description": "Bijvoorbeeld: een vergrootglas-icoon als zoekknop", "next": "route3_result_alleen", "icon": "knop_zonder_tekst" },
+        { "label": "Afbeelding + tekst", "description": "Bijvoorbeeld: een icoon met het woord \"Zoeken\" ernaast", "next": "route3_stap2b", "icon": "knop_met_tekst" }
+      ]
+    },
+    {
+      "id": "route3_result_alleen",
+      "type": "result",
+      "title": "Klikbare afbeelding zonder tekst",
+      "advice": "De alt-tekst beschrijft de functie, niet het uiterlijk.",
+      "solutions": [
+        "Knop: <code>alt=\"Zoeken\"</code>",
+        "Link: <code>alt=\"Download jaarverslag 2024\"</code>",
+        "Je mag ook <code>aria-label=\"...\"</code> gebruiken als je weet wat je doet"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route3_stap2b",
+      "type": "question",
+      "title": "Bevat de zichtbare tekst al voldoende uitleg?",
+      "description": "Kijk of de tekst naast de afbeelding de functie al duidelijk maakt.",
+      "options": [
+        { "label": "Ja, de tekst is voldoende", "description": "De afbeelding voegt geen extra informatie toe aan de functie", "next": "route3_result_overbodig", "icon": "ja" },
+        { "label": "Nee, er mist context", "description": "De afbeelding geeft extra context die niet in de tekst staat", "next": "route3_result_functie", "icon": "nee" }
+      ]
+    },
+    {
+      "id": "route3_result_overbodig",
+      "type": "result",
+      "title": "Afbeelding is overbodig",
+      "advice": "De zichtbare tekst maakt de functie al duidelijk. De afbeelding is overbodig voor hulpsoftware.",
+      "solutions": [
+        "Gebruik <code>alt=\"\"</code> zodat de afbeelding wordt overgeslagen door schermlezers"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route3_result_functie",
+      "type": "result",
+      "title": "Afbeelding voegt context toe",
+      "advice": "Voeg een alt-tekst toe die de extra context beschrijft.",
+      "solutions": [
+        "Beschrijf wat de afbeelding toevoegt aan de functie. Voorbeeld: <code>alt=\"PDF\"</code>"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route4_stap1",
+      "type": "question",
+      "title": "Is het logo klikbaar?",
+      "description": "Logo's die linken naar een andere pagina (meestal de homepage) hebben een andere alt-tekst nodig dan statische logo's.",
+      "options": [
+        { "label": "Nee, het logo is niet klikbaar", "description": "Het logo staat als afbeelding op de pagina zonder link", "next": "route4_result_statisch", "icon": "logo_statisch" },
+        { "label": "Ja, het logo is een link", "description": "Het logo linkt naar een andere pagina (meestal de homepage)", "next": "route4_result_link", "icon": "logo_link" }
+      ]
+    },
+    {
+      "id": "route4_result_statisch",
+      "type": "result",
+      "title": "Statisch logo",
+      "advice": "Gebruik de naam van de organisatie als alt-tekst.",
+      "solutions": [
+        "Voorbeeld: <code>alt=\"Gemeente Amsterdam, logo\"</code>"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route4_result_link",
+      "type": "result",
+      "title": "Klikbaar logo",
+      "advice": "De alt-tekst moet de tekst van het logo bevatten en de bestemming duidelijk maken.",
+      "solutions": [
+        "Voorbeeld: <code>alt=\"Gemeente Amsterdam \u2013 naar homepage\"</code>"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route5_stap1",
+      "type": "question",
+      "title": "Kun je de tekst ook gewoon in HTML plaatsen?",
+      "description": "Tekst in afbeeldingen is slecht leesbaar, niet schaalbaar en niet toegankelijk.",
+      "options": [
+        { "label": "Ja, echte tekst is mogelijk", "description": "De tekst kan als HTML op de pagina worden gezet", "next": "route5_result_html", "icon": "html_tekst" },
+        { "label": "Nee, het is kunst of ontwerp", "description": "Bijvoorbeeld: poster, kalligrafie, artistiek ontwerp", "next": "route5_result_alt", "icon": "kunst" }
+      ]
+    },
+    {
+      "id": "route5_result_html",
+      "type": "result",
+      "title": "Gebruik echte tekst",
+      "advice": "Gebruik echte HTML-tekst in plaats van een afbeelding. Tekst in afbeeldingen is slecht leesbaar en niet toegankelijk.",
+      "solutions": [
+        "Vervang de afbeelding door echte tekst met CSS-styling",
+        "Gebruik webfonts als het lettertype belangrijk is"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route5_result_alt",
+      "type": "result",
+      "title": "Beschrijf de tekst in de alt-tekst",
+      "advice": "Beschrijf de tekst die in de afbeelding staat.",
+      "solutions": [
+        "Voorbeeld: <code>alt=\"Poster met de tekst 'Vrijheid voor iedereen' in handgeschreven stijl\"</code>"
+      ],
+      "examples": []
+    }
+  ],
+  "tips": [
+    "Beschrijf betekenis, niet uiterlijk",
+    "Houd het kort en duidelijk",
+    "Gebruik geen \"afbeelding van\"",
+    "Herhaal geen tekst die al zichtbaar is",
+    "Denk: wat moet iemand weten als hij het beeld niet ziet?"
+  ]
+}
