@@ -1,7 +1,7 @@
 ---
 title: "Proper Access - digitale toegankelijkheid"
 date: 2026-01-24
-description: "Proper Access - digitale toegankelijkheid"
+description: "Onafhankelijk advies- en auditbureau voor digitale toegankelijkheid. WCAG-audits, quickscans en training om te voldoen aan de EAA."
 keywords: ["WCAG", "European Accessbility Act", "de EAA",  "proper access", "web accessibility"]
 slug: ""
 url: "/"
