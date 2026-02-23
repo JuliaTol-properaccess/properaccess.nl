@@ -41,3 +41,26 @@
 }
 </script>
 {{ end }}
+
+{{/* FAQ schema — on pages with faqs in front matter */}}
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $faq := . }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.answer }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
