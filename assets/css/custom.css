@@ -3079,6 +3079,48 @@ html.dark .tool-card__tag {
   color: var(--color-darkmode-text);
 }
 
+/* CTA card */
+
+.tool-card--cta {
+  border-top-color: #A30D4B;
+  border-style: dashed;
+  border-top-style: solid;
+}
+
+.tool-card--cta .tool-card__title {
+  color: #A30D4B;
+}
+
+html.dark .tool-card--cta .tool-card__title {
+  color: #e8a0ba;
+}
+
+.tool-card__action {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+html.dark .tool-card__action {
+  border-top-color: var(--color-darkmode-border);
+}
+
+.tool-card__cta-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #A30D4B;
+  text-decoration: none;
+}
+
+.tool-card__cta-link:hover {
+  text-decoration: underline;
+}
+
+html.dark .tool-card__cta-link {
+  color: #e8a0ba;
+}
+
 
 /* ═══════════════════════════════════════════════════════════
    HOMEPAGE
