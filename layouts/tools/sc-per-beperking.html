@@ -1,0 +1,87 @@
+{{ define "main" }}
+{{ $data := site.Data.apps.sc_per_beperking }}
+
+{{/* Tel totaal aantal SC */}}
+{{ $total := 0 }}
+{{ range $data.principes }}
+  {{ range .richtlijnen }}
+    {{ $total = add $total (len .succescriteria) }}
+  {{ end }}
+{{ end }}
+
+<section class="section pt-14">
+  <div class="container" style="max-width: 60rem;">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="webapp-sc__intro">
+      {{ .Description }}
+    </p>
+
+    <section class="webapp-sc" id="webapp-sc-beperking" aria-labelledby="webapp-sc__title">
+
+      <h2 class="webapp-sc__title" id="webapp-sc__title">Succescriteria per type beperking</h2>
+      <p class="webapp-sc__intro">Selecteer een type beperking om de bijbehorende WCAG 2.2 succescriteria te bekijken.</p>
+
+      <!-- Filter knoppen -->
+      <div class="webapp-sc__controls" role="group" aria-label="Filter op type beperking">
+        <button class="webapp-sc__filter webapp-sc__filter--active" data-filter="alle" aria-pressed="true" type="button">
+          Alle ({{ $total }})
+        </button>
+        {{ range $data.beperkingen }}
+        <button class="webapp-sc__filter" data-filter="{{ .id }}" aria-pressed="false" type="button">
+          {{ .label }}
+        </button>
+        {{ end }}
+      </div>
+
+      <!-- Live regio voor screen readers -->
+      <div class="sr-only" aria-live="polite" aria-atomic="true" id="webapp-sc__live"></div>
+
+      <!-- Resultaat teller -->
+      <p class="webapp-sc__count">
+        <span id="webapp-sc__count-number">{{ $total }}</span> succescriteria
+      </p>
+
+      <!-- SC lijst per principe en richtlijn -->
+      <div class="webapp-sc__results" id="webapp-sc__results">
+        {{ range $data.principes }}
+        <div class="webapp-sc__principe" data-principe="{{ .nummer }}">
+          <h3 class="webapp-sc__principe-titel">Principe {{ .nummer }}: {{ .titel }}</h3>
+
+          {{ range .richtlijnen }}
+          <div class="webapp-sc__richtlijn">
+            <h4 class="webapp-sc__richtlijn-titel">Richtlijn {{ .nummer }}: {{ .titel }}</h4>
+            <ul class="webapp-sc__lijst" role="list">
+              {{ range .succescriteria }}
+              <li class="webapp-sc__item" data-beperkingen='{{ .beperkingen | jsonify }}'>
+                <span class="webapp-sc__nummer">SC {{ .nummer }}</span>
+                <span class="webapp-sc__naam">{{ .titel }}</span>
+                <span class="webapp-sc__niveau">{{ .niveau }}</span>
+                <span class="webapp-sc__tags">
+                  {{ range .beperkingen }}
+                  <span class="webapp-sc__tag webapp-sc__tag--{{ . }}">{{ . }}</span>
+                  {{ end }}
+                </span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+
+        </div>
+        {{ end }}
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      <p>Wil je weten welke succescriteria van toepassing zijn op jouw website en hoe je eraan voldoet?</p>
+      <p><a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/webapp-sc-beperking.js" | relURL }}" defer></script>
+{{ end }}
