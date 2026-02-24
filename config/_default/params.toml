@@ -65,7 +65,7 @@ show_categories = true
 keywords = ["digitale toegankelijkheid", "WCAG", "EAA"]
 description = "Advies en auditbureau in digitale toegankelijkheid"
 author = "Proper Access"
-image = "images/logo.png"
+image = "images/og-image.png"
 
 
 # site verifications
