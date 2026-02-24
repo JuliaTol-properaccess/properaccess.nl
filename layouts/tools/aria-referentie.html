@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="container" style="max-width: 60rem;">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="tool-aria__intro">
+      Doorzoek alle WAI-ARIA rollen en attributen uit de
+      <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2-specificatie</a>.
+      Bekijk beschrijvingen, ondersteunde attributen, HTML-equivalenten en praktische codevoorbeelden.
+    </p>
+
+    <!-- Search -->
+    <div class="tool-aria__search">
+      <label for="ariaSearch" class="sr-only">Zoek een rol of attribuut</label>
+      <input
+        type="search"
+        id="ariaSearch"
+        class="tool-aria__search-input"
+        placeholder="Zoek bijv. &quot;button&quot;, &quot;aria-label&quot;, &quot;navigation&quot;..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </div>
+
+    <!-- Category filters -->
+    <div class="tool-aria__filters" role="toolbar" aria-label="Filter op categorie">
+    </div>
+
+    <!-- Results count -->
+    <div class="tool-aria__results-count" id="resultsCount" aria-live="polite"></div>
+
+    <!-- Results -->
+    <div class="tool-aria__results" id="resultsGrid" role="region" aria-label="Resultaten">
+    </div>
+
+    <!-- Load more -->
+    <button class="tool-aria__load-more" id="loadMoreBtn" hidden>Toon meer resultaten</button>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      <p>ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website.
+      Wil je weten of jouw ARIA-implementatie klopt?</p>
+      <p><a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-aria-referentie.js" | relURL }}" defer></script>
+{{ end }}

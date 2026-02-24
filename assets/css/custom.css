@@ -3812,3 +3812,405 @@ html.dark .hp-tools,
 html.dark .hp-segments {
   background: #111827;
 }
+
+
+/* ═══════════════════════════════════════════════════════════
+   TOOL: ARIA ROLLEN & ATTRIBUTEN REFERENTIE
+   ═══════════════════════════════════════════════════════════ */
+
+.tool-aria__intro {
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+html.dark .tool-aria__intro { color: #aaa; }
+
+/* ─── Search ─── */
+
+.tool-aria__search {
+  margin-bottom: 1rem;
+}
+.tool-aria__search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #1F2937;
+  transition: border-color 0.15s;
+}
+.tool-aria__search-input:focus {
+  outline: none;
+  border-color: #A30D4B;
+  box-shadow: 0 0 0 3px rgba(163, 13, 75, 0.15);
+}
+html.dark .tool-aria__search-input {
+  background: #1f2937;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+html.dark .tool-aria__search-input:focus {
+  border-color: #A30D4B;
+}
+
+/* ─── Category filters ─── */
+
+.tool-aria__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tool-aria__filter {
+  padding: 0.375rem 0.875rem;
+  font-size: 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 2rem;
+  background: #fff;
+  color: #374151;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.tool-aria__filter:hover {
+  background: #f3f4f6;
+}
+.tool-aria__filter--active {
+  background: #1F2937;
+  color: #fff;
+  border-color: #1F2937;
+}
+.tool-aria__filter--active:hover {
+  background: #374151;
+}
+html.dark .tool-aria__filter {
+  background: #374151;
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+html.dark .tool-aria__filter:hover {
+  background: #4b5563;
+}
+html.dark .tool-aria__filter--active {
+  background: #A30D4B;
+  color: #fff;
+  border-color: #A30D4B;
+}
+
+/* ─── Results count ─── */
+
+.tool-aria__results-count {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+html.dark .tool-aria__results-count { color: #9ca3af; }
+
+/* ─── Cards ─── */
+
+.tool-aria__results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tool-aria__card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+.tool-aria__card:has(.tool-aria__card-header[aria-expanded="true"]) {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+html.dark .tool-aria__card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.tool-aria__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  gap: 0.75rem;
+}
+.tool-aria__card-header:hover {
+  background: #f9fafb;
+}
+.tool-aria__card-header:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: -2px;
+  border-radius: 0.5rem;
+}
+html.dark .tool-aria__card-header:hover {
+  background: #111827;
+}
+
+.tool-aria__card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-aria__card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+html.dark .tool-aria__card-name { color: #f3f4f6; }
+
+/* ─── Badges ─── */
+
+.tool-aria__badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.tool-aria__badge--role {
+  background: #004050;
+  color: #fff;
+}
+.tool-aria__badge--attribute {
+  background: #A30D4B;
+  color: #fff;
+}
+.tool-aria__badge--cat {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+html.dark .tool-aria__badge--cat {
+  background: #374151;
+  color: #9ca3af;
+}
+
+/* ─── Chevron ─── */
+
+.tool-aria__chevron {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.tool-aria__chevron::before {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid #9ca3af;
+  border-bottom: 2px solid #9ca3af;
+  transform: rotate(-45deg);
+  transition: transform 0.2s;
+}
+.tool-aria__card-header[aria-expanded="true"] .tool-aria__chevron::before {
+  transform: rotate(45deg);
+}
+
+/* ─── Card detail ─── */
+
+.tool-aria__card-detail {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+html.dark .tool-aria__card-detail {
+  border-top-color: #374151;
+}
+
+.tool-aria__card-desc {
+  margin: 1rem 0;
+  color: #374151;
+  line-height: 1.6;
+}
+html.dark .tool-aria__card-desc { color: #d1d5db; }
+
+/* ─── Details (definition list) ─── */
+
+.tool-aria__details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.375rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.tool-aria__details dt {
+  font-weight: 600;
+  color: #1F2937;
+  white-space: nowrap;
+}
+.tool-aria__details dd {
+  margin: 0;
+  color: #4b5563;
+}
+.tool-aria__details code {
+  background: #f3f4f6;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+}
+html.dark .tool-aria__details dt { color: #e5e7eb; }
+html.dark .tool-aria__details dd { color: #9ca3af; }
+html.dark .tool-aria__details code {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.tool-aria__link {
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tool-aria__link:hover {
+  color: #A30D4B;
+}
+html.dark .tool-aria__link { color: #93c5fd; }
+html.dark .tool-aria__link:hover { color: #f9a8d4; }
+
+/* ─── Code snippet ─── */
+
+.tool-aria__snippet {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tool-aria__snippet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+html.dark .tool-aria__snippet-header {
+  background: #111827;
+  border-bottom-color: #374151;
+  color: #9ca3af;
+}
+
+.tool-aria__snippet-copy {
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tool-aria__snippet-copy:hover {
+  background: #f3f4f6;
+}
+html.dark .tool-aria__snippet-copy {
+  background: #374151;
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+
+.tool-aria__snippet pre {
+  margin: 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+html.dark .tool-aria__snippet pre {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+html.dark .tool-aria__snippet {
+  border-color: #374151;
+}
+
+/* ─── Load more ─── */
+
+.tool-aria__load-more {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.tool-aria__load-more:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+html.dark .tool-aria__load-more {
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+html.dark .tool-aria__load-more:hover {
+  background: #1f2937;
+}
+
+/* ─── Empty state ─── */
+
+.tool-aria__empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+}
+.tool-aria__empty p:first-child {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+html.dark .tool-aria__empty { color: #9ca3af; }
+
+/* ─── Responsive ─── */
+
+@media (max-width: 640px) {
+  .tool-aria__filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
+  }
+  .tool-aria__details {
+    grid-template-columns: 1fr;
+  }
+  .tool-aria__details dt {
+    margin-top: 0.5rem;
+  }
+}
+
+/* ─── Reduced motion ─── */
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-aria__chevron::before,
+  .tool-aria__card,
+  .tool-aria__search-input,
+  .tool-aria__filter,
+  .tool-aria__snippet-copy,
+  .tool-aria__load-more {
+    transition: none;
+  }
+}
