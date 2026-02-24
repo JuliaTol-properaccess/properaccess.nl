@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="container" style="max-width: 48rem;">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="tool-heading__intro">
+      Voer een URL in en bekijk de koppenstructuur van die pagina.
+      Een logische koppenhierarchie helpt screenreadergebruikers om door je content te navigeren.
+    </p>
+
+    <form class="tool-heading__form" id="checkerForm">
+      <div class="tool-heading__form-field">
+        <label for="urlInput">Website URL</label>
+        <input
+          type="url"
+          id="urlInput"
+          placeholder="https://voorbeeld.nl"
+          required
+          autocomplete="url"
+        >
+      </div>
+      <button type="submit" id="submitBtn" class="tool-heading__submit">Controleer</button>
+    </form>
+
+    <div id="output" role="region" aria-live="polite"></div>
+
+    <!-- CTA -->
+    <div class="tool-cta" id="headingCta" style="display:none;">
+      <p>Dit is een snelle check van de koppenstructuur. Een volledige WCAG-audit onderzoekt
+      alle 55 succescriteria &mdash; van toetsenbordtoegankelijkheid tot kleurcontrast.</p>
+      <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-heading-checker.js" | relURL }}" defer></script>
+{{ end }}

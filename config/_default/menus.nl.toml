@@ -70,9 +70,14 @@ url = "/blog"
 weight = 4
 
 [[main]]
+name = "Tools"
+url = "/tools"
+weight = 5
+
+[[main]]
 name = "Over Proper Access"
 url = "/auditbureau-digitale-toegankelijkheid"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Contact"

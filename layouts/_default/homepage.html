@@ -1,0 +1,476 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+<section class="hp-hero">
+  <div class="container">
+    <div class="hp-hero__inner">
+      <div class="hp-hero__text">
+        <h1 class="hp-hero__title">
+          Audits die je team <em>daadwerkelijk</em> verder helpen
+        </h1>
+        <p class="hp-hero__subtitle">
+          Geen rapport van 50 pagina&rsquo;s dat in een la verdwijnt. Wij leveren
+          bevindingen per element &mdash; met screenshots, code en concrete
+          oplossingen. Zodat je developers meteen aan de slag kunnen.
+        </p>
+        <div class="hp-hero__actions">
+          <a href="#voorbeeldrapporten" class="btn btn-primary">
+            Bekijk een voorbeeldrapport
+          </a>
+          <span class="hp-hero__cta-secondary">
+            Of bel direct:
+            <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>
+          </span>
+        </div>
+      </div>
+      <div class="hp-hero__image">
+        {{ partial "image" (dict "Src" "/images/audit.webp" "Alt" "Illustratie van een toegankelijkheidsaudit met checklist en resultaten" "Loading" "eager" "Class" "hp-hero__img" "DisplayXL" "600x" "DisplayLG" "500x" "DisplayMD" "400x") }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── HET VERSCHIL ─── -->
+<section class="section hp-diff">
+  <div class="container hp-narrow">
+    <h2 class="hp-section-title">Niet nog een standaard WCAG-rapport</h2>
+    <div class="hp-section-intro">
+      <p>
+        De meeste bureaus leveren rapporten per succescriterium. Je krijgt een
+        lijst: &ldquo;SC&nbsp;1.1.1 &mdash; niet voldaan&rdquo;, en dan mag je
+        zelf uitzoeken wat er mis is en hoe je het oplost.
+      </p>
+      <p>
+        Wij doen het anders. Ons rapport gaat per pagina, per element. Je ziet
+        exact wat er aan de hand is, waarom het een probleem is, en hoe je het
+        oplost &mdash; met screenshots en code-voorbeelden.
+      </p>
+    </div>
+
+    <div class="hp-comparison">
+      <div class="hp-comparison__col hp-comparison__col--standard">
+        <h3 class="hp-comparison__heading">Standaard audit</h3>
+        <ul class="hp-comparison__list" role="list">
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--fail" aria-hidden="true">&times;</span>
+            <span>Rapport per succescriterium</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--fail" aria-hidden="true">&times;</span>
+            <span>Vage beschrijvingen zoals &ldquo;Niet alle afbeeldingen hebben een tekstalternatief&rdquo; &mdash; zonder te vertellen welke afbeeldingen, op welke pagina</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--fail" aria-hidden="true">&times;</span>
+            <span>Geen code, geen screenshots</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--fail" aria-hidden="true">&times;</span>
+            <span>Zelf uitzoeken waar en hoe</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hp-comparison__col hp-comparison__col--pa">
+        <h3 class="hp-comparison__heading">Proper Access audit</h3>
+        <ul class="hp-comparison__list" role="list">
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--pass" aria-hidden="true">&#10003;</span>
+            <span>Rapport per pagina, per element</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--pass" aria-hidden="true">&#10003;</span>
+            <span>&ldquo;De zijbalkknoppen missen een toegankelijke naam en status. Gebruik <code>&lt;button&gt;</code> met <code>aria-label</code> en <code>aria-expanded</code>.&rdquo;</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--pass" aria-hidden="true">&#10003;</span>
+            <span>Screenshot met markering + code-snippet</span>
+          </li>
+          <li class="hp-comparison__item">
+            <span class="hp-comparison__icon hp-comparison__icon--pass" aria-hidden="true">&#10003;</span>
+            <span>Concrete oplossing per bevinding, met impact-niveau en CSV-export</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="hp-section-cta">
+      <a href="#voorbeeldrapporten" class="hp-link-arrow">Bekijk 3 voorbeeldrapporten &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ─── VOORBEELDRAPPORTEN ─── -->
+<section class="section hp-reports" id="voorbeeldrapporten">
+  <div class="container">
+    <h2 class="hp-section-title">Beoordeel zelf het verschil</h2>
+    <p class="hp-section-intro">
+      Geen verkooppraatje &mdash; gewoon drie echte rapporten. Bekijk hoe wij
+      bevindingen beschrijven en besluit of dit is wat je team nodig heeft.
+    </p>
+
+    <div class="hp-reports__grid">
+      <article class="hp-report-card">
+        <div class="hp-report-card__body">
+          <h3 class="hp-report-card__title">Content audit &mdash; Begroting Provincie Zuid-Holland</h3>
+          <p class="hp-report-card__desc">
+            5 websites onderzocht op content-toegankelijkheid. 26 bevindingen,
+            waaronder koppen die geen koppen zijn, tabellen zonder headers en
+            grafieken zonder tekstalternatief. Elke bevinding met screenshot,
+            impact-niveau en concrete oplossing.
+          </p>
+        </div>
+        {{/* TODO: vervang href door URL van het voorbeeldrapport */}}
+        <a href="/contact/" class="hp-report-card__link">Bekijk dit rapport &rarr;</a>
+      </article>
+
+      <article class="hp-report-card">
+        <div class="hp-report-card__body">
+          <h3 class="hp-report-card__title">Volledige audit &mdash; Financieringsinformatieportaal</h3>
+          <p class="hp-report-card__desc">
+            14 pagina&rsquo;s, 61 bevindingen, 24 van de 55 criteria afgekeurd.
+            Van zoomblokkering in de HTML-head tot knoppen zonder ARIA-attributen
+            en kleurcontrast dat niet voldoet. Per element beschreven met
+            code-oplossingen.
+          </p>
+        </div>
+        <a href="/contact/" class="hp-report-card__link">Bekijk dit rapport &rarr;</a>
+      </article>
+
+      <article class="hp-report-card">
+        <div class="hp-report-card__body">
+          <h3 class="hp-report-card__title">Volledige audit &mdash; Luchtmeetnet.nl</h3>
+          <p class="hp-report-card__desc">
+            Interactief platform met kaarten, meetpunten en PDF-rapporten.
+            79 bevindingen verdeeld over 17 secties &mdash; per pagina en per
+            functionaliteit. Van toetsenbordtoegankelijkheid tot kleurgebruik
+            op de kaart. Inclusief PDF-bevindingen.
+          </p>
+        </div>
+        <a href="/contact/" class="hp-report-card__link">Bekijk dit rapport &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── WAAROM PROPER ACCESS ─── -->
+<section class="section hp-usps">
+  <div class="container">
+    <h2 class="hp-section-title">Zes redenen om voor ons te kiezen</h2>
+
+    <div class="hp-usps__grid">
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">01</span>
+        <h3 class="hp-usp__title">Rapport per element, niet per SC</h3>
+        <p class="hp-usp__desc">
+          Je krijgt bevindingen met screenshots, code en oplossingsrichtingen.
+          Je developers hoeven niet te raden.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">02</span>
+        <h3 class="hp-usp__title">Onafhankelijk</h3>
+        <p class="hp-usp__desc">
+          Wij bouwen geen websites, beheren geen content en verkopen geen
+          software. Ons enige belang is een eerlijk en bruikbaar rapport.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">03</span>
+        <h3 class="hp-usp__title">Direct contact met de auditor</h3>
+        <p class="hp-usp__desc">
+          Geen account managers of project managers ertussen. Je werkt
+          rechtstreeks met de specialist die je site onderzoekt.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">04</span>
+        <h3 class="hp-usp__title">Prijzen op de website</h3>
+        <p class="hp-usp__desc">
+          Je weet vooraf wat het kost. Een audit voor een gemiddeld complexe
+          website begint vanaf ca.&nbsp;&euro;&nbsp;1.800.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">05</span>
+        <h3 class="hp-usp__title">Eigen research</h3>
+        <p class="hp-usp__desc">
+          Ons team test zelf hoe browsers en hulpsoftware omgaan met code. We
+          adviseren op basis van wat we weten dat werkt &mdash; niet op basis
+          van aannames.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">06</span>
+        <h3 class="hp-usp__title">Onbeperkt vragen stellen</h3>
+        <p class="hp-usp__desc">
+          Het rapport is het begin, niet het einde. Je kunt bij ons terecht
+          met vragen over de bevindingen, zolang als nodig.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── GRATIS TOOLS ─── -->
+<section class="section hp-tools">
+  <div class="container">
+    <h2 class="hp-section-title">Gratis tools om je te helpen</h2>
+    <p class="hp-section-intro">
+      We delen onze kennis graag. Deze tools zijn gratis en helpen je om zelf
+      aan de slag te gaan met toegankelijkheid.
+    </p>
+
+    <div class="hp-tools__grid">
+      <a href="/blog/indeling-van-succescriteria-per-type-beperking/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">WCAG succescriteria per type beperking</h3>
+          <p class="hp-tool-card__desc">
+            Filter alle 55 WCAG 2.2 criteria op visueel, auditief, motorisch,
+            cognitief of neurologisch. Handig als je wilt weten welke criteria
+            relevant zijn voor een specifieke gebruikersgroep.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/koppenstructuur-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Koppenstructuur checker</h3>
+          <p class="hp-tool-card__desc">
+            Voer een URL in en zie direct de koppenstructuur van die pagina
+            &mdash; als visuele boom. Met duidelijke markering van fouten:
+            overgeslagen niveaus, lege koppen, meerdere h1&rsquo;s.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Check je koppenstructuur &rarr;</span>
+      </a>
+
+      <a href="/tools/kleurcontrast-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Kleurcontrast checker</h3>
+          <p class="hp-tool-card__desc">
+            Twee kleuren invoeren en direct zien of het contrast voldoet &mdash;
+            met uitleg wanneer welke drempel geldt. Per WCAG-criterium uitgelegd.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Check je kleurcontrast &rarr;</span>
+      </a>
+    </div>
+
+    <p class="hp-section-cta">
+      <a href="/tools/" class="hp-link-arrow">Bekijk alle tools &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ─── DIENSTEN ─── -->
+<section class="section hp-services">
+  <div class="container">
+    <h2 class="hp-section-title">Wat we voor je doen</h2>
+
+    <div class="hp-services__grid">
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">WCAG-audit</h3>
+        <p class="hp-service-card__desc">
+          Volledig onderzoek van je website of app op basis van WCAG 2.2 AA. Je
+          ontvangt een rapport per element met screenshots, code en concrete
+          oplossingen. Inclusief adviesgesprek.
+        </p>
+        <a href="/toegankelijkheidsaudit/" class="hp-service-card__link">
+          Meer over de WCAG-audit &rarr;
+        </a>
+      </article>
+
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Strippenkaart</h3>
+        <p class="hp-service-card__desc">
+          Flexibele ondersteuning op uurbasis. Ideaal voor sprint-testing,
+          quickscans tussendoor, of technische vragen over toegankelijkheid.
+        </p>
+        {{/* TODO: vervang href zodra de strippenkaart-pagina bestaat */}}
+        <a href="/contact/" class="hp-service-card__link">
+          Meer over de strippenkaart &rarr;
+        </a>
+      </article>
+
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Toegankelijkheids-abonnement</h3>
+        <p class="hp-service-card__desc">
+          Doorlopend partnerschap. We denken structureel mee bij releases,
+          beantwoorden vragen en houden je site op koers.
+        </p>
+        <a href="/contact/" class="hp-service-card__link">
+          Meer over het abonnement &rarr;
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── VOOR WIE ─── -->
+<section class="section hp-segments">
+  <div class="container">
+    <h2 class="hp-section-title">We werken voor organisaties die het serieus nemen</h2>
+    <p class="hp-section-intro">
+      Of je nu verplicht bent door de EAA, de Wet digitale overheid, of
+      simpelweg vindt dat je website voor iedereen moet werken &mdash; wij
+      helpen je met de kortste route naar een toegankelijk resultaat.
+    </p>
+
+    <div class="hp-segments__layout">
+      <div class="hp-segments__grid">
+        <a href="/digitale_toegankelijkheid_overheid/" class="hp-segment">
+          <h3 class="hp-segment__title">Overheid</h3>
+          <p class="hp-segment__desc">
+            Je moet voldoen aan de Wet digitale overheid en je hebt een
+            toegankelijkheidsverklaring nodig. Wij leveren het rapport dat je
+            daarvoor nodig hebt &mdash; plus de oplossingen om daadwerkelijk
+            te verbeteren.
+          </p>
+        </a>
+
+        <a href="/e-commerce-digitale-toegankelijkheid/" class="hp-segment">
+          <h3 class="hp-segment__title">Bedrijven (EAA)</h3>
+          <p class="hp-segment__desc">
+            De European Accessibility Act is van kracht. Je wilt weten waar je
+            staat en wat je moet aanpassen. Wij geven je een helder overzicht
+            en een concreet pad naar voldoening.
+          </p>
+        </a>
+
+        <a href="/digital_agency/" class="hp-segment">
+          <h3 class="hp-segment__title">Digital agencies</h3>
+          <p class="hp-segment__desc">
+            Je bouwt websites voor klanten en wilt zeker weten dat ze toegankelijk
+            zijn. Wij testen onafhankelijk &mdash; want je eigen werk beoordelen
+            is lastig.
+          </p>
+        </a>
+
+        <a href="/e-commerce-digitale-toegankelijkheid/" class="hp-segment">
+          <h3 class="hp-segment__title">E-commerce</h3>
+          <p class="hp-segment__desc">
+            Een toegankelijke webshop bereikt meer klanten. Wij laten zien waar
+            je conversie verliest door drempels in je checkout,
+            productpagina&rsquo;s en navigatie.
+          </p>
+        </a>
+      </div>
+
+      <div class="hp-segments__logos">
+        {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Logo's van opdrachtgevers: Provincie Zuid-Holland, Rijksmuseum, Provincie Noord-Holland, Museumvereniging, Onderzoeksraad voor Veiligheid, gemeente 's-Hertogenbosch, NRC, Museum.nl, gemeente Amersfoort, gemeente Alkmaar, Eteck, Van Gogh Museum, Plus, Jumbo, Caroline Svedbom" "Loading" "lazy" "Class" "hp-segments__logos-img" "DisplayXL" "500x") }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── RECENTE ARTIKELEN ─── -->
+{{ $allBlog := where site.RegularPages "Section" "blog" }}
+<section class="section hp-articles">
+  <div class="container">
+    <h2 class="hp-section-title">Kennis die je direct kunt toepassen</h2>
+    <p class="hp-section-intro">
+      We schrijven over wat we tegenkomen in onze audits. Geen theorie om de
+      theorie &mdash; maar praktische inzichten die je morgen kunt gebruiken.
+    </p>
+
+    <div class="hp-articles__grid">
+
+      {{ $eaa := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "de EAA")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">European Accessibility Act</h3>
+        <p class="hp-articles__col-desc">
+          Voor organisaties die willen begrijpen wat de EAA betekent en wat ze
+          moeten doen.
+        </p>
+        {{ if $eaa }}
+          <ul class="hp-articles__list">
+            {{ range $eaa }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/de-eaa/" class="hp-articles__more">
+          Alle artikelen over de EAA &rarr;
+        </a>
+      </div>
+
+      {{ $dev := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "webdeveloper" "Webdeveloper")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">Voor developers</h3>
+        <p class="hp-articles__col-desc">
+          Technische diepgang: code-voorbeelden, ARIA-patronen, en hoe browsers
+          en hulpsoftware echt omgaan met je code.
+        </p>
+        {{ if $dev }}
+          <ul class="hp-articles__list">
+            {{ range $dev }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/webdeveloper/" class="hp-articles__more">
+          Alle artikelen voor developers &rarr;
+        </a>
+      </div>
+
+      {{ $red := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "webredactie" "Webredactie")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">Voor webredacties</h3>
+        <p class="hp-articles__col-desc">
+          Toegankelijke content schrijven: koppen, alt-teksten, links, tabellen
+          en PDF&rsquo;s. Zonder technische kennis.
+        </p>
+        {{ if $red }}
+          <ul class="hp-articles__list">
+            {{ range $red }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/webredactie/" class="hp-articles__more">
+          Alle artikelen voor webredacties &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="section hp-faq">
+  <div class="container">
+    <h2 class="hp-section-title">Vragen die we vaak krijgen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

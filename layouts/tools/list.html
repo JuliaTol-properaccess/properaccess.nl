@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <p class="tool-overview__intro">{{ .Content }}</p>
+
+      <div class="tool-overview__grid">
+        {{ range .RegularPages }}
+          <a href="{{ .RelPermalink }}" class="tool-card">
+            <div class="tool-card__body">
+              <h2 class="tool-card__title">{{ .Title }}</h2>
+              <p class="tool-card__description">{{ .Description }}</p>
+            </div>
+            {{ with .Params.doelgroep }}
+              <div class="tool-card__tags">
+                {{ range . }}
+                  <span class="tool-card__tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

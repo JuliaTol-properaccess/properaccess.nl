@@ -1,0 +1,186 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="container" style="max-width: 52rem;">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="tool-contrast__intro">
+      Controleer of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
+      Vul twee kleuren in en zie direct of het contrast voldoende is &mdash; en voor welke situaties.
+    </p>
+
+    <!-- Color inputs -->
+    <div class="tool-contrast__inputs">
+      <div class="tool-contrast__field">
+        <label for="fgHex">Voorgrondkleur (tekst)</label>
+        <div class="tool-contrast__picker-row">
+          <input type="color" id="fgColor" value="#1F2937" aria-label="Voorgrondkleur kiezen">
+          <input type="text" id="fgHex" value="#1F2937" maxlength="7" autocomplete="off" spellcheck="false"
+                 aria-describedby="hexHint" class="tool-contrast__hex">
+          <button type="button" class="tool-contrast__eyedropper" id="fgDropper" aria-label="Kleur oppikken van scherm" hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9"/><path d="m15 6 3 3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="tool-contrast__swap" id="swapBtn" aria-label="Kleuren omdraaien">
+        &#8596;
+      </button>
+
+      <div class="tool-contrast__field">
+        <label for="bgHex">Achtergrondkleur</label>
+        <div class="tool-contrast__picker-row">
+          <input type="color" id="bgColor" value="#ffffff" aria-label="Achtergrondkleur kiezen">
+          <input type="text" id="bgHex" value="#FFFFFF" maxlength="7" autocomplete="off" spellcheck="false"
+                 aria-describedby="hexHint" class="tool-contrast__hex">
+          <button type="button" class="tool-contrast__eyedropper" id="bgDropper" aria-label="Kleur oppikken van scherm" hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9"/><path d="m15 6 3 3"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <span id="hexHint" class="sr-only">Voer een hexadecimale kleurcode in, bijv. #FF6600</span>
+
+    <!-- Preview -->
+    <div class="tool-contrast__preview" id="previewBox" aria-label="Voorbeeld van de kleurencombinatie">
+      <div class="tool-contrast__preview-text" id="previewText">
+        Zo ziet jouw tekst eruit in deze kleurencombinatie. Is het goed leesbaar?
+      </div>
+      <div class="tool-contrast__size-control">
+        <label for="fontSizeSlider" class="tool-contrast__size-label">
+          Tekstgrootte: <output id="fontSizeValue">16px</output>
+        </label>
+        <div class="tool-contrast__size-row">
+          <span class="tool-contrast__size-hint">10px</span>
+          <input type="range" id="fontSizeSlider" min="10" max="48" value="16" step="1">
+          <span class="tool-contrast__size-hint">48px</span>
+        </div>
+        <div class="tool-contrast__size-indicator" id="sizeIndicator"></div>
+      </div>
+    </div>
+
+    <!-- Ratio -->
+    <div class="tool-contrast__ratio" aria-live="polite">
+      <div class="tool-contrast__ratio-value" id="ratioValue">12.5:1</div>
+      <div class="tool-contrast__ratio-label">contrastverhouding</div>
+    </div>
+
+    <!-- Results grid -->
+    <div class="tool-contrast__results" id="resultsGrid" role="region" aria-label="Resultaten per WCAG-niveau" aria-live="polite">
+      <div class="tool-contrast__card">
+        <h2>Niveau AA</h2>
+        <div class="tool-contrast__row">
+          <span class="tool-contrast__row-label">Normale tekst</span>
+          <span class="tool-contrast__row-threshold">4.5:1</span>
+          <span class="tool-contrast__badge" id="aa-normal"></span>
+        </div>
+        <div class="tool-contrast__row">
+          <span class="tool-contrast__row-label">Grote tekst</span>
+          <span class="tool-contrast__row-threshold">3:1</span>
+          <span class="tool-contrast__badge" id="aa-large"></span>
+        </div>
+        <div class="tool-contrast__row">
+          <span class="tool-contrast__row-label">UI-componenten</span>
+          <span class="tool-contrast__row-threshold">3:1</span>
+          <span class="tool-contrast__badge" id="aa-ui"></span>
+        </div>
+      </div>
+      <div class="tool-contrast__card">
+        <h2>Niveau AAA</h2>
+        <div class="tool-contrast__row">
+          <span class="tool-contrast__row-label">Normale tekst</span>
+          <span class="tool-contrast__row-threshold">7:1</span>
+          <span class="tool-contrast__badge" id="aaa-normal"></span>
+        </div>
+        <div class="tool-contrast__row">
+          <span class="tool-contrast__row-label">Grote tekst</span>
+          <span class="tool-contrast__row-threshold">4.5:1</span>
+          <span class="tool-contrast__badge" id="aaa-large"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WCAG context -->
+    <div class="tool-contrast__wcag" id="wcagContext">
+      <h2>Welke eis geldt wanneer?</h2>
+
+      <div class="tool-contrast__criterion" id="ctx-143">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.3</span>
+          <span class="tool-contrast__criterion-name">Contrast (minimum)</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aa">Niveau AA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          Tekst en afbeeldingen van tekst moeten een contrastverhouding van minstens <code>4.5:1</code> hebben.
+          <strong>Grote tekst</strong> (18pt / 24px of groter, of 14pt / 18.66px vet) mag een lagere verhouding van <code>3:1</code> hebben.
+          Dit criterium geldt niet voor logo's, merknamen of decoratieve tekst.
+        </p>
+      </div>
+
+      <div class="tool-contrast__criterion" id="ctx-1411">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.11</span>
+          <span class="tool-contrast__criterion-name">Contrast van niet-tekstuele content</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aa">Niveau AA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          UI-componenten (knoppen, formuliervelden, iconen) en grafische objecten die nodig zijn om de content te begrijpen
+          moeten een contrastverhouding van minstens <code>3:1</code> hebben ten opzichte van aangrenzende kleuren.
+          Denk aan de rand van een invoerveld, de kleur van een icoon, of de staat van een schakelaar.
+        </p>
+      </div>
+
+      <div class="tool-contrast__criterion" id="ctx-146">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.6</span>
+          <span class="tool-contrast__criterion-name">Contrast (uitgebreid)</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aaa">Niveau AAA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          Tekst moet een contrastverhouding van minstens <code>7:1</code> hebben. Grote tekst: <code>4.5:1</code>.
+          Dit is het hoogste niveau en is niet wettelijk verplicht, maar wordt wel aanbevolen voor
+          optimale leesbaarheid &mdash; bijvoorbeeld voor langere teksten of een ouder publiek.
+        </p>
+      </div>
+
+      <!-- Quick reference -->
+      <h2 style="margin-top: 1.5rem;">Overzicht drempelwaarden</h2>
+      <table class="tool-contrast__ref-table">
+        <thead>
+          <tr>
+            <th>Wat</th>
+            <th>AA (verplicht)</th>
+            <th>AAA (aanbevolen)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Normale tekst (&lt; 18pt)</td>
+            <td><strong>4.5:1</strong></td>
+            <td><strong>7:1</strong></td>
+          </tr>
+          <tr>
+            <td>Grote tekst (&ge; 18pt / &ge; 14pt vet)</td>
+            <td><strong>3:1</strong></td>
+            <td><strong>4.5:1</strong></td>
+          </tr>
+          <tr>
+            <td>UI-componenten &amp; iconen</td>
+            <td><strong>3:1</strong></td>
+            <td>&mdash;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      <p>Kleurcontrast is slechts een van de 55 WCAG-succescriteria. Wil je weten of je hele
+      website voldoet aan de toegankelijkheidseisen?</p>
+      <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-contrast-checker.js" | relURL }}" defer></script>
+{{ end }}

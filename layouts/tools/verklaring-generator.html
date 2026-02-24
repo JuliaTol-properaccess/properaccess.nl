@@ -1,0 +1,304 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="container" style="max-width: 52rem;">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="tool-verklaring__intro">
+      Beantwoord de vragen stap voor stap en genereer een toegankelijkheidsverklaring
+      voor je bedrijf onder de European Accessibility Act (EAA). Je kunt het resultaat kopiëren
+      en direct op je website plaatsen.
+    </p>
+
+    <div class="tool-verklaring__info-box">
+      <h2 class="tool-verklaring__info-box-title">Voor wie is deze tool?</h2>
+      <p>Sinds 28 juni 2025 moeten commerciële bedrijven die e-handelsdiensten of elektronische communicatiediensten
+      aanbieden een toegankelijkheidsverklaring publiceren. Dit geldt voor bedrijven met:</p>
+      <ul>
+        <li>10 of meer werknemers, <strong>of</strong></li>
+        <li>een jaaromzet van meer dan 2 miljoen euro</li>
+      </ul>
+      <p>De <a href="https://www.acm.nl/nl/toegankelijkheid" rel="noopener">ACM (Autoriteit Consument &amp; Markt)</a>
+      houdt hier toezicht op. Een onafhankelijke audit is niet verplicht, maar wel aan te raden om
+      je verklaring te onderbouwen.</p>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="tool-verklaring__progress" role="progressbar" aria-label="Voortgang" aria-valuenow="1" aria-valuemin="1" aria-valuemax="6" id="progressBar">
+      <div class="tool-verklaring__progress-step tool-verklaring__progress-step--active" data-step="1"></div>
+      <div class="tool-verklaring__progress-step" data-step="2"></div>
+      <div class="tool-verklaring__progress-step" data-step="3"></div>
+      <div class="tool-verklaring__progress-step" data-step="4"></div>
+      <div class="tool-verklaring__progress-step" data-step="5"></div>
+      <div class="tool-verklaring__progress-step" data-step="6"></div>
+    </div>
+    <div class="tool-verklaring__step-indicator" id="stepIndicator" aria-live="polite">Stap 1 van 6</div>
+
+    <form id="wizardForm" novalidate>
+
+      <!-- STAP 1: Organisatie -->
+      <div class="tool-verklaring__step tool-verklaring__step--active" id="step1" role="group" aria-labelledby="step1-title">
+        <h2 id="step1-title">Je bedrijf en dienst</h2>
+        <p class="tool-verklaring__step-desc">Basisgegevens over je bedrijf en de dienst waarvoor je de verklaring opstelt.</p>
+
+        <div class="tool-verklaring__field">
+          <label for="orgName">Bedrijfsnaam <span class="tool-verklaring__required">*</span></label>
+          <input type="text" id="orgName" required autocomplete="organization">
+        </div>
+
+        <div class="tool-verklaring__field">
+          <label for="siteUrl">URL van de website of app <span class="tool-verklaring__required">*</span></label>
+          <span class="tool-verklaring__hint">Bijv. https://www.voorbeeld.nl</span>
+          <input type="url" id="siteUrl" required placeholder="https://" autocomplete="url">
+        </div>
+
+        <div class="tool-verklaring__field">
+          <label for="siteName">Naam van de website of app</label>
+          <span class="tool-verklaring__hint">Optioneel. Bijv. "Mijn Webshop" of "Klantenportaal"</span>
+          <input type="text" id="siteName">
+        </div>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Type <span class="tool-verklaring__required">*</span></legend>
+          <div class="tool-verklaring__radio-group">
+            <label><input type="radio" name="siteType" value="website" checked> Website</label>
+            <label><input type="radio" name="siteType" value="mobiele applicatie"> Mobiele applicatie</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Type dienst <span class="tool-verklaring__required">*</span></legend>
+          <span class="tool-verklaring__hint">Welk type dienst bied je aan? Dit bepaalt welke EAA-verplichtingen van toepassing zijn.</span>
+          <div class="tool-verklaring__radio-group">
+            <label>
+              <input type="radio" name="serviceType" value="e-handel" checked>
+              <span><strong>E-handelsdienst</strong> — je verkoopt producten of diensten online (webshop, boekingssite, SaaS)</span>
+            </label>
+            <label>
+              <input type="radio" name="serviceType" value="elektronische communicatie">
+              <span><strong>Elektronische communicatiedienst</strong> — je biedt communicatiediensten aan (bellen, chatten, e-mail)</span>
+            </label>
+            <label>
+              <input type="radio" name="serviceType" value="beide">
+              <span><strong>Beide</strong></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="tool-verklaring__buttons">
+          <div></div>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="nextStep()">Volgende</button>
+        </div>
+      </div>
+
+      <!-- STAP 2: Nalevingsstatus -->
+      <div class="tool-verklaring__step" id="step2" role="group" aria-labelledby="step2-title">
+        <h2 id="step2-title">Nalevingsstatus</h2>
+        <p class="tool-verklaring__step-desc">Hoe goed voldoet je website of app aan de toegankelijkheidseisen?</p>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Welke standaard is getoetst? <span class="tool-verklaring__required">*</span></legend>
+          <span class="tool-verklaring__hint">De EAA verwijst naar de Europese norm EN 301 549, die gebaseerd is op WCAG 2.1 AA.
+          Vanaf 2027 wordt WCAG 2.2 AA de verwachte standaard.</span>
+          <div class="tool-verklaring__radio-group">
+            <label>
+              <input type="radio" name="standard" value="EN 301 549 / WCAG 2.1 niveau AA" checked>
+              <span>EN 301 549 / WCAG 2.1 niveau AA (huidige EAA-norm)</span>
+            </label>
+            <label>
+              <input type="radio" name="standard" value="EN 301 549 / WCAG 2.2 niveau AA">
+              <span>EN 301 549 / WCAG 2.2 niveau AA (toekomstige norm)</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Nalevingsstatus <span class="tool-verklaring__required">*</span></legend>
+          <span class="tool-verklaring__hint">Kies de status die het best past bij de huidige situatie.</span>
+          <div class="tool-verklaring__radio-group">
+            <label>
+              <input type="radio" name="complianceStatus" value="voldoet volledig">
+              <span><strong>Voldoet volledig</strong> — alle content voldoet aan de standaard, zonder uitzonderingen</span>
+            </label>
+            <label>
+              <input type="radio" name="complianceStatus" value="voldoet gedeeltelijk" checked>
+              <span><strong>Voldoet gedeeltelijk</strong> — de meeste content voldoet, maar er zijn onderdelen die niet voldoen</span>
+            </label>
+            <label>
+              <input type="radio" name="complianceStatus" value="voldoet niet">
+              <span><strong>Voldoet niet</strong> — er is nog niet of onvoldoende getoetst, of er zijn veel problemen</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="tool-verklaring__buttons">
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="prevStep()">Vorige</button>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="nextStep()">Volgende</button>
+        </div>
+      </div>
+
+      <!-- STAP 3: Niet-toegankelijke content -->
+      <div class="tool-verklaring__step" id="step3" role="group" aria-labelledby="step3-title">
+        <h2 id="step3-title">Niet-toegankelijke content</h2>
+        <p class="tool-verklaring__step-desc">Welke onderdelen voldoen niet aan de standaard? Voeg ze hier toe. Je kunt meerdere items toevoegen.</p>
+
+        <div class="tool-verklaring__item-list" id="issuesList"></div>
+        <button type="button" class="tool-verklaring__btn-add" onclick="addIssue()" id="addIssueBtn">
+          + Niet-toegankelijk onderdeel toevoegen
+        </button>
+
+        <div class="tool-verklaring__field" style="margin-top: 1.5rem;">
+          <label for="disproportionateBurden">Onevenredige last</label>
+          <span class="tool-verklaring__hint">De EAA kent een uitzondering voor onevenredige last. Is er sprake van onderdelen waarvoor
+          het doorvoeren van toegankelijkheid een onevenredige last vormt? Zo ja, beschrijf welke en waarom.</span>
+          <textarea id="disproportionateBurden" placeholder="Laat leeg als dit niet van toepassing is"></textarea>
+        </div>
+
+        <div class="tool-verklaring__buttons">
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="prevStep()">Vorige</button>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="nextStep()">Volgende</button>
+        </div>
+      </div>
+
+      <!-- STAP 4: Onderzoek -->
+      <div class="tool-verklaring__step" id="step4" role="group" aria-labelledby="step4-title">
+        <h2 id="step4-title">Onderzoek</h2>
+        <p class="tool-verklaring__step-desc">Informatie over het uitgevoerde toegankelijkheidsonderzoek.
+        Een onafhankelijke audit is onder de EAA niet verplicht, maar onderbouwt je verklaring en
+        laat zien dat je het serieus neemt.</p>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Is er een toegankelijkheidsonderzoek uitgevoerd?</legend>
+          <div class="tool-verklaring__radio-group">
+            <label><input type="radio" name="auditMethod" value="extern" checked> Ja, door een extern bureau</label>
+            <label><input type="radio" name="auditMethod" value="intern"> Ja, intern (door eigen medewerkers)</label>
+            <label><input type="radio" name="auditMethod" value="geautomatiseerd"> Alleen geautomatiseerde tests (bijv. axe, WAVE)</label>
+            <label><input type="radio" name="auditMethod" value="geen"> Nee, er is (nog) geen onderzoek uitgevoerd</label>
+          </div>
+        </fieldset>
+
+        <div class="tool-verklaring__field" id="auditorField">
+          <label for="auditorName">Naam van het onderzoeksbureau</label>
+          <input type="text" id="auditorName" placeholder="Bijv. Proper Access">
+        </div>
+
+        <div class="tool-verklaring__field tool-verklaring__field--short" id="auditDateField">
+          <label for="auditDate">Datum van het onderzoek</label>
+          <input type="date" id="auditDate">
+        </div>
+
+        <fieldset class="tool-verklaring__field" id="auditMethodologyField">
+          <legend>Gebruikte methodologie</legend>
+          <div class="tool-verklaring__radio-group">
+            <label><input type="radio" name="auditMethodology" value="WCAG-EM" checked> WCAG-EM (aanbevolen door W3C)</label>
+            <label><input type="radio" name="auditMethodology" value="anders"> Andere methodologie</label>
+            <label><input type="radio" name="auditMethodology" value="onbekend"> Onbekend / niet van toepassing</label>
+          </div>
+        </fieldset>
+
+        <div class="tool-verklaring__field tool-verklaring__field--short">
+          <label for="statementDate">Datum van deze verklaring <span class="tool-verklaring__required">*</span></label>
+          <input type="date" id="statementDate" required>
+        </div>
+
+        <div class="tool-verklaring__buttons">
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="prevStep()">Vorige</button>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="nextStep()">Volgende</button>
+        </div>
+      </div>
+
+      <!-- STAP 5: Feedback en contact -->
+      <div class="tool-verklaring__step" id="step5" role="group" aria-labelledby="step5-title">
+        <h2 id="step5-title">Feedback en contact</h2>
+        <p class="tool-verklaring__step-desc">De EAA vereist dat je een duidelijk feedbackmechanisme biedt.
+        Bezoekers moeten je kunnen bereiken als ze tegen toegankelijkheidsproblemen aanlopen.</p>
+
+        <div class="tool-verklaring__field">
+          <label for="feedbackEmail">E-mailadres voor toegankelijkheidsvragen <span class="tool-verklaring__required">*</span></label>
+          <input type="email" id="feedbackEmail" required autocomplete="email">
+        </div>
+
+        <div class="tool-verklaring__field">
+          <label for="feedbackPhone">Telefoonnummer</label>
+          <input type="tel" id="feedbackPhone" autocomplete="tel">
+        </div>
+
+        <div class="tool-verklaring__field">
+          <label for="feedbackUrl">URL van het contactformulier of feedbackpagina</label>
+          <input type="url" id="feedbackUrl" placeholder="https://">
+        </div>
+
+        <fieldset class="tool-verklaring__field">
+          <legend>Reactietermijn</legend>
+          <span class="tool-verklaring__hint">Binnen hoeveel werkdagen reageert je bedrijf op meldingen over toegankelijkheid?</span>
+          <div class="tool-verklaring__radio-group">
+            <label><input type="radio" name="responseTime" value="5 werkdagen" checked> 5 werkdagen</label>
+            <label><input type="radio" name="responseTime" value="10 werkdagen"> 10 werkdagen</label>
+            <label><input type="radio" name="responseTime" value="14 werkdagen"> 14 werkdagen</label>
+          </div>
+        </fieldset>
+
+        <div class="tool-verklaring__field">
+          <label for="extraAccessibility">Aanvullende toegankelijkheidsmaatregelen</label>
+          <span class="tool-verklaring__hint">Bied je aanvullende ondersteuning? Bijv. telefonische hulp bij bestellen,
+          assistentie bij het gebruik van je dienst, of andere alternatieven.</span>
+          <textarea id="extraAccessibility" rows="3" placeholder="Bijv. 'Klanten die moeite hebben met online bestellen kunnen telefonisch bestellen via 0800-1234'"></textarea>
+        </div>
+
+        <div class="tool-verklaring__buttons">
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="prevStep()">Vorige</button>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="nextStep()">Volgende</button>
+        </div>
+      </div>
+
+      <!-- STAP 6: Controleren -->
+      <div class="tool-verklaring__step" id="step6" role="group" aria-labelledby="step6-title">
+        <h2 id="step6-title">Controleer en genereer</h2>
+        <p class="tool-verklaring__step-desc">Bekijk je gegevens en genereer de verklaring.</p>
+
+        <div id="reviewSummary"></div>
+
+        <div class="tool-verklaring__buttons">
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="prevStep()">Vorige</button>
+          <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="generateStatement()">Genereer verklaring</button>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- OUTPUT -->
+    <div class="tool-verklaring__output" id="outputContainer">
+      <h2>Je toegankelijkheidsverklaring</h2>
+      <p>Kopieer de tekst hieronder en plaats deze op je website.</p>
+
+      <div class="tool-verklaring__output-note">
+        <strong>Let op:</strong> De EAA vereist dat je toegankelijkheidsverklaring ook beschikbaar is in
+        een audioversie. Maak na het plaatsen van de tekst ook een ingesproken versie (of text-to-speech audio)
+        en plaats die op dezelfde pagina.
+      </div>
+
+      <div class="tool-verklaring__output-actions">
+        <button type="button" class="tool-verklaring__btn tool-verklaring__btn--primary" onclick="copyAsText()">Kopieer als tekst</button>
+        <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="copyAsHtml()">Kopieer als HTML</button>
+        <span class="tool-verklaring__copy-feedback" id="copyFeedback">Gekopieerd!</span>
+      </div>
+
+      <div class="tool-verklaring__output-box" id="outputBox"></div>
+
+      <div class="tool-verklaring__output-actions">
+        <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="startOver()">Opnieuw beginnen</button>
+        <button type="button" class="tool-verklaring__btn tool-verklaring__btn--secondary" onclick="editStatement()">Terug naar bewerken</button>
+      </div>
+
+      <div class="tool-cta">
+        <p>Deze tool helpt je op weg, maar een verklaring is pas compleet als je weet waar je website
+        daadwerkelijk staat. Een professionele WCAG-audit geeft je dat inzicht — en onderbouwt je verklaring
+        richting de ACM.</p>
+        <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-verklaring.js" | relURL }}" defer></script>
+{{ end }}
