@@ -1,5 +1,22 @@
 /* Add your own custom styles here */
 
+/* ─── Skiplink ─── */
+.skiplink {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  background: #1F2937;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+.skiplink:focus {
+  left: 0;
+}
+
 /* Navigation dropdown hover */
 .nav-dropdown-link:hover {
   background: #1F2937;
@@ -3069,6 +3086,7 @@ html.dark .tool-card__tag {
 
 .hp-narrow     { max-width: 52rem; margin-inline: auto; }
 .hp-narrow-sm  { max-width: 40rem; margin-inline: auto; }
+
 
 /* ─── Hero ─── */
 
