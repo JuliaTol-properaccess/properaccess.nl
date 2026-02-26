@@ -9,7 +9,10 @@
         {{ range .RegularPages }}
           <a href="{{ .RelPermalink }}" class="tool-card">
             <div class="tool-card__body">
-              <h2 class="tool-card__title">{{ .Title }}</h2>
+              <h2 class="tool-card__title">
+                {{ .Title }}
+                {{ if .Params.beta }}<span class="tool-card__beta">Beta</span>{{ end }}
+              </h2>
               <p class="tool-card__description">{{ .Description }}</p>
             </div>
             {{ with .Params.doelgroep }}
