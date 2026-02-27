@@ -3,19 +3,33 @@
   <div class="tool-container">
 
     <h1 class="mb-2">{{ .Title }} <span class="tool-pdf__beta">Beta</span></h1>
-    <p class="tool-pdf__intro">
-      Upload een PDF-bestand om het automatisch te laten controleren op veelvoorkomende
-      toegankelijkheidsproblemen. 100% gemaakt in Nederland, volledig in je browser &mdash;
-      je bestand wordt niet verstuurd en nergens opgeslagen.
-    </p>
 
-    <ol class="tool-pdf__steps">
-      <li>Kies of sleep een PDF-bestand</li>
-      <li>Bekijk en exporteer de gevonden problemen met concrete oplossingen</li>
-    </ol>
+    <!-- Password gate -->
+    <div class="tool-pdf__gate" id="passwordGate">
+      <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <form class="tool-pdf__gate-form" id="passwordForm">
+        <label for="gatePassword" class="sr-only">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn">Toegang</button>
+      </form>
+      <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
+    </div>
 
-    <!-- Upload zone -->
-    <div class="tool-pdf__upload" id="uploadZone" role="button" tabindex="0" aria-label="Sleep een PDF hierheen of klik om te uploaden">
+    <!-- Tool content (hidden until authenticated) -->
+    <div id="toolContent" hidden>
+      <p class="tool-pdf__intro">
+        Upload een PDF-bestand om het automatisch te laten controleren op veelvoorkomende
+        toegankelijkheidsproblemen. 100% gemaakt in Nederland, volledig in je browser &mdash;
+        je bestand wordt niet verstuurd en nergens opgeslagen.
+      </p>
+
+      <ol class="tool-pdf__steps">
+        <li>Kies of sleep een PDF-bestand</li>
+        <li>Bekijk en exporteer de gevonden problemen met concrete oplossingen</li>
+      </ol>
+
+      <!-- Upload zone -->
+      <div class="tool-pdf__upload" id="uploadZone" role="button" tabindex="0" aria-label="Sleep een PDF hierheen of klik om te uploaden">
       <div class="tool-pdf__upload-content">
         <svg class="tool-pdf__upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -57,15 +71,17 @@
       <div id="resultsCategories"></div>
     </div>
 
-    <!-- CTA -->
-    <div class="tool-cta">
-      <p>Wil je deze tool op maat laten maken voor je organisatie? Neem contact op met
-      <a href="tel:+31628742275">Julia Tol</a> om de mogelijkheden te bespreken.
-      Je wordt blij van de voorwaarden.</p>
-    </div>
+      <!-- CTA -->
+      <div class="tool-cta">
+        <p>Wil je deze tool op maat laten maken voor je organisatie? Neem contact op met
+        <a href="tel:+31628742275">Julia Tol</a> om de mogelijkheden te bespreken.
+        Je wordt blij van de voorwaarden.</p>
+      </div>
+    </div><!-- /toolContent -->
 
   </div>
 </section>
 
+<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
 <script src="{{ "js/tool-pdf-checker.js" | relURL }}" defer></script>
 {{ end }}

@@ -3,6 +3,20 @@
   <div class="tool-container">
 
     <h1 class="mb-2">{{ .Title }}</h1>
+
+    <!-- Password gate -->
+    <div class="tool-pdf__gate" id="passwordGate">
+      <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <form class="tool-pdf__gate-form" id="passwordForm">
+        <label for="gatePassword" class="sr-only">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn">Toegang</button>
+      </form>
+      <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
+    </div>
+
+    <!-- Tool content (hidden until authenticated) -->
+    <div id="toolContent" hidden>
     <p class="tool-verklaring__intro">
       Beantwoord de vragen stap voor stap en genereer een toegankelijkheidsverklaring
       voor je bedrijf onder de European Accessibility Act (EAA). Je kunt het resultaat kopiëren
@@ -296,9 +310,11 @@
         <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
       </div>
     </div>
+    </div><!-- /toolContent -->
 
   </div>
 </section>
 
+<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
 <script src="{{ "js/tool-verklaring.js" | relURL }}" defer></script>
 {{ end }}

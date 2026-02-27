@@ -4299,6 +4299,97 @@ html.dark .tool-aria__empty { color: #9ca3af; }
    TOOL: PDF TOEGANKELIJKHEIDSCHECKER
    ================================================== */
 
+/* Password gate */
+
+.tool-pdf__gate {
+  max-width: 420px;
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.tool-pdf__gate-text {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+html.dark .tool-pdf__gate {
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .tool-pdf__gate-text {
+  color: var(--color-darkmode-text);
+}
+
+.tool-pdf__gate-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tool-pdf__gate-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccd5e0;
+  border-radius: 6px;
+  font-size: 0.925rem;
+  color: #1F2937;
+  background: #fff;
+}
+
+.tool-pdf__gate-input:focus {
+  outline: 2px solid #A30D4B;
+  outline-offset: 1px;
+  border-color: #A30D4B;
+}
+
+html.dark .tool-pdf__gate-input {
+  background: var(--color-darkmode-theme-light);
+  border-color: var(--color-darkmode-border);
+  color: var(--color-darkmode-text);
+}
+
+.tool-pdf__gate-btn {
+  padding: 0.5rem 1.25rem;
+  background: #A30D4B;
+  border: 1px solid #A30D4B;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.925rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tool-pdf__gate-btn:hover {
+  background: #8a0b3f;
+}
+
+html.dark .tool-pdf__gate-btn {
+  background: #c4176a;
+  border-color: #c4176a;
+}
+
+html.dark .tool-pdf__gate-btn:hover {
+  background: #d63d82;
+}
+
+.tool-pdf__gate-error {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: #A30D4B;
+  font-weight: 500;
+}
+
+html.dark .tool-pdf__gate-error {
+  color: #e8a0ba;
+}
+
+/* Intro */
+
 .tool-pdf__intro {
   max-width: 640px;
   margin: 0 0 2rem;
