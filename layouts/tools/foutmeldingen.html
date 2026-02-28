@@ -1,0 +1,62 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="tool-container tool-container--wide">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+    <p class="tool-fout__intro">
+      Goede foutmeldingen helpen gebruikers om fouten in formulieren te begrijpen en te herstellen.
+      Dit naslagwerk toont per veldtype voorbeelden van duidelijke foutmeldingen, gebaseerd op
+      <a href="/blog/sc-3-3-1-wat-betekent-foutidentificatie/">SC&nbsp;3.3.1 Foutidentificatie</a> en
+      <a href="/blog/sc-3-3-3-wat-betekent-foutsuggestie/">SC&nbsp;3.3.3 Foutsuggestie</a>.
+    </p>
+
+    <!-- Search -->
+    <div class="tool-fout__controls">
+      <label for="foutSearch" class="sr-only">Zoek op veldtype</label>
+      <input
+        type="search"
+        id="foutSearch"
+        class="tool-fout__search"
+        placeholder="Zoek bijv. &quot;e-mail&quot;, &quot;wachtwoord&quot;, &quot;datum&quot;..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+
+      <!-- Category filters -->
+      <div class="tool-fout__filters" id="foutFilters" role="toolbar" aria-label="Filter op categorie">
+      </div>
+    </div>
+
+    <!-- Results count -->
+    <p class="tool-fout__count" id="foutCount" aria-live="polite"></p>
+
+    <!-- Results -->
+    <div class="tool-fout__results" id="foutResults" role="region" aria-label="Resultaten">
+    </div>
+
+    <!-- Principles -->
+    <div class="tool-fout__principles">
+      <h2>De regels volgens WCAG</h2>
+      <dl class="tool-fout__rules">
+        <div class="tool-fout__rule">
+          <dt><strong>SC 3.3.1</strong> Foutidentificatie <span class="tool-fout__level">Niveau A</span></dt>
+          <dd>Als er een invoerfout wordt ontdekt, wordt het onderdeel met de fout aan de gebruiker getoond en wordt de fout in tekst beschreven.</dd>
+        </div>
+        <div class="tool-fout__rule">
+          <dt><strong>SC 3.3.3</strong> Foutsuggestie <span class="tool-fout__level">Niveau AA</span></dt>
+          <dd>Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond — tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      <p>Wil je weten of de foutmeldingen op jouw website voldoen aan de WCAG-richtlijnen?</p>
+      <p><a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-foutmeldingen.js" | relURL }}" defer></script>
+{{ end }}
