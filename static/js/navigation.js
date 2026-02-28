@@ -1,15 +1,16 @@
 (function () {
   function init() {
-    const triggers = document.querySelectorAll('[data-submenu-toggle]');
+    var triggers = document.querySelectorAll('[data-submenu-toggle]');
     if (!triggers.length) return;
 
-    const menus = [];
+    var menus = [];
 
-    triggers.forEach(trigger => {
-      const checkboxId = trigger.getAttribute('data-submenu-toggle');
-      const checkbox = document.getElementById(checkboxId);
-      const submenuId = trigger.getAttribute('aria-controls');
-      const submenu = document.getElementById(submenuId);
+    triggers.forEach(function (trigger) {
+      var checkboxId = trigger.getAttribute('data-submenu-toggle');
+      var checkbox = document.getElementById(checkboxId);
+      var submenuId = trigger.getAttribute('aria-controls');
+      var submenu = document.getElementById(submenuId);
+      var navItem = trigger.closest('.nav-dropdown');
 
       if (!checkbox || !submenu) return;
 
@@ -18,51 +19,86 @@
         checkbox.checked ? 'true' : 'false'
       );
 
-      const open = () => {
+      var open = function () {
         checkbox.checked = true;
         trigger.setAttribute('aria-expanded', 'true');
+        if (navItem) navItem.classList.remove('hover-blocked');
       };
 
-      const close = () => {
+      var close = function () {
         checkbox.checked = false;
         trigger.setAttribute('aria-expanded', 'false');
       };
 
-      const toggle = () => {
+      var toggle = function () {
         checkbox.checked ? close() : open();
       };
 
       // click / touch
-      trigger.addEventListener('click', (e) => {
+      trigger.addEventListener('click', function (e) {
         e.preventDefault();
         toggle();
       });
 
       // keyboard open
-      trigger.addEventListener('keydown', (e) => {
+      trigger.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           toggle();
         }
       });
 
-      menus.push({ trigger, submenu, close });
+      // Verwijder hover-blocked zodra de muis het item verlaat
+      if (navItem) {
+        navItem.addEventListener('mouseleave', function () {
+          navItem.classList.remove('hover-blocked');
+        });
+      }
+
+      menus.push({ trigger: trigger, submenu: submenu, navItem: navItem, close: close });
     });
 
     /* ---------- GLOBAL FOCUS HANDLER ---------- */
-    document.addEventListener('focusin', (e) => {
-      const target = e.target;
+    document.addEventListener('focusin', function (e) {
+      var target = e.target;
 
-      menus.forEach(({ trigger, submenu, close }) => {
-        if (
-          trigger.contains(target) ||
-          submenu.contains(target)
-        ) {
-          return; // focus is inside menu
+      menus.forEach(function (m) {
+        if (m.trigger.contains(target) || m.submenu.contains(target)) {
+          return;
         }
-
-        close(); // focus is outside → close menu
+        m.close();
       });
+    });
+
+    /* ---------- ESC SLUIT SUBMENU'S ---------- */
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+
+      var closed = false;
+      menus.forEach(function (m) {
+        // Sluit zowel JS-geopende als hover-geopende submenu's
+        var isExpanded = m.trigger.getAttribute('aria-expanded') === 'true';
+        var focusInside = m.trigger.contains(document.activeElement) ||
+                          m.submenu.contains(document.activeElement);
+        var isHovered = m.navItem && m.navItem.matches(':hover');
+
+        if (isExpanded || focusInside || isHovered) {
+          m.close();
+          // Blokkeer CSS hover tijdelijk zodat menu echt sluit
+          if (m.navItem) m.navItem.classList.add('hover-blocked');
+          m.trigger.focus();
+          closed = true;
+        }
+      });
+
+      if (closed) e.preventDefault();
+    });
+
+    /* ---------- KLIK BUITEN SLUIT SUBMENU'S ---------- */
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        menus.forEach(function (m) { m.close(); });
+      }
     });
   }
 

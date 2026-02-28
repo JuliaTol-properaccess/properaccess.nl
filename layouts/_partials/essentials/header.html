@@ -179,42 +179,6 @@
     hideIcon.classList.toggle("block");
   });
 
-  /* ── Submenu toggle buttons ── */
-  function closeAllSubmenus(except) {
-    document.querySelectorAll("[data-submenu-toggle]").forEach(function (btn) {
-      if (btn === except) return;
-      var cb = document.getElementById(btn.getAttribute("data-submenu-toggle"));
-      if (cb) cb.checked = false;
-      btn.setAttribute("aria-expanded", "false");
-    });
-  }
-
-  document.querySelectorAll("[data-submenu-toggle]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var cb = document.getElementById(btn.getAttribute("data-submenu-toggle"));
-      if (!cb) return;
-      closeAllSubmenus(btn);
-      cb.checked = !cb.checked;
-      btn.setAttribute("aria-expanded", String(cb.checked));
-    });
-  });
-
-  /* ── ESC sluit submenus ── */
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      closeAllSubmenus();
-      var focused = document.activeElement;
-      if (focused && focused.closest(".nav-dropdown")) {
-        focused.closest(".nav-dropdown").querySelector("[data-submenu-toggle]").focus();
-      }
-    }
-  });
-
-  /* ── Klik buiten submenu sluit het ── */
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".nav-dropdown")) {
-      closeAllSubmenus();
-    }
-  });
+  /* Submenu toggle, ESC en buitenklik worden afgehandeld door navigation.js */
 })();
 </script>

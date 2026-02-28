@@ -18,6 +18,11 @@
 }
 
 /* Navigation dropdown hover */
+.nav-dropdown.hover-blocked .nav-dropdown-list {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 .nav-dropdown-link:hover {
   background: #1F2937;
   color: #fff !important;
