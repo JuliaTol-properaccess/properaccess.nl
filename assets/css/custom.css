@@ -5498,6 +5498,18 @@ html.dark .tool-fout__intro {
 
 /* Controls */
 
+.tool-fout__label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.35rem;
+}
+
+html.dark .tool-fout__label {
+  color: #f3f4f6;
+}
+
 .tool-fout__controls {
   margin-bottom: 1rem;
 }
