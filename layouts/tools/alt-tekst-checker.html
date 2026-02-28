@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <h1 class="mb-2">{{ .Title }} {{ if .Params.beta }}<span class="tool-pdf__beta">Beta</span>{{ end }}</h1>
+
+    <!-- Password gate -->
+    <div class="tool-pdf__gate" id="passwordGate">
+      <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <form class="tool-pdf__gate-form" id="passwordForm">
+        <label for="gatePassword" class="sr-only">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn">Toegang</button>
+      </form>
+      <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
+    </div>
+
+    <!-- Tool content (hidden until authenticated) -->
+    <div id="toolContent" hidden>
+      <p class="tool-alt__intro">
+        Voer een URL in om alle afbeeldingen, SVG's en iconen op die pagina te controleren
+        op alt-teksten. Je ziet per element de status, de locatie op de pagina en of het
+        binnen een link of knop staat.
+      </p>
+
+      <form class="tool-alt__form" id="checkerForm">
+        <div class="tool-alt__form-row">
+          <label for="urlInput" class="sr-only">URL van de pagina</label>
+          <input type="url" id="urlInput" class="tool-alt__input" placeholder="https://www.voorbeeld.nl" required autocomplete="url">
+          <button type="submit" class="tool-alt__btn" id="submitBtn">Controleer</button>
+        </div>
+      </form>
+
+      <div id="output" role="region" aria-live="polite"></div>
+
+      <div class="tool-cta" id="altCta" style="display:none;">
+        <p>Wil je alle afbeeldingen op je hele website laten controleren?
+        <a href="/contact">Neem contact op</a> voor een complete WCAG-audit.</p>
+      </div>
+    </div><!-- /toolContent -->
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
+<script src="{{ "js/tool-alt-tekst-checker.js" | relURL }}" defer></script>
+{{ end }}
