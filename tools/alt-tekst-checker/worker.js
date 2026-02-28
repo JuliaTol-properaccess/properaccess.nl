@@ -107,13 +107,15 @@ function analyzeHtml(html, baseUrl) {
   const icons = extractIcons(cleaned, context);
 
   // Summary counts
-  const imgGood = images.filter(i => i.status === "good").length;
-  const imgEmpty = images.filter(i => i.status === "empty").length;
+  const imgPresent = images.filter(i => i.status === "present").length;
   const imgMissing = images.filter(i => i.status === "missing").length;
   const imgDecorative = images.filter(i => i.status === "decorative").length;
+  const imgEmptyInteractive = images.filter(i => i.status === "empty-interactive").length;
 
   const svgGood = svgs.filter(s => s.status === "good").length;
   const svgMissing = svgs.filter(s => s.status === "missing").length;
+  const svgDecorative = svgs.filter(s => s.status === "decorative").length;
+  const svgRedundant = svgs.filter(s => s.status === "redundant").length;
 
   const iconGood = icons.filter(i => i.status === "good").length;
   const iconMissing = icons.filter(i => i.status === "missing").length;
@@ -125,13 +127,15 @@ function analyzeHtml(html, baseUrl) {
     icons,
     summary: {
       imgTotal: images.length,
-      imgGood,
-      imgEmpty,
+      imgPresent,
       imgMissing,
       imgDecorative,
+      imgEmptyInteractive,
       svgTotal: svgs.length,
       svgGood,
       svgMissing,
+      svgDecorative,
+      svgRedundant,
       iconTotal: icons.length,
       iconGood,
       iconMissing,
@@ -151,17 +155,36 @@ function buildContextMap(html) {
   // Track landmark open/close positions
   const landmarkTags = ["header", "nav", "main", "aside", "footer"];
   for (const tag of landmarkTags) {
-    const openRe = new RegExp(`<${tag}[\\s>]`, "gi");
+    const openRe = new RegExp(`<${tag}(\\s[^>]*)?>`, "gi");
     let m;
     while ((m = openRe.exec(html)) !== null) {
+      const attrs = m[1] || "";
+      const ariaLabel = getAttr(attrs, "aria-label");
+      const ariaLabelledby = getAttr(attrs, "aria-labelledby");
+      const id = getAttr(attrs, "id");
+
       // Find matching close tag (simple: next occurrence)
       const closeRe = new RegExp(`</${tag}>`, "gi");
       closeRe.lastIndex = m.index;
       const closeMatch = closeRe.exec(html);
+      const end = closeMatch ? closeMatch.index + closeMatch[0].length : html.length;
+
+      // Try to resolve aria-labelledby by finding the referenced element's text
+      let resolvedLabel = null;
+      if (ariaLabelledby) {
+        const refRe = new RegExp(`id\\s*=\\s*["']${ariaLabelledby}["'][^>]*>([\\s\\S]*?)<\\/`, "i");
+        const refMatch = html.match(refRe);
+        if (refMatch) {
+          resolvedLabel = refMatch[1].replace(/<[^>]+>/g, "").trim();
+        }
+      }
+
       landmarks.push({
         tag,
         start: m.index,
-        end: closeMatch ? closeMatch.index + closeMatch[0].length : html.length,
+        end,
+        label: ariaLabel || resolvedLabel || null,
+        id: id || null,
       });
     }
   }
@@ -191,7 +214,8 @@ function getLandmark(position, context) {
       }
     }
   }
-  return best ? best.tag : "onbekend";
+  if (!best) return { tag: "onbekend", label: null, id: null };
+  return { tag: best.tag, label: best.label || null, id: best.id || null };
 }
 
 function getNearestHeading(position, context) {
@@ -210,7 +234,8 @@ function getNearestHeading(position, context) {
 
 function getInteractiveContext(html, position) {
   // Look backwards from position for unclosed <a> or <button>
-  const before = html.slice(Math.max(0, position - 2000), position);
+  const sliceStart = Math.max(0, position - 2000);
+  const before = html.slice(sliceStart, position);
 
   // Check <a>
   const lastAOpen = before.lastIndexOf("<a ");
@@ -218,17 +243,52 @@ function getInteractiveContext(html, position) {
   const lastAClose = before.lastIndexOf("</a>");
   const aOpen = Math.max(lastAOpen, lastAOpenAlt);
   if (aOpen > -1 && aOpen > lastAClose) {
-    // Extract href for context
-    const snippet = before.slice(aOpen, aOpen + 500);
+    const snippet = before.slice(aOpen);
     const hrefMatch = snippet.match(/href\s*=\s*["']([^"']*?)["']/);
-    return { element: "a", href: hrefMatch ? hrefMatch[1] : null };
+    const openTagMatch = snippet.match(/^<a\s([^>]*)>/i);
+    const attrs = openTagMatch ? openTagMatch[1] : "";
+    const ariaLabel = getAttr(attrs, "aria-label");
+
+    // Get text content of the <a>, excluding SVGs, imgs, and other tags
+    const absOpen = sliceStart + aOpen;
+    const closePos = html.indexOf("</a>", position);
+    let hasText = !!ariaLabel;
+    if (!hasText && closePos > -1) {
+      const content = html.slice(absOpen, closePos)
+        .replace(/^<a[^>]*>/i, "")
+        .replace(/<svg[\s\S]*?<\/svg>/gi, "")
+        .replace(/<img[^>]*>/gi, "")
+        .replace(/<[^>]+>/g, "")
+        .trim();
+      hasText = content.length > 0;
+    }
+
+    return { element: "a", href: hrefMatch ? hrefMatch[1] : null, hasText };
   }
 
   // Check <button>
   const lastBtnOpen = before.lastIndexOf("<button");
   const lastBtnClose = before.lastIndexOf("</button>");
   if (lastBtnOpen > -1 && lastBtnOpen > lastBtnClose) {
-    return { element: "button", href: null };
+    const snippet = before.slice(lastBtnOpen);
+    const openTagMatch = snippet.match(/^<button\s?([^>]*)>/i);
+    const attrs = openTagMatch ? openTagMatch[1] : "";
+    const ariaLabel = getAttr(attrs, "aria-label");
+
+    const absOpen = sliceStart + lastBtnOpen;
+    const closePos = html.indexOf("</button>", position);
+    let hasText = !!ariaLabel;
+    if (!hasText && closePos > -1) {
+      const content = html.slice(absOpen, closePos)
+        .replace(/^<button[^>]*>/i, "")
+        .replace(/<svg[\s\S]*?<\/svg>/gi, "")
+        .replace(/<img[^>]*>/gi, "")
+        .replace(/<[^>]+>/g, "")
+        .trim();
+      hasText = content.length > 0;
+    }
+
+    return { element: "button", href: null, hasText };
   }
 
   return null;
@@ -253,18 +313,6 @@ function extractImages(html, context, baseUrl) {
     const ariaHidden = getAttr(attrs, "aria-hidden");
     const ariaLabel = getAttr(attrs, "aria-label");
 
-    // Determine status
-    let status;
-    if (role === "presentation" || role === "none" || ariaHidden === "true") {
-      status = "decorative";
-    } else if (alt === null && ariaLabel === null) {
-      status = "missing";
-    } else if ((alt !== null && alt.trim() === "") && ariaLabel === null) {
-      status = "empty";
-    } else {
-      status = "good";
-    }
-
     // Resolve relative src
     let resolvedSrc = src;
     if (src && !src.startsWith("http") && !src.startsWith("data:")) {
@@ -274,6 +322,19 @@ function extractImages(html, context, baseUrl) {
     }
 
     const interactive = getInteractiveContext(html, position);
+
+    // Determine status
+    let status;
+    if (role === "presentation" || role === "none" || ariaHidden === "true") {
+      status = "decorative";
+    } else if (alt === null && ariaLabel === null) {
+      status = "missing";
+    } else if ((alt !== null && alt.trim() === "") && ariaLabel === null) {
+      // alt="" is correct for decorative images, but a problem inside links/buttons
+      status = interactive ? "empty-interactive" : "decorative";
+    } else {
+      status = "present";
+    }
     const landmark = getLandmark(position, context);
     const nearestHeading = getNearestHeading(position, context);
 
@@ -318,10 +379,23 @@ function extractSvgs(html, context) {
     const titleMatch = fullMatch.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
     const titleText = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, "").trim() : null;
 
+    const interactive = getInteractiveContext(html, position);
+    const hasName = !!(ariaLabel || titleText || ariaLabelledby);
+
     let status;
     let accessibleName = null;
 
-    if (ariaHidden === "true") {
+    if (interactive && interactive.hasText) {
+      // SVG is inside a link/button that already has text — SVG is decorative
+      if (hasName) {
+        // SVG has an accessible name but shouldn't — it's redundant
+        status = "redundant";
+        accessibleName = ariaLabel || titleText || "(via aria-labelledby)";
+      } else {
+        // Correctly decorative (no name, or aria-hidden)
+        status = "decorative";
+      }
+    } else if (ariaHidden === "true") {
       status = "hidden";
     } else if (ariaLabel) {
       status = "good";
@@ -336,7 +410,6 @@ function extractSvgs(html, context) {
       status = "missing";
     }
 
-    const interactive = getInteractiveContext(html, position);
     const landmark = getLandmark(position, context);
     const nearestHeading = getNearestHeading(position, context);
 

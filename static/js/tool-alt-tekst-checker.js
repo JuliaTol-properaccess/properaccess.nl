@@ -102,10 +102,10 @@
   function summarizeImages(s) {
     if (s.imgTotal === 0) return "Geen gevonden";
     var parts = [];
-    if (s.imgGood > 0) parts.push(s.imgGood + " goed");
-    if (s.imgEmpty > 0) parts.push(s.imgEmpty + " leeg");
+    if (s.imgPresent > 0) parts.push(s.imgPresent + " aanwezig");
     if (s.imgMissing > 0) parts.push(s.imgMissing + " ontbreekt");
     if (s.imgDecorative > 0) parts.push(s.imgDecorative + " decoratief");
+    if (s.imgEmptyInteractive > 0) parts.push(s.imgEmptyInteractive + " leeg in link/knop");
     return parts.join(", ");
   }
 
@@ -114,6 +114,8 @@
     var parts = [];
     if (s.svgGood > 0) parts.push(s.svgGood + " goed");
     if (s.svgMissing > 0) parts.push(s.svgMissing + " ontbreekt");
+    if (s.svgDecorative > 0) parts.push(s.svgDecorative + " decoratief");
+    if (s.svgRedundant > 0) parts.push(s.svgRedundant + " overbodig");
     return parts.join(", ");
   }
 
@@ -138,11 +140,11 @@
     html += '<div class="tool-alt__table-wrap"><table class="tool-alt__table">';
 
     if (type === "img") {
-      html += "<thead><tr><th>Status</th><th>Afbeelding</th><th>Alt-tekst</th><th>Locatie</th><th>Context</th></tr></thead>";
+      html += "<thead><tr><th>Afbeelding</th><th>Alt-tekst</th><th>Locatie</th><th>Context</th></tr></thead>";
     } else if (type === "svg") {
-      html += "<thead><tr><th>Status</th><th>Naam</th><th>Locatie</th><th>Context</th></tr></thead>";
+      html += "<thead><tr><th>Naam</th><th>Locatie</th><th>Context</th></tr></thead>";
     } else {
-      html += "<thead><tr><th>Status</th><th>Icoon</th><th>Naam</th><th>Locatie</th><th>Context</th></tr></thead>";
+      html += "<thead><tr><th>Icoon</th><th>Naam</th><th>Locatie</th><th>Context</th></tr></thead>";
     }
 
     html += "<tbody>";
@@ -156,7 +158,6 @@
   }
 
   function renderImageRow(img) {
-    var badge = statusBadge(img.status);
     var altDisplay = renderAltText(img.alt, img.ariaLabel, img.status);
     var location = renderLocation(img.landmark, img.nearestHeading);
     var ctx = renderInteractive(img.interactive);
@@ -169,7 +170,6 @@
     }
 
     return '<tr class="tool-alt__row tool-alt__row--' + img.status + '">' +
-      "<td>" + badge + "</td>" +
       "<td>" + thumb + "</td>" +
       "<td>" + altDisplay + "</td>" +
       "<td>" + location + "</td>" +
@@ -178,13 +178,20 @@
   }
 
   function renderSvgRow(svg) {
-    var badge = statusBadge(svg.status === "hidden" ? "decorative" : svg.status);
-    var name = svg.accessibleName ? escapeHtml(svg.accessibleName) : '<span class="tool-alt__missing-text">Geen naam</span>';
+    var name;
+    if (svg.status === "decorative") {
+      name = '<span class="tool-alt__decorative-text">Decoratief (link/knop heeft al tekst)</span>';
+    } else if (svg.status === "redundant") {
+      name = '<span class="tool-alt__redundant-text">\u201C' + escapeHtml(svg.accessibleName) + '\u201D \u2014 overbodig, link/knop heeft al tekst</span>';
+    } else if (svg.accessibleName) {
+      name = escapeHtml(svg.accessibleName);
+    } else {
+      name = '<span class="tool-alt__missing-text">Geen naam</span>';
+    }
     var location = renderLocation(svg.landmark, svg.nearestHeading);
     var ctx = renderInteractive(svg.interactive);
 
     return '<tr class="tool-alt__row tool-alt__row--' + svg.status + '">' +
-      "<td>" + badge + "</td>" +
       "<td>" + name + "</td>" +
       "<td>" + location + "</td>" +
       "<td>" + ctx + "</td>" +
@@ -192,13 +199,11 @@
   }
 
   function renderIconRow(icon) {
-    var badge = statusBadge(icon.status === "hidden" ? "decorative" : icon.status);
     var name = icon.accessibleName ? escapeHtml(icon.accessibleName) : '<span class="tool-alt__missing-text">Geen naam</span>';
     var location = renderLocation(icon.landmark, icon.nearestHeading);
     var ctx = renderInteractive(icon.interactive);
 
     return '<tr class="tool-alt__row tool-alt__row--' + icon.status + '">' +
-      "<td>" + badge + "</td>" +
       "<td><code>" + escapeHtml(icon.iconName) + "</code></td>" +
       "<td>" + name + "</td>" +
       "<td>" + location + "</td>" +
@@ -210,31 +215,20 @@
   // Helpers
   // ============================================================
 
-  function statusBadge(status) {
-    var labels = {
-      good: "Goed",
-      empty: "Leeg",
-      missing: "Ontbreekt",
-      decorative: "Decoratief"
-    };
-    var label = labels[status] || status;
-    return '<span class="tool-alt__badge tool-alt__badge--' + status + '">' + label + "</span>";
-  }
-
   function renderAltText(alt, ariaLabel, status) {
     if (status === "decorative") {
-      return '<span class="tool-alt__decorative-text">Gemarkeerd als decoratief</span>';
+      return '<span class="tool-alt__decorative-text">alt="" (decoratief)</span>';
     }
     if (status === "missing") {
       return '<span class="tool-alt__missing-text">Alt-attribuut ontbreekt</span>';
     }
-    if (status === "empty") {
+    if (status === "empty-interactive") {
       if (ariaLabel) {
         return '<span class="tool-alt__alt-value">aria-label: \u201C' + escapeHtml(ariaLabel) + '\u201D</span>';
       }
-      return '<span class="tool-alt__empty-text">alt=""</span>';
+      return '<span class="tool-alt__empty-text">alt="" (leeg in interactief element)</span>';
     }
-    // Good
+    // Present — alt text exists, needs manual review
     var text = alt !== null ? alt : ariaLabel;
     if (ariaLabel && alt === null) {
       return '<span class="tool-alt__alt-value">aria-label: \u201C' + escapeHtml(ariaLabel) + '\u201D</span>';
@@ -244,8 +238,18 @@
 
   function renderLocation(landmark, heading) {
     var html = "";
-    if (landmark && landmark !== "onbekend") {
-      html += '<span class="tool-alt__landmark">&lt;' + escapeHtml(landmark) + "&gt;</span>";
+    var tag = landmark && landmark.tag ? landmark.tag : null;
+    var label = landmark && landmark.label ? landmark.label : null;
+    var id = landmark && landmark.id ? landmark.id : null;
+
+    if (tag && tag !== "onbekend") {
+      html += '<span class="tool-alt__landmark">&lt;' + escapeHtml(tag) + "&gt;";
+      if (label) {
+        html += ' <span class="tool-alt__landmark-label">"' + escapeHtml(truncate(label, 30)) + '"</span>';
+      } else if (id) {
+        html += ' <span class="tool-alt__landmark-id">#' + escapeHtml(id) + "</span>";
+      }
+      html += "</span>";
     }
     if (heading) {
       html += '<span class="tool-alt__heading">' + escapeHtml(truncate(heading, 40)) + "</span>";

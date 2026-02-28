@@ -5219,7 +5219,23 @@ html.dark .tool-alt__table td {
   background: rgba(163, 13, 75, 0.04);
 }
 
+.tool-alt__row--empty-interactive td {
+  background: rgba(217, 119, 6, 0.04);
+}
+
+.tool-alt__row--redundant td {
+  background: rgba(163, 13, 75, 0.04);
+}
+
 html.dark .tool-alt__row--missing td {
+  background: rgba(163, 13, 75, 0.1);
+}
+
+html.dark .tool-alt__row--empty-interactive td {
+  background: rgba(217, 119, 6, 0.1);
+}
+
+html.dark .tool-alt__row--redundant td {
   background: rgba(163, 13, 75, 0.1);
 }
 
@@ -5234,14 +5250,19 @@ html.dark .tool-alt__row--missing td {
   white-space: nowrap;
 }
 
+.tool-alt__badge--present {
+  background: #e0f2fe;
+  color: #0c4a6e;
+}
+
 .tool-alt__badge--good {
   background: #dcfce7;
   color: #166534;
 }
 
-.tool-alt__badge--empty {
-  background: #fef3c7;
-  color: #92400e;
+.tool-alt__badge--hidden {
+  background: #f3f4f6;
+  color: #6b7280;
 }
 
 .tool-alt__badge--missing {
@@ -5254,14 +5275,29 @@ html.dark .tool-alt__row--missing td {
   color: #6b7280;
 }
 
+.tool-alt__badge--empty-interactive {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.tool-alt__badge--redundant {
+  background: #ffe4e6;
+  color: #9f1239;
+}
+
+html.dark .tool-alt__badge--present {
+  background: rgba(14, 165, 233, 0.2);
+  color: #7dd3fc;
+}
+
 html.dark .tool-alt__badge--good {
   background: rgba(22, 163, 74, 0.2);
   color: #86efac;
 }
 
-html.dark .tool-alt__badge--empty {
-  background: rgba(217, 119, 6, 0.2);
-  color: #fcd34d;
+html.dark .tool-alt__badge--hidden {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
 }
 
 html.dark .tool-alt__badge--missing {
@@ -5272,6 +5308,16 @@ html.dark .tool-alt__badge--missing {
 html.dark .tool-alt__badge--decorative {
   background: rgba(107, 114, 128, 0.2);
   color: #9ca3af;
+}
+
+html.dark .tool-alt__badge--empty-interactive {
+  background: rgba(217, 119, 6, 0.2);
+  color: #fcd34d;
+}
+
+html.dark .tool-alt__badge--redundant {
+  background: rgba(163, 13, 75, 0.2);
+  color: #fda4af;
 }
 
 /* Thumbnail */
@@ -5339,6 +5385,16 @@ html.dark .tool-alt__decorative-text {
   color: #9ca3af;
 }
 
+.tool-alt__redundant-text {
+  color: #A30D4B;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+html.dark .tool-alt__redundant-text {
+  color: #fda4af;
+}
+
 /* Location */
 
 .tool-alt__landmark {
@@ -5355,6 +5411,12 @@ html.dark .tool-alt__decorative-text {
 html.dark .tool-alt__landmark {
   background: rgba(107, 114, 128, 0.2);
   color: #d1d5db;
+}
+
+.tool-alt__landmark-label,
+.tool-alt__landmark-id {
+  font-style: italic;
+  opacity: 0.8;
 }
 
 .tool-alt__heading {
