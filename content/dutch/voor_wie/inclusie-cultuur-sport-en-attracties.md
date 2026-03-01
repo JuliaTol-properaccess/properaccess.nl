@@ -3,67 +3,211 @@ title: "Cultuur, sport en attracties"
 date: 2025-04-02
 slug: "inclusie-cultuur-sport-en-attracties"
 url: "/inclusie-cultuur-sport-en-attracties/"
-layout: "second-page"
-description: "Professionele WCAG-audits en begeleiding voor musea, theaters, sportorganisaties en attracties. Praktisch, grondig en gericht op echte digitale toegankelijkheid."
+layout: sectie
+description: "Je museum heeft een rolstoellift, je theater een ringleiding. Maar is je website ook toegankelijk? Proper Access audits voor musea, theaters, festivals en sportorganisaties."
 keywords:
   - wcag audit culturele sector
-  - digitale toegankelijkheid audit
-  - toegankelijkheidsaudit website
-
-# Banner
+  - digitale toegankelijkheid museum
+  - toegankelijkheid theater festival
+  - EAA culturele instellingen
+  - WCAG audit sport attracties
+sectie_layout: true
 banner:
-  title: "Digitale toegankelijkheid in de culturele sector"
-  content: "Musea, theaters, erfgoedinstellingen, festivals, sportorganisaties en attractieparken hebben allemaal **één missie:** mensen verwonderen, raken en verbinden. Dat lukt pas écht als je ook digitaal toegankelijk bent voor iedereen. Bij Proper Access begeleiden we culturele instellingen bij het toegankelijk maken van hun websites, apps en digitale content. We geloven in échte oplossingen, persoonlijke begeleiding en kennisdeling met vakgenoten."
+  title: "Je verwelkomt iedereen — behalve op je website"
+  content: "Je museum heeft een rolstoellift, je theater een ringleiding, je festival duidelijke bewegwijzering. Maar iemand die blind is kan geen kaartjes kopen op je site. Iemand die geen muis gebruikt komt niet door je evenementenkalender. De inclusie stopt bij je voordeur — en dat hoeft niet."
   image: "/images/museum.webp"
   button:
     enable: true
-    label: "Kennis maken?"
-    link: "https://properaccess.nl/contact"
-
-# Features
-features:
-  - title: "Toegankelijkheid is meer dan een vinkje"
-    image: "/images/rapport.webp"
-    content: "De culturele sector wil het goed doen. Maar dat betekent niet: snel een verklaring publiceren. Het betekent: digitale inclusie **begrijpen, uitvoeren en vasthouden**. We bieden geen standaardrapporten, maar **grondige audits en begeleidingstrajecten**, met aandacht voor inhoud, techniek en organisatie."
-    bulletpoints:
-      - "900+ audits uitgevoerd sinds 2019"
-      - "Volledige audit van websites én apps"
-      - "Testen van apps in context, zoals op locatie in het museum"
-      - "Heldere rapporten met oplossingen en concrete aanbevelingen"
-      - "Rapportpresentatie aan team of stakeholders"
-      - "Mogelijkheid om vragen te stellen (tijdens én na het traject)"
-      - "Hercontrole op punten die zijn aangepast"
-    button:
-      enable: false
-      label: "Vraag een offerte aan"
-      link: "https://properaccess.nl/contact"
-  - title: "De EAA in de culturele sector"
-    content: "Musea, theaters, erfgoedinstellingen, festivals, sportorganisaties en attractieparken hebben allemaal één missie: mensen verwonderen, raken en verbinden. Dat lukt pas écht als je ook digitaal toegankelijk bent voor iedereen. We geloven in échte oplossingen, persoonlijke begeleiding en kennisdeling met vakgenoten."
-    image: "/images/quickscan.webp"
-    button:
-      enable: false
-      label: "Neem contact op"
-      link: "https://properaccess.nl/contact"
-
-  - title: "Wij zijn het (op één na) beste auditbureau van Nederland!"
-    content: "JHoe kies je de beste partner voor zoiets belangrijk en omvangrijk als digitale toegankelijkheid? Ervaring, reputatie, continuïteit en certificering zijn de belangrijkste argumenten."
-    image: "/images/logos.webp"
-    button:
-      enable: false
-      label: "Neem contact op"
-      link: "https://properaccess.nl/contact"
-faqs:
-  - question: Waarom is digitale toegankelijkheid belangrijk voor culturele instellingen?
-    answer: Culturele instellingen willen iedereen bereiken — ook mensen met een beperking. Digitale toegankelijkheid zorgt ervoor dat je website, programma, tickets en content voor álle bezoekers bruikbaar zijn.
-  - question: Toetsen jullie ook ticketingsystemen, agenda’s en reserveringsmodules?
-    answer: Ja. Wij testen o.a. ticketingflows, evenementkalenders, formuliermodules en interactieve elementen. Juist deze onderdelen zijn belangrijk voor laagdrempelige toegang tot je programma.
-  - question: Kunnen jullie ook audiovisuele content of digitale collecties beoordelen?
-    answer: Zeker. We toetsen video’s op ondertiteling, transcriptie, audiodescriptie en bediening met toetsenbord of screenreader. Ook digitale collecties (bijv. in een museum) kunnen we op toegankelijkheid scannen.
-  - question: Is het mogelijk om toegankelijkheid te verbeteren zonder direct te herontwerpen?
-    answer: Ja. We geven praktische aanbevelingen waarmee je je huidige website of platform stap voor stap kunt verbeteren — zonder direct een volledig redesign.
-  - question: Helpen jullie ook bij het opstellen van beleid rond digitale toegankelijkheid?
-    answer: Ja. We kunnen helpen bij het opstellen van een toegankelijkheidsbeleid, actieplan of inclusiviteitsparagraaf voor fondsen, stakeholders of verantwoording.
-  - question: Kunnen jullie trainingen geven aan onze medewerkers?
-    answer: Absoluut. We bieden praktische workshops en trainingen voor webredacties, programmeurs, marketeers, ontwerpers of publieksmedewerkers.
+    label: "Laat je website onderzoeken"
+    link: "/contact/"
 ---
 
+{{< section-full title="Digitale toegankelijkheid is geen nice-to-have meer" >}}
+
+De European Accessibility Act (EAA) is sinds juni 2025 van kracht. Organisaties die diensten aanbieden aan het publiek — waaronder musea, theaters, festivals en sportorganisaties — moeten hun digitale kanalen laten voldoen aan WCAG 2.2 AA.
+
+Maar het gaat niet alleen om de wet.
+
+{{< /section-full >}}
+
+{{< section-cards title="" columns="3" bg="dark" >}}
+{{< section-card title="Je sluit bezoekers uit zonder het te weten" >}}
+
+In Nederland hebben ca. 4,4 miljoen mensen een beperking. Permanent, tijdelijk of situationeel. Als je ticketing niet werkt met toetsenbord, als je programma alleen als afbeelding online staat, als je video's geen ondertiteling hebben — dan haken die bezoekers af. Zonder dat jij het ziet.
+
+{{< /section-card >}}
+{{< section-card title="Subsidieverleners kijken mee" >}}
+
+Fondsen en overheden vragen steeds vaker naar je toegankelijkheidsbeleid. Niet alleen fysiek, maar ook digitaal. Een ontoegankelijke website kan je subsidieaanvraag verzwakken.
+
+{{< /section-card >}}
+{{< section-card title="Reputatie weegt zwaarder dan een boete" >}}
+
+Ja, er zijn boetes bij niet-naleving van de EAA. Maar het echte risico is het signaal: "We zeggen dat we voor iedereen open zijn, maar digitaal zijn sommigen niet welkom." Dat past niet bij wat je als culturele instelling uitdraagt.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-cta >}}
+
+Benieuwd hoe jouw website scoort? [Neem contact op →](/contact/)
+
+{{< /section-cta >}}
+
+{{< section-cards title="Dit zien we bij elke audit in jullie sector" columns="2" bg="light" >}}
+{{< section-card title="Ticketing die niet werkt zonder muis" >}}
+
+Je ticketingsysteem komt vaak van een externe partij. Maar jij bent verantwoordelijk voor de toegankelijkheid van je hele site — ook die widget. Wat we tegenkomen: dropdowns voor datumselectie die niet reageren op Tab, formuliervelden zonder labels, en een checkout waar een screenreader niets mee kan.
+
+{{< /section-card >}}
+{{< section-card title="Evenementenkalenders die technisch onbruikbaar zijn" >}}
+
+Interactieve kalenders zijn notorisch lastig. Ze werken niet met toetsenbord, datumkiezers hebben geen tekstalternatief, en pop-ups sluiten niet met Escape. Je bezoeker kan je programma niet bekijken.
+
+{{< /section-card >}}
+{{< section-card title="Beeldmateriaal zonder tekstalternatief" >}}
+
+Jullie werken met prachtige foto's, video's en visuals. Een screenreader ziet alleen een lege ruimte als er geen alt-tekst is. Line-ups als afbeelding, video's zonder ondertiteling, PDF-programmaboekjes die niet toegankelijk zijn — het komt allemaal voor.
+
+{{< /section-card >}}
+{{< section-card title="Digitale collecties die niet doorzoekbaar zijn" >}}
+
+Musea en erfgoedinstellingen zetten hun collecties steeds vaker online. Maar de zoekfunctie werkt niet met toetsenbord, filters hebben geen labels, en kunstwerken missen beschrijvende alt-teksten. Je digitale museumbezoek is niet voor iedereen.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-cta >}}
+
+Herken je een van deze problemen? [Laat het onderzoeken →](/contact/)
+
+{{< /section-cta >}}
+
+{{< offerte-section title="Audits met kennis van jullie sector" >}}
+
+Een museum heeft andere uitdagingen dan een theater, en een festival andere dan een sportorganisatie. Wij kennen die verschillen en passen onze aanpak aan.
+
+- **We testen het hele bezoekerspad** — niet alleen je homepage. We doorlopen alles wat een bezoeker doet: programma bekijken, kaartjes kopen, collectie doorzoeken, video's bekijken, nieuwsbrief aanmelden, contact opnemen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
+- **Je krijgt concrete oplossingen per element** — per bevinding een screenshot, een uitleg van het probleem, de impact op je bezoekers en een concrete oplossing in code.
+- **We denken mee over externe tools** — ticketingplatform, kalenderwidget, CMS — je bent vaak afhankelijk van externe partijen. We helpen je met die partijen in gesprek te gaan, of geven alternatieven als iets echt niet toegankelijk te krijgen is.
+- **Je kunt onbeperkt vragen stellen** — het rapport is het begin. Je team gaat aan de slag met de verbeteringen en er komen vragen. Die beantwoorden we — via e-mail, telefoon of videocall, zonder meerkosten.
+
+{{< /offerte-section >}}
+
+{{< section-cards title="Hoe het werkt" columns="3" bg="dark" >}}
+{{< section-card title="1. Kennismaking" >}}
+
+We bespreken je situatie: welke onderdelen van je site zijn het belangrijkst? Welke externe tools gebruik je? Welke deadlines heb je? Op basis daarvan geven we een indicatie van de scope en kosten.
+
+{{< /section-card >}}
+{{< section-card title="2. Audit" >}}
+
+We toetsen je site handmatig op alle 55 WCAG 2.2 AA-succescriteria. Met meerdere browsers, screenreaders en andere hulpsoftware. Geautomatiseerde tools zijn een startpunt — ze detecteren maximaal 30-40% van de problemen.
+
+{{< /section-card >}}
+{{< section-card title="3. Rapport" >}}
+
+Je ontvangt een rapport per pagina, per element. Met screenshots, code-voorbeelden, impact-niveaus en een CSV-export voor je ticketsysteem.
+
+{{< /section-card >}}
+{{< section-card title="4. Bespreking" >}}
+
+We lopen het rapport samen door: wat heeft prioriteit, wat zijn quick wins, waar zit de meeste impact? Optioneel presenteren we het aan je volledige team of stakeholders.
+
+{{< /section-card >}}
+{{< section-card title="5. Vragen stellen" >}}
+
+Je team gaat aan de slag. Vragen die onderweg opkomen beantwoorden we — zolang als nodig.
+
+{{< /section-card >}}
+{{< section-card title="6. Hertoets" >}}
+
+Na het doorvoeren van de verbeteringen controleren we of alles correct is opgelost. Je krijgt een bijgewerkt rapport met de status van elke bevinding.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< offerte-section title="Welke dienst past bij jouw situatie?" >}}
+
+We hebben drie diensten. Welke past, hangt af van waar je staat.
+
+|                 | WCAG-audit | Strippenkaart | Abonnement |
+| --------------- | ---------- | ------------- | ---------- |
+| **Wanneer**     | Je wilt een compleet beeld van alle problemen op je site | Je hebt af en toe een vraag, een check of een review nodig | Je wilt doorlopende ondersteuning bij elke release |
+| **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Structureel meekijken bij alles |
+| **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Continue beschikbaarheid + periodieke checks |
+| **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties die structureel willen borgen |
+| **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
+
+[Meer over de WCAG-audit →](/audit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/abonnement/)
+
+{{< /offerte-section >}}
+
+{{< section-cards title="Waarom musea en culturele instellingen voor ons kiezen" subtitle="Elk bureau kan een WCAG-audit uitvoeren. Het verschil zit in wat er daarna gebeurt." image="/images/logos.webp" columns="2" bg="light" >}}
+{{< section-card title="Ervaring met de grootste musea van Nederland" >}}
+
+We hebben gewerkt met de grootste musea en culturele instellingen van het land. We kennen de uitdagingen die specifiek zijn voor jullie sector: ticketingsystemen van externe partijen, interactieve collecties, meertalige content, evenementenkalenders. Dat betekent dat we niet bij nul beginnen — we weten waar we moeten kijken.
+
+{{< /section-card >}}
+{{< section-card title="Bevindingen in de taal van de lezer" >}}
+
+Eén rapport, drie doelgroepen. Je management leest de impact en prioritering. Je webredactie ziet wat er aan de content moet veranderen. Je developers krijgen code-voorbeelden en technische oplossingen. Iedereen leest wat relevant is, zonder het jargon van de ander.
+
+{{< /section-card >}}
+{{< section-card title="Begeleiding tot het écht opgelost is" >}}
+
+Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het daarna pas. We begeleiden je team door het hele verbeterproces: meedenken over oplossingsrichtingen, sparren met je developers, en helpen bij het prioriteren. Niet als upsell — dat zit erin.
+
+{{< /section-card >}}
+{{< section-card title="Onbeperkt vragen stellen — over alles" >}}
+
+Niet alleen over de bevindingen uit het rapport. Je kunt bij ons terecht met alle vragen rondom toegankelijkheid: "Hoe gaan we om met onze ticketleverancier?", "Is deze nieuwe feature toegankelijk?", "Wat moeten we meenemen in de aanbesteding?" Via e-mail, telefoon of videocall, zonder meerkosten.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Vragen die we vaak krijgen" >}}
+
+<details class="faq-item">
+<summary class="faq-question">Toetsen jullie ook ticketingsystemen en kalenderwidgets?</summary>
+<div class="faq-answer">
+<p>Ja. We testen het complete bezoekerspad: van programma bekijken tot kaartjes kopen. Externe widgets nemen we mee. Als een widget niet toegankelijk is, geven we advies over hoe je met de leverancier in gesprek kunt gaan — of we zoeken een alternatief.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Kunnen jullie video's en digitale collecties beoordelen?</summary>
+<div class="faq-answer">
+<p>Ja. We controleren video's op ondertiteling, audiodescriptie en toegankelijke mediaspelers. Digitale collecties beoordelen we op zoekfunctionaliteit, toetsenbordnavigatie en beschrijvende alt-teksten.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Is het mogelijk om te verbeteren zonder een volledig redesign?</summary>
+<div class="faq-answer">
+<p>Bijna altijd. De meeste problemen zijn op te lossen met gerichte aanpassingen: labels toevoegen, contrast verhogen, alt-teksten schrijven, toetsenbordnavigatie repareren. Een volledig redesign is zelden nodig.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Helpen jullie ook bij het schrijven van toegankelijkheidsbeleid?</summary>
+<div class="faq-answer">
+<p>Ja. We hebben een online tool gemaakt om je te helpen een toegankelijkheidsverklaring (verplicht) op te stellen en kunnen meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Wie doet het werk?</summary>
+<div class="faq-answer">
+<p>Een senior auditor. Dezelfde specialist die ook onze volledige audits uitvoert. Je werkt direct met de inhoud, niet via een account manager.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Wat kost een audit?</summary>
+<div class="faq-answer">
+<p>Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie.</p>
+</div>
+</details>
+
+{{< /section-full >}}

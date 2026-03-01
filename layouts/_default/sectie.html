@@ -1,5 +1,46 @@
 {{ define "main" }}
   <!-- Hero -->
+  {{ if .Params.banner }}
+  {{/* Banner-modus: gecentreerde hero met afbeelding (zoals second-page) */}}
+  {{ with .Params.banner }}
+  <section class="section pt-14">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-7 md:col-9 mb-8 text-center">
+          <h1 class="mb-4 text-h3 lg:text-h1">
+            {{ .title | markdownify }}
+          </h1>
+          <p class="mb-8 text-lg">
+            {{ .content | markdownify }}
+          </p>
+          {{ with .button }}
+            {{ if .enable }}
+              <div>
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+                <span class="ml-4 inline-block mt-3 lg:mt-0"> of bel 085 5055 890</span>
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ with .image }}
+        <div class="col-12">
+          {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ else }}
+  {{/* Offerte-modus: donkere hero met optionele metadata */}}
   <section class="offerte-hero">
     <div class="container">
       <div class="offerte-hero__grid">
@@ -11,7 +52,6 @@
         </div>
         {{ if or .Params.offerte_voor .Params.website_app .Params.url_klant .Params.datum_offerte .Params.offertenummer .Params.hero_meta }}
         <div class="offerte-hero__meta">
-          {{/* Offerte-specifieke velden */}}
           {{ with .Params.offerte_voor }}
           <div class="offerte-hero__meta-item">
             <span class="offerte-hero__meta-label">Opgesteld voor</span>
@@ -42,7 +82,6 @@
             <span class="offerte-hero__meta-value">{{ . }}</span>
           </div>
           {{ end }}
-          {{/* Generieke metadata via hero_meta lijst */}}
           {{ range .Params.hero_meta }}
           <div class="offerte-hero__meta-item">
             <span class="offerte-hero__meta-label">{{ .label }}</span>
@@ -54,6 +93,7 @@
       </div>
     </div>
   </section>
+  {{ end }}
 
   <!-- Content -->
   {{ if .Params.sectie_layout }}
@@ -71,4 +111,8 @@
     </div>
   </article>
   {{ end }}
+
+  <!-- Call to actions -->
+  {{ partial "call-to-action.html" . }}
+  <!-- /Call to actions -->
 {{ end }}

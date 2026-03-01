@@ -247,6 +247,8 @@ html.dark .offerte-section--light {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -769,7 +771,7 @@ html.dark .section-full--light {
   font-weight: 700;
   color: #1F2937;
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 html.dark .section-full__title {
@@ -846,16 +848,85 @@ html.dark .section-cards--light {
   background-color: var(--color-darkmode-body);
 }
 
+.section-cards--dark {
+  background-color: #1F2937;
+}
+
+.section-cards--dark .section-cards__title {
+  color: #ffffff;
+}
+
+.section-cards--light .section-cards__subtitle {
+  color: #4b5563;
+}
+
+html.dark .section-cards--dark {
+  background-color: #111827;
+}
+
+.section-cards__header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.section-cards__header--with-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-cards__header--with-image {
+    flex-direction: row;
+    text-align: left;
+    gap: 2.5rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.section-cards__header-image {
+  flex-shrink: 0;
+}
+
+.section-cards__header-image img {
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+}
+
 .section-cards__title {
   font-size: 1.75rem;
   font-weight: 700;
   color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+.section-cards__header:not(.section-cards__header--with-image) .section-cards__title {
   margin-bottom: 2rem;
   text-align: center;
 }
 
+.section-cards__subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.section-cards--dark .section-cards__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 html.dark .section-cards__title {
   color: var(--color-darkmode-text-dark);
+}
+
+html.dark .section-cards__subtitle {
+  color: var(--color-darkmode-text-light);
 }
 
 .section-cards__grid {
@@ -932,7 +1003,7 @@ html.dark .section-card__content {
 
 .section-cta {
   padding: 4rem 0;
-  background-color: #1F2937;
+  background-color: #ffffff;
 }
 
 .section-cta__inner {
@@ -944,14 +1015,14 @@ html.dark .section-card__content {
 .section-cta__title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #1F2937;
   margin-bottom: 1rem;
 }
 
 .section-cta__content {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.85);
+  color: #1F2937;
 }
 
 .section-cta__content p {
@@ -984,6 +1055,14 @@ html.dark .section-card__content {
   text-align: center;
 }
 
+.section-cta--with-image .section-cta__title {
+  font-size: 2rem;
+}
+
+.section-cta--with-image .section-cta__content {
+  font-size: 1.15rem;
+}
+
 @media (min-width: 768px) {
   .section-cta--with-image .section-cta__inner {
     flex-direction: row;
@@ -997,11 +1076,10 @@ html.dark .section-card__content {
 }
 
 .section-cta__image img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 /* --- section-faq: FAQ accordion --- */
