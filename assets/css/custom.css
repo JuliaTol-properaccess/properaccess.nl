@@ -3250,6 +3250,82 @@ html.dark .tool-card__cta-link {
 .hp-narrow-sm  { max-width: 40rem; margin-inline: auto; }
 
 
+/* ─── Footer opt-in + IAAP ─── */
+
+.footer-optin {
+  background-color: #1F2937;
+  padding: 4rem 0;
+}
+
+.footer-optin__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer-optin__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}
+
+.footer-optin__text {
+  flex: 1.2;
+}
+
+.footer-optin__form {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.footer-optin__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer-optin__desc {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.footer-optin__form-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+
+.footer-optin__iaap {
+  flex-shrink: 0;
+  text-align: center;
+  max-width: 180px;
+}
+
+@media (min-width: 768px) {
+  .footer-optin__iaap {
+    text-align: left;
+    padding-top: 0.5rem;
+  }
+}
+
+.footer-optin__iaap-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+
+
 /* ─── Homepage container ─── */
 
 .hp-hero .container,
