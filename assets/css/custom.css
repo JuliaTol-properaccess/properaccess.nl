@@ -3250,6 +3250,20 @@ html.dark .tool-card__cta-link {
 .hp-narrow-sm  { max-width: 40rem; margin-inline: auto; }
 
 
+/* ─── Homepage container ─── */
+
+.hp-hero .container,
+.hp-diff .container,
+.hp-reports .container,
+.hp-usps .container,
+.hp-tools .container,
+.hp-services .container,
+.hp-segments .container,
+.hp-articles .container,
+.hp-faq .container {
+  max-width: 1100px;
+}
+
 /* ─── Hero ─── */
 
 .hp-hero {
