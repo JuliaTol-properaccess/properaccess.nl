@@ -27,7 +27,8 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
-ID = 'G-C59F61Z6LN' # see https://gohugo.io/templates/internal/#configure-google-analytics
+# Analytics wordt via GTM afgehandeld (GTM-PRMNGCGW)
+ID = ''
 
 
 ########################## Permalinks ############################
