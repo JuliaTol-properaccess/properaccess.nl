@@ -33,24 +33,13 @@ Op het eerste gezicht niks mis mee. Visueel werkt het perfect. Maar voor iemand 
 
 Laten we uitzoeken wat hier fout gaat en hoe je het wél goed doet.
 
-## De problemen met aria-hidden op zichtbare tekst
-
-Laten we de code nog een keer bekijken:
-
-```html
-<a aria-label="Switch language">
-  <span aria-hidden="">EN</span>
-  <span aria-hidden="true">NL</span>
-</a>
-```
-
 ### Probleem 1: Spraakgestuurde gebruikers kunnen het niet activeren
 
 Dit is waar **SC 2.5.3 Label in Name (niveau A)** om de hoek komt kijken. Die regel zegt: **als er zichtbare tekst op een knop of link staat, moet die tekst onderdeel zijn van de toegankelijke naam**.
 
 Waarom? Mensen die spraaksturing gebruiken (denk aan Dragon NaturallySpeaking) navigeren door te zeggen wat ze zien. Als ze "EN" zien staan, zeggen ze "klik EN". De software zoekt dan naar een element met "EN" in de toegankelijke naam.
 
-Maar omdat `aria-hidden` de tekst verbergt voor hulptechnologie, is er geen match. De gebruiker kan het element niet activeren door de zichtbare tekst te zeggen.
+Maar omdat `aria-label` de tekst van beide span-elementen overschrijft, is er geen match. De gebruiker kan het element niet activeren door de zichtbare tekst te zeggen.
 
 ✅ Wel toegankelijk: zichtbare tekst = "EN", toegankelijke naam = "English (EN)"  
 ⚠️ Niet toegankelijk: zichtbare tekst = "EN" of "NL", toegankelijke naam = "Switch language"
@@ -59,9 +48,9 @@ Maar omdat `aria-hidden` de tekst verbergt voor hulptechnologie, is er geen matc
 
 Stel, je bent op de Nederlandse versie van de site. Visueel zie je misschien een sliding indicator bij "NL". Maar een schermlezer-gebruiker weet niet welke taal momenteel actief is. De link heeft geen state die dat aangeeft.
 
-Dit raakt weer aan **SC 4.1.2**: de "Value" — de huidige staat — moet programmatisch bepaalbaar zijn.
+Dit raakt aan **SC 4.1.2**: de "Value" — de huidige staat — moet programmatisch bepaalbaar zijn.
 
-## Oplossing 1: Eén link met een beter aria-label
+## Snelle oplossing: Eén link met een beter aria-label
 
 De snelste fix? Gebruik een aria-label dat de zichtbare tekst **bevat** en geef context:
 
@@ -76,8 +65,10 @@ Het aria-label moet dynamisch veranderen wanneer een andere taal is geselecteerd
 
 Let op:
 
-- De spans hebben **geen** `aria-hidden` meer. `Aria-label` overschrijft deze span-elementen.
-- Het aria-label bevat "EN" (de zichtbare tekst) ✅
+- De spans hebben **geen** `aria-hidden` meer. `Aria-label` overschrijft deze span-elementen anyway.
+- Het aria-label bevat "EN" (de zichtbare tekst)
+
+Dit is lang niet de enige oplossing!
 
 ### Voordeel
 
