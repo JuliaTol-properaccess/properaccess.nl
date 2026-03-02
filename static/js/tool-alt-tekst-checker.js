@@ -141,6 +141,15 @@
     for (var l = 0; l < ariaEls.length; l++) {
       ariaEls[l].setAttribute("aria-label", t(ariaEls[l].getAttribute("data-i18n-aria")));
     }
+    // Set lang attribute on tool container for screen readers
+    var container = document.querySelector(".tool-container");
+    if (container) {
+      if (currentLang === "nl") {
+        container.removeAttribute("lang");
+      } else {
+        container.setAttribute("lang", currentLang);
+      }
+    }
   }
 
   function updateLangToggle() {
