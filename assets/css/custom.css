@@ -4472,6 +4472,64 @@ html.dark .tool-aria__empty { color: #9ca3af; }
    TOOL: PDF TOEGANKELIJKHEIDSCHECKER
    ================================================== */
 
+/* Header with language toggle */
+
+.tool-pdf__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tool-pdf__lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: #f5f5f5;
+  border: 1px solid #d1d5db;
+  border-radius: 1.5rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.tool-pdf__lang-btn:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+}
+
+.tool-pdf__lang-opt {
+  display: inline-block;
+  padding: 0.3rem 0.65rem;
+  border-radius: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tool-pdf__lang-opt--active {
+  background: #1F2937;
+  color: #fff;
+}
+
+html.dark .tool-pdf__lang-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .tool-pdf__lang-opt {
+  color: var(--color-darkmode-text);
+}
+
+html.dark .tool-pdf__lang-opt--active {
+  background: #A30D4B;
+  color: #fff;
+}
+
 /* Password gate */
 
 .tool-pdf__gate {

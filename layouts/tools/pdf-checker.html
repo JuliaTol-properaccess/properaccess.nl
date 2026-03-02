@@ -2,34 +2,40 @@
 <section class="section pt-14">
   <div class="tool-container">
 
-    <h1 class="mb-2">{{ .Title }} <span class="tool-pdf__beta">Beta</span></h1>
+    <div class="tool-pdf__header">
+      <h1 class="mb-2"><span data-i18n="toolTitle">{{ .Title }}</span> <span class="tool-pdf__beta">Beta</span></h1>
+      <button type="button" class="tool-pdf__lang-btn" id="langToggle" aria-label="Switch to English">
+        <span class="tool-pdf__lang-opt tool-pdf__lang-opt--active" id="langOptNL">NL</span>
+        <span class="tool-pdf__lang-opt" id="langOptEN">EN</span>
+      </button>
+    </div>
 
     <!-- Password gate -->
     <div class="tool-pdf__gate" id="passwordGate">
-      <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <p class="tool-pdf__gate-text" data-i18n="gateText">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
       <form class="tool-pdf__gate-form" id="passwordForm">
-        <label for="gatePassword" class="sr-only">Wachtwoord</label>
-        <input type="password" id="gatePassword" class="tool-pdf__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
-        <button type="submit" class="tool-pdf__gate-btn">Toegang</button>
+        <label for="gatePassword" class="sr-only" data-i18n="gatePasswordLabel">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" data-i18n-ph="gatePasswordLabel" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn" data-i18n="gateBtn">Toegang</button>
       </form>
-      <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
+      <p class="tool-pdf__gate-error" id="gateError" hidden data-i18n="gateError">Onjuist wachtwoord. Probeer het opnieuw.</p>
     </div>
 
     <!-- Tool content (hidden until authenticated) -->
     <div id="toolContent" hidden>
-      <p class="tool-pdf__intro">
+      <p class="tool-pdf__intro" data-i18n="intro">
         Upload een PDF-bestand om het automatisch te laten controleren op veelvoorkomende
         toegankelijkheidsproblemen. 100% gemaakt in Nederland, volledig in je browser &mdash;
         je bestand wordt niet verstuurd en nergens opgeslagen.
       </p>
 
       <ol class="tool-pdf__steps">
-        <li>Kies of sleep een PDF-bestand</li>
-        <li>Bekijk en exporteer de gevonden problemen met concrete oplossingen</li>
+        <li data-i18n="step1">Kies of sleep een PDF-bestand</li>
+        <li data-i18n="step2">Bekijk en exporteer de gevonden problemen met concrete oplossingen</li>
       </ol>
 
       <!-- Upload zone -->
-      <div class="tool-pdf__upload" id="uploadZone" role="button" tabindex="0" aria-label="Sleep een PDF hierheen of klik om te uploaden">
+      <div class="tool-pdf__upload" id="uploadZone" role="button" tabindex="0" data-i18n-aria="uploadAriaLabel" aria-label="Sleep een PDF hierheen of klik om te uploaden">
       <div class="tool-pdf__upload-content">
         <svg class="tool-pdf__upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -37,9 +43,9 @@
           <line x1="12" y1="18" x2="12" y2="12"/>
           <polyline points="9 15 12 12 15 15"/>
         </svg>
-        <p class="tool-pdf__upload-text">Sleep een PDF hierheen</p>
-        <p class="tool-pdf__upload-sub">of</p>
-        <span class="tool-pdf__upload-btn">Kies een bestand</span>
+        <p class="tool-pdf__upload-text" data-i18n="uploadText">Sleep een PDF hierheen</p>
+        <p class="tool-pdf__upload-sub" data-i18n="uploadOr">of</p>
+        <span class="tool-pdf__upload-btn" data-i18n="uploadBtn">Kies een bestand</span>
         <input type="file" id="pdfFile" accept=".pdf,application/pdf" class="sr-only">
       </div>
     </div>
@@ -53,7 +59,7 @@
       <div class="tool-pdf__progress-bar-wrap">
         <div class="tool-pdf__progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <p class="tool-pdf__progress-text" id="progressText" aria-live="polite">Bezig met laden...</p>
+      <p class="tool-pdf__progress-text" id="progressText" aria-live="polite" data-i18n="loading">Bezig met laden...</p>
     </div>
 
     <!-- Results -->
@@ -63,8 +69,8 @@
 
       <!-- Action buttons -->
       <div class="tool-pdf__actions">
-        <button type="button" class="tool-pdf__export" id="exportBtn">Exporteer bevindingen</button>
-        <button type="button" class="tool-pdf__reset" id="resetBtn">Andere PDF controleren</button>
+        <button type="button" class="tool-pdf__export" id="exportBtn" data-i18n="exportBtn">Exporteer bevindingen</button>
+        <button type="button" class="tool-pdf__reset" id="resetBtn" data-i18n="resetBtn">Andere PDF controleren</button>
       </div>
 
       <!-- Categories -->
@@ -73,7 +79,7 @@
 
       <!-- CTA -->
       <div class="tool-cta">
-        <p>Wil je deze tool op maat laten maken voor je organisatie? Neem contact op met
+        <p data-i18n-html="ctaHtml">Wil je deze tool op maat laten maken voor je organisatie? Neem contact op met
         <a href="tel:+31628742275">Julia Tol</a> om de mogelijkheden te bespreken.
         Je wordt blij van de voorwaarden.</p>
       </div>
