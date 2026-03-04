@@ -2,7 +2,7 @@
 title: Julia Tol
 email: julia@properaccess.nl
 image: "/images/avatar.png"
-description:
+description: "Senior WCAG-auditor en oprichter van Proper Access. Gespecialiseerd in digitale toegankelijkheid, WCAG 2.2 en de European Accessibility Act."
 social:
   - name: github
     icon: fa-brands fa-github

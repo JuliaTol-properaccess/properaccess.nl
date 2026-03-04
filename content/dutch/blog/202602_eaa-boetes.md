@@ -6,7 +6,7 @@ auteur: Julia Tol
 categories:
   - "de EAA"
   - "webredactie"
-description: ""
+description: "Wat zijn de boetes onder de European Accessibility Act? Overzicht per EU-land: sancties, toezichthouders en handhaving van de EAA."
 keywords:
   - de EAA (Eauropean Accessibility Act)
   - toezicht op de EAA
