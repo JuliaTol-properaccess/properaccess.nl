@@ -1,0 +1,96 @@
+{{ define "main" }}
+{{/* Collect all sections for sidebar, sorted by section_number */}}
+{{ $allSections := .Site.GetPage "section" "dutch/academy" }}
+{{ $sections := slice }}
+{{ if $allSections }}
+  {{ range sort $allSections.Sections "Params.section_number" }}
+    {{ $section := . }}
+    {{ $chapters := $section.RegularPages }}
+    {{ $sections = $sections | append (dict "section" $section "chapters" $chapters) }}
+  {{ end }}
+{{ end }}
+
+<div class="academy" id="academy">
+
+  {{/* Mobile sidebar toggle */}}
+  <button
+    class="academy__sidebar-toggle"
+    id="academySidebarToggle"
+    aria-expanded="false"
+    aria-controls="academySidebar"
+    aria-label="Inhoudsopgave tonen">
+    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+    Inhoudsopgave
+  </button>
+
+  {{/* Sidebar */}}
+  <nav class="academy__sidebar" id="academySidebar" aria-label="Academy inhoudsopgave">
+    <div class="academy__sidebar-inner">
+      <a href="{{ "/academy/" | relLangURL }}" class="academy__sidebar-home">
+        ← Alle secties
+      </a>
+      <p class="academy__sidebar-label">Inhoudsopgave</p>
+
+      {{ range $i, $item := $sections }}
+        {{ $section := $item.section }}
+        {{ $chapters := $item.chapters }}
+        {{ $sectionNum := $section.Params.section_number | default (add $i 1) }}
+        {{ $isCurrentSection := eq $section.RelPermalink $.Parent.RelPermalink }}
+
+        <div class="academy__section{{ if $isCurrentSection }} academy__section--active{{ end }}" id="academy-section-{{ $sectionNum }}">
+          <button
+            class="academy__section-title"
+            aria-expanded="{{ if $isCurrentSection }}true{{ else }}false{{ end }}"
+            aria-controls="academy-section-list-{{ $sectionNum }}">
+            <span class="academy__section-number">{{ $sectionNum }}</span>
+            <span>{{ $section.Title }}</span>
+            <svg class="academy__chevron" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+
+          <ul class="academy__section-list{{ if not $isCurrentSection }} academy__section-list--collapsed{{ end }}" id="academy-section-list-{{ $sectionNum }}">
+            {{ range sort $chapters "Params.chapter_number" }}
+              {{ $isActive := eq .RelPermalink $.RelPermalink }}
+              <li class="academy__chapter academy__chapter--locked{{ if $isActive }} academy__chapter--active{{ end }}">
+                <span class="academy__chapter-inner" aria-current="{{ if $isActive }}page{{ end }}">
+                  <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
+                  <span class="academy__chapter-title">{{ .Title }}</span>
+                  <svg class="academy__lock-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </nav>
+
+  {{/* Main content — locked state */}}
+  <main class="academy__main" id="academyMain">
+    <div class="academy__locked-page">
+      <div class="academy__locked-icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </div>
+      <p class="academy__locked-label">Hoofdstuk {{ .Params.chapter_number }}</p>
+      <h1 class="academy__locked-title">{{ .Title }}</h1>
+      <p class="academy__locked-desc">{{ .Description }}</p>
+      <p class="academy__locked-msg">Dit hoofdstuk is nog niet beschikbaar. De Academy is in ontwikkeling — meld je aan om als eerste toegang te krijgen.</p>
+      <a href="/contact" class="academy__cta-btn">Houd me op de hoogte</a>
+      <a href="{{ "/academy/" | relLangURL }}" class="academy__locked-back">← Terug naar overzicht</a>
+    </div>
+  </main>
+</div>
+
+<script src="{{ "js/academy.js" | relURL }}" defer></script>
+{{ end }}
