@@ -3,7 +3,6 @@
 {{ $sections := slice }}
 {{ $totalChapters := 0 }}
 {{ $totalQuizzes := 0 }}
-{{ $totalPoints := 0 }}
 {{ $totalMinutes := 0 }}
 {{ range sort .Sections "Params.section_number" }}
   {{ $section := . }}
@@ -12,9 +11,6 @@
   {{ $totalChapters = add $totalChapters (len $chapters) }}
   {{ $totalQuizzes = add $totalQuizzes ($section.Params.quizzes | default 0) }}
   {{ $totalMinutes = add $totalMinutes ($section.Params.duration_minutes | default 0) }}
-  {{ range $chapters }}
-    {{ $totalPoints = add $totalPoints (.Params.points | default 0) }}
-  {{ end }}
 {{ end }}
 
 <div class="academy" id="academy">
@@ -114,7 +110,7 @@
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
           </svg>
           <div class="academy__stat-data">
-            <span class="academy__stat-value">0/{{ $totalPoints }}</span>
+            <span class="academy__stat-value">0/350</span>
             <span class="academy__stat-label">Punten verdiend</span>
           </div>
         </div>
