@@ -87,9 +87,16 @@ url = "/tools"
 weight = 5
 
 [[main]]
+name = "Academy"
+url = "/academy"
+weight = 6
+[main.params]
+  highlight = true
+
+[[main]]
 name = "Over Proper Access"
 url = "/auditbureau-digitale-toegankelijkheid"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Contact"

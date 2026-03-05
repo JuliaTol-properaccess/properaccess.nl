@@ -78,30 +78,7 @@
   {{/* Main content */}}
   <main class="academy__main" id="academyMain">
 
-    {{/* Password gate */}}
-    <div class="academy__gate" id="academyGate">
-      <div class="academy__gate-inner">
-        <svg class="academy__gate-icon" aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-        </svg>
-        <h1 class="academy__gate-title">Leer digitale toegankelijkheid</h1>
-        <p class="academy__gate-text">We hebben een cursus over WCAG ontwikkeld, geschreven in heldere en begrijpelijke taal, met honderden praktische voorbeelden die de soms complexe stof toegankelijk en behapbaar maken.</p>
-        <p class="academy__gate-sub">Voer het wachtwoord in om toegang te krijgen tot de Academy.</p>
-        <form class="academy__gate-form" id="academyPasswordForm">
-          <label for="academyPassword" class="sr-only">Wachtwoord</label>
-          <input type="password" id="academyPassword" class="academy__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
-          <button type="submit" class="academy__gate-btn">Toegang</button>
-        </form>
-        <p class="academy__gate-error" id="academyGateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
-        <p class="academy__gate-contact">Nog geen toegang? <a href="/contact">Neem contact op</a>.</p>
-      </div>
-    </div>
-
-    {{/* Dashboard (hidden until authenticated) */}}
-    <div id="academyContent" hidden>
-
-      {{/* Stats bar */}}
+    {{/* Stats bar */}}
       <div class="academy__stats">
         <div class="academy__stat">
           <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -196,8 +173,6 @@
           </div>
         {{ end }}
       </div>
-
-    </div>{{/* /academyContent */}}
 
   </main>
 </div>
