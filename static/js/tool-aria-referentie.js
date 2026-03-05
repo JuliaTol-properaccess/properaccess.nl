@@ -14,7 +14,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een element met belangrijke, vaak tijdgevoelige informatie. Wordt automatisch voorgelezen door screenreaders zodra het verschijnt.",
+      desc_en: "An element with important, often time-sensitive information. Automatically announced by screen readers when it appears.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -29,7 +31,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een modaal dialoogvenster dat de gebruiker onderbreekt met een belangrijke melding en een reactie verwacht.",
+      desc_en: "A modal dialog that interrupts the user with an important message and expects a response.",
       superclassRoles: ["alert", "dialog"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -44,7 +48,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een interactief element dat een actie uitvoert wanneer het wordt geactiveerd door de gebruiker.",
+      desc_en: "An interactive element that performs an action when activated by the user.",
       superclassRoles: ["command"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -59,7 +65,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een selectievakje dat aan, uit of gedeeltelijk geselecteerd kan zijn.",
+      desc_en: "A checkbox that can be checked, unchecked, or partially checked.",
       superclassRoles: ["input"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -74,7 +82,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een invoerveld gecombineerd met een popup-element (lijst, grid of boomstructuur) waarmee de gebruiker een waarde kan kiezen.",
+      desc_en: "An input field combined with a popup element (list, grid, or tree) allowing the user to choose a value.",
       superclassRoles: ["input"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -89,7 +99,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een dialoogvenster dat bovenop de pagina-inhoud wordt weergegeven. Kan modaal of niet-modaal zijn.",
+      desc_en: "A dialog window displayed on top of the page content. Can be modal or non-modal.",
       superclassRoles: ["window"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -104,7 +116,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een interactieve tabelstructuur met rijen en cellen, navigeerbaar met pijltjestoetsen.",
+      desc_en: "An interactive table structure with rows and cells, navigable with arrow keys.",
       superclassRoles: ["composite", "table"],
       requiredContext: [],
       requiredOwnedElements: ["row"],
@@ -119,7 +133,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een cel in een grid of treegrid.",
+      desc_en: "A cell in a grid or treegrid.",
       superclassRoles: ["cell", "widget"],
       requiredContext: ["row"],
       requiredOwnedElements: [],
@@ -134,7 +150,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een interactieve verwijzing naar een interne of externe bron.",
+      desc_en: "An interactive reference to an internal or external resource.",
       superclassRoles: ["command"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -149,7 +167,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een lijst waaruit de gebruiker een of meerdere items kan selecteren.",
+      desc_en: "A list from which the user can select one or more items.",
       superclassRoles: ["select"],
       requiredContext: [],
       requiredOwnedElements: ["option"],
@@ -164,7 +184,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een lijst met keuzes of acties voor de gebruiker, zoals een contextmenu of actiemenu.",
+      desc_en: "A list of choices or actions for the user, such as a context menu or action menu.",
       superclassRoles: ["select"],
       requiredContext: [],
       requiredOwnedElements: ["menuitem", "menuitemcheckbox", "menuitemradio"],
@@ -179,7 +201,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een horizontale menubalk, meestal bovenaan een applicatie, met menu-items die submenu's kunnen bevatten.",
+      desc_en: "A horizontal menu bar, usually at the top of an application, with menu items that can contain submenus.",
       superclassRoles: ["menu"],
       requiredContext: [],
       requiredOwnedElements: ["menuitem", "menuitemcheckbox", "menuitemradio"],
@@ -194,7 +218,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een item in een menu of menubalk.",
+      desc_en: "An item in a menu or menu bar.",
       superclassRoles: ["command"],
       requiredContext: ["menu", "menubar", "group"],
       requiredOwnedElements: [],
@@ -209,7 +235,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een menu-item met een aan/uit-status (checkbox in een menu).",
+      desc_en: "A menu item with an on/off state (checkbox in a menu).",
       superclassRoles: ["checkbox", "menuitem"],
       requiredContext: ["menu", "menubar", "group"],
       requiredOwnedElements: [],
@@ -224,7 +252,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een menu-item in een groep waarvan er slechts een tegelijk geselecteerd kan zijn.",
+      desc_en: "A menu item in a group where only one can be selected at a time.",
       superclassRoles: ["menuitemcheckbox", "radio"],
       requiredContext: ["menu", "menubar", "group"],
       requiredOwnedElements: [],
@@ -239,7 +269,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een selecteerbaar item in een listbox.",
+      desc_en: "A selectable item in a listbox.",
       superclassRoles: ["input"],
       requiredContext: ["listbox", "group"],
       requiredOwnedElements: [],
@@ -254,7 +286,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Toont de voortgang van een langlopende taak.",
+      desc_en: "Shows the progress of a long-running task.",
       superclassRoles: ["range"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -269,7 +303,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een keuzerondje in een groep waarvan er slechts een tegelijk geselecteerd kan zijn.",
+      desc_en: "A radio button in a group where only one can be selected at a time.",
       superclassRoles: ["input"],
       requiredContext: ["radiogroup"],
       requiredOwnedElements: [],
@@ -284,7 +320,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een groep keuzerondjes waarvan er slechts een tegelijk geselecteerd kan zijn.",
+      desc_en: "A group of radio buttons where only one can be selected at a time.",
       superclassRoles: ["select"],
       requiredContext: [],
       requiredOwnedElements: ["radio"],
@@ -299,7 +337,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een grafisch object dat de scrollpositie binnen een scrollbaar gebied aangeeft.",
+      desc_en: "A graphical object that indicates the scroll position within a scrollable area.",
       superclassRoles: ["range"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -314,7 +354,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een tekstveld specifiek bedoeld voor zoekfunctionaliteit.",
+      desc_en: "A text field specifically intended for search functionality.",
       superclassRoles: ["textbox"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -329,7 +371,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een invoerelement waarmee de gebruiker een waarde selecteert binnen een bereik door een schuifregelaar te verplaatsen.",
+      desc_en: "An input element that allows the user to select a value within a range by moving a slider.",
       superclassRoles: ["input", "range"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -344,7 +388,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een invoerveld voor numerieke waarden met knoppen om de waarde te verhogen of verlagen.",
+      desc_en: "An input field for numeric values with buttons to increase or decrease the value.",
       superclassRoles: ["composite", "input", "range"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -359,7 +405,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een schakelaar die aan of uit kan staan, vergelijkbaar met een fysieke lichtschakelaar.",
+      desc_en: "A switch that can be on or off, similar to a physical light switch.",
       superclassRoles: ["checkbox"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -374,7 +422,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een tab in een tablijst die een tabpaneel activeert wanneer geselecteerd.",
+      desc_en: "A tab in a tab list that activates a tab panel when selected.",
       superclassRoles: ["widget"],
       requiredContext: ["tablist"],
       requiredOwnedElements: [],
@@ -389,7 +439,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een lijst met tabs die elk een tabpaneel activeren.",
+      desc_en: "A list of tabs that each activate a tab panel.",
       superclassRoles: ["composite"],
       requiredContext: [],
       requiredOwnedElements: ["tab"],
@@ -404,7 +456,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Het inhoudspaneel dat hoort bij een tab.",
+      desc_en: "The content panel associated with a tab.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -419,7 +473,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een invoerveld voor vrije tekst, zoals een tekstveld of een tekstvak met meerdere regels.",
+      desc_en: "An input field for free text, such as a text field or a multi-line text area.",
       superclassRoles: ["input"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -434,7 +490,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een contextuele popup met beschrijvende informatie over een element, meestal zichtbaar bij hover of focus.",
+      desc_en: "A contextual popup with descriptive information about an element, usually visible on hover or focus.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -449,7 +507,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een hiërarchische lijst met items die in- en uitgeklapt kunnen worden, zoals een bestandsstructuur.",
+      desc_en: "A hierarchical list of items that can be expanded and collapsed, such as a file structure.",
       superclassRoles: ["select"],
       requiredContext: [],
       requiredOwnedElements: ["treeitem"],
@@ -464,7 +524,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een grid waarvan de rijen in- en uitgeklapt kunnen worden als een boomstructuur.",
+      desc_en: "A grid whose rows can be expanded and collapsed as a tree structure.",
       superclassRoles: ["grid", "tree"],
       requiredContext: [],
       requiredOwnedElements: ["row"],
@@ -479,7 +541,9 @@
       type: "role",
       category: "widget",
       categoryLabel: "Widget-rol",
+      catLabel_en: "Widget role",
       description: "Een item in een tree. Kan kinderen bevatten en in-/uitgeklapt worden.",
+      desc_en: "An item in a tree. Can contain children and be expanded/collapsed.",
       superclassRoles: ["listitem", "option"],
       requiredContext: ["tree", "group"],
       requiredOwnedElements: [],
@@ -496,7 +560,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "De sitewide header met logo, navigatie en zoekfunctionaliteit. Standaard is het <header>-element in de body een banner.",
+      desc_en: "The sitewide header with logo, navigation, and search functionality. By default, the <header> element in the body is a banner.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -511,7 +577,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "Aanvullende content die gerelateerd is aan de hoofdcontent maar ook zelfstandig bruikbaar is, zoals een sidebar.",
+      desc_en: "Supplementary content related to the main content but also independently useful, such as a sidebar.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -526,7 +594,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "De sitewide footer met copyright, contactgegevens en links. Standaard is het <footer>-element in de body een contentinfo.",
+      desc_en: "The sitewide footer with copyright, contact details, and links. By default, the <footer> element in the body is a contentinfo.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -541,7 +611,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "Een regio met formulierelementen. Wordt pas een landmark als het een toegankelijke naam heeft.",
+      desc_en: "A region containing form elements. Only becomes a landmark when it has an accessible name.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -556,7 +628,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "De hoofdcontent van de pagina. Er mag maar een zichtbaar main-element per pagina zijn.",
+      desc_en: "The main content of the page. Only one visible main element is allowed per page.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -571,7 +645,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "Een regio met navigatielinks naar andere pagina's of secties binnen de pagina.",
+      desc_en: "A region containing navigation links to other pages or sections within the page.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -586,7 +662,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "Een generiek landmarkgebied dat belangrijk genoeg is om in de landmarklijst te verschijnen. Vereist een toegankelijke naam.",
+      desc_en: "A generic landmark area important enough to appear in the landmark list. Requires an accessible name.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -601,7 +679,9 @@
       type: "role",
       category: "landmark",
       categoryLabel: "Landmark-rol",
+      catLabel_en: "Landmark role",
       description: "Een regio met zoekfunctionaliteit voor de site of applicatie.",
+      desc_en: "A region with search functionality for the site or application.",
       superclassRoles: ["landmark"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -618,7 +698,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Geeft aan dat een regio zich als een desktopapplicatie gedraagt. Screenreaders schakelen over naar applicatiemodus. Gebruik met grote voorzichtigheid.",
+      desc_en: "Indicates that a region behaves like a desktop application. Screen readers switch to application mode. Use with great caution.",
       superclassRoles: ["structure"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -633,7 +715,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een onafhankelijk stuk content dat op zichzelf kan staan, zoals een blogpost, nieuwsbericht of commentaar.",
+      desc_en: "An independent piece of content that can stand on its own, such as a blog post, news article, or comment.",
       superclassRoles: ["document"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -648,7 +732,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een cel in een tabel.",
+      desc_en: "A cell in a table.",
       superclassRoles: ["section"],
       requiredContext: ["row"],
       requiredOwnedElements: [],
@@ -663,7 +749,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een header-cel voor een kolom in een tabel of grid.",
+      desc_en: "A header cell for a column in a table or grid.",
       superclassRoles: ["cell", "gridcell"],
       requiredContext: ["row"],
       requiredOwnedElements: [],
@@ -678,7 +766,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "De definitie van een term.",
+      desc_en: "The definition of a term.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -693,7 +783,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Markeert content als een document dat gelezen kan worden, in tegenstelling tot een applicatie. Dit is de standaard modus van webpagina's.",
+      desc_en: "Marks content as a document that can be read, as opposed to an application. This is the default mode of web pages.",
       superclassRoles: ["structure"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -708,7 +800,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een scrollbare lijst artikelen waarbij nieuwe artikelen automatisch worden geladen als de gebruiker scrollt.",
+      desc_en: "A scrollable list of articles where new articles are automatically loaded as the user scrolls.",
       superclassRoles: ["list"],
       requiredContext: [],
       requiredOwnedElements: ["article"],
@@ -723,7 +817,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een visueel element met een optioneel bijschrift, zoals een afbeelding, diagram of codefragment.",
+      desc_en: "A visual element with an optional caption, such as an image, diagram, or code fragment.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -738,7 +834,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een groep gerelateerde elementen die niet bedoeld is als landmark.",
+      desc_en: "A group of related elements not intended as a landmark.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -753,7 +851,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een kop voor een sectie van de pagina. Gebruik altijd native HTML-koppen (h1-h6) in plaats van deze rol.",
+      desc_en: "A heading for a section of the page. Always use native HTML headings (h1-h6) instead of this role.",
       superclassRoles: ["sectionhead"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -768,7 +868,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een afbeelding of visueel element. Gebruik voor complexe afbeeldingen die uit meerdere elementen bestaan (bijv. SVG).",
+      desc_en: "An image or visual element. Use for complex images composed of multiple elements (e.g., SVG).",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -783,7 +885,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een lijst met items.",
+      desc_en: "A list of items.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: ["listitem"],
@@ -798,7 +902,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een item in een lijst.",
+      desc_en: "An item in a list.",
       superclassRoles: ["section"],
       requiredContext: ["list", "directory"],
       requiredOwnedElements: [],
@@ -813,7 +919,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een wiskundige uitdrukking.",
+      desc_en: "A mathematical expression.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -828,7 +936,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Verwijdert de semantische betekenis van een element. Synoniem voor presentation. Het element wordt onzichtbaar voor screenreaders maar de inhoud blijft toegankelijk.",
+      desc_en: "Removes the semantic meaning of an element. Synonym for presentation. The element becomes invisible to screen readers but its content remains accessible.",
       superclassRoles: ["structure"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -843,7 +953,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een opmerking of aanvulling bij de hoofdcontent.",
+      desc_en: "A note or annotation supplementing the main content.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -858,7 +970,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Verwijdert de semantische betekenis van een element. Synoniem voor none.",
+      desc_en: "Removes the semantic meaning of an element. Synonym for none.",
       superclassRoles: ["structure"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -873,7 +987,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een rij in een tabel, grid of treegrid.",
+      desc_en: "A row in a table, grid, or treegrid.",
       superclassRoles: ["group", "widget"],
       requiredContext: ["grid", "rowgroup", "table", "treegrid"],
       requiredOwnedElements: ["cell", "columnheader", "gridcell", "rowheader"],
@@ -888,7 +1004,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een groep rijen in een tabel (thead, tbody, tfoot).",
+      desc_en: "A group of rows in a table (thead, tbody, tfoot).",
       superclassRoles: ["structure"],
       requiredContext: ["grid", "table", "treegrid"],
       requiredOwnedElements: ["row"],
@@ -903,7 +1021,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een header-cel voor een rij in een tabel.",
+      desc_en: "A header cell for a row in a table.",
       superclassRoles: ["cell", "gridcell"],
       requiredContext: ["row"],
       requiredOwnedElements: [],
@@ -918,7 +1038,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een scheidingslijn tussen secties of groepen menu-items. Kan focusbaar zijn als het een instelbare scheiding is.",
+      desc_en: "A divider between sections or groups of menu items. Can be focusable if it is an adjustable separator.",
       superclassRoles: ["structure"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -933,7 +1055,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een niet-interactieve tabel met data gerangschikt in rijen en kolommen.",
+      desc_en: "A non-interactive table with data arranged in rows and columns.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: ["row"],
@@ -948,7 +1072,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een woord of zin met een bijbehorende definitie.",
+      desc_en: "A word or phrase with an associated definition.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -963,7 +1089,9 @@
       type: "role",
       category: "document-structure",
       categoryLabel: "Documentstructuur",
+      catLabel_en: "Document structure",
       description: "Een werkbalk met knoppen of andere bedieningselementen, gegroepeerd als een logisch geheel.",
+      desc_en: "A toolbar with buttons or other controls, grouped as a logical unit.",
       superclassRoles: ["group"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -980,7 +1108,9 @@
       type: "role",
       category: "live-region-role",
       categoryLabel: "Live-regio",
+      catLabel_en: "Live region",
       description: "Een regio waar nieuwe informatie in chronologische volgorde wordt toegevoegd, zoals een chatlog of activiteitenlog.",
+      desc_en: "A region where new information is added in chronological order, such as a chat log or activity log.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -995,7 +1125,9 @@
       type: "role",
       category: "live-region-role",
       categoryLabel: "Live-regio",
+      catLabel_en: "Live region",
       description: "Een regio met niet-essentiële informatie die regelmatig verandert, zoals een scrollende nieuwsticker.",
+      desc_en: "A region with non-essential information that changes regularly, such as a scrolling news ticker.",
       superclassRoles: ["section"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -1010,6 +1142,7 @@
       type: "role",
       category: "live-region-role",
       categoryLabel: "Live-regio",
+      catLabel_en: "Live region",
       description: "Een regio met statusmeldingen die niet belangrijk genoeg zijn om als alert aan te kondigen. Heeft impliciet aria-live=\"polite\".",
       superclassRoles: ["section"],
       requiredContext: [],
@@ -1025,7 +1158,9 @@
       type: "role",
       category: "live-region-role",
       categoryLabel: "Live-regio",
+      catLabel_en: "Live region",
       description: "Een element dat een lopende timer of aftelling weergeeft.",
+      desc_en: "An element that displays a running timer or countdown.",
       superclassRoles: ["status"],
       requiredContext: [],
       requiredOwnedElements: [],
@@ -1044,7 +1179,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft aan dat een element wordt bijgewerkt en dat hulptechnologie moet wachten tot de update compleet is.",
+      desc_en: "Indicates that an element is being updated and assistive technology should wait until the update is complete.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["alle rollen"],
@@ -1057,7 +1194,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft de huidige aangevinkte status aan van checkboxes, radio buttons en switches.",
+      desc_en: "Indicates the current checked state of checkboxes, radio buttons, and switches.",
       valueType: "true | false | mixed | undefined",
       allowedValues: ["true", "false", "mixed", "undefined"],
       usedByRoles: ["checkbox", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "treeitem"],
@@ -1070,7 +1209,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft aan welk element het huidige item is in een set, zoals de huidige pagina in navigatie.",
+      desc_en: "Indicates which element is the current item in a set, such as the current page in navigation.",
       valueType: "token",
       allowedValues: ["page", "step", "location", "date", "time", "true", "false"],
       usedByRoles: ["alle rollen"],
@@ -1083,7 +1224,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft aan dat een element zichtbaar maar niet interactief is. In tegenstelling tot het HTML disabled-attribuut is het element nog focusbaar.",
+      desc_en: "Indicates that an element is visible but not interactive. Unlike the HTML disabled attribute, the element is still focusable.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["button", "link", "menuitem", "tab", "input-rollen"],
@@ -1096,7 +1239,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft aan of een element (bijv. een menulijst of boomstructuur) is uitgeklapt of ingeklapt.",
+      desc_en: "Indicates whether an element (e.g., a menu list or tree structure) is expanded or collapsed.",
       valueType: "true | false | undefined",
       allowedValues: ["true", "false", "undefined"],
       usedByRoles: ["button", "combobox", "link", "menuitem", "tab", "treeitem"],
@@ -1109,7 +1254,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Verbergt een element en al zijn kinderen voor hulptechnologie. Het element blijft visueel zichtbaar. Gebruik met voorzichtigheid.",
+      desc_en: "Hides an element and all its children from assistive technology. The element remains visually visible. Use with caution.",
       valueType: "true | false | undefined",
       allowedValues: ["true", "false", "undefined"],
       usedByRoles: ["alle rollen"],
@@ -1122,7 +1269,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft aan dat de ingevoerde waarde niet voldoet aan het verwachte formaat.",
+      desc_en: "Indicates that the entered value does not meet the expected format.",
       valueType: "token",
       allowedValues: ["true", "false", "grammar", "spelling"],
       usedByRoles: ["textbox", "combobox", "listbox", "spinbutton", "checkbox", "radio"],
@@ -1135,7 +1284,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft de ingedrukte status aan van een toggle-knop.",
+      desc_en: "Indicates the pressed state of a toggle button.",
       valueType: "true | false | mixed | undefined",
       allowedValues: ["true", "false", "mixed", "undefined"],
       usedByRoles: ["button"],
@@ -1148,7 +1299,9 @@
       type: "attribute",
       category: "state",
       categoryLabel: "State",
+      catLabel_en: "State",
       description: "Geeft de geselecteerde status aan van items in een lijst, tab of grid.",
+      desc_en: "Indicates the selected state of items in a list, tab, or grid.",
       valueType: "true | false | undefined",
       allowedValues: ["true", "false", "undefined"],
       usedByRoles: ["option", "tab", "gridcell", "row", "treeitem"],
@@ -1163,7 +1316,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan of en hoe een tekstveld automatische suggesties toont bij het typen.",
+      desc_en: "Indicates whether and how a text field shows automatic suggestions while typing.",
       valueType: "token",
       allowedValues: ["none", "inline", "list", "both"],
       usedByRoles: ["combobox", "textbox", "searchbox"],
@@ -1176,7 +1331,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan dat een element een popup-element kan triggeren (menu, listbox, tree, grid of dialog).",
+      desc_en: "Indicates that an element can trigger a popup element (menu, listbox, tree, grid, or dialog).",
       valueType: "token",
       allowedValues: ["false", "true", "menu", "listbox", "tree", "grid", "dialog"],
       usedByRoles: ["button", "combobox", "link", "menuitem", "tab", "textbox"],
@@ -1189,7 +1346,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert het hiërarchische niveau van een element binnen een structuur (bijv. kopniveau, boomdiepte).",
+      desc_en: "Defines the hierarchical level of an element within a structure (e.g., heading level, tree depth).",
       valueType: "integer",
       allowedValues: ["1", "2", "3", "..."],
       usedByRoles: ["heading", "listitem", "row", "treeitem"],
@@ -1202,7 +1361,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan dat een dialog modaal is: de rest van de pagina is niet toegankelijk zolang het dialoogvenster open is.",
+      desc_en: "Indicates that a dialog is modal: the rest of the page is not accessible while the dialog is open.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["dialog", "alertdialog"],
@@ -1215,7 +1376,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan of een tekstveld meerdere regels tekst accepteert.",
+      desc_en: "Indicates whether a text field accepts multiple lines of text.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["textbox"],
@@ -1228,7 +1391,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan dat meerdere items tegelijk geselecteerd kunnen worden in een lijst, grid of boom.",
+      desc_en: "Indicates that multiple items can be selected simultaneously in a list, grid, or tree.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["grid", "listbox", "tablist", "tree"],
@@ -1241,7 +1406,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan of een element horizontaal of verticaal is georiënteerd.",
+      desc_en: "Indicates whether an element is oriented horizontally or vertically.",
       valueType: "token",
       allowedValues: ["horizontal", "vertical", "undefined"],
       usedByRoles: ["scrollbar", "separator", "slider", "tablist", "toolbar", "listbox", "menu", "menubar", "radiogroup", "tree"],
@@ -1254,7 +1421,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieeert een hint die beschrijft welke waarde verwacht wordt, zichtbaar wanneer het veld leeg is.",
+      desc_en: "Defines a hint describing what value is expected, visible when the field is empty.",
       valueType: "string",
       allowedValues: [],
       usedByRoles: ["textbox", "searchbox"],
@@ -1267,7 +1436,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan dat een element niet bewerkbaar is maar wel leesbaar en focusbaar blijft.",
+      desc_en: "Indicates that an element is not editable but remains readable and focusable.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["checkbox", "combobox", "grid", "gridcell", "listbox", "radiogroup", "slider", "spinbutton", "textbox"],
@@ -1280,7 +1451,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan dat een formulierveld ingevuld moet worden voordat het formulier verstuurd kan worden.",
+      desc_en: "Indicates that a form field must be filled in before the form can be submitted.",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["checkbox", "combobox", "gridcell", "listbox", "radiogroup", "spinbutton", "textbox", "tree"],
@@ -1293,7 +1466,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert een menselijk leesbare, aangepaste beschrijving van de rol van een element. Gebruik spaarzaam.",
+      desc_en: "Defines a human-readable, custom description of the role of an element. Use sparingly.",
       valueType: "string",
       allowedValues: [],
       usedByRoles: ["alle rollen (behalve abstract)"],
@@ -1306,7 +1481,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Geeft aan of en hoe een kolom of rij in een tabel is gesorteerd.",
+      desc_en: "Indicates whether and how a column or row in a table is sorted.",
       valueType: "token",
       allowedValues: ["ascending", "descending", "none", "other"],
       usedByRoles: ["columnheader", "rowheader"],
@@ -1319,7 +1496,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert de maximale toegestane waarde voor een bereik-widget.",
+      desc_en: "Defines the maximum allowed value for a range widget.",
       valueType: "number",
       allowedValues: [],
       usedByRoles: ["progressbar", "scrollbar", "separator", "slider", "spinbutton"],
@@ -1332,7 +1511,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert de minimale toegestane waarde voor een bereik-widget.",
+      desc_en: "Defines the minimum allowed value for a range widget.",
       valueType: "number",
       allowedValues: [],
       usedByRoles: ["progressbar", "scrollbar", "separator", "slider", "spinbutton"],
@@ -1345,7 +1526,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert de huidige waarde van een bereik-widget.",
+      desc_en: "Defines the current value of a range widget.",
       valueType: "number",
       allowedValues: [],
       usedByRoles: ["progressbar", "scrollbar", "separator", "slider", "spinbutton"],
@@ -1358,7 +1541,9 @@
       type: "attribute",
       category: "property",
       categoryLabel: "Property",
+      catLabel_en: "Property",
       description: "Definieert een menselijk leesbare tekst als alternatief voor de numerieke waarde van aria-valuenow.",
+      desc_en: "Defines a human-readable text as an alternative to the numeric value of aria-valuenow.",
       valueType: "string",
       allowedValues: [],
       usedByRoles: ["progressbar", "scrollbar", "separator", "slider", "spinbutton"],
@@ -1373,7 +1558,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar het ID van het momenteel actieve kind-element in een samengestelde widget, zonder de DOM-focus te verplaatsen.",
+      desc_en: "Refers to the ID of the currently active child element in a composite widget, without moving DOM focus.",
       valueType: "ID-referentie",
       allowedValues: [],
       usedByRoles: ["combobox", "grid", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
@@ -1386,7 +1573,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar het ID van het element dat door dit element wordt aangestuurd.",
+      desc_en: "Refers to the ID of the element controlled by this element.",
       valueType: "ID-referentie(s)",
       allowedValues: [],
       usedByRoles: ["button", "combobox", "scrollbar", "tab", "textbox"],
@@ -1399,7 +1588,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar de ID's van elementen die extra beschrijvende informatie geven over dit element.",
+      desc_en: "Refers to the IDs of elements that provide additional descriptive information about this element.",
       valueType: "ID-referentie(s)",
       allowedValues: [],
       usedByRoles: ["alle rollen"],
@@ -1412,7 +1603,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar een element met gedetailleerde informatie, als aanvulling op aria-describedby.",
+      desc_en: "Refers to an element with detailed information, supplementing aria-describedby.",
       valueType: "ID-referentie",
       allowedValues: [],
       usedByRoles: ["alle rollen"],
@@ -1425,6 +1618,7 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar het ID van het element dat de foutmelding bevat voor dit element. Wordt alleen voorgelezen als aria-invalid=\"true\" is.",
       valueType: "ID-referentie",
       allowedValues: [],
@@ -1438,7 +1632,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Geeft een alternatieve leesvolgorde aan door naar het volgende element in de stroom te verwijzen.",
+      desc_en: "Indicates an alternative reading order by referring to the next element in the flow.",
       valueType: "ID-referentie(s)",
       allowedValues: [],
       usedByRoles: ["alle rollen"],
@@ -1451,7 +1647,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Definieert een tekstlabel voor een element dat geen zichtbaar label heeft. Overschrijft de bestaande tekst voor screenreaders.",
+      desc_en: "Defines a text label for an element that has no visible label. Overrides existing text for screen readers.",
       valueType: "string",
       allowedValues: [],
       usedByRoles: ["alle rollen (behalve presentatie)"],
@@ -1464,7 +1662,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Verwijst naar de ID's van elementen die als label dienen voor dit element. Heeft voorrang boven aria-label en het HTML label-element.",
+      desc_en: "Refers to the IDs of elements that serve as labels for this element. Takes precedence over aria-label and the HTML label element.",
       valueType: "ID-referentie(s)",
       allowedValues: [],
       usedByRoles: ["alle rollen (behalve presentatie)"],
@@ -1477,7 +1677,9 @@
       type: "attribute",
       category: "relationship",
       categoryLabel: "Relatie-attribuut",
+      catLabel_en: "Relationship attribute",
       description: "Definieert een ouder-kind-relatie wanneer de DOM-structuur dit niet weerspiegelt. Gebruik spaarzaam.",
+      desc_en: "Defines a parent-child relationship when the DOM structure does not reflect it. Use sparingly.",
       valueType: "ID-referentie(s)",
       allowedValues: [],
       usedByRoles: ["alle rollen"],
@@ -1492,7 +1694,9 @@
       type: "attribute",
       category: "live-region-attr",
       categoryLabel: "Live-regio-attribuut",
+      catLabel_en: "Live region attribute",
       description: "Geeft aan of hulptechnologie de hele live-regio moet voorlezen (true) of alleen de gewijzigde delen (false).",
+      desc_en: "Indicates whether assistive technology should read the entire live region (true) or only the changed parts (false).",
       valueType: "true | false",
       allowedValues: ["true", "false"],
       usedByRoles: ["alle rollen (in live-regio's)"],
@@ -1505,7 +1709,9 @@
       type: "attribute",
       category: "live-region-attr",
       categoryLabel: "Live-regio-attribuut",
+      catLabel_en: "Live region attribute",
       description: "Geeft aan dat de inhoud van een element dynamisch kan veranderen en dat hulptechnologie deze wijzigingen moet aankondigen.",
+      desc_en: "Indicates that the content of an element can change dynamically and that assistive technology should announce these changes.",
       valueType: "token",
       allowedValues: ["off", "polite", "assertive"],
       usedByRoles: ["alle rollen"],
@@ -1518,7 +1724,9 @@
       type: "attribute",
       category: "live-region-attr",
       categoryLabel: "Live-regio-attribuut",
+      catLabel_en: "Live region attribute",
       description: "Geeft aan welke typen wijzigingen in een live-regio relevant zijn: toevoegingen, verwijderingen, tekst of alles.",
+      desc_en: "Indicates which types of changes in a live region are relevant: additions, removals, text, or all.",
       valueType: "token list",
       allowedValues: ["additions", "removals", "text", "all", "additions text"],
       usedByRoles: ["alle rollen (in live-regio's)"],
@@ -1528,19 +1736,152 @@
     }
   ];
 
-  var CATEGORIES = [
-    { id: "all", label: "Alles", type: "all" },
-    { id: "widget", label: "Widget-rollen", type: "role" },
-    { id: "landmark", label: "Landmark-rollen", type: "role" },
-    { id: "document-structure", label: "Documentstructuur", type: "role" },
-    { id: "live-region-role", label: "Live-regio-rollen", type: "role" },
-    { id: "state", label: "States", type: "attribute" },
-    { id: "property", label: "Properties", type: "attribute" },
-    { id: "relationship", label: "Relatie-attributen", type: "attribute" },
-    { id: "live-region-attr", label: "Live-regio-attributen", type: "attribute" }
+  var ALL_ITEMS = ROLES.concat(ATTRIBUTES);
+
+  /* ===== i18n ===== */
+
+  var LANG = {
+    nl: {
+      toolTitle: "ARIA Rollen & Attributen Referentie",
+      intro: 'Doorzoek alle WAI-ARIA rollen en attributen uit de <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2-specificatie</a>. Bekijk beschrijvingen, ondersteunde attributen, HTML-equivalenten en praktische codevoorbeelden.',
+      searchLabel: "Zoek een rol of attribuut",
+      searchPlaceholder: 'Zoek bijv. "button", "aria-label", "navigation"...',
+      filterAriaLabel: "Filter op categorie",
+      resultsAriaLabel: "Resultaten",
+      loadMore: "Toon meer resultaten",
+      ctaHtml: 'ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website. Wil je weten of jouw ARIA-implementatie klopt? <a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085\u00a05055\u00a0890</a>.',
+      badgeRole: "Rol",
+      badgeAttribute: "Attribuut",
+      htmlEquivalent: "HTML-equivalent",
+      superclass: "Superclass",
+      requiredContext: "Vereiste context",
+      requiredChildren: "Vereiste kinderen",
+      supportedAttributes: "Ondersteunde attributen",
+      presentationalChildren: "Presentational children",
+      yes: "Ja",
+      no: "Nee",
+      valueType: "Waardetype",
+      allowedValues: "Mogelijke waarden",
+      usedByRoles: "Gebruikt door",
+      codeExample: "Codevoorbeeld",
+      copy: "Kopieer",
+      copied: "Gekopieerd!",
+      noResults: "Geen resultaten voor",
+      noResultsTip: 'Tip: probeer een Engelse naam (bijv. "button") of een ARIA-attribuut (bijv. "aria-label").',
+      resultsSingular: "resultaat",
+      resultsPlural: "resultaten",
+      langLabel: "Switch to English"
+    },
+    en: {
+      toolTitle: "ARIA Roles & Attributes Reference",
+      intro: 'Search all WAI-ARIA roles and attributes from the <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2 specification</a>. View descriptions, supported attributes, HTML equivalents, and practical code examples.',
+      searchLabel: "Search for a role or attribute",
+      searchPlaceholder: 'Search e.g. "button", "aria-label", "navigation"...',
+      filterAriaLabel: "Filter by category",
+      resultsAriaLabel: "Results",
+      loadMore: "Show more results",
+      ctaHtml: 'Correctly applying ARIA attributes is essential for your website\u2019s accessibility. Want to know if your ARIA implementation is correct? <a href="/contact/">Request an audit</a> or call <a href="tel:+31855055890">+31\u00a085\u00a0505\u00a05890</a>.',
+      badgeRole: "Role",
+      badgeAttribute: "Attribute",
+      htmlEquivalent: "HTML equivalent",
+      superclass: "Superclass",
+      requiredContext: "Required context",
+      requiredChildren: "Required children",
+      supportedAttributes: "Supported attributes",
+      presentationalChildren: "Presentational children",
+      yes: "Yes",
+      no: "No",
+      valueType: "Value type",
+      allowedValues: "Allowed values",
+      usedByRoles: "Used by",
+      codeExample: "Code example",
+      copy: "Copy",
+      copied: "Copied!",
+      noResults: "No results for",
+      noResultsTip: 'Tip: try a role name (e.g. "button") or an ARIA attribute (e.g. "aria-label").',
+      resultsSingular: "result",
+      resultsPlural: "results",
+      langLabel: "Schakel naar Nederlands"
+    }
+  };
+
+  var CAT_LABELS = [
+    { id: "all", nl: "Alles", en: "All" },
+    { id: "widget", nl: "Widget-rollen", en: "Widget roles" },
+    { id: "landmark", nl: "Landmark-rollen", en: "Landmark roles" },
+    { id: "document-structure", nl: "Documentstructuur", en: "Document structure" },
+    { id: "live-region-role", nl: "Live-regio-rollen", en: "Live region roles" },
+    { id: "state", nl: "States", en: "States" },
+    { id: "property", nl: "Properties", en: "Properties" },
+    { id: "relationship", nl: "Relatie-attributen", en: "Relationship attributes" },
+    { id: "live-region-attr", nl: "Live-regio-attributen", en: "Live region attributes" }
   ];
 
-  var ALL_ITEMS = ROLES.concat(ATTRIBUTES);
+  var currentLang = "nl";
+  try { currentLang = localStorage.getItem("pa-tool-lang") || "nl"; } catch (e) { /* */ }
+
+  function t(key) {
+    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
+  }
+
+  function getDesc(item) {
+    return currentLang === "en" && item.desc_en ? item.desc_en : item.description;
+  }
+
+  function getCatLabel(item) {
+    return currentLang === "en" && item.catLabel_en ? item.catLabel_en : item.categoryLabel;
+  }
+
+  function translateDOM() {
+    var els = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < els.length; i++) {
+      els[i].textContent = t(els[i].getAttribute("data-i18n"));
+    }
+    var htmlEls = document.querySelectorAll("[data-i18n-html]");
+    for (var j = 0; j < htmlEls.length; j++) {
+      htmlEls[j].innerHTML = t(htmlEls[j].getAttribute("data-i18n-html"));
+    }
+    var phEls = document.querySelectorAll("[data-i18n-ph]");
+    for (var k = 0; k < phEls.length; k++) {
+      phEls[k].placeholder = t(phEls[k].getAttribute("data-i18n-ph"));
+    }
+    var ariaEls = document.querySelectorAll("[data-i18n-aria]");
+    for (var l = 0; l < ariaEls.length; l++) {
+      ariaEls[l].setAttribute("aria-label", t(ariaEls[l].getAttribute("data-i18n-aria")));
+    }
+    var container = document.querySelector(".tool-container");
+    if (container) {
+      if (currentLang === "nl") {
+        container.removeAttribute("lang");
+      } else {
+        container.setAttribute("lang", currentLang);
+      }
+    }
+  }
+
+  function updateLangToggle() {
+    var nlOpt = document.getElementById("langOptNL");
+    var enOpt = document.getElementById("langOptEN");
+    var btn = document.getElementById("langToggle");
+    if (!nlOpt || !enOpt) return;
+    if (currentLang === "en") {
+      nlOpt.classList.remove("tool-pdf__lang-opt--active");
+      enOpt.classList.add("tool-pdf__lang-opt--active");
+    } else {
+      nlOpt.classList.add("tool-pdf__lang-opt--active");
+      enOpt.classList.remove("tool-pdf__lang-opt--active");
+    }
+    if (btn) btn.setAttribute("aria-label", t("langLabel"));
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    try { localStorage.setItem("pa-tool-lang", lang); } catch (e) { /* */ }
+    translateDOM();
+    updateLangToggle();
+    buildFilterButtons();
+    filterAndRender();
+  }
 
   /* ===== DOM REFS ===== */
 
@@ -1562,9 +1903,18 @@
 
   /* ===== INIT ===== */
 
+  translateDOM();
+  updateLangToggle();
   buildFilterButtons();
   filterAndRender();
   handleHashNavigation();
+
+  var langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    langToggle.addEventListener("click", function () {
+      setLang(currentLang === "nl" ? "en" : "nl");
+    });
+  }
 
   /* ===== SEARCH ===== */
 
@@ -1582,10 +1932,11 @@
 
   function buildFilterButtons() {
     var html = "";
-    for (var i = 0; i < CATEGORIES.length; i++) {
-      var cat = CATEGORIES[i];
+    for (var i = 0; i < CAT_LABELS.length; i++) {
+      var cat = CAT_LABELS[i];
+      var label = currentLang === "en" ? cat.en : cat.nl;
       var activeClass = cat.id === activeCategory ? " tool-aria__filter--active" : "";
-      html += '<button class="tool-aria__filter' + activeClass + '" data-category="' + cat.id + '">' + escapeHtml(cat.label) + "</button>";
+      html += '<button class="tool-aria__filter' + activeClass + '" data-category="' + cat.id + '">' + escapeHtml(label) + "</button>";
     }
     filtersContainer.innerHTML = html;
   }
@@ -1645,8 +1996,8 @@
 
     if (filteredItems.length === 0) {
       html = '<div class="tool-aria__empty">' +
-        "<p>Geen resultaten voor &ldquo;" + escapeHtml(searchTerm || activeCategory) + "&rdquo;.</p>" +
-        "<p>Tip: probeer een Engelse naam (bijv. &ldquo;button&rdquo;) of een ARIA-attribuut (bijv. &ldquo;aria-label&rdquo;).</p>" +
+        "<p>" + t("noResults") + " &ldquo;" + escapeHtml(searchTerm || activeCategory) + "&rdquo;.</p>" +
+        "<p>" + t("noResultsTip") + "</p>" +
         "</div>";
     }
 
@@ -1656,19 +2007,19 @@
 
   function renderCard(item) {
     var id = (item.type === "role" ? "role-" : "attr-") + item.name;
-    var typeBadge = item.type === "role" ? "Rol" : "Attribuut";
+    var typeBadge = item.type === "role" ? t("badgeRole") : t("badgeAttribute");
 
     return '<div class="tool-aria__card" id="' + id + '">' +
       '<button class="tool-aria__card-header" aria-expanded="false" data-card="' + id + '">' +
         '<div class="tool-aria__card-meta">' +
           '<code class="tool-aria__card-name">' + escapeHtml(item.name) + "</code>" +
           '<span class="tool-aria__badge tool-aria__badge--' + item.type + '">' + typeBadge + "</span>" +
-          '<span class="tool-aria__badge tool-aria__badge--cat">' + escapeHtml(item.categoryLabel) + "</span>" +
+          '<span class="tool-aria__badge tool-aria__badge--cat">' + escapeHtml(getCatLabel(item)) + "</span>" +
         "</div>" +
         '<span class="tool-aria__chevron" aria-hidden="true"></span>' +
       "</button>" +
       '<div class="tool-aria__card-detail" hidden>' +
-        '<p class="tool-aria__card-desc">' + escapeHtml(item.description) + "</p>" +
+        '<p class="tool-aria__card-desc">' + escapeHtml(getDesc(item)) + "</p>" +
         renderDetailFields(item) +
         renderSnippet(item) +
       "</div>" +
@@ -1683,40 +2034,40 @@
   function renderRoleDetails(item) {
     var html = '<dl class="tool-aria__details">';
     if (item.htmlEquivalent) {
-      html += "<dt>HTML-equivalent</dt><dd><code>" + escapeHtml(item.htmlEquivalent) + "</code></dd>";
+      html += "<dt>" + t("htmlEquivalent") + "</dt><dd><code>" + escapeHtml(item.htmlEquivalent) + "</code></dd>";
     }
     if (item.superclassRoles && item.superclassRoles.length) {
-      html += "<dt>Superclass</dt><dd>" + escapeHtml(item.superclassRoles.join(", ")) + "</dd>";
+      html += "<dt>" + t("superclass") + "</dt><dd>" + escapeHtml(item.superclassRoles.join(", ")) + "</dd>";
     }
     if (item.requiredContext && item.requiredContext.length) {
-      html += "<dt>Vereiste context</dt><dd>" + renderLinkedItems(item.requiredContext, "role") + "</dd>";
+      html += "<dt>" + t("requiredContext") + "</dt><dd>" + renderLinkedItems(item.requiredContext, "role") + "</dd>";
     }
     if (item.requiredOwnedElements && item.requiredOwnedElements.length) {
-      html += "<dt>Vereiste kinderen</dt><dd>" + renderLinkedItems(item.requiredOwnedElements, "role") + "</dd>";
+      html += "<dt>" + t("requiredChildren") + "</dt><dd>" + renderLinkedItems(item.requiredOwnedElements, "role") + "</dd>";
     }
     if (item.supportedAttributes && item.supportedAttributes.length) {
-      html += "<dt>Ondersteunde attributen</dt><dd>" + renderLinkedItems(item.supportedAttributes, "attr") + "</dd>";
+      html += "<dt>" + t("supportedAttributes") + "</dt><dd>" + renderLinkedItems(item.supportedAttributes, "attr") + "</dd>";
     }
-    html += "<dt>Presentational children</dt><dd>" + (item.presentationalChildren ? "Ja" : "Nee") + "</dd>";
+    html += "<dt>" + t("presentationalChildren") + "</dt><dd>" + (item.presentationalChildren ? t("yes") : t("no")) + "</dd>";
     html += "</dl>";
     return html;
   }
 
   function renderAttributeDetails(item) {
     var html = '<dl class="tool-aria__details">';
-    html += "<dt>Waardetype</dt><dd><code>" + escapeHtml(item.valueType) + "</code></dd>";
+    html += "<dt>" + t("valueType") + "</dt><dd><code>" + escapeHtml(item.valueType) + "</code></dd>";
     if (item.allowedValues && item.allowedValues.length) {
       var vals = [];
       for (var i = 0; i < item.allowedValues.length; i++) {
         vals.push("<code>" + escapeHtml(item.allowedValues[i]) + "</code>");
       }
-      html += "<dt>Mogelijke waarden</dt><dd>" + vals.join(", ") + "</dd>";
+      html += "<dt>" + t("allowedValues") + "</dt><dd>" + vals.join(", ") + "</dd>";
     }
     if (item.usedByRoles && item.usedByRoles.length) {
-      html += "<dt>Gebruikt door</dt><dd>" + renderLinkedItems(item.usedByRoles, "role") + "</dd>";
+      html += "<dt>" + t("usedByRoles") + "</dt><dd>" + renderLinkedItems(item.usedByRoles, "role") + "</dd>";
     }
     if (item.htmlEquivalent) {
-      html += "<dt>HTML-equivalent</dt><dd><code>" + escapeHtml(item.htmlEquivalent) + "</code></dd>";
+      html += "<dt>" + t("htmlEquivalent") + "</dt><dd><code>" + escapeHtml(item.htmlEquivalent) + "</code></dd>";
     }
     html += "</dl>";
     return html;
@@ -1736,8 +2087,8 @@
     if (!item.snippet) return "";
     return '<div class="tool-aria__snippet">' +
       '<div class="tool-aria__snippet-header">' +
-        "<span>Codevoorbeeld</span>" +
-        '<button class="tool-aria__snippet-copy" data-copy aria-label="Kopieer codevoorbeeld">Kopieer</button>' +
+        "<span>" + t("codeExample") + "</span>" +
+        '<button class="tool-aria__snippet-copy" data-copy aria-label="' + t("copy") + '">' + t("copy") + "</button>" +
       "</div>" +
       "<pre><code>" + escapeHtml(item.snippet) + "</code></pre>" +
     "</div>";
@@ -1783,8 +2134,8 @@
   function copySnippet(btn) {
     var code = btn.closest(".tool-aria__snippet").querySelector("code");
     navigator.clipboard.writeText(code.textContent).then(function () {
-      btn.textContent = "Gekopieerd!";
-      setTimeout(function () { btn.textContent = "Kopieer"; }, 2000);
+      btn.textContent = t("copied");
+      setTimeout(function () { btn.textContent = t("copy"); }, 2000);
     });
   }
 

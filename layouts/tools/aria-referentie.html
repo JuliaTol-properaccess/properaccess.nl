@@ -2,8 +2,14 @@
 <section class="section pt-14">
   <div class="tool-container tool-container--wide">
 
-    <h1 class="mb-2">{{ .Title }}</h1>
-    <p class="tool-aria__intro">
+    <div class="tool-pdf__header">
+      <h1 class="mb-2"><span data-i18n="toolTitle">{{ .Title }}</span></h1>
+      <button type="button" class="tool-pdf__lang-btn" id="langToggle" aria-label="Switch to English">
+        <span class="tool-pdf__lang-opt tool-pdf__lang-opt--active" id="langOptNL">NL</span>
+        <span class="tool-pdf__lang-opt" id="langOptEN">EN</span>
+      </button>
+    </div>
+    <p class="tool-aria__intro" data-i18n-html="intro">
       Doorzoek alle WAI-ARIA rollen en attributen uit de
       <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2-specificatie</a>.
       Bekijk beschrijvingen, ondersteunde attributen, HTML-equivalenten en praktische codevoorbeelden.
@@ -11,11 +17,12 @@
 
     <!-- Search -->
     <div class="tool-aria__search">
-      <label for="ariaSearch" class="sr-only">Zoek een rol of attribuut</label>
+      <label for="ariaSearch" class="sr-only" data-i18n="searchLabel">Zoek een rol of attribuut</label>
       <input
         type="search"
         id="ariaSearch"
         class="tool-aria__search-input"
+        data-i18n-ph="searchPlaceholder"
         placeholder="Zoek bijv. &quot;button&quot;, &quot;aria-label&quot;, &quot;navigation&quot;..."
         autocomplete="off"
         spellcheck="false"
@@ -23,24 +30,24 @@
     </div>
 
     <!-- Category filters -->
-    <div class="tool-aria__filters" role="toolbar" aria-label="Filter op categorie">
+    <div class="tool-aria__filters" role="toolbar" aria-label="Filter op categorie" data-i18n-aria="filterAriaLabel">
     </div>
 
     <!-- Results count -->
     <div class="tool-aria__results-count" id="resultsCount" aria-live="polite"></div>
 
     <!-- Results -->
-    <div class="tool-aria__results" id="resultsGrid" role="region" aria-label="Resultaten">
+    <div class="tool-aria__results" id="resultsGrid" role="region" aria-label="Resultaten" data-i18n-aria="resultsAriaLabel">
     </div>
 
     <!-- Load more -->
-    <button class="tool-aria__load-more" id="loadMoreBtn" hidden>Toon meer resultaten</button>
+    <button class="tool-aria__load-more" id="loadMoreBtn" hidden data-i18n="loadMore">Toon meer resultaten</button>
 
     <!-- CTA -->
     <div class="tool-cta">
-      <p>ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website.
-      Wil je weten of jouw ARIA-implementatie klopt?</p>
-      <p><a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>.</p>
+      <p data-i18n-html="ctaHtml">ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website.
+      Wil je weten of jouw ARIA-implementatie klopt?
+      <a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>.</p>
     </div>
 
   </div>
