@@ -6945,6 +6945,67 @@ html.dark .tool-fout__level {
 }
 
 
+/* ─── Footer certifications ─── */
+.footer-certs-section {
+  background-color: #fff;
+}
+
+html.dark .footer-certs-section {
+  background-color: #fff;
+}
+
+.footer-certs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-certs__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1F2937;
+  white-space: nowrap;
+}
+
+html.dark .footer-certs__label {
+  color: #1F2937;
+}
+
+.footer-certs__logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-certs__logo {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-certs__logo--wide {
+  height: 80px;
+}
+
+@media (max-width: 640px) {
+  .footer-certs {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-certs__logo {
+    height: 48px;
+  }
+
+  .footer-certs__logo--wide {
+    height: 52px;
+  }
+}
+
 /* ═══════════════════════════════════════════════
    Voor Wie — Service pages (vw- prefix)
    ═══════════════════════════════════════════════ */
