@@ -63,35 +63,6 @@
     .qs-urgency p { margin: 0; }
 
 
-    /* ── Header ── */
-
-    .qs-header {
-      background: var(--qs-white);
-      border-bottom: 1px solid #e5e7eb;
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .qs-header__inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .qs-logo img { height: 32px; width: auto; }
-    .qs-header__phone {
-      color: var(--qs-navy);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9375rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: color 0.2s;
-    }
-    .qs-header__phone:hover { color: var(--qs-magenta); }
-
-
     /* ── Buttons ── */
 
     .qs-btn {
@@ -837,35 +808,6 @@
 
     /* ── Footer ── */
 
-    .qs-footer {
-      background: var(--qs-navy);
-      color: rgba(255,255,255,0.6);
-      padding: 2.5rem 0;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-    .qs-footer__brand {
-      font-weight: 600;
-      color: var(--qs-white);
-      margin: 0 0 0.5rem;
-      font-size: 0.9375rem;
-    }
-    .qs-footer__contact {
-      margin: 0;
-      font-size: 0.875rem;
-    }
-    .qs-footer__contact a {
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .qs-footer__contact a:hover { color: var(--qs-white); }
-    .qs-footer__sep {
-      margin: 0 0.75rem;
-      opacity: 0.4;
-    }
-
-
     /* ── Thank You Page ── */
 
     .qs-thankyou {
@@ -993,6 +935,14 @@
 </head>
 
 <body class="qs-page">
+  <!-- skiplink -->
+  <a href="#main-content" class="skiplink">Ga naar de inhoud</a>
+
+  {{ if hugo.IsProduction }}
+    {{ partialCached "preloader.html" . }}
+    {{ partialCached "gtm-noscript.html" . }}
+  {{ end }}
+
   <!-- Urgency Bar -->
   <div class="qs-urgency">
     <div class="qs-container">
@@ -1000,39 +950,16 @@
     </div>
   </div>
 
-  <!-- Minimal Header -->
-  <header class="qs-header">
-    <div class="qs-container qs-header__inner">
-      <a href="{{ site.Home.RelPermalink }}" class="qs-logo" aria-label="Proper Access — terug naar homepage">
-        {{ $logo := resources.Get "images/logo_pa_transparent.png" }}
-        {{ if $logo }}
-          <img src="{{ $logo.RelPermalink }}" alt="Proper Access" />
-        {{ end }}
-      </a>
-      <a href="tel:+31855055890" class="qs-header__phone">
-        <i class="fa-solid fa-phone" aria-hidden="true"></i>
-        085 5055 890
-      </a>
-    </div>
-  </header>
+  <!-- Standard site header -->
+  {{ partial "essentials/header.html" . }}
+  {{ partial "search-modal.html" (dict "Context" . ) }}
 
   <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
 
-  <!-- Minimal Footer -->
-  <footer class="qs-footer">
-    <div class="qs-container">
-      <p class="qs-footer__brand">Proper Access — digitale toegankelijkheid die werkt.</p>
-      <p class="qs-footer__contact">
-        <a href="{{ site.Home.RelPermalink }}">properaccess.nl</a>
-        <span class="qs-footer__sep" aria-hidden="true">|</span>
-        <a href="tel:+31855055890">085 5055 890</a>
-        <span class="qs-footer__sep" aria-hidden="true">|</span>
-        <a href="mailto:julia@properaccess.nl">julia@properaccess.nl</a>
-      </p>
-    </div>
-  </footer>
+  <!-- Standard site footer -->
+  {{ partial "essentials/footer.html" . }}
 
   {{ partialCached "essentials/script.html" . }}
 
@@ -1052,5 +979,11 @@
       els.forEach(function(el) { observer.observe(el); });
     })();
   </script>
+
+  {{ if hugo.IsProduction }}
+  <script>
+    (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('p1e024BoeBpaGB6d');
+  </script>
+  {{ end }}
 </body>
 </html>
