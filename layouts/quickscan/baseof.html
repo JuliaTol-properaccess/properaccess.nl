@@ -1004,7 +1004,10 @@
   <header class="qs-header">
     <div class="qs-container qs-header__inner">
       <a href="{{ site.Home.RelPermalink }}" class="qs-logo" aria-label="Proper Access — terug naar homepage">
-        <img src="{{ "images/logo_pa.png" | relURL }}" alt="Proper Access" />
+        {{ $logo := resources.Get "images/logo_pa_transparent.png" }}
+        {{ if $logo }}
+          <img src="{{ $logo.RelPermalink }}" alt="Proper Access" />
+        {{ end }}
       </a>
       <a href="tel:+31855055890" class="qs-header__phone">
         <i class="fa-solid fa-phone" aria-hidden="true"></i>
