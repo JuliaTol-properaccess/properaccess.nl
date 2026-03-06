@@ -6943,3 +6943,294 @@ html.dark .tool-fout__level {
     flex-direction: column;
   }
 }
+
+
+/* ═══════════════════════════════════════════════
+   Voor Wie — Service pages (vw- prefix)
+   ═══════════════════════════════════════════════ */
+
+.vw-section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #A30D4B;
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Hero ─── */
+.vw-hero {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background-color: #fff;
+  background-image: radial-gradient(circle, #A30D4B08 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.vw-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.vw-hero__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1.2;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+
+.vw-hero__subtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 1.5rem;
+}
+
+.vw-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.vw-hero__cta-secondary {
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
+.vw-hero__cta-secondary a {
+  color: #1F2937;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.vw-hero__cta-secondary a:hover {
+  color: #A30D4B;
+}
+
+.vw-hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.vw-hero__svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.08));
+  border-radius: 10px;
+}
+
+/* ─── Trust bar ─── */
+.vw-trust {
+  padding: 1.25rem 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.vw-trust .container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vw-trust__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1F2937;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.vw-trust__names {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vw-trust__names span {
+  font-size: 0.85rem;
+  color: #4B5563;
+  white-space: nowrap;
+}
+
+/* ─── Feature sections ─── */
+.vw-feature {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background-color: #fff;
+}
+
+.vw-feature--alt {
+  background-color: #f5f5f5;
+}
+
+.vw-feature__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.vw-feature--reversed {
+  direction: rtl;
+}
+
+.vw-feature--reversed > * {
+  direction: ltr;
+}
+
+.vw-feature__img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.vw-feature__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: #1F2937;
+  margin-bottom: 0.75rem;
+}
+
+.vw-feature__desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 1.25rem;
+}
+
+.vw-feature__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.vw-feature__list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.vw-feature__list li .fa-check {
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  color: #A30D4B;
+  font-size: 0.8rem;
+}
+
+/* ─── Stats bar ─── */
+.vw-stats {
+  padding: 2.5rem 0;
+  background-color: #004050;
+}
+
+.vw-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.vw-stats__number {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: #F5C842;
+  line-height: 1.2;
+}
+
+.vw-stats__label {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0.25rem;
+}
+
+/* ─── FAQ ─── */
+.vw-faq {
+  background-color: #1F2937;
+}
+
+.vw-faq__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vw-faq__container {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.vw-faq details.faq-item,
+html.dark .vw-faq details.faq-item {
+  background: #fff;
+  color: #1F2937;
+  border: 1px solid #e5e7eb;
+}
+
+.vw-faq summary.faq-question,
+html.dark .vw-faq summary.faq-question {
+  color: #1F2937;
+}
+
+html.dark .vw-faq summary.faq-question:hover {
+  color: #000;
+}
+
+.vw-faq .faq-answer,
+html.dark .vw-faq .faq-answer {
+  color: #4B5563;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .vw-hero__inner,
+  .vw-feature__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .vw-feature--reversed {
+    direction: ltr;
+  }
+
+  .vw-hero__visual {
+    order: -1;
+  }
+
+  .vw-hero__svg {
+    max-width: 300px;
+  }
+
+  .vw-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vw-trust .container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .vw-trust__names {
+    gap: 0.75rem;
+  }
+}
