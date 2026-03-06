@@ -50,7 +50,9 @@ Ja, er zijn boetes bij niet-naleving van de EAA. Maar het echte risico is het si
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw website scoort? [Neem contact op →](/contact/)
+Benieuwd hoe jouw website scoort? Bestel een Quickscan voor slechts 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+
+[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 
@@ -79,7 +81,9 @@ Musea en erfgoedinstellingen zetten hun collecties steeds vaker online. Maar de 
 
 {{< section-cta >}}
 
-Herken je een van deze problemen? [Laat het onderzoeken →](/contact/)
+Herken je een van deze problemen? Start met een Quickscan — binnen 2 werkdagen weet je waar je staat.
+
+[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 
@@ -133,10 +137,10 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 
 |                 | WCAG-audit | Strippenkaart | Abonnement |
 | --------------- | ---------- | ------------- | ---------- |
-| **Wanneer**     | Je wilt een compleet beeld van alle problemen op je site | Je hebt af en toe een vraag, een check of een review nodig | Je wilt doorlopende ondersteuning bij elke release |
-| **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Structureel meekijken bij alles |
-| **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Continue beschikbaarheid + periodieke checks |
-| **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties die structureel willen borgen |
+| **Wanneer**     | Je wilt een compleet beeld van alle problemen op je site | Je hebt af en toe een vraag, een check of een review nodig | Je hebt meer dan 5 websites of apps die jaarlijks geaudit moeten worden |
+| **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Alle digitale kanalen, doorlopend |
+| **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Jaarlijkse audits, meerjarenplanning en continue ondersteuning |
+| **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties met een groot digitaal portfolio die structureel willen borgen |
 | **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
 [Meer over de WCAG-audit →](/audit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/abonnement/)

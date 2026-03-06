@@ -251,6 +251,7 @@ html.dark .offerte-hero {
 .offerte-section {
   padding: 3.5rem 0;
   background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='0.8' fill='%23A30D4B' opacity='0.05'/%3E%3C/svg%3E");
   transition: background-color 0.3s;
 }
 
@@ -774,6 +775,7 @@ html.dark .offerte-content .protected-overlay button {
 
 .section-full {
   padding: 4rem 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='%23A30D4B' opacity='0.06'/%3E%3C/svg%3E");
 }
 
 .section-full--light {
@@ -861,6 +863,7 @@ html.dark .section-full__content strong {
 
 .section-cards {
   padding: 4rem 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v60M0 30h60' stroke='%23A30D4B' stroke-width='0.5' opacity='0.04'/%3E%3C/svg%3E");
 }
 
 .section-cards--light {
@@ -873,6 +876,7 @@ html.dark .section-cards--light {
 
 .section-cards--dark {
   background-color: #1F2937;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v60M0 30h60' stroke='%23ffffff' stroke-width='0.5' opacity='0.04'/%3E%3C/svg%3E");
 }
 
 .section-cards--dark .section-cards__title {
@@ -1026,7 +1030,8 @@ html.dark .section-card__content {
 
 .section-cta {
   padding: 4rem 0;
-  background-color: #ffffff;
+  background-color: #004050;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='%23ffffff' opacity='0.08'/%3E%3C/svg%3E");
 }
 
 .section-cta__inner {
@@ -1038,14 +1043,14 @@ html.dark .section-card__content {
 .section-cta__title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1F2937;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
 .section-cta__content {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #1F2937;
+  color: rgba(255,255,255,0.9);
 }
 
 .section-cta__content p {
