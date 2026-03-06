@@ -124,54 +124,23 @@
 {{ end }}
 
 <!-- ─── Trust bar ─── -->
+{{ with .Params.trust }}
 <section class="vw-trust">
   <div class="container">
-    <span class="vw-trust__label">Vertrouwd door overheidsorganisaties</span>
+    <span class="vw-trust__label">{{ .label }}</span>
     <div class="vw-trust__names">
-      <span>Provincie Noord-Holland</span>
-      <span>Provincie Zuid-Holland</span>
-      <span>Gemeente Amersfoort</span>
-      <span>Gemeente Alkmaar</span>
-      <span>Gemeente 's-Hertogenbosch</span>
-    </div>
-  </div>
-</section>
-
-<!-- ─── Features ─── -->
-{{ range $i, $e := .Params.features }}
-<section class="vw-feature {{ if (modBool $i 2) }}vw-feature--alt{{ end }}">
-  <div class="container">
-    <div class="vw-feature__inner {{ if not (modBool $i 2) }}vw-feature--reversed{{ end }}">
-      <div class="vw-feature__media">
-        {{ partial "image" (dict "Src" .image "Alt" .title "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "vw-feature__img") }}
-      </div>
-      <div class="vw-feature__content">
-        <h2 class="vw-feature__title">{{ .title | markdownify }}</h2>
-        <p class="vw-feature__desc">{{ .content | markdownify }}</p>
-        {{ with .bulletpoints }}
-        <ul class="vw-feature__list">
-          {{ range . }}
-          <li>
-            <i class="fa-solid fa-check" aria-hidden="true"></i>
-            {{ . | markdownify }}
-          </li>
-          {{ end }}
-        </ul>
-        {{ end }}
-        {{ with .button }}
-          {{ if .enable }}
-          <a class="btn btn-primary vw-feature__btn" href="{{ .link | absURL }}"
-            {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
-            {{ .label }}
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
-          {{ end }}
-        {{ end }}
-      </div>
+      {{ range .names }}
+      <span>{{ . }}</span>
+      {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
+
+<!-- ─── Content (shortcodes) ─── -->
+<article class="offerte-content">
+  {{ .Content }}
+</article>
 
 <!-- ─── Stats bar ─── -->
 <section class="vw-stats">
@@ -196,26 +165,6 @@
     </div>
   </div>
 </section>
-
-<!-- ─── FAQ ─── -->
-{{ with .Params.faqs }}
-<section class="section vw-faq">
-  <div class="container">
-    <span class="vw-section-label" style="text-align:center;display:block;">Veelgestelde vragen</span>
-    <h2 class="vw-faq__title">Alles over audits voor de overheid</h2>
-    <div class="vw-faq__container faq-container">
-      {{ range . }}
-      <details class="faq-item">
-        <summary class="faq-question">{{ .question }}</summary>
-        <div class="faq-answer">
-          <p>{{ .answer | markdownify }}</p>
-        </div>
-      </details>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
 
 <!-- ─── CTA ─── -->
 {{ partial "call-to-action.html" . }}
