@@ -23,12 +23,165 @@
           </span>
         </div>
       </div>
-      <div class="hp-hero__image">
-        {{ partial "image" (dict "Src" "/images/audit.webp" "Alt" "Illustratie van een toegankelijkheidsaudit met checklist en resultaten" "Loading" "eager" "Class" "hp-hero__img" "DisplayXL" "600x" "DisplayLG" "500x" "DisplayMD" "400x") }}
+      <div class="hp-hero__visual" aria-hidden="true">
+        <!-- Main dashboard: audit rapport overview -->
+        <svg viewBox="0 0 420 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--main">
+          <!-- Card background -->
+          <rect x="0" y="0" width="420" height="340" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <!-- Header bar -->
+          <rect x="0" y="0" width="420" height="44" rx="12" fill="#1F2937"/>
+          <rect x="0" y="12" width="420" height="32" fill="#1F2937"/>
+          <!-- Window dots -->
+          <circle cx="18" cy="22" r="4" fill="#ef4444" opacity="0.8"/>
+          <circle cx="32" cy="22" r="4" fill="#F5C842" opacity="0.8"/>
+          <circle cx="46" cy="22" r="4" fill="#22c55e" opacity="0.8"/>
+          <text x="66" y="26" fill="#fff" font-family="Nunito, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">Audit Rapport — bevindingen</text>
+
+          <!-- Column headers -->
+          <text x="16" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" text-transform="uppercase" letter-spacing="1">BEVINDING</text>
+          <text x="200" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">TYPE</text>
+          <text x="280" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">ISSUES</text>
+          <text x="330" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">BEPERKING</text>
+          <line x1="16" y1="75" x2="404" y2="75" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 1 -->
+          <text x="16" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Afbeeldingen zonder alt-tekst</text>
+          <rect x="200" y="84" width="56" height="18" rx="9" fill="#f0fdf4"/>
+          <text x="212" y="96" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
+          <text x="290" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">12</text>
+          <!-- Blind icon (eye-slash simplified) -->
+          <circle cx="348" cy="91" r="9" fill="#fef2f2"/>
+          <text x="344" y="95" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="91" r="9" fill="#fffbeb"/>
+          <text x="364" y="95" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="108" x2="404" y2="108" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 2 -->
+          <text x="16" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Formulier zonder label</text>
+          <rect x="200" y="117" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="129" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">8</text>
+          <circle cx="348" cy="124" r="9" fill="#fef2f2"/>
+          <text x="344" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="124" r="9" fill="#f0fdf4"/>
+          <text x="363" y="128" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+          <circle cx="388" cy="124" r="9" fill="#fef2f2"/>
+          <text x="384" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="141" x2="404" y2="141" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 3 -->
+          <text x="16" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Kleurcontrast onvoldoende</text>
+          <rect x="200" y="150" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="162" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">15</text>
+          <circle cx="348" cy="157" r="9" fill="#fef2f2"/>
+          <text x="344" y="161" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <line x1="16" y1="174" x2="404" y2="174" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 4 -->
+          <text x="16" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Koppenstructuur incorrect</text>
+          <rect x="200" y="183" width="56" height="18" rx="9" fill="#f0fdf4"/>
+          <text x="212" y="195" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
+          <text x="290" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">6</text>
+          <circle cx="348" cy="190" r="9" fill="#fef2f2"/>
+          <text x="344" y="194" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="190" r="9" fill="#fffbeb"/>
+          <text x="364" y="194" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="207" x2="404" y2="207" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 5 -->
+          <text x="16" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Focus niet zichtbaar</text>
+          <rect x="200" y="216" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="228" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">4</text>
+          <circle cx="348" cy="223" r="9" fill="#fef2f2"/>
+          <text x="344" y="227" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="223" r="9" fill="#f0fdf4"/>
+          <text x="363" y="227" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+          <line x1="16" y1="240" x2="404" y2="240" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 6 -->
+          <text x="16" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Taal van de pagina ontbreekt</text>
+          <rect x="200" y="249" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="261" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">1</text>
+          <circle cx="348" cy="256" r="9" fill="#fef2f2"/>
+          <text x="344" y="260" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="256" r="9" fill="#fffbeb"/>
+          <text x="364" y="260" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <circle cx="388" cy="256" r="9" fill="#f0fdf4"/>
+          <text x="383" y="260" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+
+          <!-- Legend at bottom -->
+          <line x1="16" y1="278" x2="404" y2="278" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="16" y="296" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5">BEPERKINGEN:</text>
+          <circle cx="100" cy="293" r="7" fill="#fef2f2"/>
+          <text x="96" y="296" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">V</text>
+          <text x="112" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Visueel</text>
+          <circle cx="166" cy="293" r="7" fill="#f0fdf4"/>
+          <text x="161" y="296" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">M</text>
+          <text x="178" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Motorisch</text>
+          <circle cx="244" cy="293" r="7" fill="#fffbeb"/>
+          <text x="240" y="296" fill="#b45309" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">C</text>
+          <text x="256" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Cognitief</text>
+
+          <!-- Total bar -->
+          <rect x="16" y="310" width="388" height="22" rx="4" fill="#f5f5f5"/>
+          <text x="24" y="325" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Totaal: 46 bevindingen</text>
+          <text x="320" y="325" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="10" font-weight="700">24/55 afgekeurd</text>
+        </svg>
+
+        <!-- Small floating card: impact verdeling -->
+        <svg viewBox="0 0 160 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--float">
+          <rect x="0" y="0" width="160" height="140" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <!-- Drop shadow via filter -->
+          <text x="14" y="24" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Impact verdeling</text>
+          <line x1="14" y1="32" x2="146" y2="32" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Groot -->
+          <circle cx="28" cy="52" r="8" fill="#A30D4B"/>
+          <text x="24" y="56" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">!</text>
+          <text x="42" y="56" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Groot</text>
+          <rect x="88" y="45" width="56" height="14" rx="3" fill="#fef2f2"/>
+          <rect x="88" y="45" width="38" height="14" rx="3" fill="#A30D4B" opacity="0.8"/>
+          <text x="130" y="55" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700">18</text>
+
+          <!-- Middel -->
+          <circle cx="28" cy="80" r="8" fill="#F5C842"/>
+          <text x="25" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">~</text>
+          <text x="42" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Middel</text>
+          <rect x="88" y="73" width="56" height="14" rx="3" fill="#fffbeb"/>
+          <rect x="88" y="73" width="28" height="14" rx="3" fill="#F5C842" opacity="0.7"/>
+          <text x="130" y="83" fill="#b45309" font-family="Nunito, sans-serif" font-size="9" font-weight="700">16</text>
+
+          <!-- Klein -->
+          <circle cx="28" cy="108" r="8" fill="#e5e7eb"/>
+          <text x="25" y="112" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8" font-weight="700">-</text>
+          <text x="42" y="112" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Klein</text>
+          <rect x="88" y="101" width="56" height="14" rx="3" fill="#f5f5f5"/>
+          <rect x="88" y="101" width="16" height="14" rx="3" fill="#d1d5db"/>
+          <text x="130" y="111" fill="#6b7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">12</text>
+        </svg>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- ─── TRUST BAR ─── -->
+<div class="hp-trust">
+  <div class="container">
+    <p class="hp-trust__label">Vertrouwd door</p>
+    <div class="hp-trust__names">
+      <span>Rijksmuseum</span>
+      <span>Van Gogh Museum</span>
+      <span>NRC</span>
+      <span>Prov. Noord-Holland</span>
+      <span>Museumvereniging</span>
+      <span>Prov. Zuid-Holland</span>
+    </div>
+  </div>
+</div>
 
 
 <!-- ─── HET VERSCHIL ─── -->
@@ -217,6 +370,27 @@
           Het rapport is het begin, niet het einde. Je kunt bij ons terecht
           met vragen over de bevindingen, zolang als nodig.
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── STATS BAR ─── -->
+<section class="hp-stats">
+  <div class="container">
+    <div class="hp-stats__grid">
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">900+</span>
+        <span class="hp-stats__label">audits uitgevoerd</span>
+      </div>
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">53</span>
+        <span class="hp-stats__label">klanten</span>
+      </div>
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">34%</span>
+        <span class="hp-stats__label">herhalingsklanten</span>
       </div>
     </div>
   </div>
