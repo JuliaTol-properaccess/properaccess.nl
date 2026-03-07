@@ -7615,9 +7615,25 @@ html.dark .footer-certs__label {
   flex-wrap: wrap;
 }
 
+.vw-hero__cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.vw-hero__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .vw-hero__cta-secondary {
   font-size: 0.9rem;
   color: #6B7280;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .vw-hero__cta-secondary a {
