@@ -7315,8 +7315,8 @@ html.dark .vw-faq .faq-answer {
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 1px 1px, rgba(163, 13, 75, 0.04) 1px, transparent 0);
-  background-size: 32px 32px;
+    radial-gradient(circle at 1.5px 1.5px, rgba(163, 13, 75, 0.12) 1.5px, transparent 0);
+  background-size: 28px 28px;
   pointer-events: none;
 }
 
