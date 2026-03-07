@@ -101,7 +101,7 @@ Nee. De meeste mensen die contact opnemen weten alleen: "Ik moet iets met toegan
 <summary class="faq-question">Wat moet ik aanleveren als ik een vraag stel?</summary>
 <div class="faq-answer">
 
-Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, om welk platform het gaat (WordPress, custom, React, etc.), wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt — ook prima. We vragen het wel.
+Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt — ook prima. We vragen het wel.
 
 </div>
 </details>
