@@ -110,7 +110,7 @@ Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat 
 <summary class="faq-question">Krijg ik direct een prijsopgave?</summary>
 <div class="faq-answer">
 
-Niet in de eerste mail. We begrijpen eerst je situatie. Daarna maken we een offerte op maat. Indicatie: een quickscan kost minder dan een volledige audit. We denken met je mee over wat het beste past bij je budget en je doel.
+Ja, je krijgt een offerte op maat. We vragen je situatie uit en sturen je een helder voorstel met een vaste prijs — geen verrassingen achteraf. We denken met je mee over wat het beste past bij je budget en je doel.
 
 </div>
 </details>
