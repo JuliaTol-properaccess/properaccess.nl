@@ -36,6 +36,12 @@ url = "/digital_agency"
 weight = 4
 
 [[main]]
+parent = "Voor wie"
+name = "Onderwijs"
+url = "/onderwijs-digitale-toegankelijkheid"
+weight = 5
+
+[[main]]
 name = "Diensten"
 weight = 3
 hasChildren = true
