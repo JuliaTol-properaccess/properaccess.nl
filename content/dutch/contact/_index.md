@@ -60,43 +60,6 @@ url: "/contact/"
   <div id="contact-form-status" role="status" aria-live="polite" style="margin-top: 1rem;"></div>
 </form>
 
-<script>
-(function() {
-  var form = document.getElementById('contact-form');
-  var status = document.getElementById('contact-form-status');
-  if (!form) return;
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Bezig met versturen...';
-    status.textContent = '';
-
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function(response) {
-      if (response.ok) {
-        form.reset();
-        status.innerHTML = '<p style="color: #166534; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 1rem; border-radius: 0.5rem; font-weight: 600;">Bedankt! Je bericht is verstuurd. We nemen binnen 1 werkdag contact met je op.</p>';
-        btn.disabled = false;
-        btn.innerHTML = 'Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
-      } else {
-        status.innerHTML = '<p style="color: #991b1b; background: #fef2f2; border: 1px solid #fecaca; padding: 1rem; border-radius: 0.5rem; font-weight: 600;">Er ging iets mis. Probeer het opnieuw of mail ons op contact@properaccess.nl.</p>';
-        btn.disabled = false;
-        btn.innerHTML = 'Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
-      }
-    }).catch(function() {
-      status.innerHTML = '<p style="color: #991b1b; background: #fef2f2; border: 1px solid #fecaca; padding: 1rem; border-radius: 0.5rem; font-weight: 600;">Er ging iets mis. Probeer het opnieuw of mail ons op contact@properaccess.nl.</p>';
-      btn.disabled = false;
-      btn.innerHTML = 'Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
-    });
-  });
-})();
-</script>
-
 {{< /section-full >}}
 
 
