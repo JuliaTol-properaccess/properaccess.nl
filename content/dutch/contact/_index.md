@@ -43,17 +43,17 @@ url: "/contact/"
 
   <div style="margin-bottom: 1.25rem;">
     <label for="contact-name" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">Naam <span aria-label="verplicht">*</span></label>
-    <input type="text" id="contact-name" name="naam" required autocomplete="name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
+    <input type="text" id="contact-name" name="naam" required autocomplete="name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
   </div>
 
   <div style="margin-bottom: 1.25rem;">
     <label for="contact-email" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">E-mailadres <span aria-label="verplicht">*</span></label>
-    <input type="email" id="contact-email" name="email" required autocomplete="email" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
+    <input type="email" id="contact-email" name="email" required autocomplete="email" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
   </div>
 
   <div style="margin-bottom: 1.25rem;">
     <label for="contact-message" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">Waar kunnen we je mee helpen? <span aria-label="verplicht">*</span></label>
-    <textarea id="contact-message" name="bericht" rows="5" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+    <textarea id="contact-message" name="bericht" rows="5" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>

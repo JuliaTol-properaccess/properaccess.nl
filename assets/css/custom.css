@@ -7300,3 +7300,34 @@ html.dark .vw-faq .faq-answer {
     gap: 0.75rem;
   }
 }
+
+
+/* ─── Contact form section ─── */
+
+#formulier {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+#formulier::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(163, 13, 75, 0.04) 1px, transparent 0);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+#formulier .section-full__inner {
+  position: relative;
+  z-index: 1;
+}
+
+#formulier .contact-form input[type="text"],
+#formulier .contact-form input[type="email"],
+#formulier .contact-form textarea {
+  border-color: #6B7280;
+  background: #fff;
+}
