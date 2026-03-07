@@ -7280,11 +7280,7 @@ html.dark .vw-faq .faq-answer {
   }
 
   .vw-hero__visual {
-    order: -1;
-  }
-
-  .vw-hero__svg {
-    max-width: 300px;
+    display: none;
   }
 
   .vw-stats__grid {
