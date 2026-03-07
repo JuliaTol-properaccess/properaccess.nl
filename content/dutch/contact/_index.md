@@ -88,39 +88,49 @@ url: "/contact/"
 
 {{< section-full title="Veelgestelde vragen" bg="light" >}}
 
-<details>
-<summary>Moet ik precies weten wat ik nodig heb?</summary>
+<details class="faq-item">
+<summary class="faq-question">Moet ik precies weten wat ik nodig heb?</summary>
+<div class="faq-answer">
 
 Nee. De meeste mensen die contact opnemen weten alleen: "Ik moet iets met toegankelijkheid, maar wat precies?" Dat is prima. Wij helpen je uitzoeken wat de beste aanpak is.
 
+</div>
 </details>
 
-<details>
-<summary>Wat moet ik aanleveren als ik een vraag stel?</summary>
+<details class="faq-item">
+<summary class="faq-question">Wat moet ik aanleveren als ik een vraag stel?</summary>
+<div class="faq-answer">
 
 Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, om welk platform het gaat (WordPress, custom, React, etc.), wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt — ook prima. We vragen het wel.
 
+</div>
 </details>
 
-<details>
-<summary>Krijg ik direct een prijsopgave?</summary>
+<details class="faq-item">
+<summary class="faq-question">Krijg ik direct een prijsopgave?</summary>
+<div class="faq-answer">
 
 Niet in de eerste mail. We begrijpen eerst je situatie. Daarna maken we een offerte op maat. Indicatie: een quickscan kost minder dan een volledige audit. We denken met je mee over wat het beste past bij je budget en je doel.
 
+</div>
 </details>
 
-<details>
-<summary>Bieden jullie spoedservice aan?</summary>
+<details class="faq-item">
+<summary class="faq-question">Bieden jullie spoedservice aan?</summary>
+<div class="faq-answer">
 
 Soms wel. Neem direct contact op en vermeld dat het om spoed gaat — dan kijken we wat mogelijk is. Bijvoorbeeld als de toezichthouder belt, een klant een toegankelijkheidsverklaring eist, of je over 3 weken lanceert.
 
+</div>
 </details>
 
-<details>
-<summary>Waar zijn jullie gevestigd?</summary>
+<details class="faq-item">
+<summary class="faq-question">Waar zijn jullie gevestigd?</summary>
+<div class="faq-answer">
 
 In Eemnes. Maar we werken volledig digitaal — dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
 
+</div>
 </details>
 
 {{< /section-full >}}
