@@ -1,298 +1,201 @@
 {{ define "main" }}
-  <!-- Banner -->
-  {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-8 text-center">
-            <h1 class="mb-6 text-h3 lg:text-h1">
-              {{ .title | markdownify }}
-            </h1>
-            <div class="mb-8 text-lg">
-              {{ .content | markdownify }}
-            </div>
 
-            {{ with .bulletpoints }}
-              <ul class="mb-8 text-left inline-block">
-                {{ range . }}
-                  <li class="flex items-start mb-3">
-                    <span class="text-primary mr-3 text-xl">✓</span>
-                    <span>{{ . | markdownify }}</span>
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
-
-            {{ with .button }}
-              {{ if .enable }}
-                <div class="mt-8">
-                  <a class="btn btn-primary" href="{{ .link | relLangURL }}">
-                    {{ .label }}
-                  </a>
-                </div>
-              {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </section>
-  {{ end }}
-
-
-  <!-- Features -->
-  {{ with .Params.features }}
-    <section class="section">
-      <div class="container">
-        {{ range $index, $feature := . }}
-          <div class="row items-center mb-12">
-            <!-- Content links -->
-            <div class="lg:col-6 mb-6 lg:mb-0">
-              <h2 class="mb-4">{{ $feature.title | markdownify }}</h2>
-              <div class="mb-6">
-                {{ $feature.content | markdownify }}
-              </div>
-
-              {{ with $feature.bulletpoints }}
-                <ul class="space-y-3">
-                  {{ range . }}
-                    <li class="flex items-start">
-                      <span class="text-primary mr-3 mt-1">✓</span>
-                      <span>{{ . | markdownify }}</span>
-                    </li>
-                  {{ end }}
-                </ul>
-              {{ end }}
-
-              {{ with $feature.button }}
-                {{ if .enable }}
-                  <a
-                    class="btn btn-outline-primary mt-6 inline-block"
-                    href="{{ .link | relLangURL }}">
-                    {{ .label }}
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
-
-            <!-- Afbeelding rechts -->
-            <div class="lg:col-6">
-              {{ if $feature.image }}
-                <img
-                  src="{{ $feature.image | relURL }}"
-                  alt="{{ $feature.title }}"
-                  class="w-full rounded-lg shadow-lg" />
-              {{ end }}
-            </div>
-          </div>
+<!-- ─── Hero ─── -->
+{{ with .Params.banner }}
+<section class="vw-hero">
+  <div class="container">
+    <div class="vw-hero__inner">
+      <div class="vw-hero__text">
+        <span class="vw-section-label">{{ $.Params.title }}</span>
+        <h1 class="vw-hero__title">{{ .title | markdownify }}</h1>
+        <p class="vw-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bulletpoints }}
+        <ul class="au-hero__bullets">
+          {{ range . }}
+          <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
         {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-
-  <!-- Comparison -->
-  {{ with .Params.comparison }}
-    <section class="section bg-theme-light">
-      <div class="container">
-        <div class="row justify-center mb-8">
-          <div class="lg:col-10 text-center">
-            <h2 class="mb-4">{{ .title | markdownify }}</h2>
-            {{ if .content }}
-              <p class="text-lg">{{ .content | markdownify }}</p>
-            {{ end }}
-          </div>
-        </div>
-        <div class="row mb-8">
-          <!-- Not column - neutrale kleuren -->
-          {{ with .not }}
-            <div class="lg:col-6 mb-8 lg:mb-0">
-              <div
-                class="rounded-lg border-2 border-border bg-theme-light dark:bg-content2 p-8 h-full">
-                <h3 class="mb-6 text-h4 text-[#474747] dark:text-white">
-                  {{ .title | markdownify }}
-                </h3>
-                <ul class="space-y-4">
-                  {{ range .items }}
-                    <li class="flex items-start">
-                      <span class="mr-3 text-xl flex-shrink-0">❌</span>
-                      <span class="text-[#474747] dark:text-white"
-                        >{{ . | markdownify }}</span
-                      >
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-          {{ end }}
-
-
-          <!-- Yes column - neutrale kleuren -->
-          {{ with .yes }}
-            <div class="lg:col-6">
-              <div
-                class="rounded-lg border-2 border-border bg-white p-8 h-full">
-                <h3 class="mb-6 text-h4 text-[#474747]">
-                  {{ .title | markdownify }}
-                </h3>
-                <ul class="space-y-4">
-                  {{ range .items }}
-                    <li class="flex items-start">
-                      <span class="mr-3 text-xl flex-shrink-0">✅</span>
-                      <span class="text-[#474747]">{{ . | markdownify }}</span>
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-          {{ end }}
-        </div>
-
         {{ with .button }}
           {{ if .enable }}
-            <div class="row justify-center">
-              <div class="text-center">
-                <a class="btn btn-primary" href="{{ .link | relLangURL }}">
-                  {{ .label }}
-                </a>
-              </div>
+            <div class="vw-hero__actions">
+              <a class="btn btn-primary" href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
+                {{ .label }}
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <span class="vw-hero__cta-secondary">
+                Of bel direct: <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>
+              </span>
             </div>
           {{ end }}
         {{ end }}
       </div>
-    </section>
-  {{ end }}
+      <div class="vw-hero__visual" aria-hidden="true">
+        <!-- SVG: Team / expertise illustratie -->
+        <svg viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="vw-hero__svg">
+          <!-- Background card -->
+          <rect x="50" y="30" width="300" height="380" rx="16" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
 
+          <!-- Header bar -->
+          <rect x="70" y="55" width="260" height="40" rx="8" fill="#1F2937"/>
+          <text x="90" y="80" fill="#fff" font-family="Nunito, sans-serif" font-size="12" font-weight="700">Proper Access</text>
+          <rect x="245" y="65" width="65" height="20" rx="10" fill="#A30D4B"/>
+          <text x="255" y="79" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Since 2019</text>
 
-  <!-- Team -->
-  {{ with .Params.team }}
-    <section class="section">
-      <div class="container">
-        <div class="row justify-center mb-12">
-          <div class="lg:col-10 text-center">
-            <h2 class="mb-4">{{ .title | markdownify }}</h2>
-          </div>
-        </div>
+          <!-- Stat blocks row -->
+          <rect x="70" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="110" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">900+</text>
+          <text x="110" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">audits</text>
 
-        {{ range .members }}
-          <div class="row mb-12">
-            <!-- Afbeelding links (3 kolommen) -->
-            <div class="lg:col-3 mb-6 lg:mb-0 text-center lg:text-left">
-              {{ if .image }}
-                <img
-                  src="{{ .image | relURL }}"
-                  alt="{{ .name }}"
-                  class="w-full max-w-xs mx-auto lg:mx-0 rounded-lg shadow-lg" />
-              {{ end }}
-            </div>
+          <rect x="160" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="200" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">53</text>
+          <text x="200" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">klanten</text>
 
-            <!-- Content rechts (9 kolommen) -->
-            <div class="lg:col-9">
-              <div class="rounded-lg bg-theme-light pl-12">
-                <div class="mb-4">
-                  <h3 class="text-h4 mb-2">{{ .name }}</h3>
-                  <p class="text-primary font-semibold dark:text-white">
-                    {{ .role }}
-                  </p>
-                </div>
+          <rect x="250" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="290" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">34%</text>
+          <text x="290" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">herhaalt</text>
 
-                <div class="mb-6">
-                  {{ .bio | markdownify }}
-                </div>
+          <!-- Checklist items -->
+          <rect x="70" y="185" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="203" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 203 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="207" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Rapport per element, niet per criterium</text>
 
-                {{ with .highlights }}
-                  <ul class="space-y-2">
-                    {{ range . }}
-                      <li class="flex items-start">
-                        <span class="text-primary mr-3 mt-1">✓</span>
-                        <span>{{ . | markdownify }}</span>
-                      </li>
-                    {{ end }}
-                  </ul>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        {{ end }}
+          <rect x="70" y="229" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="247" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 247 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="251" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Onbeperkt vragen stellen na de audit</text>
+
+          <rect x="70" y="273" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="291" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 291 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="295" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Concrete oplossingen in code</text>
+
+          <rect x="70" y="317" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="335" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 335 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="339" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Eigen research en testen op hulpsoftware</text>
+
+          <!-- Floating badge -->
+          <rect x="240" y="365" width="100" height="32" rx="16" fill="#A30D4B" filter="url(#ov-shadow)"/>
+          <text x="290" y="385" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="700" text-anchor="middle">IAAP certified</text>
+
+          <!-- Floating magnifier -->
+          <circle cx="80" cy="385" r="18" fill="#f9fafb" stroke="#1F2937" stroke-width="1.5"/>
+          <circle cx="80" cy="385" r="8" fill="none" stroke="#A30D4B" stroke-width="2"/>
+          <line x1="86" y1="391" x2="96" y2="401" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+          <defs>
+            <filter id="ov-shadow" x="-4%" y="-4%" width="108%" height="116%">
+              <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
+            </filter>
+          </defs>
+        </svg>
       </div>
-    </section>
-  {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
+<!-- ─── Trust bar ─── -->
+{{ with .Params.trust }}
+<section class="vw-trust">
+  <div class="container">
+    <span class="vw-trust__label">{{ .label }}</span>
+    <div class="vw-trust__names">
+      {{ range .names }}
+      <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
-  <!-- Stats -->
-  {{ with .Params.stats }}
-    <section class="section bg-primary text-white">
-      <div class="container">
-        <div class="row justify-center mb-12">
-          <div class="lg:col-10 text-center">
-            <h2 class="mb-4 text-white">{{ .title | markdownify }}</h2>
-          </div>
+<!-- ─── Content (shortcodes) ─── -->
+<article class="offerte-content">
+  {{ .Content }}
+</article>
+
+<!-- ─── Team ─── -->
+{{ with .Params.team }}
+<section class="ov-team">
+  <div class="container">
+    <h2 class="ov-team__title">{{ .title }}</h2>
+    <div class="ov-team__grid">
+      {{ range .members }}
+      <div class="ov-team__member">
+        {{ if .image }}
+        <div class="ov-team__photo">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" />
         </div>
-        <div class="row">
-          {{ range .items }}
-            <div class="lg:col-4 md:col-6 mb-8">
-              <div class="text-center">
-                <h3 class="mb-2 text-h5 font-bold text-white">{{ .label }}</h3>
-                <p class="text-sm text-white opacity-90">{{ .value }}</p>
-              </div>
-            </div>
-          {{ end }}
-        </div>
-
-        {{ if .note }}
-          <div class="row justify-center mt-8">
-            <div class="lg:col-10 text-center text-sm opacity-90">
-              {{ .note | markdownify }}
-            </div>
-          </div>
         {{ end }}
-
-        {{ with .button }}
-          {{ if .enable }}
-            <div class="row justify-center mt-8">
-              <div class="text-center">
-                <a class="btn btn-outline" href="{{ .link | relLangURL }}">
-                  {{ .label }}
-                </a>
-              </div>
-            </div>
-          {{ end }}
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-
-  <!-- FAQs -->
-  {{ with .Params.faqs }}
-    <section class="section">
-      <div class="container">
-        <div class="row justify-center mb-12">
-          <div class="lg:col-10 text-center">
-            <h2 class="mb-4">Veelgestelde vragen</h2>
-          </div>
-        </div>
-        <div class="row justify-center">
-          <div class="lg:col-8">
+        <div class="ov-team__info">
+          <h3 class="ov-team__name">{{ .name }}</h3>
+          <span class="ov-team__role">{{ .role }}</span>
+          <div class="ov-team__bio">{{ .bio | markdownify }}</div>
+          {{ with .highlights }}
+          <ul class="ov-team__highlights">
             {{ range . }}
-              <details
-                class="mb-6 rounded-lg border border-border p-6 bg-white dark:bg-theme-light">
-                <summary
-                  class="cursor-pointer font-semibold text-lg mb-2 text-[#474747]">
-                  {{ .question }}
-                </summary>
-                <div class="mt-4 prose max-w-none text-[#474747]">
-                  {{ .answer | markdownify }}
-                </div>
-              </details>
+            <li>{{ . | markdownify }}</li>
             {{ end }}
-          </div>
+          </ul>
+          {{ end }}
         </div>
       </div>
-    </section>
-  {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
+<!-- ─── Stats bar ─── -->
+<section class="vw-stats">
+  <div class="container">
+    <div class="vw-stats__grid">
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">900+</span>
+        <span class="vw-stats__label">audits uitgevoerd</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">53</span>
+        <span class="vw-stats__label">opdrachtgevers</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">34%</span>
+        <span class="vw-stats__label">herhalingsklanten</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">&lt; 1 dag</span>
+        <span class="vw-stats__label">reactietijd</span>
+      </div>
+    </div>
+    {{ with .Params.stats.note }}
+    <p class="ov-stats__note">{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
+</section>
 
-  <!-- Call to Action -->
-  {{ partial "call-to-action.html" . }}
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="section hp-faq">
+  <div class="container">
+    <h2 class="hp-section-title">Veelgestelde vragen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
 
 {{ end }}

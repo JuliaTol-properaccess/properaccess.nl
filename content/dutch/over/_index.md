@@ -23,36 +23,27 @@ banner:
   title: "Over Proper Access"
   content: >
     Je website moet toegankelijk worden. Dat is niet alleen een wettelijke verplichting —
-    het bepaalt of je **15–25% van je potentiële klanten** wegjaagt of verwelkomt.
+    het bepaalt of je **15-25% van je potentiële klanten** wegjaagt of verwelkomt.
     Bij Proper Access krijg je de technische diepgang van een sterk team én de menselijke
     begeleiding die je nodig hebt om er écht iets mee te doen.
   bulletpoints:
     - "Opgericht door Julia Tol, senior WCAG-auditor"
-    - "Betrokken bij DigiToegankelijk TOP Logius 2022–2026"
+    - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
     - "900+ audits uitgevoerd sinds 2019"
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"
-    link: "/auditbureau-digitale-toegankelijkheid/#cta"
+    link: "/contact/"
 
-features:
-  - title: "Waarom doen we dit?"
-    content: >
-      Er zijn genoeg auditbureaus. Bureaus die je een rapport opleveren met tientallen
-      succescriteria, zonder dat je snapt wat je ermee moet. **Wij zijn begonnen omdat
-      we daar zelf moe van waren.**
-
-      Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet willen,
-      maar omdat rapportages onbegrijpelijk zijn, er geen concrete oplossingen worden
-      aangedragen, en je na het rapport alleen staat.
-    bulletpoints:
-      - "Rapporten die je team direct kan gebruiken"
-      - "Een partner die meedenkt — ook na de audit"
-      - "Kennis van programmeertalen, WCAG, UX én gedragswetenschappen"
-      - "Kritisch testen: hoe gedragen browsers en hulpsoftware zich écht?"
-    button:
-      enable: false
-    image: "/images/rapport.webp"
+trust:
+  label: "Vertrouwd door"
+  names:
+    - Rijksmuseum
+    - Prov. Noord-Holland
+    - NRC
+    - Museumvereniging
+    - Eteck
+    - Jumbo
 
 team:
   title: "Wie gaat mij helpen?"
@@ -63,10 +54,11 @@ team:
       bio: >
         Julia heeft Proper Access opgericht met één doel: digitale toegankelijkheid
         **praktisch** maken. Niet theoretisch, niet academisch, maar toepasbaar.
-        Haar kracht zit het zit in begrijpen wat developers en contentmakers nodig hebben, en in de drive om te zorgen dat ze daar ook komen.
+        Haar kracht zit in begrijpen wat developers en contentmakers nodig hebben,
+        en in de drive om te zorgen dat ze daar ook komen.
       highlights:
         - "Senior WCAG-auditor"
-        - "Betrokken bij DigiToegankelijk TOP Logius 2022–2026"
+        - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
         - "IAAP-gecertificeerd (WAS)"
         - "900+ audits uitgevoerd sinds 2019"
     - name: "Het team"
@@ -74,36 +66,19 @@ team:
       image: "/images/pages/iaap.webp"
       bio: >
         Julia heeft een team samengesteld van mensen met dezelfde passie.
-        We bespreken wekelijks de feedback op onze rapporten, de WCAG-richtlijnen, hulpsoftware support en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
+        We bespreken wekelijks de feedback op onze rapporten, de WCAG-richtlijnen, hulpsoftware support
+        en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
         We doen eigen research — want *"dat staat in de standaard"* is voor ons niet genoeg.
         We willen weten of we de standaard correct interpreteren.
       highlights:
-        - "Wekelijks bijscholen over WCAG richtlijnen en technieken en de feedback die we krijgen op onze rapporten"
+        - "Wekelijks bijscholen over WCAG richtlijnen en technieken"
         - "Eigen research en testen op echte hulpsoftware"
         - "Kritische vragen: is dit advies waar? Wanneer is dit getest?"
         - "6-ogen controle: elk rapport wordt door minimaal 2 collega's gelezen"
-        - "Uitleg zonder jargon, zonder ambtenaren taalgebruik"
+        - "Uitleg zonder jargon, zonder ambtenarrentaal"
 
 stats:
-  title: "De feiten op een rij"
-  items:
-    - label: "900+ audits"
-      value: "Ervaring met organisaties van alle groottes en sectoren, sinds 2019"
-    - label: "IAAP-gecertificeerd"
-      value: "Internationale erkenning als WCAG-expert (WAS en CPACC)"
-    - label: "Sterk technisch team"
-      value: "Wij begrijpen code, browsers én hulpsoftware"
-    - label: "DigiToegankelijk TOP Logius"
-      value: "Betrokken bij overheidsbeleid op digitale toegankelijkheid 2022–2026"
-    - label: "Eerlijke tarieven"
-      value: "We zijn een digitaal bedrijf zonder grote overhedskosten. Geen verrassingen, geen verborgen kosten"
-    - label: "Partnerschap"
-      value: "Geen eenmalig contact — je mag onbeperkt vragen stellen"
   note: "**Proper Access BV** · KvK: 95350985 · OB-nummer: NL867096755B01"
-  button:
-    enable: true
-    label: "Offerte aanvragen"
-    link: "/offerte-wcag-onderzoek/"
 
 faqs:
   - question: "Waarom zijn jullie beter dan andere auditbureaus?"
@@ -147,3 +122,74 @@ faqs:
       Of je nu een Nederlandse overheidsinstelling bent, een internationale e-commerce speler,
       of een museum met bezoekers over de hele wereld — wij helpen je verder.
 ---
+
+{{< section-full title="Waarom doen we dit?" >}}
+
+Er zijn genoeg auditbureaus. Bureaus die je een rapport opleveren met tientallen succescriteria, zonder dat je snapt wat je ermee moet. **Wij zijn begonnen omdat we daar zelf moe van waren.**
+
+Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet willen, maar omdat rapportages onbegrijpelijk zijn, er geen concrete oplossingen worden aangedragen, en je na het rapport alleen staat.
+
+{{< /section-full >}}
+
+
+{{< section-cards title="Wat ons anders maakt" columns="2" bg="light" >}}
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+  <h3 class="card__title">Rapport per element</h3>
+  <p>Niet per succescriterium, maar <strong>per element op de pagina</strong>. Je team ziet direct wat er moet veranderen — zonder vertaalslag.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+  <h3 class="card__title">Onbeperkt vragen stellen</h3>
+  <p>Na de audit verdwijnen we niet. Je mag <strong>zoveel vragen stellen als je wilt</strong>. We denken mee tot het opgelost is.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+  <h3 class="card__title">Eigen research</h3>
+  <p>We testen zelf met hulpsoftware en browsers. <strong>"Dat staat in de standaard"</strong> is voor ons niet genoeg — we willen weten of het klopt.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+  <h3 class="card__title">Onafhankelijk</h3>
+  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong> — alleen eerlijk advies.</p>
+</div>
+{{< /section-cards >}}
+
+
+{{< section-cards title="Kennis van alle kanten" subtitle="Wij begrijpen code, browsers én hulpsoftware" columns="3" >}}
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+  <h3 class="card__title">Programmeertalen</h3>
+  <p>HTML, CSS, JavaScript, ARIA — wij lezen en schrijven code. Onze oplossingen zijn direct bruikbaar voor developers.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-universal-access" aria-hidden="true"></i></div>
+  <h3 class="card__title">WCAG & wetgeving</h3>
+  <p>WCAG 2.2, EN 301 549, European Accessibility Act, Wet digitale overheid — we kennen de regels en helpen je ze toe te passen.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
+  <h3 class="card__title">Hulpsoftware</h3>
+  <p>NVDA, JAWS, VoiceOver, TalkBack — we testen op echte hulpsoftware en weten hoe browsers en screenreaders zich gedragen.</p>
+</div>
+{{< /section-cards >}}
+
+
+{{< section-full title="Directe toegang tot de auditor" bg="light" >}}
+
+Geen account managers, geen project managers ertussen. Bij Proper Access praat je **direct met de auditor** die je rapport schrijft. Dat scheelt tijd, misverstanden en frustratie.
+
+Heb je een technische vraag? Die wordt beantwoord door iemand die je code begrijpt. Wil je sparren over de beste aanpak? We denken mee — ook als het buiten de scope van de audit valt.
+
+[Plan een kennismaking](/contact/) | [Bel ons: 085 5055 890](tel:+31855055890)
+
+{{< /section-full >}}
+
+
+{{< section-cta title="Wil je weten wat we voor jou kunnen betekenen?" >}}
+
+We nemen 30 minuten om te horen wat jouw situatie is, een eerste inschatting te geven en uit te leggen hoe we werken. **Geen verplichtingen. Wel waardevol inzicht.**
+
+[Plan een kennismaking](/contact/) | [Bel ons: 085 5055 890](tel:+31855055890)
+
+{{< /section-cta >}}
