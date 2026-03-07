@@ -36,7 +36,7 @@ url: "/contact/"
 
 {{< section-full title="Of stuur een bericht" id="formulier" >}}
 
-<form action="https://formspree.io/f/xvzwowrw" method="POST" class="contact-form" style="max-width: 600px;">
+<form action="https://formspree.io/f/xjgeyqej" method="POST" class="contact-form" style="max-width: 600px;">
   <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
   <input type="hidden" name="_subject" value="Nieuw contactformulier bericht" />
   <input type="hidden" name="_next" value="{{ "contact-bedankt/" | absURL }}" />
