@@ -4,51 +4,76 @@ weight: 5
 date: 2024-12-05
 slug: "training-devteams"
 url: "/training-devteams/"
-layout: "home-layout"
+layout: "agency"
 description: "Praktische WCAG-training voor developmentteams. Leer toegankelijk bouwen, testen en implementeren volgens WCAG 2.2 en EAA."
 keywords:
   - wcag training developers
   - training digitale toegankelijkheid devteams
   - toegankelijkheid training webdevelopers
 
+banner:
+  title: "Leer toegankelijk bouwen — praktisch en technisch"
+  content: "Na deze training maakt je team 80% minder toegankelijkheidsfouten. De training is gebaseerd op de projecten van je team, hands-on, en je team leert zelf toegankelijkheid testen."
+  button:
+    enable: true
+    label: "Vraag een offerte aan"
+    link: "/contact/"
+
+trust:
+  label: "Onderwerpen"
+  names:
+    - "Semantische HTML"
+    - "ARIA"
+    - "Toetsenbordnavigatie"
+    - "Focusmanagement"
+    - "Screenreader-testen"
 ---
 
-# Training digitale toegankelijkheid voor webdevelopers
+{{< section-full title="Waarom deze training?" >}}
 
-Leer toegankelijk bouwen met een praktische, technische training voor jouw developmentteam.
+- **Praktisch en technisch** — ontwikkelvaardigheden in semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en contrastoptimalisatie
+- **Gegeven door IAAP-gecertificeerde auditors** met ervaring in WCAG-EM audits en toegankelijke development in de praktijk
+- **Direct toepasbaar** — tips en technieken die je team meteen kan toepassen in lopende projecten
+- **Wet- en normveilig** — werken volgens WCAG 2.2 AA en actuele toegankelijkheidswetgeving (EAA, Wet Digitale Overheid)
 
-Na deze training maakt je team 80% minder fouten!
+{{< /section-full >}}
 
-- Training is gebaseerd op de projecten van je team
-- Hand-on mee doen
-- Je team leert zelf toegankelijkheid testen
+{{< section-cards title="Wat leer je in deze training?" columns="2" bg="light" >}}
+{{< section-card title="Semantiek en toegankelijke UI" >}}
 
-[Binnen 2 dagen een offerte] of 085 5055 890
+Correct gebruik van HTML-structuur en ARIA-toepassingen voor WCAG-conformiteit.
 
+{{< /section-card >}}
+{{< section-card title="Interactie voor iedereen" >}}
 
-## Waarom deze training?
+Toetsenbordtoegang, screenreaderflows, formuliervalidatie en toegankelijke interactieve componenten.
 
-- Praktisch en technisch: ontwikkelvaardigheden in semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en contrastoptimalisatie.
-- Gegeven door IAAP-gecertificeerde auditors met ervaring in WCAG-EM audits en toegankelijke development in de praktijk.    
-- Direct toepasbaar: tips en technieken die je team meteen kan implementeren in lopende projecten.    
-- Wet- en normveilig: werken volgens WCAG 2.2 AA en actuele toegankelijkheidswetgeving (EAA, Wet Digitale Overheid).
-    
+{{< /section-card >}}
+{{< section-card title="Toegankelijk testen" >}}
 
-Leerdoelen
+Direct tijdens ontwikkeling testen met tools als Chrome DevTools en Axe.
 
-## Wat leer je in deze training?
+{{< /section-card >}}
+{{< section-card title="WCAG-EM in de praktijk" >}}
 
-- Semantiek en toegankelijke UI: correct gebruik van HTML-structuur en ARIA-toepassingen voor WCAG-conformiteit.    
-- Interactie voor iedereen: toetsenbordtoegang, screenreaderflows, formulier­validatie en toegankelijke interactieve componenten.    
-- Toegankelijk testen: direct tijdens ontwikkeling met tools als Chrome DevTools en Axe.   
-- Implementeren van WCAG-EM: vertaal auditbevindingen naar concrete ontwikkelacties met codevoorbeelden en checklists.
-    
+Vertaal auditbevindingen naar concrete ontwikkelacties met codevoorbeelden en checklists.
 
-Doelgroep
+{{< /section-card >}}
+{{< /section-cards >}}
 
-## Voor wie is deze training?
+{{< section-cta >}}
 
-- Front-end developers en full-stack teams die technisch de diepte in willen.   
-- Agencies die toegankelijkheidskennis willen integreren in hun dienstenaanbod    
-- Overheid en e-diensten die moeten voldoen aan EAA- en WCAG-verplichtingen.    
-- E-commerce en culturele instellingen die conversie en inclusiviteit willen verbeteren.
+Binnen 2 werkdagen een offerte op maat. Of bel direct.
+
+[Vraag een offerte aan →](/contact/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
+
+{{< /section-cta >}}
+
+{{< section-full title="Voor wie is deze training?" >}}
+
+- **Front-end developers en full-stack teams** die technisch de diepte in willen
+- **Agencies** die toegankelijkheidskennis willen integreren in hun dienstenaanbod
+- **Overheid en e-diensten** die moeten voldoen aan EAA- en WCAG-verplichtingen
+- **E-commerce en culturele instellingen** die conversie en inclusiviteit willen verbeteren
+
+{{< /section-full >}}
