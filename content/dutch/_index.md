@@ -1,7 +1,7 @@
 ---
-title: "Proper Access — Audits die je team daadwerkelijk verder helpen"
-date: 2026-01-24
-description: "Onafhankelijk auditbureau voor digitale toegankelijkheid. WCAG-audits met bevindingen per element — screenshots, code en concrete oplossingen."
+title: "Proper Access — Digitale toegankelijkheid die werkt"
+date: 2026-03-07
+description: "Proper Access helpt organisaties met toegankelijkheidsaudits, concrete oplossingen en een rapport dat je developers meteen kunnen oppakken."
 keywords:
   - WCAG
   - European Accessibility Act

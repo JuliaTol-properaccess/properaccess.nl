@@ -1,6 +1,8 @@
 ---
 title: "Toegankelijkheidsaudit"
 layout: "second-page"
+weight: 2
+featured: true
 date: 2024-12-05
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"

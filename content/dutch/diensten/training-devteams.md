@@ -1,5 +1,6 @@
 ---
 title: "Training voor devteams"
+weight: 5
 date: 2024-12-05
 slug: "training-devteams"
 url: "/training-devteams/"

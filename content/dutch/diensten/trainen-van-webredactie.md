@@ -1,5 +1,6 @@
 ---
 title: "Trainen van webredactie"
+weight: 4
 date: 2025-08-04
 slug: "trainen-van-webredactie"
 url: "/trainen-van-webredactie/"

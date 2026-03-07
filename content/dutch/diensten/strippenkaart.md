@@ -1,6 +1,7 @@
 ---
 title: "Strippenkaart"
 layout: "second-page"
+weight: 3
 date: 2026-02-28
 slug: "strippenkaart"
 url: "/strippenkaart/"

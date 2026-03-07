@@ -1,6 +1,7 @@
 ---
 title: "Toegankelijkheids-abonnement"
 layout: "second-page"
+weight: 7
 date: 2026-02-28
 slug: "toegankelijkheids-abonnement"
 url: "/toegankelijkheids-abonnement/"
