@@ -20,73 +20,121 @@
         </div>
       </div>
       <div class="vw-hero__visual" aria-hidden="true">
-        <!-- SVG: Conversation / chat illustration -->
+        <!-- SVG: Video call between two people on a laptop -->
         <svg viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="vw-hero__svg">
-          <!-- Background card -->
-          <rect x="0" y="0" width="400" height="440" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <!-- Laptop body -->
+          <rect x="30" y="30" width="340" height="240" rx="12" fill="#1F2937"/>
+          <!-- Screen bezel -->
+          <rect x="30" y="30" width="340" height="20" rx="12" fill="#1F2937"/>
+          <rect x="30" y="42" width="340" height="8" fill="#1F2937"/>
+          <!-- Window dots -->
+          <circle cx="48" cy="40" r="3.5" fill="#ef4444" opacity="0.8"/>
+          <circle cx="60" cy="40" r="3.5" fill="#F5C842" opacity="0.8"/>
+          <circle cx="72" cy="40" r="3.5" fill="#22c55e" opacity="0.8"/>
+          <!-- Camera dot -->
+          <circle cx="200" cy="36" r="2.5" fill="#4B5563"/>
+          <circle cx="200" cy="36" r="1.2" fill="#6B7280"/>
 
-          <!-- Header -->
-          <rect x="0" y="0" width="400" height="44" rx="12" fill="#1F2937"/>
-          <rect x="0" y="12" width="400" height="32" fill="#1F2937"/>
-          <circle cx="18" cy="22" r="4" fill="#ef4444" opacity="0.8"/>
-          <circle cx="32" cy="22" r="4" fill="#F5C842" opacity="0.8"/>
-          <circle cx="46" cy="22" r="4" fill="#22c55e" opacity="0.8"/>
-          <rect x="64" y="14" width="220" height="16" rx="8" fill="rgba(255,255,255,0.1)"/>
-          <text x="76" y="25" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">properaccess.nl/contact</text>
+          <!-- Screen background -->
+          <rect x="40" y="50" width="320" height="210" fill="#111827"/>
 
-          <!-- Chat-style conversation -->
-          <!-- Message 1: visitor -->
-          <rect x="20" y="64" width="240" height="50" rx="10" fill="#f5f5f5"/>
-          <rect x="20" y="64" width="240" height="50" rx="10" fill="#f5f5f5"/>
-          <circle cx="40" cy="82" r="10" fill="#e5e7eb"/>
-          <text x="36" y="86" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="10">?</text>
-          <text x="58" y="82" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">Bezoeker</text>
-          <text x="58" y="96" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Onze website moet aan de EAA voldoen.</text>
-          <text x="58" y="106" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Waar beginnen we?</text>
+          <!-- Video call UI — split screen -->
+          <!-- Left person (klant) -->
+          <rect x="44" y="54" width="154" height="162" rx="4" fill="#004050"/>
+          <!-- Person silhouette — head -->
+          <circle cx="121" cy="110" r="24" fill="#0a5a6e"/>
+          <!-- Shoulders -->
+          <ellipse cx="121" cy="165" rx="40" ry="28" fill="#0a5a6e"/>
+          <!-- Name label -->
+          <rect x="52" y="192" width="70" height="16" rx="4" fill="rgba(0,0,0,0.4)"/>
+          <text x="60" y="203" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Klant</text>
 
-          <!-- Message 2: Proper Access -->
-          <rect x="140" y="126" width="240" height="60" rx="10" fill="#A30D4B" opacity="0.08"/>
-          <circle cx="160" cy="148" r="10" fill="#A30D4B" opacity="0.2"/>
-          <text x="155" y="152" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="700">P</text>
-          <text x="178" y="144" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">Proper Access</text>
-          <text x="178" y="158" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Goed dat je nu begint. We kijken eerst</text>
-          <text x="178" y="168" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">naar je situatie. Een quickscan of audit?</text>
-          <text x="178" y="178" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Hangt af van je deadline en budget.</text>
+          <!-- Right person (Proper Access) -->
+          <rect x="202" y="54" width="154" height="162" rx="4" fill="#A30D4B" opacity="0.15"/>
+          <rect x="202" y="54" width="154" height="162" rx="4" fill="#6b1832"/>
+          <!-- Person silhouette — head -->
+          <circle cx="279" cy="110" r="24" fill="#8a2550"/>
+          <!-- Shoulders -->
+          <ellipse cx="279" cy="165" rx="40" ry="28" fill="#8a2550"/>
+          <!-- Name label -->
+          <rect x="210" y="192" width="100" height="16" rx="4" fill="rgba(0,0,0,0.4)"/>
+          <text x="218" y="203" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Proper Access</text>
 
-          <!-- Message 3: visitor -->
-          <rect x="20" y="198" width="240" height="40" rx="10" fill="#f5f5f5"/>
-          <circle cx="40" cy="214" r="10" fill="#e5e7eb"/>
-          <text x="36" y="218" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="10">?</text>
-          <text x="58" y="212" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">Bezoeker</text>
-          <text x="58" y="226" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">We lanceren over 6 weken een nieuw platform.</text>
+          <!-- Call duration -->
+          <rect x="160" y="58" width="80" height="18" rx="9" fill="rgba(0,0,0,0.5)"/>
+          <circle cx="175" cy="67" r="3" fill="#22c55e"/>
+          <text x="183" y="70" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="600">12:34</text>
 
-          <!-- Message 4: Proper Access with action -->
-          <rect x="140" y="250" width="240" height="70" rx="10" fill="#A30D4B" opacity="0.08"/>
-          <circle cx="160" cy="272" r="10" fill="#A30D4B" opacity="0.2"/>
-          <text x="155" y="276" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="700">P</text>
-          <text x="178" y="268" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">Proper Access</text>
-          <text x="178" y="282" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Dan adviseer ik een quickscan nu, en een</text>
-          <text x="178" y="292" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">audit na de livegang. Zo weet je de</text>
-          <text x="178" y="302" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">grootste risico's voor je launch.</text>
-          <rect x="178" y="308" width="80" height="8" rx="4" fill="#A30D4B" opacity="0.15"/>
+          <!-- Bottom toolbar -->
+          <rect x="40" y="220" width="320" height="40" rx="0" fill="#1a1a2e"/>
 
-          <!-- Response time indicator -->
-          <rect x="20" y="340" width="360" height="1" fill="#e5e7eb"/>
+          <!-- Microphone button -->
+          <circle cx="140" cy="240" r="14" fill="#374151"/>
+          <rect x="137" y="232" width="6" height="10" rx="3" fill="#d1d5db"/>
+          <path d="M134 239 a6 6 0 0 0 12 0" stroke="#d1d5db" stroke-width="1.2" fill="none"/>
+          <line x1="140" y1="245" x2="140" y2="248" stroke="#d1d5db" stroke-width="1.2"/>
 
-          <rect x="110" y="360" width="180" height="36" rx="10" fill="#f5f5f5"/>
-          <circle cx="128" cy="378" r="6" fill="#22c55e" opacity="0.6"/>
-          <text x="140" y="375" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Reactie binnen 1 werkdag</text>
-          <text x="140" y="387" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7">Meestal dezelfde dag</text>
+          <!-- Camera button -->
+          <circle cx="180" cy="240" r="14" fill="#374151"/>
+          <rect x="172" y="234" width="16" height="11" rx="2" fill="none" stroke="#d1d5db" stroke-width="1.2"/>
+          <circle cx="180" cy="239.5" r="3" fill="none" stroke="#d1d5db" stroke-width="1"/>
 
-          <!-- Contact options at bottom -->
-          <rect x="20" y="406" width="110" height="24" rx="6" fill="#A30D4B"/>
-          <text x="42" y="421" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">085 5055 890</text>
+          <!-- Screen share button -->
+          <circle cx="220" cy="240" r="14" fill="#374151"/>
+          <rect x="212" y="233" width="16" height="12" rx="2" fill="none" stroke="#d1d5db" stroke-width="1.2"/>
+          <path d="M220 238 l0 -3" stroke="#d1d5db" stroke-width="1.2"/>
+          <path d="M217 236 l3 -3 3 3" stroke="#d1d5db" stroke-width="1" fill="none"/>
 
-          <rect x="140" y="406" width="110" height="24" rx="6" fill="#004050"/>
-          <text x="160" y="421" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Mail ons</text>
+          <!-- End call button -->
+          <circle cx="260" cy="240" r="14" fill="#dc2626"/>
+          <rect x="251" y="237" width="18" height="6" rx="3" fill="#fff"/>
 
-          <rect x="260" y="406" width="120" height="24" rx="6" fill="none" stroke="#e5e7eb" stroke-width="1"/>
-          <text x="276" y="421" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Videocall</text>
+          <!-- Laptop base -->
+          <path d="M10 270 L30 270 L40 270 L360 270 L370 270 L390 270 L380 290 L20 290 Z" fill="#374151"/>
+          <rect x="160" y="272" width="80" height="4" rx="2" fill="#4B5563"/>
+          <!-- Laptop edge highlight -->
+          <line x1="20" y1="290" x2="380" y2="290" stroke="#4B5563" stroke-width="1"/>
+
+          <!-- Desk surface -->
+          <rect x="0" y="290" width="400" height="6" fill="#e5e7eb" rx="1"/>
+
+          <!-- Decorative elements on desk -->
+          <!-- Coffee mug -->
+          <rect x="310" y="268" width="22" height="22" rx="4" fill="#f5f5f5" stroke="#d1d5db" stroke-width="1"/>
+          <rect x="332" y="274" width="6" height="10" rx="3" fill="none" stroke="#d1d5db" stroke-width="1"/>
+          <!-- Steam -->
+          <path d="M316 264 q2-4 0-8" stroke="#d1d5db" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <path d="M322 264 q2-4 0-8" stroke="#d1d5db" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <path d="M328 264 q2-4 0-8" stroke="#d1d5db" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+          <!-- Notepad -->
+          <rect x="50" y="270" width="36" height="26" rx="2" fill="#fff" stroke="#d1d5db" stroke-width="1" transform="rotate(-5 68 283)"/>
+          <line x1="56" y1="278" x2="80" y2="276" stroke="#e5e7eb" stroke-width="0.6"/>
+          <line x1="56" y1="283" x2="80" y2="281" stroke="#e5e7eb" stroke-width="0.6"/>
+          <line x1="56" y1="288" x2="75" y2="286" stroke="#e5e7eb" stroke-width="0.6"/>
+
+          <!-- Info cards below laptop -->
+          <!-- Card 1: Gratis kennismaking -->
+          <rect x="20" y="310" width="170" height="54" rx="8" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="44" cy="337" r="14" fill="#A30D4B" opacity="0.1"/>
+          <text x="39" y="341" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="12" font-weight="700">&#x2713;</text>
+          <text x="66" y="330" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Gratis kennismaking</text>
+          <text x="66" y="344" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7.5">Vrijblijvend videogesprek</text>
+          <text x="66" y="355" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7.5">om je situatie te bespreken</text>
+
+          <!-- Card 2: Direct advies -->
+          <rect x="210" y="310" width="170" height="54" rx="8" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="234" cy="337" r="14" fill="#004050" opacity="0.1"/>
+          <text x="229" y="342" fill="#004050" font-family="Nunito, sans-serif" font-size="14" font-weight="700">&#x2192;</text>
+          <text x="256" y="330" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Direct advies op maat</text>
+          <text x="256" y="344" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7.5">Geen verkooppraatje,</text>
+          <text x="256" y="355" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7.5">wel een helder plan</text>
+
+          <!-- Booking CTA -->
+          <rect x="80" y="382" width="240" height="36" rx="8" fill="#A30D4B"/>
+          <text x="128" y="404" fill="#fff" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Plan een videogesprek</text>
+          <rect x="280" y="394" width="20" height="10" rx="5" fill="rgba(255,255,255,0.2)"/>
+          <text x="285" y="402" fill="#fff" font-family="Nunito, sans-serif" font-size="8">&#x2192;</text>
         </svg>
       </div>
     </div>
