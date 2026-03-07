@@ -4993,6 +4993,17 @@ html.dark .tool-aria__empty { color: #9ca3af; }
    TOOL: PDF TOEGANKELIJKHEIDSCHECKER
    ================================================== */
 
+/* Background */
+
+.tool-pdf__bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14' cy='14' r='1.5' fill='%23A30D4B' opacity='0.16'/%3E%3C/svg%3E");
+  background-size: 28px 28px;
+}
+
+html.dark .tool-pdf__bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14' cy='14' r='1.5' fill='%23A30D4B' opacity='0.08'/%3E%3C/svg%3E");
+}
+
 /* Header with language toggle */
 
 .tool-pdf__header {
