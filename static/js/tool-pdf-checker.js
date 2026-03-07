@@ -14,6 +14,69 @@
   var PDFJS_WORKER = "https://unpkg.com/pdfjs-dist@4.8.69/build/pdf.worker.min.mjs";
 
   // ============================================================
+  // Language recognition
+  // ============================================================
+
+  var LANG_NAMES = {
+    af: { nl: "Afrikaans", en: "Afrikaans" },
+    ar: { nl: "Arabisch", en: "Arabic" },
+    bg: { nl: "Bulgaars", en: "Bulgarian" },
+    ca: { nl: "Catalaans", en: "Catalan" },
+    cs: { nl: "Tsjechisch", en: "Czech" },
+    da: { nl: "Deens", en: "Danish" },
+    de: { nl: "Duits", en: "German" },
+    el: { nl: "Grieks", en: "Greek" },
+    en: { nl: "Engels", en: "English" },
+    es: { nl: "Spaans", en: "Spanish" },
+    et: { nl: "Estlands", en: "Estonian" },
+    eu: { nl: "Baskisch", en: "Basque" },
+    fi: { nl: "Fins", en: "Finnish" },
+    fr: { nl: "Frans", en: "French" },
+    fy: { nl: "Fries", en: "Frisian" },
+    ga: { nl: "Iers", en: "Irish" },
+    gl: { nl: "Galicisch", en: "Galician" },
+    he: { nl: "Hebreeuws", en: "Hebrew" },
+    hi: { nl: "Hindi", en: "Hindi" },
+    hr: { nl: "Kroatisch", en: "Croatian" },
+    hu: { nl: "Hongaars", en: "Hungarian" },
+    id: { nl: "Indonesisch", en: "Indonesian" },
+    is: { nl: "IJslands", en: "Icelandic" },
+    it: { nl: "Italiaans", en: "Italian" },
+    ja: { nl: "Japans", en: "Japanese" },
+    ko: { nl: "Koreaans", en: "Korean" },
+    lt: { nl: "Litouws", en: "Lithuanian" },
+    lv: { nl: "Lets", en: "Latvian" },
+    ms: { nl: "Maleis", en: "Malay" },
+    mt: { nl: "Maltees", en: "Maltese" },
+    nb: { nl: "Noors (Bokm\u00e5l)", en: "Norwegian (Bokm\u00e5l)" },
+    nl: { nl: "Nederlands", en: "Dutch" },
+    nn: { nl: "Noors (Nynorsk)", en: "Norwegian (Nynorsk)" },
+    no: { nl: "Noors", en: "Norwegian" },
+    pl: { nl: "Pools", en: "Polish" },
+    pt: { nl: "Portugees", en: "Portuguese" },
+    ro: { nl: "Roemeens", en: "Romanian" },
+    ru: { nl: "Russisch", en: "Russian" },
+    sk: { nl: "Slowaaks", en: "Slovak" },
+    sl: { nl: "Sloveens", en: "Slovenian" },
+    sq: { nl: "Albanees", en: "Albanian" },
+    sr: { nl: "Servisch", en: "Serbian" },
+    sv: { nl: "Zweeds", en: "Swedish" },
+    th: { nl: "Thais", en: "Thai" },
+    tr: { nl: "Turks", en: "Turkish" },
+    uk: { nl: "Oekra\u00efens", en: "Ukrainian" },
+    vi: { nl: "Vietnamees", en: "Vietnamese" },
+    zh: { nl: "Chinees", en: "Chinese" }
+  };
+
+  var STOPWORDS = {
+    nl: ["de", "het", "een", "van", "en", "in", "is", "dat", "op", "te", "voor", "met", "zijn", "worden", "aan", "niet", "ook", "dit", "maar", "wordt", "bij", "als", "naar", "deze", "kan", "meer", "om", "hebben", "over", "uit"],
+    en: ["the", "a", "an", "is", "in", "it", "of", "to", "and", "for", "that", "this", "with", "are", "was", "on", "not", "be", "have", "from", "or", "by", "at", "but", "they", "which", "you", "can", "more", "will"],
+    de: ["der", "die", "das", "und", "ist", "von", "ein", "eine", "den", "dem", "sich", "mit", "auf", "nicht", "auch", "werden", "als", "noch", "nach", "kann", "sind", "wird", "oder", "haben", "diese"],
+    fr: ["le", "la", "les", "de", "des", "un", "une", "et", "est", "en", "que", "qui", "dans", "pour", "pas", "sur", "avec", "sont", "plus", "par", "ce", "cette", "aux", "ont", "ses", "mais", "comme"],
+    es: ["el", "la", "los", "las", "de", "en", "un", "una", "que", "es", "por", "con", "para", "del", "son", "se", "como", "pero", "sus", "sobre", "este", "entre"]
+  };
+
+  // ============================================================
   // Translations
   // ============================================================
 
@@ -57,12 +120,12 @@
       catTables: "Tabellen",
       catNavigation: "Navigatie",
       // Status badges
-      badgePass: "Geslaagd",
+      badgePass: "Geen problemen gevonden",
       badgeFail: "Probleem",
       badgeWarn: "Waarschuwing",
       badgeNa: "N.v.t.",
       // Summary cards
-      sumPass: "Geslaagd",
+      sumPass: "Geen problemen gevonden",
       sumFail: "Problemen",
       sumWarn: "Waarschuwingen",
       // Table headers
@@ -84,18 +147,25 @@
       fixNoBookmarks: "Voeg bladwijzers toe aan het document. In Adobe Acrobat Pro: ga naar <strong>Weergave &gt; Navigatievensters &gt; Bladwijzers</strong>. Maak bladwijzers aan voor alle koppen en belangrijke secties. Bij export vanuit Word of InDesign kun je dit automatisch laten genereren.",
       // Document checks
       docTagged: "PDF is getagd",
-      docTaggedDesc: "Dit document bevat tags (structuurinformatie) die het toegankelijk maken voor schermlezers.",
+      docTaggedDesc: "Dit document bevat tags (structuurinformatie) die door schermlezers kunnen worden gebruikt.",
       docPartiallyTagged: "PDF is gedeeltelijk getagd",
       docPartiallyTaggedDesc: "Slechts {0} van de {1} pagina\u2019s bevatten tags.",
       docNoTags: "PDF mist tags",
       docNoTagsDesc: "Dit document bevat geen tags. Zonder tags is de inhoud ontoegankelijk voor schermlezers.",
       docTitleOk: "Titel aanwezig",
       docTitleOkDesc: "De documenttitel is: \u201C{0}\u201D",
+      docTitleWeak: "Titel beschrijft mogelijk niet de inhoud",
+      docTitleWeakDesc: "De documenttitel \u201C{0}\u201D is mogelijk niet beschrijvend genoeg. Een goede titel beschrijft de inhoud van het document.",
       docNoTitle: "Geen titel ingesteld",
       docNoTitleDesc: "Dit PDF-document heeft geen titel.",
       docLangOk: "Taal ingesteld",
-      docLangOkDesc: "De documenttaal is ingesteld op \u201C{0}\u201D.",
-      docLangOkMeta: "De documenttaal is ingesteld op \u201C{0}\u201D (via metadata).",
+      docLangOkDesc: "De documenttaal is ingesteld op {0} (\u201C{1}\u201D).",
+      docLangOkMeta: "De documenttaal is ingesteld op {0} (\u201C{1}\u201D, via metadata).",
+      docLangUnknown: "Taalinstelling niet herkenbaar",
+      docLangUnknownDesc: "De taalinstelling \u201C{0}\u201D is geen bekende taalcode. Controleer of de juiste ISO 639-taalcode is gebruikt (bijvoorbeeld \u201Cnl\u201D of \u201Cnl-NL\u201D).",
+      docLangMismatch: "Mogelijke taalfout",
+      docLangMismatchDesc: "De ingestelde taal is {0} (\u201C{1}\u201D), maar de tekst lijkt {2} te zijn.",
+      fixLangInvalid: "Open het PDF-document in Adobe Acrobat Pro. Ga naar <strong>Bestand &gt; Eigenschappen &gt; Geavanceerd</strong> en corrigeer de taalcode. Gebruik een geldige ISO 639-code zoals \u201Cnl\u201D, \u201Cnl-NL\u201D, \u201Cen\u201D of \u201Cen-US\u201D.",
       docNoLang: "Geen taal ingesteld",
       docNoLangDesc: "De taal van dit document is niet ingesteld. Zonder taalinstelling kan een schermlezer de verkeerde uitspraak gebruiken.",
       // Heading checks
@@ -109,8 +179,8 @@
       hdPl: "koppen",
       hdSkipped: "Kopniveaus overgeslagen",
       hdSkippedDesc: "Er worden kopniveaus overgeslagen. Dit maakt de structuur onduidelijk voor schermlezers.",
-      hdOk: "Koph\u00ebrarchie correct",
-      hdOkDesc: "De kopniveaus volgen een logische volgorde.",
+      hdOk: "Geen overgeslagen kopniveaus",
+      hdOkDesc: "Er zijn geen overgeslagen kopniveaus gevonden.",
       hdEmpty: "Lege koppen gevonden",
       hdEmptyDesc: "{0} zonder inhoud gevonden.",
       hdNoEmpty: "Geen lege koppen",
@@ -121,7 +191,7 @@
       imgNone: "Geen afbeeldingen gevonden",
       imgNoneDesc: "Er zijn geen Figure-tags gevonden in dit document.",
       imgNoAlt: "Afbeeldingen zonder alt-tekst",
-      imgNoAltDesc: "{0} van {1} {2} mist een alternatieve tekst.",
+      imgNoAltDesc: "{0} van {1} {2} mist een alternatieve tekst. Voeg een alternatieve tekst toe of markeer de afbeelding als decoratief.",
       imgSg: "afbeelding",
       imgPl: "afbeeldingen",
       imgNoAltDetail: "Geen alt-tekst",
@@ -136,10 +206,10 @@
       lstInvalidDesc: "{0} van {1} {2} heeft een onjuiste tagstructuur.",
       lstSg: "lijst",
       lstPl: "lijsten",
-      lstOk: "{0} {1} correct",
+      lstOk: "{0} {1} zonder structuurfouten",
       lstOkSg: "lijst",
       lstOkPl: "lijsten",
-      lstOkDesc: "Tagstructuur L \u2192 LI \u2192 LBody is correct.",
+      lstOkDesc: "Tagstructuur L \u2192 LI \u2192 LBody is aanwezig.",
       lstNoItems: "Lijst bevat geen items",
       lstNoLBody: "Lijstitem mist LBody-tag",
       lstNoLI: "Lijst bevat geen LI-tags",
@@ -157,6 +227,10 @@
       tblRows: "{0} rijen",
       tblRowsCols: "{0} rijen, {1} kolommen",
       tblNoTHDetail: "geen TH-tags",
+      tblSingleCell: "Mogelijk onterecht gebruik van tabel",
+      tblSingleCellDesc: "{0} van {1} {2} bevat slechts \u00e9\u00e9n cel. Dit kan duiden op oneigenlijk gebruik van een tabelstructuur voor lay-out.",
+      tblSingleCellDetail: "slechts 1 cel",
+      fixSingleCell: "Controleer of de tabelstructuur noodzakelijk is. Als de tabel alleen voor lay-out wordt gebruikt, verwijder dan de Table-tag en gebruik een geschikte structuurtag zoals <strong>P</strong> of <strong>Div</strong>.",
       // Navigation checks
       navNa: "Bladwijzers niet controleerbaar",
       navNaDesc: "Omdat het document geen tags heeft, is de navigatiecontrole beperkt.",
@@ -172,6 +246,25 @@
       navNotReqDesc: "Dit document is kort ({0}).",
       navPageSg: "pagina",
       navPagePl: "pagina\u2019s",
+      // Disclaimer
+      disclaimer: "Let op: deze tool voert alleen geautomatiseerde controles uit. De resultaten garanderen geen volledige toegankelijkheid of conformiteit met de WCAG-richtlijnen. Een handmatige beoordeling door een specialist blijft noodzakelijk.",
+      disclaimerListIntro: "Deze tool kan onder andere niet betrouwbaar controleren:",
+      disclaimerItems: [
+        "Correct logisch gebruik van structuurelementen (koppen, lijsten, tabellen, etc.)",
+        "Kwaliteit van alternatieve teksten",
+        "Afbeeldingen die tekst bevatten",
+        "Diagrammen",
+        "Complexe tabellen",
+        "Ongetagde elementen",
+        "Tekstcontrast in afbeeldingen",
+        "Contrast van informatieve elementen",
+        "Nauwkeurigheid van tekstkleurcontrast",
+        "Betekenisvolle volgorde van informatie",
+        "Taalherkenning bij korte of meertalige documenten",
+        "Volledigheid van alineatekst (fragmenten, onafgemaakte zinnen)"
+      ],
+      // Documentation
+      docsSummary: "Wat controleert deze tool?",
       // Export
       exportTitle: "PDF Toegankelijkheidsrapport",
       exportFileLbl: "Bestand",
@@ -214,11 +307,11 @@
       catLists: "Lists",
       catTables: "Tables",
       catNavigation: "Navigation",
-      badgePass: "Passed",
+      badgePass: "No issues detected",
       badgeFail: "Issue",
       badgeWarn: "Warning",
       badgeNa: "N/A",
-      sumPass: "Passed",
+      sumPass: "No issues detected",
       sumFail: "Issues",
       sumWarn: "Warnings",
       thPage: "Page",
@@ -236,18 +329,25 @@
       fixNoTH: "Mark the header row or column of the table with <strong>TH</strong> tags instead of TD tags. In Adobe Acrobat Pro: open the Tags panel, find the table and change the tags of the header cells. Also set the <strong>Scope</strong> attribute (\"Row\" or \"Column\").",
       fixNoBookmarks: "Add bookmarks to the document. In Adobe Acrobat Pro: go to <strong>View &gt; Navigation Panels &gt; Bookmarks</strong>. Create bookmarks for all headings and important sections. When exporting from Word or InDesign, you can generate these automatically.",
       docTagged: "PDF is tagged",
-      docTaggedDesc: "This document contains tags (structural information) that make it accessible for screen readers.",
+      docTaggedDesc: "This document contains tags (structural information) that can be used by screen readers.",
       docPartiallyTagged: "PDF is partially tagged",
       docPartiallyTaggedDesc: "Only {0} of {1} pages contain tags.",
       docNoTags: "PDF is missing tags",
       docNoTagsDesc: "This document contains no tags. Without tags, the content is inaccessible to screen readers.",
       docTitleOk: "Title present",
       docTitleOkDesc: "The document title is: \u201C{0}\u201D",
+      docTitleWeak: "Title may not describe the content",
+      docTitleWeakDesc: "The document title \u201C{0}\u201D may not be descriptive enough. A good title describes the content of the document.",
       docNoTitle: "No title set",
       docNoTitleDesc: "This PDF document has no title.",
       docLangOk: "Language set",
-      docLangOkDesc: "The document language is set to \u201C{0}\u201D.",
-      docLangOkMeta: "The document language is set to \u201C{0}\u201D (via metadata).",
+      docLangOkDesc: "The document language is set to {0} (\u201C{1}\u201D).",
+      docLangOkMeta: "The document language is set to {0} (\u201C{1}\u201D, via metadata).",
+      docLangUnknown: "Language setting not recognized",
+      docLangUnknownDesc: "The language setting \u201C{0}\u201D is not a recognized language code. Check that a valid ISO 639 language code is used (e.g. \u201Cen\u201D or \u201Cen-US\u201D).",
+      docLangMismatch: "Possible language mismatch",
+      docLangMismatchDesc: "The declared language is {0} (\u201C{1}\u201D), but the text content appears to be {2}.",
+      fixLangInvalid: "Open the PDF document in Adobe Acrobat Pro. Go to <strong>File &gt; Properties &gt; Advanced</strong> and correct the language code. Use a valid ISO 639 code such as \u201Cen\u201D, \u201Cen-US\u201D, \u201Cnl\u201D or \u201Cnl-NL\u201D.",
       docNoLang: "No language set",
       docNoLangDesc: "The language of this document is not set. Without a language setting, a screen reader may use incorrect pronunciation.",
       hdNone: "No headings found",
@@ -260,8 +360,8 @@
       hdPl: "headings",
       hdSkipped: "Heading levels skipped",
       hdSkippedDesc: "Heading levels are being skipped. This makes the structure unclear for screen readers.",
-      hdOk: "Heading hierarchy correct",
-      hdOkDesc: "The heading levels follow a logical order.",
+      hdOk: "No skipped heading levels",
+      hdOkDesc: "No skipped heading levels were detected.",
       hdEmpty: "Empty headings found",
       hdEmptyDesc: "{0} without content found.",
       hdNoEmpty: "No empty headings",
@@ -271,7 +371,7 @@
       imgNone: "No images found",
       imgNoneDesc: "No Figure tags were found in this document.",
       imgNoAlt: "Images without alt text",
-      imgNoAltDesc: "{0} of {1} {2} is missing alternative text.",
+      imgNoAltDesc: "{0} of {1} {2} is missing alternative text. Add alternative text or mark the image as decorative.",
       imgSg: "image",
       imgPl: "images",
       imgNoAltDetail: "No alt text",
@@ -285,10 +385,10 @@
       lstInvalidDesc: "{0} of {1} {2} has an incorrect tag structure.",
       lstSg: "list",
       lstPl: "lists",
-      lstOk: "{0} {1} correct",
+      lstOk: "{0} {1} without structure errors",
       lstOkSg: "list",
       lstOkPl: "lists",
-      lstOkDesc: "Tag structure L \u2192 LI \u2192 LBody is correct.",
+      lstOkDesc: "Tag structure L \u2192 LI \u2192 LBody is present.",
       lstNoItems: "List contains no items",
       lstNoLBody: "List item is missing LBody tag",
       lstNoLI: "List contains no LI tags",
@@ -305,6 +405,10 @@
       tblRows: "{0} rows",
       tblRowsCols: "{0} rows, {1} columns",
       tblNoTHDetail: "no TH tags",
+      tblSingleCell: "Possible misuse of table structure",
+      tblSingleCellDesc: "{0} of {1} {2} contains only one cell. This may indicate misuse of a table structure for layout purposes.",
+      tblSingleCellDetail: "only 1 cell",
+      fixSingleCell: "Check whether the table structure is necessary. If the table is used only for layout, remove the Table tag and use an appropriate structure tag such as <strong>P</strong> or <strong>Div</strong>.",
       navNa: "Bookmarks cannot be checked",
       navNaDesc: "Because the document has no tags, navigation checks are limited.",
       navOk: "Bookmarks present",
@@ -319,6 +423,23 @@
       navNotReqDesc: "This document is short ({0}).",
       navPageSg: "page",
       navPagePl: "pages",
+      disclaimer: "Please note: this tool performs automated checks only. The results do not guarantee full accessibility or compliance with WCAG guidelines. A manual review by a specialist is still required.",
+      disclaimerListIntro: "This tool cannot reliably verify:",
+      disclaimerItems: [
+        "Correct logical use of structural elements (headings, lists, tables, etc.)",
+        "Quality of alternative text",
+        "Images containing text",
+        "Diagrams",
+        "Complex tables",
+        "Untagged elements",
+        "Text contrast inside images",
+        "Informational element contrast",
+        "Text color contrast accuracy",
+        "Meaningful sequence of information",
+        "Language detection for short or multilingual documents",
+        "Completeness of paragraph text (fragments, unfinished sentences)"
+      ],
+      docsSummary: "What does this tool check?",
       exportTitle: "PDF Accessibility Report",
       exportFileLbl: "File",
       exportFooter: "Generated with the PDF Accessibility Checker by Proper Access \u2014 properaccess.nl/tools/pdf-checker",
@@ -370,6 +491,13 @@
     var ariaEls = document.querySelectorAll("[data-i18n-aria]");
     for (var l = 0; l < ariaEls.length; l++) {
       ariaEls[l].setAttribute("aria-label", t(ariaEls[l].getAttribute("data-i18n-aria")));
+    }
+    // Toggle documentation language
+    var docsNl = document.querySelector(".tool-pdf__docs-nl");
+    var docsEn = document.querySelector(".tool-pdf__docs-en");
+    if (docsNl && docsEn) {
+      docsNl.hidden = currentLang !== "nl";
+      docsEn.hidden = currentLang !== "en";
     }
     // Set lang attribute on tool container for screen readers
     var container = document.querySelector(".tool-container");
@@ -612,6 +740,7 @@
       figures: [],
       lists: [],
       tables: [],
+      textSnippets: [],
       rootLang: null,
       pagesWithTags: 0,
       pagesWithoutTags: 0
@@ -795,6 +924,14 @@
       });
     }
 
+    // Collect text snippets for language detection (first 5 text-bearing elements)
+    if (collector.textSnippets.length < 5 && (headingMatch || role === "P" || role === "Span")) {
+      var snippetText = extractText(node, mcidMap).trim();
+      if (snippetText.length > 10) {
+        collector.textSnippets.push(snippetText);
+      }
+    }
+
     if (node.children) {
       for (var i = 0; i < node.children.length; i++) {
         var child = node.children[i];
@@ -936,12 +1073,26 @@
 
     // 2. Title
     var title = info.Title ? info.Title.trim() : "";
+    var weakTitlePatterns = /^(title|document|untitled|unnamed|naamloos|naammloos|dokument|document\d*|sans titre|ohne titel|sin t[ií]tulo|microsoft word|\.pdf|\.docx?)$/i;
+    var isWeakTitle = title.length > 0 && (
+      weakTitlePatterns.test(title) ||
+      title.length <= 2 ||
+      /^[^a-zA-Z\u00C0-\u024F\u0400-\u04FF]+$/.test(title)
+    );
     if (title && title.length > 0) {
       checks.push({
         status: "pass",
         title: t("docTitleOk"),
         description: tf("docTitleOkDesc", escapeHtml(truncate(title, 80)))
       });
+      if (isWeakTitle) {
+        checks.push({
+          status: "warn",
+          title: t("docTitleWeak"),
+          description: tf("docTitleWeakDesc", escapeHtml(truncate(title, 80))),
+          fix: t("fixNoTitle")
+        });
+      }
     } else {
       checks.push({
         status: "fail",
@@ -952,31 +1103,50 @@
     }
 
     // 3. Language
-    if (collector.rootLang) {
-      checks.push({
-        status: "pass",
-        title: t("docLangOk"),
-        description: tf("docLangOkDesc", escapeHtml(collector.rootLang))
-      });
-    } else {
-      var metaLang = null;
-      if (metadata && metadata.metadata) {
-        try { metaLang = metadata.metadata.get("dc:language"); } catch (e) { /* */ }
-      }
-      if (metaLang) {
+    var declaredLang = collector.rootLang || null;
+    var langSource = "tag";
+    if (!declaredLang && metadata && metadata.metadata) {
+      try { declaredLang = metadata.metadata.get("dc:language"); langSource = "meta"; } catch (e) { /* */ }
+    }
+
+    if (declaredLang) {
+      var recognized = langName(declaredLang);
+      if (recognized) {
+        // Language recognized — show human-readable name
+        var descKey = langSource === "meta" ? "docLangOkMeta" : "docLangOkDesc";
         checks.push({
           status: "pass",
           title: t("docLangOk"),
-          description: tf("docLangOkMeta", escapeHtml(metaLang))
+          description: tf(descKey, recognized, escapeHtml(declaredLang))
         });
+
+        // Mismatch detection: compare declared language with detected content language
+        var detectedLang = detectLanguage(collector.textSnippets);
+        if (detectedLang && baseLang(declaredLang) !== detectedLang) {
+          var detectedName = langName(detectedLang) || detectedLang;
+          checks.push({
+            status: "warn",
+            title: t("docLangMismatch"),
+            description: tf("docLangMismatchDesc", recognized, escapeHtml(declaredLang), detectedName),
+            fix: t("fixNoLang")
+          });
+        }
       } else {
+        // Language tag not recognized
         checks.push({
-          status: "fail",
-          title: t("docNoLang"),
-          description: t("docNoLangDesc"),
-          fix: t("fixNoLang")
+          status: "warn",
+          title: t("docLangUnknown"),
+          description: tf("docLangUnknownDesc", escapeHtml(declaredLang)),
+          fix: t("fixLangInvalid")
         });
       }
+    } else {
+      checks.push({
+        status: "fail",
+        title: t("docNoLang"),
+        description: t("docNoLangDesc"),
+        fix: t("fixNoLang")
+      });
     }
 
     return checks;
@@ -1194,10 +1364,19 @@
     }
 
     var noTHFindings = [];
+    var singleCellFindings = [];
     var okCount = 0;
     for (var i = 0; i < tables.length; i++) {
       var tbl = tables[i];
       var dims = tbl.cols > 0 ? tf("tblRowsCols", tbl.rows, tbl.cols) : tf("tblRows", tbl.rows);
+      var totalCells = tbl.rows * (tbl.cols || 1);
+      if (totalCells <= 1) {
+        singleCellFindings.push({
+          page: tbl.page,
+          element: "Table",
+          detail: t("tblSingleCellDetail")
+        });
+      }
       if (!tbl.hasTH) {
         noTHFindings.push({
           page: tbl.page,
@@ -1207,6 +1386,16 @@
       } else {
         okCount++;
       }
+    }
+
+    if (singleCellFindings.length > 0) {
+      checks.push({
+        status: "warn",
+        title: t("tblSingleCell"),
+        description: tf("tblSingleCellDesc", singleCellFindings.length, tables.length, singleCellFindings.length === 1 ? t("tblSg") : t("tblPl")),
+        findings: singleCellFindings,
+        fix: t("fixSingleCell")
+      });
     }
 
     if (noTHFindings.length > 0) {
@@ -1302,11 +1491,13 @@
       }
     }
 
-    var summaryHTML = '<div class="tool-pdf__summary-grid">';
+    var summaryHTML = '<p class="tool-pdf__results-filename">' + escapeHtml(lastFileName) + '</p>';
+    summaryHTML += '<div class="tool-pdf__summary-grid">';
     summaryHTML += summaryCard("pass", pass, t("sumPass"));
     summaryHTML += summaryCard("fail", fail, t("sumFail"));
     summaryHTML += summaryCard("warn", warn, t("sumWarn"));
     summaryHTML += "</div>";
+    summaryHTML += buildDisclaimerHTML("tool-pdf__disclaimer");
     resultsSummary.innerHTML = summaryHTML;
 
     var catHTML = "";
@@ -1411,6 +1602,19 @@
     return html;
   }
 
+  function buildDisclaimerHTML(className) {
+    var items = t("disclaimerItems");
+    var html = '<div class="' + className + '">';
+    html += '<p>' + t("disclaimer") + '</p>';
+    html += '<p>' + t("disclaimerListIntro") + '</p>';
+    html += '<ul>';
+    for (var i = 0; i < items.length; i++) {
+      html += '<li>' + escapeHtml(items[i]) + '</li>';
+    }
+    html += '</ul></div>';
+    return html;
+  }
+
   function statusIcon(status) {
     switch (status) {
       case "pass": return "\u2713";
@@ -1498,6 +1702,7 @@
     html += '<div class="summary-card summary-card--fail"><span class="summary-count">' + fail + '</span><span class="summary-label">' + t("sumFail") + '</span></div>\n';
     html += '<div class="summary-card summary-card--warn"><span class="summary-count">' + warn + '</span><span class="summary-label">' + t("sumWarn") + '</span></div>\n';
     html += "</div>\n";
+    html += buildDisclaimerHTML("disclaimer") + '\n';
 
     // Categories
     for (var c = 0; c < allChecks.length; c++) {
@@ -1569,6 +1774,54 @@
   function truncate(str, max) {
     if (str.length <= max) return str;
     return str.substring(0, max) + "\u2026";
+  }
+
+  /** Extract the base language code (e.g. "nl" from "nl-NL") */
+  function baseLang(code) {
+    return code ? code.toLowerCase().split(/[-_]/)[0] : null;
+  }
+
+  /** Look up human-readable language name for a code, or return null */
+  function langName(code) {
+    var base = baseLang(code);
+    var entry = base ? LANG_NAMES[base] : null;
+    return entry ? entry[currentLang] : null;
+  }
+
+  /** Detect language from text snippets using stopword frequency */
+  function detectLanguage(textSnippets) {
+    if (!textSnippets || textSnippets.length === 0) return null;
+
+    var combined = textSnippets.join(" ").toLowerCase();
+    var words = combined.split(/\s+/);
+
+    var langs = Object.keys(STOPWORDS);
+    var scores = {};
+    for (var i = 0; i < langs.length; i++) {
+      scores[langs[i]] = 0;
+    }
+
+    for (var w = 0; w < words.length; w++) {
+      var word = words[w].replace(/[^a-z\u00e0-\u00ff]/g, "");
+      if (!word || word.length < 2) continue;
+      for (var l = 0; l < langs.length; l++) {
+        if (STOPWORDS[langs[l]].indexOf(word) !== -1) {
+          scores[langs[l]]++;
+        }
+      }
+    }
+
+    var bestLang = null;
+    var bestScore = 0;
+    for (var key in scores) {
+      if (scores[key] > bestScore) {
+        bestScore = scores[key];
+        bestLang = key;
+      }
+    }
+
+    // Only return if we have reasonable confidence
+    return bestScore >= 3 ? bestLang : null;
   }
 
 })();

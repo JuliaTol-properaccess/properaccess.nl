@@ -77,6 +77,199 @@
       <div id="resultsCategories"></div>
     </div>
 
+      <!-- Documentation -->
+      <details class="tool-pdf__docs" id="toolDocs">
+        <summary class="tool-pdf__docs-summary" data-i18n="docsSummary">Wat controleert deze tool?</summary>
+
+        <div class="tool-pdf__docs-content tool-pdf__docs-nl" lang="nl">
+          <p>De PDF Toegankelijkheidscheck analyseert PDF-bestanden op veelvoorkomende toegankelijkheidsproblemen. De analyse draait volledig in de browser via PDF.js &mdash; er worden geen bestanden verstuurd of opgeslagen.</p>
+
+          <h2>Wat de tool controleert</h2>
+          <p>De tool voert controles uit in zes categorie&euml;n.</p>
+
+          <h3>1. Document</h3>
+
+          <h4>Tags (structuurinformatie)</h4>
+          <p>Controleert of het PDF-document getagd is. Tags zijn de structuurlaag die schermlezers gebruiken om de inhoud te interpreteren.</p>
+          <ul>
+            <li><strong>PDF is getagd</strong> &mdash; het document is gemarkeerd als getagd en alle pagina&rsquo;s bevatten tags.</li>
+            <li><strong>PDF is gedeeltelijk getagd</strong> &mdash; sommige pagina&rsquo;s bevatten tags, andere niet.</li>
+            <li><strong>PDF mist tags</strong> &mdash; het document bevat geen tags. Alle overige controles zijn dan beperkt of niet uitvoerbaar.</li>
+          </ul>
+          <p>De tool controleert of tags <em>aanwezig</em> zijn, niet of ze <em>correct</em> zijn toegepast.</p>
+
+          <h4>Titel</h4>
+          <p>Controleert of het document een titel heeft en of die titel beschrijvend genoeg is.</p>
+          <ul>
+            <li><strong>Titel aanwezig</strong> &mdash; het document heeft een niet-lege titel.</li>
+            <li><strong>Titel beschrijft mogelijk niet de inhoud</strong> &mdash; de titel bestaat maar lijkt niet beschrijvend. Waarschuwt bij generieke titels (&ldquo;document&rdquo;, &ldquo;untitled&rdquo;), bestandsextensies, zeer korte titels en titels zonder letters.</li>
+            <li><strong>Geen titel ingesteld</strong> &mdash; het document heeft geen titel.</li>
+          </ul>
+
+          <h4>Taal</h4>
+          <p>Controleert of de documenttaal is ingesteld, of de taalcode geldig is, en of de ingestelde taal overeenkomt met de tekstinhoud.</p>
+          <ul>
+            <li><strong>Taal ingesteld</strong> &mdash; een geldige ISO 639-taalcode is gevonden. Toont de taal in leesbare vorm, bijv. &ldquo;Nederlands (nl-NL)&rdquo;.</li>
+            <li><strong>Taalinstelling niet herkenbaar</strong> &mdash; er is een taalcode gevonden die niet voorkomt in de lijst van bekende ISO 639-1 codes.</li>
+            <li><strong>Mogelijke taalfout</strong> &mdash; de ingestelde taal komt niet overeen met de gedetecteerde taal van de tekstinhoud. De detectie analyseert stopwoorden in de eerste 5 tekstelementen.</li>
+            <li><strong>Geen taal ingesteld</strong> &mdash; er is geen taalinstelling gevonden.</li>
+          </ul>
+
+          <h3>2. Koppen</h3>
+          <ul>
+            <li><strong>Aanwezigheid</strong> &mdash; controleert of er H1&ndash;H6 tags aanwezig zijn. Toont een overzicht met paginanummer, kopniveau en tekst.</li>
+            <li><strong>Kophie&#776;rarchie</strong> &mdash; controleert of kopniveaus logisch op elkaar volgen. Een H1 direct gevolgd door H3 is een overgeslagen niveau.</li>
+            <li><strong>Lege koppen</strong> &mdash; controleert of alle koptags daadwerkelijk tekst bevatten.</li>
+          </ul>
+
+          <h3>3. Afbeeldingen</h3>
+          <ul>
+            <li><strong>Alternatieve tekst</strong> &mdash; controleert of Figure-tags een <code>Alt</code>-attribuut hebben. Toont per afbeelding de gevonden alt-tekst of meldt dat deze ontbreekt.</li>
+          </ul>
+          <p>De tool controleert of alt-tekst <em>aanwezig</em> is, niet of de tekst <em>kwalitatief goed</em> is.</p>
+
+          <h3>4. Lijsten</h3>
+          <ul>
+            <li><strong>Lijststructuur</strong> &mdash; controleert of de tagstructuur L &rarr; LI &rarr; LBody correct is opgebouwd. Detecteert ontbrekende LI-tags en ontbrekende LBody-tags.</li>
+          </ul>
+
+          <h3>5. Tabellen</h3>
+          <ul>
+            <li><strong>Tabelkoppen</strong> &mdash; controleert of tabellen TH-tags bevatten voor kopmarkeringen. Toont de dimensies (rijen &times; kolommen) per tabel.</li>
+            <li><strong>Tabellen met &eacute;&eacute;n cel</strong> &mdash; waarschuwt als een tabel slechts &eacute;&eacute;n cel bevat, wat kan duiden op onterecht gebruik van een tabelstructuur voor lay-out.</li>
+          </ul>
+
+          <h3>6. Navigatie</h3>
+          <ul>
+            <li><strong>Bladwijzers</strong> &mdash; controleert of documenten met meer dan 4 pagina&rsquo;s bladwijzers (bookmarks) bevatten. Toont de eerste 15 bladwijzertitels.</li>
+          </ul>
+
+          <h2>Wat de tool niet controleert</h2>
+          <p>De volgende aspecten kunnen niet betrouwbaar geautomatiseerd worden gecontroleerd en vereisen handmatige beoordeling:</p>
+          <ol>
+            <li><strong>Correct logisch gebruik van structuurelementen</strong> &mdash; of koppen, lijsten en tabellen inhoudelijk correct zijn gebruikt.</li>
+            <li><strong>Kwaliteit van alternatieve teksten</strong> &mdash; of alt-teksten de inhoud of functie van afbeeldingen accuraat beschrijven.</li>
+            <li><strong>Afbeeldingen die tekst bevatten</strong> &mdash; of afbeeldingen tekst bevatten die als echte tekst beschikbaar zou moeten zijn.</li>
+            <li><strong>Diagrammen</strong> &mdash; of diagrammen, grafieken en infographics een toegankelijk alternatief hebben.</li>
+            <li><strong>Complexe tabellen</strong> &mdash; of tabellen met samengevoegde cellen correct zijn opgebouwd met Scope- en Headers-attributen.</li>
+            <li><strong>Ongetagde elementen</strong> &mdash; of er visuele elementen op de pagina staan die niet in de tagstructuur zijn opgenomen.</li>
+            <li><strong>Contrast</strong> &mdash; tekstkleurcontrast, contrast in afbeeldingen en contrast van informatieve elementen.</li>
+            <li><strong>Betekenisvolle volgorde</strong> &mdash; of de leesvolgorde in de tagstructuur overeenkomt met de visuele volgorde.</li>
+            <li><strong>Taalwisselingen</strong> &mdash; of het Lang-attribuut correct is ingesteld op individuele tags bij tekst in een andere taal.</li>
+            <li><strong>Taalherkenning bij korte of meertalige documenten</strong> &mdash; de automatische taaldetectie werkt alleen voor NL, EN, DE, FR en ES en is onbetrouwbaar bij weinig tekst.</li>
+            <li><strong>Volledigheid van alineatekst</strong> &mdash; of paragrafen volledige zinnen vormen of fragmenten bevatten.</li>
+            <li><strong>Formuliervelden</strong> &mdash; of formuliervelden correct zijn gelabeld en een logische tabvolgorde hebben.</li>
+            <li><strong>Leesbare links</strong> &mdash; of linkteksten beschrijvend zijn en correct getagd zijn als Link-elementen.</li>
+            <li><strong>Artefacten</strong> &mdash; of decoratieve elementen correct als artefact zijn gemarkeerd.</li>
+          </ol>
+
+          <h2>Statusiniveaus</h2>
+          <table>
+            <thead><tr><th>Status</th><th>Betekenis</th></tr></thead>
+            <tbody>
+              <tr><td>Geen problemen gevonden</td><td>De automatische controle heeft geen problemen gedetecteerd. Dit betekent niet dat het onderdeel volledig correct is.</td></tr>
+              <tr><td>Probleem</td><td>Er is een concreet probleem gevonden dat opgelost moet worden.</td></tr>
+              <tr><td>Waarschuwing</td><td>Er is een mogelijk probleem gevonden dat handmatige controle vereist.</td></tr>
+              <tr><td>N.v.t.</td><td>De controle is niet van toepassing.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tool-pdf__docs-content tool-pdf__docs-en" lang="en" hidden>
+          <p>The PDF Accessibility Check analyzes PDF files for common accessibility issues. The analysis runs entirely in the browser via PDF.js &mdash; no files are sent or stored.</p>
+
+          <h2>What the tool checks</h2>
+          <p>The tool performs checks in six categories.</p>
+
+          <h3>1. Document</h3>
+
+          <h4>Tags (structure information)</h4>
+          <p>Checks whether the PDF document is tagged. Tags are the structure layer that screen readers use to interpret the content.</p>
+          <ul>
+            <li><strong>PDF is tagged</strong> &mdash; the document is marked as tagged and all pages contain tags.</li>
+            <li><strong>PDF is partially tagged</strong> &mdash; some pages contain tags, others do not.</li>
+            <li><strong>PDF is missing tags</strong> &mdash; the document contains no tags. All other checks are then limited or not possible.</li>
+          </ul>
+          <p>The tool checks whether tags are <em>present</em>, not whether they are <em>correctly</em> applied.</p>
+
+          <h4>Title</h4>
+          <p>Checks whether the document has a title and whether that title is descriptive enough.</p>
+          <ul>
+            <li><strong>Title present</strong> &mdash; the document has a non-empty title.</li>
+            <li><strong>Title may not describe the content</strong> &mdash; the title exists but appears non-descriptive. Warns for generic titles (&ldquo;document&rdquo;, &ldquo;untitled&rdquo;), file extensions, very short titles, and titles without letters.</li>
+            <li><strong>No title set</strong> &mdash; the document has no title.</li>
+          </ul>
+
+          <h4>Language</h4>
+          <p>Checks whether the document language is set, whether the language code is valid, and whether the set language matches the text content.</p>
+          <ul>
+            <li><strong>Language set</strong> &mdash; a valid ISO 639 language code was found. Shows the language in readable form, e.g. &ldquo;Dutch (nl-NL)&rdquo;.</li>
+            <li><strong>Language setting not recognized</strong> &mdash; a language code was found that does not match any known ISO 639-1 code.</li>
+            <li><strong>Possible language mismatch</strong> &mdash; the set language does not match the detected language of the text content. Detection analyzes stopwords in the first 5 text elements.</li>
+            <li><strong>No language set</strong> &mdash; no language setting was found.</li>
+          </ul>
+
+          <h3>2. Headings</h3>
+          <ul>
+            <li><strong>Presence</strong> &mdash; checks whether H1&ndash;H6 tags are present. Shows an overview with page number, heading level, and text.</li>
+            <li><strong>Heading hierarchy</strong> &mdash; checks whether heading levels follow a logical order. An H1 directly followed by H3 is a skipped level.</li>
+            <li><strong>Empty headings</strong> &mdash; checks whether all heading tags actually contain text.</li>
+          </ul>
+
+          <h3>3. Images</h3>
+          <ul>
+            <li><strong>Alternative text</strong> &mdash; checks whether Figure tags have an <code>Alt</code> attribute. Shows the found alt text per image or reports that it is missing.</li>
+          </ul>
+          <p>The tool checks whether alt text is <em>present</em>, not whether the text is <em>qualitatively good</em>.</p>
+
+          <h3>4. Lists</h3>
+          <ul>
+            <li><strong>List structure</strong> &mdash; checks whether the tag structure L &rarr; LI &rarr; LBody is correctly constructed. Detects missing LI tags and missing LBody tags.</li>
+          </ul>
+
+          <h3>5. Tables</h3>
+          <ul>
+            <li><strong>Table headers</strong> &mdash; checks whether tables contain TH tags for header markers. Shows the dimensions (rows &times; columns) per table.</li>
+            <li><strong>Single-cell tables</strong> &mdash; warns if a table contains only one cell, which may indicate misuse of a table structure for layout.</li>
+          </ul>
+
+          <h3>6. Navigation</h3>
+          <ul>
+            <li><strong>Bookmarks</strong> &mdash; checks whether documents with more than 4 pages contain bookmarks. Shows the first 15 bookmark titles.</li>
+          </ul>
+
+          <h2>What the tool does not check</h2>
+          <p>The following aspects cannot be reliably checked automatically and require manual review:</p>
+          <ol>
+            <li><strong>Correct logical use of structural elements</strong> &mdash; whether headings, lists, and tables are used correctly in terms of content.</li>
+            <li><strong>Quality of alternative texts</strong> &mdash; whether alt texts accurately describe the content or function of images.</li>
+            <li><strong>Images containing text</strong> &mdash; whether images contain text that should be available as real text.</li>
+            <li><strong>Diagrams</strong> &mdash; whether diagrams, charts, and infographics have an accessible alternative.</li>
+            <li><strong>Complex tables</strong> &mdash; whether tables with merged cells are correctly constructed with Scope and Headers attributes.</li>
+            <li><strong>Untagged elements</strong> &mdash; whether visual elements on the page are missing from the tag structure.</li>
+            <li><strong>Contrast</strong> &mdash; text color contrast, contrast in images, and contrast of informational elements.</li>
+            <li><strong>Meaningful sequence</strong> &mdash; whether the reading order in the tag structure matches the visual order.</li>
+            <li><strong>Language switches</strong> &mdash; whether the Lang attribute is correctly set on individual tags for text in a different language.</li>
+            <li><strong>Language detection for short or multilingual documents</strong> &mdash; automatic language detection only works for NL, EN, DE, FR, and ES, and is unreliable with little text.</li>
+            <li><strong>Completeness of paragraph text</strong> &mdash; whether paragraphs form complete sentences or contain fragments.</li>
+            <li><strong>Form fields</strong> &mdash; whether form fields are correctly labeled and have a logical tab order.</li>
+            <li><strong>Readable links</strong> &mdash; whether link texts are descriptive and correctly tagged as Link elements.</li>
+            <li><strong>Artifacts</strong> &mdash; whether decorative elements are correctly marked as artifacts.</li>
+          </ol>
+
+          <h2>Status levels</h2>
+          <table>
+            <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><td>No issues detected</td><td>The automated check found no problems. This does not mean the component is fully correct.</td></tr>
+              <tr><td>Issue</td><td>A concrete problem was found that needs to be resolved.</td></tr>
+              <tr><td>Warning</td><td>A potential problem was found that requires manual review.</td></tr>
+              <tr><td>N/A</td><td>The check is not applicable.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
       <!-- CTA -->
       <div class="tool-cta">
         <p data-i18n-html="ctaHtml">Wil je deze tool op maat laten maken voor je organisatie? Neem contact op met
