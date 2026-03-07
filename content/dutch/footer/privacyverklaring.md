@@ -10,7 +10,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "februari 2022"
+    value: "maart 2026"
 ---
 
 {{< offerte-section title="1. Wie zijn wij" >}}
@@ -29,7 +29,12 @@ Julia Tol is de Functionaris Gegevensbescherming van Proper Access. Zij is te be
 
 {{< offerte-section title="2. Persoonsgegevens die wij verwerken" bg="light" >}}
 
-Proper Access verwerkt geen persoonsgegevens omdat op onze site geen persoonsgegevens achtergelaten kunnen worden. Ook gebruiken we geen social media plugins.
+Proper Access verwerkt persoonsgegevens doordat je gebruik maakt van onze diensten en/of doordat je deze zelf aan ons verstrekt. Hieronder vind je een overzicht:
+
+- Naam en e-mailadres (wanneer je contact met ons opneemt via het contactformulier)
+- Bedrijfsnaam en IP-adres (via onze websitebezoeker-herkenning, zie sectie 7)
+
+We gebruiken geen social media plugins.
 
 {{< /offerte-section >}}
 
@@ -62,13 +67,38 @@ Proper Access bewaart je persoonsgegevens niet langer dan strikt nodig is om de 
 
 {{< offerte-section title="6. Delen met derden" bg="light" >}}
 
-Proper Access verstrekt uitsluitend aan derden en alleen als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting.
+Proper Access verstrekt gegevens uitsluitend aan derden als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting. Wij maken gebruik van de volgende derde partijen:
+
+- **Dealfront (voorheen Leadfeeder)** — voor het herkennen van bedrijven die onze website bezoeken. Dealfront verwerkt IP-adressen en plaatst cookies (zie sectie 7). Dealfront is gevestigd in de EU en verwerkt gegevens conform de AVG. Meer informatie: [dealfront.com/privacy](https://www.dealfront.com/privacy/).
+- **Formspree** — voor het verwerken van berichten via ons contactformulier. Meer informatie: [formspree.io/legal/privacy-policy](https://formspree.io/legal/privacy-policy/).
+- **Cloudflare** — voor beveiliging en prestatie-optimalisatie van de website. Cloudflare kan technische cookies plaatsen (zie sectie 7).
 
 {{< /offerte-section >}}
 
 {{< offerte-section title="7. Cookies" >}}
 
-Proper Access gebruikt alleen technische en functionele cookies. En analytische cookies die geen inbreuk maken op je privacy. Een cookie is een klein tekstbestand dat bij het eerste bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. De cookies die wij gebruiken zijn noodzakelijk voor de technische werking van de website en jouw gebruiksgemak. Ze zorgen ervoor dat de website naar behoren werkt en onthouden bijvoorbeeld jouw voorkeursinstellingen. Ook kunnen wij hiermee onze website optimaliseren. Je kunt je afmelden voor cookies door je internetbrowser zo in te stellen dat deze geen cookies meer opslaat. Daarnaast kun je ook alle informatie die eerder is opgeslagen via de instellingen van je browser verwijderen.
+Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. Proper Access maakt onderscheid tussen noodzakelijke cookies en tracking cookies.
+
+**Noodzakelijke cookies (altijd actief)**
+
+| Cookie | Doel | Bewaartermijn |
+|--------|------|---------------|
+| `cookie-consent` | Onthoudt je cookievoorkeuren | 1 jaar |
+| `__cf_bm` | Cloudflare botbescherming | 1 uur |
+
+**Tracking cookies (alleen na jouw toestemming)**
+
+| Cookie | Doel | Bewaartermijn |
+|--------|------|---------------|
+| `_lfa` | Dealfront — herkent het bedrijf van waaruit je onze site bezoekt | 1 jaar |
+| `_lfa_expiry` | Dealfront — bewaartermijn voor het client-ID | Persistent |
+
+De tracking cookies worden alleen geplaatst als je hiervoor toestemming geeft via de cookiebanner. Zonder jouw toestemming worden deze cookies niet geladen.
+
+**Wat doet Dealfront?**
+Dealfront (onderdeel van Pipedrive) herkent op basis van het IP-adres bij welk bedrijf een bezoeker werkt. Het gaat om bedrijfsherkenning, niet om het identificeren van individuele personen. Dealfront verwerkt gegevens conform de AVG en is gevestigd in de EU.
+
+Je kunt je afmelden voor cookies door je internetbrowser zo in te stellen dat deze geen cookies meer opslaat. Daarnaast kun je eerder opgeslagen cookies verwijderen via de instellingen van je browser. Je kunt je cookievoorkeuren ook op elk moment aanpassen door de cookies in je browser te verwijderen — bij je volgende bezoek wordt de cookiebanner opnieuw getoond.
 
 {{< /offerte-section >}}
 
