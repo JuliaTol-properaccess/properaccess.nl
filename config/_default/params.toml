@@ -3,7 +3,6 @@
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/logo_pa_transparent.png"
-logo_darkmode = "images/logo_pa_dark.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "160px"
@@ -15,8 +14,7 @@ logo_text = "Proper Access "
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+theme_switcher = false
 # Main Sections
 mainSections = ["blog"]
 # contact form action
