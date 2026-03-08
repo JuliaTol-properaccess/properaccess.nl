@@ -5,7 +5,7 @@
 
 <ul class="{{ $class }} inline-flex space-x-1 capitalize">
   <li>
-    <a class="text-primary dark:text-darkmode-primary" href="{{ $base }}">
+    <a class="text-primary" href="{{ $base }}">
       {{ T "home" | default "Home" }}
     </a>
     <span class="inlin-block mr-1">/</span>
@@ -14,7 +14,7 @@
     {{ if and (not .IsHome) (ne .Title "Pages") }}
       <li>
         <a
-          class="text-primary dark:text-darkmode-primary"
+          class="text-primary"
           href="{{ .RelPermalink }}">
           {{ T (printf "%s" (lower .Title)) | default .Title }}
         </a>
@@ -23,7 +23,7 @@
     {{ end }}
   {{ end }}
   <li>
-    <span class="text-primary dark:text-darkmode-primary">
+    <span class="text-primary">
       {{ T (printf "%s" (lower $context.Title)) | default $context.Title }}
     </span>
   </li>

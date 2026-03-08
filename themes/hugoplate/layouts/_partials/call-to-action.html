@@ -1,10 +1,10 @@
 <!-- Call to actions -->
 {{ with site.GetPage "/sections/call-to-action" }}
   {{ if .Params.enable }}
-    <section class="mb-28 cta bg-light dark:bg-darkmode-light" id="cta">
+    <section class="mb-28 cta bg-light" id="cta">
       <div class="container">
         <div
-          class="bg-light dark:bg-darkmode-light rounded-xl px-4 py-16 xl:p-20">
+          class="bg-light rounded-xl px-4 py-16 xl:p-20">
           <div class="row items-center justify-between">
             <div class="md:col-7 md:order-1 mb-10 md:mb-0">
               <h2 class="mb-2">
@@ -30,7 +30,7 @@
                 <div>
                   <label
                     for="contact-name"
-                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    class="block mb-2 text-sm font-semibold text-dark">
                     {{ i18n "contact_name" }}
                   </label>
                   <input
@@ -39,7 +39,7 @@
                     name="name"
                     autocomplete="name"
                     required
-                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
+                    class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
                     placeholder="{{ i18n "contact_name_placeholder" }}" />
                   <input
                     type="hidden"
@@ -88,7 +88,7 @@
                 <div>
                   <label
                     for="contact-email"
-                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    class="block mb-2 text-sm font-semibold text-dark">
                     {{ i18n "contact_email" }}
                   </label>
                   <input
@@ -97,14 +97,14 @@
                     name="email"
                     autocomplete="email"
                     required
-                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
+                    class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
                     placeholder="{{ i18n "contact_email_placeholder" }}" />
                 </div>
 
                 <div>
                   <label
                     for="contact-message"
-                    class="block mb-2 text-sm font-semibold text-dark dark:text-white">
+                    class="block mb-2 text-sm font-semibold text-dark">
                     {{ i18n "contact_message" }}
                   </label>
                   <textarea
@@ -112,7 +112,7 @@
                     name="message"
                     rows="5"
                     required
-                    class="w-full px-4 py-3 text-dark dark:text-white bg-white dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
+                    class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
                     placeholder="{{ i18n "contact_message_placeholder" }}"></textarea>
                 </div>
 

@@ -3,8 +3,6 @@
 @plugin "@tailwindcss/typography";
 @plugin 'tailwind-bootstrap-grid';
 @source "hugo_stats.json";
-@custom-variant dark (&:where(.dark, .dark *));
-
 /* Auto-generated theme from "data/theme.json"*/
 @import "./generated-theme.css";
 
