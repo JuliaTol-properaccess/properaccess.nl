@@ -3675,7 +3675,7 @@ html.dark .tool-card__cta-link {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #9ca3af;
+  color: #6B7280;
   white-space: nowrap;
 }
 .hp-trust__names {
@@ -3768,6 +3768,10 @@ html.dark .tool-card__cta-link {
 .hp-link-arrow:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.hp-services .hp-link-arrow {
+  color: #fff;
 }
 
 
@@ -7961,12 +7965,12 @@ html.dark .vw-faq .faq-answer {
 .ov-stats__note {
   text-align: center;
   font-size: 0.813rem;
-  color: #9CA3AF;
+  color: rgba(255, 255, 255, 0.75);
   margin-top: 1.5rem;
 }
 
 .ov-stats__note strong {
-  color: #6B7280;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
