@@ -93,7 +93,7 @@ Je hebt een nieuw CMS, portaal of app laten ontwikkelen. De leverancier heeft ge
 
 Je hebt geen audit nodig die eindigt met "succes ermee". Je hebt iemand nodig die meedenkt over wat er moet gebeuren, in welke volgorde, en hoe je dat voor elkaar krijgt met de middelen die je hebt.
 
-[Vraag een offerte aan →](/offerte-audit/)
+[Vraag een offerte aan →](/offerte-wcag-onderzoek/)
 
 {{< /section-cta >}}
 
@@ -166,7 +166,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 | **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties met een groot digitaal portfolio die structureel willen borgen |
 | **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
-[Meer over de WCAG-audit →](/audit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/abonnement/)
+[Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
 {{< /offerte-section >}}
 

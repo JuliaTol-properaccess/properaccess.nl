@@ -13,13 +13,15 @@
             {{ .Title }}
           </h1>
           <ul class="mb-4">
+            {{ with .Params.author }}
             <li class="mr-4 inline-block">
               <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+                href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
                 <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.author }}
+                >{{ . }}
               </a>
             </li>
+            {{ end }}
             {{ $categories:= .Params.categories }}
             {{ if $categories }}
               <li class="mr-4 inline-block">

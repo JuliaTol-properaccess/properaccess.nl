@@ -153,7 +153,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 | **Ideaal voor** | Eenmalig klantproject, oplevering, verantwoording | Agencies die agile werken en tussentijds willen checken | Agencies met een groot portfolio die structureel willen borgen |
 | **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
-[Meer over de WCAG-audit →](/audit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/abonnement/)
+[Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
 {{< /offerte-section >}}
 
