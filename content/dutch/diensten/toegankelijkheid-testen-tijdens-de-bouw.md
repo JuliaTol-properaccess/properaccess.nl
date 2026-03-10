@@ -1,5 +1,6 @@
 ---
 title: "Testen tijdens de bouw"
+meta_title: "Toegankelijkheid testen tijdens development — sprint-testing | Proper Access"
 weight: 6
 date: 2025-07-13
 layout: "second-page"

@@ -1,5 +1,7 @@
 ---
 title: "Algemene voorwaarden"
+meta_title: "Algemene voorwaarden — Proper Access"
+description: "De algemene voorwaarden van Proper Access, auditbureau voor digitale toegankelijkheid."
 date: 2026-02-21
 slug: "algemene-voorwaarden"
 url: "/algemene-voorwaarden/"

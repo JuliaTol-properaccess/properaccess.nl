@@ -1,5 +1,6 @@
 ---
 title: "Toegankelijkheidsaudit"
+meta_title: "WCAG-audit laten uitvoeren — onafhankelijk en concreet | Proper Access"
 layout: "audit"
 weight: 2
 featured: true

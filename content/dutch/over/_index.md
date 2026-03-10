@@ -1,5 +1,6 @@
 ---
 title: "Over Proper Access"
+meta_title: "Over ons — onafhankelijk WCAG-auditbureau | Proper Access"
 date: 2026-02-17
 type: "over"
 description: "Proper Access - Expertisecentrum voor digitale toegankelijkheid en WCAG audits"

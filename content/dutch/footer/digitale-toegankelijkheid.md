@@ -1,5 +1,7 @@
 ---
 title: "Digitale toegankelijkheid"
+meta_title: "Wat is digitale toegankelijkheid? — Proper Access"
+description: "Hoeveel mensen in Nederland hebben een beperking en waarom is digitale toegankelijkheid zo belangrijk? Feiten en cijfers op een rij."
 date: 2021-11-09
 slug: "digitale-toegankelijkheid"
 url: "/digitale-toegankelijkheid/"

@@ -6,7 +6,7 @@ categories:
   - "webdeveloper"
 tags:
   - "1-4-11"
-description: "Wat is een accessible name en waarom is dit cruciaal voor digitale toegankelijkheid? Praktische uitleg voor developers volgens WCAG."
+description: "Moet je het kleurcontrast van native HTML-componenten zoals checkboxes en selects controleren? Uitleg over de WCAG 1.4.11 uitzondering."
 keywords:
   - WCAG SC 1.4.11
   - contrast WCAG

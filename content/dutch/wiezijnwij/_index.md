@@ -1,5 +1,7 @@
 ---
 layout: "second-page"
+meta_title: "Over Proper Access — auditbureau digitale toegankelijkheid"
+description: "Proper Access is een onafhankelijk auditbureau voor digitale toegankelijkheid. 900+ audits, directe toegang tot je auditor en rapporten met concrete oplossingen."
 
 # Banner
 banner:

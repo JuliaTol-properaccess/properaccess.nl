@@ -1,5 +1,6 @@
 ---
 title: "EAA voor E-commerce en e-diensten"
+meta_title: "EAA voor webshops en e-diensten — wat moet je doen? | Proper Access"
 date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"

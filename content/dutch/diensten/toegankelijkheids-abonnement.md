@@ -1,5 +1,6 @@
 ---
 title: "Toegankelijkheids-abonnement"
+meta_title: "Toegankelijkheidsabonnement — doorlopend WCAG-partnerschap | Proper Access"
 layout: "agency"
 weight: 7
 date: 2026-02-28

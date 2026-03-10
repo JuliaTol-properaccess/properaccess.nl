@@ -1,5 +1,6 @@
 ---
 title: "Offerte aanvragen – WCAG-audit en training"
+meta_title: "Offerte aanvragen voor een WCAG-audit | Proper Access"
 date: 2023-10-05
 layout: "second-page"
 slug: "offerte-wcag-onderzoek"

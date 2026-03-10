@@ -1,5 +1,6 @@
 ---
 title: "Strippenkaart"
+meta_title: "Strippenkaart toegankelijkheid — flexibele ondersteuning op uurbasis | Proper Access"
 layout: "agency"
 weight: 3
 date: 2026-02-28

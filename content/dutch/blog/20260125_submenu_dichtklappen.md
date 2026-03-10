@@ -7,7 +7,7 @@ categories:
 tags:
   - "developer"
   - "2-4-3"
-description: "Wat is een accessible name en waarom is dit cruciaal voor digitale toegankelijkheid? Praktische uitleg voor developers volgens WCAG."
+description: "Hoe zorg je dat een submenu netjes dichtklapt als de toetsenbordfocus verdwijnt? Praktische fix voor WCAG 2.4.3 focusvolgorde."
 keywords:
   - WCAG SC 2.4.3
   - wcag focusvolgorde

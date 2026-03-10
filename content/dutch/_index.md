@@ -1,5 +1,6 @@
 ---
 title: "Proper Access — Digitale toegankelijkheid die werkt"
+meta_title: "Proper Access — onafhankelijk auditbureau digitale toegankelijkheid"
 date: 2026-03-07
 description: "Proper Access helpt organisaties met toegankelijkheidsaudits, concrete oplossingen en een rapport dat je developers meteen kunnen oppakken."
 keywords:

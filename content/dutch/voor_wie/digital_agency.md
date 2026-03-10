@@ -1,5 +1,6 @@
 ---
 title: "Digital Agencies"
+meta_title: "Toegankelijkheidsaudits voor digital agencies | Proper Access"
 date: 2022-01-26
 slug: "digital_agency"
 url: "/digital_agency/"

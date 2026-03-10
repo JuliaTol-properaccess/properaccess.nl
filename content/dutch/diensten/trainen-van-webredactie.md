@@ -1,5 +1,6 @@
 ---
 title: "Trainen van webredactie"
+meta_title: "Training digitale toegankelijkheid voor webredactie | Proper Access"
 weight: 4
 date: 2025-08-04
 slug: "trainen-van-webredactie"

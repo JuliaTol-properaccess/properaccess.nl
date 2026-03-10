@@ -1,5 +1,7 @@
 ---
 title: "Voor wie"
+meta_title: "Voor wie is een toegankelijkheidsaudit? — Proper Access"
+description: "Overheid, e-commerce, cultuur of digital agency — ontdek hoe een WCAG-audit jouw organisatie helpt om digitale drempels weg te nemen."
 layout: "home-style"
 date: 2025-07-12
 slug: "sectoren"

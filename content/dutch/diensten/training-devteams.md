@@ -1,5 +1,6 @@
 ---
 title: "Training voor devteams"
+meta_title: "WCAG-training voor developers — praktisch en hands-on | Proper Access"
 weight: 5
 date: 2024-12-05
 slug: "training-devteams"
