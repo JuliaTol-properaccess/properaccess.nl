@@ -20,7 +20,7 @@
     {{ range .Params.social }}
       <li>
         <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
+          <span class="sr-only">{{ .name }}</span>
           <i class="{{ .icon }}"></i>
         </a>
       </li>

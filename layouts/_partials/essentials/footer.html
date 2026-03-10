@@ -72,6 +72,7 @@
                 aria-label="{{ .name }}"
                 rel="nofollow noopener"
                 href="{{ .link | safeURL }}">
+                <span class="sr-only">{{ .name }}</span>
                 <i class="{{ .icon }}"></i>
               </a>
             </li>

@@ -103,7 +103,7 @@ Al deze problemen zijn op te lossen. En vaak sneller dan je denkt — als je wee
 
 We begrijpen hoe jullie werken: in sprints, met deadlines, met klanten die vragen stellen. Daarom bieden we geen dikke rapporten aan waar je zelf mee aan de slag moet. We denken actief mee — van start tot oplevering.
 
-- **Audit tijdens ontwikkeling** — we voeren tussentijdse quickscans uit tijdens de bouw. Zo vang je problemen op voordat ze kostbaar worden. Je team krijgt direct feedback op componentniveau.
+- **[Audit tijdens ontwikkeling](/toegankelijkheid-testen-tijdens-de-bouw/)** — we voeren tussentijdse quickscans uit tijdens de bouw. Zo vang je problemen op voordat ze kostbaar worden. Je team krijgt direct feedback op componentniveau.
 - **Code reviews en technische begeleiding** — je developer twijfelt over de beste manier om een dropdown toegankelijk te maken? We kijken mee, delen code-snippets, en leggen uit waarom bepaalde keuzes beter werken.
 - **Trainingen voor je team** — praktische workshops voor developers, designers en contentteams. Focus op wat jullie daadwerkelijk gebruiken: React, Vue, WordPress, Drupal. Geen theorie, maar hands-on.
 - **Volledige audit voor oplevering** — voordat de website live gaat, voeren we een grondige audit uit op alle 55 WCAG 2.2 AA-succescriteria. Je krijgt een rapport per pagina en per element — met screenshots, code-voorbeelden en prioritering.

@@ -36,7 +36,7 @@ trust:
 
 Vanaf 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act. Webshops, apps, betaalprocessen, klantenportalen — alles moet voldoen aan WCAG 2.1 niveau AA. ACM en AFM houden toezicht, met boetes tot € 900.000 of 10% van je jaaromzet.
 
-Maar het gaat niet alleen om de wet.
+Maar het gaat niet alleen om de wet. Lees meer over [wat digitale toegankelijkheid inhoudt](/digitale-toegankelijkheid/).
 
 {{< /section-full >}}
 

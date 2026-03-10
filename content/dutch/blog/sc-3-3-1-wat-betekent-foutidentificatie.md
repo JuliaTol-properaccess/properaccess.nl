@@ -65,3 +65,5 @@ Kort gezegd: gebruikers moeten weten wáár de fout is én wat ze moeten doen om
 ## Samenvatting
 
 Fouten maken doet iedereen. Maar een goede website helpt gebruikers om fouten snel te herkennen en eenvoudig te herstellen. Duidelijke foutidentificatie maakt je site toegankelijker en gebruiksvriendelijker voor iedereen.
+
+Bekijk ook ons [naslagwerk foutmeldingen](/tools/foutmeldingen/) voor kant-en-klare voorbeelden, of lees verder over [SC 3.3.3 Foutsuggestie](/blog/sc-3-3-3-wat-betekent-foutsuggestie/).
