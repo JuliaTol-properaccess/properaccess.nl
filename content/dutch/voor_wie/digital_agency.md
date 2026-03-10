@@ -2,8 +2,10 @@
 title: "Digital Agencies"
 meta_title: "Toegankelijkheidsaudits voor digital agencies | Proper Access"
 date: 2022-01-26
-slug: "digital_agency"
-url: "/digital_agency/"
+slug: "digital-agency"
+url: "/digital-agency/"
+aliases:
+  - /digital_agency/
 layout: "agency"
 description: "Jouw klanten moeten voldoen aan WCAG. Wij helpen je team met audits, code reviews en trainingen. 900+ audits uitgevoerd. Samen bouwen we toegankelijke websites."
 keywords:

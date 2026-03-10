@@ -1,12 +1,13 @@
 ---
 title: "Hoe verwijder ik de melding ‘Google vragen over dit bericht’ – en waarom zou je dat willen?"
-slug: "toetsenbord_toegankelijk"
+slug: "toetsenbord-toegankelijk"
 date: 2025-11-09
-categories: 
+categories:
   - "tips-en-tools"
   - "Webdeveloper"
 aliases:
   - "/toetsenbord_toegankelijk/"
+  - /blog/toetsenbord_toegankelijk/
 description: "Hoe verwijder je de melding Google vragen over dit bericht in Chrome? Lees waarom deze melding je toegankelijkheidstests verstoort."
 ---
 

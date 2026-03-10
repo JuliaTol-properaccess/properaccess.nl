@@ -2,8 +2,10 @@
 title: "Digitale toegankelijkheid overheid"
 meta_title: "WCAG-audit voor overheidswebsites — Wdo-compliant | Proper Access"
 date: 2025-04-02
-slug: "digitale_toegankelijkheid_overheid"
-url: "/digitale_toegankelijkheid_overheid/"
+slug: "digitale-toegankelijkheid-overheid"
+url: "/digitale-toegankelijkheid-overheid/"
+aliases:
+  - /digitale_toegankelijkheid_overheid/
 layout: "single"
 description: "Voldoe aan de Wet digitale overheid (WDO) met een grondige audit en praktische begeleiding. Voor gemeenten, ministeries en uitvoeringsorganisaties die echt vooruitgang willen boeken."
 keywords:

@@ -1,7 +1,9 @@
 ---
 title: "Accessibility Tree in Chrome: Installatie & Interpretatie Gids [2026]"
 date: 2026-02-15
-slug: "accessibility_tree_voor_developers"
+slug: "accessibility-tree-voor-developers"
+aliases:
+  - /blog/accessibility_tree_voor_developers/
 categories:
   - "webdeveloper"
 tags:

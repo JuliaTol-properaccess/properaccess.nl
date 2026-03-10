@@ -1,12 +1,13 @@
 ---
 title: "Waarom is het belangrijk om koppen als kopteksten op te maken?"
 date: 2024-04-07
-slug: "toegankelijke_kopteksten_wcag"
-categories: 
+slug: "toegankelijke-kopteksten-wcag"
+categories:
   - "achtergrond_wcag"
   - "Webredactie"
 aliases:
   - "/toegankelijke_kopteksten_wcag/"
+  - /blog/toegankelijke_kopteksten_wcag/
 description: "Waarom zijn kopteksten (H1-H6) belangrijk voor toegankelijkheid? Lees hoe schermlezers koppen gebruiken en hoe je ze correct opmaakt."
 ---
 

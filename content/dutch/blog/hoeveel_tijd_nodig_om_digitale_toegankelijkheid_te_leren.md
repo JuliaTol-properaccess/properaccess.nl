@@ -1,8 +1,8 @@
 ---
 title: "Hoe veel tijd is nodig om digitale toegankelijkheid te leren?"
 date: 2025-10-28
-slug: "hoeveel_tijd_nodig_om_digitale_toegankelijkheid_te_leren"
-categories: 
+slug: "hoeveel-tijd-nodig-om-digitale-toegankelijkheid-te-leren"
+categories:
   - "achtergrond_wcag"
   - "de EAA"
 description: "Hoeveel tijd kost het om digitale toegankelijkheid echt te leren? Persoonlijke inzichten over WCAG, audits en het leerproces van professionals."
@@ -12,6 +12,7 @@ keywords:
   - toegankelijkheidsaudit ervaring
 aliases:
   - /hoeveel_tijd_nodig_om_digitale_toegankelijkheid_te_leren/
+  - /blog/hoeveel_tijd_nodig_om_digitale_toegankelijkheid_te_leren/
 ---
 
 Graag wil ik mijn persoonlijke ervaring delen met iedereen die onlangs is begonnen met het testen van digitale toegankelijkheid van websites en apps.

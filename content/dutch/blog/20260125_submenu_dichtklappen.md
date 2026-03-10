@@ -1,7 +1,9 @@
 ---
 title: "Submenu dichtklappen"
 date: 2026-01-25
-slug: "submenu_dichtklappen"
+slug: "submenu-dichtklappen"
+aliases:
+  - /blog/submenu_dichtklappen/
 categories:
   - "webdeveloper"
 tags:
