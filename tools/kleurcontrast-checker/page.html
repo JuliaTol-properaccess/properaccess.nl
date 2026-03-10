@@ -1,0 +1,751 @@
+<!--
+  Kleurcontrast Checker met WCAG-context — Proper Access
+
+  Niet zomaar een contrast checker: deze legt uit WANNEER welke
+  drempel geldt en welk WCAG-succescriterium van toepassing is.
+
+  Puur frontend — geen server nodig.
+  Integreer in Hugo of gebruik standalone.
+-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kleurcontrast checker — Proper Access</title>
+  <style>
+    /* ============================================
+       Standalone styling — als je dit in Hugo
+       integreert, gebruik je je eigen Tailwind
+       classes en kun je deze <style> verwijderen.
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Nunito Sans", system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1a1a2e;
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 0; margin-bottom: 0.75rem; }
+    .intro { color: #555; margin-bottom: 2rem; max-width: 40rem; }
+
+    /* ---- Color pickers ---- */
+    .color-inputs {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 1rem;
+      align-items: end;
+      margin-bottom: 2rem;
+    }
+
+    .color-field label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      font-size: 0.9375rem;
+    }
+
+    .color-field .picker-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .color-field input[type="color"] {
+      width: 3rem;
+      height: 2.75rem;
+      border: 2px solid #ccc;
+      border-radius: 0.375rem;
+      padding: 0.125rem;
+      cursor: pointer;
+      background: white;
+      flex-shrink: 0;
+    }
+    .color-field input[type="color"]:focus {
+      outline: 3px solid #2563eb;
+      outline-offset: 2px;
+      border-color: #2563eb;
+    }
+
+    .color-field input[type="text"] {
+      width: 100%;
+      padding: 0.625rem 0.75rem;
+      font-size: 1rem;
+      font-family: monospace;
+      border: 2px solid #ccc;
+      border-radius: 0.375rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .color-field input[type="text"]:focus {
+      outline: 3px solid #2563eb;
+      outline-offset: 2px;
+      border-color: #2563eb;
+    }
+    .color-field input[type="text"].invalid {
+      border-color: #dc2626;
+    }
+
+    .swap-btn {
+      align-self: flex-end;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 2px solid #ccc;
+      border-radius: 0.375rem;
+      background: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: #555;
+      flex-shrink: 0;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .swap-btn:hover {
+      border-color: #1a1a2e;
+      color: #1a1a2e;
+    }
+    .swap-btn:focus {
+      outline: 3px solid #2563eb;
+      outline-offset: 2px;
+    }
+
+    /* ---- Preview ---- */
+    .preview-box {
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e2e8f0;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .preview-box .preview-large {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .preview-box .preview-normal {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .preview-box .preview-small {
+      font-size: 0.875rem;
+    }
+
+    /* ---- Ratio display ---- */
+    .ratio-display {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .ratio-value {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .ratio-label {
+      font-size: 0.9375rem;
+      color: #555;
+      margin-top: 0.25rem;
+    }
+
+    /* ---- Results grid ---- */
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .result-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .result-card h3 {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #555;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.375rem 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.9375rem;
+    }
+    .result-row:last-child { border-bottom: none; }
+
+    .result-row .label { color: #333; }
+    .result-row .threshold {
+      font-size: 0.8125rem;
+      color: #888;
+      font-family: monospace;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.125rem 0.625rem;
+      border-radius: 1rem;
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+    .badge-pass {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .badge-fail {
+      background: #fef2f2;
+      color: #991b1b;
+    }
+
+    /* ---- WCAG context (the differentiator) ---- */
+    .wcag-context {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .wcag-context h2 {
+      margin-bottom: 1rem;
+    }
+
+    .criterion {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .criterion:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .criterion-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .criterion-number {
+      font-family: monospace;
+      font-size: 0.875rem;
+      font-weight: 700;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      white-space: nowrap;
+    }
+    .criterion-name {
+      font-weight: 700;
+      font-size: 0.9375rem;
+    }
+    .criterion-level {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      white-space: nowrap;
+    }
+    .level-aa {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .level-aaa {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .criterion-desc {
+      font-size: 0.9375rem;
+      color: #555;
+      line-height: 1.6;
+      margin-top: 0.25rem;
+    }
+    .criterion-desc code {
+      background: rgba(0,0,0,0.06);
+      padding: 0.0625rem 0.375rem;
+      border-radius: 0.25rem;
+      font-size: 0.875em;
+      white-space: nowrap;
+    }
+
+    /* Highlighted criterion based on result */
+    .criterion.relevant {
+      background: #f0fdf4;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      padding-top: 0.75rem;
+      border-radius: 0.375rem;
+    }
+    .criterion.failing {
+      background: #fef2f2;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      padding-top: 0.75rem;
+      border-radius: 0.375rem;
+    }
+
+    /* ---- Quick reference table ---- */
+    .ref-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+      margin-top: 1rem;
+    }
+    .ref-table th {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      background: #f1f5f9;
+      font-weight: 700;
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #555;
+    }
+    .ref-table td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .ref-table tr:last-child td { border-bottom: none; }
+
+    /* ---- CTA ---- */
+    .cta {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    .cta p { margin: 0 0 0.5rem; }
+    .cta a { color: #1a1a2e; font-weight: 600; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      .color-inputs {
+        grid-template-columns: 1fr;
+      }
+      .swap-btn {
+        justify-self: center;
+        transform: rotate(90deg);
+      }
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kleurcontrast checker</h1>
+  <p class="intro">
+    Controleer of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
+    Vul twee kleuren in en zie direct of het contrast voldoende is &mdash; en voor welke situaties.
+  </p>
+
+  <!-- Color inputs -->
+  <div class="color-inputs">
+    <div class="color-field">
+      <label for="fgHex">Voorgrondkleur (tekst)</label>
+      <div class="picker-row">
+        <input type="color" id="fgColor" value="#1a1a2e" aria-label="Voorgrondkleur kiezen">
+        <input type="text" id="fgHex" value="#1A1A2E" maxlength="7" autocomplete="off" spellcheck="false"
+               aria-describedby="hexHint">
+      </div>
+    </div>
+
+    <button type="button" class="swap-btn" onclick="swapColors()" aria-label="Kleuren omdraaien">
+      &#8596;
+    </button>
+
+    <div class="color-field">
+      <label for="bgHex">Achtergrondkleur</label>
+      <div class="picker-row">
+        <input type="color" id="bgColor" value="#ffffff" aria-label="Achtergrondkleur kiezen">
+        <input type="text" id="bgHex" value="#FFFFFF" maxlength="7" autocomplete="off" spellcheck="false"
+               aria-describedby="hexHint">
+      </div>
+    </div>
+  </div>
+  <span id="hexHint" class="sr-only">Voer een hexadecimale kleurcode in, bijv. #FF6600</span>
+
+  <!-- Preview -->
+  <div class="preview-box" id="previewBox" aria-label="Voorbeeld van de kleurencombinatie">
+    <div class="preview-large">Grote tekst (18pt+)</div>
+    <div class="preview-normal">Normale tekst in deze kleurencombinatie.</div>
+    <div class="preview-small">Kleine tekst &mdash; goed leesbaar?</div>
+  </div>
+
+  <!-- Ratio -->
+  <div class="ratio-display" aria-live="polite">
+    <div class="ratio-value" id="ratioValue">12.5:1</div>
+    <div class="ratio-label">contrastverhouding</div>
+  </div>
+
+  <!-- Results grid -->
+  <div class="results-grid" id="resultsGrid" role="region" aria-label="Resultaten per WCAG-niveau" aria-live="polite">
+    <div class="result-card">
+      <h3>Niveau AA</h3>
+      <div class="result-row">
+        <span class="label">Normale tekst</span>
+        <span class="threshold">4.5:1</span>
+        <span class="badge" id="aa-normal"></span>
+      </div>
+      <div class="result-row">
+        <span class="label">Grote tekst</span>
+        <span class="threshold">3:1</span>
+        <span class="badge" id="aa-large"></span>
+      </div>
+      <div class="result-row">
+        <span class="label">UI-componenten</span>
+        <span class="threshold">3:1</span>
+        <span class="badge" id="aa-ui"></span>
+      </div>
+    </div>
+    <div class="result-card">
+      <h3>Niveau AAA</h3>
+      <div class="result-row">
+        <span class="label">Normale tekst</span>
+        <span class="threshold">7:1</span>
+        <span class="badge" id="aaa-normal"></span>
+      </div>
+      <div class="result-row">
+        <span class="label">Grote tekst</span>
+        <span class="threshold">4.5:1</span>
+        <span class="badge" id="aaa-large"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WCAG context — the differentiator -->
+  <div class="wcag-context" id="wcagContext">
+    <h2>Welke eis geldt wanneer?</h2>
+
+    <div class="criterion" id="ctx-143">
+      <div class="criterion-header">
+        <span class="criterion-number">1.4.3</span>
+        <span class="criterion-name">Contrast (minimum)</span>
+        <span class="criterion-level level-aa">Niveau AA</span>
+      </div>
+      <p class="criterion-desc">
+        Tekst en afbeeldingen van tekst moeten een contrastverhouding van minstens <code>4.5:1</code> hebben.
+        <strong>Grote tekst</strong> (18pt / 24px of groter, of 14pt / 18.66px vet) mag een lagere verhouding van <code>3:1</code> hebben.
+        Dit criterium geldt niet voor logo's, merknamen of decoratieve tekst.
+      </p>
+    </div>
+
+    <div class="criterion" id="ctx-1411">
+      <div class="criterion-header">
+        <span class="criterion-number">1.4.11</span>
+        <span class="criterion-name">Contrast van niet-tekstuele content</span>
+        <span class="criterion-level level-aa">Niveau AA</span>
+      </div>
+      <p class="criterion-desc">
+        UI-componenten (knoppen, formuliervelden, iconen) en grafische objecten die nodig zijn om de content te begrijpen
+        moeten een contrastverhouding van minstens <code>3:1</code> hebben ten opzichte van aangrenzende kleuren.
+        Denk aan de rand van een invoerveld, de kleur van een icoon, of de staat van een schakelaar.
+      </p>
+    </div>
+
+    <div class="criterion" id="ctx-146">
+      <div class="criterion-header">
+        <span class="criterion-number">1.4.6</span>
+        <span class="criterion-name">Contrast (uitgebreid)</span>
+        <span class="criterion-level level-aaa">Niveau AAA</span>
+      </div>
+      <p class="criterion-desc">
+        Tekst moet een contrastverhouding van minstens <code>7:1</code> hebben. Grote tekst: <code>4.5:1</code>.
+        Dit is het hoogste niveau en is niet wettelijk verplicht, maar wordt wel aanbevolen voor
+        optimale leesbaarheid &mdash; bijvoorbeeld voor langere teksten of een ouder publiek.
+      </p>
+    </div>
+
+    <!-- Quick reference -->
+    <h2 style="margin-top: 1.5rem;">Overzicht drempelwaarden</h2>
+    <table class="ref-table">
+      <thead>
+        <tr>
+          <th>Wat</th>
+          <th>AA (verplicht)</th>
+          <th>AAA (aanbevolen)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Normale tekst (&lt; 18pt)</td>
+          <td><strong>4.5:1</strong></td>
+          <td><strong>7:1</strong></td>
+        </tr>
+        <tr>
+          <td>Grote tekst (&ge; 18pt / &ge; 14pt vet)</td>
+          <td><strong>3:1</strong></td>
+          <td><strong>4.5:1</strong></td>
+        </tr>
+        <tr>
+          <td>UI-componenten &amp; iconen</td>
+          <td><strong>3:1</strong></td>
+          <td>&mdash;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <p>Kleurcontrast is slechts één van de 55 WCAG-succescriteria. Wil je weten of je hele
+    website voldoet aan de toegankelijkheidseisen?</p>
+    <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+  </div>
+
+  <script>
+    // ==================
+    // Elements
+    // ==================
+    const fgColor = document.getElementById("fgColor");
+    const fgHex = document.getElementById("fgHex");
+    const bgColor = document.getElementById("bgColor");
+    const bgHex = document.getElementById("bgHex");
+    const previewBox = document.getElementById("previewBox");
+    const ratioValue = document.getElementById("ratioValue");
+
+    // ==================
+    // WCAG contrast calculation
+    // Per WCAG 2.x: relative luminance + contrast ratio
+    // https://www.w3.org/TR/WCAG21/#dfn-relative-luminance
+    // ==================
+
+    function hexToRgb(hex) {
+      hex = hex.replace(/^#/, "");
+      // Support 3-char hex
+      if (hex.length === 3) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+      }
+      const num = parseInt(hex, 16);
+      return {
+        r: (num >> 16) & 255,
+        g: (num >> 8) & 255,
+        b: num & 255,
+      };
+    }
+
+    function relativeLuminance(hex) {
+      const { r, g, b } = hexToRgb(hex);
+
+      const [rs, gs, bs] = [r, g, b].map((c) => {
+        const s = c / 255;
+        return s <= 0.04045
+          ? s / 12.92
+          : Math.pow((s + 0.055) / 1.055, 2.4);
+      });
+
+      return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+    }
+
+    function contrastRatio(hex1, hex2) {
+      const l1 = relativeLuminance(hex1);
+      const l2 = relativeLuminance(hex2);
+      const lighter = Math.max(l1, l2);
+      const darker = Math.min(l1, l2);
+      return (lighter + 0.05) / (darker + 0.05);
+    }
+
+    // ==================
+    // Validation
+    // ==================
+
+    function isValidHex(hex) {
+      return /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/.test(hex);
+    }
+
+    function normalizeHex(hex) {
+      hex = hex.trim();
+      if (!hex.startsWith("#")) hex = "#" + hex;
+      return hex;
+    }
+
+    // ==================
+    // Update everything
+    // ==================
+
+    function update() {
+      const fg = fgColor.value;
+      const bg = bgColor.value;
+
+      // Preview
+      previewBox.style.backgroundColor = bg;
+      previewBox.style.color = fg;
+
+      // Ratio
+      const ratio = contrastRatio(fg, bg);
+      const roundedRatio = Math.floor(ratio * 10) / 10;
+      ratioValue.textContent = `${roundedRatio}:1`;
+
+      // Color the ratio based on result
+      if (ratio >= 7) {
+        ratioValue.style.color = "#166534";
+      } else if (ratio >= 4.5) {
+        ratioValue.style.color = "#3730a3";
+      } else if (ratio >= 3) {
+        ratioValue.style.color = "#d97706";
+      } else {
+        ratioValue.style.color = "#dc2626";
+      }
+
+      // Badges
+      setBadge("aa-normal", ratio >= 4.5);
+      setBadge("aa-large", ratio >= 3);
+      setBadge("aa-ui", ratio >= 3);
+      setBadge("aaa-normal", ratio >= 7);
+      setBadge("aaa-large", ratio >= 4.5);
+
+      // Highlight relevant WCAG criteria
+      highlightCriteria(ratio);
+    }
+
+    function setBadge(id, pass) {
+      const el = document.getElementById(id);
+      if (pass) {
+        el.className = "badge badge-pass";
+        el.textContent = "Voldoet";
+      } else {
+        el.className = "badge badge-fail";
+        el.textContent = "Onvoldoende";
+      }
+    }
+
+    function highlightCriteria(ratio) {
+      const ctx143 = document.getElementById("ctx-143");
+      const ctx1411 = document.getElementById("ctx-1411");
+      const ctx146 = document.getElementById("ctx-146");
+
+      // Reset
+      [ctx143, ctx1411, ctx146].forEach((el) => {
+        el.classList.remove("relevant", "failing");
+      });
+
+      // 1.4.3 — normal text needs 4.5:1, large text needs 3:1
+      if (ratio >= 4.5) {
+        ctx143.classList.add("relevant");
+      } else {
+        ctx143.classList.add("failing");
+      }
+
+      // 1.4.11 — UI components need 3:1
+      if (ratio >= 3) {
+        ctx1411.classList.add("relevant");
+      } else {
+        ctx1411.classList.add("failing");
+      }
+
+      // 1.4.6 — enhanced: normal text 7:1, large text 4.5:1
+      if (ratio >= 7) {
+        ctx146.classList.add("relevant");
+      } else if (ratio < 4.5) {
+        ctx146.classList.add("failing");
+      }
+    }
+
+    // ==================
+    // Event handlers
+    // ==================
+
+    // Color picker → hex input
+    fgColor.addEventListener("input", () => {
+      fgHex.value = fgColor.value.toUpperCase();
+      fgHex.classList.remove("invalid");
+      update();
+    });
+    bgColor.addEventListener("input", () => {
+      bgHex.value = bgColor.value.toUpperCase();
+      bgHex.classList.remove("invalid");
+      update();
+    });
+
+    // Hex input → color picker
+    fgHex.addEventListener("input", () => {
+      const hex = normalizeHex(fgHex.value);
+      if (isValidHex(hex)) {
+        fgColor.value = hex.length === 4
+          ? `#${hex[1]}${hex[1]}${hex[2]}${hex[2]}${hex[3]}${hex[3]}`
+          : hex;
+        fgHex.classList.remove("invalid");
+        update();
+      } else {
+        fgHex.classList.add("invalid");
+      }
+    });
+    bgHex.addEventListener("input", () => {
+      const hex = normalizeHex(bgHex.value);
+      if (isValidHex(hex)) {
+        bgColor.value = hex.length === 4
+          ? `#${hex[1]}${hex[1]}${hex[2]}${hex[2]}${hex[3]}${hex[3]}`
+          : hex;
+        bgHex.classList.remove("invalid");
+        update();
+      } else {
+        bgHex.classList.add("invalid");
+      }
+    });
+
+    // Normalize hex on blur
+    fgHex.addEventListener("blur", () => {
+      const hex = normalizeHex(fgHex.value);
+      if (isValidHex(hex)) {
+        fgHex.value = hex.toUpperCase();
+      }
+    });
+    bgHex.addEventListener("blur", () => {
+      const hex = normalizeHex(bgHex.value);
+      if (isValidHex(hex)) {
+        bgHex.value = hex.toUpperCase();
+      }
+    });
+
+    // Swap
+    function swapColors() {
+      const tmpColor = fgColor.value;
+      const tmpHex = fgHex.value;
+      fgColor.value = bgColor.value;
+      fgHex.value = bgHex.value;
+      bgColor.value = tmpColor;
+      bgHex.value = tmpHex;
+      update();
+    }
+
+    // Initial render
+    update();
+  </script>
+
+</body>
+</html>
