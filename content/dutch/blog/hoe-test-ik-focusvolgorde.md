@@ -16,19 +16,52 @@ aliases:
   - /hoe-test-ik-focusvolgorde/
 ---
 
-# Hoe te testen WCAG SC 2.4.3 - Focusvolgorde:
+Focusvolgorde is een van die dingen die je pas opvalt als het misgaat. Je drukt op Tab en ineens spring je van de header naar de footer, of je opent een modal en de focus blijft achter de overlay hangen. Voor iemand die alleen het toetsenbord gebruikt, is dat het verschil tussen een bruikbare website en een onbruikbare.
 
+**WCAG succescriterium 2.4.3** (Focusvolgorde) eist dat de volgorde waarin elementen toetsenbordfocus krijgen, logisch en bruikbaar is. Dat betekent niet dat de focusvolgorde exact de visuele volgorde moet volgen -- kleine afwijkingen zijn prima. Maar de volgorde mag niet verwarrend zijn of de betekenis van de content aantasten.
 
-Klik in de adresbalk van de browser. Gebruik de Tab toets om te navigeren en Shift Tab om terug te navigeren.
+## Wie heeft hier last van?
 
-Activeer (met het toetsenbord) eventuele functies die een menu, dialoogvenster of iets vergelijkbaars openen.
+- **Mensen met een motorische beperking** die een toetsenbord, schakelaar of andere invoerapparatuur gebruiken
+- **Blinde gebruikers** die met een schermlezer navigeren -- zij zien niet waar de focus naartoe springt
+- **Mensen met een cognitieve beperking** die afhankelijk zijn van voorspelbare patronen
 
-Let op de volgende:
+## Zo test je focusvolgorde
 
-- De focusvolgorde wijkt niet af van de visuele volgorde op een manier die de inhoud moeilijk te begrijpen of te gebruiken maakt. (Kleine afwijkingen zijn geen probleem!)
-- Als: er elementen zijn die een menu, dialoogvenster of vergelijkbare component openen, dan geldt dat:  
-    - De focus automatisch wordt verplaatst naar het geopende element wanneer dit verschijnt, of
-    - Het geopende element direct na het activerende element komt in de focusvolgorde, en  
-        
+### Stap 1: Begin bij de adresbalk
 
-Wanneer het geopende element wordt gesloten, de focus terugkeert naar het activerende element.
+Klik in de adresbalk van de browser. Gebruik de **Tab**-toets om vooruit te navigeren en **Shift+Tab** om achteruit te gaan. Loop de hele pagina door.
+
+### Stap 2: Let op de volgorde
+
+Volgt de focus een logisch pad? Van navigatie naar hoofdcontent naar footer? Of springt de focus heen en weer op een manier die niet aansluit bij wat je op het scherm ziet?
+
+**Kleine afwijkingen zijn geen probleem.** Als een zoekknop rechts van het zoekveld staat maar net iets eerder focus krijgt, is dat prima. Het wordt een probleem als de focus van de header naar de footer springt en dan terug naar de sidebar.
+
+### Stap 3: Test interactieve componenten
+
+Open met het toetsenbord alle menu's, dialoogvensters, tabs en andere componenten. Let op:
+
+- **Wordt de focus verplaatst naar het geopende element?** Als je een modal opent, moet de focus naar die modal gaan -- niet achter de overlay blijven.
+- **Keert de focus terug na sluiting?** Als je de modal sluit, moet de focus teruggaan naar de knop waarmee je de modal opende.
+- **Kun je het element weer sluiten?** Escape moet werken bij modals en menu's.
+
+### Stap 4: Check op focusvallen
+
+Een focusval is een element waar je met de Tab-toets niet meer uit kunt. Dit komt voor bij slecht gebouwde modals, embedded content (iframes) of custom widgets. Als je vastzit, is dat een ernstig probleem.
+
+## Veelvoorkomende problemen
+
+- **CSS-layouts met `order` of `flex-direction: row-reverse`** kunnen ervoor zorgen dat de visuele volgorde afwijkt van de DOM-volgorde. De focus volgt de DOM, niet de CSS.
+- **`tabindex` met positieve waarden** (zoals `tabindex="1"`) dwingt een onnatuurlijke focusvolgorde af. Gebruik alleen `tabindex="0"` (element toevoegen aan de natuurlijke volgorde) of `tabindex="-1"` (focus programmeerbaar maar niet via Tab).
+- **Dynamisch ingevoegde content** (zoals een melding of een notificatie) die niet op de juiste plek in de DOM wordt geplaatst.
+
+## Wat doe je als je een probleem vindt?
+
+De oplossing hangt af van de oorzaak:
+
+- **DOM-volgorde aanpassen** zodat deze overeenkomt met de visuele volgorde
+- **Focus management toevoegen** bij interactieve componenten (focus verplaatsen naar een geopend element, terugzetten na sluiting)
+- **Positieve tabindex verwijderen** en de natuurlijke volgorde gebruiken
+
+Twijfel je of een afwijking een echt probleem is? De vuistregel: als de afwijking het begrip of de bediening bemoeilijkt, is het een probleem. Als het alleen een kleine visuele afwijking is die niemand in de war brengt, is het prima.

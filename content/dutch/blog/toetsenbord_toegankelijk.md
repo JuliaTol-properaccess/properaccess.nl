@@ -40,3 +40,32 @@ Die melding is onderdeel van een nieuwe functie in Chrome: **contextuele suggest
 ![screenshot Chrome browser](https://properaccess.nl/wp-content/uploads/2025/11/Scherm­afbeelding-2025-11-09-om-15.06.09-1024x512.png)
 
 Daarna kun je weer soepel navigeren met de Tab-toets, zoals het hoort.
+
+## Waarom Tab-testen zo belangrijk is
+
+De Tab-toets is de basis van elke toegankelijkheidstest. Als je met Tab door een pagina navigeert, test je in feite het hele toetsenbordpad dat een bezoeker met een motorische beperking dagelijks aflegt. Alles wat niet met Tab bereikbaar is, is ook niet bereikbaar voor veel hulpsoftware -- schakelbesturing, spraakbesturing en in veel gevallen ook schermlezers.
+
+Bij onze audits beginnen we altijd met het toetsenbord. Binnen een paar minuten weet je:
+
+- Zijn alle interactieve elementen (links, knoppen, formuliervelden) bereikbaar?
+- Is de focusvolgorde logisch?
+- Is er een zichtbare focus-indicator?
+- Kun je modals, menu's en andere componenten openen en sluiten?
+- Zijn er focusvallen waar je niet meer uitkomt?
+
+## Andere browsermeldingen die je tests verstoren
+
+De Chrome-melding is niet het enige obstakel. Hier zijn een paar andere browser-eigenaardigheden die je kunt tegenkomen:
+
+- **Browserextensies.** Extensies zoals wachtwoordmanagers, adblockers en vertaaltools voegen eigen elementen toe aan de pagina. Die krijgen soms focus en verstoren de focusvolgorde. Test altijd in een schoon profiel of in incognito-modus.
+- **PDF-viewers in de browser.** Chrome's ingebouwde PDF-viewer heeft beperkte toetsenbordnavigatie. Test PDF's altijd ook met een desktopschermlezer.
+- **Autofill-suggesties.** Chrome en Firefox tonen soms autofill-dropdowns die de focus overnemen. Dit kan verwarrend zijn tijdens het testen van formulieren.
+
+## Je testomgeving inrichten
+
+Een paar tips om je testomgeving schoon te houden:
+
+- **Gebruik een apart browserprofiel** zonder extensies voor toegankelijkheidstests
+- **Zet browserupdates niet uit** -- nieuwe versies lossen soms toegankelijkheidsproblemen op, maar kunnen ook nieuwe introduceren
+- **Test in meerdere browsers.** Chrome, Firefox en Safari hebben elk hun eigen focusgedrag. Wat in Chrome werkt, werkt niet per se in Safari
+- **Houd een toetsenbordcheatsheet bij.** Tab, Shift+Tab, Enter, Spatiebalk, Escape, pijltoetsen -- dat zijn je basistoetsen. Maar elke component heeft eigen verwachtingen (zie de [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/))

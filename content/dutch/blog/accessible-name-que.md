@@ -16,13 +16,49 @@ aliases:
   - /accessible-name-que/
 ---
 
-Bij Proper Access beginnen we al onze trainingen voor webdevelopers met iets dat simpel lijkt, maar reuze belangrijk is. Want wat moet je nou absoluut weten over digitale toegankelijkheid? Als ik je als ontwikkelaar een tip mag geven: dat is begrijpen hoe je de toegankelijke naam (accessibility name) van een interactief element gebruikt. 
+Bij Proper Access beginnen we al onze trainingen voor webdevelopers met iets dat simpel lijkt, maar reuze belangrijk is. Als ik je als ontwikkelaar een tip mag geven: begrijp hoe de **toegankelijke naam** (accessible name) van een interactief element werkt. Het is de basis van digitale toegankelijkheid -- en het punt waar het vaakst iets misgaat.
 
-Deze 3 dingen moet je weten:
+## Wat is een accessible name?
 
-1. Elk interactief element (link, knop, invoerveld, etc.) moet een toegankelijke naam hebben. Die kun je zelf controleren in een browser. In Chrome vind je deze naam in Devtools, onder de tab Accessibility.
-2. De toegankelijke naam moet de functie van het element beschrijven, bijvoorbeeld “Open menu”. Verandert de functie? Dan moet de naam mee veranderen, bijvoorbeeld naar “Sluit menu”.
-3. Staat er tekst op het interactieve element? Dan moet de toegankelijke naam hetzelfde zijn als de zichtbare tekst. Anders kun je dit element niet met je stem bedienen. Controleer je website ook op 200% en 400% zoom. Dan verandert de layout en de kans is groot dat je andere knoppen en links in beeld krijgt.
+De accessible name is de naam die hulpsoftware -- een schermlezer, spraakbesturing, brailleleesregel -- gebruikt om een interactief element te identificeren. Het is wat een blinde bezoeker hoort als de schermlezer een knop, link of invoerveld voorleest. En het is het woord dat een gebruiker van spraakbesturing uitspreekt om een element te activeren.
+
+Zonder accessible name is een element onbruikbaar voor deze gebruikers. De schermlezer zegt dan "knop" zonder verdere uitleg, of leest een cryptische bestandsnaam voor.
+
+## De drie regels die je moet kennen
+
+**1. Elk interactief element moet een toegankelijke naam hebben.**
+
+Links, knoppen, invoervelden, checkboxes, selectvelden -- alles waarmee je kunt interacteren. Controleer dit zelf in Chrome DevTools onder de tab **Accessibility**. Daar zie je de berekende accessible name van elk element.
+
+**2. De naam moet de functie beschrijven.**
+
+Een hamburger-menuknop moet niet "drie streepjes" heten, maar "Open menu". Een kruisje om een modal te sluiten moet niet "X" heten, maar "Sluit venster". Verandert de functie? Dan moet de naam mee veranderen. Een toggle die het menu opent moet na klikken zeggen "Sluit menu".
+
+**3. De naam moet overeenkomen met de zichtbare tekst.**
+
+Dit is **SC 2.5.3** (Label in Name) en het wordt vaak vergeten. Als er "Verstuur" op een knop staat, moet de accessible name ook "Verstuur" bevatten. Niet "Submit form" of "Formulier verzenden". Waarom? Omdat spraakbesturingssoftware de zichtbare tekst gebruikt om het element te vinden. Zegt de gebruiker "klik Verstuur", maar is de accessible name "Submit", dan werkt het niet.
+
+**Belangrijk:** controleer je website ook op 200% en 400% zoom. Dan verandert de layout en zie je soms andere knoppen en links -- die ook allemaal een correcte naam nodig hebben.
+
+## Hoe wordt de accessible name berekend?
+
+De browser berekent de accessible name via een vaste volgorde (de "accessible name computation"). In vereenvoudigde vorm:
+
+1. `aria-labelledby` -- verwijst naar een ander element op de pagina
+2. `aria-label` -- een onzichtbare naam direct op het element
+3. **Tekstinhoud** van het element (bij links en knoppen)
+4. **Label** (bij invoervelden via `<label for="...">`)
+5. `title`-attribuut (als laatste redmiddel)
+6. `placeholder` (alleen voor invoervelden, en alleen als er geen label is)
+
+De eerste die een waarde oplevert, wint. Dat betekent: als je `aria-label` toevoegt aan een knop die al zichtbare tekst heeft, overschrijft de aria-label die tekst. De schermlezer leest dan iets anders dan wat op het scherm staat.
+
+## Veelgemaakte fouten
+
+- **Icoonknoppen zonder naam.** Een knop met alleen een SVG-icoon en geen tekst. De schermlezer zegt "knop" en verder niets. Oplossing: voeg een `aria-label` toe of een visueel verborgen tekst.
+- **"Lees meer"-links.** Tien keer "Lees meer" op een pagina. De schermlezer geeft een lijst van links en de gebruiker ziet tien keer dezelfde tekst. Oplossing: voeg context toe via `aria-label` of een visueel verborgen tekst ("Lees meer over [onderwerp]").
+- **Afbeeldingen in links zonder alt-tekst.** Een link bevat alleen een afbeelding. Zonder alt-tekst heeft de link geen accessible name. De schermlezer leest dan de URL voor.
+- **aria-label die de zichtbare tekst overschrijft.** Zie ons artikel over [het toegankelijkheidslabel](/blog/toegankelijkheidslabel-ontoegankelijk-plaatsen/) voor een concreet voorbeeld.
 
 ## Hoe geef ik een link de accessible name?
 
@@ -33,6 +69,4 @@ Deze 3 dingen moet je weten:
       </p>
       <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-Wil je je team trainen in digitale toegankelijkheid? Ik kan je helpen! Neem contact op om de mogelijkheden te bespreken.
-
-Op deze pagina vind je meer informatie over de toegankelijke naam en hoe je het moet testen: [https://properaccess.nl/sc-4-1-2-wat-betekent-naam-rol-waarde/](https://properaccess.nl/sc-4-1-2-wat-betekent-naam-rol-waarde/).
+Wil je meer weten over de accessible name en hoe je het test? Op onze pagina over [SC 4.1.2 Naam, rol, waarde](/sc-4-1-2-wat-betekent-naam-rol-waarde/) vind je een uitgebreide uitleg.

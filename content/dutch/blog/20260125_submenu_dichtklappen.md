@@ -18,29 +18,80 @@ keywords:
 
 # Toetsenbordfocus moet logisch zijn
 
-Als bezoekers met het toetsenbord door de website navigeren, moeten interactieve elementen zoals knoppen en links op een logische volgorde toetsenbordfocus krijgen. Logisch betekent dat het aansluit op de volgorde die de elementen hebben in de visuele vormgeving. Anders kunnen bezoekers die alleen een toetsenbord gebruiken, minder makkelijk door de pagina navigeren.
+Als bezoekers met het toetsenbord door een website navigeren, moeten interactieve elementen in een logische volgorde focus krijgen. Logisch betekent: aansluitend op de visuele volgorde. Wijkt de focusvolgorde daar sterk van af, dan wordt de website moeilijk te gebruiken voor mensen die geen muis kunnen of willen gebruiken.
 
-Het gaat dan bijvoorbeeld om mensen met een motorische of visuele beperking of een leesstoornis. Zorg dat het activeren van de knop de toetsenbordfocus verplaatst naar het volgende logische element in de reeks.
+Dit raakt onder andere mensen met een motorische beperking, blinde bezoekers die een schermlezer gebruiken, en mensen met een leesstoornis die afhankelijk zijn van voorspelbare navigatiepatronen.
 
-## Veelvookomend probleem in een submenu
+**WCAG succescriterium 2.4.3** (Focusvolgorde) eist dat de volgorde logisch en bruikbaar is.
 
-Wanneer een submenu openklapt doordat het focus krijgt en de focus na het doorlopen van alle items, het submenu verlaat, mag het niet zo zijn dat het menu open blijft staan. Op deze website had ik dit probleem in het hoofdmenu met "Diensten" en "Voor wie".
+## Het probleem: een submenu dat open blijft staan
 
-De oplossing is als volgt:
+Een veelvoorkomend probleem zit in navigatiemenu's met submenu's. Het scenario:
 
+1. Een bezoeker navigeert met Tab naar een menu-item zoals "Diensten"
+2. Het submenu klapt open (op focus of op hover)
+3. De bezoeker tabt door alle items in het submenu
+4. Na het laatste item gaat de focus naar het volgende hoofdmenu-item
+5. **Maar het submenu blijft open staan**
+
+Dat is verwarrend. Het submenu overlapt mogelijk andere content, en de visuele status klopt niet meer met waar de focus is. Op onze eigen website hadden we dit probleem in het hoofdmenu bij "Diensten" en "Voor wie".
+
+## Waarom gebeurt dit?
+
+De meeste submenu's worden geopend met een CSS `:hover` of `:focus-within` selector, of met JavaScript dat luistert naar een `mouseenter` of `focus` event. Maar het sluiten van het menu bij het vertrekken van de focus wordt vaak vergeten -- vooral bij toetsenbordnavigatie.
+
+Bij een muis is het simpel: de muis verlaat het menu-gebied en het menu klapt dicht. Bij toetsenbordnavigatie is er geen "verlaat"-event op dezelfde manier. Je moet expliciet luisteren of de focus zich nog binnen het menu bevindt.
+
+## De oplossing
+
+Luister naar het `focusin`-event op documentniveau. Bij elke focusverandering controleer je of de nieuwe focus zich binnen het menu bevindt. Zo niet, sluit je het menu.
+
+```javascript
+document.addEventListener('focusin', (e) => {
+  const target = e.target;
+
+  menus.forEach(({ trigger, submenu, close }) => {
+    if (
+      trigger.contains(target) ||
+      submenu.contains(target)
+    ) {
+      return; // focus is nog binnen het menu
+    }
+
+    close(); // focus is buiten het menu → sluit het
+  });
+});
 ```
-      document.addEventListener('focusin', (e) => {
-      const target = e.target;
 
-      menus.forEach(({ trigger, submenu, close }) => {
-        if (
-          trigger.contains(target) ||
-          submenu.contains(target)
-        ) {
-          return; // focus is inside menu
-        }
+### Hoe werkt dit?
 
-        close(); // focus is outside → close menu
-      });
+- `focusin` bubbelt (in tegenstelling tot `focus`), dus je vangt het op documentniveau op
+- Bij elke focusverandering loop je door alle menu's
+- Per menu controleer je of de nieuwe focus in de trigger of het submenu zit
+- Zo niet, roep je de `close()`-functie aan
+
+### Extra: sluit ook met Escape
+
+Voeg een `keydown`-listener toe voor de Escape-toets:
+
+```javascript
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    menus.forEach(({ trigger, submenu, close, isOpen }) => {
+      if (isOpen && submenu.contains(document.activeElement)) {
+        close();
+        trigger.focus(); // zet focus terug op de trigger
+      }
     });
+  }
+});
 ```
+
+## Hoe test je dit?
+
+1. Navigeer met Tab naar het menu-item dat het submenu opent
+2. Tab door alle items in het submenu
+3. Tab voorbij het laatste item -- het submenu moet nu dichtklappen
+4. Druk op Escape terwijl je in het submenu bent -- het menu moet sluiten en de focus moet teruggaan naar de trigger
+
+Doet het menu dit niet? Dan heb je een focusvolgorde-probleem dat je moet oplossen.

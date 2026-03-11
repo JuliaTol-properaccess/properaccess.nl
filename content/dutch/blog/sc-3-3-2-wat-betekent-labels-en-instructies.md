@@ -1,70 +1,115 @@
 ---
 title: "SC 3.3.2 - Wat betekent \"Labels en instructies\""
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
-tags: 
+tags:
   - "3-3-2"
   - "formulier"
   - "labels"
 description: "WCAG 3.3.2 vereist duidelijke labels en instructies bij formulieren. Lees hoe je invoervelden begrijpelijk maakt voor alle gebruikers."
 ---
 
-Mensen moeten begrijpen wat ze moeten doen op een website. Vooral bij formulieren, invulvelden of interactieve elementen. Als het niet duidelijk is wat ergens ingevuld moet worden, raken mensen in de war of maken fouten – zeker gebruikers met een cognitieve beperking of mensen die een schermlezer gebruiken.
+Je komt op een formulier met vijf velden. Geen labels, alleen placeholders die verdwijnen zodra je begint te typen. Halverwege het formulier weet je niet meer wat je in het eerste veld hebt getypt, laat staan of het het juiste veld was. Er staat "Verplicht" bij sommige velden, maar welke? En dat telefoonnummerveld -- moet je +31 ervoor zetten of niet?
 
-Daarom zegt WCAG: zorg voor duidelijke labels en instructies bij alle interactieve onderdelen.
+Dit soort formulieren zijn overal. En ze zijn een groot probleem voor mensen met cognitieve beperkingen, laaggeletterden, en schermlezergebruikers.
 
-Dit heet [3.3.2 Labels en instructies](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions).
+**WCAG succescriterium 3.3.2** (Labels or Instructions) eist dat invoervelden voorzien zijn van labels of instructies die duidelijk maken wat er verwacht wordt.
 
-## Wat wordt er van websites verwacht?
+## Het verschil met andere criteria
 
-- Formuliervelden, knoppen en interactieve elementen moeten duidelijk gelabeld zijn.  
-    
+SC 3.3.2 wordt vaak verward met twee verwante criteria:
 
-- Als er bijzondere eisen zijn (zoals verplichte velden of invoerformats), moet je instructies geven.  
-    
+- **SC 1.3.1** (Info and Relationships) gaat over de technische koppeling: is het `<label>` correct verbonden met het `<input>` in de code?
+- **SC 2.4.6** (Headings and Labels) gaat over de beschrijvende kwaliteit: is de labeltekst duidelijk genoeg?
+- **SC 3.3.2** gaat over de aanwezigheid: is er überhaupt een label of instructie aanwezig?
 
-- De aanwijzingen moeten beschikbaar zijn vóór of bij het invulmoment, niet pas nadat er iets fout gaat.  
-    
+In de praktijk overlappen ze, maar SC 3.3.2 is het meest fundamenteel: zorg dat er iets is dat de gebruiker vertelt wat er verwacht wordt.
 
-Kort gezegd: laat mensen vooraf begrijpen wat ze moeten doen.
+## Wat wordt er verwacht?
 
-## Wat is niet verplicht?
+### Zichtbare labels
 
-- Je hoeft niet altijd een uitgebreide uitleg te geven, als het doel van het veld vanzelfsprekend is.  
-    
+Elk invoerveld moet een **zichtbaar, permanent label** hebben. Niet alleen een placeholder.
 
-- Verduidelijking mag ook buiten het invulveld staan (bijvoorbeeld erboven).  
-    
+```html
+<!-- Goed: zichtbaar label -->
+<label for="email">E-mailadres</label>
+<input type="email" id="email" name="email">
+
+<!-- Fout: alleen placeholder -->
+<input type="email" placeholder="E-mailadres">
+```
+
+Waarom is een placeholder niet genoeg? Omdat die verdwijnt zodra je begint te typen. Als je halverwege het formulier bent, kun je niet meer zien wat er in de eerdere velden verwacht werd.
+
+### Instructies voor bijzondere invoer
+
+Als een veld een specifiek formaat vereist, moet je dat vermelden:
+
+```html
+<label for="tel">Telefoonnummer</label>
+<input type="tel" id="tel" name="tel" aria-describedby="tel-hint">
+<span id="tel-hint">Formaat: 06-12345678</span>
+```
+
+### Verplichte velden markeren
+
+Als niet alle velden verplicht zijn, moet je aangeven welke wel verplicht zijn:
+
+```html
+<label for="naam">Naam <span aria-label="verplicht">*</span></label>
+<input type="text" id="naam" name="naam" required>
+```
+
+Vermeld bovenaan het formulier wat het sterretje betekent: "Velden met een * zijn verplicht."
 
 ## Veelgemaakte fouten
 
-- Geen label bij een invoerveld ("Wat moet ik hier invullen?").  
-    
+### 1. Placeholder als enig label
 
-- Alleen een placeholdertekst (die verdwijnt zodra je begint te typen).  
-    
+De meest voorkomende fout. Een formulier met alleen placeholders ziet er clean uit, maar is ontoegankelijk. Placeholders verdwijnen bij invoer, hebben vaak te laag contrast, en worden niet door alle schermlezers als label herkend.
 
-- Geen uitleg geven over het vereiste formaat ("Vul uw telefoonnummer in als 0612345678").  
-    
+### 2. Label dat te ver van het veld staat
 
-- Verplichte velden niet aangeven.  
-    
+Als het label visueel niet duidelijk bij het veld hoort, weten gebruikers niet welk label bij welk veld hoort. Houd labels direct boven of links van het veld.
+
+### 3. Geen format-instructie
+
+Een datumveld zonder formaat: moet je 11-03-2026, 03/11/2026 of 11 maart 2026 typen? Een IBAN-veld zonder voorbeeld: met of zonder spaties?
+
+### 4. Onduidelijke foutmeldingen als enige instructie
+
+Sommige formulieren geven pas uitleg als je een fout maakt: "Ongeldig telefoonnummer". Maar welk formaat is dan wél geldig? Geef de instructie vooraf, niet achteraf.
+
+### 5. Groepslabels ontbreken
+
+Bij een groep radiobuttons of checkboxen moet de groep als geheel een label hebben:
+
+```html
+<!-- Goed: groepslabel met fieldset/legend -->
+<fieldset>
+  <legend>Hoe wil je betalen?</legend>
+  <input type="radio" id="ideal" name="betaal" value="ideal">
+  <label for="ideal">iDEAL</label>
+  <input type="radio" id="credit" name="betaal" value="credit">
+  <label for="credit">Creditcard</label>
+</fieldset>
+```
+
+## Praktische checklist voor formulieren
+
+- Heeft elk invoerveld een **zichtbaar label** dat niet verdwijnt?
+- Is bij elk veld duidelijk of het **verplicht** is?
+- Staat er bij velden met een specifiek formaat een **voorbeeld of instructie**?
+- Hebben groepen van radiobuttons of checkboxen een **groepslabel**?
+- Zijn instructies beschikbaar **voor** het invullen, niet pas na een fout?
 
 ## Wat kun je als webredacteur of manager doen?
 
-- Controleer formulieren: Heeft elk veld een duidelijke naam of uitleg?  
-    
+- **Vul je eigen formulieren in**: is bij elk veld duidelijk wat er verwacht wordt?
+- **Test met lege velden**: als je alle placeholders wegdenkt, is het formulier dan nog begrijpelijk?
+- **Controleer format-eisen**: geef je bij data, telefoonnummers en postcodes aan welk formaat je verwacht?
+- **Vraag je webbouwer**: zijn alle labels technisch gekoppeld aan de juiste velden?
 
-- Geef format-instructies: Als gebruikers iets in een specifieke vorm moeten invullen, zeg dat dan expliciet.  
-    
-
-- Vermijd placeholders als enige label: Gebruik zichtbare, blijvende labels.  
-    
-
-- Vraag je webbouwer: Worden de labels technisch goed gekoppeld aan de velden, zodat schermlezers ze correct voorlezen?  
-    
-
-## Samenvatting
-
-Mensen moeten makkelijk kunnen begrijpen wat ze op je site moeten invullen of doen. Duidelijke labels en instructies maken je website toegankelijker, vriendelijker en helpen fouten voorkomen.
+Een goed gelabeld formulier is sneller in te vullen, leidt tot minder fouten, en werkt voor iedereen. Het kost een paar minuten extra bij het bouwen, maar bespaart frustratie en supportvragen.

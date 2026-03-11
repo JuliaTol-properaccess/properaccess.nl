@@ -37,6 +37,27 @@ In dit specifieke voorbeeld kreeg de link het volgende aria-label:
 - Deze link is niet met stem te bedienen. De zichtbare tekst op het label komt niet overeen met de toegankelijkheidsnaam van de link (“opent externe website”). Dit valt onder WCAG SC 2.5.3.
 - Het doel van de link is nu onduidelijk. Welke externe website wordt hier bedoeld? Dit valt onder WCAG SC 2.4.4.
 
-**Conclusie 1:** gebruik aria-labels alleen als je zeker weet wat je doet. Dit geldt voor alle ARIA-technieken.
+## Wat leren we hiervan?
 
-**Conclusie 2:** plaats het label zoals het is, zonder daar iets aan te veranderen. Voor de zekerheid kun je de status van je verklaring in de tekst op de pagina noemen.
+Dit voorbeeld illustreert een breder probleem: **aria-label wordt te vaak ingezet als snelle fix, terwijl het eigenlijk een gevaarlijk attribuut is.** Het overschrijft alle bestaande content van een element -- alt-teksten, linkteksten, knopteksten. Alles. En die overschrijving is onzichtbaar voor ziende bezoekers en ontwikkelaars die niet testen met hulpsoftware.
+
+### De eerste regel van ARIA
+
+Er is een bekende vuistregel in de toegankelijkheidswereld: **"De eerste regel van ARIA is: gebruik geen ARIA."** Dat klinkt paradoxaal, maar het punt is helder. Native HTML-elementen (`<button>`, `<a>`, `<label>`) brengen hun eigen toegankelijkheidsinformatie mee. ARIA is bedoeld om die informatie aan te vullen waar HTML tekortschiet -- niet om het te overschrijven.
+
+### Andere voorbeelden van ARIA-misbruik die we tegenkomen
+
+- **`aria-label` op een div of span.** Die elementen hebben geen interactieve rol. Een schermlezer negeert de aria-label in de meeste gevallen.
+- **`role="button"` op een link.** Een link navigeert, een knop voert een actie uit. Door de rol te veranderen creeer je verwarring: de schermlezer zegt "knop", maar het element gedraagt zich als een link.
+- **`aria-hidden="true"` op zichtbare content.** Hiermee verberg je content voor schermlezers terwijl het visueel zichtbaar blijft. Soms bewust (bij decoratieve iconen), maar vaak per ongeluk -- waardoor hele secties ontoegankelijk worden.
+
+## De regels voor het toegankelijkheidslabel
+
+Terug naar het concrete geval. Als je het toegankelijkheidslabel van je verklaring op je website plaatst:
+
+1. **Plaats de HTML-code zoals je die krijgt**, zonder aanpassingen.
+2. **Voeg geen aria-label, role of andere ARIA-attributen toe** aan de link of de afbeelding.
+3. **Vermeld de status ook in platte tekst** op de pagina. Dat is niet verplicht, maar het is een extra vangnet.
+4. **Test met een schermlezer** of het label correct wordt voorgelezen. Dat kost je twee minuten.
+
+**Kort samengevat:** ARIA kan je website toegankelijker maken, maar alleen als je weet wat je doet. In de meeste gevallen is de veiligste aanpak: gebruik gewoon goed gestructureerde HTML en laat ARIA met rust.

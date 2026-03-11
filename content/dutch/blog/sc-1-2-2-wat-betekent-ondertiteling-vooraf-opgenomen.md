@@ -1,7 +1,7 @@
 ---
-title: "SC 1.2.2 - Wat betekent “Ondertiteling (vooraf opgenomen)”"
+title: "SC 1.2.2 - Wat betekent "Ondertiteling (vooraf opgenomen)""
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
 tags:
   - "1-2-2"
@@ -9,44 +9,72 @@ tags:
 description: "WCAG 1.2.2 vereist ondertiteling voor vooraf opgenomen video's. Lees wat goede ondertiteling inhoudt, veelgemaakte fouten en praktische tips voor je website."
 ---
 
-Video’s met geluid bevatten vaak belangrijke informatie, zoals gesproken tekst of geluidseffecten. Voor mensen die doof of slechthorend zijn, kan die informatie anders verloren gaan. Ondertiteling zorgt ervoor dat ook zij alles kunnen volgen.
+Een productvideo op je webshop. Een uitlegvideo op je helppagina. Een opgenomen webinar in je academy. Als er gesproken tekst in zit, moeten er ondertitels bij. Niet als leuke extra, maar als vereiste -- want zonder ondertiteling is die video ontoegankelijk voor iedereen die het geluid niet kan horen.
 
-Daarom zegt WCAG: **voor vooraf opgenomen video’s met geluid moet ondertiteling beschikbaar zijn**.
+**WCAG succescriterium 1.2.2** (Captions Pre-recorded) eist ondertiteling voor alle vooraf opgenomen video's met gesproken tekst of betekenisvolle geluiden.
 
-Dit heet **1.2.2 Captions (Pre-recorded)**.
+## Wie heeft hier baat bij?
 
-## Wat wordt er van websites verwacht?
+- **Dove en slechthorende bezoekers** -- voor hen is ondertiteling de enige manier om de gesproken inhoud te volgen
+- **Mensen in een lawaaierige omgeving** -- op de trein, in een druk kantoor, in een wachtruimte
+- **Niet-moedertaalsprekers** -- ondertiteling helpt bij het volgen van gesproken tekst in een andere taal
+- **Mensen die liever lezen dan luisteren** -- uit onderzoek blijkt dat veel mensen video's bekijken met ondertiteling aan, ook als ze prima kunnen horen
 
-- Voor elke vooraf opgenomen video met gesproken tekst of belangrijke geluiden moet je **ondertiteling** aanbieden.
+## Wat maakt goede ondertiteling?
 
-- Dit moet de **gesproken tekst, achtergrondgeluiden en andere belangrijke auditieve informatie** bevatten.
+Ondertiteling is meer dan alleen de gesproken tekst uittypen. Goede ondertitels bevatten:
 
-Kort: zorg voor volledige ondertiteling, niet alleen voor de dialogen.
+- **Alle gesproken tekst**, inclusief off-screen stemmen
+- **Sprekeridentificatie** als er meerdere sprekers zijn ("Julia: ...", "Interviewer: ...")
+- **Relevante geluidseffecten** ([applaus], [telefoon gaat over], [deur slaat dicht])
+- **Muziekbeschrijvingen** als de muziek betekenis draagt ([spannende muziek], [vrolijk deuntje])
+- **Correcte timing** -- de ondertitels verschijnen synchroon met het gesproken woord
 
-## Wat is niet verplicht?
+## Ondertitelformaten
 
-- Live video’s vallen hier niet onder (die hebben hun eigen regels).
+De twee meest gebruikte formaten:
 
-- Audio-only bestanden (zonder beeld) hebben geen ondertiteling nodig, maar wel een transcript (zie 1.2.1).
+- **WebVTT (.vtt)** -- het standaardformaat voor het web, ondersteund door alle moderne browsers en videospelers
+- **SRT (.srt)** -- breed ondersteund door videobewerkingssoftware en platforms zoals YouTube
 
-- Video’s zonder gesproken tekst of belangrijke geluiden hoeven geen ondertiteling te hebben.
+Beide formaten zijn simpele tekstbestanden die je met een teksteditor kunt bewerken. Een WebVTT-bestand ziet er zo uit:
+
+```
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Welkom bij deze uitleg over digitale toegankelijkheid.
+
+00:00:05.000 --> 00:00:08.000
+[achtergrondmuziek stopt]
+In deze video laat ik je zien hoe je formulieren test.
+```
+
+## Automatische ondertiteling: een goed begin, geen eindresultaat
+
+YouTube, Vimeo en andere platforms bieden automatisch gegenereerde ondertitels. Die zijn de afgelopen jaren flink verbeterd, maar ze zijn niet goed genoeg om zonder correctie te publiceren.
+
+Veelvoorkomende fouten in automatische ondertitels:
+- **Vaktermen** worden verkeerd herkend
+- **Eigennamen** worden fout gespeld
+- **Homofielen** (woorden die hetzelfde klinken maar anders gespeld worden) worden verwisseld
+- **Interpunctie** ontbreekt vaak, waardoor zinnen onleesbaar worden
+- **Sprekerswisseling** wordt niet herkend
+
+**Onze aanbeveling:** gebruik automatische ondertiteling als startpunt. Laat ze genereren, download het bestand en corrigeer het handmatig. Dat is een stuk sneller dan alles vanaf nul uittypen.
 
 ## Veelgemaakte fouten
 
-- Ondertitels die alleen de gesproken tekst weergeven, maar geen belangrijke achtergrondgeluiden bevatten.
-
-- Ondertiteling die te snel of te langzaam verschijnt.
-
-- Automatisch gegenereerde ondertiteling die vol fouten zit.
+- Ondertitels die alleen de gesproken tekst bevatten, zonder geluidseffecten
+- Automatische ondertiteling die niet is gecorrigeerd
+- Ondertitels die te snel verschijnen (meer dan twee regels per twee seconden)
+- Video's op je eigen website zonder ondertiteling, terwijl het YouTube-origineel die wel heeft -- je moet de ondertiteling ook beschikbaar maken in je eigen videospeler
 
 ## Wat kun je als webredacteur of manager doen?
 
-- **Controleer je video’s**: Heeft elke video met gesproken tekst volledige en correcte ondertiteling?
+- **Controleer al je video's**: heeft elke video met gesproken tekst ondertiteling?
+- **Test de kwaliteit**: zijn de ondertitels correct, synchroon en volledig?
+- **Vraag je videomaker**: zijn er ondertitelbestanden (.vtt of .srt) beschikbaar?
+- **Budget**: neem ondertiteling op in je videobudget. Het is geen extra, het is een vereiste.
 
-- **Test met en zonder geluid**: Kun je de video volledig begrijpen zonder te horen wat er gezegd wordt?
-
-- **Vraag je videomaker**: Zijn er ondertitelbestanden beschikbaar (.srt, .vtt) en zijn ze correct?
-
-## Samenvatting
-
-Ondertiteling maakt je video’s toegankelijker voor een veel breder publiek. Het zorgt ervoor dat ook mensen die niet kunnen horen, je content volledig kunnen begrijpen.
+Ondertiteling maakt je video's toegankelijk voor een veel breder publiek. En het kost minder dan je denkt -- zeker als je automatische ondertiteling als basis gebruikt.

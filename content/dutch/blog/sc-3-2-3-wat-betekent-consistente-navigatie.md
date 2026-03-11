@@ -1,58 +1,55 @@
 ---
-title: "SC 3.2.3 - Wat betekent “Consistente navigatie”"
+title: "SC 3.2.3 - Wat betekent "Consistente navigatie""
 date: 2025-05-17
-categories: 
+categories:
   - "wcag-uitgelegd"
 description: "WCAG 3.2.3 vereist dat navigatie op elke pagina op dezelfde plek en in dezelfde volgorde staat. Lees waarom en hoe je dit aanpakt."
 ---
 
-Bezoekers – vooral mensen met een cognitieve beperking, laaggeletterdheid of schermlezers – vertrouwen op herkenbare patronen op een website. Als navigatie ineens verandert of verspringt tussen pagina’s, raakt de bezoeker in de war en is de site moeilijker te gebruiken.
+Je kent het vast: je bent op een website, je hebt net geleerd waar het menu zit, en op de volgende pagina is alles anders. Het menu staat ergens anders, de volgorde is veranderd, of de zoekbalk is ineens verdwenen. Je moet opnieuw zoeken naar wat je net had gevonden.
 
-Daarom zegt WCAG: gebruik navigatie die steeds op dezelfde plek en in dezelfde volgorde staat op je website.
+Voor de meeste bezoekers is dat irritant. Voor iemand met een cognitieve beperking, laaggeletterdheid of een schermlezer is het een serieus probleem. Die bezoekers zijn afhankelijk van herkenbare patronen en voorspelbaarheid.
 
-Dit heet [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html).
+**WCAG succescriterium 3.2.3** (Consistent Navigation) eist dat navigatie-elementen die op meerdere pagina's terugkomen, steeds op dezelfde plek en in dezelfde volgorde staan.
 
-## Wat wordt er van websites verwacht?
+## Wat wordt er verwacht?
 
-- Navigatieonderdelen (zoals menu’s, zoekbalken en contactlinks) die op meerdere pagina’s terugkomen, moeten:  
-    - In dezelfde volgorde blijven staan.  
-        
-    
-    - Op dezelfde locatie binnen de pagina blijven.  
-        
+Navigatieonderdelen die op meerdere pagina's voorkomen, moeten:
 
-Kort: herhaal steeds dezelfde navigatiestructuur waar mogelijk.
+- **Op dezelfde locatie** binnen de pagina staan (het hoofdmenu bovenaan, de zoekfunctie rechtsboven, de footer onderaan)
+- **In dezelfde volgorde** blijven (als het menu "Home - Producten - Over ons - Contact" is, moet die volgorde op elke pagina hetzelfde zijn)
 
-## Wat is niet verplicht?
+Je mag wel items **toevoegen** (een submenu dat uitklapt) of **verwijderen** (een menu-item dat alleen op bepaalde pagina's relevant is), zolang de relatieve volgorde van de overgebleven items hetzelfde blijft.
 
-- Je mag navigatie uitbreiden of verkleinen als dat logisch is (bijvoorbeeld submenu’s die openklappen).  
-    
+## Wie heeft hier last van als het misgaat?
 
-- Verschillende soorten pagina’s (zoals een webshop vs. blog) mogen hun eigen navigatie hebben, zolang elke sectie intern consistent is.  
-    
+- **Mensen met cognitieve beperkingen** die navigatiepatronen aanleren en vertrouwen op herhaling
+- **Schermlezergebruikers** die hun mentale model van de pagina opbouwen op basis van structuur. Als de navigatie verspringt, moeten ze opnieuw beginnen
+- **Mensen met een visuele beperking** die vergrotingssoftware gebruiken en maar een klein deel van de pagina tegelijk zien. Als het menu op een andere plek staat, moeten ze de hele pagina doorzoeken
+- **Laaggeletterden** die visuele herkenning gebruiken in plaats van tekst om te navigeren
+
+## Voorbeelden uit de praktijk
+
+**Consistent:** Een webshop met een vast hoofdmenu (Home - Categorieeen - Aanbiedingen - Winkelwagen - Account) dat op elke pagina bovenaan staat in dezelfde volgorde.
+
+**Inconsistent:** Een website waar het menu op de homepage horizontaal bovenaan staat, op blogpagina's als sidebar links, en op productpagina's als hamburger-menu. De items zijn dezelfde, maar de locatie en presentatie veranderen.
+
+## Responsive design en consistentie
+
+Op kleinere schermen verandert de navigatie vaak: een horizontaal menu wordt een hamburger-menu, een sidebar verdwijnt. Dat is prima -- zolang de volgorde van de items binnen het menu consistent blijft. Het menu mag er anders uitzien op mobiel, maar de interne structuur moet hetzelfde zijn.
 
 ## Veelgemaakte fouten
 
-- Een menuknop die op de homepage “Contact” heet en op andere pagina’s “Neem contact op”.  
-    
-
-- Een zoekbalk die soms bovenaan staat, soms helemaal onderaan.  
-    
-
-- Menublokken die ineens een andere volgorde hebben op verschillende pagina’s.  
-    
+- Een zoekbalk die soms bovenaan staat en soms onderaan
+- Menu-items die op verschillende pagina's een andere volgorde hebben
+- Een contactlink die in de header staat op sommige pagina's en in de footer op andere
+- Een taalschakelaar die op de homepage rechtsboven staat en op andere pagina's linksonder
 
 ## Wat kun je als webredacteur of manager doen?
 
-- Controleer de navigatie op meerdere pagina’s: zijn de hoofdelementen (menu, zoekfunctie, login-knop) overal op dezelfde plek en in dezelfde volgorde?  
-    
+- **Controleer de navigatie op meerdere pagina's**: staan de elementen overal op dezelfde plek en in dezelfde volgorde?
+- **Gebruik een vast template** voor je header en footer, zodat die automatisch consistent zijn
+- **Test op verschillende schermformaten**: blijft de volgorde van menu-items gelijk op desktop, tablet en mobiel?
+- **Vraag je webbouwer**: wordt de navigatie vanuit een enkele bron opgebouwd, of worden er per pagina handmatig items toegevoegd?
 
-- Gebruik duidelijke menunamen die niet veranderen tussen pagina’s.  
-    
-
-- Vraag je webbouwer: Wordt navigatie dynamisch opgebouwd vanuit een vaste structuur?  
-    
-
-## Samenvatting
-
-Een consistente navigatie maakt websites voorspelbaar en makkelijker te gebruiken. Mensen weten dan waar ze iets kunnen vinden, zonder opnieuw te moeten zoeken of nadenken.
+Een consistente navigatie maakt je website voorspelbaar en makkelijker te gebruiken. Je bezoekers hoeven niet op elke pagina opnieuw te leren waar alles staat.

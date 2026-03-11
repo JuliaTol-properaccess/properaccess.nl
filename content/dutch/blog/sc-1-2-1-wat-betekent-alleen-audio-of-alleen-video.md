@@ -1,7 +1,7 @@
 ---
-title: "SC 1.2.1 - Wat betekent \"Alleen audio of alleen video”"
+title: "SC 1.2.1 - Wat betekent \"Alleen audio of alleen video\""
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
 tags:
   - "1-2-1"
@@ -10,42 +10,83 @@ tags:
 description: "Wat eist WCAG 1.2.1 voor alleen-audio en alleen-video content? Leer wanneer je een transcript of tekstbeschrijving moet aanbieden, met voorbeelden en veelgemaakte fouten."
 ---
 
-Sommige media bestaan alleen uit geluid (bijvoorbeeld een podcast) of alleen uit beeld (bijvoorbeeld een instructievideo zonder gesproken uitleg). Voor mensen die doof, slechthorend, blind of slechtziend zijn, kan zo’n bestand onbegrijpelijk zijn zonder extra ondersteuning.
+Een podcast op je website. Een instructievideo zonder gesproken tekst. Een audiofragment van een interview. Voor jou is de inhoud duidelijk, maar voor iemand die doof is, bestaat die podcast niet. En voor iemand die blind is, is die stille instructievideo een zwart gat.
 
-Daarom zegt WCAG: **zorg voor tekstalternatieven voor alleen-audio of alleen-video content**.
+**WCAG succescriterium 1.2.1** (Audio-only and Video-only, Pre-recorded) eist dat je tekstalternatieven biedt voor media die alleen uit geluid of alleen uit beeld bestaan.
 
-Dit heet **1.2.1 Audio-only and Video-only (Pre-recorded)**.
+## Twee situaties, twee oplossingen
 
-## Wat wordt er van websites verwacht?
+Dit criterium dekt twee verschillende scenario's:
 
-- Voor **alleen-audio** bestanden (bijvoorbeeld een podcast) moet je een **teksttranscript** aanbieden.
+### Alleen-audio (bijvoorbeeld een podcast)
 
-- Voor **alleen-video** bestanden (zonder geluid) moet je een **tekstbeschrijving** geven van wat er in beeld gebeurt.
+Als je een audiobestand publiceert -- een podcast, een interview, een audioboodschap -- moet je er een **teksttranscript** bij aanbieden. Dat transcript bevat:
 
-Kort: geef altijd een tekstalternatief voor media die alleen geluid of alleen beeld bevatten.
+- Alle gesproken tekst, woordelijk uitgeschreven
+- Sprekeridentificatie als er meerdere sprekers zijn
+- Relevante geluiden die betekenis dragen ([gelach], [applaus], [deur gaat open])
+- Muziekbeschrijvingen als de muziek relevant is voor de context
 
-## Wat is niet verplicht?
+**Voorbeeld:** Je publiceert een podcast-aflevering over digitale toegankelijkheid. Het transcript staat direct onder de audiospeler op dezelfde pagina, of is beschikbaar als downloadbaar bestand.
 
-- Live audio en live video vallen hier niet onder – die hebben hun eigen regels.
+### Alleen-video (zonder geluid)
 
-- Video’s met zowel beeld als geluid, waar de audio al alles beschrijft, vallen ook niet onder dit criterium (die moeten voldoen aan andere regels).
+Als je een video publiceert die geen gesproken tekst bevat -- een screencast zonder voice-over, een instructievideo met alleen beeld, een timelapse -- moet je een **tekstbeschrijving** bieden van wat er in beeld gebeurt.
+
+**Voorbeeld:** Een instructievideo die laat zien hoe je een formulier invult, zonder gesproken uitleg. De tekstbeschrijving beschrijft elke stap: "De cursor klikt op het naamveld. Er wordt 'Jan de Vries' getypt. Vervolgens wordt het e-mailveld geselecteerd..."
+
+## Wie heeft hier baat bij?
+
+- **Dove en slechthorende mensen** -- het transcript is hun enige manier om de audio-inhoud te begrijpen
+- **Blinde en slechtziende mensen** -- de tekstbeschrijving vertelt wat er in een stille video te zien is
+- **Mensen in een stille omgeving** -- vergadering, bibliotheek, 's nachts
+- **Zoekmachines** -- een transcript maakt je audio- en video-inhoud vindbaar in Google
+- **Niet-moedertaalsprekers** -- geschreven tekst is vaak makkelijker te volgen dan gesproken taal
+
+## Wat valt hier niet onder?
+
+- **Video's met geluid** (beeld + audio samen) vallen onder andere criteria (SC 1.2.2 voor ondertiteling, SC 1.2.3/1.2.5 voor audiodescriptie)
+- **Live audio en video** hebben hun eigen regels
+- **Decoratieve media** zonder inhoudelijke waarde -- een achtergrondvideo op je homepage die puur sfeer creëert
+
+## Hoe maak je een goed transcript?
+
+Een transcript is meer dan alleen het uittypen van woorden. Een goed transcript:
+
+1. **Identificeert sprekers** -- "Julia: Welkom bij deze podcast" in plaats van alleen "Welkom bij deze podcast"
+2. **Beschrijft relevante geluiden** -- [telefoon gaat over], niet alleen de gesproken tekst
+3. **Behoudt de structuur** -- gebruik kopjes als het transcript lang is, zodat lezers kunnen navigeren
+4. **Is te vinden** -- zet het transcript op dezelfde pagina als de media, of link er direct naartoe
+
+### Voorbeeld van een goed transcript
+
+```
+[Intro-muziek, 5 seconden]
+
+Julia: Welkom bij aflevering 12 van onze podcast over digitale
+toegankelijkheid. Vandaag praten we over formulieren.
+
+[Intro-muziek stopt]
+
+Julia: Ik heb een gast meegenomen. Wil je jezelf voorstellen?
+
+Gast: Ja, ik ben Mark. Ik werk als frontend developer bij een
+groot e-commerceplatform.
+```
 
 ## Veelgemaakte fouten
 
-- Geen transcript toevoegen bij podcasts.
-
-- Videoclips zonder bijbehorende tekstuitleg, waardoor visuele informatie verloren gaat.
-
-- Transcripten die belangrijke geluiden (zoals alarmsignalen of achtergrondgeluiden) weglaten.
+- Podcasts zonder transcript -- veruit de meest voorkomende fout
+- Transcripten die alleen de gesproken tekst bevatten, zonder geluidseffecten of sprekeridentificatie
+- Transcripten die automatisch zijn gegenereerd en niet gecorrigeerd -- vol tikfouten en verkeerd herkende woorden
+- Stille instructievideo's zonder tekstbeschrijving van wat er in beeld gebeurt
+- Het transcript op een andere pagina plaatsen zonder duidelijke link
 
 ## Wat kun je als webredacteur of manager doen?
 
-- **Controleer alle media**: Heb je audio of video zonder gesproken uitleg? Voeg een transcript of beschrijving toe.
+- **Inventariseer je media**: heb je audio of video zonder bijbehorend transcript of tekstbeschrijving?
+- **Gebruik automatische transcriptie als startpunt**: tools als Whisper, Otter.ai of de ingebouwde transcriptie van YouTube genereren een basistekst die je kunt corrigeren
+- **Maak transcripten vindbaar**: zet ze op dezelfde pagina of link er prominent naartoe
+- **Neem transcriptie op in je workflow**: maak het onderdeel van het publicatieproces, niet een nagedachte
 
-- **Maak transcripties duidelijk**: Schrijf niet alleen woorden uit, maar beschrijf ook belangrijke geluiden en context.
-
-- **Vraag je contentmaker**: Hebben we voor elke audio- of videobestand een toegankelijk alternatief?
-
-## Samenvatting
-
-Zorg dat je mediabestanden voor iedereen begrijpelijk zijn, ook als ze alleen uit geluid of beeld bestaan. Een simpel transcript of tekstbeschrijving maakt je content toegankelijker voor een veel breder publiek.
+Een transcript maakt je audio-inhoud toegankelijk voor iedereen -- en als bonus wordt je podcast of interview ook vindbaar in zoekmachines.
