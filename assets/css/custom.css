@@ -3213,6 +3213,11 @@ html.dark .tool-verklaring__review-value {
    TOOL OVERZICHTSPAGINA — cards grid
    ================================================== */
 
+.tool-overview__page {
+  background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
 .tool-overview__intro {
   max-width: 640px;
   margin: 0 auto 2.5rem;
@@ -8195,8 +8200,9 @@ html.dark .vw-faq .faq-answer {
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .tool-filter__btn:hover {
+  background: #A30D4B;
   border-color: #A30D4B;
-  color: #A30D4B;
+  color: #fff;
 }
 .tool-filter__btn--active {
   background: #A30D4B;

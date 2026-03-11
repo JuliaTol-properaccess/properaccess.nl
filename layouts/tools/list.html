@@ -1,15 +1,15 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section class="section">
+  <section class="section tool-overview__page">
     <div class="container">
       <div class="tool-overview__intro">{{ .Content }}</div>
 
       <div class="tool-filter" role="group" aria-label="Filter tools op doelgroep">
-        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all">Alle tools</button>
-        <button class="tool-filter__btn" data-filter="Webredactie">Webredactie</button>
-        <button class="tool-filter__btn" data-filter="Webdeveloper">Webdeveloper</button>
-        <button class="tool-filter__btn" data-filter="Manager">Manager</button>
+        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all" aria-pressed="true">Alle tools</button>
+        <button class="tool-filter__btn" data-filter="Webredactie" aria-pressed="false">Webredactie</button>
+        <button class="tool-filter__btn" data-filter="Webdeveloper" aria-pressed="false">Webdeveloper</button>
+        <button class="tool-filter__btn" data-filter="Manager" aria-pressed="false">Manager</button>
       </div>
 
       <div class="tool-overview__grid">
@@ -56,8 +56,12 @@
 
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        btns.forEach(function (b) { b.classList.remove('tool-filter__btn--active'); });
+        btns.forEach(function (b) {
+          b.classList.remove('tool-filter__btn--active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('tool-filter__btn--active');
+        btn.setAttribute('aria-pressed', 'true');
 
         var filter = btn.getAttribute('data-filter');
         var visible = 0;
