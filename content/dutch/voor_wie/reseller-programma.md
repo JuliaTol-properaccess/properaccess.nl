@@ -1,5 +1,6 @@
 ---
 title: "Reseller-programma"
+meta_title: "Reseller-programma — Proper Access"
 date: 2026-03-07
 slug: "reseller-programma"
 url: "/reseller-programma/"

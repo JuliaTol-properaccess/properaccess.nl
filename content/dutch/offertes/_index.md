@@ -1,5 +1,6 @@
 ---
 title: "Offertes"
+noindex: true
 _build:
   list: never
   render: false

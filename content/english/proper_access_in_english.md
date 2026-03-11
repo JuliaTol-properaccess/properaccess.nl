@@ -2,6 +2,7 @@
 title: "English"
 date: 2025-05-29
 slug: "proper_access_in_english"
+description: "Proper Access is an independent digital accessibility audit firm based in the Netherlands. We test websites and apps against WCAG 2.2 and the European Accessibility Act."
 ---
 
 # Accessibility Audits

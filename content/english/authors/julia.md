@@ -1,5 +1,6 @@
 ---
 title: Julia Tol
+meta_title: "Julia Tol — Senior Digital Accessibility Auditor"
 email: julia@properaccess.nl
 image: "/images/julia.webp"
 description:

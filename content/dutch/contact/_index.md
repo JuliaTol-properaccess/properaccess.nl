@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+meta_title: "Contact — Proper Access"
 date: 2021-08-27
 description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee — van quickscan tot volledige audit."
 keywords:

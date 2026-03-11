@@ -1,5 +1,6 @@
 ---
 title: "Who We Are"
+meta_title: "About Proper Access — Digital Accessibility Audits"
 date: 2021-08-27
 description: "Proper Access Audit Agency"
 keywords: ["WCAG", "proper access", "web accessibility"]

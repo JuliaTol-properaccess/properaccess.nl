@@ -2,6 +2,7 @@
 title: "Offerte Digitale Toegankelijkheid [Klant]"
 date: 2024-02-16
 draft: false
+noindex: true
 robots: "noindex, nofollow"
 sitemap_exclude: true
 _build:

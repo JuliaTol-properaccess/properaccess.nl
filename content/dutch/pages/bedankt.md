@@ -1,6 +1,8 @@
 ---
 title: "Bedankt voor je bericht!"
+meta_title: "Bedankt — Proper Access"
 date: 2026-02-14
+noindex: true
 robots: noindex, nofollow
 description: "Contact met auditbureau Proper Access"
 keywords: ["WCAG", "toegankelijke websites", "web accessibility"]
