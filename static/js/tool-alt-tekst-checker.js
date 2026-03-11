@@ -277,7 +277,8 @@
     output.innerHTML = '<p class="tool-alt__loading">' + escapeHtml(t("loading")) + '</p>';
     currentFilter = "all";
 
-    fetch(WORKER_URL + "?url=" + encodeURIComponent(url))
+    var token = window.__PA_TOKEN || "";
+    fetch(WORKER_URL + "?url=" + encodeURIComponent(url) + "&token=" + encodeURIComponent(token))
       .then(function (response) {
         return response.json();
       })

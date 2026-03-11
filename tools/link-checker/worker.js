@@ -10,8 +10,18 @@ const ALLOWED_ORIGINS = [
   "https://www.properaccess.nl",
   "http://localhost:1313",
 ];
+const AUTH_URL = "https://tool-auth.juliatol.workers.dev/validate";
 const MAX_RESPONSE_SIZE = 5 * 1024 * 1024;
 const FETCH_TIMEOUT_MS = 10000;
+
+async function validateToken(token) {
+  if (!token) return false;
+  try {
+    const res = await fetch(AUTH_URL + "?token=" + encodeURIComponent(token));
+    const data = await res.json();
+    return data.valid === true;
+  } catch { return false; }
+}
 
 export default {
   async fetch(request) {
@@ -27,6 +37,13 @@ export default {
     }
 
     const { searchParams } = new URL(request.url);
+
+    // Token validation
+    const token = searchParams.get("token");
+    if (!await validateToken(token)) {
+      return jsonResponse({ error: "Invalid or expired token" }, 401, allowedOrigin);
+    }
+
     const targetUrl = searchParams.get("url");
 
     if (!targetUrl) {

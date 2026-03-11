@@ -1,53 +1,112 @@
 /**
- * Password gate — Proper Access tools
- * Shared authentication for protected tools.
+ * Token gate — Proper Access tools
+ * Validates trial tokens via the auth Worker.
+ * Tokens can be provided via URL parameter (?token=pa_xxx) or manual entry.
+ * Valid tokens are stored in localStorage for subsequent visits.
  */
 (function () {
   "use strict";
 
-  var PASSWORD_HASH = "f518387cd0e1cf028d393703834709c0f53fee56e1ea283dbf0f13dcdafc1305";
-  var SESSION_KEY = "pa-tool-auth";
+  var AUTH_URL = "https://tool-auth.juliatol.workers.dev";
+  var TOKEN_KEY = "pa-tool-token";
 
   var gate = document.getElementById("passwordGate");
   var content = document.getElementById("toolContent");
   var form = document.getElementById("passwordForm");
   var error = document.getElementById("gateError");
+  var input = document.getElementById("gatePassword");
 
   if (!gate || !content) return;
 
-  function sha256(str) {
-    var buf = new TextEncoder().encode(str);
-    return crypto.subtle.digest("SHA-256", buf).then(function (hash) {
-      var arr = new Uint8Array(hash);
-      var hex = "";
-      for (var i = 0; i < arr.length; i++) {
-        hex += arr[i].toString(16).padStart(2, "0");
-      }
-      return hex;
-    });
+  // Override gate text for token-based auth
+  var gateText = gate.querySelector(".tool-pdf__gate-text");
+  if (gateText) {
+    gateText.innerHTML = 'Voer je toegangscode in om deze tool te gebruiken. Nog geen code? <a href="/contact/">Vraag een gratis proefperiode aan</a>.';
   }
+  if (input) {
+    input.type = "text";
+    input.placeholder = "Toegangscode";
+    input.autocomplete = "off";
+  }
+  var gateBtn = gate.querySelector(".tool-pdf__gate-btn");
+  if (gateBtn) gateBtn.textContent = "Toegang";
 
-  function unlock() {
+  function unlock(token) {
     gate.hidden = true;
     content.hidden = false;
+    // Make token available to tool scripts for API calls
+    window.__PA_TOKEN = token;
   }
 
-  if (sessionStorage.getItem(SESSION_KEY) === "1") {
-    unlock();
-  } else {
+  function showError(msg) {
+    if (error) {
+      error.textContent = msg;
+      error.hidden = false;
+    }
+  }
+
+  function hideError() {
+    if (error) error.hidden = true;
+  }
+
+  function validateToken(token) {
+    hideError();
+
+    fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(token))
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.valid) {
+          try { localStorage.setItem(TOKEN_KEY, token); } catch (e) { /* private */ }
+          unlock(token);
+
+          // Clean token from URL if it was a parameter
+          if (urlToken) {
+            history.replaceState(null, "", window.location.pathname);
+          }
+        } else {
+          try { localStorage.removeItem(TOKEN_KEY); } catch (e) { /* */ }
+
+          if (data.reason === "expired") {
+            showError("Je proefperiode is verlopen. Neem contact op met Proper Access voor een abonnement.");
+          } else {
+            showError("Ongeldige toegangscode. Controleer de code en probeer het opnieuw.");
+          }
+
+          if (input) {
+            input.value = "";
+            input.focus();
+          }
+        }
+      })
+      .catch(function () {
+        showError("Kan verbinding niet maken. Probeer het later opnieuw.");
+      });
+  }
+
+  // Check URL parameter
+  var urlParams = new URLSearchParams(window.location.search);
+  var urlToken = urlParams.get("token");
+
+  // Check localStorage
+  var storedToken = null;
+  try { storedToken = localStorage.getItem(TOKEN_KEY); } catch (e) { /* */ }
+
+  var autoToken = urlToken || storedToken;
+
+  if (autoToken) {
+    // Show loading state while validating
+    if (gateText) gateText.textContent = "Toegang controleren...";
+    if (form) form.hidden = true;
+    validateToken(autoToken);
+  }
+
+  // Manual entry form
+  if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var input = document.getElementById("gatePassword");
-      sha256(input.value).then(function (hash) {
-        if (hash === PASSWORD_HASH) {
-          sessionStorage.setItem(SESSION_KEY, "1");
-          unlock();
-        } else {
-          error.hidden = false;
-          input.value = "";
-          input.focus();
-        }
-      });
+      if (!input) return;
+      var token = input.value.trim();
+      if (token) validateToken(token);
     });
   }
 })();
