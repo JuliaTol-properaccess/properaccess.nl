@@ -94,54 +94,121 @@ export default {
 // =============================================================
 
 function analyzeHtml(html, baseUrl) {
-  // Strip scripts and styles to avoid false matches
   const cleaned = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "");
 
-  // Build a position-based context map for landmarks and headings
   const context = buildContextMap(cleaned);
+  const pageLang = getPageLanguage(html);
 
-  const images = extractImages(cleaned, context, baseUrl);
+  const images = extractImages(cleaned, context, baseUrl, pageLang);
   const svgs = extractSvgs(cleaned, context);
   const icons = extractIcons(cleaned, context);
 
   // Summary counts
-  const imgPresent = images.filter(i => i.status === "present").length;
-  const imgMissing = images.filter(i => i.status === "missing").length;
-  const imgDecorative = images.filter(i => i.status === "decorative").length;
-  const imgEmptyInteractive = images.filter(i => i.status === "empty-interactive").length;
-
-  const svgGood = svgs.filter(s => s.status === "good").length;
-  const svgMissing = svgs.filter(s => s.status === "missing").length;
-  const svgDecorative = svgs.filter(s => s.status === "decorative").length;
-  const svgRedundant = svgs.filter(s => s.status === "redundant").length;
-
-  const iconGood = icons.filter(i => i.status === "good").length;
-  const iconMissing = icons.filter(i => i.status === "missing").length;
-  const iconHidden = icons.filter(i => i.status === "hidden").length;
+  const count = (arr, st) => arr.filter(i => i.status === st).length;
 
   return {
+    pageLang,
     images,
     svgs,
     icons,
     summary: {
       imgTotal: images.length,
-      imgPresent,
-      imgMissing,
-      imgDecorative,
-      imgEmptyInteractive,
+      imgPresent: count(images, "present"),
+      imgMissing: count(images, "missing"),
+      imgDecorative: count(images, "decorative"),
+      imgEmptyInteractive: count(images, "empty-interactive"),
+      imgReview: count(images, "review"),
       svgTotal: svgs.length,
-      svgGood,
-      svgMissing,
-      svgDecorative,
-      svgRedundant,
+      svgGood: count(svgs, "good"),
+      svgMissing: count(svgs, "missing"),
+      svgDecorative: count(svgs, "decorative"),
+      svgRedundant: count(svgs, "redundant"),
+      svgHidden: count(svgs, "hidden"),
+      svgReview: count(svgs, "review"),
       iconTotal: icons.length,
-      iconGood,
-      iconMissing,
-      iconHidden,
+      iconGood: count(icons, "good"),
+      iconMissing: count(icons, "missing"),
+      iconHidden: count(icons, "hidden"),
+      iconDecorative: count(icons, "decorative"),
+      iconReview: count(icons, "review"),
     },
   };
+}
+
+// =============================================================
+// Page language
+// =============================================================
+
+function getPageLanguage(html) {
+  const m = html.match(/<html[^>]*\slang\s*=\s*["']([^"']+)["']/i);
+  return m ? m[1].toLowerCase().split("-")[0] : null;
+}
+
+// =============================================================
+// Alt text quality checks
+// =============================================================
+
+function checkAltQuality(text, pageLang) {
+  const issues = [];
+  if (!text || text.trim() === "") return issues;
+
+  const trimmed = text.trim();
+
+  // Check for underscores (filename-style alt text)
+  if (/_/.test(trimmed) && trimmed.split("_").length >= 3) {
+    issues.push("underscores");
+  }
+
+  // Check for file extensions
+  if (/\.(jpe?g|png|gif|svg|webp|bmp|tiff?|ico|avif)$/i.test(trimmed)) {
+    issues.push("filename");
+  }
+
+  // Check for just a number
+  if (/^\d+$/.test(trimmed)) {
+    issues.push("only-number");
+  }
+
+  // Language mismatch (only for texts with 3+ words)
+  if (pageLang && trimmed.split(/\s+/).length >= 3) {
+    const mismatch = detectLanguageMismatch(trimmed, pageLang);
+    if (mismatch) issues.push("lang-mismatch");
+  }
+
+  return issues;
+}
+
+function detectLanguageMismatch(text, pageLang) {
+  const words = text.toLowerCase().split(/\s+/);
+
+  // Dutch function words
+  const nlWords = new Set([
+    "de", "het", "een", "van", "voor", "met", "naar", "bij", "uit",
+    "ook", "niet", "maar", "deze", "zijn", "wordt", "hebben", "meer",
+    "alle", "nog", "wel", "kan", "als", "die", "dat", "wat", "hoe",
+    "zeer", "veel", "dan", "door", "over", "onder", "tussen",
+  ]);
+
+  // English function words
+  const enWords = new Set([
+    "the", "and", "for", "with", "from", "also", "not", "but",
+    "this", "are", "have", "more", "all", "still", "can", "which",
+    "that", "what", "how", "very", "much", "than", "through",
+    "about", "under", "between", "into", "been", "would", "should",
+  ]);
+
+  let nlCount = 0, enCount = 0;
+  for (const w of words) {
+    if (nlWords.has(w)) nlCount++;
+    if (enWords.has(w)) enCount++;
+  }
+
+  if (pageLang === "nl" && enCount >= 2 && nlCount === 0) return true;
+  if (pageLang === "en" && nlCount >= 2 && enCount === 0) return true;
+
+  return false;
 }
 
 // =============================================================
@@ -152,7 +219,6 @@ function buildContextMap(html) {
   const landmarks = [];
   const headings = [];
 
-  // Track landmark open/close positions
   const landmarkTags = ["header", "nav", "main", "aside", "footer"];
   for (const tag of landmarkTags) {
     const openRe = new RegExp(`<${tag}(\\s[^>]*)?>`, "gi");
@@ -162,14 +228,13 @@ function buildContextMap(html) {
       const ariaLabel = getAttr(attrs, "aria-label");
       const ariaLabelledby = getAttr(attrs, "aria-labelledby");
       const id = getAttr(attrs, "id");
+      const role = getAttr(attrs, "role");
 
-      // Find matching close tag (simple: next occurrence)
       const closeRe = new RegExp(`</${tag}>`, "gi");
       closeRe.lastIndex = m.index;
       const closeMatch = closeRe.exec(html);
       const end = closeMatch ? closeMatch.index + closeMatch[0].length : html.length;
 
-      // Try to resolve aria-labelledby by finding the referenced element's text
       let resolvedLabel = null;
       if (ariaLabelledby) {
         const refRe = new RegExp(`id\\s*=\\s*["']${ariaLabelledby}["'][^>]*>([\\s\\S]*?)<\\/`, "i");
@@ -181,6 +246,7 @@ function buildContextMap(html) {
 
       landmarks.push({
         tag,
+        role: role || null,
         start: m.index,
         end,
         label: ariaLabel || resolvedLabel || null,
@@ -189,7 +255,33 @@ function buildContextMap(html) {
     }
   }
 
-  // Track headings by position
+  // Also detect role-based landmarks (e.g., <div role="banner">)
+  const roleLandmarks = {
+    banner: "header",
+    navigation: "nav",
+    main: "main",
+    complementary: "aside",
+    contentinfo: "footer",
+    search: "search",
+  };
+  const roleRe = /(<\w+)\s([^>]*role\s*=\s*["'](banner|navigation|main|complementary|contentinfo|search)["'][^>]*)>/gi;
+  let rm;
+  while ((rm = roleRe.exec(html)) !== null) {
+    const attrs = rm[2];
+    const roleName = rm[3].toLowerCase();
+    const ariaLabel = getAttr(attrs, "aria-label");
+    const id = getAttr(attrs, "id");
+
+    landmarks.push({
+      tag: roleLandmarks[roleName] || roleName,
+      role: roleName,
+      start: rm.index,
+      end: rm.index + 5000, // approximate
+      label: ariaLabel || null,
+      id: id || null,
+    });
+  }
+
   const hRe = /<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi;
   let hm;
   while ((hm = hRe.exec(html)) !== null) {
@@ -205,7 +297,6 @@ function buildContextMap(html) {
 }
 
 function getLandmark(position, context) {
-  // Find the most specific (innermost) landmark containing this position
   let best = null;
   for (const lm of context.landmarks) {
     if (position >= lm.start && position < lm.end) {
@@ -214,7 +305,7 @@ function getLandmark(position, context) {
       }
     }
   }
-  if (!best) return { tag: "onbekend", label: null, id: null };
+  if (!best) return { tag: null, label: null, id: null };
   return { tag: best.tag, label: best.label || null, id: best.id || null };
 }
 
@@ -225,7 +316,7 @@ function getNearestHeading(position, context) {
       nearest = h;
     }
   }
-  return nearest ? nearest.text : null;
+  return nearest ? { level: nearest.level, text: nearest.text } : null;
 }
 
 // =============================================================
@@ -233,7 +324,6 @@ function getNearestHeading(position, context) {
 // =============================================================
 
 function getInteractiveContext(html, position) {
-  // Look backwards from position for unclosed <a> or <button>
   const sliceStart = Math.max(0, position - 2000);
   const before = html.slice(sliceStart, position);
 
@@ -249,7 +339,6 @@ function getInteractiveContext(html, position) {
     const attrs = openTagMatch ? openTagMatch[1] : "";
     const ariaLabel = getAttr(attrs, "aria-label");
 
-    // Get text content of the <a>, excluding SVGs, imgs, and other tags
     const absOpen = sliceStart + aOpen;
     const closePos = html.indexOf("</a>", position);
     let hasText = !!ariaLabel;
@@ -258,6 +347,7 @@ function getInteractiveContext(html, position) {
         .replace(/^<a[^>]*>/i, "")
         .replace(/<svg[\s\S]*?<\/svg>/gi, "")
         .replace(/<img[^>]*>/gi, "")
+        .replace(/<i\s[^>]*class\s*=\s*["'][^"']*(?:fa-|icon-|material-|bi-|glyphicon)[^"']*["'][^>]*>[\s\S]*?<\/i>/gi, "")
         .replace(/<[^>]+>/g, "")
         .trim();
       hasText = content.length > 0;
@@ -283,6 +373,7 @@ function getInteractiveContext(html, position) {
         .replace(/^<button[^>]*>/i, "")
         .replace(/<svg[\s\S]*?<\/svg>/gi, "")
         .replace(/<img[^>]*>/gi, "")
+        .replace(/<i\s[^>]*class\s*=\s*["'][^"']*(?:fa-|icon-|material-|bi-|glyphicon)[^"']*["'][^>]*>[\s\S]*?<\/i>/gi, "")
         .replace(/<[^>]+>/g, "")
         .trim();
       hasText = content.length > 0;
@@ -298,7 +389,7 @@ function getInteractiveContext(html, position) {
 // Extract <img> elements
 // =============================================================
 
-function extractImages(html, context, baseUrl) {
+function extractImages(html, context, baseUrl, pageLang) {
   const images = [];
   const imgRe = /<img\s([^>]*?)>/gi;
   let m;
@@ -313,7 +404,6 @@ function extractImages(html, context, baseUrl) {
     const ariaHidden = getAttr(attrs, "aria-hidden");
     const ariaLabel = getAttr(attrs, "aria-label");
 
-    // Resolve relative src
     let resolvedSrc = src;
     if (src && !src.startsWith("http") && !src.startsWith("data:")) {
       try {
@@ -325,26 +415,43 @@ function extractImages(html, context, baseUrl) {
 
     // Determine status
     let status;
+    const issues = [];
+
     if (role === "presentation" || role === "none" || ariaHidden === "true") {
       status = "decorative";
     } else if (alt === null && ariaLabel === null) {
+      // No alt attribute at all — WCAG violation
       status = "missing";
     } else if ((alt !== null && alt.trim() === "") && ariaLabel === null) {
-      // alt="" is correct for decorative images, but a problem inside links/buttons
-      status = interactive ? "empty-interactive" : "decorative";
+      // alt="" — decorative if standalone or in interactive with text
+      if (interactive && !interactive.hasText) {
+        status = "empty-interactive"; // ERROR: only content in interactive
+      } else {
+        status = "decorative"; // OK
+      }
     } else {
-      status = "present";
+      // Has alt text or aria-label — check quality
+      const text = ariaLabel || alt || "";
+      const quality = checkAltQuality(text, pageLang);
+      if (quality.length > 0) {
+        status = "review";
+        issues.push(...quality);
+      } else {
+        status = "present";
+      }
     }
+
     const landmark = getLandmark(position, context);
     const nearestHeading = getNearestHeading(position, context);
 
     images.push({
       type: "img",
       src: resolvedSrc || "",
-      alt: alt,
-      ariaLabel: ariaLabel,
+      alt,
+      ariaLabel,
       status,
-      interactive: interactive ? interactive.element : null,
+      issues,
+      interactive: interactive ? { element: interactive.element, hasText: interactive.hasText } : null,
       landmark,
       nearestHeading,
     });
@@ -366,7 +473,6 @@ function extractSvgs(html, context) {
     const fullMatch = m[0];
     const position = m.index;
 
-    // Get attributes from opening tag
     const openTagMatch = fullMatch.match(/^<svg\s([^>]*?)>/i);
     const attrs = openTagMatch ? openTagMatch[1] : "";
 
@@ -375,7 +481,6 @@ function extractSvgs(html, context) {
     const ariaHidden = getAttr(attrs, "aria-hidden");
     const role = getAttr(attrs, "role");
 
-    // Check for <title> inside the SVG
     const titleMatch = fullMatch.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
     const titleText = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, "").trim() : null;
 
@@ -386,13 +491,11 @@ function extractSvgs(html, context) {
     let accessibleName = null;
 
     if (interactive && interactive.hasText) {
-      // SVG is inside a link/button that already has text — SVG is decorative
+      // SVG inside link/button that already has text
       if (hasName) {
-        // SVG has an accessible name but shouldn't — it's redundant
         status = "redundant";
         accessibleName = ariaLabel || titleText || "(via aria-labelledby)";
       } else {
-        // Correctly decorative (no name, or aria-hidden)
         status = "decorative";
       }
     } else if (ariaHidden === "true") {
@@ -406,8 +509,12 @@ function extractSvgs(html, context) {
     } else if (ariaLabelledby) {
       status = "good";
       accessibleName = "(via aria-labelledby)";
-    } else {
+    } else if (interactive && !interactive.hasText) {
+      // SVG is only content in interactive — error
       status = "missing";
+    } else {
+      // Standalone SVG without name — needs review
+      status = "review";
     }
 
     const landmark = getLandmark(position, context);
@@ -418,7 +525,8 @@ function extractSvgs(html, context) {
       accessibleName,
       role,
       status,
-      interactive: interactive ? interactive.element : null,
+      issues: [],
+      interactive: interactive ? { element: interactive.element, hasText: interactive.hasText } : null,
       landmark,
       nearestHeading,
     });
@@ -433,7 +541,6 @@ function extractSvgs(html, context) {
 
 function extractIcons(html, context) {
   const icons = [];
-  // Match <i> and <span> tags with icon-related classes
   const iconRe = /<(i|span)\s([^>]*class\s*=\s*["'][^"']*(?:fa-|icon-|material-|bi-|glyphicon)[^"']*["'][^>]*)>([\s\S]*?)<\/\1>/gi;
   let m;
 
@@ -448,10 +555,12 @@ function extractIcons(html, context) {
     const ariaHidden = getAttr(attrs, "aria-hidden");
     const title = getAttr(attrs, "title");
 
-    // Check if there's a sr-only sibling (look for sr-only text right after)
+    // Check for sr-only sibling
     const after = html.slice(m.index + m[0].length, m.index + m[0].length + 200);
     const srOnlyMatch = after.match(/<span[^>]*class\s*=\s*["'][^"']*sr-only[^"']*["'][^>]*>([\s\S]*?)<\/span>/i);
     const srOnlyText = srOnlyMatch ? srOnlyMatch[1].replace(/<[^>]+>/g, "").trim() : null;
+
+    const interactive = getInteractiveContext(html, position);
 
     let status;
     let accessibleName = null;
@@ -470,15 +579,20 @@ function extractIcons(html, context) {
     } else if (innerContent) {
       status = "good";
       accessibleName = innerContent;
-    } else {
+    } else if (interactive && interactive.hasText) {
+      // Icon in link/button that has text — decorative
+      status = "decorative";
+    } else if (interactive && !interactive.hasText) {
+      // Icon is only content in link/button — error
       status = "missing";
+    } else {
+      // Standalone icon without name — manual review needed
+      status = "review";
     }
 
-    const interactive = getInteractiveContext(html, position);
     const landmark = getLandmark(position, context);
     const nearestHeading = getNearestHeading(position, context);
 
-    // Extract a readable icon name from classes
     const iconClass = className.match(/(?:fa-|icon-|material-|bi-|glyphicon-)([\w-]+)/);
     const iconName = iconClass ? iconClass[0] : className.split(/\s+/).slice(0, 2).join(" ");
 
@@ -488,7 +602,8 @@ function extractIcons(html, context) {
       iconName,
       accessibleName,
       status,
-      interactive: interactive ? interactive.element : null,
+      issues: [],
+      interactive: interactive ? { element: interactive.element, hasText: interactive.hasText } : null,
       landmark,
       nearestHeading,
     });
@@ -502,12 +617,10 @@ function extractIcons(html, context) {
 // =============================================================
 
 function getAttr(attrString, name) {
-  // Match attribute with double quotes, single quotes, or no quotes
   const re = new RegExp(`${name}\\s*=\\s*(?:"([^"]*?)"|'([^']*?)'|(\\S+))`, "i");
   const match = attrString.match(re);
   if (match) return match[1] ?? match[2] ?? match[3];
 
-  // Check for boolean attribute (e.g., just "alt" without value — rare but possible)
   const boolRe = new RegExp(`(?:^|\\s)${name}(?:\\s|$)`, "i");
   if (boolRe.test(attrString)) return "";
 
