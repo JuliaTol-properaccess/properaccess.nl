@@ -8019,3 +8019,152 @@ html.dark .vw-faq .faq-answer {
   border-color: #6B7280;
   background: #fff;
 }
+
+/* ─── Tabel Checker ─── */
+
+.tool-tbl__table {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.tool-tbl__table--error {
+  border-left: 4px solid #ef4444;
+}
+.tool-tbl__table--warning {
+  border-left: 4px solid #f59e0b;
+}
+.tool-tbl__table--ok {
+  border-left: 4px solid #22c55e;
+}
+
+.tool-tbl__table-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  margin: 0 0 1rem 0;
+}
+.tool-tbl__table-num {
+  font-weight: 700;
+}
+.tool-tbl__table-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.tool-tbl__table-type--data {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+.tool-tbl__table-type--layout {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.tool-tbl__badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.tool-tbl__badge--error {
+  background: #fef2f2;
+  color: #dc2626;
+}
+.tool-tbl__badge--warning {
+  background: #fffbeb;
+  color: #d97706;
+}
+.tool-tbl__badge--ok {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.tool-tbl__card--error .tool-alt__summary-count {
+  color: #dc2626;
+}
+.tool-tbl__card--warning .tool-alt__summary-count {
+  color: #d97706;
+}
+.tool-tbl__card--ok .tool-alt__summary-count {
+  color: #16a34a;
+}
+
+.tool-tbl__details {
+  font-size: 0.9375rem;
+}
+
+.tool-tbl__dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0 0 1rem 0;
+}
+.tool-tbl__dl dt {
+  font-weight: 600;
+  color: #6b7280;
+}
+.tool-tbl__dl dd {
+  margin: 0;
+}
+.tool-tbl__no-name {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.tool-tbl__issues-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.tool-tbl__issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tool-tbl__issue {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-top: 1px solid #f3f4f6;
+}
+.tool-tbl__issue-sev {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  min-width: 5rem;
+}
+.tool-tbl__issue--error .tool-tbl__issue-sev {
+  color: #dc2626;
+}
+.tool-tbl__issue--warning .tool-tbl__issue-sev {
+  color: #d97706;
+}
+.tool-tbl__issue-sc {
+  font-size: 0.75rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+.tool-tbl__issue-msg {
+  flex: 1;
+}
+.tool-tbl__issue-msg code {
+  background: #f3f4f6;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  font-size: 0.85em;
+}
+
+.tool-tbl__no-issues {
+  color: #16a34a;
+  font-weight: 600;
+  margin: 0;
+}
