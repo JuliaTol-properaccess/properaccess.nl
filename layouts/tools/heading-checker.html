@@ -3,36 +3,51 @@
   <div class="tool-container">
 
     <h1 class="mb-2">{{ .Title }}</h1>
-    <p class="tool-heading__intro">
-      Voer een URL in en bekijk de koppenstructuur van die pagina.
-      Een logische koppenhierarchie helpt screenreadergebruikers om door je content te navigeren.
-    </p>
 
-    <form class="tool-heading__form" id="checkerForm">
-      <div class="tool-heading__form-field">
-        <label for="urlInput">Website URL</label>
-        <input
-          type="url"
-          id="urlInput"
-          placeholder="https://voorbeeld.nl"
-          required
-          autocomplete="url"
-        >
-      </div>
-      <button type="submit" id="submitBtn" class="tool-heading__submit">Controleer</button>
-    </form>
-
-    <div id="output" role="region" aria-live="polite"></div>
-
-    <!-- CTA -->
-    <div class="tool-cta" id="headingCta" style="display:none;">
-      <p>Dit is een snelle check van de koppenstructuur. Een volledige WCAG-audit onderzoekt
-      alle 55 succescriteria &mdash; van toetsenbordtoegankelijkheid tot kleurcontrast.</p>
-      <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+    <!-- Password gate -->
+    <div class="tool-pdf__gate" id="passwordGate">
+      <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <form class="tool-pdf__gate-form" id="passwordForm">
+        <label for="gatePassword" class="sr-only">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn">Toegang</button>
+      </form>
+      <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
     </div>
+
+    <div id="toolContent" hidden>
+      <p class="tool-heading__intro">
+        Voer een URL in en bekijk de koppenstructuur van die pagina.
+        Een logische koppenhierarchie helpt screenreadergebruikers om door je content te navigeren.
+      </p>
+
+      <form class="tool-heading__form" id="checkerForm">
+        <div class="tool-heading__form-field">
+          <label for="urlInput">Website URL</label>
+          <input
+            type="url"
+            id="urlInput"
+            placeholder="https://voorbeeld.nl"
+            required
+            autocomplete="url"
+          >
+        </div>
+        <button type="submit" id="submitBtn" class="tool-heading__submit">Controleer</button>
+      </form>
+
+      <div id="output" role="region" aria-live="polite"></div>
+
+      <!-- CTA -->
+      <div class="tool-cta" id="headingCta" style="display:none;">
+        <p>Dit is een snelle check van de koppenstructuur. Een volledige WCAG-audit onderzoekt
+        alle 55 succescriteria &mdash; van toetsenbordtoegankelijkheid tot kleurcontrast.</p>
+        <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+      </div>
+    </div><!-- /toolContent -->
 
   </div>
 </section>
 
+<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
 <script src="{{ "js/tool-heading-checker.js" | relURL }}" defer></script>
 {{ end }}
