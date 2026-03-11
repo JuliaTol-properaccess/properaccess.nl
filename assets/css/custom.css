@@ -3518,6 +3518,11 @@ html.dark .tool-card__cta-link {
 .hp-diff {
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23A30D4B' stroke-width='0.5' opacity='0.15'/%3E%3C/svg%3E");
   background-size: 40px 40px;
+  text-align: center;
+}
+
+.hp-diff .hp-section-intro {
+  margin-inline: auto;
 }
 
 .hp-usps {
