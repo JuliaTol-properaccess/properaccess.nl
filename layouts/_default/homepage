@@ -1,0 +1,629 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+<section class="hp-hero">
+  <div class="container">
+    <div class="hp-hero__inner">
+      <div class="hp-hero__text">
+        <h1 class="hp-hero__title">
+          Digitale toegankelijkheid die werkt. Voor je bezoekers, niet voor de inspectie.
+        </h1>
+        <p class="hp-hero__subtitle">
+          Proper Access helpt organisaties met toegankelijkheidsaudits, concrete
+          oplossingen en een rapport dat je developers meteen kunnen oppakken. Geen
+          dikke documenten vol jargon &mdash; maar een helder plan richting een
+          toegankelijke website.
+        </p>
+        <div class="hp-hero__actions">
+          <a href="/offerte-wcag-onderzoek/" class="btn btn-primary">
+            Vraag een offerte aan
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#aanpak" class="hp-hero__cta-secondary">
+            Bekijk onze aanpak
+          </a>
+        </div>
+      </div>
+      <div class="hp-hero__visual" aria-hidden="true">
+        <!-- Main dashboard: audit rapport overview -->
+        <svg viewBox="0 0 420 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--main">
+          <!-- Card background -->
+          <rect x="0" y="0" width="420" height="340" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <!-- Header bar -->
+          <rect x="0" y="0" width="420" height="44" rx="12" fill="#1F2937"/>
+          <rect x="0" y="12" width="420" height="32" fill="#1F2937"/>
+          <!-- Window dots -->
+          <circle cx="18" cy="22" r="4" fill="#ef4444" opacity="0.8"/>
+          <circle cx="32" cy="22" r="4" fill="#F5C842" opacity="0.8"/>
+          <circle cx="46" cy="22" r="4" fill="#22c55e" opacity="0.8"/>
+          <text x="66" y="26" fill="#fff" font-family="Nunito, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">Audit Rapport — bevindingen</text>
+
+          <!-- Column headers -->
+          <text x="16" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" text-transform="uppercase" letter-spacing="1">BEVINDING</text>
+          <text x="200" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">TYPE</text>
+          <text x="280" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">ISSUES</text>
+          <text x="330" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">BEPERKING</text>
+          <line x1="16" y1="75" x2="404" y2="75" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 1 -->
+          <text x="16" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Afbeeldingen zonder alt-tekst</text>
+          <rect x="200" y="84" width="56" height="18" rx="9" fill="#f0fdf4"/>
+          <text x="212" y="96" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
+          <text x="290" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">12</text>
+          <circle cx="348" cy="91" r="9" fill="#fef2f2"/>
+          <text x="344" y="95" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="91" r="9" fill="#fffbeb"/>
+          <text x="364" y="95" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="108" x2="404" y2="108" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 2 -->
+          <text x="16" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Formulier zonder label</text>
+          <rect x="200" y="117" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="129" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">8</text>
+          <circle cx="348" cy="124" r="9" fill="#fef2f2"/>
+          <text x="344" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="124" r="9" fill="#f0fdf4"/>
+          <text x="363" y="128" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+          <circle cx="388" cy="124" r="9" fill="#fef2f2"/>
+          <text x="384" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="141" x2="404" y2="141" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 3 -->
+          <text x="16" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Kleurcontrast onvoldoende</text>
+          <rect x="200" y="150" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="162" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">15</text>
+          <circle cx="348" cy="157" r="9" fill="#fef2f2"/>
+          <text x="344" y="161" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <line x1="16" y1="174" x2="404" y2="174" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 4 -->
+          <text x="16" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Koppenstructuur incorrect</text>
+          <rect x="200" y="183" width="56" height="18" rx="9" fill="#f0fdf4"/>
+          <text x="212" y="195" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
+          <text x="290" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">6</text>
+          <circle cx="348" cy="190" r="9" fill="#fef2f2"/>
+          <text x="344" y="194" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="190" r="9" fill="#fffbeb"/>
+          <text x="364" y="194" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <line x1="16" y1="207" x2="404" y2="207" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 5 -->
+          <text x="16" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Focus niet zichtbaar</text>
+          <rect x="200" y="216" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="228" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">4</text>
+          <circle cx="348" cy="223" r="9" fill="#fef2f2"/>
+          <text x="344" y="227" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="223" r="9" fill="#f0fdf4"/>
+          <text x="363" y="227" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+          <line x1="16" y1="240" x2="404" y2="240" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Row 6 -->
+          <text x="16" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Taal van de pagina ontbreekt</text>
+          <rect x="200" y="249" width="56" height="18" rx="9" fill="#eff6ff"/>
+          <text x="208" y="261" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Techniek</text>
+          <text x="290" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">1</text>
+          <circle cx="348" cy="256" r="9" fill="#fef2f2"/>
+          <text x="344" y="260" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
+          <circle cx="368" cy="256" r="9" fill="#fffbeb"/>
+          <text x="364" y="260" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
+          <circle cx="388" cy="256" r="9" fill="#f0fdf4"/>
+          <text x="383" y="260" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
+
+          <!-- Legend at bottom -->
+          <line x1="16" y1="278" x2="404" y2="278" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="16" y="296" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5">BEPERKINGEN:</text>
+          <circle cx="100" cy="293" r="7" fill="#fef2f2"/>
+          <text x="96" y="296" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">V</text>
+          <text x="112" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Visueel</text>
+          <circle cx="166" cy="293" r="7" fill="#f0fdf4"/>
+          <text x="161" y="296" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">M</text>
+          <text x="178" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Motorisch</text>
+          <circle cx="244" cy="293" r="7" fill="#fffbeb"/>
+          <text x="240" y="296" fill="#b45309" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">C</text>
+          <text x="256" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Cognitief</text>
+
+          <!-- Total bar -->
+          <rect x="16" y="310" width="388" height="22" rx="4" fill="#f5f5f5"/>
+          <text x="24" y="325" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Totaal: 46 bevindingen</text>
+          <text x="320" y="325" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="10" font-weight="700">24/55 afgekeurd</text>
+        </svg>
+
+        <!-- Small floating card: impact verdeling -->
+        <svg viewBox="0 0 160 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--float">
+          <rect x="0" y="0" width="160" height="140" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="14" y="24" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Impact verdeling</text>
+          <line x1="14" y1="32" x2="146" y2="32" stroke="#f3f4f6" stroke-width="1"/>
+
+          <!-- Groot -->
+          <circle cx="28" cy="52" r="8" fill="#A30D4B"/>
+          <text x="24" y="56" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">!</text>
+          <text x="42" y="56" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Groot</text>
+          <rect x="88" y="45" width="56" height="14" rx="3" fill="#fef2f2"/>
+          <rect x="88" y="45" width="38" height="14" rx="3" fill="#A30D4B" opacity="0.8"/>
+          <text x="130" y="55" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700">18</text>
+
+          <!-- Middel -->
+          <circle cx="28" cy="80" r="8" fill="#F5C842"/>
+          <text x="25" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">~</text>
+          <text x="42" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Middel</text>
+          <rect x="88" y="73" width="56" height="14" rx="3" fill="#fffbeb"/>
+          <rect x="88" y="73" width="28" height="14" rx="3" fill="#F5C842" opacity="0.7"/>
+          <text x="130" y="83" fill="#b45309" font-family="Nunito, sans-serif" font-size="9" font-weight="700">16</text>
+
+          <!-- Klein -->
+          <circle cx="28" cy="108" r="8" fill="#e5e7eb"/>
+          <text x="25" y="112" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8" font-weight="700">-</text>
+          <text x="42" y="112" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Klein</text>
+          <rect x="88" y="101" width="56" height="14" rx="3" fill="#f5f5f5"/>
+          <rect x="88" y="101" width="16" height="14" rx="3" fill="#d1d5db"/>
+          <text x="130" y="111" fill="#6b7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">12</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── TRUST BAR ─── -->
+<div class="hp-trust">
+  <div class="container">
+    <p class="hp-trust__label">Vertrouwd door</p>
+    <div class="hp-trust__names">
+      <span>Rijksmuseum</span>
+      <span>Prov. Noord-Holland</span>
+      <span>NRC</span>
+      <span>Museumvereniging</span>
+      <span>Eteck</span>
+      <span>Jumbo</span>
+      <span>Plus</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ─── WAT MAAKT ONS ANDERS ─── -->
+<section class="section hp-diff">
+  <div class="container hp-narrow">
+    <h2 class="hp-section-title">Geen rapport voor in de la</h2>
+    <div class="hp-section-intro">
+      <p>
+        De meeste auditbureaus leveren een rapport per succescriterium. Vijftig
+        pagina&rsquo;s platte tekst, technisch correct, maar onwerkbaar voor je team.
+        Wij doen het anders.
+      </p>
+      <p>
+        <strong>Ons rapport is geordend per webpagina en per element.</strong> Je
+        developer opent het rapport, ziet precies welk element op welke pagina
+        aangepast moet worden, en gaat aan de slag. Met screenshots, codevoorbeelden
+        en concrete oplossingsrichtingen.
+      </p>
+      <p>
+        Het resultaat? Sneller door het rapport heen, minder misverstanden, en een
+        website die daadwerkelijk toegankelijker wordt.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── ONZE AANPAK ─── -->
+<section class="section hp-approach" id="aanpak">
+  <div class="container">
+    <h2 class="hp-section-title">Onze aanpak</h2>
+
+    <div class="hp-approach__grid">
+      <div class="hp-approach__item">
+        <h3 class="hp-approach__title">Grondig onderzoek</h3>
+        <p class="hp-approach__desc">
+          We testen je website met schermlezers, toetsenbord, vergrotingssoftware
+          en spraakbesturing. Niet alleen geautomatiseerd &mdash; handmatig, zoals
+          je bezoekers het ervaren.
+        </p>
+      </div>
+
+      <div class="hp-approach__item">
+        <h3 class="hp-approach__title">Concrete oplossingen</h3>
+        <p class="hp-approach__desc">
+          Bij elk probleem krijg je een concrete oplossing of een oplossingsrichting.
+          Geen &ldquo;zorg dat dit toegankelijk wordt&rdquo;, maar een werkbaar advies
+          dat je team direct kan oppakken.
+        </p>
+      </div>
+
+      <div class="hp-approach__item">
+        <h3 class="hp-approach__title">Directe lijn met de auditor</h3>
+        <p class="hp-approach__desc">
+          Geen accountmanagers of projectmanagers ertussen. Je praat rechtstreeks
+          met de senior auditor die je website heeft onderzocht. Vragen? Gewoon bellen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── VOOR WIE ─── -->
+<section class="section hp-segments">
+  <div class="container">
+    <h2 class="hp-section-title">We werken voor organisaties die het goed willen doen</h2>
+    <p class="hp-section-intro">
+      Of je nu wettelijk verplicht bent (Wdo, EAA) of gewoon wilt dat iedereen je
+      website kan gebruiken &mdash; we helpen je op weg.
+    </p>
+
+    <div class="hp-segments__layout">
+      <div class="hp-segments__grid">
+        <a href="/digitale-toegankelijkheid-overheid/" class="hp-segment">
+          <h3 class="hp-segment__title">Overheid en semi-overheid</h3>
+          <p class="hp-segment__desc">
+            Complexe websites, veel content, strenge eisen. We kennen de weg en
+            denken mee over prioriteiten.
+          </p>
+        </a>
+
+        <a href="/e-commerce-digitale-toegankelijkheid/" class="hp-segment">
+          <h3 class="hp-segment__title">Webshops en e-commerce</h3>
+          <p class="hp-segment__desc">
+            Sinds juni 2025 geldt de European Accessibility Act. We helpen je om
+            je webshop toegankelijk te maken zonder je conversie te verliezen.
+          </p>
+        </a>
+
+        <a href="/contact/" class="hp-segment">
+          <h3 class="hp-segment__title">Cultuur, musea en erfgoed</h3>
+          <p class="hp-segment__desc">
+            Van ticketing tot collectiepagina&rsquo;s &mdash; we weten waar de
+            knelpunten zitten en hoe je ze oplost.
+          </p>
+        </a>
+
+        <a href="/digital-agency/" class="hp-segment">
+          <h3 class="hp-segment__title">Digital agencies</h3>
+          <p class="hp-segment__desc">
+            Wil je toegankelijkheid meenemen in je projecten? We werken samen als
+            kennispartner, of nemen de audit voor onze rekening.
+          </p>
+        </a>
+
+        <a href="/onderwijs-digitale-toegankelijkheid/" class="hp-segment">
+          <h3 class="hp-segment__title">Onderwijs</h3>
+          <p class="hp-segment__desc">
+            Kunnen al je studenten bij de lesstof? We auditen leeromgevingen,
+            toetssystemen en e-learning modules op toegankelijkheid.
+          </p>
+        </a>
+      </div>
+
+      <div class="hp-segments__logos">
+        {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Logo's van opdrachtgevers: Provincie Zuid-Holland, Rijksmuseum, Provincie Noord-Holland, Museumvereniging, Onderzoeksraad voor Veiligheid, gemeente 's-Hertogenbosch, NRC, Museum.nl, gemeente Amersfoort, gemeente Alkmaar, Eteck, Van Gogh Museum, Plus, Jumbo, Caroline Svedbom" "Loading" "lazy" "Class" "hp-segments__logos-img" "DisplayXL" "500x") }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── STATS BAR ─── -->
+<section class="hp-stats">
+  <div class="container">
+    <div class="hp-stats__grid">
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">900+</span>
+        <span class="hp-stats__label">audits uitgevoerd</span>
+      </div>
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">53</span>
+        <span class="hp-stats__label">opdrachtgevers</span>
+      </div>
+      <div class="hp-stats__item">
+        <span class="hp-stats__number">34%</span>
+        <span class="hp-stats__label">komt terug voor een volgende opdracht</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── PRODUCTEN ─── -->
+<section class="section hp-services">
+  <div class="container">
+    <h2 class="hp-section-title">De kortste route naar een toegankelijk resultaat</h2>
+
+    <div class="hp-services__grid">
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Quickscan</h3>
+        <p class="hp-service-card__desc">
+          Een snelle check van je website op de meest voorkomende
+          toegankelijkheidsproblemen. Ideaal als startpunt.
+        </p>
+        <a href="/webshop-quickscan/" class="hp-service-card__link">
+          Meer over de quickscan &rarr;
+        </a>
+      </article>
+
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Toegankelijkheidsaudit</h3>
+        <p class="hp-service-card__desc">
+          Een volledige WCAG-audit met rapport per element, screenshots en concrete
+          oplossingsrichtingen. Inclusief onbeperkt vragen stellen.
+        </p>
+        <a href="/toegankelijkheidsaudit/" class="hp-service-card__link">
+          Meer over de audit &rarr;
+        </a>
+      </article>
+
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Strippenkaart</h3>
+        <p class="hp-service-card__desc">
+          Een urenbundel voor doorlopende ondersteuning. Handig als je regelmatig
+          nieuwe functionaliteit lanceert en wilt checken of het toegankelijk is.
+        </p>
+        <a href="/contact/" class="hp-service-card__link">
+          Meer over de strippenkaart &rarr;
+        </a>
+      </article>
+
+      <article class="hp-service-card">
+        <h3 class="hp-service-card__title">Retest</h3>
+        <p class="hp-service-card__desc">
+          Na het doorvoeren van verbeteringen testen we opnieuw. Zo weet je zeker
+          dat alles goed is opgepakt.
+        </p>
+        <a href="/contact/" class="hp-service-card__link">
+          Meer over de retest &rarr;
+        </a>
+      </article>
+    </div>
+
+    <p class="hp-section-cta">
+      <a href="/diensten/" class="hp-link-arrow">Bekijk alle diensten &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ─── GRATIS TOOLS ─── -->
+<section class="section hp-tools">
+  <div class="container">
+    <h2 class="hp-section-title">Tools die je werk makkelijker maken</h2>
+    <p class="hp-section-intro">
+      We bouwen eigen tools om onze klanten te helpen sneller en effectiever te
+      werken aan digitale toegankelijkheid. Allemaal gratis te gebruiken.
+    </p>
+
+    <div class="hp-tools__grid">
+      <a href="/tools/alt-tekst-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Alt-tekst checker</h3>
+          <p class="hp-tool-card__desc">
+            Controleer of je afbeeldingen een goede alternatieve tekst hebben.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/koppenstructuur-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Koppenstructuur checker</h3>
+          <p class="hp-tool-card__desc">
+            Bekijk in een oogopslag of je paginastructuur klopt.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/kleurcontrast-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Kleurcontrast checker</h3>
+          <p class="hp-tool-card__desc">
+            Test of je kleurencombinaties voldoende contrast hebben.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/pdf-checker/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">PDF checker</h3>
+          <p class="hp-tool-card__desc">
+            Controleer of je PDF&rsquo;s toegankelijk zijn.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/aria-referentie/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">ARIA-referentie</h3>
+          <p class="hp-tool-card__desc">
+            Snel opzoeken welke ARIA-attributen je waar kunt gebruiken.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+
+      <a href="/tools/toegankelijkheidsverklaring-generator/" class="hp-tool-card">
+        <div class="hp-tool-card__body">
+          <h3 class="hp-tool-card__title">Toegankelijkheidsverklaring generator</h3>
+          <p class="hp-tool-card__desc">
+            Stel eenvoudig een toegankelijkheidsverklaring op.
+          </p>
+        </div>
+        <span class="hp-tool-card__link">Bekijk de tool &rarr;</span>
+      </a>
+    </div>
+
+    <p class="hp-section-cta">
+      <a href="/tools/" class="hp-link-arrow">Bekijk alle tools &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ─── WAAROM PROPER ACCESS ─── -->
+<section class="section hp-usps">
+  <div class="container">
+    <h2 class="hp-section-title">Zes redenen om met ons te werken</h2>
+
+    <div class="hp-usps__grid">
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">01</span>
+        <h3 class="hp-usp__title">Rapport per element</h3>
+        <p class="hp-usp__desc">
+          Niet per succescriterium, maar per pagina en per onderdeel. Werkbaar
+          voor je hele team.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">02</span>
+        <h3 class="hp-usp__title">Onafhankelijk</h3>
+        <p class="hp-usp__desc">
+          We bouwen geen websites, beheren geen content en verkopen geen software.
+          Geen enkel belangenconflict.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">03</span>
+        <h3 class="hp-usp__title">Directe toegang</h3>
+        <p class="hp-usp__desc">
+          Je praat met de auditor, niet met een tussenpersoon.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">04</span>
+        <h3 class="hp-usp__title">Eigen research</h3>
+        <p class="hp-usp__desc">
+          We studeren wekelijks en testen hoe browsers en hulpsoftware zich
+          daadwerkelijk gedragen.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">05</span>
+        <h3 class="hp-usp__title">We bouwen tools voor je</h3>
+        <p class="hp-usp__desc">
+          Gratis tools die je helpen sneller te werken en digitale
+          toegankelijkheid beter te begrijpen.
+        </p>
+      </div>
+
+      <div class="hp-usp">
+        <span class="hp-usp__number" aria-hidden="true">06</span>
+        <h3 class="hp-usp__title">Wij zijn op een na de beste</h3>
+        <p class="hp-usp__desc">
+          Ons doel is niet om zelf de beste te zijn &mdash; maar om jouw
+          organisatie de beste te maken in digitale toegankelijkheid.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── RECENTE ARTIKELEN ─── -->
+{{ $allBlog := where site.RegularPages "Section" "blog" }}
+<section class="section hp-articles">
+  <div class="container">
+    <h2 class="hp-section-title">Kennis die je direct kunt toepassen</h2>
+    <p class="hp-section-intro">
+      We schrijven over wat we tegenkomen in onze audits. Geen theorie om de
+      theorie &mdash; maar praktische inzichten die je morgen kunt gebruiken.
+    </p>
+
+    <div class="hp-articles__grid">
+
+      {{ $eaa := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "de EAA")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">European Accessibility Act</h3>
+        <p class="hp-articles__col-desc">
+          Voor organisaties die willen begrijpen wat de EAA betekent en wat ze
+          moeten doen.
+        </p>
+        {{ if $eaa }}
+          <ul class="hp-articles__list">
+            {{ range $eaa }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/de-eaa/" class="hp-articles__more">
+          Alle artikelen over de EAA &rarr;
+        </a>
+      </div>
+
+      {{ $dev := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "webdeveloper" "Webdeveloper")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">Voor developers</h3>
+        <p class="hp-articles__col-desc">
+          Technische diepgang: code-voorbeelden, ARIA-patronen, en hoe browsers
+          en hulpsoftware echt omgaan met je code.
+        </p>
+        {{ if $dev }}
+          <ul class="hp-articles__list">
+            {{ range $dev }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/webdeveloper/" class="hp-articles__more">
+          Alle artikelen voor developers &rarr;
+        </a>
+      </div>
+
+      {{ $red := first 3 (sort (where $allBlog "Params.categories" "intersect" (slice "webredactie" "Webredactie")) "Date" "desc") }}
+      <div class="hp-articles__col">
+        <h3 class="hp-articles__col-title">Voor webredacties</h3>
+        <p class="hp-articles__col-desc">
+          Toegankelijke content schrijven: koppen, alt-teksten, links, tabellen
+          en PDF&rsquo;s. Zonder technische kennis.
+        </p>
+        {{ if $red }}
+          <ul class="hp-articles__list">
+            {{ range $red }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <a href="/categories/webredactie/" class="hp-articles__more">
+          Alle artikelen voor webredacties &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── WEBINAR ─── -->
+{{ partial "webinar-section.html" . }}
+
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="section hp-faq">
+  <div class="container">
+    <h2 class="hp-section-title">Vragen die we vaak krijgen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

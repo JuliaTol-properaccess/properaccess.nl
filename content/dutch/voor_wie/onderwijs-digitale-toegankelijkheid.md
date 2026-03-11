@@ -140,6 +140,8 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 
 {{< /section-cta >}}
 
+{{< webinar >}}
+
 {{< section-full title="Veelgestelde vragen" >}}
 
 <details class="faq-item">
