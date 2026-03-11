@@ -5,9 +5,16 @@
     <div class="container">
       <div class="tool-overview__intro">{{ .Content }}</div>
 
+      <div class="tool-filter" role="group" aria-label="Filter tools op doelgroep">
+        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all">Alle tools</button>
+        <button class="tool-filter__btn" data-filter="Webredactie">Webredactie</button>
+        <button class="tool-filter__btn" data-filter="Webdeveloper">Webdeveloper</button>
+        <button class="tool-filter__btn" data-filter="Manager">Manager</button>
+      </div>
+
       <div class="tool-overview__grid">
         {{ range .RegularPages }}
-          <a href="{{ .RelPermalink }}" class="tool-card">
+          <a href="{{ .RelPermalink }}" class="tool-card" data-doelgroep="{{ delimit .Params.doelgroep "," }}">
             <div class="tool-card__body">
               <h2 class="tool-card__title">
                 {{ .Title }}
@@ -35,6 +42,37 @@
           </div>
         </div>
       </div>
+
+      <p class="tool-filter__empty" hidden>Geen tools gevonden voor dit filter.</p>
     </div>
   </section>
+
+  <script>
+  (function () {
+    const btns = document.querySelectorAll('.tool-filter__btn');
+    const cards = document.querySelectorAll('.tool-card[data-doelgroep]');
+    const cta = document.querySelector('.tool-card--cta');
+    const empty = document.querySelector('.tool-filter__empty');
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('tool-filter__btn--active'); });
+        btn.classList.add('tool-filter__btn--active');
+
+        var filter = btn.getAttribute('data-filter');
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var groups = (card.getAttribute('data-doelgroep') || '').split(',');
+          var show = filter === 'all' || groups.indexOf(filter) !== -1;
+          card.hidden = !show;
+          if (show) visible++;
+        });
+
+        if (cta) cta.hidden = visible === 0;
+        empty.hidden = visible > 0;
+      });
+    });
+  })();
+  </script>
 {{ end }}

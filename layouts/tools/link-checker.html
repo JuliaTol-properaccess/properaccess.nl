@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <div class="tool-pdf__header">
+      <h1 class="mb-2"><span data-i18n="toolTitle">{{ .Title }}</span> {{ if .Params.beta }}<span class="tool-pdf__beta">Beta</span>{{ end }}</h1>
+      <button type="button" class="tool-pdf__lang-btn" id="langToggle" aria-label="Switch to English">
+        <span class="tool-pdf__lang-opt tool-pdf__lang-opt--active" id="langOptNL">NL</span>
+        <span class="tool-pdf__lang-opt" id="langOptEN">EN</span>
+      </button>
+    </div>
+
+    <!-- Password gate -->
+    <div class="tool-pdf__gate" id="passwordGate">
+      <p class="tool-pdf__gate-text" data-i18n="gateText">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
+      <form class="tool-pdf__gate-form" id="passwordForm">
+        <label for="gatePassword" class="sr-only" data-i18n="gatePasswordLabel">Wachtwoord</label>
+        <input type="password" id="gatePassword" class="tool-pdf__gate-input" data-i18n-ph="gatePasswordLabel" placeholder="Wachtwoord" autocomplete="off" required>
+        <button type="submit" class="tool-pdf__gate-btn" data-i18n="gateBtn">Toegang</button>
+      </form>
+      <p class="tool-pdf__gate-error" id="gateError" hidden data-i18n="gateError">Onjuist wachtwoord. Probeer het opnieuw.</p>
+    </div>
+
+    <!-- Tool content (hidden until authenticated) -->
+    <div id="toolContent" hidden>
+      <p class="tool-alt__intro" data-i18n="intro">
+        Voer een URL in om alle links op die pagina te bekijken. Je ziet per
+        link de toegankelijke naam, de URL en eventuele problemen.
+      </p>
+
+      <form class="tool-alt__form" id="checkerForm">
+        <div class="tool-alt__form-row">
+          <label for="urlInput" class="sr-only" data-i18n="urlLabel">URL van de pagina</label>
+          <input type="url" id="urlInput" class="tool-alt__input" data-i18n-ph="urlPlaceholder" placeholder="https://www.voorbeeld.nl" required autocomplete="url">
+          <button type="submit" class="tool-alt__btn" id="submitBtn" data-i18n="submitBtn">Controleer</button>
+        </div>
+      </form>
+
+      <div id="output" role="region" aria-live="polite"></div>
+
+      <div class="tool-cta" id="linkCta" style="display:none;">
+        <p data-i18n-html="ctaHtml">Wil je alle links op je hele website laten controleren?
+        <a href="/contact">Neem contact op</a> voor een complete WCAG-audit.</p>
+      </div>
+    </div><!-- /toolContent -->
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
+<script src="{{ "js/tool-link-checker.js" | relURL }}" defer></script>
+{{ end }}
