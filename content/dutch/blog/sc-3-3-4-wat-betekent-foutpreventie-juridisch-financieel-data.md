@@ -1,5 +1,5 @@
 ---
-title: "SC 3.3.4 - Wat betekent \"Foutpreventie (juridisch, financieel, data)\""
+title: 'SC 3.3.4 - Wat betekent \"Foutpreventie (juridisch, financieel, data)\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

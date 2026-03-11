@@ -1,5 +1,5 @@
 ---
-title: "SC 3.1.1 - Wat betekent \"Taal van de pagina\""
+title: 'SC 3.1.1 - Wat betekent \"Taal van de pagina\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

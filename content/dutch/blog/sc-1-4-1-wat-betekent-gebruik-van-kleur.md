@@ -1,5 +1,5 @@
 ---
-title: "SC 1.4.1 - Wat betekent \"Gebruik van kleur\"?"
+title: 'SC 1.4.1 - Wat betekent \"Gebruik van kleur\"?'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

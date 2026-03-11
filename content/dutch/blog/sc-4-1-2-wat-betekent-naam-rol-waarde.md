@@ -1,5 +1,5 @@
 ---
-title: "SC 4.1.2 - Wat betekent \"Naam, rol, waarde\""
+title: 'SC 4.1.2 - Wat betekent \"Naam, rol, waarde\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

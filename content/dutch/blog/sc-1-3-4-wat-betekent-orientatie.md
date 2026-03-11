@@ -1,5 +1,5 @@
 ---
-title: "SC 1.3.4 - Wat betekent \"Oriëntatie\""
+title: 'SC 1.3.4 - Wat betekent \"Oriëntatie\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

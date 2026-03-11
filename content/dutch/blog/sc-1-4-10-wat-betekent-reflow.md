@@ -1,5 +1,5 @@
 ---
-title: "1.4.10 - Wat betekent \"Reflow\"?"
+title: '1.4.10 - Wat betekent \"Reflow\"?'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

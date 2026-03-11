@@ -1,5 +1,5 @@
 ---
-title: "SC 3.2.4 - Wat betekent "Consistente identificatie""
+title: 'SC 3.2.4 - Wat betekent "Consistente identificatie"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

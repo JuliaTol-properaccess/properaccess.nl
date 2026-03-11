@@ -1,5 +1,5 @@
 ---
-title: "SC 3.3.7 - Wat betekent \"Redundante invoer\""
+title: 'SC 3.3.7 - Wat betekent \"Redundante invoer\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

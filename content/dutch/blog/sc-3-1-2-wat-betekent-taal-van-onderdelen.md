@@ -1,5 +1,5 @@
 ---
-title: "SC 3.1.2 - Wat betekent \"Taal van onderdelen\""
+title: 'SC 3.1.2 - Wat betekent \"Taal van onderdelen\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

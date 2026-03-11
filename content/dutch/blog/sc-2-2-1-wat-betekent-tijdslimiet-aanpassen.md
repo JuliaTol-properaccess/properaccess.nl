@@ -1,5 +1,5 @@
 ---
-title: "SC 2.2.1 - Wat betekent \"Tijdslimiet aanpassen\""
+title: 'SC 2.2.1 - Wat betekent \"Tijdslimiet aanpassen\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

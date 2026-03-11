@@ -1,5 +1,5 @@
 ---
-title: "SC 2.4.7 - Wat betekent \"Focus zichtbaar\""
+title: 'SC 2.4.7 - Wat betekent \"Focus zichtbaar\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

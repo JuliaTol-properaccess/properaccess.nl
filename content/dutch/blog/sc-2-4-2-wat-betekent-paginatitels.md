@@ -1,5 +1,5 @@
 ---
-title: "SC 2.4.2 - Wat betekent \"Paginatitels\""
+title: 'SC 2.4.2 - Wat betekent \"Paginatitels\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

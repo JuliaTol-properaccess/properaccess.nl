@@ -1,5 +1,5 @@
 ---
-title: "SC 3.3.1 - Wat betekent \"Foutidentificatie\""
+title: 'SC 3.3.1 - Wat betekent \"Foutidentificatie\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

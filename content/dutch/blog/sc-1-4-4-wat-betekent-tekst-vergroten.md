@@ -1,5 +1,5 @@
 ---
-title: "1.4.4 - Wat betekent \"Tekst vergroten\"?"
+title: '1.4.4 - Wat betekent \"Tekst vergroten\"?'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

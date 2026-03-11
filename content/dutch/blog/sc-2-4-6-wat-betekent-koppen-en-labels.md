@@ -1,5 +1,5 @@
 ---
-title: "SC 2.4.6 - Wat betekent \"Koppen en labels\""
+title: 'SC 2.4.6 - Wat betekent \"Koppen en labels\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

@@ -1,5 +1,5 @@
 ---
-title: "1.3.3 - Wat betekent \"Zintuiglijke kenmerken\"?"
+title: '1.3.3 - Wat betekent \"Zintuiglijke kenmerken\"?'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

@@ -1,5 +1,5 @@
 ---
-title: "SC 2.1.1 - Wat betekent \"Toetsenbord toegankelijk\""
+title: 'SC 2.1.1 - Wat betekent \"Toetsenbord toegankelijk\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

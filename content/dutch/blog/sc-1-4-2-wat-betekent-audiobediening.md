@@ -1,5 +1,5 @@
 ---
-title: "SC 1.4.2 - Wat betekent "Audiobediening""
+title: 'SC 1.4.2 - Wat betekent "Audiobediening"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

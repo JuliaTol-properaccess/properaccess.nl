@@ -1,5 +1,5 @@
 ---
-title: "SC 3.3.8 - Wat betekent \"Toegankelijke authenticatie\""
+title: 'SC 3.3.8 - Wat betekent \"Toegankelijke authenticatie\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

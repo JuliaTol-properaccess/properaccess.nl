@@ -1,5 +1,5 @@
 ---
-title: "SC 2.4.5 - Wat betekent \"Meerdere manieren\""
+title: 'SC 2.4.5 - Wat betekent \"Meerdere manieren\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

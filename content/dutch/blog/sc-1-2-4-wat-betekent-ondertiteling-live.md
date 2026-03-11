@@ -1,5 +1,5 @@
 ---
-title: "SC 1.2.4 - Wat betekent \"Ondertiteling (live)\""
+title: 'SC 1.2.4 - Wat betekent \"Ondertiteling (live)\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

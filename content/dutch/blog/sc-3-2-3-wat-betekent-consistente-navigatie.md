@@ -1,5 +1,5 @@
 ---
-title: "SC 3.2.3 - Wat betekent "Consistente navigatie""
+title: 'SC 3.2.3 - Wat betekent "Consistente navigatie"'
 date: 2025-05-17
 categories:
   - "wcag-uitgelegd"

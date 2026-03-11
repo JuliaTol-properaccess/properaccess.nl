@@ -1,5 +1,5 @@
 ---
-title: "SC 2.5.7 - Wat betekent \"Sleepbewegingen\""
+title: 'SC 2.5.7 - Wat betekent \"Sleepbewegingen\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

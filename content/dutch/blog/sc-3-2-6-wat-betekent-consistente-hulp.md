@@ -1,5 +1,5 @@
 ---
-title: "SC 3.2.6 - Wat betekent \"Consistente hulp\""
+title: 'SC 3.2.6 - Wat betekent \"Consistente hulp\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

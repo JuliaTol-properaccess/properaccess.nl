@@ -1,5 +1,5 @@
 ---
-title: "SC 2.4.11 - Wat betekent \"Focus niet volledig bedekt\""
+title: 'SC 2.4.11 - Wat betekent \"Focus niet volledig bedekt\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

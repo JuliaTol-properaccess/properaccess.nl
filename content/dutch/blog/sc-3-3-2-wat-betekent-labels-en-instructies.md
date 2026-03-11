@@ -1,5 +1,5 @@
 ---
-title: "SC 3.3.2 - Wat betekent \"Labels en instructies\""
+title: 'SC 3.3.2 - Wat betekent \"Labels en instructies\"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
