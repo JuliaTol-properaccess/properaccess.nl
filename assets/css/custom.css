@@ -8119,7 +8119,7 @@ html.dark .vw-faq .faq-answer {
   margin: 0;
 }
 .tool-tbl__no-name {
-  color: #9ca3af;
+  color: #6b7280;
   font-style: italic;
 }
 
@@ -8156,7 +8156,7 @@ html.dark .vw-faq .faq-answer {
 }
 .tool-tbl__issue-sc {
   font-size: 0.75rem;
-  color: #6b7280;
+  color: #4b5563;
   flex-shrink: 0;
 }
 .tool-tbl__issue-msg {

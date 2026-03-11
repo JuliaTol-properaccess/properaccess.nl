@@ -227,17 +227,6 @@ function extractTables(html) {
         });
       }
 
-      // Check: <th> without scope (SC 1.3.1)
-      const thWithoutScope = thElements.filter(th => !th.scope);
-      if (thWithoutScope.length > 0 && cols >= 3) {
-        issues.push({
-          severity: "error",
-          sc: "1.3.1",
-          id: "th-no-scope",
-          detail: { count: thWithoutScope.length },
-        });
-      }
-
       // Check: Empty <th> (SC 2.4.6)
       const emptyTh = thElements.filter(th => !th.content);
       if (emptyTh.length > 0) {
