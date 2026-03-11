@@ -132,6 +132,38 @@ const GENERIC_TEXTS = [
   "see more", "details", "view", "link", "go",
 ];
 
+/**
+ * Resolve aria-labelledby: find elements by ID in the full HTML
+ * and return their text content concatenated with spaces.
+ * Follows accname-1.2 step 2B.
+ */
+function resolveAriaLabelledby(ids, html) {
+  const parts = [];
+  for (const id of ids.split(/\s+/).filter(Boolean)) {
+    // Find element with this ID and get its text content
+    const elRe = new RegExp(`<[^>]+\\bid\\s*=\\s*["']${escapeRegex(id)}["'][^>]*>([\\s\\S]*?)<\\/`, "i");
+    const match = html.match(elRe);
+    if (match) {
+      const text = match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      if (text) parts.push(text);
+    }
+  }
+  return parts.join(" ");
+}
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Strip content inside aria-hidden="true" elements from link content,
+ * so hidden text doesn't contribute to the accessible name.
+ * Follows accname-1.2 step 2A.
+ */
+function stripAriaHidden(content) {
+  return content.replace(/<([a-z][a-z0-9]*)\s[^>]*aria-hidden\s*=\s*["']true["'][^>]*>[\s\S]*?<\/\1>/gi, "");
+}
+
 function extractLinks(html, pageUrl) {
   const links = [];
   // Match <a> tags — with or without attributes
@@ -160,28 +192,39 @@ function extractLinks(html, pageUrl) {
     // Skip links that are explicitly hidden from AT
     if (ariaHidden === "true" && tabindex === "-1") continue;
 
-    // Get visible text (strip HTML tags)
-    const visibleText = content.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    // Strip aria-hidden content before computing accessible name (accname step 2A)
+    const accessibleContent = stripAriaHidden(content);
 
-    // Check for images inside link
-    const imgMatches = [...content.matchAll(/<img\s([^>]*?)\/?>|<img\s([^>]*?)>[\s\S]*?<\/img>/gi)];
+    // Get visible text (strip HTML tags)
+    const visibleText = accessibleContent.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+
+    // Check for images inside link (use accessible content, not raw content)
+    const imgMatches = [...accessibleContent.matchAll(/<img\s([^>]*?)\/?>|<img\s([^>]*?)>[\s\S]*?<\/img>/gi)];
     const imgAlts = imgMatches.map(im => {
       const imgAttrs = im[1] || im[2] || "";
       return getAttr(imgAttrs, "alt");
     });
 
-    // Check for SVG with role="img" and aria-label
-    const svgMatches = [...content.matchAll(/<svg\s([^>]*?)[\s\S]*?<\/svg>/gi)];
+    // Check for SVG with aria-label, title attribute, or <title> child element
+    const svgMatches = [...accessibleContent.matchAll(/<svg\s([^>]*?)([\s\S]*?)<\/svg>/gi)];
     const svgLabels = svgMatches.map(sm => {
       const svgAttrs = sm[1] || "";
-      return getAttr(svgAttrs, "aria-label") || getAttr(svgAttrs, "title");
+      const svgContent = sm[2] || "";
+      // Check attributes on <svg> element
+      const attrLabel = getAttr(svgAttrs, "aria-label") || getAttr(svgAttrs, "title");
+      if (attrLabel) return attrLabel;
+      // Check <title> child element inside SVG
+      const titleMatch = svgContent.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+      if (titleMatch) return titleMatch[1].trim();
+      return null;
     }).filter(Boolean);
 
-    // Determine accessible name (following simplified accessible name computation)
+    // Determine accessible name following accname-1.2 computation order:
+    // Step 2B: aria-labelledby → Step 2D: aria-label → Step 2F: content → Step 2I: title
     let accessibleName = "";
     if (ariaLabelledby) {
-      // We can't resolve aria-labelledby in regex parsing, note it
-      accessibleName = "[aria-labelledby]";
+      // Step 2B: resolve aria-labelledby IDREFs from full HTML
+      accessibleName = resolveAriaLabelledby(ariaLabelledby, html);
     } else if (ariaLabel) {
       accessibleName = ariaLabel;
     } else {

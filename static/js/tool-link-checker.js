@@ -67,6 +67,12 @@
       // Severity
       error: "Fout",
       warning: "Waarschuwing",
+      // Landmark labels
+      "landmark-header": "Bovenste gedeelte van de pagina",
+      "landmark-nav": "Menu / navigatie",
+      "landmark-main": "Hoofdinhoud",
+      "landmark-aside": "Zijbalk",
+      "landmark-footer": "Onderste gedeelte van de pagina",
       // CTA
       ctaHtml: "Wil je een volledige audit, handmatig uitgevoerd door senior experts? <a href=\"/contact\">Neem contact op</a> voor een complete WCAG-audit.",
       // Toggle
@@ -115,6 +121,12 @@
       "title-repeats-name": "The title attribute repeats the link text. Remove the redundant title attribute.",
       error: "Error",
       warning: "Warning",
+      // Landmark labels
+      "landmark-header": "Top of the page",
+      "landmark-nav": "Menu / navigation",
+      "landmark-main": "Main content",
+      "landmark-aside": "Sidebar",
+      "landmark-footer": "Bottom of the page",
       ctaHtml: "Want a full audit, manually performed by senior experts? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
       langLabel: "Schakel naar Nederlands"
     }
@@ -357,9 +369,12 @@
     // Location
     if (link.landmark) {
       html += '<div class="tool-link__location">';
-      html += '&lt;' + escapeHtml(link.landmark.tag) + '&gt;';
+      var landmarkLabel = t("landmark-" + link.landmark.tag);
+      html += escapeHtml(landmarkLabel);
       if (link.landmark.label) {
-        html += ' "' + escapeHtml(link.landmark.label) + '"';
+        html += ' (&lt;' + escapeHtml(link.landmark.tag) + '&gt; "' + escapeHtml(link.landmark.label) + '")';
+      } else {
+        html += ' (&lt;' + escapeHtml(link.landmark.tag) + '&gt;)';
       }
       html += '</div>';
     }

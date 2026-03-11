@@ -8232,8 +8232,9 @@ html.dark .vw-faq .faq-answer {
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .tool-link__filter-btn:hover {
+  background: #A30D4B;
   border-color: #A30D4B;
-  color: #A30D4B;
+  color: #fff;
 }
 .tool-link__filter-btn--active {
   background: #A30D4B;
