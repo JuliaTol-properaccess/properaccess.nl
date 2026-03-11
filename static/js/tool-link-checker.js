@@ -68,7 +68,7 @@
       error: "Fout",
       warning: "Waarschuwing",
       // CTA
-      ctaHtml: "Wil je alle links op je hele website laten controleren? <a href=\"/contact\">Neem contact op</a> voor een complete WCAG-audit.",
+      ctaHtml: "Wil je een volledige audit, handmatig uitgevoerd door senior experts? <a href=\"/contact\">Neem contact op</a> voor een complete WCAG-audit.",
       // Toggle
       langLabel: "Switch to English"
     },
@@ -115,7 +115,7 @@
       "title-repeats-name": "The title attribute repeats the link text. Remove the redundant title attribute.",
       error: "Error",
       warning: "Warning",
-      ctaHtml: "Want to check all links across your entire website? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
+      ctaHtml: "Want a full audit, manually performed by senior experts? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
       langLabel: "Schakel naar Nederlands"
     }
   };
@@ -344,7 +344,7 @@
     // URL
     if (link.href) {
       html += '<div class="tool-link__href">';
-      html += '<span class="tool-link__href-url">' + escapeHtml(truncate(link.href, 100)) + '</span>';
+      html += '<a href="' + escapeHtml(link.href) + '" target="_blank" rel="noopener" class="tool-link__href-url">' + escapeHtml(truncate(link.href, 100)) + '</a>';
       if (link.isExternal) {
         html += '<span class="tool-link__tag tool-link__tag--external">' + t("external") + '</span>';
       }

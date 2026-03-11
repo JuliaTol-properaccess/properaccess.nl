@@ -275,23 +275,6 @@ function extractLinks(html, pageUrl) {
       });
     }
 
-    // Check: Opens in new window without indication (SC 3.2.5)
-    if (target === "_blank") {
-      const textLower = accessibleName.toLowerCase();
-      const hintPatterns = ["nieuw venster", "nieuw tabblad", "new window", "new tab", "opent in", "opens in", "extern", "external"];
-      const hasVisualHint = hintPatterns.some(p => textLower.includes(p));
-      const hasSrHint = /sr-only|visually-hidden|screen-reader/i.test(content);
-      const hasAriaDesc = getAttr(attrs, "aria-describedby") !== null;
-
-      if (!hasVisualHint && !hasSrHint && !hasAriaDesc) {
-        issues.push({
-          severity: "warning",
-          sc: "3.2.5",
-          id: "new-window-no-warning",
-        });
-      }
-    }
-
     // Check: title repeats accessible name (SC 4.1.2 / advisory)
     if (title && accessibleName && title.trim().toLowerCase() === accessibleName.trim().toLowerCase()) {
       issues.push({

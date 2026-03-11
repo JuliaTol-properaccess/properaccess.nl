@@ -8293,10 +8293,15 @@ html.dark .vw-faq .faq-answer {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-.tool-link__href-url {
+a.tool-link__href-url {
   font-size: 0.85rem;
   color: #004050;
   word-break: break-all;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a.tool-link__href-url:hover {
+  color: #A30D4B;
 }
 .tool-link__tag {
   font-size: 0.7rem;
