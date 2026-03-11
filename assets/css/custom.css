@@ -6049,6 +6049,12 @@ html.dark .tool-alt__error {
   padding: 1rem 0;
   color: #6b7280;
 }
+.tool-alt__notice {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
 
 /* Summary cards */
 

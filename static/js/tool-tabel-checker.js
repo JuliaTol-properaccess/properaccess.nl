@@ -38,6 +38,7 @@
       lblIssues: "Fouten",
       lblWarnings: "Waarschuwingen",
       noTables: "Geen tabellen gevonden op deze pagina.",
+      jsNotice: "Let op: tabellen die via JavaScript worden geladen (bijvoorbeeld door een cookie-manager of framework) worden niet gedetecteerd.",
       // Table detail
       tableNum: "Tabel",
       type: "Type",
@@ -93,6 +94,7 @@
       lblIssues: "Errors",
       lblWarnings: "Warnings",
       noTables: "No tables found on this page.",
+      jsNotice: "Note: tables rendered via JavaScript (e.g. by a cookie manager or framework) are not detected.",
       tableNum: "Table",
       type: "Type",
       dataTable: "Data table",
@@ -286,6 +288,7 @@
     // No tables
     if (data.tables.length === 0) {
       html += '<p class="tool-alt__empty">' + escapeHtml(t("noTables")) + '</p>';
+      html += '<p class="tool-alt__notice">' + escapeHtml(t("jsNotice")) + '</p>';
       return html;
     }
 

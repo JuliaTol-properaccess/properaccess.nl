@@ -36,6 +36,7 @@
       lblIssues: "Fouten",
       lblWarnings: "Waarschuwingen",
       noLinks: "Geen links gevonden op deze pagina.",
+      jsNotice: "Let op: links die via JavaScript worden geladen (bijvoorbeeld door een cookie-manager of framework) worden niet gedetecteerd.",
       // Filter
       filterAll: "Alle links",
       filterIssues: "Alleen met problemen",
@@ -89,6 +90,7 @@
       lblIssues: "Errors",
       lblWarnings: "Warnings",
       noLinks: "No links found on this page.",
+      jsNotice: "Note: links rendered via JavaScript (e.g. by a cookie manager or framework) are not detected.",
       filterAll: "All links",
       filterIssues: "Only with issues",
       colNum: "#",
@@ -281,6 +283,7 @@
     // No links
     if (data.links.length === 0) {
       html += '<p class="tool-alt__empty">' + escapeHtml(t("noLinks")) + '</p>';
+      html += '<p class="tool-alt__notice">' + escapeHtml(t("jsNotice")) + '</p>';
       return html;
     }
 
