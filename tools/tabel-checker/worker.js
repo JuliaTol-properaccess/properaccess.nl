@@ -227,9 +227,9 @@ function extractTables(html) {
         });
       }
 
-      // Check: Empty <th> (SC 2.4.6)
+      // Check: Empty <th> (SC 2.4.6) — only flag when multiple data tables on page
       const emptyTh = thElements.filter(th => !th.content);
-      if (emptyTh.length > 0) {
+      if (emptyTh.length > 0 && tableCount > 1) {
         issues.push({
           severity: "error",
           sc: "2.4.6",
