@@ -1,5 +1,5 @@
 ---
-title: "SC 1.2.2 - Wat betekent "Ondertiteling (vooraf opgenomen)""
+title: 'SC 1.2.2 - Wat betekent "Ondertiteling (vooraf opgenomen)"'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
