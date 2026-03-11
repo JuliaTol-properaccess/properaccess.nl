@@ -148,7 +148,7 @@ We checken de aangepaste onderdelen. Je krijgt een bijgewerkt rapport met de sta
 
 We hebben drie diensten. Welke past, hangt af van waar je staat.
 
-|                 | WCAG-audit | Strippenkaart | Abonnement |
+| Vergelijking    | WCAG-audit | Strippenkaart | Abonnement |
 | --------------- | ---------- | ------------- | ---------- |
 | **Wanneer**     | Je wilt een compleet beeld van een klantproject voordat het live gaat | Je hebt af en toe een vraag, een code review of een quickscan nodig | Je hebt meerdere klantprojecten per jaar die geaudit moeten worden |
 | **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Alle klantprojecten, doorlopend |

@@ -145,7 +145,7 @@ Na het doorvoeren van de verbeteringen controleren we of alles correct is opgelo
 
 We hebben drie diensten. Welke past, hangt af van waar je staat.
 
-|                 | WCAG-audit | Strippenkaart | Abonnement |
+| Vergelijking    | WCAG-audit | Strippenkaart | Abonnement |
 | --------------- | ---------- | ------------- | ---------- |
 | **Wanneer**     | Je wilt een compleet beeld van alle problemen op je webshop | Je hebt af en toe een vraag, een check of een review nodig | Je hebt meer dan 5 websites of apps die jaarlijks geaudit moeten worden |
 | **Scope**       | Volledige webshop of app, alle 55 criteria | Per vraag, per component, per sprint | Alle digitale kanalen, doorlopend |

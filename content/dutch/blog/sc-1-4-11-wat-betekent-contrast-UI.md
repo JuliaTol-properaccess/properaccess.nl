@@ -385,7 +385,7 @@ Doorloop deze lijst voor elk component:
 
 Hier halen veel mensen deze twee door elkaar:
 
-|                        | SC 1.4.3                      | SC 1.4.11                                |
+| Criterium              | SC 1.4.3                      | SC 1.4.11                                |
 | ---------------------- | ----------------------------- | ---------------------------------------- |
 | **Gaat over**          | Tekst                         | UI-componenten en graphics               |
 | **Contrast-eis**       | 4,5:1 (normaal) / 3:1 (groot) | 3:1                                      |
