@@ -214,6 +214,14 @@
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }
+
+    // Scroll to #quizSection after JS has rendered the quiz
+    if (window.location.hash === '#quizSection') {
+      setTimeout(function () {
+        var target = document.getElementById('quizSection');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
   });
 </script>
 
