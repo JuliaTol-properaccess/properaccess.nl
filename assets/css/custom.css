@@ -9020,6 +9020,21 @@ a.tool-link__href-url:hover {
   border: none;
 }
 
+.quiz__btn--start {
+  background: #A30D4B;
+  color: #fff;
+  padding: 0.9rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(163, 13, 75, 0.3);
+}
+
+.quiz__btn--start:hover {
+  background: #8a0b3f;
+  box-shadow: 0 6px 20px rgba(163, 13, 75, 0.4);
+  transform: translateY(-1px);
+}
+
 .quiz__btn--check {
   background: #A30D4B;
   color: #fff;
