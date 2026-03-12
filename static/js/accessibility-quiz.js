@@ -1169,7 +1169,8 @@
         if (ic) c += ' quiz__review-option--correct';
         else if (ws) c += ' quiz__review-option--wrong';
         var marker = ic ? '\u2713' : ws ? '\u2717' : o.l;
-        optionsHtml += '<div class="' + c + '"><span class="quiz__review-marker">' + marker + '</span><span>' + tx(o.t) + '</span></div>';
+        var markerLabel = ic ? (lang === 'nl' ? 'Juist' : 'Correct') : ws ? (lang === 'nl' ? 'Fout' : 'Incorrect') : o.l;
+        optionsHtml += '<div class="' + c + '"><span class="quiz__review-marker" aria-hidden="true">' + marker + '</span><span class="sr-only">' + markerLabel + ': </span><span>' + tx(o.t) + '</span></div>';
       });
 
       item.innerHTML = '<div class="quiz__review-item-header">' +
