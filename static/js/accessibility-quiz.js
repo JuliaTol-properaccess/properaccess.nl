@@ -6,11 +6,16 @@
   var UI = {
     nl: {
       title: 'Accessibility Quiz',
-      subtitle: '20 praktijkscenario\'s die je WCAG-kennis testen. Bekijk elke interactieve demo en broncode, en selecteer alle juiste stellingen.',
+      subtitle: 'Dit is geen beginnersvriendelijke quiz over alt-teksten. Dit is de ultieme test voor developers die beweren dat ze digitale toegankelijkheid beheersen. 20 praktijkscenario\'s met interactieve demo\'s en broncode.',
       startBtn: 'Start quiz',
       questions: 'Vragen',
-      duration: 'Duur',
+      duration: 'Geschatte tijd',
       selectType: 'Multi-select',
+      level: 'Niveau',
+      levelValue: 'Gevorderd',
+      langLabel: 'Taal',
+      langValue: 'NL / EN',
+      welcomeFeatures: '<li>Uitslag direct te zien na de quiz</li><li>Deel je uitslag met je collega\'s</li><li>Vul je e-mail in om uitgebreide uitleg te ontvangen over de fouten die je hebt gemaakt</li>',
       questionOf: 'Vraag {0} van {1}',
       checkBtn: 'Controleer antwoord',
       nextBtn: 'Volgende vraag',
@@ -44,11 +49,16 @@
     },
     en: {
       title: 'Accessibility Quiz',
-      subtitle: '20 real-world scenarios testing your WCAG knowledge. Examine each interactive demo and source code, then select all correct statements.',
+      subtitle: 'This is not a beginner-friendly quiz about alt texts. This is the ultimate test for developers who claim to know web accessibility. 20 real-world scenarios with interactive demos and source code.',
       startBtn: 'Start Quiz',
       questions: 'Questions',
-      duration: 'Duration',
+      duration: 'Estimated time',
       selectType: 'Multi-select',
+      level: 'Level',
+      levelValue: 'Advanced',
+      langLabel: 'Language',
+      langValue: 'NL / EN',
+      welcomeFeatures: '<li>See your results instantly after the quiz</li><li>Share your score with your colleagues</li><li>Enter your email to receive detailed explanations of the mistakes you made</li>',
       questionOf: 'Question {0} of {1}',
       checkBtn: 'Check Answer',
       nextBtn: 'Next Question',
@@ -646,9 +656,11 @@
       '<p class="quiz__welcome-subtitle">' + t('subtitle') + '</p>' +
       '<div class="quiz__welcome-stats">' +
       '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">20</div><div class="quiz__welcome-stat-label">' + t('questions') + '</div></div>' +
-      '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">Multi</div><div class="quiz__welcome-stat-label">' + t('selectType') + '</div></div>' +
-      '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">~25 min</div><div class="quiz__welcome-stat-label">' + t('duration') + '</div></div>' +
+      '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">~30 min</div><div class="quiz__welcome-stat-label">' + t('duration') + '</div></div>' +
+      '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">' + t('levelValue') + '</div><div class="quiz__welcome-stat-label">' + t('level') + '</div></div>' +
+      '<div class="quiz__welcome-stat"><div class="quiz__welcome-stat-num">' + t('langValue') + '</div><div class="quiz__welcome-stat-label">' + t('langLabel') + '</div></div>' +
       '</div>' +
+      '<ul class="quiz__welcome-features">' + t('welcomeFeatures') + '</ul>' +
       '<button class="quiz__btn quiz__btn--start" id="quizStartBtn">' + t('startBtn') + '</button>' +
       '</div></div>' +
       '</div>';

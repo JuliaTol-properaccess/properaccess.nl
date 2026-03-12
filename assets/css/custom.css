@@ -8680,9 +8680,33 @@ a.tool-link__href-url:hover {
 
 .quiz__welcome-stat-label {
   font-size: 0.72rem;
-  color: #9ca3af;
+  color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.quiz__welcome-features {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.quiz__welcome-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.quiz__welcome-features li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: #0e7a50;
+  font-weight: 700;
 }
 
 .quiz__start-btn {
