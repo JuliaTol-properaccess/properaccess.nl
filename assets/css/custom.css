@@ -9227,6 +9227,68 @@ a.tool-link__href-url:hover {
   flex-wrap: wrap;
 }
 
+/* ─ Share ─ */
+
+.quiz__share {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.quiz__share-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.75rem;
+}
+
+.quiz__share-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.quiz__share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  color: #1F2937;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.quiz__share-btn:hover {
+  border-color: #A30D4B;
+  background: rgba(163, 13, 75, 0.04);
+}
+
+.quiz__share-btn--linkedin:hover {
+  border-color: #0a66c2;
+  background: rgba(10, 102, 194, 0.04);
+  color: #0a66c2;
+}
+
+.quiz__share-btn--x:hover {
+  border-color: #1F2937;
+  background: rgba(31, 41, 55, 0.04);
+}
+
+.quiz__badge {
+  margin-top: 0.5rem;
+}
+
+.quiz__badge-preview {
+  margin-bottom: 0.75rem;
+}
+
 /* ─ Review ─ */
 
 .quiz__review {

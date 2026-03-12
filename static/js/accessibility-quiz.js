@@ -31,7 +31,16 @@
       scoreLabel: 'Score',
       gotCorrect: 'Je had {0} van de {1} goed',
       wrongSelections: ', met {0} foute selectie{1}',
-      quizLabel: 'Quiz'
+      quizLabel: 'Quiz',
+      shareTitle: 'Deel je resultaat',
+      shareText: 'Ik scoorde {0}% op de WCAG Accessibility Quiz van Proper Access! Test je eigen kennis:',
+      copyLink: 'Kopieer link',
+      copiedLink: 'Gekopieerd!',
+      shareLinkedIn: 'Deel op LinkedIn',
+      shareX: 'Deel op X',
+      badgeTitle: 'Badge voor je website',
+      badgeCopy: 'Kopieer HTML',
+      badgeCopied: 'Gekopieerd!'
     },
     en: {
       title: 'Accessibility Quiz',
@@ -60,7 +69,16 @@
       scoreLabel: 'Score',
       gotCorrect: 'You got {0} of {1} correct',
       wrongSelections: ', with {0} wrong selection{1}',
-      quizLabel: 'Quiz'
+      quizLabel: 'Quiz',
+      shareTitle: 'Share your result',
+      shareText: 'I scored {0}% on the WCAG Accessibility Quiz by Proper Access! Test your own knowledge:',
+      copyLink: 'Copy link',
+      copiedLink: 'Copied!',
+      shareLinkedIn: 'Share on LinkedIn',
+      shareX: 'Share on X',
+      badgeTitle: 'Badge for your website',
+      badgeCopy: 'Copy HTML',
+      badgeCopied: 'Copied!'
     }
   };
 
@@ -665,6 +683,19 @@
       '<button class="quiz__btn quiz__btn--review" id="quizReviewBtn">' + t('reviewBtn') + '</button>' +
       '<button class="quiz__btn quiz__btn--retake" id="quizRetakeBtn">' + t('retakeBtn') + '</button>' +
       '</div>' +
+      '<div class="quiz__share" id="quizShare">' +
+      '<h3 class="quiz__share-title">' + t('shareTitle') + '</h3>' +
+      '<div class="quiz__share-buttons">' +
+      '<button class="quiz__share-btn quiz__share-btn--copy" id="quizCopyLink"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> ' + t('copyLink') + '</button>' +
+      '<button class="quiz__share-btn quiz__share-btn--linkedin" id="quizShareLinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> ' + t('shareLinkedIn') + '</button>' +
+      '<button class="quiz__share-btn quiz__share-btn--x" id="quizShareX"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> ' + t('shareX') + '</button>' +
+      '</div>' +
+      '<div class="quiz__badge">' +
+      '<h3 class="quiz__share-title">' + t('badgeTitle') + '</h3>' +
+      '<div class="quiz__badge-preview" id="quizBadgePreview"></div>' +
+      '<button class="quiz__share-btn quiz__share-btn--copy" id="quizCopyBadge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> ' + t('badgeCopy') + '</button>' +
+      '</div>' +
+      '</div>' +
       '</div></div>' +
       '</div>';
   }
@@ -1016,6 +1047,66 @@
       retakeBtn.textContent = t('retakeBtn');
       retakeBtn.onclick = null;
       retakeBtn.addEventListener('click', resetQuiz);
+    }
+
+    // Share functionality
+    var quizUrl = 'https://www.properaccess.nl/digital-agency/#quizSection';
+    var shareUrl = quizUrl + '?score=' + sc;
+    var shareMsg = t('shareText').replace('{0}', sc);
+
+    // Copy link
+    var copyBtn = el('quizCopyLink');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
+        navigator.clipboard.writeText(shareMsg + ' ' + shareUrl).then(function () {
+          copyBtn.querySelector('svg').nextSibling.textContent = ' ' + t('copiedLink');
+          setTimeout(function () {
+            copyBtn.querySelector('svg').nextSibling.textContent = ' ' + t('copyLink');
+          }, 2000);
+        });
+      });
+    }
+
+    // LinkedIn
+    var liBtn = el('quizShareLinkedIn');
+    if (liBtn) {
+      liBtn.addEventListener('click', function () {
+        window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl), '_blank', 'width=600,height=500');
+      });
+    }
+
+    // X/Twitter
+    var xBtn = el('quizShareX');
+    if (xBtn) {
+      xBtn.addEventListener('click', function () {
+        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareMsg) + '&url=' + encodeURIComponent(shareUrl), '_blank', 'width=600,height=500');
+      });
+    }
+
+    // Badge
+    var badgePreview = el('quizBadgePreview');
+    var badgeColor = sc >= 80 ? '#0e7a50' : sc >= 50 ? '#92400e' : '#b91c1c';
+    var badgeLabel = sc >= 80 ? (lang === 'nl' ? 'Uitstekend' : 'Excellent') : sc >= 50 ? (lang === 'nl' ? 'Goed' : 'Good') : (lang === 'nl' ? 'Beginner' : 'Beginner');
+    var badgeHtml = '<a href="' + quizUrl + '" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none;font-family:sans-serif;">' +
+      '<div style="border:2px solid ' + badgeColor + ';border-radius:8px;padding:12px 20px;text-align:center;background:#fff;">' +
+      '<div style="font-size:11px;color:#6b7280;margin-bottom:4px;">WCAG Accessibility Quiz</div>' +
+      '<div style="font-size:28px;font-weight:800;color:' + badgeColor + ';">' + sc + '%</div>' +
+      '<div style="font-size:12px;font-weight:600;color:' + badgeColor + ';">' + badgeLabel + '</div>' +
+      '<div style="font-size:10px;color:#6b7280;margin-top:6px;">properaccess.nl</div>' +
+      '</div></a>';
+
+    if (badgePreview) badgePreview.innerHTML = badgeHtml;
+
+    var copyBadgeBtn = el('quizCopyBadge');
+    if (copyBadgeBtn) {
+      copyBadgeBtn.addEventListener('click', function () {
+        navigator.clipboard.writeText(badgeHtml).then(function () {
+          copyBadgeBtn.querySelector('svg').nextSibling.textContent = ' ' + t('badgeCopied');
+          setTimeout(function () {
+            copyBadgeBtn.querySelector('svg').nextSibling.textContent = ' ' + t('badgeCopy');
+          }, 2000);
+        });
+      });
     }
 
     showScreen('results');
