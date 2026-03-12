@@ -8749,7 +8749,7 @@ a.tool-link__href-url:hover {
 .quiz__topbar-label {
   font-size: 0.78rem;
   font-weight: 700;
-  color: #9ca3af;
+  color: #6b7280;
   white-space: nowrap;
 }
 
@@ -8854,7 +8854,7 @@ a.tool-link__href-url:hover {
   padding: 0.6rem 1.2rem;
   font-size: 0.78rem;
   font-weight: 600;
-  color: #9ca3af;
+  color: #6b7280;
   cursor: pointer;
   border: none;
   background: none;
@@ -8972,7 +8972,7 @@ a.tool-link__href-url:hover {
   border-radius: 6px;
   background: #fff;
   border: 1px solid #e5e7eb;
-  color: #9ca3af;
+  color: #6b7280;
   flex-shrink: 0;
   margin-top: 1px;
   transition: all 0.2s;
@@ -9436,7 +9436,7 @@ a.tool-link__href-url:hover {
 }
 
 .quiz__review-chevron {
-  color: #9ca3af;
+  color: #6b7280;
   transition: transform 0.2s;
   font-size: 0.8rem;
   margin-left: auto;
@@ -9499,7 +9499,7 @@ a.tool-link__href-url:hover {
   margin-top: 1px;
   background: #f3f4f6;
   border: 1px solid #e5e7eb;
-  color: #9ca3af;
+  color: #6b7280;
 }
 
 .quiz__review-option--correct .quiz__review-marker {
