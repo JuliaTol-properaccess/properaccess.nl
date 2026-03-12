@@ -715,7 +715,7 @@
       '<h3 class="quiz__share-title">' + t('emailCtaTitle') + '</h3>' +
       '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
       '<div class="quiz__email-form" id="quizEmailForm">' +
-      '<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cB8RFtdtzyAaSGJXCCBBIEE9jAZYqCwwwsDq0eflc8So66xJFxYhR1vZPar2Am4EcH"><script src="https://webforms.pipedrive.com/f/loader"><\/script></div>' +
+      '<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cB8RFtdtzyAaSGJXCCBBIEE9jAZYqCwwwsDq0eflc8So66xJFxYhR1vZPar2Am4EcH"></div>' +
       '</div>' +
       '</div>' +
       '</div>' +
@@ -1130,6 +1130,14 @@
           }, 2000);
         });
       });
+    }
+
+    // Load Pipedrive form script dynamically (innerHTML doesn't execute <script> tags)
+    var pdContainer = document.querySelector('#quizEmailForm .pipedriveWebForms');
+    if (pdContainer) {
+      var s = document.createElement('script');
+      s.src = 'https://webforms.pipedrive.com/f/loader';
+      pdContainer.appendChild(s);
     }
 
     showScreen('results');
