@@ -650,7 +650,7 @@
   function renderResults() {
     return '<div class="quiz__screen" data-screen="results">' +
       '<div class="quiz__results"><div class="quiz__results-card">' +
-      '<div class="quiz__results-title">' + t('resultsTitle') + '</div>' +
+      '<h2 class="quiz__results-title">' + t('resultsTitle') + '</h2>' +
       '<div class="quiz__results-subtitle" id="quizResultsSubtitle"></div>' +
       '<div class="quiz__score-ring">' +
       '<svg viewBox="0 0 140 140"><circle class="quiz__score-ring-bg" cx="70" cy="70" r="65"/><circle class="quiz__score-ring-fill" id="quizScoreRing" cx="70" cy="70" r="65"/></svg>' +
@@ -758,12 +758,12 @@
 
     html += '<div class="quiz__demo-container">';
     if (hasDemo) {
-      html += '<div class="quiz__demo-tabs">' +
-        '<button class="quiz__demo-tab quiz__demo-tab--active" data-tab="preview">' + t('previewTab') + '</button>' +
-        '<button class="quiz__demo-tab" data-tab="code">' + t('codeTab') + '</button>' +
+      html += '<div class="quiz__demo-tabs" role="tablist">' +
+        '<button class="quiz__demo-tab quiz__demo-tab--active" data-tab="preview" role="tab" aria-selected="true" aria-controls="quizDemoPreview">' + t('previewTab') + '</button>' +
+        '<button class="quiz__demo-tab" data-tab="code" role="tab" aria-selected="false" aria-controls="quizDemoCode">' + t('codeTab') + '</button>' +
         '</div>' +
-        '<div class="quiz__demo-preview" id="quizDemoPreview">' + q.demo + '</div>' +
-        '<div class="quiz__demo-code" id="quizDemoCode" style="display:none"><pre>' + q.code + '</pre></div>';
+        '<div class="quiz__demo-preview" id="quizDemoPreview" role="tabpanel">' + q.demo + '</div>' +
+        '<div class="quiz__demo-code" id="quizDemoCode" role="tabpanel" style="display:none"><pre>' + q.code + '</pre></div>';
     } else {
       html += '<div class="quiz__demo-tabs">' +
         '<button class="quiz__demo-tab quiz__demo-tab--active">' + t('codeTab') + '</button>' +
@@ -774,7 +774,7 @@
 
     html += '<div class="quiz__prompt">' + tx(q.prompt) + '</div>';
 
-    html += '<div class="quiz__options" id="quizOptions">';
+    html += '<div class="quiz__options" id="quizOptions" role="group" aria-label="' + tx(q.prompt) + '">';
     q.options.forEach(function (o) {
       var c = 'quiz__option';
       if (s.done) {
@@ -784,7 +784,11 @@
       } else if (s.sel.indexOf(o.l) !== -1) {
         c += ' quiz__option--selected';
       }
-      html += '<button class="' + c + '" data-letter="' + o.l + '">' +
+      var isSelected = s.sel.indexOf(o.l) !== -1;
+      html += '<button class="' + c + '" data-letter="' + o.l + '"' +
+        ' role="checkbox"' +
+        ' aria-checked="' + (isSelected ? 'true' : 'false') + '"' +
+        '>' +
         '<span class="quiz__option-letter">' + o.l + '</span>' +
         '<span class="quiz__option-text">' + tx(o.t) + '</span>' +
         '</button>';
@@ -841,8 +845,10 @@
         var allTabs = this.parentNode.querySelectorAll('.quiz__demo-tab');
         for (var j = 0; j < allTabs.length; j++) {
           allTabs[j].classList.remove('quiz__demo-tab--active');
+          allTabs[j].setAttribute('aria-selected', 'false');
         }
         this.classList.add('quiz__demo-tab--active');
+        this.setAttribute('aria-selected', 'true');
         var preview = el('quizDemoPreview');
         var code = el('quizDemoCode');
         if (preview) preview.style.display = tab === 'preview' ? 'flex' : 'none';
@@ -864,9 +870,11 @@
           if (idx !== -1) {
             s.sel.splice(idx, 1);
             this.classList.remove('quiz__option--selected');
+            this.setAttribute('aria-checked', 'false');
           } else {
             s.sel.push(letter);
             this.classList.add('quiz__option--selected');
+            this.setAttribute('aria-checked', 'true');
           }
           var ck = el('quizCheckBtn');
           if (ck) ck.disabled = s.sel.length === 0;
