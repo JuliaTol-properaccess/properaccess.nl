@@ -5165,6 +5165,27 @@ html.dark .tool-pdf__gate-error {
   color: #e8a0ba;
 }
 
+.tool-pdf__gate-pipedrive {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tool-pdf__gate-trial-text {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+
+html.dark .tool-pdf__gate-trial-text {
+  color: #e5e7eb;
+}
+
+html.dark .tool-pdf__gate-pipedrive {
+  border-top-color: #374151;
+}
+
 /* Intro */
 
 .tool-pdf__intro {

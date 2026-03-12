@@ -21,8 +21,19 @@
   // Override gate text for token-based auth
   var gateText = gate.querySelector(".tool-pdf__gate-text");
   if (gateText) {
-    gateText.innerHTML = 'Voer je toegangscode in om deze tool te gebruiken. Nog geen code? <a href="/contact/">Vraag een gratis proefperiode aan</a>.';
+    gateText.innerHTML = 'Voer je toegangscode in om deze tool te gebruiken.';
   }
+
+  // Add Pipedrive trial request form below the gate form
+  var pipedriveDiv = document.createElement("div");
+  pipedriveDiv.className = "tool-pdf__gate-pipedrive";
+  pipedriveDiv.innerHTML = '<p class="tool-pdf__gate-trial-text">Nog geen toegangscode? Vraag een gratis proefperiode aan:</p><div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/64N7ZUIRvh9l9baGMVG5oIYNSkmvQkHGXkpCPbIXawnXZwbXPoCdYjjXEYasegH36b"></div>';
+  gate.appendChild(pipedriveDiv);
+
+  // Load Pipedrive script
+  var pdScript = document.createElement("script");
+  pdScript.src = "https://webforms.pipedrive.com/f/loader";
+  document.body.appendChild(pdScript);
   if (input) {
     input.type = "text";
     input.placeholder = "Toegangscode";
