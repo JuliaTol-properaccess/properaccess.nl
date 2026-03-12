@@ -11,21 +11,15 @@
       </div>
       <div class="footer-optin__form">
         <h3 class="footer-optin__form-title">Aanmelden nieuwsbrief</h3>
-        <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/6iEymi0dYMAbkRAIcYyl8oAmUKDtyCqTBtpNApG9yI0mwFurNvMzWMuW2GvRUHtcUH">
-          <script src="https://webforms.pipedrive.com/f/loader"></script>
-        </div>
-        <script>
-          (function() {
-            var observer = new MutationObserver(function(mutations, obs) {
-              var emailInput = document.querySelector('.pipedriveWebForms input[type="email"]');
-              if (emailInput) {
-                emailInput.setAttribute('autocomplete', 'email');
-                obs.disconnect();
-              }
-            });
-            observer.observe(document.querySelector('.pipedriveWebForms'), { childList: true, subtree: true });
-          })();
-        </script>
+        <form id="newsletter-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'nieuwsbrief', successMessage: 'Je bent aangemeld!' });">
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+          <div class="pa-form__row">
+            <label for="newsletter-email" class="sr-only">E-mailadres</label>
+            <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="Je e-mailadres" class="pa-form__input" />
+            <button type="submit" class="pa-form__btn">Aanmelden</button>
+          </div>
+          <div role="status" aria-live="polite"></div>
+        </form>
       </div>
     </div>
   </div>
@@ -105,6 +99,7 @@
 </footer>
 <!-- custom navigation script -->
 <script src="{{ "js/navigation.js" | relURL }}" defer></script>
+<script src="{{ "js/form-submit.js" | relURL }}" defer></script>
 <!-- Pipedrive Leadfeeder visitor tracking -->
 <script>
   (function(ss,ex){

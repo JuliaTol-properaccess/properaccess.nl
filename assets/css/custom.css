@@ -9599,3 +9599,72 @@ a.tool-link__href-url:hover {
   .quiz__demo-code { padding: 0.75rem 1rem; }
   .quiz__demo-code pre { font-size: 0.72rem; }
 }
+
+/* ─── Shared form styles (pa-form) ─── */
+
+.pa-form__row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pa-form__input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border: 1px solid #6B7280;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.pa-form__input:focus {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+  border-color: #A30D4B;
+}
+
+.pa-form__btn {
+  padding: 0.65rem 1.25rem;
+  background: #A30D4B;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pa-form__btn:hover {
+  background: #8a0b3f;
+}
+
+.pa-form__btn:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+}
+
+.pa-form__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pa-form__status {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pa-form__status--success {
+  color: #0e7a50;
+}
+
+.pa-form__status--error {
+  color: #b91c1c;
+}
+
+@media (max-width: 480px) {
+  .pa-form__row {
+    flex-direction: column;
+  }
+}

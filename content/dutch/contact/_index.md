@@ -37,9 +37,8 @@ url: "/contact/"
 
 {{< section-full title="Of stuur een bericht" id="formulier" >}}
 
-<form id="contact-form" action="https://formspree.io/f/xjgeyqej" method="POST" class="contact-form" style="max-width: 600px;">
+<form id="contact-form" class="contact-form" style="max-width: 600px;" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
   <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-  <input type="hidden" name="_subject" value="Nieuw contactformulier bericht" />
 
   <div style="margin-bottom: 1.25rem;">
     <label for="contact-name" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">Naam <span aria-label="verplicht">*</span></label>
@@ -58,7 +57,7 @@ url: "/contact/"
 
   <button type="submit" class="btn btn-primary">Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
 
-  <div id="contact-form-status" role="status" aria-live="polite" style="margin-top: 1rem;"></div>
+  <div role="status" aria-live="polite" style="margin-top: 1rem;"></div>
 </form>
 
 {{< /section-full >}}

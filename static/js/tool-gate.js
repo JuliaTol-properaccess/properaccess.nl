@@ -24,16 +24,20 @@
     gateText.innerHTML = 'Voer je toegangscode in om deze tool te gebruiken.';
   }
 
-  // Add Pipedrive trial request form below the gate form
-  var pipedriveDiv = document.createElement("div");
-  pipedriveDiv.className = "tool-pdf__gate-pipedrive";
-  pipedriveDiv.innerHTML = '<p class="tool-pdf__gate-trial-text">Nog geen toegangscode? Vraag een gratis proefperiode aan:</p><div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/64N7ZUIRvh9l9baGMVG5oIYNSkmvQkHGXkpCPbIXawnXZwbXPoCdYjjXEYasegH36b"></div>';
-  gate.appendChild(pipedriveDiv);
-
-  // Load Pipedrive script
-  var pdScript = document.createElement("script");
-  pdScript.src = "https://webforms.pipedrive.com/f/loader";
-  document.body.appendChild(pdScript);
+  // Add trial request form below the gate form
+  var trialDiv = document.createElement("div");
+  trialDiv.className = "tool-pdf__gate-pipedrive";
+  trialDiv.innerHTML = '<p class="tool-pdf__gate-trial-text">Nog geen toegangscode? Vraag een gratis proefperiode aan:</p>' +
+    '<form id="trial-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'tool-proefperiode\', successMessage: \'Aanvraag ontvangen! We nemen contact op.\' });">' +
+    '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
+    '<div class="pa-form__row">' +
+    '<label for="trial-email" class="sr-only">E-mailadres</label>' +
+    '<input type="email" id="trial-email" name="email" required autocomplete="email" placeholder="Je e-mailadres" class="pa-form__input" />' +
+    '<button type="submit" class="pa-form__btn">Aanvragen</button>' +
+    '</div>' +
+    '<div role="status" aria-live="polite"></div>' +
+    '</form>';
+  gate.appendChild(trialDiv);
   if (input) {
     input.type = "text";
     input.placeholder = "Toegangscode";

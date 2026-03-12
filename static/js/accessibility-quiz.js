@@ -715,7 +715,15 @@
       '<h3 class="quiz__share-title">' + t('emailCtaTitle') + '</h3>' +
       '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
       '<div class="quiz__email-form" id="quizEmailForm">' +
-      '<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cB8RFtdtzyAaSGJXCCBBIEE9jAZYqCwwwsDq0eflc8So66xJFxYhR1vZPar2Am4EcH"></div>' +
+      '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz\', successMessage: \'' + (lang === 'nl' ? 'Verstuurd! Je ontvangt de uitleg per e-mail.' : 'Sent! You will receive the explanation by email.') + '\' });">' +
+      '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
+      '<div class="pa-form__row">' +
+      '<label for="quiz-email" class="sr-only">' + (lang === 'nl' ? 'E-mailadres' : 'Email address') + '</label>' +
+      '<input type="email" id="quiz-email" name="email" required autocomplete="email" placeholder="' + (lang === 'nl' ? 'Je e-mailadres' : 'Your email address') + '" class="pa-form__input" />' +
+      '<button type="submit" class="pa-form__btn">' + (lang === 'nl' ? 'Verstuur' : 'Send') + '</button>' +
+      '</div>' +
+      '<div role="status" aria-live="polite"></div>' +
+      '</form>' +
       '</div>' +
       '</div>' +
       '</div>' +
@@ -1130,14 +1138,6 @@
           }, 2000);
         });
       });
-    }
-
-    // Load Pipedrive form script dynamically (innerHTML doesn't execute <script> tags)
-    var pdContainer = document.querySelector('#quizEmailForm .pipedriveWebForms');
-    if (pdContainer) {
-      var s = document.createElement('script');
-      s.src = 'https://webforms.pipedrive.com/f/loader';
-      pdContainer.appendChild(s);
     }
 
     showScreen('results');

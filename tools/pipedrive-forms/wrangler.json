@@ -1,0 +1,5 @@
+{
+  "name": "pipedrive-forms",
+  "main": "worker.js",
+  "compatibility_date": "2026-03-12"
+}
