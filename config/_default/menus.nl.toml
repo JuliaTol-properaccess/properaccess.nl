@@ -91,6 +91,19 @@ weight = 4
 name = "Tools"
 url = "/tools"
 weight = 5
+hasChildren = true
+
+[[main]]
+parent = "Tools"
+name = "Alle tools"
+url = "/tools"
+weight = 1
+
+[[main]]
+parent = "Tools"
+name = "Quiz: Developers"
+url = "/tools/quiz-developers"
+weight = 2
 
 [[main]]
 name = "Academy"

@@ -111,6 +111,14 @@ We begrijpen hoe jullie werken: in sprints, met deadlines, met klanten die vrage
 
 {{< /offerte-section >}}
 
+{{< section-cta >}}
+
+Test de WCAG-kennis van je developers met onze Accessibility Quiz — 20 praktijkscenario's op gevorderd niveau.
+
+[Doe de quiz →](/tools/quiz-developers/)
+
+{{< /section-cta >}}
+
 {{< section-cards title="Hoe het werkt" columns="3" bg="dark" >}}
 {{< section-card title="1. Kennismaking" >}}
 
