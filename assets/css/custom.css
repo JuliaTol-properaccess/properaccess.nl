@@ -8690,7 +8690,7 @@ a.tool-link__href-url:hover {
   list-style: none;
   padding: 0;
   margin: 1.25rem auto 1.5rem;
-  display: inline-block;
+  max-width: 28rem;
 }
 
 .quiz__welcome-features li {
