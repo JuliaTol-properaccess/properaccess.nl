@@ -8689,7 +8689,8 @@ a.tool-link__href-url:hover {
   text-align: left;
   list-style: none;
   padding: 0;
-  margin: 1.25rem 0 1.5rem;
+  margin: 1.25rem auto 1.5rem;
+  display: inline-block;
 }
 
 .quiz__welcome-features li {
