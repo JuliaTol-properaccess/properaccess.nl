@@ -45,7 +45,9 @@
       shareX: 'Deel op X',
       badgeTitle: 'Badge voor je website',
       badgeCopy: 'Kopieer HTML',
-      badgeCopied: 'Gekopieerd!'
+      badgeCopied: 'Gekopieerd!',
+      emailCtaTitle: 'Ontvang uitleg over je fouten',
+      emailCtaDesc: 'Vul je e-mailadres in en we sturen je een uitgebreide uitleg over de vragen die je fout had, inclusief de relevante WCAG-succescriteria.'
     },
     en: {
       title: 'Accessibility Quiz',
@@ -88,7 +90,9 @@
       shareX: 'Share on X',
       badgeTitle: 'Badge for your website',
       badgeCopy: 'Copy HTML',
-      badgeCopied: 'Copied!'
+      badgeCopied: 'Copied!',
+      emailCtaTitle: 'Get explanations for your mistakes',
+      emailCtaDesc: 'Enter your email and we\'ll send you a detailed explanation of the questions you got wrong, including the relevant WCAG success criteria.'
     }
   };
 
@@ -706,6 +710,13 @@
       '<h3 class="quiz__share-title">' + t('badgeTitle') + '</h3>' +
       '<div class="quiz__badge-preview" id="quizBadgePreview"></div>' +
       '<button class="quiz__share-btn quiz__share-btn--copy" id="quizCopyBadge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> ' + t('badgeCopy') + '</button>' +
+      '</div>' +
+      '<div class="quiz__email-cta">' +
+      '<h3 class="quiz__share-title">' + t('emailCtaTitle') + '</h3>' +
+      '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
+      '<div class="quiz__email-form" id="quizEmailForm">' +
+      '<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cB8RFtdtzyAaSGJXCCBBIEE9jAZYqCwwwsDq0eflc8So66xJFxYhR1vZPar2Am4EcH"><script src="https://webforms.pipedrive.com/f/loader"><\/script></div>' +
+      '</div>' +
       '</div>' +
       '</div>' +
       '</div></div>' +
