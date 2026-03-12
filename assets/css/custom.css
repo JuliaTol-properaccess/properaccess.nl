@@ -9390,9 +9390,14 @@ a.tool-link__href-url:hover {
   gap: 0.75rem;
   padding: 1rem 1.25rem;
   background: #f9fafb;
+  border: none;
   border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
   transition: background 0.2s;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
 }
 
 .quiz__review-item-header:hover {

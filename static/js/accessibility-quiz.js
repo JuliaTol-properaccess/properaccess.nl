@@ -1173,12 +1173,12 @@
         optionsHtml += '<div class="' + c + '"><span class="quiz__review-marker" aria-hidden="true">' + marker + '</span><span class="sr-only">' + markerLabel + ': </span><span>' + tx(o.t) + '</span></div>';
       });
 
-      item.innerHTML = '<div class="quiz__review-item-header">' +
+      item.innerHTML = '<button class="quiz__review-item-header" aria-expanded="false">' +
         '<span class="quiz__review-item-num">Q' + q.id + '</span>' +
         '<span class="quiz__review-badge quiz__review-badge--' + (s.res || 'wrong') + '">' + resLabel + '</span>' +
-        '<span class="quiz__review-chevron">\u25b6</span>' +
-        '</div>' +
-        '<div class="quiz__review-item-body">' +
+        '<span class="quiz__review-chevron" aria-hidden="true">\u25b6</span>' +
+        '</button>' +
+        '<div class="quiz__review-item-body" role="region">' +
         '<div class="quiz__review-scenario">' + tx(q.scenario) + '</div>' +
         optionsHtml +
         '<div class="quiz__review-explanation">' + tx(q.explanation) + '</div>' +
@@ -1186,7 +1186,8 @@
 
       var header = item.querySelector('.quiz__review-item-header');
       header.addEventListener('click', function () {
-        this.parentNode.classList.toggle('quiz__review-item--open');
+        var isOpen = this.parentNode.classList.toggle('quiz__review-item--open');
+        this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
 
       list.appendChild(item);
