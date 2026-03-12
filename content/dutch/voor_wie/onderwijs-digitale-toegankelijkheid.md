@@ -102,7 +102,7 @@ Onze oprichter was 9 jaar ontwikkelaar bij de Rechtspraak, waar ze werkte met co
 We snappen dat een onderwijsinstelling geen gewone website is. Je hebt te maken met meerdere platformen, externe leveranciers, honderden content-auteurs en een IT-afdeling die al overvol zit. Daarom bieden we verschillende instapniveaus.
 
 - **Quickscan — weet waar je staat (€ 19)** — We checken je belangrijkste platform handmatig en geven je een risico-overzicht op 1 A4. Ideaal als je nog niet weet hoe groot het probleem is.
-- **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen.
+- **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
 - **Content-audit voor redacties en docenten** — We auditen een steekproef van jullie content en leveren concrete richtlijnen op die je hele organisatie kan toepassen.
 - **Retest na verbetering** — Verbeteringen doorgevoerd? We controleren of alles goed is opgelost.
 - **Nabespreking** — Een uur met je team om het rapport door te nemen, vragen te beantwoorden en prioriteiten te bepalen.

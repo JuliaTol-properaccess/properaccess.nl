@@ -93,7 +93,7 @@ Herken je een van deze problemen? Start met een Quickscan — binnen 2 werkdagen
 Een museum heeft andere uitdagingen dan een theater, en een festival andere dan een sportorganisatie. Wij kennen die verschillen en passen onze aanpak aan.
 
 - **We testen het hele bezoekerspad** — niet alleen je homepage. We doorlopen alles wat een bezoeker doet: programma bekijken, kaartjes kopen, collectie doorzoeken, video's bekijken, nieuwsbrief aanmelden, contact opnemen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
-- **Je krijgt concrete oplossingen per element** — per bevinding een screenshot, een uitleg van het probleem, de impact op je bezoekers en een concrete oplossing in code.
+- **Je krijgt concrete oplossingen per element** — per bevinding een screenshot, een uitleg van het probleem, de impact op je bezoekers en een concrete oplossing in code. [Bekijk een voorbeeldrapport van een museumwebsite](https://audit2026.properaccess.nl/202512_museumvereniging_retest/).
 - **We denken mee over externe tools** — ticketingplatform, kalenderwidget, CMS — je bent vaak afhankelijk van externe partijen. We helpen je met die partijen in gesprek te gaan, of geven alternatieven als iets echt niet toegankelijk te krijgen is.
 - **Je kunt onbeperkt vragen stellen** — het rapport is het begin. Je team gaat aan de slag met de verbeteringen en er komen vragen. Die beantwoorden we — via e-mail, telefoon of videocall, zonder meerkosten.
 

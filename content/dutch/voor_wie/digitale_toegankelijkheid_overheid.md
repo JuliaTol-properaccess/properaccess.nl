@@ -105,7 +105,7 @@ Je hebt geen audit nodig die eindigt met "succes ermee". Je hebt iemand nodig di
 Onze audits zijn volledig conform WCAG 2.2 (niveau A + AA) en de richtlijnen van DigiToegankelijk. Maar veel belangrijker: je krijgt een rapport waar je team mee aan de slag kan.
 
 - **Volledige toetsing** van je website of app — 200+ controlepunten per pagina, handmatig getest met screenreaders, toetsenbord en andere hulpsoftware.
-- **Rapport per pagina en per element** — niet per abstract succescriterium. Met screenshots, annotaties en code-snippets met oplossingen.
+- **Rapport per pagina en per element** — niet per abstract succescriterium. Met screenshots, annotaties en code-snippets met oplossingen. [Bekijk een voorbeeldrapport van een overheidswebsite](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
 - **Prioritering** — wat moet eerst, wat kan later? Inclusief kostenbesparende keuzes binnen de standaard.
 - **Begeleiding bij vervolgstappen** — rapportbespreking met je team, begeleiding bij je toegankelijkheidsverklaring, ondersteuning in DigiToegankelijk en DIP.
 - **Onbeperkt vragen stellen** — ook weken of maanden na oplevering. We blijven betrokken totdat het goed zit.

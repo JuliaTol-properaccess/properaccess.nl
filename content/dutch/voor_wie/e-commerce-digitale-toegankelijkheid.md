@@ -102,7 +102,7 @@ Herken je een van deze problemen? Start met een Quickscan — binnen 2 werkdagen
 Wij hebben 900+ audits uitgevoerd sinds 2019, waaronder voor grote e-commerce spelers. We kennen de typische valkuilen van elk platform — van Shopify tot Magento, WooCommerce tot maatwerkoplossingen.
 
 - **We toetsen de volledige klantreis** — van productzoeken en filteren tot winkelwagen, checkout en betaalprocessen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
-- **Rapport per pagina en per element** — met screenshots, concrete code-snippets en prioritering. Je developers weten precies wat ze moeten doen.
+- **Rapport per pagina en per element** — met screenshots, concrete code-snippets en prioritering. Je developers weten precies wat ze moeten doen. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
 - **We denken mee over implementatie** — welke quick wins leveren de meeste impact? Wat kan je zelf oplossen? Waar heb je je platformleverancier voor nodig?
 - **Onbeperkt vragen stellen** — ook na oplevering van het rapport blijven we bereikbaar. Via e-mail, telefoon of videocall, zonder meerkosten.
 
