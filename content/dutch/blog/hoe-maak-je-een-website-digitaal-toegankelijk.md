@@ -20,6 +20,10 @@ keywords:
   - eaa digitale toegankelijkheid
   - waar beginnen digitale toegankelijkheid
   - toegankelijkheidsaudit kosten
+  - toegankelijkheid website verplicht
+  - wcag wetgeving
+  - wcag wet
+  - wcag verplicht
 aliases:
   - /hoe-maak-je-een-website-digitaal-toegankelijk/
 ---
@@ -162,11 +166,15 @@ Dit is waar de kosten het meest variëren. Factoren die meespelen:
 
 Ja. WCAG 2.1 is nog steeds een geldige standaard. Maar omdat WCAG 2.2 achterwaarts compatibel is (alles uit 2.1 zit ook in 2.2), adviseer ik om direct op 2.2 te toetsen. Dan hoef je straks niet opnieuw te beginnen als de wetgeving wordt bijgewerkt.
 
-### Moet ik aan WCAG voldoen?
+### Is toegankelijkheid van een website verplicht?
 
-Als je onder de EAA valt (meer dan 10 medewerkers of meer dan 2 miljoen euro omzet), dan moet je website toegankelijk zijn. De EAA verwijst naar de Europese norm EN 301 549, die op haar beurt verwijst naar WCAG.
+Kort gezegd: ja, voor de meeste organisaties is WCAG verplicht. De wetgeving verschilt per sector:
 
-Voor overheidswebsites geldt het Besluit digitale overheid (Bdo), met vergelijkbare eisen.
+- **Bedrijfsleven:** de European Accessibility Act (EAA) is de WCAG-wet voor het bedrijfsleven. Als je meer dan 10 medewerkers hebt of meer dan 2 miljoen euro omzet, dan is de toegankelijkheid van je website verplicht sinds juni 2025. De EAA verwijst naar de Europese norm EN 301 549, die op haar beurt verwijst naar WCAG.
+- **Overheid:** het Besluit digitale overheid (Bdo) verplicht overheidswebsites al langer om aan WCAG te voldoen.
+- **Semipublieke sector:** organisaties in het onderwijs, de zorg en de cultuursector vallen vaak onder de EAA of het Bdo, afhankelijk van hun financiering en rechtsvorm.
+
+De WCAG-wetgeving is dus geen optie meer — het is een verplichting. Hoe eerder je begint, hoe minder het kost.
 
 ### Kan ik dit niet gewoon met een tool oplossen?
 
