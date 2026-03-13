@@ -106,6 +106,12 @@ url = "/tools/quiz-developers"
 weight = 2
 
 [[main]]
+parent = "Tools"
+name = "Quiz: Webredactie"
+url = "/tools/quiz-webredactie"
+weight = 3
+
+[[main]]
 name = "Academy"
 url = "/academy"
 weight = 6
