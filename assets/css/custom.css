@@ -4125,6 +4125,82 @@ html.dark .tool-card__cta-link {
 }
 
 
+/* ─── Recent posts (homepage) ─── */
+
+.hp-recent__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hp-recent__grid { grid-template-columns: 1fr; }
+}
+
+.hp-recent__card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.hp-recent__card:hover {
+  border-color: #A30D4B;
+  box-shadow: 0 2px 12px rgba(163, 13, 75, 0.08);
+}
+
+.hp-recent__image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.hp-recent__image--placeholder svg {
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+
+.hp-recent__body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hp-recent__date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.hp-recent__title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.hp-recent__desc {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
 /* ─── Articles (Recente artikelen) ─── */
 
 .hp-articles__grid {

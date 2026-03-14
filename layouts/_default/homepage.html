@@ -529,6 +529,50 @@
 </section>
 
 
+<!-- ─── LAATSTE BLOGPOSTS ─── -->
+{{ $recentPosts := first 3 (sort (where site.RegularPages "Section" "blog") "Date" "desc") }}
+{{ if $recentPosts }}
+<section class="section hp-recent">
+  <div class="container">
+    <h2 class="hp-section-title">Recente artikelen</h2>
+    <div class="hp-recent__grid">
+      {{ range $recentPosts }}
+        <a href="{{ .RelPermalink }}" class="hp-recent__card">
+          {{ with .Params.image }}
+            <div class="hp-recent__image">
+              <img src="{{ . | relURL }}" alt="" loading="lazy">
+            </div>
+          {{ else }}
+            <div class="hp-recent__image hp-recent__image--placeholder" aria-hidden="true">
+              <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#f5f5f5"/>
+                <rect x="40" y="60" width="320" height="8" rx="4" fill="#e5e7eb"/>
+                <rect x="40" y="80" width="260" height="8" rx="4" fill="#e5e7eb"/>
+                <rect x="40" y="100" width="200" height="8" rx="4" fill="#e5e7eb"/>
+                <rect x="40" y="130" width="80" height="6" rx="3" fill="#d1d5db"/>
+              </svg>
+            </div>
+          {{ end }}
+          <div class="hp-recent__body">
+            <time class="hp-recent__date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "2 January 2006" }}
+            </time>
+            <h3 class="hp-recent__title">{{ .Title }}</h3>
+            {{ with .Description }}
+              <p class="hp-recent__desc">{{ . }}</p>
+            {{ end }}
+          </div>
+        </a>
+      {{ end }}
+    </div>
+    <p class="hp-section-cta">
+      <a href="/blog/" class="hp-link-arrow">Alle artikelen &rarr;</a>
+    </p>
+  </div>
+</section>
+{{ end }}
+
+
 <!-- ─── RECENTE ARTIKELEN ─── -->
 {{ $allBlog := where site.RegularPages "Section" "blog" }}
 <section class="section hp-articles">
