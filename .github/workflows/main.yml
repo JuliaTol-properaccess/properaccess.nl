@@ -5,6 +5,9 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  # Triggered by the audit reports repo when reports change
+  repository_dispatch:
+    types: [rebuild-reports]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -59,6 +62,26 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      # --- Audit reports (Eleventy) → /rapporten/ ---
+      - name: Checkout audit reports repo
+        uses: actions/checkout@v4.2.2
+        with:
+          repository: JuliaTol-properaccess/pa-audit
+          token: ${{ secrets.PA_AUDIT_TOKEN }}
+          path: _audit-reports
+          lfs: true
+
+      - name: Install audit reports dependencies
+        run: npm ci
+        working-directory: _audit-reports
+
+      - name: Build audit reports
+        run: npm run build
+        working-directory: _audit-reports
+
+      - name: Copy audit reports to /rapporten/
+        run: rsync -a _audit-reports/dist/ ./public/rapporten/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
