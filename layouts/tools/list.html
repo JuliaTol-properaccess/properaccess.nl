@@ -13,7 +13,12 @@
       </div>
 
       <div class="tool-overview__grid">
-        {{ range .RegularPages.ByWeight }}
+        {{/* Gratis tools eerst, dan vergrendelde — quizzen verborgen */}}
+        {{ $visible := where .RegularPages.ByWeight ".Params.toon_in_lijst" "!=" false }}
+        {{ $free := where $visible ".Params.gratis" true }}
+        {{ $locked_pages := where $visible ".Params.gratis" "!=" true }}
+        {{ $sorted := $free | append $locked_pages }}
+        {{ range $sorted }}
           {{ $locked := not (.Params.gratis) }}
           <a href="{{ .RelPermalink }}"
              class="tool-card{{ if $locked }} tool-card--locked{{ end }}"

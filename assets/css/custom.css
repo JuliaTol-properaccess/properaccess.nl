@@ -8469,7 +8469,7 @@ html.dark .vw-faq .faq-answer {
 }
 .tool-card--locked .tool-card__description,
 .tool-card--locked .tool-card__tags {
-  opacity: 0.55;
+  opacity: 0.7;
 }
 .tool-card--locked:hover {
   border-top-color: #9ca3af;

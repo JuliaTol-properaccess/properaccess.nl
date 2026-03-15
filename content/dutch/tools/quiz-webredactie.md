@@ -7,6 +7,7 @@ layout: "quiz-webredactie"
 weight: 10
 date: 2026-03-13
 doelgroep: ["Webredacteur"]
+toon_in_lijst: false
 aliases:
   - /quiz-toegankelijke-content-webredactie/
 description: "Test je kennis over digitale toegankelijkheid met deze quiz van 20 vragen. Speciaal voor webredacties die toegankelijke content willen publiceren."
