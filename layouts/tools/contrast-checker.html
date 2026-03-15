@@ -4,6 +4,12 @@
 
     <h1 class="mb-2">{{ .Title }}</h1>
 
+    {{ with .Content }}
+    <div class="tool-seo-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
     <!-- Password gate -->
     <div class="tool-pdf__gate" id="passwordGate">
       <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>

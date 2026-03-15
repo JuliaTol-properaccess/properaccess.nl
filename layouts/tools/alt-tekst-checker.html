@@ -10,6 +10,12 @@
       </button>
     </div>
 
+    {{ with .Content }}
+    <div class="tool-seo-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
     <!-- Password gate -->
     <div class="tool-pdf__gate" id="passwordGate">
       <p class="tool-pdf__gate-text" data-i18n="gateText">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>

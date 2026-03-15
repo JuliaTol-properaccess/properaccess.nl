@@ -1,44 +1,171 @@
 ---
-title: "Alt-tekst keuzehulp"
+title: "Alt-tekst schrijven: de keuzehulp voor de juiste alt-tekst bij elke afbeelding"
 date: 2026-02-23
 slug: "alt-tekst-keuzehulp"
-description: "Interactieve keuzehulp die je stap voor stap helpt bij het kiezen van de juiste alt-tekst voor afbeeldingen. Gebaseerd op WCAG-richtlijnen."
+description: "Welke alt-tekst heeft jouw afbeelding nodig? Gebruik onze interactieve keuzehulp om in een paar stappen de juiste alt-tekst te bepalen — van productfoto's tot decoratieve afbeeldingen."
 categories:
   - "achtergrond_wcag"
+  - "webredactie"
+tags:
+  - "alt-tekst"
+  - "afbeeldingen"
+  - "wcag"
+  - "schermlezer"
+  - "webredactie"
 keywords:
-  - alt-tekst schrijven
-  - alt tekst afbeeldingen
+  - alt tekst schrijven
+  - alt tekst
+  - alt tekst afbeelding
+  - wat is alt tekst
+  - wat is een alt tekst
+  - alt teksten
+  - alt-tekst
+  - goede alt tekst
+  - alt tekst voorbeeld
+  - alt tekst productfoto
+  - alt tekst decoratief
+  - alt tekst webshop
   - toegankelijke afbeeldingen
   - wcag alt tekst
+  - wcag 1.1.1
+  - schermlezer afbeelding
+  - alt attribuut
 ---
 
-Elke afbeelding op je website heeft een alt-attribuut nodig. Maar wat je daarin schrijft, hangt af van de context. Is de afbeelding decoratief? Dan laat je de alt-tekst leeg (`alt=""`). Bevat de afbeelding informatie? Dan beschrijf je die informatie. Klinkt simpel, maar in de praktijk gaat dit verrassend vaak mis.
+Alt-tekst is een van die dingen die simpel klinkt maar lastig is in de praktijk. Elke afbeelding op je website heeft een alt-attribuut nodig — dat is de tekst die een schermlezer voorleest als alternatief voor de afbeelding. Maar wat je in dat alt-attribuut schrijft, hangt af van de situatie.
 
-## Waarom alt-teksten belangrijk zijn
+Ik zie het in bijna elke audit misgaan. Decoratieve afbeeldingen die uitgebreid worden beschreven. Productfoto's zonder enige beschrijving. Logo's met "logo" als alt-tekst. Grafieken waar alleen "grafiek" staat.
 
-Een schermlezer leest de alt-tekst voor als alternatief voor de afbeelding. Zonder alt-tekst hoort een blinde bezoeker of de bestandsnaam ("IMG\_2847.jpg") of helemaal niets. In beide gevallen mist diegene informatie die voor andere bezoekers wel zichtbaar is.
+In dit artikel leg ik uit hoe je de juiste alt-tekst kiest. En onderaan vind je onze interactieve keuzehulp die je stap voor stap door het beslisproces leidt.
 
-Alt-teksten zijn verplicht onder **WCAG succescriterium 1.1.1** (Niet-tekstuele content). Dit is een van de meest gefaalde criteria in onze audits -- juist omdat de regels per situatie verschillen.
+## Waarom alt-tekst belangrijk is
 
-## Veelgemaakte fouten
+Een schermlezer leest de alt-tekst voor als iemand een afbeelding niet kan zien. Zonder alt-tekst hoort een blinde bezoeker of de bestandsnaam ("IMG_2847.jpg") of helemaal niets. In beide gevallen mist diegene informatie die voor andere bezoekers wel zichtbaar is.
 
-- **Decoratieve afbeeldingen met een beschrijving.** Een sfeerfoto naast een tekst hoeft geen alt-tekst. Een schermlezer die "vrouw achter laptop in kantoortuin" voorleest, voegt niets toe aan het begrip van de pagina. Gebruik `alt=""`.
-- **Informatieve afbeeldingen zonder alt-tekst.** Een grafiek, een infographic of een productfoto bevat informatie die je moet beschrijven. Zonder alt-tekst is die informatie ontoegankelijk.
-- **Alt-teksten die de functie niet beschrijven.** Bij een klikbare afbeelding (een link of knop) beschrijf je niet wat je ziet, maar wat er gebeurt als je erop klikt. Een logo dat naar de homepage linkt, krijgt als alt-tekst "Home" of "Naam bedrijf - home" -- niet "logo van bedrijf X".
-- **Te lange alt-teksten.** Houd het kort en relevant. Moet je meer dan twee zinnen schrijven? Overweeg dan een bijschrift of een uitgebreide beschrijving elders op de pagina.
-- **Tekst in afbeeldingen.** Staat er tekst in de afbeelding? Dan moet die tekst ook in de alt-tekst staan. Beter nog: gebruik echte tekst in HTML.
+Maar alt-tekst is niet alleen voor schermlezers:
 
-## Hoe kies je de juiste alt-tekst?
+- **Trage internetverbinding** — als afbeeldingen niet laden, verschijnt de alt-tekst
+- **Zoekmachines** — Google leest alt-teksten om te begrijpen wat er op een afbeelding staat
+- **Spraakbediening** — mensen die hun computer met spraak bedienen, gebruiken alt-teksten om naar afbeeldingen te navigeren
 
-Het begint met een simpele vraag: **wat is de functie van deze afbeelding?**
+Alt-teksten zijn verplicht onder **WCAG succescriterium 1.1.1** (Niet-tekstuele content). Dit is een van de meest gefaalde criteria in onze audits — juist omdat de regels per situatie verschillen.
 
-1. **Decoratief** (sfeer, opvulling, herhaling van tekst ernaast) -- gebruik `alt=""`
-2. **Informatief** (foto, illustratie, grafiek die iets uitlegt) -- beschrijf de informatie
-3. **Functioneel** (link, knop, icoon) -- beschrijf de actie of bestemming
-4. **Complex** (grafiek, diagram, infographic) -- korte alt + uitgebreide beschrijving
+## De vier typen afbeeldingen
 
-Gebruik de keuzehulp hieronder om snel te bepalen welke alt-tekst bij jouw situatie past.
+Elke afbeelding op je website valt in een van deze vier categorieën. Het type bepaalt welke alt-tekst je nodig hebt.
+
+### 1. Decoratieve afbeeldingen — lege alt-tekst
+
+Een decoratieve afbeelding voegt geen informatie toe aan de pagina. Het is sfeer, opvulling of een visueel element dat de tekst ernaast niet aanvult.
+
+**Voorbeelden:**
+- Een sfeerbeeld naast een tekst over je bedrijf
+- Een achtergrondpatroon
+- Een scheidingslijn tussen secties
+- Een afbeelding die exact dezelfde informatie bevat als de tekst ernaast
+
+**Wat je schrijft:** `alt=""` (leeg alt-attribuut). Niet weglaten — een leeg alt-attribuut vertelt de schermlezer expliciet: sla deze afbeelding over.
+
+**Veelgemaakte fout:** Een sfeerfoto van een kantoor met alt-tekst "twee collega's achter een laptop in een modern kantoor." Dat voegt niets toe aan de pagina. De schermlezer onderbreekt de tekststroom voor informatie die er niet toe doet.
+
+### 2. Informatieve afbeeldingen — beschrijf de inhoud
+
+Een informatieve afbeelding bevat informatie die je niet uit de omringende tekst kunt halen. Als je de afbeelding weghaalt, mis je iets.
+
+**Voorbeelden:**
+- Een productfoto in een webshop
+- Een foto bij een nieuwsbericht die relevant is voor het verhaal
+- Een illustratie die een concept verduidelijkt
+- Een screenshot van een interface
+
+**Wat je schrijft:** Beschrijf wat je ziet, gericht op de informatie die relevant is voor de context. Bij een productfoto: wat is het product, welke kleur, welk model? Bij een nieuwsfoto: wie, wat, waar?
+
+**Voorbeelden van goede alt-teksten:**
+- Productfoto: "Zwarte leren sneakers met witte zool, maat 42, schuin van voren gefotografeerd"
+- Nieuwsfoto: "Burgemeester Halsema overhandigt de eerste prijs aan het winnende team"
+- Screenshot: "Instellingenscherm van WordPress met de optie 'Afbeelding alt-tekst' gemarkeerd"
+
+**Houd het kort.** Twee zinnen is meestal genoeg. Moet je meer schrijven? Dan is de afbeelding waarschijnlijk complex (zie type 4).
+
+### 3. Functionele afbeeldingen — beschrijf de actie
+
+Een functionele afbeelding is een afbeelding die ook een link of knop is. Je klikt erop om ergens naartoe te gaan of iets te doen.
+
+**Voorbeelden:**
+- Een logo dat linkt naar de homepage
+- Een social media-icoon dat linkt naar je LinkedIn-pagina
+- Een banner die linkt naar een actie of aanbieding
+- Een thumbnailafbeelding die linkt naar een artikel
+
+**Wat je schrijft:** Beschrijf niet wat je ziet, maar **waar je naartoe gaat of wat er gebeurt**. Een schermlezergebruiker wil weten wat de link doet, niet hoe het plaatje eruitziet.
+
+**Voorbeelden:**
+- Logo: `alt="Proper Access — naar de homepage"`
+- Social icoon: `alt="Volg ons op LinkedIn"`
+- Actie-banner: `alt="Bekijk onze zomeraanbieding — 20% korting op alle sneakers"`
+- Thumbnail: `alt="Lees het artikel: De 5 meest voorkomende alt-tekst fouten"`
+
+**Veelgemaakte fout:** Een logo met `alt="logo"`. Een schermlezer leest dan "link, logo" — je weet niet welk bedrijf het is en niet waar de link naartoe gaat.
+
+### 4. Complexe afbeeldingen — korte alt + uitgebreide beschrijving
+
+Een complexe afbeelding bevat te veel informatie om in een korte alt-tekst te vatten. Denk aan grafieken, diagrammen, infographics en kaarten.
+
+**Voorbeelden:**
+- Een staafgrafiek met omzetcijfers
+- Een infographic over een proces
+- Een stroomdiagram
+- Een plattegrond van een gebouw
+
+**Wat je schrijft:** Een korte alt-tekst die vertelt wat het type afbeelding is en waar het over gaat. Plus een uitgebreide beschrijving elders op de pagina.
+
+**Voorbeeld:**
+- Alt-tekst: `alt="Staafgrafiek: omzetontwikkeling per kwartaal in 2025"`
+- Uitgebreide beschrijving: een datatabel onder de grafiek met dezelfde cijfers, of een tekstalinea die de belangrijkste trend beschrijft
+
+## De 5 meest voorkomende fouten
+
+In onze audits komen deze fouten het vaakst voor:
+
+### 1. Decoratieve afbeeldingen met een beschrijving
+
+Een sfeerfoto van een vergaderzaal met alt-tekst "drie mensen zitten rond een tafel in een lichte vergaderruimte met planten." Dat klinkt goed, maar het is ruis. De afbeelding is decoratief — een lege alt-tekst is beter.
+
+### 2. Informatieve afbeeldingen zonder alt-tekst
+
+Een productfoto in een webshop zonder alt-tekst. Een schermlezer leest de bestandsnaam voor: "product-sneaker-zwart-42-schuin.jpg." Of erger: de URL van de afbeelding.
+
+### 3. Alle afbeeldingen dezelfde alt-tekst
+
+"Afbeelding" of "foto" als alt-tekst voor elke afbeelding. Dat is bijna net zo slecht als geen alt-tekst — het geeft de gebruiker geen bruikbare informatie.
+
+### 4. Alt-tekst die begint met "afbeelding van" of "foto van"
+
+Een schermlezer kondigt een afbeelding al aan als "afbeelding." Als de alt-tekst dan begint met "afbeelding van een rode fiets," hoort de gebruiker "afbeelding, afbeelding van een rode fiets." Begin direct met de beschrijving: "Rode fiets geparkeerd tegen een geel hek."
+
+### 5. Tekst in afbeeldingen niet opnemen in de alt-tekst
+
+Een banner met de tekst "SALE — tot 50% korting — alleen dit weekend" als afbeelding. De alt-tekst is leeg of zegt "banner." Alle tekst die in een afbeelding staat, moet ook in de alt-tekst staan.
+
+## Alt-teksten voor webshops
+
+Webshops hebben honderden tot duizenden productafbeeldingen. Dat maakt alt-teksten een groot project. Een paar praktische tips:
+
+- **Productafbeeldingen:** Beschrijf het product, de kleur en het relevante perspectief. "Witte katoenen T-shirt met V-hals, voorkant" is beter dan "product-wit-v-hals-001."
+- **Meerdere foto's van hetzelfde product:** De eerste foto krijgt de volledige beschrijving. De overige foto's beschrijven wat er anders is: "zijaanzicht," "close-up van de stof," "model draagt het shirt."
+- **Kleurvarianten:** Als je kleurvarianten toont als kleine thumbnails, beschrijf de kleur: "Blauw," "Rood," "Groen." Niet de volledige productbeschrijving herhalen.
+- **Maattabellen als afbeelding:** Maak er een echte HTML-tabel van. Is dat niet mogelijk, neem dan alle maten en afmetingen op in de alt-tekst of bied een tekstalternatief aan.
+
+## De interactieve keuzehulp
+
+Weet je niet zeker welk type alt-tekst je nodig hebt? Gebruik onze keuzehulp. Beantwoord een paar vragen en je krijgt direct advies.
 
 {{< protected-section token="frameless" >}}
 {{< webapp-alt-tekst >}}
 {{< /protected-section >}}
+
+## Verder lezen
+
+- [EAA voor webshops](/blog/eaa-voor-webshops/) — productafbeeldingen zijn een van de meest voorkomende problemen
+- [Rapport per element vs. per succescriterium](/blog/rapport-per-element-vs-per-succescriterium/) — hoe wij rapporteren over alt-tekst problemen
+- [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/) — laat je afbeeldingen checken als onderdeel van een audit
