@@ -3502,6 +3502,7 @@ html.dark .tool-card__cta-link {
 .hp-tools .container,
 .hp-services .container,
 .hp-segments .container,
+.hp-recent .container,
 .hp-articles .container,
 .hp-faq .container,
 .hp-cta-final .container {
@@ -4126,6 +4127,10 @@ html.dark .tool-card__cta-link {
 
 
 /* ─── Recent posts (homepage) ─── */
+
+.hp-recent {
+  background-color: #f5f5f5;
+}
 
 .hp-recent__grid {
   display: grid;
@@ -8448,6 +8453,121 @@ html.dark .vw-faq .faq-answer {
   text-align: center;
   color: #6b7280;
   padding: 2rem 0;
+}
+
+/* ── Tool card lock icon ── */
+.tool-card__lock {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+.tool-card--locked {
+  position: relative;
+  cursor: default;
+}
+.tool-card--locked .tool-card__description,
+.tool-card--locked .tool-card__tags {
+  opacity: 0.55;
+}
+.tool-card--locked:hover {
+  border-top-color: #9ca3af;
+}
+
+/* ── Lock modal ── */
+.tool-lock-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 41, 55, 0.5);
+  z-index: 999;
+}
+.tool-lock-modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 420px;
+  width: calc(100% - 2rem);
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+.tool-lock-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0.25rem;
+  line-height: 1;
+}
+.tool-lock-modal__close:hover {
+  color: #1F2937;
+}
+.tool-lock-modal__icon {
+  margin-bottom: 1rem;
+}
+.tool-lock-modal__title {
+  font-size: 1.25rem;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+.tool-lock-modal__text {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+.tool-lock-modal__form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.tool-lock-modal__input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+}
+.tool-lock-modal__input:focus {
+  outline: 2px solid #004050;
+  outline-offset: 1px;
+  border-color: #004050;
+}
+.tool-lock-modal__btn {
+  padding: 0.5rem 1rem;
+  background: #A30D4B;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tool-lock-modal__btn:hover {
+  background: #8a0b3f;
+}
+.tool-lock-modal__error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.tool-lock-modal__footer {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+.tool-lock-modal__footer a {
+  color: #004050;
+  text-decoration: underline;
 }
 
 /* ── Link checker ── */

@@ -5,6 +5,7 @@ date: 2026-03-12
 slug: "quiz-developers"
 url: "/tools/quiz-developers/"
 layout: "quiz-developers"
+weight: 10
 doelgroep: ["Webdeveloper"]
 description: "20 praktijkscenario's die je WCAG-kennis testen. Bekijk interactieve demo's en broncode, selecteer de juiste antwoorden en deel je score."
 keywords:

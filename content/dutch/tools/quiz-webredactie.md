@@ -4,6 +4,7 @@ meta_title: "Accessibility Quiz voor Webredacties — Test je kennis | Proper Ac
 slug: "quiz-webredactie"
 url: "/tools/quiz-webredactie/"
 layout: "quiz-webredactie"
+weight: 10
 date: 2026-03-13
 doelgroep: ["Webredacteur"]
 aliases:
