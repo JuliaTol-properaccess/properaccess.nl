@@ -57,6 +57,14 @@ Benieuwd hoe jouw website scoort? Bestel een Quickscan voor slechts 19 euro en o
 
 {{< /section-cta >}}
 
+{{< section-highlight title="Van website tot mobiele app — we testen het allemaal" image="/images/blog/nachtw.webp" alt="De Nachtwacht in het Rijksmuseum — locatie van onze app-audit" link="/blog/rijksmuseum-apps-toegankelijkheid-getest/" link_text="Lees de volledige case" bg="light" >}}
+
+We auditen niet alleen websites. In december 2025 testten we de iOS- en Android-app van het Rijksmuseum op toegankelijkheid. Het was niet onze eerste opdracht voor het grootste museum van Nederland — en dat is geen toeval. Organisaties die écht inclusief willen zijn, komen bij ons terug.
+
+Met telefoon en koptelefoon liepen we door de zalen, volgden audiotours, deden de interactieve speurtocht en testten elk scherm met VoiceOver en TalkBack. In totaal vonden we 83 bevindingen verdeeld over beide apps. Het soort grondige audit dat je niet met een geautomatiseerde tool kunt doen.
+
+{{< /section-highlight >}}
+
 {{< section-cards title="Dit zien we bij elke audit in jullie sector" columns="2" bg="light" >}}
 {{< section-card title="Ticketing die niet werkt zonder muis" >}}
 

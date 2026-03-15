@@ -1,0 +1,27 @@
+{{ $title := .Get "title" }}
+{{ $image := .Get "image" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $link := .Get "link" }}
+{{ $link_text := .Get "link_text" }}
+{{ $bg := .Get "bg" }}
+
+<section class="section-highlight{{ if eq $bg "light" }} section-highlight--light{{ end }}">
+  <div class="container">
+    <div class="section-highlight__grid">
+      <div class="section-highlight__text">
+        {{ with $title }}<h2 class="section-highlight__title">{{ . }}</h2>{{ end }}
+        <div class="section-highlight__content">
+          {{ .Inner | markdownify }}
+        </div>
+        {{ if and $link $link_text }}
+          <a href="{{ $link }}" class="section-highlight__link">{{ $link_text }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        {{ end }}
+      </div>
+      {{ with $image }}
+      <div class="section-highlight__media">
+        <img src="{{ . }}" alt="{{ $alt }}" class="section-highlight__image" loading="lazy">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
