@@ -10157,6 +10157,28 @@ a.tool-link__href-url:hover {
   max-width: 720px;
 }
 
+/* Override vendor TOC styling for blog */
+.blog-toc.table-of-content summary {
+  background: none;
+  color: #1F2937;
+  padding: 0;
+  font-size: inherit;
+}
+
+.blog-toc #TableOfContents {
+  background: none;
+  padding: 0;
+}
+
+.blog-toc #TableOfContents li,
+.blog-toc #TableOfContents a {
+  color: #004050 !important;
+}
+
+.blog-toc #TableOfContents a:hover {
+  color: #A30D4B !important;
+}
+
 .blog-toc summary {
   cursor: pointer;
   font-family: "Nunito Sans", sans-serif;

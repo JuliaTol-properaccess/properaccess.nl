@@ -1,3 +1,5 @@
+- id: toc
+  translation: "Inhoudsopgave"
 - id: contact_name
   translation: "Naam"
 - id: contact_email
