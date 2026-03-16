@@ -45,25 +45,3 @@ Koppen moeten een logische hierarchie volgen: H1 > H2 > H3. Een H3 direct na een
 ### Koppen voor structuur, niet voor opmaak
 
 Een veelgemaakte fout: een H3 gebruiken omdat het lettertype er "goed uitziet", terwijl het logisch een H2 zou moeten zijn. Gebruik CSS voor de visuele opmaak en HTML-koppen voor de structuur.
-
-## Veelgestelde vragen
-
-### Welk WCAG-criterium gaat over koppen?
-
-Koppenstructuur valt onder **WCAG succescriterium 1.3.1** (Info en relaties). Dit criterium eist dat informatie en relaties die visueel worden overgebracht ook programmatisch beschikbaar zijn — koppen moeten als koppen zijn gemarkeerd in de HTML.
-
-Daarnaast is **SC 2.4.6** (Koppen en labels) relevant: koppen moeten het onderwerp of doel van de content beschrijven.
-
-### Mag een H2 zonder H1 voorkomen?
-
-Technisch gezien wel, maar het is niet aan te raden. Elke pagina zou moeten beginnen met een H1 die het hoofdonderwerp beschrijft.
-
-### Is het erg als ik een niveau oversla?
-
-Het is geen harde WCAG-fout, maar het maakt navigatie met een schermlezer moeilijker. In onze audits rapporteren we het als een verbeterpunt.
-
-### Hoe zit het met koppen in widgets en sidebars?
-
-Koppen in sidebars en widgets tellen mee in de koppenstructuur. Zorg dat ze logisch passen in de hierarchie van de pagina. Een H2 in de sidebar terwijl de main content ook H2's gebruikt, is prima.
-
-Wil je meer dan alleen de koppenstructuur laten controleren? Een volledige [WCAG-audit](/contact/) onderzoekt alle 55 succescriteria. Of begin met een [quickscan](/quickscan/) om snel te zien waar je staat.

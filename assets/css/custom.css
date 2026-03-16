@@ -10147,6 +10147,39 @@ a.tool-link__href-url:hover {
   }
 }
 
+/* ─── Tool FAQ section ─── */
+
+.tool-faq {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tool-faq h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1.25rem;
+}
+
+.tool-faq__cta {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.7;
+}
+
+.tool-faq__cta a {
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.tool-faq__cta a:hover {
+  color: #A30D4B;
+}
+
 /* ─── Section highlight (2-col text + image) ─── */
 
 .section-highlight {
