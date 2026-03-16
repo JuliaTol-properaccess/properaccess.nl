@@ -10161,7 +10161,7 @@ a.tool-link__href-url:hover {
 .blog-toc.table-of-content summary {
   background: none;
   color: #1F2937;
-  padding: 0;
+  padding: 1em;
   font-size: inherit;
 }
 
