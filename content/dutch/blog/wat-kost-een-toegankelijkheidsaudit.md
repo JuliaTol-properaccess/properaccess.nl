@@ -91,30 +91,30 @@ Na een audit bieden we altijd twee optionele extra's aan:
 
 ## Veelgestelde vragen
 
-<details class="tool-faq__item">
-<summary class="tool-faq__question">Is een quickscan genoeg voor de EAA?</summary>
-<div class="tool-faq__answer">
+<details class="faq-item">
+<summary class="faq-question">Is een quickscan genoeg voor de EAA?</summary>
+<div class="faq-answer">
 Nee. De European Accessibility Act vereist dat je website voldoet aan WCAG 2.1 niveau AA. Om dat aan te tonen heb je een volledig WCAG-EM onderzoek nodig. Een quickscan is een goede eerste stap, maar vervangt geen audit.
 </div>
 </details>
 
-<details class="tool-faq__item">
-<summary class="tool-faq__question">Hoe vaak moet ik een audit laten doen?</summary>
-<div class="tool-faq__answer">
+<details class="faq-item">
+<summary class="faq-question">Hoe vaak moet ik een audit laten doen?</summary>
+<div class="faq-answer">
 Na de eerste audit en het doorvoeren van verbeteringen, adviseer ik een retest. Daarna is een jaarlijkse check verstandig — zeker als je regelmatig content toevoegt of functionaliteit wijzigt.
 </div>
 </details>
 
-<details class="tool-faq__item">
-<summary class="tool-faq__question">Kan ik het zelf doen?</summary>
-<div class="tool-faq__answer">
+<details class="faq-item">
+<summary class="faq-question">Kan ik het zelf doen?</summary>
+<div class="faq-answer">
 Deels. Je kunt zelf al veel verbeteren door de <a href="/blog/alt-tekst-keuzehulp/">alt-tekst keuzehulp</a> te gebruiken, je koppenstructuur te checken en je formulieren te testen met het toetsenbord. Maar voor een volledige WCAG-beoordeling heb je een ervaren auditor nodig.
 </div>
 </details>
 
-<details class="tool-faq__item">
-<summary class="tool-faq__question">Wat als mijn website nog in ontwikkeling is?</summary>
-<div class="tool-faq__answer">
+<details class="faq-item">
+<summary class="faq-question">Wat als mijn website nog in ontwikkeling is?</summary>
+<div class="faq-answer">
 Dan is een audit op het ontwerp of de staging-omgeving vaak zinvoller dan wachten tot de livegang. Hoe eerder je problemen vindt, hoe goedkoper het is om ze op te lossen.
 </div>
 </details>
