@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card -->
+  <rect x="4" y="4" width="392" height="352" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="352" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="24" y="36" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="14" font-weight="700">Prijsindicatie WCAG-audit</text>
+  <line x1="24" y1="48" x2="368" y2="48" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Price bar 1: Eenvoudig -->
+  <text x="24" y="76" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Eenvoudige website</text>
+  <rect x="24" y="84" width="340" height="8" rx="4" fill="#f3f4f6"/>
+  <rect x="24" y="84" width="170" height="8" rx="4" fill="#004050" opacity="0.5"/>
+  <text x="200" y="92" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">v.a. 1.800</text>
+
+  <!-- Price bar 2: Gemiddeld -->
+  <text x="24" y="116" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Gemiddelde website</text>
+  <rect x="24" y="124" width="340" height="8" rx="4" fill="#f3f4f6"/>
+  <rect x="24" y="124" width="230" height="8" rx="4" fill="#004050" opacity="0.65"/>
+  <text x="260" y="132" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">v.a. 2.500</text>
+
+  <!-- Price bar 3: Gemiddeld-complex (highlighted) -->
+  <rect x="16" y="142" width="368" height="40" rx="8" fill="#fdf2f8" stroke="#A30D4B" stroke-width="1" stroke-dasharray="0"/>
+  <text x="24" y="160" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Gemiddeld-complex</text>
+  <text x="280" y="160" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">meest voorkomend</text>
+  <rect x="24" y="166" width="340" height="8" rx="4" fill="#f3f4f6"/>
+  <rect x="24" y="166" width="280" height="8" rx="4" fill="#A30D4B"/>
+  <text x="310" y="174" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">v.a. 2.700</text>
+
+  <!-- Price bar 4: Complex -->
+  <text x="24" y="208" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Complexe website</text>
+  <rect x="24" y="216" width="340" height="8" rx="4" fill="#f3f4f6"/>
+  <rect x="24" y="216" width="310" height="8" rx="4" fill="#004050" opacity="0.8"/>
+  <text x="340" y="224" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">v.a. 2.900</text>
+
+  <!-- Divider -->
+  <line x1="24" y1="244" x2="368" y2="244" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Factors -->
+  <text x="24" y="268" fill="#9ca3af" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700" letter-spacing="1">PRIJS HANGT AF VAN</text>
+
+  <!-- Factor chips -->
+  <rect x="24" y="280" width="90" height="24" rx="12" fill="#f3f4f6"/>
+  <text x="40" y="296" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Omvang</text>
+
+  <rect x="122" y="280" width="100" height="24" rx="12" fill="#f3f4f6"/>
+  <text x="138" y="296" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Complexiteit</text>
+
+  <rect x="230" y="280" width="110" height="24" rx="12" fill="#f3f4f6"/>
+  <text x="246" y="296" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="600">Type onderzoek</text>
+
+  <!-- Footer note -->
+  <text x="24" y="336" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">Prijzen excl. btw | Proper Access 2026</text>
+</svg>
