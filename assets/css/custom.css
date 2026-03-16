@@ -8977,27 +8977,53 @@ a.tool-link__href-url:hover {
 }
 
 .quiz__dot--perfect {
-  width: 32px;
-  height: 8px;
-  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   background: #0e7a50;
   border-color: #0e7a50;
+  position: relative;
+}
+
+.quiz__dot--perfect::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 4px;
+  height: 6px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .quiz__dot--partial {
-  width: 32px;
-  height: 8px;
-  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   background: #a16207;
   border-color: #a16207;
 }
 
 .quiz__dot--wrong {
-  width: 32px;
-  height: 8px;
-  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
   background: #dc2626;
   border-color: #dc2626;
+  position: relative;
+}
+
+.quiz__dot--wrong::after {
+  content: "\00d7";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .quiz__topbar-counter {

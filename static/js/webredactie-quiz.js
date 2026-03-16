@@ -228,7 +228,7 @@
         { l: 'D', t: 'Je maakt er een H1 van, want die is het grootst' }
       ],
       correct: 'B',
-      explanation: 'Koppen zijn er voor structuur, niet voor opmaak. Een schermlezer gebruikt koppen om door de pagina te navigeren. Gebruik je een kop alleen omdat de tekst groter moet, dan raakt de structuur van je pagina in de war.'
+      explanation: 'Tekst groter maken doe je via de opmaakopties in je tekstbewerker, niet met koppen of bold. Koppen (A, D) zijn er voor structuur, niet voor opmaak — een schermlezer gebruikt koppen om door de pagina te navigeren. Bold (C) is bedoeld voor nadruk op een woord of zin, niet om tekst visueel groter te maken.'
     },
     {
       id: 7,
@@ -241,7 +241,7 @@
         { l: 'D', t: 'Niets, dit is correct' }
       ],
       correct: 'B',
-      explanation: 'Je mag geen niveaus overslaan. Na een H2 verwacht een schermlezer een H3, niet een H4. Meerdere H2\'s op een pagina mag wel.'
+      explanation: 'Na een H2 hoort een H3 te komen, niet een H4. Het overslaan van een kopniveau maakt de structuur onduidelijk voor schermlezers die van kop naar kop navigeren. Meerdere H2\'s op een pagina mag wel — dat is juist hoe je parallelle secties aangeeft.'
     },
     {
       id: 8,
@@ -254,7 +254,7 @@
         { l: 'D', t: 'Je moet de B- en I-knoppen helemaal niet gebruiken' }
       ],
       correct: 'B',
-      explanation: 'De B-knop is bedoeld om een woord of zin nadruk te geven, niet om structuur aan te brengen. Een tussenkopje maak je met een kopniveau (H2, H3). En een hele alinea cursief zetten voegt geen betekenis toe — het maakt de tekst juist moeilijker leesbaar.'
+      explanation: 'De B-knop is bedoeld om een woord of zin nadruk te geven, niet om structuur aan te brengen. Een tussenkopje maak je met een kopniveau (H2, H3).'
     },
     {
       id: 9,
@@ -306,7 +306,7 @@
         { l: 'D', t: 'Zorg dat het niet in een nieuw venster opent' }
       ],
       correct: 'B',
-      explanation: 'Een bezoeker met een schermlezer moet weten dat een nieuw venster wordt geopend. Een icoontje alleen (C) wordt niet voorgelezen als het geen tekstalternatief heeft.'
+      explanation: 'Een bezoeker met een schermlezer moet weten dat een nieuw venster wordt geopend. Vermeld dit in de linktekst, bijvoorbeeld: "Bekijk de voorwaarden (opent in nieuw venster)". Niets doen (A) is verwarrend — de terugknop werkt niet meer. Een icoontje alleen (C) helpt niet als het geen tekstalternatief heeft.'
     },
     {
       id: 13,
@@ -358,7 +358,7 @@
         { l: 'D', t: 'De elementen uitlijnen met spaties' }
       ],
       correct: 'B',
-      explanation: 'Gebruik het kolommenblok in je tekstbewerker. Een tabel (A) is bedoeld voor data, niet voor layout — een schermlezer leest tabelcellen voor met rij- en kolomaanduiding, wat verwarrend is. Spaties (D) worden in HTML genegeerd, dus de witruimte verdwijnt.'
+      explanation: 'Het kolommenblok in je tekstbewerker is de juiste keuze. Het maakt een visuele layout zonder de inhoud ontoegankelijk te maken. Een tabel (A) is bedoeld voor data — een schermlezer leest tabelcellen voor met rij- en kolomaanduiding, wat verwarrend is bij layout. De tekst korter maken (C) lost het probleem niet op. Spaties (D) worden in HTML genegeerd, dus de witruimte verdwijnt.'
     },
     {
       id: 17,
