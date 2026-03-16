@@ -2,7 +2,6 @@
 title: "Wat kost een toegankelijkheidsaudit? Prijzen, pakketten en waar je op moet letten"
 date: 2026-03-16
 slug: "wat-kost-een-toegankelijkheidsaudit"
-layout: "case"
 categories:
   - "achtergrond_wcag"
   - "de EAA"

@@ -10147,6 +10147,224 @@ a.tool-link__href-url:hover {
   }
 }
 
+/* ── Blog TOC (collapsed) ── */
+
+.blog-toc {
+  margin: 1.5rem 0 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #f9fafb;
+  max-width: 720px;
+}
+
+.blog-toc summary {
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1F2937;
+  padding: 0.75rem 1.25rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-toc summary::marker,
+.blog-toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-toc summary::after {
+  content: "+";
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+.blog-toc[open] summary::after {
+  content: "\2013";
+}
+
+.blog-toc[open] summary {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.blog-toc nav {
+  padding: 0.75rem 1.25rem;
+}
+
+.blog-toc nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-toc nav li {
+  margin-bottom: 0.35rem;
+}
+
+.blog-toc nav a {
+  color: #004050;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.blog-toc nav a:hover {
+  color: #A30D4B;
+  text-decoration: underline;
+}
+
+.blog-toc nav ul ul {
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.blog-toc nav ul ul a {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* ── Prose fallback for posts without case-section shortcodes ── */
+
+.case__body > :not(.case-section) {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.case__body > .case-section ~ :not(.case-section) {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Prose styling for regular blog content inside case__body */
+.case__body > .content,
+.case__body > p,
+.case__body > h2,
+.case__body > h3,
+.case__body > h4,
+.case__body > ul,
+.case__body > ol,
+.case__body > blockquote,
+.case__body > table,
+.case__body > pre,
+.case__body > .highlight,
+.case__body > details,
+.case__body > hr {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.case__body > h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.case__body > h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.case__body > p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.case__body > ul,
+.case__body > ol {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 2.5rem;
+}
+
+.case__body > ul li,
+.case__body > ol li {
+  margin-bottom: 0.5rem;
+}
+
+.case__body > blockquote {
+  border-left: 3px solid #A30D4B;
+  padding-left: 1.25rem;
+  color: #374151;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.case__body > table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.case__body > table th,
+.case__body > table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.case__body > table th {
+  font-weight: 700;
+  color: #1F2937;
+  background: #f9fafb;
+}
+
+.case__body > pre,
+.case__body > .highlight {
+  background: #1F2937;
+  color: #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.case__body a {
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.case__body a:hover {
+  color: #A30D4B;
+}
+
+.case__body > img,
+.case__body > figure {
+  max-width: 720px;
+  margin: 1.5rem auto;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.case__body > figure img {
+  border-radius: 0.5rem;
+}
+
 /* ─── Tool FAQ section ─── */
 
 .tool-faq {

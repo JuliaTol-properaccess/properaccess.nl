@@ -1,88 +1,62 @@
 {{ define "main" }}
-  <section class="section pt-7">
-    <div class="container">
-      <div class="row justify-center">
-        <article class="lg:col-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <div class="mb-10">
-              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
-            </div>
+  <article class="case">
+    <!-- Hero -->
+    <section class="case__hero">
+      <div class="container">
+        <div class="case__hero-inner">
+          {{ with .Params.categories }}
+            <p class="case__label">
+              {{ range $i, $cat := . }}{{ if $i }}, {{ end }}{{ $cat | humanize }}{{ end }}
+            </p>
           {{ end }}
-          <h1 class="h2 mb-4">
-            {{ .Title }}
-          </h1>
-          <ul class="mb-4">
-            {{ with .Params.author }}
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ . }}
-              </a>
-            </li>
-            {{ end }}
-            {{ $categories:= .Params.categories }}
-            {{ if $categories }}
-              <li class="mr-4 inline-block">
-                <i class="fa-regular fa-folder mr-2"></i>
-                {{ range $i,$p:= $categories }}
-                  <a
-                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                    class=""
-                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                      {{ "," }}
-                    {{ end }}
-                  </a>
-                {{ end }}
-              </li>
-            {{ end }}
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
-          </ul>
-          <div class="content mb-10">
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
-            {{ .Content }}
-          </div>
-          <div class="row items-start justify-between">
-            {{ $tags:= .Params.tags }}
-            {{ if $tags }}
-              <div class="lg:col-6 mb-10 flex items-center lg:mb-0">
-                <p class="mr-3 mb-0 font-semibold">{{ T "tags" | default "Tags" }} :</p>
-                <ul>
-                  {{ range $i,$p:= $tags }}
-                    <li class="inline-block">
-                      <a
-                        class="bg-light hover:bg-primary m-1 block rounded px-3 py-1 hover:text-white"
-                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                        {{ . | humanize }}
-                      </a>
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            {{ end }}
-            <div class="lg:col-6 flex items-center lg:justify-end">
-              <p class="mb-0 font-semibold">{{ T "share" | default "Share" }} :</p>
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
-            </div>
-          </div>
-          <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
-            <div class="mt-20">
-              {{ partial "disqus.html" . }}
-            </div>
+          <h1 class="case__title">{{ .Title }}</h1>
+          {{ with .Description }}
+            <p class="case__description">{{ . }}</p>
           {{ end }}
-        </article>
+          <p class="case__date">
+            <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+          </p>
+        </div>
       </div>
+    </section>
 
-      <!-- Related posts -->
-      {{ $related := .Site.RegularPages.Related . | first 10 }}
-      {{ $related = $related | shuffle | first 3 }}
-      {{ with $related }}
-        <div class="section pb-0">
+    <!-- TOC (collapsed) -->
+    {{ if .TableOfContents }}
+      <div class="container">
+        {{ partial "toc.html" (dict "Class" "blog-toc" "Collapsed" true "TableOfContents" .TableOfContents ) }}
+      </div>
+    {{ end }}
+
+    <!-- Content -->
+    <div class="case__body">
+      {{ .Content }}
+    </div>
+
+    <!-- Tags & share -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="case__footer">
+          {{ $tags := .Params.tags }}
+          {{ if $tags }}
+            <div class="case__tags">
+              {{ range $tags }}
+                <a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/" class="case__tag">{{ . | humanize }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+          <div class="case__share">
+            {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related posts -->
+    {{ $related := .Site.RegularPages.Related . | first 10 }}
+    {{ $related = $related | shuffle | first 3 }}
+    {{ with $related }}
+      <section class="section pb-0">
+        <div class="container">
           <h2 class="h3 mb-12">
             {{ T "related_posts" | default "Related Posts" }}
           </h2>
@@ -94,7 +68,7 @@
             {{ end }}
           </div>
         </div>
-      {{ end }}
-    </div>
-  </section>
+      </section>
+    {{ end }}
+  </article>
 {{ end }}
