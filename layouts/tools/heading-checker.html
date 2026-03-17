@@ -10,7 +10,7 @@
     </div>
     {{ end }}
 
-    <!-- Password gate -->
+    {{ if not .Params.gratis }}<!-- Password gate -->
     <div class="tool-pdf__gate" id="passwordGate">
       <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
       <form class="tool-pdf__gate-form" id="passwordForm">
@@ -20,8 +20,9 @@
       </form>
       <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
     </div>
+    {{ end }}
 
-    <div id="toolContent" hidden>
+    <div id="toolContent"{{ if not .Params.gratis }} hidden{{ end }}>
       <p class="tool-heading__intro">
         Voer een URL in en bekijk de koppenstructuur van die pagina.
         Een logische koppenhierarchie helpt screenreadergebruikers om door je content te navigeren.
@@ -90,6 +91,6 @@
   </div>
 </section>
 
-<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
+{{ if not .Params.gratis }}<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>{{ end }}
 <script src="{{ "js/tool-heading-checker.js" | relURL }}" defer></script>
 {{ end }}

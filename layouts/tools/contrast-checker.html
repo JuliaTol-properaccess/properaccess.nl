@@ -10,7 +10,7 @@
     </div>
     {{ end }}
 
-    <!-- Password gate -->
+    {{ if not .Params.gratis }}<!-- Password gate -->
     <div class="tool-pdf__gate" id="passwordGate">
       <p class="tool-pdf__gate-text">Deze tool is beschikbaar voor klanten van Proper Access. Voer het wachtwoord in om toegang te krijgen.</p>
       <form class="tool-pdf__gate-form" id="passwordForm">
@@ -20,8 +20,9 @@
       </form>
       <p class="tool-pdf__gate-error" id="gateError" hidden>Onjuist wachtwoord. Probeer het opnieuw.</p>
     </div>
+    {{ end }}
 
-    <div id="toolContent" hidden>
+    <div id="toolContent"{{ if not .Params.gratis }} hidden{{ end }}>
     <p class="tool-contrast__intro">
       Controleer of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
       Vul twee kleuren in en zie direct of het contrast voldoende is &mdash; en voor welke situaties.
@@ -244,6 +245,6 @@
   </div>
 </section>
 
-<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>
+{{ if not .Params.gratis }}<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>{{ end }}
 <script src="{{ "js/tool-contrast-checker.js" | relURL }}" defer></script>
 {{ end }}
