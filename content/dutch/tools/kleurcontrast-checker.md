@@ -28,10 +28,3 @@ Met deze gratis kleurcontrast checker controleer je direct of je kleurencombinat
 
 Vul een voorgrondkleur (tekst) en een achtergrondkleur in. De tool berekent de contrastverhouding en laat zien of je combinatie voldoet aan WCAG niveau AA en AAA — voor normale tekst, grote tekst en UI-componenten.
 
-## Welk contrast heb je nodig?
-
-WCAG 2.2 stelt de volgende minimumeisen:
-
-- **Normale tekst:** minimaal 4.5:1 (niveau AA) of 7:1 (niveau AAA)
-- **Grote tekst** (18pt of 14pt bold): minimaal 3:1 (AA) of 4.5:1 (AAA)
-- **UI-componenten** (knoppen, iconen, formuliervelden): minimaal 3:1 (AA)
