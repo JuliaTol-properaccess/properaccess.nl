@@ -337,11 +337,9 @@
 
       <form
         class="qs-form qs-animate"
-        action="https://formspree.io/f/xvzwowrw"
-        method="POST">
+        id="qs-order-form">
 
         <input type="hidden" name="_subject" value="Nieuwe quickscan bestelling" />
-        <input type="hidden" name="_next" value="https://payment-links.mollie.com/payment/aqkJbya5hNmNTAKFuB8xj" />
         <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
 
         <div class="qs-form__group">
@@ -382,5 +380,39 @@
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var form = document.getElementById('qs-order-form');
+  if (!form) return;
+
+  var FORMSPREE_URL = 'https://formspree.io/f/xvzwowrw';
+  var MOLLIE_URL = 'https://payment-links.mollie.com/payment/aqkJbya5hNmNTAKFuB8xj';
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Doorsturen naar betaling...';
+    }
+
+    var data = new FormData(form);
+
+    fetch(FORMSPREE_URL, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function() {
+      window.location.href = MOLLIE_URL;
+    })
+    .catch(function() {
+      window.location.href = MOLLIE_URL;
+    });
+  });
+})();
+</script>
 
 {{ end }}
