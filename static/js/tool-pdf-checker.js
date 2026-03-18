@@ -120,12 +120,12 @@
       catTables: "Tabellen",
       catNavigation: "Navigatie",
       // Status badges
-      badgePass: "Geen problemen gevonden",
+      badgePass: "Gecontroleerd",
       badgeFail: "Probleem",
       badgeWarn: "Waarschuwing",
       badgeNa: "N.v.t.",
       // Summary cards
-      sumPass: "Geen problemen gevonden",
+      sumPass: "Gecontroleerd",
       sumFail: "Problemen",
       sumWarn: "Waarschuwingen",
       // Table headers
@@ -147,7 +147,7 @@
       fixNoBookmarks: "Voeg bladwijzers toe aan het document. In Adobe Acrobat Pro: ga naar <strong>Weergave &gt; Navigatievensters &gt; Bladwijzers</strong>. Maak bladwijzers aan voor alle koppen en belangrijke secties. Bij export vanuit Word of InDesign kun je dit automatisch laten genereren.",
       // Document checks
       docTagged: "PDF is getagd",
-      docTaggedDesc: "Dit document bevat tags (structuurinformatie) die door schermlezers kunnen worden gebruikt.",
+      docTaggedDesc: "Dit document bevat tags (structuurinformatie). Controleer handmatig of de tagstructuur correct en compleet is.",
       docPartiallyTagged: "PDF is gedeeltelijk getagd",
       docPartiallyTaggedDesc: "Slechts {0} van de {1} pagina\u2019s bevatten tags.",
       docNoTags: "PDF mist tags",
@@ -179,12 +179,12 @@
       hdPl: "koppen",
       hdSkipped: "Kopniveaus overgeslagen",
       hdSkippedDesc: "Er worden kopniveaus overgeslagen. Dit maakt de structuur onduidelijk voor schermlezers.",
-      hdOk: "Geen overgeslagen kopniveaus",
-      hdOkDesc: "Er zijn geen overgeslagen kopniveaus gevonden.",
+      hdOk: "Geen overgeslagen kopniveaus gedetecteerd",
+      hdOkDesc: "Er zijn geen overgeslagen kopniveaus gevonden. Controleer handmatig of de koppen logisch en inhoudelijk correct zijn.",
       hdEmpty: "Lege koppen gevonden",
       hdEmptyDesc: "{0} zonder inhoud gevonden.",
-      hdNoEmpty: "Geen lege koppen",
-      hdNoEmptyDesc: "Alle koppen bevatten tekst.",
+      hdNoEmpty: "Geen lege koppen gedetecteerd",
+      hdNoEmptyDesc: "Alle koppen bevatten tekst. Controleer handmatig of de kopteksten de inhoud goed beschrijven.",
       noText: "(geen tekst)",
       emptyHdTag: "Lege koptag",
       // Image checks
@@ -198,7 +198,7 @@
       imgAltOk: "{0} {1} alt-tekst",
       imgAltOkSg: "afbeelding heeft",
       imgAltOkPl: "afbeeldingen hebben",
-      imgAltOkDesc: "Controleer of de alt-teksten de inhoud goed beschrijven.",
+      imgAltOkDesc: "Alt-tekst is aanwezig. Controleer handmatig of de teksten de inhoud goed beschrijven.",
       // List checks
       lstNone: "Geen lijsten gevonden",
       lstNoneDesc: "Er zijn geen lijststructuren (L-tags) gevonden.",
@@ -209,10 +209,14 @@
       lstOk: "{0} {1} zonder structuurfouten",
       lstOkSg: "lijst",
       lstOkPl: "lijsten",
-      lstOkDesc: "Tagstructuur L \u2192 LI \u2192 LBody is aanwezig.",
+      lstOkDesc: "Tagstructuur L \u2192 LI \u2192 LBody is aanwezig. Controleer handmatig of de lijsten logisch zijn gebruikt.",
       lstNoItems: "Lijst bevat geen items",
       lstNoLBody: "Lijstitem mist LBody-tag",
       lstNoLI: "Lijst bevat geen LI-tags",
+      lstSingleItem: "Lijst met slechts \u00e9\u00e9n item",
+      lstSingleItemDesc: "{0} van {1} {2} bevat slechts \u00e9\u00e9n item. Dit kan duiden op oneigenlijk gebruik van een lijststructuur.",
+      lstSingleItemDetail: "slechts 1 item",
+      fixSingleItem: "Controleer of de lijststructuur noodzakelijk is. Als de inhoud geen opsomming is, verwijder dan de L-tag en gebruik een geschikte structuurtag zoals <strong>P</strong>.",
       // Table checks
       tblNone: "Geen tabellen gevonden",
       tblNoneDesc: "Er zijn geen tabelstructuren (Table-tags) gevonden.",
@@ -223,7 +227,7 @@
       tblOk: "{0} {1} met koppen",
       tblOkSg: "tabel",
       tblOkPl: "tabellen",
-      tblOkDesc: "Kopmarkeringen (TH-tags) aanwezig.",
+      tblOkDesc: "Kopmarkeringen (TH-tags) aanwezig. Controleer handmatig of de tabelstructuur correct is.",
       tblRows: "{0} rijen",
       tblRowsCols: "{0} rijen, {1} kolommen",
       tblNoTHDetail: "geen TH-tags",
@@ -231,6 +235,11 @@
       tblSingleCellDesc: "{0} van {1} {2} bevat slechts \u00e9\u00e9n cel. Dit kan duiden op oneigenlijk gebruik van een tabelstructuur voor lay-out.",
       tblSingleCellDetail: "slechts 1 cel",
       fixSingleCell: "Controleer of de tabelstructuur noodzakelijk is. Als de tabel alleen voor lay-out wordt gebruikt, verwijder dan de Table-tag en gebruik een geschikte structuurtag zoals <strong>P</strong> of <strong>Div</strong>.",
+      // Span checks
+      spanIssue: "Span buiten alinea of kop",
+      spanIssueDesc: "{0} Span-element(en) gevonden die niet binnen een P- of koptag staan. Dit kan duiden op een onjuiste tagstructuur.",
+      spanIssueDetail: "Span buiten P/H-tag",
+      fixSpan: "Controleer de tagstructuur in Adobe Acrobat Pro. Span-tags horen binnen een alinea (P) of kop (H1\u2013H6) te staan. Wijzig de bovenliggende tag of voeg de Span samen met de juiste structuurtag.",
       // Navigation checks
       navNa: "Bladwijzers niet controleerbaar",
       navNaDesc: "Omdat het document geen tags heeft, is de navigatiecontrole beperkt.",
@@ -307,11 +316,11 @@
       catLists: "Lists",
       catTables: "Tables",
       catNavigation: "Navigation",
-      badgePass: "No issues detected",
+      badgePass: "Checked",
       badgeFail: "Issue",
       badgeWarn: "Warning",
       badgeNa: "N/A",
-      sumPass: "No issues detected",
+      sumPass: "Checked",
       sumFail: "Issues",
       sumWarn: "Warnings",
       thPage: "Page",
@@ -329,7 +338,7 @@
       fixNoTH: "Mark the header row or column of the table with <strong>TH</strong> tags instead of TD tags. In Adobe Acrobat Pro: open the Tags panel, find the table and change the tags of the header cells. Also set the <strong>Scope</strong> attribute (\"Row\" or \"Column\").",
       fixNoBookmarks: "Add bookmarks to the document. In Adobe Acrobat Pro: go to <strong>View &gt; Navigation Panels &gt; Bookmarks</strong>. Create bookmarks for all headings and important sections. When exporting from Word or InDesign, you can generate these automatically.",
       docTagged: "PDF is tagged",
-      docTaggedDesc: "This document contains tags (structural information) that can be used by screen readers.",
+      docTaggedDesc: "This document contains tags (structural information). Manually verify that the tag structure is correct and complete.",
       docPartiallyTagged: "PDF is partially tagged",
       docPartiallyTaggedDesc: "Only {0} of {1} pages contain tags.",
       docNoTags: "PDF is missing tags",
@@ -360,12 +369,12 @@
       hdPl: "headings",
       hdSkipped: "Heading levels skipped",
       hdSkippedDesc: "Heading levels are being skipped. This makes the structure unclear for screen readers.",
-      hdOk: "No skipped heading levels",
-      hdOkDesc: "No skipped heading levels were detected.",
+      hdOk: "No skipped heading levels detected",
+      hdOkDesc: "No skipped heading levels were detected. Manually verify that headings are logically and contextually correct.",
       hdEmpty: "Empty headings found",
       hdEmptyDesc: "{0} without content found.",
-      hdNoEmpty: "No empty headings",
-      hdNoEmptyDesc: "All headings contain text.",
+      hdNoEmpty: "No empty headings detected",
+      hdNoEmptyDesc: "All headings contain text. Manually verify that heading texts accurately describe the content.",
       noText: "(no text)",
       emptyHdTag: "Empty heading tag",
       imgNone: "No images found",
@@ -378,7 +387,7 @@
       imgAltOk: "{0} {1} alt text",
       imgAltOkSg: "image has",
       imgAltOkPl: "images have",
-      imgAltOkDesc: "Check whether the alt texts accurately describe the content.",
+      imgAltOkDesc: "Alt text is present. Manually verify that the texts accurately describe the content.",
       lstNone: "No lists found",
       lstNoneDesc: "No list structures (L tags) were found.",
       lstInvalid: "List structure incorrect",
@@ -388,10 +397,14 @@
       lstOk: "{0} {1} without structure errors",
       lstOkSg: "list",
       lstOkPl: "lists",
-      lstOkDesc: "Tag structure L \u2192 LI \u2192 LBody is present.",
+      lstOkDesc: "Tag structure L \u2192 LI \u2192 LBody is present. Manually verify that lists are used logically.",
       lstNoItems: "List contains no items",
       lstNoLBody: "List item is missing LBody tag",
       lstNoLI: "List contains no LI tags",
+      lstSingleItem: "List with only one item",
+      lstSingleItemDesc: "{0} of {1} {2} contains only one item. This may indicate misuse of a list structure.",
+      lstSingleItemDetail: "only 1 item",
+      fixSingleItem: "Check whether the list structure is necessary. If the content is not an enumeration, remove the L tag and use an appropriate structure tag such as <strong>P</strong>.",
       tblNone: "No tables found",
       tblNoneDesc: "No table structures (Table tags) were found.",
       tblNoTH: "Table headers missing",
@@ -401,7 +414,7 @@
       tblOk: "{0} {1} with headers",
       tblOkSg: "table",
       tblOkPl: "tables",
-      tblOkDesc: "Header markers (TH tags) present.",
+      tblOkDesc: "Header markers (TH tags) present. Manually verify that the table structure is correct.",
       tblRows: "{0} rows",
       tblRowsCols: "{0} rows, {1} columns",
       tblNoTHDetail: "no TH tags",
@@ -409,6 +422,11 @@
       tblSingleCellDesc: "{0} of {1} {2} contains only one cell. This may indicate misuse of a table structure for layout purposes.",
       tblSingleCellDetail: "only 1 cell",
       fixSingleCell: "Check whether the table structure is necessary. If the table is used only for layout, remove the Table tag and use an appropriate structure tag such as <strong>P</strong> or <strong>Div</strong>.",
+      // Span checks
+      spanIssue: "Span outside paragraph or heading",
+      spanIssueDesc: "{0} Span element(s) found that are not inside a P or heading tag. This may indicate an incorrect tag structure.",
+      spanIssueDetail: "Span outside P/H tag",
+      fixSpan: "Check the tag structure in Adobe Acrobat Pro. Span tags should be inside a paragraph (P) or heading (H1\u2013H6). Change the parent tag or merge the Span with the correct structure tag.",
       navNa: "Bookmarks cannot be checked",
       navNaDesc: "Because the document has no tags, navigation checks are limited.",
       navOk: "Bookmarks present",
@@ -740,6 +758,7 @@
       figures: [],
       lists: [],
       tables: [],
+      orphanSpans: [],
       textSnippets: [],
       rootLang: null,
       pagesWithTags: 0,
@@ -820,7 +839,11 @@
 
   function buildAllChecks(metadata, markInfo, collector, outline) {
     var allChecks = [];
-    allChecks.push({ catKey: "catDocument", checks: checkDocument(metadata, markInfo, collector) });
+    var docChecks = checkDocument(metadata, markInfo, collector);
+    // Append orphan span checks to Document category
+    var spanChecks = checkOrphanSpans(collector);
+    for (var s = 0; s < spanChecks.length; s++) { docChecks.push(spanChecks[s]); }
+    allChecks.push({ catKey: "catDocument", checks: docChecks });
     allChecks.push({ catKey: "catHeadings", checks: checkHeadings(collector) });
     allChecks.push({ catKey: "catImages", checks: checkImages(collector) });
     allChecks.push({ catKey: "catLists", checks: checkLists(collector) });
@@ -873,7 +896,7 @@
   // Structure tree walker
   // ============================================================
 
-  function walkTree(node, pageNum, collector, mcidMap) {
+  function walkTree(node, pageNum, collector, mcidMap, parentRole) {
     if (!node) return;
 
     var role = node.role || "";
@@ -924,6 +947,14 @@
       });
     }
 
+    // Detect Span used outside P or heading
+    if (role === "Span" && parentRole) {
+      var validParent = parentRole === "P" || /^H\d$/.test(parentRole) || parentRole === "LBody" || parentRole === "TD" || parentRole === "TH";
+      if (!validParent) {
+        collector.orphanSpans.push({ page: pageNum, parentRole: parentRole });
+      }
+    }
+
     // Collect text snippets for language detection (first 5 text-bearing elements)
     if (collector.textSnippets.length < 5 && (headingMatch || role === "P" || role === "Span")) {
       var snippetText = extractText(node, mcidMap).trim();
@@ -936,7 +967,7 @@
       for (var i = 0; i < node.children.length; i++) {
         var child = node.children[i];
         if (child && child.role) {
-          walkTree(child, pageNum, collector, mcidMap);
+          walkTree(child, pageNum, collector, mcidMap, role);
         }
       }
     }
@@ -1152,6 +1183,29 @@
     return checks;
   }
 
+  function checkOrphanSpans(collector) {
+    var checks = [];
+    var spans = collector.orphanSpans;
+    if (spans.length > 0) {
+      var findings = [];
+      for (var i = 0; i < spans.length; i++) {
+        findings.push({
+          page: spans[i].page,
+          element: "Span",
+          detail: t("spanIssueDetail") + " (parent: " + spans[i].parentRole + ")"
+        });
+      }
+      checks.push({
+        status: "fail",
+        title: t("spanIssue"),
+        description: tf("spanIssueDesc", spans.length),
+        findings: findings,
+        fix: t("fixSpan")
+      });
+    }
+    return checks;
+  }
+
   function checkHeadings(collector) {
     var checks = [];
     var headings = collector.headings;
@@ -1315,6 +1369,7 @@
     }
 
     var invalidFindings = [];
+    var singleItemFindings = [];
     var validCount = 0;
     for (var i = 0; i < lists.length; i++) {
       var lst = lists[i];
@@ -1327,6 +1382,13 @@
       } else {
         validCount++;
       }
+      if (lst.itemCount === 1) {
+        singleItemFindings.push({
+          page: lst.page,
+          element: "L",
+          detail: t("lstSingleItemDetail")
+        });
+      }
     }
 
     if (invalidFindings.length > 0) {
@@ -1336,6 +1398,16 @@
         description: tf("lstInvalidDesc", invalidFindings.length, lists.length, invalidFindings.length === 1 ? t("lstSg") : t("lstPl")),
         findings: invalidFindings,
         fix: t("fixListStructure")
+      });
+    }
+
+    if (singleItemFindings.length > 0) {
+      checks.push({
+        status: "warn",
+        title: t("lstSingleItem"),
+        description: tf("lstSingleItemDesc", singleItemFindings.length, lists.length, singleItemFindings.length === 1 ? t("lstSg") : t("lstPl")),
+        findings: singleItemFindings,
+        fix: t("fixSingleItem")
       });
     }
 
