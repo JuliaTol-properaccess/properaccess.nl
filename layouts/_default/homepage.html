@@ -529,14 +529,14 @@
 </section>
 
 
-<!-- ─── LAATSTE BLOGPOSTS ─── -->
-{{ $recentPosts := first 3 (sort (where site.RegularPages "Section" "blog") "Date" "desc") }}
-{{ if $recentPosts }}
+<!-- ─── OOK OP LINKEDIN ─── -->
+{{ $linkedinPosts := first 3 (sort (where (where site.RegularPages "Section" "blog") "Params.categories" "intersect" (slice "Webshop" "EAA")) "Date" "desc") }}
+{{ if $linkedinPosts }}
 <section class="section hp-recent">
   <div class="container">
-    <h2 class="hp-section-title">Recente artikelen</h2>
+    <h2 class="hp-section-title">Ook op LinkedIn</h2>
     <div class="hp-recent__grid">
-      {{ range $recentPosts }}
+      {{ range $linkedinPosts }}
         <a href="{{ .RelPermalink }}" class="hp-recent__card">
           {{ with .Params.image }}
             <div class="hp-recent__image">
