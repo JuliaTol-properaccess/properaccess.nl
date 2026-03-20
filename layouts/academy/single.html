@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{/* Collect all sections for sidebar, sorted by section_number */}}
-{{ $allSections := .Site.GetPage "section" "dutch/academy" }}
+{{ $allSections := .Site.GetPage "/academy" }}
 {{ $sections := slice }}
 {{ if $allSections }}
   {{ range sort $allSections.Sections "Params.section_number" }}
