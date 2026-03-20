@@ -3,7 +3,7 @@ title: "Structuur en Semantiek"
 section_number: 1
 locked: false
 description: "Leer hoe semantische HTML-structuur de basis vormt van digitale toegankelijkheid."
-quizzes: 114
+quizzes: 47
 duration_minutes: 90
 layout: "academy"
 ---
