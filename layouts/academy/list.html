@@ -54,7 +54,9 @@
 
           <ul class="academy__section-list" id="academy-section-list-{{ $sectionNum }}">
             {{ range sort $chapters "Params.chapter_number" }}
-              <li class="academy__chapter academy__chapter--locked">
+              {{ $isLocked := .Params.locked }}
+              <li class="academy__chapter{{ if $isLocked }} academy__chapter--locked{{ end }}">
+                {{ if $isLocked }}
                 <span class="academy__chapter-inner">
                   <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
                   <span class="academy__chapter-title">{{ .Title }}</span>
@@ -63,6 +65,12 @@
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                   </svg>
                 </span>
+                {{ else }}
+                <a href="{{ .RelPermalink }}" class="academy__chapter-inner">
+                  <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
+                  <span class="academy__chapter-title">{{ .Title }}</span>
+                </a>
+                {{ end }}
               </li>
             {{ end }}
           </ul>
@@ -131,7 +139,12 @@
           {{ $quizzes := $section.Params.quizzes | default 0 }}
           {{ $duration := $section.Params.duration_minutes | default 0 }}
 
+          {{ $sectionLocked := $section.Params.locked }}
+          {{ if $sectionLocked }}
           <div class="academy__section-card academy__section-card--locked">
+          {{ else }}
+          <a href="{{ (index (sort $chapters "Params.chapter_number") 0).RelPermalink }}" class="academy__section-card">
+          {{ end }}
             <div class="academy__section-card-header">
               <span class="academy__section-card-num">{{ $sectionNum }}</span>
               <h2 class="academy__section-card-title">{{ $section.Title }}</h2>
@@ -159,14 +172,19 @@
                 {{ $duration }} min
               </span>
             </div>
-            {{/* Lock overlay */}}
+            {{ if $sectionLocked }}
             <div class="academy__section-card-lock" aria-label="Deze sectie is vergrendeld">
               <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
               </svg>
             </div>
+            {{ end }}
+          {{ if $sectionLocked }}
           </div>
+          {{ else }}
+          </a>
+          {{ end }}
         {{ end }}
       </div>
 
