@@ -128,4 +128,7 @@
 </div>
 
 <script src="{{ "js/academy.js" | relURL }}" defer></script>
+{{ if not .Params.locked }}
+<script src="{{ "js/academy-quiz.js" | relURL }}" defer></script>
+{{ end }}
 {{ end }}
