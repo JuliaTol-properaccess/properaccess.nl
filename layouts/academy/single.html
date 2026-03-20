@@ -56,7 +56,9 @@
           <ul class="academy__section-list{{ if not $isCurrentSection }} academy__section-list--collapsed{{ end }}" id="academy-section-list-{{ $sectionNum }}">
             {{ range sort $chapters "Params.chapter_number" }}
               {{ $isActive := eq .RelPermalink $.RelPermalink }}
-              <li class="academy__chapter academy__chapter--locked{{ if $isActive }} academy__chapter--active{{ end }}">
+              {{ $isLocked := .Params.locked }}
+              <li class="academy__chapter{{ if $isLocked }} academy__chapter--locked{{ end }}{{ if $isActive }} academy__chapter--active{{ end }}">
+                {{ if $isLocked }}
                 <span class="academy__chapter-inner" aria-current="{{ if $isActive }}page{{ end }}">
                   <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
                   <span class="academy__chapter-title">{{ .Title }}</span>
@@ -65,6 +67,12 @@
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                   </svg>
                 </span>
+                {{ else }}
+                <a href="{{ .RelPermalink }}" class="academy__chapter-inner" {{ if $isActive }}aria-current="page"{{ end }}>
+                  <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
+                  <span class="academy__chapter-title">{{ .Title }}</span>
+                </a>
+                {{ end }}
               </li>
             {{ end }}
           </ul>
@@ -73,8 +81,9 @@
     </div>
   </nav>
 
-  {{/* Main content — locked state */}}
+  {{/* Main content */}}
   <main class="academy__main" id="academyMain">
+    {{ if .Params.locked }}
     <div class="academy__locked-page">
       <div class="academy__locked-icon" aria-hidden="true">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -89,6 +98,32 @@
       <a href="/contact" class="academy__cta-btn">Houd me op de hoogte</a>
       <a href="{{ "/academy/" | relLangURL }}" class="academy__locked-back">← Terug naar overzicht</a>
     </div>
+    {{ else }}
+    <article class="academy__content">
+      <div class="academy__content-header">
+        <p class="academy__content-label">Sectie {{ .Params.section_number }} · Hoofdstuk {{ .Params.chapter_number }}</p>
+        <h1 class="academy__content-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="academy__content-intro">{{ . }}</p>{{ end }}
+      </div>
+      <div class="academy__content-body">
+        {{ .Content }}
+      </div>
+      <nav class="academy__content-nav" aria-label="Hoofdstuknavigatie">
+        {{ with .PrevInSection }}
+          <a href="{{ .RelPermalink }}" class="academy__nav-link academy__nav-link--prev">
+            <span class="academy__nav-direction">← Vorig hoofdstuk</span>
+            <span class="academy__nav-title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a href="{{ .RelPermalink }}" class="academy__nav-link academy__nav-link--next">
+            <span class="academy__nav-direction">Volgend hoofdstuk →</span>
+            <span class="academy__nav-title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      </nav>
+    </article>
+    {{ end }}
   </main>
 </div>
 
