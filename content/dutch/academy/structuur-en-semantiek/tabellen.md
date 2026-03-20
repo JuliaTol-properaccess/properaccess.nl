@@ -274,8 +274,8 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 
 <div class="academy-quiz" id="quiz-tabellen">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een tabel heeft kolomkoppen die visueel vetgedrukt zijn met <code>&lt;td&gt;&lt;strong&gt;Naam&lt;/strong&gt;&lt;/td&gt;</code>. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een tabel heeft kolomkoppen die visueel vetgedrukt zijn met <code>&lt;td&gt;&lt;strong&gt;Naam&lt;/strong&gt;&lt;/td&gt;</code>. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -302,10 +302,10 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <p>Een <code>&lt;td&gt;</code> met <code>&lt;strong&gt;</code> ziet er visueel uit als een kop, maar een schermlezer herkent het niet als tabelkop. Gebruik <code>&lt;th scope="col"&gt;</code> zodat de kop aan datacellen wordt gekoppeld.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat doet het <code>scope</code>-attribuut op een <code>&lt;th&gt;</code>?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat doet het <code>scope</code>-attribuut op een <code>&lt;th&gt;</code>?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -332,10 +332,10 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <p>Het <code>scope</code>-attribuut vertelt de schermlezer de richting van de kop: <code>col</code> voor kolommen, <code>row</code> voor rijen. Dat maakt het mogelijk om bij elke cel de juiste kop voor te lezen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een website gebruikt een <code>&lt;table&gt;</code> om twee kolommen naast elkaar te plaatsen: een afbeelding links en tekst rechts. Wat is het advies?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een website gebruikt een <code>&lt;table&gt;</code> om twee kolommen naast elkaar te plaatsen: een afbeelding links en tekst rechts. Wat is het advies?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -362,10 +362,10 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <p>Gebruik geen tabel voor layout. Dat geeft een schermlezer verkeerde informatie ("tabel met 1 rij en 2 kolommen"). Los het op met CSS, of voeg <code>role="presentation"</code> toe als de tabel niet te vermijden is.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Wat is het verschil tussen een <code>&lt;caption&gt;</code> en een <code>&lt;h2&gt;</code> boven een tabel?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Wat is het verschil tussen een <code>&lt;caption&gt;</code> en een <code>&lt;h2&gt;</code> boven een tabel?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -392,10 +392,10 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <p>De <code>&lt;caption&gt;</code> is onderdeel van de tabel en wordt altijd voorgelezen als de tabel focus krijgt. Een <code>&lt;h2&gt;</code> is onderdeel van de paginastructuur maar niet gekoppeld aan de tabel. Beide kunnen naast elkaar bestaan.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> Een webshop toont productspecificaties als "Gewicht: 250g", "Kleur: zwart", "Materiaal: katoen". Wat is de beste HTML-structuur?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> Een webshop toont productspecificaties als "Gewicht: 250g", "Kleur: zwart", "Materiaal: katoen". Wat is de beste HTML-structuur?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -422,6 +422,6 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <p>Sleutel-waarde-paren (eigenschap + waarde) passen het best in een beschrijvingslijst (<code>&lt;dl&gt;</code>). Een tabel is niet fout maar zwaarder dan nodig voor deze structuur.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

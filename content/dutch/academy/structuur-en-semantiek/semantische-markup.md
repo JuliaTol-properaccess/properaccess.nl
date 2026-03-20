@@ -131,8 +131,8 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 
 <div class="academy-quiz" id="quiz-semantische-markup">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> In de code staat: <code>&lt;p class="title"&gt;Over ons&lt;/p&gt;</code>. De tekst ziet er visueel uit als een kop. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> In de code staat: <code>&lt;p class="title"&gt;Over ons&lt;/p&gt;</code>. De tekst ziet er visueel uit als een kop. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -159,10 +159,10 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <p>Een schermlezer herkent een <code>&lt;p&gt;</code> niet als kop, ongeacht de visuele opmaak. De gebruiker kan er niet naartoe navigeren. Gebruik een <code>&lt;h2&gt;</code> (of het juiste kopniveau).</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wanneer is een <code>&lt;div&gt;</code> het juiste element?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wanneer is een <code>&lt;div&gt;</code> het juiste element?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -189,10 +189,10 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <p>Een <code>&lt;div&gt;</code> heeft geen semantische betekenis. Voor een knop gebruik je <code>&lt;button&gt;</code>, voor navigatie <code>&lt;nav&gt;</code>. Een <code>&lt;div&gt;</code> is alleen geschikt als puur visuele container.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Drie productvoordelen staan als <code>&lt;div&gt;</code>-elementen met een streepje ervoor. Wat ontbreekt er?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Drie productvoordelen staan als <code>&lt;div&gt;</code>-elementen met een streepje ervoor. Wat ontbreekt er?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -219,10 +219,10 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <p>De items vormen een opsomming en horen in een <code>&lt;ul&gt;</code> met <code>&lt;li&gt;</code>-elementen. Dan zegt een schermlezer "lijst met 3 items" en kan de gebruiker de lijst overslaan.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een formulier heeft secties "Bezorgadres" en "Factuuradres", elk met velden voor straat, postcode en woonplaats. Hoe maak je het onderscheid duidelijk?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een formulier heeft secties "Bezorgadres" en "Factuuradres", elk met velden voor straat, postcode en woonplaats. Hoe maak je het onderscheid duidelijk?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -249,10 +249,10 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <p>De beste oplossing is <code>&lt;fieldset&gt;</code> met <code>&lt;legend&gt;</code>. Dat koppelt de groepsnaam aan de velden. Een kop helpt visueel maar wordt niet automatisch gekoppeld. Kleur alleen is onvoldoende (SC 1.4.1).</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> Wat betekent "programmatisch bepaalbaar" volgens WCAG?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> Wat betekent "programmatisch bepaalbaar" volgens WCAG?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -279,6 +279,6 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <p>"Programmatisch bepaalbaar" betekent: door software vast te stellen op basis van de HTML-code. Het gaat niet om wat je ziet, maar om wat in de code staat.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

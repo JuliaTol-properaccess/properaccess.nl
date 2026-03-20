@@ -209,8 +209,8 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 
 <div class="academy-quiz" id="quiz-markup-validiteit">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Twee invoervelden op dezelfde pagina hebben allebei <code>id="email"</code>. Elk veld heeft een <code>&lt;label for="email"&gt;</code>. Wat gaat er mis?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Twee invoervelden op dezelfde pagina hebben allebei <code>id="email"</code>. Elk veld heeft een <code>&lt;label for="email"&gt;</code>. Wat gaat er mis?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -237,10 +237,10 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>Bij dubbele ID's koppelt het <code>for</code>-attribuut altijd aan het eerste element met dat ID. Het tweede invoerveld heeft daardoor geen programmatisch gekoppeld label.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Waarom is SC 4.1.1 (Parsing) afgeschaft in WCAG 2.2?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Waarom is SC 4.1.1 (Parsing) afgeschaft in WCAG 2.2?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -267,10 +267,10 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>SC 4.1.1 is afgeschaft omdat moderne browsers HTML-fouten consistent herstellen. De fouten die er nog toe doen -- zoals dubbele ID's en verkeerde nesting -- vallen onder andere criteria.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> In de code staat: <code>&lt;button&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/button&gt;</code>. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> In de code staat: <code>&lt;button&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/button&gt;</code>. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -297,10 +297,10 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>Interactieve elementen mogen niet in elkaar genest worden. Een <code>&lt;a&gt;</code> in een <code>&lt;button&gt;</code> leidt tot onvoorspelbaar gedrag. Gebruik een link als het ergens naartoe navigeert, of een knop als het een actie uitvoert.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> De W3C-validator meldt 15 fouten op je pagina. Welke pak je als eerste aan vanuit toegankelijkheidsperspectief?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> De W3C-validator meldt 15 fouten op je pagina. Welke pak je als eerste aan vanuit toegankelijkheidsperspectief?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -327,10 +327,10 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>Focus op de fouten met de meeste impact: dubbele ID's breken labels en ARIA-verwijzingen, en geneste interactieve elementen leiden tot onvoorspelbaar gedrag. Verouderde attributen en ontbrekende eindtags zijn cosmetisch.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> Een hergebruikt formuliercomponent staat twee keer op dezelfde pagina. Welk probleem ontstaat er waarschijnlijk?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> Een hergebruikt formuliercomponent staat twee keer op dezelfde pagina. Welk probleem ontstaat er waarschijnlijk?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -357,6 +357,6 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>Het grootste risico is dubbele ID's. Als beide componenten dezelfde ID's gebruiken, koppelen labels en ARIA-verwijzingen aan de verkeerde velden. Genereer unieke ID's per instantie van het component.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

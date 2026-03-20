@@ -276,8 +276,8 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 
 <div class="academy-quiz" id="quiz-overige-semantische-elementen">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een webshop toont een doorgestreepte prijs en een nieuwe prijs. De code is: <code>&lt;span class="old-price"&gt;€ 49&lt;/span&gt; &lt;span class="new-price"&gt;€ 39&lt;/span&gt;</code>. Wat ontbreekt er?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een webshop toont een doorgestreepte prijs en een nieuwe prijs. De code is: <code>&lt;span class="old-price"&gt;€ 49&lt;/span&gt; &lt;span class="new-price"&gt;€ 39&lt;/span&gt;</code>. Wat ontbreekt er?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -304,10 +304,10 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>De doorstreping via CSS is puur visueel. Hulpsoftware weet niet dat de ene prijs vervallen is en de andere nieuw. Gebruik <code>&lt;del&gt;</code> voor de oude prijs en <code>&lt;ins&gt;</code> voor de nieuwe.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat is het verschil tussen <code>&lt;em&gt;</code> en <code>&lt;strong&gt;</code>?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat is het verschil tussen <code>&lt;em&gt;</code> en <code>&lt;strong&gt;</code>?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -334,10 +334,10 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p><code>&lt;em&gt;</code> geeft klemtoon -- het verandert hoe je de zin leest. <code>&lt;strong&gt;</code> markeert belang -- dit is belangrijk. Beide zijn semantisch, niet alleen visueel.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een afbeelding heeft een bijschrift eronder. In de code staan ze als losse elementen: een <code>&lt;img&gt;</code> en een <code>&lt;p&gt;</code>. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een afbeelding heeft een bijschrift eronder. In de code staan ze als losse elementen: een <code>&lt;img&gt;</code> en een <code>&lt;p&gt;</code>. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -364,10 +364,10 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>De afbeelding en het bijschrift moeten programmatisch gekoppeld zijn. Gebruik <code>&lt;figure&gt;</code> om ze te groeperen en <code>&lt;figcaption&gt;</code> voor het bijschrift. Dan begrijpt hulpsoftware de relatie.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Waarom heeft <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> een voordeel boven een custom accordion met divs en JavaScript?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Waarom heeft <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> een voordeel boven een custom accordion met divs en JavaScript?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -394,10 +394,10 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>Het grootste voordeel is ingebouwde toegankelijkheid. <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> is standaard focusbaar, activeerbaar en geeft de open/dicht-status door. Een custom accordion vereist handmatig <code>role</code>, <code>aria-expanded</code>, toetsenbordafhandeling en focusbeheer.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> De afkorting "EAA" staat op meerdere plekken op een pagina. Hoe maak je de betekenis duidelijk?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> De afkorting "EAA" staat op meerdere plekken op een pagina. Hoe maak je de betekenis duidelijk?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -424,6 +424,6 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>De beste aanpak: schrijf de afkorting de eerste keer voluit -- "European Accessibility Act (EAA)" -- en gebruik daarna <code>&lt;abbr title="European Accessibility Act"&gt;EAA&lt;/abbr&gt;</code>. Dat geeft zowel visuele als programmatische duidelijkheid.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

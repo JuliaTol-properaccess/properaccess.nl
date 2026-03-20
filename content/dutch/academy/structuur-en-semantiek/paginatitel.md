@@ -133,8 +133,8 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 
 <div class="academy-quiz" id="quiz-paginatitel">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een website heeft vijf pagina's. Elke pagina heeft de titel "Mijn Website". Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een website heeft vijf pagina's. Elke pagina heeft de titel "Mijn Website". Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -161,10 +161,10 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <p>Als alle pagina's dezelfde titel hebben, kan een schermlezergebruiker niet onderscheiden welke pagina welke is. Elke pagina heeft een unieke, beschrijvende titel nodig (SC 2.4.2).</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat is de beste volgorde voor een paginatitel?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wat is de beste volgorde voor een paginatitel?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -191,10 +191,10 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <p>De best practice is: paginanaam eerst, sitenaam daarna. Zo hoort de schermlezergebruiker direct het specifieke deel, zonder eerst de herhalende sitenaam te moeten aanhoren.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een single-page applicatie (SPA) wisselt van weergave zonder de pagina te herladen. Wat moet er gebeuren met de paginatitel?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een single-page applicatie (SPA) wisselt van weergave zonder de pagina te herladen. Wat moet er gebeuren met de paginatitel?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -221,10 +221,10 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <p>Bij een SPA verandert de content zonder herladen. De browser past de titel niet automatisch aan. Je moet met JavaScript <code>document.title</code> bijwerken zodat de titel altijd klopt bij de huidige weergave.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een link zegt "Bekijk onze tarieven". De bestemmingspagina heeft als titel "Pagina 3". Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een link zegt "Bekijk onze tarieven". De bestemmingspagina heeft als titel "Pagina 3". Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -251,6 +251,6 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <p>"Pagina 3" beschrijft niets. De titel moet het onderwerp van de pagina beschrijven en aansluiten bij de linktekst waarmee de gebruiker er naartoe navigeerde. Een titel als "Tarieven | Mijn Site" zou hier passend zijn.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

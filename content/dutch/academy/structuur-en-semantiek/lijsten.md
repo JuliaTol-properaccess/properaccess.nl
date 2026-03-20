@@ -208,8 +208,8 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 
 <div class="academy-quiz" id="quiz-lijsten">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina toont vier voordelen als <code>&lt;p&gt;</code>-elementen met een unicode-bullet ervoor. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina toont vier voordelen als <code>&lt;p&gt;</code>-elementen met een unicode-bullet ervoor. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -236,10 +236,10 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 <p>Een schermlezer herkent losse <code>&lt;p&gt;</code>-elementen niet als lijst. Gebruik <code>&lt;ul&gt;</code> met <code>&lt;li&gt;</code>-elementen zodat de schermlezer zegt "lijst met 4 items" en de gebruiker de lijst kan overslaan.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wanneer gebruik je een <code>&lt;ol&gt;</code> in plaats van een <code>&lt;ul&gt;</code>?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Wanneer gebruik je een <code>&lt;ol&gt;</code> in plaats van een <code>&lt;ul&gt;</code>?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -266,10 +266,10 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 <p>De keuze tussen <code>&lt;ol&gt;</code> en <code>&lt;ul&gt;</code> hangt af van de betekenis: is de volgorde relevant? Dan <code>&lt;ol&gt;</code>. Zo niet? Dan <code>&lt;ul&gt;</code>. Het visuele verschil regel je met CSS.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> In Safari met VoiceOver wordt een <code>&lt;ul&gt;</code> met <code>list-style: none</code> niet als lijst herkend. Wat is de oplossing?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> In Safari met VoiceOver wordt een <code>&lt;ul&gt;</code> met <code>list-style: none</code> niet als lijst herkend. Wat is de oplossing?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -296,10 +296,10 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 <p>De oplossing is <code>role="list"</code> op de <code>&lt;ul&gt;</code>. Dat vertelt Safari/VoiceOver expliciet dat het een lijst is, ongeacht de CSS.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Waar moet een geneste <code>&lt;ul&gt;</code> in de HTML staan?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Waar moet een geneste <code>&lt;ul&gt;</code> in de HTML staan?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -326,6 +326,6 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 <p>Een geneste <code>&lt;ul&gt;</code> moet binnen een <code>&lt;li&gt;</code> staan. Dat is de enige valide plek. Browsers kunnen het soms corrigeren, maar je mag daar niet op vertrouwen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

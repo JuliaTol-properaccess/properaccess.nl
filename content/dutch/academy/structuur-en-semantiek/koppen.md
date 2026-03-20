@@ -160,8 +160,8 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 
 <div class="academy-quiz" id="quiz-koppen">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina heeft de volgende koppen: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h2&gt;</code>. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina heeft de volgende koppen: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h2&gt;</code>. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -188,10 +188,10 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <p>Het probleem is het overgeslagen kopniveau: van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code> zonder een <code>&lt;h3&gt;</code> ertussen. Meerdere <code>&lt;h2&gt;</code>'s mag -- die staan op hetzelfde niveau in de hierarchie.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Waarom is <code>&lt;p class="heading"&gt;Over ons&lt;/p&gt;</code> een probleem?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Waarom is <code>&lt;p class="heading"&gt;Over ons&lt;/p&gt;</code> een probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -218,10 +218,10 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <p>Een schermlezer leest geen CSS. Een <code>&lt;p&gt;</code> met de class "heading" is in de code gewoon een alinea. Gebruik een <code>&lt;h2&gt;</code> (of het juiste niveau) zodat de schermlezer het als kop herkent.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Hoeveel <code>&lt;h1&gt;</code>-elementen mag een pagina bevatten?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Hoeveel <code>&lt;h1&gt;</code>-elementen mag een pagina bevatten?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -248,10 +248,10 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <p>De best practice is precies een <code>&lt;h1&gt;</code> per pagina. Die beschrijft het hoofdonderwerp. Meerdere <code>&lt;h1&gt;</code>'s maken de hierarchie onduidelijk.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een developer gebruikt een <code>&lt;h4&gt;</code> omdat de tekst kleiner moet zijn dan de <code>&lt;h2&gt;</code> erboven. Wat is het juiste advies?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een developer gebruikt een <code>&lt;h4&gt;</code> omdat de tekst kleiner moet zijn dan de <code>&lt;h2&gt;</code> erboven. Wat is het juiste advies?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -278,10 +278,10 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <p>Kopniveaus gaan over hierarchie, niet over grootte. Na een <code>&lt;h2&gt;</code> hoort een <code>&lt;h3&gt;</code> te komen. Wil je de tekst kleiner? Pas de CSS aan. Gebruik nooit een verkeerd kopniveau voor visueel effect.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> Welk WCAG-criterium gaat over de <em>inhoud</em> van koppen (beschrijvend zijn)?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> Welk WCAG-criterium gaat over de <em>inhoud</em> van koppen (beschrijvend zijn)?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -308,6 +308,6 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <p>SC 2.4.6 (Koppen en labels) gaat over de inhoud: koppen moeten beschrijvend zijn. SC 1.3.1 gaat over de markup: koppen moeten als <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> zijn gecodeerd. Het zijn twee aparte criteria.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

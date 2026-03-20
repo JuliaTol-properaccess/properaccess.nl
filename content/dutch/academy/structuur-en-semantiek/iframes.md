@@ -167,8 +167,8 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 
 <div class="academy-quiz" id="quiz-iframes">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina bevat een YouTube-embed zonder <code>title</code>-attribuut. Wat meldt een schermlezer?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina bevat een YouTube-embed zonder <code>title</code>-attribuut. Wat meldt een schermlezer?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -195,10 +195,10 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 <p>Een schermlezer leest het <code>title</code>-attribuut van het iframe. Zonder dat attribuut meldt het alleen "frame" of de URL. De browser haalt geen titel op van de externe pagina.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Welke <code>title</code> is het meest geschikt voor een Google Maps-iframe dat de locatie van een restaurant toont?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Welke <code>title</code> is het meest geschikt voor een Google Maps-iframe dat de locatie van een restaurant toont?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -225,10 +225,10 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 <p>Een goede title beschrijft de inhoud, niet het type element. "Kaart met locatie van Restaurant De Gouden Leeuw, Keizersgracht 50, Amsterdam" vertelt de gebruiker precies wat er te vinden is.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een iframe bevat een trackingpixel (geen zichtbare content). Wat is de beste aanpak?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Een iframe bevat een trackingpixel (geen zichtbare content). Wat is de beste aanpak?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -255,10 +255,10 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 <p>Een trackingpixel bevat geen nuttige content. Verberg het iframe met <code>aria-hidden="true"</code> en <code>tabindex="-1"</code>. Zonder die attributen kan een schermlezer het onnodig aankondigen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een iframe bevat een betaalformulier van een externe provider. Je voegt <code>tabindex="-1"</code> toe. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Een iframe bevat een betaalformulier van een externe provider. Je voegt <code>tabindex="-1"</code> toe. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -285,6 +285,6 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 <p>Met <code>tabindex="-1"</code> kan een toetsenbordgebruiker het iframe niet betreden. Dat betekent dat het betaalformulier onbereikbaar wordt. Gebruik <code>tabindex="-1"</code> alleen bij iframes die geen interactieve elementen bevatten.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

@@ -247,8 +247,8 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 
 <div class="academy-quiz" id="quiz-landmarks">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina heeft twee <code>&lt;nav&gt;</code>-elementen: een hoofdmenu en een footermenu. Geen van beide heeft een <code>aria-label</code>. Wat is het probleem?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Een pagina heeft twee <code>&lt;nav&gt;</code>-elementen: een hoofdmenu en een footermenu. Geen van beide heeft een <code>aria-label</code>. Wat is het probleem?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -275,10 +275,10 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <p>Meerdere <code>&lt;nav&gt;</code>-elementen zijn prima, maar ze moeten wel een label hebben zodat schermlezergebruikers ze uit elkaar kunnen houden. Gebruik <code>aria-label</code> om ze te benoemen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Hoeveel <code>&lt;main&gt;</code>-elementen mag een pagina bevatten?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Hoeveel <code>&lt;main&gt;</code>-elementen mag een pagina bevatten?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -305,10 +305,10 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <p>Een pagina heeft precies een <code>&lt;main&gt;</code>-element. Dat markeert de unieke content van de pagina. Gebruik <code>&lt;section&gt;</code> of <code>&lt;article&gt;</code> om content binnen <code>&lt;main&gt;</code> te verdelen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Wat is het doel van een skip link?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Wat is het doel van een skip link?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -335,10 +335,10 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <p>Een skip link is een link (vaak visueel verborgen tot je er naartoe tabt) die de gebruiker direct naar de hoofdcontent laat springen. Het vervangt landmarks niet, maar vult ze aan.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Wanneer heeft een <code>&lt;header&gt;</code>-element de ARIA-rol <code>banner</code>?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Wanneer heeft een <code>&lt;header&gt;</code>-element de ARIA-rol <code>banner</code>?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -365,10 +365,10 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <p>Een <code>&lt;header&gt;</code> heeft alleen de rol <code>banner</code> als het op paginaniveau staat (direct kind van <code>&lt;body&gt;</code>). Binnen een <code>&lt;article&gt;</code> of <code>&lt;section&gt;</code> is het geen landmark.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> In de code staat: <code>&lt;div role="navigation"&gt;</code>. Wat is het beste advies?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> In de code staat: <code>&lt;div role="navigation"&gt;</code>. Wat is het beste advies?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -395,6 +395,6 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <p>Gebruik <code>&lt;nav&gt;</code> in plaats van <code>&lt;div role="navigation"&gt;</code>. HTML-elementen bieden dezelfde semantiek maar zijn robuuster en beter ondersteund. Dat is de eerste regel van ARIA.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>

@@ -139,8 +139,8 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 
 <div class="academy-quiz" id="quiz-taal">
 
-<div class="academy-quiz__question" data-question="1">
-<p class="academy-quiz__q-text"><strong>Vraag 1.</strong> Waar hoort het <code>lang</code>-attribuut voor de standaardtaal van een pagina?</p>
+<fieldset class="academy-quiz__question" data-question="1">
+<legend class="academy-quiz__q-text"><strong>Vraag 1.</strong> Waar hoort het <code>lang</code>-attribuut voor de standaardtaal van een pagina?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
@@ -167,10 +167,10 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>Het <code>lang</code>-attribuut hoort op het <code>&lt;html&gt;</code>-element, niet op <code>&lt;body&gt;</code>, <code>&lt;head&gt;</code> of in een <code>&lt;meta&gt;</code>-tag. Dat is wat SC 3.1.1 vereist.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="2">
-<p class="academy-quiz__q-text"><strong>Vraag 2.</strong> Op een Nederlandstalige pagina staat een alinea in het Duits. Hoe markeer je dat correct?</p>
+<fieldset class="academy-quiz__question" data-question="2">
+<legend class="academy-quiz__q-text"><strong>Vraag 2.</strong> Op een Nederlandstalige pagina staat een alinea in het Duits. Hoe markeer je dat correct?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
@@ -197,10 +197,10 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>Voeg <code>lang="de"</code> toe aan het element dat de Duitse alinea bevat (bijvoorbeeld een <code>&lt;p&gt;</code> of <code>&lt;blockquote&gt;</code>). Verander niet de taal op <code>&lt;html&gt;</code> -- die blijft de standaardtaal van de pagina.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="3">
-<p class="academy-quiz__q-text"><strong>Vraag 3.</strong> Op een Nederlandstalige pagina staat het woord "website". Moet je daar <code>lang="en"</code> aan toevoegen?</p>
+<fieldset class="academy-quiz__question" data-question="3">
+<legend class="academy-quiz__q-text"><strong>Vraag 3.</strong> Op een Nederlandstalige pagina staat het woord "website". Moet je daar <code>lang="en"</code> aan toevoegen?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
@@ -227,10 +227,10 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>"Website" is opgenomen in het Nederlandse woordenboek en geldt als ingeburgerd leenwoord. SC 3.1.2 vereist geen <code>lang</code>-attribuut voor ingeburgerde leenwoorden, technische termen en eigennamen.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="4">
-<p class="academy-quiz__q-text"><strong>Vraag 4.</strong> Welke taalcode is geldig voor een Nederlandstalige pagina?</p>
+<fieldset class="academy-quiz__question" data-question="4">
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Welke taalcode is geldig voor een Nederlandstalige pagina?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -257,10 +257,10 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>De geldige BCP 47 taalcode voor Nederlands is <code>"nl"</code>. Codes zoals "dutch" en "ned" zijn ongeldig. Let op: hoewel het attribuut niet hoofdlettergevoelig is, is de conventie om kleine letters te gebruiken.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
-<div class="academy-quiz__question" data-question="5">
-<p class="academy-quiz__q-text"><strong>Vraag 5.</strong> Wat is het directe gevolg als een Nederlandstalige pagina <code>lang="en"</code> heeft?</p>
+<fieldset class="academy-quiz__question" data-question="5">
+<legend class="academy-quiz__q-text"><strong>Vraag 5.</strong> Wat is het directe gevolg als een Nederlandstalige pagina <code>lang="en"</code> heeft?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
@@ -287,6 +287,6 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>Een schermlezer gebruikt het <code>lang</code>-attribuut om de juiste uitspraakregels te laden. Bij <code>lang="en"</code> op een Nederlandstalige pagina wordt alle tekst met Engelse uitspraak voorgelezen -- onverstaanbaar voor de luisteraar.</p>
 </div>
 </div>
-</div>
+</fieldset>
 
 </div>
