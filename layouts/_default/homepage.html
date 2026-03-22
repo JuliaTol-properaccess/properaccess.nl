@@ -462,8 +462,42 @@
 </section>
 
 
-<!-- ─── WEBINAR ─── -->
-{{ partial "webinar-section.html" . }}
+<!-- ─── VAN LINKEDIN ─── -->
+<section class="section hp-linkedin">
+  <div class="container">
+    <h2 class="hp-section-title">Van LinkedIn</h2>
+    <p class="hp-narrow hp-linkedin__intro">
+      Elke week delen we een korte, praktische post over veelgemaakte toegankelijkheidsfouten.
+      Concreet, met voorbeelden en oplossingen.
+    </p>
+
+    <div class="hp-linkedin__grid">
+      {{ $posts := where site.RegularPages "Section" "blog" }}
+      {{ $wcag := where $posts ".Params.categories" "intersect" (slice "wcag-uitgelegd") }}
+      {{ $recent := first 3 ($wcag.ByDate.Reverse) }}
+      {{ range $recent }}
+        <a href="{{ .RelPermalink }}" class="hp-linkedin__card">
+          {{ with .Params.image }}
+            <div class="hp-linkedin__card-img">
+              <img src="{{ . }}" alt="" loading="lazy" />
+            </div>
+          {{ end }}
+          <div class="hp-linkedin__card-body">
+            <h3 class="hp-linkedin__card-title">{{ .Title }}</h3>
+            <p class="hp-linkedin__card-desc">{{ .Description | truncate 120 }}</p>
+            <time class="hp-linkedin__card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "2 January 2006" }}
+            </time>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+    <p class="hp-section-cta">
+      <a href="/blog/" class="hp-link-arrow">Bekijk alle artikelen &rarr;</a>
+    </p>
+  </div>
+</section>
 
 
 <!-- ─── WAAROM PROPER ACCESS ─── -->
@@ -530,7 +564,7 @@
 
 
 <!-- ─── OOK OP LINKEDIN ─── -->
-{{ $linkedinPosts := first 3 (sort (where (where site.RegularPages "Section" "blog") "Params.categories" "intersect" (slice "Webshop" "EAA")) "Date" "desc") }}
+{{ $linkedinPosts := first 3 (sort (where (where site.RegularPages "Section" "blog") "Params.tags" "intersect" (slice "webshop" "eaa")) "Date" "desc") }}
 {{ if $linkedinPosts }}
 <section class="section hp-recent">
   <div class="container">
