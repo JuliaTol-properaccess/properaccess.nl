@@ -3408,6 +3408,89 @@ html.dark .tool-card__cta-link {
 }
 
 
+/* ─── Toolsuite promo ─── */
+
+.toolsuite-promo {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+html.dark .toolsuite-promo {
+  border-color: var(--color-darkmode-border);
+}
+
+.toolsuite-promo__content {
+  flex: 1;
+}
+
+.toolsuite-promo__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+
+html.dark .toolsuite-promo__title {
+  color: var(--color-darkmode-text);
+}
+
+.toolsuite-promo__text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+html.dark .toolsuite-promo__text {
+  color: var(--color-darkmode-text-secondary);
+}
+
+.toolsuite-promo__cta {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #A30D4B;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+
+.toolsuite-promo__cta:hover {
+  background-color: #8a0b3f;
+  color: #fff;
+}
+
+.toolsuite-promo__image {
+  flex: 0 0 420px;
+}
+
+.toolsuite-promo__image img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .toolsuite-promo {
+    flex-direction: column;
+  }
+
+  .toolsuite-promo__image {
+    flex: none;
+    width: 100%;
+  }
+}
+
+
 /* ═══════════════════════════════════════════════════════════
    HOMEPAGE
    ═══════════════════════════════════════════════════════════ */
