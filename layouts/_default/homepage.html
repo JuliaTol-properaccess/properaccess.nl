@@ -248,58 +248,59 @@
 <!-- ─── VOOR WIE ─── -->
 <section class="section hp-segments">
   <div class="container">
-    <h2 class="hp-section-title">We werken voor organisaties die het goed willen doen</h2>
-    <p class="hp-section-intro">
-      Of je nu wettelijk verplicht bent (Wdo, EAA) of gewoon wilt dat iedereen je
-      website kan gebruiken &mdash; we helpen je op weg.
-    </p>
-
-    <div class="hp-segments__layout">
-      <div class="hp-segments__grid">
-        <a href="/digitale-toegankelijkheid-overheid/" class="hp-segment">
-          <h3 class="hp-segment__title">Overheid en semi-overheid</h3>
-          <p class="hp-segment__desc">
-            Complexe websites, veel content, strenge eisen. We kennen de weg en
-            denken mee over prioriteiten.
-          </p>
-        </a>
-
-        <a href="/e-commerce-digitale-toegankelijkheid/" class="hp-segment">
-          <h3 class="hp-segment__title">Webshops en e-commerce</h3>
-          <p class="hp-segment__desc">
-            Sinds juni 2025 geldt de European Accessibility Act. We helpen je om
-            je webshop toegankelijk te maken zonder je conversie te verliezen.
-          </p>
-        </a>
-
-        <a href="/contact/" class="hp-segment">
-          <h3 class="hp-segment__title">Cultuur, musea en erfgoed</h3>
-          <p class="hp-segment__desc">
-            Van ticketing tot collectiepagina&rsquo;s &mdash; we weten waar de
-            knelpunten zitten en hoe je ze oplost.
-          </p>
-        </a>
-
-        <a href="/digital-agency/" class="hp-segment">
-          <h3 class="hp-segment__title">Digital agencies</h3>
-          <p class="hp-segment__desc">
-            Wil je toegankelijkheid meenemen in je projecten? We werken samen als
-            kennispartner, of nemen de audit voor onze rekening.
-          </p>
-        </a>
-
-        <a href="/onderwijs-digitale-toegankelijkheid/" class="hp-segment">
-          <h3 class="hp-segment__title">Onderwijs</h3>
-          <p class="hp-segment__desc">
-            Kunnen al je studenten bij de lesstof? We auditen leeromgevingen,
-            toetssystemen en e-learning modules op toegankelijkheid.
-          </p>
-        </a>
+    <div class="hp-segments__header">
+      <div class="hp-segments__header-text">
+        <h2 class="hp-section-title">We werken voor organisaties die het goed willen doen</h2>
+        <p class="hp-section-intro">
+          Of je nu wettelijk verplicht bent (Wdo, EAA) of gewoon wilt dat iedereen je
+          website kan gebruiken &mdash; we helpen je op weg.
+        </p>
       </div>
-
       <div class="hp-segments__logos">
         {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Logo's van opdrachtgevers: Provincie Zuid-Holland, Rijksmuseum, Provincie Noord-Holland, Museumvereniging, Onderzoeksraad voor Veiligheid, gemeente 's-Hertogenbosch, NRC, Museum.nl, gemeente Amersfoort, gemeente Alkmaar, Eteck, Van Gogh Museum, Plus, Jumbo, Caroline Svedbom" "Loading" "lazy" "Class" "hp-segments__logos-img" "DisplayXL" "500x") }}
       </div>
+    </div>
+
+    <div class="hp-segments__grid">
+      <a href="/digitale-toegankelijkheid-overheid/" class="hp-segment">
+        <h3 class="hp-segment__title">Overheid en semi-overheid</h3>
+        <p class="hp-segment__desc">
+          Complexe websites, veel content, strenge eisen. We kennen de weg en
+          denken mee over prioriteiten.
+        </p>
+      </a>
+
+      <a href="/e-commerce-digitale-toegankelijkheid/" class="hp-segment">
+        <h3 class="hp-segment__title">Webshops en e-commerce</h3>
+        <p class="hp-segment__desc">
+          Sinds juni 2025 geldt de European Accessibility Act. We helpen je om
+          je webshop toegankelijk te maken zonder je conversie te verliezen.
+        </p>
+      </a>
+
+      <a href="/contact/" class="hp-segment">
+        <h3 class="hp-segment__title">Cultuur, musea en erfgoed</h3>
+        <p class="hp-segment__desc">
+          Van ticketing tot collectiepagina&rsquo;s &mdash; we weten waar de
+          knelpunten zitten en hoe je ze oplost.
+        </p>
+      </a>
+
+      <a href="/digital-agency/" class="hp-segment">
+        <h3 class="hp-segment__title">Digital agencies</h3>
+        <p class="hp-segment__desc">
+          Wil je toegankelijkheid meenemen in je projecten? We werken samen als
+          kennispartner, of nemen de audit voor onze rekening.
+        </p>
+      </a>
+
+      <a href="/onderwijs-digitale-toegankelijkheid/" class="hp-segment">
+        <h3 class="hp-segment__title">Onderwijs</h3>
+        <p class="hp-segment__desc">
+          Kunnen al je studenten bij de lesstof? We auditen leeromgevingen,
+          toetssystemen en e-learning modules op toegankelijkheid.
+        </p>
+      </a>
     </div>
   </div>
 </section>
@@ -485,8 +486,9 @@
           <div class="hp-linkedin__card-body">
             <h3 class="hp-linkedin__card-title">{{ .Title }}</h3>
             <p class="hp-linkedin__card-desc">{{ .Description | truncate 120 }}</p>
+            {{ $months := slice "" "januari" "februari" "maart" "april" "mei" "juni" "juli" "augustus" "september" "oktober" "november" "december" }}
             <time class="hp-linkedin__card-date" datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Format "2 January 2006" }}
+              {{ .Date.Day }} {{ index $months (int (.Date.Format "1")) }} {{ .Date.Year }}
             </time>
           </div>
         </a>
@@ -562,49 +564,6 @@
   </div>
 </section>
 
-
-<!-- ─── OOK OP LINKEDIN ─── -->
-{{ $linkedinPosts := first 3 (sort (where (where site.RegularPages "Section" "blog") "Params.tags" "intersect" (slice "webshop" "eaa")) "Date" "desc") }}
-{{ if $linkedinPosts }}
-<section class="section hp-recent">
-  <div class="container">
-    <h2 class="hp-section-title">Ook op LinkedIn</h2>
-    <div class="hp-recent__grid">
-      {{ range $linkedinPosts }}
-        <a href="{{ .RelPermalink }}" class="hp-recent__card">
-          {{ with .Params.image }}
-            <div class="hp-recent__image">
-              <img src="{{ . | relURL }}" alt="" loading="lazy">
-            </div>
-          {{ else }}
-            <div class="hp-recent__image hp-recent__image--placeholder" aria-hidden="true">
-              <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="200" fill="#f5f5f5"/>
-                <rect x="40" y="60" width="320" height="8" rx="4" fill="#e5e7eb"/>
-                <rect x="40" y="80" width="260" height="8" rx="4" fill="#e5e7eb"/>
-                <rect x="40" y="100" width="200" height="8" rx="4" fill="#e5e7eb"/>
-                <rect x="40" y="130" width="80" height="6" rx="3" fill="#d1d5db"/>
-              </svg>
-            </div>
-          {{ end }}
-          <div class="hp-recent__body">
-            <time class="hp-recent__date" datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Format "2 January 2006" }}
-            </time>
-            <h3 class="hp-recent__title">{{ .Title }}</h3>
-            {{ with .Description }}
-              <p class="hp-recent__desc">{{ . }}</p>
-            {{ end }}
-          </div>
-        </a>
-      {{ end }}
-    </div>
-    <p class="hp-section-cta">
-      <a href="/blog/" class="hp-link-arrow">Alle artikelen &rarr;</a>
-    </p>
-  </div>
-</section>
-{{ end }}
 
 
 <!-- ─── RECENTE ARTIKELEN ─── -->
