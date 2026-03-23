@@ -89,11 +89,7 @@ Een onafhankelijk gevalideerd rapport geeft overheidsklanten het vertrouwen dat 
 | Product | Prijs (excl. BTW) |
 | --- | --- |
 | Audit digitale toegankelijkheid van de Mave video player | € 800 |
-| *Toetsing als zelfstandig component aan WCAG 2.2 niveau AA. Inclusief rapport in HTML en PDF, concrete oplossingen per bevinding.* | |
-| | |
-| **Inbegrepen:** | |
-| Hercontrole na 12 weken | € 0 (inbegrepen) |
-| Rapport in het Engels (PDF) | € 0 (inbegrepen) |
+| *Toetsing als zelfstandig component aan WCAG 2.2 niveau AA. Inclusief rapport in HTML en PDF (Nederlands en Engels), concrete oplossingen per bevinding en hercontrole na 12 weken.* | |
 | | |
 | **Optionele diensten:** | |
 | Nabespreking van het rapport online, 1 uur | € 125 |
