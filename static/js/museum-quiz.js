@@ -370,6 +370,7 @@
   var Q = [
     {
       id: 1,
+      cat: 'alt-teksten',
       svg: 'museum',
       scenario: 'Op de homepage staat een grote sfeerfoto van het museumgebouw. Erboven staat al de kop "Welkom in het museum". De foto voegt geen nieuwe informatie toe. Wat doe je met de alt-tekst?',
       options: [
@@ -383,6 +384,7 @@
     },
     {
       id: 2,
+      cat: 'alt-teksten',
       svg: 'painting',
       scenario: 'In een artikel over een tentoonstelling staat een foto van een schilderij van Vermeer. Onder de foto staat het bijschrift: "Johannes Vermeer, Het melkmeisje, ca. 1660." Wat is de beste alt-tekst?',
       options: [
@@ -396,6 +398,7 @@
     },
     {
       id: 3,
+      cat: 'koppenstructuur',
       svg: 'headingStructure',
       scenario: 'Je maakt een pagina over openingstijden. De paginatitel is "Bezoek ons museum" (h1). Daaronder wil je secties maken voor "Openingstijden", "Bereikbaarheid" en "Toegangsprijzen". Welk kopniveau gebruik je?',
       options: [
@@ -409,6 +412,7 @@
     },
     {
       id: 4,
+      cat: 'koppenstructuur',
       svg: 'boldItalic',
       scenario: 'In het CMS maak je een nieuw artikel. Je typt de tussenkop "Praktische informatie" en maakt die tekst vet met de B-knop in plaats van een kopelement te kiezen. Wat is het probleem?',
       options: [
@@ -422,6 +426,7 @@
     },
     {
       id: 5,
+      cat: 'links',
       svg: 'threeCards',
       scenario: 'Op de tentoonstellingspagina staan drie blokken met elk een link met de tekst "Lees meer". Wat is het probleem?',
       options: [
@@ -435,6 +440,7 @@
     },
     {
       id: 6,
+      cat: 'links',
       svg: 'newWindow',
       scenario: 'Je plaatst een link naar de ticketshop die in een nieuw venster opent. Welke linktekst is het beste?',
       options: [
@@ -448,6 +454,7 @@
     },
     {
       id: 7,
+      cat: 'paginatitel',
       svg: 'heading',
       scenario: 'Je maakt vijf pagina\'s aan voor een nieuwe tentoonstelling. Het CMS vult automatisch "Museum \u2014 Tentoonstellingen" in als paginatitel voor allemaal. Wat doe je?',
       options: [
@@ -461,6 +468,7 @@
     },
     {
       id: 8,
+      cat: 'leesvolgorde',
       svg: 'threeCardsDate',
       scenario: 'Je maakt een nieuwsoverzicht. Elk artikel heeft een datum, categorie, afbeelding en kop. In het CMS voer je ze in deze volgorde in: datum, categorie, afbeelding, kop. Waarom is dat een probleem?',
       options: [
@@ -473,6 +481,7 @@
     },
     {
       id: 9,
+      cat: 'kleur-en-contrast',
       svg: 'colorStatus',
       scenario: 'Op de agenda-pagina zijn beschikbare data groen en uitverkochte data rood. Er is geen andere visuele aanwijzing. Wat is het probleem?',
       options: [
@@ -486,6 +495,7 @@
     },
     {
       id: 10,
+      cat: 'kleur-en-contrast',
       svg: 'contrast',
       scenario: 'Je plaatst witte tekst over een sfeervolle, donkere foto van een tentoonstellingszaal. Waar moet je op letten?',
       options: [
@@ -499,6 +509,7 @@
     },
     {
       id: 11,
+      cat: 'formulieren',
       svg: 'formPlaceholder',
       scenario: 'In het contactformulier gebruik je placeholder-tekst ("Je naam") als label voor de invoervelden. Wat is het probleem?',
       options: [
@@ -512,6 +523,7 @@
     },
     {
       id: 12,
+      cat: 'formulieren',
       svg: 'formError',
       scenario: 'Een bezoeker vult het bestelformulier in maar vergeet een e-mailadres. De foutmelding luidt: "Vul een geldig e-mailadres in." Wat is er mis met deze foutmelding?',
       options: [
@@ -525,6 +537,7 @@
     },
     {
       id: 13,
+      cat: 'documenten',
       svg: 'download',
       scenario: 'Je uploadt een PDF van het jaarverslag naar de website. Welke stap vergeten de meeste mensen?',
       options: [
@@ -537,6 +550,7 @@
     },
     {
       id: 14,
+      cat: 'multimedia',
       svg: 'video',
       scenario: 'Je plaatst een promotievideo van de nieuwe tentoonstelling op de website. De video heeft Engels gesproken commentaar. Wat is het minimum dat je moet regelen?',
       options: [
@@ -550,6 +564,7 @@
     },
     {
       id: 15,
+      cat: 'tabellen',
       svg: 'dataTable3col',
       scenario: 'Je maakt een overzicht van toegangsprijzen met kolommen voor "Type ticket", "Prijs" en "Opmerking". Hoe zet je dit op?',
       options: [
@@ -563,6 +578,7 @@
     },
     {
       id: 16,
+      cat: 'formulieren',
       svg: 'formAsterisk',
       scenario: 'In je formulier markeer je verplichte velden met een rood sterretje (*). Wat vergeten de meeste redacteurs?',
       options: [
@@ -576,6 +592,7 @@
     },
     {
       id: 17,
+      cat: 'multimedia',
       svg: 'video',
       scenario: 'Je plaatst een YouTube-video op de pagina via een iframe. Wat vergeet bijna iedereen?',
       options: [
@@ -589,6 +606,7 @@
     },
     {
       id: 18,
+      cat: 'alt-teksten',
       svg: 'bannerText',
       scenario: 'De grafisch ontwerper levert een banner aan voor de homepage: een afbeelding met daarin de tekst "Zomerprogramma 2026 \u2014 Ontdek onze activiteiten". Wat is het probleem?',
       options: [
@@ -602,6 +620,7 @@
     },
     {
       id: 19,
+      cat: 'koppenstructuur',
       svg: 'accordion',
       scenario: 'Op de FAQ-pagina staan 15 vragen in een accordeon. Elke vraag is een klikbaar element dat het antwoord ontvouwt. Wat moet je controleren als redacteur?',
       options: [
@@ -615,6 +634,7 @@
     },
     {
       id: 20,
+      cat: 'semantiek',
       svg: 'language',
       scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n <p>-element staan, gescheiden door <br>-tags. Waarom is dat een probleem?',
       options: [
@@ -730,6 +750,7 @@
       '<input type="hidden" name="quiz_score" id="quizEmailScore" value="" />' +
       '<input type="hidden" name="quiz_correct" id="quizEmailCorrect" value="" />' +
       '<input type="hidden" name="quiz_total" id="quizEmailTotal" value="" />' +
+      '<input type="hidden" name="quiz_weak_categories" id="quizEmailCategories" value="" />' +
       '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
       '<div class="pa-form__row">' +
       '<label for="quiz-email" class="sr-only">E-mailadres</label>' +
@@ -985,6 +1006,20 @@
       el('quizResultsSubtitle').textContent = t('resultsNeedsWork');
     }
 
+    // Calculate per-category results
+    var catResults = {};
+    Q.forEach(function (q) {
+      var c = q.cat || 'overig';
+      if (!catResults[c]) catResults[c] = { correct: 0, total: 0 };
+      catResults[c].total++;
+      if (st[q.id] && st[q.id].correct) catResults[c].correct++;
+    });
+    var weakCategories = [];
+    Object.keys(catResults).forEach(function (c) {
+      var r = catResults[c];
+      if (r.correct < r.total) weakCategories.push(c + ' (' + r.correct + '/' + r.total + ')');
+    });
+
     // Fill hidden fields for email form
     var scoreField = el('quizEmailScore');
     var correctField = el('quizEmailCorrect');
@@ -992,6 +1027,10 @@
     if (scoreField) scoreField.value = sc + '%';
     if (correctField) correctField.value = correct;
     if (totalField) totalField.value = total;
+
+    // Add category details as hidden field
+    var catField = document.getElementById('quizEmailCategories');
+    if (catField) catField.value = weakCategories.join(', ');
 
     // Share functionality
     var quizUrl = 'https://www.properaccess.nl/tools/quiz-museum/';
