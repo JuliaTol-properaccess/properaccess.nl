@@ -726,7 +726,7 @@
       '<h3 class="quiz__share-title">' + t('emailCtaTitle') + '</h3>' +
       '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
       '<div class="quiz__email-form" id="quizEmailForm">' +
-      '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz\', successMessage: \'Verstuurd! Je ontvangt de tips per e-mail.\' });">' +
+      '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz museum\', successMessage: \'Verstuurd! Je ontvangt de tips per e-mail.\' });">' +
       '<input type="hidden" name="quiz_type" value="museum" />' +
       '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
       '<div class="pa-form__row">' +
