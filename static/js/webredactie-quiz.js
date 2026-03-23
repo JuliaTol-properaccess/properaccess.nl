@@ -513,6 +513,9 @@
       '<div class="quiz__email-form" id="quizEmailForm">' +
       '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz webredactie\', successMessage: \'Verstuurd! Je ontvangt de tips per e-mail.\' });">' +
       '<input type="hidden" name="quiz_type" value="webredactie" />' +
+      '<input type="hidden" name="quiz_score" id="quizEmailScore" value="" />' +
+      '<input type="hidden" name="quiz_correct" id="quizEmailCorrect" value="" />' +
+      '<input type="hidden" name="quiz_total" id="quizEmailTotal" value="" />' +
       '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
       '<div class="pa-form__row">' +
       '<label for="quiz-email" class="sr-only">E-mailadres</label>' +
@@ -766,6 +769,14 @@
       ring.style.stroke = 'var(--wrong, #f87171)';
       el('quizResultsSubtitle').textContent = t('resultsNeedsWork');
     }
+
+    // Fill hidden fields for email form
+    var scoreField = el('quizEmailScore');
+    var correctField = el('quizEmailCorrect');
+    var totalField = el('quizEmailTotal');
+    if (scoreField) scoreField.value = sc + '%';
+    if (correctField) correctField.value = correct;
+    if (totalField) totalField.value = Q.length;
 
     // Share functionality
     var quizUrl = 'https://www.properaccess.nl/tools/quiz-webredactie/';

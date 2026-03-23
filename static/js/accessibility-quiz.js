@@ -716,6 +716,10 @@
       '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
       '<div class="quiz__email-form" id="quizEmailForm">' +
       '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz\', successMessage: \'' + (lang === 'nl' ? 'Verstuurd! Je ontvangt de uitleg per e-mail.' : 'Sent! You will receive the explanation by email.') + '\' });">' +
+      '<input type="hidden" name="quiz_type" value="accessibility" />' +
+      '<input type="hidden" name="quiz_score" id="quizEmailScore" value="" />' +
+      '<input type="hidden" name="quiz_correct" id="quizEmailCorrect" value="" />' +
+      '<input type="hidden" name="quiz_total" id="quizEmailTotal" value="" />' +
       '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
       '<div class="pa-form__row">' +
       '<label for="quiz-email" class="sr-only">' + (lang === 'nl' ? 'E-mailadres' : 'Email address') + '</label>' +
@@ -1079,6 +1083,14 @@
       retakeBtn.onclick = null;
       retakeBtn.addEventListener('click', resetQuiz);
     }
+
+    // Fill hidden fields for email form
+    var scoreField = el('quizEmailScore');
+    var correctField = el('quizEmailCorrect');
+    var totalField = el('quizEmailTotal');
+    if (scoreField) scoreField.value = sc + '%';
+    if (correctField) correctField.value = p + ' perfect, ' + pa + ' partial';
+    if (totalField) totalField.value = Q.length;
 
     // Share functionality
     var quizUrl = 'https://www.properaccess.nl/digital-agency/#quizSection';
