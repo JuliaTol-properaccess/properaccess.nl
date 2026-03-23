@@ -24,7 +24,8 @@ const BRON_IDS = {
   "tool-proefperiode": 58,
   quiz: 59,
   contactformulier: 60,
-  "quiz museum": 61,
+  "quiz museum": 67,
+  "quiz webredactie": 68,
 };
 
 const LEAD_TITLES = {
@@ -33,6 +34,7 @@ const LEAD_TITLES = {
   quiz: "Quiz deelnemer",
   contactformulier: "Contactformulier bericht",
   "quiz museum": "Quiz museum deelnemer",
+  "quiz webredactie": "Quiz webredactie deelnemer",
 };
 
 const NOTIFY_EMAIL = "contact@properaccess.nl";
