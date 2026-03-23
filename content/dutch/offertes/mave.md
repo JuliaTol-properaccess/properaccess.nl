@@ -79,7 +79,7 @@ Een onafhankelijk gevalideerd rapport geeft overheidsklanten het vertrouwen dat 
 ### Oplevering
 
 - **Rapport in HTML en PDF-formaat**
-- **PDF kan in het Engels worden opgesteld** voor de internationale markt
+- **PDF wordt ook in het Engels opgeleverd** voor de internationale markt
 - **Export bevindingen als CSV-bestand** voor jullie interne planning
 
 {{< /offerte-section >}}
@@ -93,9 +93,9 @@ Een onafhankelijk gevalideerd rapport geeft overheidsklanten het vertrouwen dat 
 | | |
 | **Inbegrepen:** | |
 | Hercontrole na 12 weken | € 0 (inbegrepen) |
+| Rapport in het Engels (PDF) | € 0 (inbegrepen) |
 | | |
 | **Optionele diensten:** | |
-| Rapport in het Engels (PDF) | op aanvraag |
 | Nabespreking van het rapport online, 1 uur | € 125 |
 
 **Totaal:** € 800 (excl. BTW)
