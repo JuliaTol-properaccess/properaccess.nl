@@ -63,12 +63,14 @@
       bron: data.bron || "–",
       bericht: data.bericht || "–",
     };
-    // Include quiz results if present
+    // Include quiz results as a readable message
     if (data.quiz_score) {
-      formspreeData.quiz_score = data.quiz_score;
-      formspreeData.quiz_correct = data.quiz_correct || "–";
-      formspreeData.quiz_total = data.quiz_total || "–";
-      formspreeData._subject = title + " — " + (data.email) + " — score: " + data.quiz_score;
+      var quizLabel = (data.quiz_type || data.bron || "Quiz").replace("quiz ", "").replace("quiz", "algemeen");
+      formspreeData._subject = "Quiz " + quizLabel + " — " + data.email + " — score: " + data.quiz_score;
+      formspreeData.bericht =
+        "Quiz: " + quizLabel + "\n" +
+        "Score: " + data.quiz_score + " (" + (data.quiz_correct || "–") + " van " + (data.quiz_total || "–") + " vragen correct)\n" +
+        "E-mail: " + data.email;
     }
     fetch(FORMSPREE_URL, {
       method: "POST",
