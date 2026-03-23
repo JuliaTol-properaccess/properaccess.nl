@@ -44,7 +44,7 @@
     }
   }
 
-  // Check localStorage for previous access
+  // Check localStorage for previous access (password or token)
   try {
     if (localStorage.getItem(STORAGE_KEY) === EXPECTED) {
       unlock();
@@ -52,17 +52,60 @@
     }
   } catch (e) { /* */ }
 
+  // Check for valid token from /tools/ page
+  var TOKEN_KEY = "pa-tool-token";
+  var AUTH_URL = "https://tool-auth.juliatol.workers.dev";
+  var storedToken = null;
+  try { storedToken = localStorage.getItem(TOKEN_KEY); } catch (e) { /* */ }
+
+  // Also check URL param
+  try {
+    var urlToken = new URLSearchParams(window.location.search).get("token");
+    if (urlToken) storedToken = urlToken;
+  } catch (e) { /* */ }
+
+  if (storedToken) {
+    fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(storedToken))
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.valid) {
+          try { localStorage.setItem(TOKEN_KEY, storedToken); } catch (e) { /* */ }
+          unlock();
+        }
+      })
+      .catch(function () { /* keep locked */ });
+  }
+
   // Manual entry form
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!input) return;
       var val = input.value.trim();
+
+      // Check password first
       if (simpleHash(val) === EXPECTED) {
         unlock();
-      } else {
-        showError();
+        return;
       }
+
+      // Try as token
+      if (val.startsWith("pa_")) {
+        fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(val))
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            if (data.valid) {
+              try { localStorage.setItem(TOKEN_KEY, val); } catch (e) { /* */ }
+              unlock();
+            } else {
+              showError();
+            }
+          })
+          .catch(function () { showError(); });
+        return;
+      }
+
+      showError();
     });
   }
 })();
