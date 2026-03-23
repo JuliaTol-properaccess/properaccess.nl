@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /offertes/
+Disallow: /bedankt/
+
+Sitemap: https://www.properaccess.nl/sitemap.xml

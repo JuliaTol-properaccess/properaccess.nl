@@ -1,0 +1,8 @@
+{{ $title := .Get "title" }}
+
+<div class="section-card">
+  {{ with $title }}<h3 class="section-card__title">{{ . }}</h3>{{ end }}
+  <div class="section-card__content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

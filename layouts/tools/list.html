@@ -1,0 +1,248 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section tool-overview__page">
+    <div class="container">
+      <div class="tool-overview__intro">{{ .Content }}</div>
+
+      <div class="tool-filter" role="group" aria-label="Filter tools op doelgroep">
+        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all" aria-pressed="true">Alle tools</button>
+        <button class="tool-filter__btn" data-filter="Webredactie" aria-pressed="false">Webredactie</button>
+        <button class="tool-filter__btn" data-filter="Webdeveloper" aria-pressed="false">Webdeveloper</button>
+        <button class="tool-filter__btn" data-filter="Manager" aria-pressed="false">Manager</button>
+      </div>
+
+      <div class="tool-overview__grid">
+        {{/* Gratis tools eerst, dan vergrendelde — quizzen verborgen */}}
+        {{ $visible := where .RegularPages.ByWeight ".Params.toon_in_lijst" "!=" false }}
+        {{ $free := where $visible ".Params.gratis" true }}
+        {{ $locked_pages := where $visible ".Params.gratis" "!=" true }}
+        {{ $sorted := $free | append $locked_pages }}
+        {{ range $sorted }}
+          {{ $locked := not (.Params.gratis) }}
+          <a href="{{ .RelPermalink }}"
+             class="tool-card{{ if $locked }} tool-card--locked{{ end }}"
+             data-doelgroep="{{ delimit .Params.doelgroep "," }}"
+             {{ if $locked }}data-locked="true"{{ end }}>
+            <div class="tool-card__body">
+              <h2 class="tool-card__title">
+                {{ .Title }}
+                {{ if .Params.beta }}<span class="tool-card__beta">Beta</span>{{ end }}
+                {{ if $locked }}
+                  <svg class="tool-card__lock" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                {{ end }}
+              </h2>
+              <p class="tool-card__description">{{ .Description }}</p>
+            </div>
+            {{ with .Params.doelgroep }}
+              <div class="tool-card__tags">
+                {{ range . }}
+                  <span class="tool-card__tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </a>
+        {{ end }}
+
+        <div class="tool-card tool-card--cta">
+          <div class="tool-card__body">
+            <h2 class="tool-card__title">Meer nodig?</h2>
+            <p class="tool-card__description">We bouwen ook tools op maat voor onze klanten. Behoefte aan een specifieke tool of automatisering? Bespreek de mogelijkheden met Julia Tol.</p>
+          </div>
+          <div class="tool-card__action">
+            <a href="tel:+31628742275" class="tool-card__cta-link">Bel 06-28742275</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="tool-filter__empty" hidden>Geen tools gevonden voor dit filter.</p>
+
+      <!-- Toolsuite promo -->
+      <div class="toolsuite-promo">
+        <div class="toolsuite-promo__content">
+          <h2 class="toolsuite-promo__title">Proper Access Toolsuite</h2>
+          <p class="toolsuite-promo__text">Wij hebben een applicatie ontwikkeld met 9 tools waarmee webredactie zelfstandig de toegankelijkheid van content kan controleren. Geen technische kennis nodig, geen HTML-kennis vereist.</p>
+          <p class="toolsuite-promo__text">De tools signaleren niet alleen problemen, maar leggen ook uit waarom iets een probleem is en hoe je het kan oplossen. Zo leer je tijdens het controleren ook hoe je toegankelijke content maakt.</p>
+          <p class="toolsuite-promo__text">De toolsuite bevat checkers voor koppenstructuur, alt-teksten, links, tabellen, semantiek, foutmeldingen, iframes, taal en paginatitels.</p>
+          <a href="/contact/" class="toolsuite-promo__cta">Neem contact op voor een abonnement</a>
+        </div>
+        <div class="toolsuite-promo__image">
+          <img src="/images/tools/tools_def.png" alt="Screenshot van de Proper Access Toolsuite met 9 analyse-tools voor webredactie" loading="lazy" />
+        </div>
+      </div>
+
+      {{ partial "webinar-section.html" . }}
+
+      <!-- Modal voor vergrendelde tools -->
+      <div class="tool-lock-modal" id="lockModal" hidden>
+        <div class="tool-lock-modal__backdrop"></div>
+        <div class="tool-lock-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="lockModalTitle">
+          <button class="tool-lock-modal__close" aria-label="Sluiten" id="lockModalClose">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          <svg class="tool-lock-modal__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <h2 class="tool-lock-modal__title" id="lockModalTitle">Alleen voor klanten</h2>
+          <p class="tool-lock-modal__text">Deze tool is exclusief beschikbaar voor klanten van Proper Access. Heb je al een toegangscode? Voer deze in hieronder.</p>
+          <form class="tool-lock-modal__form" id="lockModalForm">
+            <label for="lockModalToken" class="sr-only">Toegangscode</label>
+            <input type="text" id="lockModalToken" class="tool-lock-modal__input" placeholder="Toegangscode" autocomplete="off" />
+            <button type="submit" class="tool-lock-modal__btn">Ontgrendel</button>
+          </form>
+          <p class="tool-lock-modal__error" id="lockModalError" hidden></p>
+          <p class="tool-lock-modal__footer">Nog geen klant? <a href="/contact/">Neem contact op</a> voor meer informatie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function () {
+    /* ── Filter ────────────────────────────────── */
+    var btns = document.querySelectorAll('.tool-filter__btn');
+    var cards = document.querySelectorAll('.tool-card[data-doelgroep]');
+    var cta = document.querySelector('.tool-card--cta');
+    var empty = document.querySelector('.tool-filter__empty');
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) {
+          b.classList.remove('tool-filter__btn--active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('tool-filter__btn--active');
+        btn.setAttribute('aria-pressed', 'true');
+
+        var filter = btn.getAttribute('data-filter');
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var groups = (card.getAttribute('data-doelgroep') || '').split(',');
+          var show = filter === 'all' || groups.indexOf(filter) !== -1;
+          card.hidden = !show;
+          if (show) visible++;
+        });
+
+        if (cta) cta.hidden = visible === 0;
+        empty.hidden = visible > 0;
+      });
+    });
+
+    /* ── Token check & lock logic ──────────────── */
+    var AUTH_URL = 'https://tool-auth.juliatol.workers.dev';
+    var TOKEN_KEY = 'pa-tool-token';
+    var lockedCards = document.querySelectorAll('.tool-card--locked');
+    var modal = document.getElementById('lockModal');
+    var modalClose = document.getElementById('lockModalClose');
+    var modalForm = document.getElementById('lockModalForm');
+    var modalInput = document.getElementById('lockModalToken');
+    var modalError = document.getElementById('lockModalError');
+    var pendingUrl = null;
+
+    function unlockAll() {
+      lockedCards.forEach(function (card) {
+        card.classList.remove('tool-card--locked');
+        card.removeAttribute('data-locked');
+        var lock = card.querySelector('.tool-card__lock');
+        if (lock) lock.remove();
+      });
+    }
+
+    function showModal(e) {
+      e.preventDefault();
+      pendingUrl = e.currentTarget.getAttribute('href');
+      modal.hidden = false;
+      modalInput.value = '';
+      modalError.hidden = true;
+      modalInput.focus();
+    }
+
+    function hideModal() {
+      modal.hidden = true;
+      pendingUrl = null;
+    }
+
+    // Check for existing valid token
+    var storedToken = null;
+    try { storedToken = localStorage.getItem(TOKEN_KEY); } catch (e) { /* */ }
+
+    // Also check URL param
+    var urlParams = new URLSearchParams(window.location.search);
+    var urlToken = urlParams.get('token');
+    var autoToken = urlToken || storedToken;
+
+    if (autoToken && lockedCards.length > 0) {
+      fetch(AUTH_URL + '/validate?token=' + encodeURIComponent(autoToken))
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.valid) {
+            try { localStorage.setItem(TOKEN_KEY, autoToken); } catch (e) { /* */ }
+            unlockAll();
+            if (urlToken) {
+              history.replaceState(null, '', window.location.pathname);
+            }
+          } else {
+            try { localStorage.removeItem(TOKEN_KEY); } catch (e) { /* */ }
+          }
+        })
+        .catch(function () { /* silently fail, keep locked */ });
+    }
+
+    // Attach click handlers to locked cards
+    lockedCards.forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (card.hasAttribute('data-locked')) {
+          showModal(e);
+        }
+      });
+    });
+
+    // Modal close
+    if (modalClose) modalClose.addEventListener('click', hideModal);
+    modal.querySelector('.tool-lock-modal__backdrop').addEventListener('click', hideModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.hidden) hideModal();
+    });
+
+    // Modal form submit — validate token
+    if (modalForm) {
+      modalForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var token = modalInput.value.trim();
+        if (!token) return;
+
+        modalError.hidden = true;
+
+        fetch(AUTH_URL + '/validate?token=' + encodeURIComponent(token))
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            if (data.valid) {
+              try { localStorage.setItem(TOKEN_KEY, token); } catch (e) { /* */ }
+              unlockAll();
+              hideModal();
+              if (pendingUrl) window.location.href = pendingUrl;
+            } else {
+              if (data.reason === 'expired') {
+                modalError.textContent = 'Je proefperiode is verlopen. Neem contact op met Proper Access.';
+              } else {
+                modalError.textContent = 'Ongeldige toegangscode. Controleer de code en probeer het opnieuw.';
+              }
+              modalError.hidden = false;
+              modalInput.value = '';
+              modalInput.focus();
+            }
+          })
+          .catch(function () {
+            modalError.textContent = 'Kan verbinding niet maken. Probeer het later opnieuw.';
+            modalError.hidden = false;
+          });
+      });
+    }
+  })();
+  </script>
+{{ end }}

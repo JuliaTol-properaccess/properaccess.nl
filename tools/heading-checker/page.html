@@ -1,0 +1,403 @@
+<!--
+  Heading Structure Checker — Proper Access
+
+  Dit is de frontend voor de koppenstructuur-checker.
+  Integreer dit in je Hugo-site als pagina, of gebruik het standalone.
+
+  Vereist: de Cloudflare Worker (worker.js) moet gedeployed zijn.
+  Pas WORKER_URL aan naar je eigen Worker URL.
+-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koppenstructuur checker — Proper Access</title>
+  <style>
+    /* ============================================
+       Standalone styling — als je dit in Hugo
+       integreert, gebruik je je eigen Tailwind
+       classes en kun je deze <style> verwijderen.
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Nunito Sans", system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1a1a2e;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .intro { color: #555; margin-bottom: 2rem; }
+
+    /* Form */
+    .checker-form {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .checker-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .checker-form .field { flex: 1; }
+    .checker-form input[type="url"] {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 0.375rem;
+    }
+    .checker-form input[type="url"]:focus {
+      outline: 3px solid #2563eb;
+      outline-offset: 2px;
+      border-color: #2563eb;
+    }
+    .checker-form button {
+      align-self: flex-end;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background: #1a1a2e;
+      color: white;
+      border: none;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .checker-form button:hover { background: #2d2d5e; }
+    .checker-form button:focus {
+      outline: 3px solid #2563eb;
+      outline-offset: 2px;
+    }
+    .checker-form button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Loading */
+    .loading {
+      padding: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* Error */
+    .error-message {
+      padding: 1rem;
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 0.375rem;
+      color: #991b1b;
+    }
+
+    /* Results */
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .results-header h2 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+    .summary-stats {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: #555;
+    }
+    .summary-stats .stat-error { color: #dc2626; font-weight: 600; }
+    .summary-stats .stat-warning { color: #d97706; font-weight: 600; }
+    .summary-stats .stat-ok { color: #16a34a; font-weight: 600; }
+
+    /* Issues */
+    .issues {
+      margin-bottom: 1.5rem;
+    }
+    .issue {
+      padding: 0.75rem 1rem;
+      border-radius: 0.375rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9375rem;
+    }
+    .issue-error {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+    }
+    .issue-warning {
+      background: #fffbeb;
+      border-left: 4px solid #d97706;
+    }
+    .issue code {
+      background: rgba(0,0,0,0.06);
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      font-size: 0.875em;
+    }
+
+    /* Heading tree */
+    .heading-tree {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .heading-item {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+    }
+    .heading-item:last-child { border-bottom: none; }
+    .heading-item.has-issue { background: #fef2f2; }
+
+    .heading-level {
+      font-family: monospace;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .level-1 { background: #dbeafe; color: #1e40af; }
+    .level-2 { background: #e0e7ff; color: #3730a3; }
+    .level-3 { background: #ede9fe; color: #5b21b6; }
+    .level-4 { background: #f3e8ff; color: #6b21a8; }
+    .level-5 { background: #fae8ff; color: #86198f; }
+    .level-6 { background: #fdf2f8; color: #9d174d; }
+
+    .heading-text {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .heading-text.empty {
+      color: #dc2626;
+      font-style: italic;
+    }
+    .heading-text.hidden-heading {
+      color: #999;
+      text-decoration: line-through;
+    }
+
+    .skip-marker {
+      font-size: 0.75rem;
+      color: #dc2626;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    .cta p { margin: 0 0 0.5rem; }
+    .cta a {
+      color: #1a1a2e;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .checker-form { flex-direction: column; }
+      .checker-form button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Koppenstructuur checker</h1>
+  <p class="intro">
+    Voer een URL in en bekijk de koppenstructuur van die pagina.
+    Een logische koppenhiërarchie helpt screenreadergebruikers om door je content te navigeren.
+  </p>
+
+  <form class="checker-form" id="checkerForm">
+    <div class="field">
+      <label for="urlInput">Website URL</label>
+      <input
+        type="url"
+        id="urlInput"
+        placeholder="https://voorbeeld.nl"
+        required
+        autocomplete="url"
+      >
+    </div>
+    <button type="submit" id="submitBtn">Controleer</button>
+  </form>
+
+  <div id="output" role="region" aria-live="polite"></div>
+
+  <script>
+    // =============================================
+    // CONFIGURATIE — pas deze URL aan na deployment
+    // =============================================
+    const WORKER_URL = "https://heading-checker.YOUR-SUBDOMAIN.workers.dev/";
+
+    const form = document.getElementById("checkerForm");
+    const urlInput = document.getElementById("urlInput");
+    const submitBtn = document.getElementById("submitBtn");
+    const output = document.getElementById("output");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const url = urlInput.value.trim();
+      if (!url) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Bezig...";
+      output.innerHTML = '<p class="loading">Pagina ophalen en analyseren...</p>';
+
+      try {
+        const response = await fetch(
+          `${WORKER_URL}?url=${encodeURIComponent(url)}`
+        );
+        const data = await response.json();
+
+        if (data.error) {
+          output.innerHTML = `<div class="error-message" role="alert">${escapeHtml(data.error)}</div>`;
+          return;
+        }
+
+        output.innerHTML = renderResults(data);
+      } catch (err) {
+        output.innerHTML =
+          '<div class="error-message" role="alert">Kon de pagina niet analyseren. Controleer de URL en probeer het opnieuw.</div>';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Controleer";
+      }
+    });
+
+    function renderResults(data) {
+      const { headings, issues, summary } = data;
+
+      // Summary stats
+      const errorCount = issues.filter((i) => i.type === "error").length;
+      const warningCount = issues.filter((i) => i.type === "warning").length;
+
+      let statsClass, statsText;
+      if (errorCount > 0) {
+        statsClass = "stat-error";
+        statsText = `${errorCount} fout${errorCount !== 1 ? "en" : ""}, ${warningCount} waarschuwing${warningCount !== 1 ? "en" : ""}`;
+      } else if (warningCount > 0) {
+        statsClass = "stat-warning";
+        statsText = `Geen fouten, ${warningCount} waarschuwing${warningCount !== 1 ? "en" : ""}`;
+      } else {
+        statsClass = "stat-ok";
+        statsText = "Geen problemen gevonden";
+      }
+
+      // Build level summary (h1: 1, h2: 4, h3: 2, ...)
+      const levelSummary = Object.entries(summary.byLevel)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([level, count]) => `${level}: ${count}`)
+        .join(" · ");
+
+      // Build issues list with heading indices that have issues
+      const issueIndices = new Set();
+      issues.forEach((issue) => {
+        if (issue.headingIndex !== undefined) {
+          issueIndices.add(issue.headingIndex);
+        }
+      });
+
+      // Detect skipped level positions
+      const skipIndices = new Set();
+      issues.forEach((issue) => {
+        if (issue.message.includes("overgeslagen") && issue.headingIndex !== undefined) {
+          skipIndices.add(issue.headingIndex);
+        }
+      });
+
+      let html = "";
+
+      // Header
+      html += `
+        <div class="results-header">
+          <h2>${summary.total} kop${summary.total !== 1 ? "pen" : ""} gevonden</h2>
+          <div class="summary-stats">
+            <span class="${statsClass}">${statsText}</span>
+            <span>${levelSummary}</span>
+          </div>
+        </div>
+      `;
+
+      // Issues
+      if (issues.length > 0) {
+        html += '<div class="issues" role="list" aria-label="Gevonden problemen">';
+        for (const issue of issues) {
+          const cls = issue.type === "error" ? "issue-error" : "issue-warning";
+          // Replace <hN> with styled code tags
+          const message = escapeHtml(issue.message).replace(
+            /&lt;h(\d)&gt;/g,
+            '<code>&lt;h$1&gt;</code>'
+          );
+          html += `<div class="issue ${cls}" role="listitem">${message}</div>`;
+        }
+        html += "</div>";
+      }
+
+      // Heading tree
+      if (headings.length > 0) {
+        html += '<ol class="heading-tree" aria-label="Koppenstructuur">';
+        for (let i = 0; i < headings.length; i++) {
+          const h = headings[i];
+          const indent = (h.level - 1) * 1.5;
+          const hasIssue = issueIndices.has(i);
+          const hasSkip = skipIndices.has(i);
+          const itemClass = hasIssue ? " has-issue" : "";
+          const textClass = h.text === "(leeg)"
+            ? " empty"
+            : h.hidden
+              ? " hidden-heading"
+              : "";
+
+          html += `
+            <li class="heading-item${itemClass}" style="padding-left: ${indent + 0.75}rem">
+              <span class="heading-level level-${h.level}">h${h.level}</span>
+              <span class="heading-text${textClass}">${escapeHtml(h.text)}</span>
+              ${hasSkip ? '<span class="skip-marker">⚠ niveau overgeslagen</span>' : ""}
+            </li>
+          `;
+        }
+        html += "</ol>";
+      }
+
+      // CTA
+      html += `
+        <div class="cta">
+          <p>Dit is een snelle check van de koppenstructuur. Een volledige WCAG-audit onderzoekt
+          alle 55 succescriteria — van toetsenbordtoegankelijkheid tot kleurcontrast.</p>
+          <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+        </div>
+      `;
+
+      return html;
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+  </script>
+
+</body>
+</html>

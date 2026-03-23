@@ -1,0 +1,20 @@
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" | default "" -}}
+<section class="case-section{{ if not $image }} case-section--full{{ end }}">
+  <div class="container">
+    {{ if $image }}
+    <div class="case-section__grid">
+      <div class="case-section__text content">
+        {{ .Inner | markdownify }}
+      </div>
+      <div class="case-section__media">
+        <img src="{{ $image }}" alt="{{ $alt }}" class="case-section__image" loading="lazy">
+      </div>
+    </div>
+    {{ else }}
+    <div class="case-section__prose content">
+      {{ .Inner | markdownify }}
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,201 @@
+{{ define "main" }}
+
+<!-- ─── Hero ─── -->
+{{ with .Params.banner }}
+<section class="vw-hero">
+  <div class="container">
+    <div class="vw-hero__inner">
+      <div class="vw-hero__text">
+        <span class="vw-section-label">{{ $.Params.title }}</span>
+        <h1 class="vw-hero__title">{{ .title | markdownify }}</h1>
+        <p class="vw-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bulletpoints }}
+        <ul class="au-hero__bullets">
+          {{ range . }}
+          <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="vw-hero__actions">
+              <a class="btn btn-primary" href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
+                {{ .label }}
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <span class="vw-hero__cta-secondary">
+                Of bel direct: <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>
+              </span>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="vw-hero__visual" aria-hidden="true">
+        <!-- SVG: Team / expertise illustratie -->
+        <svg viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="vw-hero__svg">
+          <!-- Background card -->
+          <rect x="50" y="30" width="300" height="380" rx="16" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+          <!-- Header bar -->
+          <rect x="70" y="55" width="260" height="40" rx="8" fill="#1F2937"/>
+          <text x="90" y="80" fill="#fff" font-family="Nunito, sans-serif" font-size="12" font-weight="700">Proper Access</text>
+          <rect x="245" y="65" width="65" height="20" rx="10" fill="#A30D4B"/>
+          <text x="255" y="79" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Since 2019</text>
+
+          <!-- Stat blocks row -->
+          <rect x="70" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="110" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">900+</text>
+          <text x="110" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">audits</text>
+
+          <rect x="160" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="200" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">53</text>
+          <text x="200" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">klanten</text>
+
+          <rect x="250" y="110" width="80" height="60" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+          <text x="290" y="138" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="18" font-weight="700" text-anchor="middle">34%</text>
+          <text x="290" y="156" fill="#6B7280" font-family="Nunito, sans-serif" font-size="7" text-anchor="middle">herhaalt</text>
+
+          <!-- Checklist items -->
+          <rect x="70" y="185" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="203" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 203 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="207" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Rapport per element, niet per criterium</text>
+
+          <rect x="70" y="229" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="247" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 247 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="251" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Onbeperkt vragen stellen na de audit</text>
+
+          <rect x="70" y="273" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="291" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 291 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="295" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Concrete oplossingen in code</text>
+
+          <rect x="70" y="317" width="260" height="36" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="90" cy="335" r="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+          <path d="M86 335 l3 3 5-5" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="106" y="339" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Eigen research en testen op hulpsoftware</text>
+
+          <!-- Floating badge -->
+          <rect x="240" y="365" width="100" height="32" rx="16" fill="#A30D4B" filter="url(#ov-shadow)"/>
+          <text x="290" y="385" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="700" text-anchor="middle">IAAP certified</text>
+
+          <!-- Floating magnifier -->
+          <circle cx="80" cy="385" r="18" fill="#f9fafb" stroke="#1F2937" stroke-width="1.5"/>
+          <circle cx="80" cy="385" r="8" fill="none" stroke="#A30D4B" stroke-width="2"/>
+          <line x1="86" y1="391" x2="96" y2="401" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+          <defs>
+            <filter id="ov-shadow" x="-4%" y="-4%" width="108%" height="116%">
+              <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── Trust bar ─── -->
+{{ with .Params.trust }}
+<section class="vw-trust">
+  <div class="container">
+    <span class="vw-trust__label">{{ .label }}</span>
+    <div class="vw-trust__names">
+      {{ range .names }}
+      <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── Content (shortcodes) ─── -->
+<article class="offerte-content">
+  {{ .Content }}
+</article>
+
+<!-- ─── Team ─── -->
+{{ with .Params.team }}
+<section class="ov-team">
+  <div class="container">
+    <h2 class="ov-team__title">{{ .title }}</h2>
+    <div class="ov-team__grid">
+      {{ range .members }}
+      <div class="ov-team__member">
+        {{ if .image }}
+        <div class="ov-team__photo">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="ov-team__info">
+          <h3 class="ov-team__name">{{ .name }}</h3>
+          <span class="ov-team__role">{{ .role }}</span>
+          <div class="ov-team__bio">{{ .bio | markdownify }}</div>
+          {{ with .highlights }}
+          <ul class="ov-team__highlights">
+            {{ range . }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── Stats bar ─── -->
+<section class="vw-stats">
+  <div class="container">
+    <div class="vw-stats__grid">
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">900+</span>
+        <span class="vw-stats__label">audits uitgevoerd</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">53</span>
+        <span class="vw-stats__label">opdrachtgevers</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">34%</span>
+        <span class="vw-stats__label">herhalingsklanten</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">&lt; 1 dag</span>
+        <span class="vw-stats__label">reactietijd</span>
+      </div>
+    </div>
+    {{ with .Params.stats.note }}
+    <p class="ov-stats__note">{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="section hp-faq">
+  <div class="container">
+    <h2 class="hp-section-title">Veelgestelde vragen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

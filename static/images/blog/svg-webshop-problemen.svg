@@ -1,0 +1,75 @@
+<svg viewBox="0 0 400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card -->
+  <rect x="4" y="4" width="392" height="412" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="412" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="24" y="32" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="700">Top 7 problemen bij webshops</text>
+  <line x1="24" y1="44" x2="368" y2="44" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Problem 1 -->
+  <rect x="24" y="56" width="344" height="40" rx="6" fill="#fef2f2"/>
+  <text x="40" y="72" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">1</text>
+  <text x="56" y="72" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Productafbeeldingen zonder alt-tekst</text>
+  <rect x="296" y="64" width="56" height="18" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="306" y="77" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Ernstig</text>
+  <rect x="56" y="78" width="180" height="4" rx="2" fill="#dc2626" opacity="0.2"/>
+  <rect x="56" y="78" width="180" height="4" rx="2" fill="#dc2626" opacity="0.6"/>
+
+  <!-- Problem 2 -->
+  <rect x="24" y="104" width="344" height="40" rx="6" fill="#fef2f2"/>
+  <text x="40" y="120" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">2</text>
+  <text x="56" y="120" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Filters niet bedienbaar met toetsenbord</text>
+  <rect x="296" y="112" width="56" height="18" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="306" y="125" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Ernstig</text>
+  <rect x="56" y="126" width="180" height="4" rx="2" fill="#dc2626" opacity="0.2"/>
+  <rect x="56" y="126" width="160" height="4" rx="2" fill="#dc2626" opacity="0.5"/>
+
+  <!-- Problem 3 -->
+  <rect x="24" y="152" width="344" height="40" rx="6" fill="#fef2f2"/>
+  <text x="40" y="168" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">3</text>
+  <text x="56" y="168" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Bestelproces met formulierproblemen</text>
+  <rect x="296" y="160" width="56" height="18" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="306" y="173" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Ernstig</text>
+  <rect x="56" y="174" width="180" height="4" rx="2" fill="#dc2626" opacity="0.2"/>
+  <rect x="56" y="174" width="145" height="4" rx="2" fill="#dc2626" opacity="0.45"/>
+
+  <!-- Problem 4 -->
+  <rect x="24" y="200" width="344" height="40" rx="6" fill="#fffbeb"/>
+  <text x="40" y="216" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">4</text>
+  <text x="56" y="216" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Onvoldoende kleurcontrast</text>
+  <rect x="296" y="208" width="56" height="18" rx="9" fill="#fffbeb" stroke="#b45309" stroke-width="1"/>
+  <text x="308" y="221" fill="#b45309" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Middel</text>
+  <rect x="56" y="222" width="180" height="4" rx="2" fill="#b45309" opacity="0.2"/>
+  <rect x="56" y="222" width="125" height="4" rx="2" fill="#b45309" opacity="0.4"/>
+
+  <!-- Problem 5 -->
+  <rect x="24" y="248" width="344" height="40" rx="6" fill="#fffbeb"/>
+  <text x="40" y="264" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">5</text>
+  <text x="56" y="264" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Cookie-banner blokkeert de pagina</text>
+  <rect x="296" y="256" width="56" height="18" rx="9" fill="#fffbeb" stroke="#b45309" stroke-width="1"/>
+  <text x="308" y="269" fill="#b45309" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Middel</text>
+  <rect x="56" y="270" width="180" height="4" rx="2" fill="#b45309" opacity="0.2"/>
+  <rect x="56" y="270" width="110" height="4" rx="2" fill="#b45309" opacity="0.35"/>
+
+  <!-- Problem 6 -->
+  <rect x="24" y="296" width="344" height="40" rx="6" fill="#f3f4f6"/>
+  <text x="40" y="312" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">6</text>
+  <text x="56" y="312" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Zoekresultaten niet aangekondigd</text>
+  <rect x="296" y="304" width="56" height="18" rx="9" fill="#f3f4f6" stroke="#6b7280" stroke-width="1"/>
+  <text x="312" y="317" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Laag</text>
+  <rect x="56" y="318" width="180" height="4" rx="2" fill="#6b7280" opacity="0.2"/>
+  <rect x="56" y="318" width="90" height="4" rx="2" fill="#6b7280" opacity="0.3"/>
+
+  <!-- Problem 7 -->
+  <rect x="24" y="344" width="344" height="40" rx="6" fill="#f3f4f6"/>
+  <text x="40" y="360" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">7</text>
+  <text x="56" y="360" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Carrousels en productsliders</text>
+  <rect x="296" y="352" width="56" height="18" rx="9" fill="#f3f4f6" stroke="#6b7280" stroke-width="1"/>
+  <text x="312" y="365" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Laag</text>
+  <rect x="56" y="366" width="180" height="4" rx="2" fill="#6b7280" opacity="0.2"/>
+  <rect x="56" y="366" width="70" height="4" rx="2" fill="#6b7280" opacity="0.25"/>
+
+  <!-- Footer -->
+  <text x="24" y="404" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">Gebaseerd op 50+ webshop-audits | Proper Access</text>
+</svg>

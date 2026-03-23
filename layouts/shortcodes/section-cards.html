@@ -1,0 +1,26 @@
+{{ $title := .Get "title" }}
+{{ $subtitle := .Get "subtitle" }}
+{{ $image := .Get "image" }}
+{{ $bg := .Get "bg" }}
+{{ $columns := .Get "columns" | default "3" }}
+
+<section class="section-cards{{ if eq $bg "light" }} section-cards--light{{ end }}{{ if eq $bg "dark" }} section-cards--dark{{ end }}">
+  <div class="container">
+    {{ if or $title $subtitle $image }}
+    <div class="section-cards__header{{ with $image }} section-cards__header--with-image{{ end }}">
+      {{ with $image }}
+      <div class="section-cards__header-image">
+        <img src="{{ . | relURL }}" alt="" loading="lazy" />
+      </div>
+      {{ end }}
+      <div class="section-cards__header-text">
+        {{ with $title }}<h2 class="section-cards__title">{{ . }}</h2>{{ end }}
+        {{ with $subtitle }}<p class="section-cards__subtitle">{{ . }}</p>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="section-cards__grid section-cards__grid--{{ $columns }}">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>
