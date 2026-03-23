@@ -15,6 +15,7 @@
   "use strict";
 
   var WORKER_URL = "https://pipedrive-forms.juliatol.workers.dev/submit";
+  var FORMSPREE_URL = "https://formspree.io/f/xjgeyqej";
 
   window.paFormSubmit = function (form, opts) {
     if (!form || form._paSubmitting) return;
@@ -39,7 +40,8 @@
       }
     }
 
-    fetch(WORKER_URL, {
+    // Send to Worker (Pipedrive) — primary
+    var workerRequest = fetch(WORKER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -49,13 +51,29 @@
         return res.json();
       })
       .then(function (result) {
-        if (result.ok) {
-          form.reset();
-          showStatus(form, opts.successMessage || "Verstuurd! We nemen contact op.", "success");
-          if (opts.onSuccess) opts.onSuccess();
-        } else {
-          throw new Error(result.error || "Unknown error");
-        }
+        if (!result.ok) throw new Error(result.error || "Unknown error");
+      });
+
+    // Send to Formspree (email notification) — fire and forget
+    var title = data.bron || "Website formulier";
+    fetch(FORMSPREE_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: title + " — " + (data.naam || data.email),
+        naam: data.naam || "–",
+        email: data.email || "–",
+        bron: data.bron || "–",
+        bericht: data.bericht || "–",
+      }),
+    }).catch(function () { /* email failure is non-blocking */ });
+
+    // Handle Worker result
+    workerRequest
+      .then(function () {
+        form.reset();
+        showStatus(form, opts.successMessage || "Verstuurd! We nemen contact op.", "success");
+        if (opts.onSuccess) opts.onSuccess();
       })
       .catch(function () {
         showStatus(form, opts.errorMessage || "Er ging iets mis. Probeer het later opnieuw.", "error");

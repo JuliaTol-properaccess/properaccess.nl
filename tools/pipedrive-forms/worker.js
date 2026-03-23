@@ -37,8 +37,6 @@ const LEAD_TITLES = {
   "quiz webredactie": "Quiz webredactie deelnemer",
 };
 
-const NOTIFY_EMAIL = "contact@properaccess.nl";
-const FROM_EMAIL = "noreply@properaccess.nl";
 
 export default {
   async fetch(request, env) {
@@ -166,42 +164,9 @@ async function handleSubmit(request, env, origin) {
       });
     }
 
-    // 4. Send email notification
-    await sendNotification({ bron, email, naam, bericht });
-
     return json({ ok: true }, 200, origin);
   } catch (err) {
     return json({ error: "Internal error" }, 500, origin);
-  }
-}
-
-// ── Email notification ──────────────────────────────────────
-
-async function sendNotification({ bron, email, naam, bericht }) {
-  const title = LEAD_TITLES[bron] || "Website formulier";
-  const lines = [
-    `<b>Nieuw bericht: ${escapeHtml(title)}</b>`,
-    `<br><br><b>Naam:</b> ${escapeHtml(naam || "–")}`,
-    `<b>E-mail:</b> ${escapeHtml(email)}`,
-    `<b>Bron:</b> ${escapeHtml(bron)}`,
-  ];
-  if (bericht) {
-    lines.push(`<br><b>Bericht:</b><br>${escapeHtml(bericht)}`);
-  }
-
-  try {
-    await fetch("https://api.mailchannels.net/tx/v1/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        personalizations: [{ to: [{ email: NOTIFY_EMAIL }] }],
-        from: { email: FROM_EMAIL, name: "Proper Access Website" },
-        subject: `${title} — ${naam || email}`,
-        content: [{ type: "text/html", value: lines.join("<br>") }],
-      }),
-    });
-  } catch {
-    // Email failure should not block the form submission
   }
 }
 
