@@ -144,8 +144,8 @@ Factuur na afronding van de audit, betaaltermijn 30 dagen.
 
 Wil je een indruk krijgen van de kwaliteit en diepgang van onze rapporten? Bekijk deze voorbeelden:
 
-- [NRC rapport](https://audit.properaccess.nl/reports/202512_nrc/)
-- [Rijksmuseum retest](https://audit.properaccess.nl/reports/202510_retest_rijksmuseum/)
+- [NRC rapport](https://www.properaccess.nl/rapporten/202512_nrc/)
+- [Rijksmuseum iOS-app](https://www.properaccess.nl/rapporten/202512_iOS_Rijks/)
 
 {{< /offerte-section >}}
 
