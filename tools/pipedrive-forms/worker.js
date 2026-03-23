@@ -13,6 +13,7 @@
 
 const ALLOWED_ORIGINS = [
   "https://www.properaccess.nl",
+  "https://properaccess.nl",
   "http://localhost:1313",
 ];
 

@@ -1,9 +1,0 @@
-############# English navigation ##############
-
-
-# footer menu
-[[footer]]
-name = "About"
-url = "/digital-accessibility-audit-agency/"
-weight = 1
-
