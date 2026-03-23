@@ -410,7 +410,7 @@
     {
       id: 4,
       svg: 'boldItalic',
-      scenario: 'In het CMS maak je een nieuw artikel. Je typt de tussenkop "Praktische informatie" en maakt die tekst vet met de B-knop in plaats van een koptag te kiezen. Wat is het probleem?',
+      scenario: 'In het CMS maak je een nieuw artikel. Je typt de tussenkop "Praktische informatie" en maakt die tekst vet met de B-knop in plaats van een kopelement te kiezen. Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, vet is hetzelfde als een kop' },
         { l: 'B', t: 'De tekst wordt niet groot genoeg weergegeven' },
@@ -418,12 +418,12 @@
         { l: 'D', t: 'Google indexeert vette tekst niet' }
       ],
       correct: 'C',
-      explanation: 'Als je tekst vet maakt, laat je een schermlezer weten dat hier iets belangrijks staat. Dit is geen kop! Alleen HTML-kopelementen (h1-h6) worden herkend als koppen. Dit was een van de meest voorkomende fouten in onze audits bij musea: tussenkopjes die er visueel uitzien als koppen, maar in de code gewoon vet zijn.'
+      explanation: 'Vet (<code>strong</code>) is alleen bedoeld om nadruk te leggen op tekst. Alleen HTML-kopelementen (h1-h6) worden herkend als koppen. Dit was een van de meest voorkomende fouten in onze audits bij musea: tussenkopjes die er visueel uitzien als koppen, maar in de code gewoon vet zijn.'
     },
     {
       id: 5,
       svg: 'threeCards',
-      scenario: 'Op de tentoonstellingspagina staan drie blokken met elk een korte beschrijving en een link. Alle drie de links hebben de tekst "Lees meer". Wat is het probleem?',
+      scenario: 'Op de tentoonstellingspagina staan drie blokken met elk een link met de tekst "Lees meer". Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, "Lees meer" staat onder het bericht en dat is duidelijk genoeg' },
         { l: 'B', t: 'Een schermlezer leest drie keer "Lees meer" voor zonder context \u2014 de gebruiker weet niet waar elke link naartoe gaat' },
@@ -464,12 +464,11 @@
       svg: 'threeCardsDate',
       scenario: 'Je maakt een nieuwsoverzicht. Elk artikel heeft een datum, categorie, afbeelding en kop. In het CMS voer je ze in deze volgorde in: datum, categorie, afbeelding, kop. Waarom is dat een probleem?',
       options: [
-        { l: 'A', t: 'Het is geen probleem, de CSS regelt de visuele volgorde' },
-        { l: 'B', t: 'Een schermlezer leest de datum en categorie voor voordat de kop komt \u2014 daardoor lijkt de datum bij het vorige artikel te horen' },
-        { l: 'C', t: 'Google kan de artikelen niet indexeren' },
-        { l: 'D', t: 'De afbeelding laadt langzamer als die voor de kop staat' }
+        { l: 'A', t: 'Een schermlezer leest de datum en categorie voor voordat de kop komt \u2014 daardoor lijkt de datum bij het vorige artikel te horen' },
+        { l: 'B', t: 'Google kan de artikelen niet indexeren' },
+        { l: 'C', t: 'De afbeelding laadt langzamer als die voor de kop staat' }
       ],
-      correct: 'B',
+      correct: 'A',
       explanation: 'Een schermlezer volgt de HTML-volgorde, niet de visuele volgorde. Als de datum voor de kop staat in de code, hoort een blinde gebruiker eerst "15 maart 2026, Workshops" en dan pas de titel. Die datum klinkt dan alsof die bij het vorige artikel hoort. De kop moet altijd eerst.'
     },
     {
@@ -501,7 +500,7 @@
     {
       id: 11,
       svg: 'formPlaceholder',
-      scenario: 'In het contactformulier gebruik je placeholder-tekst ("Vul hier je naam in") als label voor de invoervelden. Wat is het probleem?',
+      scenario: 'In het contactformulier gebruik je placeholder-tekst ("Je naam") als label voor de invoervelden. Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, placeholders zijn hetzelfde als labels' },
         { l: 'B', t: 'Placeholder-tekst verdwijnt zodra iemand begint te typen \u2014 dan weet de gebruiker niet meer welk veld het is' },
@@ -514,7 +513,7 @@
     {
       id: 12,
       svg: 'formError',
-      scenario: 'Een bezoeker vult het bestelformulier in maar vergeet een e-mailadres. De foutmelding luidt: "Vul een geldig e-mailadres in." Wat is er mis?',
+      scenario: 'Een bezoeker vult het bestelformulier in maar vergeet een e-mailadres. De foutmelding luidt: "Vul een geldig e-mailadres in." Wat is er mis met deze foutmelding?',
       options: [
         { l: 'A', t: 'Niets, dit is een duidelijke instructie' },
         { l: 'B', t: 'De melding zegt wat je moet doen, maar niet wat er fout is gegaan \u2014 beter: "Het veld E-mailadres is niet ingevuld"' },
@@ -555,7 +554,7 @@
       scenario: 'Je maakt een overzicht van toegangsprijzen met kolommen voor "Type ticket", "Prijs" en "Opmerking". Hoe zet je dit op?',
       options: [
         { l: 'A', t: 'Met tabs en spaties zodat het er netjes uitziet' },
-        { l: 'B', t: 'Als een echte HTML-tabel met koprij zodat een schermlezer de kolom- en rijkoppen kan voorlezen' },
+        { l: 'B', t: 'Als een echte HTML-tabel met koprij (<th>) zodat een schermlezer de kolom- en rijkoppen kan voorlezen' },
         { l: 'C', t: 'Als een afbeelding van een tabel \u2014 dan ziet het er altijd goed uit' },
         { l: 'D', t: 'Als een opsomming: "Volwassenen: \u20ac20, Kinderen: gratis"' }
       ],
@@ -581,7 +580,7 @@
       scenario: 'Je plaatst een YouTube-video op de pagina via een iframe. Wat vergeet bijna iedereen?',
       options: [
         { l: 'A', t: 'De video op autoplay zetten' },
-        { l: 'B', t: 'Een beschrijvende titel op het iframe: title="Video: rondleiding door de Vermeer-tentoonstelling"' },
+        { l: 'B', t: 'Een beschrijvende titel op het iframe zodat een schermlezer weet wat erin staat: title="Video: rondleiding door de Vermeer-tentoonstelling"' },
         { l: 'C', t: 'De video op maximale kwaliteit zetten' },
         { l: 'D', t: 'Het YouTube-logo verbergen' }
       ],
@@ -591,15 +590,15 @@
     {
       id: 18,
       svg: 'bannerText',
-      scenario: 'De grafisch ontwerper levert een banner aan: een afbeelding met daarin de tekst "Zomerprogramma 2026 \u2014 Ontdek onze activiteiten". Wat is het probleem?',
+      scenario: 'De grafisch ontwerper levert een banner aan voor de homepage: een afbeelding met daarin de tekst "Zomerprogramma 2026 \u2014 Ontdek onze activiteiten". Wat is het probleem?',
       options: [
         { l: 'A', t: 'De afbeelding is te groot voor mobiel' },
-        { l: 'B', t: 'Tekst in een afbeelding kan niet worden vergroot, niet worden voorgelezen en niet worden vertaald' },
+        { l: 'B', t: 'Tekst in een afbeelding kan niet worden vergroot door gebruikers die inzoomen, wordt niet voorgelezen door schermlezers (tenzij er alt-tekst is), en is niet vertaalbaar' },
         { l: 'C', t: 'Niets, banners zijn altijd afbeeldingen' },
         { l: 'D', t: 'De tekst moet in een ander lettertype' }
       ],
       correct: 'B',
-      explanation: 'Tekst die in een afbeelding is "gebakken" kan niet worden aangepast. Gebruik waar mogelijk echte HTML-tekst over de afbeelding. Plaats dezelfde tekst als gewone tekst op de pagina onder deze afbeelding.'
+      explanation: 'Tekst die in een afbeelding is "gebakken" kan niet worden aangepast: niet vergroot, niet voorgelezen, niet vertaald, niet geselecteerd. Gebruik waar mogelijk echte HTML-tekst over de afbeelding. Als dat niet kan, zorg dan minimaal voor een alt-tekst die de volledige tekst uit de afbeelding bevat.'
     },
     {
       id: 19,
@@ -617,15 +616,15 @@
     {
       id: 20,
       svg: 'language',
-      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n p-element staan, gescheiden door br-elementen. Waarom is dat een probleem?',
+      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n <p>-element staan, gescheiden door <br>-tags. Waarom is dat een probleem?',
       options: [
         { l: 'A', t: 'Het ziet er visueel anders uit' },
-        { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren' },
-        { l: 'C', t: 'br-elementen zijn verouderd' },
-        { l: 'D', t: 'Google straft je af voor het gebruik van br-elementen' }
+        { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren \u2014 de structuur gaat verloren' },
+        { l: 'C', t: '<br>-tags zijn verouderd' },
+        { l: 'D', t: 'Google straft je af voor het gebruik van <br>' }
       ],
       correct: 'B',
-      explanation: 'Elk los tekstblok hoort in een eigen p-element. Met br-elementen ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
+      explanation: 'Elk los tekstblok hoort in een eigen <p>-element. Als je <br><br> gebruikt om visueel ruimte te maken, ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. De gebruiker kan niet per alinea navigeren. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
     }
   ];
 
