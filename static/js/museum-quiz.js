@@ -101,7 +101,223 @@
 
     language: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true"><rect x="12" y="14" width="96" height="62" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/><rect x="20" y="22" width="80" height="3" rx="1.5" fill="#1F2937" opacity="0.15"/><rect x="20" y="28" width="68" height="3" rx="1.5" fill="#1F2937" opacity="0.15"/><rect x="20" y="38" width="72" height="14" rx="4" fill="#004050" opacity="0.08" stroke="#004050" stroke-width="1" opacity="0.2"/><rect x="20" y="58" width="80" height="3" rx="1.5" fill="#1F2937" opacity="0.15"/><rect x="20" y="64" width="56" height="3" rx="1.5" fill="#1F2937" opacity="0.15"/></svg>',
 
-    icons: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true"><rect x="12" y="14" width="96" height="62" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/><circle cx="34" cy="44" r="12" fill="#A30D4B" opacity="0.12" stroke="#A30D4B" stroke-width="1.5"/><circle cx="60" cy="44" r="12" fill="#004050" opacity="0.12" stroke="#004050" stroke-width="1.5"/><circle cx="86" cy="44" r="12" fill="#1F2937" opacity="0.08" stroke="#1F2937" stroke-width="1.5"/><path d="M30 40v8l8-4z" fill="#A30D4B" opacity="0.6"/><rect x="56" y="40" width="8" height="8" rx="1" fill="#004050" opacity="0.5"/><circle cx="86" cy="44" r="4" fill="none" stroke="#1F2937" stroke-width="1.5" opacity="0.4"/><circle cx="86" cy="44" r="1.5" fill="#1F2937" opacity="0.4"/></svg>'
+    icons: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true"><rect x="12" y="14" width="96" height="62" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/><circle cx="34" cy="44" r="12" fill="#A30D4B" opacity="0.12" stroke="#A30D4B" stroke-width="1.5"/><circle cx="60" cy="44" r="12" fill="#004050" opacity="0.12" stroke="#004050" stroke-width="1.5"/><circle cx="86" cy="44" r="12" fill="#1F2937" opacity="0.08" stroke="#1F2937" stroke-width="1.5"/><path d="M30 40v8l8-4z" fill="#A30D4B" opacity="0.6"/><rect x="56" y="40" width="8" height="8" rx="1" fill="#004050" opacity="0.5"/><circle cx="86" cy="44" r="4" fill="none" stroke="#1F2937" stroke-width="1.5" opacity="0.4"/><circle cx="86" cy="44" r="1.5" fill="#1F2937" opacity="0.4"/></svg>',
+
+    museum: '<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="2" y="2" width="156" height="96" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Museum building -->' +
+      '<path d="M80 18l-40 20v4h80v-4z" fill="#1F2937" opacity="0.15"/>' +
+      '<rect x="44" y="42" width="72" height="36" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="50" y="42" width="10" height="36" fill="#1F2937" opacity="0.08"/>' +
+      '<rect x="66" y="42" width="10" height="36" fill="#1F2937" opacity="0.08"/>' +
+      '<rect x="82" y="42" width="10" height="36" fill="#1F2937" opacity="0.08"/>' +
+      '<rect x="98" y="42" width="10" height="36" fill="#1F2937" opacity="0.08"/>' +
+      '<!-- Columns -->' +
+      '<rect x="48" y="38" width="4" height="40" rx="2" fill="#1F2937" opacity="0.25"/>' +
+      '<rect x="64" y="38" width="4" height="40" rx="2" fill="#1F2937" opacity="0.25"/>' +
+      '<rect x="80" y="38" width="4" height="40" rx="2" fill="#1F2937" opacity="0.25"/>' +
+      '<rect x="96" y="38" width="4" height="40" rx="2" fill="#1F2937" opacity="0.25"/>' +
+      '<rect x="112" y="38" width="4" height="40" rx="2" fill="#1F2937" opacity="0.25"/>' +
+      '<!-- Triangle pediment -->' +
+      '<path d="M80 14l-38 22h76z" fill="#fff" stroke="#1F2937" stroke-width="1.5" opacity="0.3"/>' +
+      '<!-- Door -->' +
+      '<rect x="72" y="56" width="16" height="22" rx="8" fill="#A30D4B" opacity="0.2"/>' +
+      '<!-- Steps -->' +
+      '<rect x="40" y="78" width="80" height="4" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="36" y="82" width="88" height="4" rx="1" fill="#1F2937" opacity="0.08"/>' +
+      '<rect x="32" y="86" width="96" height="4" rx="1" fill="#1F2937" opacity="0.06"/>' +
+      '</svg>',
+
+    painting: '<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="2" y="2" width="156" height="96" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Wall -->' +
+      '<rect x="10" y="10" width="140" height="80" fill="#fff" opacity="0.5"/>' +
+      '<!-- Frame -->' +
+      '<rect x="40" y="16" width="80" height="56" rx="2" fill="#1F2937" opacity="0.08" stroke="#1F2937" stroke-width="2.5" opacity="0.4"/>' +
+      '<!-- Inner frame -->' +
+      '<rect x="45" y="21" width="70" height="46" fill="#004050" opacity="0.08"/>' +
+      '<!-- Painting contents: woman pouring milk (abstract) -->' +
+      '<circle cx="72" cy="36" r="5" fill="#A30D4B" opacity="0.15"/>' +
+      '<path d="M68 41c0 0-2 1-3 6s-1 8-1 8h14s0-4-1-8-3-6-3-6" fill="#004050" opacity="0.12"/>' +
+      '<rect x="82" y="38" width="8" height="10" rx="2" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="56" y="48" width="28" height="14" rx="1" fill="#1F2937" opacity="0.06"/>' +
+      '<!-- Hanging wire -->' +
+      '<path d="M80 8l-12 8M80 8l12 8" stroke="#1F2937" stroke-width="1" opacity="0.3"/>' +
+      '<!-- Caption plate -->' +
+      '<rect x="58" y="76" width="44" height="8" rx="2" fill="#fff" stroke="#1F2937" stroke-width="1" opacity="0.3"/>' +
+      '<rect x="62" y="79" width="36" height="2" rx="1" fill="#1F2937" opacity="0.15"/>' +
+      '</svg>',
+
+    threeCards: '<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="2" y="2" width="156" height="96" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Card 1 -->' +
+      '<rect x="10" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="14" y="12" width="34" height="18" rx="2" fill="#A30D4B" opacity="0.1"/>' +
+      '<rect x="14" y="34" width="30" height="4" rx="2" fill="#1F2937" opacity="0.4"/>' +
+      '<rect x="14" y="42" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="14" y="47" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="14" y="52" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="14" y="60" width="24" height="3" rx="1.5" fill="#004050" opacity="0.6"/><rect x="14" y="60" width="24" height="3" rx="1.5" fill="none" stroke="#004050" stroke-width="0.5" opacity="0.3"/>' +
+      '<!-- Card 2 -->' +
+      '<rect x="59" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="63" y="12" width="34" height="18" rx="2" fill="#004050" opacity="0.1"/>' +
+      '<rect x="63" y="34" width="30" height="4" rx="2" fill="#1F2937" opacity="0.4"/>' +
+      '<rect x="63" y="42" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="63" y="47" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="63" y="52" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="63" y="60" width="24" height="3" rx="1.5" fill="#004050" opacity="0.6"/>' +
+      '<!-- Card 3 -->' +
+      '<rect x="108" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="112" y="12" width="34" height="18" rx="2" fill="#1F2937" opacity="0.06"/>' +
+      '<rect x="112" y="34" width="30" height="4" rx="2" fill="#1F2937" opacity="0.4"/>' +
+      '<rect x="112" y="42" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="112" y="47" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="112" y="52" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="112" y="60" width="24" height="3" rx="1.5" fill="#004050" opacity="0.6"/>' +
+      '<!-- "Lees meer" labels -->' +
+      '<text x="26" y="62" text-anchor="middle" font-size="3" fill="#004050" font-family="sans-serif">Lees meer</text>' +
+      '<text x="75" y="62" text-anchor="middle" font-size="3" fill="#004050" font-family="sans-serif">Lees meer</text>' +
+      '<text x="124" y="62" text-anchor="middle" font-size="3" fill="#004050" font-family="sans-serif">Lees meer</text>' +
+      '</svg>',
+
+    threeCardsDate: '<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="2" y="2" width="156" height="96" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Card 1 -->' +
+      '<rect x="10" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="14" y="14" width="20" height="3" rx="1.5" fill="#A30D4B" opacity="0.3"/>' +
+      '<text x="14" y="16" font-size="2.5" fill="#A30D4B" opacity="0.6" font-family="sans-serif">15 mrt 2026</text>' +
+      '<rect x="14" y="22" width="30" height="4" rx="2" fill="#1F2937" opacity="0.5"/>' +
+      '<rect x="14" y="30" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="14" y="35" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="14" y="40" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<!-- Card 2 -->' +
+      '<rect x="59" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="63" y="14" width="20" height="3" rx="1.5" fill="#A30D4B" opacity="0.3"/>' +
+      '<rect x="63" y="22" width="30" height="4" rx="2" fill="#1F2937" opacity="0.5"/>' +
+      '<rect x="63" y="30" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="63" y="35" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="63" y="40" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<!-- Card 3 -->' +
+      '<rect x="108" y="8" width="42" height="84" rx="4" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<rect x="112" y="14" width="20" height="3" rx="1.5" fill="#A30D4B" opacity="0.3"/>' +
+      '<rect x="112" y="22" width="30" height="4" rx="2" fill="#1F2937" opacity="0.5"/>' +
+      '<rect x="112" y="30" width="34" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="112" y="35" width="28" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="112" y="40" width="32" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<!-- Arrow showing wrong order -->' +
+      '<path d="M14 18l4-6" stroke="#f87171" stroke-width="1" stroke-linecap="round" opacity="0.6"/>' +
+      '<text x="22" y="12" font-size="2.5" fill="#f87171" opacity="0.7" font-family="sans-serif">datum eerst?</text>' +
+      '</svg>',
+
+    formPlaceholder: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="12" y="8" width="96" height="74" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Field 1 -->' +
+      '<rect x="20" y="16" width="80" height="14" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<text x="26" y="26" font-size="5" fill="#9ca3af" font-family="sans-serif">Vul hier je naam in</text>' +
+      '<!-- Field 2 -->' +
+      '<rect x="20" y="36" width="80" height="14" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<text x="26" y="46" font-size="5" fill="#9ca3af" font-family="sans-serif">E-mailadres</text>' +
+      '<!-- Field 3 -->' +
+      '<rect x="20" y="56" width="80" height="14" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<text x="26" y="66" font-size="5" fill="#9ca3af" font-family="sans-serif">Je bericht</text>' +
+      '<!-- No visible labels! -->' +
+      '</svg>',
+
+    formError: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="12" y="8" width="96" height="74" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Label -->' +
+      '<text x="20" y="20" font-size="5" font-weight="600" fill="#1F2937" font-family="sans-serif">E-mailadres</text>' +
+      '<!-- Field with red border -->' +
+      '<rect x="20" y="24" width="80" height="14" rx="3" fill="#fff" stroke="#f87171" stroke-width="2"/>' +
+      '<!-- Error message -->' +
+      '<text x="20" y="48" font-size="4.5" fill="#f87171" font-family="sans-serif">Vul een geldig e-mailadres in.</text>' +
+      '<!-- Second field -->' +
+      '<text x="20" y="58" font-size="5" font-weight="600" fill="#1F2937" font-family="sans-serif">Telefoonnummer</text>' +
+      '<rect x="20" y="62" width="80" height="14" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Warning icon -->' +
+      '<circle cx="96" cy="31" r="4" fill="#f87171" opacity="0.15"/>' +
+      '<text x="96" y="33" text-anchor="middle" font-size="6" font-weight="700" fill="#f87171" font-family="sans-serif">!</text>' +
+      '</svg>',
+
+    dataTable3col: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="8" y="10" width="104" height="70" rx="6" fill="#fff" stroke="#1F2937" stroke-width="1.5"/>' +
+      '<!-- Header row -->' +
+      '<rect x="8" y="10" width="104" height="14" rx="6" fill="#A30D4B" opacity="0.1"/>' +
+      '<rect x="8" y="18" width="104" height="6" fill="#A30D4B" opacity="0.1"/>' +
+      '<line x1="8" y1="24" x2="112" y2="24" stroke="#A30D4B" stroke-width="1" opacity="0.3"/>' +
+      '<!-- Column dividers -->' +
+      '<line x1="48" y1="10" x2="48" y2="80" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<line x1="82" y1="10" x2="82" y2="80" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<!-- Header text -->' +
+      '<rect x="14" y="16" width="26" height="4" rx="2" fill="#A30D4B" opacity="0.5"/>' +
+      '<rect x="54" y="16" width="20" height="4" rx="2" fill="#A30D4B" opacity="0.5"/>' +
+      '<rect x="88" y="16" width="18" height="4" rx="2" fill="#A30D4B" opacity="0.5"/>' +
+      '<!-- Row dividers -->' +
+      '<line x1="8" y1="38" x2="112" y2="38" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<line x1="8" y1="52" x2="112" y2="52" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<line x1="8" y1="66" x2="112" y2="66" stroke="#e5e7eb" stroke-width="1"/>' +
+      '<!-- Data rows -->' +
+      '<rect x="14" y="29" width="22" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="54" y="29" width="14" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="88" y="29" width="16" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="14" y="43" width="20" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="54" y="43" width="12" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="88" y="43" width="18" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="14" y="57" width="24" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="54" y="57" width="16" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '<rect x="88" y="57" width="14" height="3" rx="1.5" fill="#1F2937" opacity="0.2"/>' +
+      '</svg>',
+
+    formAsterisk: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="12" y="8" width="96" height="74" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Label 1 with asterisk -->' +
+      '<text x="20" y="20" font-size="5" font-weight="600" fill="#1F2937" font-family="sans-serif">Naam</text>' +
+      '<text x="36" y="20" font-size="6" fill="#f87171" font-family="sans-serif">*</text>' +
+      '<rect x="20" y="24" width="80" height="12" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Label 2 with asterisk -->' +
+      '<text x="20" y="46" font-size="5" font-weight="600" fill="#1F2937" font-family="sans-serif">E-mail</text>' +
+      '<text x="41" y="46" font-size="6" fill="#f87171" font-family="sans-serif">*</text>' +
+      '<rect x="20" y="50" width="80" height="12" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Label 3 without asterisk -->' +
+      '<text x="20" y="72" font-size="5" font-weight="600" fill="#1F2937" font-family="sans-serif">Opmerking</text>' +
+      '<rect x="20" y="76" width="80" height="4" rx="2" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '</svg>',
+
+    bannerText: '<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="2" y="2" width="156" height="96" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- Banner image -->' +
+      '<rect x="10" y="10" width="140" height="80" rx="6" fill="#A30D4B"/>' +
+      '<circle cx="40" cy="50" r="28" fill="#fff" opacity="0.04"/>' +
+      '<circle cx="130" cy="30" r="20" fill="#fff" opacity="0.03"/>' +
+      '<!-- Text baked into image -->' +
+      '<text x="80" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Nunito Sans, sans-serif">Zomerprogramma 2026</text>' +
+      '<text x="80" y="58" text-anchor="middle" font-size="8" fill="#fff" font-family="Nunito Sans, sans-serif" opacity="0.9">Ontdek onze activiteiten</text>' +
+      '<!-- Image icon to show it is an image -->' +
+      '<rect x="12" y="74" width="16" height="12" rx="2" fill="#fff" opacity="0.15"/>' +
+      '<circle cx="17" cy="78" r="2" fill="#fff" opacity="0.2"/>' +
+      '<path d="M12 84l5-5 3 3 3-2 5 4" fill="#fff" opacity="0.15"/>' +
+      '</svg>',
+
+    accordion: '<svg viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="quiz__svg" aria-hidden="true">' +
+      '<rect x="12" y="8" width="96" height="74" rx="6" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>' +
+      '<!-- FAQ title -->' +
+      '<rect x="20" y="14" width="24" height="5" rx="2.5" fill="#1F2937" opacity="0.5"/>' +
+      '<!-- Accordion item 1 (open) -->' +
+      '<rect x="20" y="24" width="80" height="10" rx="3" fill="#A30D4B" opacity="0.08" stroke="#A30D4B" stroke-width="0.75" opacity="0.2"/>' +
+      '<rect x="26" y="28" width="40" height="3" rx="1.5" fill="#A30D4B" opacity="0.5"/>' +
+      '<text x="94" y="31" text-anchor="middle" font-size="6" fill="#A30D4B" opacity="0.5" font-family="sans-serif">\u2212</text>' +
+      '<!-- Answer content -->' +
+      '<rect x="26" y="38" width="70" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<rect x="26" y="43" width="60" height="2" rx="1" fill="#1F2937" opacity="0.1"/>' +
+      '<!-- Accordion item 2 (closed) -->' +
+      '<rect x="20" y="50" width="80" height="10" rx="3" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="0.75"/>' +
+      '<rect x="26" y="54" width="36" height="3" rx="1.5" fill="#1F2937" opacity="0.3"/>' +
+      '<text x="94" y="57" text-anchor="middle" font-size="6" fill="#1F2937" opacity="0.3" font-family="sans-serif">+</text>' +
+      '<!-- Accordion item 3 (closed) -->' +
+      '<rect x="20" y="64" width="80" height="10" rx="3" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="0.75"/>' +
+      '<rect x="26" y="68" width="44" height="3" rx="1.5" fill="#1F2937" opacity="0.3"/>' +
+      '<text x="94" y="71" text-anchor="middle" font-size="6" fill="#1F2937" opacity="0.3" font-family="sans-serif">+</text>' +
+      '</svg>'
   };
 
   /* ═══════════════════════════════════════════
@@ -154,7 +370,7 @@
   var Q = [
     {
       id: 1,
-      svg: 'decorative',
+      svg: 'museum',
       scenario: 'Op de homepage staat een grote sfeerfoto van het museumgebouw. Erboven staat al de kop "Welkom in het museum". De foto voegt geen nieuwe informatie toe. Wat doe je met de alt-tekst?',
       options: [
         { l: 'A', t: '"Foto van het museumgebouw vanaf de straat"' },
@@ -162,12 +378,12 @@
         { l: 'C', t: 'Lege alt-tekst (alt="")' },
         { l: 'D', t: 'Je laat het alt-attribuut helemaal weg' }
       ],
-      correct: 'C',
-      explanation: 'De foto voegt geen informatie toe die niet al in de kop staat. Met alt="" slaat een schermlezer de afbeelding over. Optie A is niet per se fout, maar zorgt voor extra tekst zonder meerwaarde. Optie B herhaalt de kop. Optie D is het slechtst: zonder alt-attribuut leest een schermlezer de bestandsnaam voor, zoals "DSC_0482_homepage_header_final_v3.jpg".'
+      correct: ['A', 'C'],
+      explanation: 'Dit mag je als webredacteur zelf bepalen. De foto voegt geen informatie toe die niet al in de kop staat, dus alt="" (C) is prima. Maar een korte beschrijving zoals "Foto van het museumgebouw vanaf de straat" (A) is ook goed \u2014 het geeft de sfeer mee. Optie B herhaalt de kop, dat is overbodig. Optie D is het slechtst: zonder alt-attribuut leest een schermlezer de bestandsnaam voor, zoals "DSC_0482_homepage_header_final_v3.jpg".'
     },
     {
       id: 2,
-      svg: 'image',
+      svg: 'painting',
       scenario: 'In een artikel over een tentoonstelling staat een foto van een schilderij van Vermeer. Onder de foto staat het bijschrift: "Johannes Vermeer, Het melkmeisje, ca. 1660." Wat is de beste alt-tekst?',
       options: [
         { l: 'A', t: '"Schilderij"' },
@@ -202,11 +418,11 @@
         { l: 'D', t: 'Google indexeert vette tekst niet' }
       ],
       correct: 'C',
-      explanation: 'Vet (strong) is visuele opmaak. Alleen HTML-kopelementen (h1-h6) worden herkend als koppen. Dit was een van de meest voorkomende fouten in onze audits bij musea: tussenkopjes die er visueel uitzien als koppen, maar in de code gewoon vet zijn.'
+      explanation: 'Als je tekst vet maakt, laat je een schermlezer weten dat hier iets belangrijks staat. Dit is geen kop! Alleen HTML-kopelementen (h1-h6) worden herkend als koppen. Dit was een van de meest voorkomende fouten in onze audits bij musea: tussenkopjes die er visueel uitzien als koppen, maar in de code gewoon vet zijn.'
     },
     {
       id: 5,
-      svg: 'link',
+      svg: 'threeCards',
       scenario: 'Op de tentoonstellingspagina staan drie blokken met elk een korte beschrijving en een link. Alle drie de links hebben de tekst "Lees meer". Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, "Lees meer" staat onder het bericht en dat is duidelijk genoeg' },
@@ -245,7 +461,7 @@
     },
     {
       id: 8,
-      svg: 'list',
+      svg: 'threeCardsDate',
       scenario: 'Je maakt een nieuwsoverzicht. Elk artikel heeft een datum, categorie, afbeelding en kop. In het CMS voer je ze in deze volgorde in: datum, categorie, afbeelding, kop. Waarom is dat een probleem?',
       options: [
         { l: 'A', t: 'Het is geen probleem, de CSS regelt de visuele volgorde' },
@@ -284,7 +500,7 @@
     },
     {
       id: 11,
-      svg: 'table',
+      svg: 'formPlaceholder',
       scenario: 'In het contactformulier gebruik je placeholder-tekst ("Vul hier je naam in") als label voor de invoervelden. Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, placeholders zijn hetzelfde als labels' },
@@ -297,7 +513,7 @@
     },
     {
       id: 12,
-      svg: 'icons',
+      svg: 'formError',
       scenario: 'Een bezoeker vult het bestelformulier in maar vergeet een e-mailadres. De foutmelding luidt: "Vul een geldig e-mailadres in." Wat is er mis?',
       options: [
         { l: 'A', t: 'Niets, dit is een duidelijke instructie' },
@@ -335,7 +551,7 @@
     },
     {
       id: 15,
-      svg: 'tableHeaders',
+      svg: 'dataTable3col',
       scenario: 'Je maakt een overzicht van toegangsprijzen met kolommen voor "Type ticket", "Prijs" en "Opmerking". Hoe zet je dit op?',
       options: [
         { l: 'A', t: 'Met tabs en spaties zodat het er netjes uitziet' },
@@ -348,7 +564,7 @@
     },
     {
       id: 16,
-      svg: 'icons',
+      svg: 'formAsterisk',
       scenario: 'In je formulier markeer je verplichte velden met een rood sterretje (*). Wat vergeten de meeste redacteurs?',
       options: [
         { l: 'A', t: 'Het sterretje groter maken' },
@@ -374,7 +590,7 @@
     },
     {
       id: 18,
-      svg: 'image',
+      svg: 'bannerText',
       scenario: 'De grafisch ontwerper levert een banner aan: een afbeelding met daarin de tekst "Zomerprogramma 2026 \u2014 Ontdek onze activiteiten". Wat is het probleem?',
       options: [
         { l: 'A', t: 'De afbeelding is te groot voor mobiel' },
@@ -383,11 +599,11 @@
         { l: 'D', t: 'De tekst moet in een ander lettertype' }
       ],
       correct: 'B',
-      explanation: 'Tekst die in een afbeelding is "gebakken" kan niet worden aangepast. Gebruik waar mogelijk echte HTML-tekst over de afbeelding. Als dat niet kan, zorg dan minimaal voor een alt-tekst met de volledige tekst uit de afbeelding.'
+      explanation: 'Tekst die in een afbeelding is "gebakken" kan niet worden aangepast. Gebruik waar mogelijk echte HTML-tekst over de afbeelding. Plaats dezelfde tekst als gewone tekst op de pagina onder deze afbeelding.'
     },
     {
       id: 19,
-      svg: 'heading',
+      svg: 'accordion',
       scenario: 'Op de FAQ-pagina staan 15 vragen in een accordeon. Elke vraag is een klikbaar element dat het antwoord ontvouwt. Wat moet je controleren als redacteur?',
       options: [
         { l: 'A', t: 'Of de vragen als koppen zijn gemarkeerd, niet als gewone tekst' },
@@ -401,15 +617,15 @@
     {
       id: 20,
       svg: 'language',
-      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n p-element staan, gescheiden door br-tags. Waarom is dat een probleem?',
+      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n p-element staan, gescheiden door br-elementen. Waarom is dat een probleem?',
       options: [
         { l: 'A', t: 'Het ziet er visueel anders uit' },
         { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren' },
-        { l: 'C', t: 'br-tags zijn verouderd' },
-        { l: 'D', t: 'Google straft je af voor het gebruik van br-tags' }
+        { l: 'C', t: 'br-elementen zijn verouderd' },
+        { l: 'D', t: 'Google straft je af voor het gebruik van br-elementen' }
       ],
       correct: 'B',
-      explanation: 'Elk los tekstblok hoort in een eigen p-element. Met br-tags ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
+      explanation: 'Elk los tekstblok hoort in een eigen p-element. Met br-elementen ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
     }
   ];
 
@@ -511,6 +727,7 @@
       '<p class="quiz__email-cta-desc">' + t('emailCtaDesc') + '</p>' +
       '<div class="quiz__email-form" id="quizEmailForm">' +
       '<form id="quiz-email-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: \'quiz\', successMessage: \'Verstuurd! Je ontvangt de tips per e-mail.\' });">' +
+      '<input type="hidden" name="quiz_type" value="museum" />' +
       '<input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />' +
       '<div class="pa-form__row">' +
       '<label for="quiz-email" class="sr-only">E-mailadres</label>' +
@@ -607,10 +824,11 @@
     html += '<div class="quiz__options" id="quizOptions" role="radiogroup" aria-label="Antwoordopties">';
     q.options.forEach(function (o) {
       var c = 'quiz__option';
+      var isCorrectOption = Array.isArray(q.correct) ? q.correct.indexOf(o.l) !== -1 : o.l === q.correct;
       if (s.done) {
         c += ' quiz__option--locked';
-        if (o.l === q.correct) c += ' quiz__option--correct';
-        if (o.l === s.sel && o.l !== q.correct) c += ' quiz__option--wrong';
+        if (isCorrectOption) c += ' quiz__option--correct';
+        if (o.l === s.sel && !isCorrectOption) c += ' quiz__option--wrong';
       } else if (o.l === s.sel) {
         c += ' quiz__option--selected';
       }
@@ -711,7 +929,7 @@
     var q = Q[cur];
     var s = st[q.id];
     s.done = true;
-    s.correct = (s.sel === q.correct);
+    s.correct = Array.isArray(q.correct) ? q.correct.indexOf(s.sel) !== -1 : (s.sel === q.correct);
     renderQuestion();
   }
 
@@ -817,7 +1035,7 @@
 
       var optionsHtml = '';
       q.options.forEach(function (o) {
-        var isCorrect = o.l === q.correct;
+        var isCorrect = Array.isArray(q.correct) ? q.correct.indexOf(o.l) !== -1 : o.l === q.correct;
         var wasSelected = o.l === s.sel;
         var c = 'quiz__review-option';
         if (isCorrect) c += ' quiz__review-option--correct';
