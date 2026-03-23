@@ -56,16 +56,24 @@
 
     // Send to Formspree (email notification) — fire and forget
     var title = data.bron || "Website formulier";
+    var formspreeData = {
+      _subject: title + " — " + (data.naam || data.email),
+      naam: data.naam || "–",
+      email: data.email || "–",
+      bron: data.bron || "–",
+      bericht: data.bericht || "–",
+    };
+    // Include quiz results if present
+    if (data.quiz_score) {
+      formspreeData.quiz_score = data.quiz_score;
+      formspreeData.quiz_correct = data.quiz_correct || "–";
+      formspreeData.quiz_total = data.quiz_total || "–";
+      formspreeData._subject = title + " — " + (data.email) + " — score: " + data.quiz_score;
+    }
     fetch(FORMSPREE_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({
-        _subject: title + " — " + (data.naam || data.email),
-        naam: data.naam || "–",
-        email: data.email || "–",
-        bron: data.bron || "–",
-        bericht: data.bericht || "–",
-      }),
+      body: JSON.stringify(formspreeData),
     }).catch(function () { /* email failure is non-blocking */ });
 
     // Handle Worker result
