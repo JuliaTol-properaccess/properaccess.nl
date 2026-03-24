@@ -14,3 +14,15 @@
   translation: "Vertel ons waar we je mee kunnen helpen..."
 - id: contact_submit
   translation: "Verstuur bericht"
+- id: search_input_placeholder
+  translation: "Zoek in blog..."
+- id: search_no_results
+  translation: "Geen resultaten voor"
+- id: search_initial_message
+  translation: "Typ iets om te zoeken..."
+- id: search_navigate
+  translation: "navigeer"
+- id: search_select
+  translation: "selecteer"
+- id: search_close
+  translation: "sluiten"
