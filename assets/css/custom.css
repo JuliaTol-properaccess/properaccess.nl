@@ -11116,6 +11116,15 @@ html.dark .hp-linkedin__card-desc {
   margin-bottom: 0.75rem;
 }
 
+.case__body > h4 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .case__body > p {
   color: #374151;
   line-height: 1.8;
@@ -11128,6 +11137,14 @@ html.dark .hp-linkedin__card-desc {
   line-height: 1.8;
   margin-bottom: 1rem;
   padding-left: 2.5rem;
+}
+
+.case__body > ul {
+  list-style: disc;
+}
+
+.case__body > ol {
+  list-style: decimal;
 }
 
 .case__body > ul li,
