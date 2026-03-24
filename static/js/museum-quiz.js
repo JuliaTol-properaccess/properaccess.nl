@@ -569,7 +569,7 @@
       scenario: 'Je maakt een overzicht van toegangsprijzen met kolommen voor "Type ticket", "Prijs" en "Opmerking". Hoe zet je dit op?',
       options: [
         { l: 'A', t: 'Met tabs en spaties zodat het er netjes uitziet' },
-        { l: 'B', t: 'Als een echte HTML-tabel met koprij (<th>) zodat een schermlezer de kolom- en rijkoppen kan voorlezen' },
+        { l: 'B', t: 'Als een echte HTML-tabel met koprij (&lt;th&gt;) zodat een schermlezer de kolom- en rijkoppen kan voorlezen' },
         { l: 'C', t: 'Als een afbeelding van een tabel \u2014 dan ziet het er altijd goed uit' },
         { l: 'D', t: 'Als een opsomming: "Volwassenen: \u20ac20, Kinderen: gratis"' }
       ],
