@@ -1026,7 +1026,7 @@
     var totalField = el('quizEmailTotal');
     if (scoreField) scoreField.value = sc + '%';
     if (correctField) correctField.value = correct;
-    if (totalField) totalField.value = total;
+    if (totalField) totalField.value = Q.length;
 
     // Add category details as hidden field
     var catField = document.getElementById('quizEmailCategories');
