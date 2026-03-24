@@ -293,9 +293,45 @@ html.dark .offerte-hero__meta-value a {
 
 /* ─── Grocery theme (Crisp) ─── */
 .offerte-hero--grocery {
-  background-color: #f5f5f5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320' fill='none'%3E%3C!-- apple --%3E%3Cellipse cx='48' cy='40' rx='14' ry='15' stroke='%23276749' stroke-width='1.5' opacity='.18'/%3E%3Cpath d='M48 25c-1-5 2-9 5-11' stroke='%23276749' stroke-width='1.2' opacity='.18'/%3E%3Cpath d='M46 27c-3-2-6 0-7 2' stroke='%23276749' stroke-width='1' opacity='.15'/%3E%3C!-- carrot --%3E%3Cpath d='M160 55l-6 28c-1 4 2 5 6 5s7-1 6-5l-6-28z' stroke='%23276749' stroke-width='1.5' opacity='.18' fill='none'/%3E%3Cpath d='M157 55c-2-6 0-10 3-12m3 12c2-6 0-10-3-12' stroke='%23276749' stroke-width='1' opacity='.15'/%3E%3C!-- shopping bag --%3E%3Crect x='245' y='30' width='30' height='35' rx='3' stroke='%23276749' stroke-width='1.5' opacity='.18'/%3E%3Cpath d='M252 38v-6a8 8 0 0116 0v6' stroke='%23276749' stroke-width='1.5' opacity='.18' fill='none'/%3E%3C!-- broccoli --%3E%3Ccircle cx='70' cy='160' r='8' stroke='%23276749' stroke-width='1.2' opacity='.18'/%3E%3Ccircle cx='82' cy='155' r='7' stroke='%23276749' stroke-width='1.2' opacity='.18'/%3E%3Ccircle cx='76' cy='148' r='7' stroke='%23276749' stroke-width='1.2' opacity='.18'/%3E%3Cpath d='M76 168v20' stroke='%23276749' stroke-width='1.5' opacity='.2'/%3E%3C!-- lemon --%3E%3Cellipse cx='200' cy='170' rx='16' ry='12' stroke='%23276749' stroke-width='1.5' opacity='.18' transform='rotate(-20 200 170)'/%3E%3Ccircle cx='200' cy='170' r='1.5' fill='%23276749' opacity='.12'/%3E%3C!-- milk carton --%3E%3Crect x='280' y='150' width='20' height='30' rx='2' stroke='%23276749' stroke-width='1.5' opacity='.18'/%3E%3Cpath d='M280 158h20M284 150l6-8 6 8' stroke='%23276749' stroke-width='1.2' opacity='.15'/%3E%3C!-- tomato --%3E%3Ccircle cx='130' cy='280' r='13' stroke='%23276749' stroke-width='1.5' opacity='.18'/%3E%3Cpath d='M122 272c4-4 8-3 8-3s4-1 8 3' stroke='%23276749' stroke-width='1' opacity='.15'/%3E%3C!-- bread --%3E%3Cpath d='M240 270c0-8 5-14 15-14s15 6 15 14v16h-30v-16z' stroke='%23276749' stroke-width='1.5' opacity='.18' fill='none'/%3E%3Cline x1='247' y1='276' x2='247' y2='282' stroke='%23276749' stroke-width='1' opacity='.12'/%3E%3Cline x1='255' y1='274' x2='255' y2='282' stroke='%23276749' stroke-width='1' opacity='.12'/%3E%3Cline x1='263' y1='276' x2='263' y2='282' stroke='%23276749' stroke-width='1' opacity='.12'/%3E%3C/svg%3E");
+  background-color: #1A6B4F;
+  color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320' fill='none'%3E%3C!-- apple --%3E%3Cellipse cx='48' cy='40' rx='14' ry='15' stroke='%23ffffff' stroke-width='1.5' opacity='.15'/%3E%3Cpath d='M48 25c-1-5 2-9 5-11' stroke='%23ffffff' stroke-width='1.2' opacity='.15'/%3E%3Cpath d='M46 27c-3-2-6 0-7 2' stroke='%23ffffff' stroke-width='1' opacity='.12'/%3E%3C!-- carrot --%3E%3Cpath d='M160 55l-6 28c-1 4 2 5 6 5s7-1 6-5l-6-28z' stroke='%23ffffff' stroke-width='1.5' opacity='.15' fill='none'/%3E%3Cpath d='M157 55c-2-6 0-10 3-12m3 12c2-6 0-10-3-12' stroke='%23ffffff' stroke-width='1' opacity='.12'/%3E%3C!-- shopping bag --%3E%3Crect x='245' y='30' width='30' height='35' rx='3' stroke='%23ffffff' stroke-width='1.5' opacity='.15'/%3E%3Cpath d='M252 38v-6a8 8 0 0116 0v6' stroke='%23ffffff' stroke-width='1.5' opacity='.15' fill='none'/%3E%3C!-- broccoli --%3E%3Ccircle cx='70' cy='160' r='8' stroke='%23ffffff' stroke-width='1.2' opacity='.15'/%3E%3Ccircle cx='82' cy='155' r='7' stroke='%23ffffff' stroke-width='1.2' opacity='.15'/%3E%3Ccircle cx='76' cy='148' r='7' stroke='%23ffffff' stroke-width='1.2' opacity='.15'/%3E%3Cpath d='M76 168v20' stroke='%23ffffff' stroke-width='1.5' opacity='.18'/%3E%3C!-- lemon --%3E%3Cellipse cx='200' cy='170' rx='16' ry='12' stroke='%23ffffff' stroke-width='1.5' opacity='.15' transform='rotate(-20 200 170)'/%3E%3Ccircle cx='200' cy='170' r='1.5' fill='%23ffffff' opacity='.1'/%3E%3C!-- milk carton --%3E%3Crect x='280' y='150' width='20' height='30' rx='2' stroke='%23ffffff' stroke-width='1.5' opacity='.15'/%3E%3Cpath d='M280 158h20M284 150l6-8 6 8' stroke='%23ffffff' stroke-width='1.2' opacity='.12'/%3E%3C!-- tomato --%3E%3Ccircle cx='130' cy='280' r='13' stroke='%23ffffff' stroke-width='1.5' opacity='.15'/%3E%3Cpath d='M122 272c4-4 8-3 8-3s4-1 8 3' stroke='%23ffffff' stroke-width='1' opacity='.12'/%3E%3C!-- bread --%3E%3Cpath d='M240 270c0-8 5-14 15-14s15 6 15 14v16h-30v-16z' stroke='%23ffffff' stroke-width='1.5' opacity='.15' fill='none'/%3E%3Cline x1='247' y1='276' x2='247' y2='282' stroke='%23ffffff' stroke-width='1' opacity='.1'/%3E%3Cline x1='255' y1='274' x2='255' y2='282' stroke='%23ffffff' stroke-width='1' opacity='.1'/%3E%3Cline x1='263' y1='276' x2='263' y2='282' stroke='%23ffffff' stroke-width='1' opacity='.1'/%3E%3C/svg%3E");
   background-size: 320px 320px;
+}
+
+.offerte-hero--grocery .offerte-hero__title h1 {
+  color: #ffffff;
+}
+
+.offerte-hero--grocery .offerte-hero__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.offerte-hero--grocery .offerte-hero__meta {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-left-color: #A30D4B;
+}
+
+.offerte-hero--grocery .offerte-hero__meta-item {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.offerte-hero--grocery .offerte-hero__meta-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.offerte-hero--grocery .offerte-hero__meta-value {
+  color: #ffffff;
+}
+
+.offerte-hero--grocery .offerte-hero__meta-value a {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+.offerte-hero--grocery .offerte-hero__meta-value a:hover {
+  text-decoration-color: #ffffff;
 }
 
 .offerte-hero--grocery .offerte-hero__logo {
