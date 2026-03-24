@@ -1,11 +1,18 @@
 {{ define "main" }}
   <!-- Hero -->
-  <section class="offerte-hero">
+  <section class="offerte-hero{{ with .Params.hero_theme }} offerte-hero--{{ . }}{{ end }}">
     <div class="container">
       <div class="offerte-hero__grid">
         <div class="offerte-hero__title">
+          {{ with .Params.logo_klant }}
+          <img src="{{ . | relURL }}" alt="" class="offerte-hero__logo" aria-hidden="true">
+          {{ end }}
           <h1>{{ .Title }}</h1>
+          {{ with .Params.subtitle }}
+          <p class="offerte-hero__subtitle">{{ . }}</p>
+          {{ end }}
         </div>
+        {{ if or .Params.offerte_voor .Params.website_app .Params.url_klant .Params.datum_offerte .Params.offertenummer .Params.hero_meta }}
         <div class="offerte-hero__meta">
           {{ with .Params.offerte_voor }}
           <div class="offerte-hero__meta-item">
@@ -37,7 +44,14 @@
             <span class="offerte-hero__meta-value">{{ . }}</span>
           </div>
           {{ end }}
+          {{ range .Params.hero_meta }}
+          <div class="offerte-hero__meta-item">
+            <span class="offerte-hero__meta-label">{{ .label }}</span>
+            <span class="offerte-hero__meta-value">{{ .value }}</span>
+          </div>
+          {{ end }}
         </div>
+        {{ end }}
       </div>
     </div>
   </section>
