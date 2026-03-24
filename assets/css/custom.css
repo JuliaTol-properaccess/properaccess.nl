@@ -343,6 +343,58 @@ html.dark .offerte-hero__meta-value a {
   background-color: #EDF7F0;
 }
 
+/* ─── Hospital theme ─── */
+.offerte-hero--hospital {
+  background-color: #1F2937;
+  color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400' fill='none'%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M40 22c0 12-8 22-8 32 0 8 6 14 14 14s14-6 14-14c0-10-8-20-8-32'/%3E %3Ccircle cx='46' cy='76' r='8'/%3E %3Ccircle cx='46' cy='76' r='3'/%3E %3Ccircle cx='34' cy='20' r='3'/%3E %3Ccircle cx='58' cy='20' r='3'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M200 40h18l4-12 6 28 6-28 4 12h18'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Crect x='310' y='30' width='30' height='40' rx='3'/%3E %3Crect x='319' y='24' width='12' height='8' rx='2'/%3E %3Cpath d='M318 47h14M318 54h10M318 61h12'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Crect x='35' y='170' width='40' height='18' rx='4' transform='rotate(-30 55 179)'/%3E %3Ccircle cx='49' cy='176' r='1.2' fill='%23ffffff' opacity='.18'/%3E %3Ccircle cx='55' cy='173' r='1.2' fill='%23ffffff' opacity='.18'/%3E %3Ccircle cx='61' cy='170' r='1.2' fill='%23ffffff' opacity='.18'/%3E %3Cpath d='M44 167l2 2M66 181l2 2'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round'%3E %3Crect x='215' y='160' width='12' height='28' rx='6' transform='rotate(25 221 174)'/%3E %3Cpath d='M212 172l14 5'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M340 160h-8v-8h-8v8h-8v8h8v8h8v-8h8z'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M148 278c-6-6-16-6-20 0-4 7 0 14 8 20l12 10 12-10c8-6 12-13 8-20-4-6-14-6-20 0z'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Ccircle cx='310' cy='300' r='12'/%3E %3Cpath d='M310 288v-16h-8'/%3E %3Cpath d='M298 280h16l6 16'/%3E %3Ccircle cx='310' cy='268' r='3'/%3E %3C/g%3E %3Cg opacity='.18' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M220 280v-30a5 5 0 0110 0v30'/%3E %3Ccircle cx='225' cy='284' r='7'/%3E %3Ccircle cx='225' cy='284' r='3.5'/%3E %3Cpath d='M225 275v-16'/%3E %3C/g%3E%3C/svg%3E");
+  background-size: 400px 400px;
+}
+
+.offerte-hero--hospital .offerte-hero__title h1 {
+  color: #ffffff;
+}
+
+.offerte-hero--hospital .offerte-hero__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.offerte-hero--hospital .offerte-hero__meta {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  border-left-color: #A30D4B;
+}
+
+.offerte-hero--hospital .offerte-hero__meta-item {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.offerte-hero--hospital .offerte-hero__meta-label {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.offerte-hero--hospital .offerte-hero__meta-value {
+  color: #ffffff;
+}
+
+.offerte-hero--hospital .offerte-hero__meta-value a {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+.offerte-hero--hospital .offerte-hero__meta-value a:hover {
+  text-decoration-color: #ffffff;
+}
+
+.offerte-hero--hospital .offerte-hero__logo {
+  max-height: 3.5rem;
+}
+
+/* Hospital theme: light blue for alternating sections */
+.offerte-content--hospital .offerte-section--light {
+  background-color: #EDF2F7;
+}
+
 /* --- Offerte Sections (two-column) --- */
 .offerte-section {
   padding: 3.5rem 0;

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <!-- stethoscoop -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 22c0 12-8 22-8 32 0 8 6 14 14 14s14-6 14-14c0-10-8-20-8-32"/>
+    <circle cx="46" cy="76" r="8"/>
+    <circle cx="46" cy="76" r="3"/>
+    <circle cx="34" cy="20" r="3"/>
+    <circle cx="58" cy="20" r="3"/>
+  </g>
+
+  <!-- hartslag / ECG-lijn -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 40h18l4-12 6 28 6-28 4 12h18"/>
+  </g>
+
+  <!-- klembord -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="310" y="30" width="30" height="40" rx="3"/>
+    <rect x="319" y="24" width="12" height="8" rx="2"/>
+    <path d="M318 47h14M318 54h10M318 61h12"/>
+  </g>
+
+  <!-- pleister -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="35" y="170" width="40" height="18" rx="4" transform="rotate(-30 55 179)"/>
+    <circle cx="49" cy="176" r="1.2" fill="#ffffff" opacity=".18"/>
+    <circle cx="55" cy="173" r="1.2" fill="#ffffff" opacity=".18"/>
+    <circle cx="61" cy="170" r="1.2" fill="#ffffff" opacity=".18"/>
+    <path d="M44 167l2 2M66 181l2 2"/>
+  </g>
+
+  <!-- pil / capsule -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round">
+    <rect x="215" y="160" width="12" height="28" rx="6" transform="rotate(25 221 174)"/>
+    <path d="M212 172l14 5"/>
+  </g>
+
+  <!-- medisch kruis -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M340 160h-8v-8h-8v8h-8v8h8v8h8v-8h8z"/>
+  </g>
+
+  <!-- hart -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M148 278c-6-6-16-6-20 0-4 7 0 14 8 20l12 10 12-10c8-6 12-13 8-20-4-6-14-6-20 0z"/>
+  </g>
+
+  <!-- rolstoel -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="310" cy="300" r="12"/>
+    <path d="M310 288v-16h-8"/>
+    <path d="M298 280h16l6 16"/>
+    <circle cx="310" cy="268" r="3"/>
+  </g>
+
+  <!-- thermometer -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 280v-30a5 5 0 0110 0v30"/>
+    <circle cx="225" cy="284" r="7"/>
+    <circle cx="225" cy="284" r="3.5"/>
+    <path d="M225 275v-16"/>
+  </g>
+</svg>
