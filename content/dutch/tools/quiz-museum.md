@@ -1,5 +1,5 @@
 ---
-title: "Quiz: Hoe toegankelijk is jouw museumcontent?"
+title: "Quiz: Hoe digitaal toegankelijk is jouw museumcontent?"
 meta_title: "Accessibility Quiz voor Musea — Test je kennis | Proper Access"
 slug: "quiz-museum"
 url: "/tools/quiz-museum/"

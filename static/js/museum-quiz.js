@@ -325,7 +325,7 @@
      ═══════════════════════════════════════════ */
 
   var UI = {
-    title: 'Quiz: Hoe toegankelijk is jouw museumcontent?',
+    title: 'Quiz: Hoe digitaal toegankelijk is jouw museumcontent?',
     subtitle: 'Twintig praktijkvragen over situaties die je als webredacteur in de culturele sector dagelijks tegenkomt. Van alt-teksten bij kunstwerken tot ticketformulieren. Bij elke vraag leggen we uit waarom het antwoord is wat het is.',
     startBtn: 'Start quiz',
     questions: 'Vragen',
