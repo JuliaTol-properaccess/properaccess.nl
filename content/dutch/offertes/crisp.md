@@ -13,6 +13,8 @@ website_app: "Website en apps (iOS en Android)"
 url_klant: "https://crisp.nl"
 datum_offerte: "24 maart 2026"
 offertenummer: "202603-12"
+hero_theme: "grocery"
+logo_klant: "images/logos/crisp.svg"
 ---
 
 {{< protected-section token="crisp" >}}
@@ -41,21 +43,13 @@ CEO Proper Access, senior WCAG-auditor
 
 Onze audit helpt Crisp op vier manieren:
 
-### 1. Aantoonbare naleving van de EAA
+1. **Aantoonbare naleving van de EAA** — Het toegankelijkheidsrapport fungeert als objectief bewijsstuk waaruit blijkt dat Crisp actief invulling geeft aan haar wettelijke verplichtingen onder de European Accessibility Act. Met een onderbouwd plan van aanpak sta je sterk richting de ACM als toezichthouder.
 
-Het toegankelijkheidsrapport fungeert als objectief bewijsstuk waaruit blijkt dat Crisp actief invulling geeft aan haar wettelijke verplichtingen onder de European Accessibility Act. Met een onderbouwd plan van aanpak sta je sterk richting de ACM als toezichthouder.
+2. **Betere gebruikservaring en meer conversie** — Toegankelijkheidsproblemen zijn vaak ook usability-problemen. Te laag contrast betekent dat je klant in de zon het scherm niet kan lezen. Een onduidelijke foutmelding in het bestelproces kost je direct conversie. Een formulier dat niet logisch werkt met het toetsenbord frustreert iedereen, niet alleen mensen met een beperking. Door die drempels weg te nemen wordt het makkelijker om een Weekbox af te sluiten, een bestelling af te ronden of je account te beheren. Dat vertaalt zich direct in minder afhakers en meer omzet.
 
-### 2. Betere gebruikservaring en meer conversie
+3. **Klantbinding en bereik** — Ruim 2 miljoen Nederlanders hebben een beperking. Daar komen tijdelijke situaties bij: een gebroken arm, felle zon op je scherm, boodschappen doen terwijl je een kind vasthoudt. Een toegankelijke app en website werken beter voor iedereen — en klanten die merken dat je aan hen denkt, komen terug.
 
-Toegankelijkheidsproblemen zijn vaak ook usability-problemen. Een knop die niet werkt met een screenreader, werkt waarschijnlijk ook slecht op een klein scherm of met een trage verbinding. Door die drempels weg te nemen wordt het makkelijker om een Weekbox af te sluiten, een bestelling af te ronden of je account te beheren. Dat vertaalt zich direct in minder afhakers en meer omzet.
-
-### 3. Klantbinding en bereik
-
-Ruim 2 miljoen Nederlanders hebben een beperking. Daar komen tijdelijke situaties bij: een gebroken arm, felle zon op je scherm, boodschappen doen terwijl je een kind vasthoudt. Een toegankelijke app en website werken beter voor iedereen — en klanten die merken dat je aan hen denkt, komen terug.
-
-### 4. Sterker imago
-
-Crisp staat voor vers, eerlijk en duurzaam. Digitale toegankelijkheid past daar naadloos bij. Het laat zien dat inclusiviteit niet alleen een vinkje is, maar onderdeel van hoe jullie werken.
+4. **Sterker imago** — Crisp staat voor vers, eerlijk en duurzaam. Digitale toegankelijkheid past daar naadloos bij. Het laat zien dat inclusiviteit niet alleen een vinkje is, maar onderdeel van hoe jullie werken.
 
 {{< /offerte-section >}}
 

@@ -163,13 +163,22 @@ details[open] summary.faq-question {
 
 /* --- Hero Section --- */
 .offerte-hero {
-  background-color: var(--color-dark);
-  color: var(--color-text-light);
+  background-color: #f5f5f5;
+  color: #1F2937;
   padding: 4rem 0 3.5rem;
+  border-bottom: 3px solid #A30D4B;
 }
 
 html.dark .offerte-hero {
-  background-color: #111111;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.offerte-hero__logo {
+  display: block;
+  max-height: 3rem;
+  width: auto;
+  margin-bottom: 1.25rem;
 }
 
 .offerte-hero__grid {
@@ -187,11 +196,15 @@ html.dark .offerte-hero {
 }
 
 .offerte-hero__title h1 {
-  color: #ffffff;
+  color: #1F2937;
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
+}
+
+html.dark .offerte-hero__title h1 {
+  color: #f5f5f5;
 }
 
 @media (min-width: 768px) {
@@ -201,24 +214,43 @@ html.dark .offerte-hero {
 }
 
 .offerte-hero__subtitle {
-  color: rgba(255, 255, 255, 0.7);
+  color: #374151;
   font-size: 1.05rem;
   line-height: 1.6;
   margin: 0.75rem 0 0 0;
+}
+
+html.dark .offerte-hero__subtitle {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .offerte-hero__meta {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #A30D4B;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: #ffffff;
+}
+
+html.dark .offerte-hero__meta {
+  background: #111111;
+  border-color: #333;
+  border-left-color: #A30D4B;
 }
 
 .offerte-hero__meta-item {
   display: flex;
   justify-content: space-between;
   padding: 0.6rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #e5e7eb;
   font-size: 0.9rem;
+}
+
+html.dark .offerte-hero__meta-item {
+  border-bottom-color: #333;
 }
 
 .offerte-hero__meta-item:last-child {
@@ -226,25 +258,48 @@ html.dark .offerte-hero {
 }
 
 .offerte-hero__meta-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: #6b7280;
   font-weight: 400;
 }
 
+html.dark .offerte-hero__meta-label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .offerte-hero__meta-value {
-  color: #ffffff;
+  color: #1F2937;
   font-weight: 600;
   text-align: right;
 }
 
+html.dark .offerte-hero__meta-value {
+  color: #f5f5f5;
+}
+
 .offerte-hero__meta-value a {
-  color: #ffffff;
+  color: #004050;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-decoration-color: rgba(0, 64, 80, 0.3);
   text-underline-offset: 2px;
 }
 
 .offerte-hero__meta-value a:hover {
-  text-decoration-color: #ffffff;
+  text-decoration-color: #004050;
+}
+
+html.dark .offerte-hero__meta-value a {
+  color: #7dd3fc;
+}
+
+/* ─── Grocery theme (Crisp) ─── */
+.offerte-hero--grocery {
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320' fill='none'%3E%3C!-- apple --%3E%3Cellipse cx='48' cy='40' rx='14' ry='15' stroke='%231F2937' stroke-width='1.2' opacity='.06'/%3E%3Cpath d='M48 25c-1-5 2-9 5-11' stroke='%231F2937' stroke-width='1' opacity='.06'/%3E%3Cpath d='M46 27c-3-2-6 0-7 2' stroke='%231F2937' stroke-width='0.8' opacity='.05'/%3E%3C!-- carrot --%3E%3Cpath d='M160 55l-6 28c-1 4 2 5 6 5s7-1 6-5l-6-28z' stroke='%231F2937' stroke-width='1.2' opacity='.06' fill='none'/%3E%3Cpath d='M157 55c-2-6 0-10 3-12m3 12c2-6 0-10-3-12' stroke='%231F2937' stroke-width='0.8' opacity='.05'/%3E%3C!-- shopping bag --%3E%3Crect x='245' y='30' width='30' height='35' rx='3' stroke='%231F2937' stroke-width='1.2' opacity='.06'/%3E%3Cpath d='M252 38v-6a8 8 0 0116 0v6' stroke='%231F2937' stroke-width='1.2' opacity='.06' fill='none'/%3E%3C!-- broccoli --%3E%3Ccircle cx='70' cy='160' r='8' stroke='%231F2937' stroke-width='1' opacity='.05'/%3E%3Ccircle cx='82' cy='155' r='7' stroke='%231F2937' stroke-width='1' opacity='.05'/%3E%3Ccircle cx='76' cy='148' r='7' stroke='%231F2937' stroke-width='1' opacity='.05'/%3E%3Cpath d='M76 168v20' stroke='%231F2937' stroke-width='1.2' opacity='.06'/%3E%3C!-- lemon --%3E%3Cellipse cx='200' cy='170' rx='16' ry='12' stroke='%231F2937' stroke-width='1.2' opacity='.06' transform='rotate(-20 200 170)'/%3E%3Ccircle cx='200' cy='170' r='1.5' fill='%231F2937' opacity='.04'/%3E%3C!-- milk carton --%3E%3Crect x='280' y='150' width='20' height='30' rx='2' stroke='%231F2937' stroke-width='1.2' opacity='.06'/%3E%3Cpath d='M280 158h20M284 150l6-8 6 8' stroke='%231F2937' stroke-width='1' opacity='.05'/%3E%3C!-- tomato --%3E%3Ccircle cx='130' cy='280' r='13' stroke='%231F2937' stroke-width='1.2' opacity='.06'/%3E%3Cpath d='M122 272c4-4 8-3 8-3s4-1 8 3' stroke='%231F2937' stroke-width='0.8' opacity='.05'/%3E%3C!-- bread --%3E%3Cpath d='M240 270c0-8 5-14 15-14s15 6 15 14v16h-30v-16z' stroke='%231F2937' stroke-width='1.2' opacity='.06' fill='none'/%3E%3Cline x1='247' y1='276' x2='247' y2='282' stroke='%231F2937' stroke-width='0.8' opacity='.04'/%3E%3Cline x1='255' y1='274' x2='255' y2='282' stroke='%231F2937' stroke-width='0.8' opacity='.04'/%3E%3Cline x1='263' y1='276' x2='263' y2='282' stroke='%231F2937' stroke-width='0.8' opacity='.04'/%3E%3C/svg%3E");
+  background-size: 320px 320px;
+}
+
+.offerte-hero--grocery .offerte-hero__logo {
+  max-height: 3.5rem;
 }
 
 /* --- Offerte Sections (two-column) --- */

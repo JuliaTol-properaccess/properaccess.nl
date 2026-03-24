@@ -40,11 +40,14 @@
   </section>
   {{ end }}
   {{ else }}
-  {{/* Offerte-modus: donkere hero met optionele metadata */}}
-  <section class="offerte-hero">
+  {{/* Offerte-modus: hero met optionele metadata */}}
+  <section class="offerte-hero{{ with .Params.hero_theme }} offerte-hero--{{ . }}{{ end }}">
     <div class="container">
       <div class="offerte-hero__grid">
         <div class="offerte-hero__title">
+          {{ with .Params.logo_klant }}
+          <img src="{{ . | relURL }}" alt="" class="offerte-hero__logo" aria-hidden="true">
+          {{ end }}
           <h1>{{ .Title }}</h1>
           {{ with .Params.subtitle }}
           <p class="offerte-hero__subtitle">{{ . }}</p>
