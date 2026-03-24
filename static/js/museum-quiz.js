@@ -636,15 +636,15 @@
       id: 20,
       cat: 'semantiek',
       svg: 'language',
-      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n <p>-element staan, gescheiden door <br>-tags. Waarom is dat een probleem?',
+      scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n &lt;p&gt;-element staan, gescheiden door &lt;br&gt;-tags. Waarom is dat een probleem?',
       options: [
         { l: 'A', t: 'Het ziet er visueel anders uit' },
         { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren \u2014 de structuur gaat verloren' },
-        { l: 'C', t: '<br>-tags zijn verouderd' },
-        { l: 'D', t: 'Google straft je af voor het gebruik van <br>' }
+        { l: 'C', t: '&lt;br&gt;-tags zijn verouderd' },
+        { l: 'D', t: 'Google straft je af voor het gebruik van &lt;br&gt;' }
       ],
       correct: 'B',
-      explanation: 'Elk los tekstblok hoort in een eigen <p>-element. Als je <br><br> gebruikt om visueel ruimte te maken, ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. De gebruiker kan niet per alinea navigeren. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
+      explanation: 'Elk los tekstblok hoort in een eigen &lt;p&gt;-element. Als je &lt;br&gt;&lt;br&gt; gebruikt om visueel ruimte te maken, ziet het er hetzelfde uit, maar voor een schermlezer is het \u00e9\u00e9n doorlopende tekst. De gebruiker kan niet per alinea navigeren. Dit zagen we bij meerdere museumwebsites, vooral in het footer-contactblok en bij langere paginateksten.'
     }
   ];
 
