@@ -47,7 +47,7 @@ Onze audit helpt Crisp op vier manieren:
 
 2. **Betere gebruikservaring en meer conversie** — Toegankelijkheidsproblemen zijn vaak ook usability-problemen. Te laag contrast betekent dat je klant in de zon het scherm niet kan lezen. Een onduidelijke foutmelding in het bestelproces kost je direct conversie. Een formulier dat niet logisch werkt met het toetsenbord frustreert iedereen, niet alleen mensen met een beperking. Door die drempels weg te nemen wordt het makkelijker om een Weekbox af te sluiten, een bestelling af te ronden of je account te beheren. Dat vertaalt zich direct in minder afhakers en meer omzet.
 
-3. **Klantbinding en bereik** — Ruim 2 miljoen Nederlanders hebben een beperking. Daar komen tijdelijke situaties bij: een gebroken arm, felle zon op je scherm, boodschappen doen terwijl je een kind vasthoudt. Een toegankelijke app en website werken beter voor iedereen — en klanten die merken dat je aan hen denkt, komen terug.
+3. **Klantbinding en bereik** — Ruim 25% van de Nederlanders heeft een of andere vorm van een beperking. Daar komen tijdelijke situaties bij: een gebroken arm, felle zon op je scherm, boodschappen doen terwijl je een kind vasthoudt. Een toegankelijke app en website werken beter voor iedereen — en klanten die merken dat je aan hen denkt, komen terug.
 
 4. **Sterker imago** — Crisp staat voor vers, eerlijk en duurzaam. Digitale toegankelijkheid past daar naadloos bij. Het laat zien dat inclusiviteit niet alleen een vinkje is, maar onderdeel van hoe jullie werken.
 
