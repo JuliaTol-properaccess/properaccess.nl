@@ -338,6 +338,11 @@ html.dark .offerte-hero__meta-value a {
   max-height: 3.5rem;
 }
 
+/* Grocery theme: pastel green for alternating sections */
+.offerte-content--grocery .offerte-section--light {
+  background-color: #EDF7F0;
+}
+
 /* --- Offerte Sections (two-column) --- */
 .offerte-section {
   padding: 3.5rem 0;

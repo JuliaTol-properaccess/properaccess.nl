@@ -57,7 +57,7 @@
   </section>
 
   <!-- Content -->
-  <article class="offerte-content">
+  <article class="offerte-content{{ with .Params.hero_theme }} offerte-content--{{ . }}{{ end }}">
     {{ .Content }}
   </article>
 {{ end }}
