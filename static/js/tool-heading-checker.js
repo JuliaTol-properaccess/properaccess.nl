@@ -29,7 +29,7 @@
     output.innerHTML =
       '<p class="tool-heading__loading">Pagina ophalen en analyseren...</p>';
 
-    var token = window.__PA_TOKEN || "";
+    var token = window.__PA_TOKEN || "pa_internal_site_access";
     fetch(WORKER_URL + "?url=" + encodeURIComponent(url) + "&token=" + encodeURIComponent(token))
       .then(function (response) {
         return response.json();
