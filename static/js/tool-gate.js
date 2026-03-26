@@ -7,6 +7,7 @@
   "use strict";
 
   var STORAGE_KEY = "pa-tool-access";
+  var INTERNAL_TOKEN = "pa_internal_site_access";
 
   var gate = document.getElementById("passwordGate");
   var content = document.getElementById("toolContent");
@@ -27,9 +28,10 @@
 
   var EXPECTED = simpleHash("Vrijdag2702!");
 
-  function unlock() {
+  function unlock(token) {
     gate.hidden = true;
     content.hidden = false;
+    if (token) window.__PA_TOKEN = token;
     try { localStorage.setItem(STORAGE_KEY, EXPECTED); } catch (e) { /* private */ }
   }
 
@@ -44,14 +46,6 @@
     }
   }
 
-  // Check localStorage for previous access (password or token)
-  try {
-    if (localStorage.getItem(STORAGE_KEY) === EXPECTED) {
-      unlock();
-      return;
-    }
-  } catch (e) { /* */ }
-
   // Check for valid token from /tools/ page
   var TOKEN_KEY = "pa-tool-token";
   var AUTH_URL = "https://tool-auth.juliatol.workers.dev";
@@ -64,13 +58,21 @@
     if (urlToken) storedToken = urlToken;
   } catch (e) { /* */ }
 
+  // Check localStorage for previous access (password or token)
+  try {
+    if (localStorage.getItem(STORAGE_KEY) === EXPECTED) {
+      unlock(storedToken || INTERNAL_TOKEN);
+      return;
+    }
+  } catch (e) { /* */ }
+
   if (storedToken) {
     fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(storedToken))
       .then(function (r) { return r.json(); })
       .then(function (data) {
         if (data.valid) {
           try { localStorage.setItem(TOKEN_KEY, storedToken); } catch (e) { /* */ }
-          unlock();
+          unlock(storedToken);
         }
       })
       .catch(function () { /* keep locked */ });
@@ -85,7 +87,7 @@
 
       // Check password first
       if (simpleHash(val) === EXPECTED) {
-        unlock();
+        unlock(INTERNAL_TOKEN);
         return;
       }
 
@@ -96,7 +98,7 @@
           .then(function (data) {
             if (data.valid) {
               try { localStorage.setItem(TOKEN_KEY, val); } catch (e) { /* */ }
-              unlock();
+              unlock(val);
             } else {
               showError();
             }
