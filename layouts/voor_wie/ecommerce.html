@@ -12,7 +12,7 @@
         {{ with .button }}
           {{ if .enable }}
             <div class="vw-hero__actions">
-              <a class="btn btn-primary" href="{{ .link | absURL }}"
+              <a class="btn btn-primary" href="{{ if strings.HasPrefix .link "#" }}{{ .link }}{{ else }}{{ .link | absURL }}{{ end }}"
                 {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
                 {{ .label }}
                 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -175,6 +175,55 @@
 <article class="offerte-content">
   {{ .Content }}
 </article>
+
+<!-- ─── Offerte formulier ─── -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-12 md:col-8 lg:col-6">
+        <form id="ecommerce-offerte-form" class="pa-form" aria-label="Offerteformulier">
+          <div class="mb-4">
+            <label for="ec-offerte-naam" class="block mb-1 font-semibold">Naam</label>
+            <input type="text" id="ec-offerte-naam" name="naam" required autocomplete="name"
+                   class="w-full px-4 py-3 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="ec-offerte-email" class="block mb-1 font-semibold">E-mailadres</label>
+            <input type="email" id="ec-offerte-email" name="email" required autocomplete="email"
+                   class="w-full px-4 py-3 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="ec-offerte-website" class="block mb-1 font-semibold">Website-URL</label>
+            <input type="url" id="ec-offerte-website" name="website" placeholder="https://"
+                   class="w-full px-4 py-3 border border-gray-300 rounded">
+          </div>
+          <div class="mb-6">
+            <label for="ec-offerte-bericht" class="block mb-1 font-semibold">Toelichting (optioneel)</label>
+            <textarea id="ec-offerte-bericht" name="bericht" rows="3"
+                      class="w-full px-4 py-3 border border-gray-300 rounded"
+                      placeholder="Bijv. welk platform, aantal pagina's, deadline"></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn btn-primary w-full">Offerte aanvragen</button>
+        </form>
+        <script>
+          (function() {
+            var form = document.getElementById('ecommerce-offerte-form');
+            if (form) {
+              form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                paFormSubmit(form, {
+                  bron: 'offerte-ecommerce',
+                  successMessage: 'Verstuurd! We reageren binnen 1 werkdag met een indicatie.'
+                });
+              });
+            }
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ─── Stats bar ─── -->
 <section class="vw-stats">

@@ -17,7 +17,7 @@ keywords:
   - toegankelijkheidsrapport
 
 banner:
-  title: "Is jouw website klaar voor de European Accessibility Act?"
+  title: "De EAA geldt nu al. Weet jij waar je website staat?"
   content: "Met onze toegankelijkheidsaudit krijg je geen stapel technisch jargon, maar **een helder rapport waarmee je team direct aan de slag kan**. Per pagina, per element, met screenshots en concrete oplossingen in code."
   bullets:
     - "**Weet waar je staat** — welke knelpunten zijn er, hoe ernstig zijn ze?"
@@ -26,7 +26,7 @@ banner:
   button:
     enable: true
     label: "Vraag een offerte aan"
-    link: "/contact/"
+    link: "#offerte"
 
 trust:
   label: "Vertrouwd door"
@@ -90,7 +90,7 @@ Geen 50 pagina's platte tekst, maar een rapport dat je team helpt.
 
 We zijn geen inspectie-instelling die een rapport dumpt en verdwijnt. Je mag na het rapport **zoveel vragen stellen als je wilt**. Je team heeft een vraag over een oplossing? We denken mee.
 
-Bekijk een voorbeeldrapport: [overheid](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/) · [culturele sector](https://audit2026.properaccess.nl/202512_museumvereniging_retest/) · [bedrijfsleven](https://audit2026.properaccess.nl/202602_financiereninnetwerken.nl/) | [Vraag een offerte aan](/contact/)
+Bekijk een voorbeeldrapport: [overheid](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/) · [culturele sector](https://audit2026.properaccess.nl/202512_museumvereniging_retest/) · [bedrijfsleven](https://audit2026.properaccess.nl/202602_financiereninnetwerken.nl/)
 
 {{< /section-full >}}
 
@@ -124,54 +124,26 @@ Bekijk een voorbeeldrapport: [overheid](https://audit2026.properaccess.nl/202512
 {{< /section-steps >}}
 
 
-{{< section-full title="Wat maakt onze audit anders dan een automatische tool?" >}}
-
-Tools zijn handig, maar dekken slechts **20-30% van de WCAG-richtlijnen**. De rest? Menselijk oordeel nodig.
-
-{{< /section-full >}}
-
-
-{{< section-cards title="Automatische tool vs. Proper Access" columns="2" bg="light" >}}
+{{< section-cards title="Handmatige audit vs. automatische tool" columns="2" bg="light" >}}
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
   <h3 class="card__title">Automatische tool</h3>
   <ul>
     <li>Checkt technische code (alt-teksten, kleurcontrast)</li>
     <li>Meldt "aria-label ontbreekt"</li>
-    <li>Geeft score per criterium</li>
-    <li>Output: lijst met fouten</li>
-    <li>Eenmalig rapport, klaar</li>
+    <li>Dekt slechts 20-30% van de WCAG-richtlijnen</li>
+    <li>Output: lijst met fouten, zonder context</li>
   </ul>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></div>
   <h3 class="card__title">Proper Access audit</h3>
   <ul>
-    <li>Checkt of alt-teksten <strong>zinvol</strong> zijn</li>
     <li>Test of een screenreader het menu <strong>daadwerkelijk kan bedienen</strong></li>
-    <li>Geeft rapport <strong>per pagina en per element</strong></li>
-    <li>Output: <strong>oplossingen in code</strong>, screenshots, uitleg</li>
-    <li><strong>Onbeperkt vragen stellen</strong>, we denken mee</li>
+    <li>Checkt of alt-teksten <strong>zinvol</strong> zijn</li>
+    <li>Rapport <strong>per pagina en per element</strong> — niet per succescriterium</li>
+    <li>Output: <strong>oplossingen in code</strong>, screenshots, uitleg + onbeperkt vragen stellen</li>
   </ul>
-</div>
-{{< /section-cards >}}
-
-
-{{< section-cards title="Voor wie je het ook verantwoordt: je bent gedekt" subtitle="Iedereen in je team weet wat er moet gebeuren." columns="3" >}}
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
-  <h3 class="card__title">Voor product owners en managers</h3>
-  <p>Een rapport in <strong>begrijpelijke taal</strong>. Per knelpunt: wat is het probleem, welke impact heeft het, wat moet er gebeuren? Bruikbaar voor briefings, verantwoording en planning.</p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
-  <h3 class="card__title">Voor developers</h3>
-  <p><strong>Concrete oplossingen in code.</strong> Code-snippets die je direct kunt gebruiken, met uitleg waarom deze oplossing werkt en alternatieven als de standaard niet past.</p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
-  <h3 class="card__title">Voor webredacteuren</h3>
-  <p>Uitleg over <strong>toegankelijke content</strong>: goede alt-teksten schrijven, paginastructuur met koppen, en welke media toegankelijk zijn.</p>
 </div>
 {{< /section-cards >}}
 
@@ -184,17 +156,11 @@ Een volledige audit start **vanaf ca. 1.800 euro** (excl. BTW) voor een eenvoudi
 
 **Inclusief:** volledig rapport per pagina en per element, screenshots, code-snippets, CSV-export en onbeperkte support.
 
-**Tijdens de kennismaking geven we direct een indicatie** — zo weet je waar je aan toe bent. Geen verrassingen achteraf.
-
-[Plan een kennismaking](/contact/) — vrijblijvend, gratis, 30 minuten
-
 {{< /section-full >}}
 
 
-{{< section-cta title="Klaar voor een toegankelijke website?" >}}
+{{< section-full id="offerte" title="Vraag een offerte aan" bg="white" >}}
 
-Je hoeft nog niks te beslissen. We nemen 30 minuten om te horen wat jouw situatie is, een eerste inschatting te geven en uit te leggen hoe we werken. **Geen verplichtingen. Wel waardevol inzicht.**
+Vertel ons over je website. We reageren binnen 1 werkdag met een indicatie van de scope en kosten.
 
-[Plan een kennismaking](/contact/) | [Bel ons: 085 5055 890](tel:+31855055890)
-
-{{< /section-cta >}}
+{{< /section-full >}}

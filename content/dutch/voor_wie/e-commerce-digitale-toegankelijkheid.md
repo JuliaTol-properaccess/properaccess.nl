@@ -5,7 +5,7 @@ date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"
 layout: "ecommerce"
-description: "Je webshop sluit 25% van je potentiële klanten uit. Vanaf juni 2025 is toegankelijkheid ook wettelijk verplicht. Maak je e-commerce platform WCAG-proof met concrete stappen."
+description: "61% van de Nederlandse webshops is niet toegankelijk, blijkt uit ACM-onderzoek. De EAA geldt nu al. Laat je webshop checken en voorkom boetes tot 900.000 euro."
 keywords:
   - e-commerce toegankelijkheid
   - webshop WCAG
@@ -14,14 +14,15 @@ keywords:
   - toegankelijke checkout
   - WCAG e-commerce
   - webshop audit
+  - ACM webshop
 
 banner:
-  title: "Je webshop sluit nu 25% van je potentiële klanten uit — dat kan anders"
-  content: "Klanten met een screenreader kunnen je checkout niet doorlopen. Klanten met een motorische beperking kunnen je dropdown-menu's niet bedienen. Klanten met kleurenblindheid zien je rode actieprijzen niet. Elke barrière = gemiste verkoop."
+  title: "61% van de webshops is niet toegankelijk. Hoe scoort jouw webshop?"
+  content: "Uit onderzoek van de ACM blijkt dat het merendeel van de grote Nederlandse webshops niet voldoet aan de toegankelijkheidseisen. De wet geldt nu al. Klanten met een beperking haken af bij je checkout, je filters en je klantenservice — zonder dat je het ziet."
   button:
     enable: true
     label: "Laat je webshop checken"
-    link: "/contact/"
+    link: "#offerte"
 
 trust:
   label: "Ervaring met o.a."
@@ -32,37 +33,41 @@ trust:
     - "Eteck"
 ---
 
-{{< section-full title="Waarom toegankelijkheid nu prioriteit nummer 1 is" >}}
+{{< section-full title="Waarom je nu moet handelen" >}}
 
-Vanaf 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act. Webshops, apps, betaalprocessen, klantenportalen — alles moet voldoen aan WCAG 2.1 niveau AA. ACM en AFM houden toezicht, met boetes tot € 900.000 of 10% van je jaaromzet.
+Sinds 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act. Webshops, apps, betaalprocessen, klantenportalen — alles moet voldoen aan WCAG 2.1 niveau AA.
+
+In maart 2026 onderzocht de ACM de 100 grootste webshops van Nederland. De conclusie: **61% is niet toegankelijk. 33% heeft zelfs ernstige problemen.** De ACM houdt toezicht en kan boetes opleggen tot 900.000 euro of 10% van je jaaromzet.
 
 Maar het gaat niet alleen om de wet. Lees meer over [wat digitale toegankelijkheid inhoudt](/digitale-toegankelijkheid/).
 
 {{< /section-full >}}
 
 {{< section-cards title="" columns="3" bg="dark" >}}
-{{< section-card title="4,4 miljoen potentiële klanten" >}}
+{{< section-card title="4,4 miljoen potentiele klanten" >}}
 
-In Nederland leven 4,4 miljoen mensen met een beperking — 20 tot 25% van de bevolking. Permanent, tijdelijk of situationeel. Als je checkout niet werkt met toetsenbord of je productfilters niet met een screenreader, dan haken die klanten af. Zonder dat jij het ziet.
+In Nederland leven 4,4 miljoen mensen met een beperking — 20 tot 25% van de bevolking. Als je checkout niet werkt met toetsenbord of je productfilters niet met een screenreader, dan haken die klanten af. Zonder dat jij het ziet.
 
 {{< /section-card >}}
 {{< section-card title="Toegankelijkheid = conversie" >}}
 
-Toegankelijkheid overlapt voor 80% met usability. 30% minder support-aanvragen door betere labels en duidelijkere foutmeldingen. 20% hogere mobiele conversie door betere toetsenbordnavigatie. Een toegankelijke checkout converteert beter — voor iedereen.
+Toegankelijkheid overlapt voor 80% met usability. Betere labels en foutmeldingen betekenen minder support-aanvragen. Betere toetsenbordnavigatie betekent hogere mobiele conversie. Een toegankelijke checkout converteert beter — voor iedereen.
 
 {{< /section-card >}}
 {{< section-card title="SEO en vindbaarheid" >}}
 
-Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML, duidelijke koppen en zinvolle alt-teksten verbeteren je vindbaarheid en je gebruikservaring. Investeren in toegankelijkheid is investeren in je hele digitale fundament.
+Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML, duidelijke koppen en zinvolle alt-teksten verbeteren je vindbaarheid en je gebruikservaring.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw webshop scoort? Bestel een Quickscan voor slechts 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+Wil je snel weten waar je staat? Bestel een quickscan voor 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's.
 
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
+[Bestel een Quickscan voor 19 euro](/webshop-quickscan/)
+
+Of vraag direct een [volledige audit aan](#offerte) (vanaf ca. 1.800 euro).
 
 {{< /section-cta >}}
 
@@ -89,22 +94,15 @@ Chatbots die niet gesloten kunnen worden met toetsenbord, die de hele pagina blo
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< offerte-section id="offerte" title="Laat je webshop checken" >}}
 
-Herken je een van deze problemen? Start met een Quickscan — binnen 2 werkdagen weet je waar je staat.
-
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
-
-{{< /section-cta >}}
-
-{{< offerte-section title="Hoe we e-commerce platforms toegankelijk maken" >}}
-
-Wij hebben 900+ audits uitgevoerd sinds 2019, waaronder voor grote e-commerce spelers. We kennen de typische valkuilen van elk platform — van Shopify tot Magento, WooCommerce tot maatwerkoplossingen.
+We hebben 900+ audits uitgevoerd sinds 2019, waaronder voor de grootste e-commerce spelers van Nederland. We kennen de typische valkuilen van elk platform — van Shopify tot Magento, WooCommerce tot maatwerkoplossingen.
 
 - **We toetsen de volledige klantreis** — van productzoeken en filteren tot winkelwagen, checkout en betaalprocessen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
-- **Rapport per pagina en per element** — met screenshots, concrete code-snippets en prioritering. Je developers weten precies wat ze moeten doen. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
-- **We denken mee over implementatie** — welke quick wins leveren de meeste impact? Wat kan je zelf oplossen? Waar heb je je platformleverancier voor nodig?
-- **Onbeperkt vragen stellen** — ook na oplevering van het rapport blijven we bereikbaar. Via e-mail, telefoon of videocall, zonder meerkosten.
+- **Rapport per pagina en per element** — met screenshots, concrete code-snippets en prioritering. Je developers weten precies wat ze moeten doen.
+- **Onbeperkt vragen stellen** — ook na oplevering van het rapport blijven we bereikbaar. Zonder meerkosten.
+
+**Investering:** een volledige webshop-audit start vanaf ca. 1.800 euro. Tijdens de kennismaking geven we direct een duidelijke indicatie.
 
 {{< /offerte-section >}}
 
@@ -116,66 +114,25 @@ We bespreken je situatie: welk platform gebruik je? Wat zijn je belangrijkste fl
 {{< /section-card >}}
 {{< section-card title="2. Audit" >}}
 
-We toetsen je webshop handmatig op alle 55 WCAG 2.2 AA-succescriteria. Met meerdere browsers, screenreaders en andere hulpsoftware. Geautomatiseerde tools zijn een startpunt — ze detecteren maximaal 30-40% van de problemen.
+We toetsen je webshop handmatig op alle 55 WCAG 2.2 AA-succescriteria. Met meerdere browsers, screenreaders en andere hulpsoftware. Geautomatiseerde tools dekken slechts 20-30% van de problemen.
 
 {{< /section-card >}}
-{{< section-card title="3. Rapport" >}}
+{{< section-card title="3. Rapport + support" >}}
 
-Je ontvangt een rapport per pagina, per element. Met screenshots, code-voorbeelden, impact-niveaus en een CSV-export voor je ticketsysteem.
-
-{{< /section-card >}}
-{{< section-card title="4. Bespreking" >}}
-
-We lopen het rapport samen door: wat heeft prioriteit, wat zijn quick wins, waar zit de meeste impact? Optioneel presenteren we het aan je volledige team.
-
-{{< /section-card >}}
-{{< section-card title="5. Vragen stellen" >}}
-
-Je team gaat aan de slag. Vragen die onderweg opkomen beantwoorden we — zolang als nodig.
-
-{{< /section-card >}}
-{{< section-card title="6. Hertoets" >}}
-
-Na het doorvoeren van de verbeteringen controleren we of alles correct is opgelost. Je krijgt een bijgewerkt rapport met de status van elke bevinding.
+Je ontvangt een rapport per pagina, per element. Met screenshots, code-voorbeelden en een CSV-export voor je ticketsysteem. We lopen het samen door en beantwoorden al je vragen — zolang als nodig.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< offerte-section title="Welke dienst past bij jouw situatie?" >}}
+{{< section-cards title="Waarom webshops voor ons kiezen" columns="2" bg="light" >}}
+{{< section-card title="Ervaring met de grootste webshops" >}}
 
-We hebben drie diensten. Welke past, hangt af van waar je staat.
-
-| Vergelijking    | WCAG-audit | Strippenkaart | Abonnement |
-| --------------- | ---------- | ------------- | ---------- |
-| **Wanneer**     | Je wilt een compleet beeld van alle problemen op je webshop | Je hebt af en toe een vraag, een check of een review nodig | Je hebt meer dan 5 websites of apps die jaarlijks geaudit moeten worden |
-| **Scope**       | Volledige webshop of app, alle 55 criteria | Per vraag, per component, per sprint | Alle digitale kanalen, doorlopend |
-| **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Jaarlijkse audits, meerjarenplanning en continue ondersteuning |
-| **Ideaal voor** | Nulmeting, eerste inzicht, EAA-compliance | Teams die na een audit vragen hebben, of in sprints werken | Organisaties met een groot digitaal portfolio die structureel willen borgen |
-| **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
-
-[Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
-
-{{< /offerte-section >}}
-
-{{< section-cards title="Waarom webshops voor ons kiezen" subtitle="Elk bureau kan een WCAG-audit uitvoeren. Het verschil zit in wat er daarna gebeurt." columns="2" bg="light" >}}
-{{< section-card title="Ervaring met de grootste webshops van Nederland" >}}
-
-We hebben gewerkt met de grootste e-commerce partijen van het land. We kennen de uitdagingen die specifiek zijn voor jullie sector: checkoutflows, productfilters, betaalproviders, chatwidgets, meertalige content. Dat betekent dat we niet bij nul beginnen — we weten waar we moeten kijken.
+We kennen de uitdagingen die specifiek zijn voor e-commerce: checkoutflows, productfilters, betaalproviders, chatwidgets, meertalige content. We weten waar we moeten kijken.
 
 {{< /section-card >}}
-{{< section-card title="Bevindingen in de taal van de lezer" >}}
+{{< section-card title="Begeleiding tot het opgelost is" >}}
 
-Eén rapport, drie doelgroepen. Je management leest de impact en prioritering. Je webredactie ziet wat er aan de content moet veranderen. Je developers krijgen code-voorbeelden en technische oplossingen. Iedereen leest wat relevant is, zonder het jargon van de ander.
-
-{{< /section-card >}}
-{{< section-card title="Begeleiding tot het écht opgelost is" >}}
-
-Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het daarna pas. We begeleiden je team door het hele verbeterproces: meedenken over oplossingsrichtingen, sparren met je developers, en helpen bij het prioriteren. Niet als upsell — dat zit erin.
-
-{{< /section-card >}}
-{{< section-card title="Onbeperkt vragen stellen — over alles" >}}
-
-Niet alleen over de bevindingen uit het rapport. Je kunt bij ons terecht met alle vragen rondom toegankelijkheid: "Hoe gaan we om met onze betaalprovider?", "Is deze nieuwe feature toegankelijk?", "Wat moeten we meenemen in de aanbesteding?" Via e-mail, telefoon of videocall, zonder meerkosten.
+Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het daarna pas. We begeleiden je team door het hele verbeterproces — niet als upsell, dat zit erin.
 
 {{< /section-card >}}
 {{< /section-cards >}}
@@ -185,56 +142,42 @@ Niet alleen over de bevindingen uit het rapport. Je kunt bij ons terecht met all
 <details class="faq-item">
 <summary class="faq-question">Helpt digitale toegankelijkheid ook bij SEO en conversie?</summary>
 <div class="faq-answer">
-<p>Ja. Google crawlers en screenreaders gebruiken dezelfde code. Goede semantische HTML, duidelijke koppen en zinvolle alt-teksten verbeteren je vindbaarheid en je gebruikservaring. Bovendien: een toegankelijke checkout is een betere checkout. Minder foutmeldingen, duidelijkere labels, betere toetsenbordnavigatie — dit converteert beter voor alle klanten.</p>
+<p>Ja. Google crawlers en screenreaders gebruiken dezelfde code. Goede semantische HTML, duidelijke koppen en zinvolle alt-teksten verbeteren je vindbaarheid en je gebruikservaring. Bovendien: een toegankelijke checkout is een betere checkout.</p>
 </div>
 </details>
 
 <details class="faq-item">
 <summary class="faq-question">Kan Proper Access een audit doen op een live webshop zonder dat klanten er last van hebben?</summary>
 <div class="faq-answer">
-<p>Zeker. We doen audits op live-omgevingen. We gebruiken de website zoals een klant dat zou doen — navigeren, filteren, bestellen — maar je klanten merken hier niets van. We leveren geen storende tests, geen downtime, geen gedoe.</p>
+<p>Zeker. We gebruiken de website zoals een klant dat zou doen — navigeren, filteren, bestellen — maar je klanten merken hier niets van. Geen downtime, geen gedoe.</p>
 </div>
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">Testen jullie ook winkelwagentjes, checkout en betaalprocessen?</summary>
+<summary class="faq-question">Testen jullie ook de checkout en betaalprocessen?</summary>
 <div class="faq-answer">
-<p>Ja. We toetsen de volledige klantreis — van productoverzicht tot aan afrekenen. De checkoutflow is cruciaal voor conversie en toegankelijkheid, en wordt grondig getest. We testen ook betaalmethoden zoals iDEAL, creditcard en andere payment-providers.</p>
+<p>Ja. We toetsen de volledige klantreis — van productoverzicht tot aan afrekenen. We testen ook betaalmethoden zoals iDEAL, creditcard en andere payment-providers.</p>
 </div>
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">Wat als mijn webshop maatwerk is of draait op een platform zoals Shopify, Magento of WooCommerce?</summary>
+<summary class="faq-question">Wat als mijn webshop draait op Shopify, Magento of WooCommerce?</summary>
 <div class="faq-answer">
-<p>Wij kunnen elk platform toetsen, inclusief maatwerkmodules of plug-ins. We geven concrete feedback die je kunt doorspelen aan je developers of leveranciers. Als je bepaalde zaken niet zelf kunt oplossen (bijvoorbeeld binnen de beperkingen van je platform), denken we graag met je mee over een alternatief.</p>
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Kan Proper Access ook trainingen geven aan mijn e-commerce team?</summary>
-<div class="faq-answer">
-<p>Ja. We bieden praktische trainingen voor development-teams en UX-designers die werken met e-commerce. Zo leer je toegankelijk bouwen en schrijven, gericht op jouw platform. Ook bieden we trainingen voor webredactieteams — denk aan het schrijven van zinvolle alt-teksten voor productfoto's.</p>
+<p>Wij kunnen elk platform toetsen, inclusief maatwerkmodules of plug-ins. Als je bepaalde zaken niet zelf kunt oplossen binnen de beperkingen van je platform, denken we mee over een alternatief.</p>
 </div>
 </details>
 
 <details class="faq-item">
 <summary class="faq-question">Hoelang duurt het voordat mijn webshop toegankelijk is?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van het aantal pagina's en de complexiteit van je webshop. Een quickscan (5-10 pagina's) levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning.</p>
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Wie doet het werk?</summary>
-<div class="faq-answer">
-<p>Een senior auditor. Dezelfde specialist die ook onze volledige audits uitvoert. Je werkt direct met de inhoud, niet via een account manager.</p>
+<p>Een quickscan levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning.</p>
 </div>
 </details>
 
 <details class="faq-item">
 <summary class="faq-question">Wat kost een audit?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie.</p>
+<p>Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf ca. 1.800 euro. We geven je altijd vooraf een duidelijke indicatie.</p>
 </div>
 </details>
 
