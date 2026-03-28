@@ -83,6 +83,12 @@
       .then(function () {
         form.reset();
         showStatus(form, opts.successMessage || "Verstuurd! We nemen contact op.", "success");
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'form_submission',
+            form_bron: data.bron || 'onbekend'
+          });
+        }
         if (opts.onSuccess) opts.onSuccess();
       })
       .catch(function () {
