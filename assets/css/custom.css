@@ -940,11 +940,12 @@ html.dark .section-full--light {
 }
 
 .section-full__title {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #1F2937;
   margin-bottom: 1.5rem;
   text-align: left;
+  letter-spacing: -0.035em;
 }
 
 html.dark .section-full__title {
@@ -952,7 +953,7 @@ html.dark .section-full__title {
 }
 
 .section-full__content {
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   line-height: 1.8;
   color: var(--color-text);
 }
@@ -1075,10 +1076,11 @@ html.dark .section-cards--dark {
 }
 
 .section-cards__title {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #1F2937;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.035em;
 }
 
 .section-cards__header:not(.section-cards__header--with-image) .section-cards__title {
@@ -1145,11 +1147,20 @@ html.dark .section-card {
   border-top-color: #A30D4B;
 }
 
-.section-card__title {
-  font-size: 1.15rem;
+.card__title {
+  font-size: 1.25rem;
   font-weight: 700;
   color: #004050;
   margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.section-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #004050;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
 }
 
 html.dark .section-card__title {

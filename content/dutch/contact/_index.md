@@ -139,7 +139,7 @@ In Eemnes. Maar we werken volledig digitaal — dus locatie maakt niet uit. We b
 
 {{< section-cta title="Nog twijfels?" >}}
 
-**900+ organisaties** gingen je voor. Van overheidsinstellingen tot webshops, van musea tot digital agencies. Ze kozen voor Proper Access omdat we niet alleen rapporten schrijven — we denken mee, leggen uit en lossen op.
+**53 organisaties** gingen je voor — samen goed voor meer dan **900 audits**. Van overheidsinstellingen tot webshops, van musea tot digital agencies. Ze kozen voor Proper Access omdat we niet alleen rapporten schrijven — we denken mee, leggen uit en lossen op.
 
 [Bel ons: 085 5055 890](tel:+31855055890) | [Mail ons](mailto:contact@properaccess.nl) | [Plan een videocall](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 

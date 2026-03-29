@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
   @apply font-secondary font-bold leading-tight text-text-dark;
+  letter-spacing: -0.035em;
 }
 
 h1,

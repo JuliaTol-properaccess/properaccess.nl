@@ -2,11 +2,6 @@
 
 # main menu
 [[main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[main]]
 name = "Voor wie"
 weight = 2
 hasChildren = true
@@ -125,7 +120,7 @@ weight = 6
   highlight = true
 
 [[main]]
-name = "Over Proper Access"
+name = "Over ons"
 url = "/auditbureau-digitale-toegankelijkheid"
 weight = 7
 
