@@ -89,21 +89,6 @@ Wij testen zoals je gebruikers je app ervaren. Handmatig, op echte apparaten, me
 </div>
 {{< /section-cards >}}
 
-{{< section-full title="Wat we precies testen" bg="light" >}}
-
-Onze app-audit dekt alle relevante aspecten van mobiele toegankelijkheid:
-
-- **Schermlezercompatibiliteit** — worden alle elementen correct voorgelezen? Kloppen de labels, rollen en statussen?
-- **Toetsenbord- en schakelbediening** — is elk element bereikbaar zonder touchscreen?
-- **Touch targets** — zijn tikgebieden minimaal 44x44 punten, ook op kleine schermen?
-- **Focusbeheer** — springt de focus naar de juiste plek bij schermwisselingen, dialoogvensters en foutmeldingen?
-- **Kleurcontrast** — voldoet de app aan de minimale contrastverhoudingen, ook in donkere modus?
-- **Tekstvergroting** — werkt de app nog als de gebruiker de systeemlettergrootte verhoogt naar 200%?
-- **Schermrotatie** — is alle content beschikbaar in zowel portret als landschap?
-- **Beweging en animatie** — respecteert de app de instelling "verminder beweging"?
-- **Foutafhandeling** — krijgen gebruikers duidelijke, toegankelijke foutmeldingen?
-
-{{< /section-full >}}
 
 {{< section-steps title="Hoe het werkt" subtitle="Van intake tot rapport in 3-5 weken" >}}
 
