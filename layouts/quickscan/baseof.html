@@ -716,6 +716,60 @@
     }
 
 
+    /* ── Comparison Table ── */
+
+    .qs-compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    .qs-compare-table th,
+    .qs-compare-table td {
+      padding: 0.875rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .qs-compare-table thead th {
+      background: var(--qs-dark);
+      color: var(--qs-white);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .qs-compare-table thead th:first-child {
+      border-radius: 0.5rem 0 0 0;
+    }
+    .qs-compare-table thead th:last-child {
+      border-radius: 0 0.5rem 0 0;
+    }
+    .qs-compare-table tbody th {
+      font-weight: 600;
+      color: var(--qs-dark);
+      white-space: nowrap;
+    }
+    .qs-compare-table tbody tr:nth-child(even) {
+      background: #f9fafb;
+    }
+    .qs-compare-table tbody td:last-child {
+      color: var(--qs-magenta);
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      .qs-compare-table {
+        font-size: 0.8125rem;
+      }
+      .qs-compare-table th,
+      .qs-compare-table td {
+        padding: 0.625rem 0.5rem;
+      }
+      .qs-compare-table tbody th {
+        white-space: normal;
+      }
+    }
+
+
     /* ── Form Section ── */
 
     .qs-form-section {

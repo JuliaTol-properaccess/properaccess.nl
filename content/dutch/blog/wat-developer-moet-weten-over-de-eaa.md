@@ -10,6 +10,7 @@ tags:
 aliases:
   - /wat-developer-moet-weten-over-de-eaa/
 description: "Wat moeten web agencies weten over de European Accessibility Act (EAA)? Lees de belangrijkste eisen en deadlines voor digitale toegankelijkheid."
+image: "/images/blog/svg-eaa-wet.svg"
 ---
 
 ## Wat is de toegankelijkheidswet?

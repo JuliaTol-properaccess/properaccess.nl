@@ -1,6 +1,6 @@
 ---
-title: "Bedankt — Je quickscan is besteld"
-description: "Je quickscan is besteld. We gaan aan de slag met jouw webshop."
+title: "Bedankt — Je quickscan is aangevraagd"
+description: "Je gratis quickscan is aangevraagd. We gaan aan de slag."
 type: quickscan
 layout: bedankt
 robots: "noindex, nofollow"
