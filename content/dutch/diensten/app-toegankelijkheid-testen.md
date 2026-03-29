@@ -181,8 +181,3 @@ Of het nu gaat om een bestel-app, een informatie-app of een complexe app met kaa
 
 {{< /section-full >}}
 
-{{< section-full id="offerte" title="Vraag een offerte aan" bg="white" >}}
-
-Vertel ons over je app. We reageren binnen 1 werkdag met een indicatie van de scope en kosten.
-
-{{< /section-full >}}

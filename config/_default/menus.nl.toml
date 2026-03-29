@@ -49,33 +49,39 @@ weight = 1
 
 [[main]]
 parent = "Diensten"
+name = "App-audit"
+url = "/app-toegankelijkheid-testen"
+weight = 2
+
+[[main]]
+parent = "Diensten"
 name = "Quickscan"
 url = "/quickscan-digitale-toegankelijkheid"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "Diensten"
 name = "Strippenkaart"
 url = "/strippenkaart"
-weight = 3
+weight = 4
 
 [[main]]
 parent = "Diensten"
 name = "Abonnement"
 url = "/toegankelijkheids-abonnement"
-weight = 4
+weight = 5
 
 [[main]]
 parent = "Diensten"
 name = "Training devteam"
 url = "/training-devteams"
-weight = 5
+weight = 6
 
 [[main]]
 parent = "Diensten"
 name = "Training webredactie"
 url = "/trainen-van-webredactie"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Blog"
