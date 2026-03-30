@@ -89,9 +89,15 @@ Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een gratis quickscan aan e
 
 {{< /section-cta >}}
 
-{{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" >}}
+{{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" image="/images/pages/tool-verklaring-wdo.svg" alt="Illustratie van de toegankelijkheidsverklaring-tool" >}}
 
-Als onderwijsinstelling ben je verplicht een toegankelijkheidsverklaring te publiceren op je website. Met onze gratis tool stel je er een op in het formaat van het officiële register — stap voor stap, in 5 minuten.
+De **Inspectie van het Onderwijs** houdt toezicht op onderwijsinstellingen. Zij kijken of je "in control" bent:
+
+- Is er een toegankelijkheidsverklaring?
+- Zijn er maatregelen genomen?
+- Is er voortgang?
+
+Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op — in het formaat van het officiële register.
 
 [Stel je verklaring op (gratis) →](/tools/toegankelijkheidsverklaring-wdo/)
 
