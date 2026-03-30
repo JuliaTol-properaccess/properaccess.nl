@@ -46,7 +46,9 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 - Een slechthorende student die hoorcolleges terugkijkt zonder ondertiteling
 - Een student met een motorische beperking die de drag-and-drop oefening in Canvas niet kan bedienen
 
-**En de wetgeving is helder:**
+{{< /section-full >}}
+
+{{< section-split title="De wetgeving is helder" >}}
 
 - **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (Wdo) — WCAG 2.1 is al verplicht
 - **Particuliere onderwijsinstellingen** vallen onder de European Accessibility Act (EAA) als ze digitale diensten aanbieden
@@ -54,7 +56,7 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 Dit is niet iets voor "later". Studenten met een beperking volgen nu onderwijs op jouw instelling.
 
-{{< /section-full >}}
+{{< /section-split >}}
 
 {{< section-cards title="Dit zien we bij elke onderwijsinstelling" columns="2" bg="light" >}}
 {{< section-card title="Toetsen die niet werken met hulpsoftware" >}}
@@ -111,9 +113,8 @@ We snappen dat een onderwijsinstelling geen gewone website is. Je hebt te maken 
 
 - **Gratis quickscan — weet waar je staat** — We checken je belangrijkste platform handmatig en geven je een risico-overzicht. Ideaal als je nog niet weet hoe groot het probleem is.
 - **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
-- **Content-audit voor redacties en docenten** — We auditen een steekproef van jullie content en leveren concrete richtlijnen op die je hele organisatie kan toepassen.
+- **Begeleiding tijdens het hele traject** — Na het rapport ben je er niet alleen mee. Je mag onbeperkt vragen stellen — over het rapport, over oplossingen, over prioriteiten. Je hebt een echt mens dat je kunt bellen of mailen. We zijn je partner, niet alleen je auditor.
 - **Retest na verbetering** — Verbeteringen doorgevoerd? We controleren of alles goed is opgelost.
-- **Nabespreking** — Een uur met je team om het rapport door te nemen, vragen te beantwoorden en prioriteiten te bepalen.
 
 {{< /offerte-section >}}
 

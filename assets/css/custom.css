@@ -2915,6 +2915,105 @@ html.dark .tool-contrast__ref-table td {
 }
 
 /* ============================================
+   SECTION-SPLIT (tekst + formulier naast elkaar)
+   ============================================ */
+
+.section-split {
+  padding: 3rem 0;
+}
+.section-split--light {
+  background: #f5f5f5;
+}
+.section-split__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.section-split__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  color: #1F2937;
+  margin-bottom: 1rem;
+}
+html.dark .section-split__title { color: #fff; }
+.section-split__text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #374151;
+}
+html.dark .section-split__text { color: #d1d5db; }
+.section-split__text ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+.section-split__text li {
+  margin-bottom: 0.5rem;
+}
+.section-split__form-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+html.dark .section-split__form-card {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+}
+.section-split__form-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.section-split__form-desc {
+  color: #6b7280;
+  font-size: 0.9375rem;
+  margin-bottom: 1.25rem;
+}
+.section-split__field {
+  margin-bottom: 1rem;
+}
+.section-split__field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  font-size: 0.9375rem;
+}
+.section-split__field input,
+.section-split__field textarea {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #6B7280;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+html.dark .section-split__field input,
+html.dark .section-split__field textarea {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+  color: #fff;
+}
+.section-split__field input:focus,
+.section-split__field textarea:focus {
+  outline: 2px solid #A30D4B;
+  outline-offset: 1px;
+}
+.section-split__field textarea {
+  resize: vertical;
+  min-height: 4rem;
+}
+@media (max-width: 768px) {
+  .section-split__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ============================================
    TOOL: TOEGANKELIJKHEIDSVERKLARING GENERATOR
    ============================================ */
 

@@ -1,0 +1,38 @@
+{{ $title := .Get "title" }}
+{{ $bg := .Get "bg" }}
+
+<section class="section-split{{ if eq $bg "light" }} section-split--light{{ end }}">
+  <div class="container">
+    <div class="section-split__grid">
+      <div class="section-split__content">
+        {{ with $title }}<h2 class="section-split__title">{{ . }}</h2>{{ end }}
+        <div class="section-split__text">
+          {{ .Inner | markdownify }}
+        </div>
+      </div>
+      <div class="section-split__aside">
+        <div class="section-split__form-card">
+          <h3 class="section-split__form-title">Neem contact op</h3>
+          <p class="section-split__form-desc">Vertel ons over je situatie. We reageren binnen 1 werkdag.</p>
+          <form class="section-split__form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier-split', successMessage: 'Verstuurd! We nemen binnen 1 werkdag contact op.' });">
+            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+            <div class="section-split__field">
+              <label for="split-name">Naam <span aria-label="verplicht">*</span></label>
+              <input type="text" id="split-name" name="naam" required autocomplete="name" />
+            </div>
+            <div class="section-split__field">
+              <label for="split-email">E-mailadres <span aria-label="verplicht">*</span></label>
+              <input type="email" id="split-email" name="email" required autocomplete="email" />
+            </div>
+            <div class="section-split__field">
+              <label for="split-message">Waar kunnen we je mee helpen?</label>
+              <textarea id="split-message" name="bericht" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Verstuur <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <div role="status" aria-live="polite" style="margin-top: 0.5rem;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
