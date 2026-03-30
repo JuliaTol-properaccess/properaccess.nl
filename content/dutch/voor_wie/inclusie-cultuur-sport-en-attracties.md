@@ -51,9 +51,9 @@ Ja, er zijn boetes bij niet-naleving van de EAA. Maar het echte risico is het si
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw website scoort? Bestel een Quickscan voor slechts 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+Benieuwd hoe jouw website scoort? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
 
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
+[Vraag een gratis quickscan aan →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 
@@ -92,7 +92,7 @@ Musea en erfgoedinstellingen zetten hun collecties steeds vaker online. Maar de 
 
 Herken je een van deze problemen? Start met een Quickscan — binnen 2 werkdagen weet je waar je staat.
 
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
+[Vraag een gratis quickscan aan →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 

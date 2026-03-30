@@ -81,9 +81,9 @@ Moodle en Canvas zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpa
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw digitale leeromgeving scoort? Bestel een Quickscan voor slechts 19 euro en ontvang binnen 5 werkdagen een risico-overzicht.
+Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een gratis quickscan aan en ontvang binnen 5 werkdagen een risico-overzicht.
 
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
+[Vraag een gratis quickscan aan →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 
@@ -101,7 +101,7 @@ Onze oprichter was 9 jaar ontwikkelaar bij de Rechtspraak, waar ze werkte met co
 
 We snappen dat een onderwijsinstelling geen gewone website is. Je hebt te maken met meerdere platformen, externe leveranciers, honderden content-auteurs en een IT-afdeling die al overvol zit. Daarom bieden we verschillende instapniveaus.
 
-- **Quickscan — weet waar je staat (€ 19)** — We checken je belangrijkste platform handmatig en geven je een risico-overzicht op 1 A4. Ideaal als je nog niet weet hoe groot het probleem is.
+- **Gratis quickscan — weet waar je staat** — We checken je belangrijkste platform handmatig en geven je een risico-overzicht. Ideaal als je nog niet weet hoe groot het probleem is.
 - **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
 - **Content-audit voor redacties en docenten** — We auditen een steekproef van jullie content en leveren concrete richtlijnen op die je hele organisatie kan toepassen.
 - **Retest na verbetering** — Verbeteringen doorgevoerd? We controleren of alles goed is opgelost.
@@ -134,9 +134,9 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 
 {{< section-cta >}}
 
-**Start met een quickscan voor € 19** en weet binnen 5 werkdagen waar je staat. Of neem direct contact op voor een vrijblijvend gesprek.
+**Start met een gratis quickscan** en weet binnen 5 werkdagen waar je staat. Of neem direct contact op voor een vrijblijvend gesprek.
 
-[Quickscan bestellen — € 19 →](/webshop-quickscan/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
+[Gratis quickscan aanvragen →](/webshop-quickscan/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
 
 {{< /section-cta >}}
 

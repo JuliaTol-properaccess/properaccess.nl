@@ -63,9 +63,9 @@ We werken sinds 2019 met tientallen overheidsorganisaties. Wat we telkens zien: 
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw website scoort? Bestel een Quickscan voor slechts 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+Benieuwd hoe jouw website scoort? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
 
-[Bestel een Quickscan voor € 19 →](/webshop-quickscan/)
+[Vraag een gratis quickscan aan →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 

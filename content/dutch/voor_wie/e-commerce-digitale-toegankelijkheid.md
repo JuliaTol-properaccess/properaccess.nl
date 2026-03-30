@@ -63,9 +63,9 @@ Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML
 
 {{< section-cta >}}
 
-Wil je snel weten waar je staat? Bestel een quickscan voor 19 euro en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's.
+Wil je snel weten waar je staat? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's.
 
-[Bestel een Quickscan voor 19 euro](/webshop-quickscan/)
+[Vraag een gratis quickscan aan](/webshop-quickscan/)
 
 Of vraag direct een [volledige audit aan](#offerte) (vanaf ca. 1.800 euro).
 

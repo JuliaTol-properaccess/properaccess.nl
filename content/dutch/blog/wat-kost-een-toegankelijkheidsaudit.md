@@ -40,7 +40,7 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 ## Typen onderzoek en wat ze kosten
 
-**Quickscan** (v.a. 19 euro) — een snelle eerste check. Geen volledige audit, maar je weet waar je staat.
+**Gratis quickscan** — een snelle eerste check. Geen volledige audit, maar je weet waar je staat.
 
 **Content-audit** (v.a. 1.300 euro) — gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
 

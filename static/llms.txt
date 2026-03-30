@@ -10,7 +10,7 @@
 - [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): Meerjarig partnerschap met audits, trainingen en tooling
 - [Training voor devteams](https://www.properaccess.nl/training-devteams/): Praktische WCAG-training voor developers
 - [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): Training toegankelijke webcontent en PDF's
-- [Quickscan](https://www.properaccess.nl/webshop-quickscan/): Snelle scan van je website voor 19 euro
+- [Quickscan](https://www.properaccess.nl/webshop-quickscan/): Gratis quickscan van je website
 
 ## Sectoren
 
