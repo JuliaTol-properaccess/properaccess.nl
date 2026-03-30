@@ -106,7 +106,7 @@ We begrijpen hoe jullie werken: in sprints, met deadlines, met klanten die vrage
 - **[Audit tijdens ontwikkeling](/toegankelijkheid-testen-tijdens-de-bouw/)** — we voeren tussentijdse quickscans uit tijdens de bouw. Zo vang je problemen op voordat ze kostbaar worden. Je team krijgt direct feedback op componentniveau.
 - **Code reviews en technische begeleiding** — je developer twijfelt over de beste manier om een dropdown toegankelijk te maken? We kijken mee, delen code-snippets, en leggen uit waarom bepaalde keuzes beter werken.
 - **Trainingen voor je team** — praktische workshops voor developers, designers en contentteams. Focus op wat jullie daadwerkelijk gebruiken: React, Vue, WordPress, Drupal. Geen theorie, maar hands-on.
-- **Volledige audit voor oplevering** — voordat de website live gaat, voeren we een grondige audit uit op alle 55 WCAG 2.2 AA-succescriteria. Je krijgt een rapport per pagina en per element — met screenshots, code-voorbeelden en prioritering. [Bekijk een voorbeeldrapport](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/).
+- **Volledige audit voor oplevering** — voordat de website live gaat, voeren we een grondige audit uit op alle 55 WCAG 2.2 AA-succescriteria. Je krijgt een rapport per pagina en per element — met screenshots, code-voorbeelden en prioritering. [Bekijk een voorbeeldrapport](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/).
 - **Onbeperkt vragen stellen** — ook na oplevering van het rapport. Je team heeft een vraag tijdens de implementatie? Stuur een mail, bel even. Dat zit bij onze audit inbegrepen.
 
 {{< /offerte-section >}}

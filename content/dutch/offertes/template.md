@@ -158,7 +158,7 @@ Wij factureren na afronding van de audit. De betaaltermijn is 30 dagen.
 
 Bekijk voorbeelden van onze rapporten om een indruk te krijgen van de diepgang en praktische bruikbaarheid:
 
-- [NRC rapport](https://audit.properaccess.nl/reports/202512_nrc/)
+- [NRC rapport](https://www.properaccess.nl/rapporten/202512_nrc/)
 - [Rijksmuseum retest](https://audit.properaccess.nl/reports/202510_retest_rijksmuseum/)
 
 {{< /offerte-section >}}

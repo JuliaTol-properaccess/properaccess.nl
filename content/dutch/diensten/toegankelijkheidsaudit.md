@@ -90,7 +90,7 @@ Geen 50 pagina's platte tekst, maar een rapport dat je team helpt.
 
 We zijn geen inspectie-instelling die een rapport dumpt en verdwijnt. Je mag na het rapport **zoveel vragen stellen als je wilt**. Je team heeft een vraag over een oplossing? We denken mee.
 
-Bekijk een voorbeeldrapport: [overheid](https://audit2026.properaccess.nl/202512_veenweidenkrimpenerwaard.nl/) · [culturele sector](https://audit2026.properaccess.nl/202512_museumvereniging_retest/) · [bedrijfsleven](https://audit2026.properaccess.nl/202602_financiereninnetwerken.nl/)
+Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/) · [culturele sector](https://www.properaccess.nl/rapporten/202512_museumvereniging_retest/) · [bedrijfsleven](https://www.properaccess.nl/rapporten/202602_financiereninnetwerken.nl/)
 
 {{< /section-full >}}
 
