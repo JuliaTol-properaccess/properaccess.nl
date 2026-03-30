@@ -196,7 +196,6 @@ Niet alleen over de bevindingen uit het rapport. "Hoe gaan we om met onze levera
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< webinar >}}
 
 {{< section-full title="Vragen die we vaak krijgen" >}}
 

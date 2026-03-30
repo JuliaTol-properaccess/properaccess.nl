@@ -57,6 +57,14 @@ Benieuwd hoe jouw website scoort? Vraag een gratis quickscan aan en ontvang binn
 
 {{< /section-cta >}}
 
+{{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" >}}
+
+Als culturele instelling ben je verplicht een toegankelijkheidsverklaring te publiceren op je website. Met onze gratis tool stel je er een op in het formaat van het officiële register — stap voor stap, in 5 minuten.
+
+[Stel je verklaring op (gratis) →](/tools/toegankelijkheidsverklaring-wdo/)
+
+{{< /section-highlight >}}
+
 {{< section-highlight title="Van website tot mobiele app — we testen het allemaal" image="/images/blog/nachtw.webp" alt="De Nachtwacht in het Rijksmuseum — locatie van onze app-audit" link="/blog/rijksmuseum-apps-toegankelijkheid-getest/" link_text="Lees de volledige case" bg="light" >}}
 
 We auditen niet alleen websites. In december 2025 testten we de iOS- en Android-app van het Rijksmuseum op toegankelijkheid. Het was niet onze eerste opdracht voor het grootste museum van Nederland — en dat is geen toeval. Organisaties die écht inclusief willen zijn, komen bij ons terug.

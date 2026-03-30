@@ -87,6 +87,14 @@ Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een gratis quickscan aan e
 
 {{< /section-cta >}}
 
+{{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" >}}
+
+Als onderwijsinstelling ben je verplicht een toegankelijkheidsverklaring te publiceren op je website. Met onze gratis tool stel je er een op in het formaat van het officiële register — stap voor stap, in 5 minuten.
+
+[Stel je verklaring op (gratis) →](/tools/toegankelijkheidsverklaring-wdo/)
+
+{{< /section-highlight >}}
+
 {{< section-full title="Wij kennen jullie systemen van binnenuit" >}}
 
 Onze oprichter was 9 jaar ontwikkelaar bij de Rechtspraak, waar ze werkte met complexe webapplicaties en interne systemen. Ze kent de technische kant van platformen als Moodle, WordPress, Canvas, Class en Articulate niet van de buitenkant, maar van de broncode.
@@ -140,7 +148,6 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 
 {{< /section-cta >}}
 
-{{< webinar >}}
 
 {{< section-full title="Veelgestelde vragen" >}}
 
