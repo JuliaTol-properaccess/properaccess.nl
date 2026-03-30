@@ -1,0 +1,195 @@
+{{ define "main" }}
+{{/* Collect all sections with their chapters, sorted by section_number */}}
+{{ $sections := slice }}
+{{ $totalChapters := 0 }}
+{{ $totalQuizzes := 0 }}
+{{ $totalMinutes := 0 }}
+{{ range sort .Sections "Params.section_number" }}
+  {{ $section := . }}
+  {{ $chapters := $section.RegularPages }}
+  {{ $sections = $sections | append (dict "section" $section "chapters" $chapters) }}
+  {{ $totalChapters = add $totalChapters (len $chapters) }}
+  {{ $totalQuizzes = add $totalQuizzes ($section.Params.quizzes | default 0) }}
+  {{ $totalMinutes = add $totalMinutes ($section.Params.duration_minutes | default 0) }}
+{{ end }}
+
+<div class="academy" id="academy">
+
+  {{/* Mobile sidebar toggle */}}
+  <button
+    class="academy__sidebar-toggle"
+    id="academySidebarToggle"
+    aria-expanded="false"
+    aria-controls="academySidebar"
+    aria-label="Inhoudsopgave tonen">
+    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+    Inhoudsopgave
+  </button>
+
+  {{/* Sidebar */}}
+  <nav class="academy__sidebar" id="academySidebar" aria-label="Academy inhoudsopgave">
+    <div class="academy__sidebar-inner">
+      <p class="academy__sidebar-label">Inhoudsopgave</p>
+
+      {{ range $i, $item := $sections }}
+        {{ $section := $item.section }}
+        {{ $chapters := $item.chapters }}
+        {{ $sectionNum := $section.Params.section_number | default (add $i 1) }}
+
+        <div class="academy__section" id="academy-section-{{ $sectionNum }}">
+          <button
+            class="academy__section-title"
+            aria-expanded="true"
+            aria-controls="academy-section-list-{{ $sectionNum }}">
+            <span class="academy__section-number">{{ $sectionNum }}</span>
+            <span>{{ $section.Title }}</span>
+            <svg class="academy__chevron" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+
+          <ul class="academy__section-list" id="academy-section-list-{{ $sectionNum }}">
+            {{ range sort $chapters "Params.chapter_number" }}
+              {{ $isLocked := .Params.locked }}
+              <li class="academy__chapter{{ if $isLocked }} academy__chapter--locked{{ end }}">
+                {{ if $isLocked }}
+                <span class="academy__chapter-inner">
+                  <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
+                  <span class="academy__chapter-title">{{ .Title }}</span>
+                  <svg class="academy__lock-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+                {{ else }}
+                <a href="{{ .RelPermalink }}" class="academy__chapter-inner">
+                  <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
+                  <span class="academy__chapter-title">{{ .Title }}</span>
+                </a>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </nav>
+
+  {{/* Main content */}}
+  <main class="academy__main" id="academyMain">
+
+    {{/* Stats bar */}}
+      <div class="academy__stats">
+        <div class="academy__stat">
+          <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+          <div class="academy__stat-data">
+            <span class="academy__stat-value">0/{{ $totalChapters }}</span>
+            <span class="academy__stat-label">Hoofdstukken</span>
+          </div>
+        </div>
+        <div class="academy__stat">
+          <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          <div class="academy__stat-data">
+            <span class="academy__stat-value">0 dagen</span>
+            <span class="academy__stat-label">Learning streak</span>
+          </div>
+        </div>
+        <div class="academy__stat">
+          <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <div class="academy__stat-data">
+            <span class="academy__stat-value">0/{{ $totalQuizzes }}</span>
+            <span class="academy__stat-label">Quizzes gemaakt</span>
+          </div>
+        </div>
+        <div class="academy__stat">
+          <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <div class="academy__stat-data">
+            <span class="academy__stat-value">0/350</span>
+            <span class="academy__stat-label">Punten verdiend</span>
+          </div>
+        </div>
+      </div>
+
+      {{/* Hero */}}
+      <div class="academy__hero">
+        <h1 class="academy__hero-title">Leer digitale toegankelijkheid</h1>
+        <p class="academy__hero-intro">We hebben een cursus over WCAG ontwikkeld, geschreven in heldere en begrijpelijke taal, met honderden praktische voorbeelden die de soms complexe stof toegankelijk en behapbaar maken.</p>
+      </div>
+
+      {{/* Section cards */}}
+      <div class="academy__sections-grid">
+        {{ range $i, $item := $sections }}
+          {{ $section := $item.section }}
+          {{ $chapters := $item.chapters }}
+          {{ $sectionNum := $section.Params.section_number | default (add $i 1) }}
+          {{ $quizzes := $section.Params.quizzes | default 0 }}
+          {{ $duration := $section.Params.duration_minutes | default 0 }}
+
+          {{ $sectionLocked := $section.Params.locked }}
+          {{ if $sectionLocked }}
+          <div class="academy__section-card academy__section-card--locked">
+          {{ else }}
+          <a href="{{ (index (sort $chapters "Params.chapter_number") 0).RelPermalink }}" class="academy__section-card">
+          {{ end }}
+            <div class="academy__section-card-header">
+              <span class="academy__section-card-num">{{ $sectionNum }}</span>
+              <h2 class="academy__section-card-title">{{ $section.Title }}</h2>
+            </div>
+            <div class="academy__section-card-meta">
+              <span class="academy__section-card-meta-item">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+                {{ len $chapters }} hoofdstukken
+              </span>
+              <span class="academy__section-card-meta-item">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+                {{ $quizzes }} quizzes
+              </span>
+              <span class="academy__section-card-meta-item">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                {{ $duration }} min
+              </span>
+            </div>
+            {{ if $sectionLocked }}
+            <div class="academy__section-card-lock" aria-label="Deze sectie is vergrendeld">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            {{ end }}
+          {{ if $sectionLocked }}
+          </div>
+          {{ else }}
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
+
+  </main>
+</div>
+
+<script src="{{ "js/academy.js" | relURL }}" defer></script>
+{{ end }}

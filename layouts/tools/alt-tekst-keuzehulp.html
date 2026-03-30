@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+
+    <p class="tool-heading__intro">
+      Weet je niet welke alt-tekst je moet schrijven? Beantwoord een paar vragen en je krijgt direct advies
+      &mdash; gebaseerd op de WCAG-richtlijnen.
+    </p>
+
+    <!-- Alt-tekst keuzehulp (zelfde component als shortcode) -->
+    <section class="webapp-alt" id="webapp-alt-tekst" aria-labelledby="webapp-alt__title">
+      <h2 class="webapp-alt__title" id="webapp-alt__title">Kies de juiste alt-tekst</h2>
+      <div class="sr-only" aria-live="polite" aria-atomic="true" id="webapp-alt__live"></div>
+      <div class="webapp-alt__app" id="webapp-alt__app" role="region" aria-label="Keuzehulp stappen">
+        <noscript>
+          <p>Deze keuzehulp vereist JavaScript. Schakel JavaScript in om de tool te gebruiken.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <script type="application/json" id="webapp-alt-data">
+      {{ readFile "data/apps/alt_tekst_keuzehulp.json" | safeJS }}
+    </script>
+    <script src="{{ "js/webapp-alt-tekst.js" | relURL }}" defer></script>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      <p>Wil je meer weten over alt-teksten? Lees de <a href="/blog/alt-tekst-keuzehulp/">uitgebreide uitleg met voorbeelden en veelgemaakte fouten</a>.</p>
+      <p>Of <a href="/contact">vraag een audit aan</a> om alle afbeeldingen op je website te laten controleren.</p>
+    </div>
+
+  </div>
+</section>
+{{ end }}

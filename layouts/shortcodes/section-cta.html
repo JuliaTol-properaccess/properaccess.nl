@@ -1,0 +1,21 @@
+{{ $title := .Get "title" }}
+{{ $id := .Get "id" }}
+{{ $image := .Get "image" }}
+
+<section class="section-cta{{ with $image }} section-cta--with-image{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="container">
+    <div class="section-cta__inner">
+      {{ with $image }}
+      <div class="section-cta__image">
+        <img src="{{ . | relURL }}" alt="" loading="lazy" />
+      </div>
+      {{ end }}
+      <div class="section-cta__text">
+        {{ with $title }}<h2 class="section-cta__title">{{ . }}</h2>{{ end }}
+        <div class="section-cta__content">
+          {{ .Inner | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

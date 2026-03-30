@@ -1,0 +1,43 @@
+<svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="4" y="4" width="392" height="352" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="352" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="24" y="32" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="700">Stappenplan</text>
+  <line x1="24" y1="44" x2="368" y2="44" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Vertical line connecting steps -->
+  <line x1="52" y1="72" x2="52" y2="310" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Step 1 -->
+  <circle cx="52" cy="72" r="16" fill="#A30D4B"/>
+  <text x="48" y="77" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">1</text>
+  <text x="80" y="68" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Quickscan</text>
+  <text x="80" y="84" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Eerste beeld van je huidige situatie</text>
+  <rect x="280" y="60" width="80" height="20" rx="10" fill="#f0fdf4"/>
+  <text x="296" y="74" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 19</text>
+
+  <!-- Step 2 -->
+  <circle cx="52" cy="150" r="16" fill="#A30D4B"/>
+  <text x="47" y="155" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">2</text>
+  <text x="80" y="146" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Grootste blokkers fixen</text>
+  <text x="80" y="162" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Bestelproces, cookie-banner, formulieren</text>
+  <rect x="280" y="138" width="80" height="20" rx="10" fill="#fffbeb"/>
+  <text x="292" y="152" fill="#b45309" font-family="Nunito, sans-serif" font-size="8" font-weight="700">Prioriteit 1</text>
+
+  <!-- Step 3 -->
+  <circle cx="52" cy="228" r="16" fill="#A30D4B"/>
+  <text x="47" y="233" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">3</text>
+  <text x="80" y="224" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Volledige audit</text>
+  <text x="80" y="240" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">WCAG-EM onderzoek op 55 succescriteria</text>
+  <rect x="280" y="216" width="80" height="20" rx="10" fill="#f3f4f6"/>
+  <text x="290" y="230" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 1.800</text>
+
+  <!-- Step 4 -->
+  <circle cx="52" cy="306" r="16" fill="#A30D4B"/>
+  <text x="47" y="311" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">4</text>
+  <text x="80" y="302" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Retest</text>
+  <text x="80" y="318" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Check of alle verbeteringen goed zijn doorgevoerd</text>
+  <rect x="280" y="294" width="80" height="20" rx="10" fill="#f3f4f6"/>
+  <text x="290" y="308" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 400</text>
+</svg>

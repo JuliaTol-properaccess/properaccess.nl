@@ -1,0 +1,78 @@
+<meta charset="utf-8" />
+
+<!-- responsive meta -->
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<!-- theme meta -->
+<meta name="theme-name" content="hugoplate" />
+
+<!-- favicon -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
+{{ partialCached "favicon" . }}
+
+
+<!-- manifest -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
+{{ partialCached "manifest" . }}
+
+
+<!-- site verifications -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications */}}
+{{ partialCached "site-verifications.html" . }}
+
+
+<!-- opengraph and twitter card -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo */}}
+{{ partial "basic-seo.html" . }}
+
+<!-- JSON-LD structured data -->
+{{ partial "json-ld.html" . }}
+
+
+<!-- custom script -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/custom-script */}}
+{{ partialCached "custom-script.html" . }}
+
+
+<!-- google analytics -->
+{{/* https://gohugo.io/templates/embedded/#configuration-google-analytics */}}
+{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+  {{ partial "google_analytics.html" . }}
+{{ end }}
+
+
+<!-- google tag manager -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/google-tag-manager */}}
+{{ partialCached "gtm.html" . }}
+
+
+<!-- search index -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/search */}}
+{{ partial "search-index.html" . }}
+
+
+<!-- matomo analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/matomo-analytics */}}
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+
+<!--  Baidu analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/baidu-analytics */}}
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
+
+<!-- Plausible Analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/plausible-analytics */}}
+{{/* {{ partialCached "plausible-analytics.html" . }} */}}
+
+<!-- Counter Analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/counter-analytics */}}
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
+
+<!-- Crisp Chat -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/crisp-chat */}}
+{{/* {{ partialCached "crisp-chat.html" . }} */}}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">

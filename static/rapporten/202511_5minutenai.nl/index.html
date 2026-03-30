@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202511_5minutenai.nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van website 5minutenai.nl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+</head>
+<body class="open-sans-pa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
+<script src="/rapporten/_assets/main.js"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample"><li><a href="#het-spel">Het spel</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van website 5minutenai.nl</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de website 5minutenai.nl onderzocht op 22 november 2025. Op dit moment zijn 45 van de 55 succescriteria als voldoende beoordeeld. In dit rapport lees je wat er bij de overige 10 nog fout gaat, en hoe je dat kunt verbeteren.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        <img src="images/opdrachtgever.png" alt="Logo van 5minutenai.nl">
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Geslaagd</span>
+        <span class="stat-number" id="stat-passed">-</span>
+        <span class="stat-sublabel">van 55</span>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-badge">WCAG 2.2</span>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>5minutenai.nl</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>22 november 2025</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle pagina&#39;s op de website 5minutenai.nl</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website</li>
+              
+              <li>De van derden afkomstige inhoud (wettelijke uitzondering voor de overheid)</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Mozilla Firefox, versie 142</li>
+              
+              <li>Google Chrome, versie 142</li>
+              
+              <li>Apple Safari, versie 18</li>
+              
+              <li>NVDA schermlezer in combinatie met Firefox</li>
+              
+              <li>VoiceOver schermlezer in combinatie met Safari</li>
+              
+              <li>Andere gangbare browsers en hulpapparatuur</li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>HTML</li>
+              
+              <li>CSS</li>
+              
+              <li>JavaScript</li>
+              
+              <li>WAI-ARIA</li>
+              
+              <li>SVG</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="het-spel">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#het-spel">Het spel <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#1 - Het <code>title</code>-element verandert niet mee met dynamische content</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.2</span>
+	<span class="type"><b>EN</b>: 9.2.4.2</span>
+</div>
+<p>De inhoud van pagina's verandert op deze website dynamisch, terwijl de URL hetzelfde blijft. Bij zo'n verandering moet de tekst in het <code>title</code>-element ook aangepast worden. Blinde bezoekers gebruiken vaak  de paginatitel om te begrijpen waar de pagina over gaat. Een verouderde titel kan dan verwarrend zijn. Daarom moet dit element tekst bevatten die de actuele inhoud van de pagina duidelijk beschrijft.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de tekst in het <code>title</code>-element mee verandert op het moment dat de inhoud van de pagina dynamisch wordt gewijzigd.</p>
+</div>
+<div class="issue">
+<h3>#2 - Het <code>lang</code>-attribuut ontbreekt</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.1</span>
+	<span class="type"><b>EN</b>: 9.3.1.1</span>
+</div>
+<p>Op deze pagina ontbreekt het <code>lang</code>-attribuut op het <code>html</code>-element.</p>
+<p>Als dit attribuut niet aanwezig is, kan voorleessoftware de pagina niet in de correcte taal voorlezen. De software weet dan niet wat de primaire taal van de pagina is.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat het <code>lang</code>-attribuut aanwezig is op het <code>html</code>-element, en dat dit attribuut de taalcode bevat van de taal van de pagina, bijvoorbeeld <code>lang=&quot;nl&quot;</code> voor Nederlands.</p>
+</div>
+<div class="issue">
+<h3>#3 - Iframe heeft geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Deze pagina bevat een iframe zonder beschrijving die zichtbaar is voor een schermlezer. Het title-attribuut ontbreekt.</p>
+<p>Iframes moeten een goede beschrijving hebben. Die staat meestal in het <code>title</code>-attribuut van het iframe. Er moet in staan welk <em>type</em> inhoud het is (bijvoorbeeld een podcast of video), en waar het inhoudelijk over gaat. Deze beschrijving van de inhoud moet uniek en betekenisvol zijn. Door de beschrijving kunnen bezoekers met hulpsoftware beslissen of het de moeite waard is om de inhoud van het iframe te verkennen.</p>
+<h4>Oplossing:</h4>
+<p>Voeg het <code>title</code>-attribuut aan het <code>iframe</code>-element toe, en zet daar een tekst in waaruit blijkt welk <em>type</em> inhoud het iframe bevat, en waar het inhoudelijk over gaat.</p>
+</div>
+<div class="issue">
+<h3>#4 - De inhoud van deze website is niet toegankelijk voor een schermlezer</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>De inhoud van deze website wordt niet voorgelezen. De inhoud van deze website is in een <code>&lt;canvas&gt;</code> element opgenomen. Hulpsoftware krijgt geen informatie over de inhoud van dit element.</p>
+<h4>Oplossing:</h4>
+<p>Dit kan worden opgelost door de inhoud op een andere manier te presenteren.</p>
+<p>Een canvas-element kan voor een deel toegankelijk worden gemaakt. Deze pagina's geven goede voorbeelden van hoe canvas toegankelijk gemaakt kan worden: <a href="https://www.html5accessibility.com/tests/canvas.html">https://www.html5accessibility.com/tests/canvas.html</a> en <a href="https://pauljadam.com/demos/canvas.html">https://pauljadam.com/demos/canvas.html</a>.</p>
+</div>
+<div class="issue">
+<h3>#5 - Interactieve elementen hebben geen correcte rollen en namen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In het hele spel staan interactieve elementen. Bijvoorbeeld een &quot;Start&quot;-knop op het beginscherm waarop een bezoeker kan klikken.</p>
+<p>Omdat deze knop echter binnen het canvas-element wordt getekend, ontbreekt een correcte semantische rol en een toegankelijke naam. Toetsenbordgebruikers, schermlezers of stemgestuurde bediening kunnen niet met dit element omgaan.
+Alle interactieve componenten binnen het spel zijn gecodeerd binnen één enkel canvas-element. Het <code>&lt;canvas&gt;</code>-element heeft geen DOM- (Document Object Model) structuur. Juist die DOM-structuur is nodig voor hulpsoftware om een toegankelijk model op te bouwen voor gebruikers met een beperking. Zonder deze structuur is de inhoud die in de canvas wordt weergegeven in feite volledig ontoegankelijk.</p>
+<h4>Oplossing:</h4>
+<p>Overweeg dit spel op een andere manier te programmeren.</p>
+</div>
+<div class="issue">
+<h3>#6 - Zoomen is niet mogelijk in oudere browsers door bepaalde code</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.4</span>
+	<span class="type"><b>EN</b>: 9.1.4.4</span>
+</div>
+<p>Op alle pagina's zijn in het head-element van de HTML-code <code>maximum-scale=1</code> en <code>user-scalable=no</code> aanwezig.</p>
+<p>Deze code zorgt ervoor dat een bezoeker in sommige browsers niet kan inzoomen.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder deze code.</p>
+</div>
+<div class="issue">
+<h3>#7 - Link heeft geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1, 2.4.4, 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.1.1.1, 9.2.4.4, 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/01.png" alt="">
+</figure>
+<p>Op deze pagina fungeert het Playcanvas-logo in de footer als een link, maar de tekstalternatief ontbreekt, waardoor de link ontoegankelijk is.</p>
+<p>De afbeelding is dus interactief. Er is geen tekstalternatief. Daardoor heeft de link geen inhoud.  De link heeft geen toegankelijke naam en het doel van deze link is niet duidelijk (dit zorgt ook voor afkeur op succescriterium 2.4.4 en 4.1.2).</p>
+<p>Hetzelfde probleem doet zich voor bij de logo's van Facebook en Twitter in de voettekst.</p>
+<h4>Oplossing:</h4>
+<p>Om deze link toegankelijk te maken, moet de afbeelding een tekstalternatief krijgen dat het linkdoel beschrijft.</p>
+<p>Je lost dit op door de link te voorzien van toegankelijke, tekstuele inhoud. Dit kun je als volgt doen:</p>
+<ul>
+<li><strong><code>aria-label</code> gebruiken</strong>: voeg een <code>aria-label</code>-attribuut toe aan het <code>a</code>-element met een beknopte beschrijving van de bestemming van de link.</li>
+<li><strong>Verborgen tekst aan de link toevoegen</strong>: voeg beschrijvende tekst toe in het <code>a</code>-element, die je visueel verbergt met CSS (bijvoorbeeld met de class <code>.sr-only</code>).</li>
+</ul>
+</div>
+<div class="issue">
+<h3>#8 - Knop heeft geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In de footer staat een knop om de inhoud schermvullend te bekijken. Het icoon heeft geen tekstalternatief waardoor de knop geen toegankelijke naam heeft.</p>
+<p>Hierdoor begrijpen bezoekers die een schermlezer gebruiken niet wat de functie is van deze knop.</p>
+<h4>Oplossing:</h4>
+<p>Geef deze knop een toegankelijke naam, door gebruik te maken van een beschrijvende knoptekst, een <code>aria-label</code> of andere geschikte technieken.</p>
+</div>
+<div class="issue">
+<h3>#9 - Knop kan niet bediend worden met spatiebalk en Enter-toets</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>In de footer staan knoppen die niet toegankelijk zijn via het toetsenbord. Het gaat om de Facebook-knop en de knop om de inhoud schermvullend te bekijken.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat deze knoppen zowel met de spatiebalk als de Enter-toets bediend kunnen worden.</p>
+</div>
+<div class="issue">
+<h3>#10 - Afbeelding heeft geen tekstalternatief</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/02.png" alt="">
+</figure>
+<p>In de footer heeft het icoontje van een oog geen tekstalternatief. Het <code>alt</code>-attribuut ontbreekt.</p>
+<p>Een <code>img</code>-element moet altijd een <code>alt</code>-attribuut hebben. Bij een decoratieve afbeelding die geen betekenis overdraagt, laat je dit attribuut leeg. Dan staat er <code>alt=&quot;&quot;</code>. Bij een informatieve afbeelding voeg je een duidelijke beschrijving van de afbeelding toe.</p>
+<h4>Oplossing:</h4>
+<p>Voeg het <code>alt</code>-attribuut toe aan het <code>img</code>-element. Bij een decoratieve afbeelding laat je de waarde leeg, bij een informatieve afbeelding voeg je een duidelijke alternatieve tekst toe.</p>
+</div>
+<div class="issue">
+<h3>#11 - Kleurcontrast van tekst is te laag (tekst kleiner dan 24px en niet vetgedrukt)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/03.png" alt="">
+</figure>
+<p>Op deze pagina staat in de footer een grijze tekst (<code>#5B6F72</code>) met het aantal weergaven op een zwarte achtergrond (<code>#263538</code>). Het kleurcontrast is te laag: 2,4:1.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#12 - De aangepaste socialmedia-iconen hebben te weinig contrast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Op deze pagina zijn in de footer de socialmedia-iconen grijs gemaakt (<code>#5B6F72</code>), waardoor het contrast met de zwarte achtergrond (<code>#263538</code>) te laag is: 2,4:1.
+De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te voldoen, omdat ze worden gezien als 'kunstobjecten'. Maar als de kleuren worden aangepast, dan moeten die wél voldoen aan de minimale contrasteisen van 3,0:1.</p>
+<p>Hetzelfde probleem doet zich voor bij het icoontje om de pagina op een volledig scherm te bekijken.</p>
+<h4>Oplossing:</h4>
+<p>Zorgen dat de aangepaste kleuren voldoen aan de minimale contrasteisen van 3,0:1.</p>
+</div>
+<div class="issue">
+<h3>#13 - Kleurcontrast van tekst is te laag (tekst groter dan 24px)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/04.png" alt="">
+</figure>
+<p>Op deze pagina, op het scherm &quot;de 5 minuten ai manager&quot;, staan roze letters (<code>#D42FD9</code>) in de tekst &quot;snelheid of zorgvuldigheid&quot; op een blauwe achtergrond (<code>#143F75</code>). Het kleurcontrast is te laag: 2,6:1.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is groter dan 24px, daarom moet het contrast minimaal 3,0:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#14 - De iconen hebben te weinig contrast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/05.png" alt="">
+</figure>
+<p>Bovenaan staan icoontjes van een gezicht en een grafiek die resultaten en vertrouwen weergeven. Deze icoontjes hebben in de standaardstatus een witte voorgrond op een gele achtergrond (<code>#FECB29</code>), met een te laag contrast van 1,5:1.</p>
+<p>Het contrast tussen informatieve elementen van een grafiek moet minimaal 3,0:1 zijn, zodat bezoekers ze van elkaar kunnen onderscheiden.</p>
+<h4>Oplossing:</h4>
+<p>Zorgen dat de aangepaste kleuren voldoen aan de minimale contrasteisen van 3,0:1.</p>
+</div>
+<div class="issue">
+<h3>#15 - Kleurcontrast van tekst is te laag (tekst groter dan 24px)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/06.png" alt="">
+</figure>
+<p>Op het scherm met de eindpresentatie onder &quot;Thema's&quot;, staan roze letters (<code>#D52EDA</code>) in de tekst &quot;snelheid of zorgvuldigheid&quot; op een roze achtergrond (<code>#FE38FF</code>). Het kleurcontrast is te laag: 1,4:1.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is groter dan 24px, daarom moet het contrast minimaal 3,0:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+
+          </div>
+</article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Willemserf 20, 3755XK Eemnes<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>

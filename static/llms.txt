@@ -1,0 +1,38 @@
+# Proper Access
+
+> Onafhankelijk auditbureau voor digitale toegankelijkheid. WCAG-audits, trainingen en doorlopende ondersteuning.
+
+## Diensten
+
+- [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): Volledige WCAG 2.2 AA audit met rapport per element
+- [Testen tijdens de bouw](https://www.properaccess.nl/toegankelijkheid-testen-tijdens-de-bouw/): WCAG-tests in de sprint, directe feedback voor developers
+- [Strippenkaart](https://www.properaccess.nl/strippenkaart/): Flexibele toegankelijkheidsondersteuning op uurbasis
+- [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): Meerjarig partnerschap met audits, trainingen en tooling
+- [Training voor devteams](https://www.properaccess.nl/training-devteams/): Praktische WCAG-training voor developers
+- [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): Training toegankelijke webcontent en PDF's
+- [Quickscan](https://www.properaccess.nl/webshop-quickscan/): Snelle scan van je website voor 19 euro
+
+## Sectoren
+
+- [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): Wdo-compliance voor gemeenten en uitvoeringsorganisaties
+- [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA-compliance voor webshops en e-diensten
+- [Cultuur en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): Toegankelijke websites voor musea, theaters en attracties
+- [Digital agencies](https://www.properaccess.nl/digital-agency/): Samenwerking met agencies op toegankelijkheidsprojecten
+
+## Gratis tools
+
+- [Koppenstructuur checker](https://www.properaccess.nl/tools/koppenstructuur-checker/): Controleer de heading hierarchy van een pagina
+- [Alt-tekst checker](https://www.properaccess.nl/tools/alt-tekst-checker/): Controleer alt-teksten van afbeeldingen
+- [Kleurcontrast checker](https://www.properaccess.nl/tools/kleurcontrast-checker/): Test kleurcontrast volgens WCAG
+- [Foutmeldingen naslagwerk](https://www.properaccess.nl/tools/foutmeldingen/): Voorbeelden van toegankelijke foutmeldingen
+- [ARIA referentie](https://www.properaccess.nl/tools/aria-referentie/): Naslagwerk voor ARIA-attributen
+
+## Over ons
+
+- [Over Proper Access](https://www.properaccess.nl/auditbureau-digitale-toegankelijkheid/): 900+ audits, 53 opdrachtgevers, onafhankelijk
+- [Contact](https://www.properaccess.nl/contact/): 085 5055 890
+- [Offerte aanvragen](https://www.properaccess.nl/offerte-wcag-onderzoek/)
+
+## Blog
+
+- [Blog](https://www.properaccess.nl/blog/): Artikelen over WCAG, EAA en digitale toegankelijkheid

@@ -1,0 +1,41 @@
+<div
+  class="protected-section"
+  data-token="{{ .Get "token" }}"
+  id="protected-{{ .Ordinal }}">
+  <div class="protected-overlay">
+    <h3>Beveiligde inhoud</h3>
+    <p>Voer de toegangscode in om deze offerte te bekijken.</p>
+    <input
+      type="password"
+      class="protected-input"
+      placeholder="Toegangscode"
+      onkeypress="if(event.key==='Enter') unlockSection(this)" />
+    <button onclick="unlockSection(this)">
+      Ontgrendel
+    </button>
+    <p class="error-msg hidden" style="color: #dc2626; margin-top: 0.75rem; font-size: 0.9rem;">Onjuiste code</p>
+  </div>
+
+  <div class="protected-content hidden">
+    {{ .Inner }}
+  </div>
+</div>
+
+<script>
+  function unlockSection(btn) {
+    const container = btn.closest(".protected-section");
+    const correctToken = container.dataset.token;
+    const input = container.querySelector(".protected-input");
+    const overlay = container.querySelector(".protected-overlay");
+    const content = container.querySelector(".protected-content");
+    const error = container.querySelector(".error-msg");
+
+    if (input.value === correctToken) {
+      overlay.classList.add("hidden");
+      content.classList.remove("hidden");
+      error.classList.add("hidden");
+    } else {
+      error.classList.remove("hidden");
+    }
+  }
+</script>

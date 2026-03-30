@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="qs-thankyou">
+  <div class="qs-container">
+    <div class="qs-thankyou__inner">
+
+      <div class="qs-thankyou__check" aria-hidden="true">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h1 class="qs-thankyou__title">Bedankt! Je quickscan is aangevraagd.</h1>
+      <p class="qs-thankyou__subtitle">We gaan aan de slag.</p>
+
+      <div class="qs-expect">
+        <p class="qs-expect__title">Wat kun je verwachten:</p>
+        <ul class="qs-expect__list">
+          <li>Binnen 5 werkdagen: je quickscan-rapport per e-mail</li>
+        </ul>
+      </div>
+
+      <div class="qs-thankyou__cta">
+        <p>Benieuwd welke problemen we het vaakst tegenkomen?</p>
+        <a href="{{ "blog/" | absURL }}">Lees onze artikelen over webtoegankelijkheid <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}
