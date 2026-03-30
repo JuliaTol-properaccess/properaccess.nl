@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Rapporten provincie Noord-Holland — Proper Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #F5F5F5;
+      color: #1F2937;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #1F2937;
+      width: 100%;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Nunito Sans', sans-serif;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    header h1 span { color: #A30D4B; }
+    #report-list {
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    #report-list h2 {
+      font-family: 'Nunito Sans', sans-serif;
+      margin-bottom: 1rem;
+    }
+    .report-card {
+      background: #fff;
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .report-card a {
+      color: #004050;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .report-card a:hover { color: #A30D4B; }
+    .report-date {
+      color: #9ca3af;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+
+    /* Login scherm */
+    #login-screen {
+      max-width: 400px;
+      margin: 6rem auto;
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    #login-screen h2 {
+      font-family: 'Nunito Sans', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+    #login-screen p {
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    #login-screen input[type="password"] {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Nunito', sans-serif;
+      margin-bottom: 1rem;
+    }
+    #login-screen input[type="password"]:focus {
+      outline: none;
+      border-color: #A30D4B;
+    }
+    #login-screen button {
+      width: 100%;
+      padding: 0.7rem;
+      background: #A30D4B;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    #login-screen button:hover { background: #8a0b3f; }
+    #login-error {
+      color: #dc2626;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Proper Access</span> — Rapporten provincie Noord-Holland</h1>
+  </header>
+
+  <div id="login-screen">
+    <h2>Inloggen</h2>
+    <p>Voer het wachtwoord in om de rapporten te bekijken.</p>
+    <form id="login-form">
+      <label for="password" class="sr-only" style="position:absolute;left:-9999px;">Wachtwoord</label>
+      <input type="password" id="password" placeholder="Wachtwoord" autocomplete="off">
+      <button type="submit">Inloggen</button>
+    </form>
+    <p id="login-error">Onjuist wachtwoord.</p>
+  </div>
+
+  <div id="report-list" style="display:none">
+    <h2>Rapporten provincie Noord-Holland</h2>
+    <div class="report-card">
+      <a href="https://audit.properaccess.nl/reports/202510_gwbeheergooi/">Audit digitale toegankelijkheid van website gwbeheergooi.nl</a>
+      <span class="report-date">16 oktober 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_magazine.noord-holland_techniek/">Techniekaudit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
+      <span class="report-date">6 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_retest_jouwnoord-holland/">Hercontrole van de audit digitale toegankelijkheid van website jouwnoord-holland.nl/jouwruimte</a>
+      <span class="report-date">16 oktober 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_retest.vacatures.noord-holland/">Hercontrole van content-audit digitale toegankelijkheid van website vacatures.noord-holland.nl</a>
+      <span class="report-date">26 november 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202508_noord-holland.bestuurlijkeinformatie/">Content-audit digitale toegankelijkheid van website noordholland.bestuurlijkeinformatie.nl</a>
+      <span class="report-date">23 augustus 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202508_noord-holland.stateninformatie/">Content-audit digitale toegankelijkheid van website noord-holland.stateninformatie.nl</a>
+      <span class="report-date">22 augustus 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_magazine.noord-holland_content/">Content-audit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
+      <span class="report-date">6 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_vacatures.noord-holland/">Content audit digitale toegankelijkheid van website vacatures.noord-holland.nl</a>
+      <span class="report-date">16 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202511_geoapps.noord-holland/">Content audit digitale toegankelijkheid van website geoapps.noord-holland.nl</a>
+      <span class="report-date">13 november 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202511_cijfers.noord-holland.nl:jive/">Content audit digitale toegankelijkheid van website cijfers.noord-holland.nl/jive</a>
+      <span class="report-date">19 november 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202510_cijfers_noordholland/">Content audit digitale toegankelijkheid van website cijfers.noord-holland.nl</a>
+      <span class="report-date">16 oktober 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202508_tickets.huisvanhilde/">Audit digitale toegankelijkheid van website tickets.huisvanhilde.nl</a>
+      <span class="report-date">29 augustus 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_steunpuntcultureelerfgoednh/">Audit digitale toegankelijkheid van website steunpuntcultureelerfgoednh.nl</a>
+      <span class="report-date">13 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202511_pimnh.nl/">Audit digitale toegankelijkheid van website pimnh.nl</a>
+      <span class="report-date">29 november 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202510_nhbereikbaar/">Audit digitale toegankelijkheid van website nhbereikbaar.nl</a>
+      <span class="report-date">31 oktober 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202601_mijnsubsidie/">Audit digitale toegankelijkheid van website mijnsubsidie.noord-holland.nl</a>
+      <span class="report-date">23 januari 2026</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_magazine.noord-holland/">Audit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
+      <span class="report-date">6 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202510_leidraadlc.noord-holland.nl/">Audit digitale toegankelijkheid van website leidraadlc.noord-holland.nl</a>
+      <span class="report-date">21 oktober 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202511_koopstromen.nl/">Audit digitale toegankelijkheid van website koopstromen.nl</a>
+      <span class="report-date">27 november 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_jouwnoord-holland/">Audit digitale toegankelijkheid van website jouwnoord-holland.nl/jouwruimte</a>
+      <span class="report-date">6 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202508_huisvanhilde/">Audit digitale toegankelijkheid van website huisvanhilde.nl</a>
+      <span class="report-date">30 augustus 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_formulieren.noord-holland/">Audit digitale toegankelijkheid van website formulieren.noord-holland.nl</a>
+      <span class="report-date">18 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202509_financien.noord-holland/">Audit digitale toegankelijkheid van website financien.noord-holland.nl en noordholland.begroting-2026.nl</a>
+      <span class="report-date">15 september 2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202510_energieregionh/">Audit digitale toegankelijkheid van website energieregionh.nl</a>
+      <span class="report-date">27-10-2025</span>
+    </div>
+    <div class="report-card">
+      <a href="/rapporten/202508_collectie.huisvanhilde/">Audit digitale toegankelijkheid van website collectie.huisvanhilde.nl</a>
+      <span class="report-date">30 augustus 2025</span>
+    </div>
+  </div>
+
+  <script>
+    async function sha256(text) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(text);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    (async () => {
+      const correctHash = '859c23bc92252fb647d0b7e5e9ec1ba1bcf84083750c9a009e1e10e91cb1722b';
+
+      if (sessionStorage.getItem('pa_auth_pnh') === correctHash) {
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('report-list').style.display = 'block';
+      }
+
+      document.getElementById('login-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const input = document.getElementById('password').value;
+        const inputHash = await sha256(input);
+
+        if (inputHash === correctHash) {
+          sessionStorage.setItem('pa_auth_pnh', correctHash);
+          document.getElementById('login-screen').style.display = 'none';
+          document.getElementById('report-list').style.display = 'block';
+        } else {
+          document.getElementById('login-error').style.display = 'block';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
