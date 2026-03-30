@@ -121,6 +121,7 @@ We snappen dat een onderwijsinstelling geen gewone website is. Je hebt te maken 
 - **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen. [Bekijk een voorbeeldrapport](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/).
 - **Begeleiding tijdens het hele traject** — Na het rapport ben je er niet alleen mee. Je mag onbeperkt vragen stellen — over het rapport, over oplossingen, over prioriteiten. Je hebt een echt mens dat je kunt bellen of mailen. We zijn je partner, niet alleen je auditor.
 - **Retest na verbetering** — Verbeteringen doorgevoerd? We controleren of alles goed is opgelost.
+- **Borging** — Toegankelijkheid is geen eenmalig project. We trainen je redactie en developers, helpen controles inrichten voor publicatie en monitoren of het niveau op peil blijft. Zodat je niet elk jaar opnieuw hoeft te beginnen.
 
 {{< /offerte-section >}}
 
