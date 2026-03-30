@@ -48,7 +48,7 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 {{< /section-full >}}
 
-{{< section-split title="De wetgeving is helder" >}}
+{{< section-split title="De wetgeving is helder" bg="light" >}}
 
 - **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (Wdo) — WCAG 2.1 is al verplicht
 - **Particuliere onderwijsinstellingen** vallen onder de European Accessibility Act (EAA) als ze digitale diensten aanbieden
