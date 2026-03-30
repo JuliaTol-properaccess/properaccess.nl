@@ -3353,6 +3353,18 @@ html.dark .tool-verklaring__review-value {
   .tool-verklaring__btn { width: 100%; text-align: center; }
 }
 
+/* WDO status badge (A-D) in output */
+.tool-verklaring__status-badge {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.15em 0.55em;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
 /* ==================================================
    TOOL: gedeelde container (vervangt .container op tool-pagina's
    om Tailwind's !important max-width te omzeilen)
