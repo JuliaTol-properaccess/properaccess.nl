@@ -10,6 +10,7 @@ tags:
   - "afbeeldingen"
   - "ecommerce"
 description: "Knop zonder naam — Afbeeldingen in webshops (post 4/8)"
+image: "/images/blog/serie-afbeeldingen-webshops/knop-zonder-naam.png"
 keywords:
   - digitale toegankelijkheid
   - WCAG
