@@ -31,29 +31,17 @@
 
         if (!consent) {
           cookieBox.classList.remove('cookie-box-hide');
-        } else if (consent === 'accepted') {
-          loadDealfront();
         }
 
         acceptBtn.onclick = function () {
           Cookies.set('cookie-consent', 'accepted', { expires: {{ .expire_days }} });
           cookieBox.classList.add('cookie-box-hide');
-          loadDealfront();
         };
 
         rejectBtn.onclick = function () {
           Cookies.set('cookie-consent', 'rejected', { expires: {{ .expire_days }} });
           cookieBox.classList.add('cookie-box-hide');
         };
-
-        function loadDealfront() {
-          if (window._dfLoaded) return;
-          window._dfLoaded = true;
-          var s = document.createElement('script');
-          s.src = 'https://sc.lfeeder.com/lftracker_v1_p1e024BoNVvaGB6d.js';
-          s.async = true;
-          document.body.appendChild(s);
-        }
       })();
     </script>
 
