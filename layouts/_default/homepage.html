@@ -475,7 +475,8 @@
     <div class="hp-linkedin__grid">
       {{ $posts := where site.RegularPages "Section" "blog" }}
       {{ $wcag := where $posts ".Params.categories" "intersect" (slice "wcag-uitgelegd") }}
-      {{ $recent := first 3 ($wcag.ByDate.Reverse) }}
+      {{ $withImage := where $wcag ".Params.image" "ne" nil }}
+      {{ $recent := first 3 ($withImage.ByDate.Reverse) }}
       {{ range $recent }}
         <a href="{{ .RelPermalink }}" class="hp-linkedin__card">
           {{ with .Params.image }}
