@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202603_soesterkwartier">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van website soesterkwartier.nu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+</head>
+<body class="open-sans-pa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
+<script src="/rapporten/_assets/main.js"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-alle-paginas">01 Alle pagina&#39;s</a></li><li><a href="#02-home">02 Home</a></li><li><a href="#03-contact">03 Contact</a></li><li><a href="#04-zoekresultaten">04 Zoekresultaten</a></li><li><a href="#05-wijkperspectief">05 Wijkperspectief</a></li><li><a href="#06-projecten">06 Projecten</a></li><li><a href="#07-nieuws">07 Nieuws</a></li><li><a href="#08-op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier">08 Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier</a></li><li><a href="#09-kernwaarden">09 Kernwaarden</a></li><li><a href="#10-winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg">10 Winkelstraatmanager Bart: iedereen is welkom aan de Noordewierweg</a></li><li><a href="#11-soesterpark">11 Soesterpark</a></li><li><a href="#12-culturele-verbindingen-in-het-soesterkwartier">12 Culturele verbindingen in het Soesterkwartier</a></li><li><a href="#13-kijk-hier-de-online-uitzending-van-13-mei">13 Kijk hier de online uitzending van 13 mei</a></li><li><a href="#14-vernieuwing-basisscholen-soesterkwartier">14 Vernieuwing basisscholen Soesterkwartier</a></li><li><a href="#15-pdf-08a-bijlage-wijkperspectief-soesterkwartier">15 PDF: 08a Bijlage Wijkperspectief Soesterkwartier</a></li><li><a href="#16-pdf-uitvoeringsagenda-soesterkwartier">16 PDF: Uitvoeringsagenda Soesterkwartier</a></li><li><a href="#resultaten">Resultaten</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van website soesterkwartier.nu</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de website soesterkwartier.nu onderzocht op digitale toegankelijkheid. Het onderzoek is uitgevoerd tussen 9 en 13 maart 2026. In dit onderzoek zijn 80 knelpunten gevonden. De drie belangrijkste problemen zijn:</p>
+<ol>
+<li>De koppenstructuur is op veel pagina's niet correct: teksten zijn niet als kop gemarkeerd, of er worden strong-elementen gebruikt in plaats van kop-elementen, waardoor de informatiestructuur niet klopt.</li>
+<li>Afbeeldingen en links missen tekstalternatieven of hebben onjuiste alt-teksten, waardoor ze niet toegankelijk zijn voor bezoekers die schermlezers gebruiken.</li>
+<li>De zoekfunctie in de header is niet toegankelijk: suggesties zijn niet bereikbaar met het toetsenbord, de ARIA-rollen ontbreken en statusberichten worden niet voorgelezen door schermlezers.</li>
+</ol>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        <img src="images/opdrachtgever.png" alt="Logo van gemeente Amersfoort">
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="55"
+           data-perceivable="20"
+           data-operable="20"
+           data-understandable="13"
+           data-robust="2">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">55</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="55"
+             data-perceivable="20"
+             data-operable="20"
+             data-understandable="13"
+             data-robust="2">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 13</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 2</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>gemeente Amersfoort</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>13 maart 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle pagina&#39;s op de website soesterkwartier.nu</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website</li>
+              
+              <li>De van derden afkomstige inhoud (wettelijke uitzondering voor de overheid)</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Mozilla Firefox, versie 142</li>
+              
+              <li>Google Chrome, versie 142</li>
+              
+              <li>Apple Safari, versie 18</li>
+              
+              <li>NVDA schermlezer in combinatie met Firefox</li>
+              
+              <li>VoiceOver schermlezer in combinatie met Safari</li>
+              
+              <li>Andere gangbare browsers en hulpapparatuur</li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>HTML</li>
+              
+              <li>CSS</li>
+              
+              <li>JavaScript</li>
+              
+              <li>DOM</li>
+              
+              <li>SVG</li>
+              
+              <li>WAI-ARIA</li>
+              
+              <li>PDF</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
+          
+          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
+          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
+          
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-alle-paginas">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-alle-paginas">01 Alle pagina&#39;s <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: Alle pagina's op de website <a href="https://soesterkwartier.nu">https://soesterkwartier.nu</a></p>
+<div class="issue">
+<h3>#1 - Zoekresultaten in zoekbalk niet gegroepeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De zoekbalk bovenaan de website geeft een lijst met suggesties weer, die visueel gegroepeerd zijn. Deze groepering is echter niet aanwezig in de HTML-structuur. Als het voor een ziende bezoeker duidelijk is dat een groep links of paginering bij elkaar hoort, dan moet die structuur ook in de HTML-code aanwezig zijn. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Neem de elementen op in een ul- of ol-element.</p>
+</div>
+<div class="issue">
+<h3>#2 - Link alleen te herkennen aan kleur</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>Wanneer een bezoeker de website voor het eerst bezoekt, verschijnt er een cookiebanner. De banner bevat tekst met een link naar &quot;Privacy regels&quot;. Het enige verschil tussen de link en de omliggende tekst is de kleur. Deze link is nu dus alleen te herkennen aan een kleurverschil met de gewone tekst. Dit kan een probleem zijn voor kleurenblinde of slechtziende bezoekers. Zij kunnen de kleuren mogelijk niet onderscheiden, en zien dan niet dat er een link in de tekst staat. Hetzelfde probleem doet zich voor in de voettekst van de website met de link &quot;Ontwerpgroep Lale&quot;.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat links in de tekst op zijn minst op één andere manier te herkennen zijn, bijvoorbeeld door ze onderstreept te maken, of door een kader toe te voegen.</p>
+</div>
+<div class="issue">
+<h3>#3 - Onvoldoende contrast in cookiebanner en voettekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Wanneer een bezoeker de website voor het eerst bezoekt, verschijnt er een cookiebanner. Er staat grijze tekst (#8C8989) met als begin &quot;Onze website...&quot; op een donkergrijze achtergrond (#363839). De kleurcontrastverhouding is te laag: 3,4:1. Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Een soortgelijk probleem met onvoldoende kleurcontrast voor grijze tekst komt voor in de voettekst van de website.</p>
+<h4>Oplossing:</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat de contrastverhouding minimaal 4,5:1 is.</p>
+</div>
+<div class="issue">
+<h3>#4 - Onvoldoende contrast in zoekbalk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>In de zoekbalk van de header van de website, wanneer deze is uitgevouwen, hebben de placeholdertekst en de zoekopdracht onvoldoende kleurcontrast ten opzichte van de achtergrond. De grijze (#9EA0A4) tekst op de witte achtergrond heeft een contrastverhouding van 2,6:1. Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Pas de tekstkleur aan zodat de contrastverhouding minimaal 4,5:1 is.</p>
+</div>
+<div class="issue">
+<h3>#5 - Onvoldoende contrast zoekpictogram en hamburgermenu</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>In de zoekbalk van de websiteheader heeft het zoekpictogram, wanneer de zoekbalk is uitgevouwen, onvoldoende kleurcontrast ten opzichte van de achtergrond. Het grijze pictogram (#9EA0A4) op de witte achtergrond heeft een contrastverhouding van 2,6:1. Zorg dat het contrast van iconen en andere grafische elementen minimaal 3,0:1 is. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>. Een vergelijkbaar probleem doet zich voor bij het hamburgermenu-icoon (het icoon met drie lijnen) dat in de header wordt weergegeven wanneer de website op een klein scherm wordt bekeken.</p>
+<h4>Oplossing:</h4>
+<p>Pas de kleur van het zoekpictogram en het hamburgermenu-icoon aan zodat de contrastverhouding minimaal 3,0:1 is.</p>
+</div>
+<div class="issue">
+<h3>#6 - Zoeksuggesties niet bereikbaar met toetsenbord</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>In de header van de website geeft de zoekbalk suggesties weer in een vervolgkeuzelijst terwijl de bezoeker typt. Deze suggesties fungeren als links, maar zijn niet toegankelijk via het toetsenbord. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat alle interactieve elementen, inclusief de zoeksuggesties, met het toetsenbord te bedienen zijn.</p>
+</div>
+<div class="issue">
+<h3>#7 - HTML5-validatiebericht in zoekbalk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.2.1</span>
+	<span class="type"><b>EN</b>: 9.2.2.1</span>
+</div>
+<p>In de header van de website bevindt zich een zoekbalk. Wanneer de zoekopdracht wordt verzonden met een lege zoekbalk, verschijnt er een HTML5-validatiebericht. HTML5-validatieberichten worden niet consistent ondersteund door alle browsers en schermlezers. Browsers geven deze berichten op verschillende manieren weer en er is geen garantie voor de zichtbaarheid of duur ervan. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Implementeer aangepaste foutmeldingen voor deze invoervelden om consistente en toegankelijke foutmeldingen te garanderen. Controleer ook of er andere formulieren op de site zijn die uitsluitend op HTML5-validatie vertrouwen en pas dezelfde oplossing toe.</p>
+</div>
+<div class="issue">
+<h3>#8 - Cookiebanner krijgt niet als eerste de toetsenbordfocus</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>De eerste keer dat een bezoeker de website bezoekt, verschijnt er een cookiebanner. Deze banner krijgt echter niet als eerste de toetsenbordfocus, terwijl dat wel zou moeten. De banner bedekt de inhoud van de pagina en als de toetsenbordfocus niet eerst daarheen gaat, kunnen bezoekers die alleen met het toetsenbord navigeren het bericht niet sluiten. Om deze banner te sluiten, moet de bezoeker met de tab-toets helemaal naar de onderkant van de pagina gaan.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de focus als eerste naar de cookiebanner gaat.</p>
+</div>
+<div class="issue">
+<h3>#9 - Toetsenbordfocus niet zichtbaar op zoekknop</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.7</span>
+	<span class="type"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>De zoekbalk in het bovenste menu heeft een probleem met de toetsenbordfocus: de toetsenbordfocus is niet zichtbaar op de zoekknop wanneer de zoekbalk is uitgevouwen. Interactieve elementen die toetsenbordfocus krijgen, moeten altijd een focusindicator hebben. Dat is een visueel kenmerk zoals een rand of onderstreping die aangeeft dat het element de toetsenbordfocus heeft. Als dat niet zo is, weet een bezoeker niet wanneer hij op Enter moet drukken om de knop of link te activeren. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een zichtbare focusindicator toe aan de zoekknop.</p>
+</div>
+<div class="issue">
+<h3>#10 - Cookiebanner verbergt focusindicator</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.11</span>
+	<span class="type"><b>EN</b>: 9.2.4.11</span>
+</div>
+<p>Wanneer de website wordt verkleind naar een lagere resolutie, verbergt de cookiebanner een deel van de pagina-inhoud. Hoewel interactieve elementen zoals de link in de voettekst nog steeds de toetsenbordfocus krijgen, wordt de focusindicator verborgen achter de cookiebanner. Hierdoor kunnen bezoekers die met het toetsenbord navigeren niet zien waar de toetsenbordfocus zich bevindt.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de sticky header of footer geen interactieve elementen of hun focusindicatoren bedekt. Pas hiervoor bijvoorbeeld de z-index aan, herpositioneer elementen of verklein de header/footer dynamisch op kleinere schermen.</p>
+</div>
+<div class="issue">
+<h3>#11 - Logo heeft onjuiste toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 2.5.3</span>
+	<span class="type"><b>EN</b>: 9.2.5.3</span>
+</div>
+<p>Bovenaan de pagina <a href="https://soesterkwartier.nu/">https://soesterkwartier.nu/</a> staat het logo met de tekst: &quot;Perspectief Soesterkwartier&quot;. De toegankelijke naam van deze link is &quot;Wijkperspectief Soesterkwartier Logo&quot;. De toegankelijke naam van de link is dus niet hetzelfde als de zichtbare tekst in het logo. Daardoor werkt de link niet goed als deze met een stemgestuurd systeem wordt geactiveerd.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de tekst die in het logo zichtbaar is voorkomt in de toegankelijke naam, het liefst vooraan.</p>
+</div>
+<div class="issue">
+<h3>#12 - Engelstalig bericht in zoekbalk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.2</span>
+	<span class="type"><b>EN</b>: 9.3.1.2</span>
+</div>
+<p>In de header van de website geeft de zoekbalk feedback dat er geen items zijn gevonden. Het bericht luidt: &quot;No search results match your query. Please try again&quot;. Deze zin is in het Engels zonder taalcode. Deze tekst zal worden uitgesproken volgens de regels van de primaire taal die is ingesteld in het lang-attribuut van de HTML-pagina, in dit geval &quot;nl&quot;. Dit kan bezoekers van ondersteunende technologieën in verwarring brengen. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Vertaal deze tekst naar het Nederlands.</p>
+</div>
+<div class="issue">
+<h3>#13 - Ontoegankelijke foutmelding in zoekbalk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.3.1</span>
+	<span class="type"><b>EN</b>: 9.3.3.1</span>
+</div>
+<p>In de header van de website bevindt zich een zoekbalk. Wanneer de zoekopdracht wordt verzonden met een lege zoekbalk, verschijnt er een HTML5-validatiebericht. Deze foutmeldingen worden niet door alle browsers en schermlezers even goed ondersteund. Elke browser toont de meldingen anders, en niet altijd op een toegankelijke manier: de melding is soms kortaf en onvolledig. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg altijd zelf foutmeldingen toe aan het formulier. Controleer of er nog meer formulieren zijn die dit probleem hebben.</p>
+</div>
+<div class="issue">
+<h3>#14 - Zoekbalk mist ARIA-combobox-rol</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>De zoekbalk bovenaan de website geeft suggesties in een vervolgkeuzelijst terwijl de bezoeker typt, en functioneert als een combobox. De benodigde ARIA-rol ontbreekt echter. Er is ook een aria-expanded-attribuut nodig om de toestand van de verborgen content aan te geven (zichtbaar of niet). Er zijn meer attributen die nodig zijn om dit element toegankelijk te maken. Zie <a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/">https://www.w3.org/WAI/ARIA/apg/patterns/combobox/</a>. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg <code>role=&quot;combobox&quot;</code> aan het invoerveld toe, samen met de benodigde ARIA-attributen zoals aria-expanded.</p>
+</div>
+<div class="issue">
+<h3>#15 - Laadanimatie zoekbalk niet toegankelijk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.3</span>
+	<span class="type"><b>EN</b>: 9.4.1.3</span>
+</div>
+<p>In de header van de website bevindt zich een zoekbalk. Wanneer de bezoeker iets in de zoekbalk typt, verschijnt een laadanimatie. Deze animatie is een statusmelding, maar is nu niet toegankelijk voor blinde bezoekers. Dit soort berichten moet de juiste rol krijgen, zodat schermlezers de boodschap kunnen doorgeven aan een blinde bezoeker zodra het icoon verschijnt. Het probleem doet zich ook voor op de pagina <a href="https://soesterkwartier.nu/nieuws/">https://soesterkwartier.nu/nieuws/</a>, waar het klikken op de knop &quot;Meer Berichten Laden&quot; een wachttijdanimatie activeert.</p>
+<h4>Oplossing:</h4>
+<p>Voeg bijvoorbeeld <code>aria-live=&quot;polite&quot;</code> toe aan het icoon. Meer informatie over ARIA is te vinden op de pagina <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22</a>.</p>
+</div>
+<div class="issue">
+<h3>#16 - Zoekbalk &quot;geen resultaten&quot; wordt niet voorgelezen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.3</span>
+	<span class="type"><b>EN</b>: 9.4.1.3</span>
+</div>
+<p>In de header van de website geeft de zoekbalk feedback dat er geen items zijn gevonden. Dit is een statusbericht, maar wordt niet als zodanig voorgelezen. Dat zou wel moeten gebeuren. Statusberichten moeten automatisch voorgelezen worden door schermlezers zodra ze verschijnen of veranderen, maar de code die dit mogelijk maakt is nog niet toegevoegd. Hetzelfde probleem doet zich voor bij de zoekbalken op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg <code>role=&quot;status&quot;</code> aan de melding toe.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-home">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-home">02 Home <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/">https://soesterkwartier.nu/</a></p>
+<div class="issue">
+<h3>#17 - Inconsistente alt-teksten bij nieuwsartikelen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder het kopje &quot;Projecten&quot; staan verschillende nieuwsartikelen met afbeeldingen. Sommige daarvan hebben zinvolle tekstalternatieven, andere hebben lege alt-attributen. Omwille van de consistentie kunnen de alt-teksten voor de nieuwsartikelen beter verwijderd worden, omdat de afbeeldingen in dit overzicht puur decoratief zijn. Een decoratieve afbeelding geeft geen extra informatie en moet daarom verborgen worden voor schermlezers. Dit kan op verschillende manieren. Gebruik voor afbeeldingen in een img-element een leeg alt-attribuut (alt=&quot;&quot;).</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de alt-teksten van de decoratieve afbeeldingen in het artikeloverzicht en gebruik een leeg alt-attribuut (alt=&quot;&quot;).</p>
+</div>
+<div class="issue">
+<h3>#18 - Nietszeggende alt-teksten bij decoratieve afbeeldingen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder de kop &quot;Wijkperspectief in uitvoering&quot; staan decoratieve afbeeldingen met nietszeggende tekstalternatieven. Het tekstalternatief van de afbeelding naast &quot;Aanmelden Nieuwsbrief&quot; is bijvoorbeeld &quot;nieuwsbrief@3x-8&quot;. Een decoratieve afbeelding biedt geen aanvullende informatie en moet daarom worden verborgen voor schermlezers. Dit kan op verschillende manieren worden gedaan. Voor decoratieve afbeeldingen in een img-element moet het alt- en title-attribuut leeg worden gelaten. Hetzelfde probleem doet zich voor bij de afbeeldingen in de zoekresultaten in de zoekbalk bovenaan de website. Daar staat bijvoorbeeld een afbeelding met het tekstalternatief &quot;Post Thumb2847&quot;.</p>
+<h4>Oplossing:</h4>
+<p>Laat het alt- en title-attribuut leeg voor decoratieve afbeeldingen.</p>
+</div>
+<div class="issue">
+<h3>#19 - Actieve pagina in menu niet gemarkeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De actieve link (naar de huidige pagina) in het hoofdmenu heeft visueel een andere weergave, maar dit onderscheid is niet aanwezig in de code. Bezoekers die de pagina laten voorlezen, hebben daardoor geen toegang tot deze informatie. Zorg daarom voor een andere manier om deze informatie over te dragen, zodat ook slechtziende of blinde bezoekers dit kunnen begrijpen. Dit probleem komt ook op andere pagina's voor, bijvoorbeeld op pagina <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg bijvoorbeeld <code>aria-current=&quot;true&quot;</code> toe aan de actieve link. Andere opties zijn een h1-kop met dezelfde tekst als het menu-item of het gebruik van een broodkruimelpad.</p>
+</div>
+<div class="issue">
+<h3>#20 - Teksten niet gemarkeerd als kopteksten</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De volgende teksten zijn niet gemarkeerd als kopteksten: &quot;Wijkperspectief in uitvoering&quot;, &quot;Nieuws&quot;, &quot;Agenda&quot; en andere. Bezoekers die hulpsoftware gebruiken hebben niets aan een (tussen)kop die er wel uitziet als kop, maar in de code niet als kop is gemarkeerd. Via de koppen op een pagina kunnen bezoekers van hulpsoftware de inhoud scannen of snel naar een bepaalde sectie navigeren. Maar dat kan alleen als de kop ook echt in de code staat. Als koppen alleen visueel als kop zijn vormgegeven (bijvoorbeeld vetgedrukt), ontstaat bovendien nog een ander probleem: de structuur van de informatie in de code wijkt dan af van de visuele structuur. Hetzelfde probleem doet zich voor bij de kopjes op de pagina <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a>, zie &quot;Wijkperspectief&quot;, &quot;Dit willen we bereiken&quot;.</p>
+<h4>Oplossing:</h4>
+<p>Markeer koppen altijd met het juiste HTML-element, op het juiste kopniveau: h1, h2, h3, h4, h5 of h6. Meestal is dit niveau instelbaar via de content-editor in het CMS.</p>
+</div>
+<div class="issue">
+<h3>#21 - H3-element misbruikt voor styling</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De tekst &quot;Hier komen de verschillende projecten…&quot; is geen koptekst, maar is ten onrechte gemarkeerd met een h3-element om de lettergrootte te vergroten. Het kop-element (h) is niet betekenisvol gebruikt. De tekst die als kop is gemarkeerd, is geen echte kop. Er staat namelijk geen inhoud onder. Maar door het h-element krijgt de tekst wel deze betekenis. Kop-elementen zijn bedoeld om structuur te geven aan de informatie op een pagina. Mensen die schermlezers gebruiken, vertrouwen op de koppen om door de pagina te navigeren en de opbouw te begrijpen.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder het h-element en gebruik een ander element, zoals een p-element. Zorg dat de tekst die je in een kop-element zet ook echt de functie van kop of tussenkop heeft.</p>
+</div>
+<div class="issue">
+<h3>#22 - Strong-element gebruikt voor koppen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De volgende teksten zijn onjuist gemarkeerd met vetgedrukte tekst in plaats van de juiste koptekstelementen: &quot;Wijkspreekuur met wijkwethouder Jeroen Bulthuis&quot;, &quot;Uitvoeringsnetwerk&quot; en andere. Het element strong is niet bedoeld om koppen mee te markeren. Dit moet altijd gedaan worden met een kop-element, zoals h2. Koppen zijn bedoeld om een tekst mee te structureren. Alleen als deze teksten als kop worden gemarkeerd met een kop-element, begrijpt hulpsoftware die betekenis. Het strong-element is wel geschikt om nadruk te geven aan enkele woorden of een zinsdeel. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/project/soesterpark/">https://soesterkwartier.nu/project/soesterpark/</a>, zie &quot;Waar gaat dit project over?&quot;, &quot;Waar staan we nu?&quot; en &quot;Wat is de planning?&quot;, &quot;Voortgang project&quot; en andere kopjes.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik kop-elementen (h2, h3, etc.) in plaats van strong-elementen voor koppen.</p>
+</div>
+<div class="issue">
+<h3>#23 - Meerdere h1-koppen op de pagina</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Onder de kop &quot;Projecten&quot; staat een lijst met artikelen. Elk artikel heeft een h1-kop. Het h1-element is bedoeld voor de hoofdkop van een pagina. Door deze tag voor elk artikel te gebruiken, wordt de logische hiërarchie van de pagina verstoord, waardoor het voor bezoekers van schermlezers moeilijk wordt om effectief door de inhoud te navigeren. Hetzelfde probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg voor een juiste hiërarchie van koppen door één h1 te gebruiken voor de hoofdtitel van de pagina en h2 tot en met h6 voor subkoppen.</p>
+</div>
+<div class="issue">
+<h3>#24 - Strong-element gebruikt voor styling</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Naast de kop &quot;Wijkperspectief in uitvoering&quot; wordt het strong-element ten onrechte gebruikt voor stylingdoeleinden in de linkteksten &quot;Aanmelden Nieuwsbrief&quot; en &quot;Neem contact met ons op&quot;. Het strong-element heeft een semantische waarde: het geeft een bepaalde betekenis aan de tekst die erin staat. Dit element geeft aan dat de tekst extra nadruk moet krijgen. Om die reden mag dit element niet gebruikt worden om alleen een visueel effect te bereiken (vetgedrukte tekst). Hetzelfde probleem doet zich voor bij de tekst onder de kop &quot;Projecten&quot; op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a> en andere.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik CSS voor visuele opmaak in plaats van het strong-element.</p>
+</div>
+<div class="issue">
+<h3>#25 - Actieve tabblad niet onderscheiden in code</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Onder het kopje &quot;Projecten&quot; staan tabbladen met verborgen inhoud die zichtbaar wordt wanneer een bezoeker op het tabblad klikt. Het actieve tabblad onderscheidt zich visueel van de andere tabbladen, maar dit onderscheid is niet aanwezig in de HTML-code. Hierdoor kan een schermlezer deze informatie niet doorgeven aan de bezoeker. Hetzelfde probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een verborgen tekst aan de link toe, of gebruik het aria-current-attribuut.</p>
+</div>
+<div class="issue">
+<h3>#26 - Tekst valt buiten beeld bij 320px</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.10</span>
+</div>
+<p>Als de website wordt bekeken bij een breedte van 320 pixels, valt de tekst &quot;Wijkperspectief&quot; deels buiten beeld. Dit komt vaker voor op de pagina, bijvoorbeeld ook het woord &quot;Soesterkwartier&quot;. Dit probleem komt vaker voor op andere pagina's, bijvoorbeeld op pagina <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a> bij het woord &quot;Wijkperspectief&quot; en op pagina <a href="https://soesterkwartier.nu/wijkperspectief/kernwaarden/">https://soesterkwartier.nu/wijkperspectief/kernwaarden/</a> bij het woord &quot;Kernwaarden&quot;. Op pagina <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a> vallen ook verschillende woorden weg. Zie verder ook pagina <a href="https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/">https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/</a> en <a href="https://soesterkwartier.nu/vernieuwing-scholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-scholen-soesterkwartier-blijf-op-de-hoogte/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat alle tekst goed zichtbaar blijft bij een breedte van 320 pixels. Gebruik CSS om lange woorden af te breken, bijvoorbeeld met <code>word-break: break-word</code> of <code>overflow-wrap: break-word</code>.</p>
+</div>
+<div class="issue">
+<h3>#27 - Tekst &quot;Lees meer&quot; wordt onleesbaar bij aangepaste tekstafstand</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.12</span>
+	<span class="type"><b>EN</b>: 9.1.4.12</span>
+</div>
+<p>De tekst van de links &quot;Lees meer&quot; onder de kop &quot;Nieuws&quot; wordt gedeeltelijk onzichtbaar en onleesbaar wanneer bezoekers de tekstafstand toepassen zoals beschreven in dit succescriterium. Sommige bezoekers passen de weergave van de tekst aan, zodat zij deze beter kunnen lezen. Denk aan het vergroten van de afstand tussen regels, letters of woorden. Het gaat bijvoorbeeld om mensen met dyslexie. Als een bezoeker dit doet op de manier die in het succescriterium is beschreven, moet alles goed blijven werken. Bovendien moet de tekst leesbaar blijven. Hetzelfde probleem doet zich voor op de pagina's <a href="https://soesterkwartier.nu/nieuws/">https://soesterkwartier.nu/nieuws/</a> en <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a>.</p>
+<h4>Oplossing:</h4>
+<p>Maak de hoogte en breedte van de containers van de tekst responsief, zodat de tekst leesbaar blijft bij aangepaste tekstafstand.</p>
+</div>
+<div class="issue">
+<h3>#28 - Vage linkteksten &quot;MEER INFORMATIE&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Meerdere links bevatten de vage tekst &quot;MEER INFORMATIE&quot;. Deze tekst beschrijft de bestemming van de link niet adequaat, wat tot onduidelijkheid leidt, vooral voor bezoekers met cognitieve beperkingen of bezoekers die afhankelijk zijn van schermlezers. Linkteksten die meerdere keren op een pagina voorkomen of nietszeggend zijn (zoals &quot;lees meer&quot;), geven de bezoeker geen duidelijke aanwijzingen over hun bestemming.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat duidelijk is waar een link naartoe leidt, bijvoorbeeld door een tekst als &quot;lees meer&quot; aan te vullen met de paginatitel. Als visueel duidelijk is bij welk onderdeel de link hoort, kan deze aanvullende tekst visueel verborgen worden.</p>
+</div>
+<div class="issue">
+<h3>#29 - Afbeeldingslinks met niet-beschrijvend aria-label</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Onder het kopje &quot;Projecten&quot;, in het artikel &quot;Betrekken van Soesterkwartierders&quot;, is de eerste link een gekoppelde afbeelding met een aria-label-attribuut &quot;groepsfoto G1000Soesterkwartier&quot;. Dit aria-label beschrijft niet de functie of bestemming van de link. Het artikel bevat ook een link &quot;Meer informatie&quot;, die naar dezelfde inhoud leidt, waardoor de afbeeldingslink overbodig is. Hetzelfde geldt voor andere artikelen onder de kop &quot;Projecten&quot;. Dit probleem komt ook voor op pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>, op pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a> en op pagina <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de overbodige afbeeldingslinks of zorg dat het aria-label een beschrijvende naam geeft die het doel en de bestemming van de link weergeeft. Overweeg om het hele artikel tot één enkele link te maken.</p>
+</div>
+<div class="issue">
+<h3>#30 - Link &quot;Ga naar de bovenkant&quot; heeft geen zichtbare focus</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.7</span>
+	<span class="type"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>De link met de visueel verborgen tekst &quot;Ga naar de bovenkant&quot; heeft geen zichtbare toetsenbordfocus. De toetsenbordfocus moet altijd zichtbaar zijn op interactieve elementen zoals links, knoppen en invoervelden die met het toetsenbord focus kunnen krijgen. Bezoekers die met het toetsenbord navigeren moeten goed kunnen zien op welke plek van de pagina ze zijn. Anders weten ze niet op welk moment ze op Enter moeten drukken om een knop of link te bedienen. Op pagina <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a> staan afbeeldingen met tekst die ook links zijn. Deze hebben ook geen zichtbare focusindicator.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een zichtbare focusindicator toe aan deze link.</p>
+</div>
+<div class="issue">
+<h3>#31 - Afbeeldingslinks hebben geen zichtbare focusindicator</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.7</span>
+	<span class="type"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>Onder het kopje &quot;Projecten&quot;, in de artikelen met afbeeldingen, bijvoorbeeld onder het kopje &quot;Winkelgebied versterken en aantrekkelijk maken&quot;, is de eerste link een afbeelding die ook als link dient. De toetsenbordfocus is niet zichtbaar als deze op de afbeelding staat. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a> in de artikelen in de zoekresultaten en op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een zichtbare focusindicator toe. Neem ook het advies uit SC 2.4.4 over en verwijder deze link of combineer deze tot één link naar het betreffende artikel.</p>
+</div>
+<div class="issue">
+<h3>#32 - Zichtbare linktekst &quot;Lees Meer&quot; ontbreekt in toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.5.3</span>
+	<span class="type"><b>EN</b>: 9.2.5.3</span>
+</div>
+<p>Onder het kopje &quot;Nieuws&quot; maakt de zichtbare linktekst &quot;Lees Meer&quot; geen deel uit van de toegankelijke naam van de link. Deze wordt in plaats daarvan overschreven via een aria-label. Momenteel zijn de toegankelijke namen van deze links bijvoorbeeld &quot;More on Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier&quot;. Als de zichtbare tekst van een link niet in de toegankelijke naam staat, kan de link niet met spraakbesturing worden bediend. Hetzelfde probleem doet zich voor op de pagina's <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a> en <a href="https://soesterkwartier.nu/nieuws/">https://soesterkwartier.nu/nieuws/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Herschrijf het aria-label zodat deze overeenkomt met en een uitbreiding is van de zichtbare tekst, bijvoorbeeld: &quot;Lees meer over Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier&quot;.</p>
+</div>
+<div class="issue">
+<h3>#33 - Aria-labels in het Engels</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.2</span>
+	<span class="type"><b>EN</b>: 9.3.1.2</span>
+</div>
+<p>De pagina bevat verschillende aria-label-attributen met tekst in het Engels. Zie bijvoorbeeld &quot;Main menu&quot; voor navigatie, &quot;Close search&quot; om de zoekopdracht te sluiten, &quot;Post filters&quot; onder de kop &quot;Projecten&quot;, enz. Deze labels worden voorgelezen door schermlezers, volgens de uitspraakregels van de primaire taal van de pagina (in dit geval Nederlands).</p>
+<h4>Oplossing:</h4>
+<p>Vertaal de teksten van de aria-labels naar het Nederlands.</p>
+</div>
+<div class="issue">
+<h3>#34 - Onjuist gebruik van role=&quot;menu&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder de kop &quot;Projecten&quot; staat een lijst met links met role=&quot;menu&quot;. Deze functie is bedoeld voor applicatie-achtige menu's, zoals de menu's Bestand, Bewerken en Weergave in een desktopapplicatie. Filters op een webpagina, die vaak bestaan uit een reeks selectievakjes, keuzerondjes of links, zijn geen widget zoals een applicatiemenu. Het toepassen van role=&quot;menu&quot; op de container en role=&quot;menuitem&quot; op de afzonderlijke besturingselementen geeft daarom een verkeerde voorstelling van hun functie. Hetzelfde probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik native HTML-elementen zoals selectievakjes, keuzerondjes of links, gegroepeerd met semantische opmaak om hun doel correct weer te geven.</p>
+</div>
+<div class="issue">
+<h3>#35 - Tabbladen missen aria-selected</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder het kopje &quot;Projecten&quot; staan tabbladen met secties met verborgen inhoud die zichtbaar worden wanneer een bezoeker op de tabknop klikt. Een blinde bezoeker weet niet welke sectie open is. Het actieve element heeft geen aria-selected-attribuut. Hetzelfde probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat het aria-selected-attribuut goed is ingesteld, zodat schermlezers kunnen doorgeven welk tabblad actief is.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-contact">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-contact">03 Contact <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/contact/">https://soesterkwartier.nu/contact/</a></p>
+<div class="issue">
+<h3>#36 - Pictogramlink zonder tekstalternatief</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder de kop &quot;Op de hoogte blijven&quot; staat een link &quot;Volg ons op Facebook&quot; met daarnaast een pictogram. Zowel het pictogram als de tekst fungeren als links naar dezelfde bestemming. Het pictogram functioneert als een link, maar het tekstalternatief ontbreekt, waardoor de link ontoegankelijk is. Deze situatie voldoet hiermee ook niet aan SC 2.4.4 en 4.1.2.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de overbodige afbeeldingslink. Overweeg om zowel het pictogram als de tekst tot één enkele link te maken met behulp van CSS-styling, zodat het hele gebied aanklikbaar wordt.</p>
+</div>
+<div class="issue">
+<h3>#37 - Dubbele link naar Facebook</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Onder de kop &quot;Op de hoogte blijven&quot; staat een link &quot;Volg ons op Facebook&quot; met een pictogram ernaast. Zowel het pictogram als de tekst fungeren als links naar dezelfde bestemming. Het pictogram functioneert als een link, maar het alt-attribuut is leeg (<code>alt=&quot;&quot;</code>), waardoor de afbeelding niet zichtbaar is voor schermlezers en het doel van de link onduidelijk is. Deze situatie voldoet ook niet aan SC 1.1.1 en 4.1.2.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de overbodige afbeeldingslink. Overweeg om zowel het pictogram als de tekst tot één enkele link te maken met behulp van CSS-styling, zodat het hele gebied aanklikbaar wordt.</p>
+</div>
+<div class="issue">
+<h3>#38 - Facebook-link zonder toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder het kopje &quot;Op de hoogte blijven&quot; staat een link &quot;Volg ons op Facebook&quot; met daarnaast een pictogram. Zowel het pictogram als de tekst fungeren als links naar dezelfde bestemming. De eerste link heeft geen toegankelijke naam. Hierdoor begrijpen bezoekers die een schermlezer gebruiken niet wat de bestemming of de functie is van de link. Deze situatie voldoet nu ook niet aan succescriteria 1.1.1 en 2.4.4.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de overbodige afbeeldingslink. Overweeg om zowel het pictogram als de tekst tot één enkele link te maken met behulp van CSS-styling, zodat het hele gebied aanklikbaar wordt.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-zoekresultaten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-zoekresultaten">04 Zoekresultaten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/?s=nieuws">https://soesterkwartier.nu/?s=nieuws</a></p>
+<div class="issue">
+<h3>#39 - Actief paginanummer niet gemarkeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De paginering onder de zoekresultaten geeft visueel het huidige paginanummer aan, maar dit onderscheid is niet aanwezig in de HTML-code. Hierdoor kan een schermlezer deze informatie niet doorgeven aan de bezoeker.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een verborgen tekst aan de link toe, of gebruik het aria-current-attribuut.</p>
+</div>
+<div class="issue">
+<h3>#40 - Pagineringlinks niet gegroepeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>De pagineringlinks onder de zoekresultaten zijn visueel gegroepeerd, maar deze groepering is niet aanwezig in de HTML-structuur. Wanneer elementen visueel gegroepeerd zijn, moet deze relatie ook in de HTML aanwezig zijn om ervoor te zorgen dat bezoekers met ondersteunende technologieën, zoals schermlezers, de groepering begrijpen. Als het voor een ziende bezoeker duidelijk is dat een groep links, zoals de paginering, bij elkaar hoort, dan moet die structuur ook in de HTML-code aanwezig zijn.</p>
+<h4>Oplossing:</h4>
+<p>Neem de elementen op in een ul- of ol-element.</p>
+</div>
+<div class="issue">
+<h3>#41 - Paginalinks zonder context</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Er ontbreekt voldoende context bij de paginalinks. Terwijl ziende bezoekers begrijpen dat &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, enz. paginanummers zijn, is dit niet duidelijk voor bezoekers met slecht zicht of bezoekers van schermlezers.</p>
+<h4>Oplossing:</h4>
+<p>Vul de linkteksten aan met het (visueel verborgen) woord &quot;pagina&quot;.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-wijkperspectief">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-wijkperspectief">05 Wijkperspectief <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a></p>
+<div class="issue">
+<h3>#42 - Pijlpictogrammen submenu zonder alt-tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder de kop &quot;Wijkperspectief&quot; hebben sommige links pijlpictogrammen om submenu's aan te geven, maar deze pictogrammen hebben geen alternatieve tekst. Het pijltje is een afbeelding die informatie overdraagt (&quot;er is een submenu&quot;). Deze informatie moet ook beschikbaar zijn voor bezoekers die de afbeelding niet kunnen zien. Dat is op dit moment niet zo omdat alternatieve tekst ontbreekt.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een alternatieve tekst toe, of maak gebruik van het aria-expanded-attribuut om deze informatie op een niet-visuele manier over te brengen.</p>
+</div>
+<div class="issue">
+<h3>#43 - Afbeeldingslinks met niet-beschrijvend tekstalternatief</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder het kopje &quot;Dit willen we bereiken&quot; fungeren de afbeeldingen als een link, maar het tekstalternatief wordt overgenomen uit de toegankelijkheidsnaam van de links en is niet beschrijvend, bijvoorbeeld naam: &quot;resultaten-1@0.5x&quot;. Bovendien is er geen tekstalternatief voor de inhoud van de afbeeldingen. Hierdoor is het nu niet duidelijk wat er op de afbeeldingen te zien is en ook niet waar de link naartoe leidt. Dit is ook in strijd met WCAG-succescriteria 2.4.4 en 4.1.2. Een soortgelijk probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg voor alternatieve tekst bij afbeeldingen die de bestemming van de link duidelijk beschrijft. Op die manier weten bezoekers die de afbeeldingen niet kunnen zien ook waar de links naartoe leiden.</p>
+</div>
+<div class="issue">
+<h3>#44 - Dialoogvensters met alt=&quot;null&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Afbeeldingslinks onder de kop &quot;Dit willen we bereiken&quot; openen modale dialoogvensters. Elk venster bevat een afbeelding als img-element met alt=&quot;null&quot;. Deze tekst beschrijft de informatieve afbeelding onvoldoende. Wanneer een afbeelding informatie overbrengt, moet de alternatieve tekst die informatie volledig en betekenisvol beschrijven. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a> en op pagina <a href="https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een beschrijvende alternatieve tekst toe die de inhoud van de afbeelding volledig beschrijft.</p>
+</div>
+<div class="issue">
+<h3>#45 - Onvoldoende contrast in afbeeldingen met tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Onder de kop &quot;Dit willen we bereiken&quot; staan verschillende afbeeldingen met daarin tekst op een felgekleurde achtergrond. Bij het groene blok met de tekst &quot;Soesterpark&quot; heeft de witte tekst niet genoeg contrast met de felgroene (#8CB63C) achtergrond. Het contrast is 2,4:1. Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. De tekst &quot;Soesterpark&quot; valt onder grote tekst en moet daarom een contrast van 3,0:1 met de achtergrond hebben. Ook de tekst in het gele (#E3A51A) blok met de tekst &quot;Samen opgroeien&quot; heeft met 2,2:1 niet genoeg contrast. Dezelfde kleuren worden ook gebruikt op pagina <a href="https://soesterkwartier.nu/wijkperspectief/kernwaarden/">https://soesterkwartier.nu/wijkperspectief/kernwaarden/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat de contrastverhouding minimaal 4,5:1 is voor kleine tekst en 3,0:1 voor grote tekst.</p>
+</div>
+<div class="issue">
+<h3>#46 - Afbeeldingen met ingesloten tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.5</span>
+	<span class="type"><b>EN</b>: 9.1.4.5</span>
+</div>
+<p>Onder de kop &quot;Dit willen we bereiken&quot; staan afbeeldingen met ingesloten tekst. Als tekst als afbeelding wordt geplaatst, kunnen veel bezoekers er niets meer mee. Dit komt doordat ze de tekst in de afbeelding niet kunnen vergroten of aanpassen. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/wijkperspectief/kernwaarden/">https://soesterkwartier.nu/wijkperspectief/kernwaarden/</a> onder de kop &quot;Kernwaarden&quot; en <a href="https://soesterkwartier.nu/project/soesterpark/">https://soesterkwartier.nu/project/soesterpark/</a> onder de koppen &quot;Soesterpark: grote projecten voor jong en oud&quot; en &quot;Voortgang project&quot;.</p>
+<h4>Oplossing:</h4>
+<p>Plaats deze tekst als normale tekst op de pagina. Op die manier kunnen mensen de grootte, kleur of het lettertype aanpassen zodat het voor hen leesbaarder wordt.</p>
+</div>
+<div class="issue">
+<h3>#47 - Submenu niet te sluiten met Escape</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.13</span>
+	<span class="type"><b>EN</b>: 9.1.4.13</span>
+</div>
+<p>Onder het kopje &quot;Wijkperspectief&quot; bevat het menu items met submenu's. Wanneer een bezoeker de muis over deze items beweegt, verschijnen de submenu's. Deze submenu's overlappen de inhoud van de pagina. De bezoeker moet deze extra content makkelijk kunnen sluiten zonder de muis te gebruiken of de toetsenbordfocus te verplaatsen.</p>
+<h4>Oplossing:</h4>
+<p>Maak het mogelijk om de submenu's te sluiten door de Escape-toets in te drukken. Zo kan de bezoeker snel de extra informatie verbergen en doorgaan met de belangrijkste onderdelen van de pagina.</p>
+</div>
+<div class="issue">
+<h3>#48 - Dialoogvensters niet bedienbaar met toetsenbord</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>Afbeeldingslinks onder de kop &quot;Dit willen we bereiken&quot; openen modale dialoogvensters. In dit venster sluiten links met role=&quot;button&quot; het dialoogvenster of openen ze het in volledige grootte. Deze links zijn niet toegankelijk met het toetsenbord. In dit geval is een a-element zonder href-attribuut standaard niet focusbaar met het toetsenbord. De aanwezigheid van role=&quot;button&quot; vertelt ondersteunende technologieën alleen dat dit bedoeld is om als knop te fungeren, maar maakt het element niet focusbaar of bedienbaar via het toetsenbord. Hetzelfde probleem doet zich voor op de pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a> en op de pagina <a href="https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/">https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het element focusbaar en bedienbaar is met het toetsenbord, hetzij door gebruik te maken van het native button-element, hetzij door tabindex en event handlers toe te voegen.</p>
+</div>
+<div class="issue">
+<h3>#49 - Toetsenbordfocus kan dialoogvenster verlaten</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>Afbeeldingslinks onder de kop &quot;Dit willen we bereiken&quot; openen modale dialoogvensters. Momenteel kan de toetsenbordfocus het geopende dialoogvenster verlaten en naar de onderliggende pagina-inhoud gaan. Bij dit soort dialoogvensters moet de toetsenbordfocus goed worden ingesteld. Wanneer het venster actief is, moet de toetsenbordfocus binnen het venster blijven en mag deze niet op de onderliggende pagina terechtkomen. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a> en op de pagina <a href="https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/">https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/</a>, en andere pagina's.</p>
+<h4>Oplossing:</h4>
+<p>Houd de focus binnen het venster, totdat de bezoeker op de sluitknop heeft geklikt of op de ESC-toets heeft gedrukt. Het is ook mogelijk om het venster automatisch te sluiten zodra de focus eruit gaat.</p>
+</div>
+<div class="issue">
+<h3>#50 - Afbeeldingslinks met nietszeggende toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Onder het kopje &quot;Dit willen we bereiken&quot; hebben de links met afbeeldingen toegankelijkheidsnamen als &quot;resultaten-1@0.5x&quot;, die niet duidelijk beschrijven wat de links doen. Omdat het klikken op deze links een grotere versie van de afbeelding opent, zou het beter zijn om een meer beschrijvende toegankelijke naam te gebruiken.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik een meer beschrijvende toegankelijke naam, zoals &quot;Afbeelding resultaten 1 vergroten&quot;.</p>
+</div>
+<div class="issue">
+<h3>#51 - Submenu mist aria-expanded</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder het kopje &quot;Wijkperspectief&quot; hebben sommige links submenu's, maar een blinde bezoeker krijgt geen informatie of het submenu open of gesloten is. Als er een link is die een submenu kan tonen of verbergen, dan moet hulpsoftware de staat van dat submenu (zichtbaar of verborgen) kunnen bepalen.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik het aria-expanded-attribuut om de staat van het submenu aan te geven.</p>
+</div>
+<div class="issue">
+<h3>#52 - Dialoogvenster mist role=&quot;dialog&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Afbeeldingslinks onder de kop &quot;Dit willen we bereiken&quot; openen modale dialoogvensters. De schermlezer herkent dit venster niet als een dialoogvenster. Schermlezers kunnen hierdoor niet doorgeven dat het om een dialoogvenster gaat. Hetzelfde probleem doet zich voor op pagina <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a> en op de pagina <a href="https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/">https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/</a>, en andere pagina's.</p>
+<h4>Oplossing:</h4>
+<p>Voeg <code>role=&quot;dialog&quot;</code> aan het dialoogvenster toe.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-projecten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-projecten">06 Projecten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            
+<div class="issue">
+<p>Link naar pagina: <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a></p>
+<p>Geen bevindingen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="07-nieuws">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-nieuws">07 Nieuws <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/nieuws/">https://soesterkwartier.nu/nieuws/</a></p>
+<div class="issue">
+<h3>#53 - Focus verschuift naar voettekst bij laden nieuwe artikelen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>Op deze pagina staan artikelen. Wanneer een bezoeker op de knop &quot;MEER BERICHTEN LADEN&quot; klikt, worden er meer artikelen toegevoegd. De toetsenbordfocus verschuift niet naar het eerste nieuw toegevoegde artikel, maar naar de voettekst. Dit is niet de bedoeling.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de toetsenbordfocus bij het inladen van meer artikelen naar het eerste nieuwe artikel gaat.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier">08 Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/">https://soesterkwartier.nu/op-zondag-12-april-bruist-de-wijk-tijdens-dagje-soesterkwartier/</a></p>
+<div class="issue">
+<h3>#54 - Onvoldoende contrast socialmedia-iconen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Naast de tekst &quot;Deel Dit Verhaal, Kies Je Platform!&quot; hebben de social media-iconen een grijze kleur (#9E9FA3), wat resulteert in een contrastverhouding van 2,5:1 ten opzichte van de lichtgrijze achtergrond. De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te voldoen, omdat ze dan onder een uitzondering voor logo's vallen. Maar als de kleuren worden aangepast, dan moeten die wel voldoen aan de minimale contrasteisen van 3,0:1. Hetzelfde probleem doet zich voor op de pagina's <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a>, <a href="https://soesterkwartier.nu/vernieuwing-scholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-scholen-soesterkwartier-blijf-op-de-hoogte/</a>, <a href="https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/">https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Pas de kleur van de socialmedia-iconen aan zodat de contrastverhouding minimaal 3,0:1 is.</p>
+</div>
+<div class="issue">
+<h3>#55 - Links met lege alt-attributen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Afbeeldingen onder de kop &quot;Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier&quot; fungeren als links, maar hun alt-attributen zijn leeg (<code>alt=&quot;&quot;</code>), waardoor afbeeldingen niet zichtbaar zijn voor schermlezers. Daardoor heeft deze link geen inhoud en is het onduidelijk naar welke bestemming de link verwijst. Dit probleem is gerelateerd aan succescriterium 4.1.2, want de link heeft hierdoor ook geen toegankelijke naam.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een alt-tekst aan de afbeelding toe die het doel van de link beschrijft. Andere oplossingen zijn mogelijk.</p>
+</div>
+<div class="issue">
+<h3>#56 - Links zonder toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Er ontbreken toegankelijke namen bij links met afbeeldingen onder de kop &quot;Op zondag 12 april bruist de wijk tijdens Dagje Soesterkwartier&quot;. Hierdoor begrijpen bezoekers die een schermlezer gebruiken niet wat de bestemming of de functie is van de link.</p>
+<h4>Oplossing:</h4>
+<p>Geef deze link een toegankelijke naam die het doel van de link beschrijft.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-kernwaarden">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-kernwaarden">09 Kernwaarden <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/wijkperspectief/kernwaarden/">https://soesterkwartier.nu/wijkperspectief/kernwaarden/</a></p>
+<div class="issue">
+<h3>#57 - Informatieve afbeelding zonder tekstalternatief</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder de kop &quot;Kernwaarden&quot; staat een informatieve afbeelding met een leeg alt-attribuut. Afbeeldingen die informatie overdragen moeten een tekstalternatief hebben. Hierdoor kan een schermlezer de informatie uit de afbeelding overbrengen aan een blinde bezoeker. De alternatieve tekst mag dus niet leeg zijn.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een beschrijvende alternatieve tekst toe aan het alt-attribuut.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg">10 Winkelstraatmanager Bart: iedereen is welkom aan de Noordewierweg <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            
+<div class="issue">
+<p>Link naar pagina: <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a></p>
+<p>Geen bevindingen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="11-soesterpark">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-soesterpark">11 Soesterpark <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/project/soesterpark/">https://soesterkwartier.nu/project/soesterpark/</a></p>
+<div class="issue">
+<h3>#58 - Nietszeggende alt-tekst bij informatieve afbeelding</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder het kopje &quot;Soesterpark: grote projecten voor jong en oud&quot; staat een informatieve afbeelding met de alternatieve tekst &quot;soeserpark@2x-8&quot;. Deze tekst beschrijft de afbeelding onvoldoende. Zie ook de afbeelding onder het kopje &quot;Voortgang project&quot;. Afbeeldingen die informatie overdragen moeten een betekenisvolle alternatieve tekst hebben, waarin de belangrijke informatie uit de afbeelding wordt beschreven. Om herhaling te voorkomen mag deze alternatieve tekst niet gelijk zijn aan tekst die al op de pagina staat, bijvoorbeeld als onderschrift van de afbeelding.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een beschrijvende alternatieve tekst toe aan het alt-attribuut.</p>
+</div>
+<div class="issue">
+<h3>#59 - Onvoldoende contrast &quot;Project afgerond&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Onder het kopje &quot;Voortgang project&quot; staat een grijze (#8D8779) tekst &quot;Project afgerond&quot; op een gele (#E2A41B) achtergrond. De kleurcontrastverhouding is te laag: 1,6:1. Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn.</p>
+<h4>Oplossing:</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat de contrastverhouding minimaal 4,5:1 is.</p>
+</div>
+<div class="issue">
+<h3>#60 - Onvoldoende contrast &quot;Voortgang project&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>De witte tekst &quot;Voortgang project&quot; staat op een oranje achtergrond (#E3A51A). Het contrast is 2,2:1. Deze tekst valt onder grote tekst en moet daarom een contrast van ten minste 3,0:1 hebben.</p>
+<h4>Oplossing:</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat de contrastverhouding minimaal 3,0:1 is.</p>
+</div>
+<div class="issue">
+<h3>#61 - Afbeelding valt buiten beeld bij 320px</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.10</span>
+</div>
+<p>Bij een breedte van 320 pixels valt het woord &quot;Soesterpark&quot; buiten beeld. Daarnaast valt de afbeelding met de tekst &quot;Hoe ziet jouw buurt er straks uit?&quot; deels buiten beeld, waardoor de tekst daarop niet meer goed leesbaar is.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat alle inhoud, inclusief afbeeldingen met tekst, goed zichtbaar blijft bij een breedte van 320 pixels.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-culturele-verbindingen-in-het-soesterkwartier">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-culturele-verbindingen-in-het-soesterkwartier">12 Culturele verbindingen in het Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            
+<div class="issue">
+<p>Link naar pagina: <a href="https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/">https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/</a></p>
+<p>Geen bevindingen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="13-kijk-hier-de-online-uitzending-van-13-mei">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-kijk-hier-de-online-uitzending-van-13-mei">13 Kijk hier de online uitzending van 13 mei <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/">https://soesterkwartier.nu/kijk-hier-de-online-uitzending-van-13-mei/</a></p>
+<div class="issue">
+<h3>#62 - Onnauwkeurige automatische ondertiteling</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.2.2</span>
+	<span class="type"><b>EN</b>: 9.1.2.2</span>
+</div>
+<p>De pagina bevat een video waarin een gesprek wordt gevoerd. Er zijn wel ondertitels aanwezig, maar deze worden automatisch gegenereerd en zijn daarom onnauwkeurig. Video's waarin gesproken wordt, moeten altijd goede ondertiteling krijgen. Zo krijgen bezoekers die de video niet (goed) kunnen horen ook alle informatie. Deze ondertiteling moet exact hetzelfde zijn als wat wordt gezegd. De automatisch gegenereerde ondertiteling voldoet hier niet aan, omdat er punctuatie ontbreekt en er fouten in kunnen zitten.</p>
+<h4>Oplossing:</h4>
+<p>Voeg handmatig gecorrigeerde ondertiteling toe aan de video.</p>
+</div>
+<div class="issue">
+<h3>#63 - Geen media-alternatief of audiodescriptie</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.2.3</span>
+	<span class="type"><b>EN</b>: 9.1.2.3</span>
+</div>
+<p>De video bevat op verschillende plaatsen tekst en logo's (bijvoorbeeld rond 0:00, 57:53). Er wordt echter geen media-alternatief of audiodescriptie geboden. Bezoekers die blind of slechtziend zijn, missen hierdoor informatie. Dit kan voor dit succescriterium (1.2.3) worden opgelost met een geschreven tekst (media-alternatief), maar om aan succescriterium 1.2.5 te voldoen, moet een audiobeschrijving worden toegevoegd die de visuele elementen in de video beschrijft.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een media-alternatief toe (een geschreven tekst die de visuele elementen beschrijft) of een audiodescriptie.</p>
+</div>
+<div class="issue">
+<h3>#64 - Ontbrekende audiodescriptie</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.2.5</span>
+	<span class="type"><b>EN</b>: 9.1.2.5</span>
+</div>
+<p>De video voldoet niet aan succescriterium 1.2.5, dat audiodescriptie voor visuele informatie in video's vereist. Audiodescriptie is vereist omdat er voldoende ruimte is binnen het bestaande audiotrack. Een media-alternatief is hier niet meer toegestaan als oplossing. Dit is van belang voor mensen die de video's niet (goed) kunnen zien.</p>
+<h4>Oplossing:</h4>
+<p>Voeg audiodescriptie toe die de visuele elementen in de video beschrijft, zoals namen, functies, logo's en teksten.</p>
+</div>
+<div class="issue">
+<h3>#65 - YouTube-video valt buiten beeld bij 320px</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.10</span>
+</div>
+<p>Bij een breedte van 320 pixels valt de YouTube-video op de pagina deels buiten beeld. Deze is hierdoor niet goed te bekijken.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de video responsief is en goed past bij een breedte van 320 pixels, bijvoorbeeld door een responsieve container met <code>max-width: 100%</code> te gebruiken.</p>
+</div>
+<div class="issue">
+<h3>#66 - YouTube-sneltoetsen met één teken</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.4</span>
+	<span class="type"><b>EN</b>: 9.2.1.4</span>
+</div>
+<p>De YouTube-videospeler op deze pagina maakt gebruik van sneltoetsen met één teken. De Youtube-speler gebruikt sneltoetsen, zoals de &quot;k&quot; om de video te starten of stoppen en de &quot;m&quot; om het geluid uit te zetten. Deze sneltoetsen botsen met schermlezers. Ze zijn namelijk ook actief als de toetsenbordfocus op een ander element in de videospeler staat. Dit kan problemen geven voor mensen die met spraakbediening werken, omdat deze letters soms in de uitgesproken woorden zitten.</p>
+<h4>Oplossing:</h4>
+<p>Voeg de parameter <code>disablekb=1</code> toe aan de URI van de video in de HTML-code. Hiermee worden de sneltoetsen uitgeschakeld, terwijl toetsenbordbediening mogelijk blijft. Bekijk voor meer informatie <a href="https://developers.google.com/youtube/player_parameters#disablekb">https://developers.google.com/youtube/player_parameters#disablekb</a>.</p>
+</div>
+<div class="issue">
+<h3>#67 - Iframe met onvoldoende beschrijving</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>De pagina bevat een iframe met het title-attribuut &quot;YouTube-videospeler&quot;. Iframes moeten een goede beschrijving hebben. Die komt meestal in het title-attribuut van het iframe. Er moet in staan welk type inhoud het is (bijvoorbeeld een podcast of video), en waar het inhoudelijk over gaat. Deze beschrijving van de inhoud moet uniek en betekenisvol zijn. Door de beschrijving kunnen bezoekers met hulpsoftware beslissen of het de moeite waard is om de inhoud van het iframe te verkennen.</p>
+<h4>Oplossing:</h4>
+<p>Geef het iframe een beschrijvende titel, bijvoorbeeld &quot;Video: online uitzending 13 mei&quot;.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="14-vernieuwing-basisscholen-soesterkwartier">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-vernieuwing-basisscholen-soesterkwartier">14 Vernieuwing basisscholen Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            
+<div class="issue">
+<p>Link naar pagina: <a href="https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/</a></p>
+<p>Geen bevindingen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="15-pdf-08a-bijlage-wijkperspectief-soesterkwartier">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-pdf-08a-bijlage-wijkperspectief-soesterkwartier">15 PDF: 08a Bijlage Wijkperspectief Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://amersfoort.notubiz.nl/document/11246926/1/08a+Bijlage+Wijkperspectief+Soesterkwartier">https://amersfoort.notubiz.nl/document/11246926/1/08a+Bijlage+Wijkperspectief+Soesterkwartier</a> vanaf <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a></p>
+<div class="issue">
+<h3>#68 - Informatieve afbeeldingen zonder alt-tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 10.1.1.1</span>
+</div>
+<p>Het pdf-document bevat informatieve afbeeldingen zonder tekstalternatieven (alt-tekst). Dit komt voor op pagina's 1, 8, 9, 14-21 en andere. Afbeeldingen die met de Figure-tag zijn geplaatst, moeten altijd een beschrijving (alt-tekst) hebben. De Figure-tag is alleen bedoeld voor informatieve afbeeldingen. Schermlezers lezen de alt-tekst voor, zodat blinde bezoekers ook alle informatie tot zich kunnen nemen. Omdat de alt-tekst nu ontbreekt, lezen schermlezers alleen &quot;afbeelding&quot; voor. Hetzelfde probleem doet zich voor in het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a> op pagina's 1, 9, 13 en andere.</p>
+<h4>Oplossing:</h4>
+<p>Voeg alt-teksten toe aan deze informatieve afbeeldingen.</p>
+</div>
+<div class="issue">
+<h3>#69 - Nietszeggende alt-tekst bij afbeelding</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 10.1.1.1</span>
+</div>
+<p>De informatieve afbeelding op pagina 13 heeft het tekstalternatief &quot;Afbeelding met tekst Automatisch gegenereerde beschrijving&quot;. Dit geeft niet aan wat er op de afbeelding te zien is. Deze tekst geeft geen duidelijke informatie over wat op de afbeelding staat. Hierdoor weten bezoekers die het document laten voorlezen niet wat op de afbeelding te zien is. Hetzelfde probleem doet zich voor bij het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a> op pagina 7.</p>
+<h4>Oplossing:</h4>
+<p>Werk de alt-tekst van de afbeelding in de pdf bij om een nauwkeurige en betekenisvolle beschrijving te geven.</p>
+</div>
+<div class="issue">
+<h3>#70 - Decoratieve afbeeldingen ten onrechte gemarkeerd als figuren</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 10.1.1.1</span>
+</div>
+<p>Op pagina's 5, 6 en 10, en andere, staan decoratieve afbeeldingen die ten onrechte zijn getagd als figuren zonder beschrijving. De Figure-tag is alleen bedoeld voor informatieve afbeeldingen en heeft altijd een beschrijving nodig. Hetzelfde probleem doet zich voor bij het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a>. Zie bijvoorbeeld pagina 36 en 39.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze afbeeldingen als artefact, zodat deze worden verborgen voor schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#71 - Inhoudsopgave mist Reference-tags</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>Het pdf-document bevat een inhoudsopgave op pagina 3. De links naar de pagina's maken echter geen gebruik van de Reference-tag. Deze tags zijn wel nodig: alleen dan kunnen schermlezers het document correct interpreteren. Hetzelfde probleem doet zich voor bij het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a>, pagina 2.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik de juiste tags voor de inhoudsopgave: TOC, TOCI, Reference, Link.</p>
+</div>
+<div class="issue">
+<h3>#72 - Tabel-tags verkeerd gebruikt voor niet-tabelinhoud</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>Op pagina's 24-27 staan tekstblokken op een roze achtergrond die beginnen met &quot;Doel: ...&quot;. Deze tekst is opgemaakt als een tabel. Tabel-tags worden hier verkeerd gebruikt omdat ze worden toegepast op inhoud die niet echt tabelgegevens zijn, maar eerder een sectiekop en een beschrijving. Dit verkeerde gebruik kan verwarrend zijn voor bezoekers van schermlezers, die tabelinformatie verwachten, maar in plaats daarvan andere inhoud aantreffen.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik de juiste tags (P, H) in plaats van tabel-tags voor deze inhoud.</p>
+</div>
+<div class="issue">
+<h3>#73 - Kopteksten niet als koppen getagd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>In het pdf-document staan verschillende kopteksten die in de tags niet als koppen zijn gemarkeerd. Zie bijvoorbeeld pagina 24 &quot;Speerpunten&quot;, &quot;Duurzaam wonen&quot;, &quot;Toegankelijkheid en bereikbaarheid&quot; en andere. Op deze manier verschilt de visuele informatiestructuur van de structuur van het document in de tags.</p>
+<h4>Oplossing:</h4>
+<p>Vervang de P-tag door de H-tag, zodat de tag-structuur gelijk is aan de visuele structuur.</p>
+</div>
+<div class="issue">
+<h3>#74 - Koptekst getagd als lijstitem</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>Op pagina 46 staat de koptekst &quot;B. Langs Eem en Spoor&quot;. Deze is in de code ten onrechte gemarkeerd als een lijstitem. Dit maakt navigatie en het begrijpen van de inhoudshiërarchie moeilijker voor bezoekers van schermlezers. Hetzelfde probleem doet zich voor op pagina 47. Hetzelfde probleem doet zich voor in het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a> op pagina's 5-6.</p>
+<h4>Oplossing:</h4>
+<p>Vervang de L-tag door de H-tag, zodat de tagstructuur overeenkomt met de visuele structuur.</p>
+</div>
+<div class="issue">
+<h3>#75 - Doorlopende lijst gecodeerd als meerdere lijsten</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>Op pagina 53 is de inhoud visueel gestructureerd als één doorlopende lijst met opsommingstekens. Deze inhoud is echter gecodeerd als verschillende afzonderlijke lijsten, zodat ondersteunende technologieën zoals schermlezers elke lijst als een nieuwe, afzonderlijke lijst zullen identificeren en aankondigen.</p>
+<h4>Oplossing:</h4>
+<p>Groepeer alle gerelateerde items binnen één lijststructuur.</p>
+</div>
+<div class="issue">
+<h3>#76 - Tabelstructuur koppelt getallen niet aan items</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 10.1.3.1</span>
+</div>
+<p>Op pagina 58 staat een tabel. In de tabel is het getal 800.000 visueel gegroepeerd met de drie regels ernaast, en zijn de getallen 200.000, 300.000 en 190.000 elk duidelijk gekoppeld aan de kostenposten direct links ervan. Dit komt echter niet tot uiting in de code. Schermlezers zijn afhankelijk van de codestructuur van de tabel, dus als het verband tussen de nummers en de bijbehorende items niet expliciet is aangegeven, is het voor bezoekers van schermlezers moeilijk om de informatie te begrijpen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de codestructuur van de tabel elk nummer expliciet koppelt aan het bijbehorende item.</p>
+</div>
+<div class="issue">
+<h3>#77 - Onvoldoende contrast bij links</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 10.1.4.3</span>
+</div>
+<p>In het pdf-document worden links weergegeven in blauw (#5CCCFF) op een witte achtergrond. Zie pagina's 24 (&quot;wijkscan Soesterkwartier&quot;), 28 (&quot;Langer thuis wonen (amersfoort.nl)&quot;) en andere. De kleurcontrastverhouding is te laag: 1,8:1.</p>
+<h4>Oplossing:</h4>
+<p>Pas de kleur van de links aan zodat de contrastverhouding minimaal 4,5:1 is.</p>
+</div>
+<div class="issue">
+<h3>#78 - Afbeeldingen met ingesloten tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.5</span>
+	<span class="type"><b>EN</b>: 10.1.4.5</span>
+</div>
+<p>Op pagina's 14-21 en andere zijn afbeeldingen met ingesloten tekst aanwezig. Een afbeelding met tekst erin is voor veel bezoekers ontoegankelijk. Het is beter om deze tekst als gewone tekst in het document te plaatsen. Dan kunnen mensen die slechtziend zijn de teksteigenschappen aanpassen, zodat het beter leesbaar is voor hen. Hetzelfde probleem doet zich voor in het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a> op pagina's 9, 13, 18 en andere.</p>
+<h4>Oplossing:</h4>
+<p>Plaats de tekst als gewone tekst in het document in plaats van als afbeelding.</p>
+</div>
+<div class="issue">
+<h3>#79 - Geen documenttitel ingesteld</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 2.4.2</span>
+	<span class="type"><b>EN</b>: 10.2.4.2</span>
+</div>
+<p>Het pdf-document heeft geen titel ingesteld in de bestandseigenschappen. Zelfs als er een titel op de eerste pagina staat, moet ook in de pdf-instellingen een documenttitel ingesteld worden. Als een pdf geopend wordt in een pdf-lezer, staat de bestandsnaam meestal bovenaan in de titelbalk, bijvoorbeeld document123.pdf. Maar als een documenttitel in de pdf-metadata is ingesteld, dan wordt die titel in plaats van de bestandsnaam getoond. Dit maakt het document toegankelijker. Hetzelfde probleem doet zich voor bij het pdf-document <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a>.</p>
+<h4>Oplossing:</h4>
+<p>Stel een documenttitel in via de bestandseigenschappen van het bronbestand of van het pdf-document.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="16-pdf-uitvoeringsagenda-soesterkwartier">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#16-pdf-uitvoeringsagenda-soesterkwartier">16 PDF: Uitvoeringsagenda Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken">https://amersfoort.notubiz.nl/document/11246927/1/08b+Bijlage+Uitvoeringsagenda+Soesterkwartier+Vitale+Wijken</a> vanaf <a href="https://soesterkwartier.nu/wijkperspectief/">https://soesterkwartier.nu/wijkperspectief/</a></p>
+<div class="issue">
+<h3>#80 - Decoratieve afbeeldingen ten onrechte als figuren getagd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 10.1.1.1</span>
+</div>
+<p>In het pdf-document zijn decoratieve afbeeldingen ten onrechte opgemaakt met Figure-tags. Dit gebeurt op pagina 7. Het lijkt bijvoorbeeld te gaan om het oranje kader dat om de opsomming van een aantal statistieken heen staat. Deze afbeeldingen zijn decoratief. Daarom mag hier niet de Figure-tag voor worden gebruikt.</p>
+<h4>Oplossing:</h4>
+<p>Verander de afbeeldingen in een artefact, zodat ze verborgen worden voor schermlezers.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="resultaten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#resultaten">Resultaten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <table>
+<thead>
+<tr>
+<th style="text-align:center">Voldoet</th>
+<th style="text-align:center">Voldoet niet</th>
+<th style="text-align:center">Totaal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">29</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">55</td>
+</tr>
+</tbody>
+</table>
+<div class="issue">
+<h3>#81 - Succescriteria die niet voldoen</h3>
+<ul>
+<li>1.1.1 Niet-tekstuele content</li>
+<li>1.2.2 Ondertiteling voor doven en slechthorenden</li>
+<li>1.2.3 Audiodescriptie of media-alternatief</li>
+<li>1.2.5 Audiodescriptie</li>
+<li>1.3.1 Info en relaties</li>
+<li>1.4.1 Gebruik van kleur</li>
+<li>1.4.3 Contrast (minimum)</li>
+<li>1.4.5 Afbeeldingen van tekst</li>
+<li>1.4.10 Reflow</li>
+<li>1.4.11 Contrast van niet-tekstuele content</li>
+<li>1.4.12 Tekstafstand</li>
+<li>1.4.13 Content bij hover of focus</li>
+<li>2.1.1 Toetsenbord</li>
+<li>2.1.4 Sneltoetsen met één teken</li>
+<li>2.2.1 Timing aanpasbaar</li>
+<li>2.4.2 Paginatitel</li>
+<li>2.4.3 Focusvolgorde</li>
+<li>2.4.4 Linkdoel (in context)</li>
+<li>2.4.6 Koppen en labels</li>
+<li>2.4.7 Focus zichtbaar</li>
+<li>2.4.11 Focus niet verborgen</li>
+<li>2.5.3 Label in naam</li>
+<li>3.1.2 Taal van onderdelen</li>
+<li>3.3.1 Foutidentificatie</li>
+<li>4.1.2 Naam, rol, waarde</li>
+<li>4.1.3 Statusberichten</li>
+</ul>
+
+          </div>
+</article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Willemserf 20, 3755XK Eemnes<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
