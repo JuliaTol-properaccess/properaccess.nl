@@ -244,7 +244,7 @@ Niet alleen over de bevindingen uit het rapport. "Hoe gaan we om met onze levera
 <details class="faq-item">
 <summary class="faq-question">Wie doet het werk?</summary>
 <div class="faq-answer">
-<p>Een senior auditor. Dezelfde specialist die ook onze volledige audits uitvoert. Je werkt direct met de inhoud, niet via een account manager.</p>
+<p>Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de inhoud, niet via een account manager.</p>
 </div>
 </details>
 

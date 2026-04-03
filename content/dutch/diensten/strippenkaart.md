@@ -77,11 +77,11 @@ Benieuwd of een strippenkaart bij je past? Neem contact op voor een vrijblijvend
 
 {{< /section-cta >}}
 
-{{< section-full title="Directe toegang tot een senior auditor" >}}
+{{< section-full title="Altijd toegang tot senior auditor" >}}
 
-Je werkt rechtstreeks met dezelfde specialist die ook onze volledige audits uitvoert. Geen account managers ertussen, geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat — je krijgt antwoord van iemand die het dagelijks test.
+Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account managers ertussen, geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat — je krijgt antwoord van iemand die het dagelijks test.
 
-- Dezelfde senior auditor als bij een volledige audit
+- Altijd toegang tot senior auditor voor inhoudelijke vragen
 - Direct contact via e-mail, telefoon of videocall
 - Antwoorden met uitleg, code-voorbeelden en context
 - We stemmen onze communicatie af op je achtergrond — developers krijgen code, product owners krijgen duidelijke taal
@@ -121,7 +121,7 @@ Je werkt rechtstreeks met dezelfde specialist die ook onze volledige audits uitv
 <details class="faq-item">
 <summary class="faq-question">Wie doet het werk?</summary>
 <div class="faq-answer">
-<p>Dezelfde senior auditor die ook onze volledige audits uitvoert. Je werkt direct met de specialist, niet met een junior of een account manager.</p>
+<p>Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de specialist, niet met een junior of een account manager.</p>
 </div>
 </details>
 
