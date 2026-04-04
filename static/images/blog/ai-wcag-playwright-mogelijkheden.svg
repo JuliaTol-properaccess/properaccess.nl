@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card -->
+  <rect x="4" y="4" width="392" height="392" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="392" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="24" y="36" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="14" font-weight="700">Playwright + AI</text>
+  <text x="24" y="52" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9">Wat kan AI testen op een live website?</text>
+  <line x1="24" y1="64" x2="368" y2="64" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Kan wel - header -->
+  <rect x="24" y="80" width="344" height="24" rx="6" fill="#004050" opacity="0.08"/>
+  <text x="40" y="96" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">Kan wel</text>
+
+  <!-- Kan wel items -->
+  <circle cx="40" cy="122" r="6" fill="#004050" opacity="0.2"/>
+  <text x="33" y="126" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2713;</text>
+  <text x="54" y="126" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">JavaScript-frameworks</text>
+  <text x="54" y="138" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">React, Vue, Angular -- echte Chromium-browser</text>
+
+  <circle cx="40" cy="158" r="6" fill="#004050" opacity="0.2"/>
+  <text x="33" y="162" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2713;</text>
+  <text x="54" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Dynamische content</text>
+  <text x="54" y="174" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Modals, accordeons, dropdowns, tabbladen</text>
+
+  <circle cx="40" cy="194" r="6" fill="#004050" opacity="0.2"/>
+  <text x="33" y="198" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2713;</text>
+  <text x="54" y="198" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Shadow DOM &amp; iframes</text>
+  <text x="54" y="210" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Open Shadow DOM en iframe-inhoud</text>
+
+  <!-- Divider -->
+  <line x1="24" y1="228" x2="368" y2="228" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Kan niet - header -->
+  <rect x="24" y="244" width="344" height="24" rx="6" fill="#A30D4B" opacity="0.06"/>
+  <text x="40" y="260" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">Beperkingen</text>
+
+  <!-- Kan niet items -->
+  <circle cx="40" cy="286" r="6" fill="#A30D4B" opacity="0.2"/>
+  <text x="33" y="290" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2717;</text>
+  <text x="54" y="290" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">addEventListener onzichtbaar</text>
+  <text x="54" y="302" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">De meeste moderne sites -- hoge impact</text>
+
+  <circle cx="40" cy="322" r="6" fill="#A30D4B" opacity="0.2"/>
+  <text x="33" y="326" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2717;</text>
+  <text x="54" y="326" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Bot-detectie</text>
+  <text x="54" y="338" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Cloudflare e.d. blokkeren headless browsers</text>
+
+  <circle cx="40" cy="358" r="6" fill="#A30D4B" opacity="0.2"/>
+  <text x="33" y="362" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">&#x2717;</text>
+  <text x="54" y="362" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Gesloten Shadow DOM</text>
+  <text x="54" y="374" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Zeldzaam, maar ontoegankelijk</text>
+
+  <!-- Footer -->
+  <text x="24" y="396" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">AI-test #1: div als knop | Proper Access 2026</text>
+</svg>

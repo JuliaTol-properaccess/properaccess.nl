@@ -1,14 +1,18 @@
 {{- $image := .Get "image" -}}
 {{- $alt := .Get "alt" | default "" -}}
+{{- $round := .Get "round" | default "" -}}
 <section class="case-section{{ if not $image }} case-section--full{{ end }}">
   <div class="container">
     {{ if $image }}
-    <div class="case-section__grid">
+    <div class="case-section__grid{{ if $round }} case-section__grid--round{{ end }}">
       <div class="case-section__text content">
         {{ .Inner | markdownify }}
       </div>
-      <div class="case-section__media">
-        <img src="{{ $image }}" alt="{{ $alt }}" class="case-section__image" loading="lazy">
+      <div class="case-section__media{{ if $round }} case-section__media--round{{ end }}">
+        <img src="{{ $image }}" alt="{{ $alt }}" class="case-section__image{{ if $round }} case-section__image--round{{ end }}" loading="lazy">
+        {{- with .Get "caption" }}
+        <p class="case-section__caption">{{ . }}</p>
+        {{- end }}
       </div>
     </div>
     {{ else }}

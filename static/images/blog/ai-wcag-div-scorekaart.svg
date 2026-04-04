@@ -1,0 +1,55 @@
+<svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card -->
+  <rect x="4" y="4" width="392" height="352" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="352" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="24" y="36" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="14" font-weight="700">Scorekaart: div als knop</text>
+  <text x="24" y="52" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9">WCAG 2.1.1 Toetsenbord</text>
+  <line x1="24" y1="64" x2="368" y2="64" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Row 1: Code-analyse -->
+  <rect x="24" y="80" width="344" height="44" rx="8" fill="#f0fdf4"/>
+  <circle cx="48" cy="102" r="10" fill="#004050" opacity="0.15"/>
+  <text x="42" y="106" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">&#x2713;</text>
+  <text x="66" y="96" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9.5" font-weight="700">Code-analyse</text>
+  <text x="66" y="110" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">div onclick herkennen in snippet</text>
+  <rect x="300" y="90" width="56" height="20" rx="10" fill="#004050" opacity="0.12"/>
+  <text x="308" y="104" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700">Gevonden</text>
+
+  <!-- Row 2: Inline onclick -->
+  <rect x="24" y="136" width="344" height="44" rx="8" fill="#f0fdf4"/>
+  <circle cx="48" cy="158" r="10" fill="#004050" opacity="0.15"/>
+  <text x="42" y="162" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">&#x2713;</text>
+  <text x="66" y="152" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9.5" font-weight="700">Live: inline onclick</text>
+  <text x="66" y="166" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Playwright doorzoekt DOM op attributen</text>
+  <rect x="300" y="146" width="56" height="20" rx="10" fill="#004050" opacity="0.12"/>
+  <text x="308" y="160" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700">Gevonden</text>
+
+  <!-- Row 3: addEventListener (missed) -->
+  <rect x="24" y="192" width="344" height="44" rx="8" fill="#fdf2f8"/>
+  <circle cx="48" cy="214" r="10" fill="#A30D4B" opacity="0.15"/>
+  <text x="42" y="218" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">&#x2717;</text>
+  <text x="66" y="208" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9.5" font-weight="700">Live: addEventListener</text>
+  <text x="66" y="222" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Onzichtbaar in DOM, alleen heuristieken</text>
+  <rect x="300" y="202" width="56" height="20" rx="10" fill="#A30D4B" opacity="0.12"/>
+  <text x="314" y="216" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700">Gemist</text>
+
+  <!-- Row 4: Dynamisch -->
+  <rect x="24" y="248" width="344" height="44" rx="8" fill="#f0fdf4"/>
+  <circle cx="48" cy="270" r="10" fill="#004050" opacity="0.15"/>
+  <text x="42" y="274" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">&#x2713;</text>
+  <text x="66" y="264" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9.5" font-weight="700">Dynamisch geladen divs</text>
+  <text x="66" y="278" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Klikken, wachten, nieuwe DOM inspecteren</text>
+  <rect x="300" y="258" width="56" height="20" rx="10" fill="#004050" opacity="0.12"/>
+  <text x="308" y="272" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700">Gevonden</text>
+
+  <!-- Row 5: Context -->
+  <rect x="24" y="304" width="344" height="44" rx="8" fill="#f0fdf4"/>
+  <circle cx="48" cy="326" r="10" fill="#004050" opacity="0.15"/>
+  <text x="42" y="330" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">&#x2713;</text>
+  <text x="66" y="320" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="9.5" font-weight="700">Context begrijpen</text>
+  <text x="66" y="334" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Legt uit wat het probleem betekent</text>
+  <rect x="300" y="314" width="56" height="20" rx="10" fill="#004050" opacity="0.12"/>
+  <text x="308" y="328" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700">Gevonden</text>
+</svg>

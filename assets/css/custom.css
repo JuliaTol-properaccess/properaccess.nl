@@ -10978,6 +10978,33 @@ html.dark .hp-linkedin__card-desc {
   display: block;
 }
 
+/* Round portrait variant */
+.case-section__grid--round {
+  align-items: start;
+}
+
+.case-section__media--round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.case-section__image--round {
+  width: 50%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.case-section__caption {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.85rem;
+  color: #6B7280;
+  margin-top: 0.75rem;
+}
+
 /* Full-width sections (no image) */
 .case-section--full .case-section__prose {
   max-width: 720px;
@@ -11041,6 +11068,11 @@ html.dark .hp-linkedin__card-desc {
 
   .case-section:nth-child(even) .case-section__grid > * {
     direction: ltr;
+  }
+
+  /* Round portrait: 70% tekst, 30% foto */
+  .case-section .case-section__grid.case-section__grid--round {
+    grid-template-columns: 7fr 3fr;
   }
 }
 

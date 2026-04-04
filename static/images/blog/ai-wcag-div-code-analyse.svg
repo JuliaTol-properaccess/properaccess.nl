@@ -1,0 +1,51 @@
+<svg viewBox="0 0 400 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card -->
+  <rect x="4" y="4" width="392" height="372" rx="12" fill="#e5e7eb"/>
+  <rect x="0" y="0" width="392" height="372" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="24" y="36" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="14" font-weight="700">Code-analyse</text>
+  <text x="24" y="52" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9">Wat AI ziet in een HTML-snippet</text>
+  <line x1="24" y1="64" x2="368" y2="64" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Code block -->
+  <rect x="24" y="80" width="344" height="48" rx="6" fill="#1F2937"/>
+  <text x="36" y="100" fill="#9ca3af" font-family="monospace" font-size="9">&lt;div class="btn-primary"</text>
+  <text x="36" y="116" fill="#9ca3af" font-family="monospace" font-size="9">  onclick="addToCart(123)"&gt;</text>
+
+  <!-- Arrow down -->
+  <text x="188" y="150" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="18">&#x2193;</text>
+
+  <!-- AI Analysis result -->
+  <rect x="24" y="164" width="344" height="140" rx="10" fill="#fff" stroke="#004050" stroke-width="1.5"/>
+  <rect x="24" y="164" width="344" height="6" rx="3" fill="#004050"/>
+
+  <!-- AI icon -->
+  <circle cx="48" cy="196" r="12" fill="#004050" opacity="0.12"/>
+  <text x="42" y="200" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">AI</text>
+  <text x="68" y="196" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">Claude analyse</text>
+
+  <!-- Findings -->
+  <circle cx="40" cy="224" r="4" fill="#A30D4B" opacity="0.4"/>
+  <text x="50" y="228" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8.5">Niet focusbaar met toetsenbord</text>
+
+  <circle cx="40" cy="244" r="4" fill="#A30D4B" opacity="0.4"/>
+  <text x="50" y="248" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8.5">Geen button role voor schermlezers</text>
+
+  <circle cx="40" cy="264" r="4" fill="#A30D4B" opacity="0.4"/>
+  <text x="50" y="268" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8.5">Enter en Spatie activeren niet</text>
+
+  <circle cx="40" cy="284" r="4" fill="#004050" opacity="0.4"/>
+  <text x="50" y="288" fill="#004050" font-family="Nunito, sans-serif" font-size="8.5" font-weight="600">Oplossing: gebruik &lt;button&gt;</text>
+
+  <!-- WCAG badge -->
+  <rect x="24" y="320" width="120" height="28" rx="14" fill="#fdf2f8" stroke="#A30D4B" stroke-width="1"/>
+  <text x="40" y="338" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">WCAG 2.1.1</text>
+
+  <!-- Score badge -->
+  <rect x="160" y="320" width="100" height="28" rx="14" fill="#f0fdf4" stroke="#004050" stroke-width="1"/>
+  <text x="180" y="338" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">Gevonden</text>
+
+  <!-- Footer -->
+  <text x="24" y="368" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">AI-test #1: div als knop | Proper Access 2026</text>
+</svg>
