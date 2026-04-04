@@ -1,9 +1,18 @@
 ############# English navigation ##############
 
+# main menu
+[[main]]
+name = "Blog"
+url = "/en/blog/"
+weight = 1
+
+[[main]]
+name = "Contact"
+url = "/en/contact/"
+weight = 2
 
 # footer menu
 [[footer]]
-name = "About"
-url = "/digital-accessibility-audit-agency/"
+name = "Blog"
+url = "/en/blog/"
 weight = 1
-

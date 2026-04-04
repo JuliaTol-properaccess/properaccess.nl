@@ -11,3 +11,8 @@ languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 2
+
+[en.params.navigation_button]
+enable = true
+label = "Get in touch"
+link = "/en/contact/"

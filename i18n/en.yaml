@@ -6,9 +6,42 @@ categories: Categories
 tags: Tags
 toc: Table of Contents
 share: Share
+contact_name: "Name"
+contact_email: "Email address"
+contact_message: "Message"
+contact_name_placeholder: "Your name"
+contact_email_placeholder: "your@email.com"
+contact_message_placeholder: "Tell us how we can help you..."
+contact_submit: "Send message"
 search_input_placeholder: Search Post...
 search_no_results: No results for
 search_initial_message: Type something to search..
 search_navigate: to navigate
 search_select: to select
 search_close: to close
+footer_optin_title: "We do more than audits"
+footer_optin_p1: "Every week we research how modern browsers and assistive technology work, build our own tools, and automate digital accessibility for our clients."
+footer_optin_p2: "For example: how does a screen reader behave with a specific ARIA pattern? What WCAG issues do we encounter most often? How do you build an accessible date picker? We share what we learn — openly and practically."
+footer_optin_p3: "We also build free tools that anyone can use — like our heading structure checker, colour contrast checker, and alt text guide. Our clients get additional access to private tools that save them hours of work."
+footer_optin_p4: "We send a newsletter once a month with information you can actually use. No spam."
+footer_newsletter_title: "Subscribe to newsletter"
+footer_newsletter_placeholder: "Your email address"
+footer_newsletter_submit: "Subscribe"
+footer_certs_label: "Certifications"
+contact_hero_title: "Let's get acquainted"
+contact_hero_subtitle: "Maybe you want to know if your website is accessible. Or you're looking for a partner to review your next release. Perhaps the regulator called and you want to know where you stand."
+contact_hero_cta_text: "Whatever your question — just ask."
+contact_hero_email_btn: "Email us"
+contact_svg_client: "Client"
+contact_svg_card1_title: "Free introduction"
+contact_svg_card1_line1: "No-obligation video call"
+contact_svg_card1_line2: "to discuss your situation"
+contact_svg_card2_title: "Tailored advice"
+contact_svg_card2_line1: "No sales pitch,"
+contact_svg_card2_line2: "just a clear plan"
+contact_svg_booking_btn: "Schedule a video call"
+stats_audits: "audits completed"
+stats_clients: "clients"
+stats_returning: "returning clients"
+stats_day: "day"
+stats_response: "response time"

@@ -3,20 +3,20 @@
   <div class="container">
     <div class="footer-optin__inner">
       <div class="footer-optin__text">
-        <h2 class="footer-optin__title">We doen meer dan audits</h2>
-        <p class="footer-optin__desc">Elke week zijn we bezig met research naar hoe moderne browsers en hulpsoftware werken, bouwen we onze eigen tools en automatiseren we digitale toegankelijkheid voor onze klanten.</p>
-        <p class="footer-optin__desc">Denk aan: hoe gedraagt een screenreader zich bij een bepaald ARIA-patroon? Welke WCAG-fouten komen we het vaakst tegen? Hoe bouw je een toegankelijke datepicker? We delen wat we leren — open en praktisch.</p>
-        <p class="footer-optin__desc">Daarnaast bouwen we gratis tools die iedereen kan gebruiken — zoals onze koppenstructuur-checker, kleurcontrast-checker en alt-tekst keuzehulp. Onze klanten krijgen daarbovenop toegang tot besloten tools die hen uren werk besparen.</p>
-        <p class="footer-optin__desc">We sturen je 1x per maand een nieuwsbrief met informatie waar je echt wat aan hebt. Geen spam.</p>
+        <h2 class="footer-optin__title">{{ i18n "footer_optin_title" | default "We doen meer dan audits" }}</h2>
+        <p class="footer-optin__desc">{{ i18n "footer_optin_p1" | default "Elke week zijn we bezig met research naar hoe moderne browsers en hulpsoftware werken, bouwen we onze eigen tools en automatiseren we digitale toegankelijkheid voor onze klanten." }}</p>
+        <p class="footer-optin__desc">{{ i18n "footer_optin_p2" | default "Denk aan: hoe gedraagt een screenreader zich bij een bepaald ARIA-patroon? Welke WCAG-fouten komen we het vaakst tegen? Hoe bouw je een toegankelijke datepicker? We delen wat we leren — open en praktisch." }}</p>
+        <p class="footer-optin__desc">{{ i18n "footer_optin_p3" | default "Daarnaast bouwen we gratis tools die iedereen kan gebruiken — zoals onze koppenstructuur-checker, kleurcontrast-checker en alt-tekst keuzehulp. Onze klanten krijgen daarbovenop toegang tot besloten tools die hen uren werk besparen." }}</p>
+        <p class="footer-optin__desc">{{ i18n "footer_optin_p4" | default "We sturen je 1x per maand een nieuwsbrief met informatie waar je echt wat aan hebt. Geen spam." }}</p>
       </div>
       <div class="footer-optin__form">
-        <h3 class="footer-optin__form-title">Aanmelden nieuwsbrief</h3>
+        <h3 class="footer-optin__form-title">{{ i18n "footer_newsletter_title" | default "Aanmelden nieuwsbrief" }}</h3>
         <form id="newsletter-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'nieuwsbrief', successMessage: 'Je bent aangemeld!' });">
           <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
           <div class="pa-form__row">
-            <label for="newsletter-email" class="sr-only">E-mailadres</label>
-            <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="Je e-mailadres" class="pa-form__input" />
-            <button type="submit" class="pa-form__btn">Aanmelden</button>
+            <label for="newsletter-email" class="sr-only">{{ i18n "contact_email" | default "E-mailadres" }}</label>
+            <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="{{ i18n "footer_newsletter_placeholder" | default "Je e-mailadres" }}" class="pa-form__input" />
+            <button type="submit" class="pa-form__btn">{{ i18n "footer_newsletter_submit" | default "Aanmelden" }}</button>
           </div>
           <div role="status" aria-live="polite"></div>
         </form>
@@ -79,7 +79,7 @@
   <div class="footer-certs-section border-border border-t py-6">
     <div class="container">
       <div class="footer-certs">
-        <span class="footer-certs__label">Certificeringen</span>
+        <span class="footer-certs__label">{{ i18n "footer_certs_label" | default "Certificeringen" }}</span>
         <div class="footer-certs__logos">
           <img src="{{ "images/iaap.png" | relURL }}" alt="IAAP — International Association of Accessibility Professionals, a division of G3ict" width="200" height="auto" loading="lazy" class="footer-certs__logo footer-certs__logo--wide">
           <img src="{{ "images/logo_was.png" | relURL }}" alt="IAAP Certified WAS — Web Accessibility Specialist" width="56" height="56" loading="lazy" class="footer-certs__logo">

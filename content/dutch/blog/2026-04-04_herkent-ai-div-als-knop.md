@@ -1,6 +1,6 @@
 ---
 title: "AI-test #1: Herkent AI een div die doet alsof het een knop is?"
-date: 2026-04-03
+date: 2026-04-04
 slug: "herkent-ai-div-als-knop"
 categories:
   - "ai-en-wcag"
@@ -40,18 +40,16 @@ Dit is de nummer 1 toetsenbordfout die ik tegenkom bij audits (WCAG 2.1.1). En d
 Ik gaf Claude de volgende HTML, zonder hints:
 
 ```html
-<div class="btn-primary" onclick="addToCart(123)">
-  In winkelwagen
-</div>
+<div class="btn-primary" onclick="addToCart(123)">In winkelwagen</div>
 ```
 
-Mijn prompt: *"Welke toegankelijkheidsproblemen zie je in deze code?"*
+Mijn prompt: _"Welke toegankelijkheidsproblemen zie je in deze code?"_
 
 ### Resultaat
 
 Claude herkende het meteen:
 
-> "A `<div>` with an `onclick` handler is not keyboard accessible by default. It cannot be reached with Tab, it has no button role, and pressing Enter or Space will not activate it."
+> <span lang="en">"A `<div>` with an `onclick` handler is not keyboard accessible by default. It cannot be reached with Tab, it has no button role, and pressing Enter or Space will not activate it."</span>
 
 Het koppelt het probleem aan WCAG 2.1.1 (Toetsenbord) en geeft de juiste oplossing: gebruik een `<button>`.
 
@@ -65,29 +63,32 @@ Maar ik gaf AI een stukje code. Dat is de makkelijke variant. Kan AI dit ook vin
 
 Kan AI een webpagina bezoeken en deze fout opsporen? Ja, maar niet uit zichzelf. AI heeft een browser nodig.
 
-Met Playwright (een tool voor browserautomatisering) kan Claude Code een echte browser openen, een webpagina bezoeken, en de DOM inspecteren. Dat ziet er zo uit:
+Met Playwright (een tool voor browserautomatisering) kan Claude Code een echte browser openen, een webpagina bezoeken, en de DOM (de boomstructuur van alle elementen op een pagina) inspecteren. Dat ziet er zo uit:
 
 ```javascript
-const { chromium } = require('playwright');
+const { chromium } = require("playwright");
 
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage();
-await page.goto('https://voorbeeld-webshop.nl');
+await page.goto("https://voorbeeld-webshop.nl");
 
 // Zoek alle elementen met onclick die geen button of link zijn
 const problemen = await page.evaluate(() => {
-  const elementen = document.querySelectorAll('[onclick]');
+  const elementen = document.querySelectorAll("[onclick]");
   return Array.from(elementen)
-    .filter(el => {
+    .filter((el) => {
       const tag = el.tagName.toLowerCase();
-      return tag !== 'button' && tag !== 'a'
-             && tag !== 'input'
-             && el.getAttribute('role') !== 'button';
+      return (
+        tag !== "button" &&
+        tag !== "a" &&
+        tag !== "input" &&
+        el.getAttribute("role") !== "button"
+      );
     })
-    .map(el => ({
+    .map((el) => ({
       tag: el.tagName.toLowerCase(),
       tekst: el.textContent?.trim().substring(0, 80),
-      onclick: el.getAttribute('onclick')
+      onclick: el.getAttribute("onclick"),
     }));
 });
 ```
@@ -100,7 +101,7 @@ Dit script vindt elke div, span of ander niet-interactief element met een onclic
 
 ## Wat kan Playwright testen?
 
-Playwright draait een echte Chromium-browser. Alle JavaScript wordt uitgevoerd, dus je ziet de gerenderde DOM, niet de broncode. Je kunt klikken, wachten tot een modal verschijnt, en dan de nieuwe HTML inspecteren. Modals, accordeons, tabbladen, lazy-loaded content, open Shadow DOM, iframes. Het werkt allemaal.
+Playwright draait een echte Chromium-browser. Alle JavaScript wordt uitgevoerd, dus je ziet de pagina zoals een bezoeker die ziet -- niet de broncode. Je kunt klikken, wachten tot een pop-up verschijnt, en dan de nieuwe HTML inspecteren. Pop-ups, uitklapmenu's, tabbladen, content die pas laadt bij scrollen, iframes (ingesloten pagina's). Het werkt allemaal.
 
 {{< /case-section >}}
 
@@ -111,7 +112,7 @@ Playwright draait een echte Chromium-browser. Alle JavaScript wordt uitgevoerd, 
 Het grootste probleem: addEventListener. De meeste moderne websites gebruiken niet `onclick="..."` in de HTML. Ze koppelen click-events via JavaScript:
 
 ```javascript
-element.addEventListener('click', function() {
+element.addEventListener("click", function () {
   addToCart(123);
 });
 ```
@@ -124,17 +125,17 @@ Je kunt wel zoeken naar signalen dat een element klikbaar bedoeld is:
 - Heeft het een class als "btn", "button", "clickable"?
 - Is het een `<div>` of `<span>` met `tabindex="0"` maar zonder `role="button"`?
 
-Maar dat zijn educated guesses. Je krijgt vals positieven (elementen die er klikbaar uitzien maar het niet zijn) en vals negatieven (klikbare elementen zonder visuele hints).
+Maar dat zijn heuristieken -- vuistregels die vaak kloppen, maar niet altijd. Je krijgt vals positieven (elementen die er klikbaar uitzien maar het niet zijn) en vals negatieven (klikbare elementen zonder visuele hints).
 
 Andere beperkingen:
 
-| Beperking | Impact |
-|---|---|
-| addEventListener is onzichtbaar in DOM | Hoog, de meeste moderne sites gebruiken dit |
+| Beperking                                | Impact                                             |
+| ---------------------------------------- | -------------------------------------------------- |
+| addEventListener is onzichtbaar in DOM   | Hoog, de meeste moderne sites gebruiken dit        |
 | Je test altijd een paginastatus tegelijk | Medium, ingelogd vs. uitgelogd, verschillende tabs |
-| Gesloten Shadow DOM is ontoegankelijk | Laag, komt zelden voor |
-| Bot-detectie (Cloudflare e.d.) | Medium, sommige sites blokkeren headless browsers |
-| Pagina's achter login | Medium, kan maar je moet credentials meegeven |
+| Gesloten Shadow DOM is ontoegankelijk    | Laag, komt zelden voor                             |
+| Bot-detectie (Cloudflare e.d.)           | Medium, sommige sites blokkeren geautomatiseerde browsers |
+| Pagina's achter login                    | Medium, kan maar je moet credentials meegeven      |
 
 {{< /case-section >}}
 
@@ -156,13 +157,13 @@ Geen broncode nodig, geen speciale toegang. Je test de website zoals een bezoeke
 
 ## De scorekaart
 
-| Test | Score | Toelichting |
-|---|---|---|
-| Code-analyse: div onclick herkennen | Gevonden | Claude herkent het probleem in een code-snippet |
-| Live website: inline onclick vinden | Gevonden | Playwright kan DOM doorzoeken op onclick-attributen |
-| Live website: addEventListener vinden | Gemist | Onzichtbaar in DOM, alleen via heuristieken te benaderen |
-| Live website: dynamisch geladen divs | Gevonden | Playwright kan klikken, wachten, en nieuwe DOM inspecteren |
-| Context begrijpen (waarom het fout is) | Gevonden | Claude legt uit wat het betekent voor gebruikers |
+| Test                                   | Score    | Toelichting                                                |
+| -------------------------------------- | -------- | ---------------------------------------------------------- |
+| Code-analyse: div onclick herkennen    | Gevonden | Claude herkent het probleem in een code-snippet            |
+| Live website: inline onclick vinden    | Gevonden | Playwright kan DOM doorzoeken op onclick-attributen        |
+| Live website: addEventListener vinden  | Gemist   | Onzichtbaar in DOM, alleen via heuristieken te benaderen   |
+| Live website: dynamisch geladen divs   | Gevonden | Playwright kan klikken, wachten, en nieuwe DOM inspecteren |
+| Context begrijpen (waarom het fout is) | Gevonden | Claude legt uit wat het betekent voor gebruikers           |
 
 AI vindt dit probleem in code en bij inline onclick. Maar bij addEventListener (de manier waarop de meeste moderne websites werken) is het afhankelijk van heuristieken. Dat is een serieuze beperking.
 
@@ -174,13 +175,10 @@ AI vindt dit probleem in code en bij inline onclick. Maar bij addEventListener (
 
 ```html
 <!-- Niet doen -->
-<div class="btn-primary" onclick="addToCart(123)">
-  In winkelwagen
-</div>
+<div class="btn-primary" onclick="addToCart(123)">In winkelwagen</div>
 
 <!-- Wel doen -->
-<button class="btn-primary" type="button"
-        onclick="addToCart(123)">
+<button class="btn-primary" type="button" onclick="addToCart(123)">
   In winkelwagen
 </button>
 ```
@@ -195,12 +193,12 @@ Een `<button>` is standaard focusbaar, activeerbaar met Enter en Spatie, en heef
 
 Claude begrijpt dit probleem goed. Het legt uit waarom een div geen knop is, wat het betekent voor toetsenbordgebruikers, en hoe je het oplost. Dat is meer dan wat axe of Lighthouse je vertellen, die melden alleen dat er een element zonder rol is.
 
-Maar vinden op een live website is een ander verhaal. De DOM doorzoeken werkt als de site onclick-attributen in de HTML heeft staan. Bij JavaScript event listeners heb je heuristieken nodig die niet waterdicht zijn.
+Maar vinden op een live website is een ander verhaal. De DOM doorzoeken werkt als de site onclick-attributen in de HTML heeft staan. Bij JavaScript event listeners (de manier waarop moderne websites klikgedrag koppelen) heb je vuistregels nodig die niet waterdicht zijn.
 
 En dan het punt waar het echt om draait: AI kan je vertellen dat de div een knop moet zijn. Maar het kan niet op Tab drukken. Het leest en redeneert. Het test niet.
 
 ---
 
-*Dit is test #1 van de serie "AI en Toegankelijkheidstesten". Elke test onderzoekt of AI een specifiek toegankelijkheidsprobleem kan detecteren, niet alleen in code maar ook op een live website. Wil je weten hoe toegankelijk jouw website is? Laat het door een mens testen voor het beste resultaat. [Neem contact met ons op](/contact/).*
+_Dit is test #1 van de serie "AI en Toegankelijkheidstesten". Elke test onderzoekt of AI een specifiek toegankelijkheidsprobleem kan detecteren, niet alleen in code maar ook op een live website. Wil je weten hoe toegankelijk jouw website is? Laat het door een mens testen voor het beste resultaat. [Neem contact met ons op](/contact/)._
 
 {{< /case-section >}}

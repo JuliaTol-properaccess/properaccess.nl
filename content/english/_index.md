@@ -5,7 +5,7 @@ description: "Proper Access - digital accessibility"
 keywords: ["WCAG", "European Accessibility Act", "proper access", "web accessibility"]
 slug: ""
 url: "/english"
-layout: "second-page"
+layout: "homepage-en"
 
 # Banner
 banner:
