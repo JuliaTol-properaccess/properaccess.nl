@@ -1,5 +1,5 @@
 ---
-title: "AI test #1: Can AI detect a div pretending to be a button?"
+title: "AI test: Can AI detect a div pretending to be a button?"
 date: 2026-04-04
 slug: "can-ai-detect-div-as-button"
 categories:

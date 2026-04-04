@@ -1,5 +1,5 @@
 ---
-title: "AI-test #1: Herkent AI een div die doet alsof het een knop is?"
+title: "AI-test: Herkent AI een div die doet alsof het een knop is?"
 date: 2026-04-04
 slug: "herkent-ai-div-als-knop"
 categories:
