@@ -18,6 +18,7 @@ keywords:
   - keyboard accessibility
   - clickable div
   - Playwright accessibility
+image: "/images/blog/ai-serie-kickoff-en.png"
 ---
 
 {{< case-section >}}

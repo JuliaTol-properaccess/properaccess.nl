@@ -462,20 +462,21 @@
 </section>
 
 
-<!-- ─── FROM THE BLOG ─── -->
-{{ $blogPosts := where site.RegularPages "Section" "blog" }}
-{{ $recentBlog := first 3 ($blogPosts.ByDate.Reverse) }}
-{{ if $recentBlog }}
+<!-- ─── AI AND WCAG ─── -->
+{{ $aiPostsEn := where site.RegularPages "Section" "blog" }}
+{{ $aiPostsEn = where $aiPostsEn ".Params.categories" "intersect" (slice "ai-and-wcag") }}
+{{ $aiRecentEn := first 3 ($aiPostsEn.ByDate.Reverse) }}
+{{ if $aiRecentEn }}
 <section class="section hp-linkedin">
   <div class="container">
-    <h2 class="hp-section-title">From the blog</h2>
+    <h2 class="hp-section-title">AI and WCAG</h2>
     <p class="hp-narrow hp-linkedin__intro">
-      We write about what we encounter in our audits. Practical insights
-      about WCAG, the EAA, and digital accessibility.
+      Can AI test your website for accessibility? In this series we investigate
+      what AI can and can't detect. Real tests, honest results.
     </p>
 
     <div class="hp-linkedin__grid">
-      {{ range $recentBlog }}
+      {{ range $aiRecentEn }}
         <a href="{{ .RelPermalink }}" class="hp-linkedin__card">
           {{ with .Params.image }}
             <div class="hp-linkedin__card-img">
@@ -495,7 +496,7 @@
     </div>
 
     <p class="hp-section-cta">
-      <a href="/en/blog/" class="hp-link-arrow">View all articles &rarr;</a>
+      <a href="/en/categories/ai-and-wcag/" class="hp-link-arrow">View all AI and WCAG articles &rarr;</a>
     </p>
   </div>
 </section>
