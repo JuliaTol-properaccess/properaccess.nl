@@ -4824,6 +4824,331 @@ html.dark .toolsuite-promo__text {
 
 
 /* ═══════════════════════════════════════════════════════════
+   QUICKSCAN PAGE
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Hero card mockup ─── */
+.qs-hero-card {
+  background: #fff;
+  border-radius: 2rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 20px 40px -15px rgba(31, 41, 55, 0.1);
+  overflow: hidden;
+}
+
+.qs-hero-card__header {
+  background: #1F2937;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qs-hero-card__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+}
+
+.qs-hero-card__dot--red { background: #ef4444; opacity: 0.8; }
+.qs-hero-card__dot--yellow { background: #F5C842; opacity: 0.8; }
+.qs-hero-card__dot--green { background: #22c55e; opacity: 0.8; }
+
+.qs-hero-card__title {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.qs-hero-card__body {
+  padding: 1rem;
+}
+
+.qs-hero-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.qs-hero-card__row:last-child {
+  border-bottom: none;
+}
+
+.qs-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.qs-badge--red { background: #fef2f2; color: #dc2626; }
+.qs-badge--yellow { background: #fffbeb; color: #b45309; }
+.qs-badge--green { background: #f0fdf4; color: #16a34a; }
+
+/* ─── Section spacing ─── */
+.qs-section {
+  padding: 6rem 0;
+}
+
+.qs-section__intro {
+  font-size: 1.125rem;
+  color: #4B5563;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* ─── Features grid ─── */
+.qs-features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* ─── Blockquote ─── */
+.qs-blockquote {
+  max-width: 42rem;
+  margin: 2.5rem auto 0;
+  text-align: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 2rem;
+  border: 1px solid #f3f4f6;
+}
+
+.qs-blockquote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #4B5563;
+  line-height: 1.7;
+}
+
+.qs-blockquote--dark {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.qs-blockquote--dark p {
+  color: #d1d5db;
+}
+
+/* ─── Offer grid ─── */
+.qs-offer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.qs-price-tag {
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #A30D4B;
+  margin: 1rem 0 0.5rem;
+}
+
+.qs-offer-desc {
+  color: #4B5563;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.qs-offer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ─── Comparison table ─── */
+.qs-table-wrap {
+  overflow-x: auto;
+}
+
+.qs-compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+}
+
+.qs-compare-table thead th {
+  background: #1F2937;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+.qs-compare-table thead th:first-child {
+  background: #1F2937;
+}
+
+.qs-compare-table thead th:last-child {
+  background: #A30D4B;
+}
+
+.qs-compare-table tbody th {
+  font-weight: 700;
+  color: #1F2937;
+  padding: 0.875rem 1.25rem;
+  text-align: left;
+  font-size: 0.9rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.qs-compare-table tbody td {
+  padding: 0.875rem 1.25rem;
+  color: #4B5563;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.qs-compare-table tbody td:last-child {
+  color: #1F2937;
+  font-weight: 600;
+}
+
+.qs-compare-table tbody tr:last-child th,
+.qs-compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Stats mini (on dark) ─── */
+.qs-stats-mini {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.qs-stats-mini__number {
+  display: block;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.qs-stats-mini__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Steps ─── */
+.qs-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.qs-step-card {
+  text-align: center;
+}
+
+.qs-step-number {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(163, 13, 75, 0.1);
+  color: #A30D4B;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin: 0 auto 1.25rem;
+}
+
+/* ─── Form section ─── */
+.qs-form-section {
+  background: #1F2937;
+  padding: 6rem 0;
+}
+
+.qs-form-wrapper {
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.qs-form-label--light {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.qs-form-note {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+/* ─── Upsell ─── */
+.qs-upsell {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: #f9fafb;
+  border-radius: 2rem;
+  color: #4B5563;
+}
+
+.qs-upsell a {
+  color: #A30D4B;
+  font-weight: 700;
+}
+
+/* ─── Thank you page ─── */
+.qs-thankyou-check {
+  font-size: 4rem;
+  color: #22c55e;
+}
+
+.qs-expect-card {
+  background: #f9fafb;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border: 1px solid #f3f4f6;
+}
+
+/* ─── Quickscan responsive ─── */
+@media (min-width: 768px) {
+  .qs-features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .qs-steps-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .qs-offer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════
    TOOL: ARIA ROLLEN & ATTRIBUTEN REFERENTIE
    ═══════════════════════════════════════════════════════════ */
 

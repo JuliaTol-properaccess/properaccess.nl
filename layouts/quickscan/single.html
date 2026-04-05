@@ -1,20 +1,31 @@
 {{ define "main" }}
 
-<!-- ════════ HERO ════════ -->
-<section class="qs-hero">
-  <div class="qs-container">
-    <div class="qs-hero__grid">
-      <div class="qs-hero__content">
-        <h1 class="qs-hero__title">Hoe toegankelijk is jouw website <span class="qs-highlight">echt</span>?</h1>
-        <p class="qs-hero__subtitle">Een geautomatiseerde scan kijkt naar code. Een auditor ziet de impact.</p>
-        <p class="qs-hero__pitch">Onze gratis quickscan wordt uitgevoerd door een IAAP-gecertificeerde specialist — met toetsenbord, screenreader en echte browsers. Geen software, geen verkooppraatje. Gewoon een eerlijk antwoord.</p>
-        <div class="qs-hero__actions">
-          <a href="#bestel" class="qs-btn qs-btn--primary">Vraag je gratis quickscan aan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-          <a href="#aanbod" class="qs-btn qs-btn--ghost">Bekijk wat je krijgt</a>
+<!-- ─── HERO ─── -->
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">Gratis quickscan</span>
+        <h1 class="hp-hero__title">
+          Hoe toegankelijk is jouw website <span class="hp-hero__title-accent">echt</span>?
+        </h1>
+        <p class="hp-hero__subtitle">
+          Een geautomatiseerde scan kijkt naar code. Een auditor ziet de impact.
+          Onze gratis quickscan wordt uitgevoerd door een IAAP-gecertificeerde
+          specialist — met toetsenbord, screenreader en echte browsers.
+        </p>
+        <div class="hp-hero__actions">
+          <a href="#bestel" class="hp-btn hp-btn--primary">
+            Vraag je gratis quickscan aan
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="#aanbod" class="hp-btn hp-btn--outline">
+            Bekijk wat je krijgt
+          </a>
         </div>
       </div>
-      <div class="qs-hero__visual" aria-hidden="true">
-        <div class="qs-hero-card qs-hero-card--main">
+      <div class="hp-hero__visual">
+        <div class="qs-hero-card">
           <div class="qs-hero-card__header">
             <span class="qs-hero-card__dot qs-hero-card__dot--red"></span>
             <span class="qs-hero-card__dot qs-hero-card__dot--yellow"></span>
@@ -44,9 +55,11 @@
             </div>
           </div>
         </div>
-        <div class="qs-hero-card qs-hero-card--float">
-          <span class="qs-hero-card__float-number">3<span style="font-weight:400;color:#6B7280">/5</span></span>
-          <span class="qs-hero-card__float-label">Punten met risico</span>
+        <div class="hp-hero__stats-card" aria-label="Risicoscore">
+          <div class="hp-hero__stat">
+            <span class="hp-hero__stat-number">3<span style="font-weight:400;color:#6B7280">/5</span></span>
+            <span class="hp-hero__stat-label">punten met risico</span>
+          </div>
         </div>
       </div>
     </div>
@@ -54,11 +67,11 @@
 </section>
 
 
-<!-- ════════ TRUST BAR ════════ -->
-<div class="qs-trust">
-  <div class="qs-container">
-    <p class="qs-trust__label">Vertrouwd door</p>
-    <div class="qs-trust__names">
+<!-- ─── TRUST BAR ─── -->
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">Vertrouwd door</p>
+    <div class="hp-trust__names">
       <span>Rijksmuseum</span>
       <span>Van Gogh Museum</span>
       <span>NRC</span>
@@ -66,108 +79,116 @@
       <span>Museumvereniging</span>
     </div>
   </div>
-</div>
+</section>
 
 
-<!-- ════════ PROBLEM ════════ -->
-<section class="qs-section qs-section--lines">
-  <div class="qs-container">
-    <div class="qs-animate" style="text-align: center;">
-      <p class="qs-section__label">Het probleem</p>
-      <h2 class="qs-section__title">Automatische scans vinden maar 30% van de echte problemen</h2>
-      <p class="qs-section__intro" style="margin-left: auto; margin-right: auto;">Er zijn tientallen gratis tools die je website scannen en een rapport uitspugen. Klinkt handig. Maar deze tools testen alleen de code — niet hoe je website daadwerkelijk werkt voor echte mensen.</p>
+<!-- ─── HET PROBLEEM ─── -->
+<section class="qs-section">
+  <div class="hp-container">
+    <div style="text-align: center; max-width: 48rem; margin-inline: auto;">
+      <span class="hp-hero__badge" style="margin-bottom: 1rem;">Het probleem</span>
+      <h2 class="hp-heading-lg">Automatische scans vinden maar 30% van de echte problemen</h2>
+      <p class="qs-section__intro">
+        Er zijn tientallen gratis tools die je website scannen en een rapport uitspugen.
+        Klinkt handig. Maar deze tools testen alleen de code — niet hoe je website
+        daadwerkelijk werkt voor echte mensen.
+      </p>
     </div>
 
-    <div class="qs-features">
-      <div class="qs-feature qs-animate qs-animate--delay-1">
-        <div class="qs-feature__icon"><i class="fa-solid fa-keyboard" aria-hidden="true"></i></div>
-        <div>
-          <h3 class="qs-feature__title">Toetsenbord</h3>
-          <p class="qs-feature__desc">Is je website bruikbaar met alleen een toetsenbord?</p>
+    <div class="qs-features-grid">
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">keyboard</span>
         </div>
+        <h3 class="hp-service-card__title">Toetsenbord</h3>
+        <p class="hp-service-card__desc">Is je website bruikbaar met alleen een toetsenbord?</p>
       </div>
-      <div class="qs-feature qs-animate qs-animate--delay-2">
-        <div class="qs-feature__icon"><i class="fa-solid fa-volume-high" aria-hidden="true"></i></div>
-        <div>
-          <h3 class="qs-feature__title">Screenreader</h3>
-          <p class="qs-feature__desc">Leest een screenreader de juiste informatie voor?</p>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span>
         </div>
+        <h3 class="hp-service-card__title">Screenreader</h3>
+        <p class="hp-service-card__desc">Leest een screenreader de juiste informatie voor?</p>
       </div>
-      <div class="qs-feature qs-animate qs-animate--delay-1">
-        <div class="qs-feature__icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></div>
-        <div>
-          <h3 class="qs-feature__title">Foutmeldingen</h3>
-          <p class="qs-feature__desc">Geven formulieren begrijpelijke foutmeldingen?</p>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">warning</span>
         </div>
+        <h3 class="hp-service-card__title">Foutmeldingen</h3>
+        <p class="hp-service-card__desc">Geven formulieren begrijpelijke foutmeldingen?</p>
       </div>
-      <div class="qs-feature qs-animate qs-animate--delay-2">
-        <div class="qs-feature__icon"><i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i></div>
-        <div>
-          <h3 class="qs-feature__title">Focusvolgorde</h3>
-          <p class="qs-feature__desc">Is de focusvolgorde logisch?</p>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">swap_vert</span>
         </div>
+        <h3 class="hp-service-card__title">Focusvolgorde</h3>
+        <p class="hp-service-card__desc">Is de focusvolgorde logisch?</p>
       </div>
     </div>
 
-    <div class="qs-animate" style="text-align: center; margin-top: 2.5rem;">
-      <blockquote class="qs-blockquote" style="max-width: 42rem; margin-left: auto; margin-right: auto;">
-        <p>&ldquo;In maart 2026 onderzocht de ACM de 100 grootste webshops. 61% bleek niet toegankelijk — terwijl veel van die webshops prima scoorden bij automatische scanners.&rdquo;</p>
-      </blockquote>
+    <blockquote class="qs-blockquote">
+      <p>&ldquo;In maart 2026 onderzocht de ACM de 100 grootste webshops. 61% bleek niet
+        toegankelijk — terwijl veel van die webshops prima scoorden bij automatische scanners.&rdquo;</p>
+    </blockquote>
+  </div>
+</section>
+
+
+<!-- ─── HET AANBOD ─── -->
+<section class="hp-services" id="aanbod">
+  <div class="hp-container">
+    <div class="qs-offer-grid">
+      <div class="qs-offer-text">
+        <span class="hp-hero__badge" style="margin-bottom: 1rem;">Het aanbod</span>
+        <h2 class="hp-heading-lg">Gratis quickscan: een mens test jouw website</h2>
+        <div class="qs-price-tag">Gratis</div>
+        <p class="qs-offer-desc">
+          Wij kijken met je mee. Geen algoritme, geen AI-scan — een specialist die
+          jouw website test zoals een bezoeker dat doet. Met toetsenbord, screenreader
+          en verschillende browsers.
+        </p>
+        <a href="#bestel" class="hp-btn hp-btn--primary" style="margin-top: 1.5rem;">
+          Vraag je gratis quickscan aan
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+      <div class="qs-offer-items">
+        <div class="hp-service-card">
+          <div class="hp-service-card__icon">
+            <span class="material-symbols-outlined" aria-hidden="true">description</span>
+          </div>
+          <h3 class="hp-service-card__title">Risico-overzicht</h3>
+          <p class="hp-service-card__desc">Welke onderdelen het grootste risico vormen, met screenshots.</p>
+        </div>
+        <div class="hp-service-card">
+          <div class="hp-service-card__icon">
+            <span class="material-symbols-outlined" aria-hidden="true">checklist</span>
+          </div>
+          <h3 class="hp-service-card__title">Score op 5 kritieke punten</h3>
+          <p class="hp-service-card__desc">Toetsenbord, contrast, screenreader, navigatie en formulieren.</p>
+        </div>
+        <div class="hp-service-card">
+          <div class="hp-service-card__icon">
+            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+          </div>
+          <h3 class="hp-service-card__title">Inschatting boeterisico</h3>
+          <p class="hp-service-card__desc">Hoog, midden of laag per onderdeel.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-<!-- ════════ OFFER ════════ -->
-<section class="qs-section qs-section--grey qs-section--grid" id="aanbod">
-  <div class="qs-container">
-    <div class="qs-split">
-      <div class="qs-split__left qs-animate">
-        <p class="qs-section__label">Het aanbod</p>
-        <h2 class="qs-section__title">Gratis quickscan: een mens test jouw website</h2>
-        <div class="qs-offer__price-tag">
-          <strong>Gratis</strong>
-        </div>
-        <p style="margin-top: 1rem; font-size: 1.0625rem; color: #374151;">Wij kijken met je mee. Geen algoritme, geen AI-scan — een specialist die jouw website test zoals een bezoeker dat doet. Met toetsenbord, screenreader en verschillende browsers.</p>
-        <a href="#bestel" class="qs-btn qs-btn--primary" style="margin-top: 2rem;">Vraag je gratis quickscan aan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      </div>
-      <div class="qs-split__right qs-animate qs-animate--delay-2">
-        <div class="qs-offer-item">
-          <div class="qs-offer-item__icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
-          <div>
-            <h3 class="qs-offer-item__title">Risico-overzicht</h3>
-            <p class="qs-offer-item__desc">Welke onderdelen het grootste risico vormen, met screenshots.</p>
-          </div>
-        </div>
-        <div class="qs-offer-item">
-          <div class="qs-offer-item__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
-          <div>
-            <h3 class="qs-offer-item__title">Score op 5 kritieke punten</h3>
-            <p class="qs-offer-item__desc">Toetsenbord, contrast, screenreader, navigatie en formulieren.</p>
-          </div>
-        </div>
-        <div class="qs-offer-item">
-          <div class="qs-offer-item__icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></div>
-          <div>
-            <h3 class="qs-offer-item__title">Inschatting boeterisico</h3>
-            <p class="qs-offer-item__desc">Hoog, midden of laag per onderdeel.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════ COMPARISON TABLE ════════ -->
-<section class="qs-section qs-section--lines">
-  <div class="qs-container">
-    <div class="qs-animate" style="text-align: center;">
-      <p class="qs-section__label">Het verschil</p>
-      <h2 class="qs-section__title">Niet elke gratis scan is hetzelfde</h2>
+<!-- ─── VERGELIJKINGSTABEL ─── -->
+<section class="qs-section">
+  <div class="hp-container">
+    <div style="text-align: center; max-width: 48rem; margin-inline: auto; margin-bottom: 2.5rem;">
+      <span class="hp-hero__badge" style="margin-bottom: 1rem;">Het verschil</span>
+      <h2 class="hp-heading-lg">Niet elke gratis scan is hetzelfde</h2>
     </div>
 
-    <div class="qs-animate" style="margin-top: 2rem; overflow-x: auto;">
+    <div class="qs-table-wrap">
       <table class="qs-compare-table">
         <thead>
           <tr>
@@ -224,252 +245,202 @@
 </section>
 
 
-<!-- ════════ SOCIAL PROOF + CHART ════════ -->
-<section class="qs-section qs-section--crosses">
-  <div class="qs-container">
-    <div class="qs-split">
-      <div class="qs-split__left qs-animate">
-        <p class="qs-section__label">Resultaten</p>
-        <span class="qs-big-number">900+</span>
-        <span class="qs-big-number__label">websites geauditeerd</span>
-        <blockquote class="qs-blockquote">
-          <p>&ldquo;Proper Access denkt echt mee. Geen dik rapport met jargon, maar concrete oplossingen die ons team direct kon doorvoeren.&rdquo;</p>
-          <cite>Van de Rijksoverheid tot het Rijksmuseum. Van NRC tot Coolblue-concurrenten.</cite>
-        </blockquote>
-      </div>
-      <div class="qs-split__right qs-animate qs-animate--delay-2" aria-hidden="true">
-        <svg viewBox="0 0 360 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="qs-chart">
-          <text x="100" y="16" fill="#1F2937" font-size="12" font-family="Nunito, sans-serif" font-weight="700">Toegankelijkheidsscore na quickscan</text>
-          <line x1="40" y1="30" x2="40" y2="180" stroke="#e5e7eb" stroke-width="0.5"/>
-          <line x1="40" y1="180" x2="340" y2="180" stroke="#e5e7eb" stroke-width="0.5"/>
-          <line x1="40" y1="130" x2="340" y2="130" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4"/>
-          <line x1="40" y1="80" x2="340" y2="80" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4"/>
-          <line x1="40" y1="30" x2="340" y2="30" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4"/>
-          <text x="10" y="183" fill="#9ca3af" font-size="10" font-family="Nunito, sans-serif">0%</text>
-          <text x="6" y="133" fill="#9ca3af" font-size="10" font-family="Nunito, sans-serif">33%</text>
-          <text x="6" y="83" fill="#9ca3af" font-size="10" font-family="Nunito, sans-serif">66%</text>
-          <text x="2" y="34" fill="#9ca3af" font-size="10" font-family="Nunito, sans-serif">100%</text>
-          <path d="M70 160 L145 140 L220 105 L295 55 L340 38 L340 180 L70 180Z" fill="url(#qs-grad)" opacity="0.12"/>
-          <path d="M70 160 L145 140 L220 105 L295 55 L340 38" stroke="#A30D4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="70" cy="160" r="4" fill="#A30D4B"/>
-          <circle cx="145" cy="140" r="4" fill="#A30D4B"/>
-          <circle cx="220" cy="105" r="4" fill="#A30D4B"/>
-          <circle cx="295" cy="55" r="4" fill="#A30D4B"/>
-          <circle cx="340" cy="38" r="6" fill="#F5C842" stroke="#A30D4B" stroke-width="2"/>
-          <text x="46" y="198" fill="#9ca3af" font-size="9" font-family="Nunito, sans-serif">Quickscan</text>
-          <text x="130" y="198" fill="#9ca3af" font-size="9" font-family="Nunito, sans-serif">Fix #1</text>
-          <text x="205" y="198" fill="#9ca3af" font-size="9" font-family="Nunito, sans-serif">Fix #2</text>
-          <text x="280" y="198" fill="#9ca3af" font-size="9" font-family="Nunito, sans-serif">Fix #3</text>
-          <text x="316" y="198" fill="#9ca3af" font-size="9" font-family="Nunito, sans-serif">100%</text>
-          <defs>
-            <linearGradient id="qs-grad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#A30D4B" stop-opacity="0.4"/>
-              <stop offset="100%" stop-color="#A30D4B" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-        </svg>
+<!-- ─── SOCIAL PROOF ─── -->
+<section class="hp-legal-cta">
+  <div class="hp-container">
+    <div class="hp-legal-cta__card">
+      <div class="hp-legal-cta__gradient" aria-hidden="true"></div>
+      <div class="hp-legal-cta__columns">
+        <div class="hp-legal-cta__content">
+          <span class="hp-hero__stat-number" style="color: #fff; font-size: 3.5rem;">900+</span>
+          <span class="hp-hero__stat-label" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; display: block;">websites geauditeerd</span>
+          <blockquote class="qs-blockquote qs-blockquote--dark">
+            <p>&ldquo;Proper Access denkt echt mee. Geen dik rapport met jargon, maar concrete
+              oplossingen die ons team direct kon doorvoeren.&rdquo;</p>
+          </blockquote>
+        </div>
+        <div class="hp-legal-cta__content">
+          <div class="qs-stats-mini">
+            <div class="qs-stats-mini__item">
+              <span class="qs-stats-mini__number">53</span>
+              <span class="qs-stats-mini__label">klanten</span>
+            </div>
+            <div class="qs-stats-mini__item">
+              <span class="qs-stats-mini__number">34%</span>
+              <span class="qs-stats-mini__label">herhalingsklanten</span>
+            </div>
+          </div>
+          <p class="hp-legal-cta__desc">
+            Van de Rijksoverheid tot het Rijksmuseum. Van NRC tot Jumbo.
+            We werken voor organisaties die het goed willen doen.
+          </p>
+          <a href="/offerte-wcag-onderzoek/" class="hp-btn hp-btn--white">
+            Vraag een offerte aan
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- ════════ STATS BAR ════════ -->
-<section class="qs-stats-bar qs-section--teal">
-  <div class="qs-container">
-    <div class="qs-stats-bar__grid">
-      <div class="qs-stats-bar__item qs-animate">
-        <span class="qs-stats-bar__number">900+</span>
-        <span class="qs-stats-bar__label">audits uitgevoerd</span>
-      </div>
-      <div class="qs-stats-bar__item qs-animate qs-animate--delay-1">
-        <span class="qs-stats-bar__number">53</span>
-        <span class="qs-stats-bar__label">klanten</span>
-      </div>
-      <div class="qs-stats-bar__item qs-animate qs-animate--delay-2">
-        <span class="qs-stats-bar__number">34%</span>
-        <span class="qs-stats-bar__label">herhalingsklanten</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════ WHY FREE ════════ -->
+<!-- ─── WAAROM GRATIS ─── -->
 <section class="qs-section">
-  <div class="qs-container">
-    <div class="qs-animate" style="text-align: center;">
-      <p class="qs-section__label">Eerlijk verhaal</p>
-      <h2 class="qs-section__title">Waarom bieden we dit gratis aan?</h2>
-    </div>
-    <div class="qs-why__text qs-animate" style="text-align: center; margin-left: auto; margin-right: auto;">
-      <p>Omdat we geloven dat elke organisatie moet weten waar ze staat. Te veel website-eigenaren stellen het uit omdat een volledige audit duizenden euro's kost. Dat begrijpen we.</p>
-      <p style="margin-top: 1rem;">Deze quickscan geeft je het overzicht om een goede beslissing te nemen. Zonder grote investering vooraf.</p>
-      <p style="margin-top: 1rem;">En ja, we hopen dat je daarna bij ons aanklopt als je verder wilt. Maar dat is aan jou. Geen verkooppraatjes, geen opvolg-e-mails die je niet wilt.</p>
+  <div class="hp-container">
+    <div style="text-align: center; max-width: 42rem; margin-inline: auto;">
+      <span class="hp-hero__badge" style="margin-bottom: 1rem;">Eerlijk verhaal</span>
+      <h2 class="hp-heading-lg">Waarom bieden we dit gratis aan?</h2>
+      <p class="qs-section__intro">
+        Omdat we geloven dat elke organisatie moet weten waar ze staat. Te veel
+        website-eigenaren stellen het uit omdat een volledige audit duizenden euro's kost.
+      </p>
+      <p class="qs-section__intro">
+        Deze quickscan geeft je het overzicht om een goede beslissing te nemen.
+        Zonder grote investering vooraf.
+      </p>
+      <p class="qs-section__intro">
+        En ja, we hopen dat je daarna bij ons aanklopt als je verder wilt.
+        Maar dat is aan jou. Geen verkooppraatjes, geen opvolg-e-mails die je niet wilt.
+      </p>
     </div>
   </div>
 </section>
 
 
-<!-- ════════ STEPS ════════ -->
-<section class="qs-section qs-section--grey qs-section--diamonds">
-  <div class="qs-container">
-    <div class="qs-animate" style="text-align: center;">
-      <p class="qs-section__label">Hoe het werkt</p>
-      <h2 class="qs-section__title">3 stappen</h2>
+<!-- ─── HOE HET WERKT ─── -->
+<section class="hp-services">
+  <div class="hp-container">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span class="hp-hero__badge" style="margin-bottom: 1rem;">Hoe het werkt</span>
+      <h2 class="hp-heading-lg">3 stappen</h2>
     </div>
 
     <div class="qs-steps-grid">
-      <div class="qs-step qs-animate qs-animate--delay-1">
-        <div class="qs-step__number">1</div>
-        <h3 class="qs-step__title">Vul het formulier in</h3>
-        <p class="qs-step__desc">Je URL en e-mailadres. Meer hebben we niet nodig.</p>
+      <div class="hp-service-card qs-step-card">
+        <div class="qs-step-number">1</div>
+        <h3 class="hp-service-card__title">Vul het formulier in</h3>
+        <p class="hp-service-card__desc">Je URL en e-mailadres. Meer hebben we niet nodig.</p>
       </div>
-      <div class="qs-step qs-animate qs-animate--delay-2">
-        <div class="qs-step__number">2</div>
-        <h3 class="qs-step__title">Wij testen handmatig</h3>
-        <p class="qs-step__desc">Een IAAP-gecertificeerde specialist checkt jouw website op de 5 kritieke punten. Met toetsenbord, screenreader en verschillende apparaten.</p>
+      <div class="hp-service-card qs-step-card">
+        <div class="qs-step-number">2</div>
+        <h3 class="hp-service-card__title">Wij testen handmatig</h3>
+        <p class="hp-service-card__desc">Een IAAP-gecertificeerde specialist checkt jouw website op de 5 kritieke punten. Met toetsenbord, screenreader en verschillende apparaten.</p>
       </div>
-      <div class="qs-step qs-animate qs-animate--delay-3">
-        <div class="qs-step__number">3</div>
-        <h3 class="qs-step__title">Je ontvangt je rapport</h3>
-        <p class="qs-step__desc">Een overzicht met je risicoscore, screenshots van de belangrijkste problemen, en concrete eerste stappen.</p>
+      <div class="hp-service-card qs-step-card">
+        <div class="qs-step-number">3</div>
+        <h3 class="hp-service-card__title">Je ontvangt je rapport</h3>
+        <p class="hp-service-card__desc">Een overzicht met je risicoscore, screenshots van de belangrijkste problemen, en concrete eerste stappen.</p>
       </div>
     </div>
 
-    <div class="qs-animate" style="margin-top: 3rem; text-align: center;">
-      <a href="#bestel" class="qs-btn qs-btn--primary">Vraag je gratis quickscan aan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="#bestel" class="hp-btn hp-btn--primary">
+        Vraag je gratis quickscan aan
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
     </div>
   </div>
 </section>
 
 
-<!-- ════════ FAQ ════════ -->
-<section class="qs-section qs-section--dots">
-  <div class="qs-container">
-    <div class="qs-animate" style="text-align: center;">
-      <p class="qs-section__label">Veelgestelde vragen</p>
-      <h2 class="qs-section__title">FAQ</h2>
-    </div>
-
-    <div class="qs-faq-list qs-animate">
-      <details class="qs-faq-item">
-        <summary>Is dit echt gratis?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Ja. Geen verborgen kosten, geen verplicht vervolggesprek. Je krijgt een rapport en daarmee kun je doen wat je wilt.</p>
-        </div>
+<!-- ─── FAQ ─── -->
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
+    <div class="hp-faq__container faq-container">
+      <details class="faq-item">
+        <summary class="faq-question">Is dit echt gratis?</summary>
+        <div class="faq-answer"><p>Ja. Geen verborgen kosten, geen verplicht vervolggesprek. Je krijgt een rapport en daarmee kun je doen wat je wilt.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Wat is het verschil met een gratis online scanner?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Online scanners zijn geautomatiseerd en testen alleen de code. Wij testen handmatig, met toetsenbord en screenreader. Dat is het verschil tussen een spellchecker en een redacteur.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Wat is het verschil met een gratis online scanner?</summary>
+        <div class="faq-answer"><p>Online scanners zijn geautomatiseerd en testen alleen de code. Wij testen handmatig, met toetsenbord en screenreader. Dat is het verschil tussen een spellchecker en een redacteur.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Is dit een automatische scan?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Nee. Een mens bekijkt je website. We testen met toetsenbord, screenreader en verschillende browsers. Automatische tools vinden maar 30% van de problemen.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Is dit een automatische scan?</summary>
+        <div class="faq-answer"><p>Nee. Een mens bekijkt je website. We testen met toetsenbord, screenreader en verschillende browsers. Automatische tools vinden maar 30% van de problemen.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Hoeveel pagina's worden getest?</summary>
-        <div class="qs-faq-item__answer">
-          <p>De homepage en twee andere belangrijke pagina's die het meest relevant zijn voor jouw bezoekers.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Hoeveel pagina's worden getest?</summary>
+        <div class="faq-answer"><p>De homepage en twee andere belangrijke pagina's die het meest relevant zijn voor jouw bezoekers.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Kan ik hiermee een toegankelijkheidsverklaring opstellen?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Nee, daar is een volledige audit voor nodig. Maar de quickscan geeft je een helder beeld van wat er nodig is en wat het gaat kosten.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Kan ik hiermee een toegankelijkheidsverklaring opstellen?</summary>
+        <div class="faq-answer"><p>Nee, daar is een volledige audit voor nodig. Maar de quickscan geeft je een helder beeld van wat er nodig is en wat het gaat kosten.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Wat als ik goed scoor?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Dan weet je dat ook. En heb je een basis om intern te communiceren. We vertellen je eerlijk waar je staat — ook als het goed nieuws is.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Wat als ik goed scoor?</summary>
+        <div class="faq-answer"><p>Dan weet je dat ook. En heb je een basis om intern te communiceren. We vertellen je eerlijk waar je staat — ook als het goed nieuws is.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Kan ik daarna een volledige audit laten doen?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Ja. De bevindingen uit je quickscan nemen we mee, zodat je niet dubbel betaalt.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Kan ik daarna een volledige audit laten doen?</summary>
+        <div class="faq-answer"><p>Ja. De bevindingen uit je quickscan nemen we mee, zodat je niet dubbel betaalt.</p></div>
       </details>
-
-      <details class="qs-faq-item">
-        <summary>Verkopen jullie software of widgets?</summary>
-        <div class="qs-faq-item__answer">
-          <p>Nee. Wij zijn onafhankelijk. We doen alleen audits en advies. Geen overlays, geen widgets, geen software. Dat is ook waarom je ons kunt vertrouwen als we zeggen dat iets niet goed zit.</p>
-        </div>
+      <details class="faq-item">
+        <summary class="faq-question">Verkopen jullie software of widgets?</summary>
+        <div class="faq-answer"><p>Nee. Wij zijn onafhankelijk. We doen alleen audits en advies. Geen overlays, geen widgets, geen software.</p></div>
       </details>
     </div>
   </div>
 </section>
 
 
-<!-- ════════ ORDER FORM ════════ -->
-<section class="qs-section qs-section--dark qs-form-section" id="bestel">
-  <div class="qs-container">
+<!-- ─── BESTELFORMULIER ─── -->
+<section class="qs-form-section" id="bestel">
+  <div class="hp-container">
     <div class="qs-form-wrapper">
-      <div class="qs-animate">
-        <h2 class="qs-section__title">Vraag je gratis quickscan aan</h2>
-      </div>
+      <h2 class="hp-heading-lg" style="color: #fff; margin-bottom: 1.5rem;">Vraag je gratis quickscan aan</h2>
 
-      <form
-        class="qs-form qs-animate"
-        id="qs-order-form">
-
+      <form class="hp-form" id="qs-order-form">
         <input type="hidden" name="_subject" value="Nieuwe quickscan aanvraag" />
         <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
 
-        <div class="qs-form__group">
-          <label for="qs-url" class="qs-form__label">
-            URL van je website of app <span style="color: rgba(255,255,255,0.85); font-weight: 400;">(https://)</span> <span class="qs-form__required" aria-label="verplicht">*</span>
+        <div class="hp-form__field">
+          <label class="hp-form__label qs-form-label--light" for="qs-url">
+            URL van je website of app (https://) <span aria-label="verplicht">*</span>
           </label>
-          <input type="url" id="qs-url" name="website_url" required autocomplete="url" placeholder="https://jouwwebsite.nl" class="qs-form__input" />
+          <input class="hp-form__input" type="url" id="qs-url" name="website_url" required autocomplete="url" placeholder="https://jouwwebsite.nl" />
         </div>
 
-        <div class="qs-form__group">
-          <label for="qs-email" class="qs-form__label">
-            E-mailadres <span class="qs-form__required" aria-label="verplicht">*</span>
+        <div class="hp-form__field">
+          <label class="hp-form__label qs-form-label--light" for="qs-email">
+            E-mailadres <span aria-label="verplicht">*</span>
           </label>
-          <input type="email" id="qs-email" name="email" required autocomplete="email" placeholder="naam@bedrijf.nl" class="qs-form__input" />
+          <input class="hp-form__input" type="email" id="qs-email" name="email" required autocomplete="email" placeholder="naam@bedrijf.nl" />
         </div>
 
-        <div class="qs-form__group">
-          <label for="qs-company" class="qs-form__label">Bedrijfsnaam</label>
-          <input type="text" id="qs-company" name="bedrijfsnaam" autocomplete="organization" placeholder="Jouw Bedrijf B.V." class="qs-form__input" />
+        <div class="hp-form__field">
+          <label class="hp-form__label qs-form-label--light" for="qs-company">Bedrijfsnaam</label>
+          <input class="hp-form__input" type="text" id="qs-company" name="bedrijfsnaam" autocomplete="organization" placeholder="Jouw Bedrijf B.V." />
         </div>
 
-        <div class="qs-form__group">
-          <label for="qs-notes" class="qs-form__label">Opmerkingen <span style="color: rgba(255,255,255,0.85); font-weight: 400;">(optioneel)</span></label>
-          <textarea id="qs-notes" name="opmerkingen" placeholder="Zijn er specifieke pagina's of functies die je extra belangrijk vindt?" class="qs-form__textarea"></textarea>
+        <div class="hp-form__field">
+          <label class="hp-form__label qs-form-label--light" for="qs-notes">Opmerkingen (optioneel)</label>
+          <textarea class="hp-form__input hp-form__textarea" id="qs-notes" name="opmerkingen" placeholder="Zijn er specifieke pagina's of functies die je extra belangrijk vindt?" rows="3"></textarea>
         </div>
 
-        <button type="submit" class="qs-btn qs-btn--primary qs-form__submit">
-          Quickscan aanvragen <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <button type="submit" class="hp-btn hp-btn--white hp-btn--full">
+          Quickscan aanvragen
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
         </button>
 
-        <p class="qs-form__note">Je ontvangt je rapport binnen 5 werkdagen per e-mail.</p>
+        <p class="qs-form-note">Je ontvangt je rapport binnen 5 werkdagen per e-mail.</p>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ════════ UPSELL ════════ -->
-<section class="qs-section" style="padding-top: 2rem; padding-bottom: 2rem;">
-  <div class="qs-container">
-    <div style="text-align: center; padding: 1.5rem; background: #f5f5f5; border-radius: 8px;">
-      <p style="margin: 0;">Direct meer weten? <a href="/toegankelijkheidsaudit/#offerte">Vraag een offerte aan</a> voor een volledige audit — vanaf ca. 1.800 euro, inclusief concrete oplossingen in code en onbeperkte support.</p>
+
+<!-- ─── UPSELL ─── -->
+<section style="padding: 3rem 0;">
+  <div class="hp-container">
+    <div class="qs-upsell">
+      <p>Direct meer weten? <a href="/toegankelijkheidsaudit/">Vraag een offerte aan</a> voor een volledige audit — vanaf ca. 1.800 euro, inclusief concrete oplossingen in code en onbeperkte support.</p>
     </div>
   </div>
 </section>
+
 
 <script>
 (function() {
