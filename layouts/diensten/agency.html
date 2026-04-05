@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+{{ with .Params.banner }}
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">{{ $.Params.title }}</span>
+        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
+        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="hp-hero__actions">
+              <a class="hp-btn hp-btn--primary" href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
+                {{ .label }}
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+              <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+                Bel 085 5055 890
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="hp-hero__visual" aria-hidden="true">
+        {{ partial "voor-wie/svg-agency.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── TRUST BAR ─── -->
+{{ with .Params.trust }}
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">{{ .label }}</p>
+    <div class="hp-trust__names">
+      {{ range .names }}
+        <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── CONTENT ─── -->
+<article class="offerte-content">
+  {{ .Content }}
+</article>
+
+<!-- ─── STATS ─── -->
+{{ partial "voor-wie/stats-bar.html" . }}
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

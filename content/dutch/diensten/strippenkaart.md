@@ -69,13 +69,11 @@ Veel klanten starten met een audit voor het complete beeld en gebruiken daarna d
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< section-split title="Benieuwd of een strippenkaart bij je past?" contact="true" >}}
 
-Benieuwd of een strippenkaart bij je past? Neem contact op voor een vrijblijvend gesprek.
+Neem contact op voor een vrijblijvend gesprek. We adviseren je over een passende bundel.
 
-[Neem contact op →](/contact/)
-
-{{< /section-cta >}}
+{{< /section-split >}}
 
 {{< section-full title="Altijd toegang tot senior auditor" >}}
 
