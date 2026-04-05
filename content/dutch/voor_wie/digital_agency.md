@@ -17,7 +17,7 @@ keywords:
 
 banner:
   title: "Je klant vraagt om WCAG — weet jouw team waar te beginnen?"
-  content: "Je bouwt websites voor klanten die aan de EAA moeten voldoen. Ze verwachten dat jij ze helpt. Maar WCAG is een vak apart — en niet iets wat je even 'erbij doet'. Screenreaders testen, ARIA-attributen, focusstijlen, kleurcontrast... je team heeft geen tijd om specialist te worden. Dat hoeft ook niet. Wij zijn jullie WCAG-partner. Jullie bouwen, wij zorgen dat het toegankelijk is."
+  content: "Je bouwt websites voor klanten die aan de EAA moeten voldoen. Ze verwachten dat jij ze helpt. Maar WCAG is een vak apart — en niet iets wat je even 'erbij doet'. Screenreaders testen, ARIA-attributen, focusstijlen, kleurcontrast... je team heeft geen tijd om specialist te worden. Dat hoeft ook niet. Wij zijn jullie WCAG-partner. Jullie bouwen, wij testen of het toegankelijk is."
   button:
     enable: true
     label: "Stel je vraag — we denken mee"
@@ -60,13 +60,11 @@ De toezichthouder (ACM of AFM) kan boetes uitdelen tot € 900.000 voor grote be
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< section-split title="Benieuwd hoe jouw klantproject scoort?" contact="true" >}}
 
-Benieuwd hoe jouw klantproject scoort? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
 
-[Vraag een gratis quickscan aan →](/webshop-quickscan/)
-
-{{< /section-cta >}}
+{{< /section-split >}}
 
 {{< section-cards title="Herkenbaar? Dit zien we bij agency-projecten" columns="2" bg="light" >}}
 {{< section-card title="De klant vraagt om een toegankelijkheidsverklaring" >}}
@@ -152,7 +150,7 @@ We checken de aangepaste onderdelen. Je krijgt een bijgewerkt rapport met de sta
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< offerte-section title="Welke dienst past bij jouw agency?" >}}
+{{< section-full title="Welke dienst past bij jouw agency?" >}}
 
 We hebben drie diensten. Welke past, hangt af van waar je staat.
 
@@ -166,7 +164,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
-{{< /offerte-section >}}
+{{< /section-full >}}
 
 {{< section-cards title="Waarom agencies voor ons kiezen" subtitle="Elk bureau kan een WCAG-audit uitvoeren. Het verschil zit in wat er daarna gebeurt." columns="2" bg="light" >}}
 {{< section-card title="Rapporten die je team begrijpt" >}}

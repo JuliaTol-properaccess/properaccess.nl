@@ -51,60 +51,6 @@
   {{ .Content }}
 </article>
 
-<!-- ─── OFFERTE FORMULIER ─── -->
-<section class="hp-contact-section">
-  <div class="hp-container">
-    <div class="hp-contact__grid">
-      <div class="hp-contact__text">
-        <h2 class="hp-heading-lg">Offerte aanvragen</h2>
-        <p class="hp-contact__intro">
-          Wil je weten wat een audit van je webshop kost? Vul het formulier in
-          en we reageren binnen 1 werkdag met een indicatie.
-        </p>
-      </div>
-      <div class="hp-contact__form-card">
-        <form id="ecommerce-offerte-form" class="hp-form" aria-label="Offerteformulier">
-          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="ec-offerte-naam">Naam</label>
-            <input class="hp-form__input" type="text" id="ec-offerte-naam" name="naam" required autocomplete="name" placeholder="Je naam" />
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="ec-offerte-email">E-mailadres</label>
-            <input class="hp-form__input" type="email" id="ec-offerte-email" name="email" required autocomplete="email" placeholder="je@email.nl" />
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="ec-offerte-website">Website-URL</label>
-            <input class="hp-form__input" type="url" id="ec-offerte-website" name="website" placeholder="https://" />
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="ec-offerte-bericht">Toelichting (optioneel)</label>
-            <textarea class="hp-form__input hp-form__textarea" id="ec-offerte-bericht" name="bericht" rows="3" placeholder="Bijv. welk platform, aantal pagina's, deadline"></textarea>
-          </div>
-          <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
-            Offerte aanvragen
-          </button>
-          <div role="status" aria-live="polite"></div>
-        </form>
-        <script>
-          (function() {
-            var form = document.getElementById('ecommerce-offerte-form');
-            if (form) {
-              form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                paFormSubmit(form, {
-                  bron: 'offerte-ecommerce',
-                  successMessage: 'Verstuurd! We reageren binnen 1 werkdag met een indicatie.'
-                });
-              });
-            }
-          })();
-        </script>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ─── STATS ─── -->
 {{ partial "voor-wie/stats-bar.html" . }}
 

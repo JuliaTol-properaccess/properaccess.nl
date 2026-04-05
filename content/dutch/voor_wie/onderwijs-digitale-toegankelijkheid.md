@@ -113,18 +113,6 @@ Onze oprichter was 9 jaar ontwikkelaar bij de Rechtspraak, waar ze werkte met co
 
 {{< /section-full >}}
 
-{{< offerte-section title="Hoe wij onderwijsinstellingen helpen" >}}
-
-We snappen dat een onderwijsinstelling geen gewone website is. Je hebt te maken met meerdere platformen, externe leveranciers, honderden content-auteurs en een IT-afdeling die al overvol zit. Daarom bieden we verschillende instapniveaus.
-
-- **Gratis quickscan — weet waar je staat** — We checken je belangrijkste platform handmatig en geven je een risico-overzicht. Ideaal als je nog niet weet hoe groot het probleem is.
-- **WCAG-audit per platform** — We auditen je digitale leeromgeving, website of studentportaal volgens WCAG 2.2. Je krijgt een rapport per element met screenshots, impact en oplossingsrichtingen. [Bekijk een voorbeeldrapport](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/).
-- **Begeleiding tijdens het hele traject** — Na het rapport ben je er niet alleen mee. Je mag onbeperkt vragen stellen — over het rapport, over oplossingen, over prioriteiten. Je hebt een echt mens dat je kunt bellen of mailen. We zijn je partner, niet alleen je auditor.
-- **Retest na verbetering** — Verbeteringen doorgevoerd? We controleren of alles goed is opgelost.
-- **Borging** — Toegankelijkheid is geen eenmalig project. We trainen je redactie en developers, helpen controles inrichten voor publicatie en monitoren of het niveau op peil blijft. Zodat je niet elk jaar opnieuw hoeft te beginnen.
-
-{{< /offerte-section >}}
-
 {{< section-cards title="Waarom Proper Access voor onderwijs?" columns="2" bg="dark" >}}
 {{< section-card title="We kennen de techniek achter je platform" >}}
 

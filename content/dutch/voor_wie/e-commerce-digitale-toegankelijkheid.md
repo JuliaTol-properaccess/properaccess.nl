@@ -61,15 +61,11 @@ Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< section-split title="Wil je snel weten waar je staat?" contact="true" >}}
 
-Wil je snel weten waar je staat? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's.
+Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's. Of vraag direct een volledige audit aan (vanaf ca. 1.800 euro).
 
-[Vraag een gratis quickscan aan](/webshop-quickscan/)
-
-Of vraag direct een [volledige audit aan](#offerte) (vanaf ca. 1.800 euro).
-
-{{< /section-cta >}}
+{{< /section-split >}}
 
 {{< section-cards title="Herken je dit? Typische barrières in webshops" columns="2" bg="light" >}}
 {{< section-card title="Ontoegankelijke checkout" >}}
@@ -94,17 +90,6 @@ Chatbots die niet gesloten kunnen worden met toetsenbord, die de hele pagina blo
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< offerte-section id="offerte" title="Laat je webshop checken" >}}
-
-We hebben 900+ audits uitgevoerd sinds 2019, waaronder voor de grootste e-commerce spelers van Nederland. We kennen de typische valkuilen van elk platform — van Shopify tot Magento, WooCommerce tot maatwerkoplossingen.
-
-- **We toetsen de volledige klantreis** — van productzoeken en filteren tot winkelwagen, checkout en betaalprocessen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
-- **Rapport per pagina en per element** — met screenshots, concrete code-snippets en prioritering. Je developers weten precies wat ze moeten doen.
-- **Onbeperkt vragen stellen** — ook na oplevering van het rapport blijven we bereikbaar. Zonder meerkosten.
-
-**Investering:** een volledige webshop-audit start vanaf ca. 1.800 euro. Tijdens de kennismaking geven we direct een duidelijke indicatie.
-
-{{< /offerte-section >}}
 
 {{< section-cards title="Hoe het werkt" columns="3" bg="dark" >}}
 {{< section-card title="1. Kennismaking" >}}

@@ -148,7 +148,7 @@ Na het doorvoeren van de verbeteringen controleren we of alles correct is opgelo
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< offerte-section title="Welke dienst past bij jouw situatie?" >}}
+{{< section-full title="Welke dienst past bij jouw situatie?" >}}
 
 We hebben drie diensten. Welke past, hangt af van waar je staat.
 
@@ -162,7 +162,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
-{{< /offerte-section >}}
+{{< /section-full >}}
 
 {{< section-cards title="Waarom musea en culturele instellingen voor ons kiezen" subtitle="Elk bureau kan een WCAG-audit uitvoeren. Het verschil zit in wat er daarna gebeurt." image="/images/logos.webp" columns="2" bg="light" >}}
 {{< section-card title="Ervaring met de grootste musea van Nederland" >}}
