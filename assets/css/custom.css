@@ -6,10 +6,14 @@
   color: #fff !important;
   border-color: #A30D4B !important;
   border-radius: 9999px;
+  padding: 0.625rem 1.5rem !important;
+  font-size: 0.9rem !important;
+  box-shadow: 0 4px 14px rgba(163, 13, 75, 0.3);
 }
 
 .nav-btn-cta:hover {
   opacity: 0.9;
+  box-shadow: 0 6px 20px rgba(163, 13, 75, 0.4);
 }
 
 /* ─── Navigation highlight ─── */
