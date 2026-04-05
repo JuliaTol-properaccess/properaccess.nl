@@ -2,6 +2,8 @@
   {{ $image:= .Params.image }}
   {{ if $image }}
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+  {{ else }}
+    <img src="{{ "images/blog-placeholder.svg" | relURL }}" alt="" class="mb-6 w-full rounded" loading="lazy" />
   {{ end }}
   <h2 class="mb-3 h4">
     <a href="{{ .RelPermalink }}">
