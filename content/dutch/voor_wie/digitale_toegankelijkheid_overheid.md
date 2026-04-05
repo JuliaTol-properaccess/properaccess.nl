@@ -61,13 +61,11 @@ We werken sinds 2019 met tientallen overheidsorganisaties. Wat we telkens zien: 
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< section-split title="Vraag een offerte aan" photos="images/julia.webp, images/phi.jpeg" contact="true" >}}
 
-Benieuwd hoe jouw website scoort? Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste bevindingen.
+Stuur ons je URL en we reageren binnen 1 werkdag met een indicatie. Geen verplichtingen, geen verrassingen achteraf.
 
-[Vraag een gratis quickscan aan →](/webshop-quickscan/)
-
-{{< /section-cta >}}
+{{< /section-split >}}
 
 {{< section-cards title="Herken je dit?" columns="2" bg="light" >}}
 {{< section-card title="We hebben een audit, maar niemand snapt het rapport" >}}
@@ -75,9 +73,9 @@ Benieuwd hoe jouw website scoort? Vraag een gratis quickscan aan en ontvang binn
 Je hebt een audit-rapport van 80 pagina's. Succescriterium 1.3.1 is niet gehaald. Prima. Maar wat moet je development-team nu precies doen? En welke pagina's zijn het belangrijkst? Bij ons krijg je een rapport per pagina en per element. Met screenshots, code-snippets en concrete oplossingen. Zodat je team direct aan de slag kan.
 
 {{< /section-card >}}
-{{< section-card title="Onze toegankelijkheidsverklaring klopt niet meer" >}}
+{{< section-card title="Onze verklaringen zijn niet meer up-to-date" >}}
 
-Je hebt vorig jaar een verklaring opgesteld. Maar er zijn sindsdien twee nieuwe websites gelanceerd, een app ge-updatet en een portaal vervangen. We helpen je bij het opstellen en actueel houden van je verklaring. Voor al je websites en apps. Met begeleiding in de Mijn-omgeving van DigiToegankelijk en ondersteuning bij DIP-meldingen.
+We hebben een aantal verklaringen in het register staan. Sommige zijn bijna verlopen, sommige websites bestaan niet meer of zijn grondig gewijzigd. We gaan samen met je kijken naar de meest efficiente en kostenbesparende manier naar een groene dashboard. Voor al je websites en apps. Met begeleiding in de Mijn-omgeving van DigiToegankelijk en ondersteuning bij DIP-meldingen.
 
 {{< /section-card >}}
 {{< section-card title="We hebben 47 websites en weten niet waar te beginnen" >}}
@@ -89,28 +87,22 @@ Gemeenten hebben soms tientallen websites: hoofdsite, raadsinformatie, toerisme,
 
 Je hebt een nieuw CMS, portaal of app laten ontwikkelen. De leverancier heeft gegarandeerd dat het WCAG-conform is. Maar je durft het niet te vertrouwen. Wij controleren wat je leverancier beweert. Voordat je oplevert. Zodat je niet achteraf met dure aanpassingen zit.
 
+We gaan samen met je in gesprek met je leverancier. Je staat er niet alleen voor.
+
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cta >}}
+{{< section-split title="Je hebt geen audit nodig die eindigt met 'succes ermee'" >}}
 
-Je hebt geen audit nodig die eindigt met "succes ermee". Je hebt iemand nodig die meedenkt over wat er moet gebeuren, in welke volgorde, en hoe je dat voor elkaar krijgt met de middelen die je hebt.
+Je hebt iemand nodig die meedenkt over wat er moet gebeuren, in welke volgorde, en hoe je dat voor elkaar krijgt met de middelen die je hebt.
 
-[Vraag een offerte aan →](/offerte-wcag-onderzoek/)
+- **Volledige toetsing** — 200+ controlepunten per pagina, handmatig getest met screenreaders en toetsenbord.
+- **Rapport per element** — met screenshots, code-snippets en oplossingen. [Bekijk een voorbeeldrapport](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/).
+- **Prioritering** — wat moet eerst, wat kan later?
+- **Begeleiding bij vervolgstappen** — rapportbespreking, toegankelijkheidsverklaring, DigiToegankelijk en DIP.
+- **Onbeperkt vragen stellen** — ook weken of maanden na oplevering.
 
-{{< /section-cta >}}
-
-{{< offerte-section title="Een audit die leidt tot actie" >}}
-
-Onze audits zijn volledig conform WCAG 2.2 (niveau A + AA) en de richtlijnen van DigiToegankelijk. Maar veel belangrijker: je krijgt een rapport waar je team mee aan de slag kan.
-
-- **Volledige toetsing** van je website of app — 200+ controlepunten per pagina, handmatig getest met screenreaders, toetsenbord en andere hulpsoftware.
-- **Rapport per pagina en per element** — niet per abstract succescriterium. Met screenshots, annotaties en code-snippets met oplossingen. [Bekijk een voorbeeldrapport van een overheidswebsite](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/).
-- **Prioritering** — wat moet eerst, wat kan later? Inclusief kostenbesparende keuzes binnen de standaard.
-- **Begeleiding bij vervolgstappen** — rapportbespreking met je team, begeleiding bij je toegankelijkheidsverklaring, ondersteuning in DigiToegankelijk en DIP.
-- **Onbeperkt vragen stellen** — ook weken of maanden na oplevering. We blijven betrokken totdat het goed zit.
-
-{{< /offerte-section >}}
+{{< /section-split >}}
 
 {{< section-cards title="Hoe het werkt" columns="3" bg="dark" >}}
 {{< section-card title="1. Kennismaking" >}}
@@ -145,19 +137,8 @@ Na het doorvoeren van de verbeteringen controleren we of alles correct is opgelo
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< offerte-section title="Meerjarenplanning voor al je digitale kanalen" >}}
 
-Je hebt niet een website. Je hebt er tien. Of twintig. Sommige belangrijk, sommige minder. Sommige intern, sommige extern. Sommige legacy, sommige nieuw.
-
-- **Welke sites en apps moet je eerst aanpakken?** — We helpen je prioriteren op basis van bereik, risico en haalbaarheid.
-- **Welke kun je met beperkte inspanning verbeteren?** — Quick wins die direct zichtbaar resultaat opleveren.
-- **Welke kun je beter vervangen dan repareren?** — Eerlijk advies over wat de moeite waard is.
-- **Hoe verdeel je dit over meerdere jaren en begrotingsrondes?** — Een planning die past bij de realiteit van jouw organisatie.
-- **Gevoelige informatie? Geen probleem.** — We werken ook met intranetten, portalen en apps met vertrouwelijke data. Geheimhoudingsverklaringen, beveiligde omgevingen, on-premise testen — we regelen het.
-
-{{< /offerte-section >}}
-
-{{< offerte-section title="Welke dienst past bij jouw organisatie?" >}}
+{{< section-full title="Welke dienst past bij jouw organisatie?" >}}
 
 We hebben drie diensten. Welke past, hangt af van waar je staat.
 
@@ -171,7 +152,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
-{{< /offerte-section >}}
+{{< /section-full >}}
 
 {{< section-cards title="Waarom overheidsorganisaties voor ons kiezen" subtitle="Elk bureau kan een WCAG-audit uitvoeren. Het verschil zit in wat er daarna gebeurt." columns="2" bg="light" >}}
 {{< section-card title="Ervaring met tientallen overheidsorganisaties" >}}

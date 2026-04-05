@@ -3,9 +3,9 @@
 {{ $id := .Get "id" }}
 
 <section class="section-full{{ if eq $bg "light" }} section-full--light{{ end }}{{ if eq $bg "accent" }} section-full--accent{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
-  <div class="container">
+  <div class="hp-container">
     <div class="section-full__inner">
-      {{ with $title }}<h2 class="section-full__title">{{ . }}</h2>{{ end }}
+      {{ with $title }}<h2 class="hp-heading-lg" style="margin-bottom: 1.5rem;">{{ . }}</h2>{{ end }}
       <div class="section-full__content">
         {{ .Inner | markdownify }}
       </div>

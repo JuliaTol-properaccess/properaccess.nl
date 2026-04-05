@@ -1,170 +1,58 @@
 {{ define "main" }}
 
-<!-- ─── Hero ─── -->
+<!-- ─── HERO ─── -->
 {{ with .Params.banner }}
-<section class="vw-hero">
-  <div class="container">
-    <div class="vw-hero__inner">
-      <div class="vw-hero__text">
-        <span class="vw-section-label">Digitale toegankelijkheid</span>
-        <h1 class="vw-hero__title">{{ .title | markdownify }}</h1>
-        <p class="vw-hero__subtitle">{{ .content | markdownify }}</p>
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">Digitale toegankelijkheid</span>
+        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
+        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
         {{ with .button }}
           {{ if .enable }}
-            <div class="vw-hero__actions">
-              <a class="btn btn-primary" href="{{ .link | absURL }}"
+            <div class="hp-hero__actions">
+              <a class="hp-btn hp-btn--primary" href="{{ .link | absURL }}"
                 {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
                 {{ .label }}
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
               </a>
-              <span class="vw-hero__cta-secondary">
-                Of bel direct: <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>
-              </span>
+              <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+                Bel 085 5055 890
+              </a>
             </div>
           {{ end }}
         {{ end }}
       </div>
-      <div class="vw-hero__visual" aria-hidden="true">
-        <!-- SVG: Audit report illustration -->
-        <svg viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg" class="vw-hero__svg">
-          <!-- Document shadow -->
-          <rect x="8" y="8" width="380" height="460" rx="10" fill="#e5e7eb"/>
-          <!-- Document bg -->
-          <rect x="0" y="0" width="380" height="460" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
-
-          <!-- Header -->
-          <rect x="0" y="0" width="380" height="56" rx="10" fill="#1F2937"/>
-          <rect x="0" y="10" width="380" height="46" fill="#1F2937"/>
-          <!-- Logo dot -->
-          <circle cx="24" cy="28" r="8" fill="#A30D4B"/>
-          <text x="40" y="24" fill="#9ca3af" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700" letter-spacing="1">PROPER ACCESS</text>
-          <text x="40" y="38" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="13" font-weight="700">Audit gemeente Voorbeeld</text>
-
-          <!-- Meta info -->
-          <text x="20" y="80" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" letter-spacing="0.5">Datum: 14 maart 2026</text>
-          <text x="200" y="80" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" letter-spacing="0.5">Norm: WCAG 2.2 AA</text>
-          <line x1="20" y1="90" x2="360" y2="90" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Score section -->
-          <text x="20" y="114" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Totaalscore</text>
-          <!-- Score bar background -->
-          <rect x="20" y="122" width="340" height="10" rx="5" fill="#f3f4f6"/>
-          <!-- Score bar fill -->
-          <rect x="20" y="122" width="230" height="10" rx="5" fill="#A30D4B"/>
-          <text x="260" y="131" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">68%</text>
-          <text x="290" y="131" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9">voldoet</text>
-
-          <!-- Divider -->
-          <line x1="20" y1="146" x2="360" y2="146" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Column headers -->
-          <text x="20" y="168" fill="#9ca3af" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700" letter-spacing="1">BEVINDING</text>
-          <text x="220" y="168" fill="#9ca3af" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700" letter-spacing="1">IMPACT</text>
-          <text x="290" y="168" fill="#9ca3af" font-family="Nunito Sans, sans-serif" font-size="8" font-weight="700" letter-spacing="1">STATUS</text>
-          <line x1="20" y1="176" x2="360" y2="176" stroke="#e5e7eb" stroke-width="1"/>
-
-          <!-- Row 1 -->
-          <text x="20" y="198" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Formulierlabels ontbreken</text>
-          <rect x="220" y="186" width="44" height="18" rx="9" fill="#fef2f2"/>
-          <text x="229" y="199" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Groot</text>
-          <rect x="290" y="186" width="56" height="18" rx="9" fill="#fff7ed"/>
-          <text x="298" y="199" fill="#c2410c" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Open</text>
-          <line x1="20" y1="212" x2="360" y2="212" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 2 -->
-          <text x="20" y="234" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Kopteksthierarchie incorrect</text>
-          <rect x="220" y="222" width="52" height="18" rx="9" fill="#fffbeb"/>
-          <text x="229" y="235" fill="#b45309" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Middel</text>
-          <rect x="290" y="222" width="56" height="18" rx="9" fill="#fff7ed"/>
-          <text x="298" y="235" fill="#c2410c" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Open</text>
-          <line x1="20" y1="248" x2="360" y2="248" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 3 -->
-          <text x="20" y="270" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Alt-teksten ontbreken</text>
-          <rect x="220" y="258" width="44" height="18" rx="9" fill="#fef2f2"/>
-          <text x="229" y="271" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Groot</text>
-          <rect x="290" y="258" width="56" height="18" rx="9" fill="#f0fdf4"/>
-          <text x="298" y="271" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Opgelost</text>
-          <line x1="20" y1="284" x2="360" y2="284" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 4 -->
-          <text x="20" y="306" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Taalattribuut onjuist</text>
-          <rect x="220" y="294" width="40" height="18" rx="9" fill="#f0fdf4"/>
-          <text x="229" y="307" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Klein</text>
-          <rect x="290" y="294" width="56" height="18" rx="9" fill="#f0fdf4"/>
-          <text x="298" y="307" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Opgelost</text>
-          <line x1="20" y1="320" x2="360" y2="320" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 5 -->
-          <text x="20" y="342" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Contrast onvoldoende</text>
-          <rect x="220" y="330" width="52" height="18" rx="9" fill="#fffbeb"/>
-          <text x="229" y="343" fill="#b45309" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Middel</text>
-          <rect x="290" y="330" width="56" height="18" rx="9" fill="#fff7ed"/>
-          <text x="298" y="343" fill="#c2410c" font-family="Nunito, sans-serif" font-size="9" font-weight="600">Open</text>
-          <line x1="20" y1="356" x2="360" y2="356" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 6 (faded to suggest more) -->
-          <text x="20" y="378" fill="#d1d5db" font-family="Nunito, sans-serif" font-size="10.5" font-weight="600">Focusindicator ontbreekt</text>
-          <rect x="220" y="366" width="44" height="18" rx="9" fill="#fef2f2" opacity="0.5"/>
-          <text x="229" y="379" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700" opacity="0.4">Groot</text>
-          <line x1="20" y1="392" x2="360" y2="392" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- More indicator -->
-          <text x="20" y="414" fill="#d1d5db" font-family="Nunito, sans-serif" font-size="10.5">...</text>
-
-          <!-- Footer -->
-          <rect x="20" y="430" width="340" height="1" fill="#e5e7eb"/>
-          <text x="20" y="450" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8">32 bevindingen op 8 pagina's</text>
-          <text x="280" y="450" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="8" font-weight="700">properaccess.nl</text>
-        </svg>
+      <div class="hp-hero__visual" aria-hidden="true">
+        {{ partial "voor-wie/svg-overheid.html" . }}
       </div>
     </div>
   </div>
 </section>
 {{ end }}
 
-<!-- ─── Trust bar ─── -->
+<!-- ─── TRUST BAR ─── -->
 {{ with .Params.trust }}
-<section class="vw-trust">
-  <div class="container">
-    <span class="vw-trust__label">{{ .label }}</span>
-    <div class="vw-trust__names">
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">{{ .label }}</p>
+    <div class="hp-trust__names">
       {{ range .names }}
-      <span>{{ . }}</span>
+        <span>{{ . }}</span>
       {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 
-<!-- ─── Content (shortcodes) ─── -->
+<!-- ─── CONTENT ─── -->
 <article class="offerte-content">
   {{ .Content }}
 </article>
 
-<!-- ─── Stats bar ─── -->
-<section class="vw-stats">
-  <div class="container">
-    <div class="vw-stats__grid">
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">900+</span>
-        <span class="vw-stats__label">audits uitgevoerd</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">53</span>
-        <span class="vw-stats__label">opdrachtgevers</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">34%</span>
-        <span class="vw-stats__label">herhalingsklanten</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">2019</span>
-        <span class="vw-stats__label">actief sinds</span>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ─── STATS ─── -->
+{{ partial "voor-wie/stats-bar.html" . }}
 
 <!-- ─── CTA ─── -->
 {{ partial "call-to-action.html" . }}

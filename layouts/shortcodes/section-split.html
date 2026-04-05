@@ -1,43 +1,65 @@
 {{ $title := .Get "title" }}
 {{ $bg := .Get "bg" }}
+{{ $photos := .Get "photos" }}
+{{ $contact := .Get "contact" }}
 
 <section class="section-split{{ if eq $bg "light" }} section-split--light{{ end }}">
-  <div class="container">
+  <div class="hp-container">
     <div class="section-split__grid">
       <div class="section-split__content">
-        {{ with $title }}<h2 class="section-split__title">{{ . }}</h2>{{ end }}
+        {{ with $photos }}
+          <div class="section-split__photos">
+            {{ range split . "," }}
+              <img src="{{ strings.TrimSpace . | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg" style="margin-bottom: 1rem;">{{ . }}</h2>{{ end }}
         <div class="section-split__text">
           {{ .Inner | markdownify }}
         </div>
+        {{ if eq $contact "true" }}
+        <div class="hp-contact-final__info" style="margin-top: 1.5rem;">
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+          </div>
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
+            <a href="tel:+31855055890">085 5055 890</a>
+          </div>
+        </div>
+        {{ end }}
       </div>
       <div class="section-split__aside">
-        <div class="section-split__form-card">
-          <h3 class="section-split__form-title">Wil je even sparren?</h3>
-          <p class="section-split__form-desc">Stuur ons de URL van je organisatie. We mailen je onze visie op wat er moet gebeuren. Of mail ons direct op <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>.</p>
-          <form class="section-split__form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Verstuurd! We mailen je binnen 1 werkdag onze visie.' });">
+        <div class="hp-contact__form-card">
+          <h3 class="hp-heading-md" style="margin-bottom: 0.5rem;">Wil je even sparren?</h3>
+          <p class="hp-contact__form-sub">Stuur ons de URL van je organisatie. We mailen je onze visie op wat er moet gebeuren.</p>
+          <form class="hp-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Verstuurd! We mailen je binnen 1 werkdag onze visie.' });">
             <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-            <div class="section-split__field">
-              <label for="split-name">Naam <span aria-label="verplicht">*</span></label>
-              <input type="text" id="split-name" name="naam" required autocomplete="name" />
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="split-name">Naam</label>
+              <input class="hp-form__input" type="text" id="split-name" name="naam" required autocomplete="name" />
             </div>
-            <div class="section-split__field">
-              <label for="split-email">E-mailadres <span aria-label="verplicht">*</span></label>
-              <input type="email" id="split-email" name="email" required autocomplete="email" />
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="split-email">E-mailadres</label>
+              <input class="hp-form__input" type="email" id="split-email" name="email" required autocomplete="email" />
             </div>
-            <div class="section-split__field">
-              <label for="split-url">URL van je website <span aria-label="verplicht">*</span></label>
-              <input type="url" id="split-url" name="website" required placeholder="https://" />
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="split-url">URL van je website</label>
+              <input class="hp-form__input" type="url" id="split-url" name="website" required placeholder="https://" />
             </div>
-            <div class="section-split__field">
-              <label for="split-message">Je bericht</label>
-              <textarea id="split-message" name="bericht" rows="3"></textarea>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="split-message">Je bericht</label>
+              <textarea class="hp-form__input hp-form__textarea" id="split-message" name="bericht" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Verstuur <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-            <div role="status" aria-live="polite" style="margin-top: 0.5rem;"></div>
+            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+              Verstuur
+            </button>
+            <div role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
     </div>
   </div>
 </section>
-<script src="{{ "js/form-submit.js" | relURL }}" defer></script>

@@ -6,15 +6,18 @@
 {{ $bg := .Get "bg" }}
 
 <section class="section-highlight{{ if eq $bg "light" }} section-highlight--light{{ end }}">
-  <div class="container">
+  <div class="hp-container">
     <div class="section-highlight__grid">
       <div class="section-highlight__text">
-        {{ with $title }}<h2 class="section-highlight__title">{{ . }}</h2>{{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg" style="margin-bottom: 1rem;">{{ . }}</h2>{{ end }}
         <div class="section-highlight__content">
           {{ .Inner | markdownify }}
         </div>
         {{ if and $link $link_text }}
-          <a href="{{ $link }}" class="section-highlight__link">{{ $link_text }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="{{ $link }}" class="hp-btn hp-btn--outline" style="margin-top: 1.5rem;">
+            {{ $link_text }}
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
         {{ end }}
       </div>
       {{ with $image }}

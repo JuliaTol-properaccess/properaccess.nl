@@ -3,7 +3,7 @@
 {{ $image := .Get "image" }}
 
 <section class="section-cta{{ with $image }} section-cta--with-image{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
-  <div class="container">
+  <div class="hp-container">
     <div class="section-cta__inner">
       {{ with $image }}
       <div class="section-cta__image">
@@ -11,7 +11,7 @@
       </div>
       {{ end }}
       <div class="section-cta__text">
-        {{ with $title }}<h2 class="section-cta__title">{{ . }}</h2>{{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg" style="margin-bottom: 1rem;">{{ . }}</h2>{{ end }}
         <div class="section-cta__content">
           {{ .Inner | markdownify }}
         </div>

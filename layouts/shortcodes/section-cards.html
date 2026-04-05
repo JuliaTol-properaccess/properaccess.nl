@@ -5,7 +5,7 @@
 {{ $columns := .Get "columns" | default "3" }}
 
 <section class="section-cards{{ if eq $bg "light" }} section-cards--light{{ end }}{{ if eq $bg "dark" }} section-cards--dark{{ end }}">
-  <div class="container">
+  <div class="hp-container">
     {{ if or $title $subtitle $image }}
     <div class="section-cards__header{{ with $image }} section-cards__header--with-image{{ end }}">
       {{ with $image }}
@@ -14,7 +14,7 @@
       </div>
       {{ end }}
       <div class="section-cards__header-text">
-        {{ with $title }}<h2 class="section-cards__title">{{ . }}</h2>{{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg">{{ . }}</h2>{{ end }}
         {{ with $subtitle }}<p class="section-cards__subtitle">{{ . }}</p>{{ end }}
       </div>
     </div>

@@ -928,18 +928,17 @@ html.dark .offerte-content .protected-overlay button {
 
 
 /* ============================================
-   LANDING PAGE COMPONENTEN
+   LANDING PAGE COMPONENTEN — Stitch redesign
    ============================================ */
 
 /* --- section-full: full-width gecentreerde tekst --- */
 
 .section-full {
-  padding: 4rem 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='%23A30D4B' opacity='0.16'/%3E%3C/svg%3E");
+  padding: 6rem 0;
 }
 
 .section-full--light {
-  background-color: #f5f5f5;
+  background-color: #f9fafb;
 }
 
 html.dark .section-full--light {
@@ -947,17 +946,70 @@ html.dark .section-full--light {
 }
 
 .section-full__inner {
-  max-width: 720px;
+  max-width: 48rem;
   margin: 0 auto;
 }
 
-.section-full__title {
-  font-size: 2.25rem;
+.section-full__content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.section-full__content thead th {
+  background: #1F2937;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+.section-full__content tbody th {
   font-weight: 700;
   color: #1F2937;
-  margin-bottom: 1.5rem;
+  padding: 0.875rem 1.25rem;
   text-align: left;
-  letter-spacing: -0.035em;
+  background: #f9fafb;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.section-full__content tbody td {
+  padding: 0.875rem 1.25rem;
+  color: #4B5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.section-full__content tbody tr:last-child th,
+.section-full__content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.section-full:has(table) .section-full__inner {
+  max-width: 72rem;
+}
+
+/* FAQ in section-full: gelijnd papier achtergrond */
+.section-full:has(.faq-item) {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='31' x2='100' y2='31' stroke='%23A30D4B' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
+  background-size: 100% 32px;
+  background-color: #faf9f7;
+}
+
+.section-full:has(.faq-item) .faq-item {
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 html.dark .section-full__title {
@@ -1023,12 +1075,11 @@ html.dark .section-full__content strong {
 /* --- section-cards: kaarten grid --- */
 
 .section-cards {
-  padding: 4rem 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v60M0 30h60' stroke='%23A30D4B' stroke-width='0.5' opacity='0.12'/%3E%3C/svg%3E");
+  padding: 6rem 0;
 }
 
 .section-cards--light {
-  background-color: #f5f5f5;
+  background-color: #f9fafb;
 }
 
 html.dark .section-cards--light {
@@ -1036,8 +1087,7 @@ html.dark .section-cards--light {
 }
 
 .section-cards--dark {
-  background-color: #f5f5f5;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0L40 20L20 40L0 20Z' fill='none' stroke='%23A30D4B' stroke-width='0.5' opacity='0.16'/%3E%3C/svg%3E");
+  background-color: #f9fafb;
 }
 
 .section-cards--dark .section-cards__title {
@@ -1147,10 +1197,15 @@ html.dark .section-cards__subtitle {
 
 .section-card {
   background: #ffffff;
-  border: 1px solid #eaeaea;
-  border-top: 3px solid #004050;
-  border-radius: 8px;
+  border: 1px solid #f3f4f6;
+  border-radius: 2rem;
   padding: 2rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.section-card:hover {
+  border-color: rgba(163, 13, 75, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
 }
 
 html.dark .section-card {
@@ -1333,15 +1388,29 @@ html.dark .section-card__content {
 /* --- section-cta: call-to-action blok --- */
 
 .section-cta {
-  padding: 4rem 0;
-  background-color: #004050;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='%23ffffff' opacity='0.18'/%3E%3C/svg%3E");
+  padding: 6rem 0;
 }
 
 .section-cta__inner {
-  max-width: 720px;
+  background: #1F2937;
+  border-radius: 3.5rem;
+  padding: 3rem;
+  max-width: 48rem;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-cta__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(163, 13, 75, 0.2), transparent);
+  pointer-events: none;
 }
 
 .section-cta__title {
@@ -1362,18 +1431,22 @@ html.dark .section-card__content {
 }
 
 .section-cta__content a {
-  display: inline-block;
-  padding: 0.75rem 2rem;
-  background-color: #A30D4B;
-  color: #ffffff;
-  border-radius: 6px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #1F2937;
+  border-radius: 9999px;
+  font-weight: 700;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: background 0.2s;
+  position: relative;
+  z-index: 1;
 }
 
 .section-cta__content a:hover {
-  opacity: 0.85;
+  background: #f3f4f6;
 }
 
 /* section-cta met afbeelding */
@@ -2936,6 +3009,20 @@ html.dark .tool-contrast__ref-table td {
 .section-split--light {
   background: #f5f5f5;
 }
+.section-split__photos {
+  display: flex;
+  gap: -0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-split__photos .hp-contact__photo {
+  margin-left: -0.75rem;
+}
+
+.section-split__photos .hp-contact__photo:first-child {
+  margin-left: 0;
+}
+
 .section-split__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4821,6 +4908,43 @@ html.dark .toolsuite-promo__text {
 }
 
 
+
+
+/* ═══════════════════════════════════════════════════════════
+   VOOR WIE — Shared (stitch redesign)
+   ═══════════════════════════════════════════════════════════ */
+
+.vw-stats-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vw-stat__number {
+  display: block;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.vw-stat__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .vw-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 
 /* ═══════════════════════════════════════════════════════════
@@ -11546,11 +11670,11 @@ a.tool-link__href-url:hover {
 /* ─── Section highlight (2-col text + image) ─── */
 
 .section-highlight {
-  padding: 3.5rem 0;
+  padding: 6rem 0;
 }
 
 .section-highlight--light {
-  background: #f5f5f5;
+  background: #f9fafb;
 }
 
 .section-highlight__grid {
@@ -11600,7 +11724,7 @@ a.tool-link__href-url:hover {
 .section-highlight__image {
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   display: block;
 }
 
