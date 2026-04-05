@@ -35,32 +35,6 @@ url: "/contact/"
 {{< /section-cards >}}
 
 
-{{< section-full title="Of stuur een bericht" id="formulier" >}}
-
-<form id="contact-form" class="contact-form" style="max-width: 600px;" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
-  <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-
-  <div style="margin-bottom: 1.25rem;">
-    <label for="contact-name" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">Naam <span aria-label="verplicht">*</span></label>
-    <input type="text" id="contact-name" name="naam" required autocomplete="name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
-  </div>
-
-  <div style="margin-bottom: 1.25rem;">
-    <label for="contact-email" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">E-mailadres <span aria-label="verplicht">*</span></label>
-    <input type="email" id="contact-email" name="email" required autocomplete="email" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" />
-  </div>
-
-  <div style="margin-bottom: 1.25rem;">
-    <label for="contact-message" style="display: block; font-weight: 700; margin-bottom: 0.375rem;">Waar kunnen we je mee helpen? <span aria-label="verplicht">*</span></label>
-    <textarea id="contact-message" name="bericht" rows="5" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #6B7280; border-radius: 0.5rem; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary">Verstuur bericht <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-
-  <div role="status" aria-live="polite" style="margin-top: 1rem;"></div>
-</form>
-
-{{< /section-full >}}
 
 
 {{< section-cards title="Wat gebeurt er als je contact opneemt?" subtitle="Geen verkooppraatje. Wel een helder gesprek over wat je nodig hebt." columns="2" bg="light" >}}
