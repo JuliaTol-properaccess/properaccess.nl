@@ -4985,6 +4985,33 @@ html.dark .toolsuite-promo__text {
   border: 1px solid #f3f4f6;
 }
 
+.qs-diff-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 48rem;
+  margin: 0 auto 2.5rem;
+}
+
+.qs-diff-person {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.qs-diff-photo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.qs-diff-name {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
 .qs-compare-table thead th {
   background: #1F2937;
   color: #fff;
