@@ -3011,16 +3011,17 @@ html.dark .tool-contrast__ref-table td {
 }
 .section-split__photos {
   display: flex;
-  gap: -0.75rem;
   margin-bottom: 1.5rem;
 }
 
 .section-split__photos .hp-contact__photo {
   margin-left: -0.75rem;
+  position: relative;
 }
 
 .section-split__photos .hp-contact__photo:first-child {
   margin-left: 0;
+  z-index: 1;
 }
 
 .section-split__grid {
