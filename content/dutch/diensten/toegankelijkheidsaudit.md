@@ -55,13 +55,6 @@ faqs:
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 1.800 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
 ---
 
-{{< section-full title="Wat je krijgt: een rapport waarmee je aan de slag kan" >}}
-
-Geen 50 pagina's platte tekst, maar een rapport dat je team helpt.
-
-{{< /section-full >}}
-
-
 {{< section-cards title="Vier onderdelen die het verschil maken" columns="2" >}}
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
@@ -159,8 +152,3 @@ Een volledige audit start **vanaf ca. 1.800 euro** (excl. BTW) voor een eenvoudi
 {{< /section-full >}}
 
 
-{{< section-full id="offerte" title="Vraag een offerte aan" bg="white" >}}
-
-Vertel ons over je website. We reageren binnen 1 werkdag met een indicatie van de scope en kosten.
-
-{{< /section-full >}}
