@@ -1,0 +1,198 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">Offerte aanvragen</span>
+        <h1 class="hp-hero__title">
+          WCAG-audit en begeleiding die <span class="hp-hero__title-accent">echt werkt</span>
+        </h1>
+        <p class="hp-hero__subtitle">
+          Onze audits geven inzicht, maar dat niet alleen: onze rapporten staan bomvol
+          begrijpelijke tips en oplossingen. Jouw team kan dus direct aan de slag.
+        </p>
+        <div class="hp-hero__actions">
+          <a href="#offerte-form" class="hp-btn hp-btn--primary">
+            Stuur een bericht
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+            Bel 085 5055 890
+          </a>
+        </div>
+      </div>
+      <div class="hp-hero__visual">
+        <div class="hp-hero__image-frame" style="aspect-ratio: auto; padding: 2.5rem; background: #f9fafb;">
+          <div class="qs-offer-items">
+            <div class="hp-service-card">
+              <div class="hp-service-card__icon">
+                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              </div>
+              <h3 class="hp-service-card__title">Aantoonbare naleving</h3>
+              <p class="hp-service-card__desc">Van de EAA en Wdo, met juridische onderbouwing.</p>
+            </div>
+            <div class="hp-service-card">
+              <div class="hp-service-card__icon">
+                <span class="material-symbols-outlined" aria-hidden="true">description</span>
+              </div>
+              <h3 class="hp-service-card__title">Rapport per element</h3>
+              <p class="hp-service-card__desc">Met screenshots, code-snippets en concrete oplossingen.</p>
+            </div>
+            <div class="hp-service-card">
+              <div class="hp-service-card__icon">
+                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+              </div>
+              <h3 class="hp-service-card__title">Onbeperkte support</h3>
+              <p class="hp-service-card__desc">Vragen stellen over het rapport, ook weken later.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── TRUST BAR ─── -->
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">Vertrouwd door</p>
+    <div class="hp-trust__names">
+      <span>Rijksmuseum</span>
+      <span>NRC</span>
+      <span>Prov. Noord-Holland</span>
+      <span>Museumvereniging</span>
+      <span>Jumbo</span>
+      <span>Plus</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── WAAROM PROPER ACCESS ─── -->
+<section class="hp-services">
+  <div class="hp-container">
+    <div class="hp-services__header">
+      <h2 class="hp-heading-lg">Waarom Proper Access?</h2>
+    </div>
+    <div class="hp-services__grid">
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+        </div>
+        <h3 class="hp-service-card__title">850+ audits</h3>
+        <p class="hp-service-card__desc">Websites en apps geaudit sinds 2018. IAAP-gecertificeerd team.</p>
+      </div>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+        </div>
+        <h3 class="hp-service-card__title">100% conform</h3>
+        <p class="hp-service-card__desc">WCAG-EM en Europese toegankelijkheidswetgeving (EAA).</p>
+      </div>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">build</span>
+        </div>
+        <h3 class="hp-service-card__title">Concrete oplossingen</h3>
+        <p class="hp-service-card__desc">Heldere rapporten met code-voorbeelden en prioriteiten.</p>
+      </div>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">forum</span>
+        </div>
+        <h3 class="hp-service-card__title">Onbeperkt vragen</h3>
+        <p class="hp-service-card__desc">12 weken onbeperkt vragen stellen over het rapport.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── OFFERTE FORMULIER ─── -->
+<section class="hp-contact-section" id="offerte-form">
+  <div class="hp-container">
+    <div class="hp-contact__grid">
+      <div class="hp-contact__text">
+        <div class="hp-contact__photo-wrapper">
+          {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
+        </div>
+        <h2 class="hp-heading-lg">Vraag een offerte aan</h2>
+        <p class="hp-contact__intro">
+          Stuur ons je URL en we reageren binnen 1 werkdag met een indicatie.
+          Geen verplichtingen, geen verrassingen achteraf.
+        </p>
+        <div class="hp-contact-final__info" style="margin-top: 1.5rem;">
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+          </div>
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
+            <a href="tel:+31855055890">085 5055 890</a>
+          </div>
+        </div>
+      </div>
+      <div class="hp-contact__form-card">
+        <h3 class="hp-heading-md">Stuur een bericht</h3>
+        <p class="hp-contact__form-sub">We reageren binnen 1 werkdag.</p>
+        <form
+          id="offerte-form"
+          class="hp-form"
+          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'offerte-audit', successMessage: 'Verstuurd! We reageren binnen 1 werkdag.' });">
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+          <div class="hp-form__row">
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="offerte-naam">Naam</label>
+              <input class="hp-form__input" id="offerte-naam" name="naam" autocomplete="name" required type="text" placeholder="Je naam" />
+            </div>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="offerte-email">E-mail</label>
+              <input class="hp-form__input" id="offerte-email" name="email" autocomplete="email" required type="email" placeholder="je@email.nl" />
+            </div>
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="offerte-url">Website-URL</label>
+            <input class="hp-form__input" id="offerte-url" name="website" type="url" placeholder="https://" />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="offerte-bericht">Bericht</label>
+            <textarea class="hp-form__input hp-form__textarea" id="offerte-bericht" name="bericht" required placeholder="Vertel ons over je website of app" rows="4"></textarea>
+          </div>
+          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
+            Offerte aanvragen
+          </button>
+          <div role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}
