@@ -2,165 +2,45 @@
 
 <!-- ─── HERO ─── -->
 <section class="hp-hero">
-  <div class="container">
-    <div class="hp-hero__inner">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
       <div class="hp-hero__text">
+        <span class="hp-hero__badge">Independent audit bureau</span>
         <h1 class="hp-hero__title">
-          Digital accessibility that works. For your visitors, not for the inspectors.
+          Your website or app must be accessible.<br>
+          <span class="hp-hero__title-accent hp-hero__title-sub">But where do you start?</span>
         </h1>
         <p class="hp-hero__subtitle">
-          Proper Access helps organisations with accessibility audits, concrete
-          solutions, and a report your developers can act on right away. No
-          thick documents full of jargon &mdash; just a clear plan towards an
+          We help organisations with accessibility audits, concrete solutions,
+          and a report your developers can act on right away. No thick
+          documents full of jargon &mdash; just a clear plan towards an
           accessible website.
         </p>
         <div class="hp-hero__actions">
-          <a href="/en/contact/" class="btn btn-primary">
-            Get in touch
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          <a href="/en/contact/" class="hp-btn hp-btn--primary">
+            Request a quote
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
           </a>
-          <a href="#approach" class="hp-hero__cta-secondary">
-            See our approach
+          <a href="#approach" class="hp-btn hp-btn--outline">
+            Our approach
           </a>
         </div>
       </div>
-      <div class="hp-hero__visual" aria-hidden="true">
-        <!-- Main dashboard: audit report overview -->
-        <svg viewBox="0 0 420 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--main">
-          <!-- Card background -->
-          <rect x="0" y="0" width="420" height="340" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
-          <!-- Header bar -->
-          <rect x="0" y="0" width="420" height="44" rx="12" fill="#1F2937"/>
-          <rect x="0" y="12" width="420" height="32" fill="#1F2937"/>
-          <!-- Window dots -->
-          <circle cx="18" cy="22" r="4" fill="#ef4444" opacity="0.8"/>
-          <circle cx="32" cy="22" r="4" fill="#F5C842" opacity="0.8"/>
-          <circle cx="46" cy="22" r="4" fill="#22c55e" opacity="0.8"/>
-          <text x="66" y="26" fill="#fff" font-family="Nunito, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">Audit Report — findings</text>
-
-          <!-- Column headers -->
-          <text x="16" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" text-transform="uppercase" letter-spacing="1">FINDING</text>
-          <text x="200" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">TYPE</text>
-          <text x="280" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">ISSUES</text>
-          <text x="330" y="68" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="9" font-weight="700" letter-spacing="1">DISABILITY</text>
-          <line x1="16" y1="75" x2="404" y2="75" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 1 -->
-          <text x="16" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Images without alt text</text>
-          <rect x="200" y="84" width="56" height="18" rx="9" fill="#f0fdf4"/>
-          <text x="212" y="96" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
-          <text x="290" y="96" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">12</text>
-          <circle cx="348" cy="91" r="9" fill="#fef2f2"/>
-          <text x="344" y="95" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <circle cx="368" cy="91" r="9" fill="#fffbeb"/>
-          <text x="364" y="95" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
-          <line x1="16" y1="108" x2="404" y2="108" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 2 -->
-          <text x="16" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Form without label</text>
-          <rect x="200" y="117" width="56" height="18" rx="9" fill="#eff6ff"/>
-          <text x="208" y="129" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Technical</text>
-          <text x="290" y="129" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">8</text>
-          <circle cx="348" cy="124" r="9" fill="#fef2f2"/>
-          <text x="344" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <circle cx="368" cy="124" r="9" fill="#f0fdf4"/>
-          <text x="363" y="128" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
-          <circle cx="388" cy="124" r="9" fill="#fef2f2"/>
-          <text x="384" y="128" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">C</text>
-          <line x1="16" y1="141" x2="404" y2="141" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 3 -->
-          <text x="16" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Insufficient colour contrast</text>
-          <rect x="200" y="150" width="56" height="18" rx="9" fill="#eff6ff"/>
-          <text x="208" y="162" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Technical</text>
-          <text x="290" y="162" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">15</text>
-          <circle cx="348" cy="157" r="9" fill="#fef2f2"/>
-          <text x="344" y="161" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <line x1="16" y1="174" x2="404" y2="174" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 4 -->
-          <text x="16" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Incorrect heading structure</text>
-          <rect x="200" y="183" width="56" height="18" rx="9" fill="#f0fdf4"/>
-          <text x="212" y="195" fill="#16a34a" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Content</text>
-          <text x="290" y="195" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">6</text>
-          <circle cx="348" cy="190" r="9" fill="#fef2f2"/>
-          <text x="344" y="194" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <circle cx="368" cy="190" r="9" fill="#fffbeb"/>
-          <text x="364" y="194" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
-          <line x1="16" y1="207" x2="404" y2="207" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 5 -->
-          <text x="16" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Focus not visible</text>
-          <rect x="200" y="216" width="56" height="18" rx="9" fill="#eff6ff"/>
-          <text x="208" y="228" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Technical</text>
-          <text x="290" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">4</text>
-          <circle cx="348" cy="223" r="9" fill="#fef2f2"/>
-          <text x="344" y="227" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <circle cx="368" cy="223" r="9" fill="#f0fdf4"/>
-          <text x="363" y="227" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
-          <line x1="16" y1="240" x2="404" y2="240" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- Row 6 -->
-          <text x="16" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="600">Page language missing</text>
-          <rect x="200" y="249" width="56" height="18" rx="9" fill="#eff6ff"/>
-          <text x="208" y="261" fill="#2563eb" font-family="Nunito, sans-serif" font-size="9" font-weight="700">Technical</text>
-          <text x="290" y="261" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="700">1</text>
-          <circle cx="348" cy="256" r="9" fill="#fef2f2"/>
-          <text x="344" y="260" fill="#dc2626" font-family="Nunito, sans-serif" font-size="10">V</text>
-          <circle cx="368" cy="256" r="9" fill="#fffbeb"/>
-          <text x="364" y="260" fill="#b45309" font-family="Nunito, sans-serif" font-size="10">C</text>
-          <circle cx="388" cy="256" r="9" fill="#f0fdf4"/>
-          <text x="383" y="260" fill="#16a34a" font-family="Nunito, sans-serif" font-size="10">M</text>
-
-          <!-- Legend at bottom -->
-          <line x1="16" y1="278" x2="404" y2="278" stroke="#e5e7eb" stroke-width="1"/>
-          <text x="16" y="296" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5">DISABILITIES:</text>
-          <circle cx="100" cy="293" r="7" fill="#fef2f2"/>
-          <text x="96" y="296" fill="#dc2626" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">V</text>
-          <text x="112" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Visual</text>
-          <circle cx="166" cy="293" r="7" fill="#f0fdf4"/>
-          <text x="161" y="296" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">M</text>
-          <text x="178" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Motor</text>
-          <circle cx="232" cy="293" r="7" fill="#fffbeb"/>
-          <text x="228" y="296" fill="#b45309" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">C</text>
-          <text x="244" y="296" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8.5">Cognitive</text>
-
-          <!-- Total bar -->
-          <rect x="16" y="310" width="388" height="22" rx="4" fill="#f5f5f5"/>
-          <text x="24" y="325" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Total: 46 findings</text>
-          <text x="320" y="325" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="10" font-weight="700">24/55 failed</text>
-        </svg>
-
-        <!-- Small floating card: impact distribution -->
-        <svg viewBox="0 0 160 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hp-hero__svg hp-hero__svg--float">
-          <rect x="0" y="0" width="160" height="140" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
-          <text x="14" y="24" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">Impact distribution</text>
-          <line x1="14" y1="32" x2="146" y2="32" stroke="#f3f4f6" stroke-width="1"/>
-
-          <!-- High -->
-          <circle cx="28" cy="52" r="8" fill="#A30D4B"/>
-          <text x="24" y="56" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">!</text>
-          <text x="42" y="56" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">High</text>
-          <rect x="88" y="45" width="56" height="14" rx="3" fill="#fef2f2"/>
-          <rect x="88" y="45" width="38" height="14" rx="3" fill="#A30D4B" opacity="0.8"/>
-          <text x="130" y="55" fill="#dc2626" font-family="Nunito, sans-serif" font-size="9" font-weight="700">18</text>
-
-          <!-- Medium -->
-          <circle cx="28" cy="80" r="8" fill="#F5C842"/>
-          <text x="25" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">~</text>
-          <text x="42" y="84" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Medium</text>
-          <rect x="88" y="73" width="56" height="14" rx="3" fill="#fffbeb"/>
-          <rect x="88" y="73" width="28" height="14" rx="3" fill="#F5C842" opacity="0.7"/>
-          <text x="130" y="83" fill="#b45309" font-family="Nunito, sans-serif" font-size="9" font-weight="700">16</text>
-
-          <!-- Low -->
-          <circle cx="28" cy="108" r="8" fill="#e5e7eb"/>
-          <text x="25" y="112" fill="#6b7280" font-family="Nunito, sans-serif" font-size="8" font-weight="700">-</text>
-          <text x="42" y="112" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="600">Low</text>
-          <rect x="88" y="101" width="56" height="14" rx="3" fill="#f5f5f5"/>
-          <rect x="88" y="101" width="16" height="14" rx="3" fill="#d1d5db"/>
-          <text x="130" y="111" fill="#6b7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">12</text>
-        </svg>
+      <div class="hp-hero__visual">
+        <div class="hp-hero__image-frame">
+          {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Client logos including Rijksmuseum, NRC, Museumvereniging, Jumbo and Plus" "Loading" "eager" "Class" "hp-hero__image") }}
+        </div>
+        <div class="hp-hero__stats-card" aria-label="Statistics">
+          <div class="hp-hero__stat">
+            <span class="hp-hero__stat-number">850+</span>
+            <span class="hp-hero__stat-label">websites audited</span>
+          </div>
+          <div class="hp-hero__stat-divider"></div>
+          <div class="hp-hero__stat">
+            <span class="hp-hero__stat-number">50+</span>
+            <span class="hp-hero__stat-label">apps audited</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -168,410 +48,283 @@
 
 
 <!-- ─── TRUST BAR ─── -->
-<div class="hp-trust">
-  <div class="container">
+<section class="hp-trust">
+  <div class="hp-container">
     <p class="hp-trust__label">Trusted by</p>
     <div class="hp-trust__names">
       <span>Rijksmuseum</span>
-      <span>Prov. Noord-Holland</span>
-      <span>NRC</span>
       <span>Museumvereniging</span>
-      <span>Eteck</span>
+      <span lang="nl">Prov. Noord-Holland</span>
+      <span lang="nl">Prov. Zuid-Holland</span>
+      <span>NRC</span>
       <span>Jumbo</span>
       <span>Plus</span>
     </div>
   </div>
-</div>
-
-
-<!-- ─── WHAT MAKES US DIFFERENT ─── -->
-<section class="section hp-diff">
-  <div class="container hp-narrow">
-    <h2 class="hp-section-title">Not another report gathering dust</h2>
-    <div class="hp-section-intro">
-      <p>
-        Most audit firms deliver a report per success criterion. Fifty
-        pages of flat text, technically correct, but impossible for your team
-        to work with. We do things differently.
-      </p>
-      <p>
-        <strong>Our report is organised per web page and per element.</strong> Your
-        developer opens the report, sees exactly which element on which page
-        needs to be fixed, and gets to work. With screenshots, code examples,
-        and concrete solutions.
-      </p>
-      <p>
-        The result? Faster turnaround, fewer misunderstandings, and a
-        website that actually becomes more accessible.
-      </p>
-    </div>
-  </div>
 </section>
 
 
-<!-- ─── OUR APPROACH ─── -->
-<section class="section hp-approach" id="approach">
-  <div class="container">
-    <h2 class="hp-section-title">Our approach</h2>
-
-    <div class="hp-approach__grid">
-      <div class="hp-approach__item">
-        <h3 class="hp-approach__title">Thorough research</h3>
-        <p class="hp-approach__desc">
-          We test your website with screen readers, keyboard, magnification software,
-          and voice control. Not just automated &mdash; manually, the way
-          your visitors experience it.
-        </p>
-      </div>
-
-      <div class="hp-approach__item">
-        <h3 class="hp-approach__title">Concrete solutions</h3>
-        <p class="hp-approach__desc">
-          For every issue, you get a concrete solution or a recommended approach.
-          No &ldquo;make this accessible&rdquo;, but actionable advice
-          your team can pick up right away.
-        </p>
-      </div>
-
-      <div class="hp-approach__item">
-        <h3 class="hp-approach__title">Direct access to senior auditor</h3>
-        <p class="hp-approach__desc">
-          Direct access to a senior auditor for any questions about the findings. No account managers or project managers in between. Questions? Just call.
-        </p>
-      </div>
+<!-- ─── HOW WE HELP ─── -->
+<section class="hp-services" id="approach">
+  <div class="hp-container">
+    <div class="hp-services__header">
+      <h2 class="hp-heading-lg">How we help</h2>
+      <p class="hp-services__intro">Expertise at every level of the digital lifecycle.</p>
     </div>
-  </div>
-</section>
-
-
-<!-- ─── WHO WE WORK WITH ─── -->
-<section class="section hp-segments">
-  <div class="container">
-    <div class="hp-segments__header">
-      <div class="hp-segments__header-text">
-        <h2 class="hp-section-title">We work with organisations that want to get it right</h2>
-        <p class="hp-section-intro">
-          Whether you are legally required to comply (Wdo, EAA) or simply want everyone to be able
-          to use your website &mdash; we help you get there.
-        </p>
-      </div>
-      <div class="hp-segments__logos">
-        {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Client logos: Province of South Holland, Rijksmuseum, Province of North Holland, Museumvereniging, Dutch Safety Board, Municipality of 's-Hertogenbosch, NRC, Museum.nl, Municipality of Amersfoort, Municipality of Alkmaar, Eteck, Van Gogh Museum, Plus, Jumbo, Caroline Svedbom" "Loading" "lazy" "Class" "hp-segments__logos-img" "DisplayXL" "500x") }}
-      </div>
-    </div>
-
-    <div class="hp-segments__grid">
-      <a href="/en/digital-accessibility-government/" class="hp-segment">
-        <h3 class="hp-segment__title">Government and public sector</h3>
-        <p class="hp-segment__desc">
-          Complex websites, lots of content, strict requirements. We know the
-          landscape and help you prioritise.
-        </p>
-      </a>
-
-      <a href="/en/e-commerce-digital-accessibility/" class="hp-segment">
-        <h3 class="hp-segment__title">Webshops and e-commerce</h3>
-        <p class="hp-segment__desc">
-          Since June 2025, the European Accessibility Act applies. We help you
-          make your webshop accessible without losing conversions.
-        </p>
-      </a>
-
-      <a href="/en/contact/" class="hp-segment">
-        <h3 class="hp-segment__title">Culture, museums, and heritage</h3>
-        <p class="hp-segment__desc">
-          From ticketing to collection pages &mdash; we know where the
-          pain points are and how to solve them.
-        </p>
-      </a>
-
-      <a href="/en/digital-agency/" class="hp-segment">
-        <h3 class="hp-segment__title">Digital agencies</h3>
-        <p class="hp-segment__desc">
-          Want to include accessibility in your projects? We collaborate as
-          a knowledge partner, or handle the audit for you.
-        </p>
-      </a>
-
-      <a href="/en/education-digital-accessibility/" class="hp-segment">
-        <h3 class="hp-segment__title">Education</h3>
-        <p class="hp-segment__desc">
-          Can all your students access the learning materials? We audit learning
-          environments, assessment systems, and e-learning modules for accessibility.
-        </p>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── STATS BAR ─── -->
-<section class="hp-stats">
-  <div class="container">
-    <div class="hp-stats__grid">
-      <div class="hp-stats__item">
-        <span class="hp-stats__number">900+</span>
-        <span class="hp-stats__label">audits completed</span>
-      </div>
-      <div class="hp-stats__item">
-        <span class="hp-stats__number">53</span>
-        <span class="hp-stats__label">clients</span>
-      </div>
-      <div class="hp-stats__item">
-        <span class="hp-stats__number">34%</span>
-        <span class="hp-stats__label">return for another engagement</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── SERVICES ─── -->
-<section class="section hp-services">
-  <div class="container">
-    <h2 class="hp-section-title">The shortest route to an accessible result</h2>
-
     <div class="hp-services__grid">
-      <article class="hp-service-card">
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+        </div>
+        <h3 class="hp-service-card__title"><span lang="nl">WCAG</span> Audits</h3>
+        <p class="hp-service-card__desc">
+          Thorough inspection of your platform against the latest WCAG guidelines
+          with clear reporting per element.
+        </p>
+        <a class="hp-service-card__link" href="/en/accessibility-audit/">
+          Learn more
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+        </a>
+      </div>
+
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">confirmation_number</span>
+        </div>
+        <h3 class="hp-service-card__title">Support bundle</h3>
+        <p class="hp-service-card__desc">
+          Direct access to our experts for ad-hoc questions and quick
+          reviews whenever you need them.
+        </p>
+        <a class="hp-service-card__link" href="/en/contact/">
+          Learn about support
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+        </a>
+      </div>
+
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">search</span>
+        </div>
         <h3 class="hp-service-card__title">Quick scan</h3>
         <p class="hp-service-card__desc">
           A quick check of your website for the most common
           accessibility issues. Ideal as a starting point.
         </p>
-        <a href="/en/quick-scan/" class="hp-service-card__link">
-          More about the quick scan &rarr;
+        <a class="hp-service-card__link" href="/en/quick-scan/">
+          View offer
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
-      </article>
+      </div>
 
-      <article class="hp-service-card">
-        <h3 class="hp-service-card__title">Accessibility audit</h3>
+      <div class="hp-service-card">
+        <div class="hp-service-card__icon">
+          <span class="material-symbols-outlined" aria-hidden="true">school</span>
+        </div>
+        <h3 class="hp-service-card__title">Workshops and training</h3>
         <p class="hp-service-card__desc">
-          A full WCAG audit with a report per element, screenshots, and concrete
-          solutions. Including unlimited questions.
+          We make your team self-sufficient in digital accessibility
+          through practical knowledge sharing for developers and content teams.
         </p>
-        <a href="/en/accessibility-audit/" class="hp-service-card__link">
-          More about the audit &rarr;
+        <a class="hp-service-card__link" href="/en/contact/">
+          View offer
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
-      </article>
-
-      <article class="hp-service-card">
-        <h3 class="hp-service-card__title">Support bundle</h3>
-        <p class="hp-service-card__desc">
-          A bundle of hours for ongoing support. Useful if you regularly
-          launch new features and want to check if they are accessible.
-        </p>
-        <a href="/en/contact/" class="hp-service-card__link">
-          More about the support bundle &rarr;
-        </a>
-      </article>
-
-      <article class="hp-service-card">
-        <h3 class="hp-service-card__title">Retest</h3>
-        <p class="hp-service-card__desc">
-          After implementing improvements, we test again. So you know for sure
-          everything has been addressed correctly.
-        </p>
-        <a href="/en/contact/" class="hp-service-card__link">
-          More about the retest &rarr;
-        </a>
-      </article>
+      </div>
     </div>
-
-    <p class="hp-section-cta">
-      <a href="/en/services/" class="hp-link-arrow">View all services &rarr;</a>
-    </p>
   </div>
 </section>
 
 
-<!-- ─── FREE TOOLS ─── -->
-<section class="section hp-tools">
-  <div class="container">
-    <h2 class="hp-section-title">Tools that make your work easier</h2>
-    <p class="hp-section-intro">
-      We build our own tools to help our clients work faster and more effectively
-      on digital accessibility. All free to use.
-    </p>
-
-    <div class="hp-tools__grid">
-      <a href="/tools/alt-tekst-checker/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">Alt text checker</h3>
-          <p class="hp-tool-card__desc">
-            Check whether your images have good alternative text.
-          </p>
+<!-- ─── CONTACT FORM 1 ─── -->
+<section class="hp-contact-section">
+  <div class="hp-container">
+    <div class="hp-contact__grid">
+      <div class="hp-contact__text">
+        <div class="hp-contact__photo-wrapper">
+          {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
         </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-
-      <a href="/tools/koppenstructuur-checker/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">Heading structure checker</h3>
-          <p class="hp-tool-card__desc">
-            See at a glance whether your page structure is correct.
-          </p>
-        </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-
-      <a href="/tools/kleurcontrast-checker/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">Colour contrast checker</h3>
-          <p class="hp-tool-card__desc">
-            Test whether your colour combinations have sufficient contrast.
-          </p>
-        </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-
-      <a href="/tools/pdf-checker/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">PDF checker</h3>
-          <p class="hp-tool-card__desc">
-            Check whether your PDFs are accessible.
-          </p>
-        </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-
-      <a href="/tools/aria-referentie/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">ARIA reference</h3>
-          <p class="hp-tool-card__desc">
-            Quickly look up which ARIA attributes you can use where.
-          </p>
-        </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-
-      <a href="/tools/toegankelijkheidsverklaring-generator/" class="hp-tool-card">
-        <div class="hp-tool-card__body">
-          <h3 class="hp-tool-card__title">Accessibility statement generator</h3>
-          <p class="hp-tool-card__desc">
-            Easily create an accessibility statement.
-          </p>
-        </div>
-        <span class="hp-tool-card__link">View the tool &rarr;</span>
-      </a>
-    </div>
-
-    <p class="hp-section-cta">
-      <a href="/tools/" class="hp-link-arrow">View all tools &rarr;</a>
-    </p>
-  </div>
-</section>
-
-
-<!-- ─── AI AND WCAG ─── -->
-{{ $aiPostsEn := where site.RegularPages "Section" "blog" }}
-{{ $aiPostsEn = where $aiPostsEn ".Params.categories" "intersect" (slice "ai-and-wcag") }}
-{{ $aiRecentEn := first 3 ($aiPostsEn.ByDate.Reverse) }}
-{{ if $aiRecentEn }}
-<section class="section hp-linkedin">
-  <div class="container">
-    <h2 class="hp-section-title">AI and WCAG</h2>
-    <p class="hp-narrow hp-linkedin__intro">
-      Can AI test your website for accessibility? In this series we investigate
-      what AI can and can't detect. Real tests, honest results.
-    </p>
-
-    <div class="hp-linkedin__grid">
-      {{ range $aiRecentEn }}
-        <a href="{{ .RelPermalink }}" class="hp-linkedin__card">
-          {{ with .Params.image }}
-            <div class="hp-linkedin__card-img">
-              <img src="{{ . }}" alt="" loading="lazy" />
+        <h2 class="hp-heading-lg">Ready to lower the barrier?</h2>
+        <p class="hp-contact__intro">
+          Our experts are ready to guide you towards a digital
+          landscape where everyone is welcome.
+        </p>
+      </div>
+      <div class="hp-contact__form-card">
+        <h3 class="hp-heading-md">Get in touch</h3>
+        <p class="hp-contact__form-sub">Have a specific question? Let us know.</p>
+        <form
+          id="hp-contact-form-1"
+          class="hp-form"
+          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-contact-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+          <div class="hp-form__row">
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="hp-name1">Name</label>
+              <input class="hp-form__input" id="hp-name1" name="naam" autocomplete="name" required type="text" placeholder="Your name" />
             </div>
-          {{ end }}
-          <div class="hp-linkedin__card-body">
-            <h3 class="hp-linkedin__card-title">{{ .Title }}</h3>
-            <p class="hp-linkedin__card-desc">{{ .Description | truncate 120 }}</p>
-            {{ $months := slice "" "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
-            <time class="hp-linkedin__card-date" datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Day }} {{ index $months (int (.Date.Format "1")) }} {{ .Date.Year }}
-            </time>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="hp-email1">Email</label>
+              <input class="hp-form__input" id="hp-email1" name="email" autocomplete="email" required type="email" placeholder="your@email.com" />
+            </div>
           </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="hp-message1">Message</label>
+            <textarea class="hp-form__input hp-form__textarea" id="hp-message1" name="bericht" required placeholder="How can we help you?" rows="4"></textarea>
+          </div>
+          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
+            Send message
+          </button>
+          <div role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── TEST YOUR CONTRAST ─── -->
+<section class="hp-contrast">
+  <div class="hp-container">
+    <div class="hp-contrast__grid">
+      <div class="hp-contrast__text">
+        <span class="hp-hero__badge" style="margin-bottom: 1rem;">One of our tools</span>
+        <h2 class="hp-heading-lg">Test your contrast</h2>
+        <p class="hp-contrast__intro">
+          Poor contrast is the most common error on the web. Use our
+          free tool to see how colour choices affect readability.
+        </p>
+        <div class="hp-contrast__checks">
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span>WCAG AA and AAA checked</span>
+          </div>
+          <div class="hp-contrast__check hp-contrast__check--muted">
+            <span class="material-symbols-outlined" aria-hidden="true">info</span>
+            <span>Based on the WCAG contrast algorithm</span>
+          </div>
+        </div>
+        <a href="/tools/" class="hp-btn hp-btn--outline" style="margin-top: 1.5rem;">
+          View other tools
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+      <div class="hp-contrast__demo">
+        <div class="hp-contrast__preview-card">
+          <div class="hp-contrast__preview-block">
+            <p class="hp-contrast__preview-label">Sample text</p>
+            <p class="hp-contrast__preview-ratio">Contrast Ratio 7.2:1</p>
+          </div>
+          <div class="hp-contrast__color-grid">
+            <div class="hp-contrast__color-swatch">
+              <span class="hp-contrast__swatch-label">Background</span>
+              <div class="hp-contrast__swatch hp-contrast__swatch--primary"></div>
+            </div>
+            <div class="hp-contrast__color-swatch">
+              <span class="hp-contrast__swatch-label">Text colour</span>
+              <div class="hp-contrast__swatch hp-contrast__swatch--white"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hp-contrast__result">
+          <div class="hp-contrast__result-label">
+            <span class="hp-contrast__result-dot"></span>
+            <span>Magenta Primary</span>
+          </div>
+          <span class="hp-contrast__result-status">PASSED AAA</span>
+        </div>
+        <a href="/tools/kleurcontrast-checker/" class="hp-btn hp-btn--outline hp-contrast__cta">
+          Open the colour contrast checker
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── LATEST INSIGHTS ─── -->
+{{ $allBlog := where site.RegularPages "Section" "blog" }}
+{{ $recentPosts := first 4 ($allBlog.ByDate.Reverse) }}
+{{ if $recentPosts }}
+<section class="hp-insights">
+  <div class="hp-container">
+    <div class="hp-insights__header">
+      <div class="hp-insights__header-text">
+        <h2 class="hp-heading-lg">Latest insights</h2>
+        <p class="hp-insights__intro">Stay up to date with developments in digital accessibility.</p>
+      </div>
+      <a class="hp-insights__all-link" href="/en/blog/">View all articles</a>
+    </div>
+    <div class="hp-insights__grid">
+      {{ range $recentPosts }}
+        {{ $categories := .Params.categories | default slice }}
+        {{ $firstCat := index ($categories | default (slice "Article")) 0 }}
+        <a href="{{ .RelPermalink }}" class="hp-insight-card">
+          <span class="hp-insight-card__category">{{ $firstCat }}</span>
+          <h3 class="hp-insight-card__title">{{ .Title }}</h3>
+          <p class="hp-insight-card__desc">{{ .Description | truncate 120 }}</p>
+          <span class="hp-insight-card__read">
+            Read article <span class="material-symbols-outlined" aria-hidden="true">east</span>
+          </span>
         </a>
       {{ end }}
     </div>
-
-    <p class="hp-section-cta">
-      <a href="/en/categories/ai-and-wcag/" class="hp-link-arrow">View all AI and WCAG articles &rarr;</a>
-    </p>
   </div>
 </section>
 {{ end }}
 
 
-<!-- ─── WHY PROPER ACCESS ─── -->
-<section class="section hp-usps">
-  <div class="container">
-    <h2 class="hp-section-title">Six reasons to work with us</h2>
-
-    <div class="hp-usps__grid">
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">01</span>
-        <h3 class="hp-usp__title">Report per element</h3>
-        <p class="hp-usp__desc">
-          Not per success criterion, but per page and per component. Actionable
-          for your entire team.
-        </p>
-      </div>
-
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">02</span>
-        <h3 class="hp-usp__title">Independent</h3>
-        <p class="hp-usp__desc">
-          We don't build websites, manage content, or sell software.
-          No conflicts of interest whatsoever.
-        </p>
-      </div>
-
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">03</span>
-        <h3 class="hp-usp__title">Direct access</h3>
-        <p class="hp-usp__desc">
-          You talk to the auditor, not to a middleman.
-        </p>
-      </div>
-
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">04</span>
-        <h3 class="hp-usp__title">Own research</h3>
-        <p class="hp-usp__desc">
-          We study weekly and test how browsers and assistive technology
-          actually behave.
-        </p>
-      </div>
-
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">05</span>
-        <h3 class="hp-usp__title">We build tools for you</h3>
-        <p class="hp-usp__desc">
-          Free tools that help you work faster and better understand
-          digital accessibility.
-        </p>
-      </div>
-
-      <div class="hp-usp">
-        <span class="hp-usp__number" aria-hidden="true">06</span>
-        <h3 class="hp-usp__title">We are second to none</h3>
-        <p class="hp-usp__desc">
-          Our goal isn't to be the best ourselves &mdash; but to make your
-          organisation the best at digital accessibility.
-        </p>
+<!-- ─── LEGAL STATEMENT ─── -->
+<section class="hp-legal-cta">
+  <div class="hp-container">
+    <div class="hp-legal-cta__card">
+      <div class="hp-legal-cta__gradient" aria-hidden="true"></div>
+      <div class="hp-legal-cta__columns">
+        <div class="hp-legal-cta__content">
+          <h2 class="hp-heading-lg hp-legal-cta__title">Need a compliance statement?</h2>
+          <p class="hp-legal-cta__desc">
+            Comply with national digital accessibility laws or the European Accessibility Act
+            (EAA) with our specialised audits and reports.
+          </p>
+          <div class="hp-legal-cta__buttons">
+            <a class="hp-btn hp-btn--white" href="/en/digital-accessibility-government/">
+              Government
+              <span class="material-symbols-outlined" aria-hidden="true">launch</span>
+            </a>
+            <a class="hp-btn hp-btn--ghost" href="/en/e-commerce-digital-accessibility/">
+              EAA compliance
+              <span class="material-symbols-outlined" aria-hidden="true">launch</span>
+            </a>
+          </div>
+        </div>
+        <div class="hp-legal-cta__content">
+          <h2 class="hp-heading-lg hp-legal-cta__title">Test your team's knowledge</h2>
+          <p class="hp-legal-cta__desc">
+            How well does your team know digital accessibility? Take one of our quizzes and find out.
+          </p>
+          <div class="hp-legal-cta__buttons">
+            <a class="hp-btn hp-btn--white" href="/tools/quiz-webredactie/">
+              Quiz content editors
+              <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+            </a>
+            <a class="hp-btn hp-btn--ghost" href="/tools/quiz-developers/">
+              Quiz developers
+              <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 
-
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="section hp-faq">
-  <div class="container">
-    <h2 class="hp-section-title">Frequently asked questions</h2>
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Frequently asked questions</h2>
     <div class="hp-faq__container faq-container">
       {{ range . }}
         <details class="faq-item">
@@ -587,58 +340,51 @@
 {{ end }}
 
 
-<!-- ─── CTA ─── -->
-<section class="mb-28 cta bg-light" id="cta">
-  <div class="container">
-    <div class="bg-light rounded-xl px-4 py-16 xl:p-20">
-      <div class="row items-center justify-between">
-        <div class="md:col-7 md:order-1 mb-10 md:mb-0">
-          <img src="{{ "images/julia.webp" | relURL }}" alt="" class="cta-photo" loading="lazy" />
-          <h2 class="mb-2">Want to know where you stand?</h2>
-          <p class="mb-6">
-            Schedule a free 30-minute introduction. We'll discuss your situation, give a first estimate, and explain how we work. No obligations.
-          </p>
-          <a class="btn btn-primary" href="/en/contact/">
-            Get in touch
-          </a>
+<!-- ─── CONTACT FORM 2 ─── -->
+<section class="hp-contact-final">
+  <div class="hp-container">
+    <div class="hp-contact-final__grid">
+      <div class="hp-contact-final__text">
+        <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
+        <h2 class="hp-heading-lg">Let's build a more accessible web together.</h2>
+        <p class="hp-contact-final__intro">
+          Have questions about our services or want to schedule an audit?
+          We typically respond within one business day.
+        </p>
+        <div class="hp-contact-final__info">
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+          </div>
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
+            <a href="tel:+31855055890">085 5055 890</a>
+          </div>
         </div>
-
-        <div class="md:col-5 lg:col-4 md:order-2">
-          <form
-            id="cta-form"
-            class="space-y-5"
-            onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
-            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-
-            <div>
-              <label for="cta-name" class="block mb-2 text-sm font-semibold text-dark">Name</label>
-              <input type="text" id="cta-name" name="naam" autocomplete="name" required
-                class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
-                placeholder="Your name" />
-            </div>
-
-            <div>
-              <label for="cta-email" class="block mb-2 text-sm font-semibold text-dark">Email</label>
-              <input type="email" id="cta-email" name="email" autocomplete="email" required
-                class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
-                placeholder="your@email.com" />
-            </div>
-
-            <div>
-              <label for="cta-message" class="block mb-2 text-sm font-semibold text-dark">Message</label>
-              <textarea id="cta-message" name="bericht" rows="5" required
-                class="w-full px-4 py-3 text-dark bg-white border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
-                placeholder="How can we help you?"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary w-full">
-              Send message
-              <i class="fa fa-paper-plane pl-2"></i>
-            </button>
-
-            <div role="status" aria-live="polite"></div>
-          </form>
-        </div>
+      </div>
+      <div class="hp-contact-final__form-card">
+        <form
+          id="hp-contact-form-2"
+          class="hp-form"
+          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-footer-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="hp-name2">Name</label>
+            <input class="hp-form__input" id="hp-name2" name="naam" autocomplete="name" required type="text" placeholder="Name" />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="hp-email2">Email</label>
+            <input class="hp-form__input" id="hp-email2" name="email" autocomplete="email" required type="email" placeholder="Email address" />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="hp-message2">Your message</label>
+            <textarea class="hp-form__input hp-form__textarea" id="hp-message2" name="bericht" required placeholder="Ask your question here..." rows="3"></textarea>
+          </div>
+          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
+            Send message
+          </button>
+          <div role="status" aria-live="polite"></div>
+        </form>
       </div>
     </div>
   </div>
