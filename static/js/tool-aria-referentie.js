@@ -1817,8 +1817,8 @@
     { id: "live-region-attr", nl: "Live-regio-attributen", en: "Live region attributes" }
   ];
 
-  var currentLang = "nl";
-  try { currentLang = localStorage.getItem("pa-tool-lang") || "nl"; } catch (e) { /* */ }
+  var currentLang = (window.__paToolLang === "en") ? "en" : "nl";
+  try { var stored = localStorage.getItem("pa-tool-lang"); if (stored && !window.__paToolLang) currentLang = stored; } catch (e) { /* */ }
 
   function t(key) {
     return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;

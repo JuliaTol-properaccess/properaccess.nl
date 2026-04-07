@@ -82,5 +82,6 @@
 </section>
 
 {{ if not .Params.gratis }}<script src="{{ "js/tool-gate.js" | relURL }}" defer></script>{{ end }}
+<script>window.__paToolLang = "{{ .Lang }}";</script>
 <script src="{{ "js/tool-foutmeldingen.js" | relURL }}" defer></script>
 {{ end }}
