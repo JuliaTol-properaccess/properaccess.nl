@@ -12117,7 +12117,7 @@ a.tool-link__href-url:hover {
 }
 
 /* Mobile fullscreen */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .pa-chat-wrapper {
     bottom: 1rem;
     right: 1rem;
