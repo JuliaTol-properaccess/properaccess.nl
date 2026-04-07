@@ -217,6 +217,8 @@ html.dark .offerte-hero {
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 html.dark .offerte-hero__title h1 {
@@ -435,7 +437,7 @@ html.dark .offerte-section--light {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  max-width: 900px;
+  max-width: min(900px, 100%);
   margin: 0 auto;
 }
 
@@ -826,6 +828,14 @@ html.dark .sectie-prose strong {
   border-radius: 8px;
 }
 
+/* Tabellen horizontaal scrollbaar op mobiel */
+.sectie-prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
 /* --- CTA / Closing section --- */
 .offerte-cta {
   text-align: center;
@@ -952,6 +962,11 @@ html.dark .section-full--light {
 .section-full__inner {
   max-width: 48rem;
   margin: 0 auto;
+}
+
+.section-full__content {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .section-full__content table {
@@ -3892,6 +3907,8 @@ html.dark .toolsuite-promo__text {
   max-width: 80rem;
   margin-inline: auto;
   padding-inline: 2rem;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 .hp-heading-lg {
@@ -4028,6 +4045,8 @@ html.dark .toolsuite-promo__text {
   color: #1F2937;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .hp-hero__title-accent {
@@ -4055,6 +4074,13 @@ html.dark .toolsuite-promo__text {
 
 .hp-hero__visual {
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hp-hero__visual svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .hp-hero__image-frame {
