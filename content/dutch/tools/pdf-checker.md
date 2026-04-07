@@ -4,6 +4,7 @@ description: "Upload een PDF en controleer automatisch op veelvoorkomende toegan
 layout: "pdf-checker"
 weight: 10
 beta: true
+gratis: true
 doelgroep:
   - "Webredactie"
   - "Webdeveloper"

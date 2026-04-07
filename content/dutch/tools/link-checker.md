@@ -4,6 +4,7 @@ description: "Voer een URL in en bekijk alle links op de pagina met hun toeganke
 layout: "link-checker"
 weight: 10
 beta: true
+gratis: true
 doelgroep:
   - "Webredactie"
   - "Webdeveloper"
