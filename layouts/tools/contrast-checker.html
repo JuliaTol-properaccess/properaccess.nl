@@ -24,50 +24,55 @@
 
     <div id="toolContent"{{ if not .Params.gratis }} hidden{{ end }}>
     <p class="tool-contrast__intro">
-      Controleer of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
+      {{ if eq .Lang "nl" }}Controleer of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
       Vul twee kleuren in en zie direct of het contrast voldoende is &mdash; en voor welke situaties.
+      {{ else }}Check whether your colour combination meets the WCAG guidelines.
+      Enter two colours and instantly see if the contrast is sufficient &mdash; and for which situations.
+      {{ end }}
     </p>
 
     <!-- Color inputs -->
     <div class="tool-contrast__inputs">
       <div class="tool-contrast__field">
-        <label for="fgHex">Voorgrondkleur (tekst)</label>
+        <label for="fgHex">{{ if eq .Lang "nl" }}Voorgrondkleur (tekst){{ else }}Foreground colour (text){{ end }}</label>
         <div class="tool-contrast__picker-row">
-          <input type="color" id="fgColor" value="#1F2937" aria-label="Voorgrondkleur kiezen">
+          <input type="color" id="fgColor" value="#1F2937" aria-label="{{ if eq .Lang "nl" }}Voorgrondkleur kiezen{{ else }}Pick foreground colour{{ end }}">
           <input type="text" id="fgHex" value="#1F2937" maxlength="7" autocomplete="off" spellcheck="false"
                  aria-describedby="hexHint" class="tool-contrast__hex">
-          <button type="button" class="tool-contrast__eyedropper" id="fgDropper" aria-label="Kleur oppikken van scherm" hidden>
+          <button type="button" class="tool-contrast__eyedropper" id="fgDropper" aria-label="{{ if eq .Lang "nl" }}Kleur oppikken van scherm{{ else }}Pick colour from screen{{ end }}" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9"/><path d="m15 6 3 3"/></svg>
           </button>
         </div>
       </div>
 
-      <button type="button" class="tool-contrast__swap" id="swapBtn" aria-label="Kleuren omdraaien">
+      <button type="button" class="tool-contrast__swap" id="swapBtn" aria-label="{{ if eq .Lang "nl" }}Kleuren omdraaien{{ else }}Swap colours{{ end }}">
         &#8596;
       </button>
 
       <div class="tool-contrast__field">
-        <label for="bgHex">Achtergrondkleur</label>
+        <label for="bgHex">{{ if eq .Lang "nl" }}Achtergrondkleur{{ else }}Background colour{{ end }}</label>
         <div class="tool-contrast__picker-row">
-          <input type="color" id="bgColor" value="#ffffff" aria-label="Achtergrondkleur kiezen">
+          <input type="color" id="bgColor" value="#ffffff" aria-label="{{ if eq .Lang "nl" }}Achtergrondkleur kiezen{{ else }}Pick background colour{{ end }}">
           <input type="text" id="bgHex" value="#FFFFFF" maxlength="7" autocomplete="off" spellcheck="false"
                  aria-describedby="hexHint" class="tool-contrast__hex">
-          <button type="button" class="tool-contrast__eyedropper" id="bgDropper" aria-label="Kleur oppikken van scherm" hidden>
+          <button type="button" class="tool-contrast__eyedropper" id="bgDropper" aria-label="{{ if eq .Lang "nl" }}Kleur oppikken van scherm{{ else }}Pick colour from screen{{ end }}" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9"/><path d="m15 6 3 3"/></svg>
           </button>
         </div>
       </div>
     </div>
-    <span id="hexHint" class="sr-only">Voer een hexadecimale kleurcode in, bijv. #FF6600</span>
+    <span id="hexHint" class="sr-only">{{ if eq .Lang "nl" }}Voer een hexadecimale kleurcode in, bijv. #FF6600{{ else }}Enter a hexadecimal colour code, e.g. #FF6600{{ end }}</span>
 
     <!-- Preview -->
-    <div class="tool-contrast__preview" id="previewBox" aria-label="Voorbeeld van de kleurencombinatie">
+    <div class="tool-contrast__preview" id="previewBox" aria-label="{{ if eq .Lang "nl" }}Voorbeeld van de kleurencombinatie{{ else }}Preview of the colour combination{{ end }}">
       <div class="tool-contrast__preview-text" id="previewText">
-        Zo ziet jouw tekst eruit in deze kleurencombinatie. Is het goed leesbaar?
+        {{ if eq .Lang "nl" }}Zo ziet jouw tekst eruit in deze kleurencombinatie. Is het goed leesbaar?
+        {{ else }}This is how your text looks in this colour combination. Is it easy to read?
+        {{ end }}
       </div>
       <div class="tool-contrast__size-control">
         <label for="fontSizeSlider" class="tool-contrast__size-label">
-          Tekstgrootte: <output id="fontSizeValue">16px</output>
+          {{ if eq .Lang "nl" }}Tekstgrootte:{{ else }}Font size:{{ end }} <output id="fontSizeValue">16px</output>
         </label>
         <div class="tool-contrast__size-row">
           <span class="tool-contrast__size-hint">10px</span>
@@ -81,38 +86,38 @@
     <!-- Ratio -->
     <div class="tool-contrast__ratio" aria-live="polite">
       <div class="tool-contrast__ratio-value" id="ratioValue">12.5:1</div>
-      <div class="tool-contrast__ratio-label">contrastverhouding</div>
+      <div class="tool-contrast__ratio-label">{{ if eq .Lang "nl" }}contrastverhouding{{ else }}contrast ratio{{ end }}</div>
     </div>
 
     <!-- Results grid -->
-    <div class="tool-contrast__results" id="resultsGrid" role="region" aria-label="Resultaten per WCAG-niveau" aria-live="polite">
+    <div class="tool-contrast__results" id="resultsGrid" role="region" aria-label="{{ if eq .Lang "nl" }}Resultaten per WCAG-niveau{{ else }}Results per WCAG level{{ end }}" aria-live="polite">
       <div class="tool-contrast__card">
-        <h2>Niveau AA</h2>
+        <h2>{{ if eq .Lang "nl" }}Niveau{{ else }}Level{{ end }} AA</h2>
         <div class="tool-contrast__row">
-          <span class="tool-contrast__row-label">Normale tekst</span>
+          <span class="tool-contrast__row-label">{{ if eq .Lang "nl" }}Normale tekst{{ else }}Normal text{{ end }}</span>
           <span class="tool-contrast__row-threshold">4.5:1</span>
           <span class="tool-contrast__badge" id="aa-normal"></span>
         </div>
         <div class="tool-contrast__row">
-          <span class="tool-contrast__row-label">Grote tekst</span>
+          <span class="tool-contrast__row-label">{{ if eq .Lang "nl" }}Grote tekst{{ else }}Large text{{ end }}</span>
           <span class="tool-contrast__row-threshold">3:1</span>
           <span class="tool-contrast__badge" id="aa-large"></span>
         </div>
         <div class="tool-contrast__row">
-          <span class="tool-contrast__row-label">UI-componenten</span>
+          <span class="tool-contrast__row-label">UI{{ if eq .Lang "nl" }}-componenten{{ else }} components{{ end }}</span>
           <span class="tool-contrast__row-threshold">3:1</span>
           <span class="tool-contrast__badge" id="aa-ui"></span>
         </div>
       </div>
       <div class="tool-contrast__card">
-        <h2>Niveau AAA</h2>
+        <h2>{{ if eq .Lang "nl" }}Niveau{{ else }}Level{{ end }} AAA</h2>
         <div class="tool-contrast__row">
-          <span class="tool-contrast__row-label">Normale tekst</span>
+          <span class="tool-contrast__row-label">{{ if eq .Lang "nl" }}Normale tekst{{ else }}Normal text{{ end }}</span>
           <span class="tool-contrast__row-threshold">7:1</span>
           <span class="tool-contrast__badge" id="aaa-normal"></span>
         </div>
         <div class="tool-contrast__row">
-          <span class="tool-contrast__row-label">Grote tekst</span>
+          <span class="tool-contrast__row-label">{{ if eq .Lang "nl" }}Grote tekst{{ else }}Large text{{ end }}</span>
           <span class="tool-contrast__row-threshold">4.5:1</span>
           <span class="tool-contrast__badge" id="aaa-large"></span>
         </div>
@@ -121,6 +126,7 @@
 
     <!-- WCAG context -->
     <div class="tool-contrast__wcag" id="wcagContext">
+      {{ if eq .Lang "nl" }}
       <h2>Welke eis geldt wanneer?</h2>
 
       <div class="tool-contrast__criterion" id="ctx-143">
@@ -162,7 +168,6 @@
         </p>
       </div>
 
-      <!-- Quick reference -->
       <h2 style="margin-top: 1.5rem;">Overzicht drempelwaarden</h2>
       <table class="tool-contrast__ref-table">
         <thead>
@@ -190,13 +195,89 @@
           </tr>
         </tbody>
       </table>
+      {{ else }}
+      <h2>Which requirement applies when?</h2>
+
+      <div class="tool-contrast__criterion" id="ctx-143">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.3</span>
+          <span class="tool-contrast__criterion-name">Contrast (Minimum)</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aa">Level AA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          Text and images of text must have a contrast ratio of at least <code>4.5:1</code>.
+          <strong>Large text</strong> (18pt / 24px or larger, or 14pt / 18.66px bold) may have a lower ratio of <code>3:1</code>.
+          This criterion does not apply to logos, brand names or decorative text.
+        </p>
+      </div>
+
+      <div class="tool-contrast__criterion" id="ctx-1411">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.11</span>
+          <span class="tool-contrast__criterion-name">Non-text Contrast</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aa">Level AA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          UI components (buttons, form fields, icons) and graphical objects needed to understand the content
+          must have a contrast ratio of at least <code>3:1</code> against adjacent colours.
+          Think of the border of an input field, the colour of an icon, or the state of a toggle.
+        </p>
+      </div>
+
+      <div class="tool-contrast__criterion" id="ctx-146">
+        <div class="tool-contrast__criterion-header">
+          <span class="tool-contrast__criterion-number">1.4.6</span>
+          <span class="tool-contrast__criterion-name">Contrast (Enhanced)</span>
+          <span class="tool-contrast__criterion-level tool-contrast__level-aaa">Level AAA</span>
+        </div>
+        <p class="tool-contrast__criterion-desc">
+          Text must have a contrast ratio of at least <code>7:1</code>. Large text: <code>4.5:1</code>.
+          This is the highest level and not legally required, but recommended for
+          optimal readability &mdash; for example for longer texts or an older audience.
+        </p>
+      </div>
+
+      <h2 style="margin-top: 1.5rem;">Threshold overview</h2>
+      <table class="tool-contrast__ref-table">
+        <thead>
+          <tr>
+            <th>What</th>
+            <th>AA (required)</th>
+            <th>AAA (recommended)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Normal text (&lt; 18pt)</td>
+            <td><strong>4.5:1</strong></td>
+            <td><strong>7:1</strong></td>
+          </tr>
+          <tr>
+            <td>Large text (&ge; 18pt / &ge; 14pt bold)</td>
+            <td><strong>3:1</strong></td>
+            <td><strong>4.5:1</strong></td>
+          </tr>
+          <tr>
+            <td>UI components &amp; icons</td>
+            <td><strong>3:1</strong></td>
+            <td>&mdash;</td>
+          </tr>
+        </tbody>
+      </table>
+      {{ end }}
     </div>
 
     <!-- CTA -->
     <div class="tool-cta">
+      {{ if eq .Lang "nl" }}
       <p>Kleurcontrast is slechts een van de 55 WCAG-succescriteria. Wil je weten of je hele
       website voldoet aan de toegankelijkheidseisen?</p>
       <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+      {{ else }}
+      <p>Colour contrast is just one of the 55 WCAG success criteria. Want to know if your
+      entire website meets accessibility requirements?</p>
+      <p><a href="/en/contact">Request an audit</a> or call +31 85 5055 890.</p>
+      {{ end }}
     </div>
     </div><!-- /toolContent -->
 
