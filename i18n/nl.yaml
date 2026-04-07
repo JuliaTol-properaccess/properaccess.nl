@@ -26,3 +26,51 @@
   translation: "selecteer"
 - id: search_close
   translation: "sluiten"
+- id: tools_filter_label
+  translation: "Filter tools op doelgroep"
+- id: tools_filter_all
+  translation: "Alle tools"
+- id: tools_filter_webredactie
+  translation: "Webredactie"
+- id: tools_filter_webdeveloper
+  translation: "Webdeveloper"
+- id: tools_filter_manager
+  translation: "Manager"
+- id: tools_filter_empty
+  translation: "Geen tools gevonden voor dit filter."
+- id: tools_cta_title
+  translation: "Meer nodig?"
+- id: tools_cta_description
+  translation: "We bouwen ook tools op maat voor onze klanten. Behoefte aan een specifieke tool of automatisering? Bespreek de mogelijkheden met Julia Tol."
+- id: tools_cta_phone
+  translation: "Bel 06-28742275"
+- id: tools_lock_title
+  translation: "Alleen voor klanten"
+- id: tools_lock_text
+  translation: "Deze tool is exclusief beschikbaar voor klanten van Proper Access. Heb je al een toegangscode? Voer deze in hieronder."
+- id: tools_lock_placeholder
+  translation: "Toegangscode"
+- id: tools_lock_submit
+  translation: "Ontgrendel"
+- id: tools_lock_expired
+  translation: "Je proefperiode is verlopen. Neem contact op met Proper Access."
+- id: tools_lock_invalid
+  translation: "Ongeldige toegangscode. Controleer de code en probeer het opnieuw."
+- id: tools_lock_error
+  translation: "Kan verbinding niet maken. Probeer het later opnieuw."
+- id: tools_lock_footer_pre
+  translation: "Nog geen klant?"
+- id: tools_lock_footer_link
+  translation: "Neem contact op"
+- id: tools_lock_footer_post
+  translation: "voor meer informatie."
+- id: tools_promo_title
+  translation: "Proper Access Toolsuite"
+- id: tools_promo_text1
+  translation: "Wij hebben een applicatie ontwikkeld met 9 tools waarmee webredactie zelfstandig de toegankelijkheid van content kan controleren. Geen technische kennis nodig, geen HTML-kennis vereist."
+- id: tools_promo_text2
+  translation: "De tools signaleren niet alleen problemen, maar leggen ook uit waarom iets een probleem is en hoe je het kan oplossen. Zo leer je tijdens het controleren ook hoe je toegankelijke content maakt."
+- id: tools_promo_text3
+  translation: "De toolsuite bevat checkers voor koppenstructuur, alt-teksten, links, tabellen, semantiek, foutmeldingen, iframes, taal en paginatitels."
+- id: tools_promo_cta
+  translation: "Neem contact op voor een abonnement"

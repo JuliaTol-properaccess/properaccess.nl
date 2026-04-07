@@ -5,11 +5,11 @@
     <div class="container">
       <div class="tool-overview__intro">{{ .Content }}</div>
 
-      <div class="tool-filter" role="group" aria-label="Filter tools op doelgroep">
-        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all" aria-pressed="true">Alle tools</button>
-        <button class="tool-filter__btn" data-filter="Webredactie" aria-pressed="false">Webredactie</button>
-        <button class="tool-filter__btn" data-filter="Webdeveloper" aria-pressed="false">Webdeveloper</button>
-        <button class="tool-filter__btn" data-filter="Manager" aria-pressed="false">Manager</button>
+      <div class="tool-filter" role="group" aria-label="{{ T "tools_filter_label" }}">
+        <button class="tool-filter__btn tool-filter__btn--active" data-filter="all" aria-pressed="true">{{ T "tools_filter_all" }}</button>
+        <button class="tool-filter__btn" data-filter="Webredactie,Web editors" aria-pressed="false">{{ T "tools_filter_webredactie" }}</button>
+        <button class="tool-filter__btn" data-filter="Webdeveloper,Web developers,Webdesigner,Web designers" aria-pressed="false">{{ T "tools_filter_webdeveloper" }}</button>
+        <button class="tool-filter__btn" data-filter="Manager,Managers" aria-pressed="false">{{ T "tools_filter_manager" }}</button>
       </div>
 
       <div class="tool-overview__grid">
@@ -49,53 +49,53 @@
 
         <div class="tool-card tool-card--cta">
           <div class="tool-card__body">
-            <h2 class="tool-card__title">Meer nodig?</h2>
-            <p class="tool-card__description">We bouwen ook tools op maat voor onze klanten. Behoefte aan een specifieke tool of automatisering? Bespreek de mogelijkheden met Julia Tol.</p>
+            <h2 class="tool-card__title">{{ T "tools_cta_title" }}</h2>
+            <p class="tool-card__description">{{ T "tools_cta_description" }}</p>
           </div>
           <div class="tool-card__action">
-            <a href="tel:+31628742275" class="tool-card__cta-link">Bel 06-28742275</a>
+            <a href="tel:+31628742275" class="tool-card__cta-link">{{ T "tools_cta_phone" }}</a>
           </div>
         </div>
       </div>
 
-      <p class="tool-filter__empty" hidden>Geen tools gevonden voor dit filter.</p>
+      <p class="tool-filter__empty" hidden>{{ T "tools_filter_empty" }}</p>
 
       <!-- Toolsuite promo -->
       <div class="toolsuite-promo">
         <div class="toolsuite-promo__content">
-          <h2 class="toolsuite-promo__title">Proper Access Toolsuite</h2>
-          <p class="toolsuite-promo__text">Wij hebben een applicatie ontwikkeld met 9 tools waarmee webredactie zelfstandig de toegankelijkheid van content kan controleren. Geen technische kennis nodig, geen HTML-kennis vereist.</p>
-          <p class="toolsuite-promo__text">De tools signaleren niet alleen problemen, maar leggen ook uit waarom iets een probleem is en hoe je het kan oplossen. Zo leer je tijdens het controleren ook hoe je toegankelijke content maakt.</p>
-          <p class="toolsuite-promo__text">De toolsuite bevat checkers voor koppenstructuur, alt-teksten, links, tabellen, semantiek, foutmeldingen, iframes, taal en paginatitels.</p>
-          <a href="/contact/" class="toolsuite-promo__cta">Neem contact op voor een abonnement</a>
+          <h2 class="toolsuite-promo__title">{{ T "tools_promo_title" }}</h2>
+          <p class="toolsuite-promo__text">{{ T "tools_promo_text1" }}</p>
+          <p class="toolsuite-promo__text">{{ T "tools_promo_text2" }}</p>
+          <p class="toolsuite-promo__text">{{ T "tools_promo_text3" }}</p>
+          <a href="{{ "contact/" | relLangURL }}" class="toolsuite-promo__cta">{{ T "tools_promo_cta" }}</a>
         </div>
         <div class="toolsuite-promo__image">
           <img src="/images/tools/tools_def.png" alt="Screenshot van de Proper Access Toolsuite met 9 analyse-tools voor webredactie" loading="lazy" />
         </div>
       </div>
 
-      {{ partial "webinar-section.html" . }}
+      {{ if eq .Lang "nl" }}{{ partial "webinar-section.html" . }}{{ end }}
 
       <!-- Modal voor vergrendelde tools -->
       <div class="tool-lock-modal" id="lockModal" hidden>
         <div class="tool-lock-modal__backdrop"></div>
         <div class="tool-lock-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="lockModalTitle">
-          <button class="tool-lock-modal__close" aria-label="Sluiten" id="lockModalClose">
+          <button class="tool-lock-modal__close" aria-label="{{ T "search_close" }}" id="lockModalClose">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
           <svg class="tool-lock-modal__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
-          <h2 class="tool-lock-modal__title" id="lockModalTitle">Alleen voor klanten</h2>
-          <p class="tool-lock-modal__text">Deze tool is exclusief beschikbaar voor klanten van Proper Access. Heb je al een toegangscode? Voer deze in hieronder.</p>
+          <h2 class="tool-lock-modal__title" id="lockModalTitle">{{ T "tools_lock_title" }}</h2>
+          <p class="tool-lock-modal__text">{{ T "tools_lock_text" }}</p>
           <form class="tool-lock-modal__form" id="lockModalForm">
-            <label for="lockModalToken" class="sr-only">Toegangscode</label>
-            <input type="text" id="lockModalToken" class="tool-lock-modal__input" placeholder="Toegangscode" autocomplete="off" />
-            <button type="submit" class="tool-lock-modal__btn">Ontgrendel</button>
+            <label for="lockModalToken" class="sr-only">{{ T "tools_lock_placeholder" }}</label>
+            <input type="text" id="lockModalToken" class="tool-lock-modal__input" placeholder="{{ T "tools_lock_placeholder" }}" autocomplete="off" />
+            <button type="submit" class="tool-lock-modal__btn">{{ T "tools_lock_submit" }}</button>
           </form>
           <p class="tool-lock-modal__error" id="lockModalError" hidden></p>
-          <p class="tool-lock-modal__footer">Nog geen klant? <a href="/contact/">Neem contact op</a> voor meer informatie.</p>
+          <p class="tool-lock-modal__footer">{{ T "tools_lock_footer_pre" }} <a href="{{ "contact/" | relLangURL }}">{{ T "tools_lock_footer_link" }}</a> {{ T "tools_lock_footer_post" }}</p>
         </div>
       </div>
     </div>
@@ -103,6 +103,13 @@
 
   <script>
   (function () {
+    /* ── i18n strings for JS ──────────────────── */
+    var i18n = {
+      lockExpired: {{ T "tools_lock_expired" }},
+      lockInvalid: {{ T "tools_lock_invalid" }},
+      lockError: {{ T "tools_lock_error" }}
+    };
+
     /* ── Filter ────────────────────────────────── */
     var btns = document.querySelectorAll('.tool-filter__btn');
     var cards = document.querySelectorAll('.tool-card[data-doelgroep]');
@@ -118,12 +125,14 @@
         btn.classList.add('tool-filter__btn--active');
         btn.setAttribute('aria-pressed', 'true');
 
-        var filter = btn.getAttribute('data-filter');
+        var filterValues = btn.getAttribute('data-filter').split(',');
         var visible = 0;
 
         cards.forEach(function (card) {
           var groups = (card.getAttribute('data-doelgroep') || '').split(',');
-          var show = filter === 'all' || groups.indexOf(filter) !== -1;
+          var show = filterValues.indexOf('all') !== -1 || groups.some(function (g) {
+            return filterValues.indexOf(g) !== -1;
+          });
           card.hidden = !show;
           if (show) visible++;
         });
@@ -228,9 +237,9 @@
               if (pendingUrl) window.location.href = pendingUrl;
             } else {
               if (data.reason === 'expired') {
-                modalError.textContent = 'Je proefperiode is verlopen. Neem contact op met Proper Access.';
+                modalError.textContent = i18n.lockExpired;
               } else {
-                modalError.textContent = 'Ongeldige toegangscode. Controleer de code en probeer het opnieuw.';
+                modalError.textContent = i18n.lockInvalid;
               }
               modalError.hidden = false;
               modalInput.value = '';
@@ -238,7 +247,7 @@
             }
           })
           .catch(function () {
-            modalError.textContent = 'Kan verbinding niet maken. Probeer het later opnieuw.';
+            modalError.textContent = i18n.lockError;
             modalError.hidden = false;
           });
       });

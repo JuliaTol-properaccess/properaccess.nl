@@ -7,9 +7,14 @@ url = "/en/blog/"
 weight = 1
 
 [[main]]
+name = "Tools"
+url = "/en/tools/"
+weight = 2
+
+[[main]]
 name = "Contact"
 url = "/en/contact/"
-weight = 2
+weight = 3
 
 # footer menu
 [[footer]]
