@@ -24,8 +24,11 @@
 
     <div id="toolContent"{{ if not .Params.gratis }} hidden{{ end }}>
       <p class="tool-heading__intro">
-        Voer een URL in en bekijk de koppenstructuur van die pagina.
+        {{ if eq .Lang "nl" }}Voer een URL in en bekijk de koppenstructuur van die pagina.
         Een logische koppenhierarchie helpt screenreadergebruikers om door je content te navigeren.
+        {{ else }}Enter a URL and view the heading structure of that page.
+        A logical heading hierarchy helps screen reader users navigate your content.
+        {{ end }}
       </p>
 
       <form class="tool-heading__form" id="checkerForm">
@@ -34,21 +37,27 @@
           <input
             type="url"
             id="urlInput"
-            placeholder="https://voorbeeld.nl"
+            placeholder="https://{{ if eq .Lang "nl" }}voorbeeld.nl{{ else }}example.com{{ end }}"
             required
             autocomplete="url"
           >
         </div>
-        <button type="submit" id="submitBtn" class="tool-heading__submit">Controleer</button>
+        <button type="submit" id="submitBtn" class="tool-heading__submit">{{ if eq .Lang "nl" }}Controleer{{ else }}Check{{ end }}</button>
       </form>
 
       <div id="output" role="region" aria-live="polite"></div>
 
       <!-- CTA -->
       <div class="tool-cta" id="headingCta" style="display:none;">
+        {{ if eq .Lang "nl" }}
         <p>Dit is een snelle check van de koppenstructuur. Een volledige WCAG-audit onderzoekt
         alle 55 succescriteria &mdash; van toetsenbordtoegankelijkheid tot kleurcontrast.</p>
         <p><a href="/contact">Vraag een audit aan</a> of bel 085 5055 890.</p>
+        {{ else }}
+        <p>This is a quick heading structure check. A full WCAG audit covers
+        all 55 success criteria &mdash; from keyboard accessibility to colour contrast.</p>
+        <p><a href="/en/contact">Request an audit</a> or call +31 85 5055 890.</p>
+        {{ end }}
       </div>
     </div><!-- /toolContent -->
 
