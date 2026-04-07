@@ -74,3 +74,27 @@
   translation: "De toolsuite bevat checkers voor koppenstructuur, alt-teksten, links, tabellen, semantiek, foutmeldingen, iframes, taal en paginatitels."
 - id: tools_promo_cta
   translation: "Neem contact op voor een abonnement"
+- id: chat_toggle_label
+  translation: "Chat openen"
+- id: chat_title
+  translation: "Stel een vraag"
+- id: chat_close
+  translation: "Chat sluiten"
+- id: chat_welcome
+  translation: "Hallo! Ik ben de AI-assistent van Proper Access. Stel gerust een vraag over digitale toegankelijkheid, onze diensten of WCAG."
+- id: chat_input_label
+  translation: "Typ je vraag"
+- id: chat_placeholder
+  translation: "Stel een vraag over toegankelijkheid..."
+- id: chat_send
+  translation: "Verzenden"
+- id: chat_loading
+  translation: "Antwoord wordt getypt..."
+- id: chat_error
+  translation: "Er ging iets mis. Probeer het later opnieuw."
+- id: chat_cta
+  translation: "Liever persoonlijk contact? Plan een gesprek."
+- id: chat_whatsapp
+  translation: "Praat met een mens via WhatsApp"
+- id: chat_disclaimer
+  translation: "AI-assistent. Voor advies op maat, neem contact met ons op."
