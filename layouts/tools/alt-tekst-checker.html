@@ -46,6 +46,7 @@
       </div>
     </div><!-- /toolContent -->
 
+    {{ if eq .Lang "nl" }}
     <!-- FAQ -->
     <div class="tool-faq">
       <h2>Veelgestelde vragen</h2>
@@ -105,6 +106,7 @@
 
       <p class="tool-faq__cta">Wil je meer dan alleen alt-teksten laten checken? Een volledige <a href="/contact/">WCAG-audit</a> onderzoekt alle 55 succescriteria. Of begin met een <a href="/quickscan/">quickscan</a> om snel te zien waar je staat.</p>
     </div>
+    {{ end }}
 
   </div>
 </section>
