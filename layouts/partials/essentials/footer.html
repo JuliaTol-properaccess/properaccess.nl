@@ -11,7 +11,7 @@
       </div>
       <div class="footer-optin__form">
         <h3 class="footer-optin__form-title">{{ i18n "footer_newsletter_title" | default "Aanmelden nieuwsbrief" }}</h3>
-        <form id="newsletter-form" class="pa-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'nieuwsbrief', successMessage: 'Je bent aangemeld!' });">
+        <form id="newsletter-form" class="pa-form" novalidate onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'nieuwsbrief', successMessage: 'Je bent aangemeld!' });">
           <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
           <div class="pa-form__row">
             <label for="newsletter-email" class="sr-only">{{ i18n "contact_email" | default "E-mailadres" }}</label>

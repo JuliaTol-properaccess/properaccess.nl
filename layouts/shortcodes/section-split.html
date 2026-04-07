@@ -35,7 +35,7 @@
         <div class="hp-contact__form-card">
           <h3 class="hp-heading-md" style="margin-bottom: 0.5rem;">Wil je even sparren?</h3>
           <p class="hp-contact__form-sub">Stuur ons de URL van je organisatie. We mailen je onze visie op wat er moet gebeuren.</p>
-          <form class="hp-form" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Verstuurd! We mailen je binnen 1 werkdag onze visie.' });">
+          <form class="hp-form" novalidate onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Verstuurd! We mailen je binnen 1 werkdag onze visie.' });">
             <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
             <div class="hp-form__field">
               <label class="hp-form__label" for="split-name">Naam</label>
