@@ -49,6 +49,8 @@ Ik pakte een screenshot van de Divi-website (een populaire WordPress-themebuilde
 
 Onder elke kop staat bodytekst in lichtgrijs. Erboven staan decoratieve illustraties in dezelfde kleuren.
 
+![Screenshot van de Divi-website met vier kolommen: gekleurde koppen en lichtgrijze bodytekst op een witte achtergrond](/images/blog/contrast_divi.png)
+
 Ik gaf deze screenshot aan Claude met de vraag: _"Welke contrastproblemen zie je op deze webpagina?"_
 
 Geen hints. Geen kleurnummers. Alleen het plaatje.
@@ -65,13 +67,13 @@ Claude identificeerde drie categorieën contrastproblemen.
 
 > "Groen is de meest problematische kleur voor contrast op wit. Een typisch groen zoals #4CAF50 haalt maar 2,5 tot 3,2:1 tegen wit."
 
-**Score: Niet gevonden.** Ik meet met mijn tools de groene kleur die in de kop is gebruikt als #2CD991 op een #F0FBF5. Mijn contrastwaarde is 1,7:1. Dit is te groot verschil met 2,5 tot 3,2:1 van Claude. Overigens is de marge van 0,5 tussen 2,5:1 en 3,0:1 gewoon te groot om te accepteren. WCAG heeft het over contrast die met 2 cijfers achter de komma wordt gemeten, bijvoorbeeld 2,99:1.
+**Score: Niet gevonden.** Ik meet met mijn tools de groene kleur die in de kop is gebruikt als <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op een <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5. Mijn contrastwaarde is 1,7:1. Dit is te groot verschil met 2,5 tot 3,2:1 van Claude. Overigens is de marge van 0,5 tussen 2,5:1 en 3,0:1 gewoon te groot om te accepteren. WCAG heeft het over contrast die met 2 cijfers achter de komma wordt gemeten, bijvoorbeeld 2,99:1.
 
 ### 2. Oranje kop: faalt
 
 > "Oranje is ook een problematische kleur. Een typisch oranje zoals #FF9800 haalt ongeveer 2,9:1 tegen wit. Zelfs een donkerder oranje zoals #F57C00 haalt maar 3,6:1."
 
-**Score: Niet gevonden.** Weer mis. Claude meet een andere tint oranje en ziet niet dat elk blokje op de screenshot een subtiele achtergrondkleur heeft. Mijn meting is #FC7519 op #FDF4EF met resultaat van 2,5:1.
+**Score: Niet gevonden.** Weer mis. Claude meet een andere tint oranje en ziet niet dat elk blokje op de screenshot een subtiele achtergrondkleur heeft. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF met resultaat van 2,5:1.
 
 ### 3. Bodytekst in lichtgrijs: faalt
 
@@ -83,13 +85,13 @@ Claude identificeerde drie categorieën contrastproblemen.
 
 > "Een typisch Divi-paars haalt ongeveer 4,5-5:1 tegen wit. Dat is op de grens."
 
-**Score: Gevonden.** Claude twijfelt en zegt terecht dat het geverifieerd moet worden met een kleurmeter. Dat is een eerlijk antwoord. Mijn meting is #9534EC op #F6F0FE met een kleurcontrast van 4,7:1. Ik vind het niet acceptabel dat mijn software ergens over twijfelt.
+**Score: Gevonden.** Claude twijfelt en zegt terecht dat het geverifieerd moet worden met een kleurmeter. Dat is een eerlijk antwoord. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#9534EC;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #9534EC op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F6F0FE;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F6F0FE met een kleurcontrast van 4,7:1. Ik vind het niet acceptabel dat mijn software ergens over twijfelt.
 
 ### 5. Blauwe kop: voldoet waarschijnlijk
 
 > "Een middenblauw haalt doorgaans voldoende contrast tegen wit."
 
-**Score: Gevonden.** Mijn meting is #2372FF op #F4F6FF met resultaat van 4,0:1.
+**Score: Gevonden.** Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#2372FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2372FF op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F4F6FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F4F6FF met resultaat van 4,0:1.
 
 ### 6. Decoratieve illustraties: terecht genegeerd
 
@@ -103,11 +105,11 @@ Claude meldt correct dat de illustraties decoratief zijn en niet onder WCAG 1.4.
 
 | Element                  | AI-oordeel                 | Mijn meting                    | Score             |
 | ------------------------ | -------------------------- | ------------------------------ | ----------------- |
-| Groene kop               | "Faalt, ratio ~2,5-3,2:1"  | #2CD991 op #F0FBF5 = 1,7:1    | Niet gevonden     |
-| Oranje kop               | "Faalt, ratio ~2,9-3,6:1"  | #FC7519 op #FDF4EF = 2,5:1    | Niet gevonden     |
+| Groene kop               | "Faalt, ratio ~2,5-3,2:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5 = 1,7:1    | Niet gevonden     |
+| Oranje kop               | "Faalt, ratio ~2,9-3,6:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF = 2,5:1    | Niet gevonden     |
 | Bodytekst                | "Faalt, ratio ~2,3-3,5:1"  | Donkere tinten, voldoet        | Vals alarm        |
-| Paarse kop               | "Op de grens, verifieer"   | #9534EC op #F6F0FE = 4,7:1    | Gevonden          |
-| Blauwe kop               | "Voldoet waarschijnlijk"   | #2372FF op #F4F6FF = 4,0:1    | Gevonden          |
+| Paarse kop               | "Op de grens, verifieer"   | <span style="display:inline-block;width:0.9em;height:0.9em;background:#9534EC;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #9534EC op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F6F0FE;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F6F0FE = 4,7:1    | Gevonden          |
+| Blauwe kop               | "Voldoet waarschijnlijk"   | <span style="display:inline-block;width:0.9em;height:0.9em;background:#2372FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2372FF op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F4F6FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F4F6FF = 4,0:1    | Gevonden          |
 | Decoratieve illustraties | "Niet van toepassing"      |                                | Correct genegeerd |
 
 **2 van 6 correct, 2 met verkeerde ratio's, 1 vals alarm, 1 correct genegeerd.**
@@ -158,18 +160,22 @@ Voor standaard contrastchecks is een geautomatiseerde tool sneller, gratis en ex
 
 ## De vuistregel
 
-Elke grijstint lichter dan #767676 op wit voldoet niet. Onthoud die ene kleurcode.
+Elke grijstint lichter dan <span style="display:inline-block;width:0.9em;height:0.9em;background:#767676;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #767676 op wit voldoet niet. Onthoud die ene kleurcode.
 
 En voor kleuren: test altijd groen, oranje en lichtblauw op wit. Die drie vallen het vaakst door de mand.
 
 | Kleur op wit     | Ratio | Voldoet?                 |
 | ---------------- | ----- | ------------------------ |
-| #4CAF50 (groen)  | 2,9:1 | Nee                      |
-| #FF9800 (oranje) | 2,9:1 | Nee                      |
-| #2196F3 (blauw)  | 3,3:1 | Nee (gewone tekst)       |
-| #7B1FA2 (paars)  | 6,6:1 | Ja                       |
-| #999999 (grijs)  | 2,8:1 | Nee                      |
-| #767676 (grijs)  | 4,5:1 | Ja (precies op de grens) |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#4CAF50;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #4CAF50 (groen)  | 2,9:1 | Nee                      |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#FF9800;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FF9800 (oranje) | 2,9:1 | Nee                      |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#2196F3;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2196F3 (blauw)  | 3,3:1 | Nee (gewone tekst)       |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#7B1FA2;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #7B1FA2 (paars)  | 6,6:1 | Ja                       |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#999999;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #999999 (grijs)  | 2,8:1 | Nee                      |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#767676;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #767676 (grijs)  | 4,5:1 | Ja (precies op de grens) |
+
+Wil je zelf checken of je kleuren voldoen? Gebruik onze [gratis kleurcontrast checker](/tools/kleurcontrast-checker/).
+
+Werkt je organisatie veel met PDF's? Onze [PDF toegankelijkheidscheck](/tools/pdf-checker/) controleert op tags, taal, koppen en meer. Kleurcontrast in PDF's controleren we bewust niet, omdat dat technisch nog niet betrouwbaar kan. We geven liever geen resultaat dan een vals positief.
 
 {{< /case-section >}}
 
