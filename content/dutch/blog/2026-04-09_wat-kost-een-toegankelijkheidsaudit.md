@@ -3,7 +3,7 @@ title: "Wat kost een toegankelijkheidsaudit?"
 date: 2026-04-09
 slug: "wat-kost-een-toegankelijkheidsaudit"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

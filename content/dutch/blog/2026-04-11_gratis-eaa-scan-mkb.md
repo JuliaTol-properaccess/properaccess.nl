@@ -3,7 +3,7 @@ title: "Gratis EAA-scan voor MKB"
 date: 2026-04-11
 slug: "gratis-eaa-scan-mkb"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ $slug := .Data.Term | urlize | lower }}
   <section class="section blog-list">
     <div class="container">
       <header class="blog-list__header">
@@ -7,14 +6,18 @@
         {{ with .Params.description }}<p class="blog-list__intro">{{ . }}</p>{{ end }}
       </header>
 
-      {{/* Alleen filters tonen voor category-terms, niet voor tags */}}
-      {{ if eq .Type "categories" }}
-        {{ if ge (len site.Taxonomies.categories) 2 }}
-          {{ partial "blog-filters.html" (dict "activeSlug" $slug "Context" .) }}
-        {{ end }}
+      {{/* Filters alleen renderen als er minstens 2 categorieën zijn */}}
+      {{ if ge (len site.Taxonomies.categories) 2 }}
+        {{ partial "blog-filters.html" (dict "activeSlug" "wcag-uitgelegd" "Context" .) }}
       {{ end }}
 
-      {{ $paginator := .Paginate .Pages }}
+      {{/* NL: alleen wcag-uitgelegd posts tonen. EN: alle posts (te weinig om te filteren). */}}
+      {{ $posts := .RegularPages }}
+      {{ if eq .Lang "nl" }}
+        {{ $posts = where $posts "Params.categories" "intersect" (slice "wcag-uitgelegd") }}
+      {{ end }}
+      {{ $paginator := .Paginate $posts }}
+
       <div class="blog-list__grid row">
         {{ range $paginator.Pages }}
           <div class="md:col-6 lg:col-4 mb-10">

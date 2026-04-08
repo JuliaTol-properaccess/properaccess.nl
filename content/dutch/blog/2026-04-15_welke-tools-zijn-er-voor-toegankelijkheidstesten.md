@@ -3,7 +3,7 @@ title: "Welke tools zijn er voor toegankelijkheidstesten?"
 date: 2026-04-15
 slug: "welke-tools-zijn-er-voor-toegankelijkheidstesten"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

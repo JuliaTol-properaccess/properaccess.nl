@@ -1,0 +1,27 @@
+{{/*
+  Blog category filter buttons.
+  Parameters:
+    - activeSlug: slug of currently-active category (e.g. "wcag-uitgelegd")
+    - Context: the page context (for site lookups and relLangURL)
+*/}}
+{{ $active := .activeSlug }}
+{{ $ctx := .Context }}
+{{ $order := slice "wcag-uitgelegd" "wcag-vragen" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" "achtergrond_wcag" }}
+
+<nav class="blog-filter" aria-label="{{ T "blog_filter_label" }}">
+  {{ range $slug := $order }}
+    {{ $catPage := $ctx.Site.GetPage (printf "/categories/%s" $slug) }}
+    {{ if $catPage }}
+      {{ $count := len $catPage.Pages }}
+      {{ if gt $count 0 }}
+        {{ $href := cond (eq $slug "wcag-uitgelegd") ("blog/" | relLangURL) $catPage.RelPermalink }}
+        <a
+          href="{{ $href }}"
+          class="blog-filter__btn{{ if eq $slug $active }} blog-filter__btn--active{{ end }}"
+          {{ if eq $slug $active }}aria-current="page"{{ end }}>
+          {{ $catPage.Title }} <span class="blog-filter__count">({{ $count }})</span>
+        </a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</nav>

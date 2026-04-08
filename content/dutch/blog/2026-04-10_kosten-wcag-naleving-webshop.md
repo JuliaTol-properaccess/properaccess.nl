@@ -3,7 +3,7 @@ title: "Kosten WCAG-naleving voor een webshop"
 date: 2026-04-10
 slug: "kosten-wcag-naleving-webshop"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

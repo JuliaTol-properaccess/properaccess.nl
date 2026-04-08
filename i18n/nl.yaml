@@ -28,6 +28,8 @@
   translation: "sluiten"
 - id: tools_filter_label
   translation: "Filter tools op doelgroep"
+- id: blog_filter_label
+  translation: "Filter blog op categorie"
 - id: tools_filter_all
   translation: "Alle tools"
 - id: tools_filter_webredactie

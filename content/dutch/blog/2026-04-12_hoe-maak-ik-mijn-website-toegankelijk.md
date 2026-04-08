@@ -3,7 +3,7 @@ title: "Hoe maak ik mijn website toegankelijk?"
 date: 2026-04-12
 slug: "hoe-maak-ik-mijn-website-toegankelijk"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

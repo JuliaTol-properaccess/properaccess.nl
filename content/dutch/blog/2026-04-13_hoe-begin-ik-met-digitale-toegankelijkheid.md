@@ -3,7 +3,7 @@ title: "Hoe begin ik met digitale toegankelijkheid?"
 date: 2026-04-13
 slug: "hoe-begin-ik-met-digitale-toegankelijkheid"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

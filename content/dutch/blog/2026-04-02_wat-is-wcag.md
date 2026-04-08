@@ -3,7 +3,7 @@ title: "Wat is WCAG?"
 date: 2026-04-02
 slug: "wat-is-wcag"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

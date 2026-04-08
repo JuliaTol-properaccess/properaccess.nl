@@ -3,7 +3,7 @@ title: "Moet mijn overheidswebsite al voldoen aan WCAG?"
 date: 2026-04-08
 slug: "moet-mijn-overheidswebsite-voldoen-aan-wcag"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

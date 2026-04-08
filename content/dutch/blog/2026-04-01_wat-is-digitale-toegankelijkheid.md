@@ -3,7 +3,7 @@ title: "Wat is digitale toegankelijkheid?"
 date: 2026-04-01
 slug: "wat-is-digitale-toegankelijkheid"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

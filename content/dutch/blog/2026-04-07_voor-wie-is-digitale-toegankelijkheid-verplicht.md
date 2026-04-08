@@ -3,7 +3,7 @@ title: "Voor wie is digitale toegankelijkheid verplicht?"
 date: 2026-04-07
 slug: "voor-wie-is-digitale-toegankelijkheid-verplicht"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

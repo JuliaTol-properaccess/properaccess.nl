@@ -3,7 +3,7 @@ title: "Hoe vaak moet ik mijn website opnieuw laten testen?"
 date: 2026-04-19
 slug: "hoe-vaak-opnieuw-laten-testen"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

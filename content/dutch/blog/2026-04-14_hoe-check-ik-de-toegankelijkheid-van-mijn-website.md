@@ -3,7 +3,7 @@ title: "Hoe check ik de toegankelijkheid van mijn website?"
 date: 2026-04-14
 slug: "hoe-check-ik-de-toegankelijkheid-van-mijn-website"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "audit"

@@ -3,7 +3,7 @@ title: "Wat houdt WCAG 2.1 in voor websites?"
 date: 2026-04-03
 slug: "wat-houdt-wcag-21-in-voor-websites"
 categories:
-  - "wcag-uitgelegd"
+  - "wcag-vragen"
 tags:
   - "veelgestelde-vragen"
   - "eaa"
