@@ -1,10 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">Vragen over digitale toegankelijkheid?</title>
+
+  <!-- Background -->
   <rect width="1200" height="630" fill="#ffffff"/>
-  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#f5f5f5" stroke-width="2"/>
-  <rect x="80" y="80" width="6" height="470" fill="#A30D4B"/>
-  <text x="130" y="270" font-family="'Plus Jakarta Sans', 'Nunito Sans', sans-serif" font-size="76" font-weight="800" fill="#1F2937">Vragen over</text>
-  <text x="130" y="365" font-family="'Plus Jakarta Sans', 'Nunito Sans', sans-serif" font-size="76" font-weight="800" fill="#1F2937">digitale</text>
-  <text x="130" y="460" font-family="'Plus Jakarta Sans', 'Nunito Sans', sans-serif" font-size="76" font-weight="800" fill="#A30D4B">toegankelijkheid?</text>
-  <text x="130" y="525" font-family="'Nunito', 'Nunito Sans', sans-serif" font-size="28" font-weight="400" fill="#004050">Proper Access — antwoorden uit de praktijk</text>
+
+  <!-- Title above the browser -->
+  <text x="600" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Nunito Sans', sans-serif" font-size="52" font-weight="800" fill="#1F2937">Vragen over digitale</text>
+  <text x="600" y="170" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Nunito Sans', sans-serif" font-size="52" font-weight="800" fill="#A30D4B">toegankelijkheid?</text>
+
+  <!-- Browser window shadow -->
+  <rect x="166" y="226" width="880" height="370" rx="14" fill="#e5e7eb"/>
+
+  <!-- Browser window -->
+  <rect x="160" y="220" width="880" height="370" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Browser top bar -->
+  <path d="M160 234 Q160 220 174 220 H1026 Q1040 220 1040 234 V270 H160 Z" fill="#1F2937"/>
+
+  <!-- Traffic light dots -->
+  <circle cx="190" cy="245" r="7" fill="#A30D4B"/>
+  <circle cx="212" cy="245" r="7" fill="#4b5563"/>
+  <circle cx="234" cy="245" r="7" fill="#4b5563"/>
+
+  <!-- Address bar -->
+  <rect x="270" y="232" width="700" height="26" rx="13" fill="#374151"/>
+  <circle cx="288" cy="245" r="5" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="304" y="249" font-family="Nunito, sans-serif" font-size="12" fill="#9ca3af">properaccess.nl</text>
+
+  <!-- Browser content area -->
+  <!-- Top nav inside page -->
+  <rect x="190" y="294" width="80" height="14" rx="3" fill="#1F2937"/>
+  <rect x="282" y="294" width="64" height="14" rx="3" fill="#e5e7eb"/>
+  <rect x="358" y="294" width="64" height="14" rx="3" fill="#e5e7eb"/>
+  <rect x="434" y="294" width="64" height="14" rx="3" fill="#e5e7eb"/>
+  <rect x="930" y="290" width="90" height="22" rx="11" fill="#A30D4B"/>
+  <text x="975" y="305" text-anchor="middle" font-family="Nunito, sans-serif" font-size="10" font-weight="700" fill="#ffffff">Contact</text>
+
+  <!-- Page heading lines -->
+  <rect x="370" y="346" width="460" height="14" rx="3" fill="#1F2937"/>
+  <rect x="430" y="370" width="340" height="10" rx="3" fill="#9ca3af"/>
+
+  <!-- Search bar (the focal point) -->
+  <rect x="306" y="416" width="588" height="64" rx="32" fill="#ffffff" stroke="#1F2937" stroke-width="2"/>
+
+  <!-- Magnifier icon -->
+  <circle cx="346" cy="448" r="13" fill="none" stroke="#1F2937" stroke-width="2.5"/>
+  <line x1="356" y1="458" x2="368" y2="470" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Search placeholder text -->
+  <text x="384" y="453" font-family="Nunito, sans-serif" font-size="16" fill="#9ca3af">Zoek een antwoord…</text>
+
+  <!-- Search button -->
+  <rect x="780" y="426" width="100" height="44" rx="22" fill="#A30D4B"/>
+  <text x="830" y="454" text-anchor="middle" font-family="Nunito Sans, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Zoeken</text>
+
+  <!-- Suggestion chips below -->
+  <rect x="370" y="510" width="120" height="26" rx="13" fill="#f5f5f5"/>
+  <text x="430" y="528" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Wat is WCAG?</text>
+
+  <rect x="500" y="510" width="140" height="26" rx="13" fill="#f5f5f5"/>
+  <text x="570" y="528" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Wat kost een audit?</text>
+
+  <rect x="650" y="510" width="180" height="26" rx="13" fill="#f5f5f5"/>
+  <text x="740" y="528" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Geldt de EAA voor mij?</text>
 </svg>
