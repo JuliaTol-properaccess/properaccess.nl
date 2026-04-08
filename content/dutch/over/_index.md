@@ -1,9 +1,9 @@
 ---
 title: "Over Proper Access"
-meta_title: "Over ons — onafhankelijk WCAG-auditbureau | Proper Access"
+meta_title: "Over ons — WCAG-audits voor websites en apps | Proper Access"
 date: 2026-02-17
 type: "over"
-description: "Proper Access - Expertisecentrum voor digitale toegankelijkheid en WCAG audits"
+description: "Onafhankelijk WCAG-auditbureau voor websites en mobiele apps. Audits en begeleiding voor overheid, bedrijfsleven en culturele instellingen."
 keywords:
   [
     "WCAG",
@@ -30,7 +30,8 @@ banner:
   bulletpoints:
     - "Opgericht door Julia Tol, senior WCAG-auditor"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-    - "900+ audits uitgevoerd sinds 2019"
+    - "850+ audits van websites sinds 2019"
+    - "50+ audits van apps"
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"
@@ -171,7 +172,7 @@ Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet will
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
   <h3 class="card__title">Hulpsoftware</h3>
-  <p>NVDA, JAWS, VoiceOver, TalkBack — we testen op echte hulpsoftware en weten hoe browsers en screenreaders zich gedragen.</p>
+  <p>NVDA, JAWS, VoiceOver, TalkBack — we testen websites én apps op echte hulpsoftware en weten hoe browsers en screenreaders zich gedragen.</p>
 </div>
 {{< /section-cards >}}
 
