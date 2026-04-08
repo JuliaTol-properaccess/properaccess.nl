@@ -61,7 +61,7 @@ show_categories = true
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["digitale toegankelijkheid", "WCAG", "EAA"]
-description = "Advies en auditbureau in digitale toegankelijkheid"
+description = "Onafhankelijk WCAG-auditbureau voor websites en mobiele apps. Voor overheid, bedrijfsleven en cultuur — audits en begeleiding richting EAA en Wdo."
 author = "Proper Access"
 image = "images/og-image.png"
 
