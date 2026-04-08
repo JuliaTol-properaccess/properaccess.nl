@@ -39,7 +39,7 @@ ID = ''
 ########################## Pagination ############################
 [pagination]
 disableAliases = false
-pagerSize = 10
+pagerSize = 12
 path = 'page'
 
 
