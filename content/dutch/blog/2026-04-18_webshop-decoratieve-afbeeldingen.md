@@ -3,7 +3,7 @@ title: "Decoratieve afbeeldingen"
 date: 2026-04-18
 slug: "webshop-decoratieve-afbeeldingen"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"
@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - decoratieve afbeeldingen
-image: "/images/blog/linkedin-series/webshop-decoratieve-afbeeldingen.png"
+image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
 Ik kom het regelmatig tegen in audits: een decoratieve scheidingslijn, leuke bolletjes, of een achtergrondpatroon — en ze hebben allemaal een beschrijving. "Afbeelding, blauwe cirkel." "Afbeelding, golvend lijntje." Iemand die voorleessoftware gebruikt, hoort al die rommel tussendoor terwijl die gewoon door je webshop wil scrollen. Stel je voor dat je in een fysieke winkel loopt en bij elke stap iemand in je oor fluistert: "Tegel. Tegel. Nog een tegel."

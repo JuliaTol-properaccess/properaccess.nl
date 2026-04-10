@@ -3,7 +3,7 @@ title: "Decoratieve afbeeldingen"
 date: 2026-03-30
 slug: "webshop-decoratieve-afbeeldingen"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"

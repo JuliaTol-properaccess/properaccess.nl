@@ -3,7 +3,7 @@ title: "Productafbeelding zonder beschrijving"
 date: 2026-03-21
 slug: "webshop-productafbeelding-zonder-beschrijving"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"

@@ -3,7 +3,7 @@ title: "Plattegrond"
 date: 2026-05-30
 slug: "webshop-plattegrond"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"
@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - plattegrond
-image: "/images/blog/linkedin-series/webshop-plattegrond.png"
+image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
 De plattegrond van je museum is bedoeld om op een compacte manier veel informatie te geven over een complex gebouw. Waar is de ingang, waar koop je kaartjes, waar zijn de toiletten. Maar voor mensen die de pagina niet kunnen zien, is die plattegrond een dichte deur. En voor mensen die slecht zien, is het zoeken naar een naald in een hooiberg — kleine labels, weinig contrast, niet in te zoomen zonder dat je het overzicht verliest.

@@ -67,7 +67,7 @@ Uit onze ervaring met webshop-audits zien we steeds dezelfde issues:
 
 ## Hoeveel kost het om compliant te worden?
 
-Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf ca. € 1.800. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
+Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf € 2.495. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
 
 Het goede nieuws: de meeste webshops hebben dezelfde soort issues, en die zijn vaak in een paar sprints op te lossen.
 

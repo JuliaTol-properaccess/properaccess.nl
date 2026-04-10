@@ -3,7 +3,7 @@ title: "Knop zonder naam"
 date: 2026-03-31
 slug: "webshop-knop-zonder-naam"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"

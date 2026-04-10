@@ -3,7 +3,7 @@ title: "Afbeelding van prefix"
 date: 2026-04-04
 slug: "webshop-afbeelding-van-prefix"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"

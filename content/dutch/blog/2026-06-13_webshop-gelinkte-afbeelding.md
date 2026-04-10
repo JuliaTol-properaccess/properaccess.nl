@@ -3,7 +3,7 @@ title: "Gelinkte afbeelding"
 date: 2026-06-13
 slug: "webshop-gelinkte-afbeelding"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"
@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - gelinkte afbeelding
-image: "/images/blog/linkedin-series/webshop-gelinkte-afbeelding.png"
+image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
 Je hebt een afbeelding van loopschoenen in je webshop. De afbeelding werkt als een link naar de pagina met alle loopschoenen. Welke alt-tekst geef je die afbeelding? A: "Airmax 90." B: Geen beschrijving, het is decoratief. C: "Alle onze loopschoenen." Het juiste antwoord is C. Wanneer een afbeelding als link werkt, moet de beschrijving vertellen waar de link naartoe gaat — niet wat er op het plaatje staat.

@@ -3,7 +3,7 @@ title: "EAA voor webshops: wat moet je regelen en waar begin je?"
 date: 2026-03-17
 slug: "eaa-voor-webshops"
 categories:
-  - "de EAA"
+  - "e-commerce-eaa"
 tags:
   - "eaa"
   - "webshop"
@@ -23,6 +23,7 @@ keywords:
   - european accessibility act e-commerce
   - eaa wet online winkels
   - eaa 2025 webshop
+image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
 {{< case-section image="/images/blog/svg-eaa-wet.svg" alt="Overzicht EAA-verplichtingen voor webshops: norm, ingangsdatum, typen bedrijven en toezichthouder" >}}

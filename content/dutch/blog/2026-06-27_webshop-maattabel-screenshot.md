@@ -3,7 +3,7 @@ title: "Maattabel screenshot"
 date: 2026-06-27
 slug: "webshop-maattabel-screenshot"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
 tags:
   - "webshop"
   - "alt-tekst"
@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - maattabel screenshot
-image: "/images/blog/linkedin-series/webshop-maattabel-screenshot.png"
+image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
 Bij sommige webwinkels zie ik een maattabel toegevoegd als een screenshot uit een ander systeem. Een plaatje van een tabel, geplakt op de productpagina. Snap ik, het is snel gedaan. Maar de consequenties zijn groter dan je denkt. Iemand die voorleessoftware gebruikt, kan de inhoud van die tabel niet horen — je kunt tientallen maten en maatvoeringen niet in een alt-tekst proppen. En iemand die de tekst groter wil maken, het contrast wil verhogen, of meer ruimte tussen letters nodig heeft, kan dat niet. Want het is geen tekst, het is een plaatje.
