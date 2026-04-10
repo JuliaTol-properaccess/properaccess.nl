@@ -13,9 +13,17 @@
           {{ with .Description }}
             <p class="case__description">{{ . }}</p>
           {{ end }}
-          <p class="case__date">
-            <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
-          </p>
+          <div class="blog-byline">
+            {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "blog-byline__photo") }}
+            <div class="blog-byline__text">
+              <span class="blog-byline__name">Julia Tol</span>
+              <span class="blog-byline__meta">
+                <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+                <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+                {{ .ReadingTime }} min leestijd
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

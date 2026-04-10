@@ -1,6 +1,7 @@
 ---
 title: "Kan AI jouw website testen op toegankelijkheid? Wij gaan het uitzoeken"
 date: 2026-04-03
+weight: 1
 slug: "kan-ai-website-testen-op-toegankelijkheid"
 categories:
   - "ai-en-wcag"

@@ -1,0 +1,42 @@
+<div class="bg-body">
+  {{ $image:= .Params.image }}
+  {{ if $image }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+  {{ else }}
+    <img src="{{ "images/blog-placeholder.svg" | relURL }}" alt="" class="mb-6 w-full rounded" loading="lazy" />
+  {{ end }}
+  <h2 class="mb-3 h4">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h2>
+  {{ $categories:= .Params.categories }}
+  {{ if $categories }}
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        {{ range $i,$p:= $categories }}
+          {{ $slug := . | urlize | lower }}
+          {{ $catPage := site.GetPage (printf "/categories/%s" $slug) }}
+          {{ $label := . | humanize }}
+          {{ if $catPage }}{{ $label = $catPage.Title }}{{ end }}
+          <a
+            href="{{ `categories/` | relLangURL }}{{ $slug }}/"
+            class="ms-1"
+            >{{ $label }}{{ if ne $i (sub (len $categories) 1) }}
+              {{ "," }}
+            {{ end }}
+          </a>
+        {{ end }}
+      </li>
+    </ul>
+  {{ end }}
+  <p class="mb-6">{{ .Summary | plainify }}</p>
+  <div class="blog-byline blog-byline--card">
+    {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "blog-byline__photo") }}
+    <div class="blog-byline__text">
+      <span class="blog-byline__name">Julia Tol</span>
+      <span class="blog-byline__meta">{{ .ReadingTime }} min leestijd</span>
+    </div>
+  </div>
+</div>

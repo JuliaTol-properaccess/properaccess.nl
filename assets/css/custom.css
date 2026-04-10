@@ -12252,3 +12252,50 @@ body.pa-chat--open {
   opacity: 0.7;
   font-size: 0.9em;
 }
+
+/* ── Blog byline (auteur + leestijd) ── */
+.blog-byline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.blog-byline__photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.blog-byline__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.blog-byline__name {
+  font-weight: 600;
+  color: #1F2937;
+  font-size: 0.95rem;
+}
+.blog-byline__meta {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+.blog-byline__sep {
+  margin: 0 0.35rem;
+}
+
+/* Card variant — kleiner, minder marge */
+.blog-byline--card {
+  margin-top: 1rem;
+}
+.blog-byline--card .blog-byline__photo {
+  width: 36px;
+  height: 36px;
+}
+.blog-byline--card .blog-byline__name {
+  font-size: 0.85rem;
+}
+.blog-byline--card .blog-byline__meta {
+  font-size: 0.8rem;
+}

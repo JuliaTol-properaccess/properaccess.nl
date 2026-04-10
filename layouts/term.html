@@ -14,7 +14,7 @@
         {{ end }}
       {{ end }}
 
-      {{ $paginator := .Paginate .Pages }}
+      {{ $paginator := .Paginate .Pages.ByWeight }}
       <div class="blog-list__grid row">
         {{ range $paginator.Pages }}
           <div class="md:col-6 lg:col-4 mb-10">
