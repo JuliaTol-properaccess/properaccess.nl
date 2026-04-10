@@ -1,12 +1,14 @@
 /**
- * Cloudflare Worker — Pipedrive Form Submissions
- * Receives form submissions and creates contacts + leads in Pipedrive.
+ * Cloudflare Worker — Website Form Submissions
+ * Receives form submissions and forwards them to the Proper Access CRM.
+ * Also sends quiz follow-up emails via Resend.
  *
- * POST /submit  → create or update person, create lead
- *   Body: { bron, email, naam?, bedrijf?, bericht? }
+ * POST /submit  → forward to CRM webhook, send quiz email if applicable
+ *   Body: { bron, email, naam?, bedrijf?, bericht?, quiz_* }
  *
  * Secrets (set via wrangler secret put):
- *   PIPEDRIVE_API_TOKEN
+ *   WEBSITE_FORM_SECRET   — shared secret for CRM webhook
+ *   RESEND_API_KEY         — for quiz follow-up emails
  *
  * Deploy: npx wrangler deploy worker.js --name pipedrive-forms
  */
@@ -17,27 +19,7 @@ const ALLOWED_ORIGINS = [
   "http://localhost:1313",
 ];
 
-const PD_DOMAIN = "properaccess";
-const BRON_FIELD_KEY = "6bfeb398da8989fe199dc3e55073055cb4b4a225";
-
-const BRON_IDS = {
-  nieuwsbrief: 57,
-  "tool-proefperiode": 58,
-  quiz: 59,
-  contactformulier: 60,
-  "quiz museum": 67,
-  "quiz webredactie": 68,
-};
-
-const LEAD_TITLES = {
-  nieuwsbrief: "Nieuwsbrief aanmelding",
-  "tool-proefperiode": "Tool proefperiode aanvraag",
-  quiz: "Quiz deelnemer",
-  contactformulier: "Contactformulier bericht",
-  "quiz museum": "Quiz museum deelnemer",
-  "quiz webredactie": "Quiz webredactie deelnemer",
-};
-
+const CRM_WEBHOOK_URL = "https://crm.properaccess.nl/api/webhooks/website-form";
 
 export default {
   async fetch(request, env) {
@@ -66,106 +48,43 @@ async function handleSubmit(request, env, origin) {
     return json({ error: "Invalid JSON" }, 400, origin);
   }
 
-  const { bron, email, naam, bedrijf, bericht } = body;
+  const { bron, email } = body;
 
-  // Validate required fields
   if (!bron || !email) {
     return json({ error: "Missing required fields: bron, email" }, 400, origin);
   }
 
-  if (!BRON_IDS[bron]) {
-    return json({ error: "Invalid bron value" }, 400, origin);
-  }
-
-  // Simple email validation
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json({ error: "Invalid email" }, 400, origin);
   }
 
   // Honeypot check
   if (body._gotcha) {
-    // Bot detected — return success silently
     return json({ ok: true }, 200, origin);
   }
 
-  const token = env.PIPEDRIVE_API_TOKEN;
-  if (!token) {
+  const secret = env.WEBSITE_FORM_SECRET;
+  if (!secret) {
     return json({ error: "Server configuration error" }, 500, origin);
   }
 
-  const apiBase = `https://${PD_DOMAIN}.pipedrive.com/api/v1`;
-
   try {
-    // 1. Search for existing person by email
-    const searchRes = await pdFetch(
-      `${apiBase}/persons/search?term=${encodeURIComponent(email)}&fields=email&limit=1`,
-      token
-    );
-    const searchData = await searchRes.json();
+    // Forward to CRM webhook
+    const crmResponse = await fetch(CRM_WEBHOOK_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-webhook-secret": secret,
+      },
+      body: JSON.stringify(body),
+    });
 
-    let personId;
-    const bronFieldValue = String(BRON_IDS[bron]);
-
-    if (searchData.data && searchData.data.items && searchData.data.items.length > 0) {
-      // Person exists — update with new bron
-      personId = searchData.data.items[0].item.id;
-
-      // Get existing person to check current bron values
-      const existingRes = await pdFetch(`${apiBase}/persons/${personId}`, token);
-      const existingData = await existingRes.json();
-      const existingBron = existingData.data?.[BRON_FIELD_KEY] || "";
-
-      // Append bron if not already present (set field uses comma-separated IDs)
-      const bronValues = existingBron ? existingBron.split(",") : [];
-      if (!bronValues.includes(bronFieldValue)) {
-        bronValues.push(bronFieldValue);
-      }
-
-      const updateBody = { [BRON_FIELD_KEY]: bronValues.join(",") };
-      if (naam && !existingData.data?.name) updateBody.name = naam;
-      if (bedrijf) updateBody.org_id = undefined; // Don't overwrite org
-
-      await pdFetch(`${apiBase}/persons/${personId}`, token, "PUT", updateBody);
-    } else {
-      // Create new person
-      const personBody = {
-        name: naam || email.split("@")[0],
-        email: [{ value: email, primary: true }],
-        [BRON_FIELD_KEY]: bronFieldValue,
-      };
-
-      const createRes = await pdFetch(`${apiBase}/persons`, token, "POST", personBody);
-      const createData = await createRes.json();
-
-      if (!createData.success) {
-        return json({ error: "Failed to create contact" }, 500, origin);
-      }
-      personId = createData.data.id;
+    if (!crmResponse.ok) {
+      const err = await crmResponse.text();
+      throw new Error("CRM responded with " + crmResponse.status + ": " + err);
     }
 
-    // 2. Create a lead
-    const leadBody = {
-      title: LEAD_TITLES[bron] || "Website formulier",
-      person_id: personId,
-    };
-
-    // Add note with message if present
-    if (bericht) {
-      leadBody.note = bericht;
-    }
-
-    await pdFetch(`${apiBase}/leads`, token, "POST", leadBody);
-
-    // 3. If there's a message, also create a note on the person
-    if (bericht) {
-      await pdFetch(`${apiBase}/notes`, token, "POST", {
-        content: `<b>Bericht via ${LEAD_TITLES[bron]}:</b><br><br>${escapeHtml(bericht)}`,
-        person_id: personId,
-        pinned_to_person_flag: 1,
-      });
-    }
-
-    // 4. Send personalized email to quiz participants via Resend
+    // Send personalized email to quiz participants via Resend
     if (bron.startsWith("quiz") && env.RESEND_API_KEY) {
       try {
         await sendQuizEmail(env.RESEND_API_KEY, email, body);
@@ -256,13 +175,12 @@ const QUIZ_LABELS = {
 };
 
 async function sendQuizEmail(apiKey, toEmail, data) {
-  const score = data.quiz_score || "–";
-  const correct = data.quiz_correct || "–";
-  const total = data.quiz_total || "–";
+  const score = data.quiz_score || "\u2013";
+  const correct = data.quiz_correct || "\u2013";
+  const total = data.quiz_total || "\u2013";
   const weakCats = data.quiz_weak_categories || "";
   const quizLabel = QUIZ_LABELS[data.bron] || data.bron;
 
-  // Build tips section based on weak categories
   let tipsHtml = "";
   if (weakCats) {
     const cats = weakCats.split(", ").map(function (c) { return c.replace(/ \(\d+\/\d+\)/, ""); });
@@ -342,31 +260,13 @@ async function sendQuizEmail(apiKey, toEmail, data) {
     body: JSON.stringify({
       from: "Proper Access <noreply@properaccess.nl>",
       to: [toEmail],
-      subject: "Je quizresultaten — " + score + " score",
+      subject: "Je quizresultaten \u2014 " + score + " score",
       html: emailHtml,
     }),
   });
 }
 
 // ── Helpers ─────────────────────────────────────────────────
-
-async function pdFetch(url, token, method = "GET", body = null) {
-  const separator = url.includes("?") ? "&" : "?";
-  const opts = {
-    method,
-    headers: { "Content-Type": "application/json" },
-  };
-  if (body) opts.body = JSON.stringify(body);
-  return fetch(`${url}${separator}api_token=${token}`, opts);
-}
-
-function escapeHtml(str) {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
 
 function corsHeaders(origin) {
   return {

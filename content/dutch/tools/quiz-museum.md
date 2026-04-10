@@ -5,6 +5,7 @@ slug: "quiz-museum"
 url: "/tools/quiz-museum/"
 layout: "quiz-museum"
 weight: 11
+gratis: true
 date: 2026-03-21
 doelgroep: ["Webredacteur"]
 toon_in_lijst: false

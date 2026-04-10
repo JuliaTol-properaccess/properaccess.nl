@@ -1,6 +1,6 @@
 /**
  * Shared form submission utility for Proper Access.
- * Posts form data as JSON to the pipedrive-forms Worker.
+ * Posts form data as JSON to the CRM via Cloudflare Worker.
  *
  * Usage:
  *   paFormSubmit(formElement, {
@@ -40,7 +40,7 @@
       }
     }
 
-    // Send to Worker (Pipedrive) — primary
+    // Send to Worker (CRM) — primary
     var workerRequest = fetch(WORKER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

@@ -2,15 +2,14 @@
 title: "Wat je als Web Agency moet weten om te voldoen aan de toegankelijkheidswet (EAA)."
 slug: "wat-developer-moet-weten-over-de-eaa"
 date: 2025-03-25
-categories: 
+categories:
   - "achtergrond_wcag"
   - "de EAA"
-tags: 
+tags:
   - "toegankelijke-website"
 aliases:
   - /wat-developer-moet-weten-over-de-eaa/
 description: "Wat moeten web agencies weten over de European Accessibility Act (EAA)? Lees de belangrijkste eisen en deadlines voor digitale toegankelijkheid."
-image: "/images/blog/svg-eaa-wet.svg"
 ---
 
 ## Wat is de toegankelijkheidswet?
@@ -27,9 +26,7 @@ De wet geldt voor de meeste middelgrote en grote bedrijven die via digitale kana
 
 ## Wat gebeurt er als ik niet voldoe aan de toegankelijkheidswet?
 
-  
-Niet voldoen aan de wet betekent dat je straks te maken kunt krijgen met een toezichthouder die het naleven van deze wet komt controleren. Er wordt nu gezegd dat er 7 verschillende toezichthouders komen die dit gaan doen. Op dit moment, in maart 2025, is het nog niet duidelijk hoe dit precies gaat werken.  
-  
+Niet voldoen aan de wet betekent dat je straks te maken kunt krijgen met een toezichthouder die het naleven van deze wet komt controleren. Er wordt nu gezegd dat er 7 verschillende toezichthouders komen die dit gaan doen. Op dit moment, in maart 2025, is het nog niet duidelijk hoe dit precies gaat werken.
 
 ## Hoe kan een web agency digitale toegankelijkheid het beste aanpakken?
 

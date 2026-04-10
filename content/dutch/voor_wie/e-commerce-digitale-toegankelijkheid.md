@@ -63,7 +63,7 @@ Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML
 
 {{< section-split title="Wil je snel weten waar je staat?" contact="true" >}}
 
-Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's. Of vraag direct een volledige audit aan (vanaf ca. 1.800 euro).
+Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's. Of vraag direct een volledige audit aan (vanaf € 2.495).
 
 {{< /section-split >}}
 
@@ -162,7 +162,7 @@ Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het da
 <details class="faq-item">
 <summary class="faq-question">Wat kost een audit?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf ca. 1.800 euro. We geven je altijd vooraf een duidelijke indicatie.</p>
+<p>Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf € 2.495 voor een eenvoudige shop, en kan oplopen tot € 8.000 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie.</p>
 </div>
 </details>
 

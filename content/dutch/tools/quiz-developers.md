@@ -6,6 +6,7 @@ slug: "quiz-developers"
 url: "/tools/quiz-developers/"
 layout: "quiz-developers"
 weight: 10
+gratis: true
 doelgroep: ["Webdeveloper"]
 toon_in_lijst: false
 description: "20 praktijkscenario's die je WCAG-kennis testen. Bekijk interactieve demo's en broncode, selecteer de juiste antwoorden en deel je score."

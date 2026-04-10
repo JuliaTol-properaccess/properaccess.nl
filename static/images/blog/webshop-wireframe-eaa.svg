@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" width="400" height="130">
+  <!-- Achtergrond -->
+  <rect width="400" height="130" rx="4" fill="#f5f5f5"/>
+
+  <!-- Browser chrome -->
+  <rect x="8" y="8" width="384" height="114" rx="3" fill="#ffffff" stroke="#1F2937" stroke-width="0.75"/>
+
+  <!-- Adresbalk -->
+  <rect x="8" y="8" width="384" height="16" rx="3" fill="#1F2937"/>
+  <circle cx="18" cy="16" r="2.5" fill="#A30D4B"/>
+  <circle cx="26" cy="16" r="2.5" fill="#004050"/>
+  <circle cx="34" cy="16" r="2.5" fill="#f5f5f5"/>
+  <rect x="60" y="12" width="120" height="8" rx="4" fill="#f5f5f5"/>
+
+  <!-- Navigatiebalk -->
+  <rect x="8" y="24" width="384" height="18" fill="#ffffff" stroke="#f5f5f5" stroke-width="0.5"/>
+
+  <!-- Logo "Webshop" -->
+  <text x="18" y="37" font-family="sans-serif" font-size="10" font-weight="700" fill="#1F2937">Webshop</text>
+
+  <!-- Menu items -->
+  <rect x="180" y="31" width="28" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="216" y="31" width="35" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="259" y="31" width="28" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="295" y="31" width="32" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- Winkelwagentje icoon -->
+  <g transform="translate(370, 29)" fill="none" stroke="#1F2937" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0,1 L2,1 L4,8 L14,8"/>
+    <circle cx="5.5" cy="11" r="1.2"/>
+    <circle cx="12" cy="11" r="1.2"/>
+    <path d="M3,3.5 L15,3.5 L14,8 L4,8 Z"/>
+  </g>
+
+  <!-- Productkaarten -->
+  <!-- Kaart 1 -->
+  <rect x="18" y="50" width="80" height="64" rx="2" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.75"/>
+  <rect x="22" y="54" width="72" height="34" rx="1" fill="#f5f5f5"/>
+  <rect x="38" y="64" width="40" height="14" rx="1" fill="#e5e7eb"/>
+  <rect x="22" y="92" width="50" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="22" y="100" width="28" height="5" rx="2" fill="#1F2937"/>
+  <text x="26" y="104.5" font-family="sans-serif" font-size="4" fill="#ffffff">Bekijk</text>
+  <text x="56" y="104" font-family="sans-serif" font-size="6" font-weight="600" fill="#1F2937">&#8364;29</text>
+
+  <!-- Kaart 2 -->
+  <rect x="108" y="50" width="80" height="64" rx="2" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.75"/>
+  <rect x="112" y="54" width="72" height="34" rx="1" fill="#f5f5f5"/>
+  <rect x="128" y="64" width="40" height="14" rx="1" fill="#e5e7eb"/>
+  <rect x="112" y="92" width="50" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="112" y="100" width="28" height="5" rx="2" fill="#1F2937"/>
+  <text x="116" y="104.5" font-family="sans-serif" font-size="4" fill="#ffffff">Bekijk</text>
+  <text x="146" y="104" font-family="sans-serif" font-size="6" font-weight="600" fill="#1F2937">&#8364;45</text>
+
+  <!-- Kaart 3 -->
+  <rect x="198" y="50" width="80" height="64" rx="2" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.75"/>
+  <rect x="202" y="54" width="72" height="34" rx="1" fill="#f5f5f5"/>
+  <rect x="218" y="64" width="40" height="14" rx="1" fill="#e5e7eb"/>
+  <rect x="202" y="92" width="50" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="202" y="100" width="28" height="5" rx="2" fill="#1F2937"/>
+  <text x="206" y="104.5" font-family="sans-serif" font-size="4" fill="#ffffff">Bekijk</text>
+  <text x="236" y="104" font-family="sans-serif" font-size="6" font-weight="600" fill="#1F2937">&#8364;18</text>
+
+  <!-- Kaart 4 -->
+  <rect x="288" y="50" width="80" height="64" rx="2" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.75"/>
+  <rect x="292" y="54" width="72" height="34" rx="1" fill="#f5f5f5"/>
+  <rect x="308" y="64" width="40" height="14" rx="1" fill="#e5e7eb"/>
+  <rect x="292" y="92" width="50" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="292" y="100" width="28" height="5" rx="2" fill="#1F2937"/>
+  <text x="296" y="104.5" font-family="sans-serif" font-size="4" fill="#ffffff">Bekijk</text>
+  <text x="326" y="104" font-family="sans-serif" font-size="6" font-weight="600" fill="#1F2937">&#8364;52</text>
+</svg>

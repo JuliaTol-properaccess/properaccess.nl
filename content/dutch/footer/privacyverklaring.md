@@ -98,7 +98,7 @@ Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt o
 De tracking cookies worden alleen geplaatst als je hiervoor toestemming geeft via de cookiebanner. Zonder jouw toestemming worden deze cookies niet geladen.
 
 **Wat doet Dealfront?**
-Dealfront (onderdeel van Pipedrive) herkent op basis van het IP-adres bij welk bedrijf een bezoeker werkt. Het gaat om bedrijfsherkenning, niet om het identificeren van individuele personen. Dealfront verwerkt gegevens conform de AVG en is gevestigd in de EU.
+Dealfront herkent op basis van het IP-adres bij welk bedrijf een bezoeker werkt. Het gaat om bedrijfsherkenning, niet om het identificeren van individuele personen. Dealfront verwerkt gegevens conform de AVG en is gevestigd in de EU.
 
 Je kunt je afmelden voor cookies door je internetbrowser zo in te stellen dat deze geen cookies meer opslaat. Daarnaast kun je eerder opgeslagen cookies verwijderen via de instellingen van je browser. Je kunt je cookievoorkeuren ook op elk moment aanpassen door de cookies in je browser te verwijderen — bij je volgende bezoek wordt de cookiebanner opnieuw getoond.
 
