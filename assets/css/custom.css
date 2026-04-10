@@ -11351,7 +11351,7 @@ a.tool-link__href-url:hover {
 /* ── Blog TOC (collapsed) ── */
 
 .blog-toc {
-  margin: 1.5rem 0 0;
+  margin: 1.5rem auto 0;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   background: #f9fafb;
