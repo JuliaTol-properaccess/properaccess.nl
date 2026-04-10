@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "overflow: hidden knipt de focusindicator af"
 date: 2026-05-12
 slug: "sc-2-4-7-overflow-hidden-knipt-de-focusindicator-af"

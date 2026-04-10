@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Hover-content zonder focus-equivalent"
 date: 2026-05-22
 slug: "sc-2-1-1-hover-content-zonder-focus-equivalent"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Dialoogvenster dat de achtergrond niet afschermt"
 date: 2026-06-28
 slug: "sc-1-3-2-dialoogvenster-dat-de-achtergrond-niet-afschermt"

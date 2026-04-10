@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Afbeeldingsknop met afwijkende alt-tekst"
 date: 2026-05-13
 slug: "sc-2-5-3-afbeeldingsknop-met-afwijkende-alt-tekst"

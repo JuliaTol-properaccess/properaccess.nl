@@ -1,4 +1,5 @@
 ---
+draft: true
 title: '"Winkelwagen Winkelwagen"'
 date: 2026-07-19
 slug: "sc-2-4-4-winkelwagen-winkelwagen"

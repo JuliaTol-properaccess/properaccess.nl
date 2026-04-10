@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "aria-labelledby verwijst naar de verkeerde tekst"
 date: 2026-04-15
 slug: "sc-2-5-3-aria-labelledby-verwijst-naar-de-verkeerde-tekst"

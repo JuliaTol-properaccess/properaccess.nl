@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Framework met Engels label, Nederlandse interface"
 date: 2026-06-24
 slug: "sc-2-5-3-framework-met-engels-label-nederlandse-interface"

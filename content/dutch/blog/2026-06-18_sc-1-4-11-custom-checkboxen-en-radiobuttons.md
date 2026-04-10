@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Custom checkboxen en radiobuttons"
 date: 2026-06-18
 slug: "sc-1-4-11-custom-checkboxen-en-radiobuttons"

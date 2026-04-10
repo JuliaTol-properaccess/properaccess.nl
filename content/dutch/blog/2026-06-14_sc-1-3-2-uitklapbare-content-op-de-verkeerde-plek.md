@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Uitklapbare content op de verkeerde plek"
 date: 2026-06-14
 slug: "sc-1-3-2-uitklapbare-content-op-de-verkeerde-plek"

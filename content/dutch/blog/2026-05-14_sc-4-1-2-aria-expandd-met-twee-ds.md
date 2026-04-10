@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "aria-expandd (met twee d's)"
 date: 2026-05-14
 slug: "sc-4-1-2-aria-expandd-met-twee-ds"

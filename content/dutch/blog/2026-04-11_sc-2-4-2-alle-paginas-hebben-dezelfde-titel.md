@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Alle pagina's hebben dezelfde titel"
 date: 2026-04-11
 slug: "sc-2-4-2-alle-paginas-hebben-dezelfde-titel"

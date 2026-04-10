@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Link naar een PDF zonder het te zeggen"
 date: 2026-05-25
 slug: "sc-2-4-4-link-naar-een-pdf-zonder-het-te-zeggen"

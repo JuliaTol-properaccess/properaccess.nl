@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Voortgangsbalken"
 date: 2026-05-29
 slug: "sc-1-3-1-voortgangsbalken"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Foutmeldingen die je niet kunt lezen"
 date: 2026-06-16
 slug: "sc-1-4-3-foutmeldingen-die-je-niet-kunt-lezen"

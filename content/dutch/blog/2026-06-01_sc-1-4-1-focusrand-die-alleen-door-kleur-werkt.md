@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Focusrand die alleen door kleur werkt"
 date: 2026-06-01
 slug: "sc-1-4-1-focusrand-die-alleen-door-kleur-werkt"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Verborgen menu dat toch wordt voorgelezen"
 date: 2026-07-06
 slug: "sc-1-3-2-verborgen-menu-dat-toch-wordt-voorgelezen"

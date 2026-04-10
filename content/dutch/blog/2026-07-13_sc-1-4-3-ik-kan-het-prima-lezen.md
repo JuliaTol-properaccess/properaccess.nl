@@ -1,4 +1,5 @@
 ---
+draft: true
 title: '"Ik kan het prima lezen"'
 date: 2026-07-13
 slug: "sc-1-4-3-ik-kan-het-prima-lezen"

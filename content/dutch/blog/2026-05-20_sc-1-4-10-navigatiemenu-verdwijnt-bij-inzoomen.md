@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Navigatiemenu verdwijnt bij inzoomen"
 date: 2026-05-20
 slug: "sc-1-4-10-navigatiemenu-verdwijnt-bij-inzoomen"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Accordion-paneel op de verkeerde plek in de focusvolgorde"
 date: 2026-06-07
 slug: "sc-2-4-3-accordion-paneel-op-de-verkeerde-plek-in-de-focusvolgorde"

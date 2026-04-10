@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Video zonder toegankelijke naam"
 date: 2026-07-20
 slug: "sc-4-1-2-video-zonder-toegankelijke-naam"

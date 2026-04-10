@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Grafiek met lijnen die alleen door kleur te onderscheiden zijn"
 date: 2026-06-15
 slug: "sc-1-4-1-grafiek-met-lijnen-die-alleen-door-kleur-te-onderscheiden-zijn"

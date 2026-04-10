@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Dialoogvenster krijgt geen focus bij openen"
 date: 2026-04-12
 slug: "sc-2-4-3-dialoogvenster-krijgt-geen-focus-bij-openen"

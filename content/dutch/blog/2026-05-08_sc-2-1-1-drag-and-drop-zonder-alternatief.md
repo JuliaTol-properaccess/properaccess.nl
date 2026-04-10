@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Drag-and-drop zonder alternatief"
 date: 2026-05-08
 slug: "sc-2-1-1-drag-and-drop-zonder-alternatief"

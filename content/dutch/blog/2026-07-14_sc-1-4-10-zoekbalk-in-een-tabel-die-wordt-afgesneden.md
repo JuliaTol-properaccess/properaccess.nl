@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Zoekbalk in een tabel die wordt afgesneden"
 date: 2026-07-14
 slug: "sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden"

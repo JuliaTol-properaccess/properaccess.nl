@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Witte tekst op een foto"
 date: 2026-04-21
 slug: "sc-1-4-3-witte-tekst-op-een-foto"

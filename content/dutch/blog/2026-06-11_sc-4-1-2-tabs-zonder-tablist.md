@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Tabs zonder tablist"
 date: 2026-06-11
 slug: "sc-4-1-2-tabs-zonder-tablist"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Heading in een summary: zelfde probleem"
 date: 2026-07-05
 slug: "sc-4-1-2-heading-in-een-summary-zelfde-probleem"

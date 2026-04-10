@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Carrousel-knoppen voor de content"
 date: 2026-05-17
 slug: "sc-1-3-2-carrousel-knoppen-voor-de-content"

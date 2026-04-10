@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Content verdwijnt door overflow hidden"
 date: 2026-04-08
 slug: "sc-1-4-10-content-verdwijnt-door-overflow-hidden"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Focus verlaat het dialoogvenster"
 date: 2026-04-26
 slug: "sc-2-4-3-focus-verlaat-het-dialoogvenster"

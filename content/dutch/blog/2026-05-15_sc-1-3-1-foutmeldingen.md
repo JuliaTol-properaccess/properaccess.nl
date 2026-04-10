@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Foutmeldingen"
 date: 2026-05-15
 slug: "sc-1-3-1-foutmeldingen"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Focus die alleen een kleurverandering is"
 date: 2026-06-23
 slug: "sc-2-4-7-focus-die-alleen-een-kleurverandering-is"

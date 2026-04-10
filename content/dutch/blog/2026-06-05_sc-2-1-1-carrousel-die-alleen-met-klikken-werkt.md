@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Carrousel die alleen met klikken werkt"
 date: 2026-06-05
 slug: "sc-2-1-1-carrousel-die-alleen-met-klikken-werkt"

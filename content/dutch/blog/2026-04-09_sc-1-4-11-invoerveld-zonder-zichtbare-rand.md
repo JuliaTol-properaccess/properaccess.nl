@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Invoerveld zonder zichtbare rand"
 date: 2026-04-09
 slug: "sc-1-4-11-invoerveld-zonder-zichtbare-rand"

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Grafiekbalken die in elkaar overlopen"
 date: 2026-05-21
 slug: "sc-1-4-11-grafiekbalken-die-in-elkaar-overlopen"

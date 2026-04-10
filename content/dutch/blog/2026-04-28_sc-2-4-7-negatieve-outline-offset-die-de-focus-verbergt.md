@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Negatieve outline-offset die de focus verbergt"
 date: 2026-04-28
 slug: "sc-2-4-7-negatieve-outline-offset-die-de-focus-verbergt"

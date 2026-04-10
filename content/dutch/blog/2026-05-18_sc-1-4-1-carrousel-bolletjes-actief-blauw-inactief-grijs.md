@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Carrousel-bolletjes: actief = blauw, inactief = grijs"
 date: 2026-05-18
 slug: "sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs"

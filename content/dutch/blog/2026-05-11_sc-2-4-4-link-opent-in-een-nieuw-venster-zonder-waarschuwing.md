@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Link opent in een nieuw venster zonder waarschuwing"
 date: 2026-05-11
 slug: "sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing"

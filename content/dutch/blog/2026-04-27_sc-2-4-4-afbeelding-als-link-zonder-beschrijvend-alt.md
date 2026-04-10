@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Afbeelding als link zonder beschrijvend alt"
 date: 2026-04-27
 slug: "sc-2-4-4-afbeelding-als-link-zonder-beschrijvend-alt"
