@@ -28,50 +28,64 @@
       </div>
     </section>
 
-    <!-- TOC (collapsed) -->
-    <div class="container">
-      <details class="table-of-content blog-toc" id="js-toc">
-        <summary>{{ i18n "toc" | default "Inhoudsopgave" }}</summary>
-        <nav id="js-toc-nav"></nav>
-      </details>
-    </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var nav = document.getElementById('js-toc-nav');
-        var headings = document.querySelectorAll('.case__body h2, .case__body h3');
-        if (headings.length === 0) {
-          document.getElementById('js-toc').style.display = 'none';
-          return;
-        }
-        var ul = document.createElement('ul');
-        var currentUl = ul;
-        var lastLevel = 2;
-        headings.forEach(function(h) {
-          if (!h.id) h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-          var level = parseInt(h.tagName.charAt(1));
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = '#' + h.id;
-          a.textContent = h.textContent;
-          li.appendChild(a);
-          if (level > lastLevel) {
-            var sub = document.createElement('ul');
-            currentUl.lastElementChild.appendChild(sub);
-            currentUl = sub;
-          } else if (level < lastLevel) {
-            currentUl = ul;
-          }
-          currentUl.appendChild(li);
-          lastLevel = level;
-        });
-        nav.appendChild(ul);
-      });
-    </script>
+    {{ $isWcagUitgelegd := intersect (.Params.categories | default slice) (slice "wcag-uitgelegd") }}
 
-    <!-- Content -->
-    <div class="case__body">
-      {{ .Content }}
-    </div>
+    {{ if and (gt (len $isWcagUitgelegd) 0) .Params.image }}
+      <!-- WCAG uitgelegd: afbeelding boven tekst -->
+      <div class="blog-wcag">
+        <div class="blog-wcag__image">
+          <img src="{{ .Params.image }}" alt="" loading="eager" />
+        </div>
+        <div class="blog-wcag__text content">
+          {{ .Content }}
+        </div>
+      </div>
+    {{ else }}
+      <!-- TOC (collapsed) -->
+      <div class="container">
+        <details class="table-of-content blog-toc" id="js-toc">
+          <summary>{{ i18n "toc" | default "Inhoudsopgave" }}</summary>
+          <nav id="js-toc-nav"></nav>
+        </details>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var nav = document.getElementById('js-toc-nav');
+          var headings = document.querySelectorAll('.case__body h2, .case__body h3');
+          if (headings.length === 0) {
+            document.getElementById('js-toc').style.display = 'none';
+            return;
+          }
+          var ul = document.createElement('ul');
+          var currentUl = ul;
+          var lastLevel = 2;
+          headings.forEach(function(h) {
+            if (!h.id) h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            var level = parseInt(h.tagName.charAt(1));
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = '#' + h.id;
+            a.textContent = h.textContent;
+            li.appendChild(a);
+            if (level > lastLevel) {
+              var sub = document.createElement('ul');
+              currentUl.lastElementChild.appendChild(sub);
+              currentUl = sub;
+            } else if (level < lastLevel) {
+              currentUl = ul;
+            }
+            currentUl.appendChild(li);
+            lastLevel = level;
+          });
+          nav.appendChild(ul);
+        });
+      </script>
+
+      <!-- Content -->
+      <div class="case__body">
+        {{ .Content }}
+      </div>
+    {{ end }}
 
     <!-- Tags & share -->
     <section class="section-sm">

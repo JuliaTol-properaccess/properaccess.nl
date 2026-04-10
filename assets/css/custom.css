@@ -12299,3 +12299,19 @@ body.pa-chat--open {
 .blog-byline--card .blog-byline__meta {
   font-size: 0.8rem;
 }
+
+/* ── WCAG uitgelegd detail (afbeelding boven tekst) ── */
+.blog-wcag {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.blog-wcag__image {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+.blog-wcag__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
