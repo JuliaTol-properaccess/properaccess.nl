@@ -4075,7 +4075,7 @@ html.dark .toolsuite-promo__text {
 .hp-hero__visual {
   position: relative;
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hp-hero__visual svg {
@@ -4141,30 +4141,14 @@ html.dark .toolsuite-promo__text {
 
 
 /* ─── TRUST BAR ─── */
-.hp-trust {
-  padding: 2.5rem 0;
-  border-top: 1px solid #f3f4f6;
-  border-bottom: 1px solid #f3f4f6;
-  background: #fff;
-}
-
-.hp-trust__label {
-  text-align: center;
-  color: rgba(75, 85, 99, 0.6);
-  font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 1.5rem;
-}
-
 .hp-trust__names {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem 3rem;
-  opacity: 0.6;
+  gap: 1rem 2.5rem;
+  margin-top: 1.5rem;
+  opacity: 0.5;
   filter: grayscale(1);
   transition: all 0.5s;
 }
@@ -4175,9 +4159,65 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-trust__names span {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 900;
   color: #1F2937;
+  white-space: nowrap;
+}
+
+
+/* ─── SECTORS ─── */
+.hp-sectors {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.hp-sectors__title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hp-sectors__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.hp-sector-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #fff;
+  text-decoration: none;
+  color: #1F2937;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.hp-sector-card:hover {
+  border-color: #A30D4B;
+  box-shadow: 0 2px 8px rgba(163, 13, 75, 0.1);
+}
+
+.hp-sector-card__icon {
+  font-size: 1.75rem;
+  color: #A30D4B;
+}
+
+.hp-sector-card__label {
   white-space: nowrap;
 }
 
@@ -4196,6 +4236,7 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-contact__photo-wrapper {
+  display: flex;
   margin-bottom: 1.5rem;
 }
 
@@ -4206,6 +4247,10 @@ html.dark .toolsuite-promo__text {
   object-fit: cover;
   border: 3px solid #fff;
   box-shadow: 0 4px 16px rgba(31, 41, 55, 0.1);
+}
+
+.hp-contact__photo-wrapper .hp-contact__photo + .hp-contact__photo {
+  margin-left: -0.75rem;
 }
 
 .hp-contact__intro {
