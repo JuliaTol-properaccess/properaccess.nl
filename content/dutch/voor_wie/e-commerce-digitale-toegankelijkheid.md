@@ -43,6 +43,8 @@ Maar het gaat niet alleen om de wet. Lees meer over [wat digitale toegankelijkhe
 
 {{< /section-full >}}
 
+{{< webinar-ecommerce >}}
+
 {{< section-cards title="" columns="3" bg="dark" >}}
 {{< section-card title="4,4 miljoen potentiele klanten" >}}
 
