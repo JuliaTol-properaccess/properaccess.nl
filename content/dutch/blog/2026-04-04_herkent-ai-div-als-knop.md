@@ -19,7 +19,7 @@ keywords:
   - toetsenbord toegankelijkheid
   - klikbare div
   - Playwright accessibility
-image: "/images/blog/ai-serie-kickoff-nl.png"
+image: "/images/blog/ai-wcag-serie.svg"
 ---
 
 {{< case-section >}}

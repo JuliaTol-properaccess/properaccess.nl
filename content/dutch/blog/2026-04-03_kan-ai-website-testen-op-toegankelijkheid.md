@@ -17,7 +17,7 @@ keywords:
   - AI audit
   - toegankelijkheid automatiseren
   - digitale toegankelijkheid AI
-image: "/images/blog/ai-serie-kickoff-nl.png"
+image: "/images/blog/ai-wcag-serie.svg"
 ---
 
 {{< case-section >}}
