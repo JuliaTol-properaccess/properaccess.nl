@@ -16,3 +16,12 @@ hugo_stats.json
 go.sum
 yarn.lock
 .env
+
+# Local editor / agent config
+.claude/
+.devcontainer/
+.vscode/
+.sitepins/
+
+# Local working directories
+input_Julia/
