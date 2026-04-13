@@ -2,6 +2,7 @@
 title: "Waarom elke bevinding in ons rapport begint met een user story"
 date: 2026-04-13
 slug: "user-stories-in-toegankelijkheidsrapport"
+layout: "case"
 categories:
   - "achtergrond_wcag"
 tags:
@@ -17,12 +18,18 @@ keywords:
   - rapport per element
   - toegankelijkheidsrapport leesbaar
   - agile toegankelijkheid
-image: "/images/blog/user-stories-in-toegankelijkheidsrapport.png"
+image: "/images/rapport/rapport1.png"
 ---
+
+{{< case-section image="/images/rapport/rapport1.png" alt="Samenvatting-pagina van een auditrapport met aantal voldoet en afgekeurde succescriteria, impactverdeling en score per WCAG-richtlijn" >}}
 
 Atlassian schrijft over user stories: _"Een userstory plaatst eindgebruikers centraal. Na het lezen van een userstory weet het team waarom het bouwt, wat het bouwt en welke waarde het creëert."_
 
 Wij zijn gaan kijken wat er gebeurt als je diezelfde gedachte toepast op een toegankelijkheidsrapport. Het antwoord: het rapport wordt opeens leesbaar voor iedereen die het moet oplossen — niet alleen voor de auditor die het schreef.
+
+{{< /case-section >}}
+
+{{< case-section image="/images/rapport/rapport2.png" alt="Pagina uit het rapport met opties om bevindingen naar Jira of een spreadsheet te exporteren, plus filters op impact en type" >}}
 
 ## Waar de meeste rapporten stranden
 
@@ -30,9 +37,13 @@ Een toegankelijkheidsrapport beschrijft wat er mis is op een website. Dat klinkt
 
 De meeste rapporten beschrijven bevindingen in WCAG-taal: _"SC 1.3.2 niet voldaan — content volgorde niet logisch."_ Dat is technisch correct. Een auditor herkent het meteen. Maar een redacteur die de tekst moet aanpassen of een ontwikkelaar die de code moet veranderen, leest dit en denkt: _en nu?_
 
-We hebben dit al een tijd geleden voor een groot deel opgelost door [te rapporteren per element in plaats van per succescriterium](/blog/rapport-per-element-vs-per-succescriterium/). Daardoor weet je team in elk geval _waar_ het probleem zit en _wat_ er moet veranderen.
+3 jaar geleden hebben we besloten om te rapporteren per element, niet per succescriterium. Deze aanpak bespaart je tijd: alle bevindingen die te maken hebben met een element staan nu bij elkaar.
 
-Maar er bleef één ding ontbreken: _waarom_ het ertoe doet.
+Maar hoe motiveer je iemand die deze problemen moet fixen?
+
+{{< /case-section >}}
+
+{{< case-section image="/images/rapport/issuemetuserstory1.png" alt="Bevinding over een complexe afbeelding zonder alternatieve beschrijving, met user story, code-snippet en screenshot van een infographic" >}}
 
 ## De gedachte achter user stories
 
@@ -44,19 +55,29 @@ Toegankelijkheidsrapporten zijn precies het soort document waar die context vaak
 
 Daarom beginnen wij elke bevinding nu met een user story.
 
+{{< /case-section >}}
+
+{{< case-section image="/images/rapport/issuemetuserstory2.png" alt="Bevinding over onduidelijke 'Lees meer'-linktekst, met user story die schermlezer- en stembesturingsgebruikers combineert" >}}
+
 ## Hoe ziet zo'n user story eruit?
 
 Onze user stories zijn niet geschreven vanuit één persoon met één beperking. Ze combineren meerdere manieren waarop iemand tegen hetzelfde issue aan kan lopen — met een schermlezer, met een toetsenbord, met een vergroter, met een voorspelbare leesvolgorde. Eén verhaal, meerdere ingangen.
 
 Een voorbeeld uit een recent rapport:
 
-> Als een bezoeker die knoppen activeert met een schermlezer, die de pagina bestuurt met stem, of die de pagina leest met afbeeldingen uitgeschakeld, heb ik nodig dat elke knop met alleen een icoon een toegankelijke naam toont die de functie beschrijft (via alt, aria-label, of visueel verborgen tekst) — want zonder die naam kondigt mijn schermlezer alleen "knop" aan, heeft mijn stemopdracht niets om op te richten, is de tijdelijke aanduiding bij uitgeschakelde afbeeldingen leeg, en kan ik niet zien wat er gebeurt als ik het element activeer.
+<blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 1.5rem 0; font-style: italic;">
+Als bezoeker gebruik ik een schermlezer, stembesturing, of ik lees de pagina zonder afbeeldingen. Op deze pagina staan knoppen met alleen een icoon. Zonder toegankelijke naam weet ik niet wat ze doen. Mijn schermlezer zegt alleen "knop". Mijn stemopdracht heeft niets om op te richten. Met afbeeldingen uit zie ik helemaal niets op de plek van de knop.
+</blockquote>
 
 Daaronder volgt de technische uitleg: welk element, welk WCAG-criterium, welke code-aanpassing. Plus een screenshot. De story staat er eerst. Met opzet.
 
+{{< /case-section >}}
+
+{{< case-section image="/images/rapport/issuemetuserstory3.png" alt="Bevinding over een logo-alt-tekst die meer bevat dan de visuele tekst, met user story en code-oplossing" >}}
+
 ## Wat dit oplost
 
-De ontwikkelaar of redacteur die met dit rapport gaat werken, hoeft niet meer eerst de WCAG-richtlijn op te zoeken om te begrijpen waarom iets ertoe doet. Ze hoeven geen empathie-oefening te doen om zich voor te stellen wie er last van heeft. Het staat er letterlijk — inclusief alle manieren waarop iemand het kan tegenkomen.
+De ontwikkelaar of redacteur die met dit rapport gaat werken, hoeft niet meer eerst de WCAG-richtlijn op te zoeken om te begrijpen waarom iets ertoe doet. Ze hoeven niet te raden wie er last van heeft. Het staat er letterlijk — inclusief alle manieren waarop iemand het kan tegenkomen.
 
 Dat heeft drie effecten die we steeds terugzien:
 
@@ -66,6 +87,10 @@ Dat heeft drie effecten die we steeds terugzien:
 
 **3. De kennis blijft hangen.** Een team dat tien user stories heeft gelezen, herkent het patroon de elfde keer. Een team dat tien SC-nummers heeft gezien, blijft afhankelijk van het rapport.
 
+{{< /case-section >}}
+
+{{< case-section image="/images/rapport/rapport3.png" alt="Overzicht van bevindingen per element op één pagina, met kolommen voor impact, type en betrokken beperking" >}}
+
 ## Eén story per bevinding, niet één per succescriterium
 
 Dit is misschien het belangrijkste. We schrijven niet één user story per WCAG-criterium, en ook niet één per persona. We schrijven er één per bevinding.
@@ -74,8 +99,14 @@ Want hetzelfde succescriterium kan op de ene plek een groot probleem zijn voor s
 
 Het kost ons meer schrijftijd. Daar zijn we eerlijk over. Maar dit is wat ons werk is — en het werkt.
 
+{{< /case-section >}}
+
+{{< case-section >}}
+
 ## Wil je zien hoe zo'n rapport eruit ziet?
 
 We laten graag een geanonimiseerd voorbeeldrapport zien tijdens een kennismaking van 30 minuten. Je krijgt direct een gevoel voor hoe een user story per bevinding eruit ziet, en wat het verschil maakt voor het team dat ermee aan de slag gaat.
 
 [Plan een kennismaking](/contact/) of bel direct: [085 5055 890](tel:+31855055890).
+
+{{< /case-section >}}
