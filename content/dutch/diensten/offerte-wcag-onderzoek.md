@@ -35,7 +35,7 @@ features:
         - IAAP-gecertificeerd team van 6 specialisten
         - 100% conform WCAG-EM en Europese toegankelijkheidswetgeving (EAA)
         - Heldere rapporten met concrete oplossingen
-        - Ongekend support - 12 weken onbeperkt vragen stellen over het rapport
+        - Onbeperkt vragen stellen over het rapport — voor begeleiding bij het oplossen werken we met een strippenkaart
     button:
       enable: true
       label: "Neem contact op"
@@ -45,7 +45,7 @@ faqs:
   - question: Krijg ik een certificaat of keurmerk na de audit?
     answer: Wij leveren onafhankelijke auditrapporten die gebruikt kunnen worden voor het invullen van een toegankelijkheidsverklaring. Hoewel er (nog) geen nationaal keurmerk is, gebruiken veel organisaties onze audits als bewijs van compliance.
   - question: Hoe lang duurt een audittraject?
-    answer: Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van uw website of app. Binnen 12 weken na het opleveren van het rapport mag je team onbeperkt vragen stellen. 
+    answer: Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van uw website of app. Vragen over het rapport mag je team daarna onbeperkt stellen — voor inhoudelijke begeleiding bij het oplossen werken we met een strippenkaart (€ 100/uur).
   - question: Wat kost een toegankelijkheidsaudit?
     answer: De kosten variëren afhankelijk van de omvang en complexiteit van uw digitale product. Vraag vrijblijvend een offerte aan via onze website.
   - question: Hoe vaak moet ik een audit laten uitvoeren?

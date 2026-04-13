@@ -111,7 +111,7 @@ Een museum heeft andere uitdagingen dan een theater, en een festival andere dan 
 - **We testen het hele bezoekerspad** — niet alleen je homepage. We doorlopen alles wat een bezoeker doet: programma bekijken, kaartjes kopen, collectie doorzoeken, video's bekijken, nieuwsbrief aanmelden, contact opnemen. Met echte hulpsoftware — screenreaders, spraakbesturing, schermvergroting — en met toetsenbord.
 - **Je krijgt concrete oplossingen per element** — per bevinding een screenshot, een uitleg van het probleem, de impact op je bezoekers en een concrete oplossing in code. [Bekijk een voorbeeldrapport van een museumwebsite](https://www.properaccess.nl/rapporten/202512_museumvereniging_retest/).
 - **We denken mee over externe tools** — ticketingplatform, kalenderwidget, CMS — je bent vaak afhankelijk van externe partijen. We helpen je met die partijen in gesprek te gaan, of geven alternatieven als iets echt niet toegankelijk te krijgen is.
-- **Je kunt onbeperkt vragen stellen** — het rapport is het begin. Je team gaat aan de slag met de verbeteringen en er komen vragen. Die beantwoorden we — via e-mail, telefoon of videocall, zonder meerkosten.
+- **Vragen over het rapport beantwoorden we zonder meerkosten** — een bevinding die niet helemaal duidelijk is, een succescriterium dat je wilt narekenen: stel je vraag via e-mail, telefoon of videocall. Wil je dat we meedenken bij het oplossen zelf? Dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur — je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
 
 {{< /offerte-section >}}
 
@@ -158,7 +158,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 | **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Alle digitale kanalen, doorlopend |
 | **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Jaarlijkse audits, meerjarenplanning en continue ondersteuning |
 | **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties met een groot digitaal portfolio die structureel willen borgen |
-| **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
+| **Investering** | Eenmalig, vanaf ca. € 2.100 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
@@ -227,7 +227,7 @@ Niet alleen over de bevindingen uit het rapport. Je kunt bij ons terecht met all
 <details class="faq-item">
 <summary class="faq-question">Wat kost een audit?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie.</p>
+<p>Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf ca. € 2.100. We geven je altijd vooraf een duidelijke indicatie.</p>
 </div>
 </details>
 

@@ -4,7 +4,7 @@
   <rect x="0" y="0" width="184" height="170" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="0" y="0" width="184" height="6" rx="3" fill="#004050"/>
   <text x="16" y="32" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Quickscan</text>
-  <text x="16" y="50" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 19</text>
+  <text x="16" y="50" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">gratis</text>
   <line x1="16" y1="60" x2="168" y2="60" stroke="#f3f4f6" stroke-width="1"/>
   <circle cx="24" cy="78" r="4" fill="#004050" opacity="0.3"/>
   <text x="34" y="82" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Snelle eerste check</text>
@@ -20,7 +20,7 @@
   <rect x="208" y="0" width="184" height="170" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="208" y="0" width="184" height="6" rx="3" fill="#004050"/>
   <text x="224" y="32" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Content-audit</text>
-  <text x="224" y="50" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 1.300</text>
+  <text x="224" y="50" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 1.500</text>
   <line x1="224" y1="60" x2="376" y2="60" stroke="#f3f4f6" stroke-width="1"/>
   <circle cx="232" cy="78" r="4" fill="#004050" opacity="0.3"/>
   <text x="242" y="82" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">Teksten &amp; afbeeldingen</text>
@@ -36,7 +36,7 @@
   <rect x="0" y="194" width="184" height="170" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="0" y="194" width="184" height="6" rx="3" fill="#004050"/>
   <text x="16" y="226" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Techniekaudit</text>
-  <text x="16" y="244" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 1.800</text>
+  <text x="16" y="244" fill="#004050" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 2.250</text>
   <line x1="16" y1="254" x2="168" y2="254" stroke="#f3f4f6" stroke-width="1"/>
   <circle cx="24" cy="272" r="4" fill="#004050" opacity="0.3"/>
   <text x="34" y="276" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">HTML &amp; ARIA</text>
@@ -52,7 +52,7 @@
   <rect x="208" y="194" width="184" height="170" rx="10" fill="#fff" stroke="#A30D4B" stroke-width="2"/>
   <rect x="208" y="194" width="184" height="6" rx="3" fill="#A30D4B"/>
   <text x="224" y="226" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Volledig WCAG-EM</text>
-  <text x="224" y="244" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 1.800</text>
+  <text x="224" y="244" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="16" font-weight="700">v.a. 2.100</text>
   <line x1="224" y1="254" x2="376" y2="254" stroke="#f3f4f6" stroke-width="1"/>
   <circle cx="232" cy="272" r="4" fill="#A30D4B" opacity="0.4"/>
   <text x="242" y="276" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8">55 succescriteria</text>

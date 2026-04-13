@@ -50,12 +50,13 @@ faqs:
   - question: "Kunnen jullie ook de problemen oplossen?"
     answer: "Wij adviseren, jouw developers voeren uit. Maar als je geen eigen developers hebt, kunnen we je doorverwijzen naar agencies waarmee we samenwerken."
   - question: "Wat krijgen we precies?"
-    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing, een toelichting in een online sessie (optioneel) en onbeperkte support — je mag na het rapport zoveel vragen stellen als je wilt."
+    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen — wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 1.800 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
+    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
 ---
 
 {{< section-cards title="Vier onderdelen die het verschil maken" columns="2" >}}
+
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
   <h3 class="card__title">Helder overzicht per pagina</h3>
@@ -78,17 +79,16 @@ faqs:
 </div>
 {{< /section-cards >}}
 
+{{< section-full title="Vragen over het rapport? Stel ze gerust" bg="light" >}}
 
-{{< section-full title="En het beste: onbeperkt vragen stellen" bg="light" >}}
-
-We zijn geen inspectie-instelling die een rapport dumpt en verdwijnt. Je mag na het rapport **zoveel vragen stellen als je wilt**. Je team heeft een vraag over een oplossing? We denken mee.
+We zijn geen inspectie-instelling die een rapport dumpt en verdwijnt. Vragen over wat er in het rapport staat — een bevinding die niet helemaal duidelijk is, een succescriterium dat je nog wilt narekenen — beantwoorden we zonder meerkosten. Wil je dat we ook **meedenken bij het oplossen** zelf? Dat doen we via onze [strippenkaart](/strippenkaart/) à € 100/uur — zo betaal je alleen voor de uren die je daadwerkelijk gebruikt.
 
 Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/) · [culturele sector](https://www.properaccess.nl/rapporten/202512_museumvereniging_retest/) · [bedrijfsleven](https://www.properaccess.nl/rapporten/202602_financiereninnetwerken.nl/)
 
 {{< /section-full >}}
 
-
 {{< section-steps title="Hoe het werkt" subtitle="Van nul tot volledig inzicht in 3-5 weken" >}}
+
 <div class="card">
   <div class="card__icon">1</div>
   <h3 class="card__title">Kennismaking</h3>
@@ -111,13 +111,13 @@ Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/20
 </div>
 <div class="card">
   <div class="card__icon">5</div>
-  <h3 class="card__title">Onbeperkte support</h3>
-  <p>Na het rapport kun je zoveel vragen stellen als je wilt. Extra check na een aanpassing? Dat kan.</p>
+  <h3 class="card__title">Vragen over het rapport</h3>
+  <p>Iets onduidelijk? Stel je vraag, zonder meerkosten. Voor begeleiding bij het oplossen werken we met een <a href="/strippenkaart/">strippenkaart</a>.</p>
 </div>
 {{< /section-steps >}}
 
-
 {{< section-cards title="Handmatige audit vs. automatische tool" columns="2" bg="light" >}}
+
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
   <h3 class="card__title">Automatische tool</h3>
@@ -135,20 +135,31 @@ Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/20
     <li>Test of een screenreader het menu <strong>daadwerkelijk kan bedienen</strong></li>
     <li>Checkt of alt-teksten <strong>zinvol</strong> zijn</li>
     <li>Rapport <strong>per pagina en per element</strong> — niet per succescriterium</li>
-    <li>Output: <strong>oplossingen in code</strong>, screenshots, uitleg + onbeperkt vragen stellen</li>
+    <li>Output: <strong>oplossingen in code</strong>, screenshots, uitleg + ruimte voor vragen over het rapport</li>
   </ul>
 </div>
 {{< /section-cards >}}
 
+{{< section-full title="Eén user story per bevinding" >}}
+
+Agile-ontwikkelteams gebruiken user stories om eindgebruikers centraal te stellen. Wij doen dat in onze auditrapporten nu ook.
+
+Elke bevinding in ons rapport begint met een user story: een korte tekst geschreven vanuit de bezoeker met een beperking. Niet één persoon, niet één beperking — maar alle manieren waarop iemand tegen dit issue aan kan lopen, in één verhaal.
+
+<blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 2rem 0; font-style: italic;">
+Als een bezoeker die knoppen activeert met een schermlezer, die de pagina bestuurt met stem, of die de pagina leest met afbeeldingen uitgeschakeld, heb ik nodig dat elke knop met alleen een icoon een toegankelijke naam toont die de functie beschrijft (via alt, aria-label, of visueel verborgen tekst) — want zonder die naam kondigt mijn schermlezer alleen "knop" aan, heeft mijn stemopdracht niets om op te richten, is de tijdelijke aanduiding bij uitgeschakelde afbeeldingen leeg, en kan ik niet zien wat er gebeurt als ik het element activeer.
+</blockquote>
+
+Daaronder volgen de technische uitleg, het code-voorbeeld en de screenshot. De story staat er eerst, met opzet. Zo hoeft de ontwikkelaar of redacteur die dit oplost niet meer te gokken waarom het ertoe doet — het staat er letterlijk.
+
+{{< /section-full >}}
 
 {{< section-full title="Wat kost een audit?" bg="light" >}}
 
 Eerlijk antwoord: dat hangt af van je website. Het **aantal pagina's**, de **complexiteit**, het **type content** en je **deadline** bepalen de prijs.
 
-Een volledige audit start **vanaf ca. 1.800 euro** (excl. BTW) voor een eenvoudige website. Voor complexere websites en webshops ligt de investering hoger.
+Een volledige audit start **vanaf ca. 2.100 euro** (excl. BTW) voor een eenvoudige website. Voor complexere websites en webshops ligt de investering hoger.
 
-**Inclusief:** volledig rapport per pagina en per element, screenshots, code-snippets, CSV-export en onbeperkte support.
+**Inclusief:** volledig rapport per pagina en per element, screenshots, code-snippets, CSV-export en ruimte voor vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen bieden we een [strippenkaart](/strippenkaart/) (€ 100/uur).
 
 {{< /section-full >}}
-
-

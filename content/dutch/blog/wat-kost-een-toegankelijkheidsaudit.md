@@ -30,7 +30,7 @@ keywords:
 
 "Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg — en die bijna geen enkel bureau beantwoordt op de website.
 
-Een volledige toegankelijkheidsaudit kost bij de meeste bureaus tussen de **1.500 en 5.000 euro**. Bij Proper Access beginnen de prijzen vanaf circa 1.800 euro voor een eenvoudige website en lopen op tot circa 2.900 euro voor een complexe website.
+Een volledige toegankelijkheidsaudit kost bij de meeste bureaus tussen de **1.500 en 5.000 euro**. Bij Proper Access beginnen de prijzen vanaf circa 2.100 euro voor een eenvoudige website en lopen op tot circa 4.500 euro voor een complexe website.
 
 De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een webshop met filteropties, een inlogomgeving of een overheidssite met formulieren.
 
@@ -42,11 +42,11 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 **Gratis quickscan** — een snelle eerste check. Geen volledige audit, maar je weet waar je staat.
 
-**Content-audit** (v.a. 1.300 euro) — gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
+**Content-audit** (v.a. 1.500 euro) — gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
 
-**Techniekaudit** (v.a. 1.800 euro) — HTML-structuur, ARIA, toetsenbordbediening, formuliervalidatie. Het onderzoek dat je developer nodig heeft.
+**Techniekaudit** (v.a. 2.250 euro) — HTML-structuur, ARIA, toetsenbordbediening, formuliervalidatie. Het onderzoek dat je developer nodig heeft.
 
-**Volledig WCAG-EM onderzoek** (v.a. 1.800 euro) — alle 55 succescriteria van WCAG 2.2, volgens de internationaal erkende WCAG-EM methodiek. Het meest complete onderzoek.
+**Volledig WCAG-EM onderzoek** (v.a. 2.100 euro) — alle 55 succescriteria van WCAG 2.2, volgens de internationaal erkende WCAG-EM methodiek. Het meest complete onderzoek.
 
 {{< /case-section >}}
 
@@ -56,17 +56,17 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 Na een audit bieden we altijd twee optionele extra's aan:
 
-- **Nabespreking** (1 uur, 125 euro) — we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
-- **Retest** (400–500 euro) — nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
+- **Nabespreking** (1 uur, 150 euro) — we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
+- **Retest** (vanaf 600 euro, content-retest 300 euro) — nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
 
 ## Prijstabel volledig onderzoek
 
 | Type website | Indicatieprijs |
 |---|---|
-| Eenvoudige website (informatief, weinig interactie) | Vanaf ca. 1.800 euro |
-| Gemiddelde website (formulieren, enige interactie) | Vanaf ca. 2.500 euro |
-| Gemiddeld-complexe website (webshop, inlog, filters) | Vanaf ca. 2.700 euro |
-| Complexe website (maatwerkapplicatie, veel interactie) | Vanaf ca. 2.900 euro |
+| Eenvoudige website (informatief, weinig interactie) | Vanaf ca. 2.100 euro |
+| Gemiddelde website (formulieren, enige interactie) | Vanaf ca. 2.850 euro |
+| Gemiddeld-complexe website (webshop, inlog, filters) | Vanaf ca. 3.600 euro |
+| Complexe website (maatwerkapplicatie, veel interactie) | Vanaf ca. 4.500 euro |
 
 {{< /case-section >}}
 

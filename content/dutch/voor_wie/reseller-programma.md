@@ -41,7 +41,7 @@ Je verwijst een klant door. Wij nemen het over: intake, planning, audit, rapport
 {{< section-card title="Commissie" >}}
 
 - 15% van de opdrachtwaarde, gedurende het eerste jaar
-- Gemiddeld ca. 450 euro per audit
+- Gemiddeld ca. 540 euro per audit
 - Geen minimum aantal opdrachten, geen commitment
 
 {{< /section-card >}}
@@ -114,7 +114,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Hoeveel verdien ik per audit?</summary>
 <div class="faq-answer">
-<p>15% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van ca. 3.000 euro is dat ongeveer 450 euro per opdracht.</p>
+<p>15% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van ca. 3.600 euro is dat ongeveer 540 euro per opdracht.</p>
 </div>
 </details>
 

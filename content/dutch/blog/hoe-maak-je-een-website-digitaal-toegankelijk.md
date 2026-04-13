@@ -140,7 +140,7 @@ Dit is de tweede vraag die ik het vaakst krijg. Het eerlijke antwoord: dat versc
 
 ### De audit
 
-Een toegankelijkheidsaudit kost bij Proper Access **vanaf circa 1.800 euro** (excl. btw). De exacte prijs hangt af van de complexiteit van je website: hoeveel verschillende templates heb je, hoe complex zijn je formulieren, gebruik je een CMS of is het maatwerk?
+Een toegankelijkheidsaudit kost bij Proper Access **vanaf circa 2.100 euro** (excl. btw). De exacte prijs hangt af van de complexiteit van je website: hoeveel verschillende templates heb je, hoe complex zijn je formulieren, gebruik je een CMS of is het maatwerk?
 
 ### Het oplossen van problemen
 

@@ -92,8 +92,9 @@ faqs:
 
 
       Het verschil zit in de details: rapporten per webpagina en per element (niet per succescriterium),
-      concrete code-snippets en screenshots, onbeperkt vragen stellen na de audit, en meedenken
-      over de beste aanpak voor jouw situatie.
+      concrete code-snippets en screenshots, en ruimte voor onbeperkt vragen over het rapport.
+      Wil je dat we meedenken bij het oplossen zelf? Dat doen we via een strippenkaart, zodat je
+      alleen betaalt voor de uren die je daadwerkelijk gebruikt.
 
   - question: "Hoe blijven jullie up-to-date?"
     answer: >
@@ -139,6 +140,11 @@ Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet will
   <div class="card__icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
   <h3 class="card__title">Rapport per element</h3>
   <p>Niet per succescriterium, maar <strong>per element op de pagina</strong>. Je team ziet direct wat er moet veranderen — zonder vertaalslag.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+  <h3 class="card__title">User story per bevinding</h3>
+  <p>Elke bevinding begint met een <strong>verhaal vanuit de bezoeker</strong> die vastloopt. Niet "SC 1.3.2 niet voldaan", maar in mensentaal: wat gaat er mis en waarom doet het ertoe?</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>

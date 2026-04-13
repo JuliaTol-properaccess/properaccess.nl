@@ -114,8 +114,8 @@ Wij testen zoals je gebruikers je app ervaren. Handmatig, op echte apparaten, me
 </div>
 <div class="card">
   <div class="card__icon">5</div>
-  <h3 class="card__title">Support bij het oplossen</h3>
-  <p>Na het rapport kun je onbeperkt vragen stellen. Je developers hebben een vraag over een oplossing? Wij denken mee.</p>
+  <h3 class="card__title">Vragen over het rapport</h3>
+  <p>Iets onduidelijk in het rapport? Vragen daarover beantwoorden we zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een <a href="/strippenkaart/">strippenkaart</a> (€ 100/uur).</p>
 </div>
 {{< /section-steps >}}
 

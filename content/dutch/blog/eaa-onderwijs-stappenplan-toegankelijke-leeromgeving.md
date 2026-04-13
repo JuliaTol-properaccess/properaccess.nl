@@ -96,7 +96,7 @@ Bij onderwijsinstellingen auditen we per platform:
 
 We weten bovendien of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
 
-_Indicatieve prijzen: een website-audit start vanaf ca. 1.800 euro, een leeromgeving (Moodle/Canvas) vanaf ca. 2.700 euro._
+_Indicatieve prijzen: een website-audit start vanaf ca. 2.100 euro, een leeromgeving (Moodle/Canvas) vanaf ca. 3.600 euro._
 
 ### Stap 4: Prioriteer en plan de verbeteringen
 
@@ -123,7 +123,7 @@ Een paar tips uit de praktijk:
 - **PDF's:** Maak een handleiding voor docenten. Hoe voeg je koppenstructuur toe in Word? Hoe schrijf je alt-teksten bij diagrammen? Hoe exporteer je een toegankelijke PDF? Dit hoeft geen ingewikkeld document te zijn -- een pagina met de vijf belangrijkste regels volstaat.
 - **Video:** Automatische ondertiteling (bijvoorbeeld via Panopto of YouTube) is een goed startpunt, maar moet altijd handmatig worden gecorrigeerd. Vooral vaktermen en eigennamen gaan fout.
 
-**Hoe wij hierbij helpen:** Na de audit mag je twaalf weken lang onbeperkt vragen stellen. Over het rapport, over oplossingen, over de interpretatie van een richtlijn. Geen extra kosten. Je IT-afdeling loopt vast op een Moodle-probleem? Mail of bel -- je spreekt direct met de auditor die je rapport heeft geschreven. Geen accountmanagers, geen tussenlaag.
+**Hoe wij hierbij helpen:** Vragen over het rapport mag je na de audit onbeperkt stellen — over een bevinding die niet duidelijk is, of over de interpretatie van een richtlijn. Zonder meerkosten. Je IT-afdeling loopt vast op een Moodle-probleem en wil dat we daadwerkelijk meedenken bij de oplossing? Dan werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur) — zo betaal je alleen voor de uren die je gebruikt. In beide gevallen spreek je direct met de auditor die je rapport heeft geschreven. Geen accountmanagers, geen tussenlaag.
 
 We bieden daarnaast een content-audit aan: we auditen een steekproef van jullie documenten, video's en LMS-pagina's en leveren concrete richtlijnen op die je hele organisatie kan toepassen. Handig als je honderden docenten hebt die content produceren.
 
@@ -133,7 +133,7 @@ Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en 
 
 Maar een retest is niet het eindpunt. Toegankelijkheid is geen project met een einddatum -- het is een doorlopend proces. Nieuwe content, nieuwe plugins, nieuwe functionaliteit: alles kan nieuwe barrières introduceren.
 
-**Hoe wij hierbij helpen:** Een retest kost tussen de 400 en 500 euro, afhankelijk van de omvang. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
+**Hoe wij hierbij helpen:** Een retest kost vanaf 600 euro, afhankelijk van de omvang. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
 
 Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids-abonnement of strippenkaart aan. Dan denken we doorlopend mee: bij nieuwe releases, bij de keuze voor een nieuwe plugin, bij de inrichting van een nieuw deel van je leeromgeving. Zo voorkom je dat je over een jaar weer van voren af aan moet beginnen.
 

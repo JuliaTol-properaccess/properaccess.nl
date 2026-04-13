@@ -34,6 +34,18 @@ Our audit process includes:
 
 We serve **government organizations and companies** across Europe that are required to comply with the **EAA**. Our current clients include organizations in **the Netherlands, Sweden, and Germany**.
 
+### One user story per finding
+
+Agile development teams use user stories to put end users first. We do the same in our audit reports.
+
+Every finding in our report starts with a user story — written from the perspective of the visitor with a disability. Not one person, not one disability, but all the ways someone can run into this issue, in a single story.
+
+Here is an example from a recent report:
+
+> As a visitor who navigates with a screen reader, a keyboard, a screen magnifier, or who relies on a predictable reading flow, I need dynamically inserted content to appear in the DOM directly next to the element it relates to, because only then does the screen reader announce it in context, does keyboard focus reach it at the expected moment, does my magnified viewport still contain it, and does my attention stay connected to whatever triggered it.
+
+Below that come the technical explanation, the code example and the screenshot. The story comes first — on purpose. So the developer or editor who has to fix it no longer has to guess why it matters. It is right there, in the words of the person affected.
+
 ### Why Choose Proper Access?
 
 At Proper Access, we go beyond checklists—we build lasting partnerships to help you succeed in digital accessibility. Here’s why organizations across Europe choose us:

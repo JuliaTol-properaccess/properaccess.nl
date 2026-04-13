@@ -61,7 +61,7 @@ De klant blijft jouw klant. Wij zijn het aanspreekpunt, wij sturen de communicat
 {{< /section-card >}}
 {{< section-card title="2. Wij leveren alles wat je nodig hebt" >}}
 
-Een landingspagina, de audit zelf binnen 5 tot 8 weken, en onbeperkte support na het rapport. Geen uurtje-factuurtje.
+Een landingspagina, de audit zelf binnen 5 tot 8 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur — je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
 
 {{< /section-card >}}
 {{< section-card title="3. Jij krijgt een aantrekkelijke commissie" >}}

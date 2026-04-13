@@ -64,7 +64,7 @@ De doorlooptijd is inclusief een nabespreking waarin we het rapport samen doorlo
 
 ## Wat kost het?
 
-De kosten hangen af van het type audit en de complexiteit. Voor de meeste websites ligt de prijs tussen de € 1.800 en € 2.900. Een volledige audit van een gemiddeld-complexe website kost bij ons € 2.695.
+De kosten hangen af van het type audit en de complexiteit. Voor de meeste websites ligt de prijs tussen de € 2.100 en € 4.500. Een volledige audit van een gemiddeld-complexe website kost bij ons ca. € 3.600.
 
 Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet wat je moet fixen. En zonder rapport kun je niet aantonen dat je aan de wet voldoet.
 

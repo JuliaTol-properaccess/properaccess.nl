@@ -16,7 +16,7 @@ layout: "homepage"
 
 faqs:
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Een gemiddeld complexe website kost vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie — geen verrassingen achteraf."
+    answer: "Dat hangt af van de omvang en complexiteit van je site. Onze prijzen beginnen vanaf ca. € 2.100 voor een eenvoudige website. De meeste websites vallen in de categorie gemiddeld-complex en liggen rond de € 3.600. We geven je altijd vooraf een duidelijke indicatie — geen verrassingen achteraf."
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per bevinding geven we aan hoe ernstig het is en hoeveel moeite de oplossing kost. Zo pak je eerst aan wat het meeste impact heeft."
   - question: "Hoe ziet het rapport eruit?"

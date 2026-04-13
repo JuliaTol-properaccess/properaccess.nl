@@ -45,16 +45,16 @@ Dat betekent niet dat duur slecht is — maar check wat je krijgt voor het geld.
 
 ## Wat is een eerlijke prijs?
 
-Voor een volledige, handmatige WCAG-audit van een gemiddelde website (10-20 unieke paginatypes) is een prijs tussen de **€ 1.800 en € 3.500** realistisch bij een specialist.
+Voor een volledige, handmatige WCAG-audit van een gemiddelde website (10-20 unieke paginatypes) is een prijs tussen de **€ 2.100 en € 4.500** realistisch bij een specialist.
 
 Bij ons:
 
 | Type                         | Prijs         |
 | ---------------------------- | ------------- |
-| Eenvoudige website           | € 1.795       |
-| Gemiddelde website           | € 2.395       |
-| Gemiddeld-complexe website   | € 2.695       |
-| Complexe website             | € 2.895       |
+| Eenvoudige website           | € 2.100       |
+| Gemiddelde website           | € 2.850       |
+| Gemiddeld-complexe website   | € 3.600       |
+| Complexe website             | € 4.500       |
 
 ## Waar betaal je eigenlijk voor?
 
@@ -68,8 +68,8 @@ Een audit is meer dan "even je website checken". Dit is wat erbij komt kijken:
 6. **Review** — het rapport controleren op consistentie en volledigheid
 
 Bij ons komt daar optioneel bij:
-- **Nabespreking** (€ 125/uur) — het rapport samen doorlopen met je team
-- **Retest** (€ 300-500) — controleren of de fixes werken
+- **Nabespreking** (€ 150/uur) — het rapport samen doorlopen met je team
+- **Retest** (€ 300 voor content, vanaf € 600 voor techniek/website) — controleren of de fixes werken
 
 ## Hoe vergelijk je aanbieders?
 

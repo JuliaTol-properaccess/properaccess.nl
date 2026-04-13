@@ -160,7 +160,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 | **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Alle klantprojecten, doorlopend |
 | **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Jaarlijkse audits, meerjarenplanning en continue ondersteuning |
 | **Ideaal voor** | Eenmalig klantproject, oplevering, verantwoording | Agencies die agile werken en tussentijds willen checken | Agencies met een groot portfolio die structureel willen borgen |
-| **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
+| **Investering** | Eenmalig, vanaf ca. € 2.100 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
@@ -236,7 +236,7 @@ Je bent niet 'klaar' na het rapport. We blijven meedenken terwijl je team de aan
 <details class="faq-item">
 <summary class="faq-question">Wat kost een audit?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie.</p>
+<p>Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf ca. € 2.100. We geven je altijd vooraf een duidelijke indicatie.</p>
 </div>
 </details>
 

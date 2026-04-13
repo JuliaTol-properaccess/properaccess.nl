@@ -148,7 +148,7 @@ We hebben drie diensten. Welke past, hangt af van waar je staat.
 | **Scope**       | Volledige website of app, alle 55 criteria | Per vraag, per component, per sprint | Alle digitale kanalen, doorlopend |
 | **Resultaat**   | Rapport per element met screenshots, code en impact | Antwoorden, reviews, quickscans, mini-audits | Jaarlijkse audits, meerjarenplanning en continue ondersteuning |
 | **Ideaal voor** | Nulmeting, eerste inzicht, verantwoording | Teams die na een audit vragen hebben, of in sprints werken | Organisaties met een groot digitaal portfolio die structureel willen borgen |
-| **Investering** | Eenmalig, vanaf ca. € 1.800 | Urenbundel, neem contact op | Maandelijks, neem contact op |
+| **Investering** | Eenmalig, vanaf ca. € 2.100 | Urenbundel, neem contact op | Maandelijks, neem contact op |
 
 [Meer over de WCAG-audit →](/toegankelijkheidsaudit/) · [Meer over de strippenkaart →](/strippenkaart/) · [Meer over het abonnement →](/toegankelijkheids-abonnement/)
 
@@ -211,14 +211,14 @@ Niet alleen over de bevindingen uit het rapport. "Hoe gaan we om met onze levera
 <details class="faq-item">
 <summary class="faq-question">Wat kost een audit?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf ca. € 1.800. We geven je altijd vooraf een duidelijke indicatie.</p>
+<p>Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf ca. € 2.100. We geven je altijd vooraf een duidelijke indicatie.</p>
 </div>
 </details>
 
 <details class="faq-item">
 <summary class="faq-question">Wat gebeurt er na de audit?</summary>
 <div class="faq-answer">
-<p>Je krijgt een presentatie van het rapport aan je team. Daarna kun je onbeperkt vragen stellen — ook weken of maanden later. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen.</p>
+<p>Je krijgt een presentatie van het rapport aan je team. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen — ook weken of maanden later, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een <a href="/strippenkaart/">strippenkaart</a> (€ 100/uur). We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen.</p>
 </div>
 </details>
 

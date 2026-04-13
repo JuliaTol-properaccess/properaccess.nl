@@ -131,7 +131,7 @@ We bouwen geen websites, beheren geen content, verkopen geen software. We hebben
 {{< /section-card >}}
 {{< section-card title="Directe lijn met de auditor" >}}
 
-Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct met de specialist die je audit uitvoert. Na oplevering mag je 12 weken lang onbeperkt vragen stellen. Geen extra kosten.
+Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct met de specialist die je audit uitvoert. Vragen over het rapport mag je daarna onbeperkt stellen, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur).
 
 {{< /section-card >}}
 {{< /section-cards >}}

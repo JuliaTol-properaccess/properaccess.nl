@@ -41,12 +41,14 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - Support tijdens het oplossen: we denken mee over alternatieven
 
 ## Diensten (indicatieve prijzen)
-- Toegankelijkheidsaudit (WCAG 2.2 AA): volledig onderzoek, rapport met bevindingen. Vanaf ca. 1.800 euro
+- Toegankelijkheidsaudit (WCAG 2.2 AA): volledig onderzoek, rapport met bevindingen. Vanaf ca. 2.100 euro
 - Quickscan: gratis beperkte steekproef
-- Content-audit: audit gericht op redactionele content. Vanaf ca. 1.300 euro
-- Techniekaudit: audit gericht op technische implementatie. Vanaf ca. 2.000 euro
-- Retest: hercontrole na verbetering. 300 tot 500 euro
-- Nabespreking: 1 uur doorloop van het rapport. 125 euro
+- Content-audit: audit gericht op redactionele content. Vanaf ca. 1.500 euro
+- Techniekaudit: audit gericht op technische implementatie. Vanaf ca. 2.250 euro
+- Systeem-audit: audit gericht op een digitaal systeem of platform. Vanaf ca. 3.750 euro
+- Retest content-audit: 300 euro. Retest techniek-, systeem- of website-audit: vanaf 600 euro
+- Nabespreking: 1 uur doorloop van het rapport. 150 euro
+- Strippenkaart: inhoudelijke begeleiding. 100 euro per uur
 
 ## Toolsuite
 Proper Access heeft 9 gratis tools voor webredactie op properaccess.nl/tools/: koppenstructuur, alt-teksten, links, tabellen, semantiek, foutmeldingen, iframes, taal en paginatitels.

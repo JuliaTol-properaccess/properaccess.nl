@@ -15,7 +15,7 @@
   <text x="80" y="68" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Quickscan</text>
   <text x="80" y="84" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Eerste beeld van je huidige situatie</text>
   <rect x="280" y="60" width="80" height="20" rx="10" fill="#f0fdf4"/>
-  <text x="296" y="74" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 19</text>
+  <text x="298" y="74" fill="#16a34a" font-family="Nunito, sans-serif" font-size="8" font-weight="700">gratis</text>
 
   <!-- Step 2 -->
   <circle cx="52" cy="150" r="16" fill="#A30D4B"/>
@@ -31,7 +31,7 @@
   <text x="80" y="224" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Volledige audit</text>
   <text x="80" y="240" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">WCAG-EM onderzoek op 55 succescriteria</text>
   <rect x="280" y="216" width="80" height="20" rx="10" fill="#f3f4f6"/>
-  <text x="290" y="230" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 1.800</text>
+  <text x="290" y="230" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 2.100</text>
 
   <!-- Step 4 -->
   <circle cx="52" cy="306" r="16" fill="#A30D4B"/>
@@ -39,5 +39,5 @@
   <text x="80" y="302" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Retest</text>
   <text x="80" y="318" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Check of alle verbeteringen goed zijn doorgevoerd</text>
   <rect x="280" y="294" width="80" height="20" rx="10" fill="#f3f4f6"/>
-  <text x="290" y="308" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 400</text>
+  <text x="290" y="308" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8" font-weight="700">v.a. 600</text>
 </svg>

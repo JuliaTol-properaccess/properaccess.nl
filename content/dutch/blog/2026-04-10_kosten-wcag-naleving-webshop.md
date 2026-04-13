@@ -21,9 +21,9 @@ image: "/images/blog/webshop-wireframe-eaa.svg"
 
 De totale kosten om je webshop WCAG-compliant te maken hangen af van drie factoren: de audit, het oplossen van problemen, en het onderhouden van de toegankelijkheid daarna.
 
-## 1. De audit: vanaf € 2.495
+## 1. De audit: vanaf ca. € 2.100
 
-Een volledige WCAG-audit van een webshop kost bij ons vanaf € 2.495 voor een eenvoudige shop, oplopend tot € 8.000 voor een complexe internationale webshop met multilingual checkout en uitgebreid accountgedeelte. De meeste Nederlandse webshops liggen tussen de € 2.700 en € 3.500.
+Een volledige WCAG-audit van een webshop kost bij ons vanaf ca. € 2.100 voor een eenvoudige shop, oplopend tot ca. € 4.500 voor een complexe internationale webshop met multilingual checkout en uitgebreid accountgedeelte. De meeste Nederlandse webshops vallen in de categorie gemiddeld-complex en liggen rond de € 3.600.
 
 Bij een webshop testen we:
 - Homepagina en categoriepagina's
@@ -48,22 +48,22 @@ Dit is de grootste variabele. De kosten hangen af van:
 - **Fundamentele problemen** (geen semantische HTML, heel het thema is ontoegankelijk): mogelijk een themawissel nodig
 
 ### Je development-team
-Heeft je team ervaring met toegankelijkheid? Zo niet, reken op extra tijd voor kennisopbouw. Wij bieden nabesprekingen aan (€ 125/uur) om je team door het rapport te loodsen.
+Heeft je team ervaring met toegankelijkheid? Zo niet, reken op extra tijd voor kennisopbouw. Wij bieden nabesprekingen aan (€ 150/uur) om je team door het rapport te loodsen.
 
-## 3. Onderhoud: € 500 - € 800 per retest
+## 3. Onderhoud: vanaf € 600 per retest
 
 Na de eerste audit en fixes heb je periodiek een hertest nodig. Elke keer dat je nieuwe features toevoegt, een thema-update doet of content wijzigt, kunnen er nieuwe problemen ontstaan.
 
-Een retest van een webshop kost bij ons € 500 tot € 800, afhankelijk van de omvang.
+Een retest van een webshop kost bij ons vanaf € 600, afhankelijk van de omvang.
 
 ## Totaalplaatje
 
 | Onderdeel                     | Indicatie         |
 | ----------------------------- | ----------------- |
-| Audit                         | € 2.495 - € 8.000 |
+| Audit                         | € 2.100 - € 4.500 |
 | Oplossen (inschatting)        | € 2.000 - € 15.000 |
-| Retest na fixes               | € 500 - € 800     |
-| Nabespreking (optioneel)      | € 125 / uur       |
+| Retest na fixes               | vanaf € 600       |
+| Nabespreking (optioneel)      | € 150 / uur       |
 | Strippenkaart                 | € 100 / uur       |
 
 ## Hoe bespaar je kosten?
