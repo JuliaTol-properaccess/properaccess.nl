@@ -66,7 +66,7 @@ Onze user stories zijn niet geschreven vanuit één persoon met één beperking.
 Een voorbeeld uit een recent rapport:
 
 <blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 1.5rem 0; font-style: italic;">
-Als bezoeker gebruik ik een schermlezer, stembesturing, of ik lees de pagina zonder afbeeldingen. Op deze pagina staan knoppen met alleen een icoon. Zonder toegankelijke naam weet ik niet wat ze doen. Mijn schermlezer zegt alleen "knop". Mijn stemopdracht heeft niets om op te richten. Met afbeeldingen uit zie ik helemaal niets op de plek van de knop.
+Als bezoeker die een schermlezer, stembesturing of geen afbeeldingen gebruikt, heb ik nodig dat elke knop met alleen een icoon een duidelijke naam heeft — want zonder die naam weet ik niet wat de knop doet.
 </blockquote>
 
 Daaronder volgt de technische uitleg: welk element, welk WCAG-criterium, welke code-aanpassing. Plus een screenshot. De story staat er eerst. Met opzet.
