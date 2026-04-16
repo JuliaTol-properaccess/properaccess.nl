@@ -1141,6 +1141,36 @@ figure.chart figcaption {
   border-top: 1px solid #f1f5f9;
 }
 
+/* Mobile: stack title and meta vertically — fixed grid columns don't fit */
+@media (max-width: 600px) {
+  .finding-header-row {
+    display: none;
+  }
+
+  .finding-summary {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.75rem;
+    row-gap: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .finding-title-cell {
+    flex: 1 1 100%;
+  }
+
+  .finding-meta-impact,
+  .finding-meta-type,
+  .finding-meta-beperking {
+    text-align: left;
+    white-space: normal;
+  }
+
+  .finding-body {
+    padding-left: 1rem;
+  }
+}
+
 .finding-body > h3 {
   position: absolute;
   width: 1px;
