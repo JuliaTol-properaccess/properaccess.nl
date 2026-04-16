@@ -6,7 +6,7 @@ slug: "reseller-programma"
 url: "/reseller-programma/"
 layout: "reseller"
 robots: "noindex, nofollow"
-description: "Bied je klanten een accessibility-audit aan zonder dat je er iets voor hoeft te doen. 15% commissie, kant-en-klare materialen en doorlopende content."
+description: "Bied je klanten een accessibility-audit aan zonder dat je er iets voor hoeft te doen. 7% commissie, kant-en-klare materialen en doorlopende content."
 
 banner:
   title: "Bied je klanten een accessibility-audit aan — zonder dat je er iets voor hoeft te doen"
@@ -40,8 +40,8 @@ Je verwijst een klant door. Wij nemen het over: intake, planning, audit, rapport
 {{< /section-card >}}
 {{< section-card title="Commissie" >}}
 
-- 15% van de opdrachtwaarde, gedurende het eerste jaar
-- Gemiddeld ca. 540 euro per audit
+- 7% van de opdrachtwaarde, gedurende het eerste jaar
+- Gemiddeld ca. 252 euro per audit
 - Geen minimum aantal opdrachten, geen commitment
 
 {{< /section-card >}}
@@ -78,7 +78,7 @@ Het rapport gaat onder de naam van Proper Access. Wij beantwoorden alle vragen v
 {{< /section-card >}}
 {{< section-card title="5. Facturatie" >}}
 
-Jij stuurt de factuur naar je klant. Je ontvangt 15% commissie van de opdrachtwaarde.
+Jij stuurt de factuur naar je klant. Je ontvangt 7% commissie van de opdrachtwaarde.
 
 {{< /section-card >}}
 {{< section-card title="6. Doorlopend" >}}
@@ -114,7 +114,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Hoeveel verdien ik per audit?</summary>
 <div class="faq-answer">
-<p>15% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van ca. 3.600 euro is dat ongeveer 540 euro per opdracht.</p>
+<p>7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van ca. 3.600 euro is dat ongeveer 252 euro per opdracht.</p>
 </div>
 </details>
 
