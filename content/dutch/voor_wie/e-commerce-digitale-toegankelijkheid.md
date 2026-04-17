@@ -40,17 +40,34 @@ trust:
 
 {{< section-full title="Waarom je nu moet handelen" >}}
 
-Sinds 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act. Webshops, apps, betaalprocessen, klantenportalen — alles moet voldoen aan WCAG 2.1 niveau AA.
-
-In maart 2026 onderzocht de ACM de 100 grootste webshops van Nederland. De conclusie: **61% is niet toegankelijk. 33% heeft zelfs ernstige problemen.** De ACM houdt toezicht en kan boetes opleggen tot 900.000 euro of 10% van je jaaromzet.
+Sinds 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act. Webshops, apps, betaalprocessen, klantenportalen — alles moet voldoen aan WCAG 2.1 niveau AA. De ACM houdt toezicht en kan boetes opleggen tot 900.000 euro of 10% van je jaaromzet.
 
 Maar het gaat niet alleen om de wet. Lees meer over [wat digitale toegankelijkheid inhoudt](/digitale-toegankelijkheid/).
 
 {{< /section-full >}}
 
+<section class="ec-stat-highlight">
+  <div class="hp-container">
+    <div class="ec-stat-highlight__grid">
+      <div class="ec-stat-highlight__number-block">
+        <div class="ec-stat-highlight__number">61%</div>
+        <p class="ec-stat-highlight__label">van de Nederlandse webshops voldoet niet aan de EAA</p>
+      </div>
+      <div class="ec-stat-highlight__context">
+        <p>Uit ACM-onderzoek (maart 2026) onder de <strong>100 grootste webshops</strong> van Nederland:</p>
+        <ul class="ec-stat-highlight__list">
+          <li><strong>33%</strong> heeft zelfs ernstige problemen</li>
+          <li><strong>Boetes</strong> tot € 900.000 of 10% jaaromzet</li>
+          <li><strong>De ACM</strong> houdt actief toezicht</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{< webinar-ecommerce >}}
 
-{{< section-cards title="" columns="3" bg="dark" >}}
+{{< section-cards title="Wat heb ik hieraan?" columns="3" bg="dark" >}}
 {{< section-card title="4,4 miljoen potentiele klanten" >}}
 
 In Nederland leven 4,4 miljoen mensen met een beperking — 20 tot 25% van de bevolking. Als je checkout niet werkt met toetsenbord of je productfilters niet met een screenreader, dan haken die klanten af. Zonder dat jij het ziet.
@@ -68,7 +85,7 @@ Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cards title="Herken je dit? Typische barrières in webshops" columns="2" bg="light" >}}
+{{< section-cards title="Alle klantroutes op je website of app onder de loep" columns="2" bg="light" >}}
 {{< section-card title="Ontoegankelijke checkout" >}}
 
 Formuliervelden zonder label, foutmeldingen die niet worden voorgelezen, knoppen niet bereikbaar met het toetsenbord. De plek waar je omzet wordt gemaakt, is vaak de plek waar de meeste barrières zitten.
@@ -92,36 +109,46 @@ Chatbots die niet gesloten kunnen worden met toetsenbord, die de hele pagina blo
 {{< /section-cards >}}
 
 
-{{< section-cards title="Hoe wij de audit aanpakken" columns="3" bg="dark" >}}
-{{< section-card title="1. We begrijpen je platform en flows" >}}
-
-We bespreken je situatie: welk platform gebruik je? Wat zijn je belangrijkste flows? Welke deadlines heb je? Op basis daarvan geven we een indicatie van de scope en kosten.
-
-{{< /section-card >}}
-{{< section-card title="2. Handmatige test op alle 55 WCAG-criteria" >}}
-
-We toetsen je webshop handmatig op alle 55 WCAG 2.2 AA-succescriteria. Met meerdere browsers, screenreaders en andere hulpsoftware. Geautomatiseerde tools dekken slechts 20-30% van de problemen.
-
-{{< /section-card >}}
-{{< section-card title="3. Rapport per element + sessie om het door te nemen" >}}
-
-Je ontvangt een rapport per pagina, per element. Met screenshots, code-voorbeelden en een CSV-export voor je ticketsysteem. We lopen het samen door en beantwoorden al je vragen — zolang als nodig.
-
-{{< /section-card >}}
-{{< /section-cards >}}
-
-{{< section-cards title="Waarom webshops terugkomen" columns="2" bg="light" >}}
-{{< section-card title="Ervaring met de grootste webshops" >}}
-
-We kennen de uitdagingen die specifiek zijn voor e-commerce: checkoutflows, productfilters, betaalproviders, chatwidgets, meertalige content. We weten waar we moeten kijken.
-
-{{< /section-card >}}
-{{< section-card title="Begeleiding tot het opgelost is" >}}
-
-Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het daarna pas. We begeleiden je team door het hele verbeterproces — niet als upsell, dat zit erin.
-
-{{< /section-card >}}
-{{< /section-cards >}}
+<section class="ec-why-back">
+  <div class="hp-container">
+    <div class="ec-why-back__grid">
+      <div class="ec-why-back__intro">
+        <h2 class="hp-heading-lg">Waarom webshops bij ons terugkomen</h2>
+        <p class="ec-why-back__lead">Je bent geen rij in een spreadsheet. Bij Proper Access werk je met mensen die jouw webshop kennen — en die je niet loslaten na oplevering.</p>
+      </div>
+      <ul class="ec-why-back__list">
+        <li class="ec-why-back__item">
+          <span class="ec-why-back__icon material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">favorite</span>
+          <div>
+            <h3 class="ec-why-back__heading">Je krijgt onze passie mee</h3>
+            <p>We doen dit werk omdat we het belangrijk vinden &mdash; en dat voel je in elk rapport. Geen afgeraffelde checklist, wel nadenken over jouw specifieke situatie.</p>
+          </div>
+        </li>
+        <li class="ec-why-back__item">
+          <span class="ec-why-back__icon material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">route</span>
+          <div>
+            <h3 class="ec-why-back__heading">Begeleiding naar het resultaat</h3>
+            <p>Na het rapport verdwijnen we niet. We denken mee bij het oplossen, beantwoorden vragen over code en ARIA, en schakelen snel als je team vastloopt.</p>
+          </div>
+        </li>
+        <li class="ec-why-back__item">
+          <span class="ec-why-back__icon material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">forum</span>
+          <div>
+            <h3 class="ec-why-back__heading">Een echte sparringspartner</h3>
+            <p>Geen accountmanager tussen jou en de auditor. Je belt of mailt direct met iemand die je webshop kent en meedenkt over de beste aanpak voor jouw platform.</p>
+          </div>
+        </li>
+        <li class="ec-why-back__item">
+          <span class="ec-why-back__icon material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">group</span>
+          <div>
+            <h3 class="ec-why-back__heading">Je bent geen rij in een spreadsheet</h3>
+            <p>We houden onze portefeuille bewust klein. Elke opdrachtgever krijgt aandacht &mdash; niet alleen tijdens de audit, maar ook de weken erna als er vragen opkomen.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 {{< section-full title="Vragen die webshop-eigenaren ons stellen" >}}
 
