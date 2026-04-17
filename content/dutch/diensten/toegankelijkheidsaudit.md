@@ -17,12 +17,12 @@ keywords:
   - toegankelijkheidsrapport
 
 banner:
-  title: "Je moet voldoen aan de WCAG. Het enige wat je nog niet weet: hoe ver je afstaat."
-  content: "Een audit per pagina, per element — geen stapel jargon, maar een rapport waarmee je team maandag kan beginnen. Voor EAA (webshops), Wdo (overheid) en iedereen die wil weten hoe toegankelijk z'n site echt is."
+  title: "In minder dan 12 weken een toegankelijke website of app"
+  content: "Meer bereik, betere conversie en een sterker imago — door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of de Wet digitale overheid (Wdo)."
   bullets:
-    - "**Wat is er fout, en hoe erg is het?**"
-    - "**Wat moet je precies doen om het op te lossen?**"
-    - "**Wat kun je laten zien aan je toezichthouder of klanten?**"
+    - "**Meer bereik** — tot 20% extra potenti&euml;le klanten"
+    - "**Betere conversie** en sterker imago"
+    - "**Compliant** met EAA of Wdo, zonder stress"
   button:
     enable: true
     label: "Plan een gratis kennismaking (30 min)"

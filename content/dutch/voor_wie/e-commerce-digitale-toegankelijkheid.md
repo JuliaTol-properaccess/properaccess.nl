@@ -63,12 +63,6 @@ Screenreaders en Google crawlers gebruiken dezelfde code. Goede semantische HTML
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-split title="Wil je snel weten waar je staat?" contact="true" >}}
-
-Vraag een gratis quickscan aan en ontvang binnen 2 werkdagen een rapport met de belangrijkste risico's. Of vraag direct een volledige audit aan (vanaf ca. € 2.100).
-
-{{< /section-split >}}
-
 {{< section-cards title="Herken je dit? Typische barrières in webshops" columns="2" bg="light" >}}
 {{< section-card title="Ontoegankelijke checkout" >}}
 
