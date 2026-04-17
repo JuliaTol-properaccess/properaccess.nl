@@ -21,17 +21,17 @@ slug: "auditbureau-digitale-toegankelijkheid"
 url: "/auditbureau-digitale-toegankelijkheid/"
 
 banner:
-  title: "Over Proper Access"
+  title: "Wij zijn vakidioten in digitale toegankelijkheid"
   content: >
-    Je website moet toegankelijk worden. Dat is niet alleen een wettelijke verplichting —
-    het bepaalt of je **15-25% van je potentiële klanten** wegjaagt of verwelkomt.
-    Bij Proper Access krijg je de technische diepgang van een sterk team én de menselijke
-    begeleiding die je nodig hebt om er écht iets mee te doen.
+    Elke ochtend worden we wakker met hetzelfde doel: de digitale wereld beter maken
+    voor iedereen. Dat is geen tagline — dat is onze passie. We willen de beste zijn
+    in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
+    met onze klanten.
   bulletpoints:
-    - "Opgericht door Julia Tol, senior WCAG-auditor"
+    - "Opgericht in 2018, 900+ audits uitgevoerd"
+    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-    - "900+ audits van websites sinds 2019"
-    - "50+ audits van apps"
+    - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"
@@ -48,36 +48,37 @@ trust:
     - Jumbo
 
 team:
-  title: "Wie gaat mij helpen?"
+  title: "Met wie ga je werken?"
   members:
     - name: "Julia Tol"
-      role: "Oprichter & senior auditor"
+      role: "Oprichter, CEO & senior auditor"
       image: "/images/julia.webp"
       bio: >
-        Julia heeft Proper Access opgericht met één doel: digitale toegankelijkheid
-        **praktisch** maken. Niet theoretisch, niet academisch, maar toepasbaar.
-        Haar kracht zit in begrijpen wat developers en contentmakers nodig hebben,
-        en in de drive om te zorgen dat ze daar ook komen.
+        Julia richtte Proper Access op in 2018 met één missie: digitale toegankelijkheid
+        **praktisch** maken. Niet theoretisch, niet academisch, maar toepasbaar. Ze werkt
+        direct met product owners, digitale teams en webredacties &mdash; en bouwde het
+        bedrijf op rond de overtuiging dat een goed rapport alleen waarde heeft als je
+        team er iets mee kan.
       highlights:
-        - "Senior WCAG-auditor"
+        - "Senior WCAG-auditor, IAAP-gecertificeerd (WAS)"
         - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-        - "IAAP-gecertificeerd (WAS)"
-        - "900+ audits uitgevoerd sinds 2019"
+        - "900+ audits uitgevoerd sinds 2018"
+        - "Werkt direct met klanten &mdash; geen tussenlaag van accountmanagers"
     - name: "Het team"
-      role: "Specialisten met passie voor techniek"
+      role: "Specialisten met dezelfde passie"
       image: "/images/pages/iaap.webp"
       bio: >
-        Julia heeft een team samengesteld van mensen met dezelfde passie.
-        We bespreken wekelijks de feedback op onze rapporten, de WCAG-richtlijnen, hulpsoftware support
-        en denken samen na hoe we gevonden problemen zouden kunnen oplossen.
-        We doen eigen research — want *"dat staat in de standaard"* is voor ons niet genoeg.
-        We willen weten of we de standaard correct interpreteren.
+        We zijn vakidioten. We worden wakker met de vraag: hoe gedraagt een screenreader
+        zich nou echt bij dit ARIA-patroon? Welke WCAG-interpretatie klopt? We bespreken
+        onze rapporten wekelijks, tonen ons werk aan collega-onderzoekers voor peer review,
+        en doen eigen research &mdash; want *"dat staat in de standaard"* is voor ons
+        niet genoeg. We willen weten of we het correct interpreteren.
       highlights:
-        - "Wekelijks bijscholen over WCAG richtlijnen en technieken"
-        - "Eigen research en testen op echte hulpsoftware"
-        - "Kritische vragen: is dit advies waar? Wanneer is dit getest?"
-        - "6-ogen controle: elk rapport wordt door minimaal 2 collega's gelezen"
-        - "Uitleg zonder jargon, zonder ambtenarrentaal"
+        - "Veel intern overleg over rapporten, WCAG-richtlijnen en hulpsoftware"
+        - "Peer review door collega-onderzoekers, ook buiten ons team"
+        - "6-ogen-controle: elk rapport door minimaal 2 auditors gelezen"
+        - "Eigen research &mdash; we testen op echte hulpsoftware en browsers"
+        - "Uitleg zonder jargon, zonder ambtenarentaal"
 
 stats:
   note: "**Proper Access BV** · KvK: 95350985 · OB-nummer: NL867096755B01"
@@ -98,13 +99,14 @@ faqs:
 
   - question: "Hoe blijven jullie up-to-date?"
     answer: >
-      Ons team studeert wekelijks. We volgen internationale ontwikkelingen op het gebied van
-      WCAG, EAA en digitale inclusie. We zijn actief in vakgroepen en kennisuitwisseling.
+      We investeren elke week in ons vak. We volgen internationale ontwikkelingen rond
+      WCAG, EAA en digitale inclusie, en zijn actief in vakgroepen.
 
 
-      Maar belangrijker: **we testen zelf.** We installeren hulpsoftware. We draaien browsers
-      in verschillende configuraties. Want de standaard is niet altijd duidelijk — en wat op
-      papier toegankelijk lijkt, kan in de praktijk anders uitpakken.
+      Maar belangrijker: **we testen zelf.** We installeren hulpsoftware, draaien browsers
+      in verschillende configuraties, en tonen onze bevindingen aan collega-onderzoekers
+      voor peer review. Want de standaard is niet altijd duidelijk — en wat op papier
+      toegankelijk lijkt, kan in de praktijk anders uitpakken.
 
   - question: "Wat als ik na de audit nog vragen heb?"
     answer: >
@@ -126,20 +128,46 @@ faqs:
       of een museum met bezoekers over de hele wereld — wij helpen je verder.
 ---
 
-{{< section-full title="Waarom doen we dit?" >}}
+{{< section-full title="Onze missie: toegankelijkheid als vanzelfsprekend fundament" >}}
 
-Er zijn genoeg auditbureaus. Bureaus die je een rapport opleveren met tientallen succescriteria, zonder dat je snapt wat je ermee moet. **Wij zijn begonnen omdat we daar zelf moe van waren.**
+We werken sinds 2018 met product owners, digitale teams, marketingleiders en webredacties — binnen musea, culturele instellingen, e-commerce en de overheid. Wat we overal zien: toegankelijkheid voelt vaak als een last-minute zorg. Een bron van onzekerheid, stress en paniekerig herstelwerk vlak voor een deadline.
 
-Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet willen, maar omdat rapportages onbegrijpelijk zijn, er geen concrete oplossingen worden aangedragen, en je na het rapport alleen staat.
+**Dat willen we veranderen.** Wij maken van toegankelijkheid een helder, beheersbaar proces. Een betrouwbaar fundament onder je digitale kwaliteit — niet een vinkje op een checklist.
+
+Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfstandig tickets kopen. Mensen met een beperking die een online collectie volledig kunnen ervaren. Teams die rustig richting EAA-compliance bewegen, zonder last-minute druk. Dát is waarom we dit werk doen.
 
 {{< /section-full >}}
 
 
-{{< section-cards title="Wat ons anders maakt" columns="2" bg="light" >}}
+{{< section-cards title="Hoe we de beste blijven in ons vak" columns="2" bg="light" >}}
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+  <h3 class="card__title">Eigen research, elke week</h3>
+  <p>We testen zelf met echte hulpsoftware en browsers. <strong>"Dat staat in de standaard"</strong> is voor ons niet genoeg &mdash; we willen weten of we de standaard correct interpreteren, en of het in de praktijk ook zo werkt.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+  <h3 class="card__title">Peer review door collega-onderzoekers</h3>
+  <p>We tonen ons werk aan vakgenoten voor kritische review. <strong>6-ogen-controle</strong> op elk rapport, en regelmatig overleg met onderzoekers buiten ons team om onze bevindingen te toetsen.</p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+  <h3 class="card__title">Veel intern overleg</h3>
+  <p>We bespreken onze rapporten, nieuwe WCAG-interpretaties, het gedrag van hulpsoftware en hoe we gevonden problemen het beste kunnen oplossen. <strong>Geen enkele auditor werkt in z'n eentje.</strong></p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+  <h3 class="card__title">We investeren in betere oplossingen</h3>
+  <p>We bouwen eigen tools, automatiseren waar het kan en blijven onze rapportstructuur verbeteren. <strong>Elke audit leert ons iets</strong> &mdash; en dat gebruiken we om de volgende nog scherper te maken.</p>
+</div>
+{{< /section-cards >}}
+
+
+{{< section-cards title="Wat ons praktisch anders maakt" columns="2" >}}
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
   <h3 class="card__title">Rapport per element</h3>
-  <p>Niet per succescriterium, maar <strong>per element op de pagina</strong>. Je team ziet direct wat er moet veranderen — zonder vertaalslag.</p>
+  <p>Niet per succescriterium, maar <strong>per element op de pagina</strong>. Je team ziet direct wat er moet veranderen &mdash; zonder vertaalslag.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
@@ -147,19 +175,14 @@ Julia heeft jarenlang gezien hoe organisaties vastlopen. Niet omdat ze niet will
   <p>Elke bevinding begint met een <strong>verhaal vanuit de bezoeker</strong> die vastloopt. Niet "SC 1.3.2 niet voldaan", maar in mensentaal: wat gaat er mis en waarom doet het ertoe?</p>
 </div>
 <div class="card">
-  <div class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
-  <h3 class="card__title">Onbeperkt vragen stellen</h3>
-  <p>Na de audit verdwijnen we niet. Je mag <strong>zoveel vragen stellen als je wilt</strong>. We denken mee tot het opgelost is.</p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
-  <h3 class="card__title">Eigen research</h3>
-  <p>We testen zelf met hulpsoftware en browsers. <strong>"Dat staat in de standaard"</strong> is voor ons niet genoeg — we willen weten of het klopt.</p>
+  <div class="card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+  <h3 class="card__title">Begeleiding tijdens het oplossen</h3>
+  <p>Na het rapport verdwijnen we niet. Je mag <strong>onbeperkt vragen stellen</strong>. Voor inhoudelijke begeleiding bij het oplossen hebben we een strippenkaart &mdash; zo betaal je alleen voor de uren die je gebruikt.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
   <h3 class="card__title">Onafhankelijk</h3>
-  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong> — alleen eerlijk advies.</p>
+  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong> &mdash; alleen eerlijk advies.</p>
 </div>
 {{< /section-cards >}}
 
