@@ -34,7 +34,7 @@ We testen digitale toegankelijkheid tijdens de bouw van een website en draaien m
 Wij ondersteunen bedrijven en organisaties die digitale toegankelijkheid willen begrijpen én verbeteren.
 
 - 7 jaar ervaring met WCAG
-- 850+ audits uitgevoerd
+- 900+ audits uitgevoerd
 - 12 eigen auditors
 
 - 150+ klanten

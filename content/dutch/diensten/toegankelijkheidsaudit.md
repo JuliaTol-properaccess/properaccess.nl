@@ -147,7 +147,9 @@ Agile-ontwikkelteams gebruiken user stories om eindgebruikers centraal te stelle
 Elke bevinding in ons rapport begint met een user story: een korte tekst geschreven vanuit de bezoeker met een beperking. Niet één persoon, niet één beperking — maar alle manieren waarop iemand tegen dit issue aan kan lopen, in één verhaal.
 
 <blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 2rem 0; font-style: italic;">
-Als een bezoeker die knoppen activeert met een schermlezer, die de pagina bestuurt met stem, of die de pagina leest met afbeeldingen uitgeschakeld, heb ik nodig dat elke knop met alleen een icoon een toegankelijke naam toont die de functie beschrijft (via alt, aria-label, of visueel verborgen tekst) — want zonder die naam kondigt mijn schermlezer alleen "knop" aan, heeft mijn stemopdracht niets om op te richten, is de tijdelijke aanduiding bij uitgeschakelde afbeeldingen leeg, en kan ik niet zien wat er gebeurt als ik het element activeer.
+Als bezoeker gebruik ik een schermlezer, stembediening of browse ik zonder afbeeldingen. Elke knop met alleen een icoon heeft een toegankelijke naam nodig — via alt, aria-label of visueel verborgen tekst.
+
+Zonder die naam leest mijn schermlezer alleen "knop". Mijn stemopdracht heeft niets om op te richten. En met afbeeldingen uit blijft de plek leeg. Ik weet dan niet wat er gebeurt als ik de knop activeer.
 </blockquote>
 
 Daaronder volgen de technische uitleg, het code-voorbeeld en de screenshot. De story staat er eerst, met opzet. Zo hoeft de ontwikkelaar of redacteur die dit oplost niet meer te gokken waarom het ertoe doet — het staat er letterlijk.

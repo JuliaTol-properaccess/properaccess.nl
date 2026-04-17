@@ -31,7 +31,7 @@ features:
     image: "/images/nrc_screenshot.webp"
     content: "Bij Proper Access ontvang je niet alleen een lijst met WCAG-fouten, maar een helder rapport vol oplossingen, prioriteiten en slimme keuzes. Zo kun je gericht verbeteren."
     bulletpoints:
-        - 850+ audits uitgevoerd sinds 2018
+        - 900+ audits uitgevoerd sinds 2018
         - IAAP-gecertificeerd team van 6 specialisten
         - 100% conform WCAG-EM en Europese toegankelijkheidswetgeving (EAA)
         - Heldere rapporten met concrete oplossingen

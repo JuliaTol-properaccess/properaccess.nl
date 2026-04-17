@@ -30,7 +30,7 @@ banner:
   bulletpoints:
     - "Opgericht door Julia Tol, senior WCAG-auditor"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-    - "850+ audits van websites sinds 2019"
+    - "900+ audits van websites sinds 2019"
     - "50+ audits van apps"
   button:
     enable: true
