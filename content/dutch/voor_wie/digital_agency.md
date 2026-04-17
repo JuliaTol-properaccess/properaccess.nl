@@ -16,8 +16,13 @@ keywords:
   - EAA digital agency
 
 banner:
-  title: "Je klant vraagt om WCAG — weet jouw team waar te beginnen?"
-  content: "Je bouwt websites voor klanten die aan de EAA moeten voldoen. Ze verwachten dat jij ze helpt. Maar WCAG is een vak apart — en niet iets wat je even 'erbij doet'. Screenreaders testen, ARIA-attributen, focusstijlen, kleurcontrast... je team heeft geen tijd om specialist te worden. Dat hoeft ook niet. Wij zijn jullie WCAG-partner. Jullie bouwen, wij testen of het toegankelijk is."
+  badge: "WCAG-partner voor agencies"
+  title: "Versterk je reputatie met een gerenommeerde audit-partner aan je kant"
+  content: "Digitale toegankelijkheid is lastiger dan het lijkt. Laat je klant geen boete krijgen."
+  bullets:
+    - "**We lopen mee** in de sprints"
+    - "**We doen audits** bij de oplevering"
+    - "**We denken mee** over alternatieven"
   button:
     enable: true
     label: "Stel je vraag — we denken mee"

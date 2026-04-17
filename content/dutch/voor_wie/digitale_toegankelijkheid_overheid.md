@@ -18,8 +18,13 @@ keywords:
   - Wet digitale overheid
 
 banner:
-  title: "Je toegankelijkheidsverklaring loopt af — en je weet niet waar te beginnen"
-  content: "Je kent het wel. Die melding in je inbox: 'Toegankelijkheidsverklaring verloopt over 60 dagen.' Je weet dat je organisatie moet voldoen aan de Wet digitale overheid. Maar tussen alle andere prioriteiten, budgetrondes en interne afstemmingen raak je het overzicht kwijt. En ondertussen gebruikt een groot deel van Nederland je diensten niet — omdat ze dat niet kunnen."
+  badge: "WCAG 2.2 en BDTO"
+  title: "Groen dashboard, tevreden burgers en een team dat weet hoe en waarom"
+  content: "Wij helpen je in heldere stappen naar een toegankelijke website — met een plan dat je team kan uitvoeren."
+  bullets:
+    - "**Per element:** wat zijn de issues en hoe los je ze op?"
+    - "**Plan van aanpak** uitgewerkt per team"
+    - "**We denken mee** over alternatieven"
   button:
     enable: true
     label: "Plan een kennismaking"

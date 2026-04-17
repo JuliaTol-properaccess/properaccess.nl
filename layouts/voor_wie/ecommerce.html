@@ -6,9 +6,19 @@
   <div class="hp-container">
     <div class="hp-hero__grid">
       <div class="hp-hero__text">
-        <span class="hp-hero__badge">E-commerce en EAA</span>
+        <span class="hp-hero__badge">{{ .badge | default "E-commerce en EAA" }}</span>
         <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
         <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bullets }}
+        <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
+          {{ range . }}
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span>{{ . | markdownify }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
         {{ with .button }}
           {{ if .enable }}
             <div class="hp-hero__actions">

@@ -17,11 +17,16 @@ keywords:
   - ACM webshop
 
 banner:
-  title: "61% van de webshops is niet toegankelijk. Hoe scoort jouw webshop?"
-  content: "Uit onderzoek van de ACM blijkt dat het merendeel van de grote Nederlandse webshops niet voldoet aan de toegankelijkheidseisen. De wet geldt nu al. Klanten met een beperking haken af bij je checkout, je filters en je klantenservice — zonder dat je het ziet."
+  badge: "WCAG 2.2 en EAA"
+  title: "Meer bezoekers, hogere conversie, tevreden klanten — en EAA-compliant"
+  content: "Wij helpen je in heldere stappen naar een toegankelijke webshop — met een plan dat je team kan uitvoeren."
+  bullets:
+    - "**Per element:** wat zijn de issues en hoe los je ze op?"
+    - "**Plan van aanpak** uitgewerkt per team"
+    - "**We denken mee** over alternatieven"
   button:
     enable: true
-    label: "Gratis quickscan — risicorapport binnen 2 werkdagen"
+    label: "Plan een kennismaking"
     link: "/contact/"
 
 trust:

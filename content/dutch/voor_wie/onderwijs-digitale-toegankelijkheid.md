@@ -18,11 +18,16 @@ keywords:
   - Wdo onderwijs
 
 banner:
-  title: "Kunnen al je studenten bij de lesstof?"
-  content: "Je hebt uitstekende docenten. Je leermateriaal is up-to-date. Je digitale leeromgeving draait. Maar kan een student met een visuele beperking die toets in Moodle maken? Kan een student met een motorische beperking door je Canvas-modules navigeren? Kan een slechthorende student die Articulate-module volgen? Als het antwoord 'dat weten we eigenlijk niet' is, dan ben je niet de enige. Maar het is wel tijd om erachter te komen."
+  badge: "WCAG 2.2 en BDTO"
+  title: "Een studieomgeving waar iedereen zelfstandig kan leren"
+  content: "Wij helpen je in heldere stappen naar een toegankelijke leeromgeving — met een plan dat je team kan uitvoeren."
+  bullets:
+    - "**Per element:** wat zijn de issues en hoe los je ze op?"
+    - "**Plan van aanpak** uitgewerkt per team"
+    - "**We denken mee** over alternatieven"
   button:
     enable: true
-    label: "Neem contact op"
+    label: "Plan een kennismaking"
     link: "/contact/"
 
 trust:

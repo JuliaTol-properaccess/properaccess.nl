@@ -14,12 +14,17 @@ keywords:
   - WCAG audit sport attracties
 sectie_layout: true
 banner:
-  title: "Je verwelkomt iedereen — behalve op je website"
-  content: "Je museum heeft een rolstoellift, je theater een ringleiding, je festival duidelijke bewegwijzering. Maar iemand die blind is kan geen kaartjes kopen op je site. Iemand die geen muis gebruikt komt niet door je evenementenkalender. De inclusie stopt bij je voordeur — en dat hoeft niet."
+  badge: "WCAG 2.2 en BDTO"
+  title: "Een website waar iedereen zelfstandig een kaartje kan kopen"
+  content: "Wij helpen je in heldere stappen naar een toegankelijke website — met een plan dat je team kan uitvoeren."
+  bullets:
+    - "**Per element:** wat zijn de issues en hoe los je ze op?"
+    - "**Plan van aanpak** uitgewerkt per team"
+    - "**We denken mee** over alternatieven"
   image: "/images/museum.webp"
   button:
     enable: true
-    label: "Laat je website onderzoeken"
+    label: "Plan een kennismaking"
     link: "/contact/"
 ---
 
