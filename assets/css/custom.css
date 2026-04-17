@@ -4079,8 +4079,11 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-hero__visual svg {
-  max-width: 100%;
+  max-width: 420px;
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .hp-hero__image-frame {
@@ -4144,19 +4147,19 @@ html.dark .toolsuite-promo__text {
 
 /* ─── TRUST BAR ─── */
 .hp-trust {
-  padding: 1rem 0 1.5rem;
-  background: #fff;
+  padding: 1.25rem 0;
+  background: #F5F5F5;
 }
 
 .hp-trust__label {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: #6B7280;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .hp-trust__names {
@@ -4164,8 +4167,8 @@ html.dark .toolsuite-promo__text {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem 1.75rem;
-  opacity: 0.5;
+  gap: 0.5rem 2rem;
+  opacity: 0.75;
   filter: grayscale(1);
   transition: all 0.5s;
 }
@@ -4176,7 +4179,7 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-trust__names span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 900;
   color: #1F2937;
   white-space: nowrap;
