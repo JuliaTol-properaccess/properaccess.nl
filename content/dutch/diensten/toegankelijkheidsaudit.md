@@ -17,16 +17,16 @@ keywords:
   - toegankelijkheidsrapport
 
 banner:
-  title: "De EAA geldt nu al. Weet jij waar je website staat?"
-  content: "Met onze toegankelijkheidsaudit krijg je geen stapel technisch jargon, maar **een helder rapport waarmee je team direct aan de slag kan**. Per pagina, per element, met screenshots en concrete oplossingen in code."
+  title: "Je moet voldoen aan de WCAG. Het enige wat je nog niet weet: hoe ver je afstaat."
+  content: "Een audit per pagina, per element — geen stapel jargon, maar een rapport waarmee je team maandag kan beginnen. Voor EAA (webshops), Wdo (overheid) en iedereen die wil weten hoe toegankelijk z'n site echt is."
   bullets:
-    - "**Weet waar je staat** — welke knelpunten zijn er, hoe ernstig zijn ze?"
-    - "**Weet wat je moet doen** — concrete oplossingen, geen vage adviezen"
-    - "**Verantwoording kunt afleggen** — aan je bestuur, toezichthouder of klanten"
+    - "**Wat is er fout, en hoe erg is het?**"
+    - "**Wat moet je precies doen om het op te lossen?**"
+    - "**Wat kun je laten zien aan je toezichthouder of klanten?**"
   button:
     enable: true
-    label: "Vraag een offerte aan"
-    link: "#offerte"
+    label: "Plan een gratis kennismaking (30 min)"
+    link: "/contact/"
 
 trust:
   label: "Vertrouwd door"
@@ -55,7 +55,7 @@ faqs:
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
 ---
 
-{{< section-cards title="Vier onderdelen die het verschil maken" columns="2" >}}
+{{< section-cards title="Wat zit er in een rapport van Proper Access" columns="2" >}}
 
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
@@ -64,7 +64,7 @@ faqs:
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-image" aria-hidden="true"></i></div>
-  <h3 class="card__title">Visueel onderbouwd</h3>
+  <h3 class="card__title">Screenshots van precies wat er fout gaat</h3>
   <p><strong>Screenshots</strong> — je ziet direct waar het probleem zit. Met uitleg van de gebruikersimpact in mensentaal.</p>
 </div>
 <div class="card">
@@ -79,7 +79,7 @@ faqs:
 </div>
 {{< /section-cards >}}
 
-{{< section-full title="Vragen over het rapport? Stel ze gerust" bg="light" >}}
+{{< section-full title="Vragen over het rapport? Stel ze gerust" bg="light" id="voorbeeldrapporten" >}}
 
 We zijn geen inspectie-instelling die een rapport dumpt en verdwijnt. Vragen over wat er in het rapport staat — een bevinding die niet helemaal duidelijk is, een succescriterium dat je nog wilt narekenen — beantwoorden we zonder meerkosten. Wil je dat we ook **meedenken bij het oplossen** zelf? Dat doen we via onze [strippenkaart](/strippenkaart/) à € 100/uur — zo betaal je alleen voor de uren die je daadwerkelijk gebruikt.
 
@@ -87,12 +87,12 @@ Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/20
 
 {{< /section-full >}}
 
-{{< section-steps title="Hoe het werkt" subtitle="Van nul tot volledig inzicht in 3-5 weken" >}}
+{{< section-steps title="Van kennismaking tot rapport — wat kun je verwachten" subtitle="Van nul tot volledig inzicht in 3-5 weken" >}}
 
 <div class="card">
   <div class="card__icon">1</div>
-  <h3 class="card__title">Kennismaking</h3>
-  <p>Gratis, 30 minuten. Je vertelt over je website, je doelen en je deadline. Wij geven een eerste inschatting.</p>
+  <h3 class="card__title">Gratis gesprek van 30 minuten</h3>
+  <p>Je vertelt over je website, je doelen en je deadline. Wij geven een eerste inschatting.</p>
 </div>
 <div class="card">
   <div class="card__icon">2</div>
@@ -101,18 +101,18 @@ Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/20
 </div>
 <div class="card">
   <div class="card__icon">3</div>
-  <h3 class="card__title">Audit</h3>
-  <p>Handmatig testen met toetsenbord, screenreader en zoomtools. Ca. 200 controlepunten per pagina.</p>
+  <h3 class="card__title">Handmatige audit, 200 checks per pagina</h3>
+  <p>Testen met toetsenbord, screenreader en zoomtools. Geautomatiseerde tools dekken slechts 20-30%.</p>
 </div>
 <div class="card">
   <div class="card__icon">4</div>
-  <h3 class="card__title">Rapport + toelichting</h3>
+  <h3 class="card__title">Rapport + een sessie waarin we het samen doorlopen</h3>
   <p>Je ontvangt het rapport in het Nederlands of Engels. We lichten de belangrijkste bevindingen toe.</p>
 </div>
 <div class="card">
   <div class="card__icon">5</div>
-  <h3 class="card__title">Vragen over het rapport</h3>
-  <p>Iets onduidelijk? Stel je vraag, zonder meerkosten. Voor begeleiding bij het oplossen werken we met een <a href="/strippenkaart/">strippenkaart</a>.</p>
+  <h3 class="card__title">Vragen stellen mag onbeperkt (zonder extra kosten)</h3>
+  <p>Iets onduidelijk? Stel je vraag. Voor begeleiding bij het oplossen werken we met een <a href="/strippenkaart/">strippenkaart</a>.</p>
 </div>
 {{< /section-steps >}}
 
@@ -140,7 +140,7 @@ Bekijk een voorbeeldrapport: [overheid](https://www.properaccess.nl/rapporten/20
 </div>
 {{< /section-cards >}}
 
-{{< section-full title="Eén user story per bevinding" >}}
+{{< section-full title="Waarom je developer snapt waarom het moet worden opgelost" >}}
 
 Agile-ontwikkelteams gebruiken user stories om eindgebruikers centraal te stellen. Wij doen dat in onze auditrapporten nu ook.
 

@@ -21,8 +21,8 @@ banner:
   content: "Uit onderzoek van de ACM blijkt dat het merendeel van de grote Nederlandse webshops niet voldoet aan de toegankelijkheidseisen. De wet geldt nu al. Klanten met een beperking haken af bij je checkout, je filters en je klantenservice — zonder dat je het ziet."
   button:
     enable: true
-    label: "Laat je webshop checken"
-    link: "#offerte"
+    label: "Gratis quickscan — risicorapport binnen 2 werkdagen"
+    link: "/contact/"
 
 trust:
   label: "Ervaring met o.a."
@@ -93,25 +93,25 @@ Chatbots die niet gesloten kunnen worden met toetsenbord, die de hele pagina blo
 {{< /section-cards >}}
 
 
-{{< section-cards title="Hoe het werkt" columns="3" bg="dark" >}}
-{{< section-card title="1. Kennismaking" >}}
+{{< section-cards title="Hoe wij de audit aanpakken" columns="3" bg="dark" >}}
+{{< section-card title="1. We begrijpen je platform en flows" >}}
 
 We bespreken je situatie: welk platform gebruik je? Wat zijn je belangrijkste flows? Welke deadlines heb je? Op basis daarvan geven we een indicatie van de scope en kosten.
 
 {{< /section-card >}}
-{{< section-card title="2. Audit" >}}
+{{< section-card title="2. Handmatige test op alle 55 WCAG-criteria" >}}
 
 We toetsen je webshop handmatig op alle 55 WCAG 2.2 AA-succescriteria. Met meerdere browsers, screenreaders en andere hulpsoftware. Geautomatiseerde tools dekken slechts 20-30% van de problemen.
 
 {{< /section-card >}}
-{{< section-card title="3. Rapport + support" >}}
+{{< section-card title="3. Rapport per element + sessie om het door te nemen" >}}
 
 Je ontvangt een rapport per pagina, per element. Met screenshots, code-voorbeelden en een CSV-export voor je ticketsysteem. We lopen het samen door en beantwoorden al je vragen — zolang als nodig.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-cards title="Waarom webshops voor ons kiezen" columns="2" bg="light" >}}
+{{< section-cards title="Waarom webshops terugkomen" columns="2" bg="light" >}}
 {{< section-card title="Ervaring met de grootste webshops" >}}
 
 We kennen de uitdagingen die specifiek zijn voor e-commerce: checkoutflows, productfilters, betaalproviders, chatwidgets, meertalige content. We weten waar we moeten kijken.
@@ -124,7 +124,7 @@ Bij de meeste bureaus krijg je een rapport en een factuur. Bij ons begint het da
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-full title="Vragen die we vaak krijgen" >}}
+{{< section-full title="Vragen die webshop-eigenaren ons stellen" >}}
 
 <details class="faq-item">
 <summary class="faq-question">Helpt digitale toegankelijkheid ook bij SEO en conversie?</summary>
