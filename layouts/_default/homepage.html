@@ -103,7 +103,7 @@
           WCAG-richtlijnen, met heldere rapportage per element.
         </p>
         <a class="hp-service-card__link" href="/toegankelijkheidsaudit/">
-          Lees meer
+          Lees meer<span class="sr-only"> over de WCAG-audit</span>
           <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
       </div>
@@ -112,13 +112,13 @@
         <div class="hp-service-card__icon">
           <span class="material-symbols-outlined" aria-hidden="true">confirmation_number</span>
         </div>
-        <h3 class="hp-service-card__title">Bel ons met vragen &mdash; wij denken mee per uur</h3>
+        <h3 class="hp-service-card__title">Bel ons met vragen &mdash; wij denken mee</h3>
         <p class="hp-service-card__desc">
           Directe toegang tot onze experts voor ad-hoc vragen en snelle
           reviews wanneer je het nodig hebt.
         </p>
         <a class="hp-service-card__link" href="/contact/">
-          Lees over support
+          Lees over support<span class="sr-only"> via de strippenkaart</span>
           <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
       </div>
@@ -133,7 +133,7 @@
           toegankelijkheidsproblemen. Ideaal als startpunt.
         </p>
         <a class="hp-service-card__link" href="/webshop-quickscan/">
-          Bekijk aanbod
+          Bekijk aanbod<span class="sr-only"> van de quickscan</span>
           <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
       </div>
@@ -148,57 +148,9 @@
           zodat je niet elk jaar een audit nodig hebt.
         </p>
         <a class="hp-service-card__link" href="/training-devteams/">
-          Bekijk aanbod
+          Bekijk aanbod<span class="sr-only"> van workshops en trainingen</span>
           <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
         </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── CONTACT FORM 1 ─── -->
-<section class="hp-contact-section">
-  <div class="hp-container">
-    <div class="hp-contact__grid">
-      <div class="hp-contact__text">
-        <div class="hp-contact__photo-wrapper">
-          {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
-          <img src="/images/phi.jpeg" alt="" class="hp-contact__photo" loading="lazy">
-        </div>
-        <h2 class="hp-heading-lg">Vraag die je nu wilt stellen? Stel 'm</h2>
-        <p class="hp-contact__intro">
-          Kort bericht, kort antwoord &mdash; binnen 1 werkdag.
-        </p>
-      </div>
-      <div class="hp-contact__form-card">
-        <h3 class="hp-heading-md">Direct contact opnemen</h3>
-        <p class="hp-contact__form-sub">Heb je een specifieke vraag? Laat het ons weten.</p>
-        <form
-          id="hp-contact-form-1"
-          class="hp-form"
-          novalidate
-          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-contact', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
-          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-          <div class="hp-form__row">
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="hp-name1">Naam</label>
-              <input class="hp-form__input" id="hp-name1" name="naam" autocomplete="name" required type="text" placeholder="Je naam" />
-            </div>
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="hp-email1">E-mail</label>
-              <input class="hp-form__input" id="hp-email1" name="email" autocomplete="email" required type="email" placeholder="je@email.nl" />
-            </div>
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="hp-message1">Bericht</label>
-            <textarea class="hp-form__input hp-form__textarea" id="hp-message1" name="bericht" required placeholder="Hoe kunnen we je helpen?" rows="4"></textarea>
-          </div>
-          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
-            Verstuur bericht
-          </button>
-          <div role="status" aria-live="polite"></div>
-        </form>
       </div>
     </div>
   </div>
@@ -273,7 +225,7 @@
   <div class="hp-container">
     <div class="hp-insights__header">
       <div class="hp-insights__header-text">
-        <h2 class="hp-heading-lg">Wat we deze week leerden over toegankelijkheid</h2>
+        <h2 class="hp-heading-lg">Wat je moet weten over digitale toegankelijkheid</h2>
         <p class="hp-insights__intro">Blijf op de hoogte van de ontwikkelingen in digitale toegankelijkheid.</p>
       </div>
       <a class="hp-insights__all-link" href="/blog/">Alle artikelen bekijken</a>
