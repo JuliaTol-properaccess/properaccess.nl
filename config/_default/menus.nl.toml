@@ -9,31 +9,31 @@ hasChildren = true
 [[main]]
 parent = "Voor wie"
 name = "Overheid"
-url = "/digitale_toegankelijkheid_overheid"
+url = "/digitale_toegankelijkheid_overheid/"
 weight = 1
 
 [[main]]
 parent = "Voor wie"
 name = "Cultuur"
-url = "/inclusie-cultuur-sport-en-attracties"
+url = "/inclusie-cultuur-sport-en-attracties/"
 weight = 2
 
 [[main]]
 parent = "Voor wie"
 name = "E-commerce"
-url = "/e-commerce-digitale-toegankelijkheid"
+url = "/e-commerce-digitale-toegankelijkheid/"
 weight = 3
 
 [[main]]
 parent = "Voor wie"
 name = "Digital Agency"
-url = "/digital_agency"
+url = "/digital_agency/"
 weight = 4
 
 [[main]]
 parent = "Voor wie"
 name = "Onderwijs"
-url = "/onderwijs-digitale-toegankelijkheid"
+url = "/onderwijs-digitale-toegankelijkheid/"
 weight = 5
 
 [[main]]
@@ -44,73 +44,73 @@ hasChildren = true
 [[main]]
 parent = "Diensten"
 name = "WCAG-audit"
-url = "/toegankelijkheidsaudit"
+url = "/toegankelijkheidsaudit/"
 weight = 1
 
 [[main]]
 parent = "Diensten"
 name = "App-audit"
-url = "/app-toegankelijkheid-testen"
+url = "/app-toegankelijkheid-testen/"
 weight = 2
 
 [[main]]
 parent = "Diensten"
 name = "Quickscan"
-url = "/quickscan-digitale-toegankelijkheid"
+url = "/quickscan-digitale-toegankelijkheid/"
 weight = 3
 
 [[main]]
 parent = "Diensten"
 name = "Strippenkaart"
-url = "/strippenkaart"
+url = "/strippenkaart/"
 weight = 4
 
 [[main]]
 parent = "Diensten"
 name = "Abonnement"
-url = "/toegankelijkheids-abonnement"
+url = "/toegankelijkheids-abonnement/"
 weight = 5
 
 [[main]]
 parent = "Diensten"
 name = "Training devteam"
-url = "/training-devteams"
+url = "/training-devteams/"
 weight = 6
 
 [[main]]
 parent = "Diensten"
 name = "Training webredactie"
-url = "/trainen-van-webredactie"
+url = "/trainen-van-webredactie/"
 weight = 7
 
 [[main]]
 name = "Blog"
-url = "/blog"
+url = "/blog/"
 weight = 4
 
 [[main]]
 name = "Over ons"
-url = "/auditbureau-digitale-toegankelijkheid"
+url = "/auditbureau-digitale-toegankelijkheid/"
 weight = 7
 
 [[main]]
 name = "Contact"
-url = "/contact"
+url = "/contact/"
 weight = 99
 
 
 # footer menu
 [[footer]]
 name = "Algemene voorwaarden"
-url = "/algemene-voorwaarden"
+url = "/algemene-voorwaarden/"
 weight = 1
 
 [[footer]]
 name = "Privacy"
-url = "/privacyverklaring"
+url = "/privacyverklaring/"
 weight = 2
 
 [[footer]]
 name = "Samenwerken"
-url = "/samenwerken-proper-access"
+url = "/samenwerken-proper-access/"
 weight = 3
