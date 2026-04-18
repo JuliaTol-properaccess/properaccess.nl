@@ -4449,6 +4449,121 @@ html.dark .toolsuite-promo__text {
 }
 
 
+/* ─── HOW IT WORKS ─── */
+.hp-how {
+  padding: 6rem 0 5rem;
+  background: #fff;
+}
+
+.hp-how__header {
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.hp-how__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1F2937;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.hp-how__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  counter-reset: hp-how-step;
+}
+
+/* connecting line behind the circles */
+.hp-how__grid::before {
+  content: "";
+  position: absolute;
+  top: 1.75rem;
+  left: 16%;
+  right: 16%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #e5e7eb 0,
+    #e5e7eb 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  z-index: 0;
+}
+
+.hp-how__step {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.hp-how__step-number {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #1F2937;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 24px -12px rgba(31, 41, 55, 0.25);
+}
+
+.hp-how__step-title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1F2937;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hp-how__step-body {
+  font-size: 0.9375rem;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hp-how__cta {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .hp-how__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hp-how__grid::before {
+    display: none;
+  }
+  .hp-how__title {
+    font-size: 1.625rem;
+  }
+}
+
+
 /* ─── DIFFERENTIATORS ─── */
 .hp-diff {
   padding: 6rem 0 5rem;
