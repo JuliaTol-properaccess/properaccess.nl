@@ -12,7 +12,7 @@
         </h1>
         <p class="hp-hero__subtitle">
           Geen dichte PDF van 100 pagina&rsquo;s. Geen lijst vol WCAG-codes waar niemand mee verder komt.
-          Je krijgt een rapport met screenshot, codevoorbeeld, een user story vanuit de bezoeker &eacute;n een concrete oplossing.
+          Je krijgt een rapport met een user story vanuit de bezoeker, een concrete oplossing en &mdash; waar nuttig &mdash; screenshot en codevoorbeeld.
           Zo weet iedereen in je team meteen wat er moet gebeuren: van redacteur tot developer.
         </p>
         <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
@@ -273,6 +273,175 @@
         <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
       </a>
     </div>
+  </div>
+</section>
+
+
+<!-- ─── VALUE PROPS ─── -->
+<section class="hp-vp">
+  <div class="hp-container">
+
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">De kortste route naar een toegankelijk resultaat</h2>
+    </div>
+
+    <!-- VP 1: Het rapport (visual links, tekst rechts) -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-finding" aria-hidden="true">
+          <div class="hp-vp-finding__header">
+            <span class="hp-vp-finding__priority">Prioriteit: hoog</span>
+            <span class="hp-vp-finding__element">Element <code>&lt;button&gt;</code></span>
+          </div>
+          <div class="hp-vp-finding__story">
+            <span class="hp-vp-finding__label">User story</span>
+            <p>
+              &ldquo;Als screenreader-gebruiker hoor ik alleen <em>&lsquo;knop&rsquo;</em>.
+              Ik weet niet wat er gebeurt als ik erop klik.&rdquo;
+            </p>
+          </div>
+          <div class="hp-vp-finding__code">
+            <span class="hp-vp-finding__label">Fix</span>
+            <pre><code>&lt;button aria-label="Lees verder"&gt;
+  &rarr;
+&lt;/button&gt;</code></pre>
+          </div>
+          <div class="hp-vp-finding__export">
+            <span class="hp-vp-finding__export-label">Exporteer</span>
+            <span class="hp-vp-finding__export-btn">Jira</span>
+            <span class="hp-vp-finding__export-btn">GitHub</span>
+            <span class="hp-vp-finding__export-btn">PDF</span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Het rapport</span>
+        <h3 class="hp-vp__title">Een rapport waar je team morgen mee aan de slag kan</h3>
+        <p class="hp-vp__body">
+          Per element, niet per WCAG-criterium. Elke bevinding krijgt een user story en prioriteit &mdash;
+          met screenshot of codevoorbeeld waar nuttig. Plan van aanpak per team, PDF-analyse van
+          bevindingen voor de manager, bevindingen exporteerbaar naar Jira of GitHub.
+        </p>
+        <a href="/toegankelijkheidsaudit/#voorbeeldrapporten" class="hp-btn hp-btn--primary">
+          Bekijk een voorbeeldrapport
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 2: Tijdens de uitvoering (tekst links, visual rechts) -->
+    <div class="hp-vp__row hp-vp__row--reverse">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-chat" aria-hidden="true">
+          <div class="hp-vp-chat__message hp-vp-chat__message--dev">
+            <span class="hp-vp-chat__avatar">JD</span>
+            <div class="hp-vp-chat__bubble">
+              <span class="hp-vp-chat__name">Jan &middot; Developer</span>
+              <p>We lopen vast op deze dropdown. Wat is het alternatief voor <code>aria-expanded</code> hier?</p>
+              <span class="hp-vp-chat__time">14:02</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__message hp-vp-chat__message--auditor">
+            <span class="hp-vp-chat__avatar hp-vp-chat__avatar--auditor">PA</span>
+            <div class="hp-vp-chat__bubble hp-vp-chat__bubble--auditor">
+              <span class="hp-vp-chat__name">Proper Access</span>
+              <p>Goede vraag. Een <code>&lt;details&gt;</code>-element werkt hier native &mdash; minder code, out-of-the-box toegankelijk.</p>
+              <span class="hp-vp-chat__time">14:05</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__typing">
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Tijdens de uitvoering</span>
+        <h3 class="hp-vp__title">Vastgelopen? Je senior auditor is &eacute;&eacute;n berichtje ver</h3>
+        <p class="hp-vp__body">
+          Geen account managers, geen project managers tussen jou en de persoon die het werk doet.
+          Via onze strippenkaart draaien we mee in je sprints &mdash; code reviewen, alternatieven
+          bedenken, vragen beantwoorden. We passen ons aan jullie werkwijze aan.
+        </p>
+        <a href="/contact/" class="hp-btn hp-btn--primary">
+          Plan een kennismaking
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 3: Na de oplevering (visual links, tekst rechts) -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-ba" aria-hidden="true">
+          <div class="hp-vp-ba__column hp-vp-ba__column--before">
+            <span class="hp-vp-ba__label">Voor audit</span>
+            <ul class="hp-vp-ba__list">
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Contrast
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Alt-teksten
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Toetsenbord
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Focus-zichtbaarheid
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Formulierlabels
+              </li>
+            </ul>
+          </div>
+          <div class="hp-vp-ba__column hp-vp-ba__column--after">
+            <span class="hp-vp-ba__label">Na retest</span>
+            <ul class="hp-vp-ba__list">
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Contrast
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Alt-teksten
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Toetsenbord
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Focus-zichtbaarheid
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Formulierlabels
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Na de oplevering</span>
+        <h3 class="hp-vp__title">Van hoofdpijn naar een website of app die aan de wet voldoet, beter scoort en meer bezoekers verwelkomt</h3>
+        <p class="hp-vp__body">
+          Een audit is pas klaar als de issues &eacute;cht opgelost zijn. Daarom is de retest onderdeel
+          van ons proces. We checken hoe je website of app er in zijn geheel voor staat,
+          je kunt EAA- of Wdo-compliance aantoonbaar maken, en het dossier sluit.
+        </p>
+        <a href="/offerte-wcag-onderzoek/" class="hp-btn hp-btn--primary">
+          Vraag een offerte aan
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
