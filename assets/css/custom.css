@@ -2,18 +2,18 @@
 
 /* ─── Navigation CTA button ─── */
 .nav-btn-cta {
-  background: #A30D4B !important;
+  background: #004050 !important;
   color: #fff !important;
-  border-color: #A30D4B !important;
+  border-color: #004050 !important;
   border-radius: 9999px;
   padding: 0.625rem 1.5rem !important;
   font-size: 0.9rem !important;
-  box-shadow: 0 4px 14px rgba(163, 13, 75, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 64, 80, 0.3);
 }
 
 .nav-btn-cta:hover {
   opacity: 0.9;
-  box-shadow: 0 6px 20px rgba(163, 13, 75, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 64, 80, 0.4);
 }
 
 /* ─── Navigation highlight ─── */
@@ -4032,10 +4032,9 @@ html.dark .toolsuite-promo__text {
   color: #A30D4B;
   padding: 0.375rem 1rem;
   border-radius: 9999px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .hp-hero__title {
@@ -4058,7 +4057,7 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-hero__subtitle {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #4B5563;
   line-height: 1.7;
   max-width: 36rem;
@@ -4142,6 +4141,45 @@ html.dark .toolsuite-promo__text {
   width: 1px;
   height: 2.5rem;
   background: #f3f4f6;
+}
+
+/* ─── HERO FUD (inline) ─── */
+.hp-hero__fud {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #4B5563;
+  line-height: 1.5;
+}
+
+/* ─── HERO QUICKSCAN FORM ─── */
+.hp-hero__form-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 20px 40px -15px rgba(31, 41, 55, 0.12);
+}
+
+.hp-hero__form-title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.hp-hero__form-intro {
+  font-size: 0.9rem;
+  color: #4B5563;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.hp-form__optional {
+  font-weight: 400;
+  color: #6B7280;
+  font-size: 0.85em;
 }
 
 

@@ -5,14 +5,15 @@
   <div class="hp-container">
     <div class="hp-hero__grid">
       <div class="hp-hero__text">
-        <span class="hp-hero__badge">950+ audits sinds 2020</span>
+        <span class="hp-hero__badge">900+ audits voor o.a. Rijksmuseum, NRC, Plus en vele andere</span>
         <h1 class="hp-hero__title">
           In 12 weken een website of app die beter converteert,<br>
           <span class="hp-hero__title-accent hp-hero__title-sub">beter scoort &eacute;n voldoet aan de wet.</span>
         </h1>
         <p class="hp-hero__subtitle">
-          We laten je zien welke barri&egrave;res bezoekers tegenkomen &mdash;
-          en hoe je ze snel en effectief wegneemt.
+          Geen dichte PDF van 100 pagina&rsquo;s. Geen lijst vol WCAG-codes waar niemand mee verder komt.
+          Je krijgt een rapport met screenshot, codevoorbeeld, een user story vanuit de bezoeker &eacute;n een concrete oplossing.
+          Zo weet iedereen in je team meteen wat er moet gebeuren: van redacteur tot developer.
         </p>
         <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
           <div class="hp-contrast__check">
@@ -29,34 +30,90 @@
           </div>
         </div>
         <div class="hp-hero__actions">
-          <a href="/toegankelijkheidsaudit/#voorbeeldrapporten" class="hp-btn hp-btn--primary">
-            Bekijk een voorbeeldrapport
+          <a href="/contact/" class="hp-btn hp-btn--primary">
+            Plan een kennismaking
             <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
           </a>
-          <a href="/contact/" class="hp-btn hp-btn--outline">
-            Plan een kennismaking
+          <a href="/toegankelijkheidsaudit/#voorbeeldrapporten" class="hp-btn hp-btn--outline">
+            Bekijk een voorbeeldrapport
           </a>
         </div>
+        <p class="hp-hero__fud">
+          Antwoord binnen 1 werkdag &middot; Direct contact met de senior auditor &middot; 30 min &mdash; geen verplichtingen
+        </p>
       </div>
       <div class="hp-hero__visual">
-        <div class="hp-hero__image-frame">
-          {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Logo's van opdrachtgevers waaronder Rijksmuseum, NRC, Museumvereniging, Jumbo en Plus" "Loading" "eager" "Class" "hp-hero__image") }}
-        </div>
-        <div class="hp-hero__stats-card" aria-label="Statistieken">
-          <div class="hp-hero__stat">
-            <span class="hp-hero__stat-number">900+</span>
-            <span class="hp-hero__stat-label">websites geaudit</span>
-          </div>
-          <div class="hp-hero__stat-divider"></div>
-          <div class="hp-hero__stat">
-            <span class="hp-hero__stat-number">50+</span>
-            <span class="hp-hero__stat-label">apps geaudit</span>
-          </div>
+        <div class="hp-hero__form-card">
+          <h2 class="hp-hero__form-title">Liever eerst weten waar je staat?</h2>
+          <p class="hp-hero__form-intro">
+            Vraag een gratis quickscan aan en ontvang binnen 5 werkdagen een overzicht
+            van de grootste toegankelijkheidsproblemen op je site.
+          </p>
+          <form class="hp-form" id="home-qs-form" novalidate>
+            <input type="hidden" name="_subject" value="Nieuwe quickscan aanvraag (homepage)" />
+            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-url">
+                URL van je website <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="url" id="home-qs-url" name="website_url" required autocomplete="url" placeholder="https://jouwwebsite.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-name">
+                Je naam <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="text" id="home-qs-name" name="naam" required autocomplete="name" placeholder="Voornaam Achternaam" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-email">
+                E-mailadres <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="email" id="home-qs-email" name="email" required autocomplete="email" placeholder="naam@bedrijf.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-tel">
+                Telefoonnummer <span class="hp-form__optional">(optioneel)</span>
+              </label>
+              <input class="hp-form__input" type="tel" id="home-qs-tel" name="telefoon" autocomplete="tel" placeholder="06 12345678" />
+            </div>
+
+            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+              Vraag gratis quickscan aan
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var form = document.getElementById('home-qs-form');
+  if (!form) return;
+  var FORMSPREE_URL = 'https://formspree.io/f/xvzwowrw';
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var original = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Versturen...'; }
+    var data = new FormData(form);
+    fetch(FORMSPREE_URL, {
+      method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) { window.location.href = '/webshop-quickscan-bedankt/'; }
+      else { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
+    }).catch(function() {
+      if (btn) { btn.disabled = false; btn.innerHTML = original; }
+    });
+  });
+})();
+</script>
 
 
 <!-- ─── TRUST BAR ─── -->
@@ -65,12 +122,13 @@
     <p class="hp-trust__label">Vertrouwd door</p>
     <div class="hp-trust__names">
       <span>Jumbo</span>
-      <span>Rijksmuseum</span>
-      <span>Prov. Noord-Holland</span>
-      <span>NRC</span>
+      <span>Van Gogh Museum</span>
+      <span>De Rechtspraak</span>
+      <span>Q42</span>
+      <span>Onderzoeksraad</span>
+      <span>Provincie Noord-Holland</span>
       <span>Museumvereniging</span>
-      <span>Plus</span>
-      <span>Prov. Zuid-Holland</span>
+      <span>ReadSpeaker</span>
     </div>
   </div>
 </section>
