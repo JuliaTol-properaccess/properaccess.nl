@@ -5,4 +5,5 @@ description: "Gratis handmatige quickscan van jouw website door een IAAP-gecerti
 type: quickscan
 aliases:
   - /quickscan-digitale-toegankelijkheid/
+  - /quickscan/
 ---
