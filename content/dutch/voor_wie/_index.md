@@ -29,6 +29,11 @@ Een toegankelijke site werkt probleemloos op alle apparaten en biedt álle klant
 We testen digitale toegankelijkheid tijdens de bouw van een website en draaien met je team mee in sprints. We maken user stories op basis van verschillende beperkingen en dragen oplossignen bij. Zo zorgen we samen voor een toegankelijk resultaat waar we trots op zijn!
 
 
+## Onderwijs
+
+Kunnen al je studenten bij de lesstof? Van LMS-platformen tot e-learning modules — we toetsen digitale leeromgevingen op toegankelijkheid, zodat iedere student zelfstandig kan leren. [Lees meer over toegankelijkheid in het onderwijs](/onderwijs-digitale-toegankelijkheid/).
+
+
 # Digitale toegankelijkheid
 
 Wij ondersteunen bedrijven en organisaties die digitale toegankelijkheid willen begrijpen én verbeteren.

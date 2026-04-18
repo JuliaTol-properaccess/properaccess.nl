@@ -37,6 +37,8 @@ faqs:
     answer: "Ja. We controleren video's op ondertiteling, audiodescriptie en toegankelijke mediaspelers. Digitale collecties beoordelen we op zoekfunctionaliteit, toetsenbordnavigatie en beschrijvende alt-teksten."
   - question: "Is het mogelijk om te verbeteren zonder een volledig redesign?"
     answer: "Bijna altijd. De meeste problemen zijn op te lossen met gerichte aanpassingen: labels toevoegen, contrast verhogen, alt-teksten schrijven, toetsenbordnavigatie repareren. Een volledig redesign is zelden nodig."
+  - question: "Kan ik zelf testen hoe toegankelijk onze museum-website is?"
+    answer: "Ja. We hebben een [gratis accessibility quiz voor musea](/tools/quiz-museum/) waarmee je je kennis over toegankelijkheid kunt toetsen. Wil je direct inzicht in je eigen site? Vraag dan een [quickscan](/quickscan-digitale-toegankelijkheid/) aan."
   - question: "Helpen jullie ook bij het schrijven van toegankelijkheidsbeleid?"
     answer: "Ja. We hebben een [online tool](/tools/toegankelijkheidsverklaring-wdo/) om je te helpen een toegankelijkheidsverklaring (verplicht) op te stellen en kunnen meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen."
   - question: "Wie doet het werk?"

@@ -89,43 +89,6 @@ url = "/blog"
 weight = 4
 
 [[main]]
-name = "Tools"
-url = "/tools"
-weight = 5
-hasChildren = true
-
-[[main]]
-parent = "Tools"
-name = "Alle tools"
-url = "/tools"
-weight = 1
-
-[[main]]
-parent = "Tools"
-name = "Quiz: Developers"
-url = "/tools/quiz-developers"
-weight = 2
-
-[[main]]
-parent = "Tools"
-name = "Quiz: Webredactie"
-url = "/tools/quiz-webredactie"
-weight = 3
-
-[[main]]
-parent = "Tools"
-name = "Quiz: Musea"
-url = "/tools/quiz-museum"
-weight = 4
-
-[[main]]
-name = "Academy"
-url = "/academy"
-weight = 6
-[main.params]
-  highlight = true
-
-[[main]]
 name = "Over ons"
 url = "/auditbureau-digitale-toegankelijkheid"
 weight = 7
