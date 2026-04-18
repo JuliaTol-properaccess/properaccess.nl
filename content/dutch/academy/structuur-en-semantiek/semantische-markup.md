@@ -119,11 +119,8 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 ## Verder lezen
 
 - [Wat betekent WCAG 1.3.1?](/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/) — de achtergrond van dit criterium
-- [Veelgemaakte fouten bij SC 1.3.1](/blog/veelgemaakte-fouten-sc-1-3-1-informatie-en-relaties/) — koppen en lijsten die niet zijn wat ze lijken
 - [Kopniveaus](/blog/sc-1-3-1-kopniveaus/) — wanneer een overgeslagen kopniveau een probleem is
 - [Tabellen](/blog/sc-1-3-1-tabellen/) — wanneer een tabel geen tabel is
-- [Labels](/blog/sc-1-3-1-labels/) — formuliervelden zonder gekoppeld label
-- [Fieldset en legend](/blog/sc-1-3-1-fieldset-legend/) — groepering van gerelateerde velden
 
 ---
 

@@ -32,7 +32,7 @@ seo_keywords:
 
 Dit is een vraag die bijna elke webshop-eigenaar mij stelt in het eerste gesprek: _wat gaat dit me kosten?_ En het is een vraag die bijna geen auditbureau beantwoordt op zijn site. Je krijgt zinnen als "neem contact op voor een offerte" of "afhankelijk van uw situatie". Soms krijg je achteraf een offerte van € 8.000 voor iets waar een ander bureau € 2.100 voor rekent, en je hebt geen idee hoe dat verschil ontstaat.
 
-Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/eaa-voor-mijn-webshop/). Onderaan vind je de andere artikelen.
+Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-voor-mijn-webshop/). Onderaan vind je de andere artikelen.
 
 ## Korte antwoord
 
@@ -129,7 +129,7 @@ In de praktijk:
 - Een overlay maakt je site soms zelfs slechter bedienbaar voor screenreader-gebruikers.
 - Je hebt geen rapport en dus geen aanwijsbare verbetering en geen juridische dekking.
 
-We schrijven hier een apart artikel over: [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway/). De korte versie: een audit kost meer vooraf, maar helpt je probleem werkelijk op te lossen.
+We schrijven hier een apart artikel over: [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/). De korte versie: een audit kost meer vooraf, maar helpt je probleem werkelijk op te lossen.
 
 ## Hoe lang duurt een audit?
 
@@ -175,8 +175,6 @@ Wil je een concrete prijs voor jouw webshop? [Vraag een gratis quickscan aan](ht
 
 ## Meer in deze serie
 
-- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/eaa-voor-mijn-webshop/)
-- [Toegankelijke checkout — de complete gids voor webshops](/blog/toegankelijke-checkout-eaa/)
-- [Shopify WCAG-compliant maken in 12 stappen](/blog/shopify-wcag-compliant-maken/)
+- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [EAA-checklist 2026 voor webshops](/blog/eaa-checklist-2026-webshops/)
-- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway/)
+- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/)

@@ -237,10 +237,6 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 | **1.3.1** Informatie en relaties | A | Landmarks maken de pagina-indeling programmatisch bepaalbaar |
 | **4.1.2** Naam, Rol, Waarde | A | Landmarks met een label (aria-label) hebben een toegankelijke naam |
 
-## Verder lezen
-
-- [Veelgemaakte fouten bij SC 2.4.3](/blog/veelgemaakte-fouten-sc-2-4-3-focusvolgorde/) -- focusvolgorde en de relatie met landmarks
-
 ---
 
 ## Quiz

@@ -36,7 +36,7 @@ Het klinkt te mooi om waar te zijn, en dat is het ook. In januari 2025 oordeelde
 
 In dit artikel leg ik uit waarom overlay-tools niet doen wat ze beloven, wat het onderzoek erover zegt, waarom ze soms zelfs averechts werken voor de groep die ze claimen te helpen, en wat je in plaats daarvan zou moeten doen. Ik probeer het feitelijk en zonder cynisme te brengen, maar het is geen geheim dat ik in deze discussie een mening heb.
 
-Dit artikel is onderdeel van onze serie [E-commerce en de EAA](/blog/eaa-voor-mijn-webshop/).
+Dit artikel is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-voor-mijn-webshop/).
 
 ## Wat is een overlay-tool?
 
@@ -204,8 +204,6 @@ Wil je weten wat een echte audit voor jouw webshop oplevert? Bel **085 5055 890*
 
 ## Meer in deze serie
 
-- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/eaa-voor-mijn-webshop/)
+- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [Wat kost een WCAG-audit voor een webshop?](/blog/wat-kost-wcag-audit-webshop/)
 - [EAA-checklist 2026 voor webshops](/blog/eaa-checklist-2026-webshops/)
-- [Toegankelijke checkout — de complete gids](/blog/toegankelijke-checkout-eaa/)
-- [Shopify WCAG-compliant maken in 12 stappen](/blog/shopify-wcag-compliant-maken/)

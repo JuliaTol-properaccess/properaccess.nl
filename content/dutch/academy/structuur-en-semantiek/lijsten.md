@@ -198,10 +198,6 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 | **1.3.1** Informatie en relaties | A | Lijsten moeten programmatisch bepaalbaar zijn met het juiste HTML-element |
 | **4.1.1** Parsen (WCAG 2.1) | A | Geneste lijsten moeten valide HTML zijn |
 
-## Verder lezen
-
-- [Veelgemaakte fouten bij SC 1.3.1](/blog/veelgemaakte-fouten-sc-1-3-1-informatie-en-relaties/) -- lijsten die niet zijn wat ze lijken
-
 ---
 
 ## Quiz

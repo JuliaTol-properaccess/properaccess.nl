@@ -51,7 +51,7 @@ Pak een Google Doc, vink af wat je weet, zet vraagtekens bij wat je niet weet, e
 
 ### 1. Bepaal of de EAA op jou van toepassing is
 
-De wet geldt niet als je webshop een micro-onderneming is: **minder dan 10 FTE én minder dan € 2 miljoen jaaromzet**. Beide voorwaarden moeten gelden, anders val je er gewoon onder. Twijfel je? Lees [Geldt de EAA voor mijn webshop](/blog/eaa-voor-mijn-webshop/).
+De wet geldt niet als je webshop een micro-onderneming is: **minder dan 10 FTE én minder dan € 2 miljoen jaaromzet**. Beide voorwaarden moeten gelden, anders val je er gewoon onder. Twijfel je? Lees [Geldt de EAA voor mijn webshop](/blog/geldt-de-eaa-voor-mijn-webshop/).
 
 ### 2. Bepaal welke onderdelen van je site onder de wet vallen
 
@@ -199,7 +199,7 @@ _WCAG: 4.1.3 Statusberichten_
 
 ### 27. PDF facturen, handleidingen en retourformulieren zijn toegankelijk
 
-Een PDF die een gescande afbeelding is, of een PDF zonder codes, is voor een screenreader een baksteen. Genereer PDF's met de juiste tags (titel, koppen, leesvolgorde) of bied minimaal een HTML-alternatief op je site. Zie ook ons artikel [over toegankelijke PDF's](/blog/welke-ai-kan-pdf-documenten-digitaal-toegankelijk-maken/).
+Een PDF die een gescande afbeelding is, of een PDF zonder codes, is voor een screenreader een baksteen. Genereer PDF's met de juiste tags (titel, koppen, leesvolgorde) of bied minimaal een HTML-alternatief op je site.
 
 _WCAG: 1.1.1 Niet-tekstuele content, 1.3.1 Info en relaties_
 
@@ -226,8 +226,6 @@ Wil je weten waar jouw webshop staat? [Vraag een gratis quickscan aan](https://p
 
 ## Meer in deze serie
 
-- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/eaa-voor-mijn-webshop/)
+- [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [Wat kost een WCAG-audit voor een webshop?](/blog/wat-kost-wcag-audit-webshop/)
-- [Toegankelijke checkout — de complete gids](/blog/toegankelijke-checkout-eaa/)
-- [Shopify WCAG-compliant maken in 12 stappen](/blog/shopify-wcag-compliant-maken/)
-- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway/)
+- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/)

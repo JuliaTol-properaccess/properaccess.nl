@@ -125,7 +125,6 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 ## Verder lezen
 
 - [SC 2.4.2: Paginatitel ontbreekt](/blog/sc-2-4-2-paginatitel-ontbreekt/) -- wat er misgaat als de titel ontbreekt
-- [Veelgemaakte fouten bij SC 2.4.2](/blog/veelgemaakte-fouten-sc-2-4-2-paginatitel/) -- de meest voorkomende problemen met paginatitels
 
 ---
 
