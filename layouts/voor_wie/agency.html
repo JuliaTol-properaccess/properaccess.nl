@@ -56,13 +56,401 @@
 </section>
 {{ end }}
 
-<!-- ─── CONTENT ─── -->
+
+<!-- ─── PAIN POINT / AGENCY ─── -->
+<section class="hp-pain">
+  <div class="hp-container">
+    <div class="hp-pain__grid">
+      <div class="hp-pain__text">
+        <h2 class="hp-pain__title">
+          De EAA verplicht WCAG &mdash;
+          <span class="hp-pain__title-accent">en jouw <span class="hp-pain__title-highlight">klanten</span> kijken naar jou</span>
+        </h2>
+        <p class="hp-pain__body">
+          Sinds 28 juni 2025 is de European Accessibility Act van kracht. Je klanten &mdash;
+          webshops, overheidsinstellingen, culturele instellingen &mdash; moeten hun websites en
+          apps laten voldoen aan WCAG 2.2 niveau AA. Zij verwachten dat jij dit regelt.
+        </p>
+        <p class="hp-pain__body">
+          Maar toegankelijkheid is niet <em>&ldquo;even een plugin installeren&rdquo;</em>. Het
+          vraagt kennis van semantische HTML, ARIA, toetsenbordnavigatie, schermlezers,
+          kleurcontrast en formuliervalidatie. En laten we eerlijk zijn: jouw developers hebben
+          al een volle sprint.
+        </p>
+        <div class="hp-pain__cta">
+          <a href="/contact/" class="hp-btn hp-btn--primary">
+            Stel je vraag &mdash; we denken mee
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hp-pain__visuals">
+        <div class="hp-pain-card hp-pain-card--summary">
+          <span class="hp-pain-card__eyebrow">
+            <span class="material-symbols-outlined" aria-hidden="true">warning</span>
+            Wat er op je afkomt
+          </span>
+          <h3 class="hp-pain-card__title">Waarom agencies nu aan zet zijn</h3>
+          <ul class="hp-pain-card__list">
+            <li><strong>25%</strong> van websitebezoekers heeft een vorm van beperking &mdash; permanent, tijdelijk of situationeel.</li>
+            <li><strong>Boetes tot &euro;&nbsp;900.000</strong> voor je klant bij non-compliance.</li>
+            <li><strong>Reputatieschade</strong> als er klachten komen &mdash; bij je klant én bij jou.</li>
+            <li><strong>De klant kijkt naar jou</strong> als er een brief van de ACM binnenvalt.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── VALUE PROPS ─── -->
+<section class="hp-vp">
+  <div class="hp-container">
+
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">Hoe we samenwerken met agencies</h2>
+    </div>
+
+    <!-- VP 1: Audits tijdens de bouw -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-finding" aria-hidden="true">
+          <div class="hp-vp-finding__header">
+            <span class="hp-vp-finding__priority">Sprint 14 &middot; Quickscan</span>
+            <span class="hp-vp-finding__element">Component <code>&lt;Navbar /&gt;</code></span>
+          </div>
+          <div class="hp-vp-finding__story">
+            <span class="hp-vp-finding__label">Reviewer-note</span>
+            <p>
+              Dropdown opent wel met muis, maar krijgt geen focus bij Tab. <em>aria-expanded</em>
+              ontbreekt op de trigger-button.
+            </p>
+          </div>
+          <div class="hp-vp-finding__code">
+            <span class="hp-vp-finding__label">Suggested fix</span>
+            <pre><code>&lt;button
+  aria-expanded={isOpen}
+  aria-controls="menu"
+  onClick={toggle}&gt;</code></pre>
+          </div>
+          <div class="hp-vp-finding__export">
+            <span class="hp-vp-finding__export-label">Toegevoegd aan</span>
+            <span class="hp-vp-finding__export-btn">Jira</span>
+            <span class="hp-vp-finding__export-btn">PR-comment</span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">In sprints</span>
+        <h3 class="hp-vp__title">Audits tijdens de bouw &mdash; niet alleen bij oplevering</h3>
+        <p class="hp-vp__body">
+          Tussentijdse quickscans in je sprints vangen problemen op voordat ze kostbaar worden.
+          Componentniveau-feedback, direct bruikbaar in Jira of als PR-comment. Je team krijgt
+          concrete suggesties terug, geen WCAG-uitleg.
+        </p>
+        <a href="/toegankelijkheid-testen-tijdens-de-bouw/" class="hp-btn hp-btn--primary">
+          Meer over testen tijdens de bouw
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 2: Framework-kennis -->
+    <div class="hp-vp__row hp-vp__row--reverse">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-methods" aria-hidden="true">
+          <span class="hp-vp-methods__label">We kennen je stack:</span>
+          <ul class="hp-vp-methods__list">
+            <li><span class="material-symbols-outlined" aria-hidden="true">code</span> React &amp; Next.js</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">code</span> Vue &amp; Nuxt</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">code</span> Svelte &amp; Angular</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">widgets</span> WordPress</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">widgets</span> Drupal</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">storefront</span> Shopify &amp; Magento</li>
+          </ul>
+          <p class="hp-vp-methods__footer">We geven oplossingen die passen bij jullie stack, geen generieke WCAG-uitleg.</p>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Framework-kennis</span>
+        <h3 class="hp-vp__title">We kennen React, Vue, WordPress &mdash; en waar toegankelijkheid daar misgaat</h3>
+        <p class="hp-vp__body">
+          Je developer twijfelt over de beste manier om een dropdown in React toegankelijk te maken?
+          NextJS-navigatie schermlezervriendelijk houden? Vue-modals correct labelen? We kijken mee,
+          delen code-snippets en leggen uit waarom bepaalde keuzes beter werken &mdash; in de
+          frameworks die jullie gebruiken.
+        </p>
+        <a href="/toegankelijkheidsaudit/#voorbeeldrapporten" class="hp-btn hp-btn--primary">
+          Bekijk een voorbeeldrapport
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 3: Training + onbeperkte support -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-chat" aria-hidden="true">
+          <div class="hp-vp-chat__message hp-vp-chat__message--dev">
+            <span class="hp-vp-chat__avatar">AG</span>
+            <div class="hp-vp-chat__bubble">
+              <span class="hp-vp-chat__name">Agency &middot; Dev</span>
+              <p>Snelle check: mag <code>role="dialog"</code> op een full-page takeover of is <code>aria-modal</code> noodzakelijk?</p>
+              <span class="hp-vp-chat__time">11:20</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__message hp-vp-chat__message--auditor">
+            <span class="hp-vp-chat__avatar hp-vp-chat__avatar--auditor">PA</span>
+            <div class="hp-vp-chat__bubble hp-vp-chat__bubble--auditor">
+              <span class="hp-vp-chat__name">Proper Access</span>
+              <p>Beide samen, plus focus-trap + <code>Escape</code>-afhandeling. Ik stuur een snippet met <code>@floating-ui</code>.</p>
+              <span class="hp-vp-chat__time">11:22</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__typing">
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Kennis borgen</span>
+        <h3 class="hp-vp__title">Kennis bij je team &mdash; niet alleen bij ons</h3>
+        <p class="hp-vp__body">
+          Praktische workshops voor developers, designers en contentteams &mdash; gericht op jullie
+          stack. Hands-on, met code-voorbeelden. Plus onbeperkt vragen stellen tijdens implementatie:
+          een korte vraag via e-mail, chat of bellen &mdash; dat zit bij de audit inbegrepen.
+        </p>
+        <a href="/contact/" class="hp-btn hp-btn--primary">
+          Plan een kennismaking
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── AGENCY-SITUATIES (4 cards) ─── -->
+<section class="hp-diff ec-issues">
+  <div class="hp-container">
+
+    <div class="hp-diff__header">
+      <h2 class="hp-diff__title">Herkenbaar? Dit zien we bij agency-projecten</h2>
+    </div>
+
+    <div class="hp-diff__grid ec-issues__grid">
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">description</span>
+        <h3 class="hp-diff__card-title">De klant vraagt om een toegankelijkheidsverklaring</h3>
+        <p class="hp-diff__card-body">
+          Maar jullie hebben geen audit. Je kunt niet zomaar een verklaring opstellen &mdash;
+          je moet eerst weten waar je staat. Een audit geeft je de feiten, en daarmee een
+          realistische planning.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">rule</span>
+        <h3 class="hp-diff__card-title">Best practices gevolgd &mdash; maar dat blijkt niet genoeg</h3>
+        <p class="hp-diff__card-body">
+          Alt-teksten toegevoegd, koppen gebruikt, contrast gecheckt in Figma. Maar bij een test
+          met een schermlezer blijkt de navigatie niet logisch, formulieren geven geen feedback,
+          en modals zijn niet toegankelijk met het toetsenbord.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">feedback</span>
+        <h3 class="hp-diff__card-title">De klant krijgt klachten van bezoekers</h3>
+        <p class="hp-diff__card-body">
+          Iemand kan het winkelmandje niet bereiken met een schermlezer. Een andere bezoeker
+          ziet knoppen niet door te weinig contrast. De klant belt: <em>&ldquo;Dit moet snel
+          opgelost worden.&rdquo;</em>
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">block</span>
+        <h3 class="hp-diff__card-title">De developer zegt: "Dat kan niet in dit framework"</h3>
+        <p class="hp-diff__card-body">
+          Meestal kan het wél &mdash; als je weet hoe. React-componenten toegankelijk maken?
+          NextJS-navigatie schermlezervriendelijk? Vue-modals correct labelen? Wij kennen de
+          kortste routes.
+        </p>
+      </div>
+    </div>
+
+    <div class="hp-diff__cta">
+      <a href="/contact/" class="hp-btn hp-btn--primary">
+        Stel je vraag &mdash; we denken mee
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="hp-how">
+  <div class="hp-container">
+
+    <div class="hp-how__header">
+      <h2 class="hp-how__title">
+        Van sprint-review tot oplevering &mdash; in 3 stappen
+      </h2>
+    </div>
+
+    <ol class="hp-how__grid">
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">1</span>
+        <h3 class="hp-how__step-title">Kennismaking + scope</h3>
+        <p class="hp-how__step-body">
+          We bespreken het project: welke frameworks, welke deadlines, welke pagina's cruciaal.
+          Offerte binnen 2 werkdagen &mdash; of directe vragen beantwoord via de strippenkaart
+          voor agile teams.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">2</span>
+        <h3 class="hp-how__step-title">Audit of sprint-review</h3>
+        <p class="hp-how__step-body">
+          Volledige audit voor oplevering, of tussentijdse quickscans tijdens de bouw.
+          Handmatige test, zes-ogen-controle, met NVDA, JAWS, VoiceOver en TalkBack &mdash;
+          en met toetsenbord op meerdere browsers.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">3</span>
+        <h3 class="hp-how__step-title">Rapport + support tijdens fix</h3>
+        <p class="hp-how__step-body">
+          Rapport per component, per user story, met codevoorbeelden in jullie framework.
+          Tijdens de implementatie staan we klaar voor vragen &mdash; onbeperkt, zonder meerprijs.
+          Na de fixes doen we de retest.
+        </p>
+      </li>
+    </ol>
+
+    <div class="hp-how__cta">
+      <a href="/contact/" class="hp-btn hp-btn--primary">
+        Stel je vraag &mdash; we denken mee
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── SOCIAL PROOF ─── -->
+<section class="hp-proof">
+  <div class="hp-container">
+    <div class="hp-proof__header">
+      <h2 class="hp-proof__title">Agencies die ons vertrouwen</h2>
+      <p class="hp-proof__intro">
+        Van designbureaus tot full-service agencies &mdash; we werken mee in jullie sprints,
+        niet alleen bij oplevering.
+      </p>
+    </div>
+
+    <div class="hp-proof__grid">
+      <div class="hp-proof__card hp-proof__card--stats">
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">950+</span>
+          <span class="hp-proof__stat-label">audits van websites</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">50+</span>
+          <span class="hp-proof__stat-label">audits van apps</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">53</span>
+          <span class="hp-proof__stat-label">organisaties</span>
+          <span class="hp-proof__stat-sub">Eidra &middot; Fabrique &middot; Q42 &middot; Wirelab</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">1 op de 3</span>
+          <span class="hp-proof__stat-label">klanten komt terug voor een tweede audit</span>
+        </div>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--case">
+        <h3 class="hp-proof__case-title">Tussentijdse quickscans over 12 sprints</h3>
+        <p class="hp-proof__case-body">Meedraaien in de sprint, niet alleen bij oplevering:</p>
+        <ul class="hp-proof__case-list">
+          <li>Sprint-review op componentniveau</li>
+          <li>PR-comments &amp; Jira-tickets</li>
+          <li>Code-snippets in jullie stack</li>
+          <li>Eindaudit zonder verrassingen</li>
+        </ul>
+        <p class="hp-proof__case-plus">
+          Plus <strong>onbeperkte vragen</strong> tijdens implementatie &mdash; zonder meerprijs.
+        </p>
+        <p class="hp-proof__case-result">
+          <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span><strong>Resultaat:</strong> oplevering zonder herbouw-tickets.</span>
+        </p>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--quote">
+        <span class="material-symbols-outlined hp-proof__quote-icon" aria-hidden="true">format_quote</span>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            Jullie rapport gebruiken we als basis voor onze interne review.
+            Dat scheelt ons uren per week.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Tech Lead, digital agency
+          </footer>
+        </blockquote>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            De framework-specifieke adviezen zijn goud waard. Geen generieke WCAG-uitleg,
+            maar concrete suggesties in onze stack.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Senior Developer, agency
+          </footer>
+        </blockquote>
+        <p class="hp-proof__quote-note">Uit respect voor de privacy laten we de namen van onze klanten weg.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── CONTENT (eventueel residu) ─── -->
 <article class="offerte-content">
   {{ .Content }}
 </article>
 
-<!-- ─── STATS ─── -->
-{{ partial "voor-wie/stats-bar.html" . }}
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Vragen die we vaak krijgen van agencies</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 
 <!-- ─── CTA ─── -->
 {{ partial "call-to-action.html" . }}
