@@ -8,13 +8,13 @@
 
       {{/* Filters alleen renderen als er minstens 2 categorieën zijn */}}
       {{ if ge (len site.Taxonomies.categories) 2 }}
-        {{ partial "blog-filters.html" (dict "activeSlug" "wcag-uitgelegd" "Context" .) }}
+        {{ partial "blog-filters.html" (dict "activeSlug" "achtergrond_wcag" "Context" .) }}
       {{ end }}
 
-      {{/* NL: alleen wcag-uitgelegd posts tonen. EN: alle posts (te weinig om te filteren). */}}
+      {{/* NL: alleen achtergrond_wcag posts tonen. EN: alle posts (te weinig om te filteren). */}}
       {{ $posts := .RegularPages }}
       {{ if eq .Lang "nl" }}
-        {{ $posts = where $posts "Params.categories" "intersect" (slice "wcag-uitgelegd") }}
+        {{ $posts = where $posts "Params.categories" "intersect" (slice "achtergrond_wcag") }}
       {{ end }}
       {{ $paginator := .Paginate $posts }}
 

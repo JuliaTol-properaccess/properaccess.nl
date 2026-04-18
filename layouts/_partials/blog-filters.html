@@ -1,12 +1,12 @@
 {{/*
   Blog category filter buttons.
   Parameters:
-    - activeSlug: slug of currently-active category (e.g. "wcag-uitgelegd")
+    - activeSlug: slug of currently-active category (e.g. "achtergrond_wcag")
     - Context: the page context (for site lookups and relLangURL)
 */}}
 {{ $active := .activeSlug }}
 {{ $ctx := .Context }}
-{{ $order := slice "wcag-uitgelegd" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" "achtergrond_wcag" }}
+{{ $order := slice "achtergrond_wcag" "wcag-uitgelegd" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" }}
 
 <nav class="blog-filter" aria-label="{{ T "blog_filter_label" }}">
   {{ range $slug := $order }}
@@ -14,7 +14,7 @@
     {{ if $catPage }}
       {{ $count := len $catPage.Pages }}
       {{ if gt $count 0 }}
-        {{ $href := cond (eq $slug "wcag-uitgelegd") ("blog/" | relLangURL) $catPage.RelPermalink }}
+        {{ $href := cond (eq $slug "achtergrond_wcag") ("blog/" | relLangURL) $catPage.RelPermalink }}
         <a
           href="{{ $href }}"
           class="blog-filter__btn{{ if eq $slug $active }} blog-filter__btn--active{{ end }}"
