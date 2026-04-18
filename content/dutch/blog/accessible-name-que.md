@@ -69,4 +69,4 @@ De eerste die een waarde oplevert, wint. Dat betekent: als je `aria-label` toevo
       </p>
       <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-Wil je meer weten over de accessible name en hoe je het test? Op onze pagina over [SC 4.1.2 Naam, rol, waarde](/sc-4-1-2-wat-betekent-naam-rol-waarde/) vind je een uitgebreide uitleg.
+Wil je meer weten over de accessible name en hoe je het test? Op onze pagina over [SC 4.1.2 Naam, rol, waarde](/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/) vind je een uitgebreide uitleg.

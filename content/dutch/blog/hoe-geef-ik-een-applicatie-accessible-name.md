@@ -62,4 +62,4 @@ Gebruik `aria-label` alleen als er geen zichtbare tekst beschikbaar is om naar t
 - Heb je gecontroleerd in de accessibility tree (DevTools) dat de naam correct wordt weergegeven?
 - Heb je getest of alle toetsenbordfuncties binnen de application werken zoals verwacht?
 
-Wil je leren hoe je dit soort problemen zelf opspoort? Op onze pagina over [SC 4.1.2 Naam, rol, waarde](/sc-4-1-2-wat-betekent-naam-rol-waarde/) lees je meer over accessible names en hoe je ze test.
+Wil je leren hoe je dit soort problemen zelf opspoort? Op onze pagina over [SC 4.1.2 Naam, rol, waarde](/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/) lees je meer over accessible names en hoe je ze test.

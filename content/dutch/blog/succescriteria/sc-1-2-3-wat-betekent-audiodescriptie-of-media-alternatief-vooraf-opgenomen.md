@@ -25,7 +25,7 @@ Let op: er zijn twee succescriteria over audiobeschrijving.
 
 - 1.2.3 (niveau A) geeft je de keuze tussen audiobeschrijving of een transcript.
 
-- [1.2.5](https://properaccess.nl/sc-1-2-5-wat-betekent-audiodescriptie/) (niveau AA) verplicht je om een audiobeschrijving toe te voegen.
+- [1.2.5](/blog/sc-1-2-5-wat-betekent-audiodescriptie/) (niveau AA) verplicht je om een audiobeschrijving toe te voegen.
 
 Voor welke optie je gaat, hangt dus onder andere af van het niveau dat je nastreeft: A of AA.
 

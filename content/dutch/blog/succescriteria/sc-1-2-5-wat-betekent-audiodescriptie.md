@@ -24,7 +24,7 @@ Video's die vooraf zijn opgenomen moeten een audiobeschrijving hebben voor de vi
 
 Let op: er zijn twee succescriteria over audiobeschrijving.
 
-- [1.2.3](https://properaccess.nl/sc-1-2-3-wat-betekent-audiodescriptie-of-media-alternatief-vooraf-opgenomen/) (niveau A) geeft je de keuze tussen audiobeschrijving of een transcript.
+- [1.2.3](/blog/sc-1-2-3-wat-betekent-audiodescriptie-of-media-alternatief-vooraf-opgenomen/) (niveau A) geeft je de keuze tussen audiobeschrijving of een transcript.
 
 - 1.2.5 (niveau AA) verplicht je om een audiobeschrijving toe te voegen.
 

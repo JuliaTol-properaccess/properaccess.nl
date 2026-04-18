@@ -43,4 +43,4 @@ De tweede optie: stuur mij een link naar je pagina, dan kijk ik graag mee of de 
 
 Er is meer te vertellen over koppen, maar dat doe ik in een later artikel.
 
-Wat je ook over toegankelijke kopteksten wil weten is de volgorde van content. Lees artikel over [SC 1.3.2](https://properaccess.nl/wcag_wiki/sc-1-3-2-betekenisvolle-volgorde-2/) voor meer informatie.
+Wat je ook over toegankelijke kopteksten wil weten is de volgorde van content. Lees artikel over [SC 1.3.2](/blog/sc-1-3-2-wat-betekent-betekenisvolle-volgorde/) voor meer informatie.
