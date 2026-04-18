@@ -159,6 +159,32 @@
 
     <!-- VP 2: Framework-kennis -->
     <div class="hp-vp__row hp-vp__row--reverse">
+      {{ with .Params.vp_framework }}
+      <div class="hp-vp__visual">
+        <div class="hp-vp-methods" aria-hidden="true">
+          <span class="hp-vp-methods__label">{{ .label | default "We kennen je stack:" }}</span>
+          <ul class="hp-vp-methods__list">
+            {{ range .items }}
+            <li><span class="material-symbols-outlined" aria-hidden="true">{{ .icon }}</span> {{ .name | safeHTML }}</li>
+            {{ end }}
+          </ul>
+          <p class="hp-vp-methods__footer">{{ .footer | default "We geven oplossingen die passen bij jullie stack, geen generieke WCAG-uitleg." }}</p>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">{{ .eyebrow | default "Framework-kennis" }}</span>
+        <h3 class="hp-vp__title">{{ .title | safeHTML }}</h3>
+        <p class="hp-vp__body">
+          {{ .body | safeHTML }}
+        </p>
+        {{ with .button }}
+        <a href="{{ .link }}" class="hp-btn hp-btn--primary">
+          {{ .label }}
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+        {{ end }}
+      </div>
+      {{ else }}
       <div class="hp-vp__visual">
         <div class="hp-vp-methods" aria-hidden="true">
           <span class="hp-vp-methods__label">We kennen je stack:</span>
@@ -187,6 +213,7 @@
           <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
         </a>
       </div>
+      {{ end }}
     </div>
 
     <!-- VP 3: Training + onbeperkte support -->

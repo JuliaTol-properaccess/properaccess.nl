@@ -38,6 +38,33 @@ trust:
     - "WordPress"
     - "Articulate"
     - "Class"
+
+vp_framework:
+  label: "We kennen je LMS:"
+  items:
+    - icon: "school"
+      name: "Moodle"
+    - icon: "school"
+      name: "Canvas"
+    - icon: "school"
+      name: "Blackboard"
+    - icon: "play_circle"
+      name: "Articulate"
+    - icon: "cast_for_education"
+      name: "Class"
+    - icon: "widgets"
+      name: "WordPress"
+  footer: "We geven oplossingen die passen bij jullie platform, geen generieke WCAG-uitleg."
+  eyebrow: "Platform-kennis"
+  title: "We kennen Moodle, Articulate, Class &mdash; en waar toegankelijkheid daar misgaat"
+  body: >
+    Je ontwikkelaar twijfelt hoe je een Moodle-toets toegankelijk maakt voor schermlezers?
+    Articulate-modules correct labelen voor toetsenbordgebruikers? De custom thema-layer van
+    Canvas werkend houden met hulpsoftware? We kijken mee, delen concrete oplossingen en leggen
+    uit waarom bepaalde keuzes beter werken &mdash; in de platformen die jullie studenten gebruiken.
+  button:
+    label: "Bekijk een voorbeeldrapport"
+    link: "/toegankelijkheidsaudit/#voorbeeldrapporten"
 ---
 
 {{< section-full title="Digitaal onderwijs is pas inclusief als iedereen erbij kan" >}}
