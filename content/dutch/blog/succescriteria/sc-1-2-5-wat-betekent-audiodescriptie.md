@@ -12,8 +12,6 @@ aliases:
   - /sc-1-2-5-wat-betekent-audiodescriptie/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.2.5-1024x1024.png)
-
 ## Waar gaat het over?
 
 Video's die vooraf zijn opgenomen moeten een audiobeschrijving hebben voor de visuele informatie die niet duidelijk wordt door de audio.

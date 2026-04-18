@@ -24,8 +24,6 @@ Er zijn verschillende manieren om toegankelijkheidsnamen te testen:
 
 3. **Developer Tools in browsers**: Inspecteer de broncode met ingebouwde tools van de browser (zoals Chrome DevTools) om te controleren of er relevante aria-label, alt, of title-attributen aanwezig zijn.
 
-![screenshot van DevTools in Chrome](https://properaccess.nl/wp-content/uploads/2024/10/Scherm­afbeelding-2024-10-22-om-19.34.41-1024x350.png)
-
 ## Voorbeelden van fouten onder WCAG SC 4.1.2 m.b.t. naam
 
 1. **Knoppen zonder beschrijving**: Een knop die alleen een afbeelding bevat, zonder een aria-label of alt-tekst, bijvoorbeeld een zoekknop die alleen als "knop" wordt herkend door een schermlezer.

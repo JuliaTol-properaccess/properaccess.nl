@@ -11,8 +11,6 @@ aliases:
   - /sc-1-2-3-wat-betekent-audiodescriptie-of-media-alternatief-vooraf-opgenomen/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.2.3-1024x1024.png)
-
 ## Waar gaat het over?
 
 Video's die vooraf zijn opgenomen (dus niet live), moeten een audiobeschrijving of een tekstalternatief hebben voor visuele informatie die niet duidelijk wordt door de audio.

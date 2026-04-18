@@ -20,8 +20,6 @@ Een logische koppenstructuur (H1, H2, H3, …) is cruciaal voor webtoegankelijkh
 
 - Klik op ‘Toevoegen aan Chrome’ en bevestig de installatie.
 
-![](https://properaccess.nl/wp-content/uploads/2025/08/Scherm­afbeelding-2025-08-22-om-18.00.56-1024x195.png)
-
 ## 2\. Open de webpagina die je wilt testen
 
 Navigeer in Chrome naar de pagina waarvan je de koppenstructuur wilt controleren.
@@ -40,7 +38,6 @@ Klik rechtsboven in je browser op het **HeadingsMap-icoon** (h/) in de werkbalk.
 
 Op de onderstaande screenshot heb ik een voorbeeld opgenomen van een fout: in de footer staan vier kopjes van hetzelfde niveau. In de headingsmap moeten deze kopjes niveau 2 hebben. Dit is nu niet het geval
 
-![](https://properaccess.nl/wp-content/uploads/2025/08/Scherm­afbeelding-2025-08-22-om-18.04.08-1024x476.png)
 
 ## 5\. Spoor problemen op
 

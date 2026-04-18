@@ -57,8 +57,6 @@ Stap 3: Sla het eindresultaat op als een toegankelijk Word- of PDF-document en v
 
 ## Bekijk de video "Gevaarlijkste achtbanen ter wereld"
 
-![Video: Gevaarlijkste achtbaan ter wereld](https://properaccess.nl/wp-content/uploads/2025/07/Scherm­afbeelding-2025-07-18-om-13.11.10-1024x332.png)
-
 Wil je weten hoe je een PDF toegankelijk maakt? [**Bekijk deze tutorial**](https://properaccess.nl/instructie-pdfs-testen-met-pac-2024/).
 
 Het transcript is slechts één onderdeel van een toegankelijke video.  

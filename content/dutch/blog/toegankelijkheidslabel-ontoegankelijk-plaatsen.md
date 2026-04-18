@@ -15,11 +15,7 @@ description: "Het toegankelijkheidslabel van je verklaring moet zelf ook toegank
 
 Wanneer je een toegankelijkheidsverklaring hebt opgesteld, kun je een label ophalen dat je op je website kunt plaatsen om de status van je website te tonen. Je vindt het label op deze pagina: https://www.toegankelijkheidsverklaring.nl/verklaringen
 
-![](https://properaccess.nl/wp-content/uploads/2024/06/Scherm­afbeelding-2024-06-21-om-14.13.24-1024x417.png)
-
 Je krijgt de HTML-code die er zo uitziet. Deze code moet je op de webpagina plaatsen die over de toegankelijkheid van de website gaat.
-
-![](https://properaccess.nl/wp-content/uploads/2024/06/Scherm­afbeelding-2024-06-21-om-12.58.42.png)
 
 Als ontwikkelaar moet je erop letten dat je deze code niet ontoegankelijk maakt. In een van de laatste onderzoeken zag ik dat de link waarin het label stond een aria-label had gekregen.
 
@@ -31,7 +27,7 @@ In dit specifieke voorbeeld kreeg de link het volgende aria-label:
 <a href="#" aria-label="opent externe website"><img src="#" alt="De status van deze website is .." /></a>
 ```
 
-![](https://properaccess.nl/wp-content/uploads/2024/06/Scherm­afbeelding-2024-06-21-om-13.22.23-1024x322.png) Wat heeft het aria-label gedaan?
+Wat heeft het aria-label gedaan?
 
 - De alt-tekst van de afbeelding wordt niet meer voorgelezen. Dit valt onder WCAG SC 1.1.1. Er stond geen informatie over de status van de website als platte tekst op de pagina. Daarom was deze informatie 100% ontoegankelijk voor een blinde bezoeker.
 - Deze link is niet met stem te bedienen. De zichtbare tekst op het label komt niet overeen met de toegankelijkheidsnaam van de link (“opent externe website”). Dit valt onder WCAG SC 2.5.3.

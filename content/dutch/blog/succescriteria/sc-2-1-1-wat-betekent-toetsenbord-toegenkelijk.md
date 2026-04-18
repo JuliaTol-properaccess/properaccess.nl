@@ -22,8 +22,6 @@ Toetsenbordtoegankelijkheid zorgt ervoor dat mensen met motorische beperkingen, 
 
 Gebruik alleen je toetsenbord om door je website te navigeren. Controleer of je alle interactieve elementen kunt bereiken en gebruiken. Begin in de adresbalk van de browser:
 
-![Adresbalk browser](https://properaccess.nl/wp-content/uploads/2024/07/Scherm­afbeelding-2024-07-31-om-09.58.19-1024x285.png)
-
 - Tab-toets: Gebruik de Tab-toets om van het ene focusbare element naar het andere te gaan.
 
 - Shift + Tab: Gebruik Shift + Tab om terug te gaan naar het vorige element.

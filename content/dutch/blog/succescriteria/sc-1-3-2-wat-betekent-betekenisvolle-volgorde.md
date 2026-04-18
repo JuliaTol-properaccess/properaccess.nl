@@ -8,8 +8,6 @@ aliases:
   - /sc-1-3-2-wat-betekent-betekenisvolle-volgorde/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.3.2-1024x1024.png)
-
 ## Waar gaat het over?
 
 De inhoud van een webpagina moet in een logische, begrijpelijke volgorde door hulpsoftware kunnen worden gepresenteerd. Dit bereik je door de inhoud op een betekenisvolle manier in de broncode te plaatsen. De visuele weergave mag afwijken van de volgorde in de HTML.
@@ -97,8 +95,6 @@ Het probleem is dat je in WordPress de alt-teksten alleen in de mediatheek kunt 
 Op de pagina zelf is dat geen probleem, maar op de pagina met het overzicht van berichten wel. Want voor succescriterium 1.3.2 mag er geen informatieve content boven de kop staan. En dat is precies wat er gebeurt als de uitgelichte afbeelding een alt-tekst heeft.
 
 De enige snelle oplossing was het verwijderen van de alt-tekst. Hiermee herstel ik de logische leesvolgorde op de blogpagina, maar verlies ik punten bij Yoast SEO.
-
-![](https://properaccess.nl/wp-content/uploads/2024/07/Scherm%C2%ADafbeelding-2024-08-08-om-19.48.54-1024x576.png)
 
 ## Goede bronnen over 1.3.2
 

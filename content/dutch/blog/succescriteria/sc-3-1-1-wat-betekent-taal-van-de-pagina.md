@@ -26,8 +26,6 @@ Het testen van SC 3.1.1 kan als volgt worden uitgevoerd:
 
 Controleer of de taal van de pagina is gedefinieerd in het HTML-element. `Bijvoorbeeld: <html lang="nl">` voor een Nederlandstalige pagina. Klik met je rechtermuisknop op de pagina en kies voor “Inspecteer element”. 
 
-![](https://properaccess.nl/wp-content/uploads/2024/08/Scherm­afbeelding-2024-08-04-om-15.39.13-1024x475.png)
-
 ### Gebruik van hulpmiddelen
 
 Gebruik tools zoals WAVE, AXE, of de ingebouwde toegankelijkheidscontrole van browsers om te controleren of de taal van de inhoud correct is gespecificeerd.

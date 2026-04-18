@@ -10,8 +10,6 @@ aliases:
   - /sc-1-3-3-wat-betekent-zintuigelijke-eigenschappen/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.3.3-1-1024x1024.png)
-
 ## Waar gaat het over?
 
 Gebruik niet alleen zintuiglijke kenmerken zoals kleur, vorm of locatie om iets uit te leggen, maar vul het aan met andere informatie.

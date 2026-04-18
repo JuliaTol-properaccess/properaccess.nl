@@ -22,8 +22,6 @@ En weet je wat een schermlezer dan voorleest?
 
 _”signature\_1293438474”_
 
-![](https://properaccess.nl/wp-content/uploads/2025/06/Scherm­afbeelding-2025-06-29-om-10.38.39.png)
-
 Daar word je niet wijzer van. En dit komt dagelijks voor -- bij elke e-mail die je verstuurt.
 
 ## Wat gaat er mis in e-mailhandtekeningen?

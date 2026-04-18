@@ -26,8 +26,6 @@ Ga naar: [https://www.tpgi.com/color-contrast-checker/](https://www.tpgi.com/col
 
 Start het programma “Colour Contrast Analyser”.
 
-![Color contrast analyzer](https://properaccess.nl/wp-content/uploads/2024/05/Scherm­afbeelding-2024-05-15-om-12.45.07-758x1024.png)
-
 - **Kies je voorgrond- en achtergrondkleur**
     
     - Klik op de pipet onder “Voorgrondkleur”.
@@ -65,8 +63,6 @@ Verklein je browser tot de helft van je schermgrootte door je muis over de linke
 Klik op het vierkantje onder het label "Color Picker" in het kader onder "Foreground". Er verschijnt een nieuw venster met een pipet. Gebruik dit pipet om de kleur van de tekst op je website of document te selecteren.
 
 Doe hetzelfde voor de achtergrondkleur met het tweede pipet onder "Background".
-
-![browser resize](https://properaccess.nl/wp-content/uploads/2024/05/browser-resize-538x1024.png) ![](https://properaccess.nl/wp-content/uploads/2024/05/contrastchecken-1024x529.png)
 
 ## **Hoe analyseer je het resultaat?**
 

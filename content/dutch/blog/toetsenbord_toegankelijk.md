@@ -17,8 +17,6 @@ Maar sinds kort gooit **Google Chrome** roet in het eten. Wanneer je met de Tab-
 
 **‘Google vragen over deze pagina’.**
 
-![Screenshot melding Chrome](https://properaccess.nl/wp-content/uploads/2025/11/Scherm­afbeelding-2025-11-05-om-17.09.33-1024x320.png)
-
 En dan zit je vast. Geen doorkomen aan. Het onderbreekt je flow en maakt toetsenbordnavigatie frustrerend – precies wat we willen voorkomen bij toegankelijk testen.
 
 ### **Wat is die melding precies?**
@@ -36,8 +34,6 @@ Die melding is onderdeel van een nieuwe functie in Chrome: **contextuele suggest
 7. Zet de optie op **Disabled**
 
 9. Start Chrome opnieuw op
-
-![screenshot Chrome browser](https://properaccess.nl/wp-content/uploads/2025/11/Scherm­afbeelding-2025-11-09-om-15.06.09-1024x512.png)
 
 Daarna kun je weer soepel navigeren met de Tab-toets, zoals het hoort.
 

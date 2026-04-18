@@ -10,8 +10,6 @@ aliases:
   - /sc-1-4-10-wat-betekent-reflow/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.10-1024x1024.png)
-
 Websites moeten zich automatisch aanpassen aan kleinere schermen of hogere zoomniveaus, zonder dat je horizontaal hoeft te scrollen om de gewone tekst te lezen.
 
 [Officiële tekst van 1.4.10](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)

@@ -8,8 +8,6 @@ aliases:
   - /sc-1-4-4-wat-betekent-tekst-vergroten/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.4-1-1024x1024.png)
-
 ## Waar gaat het over?
 
 Bezoekers moeten de tekst op de website minstens 200% kunnen vergroten, zonder dat er inhoud of functionaliteit verloren gaat.

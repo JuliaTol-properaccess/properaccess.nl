@@ -10,8 +10,6 @@ aliases:
   - /sc-1-4-1-wat-betekent-gebruik-van-kleur/
 ---
 
-![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.1-1024x1024.png)
-
 ## Waar gaat het over?
 
 Kleur mag nooit de enige manier zijn om informatie over te brengen.
