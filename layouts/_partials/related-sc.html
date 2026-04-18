@@ -1,0 +1,52 @@
+{{/*
+  Related SC — toont andere posts met tag binnen dezelfde WCAG-richtlijn.
+  Bijv. voor SC 1-4-12 → toont posts getagd met 1-4-1, 1-4-2, ..., 1-4-13 (max 4).
+  Rendert alleen voor posts in de "wcag-uitgelegd" categorie met een SC-tag (X-X-X).
+*/}}
+{{ $currentPage := . }}
+{{ $isWcagUitgelegd := intersect (.Params.categories | default slice) (slice "wcag-uitgelegd") }}
+
+{{ if gt (len $isWcagUitgelegd) 0 }}
+  {{ $scTag := "" }}
+  {{ range .Params.tags }}
+    {{ if and (eq $scTag "") (findRE `^\d+-\d+-\d+$` .) }}
+      {{ $scTag = . }}
+    {{ end }}
+  {{ end }}
+
+  {{ if ne $scTag "" }}
+    {{ $parts := split $scTag "-" }}
+    {{ $prefix := printf "%s-%s-" (index $parts 0) (index $parts 1) }}
+    {{ $guidelineDot := printf "%s.%s" (index $parts 0) (index $parts 1) }}
+
+    {{ $related := slice }}
+    {{ range where .Site.RegularPages "Params.categories" "intersect" (slice "wcag-uitgelegd") }}
+      {{ if ne .RelPermalink $currentPage.RelPermalink }}
+        {{ $match := false }}
+        {{ range .Params.tags }}
+          {{ if hasPrefix . $prefix }}
+            {{ $match = true }}
+          {{ end }}
+        {{ end }}
+        {{ if $match }}
+          {{ $related = $related | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with $related | first 4 }}
+      <section class="section pb-0 related-sc">
+        <div class="container">
+          <h2 class="h3 mb-12">Meer over richtlijn {{ $guidelineDot }}</h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-3 md:col-6 mb-14">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+{{ end }}

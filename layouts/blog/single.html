@@ -106,6 +106,9 @@
       </div>
     </section>
 
+    <!-- Related SC (same WCAG guideline) -->
+    {{ partial "related-sc" . }}
+
     <!-- Related posts -->
     {{ $related := .Site.RegularPages.Related . | first 10 }}
     {{ $related = $related | shuffle | first 3 }}
