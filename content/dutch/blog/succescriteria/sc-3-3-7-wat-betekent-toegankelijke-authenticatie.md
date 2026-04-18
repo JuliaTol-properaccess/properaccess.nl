@@ -6,6 +6,8 @@ categories:
 tags:
   - "3-3-7"
 description: "WCAG 3.3.8 vereist toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze implementeert."
+aliases:
+  - /sc-3-3-7-wat-betekent-toegankelijke-authenticatie/
 ---
 
 Je wilt inloggen op een website. Eerst moet je een wachtwoord van zestien tekens typen dat je uit je hoofd moet kennen. Dan krijg je een CAPTCHA met vervormde tekst die je moet ontcijferen. Vervolgens moet je alle verkeerslichten in een raster aanklikken. En als je een fout maakt, begin je van voren af aan.

@@ -7,6 +7,8 @@ tags:
   - "1-3-5"
   - "formulier"
 description: "WCAG 1.3.5 vereist dat invoervelden een duidelijk doel hebben via het autocomplete-attribuut. Leer hoe je formulieren slim en toegankelijk maakt."
+aliases:
+  - /sc-1-3-5-wat-betekent-invoerdoel-identificeren/
 ---
 
 Stel je voor: je vult voor de zoveelste keer een contactformulier in. Naam, e-mail, telefoonnummer, adres. Je browser kent die gegevens allang, maar het formulier werkt niet mee. Je moet alles handmatig typen. Irritant als je haast hebt, maar een echt probleem als je een motorische beperking hebt en elke toetsaanslag moeite kost.

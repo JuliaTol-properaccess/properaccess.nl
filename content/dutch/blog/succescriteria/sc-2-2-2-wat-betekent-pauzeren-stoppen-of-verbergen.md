@@ -6,6 +6,8 @@ categories:
 tags:
   - "2-2-2"
 description: "WCAG 2.2.2 vereist dat bewegende of automatisch wisselende content gepauzeerd of gestopt kan worden. Lees de regels en veelgemaakte fouten."
+aliases:
+  - /sc-2-2-2-wat-betekent-pauzeren-stoppen-of-verbergen/
 ---
 
 Een carrousel die automatisch door slides heen scrollt. Een nieuwsticker die langs de onderkant van het scherm glijdt. Een achtergrondanimatie die continu beweegt. Voor jou is het een dynamisch design-element. Voor iemand met ADHD, een concentratiestoornis of een vestibulaire aandoening kan het onmogelijk maken om de rest van de pagina te lezen.

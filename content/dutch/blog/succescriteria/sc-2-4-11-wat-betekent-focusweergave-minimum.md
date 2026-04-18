@@ -7,6 +7,8 @@ tags:
   - "2-4-11"
   - "focus"
 description: "WCAG 2.4.11 vereist dat de focus-indicator niet volledig bedekt wordt door andere elementen. Lees de eisen en hoe je dit controleert."
+aliases:
+  - /sc-2-4-11-wat-betekent-focusweergave-minimum/
 ---
 
 Je navigeert met je toetsenbord door een webshop. Je drukt op Tab om naar de volgende knop te gaan, maar die knop verdwijnt achter een sticky header. Of je focust op een link in de pagina, maar een cookiebanner bedekt precies dat element. Je weet dat de focus ergens is, maar je kunt niet zien waar.

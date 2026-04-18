@@ -7,6 +7,8 @@ tags:
   - "3-3-3"
   - "formulier"
 description: "WCAG 3.3.3 vereist dat je suggesties biedt om fouten in formulieren op te lossen. Lees hoe je gebruikers helpt met duidelijke foutsuggesties."
+aliases:
+  - /sc-3-3-3-wat-betekent-foutsuggestie/
 ---
 
 Iedereen maakt wel eens een fout bij het invullen van een formulier – een verkeerd e-mailadres, een vergeten veld of een foutief wachtwoord. Voor mensen met een cognitieve beperking, laaggeletterdheid of gebruikers van schermlezers kan het extra moeilijk zijn om deze fouten te begrijpen en te herstellen, zeker als de foutmelding onduidelijk is.

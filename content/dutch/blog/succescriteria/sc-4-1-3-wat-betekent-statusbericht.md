@@ -6,6 +6,8 @@ categories:
 tags: 
   - "4-1-3"
 description: "WCAG 4.1.3 vereist dat statusberichten programmatisch bepaalbaar zijn voor schermlezers. Lees hoe je aria-live en ARIA-rollen correct gebruikt."
+aliases:
+  - /sc-4-1-3-wat-betekent-statusbericht/
 ---
 
 Succescriterium (SC) 4.1.3 gaat over de statusmeldingen. Dit criterium vereist dat statusmeldingen (bijvoorbeeld foutmeldingen, bevestigingen, waarschuwingen) als dusdanig programmatisch bepaald kunnen worden, zodat gebruikers die afhankelijk zijn van ondersteunende technologieën (zoals schermlezers) deze meldingen kunnen horen op het moment dat ze worden getoond. Dit betekent dat statusmeldingen op een manier moeten worden gecodeerd dat ze door software kunnen worden gedetecteerd en aan de gebruiker kan worden voorgelezen.

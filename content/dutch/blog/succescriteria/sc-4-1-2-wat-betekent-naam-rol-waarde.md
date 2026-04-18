@@ -4,6 +4,8 @@ date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
 description: "WCAG 4.1.2 vereist dat interactieve elementen een correcte naam, rol en waarde hebben. Lees hoe je aria-labels en semantische HTML correct toepast."
+aliases:
+  - /sc-4-1-2-wat-betekent-naam-rol-waarde/
 ---
 
 Succescriterium 4.1.2 richt zich op het juist benoemen van interactieve elementen zoals knoppen, invoervelden en links. Dit succescriterium zorgt ervoor dat hulpsoftware zoals schermlezers deze elementen goed kunnen identificeren en de juiste naam, rol en waarde aan gebruikers kunnen overbrengen.

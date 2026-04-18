@@ -8,6 +8,8 @@ tags:
   - "podcast"
   - "video"
 description: "Wat eist WCAG 1.2.1 voor alleen-audio en alleen-video content? Leer wanneer je een transcript of tekstbeschrijving moet aanbieden, met voorbeelden en veelgemaakte fouten."
+aliases:
+  - /sc-1-2-1-wat-betekent-alleen-audio-of-alleen-video/
 ---
 
 Een podcast op je website. Een instructievideo zonder gesproken tekst. Een audiofragment van een interview. Voor jou is de inhoud duidelijk, maar voor iemand die doof is, bestaat die podcast niet. En voor iemand die blind is, is die stille instructievideo een zwart gat.

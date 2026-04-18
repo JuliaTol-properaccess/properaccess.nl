@@ -7,6 +7,8 @@ tags:
   - "3-3-1"
   - "formulier"
 description: "WCAG 3.3.1 vereist dat fouten in formulieren duidelijk worden geidentificeerd en beschreven. Lees hoe je goede foutmeldingen schrijft."
+aliases:
+  - /sc-3-3-1-wat-betekent-foutidentificatie/
 ---
 
 Iedereen maakt wel eens een fout bij het invullen van een formulier. Maar als je niet duidelijk ziet wat er fout ging, kun je het probleem niet oplossen. Voor mensen met een cognitieve beperking, slechtzienden of gebruikers van schermlezers is dat extra lastig.

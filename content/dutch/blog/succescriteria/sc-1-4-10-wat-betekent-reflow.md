@@ -6,6 +6,8 @@ categories:
 tags:
   - "1-4-10"
 description: "WCAG 1.4.10 (Reflow) vereist dat websites werken zonder horizontaal scrollen bij 400% zoom. Lees wat reflow betekent en hoe je eraan voldoet."
+aliases:
+  - /sc-1-4-10-wat-betekent-reflow/
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.10-1024x1024.png)

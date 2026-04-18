@@ -7,6 +7,8 @@ tags:
   - "3-3-7"
   - "formulier"
 description: "WCAG 3.3.7 stelt dat gebruikers eerder ingevoerde informatie niet opnieuw hoeven in te vullen. Lees hoe je redundante invoer voorkomt."
+aliases:
+  - /sc-3-3-7-wat-betekent-redundante-invoer/
 ---
 
 Je bent bezig met een online bestelling. In stap 1 vul je je naam en adres in. In stap 2 vraagt het formulier opnieuw om je naam. In stap 3 moet je je adres nog een keer invullen voor de facturatie. Je hebt dezelfde informatie drie keer getypt.

@@ -16,6 +16,8 @@ keywords:
 tags:
   - "1-4-5"
   - "afbeeldingen"
+aliases:
+  - /sc-1-4-5-wat-betekent-afbeeldingen-van-tekst/
 ---
 
 # WCAG 1.4.5 Afbeeldingen van tekst: waarom je tekst nooit als plaatje mag gebruiken

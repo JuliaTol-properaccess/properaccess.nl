@@ -7,6 +7,8 @@ tags:
   - "1-4-11"
   - "kleur"
 description: "WCAG 1.4.11 vereist minimaal 3:1 contrast voor niet-tekstuele elementen zoals knoppen, iconen en formuliervelden. Lees de regels en voorbeelden."
+aliases:
+  - /sc-1-4-5-wat-betekent-contrast-voor-niet-tekstuele-onderdelen/
 ---
 
 Toegankelijkheid gaat niet alleen over leesbare tekst. Ook **visuele elementen** zoals knoppen, iconen, formuliervelden en focusindicatoren moeten duidelijk zichtbaar zijn. Als deze nauwelijks afsteken tegen de achtergrond, kunnen gebruikers belangrijke functies of informatie missen.

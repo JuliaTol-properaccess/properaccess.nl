@@ -7,6 +7,8 @@ tags:
   - "3-3-4"
   - "formulier"
 description: "WCAG 3.3.4 vereist foutpreventie bij juridische, financiele of data-transacties. Lees de eisen voor bevestigings- en correctiemogelijkheden."
+aliases:
+  - /sc-3-3-4-wat-betekent-foutpreventie-juridisch-financieel-data/
 ---
 
 Je bestelt een vliegticket online. Je typt per ongeluk Amsterdam in plaats van Rotterdam als bestemming. Je klikt op "Bevestigen" en de boeking is definitief. Geen bevestigingsscherm, geen mogelijkheid om terug te gaan, geen "Weet je het zeker?". Het ticket is gekocht, en annuleren kost je geld.

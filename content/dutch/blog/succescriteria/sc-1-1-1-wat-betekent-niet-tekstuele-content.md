@@ -21,6 +21,8 @@ keywords:
 tags:
   - "1-1-1"
   - "Afbeeldingen"
+aliases:
+  - /sc-1-1-1-wat-betekent-niet-tekstuele-content/
 ---
 
 # WCAG 1.1.1 Niet-tekstuele content: wat je moet weten als je digitaal verkoopt of informeert

@@ -7,6 +7,8 @@ tags:
   - "2-4-7"
   - "focus"
 description: "WCAG 2.4.7 vereist een zichtbare focus-indicator op interactieve elementen. Lees waarom dit essentieel is en hoe je het implementeert."
+aliases:
+  - /sc-2-4-7-wat-betekent-focus-zichtbaar/
 ---
 
 Stel je voor dat je een formulier invult met je muis, maar de cursor is onzichtbaar. Je klikt ergens en hoopt dat je het juiste veld raakt. Dat klinkt absurd, maar precies dat is wat er gebeurt als een website geen zichtbare focus-indicator heeft voor toetsenbordgebruikers.

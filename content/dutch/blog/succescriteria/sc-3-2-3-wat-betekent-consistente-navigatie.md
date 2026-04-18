@@ -4,6 +4,8 @@ date: 2025-05-17
 categories:
   - "wcag-uitgelegd"
 description: "WCAG 3.2.3 vereist dat navigatie op elke pagina op dezelfde plek en in dezelfde volgorde staat. Lees waarom en hoe je dit aanpakt."
+aliases:
+  - /sc-3-2-3-wat-betekent-consistente-navigatie/
 ---
 
 Je kent het vast: je bent op een website, je hebt net geleerd waar het menu zit, en op de volgende pagina is alles anders. Het menu staat ergens anders, de volgorde is veranderd, of de zoekbalk is ineens verdwenen. Je moet opnieuw zoeken naar wat je net had gevonden.

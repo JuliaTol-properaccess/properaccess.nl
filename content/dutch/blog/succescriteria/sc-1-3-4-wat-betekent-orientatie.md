@@ -7,6 +7,8 @@ tags:
   - "1-3-4"
   - "apps"
 description: "WCAG 1.3.4 vereist dat je website in zowel staande als liggende oriëntatie werkt. Lees wanneer je een uitzondering mag maken en veelgemaakte fouten."
+aliases:
+  - /sc-1-3-4-wat-betekent-orientatie/
 ---
 
 Je opent een website op je telefoon. Je draait je scherm op z'n kant om een tabel beter te bekijken, en ineens springt alles terug naar staand. Of je ligt in bed met je telefoon op z'n kant, en de hele website is onbruikbaar omdat die alleen in portretmodus werkt.

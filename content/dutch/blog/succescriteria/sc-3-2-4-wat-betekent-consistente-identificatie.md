@@ -6,6 +6,8 @@ categories:
 tags:
   - "3-2-4"
 description: "WCAG 3.2.4 vereist dat dezelfde elementen overal dezelfde naam en functie hebben. Lees hoe je consistentie waarborgt op je website."
+aliases:
+  - /sc-3-2-4-wat-betekent-consistente-identificatie/
 ---
 
 Op de homepage staat een knop "Zoeken". Op de productpagina heet dezelfde functie "Vind". In de footer staat "Search". Het zijn allemaal dezelfde actie, maar ze heten steeds anders. Voor de meeste bezoekers is dat licht verwarrend. Voor iemand met een cognitieve beperking kan het het verschil zijn tussen een website die werkt en een die niet te gebruiken is.

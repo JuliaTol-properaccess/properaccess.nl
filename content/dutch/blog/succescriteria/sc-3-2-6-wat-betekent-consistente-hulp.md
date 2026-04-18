@@ -6,6 +6,8 @@ categories:
 tags:
   - "3-2-6"
 description: "WCAG 3.2.6 vereist dat hulpopties zoals chat of FAQ altijd op dezelfde plek te vinden zijn. Lees hoe je consistente hulp biedt."
+aliases:
+  - /sc-3-2-6-wat-betekent-consistente-hulp/
 ---
 
 Je zit vast op een website. Je hebt een vraag over je bestelling, of je snapt een formulier niet. Je zoekt naar de helpknop. Op de vorige pagina stond die rechtsonder. Maar op deze pagina is die nergens te vinden. Of hij staat ineens linksboven. Of hij heet nu "Support" in plaats van "Hulp".

@@ -7,6 +7,8 @@ tags:
   - "1-2-4"
   - "video"
 description: "WCAG 1.2.4 vereist live ondertiteling voor webinars en livestreams. Lees wat er verwacht wordt, veelgemaakte fouten en hoe je dit praktisch aanpakt."
+aliases:
+  - /sc-1-2-4-wat-betekent-ondertiteling-live/
 ---
 
 Je organiseert een webinar over je nieuwe product. Honderden mensen kijken mee. Maar voor de dove deelnemers is het alsof je een stomme film vertoont zonder tussenteksten. En voor de deelnemer die in een lawaaierig kantoor zit, is het onmogelijk om te volgen wat er gezegd wordt.

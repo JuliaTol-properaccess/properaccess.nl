@@ -22,6 +22,8 @@ keywords:
   - "kleurenblindheid webdesign"
   - "EAA compliance"
   - "focus indicator contrast"
+aliases:
+  - /sc-1-4-11-wat-betekent-contrast-UI/
 ---
 
 # Non-text Contrast: waarom je formuliervelden, knoppen en iconen onzichtbaar zijn voor slechtzienden (WCAG 1.4.11)

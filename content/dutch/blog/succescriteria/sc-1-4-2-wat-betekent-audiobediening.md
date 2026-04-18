@@ -7,6 +7,8 @@ tags:
   - "1-4-2"
   - "geluid"
 description: "WCAG 1.4.2 vereist dat automatisch afspelende audio gepauzeerd of gestopt kan worden. Lees de regels, uitzonderingen en veelgemaakte fouten."
+aliases:
+  - /sc-1-4-2-wat-betekent-audiobediening/
 ---
 
 Je opent een website en ineens begint er muziek te spelen. Of een promotievideo start automatisch met geluid. Voor de meeste mensen is dat irritant. Voor iemand die een schermlezer gebruikt, is het een ramp. Die schermlezer praat namelijk ook -- en twee geluidsbronnen tegelijk maken het onmogelijk om de website te gebruiken.

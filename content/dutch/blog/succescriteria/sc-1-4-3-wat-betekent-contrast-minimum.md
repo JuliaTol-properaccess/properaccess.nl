@@ -12,6 +12,8 @@ keywords:
   - WCAG SC 1.4.3
   - tekst contrast toegankelijkheid
   - webtoegankelijkheid contrast
+aliases:
+  - /sc-1-4-3-wat-betekent-contrast-minimum/
 ---
 
 ## Waar gaat het over?

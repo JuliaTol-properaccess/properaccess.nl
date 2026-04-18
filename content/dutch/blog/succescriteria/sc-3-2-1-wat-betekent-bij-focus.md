@@ -4,6 +4,8 @@ date: 2025-05-17
 categories: 
   - "wcag-uitgelegd"
 description: "WCAG 3.2.1 stelt dat er geen onverwachte contextwijziging mag optreden wanneer een element focus krijgt. Lees de regels en voorbeelden."
+aliases:
+  - /sc-3-2-1-wat-betekent-bij-focus/
 ---
 
 Wanneer iemand een website gebruikt met het toetsenbord of een schermlezer, “focust” die persoon op elementen zoals knoppen, links of invulvelden. Dat betekent dat ze actief zijn geselecteerd.  

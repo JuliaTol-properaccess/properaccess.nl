@@ -7,6 +7,8 @@ tags:
   - "2-4-6"
   - "formulier"
 description: "WCAG 2.4.6 vereist beschrijvende koppen en labels die duidelijk maken waar de content over gaat. Lees hoe je dit goed toepast."
+aliases:
+  - /sc-2-4-6-wat-betekent-koppen-en-labels/
 ---
 
 Je opent een pagina en de eerste kop is "Overzicht". Overzicht van wat? Je scrollt naar beneden en ziet koppen als "Details", "Meer informatie" en "Overig". Geen enkele kop vertelt je wat er in die sectie staat. Je moet alles lezen om te begrijpen waar de pagina over gaat.

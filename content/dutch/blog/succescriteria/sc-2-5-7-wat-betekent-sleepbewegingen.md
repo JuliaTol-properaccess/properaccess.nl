@@ -6,6 +6,8 @@ categories:
 tags:
   - "2-5-7"
 description: "WCAG 2.5.7 vereist een alternatief voor sleepbewegingen (drag-and-drop). Lees waarom dit belangrijk is en welke alternatieven je kunt bieden."
+aliases:
+  - /sc-2-5-7-wat-betekent-sleepbewegingen/
 ---
 
 Je hebt een mooie interface gebouwd waar gebruikers items kunnen slepen om ze te sorteren. Of een kaart waar je kunt slepen om te navigeren. Of een kanban-bord waar je taken van de ene kolom naar de andere sleept. Intuïtief, toch?

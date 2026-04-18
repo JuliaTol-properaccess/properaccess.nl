@@ -6,6 +6,8 @@ categories:
 tags:
   - "2-4-2"
 description: "WCAG 2.4.2 vereist dat elke pagina een beschrijvende titel heeft. Lees hoe je goede paginatitels schrijft voor toegankelijkheid en SEO."
+aliases:
+  - /sc-2-4-2-wat-betekent-paginatitels/
 ---
 
 Je hebt twaalf tabbladen open in je browser. Je zoekt dat ene tabblad met je winkelwagen. Maar drie tabbladen heten "Home", twee heten "Welkom", en de rest toont alleen de naam van het bedrijf. Je moet elk tabblad aanklikken om te vinden wat je zoekt.

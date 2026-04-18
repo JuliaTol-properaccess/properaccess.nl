@@ -6,6 +6,8 @@ categories:
 tags:
   - "1-4-1"
 description: "WCAG 1.4.1 stelt dat kleur nooit de enige manier mag zijn om informatie over te brengen. Lees waarom dit belangrijk is en hoe je het goed toepast."
+aliases:
+  - /sc-1-4-1-wat-betekent-gebruik-van-kleur/
 ---
 
 ![](https://properaccess.nl/wp-content/uploads/2025/05/1.4.1-1024x1024.png)

@@ -8,6 +8,8 @@ tags:
   - "formulier"
   - "labels"
 description: "WCAG 3.3.2 vereist duidelijke labels en instructies bij formulieren. Lees hoe je invoervelden begrijpelijk maakt voor alle gebruikers."
+aliases:
+  - /sc-3-3-2-wat-betekent-labels-en-instructies/
 ---
 
 Je komt op een formulier met vijf velden. Geen labels, alleen placeholders die verdwijnen zodra je begint te typen. Halverwege het formulier weet je niet meer wat je in het eerste veld hebt getypt, laat staan of het het juiste veld was. Er staat "Verplicht" bij sommige velden, maar welke? En dat telefoonnummerveld -- moet je +31 ervoor zetten of niet?

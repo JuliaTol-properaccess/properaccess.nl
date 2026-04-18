@@ -22,6 +22,8 @@ seo_keywords:
     "dyslexie tekstopmaak",
     "EAA compliance",
   ]
+aliases:
+  - /sc-1-4-12-wat-betekent-tekstafstand/
 ---
 
 # Text Spacing: waarom je tekst nooit mag vastzetten in een vaste hoogte (WCAG 1.4.12)

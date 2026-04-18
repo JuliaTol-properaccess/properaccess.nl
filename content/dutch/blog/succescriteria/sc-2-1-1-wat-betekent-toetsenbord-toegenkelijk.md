@@ -6,6 +6,8 @@ categories:
 tags: 
   - "2-1-1"
 description: "WCAG 2.1.1 vereist dat alle functionaliteit via het toetsenbord bereikbaar is. Lees hoe je toetsenbordtoegankelijkheid test en veelgemaakte fouten voorkomt."
+aliases:
+  - /sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/
 ---
 
 WCAG 2.1.1 stelt dat alle functionaliteiten op een website toegankelijk zijn via een toetsenbord. Dit is belangrijk omdat niet iedereen een muis kan gebruiken. Interactieve elementen die niet met het toetsenbord te bedienen zijn, zullen ook niet voor schermlezers toegankelijk zijn.

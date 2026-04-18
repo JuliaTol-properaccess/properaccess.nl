@@ -7,6 +7,8 @@ tags:
   - "1-2-2"
   - "video"
 description: "WCAG 1.2.2 vereist ondertiteling voor vooraf opgenomen video's. Lees wat goede ondertiteling inhoudt, veelgemaakte fouten en praktische tips voor je website."
+aliases:
+  - /sc-1-2-2-wat-betekent-ondertiteling-vooraf-opgenomen/
 ---
 
 Een productvideo op je webshop. Een uitlegvideo op je helppagina. Een opgenomen webinar in je academy. Als er gesproken tekst in zit, moeten er ondertitels bij. Niet als leuke extra, maar als vereiste -- want zonder ondertiteling is die video ontoegankelijk voor iedereen die het geluid niet kan horen.
