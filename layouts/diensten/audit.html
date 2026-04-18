@@ -6,7 +6,7 @@
   <div class="hp-container">
     <div class="hp-hero__grid">
       <div class="hp-hero__text">
-        <span class="hp-hero__badge">{{ $.Params.title }}</span>
+        <span class="hp-hero__badge">WCAG 2.2, niveau AA</span>
         <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
         <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
         {{ with .bullets }}
@@ -58,14 +58,326 @@
 {{ end }}
 
 
-<!-- ─── CONTENT (shortcodes) ─── -->
+<!-- ─── PAIN POINT / OLD WAY ─── -->
+<section class="hp-pain">
+  <div class="hp-container">
+    <div class="hp-pain__grid">
+      <div class="hp-pain__text">
+        <h2 class="hp-pain__title">
+          Alleen een externe audit levert
+          <span class="hp-pain__title-highlight">aantoonbare compliance</span>
+        </h2>
+        <p class="hp-pain__body">
+          EAA en Wdo verlangen geen goede intenties, maar bewijs. Een interne checklist,
+          een automatische scan of een cursus leveren dat niet. Een externe, onafhankelijke audit
+          wel &mdash; schriftelijk, toetsbaar, en gekoppeld aan een plan van aanpak per team.
+        </p>
+        <p class="hp-pain__body">
+          Zonder zo'n dossier blijft het juridisch risico staan:
+          <a href="https://www.acm.nl/nl/toegankelijkheid"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="hp-pain__link">klachten bij de ACM<span class="sr-only"> (opent in nieuw venster)</span></a>,
+          vorderingen van belangenorganisaties, reputatieschade &mdash; en een product dat
+          bezoekers niet kunnen gebruiken.
+        </p>
+        <div class="hp-pain__cta">
+          <a href="/contact/" class="hp-btn hp-btn--primary">
+            Plan een kennismaking
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hp-pain__visuals">
+        <div class="hp-pain-card hp-pain-card--summary">
+          <span class="hp-pain-card__eyebrow">
+            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+            ACM-meldplicht
+          </span>
+          <h3 class="hp-pain-card__title">Wat de wet van je vraagt</h3>
+          <ul class="hp-pain-card__list">
+            <li><strong>Verplicht melden</strong> bij de ACM als je niet voldoet aan de toegankelijkheidseisen.</li>
+            <li><strong>Enige uitzondering:</strong> aantonen dat het "een onevenredige last of fundamentele wijziging" is.</li>
+            <li><strong>Toezicht:</strong> de ACM controleert op naleving en bevestigt elke melding.</li>
+          </ul>
+          <a href="https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="hp-pain-card__link">
+            Lees de regels op acm.nl<span class="sr-only"> (opent in nieuw venster)</span>
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── VALUE PROPS ─── -->
+<section class="hp-vp" id="voorbeeldrapporten">
+  <div class="hp-container">
+
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">Wat je krijgt bij een audit</h2>
+    </div>
+
+    <!-- VP 1: Het rapport -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-finding" aria-hidden="true">
+          <div class="hp-vp-finding__header">
+            <span class="hp-vp-finding__priority">Prioriteit: hoog</span>
+            <span class="hp-vp-finding__element">Element <code>&lt;button&gt;</code></span>
+          </div>
+          <div class="hp-vp-finding__story">
+            <span class="hp-vp-finding__label">User story</span>
+            <p>
+              &ldquo;Als screenreader-gebruiker hoor ik alleen <em>&lsquo;knop&rsquo;</em>.
+              Ik weet niet wat er gebeurt als ik erop klik.&rdquo;
+            </p>
+          </div>
+          <div class="hp-vp-finding__code">
+            <span class="hp-vp-finding__label">Fix</span>
+            <pre><code>&lt;button aria-label="Lees verder"&gt;
+  &rarr;
+&lt;/button&gt;</code></pre>
+          </div>
+          <div class="hp-vp-finding__export">
+            <span class="hp-vp-finding__export-label">Exporteer</span>
+            <span class="hp-vp-finding__export-btn">Jira</span>
+            <span class="hp-vp-finding__export-btn">GitHub</span>
+            <span class="hp-vp-finding__export-btn">PDF</span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Het rapport</span>
+        <h3 class="hp-vp__title">Een rapport waar je team morgen mee aan de slag kan</h3>
+        <p class="hp-vp__body">
+          Per component, niet per WCAG-criterium. Elke bevinding krijgt een user story en prioriteit &mdash;
+          met screenshot of codevoorbeeld waar nuttig. Plan van aanpak per team, PDF-analyse van
+          bevindingen voor de manager, bevindingen exporteerbaar naar Jira of GitHub.
+        </p>
+        <div class="hp-vp__examples">
+          <span class="hp-vp__examples-label">Voorbeeldrapporten:</span>
+          <a href="https://www.properaccess.nl/rapporten/202512_veenweidenkrimpenerwaard.nl/" class="hp-vp__examples-link">Overheid</a>
+          <a href="https://www.properaccess.nl/rapporten/202512_museumvereniging_retest/" class="hp-vp__examples-link">Culturele sector</a>
+          <a href="https://www.properaccess.nl/rapporten/202602_financiereninnetwerken.nl/" class="hp-vp__examples-link">Bedrijfsleven</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- VP 2: Handmatig getest -->
+    <div class="hp-vp__row hp-vp__row--reverse">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-methods" aria-hidden="true">
+          <span class="hp-vp-methods__label">Handmatig getest met:</span>
+          <ul class="hp-vp-methods__list">
+            <li><span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span> Schermlezer (VoiceOver, NVDA, JAWS)</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">keyboard</span> Alleen toetsenbord</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">zoom_in</span> Zoom tot 400%</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">tab</span> Meerdere browsers &amp; devices</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">check_indeterminate_small</span> Formulieren met autofill</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">filter_center_focus</span> Focus-volgorde</li>
+          </ul>
+          <p class="hp-vp-methods__footer">Automatische scans testen niets van dit.</p>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">De aanpak</span>
+        <h3 class="hp-vp__title">Handmatig getest door een senior auditor &mdash; niet door een scanner</h3>
+        <p class="hp-vp__body">
+          Automatische tools vinden slechts ~30% van WCAG-issues. Ze starten geen schermlezer,
+          gebruiken geen toetsenbord, testen geen zoom. Onze auditor wel &mdash; met zes-ogen-controle
+          en echte assistieve technologie voor alles wat scanners missen.
+        </p>
+        <a href="/toegankelijkheidsaudit/#voorbeeldrapporten" class="hp-btn hp-btn--primary">
+          Bekijk een voorbeeldrapport
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 3: Vragen zonder meerkosten -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-chat" aria-hidden="true">
+          <div class="hp-vp-chat__message hp-vp-chat__message--dev">
+            <span class="hp-vp-chat__avatar">JD</span>
+            <div class="hp-vp-chat__bubble">
+              <span class="hp-vp-chat__name">Jan &middot; Developer</span>
+              <p>Bevinding #14 &mdash; contrast te laag. Kun je de exacte ratio noemen?</p>
+              <span class="hp-vp-chat__time">10:14</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__message hp-vp-chat__message--auditor">
+            <span class="hp-vp-chat__avatar hp-vp-chat__avatar--auditor">PA</span>
+            <div class="hp-vp-chat__bubble hp-vp-chat__bubble--auditor">
+              <span class="hp-vp-chat__name">Proper Access</span>
+              <p>Gemeten: <code>3.8:1</code>. WCAG AA vereist <code>4.5:1</code> voor body-tekst. Fix: donkerder tekst óf lichtere achtergrond.</p>
+              <span class="hp-vp-chat__time">10:16</span>
+            </div>
+          </div>
+          <div class="hp-vp-chat__typing">
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Na het rapport</span>
+        <h3 class="hp-vp__title">Vragen over je rapport? Onbeperkt, zonder meerprijs</h3>
+        <p class="hp-vp__body">
+          Iets niet duidelijk? Een bevinding die je wilt narekenen? Stel 'm gerust &mdash;
+          dat hoort gewoon bij de audit. Voor inhoudelijke begeleiding bij het oplossen
+          werken we met een <a href="/strippenkaart/">strippenkaart</a> (&euro;&nbsp;100/uur).
+        </p>
+        <a href="/contact/" class="hp-btn hp-btn--primary">
+          Plan een kennismaking
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="hp-how">
+  <div class="hp-container">
+
+    <div class="hp-how__header">
+      <h2 class="hp-how__title">
+        Van eerste gesprek tot gesloten dossier &mdash; in 3 stappen
+      </h2>
+    </div>
+
+    <ol class="hp-how__grid">
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">1</span>
+        <h3 class="hp-how__step-title">Kennismaking + offerte</h3>
+        <p class="hp-how__step-body">
+          In 30 minuten bespreken we je site of app, je team, je deadlines en wat je al hebt.
+          Je krijgt een heldere offerte binnen 2 werkdagen &mdash; geen standaardprijslijst,
+          wel vaste uurtarieven.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">2</span>
+        <h3 class="hp-how__step-title">Grondige audit</h3>
+        <p class="hp-how__step-body">
+          Handmatige test door een senior auditor. Zes-ogen-controle. We simuleren
+          verschillende beperkingen en luisteren naar je website of app met een schermlezer.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">3</span>
+        <h3 class="hp-how__step-title">Rapport + retest</h3>
+        <p class="hp-how__step-body">
+          Je ontvangt het rapport per component, met user stories, plan van aanpak per team
+          en exportknoppen. Na jouw fixes doen we de retest &mdash; om te checken of alles
+          werkt en het dossier sluit.
+        </p>
+      </li>
+    </ol>
+
+    <div class="hp-how__cta">
+      <a href="/contact/" class="hp-btn hp-btn--primary">
+        Plan een kennismaking
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── SOCIAL PROOF ─── -->
+<section class="hp-proof">
+  <div class="hp-container">
+    <div class="hp-proof__header">
+      <h2 class="hp-proof__title">Dit is waarom 53 organisaties ons kiezen</h2>
+      <p class="hp-proof__intro">
+        Van een Rijksmuseum-app tot een Jumbo-checkout &mdash; we leveren rapporten
+        waar teams écht mee verder komen.
+      </p>
+    </div>
+
+    <div class="hp-proof__grid">
+      <div class="hp-proof__card hp-proof__card--stats">
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">950+</span>
+          <span class="hp-proof__stat-label">audits van websites</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">50+</span>
+          <span class="hp-proof__stat-label">audits van apps</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">53</span>
+          <span class="hp-proof__stat-label">organisaties en bedrijven</span>
+          <span class="hp-proof__stat-sub">Rijksmuseum &middot; Jumbo &middot; NRC &middot; Provincies</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">1 op de 3</span>
+          <span class="hp-proof__stat-label">klanten komt terug voor een tweede audit</span>
+        </div>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--case">
+        <h3 class="hp-proof__case-title">Audit + retest in één traject</h3>
+        <p class="hp-proof__case-body">
+          Elke audit eindigt met een retest. We checken of de fixes werken, leggen
+          compliance aantoonbaar vast en het dossier sluit &mdash; klaar voor EAA-
+          of Wdo-handhaving.
+        </p>
+        <p class="hp-proof__case-plus">
+          Inclusief <strong>online nabespreking</strong> waarin we de belangrijkste
+          bevindingen samen doorlopen.
+        </p>
+        <p class="hp-proof__case-result">
+          <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span><strong>Resultaat:</strong> aantoonbare compliance in één doorlooptijd.</span>
+        </p>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--quote">
+        <span class="material-symbols-outlined hp-proof__quote-icon" aria-hidden="true">format_quote</span>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            De retest was wat ons over de streep trok. Een audit zonder retest
+            is een audit zonder afsluiting.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Compliance Manager, overheid
+          </footer>
+        </blockquote>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            Binnen 6 weken van nulmeting tot gesloten dossier. Minder gedoe
+            dan we vreesden.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Product Owner, webshop
+          </footer>
+        </blockquote>
+        <p class="hp-proof__quote-note">Uit respect voor de privacy laten we de namen van onze klanten weg.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── CONTENT (minimal) ─── -->
 <article class="offerte-content">
   {{ .Content }}
 </article>
-
-
-<!-- ─── STATS ─── -->
-{{ partial "voor-wie/stats-bar.html" . }}
 
 
 <!-- ─── FAQ ─── -->
