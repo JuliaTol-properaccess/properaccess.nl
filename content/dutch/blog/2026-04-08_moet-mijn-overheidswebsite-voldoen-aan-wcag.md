@@ -17,7 +17,7 @@ keywords:
 image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
-Ja. Overheidswebsites zijn al sinds 2018 verplicht om te voldoen aan WCAG 2.1 niveau AA. Dit is vastgelegd in het Besluit digitale toegankelijkheid overheid, onderdeel van het Wdo (Wet digitale overheid).
+Ja. Overheidswebsites zijn al sinds 2018 verplicht om te voldoen aan WCAG 2.1 niveau AA. Dit is vastgelegd in het Besluit digitale toegankelijkheid overheid (BDTO).
 
 ## Wat is de huidige stand van zaken?
 

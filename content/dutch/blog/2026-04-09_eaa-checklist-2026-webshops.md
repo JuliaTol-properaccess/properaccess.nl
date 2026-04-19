@@ -59,7 +59,7 @@ De EAA geldt voor het deel van je site dat aan consumenten verkoopt. Heb je daar
 
 ### 3. Stel een toegankelijkheidsverklaring op
 
-De EAA verplicht je om aantoonbaar te voldoen. In de praktijk betekent dat een **toegankelijkheidsverklaring** op je site, met een datum, scope, gevolgde norm (WCAG 2.1 AA) en contactgegevens voor klachten. Anders dan bij de Wdo (overheid) is er geen centraal portaal — je publiceert hem op je eigen site. We hebben een handige tool gemaakt om je te helpen om een verklaring op te stellen: https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/.
+De EAA verplicht je om aantoonbaar te voldoen. In de praktijk betekent dat een **toegankelijkheidsverklaring** op je site, met een datum, scope, gevolgde norm (WCAG 2.1 AA) en contactgegevens voor klachten. Anders dan bij het BDTO (overheid) is er geen centraal portaal — je publiceert hem op je eigen site. We hebben een handige tool gemaakt om je te helpen om een verklaring op te stellen: https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/.
 
 ### 4. Wijs een verantwoordelijke aan binnen je organisatie
 

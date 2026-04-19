@@ -270,7 +270,7 @@ Houd deze pagina kort — het doel is conversie, niet informatie.""",
 
 TARGET_CONTEXT = {
     "bedrijfsleven": "Ondernemers en product owners van middelgrote/grote bedrijven. Moeten voldoen aan EAA. Willen efficiënt en kostenbewust werken. Denken in ROI en risico.",
-    "overheid": "Overheidsmedewerkers verantwoordelijk voor digitale toegankelijkheid. Moeten voldoen aan Wdo. Complexe organisatie, veel stakeholders. Willen echt verbeteren.",
+    "overheid": "Overheidsmedewerkers verantwoordelijk voor digitale toegankelijkheid. Moeten voldoen aan BDTO (Besluit digitale toegankelijkheid overheid). Complexe organisatie, veel stakeholders. Willen echt verbeteren.",
     "developers": "Front-end developers en technische teams. Willen technische diepgang. Zoeken een partner die hun taal spreekt.",
     "agencies": "Web agencies die klanten moeten adviseren over WCAG. Zoeken een betrouwbare partner voor audits. Willen hun eigen kennis opbouwen.",
     "e-commerce": "Webshop-eigenaren en e-commerce managers. EAA raakt hen direct. Denken in conversie, omzet en klantbereik. Elke barrière = gemiste verkoop.",

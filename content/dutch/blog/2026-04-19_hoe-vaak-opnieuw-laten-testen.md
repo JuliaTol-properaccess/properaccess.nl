@@ -71,7 +71,7 @@ Hoe meer je team weet over toegankelijkheid, hoe minder problemen er bij de audi
 | Webshop met veel updates          | 2x per jaar                 |
 | Na grote redesign/migratie        | Direct na livegang          |
 | Na oplossen auditbevindingen      | Retest binnen 1-2 maanden   |
-| Overheid (Wdo-plichtig)           | Conform de monitoringscyclus |
+| Overheid (BDTO-plichtig)          | Conform de monitoringscyclus |
 
 ## De retest bij ons
 

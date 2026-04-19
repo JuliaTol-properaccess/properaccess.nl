@@ -3584,7 +3584,7 @@ html.dark .tool-verklaring__review-value {
   .tool-verklaring__btn { width: 100%; text-align: center; }
 }
 
-/* WDO status badge (A-D) in output */
+/* BDTO status badge (A-D) in output */
 .tool-verklaring__status-badge {
   display: inline-block;
   color: #fff;

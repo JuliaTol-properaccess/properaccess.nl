@@ -18,11 +18,11 @@ keywords:
 
 banner:
   title: "In minder dan 12 weken een app die beter verkoopt en voldoet aan de wet"
-  content: "Meer bereik, betere conversie en een sterker imago — door je app toegankelijker te maken voor een grotere doelgroep. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of de Wet digitale overheid (Wdo)."
+  content: "Meer bereik, betere conversie en een sterker imago — door je app toegankelijker te maken voor een grotere doelgroep. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
     - "**Meer bereik** — tot 20% extra potentiële gebruikers"
     - "**Betere conversie** en sterker imago"
-    - "**Compliant met EAA of Wdo**, zonder stress"
+    - "**Compliant met EAA of BDTO**, zonder stress"
   button:
     enable: true
     label: "Vraag een offerte aan"
@@ -47,7 +47,7 @@ faqs:
   - question: "Moeten we de broncode delen?"
     answer: "Nee, dat hoeft niet. Wij testen de app zoals een gebruiker die ervaart — via de App Store of TestFlight (iOS) en de Play Store of een APK (Android). Als je wilt dat we ook de code reviewen, kan dat als aanvulling."
   - question: "Zijn mobiele apps ook verplicht toegankelijk?"
-    answer: "Ja. De **European Accessibility Act** (EAA) geldt sinds juni 2025 en dekt ook mobiele apps van bedrijven die digitale diensten aanbieden. Denk aan bankieren, reizen boeken, ticketing en e-commerce. Overheidsapps moeten al sinds 2020 voldoen aan de Wet digitale overheid."
+    answer: "Ja. De **European Accessibility Act** (EAA) geldt sinds juni 2025 en dekt ook mobiele apps van bedrijven die digitale diensten aanbieden. Denk aan bankieren, reizen boeken, ticketing en e-commerce. Overheidsapps moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
   - question: "Wat is het verschil met een website-audit?"
     answer: "Bij een app-audit testen we op echte apparaten met native schermlezers (VoiceOver, TalkBack) in plaats van browsers. We testen touch-interactie, gebaren, schermrotatie, en platformspecifieke patronen die op het web niet bestaan — zoals swipe-navigatie, haptic feedback en systeeminstellingen voor toegankelijkheid."
   - question: "Kunnen jullie ook hybride apps testen?"

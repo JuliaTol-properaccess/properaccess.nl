@@ -70,7 +70,7 @@ Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet
 
 ## Wanneer heb je een audit nodig?
 
-- Voor een **nieuwe website** die moet voldoen aan het Wdo of de EAA
+- Voor een **nieuwe website** die moet voldoen aan het BDTO of de EAA
 - Na een **grote redesign of migratie**
 - Als je een **toegankelijkheidsverklaring** moet publiceren
 - Als je na een eerdere audit **verbeteringen hebt doorgevoerd** en wilt weten of je nu voldoet (retest)

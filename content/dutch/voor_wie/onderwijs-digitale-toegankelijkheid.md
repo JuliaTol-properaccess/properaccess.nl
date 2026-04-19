@@ -16,6 +16,7 @@ keywords:
   - e-learning toegankelijkheid
   - EAA onderwijs
   - Wdo onderwijs
+  - BDTO onderwijs
 
 banner:
   badge: "WCAG 2.2 en BDTO"
@@ -82,7 +83,7 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 {{< section-split title="De wetgeving is helder" bg="light" >}}
 
-- **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (Wdo) — WCAG 2.1 is al verplicht
+- **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (BDTO) — WCAG 2.1 is al verplicht
 - **Particuliere onderwijsinstellingen** vallen onder de European Accessibility Act (EAA) als ze digitale diensten aanbieden
 - Het VN-verdrag Handicap verplicht inclusief onderwijs — ook digitaal
 
@@ -210,7 +211,7 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 <details class="faq-item">
 <summary class="faq-question">Valt ons type instelling onder de wetgeving?</summary>
 <div class="faq-answer">
-<p>Publiek gefinancierde instellingen (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen onder het Wdo. Particuliere instellingen en EdTech-bedrijven vallen onder de EAA als ze digitale diensten aanbieden. In de praktijk: als studenten digitaal lesstof raadplegen, toetsen maken of zich inschrijven, dan is toegankelijkheid verplicht.</p>
+<p>Publiek gefinancierde instellingen (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen onder het BDTO. Particuliere instellingen en EdTech-bedrijven vallen onder de EAA als ze digitale diensten aanbieden. In de praktijk: als studenten digitaal lesstof raadplegen, toetsen maken of zich inschrijven, dan is toegankelijkheid verplicht.</p>
 </div>
 </details>
 

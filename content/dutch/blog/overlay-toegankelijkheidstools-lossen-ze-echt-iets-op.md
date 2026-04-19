@@ -5,7 +5,7 @@ slug: "overlay-toegankelijkheidstools-lossen-ze-echt-iets-op"
 categories: 
   - "tips-en-tools"
   - "de EAA"
-description: "Werken overlay-toegankelijkheidstools echt? Mini-onderzoek naar widgets, WCAG-problemen, EAA/WDO-compliance en gebruikerservaring."
+description: "Werken overlay-toegankelijkheidstools echt? Mini-onderzoek naar widgets, WCAG-problemen, EAA/BDTO-compliance en gebruikerservaring."
 keywords:
   - overlay toegankelijkheidstools
   - accessibility overlay wcag
@@ -17,7 +17,7 @@ aliases:
 
 ## Waarom dit mini-onderzoek
 
-Veel teams vragen me of je digitale toegankelijkheid kunt “fixen” door een overlay of widget toe te voegen die fouten automatisch oplost. En, in het verlengde daarvan: voldoe je met zo’n tool meteen aan de wet ([EAA](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32016L2102) of [WDO](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/wetgeving/wet-digitale-overheid/))?  
+Veel teams vragen me of je digitale toegankelijkheid kunt “fixen” door een overlay of widget toe te voegen die fouten automatisch oplost. En, in het verlengde daarvan: voldoe je met zo’n tool meteen aan de wet ([EAA](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32016L2102) of [BDTO](https://wetten.overheid.nl/BWBR0040936))?  
 
 Voor dit mini‑onderzoek bekeek ik drie commerciële toegankelijkheidstools die je als laag over een website plaatst:
 
@@ -131,7 +131,7 @@ Een beetje — soms. Ze bieden knoppen die bepaalde visuele aspecten tijdelijk v
 
 ### Voldoet een website aan de wet door zo’n tool te implementeren?
 
-Nee. De tools creëren hooguit testcondities (bijv. extra letterspatiëring) maar repareren de onderliggende problemen niet. Ze sporen veel issues niet op en regelen geen structurele WCAG‑conformiteit of wettelijke naleving (EAA/WDO).
+Nee. De tools creëren hooguit testcondities (bijv. extra letterspatiëring) maar repareren de onderliggende problemen niet. Ze sporen veel issues niet op en regelen geen structurele WCAG‑conformiteit of wettelijke naleving (EAA/BDTO).
 
 ### Zijn de tools zelf toegankelijk?
 

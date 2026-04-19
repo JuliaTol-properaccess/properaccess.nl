@@ -25,11 +25,11 @@ keywords:
 
 banner:
   title: "In minder dan 12 weken een toegankelijke website of app"
-  content: "Meer bereik, betere conversie en een sterker imago — door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of de Wet digitale overheid (Wdo)."
+  content: "Meer bereik, betere conversie en een sterker imago — door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
     - "**Meer bereik** — tot 20% extra potenti&euml;le klanten"
     - "**Betere conversie** en sterker imago"
-    - "**Compliant** met EAA of Wdo, zonder stress"
+    - "**Compliant** met EAA of BDTO, zonder stress"
   button:
     enable: true
     label: "Plan een gratis kennismaking (30 min)"
@@ -51,7 +51,7 @@ faqs:
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
   - question: "Is dit verplicht voor ons?"
-    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten — webshops, bankieren, reizen boeken, e-books, communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan de Wet digitale overheid."
+    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten — webshops, bankieren, reizen boeken, e-books, communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
   - question: "Wat als we niet technisch zijn?"
     answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
   - question: "Kunnen jullie ook de problemen oplossen?"

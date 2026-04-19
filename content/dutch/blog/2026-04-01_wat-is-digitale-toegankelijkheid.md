@@ -52,7 +52,7 @@ De internationale standaard voor digitale toegankelijkheid is **WCAG** (Web Cont
 3. **Begrijpelijk** — snapt iedereen hoe het werkt?
 4. **Robuust** — werkt het met verschillende hulptechnologieën?
 
-De meeste wetgeving (in Nederland het Wdo voor overheid en de EAA voor bedrijfsleven) is gebaseerd op WCAG 2.1 niveau AA.
+De meeste wetgeving (in Nederland het BDTO voor overheid en de EAA voor bedrijfsleven) is gebaseerd op WCAG 2.1 niveau AA.
 
 ## Waarom is het belangrijk?
 

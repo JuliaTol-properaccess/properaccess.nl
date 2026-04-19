@@ -1,6 +1,6 @@
 /**
- * Toegankelijkheidsverklaring Generator (WDO) — Proper Access
- * 6-step wizard to generate a WDO accessibility statement.
+ * Toegankelijkheidsverklaring Generator (BDTO) — Proper Access
+ * 6-step wizard to generate a BDTO accessibility statement.
  */
 (function () {
   "use strict";

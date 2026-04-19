@@ -80,7 +80,7 @@ def build_user_prompt(topic: str, audience: str, lang: str, channel: str, contex
     """Build the user prompt for article generation."""
     audience_descriptions = {
         "bedrijfsleven": "Ondernemers en product owners van middelgrote en grote bedrijven die moeten voldoen aan de European Accessibility Act. Ze willen weten hoe ze efficiënt en kostenbewust tot een toegankelijk resultaat komen.",
-        "overheid": "Medewerkers van overheidsinstanties die verantwoordelijk zijn voor digitale toegankelijkheid. Ze moeten voldoen aan de Wdo en willen echt verbeteren, niet alleen een vinkje zetten.",
+        "overheid": "Medewerkers van overheidsinstanties die verantwoordelijk zijn voor digitale toegankelijkheid. Ze moeten voldoen aan het BDTO (Besluit digitale toegankelijkheid overheid) en willen echt verbeteren, niet alleen een vinkje zetten.",
         "developers": "Webdevelopers en front-end engineers die willen leren hoe ze toegankelijke code schrijven. Ze waarderen technische diepgang en concrete code-voorbeelden.",
         "product owners": "Product owners die verantwoordelijk zijn voor websites of webshops. Ze hoeven niet zelf te coderen maar moeten wel begrijpen wat er nodig is en goede beslissingen nemen.",
         "agencies": "Web agencies die hun klanten willen helpen met digitale toegankelijkheid. Ze zoeken een betrouwbare partner en willen hun eigen kennis opbouwen.",

@@ -1,12 +1,13 @@
 ---
-title: "Toegankelijkheidsverklaring opstellen (WDO)"
-description: "Genereer een toegankelijkheidsverklaring voor culturele en onderwijsinstellingen onder de Wet digitale overheid. Stap voor stap, gratis."
+title: "Toegankelijkheidsverklaring opstellen (BDTO)"
+description: "Genereer een toegankelijkheidsverklaring voor culturele en onderwijsinstellingen onder het Besluit digitale toegankelijkheid overheid. Stap voor stap, gratis."
 layout: "verklaring-wdo"
 gratis: true
 weight: 11
 doelgroep: ["Manager"]
 keywords:
   - toegankelijkheidsverklaring
+  - BDTO
   - WDO
   - Wet digitale overheid
   - museum toegankelijkheid

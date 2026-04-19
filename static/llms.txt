@@ -14,7 +14,7 @@
 
 ## Sectoren
 
-- [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): Wdo-compliance voor gemeenten en uitvoeringsorganisaties
+- [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): BDTO-compliance voor gemeenten en uitvoeringsorganisaties
 - [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA-compliance voor webshops en e-diensten
 - [Cultuur en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): Toegankelijke websites voor musea, theaters en attracties
 - [Digital agencies](https://www.properaccess.nl/digital-agency/): Samenwerking met agencies op toegankelijkheidsprojecten

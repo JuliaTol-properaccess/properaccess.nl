@@ -22,9 +22,9 @@ image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 
 Digitale toegankelijkheid is in Nederland inmiddels voor een groot deel van de organisaties verplicht. Welke wet voor jou geldt, hangt af van het type organisatie.
 
-## Overheid en publieke sector — het Wdo
+## Overheid en publieke sector — het BDTO
 
-Het **Wet digitale overheid (Wdo)** en het daaronder vallende **Besluit digitale toegankelijkheid overheid** is al sinds 2018 van kracht. Het geldt voor:
+Het **Besluit digitale toegankelijkheid overheid (BDTO)** is al sinds 2018 van kracht. Het geldt voor:
 
 - Rijksoverheid, provincies, gemeenten, waterschappen
 - Zelfstandige bestuursorganen (ZBO's)
@@ -57,7 +57,7 @@ De ACM (Autoriteit Consument & Markt).
 
 ## Onderwijs
 
-Onderwijsinstellingen die door de overheid gefinancierd worden vallen onder het Wdo. Dat geldt voor:
+Onderwijsinstellingen die door de overheid gefinancierd worden vallen onder het BDTO. Dat geldt voor:
 
 - Universiteiten en hogescholen
 - MBO-instellingen
@@ -67,7 +67,7 @@ Digitale leeromgevingen, studentenportalen en websites moeten dus ook toegankeli
 
 ## Zorg
 
-Zorginstellingen die publiek gefinancierd worden (via de Wlz, Zvw of Wmo) vallen doorgaans ook onder het Wdo. Private zorginstellingen die diensten aan consumenten aanbieden vallen mogelijk onder de EAA.
+Zorginstellingen die publiek gefinancierd worden (via de Wlz, Zvw of Wmo) vallen doorgaans ook onder het BDTO. Private zorginstellingen die diensten aan consumenten aanbieden vallen mogelijk onder de EAA.
 
 ## En als je niet verplicht bent?
 

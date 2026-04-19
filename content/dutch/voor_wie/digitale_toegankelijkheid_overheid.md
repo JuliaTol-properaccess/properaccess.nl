@@ -7,7 +7,7 @@ url: "/digitale-toegankelijkheid-overheid/"
 aliases:
   - /digitale_toegankelijkheid_overheid/
 layout: "single"
-description: "Voldoe aan de Wet digitale overheid (WDO) met een grondige audit en praktische begeleiding. Voor gemeenten, ministeries en uitvoeringsorganisaties die echt vooruitgang willen boeken."
+description: "Voldoe aan het Besluit digitale toegankelijkheid overheid (BDTO) met een grondige audit en praktische begeleiding. Voor gemeenten, ministeries en uitvoeringsorganisaties die echt vooruitgang willen boeken."
 keywords:
   - digitale toegankelijkheid overheid
   - WDO audit
@@ -42,8 +42,8 @@ trust:
     - "Gemeente 's-Hertogenbosch"
 
 faqs:
-  - question: "Voldoet een audit van Proper Access aan de Wet digitale overheid (WDO)?"
-    answer: "Ja. Onze audits zijn gebaseerd op WCAG 2.2 (niveau A + AA) en uitgevoerd volgens de formele richtlijnen van DigiToegankelijk. Ze voldoen volledig aan de eisen uit de WDO. Je kunt ons rapport gebruiken om je toegankelijkheidsverklaring te onderbouwen."
+  - question: "Voldoet een audit van Proper Access aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
+    answer: "Ja. Onze audits zijn gebaseerd op WCAG 2.2 (niveau A + AA) en uitgevoerd volgens de formele richtlijnen van DigiToegankelijk. Ze voldoen volledig aan de eisen uit het BDTO. Je kunt ons rapport gebruiken om je toegankelijkheidsverklaring te onderbouwen."
   - question: "Kunnen jullie helpen bij het opstellen of actualiseren van een toegankelijkheidsverklaring?"
     answer: "Zeker. Na de audit helpen we je bij het opstellen van een correcte en actuele toegankelijkheidsverklaring, conform het format van toegankelijkheidsverklaring.nl. We begeleiden je ook in de Mijn-omgeving van DigiToegankelijk en bij het verwerken van feedback via DIP."
   - question: "Kunnen jullie ook apps en intranetten toetsen?"

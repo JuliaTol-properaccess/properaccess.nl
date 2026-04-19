@@ -28,7 +28,7 @@ Maar dat betekent niet dat valide HTML onbelangrijk is. De problemen die er **ec
 <div class="academy-tip">
 <p class="academy-tip__title">WCAG 2.1 vs. 2.2</p>
 
-Als je auditeert tegen WCAG 2.1 (bijvoorbeeld voor het Wdo), dan is SC 4.1.1 nog van toepassing. Bij WCAG 2.2 is het afgeschaft, maar de fouten die het criterium beschreef zijn nog steeds relevant -- ze vallen alleen onder andere criteria.
+Als je auditeert tegen WCAG 2.1 (bijvoorbeeld voor het BDTO), dan is SC 4.1.1 nog van toepassing. Bij WCAG 2.2 is het afgeschaft, maar de fouten die het criterium beschreef zijn nog steeds relevant -- ze vallen alleen onder andere criteria.
 
 </div>
 

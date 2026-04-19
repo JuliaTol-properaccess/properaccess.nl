@@ -25,7 +25,7 @@ In dit artikel neem ik je mee door de zes stappen die we bij Proper Access doorl
 
 Kort antwoord: waarschijnlijk wel.
 
-- **Publiek gefinancierde instellingen** (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen al langer onder het Besluit digitale toegankelijkheid overheid (Wdo). WCAG 2.1 niveau AA is hier al verplicht.
+- **Publiek gefinancierde instellingen** (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen al langer onder het Besluit digitale toegankelijkheid overheid (BDTO). WCAG 2.1 niveau AA is hier al verplicht.
 - **Particuliere onderwijsinstellingen** vallen onder de EAA zodra ze digitale diensten aanbieden aan studenten. Denk aan online inschrijving, digitaal leermateriaal, toetsen via een LMS.
 - Het **VN-verdrag Handicap** verplicht inclusief onderwijs -- ook digitaal.
 
@@ -141,7 +141,7 @@ Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids
 
 Dit hangt af van je type instelling:
 
-- **Publieke instellingen** (universiteiten, hogescholen, mbo's): de verplichting onder het Wdo geldt al. Je had gisteren klaar moeten zijn.
+- **Publieke instellingen** (universiteiten, hogescholen, mbo's): de verplichting onder het BDTO geldt al. Je had gisteren klaar moeten zijn.
 - **Particuliere instellingen** onder de EAA: alles wat je na 28 juni 2025 lanceert of substantieel wijzigt, moet direct voldoen. Bestaande platformen hebben een overgangsperiode tot 28 juni 2030.
 
 Maar wacht niet op de deadline. Bij een gemiddelde onderwijsinstelling duurt het traject van eerste audit tot een volledig toegankelijk resultaat al snel zes tot twaalf maanden. Je hebt te maken met meerdere platformen, externe leveranciers en honderden content-auteurs. Dat kost tijd.

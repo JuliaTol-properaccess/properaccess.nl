@@ -55,7 +55,7 @@ Maar het gaat verder dan alleen ticketing. De EAA is van toepassing op de hele k
 - **Digitale informatievoorziening** — tentoonstellingspagina's, openingstijden, routebeschrijvingen
 - **Nieuwsbrieven en e-mailcommunicatie**
 
-De Wet digitale overheid (Wdo, voorheen Besluit digitale overheid) geldt daarnaast voor musea en instellingen die publiek gefinancierd zijn. Die moeten ook hun websites en apps toegankelijk maken.
+Het Besluit digitale toegankelijkheid overheid (BDTO) geldt daarnaast voor musea en instellingen die publiek gefinancierd zijn. Die moeten ook hun websites en apps toegankelijk maken.
 
 ## De 6 meest voorkomende problemen
 

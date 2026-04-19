@@ -196,7 +196,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-universal-access" aria-hidden="true"></i></div>
   <h3 class="card__title">WCAG & wetgeving</h3>
-  <p>WCAG 2.2, EN 301 549, European Accessibility Act, Wet digitale overheid — we kennen de regels en helpen je ze toe te passen.</p>
+  <p>WCAG 2.2, EN 301 549, European Accessibility Act, Besluit digitale toegankelijkheid overheid (BDTO) — we kennen de regels en helpen je ze toe te passen.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
