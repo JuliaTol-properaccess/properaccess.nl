@@ -17,13 +17,12 @@ keywords:
   - EN 301 549
 
 banner:
-  title: "Werkt je app ook als je niet kunt zien, tikken of horen?"
-  content: "Wij testen mobiele apps op toegankelijkheid — handmatig, op echte apparaten, met dezelfde hulpsoftware die je gebruikers dagelijks inzetten. **Je krijgt een rapport per scherm en per element**, met screenshots, uitleg en concrete oplossingen."
+  title: "In minder dan 12 weken een app die beter verkoopt en voldoet aan de wet"
+  content: "Meer bereik, betere conversie en een sterker imago — door je app toegankelijker te maken voor een grotere doelgroep. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of de Wet digitale overheid (Wdo)."
   bullets:
-    - "**iOS en Android** — getest op echte iPhones, iPads en Android-toestellen"
-    - "**Rapport per element** — niet per succescriterium, maar per knop, formulier en scherm"
-    - "**Onafhankelijk** — geen eigen software, geen nevendiensten, geen belangenconflict"
-    - "**Onbeperkte support** — je mag na het rapport zoveel vragen stellen als je wilt"
+    - "**Meer bereik** — tot 20% extra potentiële gebruikers"
+    - "**Betere conversie** en sterker imago"
+    - "**Compliant met EAA of Wdo**, zonder stress"
   button:
     enable: true
     label: "Vraag een offerte aan"

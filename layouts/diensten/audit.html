@@ -175,10 +175,26 @@
         <div class="hp-vp-methods" aria-hidden="true">
           <span class="hp-vp-methods__label">Handmatig getest met:</span>
           <ul class="hp-vp-methods__list">
+            {{ if eq .File.BaseFileName "app-toegankelijkheid-testen" }}
+            <li><span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span> Schermlezer (TalkBack en VoiceOver)</li>
+            {{ else }}
             <li><span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span> Schermlezer (VoiceOver, NVDA, JAWS)</li>
+            {{ end }}
+            {{ if eq .File.BaseFileName "app-toegankelijkheid-testen" }}
+            <li><span class="material-symbols-outlined" aria-hidden="true">keyboard</span> Extern toetsenbord</li>
+            {{ else }}
             <li><span class="material-symbols-outlined" aria-hidden="true">keyboard</span> Alleen toetsenbord</li>
+            {{ end }}
+            {{ if eq .File.BaseFileName "app-toegankelijkheid-testen" }}
+            <li><span class="material-symbols-outlined" aria-hidden="true">zoom_in</span> Tekstvergroting</li>
+            {{ else }}
             <li><span class="material-symbols-outlined" aria-hidden="true">zoom_in</span> Zoom tot 400%</li>
+            {{ end }}
+            {{ if eq .File.BaseFileName "app-toegankelijkheid-testen" }}
+            <li><span class="material-symbols-outlined" aria-hidden="true">tab</span> Meerdere devices</li>
+            {{ else }}
             <li><span class="material-symbols-outlined" aria-hidden="true">tab</span> Meerdere browsers &amp; devices</li>
+            {{ end }}
             <li><span class="material-symbols-outlined" aria-hidden="true">check_indeterminate_small</span> Formulieren met autofill</li>
             <li><span class="material-symbols-outlined" aria-hidden="true">filter_center_focus</span> Focus-volgorde</li>
           </ul>
@@ -187,6 +203,19 @@
       </div>
       <div class="hp-vp__content">
         <span class="hp-vp__eyebrow">De aanpak</span>
+        {{ if eq .File.BaseFileName "app-toegankelijkheid-testen" }}
+        <h3 class="hp-vp__title">Bij elke bevinding: de gebaren waarmee je het probleem zelf reproduceert</h3>
+        <p class="hp-vp__body">
+          Dit doet niemand anders. Bij elke bevinding leggen we uit met welke gebaren en
+          schermlezer-commando's je het probleem kunt nabootsen. En elk rapport bevat een
+          instructie voor het gebruik van de schermlezer van dat platform &mdash; VoiceOver voor iOS,
+          TalkBack voor Android. Zo helpen we je team niet alleen met oplossen, maar leer je ook zelf testen.
+        </p>
+        <a href="/app-toegankelijkheid-testen/#offerte" class="hp-btn hp-btn--primary">
+          Vraag een offerte aan
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+        {{ else }}
         <h3 class="hp-vp__title">Handmatig getest door een senior auditor &mdash; niet door een scanner</h3>
         <p class="hp-vp__body">
           Automatische tools vinden slechts ~30% van WCAG-issues. Ze starten geen schermlezer,
@@ -197,6 +226,7 @@
           Bekijk een voorbeeldrapport
           <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
         </a>
+        {{ end }}
       </div>
     </div>
 
