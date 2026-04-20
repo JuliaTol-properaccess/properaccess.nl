@@ -34,12 +34,78 @@
           {{ end }}
         {{ end }}
       </div>
-      <div class="hp-hero__visual" aria-hidden="true">
-        {{ partial "voor-wie/svg-ecommerce.html" . }}
+      <div class="hp-hero__visual">
+        <div class="hp-hero__form-card">
+          <h2 class="hp-hero__form-title">Liever eerst weten waar je webshop staat?</h2>
+          <p class="hp-hero__form-intro">
+            Vraag een gratis quickscan aan en ontvang binnen 5 werkdagen een overzicht
+            van de grootste toegankelijkheidsproblemen op je webshop.
+          </p>
+          <form class="hp-form" id="ec-qs-form" novalidate>
+            <input type="hidden" name="_subject" value="Nieuwe quickscan aanvraag (e-commerce pagina)" />
+            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="ec-qs-url">
+                URL van je webshop <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="url" id="ec-qs-url" name="website_url" required autocomplete="url" placeholder="https://jouwwebshop.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="ec-qs-name">
+                Je naam <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="text" id="ec-qs-name" name="naam" required autocomplete="name" placeholder="Voornaam Achternaam" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="ec-qs-email">
+                E-mailadres <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="email" id="ec-qs-email" name="email" required autocomplete="email" placeholder="naam@bedrijf.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="ec-qs-tel">
+                Telefoonnummer <span class="hp-form__optional">(optioneel)</span>
+              </label>
+              <input class="hp-form__input" type="tel" id="ec-qs-tel" name="telefoon" autocomplete="tel" placeholder="06 12345678" />
+            </div>
+
+            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+              Vraag gratis quickscan aan
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var form = document.getElementById('ec-qs-form');
+  if (!form) return;
+  var FORMSPREE_URL = 'https://formspree.io/f/xvzwowrw';
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var original = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Versturen...'; }
+    var data = new FormData(form);
+    fetch(FORMSPREE_URL, {
+      method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) { window.location.href = '/webshop-quickscan-bedankt/'; }
+      else { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
+    }).catch(function() {
+      if (btn) { btn.disabled = false; btn.innerHTML = original; }
+    });
+  });
+})();
+</script>
 {{ end }}
 
 <!-- ─── TRUST BAR ─── -->
