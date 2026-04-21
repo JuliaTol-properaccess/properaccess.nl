@@ -1,0 +1,163 @@
+{{/*
+  Horizontale tijdlijn van vandaag tot +3 jaar met bolletjes per website.
+  Data: site.Data.amersfoort.websites (zie data/amersfoort.yaml)
+*/}}
+
+{{ $data := site.Data.amersfoort }}
+{{ $today := now }}
+{{ $windowEnd := $today.AddDate 3 0 0 }}
+{{ $windowMs := sub $windowEnd.Unix $today.Unix }}
+
+{{/* buckets */}}
+{{ $past := slice }}
+{{ $future := slice }}
+{{ $inWindow := slice }}
+{{ range $data.websites }}
+  {{ if .verloopt_op }}
+    {{ $ts := (time .verloopt_op).Unix }}
+    {{ if lt $ts $today.Unix }}
+      {{ $past = $past | append . }}
+    {{ else if gt $ts $windowEnd.Unix }}
+      {{ $future = $future | append . }}
+    {{ else }}
+      {{ $inWindow = $inWindow | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* sort inWindow by verloopt_op asc */}}
+{{ $inWindow = sort $inWindow "verloopt_op" "asc" }}
+
+{{/* Assign lane 0..3 in chronological order (round-robin).
+     Adjacent items krijgen altijd een andere lane, waardoor labels niet overlappen. */}}
+{{ $laneCount := 4 }}
+{{ $items := slice }}
+{{ range $i, $w := $inWindow }}
+  {{ $ts := (time $w.verloopt_op).Unix }}
+  {{ $lane := mod $i $laneCount }}
+  {{ $pos := mul (div (sub $ts $today.Unix) (float $windowMs)) 100 }}
+  {{ $items = $items | append (dict "w" $w "lane" $lane "pos" $pos "ts" $ts) }}
+{{ end }}
+
+{{/* year markers */}}
+{{ $years := slice }}
+{{ range $i := seq 0 3 }}
+  {{ $y := ($today.AddDate $i 0 0).Year }}
+  {{ $yStart := time (printf "%d-01-01" $y) }}
+  {{ $yTs := $yStart.Unix }}
+  {{ if and (ge $yTs $today.Unix) (le $yTs $windowEnd.Unix) }}
+    {{ $yPos := mul (div (sub $yTs $today.Unix) (float $windowMs)) 100 }}
+    {{ $years = $years | append (dict "year" $y "pos" $yPos) }}
+  {{ end }}
+{{ end }}
+
+{{/* quarter ticks */}}
+{{ $quarters := slice }}
+{{ range $m := seq 0 36 3 }}
+  {{ $tick := $today.AddDate 0 $m 0 }}
+  {{ if le $tick.Unix $windowEnd.Unix }}
+    {{ $qPos := mul (div (sub $tick.Unix $today.Unix) (float $windowMs)) 100 }}
+    {{ $quarters = $quarters | append (dict "pos" $qPos "label" (time.Format "Jan" $tick)) }}
+  {{ end }}
+{{ end }}
+
+<section class="amf-section amf-timeline-section" aria-labelledby="amf-timeline-heading">
+  <div class="hp-container">
+    <h2 id="amf-timeline-heading" class="amf-section__title">Tijdlijn komende 3 jaar</h2>
+    <p class="amf-section__lead">
+      Elke bol markeert de verloopdatum van een verklaring (rapportdatum + 3 jaar). Klik op een bol voor de verklaring.
+    </p>
+
+    {{ with $past }}
+    <div class="amf-callout amf-callout--past" role="region" aria-label="Al verlopen verklaringen">
+      <h3 class="amf-callout__title">Verlopen — actie gewenst <span class="amf-callout__count">{{ len . }}</span></h3>
+      <ul class="amf-callout__list">
+        {{ range . }}
+        <li>
+          <a href="{{ .verklaring_url }}" target="_blank" rel="noopener">{{ .naam }}</a>
+          <span class="amf-badge amf-badge--{{ .status | lower }}">{{ .status }}</span>
+          <span class="amf-callout__date">verlopen op {{ time.Format ":date_medium" .verloopt_op }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    <div class="amf-timeline" role="group" aria-label="Tijdlijn van verloopdata">
+      <div class="amf-timeline__scroll">
+        <div class="amf-timeline__canvas">
+
+          {{/* Jaar-labels */}}
+          <div class="amf-timeline__years" aria-hidden="true">
+            {{ range $years }}
+              <span class="amf-timeline__year" style="left: {{ printf "%.2f" .pos }}%;">{{ .year }}</span>
+            {{ end }}
+          </div>
+
+          {{/* As + kwartaal-ticks */}}
+          <div class="amf-timeline__axis" aria-hidden="true">
+            {{ range $quarters }}
+              <span class="amf-timeline__tick" style="left: {{ printf "%.2f" .pos }}%;">
+                <span class="amf-timeline__tick-label">{{ .label }}</span>
+              </span>
+            {{ end }}
+          </div>
+
+          {{/* Vandaag-marker */}}
+          <span class="amf-timeline__today" style="left: 0%;" aria-hidden="true">
+            <span class="amf-timeline__today-label">Vandaag</span>
+          </span>
+
+          {{/* Bolletjes */}}
+          <ul class="amf-timeline__dots">
+            {{ range $items }}
+              {{ $w := .w }}
+              <li class="amf-timeline__item amf-timeline__item--lane-{{ .lane }} amf-timeline__item--status-{{ $w.status | lower }}"
+                  style="left: {{ printf "%.2f" .pos }}%;">
+                <a class="amf-timeline__dot"
+                   href="{{ $w.verklaring_url }}"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="{{ $w.naam }}, status {{ $w.status_label }}, verloopt op {{ time.Format ":date_long" $w.verloopt_op }}. Open verklaring in nieuw tabblad.">
+                  <span class="amf-timeline__dot-inner">{{ $w.status }}</span>
+                </a>
+                <span class="amf-timeline__label">
+                  <span class="amf-timeline__label-name">{{ $w.naam }}</span>
+                  <span class="amf-timeline__label-date">{{ time.Format "Jan 2006" $w.verloopt_op }}</span>
+                  {{ with $w.ons_rapport }}
+                  <a class="amf-timeline__label-report" href="{{ . }}" target="_blank" rel="noopener">
+                    Eigen rapport
+                  </a>
+                  {{ end }}
+                </span>
+              </li>
+            {{ end }}
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="amf-timeline__legend" aria-hidden="true">
+        <span class="amf-legend__item"><span class="amf-badge amf-badge--a">A</span> Voldoet volledig</span>
+        <span class="amf-legend__item"><span class="amf-badge amf-badge--b">B</span> Voldoet gedeeltelijk</span>
+        <span class="amf-legend__item"><span class="amf-badge amf-badge--d">D</span> Voldoet niet</span>
+        <span class="amf-legend__item"><span class="amf-timeline__legend-mark amf-timeline__legend-mark--ours"></span> Wij deden de audit</span>
+      </div>
+    </div>
+
+    {{ with $future }}
+    <div class="amf-callout amf-callout--future" role="region" aria-label="Verklaringen na de tijdlijn">
+      <h3 class="amf-callout__title">Na {{ time.Format ":date_long" $windowEnd }} <span class="amf-callout__count">{{ len . }}</span></h3>
+      <ul class="amf-callout__list">
+        {{ range . }}
+        <li>
+          <a href="{{ .verklaring_url }}" target="_blank" rel="noopener">{{ .naam }}</a>
+          <span class="amf-badge amf-badge--{{ .status | lower }}">{{ .status }}</span>
+          <span class="amf-callout__date">verloopt {{ time.Format ":date_medium" .verloopt_op }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</section>

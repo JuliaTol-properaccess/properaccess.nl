@@ -1,0 +1,168 @@
+{{ define "main" }}
+{{ $data := site.Data.amersfoort }}
+
+<div id="amf-gate" class="amf-gate" hidden>
+  <div class="amf-gate__box">
+    <h1 class="amf-gate__title">Beveiligde pagina</h1>
+    <p class="amf-gate__lead">Deze pagina is alleen bedoeld voor het team van gemeente Amersfoort. Vul het wachtwoord in om door te gaan.</p>
+    <form id="amf-gate-form" class="amf-gate__form" autocomplete="off">
+      <label for="amf-gate-input" class="amf-gate__label">Wachtwoord</label>
+      <input id="amf-gate-input" type="password" class="amf-gate__input" autocomplete="current-password" required>
+      <button type="submit" class="amf-gate__button">Openen</button>
+      <p id="amf-gate-error" class="amf-gate__error" hidden>Onjuist wachtwoord.</p>
+    </form>
+  </div>
+</div>
+
+<div id="amf-content" hidden>
+
+<section class="amf-hero">
+  <div class="hp-container">
+    <span class="amf-hero__badge">Interne planningspagina</span>
+    <h1 class="amf-hero__title">{{ .Title }}</h1>
+    <p class="amf-hero__lead">
+      Elk onderzoeksrapport onder het Besluit digitale toegankelijkheid overheid (BDTO) is drie jaar geldig. Deze tijdlijn laat zien wanneer welke verklaring van gemeente Amersfoort om een nieuwe audit vraagt.
+    </p>
+    {{ with $data.laatst_bijgewerkt }}
+    <p class="amf-hero__meta">
+      Bron: <a href="{{ $data.bron }}" target="_blank" rel="noopener">toegankelijkheidsverklaring.nl</a>
+      · Laatst bijgewerkt: {{ time.Format ":date_long" . }}
+      · {{ len $data.websites }} verklaringen
+    </p>
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "amersfoort-timeline.html" . }}
+
+<section class="amf-section">
+  <div class="hp-container">
+    <h2 class="amf-section__title">Alle verklaringen</h2>
+    <p class="amf-section__lead">
+      Volledige tabel — handig voor screenreader-gebruikers en voor het kopi&euml;ren naar een werklijst.
+    </p>
+
+    <div class="amf-table-wrap">
+      <table class="amf-table">
+        <thead>
+          <tr>
+            <th scope="col">Website</th>
+            <th scope="col">Organisatie</th>
+            <th scope="col">Status</th>
+            <th scope="col">Rapportdatum</th>
+            <th scope="col">Verloopt op</th>
+            <th scope="col">Verklaring</th>
+            <th scope="col">Ons rapport</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $data.websites }}
+          <tr class="amf-table__row amf-table__row--status-{{ .status | lower }}">
+            <td>
+              <a href="{{ .url }}" target="_blank" rel="noopener">{{ .naam }}</a>
+              <span class="amf-table__host">{{ .host }}</span>
+            </td>
+            <td>{{ .organisatie }}</td>
+            <td>
+              <span class="amf-badge amf-badge--{{ .status | lower }}" title="{{ .status_label }}">{{ .status }}</span>
+            </td>
+            <td>
+              {{ if .rapportdatum }}{{ time.Format ":date_medium" .rapportdatum }}{{ else }}—{{ end }}
+              {{ if eq .datum_bron "laatst_gewijzigd_fallback" }}<span class="amf-table__note" title="Geen expliciete rapportdatum in verklaring — 'laatst gewijzigd' als benadering gebruikt">*</span>{{ end }}
+            </td>
+            <td>
+              {{ if .verloopt_op }}
+                <strong>{{ time.Format ":date_medium" .verloopt_op }}</strong>
+              {{ else }}—{{ end }}
+            </td>
+            <td>
+              <a href="{{ .verklaring_url }}" target="_blank" rel="noopener">Verklaring</a>
+            </td>
+            <td>
+              {{ if .ons_rapport }}
+                <a href="{{ .ons_rapport }}" target="_blank" rel="noopener">Rapport</a>
+              {{ else }}—{{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="amf-legend">
+      <span class="amf-legend__item"><span class="amf-badge amf-badge--a">A</span> Voldoet volledig</span>
+      <span class="amf-legend__item"><span class="amf-badge amf-badge--b">B</span> Voldoet gedeeltelijk</span>
+      <span class="amf-legend__item"><span class="amf-badge amf-badge--d">D</span> Voldoet niet</span>
+      <span class="amf-legend__note">* Rapportdatum niet in verklaring gevonden — "laatst gewijzigd" gebruikt als benadering.</span>
+    </p>
+  </div>
+</section>
+
+<section class="amf-cta">
+  <div class="hp-container">
+    <h2>Audit opnieuw inplannen?</h2>
+    <p>Neem contact op met Julia voor een retest of volledige heraudit — bel 085 5055 890 of mail <a href="mailto:juliatol@properaccess.nl">juliatol@properaccess.nl</a>.</p>
+  </div>
+</section>
+
+</div>{{/* /#amf-content */}}
+
+<script>
+(function() {
+  var HASH = "9bc4fe75c29c01d6f23457a6d966b8d67a38e37a8030b1128db8cbfd4ed32af5";
+  var STORAGE_KEY = "amf-unlocked-v1";
+  var gate = document.getElementById("amf-gate");
+  var content = document.getElementById("amf-content");
+  var form = document.getElementById("amf-gate-form");
+  var input = document.getElementById("amf-gate-input");
+  var error = document.getElementById("amf-gate-error");
+
+  function reveal() {
+    if (gate) gate.hidden = true;
+    if (content) content.hidden = false;
+    document.documentElement.classList.remove("amf-locked");
+  }
+
+  function lock() {
+    document.documentElement.classList.add("amf-locked");
+    if (gate) gate.hidden = false;
+    if (content) content.hidden = true;
+    setTimeout(function() { if (input) input.focus(); }, 50);
+  }
+
+  async function sha256(text) {
+    var buf = new TextEncoder().encode(text);
+    var hash = await crypto.subtle.digest("SHA-256", buf);
+    return Array.from(new Uint8Array(hash))
+      .map(function(b) { return b.toString(16).padStart(2, "0"); })
+      .join("");
+  }
+
+  try {
+    if (sessionStorage.getItem(STORAGE_KEY) === "1") {
+      reveal();
+    } else {
+      lock();
+    }
+  } catch (e) {
+    lock();
+  }
+
+  if (form) {
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      error.hidden = true;
+      var digest = await sha256(input.value);
+      if (digest === HASH) {
+        try { sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) {}
+        reveal();
+      } else {
+        error.hidden = false;
+        input.value = "";
+        input.focus();
+      }
+    });
+  }
+})();
+</script>
+
+{{ end }}

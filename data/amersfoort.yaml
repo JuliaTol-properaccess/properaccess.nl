@@ -1,0 +1,213 @@
+laatst_bijgewerkt: 2026-04-20
+bron: https://www.toegankelijkheidsverklaring.nl/register?w=amersfoort
+geldigheidsduur_jaren: 3
+websites:
+- organisatie: WerkgeversServicepunt regio Amersfoort
+  naam: WSP regio Amersfoort
+  url: https://www.wspregioamersfoort.nl/
+  host: wspregioamersfoort.nl
+  status: D
+  status_label: D - Voldoet niet
+  rapportdatum: &id001 2022-03-09
+  datum_bron: laatst_gewijzigd_fallback
+  laatst_gewijzigd: *id001
+  verloopt_op: 2025-03-09
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/6367
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Afspraken gemeente Amersfoort
+  url: https://afspraken.amersfoort.nl/
+  host: afspraken.amersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2023-04-25
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-07-05
+  verloopt_op: 2026-04-25
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/23947
+  ons_rapport: /rapporten/202603_afspraken.amersfoort.nl/
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Hetgroenehuisamersfoort
+  url: https://hetgroenehuisamersfoort.nl/
+  host: hetgroenehuisamersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2023-06-06
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-06-21
+  verloopt_op: 2026-06-06
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/23846
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Amersfoort in cijfers
+  url: https://www.amersfoortincijfers.nl
+  host: amersfoortincijfers.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2023-09-22
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2025-03-06
+  verloopt_op: 2026-09-22
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/26364
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Archiefweb Amersfoort
+  url: https://amersfoort.archiefweb.eu/#archive
+  host: amersfoort.archiefweb.eu
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2023-12-22
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-06-26
+  verloopt_op: 2026-12-22
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/23872
+  ons_rapport: null
+  auditor: null
+- organisatie: Bureau Regio Amersfoort
+  naam: Bureau Regio Amersfoort
+  url: https://bureauregioamersfoort.nl
+  host: bureauregioamersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2024-03-21
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-04-04
+  verloopt_op: 2027-03-21
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/23087
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Amersfoort.nl
+  url: https://www.amersfoort.nl
+  host: amersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (onderbouwing toereikend)
+  rapportdatum: 2024-04-25
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-07-08
+  verloopt_op: 2027-04-25
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/14044
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Checker Amersfoortisoleert.nl
+  url: https://amersfoortisoleert.nl/checker/
+  host: amersfoortisoleert.nl
+  status: A
+  status_label: A - Voldoet volledig (onderbouwing toereikend)
+  rapportdatum: 2024-06-28
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-08-02
+  verloopt_op: 2027-06-28
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/24270
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Doorstroompunt Regio Amersfoort
+  url: https://doorstroompuntregioamersfoort.nl/
+  host: doorstroompuntregioamersfoort.nl
+  status: A
+  status_label: A - Voldoet volledig (onderbouwing toereikend)
+  rapportdatum: 2024-12-05
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2024-12-16
+  verloopt_op: 2027-12-05
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/25752
+  ons_rapport: null
+  auditor: null
+- organisatie: Stichting Interconfessioneel Beroepsonderwijs en Volwasseneneducatie
+    regio Amersfoort
+  naam: MBO Amersfoort
+  url: https://www.mboamersfoort.nl/
+  host: mboamersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (voorlopige status)
+  rapportdatum: 2025-02-26
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-03-17
+  verloopt_op: 2028-02-26
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/28913
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Met Amersfoort
+  url: https://metamersfoort.nl
+  host: metamersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (voorlopige status)
+  rapportdatum: 2026-01-23
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-04-10
+  verloopt_op: 2029-01-23
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/19402
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Raadsinformatie Amersfoort
+  url: https://amersfoort.raadsinformatie.nl/
+  host: amersfoort.raadsinformatie.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (voorlopige status)
+  rapportdatum: 2026-01-29
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-04-20
+  verloopt_op: 2029-01-29
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/29080
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Licht van Herinnering - Joods monument Amersfoort
+  url: https://www.joodsmonumentamersfoort.nl/
+  host: joodsmonumentamersfoort.nl
+  status: A
+  status_label: A - Voldoet volledig (onderbouwing toereikend)
+  rapportdatum: 2026-03-06
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-03-24
+  verloopt_op: 2029-03-06
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/27004
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Centrum voor Archeologie
+  url: https://www.centrumvoorarcheologie.nl/
+  host: centrumvoorarcheologie.nl
+  status: A
+  status_label: A - Voldoet volledig (voorlopige status)
+  rapportdatum: 2026-03-12
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-04-03
+  verloopt_op: 2029-03-12
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/29025
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Soesterkwartier
+  url: https://soesterkwartier.nu/
+  host: soesterkwartier.nu
+  status: B
+  status_label: B - Voldoet gedeeltelijk (voorlopige status)
+  rapportdatum: 2026-03-13
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-04-16
+  verloopt_op: 2029-03-13
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/24013
+  ons_rapport: null
+  auditor: null
+- organisatie: Gemeente Amersfoort
+  naam: Financiën Amersfoort
+  url: https://financien.amersfoort.nl/
+  host: financien.amersfoort.nl
+  status: B
+  status_label: B - Voldoet gedeeltelijk (voorlopige status)
+  rapportdatum: 2026-03-19
+  datum_bron: rapportdatum
+  laatst_gewijzigd: 2026-04-16
+  verloopt_op: 2029-03-19
+  verklaring_url: https://www.toegankelijkheidsverklaring.nl/register/23758
+  ons_rapport: /rapporten/202603_financien.amersfoort.nl/
+  auditor: null
