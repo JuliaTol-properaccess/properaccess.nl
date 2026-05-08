@@ -12,7 +12,7 @@ slug: "contact"
 url: "/contact/"
 ---
 
-{{< section-cards title="Kies hoe je contact opneemt" columns="3" >}}
+{{< section-cards title="Kies hoe je contact opneemt" columns="4" >}}
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
   <h3 class="card__title">Bel of app</h3>
@@ -31,6 +31,16 @@ url: "/contact/"
   <h3 class="card__title">Plan een videocall</h3>
   <p>Liever even sparren in een videogesprek?</p>
   <p><a href="https://calendar.app.google/k4VvBfPKnH3Lk2ut8"><strong>Kies een moment via Google Meet</strong></a></p>
+</div>
+<div class="card">
+  <div class="card__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+  <h3 class="card__title">Ons kantoor</h3>
+  <address style="font-style: normal;">
+    <strong>Proper Access B.V.</strong><br>
+    Keizersgracht 520 H<br>
+    1017 EK Amsterdam<br>
+    Nederland
+  </address>
 </div>
 {{< /section-cards >}}
 
@@ -103,7 +113,7 @@ Soms wel. Neem direct contact op en vermeld dat het om spoed gaat — dan kijken
 <summary class="faq-question">Waar zijn jullie gevestigd?</summary>
 <div class="faq-answer">
 
-In Eemnes. Maar we werken volledig digitaal — dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
+Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digitaal — dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
 
 </div>
 </details>

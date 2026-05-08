@@ -40,18 +40,12 @@
           <p class="site-footer__tagline">
             {{ i18n "footer_tagline" | default "Onafhankelijk auditbureau voor digitale toegankelijkheid. Wij maken het internet bruikbaar voor iedereen." }}
           </p>
-          <div class="site-footer__social">
-            {{ range site.Data.social.main }}
-              <a
-                href="{{ .link | safeURL }}"
-                target="_blank"
-                rel="nofollow noopener"
-                aria-label="{{ .name }}"
-                class="site-footer__social-link">
-                <i class="{{ .icon }}"></i>
-              </a>
-            {{ end }}
-          </div>
+          <address class="site-footer__address">
+            Proper Access B.V.<br>
+            Keizersgracht 520 H<br>
+            1017 EK Amsterdam<br>
+            Nederland
+          </address>
         </div>
 
         <!-- Kolom 2: Diensten -->
@@ -78,13 +72,25 @@
           </ul>
         </div>
 
-        <!-- Kolom 4: Juridisch -->
+        <!-- Kolom 4: Juridisch + Social -->
         <div class="site-footer__col">
           <h4 class="site-footer__col-title">{{ i18n "footer_legal_title" | default "Juridisch" }}</h4>
           <ul class="site-footer__links">
             <li><a href="/privacyverklaring/">Privacy</a></li>
             <li><a href="/algemene-voorwaarden/">Algemene voorwaarden</a></li>
           </ul>
+          <div class="site-footer__social">
+            {{ range site.Data.social.main }}
+              <a
+                href="{{ .link | safeURL }}"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="{{ .name }}"
+                class="site-footer__social-link">
+                <i class="{{ .icon }}"></i>
+              </a>
+            {{ end }}
+          </div>
         </div>
 
       </div>

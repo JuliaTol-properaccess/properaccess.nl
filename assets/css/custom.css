@@ -1194,6 +1194,7 @@ html.dark .section-cards__subtitle {
   margin: 0 auto;
 }
 
+.section-cards__grid--4,
 .section-cards__grid--3 {
   grid-template-columns: 1fr;
 }
@@ -1209,6 +1210,16 @@ html.dark .section-cards__subtitle {
 
   .section-cards__grid--2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-cards__grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-cards__grid--4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -10408,9 +10419,18 @@ html.dark .tool-fout__level {
   font-size: 0.95rem;
 }
 
+.site-footer__address {
+  color: #d1d5db;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
 .site-footer__social {
   display: flex;
   gap: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .site-footer__social-link {
