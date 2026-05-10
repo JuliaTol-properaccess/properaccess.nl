@@ -12,6 +12,9 @@ keywords:
   - training digitale toegankelijkheid devteams
   - toegankelijkheid training webdevelopers
 
+service:
+  serviceType: "WCAG-training voor developers"
+
 banner:
   title: "Leer toegankelijk bouwen — praktisch en technisch"
   content: "Na deze training maakt je team 80% minder toegankelijkheidsfouten. De training is gebaseerd op de projecten van je team, hands-on, en je team leert zelf toegankelijkheid testen."

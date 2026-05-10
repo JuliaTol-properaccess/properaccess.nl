@@ -14,6 +14,9 @@ keywords:
   - code review toegankelijkheid
   - wcag advies op uurbasis
 
+service:
+  serviceType: "Toegankelijkheidsadvies op uurbasis"
+
 banner:
   title: "Toegankelijkheidsexpertise op het moment dat je het nodig hebt"
   content: "Niet elke vraag vereist een volledige audit. Soms wil je even een component laten checken, een code review tijdens een sprint, of gewoon een snelle vraag stellen. Daar is de strippenkaart voor: een bundel uren die je flexibel inzet wanneer het je uitkomt."

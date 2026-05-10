@@ -3,15 +3,87 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "{{ site.BaseURL }}#organization",
   "name": "{{ site.Title }}",
   "url": "{{ site.BaseURL }}",
   "logo": "{{ site.BaseURL }}images/logo_pa.png",
   "description": "{{ site.Params.metadata.description }}",
+  "telephone": "+31855055890",
+  "email": "contact@properaccess.nl",
+  "foundingDate": "2019-09",
+  "founder": {
+    "@type": "Person",
+    "@id": "{{ site.BaseURL }}#julia-tol",
+    "name": "Julia Tol"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Keizersgracht 520 H",
+    "postalCode": "1017 EK",
+    "addressLocality": "Amsterdam",
+    "addressCountry": "NL"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+31855055890",
+    "email": "contact@properaccess.nl",
+    "contactType": "customer service",
+    "areaServed": ["NL", "BE"],
+    "availableLanguage": ["nl", "en", "sv"]
+  },
+  "areaServed": ["NL", "BE"],
+  "knowsAbout": [
+    "WCAG 2.2",
+    "European Accessibility Act",
+    "Besluit digitale toegankelijkheid overheid",
+    "digitale toegankelijkheid",
+    "screenreader-tests",
+    "toegankelijkheidsaudit",
+    "WCAG-EM methodologie"
+  ],
   "sameAs": [
-    "https://www.linkedin.com/company/properaccess"
+    "https://www.linkedin.com/company/properaccess",
+    "https://codepen.io/Julia-Tol-wcag"
   ]
 }
 </script>
+
+{{/* Person schema for founder — on homepage and /auditbureau-digitale-toegankelijkheid/ */}}
+{{ if or .IsHome (eq .RelPermalink "/auditbureau-digitale-toegankelijkheid/") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.BaseURL }}#julia-tol",
+  "name": "Julia Tol",
+  "jobTitle": "Senior auditor digitale toegankelijkheid",
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"
+  },
+  "url": "{{ site.BaseURL }}auditbureau-digitale-toegankelijkheid/",
+  "email": "juliatol@properaccess.nl",
+  {{ with resources.Get "images/avatar.png" }}"image": "{{ .Permalink }}",{{ end }}
+  "sameAs": [
+    "https://www.linkedin.com/in/julia-a11y/",
+    "https://codepen.io/Julia-Tol-wcag"
+  ],
+  "knowsAbout": [
+    "WCAG 2.2",
+    "European Accessibility Act",
+    "Besluit digitale toegankelijkheid overheid",
+    "screenreader-tests",
+    "toegankelijkheidsaudits",
+    "WCAG-EM methodologie",
+    "ARIA",
+    "assistieve technologie"
+  ],
+  "knowsLanguage": ["nl", "en", "sv"]
+}
+</script>
+{{ end }}
 
 {{/* Article schema — only on blog single pages */}}
 {{ if and (eq .Section "blog") .IsPage }}
@@ -27,17 +99,55 @@
   {{ with .Params.image }}"image": "{{ . | absURL }}",{{ end }}
   "author": {
     "@type": "Person",
+    "@id": "{{ site.BaseURL }}#julia-tol",
     "name": "Julia Tol",
-    "url": "{{ site.BaseURL }}authors/julia/"
+    "url": "{{ site.BaseURL }}auditbureau-digitale-toegankelijkheid/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
     "name": "{{ site.Title }}",
     "logo": {
       "@type": "ImageObject",
       "url": "{{ site.BaseURL }}images/logo_pa.png"
     }
   }
+}
+</script>
+{{ end }}
+
+{{/* Service schema — only on dienst pages with service.* in front matter */}}
+{{ with .Params.service }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ default "Service" .type }}",
+  "name": "{{ $.Title }}",
+  "url": "{{ $.Permalink }}",
+  {{ with $.Params.description }}"description": "{{ . }}",{{ end }}
+  "provider": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"
+  },
+  "areaServed": ["NL", "BE"],
+  "serviceType": "{{ default "Digitale toegankelijkheidsaudit" .serviceType }}"
+  {{ with .price }},
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ .amount }}",
+    "priceCurrency": "EUR",
+    {{ with .description }}"description": "{{ . }}",{{ end }}
+    "availability": "https://schema.org/InStock",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "{{ .amount }}",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false
+    }
+  }
+  {{ end }}
 }
 </script>
 {{ end }}

@@ -12,6 +12,9 @@ keywords:
   - training toegankelijke webcontent
   - webredactie wcag training
 
+service:
+  serviceType: "WCAG-training voor webredactie"
+
 banner:
   title: "Leer je redactie toegankelijke content maken"
   content: "De meeste redacteuren hebben nooit geleerd hoe ze digitale content toegankelijk moeten maken. Onze training is praktisch, interactief en gebaseerd op jullie eigen content. Geen theorie op afstand, maar hands-on oefenen met direct resultaat."

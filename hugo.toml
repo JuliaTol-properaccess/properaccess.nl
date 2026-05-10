@@ -65,7 +65,7 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "LLMsFull"]
 
 ############################# Imaging ############################
 [imaging]
@@ -115,6 +115,12 @@ rel = "manifest"
 [outputFormats.SearchIndex]
 mediaType = "application/json"
 baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.LLMsFull]
+mediaType = "text/plain"
+baseName = "llms-full"
 isPlainText = true
 notAlternative = true
 

@@ -16,6 +16,9 @@ keywords:
   - EAA mobiele app
   - EN 301 549
 
+service:
+  serviceType: "WCAG-audit voor mobiele apps"
+
 banner:
   title: "In minder dan 12 weken een app die beter verkoopt en voldoet aan de wet"
   content: "Meer bereik, betere conversie en een sterker imago — door je app toegankelijker te maken voor een grotere doelgroep. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."

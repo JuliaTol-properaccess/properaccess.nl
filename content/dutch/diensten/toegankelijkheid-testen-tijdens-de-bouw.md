@@ -12,6 +12,9 @@ keywords:
   - wcag testen website
   - toegankelijkheid qa sprint
 
+service:
+  serviceType: "Toegankelijkheidstesten tijdens development"
+
 ---
 
 # Testen tijdens de (her)bouw van een website

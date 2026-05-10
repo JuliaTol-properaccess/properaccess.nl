@@ -23,6 +23,9 @@ keywords:
   - Wdo audit
   - BDTO
 
+service:
+  serviceType: "WCAG-audit voor websites"
+
 banner:
   title: "In minder dan 12 weken een toegankelijke website of app"
   content: "Meer bereik, betere conversie en een sterker imago — door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."

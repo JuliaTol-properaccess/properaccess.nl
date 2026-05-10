@@ -1,0 +1,104 @@
+{{- /* llms-full.txt — uitgebreide content voor AI-systemen
+       Volgt llmstxt.org pattern: meer detail dan llms.txt
+       Diensten + Voor wie volledig, blog en academy als index met description */ -}}
+# {{ site.Title }}
+
+> {{ site.Params.metadata.description }}
+
+URL: {{ site.BaseURL }}
+Telefoon: 085 5055 890 (+31 85 5055 890)
+E-mail: contact@properaccess.nl
+Adres: Keizersgracht 520 H, 1017 EK Amsterdam
+Oprichter: Julia Tol (senior auditor)
+Opgericht: september 2019
+Talen: Nederlands, Engels, Zweeds
+
+## Over Proper Access
+
+Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 900+ audits uitgevoerd, 149 opdrachten bij 53 klanten — waaronder Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo. 34% van onze klanten komt terug.
+
+Wat ons onderscheidt:
+- **Rapport per element**, niet per WCAG-succescriterium zoals de rest van de markt
+- **Visuele voorbeelden** en taal afgestemd op de lezer
+- **User stories per bevinding** vanuit de bezoeker met een beperking
+- **Onafhankelijk** — we bouwen geen websites, beheren geen content, verkopen geen software
+- **Direct contact met senior auditor** — geen account managers ertussen
+- **Eigen research** — wekelijks studeren, browser- en hulpsoftwaregedrag testen
+
+## Diensten
+
+{{ range where (where site.RegularPages "Section" "diensten") "Lang" site.Language.Lang }}
+{{- if not (in (slice "offerte-wcag-onderzoek") .File.ContentBaseName) -}}
+
+### {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ with .Params.description }}
+{{ . }}
+{{ end }}
+{{ with .Params.service.serviceType }}Type: {{ . }}{{ end }}
+
+{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
+
+---
+{{ end -}}
+{{ end }}
+
+## Sectoren / Voor wie
+
+{{ range where (where site.RegularPages "Section" "voor_wie") "Lang" site.Language.Lang }}
+
+### {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ with .Params.description }}
+{{ . }}
+{{ end }}
+
+{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
+
+---
+{{ end }}
+
+## Academy — uitleg WCAG en BDTO
+
+{{ range where (where site.RegularPages "Section" "academy") "Lang" site.Language.Lang }}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Params.description }} — {{ . }}{{ end }}
+{{- end }}
+
+## Blog — recente artikelen
+
+{{ range first 30 (where (where site.RegularPages "Section" "blog") "Lang" site.Language.Lang).ByDate.Reverse }}
+
+### {{ .Title }} ({{ .PublishDate.Format "2006-01-02" }})
+
+URL: {{ .Permalink }}
+{{ with .Params.description }}
+{{ . }}
+{{ end }}
+
+---
+{{ end }}
+
+## Contact
+
+- Bel: [085 5055 890](tel:+31855055890)
+- Mail: [contact@properaccess.nl](mailto:contact@properaccess.nl)
+- Plan een videocall: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
+- Offerte aanvragen: {{ site.BaseURL }}offerte-wcag-onderzoek/
+- LinkedIn bedrijf: https://www.linkedin.com/company/properaccess
+- LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
+- CodePen: https://codepen.io/Julia-Tol-wcag
+
+## Tools (gratis)
+
+- Koppenstructuur checker: {{ site.BaseURL }}tools/koppenstructuur-checker/
+- Alt-tekst checker: {{ site.BaseURL }}tools/alt-tekst-checker/
+- Kleurcontrast checker: {{ site.BaseURL }}tools/kleurcontrast-checker/
+- Foutmeldingen naslagwerk: {{ site.BaseURL }}tools/foutmeldingen/
+- ARIA referentie: {{ site.BaseURL }}tools/aria-referentie/
+- BDTO-verklaring generator: {{ site.BaseURL }}tools/verklaring-generator/
+
+## Veelgebruikte termen
+
+WCAG 2.2, EAA (European Accessibility Act), BDTO (Besluit digitale toegankelijkheid overheid), WCAG-EM methodologie, screenreader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantische HTML, toetsenbordnavigatie, kleurcontrast, alt-tekst, EN 301 549, toegankelijkheidsverklaring.

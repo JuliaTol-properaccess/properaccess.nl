@@ -14,6 +14,9 @@ keywords:
   - toegankelijkheid meerdere websites
   - wcag beheer organisatie
 
+service:
+  serviceType: "Doorlopend toegankelijkheidsabonnement"
+
 banner:
   title: "Structureel toegankelijk — zonder dat je er elke dag aan hoeft te denken"
   content: "Als je 5 of meer websites of apps beheert, is toegankelijkheid geen eenmalig project. Het is een doorlopend proces dat planning, kennis en een betrouwbare partner vereist. Met ons abonnement leg je de regie bij een bureau dat je portfolio kent — en houd je het overzicht."
