@@ -81,8 +81,8 @@
 {{ end }}
 
 
-<!-- multilingual SEO optimizations -->
-{{ if .IsTranslated }}
+<!-- multilingual SEO optimizations — skip 404 to avoid hreflang loop -->
+{{ if and .IsTranslated (ne .Kind "404") }}
   {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
   {{ end }}
@@ -163,7 +163,7 @@
       content="image/{{- if eq $imageExt `.svg` -}}
         svg+xml
       {{- else -}}
-        {{- replaceRE `^jpg$` `jpeg` $imageExt -}}
+        {{- replaceRE `^jpg$` `jpeg` (strings.TrimPrefix `.` $imageExt) -}}
       {{- end -}}" />
   {{ end }}
 
@@ -185,7 +185,5 @@
 
 {{ with site.Params.metadata.twitter }}
   <meta name="twitter:site" content="@{{ . }}" />
-{{ end }}
-{{ with site.Params.metadata.author }}
   <meta name="twitter:creator" content="@{{ . }}" />
 {{ end }}

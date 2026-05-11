@@ -28,7 +28,7 @@ banner:
     in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
     met onze klanten.
   bulletpoints:
-    - "Opgericht in 2018, 900+ audits uitgevoerd"
+    - "Opgericht in 2019, 900+ audits uitgevoerd"
     - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
     - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
@@ -54,7 +54,7 @@ team:
       role: "Oprichter, CEO & senior auditor"
       image: "/images/julia.webp"
       bio: >
-        Julia richtte Proper Access op in 2018 met één missie: digitale toegankelijkheid
+        Julia richtte Proper Access op in 2019 met één missie: digitale toegankelijkheid
         **praktisch** maken. Niet theoretisch, niet academisch, maar toepasbaar. Ze werkt
         direct met product owners, digitale teams en webredacties &mdash; en bouwde het
         bedrijf op rond de overtuiging dat een goed rapport alleen waarde heeft als je
@@ -62,7 +62,7 @@ team:
       highlights:
         - "Senior WCAG-auditor, IAAP-gecertificeerd (WAS)"
         - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-        - "900+ audits uitgevoerd sinds 2018"
+        - "900+ audits uitgevoerd sinds 2019"
         - "Werkt direct met klanten &mdash; geen tussenlaag van accountmanagers"
     - name: "Het team"
       role: "Specialisten met dezelfde passie"
@@ -130,7 +130,7 @@ faqs:
 
 {{< section-full title="Onze missie: toegankelijkheid als vanzelfsprekend fundament" >}}
 
-We werken sinds 2018 met product owners, digitale teams, marketingleiders en webredacties — binnen musea, culturele instellingen, e-commerce en de overheid. Wat we overal zien: toegankelijkheid voelt vaak als een last-minute zorg. Een bron van onzekerheid, stress en paniekerig herstelwerk vlak voor een deadline.
+We werken sinds 2019 met product owners, digitale teams, marketingleiders en webredacties — binnen musea, culturele instellingen, e-commerce en de overheid. Wat we overal zien: toegankelijkheid voelt vaak als een last-minute zorg. Een bron van onzekerheid, stress en paniekerig herstelwerk vlak voor een deadline.
 
 **Dat willen we veranderen.** Wij maken van toegankelijkheid een helder, beheersbaar proces. Een betrouwbaar fundament onder je digitale kwaliteit — niet een vinkje op een checklist.
 

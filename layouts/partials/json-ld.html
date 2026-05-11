@@ -2,15 +2,22 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService"],
   "@id": "{{ site.BaseURL }}#organization",
   "name": "{{ site.Title }}",
+  "legalName": "Proper Access B.V.",
   "url": "{{ site.BaseURL }}",
   "logo": "{{ site.BaseURL }}images/logo_pa.png",
+  "image": "{{ site.BaseURL }}images/og-image.png",
   "description": "{{ site.Params.metadata.description }}",
   "telephone": "+31855055890",
   "email": "contact@properaccess.nl",
   "foundingDate": "2019-09",
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": ["Invoice", "Bank transfer"],
+  "vatID": "NL867096755B01",
+  "taxID": "95350985",
   "founder": {
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#julia-tol",
@@ -21,8 +28,20 @@
     "streetAddress": "Keizersgracht 520 H",
     "postalCode": "1017 EK",
     "addressLocality": "Amsterdam",
+    "addressRegion": "Noord-Holland",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3635,
+    "longitude": 4.8842
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+31855055890",
@@ -31,7 +50,10 @@
     "areaServed": ["NL", "BE"],
     "availableLanguage": ["nl", "en", "sv"]
   },
-  "areaServed": ["NL", "BE"],
+  "areaServed": [
+    {"@type": "Country", "name": "Netherlands"},
+    {"@type": "Country", "name": "Belgium"}
+  ],
   "knowsAbout": [
     "WCAG 2.2",
     "European Accessibility Act",
@@ -47,6 +69,77 @@
   ]
 }
 </script>
+
+{{/* WebSite schema — homepage only, gives a canonical website node */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.BaseURL }}#website",
+  "url": "{{ site.BaseURL }}",
+  "name": "{{ site.Title }}",
+  "description": "{{ site.Params.metadata.description }}",
+  "inLanguage": ["nl-NL", "en"],
+  "publisher": {
+    "@id": "{{ site.BaseURL }}#organization"
+  }
+}
+</script>
+{{ end }}
+
+{{/* BreadcrumbList — on all non-home pages */}}
+{{ if not .IsHome }}
+{{ $trimmed := strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink) }}
+{{ if $trimmed }}
+{{ $segments := split $trimmed "/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.BaseURL }}"
+    }
+    {{- $cum := "" }}
+    {{- range $i, $seg := $segments }}
+    {{- $cum = printf "%s/%s" $cum $seg }}
+    ,{
+      "@type": "ListItem",
+      "position": {{ add $i 2 }},
+      "name": "{{ humanize (replace $seg "-" " ") }}",
+      "item": "{{ site.BaseURL }}{{ strings.TrimPrefix "/" $cum }}/"
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{/* CollectionPage / Blog — for section index pages */}}
+{{ if and (not .IsPage) (not .IsHome) (in (slice "blog" "academy") .Section) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ cond (eq .Section "blog") "Blog" "CollectionPage" }}",
+  "@id": "{{ .Permalink }}#collection",
+  "url": "{{ .Permalink }}",
+  "name": "{{ .Title }}",
+  {{ with .Params.description }}"description": "{{ . }}",{{ end }}
+  "inLanguage": "nl-NL",
+  "isPartOf": {
+    "@id": "{{ site.BaseURL }}#website"
+  },
+  "publisher": {
+    "@id": "{{ site.BaseURL }}#organization"
+  }
+}
+</script>
+{{ end }}
 
 {{/* Person schema for founder — on homepage and /auditbureau-digitale-toegankelijkheid/ */}}
 {{ if or .IsHome (eq .RelPermalink "/auditbureau-digitale-toegankelijkheid/") }}
