@@ -14,6 +14,10 @@ keywords:
 
 service:
   serviceType: "WCAG-training voor developers"
+  isCourse: true
+  courseMode: "onsite"
+  duration: "PT1D"
+  educationalLevel: "Professional"
 
 banner:
   title: "Leer toegankelijk bouwen — praktisch en technisch"

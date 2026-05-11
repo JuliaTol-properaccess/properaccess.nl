@@ -16,9 +16,15 @@
           <div class="blog-byline">
             {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "blog-byline__photo") }}
             <div class="blog-byline__text">
-              <span class="blog-byline__name">Julia Tol</span>
+              <span class="blog-byline__name"><a href="{{ "authors/julia/" | relLangURL }}" class="blog-byline__name-link">Julia Tol</a></span>
               <span class="blog-byline__meta">
                 <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+                {{- $pub := .PublishDate.Format "2006-01-02" -}}
+                {{- $mod := .Lastmod.Format "2006-01-02" -}}
+                {{- if ne $pub $mod }}
+                <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+                <span class="blog-byline__updated">Bijgewerkt: <time datetime="{{ $mod }}">{{ time.Format ":date_long" .Lastmod }}</time></span>
+                {{- end }}
                 <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
                 {{ .ReadingTime }} min leestijd
               </span>
@@ -27,6 +33,18 @@
         </div>
       </div>
     </section>
+
+    {{/* TL;DR — toont 'Korte versie' bovenaan als front matter `tldr:` is gezet */}}
+    {{ with .Params.tldr }}
+    <section class="container">
+      <aside class="article-tldr" aria-labelledby="tldr-heading">
+        <h2 id="tldr-heading" class="article-tldr__title">Korte versie</h2>
+        <div class="article-tldr__body">
+          {{ . | markdownify }}
+        </div>
+      </aside>
+    </section>
+    {{ end }}
 
     {{ $isWcagUitgelegd := intersect (.Params.categories | default slice) (slice "wcag-uitgelegd") }}
 

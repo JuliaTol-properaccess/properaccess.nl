@@ -1,0 +1,25 @@
+{{- /*
+  WCAG-link shortcode — voegt een externe link naar w3.org toe voor een succescriterium.
+
+  Gebruik:
+    {{< wcag number="1.1.1" name="Niet-tekstuele content" slug="non-text-content" >}}
+    {{< wcag number="2.4.7" name="Focus visible" >}}  (zonder slug → linkt naar quickref)
+
+  Parameters:
+    number (verplicht) — bv. "1.1.1"
+    name   (optioneel) — leesbare naam; default is "WCAG {number}"
+    slug   (optioneel) — W3C URL-slug voor Understanding-pagina. Indien afwezig, link naar quickref met SC-anchor.
+    versie (optioneel) — WCAG-versie, default "22" (= WCAG 2.2)
+*/ -}}
+{{- $number := .Get "number" -}}
+{{- $name := .Get "name" | default (printf "WCAG %s" $number) -}}
+{{- $slug := .Get "slug" -}}
+{{- $versie := .Get "versie" | default "22" -}}
+{{- $anchor := replace $number "." "-" -}}
+{{- $url := "" -}}
+{{- if $slug -}}
+  {{- $url = printf "https://www.w3.org/WAI/WCAG%s/Understanding/%s.html" $versie $slug -}}
+{{- else -}}
+  {{- $url = printf "https://www.w3.org/WAI/WCAG%s/quickref/#qr-%s" $versie $anchor -}}
+{{- end -}}
+<a href="{{ $url }}" rel="noopener external" hreflang="en"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr>&nbsp;{{ $number }} — {{ $name }}</a>

@@ -14,6 +14,10 @@ keywords:
 
 service:
   serviceType: "WCAG-training voor webredactie"
+  isCourse: true
+  courseMode: "onsite"
+  duration: "PT1D"
+  educationalLevel: "Professional"
 
 banner:
   title: "Leer je redactie toegankelijke content maken"

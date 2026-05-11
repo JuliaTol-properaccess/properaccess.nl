@@ -141,8 +141,8 @@
 </script>
 {{ end }}
 
-{{/* Person schema for founder — on homepage and /auditbureau-digitale-toegankelijkheid/ */}}
-{{ if or .IsHome (eq .RelPermalink "/auditbureau-digitale-toegankelijkheid/") }}
+{{/* Person schema for founder — on homepage, /authors/julia/ en over-pagina */}}
+{{ if or .IsHome (eq .RelPermalink "/auditbureau-digitale-toegankelijkheid/") (eq .RelPermalink "/authors/julia/") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -156,12 +156,25 @@
     "name": "{{ site.Title }}",
     "url": "{{ site.BaseURL }}"
   },
-  "url": "{{ site.BaseURL }}auditbureau-digitale-toegankelijkheid/",
+  "url": "{{ site.BaseURL }}authors/julia/",
   "email": "juliatol@properaccess.nl",
   {{ with resources.Get "images/avatar.png" }}"image": "{{ .Permalink }}",{{ end }}
   "sameAs": [
     "https://www.linkedin.com/in/julia-a11y/",
-    "https://codepen.io/Julia-Tol-wcag"
+    "https://codepen.io/Julia-Tol-wcag",
+    "https://github.com/JuliaTol-properaccess",
+    "https://www.credly.com/badges/e23aa0b8-1092-4c71-9d30-72fded861470"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "IAAP Web Accessibility Specialist (WAS)",
+      "credentialCategory": "certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "International Association of Accessibility Professionals"
+      }
+    }
   ],
   "knowsAbout": [
     "WCAG 2.2",
@@ -194,7 +207,7 @@
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#julia-tol",
     "name": "Julia Tol",
-    "url": "{{ site.BaseURL }}auditbureau-digitale-toegankelijkheid/"
+    "url": "{{ site.BaseURL }}authors/julia/"
   },
   "publisher": {
     "@type": "Organization",
@@ -204,7 +217,72 @@
       "@type": "ImageObject",
       "url": "{{ site.BaseURL }}images/logo_pa.png"
     }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".article-tldr", "article > p:first-of-type"]
   }
+}
+</script>
+{{ end }}
+
+{{/* HowTo schema — only on pages with howto in front matter */}}
+{{ with .Params.howto }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ default $.Title .name }}",
+  "description": "{{ default $.Params.description .description }}",
+  {{ with $.Params.image }}"image": "{{ . | absURL }}",{{ end }}
+  {{ with .totalTime }}"totalTime": "{{ . }}",{{ end }}
+  "step": [
+    {{- range $i, $s := .steps }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "HowToStep",
+      "position": {{ add $i 1 }},
+      "name": "{{ $s.name }}",
+      "text": "{{ $s.text }}"
+      {{- with $s.url }},
+      "url": "{{ $.Permalink }}{{ . }}"
+      {{- end }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{/* Course schema — for training services with service.isCourse=true */}}
+{{ if and .Params.service .Params.service.isCourse }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ .Params.description }}",
+  "provider": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"
+  },
+  "educationalLevel": "{{ default "Professional" .Params.service.educationalLevel }}",
+  "inLanguage": "nl-NL",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "{{ default "onsite" .Params.service.courseMode }}",
+    "courseWorkload": "{{ default "PT1D" .Params.service.duration }}",
+    "inLanguage": "nl-NL"
+  },
+  "about": [
+    "WCAG 2.2",
+    "Digitale toegankelijkheid",
+    "ARIA",
+    "Semantische HTML"
+  ]
 }
 </script>
 {{ end }}
@@ -251,6 +329,10 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-question", ".faq-answer"]
+  },
   "mainEntity": [
     {{- range $i, $faq := . }}
     {{- if $i }},{{ end }}
