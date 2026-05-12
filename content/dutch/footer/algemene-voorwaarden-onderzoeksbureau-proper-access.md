@@ -87,4 +87,10 @@ Op deze algemene voorwaarden is het Nederlands recht van toepassing. Geschillen 
 
 Heb je vragen over deze voorwaarden? Neem gerust contact met ons op via [contact@properaccess.nl](mailto:contact@properaccess.nl). We bijten niet.
 
+**Proper Access B.V.**
+Keizersgracht 520 H
+1017 EK Amsterdam
+Nederland
+KvK 95350985 · BTW NL867096755B01
+
 {{< /offerte-section >}}

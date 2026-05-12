@@ -39,8 +39,7 @@ url: "/contact/"
     <strong>Proper Access B.V.</strong><br>
     Keizersgracht 520 H<br>
     1017 EK Amsterdam<br>
-    Nederland<br>
-    <span style="color: #6b7280; font-size: 0.9em;">KvK 95350985 · BTW NL867096755B01</span>
+    Nederland
   </address>
 </div>
 {{< /section-cards >}}

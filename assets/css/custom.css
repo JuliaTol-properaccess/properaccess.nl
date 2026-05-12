@@ -10478,8 +10478,11 @@ html.dark .tool-fout__level {
   display: inline-block;
 }
 
-.site-footer__links a:hover {
-  color: #A30D4B;
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
   transform: translateX(0.25rem);
 }
 
