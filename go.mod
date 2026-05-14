@@ -3,7 +3,6 @@ module hugoplate.netlify.app
 go 1.21
 
 require (
-	github.com/JuliaTol-properaccess/properaccess-theme v0.4.0 // indirect
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20251201044043-2bed50ee369b // indirect
 	github.com/gethugothemes/hugo-modules/adsense v0.0.0-20251201044043-2bed50ee369b // indirect
 	github.com/gethugothemes/hugo-modules/components/announcement v0.0.0-20251201044043-2bed50ee369b // indirect
