@@ -102,3 +102,10 @@ jobs:
 
       - name: Ping Google to recrawl sitemap
         run: curl -s "https://www.google.com/ping?sitemap=https://www.properaccess.nl/sitemap.xml"
+
+      # IndexNow nudge voor Bing/Copilot (ChatGPT-search leunt op de Bing-index).
+      # De key is publiek (gepubliceerd op /<key>.txt), dus geen secret.
+      # Basislijst met kernpagina's; uit te breiden met change-detectie indien gewenst.
+      - name: Ping IndexNow (Bing/Copilot)
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json" -d '{"host":"www.properaccess.nl","key":"4da3b6cd119f757a090fc80e4ce46fd2","keyLocation":"https://www.properaccess.nl/4da3b6cd119f757a090fc80e4ce46fd2.txt","urlList":["https://www.properaccess.nl/","https://www.properaccess.nl/toegankelijkheidsaudit/"]}'
