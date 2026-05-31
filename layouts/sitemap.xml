@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{ range .Data.Pages }}
-    {{- if and .Permalink (ne .Kind "taxonomy") (ne .Kind "term") }}
+    {{- if and .Permalink (ne .Kind "taxonomy") (ne .Kind "term") (ne .Params.locked true) (ne .Params.sitemap_exclude true) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}

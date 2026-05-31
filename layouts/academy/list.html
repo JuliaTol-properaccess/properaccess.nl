@@ -1,10 +1,16 @@
 {{ define "main" }}
-{{/* Collect all sections with their chapters, sorted by section_number */}}
+{{/* This template renders both the Academy root (all sections) and a single
+     section landing page (the chapters within that section). */}}
+{{ $academyRoot := site.GetPage "/academy" }}
+{{ $isSection := ne .RelPermalink $academyRoot.RelPermalink }}
+
+{{/* Collect all sections with their chapters for the sidebar + stats,
+     always sourced from the Academy root so it works on section pages too. */}}
 {{ $sections := slice }}
 {{ $totalChapters := 0 }}
 {{ $totalQuizzes := 0 }}
 {{ $totalMinutes := 0 }}
-{{ range sort .Sections "Params.section_number" }}
+{{ range sort $academyRoot.Sections "Params.section_number" }}
   {{ $section := . }}
   {{ $chapters := $section.RegularPages }}
   {{ $sections = $sections | append (dict "section" $section "chapters" $chapters) }}
@@ -33,14 +39,20 @@
   {{/* Sidebar */}}
   <nav class="academy__sidebar" id="academySidebar" aria-label="Academy inhoudsopgave">
     <div class="academy__sidebar-inner">
+      {{ if $isSection }}
+      <a href="{{ "/academy/" | relLangURL }}" class="academy__sidebar-home">
+        ← Alle secties
+      </a>
+      {{ end }}
       <p class="academy__sidebar-label">Inhoudsopgave</p>
 
       {{ range $i, $item := $sections }}
         {{ $section := $item.section }}
         {{ $chapters := $item.chapters }}
         {{ $sectionNum := $section.Params.section_number | default (add $i 1) }}
+        {{ $isCurrentSection := and $isSection (eq $section.RelPermalink $.RelPermalink) }}
 
-        <div class="academy__section" id="academy-section-{{ $sectionNum }}">
+        <div class="academy__section{{ if $isCurrentSection }} academy__section--active{{ end }}" id="academy-section-{{ $sectionNum }}">
           <button
             class="academy__section-title"
             aria-expanded="true"
@@ -55,7 +67,8 @@
           <ul class="academy__section-list" id="academy-section-list-{{ $sectionNum }}">
             {{ range sort $chapters "Params.chapter_number" }}
               {{ $isLocked := .Params.locked }}
-              <li class="academy__chapter{{ if $isLocked }} academy__chapter--locked{{ end }}">
+              {{ $isActive := and $isSection (eq .RelPermalink $.RelPermalink) }}
+              <li class="academy__chapter{{ if $isLocked }} academy__chapter--locked{{ end }}{{ if $isActive }} academy__chapter--active{{ end }}">
                 {{ if $isLocked }}
                 <span class="academy__chapter-inner">
                   <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
@@ -66,7 +79,7 @@
                   </svg>
                 </span>
                 {{ else }}
-                <a href="{{ .RelPermalink }}" class="academy__chapter-inner">
+                <a href="{{ .RelPermalink }}" class="academy__chapter-inner"{{ if $isActive }} aria-current="page"{{ end }}>
                   <span class="academy__chapter-num">{{ .Params.chapter_number }}</span>
                   <span class="academy__chapter-title">{{ .Title }}</span>
                 </a>
@@ -82,7 +95,47 @@
   {{/* Main content */}}
   <main class="academy__main" id="academyMain">
 
-    {{/* Stats bar */}}
+    {{ if $isSection }}
+      {{/* ---- Section landing: hero + chapter cards for this section ---- */}}
+      <div class="academy__hero">
+        <p class="academy__content-label">Sectie {{ .Params.section_number }}</p>
+        <h1 class="academy__hero-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
+      </div>
+
+      <div class="academy__sections-grid">
+        {{ range sort .RegularPages "Params.chapter_number" }}
+          {{ $isLocked := .Params.locked }}
+          {{ if $isLocked }}
+          <div class="academy__section-card academy__section-card--locked">
+          {{ else }}
+          <a href="{{ .RelPermalink }}" class="academy__section-card">
+          {{ end }}
+            <div class="academy__section-card-header">
+              <span class="academy__section-card-num">{{ .Params.chapter_number }}</span>
+              <h2 class="academy__section-card-title">{{ .Title }}</h2>
+            </div>
+            {{ with .Description }}<p class="academy__section-card-desc">{{ . }}</p>{{ end }}
+            {{ if $isLocked }}
+            <div class="academy__section-card-lock" aria-label="Dit hoofdstuk is vergrendeld">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            {{ end }}
+          {{ if $isLocked }}
+          </div>
+          {{ else }}
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
+
+    {{ else }}
+      {{/* ---- Academy root: stats + hero + section cards ---- */}}
+
+      {{/* Stats bar */}}
       <div class="academy__stats">
         <div class="academy__stat">
           <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -143,7 +196,7 @@
           {{ if $sectionLocked }}
           <div class="academy__section-card academy__section-card--locked">
           {{ else }}
-          <a href="{{ (index (sort $chapters "Params.chapter_number") 0).RelPermalink }}" class="academy__section-card">
+          <a href="{{ $section.RelPermalink }}" class="academy__section-card">
           {{ end }}
             <div class="academy__section-card-header">
               <span class="academy__section-card-num">{{ $sectionNum }}</span>
@@ -187,6 +240,8 @@
           {{ end }}
         {{ end }}
       </div>
+
+    {{ end }}
 
   </main>
 </div>
