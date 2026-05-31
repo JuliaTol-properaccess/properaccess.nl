@@ -1464,6 +1464,9 @@ html.dark .section-card__content {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  /* verticale + horizontale marge zodat meerdere CTA-knoppen elkaar nooit
+     raken en netjes afbreken op smalle schermen (WCAG 2.5.8 spacing) */
+  margin: 0.4rem 0.75rem 0.4rem 0;
   padding: 1rem 2rem;
   background-color: #fff;
   color: #1F2937;

@@ -86,6 +86,6 @@ Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de forme
 
 Een heronderzoek plan je vooraf, tegelijk met de oorspronkelijke audit, of zodra je weet wanneer de fixes live gaan. Vergeet de twaalf-wekentermijn niet, daarna is een nieuwe audit nodig.
 
-[Plan een heronderzoek](/contact/) · [Lees alles over de hercontrole](/hercontrole/) · [Lees over de audit zelf](/toegankelijkheidsaudit/)
+[Plan een heronderzoek](/contact/) [Lees alles over de hercontrole](/hercontrole/) [Lees over de audit zelf](/toegankelijkheidsaudit/)
 
 {{< /section-cta >}}

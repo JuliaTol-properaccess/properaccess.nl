@@ -109,6 +109,6 @@ Bij Proper Access werken alleen senior auditors. Het rapport dat je ontvangt is 
 
 Het rapport is wat je in handen hebt om aan de slag te gaan. Wil je een voorbeeldrapport zien, of weten wat een audit van jouw site eruit zou laten komen?
 
-[Stuur ons een mail](/contact/) · [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
+[Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
 
 {{< /section-cta >}}

@@ -128,6 +128,6 @@ Test je een app? Dan stellen we een aparte steekproef en een apart rapport op pe
 
 Stuur een mail met wat je wilt laten testen en je deadline. Binnen twee werkdagen sturen we een offerte met scope, steekproef en prijs.
 
-[Stuur ons een mail](/contact/) · [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
+[Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
 
 {{< /section-cta >}}

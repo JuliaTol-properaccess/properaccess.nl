@@ -104,6 +104,6 @@ We meten contrast op tekst, op interactieve onderdelen en op informatieve iconen
 
 Het handmatige werk is de kern van wat een audit waardevol maakt. Wil je weten hoeveel uur je daarvoor moet rekenen, of welk type audit het beste past?
 
-[Stuur ons een mail](/contact/) · [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
+[Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
 
 {{< /section-cta >}}

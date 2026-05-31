@@ -107,6 +107,6 @@ Dat betekent dat we soms zullen zeggen: hier zou je beter een ontwikkelaar voor 
 
 Tijdens het oplossen sta je niet alleen. Vragen via je kanaal naar keuze, directe links naar elke bevinding, antwoorden binnen de werkdag.
 
-[Stuur ons een mail](/contact/) · [Bekijk de strippenkaart](/strippenkaart/)
+[Stuur ons een mail](/contact/) [Bekijk de strippenkaart](/strippenkaart/)
 
 {{< /section-cta >}}
