@@ -24,8 +24,10 @@
         </div>
       </a>
 
-      <!-- Diensten pages sorted by weight -->
-      {{ $pages := sort (where .Pages "Params.url" "!=" "/offerte-wcag-onderzoek/") "Weight" }}
+      <!-- Diensten pages sorted by weight (hidden pages excluded) -->
+      {{ $visible := where .Pages "Params.url" "!=" "/offerte-wcag-onderzoek/" }}
+      {{ $visible = where $visible "Params.hide_from_overview" "ne" true }}
+      {{ $pages := sort $visible "Weight" }}
       {{ range $pages }}
       <a href="{{ .RelPermalink }}" class="dn-card{{ if .Params.featured }} dn-card--featured{{ end }}">
         <div class="dn-card__inner">

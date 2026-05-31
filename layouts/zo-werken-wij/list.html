@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<!-- ─── Hero ─── -->
+<section class="zwj-hero">
+  <div class="container">
+    <div class="zwj-hero__inner">
+      <p class="zwj-hero__eyebrow">Het traject in vijf stappen</p>
+      <h1 class="zwj-hero__title">{{ .Title }}</h1>
+      <p class="zwj-hero__subtitle">{{ .Description }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Intro content from _index.md ─── -->
+{{ with .Content }}
+<section class="zwj-intro">
+  <div class="container">
+    <div class="zwj-intro__inner">
+      {{ . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── Process flow (children sorted by weight) ─── -->
+<section class="zwj-process">
+  <div class="container">
+    <ol class="zwj-process__list" aria-label="Vijf stappen van een audit bij Proper Access">
+      {{ $pages := sort .Pages "Weight" }}
+      {{ range $i, $page := $pages }}
+      {{ $cleanTitle := replaceRE `^\d+\.\s+` "" $page.Title }}
+      <li class="zwj-process__item">
+        <a href="{{ $page.RelPermalink }}" class="zwj-process__card">
+          <span class="zwj-process__num" aria-hidden="true">{{ add $i 1 }}</span>
+          <h2 class="zwj-process__title">{{ $cleanTitle }}</h2>
+          <p class="zwj-process__desc">{{ $page.Description }}</p>
+          <span class="zwj-process__cta">
+            Lees deze stap
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

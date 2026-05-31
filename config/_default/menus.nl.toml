@@ -84,6 +84,12 @@ url = "/trainen-van-webredactie/"
 weight = 7
 
 [[main]]
+parent = "Diensten"
+name = "Zo werken wij"
+url = "/zo-werken-wij/"
+weight = 8
+
+[[main]]
 name = "Blog"
 url = "/blog/"
 weight = 4

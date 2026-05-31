@@ -9751,6 +9751,14 @@ html.dark .tool-fout__level {
   flex: 1;
 }
 
+.academy__section-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #474747;
+  margin: 0;
+  padding: 0 1.25rem 1.25rem;
+}
+
 .academy__section-card-meta {
   display: flex;
   gap: 1rem;
@@ -14629,4 +14637,294 @@ body.pa-chat--open {
   opacity: 0.75;
   display: inline-block;
   margin-top: 0.25rem;
+}
+
+
+/* ============================================
+   Zo werken wij — process flow (/zo-werken-wij/)
+   ============================================ */
+
+.zwj-hero {
+  position: relative;
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.5rem, 4vw, 3.5rem);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.zwj-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(163, 13, 75, 0.07) 1px, transparent 0);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.zwj-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.zwj-hero__eyebrow {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #A30D4B;
+  margin: 0 0 1rem;
+}
+
+.zwj-hero__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+  color: #1F2937;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.zwj-hero__subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.55;
+  color: #4b5563;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.zwj-intro {
+  padding: 0 0 clamp(2.5rem, 4vw, 3.5rem);
+  background: #ffffff;
+}
+
+.zwj-intro__inner {
+  max-width: 720px;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #1F2937;
+}
+
+.zwj-intro__inner p {
+  margin: 0 0 1.25rem;
+}
+
+.zwj-intro__inner p:last-child {
+  margin-bottom: 0;
+}
+
+.zwj-process {
+  padding: clamp(1rem, 2vw, 2rem) 0 clamp(3.5rem, 6vw, 5rem);
+  background: #f5f5f5;
+}
+
+.zwj-process__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 3.5vw, 2.75rem) 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .zwj-process__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .zwj-process__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(2.5rem, 4vw, 3rem) 2rem;
+  }
+}
+
+.zwj-process__item {
+  list-style: none;
+  padding-top: 1.5rem;
+}
+
+.zwj-process__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 1.75rem 1.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #A30D4B;
+  border-radius: 6px;
+  color: #1F2937;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.zwj-process__card:hover,
+.zwj-process__card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(31, 41, 55, 0.08);
+  border-left-color: #8a0b3f;
+  outline: none;
+}
+
+.zwj-process__card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(163, 13, 75, 0.4), 0 12px 32px rgba(31, 41, 55, 0.08);
+}
+
+.zwj-process__num {
+  position: absolute;
+  top: -1.5rem;
+  left: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #A30D4B;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(163, 13, 75, 0.3);
+}
+
+.zwj-process__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.8vw, 1.4rem);
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+  color: #1F2937;
+}
+
+.zwj-process__desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+.zwj-process__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #A30D4B;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.zwj-process__cta i {
+  font-size: 0.8125rem;
+  transition: transform 0.15s ease;
+}
+
+.zwj-process__card:hover .zwj-process__cta i,
+.zwj-process__card:focus-visible .zwj-process__cta i {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zwj-process__card,
+  .zwj-process__card:hover,
+  .zwj-process__cta i {
+    transition: none;
+    transform: none;
+  }
+}
+
+
+/* Zo werken wij — collapse padding between back-to-back white section-full blocks.
+   We exclude --light so a white-to-light transition keeps its top padding. */
+.zwj-content > .section-full:not(.section-full--light) + .section-full:not(.section-full--light) {
+  padding-top: 0;
+}
+
+/* Zo werken wij — visually connect a section-full--light intro with the
+   section-cards--light below it (same bg), but keep breathing room. */
+.zwj-content > .section-full--light:has(+ .section-cards--light) {
+  padding-bottom: 2rem;
+}
+.zwj-content > .section-full--light + .section-cards--light {
+  padding-top: 2rem;
+}
+
+/* Fix heading contrast inside dark CTA — applies to all section-cta usages */
+.section-cta__inner h1,
+.section-cta__inner h2,
+.section-cta__inner h3,
+.section-cta__inner h4 {
+  color: #ffffff;
+}
+
+/* Generic disclosure for long content (used for the SC list on deelonderzoek pages) */
+.pa-disclosure {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #ffffff;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.pa-disclosure > summary {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: #1F2937;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pa-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pa-disclosure > summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #A30D4B;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.pa-disclosure[open] > summary {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pa-disclosure[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+.pa-disclosure > *:not(summary) {
+  padding: 1rem 1.5rem;
+}
+
+.pa-disclosure > summary:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pa-disclosure > summary::after {
+    transition: none;
+  }
+}
+
+.pa-user-story {
+  border-left: 4px solid #004050;
+  background: #F5F5F5;
+  padding: 1rem 1.25rem;
+  font-style: italic;
+  margin: 1.25rem 0;
+  color: #1F2937;
 }
