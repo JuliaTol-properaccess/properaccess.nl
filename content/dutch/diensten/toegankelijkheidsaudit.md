@@ -5,6 +5,7 @@ layout: "audit"
 weight: 2
 featured: true
 date: 2024-12-05
+lastmod: 2026-05-31
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
 description: "Een audit die verder gaat dan fouten oplijsten. Je krijgt concrete oplossingen, visueel onderbouwd, met code-voorbeelden. Zodat je team direct aan de slag kan."
@@ -25,6 +26,9 @@ keywords:
 
 service:
   serviceType: "WCAG-audit voor websites"
+  price:
+    amount: 2100
+    description: "Indicatie vanaf ca. € 2.100 excl. btw. De definitieve prijs hangt af van omvang en type site en volgt na een gratis kennismaking."
 
 banner:
   title: "In minder dan 12 weken een toegankelijke website of app"
@@ -63,4 +67,8 @@ faqs:
     answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen — wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
+  - question: "Wat is het verschil met een automatische scan?"
+    answer: "Automatische scans detecteren ongeveer 30% van de WCAG-succescriteria — vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
+  - question: "Voldoen we na de audit aan de EAA of het BDTO?"
+    answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
 ---

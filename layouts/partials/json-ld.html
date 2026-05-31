@@ -21,7 +21,12 @@
   "founder": {
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#julia-tol",
-    "name": "Julia Tol"
+    "name": "Julia Tol",
+    "jobTitle": "Senior auditor digitale toegankelijkheid",
+    "sameAs": [
+      "https://www.linkedin.com/in/julia-a11y/",
+      "https://codepen.io/Julia-Tol-wcag"
+    ]
   },
   "address": {
     "@type": "PostalAddress",
@@ -307,18 +312,40 @@
   {{ with .price }},
   "offers": {
     "@type": "Offer",
-    "price": "{{ .amount }}",
     "priceCurrency": "EUR",
-    {{ with .description }}"description": "{{ . }}",{{ end }}
     "availability": "https://schema.org/InStock",
+    {{ with .description }}"description": "{{ . }}",{{ end }}
     "priceSpecification": {
       "@type": "PriceSpecification",
-      "price": "{{ .amount }}",
+      "minPrice": {{ .amount }},
       "priceCurrency": "EUR",
       "valueAddedTaxIncluded": false
     }
   }
   {{ end }}
+}
+</script>
+{{ end }}
+
+{{/* WebPage node with dates — on dienst/service pages, geeft een freshness-signaal voor AI-search */}}
+{{ if .Params.service }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ .Permalink }}#webpage",
+  "url": "{{ .Permalink }}",
+  "name": "{{ .Title }}",
+  {{ with .Params.description }}"description": "{{ . }}",{{ end }}
+  "inLanguage": "nl-NL",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "isPartOf": {
+    "@id": "{{ site.BaseURL }}#website"
+  },
+  "about": {
+    "@id": "{{ site.BaseURL }}#organization"
+  }
 }
 </script>
 {{ end }}
