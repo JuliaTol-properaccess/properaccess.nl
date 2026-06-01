@@ -53,5 +53,3 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf ca. € 2.100 voor een eenvoudige shop, en kan oplopen tot ca. € 4.500 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
 ---
-
-{{< webinar-ecommerce >}}
