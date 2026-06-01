@@ -1,0 +1,37 @@
+# Bijzondere initiatieven — producten en diensten die digitale toegankelijkheid verbeteren.
+# Bedrijven die we persoonlijk goed kennen en van harte aanraden aan onze klanten.
+#
+# Elk item wordt een kaart op /bijzondere-initiatieven/. Bezoekers filteren op
+# "voor wie" het initiatief nuttig is.
+#
+# Velden per item:
+#   naam         (verplicht) Naam van het product, de dienst of het bedrijf.
+#   voor         (verplicht) Voor wie is dit nuttig? Een of meer van deze drie rollen
+#                            (let op de exacte schrijfwijze, anders matcht de filter niet):
+#                              "Contentmaker"      — webredacteuren, communicatie, schrijvers
+#                              "Webbouwer"         — developers en designers
+#                              "Websitebezoeker"   — helpt de eindgebruiker direct
+#   beschrijving (verplicht) Wat is het? Een of twee korte zinnen.
+#   waarom       (verplicht) Waarom raden we dit aan? Persoonlijke, concrete noot.
+#   url          (optioneel) Link naar de website van het bedrijf.
+#   logo         (optioneel) Pad naar een logo in /static/images/bijzondere-initiatieven/.
+#                            Liefst een SVG of PNG met transparante achtergrond.
+#                            Laat leeg als er geen logo is; dan tonen we alleen de naam.
+#   uitgelicht   (optioneel) Zet op true om dit item bovenaan te tonen.
+
+items:
+  - naam: "Publiqa"
+    voor:
+      - "Contentmaker"
+    beschrijving: "Een platform waarmee je zelf digitaal toegankelijke publicaties maakt, zoals online jaarverslagen, magazines en personeelshandboeken. Een toegankelijk alternatief voor de pdf, dat voldoet aan WCAG 2.2 AA."
+    waarom: "Toegankelijke pdf's blijven voor veel organisaties een worsteling. Publiqa pakt het bij de bron aan: de toegankelijkheid zit vanaf het ontwerp in het platform, niet als bijzaak achteraf. Voor wie regelmatig publiceert scheelt dat veel correctiewerk."
+    url: "https://publiqa.nl"
+    logo: "/images/bijzondere-initiatieven/publiqa.png"
+
+  - naam: "Tolkie"
+    voor:
+      - "Websitebezoeker"
+    beschrijving: "Een plug-in voor je website die teksten voorleest, vereenvoudigt naar taalniveau A2 en moeilijke woorden uitlegt. Maakt je informatie bruikbaar voor laaggeletterden en anderstaligen."
+    waarom: "Toegankelijkheid gaat niet alleen over code. Of mensen je tekst echt begrijpen telt net zo zwaar, en juist dat blijft in audits vaak liggen. Tolkie lost die kant op, voor de 1 op de 5 volwassenen die moeite heeft met lezen."
+    url: "https://tolkie.nl"
+    logo: "/images/bijzondere-initiatieven/tolkie.png"

@@ -1,0 +1,109 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section aanraders__page">
+    <div class="container">
+      <div class="aanraders__intro">{{ .Content }}</div>
+
+      <p class="aanraders__note">We krijgen niets betaald voor deze vermeldingen. Het zijn bedrijven die we kennen en vertrouwen.</p>
+
+      {{ $items := where (index site.Data "bijzondere-initiatieven").items "naam" "!=" nil }}
+
+      {{/* Vaste filters: de rollen waarvoor een initiatief nuttig kan zijn */}}
+      {{ $filters := slice "Contentmaker" "Webbouwer" "Websitebezoeker" }}
+
+      {{ if $items }}
+        <div class="aanraders-filter" role="group" aria-label="Filter initiatieven op voor wie het nuttig is">
+          <button class="aanraders-filter__btn aanraders-filter__btn--active" data-filter="all" aria-pressed="true">Alles</button>
+          {{ range $filters }}
+            <button class="aanraders-filter__btn" data-filter="{{ . }}" aria-pressed="false">{{ . }}</button>
+          {{ end }}
+        </div>
+
+        {{/* Uitgelichte items eerst */}}
+        {{ $featured := where $items "uitgelicht" true }}
+        {{ $rest := where $items "uitgelicht" "!=" true }}
+        {{ $sorted := $featured | append $rest }}
+
+        <div class="aanraders__grid">
+          {{ range $sorted }}
+            {{ $naam := .naam }}
+            <article class="aanrader-card" data-voor="{{ delimit .voor "," }}">
+              <div class="aanrader-card__body">
+                <div class="aanrader-card__head">
+                  {{ with .logo }}
+                    <img class="aanrader-card__logo" src="{{ . }}" alt="Logo van {{ $naam }}" loading="lazy" width="120" height="48">
+                  {{ end }}
+                  <h2 class="aanrader-card__title">{{ .naam }}</h2>
+                </div>
+                {{ with .voor }}
+                  <div class="aanrader-card__tags">
+                    {{ range . }}<span class="aanrader-card__tag">{{ . }}</span>{{ end }}
+                  </div>
+                {{ end }}
+                {{ with .beschrijving }}<p class="aanrader-card__description">{{ . }}</p>{{ end }}
+                {{ with .waarom }}
+                  <div class="aanrader-card__why">
+                    <span class="aanrader-card__why-label">Waarom wij dit aanraden</span>
+                    <p class="aanrader-card__why-text">{{ . }}</p>
+                  </div>
+                {{ end }}
+              </div>
+              {{ with .url }}
+                <div class="aanrader-card__action">
+                  <a class="aanrader-card__link" href="{{ . }}" target="_blank" rel="noopener">
+                    Bekijk website
+                    <span class="sr-only"> van {{ $naam }} (opent in een nieuw tabblad)</span>
+                  </a>
+                </div>
+              {{ end }}
+            </article>
+          {{ end }}
+
+          {{/* Vaste CTA-kaart */}}
+          <div class="aanrader-card aanrader-card--cta">
+            <div class="aanrader-card__body">
+              <h2 class="aanrader-card__title">Ken jij een initiatief?</h2>
+              <p class="aanrader-card__description">Heb je een product of dienst dat hier thuishoort? Laat het ons weten, we kijken graag mee.</p>
+            </div>
+            <div class="aanrader-card__action">
+              <a href="{{ "contact/" | relLangURL }}" class="aanrader-card__link">Neem contact op</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="aanraders-filter__empty" hidden>Geen initiatieven in deze categorie.</p>
+      {{ end }}
+    </div>
+  </section>
+
+  <script>
+  (function () {
+    var btns = document.querySelectorAll('.aanraders-filter__btn');
+    var cards = document.querySelectorAll('.aanrader-card[data-voor]');
+    var empty = document.querySelector('.aanraders-filter__empty');
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+
+        btns.forEach(function (b) {
+          b.classList.remove('aanraders-filter__btn--active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('aanraders-filter__btn--active');
+        btn.setAttribute('aria-pressed', 'true');
+
+        var visible = 0;
+        cards.forEach(function (card) {
+          var rollen = (card.getAttribute('data-voor') || '').split(',');
+          var match = filter === 'all' || rollen.indexOf(filter) !== -1;
+          card.hidden = !match;
+          if (match) { visible++; }
+        });
+        if (empty) { empty.hidden = visible !== 0; }
+      });
+    });
+  })();
+  </script>
+{{ end }}
