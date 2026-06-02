@@ -56,16 +56,16 @@
       issuesFound: "Gevonden problemen",
       noIssues: "Geen problemen gevonden",
       // Issue messages
-      "no-th": "Geen tabelkoppen (<th>) gevonden. Markeer koppen met <th> in plaats van <td>.",
-      "th-no-scope": "{count} tabelkop(pen) mist een scope-attribuut (scope=\"col\" of scope=\"row\").",
+      "no-th": "Geen tabelkoppen (`<th>`) gevonden. Markeer koppen met `<th>` in plaats van `<td>`.",
+      "th-no-scope": "{count} tabelkop(pen) mist een scope-attribuut (`scope=\"col\"` of `scope=\"row\"`).",
       "empty-th": "{count} tabelkop(pen) is leeg. Vul een beschrijvende tekst in.",
-      "no-accessible-name": "Tabel heeft geen accessible name. Voeg een <caption> of aria-label toe (meerdere tabellen op pagina).",
-      "invalid-headers-ref": "headers-attribuut verwijst naar niet-bestaand id \"{ref}\" in cel \"{cell}\".",
-      "sortable-no-aria-sort": "Sorteerbare kolom \"{header}\" mist aria-sort attribuut.",
-      "layout-has-th": "Layout-tabel bevat {count} <th>-element(en). Verwijder deze of verwijder role=\"presentation\".",
-      "layout-has-caption": "Layout-tabel bevat een <caption>. Verwijder deze of verwijder role=\"presentation\".",
-      "layout-has-summary": "Layout-tabel bevat een summary-attribuut. Verwijder dit of verwijder role=\"presentation\".",
-      "possible-layout-table": "Deze tabel heeft geen koppen en maar 1 rij. Is dit een layout-tabel? Voeg dan role=\"presentation\" toe.",
+      "no-accessible-name": "Tabel heeft geen accessible name. Voeg een `<caption>` of `aria-label` toe (meerdere tabellen op pagina).",
+      "invalid-headers-ref": "`headers`-attribuut verwijst naar niet-bestaand id \"{ref}\" in cel \"{cell}\".",
+      "sortable-no-aria-sort": "Sorteerbare kolom \"{header}\" mist `aria-sort`-attribuut.",
+      "layout-has-th": "Layout-tabel bevat {count} `<th>`-element(en). Verwijder deze of verwijder `role=\"presentation\"`.",
+      "layout-has-caption": "Layout-tabel bevat een `<caption>`. Verwijder deze of verwijder `role=\"presentation\"`.",
+      "layout-has-summary": "Layout-tabel bevat een `summary`-attribuut. Verwijder dit of verwijder `role=\"presentation\"`.",
+      "possible-layout-table": "Deze tabel heeft geen koppen en maar 1 rij. Is dit een layout-tabel? Voeg dan `role=\"presentation\"` toe.",
       // Severity
       error: "Fout",
       warning: "Waarschuwing",
@@ -110,16 +110,16 @@
       location: "Location",
       issuesFound: "Issues found",
       noIssues: "No issues found",
-      "no-th": "No table headers (<th>) found. Mark headers with <th> instead of <td>.",
-      "th-no-scope": "{count} header cell(s) missing a scope attribute (scope=\"col\" or scope=\"row\").",
+      "no-th": "No table headers (`<th>`) found. Mark headers with `<th>` instead of `<td>`.",
+      "th-no-scope": "{count} header cell(s) missing a scope attribute (`scope=\"col\"` or `scope=\"row\"`).",
       "empty-th": "{count} header cell(s) are empty. Add descriptive text.",
-      "no-accessible-name": "Table has no accessible name. Add a <caption> or aria-label (multiple tables on page).",
-      "invalid-headers-ref": "headers attribute references non-existent id \"{ref}\" in cell \"{cell}\".",
-      "sortable-no-aria-sort": "Sortable column \"{header}\" is missing aria-sort attribute.",
-      "layout-has-th": "Layout table contains {count} <th> element(s). Remove them or remove role=\"presentation\".",
-      "layout-has-caption": "Layout table contains a <caption>. Remove it or remove role=\"presentation\".",
-      "layout-has-summary": "Layout table contains a summary attribute. Remove it or remove role=\"presentation\".",
-      "possible-layout-table": "This table has no headers and only 1 row. Is it a layout table? Add role=\"presentation\" if so.",
+      "no-accessible-name": "Table has no accessible name. Add a `<caption>` or `aria-label` (multiple tables on page).",
+      "invalid-headers-ref": "`headers` attribute references non-existent id \"{ref}\" in cell \"{cell}\".",
+      "sortable-no-aria-sort": "Sortable column \"{header}\" is missing `aria-sort` attribute.",
+      "layout-has-th": "Layout table contains {count} `<th>` element(s). Remove them or remove `role=\"presentation\"`.",
+      "layout-has-caption": "Layout table contains a `<caption>`. Remove it or remove `role=\"presentation\"`.",
+      "layout-has-summary": "Layout table contains a `summary` attribute. Remove it or remove `role=\"presentation\"`.",
+      "possible-layout-table": "This table has no headers and only 1 row. Is it a layout table? Add `role=\"presentation\"` if so.",
       error: "Error",
       warning: "Warning",
       ctaHtml: "Want to check all tables across your entire website? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
@@ -138,12 +138,17 @@
     return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
   }
 
-  function tReplace(key, replacements) {
-    var str = t(key);
+  // Bouwt een veilige HTML-melding op. Escaped eerst alles (zodat letterlijke
+  // tags als <th> niet door de browser worden opgeslokt), zet daarna stukken
+  // tussen backticks om naar <code>-snippets, en voegt tot slot de geescapete
+  // invulwaarden in.
+  function formatMessage(key, replacements) {
+    var html = escapeHtml(t(key));
+    html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
     for (var k in replacements) {
-      str = str.replace("{" + k + "}", escapeHtml(replacements[k]));
+      html = html.split("{" + k + "}").join(escapeHtml(replacements[k]));
     }
-    return str;
+    return html;
   }
 
   function translateDOM() {
@@ -396,7 +401,7 @@
 
   function getIssueMessage(issue) {
     var detail = issue.detail || {};
-    return tReplace(issue.id, {
+    return formatMessage(issue.id, {
       count: detail.count || "",
       ref: detail.ref || "",
       cell: detail.cell || "",
