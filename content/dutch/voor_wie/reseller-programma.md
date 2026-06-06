@@ -90,7 +90,7 @@ Je ontvangt elke maand een blogartikel en elk kwartaal een EAA/WCAG-update voor 
 
 {{< section-cta >}}
 
-**Eerste klant? Die quickscan is gratis.** Om het laagdrempelig te maken: de eerste quickscan voor een van je klanten is gratis. Zo kun je het product demonstreren zonder risico.
+**Eerste klant? Die mini-audit is gratis.** Om het laagdrempelig te maken: de eerste mini-audit voor een van je klanten is gratis. Zo kun je het product demonstreren zonder risico.
 
 [Plan een gesprek van 20 minuten →](/contact/)
 
@@ -135,7 +135,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Kan ik het product eerst zelf testen?</summary>
 <div class="faq-answer">
-<p>Ja. De eerste quickscan voor een van je klanten is gratis. Zo kun je het product demonstreren zonder risico.</p>
+<p>Ja. De eerste mini-audit voor een van je klanten is gratis. Zo kun je het product demonstreren zonder risico.</p>
 </div>
 </details>
 

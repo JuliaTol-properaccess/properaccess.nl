@@ -36,7 +36,7 @@ Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-
 
 ## Korte antwoord
 
-> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.100 en € 4.500**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, custom componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een quickscan is gratis.
+> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.100 en € 4.500**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, custom componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een mini-audit kost 495 euro excl. btw.
 
 Dat is het in één alinea. De rest van dit artikel is uitleg waarom die range zo is, wat je voor dat bedrag krijgt, en welke factoren het naar boven of beneden duwen.
 
@@ -51,7 +51,7 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | Onderdeel                             | Indicatie         |
 | ------------------------------------- | ----------------- |
 | Webshop-audit (eenvoudig tot complex) | € 2.100 - € 4.500 |
-| Quickscan (eerste indruk, ca. 1 uur)  | gratis            |
+| Mini-audit (handmatige eerste controle) | € 495 excl. btw |
 | Retest na fixes                       | vanaf € 600       |
 | Nabespreking met je team              | € 150 per uur     |
 | Strippenkaart                         | € 100 per uur     |
@@ -108,16 +108,16 @@ Als je bij ons een audit afneemt voor de gemiddelde webshop, dan krijg je:
 6. **Eén nabespreking** waarin we het rapport met je team doorlopen en vragen beantwoorden.
 7. **Optionele retest** nadat je de issues hebt opgelost. Dat is een aparte stap met aparte prijs, zodat je niet betaalt voor herwerk dat je niet nodig hebt.
 
-## Hoe verhoudt dit zich tot een quickscan?
+## Hoe verhoudt dit zich tot een mini-audit?
 
-Een quickscan is geen volledige audit. Het is een **eerste indruk**, ongeveer een uur werk, waarin we de meest opvallende problemen op een paar belangrijke pagina's identificeren. Bij Proper Access bieden we die gratis aan. Hij is bedoeld om twee vragen te beantwoorden:
+Een mini-audit is geen volledige audit. Het is een handmatige eerste controle waarin een senior auditor tot 5 uur naar je website of app kijkt en de belangrijkste problemen op techniek, design en content in kaart brengt. Bij Proper Access kost die 495 euro excl. btw. Hij is bedoeld om twee vragen te beantwoorden:
 
 1. _Hoe ernstig is het ongeveer?_
 2. _Wat zou een complete audit voor jou ongeveer kosten?_
 
-Een quickscan vervangt geen audit. Hij is een diagnose-instrument voorafgaand aan de behandeling. Als je tijd hebt, [vraag er een aan](https://properaccess.nl/diensten/quickscan/) voordat je een offerte aanvraagt — bij ons of bij wie dan ook.
+Een mini-audit vervangt geen audit. Hij is een diagnose-instrument voorafgaand aan de behandeling. Als je tijd hebt, [vraag er een aan](https://properaccess.nl/quickscan/) voordat je een offerte aanvraagt, bij ons of bij wie dan ook.
 
-Er zijn bureaus die het woord 'quickscan' gebruiken voor een mini-audit van 8 uur waarin ze de 5 belangrijkste pagina's onder de loep nemen. Als je quickscans van verschillende bureaus vergelijkt, houd daar rekening mee.
+De term verschilt per bureau. De een noemt een snelle geautomatiseerde scan een 'quickscan', de ander een handmatige controle van een paar uur. Bij ons is de mini-audit handwerk van een senior auditor, tot 5 uur. Als je aanbiedingen van verschillende bureaus vergelijkt, vraag dan altijd wie de controle doet en hoeveel tijd erin zit.
 
 ## Hoe verhoudt dit zich tot een overlay?
 
@@ -167,11 +167,11 @@ Mijn advies: vraag minimaal twee offertes aan. Vraag specifiek **wie de audit ui
 
 - Een WCAG-audit voor een webshop kost bij Proper Access indicatief **€ 2.100 - € 4.500**. Eenvoudige webshops aan de onderkant, complexe internationale webshops aan de bovenkant. De meeste Nederlandse webshops vallen in de categorie gemiddeld-complex en liggen rond de € 3.600.
 - De prijs hangt af van templates, checkout-complexiteit, interactieve componenten, talen en de diepte van het rapport.
-- Een quickscan (gratis bij ons) is een diagnose, geen vervanging van een audit.
+- Een mini-audit (495 euro excl. btw bij ons) is een diagnose, geen vervanging van een audit.
 - Een overlay-tool is geen audit en lost het probleem niet op.
 - Vraag minimaal twee offertes aan en let op wie hem uitvoert, hoe het rapport er uit ziet en of een retest erin zit.
 
-Wil je een concrete prijs voor jouw webshop? [Vraag een gratis quickscan aan](https://properaccess.nl/diensten/quickscan/) of bel **085 5055 890**. Dan praten we 15 minuten en weet je precies waar je aan toe bent.
+Wil je een concrete prijs voor jouw webshop? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) of bel **085 5055 890**. Dan weet je precies waar je aan toe bent.
 
 ## Meer in deze serie
 

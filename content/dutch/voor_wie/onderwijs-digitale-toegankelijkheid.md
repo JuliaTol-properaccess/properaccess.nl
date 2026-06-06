@@ -116,9 +116,9 @@ Moodle en Canvas zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpa
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een gratis quickscan aan en ontvang binnen 5 werkdagen een risico-overzicht.
+Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een mini-audit aan (495 euro excl. btw). Een senior auditor bekijkt je site met de hand en je ontvangt het rapport binnen 5 werkdagen.
 
-[Vraag een gratis quickscan aan →](/webshop-quickscan/)
+[Vraag een mini-audit aan →](/webshop-quickscan/)
 
 {{< /section-cta >}}
 
@@ -171,9 +171,9 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 
 {{< section-cta >}}
 
-**Start met een gratis quickscan** en weet binnen 5 werkdagen waar je staat. Of neem direct contact op voor een vrijblijvend gesprek.
+**Start met een mini-audit** en weet binnen 5 werkdagen waar je staat. Of neem direct contact op voor een vrijblijvend gesprek.
 
-[Gratis quickscan aanvragen →](/webshop-quickscan/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
+[Mini-audit aanvragen →](/webshop-quickscan/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
 
 {{< /section-cta >}}
 
@@ -225,7 +225,7 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 <details class="faq-item">
 <summary class="faq-question">Hoe lang duurt een audit?</summary>
 <div class="faq-answer">
-<p>Gemiddeld 3 tot 4 weken. Een quickscan is binnen 5 werkdagen klaar.</p>
+<p>Gemiddeld 3 tot 4 weken. Een mini-audit is binnen 5 werkdagen klaar.</p>
 </div>
 </details>
 

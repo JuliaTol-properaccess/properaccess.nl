@@ -23,7 +23,7 @@ Voordat je gaat fixen, moet je weten wat er mis is. Gebruik een combinatie van:
 
 - **Geautomatiseerde tools** (WAVE, axe DevTools) voor een eerste scan
 - **Handmatige tests** — navigeer door je website met alleen je toetsenbord
-- **Een professionele quickscan of audit** voor een compleet beeld
+- **Een professionele mini-audit of audit** voor een compleet beeld
 
 ## Stap 2: Fix de basis
 
@@ -74,4 +74,4 @@ Na je eigen fixes: laat een professionele audit uitvoeren. Een externe auditor v
 
 Plan daarna periodiek een hertest. Elke update aan je website kan nieuwe problemen introduceren.
 
-Wil je beginnen met een overzicht van de huidige stand? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan weet je precies waar je moet beginnen.
+Wil je beginnen met een overzicht van de huidige stand? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je precies waar je moet beginnen.

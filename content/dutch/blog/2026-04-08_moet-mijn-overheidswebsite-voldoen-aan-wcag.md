@@ -71,4 +71,4 @@ De route is:
 
 Wij helpen overheden door dit hele traject heen. Van de eerste audit tot de retest en de nabespreking.
 
-Wil je weten waar je website nu staat? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan heb je snel een eerste beeld.
+Wil je weten waar je website nu staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan heb je snel een eerste beeld.

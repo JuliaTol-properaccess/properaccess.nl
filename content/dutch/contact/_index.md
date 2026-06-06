@@ -2,7 +2,7 @@
 title: "Contact"
 meta_title: "Contact — Proper Access"
 date: 2021-08-27
-description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee — van quickscan tot volledige audit."
+description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee, van mini-audit tot volledige audit."
 keywords:
   - contact digitale toegankelijkheid
   - WCAG specialist
@@ -61,7 +61,7 @@ url: "/contact/"
 <div class="card">
   <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">3</div>
   <h3 class="card__title">We adviseren de kortste route</h3>
-  <p>Soms een quickscan om snel te weten waar je staat. Soms een volledige WCAG-audit. En soms adviseren we een training voor je team.</p>
+  <p>Soms een mini-audit om snel te weten waar je staat. Soms een volledige WCAG-audit. En soms adviseren we een training voor je team.</p>
 </div>
 <div class="card">
   <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">4</div>

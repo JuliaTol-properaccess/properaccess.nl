@@ -75,4 +75,4 @@ Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet
 - Als je een **toegankelijkheidsverklaring** moet publiceren
 - Als je na een eerdere audit **verbeteringen hebt doorgevoerd** en wilt weten of je nu voldoet (retest)
 
-Wil je eerst een globaal beeld? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan weet je waar je staat voordat je investeert in een volledige audit.
+Wil je eerst een globaal beeld? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je waar je staat voordat je investeert in een volledige audit.

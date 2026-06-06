@@ -43,7 +43,7 @@ trust:
 
 faqs:
   - question: "Kunnen jullie al tijdens de bouw van een website testen?"
-    answer: "Ja, en dat is sterk aan te raden. Door tussentijdse quickscans uit te voeren tijdens de ontwikkeling, voorkom je dure aanpassingen achteraf. We werken graag agile met jullie team samen — denk aan sprint-reviews waarbij we componenten direct beoordelen."
+    answer: "Ja, en dat is sterk aan te raden. Door tussentijdse mini-audits uit te voeren tijdens de ontwikkeling, voorkom je dure aanpassingen achteraf. We werken graag agile met jullie team samen, denk aan sprint-reviews waarbij we componenten direct beoordelen."
   - question: "Bieden jullie ook ondersteuning tijdens het ontwikkelproces?"
     answer: "Zeker. We kunnen sparren met developers, code reviews uitvoeren, meehelpen met interpretatie van WCAG-richtlijnen, en feedback geven op componentniveau. Geen formeel traject nodig — gewoon even bellen of mailen als er vragen zijn."
   - question: "Geven jullie trainingen of workshops voor ontwikkelteams?"

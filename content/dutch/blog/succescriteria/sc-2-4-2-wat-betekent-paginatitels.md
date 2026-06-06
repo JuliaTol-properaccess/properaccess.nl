@@ -35,7 +35,7 @@ De titel beschrijft de inhoud van de pagina, niet alleen de website.
 | Slecht | Goed |
 |---|---|
 | Home | Proper Access - Digitale toegankelijkheid |
-| Producten | Audits en quickscans - Proper Access |
+| Producten | Audits en mini-audits - Proper Access |
 | Blog | Blog over digitale toegankelijkheid - Proper Access |
 | Contact | Contact opnemen - Proper Access |
 

@@ -555,6 +555,6 @@ WCAG-succescriterium 1.1.1 is de basis van een toegankelijke webshop. Door alle 
 - ✅ **Test regelmatig** met tools zoals WAVE en een schermlezer
 - ✅ **Maak het een gewoonte** om direct alt-teksten toe te voegen bij nieuwe content
 
-**Heb je vragen over het toegankelijk maken van jouw webshop?** Overweeg om [een quicksan](https://www.properaccess.nl/quickscan-digitale-toegankelijkheid/) of [een toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/) aan te vragen of een specialist te raadplegen. Investeren in toegankelijkheid nu bespaart je op de lange termijn tijd, geld en juridische problemen.
+**Heb je vragen over het toegankelijk maken van jouw webshop?** Overweeg om [een mini-audit](https://www.properaccess.nl/quickscan-digitale-toegankelijkheid/) of [een toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/) aan te vragen of een specialist te raadplegen. Investeren in toegankelijkheid nu bespaart je op de lange termijn tijd, geld en juridische problemen.
 
 Wil je een langer checklist hebben met punten waar je je webshop op moet checken? Daar heb ik een artikel over geschreven. Lees [mijn artikel op Frankwatching](https://www.frankwatching.com/archive/2025/02/17/meer-omzet-met-toegankelijke-webshop/).

@@ -229,5 +229,5 @@ Dit overzicht helpt je op weg, maar vervangt geen gerichte analyse per land of m
 
 Werk je aan een app, platform of digitale dienst die in meerdere landen wordt gebruikt? Of wil je zeker weten dat jouw oplossing voldoet aan [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) en de eisen van de Europese Toegankelijkheidsakte (EAA)?
 
-👉 Neem gerust contact met mij op als je vragen hebt, wilt sparren, of behoefte hebt aan advies. [Een quickscan](https://www.properaccess.nl/quickscan-digitale-toegankelijkheid/) kan je helpen begrijpen hoe groot je boeterisico is.
+👉 Neem gerust contact met mij op als je vragen hebt, wilt sparren, of behoefte hebt aan advies. [Een mini-audit](https://www.properaccess.nl/quickscan-digitale-toegankelijkheid/) kan je helpen begrijpen hoe groot je boeterisico is.
 Ik denk graag met je mee over praktische oplossingen en teststrategieën voor digitale toegankelijkheid.

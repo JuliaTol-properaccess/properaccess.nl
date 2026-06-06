@@ -17,12 +17,12 @@ hero_meta:
 
 {{< offerte-section title="1. Wie zijn wij" >}}
 
-Proper Access, gevestigd aan Willemserf 20, 3755XK te Eemnes, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
+Proper Access, gevestigd aan Keizersgracht 520 H, 1017 EK te Amsterdam, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
 
 **Contactgegevens**
 
 - Website: [properaccess.nl](https://properaccess.nl)
-- Postadres: Willemserf 20, 3755XK Eemnes
+- Postadres: Keizersgracht 520 H, 1017 EK Amsterdam
 - Telefoon: +31 (0)85 5055 890
 
 Julia Tol is de Functionaris Gegevensbescherming van Proper Access. Zij is te bereiken via [julia@properaccess.nl](mailto:julia@properaccess.nl).

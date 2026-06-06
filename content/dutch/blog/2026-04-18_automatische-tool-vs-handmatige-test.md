@@ -77,4 +77,4 @@ Een goede audit combineert altijd:
 
 Bij Proper Access is dat standaard. We gebruiken tools om efficiënt te werken, maar de beoordeling is altijd mensenwerk.
 
-Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/).
+Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw).

@@ -11,7 +11,7 @@ description: "Mini-scan van de digitale toegankelijkheid bij grote opticiens. In
 keywords:
   - toegankelijkheid websites opticiens
   - eaa toegankelijkheid bedrijven
-  - wcag quickscan bedrijven
+  - wcag mini-audit bedrijven
 aliases:
   - /hoe-toegankelijk-zijn-de-websites-van-de-grootste-opticiens/
 ---
@@ -26,7 +26,7 @@ De namen van de  bedrijven onthullen we niet. Het is niet onze bedoeling om met
 
 ## Hoe hebben we getest?
 
-We hebben een quickscan uitgevoerd van vier homepagina’s. Daarbij hebben we gekeken naar criteria die cruciaal zijn voor bezoekers met een visuele beperking, zoals:
+We hebben een mini-audit uitgevoerd van vier homepagina’s. Daarbij hebben we gekeken naar criteria die cruciaal zijn voor bezoekers met een visuele beperking, zoals:
 
 - Zijn afbeeldingen voorzien van correcte tekstalternatieven? (WCAG 1.1.1)
 - Worden koppen goed gebruikt om structuur aan te brengen? (WCAG 1.3.1)
@@ -80,4 +80,4 @@ Wil je je website nu al future proof maken? Let in elk geval op deze basisprinci
 
 Bij Proper Access weten we hoe je snel inzicht krijgt in de toegankelijkheid van je website. We hebben inmiddels meer dan 850 audits uitgevoerd en weten exact waar de valkuilen liggen.
 
-Wil jij je website toegankelijk maken voor iedereen? Wij ondersteunen je graag met  een quickscan, een volledige audit of  een sparringsessie. Hiermee bespaar je niet alleen tijd, maar je vermijdt ook het risico op een boete.  Neem vrijblijvend [contact](https://chatgpt.com/g/g-p-68a06da050348191b89a6bc7c8bca094-sparkle/c/68a06de3-a774-8323-b78c-47789562bec6#) met ons op voor een quickscan of adviesgesprek.
+Wil jij je website toegankelijk maken voor iedereen? Wij ondersteunen je graag met  een mini-audit, een volledige audit of  een sparringsessie. Hiermee bespaar je niet alleen tijd, maar je vermijdt ook het risico op een boete.  Neem vrijblijvend [contact](https://chatgpt.com/g/g-p-68a06da050348191b89a6bc7c8bca094-sparkle/c/68a06de3-a774-8323-b78c-47789562bec6#) met ons op voor een mini-audit of adviesgesprek.

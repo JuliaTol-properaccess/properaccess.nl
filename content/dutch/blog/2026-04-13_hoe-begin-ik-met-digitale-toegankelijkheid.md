@@ -76,4 +76,4 @@ De belangrijkste stap is de mindset-shift: toegankelijkheid is geen project met 
 
 Je hoeft niet alles te weten om te beginnen. Begin met de 5-minutentest, fix wat je vindt en bouw vanaf daar op.
 
-En als je een helder startpunt wilt: [vraag een gratis quickscan aan](https://properaccess.nl/quickscan/). Binnen een paar dagen weet je waar je staat.
+En als je een helder startpunt wilt: [vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Binnen een paar dagen weet je waar je staat.

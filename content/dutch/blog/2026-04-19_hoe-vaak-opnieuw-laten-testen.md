@@ -82,4 +82,4 @@ Een retest focust op de punten uit de eerdere audit. We controleren of:
 
 Kosten: € 300 voor een content-retest; vanaf € 600 voor een techniek-, systeem- of website-retest, afhankelijk van de omvang.
 
-Wil je starten met een eerste meting? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan heb je een baseline om vanuit te werken.
+Wil je starten met een eerste meting? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan heb je een baseline om vanuit te werken.

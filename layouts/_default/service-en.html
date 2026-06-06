@@ -1,0 +1,155 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+{{ with .Params.banner }}
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        {{ with .badge }}<span class="hp-hero__badge">{{ . }}</span>{{ end }}
+        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
+        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bullets }}
+        <div class="hp-contrast__checks" style="margin-top: 0.5rem;">
+          {{ range . }}
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span>{{ . | markdownify }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="hp-hero__actions" style="margin-top: 1.5rem;">
+          {{ with .button }}
+          <a class="hp-btn hp-btn--primary" href="{{ if strings.HasPrefix .link "http" }}{{ .link }}{{ else }}{{ .link | absLangURL }}{{ end }}"
+            {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
+            {{ .label }}
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+          {{ end }}
+          <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+            Call <span lang="nl">085 5055 890</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── TRUST BAR ─── -->
+{{ with .Params.trust }}
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">{{ .label }}</p>
+    <div class="hp-trust__names">
+      {{ range .names }}
+        <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── VALUE-PROP SECTIONS ─── -->
+{{ with .Params.sections }}
+<section class="hp-vp">
+  <div class="hp-container">
+    {{ $header := $.Params.sections_header }}
+    {{ with $header }}
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">{{ . }}</h2>
+    </div>
+    {{ end }}
+    {{ range $i, $s := . }}
+    <div class="hp-vp__row{{ if eq (mod $i 2) 1 }} hp-vp__row--reverse{{ end }}">
+      <div class="hp-vp__content">
+        {{ with $s.eyebrow }}<span class="hp-vp__eyebrow">{{ . }}</span>{{ end }}
+        <h3 class="hp-vp__title">{{ $s.title | markdownify }}</h3>
+        {{ with $s.body }}<p class="hp-vp__body">{{ . | markdownify }}</p>{{ end }}
+        {{ with $s.bullets }}
+        <ul class="hp-vp__list">
+          {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="hp-vp__visual">
+        <div class="hp-pain-card">
+          {{ with $s.card_eyebrow }}
+          <span class="hp-pain-card__eyebrow">
+            <span class="material-symbols-outlined" aria-hidden="true">{{ $s.card_icon | default "verified" }}</span>
+            {{ . }}
+          </span>
+          {{ end }}
+          {{ with $s.card_title }}<h4 class="hp-pain-card__title">{{ . }}</h4>{{ end }}
+          {{ with $s.card_list }}
+          <ul class="hp-pain-card__list">
+            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── HOW IT WORKS ─── -->
+{{ with .Params.steps }}
+<section class="hp-how">
+  <div class="hp-container">
+    <div class="hp-how__header">
+      <h2 class="hp-how__title">{{ $.Params.steps_header | default "How it works" }}</h2>
+    </div>
+    <ol class="hp-how__grid">
+      {{ range $i, $step := . }}
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">{{ add $i 1 }}</span>
+        <h3 class="hp-how__step-title">{{ $step.title }}</h3>
+        <p class="hp-how__step-body">{{ $step.body | markdownify }}</p>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CONTENT (optional prose) ─── -->
+{{ with .Content }}
+<section class="section-sm">
+  <div class="hp-container">
+    <article class="offerte-content">{{ . }}</article>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Frequently asked questions</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

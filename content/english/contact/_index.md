@@ -2,7 +2,7 @@
 title: "Contact"
 meta_title: "Contact — Proper Access"
 date: 2021-08-27
-description: "Questions about WCAG, the EAA, or digital accessibility? Get in touch. We're happy to help — from a quick scan to a full audit."
+description: "Questions about WCAG, the EAA, or digital accessibility? Get in touch. We're happy to help — from a mini audit to a full audit."
 keywords:
   - contact digital accessibility
   - WCAG specialist
@@ -77,7 +77,7 @@ url: "/en/contact/"
 <div class="card">
   <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">3</div>
   <h3 class="card__title">We recommend the shortest route</h3>
-  <p>Sometimes a quick scan to see where you stand. Sometimes a full WCAG audit. And sometimes we recommend training for your team.</p>
+  <p>Sometimes a mini audit to see where you stand. Sometimes a full WCAG audit. And sometimes we recommend training for your team.</p>
 </div>
 <div class="card">
   <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">4</div>

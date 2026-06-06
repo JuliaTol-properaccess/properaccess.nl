@@ -6,7 +6,7 @@ weight: 3
 date: 2026-02-28
 slug: "strippenkaart"
 url: "/strippenkaart/"
-description: "Flexibele toegankelijkheidsondersteuning op uurbasis. Code reviews, sprint-testing, quickscans en technisch advies — rechtstreeks van een senior auditor."
+description: "Flexibele toegankelijkheidsondersteuning op uurbasis. Code reviews, sprint-testing, snelle checks en technisch advies, rechtstreeks van een senior auditor."
 keywords:
   - strippenkaart toegankelijkheid
   - wcag ondersteuning
@@ -30,7 +30,7 @@ trust:
   names:
     - "Code reviews"
     - "Sprint-testing"
-    - "Quickscans"
+    - "Snelle checks"
     - "Technisch advies"
     - "Mini-audits"
 ---
@@ -41,7 +41,7 @@ De strippenkaart is een vooraf afgesproken aantal uren dat je besteedt aan alles
 
 - **Code reviews** — stuur je pull request of component en krijg feedback op semantische HTML, ARIA-gebruik en screenreader-compatibiliteit
 - **Sprint-testing** — aan het einde van een sprint nieuwe features laten checken, met feedback op dezelfde dag
-- **Quickscans** — een snelle check van een pagina, flow of component op de grootste toegankelijkheidsproblemen
+- **Snelle checks** — een pagina, flow of component snel laten controleren op de grootste toegankelijkheidsproblemen
 - **Technische vragen** — van ARIA-patronen tot screenreader-gedrag, je kunt ons alles vragen
 - **Advies bij ontwerp** — laat ons meekijken bij een nieuw design, voordat er gebouwd wordt
 - **Mini-audits** — een specifiek deel van je site laten toetsen met dezelfde diepgang als een volledige audit
@@ -94,7 +94,7 @@ Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account manager
 <details class="faq-item">
 <summary class="faq-question">Hoeveel uur heb ik nodig?</summary>
 <div class="faq-answer">
-<p>Dat hangt af van hoe vaak je ons wilt inzetten. Een code review van een component kost 1-2 uur, een quickscan van een pagina 2-3 uur, sprint-testing per sprint 3-5 uur. We adviseren je bij de kennismaking over een passende bundel.</p>
+<p>Dat hangt af van hoe vaak je ons wilt inzetten. Een code review van een component kost 1-2 uur, een snelle check van een pagina 2-3 uur, sprint-testing per sprint 3-5 uur. We adviseren je bij de kennismaking over een passende bundel.</p>
 </div>
 </details>
 

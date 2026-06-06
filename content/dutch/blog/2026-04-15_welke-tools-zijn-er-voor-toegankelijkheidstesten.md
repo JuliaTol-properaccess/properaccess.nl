@@ -111,4 +111,4 @@ Bij Proper Access gebruiken we een combinatie van:
 
 Geen enkele tool vervangt handmatig testen. De tools helpen ons efficiënter te werken, maar de beoordeling is altijd mensenwerk.
 
-Wil je weten hoe jouw website scoort? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — wij combineren tools en handmatig onderzoek voor een betrouwbaar eerste beeld.
+Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Wij combineren tools en handmatig onderzoek voor een betrouwbaar eerste beeld.

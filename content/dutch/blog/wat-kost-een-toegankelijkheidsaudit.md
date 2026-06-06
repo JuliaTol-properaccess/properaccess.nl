@@ -9,14 +9,14 @@ tags:
   - "toegankelijkheidsaudit"
   - "wcag"
   - "kosten"
-  - "quickscan"
-description: "Wat kost een WCAG-audit? Van quickscan tot volledig onderzoek: overzicht van indicatieprijzen, wat je ervoor krijgt en waar je op moet letten bij het vergelijken van offertes."
+  - "mini-audit"
+description: "Wat kost een WCAG-audit? Van mini-audit tot volledig onderzoek: overzicht van indicatieprijzen, wat je ervoor krijgt en waar je op moet letten bij het vergelijken van offertes."
 keywords:
   - wat kost een toegankelijkheidsaudit
   - wcag audit kosten
   - toegankelijkheidsonderzoek prijs
   - toegankelijkheidsonderzoek uitbesteden
-  - quickscan digitale toegankelijkheid
+  - mini-audit digitale toegankelijkheid
   - wcag audit laten doen
   - kosten digitale toegankelijkheid
   - toegankelijkheidsaudit vergelijken
@@ -36,11 +36,11 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 {{< /case-section >}}
 
-{{< case-section image="/images/blog/svg-audit-typen.svg" alt="Vier typen onderzoek: quickscan, content-audit, techniekaudit en volledig WCAG-EM" >}}
+{{< case-section image="/images/blog/svg-audit-typen.svg" alt="Vier typen onderzoek: mini-audit, content-audit, techniekaudit en volledig WCAG-EM" >}}
 
 ## Typen onderzoek en wat ze kosten
 
-**Gratis quickscan** — een snelle eerste check. Geen volledige audit, maar je weet waar je staat.
+**Mini-audit** (495 euro excl. btw) — een senior auditor bekijkt je site met de hand. Geen volledige audit, maar je weet waar je staat.
 
 **Content-audit** (v.a. 1.500 euro) — gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
 
@@ -91,9 +91,9 @@ Na een audit bieden we altijd twee optionele extra's aan:
 ## Veelgestelde vragen
 
 <details class="faq-item">
-<summary class="faq-question">Is een quickscan genoeg voor de EAA?</summary>
+<summary class="faq-question">Is een mini-audit genoeg voor de EAA?</summary>
 <div class="faq-answer">
-Nee. De European Accessibility Act vereist dat je website voldoet aan WCAG 2.1 niveau AA. Om dat aan te tonen heb je een volledig WCAG-EM onderzoek nodig. Een quickscan is een goede eerste stap, maar vervangt geen audit.
+Nee. De European Accessibility Act vereist dat je website voldoet aan WCAG 2.1 niveau AA. Om dat aan te tonen heb je een volledig WCAG-EM onderzoek nodig. Een mini-audit is een goede eerste stap, maar vervangt geen audit.
 </div>
 </details>
 
@@ -120,6 +120,6 @@ Dan is een audit op het ontwerp of de staging-omgeving vaak zinvoller dan wachte
 
 ## Wil je weten wat een audit voor jouw website kost?
 
-Begin met onze [quickscan](/quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs — we reageren binnen een werkdag.
+Begin met onze [mini-audit](/quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs — we reageren binnen een werkdag.
 
 {{< /case-section >}}

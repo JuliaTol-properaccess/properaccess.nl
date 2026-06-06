@@ -62,6 +62,6 @@ Het is geen nice-to-have. Het is een basisvoorwaarde.
 
 ## Hoe begin je?
 
-De eerste stap is inzicht krijgen in hoe je website er nu voorstaat. Een quickscan geeft je in kort tijdsbestek een overzicht van de grootste problemen. Van daaruit kun je gericht verbeteren.
+De eerste stap is inzicht krijgen in hoe je website er nu voorstaat. Een mini-audit geeft je in kort tijdsbestek een overzicht van de grootste problemen. Van daaruit kun je gericht verbeteren.
 
-Wil je weten hoe jouw website scoort? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) en je weet binnen een paar dagen waar je staat.
+Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw) en je weet binnen een paar dagen waar je staat.

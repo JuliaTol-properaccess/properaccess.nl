@@ -131,7 +131,7 @@ Benieuwd wat een abonnement voor jouw organisatie kan betekenen? Neem contact op
 <details class="faq-item">
 <summary class="faq-question">Wat is het verschil met de strippenkaart?</summary>
 <div class="faq-answer">
-<p>De strippenkaart is voor ad hoc inzet: een code review hier, een quickscan daar. Het abonnement is voor organisaties die structureel willen borgen: meerjarenplanning, periodieke audits, trainingen en onbeperkt toolgebruik. Bij 5+ websites is het abonnement vrijwel altijd voordeliger en effectiever.</p>
+<p>De strippenkaart is voor ad hoc inzet: een code review hier, een snelle check daar. Het abonnement is voor organisaties die structureel willen borgen: meerjarenplanning, periodieke audits, trainingen en onbeperkt toolgebruik. Bij 5+ websites is het abonnement vrijwel altijd voordeliger en effectiever.</p>
 </div>
 </details>
 

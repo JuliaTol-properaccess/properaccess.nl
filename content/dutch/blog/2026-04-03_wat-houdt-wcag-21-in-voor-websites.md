@@ -52,4 +52,4 @@ De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 
 
 Ons advies: audit direct op WCAG 2.2. Dan ben je niet alleen compliant, maar ook toekomstbestendig.
 
-Wil je weten hoe jouw website scoort op WCAG? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — je weet binnen een paar dagen waar je staat.
+Wil je weten hoe jouw website scoort op WCAG? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Je weet binnen een paar dagen waar je staat.

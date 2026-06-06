@@ -49,7 +49,7 @@ faqs:
   - question: "Wat als mijn webshop draait op Shopify, Magento of WooCommerce?"
     answer: "Wij kunnen elk platform toetsen, inclusief maatwerkmodules of plug-ins. Als je bepaalde zaken niet zelf kunt oplossen binnen de beperkingen van je platform, denken we mee over een alternatief."
   - question: "Hoelang duurt het voordat mijn webshop toegankelijk is?"
-    answer: "Een quickscan levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning."
+    answer: "Een mini-audit levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf ca. € 2.100 voor een eenvoudige shop, en kan oplopen tot ca. € 4.500 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
 ---

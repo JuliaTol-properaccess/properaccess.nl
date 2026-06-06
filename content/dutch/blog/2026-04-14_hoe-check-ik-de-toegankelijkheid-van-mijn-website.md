@@ -99,4 +99,4 @@ Dit is wat je nodig hebt als je moet aantonen dat je voldoet aan de wet, of als 
 
 Begin met stap 1 en 2 — die kosten niets en geven je een eerste beeld. Als je serieus aan de slag wilt, laat dan een professionele audit uitvoeren.
 
-Wil je een snelle indicatie? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — een senior auditor bekijkt je website en geeft je een overzicht van de belangrijkste punten.
+Wil je een snelle indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Een senior auditor bekijkt je website en geeft je een overzicht van de belangrijkste punten.

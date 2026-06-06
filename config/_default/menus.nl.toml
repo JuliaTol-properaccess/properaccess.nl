@@ -55,7 +55,7 @@ weight = 2
 
 [[main]]
 parent = "Diensten"
-name = "Quickscan"
+name = "Mini-audit"
 url = "/quickscan-digitale-toegankelijkheid/"
 weight = 3
 

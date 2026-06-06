@@ -56,4 +56,4 @@ Als je een website hebt die onder de EAA of het BDTO valt, moet je aantoonbaar v
 
 Het klinkt misschien overweldigend — 86 criteria — maar in de praktijk komen dezelfde problemen steeds terug. Ontbrekende alt-teksten, te laag contrast, formulieren zonder labels, focusindicators die zijn uitgeschakeld. De meeste websites hebben vijf tot tien terugkerende patronen die 80% van de issues veroorzaken.
 
-Wil je weten welke patronen op jouw website spelen? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) en je krijgt een helder overzicht.
+Wil je weten welke patronen op jouw website spelen? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw) en je krijgt een helder overzicht.

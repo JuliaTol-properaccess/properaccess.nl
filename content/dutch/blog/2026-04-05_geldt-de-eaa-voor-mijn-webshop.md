@@ -71,4 +71,4 @@ Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf ca. € 2
 
 Het goede nieuws: de meeste webshops hebben dezelfde soort issues, en die zijn vaak in een paar sprints op te lossen.
 
-Wil je weten waar jouw webshop staat? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan weet je precies wat er speelt.
+Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je precies wat er speelt.

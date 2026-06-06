@@ -92,4 +92,4 @@ Een audit is een investering. De return:
 - **Technisch** — de gevonden problemen overlappen vaak met UX- en SEO-issues
 - **Organisatorisch** — je team leert van het rapport en bouwt kennis op
 
-Wil je eerste een gratis indicatie? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan weet je wat je kunt verwachten voordat je investeert.
+Wil je eerst een indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je wat je kunt verwachten voordat je investeert.

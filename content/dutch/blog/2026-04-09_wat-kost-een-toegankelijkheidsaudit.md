@@ -81,4 +81,4 @@ Nee, maar wees kritisch. Vraag altijd:
 
 Een audit van € 1.000 die alleen geautomatiseerd test, vindt maximaal 30% van de problemen. Dan betaal je uiteindelijk dubbel.
 
-Wil je eerst een indruk van de staat van je website? [Vraag een gratis quickscan aan](https://properaccess.nl/quickscan/) — dan weet je wat je kunt verwachten voordat je investeert.
+Wil je eerst een indruk van de staat van je website? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je wat je kunt verwachten voordat je investeert.

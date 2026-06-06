@@ -70,11 +70,11 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 {{< /case-section >}}
 
-{{< case-section image="/images/blog/svg-stappenplan.svg" alt="Stappenplan in 4 stappen: quickscan, blokkers fixen, volledige audit, retest" >}}
+{{< case-section image="/images/blog/svg-stappenplan.svg" alt="Stappenplan in 4 stappen: mini-audit, blokkers fixen, volledige audit, retest" >}}
 
 ## Waar begin je?
 
-**Stap 1: Quickscan** — begin met een [quickscan](/quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
+**Stap 1: Mini-audit** — begin met een [mini-audit](/quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
 
 **Stap 2: Grootste blokkers fixen** — focus op dingen die mensen uitsluiten: bestelproces, cookie-banner, formulieren zonder labels.
 
@@ -120,6 +120,6 @@ Een kant-en-klaar thema is geen garantie voor toegankelijkheid. Zelfs thema's di
 
 - [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/) — bepaal welke alt-tekst je productafbeeldingen nodig hebben
 - [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/) — transparant overzicht van prijzen en pakketten
-- [Quickscan aanvragen](/quickscan/) — eerste stap om te zien waar je webshop staat
+- [Mini-audit aanvragen](/quickscan/) — eerste stap om te zien waar je webshop staat
 
 {{< /case-section >}}
