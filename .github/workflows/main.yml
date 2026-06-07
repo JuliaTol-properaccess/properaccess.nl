@@ -45,14 +45,14 @@ jobs:
           && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
 
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
         with:
           submodules: recursive
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6.0.0
 
       - name: Setup Project
         run: npm run project-setup
@@ -65,7 +65,7 @@ jobs:
 
       # --- Audit reports (Eleventy) → /rapporten/ ---
       - name: Checkout audit reports repo
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
         with:
           repository: JuliaTol-properaccess/pa-audit
           token: ${{ secrets.PA_AUDIT_TOKEN }}
@@ -84,7 +84,7 @@ jobs:
         run: rsync -a _audit-reports/dist/ ./public/rapporten/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: ./public
 
@@ -98,7 +98,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v5.0.0
 
       - name: Ping Google to recrawl sitemap
         run: curl -s "https://www.google.com/ping?sitemap=https://www.properaccess.nl/sitemap.xml"
