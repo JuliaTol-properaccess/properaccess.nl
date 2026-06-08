@@ -23,8 +23,10 @@ keywords:
   - laaggeletterdheid overheidswebsite
   - toegankelijke teksten overheid
   - tool taalniveau A2 B1
-image: "/images/bijzondere-initiatieven/tolkie.png"
+image: "/images/blog/tolkie-watercolor.png"
 ---
+
+<p style="text-align:center;"><img src="/images/bijzondere-initiatieven/tolkie.png" alt="Tolkie" style="max-width:260px;height:auto;" /></p>
 
 Wil je dat je overheidswebsite leesbaar is voor bezoekers op **B1-niveau** of lager? Dan kom je vroeg of laat de vraag tegen wat je doet met de teksten die er nu staan. B1 is het taalniveau dat een ruime meerderheid van de Nederlandse bevolking goed begrijpt, en de norm waar de meeste overheidsorganisaties op willen zitten. Alleen zit een groot deel van de bestaande overheidsteksten van nature op B2 of hoger. Alles handmatig herschrijven kost tijd die de meeste communicatie-afdelingen niet hebben.
 
