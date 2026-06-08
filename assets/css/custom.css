@@ -13823,6 +13823,114 @@ body.pa-chat--open {
   border-radius: 0.75rem;
 }
 
+/* ─── Artikel-layout met inhoudsopgave-zijkolom ("In dit artikel") ─── */
+.article-layout__content {
+  min-width: 0;
+}
+
+/* Verborgen tot JS genoeg koppen vindt (>= 3) */
+.article-toc--empty {
+  display: none;
+}
+
+/* Mobiel: bordered box boven het artikel (geen vlakvulling, alleen randen) */
+.article-toc__inner {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #A30D4B;
+  border-radius: 0.5rem;
+}
+
+.article-toc__label {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #A30D4B;
+  margin: 0 0 0.6rem;
+}
+
+.article-toc nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-toc nav li {
+  margin: 0;
+}
+
+.article-toc nav a {
+  display: block;
+  padding: 0.3rem 0 0.3rem 0.85rem;
+  border-left: 2px solid #e5e7eb;
+  color: #1F2937;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.article-toc nav a:hover {
+  color: #A30D4B;
+  border-left-color: #A30D4B;
+}
+
+.article-toc nav a:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.article-toc nav a.is-active {
+  color: #A30D4B;
+  font-weight: 700;
+  border-left-color: #A30D4B;
+}
+
+.article-toc nav ul ul a {
+  padding-left: 1.7rem;
+  font-size: 0.85rem;
+}
+
+/* Koppen niet onder de sticky header laten verdwijnen bij een ankersprong */
+.js-article-body h2,
+.js-article-body h3 {
+  scroll-margin-top: 6rem;
+}
+
+/* Desktop: tweekoloms met sticky zijkolom links (alleen als er een TOC is) */
+@media (min-width: 1100px) {
+  .article-layout--with-toc {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 720px);
+    gap: 3rem;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2.5rem;
+  }
+
+  .article-toc:not(.article-toc--empty) {
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+  }
+
+  /* Op desktop geen kaart, alleen de rail langs de links */
+  .article-toc__inner {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
 
 /* ─── E-commerce: stat highlight (61%) ─── */
 .ec-stat-highlight {

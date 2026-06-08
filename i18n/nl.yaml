@@ -1,5 +1,7 @@
 - id: toc
   translation: "Inhoudsopgave"
+- id: toc_in_article
+  translation: "In dit artikel"
 - id: contact_name
   translation: "Naam"
 - id: contact_email
