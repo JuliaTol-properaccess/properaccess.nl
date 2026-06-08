@@ -13041,6 +13041,12 @@ a.tool-link__href-url:hover {
   padding-right: 1rem;
 }
 
+/* Auteur-bio onderaan artikelen: wat meer ruimte boven de bio na de scheidingslijn */
+.case__body > hr + p,
+.blog-wcag__text hr + p {
+  padding-top: 1.5rem;
+}
+
 .case__body > h2 {
   font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
   font-size: 1.5rem;
