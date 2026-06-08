@@ -13,7 +13,6 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - toegankelijkheidsaudit
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Kort antwoord: een goede audit test altijd op meerdere apparaten. Maar je hoeft niet apart te betalen voor een "desktop-audit" en een "mobiele audit" — bij een professionele audit zit dat er gewoon in.

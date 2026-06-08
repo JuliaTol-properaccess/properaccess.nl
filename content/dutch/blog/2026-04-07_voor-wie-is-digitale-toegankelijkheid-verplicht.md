@@ -17,7 +17,6 @@ keywords:
   - EAA
   - webshop
   - overheid
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Digitale toegankelijkheid is in Nederland inmiddels voor een groot deel van de organisaties verplicht. Welke wet voor jou geldt, hangt af van het type organisatie.

@@ -14,7 +14,6 @@ description: "Wil je de toegankelijkheid van je website checken? Overzicht van g
 keywords:
   - digitale toegankelijkheid
   - WCAG
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Er zijn drie manieren om de toegankelijkheid van je website te checken: geautomatiseerde tools, handmatige tests en professionele audits. Elk heeft z'n plek, en idealiter combineer je ze.

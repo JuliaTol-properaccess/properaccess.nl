@@ -17,7 +17,6 @@ keywords:
   - WCAG
   - EAA
   - webshop
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Kort antwoord: waarschijnlijk wel. De European Accessibility Act (EAA) is op 28 juni 2025 van kracht geworden en geldt voor vrijwel alle webshops die producten of diensten verkopen aan consumenten.

@@ -13,7 +13,6 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - EAA
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 De European Accessibility Act (EAA) is sinds 28 juni 2025 van kracht. Als je bedrijf niet voldoet, kunnen er sancties volgen. Maar hoe werkt dat precies?

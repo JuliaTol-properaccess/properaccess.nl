@@ -18,7 +18,6 @@ keywords:
   - Wdo checklist
   - toegankelijkheid overheidswebsite
   - digitale toegankelijkheid wet
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 seo_title: "WCAG-checklist overheidswebsite (Wdo): wat moet je aftikken? | Proper Access"
 seo_description: "Praktische WCAG-checklist voor overheidswebsites onder het Wdo. Wat je moet testen, wat vaak misgaat en welke stappen je publicatie op orde krijgen."
 ---

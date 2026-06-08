@@ -16,7 +16,6 @@ keywords:
   - mini-audit website
   - WCAG audit
   - digitale toegankelijkheid onderzoek
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 seo_title: "Toegankelijkheidsonderzoek: wat is het en wanneer kies je het? | Proper Access"
 seo_description: "Wat zit er in een toegankelijkheidsonderzoek? Verschil tussen mini-audit en audit, wat je krijgt, wat het kost en hoe je de juiste keuze maakt."
 ---

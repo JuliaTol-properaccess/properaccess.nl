@@ -17,7 +17,6 @@ keywords:
   - WCAG
   - webshop
   - overheid
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Een toegankelijkheidsaudit is geen eenmalige exercitie. Je website verandert continu — nieuwe content, updates, features, redesigns — en elke wijziging kan nieuwe problemen introduceren. Maar hoe vaak moet je laten hertesten?

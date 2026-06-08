@@ -18,7 +18,6 @@ keywords:
   - toegankelijkheidsonderzoek methode
   - WCAG audit methodiek
   - evaluatiemethodiek WCAG
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 seo_title: "WCAG-EM uitgelegd: de 5 stappen van een officieel onderzoek | Proper Access"
 seo_description: "Wat is WCAG-EM en waarom is het verplicht voor overheids- en EAA-audits? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
 ---

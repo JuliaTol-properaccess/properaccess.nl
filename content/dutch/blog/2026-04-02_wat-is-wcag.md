@@ -14,7 +14,6 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - EAA
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 WCAG staat voor **Web Content Accessibility Guidelines**. Het is de internationale standaard die beschrijft hoe je digitale content toegankelijk maakt voor mensen met een beperking.

@@ -12,7 +12,6 @@ description: "Wil je beginnen met digitale toegankelijkheid maar weet je niet wa
 keywords:
   - digitale toegankelijkheid
   - WCAG
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 De hoeveelheid informatie over digitale toegankelijkheid kan overweldigend zijn. 86 succescriteria, vier principes, drie niveaus, meerdere wetten. Maar je hoeft niet alles tegelijk te doen. Dit is hoe je begint.

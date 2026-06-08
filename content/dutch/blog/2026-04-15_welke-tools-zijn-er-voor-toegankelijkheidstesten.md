@@ -16,7 +16,6 @@ keywords:
   - WCAG
   - EAA
   - tools
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Er zijn tientallen tools voor het testen van toegankelijkheid. Sommige zijn gratis, andere niet. Sommige test je zelf, andere vereisen expertise. Dit is ons overzicht van de tools die wij dagelijks gebruiken en aanbevelen.

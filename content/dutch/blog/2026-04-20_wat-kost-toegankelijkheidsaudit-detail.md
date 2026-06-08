@@ -16,7 +16,6 @@ keywords:
   - WCAG
   - toegankelijkheidsaudit
   - kosten
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 *Dit artikel is een aanvulling op ons kortere stuk over auditkosten en gaat dieper in op de prijsverschillen in de markt.*

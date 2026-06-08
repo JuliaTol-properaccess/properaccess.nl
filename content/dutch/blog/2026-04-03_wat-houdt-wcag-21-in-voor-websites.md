@@ -14,7 +14,6 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - EAA
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 WCAG 2.1 is de versie van de Web Content Accessibility Guidelines waar de Nederlandse wetgeving op dit moment naar verwijst. Het beschrijft 78 succescriteria verdeeld over vier principes: waarneembaar, bedienbaar, begrijpelijk en robuust.

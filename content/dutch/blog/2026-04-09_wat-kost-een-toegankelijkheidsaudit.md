@@ -18,7 +18,6 @@ keywords:
   - webshop
   - toegankelijkheidsaudit
   - kosten
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Een toegankelijkheidsaudit kost bij de meeste aanbieders in Nederland tussen de € 2.000 en € 15.000. Dat is een flinke range, en de prijs zegt niet altijd iets over de kwaliteit. Laat ons uitleggen waar die verschillen vandaan komen.

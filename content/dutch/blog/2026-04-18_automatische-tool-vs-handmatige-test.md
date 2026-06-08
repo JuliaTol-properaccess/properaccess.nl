@@ -13,7 +13,6 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - tools
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Dit is een van de belangrijkste dingen om te weten over toegankelijkheidstesten: **geautomatiseerde tools vinden maximaal 30% van de problemen**. De overige 70% vereist menselijke beoordeling.

@@ -19,7 +19,6 @@ keywords:
   - EAA
   - webshop
   - overheid
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Digitale toegankelijkheid betekent dat je website, app of digitale dienst bruikbaar is voor iedereen. Ook voor mensen die blind zijn, slechtziend, doof, motorisch beperkt of een cognitieve beperking hebben.

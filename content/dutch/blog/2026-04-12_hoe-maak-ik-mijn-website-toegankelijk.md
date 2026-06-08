@@ -12,7 +12,6 @@ description: "Praktische stappen om je website toegankelijk te maken. Van alt-te
 keywords:
   - digitale toegankelijkheid
   - WCAG
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Je website toegankelijk maken is geen eenmalig project dat je in een middag afrondt. Het is een combinatie van technische aanpassingen, content-verbeteringen en bewustwording in je team. Maar het hoeft niet overweldigend te zijn als je het stap voor stap aanpakt.

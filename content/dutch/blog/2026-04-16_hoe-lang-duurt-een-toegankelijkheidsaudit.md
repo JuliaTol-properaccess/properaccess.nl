@@ -14,7 +14,6 @@ keywords:
   - WCAG
   - webshop
   - toegankelijkheidsaudit
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 De doorlooptijd van een toegankelijkheidsaudit ligt bij de meeste aanbieders tussen de 2 en 6 weken. Bij ons is dat gemiddeld 2 tot 4 weken, afhankelijk van de complexiteit van je website.

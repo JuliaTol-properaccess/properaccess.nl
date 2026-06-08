@@ -19,7 +19,6 @@ keywords:
   - WCAG
   - EAA
   - webshop
-image: "/images/blog/vragen-digitale-toegankelijkheid.svg"
 ---
 
 Je wilt weten of je website voldoet aan de EAA, maar je wilt niet meteen duizenden euro's uitgeven. Begrijpelijk. Er zijn gratis tools, maar het is belangrijk om te weten wat ze wel en niet kunnen.
