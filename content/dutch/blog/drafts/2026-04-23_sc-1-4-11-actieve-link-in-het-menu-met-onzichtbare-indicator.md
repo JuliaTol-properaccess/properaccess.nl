@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Actieve link in het menu met onzichtbare indicator"
-date: 2026-04-23
+date: 2026-06-22
 slug: "sc-1-4-11-actieve-link-in-het-menu-met-onzichtbare-indicator"
 categories:
   - "wcag-uitgelegd"

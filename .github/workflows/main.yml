@@ -8,10 +8,17 @@ on:
   # Triggered by the audit reports repo when reports change
   repository_dispatch:
     types: [rebuild-reports]
+  # Dagelijkse publicatie van de WCAG LinkedIn-serie: geeft één draft vrij
+  # en deployt die in dezelfde run (zie de "Publiceer volgende SC-post"-stap).
+  schedule:
+    - cron: "0 6 * * *" # elke dag 06:00 UTC (08:00 NL zomertijd)
+  # Handmatig starten kan ook
+  workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages.
+# contents: write is nodig om de vrijgegeven draft terug te committen naar main.
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -49,6 +56,24 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      # Geeft bij de dagelijkse cron-run één SC-serie-draft vrij en commit dat
+      # terug naar main. De build hieronder pakt de vrijgegeven post meteen mee,
+      # dus publiceren en deployen gebeuren in dezelfde run.
+      - name: Publiceer volgende SC-post (alleen bij schedule/handmatig)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          python3 scripts/publish_next_linkedin_post.py | tee /tmp/pub.txt
+          if grep -q '^PUBLISHED ' /tmp/pub.txt; then
+            slug="$(sed -n 's/^PUBLISHED //p' /tmp/pub.txt)"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "content: publiceer SC-serie post ${slug} [scheduled]"
+            git push origin HEAD:main
+          else
+            echo "Niets te publiceren vandaag."
+          fi
 
       - name: Setup Pages
         id: pages

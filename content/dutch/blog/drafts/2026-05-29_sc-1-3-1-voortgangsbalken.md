@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Voortgangsbalken"
-date: 2026-05-29
+date: 2026-07-25
 slug: "sc-1-3-1-voortgangsbalken"
 categories:
   - "wcag-uitgelegd"

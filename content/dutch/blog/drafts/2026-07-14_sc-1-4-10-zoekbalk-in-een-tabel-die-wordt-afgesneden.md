@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Zoekbalk in een tabel die wordt afgesneden"
-date: 2026-07-14
+date: 2026-09-06
 slug: "sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden"
 categories:
   - "wcag-uitgelegd"

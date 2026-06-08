@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "CSS voegt tekst toe die niet in de naam zit"
-date: 2026-06-10
+date: 2026-08-05
 slug: "sc-2-5-3-css-voegt-tekst-toe-die-niet-in-de-naam-zit"
 categories:
   - "wcag-uitgelegd"

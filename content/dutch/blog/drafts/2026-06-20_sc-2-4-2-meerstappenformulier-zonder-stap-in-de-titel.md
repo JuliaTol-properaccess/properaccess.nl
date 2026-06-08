@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Meerstappenformulier zonder stap in de titel"
-date: 2026-06-20
+date: 2026-08-14
 slug: "sc-2-4-2-meerstappenformulier-zonder-stap-in-de-titel"
 categories:
   - "wcag-uitgelegd"

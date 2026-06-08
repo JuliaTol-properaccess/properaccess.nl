@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Vaste elementen die het scherm overnemen"
-date: 2026-06-03
+date: 2026-07-29
 slug: "sc-1-4-10-vaste-elementen-die-het-scherm-overnemen"
 categories:
   - "wcag-uitgelegd"

@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "CSS order die de logica verbreekt"
-date: 2026-04-19
+date: 2026-06-18
 slug: "sc-1-3-2-css-order-die-de-logica-verbreekt"
 categories:
   - "wcag-uitgelegd"

@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Dark mode met nieuwe contrastproblemen"
-date: 2026-06-02
+date: 2026-07-28
 slug: "sc-1-4-3-dark-mode-met-nieuwe-contrastproblemen"
 categories:
   - "wcag-uitgelegd"

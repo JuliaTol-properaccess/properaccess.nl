@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Skiplink die de focus niet verplaatst"
-date: 2026-07-10
+date: 2026-09-02
 slug: "sc-2-4-3-skiplink-die-de-focus-niet-verplaatst"
 categories:
   - "wcag-uitgelegd"

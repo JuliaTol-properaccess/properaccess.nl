@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Video zonder toegankelijke naam"
-date: 2026-07-20
+date: 2026-09-12
 slug: "sc-4-1-2-video-zonder-toegankelijke-naam"
 categories:
   - "wcag-uitgelegd"

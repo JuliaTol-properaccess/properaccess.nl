@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "CAPTCHA die niet met het toetsenbord werkt"
-date: 2026-07-09
+date: 2026-09-01
 slug: "sc-2-1-1-captcha-die-niet-met-het-toetsenbord-werkt"
 categories:
   - "wcag-uitgelegd"

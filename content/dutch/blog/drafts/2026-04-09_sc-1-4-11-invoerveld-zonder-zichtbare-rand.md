@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Invoerveld zonder zichtbare rand"
-date: 2026-04-09
+date: 2026-06-09
 slug: "sc-1-4-11-invoerveld-zonder-zichtbare-rand"
 categories:
   - "wcag-uitgelegd"

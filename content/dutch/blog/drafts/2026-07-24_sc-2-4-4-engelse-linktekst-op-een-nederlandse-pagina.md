@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Engelse linktekst op een Nederlandse pagina"
-date: 2026-07-24
+date: 2026-09-16
 slug: "sc-2-4-4-engelse-linktekst-op-een-nederlandse-pagina"
 categories:
   - "wcag-uitgelegd"

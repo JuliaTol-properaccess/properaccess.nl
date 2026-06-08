@@ -1,7 +1,7 @@
 ---
 draft: true
 title: '"Winkelwagen Winkelwagen"'
-date: 2026-07-19
+date: 2026-09-11
 slug: "sc-2-4-4-winkelwagen-winkelwagen"
 categories:
   - "wcag-uitgelegd"

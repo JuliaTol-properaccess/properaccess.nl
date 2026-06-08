@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Hele alinea als link"
-date: 2026-06-08
+date: 2026-08-03
 slug: "sc-2-4-4-hele-alinea-als-link"
 categories:
   - "wcag-uitgelegd"

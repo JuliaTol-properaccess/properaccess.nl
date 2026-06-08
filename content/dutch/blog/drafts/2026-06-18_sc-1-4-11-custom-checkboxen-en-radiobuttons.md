@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Custom checkboxen en radiobuttons"
-date: 2026-06-18
+date: 2026-08-12
 slug: "sc-1-4-11-custom-checkboxen-en-radiobuttons"
 categories:
   - "wcag-uitgelegd"

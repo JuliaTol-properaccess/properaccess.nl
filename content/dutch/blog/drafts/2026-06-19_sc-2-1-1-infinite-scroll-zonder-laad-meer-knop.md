@@ -1,7 +1,7 @@
 ---
 draft: true
 title: 'Infinite scroll zonder "laad meer"-knop'
-date: 2026-06-19
+date: 2026-08-13
 slug: "sc-2-1-1-infinite-scroll-zonder-laad-meer-knop"
 categories:
   -' "wcag-uitgelegd"'

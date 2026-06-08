@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Links in een carrousel die niet bereikbaar zijn"
-date: 2026-06-21
+date: 2026-08-15
 slug: "sc-2-4-3-links-in-een-carrousel-die-niet-bereikbaar-zijn"
 categories:
   - "wcag-uitgelegd"

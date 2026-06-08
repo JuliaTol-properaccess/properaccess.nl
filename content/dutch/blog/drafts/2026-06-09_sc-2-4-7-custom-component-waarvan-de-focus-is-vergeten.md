@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Custom component waarvan de focus is vergeten"
-date: 2026-06-09
+date: 2026-08-04
 slug: "sc-2-4-7-custom-component-waarvan-de-focus-is-vergeten"
 categories:
   - "wcag-uitgelegd"

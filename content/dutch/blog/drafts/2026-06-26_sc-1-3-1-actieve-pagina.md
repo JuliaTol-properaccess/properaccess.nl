@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Actieve pagina"
-date: 2026-06-26
+date: 2026-08-20
 slug: "sc-1-3-1-actieve-pagina"
 categories:
   - "wcag-uitgelegd"

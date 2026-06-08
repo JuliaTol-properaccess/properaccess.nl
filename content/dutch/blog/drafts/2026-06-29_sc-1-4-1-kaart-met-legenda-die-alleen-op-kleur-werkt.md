@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Kaart met legenda die alleen op kleur werkt"
-date: 2026-06-29
+date: 2026-08-22
 slug: "sc-1-4-1-kaart-met-legenda-die-alleen-op-kleur-werkt"
 categories:
   - "wcag-uitgelegd"

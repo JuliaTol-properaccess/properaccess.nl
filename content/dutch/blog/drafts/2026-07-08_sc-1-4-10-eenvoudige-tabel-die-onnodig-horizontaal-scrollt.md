@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Eenvoudige tabel die onnodig horizontaal scrollt"
-date: 2026-07-08
+date: 2026-08-31
 slug: "sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt"
 categories:
   - "wcag-uitgelegd"

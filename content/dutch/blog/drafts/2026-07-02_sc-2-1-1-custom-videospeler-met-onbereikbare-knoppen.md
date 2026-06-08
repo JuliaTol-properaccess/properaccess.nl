@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Custom videospeler met onbereikbare knoppen"
-date: 2026-07-02
+date: 2026-08-25
 slug: "sc-2-1-1-custom-videospeler-met-onbereikbare-knoppen"
 categories:
   - "wcag-uitgelegd"

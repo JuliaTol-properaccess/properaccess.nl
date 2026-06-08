@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Tabel nagebouwd met divs"
-date: 2026-05-03
+date: 2026-06-30
 slug: "sc-1-3-2-tabel-nagebouwd-met-divs"
 categories:
   - "wcag-uitgelegd"

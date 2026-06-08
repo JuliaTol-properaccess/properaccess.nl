@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Div als knop: naam maar geen rol"
-date: 2026-04-16
+date: 2026-06-16
 slug: "sc-4-1-2-div-als-knop-naam-maar-geen-rol"
 categories:
   - "wcag-uitgelegd"

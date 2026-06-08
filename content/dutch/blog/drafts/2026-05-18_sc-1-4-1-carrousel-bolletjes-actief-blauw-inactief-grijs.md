@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Carrousel-bolletjes: actief = blauw, inactief = grijs"
-date: 2026-05-18
+date: 2026-07-14
 slug: "sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs"
 categories:
   - "wcag-uitgelegd"

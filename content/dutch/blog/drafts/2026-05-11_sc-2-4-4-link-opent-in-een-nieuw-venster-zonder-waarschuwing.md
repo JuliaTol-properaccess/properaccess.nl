@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Link opent in een nieuw venster zonder waarschuwing"
-date: 2026-05-11
+date: 2026-07-08
 slug: "sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing"
 categories:
   - "wcag-uitgelegd"

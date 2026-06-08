@@ -1,7 +1,7 @@
 ---
 draft: true
 title: '"Bekijk aanbiedingen groter dan groter dan"'
-date: 2026-07-21
+date: 2026-09-13
 slug: "sc-2-4-4-bekijk-aanbiedingen-groter-dan-groter-dan"
 categories:
   - "wcag-uitgelegd"

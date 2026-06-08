@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Dialoogvenster met geen ruimte voor de inhoud"
-date: 2026-06-17
+date: 2026-08-11
 slug: "sc-1-4-10-dialoogvenster-met-geen-ruimte-voor-de-inhoud"
 categories:
   - "wcag-uitgelegd"

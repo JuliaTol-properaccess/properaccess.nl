@@ -1,7 +1,7 @@
 ---
 draft: true
 title: '"Welkom" zegt niets'
-date: 2026-04-25
+date: 2026-06-24
 slug: "sc-2-4-2-welkom-zegt-niets"
 categories:
   - "wcag-uitgelegd"

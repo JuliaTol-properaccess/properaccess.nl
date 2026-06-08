@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "JavaScript dat de focus actief verwijdert"
-date: 2026-05-26
+date: 2026-07-22
 slug: "sc-2-4-7-javascript-dat-de-focus-actief-verwijdert"
 categories:
   - "wcag-uitgelegd"
