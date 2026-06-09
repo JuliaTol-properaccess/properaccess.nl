@@ -120,10 +120,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04-arm
     needs: build
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5.0.0
+
+      # Leegt de Cloudflare-cache zodat vervangen bestanden (zelfde naam, bv.
+      # foto's, CSS) meteen vers worden geserveerd. Wordt overgeslagen zolang
+      # het secret CLOUDFLARE_API_TOKEN nog niet is ingesteld.
+      - name: Purge Cloudflare cache
+        if: env.CF_TOKEN != ''
+        env:
+          CF_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        run: |
+          curl -fsS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cache" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
 
       - name: Ping Google to recrawl sitemap
         run: curl -s "https://www.google.com/ping?sitemap=https://www.properaccess.nl/sitemap.xml"
