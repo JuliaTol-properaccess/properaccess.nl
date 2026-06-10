@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
-# Analytics wordt via GTM afgehandeld (GTM-PRMNGCGW)
+# Niet in gebruik — analytics loopt via Plausible (zie layouts/partials/essentials/head.html)
 ID = ''
 
 
