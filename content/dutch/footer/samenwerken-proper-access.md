@@ -23,7 +23,7 @@ Je zou het zelf kunnen doen. Een cursus volgen, een paar audits uitvoeren, kijke
 
 Wat als je gewoon kunt leveren wat je klant nodig heeft — zonder zelf alles op te zetten? **Dat is precies waar deze samenwerking over gaat.**
 
-[Laten we kennismaken →](#contact)
+[Laten we kennismaken →](#cta)
 
 {{< /section-full >}}
 
@@ -49,7 +49,7 @@ Je kent je klant en weet wat er speelt. Maar de diepgaande technische kennis van
 
 Samenwerken in plaats van alles zelf doen. Jij begrijpt het merk van je klant, hun website, hun ambities. Wij leveren de expertise die ervoor zorgt dat hun website écht toegankelijk wordt.
 
-[Benieuwd hoe dit werkt? Neem contact op →](#contact)
+[Benieuwd hoe dit werkt? Neem contact op →](#cta)
 
 {{< /section-cta >}}
 
@@ -140,11 +140,3 @@ Dat bespreken we in een persoonlijk gesprek. Het hangt af van de omvang van de s
 
 {{< /section-faq-item >}}
 {{< /section-faq >}}
-
-{{< section-cta title="Laten we kennismaken" id="contact" image="/images/julia.webp" >}}
-
-Geen verplichtingen, geen verkooppraatjes. Gewoon een gesprek over hoe we elkaar kunnen versterken.
-
-[Neem contact op met Julia Tol →](https://properaccess.nl/contact/)
-
-{{< /section-cta >}}

@@ -142,15 +142,27 @@
   <div class="hp-container">
     <div class="hp-contact__grid">
       <div class="hp-contact__text">
-        <div class="hp-contact__photo-wrapper">
-          {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
-          <img src="/images/phi.jpeg" alt="" class="hp-contact__photo" loading="lazy">
-        </div>
         <h2 class="hp-heading-lg">Ready to lower the barrier?</h2>
         <p class="hp-contact__intro">
           Our experts are ready to guide you towards a digital
           landscape where everyone is welcome.
         </p>
+        <div class="cta-people">
+          <div class="cta-people__person">
+            {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
+            <div class="cta-people__meta">
+              <span class="cta-people__name">Julia Tol</span>
+              <span class="cta-people__role">Director</span>
+            </div>
+          </div>
+          <div class="cta-people__person">
+            <img src="/images/phi.jpeg" alt="" class="hp-contact__photo" loading="lazy">
+            <div class="cta-people__meta">
+              <span class="cta-people__name">Phi Pham</span>
+              <span class="cta-people__role">Client relations</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="hp-contact__form-card">
         <h3 class="hp-heading-md">Get in touch</h3>
@@ -348,7 +360,6 @@
   <div class="hp-container">
     <div class="hp-contact-final__grid">
       <div class="hp-contact-final__text">
-        <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
         <h2 class="hp-heading-lg">Let's build a more accessible web together.</h2>
         <p class="hp-contact-final__intro">
           Have questions about our services or want to schedule an audit?
@@ -362,6 +373,15 @@
           <div class="hp-contact-final__info-row">
             <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
             <a href="tel:+31855055890">085 5055 890</a>
+          </div>
+        </div>
+        <div class="cta-people">
+          <div class="cta-people__person">
+            <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
+            <div class="cta-people__meta">
+              <span class="cta-people__name">Phi Pham</span>
+              <span class="cta-people__role">Client relations</span>
+            </div>
           </div>
         </div>
       </div>
