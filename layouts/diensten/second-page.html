@@ -116,9 +116,6 @@
   <div class="hp-container">
     <div class="hp-contact__grid">
       <div class="hp-contact__text">
-        <div class="hp-contact__photo-wrapper">
-          {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
-        </div>
         <h2 class="hp-heading-lg">Vraag een offerte aan</h2>
         <p class="hp-contact__intro">
           Stuur ons je URL en we reageren binnen 1 werkdag met een indicatie.
@@ -132,6 +129,15 @@
           <div class="hp-contact-final__info-row">
             <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
             <a href="tel:+31855055890">085 5055 890</a>
+          </div>
+        </div>
+        <div class="cta-people">
+          <div class="cta-people__person">
+            {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
+            <div class="cta-people__meta">
+              <span class="cta-people__name">Julia Tol</span>
+              <span class="cta-people__role">Directeur</span>
+            </div>
           </div>
         </div>
       </div>
