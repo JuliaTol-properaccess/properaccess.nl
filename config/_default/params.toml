@@ -77,8 +77,10 @@ mastodon = "" # Your verification code
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+# Cookiebanner uitgeschakeld per juni 2026: er zijn geen tracking-cookies meer
+# (Leadfeeder/Dealfront verwijderd, Plausible is cookieloos), dus geen toestemming nodig.
 [cookies]
-enable = true
+enable = false
 expire_days = 365
 content = "We gebruiken cookies voor de werking van de website en om bedrijven te herkennen die onze site bezoeken."
 content_detail = "Meer informatie vind je in onze [privacyverklaring](/privacyverklaring/)."

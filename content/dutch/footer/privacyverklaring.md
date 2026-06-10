@@ -12,7 +12,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "maart 2026"
+    value: "juni 2026"
 ---
 
 {{< offerte-section title="1. Wie zijn wij" >}}
@@ -34,7 +34,8 @@ Julia Tol is de Functionaris Gegevensbescherming van Proper Access. Zij is te be
 Proper Access verwerkt persoonsgegevens doordat je gebruik maakt van onze diensten en/of doordat je deze zelf aan ons verstrekt. Hieronder vind je een overzicht:
 
 - Naam en e-mailadres (wanneer je contact met ons opneemt via het contactformulier)
-- Bedrijfsnaam en IP-adres (via onze websitebezoeker-herkenning, zie sectie 7)
+
+Voor websitestatistieken gebruiken we Plausible Analytics. Plausible werkt zonder cookies en verzamelt geen persoonsgegevens: bezoeken worden geanonimiseerd en alleen als totalen bijgehouden. We kunnen individuele bezoekers niet herkennen of volgen.
 
 We gebruiken geen social media plugins.
 
@@ -48,7 +49,7 @@ Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over web
 
 {{< offerte-section title="4. Doel en grondslag" bg="light" >}}
 
-Proper Access analyseert jouw gedrag op de website om daarmee de website te verbeteren en het aanbod van producten en diensten af te stemmen op jouw voorkeuren.
+Proper Access gebruikt geanonimiseerde bezoekstatistieken om de website te verbeteren. Daarvoor verwerken we geen persoonsgegevens.
 
 Proper Access verwerkt jouw persoonsgegevens voor de volgende doelen:
 
@@ -71,36 +72,25 @@ Proper Access bewaart je persoonsgegevens niet langer dan strikt nodig is om de 
 
 Proper Access verstrekt gegevens uitsluitend aan derden als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting. Wij maken gebruik van de volgende derde partijen:
 
-- **Dealfront (voorheen Leadfeeder)** — voor het herkennen van bedrijven die onze website bezoeken. Dealfront verwerkt IP-adressen en plaatst cookies (zie sectie 7). Dealfront is gevestigd in de EU en verwerkt gegevens conform de AVG. Meer informatie: [dealfront.com/privacy](https://www.dealfront.com/privacy/).
-- **Formspree** — voor het verwerken van berichten via ons contactformulier. Meer informatie: [formspree.io/legal/privacy-policy](https://formspree.io/legal/privacy-policy/).
-- **Cloudflare** — voor beveiliging en prestatie-optimalisatie van de website. Cloudflare kan technische cookies plaatsen (zie sectie 7).
+- **Plausible Analytics**: voor geanonimiseerde websitestatistieken. Plausible plaatst geen cookies en verzamelt geen persoonsgegevens. Plausible is gevestigd in de EU en verwerkt gegevens conform de AVG. Meer informatie: [plausible.io/data-policy](https://plausible.io/data-policy).
+- **Formspree**: voor het verwerken van berichten via ons contactformulier. Meer informatie: [formspree.io/legal/privacy-policy](https://formspree.io/legal/privacy-policy/).
+- **Cloudflare**: voor beveiliging en prestatie-optimalisatie van de website. Cloudflare kan technische cookies plaatsen (zie sectie 7).
 
 {{< /offerte-section >}}
 
 {{< offerte-section title="7. Cookies" >}}
 
-Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. Proper Access maakt onderscheid tussen noodzakelijke cookies en tracking cookies.
+Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. Proper Access gebruikt geen tracking cookies. Daarom zie je op onze website ook geen cookiebanner: die is alleen verplicht als een website cookies plaatst waarvoor toestemming nodig is.
 
-**Noodzakelijke cookies (altijd actief)**
+De enige cookie die je van ons kunt tegenkomen is een technische cookie:
 
 | Cookie | Doel | Bewaartermijn |
 |--------|------|---------------|
-| `cookie-consent` | Onthoudt je cookievoorkeuren | 1 jaar |
 | `__cf_bm` | Cloudflare botbescherming | 1 uur |
 
-**Tracking cookies (alleen na jouw toestemming)**
+Deze cookie is noodzakelijk voor de beveiliging van de website en bevat geen gegevens waarmee wij jou kunnen identificeren.
 
-| Cookie | Doel | Bewaartermijn |
-|--------|------|---------------|
-| `_lfa` | Dealfront — herkent het bedrijf van waaruit je onze site bezoekt | 1 jaar |
-| `_lfa_expiry` | Dealfront — bewaartermijn voor het client-ID | Persistent |
-
-De tracking cookies worden alleen geplaatst als je hiervoor toestemming geeft via de cookiebanner. Zonder jouw toestemming worden deze cookies niet geladen.
-
-**Wat doet Dealfront?**
-Dealfront herkent op basis van het IP-adres bij welk bedrijf een bezoeker werkt. Het gaat om bedrijfsherkenning, niet om het identificeren van individuele personen. Dealfront verwerkt gegevens conform de AVG en is gevestigd in de EU.
-
-Je kunt je afmelden voor cookies door je internetbrowser zo in te stellen dat deze geen cookies meer opslaat. Daarnaast kun je eerder opgeslagen cookies verwijderen via de instellingen van je browser. Je kunt je cookievoorkeuren ook op elk moment aanpassen door de cookies in je browser te verwijderen — bij je volgende bezoek wordt de cookiebanner opnieuw getoond.
+Onze websitestatistieken (Plausible Analytics) werken volledig zonder cookies. Wil je helemaal geen cookies? Dan kun je je internetbrowser zo instellen dat deze geen cookies opslaat. Eerder opgeslagen cookies verwijder je via de instellingen van je browser.
 
 {{< /offerte-section >}}
 
