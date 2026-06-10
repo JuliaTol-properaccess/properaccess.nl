@@ -59,9 +59,9 @@
       document.body.classList.add("pa-chat--open");
     }
 
-    // GTM event
-    if (window.dataLayer) {
-      window.dataLayer.push({ event: "chat_opened" });
+    // Plausible event
+    if (window.plausible) {
+      window.plausible("chat_opened");
     }
   }
 
