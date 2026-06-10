@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - css order die de logica verbreekt
-image: "/images/blog/linkedin-series/sc-1-3-2-css-order-die-de-logica-verbreekt.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-css-order-die-de-logica-verbreekt.webp"
 ---
 
 Stap 1: Maak een account.

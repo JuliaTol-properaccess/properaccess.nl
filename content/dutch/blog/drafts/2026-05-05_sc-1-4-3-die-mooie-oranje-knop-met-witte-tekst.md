@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - die mooie oranje knop met witte tekst
-image: "/images/blog/linkedin-series/sc-1-4-3-die-mooie-oranje-knop-met-witte-tekst.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-die-mooie-oranje-knop-met-witte-tekst.webp"
 ---
 
 Oranje knop. Witte tekst. "Bestel nu!"

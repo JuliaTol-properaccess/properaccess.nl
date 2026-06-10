@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - zoekbalk in een tabel die wordt afgesneden
-image: "/images/blog/linkedin-series/sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden.webp"
 ---
 
 Je hebt een tabel met data. Erboven: een zoekbalk om te filteren. De tabel mag horizontaal scrollen — dat is de uitzondering. Maar die zoekbalk?

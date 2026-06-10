@@ -49,7 +49,7 @@ Ik pakte een screenshot van de Divi-website (een populaire WordPress-themebuilde
 
 Onder elke kop staat bodytekst in lichtgrijs. Erboven staan decoratieve illustraties in dezelfde kleuren.
 
-![Screenshot van de Divi-website met vier kolommen: gekleurde koppen en lichtgrijze bodytekst op een witte achtergrond](/images/blog/contrast_divi.png)
+![Screenshot van de Divi-website met vier kolommen: gekleurde koppen en lichtgrijze bodytekst op een witte achtergrond](/images/blog/contrast_divi.webp)
 
 Ik gaf deze screenshot aan Claude met de vraag: _"Welke contrastproblemen zie je op deze webpagina?"_
 

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Info en relaties
   - doorgestreepte prijzen
-image: "/images/blog/linkedin-series/sc-1-3-1-doorgestreepte-prijzen.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-doorgestreepte-prijzen.webp"
 ---
 
 49,99 doorgestreept, 29,99 ernaast. Je ziet direct: korting.

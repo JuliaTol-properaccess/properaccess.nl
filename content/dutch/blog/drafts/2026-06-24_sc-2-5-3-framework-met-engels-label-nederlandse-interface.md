@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - framework met engels label, nederlandse interface
-image: "/images/blog/linkedin-series/sc-2-5-3-framework-met-engels-label-nederlandse-interface.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-framework-met-engels-label-nederlandse-interface.webp"
 ---
 
 Een datepicker uit een UI-framework. Het veld toont "Kies een datum" in het Nederlands. Maar het `aria-label` — automatisch gegenereerd door het framework — zegt "Select date" in het Engels.

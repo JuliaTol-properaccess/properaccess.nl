@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - focus verlaat het dialoogvenster
-image: "/images/blog/linkedin-series/sc-2-4-3-focus-verlaat-het-dialoogvenster.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-focus-verlaat-het-dialoogvenster.webp"
 ---
 
 De cookie-popup is open. Je tabt door de opties. Accepteren. Weigeren. Instellingen.

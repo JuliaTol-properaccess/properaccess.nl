@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - grafiek die onbegrijpelijk wordt voorgelezen
-image: "/images/blog/linkedin-series/sc-1-3-2-grafiek-die-onbegrijpelijk-wordt-voorgelezen.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-grafiek-die-onbegrijpelijk-wordt-voorgelezen.webp"
 ---
 
 Een mooie staafgrafiek. Omzet per kwartaal. Vier balken. Duidelijke labels.

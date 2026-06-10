@@ -153,7 +153,9 @@ lazy = false
 [[params.plugins.js]]
 link = "plugins/swiper/swiper-bundle.js"
 # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-lazy = false
+# lazy: Swiper is alleen nodig voor de sliders (homepage). De init in
+# assets/js/main.js wacht tot Swiper uit de lazy-bundel geladen is.
+lazy = true
 [[params.plugins.js]]
 link = "plugins/glightbox/glightbox.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true

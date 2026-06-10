@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - informatief icoon dat onzichtbaar is
-image: "/images/blog/linkedin-series/sc-1-4-11-informatief-icoon-dat-onzichtbaar-is.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-informatief-icoon-dat-onzichtbaar-is.webp"
 ---
 
 Drie streepjes. Een hamburgericoon. Dat is je menu.

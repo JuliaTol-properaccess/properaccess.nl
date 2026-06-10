@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - link opent in een nieuw venster zonder waarschuwing
-image: "/images/blog/linkedin-series/sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing.webp"
 ---
 
 Je klikt op een link. Een nieuw tabblad opent. Je drukt op de terugknop. Niets. Want je zit in een nieuw tabblad. Er is geen geschiedenis.

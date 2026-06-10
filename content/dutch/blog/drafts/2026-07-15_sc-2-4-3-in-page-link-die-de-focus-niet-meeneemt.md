@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - in-page link die de focus niet meeneemt
-image: "/images/blog/linkedin-series/sc-2-4-3-in-page-link-die-de-focus-niet-meeneemt.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-in-page-link-die-de-focus-niet-meeneemt.webp"
 ---
 
 Een inhoudsopgave bovenaan een lang artikel. "Hoofdstuk 3." Je klikt erop. De pagina scrollt naar Hoofdstuk 3.

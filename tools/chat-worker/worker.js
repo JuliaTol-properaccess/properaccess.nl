@@ -102,7 +102,7 @@ Proper Access offers 9 free tools for web editors at properaccess.nl/tools/: hea
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
-    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : "";
 
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders(allowedOrigin) });
@@ -224,16 +224,18 @@ function isRateLimited(ip) {
 // ── Helpers ───────────────────────────────────────────────────
 
 function corsHeaders(origin) {
-  return {
-    "Access-Control-Allow-Origin": origin,
+  const headers = {
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
+    "Vary": "Origin",
   };
+  if (origin) headers["Access-Control-Allow-Origin"] = origin;
+  return headers;
 }
 
 function json(data, status, origin) {
-  origin = origin || "https://www.properaccess.nl";
+  origin = origin || "";
   return new Response(JSON.stringify(data), {
     status: status,
     headers: {

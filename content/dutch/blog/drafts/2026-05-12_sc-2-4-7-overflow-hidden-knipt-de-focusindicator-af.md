@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - overflow: hidden knipt de focusindicator af
-image: "/images/blog/linkedin-series/sc-2-4-7-overflow-hidden-knipt-de-focusindicator-af.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-overflow-hidden-knipt-de-focusindicator-af.webp"
 ---
 
 Een mooie kaartcomponent. Afgeronde hoeken. `overflow: hidden` om te voorkomen dat content buiten de hoeken valt.

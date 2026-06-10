@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - groene rij = goedgekeurd, rode rij = afgewezen
-image: "/images/blog/linkedin-series/sc-1-4-1-groene-rij-goedgekeurd-rode-rij-afgewezen.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-groene-rij-goedgekeurd-rode-rij-afgewezen.webp"
 ---
 
 Een tabel met aanvragen. Groen: goedgekeurd. Rood: afgewezen. Oranje: in behandeling.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - 'infinite scroll zonder "laad meer"-knop'
-image: "/images/blog/linkedin-series/sc-2-1-1-infinite-scroll-zonder-laad-meer-knop.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-infinite-scroll-zonder-laad-meer-knop.webp"
 ---
 
 Je scrolt naar beneden. Meer producten laden. Je scrolt verder. Nog meer producten. Eindeloos.

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Info en relaties
   - fieldset legend
-image: "/images/blog/linkedin-series/sc-1-3-1-fieldset-legend.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-fieldset-legend.webp"
 ---
 
 "Hoe wil je benaderd worden?"

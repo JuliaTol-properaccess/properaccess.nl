@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - aria-labelledby verwijst naar de verkeerde tekst
-image: "/images/blog/linkedin-series/sc-2-5-3-aria-labelledby-verwijst-naar-de-verkeerde-tekst.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-aria-labelledby-verwijst-naar-de-verkeerde-tekst.webp"
 ---
 
 Een invoerveld. Zichtbaar label: "E-mailadres." Maar `aria-labelledby` verwijst naar een verborgen element met: "Voer uw elektronische postadres in."

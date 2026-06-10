@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - actieve pagina in het menu: alleen een andere kleur
-image: "/images/blog/linkedin-series/sc-1-4-1-actieve-pagina-in-het-menu-alleen-een-andere-kleur.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-actieve-pagina-in-het-menu-alleen-een-andere-kleur.webp"
 ---
 
 Home. Over ons. Diensten. Contact.

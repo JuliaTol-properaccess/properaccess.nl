@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Info en relaties
   - kopniveaus
-image: "/images/blog/linkedin-series/sc-1-3-1-kopniveaus.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-kopniveaus.webp"
 ---
 
 Stel je voor: je opent een boek en de inhoudsopgave gaat van hoofdstuk 1 direct naar paragraaf 3.2.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - carrousel die alleen met klikken werkt
-image: "/images/blog/linkedin-series/sc-2-1-1-carrousel-die-alleen-met-klikken-werkt.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-carrousel-die-alleen-met-klikken-werkt.webp"
 ---
 
 Pijltje links. Pijltje rechts. Klikken om door de slides te bladeren.

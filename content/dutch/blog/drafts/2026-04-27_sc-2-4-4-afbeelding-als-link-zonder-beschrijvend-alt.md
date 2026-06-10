@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - afbeelding als link zonder beschrijvend alt
-image: "/images/blog/linkedin-series/sc-2-4-4-afbeelding-als-link-zonder-beschrijvend-alt.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-afbeelding-als-link-zonder-beschrijvend-alt.webp"
 ---
 
 Een winkelwagen-icoon. Klik erop en je gaat naar je winkelwagen. Logisch.

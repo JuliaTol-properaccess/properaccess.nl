@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - "download — maar download van wat?"
-image: "/images/blog/linkedin-series/sc-2-4-4-download-maar-download-van-wat.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-download-maar-download-van-wat.webp"
 ---
 
 Een tabel. Kolom 1: documentnaam. Kolom 2: een "Download"-link.

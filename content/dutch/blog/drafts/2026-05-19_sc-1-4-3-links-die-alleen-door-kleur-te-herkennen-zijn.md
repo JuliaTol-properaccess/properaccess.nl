@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - links die alleen door kleur te herkennen zijn
-image: "/images/blog/linkedin-series/sc-1-4-3-links-die-alleen-door-kleur-te-herkennen-zijn.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-links-die-alleen-door-kleur-te-herkennen-zijn.webp"
 ---
 
 Een alinea tekst. Ergens in die tekst staat een link. Geen onderstreping. Alleen een andere kleur.

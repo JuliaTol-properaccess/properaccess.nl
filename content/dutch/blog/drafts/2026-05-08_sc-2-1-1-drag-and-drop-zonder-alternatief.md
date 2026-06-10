@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - drag-and-drop zonder alternatief
-image: "/images/blog/linkedin-series/sc-2-1-1-drag-and-drop-zonder-alternatief.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-drag-and-drop-zonder-alternatief.webp"
 ---
 
 Sleep item 1 naar positie 3. Simpel. Met een muis.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - knop die navigeert, link die een actie uitvoert
-image: "/images/blog/linkedin-series/sc-4-1-2-knop-die-navigeert-link-die-een-actie-uitvoert.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-knop-die-navigeert-link-die-een-actie-uitvoert.webp"
 ---
 
 "Contact, knop."

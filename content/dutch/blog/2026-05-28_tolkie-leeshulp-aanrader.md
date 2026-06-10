@@ -23,7 +23,7 @@ keywords:
   - laaggeletterdheid overheidswebsite
   - toegankelijke teksten overheid
   - tool taalniveau A2 B1
-image: "/images/blog/tolkie-watercolor.png"
+image: "/images/blog/tolkie-watercolor.webp"
 ---
 
 <p style="text-align:center;"><img src="/images/bijzondere-initiatieven/tolkie.png" alt="Tolkie" style="max-width:260px;height:auto;" /></p>

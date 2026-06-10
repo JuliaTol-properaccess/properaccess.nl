@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Label in naam
   - "klik op zoeken. niets gebeurt."
-image: "/images/blog/linkedin-series/sc-2-5-3-klik-op-zoeken-niets-gebeurt.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-klik-op-zoeken-niets-gebeurt.webp"
 ---
 
 Je gebruikt spraakbesturing. Je ziet een knop met "Zoeken" erop. Je zegt: "Klik op Zoeken."

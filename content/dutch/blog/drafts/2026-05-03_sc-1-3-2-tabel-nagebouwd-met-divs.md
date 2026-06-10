@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - tabel nagebouwd met divs
-image: "/images/blog/linkedin-series/sc-1-3-2-tabel-nagebouwd-met-divs.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-tabel-nagebouwd-met-divs.webp"
 ---
 
 Maandag. Dinsdag. Woensdag. Donderdag. Vrijdag.

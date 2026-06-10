@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - actieve link in het menu met onzichtbare indicator
-image: "/images/blog/linkedin-series/sc-1-4-11-actieve-link-in-het-menu-met-onzichtbare-indicator.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-actieve-link-in-het-menu-met-onzichtbare-indicator.webp"
 ---
 
 Je bent op de pagina "Over ons". In het menu is die link anders dan de rest. Een subtiele onderstreping. Lichtblauw. #8AB4F8.

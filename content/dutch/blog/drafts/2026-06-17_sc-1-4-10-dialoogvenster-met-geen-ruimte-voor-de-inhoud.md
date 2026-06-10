@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - dialoogvenster met geen ruimte voor de inhoud
-image: "/images/blog/linkedin-series/sc-1-4-10-dialoogvenster-met-geen-ruimte-voor-de-inhoud.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-dialoogvenster-met-geen-ruimte-voor-de-inhoud.webp"
 ---
 
 Je klikt op "Meer informatie". Een dialoogvenster opent.

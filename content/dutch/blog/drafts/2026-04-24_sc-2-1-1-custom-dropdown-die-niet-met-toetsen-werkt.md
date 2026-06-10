@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - custom dropdown die niet met toetsen werkt
-image: "/images/blog/linkedin-series/sc-2-1-1-custom-dropdown-die-niet-met-toetsen-werkt.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-custom-dropdown-die-niet-met-toetsen-werkt.webp"
 ---
 
 Een prachtig gestylede dropdown. Hover erop: de opties verschijnen. Klik op een optie: geselecteerd.

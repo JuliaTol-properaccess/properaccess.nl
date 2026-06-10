@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - invoerveld zonder zichtbare rand
-image: "/images/blog/linkedin-series/sc-1-4-11-invoerveld-zonder-zichtbare-rand.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-invoerveld-zonder-zichtbare-rand.webp"
 ---
 
 Een wit invoerveld op een witte achtergrond. Met een lichtgrijze rand. Heel lichtgrijs. #D9D9D9.

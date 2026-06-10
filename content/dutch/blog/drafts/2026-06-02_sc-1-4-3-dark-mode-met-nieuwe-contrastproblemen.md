@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - dark mode met nieuwe contrastproblemen
-image: "/images/blog/linkedin-series/sc-1-4-3-dark-mode-met-nieuwe-contrastproblemen.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-dark-mode-met-nieuwe-contrastproblemen.webp"
 ---
 
 Je website heeft dark mode. Modern. Gebruiksvriendelijk. Populair.

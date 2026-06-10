@@ -21,10 +21,20 @@ const ALLOWED_ORIGINS = [
 
 const CRM_WEBHOOK_URL = "https://crm.properaccess.nl/api/webhooks/website-form";
 
+// Rate limiting: max 5 inzendingen per 10 minuten per IP.
+const RATE_LIMIT = 5;
+const RATE_WINDOW = 10 * 60 * 1000;
+const rateLimitMap = new Map();
+
+// Per ontvanger: hooguit 1 quizmail per 24 uur, zodat het endpoint niet als
+// mail-versterker naar willekeurige adressen misbruikt kan worden.
+const EMAIL_THROTTLE = 24 * 60 * 60 * 1000;
+const emailSentMap = new Map();
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
-    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : "";
 
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders(allowedOrigin) });
@@ -33,6 +43,10 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === "/submit" && request.method === "POST") {
+      const clientIP = request.headers.get("CF-Connecting-IP") || "unknown";
+      if (isRateLimited(clientIP)) {
+        return json({ error: "Too many requests. Please try again later." }, 429, allowedOrigin);
+      }
       return handleSubmit(request, env, allowedOrigin);
     }
 
@@ -84,8 +98,15 @@ async function handleSubmit(request, env, origin) {
       throw new Error("CRM responded with " + crmResponse.status + ": " + err);
     }
 
-    // Send personalized email to quiz participants via Resend
-    if (bron.startsWith("quiz") && env.RESEND_API_KEY) {
+    // Send personalized email to quiz participants via Resend.
+    // Alleen versturen als er ook echte quizresultaten zijn (geen kale trigger),
+    // en hooguit 1x per 24 uur per ontvanger, tegen misbruik als mail-versterker.
+    if (
+      bron.startsWith("quiz") &&
+      env.RESEND_API_KEY &&
+      hasQuizResults(body) &&
+      !isEmailThrottled(email)
+    ) {
       try {
         await sendQuizEmail(env.RESEND_API_KEY, email, body);
       } catch (e) { /* email failure is non-blocking */ }
@@ -266,18 +287,50 @@ async function sendQuizEmail(apiKey, toEmail, data) {
   });
 }
 
+// ── Rate limiting & throttling ──────────────────────────────
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  if (!record || now - record.windowStart > RATE_WINDOW) {
+    rateLimitMap.set(ip, { windowStart: now, count: 1 });
+    return false;
+  }
+  record.count++;
+  return record.count > RATE_LIMIT;
+}
+
+function isEmailThrottled(email) {
+  const now = Date.now();
+  const key = email.toLowerCase();
+  const last = emailSentMap.get(key);
+  if (last && now - last < EMAIL_THROTTLE) {
+    return true;
+  }
+  emailSentMap.set(key, now);
+  return false;
+}
+
+function hasQuizResults(body) {
+  // Een echte quizinzending heeft een score en een aantal vragen.
+  return body.quiz_score != null && body.quiz_total != null;
+}
+
 // ── Helpers ─────────────────────────────────────────────────
 
 function corsHeaders(origin) {
-  return {
-    "Access-Control-Allow-Origin": origin,
+  const headers = {
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
+    "Vary": "Origin",
   };
+  // Alleen een toegestane origin krijgt CORS-toestemming; andere niet.
+  if (origin) headers["Access-Control-Allow-Origin"] = origin;
+  return headers;
 }
 
-function json(data, status = 200, origin = "https://www.properaccess.nl") {
+function json(data, status = 200, origin = "") {
   return new Response(JSON.stringify(data), {
     status,
     headers: {

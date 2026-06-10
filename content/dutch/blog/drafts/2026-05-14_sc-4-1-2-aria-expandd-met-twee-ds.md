@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - aria-expandd (met twee d's)
-image: "/images/blog/linkedin-series/sc-4-1-2-aria-expandd-met-twee-ds.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-aria-expandd-met-twee-ds.webp"
 ---
 
 Een menuknop. `aria-expanded` om aan te geven of het menu open is. Maar de developer typte `aria-expandd`. Met twee d's.
