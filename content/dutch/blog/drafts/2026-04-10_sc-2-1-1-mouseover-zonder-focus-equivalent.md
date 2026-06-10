@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Mouseover zonder focus-equivalent"
 date: 2026-06-10
 slug: "sc-2-1-1-mouseover-zonder-focus-equivalent"
