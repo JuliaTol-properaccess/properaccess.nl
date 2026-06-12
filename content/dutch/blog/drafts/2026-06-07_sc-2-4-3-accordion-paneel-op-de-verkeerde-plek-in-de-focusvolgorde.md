@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - accordion-paneel op de verkeerde plek in de focusvolgorde
-image: "/images/blog/linkedin-series/sc-2-4-3-accordion-paneel-op-de-verkeerde-plek-in-de-focusvolgorde.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-accordion-paneel-op-de-verkeerde-plek-in-de-focusvolgorde.webp"
 ---
 
 Een accordion met drie secties. Je opent Sectie 1. Er verschijnt een link in het paneel.

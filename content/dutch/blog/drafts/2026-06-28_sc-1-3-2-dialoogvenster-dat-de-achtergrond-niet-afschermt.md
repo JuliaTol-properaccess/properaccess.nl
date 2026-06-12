@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - dialoogvenster dat de achtergrond niet afschermt
-image: "/images/blog/linkedin-series/sc-1-3-2-dialoogvenster-dat-de-achtergrond-niet-afschermt.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-dialoogvenster-dat-de-achtergrond-niet-afschermt.webp"
 ---
 
 Een popup verschijnt. "Weet je het zeker? Dit item wordt permanent verwijderd."

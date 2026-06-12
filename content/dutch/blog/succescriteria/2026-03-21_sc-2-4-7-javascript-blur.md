@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - blur javascript focus
-image: "/images/blog/linkedin-series/sc-2-4-7-javascript-blur.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-javascript-blur.webp"
 ---
 
 ```javascript

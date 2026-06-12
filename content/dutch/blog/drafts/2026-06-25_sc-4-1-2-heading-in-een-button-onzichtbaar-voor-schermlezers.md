@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - heading in een button: onzichtbaar voor schermlezers
-image: "/images/blog/linkedin-series/sc-4-1-2-heading-in-een-button-onzichtbaar-voor-schermlezers.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-heading-in-een-button-onzichtbaar-voor-schermlezers.webp"
 ---
 
 Een kaart op je website. De titel is een `<h3>`. De hele kaart is klikbaar. Dus de developer wikkelt de `<h3>` in een `<button>`.

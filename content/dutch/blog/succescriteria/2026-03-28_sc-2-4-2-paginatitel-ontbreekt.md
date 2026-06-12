@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Paginatitel
   - paginatitel ontbreekt
-image: "/images/blog/linkedin-series/sc-2-4-2-paginatitel-ontbreekt.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-paginatitel-ontbreekt.webp"
 ---
 
 Je opent een pagina. De schermlezer zegt: "https colon slash slash w-w-w dot example dot com slash pagina dash 3-b dot html."

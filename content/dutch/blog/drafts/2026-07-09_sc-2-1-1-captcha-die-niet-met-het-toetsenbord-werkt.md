@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - captcha die niet met het toetsenbord werkt
-image: "/images/blog/linkedin-series/sc-2-1-1-captcha-die-niet-met-het-toetsenbord-werkt.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-captcha-die-niet-met-het-toetsenbord-werkt.webp"
 ---
 
 "Bewijs dat je geen robot bent."

@@ -62,7 +62,7 @@
           <!-- WCAG uitgelegd: afbeelding boven tekst -->
           <div class="blog-wcag">
             <div class="blog-wcag__image">
-              <img src="{{ .Params.image }}" alt="" loading="eager" />
+              <img src="{{ .Params.image }}" alt="" loading="eager" decoding="async" />
             </div>
             <div class="blog-wcag__text content js-article-body">
               {{ .Content }}

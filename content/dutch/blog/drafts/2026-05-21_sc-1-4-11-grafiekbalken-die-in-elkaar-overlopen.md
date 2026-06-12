@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - grafiekbalken die in elkaar overlopen
-image: "/images/blog/linkedin-series/sc-1-4-11-grafiekbalken-die-in-elkaar-overlopen.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-grafiekbalken-die-in-elkaar-overlopen.webp"
 ---
 
 Een staafgrafiek. Twee categorien. Lichtblauw (#90CAF9) en lichtgroen (#A5D6A7). Naast elkaar.

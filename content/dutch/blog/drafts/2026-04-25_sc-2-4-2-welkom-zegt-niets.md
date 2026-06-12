@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Paginatitel
   - "welkom zegt niets"
-image: "/images/blog/linkedin-series/sc-2-4-2-welkom-zegt-niets.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-welkom-zegt-niets.webp"
 ---
 
 "Welkom."

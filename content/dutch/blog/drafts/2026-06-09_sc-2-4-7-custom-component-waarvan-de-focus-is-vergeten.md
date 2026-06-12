@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - custom component waarvan de focus is vergeten
-image: "/images/blog/linkedin-series/sc-2-4-7-custom-component-waarvan-de-focus-is-vergeten.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-custom-component-waarvan-de-focus-is-vergeten.webp"
 ---
 
 Een zelfgebouwde tabcomponent. Mooie styling. Hover-effecten. Transities.

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - kaart met legenda die alleen op kleur werkt
-image: "/images/blog/linkedin-series/sc-1-4-1-kaart-met-legenda-die-alleen-op-kleur-werkt.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-kaart-met-legenda-die-alleen-op-kleur-werkt.webp"
 ---
 
 Een kaart van Nederland. Gebieden in vier kleuren: rood, oranje, geel, groen. Risico hoog, gemiddeld, laag, minimaal.

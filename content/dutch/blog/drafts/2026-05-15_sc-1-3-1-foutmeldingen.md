@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Info en relaties
   - foutmeldingen
-image: "/images/blog/linkedin-series/sc-1-3-1-foutmeldingen.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-foutmeldingen.webp"
 ---
 
 Je vult een formulier in, klikt op verzenden, en ergens bovenaan verschijnt een rode tekst.

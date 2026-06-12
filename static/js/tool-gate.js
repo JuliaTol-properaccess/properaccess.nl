@@ -1,13 +1,18 @@
 /**
  * Password gate — Proper Access tools
- * Simple password protection for locked tools.
- * Valid password is stored in localStorage for subsequent visits.
+ * Lichte toegangsdrempel voor afgeschermde tools.
+ *
+ * Let op: dit is geen harde beveiliging. De toolinhoud staat in de pagina en is
+ * voor wie wil technisch bereikbaar. De gate houdt casual bezoekers tegen.
+ * Echte geheimen of klantdata horen hier dus niet achter.
+ *
+ * Validatie gebeurt server-side bij de tool-auth Worker:
+ *   - een token (pa_...) wordt gecheckt via /validate
+ *   - een wachtwoord wordt gecheckt via /unlock, die bij succes een token teruggeeft
+ * Er staat geen wachtwoord of vast token meer in deze publieke JS.
  */
 (function () {
   "use strict";
-
-  var STORAGE_KEY = "pa-tool-access";
-  var INTERNAL_TOKEN = "pa_internal_site_access";
 
   var gate = document.getElementById("passwordGate");
   var content = document.getElementById("toolContent");
@@ -17,27 +22,21 @@
 
   if (!gate || !content) return;
 
-  function simpleHash(str) {
-    var hash = 0;
-    for (var i = 0; i < str.length; i++) {
-      hash = ((hash << 5) - hash) + str.charCodeAt(i);
-      hash |= 0;
-    }
-    return hash.toString(36);
-  }
-
-  var EXPECTED = simpleHash("Vrijdag2702!");
+  var TOKEN_KEY = "pa-tool-token";
+  var AUTH_URL = "https://tool-auth.juliatol.workers.dev";
 
   function unlock(token) {
     gate.hidden = true;
     content.hidden = false;
-    if (token) window.__PA_TOKEN = token;
-    try { localStorage.setItem(STORAGE_KEY, EXPECTED); } catch (e) { /* private */ }
+    if (token) {
+      window.__PA_TOKEN = token;
+      try { localStorage.setItem(TOKEN_KEY, token); } catch (e) { /* private mode */ }
+    }
   }
 
   function showError() {
     if (error) {
-      error.textContent = "Onjuist wachtwoord. Probeer het opnieuw.";
+      error.textContent = "Onjuist wachtwoord of token. Probeer het opnieuw.";
       error.hidden = false;
     }
     if (input) {
@@ -46,68 +45,53 @@
     }
   }
 
-  // Check for valid token from /tools/ page
-  var TOKEN_KEY = "pa-tool-token";
-  var AUTH_URL = "https://tool-auth.juliatol.workers.dev";
+  function validateToken(token) {
+    return fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(token))
+      .then(function (r) { return r.json(); })
+      .then(function (data) { return !!data.valid; })
+      .catch(function () { return false; });
+  }
+
+  // Token uit URL-param heeft voorrang, daarna uit eerdere bezoeken.
   var storedToken = null;
   try { storedToken = localStorage.getItem(TOKEN_KEY); } catch (e) { /* */ }
-
-  // Also check URL param
   try {
     var urlToken = new URLSearchParams(window.location.search).get("token");
     if (urlToken) storedToken = urlToken;
   } catch (e) { /* */ }
 
-  // Check localStorage for previous access (password or token)
-  try {
-    if (localStorage.getItem(STORAGE_KEY) === EXPECTED) {
-      unlock(storedToken || INTERNAL_TOKEN);
-      return;
-    }
-  } catch (e) { /* */ }
-
   if (storedToken) {
-    fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(storedToken))
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        if (data.valid) {
-          try { localStorage.setItem(TOKEN_KEY, storedToken); } catch (e) { /* */ }
-          unlock(storedToken);
-        }
-      })
-      .catch(function () { /* keep locked */ });
+    validateToken(storedToken).then(function (ok) {
+      if (ok) unlock(storedToken);
+    });
   }
 
-  // Manual entry form
+  // Handmatige invoer: token (pa_...) of wachtwoord.
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!input) return;
       var val = input.value.trim();
+      if (!val) { showError(); return; }
 
-      // Check password first
-      if (simpleHash(val) === EXPECTED) {
-        unlock(INTERNAL_TOKEN);
+      if (val.indexOf("pa_") === 0) {
+        validateToken(val).then(function (ok) {
+          if (ok) unlock(val); else showError();
+        });
         return;
       }
 
-      // Try as token
-      if (val.startsWith("pa_")) {
-        fetch(AUTH_URL + "/validate?token=" + encodeURIComponent(val))
-          .then(function (r) { return r.json(); })
-          .then(function (data) {
-            if (data.valid) {
-              try { localStorage.setItem(TOKEN_KEY, val); } catch (e) { /* */ }
-              unlock(val);
-            } else {
-              showError();
-            }
-          })
-          .catch(function () { showError(); });
-        return;
-      }
-
-      showError();
+      // Wachtwoord: server-side checken, krijg een token terug.
+      fetch(AUTH_URL + "/unlock", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: val }),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.ok && data.token) unlock(data.token); else showError();
+        })
+        .catch(function () { showError(); });
     });
   }
 })();

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - "bekijk aanbiedingen groter dan groter dan"
-image: "/images/blog/linkedin-series/sc-2-4-4-bekijk-aanbiedingen-groter-dan-groter-dan.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-bekijk-aanbiedingen-groter-dan-groter-dan.webp"
 ---
 
 "Bekijk aanbiedingen >>"

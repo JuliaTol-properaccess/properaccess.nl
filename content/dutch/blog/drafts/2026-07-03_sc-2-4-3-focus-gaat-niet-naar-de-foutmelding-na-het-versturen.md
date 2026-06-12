@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - focus gaat niet naar de foutmelding na het versturen
-image: "/images/blog/linkedin-series/sc-2-4-3-focus-gaat-niet-naar-de-foutmelding-na-het-versturen.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-focus-gaat-niet-naar-de-foutmelding-na-het-versturen.webp"
 ---
 
 Je vult een formulier in. Twee velden vergeten. Je drukt op Versturen.

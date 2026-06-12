@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - navigatiemenu verdwijnt bij inzoomen
-image: "/images/blog/linkedin-series/sc-1-4-10-navigatiemenu-verdwijnt-bij-inzoomen.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-navigatiemenu-verdwijnt-bij-inzoomen.webp"
 ---
 
 Home. Over ons. Diensten. Projecten. Contact.

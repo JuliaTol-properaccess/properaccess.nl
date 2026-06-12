@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - links in een carrousel die niet bereikbaar zijn
-image: "/images/blog/linkedin-series/sc-2-4-3-links-in-een-carrousel-die-niet-bereikbaar-zijn.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-links-in-een-carrousel-die-niet-bereikbaar-zijn.webp"
 ---
 
 Een carrousel met aanbiedingen. Elke slide heeft een "Bekijk aanbieding"-link. Je tabt door de pagina. Je bereikt de carrousel.

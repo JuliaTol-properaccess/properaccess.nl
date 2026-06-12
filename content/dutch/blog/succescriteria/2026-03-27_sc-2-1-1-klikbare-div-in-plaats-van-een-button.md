@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - klikbare div in plaats van een button
-image: "/images/blog/linkedin-series/sc-2-1-1-klikbare-div-in-plaats-van-een-button.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-klikbare-div-in-plaats-van-een-button.webp"
 ---
 
 Een div met een onclick. Ziet eruit als een knop. Doet iets als je erop klikt.

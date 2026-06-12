@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - 'zichtbaar "submit", aria-label "verzenden"'
-image: "/images/blog/linkedin-series/sc-2-5-3-zichtbaar-submit-aria-label-verzenden.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-zichtbaar-submit-aria-label-verzenden.webp"
 ---
 
 Een Nederlandstalige website. Een knop. Op het scherm staat "Submit." Het aria-label zegt "Verzenden."

@@ -31,7 +31,7 @@ async function validateToken(token) {
 export default {
   async fetch(request) {
     const origin = request.headers.get("Origin") || "";
-    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : "";
 
     // CORS preflight
     if (request.method === "OPTIONS") {
@@ -266,15 +266,17 @@ function countByLevel(headings) {
 }
 
 function corsHeaders(origin) {
-  return {
-    "Access-Control-Allow-Origin": origin,
+  const headers = {
     "Access-Control-Allow-Methods": "GET, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
+    "Vary": "Origin",
   };
+  if (origin) headers["Access-Control-Allow-Origin"] = origin;
+  return headers;
 }
 
-function jsonResponse(data, status = 200, origin = ALLOWED_ORIGINS[0]) {
+function jsonResponse(data, status = 200, origin = "") {
   return new Response(JSON.stringify(data), {
     status,
     headers: {

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - grafiek met lijnen die alleen door kleur te onderscheiden zijn
-image: "/images/blog/linkedin-series/sc-1-4-1-grafiek-met-lijnen-die-alleen-door-kleur-te-onderscheiden-zijn.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-grafiek-met-lijnen-die-alleen-door-kleur-te-onderscheiden-zijn.webp"
 ---
 
 Drie lijnen in een grafiek. Rood, blauw, groen. Browsergebruik over de afgelopen vijf jaar.

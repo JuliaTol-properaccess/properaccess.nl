@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - focusindicator die opgaat in de achtergrond
-image: "/images/blog/linkedin-series/sc-2-4-7-focusindicator-die-opgaat-in-de-achtergrond.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-focusindicator-die-opgaat-in-de-achtergrond.webp"
 ---
 
 Er is een focusindicator. Technisch gezien. Een lichtgrijze outline (#E0E0E0) op een witte achtergrond. 1 pixel dik.

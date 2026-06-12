@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - engelse linktekst op een nederlandse pagina
-image: "/images/blog/linkedin-series/sc-2-4-4-engelse-linktekst-op-een-nederlandse-pagina.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-engelse-linktekst-op-een-nederlandse-pagina.webp"
 ---
 
 Een Nederlandstalige website. Een link naar de contactpagina. Met een `aria-label="Get in touch"`.

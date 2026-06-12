@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - markeringen op screenshots die onzichtbaar zijn
-image: "/images/blog/linkedin-series/sc-1-4-11-markeringen-op-screenshots-die-onzichtbaar-zijn.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-markeringen-op-screenshots-die-onzichtbaar-zijn.webp"
 ---
 
 Een screenshot in je documentatie. Met een rode cirkel om het knopje dat je moet klikken.

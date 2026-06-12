@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - focusrand die alleen door kleur werkt
-image: "/images/blog/linkedin-series/sc-1-4-1-focusrand-die-alleen-door-kleur-werkt.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-focusrand-die-alleen-door-kleur-werkt.webp"
 ---
 
 Je navigeert met het toetsenbord. Een knop krijgt focus. De focusrand is lichtblauw (#99CCFF) op een witte achtergrond.

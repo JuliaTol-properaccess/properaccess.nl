@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - carrousel-knoppen voor de content
-image: "/images/blog/linkedin-series/sc-1-3-2-carrousel-knoppen-voor-de-content.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-carrousel-knoppen-voor-de-content.webp"
 ---
 
 "Vorige. Volgende."

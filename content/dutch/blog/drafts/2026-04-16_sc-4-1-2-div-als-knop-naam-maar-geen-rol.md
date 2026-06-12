@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - div als knop: naam maar geen rol
-image: "/images/blog/linkedin-series/sc-4-1-2-div-als-knop-naam-maar-geen-rol.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-div-als-knop-naam-maar-geen-rol.webp"
 ---
 
 "Versturen."

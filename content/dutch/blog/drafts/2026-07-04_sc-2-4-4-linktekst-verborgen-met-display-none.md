@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - linktekst verborgen met display: none
-image: "/images/blog/linkedin-series/sc-2-4-4-linktekst-verborgen-met-display-none.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-linktekst-verborgen-met-display-none.webp"
 ---
 
 De developer wilde het netjes doen. Een link met een aria-tekst voor schermlezers. Maar in plaats van `sr-only` gebruikte die `display: none`.

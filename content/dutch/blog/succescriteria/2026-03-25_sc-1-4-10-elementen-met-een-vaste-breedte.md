@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Reflow
   - elementen met een vaste breedte
-image: "/images/blog/linkedin-series/sc-1-4-10-elementen-met-een-vaste-breedte.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-elementen-met-een-vaste-breedte.webp"
 ---
 
 Je zoomt in tot 400%. De tekst wordt groter, de pagina smaller.

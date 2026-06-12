@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - witte tekst op een foto
-image: "/images/blog/linkedin-series/sc-1-4-3-witte-tekst-op-een-foto.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-witte-tekst-op-een-foto.webp"
 ---
 
 "Welkom bij ons"

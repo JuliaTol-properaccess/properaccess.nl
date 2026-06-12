@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - focus die alleen een kleurverandering is
-image: "/images/blog/linkedin-series/sc-2-4-7-focus-die-alleen-een-kleurverandering-is.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-focus-die-alleen-een-kleurverandering-is.webp"
 ---
 
 Een link. Bij focus wordt de tekst blauw. Dat is de focusindicator. Geen outline. Geen onderstreping. Geen achtergrondverandering. Alleen: de tekst verandert van kleur.

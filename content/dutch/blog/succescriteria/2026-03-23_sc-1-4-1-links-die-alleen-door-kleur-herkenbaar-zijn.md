@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - links die alleen door kleur herkenbaar zijn
-image: "/images/blog/linkedin-series/sc-1-4-1-links-die-alleen-door-kleur-herkenbaar-zijn.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-links-die-alleen-door-kleur-herkenbaar-zijn.webp"
 ---
 
 Een alinea tekst. Ergens staat een link. Blauw. Geen onderstreping.

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - knop met icoon en tekst, maar aria-label vervangt alles
-image: "/images/blog/linkedin-series/sc-2-5-3-knop-met-icoon-en-tekst-maar-aria-label-vervangt-alles.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-knop-met-icoon-en-tekst-maar-aria-label-vervangt-alles.webp"
 ---
 
 Een knop. Disketje-icoon. Daarnaast: "Opslaan."

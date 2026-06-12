@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - focus springt onverwacht door de pagina
-image: "/images/blog/linkedin-series/sc-2-4-3-focus-springt-onverwacht-door-de-pagina.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-focus-springt-onverwacht-door-de-pagina.webp"
 ---
 
 Tab. Je bent in het hoofdmenu. Tab. Je bent in de sidebar. Tab. Je bent terug in het hoofdmenu. Tab. Nu ben je in de content.

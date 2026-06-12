@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Paginatitel
   - meerstappenformulier zonder stap in de titel
-image: "/images/blog/linkedin-series/sc-2-4-2-meerstappenformulier-zonder-stap-in-de-titel.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-meerstappenformulier-zonder-stap-in-de-titel.webp"
 ---
 
 Stap 1. Stap 2. Stap 3. Stap 4.

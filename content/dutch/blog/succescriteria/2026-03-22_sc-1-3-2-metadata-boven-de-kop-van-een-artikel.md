@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - metadata boven de kop van een artikel
-image: "/images/blog/linkedin-series/sc-1-3-2-metadata-boven-de-kop-van-een-artikel.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-metadata-boven-de-kop-van-een-artikel.webp"
 ---
 
 "15 maart 2026. Workshops."

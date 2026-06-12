@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - foutmeldingen die je niet kunt lezen
-image: "/images/blog/linkedin-series/sc-1-4-3-foutmeldingen-die-je-niet-kunt-lezen.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-foutmeldingen-die-je-niet-kunt-lezen.webp"
 ---
 
 Je vult een formulier in. Iets klopt niet. Er verschijnt een melding.

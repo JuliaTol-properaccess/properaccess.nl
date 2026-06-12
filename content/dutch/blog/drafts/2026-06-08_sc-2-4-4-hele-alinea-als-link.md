@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - hele alinea als link
-image: "/images/blog/linkedin-series/sc-2-4-4-hele-alinea-als-link.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-hele-alinea-als-link.webp"
 ---
 
 "Link. Deze prachtige winterjas is gemaakt van gerecycled materiaal en houdt je warm tot min 20 graden. Verkrijgbaar in drie kleuren. Nu met 20 procent korting."

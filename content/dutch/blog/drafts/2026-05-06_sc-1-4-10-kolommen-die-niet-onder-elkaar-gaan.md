@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - kolommen die niet onder elkaar gaan
-image: "/images/blog/linkedin-series/sc-1-4-10-kolommen-die-niet-onder-elkaar-gaan.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-kolommen-die-niet-onder-elkaar-gaan.webp"
 ---
 
 Sidebar links. Content rechts. Op een groot scherm: perfect.

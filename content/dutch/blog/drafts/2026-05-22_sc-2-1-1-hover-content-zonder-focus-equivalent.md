@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - hover-content zonder focus-equivalent
-image: "/images/blog/linkedin-series/sc-2-1-1-hover-content-zonder-focus-equivalent.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-hover-content-zonder-focus-equivalent.webp"
 ---
 
 Hover over het producticoon. Een popup verschijnt met specificaties, prijs en een "Bekijk product"-link.

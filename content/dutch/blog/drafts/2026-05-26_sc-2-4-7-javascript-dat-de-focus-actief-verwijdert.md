@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - javascript dat de focus actief verwijdert
-image: "/images/blog/linkedin-series/sc-2-4-7-javascript-dat-de-focus-actief-verwijdert.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-javascript-dat-de-focus-actief-verwijdert.webp"
 ---
 
 ```javascript
