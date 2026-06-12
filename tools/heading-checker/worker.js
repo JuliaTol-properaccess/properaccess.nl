@@ -12,20 +12,24 @@ const ALLOWED_ORIGINS = [
   "https://www.properaccess.nl",
   "http://localhost:1313",
 ];
-const AUTH_URL = "https://tool-auth.juliatol.workers.dev/validate";
 const MAX_RESPONSE_SIZE = 5 * 1024 * 1024; // 5MB
 const FETCH_TIMEOUT_MS = 10000;
 
-const INTERNAL_TOKEN = "pa_internal_site_access";
+// Rate limiting: 30 requests per 10 minutes per IP
+const RATE_LIMIT = 30;
+const RATE_WINDOW = 10 * 60 * 1000;
+const rateLimitMap = new Map();
 
-async function validateToken(token) {
-  if (!token) return false;
-  if (token === INTERNAL_TOKEN) return true;
-  try {
-    const res = await fetch(AUTH_URL + "?token=" + encodeURIComponent(token));
-    const data = await res.json();
-    return data.valid === true;
-  } catch { return false; }
+function isRateLimited(ip) {
+  const now = Date.now();
+  if (rateLimitMap.size > 10000) rateLimitMap.clear();
+  const record = rateLimitMap.get(ip);
+  if (!record || now - record.windowStart > RATE_WINDOW) {
+    rateLimitMap.set(ip, { windowStart: now, count: 1 });
+    return false;
+  }
+  record.count++;
+  return record.count > RATE_LIMIT;
 }
 
 export default {
@@ -46,10 +50,10 @@ export default {
 
     const { searchParams } = new URL(request.url);
 
-    // Token validation
-    const token = searchParams.get("token");
-    if (!await validateToken(token)) {
-      return jsonResponse({ error: "Invalid or expired token" }, 401, allowedOrigin);
+    // Rate limiting
+    const clientIP = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isRateLimited(clientIP)) {
+      return jsonResponse({ error: "Too many requests. Try again later." }, 429, allowedOrigin);
     }
 
     const targetUrl = searchParams.get("url");

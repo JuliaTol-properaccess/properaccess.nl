@@ -247,8 +247,7 @@
     submitBtn.textContent = t("submitBusy");
     output.innerHTML = '<p class="tool-alt__loading">' + escapeHtml(t("loading")) + '</p>';
 
-    var token = window.__PA_TOKEN || "pa_internal_site_access";
-    fetch(WORKER_URL + "?url=" + encodeURIComponent(url) + "&token=" + encodeURIComponent(token))
+    fetch(WORKER_URL + "?url=" + encodeURIComponent(url))
       .then(function (response) {
         return response.json();
       })
