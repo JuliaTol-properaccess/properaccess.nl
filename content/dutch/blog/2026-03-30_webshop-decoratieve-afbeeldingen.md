@@ -10,7 +10,7 @@ tags:
   - "afbeeldingen"
   - "ecommerce"
 description: "Decoratieve afbeeldingen — Afbeeldingen in webshops (post 3/8)"
-image: "/images/blog/serie-afbeeldingen-webshops/decoratieve-afbeeldingen.png"
+image: "/images/blog/serie-afbeeldingen-webshops/decoratieve-afbeeldingen.webp"
 keywords:
   - digitale toegankelijkheid
   - WCAG

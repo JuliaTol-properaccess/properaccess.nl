@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - custom checkboxen en radiobuttons
-image: "/images/blog/linkedin-series/sc-1-4-11-custom-checkboxen-en-radiobuttons.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-custom-checkboxen-en-radiobuttons.webp"
 ---
 
 Een checkbox. Lichtgrijze rand. Afgeronde hoeken. Past perfect bij het design.

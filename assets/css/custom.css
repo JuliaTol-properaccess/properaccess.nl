@@ -38,7 +38,6 @@
   vertical-align: middle;
 }
 
-
 /* ─── Skiplink ─── */
 .skiplink {
   position: absolute;
@@ -940,7 +939,6 @@ html.dark .offerte-content .protected-overlay button {
   color: var(--color-dark);
 }
 
-
 /* ============================================
    LANDING PAGE COMPONENTEN — Stitch redesign
    ============================================ */
@@ -1413,7 +1411,6 @@ html.dark .section-card__content {
     border-right: 5px solid transparent;
   }
 }
-
 
 /* --- section-cta: call-to-action blok --- */
 
@@ -3823,7 +3820,6 @@ html.dark .tool-card__cta-link {
   color: #e8a0ba;
 }
 
-
 /* ─── Toolsuite promo ─── */
 
 .toolsuite-promo {
@@ -3905,7 +3901,6 @@ html.dark .toolsuite-promo__text {
     width: 100%;
   }
 }
-
 
 /* ═══════════════════════════════════════════════════════════
    HOMEPAGE — Stitch redesign
@@ -4205,7 +4200,6 @@ html.dark .toolsuite-promo__text {
   font-size: 0.85em;
 }
 
-
 /* ─── TRUST BAR ─── */
 .hp-trust {
   padding: 1.25rem 0;
@@ -4245,7 +4239,6 @@ html.dark .toolsuite-promo__text {
   color: #1F2937;
   white-space: nowrap;
 }
-
 
 /* ─── SOCIAL PROOF ─── */
 .hp-proof {
@@ -4462,7 +4455,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ─── HOW IT WORKS ─── */
 .hp-how {
   padding: 6rem 0 5rem;
@@ -4577,7 +4569,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ─── DIFFERENTIATORS ─── */
 .hp-diff {
   padding: 6rem 0 5rem;
@@ -4665,7 +4656,6 @@ html.dark .toolsuite-promo__text {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* ─── VALUE PROPS ─── */
 .hp-vp {
@@ -5406,7 +5396,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ─── PAIN POINT ─── */
 .hp-pain {
   padding: 6rem 0 5rem;
@@ -5678,7 +5667,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ─── SECTORS ─── */
 .hp-sectors {
   padding: 1.5rem 0 2rem;
@@ -5733,7 +5721,6 @@ html.dark .toolsuite-promo__text {
 .hp-sector-card__label {
   white-space: nowrap;
 }
-
 
 /* ─── CONTACT FORM SECTIONS ─── */
 .hp-contact-section {
@@ -5870,7 +5857,6 @@ html.dark .toolsuite-promo__text {
   resize: vertical;
 }
 
-
 /* ─── SERVICES / HOE WE HELPEN ─── */
 .hp-services {
   padding: 6rem 0;
@@ -5958,7 +5944,6 @@ html.dark .toolsuite-promo__text {
 .hp-service-card__link:hover .material-symbols-outlined {
   transform: translateX(0.25rem);
 }
-
 
 /* ─── TEST JE CONTRAST ─── */
 .hp-contrast {
@@ -6115,7 +6100,6 @@ html.dark .toolsuite-promo__text {
   justify-content: center;
 }
 
-
 /* ─── LAATSTE INZICHTEN ─── */
 .hp-insights {
   padding: 6rem 0;
@@ -6228,7 +6212,6 @@ html.dark .toolsuite-promo__text {
   transform: translateX(0.5rem);
 }
 
-
 /* ─── WETTELIJKE VERKLARING CTA ─── */
 .hp-legal-cta {
   padding: 6rem 0;
@@ -6281,7 +6264,6 @@ html.dark .toolsuite-promo__text {
   gap: 1rem;
 }
 
-
 /* ─── FAQ ─── */
 .hp-faq {
   padding: 6rem 0;
@@ -6307,7 +6289,6 @@ html.dark .toolsuite-promo__text {
   max-width: 48rem;
   margin-inline: auto;
 }
-
 
 /* ─── CONTACT FINAL ─── */
 .hp-contact-final {
@@ -6367,7 +6348,6 @@ html.dark .toolsuite-promo__text {
   border: 1px solid #f3f4f6;
   box-shadow: 0 20px 40px -15px rgba(31, 41, 55, 0.1);
 }
-
 
 /* ─── RESPONSIVE ─── */
 @media (min-width: 768px) {
@@ -6471,7 +6451,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ─── Footer opt-in + IAAP ─── */
 
 .footer-optin {
@@ -6548,9 +6527,6 @@ html.dark .toolsuite-promo__text {
   line-height: 1.5;
 }
 
-
-
-
 /* ═══════════════════════════════════════════════════════════
    VOOR WIE — Shared (stitch redesign)
    ═══════════════════════════════════════════════════════════ */
@@ -6586,7 +6562,6 @@ html.dark .toolsuite-promo__text {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 
 /* ═══════════════════════════════════════════════════════════
    QUICKSCAN PAGE
@@ -7000,7 +6975,6 @@ html.dark .toolsuite-promo__text {
   }
 }
 
-
 /* ═══════════════════════════════════════════════════════════
    TOOL: ARIA ROLLEN & ATTRIBUTEN REFERENTIE
    ═══════════════════════════════════════════════════════════ */
@@ -7402,7 +7376,6 @@ html.dark .tool-aria__empty { color: #9ca3af; }
   }
 }
 
-
 /* ==================================================
    TOOL: PDF TOEGANKELIJKHEIDSCHECKER
    ================================================== */
@@ -7474,116 +7447,6 @@ html.dark .tool-pdf__lang-opt {
 html.dark .tool-pdf__lang-opt--active {
   background: #A30D4B;
   color: #fff;
-}
-
-/* Password gate */
-
-.tool-pdf__gate {
-  max-width: 420px;
-  margin: 2rem 0;
-  padding: 2rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.tool-pdf__gate-text {
-  margin: 0 0 1.25rem;
-  font-size: 0.95rem;
-  color: var(--color-text);
-  line-height: 1.6;
-}
-
-html.dark .tool-pdf__gate {
-  border-color: var(--color-darkmode-border);
-}
-
-html.dark .tool-pdf__gate-text {
-  color: var(--color-darkmode-text);
-}
-
-.tool-pdf__gate-form {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.tool-pdf__gate-input {
-  flex: 1;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #ccd5e0;
-  border-radius: 6px;
-  font-size: 0.925rem;
-  color: #1F2937;
-  background: #fff;
-}
-
-.tool-pdf__gate-input:focus {
-  outline: 2px solid #A30D4B;
-  outline-offset: 1px;
-  border-color: #A30D4B;
-}
-
-html.dark .tool-pdf__gate-input {
-  background: var(--color-darkmode-theme-light);
-  border-color: var(--color-darkmode-border);
-  color: var(--color-darkmode-text);
-}
-
-.tool-pdf__gate-btn {
-  padding: 0.5rem 1.25rem;
-  background: #A30D4B;
-  border: 1px solid #A30D4B;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 0.925rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.tool-pdf__gate-btn:hover {
-  background: #8a0b3f;
-}
-
-html.dark .tool-pdf__gate-btn {
-  background: #c4176a;
-  border-color: #c4176a;
-}
-
-html.dark .tool-pdf__gate-btn:hover {
-  background: #d63d82;
-}
-
-.tool-pdf__gate-error {
-  margin: 0.75rem 0 0;
-  font-size: 0.875rem;
-  color: #A30D4B;
-  font-weight: 500;
-}
-
-html.dark .tool-pdf__gate-error {
-  color: #e8a0ba;
-}
-
-.tool-pdf__gate-pipedrive {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-.tool-pdf__gate-trial-text {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #1F2937;
-  margin-bottom: 1rem;
-}
-
-html.dark .tool-pdf__gate-trial-text {
-  color: #e5e7eb;
-}
-
-html.dark .tool-pdf__gate-pipedrive {
-  border-top-color: #374151;
 }
 
 /* Intro */
@@ -9406,7 +9269,6 @@ html.dark .tool-fout__level {
   }
 }
 
-
 /* =============================================================
    ACADEMY — HEADER
    ============================================================= */
@@ -10504,7 +10366,6 @@ html.dark .tool-fout__level {
   }
 }
 
-
 /* ─── Site Footer ─── */
 .site-footer__main {
   background: #1F2937;
@@ -11013,7 +10874,6 @@ html.dark .vw-faq .faq-answer {
   }
 }
 
-
 /* ─── Over page: team section (stitch) ─── */
 
 .ov-team__grid {
@@ -11072,7 +10932,6 @@ html.dark .vw-faq .faq-answer {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 
 /* ─── Contact form section ─── */
 
@@ -11288,121 +11147,6 @@ html.dark .vw-faq .faq-answer {
   padding: 2rem 0;
 }
 
-/* ── Tool card lock icon ── */
-.tool-card__lock {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.4rem;
-  color: #9ca3af;
-  flex-shrink: 0;
-}
-.tool-card--locked {
-  position: relative;
-  cursor: default;
-}
-.tool-card--locked .tool-card__description,
-.tool-card--locked .tool-card__tags {
-  opacity: 0.7;
-}
-.tool-card--locked:hover {
-  border-top-color: #9ca3af;
-}
-
-/* ── Lock modal ── */
-.tool-lock-modal__backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(31, 41, 55, 0.5);
-  z-index: 999;
-}
-.tool-lock-modal__dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  background: #fff;
-  border-radius: 0.75rem;
-  padding: 2rem;
-  max-width: 420px;
-  width: calc(100% - 2rem);
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-}
-.tool-lock-modal__close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #6b7280;
-  padding: 0.25rem;
-  line-height: 1;
-}
-.tool-lock-modal__close:hover {
-  color: #1F2937;
-}
-.tool-lock-modal__icon {
-  margin-bottom: 1rem;
-}
-.tool-lock-modal__title {
-  font-size: 1.25rem;
-  color: #1F2937;
-  margin-bottom: 0.5rem;
-}
-.tool-lock-modal__text {
-  font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 1.25rem;
-  line-height: 1.5;
-}
-.tool-lock-modal__form {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-.tool-lock-modal__input {
-  flex: 1;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
-  font-size: 0.95rem;
-}
-.tool-lock-modal__input:focus {
-  outline: 2px solid #004050;
-  outline-offset: 1px;
-  border-color: #004050;
-}
-.tool-lock-modal__btn {
-  padding: 0.5rem 1rem;
-  background: #A30D4B;
-  color: #fff;
-  border: none;
-  border-radius: 0.375rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.tool-lock-modal__btn:hover {
-  background: #8a0b3f;
-}
-.tool-lock-modal__error {
-  color: #dc2626;
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-}
-.tool-lock-modal__footer {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-top: 0.5rem;
-}
-.tool-lock-modal__footer a {
-  color: #004050;
-  text-decoration: underline;
-}
-
 /* ── Link checker ── */
 .tool-link__filter {
   display: flex;
@@ -11514,8 +11258,6 @@ a.tool-link__href-url:hover {
 .tool-link__item .tool-tbl__issues {
   margin-top: 0.5rem;
 }
-
-
 
 /* ─── Accessibility Quiz ─── */
 
@@ -13985,7 +13727,6 @@ body.pa-chat--open {
   }
 }
 
-
 /* ─── E-commerce: stat highlight (61%) ─── */
 .ec-stat-highlight {
   padding: 3rem 0;
@@ -14084,7 +13825,6 @@ body.pa-chat--open {
     text-align: left;
   }
 }
-
 
 /* ─── E-commerce: why webshops come back (2-col feature list) ─── */
 .ec-why-back {
@@ -14776,7 +14516,6 @@ body.pa-chat--open {
   margin-top: 0.25rem;
 }
 
-
 /* ============================================
    Zo werken wij — process flow (/zo-werken-wij/)
    ============================================ */
@@ -14974,7 +14713,6 @@ body.pa-chat--open {
     transform: none;
   }
 }
-
 
 /* Zo werken wij — collapse padding between back-to-back white section-full blocks.
    We exclude --light so a white-to-light transition keeps its top padding. */

@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Contrast van niet-tekstuele content
   - zelfgemaakte focusindicator die onzichtbaar is
-image: "/images/blog/linkedin-series/sc-1-4-11-zelfgemaakte-focusindicator-die-onzichtbaar-is.png"
+image: "/images/blog/linkedin-series/sc-1-4-11-zelfgemaakte-focusindicator-die-onzichtbaar-is.webp"
 ---
 
 Tab. Tab. Tab. Waar ben ik?

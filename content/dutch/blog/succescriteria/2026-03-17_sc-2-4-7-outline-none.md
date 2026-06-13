@@ -17,7 +17,7 @@ keywords:
   - Focus zichtbaar
   - outline none
   - focus-visible
-image: "/images/blog/linkedin-series/sc-2-4-7-outline-none.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-outline-none.webp"
 ---
 
 ```css

@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - outline: none — de meest destructieve regel in css
-image: "/images/blog/linkedin-series/sc-2-4-7-outline-none-de-meest-destructieve-regel-in-css.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-outline-none-de-meest-destructieve-regel-in-css.webp"
 ---
 
 ```css

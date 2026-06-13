@@ -19,7 +19,7 @@ keywords:
 serie: "AI and Accessibility Testing"
 wcag: "1.4.3 Contrast (Minimum)"
 test_datum: "2026-04-04"
-image: "/images/blog/ai-serie-contrast-en.png"
+image: "/images/blog/ai-serie-contrast-en.webp"
 ---
 
 {{< case-section >}}

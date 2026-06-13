@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - formulierveld kleurt rood bij een fout. dat is alles.
-image: "/images/blog/linkedin-series/sc-1-4-1-formulierveld-kleurt-rood-bij-een-fout-dat-is-alles.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-formulierveld-kleurt-rood-bij-een-fout-dat-is-alles.webp"
 ---
 
 Je vult je e-mailadres verkeerd in. De rand van het veld wordt rood.

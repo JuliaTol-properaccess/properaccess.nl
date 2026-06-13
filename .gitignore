@@ -25,3 +25,14 @@ yarn.lock
 
 # Local working directories
 input_Julia/
+
+# Wrangler local state (kan tokens/KV-data bevatten, nooit committen)
+.wrangler/
+tools/**/.wrangler/
+
+# Lokale werkdocumenten en exports in de repo-root (niet publiceren)
+.git.broken-backup/
+/TASK-*.md
+/issue_list*.md
+/WEBSITE_DATA_EN_BEVEILIGING.md
+/*.csv

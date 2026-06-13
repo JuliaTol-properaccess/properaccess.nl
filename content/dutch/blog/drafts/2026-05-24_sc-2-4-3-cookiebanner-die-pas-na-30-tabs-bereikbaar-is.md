@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - cookiebanner die pas na 30 tabs bereikbaar is
-image: "/images/blog/linkedin-series/sc-2-4-3-cookiebanner-die-pas-na-30-tabs-bereikbaar-is.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-cookiebanner-die-pas-na-30-tabs-bereikbaar-is.webp"
 ---
 
 Een cookiebanner onderaan het scherm. "Wij gebruiken cookies." Twee knoppen: Accepteren en Weigeren.

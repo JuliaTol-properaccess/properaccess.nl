@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - toggle-knop zonder status
-image: "/images/blog/linkedin-series/sc-4-1-2-toggle-knop-zonder-status.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-toggle-knop-zonder-status.webp"
 ---
 
 Een knop: "Donkere modus." Je klikt. De achtergrond wordt donker. Visueel is het duidelijk: donkere modus is aan.

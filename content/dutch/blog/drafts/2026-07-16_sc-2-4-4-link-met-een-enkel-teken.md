@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - link met een enkel teken
-image: "/images/blog/linkedin-series/sc-2-4-4-link-met-een-enkel-teken.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-link-met-een-enkel-teken.webp"
 ---
 
 A. A. A.

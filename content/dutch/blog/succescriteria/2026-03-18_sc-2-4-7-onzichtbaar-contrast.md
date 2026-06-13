@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - focusindicator contrast
-image: "/images/blog/linkedin-series/sc-2-4-7-onzichtbaar-contrast.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-onzichtbaar-contrast.webp"
 ---
 
 Er is een focusindicator. Technisch gezien. Een lichtgrijze outline (#E0E0E0) op een witte achtergrond. 1 pixel dik.

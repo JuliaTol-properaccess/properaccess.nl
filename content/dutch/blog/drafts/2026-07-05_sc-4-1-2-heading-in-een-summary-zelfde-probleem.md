@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - heading in een summary: zelfde probleem
-image: "/images/blog/linkedin-series/sc-4-1-2-heading-in-een-summary-zelfde-probleem.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-heading-in-een-summary-zelfde-probleem.webp"
 ---
 
 Net als bij een button: een `<summary>` heeft de impliciete rol van een button. En een button eet de rollen van zijn kinderen op.

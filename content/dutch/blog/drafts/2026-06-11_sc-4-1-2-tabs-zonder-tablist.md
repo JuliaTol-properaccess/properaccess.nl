@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - tabs zonder tablist
-image: "/images/blog/linkedin-series/sc-4-1-2-tabs-zonder-tablist.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-tabs-zonder-tablist.webp"
 ---
 
 Twee elementen met `role="tab"`. Een element met `role="tabpanel"`. Maar geen `role="tablist"`.

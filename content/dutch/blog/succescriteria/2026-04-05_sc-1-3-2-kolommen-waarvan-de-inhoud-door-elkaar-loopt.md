@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - kolommen waarvan de inhoud door elkaar loopt
-image: "/images/blog/linkedin-series/sc-1-3-2-kolommen-waarvan-de-inhoud-door-elkaar-loopt.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-kolommen-waarvan-de-inhoud-door-elkaar-loopt.webp"
 ---
 
 Twee projecten naast elkaar. Links een afbeelding, rechts een afbeelding. Daaronder links een beschrijving, rechts een beschrijving.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - dialoogvenster krijgt geen focus bij openen
-image: "/images/blog/linkedin-series/sc-2-4-3-dialoogvenster-krijgt-geen-focus-bij-openen.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-dialoogvenster-krijgt-geen-focus-bij-openen.webp"
 ---
 
 Een popup verschijnt. "Wil je cookies accepteren?"

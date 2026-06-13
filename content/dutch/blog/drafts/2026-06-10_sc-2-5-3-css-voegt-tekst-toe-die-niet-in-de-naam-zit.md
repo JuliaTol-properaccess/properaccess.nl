@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - css voegt tekst toe die niet in de naam zit
-image: "/images/blog/linkedin-series/sc-2-5-3-css-voegt-tekst-toe-die-niet-in-de-naam-zit.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-css-voegt-tekst-toe-die-niet-in-de-naam-zit.webp"
 ---
 
 Een knop. In de HTML staat "Verwijderen." Maar de CSS voegt via `::after` het woord "definitief" toe.

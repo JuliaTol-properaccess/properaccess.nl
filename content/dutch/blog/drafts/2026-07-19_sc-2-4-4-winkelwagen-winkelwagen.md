@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - "winkelwagen winkelwagen"
-image: "/images/blog/linkedin-series/sc-2-4-4-winkelwagen-winkelwagen.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-winkelwagen-winkelwagen.webp"
 ---
 
 Een link naar de winkelwagen. Met een winkelwagen-icoon met alt="Winkelwagen" en het woord "Winkelwagen" ernaast.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - afbeelding van prefix
-image: "/images/blog/linkedin-series/webshop-afbeelding-van-prefix.png"
+image: "/images/blog/linkedin-series/webshop-afbeelding-van-prefix.webp"
 ---
 
 Je hebt een overzichtspagina in je webwinkel met 100 producten. In elke alt-tekst staat "Afbeelding van...". Klinkt netjes, toch? Tot je luistert wat er gebeurt. Voorleessoftware zegt bij elke afbeelding al automatisch "afbeelding." Dus als jij "Afbeelding van Nike schoenen" in de alt-tekst zet, hoort je klant: "Afbeelding. Afbeelding van Nike schoenen." Bij de vierde rij producten word je daar helemaal gek van. En dat wil je niet als winkelier.

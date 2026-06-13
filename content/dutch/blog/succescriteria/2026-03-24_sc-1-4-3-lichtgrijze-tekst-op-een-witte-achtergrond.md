@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - lichtgrijze tekst op een witte achtergrond
-image: "/images/blog/linkedin-series/sc-1-4-3-lichtgrijze-tekst-op-een-witte-achtergrond.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-lichtgrijze-tekst-op-een-witte-achtergrond.webp"
 ---
 
 Contrastverhouding: 2,85:1. Vereist: 4,5:1.

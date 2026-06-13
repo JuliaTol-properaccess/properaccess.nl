@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - de drie regels van aria
-image: "/images/blog/linkedin-series/sc-4-1-2-de-drie-regels-van-aria.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-de-drie-regels-van-aria.webp"
 ---
 
 Er zijn drie ongeschreven regels over ARIA. Ze komen van de mensen die het hebben bedacht:

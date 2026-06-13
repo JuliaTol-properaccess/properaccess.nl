@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Reflow
   - content verdwijnt door overflow hidden
-image: "/images/blog/linkedin-series/sc-1-4-10-content-verdwijnt-door-overflow-hidden.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-content-verdwijnt-door-overflow-hidden.webp"
 ---
 
 Je zoomt in op een webpagina. De tekst wordt groter. En dan — halverwege een zin — houdt de tekst op. Alsof iemand de rest heeft afgeknipt.

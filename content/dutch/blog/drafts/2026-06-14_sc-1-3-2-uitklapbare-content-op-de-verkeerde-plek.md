@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - uitklapbare content op de verkeerde plek
-image: "/images/blog/linkedin-series/sc-1-3-2-uitklapbare-content-op-de-verkeerde-plek.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-uitklapbare-content-op-de-verkeerde-plek.webp"
 ---
 
 Je klikt op "Veelgestelde vragen". Een accordion opent. Het antwoord verschijnt.

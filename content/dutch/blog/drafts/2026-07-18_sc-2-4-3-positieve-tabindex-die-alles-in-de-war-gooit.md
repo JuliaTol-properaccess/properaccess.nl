@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - positieve tabindex die alles in de war gooit
-image: "/images/blog/linkedin-series/sc-2-4-3-positieve-tabindex-die-alles-in-de-war-gooit.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-positieve-tabindex-die-alles-in-de-war-gooit.webp"
 ---
 
 `tabindex="1"`.

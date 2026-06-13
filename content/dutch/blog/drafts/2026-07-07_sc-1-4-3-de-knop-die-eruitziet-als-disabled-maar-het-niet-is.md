@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - de knop die eruitziet als disabled maar het niet is
-image: "/images/blog/linkedin-series/sc-1-4-3-de-knop-die-eruitziet-als-disabled-maar-het-niet-is.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-de-knop-die-eruitziet-als-disabled-maar-het-niet-is.webp"
 ---
 
 Een grijze knop. Lichte tekst. Ziet eruit als uitgeschakeld.

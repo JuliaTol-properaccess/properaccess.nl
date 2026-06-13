@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - focus verdwijnt na het sluiten van een dialoogvenster
-image: "/images/blog/linkedin-series/sc-2-4-3-focus-verdwijnt-na-het-sluiten-van-een-dialoogvenster.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-focus-verdwijnt-na-het-sluiten-van-een-dialoogvenster.webp"
 ---
 
 Je klikt op "Verwijderen." Een bevestigingspopup verschijnt. "Weet je het zeker?" Je drukt op "Annuleren."

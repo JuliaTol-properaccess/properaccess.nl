@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - overflow hidden focus
-image: "/images/blog/linkedin-series/sc-2-4-7-overflow-hidden.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-overflow-hidden.webp"
 ---
 
 Een mooie kaartcomponent. Afgeronde hoeken. `overflow: hidden` om te voorkomen dat content buiten de hoeken valt.

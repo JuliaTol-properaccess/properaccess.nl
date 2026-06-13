@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Betekenisvolle volgorde
   - verborgen menu dat toch wordt voorgelezen
-image: "/images/blog/linkedin-series/sc-1-3-2-verborgen-menu-dat-toch-wordt-voorgelezen.png"
+image: "/images/blog/linkedin-series/sc-1-3-2-verborgen-menu-dat-toch-wordt-voorgelezen.webp"
 ---
 
 Je mobiele menu is dicht. Ingeklapt. Onzichtbaar.

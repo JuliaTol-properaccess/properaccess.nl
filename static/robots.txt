@@ -3,5 +3,6 @@ Allow: /
 
 Disallow: /offertes/
 Disallow: /bedankt/
+Disallow: /rapporten/
 
 Sitemap: https://www.properaccess.nl/sitemap.xml

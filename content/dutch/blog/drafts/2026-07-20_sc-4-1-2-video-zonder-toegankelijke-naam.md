@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - video zonder toegankelijke naam
-image: "/images/blog/linkedin-series/sc-4-1-2-video-zonder-toegankelijke-naam.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-video-zonder-toegankelijke-naam.webp"
 ---
 
 Een instructievideo op je pagina. Met het `controls`-attribuut: play, pauze, volume, fullscreen. Allemaal aanwezig.

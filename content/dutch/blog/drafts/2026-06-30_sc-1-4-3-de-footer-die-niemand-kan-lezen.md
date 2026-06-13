@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - de footer die niemand kan lezen
-image: "/images/blog/linkedin-series/sc-1-4-3-de-footer-die-niemand-kan-lezen.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-de-footer-die-niemand-kan-lezen.webp"
 ---
 
 Helemaal onderaan je website. Klein lettertype. Lichtgrijs.

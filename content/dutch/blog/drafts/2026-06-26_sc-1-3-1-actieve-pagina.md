@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Info en relaties
   - actieve pagina
-image: "/images/blog/linkedin-series/sc-1-3-1-actieve-pagina.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-actieve-pagina.webp"
 ---
 
 Je bent op de pagina "Over ons" en in het menu is die link visueel anders — onderstreept, een andere kleur, vetgedrukt. Je weet waar je bent.

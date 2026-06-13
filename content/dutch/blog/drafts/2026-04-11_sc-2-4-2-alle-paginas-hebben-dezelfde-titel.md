@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Paginatitel
   - alle pagina's hebben dezelfde titel
-image: "/images/blog/linkedin-series/sc-2-4-2-alle-paginas-hebben-dezelfde-titel.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-alle-paginas-hebben-dezelfde-titel.webp"
 ---
 
 Vijf tabbladen open. Allemaal van dezelfde website. Allemaal met dezelfde titel: "Gemeente Utrecht."

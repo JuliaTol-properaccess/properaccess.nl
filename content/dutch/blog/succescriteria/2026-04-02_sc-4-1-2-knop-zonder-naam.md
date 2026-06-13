@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - knop zonder naam
-image: "/images/blog/linkedin-series/sc-4-1-2-knop-zonder-naam.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-knop-zonder-naam.webp"
 ---
 
 "Knop."

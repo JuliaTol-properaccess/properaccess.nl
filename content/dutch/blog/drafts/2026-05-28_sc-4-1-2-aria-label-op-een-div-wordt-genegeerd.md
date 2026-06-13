@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - aria-label op een div: wordt genegeerd
-image: "/images/blog/linkedin-series/sc-4-1-2-aria-label-op-een-div-wordt-genegeerd.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-aria-label-op-een-div-wordt-genegeerd.webp"
 ---
 
 Een developer wil een sectie een naam geven voor schermlezers. Plakt `aria-label="Zoekresultaten"` op een `<div>`.

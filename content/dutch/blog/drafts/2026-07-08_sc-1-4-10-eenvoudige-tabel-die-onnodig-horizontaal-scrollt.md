@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - eenvoudige tabel die onnodig horizontaal scrollt
-image: "/images/blog/linkedin-series/sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt.webp"
 ---
 
 Openingstijden. Twee kolommen. Dag en tijd.

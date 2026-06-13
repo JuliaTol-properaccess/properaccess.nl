@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - "ik kan het prima lezen"
-image: "/images/blog/linkedin-series/sc-1-4-3-ik-kan-het-prima-lezen.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-ik-kan-het-prima-lezen.webp"
 ---
 
 "Ik kan het prima lezen."

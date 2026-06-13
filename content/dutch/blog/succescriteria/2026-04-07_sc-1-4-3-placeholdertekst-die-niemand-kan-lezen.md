@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Contrast (minimum)
   - placeholdertekst die niemand kan lezen
-image: "/images/blog/linkedin-series/sc-1-4-3-placeholdertekst-die-niemand-kan-lezen.png"
+image: "/images/blog/linkedin-series/sc-1-4-3-placeholdertekst-die-niemand-kan-lezen.webp"
 ---
 
 "Voer hier je e-mailadres in"

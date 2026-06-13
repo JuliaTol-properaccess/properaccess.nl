@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Info en relaties
   - voortgangsbalken
-image: "/images/blog/linkedin-series/sc-1-3-1-voortgangsbalken.png"
+image: "/images/blog/linkedin-series/sc-1-3-1-voortgangsbalken.webp"
 ---
 
 Stap 2 van 4. Je ziet een balkje dat voor twee derde is gevuld. Je weet waar je bent in het proces.

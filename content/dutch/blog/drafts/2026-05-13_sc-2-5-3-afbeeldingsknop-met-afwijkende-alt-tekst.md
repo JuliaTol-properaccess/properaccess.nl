@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Label in naam
   - afbeeldingsknop met afwijkende alt-tekst
-image: "/images/blog/linkedin-series/sc-2-5-3-afbeeldingsknop-met-afwijkende-alt-tekst.png"
+image: "/images/blog/linkedin-series/sc-2-5-3-afbeeldingsknop-met-afwijkende-alt-tekst.webp"
 ---
 
 Een knop die een afbeelding is. Op de afbeelding staat "Inschrijven." De alt-tekst zegt: "Registreer voor de nieuwsbrief."

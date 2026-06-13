@@ -17,7 +17,7 @@ keywords:
   - AI audit
   - accessibility automation
   - digital accessibility AI
-image: "/images/blog/ai-serie-kickoff-en.png"
+image: "/images/blog/ai-serie-kickoff-en.webp"
 ---
 
 {{< case-section >}}

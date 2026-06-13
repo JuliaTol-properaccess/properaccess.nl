@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Paginatitel
   - single-page app die de titel niet bijwerkt
-image: "/images/blog/linkedin-series/sc-2-4-2-single-page-app-die-de-titel-niet-bijwerkt.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-single-page-app-die-de-titel-niet-bijwerkt.webp"
 ---
 
 Je navigeert van de homepage naar de contactpagina. De content verandert. De URL verandert. Het tabblad? Staat nog steeds "Home - Webshop."

@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - url als linktekst
-image: "/images/blog/linkedin-series/sc-2-4-4-url-als-linktekst.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-url-als-linktekst.webp"
 ---
 
 "h-t-t-p-s colon slash slash w-w-w dot example dot com slash rapport dash twee-duizend-vierentwintig dot p-d-f"

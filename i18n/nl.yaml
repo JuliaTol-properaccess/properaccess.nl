@@ -48,26 +48,6 @@
   translation: "We bouwen ook tools op maat voor onze klanten. Behoefte aan een specifieke tool of automatisering? Bespreek de mogelijkheden met Julia Tol."
 - id: tools_cta_phone
   translation: "Bel 06-28742275"
-- id: tools_lock_title
-  translation: "Alleen voor klanten"
-- id: tools_lock_text
-  translation: "Deze tool is exclusief beschikbaar voor klanten van Proper Access. Heb je al een toegangscode? Voer deze in hieronder."
-- id: tools_lock_placeholder
-  translation: "Toegangscode"
-- id: tools_lock_submit
-  translation: "Ontgrendel"
-- id: tools_lock_expired
-  translation: "Je proefperiode is verlopen. Neem contact op met Proper Access."
-- id: tools_lock_invalid
-  translation: "Ongeldige toegangscode. Controleer de code en probeer het opnieuw."
-- id: tools_lock_error
-  translation: "Kan verbinding niet maken. Probeer het later opnieuw."
-- id: tools_lock_footer_pre
-  translation: "Nog geen klant?"
-- id: tools_lock_footer_link
-  translation: "Neem contact op"
-- id: tools_lock_footer_post
-  translation: "voor meer informatie."
 - id: tools_promo_title
   translation: "Proper Access Toolsuite"
 - id: tools_promo_text1

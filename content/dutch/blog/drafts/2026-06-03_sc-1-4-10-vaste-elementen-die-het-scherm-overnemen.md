@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - vaste elementen die het scherm overnemen
-image: "/images/blog/linkedin-series/sc-1-4-10-vaste-elementen-die-het-scherm-overnemen.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-vaste-elementen-die-het-scherm-overnemen.webp"
 ---
 
 Je opent een webpagina en zoomt in tot 400%.

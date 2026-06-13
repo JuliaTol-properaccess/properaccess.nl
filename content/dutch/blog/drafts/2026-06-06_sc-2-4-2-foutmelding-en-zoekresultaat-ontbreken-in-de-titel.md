@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Paginatitel
   - foutmelding en zoekresultaat ontbreken in de titel
-image: "/images/blog/linkedin-series/sc-2-4-2-foutmelding-en-zoekresultaat-ontbreken-in-de-titel.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-foutmelding-en-zoekresultaat-ontbreken-in-de-titel.webp"
 ---
 
 Je vult een formulier in. Twee velden fout. Je drukt op Versturen. De pagina herlaadt.

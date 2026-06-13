@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Focusvolgorde
   - skiplink die de focus niet verplaatst
-image: "/images/blog/linkedin-series/sc-2-4-3-skiplink-die-de-focus-niet-verplaatst.png"
+image: "/images/blog/linkedin-series/sc-2-4-3-skiplink-die-de-focus-niet-verplaatst.webp"
 ---
 
 "Ga naar inhoud." Je drukt op Enter. De pagina scrollt naar de content. Mooi.

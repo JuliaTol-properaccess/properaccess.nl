@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - tekst afgesneden door een vaste hoogte
-image: "/images/blog/linkedin-series/sc-1-4-10-tekst-afgesneden-door-een-vaste-hoogte.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-tekst-afgesneden-door-een-vaste-hoogte.webp"
 ---
 
 Een banner van 200 pixels hoog. Past precies. Mooie headline, korte tekst, call-to-action.

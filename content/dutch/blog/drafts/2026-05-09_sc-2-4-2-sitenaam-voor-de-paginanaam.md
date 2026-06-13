@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Paginatitel
   - sitenaam vóór de paginanaam
-image: "/images/blog/linkedin-series/sc-2-4-2-sitenaam-voor-de-paginanaam.png"
+image: "/images/blog/linkedin-series/sc-2-4-2-sitenaam-voor-de-paginanaam.webp"
 ---
 
 Drie tabbladen open:

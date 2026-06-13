@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Reflow
   - viewport meta-tag die inzoomen blokkeert
-image: "/images/blog/linkedin-series/sc-1-4-10-viewport-meta-tag-die-inzoomen-blokkeert.png"
+image: "/images/blog/linkedin-series/sc-1-4-10-viewport-meta-tag-die-inzoomen-blokkeert.webp"
 ---
 
 Eén regel code. In de `<head>` van je website. En je bezoeker kan niet meer inzoomen.

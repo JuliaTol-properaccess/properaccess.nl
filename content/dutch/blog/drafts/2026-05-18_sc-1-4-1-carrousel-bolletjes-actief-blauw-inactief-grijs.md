@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Gebruik van kleur
   - carrousel-bolletjes: actief = blauw, inactief = grijs
-image: "/images/blog/linkedin-series/sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs.png"
+image: "/images/blog/linkedin-series/sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs.webp"
 ---
 
 Vijf bolletjes onder een carrousel. Het derde is blauw. De rest grijs.

@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Linkdoel (in context)
   - link naar een pdf zonder het te zeggen
-image: "/images/blog/linkedin-series/sc-2-4-4-link-naar-een-pdf-zonder-het-te-zeggen.png"
+image: "/images/blog/linkedin-series/sc-2-4-4-link-naar-een-pdf-zonder-het-te-zeggen.webp"
 ---
 
 "Algemene voorwaarden."

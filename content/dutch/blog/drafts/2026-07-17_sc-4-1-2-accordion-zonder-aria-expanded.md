@@ -16,7 +16,7 @@ keywords:
   - WCAG
   - Naam, rol, waarde
   - accordion zonder aria-expanded
-image: "/images/blog/linkedin-series/sc-4-1-2-accordion-zonder-aria-expanded.png"
+image: "/images/blog/linkedin-series/sc-4-1-2-accordion-zonder-aria-expanded.webp"
 ---
 
 Een accordion. Je klikt op "Meer informatie." De content verschijnt. Je klikt opnieuw. De content verdwijnt.

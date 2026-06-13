@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - custom videospeler met onbereikbare knoppen
-image: "/images/blog/linkedin-series/sc-2-1-1-custom-videospeler-met-onbereikbare-knoppen.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-custom-videospeler-met-onbereikbare-knoppen.webp"
 ---
 
 Een video op je website. Eigen vormgeving. Play-knop, volume, voortgangsbalk, fullscreen.

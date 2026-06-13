@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Focus zichtbaar
   - outline-offset
-image: "/images/blog/linkedin-series/sc-2-4-7-negatieve-offset.png"
+image: "/images/blog/linkedin-series/sc-2-4-7-negatieve-offset.webp"
 ---
 
 Een link met een donkere achtergrond. De focusindicator is er — een zwarte outline van 2 pixels. Maar `outline-offset: -4px` duwt die outline naar binnen. Onder de achtergrondkleur.

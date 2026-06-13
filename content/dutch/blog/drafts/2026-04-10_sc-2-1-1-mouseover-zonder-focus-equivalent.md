@@ -14,7 +14,7 @@ keywords:
   - WCAG
   - Toetsenbord
   - mouseover zonder focus-equivalent
-image: "/images/blog/linkedin-series/sc-2-1-1-mouseover-zonder-focus-equivalent.png"
+image: "/images/blog/linkedin-series/sc-2-1-1-mouseover-zonder-focus-equivalent.webp"
 ---
 
 Je hovert over een tekst. Een tooltip verschijnt. Handige extra informatie.
