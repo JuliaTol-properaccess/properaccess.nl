@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "URL als linktekst"
 date: 2026-06-13
 slug: "sc-2-4-4-url-als-linktekst"
