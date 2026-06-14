@@ -1,0 +1,13 @@
+{{/* TL;DR-capsule — front-loaded, citeerbaar antwoord voor AI-search.
+     Rendert dezelfde .article-tldr-component als blogposts (zie layouts/blog/single.html).
+     Vul het via `tldr:` in de front matter van een dienstpagina. */}}
+{{ with .Params.tldr }}
+<section class="hp-container">
+  <aside class="article-tldr" aria-labelledby="tldr-heading">
+    <h2 id="tldr-heading" class="article-tldr__title">In het kort</h2>
+    <div class="article-tldr__body">
+      {{ . | markdownify }}
+    </div>
+  </aside>
+</section>
+{{ end }}

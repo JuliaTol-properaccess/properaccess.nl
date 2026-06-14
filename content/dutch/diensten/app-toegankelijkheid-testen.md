@@ -7,6 +7,8 @@ date: 2026-03-29
 slug: "app-toegankelijkheid-testen"
 url: "/app-toegankelijkheid-testen/"
 description: "Wij testen mobiele apps op digitale toegankelijkheid. Handmatig, op echte apparaten, met VoiceOver en TalkBack. Zodat je app werkt voor iedereen."
+tldr: |
+  Wij testen mobiele apps handmatig op echte iPhones, iPads en Android-toestellen, met VoiceOver en TalkBack. We toetsen aan WCAG 2.1 in combinatie met de Europese norm EN 301 549, de standaard die ook de European Accessibility Act voor apps hanteert. Je krijgt een rapport per onderdeel met concrete oplossingen, zodat je app werkt voor iedereen en voldoet aan de wet.
 keywords:
   - app toegankelijkheid testen
   - mobiele app audit

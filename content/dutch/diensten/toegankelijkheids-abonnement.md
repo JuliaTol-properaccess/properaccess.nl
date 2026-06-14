@@ -7,6 +7,8 @@ date: 2026-02-28
 slug: "toegankelijkheids-abonnement"
 url: "/toegankelijkheids-abonnement/"
 description: "Meerjarig toegankelijkheidspartnerschap voor organisaties met meerdere websites en apps. Inclusief audits, trainingen voor devteams en webredactie, en onbeperkt toegang tot onze tools."
+tldr: |
+  Het toegankelijkheidsabonnement is een meerjarig partnerschap voor organisaties die 5 of meer websites of apps beheren. Je krijgt een vaste contactpersoon, een meerjarenplanning met periodieke audits en hertoetsen, trainingen voor je devteams en webredactie, en onbeperkt toegang tot onze tools. Zo blijft je hele portfolio toegankelijk zonder dat je er elke dag aan hoeft te denken.
 keywords:
   - toegankelijkheids abonnement
   - wcag meerjarenplan

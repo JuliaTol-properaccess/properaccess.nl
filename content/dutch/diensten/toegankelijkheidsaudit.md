@@ -9,6 +9,8 @@ lastmod: 2026-05-31
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
 description: "Een audit die verder gaat dan fouten oplijsten. Je krijgt concrete oplossingen, visueel onderbouwd, met code-voorbeelden. Zodat je team direct aan de slag kan."
+tldr: |
+  Een toegankelijkheidsaudit is een handmatig onderzoek waarin we je website of app toetsen aan WCAG 2.2, niveau AA. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.100 en duurt 3 tot 5 weken. Je weet daarna precies wat er nog niet voldoet aan de EAA of het BDTO en hoe je het oplost.
 keywords:
   - wcag
   - WCAG 2.2

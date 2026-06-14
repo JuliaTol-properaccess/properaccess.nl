@@ -19,11 +19,11 @@ keywords:
   - webshop
 ---
 
-Kort antwoord: waarschijnlijk wel. De European Accessibility Act (EAA) is op 28 juni 2025 van kracht geworden en geldt voor vrijwel alle webshops die producten of diensten verkopen aan consumenten.
+Kort antwoord: waarschijnlijk wel. De [European Accessibility Act (EAA)](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882) is op 28 juni 2025 van kracht geworden en geldt voor vrijwel alle webshops die producten of diensten verkopen aan consumenten.
 
 ## Wat is de EAA?
 
-De EAA (in Nederland omgezet als de Wet digitale toegankelijkheid bedrijfsleven) verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De wet is gebaseerd op de Europese norm EN 301 549, die verwijst naar WCAG 2.1 niveau AA.
+De EAA (in Nederland omgezet als de Wet digitale toegankelijkheid bedrijfsleven) verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De wet is gebaseerd op de [Europese norm EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), die verwijst naar [WCAG 2.1 niveau AA](https://www.w3.org/TR/WCAG21/).
 
 ## Voor wie geldt het?
 
@@ -45,7 +45,7 @@ Er is een beperkte uitzondering voor **micro-ondernemingen** (minder dan 10 werk
 
 ## Wat als je niet voldoet?
 
-De ACM (Autoriteit Consument & Markt) is aangewezen als toezichthouder. Ze kunnen:
+De [ACM (Autoriteit Consument & Markt)](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid) is aangewezen als toezichthouder. Ze kunnen:
 
 - **Waarschuwingen** geven
 - **Boetes** opleggen (de exacte hoogte hangt af van de overtreding en de omvang van het bedrijf)

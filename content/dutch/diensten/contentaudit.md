@@ -6,12 +6,17 @@ date: 2026-05-30
 slug: "contentaudit"
 url: "/contentaudit/"
 description: "Een contentaudit toetst alleen de content van je website. Voor overheidsorganisaties waar de techniek bij een externe leverancier ligt en je daar zelf niets aan kunt veranderen."
+tldr: |
+  Een contentaudit toetst alleen de content die je webredactie zelf beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's. We dekken 33 van de 55 succescriteria van WCAG 2.2, met een user story per bevinding zodat de impact leesbaar blijft. Bedoeld voor organisaties waar de techniek bij een externe leverancier ligt en je daar zelf niets aan kunt veranderen. Zo staat je rapport niet vol met bevindingen die je toch niet kunt oplossen.
 keywords:
   - contentaudit wcag
   - deelonderzoek toegankelijkheid
   - content audit toegankelijkheid
   - wcag content
 hide_from_overview: true
+
+service:
+  serviceType: "Contentaudit volgens WCAG 2.2"
 
 banner:
   title: "Contentaudit"
