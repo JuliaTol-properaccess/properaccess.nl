@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Focusindicator die opgaat in de achtergrond"
 date: 2026-06-14
 slug: "sc-2-4-7-focusindicator-die-opgaat-in-de-achtergrond"
