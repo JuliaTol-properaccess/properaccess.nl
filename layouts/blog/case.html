@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="case">
+  <article class="case{{ with .Params.case_layout }} case--{{ . }}{{ end }}">
     <!-- Hero -->
     <section class="case__hero">
       <div class="container">

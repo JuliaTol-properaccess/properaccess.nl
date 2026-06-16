@@ -939,6 +939,80 @@ html.dark .offerte-content .protected-overlay button {
   color: var(--color-dark);
 }
 
+/* Protected section binnen een case-pagina */
+.case__body .protected-overlay {
+  max-width: 480px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-light);
+}
+
+html.dark .case__body .protected-overlay {
+  background-color: var(--color-darkmode-light);
+  border-color: var(--color-darkmode-border);
+}
+
+.case__body .protected-overlay h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-dark);
+}
+
+html.dark .case__body .protected-overlay h3 {
+  color: var(--color-darkmode-text-dark);
+}
+
+.case__body .protected-overlay p {
+  color: var(--color-text);
+}
+
+html.dark .case__body .protected-overlay p {
+  color: var(--color-darkmode-text);
+}
+
+.case__body .protected-input {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 0.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+html.dark .case__body .protected-input {
+  border-color: var(--color-darkmode-border);
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.case__body .protected-overlay button {
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  background-color: var(--color-dark);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.case__body .protected-overlay button:hover {
+  opacity: 0.85;
+}
+
+html.dark .case__body .protected-overlay button {
+  background-color: #ffffff;
+  color: var(--color-dark);
+}
+
 /* ============================================
    LANDING PAGE COMPONENTEN — Stitch redesign
    ============================================ */
@@ -12642,6 +12716,19 @@ a.tool-link__href-url:hover {
   }
 }
 
+/* ── Case variant "krant": beeld bovenaan uitgelijnd, tekst op 16px ── */
+.case--krant .case-section__grid {
+  align-items: start;
+}
+
+.case--krant .case-section__text p,
+.case--krant .case-section__text li,
+.case--krant .case-section__prose p,
+.case--krant .case-section__prose li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 /* ── Case footer ── */
 
 .case__footer {
@@ -12794,7 +12881,7 @@ a.tool-link__href-url:hover {
 
 /* ── Prose fallback for posts without case-section shortcodes ── */
 
-.case__body > :not(.case-section) {
+.case__body > :not(.case-section):not(.protected-section) {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
@@ -12802,7 +12889,7 @@ a.tool-link__href-url:hover {
   padding-right: 1rem;
 }
 
-.case__body > .case-section ~ :not(.case-section) {
+.case__body > .case-section ~ :not(.case-section):not(.protected-section) {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
