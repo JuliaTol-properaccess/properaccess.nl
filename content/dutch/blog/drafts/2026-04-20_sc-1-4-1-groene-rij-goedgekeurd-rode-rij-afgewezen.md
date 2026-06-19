@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Groene rij = goedgekeurd, rode rij = afgewezen"
 date: 2026-06-19
 slug: "sc-1-4-1-groene-rij-goedgekeurd-rode-rij-afgewezen"
