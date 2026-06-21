@@ -13,7 +13,6 @@ tags:
   - "leveranciers"
   - "quickscan"
 description: "Quickscan van 9 veelgebruikte videospelers. Bij 3 vonden we binnen de testtijd geen bevindingen. Wat dat zegt over de markt en je inkoopkeuze."
-image: "/images/cases/bluebillywig/header.png"
 ---
 
 Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen grondige audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde het rapport vervolgens openbaar op hun knowledge hub.
