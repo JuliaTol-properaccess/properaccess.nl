@@ -2,7 +2,6 @@
 title: "Blue Billywig: negen videospelers naast elkaar"
 date: 2026-06-21
 slug: "case-bluebillywig-quickscan-9-videospelers"
-layout: "case"
 categories:
   - "cases"
 tags:
@@ -15,7 +14,7 @@ tags:
 description: "Quickscan van 9 veelgebruikte videospelers. Bij 3 vonden we binnen de testtijd geen bevindingen. Wat dat zegt over de markt en je inkoopkeuze."
 ---
 
-Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen grondige audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde het rapport vervolgens openbaar op hun knowledge hub.
+Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen grondige audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde [het rapport](https://www.properaccess.nl/rapporten/202512_videospelers/) vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
 
 ## Les 1: Bij drie van de negen vonden we geen bevindingen
 
