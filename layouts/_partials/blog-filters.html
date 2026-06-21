@@ -6,7 +6,7 @@
 */}}
 {{ $active := .activeSlug }}
 {{ $ctx := .Context }}
-{{ $order := slice "achtergrond_wcag" "wcag-uitgelegd" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" }}
+{{ $order := slice "achtergrond_wcag" "cases" "wcag-uitgelegd" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" }}
 
 <nav class="blog-filter" aria-label="{{ T "blog_filter_label" }}">
   {{ range $slug := $order }}
