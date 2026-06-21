@@ -23,9 +23,13 @@ De opdracht was om per speler 2 tot 3 uur uit te trekken voor een inzicht in de 
 
 Bij 3 van de 9 spelers vonden we binnen die tijd geen bevindingen: Blue Billywig zelf, OpenGemeenten en de Rijksoverheidsplayer PRO. Bij de andere 6 wel. Vimeo en YouTube, die je in de meeste websites tegenkomt, struikelden op kerncriteria zoals toetsenbordbediening, de aankondiging van pop-ups en zoomgedrag.
 
+![Negen gestileerde videospelers in een raster van 3 bij 3. Drie spelers zijn gemarkeerd met een groen accent als teken dat ze binnen onze testtijd geen bevindingen kregen. De overige zes blijven in neutraal grijs.](/images/cases/bluebillywig/bbw-les1-overzicht.png)
+
 **Wat je hieruit mee kunt nemen.** YouTube en Vimeo staan op miljoenen websites en zijn gemaakt door bedrijven met grote budgetten. Toch zien we bij beide veel toegankelijkheidsproblemen. Vraag bij elke speler die je inkoopt om een onafhankelijke toets, of doe hem zelf, voordat je een keuze maakt.
 
 ## Les 2: Drie pijnpunten die overal terugkwamen
+
+![Drie illustraties naast elkaar van toegankelijkheidsproblemen in videospelers: een afspeel-knop met een spraakbel die alleen het woord knop bevat, een toetsenbord met een rood verbod-symbool, en lichtgrijze tekst die wegvalt tegen een lichte achtergrond met een oog-symbool ernaast.](/images/cases/bluebillywig/bbw-les2-pijnpunten.png)
 
 Wat opviel was niet hoe verschillend de fouten waren, maar hoe vergelijkbaar. Drie thema's domineerden bij bijna alle spelers met bevindingen.
 
@@ -40,6 +44,8 @@ Wat opviel was niet hoe verschillend de fouten waren, maar hoe vergelijkbaar. Dr
 ## Les 3: Het verschil tussen speler en inhoud
 
 Een veelgehoorde verwarring: "onze video's hebben ondertiteling, dus we voldoen". Dat is alleen het deel dat met je content te maken heeft. De speler die de video afspeelt is een eigen verhaal. En in een ingebed product is dat verhaal niet van jou, maar van je leverancier.
+
+![Een videospeler-frame in tweeën gedeeld door een stippellijn. Links de speler-controls met een afspeel-knop, tijdlijn, instellingen-icoon en ondertitel-icoon, met daarboven het label speler. Rechts een persoon die spreekt met een ondertitel eronder, met daarboven het label inhoud.](/images/cases/bluebillywig/bbw-les3-speler-inhoud.png)
 
 Daarom beoordeelden we bewust alleen de speler, niet de inhoud. Een museum kiest zelf voor de ondertiteling, maar niet voor of de pauzeknop een label krijgt. Een gemeente schrijft zelf de aankondiging bij een raadsvergadering, maar bepaalt niet de focusvolgorde van het instellingenmenu.
 
@@ -56,6 +62,8 @@ Drie nuances horen erbij, zowel voor de lezer als voor de leveranciers zelf.
 **De spelers stonden op pagina's van bestaande klanten.** Een deel van de gevonden bevindingen kan dus voortkomen uit een verkeerde implementatie door die klant. Dat maakt het rapport niet minder waardevol. Het maakt het juist waardevoller voor de leverancier, want als dezelfde implementatiefout meermaals terugkomt, hoort die thuis in de toegankelijkheidsdocumentatie die hij meelevert aan zijn klanten.
 
 **Per speler hebben we 2 tot 3 uur getest.** Dat is genoeg om de structurele problemen boven tafel te krijgen, niet om elke instelling en elk pad uit te lopen. Een speler zonder bevindingen is in dit rapport een speler zonder bevindingen binnen die tijd, niet een speler waarvan is bewezen dat hij volledig toegankelijk is.
+
+![Een klembord met een audit-rapport en afgevinkte checklist, met daarnaast een analoge klok om de momentopname te benadrukken. Achter het hoofd-klembord staat een lichtgrijze, iets verschoven kopie, om te suggereren dat de software om het rapport heen blijft veranderen.](/images/cases/bluebillywig/bbw-les4-momentopname.png)
 
 **Wat je hieruit mee kunt nemen.** Werk je zelf als leverancier? Zie het rapport niet alleen als verkoopdocument, maar ook als feedback op je gebruiksaanwijzing. Komen bepaalde fouten vooral terug bij integraties, dan ligt daar een directe aanwijzing om ze in jouw documentatie scherper te beschrijven, of om ze met een verstandiger standaardinstelling al in je product te voorkomen.
 
