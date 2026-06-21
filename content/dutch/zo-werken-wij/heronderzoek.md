@@ -56,7 +56,7 @@ Een heronderzoek kost gemiddeld zo'n zes uur. Aan het einde krijg je een aangepa
 
 Een heronderzoek is alleen mogelijk binnen twaalf weken na oplevering van het oorspronkelijke rapport. Daarna zijn er meestal te veel wijzigingen op de website doorgevoerd (nieuwe content, nieuwe componenten, een nieuwe release) om de oude steekproef nog representatief te noemen. In dat geval is een volledig nieuwe audit nodig.
 
-Werk je naar een EAA- of Wdo-deadline toe? Plan het heronderzoek dan al in op het moment dat de oorspronkelijke audit start. Dan weet jouw team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
+Werk je naar een EAA- of BDTO-deadline toe? Plan het heronderzoek dan al in op het moment dat de oorspronkelijke audit start. Dan weet jouw team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
 
 {{< /section-full >}}
 
@@ -76,7 +76,7 @@ We schrijven dat allemaal eerlijk op. Het doel is geen mooi rapport, het doel is
 
 Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een heronderzoek laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
 
-Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de formele Wdo-toezichthouder die nog benoemd moet worden. Voor EAA-handhaving wordt op dit moment de Autoriteit Toegankelijkheid ingericht. Voor beide is een audit plus hercontrole de meest robuuste vorm van bewijs: geen losse zelfverklaringen, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
+Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de formele BDTO-toezichthouder die nog benoemd moet worden. Voor EAA-handhaving wordt op dit moment de Autoriteit Toegankelijkheid ingericht. Voor beide is een audit plus hercontrole de meest robuuste vorm van bewijs: geen losse zelfverklaringen, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
 
 {{< /section-full >}}
 

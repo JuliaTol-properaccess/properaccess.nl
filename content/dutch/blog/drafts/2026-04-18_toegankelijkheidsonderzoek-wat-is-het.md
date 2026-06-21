@@ -83,7 +83,7 @@ Nabespreking: samen het rapport doorlopen en vragen beantwoorden. Retest: na de 
 
 **Kies een volledige audit als:**
 
-- Je wettelijk verplicht bent (overheid onder Wdo, webshop onder EAA)
+- Je wettelijk verplicht bent (overheid onder het BDTO, webshop onder EAA)
 - Je een toegankelijkheidsverklaring wil publiceren
 - Je toe wil naar WCAG-conformiteit en daar bewijs voor nodig hebt
 - Je weet dat er issues zijn en een oplossingsplan wil

@@ -23,7 +23,7 @@ keywords:
   - audit
   - onderzoek
   - EAA audit
-  - Wdo audit
+  - BDTO audit
   - BDTO
 
 service:

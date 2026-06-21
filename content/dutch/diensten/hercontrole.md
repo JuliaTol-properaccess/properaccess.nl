@@ -26,7 +26,7 @@ trust:
   label: "Wat erin zit"
   names:
     - "Binnen 12 weken"
-    - "Ca. 6 uur werk"
+    - "Circa 6 uur werk"
     - "Bewijs voor status A"
     - "Eerlijke beoordeling"
     - "Per element rapport"
@@ -58,10 +58,10 @@ We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type he
 
 | Type audit | Hercontrole vanaf |
 | --- | --- |
-| [Contentaudit](/contentaudit/) | ca. € 300 |
-| [Techniekaudit](/techniekaudit/) | ca. € 600 |
-| [Systeemaudit](/techniekaudit/) | ca. € 600 |
-| [Volledige audit](/toegankelijkheidsaudit/) | ca. € 600 |
+| [Contentaudit](/contentaudit/) | circa € 300 |
+| [Techniekaudit](/techniekaudit/) | circa € 600 |
+| [Systeemaudit](/techniekaudit/) | circa € 600 |
+| [Volledige audit](/toegankelijkheidsaudit/) | circa € 600 |
 
 Indicatieve prijzen, exclusief 21% btw. De definitieve prijs hangt af van het aantal bevindingen, de omvang van wijzigingen op de site en of er nieuwe componenten zijn toegevoegd. We sturen een offerte na een korte mailwisseling.
 
@@ -71,7 +71,7 @@ Indicatieve prijzen, exclusief 21% btw. De definitieve prijs hangt af van het aa
 
 Een hercontrole is alleen mogelijk binnen twaalf weken na oplevering van het oorspronkelijke rapport. Daarna zijn er meestal te veel wijzigingen op de website doorgevoerd (nieuwe content, nieuwe componenten, een nieuwe release) om de oude steekproef nog representatief te noemen. In dat geval is een volledig nieuwe audit nodig.
 
-Werk je naar een EAA- of Wdo-deadline toe? Plan de hercontrole dan al in op het moment dat de oorspronkelijke audit start. Dan weet je team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
+Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het moment dat de oorspronkelijke audit start. Dan weet je team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
 
 {{< /section-full >}}
 
@@ -91,7 +91,7 @@ We schrijven dat allemaal eerlijk op. Het doel is geen mooi rapport, het doel is
 
 Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een hercontrole laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
 
-Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de formele Wdo-toezichthouder die nog benoemd moet worden. Voor EAA-handhaving wordt op dit moment de Autoriteit Toegankelijkheid ingericht. Voor beide is een audit plus hercontrole de meest robuuste vorm van bewijs: geen losse zelfverklaringen, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
+Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de formele BDTO-toezichthouder die nog benoemd moet worden. Voor EAA-handhaving wordt op dit moment de Autoriteit Toegankelijkheid ingericht. Voor beide is een audit plus hercontrole de meest robuuste vorm van bewijs: geen losse zelfverklaringen, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
 
 Lees ook over de [hercontrole-stap in ons werktraject](/zo-werken-wij/heronderzoek/) als je wilt zien hoe het in het bredere audit-proces past.
 

@@ -28,7 +28,7 @@ trust:
     - "Doel en deadline"
     - "Type audit"
     - "Templates en flows"
-    - "Wdo of EAA"
+    - "BDTO of EAA"
     - "Wie levert wat"
 ---
 

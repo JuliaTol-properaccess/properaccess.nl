@@ -11,15 +11,15 @@ tags:
   - "overheid"
   - "wdo"
   - "checklist"
-description: "Een concrete checklist voor overheidswebsites: wat moet je aftikken om aan WCAG 2.1 AA te voldoen onder het Wdo? Geen theorie, wel een werkbare lijst."
+description: "Een concrete checklist voor overheidswebsites: wat moet je aftikken om aan WCAG 2.1 AA te voldoen onder het BDTO? Geen theorie, wel een werkbare lijst."
 keywords:
   - WCAG checklist
   - WCAG richtlijnen overheid
-  - Wdo checklist
+  - BDTO checklist
   - toegankelijkheid overheidswebsite
   - digitale toegankelijkheid wet
-seo_title: "WCAG-checklist overheidswebsite (Wdo): wat moet je aftikken? | Proper Access"
-seo_description: "Praktische WCAG-checklist voor overheidswebsites onder het Wdo. Wat je moet testen, wat vaak misgaat en welke stappen je publicatie op orde krijgen."
+seo_title: "WCAG-checklist overheidswebsite (BDTO): wat moet je aftikken? | Proper Access"
+seo_description: "Praktische WCAG-checklist voor overheidswebsites onder het BDTO. Wat je moet testen, wat vaak misgaat en welke stappen je publicatie op orde krijgen."
 ---
 
 Overheidswebsites moeten sinds 2018 voldoen aan WCAG 2.1 niveau AA. Dat is geen richtlijn maar een verplichting uit het Besluit digitale toegankelijkheid overheid, onderdeel van de [Wet digitale overheid](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/).

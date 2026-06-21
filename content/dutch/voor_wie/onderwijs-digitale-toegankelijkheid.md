@@ -15,7 +15,6 @@ keywords:
   - Articulate toegankelijkheid
   - e-learning toegankelijkheid
   - EAA onderwijs
-  - Wdo onderwijs
   - BDTO onderwijs
 
 banner:
