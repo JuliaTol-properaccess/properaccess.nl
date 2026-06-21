@@ -12962,7 +12962,8 @@ a.tool-link__href-url:hover {
   color: #374151;
   line-height: 1.8;
   margin-bottom: 1rem;
-  padding-left: 2.5rem;
+  /* 1rem gutter (gedeeld met paragrafen) + 1em inspringing voor de lijst */
+  padding-left: 2rem;
 }
 
 .case__body > ul {
@@ -13811,6 +13812,24 @@ body.pa-chat--open {
     margin: 0;
     padding: 0;
     border: 0;
+  }
+
+  /* Hero links uitlijnen met de TOC-kolom: zelfde grid als de body,
+     zodat de hero-inhoud begint waar de inhoudsopgave begint.
+     Alleen voor artikelen die daadwerkelijk een TOC tonen. */
+  .case:has(.article-layout--with-toc) .case__hero .container {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 720px);
+    gap: 3rem;
+    justify-content: center;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .case:has(.article-layout--with-toc) .case__hero-inner {
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 }
 
