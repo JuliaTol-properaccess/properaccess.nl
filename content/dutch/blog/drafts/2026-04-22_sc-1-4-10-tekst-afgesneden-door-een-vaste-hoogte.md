@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Tekst afgesneden door een vaste hoogte"
 date: 2026-06-21
 slug: "sc-1-4-10-tekst-afgesneden-door-een-vaste-hoogte"
