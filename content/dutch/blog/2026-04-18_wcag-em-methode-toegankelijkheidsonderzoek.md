@@ -1,7 +1,6 @@
 ---
-draft: true
 title: "WCAG-EM: de officiële methode voor een toegankelijkheidsonderzoek"
-date: 2026-04-18
+date: 2026-06-21
 slug: "wcag-em-methode-toegankelijkheidsonderzoek"
 categories:
   - "achtergrond_wcag"
@@ -41,7 +40,7 @@ Daardoor zijn audits van verschillende partijen vergelijkbaar, en kan een hercon
 
 ## Wanneer is WCAG-EM verplicht?
 
-- **Overheidswebsites onder het Wdo** — de [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) moet gebaseerd zijn op een WCAG-EM-evaluatie
+- **Overheidswebsites onder het BDTO (Besluit Digitale Toegankelijkheid Overheid)** — de [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) moet gebaseerd zijn op een WCAG-EM-evaluatie
 - **Webshops en diensten onder de EAA** — voor een geldige conformiteitsbeoordeling
 - **Formele audits voor een A-verklaring** — zonder WCAG-EM geen status A in het Register van Toegankelijkheidsverklaringen
 
