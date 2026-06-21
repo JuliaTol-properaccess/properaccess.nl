@@ -12,7 +12,7 @@ tags:
   - "wordpress"
 aliases:
   - /eaa-onderwijs-stappenplan-toegankelijke-leeromgeving/
-description: "Wat moet jouw onderwijsinstelling doen voor de European Accessibility Act? Een concreet stappenplan voor Moodle, Canvas en WordPress — van mini-audit tot borging."
+description: "Wat moet jouw onderwijsinstelling doen voor de European Accessibility Act? Een concreet stappenplan voor Moodle, Canvas en WordPress, van mini-audit tot borging."
 ---
 
 Je leeromgeving draait, je docenten zijn enthousiast over digitaal onderwijs en je studenten loggen dagelijks in op Moodle of Canvas. Maar kun je garanderen dat een blinde student die toets kan maken? Of dat een student met een motorische beperking door je WordPress-site kan navigeren om zich in te schrijven voor een minor?
@@ -26,7 +26,7 @@ In dit artikel neem ik je mee door de zes stappen die we bij Proper Access doorl
 Kort antwoord: waarschijnlijk wel.
 
 - **Publiek gefinancierde instellingen** (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen al langer onder het Besluit digitale toegankelijkheid overheid (BDTO). WCAG 2.1 niveau AA is hier al verplicht.
-- **Particuliere onderwijsinstellingen** vallen onder de EAA zodra ze digitale diensten aanbieden aan studenten. Denk aan online inschrijving, digitaal leermateriaal, toetsen via een LMS.
+- **Particuliere onderwijsinstellingen** vallen onder de EAA zodra ze digitale diensten aanbieden aan studenten. Bijvoorbeeld online inschrijving, digitaal leermateriaal, toetsen via een LMS.
 - Het **VN-verdrag Handicap** verplicht inclusief onderwijs -- ook digitaal.
 
 De praktijk: als studenten bij jou digitaal lesstof raadplegen, toetsen maken of zich inschrijven, dan is toegankelijkheid verplicht. En dat geldt voor vrijwel elke onderwijsinstelling in Nederland.
@@ -96,7 +96,7 @@ Bij onderwijsinstellingen auditen we per platform:
 
 We weten bovendien of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
 
-_Indicatieve prijzen: een website-audit start vanaf ca. 2.100 euro, een leeromgeving (Moodle/Canvas) vanaf ca. 3.600 euro._
+_Indicatieve prijzen: een website-audit start vanaf circa 2.100 euro, een leeromgeving (Moodle/Canvas) vanaf circa 3.600 euro._
 
 ### Stap 4: Prioriteer en plan de verbeteringen
 
@@ -123,7 +123,7 @@ Een paar tips uit de praktijk:
 - **PDF's:** Maak een handleiding voor docenten. Hoe voeg je koppenstructuur toe in Word? Hoe schrijf je alt-teksten bij diagrammen? Hoe exporteer je een toegankelijke PDF? Dit hoeft geen ingewikkeld document te zijn -- een pagina met de vijf belangrijkste regels volstaat.
 - **Video:** Automatische ondertiteling (bijvoorbeeld via Panopto of YouTube) is een goed startpunt, maar moet altijd handmatig worden gecorrigeerd. Vooral vaktermen en eigennamen gaan fout.
 
-**Hoe wij hierbij helpen:** Vragen over het rapport mag je na de audit onbeperkt stellen — over een bevinding die niet duidelijk is, of over de interpretatie van een richtlijn. Zonder meerkosten. Je IT-afdeling loopt vast op een Moodle-probleem en wil dat we daadwerkelijk meedenken bij de oplossing? Dan werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur) — zo betaal je alleen voor de uren die je gebruikt. In beide gevallen spreek je direct met de auditor die je rapport heeft geschreven. Geen accountmanagers, geen tussenlaag.
+**Hoe wij hierbij helpen:** Vragen over het rapport mag je na de audit onbeperkt stellen: over een bevinding die niet duidelijk is, of over de interpretatie van een richtlijn. Zonder meerkosten. Je IT-afdeling loopt vast op een Moodle-probleem en wil dat we daadwerkelijk meedenken bij de oplossing? Dan werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur), zo betaal je alleen voor de uren die je gebruikt. In beide gevallen spreek je direct met de auditor die je rapport heeft geschreven. Geen accountmanagers, geen tussenlaag.
 
 We bieden daarnaast een content-audit aan: we auditen een steekproef van jullie documenten, video's en LMS-pagina's en leveren concrete richtlijnen op die je hele organisatie kan toepassen. Handig als je honderden docenten hebt die content produceren.
 

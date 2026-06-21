@@ -9,7 +9,7 @@ tags:
   - "2-4-3"
   - "focus"
   - "tabvolgorde"
-description: "Focus springt onverwacht door de pagina — WCAG 2.4.3 Focusvolgorde (post 1/11)"
+description: "Focus springt onverwacht door de pagina: WCAG 2.4.3 Focusvolgorde (post 1/11)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -34,6 +34,6 @@ Dit speelt bij elke layout waar CSS de visuele volgorde verandert:
 
 **De fix:** pas de HTML-volgorde aan zodat die overeenkomt met de visuele layout.
 
-**De test:** tab door je pagina. Volgt de focus de visuele volgorde — van links naar rechts, van boven naar beneden? Test ook op smalle schermen: responsive layouts veranderen de visuele volgorde, maar de HTML-volgorde blijft gelijk.
+**De test:** tab door je pagina. Volgt de focus de visuele volgorde, van links naar rechts, van boven naar beneden? Test ook op smalle schermen: responsive layouts veranderen de visuele volgorde, maar de HTML-volgorde blijft gelijk.
 
 Het hoeft niet pixel-perfect overeen te komen. Maar het mag niet verwarrend zijn. Als je niet kunt voorspellen waar de focus naartoe gaat, is het een probleem.

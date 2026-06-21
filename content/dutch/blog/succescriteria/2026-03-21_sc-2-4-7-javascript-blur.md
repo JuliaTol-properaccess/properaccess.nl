@@ -10,7 +10,7 @@ tags:
   - "javascript"
   - "focus"
   - "toetsenbord"
-description: "JavaScript dat de focus actief verwijdert — WCAG 2.4.7 Focus zichtbaar (post 5/7)"
+description: "JavaScript dat de focus actief verwijdert: WCAG 2.4.7 Focus zichtbaar (post 5/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

@@ -32,9 +32,9 @@ Tools zoals axe of WAVE scannen je pagina's op technische fouten: ontbrekende al
 
 ### Handmatig testen
 De overige 70% vind je alleen door handmatig te testen. Een auditor navigeert door je website met:
-- **Toetsenbord alleen** — kan je alles bereiken en bedienen zonder muis?
-- **Schermlezer** (NVDA, VoiceOver, JAWS) — wordt alle informatie correct voorgelezen?
-- **Zoom en tekstaanpassingen** — breekt de layout bij 200% of 400% zoom?
+- **Toetsenbord alleen**: kan je alles bereiken en bedienen zonder muis?
+- **Schermlezer** (NVDA, VoiceOver, JAWS): wordt alle informatie correct voorgelezen?
+- **Zoom en tekstaanpassingen**: breekt de layout bij 200% of 400% zoom?
 - **Verschillende browsers en apparaten**
 
 Daarnaast beoordeelt de auditor zaken als taalgebruik, foutafhandeling, consistentie van navigatie en de logische structuur van je pagina's.
@@ -63,7 +63,7 @@ De doorlooptijd is inclusief een nabespreking waarin we het rapport samen doorlo
 
 ## Wat kost het?
 
-De kosten hangen af van het type audit en de complexiteit. Voor de meeste websites ligt de prijs tussen de € 2.100 en € 4.500. Een volledige audit van een gemiddeld-complexe website kost bij ons ca. € 3.600.
+De kosten hangen af van het type audit en de complexiteit. Voor de meeste websites ligt de prijs tussen de € 2.100 en € 4.500. Een volledige audit van een gemiddeld-complexe website kost bij ons circa € 3.600.
 
 Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet wat je moet fixen. En zonder rapport kun je niet aantonen dat je aan de wet voldoet.
 
@@ -74,4 +74,4 @@ Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet
 - Als je een **toegankelijkheidsverklaring** moet publiceren
 - Als je na een eerdere audit **verbeteringen hebt doorgevoerd** en wilt weten of je nu voldoet (retest)
 
-Wil je eerst een globaal beeld? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je waar je staat voordat je investeert in een volledige audit.
+Wil je eerst een globaal beeld? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je waar je staat voordat je investeert in een volledige audit.

@@ -37,7 +37,7 @@ Deze tools scannen je pagina en rapporteren technische fouten:
 ### Lighthouse (ingebouwd in Chrome)
 - Open DevTools → Lighthouse → Accessibility
 - Geeft een score van 0-100
-- Let op: een score van 100 betekent niet dat je website toegankelijk is — het betekent alleen dat de tool geen fouten heeft gevonden
+- Let op: een score van 100 betekent niet dat je website toegankelijk is. Het betekent alleen dat de tool geen fouten heeft gevonden
 
 ### Wat vinden deze tools wel?
 - Ontbrekende alt-teksten
@@ -96,6 +96,6 @@ Dit is wat je nodig hebt als je moet aantonen dat je voldoet aan de wet, of als 
 
 ## Onze aanbeveling
 
-Begin met stap 1 en 2 — die kosten niets en geven je een eerste beeld. Als je serieus aan de slag wilt, laat dan een professionele audit uitvoeren.
+Begin met stap 1 en 2, die kosten niets en geven je een eerste beeld. Als je serieus aan de slag wilt, laat dan een professionele audit uitvoeren.
 
-Wil je een snelle indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Een senior auditor bekijkt je website en geeft je een overzicht van de belangrijkste punten.
+Wil je een snelle indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Een senior auditor bekijkt je website en geeft je een overzicht van de belangrijkste punten.

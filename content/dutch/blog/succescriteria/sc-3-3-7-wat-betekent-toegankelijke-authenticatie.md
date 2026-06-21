@@ -5,7 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags:
   - "3-3-7"
-description: "WCAG 3.3.8 vereist toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze implementeert."
+description: "WCAG 3.3.8 vraagt om toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze toepast."
 aliases:
   - /sc-3-3-7-wat-betekent-toegankelijke-authenticatie/
 ---
@@ -14,7 +14,7 @@ Je wilt inloggen op een website. Eerst moet je een wachtwoord van zestien tekens
 
 Voor de meeste mensen is dat vervelend. Voor iemand met dyslexie, een visuele beperking of een cognitieve beperking kan het een onoverkomelijke drempel zijn.
 
-**WCAG succescriterium 3.3.8** (Accessible Authentication) eist dat authenticatiemethoden geen onnodige cognitieve functietests opleggen, tenzij er een alternatief beschikbaar is.
+**WCAG succescriterium 3.3.8** (Accessible Authentication) vraagt dat authenticatiemethoden geen onnodige cognitieve functietests opleggen, tenzij er een alternatief beschikbaar is.
 
 ## Wat is een cognitieve functietest?
 
@@ -34,7 +34,7 @@ De kern van het criterium: als je een cognitieve functietest gebruikt voor authe
 - **Kopieer-plakken toestaan** in wachtwoordvelden, zodat wachtwoordmanagers werken
 - **Een alternatieve authenticatiemethode** zoals een magische link via e-mail, een sms-code, of biometrische authenticatie (vingerafdruk, gezichtsherkenning)
 - **Passkeys** -- de moderne vervanging van wachtwoorden, ondersteund door alle grote browsers
-- **OAuth/SSO** -- inloggen via een bestaand account (Google, Apple, etc.)
+- **OAuth/SSO** -- inloggen via een bestaand account (Google, Apple, enzovoort)
 
 ## Wat is het verschil tussen 3.3.7 en 3.3.8?
 
@@ -61,7 +61,7 @@ Voor de meeste organisaties die AA-conformiteit nastreven, is 3.3.8 het relevant
 | Passkeys (WebAuthn) | Zeer laag | Uitstekend |
 | Magische link via e-mail | Laag | Goed |
 | Biometrie (vingerafdruk/gezicht) | Geen | Uitstekend |
-| OAuth/SSO (inloggen via Google etc.) | Laag | Goed |
+| OAuth/SSO (inloggen via Google enzovoort) | Laag | Goed |
 | reCAPTCHA v3 (onzichtbaar, score-based) | Geen | Uitstekend |
 
 ## Wat kun je als webredacteur of manager doen?

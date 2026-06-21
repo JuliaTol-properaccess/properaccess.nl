@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "1-4-3"
   - "contrast"
-description: "Lichtgrijze tekst op een witte achtergrond — WCAG 1.4.3 Contrast (minimum) (post 1/10)"
+description: "Lichtgrijze tekst op een witte achtergrond: WCAG 1.4.3 Contrast (minimum) (post 1/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

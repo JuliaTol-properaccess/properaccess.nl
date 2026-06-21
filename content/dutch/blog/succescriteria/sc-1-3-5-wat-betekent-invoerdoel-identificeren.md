@@ -6,14 +6,14 @@ categories:
 tags:
   - "1-3-5"
   - "formulier"
-description: "WCAG 1.3.5 vereist dat invoervelden een duidelijk doel hebben via het autocomplete-attribuut. Leer hoe je formulieren slim en toegankelijk maakt."
+description: "WCAG 1.3.5 vraagt dat invoervelden een duidelijk doel hebben via het autocomplete-attribuut. Leer hoe je formulieren slim en toegankelijk maakt."
 aliases:
   - /sc-1-3-5-wat-betekent-invoerdoel-identificeren/
 ---
 
 Stel je voor: je vult voor de zoveelste keer een contactformulier in. Naam, e-mail, telefoonnummer, adres. Je browser kent die gegevens allang, maar het formulier werkt niet mee. Je moet alles handmatig typen. Irritant als je haast hebt, maar een echt probleem als je een motorische beperking hebt en elke toetsaanslag moeite kost.
 
-**WCAG succescriterium 1.3.5** (Identify Input Purpose) eist dat invoervelden die persoonlijke gegevens verzamelen, een duidelijk doel hebben dat browsers en hulpsoftware kunnen herkennen. In de praktijk betekent dat: gebruik het `autocomplete`-attribuut.
+**WCAG succescriterium 1.3.5** (Identify Input Purpose) vraagt dat invoervelden die persoonlijke gegevens verzamelen, een duidelijk doel hebben dat browsers en hulpsoftware kunnen herkennen. In de praktijk betekent dat: gebruik het `autocomplete`-attribuut.
 
 ## Waarom is dit belangrijk?
 
@@ -51,7 +51,7 @@ De volledige lijst staat in de [HTML-specificatie](https://html.spec.whatwg.org/
 ## Veelgemaakte fouten
 
 - **Helemaal geen autocomplete-attribuut.** Dit is veruit de meest voorkomende fout. Het kost een paar seconden om toe te voegen, maar wordt standaard vergeten.
-- **Verkeerde waarden.** `autocomplete="on"` is niet genoeg -- je moet de specifieke waarde opgeven (`email`, `tel`, etc.).
+- **Verkeerde waarden.** `autocomplete="on"` is niet genoeg -- je moet de specifieke waarde opgeven (`email`, `tel`, en zo verder).
 - **Autocomplete uitgeschakeld.** `autocomplete="off"` op velden die het wel zouden moeten ondersteunen. Sommige browsers negeren dit overigens bewust.
 
 ## Voorbeeld

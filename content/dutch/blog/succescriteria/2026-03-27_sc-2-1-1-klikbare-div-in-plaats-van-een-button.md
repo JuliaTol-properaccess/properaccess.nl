@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "2-1-1"
   - "toetsenbord"
-description: "Klikbare div in plaats van een button — WCAG 2.1.1 Toetsenbord (post 1/9)"
+description: "Klikbare div in plaats van een button: WCAG 2.1.1 Toetsenbord (post 1/9)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

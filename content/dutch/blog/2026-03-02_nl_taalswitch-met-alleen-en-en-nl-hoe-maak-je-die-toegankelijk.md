@@ -37,7 +37,7 @@ Laten we uitzoeken wat hier fout gaat en hoe je het wél goed doet.
 
 Dit is waar **SC 2.5.3 Label in Name (niveau A)** om de hoek komt kijken. Die regel zegt: **als er zichtbare tekst op een knop of link staat, moet die tekst onderdeel zijn van de toegankelijke naam**.
 
-Waarom? Mensen die spraaksturing gebruiken (denk aan Dragon NaturallySpeaking) navigeren door te zeggen wat ze zien. Als ze "EN" zien staan, zeggen ze "klik EN". De software zoekt dan naar een element met "EN" in de toegankelijke naam.
+Waarom? Mensen die spraaksturing gebruiken (zoals Dragon NaturallySpeaking) navigeren door te zeggen wat ze zien. Als ze "EN" zien staan, zeggen ze "klik EN". De software zoekt dan naar een element met "EN" in de toegankelijke naam.
 
 Maar omdat `aria-label` de tekst van beide span-elementen overschrijft, is er geen match. De gebruiker kan het element niet activeren door de zichtbare tekst te zeggen.
 
@@ -48,7 +48,7 @@ Maar omdat `aria-label` de tekst van beide span-elementen overschrijft, is er ge
 
 Stel, je bent op de Nederlandse versie van de site. Visueel zie je misschien een sliding indicator bij "NL". Maar een schermlezer-gebruiker weet niet welke taal momenteel actief is. De link heeft geen state die dat aangeeft.
 
-Dit raakt aan **SC 4.1.2**: de "Value" — de huidige staat — moet programmatisch bepaalbaar zijn.
+Dit raakt aan **SC 4.1.2**: de "Value", de huidige staat, moet programmatisch bepaalbaar zijn.
 
 ## Snelle oplossing: Eén link met een beter aria-label
 
@@ -92,11 +92,11 @@ Dit is lang niet de enige oplossing!
 
 ## Samenvatting: checklist voor toegankelijke taalwisselaars
 
-- **Geen aria-hidden op zichtbare tekst** — de zichtbare tekst moet onderdeel zijn van de toegankelijke naam (SC 2.5.3)
-- **Elke link heeft een toegankelijke naam** — geen lege aria-labels (SC 4.1.2)
-- **Gebruik links, geen knoppen** — taalwisselen is navigatie wanneer je naar een andere pagina wordt gestuurd
-- **Test met spraaksturing** — kan je "klik EN" zeggen en wordt de link geactiveerd?
-- **Test met een schermlezer** — wordt de huidige taal aangekondigd?
+- **Geen aria-hidden op zichtbare tekst**: de zichtbare tekst moet onderdeel zijn van de toegankelijke naam (SC 2.5.3)
+- **Elke link heeft een toegankelijke naam**: geen lege aria-labels (SC 4.1.2)
+- **Gebruik links, geen knoppen**: taalwisselen is navigatie wanneer je naar een andere pagina wordt gestuurd
+- **Test met spraaksturing**: kan je "klik EN" zeggen en wordt de link geactiveerd?
+- **Test met een schermlezer**: wordt de huidige taal aangekondigd?
 
 ## Tot slot
 

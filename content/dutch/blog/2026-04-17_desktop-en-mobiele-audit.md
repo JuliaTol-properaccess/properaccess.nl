@@ -15,20 +15,20 @@ keywords:
   - toegankelijkheidsaudit
 ---
 
-Kort antwoord: een goede audit test altijd op meerdere apparaten. Maar je hoeft niet apart te betalen voor een "desktop-audit" en een "mobiele audit" — bij een professionele audit zit dat er gewoon in.
+Kort antwoord: een goede audit test altijd op meerdere apparaten. Maar je hoeft niet apart te betalen voor een "desktop-audit" en een "mobiele audit". Bij een professionele audit zit dat er gewoon in.
 
 ## Waarom is testen op mobiel belangrijk?
 
 Meer dan de helft van het webverkeer komt van mobiele apparaten. En op mobiel zijn de toegankelijkheidsproblemen vaak anders dan op desktop:
 
 ### Touch targets
-Knoppen en links die op desktop prima klikbaar zijn, kunnen op mobiel te klein zijn om aan te tikken. WCAG 2.2 schrijft een minimum van 24x24 CSS-pixels voor (succescriterium 2.5.8).
+Knoppen en links die op desktop prima klikbaar zijn, kunnen op mobiel te klein zijn om aan te tikken. De richtlijn vraagt een minimum van 24x24 CSS-pixels (succescriterium 2.5.8).
 
 ### Zoom en reflow
 Op mobiel is het nog belangrijker dat content goed meebeweegt bij zoom. Als tekst bij 200% zoom buiten het scherm valt, kan een bezoeker die niet lezen.
 
 ### Schermlezer-gedrag
-VoiceOver op iOS en TalkBack op Android gedragen zich anders dan NVDA of JAWS op desktop. Wat op desktop werkt, kan op mobiel kapot zijn — en andersom.
+VoiceOver op iOS en TalkBack op Android gedragen zich anders dan NVDA of JAWS op desktop. Wat op desktop werkt, kan op mobiel kapot zijn, en andersom.
 
 ### Oriëntatie
 Sommige bezoekers hebben hun apparaat in een houder gemonteerd en kunnen het niet draaien. Je website mag niet vastzetten in portret of landschap.
@@ -40,13 +40,13 @@ Complexe gebaren (vegen, pinch-to-zoom op kaarten, drag-and-drop) moeten ook met
 
 | Test                              | Desktop | Mobiel |
 | --------------------------------- | ------- | ------ |
-| Toetsenbordnavigatie              | Ja      | —      |
-| Schermlezer (NVDA/JAWS)           | Ja      | —      |
+| Toetsenbordnavigatie              | Ja      | -      |
+| Schermlezer (NVDA/JAWS)           | Ja      | -      |
 | Schermlezer (VoiceOver)           | Ja      | Ja     |
-| Zoom tot 400%                     | Ja      | —      |
+| Zoom tot 400%                     | Ja      | -      |
 | Responsive gedrag                 | Ja      | Ja     |
-| Touch targets                     | —       | Ja     |
-| Oriëntatie                        | —       | Ja     |
+| Touch targets                     | -       | Ja     |
+| Oriëntatie                        | -       | Ja     |
 
 ## Wanneer is extra mobiel testen nodig?
 
@@ -65,4 +65,4 @@ Bij de meeste aanbieders zit mobiel testen inbegrepen in de standaard audit. Dat
 
 Als je website een aparte native app heeft (iOS of Android), is dat wél een apart traject.
 
-Wil je weten of jouw website op alle apparaten werkt? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan geven we je een eerste beeld.
+Wil je weten of jouw website op alle apparaten werkt? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan geven we je een eerste beeld.

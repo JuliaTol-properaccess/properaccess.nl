@@ -28,19 +28,19 @@ aliases:
 
 # Non-text Contrast: waarom je formuliervelden, knoppen en iconen onzichtbaar zijn voor slechtzienden (WCAG 1.4.11)
 
-Je staat met je telefoon in de felle zon voor een museum. Je wilt tickets kopen, maar het formulier op de website is nauwelijks zichtbaar. Invoervelden met lichtgrijze randjes, knoppen die opgaan in de achtergrond — je tuurt, draait je scherm, houdt je hand erboven. Uiteindelijk geef je het op en sluit je aan bij de rij voor de kassa.
+Je staat met je telefoon in de felle zon voor een museum. Je wilt tickets kopen, maar het formulier op de website is nauwelijks zichtbaar. Invoervelden met lichtgrijze randjes, knoppen die opgaan in de achtergrond: je tuurt, draait je scherm, houdt je hand erboven. Uiteindelijk geef je het op en sluit je aan bij de rij voor de kassa.
 
-Herkenbaar? Dat is precies wat SC 1.4.11 probeert te voorkomen. Niet alleen in de zon, maar ook voor de honderdduizenden mensen die door een visuele beperking dagelijks tegen hetzelfde probleem aanlopen — ongeacht het weer.
+Herkenbaar? Dat is precies wat SC 1.4.11 probeert te voorkomen. Niet alleen in de zon, maar ook voor de honderdduizenden mensen die door een visuele beperking dagelijks tegen hetzelfde probleem aanlopen, ongeacht het weer.
 
-Welkom bij WCAG succescriterium 1.4.11 Non-text Contrast — het criterium dat designers laat huilen en developers doet fronsen. Maar ook het criterium dat het verschil maakt tussen een formulier dat iedereen kan gebruiken en eentje waar mensen bij wegklikken omdat ze niet eens zien waar ze moeten typen.
+Welkom bij WCAG succescriterium 1.4.11 Non-text Contrast, het criterium dat designers laat huilen en developers doet fronsen. Maar ook het criterium dat het verschil maakt tussen een formulier dat iedereen kan gebruiken en eentje waar mensen bij wegklikken omdat ze niet eens zien waar ze moeten typen.
 
 ## Waarom dit belangrijk is (ook voor jouw project)
 
 Sinds juni 2025 is de European Accessibility Act (EAA) van kracht. WCAG 2.1 niveau AA is de norm, en SC 1.4.11 valt daar volledig onder. Dat betekent: als je website in de EU diensten aanbiedt, moet je hieraan voldoen.
 
-Maar belangrijker nog: **in Nederland hebben ruim 300.000 mensen een visuele beperking**. Voor hen is lichtgrijs op wit vaak niet te onderscheiden — er is simpelweg te weinig verschil in helderheid. Geen randje zien = niet weten waar het invoerveld begint. Geen focus-indicator zien = verdwalen in je formulier.
+Maar belangrijker nog: **in Nederland hebben ruim 300.000 mensen een visuele beperking**. Voor hen is lichtgrijs op wit vaak niet te onderscheiden: er is simpelweg te weinig verschil in helderheid. Geen randje zien = niet weten waar het invoerveld begint. Geen focus-indicator zien = verdwalen in je formulier.
 
-> **Julia: Even een belangrijk onderscheid:** SC 1.4.11 gaat over _contrast_ — het helderheidsverschil tussen twee kleuren. Kleurenblindheid (het niet kunnen onderscheiden van bepaalde kleuren zoals rood en groen) valt onder een ander criterium: SC 1.4.1 Use of Color. Contrast en kleur zijn twee verschillende dingen.
+> **Julia: Even een belangrijk onderscheid:** SC 1.4.11 gaat over _contrast_, het helderheidsverschil tussen twee kleuren. Kleurenblindheid (het niet kunnen onderscheiden van bepaalde kleuren zoals rood en groen) valt onder een ander criterium: SC 1.4.1 Use of Color. Contrast en kleur zijn twee verschillende dingen.
 
 En het gaat niet alleen om slechtzienden. Denk ook aan mensen met:
 
@@ -52,7 +52,7 @@ En het gaat niet alleen om slechtzienden. Denk ook aan mensen met:
 
 ## Wat zegt SC 1.4.11 precies?
 
-Het succescriterium eist een **contrastverhouding van minimaal 3:1** tussen:
+Het succescriterium vraagt een **contrastverhouding van minimaal 3:1** tussen:
 
 1. **UI-componenten** en hun aangrenzende kleuren
 2. **Grafische objecten** die nodig zijn om de content te begrijpen
@@ -63,22 +63,22 @@ Laten we beide categorieën uitpluizen.
 
 Dit gaat over ALLES waarmee je bezoekers interactie hebben:
 
-- **Invoervelden** — de rand die het veld afbakent
-- **Knoppen** — als de knop alleen een icoon heeft, moet het voldoende contrast hebben
-- **Checkboxes en radiobuttons** — hun omtrek
-- **Toggle switches** — de aan/uit-status moet herkenbaar zijn
-- **Sliders** — de positie van de thumb
-- **Tabs** — de actieve tab moet zich onderscheiden
-- **Focus-indicatoren** — die blauwe outline die je vaak weghaalt (niet doen!)
+- **Invoervelden**: de rand die het veld afbakent
+- **Knoppen**: als de knop alleen een icoon heeft, moet het voldoende contrast hebben
+- **Checkboxes en radiobuttons**: hun omtrek
+- **Toggle switches**: de aan/uit-status moet herkenbaar zijn
+- **Sliders**: de positie van de thumb
+- **Tabs**: de actieve tab moet zich onderscheiden
+- **Focus-indicatoren**: die blauwe outline die je vaak weghaalt (niet doen!)
 
 ### 2. Grafische objecten: iconen en visualisaties die betekenis dragen
 
-Denk aan:
+Bijvoorbeeld:
 
-- **Iconen zonder tekst** — bijvoorbeeld een winkelwagentje, een zoekloep, een hamburger-menu
-- **Grafieklijnen en -segmenten** — de lijnen in een lijndiagram, de segmenten in een taartdiagram
-- **Kaartmarkeringen** — pinnetjes op een Google Map
-- **Diagrammen** — stroomschema's, organisatieschema's
+- **Iconen zonder tekst**: bijvoorbeeld een winkelwagentje, een zoekloep, een hamburger-menu
+- **Grafieklijnen en -segmenten**: de lijnen in een lijndiagram, de segmenten in een taartdiagram
+- **Kaartmarkeringen**: pinnetjes op een Google Map
+- **Diagrammen**: stroomschema's, organisatieschema's
 
   **Niet van toepassing op:**
 
@@ -117,7 +117,7 @@ input {
 }
 ```
 
-**Waarom dit fout gaat:** `#ccc` (RGB 204, 204, 204) op wit heeft een contrastverhouding van slechts 1,6:1. Voor slechtzienden is dit vrijwel onzichtbaar — er is simpelweg te weinig helderheidsverschil om de rand waar te nemen.
+**Waarom dit fout gaat:** `#ccc` (RGB 204, 204, 204) op wit heeft een contrastverhouding van slechts 1,6:1. Voor slechtzienden is dit vrijwel onzichtbaar: er is simpelweg te weinig helderheidsverschil om de rand waar te nemen.
 
 **De oplossing:**
 
@@ -141,7 +141,7 @@ input {
 }
 ```
 
-**Pro-tip:** `#767676` is de lichtste grijstint die 4,5:1 haalt op wit — de eis voor tekst (SC 1.4.3). Voor UI-componenten (SC 1.4.11) mag je lichter: `#949494` haalt net de 3:1. Maar `#767676` is de veilige keuze die aan beide eisen voldoet.
+**Pro-tip:** `#767676` is de lichtste grijstint die 4,5:1 haalt op wit, de eis voor tekst (SC 1.4.3). Voor UI-componenten (SC 1.4.11) mag je lichter: `#949494` haalt net de 3:1. Maar `#767676` is de veilige keuze die aan beide eisen voldoet.
 
 ### Fout 2: Custom focus-indicatoren die bijna onzichtbaar zijn
 
@@ -349,7 +349,7 @@ Grafieken zijn een speciaal geval. SC 1.4.11 eist dat de verschillende elementen
   <text x="62" y="72" font-size="14" fill="#333" font-weight="bold" text-anchor="middle">C: 30%</text>
 </svg>
 
-## Checklist: is jouw interface compliant met SC 1.4.11?
+## Checklist: voldoet jouw interface aan SC 1.4.11?
 
 Doorloop deze lijst voor elk component:
 
@@ -402,12 +402,12 @@ Beide criteria moeten voldaan zijn. Je kunt niet kiezen.
 
 SC 1.4.11 is misschien niet het eerste criterium waar je aan denkt bij toegankelijkheid, maar het heeft enorme impact op de bruikbaarheid van je interface. Elke onzichtbare rand, elke te lichte focus-indicator en elk te bleek icoon is een barrière voor je bezoekers.
 
-De oplossing is simpel: **`#767676` is je nieuwe beste vriend.** Het is de lichtste grijstint die 4,5:1 contrast haalt op wit — voldoende voor zowel tekst (SC 1.4.3) als UI-componenten (SC 1.4.11). Gebruik dit als je baseline en ga bij twijfel donkerder. Mijn persoonlijke favoriet is `#474747`. Makkelijk te onthouden, past overal en voldoet aan de eisen.
+De oplossing is simpel: **`#767676` is je nieuwe beste vriend.** Het is de lichtste grijstint die 4,5:1 contrast haalt op wit, voldoende voor zowel tekst (SC 1.4.3) als UI-componenten (SC 1.4.11). Gebruik dit als je baseline en ga bij twijfel donkerder. Mijn persoonlijke favoriet is `#474747`. Makkelijk te onthouden, past overal en voldoet aan de eisen.
 
-En vergeet je focus-indicatoren niet. Ze zijn het navigatiemiddel voor iedereen die je site met een toetsenbord gebruikt — en dat zijn meer mensen dan je denkt.
+En vergeet je focus-indicatoren niet. Ze zijn het navigatiemiddel voor iedereen die je site met een toetsenbord gebruikt, en dat zijn meer mensen dan je denkt.
 
 Wil je weten of jouw interface voldoet aan SC 1.4.11? Proper Access toetst niet alleen, maar levert ook concrete CSS-oplossingen per bevinding. Zodat je team direct aan de slag kan, zonder te raden welke kleuren wél werken.
 
 ---
 
-_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Haar favoriete kleur? `#474747` — de grijs die de 4,5:1 haalt._
+_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Haar favoriete kleur? `#474747`, de grijs die de 4,5:1 haalt._

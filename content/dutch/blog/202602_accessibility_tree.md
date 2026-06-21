@@ -42,7 +42,7 @@ Open Chrome DevTools op een van deze manieren:
 1. Open DevTools
 2. Ga naar het **Elements** tabblad
 3. Zoek het **Accessibility** paneel op een van deze locaties:
-   - Als subtabblad rechts naast "Styles", "Computed", etc.
+   - Als subtabblad rechts naast "Styles", "Computed", enzovoort
    - Klik op de `>>` pijl als het verborgen is
    - Of ga naar de drie puntjes (⋮) → "More tools" → "Accessibility"
 
@@ -91,7 +91,7 @@ Veelvoorkomende rollen:
 - `heading`: Koptekst
 - `navigation`: Navigatiegebied
 - `main`: Hoofdinhoud
-- `complementary`: Aanvullende content (bijv. sidebar)
+- `complementary`: Aanvullende content (bijvoorbeeld sidebar)
 - `list` / `listitem`: Lijst en lijstitems
 - `textbox`: Invoerveld
 - `img`: Afbeelding
@@ -132,7 +132,7 @@ Extra context, vaak afkomstig van:
 De huidige waarde voor interactieve elementen:
 
 - Tekst in een invoerveld
-- Geselecteerde toestand (bijv bij een knop: aan of uit)
+- Geselecteerde toestand (bijvoorbeeld bij een knop: aan of uit)
 - Positie van een slider
 
 #### 5. **States** (Toestanden)
@@ -159,7 +159,7 @@ Dynamische eigenschappen:
 
 Statische kenmerken:
 
-- `level`: Niveau van headings (h1=1, h2=2, etc.)
+- `level`: Niveau van headings (h1=1, h2=2, enzovoort)
 - `required`: Verplicht invoerveld
 - `readonly`: Alleen-lezen
 - `multiline`: Meerdere regels tekst
@@ -256,7 +256,7 @@ Dit wordt alleen afgekeurd als er geen content tussen de `<h1>` en `<h4>` staat.
 Check voor elk invoerveld:
 
 - **Name** is aanwezig en beschrijvend
-- **Role** is correct (`textbox`, `combobox`, `checkbox`, etc.)
+- **Role** is correct (`textbox`, `combobox`, `checkbox`, enzovoort)
 - **Required** state indien van toepassing
 - **Invalid** state bij validatiefouten
 - **Description** voor extra instructies
@@ -315,7 +315,7 @@ Oplossing: Voeg `aria-label` of (zichtbare) tekst toe.
 generic  ❌ Geen semantische betekenis
 ```
 
-Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, etc.) of ARIA roles.
+Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, enzovoort) of ARIA roles.
 
 **Verborgen content die toegankelijk moet zijn:**
 

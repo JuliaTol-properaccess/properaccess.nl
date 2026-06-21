@@ -9,7 +9,7 @@ tags:
   - "alt-tekst"
   - "afbeeldingen"
   - "ecommerce"
-description: "Knop zonder naam — Afbeeldingen in webshops (post 4/8)"
+description: "Knop zonder naam. Afbeeldingen in webshops (post 4/8)"
 image: "/images/blog/serie-afbeeldingen-webshops/knop-zonder-naam.webp"
 keywords:
   - digitale toegankelijkheid
@@ -18,7 +18,7 @@ keywords:
   - knop zonder naam
 ---
 
-Je hebt op je website een zoekveld met een knop. Op een desktop staat er "Zoeken" naast het vergrootglas-icoontje. Prima, dat werkt. Maar wat gebeurt er als je inzoomt of de pagina op een telefoon bekijkt? De tekst "Zoeken" verdwijnt en alleen het icoontje blijft over. En als dat icoontje geen tekstalternatief heeft, dan weet iemand die voorleessoftware gebruikt niet wat die knop doet. Ze horen: "Knop." Dat is alles. Geen "zoeken", geen "versturen", gewoon "knop."
+Je hebt op je website een zoekveld met een knop. Op een desktop staat er "Zoeken" naast het vergrootglas-icoon. Prima, dat werkt. Maar wat gebeurt er als je inzoomt of de pagina op een telefoon bekijkt? De tekst "Zoeken" verdwijnt en alleen het icoon blijft over. En als dat icoon geen tekstalternatief heeft, dan weet iemand die voorleessoftware gebruikt niet wat die knop doet. Ze horen: "Knop." Dat is alles. Geen "zoeken", geen "versturen", gewoon "knop."
 
 Dit zie ik zo vaak. En het is een struikelblok waar je potentieel veel klanten verliest. Als iemand niet kan zoeken in je webshop, dan is die weg. Geen omzet, geen terugkerende bezoeker. Je developer moet ervoor zorgen dat op een desktop het tekstalternatief niet dubbel wordt voorgelezen, maar op een mobiel wel beschikbaar is. Dat is een kwestie van een aria-label of visueel verborgen tekst.
 

@@ -9,7 +9,7 @@ tags:
   - "4-1-2"
   - "aria"
   - "naam-rol-waarde"
-description: "Knop zonder naam — WCAG 4.1.2 Naam, rol, waarde (post 1/12)"
+description: "Knop zonder naam: WCAG 4.1.2 Naam, rol, waarde (post 1/12)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -43,8 +43,8 @@ De schermlezer weet: het is een knop (de rol). Maar niet wat die doet (de naam).
 ```
 
 Let op de twee toevoegingen:
-1. `aria-label="Menu openen"` — geeft de knop een naam
-2. `aria-hidden="true"` op de SVG — voorkomt dat de schermlezer de SVG-code probeert voor te lezen
+1. `aria-label="Menu openen"`, dit geeft de knop een naam
+2. `aria-hidden="true"` op de SVG, dit voorkomt dat de schermlezer de SVG-code probeert voor te lezen
 
 **Dit geldt ook voor:**
 - Invoervelden zonder label

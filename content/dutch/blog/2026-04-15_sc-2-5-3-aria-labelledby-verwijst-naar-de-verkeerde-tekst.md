@@ -9,7 +9,7 @@ tags:
   - "2-5-3"
   - "label"
   - "spraaksturing"
-description: "aria-labelledby verwijst naar de verkeerde tekst — WCAG 2.5.3 Label in naam (post 2/7)"
+description: "aria-labelledby verwijst naar de verkeerde tekst. WCAG 2.5.3 Label in naam (post 2/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

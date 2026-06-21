@@ -9,7 +9,7 @@ tags:
   - "2-4-3"
   - "focus"
   - "tabvolgorde"
-description: "Dialoogvenster krijgt geen focus bij openen — WCAG 2.4.3 Focusvolgorde (post 2/11)"
+description: "Dialoogvenster krijgt geen focus bij openen. WCAG 2.4.3 Focusvolgorde (post 2/11)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

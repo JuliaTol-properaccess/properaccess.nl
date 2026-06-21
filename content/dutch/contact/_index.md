@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-meta_title: "Contact — Proper Access"
+meta_title: "Contact | Proper Access"
 date: 2021-08-27
 description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee, van mini-audit tot volledige audit."
 keywords:
@@ -18,7 +18,7 @@ url: "/contact/"
   <h3 class="card__title">Bel of app</h3>
   <p><a href="tel:+31855055890"><strong>085 5055 890</strong></a></p>
   <p><a href="https://wa.me/31628742275">WhatsApp of Signal</a></p>
-  <p class="card__meta">We nemen direct op — of bellen dezelfde dag terug.</p>
+  <p class="card__meta">We nemen direct op, of bellen dezelfde dag terug.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
@@ -86,7 +86,7 @@ Nee. De meeste mensen die contact opnemen weten alleen: "Ik moet iets met toegan
 <summary class="faq-question">Wat moet ik aanleveren als ik een vraag stel?</summary>
 <div class="faq-answer">
 
-Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt — ook prima. We vragen het wel.
+Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt: ook prima. We vragen het wel.
 
 </div>
 </details>
@@ -95,7 +95,7 @@ Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat 
 <summary class="faq-question">Krijg ik direct een prijsopgave?</summary>
 <div class="faq-answer">
 
-Ja, je krijgt een offerte op maat. We vragen je situatie uit en sturen je een helder voorstel met een vaste prijs — geen verrassingen achteraf. We denken met je mee over wat het beste past bij je budget en je doel.
+Ja, je krijgt een offerte op maat. We vragen je situatie uit en sturen je een helder voorstel met een vaste prijs, geen verrassingen achteraf. We denken met je mee over wat het beste past bij je budget en je doel.
 
 </div>
 </details>
@@ -104,7 +104,7 @@ Ja, je krijgt een offerte op maat. We vragen je situatie uit en sturen je een he
 <summary class="faq-question">Bieden jullie spoedservice aan?</summary>
 <div class="faq-answer">
 
-Soms wel. Neem direct contact op en vermeld dat het om spoed gaat — dan kijken we wat mogelijk is. Bijvoorbeeld als de toezichthouder belt, een klant een toegankelijkheidsverklaring eist, of je over 3 weken lanceert.
+Soms wel. Neem direct contact op en vermeld dat het om spoed gaat, dan kijken we wat mogelijk is. Bijvoorbeeld als de toezichthouder belt, een klant een toegankelijkheidsverklaring eist, of je over 3 weken lanceert.
 
 </div>
 </details>
@@ -113,7 +113,7 @@ Soms wel. Neem direct contact op en vermeld dat het om spoed gaat — dan kijken
 <summary class="faq-question">Waar zijn jullie gevestigd?</summary>
 <div class="faq-answer">
 
-Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digitaal — dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
+Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digitaal, dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
 
 </div>
 </details>
@@ -123,7 +123,7 @@ Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digi
 
 {{< section-cta title="Nog twijfels?" >}}
 
-**53 organisaties** gingen je voor — samen goed voor meer dan **900 audits**. Van overheidsinstellingen tot webshops, van musea tot digital agencies. Ze kozen voor Proper Access omdat we niet alleen rapporten schrijven — we denken mee, leggen uit en lossen op.
+**53 organisaties** gingen je voor, samen goed voor meer dan **900 audits**. Van overheidsinstellingen tot webshops, van musea tot digital agencies. Ze kozen voor Proper Access omdat we niet alleen rapporten schrijven: we denken mee, leggen uit en lossen op.
 
 [Bel ons: 085 5055 890](tel:+31855055890) | [Mail ons](mailto:contact@properaccess.nl) | [Plan een videocall](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 

@@ -5,7 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-1-1"
-description: "WCAG 2.1.1 vereist dat alle functionaliteit via het toetsenbord bereikbaar is. Lees hoe je toetsenbordtoegankelijkheid test en veelgemaakte fouten voorkomt."
+description: "WCAG 2.1.1 vraagt dat alle functionaliteit via het toetsenbord bereikbaar is. Lees hoe je toetsenbordtoegankelijkheid test en veelgemaakte fouten voorkomt."
 aliases:
   - /sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/
 ---
@@ -40,7 +40,7 @@ Hier zijn voorbeelden van fouten die we vaak tegenkomen:
 
 Formulieren moeten volledig toegankelijk zijn via het toetsenbord. Dit betekent dat je met de Tab-toets naar elk veld moet kunnen navigeren en elk veld moet kunnen invullen zonder een muis te gebruiken.
 
-### Links, knoppen, invoervelden, keuzelijsten, etc.
+### Links, knoppen, invoervelden, keuzelijsten, enzovoort
 
 Alle links en knoppen op je website moeten bereikbaar en activeerbaar zijn met het toetsenbord. Dit betekent dat een bezoeker bijvoorbeeld op de Enter-toets kan drukken om een link te volgen of op de spatiebalk een knop kan indrukken.
 
@@ -56,13 +56,13 @@ Voorbeeld: In de zogenaamde tabs navigeer je met de pijltoetsen tussen de tabkop
 
 ### Content die verschijnt wanneer je met je muis over elementen beweegt
 
-Content die verschijnt als je met je muis over bepaalde elementen op de webpagina beweegt, moet ook met het toetsenbord te bedienen zijn. Denk aan tooltips, submenu’s en andere hulpmiddelen.
+Content die verschijnt als je met je muis over bepaalde elementen op de webpagina beweegt, moet ook met het toetsenbord te bedienen zijn, zoals tooltips, submenu’s en andere hulpmiddelen.
 
 Voorbeeld: Een tooltip-icoon moet geactiveerd kunnen worden door op Enter te drukken.
 
 ## Hoe los je het op?
 
-Dit probleem kan alleen een webontwikkelaar oplossen. De makkelijkste oplossing is het gebruik van de standaard HTML-elementen (`<button>`, `<a>`, `<input>` enzovoort) in plaats van niet-interactieve elementen waaraan events met JavaScript zijn toegevoegd. Soms heb je als ontwikkelaar geen keuze en moet je andere technieken gebruiken om toetsenbordtoegankelijkheid te implementeren. Lees onderstaande bronnen of schakel een expert in om je te helpen.
+Dit probleem kan alleen een webontwikkelaar oplossen. De makkelijkste oplossing is het gebruik van de standaard HTML-elementen (`<button>`, `<a>`, `<input>` enzovoort) in plaats van niet-interactieve elementen waaraan events met JavaScript zijn toegevoegd. Soms heb je als ontwikkelaar geen keuze en moet je andere technieken gebruiken om toetsenbordtoegankelijkheid voor elkaar te krijgen. Lees onderstaande bronnen of schakel een expert in om je te helpen.
 
 ## Goede bronnen over WCAG 2.1.1
 

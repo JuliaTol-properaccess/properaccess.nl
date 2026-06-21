@@ -9,7 +9,7 @@ tags:
   - "1-3-2"
   - "volgorde"
   - "screenreader"
-description: "Metadata boven de kop van een artikel — WCAG 1.3.2 Betekenisvolle volgorde (post 1/9)"
+description: "Metadata boven de kop van een artikel: WCAG 1.3.2 Betekenisvolle volgorde (post 1/9)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -22,7 +22,7 @@ image: "/images/blog/linkedin-series/sc-1-3-2-metadata-boven-de-kop-van-een-arti
 
 Dat hoort een schermlezergebruiker. En dan: stilte. Want het volgende element is de kop van het artikel eronder.
 
-Die datum en categorie stonden boven de kop in de HTML. Visueel geen probleem — CSS plaatst ze netjes onder de titel. Maar een schermlezer volgt de HTML, niet de CSS.
+Die datum en categorie stonden boven de kop in de HTML. Visueel geen probleem: CSS plaatst ze netjes onder de titel. Maar een schermlezer volgt de HTML, niet de CSS.
 
 Het resultaat: de datum lijkt bij het vorige artikel te horen. En het volgende artikel begint zonder context.
 

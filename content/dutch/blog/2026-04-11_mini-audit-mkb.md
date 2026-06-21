@@ -25,7 +25,7 @@ Je wilt weten of je website voldoet aan de EAA, maar je wilt niet meteen duizend
 
 ## Wat kan een gratis automatische tool wel?
 
-Geautomatiseerde tools zoals WAVE, axe DevTools of de Lighthouse-audit in Chrome vinden een deel van de toegankelijkheidsproblemen. Denk aan:
+Geautomatiseerde tools zoals WAVE, axe DevTools of de Lighthouse-audit in Chrome vinden een deel van de toegankelijkheidsproblemen. Bijvoorbeeld:
 
 - Ontbrekende alt-teksten op afbeeldingen
 - Te laag kleurcontrast
@@ -57,7 +57,7 @@ Wil je verder gaan dan een geautomatiseerde tool? In onze mini-audit bekijkt een
 - Een **lijst met probleemcomponenten** waar je beter een alternatief voor zoekt
 - Een advies over **vervolgstappen** en een inschatting van het traject
 
-Het is geen volledige audit, daar heb je een aparte opdracht voor nodig, maar het geeft je genoeg informatie om een geïnformeerde beslissing te nemen. De mini-audit kost 495 euro excl. btw.
+Het is geen volledige audit, daar heb je een aparte opdracht voor nodig, maar het geeft je genoeg informatie om een geïnformeerde beslissing te nemen. De mini-audit kost 495 euro exclusief btw.
 
 ## Wanneer heb je meer nodig dan een mini-audit?
 
@@ -71,4 +71,4 @@ Die onderdelen vereisen een volledige audit. Maar de mini-audit is een uitsteken
 
 ## Hoe vraag je het aan?
 
-[Vraag een mini-audit aan](https://properaccess.nl/quickscan/). Vul het formulier in met je website-URL. Een senior auditor kijkt tot 5 uur handmatig naar je site en je ontvangt binnen 5 werkdagen een uitgebreid rapport per e-mail. 495 euro excl. btw, geen verkooppraatje.
+[Vraag een mini-audit aan](https://properaccess.nl/quickscan/). Vul het formulier in met je website-URL. Een senior auditor kijkt tot 5 uur handmatig naar je site en je ontvangt binnen 5 werkdagen een uitgebreid rapport per e-mail. 495 euro exclusief btw, geen verkooppraatje.

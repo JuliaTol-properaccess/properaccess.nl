@@ -11,7 +11,7 @@ tags:
   - "user-stories"
   - "agile"
   - "wcag"
-description: "Atlassian zet eindgebruikers centraal in agile development. Wij doen hetzelfde in onze auditrapporten — met één user story per bevinding."
+description: "Atlassian zet eindgebruikers centraal in agile development. Wij doen hetzelfde in onze auditrapporten, met één user story per bevinding."
 keywords:
   - user stories toegankelijkheid
   - wcag audit rapport
@@ -25,7 +25,7 @@ image: "/images/rapport/rapport1.png"
 
 Atlassian schrijft over user stories: _"Een userstory plaatst eindgebruikers centraal. Na het lezen van een userstory weet het team waarom het bouwt, wat het bouwt en welke waarde het creëert."_
 
-Wij zijn gaan kijken wat er gebeurt als je diezelfde gedachte toepast op een toegankelijkheidsrapport. Het antwoord: het rapport wordt opeens leesbaar voor iedereen die het moet oplossen — niet alleen voor de auditor die het schreef.
+Wij zijn gaan kijken wat er gebeurt als je diezelfde gedachte toepast op een toegankelijkheidsrapport. Het antwoord: het rapport wordt opeens leesbaar voor iedereen die het moet oplossen, niet alleen voor de auditor die het schreef.
 
 {{< /case-section >}}
 
@@ -61,12 +61,12 @@ Daarom beginnen wij elke bevinding nu met een user story.
 
 ## Hoe ziet zo'n user story eruit?
 
-Onze user stories zijn niet geschreven vanuit één persoon met één beperking. Ze combineren meerdere manieren waarop iemand tegen hetzelfde issue aan kan lopen — met een schermlezer, met een toetsenbord, met een vergroter, met een voorspelbare leesvolgorde. Eén verhaal, meerdere ingangen.
+Onze user stories zijn niet geschreven vanuit één persoon met één beperking. Ze combineren meerdere manieren waarop iemand tegen hetzelfde issue aan kan lopen: met een schermlezer, met een toetsenbord, met een vergroter, met een voorspelbare leesvolgorde. Eén verhaal, meerdere ingangen.
 
 Een voorbeeld uit een recent rapport:
 
 <blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 1.5rem 0; font-style: italic;">
-Als bezoeker die een schermlezer, stembesturing of geen afbeeldingen gebruikt, heb ik nodig dat elke knop met alleen een icoon een duidelijke naam heeft — want zonder die naam weet ik niet wat de knop doet.
+Als bezoeker die een schermlezer, stembesturing of geen afbeeldingen gebruikt, heb ik nodig dat elke knop met alleen een icoon een duidelijke naam heeft, want zonder die naam weet ik niet wat de knop doet.
 </blockquote>
 
 Daaronder volgt de technische uitleg: welk element, welk WCAG-criterium, welke code-aanpassing. Plus een screenshot. De story staat er eerst. Met opzet.
@@ -77,7 +77,7 @@ Daaronder volgt de technische uitleg: welk element, welk WCAG-criterium, welke c
 
 ## Wat dit oplost
 
-De ontwikkelaar of redacteur die met dit rapport gaat werken, hoeft niet meer eerst de WCAG-richtlijn op te zoeken om te begrijpen waarom iets ertoe doet. Ze hoeven niet te raden wie er last van heeft. Het staat er letterlijk — inclusief alle manieren waarop iemand het kan tegenkomen.
+De ontwikkelaar of redacteur die met dit rapport gaat werken, hoeft niet meer eerst de WCAG-richtlijn op te zoeken om te begrijpen waarom iets ertoe doet. Ze hoeven niet te raden wie er last van heeft. Het staat er letterlijk, inclusief alle manieren waarop iemand het kan tegenkomen.
 
 Dat heeft drie effecten die we steeds terugzien:
 
@@ -97,7 +97,7 @@ Dit is misschien het belangrijkste. We schrijven niet één user story per WCAG-
 
 Want hetzelfde succescriterium kan op de ene plek een groot probleem zijn voor schermlezergebruikers en op een andere plek vooral hinderlijk voor toetsenbordgebruikers. Dat verschil verdwijnt zodra je gaat groeperen. Door per bevinding te schrijven, blijft het verhaal precies op de plek waar het hoort: bij dat ene element, op die ene pagina, in die ene context.
 
-Het kost ons meer schrijftijd. Daar zijn we eerlijk over. Maar dit is wat ons werk is — en het werkt.
+Het kost ons meer schrijftijd. Daar zijn we eerlijk over. Maar dit is wat ons werk is. En het werkt.
 
 {{< /case-section >}}
 

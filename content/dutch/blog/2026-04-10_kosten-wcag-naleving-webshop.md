@@ -10,7 +10,7 @@ tags:
   - "webshop"
   - "wcag"
   - "kosten"
-description: "Wat kost het om je webshop WCAG-compliant te maken? Overzicht van auditkosten, ontwikkelkosten en tips om slim te budgetteren."
+description: "Wat kost het om je webshop WCAG-conform te maken? Overzicht van auditkosten, ontwikkelkosten en tips om slim te budgetteren."
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -19,11 +19,11 @@ keywords:
 image: "/images/blog/webshop-wireframe-eaa.svg"
 ---
 
-De totale kosten om je webshop WCAG-compliant te maken hangen af van drie factoren: de audit, het oplossen van problemen, en het onderhouden van de toegankelijkheid daarna.
+De totale kosten om je webshop WCAG-conform te maken hangen af van drie factoren: de audit, het oplossen van problemen, en het onderhouden van de toegankelijkheid daarna.
 
-## 1. De audit: vanaf ca. € 2.100
+## 1. De audit: vanaf circa € 2.100
 
-Een volledige WCAG-audit van een webshop kost bij ons vanaf ca. € 2.100 voor een eenvoudige shop, oplopend tot ca. € 4.500 voor een complexe internationale webshop met multilingual checkout en uitgebreid accountgedeelte. De meeste Nederlandse webshops vallen in de categorie gemiddeld-complex en liggen rond de € 3.600.
+Een volledige WCAG-audit van een webshop kost bij ons vanaf circa € 2.100 voor een eenvoudige shop, oplopend tot circa € 4.500 voor een complexe internationale webshop met multilingual checkout en uitgebreid accountgedeelte. De meeste Nederlandse webshops vallen in de categorie gemiddeld-complex en liggen rond de € 3.600.
 
 Bij een webshop testen we:
 - Homepagina en categoriepagina's
@@ -38,9 +38,9 @@ Bij een webshop testen we:
 Dit is de grootste variabele. De kosten hangen af van:
 
 ### Je platform
-- **Custom-built webshop** — je ontwikkelaar past de code direct aan. Snelst en goedkoopst.
-- **Shopify, WooCommerce, Magento** — sommige fixes zitten in thema-aanpassingen, andere vereisen custom code of een ander thema.
-- **SaaS-platform** (Lightspeed, CCV Shop) — je bent afhankelijk van de platformaanbieder voor bepaalde fixes. Vraag je leverancier naar hun toegankelijkheidsroadmap.
+- **Custom-built webshop**: je ontwikkelaar past de code direct aan. Snelst en goedkoopst.
+- **Shopify, WooCommerce, Magento**: sommige fixes zitten in thema-aanpassingen, andere vereisen custom code of een ander thema.
+- **SaaS-platform** (Lightspeed, CCV Shop): je bent afhankelijk van de platformaanbieder voor bepaalde fixes. Vraag je leverancier naar hun toegankelijkheidsroadmap.
 
 ### De ernst van de problemen
 - **Laag hangend fruit** (alt-teksten, contrast, labels): een paar dagen werk
@@ -68,9 +68,9 @@ Een retest van een webshop kost bij ons vanaf € 600, afhankelijk van de omvang
 
 ## Hoe bespaar je kosten?
 
-1. **Begin vroeg** — hoe langer je wacht, hoe meer content en features je hebt die gefixt moeten worden
-2. **Kies een toegankelijk thema** — scheelt enorm in development-tijd
-3. **Train je content-team** — veel issues ontstaan door content (alt-teksten, kopstructuur, contrast)
-4. **Los structureel op** — fix het in het component, niet op elke pagina apart
+1. **Begin vroeg**: hoe langer je wacht, hoe meer content en features je hebt die gefixt moeten worden
+2. **Kies een toegankelijk thema**: scheelt enorm in development-tijd
+3. **Train je content-team**: veel issues ontstaan door content (alt-teksten, kopstructuur, contrast)
+4. **Los structureel op**: fix het in het component, niet op elke pagina apart
 
-Wil je weten hoe jouw webshop ervoor staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je wat de impact is voordat je gaat budgetteren.
+Wil je weten hoe jouw webshop ervoor staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je wat de impact is voordat je gaat budgetteren.

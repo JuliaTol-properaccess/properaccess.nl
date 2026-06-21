@@ -1,5 +1,5 @@
 ---
-title: "Kleurcontrast checker — voldoet je kleurencombinatie aan de WCAG?"
+title: "Kleurcontrast checker: voldoet je kleurencombinatie aan de WCAG?"
 description: "Gratis kleurcontrast checker. Controleer of je kleurencombinatie voldoet aan WCAG 2.2 niveau AA en AAA. Vul twee kleuren in en zie direct het resultaat."
 layout: "contrast-checker"
 gratis: true
@@ -20,11 +20,11 @@ keywords:
   - contrast check
 ---
 
-Onvoldoende kleurcontrast is een van de meest voorkomende toegankelijkheidsproblemen op websites. Tekst die te weinig contrasteert met de achtergrond is moeilijk leesbaar voor mensen met een visuele beperking — maar ook voor iedereen die een scherm in de zon gebruikt.
+Onvoldoende kleurcontrast is een van de meest voorkomende toegankelijkheidsproblemen op websites. Tekst die te weinig contrasteert met de achtergrond is moeilijk leesbaar voor mensen met een visuele beperking, maar ook voor iedereen die een scherm in de zon gebruikt.
 
 Met deze gratis kleurcontrast checker controleer je direct of je kleurencombinatie voldoet aan de WCAG-richtlijnen.
 
 ## Hoe werkt de kleurcontrast checker?
 
-Vul een voorgrondkleur (tekst) en een achtergrondkleur in. De tool berekent de contrastverhouding en laat zien of je combinatie voldoet aan WCAG niveau AA en AAA — voor normale tekst, grote tekst en UI-componenten.
+Vul een voorgrondkleur (tekst) en een achtergrondkleur in. De tool berekent de contrastverhouding en laat zien of je combinatie voldoet aan WCAG niveau AA en AAA, voor normale tekst, grote tekst en UI-componenten.
 

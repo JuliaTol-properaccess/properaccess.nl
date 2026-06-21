@@ -21,7 +21,7 @@ De doorlooptijd van een toegankelijkheidsaudit ligt bij de meeste aanbieders tus
 ## Waar hangt de doorlooptijd van af?
 
 ### 1. Het aantal unieke paginatypes
-Een audit test niet elke pagina van je website — dat zou onbetaalbaar zijn. In plaats daarvan selecteren we een representatieve steekproef van unieke paginatypes. Een website met 5 templates is sneller geaudit dan een webshop met 20+ unieke paginatypes.
+Een audit test niet elke pagina van je website, dat zou onbetaalbaar zijn. In plaats daarvan selecteren we een representatieve steekproef van unieke paginatypes. Een website met 5 templates is sneller geaudit dan een webshop met 20+ unieke paginatypes.
 
 ### 2. De complexiteit van de functionaliteit
 Statische informatiepagina's testen sneller dan:
@@ -45,17 +45,17 @@ Bij grote bureaus kan de wachttijd oplopen tot weken voordat de audit überhaupt
 | Geautomatiseerde scan      | 1 dag           |
 | Handmatige audit           | 3-8 werkdagen   |
 | Rapport schrijven          | 2-3 werkdagen   |
-| Oplevering                 | —               |
+| Oplevering                 | op afspraak     |
 | Nabespreking (optioneel)   | 1 uur           |
 
 **Totaal:** 2-4 weken na start.
 
 ## Hoe kun je het versnellen?
 
-1. **Lever een sitemap aan** — dan hoeven we niet zelf alle pagina's in kaart te brengen
-2. **Geef toegang** — als er pagina's achter een login zitten, maak een testaccount aan
-3. **Wees beschikbaar voor vragen** — soms hebben we context nodig over specifieke functionaliteit
-4. **Plan vooruit** — bespreek de timeline vooraf, zodat we rekening kunnen houden met je planning
+1. **Lever een sitemap aan:** dan hoeven we niet zelf alle pagina's in kaart te brengen
+2. **Geef toegang:** als er pagina's achter een login zitten, maak een testaccount aan
+3. **Wees beschikbaar voor vragen:** soms hebben we context nodig over specifieke functionaliteit
+4. **Plan vooruit:** bespreek de timeline vooraf, zodat we rekening kunnen houden met je planning
 
 ## Hoe lang duurt het daarna?
 
@@ -68,4 +68,4 @@ Gemiddeld zijn teams 4 tot 12 weken bezig met het oplossen van de issues uit een
 
 Na de fixes kun je een **retest** laten doen (doorlooptijd: 1-2 weken) om te bevestigen dat alles is opgelost.
 
-Wil je alvast een planning maken? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je vooraf wat je kunt verwachten.
+Wil je alvast een planning maken? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je vooraf wat je kunt verwachten.

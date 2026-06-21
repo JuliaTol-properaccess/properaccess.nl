@@ -5,7 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-4-1"
-description: "WCAG 2.4.1 vereist een mechanisme om herhalende blokken te overslaan, zoals een skiplink. Lees hoe je dit implementeert en test."
+description: "WCAG 2.4.1 vraagt om een manier om herhalende blokken te overslaan, zoals een skiplink. Lees hoe je dit toepast en test."
 aliases:
   - /sc-2-4-1-wat-betekent-blokken-overslaan-in-wcag/
 ---
@@ -32,7 +32,7 @@ Kort: geef gebruikers een snel pad naar de kern van je pagina. Een skiplink is d
 
 - Skiplinks die alleen zichtbaar zijn met de muis (maar niet met toetsenbord of schermlezer).
 
-- Geen duidelijke structuur met koppen (`<h1>`, `<h2>`, etc.).
+- Geen duidelijke structuur met koppen (`<h1>`, `<h2>`, enzovoort).
 
 ## Hoe test je een skiplink?
 

@@ -1,6 +1,6 @@
 ---
 title: "Onderwijs"
-meta_title: "Digitale toegankelijkheid in het onderwijs — Proper Access"
+meta_title: "Digitale toegankelijkheid in het onderwijs | Proper Access"
 date: 2026-03-07
 slug: "onderwijs-digitale-toegankelijkheid"
 url: "/onderwijs-digitale-toegankelijkheid/"
@@ -20,7 +20,7 @@ keywords:
 banner:
   badge: "WCAG 2.2 en BDTO"
   title: "Een studieomgeving waar iedereen zelfstandig kan leren"
-  content: "Wij helpen je in heldere stappen naar een toegankelijke leeromgeving — met een plan dat je team kan uitvoeren."
+  content: "Wij helpen je in heldere stappen naar een toegankelijke leeromgeving, met een plan dat je team kan uitvoeren."
   bullets:
     - "**Per element:** wat zijn de issues en hoe los je ze op?"
     - "**Plan van aanpak** uitgewerkt per team"
@@ -31,7 +31,7 @@ banner:
     link: "/contact/"
 
 trust:
-  label: "Ervaring met o.a."
+  label: "Ervaring met onder andere"
   names:
     - "Moodle"
     - "Canvas"
@@ -56,12 +56,12 @@ vp_framework:
       name: "WordPress"
   footer: "We geven oplossingen die passen bij jullie platform, geen generieke WCAG-uitleg."
   eyebrow: "Platform-kennis"
-  title: "We kennen Moodle, Articulate, Class &mdash; en waar toegankelijkheid daar misgaat"
+  title: "We kennen Moodle, Articulate, Class, en waar toegankelijkheid daar misgaat"
   body: >
     Je ontwikkelaar twijfelt hoe je een Moodle-toets toegankelijk maakt voor schermlezers?
     Articulate-modules correct labelen voor toetsenbordgebruikers? De custom thema-layer van
     Canvas werkend houden met hulpsoftware? We kijken mee, delen concrete oplossingen en leggen
-    uit waarom bepaalde keuzes beter werken &mdash; in de platformen die jullie studenten gebruiken.
+    uit waarom bepaalde keuzes beter werken, in de platformen die jullie studenten gebruiken.
   button:
     label: "Bekijk een voorbeeldrapport"
     link: "/toegankelijkheidsaudit/#voorbeeldrapporten"
@@ -82,9 +82,9 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 {{< section-split title="De wetgeving is helder" bg="light" >}}
 
-- **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (BDTO) — WCAG 2.1 is al verplicht
+- **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (BDTO): WCAG 2.1 is al verplicht
 - **Particuliere onderwijsinstellingen** vallen onder de European Accessibility Act (EAA) als ze digitale diensten aanbieden
-- Het VN-verdrag Handicap verplicht inclusief onderwijs — ook digitaal
+- Het VN-verdrag Handicap verplicht inclusief onderwijs, ook digitaal
 
 Dit is niet iets voor "later". Studenten met een beperking volgen nu onderwijs op jouw instelling.
 
@@ -98,24 +98,24 @@ De toetsomgeving is het meest kritieke onderdeel. Studenten moeten onder tijdsdr
 {{< /section-card >}}
 {{< section-card title="Leermateriaal als ontoegankelijke PDF's" >}}
 
-Readers, syllabi, hand-outs — ze worden massaal als PDF aangeboden. Zonder koppenstructuur, zonder alt-teksten bij diagrammen, zonder leesbare tabellen. Een screenreader leest dan een willekeurige brij van tekst.
+Readers, syllabi, hand-outs: ze worden massaal als PDF aangeboden. Zonder koppenstructuur, zonder alt-teksten bij diagrammen, zonder leesbare tabellen. Een screenreader leest dan een willekeurige brij van tekst.
 
 {{< /section-card >}}
 {{< section-card title="Videocontent zonder ondertiteling" >}}
 
-Opgenomen hoorcolleges, instructievideo's, webinars — het onderwijs leunt zwaar op video. Maar ondertiteling ontbreekt structureel, of is automatisch gegenereerd zonder correctie. En audiodescriptie? Daar heeft bijna niemand van gehoord.
+Opgenomen hoorcolleges, instructievideo's, webinars: het onderwijs leunt zwaar op video. Maar ondertiteling ontbreekt structureel, of is automatisch gegenereerd zonder correctie. En audiodescriptie? Daar heeft bijna niemand van gehoord.
 
 {{< /section-card >}}
 {{< section-card title="Custom thema's die de toegankelijkheid kapotmaken" >}}
 
-Moodle en Canvas zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpassing aan het thema — een fancy navigatiemenu, een custom dashboard, een branded login-pagina — introduceert vaak nieuwe barrières.
+Moodle en Canvas zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpassing aan het thema, bijvoorbeeld een fancy navigatiemenu, een custom dashboard of een branded login-pagina, introduceert vaak nieuwe barrières.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-cta >}}
 
-Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een mini-audit aan (495 euro excl. btw). Een senior auditor bekijkt je site met de hand en je ontvangt het rapport binnen 5 werkdagen.
+Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een mini-audit aan (495 euro exclusief btw). Een senior auditor bekijkt je site met de hand en je ontvangt het rapport binnen 5 werkdagen.
 
 [Vraag een mini-audit aan →](/webshop-quickscan/)
 
@@ -129,7 +129,7 @@ De **Inspectie van het Onderwijs** houdt toezicht op onderwijsinstellingen. Zij 
 - Zijn er maatregelen genomen?
 - Is er voortgang?
 
-Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op — in het formaat van het officiële register.
+Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op, in het formaat van het officiële register.
 
 [Stel je verklaring op (gratis) →](/tools/toegankelijkheidsverklaring-wdo/)
 
@@ -158,7 +158,7 @@ Je krijgt niet "SC 1.1.1 is niet gehaald" met een lijst van 40 pagina's. Je krij
 {{< /section-card >}}
 {{< section-card title="Onafhankelijk" >}}
 
-We bouwen geen websites, beheren geen content, verkopen geen software. We hebben geen belang bij een bepaalde uitkomst. Dat betekent dat je erop kunt vertrouwen dat ons advies klopt — ook als dat advies is: "dit platform is niet geschikt".
+We bouwen geen websites, beheren geen content, verkopen geen software. We hebben geen belang bij een bepaalde uitkomst. Dat betekent dat je erop kunt vertrouwen dat ons advies klopt, ook als dat advies is: "dit platform is niet geschikt".
 
 {{< /section-card >}}
 {{< section-card title="Directe lijn met de auditor" >}}
@@ -196,7 +196,7 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 <details class="faq-item">
 <summary class="faq-question">Moeten we al onze PDF's toegankelijk maken?</summary>
 <div class="faq-answer">
-<p>In principe wel — als je ze aanbiedt als onderdeel van je digitale dienstverlening. Maar dat hoeft niet in een keer. We helpen je prioriteren: welke documenten worden het meest gebruikt? Waar zit het grootste risico? En hoe maak je het proces voor nieuwe documenten direct goed?</p>
+<p>In principe wel, als je ze aanbiedt als onderdeel van je digitale dienstverlening. Maar dat hoeft niet in een keer. We helpen je prioriteren: welke documenten worden het meest gebruikt? Waar zit het grootste risico? En hoe maak je het proces voor nieuwe documenten direct goed?</p>
 </div>
 </details>
 

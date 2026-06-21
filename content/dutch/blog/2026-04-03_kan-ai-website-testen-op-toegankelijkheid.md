@@ -10,7 +10,7 @@ tags:
   - "wcag"
   - "automatisch testen"
   - "toegankelijkheid"
-description: "Wat kan AI echt detecteren aan toegankelijkheidsproblemen? Wij combineren onze kennis van AI met ervaring in 900+ toegankelijkheidsaudits om deze vraag te beantwoorden. Deel 0 van onze serie AI en toegankelijkheid."
+description: "Wat kan AI echt herkennen aan toegankelijkheidsproblemen? Wij combineren onze kennis van AI met ervaring in 900+ toegankelijkheidsaudits om deze vraag te beantwoorden. Deel 0 van onze serie AI en toegankelijkheid."
 keywords:
   - AI toegankelijkheid testen
   - WCAG AI
@@ -33,7 +33,7 @@ Het is een logische vraag. AI kan tegenwoordig code schrijven, essays beoordelen
 
 Het korte antwoord: AI kan een heleboel. Het wordt met de dag slimmer. Maar er zijn beperkingen en nadelen.
 
-Het langere antwoord? Dat ligt aan wat je precies wil doen, welke tools je gebruikt, hoeveel je ervoor wilt betalen en hoe lang je bereid bent te wachten. In deze serie gaan we dat uitzoeken. In een serie artikelen test ik precies wat AI wel en niet kan detecteren aan toegankelijkheidsproblemen. Geen theorie, geen aannames. Echte tests met echte code.
+Het langere antwoord? Dat ligt aan wat je precies wil doen, welke tools je gebruikt, hoeveel je ervoor wilt betalen en hoe lang je bereid bent te wachten. In deze serie gaan we dat uitzoeken. In een serie artikelen test ik precies wat AI wel en niet kan herkennen aan toegankelijkheidsproblemen. Geen theorie, geen aannames. Echte tests met echte code.
 
 {{< /case-section >}}
 
@@ -122,10 +122,10 @@ Elke test krijgt een score:
 
 | Score            | Betekenis                                                       |
 | ---------------- | --------------------------------------------------------------- |
-| **Gevonden**     | AI detecteert het probleem correct                              |
-| **Gemist**       | AI detecteert het probleem niet                                 |
+| **Gevonden**     | AI herkent het probleem correct                                 |
+| **Gemist**       | AI herkent het probleem niet                                    |
 | **Vals alarm**   | AI meldt een probleem dat er niet is                            |
-| **Gedeeltelijk** | AI detecteert het, maar mist de kern of geeft onvolledig advies |
+| **Gedeeltelijk** | AI herkent het, maar mist de kern of geeft onvolledig advies    |
 
 Aan het eind van de serie maken we een compleet overzicht: welke WCAG-criteria kan AI betrouwbaar testen, waar helpt het als startpunt, en waar heb je een specialist nodig? Met de snelheid waarmee de ontwikkeling nu gaat, is de kans groot dat we dan opnieuw moeten beginnen. :)
 

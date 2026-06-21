@@ -16,7 +16,7 @@ Met landmarks kan een schermlezergebruiker in een oogopslag de structuur van je 
 
 ## Waarom het ertoe doet
 
-WCAG succescriterium 2.4.1 (Blokken omzeilen) vereist dat er een mechanisme is om blokken content die op meerdere pagina's worden herhaald, te omzeilen. Denk aan het hoofdmenu, een zoekbalk en een header die op elke pagina terugkomen.
+WCAG succescriterium 2.4.1 (Blokken omzeilen) vraagt om een mechanisme om blokken content die op meerdere pagina's worden herhaald, te omzeilen. Bijvoorbeeld het hoofdmenu, een zoekbalk en een header die op elke pagina terugkomen.
 
 Een schermlezergebruiker die op elke pagina eerst 40 links in het menu moet doorlopen, raakt gefrustreerd. Toetsenbordgebruikers hebben hetzelfde probleem: ze moeten tab na tab door herhaalde blokken heen drukken.
 

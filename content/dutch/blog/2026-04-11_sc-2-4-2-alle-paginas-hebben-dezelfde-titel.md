@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "2-4-2"
   - "paginatitel"
-description: "Alle pagina's hebben dezelfde titel — WCAG 2.4.2 Paginatitel (post 2/7)"
+description: "Alle pagina's hebben dezelfde titel. WCAG 2.4.2 Paginatitel (post 2/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

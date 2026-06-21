@@ -16,7 +16,7 @@ aliases:
   - /hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-weer-verdwijnen/
 ---
 
-Sommige UI-elementen verschijnen alleen kort — bijvoorbeeld vensters, dropdowns of menus die op hover of focus zichtbaar worden. Die kunnen interactieve onderdelen bevatten die je moet testen op toegankelijkheid. Denk aan:
+Sommige UI-elementen verschijnen alleen kort, bijvoorbeeld vensters, dropdowns of menus die op hover of focus zichtbaar worden. Die kunnen interactieve onderdelen bevatten die je moet testen op toegankelijkheid. Bijvoorbeeld:
 
 - Is het element bereikbaar met het toetsenbord?
 - Is de focus zichtbaar en heeft die voldoende kleurcontrast?
@@ -47,8 +47,8 @@ setTimeout(() => { debugger }, 3000)
 Als het bijvoorbeeld om een menu gaat, controleer dan minimaal:
 
 - Focuszichtbaarheid en kleurcontrast
-- Focusvolgorde binnen het menu en ten opzichte van de knop die het opent
-- Contrast van tekst — in standaard, hover en focus-toestand
+- Focusvolgorde binnen het menu en tegenover de knop die het opent
+- Contrast van tekst in standaard, hover en focus-toestand
 - Toetsenbordbediening
 - Naam en rol van interactieve elementen
 - Status van checkboxes of toggles
@@ -63,7 +63,7 @@ Er is een specifiek WCAG-criterium dat hierover gaat: **SC 1.4.13 Content on Hov
 
 **1. Wegklikbaar (Dismissible).** De gebruiker moet het verschenen element kunnen sluiten zonder de muis te verplaatsen of de focus te verliezen. De standaard manier: druk op **Escape**. Dit is belangrijk voor vergrotingssoftware-gebruikers -- als een tooltip hun leestekst bedekt, moeten ze die kunnen wegsluiten.
 
-**2. Hoverbaar (Hoverable).** Als de content verschijnt door een muishover, moet de gebruiker de muis naar het verschenen element kunnen bewegen zonder dat het verdwijnt. Denk aan een tooltip: als je je muis ernaartoe beweegt om de tekst te lezen, mag de tooltip niet dichtklappen.
+**2. Hoverbaar (Hoverable).** Als de content verschijnt door een muishover, moet de gebruiker de muis naar het verschenen element kunnen bewegen zonder dat het verdwijnt. Neem een tooltip: als je je muis ernaartoe beweegt om de tekst te lezen, mag de tooltip niet dichtklappen.
 
 **3. Persistent.** De content moet zichtbaar blijven totdat de gebruiker het expliciet sluit, de hover of focus verplaatst, of de content niet meer relevant is. Het mag niet vanzelf verdwijnen na een paar seconden.
 

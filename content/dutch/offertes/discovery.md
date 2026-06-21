@@ -21,7 +21,7 @@ offertenummer: "202602-01"
 
 Beste Els,
 
-Wat fijn dat Discovery Museum werk maakt van digitale toegankelijkheid! Als wetenschaps- en technologiemuseum in Kerkrade bereik je een breed publiek — van gezinnen tot scholen en wetenschapsliefhebbers. Het is geweldig dat je iedereen dezelfde kans wilt geven om jullie collectie, evenementen en bezoekersinfo online te ontdekken.
+Wat fijn dat Discovery Museum werk maakt van digitale toegankelijkheid! Als wetenschaps- en technologiemuseum in Kerkrade bereik je een breed publiek, van gezinnen tot scholen en wetenschapsliefhebbers. Het is geweldig dat je iedereen dezelfde kans wilt geven om jullie collectie, evenementen en bezoekersinfo online te ontdekken.
 
 Jullie vraag is helder: waar staan we nu, en welke stappen zijn nog nodig om te voldoen aan de Europese Toegankelijkheidswet? Precies daar helpen wij je graag mee. Onze audit geeft je niet alleen inzicht in wat er speelt, maar ook concrete handvatten om ermee aan de slag te gaan. Onze rapporten staan bomvol begrijpelijke tips en oplossingen, zodat jouw team direct kan starten met verbeteringen.
 
@@ -62,7 +62,7 @@ Door de website daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor e
 
 ### Onderzoeksopzet & testmethoden
 
-- **Handmatige controle** op ca. 200 controlepunten per pagina in de steekproef
+- **Handmatige controle** op circa 200 controlepunten per pagina in de steekproef
 - **Testen in donkere en lichte modus**
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Contrast getest** in dark mode en licht mode
@@ -74,7 +74,7 @@ Door de website daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor e
 
 - **Praktische oplossingen per bevinding**, waar mogelijk uitgewerkt in HTML, CSS en JS of in pseudocode
 - **Voorstel voor alternatieve oplossingen**
-- **We kijken verder dan de WCAG** — kansen voor extra toegankelijkheid of gebruiksvriendelijkheid nemen we mee
+- **We kijken verder dan de WCAG**: kansen voor extra toegankelijkheid of gebruiksvriendelijkheid nemen we mee
 - **Duidelijk onderscheid** tussen WCAG-issues en aanvullende adviezen
 
 ### Plan van aanpak
@@ -88,7 +88,7 @@ Door de website daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor e
 
 {{< offerte-section title="Audit vs. tool" subtitle="Waarom menselijke expertise?" bg="light" >}}
 
-Een automatische toegankelijkheidstool lijkt verleidelijk, maar detecteert slechts 20-30% van alle toegankelijkheidsproblemen. Veel cruciale aspecten — zoals de kwaliteit van alt-teksten, logische leesvolgorde, toetsenbordnavigatie en screenreaderondersteuning — kunnen alleen door ervaren menselijke auditors worden beoordeeld.
+Een automatische toegankelijkheidstool lijkt verleidelijk, maar herkent slechts 20-30% van alle toegankelijkheidsproblemen. Veel cruciale aspecten, zoals de kwaliteit van alt-teksten, logische leesvolgorde, toetsenbordnavigatie en screenreaderondersteuning, kunnen alleen door ervaren menselijke auditors worden beoordeeld.
 
 Bovendien bieden zogenaamde 'overlay-tools' vaak een schijnoplossing die de gebruikservaring voor mensen met een beperking juist verslechtert. Een menselijke audit geeft je betrouwbaar inzicht en werkbare oplossingen.
 
@@ -100,7 +100,7 @@ Meer hierover lees je op: [properaccess.nl/overlay-toegankelijkheidstools/](http
 
 | Product                                                                                              | Prijs (excl. BTW) |
 | ---------------------------------------------------------------------------------------------------- | ----------------- |
-| Audit digitale toegankelijkheid van de website inclusief onbeperkt vragen stellen n.a.v. het rapport | € 2.695           |
+| Audit digitale toegankelijkheid van de website inclusief onbeperkt vragen stellen over het rapport | € 2.695           |
 | Retest van bevindingen                                                                               | € 500             |
 | Nabespreking van het rapport online, 1 uur                                                           | € 125             |
 

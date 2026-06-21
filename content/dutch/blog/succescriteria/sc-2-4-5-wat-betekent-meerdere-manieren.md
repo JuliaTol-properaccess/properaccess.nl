@@ -5,7 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "2-4-5"
-description: "WCAG 2.4.5 vereist minstens twee manieren om een pagina te vinden, zoals navigatie en zoekfunctie. Lees welke opties je hebt."
+description: "WCAG 2.4.5 vraagt om minstens twee manieren om een pagina te vinden, zoals navigatie en zoekfunctie. Lees welke opties je hebt."
 aliases:
   - /sc-2-4-5-wat-betekent-meerdere-manieren/
 ---
@@ -14,7 +14,7 @@ Het doel van succescriterium 2.4.5 - Meerdere manieren van WCAG is om bezoekers 
 
 Zeer kleine websites tot vijf pagina’s, die alle links in de footer of de header hebben staan, hebben geen tweede manier nodig.
 
-Welke tweede manier zou je kunnen implementeren? De onderstaande oplossingen zijn niet verplicht. Kies één of twee opties die het beste bij jouw situatie passen:
+Welke tweede manier zou je kunnen toepassen? De onderstaande oplossingen zijn niet verplicht. Kies één of twee opties die het beste bij jouw situatie passen:
 
 - Een zoekveld dat alle pagina’s en pdf’s op de website doorzoekt.
 

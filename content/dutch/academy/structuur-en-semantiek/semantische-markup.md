@@ -12,11 +12,11 @@ layout: "academy"
 
 Semantische markup betekent dat je HTML-elementen gebruikt die de **betekenis** van je content beschrijven, niet alleen het uiterlijk. Een `<h2>` vertelt dat iets een kop is. Een `<nav>` vertelt dat het een navigatieblok is. Een `<button>` vertelt dat iets klikbaar is.
 
-In de praktijk gaat het vaak mis. Veel websites gebruiken generieke elementen zoals `<div>` en `<span>` voor alles — en voegen dan CSS toe om het er goed uit te laten zien. Visueel maakt dat geen verschil. Maar voor hulpsoftware maakt het **alle** verschil.
+In de praktijk gaat het vaak mis. Veel websites gebruiken generieke elementen zoals `<div>` en `<span>` voor alles, en voegen dan CSS toe om het er goed uit te laten zien. Visueel maakt dat geen verschil. Maar voor hulpsoftware maakt het **alle** verschil.
 
 ## Waarom het ertoe doet
 
-WCAG succescriterium 1.3.1 (Informatie en relaties) vereist dat informatie en relaties die **visueel** worden overgebracht, ook **programmatisch bepaalbaar** zijn. Dat betekent: als je iets visueel duidelijk maakt — door grootte, positie, kleur of lay-out — dan moet diezelfde informatie ook in de code zitten.
+WCAG succescriterium 1.3.1 (Informatie en relaties) vraagt dat informatie en relaties die **visueel** worden overgebracht, ook **programmatisch bepaalbaar** zijn. Dat betekent: als je iets visueel duidelijk maakt, door grootte, positie, kleur of lay-out, dan moet diezelfde informatie ook in de code zitten.
 
 De <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html" rel="noopener">W3C-toelichting</a> zegt het zo:
 
@@ -30,12 +30,12 @@ De W3C definieert dit als: **door software vast te stellen op basis van data die
 
 Er zijn twee situaties:
 
-1. **De technologie biedt semantische elementen** — gebruik ze. HTML heeft koppen, lijsten, tabellen, landmarks, formulierlabels.
-2. **De technologie biedt geen semantisch element** — beschrijf de relatie in tekst. Bijvoorbeeld: "Alle verplichte velden zijn gemarkeerd met een asterisk (*)."
+1. **De technologie biedt semantische elementen.** Gebruik ze. HTML heeft koppen, lijsten, tabellen, landmarks, formulierlabels.
+2. **De technologie biedt geen semantisch element.** Beschrijf de relatie in tekst. Bijvoorbeeld: "Alle verplichte velden zijn gemarkeerd met een asterisk (*)."
 
 ## De basis: gebruik het juiste element
 
-> Gebruik het HTML-element dat het beste beschrijft wat de content **is** — niet hoe het eruit moet **zien**.
+> Gebruik het HTML-element dat het beste beschrijft wat de content **is**, niet hoe het eruit moet **zien**.
 
 | Element | Betekenis |
 |---------|-----------|
@@ -49,7 +49,7 @@ Er zijn twee situaties:
 | `<form>`, `<label>`, `<input>` | Formulierelementen |
 | `<fieldset>`, `<legend>` | Groepering van formuliervelden |
 
-`<div>` en `<span>` zijn **niet** semantisch. Gebruik ze alleen voor layout of styling — nooit als vervanging voor een semantisch element.
+`<div>` en `<span>` zijn **niet** semantisch. Gebruik ze alleen voor layout of styling, nooit als vervanging voor een semantisch element.
 
 <div class="academy-example">
 <div class="academy-example__header">Voorbeeld: een klikbaar element</div>
@@ -78,7 +78,7 @@ Standaard focusbaar, activeerbaar met Enter en spatie, herkend als "knop".
 <div class="academy-tip">
 <p class="academy-tip__title">Vuistregel</p>
 
-Als je CSS moet toevoegen om iets eruit te laten zien als een kop, lijst, knop of tabel — dan gebruik je waarschijnlijk het verkeerde HTML-element.
+Als je CSS moet toevoegen om iets eruit te laten zien als een kop, lijst, knop of tabel, dan gebruik je waarschijnlijk het verkeerde HTML-element.
 
 </div>
 
@@ -107,20 +107,20 @@ Semantische markup raakt meerdere succescriteria. De belangrijkste:
 
 Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoofdstukken behandelen we ze apart:
 
-- **Paginatitel** — het `<title>`-element en waarom het de eerste indruk bepaalt
-- **Taal** — het `lang`-attribuut en de impact op uitspraak
-- **Koppen** — hierarchie, niveaus overslaan, en veelgemaakte fouten
-- **Landmarks** — `<nav>`, `<main>`, `<header>`, `<footer>` en hun ARIA-equivalenten
-- **Lijsten** — `<ul>`, `<ol>`, `<dl>` en wanneer je ze (niet) gebruikt
-- **Tabellen** — wanneer een tabel een tabel is, en wanneer niet
-- **iFrames** — toegankelijke ingebedde content
-- **Markup-validiteit** — waarom valide HTML ertoe doet
+- **Paginatitel:** het `<title>`-element en waarom het de eerste indruk bepaalt
+- **Taal:** het `lang`-attribuut en de impact op uitspraak
+- **Koppen:** hierarchie, niveaus overslaan, en veelgemaakte fouten
+- **Landmarks:** `<nav>`, `<main>`, `<header>`, `<footer>` en hun ARIA-equivalenten
+- **Lijsten:** `<ul>`, `<ol>`, `<dl>` en wanneer je ze (niet) gebruikt
+- **Tabellen:** wanneer een tabel een tabel is, en wanneer niet
+- **iFrames:** toegankelijke ingebedde content
+- **Markup-validiteit:** waarom valide HTML ertoe doet
 
 ## Verder lezen
 
-- [Wat betekent WCAG 1.3.1?](/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/) — de achtergrond van dit criterium
-- [Kopniveaus](/blog/sc-1-3-1-kopniveaus/) — wanneer een overgeslagen kopniveau een probleem is
-- [Tabellen](/blog/sc-1-3-1-tabellen/) — wanneer een tabel geen tabel is
+- [Wat betekent WCAG 1.3.1?](/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/): de achtergrond van dit criterium
+- [Kopniveaus](/blog/sc-1-3-1-kopniveaus/): wanneer een overgeslagen kopniveau een probleem is
+- [Tabellen](/blog/sc-1-3-1-tabellen/): wanneer een tabel geen tabel is
 
 ---
 
@@ -133,7 +133,7 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Er is geen probleem — de tekst ziet er uit als een kop</span>
+<span>Er is geen probleem, de tekst ziet er uit als een kop</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
@@ -141,7 +141,7 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="c" />
-<span>Een schermlezer herkent dit niet als kop — de gebruiker kan er niet naartoe navigeren</span>
+<span>Een schermlezer herkent dit niet als kop, de gebruiker kan er niet naartoe navigeren</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="d" />
@@ -175,7 +175,7 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="d" />
-<span>Altijd — <code>&lt;div&gt;</code> is het meest flexibele element</span>
+<span>Altijd, <code>&lt;div&gt;</code> is het meest flexibele element</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="a" hidden>
@@ -193,7 +193,7 @@ Elk type semantisch element heeft eigen regels en valkuilen. In de volgende hoof
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
-<span>Niets — de streepjes maken duidelijk dat het een lijst is</span>
+<span>Niets, de streepjes maken duidelijk dat het een lijst is</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="b" />

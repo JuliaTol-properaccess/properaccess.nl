@@ -1,6 +1,6 @@
 ---
 title: "Reseller-programma"
-meta_title: "Reseller-programma — Proper Access"
+meta_title: "Reseller-programma | Proper Access"
 date: 2026-03-07
 slug: "reseller-programma"
 url: "/reseller-programma/"
@@ -9,8 +9,8 @@ robots: "noindex, nofollow"
 description: "Bied je klanten een accessibility-audit aan zonder dat je er iets voor hoeft te doen. 7% commissie, kant-en-klare materialen en doorlopende content."
 
 banner:
-  title: "Bied je klanten een accessibility-audit aan — zonder dat je er iets voor hoeft te doen"
-  content: "Je klanten moeten voldoen aan de European Accessibility Act. Dat weet je. Maar een WCAG-audit uitvoeren is specialistisch werk — en dat hoeft niet in jouw team te zitten. Met het reseller-programma van Proper Access kun je accessibility-audits aanbieden als onderdeel van je eigen dienstverlening. Wij doen het werk. Jij verdient mee."
+  title: "Bied je klanten een accessibility-audit aan, zonder dat je er iets voor hoeft te doen"
+  content: "Je klanten moeten voldoen aan de European Accessibility Act. Dat weet je. Maar een WCAG-audit uitvoeren is specialistisch werk, en dat hoeft niet in jouw team te zitten. Met het reseller-programma van Proper Access kun je accessibility-audits aanbieden als onderdeel van je eigen dienstverlening. Wij doen het werk. Jij verdient mee."
   button:
     enable: true
     label: "Plan een gesprek van 20 minuten"
@@ -41,7 +41,7 @@ Je verwijst een klant door. Wij nemen het over: intake, planning, audit, rapport
 {{< section-card title="Commissie" >}}
 
 - 7% van de opdrachtwaarde, gedurende het eerste jaar
-- Gemiddeld ca. 252 euro per audit
+- Gemiddeld circa 252 euro per audit
 - Geen minimum aantal opdrachten, geen commitment
 
 {{< /section-card >}}
@@ -98,7 +98,7 @@ Je ontvangt elke maand een blogartikel en elk kwartaal een EAA/WCAG-update voor 
 
 {{< section-full title="Over Proper Access" >}}
 
-Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We hebben 900+ audits uitgevoerd voor organisaties als het Rijksmuseum, Provincie Noord-Holland en NRC. Onze rapporten zijn per element opgebouwd — niet per succescriterium — zodat developers direct weten wat ze moeten aanpassen.
+Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We hebben 900+ audits uitgevoerd voor organisaties als het Rijksmuseum, Provincie Noord-Holland en NRC. Onze rapporten zijn per element opgebouwd, niet per succescriterium, zodat developers direct weten wat ze moeten aanpassen.
 
 {{< /section-full >}}
 
@@ -114,7 +114,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Hoeveel verdien ik per audit?</summary>
 <div class="faq-answer">
-<p>7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van ca. 3.600 euro is dat ongeveer 252 euro per opdracht.</p>
+<p>7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van circa 3.600 euro is dat ongeveer 252 euro per opdracht.</p>
 </div>
 </details>
 

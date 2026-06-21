@@ -32,7 +32,7 @@ image: "/images/blog/webshop-wireframe-eaa.svg"
 
 Sinds 28 juni 2025 is de European Accessibility Act (EAA) van kracht. En ja, die geldt ook voor jouw webshop. Toch merk ik dat veel webshophouders nog niet weten wat ze precies moeten doen.
 
-Je online winkel moet voldoen aan **WCAG 2.1 niveau AA** — 50 concrete eisen. In de praktijk adviseer ik om te toetsen op WCAG 2.2, met 5 extra criteria die specifiek relevant zijn voor webshops.
+Je online winkel moet voldoen aan **WCAG 2.1 niveau AA**: 50 concrete eisen. In de praktijk adviseer ik om te toetsen op WCAG 2.2, met 5 extra criteria die specifiek relevant zijn voor webshops.
 
 ## Voor wie geldt de EAA?
 
@@ -48,13 +48,13 @@ De EAA geldt voor e-commercediensten: webshops, ticketverkoop, boekingsplatforms
 
 Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tegenkom:
 
-**1. Productafbeeldingen zonder alt-tekst** — veruit het grootste probleem. `IMG_4523.jpg` is geen bruikbare beschrijving. Gebruik onze [alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/).
+**1. Productafbeeldingen zonder alt-tekst.** Veruit het grootste probleem. `IMG_4523.jpg` is geen bruikbare beschrijving. Gebruik onze [alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/).
 
-**2. Filters niet bedienbaar met toetsenbord** — dropdowns die niet openen, checkboxen die niet reageren, schuifregelaars die onbereikbaar zijn.
+**2. Filters niet bedienbaar met toetsenbord.** Dropdowns die niet openen, checkboxen die niet reageren, schuifregelaars die onbereikbaar zijn.
 
-**3. Bestelproces met formulierproblemen** — velden zonder labels, foutmeldingen die niet gekoppeld zijn aan het juiste veld, betaalmodules van derden die niet toegankelijk zijn.
+**3. Bestelproces met formulierproblemen.** Velden zonder labels, foutmeldingen die niet gekoppeld zijn aan het juiste veld, betaalmodules van derden die niet toegankelijk zijn.
 
-**4. Onvoldoende kleurcontrast** — lichtgrijze tekst op wit, witte tekst op pastelknoppen. Normaal: minimaal 4,5:1. Groot: minimaal 3:1.
+**4. Onvoldoende kleurcontrast.** Lichtgrijze tekst op wit, witte tekst op pastelknoppen. Normaal: minimaal 4,5:1. Groot: minimaal 3:1.
 
 {{< /case-section >}}
 
@@ -62,11 +62,11 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 ## Problemen 5–7
 
-**5. Cookie-banner blokkeert de pagina** — niet bedienbaar met toetsenbord, niet voorgelezen door schermlezer. Het eerste wat een bezoeker tegenkomt.
+**5. Cookie-banner blokkeert de pagina.** Niet bedienbaar met toetsenbord, niet voorgelezen door schermlezer. Het eerste wat een bezoeker tegenkomt.
 
-**6. Zoekresultaten niet aangekondigd** — resultaten verschijnen visueel maar worden niet gecommuniceerd via ARIA live regions.
+**6. Zoekresultaten niet aangekondigd.** Resultaten verschijnen visueel maar worden niet gecommuniceerd via ARIA live regions.
 
-**7. Carrousels en productsliders** — knoppen niet bereikbaar, autoplay niet te stoppen. Beste advies: vermijd autoplay en gebruik duidelijke vorige/volgende-knoppen.
+**7. Carrousels en productsliders.** Knoppen niet bereikbaar, autoplay niet te stoppen. Beste advies: vermijd autoplay en gebruik duidelijke vorige/volgende-knoppen.
 
 {{< /case-section >}}
 
@@ -74,13 +74,13 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 ## Waar begin je?
 
-**Stap 1: Mini-audit** — begin met een [mini-audit](/quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
+**Stap 1: Mini-audit.** Begin met een [mini-audit](/quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
 
-**Stap 2: Grootste blokkers fixen** — focus op dingen die mensen uitsluiten: bestelproces, cookie-banner, formulieren zonder labels.
+**Stap 2: Grootste blokkers fixen.** Focus op dingen die mensen uitsluiten: bestelproces, cookie-banner, formulieren zonder labels.
 
-**Stap 3: Volledige audit** — een WCAG-EM onderzoek geeft je een compleet beeld en een nulmeting.
+**Stap 3: Volledige audit.** Een WCAG-EM onderzoek geeft je een compleet beeld en een nulmeting.
 
-**Stap 4: Retest** — check of alle verbeteringen goed zijn doorgevoerd. Voorkomt dat je denkt dat alles in orde is terwijl er nog fouten zitten.
+**Stap 4: Retest.** Check of alle verbeteringen goed zijn doorgevoerd. Voorkomt dat je denkt dat alles in orde is terwijl er nog fouten zitten.
 
 {{< /case-section >}}
 
@@ -98,7 +98,7 @@ Ja, de wet is sinds juni 2025 van kracht. De AFM houdt toezicht op e-commercedie
 <details class="faq-item">
 <summary class="faq-question">Geldt de EAA ook voor mijn Shopify/WooCommerce-shop?</summary>
 <div class="faq-answer">
-Ja. De EAA maakt geen onderscheid tussen platformen. Of je nu Shopify, WooCommerce, Magento of maatwerk gebruikt — de eisen zijn hetzelfde. Wel verschilt de mate van controle die je hebt.
+Ja. De EAA maakt geen onderscheid tussen platformen. Of je nu Shopify, WooCommerce, Magento of maatwerk gebruikt, de eisen zijn hetzelfde. Wel verschilt de mate van controle die je hebt.
 </div>
 </details>
 
@@ -118,8 +118,8 @@ Een kant-en-klaar thema is geen garantie voor toegankelijkheid. Zelfs thema's di
 
 ## Verder lezen
 
-- [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/) — bepaal welke alt-tekst je productafbeeldingen nodig hebben
-- [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/) — transparant overzicht van prijzen en pakketten
-- [Mini-audit aanvragen](/quickscan/) — eerste stap om te zien waar je webshop staat
+- [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/): bepaal welke alt-tekst je productafbeeldingen nodig hebben
+- [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/): transparant overzicht van prijzen en pakketten
+- [Mini-audit aanvragen](/quickscan/): eerste stap om te zien waar je webshop staat
 
 {{< /case-section >}}

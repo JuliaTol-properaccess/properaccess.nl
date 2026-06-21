@@ -18,7 +18,7 @@ keywords:
   - "EAA voor webshops checklist"
   - "EAA compliance webshop"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-seo_title: "EAA-checklist 2026 voor webshops — 30 punten | Proper Access"
+seo_title: "EAA-checklist 2026 voor webshops, 30 punten | Proper Access"
 seo_description: "Volledige 30-punten EAA-checklist voor webshops. Praktisch, per onderdeel van je site. Wat moet er kloppen om aan WCAG 2.1 AA en de European Accessibility Act te voldoen."
 seo_keywords:
   [
@@ -34,7 +34,7 @@ Sinds 28 juni 2025 moet je webshop voldoen aan de European Accessibility Act. Le
 
 Hieronder een checklist van 30 punten, georganiseerd per onderdeel van je webshop. Geen academische opsomming van succescriteria, maar praktische checks die je samen met je developer of contentmanager kunt afvinken. Bij elk punt staat waar het over gaat, hoe je het test, en welk WCAG-criterium erachter zit voor wie wil doorlezen.
 
-Deze checklist is geen vervanging van een audit. Het is een hulpmiddel om te zien waar je staat en wat de laaghangende verbeteringen zijn. Voor een echte audit is een paar dagen handmatig testwerk nodig — meer daarover in [Wat kost een WCAG-audit voor een webshop](/blog/wat-kost-wcag-audit-webshop/).
+Deze checklist is geen vervanging van een audit. Het is een hulpmiddel om te zien waar je staat en wat de laaghangende verbeteringen zijn. Voor een echte audit is een paar dagen handmatig testwerk nodig. Meer daarover in [Wat kost een WCAG-audit voor een webshop](/blog/wat-kost-wcag-audit-webshop/).
 
 ## Hoe gebruik je deze checklist?
 
@@ -47,7 +47,7 @@ Loop 'm door in deze volgorde:
 
 Pak een Google Doc, vink af wat je weet, zet vraagtekens bij wat je niet weet, en bel een audit-bureau voor de rest. Je hoeft dit niet allemaal in je eentje te doen.
 
-## Categorie A — Scope & wetgeving (4 punten)
+## Categorie A: Scope & wetgeving (4 punten)
 
 ### 1. Bepaal of de EAA op jou van toepassing is
 
@@ -59,13 +59,13 @@ De EAA geldt voor het deel van je site dat aan consumenten verkoopt. Heb je daar
 
 ### 3. Stel een toegankelijkheidsverklaring op
 
-De EAA verplicht je om aantoonbaar te voldoen. In de praktijk betekent dat een **toegankelijkheidsverklaring** op je site, met een datum, scope, gevolgde norm (WCAG 2.1 AA) en contactgegevens voor klachten. Anders dan bij het BDTO (overheid) is er geen centraal portaal — je publiceert hem op je eigen site. We hebben een handige tool gemaakt om je te helpen om een verklaring op te stellen: https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/.
+De EAA verplicht je om aantoonbaar te voldoen. In de praktijk betekent dat een **toegankelijkheidsverklaring** op je site, met een datum, scope, gevolgde norm (WCAG 2.1 AA) en contactgegevens voor klachten. Anders dan bij het BDTO (overheid) is er geen centraal portaal: je publiceert hem op je eigen site. We hebben een handige tool gemaakt om je te helpen om een verklaring op te stellen: https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/.
 
 ### 4. Wijs een verantwoordelijke aan binnen je organisatie
 
 Iemand moet de eigenaar zijn van toegankelijkheid. Niet "de webdeveloper", niet "marketing". Eén persoon die de verklaring beheert, klachten behandelt en zorgt dat nieuwe features niet onbedoeld iets breken. Zonder eigenaar verwatert het.
 
-## Categorie B — Technische basis (8 punten)
+## Categorie B: Technische basis (8 punten)
 
 Dit is slechts een korte lijst van alle punten die op je website gecheckt moeten worden!
 
@@ -83,7 +83,7 @@ _WCAG: 2.4.7 Focus zichtbaar_
 
 ### 7. Kleurcontrast voldoet aan minimaal 4.5:1 voor tekst en 3:1 voor UI-elementen
 
-Open een contrast-checker, bijvoorbeeld deze gratis tool https://www.properaccess.nl/tools/kleurcontrast-checker/ en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker — bijna altijd te laag.
+Open een contrast-checker, bijvoorbeeld deze gratis tool https://www.properaccess.nl/tools/kleurcontrast-checker/ en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker, bijna altijd te laag.
 
 _WCAG: 1.4.3 Contrast (minimum), 1.4.11 Contrast voor niet-tekstuele elementen_
 
@@ -117,7 +117,7 @@ Een cookie-banner moet als eerste in de focusvolgorde zijn zodat je het meteen k
 
 _WCAG: 2.1.2 Geen toetsenbordval, 2.4.3 Focus volgorde_
 
-## Categorie C — Productpagina's (5 punten)
+## Categorie C: Productpagina's (5 punten)
 
 ### 13. Productfoto's hebben een beschrijvende alt-tekst
 
@@ -149,11 +149,11 @@ Een hartje-icoon zonder verborgn tekst die een schermlezer kan voorlezen is fout
 
 _WCAG: 1.1.1 Niet-tekstuele content, 4.1.2 Naam, rol, waarde_
 
-## Categorie D — Checkout & formulieren (6 punten)
+## Categorie D: Checkout & formulieren (6 punten)
 
 ### 19. Elk formulierveld heeft een gekoppeld `<label>`
 
-Geen placeholders als label. Gebruik een echte `<label for="...">`. Zonder label weet een screenreader niet waar je naam, postcode of e-mail moet komen. Test door je veld aan te klikken op het label — als het invoerveld geen focus krijgt, klopt de koppeling niet.
+Geen placeholders als label. Gebruik een echte `<label for="...">`. Zonder label weet een screenreader niet waar je naam, postcode of e-mail moet komen. Test door je veld aan te klikken op het label: als het invoerveld geen focus krijgt, klopt de koppeling niet.
 
 _WCAG: 1.3.1 Info en relaties, 3.3.2 Labels of instructies_
 
@@ -175,11 +175,11 @@ _WCAG: 1.3.1 Info en relaties, 1.4.1 Gebruik van kleur_
 
 _Gerelateerd aan 2.4.3 Focus volgorde, 4.1.3 Statusberichten_
 
-## Categorie E — Account & post-purchase (3 punten)
+## Categorie E: Account & post-purchase (3 punten)
 
 ### 24. Wachtwoord-reset zonder cognitieve test
 
-Een login die alleen werkt door een puzzel op te lossen of een captcha te tekenen, faalt op WCAG 3.3.8 (Toegankelijke authenticatie) — een nieuw criterium uit WCAG 2.2.
+Een login die alleen werkt door een puzzel op te lossen of een captcha te tekenen, faalt op WCAG 3.3.8 (Toegankelijke authenticatie), een nieuw criterium uit WCAG 2.2.
 
 _WCAG: 3.3.8 Toegankelijke authenticatie_
 
@@ -195,7 +195,7 @@ Als je op je accountpagina de status van je bestelling kunt zien en die status v
 
 _WCAG: 4.1.3 Statusberichten_
 
-## Categorie F — Content & beheer (2 punten)
+## Categorie F: Content & beheer (2 punten)
 
 ### 27. PDF facturen, handleidingen en retourformulieren zijn toegankelijk
 
@@ -209,11 +209,11 @@ Als je marketing of redactie zelf productbeschrijvingen, blogposts of bannerteks
 
 _WCAG: alle content-gerelateerde criteria_
 
-## Categorie G — Governance & test (2 punten)
+## Categorie G: Governance & test (2 punten)
 
 ### 30. Audit door een onafhankelijke partij plus retest na fixes
 
-Een interne check is geen audit. Een onafhankelijke partij met een handmatige werkwijze vindt issues die je zelf nooit zou vinden — niet omdat je dom bent, maar omdat je je eigen blinde vlekken hebt. Plan minimaal één audit per jaar, plus een retest nadat je de issues hebt opgelost. Zo voorkom je dat je dezelfde fouten een jaar later weer hebt.
+Een interne check is geen audit. Een onafhankelijke partij met een handmatige werkwijze vindt issues die je zelf nooit zou vinden, niet omdat je dom bent, maar omdat je je eigen blinde vlekken hebt. Plan minimaal één audit per jaar, plus een retest nadat je de issues hebt opgelost. Zo voorkom je dat je dezelfde fouten een jaar later weer hebt.
 
 _Vereist door EAA voor het kunnen opstellen van een onderbouwde toegankelijkheidsverklaring_
 
@@ -222,7 +222,7 @@ _Vereist door EAA voor het kunnen opstellen van een onderbouwde toegankelijkheid
 - 30 punten verdeeld over scope, technische basis, productpagina's, checkout, account, content en governance.
 - Volgorde: eerst scope, dan basis, dan checkout en productpagina's, dan governance.
 
-Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw) of bel **085 5055 890**.
+Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw) of bel **085 5055 890**.
 
 ## Meer in deze serie
 

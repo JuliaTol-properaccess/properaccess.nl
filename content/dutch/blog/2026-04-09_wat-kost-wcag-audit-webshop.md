@@ -36,7 +36,7 @@ Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-
 
 ## Korte antwoord
 
-> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.100 en € 4.500**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, custom componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een mini-audit kost 495 euro excl. btw.
+> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.100 en € 4.500**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, custom componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een mini-audit kost 495 euro exclusief btw.
 
 Dat is het in één alinea. De rest van dit artikel is uitleg waarom die range zo is, wat je voor dat bedrag krijgt, en welke factoren het naar boven of beneden duwen.
 
@@ -51,7 +51,7 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | Onderdeel                             | Indicatie         |
 | ------------------------------------- | ----------------- |
 | Webshop-audit (eenvoudig tot complex) | € 2.100 - € 4.500 |
-| Mini-audit (handmatige eerste controle) | € 495 excl. btw |
+| Mini-audit (handmatige eerste controle) | € 495 exclusief btw |
 | Retest na fixes                       | vanaf € 600       |
 | Nabespreking met je team              | € 150 per uur     |
 | Strippenkaart                         | € 100 per uur     |
@@ -74,7 +74,7 @@ De checkout is voor bijna elke webshop het meest complexe onderdeel. Multi-step?
 
 ### 3. Aantal interactieve componenten
 
-Mega-menu's, productfilters, varianten-pickers, maattabellen, mini-cart, image-zoom, zoekfunctionaliteiten, accordions, tabs, modals, chats, feedbackmechanismen — elk interactief element moet apart getest worden op veel checkpunten. We testen elke pagina op 55 succescriteria, die samen leiden tot honderden checks. Een minimalistische shop met weinig interacties kost minder dan een feature-rijke.
+Mega-menu's, productfilters, varianten-pickers, maattabellen, mini-cart, image-zoom, zoekfunctionaliteiten, accordions, tabs, modals, chats, feedbackmechanismen: elk interactief element moet apart getest worden op veel checkpunten. We testen elke pagina op 55 succescriteria, die samen leiden tot honderden checks. Een minimalistische shop met weinig interacties kost minder dan een feature-rijke.
 
 ### 4. Multilingual
 
@@ -82,7 +82,7 @@ Een Nederlandstalige shop testen is één ding. Maar als je ook een Engelse en D
 
 ### 5. Hoeveelheid content
 
-Met content bedoelen we de inhoud van de webshop die niet door een webontwikkelaar is toegevoegd, maar door de contentbeheerder. Denk aan PDF-documenten, juridische teksten, multimedia (video en podcasts), afbeeldingen, productbeschrijvingen, nieuwsberichten. Hoe complexer de content, hoe meer tijd nodig is om deze inhoud te auditen.
+Met content bedoelen we de inhoud van de webshop die niet door een webontwikkelaar is toegevoegd, maar door de contentbeheerder. Bijvoorbeeld PDF-documenten, juridische teksten, multimedia (video en podcasts), afbeeldingen, productbeschrijvingen, nieuwsberichten. Hoe complexer de content, hoe meer tijd nodig is om deze inhoud te auditen.
 
 ### 6. Account- en post-purchase gedeelte
 
@@ -90,7 +90,7 @@ Inloggen, registreren, wachtwoord-reset, mijn-account, orderhistorie, retourform
 
 ### 7. Blog en contentpagina's
 
-Heb je een actieve blog of kennisbank voor de consumenten? Die hoort er ook bij — vaak is het de plek waar redacteuren tabellen, koppen, alt-teksten en links op een eigen manier invoeren. Wij nemen meestal een paar blog-templates mee in de audit en geven aanbevelingen voor de redactie.
+Heb je een actieve blog of kennisbank voor de consumenten? Die hoort er ook bij. Vaak is het de plek waar redacteuren tabellen, koppen, alt-teksten en links op een eigen manier invoeren. Wij nemen meestal een paar blog-templates mee in de audit en geven aanbevelingen voor de redactie.
 
 ### 8. Diepte van het rapport
 
@@ -110,7 +110,7 @@ Als je bij ons een audit afneemt voor de gemiddelde webshop, dan krijg je:
 
 ## Hoe verhoudt dit zich tot een mini-audit?
 
-Een mini-audit is geen volledige audit. Het is een handmatige eerste controle waarin een senior auditor tot 5 uur naar je website of app kijkt en de belangrijkste problemen op techniek, design en content in kaart brengt. Bij Proper Access kost die 495 euro excl. btw. Hij is bedoeld om twee vragen te beantwoorden:
+Een mini-audit is geen volledige audit. Het is een handmatige eerste controle waarin een senior auditor tot 5 uur naar je website of app kijkt en de belangrijkste problemen op techniek, design en content in kaart brengt. Bij Proper Access kost die 495 euro exclusief btw. Hij is bedoeld om twee vragen te beantwoorden:
 
 1. _Hoe ernstig is het ongeveer?_
 2. _Wat zou een complete audit voor jou ongeveer kosten?_
@@ -121,7 +121,7 @@ De term verschilt per bureau. De een noemt een snelle geautomatiseerde scan een 
 
 ## Hoe verhoudt dit zich tot een overlay?
 
-Een overlay-tool als AccessiBe of UserWay rekent je doorgaans **per maand**: ongeveer € 50 - € 500 per maand, soms meer afhankelijk van de complexiteit van je website. Klinkt goedkoop ten opzichte van een eenmalige audit. Maar je krijgt er geen audit voor, je krijgt een widget die boven op je site een paar visuele aanpassingen aanbiedt. Met grote nadruk op 'een paar'.
+Een overlay-tool als AccessiBe of UserWay rekent je doorgaans **per maand**: ongeveer € 50 - € 500 per maand, soms meer afhankelijk van de complexiteit van je website. Klinkt goedkoop tegenover een eenmalige audit. Maar je krijgt er geen audit voor, je krijgt een widget die boven op je site een paar visuele aanpassingen aanbiedt. Met grote nadruk op 'een paar'.
 
 In de praktijk:
 
@@ -139,8 +139,8 @@ Bij ons zit er meestal **twee tot vier weken** tussen de intake en de oplevering
 
 Dit is de eerlijke andere kant van de vraag. De kosten van _niet_ auditeren zijn lastiger te berekenen, maar reëel:
 
-- **Verloren omzet.** Volgens het CBS heeft ruim 15% van de Nederlandse volwassenen een functiebeperking die digitale toegankelijkheid raakt. Als je checkout niet werkt voor screenreader-gebruikers, verlies je die conversies. Niet zichtbaar in je dashboard, want ze haken af zonder een spoor achter te laten. De [cijfers van de Europese Raad](https://www.consilium.europa.eu/nl/infographics/disability-eu-facts-figures/) komen zelfs uit op meer dan 20% van de EU-bevolking. Een groot deel van de beperkingen, denk aan cognitieve beperkingen, is niet eens te meten.
-- **Klacht bij de ACM of het College voor de Rechten van de Mens.** Eén klacht kost weinig geld direct, maar trekt aandacht en vraagt om herstel binnen een termijn — vaak met dezelfde audit die je vooraf had kunnen doen, plus extra kosten voor haastwerk.
+- **Verloren omzet.** Volgens het CBS heeft ruim 15% van de Nederlandse volwassenen een functiebeperking die digitale toegankelijkheid raakt. Als je checkout niet werkt voor screenreader-gebruikers, verlies je die conversies. Niet zichtbaar in je dashboard, want ze haken af zonder een spoor achter te laten. De [cijfers van de Europese Raad](https://www.consilium.europa.eu/nl/infographics/disability-eu-facts-figures/) komen zelfs uit op meer dan 20% van de EU-bevolking. Een groot deel van de beperkingen, zoals cognitieve beperkingen, is niet eens te meten.
+- **Klacht bij de ACM of het College voor de Rechten van de Mens.** Eén klacht kost weinig geld direct, maar trekt aandacht en vraagt om herstel binnen een termijn, vaak met dezelfde audit die je vooraf had kunnen doen, plus extra kosten voor haastwerk.
 - **Reputatie.** De niet-toegankelijke webshops worden actief in de pers genoemd. De [ACM-publicatie van 2024](https://www.acm.nl/nl/publicaties/acm-klant-met-beperking-kan-bij-merendeel-grote-webwinkels-niet-terecht) is een voorbode.
 - **Herwerk.** Toegankelijkheid achteraf erin bouwen kost vaak meer dan vooraf. Een variant-picker die op accessibility is ontworpen kost één dag developmenttijd; eentje die achteraf verbouwd moet worden kost soms een week.
 
@@ -167,7 +167,7 @@ Mijn advies: vraag minimaal twee offertes aan. Vraag specifiek **wie de audit ui
 
 - Een WCAG-audit voor een webshop kost bij Proper Access indicatief **€ 2.100 - € 4.500**. Eenvoudige webshops aan de onderkant, complexe internationale webshops aan de bovenkant. De meeste Nederlandse webshops vallen in de categorie gemiddeld-complex en liggen rond de € 3.600.
 - De prijs hangt af van templates, checkout-complexiteit, interactieve componenten, talen en de diepte van het rapport.
-- Een mini-audit (495 euro excl. btw bij ons) is een diagnose, geen vervanging van een audit.
+- Een mini-audit (495 euro exclusief btw bij ons) is een diagnose, geen vervanging van een audit.
 - Een overlay-tool is geen audit en lost het probleem niet op.
 - Vraag minimaal twee offertes aan en let op wie hem uitvoert, hoe het rapport er uit ziet en of een retest erin zit.
 

@@ -9,7 +9,7 @@ tags:
   - "1-3-2"
   - "volgorde"
   - "screenreader"
-description: "Kolommen waarvan de inhoud door elkaar loopt — WCAG 1.3.2 Betekenisvolle volgorde (post 2/9)"
+description: "Kolommen waarvan de inhoud door elkaar loopt: WCAG 1.3.2 Betekenisvolle volgorde (post 2/9)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -52,6 +52,6 @@ Project B wordt beschreven terwijl de gebruiker nog denkt dat het over Project A
 </div>
 ```
 
-Dit speelt niet alleen bij projectoverzichten. Denk aan productkaarten, teamleden, testimonials — elke keer dat je meerdere items naast elkaar toont.
+Dit speelt niet alleen bij projectoverzichten. Bijvoorbeeld productkaarten, teamleden, testimonials, elke keer dat je meerdere items naast elkaar toont.
 
 **De vuistregel:** als je CSS uitzet en de content onder elkaar valt, hoort het dan nog steeds bij elkaar? Zo niet: pas de HTML aan.

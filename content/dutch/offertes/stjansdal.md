@@ -22,11 +22,11 @@ hero_theme: "hospital"
 
 Beste Celesta,
 
-Leuk dat jullie de toegankelijkheid van de recruitmentsite willen laten onderzoeken. Een ziekenhuis dat zorg biedt aan 260.000 mensen in de regio wil natuurlijk ook dat iedereen die wil solliciteren dat probleemloos kan doen — ongeacht een beperking of de situatie waarin iemand je site bezoekt.
+Leuk dat jullie de toegankelijkheid van de recruitmentsite willen laten onderzoeken. Een ziekenhuis dat zorg biedt aan 260.000 mensen in de regio wil natuurlijk ook dat iedereen die wil solliciteren dat probleemloos kan doen, ongeacht een beperking of de situatie waarin iemand je site bezoekt.
 
 Een WCAG-audit geeft je een helder beeld van wat al goed gaat en waar verbeterpunten liggen. Geen vaag advies, maar concrete bevindingen met direct toepasbare oplossingen. Zo kan je team er meteen mee aan de slag.
 
-In dit document vind je ons aanbod. Ik hoop dat het je aanspreekt — we gaan graag voor jullie aan de slag!
+In dit document vind je ons aanbod. Ik hoop dat het je aanspreekt. We gaan graag voor jullie aan de slag!
 
 Hartelijke groet,
 **Julia Tol**
@@ -36,11 +36,11 @@ CEO Proper Access, senior WCAG-auditor
 
 {{< offerte-section title="Waarom een audit van je recruitmentsite?" subtitle="Wat levert het op?" bg="light" >}}
 
-1. **Iedereen kan solliciteren** — Een vacaturesite die niet goed werkt met een screenreader of toetsenbord sluit kandidaten uit. Denk aan iemand met een visuele beperking die via VoiceOver je vacatures wil bekijken, of iemand met een motorische beperking die je sollicitatieformulier niet kan invullen. Een audit brengt die drempels in kaart zodat je ze kunt wegnemen.
+1. **Iedereen kan solliciteren.** Een vacaturesite die niet goed werkt met een screenreader of toetsenbord sluit kandidaten uit. Bijvoorbeeld iemand met een visuele beperking die via VoiceOver je vacatures wil bekijken, of iemand met een motorische beperking die je sollicitatieformulier niet kan invullen. Een audit brengt die drempels in kaart zodat je ze kunt wegnemen.
 
-2. **Betere gebruikservaring voor iedereen** — Toegankelijkheidsproblemen zijn vaak ook usability-problemen. Te laag contrast betekent dat een kandidaat in de zon het scherm niet kan lezen. Een filterfunctie die niet logisch werkt met het toetsenbord frustreert iedereen. Door die drempels weg te nemen wordt het makkelijker om vacatures te vinden, te vergelijken en te solliciteren. Dat vertaalt zich in minder afhakers en meer kwalitatieve sollicitaties.
+2. **Betere gebruikservaring voor iedereen.** Toegankelijkheidsproblemen zijn vaak ook usability-problemen. Te laag contrast betekent dat een kandidaat in de zon het scherm niet kan lezen. Een filterfunctie die niet logisch werkt met het toetsenbord frustreert iedereen. Door die drempels weg te nemen wordt het makkelijker om vacatures te vinden, te vergelijken en te solliciteren. Dat vertaalt zich in minder afhakers en meer kwalitatieve sollicitaties.
 
-3. **Werkgeversimago** — St Jansdal staat voor zorg en aandacht. Een toegankelijke recruitmentsite past bij die waarden. Het laat zien dat inclusiviteit niet alleen in de zorg zit, maar ook in hoe je nieuwe collega's verwelkomt.
+3. **Werkgeversimago.** St Jansdal staat voor zorg en aandacht. Een toegankelijke recruitmentsite past bij die waarden. Het laat zien dat inclusiviteit niet alleen in de zorg zit, maar ook in hoe je nieuwe collega's verwelkomt.
 
 {{< /offerte-section >}}
 
@@ -49,13 +49,13 @@ CEO Proper Access, senior WCAG-auditor
 ### Analyse en bevindingen
 
 - **Duidelijk inzicht in knelpunten**, inclusief visuele voorbeelden (screenshots en indien relevant video-opnames)
-- **Knelpunten beschreven per pagina en per element** — een uniek formaat in Nederland
+- **Knelpunten beschreven per pagina en per element**: een uniek formaat in Nederland
 - **Uitleg van impact op gebruikers** (groot, medium, klein) en type fout (content of techniek)
 - **Per bevinding het relevante succescriterium** van WCAG 2.2 en EN 301 549
 
 ### Onderzoeksopzet en testmethoden
 
-- **Handmatige controle** op ca. 200 controlepunten per pagina in de steekproef
+- **Handmatige controle** op circa 200 controlepunten per pagina in de steekproef
 - **Testen in donkere en lichte modus**
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Screenreaders:** VoiceOver (Mac) en NVDA (Windows)
@@ -64,7 +64,7 @@ CEO Proper Access, senior WCAG-auditor
 ### Oplossingsrichtingen
 
 - **Praktische oplossingen per bevinding**, waar mogelijk uitgewerkt in HTML, CSS en JS
-- **We kijken verder dan de WCAG** — als iets technisch correct is maar toch verwarrend werkt, nemen we dat mee
+- **We kijken verder dan de WCAG**: als iets technisch correct is maar toch verwarrend werkt, nemen we dat mee
 - **Duidelijk onderscheid** tussen WCAG-issues en aanvullende adviezen
 
 ### Plan van aanpak
@@ -80,10 +80,10 @@ CEO Proper Access, senior WCAG-auditor
 
 Een audit is pas waardevol als je team ermee verder kan. Daarom stopt onze betrokkenheid niet bij het rapport:
 
-- **Onbeperkt vragen stellen** — je developers en designers kunnen ons altijd mailen als ze ergens niet uitkomen. Een kort mailtje kan uren uitzoekwerk schelen
-- **Meedenken over oplossingen** — we leveren geen buglijst af en wensen je succes. We denken actief mee over de slimste aanpak, ook als er meerdere routes zijn
-- **Altijd actuele kennis** — ons team studeert wekelijks op browser- en hulpsoftwaregedrag. Jullie profiteren van de meest recente inzichten, niet van kennis van vorig jaar
-- **Toegankelijkheidsverklaring** — we hebben een tool gebouwd waarmee je eenvoudig je toegankelijkheidsverklaring opstelt. Je vult alleen je bedrijfsgegevens in, de rest staat er al
+- **Onbeperkt vragen stellen**: je developers en designers kunnen ons altijd mailen als ze ergens niet uitkomen. Een kort mailtje kan uren uitzoekwerk schelen
+- **Meedenken over oplossingen**: we leveren geen buglijst af en wensen je succes. We denken actief mee over de slimste aanpak, ook als er meerdere routes zijn
+- **Altijd actuele kennis**: ons team studeert wekelijks op browser- en hulpsoftwaregedrag. Jullie profiteren van de meest recente inzichten, niet van kennis van vorig jaar
+- **Toegankelijkheidsverklaring**: we hebben een tool gebouwd waarmee je eenvoudig je toegankelijkheidsverklaring opstelt. Je vult alleen je bedrijfsgegevens in, de rest staat er al
 
 {{< /offerte-section >}}
 

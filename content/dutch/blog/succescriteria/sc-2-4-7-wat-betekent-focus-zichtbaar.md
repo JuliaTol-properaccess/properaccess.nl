@@ -6,7 +6,7 @@ categories:
 tags:
   - "2-4-7"
   - "focus"
-description: "WCAG 2.4.7 vereist een zichtbare focus-indicator op interactieve elementen. Lees waarom dit essentieel is en hoe je het implementeert."
+description: "WCAG 2.4.7 vraagt om een zichtbare focus-indicator op interactieve elementen. Lees waarom dit essentieel is en hoe je het toepast."
 aliases:
   - /sc-2-4-7-wat-betekent-focus-zichtbaar/
 ---
@@ -15,7 +15,7 @@ Stel je voor dat je een formulier invult met je muis, maar de cursor is onzichtb
 
 De focus-indicator -- meestal een rand of highlight rond het actieve element -- is voor toetsenbordgebruikers wat de muiscursor is voor muisgebruikers. Zonder kun je niet zien waar je bent.
 
-**WCAG succescriterium 2.4.7** (Focus Visible) eist dat elk interactief element een zichtbare focus-indicator heeft wanneer het toetsenbordfocus krijgt.
+**WCAG succescriterium 2.4.7** (Focus Visible) vraagt dat elk interactief element een zichtbare focus-indicator heeft wanneer het toetsenbordfocus krijgt.
 
 ## Waarom verwijderen websites de focus?
 
@@ -71,7 +71,7 @@ Een focus-indicator moet **duidelijk zichtbaar** zijn, op alle achtergrondkleure
 
 ### Waarom `:focus-visible` in plaats van `:focus`?
 
-`:focus-visible` toont de focusstijl alleen als de browser detecteert dat de gebruiker via het toetsenbord navigeert. Bij een muisklik verschijnt de ring niet. Zo krijgen toetsenbordgebruikers een duidelijke indicator zonder dat muisgebruikers gestoord worden.
+`:focus-visible` toont de focusstijl alleen als de browser herkent dat de gebruiker via het toetsenbord navigeert. Bij een muisklik verschijnt de ring niet. Zo krijgen toetsenbordgebruikers een duidelijke indicator zonder dat muisgebruikers gestoord worden.
 
 ```css
 /* Verwijder de standaard outline voor muiskliks */

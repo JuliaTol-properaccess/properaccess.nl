@@ -6,14 +6,14 @@ categories:
 tags:
   - "1-2-4"
   - "video"
-description: "WCAG 1.2.4 vereist live ondertiteling voor webinars en livestreams. Lees wat er verwacht wordt, veelgemaakte fouten en hoe je dit praktisch aanpakt."
+description: "WCAG 1.2.4 vraagt live ondertiteling voor webinars en livestreams. Lees wat er verwacht wordt, veelgemaakte fouten en hoe je dit praktisch aanpakt."
 aliases:
   - /sc-1-2-4-wat-betekent-ondertiteling-live/
 ---
 
 Je organiseert een webinar over je nieuwe product. Honderden mensen kijken mee. Maar voor de dove deelnemers is het alsof je een stomme film vertoont zonder tussenteksten. En voor de deelnemer die in een lawaaierig kantoor zit, is het onmogelijk om te volgen wat er gezegd wordt.
 
-**WCAG succescriterium 1.2.4** (Captions Live) eist dat live video's met gesproken tekst of betekenisvolle geluiden voorzien zijn van live ondertiteling.
+**WCAG succescriterium 1.2.4** (Captions Live) vraagt dat live video's met gesproken tekst of betekenisvolle geluiden live ondertiteling hebben.
 
 ## Het verschil met vooraf opgenomen ondertiteling
 
@@ -35,7 +35,7 @@ Dat maakt live ondertiteling technisch uitdagender, maar niet minder belangrijk.
 Platforms als Zoom, Microsoft Teams en YouTube Live bieden automatisch gegenereerde live ondertitels. De kwaliteit is de afgelopen jaren flink verbeterd, maar er zijn beperkingen:
 
 - Vaktermen worden vaak verkeerd herkend
-- Sprekerswisseling wordt niet altijd correct gedetecteerd
+- Sprekerswisseling wordt niet altijd correct herkend
 - Nederlands wordt minder goed ondersteund dan Engels
 - Bij slechte audiokwaliteit daalt de nauwkeurigheid snel
 

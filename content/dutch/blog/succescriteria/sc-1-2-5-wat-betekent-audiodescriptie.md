@@ -7,7 +7,7 @@ tags:
   - "1-2-3"
   - "1-2-5"
   - "video"
-description: "WCAG 1.2.5 verplicht audiodescriptie voor vooraf opgenomen video's (niveau AA). Lees het verschil met 1.2.3 en hoe je audiobeschrijvingen toevoegt."
+description: "WCAG 1.2.5 vraagt audiodescriptie voor vooraf opgenomen video's (niveau AA). Lees het verschil met 1.2.3 en hoe je audiobeschrijvingen toevoegt."
 aliases:
   - /sc-1-2-5-wat-betekent-audiodescriptie/
 ---
@@ -30,7 +30,7 @@ Voor welke optie je gaat, hangt dus onder andere af van het niveau dat je nastre
 
 ## Waarom is dit belangrijk?
 
-In video’s is vaak informatie te zien die je niet uit het geluid of de gesproken tekst kunt halen. Denk aan gezichtsuitdrukkingen, gebaren, grafieken, logo’s of teksten die in beeld verschijnen. Door een audiobeschrijving (ook wel: audiodescriptie) toe te voegen, maak je die visuele informatie toegankelijk voor mensen die blind of slechtziend zijn.
+In video’s is vaak informatie te zien die je niet uit het geluid of de gesproken tekst kunt halen. Bijvoorbeeld gezichtsuitdrukkingen, gebaren, grafieken, logo’s of teksten die in beeld verschijnen. Door een audiobeschrijving (ook wel: audiodescriptie) toe te voegen, maak je die visuele informatie toegankelijk voor mensen die blind of slechtziend zijn.
 
 ## Wat moet je doen?
 

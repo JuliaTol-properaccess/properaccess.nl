@@ -1,6 +1,6 @@
 ---
 title: "Privacyverklaring"
-meta_title: "Privacyverklaring — Proper Access"
+meta_title: "Privacyverklaring | Proper Access"
 description: "Hoe Proper Access omgaat met jouw persoonsgegevens. Transparant en volgens de AVG."
 date: 2022-02-12
 slug: "privacyverklaring"

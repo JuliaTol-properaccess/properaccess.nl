@@ -32,7 +32,7 @@ seo_keywords:
 
 Als je de afgelopen maanden iets hebt opgezocht over de European Accessibility Act, is de kans groot dat je een advertentie hebt gezien voor AccessiBe, UserWay, EqualWeb of accessiBle. De boodschap is overal hetzelfde: _"Maak je site WCAG-conform met één knop op je website. Vanaf vandaag. Geen developer nodig. Vanaf € 49 per maand."_
 
-Het klinkt te mooi om waar te zijn, en dat is het ook. In januari 2025 oordeelde de Amerikaanse Federal Trade Commission (FTC) dat AccessiBe's claims "false, misleading, or unsubstantiated" zijn, en legde een boete van $ 1 miljoen op. Daar kom ik verderop op terug. Voor nu is het belangrijkste om te weten dat dit geen mening van een criticus is — het is een formele uitspraak van een toezichthouder.
+Het klinkt te mooi om waar te zijn, en dat is het ook. In januari 2025 oordeelde de Amerikaanse Federal Trade Commission (FTC) dat AccessiBe's claims "false, misleading, or unsubstantiated" zijn, en legde een boete van $ 1 miljoen op. Daar kom ik verderop op terug. Voor nu is het belangrijkste om te weten dat dit geen mening van een criticus is: het is een formele uitspraak van een toezichthouder.
 
 In dit artikel leg ik uit waarom overlay-tools niet doen wat ze beloven, wat het onderzoek erover zegt, waarom ze soms zelfs averechts werken voor de groep die ze claimen te helpen, en wat je in plaats daarvan zou moeten doen. Ik probeer het feitelijk en zonder cynisme te brengen, maar het is geen geheim dat ik in deze discussie een mening heb.
 
@@ -40,14 +40,14 @@ Dit artikel is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-ea
 
 ## Wat is een overlay-tool?
 
-Een accessibility overlay is een stuk JavaScript dat je in één regel aan je site toevoegt. Na installatie verschijnt er meestal een rond icoontje rechtsonder in je scherm — een poppetje, een rolstoel, een oog. Klik je erop, dan kun je dingen aanpassen: lettergrootte, contrast, lettertype, animaties uit, links onderstrepen.
+Een accessibility overlay is een stuk JavaScript dat je in één regel aan je site toevoegt. Na installatie verschijnt er meestal een rond icoon rechtsonder in je scherm: een poppetje, een rolstoel, een oog. Klik je erop, dan kun je dingen aanpassen: lettergrootte, contrast, lettertype, animaties uit, links onderstrepen.
 
 De grote namen in deze markt zijn:
 
-- **AccessiBe** (Israël/VS) — de bekendste, ook degene die het meest agressief adverteert.
-- **UserWay** (Israël/VS) — vergelijkbare functionaliteit.
-- **EqualWeb** (Israël) — vergelijkbaar.
-- **accessiBle**, **MaxAccess**, **Audioeye** — kleinere spelers met dezelfde aanpak.
+- **AccessiBe** (Israël/VS): de bekendste, ook degene die het meest agressief adverteert.
+- **UserWay** (Israël/VS): vergelijkbare functionaliteit.
+- **EqualWeb** (Israël): vergelijkbaar.
+- **accessiBle**, **MaxAccess**, **Audioeye**: kleinere spelers met dezelfde aanpak.
 
 Sommige overlays beweren bovendien dat ze "AI" gebruiken om je site achter de schermen te repareren: alt-teksten genereren, ARIA-labels toevoegen, koppenstructuur aanpassen, fouten in formulieren oplossen.
 
@@ -57,7 +57,7 @@ De marketing van deze tools is ongeveer als volgt:
 
 > "Voldoe in 48 uur aan WCAG 2.1 AA, ADA en de European Accessibility Act. Geen developer nodig. Wij scannen je site, lossen issues automatisch op, en bieden bezoekers een widget waarmee ze de site naar hun voorkeur kunnen aanpassen. Volledige juridische bescherming inbegrepen."
 
-Voor een webshop-eigenaar die op zoek is naar een snelle oplossing voor de EAA-deadline klinkt dat aantrekkelijk. Vooral omdat een echte audit een paar duizend euro kost en weken duurt, terwijl een overlay vanaf ongeveer € 49 per maand begint en in een uur live staat. Let wel: dat instaptarief geldt voor kleine sites. Voor grote e-commerce sites met veel pagina's en pageviews lopen de kosten op tot **€ 2.000 per jaar of meer** — sommige enterprise-pakketten zitten daar nog ruim boven.
+Voor een webshop-eigenaar die op zoek is naar een snelle oplossing voor de EAA-deadline klinkt dat aantrekkelijk. Vooral omdat een echte audit een paar duizend euro kost en weken duurt, terwijl een overlay vanaf ongeveer € 49 per maand begint en in een uur live staat. Let wel: dat instaptarief geldt voor kleine sites. Voor grote e-commerce sites met veel pagina's en pageviews lopen de kosten op tot **€ 2.000 per jaar of meer**, en sommige enterprise-pakketten zitten daar nog ruim boven.
 
 Het probleem is dat die belofte niet waar is. Niet ten dele, maar fundamenteel.
 
@@ -65,7 +65,7 @@ Het probleem is dat die belofte niet waar is. Niet ten dele, maar fundamenteel.
 
 ### 1. Een widget verandert niets aan de onderliggende code
 
-Het belangrijkste om te begrijpen: een overlay raakt je HTML niet aan. Hij voegt een laagje toe boven op je site dat sommige visuele dingen kan veranderen voor de gebruiker die het widget actief gebruikt. Maar de onderliggende structuur — de koppen, de labels, de ARIA, de toetsenbord-toegankelijkheid van je componenten — blijft precies zoals ze is.
+Het belangrijkste om te begrijpen: een overlay raakt je HTML niet aan. Hij voegt een laagje toe boven op je site dat sommige visuele dingen kan veranderen voor de gebruiker die het widget actief gebruikt. Maar de onderliggende structuur, de koppen, de labels, de ARIA, de toetsenbord-toegankelijkheid van je componenten, blijft precies zoals ze is.
 
 Een screenreader-gebruiker komt op je site, en die ervaart je site niet via het widget. Hij ervaart hem via zijn eigen software (NVDA, JAWS, VoiceOver) die rechtstreeks de HTML uitleest. Als jouw productvariant-picker een rij alleen met de muis te bedienen is en het met het toetsenbord, dan helpt geen widget ter wereld daar iets aan.
 
@@ -75,7 +75,7 @@ De overlays die claimen je site automatisch te repareren, gebruiken AI om bijvoo
 
 - **Toetsentordbediening en correcte focus(volgorde)** de tool weet niet altijd wat de gewenste volgorde van handelingen die je wilt dat je klant op de website doorloopt. Neem geen risico met een tool die je klantreis gaat verstoren.
 - **ARIA-attributen automatisch toevoegen** is gevaarlijk. ARIA verkeerd gebruiken is vaak slechter dan helemaal geen ARIA. Onjuist gebruik van deze techniken zal meer problemen aan je website toevoegen.
-- **De automatische detectie mist context.** Of een afbeelding decoratief of informatief is, of een tabel een data-tabel is of een layout-tabel — dat zijn beslissingen die je niet uit code alleen kunt afleiden.
+- **De automatische herkenning mist context.** Of een afbeelding decoratief of informatief is, of een tabel een data-tabel is of een layout-tabel: dat zijn beslissingen die je niet uit code alleen kunt afleiden.
 
 ### 3. Het lost de fundamentele problemen niet op
 
@@ -109,7 +109,7 @@ Onafhankelijke accessibility-experts zoals [Adrian Roselli](https://adrianrosell
 
 ### De Overlay Fact Sheet
 
-Een groep van honderden accessibility-professionals heeft samen de [Overlay Fact Sheet](https://overlayfactsheet.com/) opgesteld — een onderbouwd overzicht van de kritiek op overlays, met links naar onderzoek, testresultaten en juridische uitspraken. Het is een primaire bron als je dieper wilt graven, of als je je leverancier of management wilt overtuigen.
+Een groep van honderden accessibility-professionals heeft samen de [Overlay Fact Sheet](https://overlayfactsheet.com/) opgesteld, een onderbouwd overzicht van de kritiek op overlays, met links naar onderzoek, testresultaten en juridische uitspraken. Het is een primaire bron als je dieper wilt graven, of als je je leverancier of management wilt overtuigen.
 
 ## Waarom werken ze soms juist averechts?
 
@@ -118,7 +118,7 @@ Hier zit een wrang punt. Voor sommige screenreader-gebruikers maakt een overlay 
 - **De overlay voegt extra elementen toe** die de screenreader voorleest voordat hij bij de eigenlijke content komt. Eerst hoor je "Toegankelijkheidswidget, druk op Enter om te openen", dan "Lettertype-instellingen", dan "Contrast-instellingen", en pas dán de productpagina.
 - **De overlay overschrijft soms ARIA-attributen** die de site al goed had. Een knop met een correct label krijgt opeens een verkeerd label van de overlay-AI.
 - **De overlay verstoort de focusvolgorde** door zijn eigen widget in te voegen.
-- **Sommige overlays detecteren een screenreader en proberen hun eigen "screen reader profile" te activeren**, wat zelden werkt zoals bedoeld en het normale gedrag van de native screenreader verstoort.
+- **Sommige overlays herkennen een screenreader en proberen hun eigen "screen reader profile" te activeren**, wat zelden werkt zoals bedoeld en het normale gedrag van de native screenreader verstoort.
 
 Dit is geen theoretische zorg. Het is een gedocumenteerde realiteit, en het is de reden waarom de meeste blinde gebruikers zeggen liever géén overlay op een site te willen zien.
 
@@ -132,7 +132,7 @@ In januari 2025 publiceerde de Amerikaanse Federal Trade Commission (FTC) een fo
 
 Dit is geen mening van een criticus. Het is een formele uitspraak van een toezichthouder na onderzoek. Als je ergens een signaal zoekt dat de claims van overlay-leveranciers niet kloppen, dan is het dit.
 
-### Murphy v. Eyebobs — de overlay werd verwijderd als onderdeel van de schikking
+### Murphy v. Eyebobs: de overlay werd verwijderd als onderdeel van de schikking
 
 Een van de bekendste Amerikaanse zaken is [Murphy v. Eyebobs](https://www.adatitleiii.com/wp-content/uploads/sites/25/2021/01/Murphy-v.-Eyebobs.pdf) uit 2021. Anthony Murphy, een blinde consument, kon Eyebobs' webshop niet gebruiken met zijn screenreader. Eyebobs had de AccessiBe-widget geïnstalleerd en beriep zich daarop als oplossing. De rechter in de U.S. District Court for the Western District of Pennsylvania ging daar niet in mee. De zaak werd geschikt, en in de schikking werd Eyebobs verplicht om:
 
@@ -148,7 +148,7 @@ Met andere woorden: de overlay was geen verdediging. De schikking vereiste preci
 
 Eerlijk is eerlijk: AccessiBe publiceert op hun eigen site ook voorbeelden van zaken waarin een overlay door een rechter wél werd geaccepteerd. In *Erkan v. David A. Hidalgo, MD, P.C.* bijvoorbeeld werd de zaak door een rechtbank in de Eastern District van New York geseponeerd, mede omdat het bedrijf een widget had geïnstalleerd. Dat is een echt voorbeeld en het hoort in een eerlijk overzicht thuis.
 
-Maar twee dingen. Eén: zulke uitspraken zijn zeldzaam en vaak zaak-specifiek (een rechter oordeelde dat er geen redelijke verwachting was dat de klacht zou terugkomen, niet dat de widget daadwerkelijk WCAG-conform maakte). Twee: het is precies waar de FTC vervolgens mee kwam — de claim dat een widget je sluitend beschermt, is commercieel overdreven. De analyses bij [Adrian Roselli](https://adrianroselli.com/2025/01/ftc-catches-up-to-accessibe.html) en [Lainey Feingold](https://www.lflegal.com/2025/01/ftc-accessibe-million-dollar-fine/) zijn de moeite waard voor wie de nuance wil lezen.
+Maar twee dingen. Eén: zulke uitspraken zijn zeldzaam en vaak zaak-specifiek (een rechter oordeelde dat er geen redelijke verwachting was dat de klacht zou terugkomen, niet dat de widget daadwerkelijk WCAG-conform maakte). Twee: het is precies waar de FTC vervolgens mee kwam, namelijk dat de claim dat een widget je sluitend beschermt, commercieel overdreven is. De analyses bij [Adrian Roselli](https://adrianroselli.com/2025/01/ftc-catches-up-to-accessibe.html) en [Lainey Feingold](https://www.lflegal.com/2025/01/ftc-accessibe-million-dollar-fine/) zijn de moeite waard voor wie de nuance wil lezen.
 
 ### En in Europa?
 
@@ -162,7 +162,7 @@ Drie stappen, in deze volgorde.
 
 ### 1. Laat een audit doen op je onderliggende site
 
-Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.100 tot € 4.500](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel ten opzichte van een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + retest hebben gehad én de echte issues opgelost.
+Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.100 tot € 4.500](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel tegenover een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + retest hebben gehad én de echte issues opgelost.
 
 ### 2. Los de issues op in de code, niet in een widget
 
@@ -172,7 +172,7 @@ Je developer pakt het rapport ter hand. Dingen als toetsenbord-toegankelijkheid,
 
 Na de fixes laat je een retest doen. Zo weet je dat de oplossingen werken én documenteer je dat je voldoet, wat nodig is voor je toegankelijkheidsverklaring. Daarna bouw je in dat nieuwe features standaard worden getest met toetsenbord en screenreader, zodat je niet langzaam weer verslechtert.
 
-Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](https://properaccess.nl/quickscan/) (495 euro excl. btw) waarin een senior auditor de meest opvallende problemen vindt.
+Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](https://properaccess.nl/quickscan/) (495 euro exclusief btw) waarin een senior auditor de meest opvallende problemen vindt.
 
 ## Veelgestelde vragen
 
@@ -180,7 +180,7 @@ Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je
 Vraag wie die experts zijn en of je hun namen mag opzoeken. In de praktijk blijken het vaak medewerkers van het overlay-bedrijf te zijn, of partners die op commissie werken. Onafhankelijke accessibility-organisaties (de Overlay Fact Sheet, WebAIM, IAAP, het Bureau of Internet Accessibility) zijn unaniem kritisch.
 
 **Helpt een overlay als ik geen budget heb voor een audit?**
-Het helpt minder dan niets-doen, omdat het je in slaap sust. Je betaalt elke maand, je denkt dat je gedekt bent, en je echte probleem groeit ondertussen door. Een mini-audit (495 euro excl. btw) is een betere eerste stap: je weet meteen waar je echt staat.
+Het helpt minder dan niets-doen, omdat het je in slaap sust. Je betaalt elke maand, je denkt dat je gedekt bent, en je echte probleem groeit ondertussen door. Een mini-audit (495 euro exclusief btw) is een betere eerste stap: je weet meteen waar je echt staat.
 
 **Maar AccessiBe heeft toch klanten met logo's van grote merken?**
 Ja, en sommige van die merken zijn vervolgens aangeklaagd. Logo-walls zijn geen bewijs van werking.

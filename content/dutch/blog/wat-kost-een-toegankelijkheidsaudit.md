@@ -28,11 +28,11 @@ keywords:
 
 ## De korte versie
 
-"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg — en die bijna geen enkel bureau beantwoordt op de website.
+"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg, en die bijna geen enkel bureau beantwoordt op de website.
 
 Een volledige toegankelijkheidsaudit kost bij de meeste bureaus tussen de **1.500 en 5.000 euro**. Bij Proper Access beginnen de prijzen vanaf circa 2.100 euro voor een eenvoudige website en lopen op tot circa 4.500 euro voor een complexe website.
 
-De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een webshop met filteropties, een inlogomgeving of een overheidssite met formulieren.
+De meeste websites vallen in de categorie "gemiddeld-complex", bijvoorbeeld een webshop met filteropties, een inlogomgeving of een overheidssite met formulieren.
 
 {{< /case-section >}}
 
@@ -40,13 +40,13 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 ## Typen onderzoek en wat ze kosten
 
-**Mini-audit** (495 euro excl. btw) — een senior auditor bekijkt je site met de hand. Geen volledige audit, maar je weet waar je staat.
+**Mini-audit** (495 euro exclusief btw): een senior auditor bekijkt je site met de hand. Geen volledige audit, maar je weet waar je staat.
 
-**Content-audit** (v.a. 1.500 euro) — gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
+**Content-audit** (v.a. 1.500 euro): gericht op teksten, afbeeldingen, video's en documenten. Ideaal als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid.
 
-**Techniekaudit** (v.a. 2.250 euro) — HTML-structuur, ARIA, toetsenbordbediening, formuliervalidatie. Het onderzoek dat je developer nodig heeft.
+**Techniekaudit** (v.a. 2.250 euro): HTML-structuur, ARIA, toetsenbordbediening, formuliervalidatie. Het onderzoek dat je developer nodig heeft.
 
-**Volledig WCAG-EM onderzoek** (v.a. 2.100 euro) — alle 55 succescriteria van WCAG 2.2, volgens de internationaal erkende WCAG-EM methodiek. Het meest complete onderzoek.
+**Volledig WCAG-EM onderzoek** (v.a. 2.100 euro): alle 55 succescriteria van WCAG 2.2, volgens de internationaal erkende WCAG-EM methodiek. Het meest complete onderzoek.
 
 {{< /case-section >}}
 
@@ -56,17 +56,17 @@ De meeste websites vallen in de categorie "gemiddeld-complex" — denk aan een w
 
 Na een audit bieden we altijd twee optionele extra's aan:
 
-- **Nabespreking** (1 uur, 150 euro) — we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
-- **Retest** (vanaf 600 euro, content-retest 300 euro) — nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
+- **Nabespreking** (1 uur, 150 euro): we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
+- **Retest** (vanaf 600 euro, content-retest 300 euro): nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
 
 ## Prijstabel volledig onderzoek
 
 | Type website | Indicatieprijs |
 |---|---|
-| Eenvoudige website (informatief, weinig interactie) | Vanaf ca. 2.100 euro |
-| Gemiddelde website (formulieren, enige interactie) | Vanaf ca. 2.850 euro |
-| Gemiddeld-complexe website (webshop, inlog, filters) | Vanaf ca. 3.600 euro |
-| Complexe website (maatwerkapplicatie, veel interactie) | Vanaf ca. 4.500 euro |
+| Eenvoudige website (informatief, weinig interactie) | Vanaf circa 2.100 euro |
+| Gemiddelde website (formulieren, enige interactie) | Vanaf circa 2.850 euro |
+| Gemiddeld-complexe website (webshop, inlog, filters) | Vanaf circa 3.600 euro |
+| Complexe website (maatwerkapplicatie, veel interactie) | Vanaf circa 4.500 euro |
 
 {{< /case-section >}}
 
@@ -74,15 +74,15 @@ Na een audit bieden we altijd twee optionele extra's aan:
 
 ## Waar je op moet letten bij offertes
 
-**WCAG-EM methodiek** — vraag altijd of het onderzoek volgens WCAG-EM wordt uitgevoerd. Zonder deze methodiek weet je niet of het onderzoek volledig is.
+**WCAG-EM methodiek.** Vraag altijd of het onderzoek volgens WCAG-EM wordt uitgevoerd. Zonder deze methodiek weet je niet of het onderzoek volledig is.
 
-**Rapport per element** — de meeste bureaus rapporteren per succescriterium ("SC 1.1.1 is niet voldaan"). Wij rapporteren per element: je developer ziet precies wat er moet veranderen, op welke pagina.
+**Rapport per element.** De meeste bureaus rapporteren per succescriterium ("SC 1.1.1 is niet voldaan"). Wij rapporteren per element: je developer ziet precies wat er moet veranderen, op welke pagina.
 
-**Wie voert het uit?** — bij Proper Access voert de senior auditor het onderzoek zelf uit. Direct contact, geen tussenpersonen.
+**Wie voert het uit?** Bij Proper Access voert de senior auditor het onderzoek zelf uit. Direct contact, geen tussenpersonen.
 
-**Handmatig testen** — automatische tools vinden maximaal 30% van alle problemen. Vraag altijd of er handmatig getest wordt.
+**Handmatig testen.** Automatische tools vinden maximaal 30% van alle problemen. Vraag altijd of er handmatig getest wordt.
 
-**Onafhankelijkheid** — wees alert op bureaus die zowel auditen als bouwen. Dat is een belangenconflict.
+**Onafhankelijkheid.** Wees alert op bureaus die zowel auditen als bouwen. Dat is een belangenconflict.
 
 {{< /case-section >}}
 
@@ -100,7 +100,7 @@ Nee. De European Accessibility Act vereist dat je website voldoet aan WCAG 2.1 n
 <details class="faq-item">
 <summary class="faq-question">Hoe vaak moet ik een audit laten doen?</summary>
 <div class="faq-answer">
-Na de eerste audit en het doorvoeren van verbeteringen, adviseer ik een retest. Daarna is een jaarlijkse check verstandig — zeker als je regelmatig content toevoegt of functionaliteit wijzigt.
+Na de eerste audit en het doorvoeren van verbeteringen, adviseer ik een retest. Daarna is een jaarlijkse check verstandig, zeker als je regelmatig content toevoegt of functionaliteit wijzigt.
 </div>
 </details>
 
@@ -120,6 +120,6 @@ Dan is een audit op het ontwerp of de staging-omgeving vaak zinvoller dan wachte
 
 ## Wil je weten wat een audit voor jouw website kost?
 
-Begin met onze [mini-audit](/quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs — we reageren binnen een werkdag.
+Begin met onze [mini-audit](/quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs, we reageren binnen een werkdag.
 
 {{< /case-section >}}

@@ -1,6 +1,6 @@
 ---
 title: "Digitale toegankelijkheid"
-meta_title: "Wat is digitale toegankelijkheid? — Proper Access"
+meta_title: "Wat is digitale toegankelijkheid? | Proper Access"
 description: "Hoeveel mensen in Nederland hebben een beperking en waarom is digitale toegankelijkheid zo belangrijk? Feiten en cijfers op een rij."
 date: 2021-11-09
 slug: "digitale-toegankelijkheid"
@@ -8,7 +8,7 @@ url: "/digitale-toegankelijkheid/"
 
 ---
 
-Uit [onderzoeken](https://jeroenhulscher.nl/hoeveel-mensen-hebben-een-beperking/) blijkt dat er in Nederland tussen de 2.000.000 en 4.500.000 mensen zijn die op een bepaald moment een beperking hebben. Hierbij gaat het om ongeveer 500.000 mensen met een visuele beperking, ook ongeveer 500.000 mensen hebben een auditieve beperking. Daarnaast zijn er iets meer dan een miljoen mensen met een verstandelijke beperking en 1.6 miljoen mensen met een fysieke beperking. Ongeveer 800.000 mensen hebben dyslexie en er zijn ruim 1.5 miljoen mensen laaggeletterd. En dan zijn er nog 3 miljoen ouderen (65+).
+Uit [onderzoeken](https://jeroenhulscher.nl/hoeveel-mensen-hebben-een-beperking/) blijkt dat er in Nederland tussen de 2.000.000 en 4.500.000 mensen zijn die op een bepaald moment een beperking hebben. Hierbij gaat het om ongeveer 500.000 mensen met een visuele beperking, ook ongeveer 500.000 mensen hebben een auditieve beperking. Daarnaast zijn er iets meer dan een miljoen mensen met een verstandelijke beperking en 1,6 miljoen mensen met een fysieke beperking. Ongeveer 800.000 mensen hebben dyslexie en er zijn ruim 1,5 miljoen mensen laaggeletterd. En dan zijn er nog 3 miljoen ouderen (65+).
 
 ## Waarom is dit nodig?
 
@@ -20,7 +20,7 @@ Digitale toegankelijkheid heeft veel overlap met zoekmachineoptimalisatie (SEO),
 
 ### Beter vindbaar door een zoekmachine
 
-Gebruik je de juiste elementen voor de kopteksten? Komt de visuele structuur van de tekst overeen met de structuur van deze informatie in de HTML? Door middel van 'goede' kopjes laat je Google weten waar de pagina over gaat. Een blinde gebruiker genereert een lijst met kopjes om de inhoud van de pagina te scannen of sneller te navigeren.
+Gebruik je de juiste elementen voor de kopteksten? Komt de visuele structuur van de tekst overeen met de structuur van deze informatie in de HTML? Met 'goede' kopjes laat je Google weten waar de pagina over gaat. Een blinde gebruiker genereert een lijst met kopjes om de inhoud van de pagina te scannen of sneller te navigeren.
 
 ### Beter vindbaar in afbeeldingen
 
@@ -36,7 +36,7 @@ Een goed contrast is belangrijk om prettig te kunnen lezen. De teksten worden he
 
 ### Formulieren
 
-De formulieren zijn technisch het moeilijkste onderdeel van elke website, waar regelmatig problemen voorkomen. Denk erbij aan de registratie- en loginformulier en alle stappen van het verkoopproces. Formulieren vormen vaak een grote barrière voor mensen met cognitieve en motorische beperkingen en blinde gebruikers. Het check-out proces moet intuïtief zijn, toegankelijk, makkelijk te begrijpen en te bedienen.
+De formulieren zijn technisch het moeilijkste onderdeel van elke website, waar regelmatig problemen voorkomen. Bijvoorbeeld het registratie- en loginformulier en alle stappen van het verkoopproces. Formulieren vormen vaak een grote barrière voor mensen met cognitieve en motorische beperkingen en blinde gebruikers. Het check-out proces moet intuïtief zijn, toegankelijk, makkelijk te begrijpen en te bedienen.
 
 ### Beter bedienbaar op mobiel en tablet
 

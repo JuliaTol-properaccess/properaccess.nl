@@ -10,7 +10,7 @@ aliases:
   - /sc-1-4-13-wat-betekent-inhoud-bij-hover-of-focus/
 ---
 
-Sommige informatie verschijnt pas wanneer je ergens met de muis overheen gaat (hover) of wanneer je een element selecteert met je toetsenbord (focus). Denk aan tooltips, uitklapmenu’s of tekstballonnetjes. Dit kan verwarrend zijn voor gebruikers die geen muis gebruiken, motorische beperkingen hebben of een schermlezer gebruiken.
+Sommige informatie verschijnt pas wanneer je ergens met de muis overheen gaat (hover) of wanneer je een element selecteert met je toetsenbord (focus). Bijvoorbeeld tooltips, uitklapmenu’s of tekstballonnetjes. Dit kan verwarrend zijn voor gebruikers die geen muis gebruiken, motorische beperkingen hebben of een schermlezer gebruiken.
 
 Daarom zegt WCAG: **zorg dat deze extra informatie altijd toegankelijk is en makkelijk te bedienen**.
 

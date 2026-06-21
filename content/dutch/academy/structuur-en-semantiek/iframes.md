@@ -10,13 +10,13 @@ layout: "academy"
 
 ## Wat is een iframe?
 
-Een `<iframe>` plaatst een complete externe pagina binnen jouw pagina. Denk aan YouTube-video's, Google Maps-kaarten, betaalformulieren of chatwidgets. De content in een iframe heeft een eigen document, eigen focusvolgorde en vaak een eigen oorsprong.
+Een `<iframe>` plaatst een complete externe pagina binnen jouw pagina. Bijvoorbeeld YouTube-video's, Google Maps-kaarten, betaalformulieren of chatwidgets. De content in een iframe heeft een eigen document, eigen focusvolgorde en vaak een eigen oorsprong.
 
 Voor hulpsoftware is een iframe een blok dat je kunt betreden of overslaan. Maar dan moet de gebruiker wel weten **wat** er in dat blok zit. Zonder beschrijving meldt een schermlezer alleen "frame" -- en dan moet de gebruiker erin navigeren om te ontdekken wat het is.
 
 ## Waarom het ertoe doet
 
-WCAG succescriterium 4.1.2 (Naam, Rol, Waarde) vereist dat elk onderdeel van de interface een programmatisch bepaalbare naam heeft. Voor iframes betekent dat: een `title`-attribuut dat de inhoud beschrijft.
+WCAG succescriterium 4.1.2 (Naam, Rol, Waarde) vraagt dat elk onderdeel van de interface een programmatisch bepaalbare naam heeft. Voor iframes betekent dat: een `title`-attribuut dat de inhoud beschrijft.
 
 Daarnaast speelt SC 2.4.1 (Blokken omzeilen) een rol. Een iframe is een blok content. De gebruiker moet kunnen beslissen: ga ik dit blok in, of sla ik het over? Dat kan alleen als het iframe een duidelijke naam heeft.
 

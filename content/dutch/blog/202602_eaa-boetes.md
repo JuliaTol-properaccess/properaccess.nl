@@ -40,8 +40,8 @@ Belangrijke punten:
 
 - Producten moeten ontworpen zijn voor maximaal toegankelijk gebruik, inclusief toegankelijke gebruiksinformatie.
 - Overtredingen kunnen leiden tot:
-  - Klasse A-boete (max. €5.000) of gevangenisstraf tot 6 maanden
-  - Zwaardere boetes tot €60.000 of 18 maanden gevangenisstraf bij ernstige inbreuken
+  - Klasse A-boete (maximaal € 5.000) of gevangenisstraf tot 6 maanden
+  - Zwaardere boetes tot € 60.000 of 18 maanden gevangenisstraf bij ernstige inbreuken
 - Handhaving: zie deel 7 van de regelgeving
 
 Bron:
@@ -60,7 +60,7 @@ Belangrijke punten:
 
 Sancties:
 
-- Boetes tot €100.000
+- Boetes tot € 100.000
 - Mogelijke beperkingen of verbod op de markttoegang bij niet-naleving
 
 Bronnen:
@@ -72,8 +72,8 @@ Bronnen:
 
 In Oostenrijk is de EAA geïntegreerde in de bestaande wetgeving voor gelijke behandeling van mensen met een beperking. De boetes zijn stevig, met een aparte maxima voor kleine bedrijven. Bij ernstige overtredingen kan een dienst worden stilgelegd.
 
-- Boetes tot €80.000
-- Voor kleine bedrijven tot €50.000
+- Boetes tot € 80.000
+- Voor kleine bedrijven tot € 50.000
 - Mogelijkheid tot verbod op diensten of netwerken bij ernstige overtredingen
 
 Bron:
@@ -90,7 +90,7 @@ Belangrijke punten:
 
 Boetes:
 
-- Van €25.000 tot €250.000
+- Van € 25.000 tot € 250.000
 - Mogelijke productverboden of dienstonderbrekingen
 
 Bronnen:
@@ -104,7 +104,7 @@ België hanteert een strenge aanpak. De handhaving ligt onder andere bij de fede
 
 Belangrijke punten:
 
-- Boetes kunnen oplopen tot €200.000 of 6% van de jaaromzet
+- Boetes kunnen oplopen tot € 200.000 of 6% van de jaaromzet
 
 Bron: Belgian Web Accessibility https://accessibility.belgium.be/nl/nieuws/accessibility-act-wat-dat
 
@@ -114,8 +114,8 @@ Luxemburg heeft een speciale toezichthouder opgericht voor de toegankelijkheid v
 
 Belangrijke punten:
 
-- Administratieve boetes van €250 tot €15.000
-- Strafrechtelijke sancties tot €500.000
+- Administratieve boetes van € 250 tot € 15.000
+- Strafrechtelijke sancties tot € 500.000
 - Verbod op niet-conforme producten behoort tot de mogelijkheid
 
 Bron: Toegankelijkheid van producten en diensten (OSAPS)
@@ -131,9 +131,9 @@ Belangrijke punten:
 
 Boetes:
 
-- Tot €30.000 (klein)
-- Tot €150.000 (ernstig)
-- Tot €600.000 (zeer ernstig)
+- Tot € 30.000 (klein)
+- Tot € 150.000 (ernstig)
+- Tot € 600.000 (zeer ernstig)
 
 Bronnen:
 
@@ -147,8 +147,8 @@ In Italië is de EAA gekoppeld aan de bestaande toegankelijkheidswetgeving. Voor
 Belangrijke punten:
 
 - Boetes:
-  - €5.000 tot €40.000 voor reguliere bedrijven
-  - Tot 5% van de jaaromzet voor grote bedrijven (> €500 miljoen omzet)
+  - € 5.000 tot € 40.000 voor reguliere bedrijven
+  - Tot 5% van de jaaromzet voor grote bedrijven (> € 500 miljoen omzet)
 - Producten of diensten kunnen van de markt worden gehaald
 
 Bronnen:
@@ -177,7 +177,7 @@ Belangrijke punten:
 
 - Rapportage aan Vlaamse autoriteiten
 - Eigen certificeringskaders
-- Volgens diverse bronnen en interpretaties kunnen de boetes in België variëren, bijvoorbeeld tussen ongeveer €1.000 tot €50.000 per overtreding.
+- Volgens diverse bronnen en interpretaties kunnen de boetes in België variëren, bijvoorbeeld tussen ongeveer € 1.000 tot € 50.000 per overtreding.
 
 Bronnen:
 
@@ -189,7 +189,7 @@ Bronnen:
 Portugal hanteert hoge boetes en bij structurele overtredingen kunnen beperkingen worden opgelegd.
 Belangrijke punten:
 
-- Boetes tussen €5.000 en €100.000
+- Boetes tussen € 5.000 en € 100.000
 - Operationele beperkingen bij niet-naleving
 - Verplichte Portugeestalige documentatie
 

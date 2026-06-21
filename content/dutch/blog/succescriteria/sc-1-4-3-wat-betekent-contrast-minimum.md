@@ -18,13 +18,13 @@ aliases:
 
 ## Waar gaat het over?
 
-Teksten moeten genoeg contrast hebben: de tekst en de achtergrond moeten in kleur en helderheid voldoende van elkaar verschillen. Dit kun je meten. WCAG schrijft specifieke contrastverhoudingen voor.
+Teksten moeten genoeg contrast hebben: de tekst en de achtergrond moeten in kleur en helderheid voldoende van elkaar verschillen. Dit kun je meten. De richtlijn noemt specifieke contrastverhoudingen.
 
 [Officiële tekst van 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum)
 
 ## Waarom is dit belangrijk?
 
-Mensen met een visuele beperking of oudere bezoekers hebben vaak moeite om tekst te lezen als er te weinig contrast is tussen tekst en achtergrond. Denk aan lichtgrijze letters op een witte achtergrond: mooi, maar voor veel mensen bijna onleesbaar. Door minimale contrastverhoudingen aan te houden, zorg je dat teksten voor iedereen leesbaar zijn.
+Mensen met een visuele beperking of oudere bezoekers hebben vaak moeite om tekst te lezen als er te weinig contrast is tussen tekst en achtergrond. Bijvoorbeeld lichtgrijze letters op een witte achtergrond: mooi, maar voor veel mensen bijna onleesbaar. Door minimale contrastverhoudingen aan te houden, zorg je dat teksten voor iedereen leesbaar zijn.
 
 ## Wat moet je doen?
 

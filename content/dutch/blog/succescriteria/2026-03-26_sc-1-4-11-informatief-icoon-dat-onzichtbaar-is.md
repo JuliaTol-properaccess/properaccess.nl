@@ -9,7 +9,7 @@ tags:
   - "1-4-11"
   - "contrast"
   - "ui-componenten"
-description: "Informatief icoon dat onzichtbaar is — WCAG 1.4.11 Contrast van niet-tekstuele content (post 1/7)"
+description: "Informatief icoon dat onzichtbaar is: WCAG 1.4.11 Contrast van niet-tekstuele content (post 1/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -24,9 +24,9 @@ Tenminste, als je het kunt zien.
 
 Lichtgrijs (#BBBBBB) op wit. Contrast: 2,3:1. Vereist: 3:1.
 
-Dit is geen tekstcontrast — dit gaat over niet-tekstuele elementen. Iconen, randen, indicatoren. Alles wat informatie geeft zonder tekst te zijn.
+Dit is geen tekstcontrast. Dit gaat over niet-tekstuele elementen. Iconen, randen, indicatoren. Alles wat informatie geeft zonder tekst te zijn.
 
-Een hamburgericoon dat je niet kunt onderscheiden van de achtergrond = een menu dat je niet kunt vinden. En het hamburgericoon is niet de enige. Denk aan:
+Een hamburgericoon dat je niet kunt onderscheiden van de achtergrond = een menu dat je niet kunt vinden. En het hamburgericoon is niet de enige. Bijvoorbeeld:
 
 - Pijltjes die een dropdown aangeven
 - Een vergrootglas voor zoeken

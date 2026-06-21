@@ -19,7 +19,7 @@ sectie_layout: true
 banner:
   badge: "WCAG 2.2 en BDTO"
   title: "Een website waar iedereen zelfstandig een kaartje kan kopen"
-  content: "Wij helpen je in heldere stappen naar een toegankelijke website — met een plan dat je team kan uitvoeren."
+  content: "Wij helpen je in heldere stappen naar een toegankelijke website, met een plan dat je team kan uitvoeren."
   bullets:
     - "**Per element:** wat zijn de issues en hoe los je ze op?"
     - "**Plan van aanpak** uitgewerkt per team"
@@ -32,7 +32,7 @@ banner:
 
 faqs:
   - question: "Toetsen jullie ook ticketingsystemen en kalenderwidgets?"
-    answer: "Ja. We testen het complete bezoekerspad: van programma bekijken tot kaartjes kopen. Externe widgets nemen we mee. Als een widget niet toegankelijk is, geven we advies over hoe je met de leverancier in gesprek kunt gaan — of we zoeken een alternatief."
+    answer: "Ja. We testen het complete bezoekerspad: van programma bekijken tot kaartjes kopen. Externe widgets nemen we mee. Als een widget niet toegankelijk is, geven we advies over hoe je met de leverancier in gesprek kunt gaan, of we zoeken een alternatief."
   - question: "Kunnen jullie video's en digitale collecties beoordelen?"
     answer: "Ja. We controleren video's op ondertiteling, audiodescriptie en toegankelijke mediaspelers. Digitale collecties beoordelen we op zoekfunctionaliteit, toetsenbordnavigatie en beschrijvende alt-teksten."
   - question: "Is het mogelijk om te verbeteren zonder een volledig redesign?"
@@ -44,5 +44,5 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de inhoud, niet via een account manager."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf ca. € 2.100. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.100. We geven je altijd vooraf een duidelijke indicatie."
 ---

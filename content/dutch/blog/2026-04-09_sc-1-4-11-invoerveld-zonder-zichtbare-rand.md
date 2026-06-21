@@ -9,7 +9,7 @@ tags:
   - "1-4-11"
   - "contrast"
   - "ui-componenten"
-description: "Invoerveld zonder zichtbare rand — WCAG 1.4.11 Contrast van niet-tekstuele content (post 2/7)"
+description: "Invoerveld zonder zichtbare rand, WCAG 1.4.11 Contrast van niet-tekstuele content (post 2/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

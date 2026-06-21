@@ -26,7 +26,7 @@ keywords:
   - toegankelijkheid attracties
 ---
 
-Musea, theaters, festivals en attractieparken hebben een bijzondere positie als het gaat om digitale toegankelijkheid. Ze zijn van nature bezig met beleving en inclusie — maar hun websites en digitale systemen lopen vaak achter.
+Musea, theaters, festivals en attractieparken hebben een bijzondere positie als het gaat om digitale toegankelijkheid. Ze zijn van nature bezig met beleving en inclusie, maar hun websites en digitale systemen lopen vaak achter.
 
 Ik werk al jaren met culturele instellingen aan digitale toegankelijkheid. In dit artikel deel ik de specifieke uitdagingen die ik tegenkom en hoe je ze aanpakt.
 
@@ -34,15 +34,15 @@ Ik werk al jaren met culturele instellingen aan digitale toegankelijkheid. In di
 
 Culturele instellingen hebben te maken met een combinatie van factoren die je bij andere websites minder ziet:
 
-1. **Ticketingsystemen van derden** — de meeste musea en theaters gebruiken externe ticketingsoftware. Die software is niet altijd toegankelijk, en je hebt beperkte controle over de interface.
+1. **Ticketingsystemen van derden.** De meeste musea en theaters gebruiken externe ticketingsoftware. Die software is niet altijd toegankelijk, en je hebt beperkte controle over de interface.
 
-2. **Visueel rijke websites** — cultuur draait om beeld en beleving. Dat leidt tot websites met veel grote afbeeldingen, video's, animaties en interactieve elementen. Mooi, maar niet altijd toegankelijk.
+2. **Visueel rijke websites.** Cultuur draait om beeld en beleving. Dat leidt tot websites met veel grote afbeeldingen, video's, animaties en interactieve elementen. Mooi, maar niet altijd toegankelijk.
 
-3. **Interactieve plattegronden** — veel musea hebben een digitale plattegrond van het gebouw. Die is bijna nooit toegankelijk voor schermlezers.
+3. **Interactieve plattegronden.** Veel musea hebben een digitale plattegrond van het gebouw. Die is bijna nooit toegankelijk voor schermlezers.
 
-4. **Wisselende content** — tentoonstellingen veranderen regelmatig. Dat betekent voortdurend nieuwe pagina's, nieuwe afbeeldingen, nieuwe beschrijvingen. Elke keer opnieuw moet de content toegankelijk zijn.
+4. **Wisselende content.** Tentoonstellingen veranderen regelmatig. Dat betekent voortdurend nieuwe pagina's, nieuwe afbeeldingen, nieuwe beschrijvingen. Elke keer opnieuw moet de content toegankelijk zijn.
 
-5. **Publieke functie** — musea en theaters zijn er voor iedereen. Dat maakt toegankelijkheid niet alleen een wettelijke verplichting, maar een kernwaarde.
+5. **Publieke functie.** Musea en theaters zijn er voor iedereen. Dat maakt toegankelijkheid niet alleen een wettelijke verplichting, maar een kernwaarde.
 
 ## De EAA en de culturele sector
 
@@ -50,9 +50,9 @@ Sinds juni 2025 geldt de European Accessibility Act (EAA) voor e-commercedienste
 
 Maar het gaat verder dan alleen ticketing. De EAA is van toepassing op de hele keten van online dienstverlening:
 
-- **Ticketverkoop** — het volledige proces van selecteren tot betalen
-- **Online reserveringen** — rondleidingen, workshops, groepsbezoeken
-- **Digitale informatievoorziening** — tentoonstellingspagina's, openingstijden, routebeschrijvingen
+- **Ticketverkoop:** het volledige proces van selecteren tot betalen
+- **Online reserveringen:** rondleidingen, workshops, groepsbezoeken
+- **Digitale informatievoorziening:** tentoonstellingspagina's, openingstijden, routebeschrijvingen
 - **Nieuwsbrieven en e-mailcommunicatie**
 
 Het Besluit digitale toegankelijkheid overheid (BDTO) geldt daarnaast voor musea en instellingen die publiek gefinancierd zijn. Die moeten ook hun websites en apps toegankelijk maken.
@@ -74,7 +74,7 @@ Dit is het grootste pijnpunt. Bijna alle culturele instellingen gebruiken extern
 
 ### 2. Interactieve kaarten en plattegronden
 
-Een digitale kaart van je museum of festivalterrein is handig — maar alleen als je hem kunt gebruiken. De meeste interactieve kaarten zijn gebouwd met canvas-elementen of SVG zonder tekstalternatieven. Een schermlezer leest niets.
+Een digitale kaart van je museum of festivalterrein is handig, maar alleen als je hem kunt gebruiken. De meeste interactieve kaarten zijn gebouwd met canvas-elementen of SVG zonder tekstalternatieven. Een schermlezer leest niets.
 
 **Wat je kunt doen:** Bied naast de interactieve kaart een toegankelijk alternatief aan. Dat kan een lijst zijn van alle zalen/locaties met beschrijvingen, of een eenvoudige tabel. De interactieve kaart is een aanvulling, niet de enige manier om de informatie te krijgen.
 
@@ -90,7 +90,7 @@ Digitale audiogidsen worden steeds populairder. Maar de apps en webapplicaties d
 
 ### 4. Tentoonstellingspagina's met veel beeldmateriaal
 
-Een tentoonstellingspagina bevat typisch 10 tot 30 afbeeldingen van kunstwerken, sfeerbeelden en installatiefoto's. Die hebben allemaal alt-teksten nodig — en bij kunst is dat niet triviaal.
+Een tentoonstellingspagina bevat typisch 10 tot 30 afbeeldingen van kunstwerken, sfeerbeelden en installatiefoto's. Die hebben allemaal alt-teksten nodig, en bij kunst is dat niet triviaal.
 
 **Hoe schrijf je alt-tekst voor kunst?**
 
@@ -100,15 +100,15 @@ Gebruik de [alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/) om te bepalen welk 
 
 ### 5. Video zonder ondertiteling
 
-Veel musea en culturele instellingen maken promotievideo's, rondleidingsvideo's en documentaires. Ondertiteling ontbreekt vaak — of is automatisch gegenereerd zonder controle.
+Veel musea en culturele instellingen maken promotievideo's, rondleidingsvideo's en documentaires. Ondertiteling ontbreekt vaak, of is automatisch gegenereerd zonder controle.
 
 **De eis:** elke vooraf opgenomen video met spraak moet ondertiteling hebben (SC 1.2.2). Live video ook, maar dat is niveau AA en mag "op basis van best effort."
 
-**Tip:** automatische ondertiteling (via YouTube of andere platforms) is een goed startpunt, maar controleer altijd de output. Eigennamen, kunsttermen en niet-Nederlandse woorden gaan vaak fout.
+**Tip:** automatische ondertiteling via YouTube of andere platforms is een goed startpunt, maar controleer altijd de output. Eigennamen, kunsttermen en niet-Nederlandse woorden gaan vaak fout.
 
 ### 6. Nieuwsbrieven en e-mails
 
-De meeste culturele instellingen versturen regelmatig nieuwsbrieven. Die worden vaak opgemaakt in e-mailtemplates met veel afbeeldingen en weinig structuur. Koppen zijn visueel, maar niet als koppen gemarkeerd. Afbeeldingen missen alt-teksten. Links zijn niet beschrijvend ("klik hier").
+De meeste culturele instellingen versturen regelmatig nieuwsbrieven. Die worden vaak opgemaakt in e-mailtemplates met veel afbeeldingen en weinig structuur. Koppen zijn visueel, maar niet als koppen gemarkeerd. Afbeeldingen missen alt-teksten. Links zijn niet beschrijvend, bijvoorbeeld "klik hier".
 
 **Wat je kunt doen:** Zorg dat je e-mailtemplate koppen gebruikt (H1, H2), dat afbeeldingen alt-teksten hebben en dat links beschrijvend zijn ("Bekijk de zomerprogrammering" in plaats van "Klik hier").
 
@@ -122,7 +122,7 @@ Maak een lijst van alle digitale diensten die je aanbiedt:
 - Ticketingsysteem (welke leverancier?)
 - Audiogids-app
 - Nieuwsbriefsysteem
-- Sociale media (beperkte invloed, maar relevant)
+- Sociale media, waar je invloed beperkt maar wel relevant is
 
 ### Stap 2: Test de kritieke routes
 
@@ -138,16 +138,16 @@ Na de eerste verbeteringen is een volledige WCAG-EM audit de volgende stap. Die 
 
 ### Stap 5: Train je team
 
-Toegankelijkheid is niet alleen een technisch verhaal. Je redacteuren, marketeers en educatief medewerkers moeten weten hoe ze toegankelijke content maken. Elke nieuwe tentoonstelling, elke nieuwe pagina, elk nieuw social media-bericht — het moet elke keer weer goed.
+Toegankelijkheid is niet alleen een technisch verhaal. Je redacteuren, marketeers en educatief medewerkers moeten weten hoe ze toegankelijke content maken. Elke nieuwe tentoonstelling, elke nieuwe pagina, elk nieuw social media-bericht: het moet elke keer weer goed.
 
 ## Onze ervaring in de culturele sector
 
-We werken al jaren samen met musea en culturele instellingen. We kennen de specifieke uitdagingen — van ticketingsystemen die je niet kunt aanpassen, tot plattegronden die opnieuw moeten, tot audiogids-apps die niet voldoen.
+We werken al jaren samen met musea en culturele instellingen. We kennen de specifieke uitdagingen: van ticketingsystemen die je niet kunt aanpassen, tot plattegronden die opnieuw moeten, tot audiogids-apps die niet voldoen.
 
 Wil je weten waar jouw instelling staat? Begin met een [mini-audit](/quickscan/) of neem [contact](/contact/) op voor een vrijblijvend gesprek.
 
 ## Verder lezen
 
-- [EAA voor webshops: wat moet je regelen?](/blog/eaa-voor-webshops/) — de EAA geldt ook voor ticketverkoop
-- [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/) — transparant overzicht van prijzen
-- [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/) — bepaal de juiste alt-tekst voor kunstwerken en sfeerbeelden
+- [EAA voor webshops: wat moet je regelen?](/blog/eaa-voor-webshops/): de EAA geldt ook voor ticketverkoop
+- [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/): transparant overzicht van prijzen
+- [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/): bepaal de juiste alt-tekst voor kunstwerken en sfeerbeelden

@@ -49,7 +49,7 @@ Voor redacteurs die content aan websites toevoegen met een CMS. Je leert hoe je 
 - Inhoud logisch ordenen voor screenreaders
 - Kleurcontrast en gebruik van kleur
 
-**Duur:** 2 uur · **Voorbereiding:** 8 uur (incl. contentanalyse) · **Locatie:** op locatie of online
+**Duur:** 2 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse) · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< section-card title="Van Word naar toegankelijke PDF" >}}
@@ -64,7 +64,7 @@ Voor redacteurs die rapporten, verslagen of folders maken in PDF vanuit MS Word.
 - Inclusief een toegankelijk Word-sjabloon
 - Zelf PDF's leren testen op toegankelijkheid
 
-**Duur:** 2 uur · **Voorbereiding:** 8 uur (incl. contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
+**Duur:** 2 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< /section-cards >}}
@@ -81,9 +81,9 @@ Binnen 2 werkdagen een offerte op maat. Of bel direct.
 
 Onze trainingen zijn geen praatje, maar interactieve workshops. Redacteuren krijgen direct inzicht in het **waarom** achter toegankelijkheid en leren **hoe** ze dit vanaf morgen goed kunnen doen.
 
-- **Waarom digitale toegankelijkheid** — begrijpen waarom is de beste motivatie
-- **Leren werken met het sjabloon** — iedereen werkt in jouw huisstijl
-- **Begrip van knelpunten** — je moet gewoon weten waar je op moet letten
-- **Zelf leren testen** — vanaf nu kun je je eigen werk testen
+- **Waarom digitale toegankelijkheid**: begrijpen waarom is de beste motivatie
+- **Leren werken met het sjabloon**: iedereen werkt in jouw huisstijl
+- **Begrip van knelpunten**: je moet gewoon weten waar je op moet letten
+- **Zelf leren testen**: vanaf nu kun je je eigen werk testen
 
 {{< /section-full >}}

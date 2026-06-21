@@ -39,9 +39,9 @@ Er is een beperkte uitzondering voor **micro-ondernemingen** (minder dan 10 werk
 ## Wat moet je concreet doen?
 
 1. **Laat je webshop testen** op WCAG 2.1 AA (of beter: WCAG 2.2 AA)
-2. **Los de gevonden problemen op** — denk aan alt-teksten, toetsenbordbediening, contrast, formulierlabels
+2. **Los de gevonden problemen op**: zoals alt-teksten, toetsenbordbediening, contrast, formulierlabels
 3. **Publiceer een toegankelijkheidsverklaring** op je website
-4. **Plan periodiek hertesten** om te zorgen dat je compliant blijft
+4. **Plan periodiek hertesten** om te zorgen dat je blijft voldoen aan de wet
 
 ## Wat als je niet voldoet?
 
@@ -57,17 +57,17 @@ De ACM heeft aangekondigd in eerste instantie op voorlichting en begeleiding in 
 
 Uit onze ervaring met webshop-audits zien we steeds dezelfde issues:
 
-- **Productafbeeldingen zonder alt-tekst** — een schermlezer kan niet vertellen wat het product is
+- **Productafbeeldingen zonder alt-tekst**: een schermlezer kan niet vertellen wat het product is
 - **Filters en sortering** die niet met toetsenbord te bedienen zijn
 - **Checkout-formulieren** zonder labels of met onduidelijke foutmeldingen
-- **Kleur als enige indicator** — bijvoorbeeld een rood randje bij een fout, zonder tekst
-- **Te laag contrast** — lichtgrijze tekst op witte achtergrond
+- **Kleur als enige indicator**: bijvoorbeeld een rood randje bij een fout, zonder tekst
+- **Te laag contrast**: lichtgrijze tekst op witte achtergrond
 - **Pop-ups en modals** die de focus niet vangen
 
-## Hoeveel kost het om compliant te worden?
+## Hoeveel kost het om aan de wet te voldoen?
 
-Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf ca. € 2.100. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
+Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf circa € 2.100. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
 
 Het goede nieuws: de meeste webshops hebben dezelfde soort issues, en die zijn vaak in een paar sprints op te lossen.
 
-Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je precies wat er speelt.
+Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je precies wat er speelt.

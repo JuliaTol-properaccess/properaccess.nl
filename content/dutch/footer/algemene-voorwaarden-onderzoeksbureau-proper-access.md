@@ -1,6 +1,6 @@
 ---
 title: "Algemene voorwaarden"
-meta_title: "Algemene voorwaarden — Proper Access"
+meta_title: "Algemene voorwaarden | Proper Access"
 description: "De algemene voorwaarden van Proper Access, auditbureau voor digitale toegankelijkheid."
 date: 2026-02-21
 slug: "algemene-voorwaarden"
@@ -23,7 +23,7 @@ Welkom bij Proper Access! Wij zijn gespecialiseerd in [toegankelijkheidsaudits](
 
 {{< offerte-section title="2. Onze diensten" bg="light" >}}
 
-Wij onderzoeken je website of app op toegankelijkheid en vertellen je precies wat er beter kan — en hoe. Geen vaag advies, maar concrete oplossingen zodat je team er direct mee aan de slag kan.
+Wij onderzoeken je website of app op toegankelijkheid en vertellen je precies wat er beter kan, en hoe. Geen vaag advies, maar concrete oplossingen zodat je team er direct mee aan de slag kan.
 
 Tijdens het onderzoek bekijken we je website of app door de ogen van je bezoeker. We gebruiken een beperkt aantal tools die in elke browser beschikbaar zijn en voeren functionele testen uit waarin we je website of app met een screen reader beluisteren. In de praktijk merk je er weinig van.
 
@@ -31,7 +31,7 @@ Tijdens het onderzoek bekijken we je website of app door de ogen van je bezoeker
 
 {{< offerte-section title="3. Testberichten" >}}
 
-Wel goed om te weten: we testen je formulieren, contactformulier en eventuele chatfunctie. Dat betekent dat je berichten van ons kunt ontvangen. Geen paniek — die zijn altijd te herkennen aan het woord **"Test"** in het bericht. Als je een bericht krijgt met "Test" erin, zijn wij dat. Gewoon negeren (of ons een virtuele high-five geven, ook goed).
+Wel goed om te weten: we testen je formulieren, contactformulier en eventuele chatfunctie. Dat betekent dat je berichten van ons kunt ontvangen. Geen paniek: die zijn altijd te herkennen aan het woord **"Test"** in het bericht. Als je een bericht krijgt met "Test" erin, zijn wij dat. Gewoon negeren (of ons een virtuele high-five geven, ook goed).
 
 {{< /offerte-section >}}
 
@@ -51,7 +51,7 @@ Heb je een webshop? Dan testen we ook het bestelproces. We doen ons uiterste bes
 
 {{< offerte-section title="6. Betalingen" bg="light" >}}
 
-De prijs spreken we vooraf af. Elke offerte is maatwerk — geen verborgen kosten, geen verrassingen. Betalingen moeten binnen 30 dagen na de factuurdatum worden voldaan, tenzij we iets anders afspreken.
+De prijs spreken we vooraf af. Elke offerte is maatwerk: geen verborgen kosten, geen verrassingen. Betalingen moeten binnen 30 dagen na de factuurdatum worden voldaan, tenzij we iets anders afspreken.
 
 {{< /offerte-section >}}
 
@@ -63,7 +63,7 @@ Even een eerlijk verhaal: het toegankelijk maken van je website kan invloed hebb
 
 {{< offerte-section title="8. Beperking van aansprakelijkheid" bg="light" >}}
 
-We doen ons best om je van topkwaliteit te voorzien. Een toegankelijkheidsonderzoek kan niet leiden tot het stuk maken van je website of app — we kijken alleen mee, we bouwen niks om.
+We doen ons best om je van topkwaliteit te voorzien. Een toegankelijkheidsonderzoek kan niet leiden tot het stuk maken van je website of app: we kijken alleen mee, we bouwen niks om.
 
 We gaan zeer zorgvuldig om met alle informatie die je ons verstrekt en zullen de informatie die we op jouw website tegenkomen niet openbaar maken.
 

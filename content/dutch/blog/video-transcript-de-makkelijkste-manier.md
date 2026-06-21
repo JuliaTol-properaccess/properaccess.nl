@@ -23,7 +23,7 @@ In beeld verschijnen teksten die je niet kunt zien.
 
 Begrijp je waar dit over gaat? Waarschijnlijk niet.
 
-In dit geval wordt al snel duidelijk dat het over attractieparken gaat — dus het begrijpen waar deze video over gaat, valt nog mee — maar er zijn veel video’s die zonder beeld totaal onbegrijpelijk zijn.
+In dit geval wordt al snel duidelijk dat het over attractieparken gaat, dus het begrijpen waar deze video over gaat, valt nog mee. Maar er zijn veel video’s die zonder beeld totaal onbegrijpelijk zijn.
 
 https://www.youtube.com/embed/sSgHUObn\_7k
 

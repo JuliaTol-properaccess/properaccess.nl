@@ -199,7 +199,7 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 
 | Succescriterium | Niveau | Toelichting |
 |---|---|---|
-| **4.1.1** Parsing | A | Afgeschaft in WCAG 2.2, maar nog geldig in WCAG 2.1. Vereist volledige tags, correcte nesting, geen dubbele attributen en unieke ID's. |
+| **4.1.1** Parsing | A | Afgeschaft in WCAG 2.2, maar nog geldig in WCAG 2.1. Vraagt om volledige tags, correcte nesting, geen dubbele attributen en unieke ID's. |
 | **1.3.1** Informatie en relaties | A | Dubbele ID's en verkeerde nesting kunnen ertoe leiden dat structuur niet correct wordt overgebracht |
 | **4.1.2** Naam, Rol, Waarde | A | Een dubbel ID kan ertoe leiden dat een label of ARIA-verwijzing aan het verkeerde element koppelt |
 

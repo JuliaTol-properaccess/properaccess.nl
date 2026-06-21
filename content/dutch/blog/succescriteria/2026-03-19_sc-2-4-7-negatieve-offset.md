@@ -9,7 +9,7 @@ tags:
   - "2-4-7"
   - "css"
   - "focus"
-description: "Negatieve outline-offset die de focus verbergt — WCAG 2.4.7 Focus zichtbaar (post 3/7)"
+description: "Negatieve outline-offset die de focus verbergt: WCAG 2.4.7 Focus zichtbaar (post 3/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -18,7 +18,7 @@ keywords:
 image: "/images/blog/linkedin-series/sc-2-4-7-negatieve-offset.webp"
 ---
 
-Een link met een donkere achtergrond. De focusindicator is er — een zwarte outline van 2 pixels. Maar `outline-offset: -4px` duwt die outline naar binnen. Onder de achtergrondkleur.
+Een link met een donkere achtergrond. De focusindicator is er, een zwarte outline van 2 pixels. Maar `outline-offset: -4px` duwt die outline naar binnen. Onder de achtergrondkleur.
 
 De indicator verdwijnt achter het element. Technisch aanwezig. Visueel onzichtbaar.
 
@@ -40,6 +40,6 @@ a:focus-visible {
 
 ## Wanneer is een negatieve offset verleidelijk?
 
-Als de designer de focus "strakker" wil — dichter bij het element, of binnen de border. Maar een negatieve offset op een element met een achtergrondkleur is een recept voor onzichtbaarheid.
+Als de designer de focus "strakker" wil, dichter bij het element, of binnen de border. Maar een negatieve offset op een element met een achtergrondkleur is een recept voor onzichtbaarheid.
 
 De vuistregel: gebruik altijd een positieve `outline-offset` (2px is een goede standaard). De outline staat dan buiten het element en wordt nooit bedekt door de achtergrond.

@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Quiz voor Developers"
-meta_title: "WCAG Accessibility Quiz voor Developers — Test je kennis | Proper Access"
+meta_title: "WCAG Accessibility Quiz voor Developers: test je kennis | Proper Access"
 date: 2026-03-12
 slug: "quiz-developers"
 url: "/tools/quiz-developers/"

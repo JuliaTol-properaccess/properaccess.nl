@@ -1,5 +1,5 @@
 ---
-title: "Tijdlijn toegankelijkheidsverklaringen — gemeente Amersfoort"
+title: "Tijdlijn toegankelijkheidsverklaringen, gemeente Amersfoort"
 description: "Overzicht van alle toegankelijkheidsverklaringen van gemeente Amersfoort en wanneer het onderliggend onderzoek verloopt."
 type: "klanten"
 layout: "single"

@@ -58,7 +58,7 @@ Toegankelijkheid is geen technisch onderwerp. Het is een gebruiker die niet door
 
 Elke bevinding heeft daarom een user story vanuit de bezoeker met een beperking. Met meerdere hulpmiddelen in één verhaal, omdat een bezoeker er meestal ook meerdere tegelijk gebruikt. Bijvoorbeeld:
 
-<blockquote class="pa-user-story">Ik gebruik een schermlezer omdat ik de pagina niet kan zien. Als een knop alleen uit een icootje bestaat zonder een tekstalternatief, weet ik niet wat deze knop doet.</blockquote>
+<blockquote class="pa-user-story">Ik gebruik een schermlezer omdat ik de pagina niet kan zien. Als een knop alleen uit een icoon bestaat zonder een tekstalternatief, weet ik niet wat deze knop doet.</blockquote>
 
 Daarna volgt de technische uitwerking: wat is er fout, waar staat het op de site, naar welk succescriterium verwijst het, en hoe los je het op. De user story is geen versiering. Hij dwingt ons om eerst de gebruiker te begrijpen voordat we de fix beschrijven.
 

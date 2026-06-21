@@ -34,7 +34,7 @@ Een gebruiker met dyslexie past de regelafstand aan naar 1.5x. Iemand met slecht
 
 ## Waarom is dit relevant?
 
-Sinds juni 2025 is de European Accessibility Act (EAA) van kracht. Webshops, banken, ticketsites — allemaal verplicht om te voldoen aan WCAG 2.1 niveau AA. En daar valt [SC 1.4.12 Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) onder.
+Sinds juni 2025 is de European Accessibility Act (EAA) van kracht. Webshops, banken, ticketsites: allemaal verplicht om te voldoen aan WCAG 2.1 niveau AA. En daar valt [SC 1.4.12 Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) onder.
 
 **De regels zijn simpel:**
 Gebruikers moeten de volgende teksteigenschappen kunnen aanpassen zonder dat er content verdwijnt, overlapt, of onleesbaar wordt:
@@ -50,16 +50,16 @@ Let op: je hoeft deze waarden **niet standaard** toe te passen. Het gaat erom da
 
 SC 1.4.12 begint met een voorwaarde die vaak over het hoofd wordt gezien: <span lang="en"> _In content implemented using markup languages that support the following text style properties."_</span>
 
-Met andere woorden: dit criterium is alleen van toepassing als de onderliggende technologie CSS-tekststijlen ondersteunt. Een standaard HTML/CSS-website? Absoluut. Maar een framework als **Flutter** rendert de volledige UI in een `<canvas>`-element in de browser. Canvas ondersteunt geen CSS text style properties — een gebruiker kan geen regelafstand of woordafstand aanpassen via een browser-extensie of eigen stylesheet, omdat er simpelweg geen tekst is die de browser als tekst herkent.
+Met andere woorden: dit criterium is alleen van toepassing als de onderliggende technologie CSS-tekststijlen ondersteunt. Een standaard HTML/CSS-website? Absoluut. Maar een framework als **Flutter** rendert de volledige UI in een `<canvas>`-element in de browser. Canvas ondersteunt geen CSS text style properties: een gebruiker kan geen regelafstand of woordafstand aanpassen via een browser-extensie of eigen stylesheet, omdat er simpelweg geen tekst is die de browser als tekst herkent.
 
-In dat geval is SC 1.4.12 technisch niet van toepassing. Dat ontdekte ik onlangs bij het auditen van een Flutter-website. Betekent dat dat Flutter-sites "veilig" zijn? Nee — ze kunnen hun eigen toegankelijkheidsproblemen (denk aan schermlezersondersteuning en semantiek) hebben. Maar specifiek voor text spacing valt het buiten de scope van dit criterium.
+In dat geval is SC 1.4.12 technisch niet van toepassing. Dat ontdekte ik onlangs bij het auditen van een Flutter-website. Betekent dat dat Flutter-sites "veilig" zijn? Nee, ze kunnen hun eigen toegankelijkheidsproblemen (denk aan schermlezersondersteuning en semantiek) hebben. Maar specifiek voor text spacing valt het buiten de scope van dit criterium.
 
 **Voor wie is dit belangrijk?**
 
-- **Mensen met dyslexie** — meer woordafstand en regelafstand maakt tekst veel beter leesbaar
-- **Slechtzienden** — vergrote letter- en regelafstand helpt enorm bij het onderscheiden van woorden
-- **Ouderen** — dicht op elkaar staande tekst is moeilijker te verwerken
-- **Mensen met cognitieve beperkingen** — meer witruimte = minder cognitieve overload
+- **Mensen met dyslexie**: meer woordafstand en regelafstand maakt tekst veel beter leesbaar
+- **Slechtzienden**: vergrote letter- en regelafstand helpt enorm bij het onderscheiden van woorden
+- **Ouderen**: dicht op elkaar staande tekst is moeilijker te verwerken
+- **Mensen met cognitieve beperkingen**: meer witruimte = minder cognitieve overload
 
 Kortom: dit is geen klein groepje. Het gaat om miljoenen mensen die jouw website willen gebruiken.
 
@@ -88,7 +88,7 @@ Dit is het probleem dat ik het vaakst tegenkom:
 
 Wat gebeurt er als een gebruiker de regelafstand aanpast naar 1.5x?
 
-Stel je voor: je hebt een titel van 32px. Standaard line-height is misschien 1.2 (38.4px). Jouw container is 60px hoog — precies genoeg voor twee regels.
+Stel je voor: je hebt een titel van 32px. Standaard line-height is misschien 1.2 (38.4px). Jouw container is 60px hoog, precies genoeg voor twee regels.
 
 Nu past de gebruiker aan naar line-height 1.5 (48px). Ineens is een regel 48px hoog. Twee regels? 96px. Maar jouw container? Nog steeds 60px. Met `overflow: hidden` erbovenop.
 
@@ -299,9 +299,9 @@ Vertical rhythm is mooi, maar niet als het ten koste gaat van toegankelijkheid. 
 
 Je kent misschien deze criteria al:
 
-- **SC 1.4.4 Resize Text** — gebruikers moeten kunnen zoomen tot 200% zonder verlies van functionaliteit
-- **SC 1.4.10 Reflow** — bij 400% zoom mag je niet horizontaal hoeven scrollen
-- **SC 1.4.5 Images of Text** — gebruik echte tekst i.p.v. afbeeldingen van tekst
+- **SC 1.4.4 Resize Text**: gebruikers moeten kunnen zoomen tot 200% zonder verlies van functionaliteit
+- **SC 1.4.10 Reflow**: bij 400% zoom mag je niet horizontaal hoeven scrollen
+- **SC 1.4.5 Images of Text**: gebruik echte tekst in plaats van afbeeldingen van tekst
 
 **SC 1.4.12 is het kleine broertje dat iedereen vergeet.**
 
@@ -359,7 +359,7 @@ De oplossing is simpel:
 
 Zo bouw je websites die niet breken zodra iemand zijn eigen voorkeuren instelt. En dat is precies waar toegankelijkheid om draait: niet alleen werken voor de standaard-gebruiker, maar voor iedereen.
 
-Hulp nodig bij het doorlichten van je front-end code? Of wil je een training voor je team over toegankelijke CSS? Proper Access helpt je graag op weg — niet met vage rapporten, maar met concrete code-reviews en hands-on begeleiding.
+Hulp nodig bij het doorlichten van je front-end code? Of wil je een training voor je team over toegankelijke CSS? Proper Access helpt je graag op weg, niet met vage rapporten, maar met concrete code-reviews en hands-on begeleiding.
 
 ---
 

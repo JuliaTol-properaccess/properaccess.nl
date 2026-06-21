@@ -9,7 +9,7 @@ tags:
   - "1-4-1"
   - "kleur"
   - "kleurenblindheid"
-description: "Groene rij = goedgekeurd, rode rij = afgewezen — WCAG 1.4.1 Gebruik van kleur (post 3/8)"
+description: "Groene rij = goedgekeurd, rode rij = afgewezen, WCAG 1.4.1 Gebruik van kleur (post 3/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -40,7 +40,7 @@ En er staat nergens tekst die de status aangeeft. Alleen kleur.
 
 **Het verschil:** de tekst "Goedgekeurd" en "Afgewezen" en de iconen ✓ en ✗ zijn leesbaar ongeacht of je kleuren kunt zien.
 
-**Dit speelt niet alleen bij tabellen.** Denk aan:
+**Dit speelt niet alleen bij tabellen.** Bijvoorbeeld:
 - Dashboards met gekleurde kaartjes
 - Kalenders met gekleurde evenementen
 - Kanban-borden met gekleurde labels

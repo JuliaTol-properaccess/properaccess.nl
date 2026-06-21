@@ -1,6 +1,6 @@
 ---
-title: "Proper Access — Digitale toegankelijkheid die werkt"
-meta_title: "Proper Access — onafhankelijk auditbureau digitale toegankelijkheid"
+title: "Proper Access: Digitale toegankelijkheid die werkt"
+meta_title: "Proper Access: onafhankelijk auditbureau digitale toegankelijkheid"
 date: 2026-03-07
 description: "Proper Access helpt organisaties met toegankelijkheidsaudits, concrete oplossingen en een rapport dat je developers meteen kunnen oppakken."
 keywords:
@@ -16,7 +16,7 @@ layout: "homepage"
 
 faqs:
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Onze prijzen beginnen vanaf ca. € 2.100 voor een eenvoudige website. De meeste websites vallen in de categorie gemiddeld-complex en liggen rond de € 3.600. We geven je altijd vooraf een duidelijke indicatie — geen verrassingen achteraf."
+    answer: "Dat hangt af van de omvang en complexiteit van je site. Onze prijzen beginnen vanaf circa € 2.100 voor een eenvoudige website. De meeste websites vallen in de categorie gemiddeld-complex en liggen rond de € 3.600. We geven je altijd vooraf een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per bevinding geven we aan hoe ernstig het is en hoeveel moeite de oplossing kost. Zo pak je eerst aan wat het meeste impact heeft."
   - question: "Hoe ziet het rapport eruit?"
@@ -26,6 +26,6 @@ faqs:
   - question: "Zijn jullie onafhankelijk?"
     answer: "Volledig. We bouwen geen websites, beheren geen content en verkopen geen software. Ons enige product is een eerlijk en bruikbaar rapport."
   - question: "Moeten wij voldoen aan de EAA?"
-    answer: "De European Accessibility Act geldt voor bedrijven die producten of diensten aanbieden aan consumenten in de EU — denk aan webshops, banken, telecom en vervoersbedrijven. Twijfel je? Neem contact op, dan zoeken we het samen uit."
+    answer: "De European Accessibility Act geldt voor bedrijven die producten of diensten aanbieden aan consumenten in de EU, bijvoorbeeld webshops, banken, telecom en vervoersbedrijven. Twijfel je? Neem contact op, dan zoeken we het samen uit."
 
 ---

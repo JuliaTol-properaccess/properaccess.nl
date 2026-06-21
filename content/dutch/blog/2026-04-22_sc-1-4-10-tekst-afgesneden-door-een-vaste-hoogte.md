@@ -9,7 +9,7 @@ tags:
   - "1-4-10"
   - "reflow"
   - "responsive"
-description: "Tekst afgesneden door een vaste hoogte — WCAG 1.4.10 Reflow (post 3/10)"
+description: "Tekst afgesneden door een vaste hoogte, WCAG 1.4.10 Reflow (post 3/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -22,7 +22,7 @@ Een banner van 200 pixels hoog. Past precies. Mooie headline, korte tekst, call-
 
 Tot je inzoomt.
 
-Bij 400% zoom wordt de tekst groter. De banner niet. De tekst valt buiten het element. En als daar `overflow: hidden` op staat — en dat staat er bijna altijd — verdwijnt de onderste helft.
+Bij 400% zoom wordt de tekst groter. De banner niet. De tekst valt buiten het element. En als daar `overflow: hidden` op staat, en dat staat er bijna altijd, verdwijnt de onderste helft.
 
 Je leest: "Schrijf je nu in voor onze nieuwsbr..."
 

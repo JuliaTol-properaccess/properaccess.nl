@@ -9,7 +9,7 @@ tags:
   - "1-3-1"
   - "semantiek"
   - "html"
-description: "Kopniveaus — WCAG 1.3.1 Info en relaties (post 1/8)"
+description: "Kopniveaus: WCAG 1.3.1 Info en relaties (post 1/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

@@ -10,7 +10,7 @@ tags:
   - "css"
   - "focus"
   - "overflow"
-description: "overflow: hidden knipt de focusindicator af — WCAG 2.4.7 Focus zichtbaar (post 4/7)"
+description: "overflow: hidden knipt de focusindicator af, WCAG 2.4.7 Focus zichtbaar (post 4/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -47,7 +47,7 @@ Je tabt naar de link in de kaart. De focusindicator verschijnt. Maar alleen de b
 ```
 
 **Optie 1** geeft de outline ruimte om binnen de container te tekenen.
-**Optie 2** gebruikt een inset box-shadow die altijd binnen het element blijft — nooit buiten de container.
+**Optie 2** gebruikt een inset box-shadow die altijd binnen het element blijft, nooit buiten de container.
 
 ## Waar komt dit voor?
 

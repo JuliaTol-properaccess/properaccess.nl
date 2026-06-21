@@ -1,6 +1,6 @@
 ---
 title: "Strippenkaart"
-meta_title: "Strippenkaart toegankelijkheid — flexibele ondersteuning op uurbasis | Proper Access"
+meta_title: "Strippenkaart toegankelijkheid: flexibele ondersteuning op uurbasis | Proper Access"
 layout: "agency"
 weight: 3
 date: 2026-02-28
@@ -26,7 +26,7 @@ banner:
     link: "/contact/"
 
 trust:
-  label: "Inzetbaar voor o.a."
+  label: "Inzetbaar voor onder andere"
   names:
     - "Code reviews"
     - "Sprint-testing"
@@ -37,15 +37,15 @@ trust:
 
 {{< section-full title="Een bundel uren, flexibel inzetbaar" >}}
 
-De strippenkaart is een vooraf afgesproken aantal uren dat je besteedt aan alles rondom digitale toegankelijkheid. Je kiest een bundel die past bij je verwachte behoefte, en plant werkzaamheden in wanneer het jou uitkomt. Elke bundel heeft een geldigheidsduur, zodat je de uren op je eigen tempo kunt inzetten — zonder tijdsdruk.
+De strippenkaart is een vooraf afgesproken aantal uren dat je besteedt aan alles rondom digitale toegankelijkheid. Je kiest een bundel die past bij je verwachte behoefte, en plant werkzaamheden in wanneer het jou uitkomt. Elke bundel heeft een geldigheidsduur, zodat je de uren op je eigen tempo kunt inzetten, zonder tijdsdruk.
 
-- **Code reviews** — stuur je pull request of component en krijg feedback op semantische HTML, ARIA-gebruik en screenreader-compatibiliteit
-- **Sprint-testing** — aan het einde van een sprint nieuwe features laten checken, met feedback op dezelfde dag
-- **Snelle checks** — een pagina, flow of component snel laten controleren op de grootste toegankelijkheidsproblemen
-- **Technische vragen** — van ARIA-patronen tot screenreader-gedrag, je kunt ons alles vragen
-- **Advies bij ontwerp** — laat ons meekijken bij een nieuw design, voordat er gebouwd wordt
-- **Mini-audits** — een specifiek deel van je site laten toetsen met dezelfde diepgang als een volledige audit
-- **Hertoets van losse bevindingen** — specifieke punten laten hercontroleren na verbetering
+- **Code reviews**: stuur je pull request of component en krijg feedback op semantische HTML, ARIA-gebruik en screenreader-compatibiliteit
+- **Sprint-testing**: aan het einde van een sprint nieuwe features laten checken, met feedback op dezelfde dag
+- **Snelle checks**: een pagina, flow of component snel laten controleren op de grootste toegankelijkheidsproblemen
+- **Technische vragen**: van ARIA-patronen tot screenreader-gedrag, je kunt ons alles vragen
+- **Advies bij ontwerp**: laat ons meekijken bij een nieuw design, voordat er gebouwd wordt
+- **Mini-audits**: een specifiek deel van je site laten toetsen met dezelfde diepgang als een volledige audit
+- **Hertoets van losse bevindingen**: specifieke punten laten hercontroleren na verbetering
 
 {{< /section-full >}}
 
@@ -80,12 +80,12 @@ Neem contact op voor een vrijblijvend gesprek. We adviseren je over een passende
 
 {{< section-full title="Altijd toegang tot senior auditor" >}}
 
-Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account managers ertussen, geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat — je krijgt antwoord van iemand die het dagelijks test.
+Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account managers ertussen, geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat: je krijgt antwoord van iemand die het dagelijks test.
 
 - Altijd toegang tot senior auditor voor inhoudelijke vragen
 - Direct contact via e-mail, telefoon of videocall
 - Antwoorden met uitleg, code-voorbeelden en context
-- We stemmen onze communicatie af op je achtergrond — developers krijgen code, product owners krijgen duidelijke taal
+- We stemmen onze communicatie af op je achtergrond: developers krijgen code, product owners krijgen duidelijke taal
 
 {{< /section-full >}}
 
@@ -115,7 +115,7 @@ Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account manager
 <details class="faq-item">
 <summary class="faq-question">Hoe snel reageren jullie?</summary>
 <div class="faq-answer">
-<p>In de meeste gevallen plannen we binnen 2-3 werkdagen in. Bij urgentie — bijvoorbeeld als iets live moet voor een deadline — proberen we sneller te schakelen.</p>
+<p>In de meeste gevallen plannen we binnen 2-3 werkdagen in. Bij urgentie, bijvoorbeeld als iets live moet voor een deadline, proberen we sneller te schakelen.</p>
 </div>
 </details>
 

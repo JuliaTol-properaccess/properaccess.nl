@@ -26,13 +26,13 @@ hero_meta:
 
 {{< offerte-section title="Inleiding" >}}
 
-Een praktische handleiding voor het maken van digitaal toegankelijke Word-documenten. Of je nu rapporten, beleidsdocumenten of facturen maakt: met deze stappen zorg je ervoor dat iedereen je content kan lezen — ook mensen die een schermlezer gebruiken.
+Een praktische handleiding voor het maken van digitaal toegankelijke Word-documenten. Of je nu rapporten, beleidsdocumenten of facturen maakt: met deze stappen zorg je ervoor dat iedereen je content kan lezen, ook mensen die een schermlezer gebruiken.
 
 {{< /offerte-section >}}
 
 {{< offerte-section title="Koppen" subtitle="Structuur met echte kopstijlen" bg="light" >}}
 
-Koppen zijn het belangrijkste structurele onderdeel van een document. Gebruikers van schermlezers navigeren via koppen: ze springen van kop naar kop om snel te vinden wat ze nodig hebben. Daarom is het cruciaal om **echte koppen** te gebruiken — niet alleen grote, vette tekst.
+Koppen zijn het belangrijkste structurele onderdeel van een document. Gebruikers van schermlezers navigeren via koppen: ze springen van kop naar kop om snel te vinden wat ze nodig hebben. Daarom is het cruciaal om **echte koppen** te gebruiken, niet alleen grote, vette tekst.
 
 <div class="koppen-vergelijking" role="group" aria-label="Vergelijking: document met alleen vet+groot versus document met echte kopstijlen">
 <div class="koppen-vergelijking__fout">
@@ -63,10 +63,10 @@ Koppen zijn het belangrijkste structurele onderdeel van een document. Gebruikers
 
 ### Waar moet een kop aan voldoen?
 
-- **Betekenisvol** — Koppen moeten de inhoud eronder goed beschrijven. "Contact" en "Bezoekadres" zijn duidelijk. "Sectie 1" en "Sectie 2" zeggen niets.
-- **Kort** — Schermlezers lezen een lijst van koppen snel op. Houd ze bondig.
-- **Overzichtelijk** — Als je alleen de koppen leest, moet je al een goed idee hebben waar het document over gaat.
-- **Geen niveaus overslaan** — Begin altijd met kopniveau 1 (H1) en sla geen niveaus over. Ga niet van H1 direct naar H3.
+- **Betekenisvol**: Koppen moeten de inhoud eronder goed beschrijven. "Contact" en "Bezoekadres" zijn duidelijk. "Sectie 1" en "Sectie 2" zeggen niets.
+- **Kort**: Schermlezers lezen een lijst van koppen snel op. Houd ze bondig.
+- **Overzichtelijk**: Als je alleen de koppen leest, moet je al een goed idee hebben waar het document over gaat.
+- **Geen niveaus overslaan**: Begin altijd met kopniveau 1 (H1) en sla geen niveaus over. Ga niet van H1 direct naar H3.
 
 ### Koppen maken in Word
 
@@ -82,7 +82,7 @@ Vind je het uiterlijk van een kop niet mooi? Dat is geen reden om geen echte kop
 1. Klik met de **rechtermuisknop** op de kopstijl in de sectie Stijlen.
 2. Kies **Wijzigen**.
 3. Pas lettertype, grootte, kleur en andere opties aan.
-4. Klik op **OK** — alle koppen van dat niveau worden automatisch bijgewerkt.
+4. Klik op **OK**: alle koppen van dat niveau worden automatisch bijgewerkt.
 
 **Belangrijk:** gebruik geen aangepaste stijl om een kop te maken, ook niet als je bij de optie "stijl gebaseerd op kop" kiest. Schermlezers herkennen aangepaste stijlen niet als koppen.
 
@@ -106,16 +106,16 @@ Grafieken, diagrammen, infographics. Gebruik een korte alt-tekst plus een langer
 
 ### 3. Decoratief
 
-Geen informatieve waarde — dient alleen ter versiering. Markeer als decoratief, zodat schermlezers de afbeelding overslaan.
+Geen informatieve waarde, dient alleen ter versiering. Markeer als decoratief, zodat schermlezers de afbeelding overslaan.
 
 ### Alt-tekst toevoegen in Word
 
 1. Klik met de **rechtermuisknop** op de afbeelding.
 2. Kies **Alt-tekst weergeven**.
-3. Typ een korte, duidelijke beschrijving (max. 150 tekens).
+3. Typ een korte, duidelijke beschrijving (maximaal 150 tekens).
 4. Of vink **Afbeelding markeren als decoratief** aan als de afbeelding puur decoratief is.
 
-**Belangrijk:** Word kan automatisch alt-tekst genereren. Vertrouw hier nooit volledig op — controleer en verbeter de tekst altijd zelf.
+**Belangrijk:** Word kan automatisch alt-tekst genereren. Vertrouw hier nooit volledig op. Controleer en verbeter de tekst altijd zelf.
 
 ### Tekstterugloop
 
@@ -132,7 +132,7 @@ Voor complexe afbeeldingen zoals grafieken: gebruik een korte alt-tekst en een l
 
 {{< offerte-section title="Kleur als betekenis" subtitle="Nooit alleen kleur" bg="light" >}}
 
-Kleur wordt vaak gebruikt om betekenis te geven — bijvoorbeeld een takenlijst waarbij urgente taken een rood bolletje hebben. Maar een blinde gebruiker of iemand die kleurenblind is, ziet dit verschil niet.
+Kleur wordt vaak gebruikt om betekenis te geven, bijvoorbeeld een takenlijst waarbij urgente taken een rood bolletje hebben. Maar een blinde gebruiker of iemand die kleurenblind is, ziet dit verschil niet.
 
 <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Links een takenlijst met alleen gekleurde bolletjes als indicator (ontoegankelijk), rechts dezelfde lijst met bolletjes en tekstlabels (toegankelijk).">
   <rect x="10" y="10" width="340" height="180" fill="none" rx="12" stroke="#A30D4B" stroke-width="1.5"/>
@@ -156,7 +156,7 @@ Kleur wordt vaak gebruikt om betekenis te geven — bijvoorbeeld een takenlijst 
   <text x="420" y="146" font-family="Nunito, sans-serif" font-size="13" fill="#1F2937">Factuur controleren leverancier Z</text>
 </svg>
 
-Links: alleen gekleurde bolletjes — wat betekent rood, groen, oranje? Onduidelijk. Rechts: kleur plus tekstlabel — voor iedereen duidelijk.
+Links: alleen gekleurde bolletjes, wat betekent rood, groen, oranje? Onduidelijk. Rechts: kleur plus tekstlabel, voor iedereen duidelijk.
 
 **De regel:** informatie die met kleur wordt aangegeven, moet ook in tekst beschikbaar zijn. Bij een gekleurde grafiek kun je de data ook in gewone tekst opnemen. Bij een taartdiagram heeft elk deel een zichtbaar tekstlabel nodig.
 
@@ -185,8 +185,8 @@ Goed kleurcontrast is essentieel voor leesbaarheid. Lichtgrijze tekst op een lic
 
 Ga niet op gevoel af. Gebruik een tool:
 
-- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)** — Online tool, geen installatie nodig.
-- **Paciello Color Contrast Checker** — Downloadbare tool met pipet om kleuren van het scherm te kiezen.
+- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)**: Online tool, geen installatie nodig.
+- **Paciello Color Contrast Checker**: Downloadbare tool met pipet om kleuren van het scherm te kiezen.
 
 {{< /offerte-section >}}
 
@@ -214,7 +214,7 @@ Gebruik vet, cursief, onderstrepen of markering **spaarzaam**. Schermlezers leze
 
 Symbolen kunnen lastig zijn voor schermlezers: ze worden soms verkeerd of niet voorgelezen. Gebruik alleen veelvoorkomende symbolen zoals **@**, **$** en **#**. Voeg bij andere symbolen een tekstalternatief toe, bijvoorbeeld: (schoppen).
 
-**Emoji's** zijn kleine afbeeldingen met ingebouwde alt-tekst en zijn meestal goed toegankelijk. Maar gebruik ze met mate — elke emoji wordt apart voorgelezen door een schermlezer.
+**Emoji's** zijn kleine afbeeldingen met ingebouwde alt-tekst en zijn meestal goed toegankelijk. Maar gebruik ze met mate: elke emoji wordt apart voorgelezen door een schermlezer.
 
 {{< /offerte-section >}}
 
@@ -230,8 +230,8 @@ Schermlezers kondigen links aan en kunnen een lijst van alle links in een docume
 
 ### Fout vs. goed
 
-- **Fout:** `https://www.rijksmuseum.nl/nl/bezoek/planuw-bezoek-tickets-en-prijzen` — de schermlezer leest de hele URL voor. Lang en verwarrend.
-- **Goed:** "Tickets en prijzen Rijksmuseum" — de schermlezer zegt: _"link, Tickets en prijzen Rijksmuseum"_. Betekenisvol, kort en duidelijk.
+- **Fout:** `https://www.rijksmuseum.nl/nl/bezoek/planuw-bezoek-tickets-en-prijzen`: de schermlezer leest de hele URL voor. Lang en verwarrend.
+- **Goed:** "Tickets en prijzen Rijksmuseum": de schermlezer zegt: _"link, Tickets en prijzen Rijksmuseum"_. Betekenisvol, kort en duidelijk.
 
 **Let op:** als je een URL plakt en geen Enter of Spatie gebruikt, blijft het gewone tekst. De schermlezer herkent de URL dan niet als link.
 
@@ -239,7 +239,7 @@ Schermlezers kondigen links aan en kunnen een lijst van alle links in een docume
 
 {{< offerte-section title="Tabellen" subtitle="Alleen voor gegevens" >}}
 
-Gebruik tabellen alleen voor echte gegevens, nooit voor lay-out. Maak ze semantisch met de knop **Tabel invoegen** — voeg ze niet toe als afbeelding.
+Gebruik tabellen alleen voor echte gegevens, nooit voor lay-out. Maak ze semantisch met de knop **Tabel invoegen**, voeg ze niet toe als afbeelding.
 
 ### Een tabel maken
 
@@ -271,7 +271,7 @@ Gebruik tabellen alleen voor echte gegevens, nooit voor lay-out. Maak ze semanti
 
 Schermlezers lezen kop- en voetteksten **niet automatisch**. Vermeld daar geen cruciale informatie, of herhaal deze in de hoofdtekst.
 
-Denk aan situaties als:
+Bijvoorbeeld situaties als:
 
 - Het logo en de contactgegevens van je bedrijf
 - Betaalgegevens bij facturen
@@ -285,7 +285,7 @@ Als deze informatie alleen in de kop- of voettekst staat, mist een schermlezerge
 
 **Opmerkingen** in Word zijn toegankelijk. Schermlezers kondigen hun aanwezigheid automatisch aan. Voeg een opmerking toe via rechtermuisknop en kies **Nieuwe opmerking**.
 
-**Zwevende objecten** zoals tekstvakken en vormen zijn problematisch. Vermijd deze waar mogelijk — ze kunnen problemen veroorzaken voor schermlezers.
+**Zwevende objecten** zoals tekstvakken en vormen zijn problematisch. Vermijd deze waar mogelijk: ze kunnen problemen veroorzaken voor schermlezers.
 
 {{< /offerte-section >}}
 
@@ -299,13 +299,13 @@ Word heeft een ingebouwde tool die veel voorkomende problemen opspoort.
 2. De resultaten verschijnen rechts in beeld.
 3. Klik op een probleem om het te bekijken en direct te corrigeren.
 
-### De tool detecteert:
+### De tool herkent:
 
 - Ontbrekende alt-tekst
 - Structuurproblemen
 - Contrastproblemen
 
-### De tool detecteert NIET:
+### De tool herkent NIET:
 
 - Kwaliteit van alt-teksten
 - Of de juiste koppen zijn gebruikt
@@ -356,7 +356,7 @@ Gebruik deze checklist om je document te controleren voordat je het deelt:
 
 <div class="offerte-cta">
   <div class="container">
-    <p><em>Proper Access — Julia Tol</em></p>
+    <p><em>Proper Access, Julia Tol</em></p>
     <p><em>Heb je vragen? Neem contact op via <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a></em></p>
   </div>
 </div>

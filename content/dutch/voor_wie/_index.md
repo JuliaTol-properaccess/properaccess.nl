@@ -1,7 +1,7 @@
 ---
 title: "Voor wie"
-meta_title: "Voor wie is een toegankelijkheidsaudit? — Proper Access"
-description: "Overheid, e-commerce, cultuur of digital agency — ontdek hoe een WCAG-audit jouw organisatie helpt om digitale drempels weg te nemen."
+meta_title: "Voor wie is een toegankelijkheidsaudit? | Proper Access"
+description: "Overheid, e-commerce, cultuur of digital agency: ontdek hoe een WCAG-audit jouw organisatie helpt om digitale drempels weg te nemen."
 layout: "home-style"
 date: 2025-07-12
 slug: "sectoren"
@@ -31,7 +31,7 @@ We testen digitale toegankelijkheid tijdens de bouw van een website en draaien m
 
 ## Onderwijs
 
-Kunnen al je studenten bij de lesstof? Van LMS-platformen tot e-learning modules — we toetsen digitale leeromgevingen op toegankelijkheid, zodat iedere student zelfstandig kan leren. [Lees meer over toegankelijkheid in het onderwijs](/onderwijs-digitale-toegankelijkheid/).
+Kunnen al je studenten bij de lesstof? Van LMS-platformen tot e-learning modules: we toetsen digitale leeromgevingen op toegankelijkheid, zodat iedere student zelfstandig kan leren. [Lees meer over toegankelijkheid in het onderwijs](/onderwijs-digitale-toegankelijkheid/).
 
 
 # Digitale toegankelijkheid

@@ -3,7 +3,7 @@ title: '1.4.4 - Wat betekent \"Tekst vergroten\"?'
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
-description: "WCAG 1.4.4 vereist dat tekst tot 200% vergroot kan worden zonder verlies van inhoud of functionaliteit. Lees hoe je dit als ontwikkelaar correct implementeert."
+description: "WCAG 1.4.4 vraagt dat tekst tot 200% vergroot kan worden zonder verlies van inhoud of functionaliteit. Lees hoe je dit als ontwikkelaar correct toepast."
 aliases:
   - /sc-1-4-4-wat-betekent-tekst-vergroten/
 ---
@@ -16,7 +16,7 @@ Bezoekers moeten de tekst op de website minstens 200% kunnen vergroten, zonder d
 
 ## Waarom is dit belangrijk?
 
-Sommige mensen hebben moeite met het lezen van kleine letters. Denk aan ouderen of mensen met een visuele beperking. Daarom moet je tekst op een website groter kunnen maken, zonder dat de website onbruikbaar wordt. Dit helpt iedereen, ook bijvoorbeeld mobiele gebruikers.
+Sommige mensen hebben moeite met het lezen van kleine letters, zoals ouderen of mensen met een visuele beperking. Daarom moet je tekst op een website groter kunnen maken, zonder dat de website onbruikbaar wordt. Dit helpt iedereen, ook bijvoorbeeld mobiele gebruikers.
 
 ## Wat moet je doen?
 

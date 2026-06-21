@@ -7,16 +7,16 @@ tags:
   - "3-3-2"
   - "formulier"
   - "labels"
-description: "WCAG 3.3.2 vereist duidelijke labels en instructies bij formulieren. Lees hoe je invoervelden begrijpelijk maakt voor alle gebruikers."
+description: "WCAG 3.3.2 vraagt om duidelijke labels en instructies bij formulieren. Lees hoe je invoervelden begrijpelijk maakt voor alle gebruikers."
 aliases:
   - /sc-3-3-2-wat-betekent-labels-en-instructies/
 ---
 
-Je komt op een formulier met vijf velden. Geen labels, alleen placeholders die verdwijnen zodra je begint te typen. Halverwege het formulier weet je niet meer wat je in het eerste veld hebt getypt, laat staan of het het juiste veld was. Er staat "Verplicht" bij sommige velden, maar welke? En dat telefoonnummerveld -- moet je +31 ervoor zetten of niet?
+Je komt op een formulier met vijf velden. Geen labels, alleen placeholders die verdwijnen zodra je begint te typen. Halverwege het formulier weet je niet meer wat je in het eerste veld hebt getypt, en ook niet of het het juiste veld was. Er staat "Verplicht" bij sommige velden, maar welke? En dat telefoonnummerveld -- moet je +31 ervoor zetten of niet?
 
 Dit soort formulieren zijn overal. En ze zijn een groot probleem voor mensen met cognitieve beperkingen, laaggeletterden, en schermlezergebruikers.
 
-**WCAG succescriterium 3.3.2** (Labels or Instructions) eist dat invoervelden voorzien zijn van labels of instructies die duidelijk maken wat er verwacht wordt.
+**WCAG succescriterium 3.3.2** (Labels or Instructions) vraagt dat invoervelden voorzien zijn van labels of instructies die duidelijk maken wat er verwacht wordt.
 
 ## Het verschil met andere criteria
 

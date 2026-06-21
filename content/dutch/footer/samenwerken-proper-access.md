@@ -17,11 +17,11 @@ hero_meta:
 
 {{< section-full >}}
 
-Je hebt een klant die een toegankelijkheidsaudit nodig heeft. Of misschien wordt het een terugkerend thema — steeds meer organisaties moeten vanaf juni 2025 voldoen aan de European Accessibility Act (EAA).
+Je hebt een klant die een toegankelijkheidsaudit nodig heeft. Of misschien wordt het een terugkerend thema: steeds meer organisaties moeten vanaf juni 2025 voldoen aan de European Accessibility Act (EAA).
 
-Je zou het zelf kunnen doen. Een cursus volgen, een paar audits uitvoeren, kijken hoe het gaat. Maar eerlijk is eerlijk: WCAG leer je niet in een paar dagen. Het is een vak apart. En zonder jarenlange ervaring loop je risico op fouten, klachten, en in het ergste geval: boetes voor je klant.
+Je zou het zelf kunnen doen. Een cursus volgen, een paar audits uitvoeren, kijken hoe het gaat. Maar eerlijk is eerlijk: WCAG leer je niet in een paar dagen. Het is een vak apart. En zonder jarenlange ervaring loop je risico op fouten, klachten, en in het ergste geval boetes voor je klant.
 
-Wat als je gewoon kunt leveren wat je klant nodig heeft — zonder zelf alles op te zetten? **Dat is precies waar deze samenwerking over gaat.**
+Wat als je gewoon kunt leveren wat je klant nodig heeft, zonder zelf alles op te zetten? **Dat is precies waar deze samenwerking over gaat.**
 
 [Laten we kennismaken →](#cta)
 
@@ -35,12 +35,12 @@ WCAG is geen checklist. Het zijn richtlijnen die je moet interpreteren per situa
 {{< /section-card >}}
 {{< section-card title="Klanten niet teleurstellen" >}}
 
-Een audit die niet klopt, of advies dat achteraf onvolledig blijkt — dat schaadt je reputatie. En met de EAA die nu echt wordt gehandhaafd, zijn de risico's groter dan ooit.
+Een audit die niet klopt, of advies dat achteraf onvolledig blijkt: dat schaadt je reputatie. En met de EAA die nu echt wordt gehandhaafd, zijn de risico's groter dan ooit.
 
 {{< /section-card >}}
 {{< section-card title="Niet alles zelf uitvoeren" >}}
 
-Je kent je klant en weet wat er speelt. Maar de diepgaande technische kennis van WCAG, ARIA en screenreader-gedrag — dat is een specialisatie op zich.
+Je kent je klant en weet wat er speelt. Maar de diepgaande technische kennis van WCAG, ARIA en screenreader-gedrag is een specialisatie op zich.
 
 {{< /section-card >}}
 {{< /section-cards >}}
@@ -61,7 +61,7 @@ De klant blijft jouw klant. Wij zijn het aanspreekpunt, wij sturen de communicat
 {{< /section-card >}}
 {{< section-card title="2. Wij leveren alles wat je nodig hebt" >}}
 
-Een landingspagina, de audit zelf binnen 5 tot 8 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur — je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
+Een landingspagina, de audit zelf binnen 5 tot 8 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur. Je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
 
 {{< /section-card >}}
 {{< section-card title="3. Jij krijgt een aantrekkelijke commissie" >}}
@@ -75,14 +75,14 @@ Voor elke audit die via jouw bureau loopt, ontvang je een commissie. Geen opstar
 
 Laten we eerlijk zijn: een cursus is nuttig als introductie. Maar WCAG toepassen in de praktijk vraagt om meer dan theorie.
 
-- **200+ controlepunten per pagina** — elk met nuances die je alleen leert door ze dagelijks te zien
-- **Technische diepgang** — hoe werkt een screenreader écht? Wat doet browser X met bepaalde ARIA-attributen? Wat is de impact van een fout in de focusvolgorde?
-- **Juridische context** — wat moet er echt volgens de wet, en wat is een "nice to have"?
-- **Updates** — WCAG 2.2 is er, 2.3 wordt voorbereid, en browsers veranderen continu
+- **200+ controlepunten per pagina**, elk met nuances die je alleen leert door ze dagelijks te zien
+- **Technische diepgang**: hoe werkt een screenreader écht? Wat doet browser X met bepaalde ARIA-attributen? Wat is de impact van een fout in de focusvolgorde?
+- **Juridische context**: wat moet er echt volgens de wet, en wat is een "nice to have"?
+- **Updates**: WCAG 2.2 is er, 2.3 wordt voorbereid, en browsers veranderen continu
 
 Wij doen dit fulltime, sinds 2019. Ons team test wekelijks nieuwe situaties, onderzoekt browsergedrag, en stelt kritische vragen bij wat "de standaard" zegt. Die ervaring kun je niet in een paar dagen oppikken.
 
-**Dat betekent niet dat je zelf niks hoeft te weten** — integendeel. Basale kennis van WCAG helpt je om beter met je klant te communiceren. Maar voor de uitvoering? Daar zijn wij voor.
+**Dat betekent niet dat je zelf niks hoeft te weten**, integendeel. Basale kennis van WCAG helpt je om beter met je klant te communiceren. Maar voor de uitvoering? Daar zijn wij voor.
 
 {{< /offerte-section >}}
 
@@ -93,7 +93,7 @@ Wij doen dit fulltime, sinds 2019. Ons team test wekelijks nieuwe situaties, ond
 - Klanten adviseren over digitale strategie, maar WCAG niet als kernexpertise hebben
 - Een groeiende vraag zien naar toegankelijkheidsaudits (door de EAA)
 - Hun dienstverlening willen uitbreiden zonder een volledig nieuw team op te bouwen
-- Waarde hechten aan kwaliteit — niet "een audit", maar échte expertise
+- Waarde hechten aan kwaliteit: niet "een audit", maar échte expertise
 
 **Dit is géén goede match als:**
 
@@ -105,11 +105,11 @@ Wij doen dit fulltime, sinds 2019. Ons team test wekelijks nieuwe situaties, ond
 
 {{< section-full title="Wat kun je verwachten?" bg="light" >}}
 
-- **900+ audits uitgevoerd** — van overheidsinstanties, musea tot webshops
-- **Rapporten die je team direct kan gebruiken** — per pagina, per element, met screenshots en code-snippets
-- **Onbeperkt vragen stellen na het rapport** — we denken mee tot het resultaat er staat
-- **Een partner die meedenkt** — niet alleen een rapport opleveren, maar denken graag mee over de alternatieve oplossingen
-- **Transparante communicatie** — geen verrassingen, geen onduidelijke voorwaarden
+- **900+ audits uitgevoerd**, van overheidsinstanties, musea tot webshops
+- **Rapporten die je team direct kan gebruiken**: per pagina, per element, met screenshots en code-snippets
+- **Onbeperkt vragen stellen na het rapport**: we denken mee tot het resultaat er staat
+- **Een partner die meedenkt**: niet alleen een rapport opleveren, maar denken graag mee over de alternatieve oplossingen
+- **Transparante communicatie**: geen verrassingen, geen onduidelijke voorwaarden
 
 {{< /section-full >}}
 
@@ -121,7 +121,7 @@ Ja, de landingspagina krijgt jouw logo en huisstijl. Je klanten zien dit als jou
 {{< /section-faq-item >}}
 {{< section-faq-item question="Hoe zit het met de facturatie?" >}}
 
-De klant betaalt aan jouw bureau. Jij betaalt ons voor de audit minus jouw commissie. Of we regelen het andersom — wat voor jou het makkelijkst werkt.
+De klant betaalt aan jouw bureau. Jij betaalt ons voor de audit minus jouw commissie. Of we regelen het andersom, wat voor jou het makkelijkst werkt.
 
 {{< /section-faq-item >}}
 {{< section-faq-item question="Wat als mijn klant vragen heeft na het rapport?" >}}

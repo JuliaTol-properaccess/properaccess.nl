@@ -1,6 +1,6 @@
 ---
 title: "Toegankelijkheids-abonnement"
-meta_title: "Toegankelijkheidsabonnement — doorlopend WCAG-partnerschap | Proper Access"
+meta_title: "Toegankelijkheidsabonnement: doorlopend WCAG-partnerschap | Proper Access"
 layout: "agency"
 weight: 7
 date: 2026-02-28
@@ -20,8 +20,8 @@ service:
   serviceType: "Doorlopend toegankelijkheidsabonnement"
 
 banner:
-  title: "Structureel toegankelijk — zonder dat je er elke dag aan hoeft te denken"
-  content: "Als je 5 of meer websites of apps beheert, is toegankelijkheid geen eenmalig project. Het is een doorlopend proces dat planning, kennis en een betrouwbare partner vereist. Met ons abonnement leg je de regie bij een bureau dat je portfolio kent — en houd je het overzicht."
+  title: "Structureel toegankelijk, zonder dat je er elke dag aan hoeft te denken"
+  content: "Als je 5 of meer websites of apps beheert, is toegankelijkheid geen eenmalig project. Het is een doorlopend proces dat planning, kennis en een betrouwbare partner vereist. Met ons abonnement leg je de regie bij een bureau dat je portfolio kent, en houd je het overzicht."
   button:
     enable: true
     label: "Neem contact op"
@@ -39,7 +39,7 @@ trust:
 
 {{< section-full title="Een partner voor je hele portfolio" >}}
 
-Bij het abonnement krijg je een vaste partner die al je websites en apps kent. We stellen samen een meerjarenplanning op: welke sites worden wanneer geaudit, wanneer zijn hertoetsen nodig, en hoe houd je alles op koers. Jij houdt je bezig met je organisatie — wij houden het overzicht over de toegankelijkheid.
+Bij het abonnement krijg je een vaste partner die al je websites en apps kent. We stellen samen een meerjarenplanning op: welke sites worden wanneer geaudit, wanneer zijn hertoetsen nodig, en hoe houd je alles op koers. Jij houdt je bezig met je organisatie, wij houden het overzicht over de toegankelijkheid.
 
 - **Meerjarenplanning** voor al je websites en apps
 - **Vaste contactpersoon** die je portfolio van binnen en buiten kent
@@ -49,24 +49,24 @@ Bij het abonnement krijg je een vaste partner die al je websites en apps kent. W
 
 {{< /section-full >}}
 
-{{< section-cards title="Trainingen en tools — inbegrepen" columns="2" bg="light" >}}
+{{< section-cards title="Trainingen en tools: inbegrepen" columns="2" bg="light" >}}
 {{< section-card title="Training devteam" >}}
 
-Semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en testen met screenreaders. Gebaseerd op jullie eigen code — geen generieke slides.
+Semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en testen met screenreaders. Gebaseerd op jullie eigen code, geen generieke slides.
 
 [Meer over de training devteam →](/training-devteams/)
 
 {{< /section-card >}}
 {{< section-card title="Training webredactie" >}}
 
-Koppen, alt-teksten, linkteksten, tabellen, kleurcontrast en toegankelijke PDF's. Gebaseerd op jullie eigen content — hands-on en interactief.
+Koppen, alt-teksten, linkteksten, tabellen, kleurcontrast en toegankelijke PDF's. Gebaseerd op jullie eigen content, hands-on en interactief.
 
 [Meer over de training webredactie →](/trainen-van-webredactie/)
 
 {{< /section-card >}}
 {{< section-card title="Onbeperkt toegang tot onze tools" >}}
 
-We ontwikkelen doorlopend tools die het werk van onze klanten versnellen. Als abonnee krijg je onbeperkt toegang tot al deze tools — bestaande en toekomstige. Geen extra kosten.
+We ontwikkelen doorlopend tools die het werk van onze klanten versnellen. Als abonnee krijg je onbeperkt toegang tot al deze tools, bestaande en toekomstige. Geen extra kosten.
 
 [Bekijk onze tools →](/tools/)
 
@@ -91,14 +91,14 @@ Benieuwd wat een abonnement voor jouw organisatie kan betekenen? Neem contact op
 <details class="faq-item">
 <summary class="faq-question">Voor wie is het abonnement bedoeld?</summary>
 <div class="faq-answer">
-<p>Voor organisaties en bedrijven die 5 of meer websites of apps beheren en de toegankelijkheid structureel willen borgen. Denk aan overheden met meerdere domeinen, grote organisaties met een portfolio van digitale producten, of bedrijven die onder de EAA vallen met meerdere e-commerceplatforms.</p>
+<p>Voor organisaties en bedrijven die 5 of meer websites of apps beheren en de toegankelijkheid structureel willen borgen. Bijvoorbeeld overheden met meerdere domeinen, grote organisaties met een portfolio van digitale producten, of bedrijven die onder de EAA vallen met meerdere e-commerceplatforms.</p>
 </div>
 </details>
 
 <details class="faq-item">
 <summary class="faq-question">Wat kost het abonnement?</summary>
 <div class="faq-answer">
-<p>De kosten zijn afhankelijk van het aantal websites en apps in je portfolio, de gewenste auditfrequentie en de omvang van de trainingen. Neem contact op voor een gesprek — we maken een voorstel op maat.</p>
+<p>De kosten zijn afhankelijk van het aantal websites en apps in je portfolio, de gewenste auditfrequentie en de omvang van de trainingen. Neem contact op voor een gesprek, we maken een voorstel op maat.</p>
 </div>
 </details>
 
@@ -112,7 +112,7 @@ Benieuwd wat een abonnement voor jouw organisatie kan betekenen? Neem contact op
 <details class="faq-item">
 <summary class="faq-question">Hoe ziet de meerjarenplanning eruit?</summary>
 <div class="faq-answer">
-<p>We stellen samen een schema op: welke sites worden wanneer geaudit, wanneer zijn hertoetsen gepland, en welke trainingen vinden wanneer plaats. Dit schema stemmen we af op je budget, je planning en eventuele deadlines (bijv. EAA-compliance).</p>
+<p>We stellen samen een schema op: welke sites worden wanneer geaudit, wanneer zijn hertoetsen gepland, en welke trainingen vinden wanneer plaats. Dit schema stemmen we af op je budget, je planning en eventuele deadlines, bijvoorbeeld de EAA-deadline.</p>
 </div>
 </details>
 

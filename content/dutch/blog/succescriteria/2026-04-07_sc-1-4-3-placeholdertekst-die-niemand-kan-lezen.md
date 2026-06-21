@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "1-4-3"
   - "contrast"
-description: "Placeholdertekst die niemand kan lezen — WCAG 1.4.3 Contrast (minimum) (post 2/10)"
+description: "Placeholdertekst die niemand kan lezen. WCAG 1.4.3 Contrast (minimum) (post 2/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -21,7 +21,7 @@ image: "/images/blog/linkedin-series/sc-1-4-3-placeholdertekst-die-niemand-kan-l
 
 Dat staat er. In het invoerveld. In #C0C0C0 op wit. Contrast: 1,6:1.
 
-Je moet er bijna tegenaan plakken om het te lezen. En dit is niet de uitzondering — dit is de standaard browserstyling van placeholders.
+Je moet er bijna tegenaan plakken om het te lezen. En dit is niet de uitzondering, dit is de standaard browserstyling van placeholders.
 
 Het wordt pas echt problematisch als je placeholder de enige plek is waar het invoerformaat staat. "DD-MM-JJJJ". Of "Bijv. 1234 AB". Als iemand dat niet kan lezen, vult diegene het verkeerd in. En krijgt een foutmelding. Die misschien ook slecht contrasteert. Maar dat is een andere post.
 
@@ -38,3 +38,4 @@ Het wordt pas echt problematisch als je placeholder de enige plek is waar het in
 **Maar eigenlijk:** gebruik geen placeholder als je enige manier om informatie te tonen. Placeholders verdwijnen zodra je begint met typen. Zet het formaat in een hint-tekst onder het veld. Die blijft altijd zichtbaar.
 
 En ja, #767676 ziet er "donkerder" uit dan je gewend bent bij placeholders. Dat is precies het punt. Wat je gewend bent, is te licht.
+

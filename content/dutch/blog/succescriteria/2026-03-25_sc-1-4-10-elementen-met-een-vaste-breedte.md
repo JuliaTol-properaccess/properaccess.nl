@@ -9,7 +9,7 @@ tags:
   - "1-4-10"
   - "reflow"
   - "responsive"
-description: "Elementen met een vaste breedte — WCAG 1.4.10 Reflow (post 1/10)"
+description: "Elementen met een vaste breedte: WCAG 1.4.10 Reflow (post 1/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -42,6 +42,6 @@ Vervang `width` door `max-width` en voeg `width: 100%` toe. Zo groeit het elemen
 
 Maak je browservenster 320 pixels breed. Moet je horizontaal scrollen? Dan is er werk aan de winkel.
 
-Dit is WCAG 1.4.10 Reflow. De eis dat content bruikbaar blijft bij 400% zoom — zonder horizontaal te scrollen.
+Dit is WCAG 1.4.10 Reflow. De richtlijn vraagt dat content bruikbaar blijft bij 400% zoom, zonder horizontaal te scrollen.
 
 Post 1 van 10 over de meest voorkomende reflow-problemen.

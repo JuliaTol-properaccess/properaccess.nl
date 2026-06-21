@@ -1,6 +1,6 @@
 ---
 title: "Toegankelijkheidsaudit"
-meta_title: "WCAG-audit laten uitvoeren — onafhankelijk en concreet | Proper Access"
+meta_title: "WCAG-audit laten uitvoeren: onafhankelijk en concreet | Proper Access"
 layout: "audit"
 weight: 2
 featured: true
@@ -30,15 +30,15 @@ service:
   serviceType: "WCAG-audit voor websites"
   price:
     amount: 2100
-    description: "Indicatie vanaf ca. € 2.100 excl. btw. De definitieve prijs hangt af van omvang en type site en volgt na een gratis kennismaking."
+    description: "Indicatie vanaf circa € 2.100 exclusief btw. De definitieve prijs hangt af van omvang en type site en volgt na een gratis kennismaking."
 
 banner:
   title: "In minder dan 12 weken een toegankelijke website of app"
-  content: "Meer bereik, betere conversie en een sterker imago — door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
+  content: "Meer bereik, betere conversie en een sterker imago, door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
-    - "**Meer bereik** — tot 20% extra potenti&euml;le klanten"
+    - "**Meer bereik**: tot 20% extra potenti&euml;le klanten"
     - "**Betere conversie** en sterker imago"
-    - "**Compliant** met EAA of BDTO, zonder stress"
+    - "**Voldoe** aan EAA of BDTO, zonder stress"
   button:
     enable: true
     label: "Plan een gratis kennismaking (30 min)"
@@ -60,17 +60,17 @@ faqs:
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
   - question: "Is dit verplicht voor ons?"
-    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten — webshops, bankieren, reizen boeken, e-books, communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
+    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
   - question: "Wat als we niet technisch zijn?"
     answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
   - question: "Kunnen jullie ook de problemen oplossen?"
     answer: "Wij adviseren, jouw developers voeren uit. Maar als je geen eigen developers hebt, kunnen we je doorverwijzen naar agencies waarmee we samenwerken."
   - question: "Wat krijgen we precies?"
-    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen — wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
+    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen. Wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf ca. 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie — geen verrassingen achteraf."
+    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
-    answer: "Automatische scans detecteren ongeveer 30% van de WCAG-succescriteria — vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
+    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
 ---

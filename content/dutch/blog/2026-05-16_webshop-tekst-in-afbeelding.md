@@ -9,7 +9,7 @@ tags:
   - "alt-tekst"
   - "afbeeldingen"
   - "ecommerce"
-description: "Tekst in afbeelding — Afbeeldingen in webshops (post 5/8)"
+description: "Tekst in afbeelding. Afbeeldingen in webshops (post 5/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -20,6 +20,6 @@ image: "/images/blog/webshop-wireframe-eaa.svg"
 
 Je hebt op je website een prachtige banner: "Vandaag 15% korting op alle artikelen." De tekst staat ingebakken in het plaatje. Ziet er geweldig uit. Maar wie bereik je er eigenlijk mee? Alleen de mensen die het plaatje kunnen zien en de tekst scherp genoeg kunnen lezen. Mensen die voorleessoftware gebruiken, horen niks. Mensen die de tekst groter willen maken of het contrast willen verhogen, kunnen dat niet. En Google kan de tekst in je afbeelding niet lezen.
 
-Je mag banners gebruiken om je website aantrekkelijker te maken, maar zorg ervoor dat dezelfde informatie ook als gewone tekst op de pagina staat. Plaats je call to action — "15% korting" — als een kop of een tekst onder de afbeelding. Dan is die boodschap beschikbaar voor iedereen: voor wie luistert, voor wie inzoomt, voor wie het contrast aanpast, en voor Google.
+Je mag banners gebruiken om je website aantrekkelijker te maken, maar zorg ervoor dat dezelfde informatie ook als gewone tekst op de pagina staat. Plaats je call to action, "15% korting", als een kop of een tekst onder de afbeelding. Dan is die boodschap beschikbaar voor iedereen: voor wie luistert, voor wie inzoomt, voor wie het contrast aanpast, en voor Google.
 
 Ik heb het in audits vaker gezien dan me lief is: fantastische aanbiedingen die een groot deel van de bezoekers nooit bereiken. Terwijl de fix zo simpel is.

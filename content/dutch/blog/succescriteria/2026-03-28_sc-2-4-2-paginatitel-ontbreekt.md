@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "2-4-2"
   - "paginatitel"
-description: "Paginatitel ontbreekt — WCAG 2.4.2 Paginatitel (post 1/7)"
+description: "Paginatitel ontbreekt: WCAG 2.4.2 Paginatitel (post 1/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

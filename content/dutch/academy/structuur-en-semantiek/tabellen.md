@@ -10,7 +10,7 @@ layout: "academy"
 
 ## Wanneer is een tabel een tabel?
 
-Een tabel is bedoeld voor **data die in rijen en kolommen** thuishoort. Denk aan een prijslijst, een rooster, vergelijkende specificaties of zoekresultaten. De relatie tussen rij en kolom is de informatie: "dit product kost dit bedrag" of "deze medewerker werkt op die dag".
+Een tabel is bedoeld voor **data die in rijen en kolommen** thuishoort. Bijvoorbeeld een prijslijst, een rooster, vergelijkende specificaties of zoekresultaten. De relatie tussen rij en kolom is de informatie: "dit product kost dit bedrag" of "deze medewerker werkt op die dag".
 
 Gebruik een tabel **niet** voor layout. In de jaren negentig werden tabellen gebruikt om kolommen en witruimte te creeren. Dat patroon is achterhaald, maar komt nog steeds voor -- vooral in e-mail templates en oudere websites. Een layout-tabel geeft een schermlezer verkeerde informatie: die leest "tabel met 3 rijen en 2 kolommen" terwijl er geen data-relatie is.
 

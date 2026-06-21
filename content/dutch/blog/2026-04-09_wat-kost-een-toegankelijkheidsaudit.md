@@ -28,10 +28,10 @@ Een toegankelijkheidsaudit kost bij de meeste aanbieders in Nederland tussen de 
 Hoe meer unieke paginatypes, hoe meer werk. Een website met 5 templates is sneller geaudit dan een webshop met productpagina's, filters, checkout, accountbeheer en een helpcentrum.
 
 ### 2. Het type audit
-- **Volledige WCAG-audit** — alle 50 succescriteria op A- en AA-niveau, handmatig + geautomatiseerd. Dit is het meest grondig.
-- **Content-audit** — focus op de inhoud: kopstructuur, alt-teksten, taalgebruik, leesbaarheid
-- **Techniekaudit** — focus op de code: semantische HTML, ARIA, toetsenbordtoegankelijkheid
-- **Systeemaudit** — voor herbruikbare componenten (design systems, component libraries)
+- **Volledige WCAG-audit**: alle 50 succescriteria op A- en AA-niveau, handmatig + geautomatiseerd. Dit is het meest grondig.
+- **Content-audit**: focus op de inhoud: kopstructuur, alt-teksten, taalgebruik, leesbaarheid
+- **Techniekaudit**: focus op de code: semantische HTML, ARIA, toetsenbordtoegankelijkheid
+- **Systeemaudit**: voor herbruikbare componenten (design systems, component libraries)
 
 ### 3. De kwaliteit van het rapport
 Hier zit het grootste verschil. Sommige bureaus leveren een Excel met "voldoet / voldoet niet" per succescriterium. Dat is goedkoop, maar je ontwikkelaar kan er weinig mee.
@@ -64,9 +64,9 @@ De meeste websites vallen in de categorie "gemiddeld-complex" (€ 3.600). Dat i
 ## Waarom zijn sommige aanbieders veel duurder?
 
 Grote bureaus rekenen vaak hogere tarieven vanwege:
-- **Overhead** — account managers, projectmanagers, kantoorkosten
-- **Merk** — je betaalt voor de naam
-- **Langere doorlooptijden** — meer schakels in de keten
+- **Overhead**: account managers, projectmanagers, kantoorkosten
+- **Merk**: je betaalt voor de naam
+- **Langere doorlooptijden**: meer schakels in de keten
 
 Bij ons werk je rechtstreeks met de auditor. Geen tussenpersonen, geen onnodige overhead. Dat houdt de prijs laag en de communicatie direct.
 
@@ -74,10 +74,10 @@ Bij ons werk je rechtstreeks met de auditor. Geen tussenpersonen, geen onnodige 
 
 Nee, maar wees kritisch. Vraag altijd:
 - Wordt er **handmatig getest** of alleen met geautomatiseerde tools?
-- Hoe wordt het rapport **opgeleverd** — per succescriterium of per element?
+- Hoe wordt het rapport **opgeleverd**: per succescriterium of per element?
 - Is er **support** na oplevering als je vragen hebt?
-- Wie voert de audit **daadwerkelijk uit** — een junior of een senior auditor?
+- Wie voert de audit **daadwerkelijk uit**: een junior of een senior auditor?
 
 Een audit van € 1.000 die alleen geautomatiseerd test, vindt maximaal 30% van de problemen. Dan betaal je uiteindelijk dubbel.
 
-Wil je eerst een indruk van de staat van je website? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je wat je kunt verwachten voordat je investeert.
+Wil je eerst een indruk van de staat van je website? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je wat je kunt verwachten voordat je investeert.

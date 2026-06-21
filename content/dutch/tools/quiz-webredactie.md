@@ -1,6 +1,6 @@
 ---
 title: "Quiz: Toegankelijke content voor webredacties"
-meta_title: "Accessibility Quiz voor Webredacties — Test je kennis | Proper Access"
+meta_title: "Accessibility Quiz voor Webredacties: test je kennis | Proper Access"
 slug: "quiz-webredactie"
 url: "/tools/quiz-webredactie/"
 layout: "quiz-webredactie"

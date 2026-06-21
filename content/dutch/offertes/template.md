@@ -21,11 +21,11 @@ offertenummer: "202602-03"
 
 Beste Roland,
 
-Wat mooi dat jullie een bewonersportaal ontwikkelen dat toegankelijk is voor álle inwoners! Een platform waar iedereen zijn zaken kan regelen, ongeacht beperking of hulpmiddel — daar doen we het voor.
+Wat mooi dat jullie een bewonersportaal ontwikkelen dat toegankelijk is voor álle inwoners! Een platform waar iedereen zijn zaken kan regelen, ongeacht beperking of hulpmiddel. Daar doen we het voor.
 
 Ik begrijp dat jullie graag een onafhankelijk auditrapporten willen voor zowel de website als de app, die ook bruikbaar zijn voor een KADR-certificering. Perfect! Onze rapporten zijn niet alleen geschikt als objectief bewijsstuk richting toezichthouders, maar staan vooral bómvol praktische oplossingen waar jullie ontwikkelaars en designers direct mee aan de slag kunnen.
 
-Wat ons onderscheidt? We geven niet alleen aan wát er niet werkt, maar ook precies hóe jullie het kunnen oplossen — vaak uitgewerkt in code of pseudocode. Zo kunnen jullie snel én gericht doorpakken richting een volledig toegankelijk bewonersportaal.
+Wat ons onderscheidt? We geven niet alleen aan wát er niet werkt, maar ook precies hóe jullie het kunnen oplossen, vaak uitgewerkt in code of pseudocode. Zo kunnen jullie snel én gericht doorpakken richting een volledig toegankelijk bewonersportaal.
 
 In deze offerte vind je onze audit voor de website van het bewonersportaal. Voor de app ontvang je een aparte offerte. Samen zorgen we ervoor dat alle inwoners zonder barrières gebruik kunnen maken van jullie platform!
 
@@ -39,11 +39,11 @@ CEO Proper Access, senior WCAG-auditor
 
 Met deze audit krijgen jullie drie belangrijke resultaten:
 
-1. **Aantoonbare naleving van de EAA** — Het toegankelijkheidsrapport fungeert als objectief bewijsstuk waaruit blijkt dat jullie organisatie actief invulling geeft aan haar wettelijke verplichtingen onder de EAA. Dit rapport is geschikt als onderbouwing voor KADR-certificering.
+1. **Aantoonbare naleving van de EAA.** Het toegankelijkheidsrapport fungeert als objectief bewijsstuk waaruit blijkt dat jullie organisatie actief invulling geeft aan haar wettelijke verplichtingen onder de EAA. Dit rapport is geschikt als onderbouwing voor KADR-certificering.
 
-2. **Onderbouwd plan van aanpak richting toezichthouder** — Op basis van de analyse wordt een concreet en uitvoerbaar plan van aanpak opgesteld. Dit plan laat zien welke maatregelen worden genomen, binnen welke termijn en met welke prioriteit.
+2. **Onderbouwd plan van aanpak richting toezichthouder.** Op basis van de analyse wordt een concreet en uitvoerbaar plan van aanpak opgesteld. Dit plan laat zien welke maatregelen worden genomen, binnen welke termijn en met welke prioriteit.
 
-3. **Beter imago en groter bereik** — Door het bewonersportaal daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor een bredere doelgroep. Dit draagt bij aan een inclusiever imago, verhoogt de gebruiksvriendelijkheid en vergroot het potentiële bereik naar álle inwoners.
+3. **Beter imago en groter bereik.** Door het bewonersportaal daadwerkelijk toegankelijk te maken, wordt deze bruikbaar voor een bredere doelgroep. Dit draagt bij aan een inclusiever imago, verhoogt de gebruiksvriendelijkheid en vergroot het potentiële bereik naar álle inwoners.
 
 {{< /offerte-section >}}
 
@@ -58,7 +58,7 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 
 ### Onderzoeksopzet & testmethoden
 
-- **Handmatige controle** op ca. 200 controlepunten per pagina in de steekproef
+- **Handmatige controle** op circa 200 controlepunten per pagina in de steekproef
 - **Testen in donkere en lichte modus**
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Contrast getest** in dark mode en licht mode
@@ -70,7 +70,7 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 
 - **Praktische oplossingen per bevinding**, waar mogelijk uitgewerkt in HTML, CSS en JS of in pseudocode
 - **Voorstel voor alternatieve oplossingen**
-- **We kijken verder dan de WCAG** — kansen voor extra toegankelijkheid of gebruiksvriendelijkheid nemen we mee
+- **We kijken verder dan de WCAG**: kansen voor extra toegankelijkheid of gebruiksvriendelijkheid nemen we mee
 - **Duidelijk onderscheid** tussen WCAG-issues en aanvullende adviezen
 
 ### Plan van aanpak
@@ -84,7 +84,7 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 
 {{< offerte-section title="Audit vs. tool" subtitle="Waarom menselijke expertise?" bg="light" >}}
 
-Automatische tools kunnen slechts 20-30% van toegankelijkheidsproblemen detecteren. Voor een betrouwbaar en compleet beeld is menselijke expertise noodzakelijk. Onze senior auditors testen met echte hulpmiddelen (screenreaders, toetsenbordnavigatie) en beoordelen context, gebruikservaring en begrip.
+Automatische tools kunnen slechts 20-30% van toegankelijkheidsproblemen herkennen. Voor een betrouwbaar en compleet beeld is menselijke expertise noodzakelijk. Onze senior auditors testen met echte hulpmiddelen (screenreaders, toetsenbordnavigatie) en beoordelen context, gebruikservaring en begrip.
 
 Meer informatie: [properaccess.nl/overlay-toegankelijkheidstools/](https://properaccess.nl/overlay-toegankelijkheidstools/)
 
@@ -95,7 +95,7 @@ Meer informatie: [properaccess.nl/overlay-toegankelijkheidstools/](https://prope
 | Product                                                                                                                             | Prijs (excl. BTW) |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | **Audit digitale toegankelijkheid van een gemiddelde, iets complexe website**                                                       | **€ 2.695**       |
-| _Een project van ca. 24 uur, sample: 14-17 pagina's en/of PDF's, inclusief concrete oplossingen, rapportage bevindingen per pagina_ |                   |
+| _Een project van circa 24 uur, sample: 14-17 pagina's en/of PDF's, inclusief concrete oplossingen, rapportage bevindingen per pagina_ |                   |
 |                                                                                                                                     |                   |
 | **Optionele diensten:**                                                                                                             |                   |
 | Retest van bevindingen                                                                                                              | € 500             |

@@ -10,7 +10,7 @@ tags:
   - "css"
   - "focus"
   - "contrast"
-description: "Focusindicator die opgaat in de achtergrond — WCAG 2.4.7 Focus zichtbaar (post 2/7)"
+description: "Focusindicator die opgaat in de achtergrond: WCAG 2.4.7 Focus zichtbaar (post 2/7)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

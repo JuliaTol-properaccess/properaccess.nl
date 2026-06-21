@@ -21,7 +21,7 @@ seo_title: "WCAG-EM uitgelegd: de 5 stappen van een officieel onderzoek | Proper
 seo_description: "Wat is WCAG-EM en waarom is het verplicht voor overheids- en EAA-audits? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
 ---
 
-Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C — dezelfde club die WCAG maakt — heeft vastgelegd voor hoe je een WCAG-audit hoort uit te voeren.
+Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een WCAG-audit hoort uit te voeren.
 
 WCAG zegt **wát** je moet toetsen. WCAG-EM zegt **hoe** je dat doet. Dat tweede is net zo belangrijk, want zonder een vaste methode kan iedereen z'n eigen conclusies trekken en is een audit niet vergelijkbaar of controleerbaar.
 
@@ -40,9 +40,9 @@ Daardoor zijn audits van verschillende partijen vergelijkbaar, en kan een hercon
 
 ## Wanneer is WCAG-EM verplicht?
 
-- **Overheidswebsites onder het BDTO (Besluit Digitale Toegankelijkheid Overheid)** — de [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) moet gebaseerd zijn op een WCAG-EM-evaluatie
-- **Webshops en diensten onder de EAA** — voor een geldige conformiteitsbeoordeling
-- **Formele audits voor een A-verklaring** — zonder WCAG-EM geen status A in het Register van Toegankelijkheidsverklaringen
+- **Overheidswebsites onder het BDTO (Besluit Digitale Toegankelijkheid Overheid)**: de [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) moet gebaseerd zijn op een WCAG-EM-evaluatie
+- **Webshops en diensten onder de EAA**: voor een geldige conformiteitsbeoordeling
+- **Formele audits voor een A-verklaring**: zonder WCAG-EM geen status A in het Register van Toegankelijkheidsverklaringen
 
 Ook als je niet wettelijk verplicht bent, is het de reden om erom te vragen. Een aanbieder die niet volgens WCAG-EM werkt, werkt met zelfbedachte scope en dat zegt iets.
 
@@ -111,7 +111,7 @@ Het eindrapport bevat:
 - **De scope** uit stap 1 (zodat een hertest op dezelfde grondslag kan gebeuren)
 - **De steekproef** uit stap 3 (welke pagina's en waarom)
 - **De bevindingen per succescriterium** met bewijs
-- **Een conclusie over conformiteit** — voldoet de site, en zo nee, op welke punten niet
+- **Een conclusie over conformiteit**: voldoet de site, en zo nee, op welke punten niet
 
 Voor een overheidsrapport levert dit uiteindelijk één van vier verklaringsstatussen op: A (voldoet volledig), B (voldoet grotendeels), C (eerste maatregelen getroffen) of D (voldoet niet).
 
@@ -135,4 +135,4 @@ Voor ons is het ook een manier om het gesprek met klanten te structureren. Stap 
 
 Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? Een [mini-audit](/quickscan/) van de belangrijkste pagina's is een goed begin. Daarna kunnen we samen bepalen of een volledig WCAG-EM-onderzoek bij je wettelijke verplichting of interne doelen past.
 
-Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek — wat is het en wanneer heb je het nodig?](/blog/toegankelijkheidsonderzoek-wat-is-het/)
+Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek: wat is het en wanneer heb je het nodig?](/blog/toegankelijkheidsonderzoek-wat-is-het/)

@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "2-4-4"
   - "links"
-description: "URL als linktekst — WCAG 2.4.4 Linkdoel (in context) (post 2/14)"
+description: "URL als linktekst. WCAG 2.4.4 Linkdoel (in context) (post 2/14)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -35,7 +35,7 @@ Dat is wat een schermlezer voorleest als je een kale URL als linktekst gebruikt.
 
 **Waarom doen mensen dit?**
 
-Vaak uit gemakzucht. Copy-paste van de URL. Of het CMS vult de linktekst automatisch met de URL. Of iemand denkt dat de URL "transparant" is — je ziet waar je naartoe gaat.
+Vaak uit gemakzucht. Copy-paste van de URL. Of het CMS vult de linktekst automatisch met de URL. Of iemand denkt dat de URL "transparant" is: je ziet waar je naartoe gaat.
 
 Maar een URL is geen beschrijving. "/rapport-2024.pdf" zegt iets. "/doc/r24-final-v3-NL.pdf" zegt niets.
 

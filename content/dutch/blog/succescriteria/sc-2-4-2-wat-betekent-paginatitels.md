@@ -5,7 +5,7 @@ categories:
   - "wcag-uitgelegd"
 tags:
   - "2-4-2"
-description: "WCAG 2.4.2 vereist dat elke pagina een beschrijvende titel heeft. Lees hoe je goede paginatitels schrijft voor toegankelijkheid en SEO."
+description: "WCAG 2.4.2 vraagt dat elke pagina een beschrijvende titel heeft. Lees hoe je goede paginatitels schrijft voor toegankelijkheid en SEO."
 aliases:
   - /sc-2-4-2-wat-betekent-paginatitels/
 ---
@@ -14,7 +14,7 @@ Je hebt twaalf tabbladen open in je browser. Je zoekt dat ene tabblad met je win
 
 Dat is al irritant met een muis. Maar voor iemand die een schermlezer gebruikt, is het een serieus probleem. Een schermlezer leest als eerste de paginatitel voor bij het wisselen van tabbladen of het openen van een pagina. Als die titel "Home" is of "Welkom bij ons bedrijf", geeft dat geen enkele informatie over wat er op de pagina staat.
 
-**WCAG succescriterium 2.4.2** (Page Titled) eist dat elke webpagina een beschrijvende titel heeft die de inhoud of het doel van de pagina duidelijk maakt.
+**WCAG succescriterium 2.4.2** (Page Titled) vraagt dat elke webpagina een beschrijvende titel heeft die de inhoud of het doel van de pagina duidelijk maakt.
 
 ## Waar verschijnt de paginatitel?
 
@@ -97,6 +97,6 @@ Bij foutpagina's: maak duidelijk dat er een fout is:
 - **Controleer de titels van al je pagina's**: beschrijven ze de inhoud correct?
 - **Maak een lijst**: open al je belangrijkste pagina's en noteer de titels. Zijn ze uniek en specifiek?
 - **Vraag je webbouwer**: worden paginatitels automatisch gegenereerd op basis van de H1 of handmatig ingesteld?
-- **Denk aan SEO**: een goede paginatitel is ook goed voor je vindbaarheid in Google
+- **Vergeet SEO niet**: een goede paginatitel is ook goed voor je vindbaarheid in Google
 
 Paginatitels zijn een van de makkelijkste toegankelijkheidscriteria om goed te doen. Het kost vijf minuten per pagina en maakt een groot verschil voor schermlezergebruikers en je zoekresultaten.

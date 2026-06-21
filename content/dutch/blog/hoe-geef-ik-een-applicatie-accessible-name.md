@@ -21,7 +21,7 @@ Soms kom je in een audit een element tegen met `role="application"` dat geen toe
 
 ## Wat doet role="application"?
 
-Het attribuut `role="application"` vertelt een schermlezer: "dit is geen gewone webpagina-content, maar een applicatie." Dat heeft grote gevolgen. Normaal gesproken onderschept een schermlezer toetsaanslagen om er eigen navigatiefuncties aan te koppelen. Denk aan de **H**-toets om naar de volgende kop te springen, of de **Tab**-toets om naar het volgende interactieve element te gaan.
+Het attribuut `role="application"` vertelt een schermlezer: "dit is geen gewone webpagina-content, maar een applicatie." Dat heeft grote gevolgen. Normaal gesproken onderschept een schermlezer toetsaanslagen om er eigen navigatiefuncties aan te koppelen. Bijvoorbeeld de **H**-toets om naar de volgende kop te springen, of de **Tab**-toets om naar het volgende interactieve element te gaan.
 
 Met `role="application"` schakelt de schermlezer die eigen sneltoetsen uit. Alle toetsaanslagen gaan direct naar de webpagina. Dat is handig als je een interactieve widget hebt gebouwd die eigen toetsenbordbediening nodig heeft -- zoals een kalender, een kaartapplicatie of een tekenprogramma.
 

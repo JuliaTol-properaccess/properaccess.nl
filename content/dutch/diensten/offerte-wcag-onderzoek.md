@@ -5,7 +5,7 @@ date: 2023-10-05
 layout: "second-page"
 slug: "offerte-wcag-onderzoek"
 url: "/offerte-wcag-onderzoek/"
-description: "Vraag een offerte aan voor een WCAG-audit en begeleiding. Onafhankelijke auditrapporten, juridisch onderbouwd en direct toepasbaar voor compliance."
+description: "Vraag een offerte aan voor een WCAG-audit en begeleiding. Onafhankelijke auditrapporten, juridisch onderbouwd en direct toepasbaar voor je naleving."
 keywords:
   - wcag audit offerte
   - toegankelijkheidsaudit aanvragen
@@ -35,7 +35,7 @@ features:
         - IAAP-gecertificeerd team van 6 specialisten
         - 100% conform WCAG-EM en Europese toegankelijkheidswetgeving (EAA)
         - Heldere rapporten met concrete oplossingen
-        - Onbeperkt vragen stellen over het rapport — voor begeleiding bij het oplossen werken we met een strippenkaart
+        - Onbeperkt vragen stellen over het rapport. Voor begeleiding bij het oplossen werken we met een strippenkaart
     button:
       enable: true
       label: "Neem contact op"
@@ -43,13 +43,13 @@ features:
 
 faqs:
   - question: Krijg ik een certificaat of keurmerk na de audit?
-    answer: Wij leveren onafhankelijke auditrapporten die gebruikt kunnen worden voor het invullen van een toegankelijkheidsverklaring. Hoewel er (nog) geen nationaal keurmerk is, gebruiken veel organisaties onze audits als bewijs van compliance.
+    answer: Wij leveren onafhankelijke auditrapporten die gebruikt kunnen worden voor het invullen van een toegankelijkheidsverklaring. Hoewel er (nog) geen nationaal keurmerk is, gebruiken veel organisaties onze audits als bewijs van naleving.
   - question: Hoe lang duurt een audittraject?
-    answer: Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van uw website of app. Vragen over het rapport mag je team daarna onbeperkt stellen — voor inhoudelijke begeleiding bij het oplossen werken we met een strippenkaart (€ 100/uur).
+    answer: Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van je website of app. Vragen over het rapport mag je team daarna onbeperkt stellen. Voor inhoudelijke begeleiding bij het oplossen werken we met een strippenkaart (€ 100/uur).
   - question: Wat kost een toegankelijkheidsaudit?
-    answer: De kosten variëren afhankelijk van de omvang en complexiteit van uw digitale product. Vraag vrijblijvend een offerte aan via onze website.
+    answer: De kosten variëren afhankelijk van de omvang en complexiteit van je digitale product. Vraag vrijblijvend een offerte aan via onze website.
   - question: Hoe vaak moet ik een audit laten uitvoeren?
-    answer: Het rapport is 36 maanden geldig. Wij adviseren om jaarlijks of bij elke grote release een nieuwe audit te laten doen. Zo blijft uw digitale omgeving up-to-date en toegankelijk.
+    answer: Het rapport is 36 maanden geldig. Wij adviseren om jaarlijks of bij elke grote release een nieuwe audit te laten doen. Zo blijft je digitale omgeving up-to-date en toegankelijk.
 ---
 
 

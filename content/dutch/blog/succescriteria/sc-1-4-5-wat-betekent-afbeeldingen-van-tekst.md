@@ -26,7 +26,7 @@ Je designer heeft een prachtige header gemaakt. Goed verkopende tekst, perfecte 
 
 Niet helemaal.
 
-Want die mooie tekst-als-afbeelding? Die kunnen mensen niet aanpassen aan hun eigen behoeften. Groter maken, ander lettertype instellen, meer regelafstand, hogere contrast — het kan allemaal niet als tekst een plaatje is. En Google heeft er ook weinig aan. Oeps.
+Want die mooie tekst-als-afbeelding? Die kunnen mensen niet aanpassen aan hun eigen behoeften. Groter maken, ander lettertype instellen, meer regelafstand, hogere contrast: het kan allemaal niet als tekst een plaatje is. En Google heeft er ook weinig aan. Oeps.
 
 Welkom bij [WCAG 1.4.5: Images of Text](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html). Dit criterium draait om één ding: mensen moeten tekst op een webpagina kunnen aanpassen aan hun eigen leesbehoeften. En dat kan alleen als tekst écht tekst is.
 
@@ -37,14 +37,14 @@ Welkom bij [WCAG 1.4.5: Images of Text](https://www.w3.org/WAI/WCAG22/Understand
 Dit is de kern van SC 1.4.5. Veel mensen passen de weergave van tekst aan om beter te kunnen lezen:
 
 - **Groter lettertype** instellen via browserinstellingen
-- **Ander lettertype** gebruiken (bijv. OpenDyslexic voor dyslexie)
+- **Ander lettertype** gebruiken (bijvoorbeeld OpenDyslexic voor dyslexie)
 - **Meer regelafstand** of woordafstand
-- **Eigen kleurenschema** (bijv. lichte tekst op donkere achtergrond)
+- **Eigen kleurenschema** (bijvoorbeeld lichte tekst op donkere achtergrond)
 - **Aangepaste CSS** via een browser-extensie
 
-Dat werkt allemaal perfect voor echte tekst. Maar een afbeelding van tekst? Daar heeft geen enkele aanpassing effect op. De tekst blijft exact zoals de designer het bedoeld heeft — en dat is precies het probleem.
+Dat werkt allemaal perfect voor echte tekst. Maar een afbeelding van tekst? Daar heeft geen enkele aanpassing effect op. De tekst blijft exact zoals de designer het bedoeld heeft, en dat is precies het probleem.
 
-**Het resultaat:** je sluit een groep bezoekers uit van cruciale informatie. Denk aan:
+**Het resultaat:** je sluit een groep bezoekers uit van cruciale informatie. Bijvoorbeeld:
 
 - Je belangrijkste verkoopboodschap in de header
 - Prijzen in promotiebanners
@@ -76,8 +76,8 @@ WCAG kent twee uitzonderingen:
 1. **Aanpasbaar:** De afbeelding van tekst kan visueel worden aangepast aan de behoeften van de gebruiker (lettertype, grootte, kleur, achtergrond). In de praktijk zie ik dit alleen bij `<svg>` die inline zijn gelpaatst en die `<text>` elementen bevatten. Maar dit telt als tekst, en valt dus niet onder dit succescriterium. :smile:
 
 2. **Essentieel:** De tekst in de afbeeldign is essentieel voor de informatie die wordt overgebracht. Hieronder vallen:
-   - **Logo's en merknamen** — de vormgeving van het logo is onderdeel van de merkidentiteit
-   - **Tekst met een zeer specifieke visuele presentatie** die je niet (of niet makkelijk) met HTML en CSS kunt nabootsen — denk aan kalligrafie, handgeschreven tekst, of een heel specifieke typografische compositie waar de positionering en vormgeving onlosmakelijk verbonden zijn met de boodschap
+   - **Logo's en merknamen**: de vormgeving van het logo is onderdeel van de merkidentiteit
+   - **Tekst met een zeer specifieke visuele presentatie** die je niet (of niet makkelijk) met HTML en CSS kunt nabootsen, zoals kalligrafie, handgeschreven tekst, of een heel specifieke typografische compositie waar de positionering en vormgeving onlosmakelijk verbonden zijn met de boodschap
 
 De sleutel zit in dat woord "essentieel". Het gaat niet om "mooi" of "on-brand". Het gaat om: is de exacte visuele presentatie noodzakelijk om de informatie over te brengen?
 
@@ -113,7 +113,7 @@ Als je een afbeelding van tekst gebruikt, moet je dus altijd een alt-tekst toevo
 
 ### WCAG 1.4.4 (Herschalen van tekst)
 
-SC 1.4.4 (niveau AA) eist dat tekst tot 200% vergroot kan worden zonder verlies van content of functionaliteit.
+SC 1.4.4 (niveau AA) vraagt dat tekst tot 200% vergroot kan worden zonder verlies van content of functionaliteit.
 
 Afbeeldingen van tekst? Die worden pixelig. Of helemaal niet vergroot, afhankelijk van hoe je ze implementeert.
 
@@ -316,7 +316,7 @@ Lange termijn: je bespaart tijd en geld. En je vergroot je bereik.
 
 - Tekst aanpassen? Even in de CMS, klaar
 - Geen designer nodig voor elke tekstwijziging
-- A/B testen? Simpel te implementeren
+- A/B testen? Simpel toe te passen
 
 **4. Kleinere pagina's**
 
@@ -344,7 +344,7 @@ Bij 10.000 bezoekers per maand bespaar je:
 
 En dat is alleen je header.
 
-## Implementatie in jouw organisatie
+## Toepassen in jouw organisatie
 
 ### Voor product owners
 
@@ -369,7 +369,7 @@ En dat is alleen je header.
 3. Documenteer in plaats daarvan:
    - Lettertype en font-size
    - Kleuren (in HEX of RGB)
-   - Effecten (shadows, gradients, etc.)
+   - Effecten (shadows, gradients, enzovoort)
    - Spacing en layout
 
 **Tools die helpen:**
@@ -380,7 +380,7 @@ En dat is alleen je header.
 
 ### Voor developers
 
-**Checklist bij implementatie:**
+**Checklist bij het bouwen:**
 
 - [ ] Alle tekst is echte HTML-tekst
 - [ ] Webfonts zijn geïmplementeerd met fallbacks
@@ -416,15 +416,15 @@ A: SVG schaalt inderdaad zonder kwaliteitsverlies. De gebruiker kan het letterty
 
 **Q: Mag ik tekst als afbeelding gebruiken als ik een goede alt-tekst toevoeg?**
 
-A: Een goede alt-tekst is verplicht onder SC 1.1.1, maar lost het probleem van 1.4.5 niet op. Het punt is dat gebruikers de tekst moeten kunnen aanpassen aan hun leesbehoeften — en dat kan niet met een afbeelding, ongeacht de alt-tekst.
+A: Een goede alt-tekst is verplicht onder SC 1.1.1, maar lost het probleem van 1.4.5 niet op. Het punt is dat gebruikers de tekst moeten kunnen aanpassen aan hun leesbehoeften, en dat kan niet met een afbeelding, ongeacht de alt-tekst.
 
 **Q: We gebruiken een heel speciaal lettertype dat niet als webfont beschikbaar is. Wat nu?**
 
-A: Als het lettertype echt niet als webfont te gebruiken is én de specifieke visuele presentatie essentieel is voor de boodschap, dan valt het onder de uitzondering. Maar wees eerlijk: de meeste lettertypes zijn tegenwoordig als webfont beschikbaar of hebben een goed alternatief. "Het staat mooier" is geen geldige reden.
+A: Als het lettertype echt niet als webfont te gebruiken is en de specifieke visuele presentatie essentieel is voor de boodschap, dan valt het onder de uitzondering. Maar wees eerlijk: de meeste lettertypes zijn tegenwoordig als webfont beschikbaar of hebben een goed alternatief. "Het staat mooier" is geen geldige reden.
 
 **Q: Hoe zit het met social media afbeeldingen die we op onze site tonen?**
 
-A: Als je een social media card of Instagram-post als afbeelding op je site plaatst, zorg dan dat de essentiële tekstinformatie ook als echte tekst beschikbaar is — bijvoorbeeld als bijschrift of in de omringende content.
+A: Als je een social media card of Instagram-post als afbeelding op je site plaatst, zorg dan dat de essentiële tekstinformatie ook als echte tekst beschikbaar is, bijvoorbeeld als bijschrift of in de omringende content.
 
 ## Samenvatting
 
@@ -436,7 +436,7 @@ En het mooie is: echte tekst is ook beter voor SEO, sneller, makkelijker te onde
 
 ## Hulp nodig?
 
-Wil je weten of jouw website voldoet aan WCAG 1.4.5 en andere toegankelijkheidscriteria? Bij Proper Access toetsen we niet alleen, we helpen je ook met concrete oplossingen. Van CSS-voorbeelden tot implementatieadvies — zodat je team direct aan de slag kan.
+Wil je weten of jouw website voldoet aan WCAG 1.4.5 en andere toegankelijkheidscriteria? Bij Proper Access toetsen we niet alleen, we helpen je ook met concrete oplossingen. Van CSS-voorbeelden tot toepassingsadvies, zodat je team direct aan de slag kan.
 
 ---
 

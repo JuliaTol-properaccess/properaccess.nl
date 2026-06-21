@@ -9,7 +9,7 @@ tags:
   - "audit"
   - "wcag"
   - "overheid"
-description: "Is jouw overheidswebsite verplicht om te voldoen aan WCAG? Ja — en dat geldt al sinds 2018. Lees wat je moet doen."
+description: "Is jouw overheidswebsite verplicht om te voldoen aan WCAG? Ja, en dat geldt al sinds 2018. Lees wat je moet doen."
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -20,7 +20,7 @@ Ja. Overheidswebsites zijn al sinds 2018 verplicht om te voldoen aan WCAG 2.1 ni
 
 ## Wat is de huidige stand van zaken?
 
-Ondanks dat de verplichting al jaren geldt, voldoen veel overheidswebsites nog niet volledig. Uit de meest recente monitor van Logius blijkt dat een groot deel van de toegankelijkheidsverklaringen de status "B" of "C" heeft — dat betekent dat er nog substantiële problemen zijn.
+Ondanks dat de verplichting al jaren geldt, voldoen veel overheidswebsites nog niet volledig. Uit de meest recente monitor van Logius blijkt dat een groot deel van de toegankelijkheidsverklaringen de status "B" of "C" heeft. Dat betekent dat er nog substantiële problemen zijn.
 
 ## Wat moet je precies doen?
 
@@ -53,21 +53,21 @@ Dat laatste wordt vaak vergeten. Een ontoegankelijke PDF op een verder toegankel
 
 Uit onze ervaring met overheidsaudits:
 
-- **Ontoegankelijke PDF's** — veruit het meest voorkomende probleem
+- **Ontoegankelijke PDF's**: veruit het meest voorkomende probleem
 - **Formulieren** zonder labels of met onduidelijke foutmeldingen
-- **Ontbrekende kopstructuur** — pagina's zonder logische heading-hiërarchie
+- **Ontbrekende kopstructuur**: pagina's zonder logische heading-hiërarchie
 - **Video's zonder ondertiteling** of audiodescriptie
-- **CMS-beperkingen** — het CMS maakt het redacteuren moeilijk om toegankelijke content te maken
+- **CMS-beperkingen**: het CMS maakt het redacteuren moeilijk om toegankelijke content te maken
 
 ## Hoe kom je van B naar A?
 
 De route is:
-1. **Audit laten uitvoeren** — weet exact wat er niet voldoet
-2. **Rapport doorlopen met je development-team** — prioriteer op impact
-3. **Oplossen in sprints** — begin met de meest impactvolle issues
-4. **Retest** — laat opnieuw testen om te bevestigen dat de fixes werken
-5. **Verklaring updaten** — pas je status aan in het register
+1. **Audit laten uitvoeren**: weet exact wat er niet voldoet
+2. **Rapport doorlopen met je development-team**: prioriteer op impact
+3. **Oplossen in sprints**: begin met de meest impactvolle issues
+4. **Retest**: laat opnieuw testen om te bevestigen dat de fixes werken
+5. **Verklaring updaten**: pas je status aan in het register
 
 Wij helpen overheden door dit hele traject heen. Van de eerste audit tot de retest en de nabespreking.
 
-Wil je weten waar je website nu staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan heb je snel een eerste beeld.
+Wil je weten waar je website nu staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan heb je snel een eerste beeld.

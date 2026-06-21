@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "2-1-1"
   - "toetsenbord"
-description: "Mouseover zonder focus-equivalent — WCAG 2.1.1 Toetsenbord (post 2/9)"
+description: "Mouseover zonder focus-equivalent, WCAG 2.1.1 Toetsenbord (post 2/9)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -23,7 +23,7 @@ Je navigeert met het toetsenbord naar datzelfde element. Tab. Focus. En... niets
 
 De informatie bestaat alleen voor muisgebruikers.
 
-Dit gaat niet alleen over tooltips. Denk aan:
+Dit gaat niet alleen over tooltips. Bijvoorbeeld:
 - Uitklapmenu's die openen bij hover
 - Extra details die verschijnen als je erover gaat
 - Afbeeldingen die veranderen bij mouseover

@@ -27,20 +27,20 @@ In Nederland bieden zo'n 15-20 partijen toegankelijkheidsaudits aan. De prijzen 
 ## Waarom zijn sommige audits zo goedkoop?
 
 Een audit onder de € 1.500 is bijna altijd:
-- **Alleen geautomatiseerd** — een tool draait over je pagina's, het resultaat wordt in een rapport gegoten
-- **Beperkt in scope** — alleen de homepage of een paar pagina's
-- **Zonder handmatig testen** — geen toetsenbordtest, geen schermlezertest
+- **Alleen geautomatiseerd**: een tool draait over je pagina's, het resultaat wordt in een rapport gegoten
+- **Beperkt in scope**: alleen de homepage of een paar pagina's
+- **Zonder handmatig testen**: geen toetsenbordtest, geen schermlezertest
 
 Zo'n audit vindt maximaal 30% van de problemen. Je krijgt een vals gevoel van zekerheid.
 
 ## Waarom zijn sommige audits zo duur?
 
 Een audit boven de € 5.000 voor een gemiddelde website komt meestal door:
-- **Overhead** — grote organisatie met account managers, projectmanagers, salescyclus
-- **Merk** — bekende naam, premium pricing
-- **Scope creep** — extra diensten (training, advies, monitoring) inbegrepen
+- **Overhead**: grote organisatie met account managers, projectmanagers, salescyclus
+- **Merk**: bekende naam, premium pricing
+- **Scope creep**: extra diensten (training, advies, monitoring) inbegrepen
 
-Dat betekent niet dat duur slecht is — maar check wat je krijgt voor het geld.
+Dat betekent niet dat duur slecht is, maar check wat je krijgt voor het geld.
 
 ## Wat is een eerlijke prijs?
 
@@ -59,16 +59,16 @@ Bij ons:
 
 Een audit is meer dan "even je website checken". Dit is wat erbij komt kijken:
 
-1. **Intake** — begrijpen wat je website doet, welke paginatypes er zijn, wat de doelgroep is
-2. **Paginaselectie** — een representatieve steekproef samenstellen
-3. **Geautomatiseerde scan** — tools draaien voor de technische basis
-4. **Handmatige test** — elke pagina doorlopen met toetsenbord, schermlezer, zoom
-5. **Rapportage** — elk probleem beschrijven met locatie, impact, screenshot en oplossingsrichting
-6. **Review** — het rapport controleren op consistentie en volledigheid
+1. **Intake**: begrijpen wat je website doet, welke paginatypes er zijn, wat de doelgroep is
+2. **Paginaselectie**: een representatieve steekproef samenstellen
+3. **Geautomatiseerde scan**: tools draaien voor de technische basis
+4. **Handmatige test**: elke pagina doorlopen met toetsenbord, schermlezer, zoom
+5. **Rapportage**: elk probleem beschrijven met locatie, impact, screenshot en oplossingsrichting
+6. **Review**: het rapport controleren op consistentie en volledigheid
 
 Bij ons komt daar optioneel bij:
-- **Nabespreking** (€ 150/uur) — het rapport samen doorlopen met je team
-- **Retest** (€ 300 voor content, vanaf € 600 voor techniek/website) — controleren of de fixes werken
+- **Nabespreking** (€ 150/uur): het rapport samen doorlopen met je team
+- **Retest** (€ 300 voor content, vanaf € 600 voor techniek/website): controleren of de fixes werken
 
 ## Hoe vergelijk je aanbieders?
 
@@ -86,9 +86,9 @@ Stel deze vragen voordat je kiest:
 ## ROI van een audit
 
 Een audit is een investering. De return:
-- **Juridisch** — je kunt aantonen dat je actief werkt aan compliance
-- **Commercieel** — 25% van de bevolking heeft een beperking, dat zijn potentiële klanten
-- **Technisch** — de gevonden problemen overlappen vaak met UX- en SEO-issues
-- **Organisatorisch** — je team leert van het rapport en bouwt kennis op
+- **Juridisch**: je kunt aantonen dat je actief werkt aan naleving
+- **Commercieel**: 25% van de bevolking heeft een beperking, dat zijn potentiële klanten
+- **Technisch**: de gevonden problemen overlappen vaak met UX- en SEO-issues
+- **Organisatorisch**: je team leert van het rapport en bouwt kennis op
 
-Wil je eerst een indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Dan weet je wat je kunt verwachten voordat je investeert.
+Wil je eerst een indicatie? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je wat je kunt verwachten voordat je investeert.

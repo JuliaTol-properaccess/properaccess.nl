@@ -9,7 +9,7 @@ tags:
   - "4-1-2"
   - "aria"
   - "naam-rol-waarde"
-description: "Div als knop: naam maar geen rol — WCAG 4.1.2 Naam, rol, waarde (post 2/12)"
+description: "Div als knop: naam maar geen rol. WCAG 4.1.2 Naam, rol, waarde (post 2/12)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

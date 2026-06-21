@@ -5,12 +5,12 @@ categories:
   - "wcag-uitgelegd"
 tags: 
   - "4-1-3"
-description: "WCAG 4.1.3 vereist dat statusberichten programmatisch bepaalbaar zijn voor schermlezers. Lees hoe je aria-live en ARIA-rollen correct gebruikt."
+description: "Bij WCAG 4.1.3 moeten statusberichten programmatisch bepaalbaar zijn voor schermlezers. Lees hoe je aria-live en ARIA-rollen correct gebruikt."
 aliases:
   - /sc-4-1-3-wat-betekent-statusbericht/
 ---
 
-Succescriterium (SC) 4.1.3 gaat over de statusmeldingen. Dit criterium vereist dat statusmeldingen (bijvoorbeeld foutmeldingen, bevestigingen, waarschuwingen) als dusdanig programmatisch bepaald kunnen worden, zodat gebruikers die afhankelijk zijn van ondersteunende technologieën (zoals schermlezers) deze meldingen kunnen horen op het moment dat ze worden getoond. Dit betekent dat statusmeldingen op een manier moeten worden gecodeerd dat ze door software kunnen worden gedetecteerd en aan de gebruiker kan worden voorgelezen.
+Succescriterium (SC) 4.1.3 gaat over de statusmeldingen. Bij dit criterium moeten statusmeldingen (bijvoorbeeld foutmeldingen, bevestigingen, waarschuwingen) als dusdanig programmatisch bepaald kunnen worden, zodat gebruikers die afhankelijk zijn van ondersteunende technologieën (zoals schermlezers) deze meldingen kunnen horen op het moment dat ze worden getoond. Dit betekent dat je statusmeldingen zo codeert dat software ze kan herkennen en aan de gebruiker kan voorlezen.
 
 Dit succescriterium is grotendeels bedoeld voor [webontwikkelaar](https://properaccess.nl/tag/ontwikkelaar/).
 
@@ -52,7 +52,7 @@ Visuele Inspectie: Voer acties uit op de webpagina die statusmeldingen zouden mo
 
 Gebruik van hulpmiddelen: Gebruik schermlezers om te controleren of statusmeldingen worden aangekondigd wanneer ze verschijnen. Tools zoals NVDA (voor Windows) of VoiceOver (voor macOS) kunnen hierbij helpen.
 
-Code Inspectie: Controleer of statusmeldingen programmatisch bepaald kunnen worden door te kijken of er ARIA-attributen (`aria-live="polite"`, `role="status"`, etc.) aanwezig zijn in de HTML-code. De aanwezigheid van deze ARIA-code is nog geen garantie dat een statusbericht wordt voorgelezen. Dit moet je echt met een schermlezer testen.
+Code Inspectie: Controleer of statusmeldingen programmatisch bepaald kunnen worden door te kijken of er ARIA-attributen (`aria-live="polite"`, `role="status"` en dergelijke) aanwezig zijn in de HTML-code. De aanwezigheid van deze ARIA-code is nog geen garantie dat een statusbericht wordt voorgelezen. Dit moet je echt met een schermlezer testen.
 
 ## Voorbeelden van fouten onder WCAG SC 4.1.3
 

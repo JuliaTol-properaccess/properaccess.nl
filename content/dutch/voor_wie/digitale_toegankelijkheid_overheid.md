@@ -22,7 +22,7 @@ keywords:
 banner:
   badge: "WCAG 2.2 en BDTO"
   title: "Groen dashboard, tevreden burgers en een team dat weet hoe en waarom"
-  content: "Wij helpen je in heldere stappen naar een toegankelijke website — met een plan dat je team kan uitvoeren."
+  content: "Wij helpen je in heldere stappen naar een toegankelijke website, met een plan dat je team kan uitvoeren."
   bullets:
     - "**Per element:** wat zijn de issues en hoe los je ze op?"
     - "**Plan van aanpak** uitgewerkt per team"
@@ -51,9 +51,9 @@ faqs:
   - question: "Hoe lang duurt een audit?"
     answer: "Binnen 3 tot 5 weken na opstart lever je een definitief rapport op. De doorlooptijd hangt af van de omvang van je website of app en het aantal pagina's dat we toetsen."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf ca. € 2.100. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.100. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wat gebeurt er na de audit?"
-    answer: "Je krijgt een presentatie van het rapport aan je team. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen — ook weken of maanden later, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur). We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
+    answer: "Je krijgt een presentatie van het rapport aan je team. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen, ook weken of maanden later, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur). We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"
     answer: "Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de inhoud, niet via een account manager."
 ---

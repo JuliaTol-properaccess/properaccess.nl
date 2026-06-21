@@ -9,7 +9,7 @@ tags:
   - "alt-tekst"
   - "afbeeldingen"
   - "ecommerce"
-description: "Afbeelding van prefix — Afbeeldingen in webshops (post 2/8)"
+description: "Afbeelding van prefix. Afbeeldingen in webshops (post 2/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

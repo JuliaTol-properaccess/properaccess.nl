@@ -1,6 +1,6 @@
 ---
 title: "Testen tijdens de bouw"
-meta_title: "Toegankelijkheid testen tijdens development — sprint-testing | Proper Access"
+meta_title: "Toegankelijkheid testen tijdens development: sprint-testing | Proper Access"
 weight: 6
 date: 2025-07-13
 layout: "second-page"
@@ -19,7 +19,7 @@ service:
 
 # Testen tijdens de (her)bouw van een website
 
-Wil je digitale toegankelijkheid goed aanpakken? Begin dan tijdens de bouw of major update van een website.Wij zijn jouw QA-partner binnen de sprint – gericht op toegankelijkheid én resultaat.
+Wil je digitale toegankelijkheid goed aanpakken? Begin dan tijdens de bouw of major update van een website. Wij zijn jouw QA-partner binnen de sprint – gericht op toegankelijkheid én resultaat.
 
 Onze testers hebben allemaal minimaal **5 jaar ervaring in QA** en meer dan **2 jaar ervaring met toegankelijkheidstesten**.
 
@@ -31,7 +31,7 @@ Wij voeren grondige, handmatige toegankelijkheidstesten uit. Dit kun je van ons 
 - **Meer dan 200 controlepunten** – gebaseerd op praktijkervaring en best practices   
 - **Volledige dekking van alle 55 succescriteria van WCAG 2.1 of 2.2**    
 - **Getest in 3 browsers** – meestal Chrome, Firefox en Safari of Edge   
-- **Gebruik van 2 screenreaders** – o.a. NVDA en VoiceOver    
+- **Gebruik van 2 screenreaders** – onder andere NVDA en VoiceOver    
 - **Per websitecomponent** – dus grondig én modulair getest    
 - **6-ogenprincipe** – elke bevinding wordt dubbel gecontroleerd   
 - **Rapportage in het Nederlands of Engels** – afhankelijk van jouw voorkeur   

@@ -9,7 +9,7 @@ tags:
   - "1-4-10"
   - "reflow"
   - "responsive"
-description: "Content verdwijnt door overflow hidden — WCAG 1.4.10 Reflow (post 2/10)"
+description: "Content verdwijnt door overflow hidden, WCAG 1.4.10 Reflow (post 2/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -18,7 +18,7 @@ keywords:
 image: "/images/blog/linkedin-series/sc-1-4-10-content-verdwijnt-door-overflow-hidden.webp"
 ---
 
-Je zoomt in op een webpagina. De tekst wordt groter. En dan — halverwege een zin — houdt de tekst op. Alsof iemand de rest heeft afgeknipt.
+Je zoomt in op een webpagina. De tekst wordt groter. En dan, halverwege een zin, houdt de tekst op. Alsof iemand de rest heeft afgeknipt.
 
 Geen scrollbar. Geen indicatie dat er meer tekst is. Het is gewoon weg.
 
@@ -27,6 +27,7 @@ De boosdoener: `overflow: hidden`.
 Dit CSS-property is bedoeld om content die buiten een container valt te verbergen. Handig voor decoratieve effecten. Maar dodelijk voor leesbaarheid bij inzoomen.
 
 Bij 100% zoom zie je het probleem niet. Bij 200% misschien ook niet. Maar bij 400% valt de tekst buiten de container en verdwijnt die stilletjes uit beeld.
+
 
 **Twee opties:**
 

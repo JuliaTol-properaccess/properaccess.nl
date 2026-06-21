@@ -9,7 +9,7 @@ tags:
   - "4-1-2"
   - "aria"
   - "naam-rol-waarde"
-description: "Knop die navigeert, link die een actie uitvoert — WCAG 4.1.2 Naam, rol, waarde (post 3/12)"
+description: "Knop die navigeert, link die een actie uitvoert. WCAG 4.1.2 Naam, rol, waarde (post 3/12)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

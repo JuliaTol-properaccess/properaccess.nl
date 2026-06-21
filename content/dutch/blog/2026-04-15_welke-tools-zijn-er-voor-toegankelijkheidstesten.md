@@ -27,7 +27,7 @@ Er zijn tientallen tools voor het testen van toegankelijkheid. Sommige zijn grat
 - **Prijs:** Gratis
 - **Wat het doet:** Markeert problemen direct op je pagina met visuele iconen
 - **Sterk in:** Snel overzicht, ook voor niet-technische mensen
-- **Let op:** Rapporteert soms false positives — niet alles wat WAVE markeert is een echt probleem
+- **Let op:** Rapporteert soms false positives, niet alles wat WAVE markeert is een echt probleem
 
 ### axe DevTools
 - **Type:** Browser-extensie, integreert in DevTools
@@ -40,7 +40,7 @@ Er zijn tientallen tools voor het testen van toegankelijkheid. Sommige zijn grat
 - **Type:** Ingebouwd in Chrome DevTools
 - **Prijs:** Gratis
 - **Wat het doet:** Geeft een toegankelijkheidsscore (0-100) als onderdeel van een bredere audit
-- **Let op:** De score is misleidend — 100% betekent niet "volledig toegankelijk"
+- **Let op:** De score is misleidend, 100% betekent niet "volledig toegankelijk"
 
 ## Contrast-tools
 
@@ -110,4 +110,4 @@ Bij Proper Access gebruiken we een combinatie van:
 
 Geen enkele tool vervangt handmatig testen. De tools helpen ons efficiënter te werken, maar de beoordeling is altijd mensenwerk.
 
-Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw). Wij combineren tools en handmatig onderzoek voor een betrouwbaar eerste beeld.
+Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Wij combineren tools en handmatig onderzoek voor een betrouwbaar eerste beeld.

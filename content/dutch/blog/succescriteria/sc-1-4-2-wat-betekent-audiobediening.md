@@ -6,14 +6,14 @@ categories:
 tags:
   - "1-4-2"
   - "geluid"
-description: "WCAG 1.4.2 vereist dat automatisch afspelende audio gepauzeerd of gestopt kan worden. Lees de regels, uitzonderingen en veelgemaakte fouten."
+description: "WCAG 1.4.2 vraagt dat automatisch afspelende audio gepauzeerd of gestopt kan worden. Lees de regels, uitzonderingen en veelgemaakte fouten."
 aliases:
   - /sc-1-4-2-wat-betekent-audiobediening/
 ---
 
 Je opent een website en ineens begint er muziek te spelen. Of een promotievideo start automatisch met geluid. Voor de meeste mensen is dat irritant. Voor iemand die een schermlezer gebruikt, is het een ramp. Die schermlezer praat namelijk ook -- en twee geluidsbronnen tegelijk maken het onmogelijk om de website te gebruiken.
 
-**WCAG succescriterium 1.4.2** (Audio Control) eist dat gebruikers audio kunnen pauzeren, stoppen of het volume kunnen aanpassen als het automatisch afspeelt.
+**WCAG succescriterium 1.4.2** (Audio Control) vraagt dat gebruikers audio kunnen pauzeren, stoppen of het volume kunnen aanpassen als het automatisch afspeelt.
 
 ## Waarom is dit zo belangrijk?
 
@@ -40,7 +40,7 @@ Dat bedieningsmechanisme moet bovendien met het toetsenbord bereikbaar zijn en v
 
 ## Voorbeelden uit de praktijk
 
-- **Restaurant-websites met achtergrondmuziek.** Nog steeds verrassend gangbaar. De mute-knop is vaak een klein icoontje in de hoek dat nauwelijks te vinden is.
+- **Restaurant-websites met achtergrondmuziek.** Nog steeds verrassend gangbaar. De mute-knop is vaak een klein icoon in de hoek dat nauwelijks te vinden is.
 - **Autoplay video's in headers.** Veel corporate websites hebben een hero-video die automatisch start. Als die video geluid heeft, moet er een zichtbare muteknop zijn.
 - **Embedded social media.** Instagram- of TikTok-embeds die automatisch starten met geluid.
 - **Cookie-banners met geluidsfeedback.** Ja, die bestaan. En ze zijn een probleem.

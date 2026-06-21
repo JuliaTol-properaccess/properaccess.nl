@@ -30,7 +30,7 @@ aliases:
 
 Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik wekelijks dezelfde vraag: "We moeten iets met toegankelijkheid, maar waar beginnen we?" Het eerlijke antwoord: dat hangt af van je website, je team en je budget. Maar er is een duidelijk pad. In dit artikel loop ik je er doorheen.
 
-Ik doe dit werk sinds 2019. In die tijd heb ik meer dan 900 audits uitgevoerd — voor musea, overheden, webshops, uitgeverijen en alles daartussenin. Ik heb gezien hoe organisaties vastlopen, maar ook hoe ze in een paar maanden enorme stappen maken. Dit artikel is gebaseerd op die ervaring.
+Ik doe dit werk sinds 2019. In die tijd heb ik meer dan 900 audits uitgevoerd, voor musea, overheden, webshops, uitgeverijen en alles daartussenin. Ik heb gezien hoe organisaties vastlopen, maar ook hoe ze in een paar maanden enorme stappen maken. Dit artikel is gebaseerd op die ervaring.
 
 ## Wat betekent "digitaal toegankelijk"?
 
@@ -45,23 +45,23 @@ Dat klinkt abstract, maar in de praktijk gaat het om heel concrete dingen:
 - **Kleurcontrast** moet hoog genoeg zijn zodat tekst leesbaar is voor mensen met een visuele beperking
 - **Video's** hebben ondertiteling nodig
 
-Ongeveer 25 procent van alle mensen heeft een vorm van beperking. Dat is niet een kleine groep — dat is een kwart van je bezoekers.
+Ongeveer 25 procent van alle mensen heeft een vorm van beperking. Dat is niet een kleine groep, dat is een kwart van je bezoekers.
 
 ## De standaard: WCAG
 
 WCAG staat voor Web Content Accessibility Guidelines. Dit zijn de internationale richtlijnen voor digitale toegankelijkheid, opgesteld door het W3C (World Wide Web Consortium). Als iemand zegt dat een website "aan de richtlijnen moet voldoen", bedoelen ze WCAG.
 
-WCAG bestaat uit **succescriteria** — concrete eisen waaraan je website moet voldoen. Denk aan: "Alle afbeeldingen hebben een tekstalternatief" of "De focusvolgorde is logisch".
+WCAG bestaat uit **succescriteria**: concrete eisen waaraan je website moet voldoen. Bijvoorbeeld: "Alle afbeeldingen hebben een tekstalternatief" of "De focusvolgorde is logisch".
 
 ### Niveau A en AA: wat is het verschil?
 
 WCAG kent drie niveaus:
 
-- **Niveau A** — de basislaag. Dit zijn de absolute minimumeisen. Als je hier niet aan voldoet, is je website voor sommige gebruikers letterlijk onbruikbaar. Voorbeeld: afbeeldingen zonder alt-tekst (SC 1.1.1) of video zonder ondertiteling (SC 1.2.2).
+- **Niveau A:** de basislaag. Dit zijn de absolute minimumeisen. Als je hier niet aan voldoet, is je website voor sommige gebruikers letterlijk onbruikbaar. Voorbeeld: afbeeldingen zonder alt-tekst (SC 1.1.1) of video zonder ondertiteling (SC 1.2.2).
 
-- **Niveau AA** — de standaard waar je aan moet voldoen. De EAA en het Besluit digitale overheid (Bdo) vereisen allebei niveau AA. Dit gaat een stap verder dan de basis. Voorbeeld: voldoende kleurcontrast (SC 1.4.3), zichtbare focusindicator (SC 2.4.7) en foutidentificatie bij formulieren (SC 3.3.1).
+- **Niveau AA:** de standaard waar je aan moet voldoen. De EAA en het Besluit digitale overheid (Bdo) vereisen allebei niveau AA. Dit gaat een stap verder dan de basis. Voorbeeld: voldoende kleurcontrast (SC 1.4.3), zichtbare focusindicator (SC 2.4.7) en foutidentificatie bij formulieren (SC 3.3.1).
 
-- **Niveau AAA** — het hoogste niveau. Dit is in de meeste gevallen niet realistisch voor een volledige website en wordt ook niet wettelijk vereist. Maar voor specifieke onderdelen kan het waardevol zijn.
+- **Niveau AAA:** het hoogste niveau. Dit is in de meeste gevallen niet realistisch voor een volledige website en wordt ook niet wettelijk vereist. Maar voor specifieke onderdelen kan het waardevol zijn.
 
 **In de praktijk:** als je "voldoen aan WCAG" hoort, bedoelt men niveau A en AA samen. Dat zijn in totaal 55 succescriteria bij WCAG 2.2 (of 50 bij WCAG 2.1).
 
@@ -73,7 +73,7 @@ Er is één uitzondering: **apps**. Die toetsen we nog steeds op WCAG 2.1, onder
 
 ### Wat is er nieuw in WCAG 2.2?
 
-WCAG 2.2 voegt negen succescriteria toe aan 2.1. Die zijn er niet zomaar bijgekomen — ze zijn toegevoegd omdat de manier waarop we het web gebruiken is veranderd. Meer mobiel, meer formulieren, meer complexe interfaces.
+WCAG 2.2 voegt negen succescriteria toe aan 2.1. Die zijn er niet zomaar bijgekomen; ze zijn toegevoegd omdat de manier waarop we het web gebruiken is veranderd. Meer mobiel, meer formulieren, meer complexe interfaces.
 
 De belangrijkste nieuwe criteria:
 
@@ -93,7 +93,7 @@ De belangrijkste nieuwe criteria:
 
 - **Website of webshop?** Toets op WCAG 2.2
 - **App?** Toets op WCAG 2.1 (conform EN 301 549)
-- **Overheidswebsite?** Het Bdo verwijst naar EN 301 549, die nu WCAG 2.1 bevat. In de praktijk adviseer ik om op 2.2 te toetsen — die criteria komen er toch aan, en je bent dan voorbereid
+- **Overheidswebsite?** Het Bdo verwijst naar EN 301 549, die nu WCAG 2.1 bevat. In de praktijk adviseer ik om op 2.2 te toetsen: die criteria komen er toch aan, en je bent dan voorbereid
 
 ## Waar begin je als je niet weet waar je staat?
 
@@ -117,16 +117,16 @@ Een audit door een gespecialiseerd bureau geeft je een compleet beeld. Bij Prope
 
 Niet alles hoeft tegelijk. Na een audit of eerste check kun je prioriteiten stellen:
 
-1. **Eerst de showstoppers** — problemen die je website onbruikbaar maken voor bepaalde groepen. Denk aan: geen toetsenbordbediening, ontbrekende alt-teksten op essentiële afbeeldingen, formulieren zonder labels
-2. **Dan de middenlaag** — problemen die de ervaring verslechteren maar de website niet onbruikbaar maken. Denk aan: onvoldoende kleurcontrast, ontbrekende foutmeldingen, onduidelijke linkteksten
-3. **Tot slot de verfijning** — problemen die de ervaring verbeteren maar niet kritiek zijn. Denk aan: ARIA-optimalisaties, verbeterde focusstijlen, betere koppenstructuur
+1. **Eerst de showstoppers:** problemen die je website onbruikbaar maken voor bepaalde groepen. Bijvoorbeeld geen toetsenbordbediening, ontbrekende alt-teksten op essentiële afbeeldingen, formulieren zonder labels
+2. **Dan de middenlaag:** problemen die de ervaring verslechteren maar de website niet onbruikbaar maken. Bijvoorbeeld onvoldoende kleurcontrast, ontbrekende foutmeldingen, onduidelijke linkteksten
+3. **Tot slot de verfijning:** problemen die de ervaring verbeteren maar niet kritiek zijn. Bijvoorbeeld ARIA-optimalisaties, verbeterde focusstijlen, betere koppenstructuur
 
 ### Stap 3: Fix en test
 
 De meeste toegankelijkheidsproblemen vallen in twee categorieen:
 
-- **Contentproblemen** — alt-teksten, koppenstructuur, linkteksten, documentstructuur. Dit kan je webredactie oppakken.
-- **Technische problemen** — toetsenbordbediening, ARIA-attributen, formuliervalidatie, focusbeheer. Dit is werk voor je developers.
+- **Contentproblemen:** alt-teksten, koppenstructuur, linkteksten, documentstructuur. Dit kan je webredactie oppakken.
+- **Technische problemen:** toetsenbordbediening, ARIA-attributen, formuliervalidatie, focusbeheer. Dit is werk voor je developers.
 
 Verdeel het werk over de juiste mensen. Een webredacteur hoeft niet te weten hoe ARIA werkt, en een developer hoeft niet na te denken over alt-teksten.
 
@@ -146,12 +146,12 @@ Een toegankelijkheidsaudit kost bij Proper Access **vanaf circa 2.100 euro** (ex
 
 Dit is waar de kosten het meest variëren. Factoren die meespelen:
 
-- **De staat van je website** — een website die recent is gebouwd met toegankelijkheid in gedachten heeft minder problemen dan een website van tien jaar oud
-- **Je CMS** — sommige CMS'en maken het makkelijk om toegankelijke content te publiceren, andere maken het bijna onmogelijk
-- **Je team** — als je developers al ervaring hebben met toegankelijkheid, gaat het sneller
-- **De omvang** — een website met 10 templates is sneller aangepast dan een met 50
+- **De staat van je website:** een website die recent is gebouwd met toegankelijkheid in gedachten heeft minder problemen dan een website van tien jaar oud
+- **Je CMS:** sommige CMS'en maken het makkelijk om toegankelijke content te publiceren, andere maken het bijna onmogelijk
+- **Je team:** als je developers al ervaring hebben met toegankelijkheid, gaat het sneller
+- **De omvang:** een website met 10 templates is sneller aangepast dan een met 50
 
-**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en retest. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud — en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossignen in hun rapporten staan. Goed uitleg kan je vele uren en duizenden euro's schelen.
+**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en retest. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud, en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossignen in hun rapporten staan. Goed uitleg kan je vele uren en duizenden euro's schelen.
 
 ### Waar kun je op besparen?
 
@@ -174,7 +174,7 @@ Kort gezegd: ja, voor de meeste organisaties is WCAG verplicht. De wetgeving ver
 - **Overheid:** het Besluit digitale overheid (Bdo) verplicht overheidswebsites al langer om aan WCAG te voldoen.
 - **Semipublieke sector:** organisaties in het onderwijs, de zorg en de cultuursector vallen vaak onder de EAA of het Bdo, afhankelijk van hun financiering en rechtsvorm.
 
-De WCAG-wetgeving is dus geen optie meer — het is een verplichting. Hoe eerder je begint, hoe minder het kost.
+De WCAG-wetgeving is dus geen optie meer; het is een verplichting. Hoe eerder je begint, hoe minder het kost.
 
 ### Kan ik dit niet gewoon met een tool oplossen?
 
@@ -188,7 +188,7 @@ Reken op drie tot zes maanden voor het hele traject: audit, verbeteringen doorvo
 
 ## Volgende stap
 
-Wil je weten waar jouw website staat? Neem [contact op](https://www.properaccess.nl/contact/) voor een vrijblijvend gesprek. In 30 minuten bespreken we je website en geef ik je een eerste inschatting — van de situatie, de aanpak en de kosten.
+Wil je weten waar jouw website staat? Neem [contact op](https://www.properaccess.nl/contact/) voor een vrijblijvend gesprek. In 30 minuten bespreken we je website en geef ik je een eerste inschatting: van de situatie, de aanpak en de kosten.
 
 Liever eerst zelf checken? Gebruik onze [gratis tools](https://www.properaccess.nl/tools/) om de basis te controleren.
 

@@ -1,5 +1,5 @@
 ---
-title: "Alt-tekst checker — controleer de alternatieve teksten op je website"
+title: "Alt-tekst checker: controleer de alternatieve teksten op je website"
 description: "Gratis alt-tekst checker. Voer een URL in en bekijk van alle afbeeldingen of de alt-teksten correct zijn ingevuld. Inclusief SVG's en iconen."
 layout: "alt-tekst-checker"
 gratis: true
@@ -20,6 +20,6 @@ keywords:
   - toegankelijkheid afbeeldingen
 ---
 
-Ontbrekende of onjuiste alt-teksten zijn het meest voorkomende toegankelijkheidsprobleem op websites. In onze audits faalt **WCAG succescriterium 1.1.1** (Niet-tekstuele content) het vaakst — bij bijna elke website die we onderzoeken.
+Ontbrekende of onjuiste alt-teksten zijn het meest voorkomende toegankelijkheidsprobleem op websites. In onze audits faalt **WCAG succescriterium 1.1.1** (Niet-tekstuele content) het vaakst, bij bijna elke website die we onderzoeken.
 
 Met deze alt-tekst checker voer je een URL in en zie je direct welke afbeeldingen op de pagina staan, welke informatie schermlezers ontvangen en waar alt-teksten ontbreken.

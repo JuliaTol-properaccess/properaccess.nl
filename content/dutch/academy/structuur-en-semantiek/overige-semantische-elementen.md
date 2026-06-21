@@ -12,7 +12,7 @@ layout: "academy"
 
 HTML biedt tientallen semantische elementen die verder gaan dan koppen, lijsten en landmarks. Elementen voor citaten, afkortingen, tijdstippen, nadruk en meer. Ze voegen **betekenis** toe die CSS niet kan geven.
 
-WCAG succescriterium 1.3.1 (Informatie en relaties) vereist dat informatie die visueel wordt overgebracht ook programmatisch bepaalbaar is. Als je tekst visueel markeert als citaat, afkorting of nadruk, dan moet die betekenis ook in de code zitten.
+WCAG succescriterium 1.3.1 (Informatie en relaties) vraagt dat informatie die visueel wordt overgebracht ook programmatisch bepaalbaar is. Als je tekst visueel markeert als citaat, afkorting of nadruk, dan moet die betekenis ook in de code zitten.
 
 In dit hoofdstuk behandelen we de semantische elementen die je in de vorige hoofdstukken nog niet bent tegengekomen.
 
@@ -268,7 +268,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 | Succescriterium | Niveau | Toelichting |
 |---|---|---|
 | **1.3.1** Informatie en relaties | A | Alle visuele structuur en betekenis moet programmatisch bepaalbaar zijn |
-| **1.3.2** Betekenisvolle volgorde | A | De volgorde van content (bijv. figure met figcaption) moet logisch zijn |
+| **1.3.2** Betekenisvolle volgorde | A | De volgorde van content (bijvoorbeeld figure met figcaption) moet logisch zijn |
 
 ---
 

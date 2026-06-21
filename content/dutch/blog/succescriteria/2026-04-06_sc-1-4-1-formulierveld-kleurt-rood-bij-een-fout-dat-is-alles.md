@@ -9,7 +9,7 @@ tags:
   - "1-4-1"
   - "kleur"
   - "kleurenblindheid"
-description: "Formulierveld kleurt rood bij een fout. Dat is alles. — WCAG 1.4.1 Gebruik van kleur (post 2/8)"
+description: "Formulierveld kleurt rood bij een fout. Dat is alles. WCAG 1.4.1 Gebruik van kleur (post 2/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG

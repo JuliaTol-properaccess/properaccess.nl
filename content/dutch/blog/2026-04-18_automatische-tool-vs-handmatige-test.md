@@ -21,12 +21,12 @@ Dit is een van de belangrijkste dingen om te weten over toegankelijkheidstesten:
 
 Geautomatiseerde tools zijn goed in het vinden van objectief meetbare fouten:
 
-- **Ontbrekende alt-teksten** — de tool ziet dat er geen alt-attribuut is
-- **Te laag contrast** — de tool berekent de contrastratio
-- **Formuliervelden zonder label** — de tool checkt of er een `<label>` is gekoppeld
-- **Ontbrekend taalattribuut** — de tool kijkt of `lang="nl"` op de HTML-tag staat
-- **Lege links of knoppen** — de tool ziet dat er geen tekst of accessible name is
-- **Duplicate ID's** — de tool detecteert identieke ID-attributen
+- **Ontbrekende alt-teksten**: de tool ziet dat er geen alt-attribuut is
+- **Te laag contrast**: de tool berekent de contrastratio
+- **Formuliervelden zonder label**: de tool checkt of er een `<label>` is gekoppeld
+- **Ontbrekend taalattribuut**: de tool kijkt of `lang="nl"` op de HTML-tag staat
+- **Lege links of knoppen**: de tool ziet dat er geen tekst of accessible name is
+- **Duplicate ID's**: de tool herkent identieke ID-attributen
 
 Dit zijn binaire checks: het is er of het is er niet.
 
@@ -51,7 +51,7 @@ De tool kan niet beoordelen of:
 - **Instructies** duidelijk genoeg zijn
 
 ### Dynamische content
-Veel moderne websites laden content dynamisch. Modals, accordeons, live zoekresultaten, formuliervalidatie — een geautomatiseerde tool test vaak alleen de initiële DOM, niet wat er gebeurt na interactie.
+Veel moderne websites laden content dynamisch. Modals, accordeons, live zoekresultaten, formuliervalidatie: een geautomatiseerde tool test vaak alleen de initiële DOM, niet wat er gebeurt na interactie.
 
 ## De cijfers
 
@@ -70,10 +70,10 @@ Die 30% is bovendien het "makkelijke" deel. De problemen die alleen handmatig te
 Als iemand je een "toegankelijkheidsaudit" aanbiedt die alleen uit een geautomatiseerde scan bestaat, krijg je maximaal een derde van het beeld. Dat is niet genoeg om te weten of je website daadwerkelijk toegankelijk is, en het is zeker niet genoeg om aan te tonen dat je voldoet aan de wet.
 
 Een goede audit combineert altijd:
-1. **Geautomatiseerde scan** — voor de snelle, objectieve checks
-2. **Handmatige inspectie** — voor alles wat context en expertise vereist
-3. **Testen met hulptechnologie** — schermlezer, toetsenbord, zoom
+1. **Geautomatiseerde scan**: voor de snelle, objectieve checks
+2. **Handmatige inspectie**: voor alles wat context en expertise vereist
+3. **Testen met hulptechnologie**: schermlezer, toetsenbord, zoom
 
 Bij Proper Access is dat standaard. We gebruiken tools om efficiënt te werken, maar de beoordeling is altijd mensenwerk.
 
-Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro excl. btw).
+Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw).

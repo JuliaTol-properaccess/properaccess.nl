@@ -3,7 +3,7 @@ title: 'SC 4.1.2 - Wat betekent \"Naam, rol, waarde\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-description: "WCAG 4.1.2 vereist dat interactieve elementen een correcte naam, rol en waarde hebben. Lees hoe je aria-labels en semantische HTML correct toepast."
+description: "WCAG 4.1.2 vraagt dat interactieve elementen een correcte naam, rol en waarde hebben. Lees hoe je aria-labels en semantische HTML correct toepast."
 aliases:
   - /sc-4-1-2-wat-betekent-naam-rol-waarde/
 ---
@@ -24,7 +24,7 @@ Er zijn verschillende manieren om toegankelijkheidsnamen te testen:
 
 3. **Developer Tools in browsers**: Inspecteer de broncode met ingebouwde tools van de browser (zoals Chrome DevTools) om te controleren of er relevante aria-label, alt, of title-attributen aanwezig zijn.
 
-## Voorbeelden van fouten onder WCAG SC 4.1.2 m.b.t. naam
+## Voorbeelden van fouten onder WCAG SC 4.1.2 over naam
 
 1. **Knoppen zonder beschrijving**: Een knop die alleen een afbeelding bevat, zonder een aria-label of alt-tekst, bijvoorbeeld een zoekknop die alleen als "knop" wordt herkend door een schermlezer.
 

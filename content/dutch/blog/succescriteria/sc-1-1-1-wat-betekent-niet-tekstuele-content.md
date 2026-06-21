@@ -3,7 +3,7 @@ title: "Niet-tekstuele content: wat je moet weten als je digitaal verkoopt of in
 date: 2026-02-15
 categories:
   - "wcag-uitgelegd"
-description: "Leer hoe je WCAG 1.1.1 implementeert in jouw webshop om te voldoen aan de EAA. Praktische voorbeelden, alt-tekst tips en testmethoden voor toegankelijke e-commerce."
+description: "Leer hoe je WCAG 1.1.1 toepast in jouw webshop om te voldoen aan de EAA. Praktische voorbeelden, alt-tekst tips en testmethoden voor toegankelijke e-commerce."
 keywords:
   - WCAG 1.1.1 webshop
   - Alt-tekst webshop
@@ -33,7 +33,7 @@ _Voor product owners van websites en -winkels die hun site toegankelijk moeten m
 
 ### Wat zegt het criterium?
 
-[WCAG succescriterium 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) vereist dat alle niet-tekstuele content die aan gebruikers wordt gepresenteerd, een tekstalternatief heeft dat hetzelfde doel dient.
+[WCAG succescriterium 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) vraagt dat alle niet-tekstuele content die je aan bezoekers toont, een tekstalternatief heeft dat hetzelfde doel dient.
 
 In begrijpelijke taal: **elke informatieve afbeelding, video, audio en elk klikbaar icoon op jouw webshop moet een tekstuele beschrijving hebben, zodat mensen die de visuele content niet kunnen waarnemen, toch begrijpen wat er wordt getoond of wat het icoon doet.**
 
@@ -526,7 +526,7 @@ Ja! Als je productcatalogi of brochures als PDF aanbiedt, moeten afbeeldingen da
 
 **Wat als mijn e-commerce platform geen alt-teksten ondersteunt?**
 
-Bijna alle moderne platforms (Shopify, WooCommerce, Magento, etc.) ondersteunen alt-teksten. Als het jouw platform niet ondersteunt, moet je overwegen om te migreren naar een platform dat wel toegankelijk is.
+Bijna alle moderne platforms (Shopify, WooCommerce, Magento, en meer) ondersteunen alt-teksten. Als het jouw platform niet ondersteunt, moet je overwegen om te migreren naar een platform dat wel toegankelijk is.
 
 ## Resources en hulpmiddelen
 

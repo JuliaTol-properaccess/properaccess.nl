@@ -9,7 +9,7 @@ tags:
   - "1-3-2"
   - "volgorde"
   - "screenreader"
-description: "CSS order die de logica verbreekt — WCAG 1.3.2 Betekenisvolle volgorde (post 3/9)"
+description: "CSS order die de logica verbreekt, WCAG 1.3.2 Betekenisvolle volgorde (post 3/9)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -32,9 +32,9 @@ Hoe dan? CSS `order`.
 .stap-1 { order: 1; }
 ```
 
-De developer heeft de visuele volgorde hersteld met CSS. Maar de HTML-volgorde — en dus de leesvolgorde voor schermlezers — is nog steeds 2, 3, 1.
+De developer heeft de visuele volgorde hersteld met CSS. Maar de HTML-volgorde, en dus de leesvolgorde voor schermlezers, is nog steeds 2, 3, 1.
 
-Dit gebeurt vaker dan je denkt. Flexbox en CSS Grid maken het verleidelijk makkelijk om elementen visueel te herschikken. `order`, `row-reverse`, `column-reverse`, `grid-row`, `grid-column` — allemaal tools die de visuele volgorde losmaken van de codevolgorde.
+Dit gebeurt vaker dan je denkt. Flexbox en CSS Grid maken het verleidelijk makkelijk om elementen visueel te herschikken. `order`, `row-reverse`, `column-reverse`, `grid-row`, `grid-column`: allemaal tools die de visuele volgorde losmaken van de codevolgorde.
 
 **Wanneer is dit een probleem?**
 

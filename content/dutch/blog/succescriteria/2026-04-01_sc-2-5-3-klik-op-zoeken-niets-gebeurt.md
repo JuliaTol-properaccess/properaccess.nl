@@ -9,7 +9,7 @@ tags:
   - "2-5-3"
   - "label"
   - "spraaksturing"
-description: '"Klik op Zoeken." Niets gebeurt. — WCAG 2.5.3 Label in naam (post 1/7)'
+description: '"Klik op Zoeken." Niets gebeurt. WCAG 2.5.3 Label in naam (post 1/7)'
 keywords:
   - digitale toegankelijkheid
   - WCAG

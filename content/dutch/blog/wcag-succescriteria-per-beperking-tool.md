@@ -20,11 +20,11 @@ De vraag is: welke criteria zijn relevant voor de bezoekers van jouw website?
 
 Onze gratis tool [WCAG-succescriteria per beperking](/tools/sc-per-beperking/) laat je de 55 criteria filteren op vijf typen beperkingen:
 
-- **Visueel** — kleurenblindheid, slechtziendheid, blindheid
-- **Auditief** — doofheid, slechthorendheid
-- **Motorisch** — geen muis kunnen gebruiken, beperkte fijne motoriek
-- **Cognitief** — concentratieproblemen, leesproblemen
-- **Neurologisch** — epilepsie, vestibulaire aandoeningen
+- **Visueel:** kleurenblindheid, slechtziendheid, blindheid
+- **Auditief:** doofheid, slechthorendheid
+- **Motorisch:** geen muis kunnen gebruiken, beperkte fijne motoriek
+- **Cognitief:** concentratieproblemen, leesproblemen
+- **Neurologisch:** epilepsie, vestibulaire aandoeningen
 
 Per criterium zie je het nummer, de naam, het niveau (A, AA of AAA) en welke beperkingen het raakt. Zo weet je in een oogopslag wat er speelt.
 

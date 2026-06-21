@@ -23,11 +23,11 @@ In bijna elke audit kom ik dit moment tegen. Een PDF die helemaal niet toegankel
 
 Goed nieuws: vaak niet. Je hoeft echt niet elk element op je site toegankelijk te máken. Als de informatie ook als echte tekst op de pagina staat, ben je voor veel problemen al klaar. De kunst zit in het correct beoordelen of het toegankelijk alternatief een gelijkwaardig alternatief is. Een poster kan wel 7 problemen hebben, de vraag is of ze alle 7 verdwijnen door de tekst die ernaast staat.
 
-In de audit-wereld doet daarom al jaren de "1-klik-regel" de ronde. Als het toegankelijke alternatief één klik verderop staat, mag je het ontoegankelijke element laten zoals het is. Die regel klopt in grote lijnen, en hij is praktisch. Maar deze regel ku je niet op alles toepassen. Hieronder leg ik uit.
+In de audit-wereld doet daarom al jaren de "1-klik-regel" de ronde. Als het toegankelijke alternatief één klik verderop staat, mag je het ontoegankelijke element laten zoals het is. Die regel klopt in grote lijnen, en hij is praktisch. Maar deze regel kun je niet op alles toepassen. Hieronder leg ik uit.
 
-## Wat is een gelijkwaardig toegankelijk aleternatief?
+## Wat is een gelijkwaardig toegankelijk alternatief?
 
-De inforamtie en functionaliteit is pas toegankelijk als het aan alle 50 suceesscriteria van WCAG voldoet. Dit alternatief moet binnen een klik beschkbaar zijn voor mensen die het origineel niet toegankelijk vinden.
+De informatie en functionaliteit is pas toegankelijk als het aan alle 50 succescriteria van WCAG voldoet. Dit alternatief moet binnen een klik beschikbaar zijn voor mensen die het origineel niet toegankelijk vinden.
 
 Kijk bijvoorbeeld naar een eventposter waar gegevens van het event staan: waar, wanneer, hoelaat, logo's van de organisatoren en contactgegevens. Tijdens de audit kijken we naar losse succescriteria: contrast, tekstafstand, vergroten van tekst, een tekstalternatief, enzovoort. Elk criterium is een apart probleem met een eigen oplossing.
 
@@ -74,7 +74,7 @@ Of je nu een tekstblok naast een poster zet of een complete tweede versie maakt,
 
 **Het alternatief is niet actueel.** De HTML-versie is bijgewerkt, de PDF is veel ouder. Of andersom. In de praktijk gebeurt dit constant, vooral bij organisaties die content in twee systemen beheren.
 
-**Het alternatief staat in een andere taal.** Een Engelse pagina met een Nederlandse PDF als "alternatief", of omgekeerd. WCAG vereist expliciet dezelfde taal.
+**Het alternatief staat in een andere taal.** Een Engelse pagina met een Nederlandse PDF als "alternatief", of omgekeerd. De richtlijn vraagt expliciet om dezelfde taal.
 
 **Het mechanisme om bij het alternatief te komen is zelf niet toegankelijk.** Een link met "klik hier" zonder context. Een uitklapmenu dat niet werkt met een toetsenbord. Een knop zonder zichtbare focus. Het mechanisme is dan onderdeel van het probleem.
 

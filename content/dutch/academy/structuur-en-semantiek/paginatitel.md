@@ -16,9 +16,9 @@ Dat maakt de paginatitel de eerste indruk van je pagina. Als die nietszeggend is
 
 ## Waarom het ertoe doet
 
-WCAG succescriterium 2.4.2 (Paginatitel) vereist dat webpagina's een titel hebben die het **onderwerp of doel** beschrijft.
+WCAG succescriterium 2.4.2 (Paginatitel) vraagt dat webpagina's een titel hebben die het **onderwerp of doel** beschrijft.
 
-Denk aan wat er gebeurt als een schermlezergebruiker meerdere tabbladen open heeft. De enige manier om te weten welk tabblad welke pagina bevat, is de paginatitel. Als alle pagina's dezelfde titel hebben - of helemaal geen titel - dan is dat onmogelijk.
+Stel je voor wat er gebeurt als een schermlezergebruiker meerdere tabbladen open heeft. De enige manier om te weten welk tabblad welke pagina bevat, is de paginatitel. Als alle pagina's dezelfde titel hebben - of helemaal geen titel - dan is dat onmogelijk.
 
 De paginatitel helpt ook bij:
 

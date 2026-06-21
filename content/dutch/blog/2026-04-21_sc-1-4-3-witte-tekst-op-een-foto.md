@@ -8,7 +8,7 @@ tags:
   - "wcag"
   - "1-4-3"
   - "contrast"
-description: "Witte tekst op een foto — WCAG 1.4.3 Contrast (minimum) (post 3/10)"
+description: "Witte tekst op een foto, WCAG 1.4.3 Contrast (minimum) (post 3/10)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
@@ -21,7 +21,7 @@ image: "/images/blog/linkedin-series/sc-1-4-3-witte-tekst-op-een-foto.webp"
 
 In wit. Op een foto van een zonnig landschap. Links voldoende contrast. Rechts? Waar de lucht wit is? Onleesbaar.
 
-Tekst op foto's is een gok. Het contrast verschilt per pixel. En bij een dynamische afbeelding — denk aan een slider met verschillende foto's — heb je geen enkele garantie.
+Tekst op foto's is een gok. Het contrast verschilt per pixel. En bij een dynamische afbeelding, zoals een slider met verschillende foto's, heb je geen enkele garantie.
 
 Ik zie dit bij bijna elke website met een hero-afbeelding. De designer heeft het getest op de ene foto die bij de lancering werd gebruikt. Maar de marketeer wisselt de foto elke maand. En niemand test het contrast opnieuw.
 

@@ -9,7 +9,7 @@ tags:
   - "webshops"
 aliases:
   - /wat-ondernemers-vinden-van-de-eaa/
-description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen — en geven eerlijke antwoorden."
+description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen en geven eerlijke antwoorden."
 ---
 
 De European Accessibility Act is sinds 28 juni 2025 van kracht. Maar hoe kijken ondernemers, freelancers en webshop-eigenaren er eigenlijk naar? We doken in fora, communities en onderzoeken om te achterhalen wat er echt leeft. Het resultaat: eerlijke zorgen, verrassende kansen en een paar hardnekkige misverstanden die we graag rechtzetten.
@@ -91,7 +91,7 @@ Dat is precies hoe wij het aanpakken bij onze klanten. Vijf dingen die je morgen
 1. **Toetsenbordbediening.** Tab door je hele website. Kun je overal bij komen? Zie je waar je bent (focus-indicator)? Kun je menu's openen en sluiten?
 2. **Koppenstructuur.** Gebruik koppen (h1, h2, h3) niet voor de opmaak maar voor de structuur. Een screenreader navigeert via koppen -- als die ontbreken of door elkaar staan, is je site een doolhof.
 3. **Alternatieve teksten.** Elke afbeelding die informatie overbrengt, heeft een alt-tekst nodig. Decoratieve afbeeldingen krijgen een lege alt (alt="").
-4. **Kleurcontrast.** Tekst moet voldoende contrast hebben ten opzichte van de achtergrond. Minimaal 4,5:1 voor gewone tekst, 3:1 voor grote tekst.
+4. **Kleurcontrast.** Tekst moet voldoende contrast hebben tegenover de achtergrond. Minimaal 4,5:1 voor gewone tekst, 3:1 voor grote tekst.
 5. **Formulierlabels.** Elk invoerveld heeft een zichtbaar label nodig dat technisch is gekoppeld aan het veld. Placeholder-tekst is geen label.
 
 Die vijf dingen oplossen maakt al een wereld van verschil voor je bezoekers. En het kost minder dan je denkt.

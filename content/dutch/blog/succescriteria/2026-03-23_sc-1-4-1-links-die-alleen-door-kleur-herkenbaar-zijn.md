@@ -9,7 +9,7 @@ tags:
   - "1-4-1"
   - "kleur"
   - "kleurenblindheid"
-description: "Links die alleen door kleur herkenbaar zijn — WCAG 1.4.1 Gebruik van kleur (post 1/8)"
+description: "Links die alleen door kleur herkenbaar zijn: WCAG 1.4.1 Gebruik van kleur (post 1/8)"
 keywords:
   - digitale toegankelijkheid
   - WCAG
