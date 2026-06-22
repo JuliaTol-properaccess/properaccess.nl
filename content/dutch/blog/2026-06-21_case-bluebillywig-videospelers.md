@@ -14,7 +14,7 @@ tags:
 description: "Quickscan van 9 veelgebruikte videospelers. Bij 3 vonden we binnen de testtijd geen bevindingen. Wat dat zegt over de markt en je inkoopkeuze."
 ---
 
-Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen grondige audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde [het rapport](https://www.properaccess.nl/rapporten/202512_videospelers/) vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
+Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen complete audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde [het rapport](https://www.properaccess.nl/rapporten/202512_videospelers/) vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
 
 ## Les 1: Bij drie van de negen vonden we geen bevindingen
 
@@ -64,8 +64,6 @@ Drie nuances horen erbij, zowel voor de lezer als voor de leveranciers zelf.
 
 ![Een klembord met een audit-rapport en afgevinkte checklist, met daarnaast een analoge klok om de momentopname te benadrukken. Achter het hoofd-klembord staat een lichtgrijze, iets verschoven kopie, om te suggereren dat de software om het rapport heen blijft veranderen.](/images/cases/bluebillywig/bbw-les4-momentopname.png)
 
-**Wat je hieruit mee kunt nemen.** Werk je zelf als leverancier? Zie het rapport niet alleen als verkoopdocument, maar ook als feedback op je gebruiksaanwijzing. Komen bepaalde fouten vooral terug bij integraties, dan ligt daar een directe aanwijzing om ze in jouw documentatie scherper te beschrijven, of om ze met een verstandiger standaardinstelling al in je product te voorkomen.
-
 ## Een verschil met onze andere rapporten
 
 In dit specifieke rapport hebben we bewust geen oplossingen opgenomen bij de bevindingen. Het doel was per speler een eerste beeld geven, niet alle leveranciers tegelijk gaan adviseren. In onze reguliere audits ligt dat anders. Daar krijgt elke bevinding een toelichting, een werkende oplossing en de afwegingen die we daarbij zien. Dat is wat ons onderscheidt van bureaus die het bij een lijst met succescriteria en falen laten.
@@ -77,7 +75,3 @@ Benieuwd hoe zo'n rapport eruitziet? Mail Phi op phi@properaccess.nl voor een vo
 Wat Blue Billywig deed is wat we vaker in deze markt zouden willen zien. Niet alleen je eigen product laten toetsen, maar de spelers eromheen erbij betrekken, en het hele rapport openbaar publiceren. Voor de inkoper levert dat een eerlijk uitgangspunt op. Voor de markt levert het een meetlat op. En voor een bedrijf dat zelf goed scoort, is het zichtbaarder bewijs dan elke marketingclaim.
 
 Hun speler kwam in onze toetsing zonder bevindingen door. Hoe ze het rapport vervolgens gebruiken, vinden wij minstens zo sterk.
-
-## Aan de leveranciers van de negen onderzochte spelers
-
-De markt is niet meer zoals vijf jaar geleden. Er zijn nieuwe videospelers bij gekomen, gemaakt door bedrijven die digitale toegankelijkheid serieus nemen en er actief aan werken. We hopen dat de bevindingen die we in december 2025 hebben opgeschreven binnenkort niet meer actueel zijn. We publiceren graag een update van deze quickscan, en nodigen alle onderzochte leveranciers uit om ons te laten weten zodra de gevonden problemen zijn opgelost.
