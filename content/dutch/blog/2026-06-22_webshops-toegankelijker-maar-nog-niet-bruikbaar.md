@@ -50,7 +50,13 @@ Een webshop die voor deze mensen werkt, werkt simpelweg voor meer klanten. Dat i
 
 Mensen die gevonden problemen gaan oplossen moeten begrijpen hoe bezoekers met een beperking hiermee worden geraakt. Elke bevinding moet een user story bevatten: een bezoeker met een beperking vertelt wat er voor hem of haar misgaat. Niet alleen "knop mist een toegankelijke naam", maar wat dat in de praktijk betekent. Je hoort alleen "knop" en weet niet of je iets koopt, bewaart of weggooit.
 
-Zo ziet zo'n user story er in de praktijk uit. In [een recent rapport](https://www.properaccess.nl/rapporten/202606_stijl.amersfoort.nl_content/) hoorde bij een afbeelding die als link werkt maar geen tekst meekrijgt dit verhaal: "Ik navigeer door de website met een schermlezer. Als ik op een afbeelding kom die als link werkt, hoor ik niets over waar die link naartoe gaat. Ik verwacht dat elke link een duidelijke omschrijving heeft, zodat ik weet wat de bestemming is." Geen succescriterium, maar een mens die niet weet waar een link heen gaat. Op een webshop is dat zomaar je productafbeelding.
+Zo ziet zo'n user story er in de praktijk uit. In [een recent rapport](https://www.properaccess.nl/rapporten/202606_stijl.amersfoort.nl_content/) hoorde bij een afbeelding die als link werkt maar geen tekst meekrijgt dit verhaal:
+
+<blockquote style="border-left: 4px solid #A30D4B; padding: 0.5rem 0 0.5rem 1.5rem; margin: 1.5rem 0; font-style: italic;">
+Ik navigeer door de website met een schermlezer. Als ik op een afbeelding kom die als link werkt, hoor ik niets over waar die link naartoe gaat. Ik verwacht dat elke link een duidelijke omschrijving heeft, zodat ik weet wat de bestemming is.
+</blockquote>
+
+Geen succescriterium, maar een mens die niet weet waar een link heen gaat. Op een webshop is dat zomaar je productafbeelding.
 
 ![Vrouw met een koptelefoon achter een laptop met een winkelwagen en een hartje op het scherm. Uit het scherm komt een tekstballon met een vraagteken.](/images/blog/webshops-eaa-userstory.png)
 
