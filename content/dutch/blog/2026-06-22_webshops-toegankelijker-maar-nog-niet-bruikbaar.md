@@ -76,6 +76,8 @@ De hertest van ACM komt over 3 maanden. Wachten tot dat moment is geen goed plan
 - Geef icoonknoppen een naam die zegt wat ze doen, zodat een schermlezer "Zet in favorieten" voorleest en niet "hart".
 - Bouw een heldere koppenstructuur, zodat je site geen doolhof is maar een pagina die je kunt scannen.
 
+Dit is een begin, geen complete lijst. Wil je systematisch nagaan waar je staat? Loop dan de [EAA-checklist met 30 punten voor webshops](https://www.properaccess.nl/blog/eaa-checklist-2026-webshops/) door.
+
 ## Binnenkort meer: voldoen aan WCAG is niet hetzelfde als toegankelijk zijn
 
 In het bericht van de NOS schemert een belangrijk onderscheid door. Een website kan de eisen van WCAG netjes afvinken en alsnog een doolhof zijn voor de mensen die hem moeten gebruiken. Dat verschil, tussen voldoen aan de norm en echt toegankelijk zijn, verdient een eigen verhaal. Daarover publiceren we binnenkort een uitgebreid artikel: waar de norm ophoudt, waar de praktijk begint, en waarom juist dat onderscheid bepaalt of je klant zijn bestelling afrondt of afhaakt. Houd de blog in de gaten.
