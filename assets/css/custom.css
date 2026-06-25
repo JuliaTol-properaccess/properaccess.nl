@@ -14600,6 +14600,31 @@ body.pa-chat--open {
   margin-bottom: 0;
 }
 
+/* Kernzin — opvallende kernuitspraak midden in een artikel */
+.content .kernzin {
+  border-left: 4px solid #A30D4B;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin: 2.5rem 0;
+  max-width: 720px;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #1F2937;
+}
+.content .kernzin strong {
+  color: #A30D4B;
+}
+html.dark .content .kernzin {
+  color: #f5f5f5;
+}
+@media (max-width: 640px) {
+  .content .kernzin {
+    font-size: 1.25rem;
+    padding-left: 1.125rem;
+  }
+}
+
 /* Byline — link naar auteurspagina */
 .blog-byline__name-link {
   color: inherit;
