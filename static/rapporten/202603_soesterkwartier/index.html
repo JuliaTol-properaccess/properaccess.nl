@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -70,7 +73,9 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van gemeente Amersfoort">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van gemeente Amersfoort">
+        
       </div>
     </section>
 
@@ -234,18 +239,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -254,13 +263,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -275,6 +277,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -997,13 +1004,10 @@
               <h2 class="issue-title"><a href="#06-projecten">06 Projecten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a></p>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/projecten/">https://soesterkwartier.nu/projecten/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1105,13 +1109,10 @@
               <h2 class="issue-title"><a href="#10-winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg">10 Winkelstraatmanager Bart: iedereen is welkom aan de Noordewierweg <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a></p>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/">https://soesterkwartier.nu/winkelstraatmanager-bart-iedereen-is-welkom-aan-de-noordewierweg/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1179,13 +1180,10 @@
               <h2 class="issue-title"><a href="#12-culturele-verbindingen-in-het-soesterkwartier">12 Culturele verbindingen in het Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/">https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/</a></p>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/">https://soesterkwartier.nu/project/culturele-verbindingen-in-het-soesterkwartier/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1277,13 +1275,10 @@
               <h2 class="issue-title"><a href="#14-vernieuwing-basisscholen-soesterkwartier">14 Vernieuwing basisscholen Soesterkwartier <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/</a></p>
+            <p>Link naar pagina: <a href="https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/">https://soesterkwartier.nu/vernieuwing-basisscholen-soesterkwartier-blijf-op-de-hoogte/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1530,6 +1525,8 @@
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -1598,7 +1595,7 @@
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -1608,5 +1605,6 @@
   </main>
 </div>
 
+    
 </body>
 </html>

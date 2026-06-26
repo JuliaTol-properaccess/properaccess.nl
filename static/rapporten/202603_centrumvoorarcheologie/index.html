@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -66,7 +69,9 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van gemeente Amersfoort">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van gemeente Amersfoort">
+        
       </div>
     </section>
 
@@ -226,18 +231,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -246,13 +255,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -267,6 +269,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -310,13 +317,10 @@
               <h2 class="issue-title"><a href="#01-home">01 Home <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://centrumvoorarcheologie.nl/">https://centrumvoorarcheologie.nl/</a></p>
+            <p>Link naar pagina: <a href="https://centrumvoorarcheologie.nl/">https://centrumvoorarcheologie.nl/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -325,13 +329,10 @@
               <h2 class="issue-title"><a href="#02-contact">02 Contact <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://centrumvoorarcheologie.nl/contact/">https://centrumvoorarcheologie.nl/contact/</a></p>
+            <p>Link naar pagina: <a href="https://centrumvoorarcheologie.nl/contact/">https://centrumvoorarcheologie.nl/contact/</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -340,13 +341,10 @@
               <h2 class="issue-title"><a href="#03-advies">03 Advies <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/advies">https://www.centrumvoorarcheologie.nl/advies</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/advies">https://www.centrumvoorarcheologie.nl/advies</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -355,13 +353,10 @@
               <h2 class="issue-title"><a href="#04-onderzoek">04 Onderzoek <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/onderzoek">https://www.centrumvoorarcheologie.nl/onderzoek</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/onderzoek">https://www.centrumvoorarcheologie.nl/onderzoek</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -370,13 +365,10 @@
               <h2 class="issue-title"><a href="#05-verhalen">05 Verhalen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/verhalen">https://www.centrumvoorarcheologie.nl/verhalen</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/verhalen">https://www.centrumvoorarcheologie.nl/verhalen</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -385,13 +377,10 @@
               <h2 class="issue-title"><a href="#06-over-deze-website">06 Over deze website <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website">https://www.centrumvoorarcheologie.nl/over-deze-website</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website">https://www.centrumvoorarcheologie.nl/over-deze-website</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -400,13 +389,10 @@
               <h2 class="issue-title"><a href="#07-kwaliteit">07 Kwaliteit <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/kwaliteit">https://www.centrumvoorarcheologie.nl/kwaliteit</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/kwaliteit">https://www.centrumvoorarcheologie.nl/kwaliteit</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -415,13 +401,10 @@
               <h2 class="issue-title"><a href="#08-toegankelijkheid">08 Toegankelijkheid <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website/toegankelijkheid">https://www.centrumvoorarcheologie.nl/over-deze-website/toegankelijkheid</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website/toegankelijkheid">https://www.centrumvoorarcheologie.nl/over-deze-website/toegankelijkheid</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -430,13 +413,10 @@
               <h2 class="issue-title"><a href="#09-sitemap">09 Sitemap <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website/sitemap">https://www.centrumvoorarcheologie.nl/over-deze-website/sitemap</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/over-deze-website/sitemap">https://www.centrumvoorarcheologie.nl/over-deze-website/sitemap</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -445,13 +425,10 @@
               <h2 class="issue-title"><a href="#10-pagina-niet-gevonden-404">10 Pagina niet gevonden (404) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/pagina-niet-gevonden-404">https://www.centrumvoorarcheologie.nl/pagina-niet-gevonden-404</a></p>
+            <p>Link naar pagina: <a href="https://www.centrumvoorarcheologie.nl/pagina-niet-gevonden-404">https://www.centrumvoorarcheologie.nl/pagina-niet-gevonden-404</a></p>
 <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
       </section>
@@ -463,6 +440,8 @@
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -531,7 +510,7 @@
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -541,5 +520,6 @@
   </main>
 </div>
 
+    
 </body>
 </html>

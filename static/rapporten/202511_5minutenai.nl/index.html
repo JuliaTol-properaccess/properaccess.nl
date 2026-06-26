@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,12 +38,14 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
 
       <h2 class="dash-nav-heading">Steekproef</h2>
-      <ul class="dash-nav dash-nav-sample"><li><a href="#het-spel">Het spel</a></li>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#het-spel">Het spel</a></li>
       </ul>
     </nav>
 
@@ -64,17 +68,42 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van 5minutenai.nl">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van 5minutenai.nl">
+        
       </div>
     </section>
 
     
     
     <section class="dash-stats">
-      <div class="stat-card stat-card-dark">
-        <span class="stat-label">Geslaagd</span>
-        <span class="stat-number" id="stat-passed">-</span>
-        <span class="stat-sublabel">van 55</span>
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="55"
+           data-perceivable="20"
+           data-operable="20"
+           data-understandable="13"
+           data-robust="2">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">55</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
       </div>
       <div class="stat-card stat-card-dark">
         <span class="stat-label">Impact</span>
@@ -91,8 +120,31 @@
           <span>Techniek: <strong id="stat-techniek">0</strong></span>
         </div>
       </div>
-      <div class="stat-card stat-card-dark">
-        <span class="stat-badge">WCAG 2.2</span>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="55"
+             data-perceivable="20"
+             data-operable="20"
+             data-understandable="13"
+             data-robust="2">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 13</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 2</span>
+        </div>
       </div>
     </section>
 
@@ -178,13 +230,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -207,6 +268,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -337,7 +403,7 @@ Alle interactieve componenten binnen het spel zijn gecodeerd binnen één enkel 
 	<span class="type"><b>EN</b>: 9.1.1.1, 9.2.4.4, 9.4.1.2</span>
 </div>
 <figure class="screenshot">
-<img src="images/01.png" alt="">
+<img src="images/01.webp" alt="">
 </figure>
 <p>Op deze pagina fungeert het Playcanvas-logo in de footer als een link, maar de tekstalternatief ontbreekt, waardoor de link ontoegankelijk is.</p>
 <p>De afbeelding is dus interactief. Er is geen tekstalternatief. Daardoor heeft de link geen inhoud.  De link heeft geen toegankelijke naam en het doel van deze link is niet duidelijk (dit zorgt ook voor afkeur op succescriterium 2.4.4 en 4.1.2).</p>
@@ -384,7 +450,7 @@ Alle interactieve componenten binnen het spel zijn gecodeerd binnen één enkel 
 	<span class="type"><b>EN</b>: 9.1.1.1</span>
 </div>
 <figure class="screenshot">
-<img src="images/02.png" alt="">
+<img src="images/02.webp" alt="">
 </figure>
 <p>In de footer heeft het icoontje van een oog geen tekstalternatief. Het <code>alt</code>-attribuut ontbreekt.</p>
 <p>Een <code>img</code>-element moet altijd een <code>alt</code>-attribuut hebben. Bij een decoratieve afbeelding die geen betekenis overdraagt, laat je dit attribuut leeg. Dan staat er <code>alt=&quot;&quot;</code>. Bij een informatieve afbeelding voeg je een duidelijke beschrijving van de afbeelding toe.</p>
@@ -400,7 +466,7 @@ Alle interactieve componenten binnen het spel zijn gecodeerd binnen één enkel 
 	<span class="type"><b>EN</b>: 9.1.4.3</span>
 </div>
 <figure class="screenshot">
-<img src="images/03.png" alt="">
+<img src="images/03.webp" alt="">
 </figure>
 <p>Op deze pagina staat in de footer een grijze tekst (<code>#5B6F72</code>) met het aantal weergaven op een zwarte achtergrond (<code>#263538</code>). Het kleurcontrast is te laag: 2,4:1.</p>
 <h4>Oplossing:</h4>
@@ -429,7 +495,7 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
 	<span class="type"><b>EN</b>: 9.1.4.3</span>
 </div>
 <figure class="screenshot">
-<img src="images/04.png" alt="">
+<img src="images/04.webp" alt="">
 </figure>
 <p>Op deze pagina, op het scherm &quot;de 5 minuten ai manager&quot;, staan roze letters (<code>#D42FD9</code>) in de tekst &quot;snelheid of zorgvuldigheid&quot; op een blauwe achtergrond (<code>#143F75</code>). Het kleurcontrast is te laag: 2,6:1.</p>
 <h4>Oplossing:</h4>
@@ -444,7 +510,7 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
 	<span class="type"><b>EN</b>: 9.1.4.11</span>
 </div>
 <figure class="screenshot">
-<img src="images/05.png" alt="">
+<img src="images/05.webp" alt="">
 </figure>
 <p>Bovenaan staan icoontjes van een gezicht en een grafiek die resultaten en vertrouwen weergeven. Deze icoontjes hebben in de standaardstatus een witte voorgrond op een gele achtergrond (<code>#FECB29</code>), met een te laag contrast van 1,5:1.</p>
 <p>Het contrast tussen informatieve elementen van een grafiek moet minimaal 3,0:1 zijn, zodat bezoekers ze van elkaar kunnen onderscheiden.</p>
@@ -460,7 +526,7 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
 	<span class="type"><b>EN</b>: 9.1.4.3</span>
 </div>
 <figure class="screenshot">
-<img src="images/06.png" alt="">
+<img src="images/06.webp" alt="">
 </figure>
 <p>Op het scherm met de eindpresentatie onder &quot;Thema's&quot;, staan roze letters (<code>#D52EDA</code>) in de tekst &quot;snelheid of zorgvuldigheid&quot; op een roze achtergrond (<code>#FE38FF</code>). Het kleurcontrast is te laag: 1,4:1.</p>
 <h4>Oplossing:</h4>
@@ -479,6 +545,8 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -526,7 +594,9 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
             <p>Je kunt je voortgang op twee manieren bijhouden:</p>
             <ul>
               <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
               <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
             </ul>
 
             <h3>Link naar een specifieke bevinding delen</h3>
@@ -545,7 +615,7 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -555,5 +625,6 @@ De standaardkleur van deze socialmedia-logo's hoeft niet aan de contrasteisen te
   </main>
 </div>
 
+    
 </body>
 </html>

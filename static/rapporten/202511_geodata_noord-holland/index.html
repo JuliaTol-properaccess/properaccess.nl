@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202511_geodata_noord-holland">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van zeven kaartenwebsites van de provincie Noord-Holland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#dataportaal-noord-holland">Dataportaal Noord-Holland</a></li><li><a href="#kennis-en-dataplein-wonen">Kennis- en Dataplein Wonen</a></li><li><a href="#totaalbeeld">Totaalbeeld</a></li><li><a href="#natuur-en-stikstof">Natuur en stikstof</a></li><li><a href="#energienetwerk">Energienetwerk</a></li><li><a href="#werkingsgebied">Werkingsgebied</a></li><li><a href="#bouwen-op-slappe-grond">Bouwen op slappe grond</a></li><li><a href="#kaartenatlas-noord-holland">Kaartenatlas Noord-Holland</a></li><li><a href="#dashboard-klimaat-en-energie">Dashboard klimaat en energie</a></li><li><a href="#kerncijfers">Kerncijfers</a></li><li><a href="#mobiliteit">Mobiliteit</a></li><li><a href="#pdf-de-noord-hollandse-klimaataanpak">PDF De Noord-Hollandse Klimaataanpak</a></li><li><a href="#kennis-en-dataplein-landelijk-gebied">Kennis- en Dataplein Landelijk gebied</a></li><li><a href="#kennis-en-dataplein-klimaat-energie">Kennis- en dataplein Klimaat &amp; Energie</a></li><li><a href="#dataplatform-provincie-noord-holland">Dataplatform Provincie Noord-Holland</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van zeven kaartenwebsites van de provincie Noord-Holland</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>In deze volledige audit zijn zeven kaartenwebsites onderzocht. Deze sites staan op eigen domeinen, bestaan grotendeels uit kaarten en kaartapplicaties en zijn veelal gebaseerd op ArcGIS-software. De pagina’s vertonen onderling veel overeenkomsten. Voor dit onderzoek hebben we een steekproef samengesteld van de meest uiteenlopende paginatemplates en content, zodat we een zo breed mogelijk beeld kregen van de toegankelijkheidsproblemen. Daarom is gekozen voor een volledige audit in plaats van een contentaudit. Het techniekonderzoek van ArcGIS kan als aanvullend rapport worden opgenomen in de toegankelijkheidsverklaring.
+Op dit moment zijn 34 van de 55 succescriteria als voldoende beoordeeld. In dit rapport lees je wat er bij de overige 21 nog fout gaat, en hoe je dat kunt verbeteren.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.png" alt="Logo van de opdrachtgever">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="55"
+           data-perceivable="20"
+           data-operable="20"
+           data-understandable="13"
+           data-robust="2">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">55</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="55"
+             data-perceivable="20"
+             data-operable="20"
+             data-understandable="13"
+             data-robust="2">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 13</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 2</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd></dd>
+              
+              <dt>Leverancier techniek</dt>
+              <dd>Arcgis</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>19 november 2025</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle pagina&#39;s op de website geoapps.noord-holland.nl</li>
+              
+              <li>Alle pagina&#39;s op de website wonen-noord-holland.hub.arcgis.com</li>
+              
+              <li>Alle pagina&#39;s op de website pplg-noord-holland.hub.arcgis.com</li>
+              
+              <li>Alle pagina&#39;s op de website energietransitie-noord-holland.hub.arcgis.com</li>
+              
+              <li>Alle pagina&#39;s op de website provincie-noord-holland.dataplatform.nl</li>
+              
+              <li>Alle pagina&#39;s op de website apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884</li>
+              
+              <li>Alle PDF&#39;s op de website energietransitie-nh.incijfers.nl</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website</li>
+              
+              <li>De van derden afkomstige inhoud (wettelijke uitzondering voor de overheid)</li>
+              
+              <li>Kaarten en kaartapplicaties (wettelijke uitzondering voor de overheid)</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Mozilla Firefox, versie 142</li>
+              
+              <li>Google Chrome, versie 142</li>
+              
+              <li>Apple Safari, versie 18</li>
+              
+              <li>PAC software to test PDF</li>
+              
+              <li>NVDA schermlezer in combinatie met Firefox</li>
+              
+              <li>VoiceOver schermlezer in combinatie met Safari</li>
+              
+              <li>Andere gangbare browsers en hulpapparatuur</li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>HTML</li>
+              
+              <li>CSS</li>
+              
+              <li>JavaScript</li>
+              
+              <li>WAI-ARIA</li>
+              
+              <li>SVG</li>
+              
+              <li>PDF</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="bouwen-op-slappe-grond">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#bouwen-op-slappe-grond">Bouwen op slappe grond <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="dashboard-klimaat-en-energie">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#dashboard-klimaat-en-energie">Dashboard klimaat en energie <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie</a></p>
+<div class="issue">
+<h3>#1 - Kleurcontrast van tekst is te laag (tekst kleiner dan 24px en niet vetgedrukt)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Op deze pagina staat lichtblauwe tekst (<code>#2991E0</code>), bijvoorbeeld “Noord-Hollandse Klimaataanpak”, op een witte achtergrond. De contrastratio is te laag: 3,4:1.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/kerncijfers">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/kerncijfers</a> en op de pagina <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit</a>.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#2 - Links door kleur te onderscheiden van gewone tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/21.webp" alt="">
+</figure>
+Op deze pagina bevat de alinea links (zoals “Noord-Hollandse Klimaataanpak”). Kleur is het enige onderscheid tussen de link en de statische tekst.
+Deze links zijn alleen te herkennen aan een kleurverschil met de gewone tekst. Dit kan een probleem zijn voor kleurenblinde of slechtziende bezoekers. Zij kunnen de kleuren mogelijk niet onderscheiden, en zien dan niet dat er een link in de tekst staat.
+#### Oplossing:
+Zorg ervoor dat links in de tekst op zijn minst op één andere manier te herkennen zijn die niet afhankelijk is van kleur. Bijvoorbeeld:
+<ul>
+<li><strong>Onderstrepen</strong>: geef de links een onderstreping.</li>
+<li><strong>Rand</strong>: voeg een subtiele rand (kader) toe aan de links.</li>
+<li><strong>Verhoogd contrast + hover-effect</strong>: verhoog het contrast tussen de kleur van de links en de omringende tekst tot minimaal 3,0:1, <em>en</em> voeg een tweede visuele indicator toe bij hover, zoals een onderstreping of verandering in de achtergrondkleur.</li>
+</ul>
+</div>
+<div class="issue">
+<h3><code>strong</code>-element is gebruikt voor opmaak</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina wordt onder &quot;Dashboard klimaat en energie&quot; het strong-element onjuist gebruikt voor opmaakdoeleinden, bijvoorbeeld bij “de reductie van broeikasgassen en de energietransitie in de provincie”.
+Het strong-element heeft een semantische waarde: het geeft een bepaalde betekenis aan de tekst die erin staat. Dit element geeft aan dat de tekst extra nadruk moet krijgen. Daarom mag dit element niet gebruikt worden om alleen een visueel effect te bereiken (vetgedrukte tekst).
+Hetzelfde probleem doet zich voor op de pagina https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/kerncijfers, bijvoorbeeld bij “Hernieuwbare energieproductie”.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de onnodige <code>strong</code>-elementen en gebruik CSS om de tekst vet te maken.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="dataplatform-provincie-noord-holland">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#dataplatform-provincie-noord-holland">Dataplatform Provincie Noord-Holland <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://provincie-noord-holland.dataplatform.nl/#/data">https://provincie-noord-holland.dataplatform.nl/#/data</a></p>
+<div class="issue">
+<h3>#3 - Taalwisseling ontbreekt op anderstalige content</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.2</span>
+	<span class="type"><b>EN</b>: 9.3.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/12.webp" alt="">
+</figure>
+Op deze pagina staan zinnen in een andere taal (Nederlands) zonder taalcode, terwijl de primaire taal van de pagina Engels is.
+Deze tekst wordt nu voorgelezen volgens de uitspraakregels van de primaire taal van de pagina. Die is ingesteld in het lang-attribuut op het html-element, in dit geval op “en”. De schermlezer zou juist naar de taal van de zin moeten overschakelen. Dat bereik je door deze anderstalige inhoud een lokaal lang-attribuut te geven met de juiste waarde.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2](https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2).
+#### Oplossing:
+Voeg een `lang`-attribuut met de juiste taalcode toe aan het `html`-element dat de tekst in een andere taal bevat. Als de tekst bijvoorbeeld in het Nederlands is, voeg je `lang=&quot;nl&quot;` toe aan het element.
+### Toegankelijke naam knop is anders dan zichtbare tekst door `aria-label`
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.5.3</span>
+	<span class="type"><b>EN</b>: 9.2.5.3</span>
+</div>
+<p>Op deze pagina staat in de cookiebanner een knop met de zichtbare tekst “Decline”. De toegankelijke naam van de knop is “deny cookies”, afkomstig van het aria-label.
+Het gebruik van het <code>aria-label</code>-attribuut overschrijft alle andere methoden voor het benoemen van elementen. Schermlezers en spraakherkenningssoftware gebruikt de naam die in het <code>aria-label</code> staat. Dit wordt de “toegankelijke naam” genoemd. Als deze toegankelijke naam anders is dan de zichtbare tekst, zal de tekst die schermlezers voorlezen en die door spraakherkenningssoftware wordt gebruikt, dus afwijken van de zichtbare tekst op de knop. Hierdoor kunnen bezoekers de knop niet meer met stemcommando bedienen. Zij lezen daarvoor namelijk de tekst voor die op de knop te zien is. Omdat deze niet hetzelfde is als de toegankelijke naam, weet de spraaksoftware niet om welke knop het gaat.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de toegankelijke naam de zichtbare tekst bevat, en zet deze tekst het liefst vooraan in de naam. De toegankelijke naam mag ook precies hetzelfde zijn als de zichtbare tekst.</p>
+</div>
+<div class="issue">
+<h3>#4 - Toetsenbord focus gaat buiten het dialoogvenster</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3 </span>
+</div>
+<p>Wanneer je de website voor het eerst bezoekt, verschijnt er een dialoogvenster met een cookiebericht. Op dit moment kan de toetsenbordfocus uit het geopende dialoogvenster ontsnappen en naar de onderliggende pagina verplaatsen.
+Bij dit soort dialoogvensters moet je de toetsenbordfocus goed instellen. Als het venster actief is, moet de toetsenbordfocus binnen het venster blijven, en mag deze niet op de onderliggende pagina terechtkomen.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Je lost dit op met Javascript door de focus binnen het venster te houden totdat de bezoeker op de sluitknop heeft geklikt of op de ESC-toets heeft gedrukt. Je kunt er ook voor kiezen om het venster automatisch te sluiten op het moment dat de focus eruit gaat.</p>
+</div>
+<div class="issue">
+<h3>#5 - Focus niet meer zichtbaar omdat de cookiebanner bij inzoomen een deel van de pagina bedekt</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Теchniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.11</span>
+</div>
+<p>Wanneer iemand de website voor het eerst bezoekt, verschijnt er een cookiebanner. Als een bezoeker vervolgens inzoomt tot 200% of 400% op een scherm met een resolutie van 1280 bij 1024 pixels, komt de toetsenbordfocus terecht op elementen die onder de banner verborgen zijn. Hierdoor is het niet mogelijk te zien waar de focus zich bevindt.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de cookiebanner meeschaalt bij inzoomen, zodat de focus zichtbaar is.</p>
+</div>
+<div class="issue">
+<h3>#6 - Link heeft geen inhoud</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1, 4.1.2, 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.1.1.1, 9.4.1.2, 9.2.4.4</span>
+</div>
+<figure class="screenshot">
+<img src="images/13.webp" alt="">
+</figure>
+Op deze pagina staat in de header een link met een icoontje van een huis. Dit pictogram is verborgen voor de schermlezer. De link om dit icoontje heeft geen inhoud die zichtbaar is voor hulpsoftware.
+Schermlezers negeren inhoud met het attribuut aria-hidden=&quot;true&quot;. Deze inhoud is dus verborgen voor blinde bezoekers. Verwijder dit attribuut zodat een blinde bezoeker dezelfde informatie krijgt als een ziende bezoeker.
+Dit probleem heeft ook betrekking op succescriterium 4.1.2, omdat de link geen toegankelijke naam heeft, en op succescriterium 2.4.4, omdat de link geen doel heeft.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2](https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2).
+#### Oplossing:
+Verwijder `aria-hidden=&quot;true&quot;`.
+### Knop heeft geen inhoud die zichtbaar is voor hulpsoftware
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1, 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.1.1.1, 9.4.1.2</span>
+</div>
+<p>Op deze pagina staat in de header een knop met een wereldbolpictogram. Dit pictogram is verborgen voor de schermlezer. Hetzelfde probleem doet zich voor na het selecteren van een filter, bij de knop met het “x”-pictogram.
+Schermlezers negeren inhoud met het attribuut aria-hidden=&quot;true&quot;. Deze inhoud is dus verborgen voor blinde bezoekers. Verwijder dit attribuut zodat een blinde bezoeker dezelfde informatie krijgt als een ziende bezoeker.
+Dit probleem heeft ook betrekking op succescriterium 4.1.2, omdat de knop geen toegankelijke naam heeft.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder <code>aria-hidden=&amp;quot;true&amp;quot;</code>.</p>
+</div>
+<div class="issue">
+<h3>#7 - Huidige pagina alleen visueel aangegeven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>In het hoofdmenu heeft de actieve link (naar de huidige pagina) “Data” een afwijkend visueel uiterlijk, maar dit onderscheid is niet aanwezig in de code.
+Bezoekers die de pagina laten voorlezen, hebben daardoor geen toegang tot deze informatie.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg voor een andere manier om deze informatie over te dragen, zodat ook slechtziende of blinde bezoekers dit kunnen begrijpen. Voeg bijvoorbeeld <code>aria-current=&amp;quot;true&amp;quot;</code> toe aan de actieve link. Andere opties zijn een <code>h1</code>-kop met dezelfde tekst als het menu-item, of het gebruik van de paginatitel (<code>title</code>).</p>
+</div>
+<div class="issue">
+<h3>#8 - Knop heeft niet de juiste toegankelijke rol</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Op deze pagina staat een zoekveld met een knop met een vergrootglaspictogram. Deze knop heeft niet de juiste toegankelijke rol.
+Elk HTML-element heeft standaard een rol. Dit betekent dat het element bepaalde eigenschappen en functies heeft om informatie aan de bezoeker te geven of om informatie van de bezoeker te ontvangen. De rol bepaalt dus wat het element doet. Schermlezers en andere hulpmiddelen moeten de correcte rol van elk element op een webpagina kennen. Zo kunnen ze op een slimme manier met het element omgaan en aan de bezoeker uitleggen wat het element doet.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de knop de juiste toegankelijke rol heeft. Gebruik het <code>button</code>-element.</p>
+</div>
+<div class="issue">
+<h3>#9 - Kleurcontrast van tekst is te laag (tekst kleiner dan 19px)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/14.webp" alt="">
+</figure>
+Op deze pagina staat een zoekveld. Wanneer er gegevens worden ingevoerd, verschijnt  een lijst met suggesties. Deze suggesties bevatten grijze tekst (`#777777`) op een witte achtergrond, bijvoorbeeld “IKN - Provinciale Verordening - Houtopstanden”. De contrastratio is te laag: 4,47:1.
+#### Oplossing:
+Deze tekst is kleiner dan 19px, daarom moet het contrast met de achtergrondkleur minimaal 4,5:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: [https://properaccess.nl/hoe-test-ik-kleurcontrast/](https://properaccess.nl/hoe-test-ik-kleurcontrast/).
+### Kop is niet gemarkeerd als koptekst
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina is in de footer de tekst “Contact” niet opgemaakt als kop.
+Bezoekers die hulpsoftware gebruiken hebben niets aan een (tussen)kop die er wel uitziet als kop, maar niet als kop is gemarkeerd. Via de koppen op een pagina kunnen gebruikers van hulpsoftware de inhoud scannen of snel naar een bepaalde sectie springen. Maar dat kan alleen als de kop ook echt in de code staat. Als koppen alleen visueel als kop zijn vormgegeven (bijvoorbeeld vetgedrukt), ontstaat bovendien nog een ander probleem: de structuur van de informatie in de code wijkt dan af van de visuele structuur.  Op deze pagina staat een instructie hoe je zelf koppen op een webpagina kunt testen: <a href="https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/">https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/</a>.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Dit voorkom je door koppen altijd te markeren met het juiste <code>HTML</code>-element, op het juiste kopniveau: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code> of <code>h6</code>. Meestal kun je het kopniveau kiezen via de content-editor in je CMS. De HTML-code voor de kop wordt dan automatisch toegepast.</p>
+</div>
+<div class="issue">
+<h3>#10 - Toetsenbordfocus is niet zichtbaar</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.7</span>
+	<span class="type"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>Op deze pagina is de toetsenbordfocus niet zichtbaar op alle links in de zoekresultaten.
+De toetsenbordfocus moet altijd zichtbaar zijn op interactieve elementen zoals links, knoppen en invoervelden die met het toetsenbord focus kunnen krijgen. Bezoekers die met het toetsenbord navigeren moeten goed kunnen zien op welke plek van de pagina ze zijn. Anders weten ze niet op welk moment ze op Enter moeten drukken om een knop of link te bedienen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de toetsenbordfocus zichtbaar is op de genoemde elementen. Op deze pagina staat een instructie om zelf focuszichtbaarheid te testen: <a href="https://properaccess.nl/hoe-test-ik-focus-zichtbaarheid/">https://properaccess.nl/hoe-test-ik-focus-zichtbaarheid/</a>.</p>
+</div>
+<div class="issue">
+<h3>#11 - Kleurcontrast van tekst is te laag (tekst kleiner dan 24px en niet vetgedrukt)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Op deze pagina staat lichtblauwe tekst (#009EDF) op een witte achtergrond, bijvoorbeeld “Bouwen op slappe grond - Dikte holoceen pakket”. De contrastratio is te laag: 3:1.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a>.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#12 - Knop geeft geen informatie over status</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Op deze pagina staat een knop “Filters” die het submenu met filters opent en sluit. De knop geeft geen informatie over de status van het submenu (geopend of gesloten) aan bezoekers die het niet kunnen zien, zoals mensen die schermlezers gebruiken.</p>
+<h4>Oplossing:</h4>
+<p>Voeg bijvoorbeeld een tekstuele uitleg toe (ingeklapt/uitgeklapt) die je voor ziende bezoekers met CSS verbergt. Of gebruik het <code>aria-expanded</code>-attribuut. Dit attribuut moet de waarde &quot;true&quot; krijgen als het menu getoond wordt, en “false&quot; als het menu verborgen is.</p>
+</div>
+<div class="issue">
+<h3>#13 - Contrast tussen focusindicator en achtergrond is te laag</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/15.webp" alt="">
+</figure>
+Op deze pagina krijgen de filters, bijvoorbeeld “Formaten”, een grijze toetsenbordfocusrand (`#F5F5F5`) wanneer ze de toetsenbordfocus hebben. De contrastratio tussen de toetsenbordfocusrand en de witte achtergrond is 1,1:1.
+Momenteel is het voor mensen met een visuele beperking of kleurenblindheid lastig of zelfs onmogelijk om de focus te zien.
+#### Oplossing:
+Gebruik voor de focusindicator een kleur met een contrast van minimaal 3,0:1 met de achtergrond.
+### Bezoekers die inzoomen tot 200% en tot 400% kunnen niet meer alle tekst lezen
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.4, 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.4, 9.1.4.10</span>
+</div>
+<figure class="screenshot">
+<img src="images/16.webp" alt="">
+</figure>
+Wanneer deze pagina wordt bekeken met een schermresolutie van 1280 bij 1024 pixels en ingezoomd tot 200% en tot 400%, raakt de tekst van filters en artikelen gedeeltelijk uit beeld, bijvoorbeeld “Download”.
+#### Oplossing:
+Zorg dat alles nog werkt en leesbaar is als een bezoeker inzoomt tot 200%/400% op een scherm van 1280 bij 1024 pixels.
+### Advies
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Advies</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+</div>
+<p>Deze pagina bevat zoekresultaten. Elk resultaat heeft een link “Download” en een link “Kaart”, die knoppen met dezelfde namen bevatten. Dit zorgt voor overbodigheid en kan verwarrend zijn voor gebruikers van schermlezers.</p>
+<h4>Oplossing:</h4>
+<p>Dit kan worden opgelost door de geneste knoppen uit de links te verwijderen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="dataportaal-noord-holland">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#dataportaal-noord-holland">Dataportaal Noord-Holland <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://geoapps.noord-holland.nl/GeoWeb/Viewer/?app=4e0f7c2bc96740129c84a8cbcff3d87d">https://geoapps.noord-holland.nl/GeoWeb/Viewer/?app=4e0f7c2bc96740129c84a8cbcff3d87d</a></p>
+<div class="issue">
+<h3>#14 - Taalcode klopt niet</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.1</span>
+	<span class="type"><b>EN</b>: 9.3.1.1</span>
+</div>
+<p>De primaire taal van deze pagina is Nederlands, maar het lang-attribuut is onjuist ingesteld op &quot;en&quot;.
+Je moet de primaire taal van de pagina aangeven met de juiste taalcode via het <code>lang</code>-attribuut op het <code>html</code>-element, in dit geval <code>lang=&amp;quot;nl&amp;quot;</code>. Schermlezers gebruiken deze code om de juiste uitspraakregels toe te passen. Staat hier een verkeerde code, dan wordt de inhoud van de pagina dus met onjuiste uitspraakregels voorgelezen. De voorgelezen tekst is dan erg lastig te begrijpen.
+Hetzelfde probleem doet zich voor op pagina <a href="https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884">https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884</a>.</p>
+<h4>Oplossing:</h4>
+<p>Stel de taalcode correct in voor elke pagina door <code>lang=&amp;quot;nl&amp;quot;</code> te gebruiken.</p>
+</div>
+<div class="issue">
+<h3>#15 - Tekstalternatief van het logo is niet voldoende</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/01.webp" alt="">
+</figure>
+Het logo bovenaan de website toont de volledige tekst &quot;Provincie Noord-Holland&quot;, maar de alt-tekst is slechts &quot;Een korte uitleg over de afbeelding&quot;.
+In het tekstalternatief staat dus niet alle tekst die in het logo te zien is. Dit moet wel. Zo weten bezoekers die het plaatje niet kunnen zien, ook precies wat er staat.
+Hetzelfde probleem doet zich voor op de pagina [https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884](https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884) en op de pagina [https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie](https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie).
+#### Oplossing:
+Verander de `alt`-tekst zodat de volledige tekst van het logo erin staat: “Provincie Noord-Holland”.
+### `strong`-element is gebruikt in koptekst
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina staan de koppen “Dataportaal Noord-Holland” en “Kaartlagen”. In deze koppen worden het heading-element en het strong-element gebruikt.
+Het strong-element heeft een semantische waarde. Het geeft een bepaalde betekenis aan de tekst die erin staat, namelijk dat de tekst extra nadruk moet krijgen. Daarom mag je dit element niet gebruiken om alleen een visueel effect te bereiken (vetgedrukt).
+Hetzelfde probleem doet zich voor bij “Dataportaal” in het dialoogvenster dat wordt geopend na het klikken op de knop met het “i”-icoon.
+Hetzelfde probleem doet zich ook voor op de pagina <a href="https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884">https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884</a> bij “Kaartenatlas Noord-Holland” en bij “Status &amp; contact” en “Hoe gebruik ik deze applicatie?” in het dialoogvenster dat wordt geopend na het klikken op de knop met het “i”-icoon, en op de pagina <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie</a>, bijvoorbeeld bij “Transitiepaden” en andere.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik CSS om de tekst vetgedrukt te maken, en verwijder het <code>strong</code>-element.</p>
+</div>
+<div class="issue">
+<h3>#16 - Naam van de knop beschrijft niet wat de knop doet</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>Op deze pagina staat op de kaart een knop met een icoontje van een huisje. De toegankelijke naam “Knop” beschrijft de functie niet nauwkeurig.
+Hetzelfde probleem doet zich voor bij de knop met het “i”-pictogram.
+Een blinde bezoeker weet daardoor niet wat deze knop precies doet.</p>
+<h4>Oplossing:</h4>
+<p>Voeg tekst toe die deze knop goed beschrijft.</p>
+</div>
+<div class="issue">
+<h3>#17 - Dialoogvenster heeft niet de juiste rol en geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2 </span>
+</div>
+<p>Op deze pagina staat op de kaart een knop met een “i”-pictogram die een dialoogvenster opent. Dit dialoogvenster heeft geen juiste rol en geen toegankelijke naam.
+Schermlezers kunnen hierdoor niet doorgeven dat het om een dialoogvenster gaat, en wat de inhoud ervan is.</p>
+<h4>Oplossing:</h4>
+<p>Voeg twee attributen toe aan het dialoogvenster: een <code>aria-label</code> met een duidelijke beschrijving van de inhoud (<code>aria-label=&amp;quot;Beschrijving van de inhoud&amp;quot;</code>) en <code>role=&amp;quot;dialog&amp;quot;</code>.</p>
+</div>
+<div class="issue">
+<h3>#18 - Een element met de rol “tree” heeft directe kindelementen die niet zijn toegestaan: li.</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2 </span>
+</div>
+<figure class="screenshot">
+<img src="images/02.webp" alt="">
+</figure>
+Op deze pagina staan naast de kaart filters. Deze filters zijn geplaatst in een element met de rol “tree”, maar ze hebben directe kindelementen die niet zijn toegestaan: li.
+De vereiste kindelementen “treeitem” zijn wel aanwezig in de HTML-code, maar ze zijn genest binnen li-elementen. Dat is onjuist.
+#### Oplossing:
+Zorg ervoor dat het element met de rol “tree” geen childelementen heeft die zijn genest binnen li-elementen.
+### Alleen kleur gebruikt in legenda bij kaart
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/03.webp" alt="">
+</figure>
+Op deze pagina verschijnt informatie op de kaart wanneer selectievakjes in de filters worden aangevinkt. Op de kaart wordt alleen kleur gebruikt om informatie over te brengen. Zie het groen op de kaart.
+Alleen als je de kleuren kunt zien en van elkaar kunt onderscheiden zie je welk gebied bij welke categorie in de legenda hoort.
+#### Oplossing:
+Gebruik naast kleur bijvoorbeeld ook verschillende soorten arcering of datalabels in tekst.
+### Kleurcontrast tussen lijnen of balken in legenda is niet voldoende
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/04.webp" alt="">
+</figure>
+Op deze pagina verschijnt informatie op de kaart wanneer selectievakjes in de filters worden aangevinkt. Sommige kleurcombinaties hebben onvoldoende contrast. Zo heeft felgroen (`#9AFF00`) op een witte achtergrond (`#EDFFD0`) een contrastratio van 1,2:1, en er zijn ook andere kleurcombinaties met te weinig contrast.
+#### Oplossing:
+Zorg dat het contrast tussen informatieve elementen van een grafiek minimaal 3,0:1 is, zodat bezoekers ze van elkaar kunnen onderscheiden. Controleer of alle kleuren in de grafiek voldoende contrast hebben.
+### Links hebben rol `menuitem`, maar bovenliggend element mist rol `menubar` of ‘menu’
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Op deze pagina wordt een modaal dialoogvenster met navigatie-elementen geopend zodra de toetsenbordfocus op de pagina komt. Deze elementen hebben de rol “menuitem”, maar ze hebben geen juiste ouderrol, bijvoorbeeld “menu”.
+Dit zorgt ervoor dat hulpsoftware er juist minder goed mee overweg kan. Elementen met de rol <code>menuitem</code> moeten binnen een overkoepelende rol staan, zoals <code>menu</code>, <code>menubar</code> of <code>group</code>. En deze rol ontbreekt. Bovendien hoort bij deze ARIA-rollen een andere toetsenbordbediening. Die kun je toevoegen, maar dan moeten je ook de juiste toetsenbordfuncties instellen. Voor dit eenvoudige menu is dit allemaal niet nodig.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884">https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884</a>.</p>
+<h4>Oplossing:</h4>
+<p>Eén oplossing zou zijn om eenvoudig een geneste lijst (ul) met links te gebruiken. Een andere mogelijke oplossing is om de juiste ouderrol “menu” of “menubar” toe te voegen.
+Op <a href="https://www.w3.org/WAI/ARIA/apg/patterns/menu/">https://www.w3.org/WAI/ARIA/apg/patterns/menu/</a> staat wat er nodig is om een toepassing met <code>role=&amp;quot;menubar&amp;quot;</code> te bouwen.</p>
+</div>
+<div class="issue">
+<h3>#19 - Toetsenbordfocus komt niet in dialoogvenster terecht</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3 </span>
+</div>
+<p>Op deze pagina staat op de kaart een knop met een “i”-pictogram die een dialoogvenster opent. Wanneer het dialoogvenster wordt geopend, wordt de toetsenbordfocus echter niet automatisch in het dialoogvenster geplaatst. Bovendien kan de toetsenbordfocus uit het geopende dialoogvenster ontsnappen en naar de onderliggende pagina verplaatsen.
+Bij dit soort dialoogvensters moet je de toetsenbordfocus goed instellen. Als het venster actief is, moet de toetsenbordfocus binnen het venster blijven, en mag deze niet op de onderliggende pagina terechtkomen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de focusvolgorde logisch blijft, door deze naar de nieuwe inhoud te verplaatsen.
+Houd de focus ook in het venster totdat de bezoeker op de sluitknop of de ESC-toets klikt. Je kunt er ook voor kiezen om het venster automatisch te sluiten wanneer de focus verloren gaat.</p>
+</div>
+<div class="issue">
+<h3>#20 - Bezoekers die inzoomen tot 200% en tot 400% kunnen niet meer alle tekst lezen en functies gebruiken</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.4, 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.4, 9.1.4.10</span>
+</div>
+<figure class="screenshot">
+<img src="images/05.webp" alt="">
+</figure>
+Wanneer deze pagina wordt bekeken met een schermresolutie van 1280 bij 1024 pixels en ingezoomd tot 200%/400%, raken de filters gedeeltelijk uit beeld.
+Hetzelfde probleem doet zich voor op de pagina [https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884](https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884).
+#### Oplossing:
+Zorg dat alles nog werkt en leesbaar is als een bezoeker inzoomt tot 200%/400% op een scherm van 1280 bij 1024 pixels.
+### De teken- en meetknoppen zijn niet toegankelijk met het toetsenbord
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/07.webp" alt="">
+</figure>
+Op deze pagina staat een knop met een gereedschapsicoon die teken- en meetfuncties opent. Deze functies zijn niet toegankelijk met het toetsenbord.
+Hetzelfde probleem doet zich voor op de pagina [https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884](https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884).
+#### Oplossing:
+Zorg ervoor dat alle interactieve functies ook toegankelijk zijn met het toetsenbord.
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="energienetwerk">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#energienetwerk">Energienetwerk <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk">https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk</a></p>
+<div class="issue">
+<h3>#21 - Alleen kleur gebruikt in legenda bij kaart</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>Op deze pagina wordt op de kaart alleen kleur gebruikt om informatie over te brengen. Zie het groen op de kaart.
+Alleen als je de kleuren kunt zien en van elkaar kunt onderscheiden, zie je welk gebied bij welke categorie in de legenda hoort.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik naast kleur bijvoorbeeld ook verschillende soorten arcering of datalabels in tekst.</p>
+</div>
+<div class="issue">
+<h3>#22 - Kleurcontrast tussen lijnen of balken in legenda is niet voldoende</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/11.webp" alt="">
+</figure>
+Op deze pagina hebben op de kaart sommige kleurcombinaties onvoldoende contrast. Zo heeft lichtgroen (`#74C476`) op een witte achtergrond een contrastratio van 2,1:1, en er zijn ook andere kleurcombinaties met te weinig contrast.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3](https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3).
+#### Oplossing:
+Zorg dat het contrast tussen informatieve elementen van een grafiek minimaal 3,0:1 is, zodat bezoekers ze van elkaar kunnen onderscheiden. Controleer of alle kleuren in de grafiek voldoende contrast hebben.
+### Kaart heeft geen tekstalternatief
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Op deze pagina staat een kaart zonder een tekstalternatief. Deze kaart is niet bedoeld voor navigatie en valt daardoor onder de uitzondering van de wet.
+Overheidsorganisaties hoeven kaarten en kaarttoepassingen niet toegankelijk te maken als ze niet nodig zijn voor navigatie. Er is echter één uitzondering op deze regel: de informatie die op de kaart wordt getoond, moet ook in tekst op de pagina staan.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de informatie die met de kaart wordt overgedragen, ook in tekst op de pagina voorkomt.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="kaartenatlas-noord-holland">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#kaartenatlas-noord-holland">Kaartenatlas Noord-Holland <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884">https://apps.vertigisstudio.eu/web/?app=731375317f8b467da75e5666f49bd884</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="kennis-en-dataplein-klimaat-energie">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#kennis-en-dataplein-klimaat-energie">Kennis- en dataplein Klimaat &amp; Energie <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://energietransitie-noord-holland.hub.arcgis.com">https://energietransitie-noord-holland.hub.arcgis.com</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="kennis-en-dataplein-landelijk-gebied">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#kennis-en-dataplein-landelijk-gebied">Kennis- en Dataplein Landelijk gebied <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://pplg-noord-holland.hub.arcgis.com">https://pplg-noord-holland.hub.arcgis.com</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="kennis-en-dataplein-wonen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#kennis-en-dataplein-wonen">Kennis- en Dataplein Wonen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://wonen-noord-holland.hub.arcgis.com">https://wonen-noord-holland.hub.arcgis.com</a></p>
+<div class="issue">
+<h3><code>strong</code>-element in plaats van kop-element</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina is de volgende tekst onjuist opgemaakt met strong in plaats van met een juist kop-element: “Wonen”.
+Het strong-element is niet bedoeld om koppen mee te markeren. Dat moet altijd met een kop-element, zoals h2. Koppen gebruik je om een tekst te structureren. Alleen als je ze als kop markeert met een kop-element, begrijpt hulpsoftware die betekenis. Het strong-element gebruik je wanneer je nadruk wilt geven aan enkele woorden of een zinsdeel.
+Hetzelfde probleem doet zich voor op de pagina https://pplg-noord-holland.hub.arcgis.com bij “PPLG”, op de pagina https://energietransitie-noord-holland.hub.arcgis.com bij “Klimaat &amp; Energie” en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Verwijder het <code>strong</code>-element en gebruik de juiste kop-elementen om deze koppen te markeren, zoals <code>h2</code> of <code>h3</code>.</p>
+</div>
+<div class="issue">
+<h3>#23 - Logo heeft geen tekstalternatief (<code>alt</code>-attribuut ontbreekt)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1, 4.1.2, 2.4.4, 2.5.3</span>
+	<span class="type"><b>EN</b>: 9.1.1.1, 9.4.1.2, 9.2.4.4, 9.2.5.3</span>
+</div>
+<p>Het logo bovenaan de website, dat is geïmplementeerd met een img-element, mist een alt-attribuut.
+Hierdoor lezen schermlezers nu de bestandsnaam voor, en dat is niet de bedoeling. Informatieve afbeeldingen zoals een logo moeten altijd een alt-tekst hebben. In die alt-tekst moet de volledige tekst staan die in het logo te zien is. Zo weten bezoekers die het plaatje niet kunnen zien, ook wat er staat.
+Dit probleem heeft ook betrekking op succescriterium 4.1.2, omdat de link geen toegankelijke naam heeft; op succescriterium 2.4.4, omdat de link geen doel heeft; en op succescriterium 2.5.3, omdat de zichtbare tekst niet in een toegankelijke naam voorkomt en de link niet met spraak kan worden bediend.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een <code>alt</code>-tekst toe die de volledige tekst van het logo bevat.</p>
+</div>
+<div class="issue">
+<h3>#24 - Logo heeft geen alternatieve tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Op deze pagina staat in de footer een logo met de zichtbare tekst “Provincie Noord-Holland”, maar dit logo heeft geen tekstalternatief.
+Als het alt-attribuut van een afbeelding leeg is (<code>alt=&amp;quot;&amp;quot;</code>), negeren schermlezers de afbeelding. Door de alt-tekst niet in te vullen, geef je eigenlijk aan: deze afbeelding is puur decoratief en bevat geen informatie. Er wordt dan dus niets voorgelezen. Daarom moet je informatieve afbeeldingen, zoals een logo, altijd een alt-tekst geven.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Voeg een <code>alt</code>-tekst toe die de volledige tekst van het logo bevat.</p>
+</div>
+<div class="issue">
+<h3>#25 - Primaire taal is Engels, maar pagina is in het Nederlands</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 3.1.1</span>
+	<span class="type"><b>EN</b>: 9.3.1.1</span>
+</div>
+<p>De primaire taal van deze pagina is onjuist ingesteld op Engels (<code>lang=&amp;quot;en-US&amp;quot;</code>), terwijl de inhoud van de pagina zelf in het Nederlands is.
+Schermlezers gebruiken de taalcode om de juiste uitspraakregels toe te passen. Staat hier een verkeerde code, dan wordt de inhoud van de pagina dus met onjuiste uitspraakregels voorgelezen. De voorgelezen tekst is dan erg lastig te begrijpen.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Stel de primaire taal van de pagina in op Nederlands, door het <code>lang</code>-attribuut te veranderen in <code>lang=”nl”</code>. Hierdoor zullen schermlezers de juiste uitspraakregels toepassen.</p>
+</div>
+<div class="issue">
+<h3>#26 - Mobiel menu werkt niet goed met toetsenbordfocus</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>De menuknop staat bovenaan de pagina. Deze knop opent een mobiel menu. Op dit moment kunnen bezoekers met het toetsenbord uit het mobiele menu navigeren. De toetsenbordfocus verplaatst zich dan naar de onderliggende pagina, terwijl het menu geopend blijft.
+Bij dit soort menu’s moet de toetsenbordfocus goed worden ingesteld. Wanneer het menu actief is, moet de focus binnen het menu blijven en mag deze niet op de onderliggende pagina terechtkomen. Dit kan worden opgelost door de focus binnen het menu te houden, totdat de bezoeker op de sluitknop heeft geklikt of op de ESC-toets heeft gedrukt. Het is ook mogelijk om het menu automatisch te sluiten zodra de toetsenbordfocus eruit gaat.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de focus in het menu blijft totdat de bezoeker dit sluit door op de sluitknop te klikken of de ESC-toets in te drukken. Je kunt het menu ook automatisch sluiten als de focus het menu verlaat.</p>
+</div>
+<div class="issue">
+<h3>#27 - Elementen die toetsenbordfocus krijgen zijn bedekt door een mobiel menu</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.11</span>
+	<span class="type"><b>EN</b>: 9.2.4.11</span>
+</div>
+<p>De menuknop staat bovenaan de pagina. Wanneer deze knop een mobiel menu opent, overlapt het menu interactieve elementen op de onderliggende pagina. Deze onderliggende elementen kunnen nog steeds toetsenbordfocus krijgen, ook al worden ze door het menu verborgen.
+Elementen die toetsenbordfocus krijgen, moeten altijd zichtbaar zijn. Is dat niet zo, dan kunnen bezoekers die met het toetsenbord of de schermlezer navigeren in de war raken.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Je lost dit op een van de volgende manieren op:</p>
+<ul>
+<li><strong>Houd de focus binnen het menu</strong>: zorg dat de toetsenbordfocus binnen het menuvenster blijft totdat de bezoeker op de sluitknop heeft geklikt of op de ESC-toets heeft gedrukt.</li>
+<li><strong>Sluit het chatvenster automatisch</strong>: sluit het menuvenster automatisch op het moment dat de focus eruit gaat.
+Het is cruciaal dat onderliggende interactieve elementen <em>geen</em> toetsenbordfocus krijgen zolang het mobiele menu open is.</li>
+</ul>
+</div>
+<div class="issue">
+<h3>#28 - Onzichtbaar element krijgt toetsenbordfocus</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>Op deze pagina komt de toetsenbordfocus terecht op een onzichtbaar interactief element na de link “Data”.
+De toetsenbordfocus mag niet terechtkomen op onzichtbare interactieve elementen (links, knoppen, formuliervelden). Als dat wel gebeurt, kan een bezoeker ze onbedoeld activeren.
+Hetzelfde probleem doet zich voor op de pagina https://energietransitie-noord-holland.hub.arcgis.com/ na de link “Mobiliteit”.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat alleen elementen die zichtbaar zijn toetsenbordfocus kunnen krijgen en dat de focusvolgorde logisch is.</p>
+</div>
+<div class="issue">
+<h3>#29 - De accordion heeft geen koppen of de rol van kop is overschreven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/08.webp" alt="">
+</figure>
+Op deze pagina staat in de footer een knop “Beheer privacy” die een dialoogvenster opent met daarin een knop “Instellingen bekijken”. Deze knop opent een ander dialoogvenster met secties met verborgen inhoud. De elementen die de verborgen inhoud openen en sluiten, zijn niet opgemaakt als kop.
+Hetzelfde probleem doet zich voor op een klein scherm bij de knop “Kennis- en Dataplein Wonen”.
+De teksten waarmee je delen van een accordeon kunt inklappen en uitklappen, doen dienst als koppen voor die delen. Daarom moeten deze teksten ook de rol van kop hebben. Het gaat verkeerd als deze teksten niet in de code als kop zijn gemarkeerd met een `h`-element zoals `h2` of `h3`.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.
+#### Oplossing:
+Markeer deze teksten als kop of zorg dat de bestaande rol van kop niet wordt overschreven. Meer informatie over dit element staat op deze pagina: [https://www.w3.org/WAI/ARIA/apg/patterns/accordion/](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/).
+### Knop geeft geen informatie over status van het menu
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Op deze pagina verschijnt op een klein scherm de knop “Kennis- en Dataplein Wonen”, die een submenu lijkt te openen. De knop geeft geen informatie over de status van het submenu (geopend of gesloten) aan bezoekers die het niet kunnen zien, zoals mensen die schermlezers gebruiken.
+Hetzelfde probleem doet zich voor op de pagina https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld, op de pagina https://pplg-noord-holland.hub.arcgis.com/, op de pagina https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof en op andere pagina’s.</p>
+<h4>Oplossing:</h4>
+<p>Voeg bijvoorbeeld een tekstuele uitleg toe (ingeklapt/uitgeklapt) die je voor ziende bezoekers met CSS verbergt. Of gebruik het <code>aria-expanded</code>-attribuut. Dit attribuut moet de waarde &quot;true&quot; krijgen als het menu getoond wordt, en “false&quot; als het menu verborgen is.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="kerncijfers">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#kerncijfers">Kerncijfers <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/kerncijfers">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/kerncijfers</a></p>
+<div class="issue">
+<h3>#30 - Alleen kleur gebruikt in legenda bij grafiek</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>Op deze pagina wordt in grafieken en diagrammen alleen kleur gebruikt om informatie over te brengen. Zie het geel in de legenda.
+Alleen als je de kleuren kunt zien en van elkaar kunt onderscheiden, zie je welke balk of lijn bij welke categorie in de legenda hoort.
+Hetzelfde probleem doet zich voor op de pagina https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik naast kleur bijvoorbeeld ook verschillende soorten arcering of datalabels in tekst.</p>
+</div>
+<div class="issue">
+<h3>#31 - Kleurcontrast tussen lijnen of balken in grafiek is niet voldoende</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Op deze pagina staan grafieken. Sommige kleurcombinaties hebben onvoldoende contrast. Zo heeft geel (<code>#FAB000</code>) op wit een contrastratio van 1,9:1.
+Hetzelfde probleem doet zich voor op de pagina https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat het contrast tussen informatieve elementen van een grafiek minimaal 3,0:1 is, zodat bezoekers ze van elkaar kunnen onderscheiden. Controleer of alle kleuren in de grafiek voldoende contrast hebben.</p>
+</div>
+<div class="issue">
+<h3>#32 - Alternatieve tekst zorgt voor herhaling van tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/22.webp" alt="">
+</figure>
+Op deze pagina staan decoratieve pijlpictogrammen. De tekstalternatieven van de afbeeldingen, “Ga naar dashboard CO2-uitstoot”, dupliceren de linktekst.
+Deze afbeeldingen dragen geen andere informatie over dan al in de linkteksten staat. Daarom kunnen ze als decoratief worden beschouwd.
+#### Oplossing:
+Laat het `alt`-attribuut leeg om herhaling van de tekst te voorkomen (`alt=””`).
+### Kleurcontrast van tekst is te laag (tekst kleiner dan 24px en niet vetgedrukt)
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Op deze pagina staat lichtblauwe tekst (<code>#2991E0</code>) “provinciale Klimaat- en Energieverkenning” op een grijze achtergrond (<code>#F0F0F0</code>). De contrastratio is te laag: 3:1.</p>
+<h4>Oplossing:</h4>
+<p>Deze tekst is kleiner dan 24px en niet vetgedrukt, daarom moet het contrast minimaal 4,5:1 zijn. Op deze pagina staat een instructie die uitlegt hoe je kleurcontrast kunt testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#33 - De grafische elementen hebben geen tekstalternatieven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1</span>
+	<span class="type"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Deze pagina bevat interactieve afbeeldingen. Niet alle afbeeldingen hebben tekstalternatieven.
+Hetzelfde probleem doet zich voor op pagina <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de informatie die in de grafieken wordt weergegeven ook in tekst op de pagina wordt weergegeven.</p>
+</div>
+<div class="issue">
+<h3>#34 - Niet alle functies zijn toegankelijk met het toetsenbord</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/23.webp" alt="">
+</figure>
+Op deze pagina staan interactieve grafieken. Wanneer je met de muis over de kolommen van deze grafieken beweegt, verschijnt er informatie. Deze functie met informatie is niet toegankelijk met het toetsenbord.
+Hetzelfde probleem doet zich voor op de pagina [https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit](https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit).
+#### Oplossing:
+Zorg ervoor dat alle interactieve functies ook toegankelijk zijn met het toetsenbord.
+### Bij 200%/400% zoom is een horizontale scrollbar aanwezig
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.4, 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.4, 9.1.4.10</span>
+</div>
+<p>Wanneer deze pagina wordt bekeken met een schermresolutie van 1280 bij 1024 pixels en ingezoomd tot 200%/400%, verschijnt er een schuifbalk en raakt tekst, bijvoorbeeld “De grafieken op deze pagina … regio selecteren”, gedeeltelijk uit beeld.
+Horizontaal scrollen is niet toegestaan, ook niet als de viewport is ingesteld of ingezoomd op 320 CSS-pixels breed (voor verticale inhoud) of 256 CSS-pixels hoog (voor horizontale inhoud). Zorg ervoor dat de tekst binnen het scherm past. Alleen als scrollen in beide richtingen echt nodig is voor de betekenis of het gebruik van de inhoud mag het wel. Uitzonderingen zijn tabellen, betekenisvolle afbeeldingen en kaarten. Deze moeten leesbaar blijven, dus binnen deze elementen mag je wel scrollen.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit</a>.</p>
+<h4>Oplossing:</h4>
+<p>Controleer of het horizontaal scrollen nodig is. Als dit niet zo is, zorg dan dat horizontaal scrollen niet mogelijk is bij inzoomen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="mobiliteit">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#mobiliteit">Mobiliteit <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit">https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie/transitiepaden/mobiliteit</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="natuur-en-stikstof">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#natuur-en-stikstof">Natuur en stikstof <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof">https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof</a>
+Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="pdf-de-noord-hollandse-klimaataanpak">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#pdf-de-noord-hollandse-klimaataanpak">PDF De Noord-Hollandse Klimaataanpak <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina  https://energietransitie-nh.incijfers.nl/mosaic/klimaat-en-energie
+Link naar PDF <a href="https://www.noord-holland.nl/bestanden/pdf/Noord-Hollandse%20Klimaataanpak_versie%20september%202024.pdf">https://www.noord-holland.nl/bestanden/pdf/Noord-Hollandse Klimaataanpak_versie september 2024.pdf</a></p>
+<div class="issue">
+<h3>#35 - Structuur van pdf-document is niet in codes vastgelegd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Dit pdf-document mist codering, waardoor de inhoud niet toegankelijk is voor schermlezers.
+Bovendien kunnen wij de pdf hierdoor niet volledig onderzoeken. Het gaat om alle succescriteria die met de pdf-codelaag te maken hebben, zoals semantische koppen en alternatieve teksten bij afbeeldingen. Als je dit oplost, is het dus mogelijk dat er nieuwe toegankelijkheidsproblemen ontstaan die nu nog niet aan het licht zijn gekomen.</p>
+<h4>Oplossing:</h4>
+<p>Voeg codes toe aan het document die de structuur van het document weergeven.
+Opslaan als getagde PDF in Word (Windows)
+Ga naar Bestand. Kies Opslaan als Adobe PDF (als je Acrobat hebt) of ga naar Meer → Exporteren → PDF/XPS-document maken. In het venster dat opent, klik je op Opties. Zet een vinkje bij Documentstructuurtags voor toegankelijkheid en bij Bladwijzers maken met koppen. Op deze manier kunnen gebruikers met het toetsenbord snel van sectie naar sectie springen. Dit werkt alleen als je echte kopstijlen hebt gebruikt.
+Opslaan als getagde PDF in Word (Mac)
+Ga naar Bestand → Opslaan als, kies PDF in het keuzemenu en selecteer Best voor elektronische distributie en toegankelijkheid (maakt gebruik van Microsoft online service). Op Mac worden bladwijzers automatisch gemaakt vanuit de koppen, daar hoef je niets voor in te stellen.</p>
+</div>
+<div class="issue">
+<h3>#36 - PDF-document heeft geen titel</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 2.4.2</span>
+	<span class="type"><b>EN</b>: 9.2.4.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/24.webp" alt="">
+</figure>
+Dit pdf-document heeft geen titel ingesteld in de bestandseigenschappen.
+Zelfs als er een titel op de eerste pagina staat, moet je in de PDF-instellingen ook een documenttitel instellen. Als je een pdf opent in een pdf-lezer (zoals Adobe Acrobat of een browser), zie je de bestandsnaam meestal bovenaan in de titelbalk, bijvoorbeeld *document123.pdf*. Maar als je een documenttitel in de pdf-metadata instelt, dan wordt die titel in plaats van de bestandsnaam getoond. Dit maakt het document toegankelijker voor bezoekers met verschillende beperkingen. Zij kunnen dan snel en gemakkelijk zien of het document relevant is.
+#### Los het op in Adobe Acrobat:
+<ul>
+<li>Open het pdf-document in Adobe Acrobat.</li>
+<li>Ga naar <strong>Bestand</strong> &gt; <strong>Eigenschappen</strong>.</li>
+<li>Ga naar het tabblad <strong>Beschrijving</strong>.</li>
+<li>Vul in het veld <strong>Titel</strong> een beschrijvende titel in, bijvoorbeeld:
+<em>&quot;Rapport: Bevolkingscijfers 2023&quot;</em>.</li>
+<li>Klik op <strong>OK</strong> en sla het bestand op.</li>
+</ul>
+</div>
+<div class="issue">
+<h3>#37 - Kleurcontrast van kleine tekst is te laag</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>In dit pdf-document staat lichtblauwe tekst (<code>#0093D6</code>) op een witte achtergrond, bijvoorbeeld “Voorwoord”. De contrastratio is te laag: 3,4:1.
+Hetzelfde probleem doet zich voor bij gele tekst (<code>#FFCC00</code>) op een witte achtergrond, bijvoorbeeld wanneer je over “Voorwoord” beweegt. De contrastratio is te laag: 1,5:1.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat het contrast minimaal 4,5:1 is.</p>
+</div>
+<div class="issue">
+<h3>#38 - Alleen kleur gebruikt in legenda bij grafiek</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>In dit pdf-document, bijvoorbeeld op pagina 15, 18 en andere, staan grafieken. Kleur wordt gebruikt om informatie over te brengen. Zie de legenda en de balken in de grafiek.
+Alleen mensen die de kleuren kunnen zien en van elkaar kunnen onderscheiden zien welke balk / lijn bij welke categorie in de legenda hoort. Dit kan opgelost worden door naast kleur bijvoorbeeld ook verschillende soorten arcering te gebruiken.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik naast kleur bijvoorbeeld ook verschillende soorten arcering.</p>
+</div>
+<div class="issue">
+<h3>#39 - Kleurcontrast tussen lijnen of balken in grafiek is niet voldoende</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/25.webp" alt="">
+</figure>
+In dit pdf-document, bijvoorbeeld op pagina 15, 18 en andere, staan grafieken. Sommige kleurcombinaties hebben onvoldoende contrast. Zo heeft lichtgeel (`#FAAC3A`) op een witte achtergrond een contrastratio van 1,9:1.
+#### Oplossing:
+Zorg dat het contrast tussen informatieve elementen van een grafiek minimaal 3,0:1 is, zodat bezoekers ze van elkaar kunnen onderscheiden. Controleer of alle kleuren in de grafiek voldoende contrast hebben.
+### Kleurcontrast van tekst is te laag
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>In dit pdf-document staat lichtblauwe tekst (<code>#0093D6</code>) op een lichtgele achtergrond (<code>#FFE07D</code>), bijvoorbeeld op pagina 23 bij de tekst “PRINCIPES”. Het contrast is 1,9:1.
+Hetzelfde probleem doet zich voor bij lichtblauwe tekst (<code>#0093D6</code>) op een lichtroze achtergrond (<code>#FFF5D8</code>). De contrastratio is 3,1:1.
+Voor kleine tekst moet het contrast minimaal 4,5:1 zijn, en voor grote tekst minimaal 3,0:1.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het contrast minimaal 4,5:1 is voor kleine tekst en minimaal 3,0:1 voor grote tekst.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="totaalbeeld">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#totaalbeeld">Totaalbeeld <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld">https://wonen-noord-holland.hub.arcgis.com/pages/totaalbeeld</a></p>
+<div class="issue">
+<h3>#40 - Informatie over de huidige link wordt niet correct bijgewerkt</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/09.webp" alt="">
+</figure>
+Op deze pagina heeft in het hoofdmenu de huidige link “Totaalbeeld” een aria-current-attribuut met de onjuiste waarde “false”. Deze waarde wordt niet correct bijgewerkt. Hetzelfde probleem doet zich voor op de pagina [https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk](https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk) bij de link “Energienetwerk”.
+#### Oplossing:
+Dit attribuut moet de waarde “page” of “true” hebben als de link de huidige pagina is, en “false” voor links die niet actueel zijn.
+### De accordion heeft geen koppen of de rol van kop is overschreven
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina, onder “Onderzoeken &amp; rapporten”, in de secties met verborgen inhoud, zijn de elementen waarmee je de inhoud kunt openen en sluiten niet opgemaakt als kop, bijvoorbeeld “Rapportage Bouwambassadeur. Storm op komst: samenwerking voorop!”.
+De teksten waarmee je delen van een accordeon kunt in- en uitklappen, fungeren als koppen voor die delen. Daarom moeten deze teksten ook de rol van kop hebben. Het gaat mis als deze teksten in de code niet als kop zijn gemarkeerd met een h-element, zoals h2 of h3.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk">https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk</a> onder “Onderzoeken &amp; rapporten”.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze teksten als kop of zorg dat de bestaande rol van kop niet wordt overschreven. Meer informatie over dit element staat op deze pagina: <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">https://www.w3.org/WAI/ARIA/apg/patterns/accordion/</a>.</p>
+</div>
+<div class="issue">
+<h3>#41 - Knoppen met dezelfde tekst hebben een andere functie</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>Op deze pagina staan meerdere knoppen met dezelfde toegankelijke naam: “Share this card”. Deze knoppen voeren echter verschillende functies uit.
+Je kunt met deze knoppen een andere actie uitvoeren. Dit kan verwarrend zijn voor bezoekers met een schermlezer, omdat het niet duidelijk is welke actie elke knop uitvoert.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof">https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof</a> en op de pagina <a href="https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk">https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de tekst past bij de actie van de knop, zodat knoppen met verschillende functies ook verschillende knopteksten hebben.</p>
+</div>
+<div class="issue">
+<h3>#42 - Toetsenbordfocus komt niet op een logische plek nadat dialoogvenster is gesloten</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3 </span>
+</div>
+<p>Op deze pagina openen de knoppen met de tekst “Share this card” een dialoogvenster. Na het sluiten van het dialoogvenster keert de toetsenbordfocus niet terug naar het element dat het venster heeft geopend of naar het volgende logische element in de focusvolgorde van de pagina.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof">https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof</a> en op de pagina <a href="https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk">https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de focus na het sluiten van het venster terechtkomt op het element waarmee het dialoogvenster werd geopend.</p>
+</div>
+<div class="issue">
+<h3>#43 - Informatie is niet meer leesbaar als tekstafstand wordt aangepast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.12</span>
+	<span class="type"><b>EN</b>: 9.1.4.12</span>
+</div>
+<figure class="screenshot">
+<img src="images/10.webp" alt="">
+</figure>
+Op deze pagina wordt een deel van de tekst, bijvoorbeeld “Jaarlijkse rapportage voortgang doelstellingen”, gedeeltelijk onzichtbaar en onleesbaar wanneer bezoekers tekstintervallen toepassen zoals beschreven in dit succescriterium.
+Sommige bezoekers passen de weergave van de tekst aan, zodat zij de tekst beter kunnen lezen. Denk aan het vergroten van de afstand tussen regels, letters of woorden. Het gaat bijvoorbeeld om mensen met dyslexie. Als een bezoeker dit doet op de manier die in succescriterium 1.4.12 is beschreven, moet alles goed blijven werken. Bovendien moet de tekst leesbaar blijven.
+Hetzelfde probleem doet zich voor op de pagina [https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof](https://pplg-noord-holland.hub.arcgis.com/pages/natuur-en-stikstof) en op de pagina [https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk](https://energietransitie-noord-holland.hub.arcgis.com/pages/energienetwerk).
+#### Oplossing:
+Je lost dit op door de hoogte en breedte van de containers van de tekst responsief te maken.
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="werkingsgebied">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#werkingsgebied">Werkingsgebied <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2">https://provincie-noord-holland.dataplatform.nl/#/data/d8b3d41e-104c-4448-8975-e50323d7deb2</a></p>
+<div class="issue">
+<h3>#44 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina zijn de volgende teksten niet opgemaakt als koppen: “Tags”, “Statistieken”.
+Bezoekers die hulpsoftware gebruiken hebben niets aan een (tussen)kop die er wel uitziet als kop, maar niet als kop is gemarkeerd. Via de koppen op een pagina kunnen gebruikers van hulpsoftware de inhoud scannen of snel naar een bepaalde sectie springen. Maar dat kan alleen als de kop ook echt in de code staat. Als koppen alleen visueel als kop zijn vormgegeven (bijvoorbeeld vetgedrukt), ontstaat bovendien nog een ander probleem: de structuur van de informatie in de code wijkt dan af van de visuele structuur.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Dit voorkom je door koppen altijd te markeren met het juiste <code>HTML</code>-element, op het juiste kopniveau: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code> of <code>h6</code>. Meestal kun je het kopniveau kiezen via de content-editor in je CMS. De HTML-code voor de kop wordt dan automatisch toegepast.
+Op deze pagina staat een instructie hoe je zelf koppen op een webpagina kunt testen: <a href="https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/">https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/</a>.</p>
+</div>
+<div class="issue">
+<h3>#45 - De accordion heeft geen koppen of de rol van kop is overschreven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.1</span>
+	<span class="type"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina zijn er secties met verborgen inhoud, bijvoorbeeld “Beschrijving”. De elementen waarmee je deze verborgen inhoud kunt openen en sluiten, zijn niet opgemaakt als kop.
+Hetzelfde probleem doet zich voor op het tabblad “Kaart”, bijvoorbeeld bij “WMS Services”.
+De teksten waarmee je delen van een accordeon kunt inklappen en uitklappen, doen dienst als koppen voor die delen. Daarom moeten deze teksten ook de rol van kop hebben. Het gaat verkeerd als deze teksten niet in de code als kop zijn gemarkeerd met een <code>h</code>-element zoals <code>h2</code> of <code>h3</code>.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze teksten als kop of zorg dat de bestaande rol van kop niet wordt overschreven. Meer informatie over dit element staat op deze pagina: <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">https://www.w3.org/WAI/ARIA/apg/patterns/accordion/</a>.</p>
+</div>
+<div class="issue">
+<h3>#46 - Contrast tussen focusindicator en achtergrond is te laag</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Op deze pagina zijn er secties met verborgen inhoud, bijvoorbeeld “Beschrijving”. Wanneer deze secties de toetsenbordfocus krijgen, is dat zichtbaar door een lichtgrijze toetsenbordfocusrand (<code>#F2F2F2</code>). De contrastratio tussen de toetsenbordfocusrand en de witte achtergrond (<code>#FCFCFC</code>) is 1,1:1.
+Momenteel is het voor mensen met een visuele beperking of kleurenblindheid lastig of zelfs onmogelijk om de focus te zien.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik voor de focusindicator een kleur met een contrast van minimaal 3,0:1 met de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#47 - Contrast tussen focusindicator en achtergrond is te laag</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Op deze pagina zijn er tabbladen, bijvoorbeeld “Informatie”. Wanneer deze tabbladen de toetsenbordfocus krijgen, is dat zichtbaar door een lichtblauwe toetsenbordfocusrand (<code>#E6F4FA</code>). De contrastratio tussen de toetsenbordfocusrand en de witte achtergrond (<code>#FCFCFC</code>) is 1,1:1.
+Momenteel is het voor mensen met een visuele beperking of kleurenblindheid lastig of zelfs onmogelijk om de focus te zien.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik voor de focusindicator een kleur met een contrast van minimaal 3,0:1 met de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#48 - Alleen kleurverschil bij toetsenbordfocus, met te laag contrast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.1</span>
+	<span class="type"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>Op deze pagina zijn er tags, bijvoorbeeld “ruimtegebruik”. Op deze tags wordt een aangepaste toetsenbordfocusindicator gebruikt die zichtbaar is als een verandering van lichtgrijs naar donkergrijs.
+Hetzelfde probleem doet zich voor op het tabblad “Kaart” in de sectie met verborgen inhoud, bijvoorbeeld “WMS Services”.
+Hetzelfde probleem doet zich ook voor op het tabblad “Kaart” bij de knop “Share”.
+Het gebruik van alleen kleur om focus aan te geven is hier echter niet voldoende. Voor bezoekers met een visuele beperking of kleurenblindheid is zo’n subtiele kleurverandering vaak niet duidelijk genoeg. En ook mensen die met het toetsenbord navigeren moeten goed kunnen zien op welke plek van de pagina ze zijn. Daarvoor moet er een duidelijk zichtbare focusindicator zijn.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Je kunt hiervoor het beste een extra visuele aanduiding toevoegen. Denk aan een dikkere rand, een onderstreping of een verandering van achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#49 - Contrast tussen focusindicator en achtergrond is te laag</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.11</span>
+	<span class="type"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/17.webp" alt="">
+</figure>
+Op deze pagina staan tags, bijvoorbeeld “ruimtegebruik”. Wanneer deze tags de toetsenbordfocus krijgen, is dat zichtbaar door een donkergrijze toetsenbordfocusrand (`#BCBCBC`). De contrastratio tussen de toetsenbordfocusrand en de witte achtergrond (`#FCFCFC`) is 1,9:1.
+Hetzelfde probleem doet zich voor op het tabblad “Kaart” in de sectie met verborgen inhoud, bijvoorbeeld “WMS Services”. De focus is daar lichtgrijs (`#F5F5F5`) op een witte achtergrond, met een contrast van 1,1:1.
+Hetzelfde probleem doet zich ook voor op het tabblad “Kaart” bij de knop “Share”. De focus is daar lichtblauw (`#E8F6FC`) op een witte achtergrond, met een contrast van 1,1:1.
+Momenteel is het voor mensen met een visuele beperking of kleurenblindheid lastig of zelfs onmogelijk om de focus te zien.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3](https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3).
+#### Oplossing:
+Gebruik voor de focusindicator een kleur met een contrast van minimaal 3,0:1 met de achtergrond.
+### Informatieve afbeelding is verborgen voor schermlezers
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.1.1, 4.1.2, 2.4.4</span>
+	<span class="type"><b>EN</b>: 9.1.1.1, 9.4.1.2, 9.2.4.4</span>
+</div>
+<figure class="screenshot">
+<img src="images/18.webp" alt="">
+</figure>
+Op deze pagina staan in het tabblad “Kaart”, in de sectie met verborgen inhoud “WMS Services”, links met bestandspictogrammen. Dit pictogram is verborgen voor de schermlezer.
+Schermlezers negeren inhoud met het attribuut aria-hidden=&quot;true&quot;. Deze inhoud is dus verborgen voor blinde bezoekers. Verwijder dit attribuut zodat een blinde bezoeker dezelfde informatie krijgt als een ziende bezoeker.
+Dit probleem heeft ook betrekking op succescriterium 4.1.2, omdat de link geen toegankelijke naam heeft, en op succescriterium 2.4.4, omdat de link geen doel heeft.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3](https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3).
+#### Oplossing:
+Verwijder `aria-hidden=&quot;true&quot;`.
+### Link is niet met het toetsenbord te bedienen
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.1.1</span>
+	<span class="type"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>Op deze pagina staan in het tabblad “Kaart”, in de sectie met verborgen inhoud “WMS Services”, links met bestandspictogrammen. Deze links zijn niet toegankelijk met het toetsenbord.
+Wanneer een bezoeker met het toetsenbord navigeert, wordt deze link overgeslagen. Alle interactieve elementen, dus ook links, moeten met alleen het toetsenbord te bedienen zijn.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat alle links met de Enter-, Return- of spatietoetsen kunnen worden bediend.</p>
+</div>
+<div class="issue">
+<h3>#50 - Naam van de knop beschrijft niet wat de knop doet</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>Op deze pagina staat in het tabblad “Kaart” een knop om de kaart in de volledigeschermmodus weer te geven. De toegankelijke naam “⤢” beschrijft de functie niet nauwkeurig.
+Hetzelfde probleem doet zich voor bij de knop met het “i”-pictogram.
+Een blinde bezoeker weet daardoor niet wat deze knop precies doet.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Voeg tekst toe die deze knop goed beschrijft.</p>
+</div>
+<div class="issue">
+<h3>#51 - Invoervelden voor persoonlijke gegevens hebben geen <code>autocomplete</code>-attribuut</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Теchniek</span>
+	<span class="type"><b>WCAG</b>: 1.3.5</span>
+	<span class="type"><b>EN</b>: 9.1.3.5</span>
+</div>
+<p>Op deze pagina staat in het tabblad “Contact” een formulier. Dit formulier bevat invoervelden voor persoonlijke gegevens (zoals e-mailadres en telefoonnummer) maar mist het autocomplete-attribuut.
+Invoervelden voor persoonlijke informatie zoals achternaam, e-mailadres of telefoonnummer moeten het <code>autocomplete</code>-attribuut hebben. Hierdoor kunnen browsers en hulpsoftware helpen bij het invoeren. Bijvoorbeeld door de velden al automatisch in te vullen.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik het <code>autocomplete</code>-attribuut voor alle velden waar persoonlijke informatie in moet worden gevuld. Op deze pagina vind je meer informatie over autocomplete en welke waardes je verplicht moet gebruiken: <a href="https://www.w3.org/Translations/WCAG22-nl/#input-purposes">https://www.w3.org/Translations/WCAG22-nl/#input-purposes</a>.</p>
+</div>
+<div class="issue">
+<h3>#52 - Foutmeldingen hebben te weinig contrast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Теchniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/19.webp" alt="">
+</figure>
+Op deze pagina staat in het tabblad “Contact” een formulier. De foutmelding in het formulier bestaat uit rode tekst (`#FF5722`) op een witte achtergrond (`#FCFCFC`), bijvoorbeeld “Het email adres is niet correct!”. De resulterende contrastratio is 3,1:1.
+Foutmeldingen moeten net als andere teksten voldoen aan de minimale contrasteisen.
+Hetzelfde probleem doet zich voor op de pagina https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3.
+#### Oplossing:
+Zorg dat het contrast tussen de kleur van de foutmelding en de achtergrond minimaal 4,5:1 is.
+### Instructie bij invoerveld is niet altijd zichtbaar
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Теchniek</span>
+	<span class="type"><b>WCAG</b>: 3.3.2</span>
+	<span class="type"><b>EN</b>: 9.3.3.2</span>
+</div>
+<p>Op deze pagina staat in het tabblad “Contact” een formulier. Het invoerveld “Telefoon” heeft een bijbehorende instructie. Deze instructie is echter niet permanent zichtbaar op de pagina, maar verschijnt alleen in een foutmelding: “Het telefoonnummer is niet correct, gebruik svp 10 cijfers”.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Zorg dat instructies vooraf al zichtbaar en toegankelijk zijn voor alle bezoekers, niet alleen in foutmeldingen. Verplaats de instructie zodat deze permanent zichtbaar is in de buurt van het invoerveld.</p>
+</div>
+<div class="issue">
+<h3>#53 - Foutmelding is een instructie in plaats van een uitleg over de fout</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Теchniek</span>
+	<span class="type"><b>WCAG</b>: 3.3.1</span>
+	<span class="type"><b>EN</b>: 9.3.3.1</span>
+</div>
+<p>Op deze pagina staat in het tabblad “Contact” een formulier. De foutmelding in het formulier toont de tekst “Dit veld moet ingevuld worden”.
+Dit is een instructie, geen foutmelding.  Een goede foutmelding maakt duidelijk dat er een fout is gemaakt, en geeft aan waar de fout zit. Vaak staat er een ontkenning in. Een voorbeeld van een goede foutmelding is: &quot;Het veld is niet (goed) ingevuld&quot;.
+Hetzelfde probleem doet zich voor op de pagina <a href="https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3">https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3</a>.</p>
+<h4>Oplossing:</h4>
+<p>Pas de foutmelding aan, zodat de bezoeker weet wat er fout is.</p>
+</div>
+<div class="issue">
+<h3>#54 - Bij 400% zoom is een horizontale scrollbar aanwezig</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.10</span>
+	<span class="type"><b>EN</b>: 9.1.4.10</span>
+</div>
+<figure class="screenshot">
+<img src="images/20.webp" alt="">
+</figure>
+Wanneer deze pagina wordt bekeken met een schermresolutie van 1280 bij 1024 pixels en ingezoomd tot 400%, verschijnt er een schuifbalk en raakt tekst, bijvoorbeeld [https://www.noord-holland.nl/Loket/Contact/Contact](https://www.noord-holland.nl/Loket/Contact/Contact), gedeeltelijk uit beeld.
+Horizontaal scrollen is niet toegestaan, ook niet als de viewport is ingesteld of ingezoomd op 320 CSS-pixels breed (voor verticale inhoud) of 256 CSS-pixels hoog (voor horizontale inhoud). Zorg ervoor dat de tekst binnen het scherm past. Alleen als scrollen in beide richtingen echt nodig is voor de betekenis of het gebruik van de inhoud mag het wel. Uitzonderingen zijn tabellen, betekenisvolle afbeeldingen en kaarten. Deze moeten leesbaar blijven, dus binnen deze elementen mag je wel scrollen.
+Hetzelfde probleem doet zich voor op de pagina [https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3](https://provincie-noord-holland.dataplatform.nl/#/data/ef7bc793-b572-43e4-a8ba-4826d543fcc3).
+#### Oplossing:
+Controleer of het horizontaal scrollen nodig is. Als dit niet zo is, zorg dan dat horizontaal scrollen niet mogelijk is bij inzoomen.
+
+          </div>
+</article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>

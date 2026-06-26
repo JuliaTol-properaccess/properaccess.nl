@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202512_Android_Rijks">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van de Rijksmuseum app, Android versie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#on-all-screens">On all screens</a></li><li><a href="#start-scherm">Start Scherm</a></li><li><a href="#tours">Tours</a></li><li><a href="#thematisch-tour">Thematisch tour</a></li><li><a href="#zoek-op-zaal-of-audiostopnummer">Zoek op zaal- of audiostopnummer</a></li><li><a href="#zoek-op-nummer">Zoek op nummer</a></li><li><a href="#rembrandt-van-rijn-nachtwacht-1642">Rembrandt van Rijn, Nachtwacht, 1642</a></li><li><a href="#ga-naar">Ga naar</a></li><li><a href="#zoekresultaten">Zoekresultaten</a></li><li><a href="#voor-jou">Voor jou</a></li><li><a href="#maak-je-eigen-route">Maak je eigen route</a></li><li><a href="#my-route-1">My route 1</a></li><li><a href="#om-te-beginnen-moeten-we-weten-waar-je-bent">Om te beginnen moeten we weten waar je bent</a></li><li><a href="#ik-ben-bij-de-multimediatours-balie">Ik ben bij de Multimediatours Balie</a></li><li><a href="#help">Help</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van de Rijksmuseum app, Android versie</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de Rijksmuseum app, de Android versie onderzocht tussen 13 en 30 december 2025. Op dit moment is een deel van de succescriteria als voldoende beoordeeld. In dit rapport lees je wat er bij de overige nog fout gaat en hoe je dat kunt verbeteren.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.png" alt="Logo van Stichting Rijksmuseum">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="50"
+           data-perceivable="20"
+           data-operable="17"
+           data-understandable="10"
+           data-robust="3">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">50</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="50"
+             data-perceivable="20"
+             data-operable="17"
+             data-understandable="10"
+             data-robust="3">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 17</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 10</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>Stichting Rijksmuseum</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>30 december 2025</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle schermen van de app</li>
+              
+              <li>Drie talen Nederlands, Engels en Duits</li>
+              
+              <li>Niet de webvieuws. Deze pagina&#39;s zijn getest in de audit van de hoofd webiste.</li>
+              
+            </ul>
+            
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Galaxy S25 (Android version 16)</li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>TalkBack schermlezer</li>
+              
+              <li>extern toetsenbord</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-on-all-screens">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-on-all-screens">01 On all screens <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#1 - Schermen zijn beperkt tot één weergavestand (portret)</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.4</span>  
+	<span class="type"><b>EN</b>: 11.3.4</span>  
+</div>
+<p>De lay-out van alle schermen, met uitzondering van het startscherm, is beperkt tot één weergavestand (portret). Websites en applicaties moeten zowel in verticale (portret) als horizontale (landschap) stand bruikbaar zijn. Bezoekers moeten zelf kunnen bepalen welke weergavestand voor hen het meest geschikt is. Afwijking hiervan is alleen toegestaan wanneer één specifieke weergavestand aantoonbaar noodzakelijk is.</p>
+<p>Dit is met name relevant voor bezoekers die hun apparaat in een vaste positie gebruiken, bijvoorbeeld wanneer een tablet aan een rolstoel is bevestigd en de oriëntatie niet kan worden aangepast. In die situatie kan het beperken tot één weergavestand leiden tot verlies van functionaliteit of informatie.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de inhoud van de applicatie meedraait en zich aanpast aan de gekozen weergavestand.</p>
+</div>
+<div class="issue">
+<h3>#2 - Alternatieve tekst van informatieve afbeelding beschrijft informatie onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1, 1.4.5</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1, 11.1.4.5</span>  
+</div>
+<p>Op meerdere schermen staat boven- of onderaan of een informatieve afbeelding met de zichtbare tekst “Connected by kpn”. De alternatieve tekst van deze afbeelding is &quot;Logo afbeelding&quot;. Deze alternatieve tekst beschrijft de afbeelding onvoldoende, omdat de zichtbare tekst niet is opgenomen.</p>
+<p>Wanneer een afbeelding informatie overbrengt, moet de alternatieve tekst die informatie volledig en betekenisvol beschrijven. In dit geval wordt de visueel aangeboden informatie niet overgebracht aan gebruikers van schermlezers.</p>
+<p>Daarnaast leidt het opnemen van tekst in afbeeldingen tot een toegankelijkheidsprobleem onder succescriterium 1.4.5. Tekst die in een afbeelding is verwerkt, kan niet door bezoekers worden aangepast, bijvoorbeeld door vergroting of door wijziging van kleur of lettertype.</p>
+<p>Voorbeelden zijn aangetroffen op onder andere:</p>
+<ul>
+<li>Startscherm,</li>
+<li>Thuis in de 17de eeuw (Tours -&gt; Thuis in de 17de eeuw -&gt; Start tour)</li>
+<li>Rembrandt van Rijn, Nachtwacht, 1962 (Start -&gt; Nummer -&gt; 500)</li>
+<li>My route 1 (Voor jou -&gt; Maak je eigen route-&gt;select some objects)</li>
+</ul>
+<h4>Oplossing:</h4>
+<p>Voorzie de afbeelding van een alternatieve tekst waarin alle zichtbare tekst, waaronder “Connected by kpn”, is opgenomen. De voorkeur heeft om deze informatie als gewone tekst op het scherm te plaatsen in plaats van als afbeelding.</p>
+</div>
+<div class="issue">
+<h3>#3 - Kleurcontrast  van tekst kleiner dan 19px is onvoldoende</h3>
+<div class="meta">  
+   <span class="impact"><b>Impact</b>: Medium</span>  
+   <span class="type"><b>Type</b>: Techniek / Techniek</span>  
+   <span class="type"><b>WCAG</b>: 1.4.3</span>  
+   <span class="type"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op meerdere schermen is een rode knop (<code>#D5523F</code>) met witte tekst aanwezig, bijvoorbeeld de knop “Zoek” op het scherm “Zoek op nummer”. De contrastratio tussen tekst en achtergrond is 4,1:1.</p>
+<p>Omdat de tekst kleiner is dan 19px, voldoet de contrastratio niet aan de minimale vereiste.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het contrast tussen tekst en achtergrond minimaal 4,5:1 bedraagt voor tekst kleiner dan 19px.</p>
+<p>Op deze pagina staat een instructie om het kleurcontrast te testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+</div>
+<div class="issue">
+<h3>#4 - Informatieve afbeelding heeft geen tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/02.jpg" alt="">
+</figure>
+<p>Op schermen waarop een individueel kunstobject wordt weergegeven, staat onder de naam een nummer dat wordt voorafgegaan door een afbeelding van een koptelefoon. Deze afbeelding is informatief en geeft aan dat er een audiobeschrijving beschikbaar is.</p>
+<p>Voor gebruikers van schermlezers wordt uitsluitend het nummer aangekondigd. De betekenis van de afbeelding wordt niet overgebracht, waardoor niet duidelijk is dat er een audiobeschrijving beschikbaar is.</p>
+<p>Voorbeelden hiervan zijn aangetroffen op onder andere:</p>
+<ul>
+<li>Thuis in de 17de eeuw (Start  screen -&gt; Bent u in het museum? - Tours tab -&gt; Thuis in de 17de eeuw -&gt; Start tour)</li>
+<li>Rembrandt van Rijn, Nachtwacht, 1962 (Start  screen -&gt; Bent u in het museum? -&gt; Nummer tab -&gt; 500)</li>
+<li>Maak je eigen route (Start  screen -&gt; Bent u in het museum? -&gt; Voor jou -&gt; Maak je eigen route -&gt; elk object)</li>
+<li>My route 1 (Start  screen -&gt; Bent u in het museum? -&gt; Voor jou -&gt; Maak je eigen route -&gt; selecteer meerdere objecten).</li>
+</ul>
+<h4>Oplossing:</h4>
+<p>Voorzie de afbeelding van een beschrijvende alternatieve tekst, bijvoorbeeld: “Audiobeschrijving beschikbaar”.</p>
+</div>
+<div class="issue">
+<h3>#5 - Bij inzoomen zijn niet meer alle onderdelen zichtbaar en bedienbaar</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/13.jpg" alt="">
+</figure>
+<p>Wanneer tekst is vergroot via de instellingen van het besturingssysteem, is de link “Cookies” in het menu niet zichtbaar en daardoor niet bedienbaar.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat alle interactieve elementen zichtbaar en bedienbaar blijven wanneer tekst wordt vergroot.</p>
+</div>
+<div class="issue">
+<h3>#6 - Kleurcontrast van informatieve iconen is onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.11</span>  
+	<span class="type"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op alle schermen met carrousels hebben de inactieve stippen onvoldoende contrast ten opzichte van de wisselende achtergrond. Dit zijn informatieve grafische elementen die het aantal dia’s in de carrousel aangeven. Daarom moet het contrast minimaal 3,0:1 zijn.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat deze informatieve elementen voldoende contrast hebben (minimaal 3,0:1). Op deze pagina staat een instructie om het kleurcontrast te testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="02-start-scherm">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-start-scherm">02 Start Scherm <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#7 - Decoratieve afbeelding is niet verborgen voor schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Bij het openen van de applicatie wordt een decoratieve achtergrondafbeelding weergegeven met de alternatieve tekst &quot;Achtergrond afbeelding&quot;. Decoratieve afbeeldingen dragen geen informatie over en mogen daarom niet worden aangekondigd door schermlezers.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de decoratieve afbeelding is verborgen voor schermlezers, bijvoorbeeld door een leeg alt-attribuut toe te passen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="03-tours">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-tours">03 Tours  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: (Start  screen -&gt; Bent u in het museum? - Tours tab)</p>
+<div class="issue">
+<h3>#8 - Knopnaam heeft onjuiste toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/12.jpg" alt="">
+</figure>
+<p>De menuknop bovenaan het scherm heeft de toegankelijke naam “terug”. Deze naam beschrijft de functie van de knop niet correct. Hetzelfde probleem komt voor op andere schermen.</p>
+<h4>Oplossing:</h4>
+<p>Wijzig de toegankelijke naam van de knop naar “Menu”.</p>
+</div>
+<div class="issue">
+<h3>#9 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de volgende teksten niet gemarkeerd als koppen: “Het beste van het Rijksmuseum”, “Thematische tours”, “Thuis in de 17de eeuw” en andere vergelijkbare teksten.</p>
+<p>Voor bezoekers die hulpsoftware gebruiken, is een tekst die er visueel uitziet als kop maar niet als kop is gemarkeerd niet bruikbaar. Deze bezoekers navigeren via koppen om de inhoud te scannen of snel naar een specifieke sectie te springen. Dit is alleen mogelijk wanneer de koppen ook in de code als kop zijn vastgelegd.</p>
+<p>Wanneer koppen uitsluitend visueel zijn vormgegeven (bijvoorbeeld door vetgedrukte tekst), wijkt bovendien de structuur van de informatie in de code af van de visuele structuur.</p>
+<p>Op deze pagina staat een instructie om de koppenstructuur van een webpagina te testen: <a href="https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/">https://properaccess.nl/zo-controleer-je-de-koppenstructuur-van-je-website/</a>.</p>
+<h4>Oplossing:</h4>
+<p>Markeer koppen met het juiste element, op het correcte kopniveau.</p>
+</div>
+<div class="issue">
+<h3>#10 - Kleurcontrast bij tekst kleiner dan 24px is onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.3</span>  
+	<span class="type"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm zijn teksten zoals “In de Philipdsvieugel, verdieping 1”, “Bekijk 18 werken op verdieping 2 (60 min)”, “Relieken, altaarstukken en schilderijen, op verdieping 0 (45 min)” en enkele andere teksten grijs (<code>#A2ABAD</code>) weergegeven op een witte achtergrond. De contrastratio bedraagt 2,3:1 en is daarmee onvoldoende.</p>
+<h4>Oplossing:</h4>
+<p>Omdat deze tekst kleiner is dan 24px en niet vetgedrukt, moet het contrast minimaal 4,5:1 zijn.</p>
+<p>Op deze pagina staat een instructie om het kleurcontrast te testen: <a href="https://properaccess.nl/hoe-test-ik-kleurcontrast/">https://properaccess.nl/hoe-test-ik-kleurcontrast/</a>.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="04-thematisch-tour">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-thematisch-tour">04 Thematisch tour <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad:  Thuis in de 17de eeuw (Start  screen -&gt; Bent u in het museum? - Tours tab -&gt; Thuis in de 17de eeuw -&gt; Start tour)</p>
+<div class="issue">
+<h3>#11 - Audiocontent heeft geen tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.2.1</span>  
+	<span class="type"><b>EN</b>: 11.1.2.1</span>  
+</div>
+<p>Wanneer een bezoeker een thematische tour start, worden de introductie en de kunstobjecten op de route gepresenteerd als een carrousel. De eerste dia, “Start intro”, bevat een audiobeschrijving zonder transcript. Voor bezoekers die het geluid niet kunnen horen, moet een tekstueel alternatief beschikbaar zijn. Dit is onder andere belangrijk voor mensen die doof of slechthorend zijn.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de informatie op de dia “Start intro” ook als tekst beschikbaar is, bijvoorbeeld door een knop “In tekst” toe te voegen, evenals bij de andere dia’s in de route.</p>
+</div>
+<div class="issue">
+<h3>#12 - Visueel beschikbare informatie  niet aangekondigd door schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Wanneer een route wordt gestart, worden de introductie en de kunstobjecten  gepresenteerd als een carrousel. Bovenaan elke dia staat het nummer van de dia binnen de carrousel, bijvoorbeeld “1/17”. Deze informatie wordt niet aangekondigd aan schermlezers, waardoor bezoekers niet weten bij welke stap zij zich bevinden.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat deze informatie programmatisch beschikbaar is voor schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#13 - Naam van knop beschrijft niet wat knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Wanneer een route wordt gestart, worden de introductie en de objecten op de route gepresenteerd als een carrousel. Wanneer de audio op een van de dia’s wordt ingeschakeld, verschijnen knoppen om terug en vooruit te spoelen. De toegankelijke namen van deze knoppen zijn verwisseld: de knop om terug te spoelen heeft de toegankelijke naam “vooruitspoelen” en de knop om vooruit te spoelen heeft de naam “terugspoelen”. Dit is misleidend voor schermlezers.</p>
+<h4>Oplossing:</h4>
+<p>Wijzig de toegankelijke namen van de knoppen, zodat zij de functies van de knoppen correct beschrijven.</p>
+</div>
+<div class="issue">
+<h3>#14 - Alternatieve tekst van informatieve afbeelding heeft onvoldoende betekenis</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Wanneer een route wordt gestart, worden de objecten op de route gepresenteerd als een carrousel. Elke dia heeft een icoon van een lopende man met de alternatieve tekst &quot;Walk image&quot;. Deze tekst beschrijft de betekenis van de afbeelding onvoldoende.</p>
+<h4>Oplossing:</h4>
+<p>Wijzig de alternatieve tekst naar een betekenisvolle omschrijving, bijvoorbeeld “U bent op de route”.</p>
+</div>
+<div class="issue">
+<h3>#15 - Tekst onvoldoende zichtbaar na inzoomen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/18.jpg" alt="">
+</figure>
+<p>Wanneer de tekst is vergroot via de instellingen van het besturingssysteem, is de tekst met het nummer van de audiobeschrijving van het object niet zichtbaar.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat ook bij vergrote tekst alle teksten op het scherm zichtbaar blijven.</p>
+</div>
+<div class="issue">
+<h3>#16 - Focusvolgorde is  onlogisch</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.3, 2.1.1</span>  
+	<span class="type"><b>EN</b>: 11.2.4.3, 11.2.1.1</span>  
+</div>
+<p>Wanneer een route wordt gestart door op de knop “Start tour” te klikken, worden de introductie en de objecten op de route gepresenteerd als een carrousel. De toetsenbordfocus komt niet op de knop met een pijl die naar de volgende dia leidt (succescriterium 2.1.1). Het wisselen van dia gebeurt automatisch nadat de focus langs alle interactieve elementen is gegaan. Deze focusvolgorde  is niet logisch.</p>
+<h4>Oplossing:</h4>
+<p>Zorg voor een logische focusvolgorde door de focus ook naar de knop met de pijl naar de volgende dia te laten gaan, zodat een bezoeker bewust naar de volgende dia kan navigeren.</p>
+</div>
+<div class="issue">
+<h3>#17 - Toegankelijke naam van knop is onvoldoende beschrijvend</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Advies</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Wanneer een route wordt gestart, worden de introductie en de objecten op de route gepresenteerd als een carrousel. Elke dia heeft een knop om audio te starten. Deze knop heeft de toegankelijke naam “Afspelen of pauzeren&quot;. Wanneer de audio wordt gestart, verandert het uiterlijk van de knop naar een pauze-icoon, maar de toegankelijke naam verandert niet. Dit kan verwarrend zijn voor bezoekers met cognitieve beperkingen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de toegankelijke namen van de knoppen dynamisch wijzigen: “Afspelen” bij het starten van de audio en &quot;Pauzeren&quot; bij het pauzeren of stoppen van de audio.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="05-zoek-op-zaal-of-audiostopnummer">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-zoek-op-zaal-of-audiostopnummer">05 Zoek op zaal- of audiostopnummer <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Het probleem met het contrast van de knop “Zoek” is beschreven in de vorige secties.</p>
+<div class="issue">
+<h3>#18 - Wijzigingen in invoerveld worden niet aangekondigd door schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1, 4.1.3, 3.3.2 </span>  
+	<span class="type"><b>EN</b>: 11.1.3.1, 11.4.1.3, 11.3.3.2</span>  
+</div>
+<p>Wanneer een bezoeker een nummer selecteert of verwijdert, wordt deze wijziging niet aangekondigd door de schermlezer. Om het volledig geselecteerde nummer te controleren, moet de bezoeker terug navigeren naar het invoerveld boven het selectiegedeelte. Daarnaast wordt het geselecteerde nummer zonder voldoende context voorgelezen, bijvoorbeeld “Zoek op nummer…”.</p>
+<p>Dit probleem doet zich ook voor op het scherm “Zoek op nummer”.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het geselecteerde nummer wordt aangekondigd door de schermlezer en dat het invoerveld een duidelijke, contextuele label heeft, zodat gebruikers van schermlezers zowel de huidige waarde als het doel van het veld kunnen begrijpen.</p>
+</div>
+<div class="issue">
+<h3>#19 - Decoratieve afbeelding is niet verborgen voor schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1, 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1, 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/16.jpg" alt="">
+</figure>
+<p>Onderaan dit scherm staat een knop “Waar kan ik ze vinden?” met daarnaast een pijl-icoon. Dit icoon is decoratief, maar is niet verborgen voor schermlezers en wordt aangekondigd als “arrow right”. Deze tekst is bovendien toegevoegd aan de toegankelijke naam van de knop, wat overbodig en mogelijk verwarrend is (succescriterium 2.4.6).</p>
+<h4>Oplossing:</h4>
+<p>Verwijder de overbodige alternatieve tekst van het pijl-icoon en zorg ervoor dat decoratieve afbeeldingen niet worden aangekondigd door schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#20 - Statusbericht wordt niet (tijdig) aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.3</span>  
+	<span class="type"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/17.jpg" alt="">
+</figure>
+<p>Wanneer een niet-bestaand nummer wordt gezocht, bijvoorbeeld “55”, verschijnt onderaan het scherm het bericht “Geen werk gevonden”. Dit is een statusbericht. Statusberichten moeten automatisch worden aangekondigd door schermlezers zodra ze verschijnen of wijzigen. De  benodigde code om dit mogelijk te maken ontbreekt.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat hulpsoftware dit statusbericht automatisch aankondigt.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="06-zoek-op-nummer">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-zoek-op-nummer">06 Zoek op nummer  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Nummer tab</p>
+<div class="issue">
+<h3>#21 - Kop is niet gemarkeerd als kop</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staat de tekst“Zoek op nummer”. Deze tekst is niet gemarkeerd als koptekst.</p>
+<h4>Oplossing:</h4>
+<p>Markeer “Zoek op nummer” als koptekst met het correcte kopniveau.</p>
+</div>
+<div class="issue">
+<h3>#22 - Kleurcontrast bij tekst kleiner dan 24px is onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.3</span>  
+	<span class="type"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm is de tekst die begint met “Voer het nummer in dat…” grijs (<code>#A2ABAD</code>) weergegeven op een donkergrijze achtergrond (<code>#40474F</code>). De contrastratio bedraagt 4,0:1 en is daarmee onvoldoende.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat voor tekst kleiner dan 24px en niet vetgedrukt een contrastratio van minimum 4,5:1 wordt gehaald.</p>
+</div>
+<div class="issue">
+<h3>#23 - Knoptekst is niet afgestemd op de taal van de applicatie</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/01.jpg" alt="">
+</figure>
+<p>De knop waarmee ingevoerde nummers uit de zoekfunctie worden verwijderd, heeft de tekst “Delete button”. Omdat de applicatie volledig Nederlandstalig is Nederlands is, beschrijft deze tekst de functie van de knop niet correct.</p>
+<h4>Oplossing:</h4>
+<p>Gebruik een Nederlandstalige knoptekst die de functie van de knop correct beschrijft.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="07-rembrandt-van-rijn-nachtwacht-1642">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-rembrandt-van-rijn-nachtwacht-1642">07 Rembrandt van Rijn, Nachtwacht, 1642  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Nummer tab -&gt; 500</p>
+<div class="issue">
+<h3>#24 - Informatieve afbeeldingen hebben geen passende tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/03.jpg" alt="">
+</figure>
+<p>Naast de koppen “Operatie Nachtwacht” en “Meer weten” staan afbeeldingen van een camera en een koptelefoon. Deze afbeeldingen zijn informatief en geven aan dat bezoekers een video kunnen bekijken of extra informatie kunnen beluisteren. Voor slechtziende of blinde bezoekers is deze informatie niet op een andere manier beschiktbaar.</p>
+<h4>Oplossing:</h4>
+<p>Voorzie deze afbeeldingen van beschrijvende alternatieve teksten, zoals “Bekijk een video” en “Extra informatie beluisteren”.</p>
+</div>
+<div class="issue">
+<h3>#25 - Koppen niet gemarkeerd als kop</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan de koppen “Operatie Nachtwacht” en “Meer weten”. Deze teksten functioneren visueel als koppen, maar zijn niet als koptekst gemarkeerd.</p>
+<h4>Oplossing:</h4>
+<p>Maak deze teksten als koppen met het correcte kopnivueau.</p>
+</div>
+<div class="issue">
+<h3>#26 - Kleurcontrast bij tekst kleiner dan 24px is onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.3</span>  
+	<span class="type"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/20.webp" alt="">
+</figure>
+<p>Op dit scherm is de tekst “Connected by kpn” grijs (<code>#858688</code>) weergegeven op een donkergrijze achtergrond (<code>#343437</code>). De contrastratio bedraagt 3,4:1 en is daarmee onvoldoende.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het contrast van de tekst minimaal 4,5:1 bedraagt.</p>
+</div>
+<div class="issue">
+<h3>#27 - Naam van knop beschrijft niet wat knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/06.jpg" alt="">
+</figure>
+<p>Wanneer een route wordt gestart, worden de introductie en de objecten gepresenteerd als een carrousel. Wanneer de audio op een van de dia’s wordt ingeschakeld, verschijnen knoppen om terug en vooruit te spoelen. De toegankelijke namen van deze knoppen zijn verwisseld: de knop om terug te spoelen heeft de toegankelijke naam “vooruitspoelen” en de knop om vooruit te spoelen heeft de naam “terugspoelen”. Dit is misleidend voor gebruikers van schermlezers.</p>
+<h4>Oplossing:</h4>
+<p>Wijzig de toegankelijke namen van de knoppen, zodat zij de functies van de knoppen correct beschrijven.</p>
+</div>
+<div class="issue">
+<h3>#28 - Indicator voor afspeeltijd biedt onvoldoende context</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Wanneer het geluid is ingeschakeld, verschijnt een indicator voor de afspeeltijd. Deze indicator heeft geen toegankelijke naam of context, waardoor gebruikers van schermlezers niet kunnen begrijpen waar het voorgelezen getal betrekking op heeft.</p>
+<h4>Oplossing:</h4>
+<p>Voorzie de indicator van een duidelijke toegankelijke naam en waarde, bijvoorbeeld door een toegankelijk label toe te voegen zoals “Resterende afspeeltijd…”.</p>
+</div>
+<div class="issue">
+<h3>#29 - Koppen niet gemarkeerd als kop</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/04.jpg" alt="">
+</figure>
+<p>Wanneer op dit scherm op “In tekst” wordt geklikt, verschijnt nieuwe inhoud met de beschrijving van een object in tekstvorm. De koppen in deze tekst zijn niet gemarkeerd als koppen. Dit geldt onder andere voor “Rembrandt van Rijn, Nachtwacht, 1642”, “Introductie”, “Meer zien” en “Meer weten”.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze teksten als koppen met het correcte kopniveau..</p>
+</div>
+<div class="issue">
+<h3>#30 - Tekststructuur is niet in losse elementen vastgelegd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/05.jpg" alt="">
+</figure>
+<p>In de tekstweergave wordt de inhoud visueel verdeeld in koppen en alinea’s, maar deze structuur is niet in de code vastgelegd. De schermlezer kondigt de volledige tekst aan als één blok, waardoor de gebruiker niet per afzonderlijk tekstdeel kan navigeren of laten voorlezen.</p>
+<h4>Oplossing:</h4>
+<p>Leg de visuele structuur van de informatie ook in de code vast door gebruik te maken van afzonderlijke elementen voor koppen en alinea’s.</p>
+</div>
+<div class="issue">
+<h3>#31 - Ondertiteling ontbreekt bij video-inhoud</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.2.2</span>  
+	<span class="type"><b>EN</b>: 11.1.2.2</span>  
+</div>
+<p>Na het selecteren van “Operatie Nachtwacht - Wat doen ze nu?” wordt een video met gesproken tekst afgespeeld, maar ondertiteling ontbreekt.</p>
+<h4>Oplossing:</h4>
+<p>Voeg ondertiteling toe aan de video.</p>
+</div>
+<div class="issue">
+<h3>#32 - Afspeelbediening is niet toegankelijk via toetsenbordfocus</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.1.1</span>  
+	<span class="type"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Wanneer de videospeler wordt geopend, verschijnen de afspeelbedieningen. Deze verdwijnen na elke swipebeweging. Hierdoor is het voor gebruikers van schermlezers niet mogelijk om de focus te verplaatsen naar bedieningselementen zoals  “Sluiten” , de voortgangsbalk of de instellingen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de bedieningselementen van de videospeler zichtbaar en focusbaar blijven tijdens swipe-navigatie.</p>
+</div>
+<div class="issue">
+<h3>#33 - Toegankelijke naam van knop is onvoldoende beschrijvend</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Advies</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/07.jpg" alt="">
+</figure>
+<p>De knop om audio te starten heeft de toegankelijke naam “Afspelen of pauzeren&quot;. Wanneer de audio wordt gestart, verandert het uiterlijk van de knop naar een pauze-icoon, maar de toegankelijke naam blijft gelijk. Dit kan verwarrend zijn voor bezoekers met cognitieve beperkingen.</p>
+<h4>Oplossing:</h4>
+<p>Laat de toegankelijke naam dynamisch meewisselen met de status van de knop: “Afspelen” bij starten en &quot;Pauzeren&quot; bij pauzeren of stoppen.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="08-ga-naar">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-ga-naar">08 Ga naar  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Ga naar tab</p>
+<p>Geen nieuwe bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-zoekresultaten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-zoekresultaten">09 Zoekresultaten  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Ga naar -&gt; Zoeken</p>
+<p>Het probleem met de tekstalternatieven voor de koptelefooniconen is beschreven in de vorige secties.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-voor-jou">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-voor-jou">10 Voor jou  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Voor jou tab</p>
+<p>Problemen met het kleurcontrast van knoppen zijn beschreven in de vorige secties.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-maak-je-eigen-route">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-maak-je-eigen-route">11 Maak je eigen route  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Voor jou -&gt; Maak je eigen route</p>
+<div class="issue">
+<h3>#34 - Status geselecteerde filteroptie wordt niet aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Code</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1, 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1, 11.4.1.2</span>  
+</div>
+<p>Bovenaan dit scherm staan filters om objecten voor een route te selecteren, zoals “Ontdek”, “Hoogtepunten” en andere opties. De geselecteerde optie wordt visueel onderscheiden, maar deze status is niet toegankelijk voor blinde en slechtziende bezoekers.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de status van de geselecteerde optie wordt doorgegeven aan gebruikers van hulpsoftware.</p>
+</div>
+<div class="issue">
+<h3>#35 - Teksten boven objectgroepen zijn niet gemarkeerd als kop</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staat een lijst met objecten die aan de route kunnen worden toegevoegd. Elke groep afbeeldingen wordt voorafgegaan door een tekst, bijvoorbeeld “Tulpen”, “Feest”, “Katten” en andere teksten. Deze teksten zijn niet gemarkeerd als koppen.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze teksten als kopteksten met het correcte kopniveau.</p>
+</div>
+<div class="issue">
+<h3>#36 - Informatieve afbeelding heeft geen alternatieve tekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op dit scherm staat een lijst met kunstobjecten die aan de route kunnen worden toegevoegd. De afbeeldingen hebben geen alternatieve tekst. Afbeeldingen die informatie overdragen, moeten een betekenisvolle alternatieve tekst hebben waarin de relevante informatie uit de afbeelding wordt beschreven.</p>
+<h4>Oplossing:</h4>
+<p>Neem de naam van het kunstobject op in de alternatieve tekst.</p>
+</div>
+<div class="issue">
+<h3>#37 - Alternatieve tekst van achtergrondafbeelding heeft onvoldoende betekenis</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/11.jpg" alt="">
+</figure>
+<p>Op dit scherm staat een lijst met objecten die aan de route kunnen worden toegevoegd. Wanneer een bezoeker een object selecteert, opent een nieuw venster met de naam van het object. De achtergrondafbeelding die over de hele pagina wordt weergegeven heeft de alternatieve tekst “Achtergrond afbeelding”. Deze tekst is onvoldoende  betekenisvol.</p>
+<h4>Oplossing:</h4>
+<p>Als de afbeelding alleen decoratief is, verwijder dan de alternatieve tekst. Als het voor de bezoeker relevant is om te weten wat op de achtergrond wordt weergegeven, neem dan de naam van het object toe, bijvoorbeeld: “Achtergrond afbeelding - De Molen bij Wijk bij Duurstede”.</p>
+</div>
+<div class="issue">
+<h3>#38 - Focusvolgorde onlogisch na sluiten objectvenster</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.3</span>  
+	<span class="type"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<p>Op dit scherm staat een lijst met objecten die aan de route kunnen worden toegevoegd. Wanneer een bezoeker een object selecteert, opent een nieuw venster met de naam van het object en de knop “Voeg toe aan route”. Na het activeren van deze knop sluit het objectvenster, maar de focus blijft niet op het geselecteerde object staan. De focus verplaatst zich naar de eerste kop op het scherm, bijvoorbeeld “Tulpen”. Deze focusvolgorde onlogisch.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat na het sluiten van het objectvenster de focus terugkeert naar de afbeelding van het geselecteerde object in de selectielijst.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="12-my-route-1">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-my-route-1">12 My route 1  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Voor jou -&gt; Maak je eigen route -&gt; selecteer enkele kunstobjecten</p>
+<div class="issue">
+<h3>#39 - Alternatieve tekst bij informatieve afbeelding heeft onvoldoende betekenis</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.1.1</span>  
+	<span class="type"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Wanneer een bezoeker een route aanmaakt en start, wordt een scherm met het eerste object weergegeven. Dit scherm bevat een icoon van een lopende man met de alternatieve tekst &quot;Walk image&quot;. Deze tekst beschrijft de betekenis van de afbeelding onvoldoende.</p>
+<h4>Oplossing:</h4>
+<p>Wijzig de alternatieve tekst naar een betekenisvolle omschrijving, bijvoorbeeld “U bent op de route”.</p>
+</div>
+<div class="issue">
+<h3>#40 - Focusolgorde  onlogisch en beperkt toetsenbordbediening</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.3, 2.1.1</span>  
+	<span class="type"><b>EN</b>: 11.2.4.3, 11.2.1.1</span>  
+</div>
+<p>Wanneer een route wordt gestart via de knop “Start tour”, worden de objecten op de route gepresenteerd als een carrousel. De toetsenbordfocus komt niet op de knop met een pijl naar de volgende dia (succescriterium 2.1.1). Het wisselen van dia gebeurt automatisch nadat de focus langs alle interactieve elementen op het scherm is gegaan. Deze focusvolgorde is onlogisch.</p>
+<h4>Oplossing:</h4>
+<p>Zorg voor een focusvolgorde logisch door de focus ook naar de knop met de pijl naar de volgende dia te laten gaan, zodat een bezoeker bewust naar de volgende dia kan navigeren.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="13-om-te-beginnen-moeten-we-weten-waar-je-bent">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-om-te-beginnen-moeten-we-weten-waar-je-bent">13 Om te beginnen moeten we weten waar je bent  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Bent u in het museum? -&gt; Voor jou -&gt; My route 1 -&gt; Toon route</p>
+<div class="issue">
+<h3>#41 - Schakelknop geeft onjuiste naam, rol en waarde door</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm staat naast “Hoe wil je navigeren” een schakelknop. Deze schakelknop wordt gebruikt om te wisselen tussen twee opties (“Trappen” en “Lift”) in plaats van een binaire aan/uit-toestand. Dit is niet consistent met het verwachte gedrag van schakelknoppen en maakt de interactie onvoorspelbaar. Een blinde of slechtziende bezoeker weet niet dat er twee opties zijn om te kiezen totdat de schakelknop wordt omgezet. Daarnaast kondigt hulpsoftware geen correcte rol en toestand aan, wat verwarrend is voor bezoekers.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat het juiste bedieningselement wordt gebruikt en dat naam, rol en toestand duidelijk worden aangekondigd aan schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#42 - Bezoekers die inzoomen kunnen niet meer alle functies gebruiken</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/14.jpg" alt="">
+</figure>
+<p>Wanneer de tekst is vergroot via de instellingen van het besturingssysteem, is de tekst “Trappen” gedeeltelijk zichtbaar en is de tekst “Lift” helemaal niet zichtbaar.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat ook bij tekstvergroting alle elementen zichtbaar en bedienbaar blijven.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="14-ik-ben-bij-de-multimediatours-balie">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-ik-ben-bij-de-multimediatours-balie">14 Ik ben bij de Multimediatours Balie  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start tour -&gt; Toon route -&gt; Zoek op zaal- of audiostopnummer</p>
+<div class="issue">
+<h3>#43 - Knop heeft geen toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Bovenaan dit scherm staat een knop met een kaarticoon. Deze knop heeft geen toegankelijke naam. Hierdoor is voor gebruikers van een schermlezer  onduidelijk wat de bestemming of de functie van de knop is.</p>
+<h4>Oplossing:</h4>
+<p>Geef de knop een beschrijvende toegankelijke naam. Op deze pagina staat een instructie om toegankelijke namen te testen: <a href="https://properaccess.nl/sc-4-1-2-wat-betekent-naam-rol-waarde/">https://properaccess.nl/sc-4-1-2-wat-betekent-naam-rol-waarde/</a>.</p>
+</div>
+<div class="issue">
+<h3>#44 - Onzichtbare elementen krijgen toetsenbordfocus</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.3</span>  
+	<span class="type"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/15.jpg" alt="">
+</figure>
+<p>Op dit scherm komt de toetsenbordfocus op meerdere onzichtbare interactieve elementen terecht. Na de knop met de kaart gaat de focus naar drie onzichtbare knoppen met dezelfde tekst “Go this way”. Na de tekst “1/6” komt de focus ook op een onzichtbaar element terecht.</p>
+<figure class="screenshot">
+<img src="images/10.jpg" alt="">
+</figure>
+<p>Toetsenbordfocus mag niet terechtkomen op onzichtbare interactieve elementen. Als dit wel gebeurt, kan een bezoeker deze onbedoeld activeren en wordt de navigatie onvoorspelbaar.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat alleen zichtbare elementen toetsenbordfocus kunnen krijgen en dat de focusvolgorde logisch en voorspelbaar blijft.</p>
+
+          </div>
+</article>
+          
+        
+          
+          <article class="issue" id="15-help">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-help">15 Help  <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start  screen -&gt; Help tab</p>
+<div class="issue">
+<h3>#45 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst “Veelgestelde vragen” niet gemarkeerd als kop. Dit probleem geldt ook voor koppen in de carrousel, zoals “Tours volgen” en “Zoek op nummer”.</p>
+<h4>Oplossing:</h4>
+<p>Markeer deze teksten als kopteksten.</p>
+</div>
+<div class="issue">
+<h3>#46 - Carrousel is niet toegankelijk met het toetsenbord</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.1.1</span>  
+	<span class="type"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op dit scherm staat een carrousel die niet met het toetsenbord te bedienen is. De carrousel heeft navigatiestippen, maar deze zijn niet toegankelijk met het toetsenbord.</p>
+<h4>Oplossing:</h4>
+<p>Maakde navigatiestippen toegankelijk met het toetsenbord of voeg pijlknoppen toe met de namen “Vorige slide” en “Volgende slide”. Als wordt gekozen voor het interactief maken van de stippen, zorg ervoor dat het aanklikbare gebied minimaal 24x24 px is (succescriterium 2.5.8).</p>
+</div>
+<div class="issue">
+<h3>#47 - Wisselen van dia’s is alleen mogelijk met gebaren</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.5.1</span>  
+	<span class="type"><b>EN</b>: 11.2.5.1</span>  
+</div>
+<p>Op dit scherm staat een carrousel. Deze carrousel maakt het mogelijk om dia’s horizontaal te verplaatsen door te klikken en te slepen.</p>
+<p>Wanneer specifieke acties zoals swipen of slepen nodig zijn om met een component te werken, moet ook een alternatieve, eenvoudigere manier bedieningsmethode beschikbaar zijn. Dit is noodzakelijk voor bezoekers die geen nauwkeurige gebaren kunnen uitvoeren of die hulpsoftware gebruiken, zoals hoofdaanwijzers of oogbesturingssystemen.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de carrousel ook bedienbaar is met eenvoudige klikken of tikken, of viaknoppen of pijltjestoetsen.</p>
+</div>
+<div class="issue">
+<h3>#48 - Informatie over de carrousel is niet in de code vastgelegd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staat een carrousel met grijze stippen onderaan. Deze stippen geven aan hoeveel slides er zijn en welke slide actief is. De actieve slide wordt visueel onderscheiden, maar deze informatie ontbreekt in de codelaag. Daardoor weten gebruikers van schermlezers niet welke slide actief is. Deze informatie moet beschikbaar worden gemaakt, bijvoorbeeld tekst die visueel verborgen is maar toegankelijk voor hulpsoftware.</p>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat deze informatie toegankelijk is voor gebruikers van hulpsoftware.</p>
+
+          </div>
+</article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>
