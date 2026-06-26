@@ -83,7 +83,11 @@ jobs:
         run: npm run build
 
       # --- Audit reports (Eleventy) → /rapporten/ ---
+      # continue-on-error: pa-audit gebruikt Git LFS; bij een LFS-fetchfout
+      # (bv. overschreden bandbreedte/quota) mag de site toch deployen.
+      # /rapporten/ kan dan tijdelijk verouderd zijn tot LFS weer werkt.
       - name: Checkout audit reports repo
+        continue-on-error: true
         uses: actions/checkout@v5.0.0
         with:
           repository: JuliaTol-properaccess/pa-audit
@@ -92,14 +96,17 @@ jobs:
           lfs: true
 
       - name: Install audit reports dependencies
+        continue-on-error: true
         run: npm ci
         working-directory: _audit-reports
 
       - name: Build audit reports
+        continue-on-error: true
         run: npm run build
         working-directory: _audit-reports
 
       - name: Copy audit reports to /rapporten/
+        continue-on-error: true
         run: rsync -a _audit-reports/dist/ ./public/rapporten/
 
       - name: Upload artifact
