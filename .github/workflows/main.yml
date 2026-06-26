@@ -82,32 +82,14 @@ jobs:
       - name: Build site
         run: npm run build
 
-      # --- Audit reports (Eleventy) → /rapporten/ ---
-      # continue-on-error: pa-audit gebruikt Git LFS; bij een LFS-fetchfout
-      # (bv. overschreden bandbreedte/quota) mag de site toch deployen.
-      # /rapporten/ kan dan tijdelijk verouderd zijn tot LFS weer werkt.
-      - name: Checkout audit reports repo
-        continue-on-error: true
-        uses: actions/checkout@v5.0.0
-        with:
-          repository: JuliaTol-properaccess/pa-audit
-          token: ${{ secrets.PA_AUDIT_TOKEN }}
-          path: _audit-reports
-          lfs: true
-
-      - name: Install audit reports dependencies
-        continue-on-error: true
-        run: npm ci
-        working-directory: _audit-reports
-
-      - name: Build audit reports
-        continue-on-error: true
-        run: npm run build
-        working-directory: _audit-reports
-
-      - name: Copy audit reports to /rapporten/
-        continue-on-error: true
-        run: rsync -a _audit-reports/dist/ ./public/rapporten/
+      # --- Audit reports → /rapporten/ ---
+      # Sinds 26-06-2026 worden auditrapporten als static asset bijgehouden in
+      # deze repo onder `static/rapporten/<slug>/` (Hugo serveert die verbatim).
+      # De oude route (pa-audit checkout via Git LFS + rsync) is verwijderd: het
+      # LFS-budget van pa-audit raakte op, de fetch faalde bij elke build en de
+      # stap was `continue-on-error`, waardoor nieuwe rapporten stilletjes niet
+      # live kwamen. Publiceren gaat nu via een commit naar static/rapporten/.
+      # Zie de auditpijplijn-playbook in ~/git/ProperAccess.
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5.0.0
