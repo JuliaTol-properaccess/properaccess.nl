@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202606_nrc-android-app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van de NRC Android-app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#hoe-nu-verder">Hoe nu verder</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-op-veel-schermen">01 Op veel schermen</a></li><li><a href="#02-onze-journalistiek-is-ons-product-niet-onze-lezers-cookie-banner">02 Onze journalistiek is ons product, niet onze lezers (cookie-banner)</a></li><li><a href="#03-startscherm">03 Startscherm</a></li><li><a href="#04-instellingen">04 Instellingen</a></li><li><a href="#05-home-nieuws">05 Home - Nieuws</a></li><li><a href="#06-buitenland">06 Buitenland</a></li><li><a href="#07-krant">07 Krant</a></li><li><a href="#08-krantenarchief">08 Krantenarchief</a></li><li><a href="#09-podcasts">09 Podcasts</a></li><li><a href="#10-puzzels">10 Puzzels</a></li><li><a href="#11-zoeken">11 Zoeken</a></li><li><a href="#12-podcast-van-mozart-tot-bob-dylan">12 Podcast: Van Mozart tot Bob Dylan</a></li><li><a href="#13-columnist">13 Columnist</a></li><li><a href="#14-onderwerpen">14 Onderwerpen</a></li><li><a href="#15-nieuwsbrieven">15 Nieuwsbrieven</a></li><li><a href="#16-e-book">16 E-book</a></li><li><a href="#17-word-abonnee-bij-nrc">17 Word abonnee bij NRC</a></li><li><a href="#18-inloggen">18 Inloggen</a></li><li><a href="#19-mijn-nieuws">19 Mijn nieuws</a></li><li><a href="#20-de-grote-hittegids-met-deze-tips-kom-je-warme-dagen-door">20 De Grote Hittegids: met deze tips kom je warme dagen door</a></li><li><a href="#21-ik-ben-jaloers-op-mensen-die-kunnen-kamperen">21 Ik ben jaloers op mensen die kunnen kamperen</a></li><li><a href="#22-sudoku">22 Sudoku</a></li><li><a href="#23-testpagina-voor-digitale-toegankelijkheid-deel-1">23 Testpagina voor digitale toegankelijkheid - deel 1</a></li><li><a href="#24-testpagina-voor-digitale-toegankelijkheid-deel-2">24 Testpagina voor digitale toegankelijkheid - deel 2</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van de NRC Android-app</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de NRC Android-app onderzocht in juni 2026. Op dit moment is een deel van de succescriteria als voldoende beoordeeld. In dit rapport lees je welke punten nog verbetering behoeven en hoe deze kunnen worden aangepakt.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.png" alt="Logo van NRC">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="50"
+           data-perceivable="20"
+           data-operable="17"
+           data-understandable="10"
+           data-robust="3">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">50</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="50"
+             data-perceivable="20"
+             data-operable="17"
+             data-understandable="10"
+             data-robust="3">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 17</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 10</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>NRC</dd>
+              
+              <dt>Leverancier techniek</dt>
+              <dd>Android (Samsung Galaxy S25, Android 16)</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>26 juni 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle schermen van de NRC Android-app (versie 5.12.18) uit de steekproef</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Web views (inhoud die binnen de app via een browser-component wordt getoond)</li>
+              
+              <li>Ontoegankelijkheden die ontstaan door de manier waarop het device de app rendert, bijvoorbeeld kleurcontrast in alerts of de weergave van sommige knoppen</li>
+              
+              <li>Inhoud afkomstig van derden</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Samsung Galaxy S25 (Android-versie 16)</li>
+              
+              <li>TalkBack schermlezer</li>
+              
+              <li>Extern toetsenbord</li>
+              
+            </ul>
+
+            <h3>Technologieën van de app</h3>
+            <ul>
+              
+              <li>Android (native)</li>
+              
+              <li>TalkBack</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+    <div class="dash-voortgang" id="hoe-nu-verder">
+      <h2>Hoe nu verder</h2>
+      <div class="voortgang-opties-grid">
+        
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-presentation-screen" aria-hidden="true"></i> Presentatie</h3>
+          <p>Bekijk een korte presentatie (~15 min) met de belangrijkste bevindingen, cijfers en vervolgstappen — handig voor een teammeeting.</p>
+          <a class="voortgang-btn" href="presentation.html" target="_blank" rel="noopener">Bekijk presentatie</a>
+        </div>
+        
+        
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
+          <p>Download het plan van aanpak met een geprioriteerde aanpak om de gevonden problemen op te lossen.</p>
+          <a class="voortgang-btn" href="plan-van-aanpak.pdf" download>Download plan van aanpak</a>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <section class="dash-info">
+      <div class="accordion accordion-highlight">
+        <details>
+          <summary>TalkBack aanzetten en gebruiken (Android)</summary>
+          <div>
+            <p>Om de bevindingen in dit rapport zelf te ervaren, test je de app met <strong>TalkBack</strong> — de schermlezer die standaard op iedere Android-telefoon en -tablet zit. Blinde en slechtziende gebruikers bedienen hun toestel hiermee. Hieronder vind je de stappen om TalkBack aan te zetten en de gebaren die je nodig hebt.</p>
+<blockquote>
+<p><strong>Let op: twee gebarensets.</strong> TalkBack kent twee varianten van sommige gebaren. De <strong>multi-finger-gebaren</strong> (met twee, drie of vier vingers) werken alleen op Android 11 of nieuwer én op Pixel 3 en nieuwer, Samsung Galaxy en een aantal andere toestellen. Op oudere of niet-ondersteunde toestellen gebruik je de <strong>L-vorm-alternatieven</strong> met één vinger. We noemen hieronder waar het verschil uitmaakt. Wil je weten welke set jouw toestel ondersteunt? Zet TalkBack aan en doe een <strong>three-finger tap</strong> — TalkBack vertelt je of multi-finger-gebaren actief zijn.</p>
+</blockquote>
+<blockquote>
+<p><strong>Tip.</strong> Oefen eerst een paar minuten in de <strong>Practice gestures</strong>-modus (op toestellen met multi-finger-ondersteuning: <em>four-finger tap</em>; anders via het TalkBack-menu → <strong>Help &amp; feedback</strong>). Je kunt daar elk gebaar uitproberen zonder dat de app reageert. TalkBack vertelt je telkens welk gebaar je zojuist hebt gemaakt.</p>
+</blockquote>
+<h4>TalkBack aan- en uitzetten</h4>
+<p>De snelste manier is de volumeknop-sneltoets. Ga naar <strong>Instellingen → Toegankelijkheid → TalkBack → TalkBack-sneltoets</strong> en schakel deze in. Vanaf dat moment zet je TalkBack aan of uit door de <strong>volume-omhoog- en volume-omlaag-toets</strong> een paar seconden <strong>tegelijk ingedrukt</strong> te houden.</p>
+<p>Alternatieven:</p>
+<ul>
+<li><strong>Instellingen → Toegankelijkheid → TalkBack</strong> → schakelaar aan of uit.</li>
+<li>Vraag Google Assistant: <em>&quot;Hey Google, zet TalkBack aan&quot;</em> of <em>&quot;… uit&quot;</em>.</li>
+</ul>
+<h4>De belangrijkste gebaren</h4>
+<p>Zodra TalkBack aan staat, werkt je toestel anders dan je gewend bent. Eén keer tikken selecteert alleen een element — je moet <strong>double-tappen</strong> om iets te activeren. Dit zijn de gebaren die je nodig hebt om door een scherm te bewegen:</p>
+<table>
+<thead>
+<tr>
+<th>Gebaar</th>
+<th>Wat het doet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Veeg met één vinger naar rechts</strong></td>
+<td>Spring naar het volgende element.</td>
+</tr>
+<tr>
+<td><strong>Veeg met één vinger naar links</strong></td>
+<td>Spring naar het vorige element.</td>
+</tr>
+<tr>
+<td><strong>Sleep één vinger over het scherm</strong></td>
+<td><em>Explore by touch</em> — TalkBack leest elk element voor dat je vinger raakt. Handig als je niet weet waar iets op het scherm staat.</td>
+</tr>
+<tr>
+<td><strong>Double-tap met één vinger</strong></td>
+<td>Activeer het element dat TalkBack heeft geselecteerd (link openen, knop indrukken, vinkje zetten). Je hoeft niet precies op het element te tikken.</td>
+</tr>
+<tr>
+<td><strong>Double-tap en vasthouden met één vinger</strong></td>
+<td>Lang indrukken (voor context-menu's en dergelijke).</td>
+</tr>
+<tr>
+<td><strong>Tik met twee vingers</strong></td>
+<td>Pauzeer of hervat de spraak. Handig als je iets wilt opschrijven.</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers</strong> omhoog, omlaag, links of rechts</td>
+<td>Scroll door het scherm.</td>
+</tr>
+</tbody>
+</table>
+<h4>Het TalkBack-menu openen</h4>
+<p>Het <strong>TalkBack-menu</strong> is een ingebouwd menu met commando's als <em>Lees vanaf boven</em>, <em>Zoek op scherm</em>, navigatie-instellingen en hulp. Je opent het op twee manieren:</p>
+<ul>
+<li><strong>L-vorm (werkt altijd)</strong>: veeg in één vloeiende beweging <strong>omlaag en dan naar rechts</strong>, of <strong>omhoog en dan naar rechts</strong>.</li>
+<li><strong>Multi-finger (indien ondersteund)</strong>: <strong>three-finger tap</strong>.</li>
+</ul>
+<p>In dat menu vind je onder andere <strong>Read from top</strong> (lees het hele scherm vanaf het begin voor — essentieel om de leesvolgorde te controleren) en <strong>Read from next item</strong> (lees door vanaf het huidige element).</p>
+<h4>Reading controls: springen per type element</h4>
+<p>De <strong>reading controls</strong> zijn het equivalent van de VoiceOver Rotor op iOS. Je kiest eerst op welk type element je wilt springen — bijvoorbeeld alleen de koppen, alleen de links, of alleen de formuliervelden — en beweegt vervolgens van element naar element.</p>
+<ul>
+<li><strong>Wissel tussen reading controls</strong>: veeg in één L-vorm <strong>omhoog en dan omlaag</strong>, of <strong>omlaag en dan omhoog</strong>. Op multi-finger-toestellen: <strong>three-finger swipe omhoog of omlaag</strong>. Herhaal het gebaar om door de beschikbare reading controls te bladeren. TalkBack vertelt welke instelling actief is (<em>&quot;Koppen&quot;</em>, <em>&quot;Links&quot;</em>, <em>&quot;Bedieningselementen&quot;</em>, …).</li>
+<li><strong>Volgend element van dat type</strong>: veeg met één vinger <strong>omlaag</strong>.</li>
+<li><strong>Vorig element van dat type</strong>: veeg met één vinger <strong>omhoog</strong>.</li>
+</ul>
+<p>Welke reading controls beschikbaar zijn, stel je in via <strong>TalkBack-instellingen → Menu's aanpassen → Reading controls aanpassen</strong>. Sommige opties staan standaard uit.</p>
+<h4>Systeemnavigatie met TalkBack</h4>
+<p>Als TalkBack aan staat, werken ook een aantal toestel-acties met gebaren:</p>
+<ul>
+<li><strong>Terug</strong>: veeg <strong>omlaag en dan naar links</strong>.</li>
+<li><strong>Beginscherm</strong>: veeg <strong>omhoog en dan naar links</strong>.</li>
+<li><strong>Recente apps</strong>: veeg <strong>naar links en dan omhoog</strong>.</li>
+<li><strong>Meldingen openen</strong>: veeg <strong>naar rechts en dan omlaag</strong>, of met twee vingers omlaag vanaf de bovenkant.</li>
+</ul>
+<h4>Bevindingen reproduceren</h4>
+<p>In dit rapport staat bij elke bevinding een <strong>&quot;Hoe te reproduceren&quot;</strong>-sectie. Daar leggen we uit welke stappen en welke gebaren je moet gebruiken om het probleem zelf te zien. Gebruik deze instructie als naslag: als een stap verwijst naar <em>&quot;de volgende kop&quot;</em>, dan weet je dat je de reading controls op <strong>Koppen</strong> moet zetten en met één vinger omlaag veegt.</p>
+<p>Kom je er niet uit? Stuur ons gerust een mail op <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a> — we denken graag mee.</p>
+
+          </div>
+        </details>
+      </div>
+    </section>
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-op-veel-schermen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-op-veel-schermen">01 Op veel schermen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#1 - Schermen werken maar in één weergaverichting</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.4</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.4</span>  
+</div>
+<p>De indeling van sommige schermen werkt alleen in één weergaverichting (staand). Websites en apps moeten bruikbaar zijn in zowel staande als liggende stand. Bezoekers moeten zelf kunnen kiezen welke richting voor hen het prettigst is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Mijn apparaat staat vast in één richting, bijvoorbeeld omdat de tablet aan mijn rolstoel is bevestigd, omdat ik mijn telefoon met één hand vasthoud, of vanwege een vaste werkopstelling. Ik heb nodig dat elk scherm in de app zowel staand als liggend goed wordt weergegeven. Nu werkt de indeling alleen in de richting die ik niet kan gebruiken, en ben ik buitengesloten totdat iemand het apparaat voor me draait.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de inhoud van de app meedraait en zich aanpast aan de gekozen weergaverichting (staand of liggend).</p>
+</div>
+<div class="issue">
+<h3>#2 - Focus-indicator heeft onvoldoende contrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/31.jpg" alt="">
+</figure>
+<p>Door de hele app is de focus-indicator van verschillende elementen alleen te onderscheiden aan een subtiele kleurverandering of aan een rand met laag contrast. Het contrast tussen de gefocuste en de niet-gefocuste staat, of tussen de focusrand en de achtergrond, is lager dan 3:1. Daardoor kunnen mensen met een verminderde kleurwaarneming niet zien waar de focus staat.</p>
+<p>Een paar voorbeelden, al is dit geen uitputtende lijst:</p>
+<ul>
+<li>&quot;Home&quot;-scherm: roze focus op de tabs in de header</li>
+<li>&quot;Home&quot;-scherm: grijze focus op de meeste elementen, zoals nieuwsartikelen en knoppen als &quot;WK Voetbal 2026&quot;</li>
+<li>&quot;Home&quot;-scherm: nauwelijks zichtbare lichtroze focus op de opties in het menu onderaan</li>
+<li>&quot;Puzzels&quot;-scherm: lichte kleurverandering van de tekst op de knop &quot;Speel&quot;</li>
+<li>&quot;Sudoku&quot;-scherm: gele rand rond verschillende elementen, zoals &quot;Archief&quot; en de &quot;x&quot;-knop</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik door de app navigeer, kan ik niet zien welk element nu geselecteerd is. Ik verwacht dat de focus-indicator duidelijk afsteekt tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de focus-indicator minimaal 3:1 contrast ten opzichte van zowel het gefocuste element als de omringende achtergrond. Vertrouw niet alleen op een subtiele kleurverschuiving: combineer kleur met een tweede signaal, zoals een zichtbare rand, een onderstreping, een dikkere rand of een gevulde achtergrond. Controleer dat elke focus-staat (default, geselecteerd, disabled) aan de verhouding voldoet, in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#3 - Toetsenbordfocus is niet zichtbaar</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.7</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.7</span>  
+</div>
+<p>Op verschillende schermen verschijnt er geen zichtbare focus-indicator wanneer een element focus krijgt, bijvoorbeeld via een extern toetsenbord of via Switch Access (Android). Mensen die zonder aanraking navigeren, kunnen dan niet zien welk element op dat moment focus heeft.</p>
+<p>Een paar voorbeelden:</p>
+<ul>
+<li>de knop &quot;Instellingen&quot; in de header</li>
+<li>&quot;Zoeken&quot;-scherm: de knop &quot;Toon meer&quot; onder de zoekresultaten</li>
+<li>de &quot;Play&quot;-knoppen op alle podcasts</li>
+<li>&quot;Sudoku&quot;-scherm: het hele sudoku-element en andere interactieve elementen door de hele app</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een toetsenbord. Wanneer ik door de verschillende schermen navigeer, kan ik niet zien welk element actief is. Ik verwacht dat het actieve element altijd duidelijk zichtbaar is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk focusbaar element een duidelijk zichtbare focus-indicator toont. Gebruik de standaard focus-highlight, of pas een custom <code>stateListAnimator</code> of <code>foreground</code>-drawable toe die reageert op de gefocuste staat. De indicator moet minimaal 3:1 contrast hebben ten opzichte van zowel het element als de achtergrond eromheen.</p>
+</div>
+<div class="issue">
+<h3>#4 - Knop &quot;Instellingen&quot; heeft een onduidelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/11.jpg" alt="">
+</figure>
+<p>Nadat de gebruiker is ingelogd, verandert de instellingenknop in een knop met alleen een initiaal, bijvoorbeeld &quot;J&quot;. TalkBack kondigt die aan als &quot;Hoofdletter J&quot;, wat het doel van de knop niet beschrijft. Vóór het inloggen had dezelfde knop nog een duidelijke naam, zoals &quot;Instellingen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat de instellingenknop een duidelijke toegankelijke naam heeft, zodat ik begrijp wat de knop doet voordat ik hem activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de knop na het inloggen een betekenisvolle toegankelijke naam. De zichtbare initiaal mag op het scherm blijven staan, maar de toegankelijke naam moet de actie of bestemming beschrijven, bijvoorbeeld &quot;Profiel&quot;, &quot;Account&quot; of &quot;Instellingen&quot;.</p>
+</div>
+<div class="issue">
+<h3>#5 - Tekst valt weg bij vergroting</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.4</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/29.jpg" alt="">
+</figure>
+<p>Op sommige schermen is een deel van de tekst niet volledig zichtbaar wanneer de systeemtekstgrootte fors wordt vergroot. Tekst moet volledig leesbaar blijven, zonder afgekapt of afgesneden te worden, wanneer iemand de tekst vergroot tot 200%.</p>
+<p>Zie de volgende voorbeelden:</p>
+<ul>
+<li>&quot;Home&quot;-scherm, in de sectie &quot;Nieuwste afleveringen NRC-podcasts&quot;: teksten als &quot;Onbehaarde Apen&quot; en &quot;min&quot;. Dezelfde kwestie speelt op alle schermen met podcasts</li>
+<li>&quot;Zoeken&quot;-scherm: de placeholdertekst en teksten als &quot;Een extra account voor een…&quot; en &quot;Bewaar artikelen om later te…&quot;</li>
+<li>&quot;Onderwerpen&quot;-scherm: lange namen van auteurs of onderwerpen</li>
+<li>&quot;Mijn nieuws&quot;-scherm: de tekst &quot;Geen nieuwe artikelen&quot;, en op andere schermen</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik mijn telefoon met een grote tekstgrootte. Als ik die optie aanzet, wordt een deel van de tekst afgekapt en kan ik die niet lezen. Ik verwacht dat alle tekst zichtbaar en leesbaar blijft bij 200% vergroting.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat tekstcontainers meegroeien, terugvloeien of scrollen om grotere tekstgroottes op te vangen. Vermijd vaste hoogtes en breedtes op views die tekst bevatten, vermijd <code>maxLines</code> zonder scroll-alternatief, en gebruik <code>sp</code>-eenheden bij <code>android:textSize</code> zodat tekst de systeeminstelling respecteert. Test elk scherm met de grootste tekstgrootte van de telefoon, in zowel staande als liggende stand, om te bevestigen dat geen tekst wordt afgekapt, afgesneden of achter andere elementen verdwijnt.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-onze-journalistiek-is-ons-product-niet-onze-lezers-cookie-banner">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-onze-journalistiek-is-ons-product-niet-onze-lezers-cookie-banner">02 Onze journalistiek is ons product, niet onze lezers (cookie-banner) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#6 - Het hele scherm krijgt focus en wordt als één blok voorgelezen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1, 2.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1, 11.2.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/22.jpg" alt="">
+</figure>
+<p>Wanneer de app voor het eerst wordt geopend, verschijnt het scherm &quot;Onze journalistiek is ons product, niet onze lezers&quot;. Dit hele scherm krijgt focus en wordt als één groot blok voorgelezen, zonder betekenisvolle structuur. Visueel bevat het koppen en lijsten, maar die zitten niet in de code en worden niet aan schermlezergebruikers doorgegeven. Daardoor zijn de inhoud begrijpen en het scherm doorlopen erg lastig.</p>
+<p>Hetzelfde probleem speelt op andere schermen:</p>
+<ul>
+<li>het scherm dat verschijnt na een tik op &quot;Zelf instellen&quot;</li>
+<li>&quot;Podcasts&quot;-scherm, onder &quot;Podcasts van adverteerders&quot;</li>
+<li>&quot;Podcast: Van Mozart tot Bob Dylan&quot;, de sectie onder &quot;Over deze aflevering&quot;, en op andere schermen</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik heb nodig dat de inhoud op het scherm in betekenisvolle elementen is opgedeeld, zodat ik er onderdeel voor onderdeel doorheen kan navigeren in plaats van het hele scherm in één keer te horen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verwijder de kunstmatige focusbare wrapper die ervoor zorgt dat het hele scherm focus krijgt. Bied de inhoud aan als losse, gestructureerde elementen zoals koppen, teksten, knoppen en lijsten.</p>
+</div>
+<div class="issue">
+<h3>#7 - Links zijn niet bereikbaar voor TalkBack-gebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op het scherm &quot;Onze journalistiek is ons product, niet onze lezers&quot; staan in de tekst de links &quot;privacy&quot;, &quot;Cookieverklaring&quot; en &quot;onze partners&quot;. Deze links worden niet aan de toegankelijkheidsservice doorgegeven. Daardoor kunnen TalkBack-gebruikers er niet zelfstandig naartoe navigeren, ze geen focus geven en ze niet activeren. Dezelfde kwestie speelt bij de link &quot;cookieverklaring&quot; op het scherm dat verschijnt na een tik op &quot;Zelf instellen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat links binnen tekst toegankelijkheidsfocus krijgen, zodat ik ze zelfstandig kan vinden en activeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat links binnen tekst als losse toegankelijke elementen worden aangeboden en focus kunnen krijgen. Ze moeten door TalkBack als link worden aangekondigd en met de standaardgebaren bedienbaar zijn.</p>
+</div>
+<div class="issue">
+<h3>#8 - Icoon voor externe link heeft geen tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op het scherm &quot;Onze journalistiek is ons product, niet onze lezers&quot; staan bij de links &quot;privacy&quot; en &quot;Cookieverklaring&quot; iconen die aangeven dat de bestemming buiten de app ligt. Deze informatie wordt niet doorgegeven aan TalkBack-gebruikers, die daardoor niet weten dat de link de browser opent. Dezelfde kwestie speelt bij de link &quot;cookieverklaring&quot; op het scherm na een tik op &quot;Zelf instellen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil weten wanneer een link inhoud buiten de app opent, zodat ik weet wat ik kan verwachten voordat ik hem activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de informatie van het externe-link-icoon wordt doorgegeven aan hulpsoftware. Maak het icoon niet als apart focusbaar element zichtbaar, want het geeft alleen visuele informatie. Neem de informatie op in de toegankelijke naam of beschrijving van de link, bijvoorbeeld &quot;privacy, opent in browser&quot;.</p>
+</div>
+<div class="issue">
+<h3>#9 - Koppen missen de juiste opmaak</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op het scherm &quot;Onze journalistiek is ons product, niet onze lezers&quot; opent na een tik op &quot;Zelf instellen&quot; en bijvoorbeeld de accordeon &quot;Analytisch&quot; een nieuw scherm. De tekst &quot;Analytisch&quot; bovenaan is niet als kop opgemaakt. Zonder die opmaak verliest een kop zijn betekenis en is hij niet bereikbaar voor mensen die hulpsoftware zoals een schermlezer gebruiken. Koppen zijn juist cruciaal om door inhoud te navigeren en de structuur te begrijpen.</p>
+<p>Dezelfde kwestie speelt op andere schermen:</p>
+<ul>
+<li>&quot;Home&quot;-scherm en andere schermen: de knop &quot;Instellingen&quot; in de hoek bovenaan</li>
+<li>de kop &quot;Digitale krant&quot; op het &quot;Krant&quot;-scherm</li>
+<li>de kop &quot;Krantenarchief&quot; op het &quot;Krantenarchief&quot;-scherm</li>
+<li>de kop &quot;Advertentie&quot; op het &quot;Puzzels&quot;-scherm</li>
+<li>de koppen &quot;Direct naar&quot; en &quot;Services&quot; op het &quot;Zoeken&quot;-scherm, en op andere schermen</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en navigeer met de leesinstellingen op koppen, zodat ik niet door elk element hoef te swipen. Als koppen niet goed zijn gedefinieerd, moet ik het scherm onderdeel voor onderdeel doorlopen en is informatie lastig efficiënt te vinden.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef deze teksten de juiste kop-semantiek, zodat hun rol en hiërarchie in de inhoud kloppen.</p>
+</div>
+<div class="issue">
+<h3>#10 - Focus is niet logisch en slaat resterende lijstitems over</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<p>Na &quot;Zelf instellen - Beheer onze partners&quot; verschijnt onder &quot;Alle partners (20)&quot; een lijst met items. Bij navigatie met TalkBack bereikt de focus het laatste zichtbare item, maar gaat niet verder naar de overige items. In plaats van de lijst te scrollen en naar het volgende item te gaan, springt de focus naar de voettekst (&quot;Je kan je voorkeuren … van je app&quot;). Daardoor missen gebruikers een deel van de lijst.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat de focus in de juiste volgorde door alle items in een lijst beweegt, zodat ik bij alle inhoud kan komen zonder iets te missen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle items in de lijst in de focusvolgorde zitten. Wanneer de focus het laatste zichtbare item bereikt, moet de lijst automatisch scrollen en de focus naar het volgende item gaan, totdat de hele lijst is doorlopen. De focus mag niet naar inhoud buiten de lijst gaan voordat alle lijstitems zijn bereikt.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-startscherm">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-startscherm">03 Startscherm <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#11 - Tekstalternatief herhaalt andere tekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/20.jpg" alt="">
+</figure>
+<p>Op dit scherm staat onder het &quot;NRC&quot;-logo een afbeelding waarvan het tekstalternatief de tekst eronder herhaalt: &quot;Wil je weten wat er echt speelt? Ontdek onze betrouwbare journalistiek&quot;. Omdat de afbeelding geen extra informatie geeft boven op wat er al staat, kun je haar als decoratief beschouwen.</p>
+<p>Een vergelijkbare kwestie speelt op andere schermen:</p>
+<ul>
+<li>in een venster op nieuwsartikelen heeft een decoratief &quot;cadeau&quot;-icoon het tekstalternatief &quot;Geef dit artikel cadeau&quot;, dat exact de tekst eronder herhaalt</li>
+<li>in elk nieuwsartikel bij de naam van de auteur, bijvoorbeeld &quot;Vera van Winkelen&quot; in het artikel &quot;De Grote Hittegids: met deze tips kom je warme dagen door&quot;</li>
+</ul>
+<figure class="screenshot">
+<img src="images/08.jpg" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en swipe door elk element op het scherm. Ik heb nodig dat decoratieve afbeeldingen, opvulelementen en overbodige iconen verborgen zijn, zodat ik geen tijd verlies aan het langslopen ervan.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg alles wat decoratief of overbodig is voor de toegankelijkheidsstructuur, zodat het niet wordt aangekondigd. Verberg bij een afbeelding naast een tekstlabel de afbeelding en laat het label de toegankelijke naam dragen, of markeer de hele rij als één element met één gecombineerd label. Vuistregel: als een element geen informatie toevoegt die een ziende gebruiker zou missen, mag het niet worden aangekondigd.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-instellingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-instellingen">04 Instellingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwestie met de ontbrekende kop is in een eerdere sectie beschreven.</em></p>
+<div class="issue">
+<h3>#12 - Contrast van tekst op knop is minder dan 4,5:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 9.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/05.jpg" alt="">
+</figure>
+<p>Op dit scherm heeft de knop &quot;Inloggen&quot; onvoldoende kleurcontrast. De witte tekst op de groene achtergrond (<code>#5F9A1A</code>) heeft een contrastverhouding van 3,4:1, onder het vereiste minimum van 4,5:1 voor normale tekst.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking, of ik gebruik mijn telefoon in fel zonlicht. Wanneer ik naar een knop kijk, is de tekst lastig te lezen omdat hij niet afsteekt tegen de achtergrond. Ik verwacht dat knoptekst altijd duidelijk zichtbaar is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knoptekst een contrastverhouding van minimaal 4,5:1 heeft ten opzichte van de achtergrondkleur.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-home-nieuws">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-home-nieuws">05 Home - Nieuws <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#13 - Visuele koppen zijn niet als kop opgemaakt</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/23.jpg" alt="">
+</figure>
+<p>Op dit scherm ziet de tekst onder &quot;Kernenergie&quot; (&quot;Twee kerncentrales komen óf in de Groningse Eemshaven óf in het Zeeuwse Terneuzen. 'Doe ons dit niet aan', klinkt al&quot;) er visueel uit als een kop, maar wordt niet als kop aan hulpsoftware doorgegeven. Schermlezergebruikers leunen op kop-semantiek om de structuur te begrijpen en tussen secties te springen. Vergelijkbare kwesties spelen bij andere nieuwsartikelen op dit scherm en bij soortgelijke elementen op veel andere schermen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik tussen koppen door spring, zijn sommige visuele koppen onzichtbaar voor mijn schermlezer. Ik verwacht dat alle visuele koppen ook door mijn schermlezer als echte koppen worden herkend.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer het element als kop, zodat hulpsoftware het correct doorgeeft. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#14 - Animatie kan niet worden gepauzeerd, gestopt of verborgen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.2.2</span>  
+	<span class="sc"><b>EN</b>: 9.2.2.2</span>  
+</div>
+<p>In het artikel &quot;De metro in Londen is 'walgelijk heet' … tunnels net te krap&quot; wisselen twee afbeeldingen eindeloos af, langer dan 5 seconden, zonder dat je dit kunt pauzeren, stoppen of verbergen. Dat kan erg afleidend zijn voor mensen met een cognitieve beperking of een aandachtsstoornis.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik raak afgeleid door beweging op een pagina. Wanneer bewegende inhoud langer dan 5 seconden speelt, lukt het me niet om de tekst te lezen. Ik verwacht dat ik de animatie kan pauzeren of stoppen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied een manier om de animatie te pauzeren, te stoppen of te verbergen, bijvoorbeeld een pauze- of stopknop.</p>
+</div>
+<div class="issue">
+<h3>#15 - Knoplabel wordt twee keer aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2, 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2, 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/28.jpg" alt="">
+</figure>
+<p>Op dit scherm bevatten sommige secties knoppen met een pijl, bijvoorbeeld &quot;Meer cultuur&quot; of &quot;Meer opinies&quot;. TalkBack kondigt hun labels dubbel aan: &quot;Meer cultuur Meer cultuur&quot; en &quot;Meer opinies Meer opinies&quot;. Dat levert overbodige informatie op en kan verwarrend zijn voor schermlezergebruikers.</p>
+<p>Vergelijkbare kwesties spelen bij andere interactieve elementen op andere schermen:</p>
+<ul>
+<li>&quot;Zoeken&quot;-scherm: de knop &quot;Zoeken&quot;, alle opties onder &quot;Direct naar&quot; en &quot;Services&quot; (zoals &quot;Laatste nieuws&quot; en &quot;Mijn nieuws&quot;), en het invoerveld &quot;Zoek op trefwoord of naam&quot;</li>
+<li>de actieve optie in de navigatiebalk onderaan, bijvoorbeeld &quot;Nieuws&quot; of &quot;Krant&quot;</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat knoppen maar één keer worden aangekondigd, zodat ik hun doel begrijp zonder dubbele informatie te horen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de toegankelijke naam van de knop maar één keer wordt doorgegeven. Controleer de toegankelijkheidseigenschappen van de knop en eventuele onderliggende elementen, zoals iconen, om dubbele tekst te voorkomen. Decoratieve iconen mogen geen dubbele informatie aan de naam toevoegen.</p>
+</div>
+<div class="issue">
+<h3>#16 - Tekstcontrast is onder het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm staat in de sectie &quot;Nieuwste afleveringen NRC-podcasts&quot; een lijst met podcasts. De datum en duur van elke podcast (bijvoorbeeld &quot;Donderdag 21 min&quot;) zijn grijs (<code>#8C8C8C</code>) op een witte achtergrond, met een contrastverhouding van 3,4:1. Normale tekst moet minimaal 4,5:1 hebben, en grote tekst (18pt en groter, of 14pt vet en groter) minimaal 3,0:1.</p>
+<p>Dezelfde kleurcombinatie wordt op andere schermen gebruikt:</p>
+<ul>
+<li>&quot;Podcasts&quot;-scherm: dag en duur van podcasts, en de teksten &quot;Dagelijks&quot;, &quot;Wekelijks&quot; en &quot;Serie&quot; onder &quot;NRC-podcasts&quot;</li>
+<li>&quot;Zoeken&quot;-scherm: de placeholdertekst &quot;Zoek op trefwoord of naam&quot;</li>
+<li>&quot;Columnist&quot;-scherm: dag en datum van elk artikel</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer tekst nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of allebei aan zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker, voor elke staat waarin de tekst voorkomt (default, disabled, over afbeeldingen, op gekleurde achtergronden) en in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#17 - Focus komt twee keer op hetzelfde element</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/21.jpg" alt="">
+</figure>
+<p>In de sectie &quot;Nieuwste afleveringen NRC-podcasts&quot; staat een lijst met podcasts. Elke podcastkaart krijgt tijdens TalkBack-navigatie meer dan eens focus. De focus belandt eerst op de kaart, gaat dan naar de afspeelknop en keert daarna terug naar dezelfde kaart. Bij die tweede keer is de kaart maar half zichtbaar, wat de focusvolgorde verwarrend en overbodig maakt. Dezelfde kwestie speelt op het &quot;Podcasts&quot;-scherm.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat de focus in een logische volgorde door de podcastlijst beweegt, zodat ik door de inhoud kan navigeren zonder herhaalde of verwarrende focusstops.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elke podcastkaart maar één keer in de focusvolgorde voorkomt, tenzij er losse, betekenisvolle interactieve elementen in zitten. Controleer de toegankelijkheidsstructuur van de kaart en de onderliggende elementen om dubbele focusstops te voorkomen. Na de afspeelknop moet de focus naar het volgende logische item gaan in plaats van terug naar dezelfde kaart.</p>
+</div>
+<div class="issue">
+<h3>#18 - Audio-only-inhoud mist een tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.2.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.2.1</span>  
+</div>
+<p>Op dit scherm staat in de sectie &quot;Nieuwste afleveringen NRC-podcasts&quot; een lijst met podcasts. Geen van de podcasts heeft een teksttranscript. Mensen die doof of slechthorend zijn, kunnen de audio-inhoud dan niet waarnemen. Een teksttranscript biedt een volwaardig alternatief, zodat iedereen bij de informatie kan.</p>
+<p>Dezelfde kwestie speelt op andere schermen met podcasts:</p>
+<ul>
+<li>&quot;Podcasts&quot;</li>
+<li>&quot;Podcast: Van Mozart tot Bob Dylan&quot;</li>
+<li>&quot;Testpagina voor digitale toegankelijkheid - deel 2&quot;</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik ben doof of slechthorend. Wanneer ik een audiofragment in de app tegenkom, mis ik alle gesproken informatie. Ik verwacht dat er een tekstversie beschikbaar is voor alle audio en video zonder geluid.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied bij elke audio-opname (bijvoorbeeld een podcastaflevering) een volledig teksttranscript naast de speler, inclusief namen van sprekers, belangrijke geluiden die geen spraak zijn, en tijdsaanduidingen waar dat nuttig is. Bied bij elke video zonder geluid (bijvoorbeeld een animatie) een tekstbeschrijving met dezelfde informatie, of een audiospoor dat vertelt wat er op het scherm gebeurt. Plaats het alternatief op hetzelfde scherm en zorg dat het bereikbaar is met hulpsoftware.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-buitenland">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-buitenland">06 Buitenland <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met koppen en dubbele labels zijn in eerdere secties beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-krant">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-krant">07 Krant <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met koppen en dubbele labels zijn in eerdere secties beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-krantenarchief">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-krantenarchief">08 Krantenarchief <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#19 - Knoppen missen beschrijvende toegankelijke namen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6, 3.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6, 11.3.1.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/24.jpg" alt="">
+</figure>
+<p>Op dit scherm hebben verschillende elementen een onduidelijke toegankelijke naam. Zie het pijl-icoon in de header (toegankelijke naam &quot;feedCloseButton&quot;), het kalender-icoon in de header (&quot;feedFilterButton&quot;) en het winkelwagen-icoon onder elke editie (&quot;purchaseIcon&quot;). De namen zijn bovendien in het Engels, terwijl de rest van de app Nederlands is.</p>
+<p>Een vergelijkbare kwestie speelt elders in de app:</p>
+<ul>
+<li>elk nieuwsscherm: het pijl-terug-icoon met de toegankelijke naam &quot;Navigate up&quot;</li>
+<li>&quot;Word abonnee bij NRC&quot;-scherm: de &quot;x&quot;-knop met de naam &quot;close&quot; in de vensters die met de &quot;?&quot;-knoppen openen</li>
+<li>&quot;Mijn nieuws&quot;-scherm: de pijl-omhoog-knop naast &quot;Volgonderwerpen&quot; (&quot;collapseExpandIcon&quot;), op het tabblad &quot;Mijn leeslijst&quot; de &quot;+&quot;-knop (&quot;addButton&quot;), en de drie-puntjes-knop onder elk nieuwsartikel (&quot;editButton&quot;), en op andere schermen</li>
+</ul>
+<figure class="screenshot">
+<img src="images/07.jpg" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat knoppen duidelijke, Nederlandse toegankelijke namen hebben, zodat ik hun doel begrijp en ze met vertrouwen kan bedienen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef alle interactieve elementen een duidelijke, betekenisvolle en Nederlandse toegankelijke naam. Vervang technische namen als &quot;feedCloseButton&quot; door labels die de functie van de knop beschrijven, en vertaal alle toegankelijke namen naar het Nederlands.</p>
+</div>
+<div class="issue">
+<h3>#20 - Tekstcontrast is onder het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm staat onder elke editie de datum, bijvoorbeeld &quot;18 June&quot; of &quot;19 June&quot;. Die teksten zijn grijs (<code>#878787</code>) op de lichte achtergrond (<code>#F4F4F4</code>), met een contrastverhouding van 3,3:1. Normale tekst moet minimaal 4,5:1 hebben.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid. Wanneer tekst nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of allebei aan zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker.</p>
+</div>
+<div class="issue">
+<h3>#21 - De keuzewieltjes van de datumkiezer kunnen geen focus krijgen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Na een tik op de kalenderknop verschijnen keuzewieltjes voor jaar en maand. Visueel zien ze eruit als gewone Android-keuzewieltjes, maar de TalkBack-focus gaat er niet naartoe. Schermlezergebruikers kunnen de waarden dus niet bereiken of wijzigen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil bij de jaar- en maandkiezers kunnen komen en ze kunnen aanpassen, zodat ik de krantenedities naar wens kan filteren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de keuzewieltjes voor jaar en maand worden doorgegeven aan hulpsoftware en TalkBack-focus kunnen krijgen. Elk wieltje moet een duidelijke toegankelijke naam hebben, zijn huidige waarde doorgeven en de waarde laten wijzigen met de standaard TalkBack-interacties. Bij custom keuzewieltjes moet je de vereiste toegankelijkheidssemantiek voor aanpasbare elementen zelf implementeren.</p>
+</div>
+<div class="issue">
+<h3>#22 - Contrast van tekst op knop is minder dan 4,5:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 9.1.4.3</span>  
+</div>
+<p>Na een tik op de kalenderknop verschijnen filteropties. De knop &quot;Nu&quot; heeft onvoldoende kleurcontrast: de witte tekst op de grijze achtergrond (<code>#C6C6C6</code>) heeft een contrastverhouding van 1,7:1, ruim onder het vereiste minimum van 4,5:1 voor normale tekst.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik naar een knop kijk, is de tekst lastig te lezen omdat hij niet afsteekt tegen de achtergrond. Ik verwacht dat knoptekst altijd duidelijk zichtbaar is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knoptekst een contrastverhouding van minimaal 4,5:1 heeft ten opzichte van de achtergrondkleur.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-podcasts">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-podcasts">09 Podcasts <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met koppen, kleurcontrast en knoplabels zijn in eerdere secties beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-puzzels">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-puzzels">10 Puzzels <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#23 - Focus verlaat het dialoogvenster</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3, 2.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3, 11.2.4.11</span>  
+</div>
+<p>Op dit scherm staat naast &quot;Puzzelreeks&quot; een &quot;?&quot;-knop die het dialoogvenster &quot;Jouw puzzelreeks&quot; opent. Wanneer dat venster open is, blijft de TalkBack-focus niet binnen het venster: gebruikers kunnen naar elementen achter het venster navigeren. Daardoor is voor schermlezergebruikers onduidelijk welke inhoud op dat moment beschikbaar en actief is.</p>
+<p>Een vergelijkbare kwestie speelt elders in de app:</p>
+<ul>
+<li>&quot;Zoeken&quot;-scherm: het venster dat opent met de knop &quot;Toon Filters&quot;</li>
+<li>&quot;Zoeken&quot;-scherm: de tooltip die opent met de &quot;?&quot;-knop naast &quot;Meest relevant&quot;</li>
+<li>&quot;Puzzels&quot;-scherm: de vensters die openen na een tik op een &quot;Speel&quot;-knop, en op andere schermen</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat de focus binnen een geopend dialoogvenster blijft, zodat ik met de inhoud kan werken zonder per ongeluk naar onbereikbare inhoud erachter te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de toegankelijkheidsfocus bij een geopend dialoogvenster beperkt blijft tot het venster en de inhoud ervan, totdat het venster wordt gesloten. Stel <code>android:importantForAccessibility=&quot;no-hide-descendants&quot;</code> in op de inhoud erachter. Geef bij het sluiten de focus terug aan het element dat het venster opende.</p>
+</div>
+<div class="issue">
+<h3>#24 - Meerdere knoppen hebben hetzelfde label</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/26.jpg" alt="">
+</figure>
+<p>Meerdere knoppen op dit scherm hebben het label &quot;Speel&quot;. De omringende inhoud geeft bij doorlopende navigatie misschien wat context, maar het label alleen maakt niet duidelijk bij welke puzzel de knop hoort. Daardoor kunnen schermlezergebruikers de knoppen lastig uit elkaar houden, vooral bij navigatie per element. Een vergelijkbare kwestie speelt bij de knoppen &quot;Inschrijven&quot; op het &quot;Nieuwsbrieven&quot;-scherm.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat elke &quot;Speel&quot;-knop duidelijk maakt welke inhoud hij bedient, zodat ik het juiste item kan kiezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elke &quot;Speel&quot;-knop een beschrijvende toegankelijke naam met informatie over de bijbehorende inhoud. In plaats van alleen &quot;Speel&quot; kun je bijvoorbeeld &quot;Speel Crux&quot; of &quot;Speel Sudoku&quot; aankondigen. Zorg dat gebruikers het doel van elke knop kunnen herkennen, los van de omringende inhoud.</p>
+</div>
+<div class="issue">
+<h3>#25 - Afbeeldingslink heeft geen toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2, 1.1.1, 2.5.3, 2.4.4</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2, 11.1.1.1, 11.2.5.3, 11.2.4.4</span>  
+</div>
+<p>Onderaan dit scherm staat een advertentiebanner die als link werkt. Het element heeft geen betekenisvolle toegankelijke naam. Schermlezergebruikers horen wel dat het een afbeelding en een link is, maar kunnen het doel of de bestemming niet bepalen voordat ze hem activeren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Wanneer ik een link zonder naam tegenkom, hoor ik alleen &quot;link&quot;, zonder context. Ik verwacht dat elk element een duidelijke naam heeft die het doel uitlegt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk interactief element een toegankelijke naam. Stel <code>contentDescription</code> in, of zorg dat de zichtbare tekst van het element als toegankelijke naam wordt doorgegeven. De naam moet het doel van het element kort beschrijven en overeenkomen met het zichtbare label, zodat Voice Access-gebruikers het kunnen activeren door de naam uit te spreken.</p>
+</div>
+<div class="issue">
+<h3>#26 - Sommige knoppen ontbreken in de focusnavigatie</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<p>Na een tik op een &quot;Speel&quot;-knop verschijnt een dialoogvenster. Sommige knoppen krijgen tijdens TalkBack-navigatie geen focus, bijvoorbeeld in het &quot;Sudoku&quot;-venster de knoppen &quot;NRC-sudoku&quot;, &quot;Beginner&quot; en &quot;Gevorderd&quot;. Je kunt deze knoppen wel focussen door ze direct aan te raken, maar niet bereiken met swipe-gebaren. Daardoor missen mensen die doorlopend navigeren een deel van de functionaliteit.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat alle knoppen in de focusvolgorde zitten, zodat ik met swipe-navigatie bij alle functionaliteit kan komen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle interactieve knoppen in de focusvolgorde zitten. Gebruikers moeten elke knop kunnen bereiken met standaard TalkBack-swipe-navigatie, zonder elementen via aanraking te hoeven zoeken.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-zoeken">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-zoeken">11 Zoeken <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#27 - Placeholdertekst heeft onvoldoende contrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op dit scherm heeft de placeholdertekst in het zoekveld (&quot;Zoek op trefwoord of naam&quot;) onvoldoende contrast met de achtergrond. De tekst is grijs (<code>#8C8C8C</code>) op wit, met een contrastverhouding van 3,4:1. Mensen met slechtziendheid kunnen de placeholdertekst lastig lezen, zeker bij fel licht of buiten.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid. Ik wil dat placeholdertekst voldoende contrast heeft, zodat ik de informatie in het zoekveld kan lezen en begrijpen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Vergroot het contrast tussen de placeholdertekst en de achtergrond zodat het minimaal 4,5:1 is. Vermijd zeer lichte tekstkleuren die lastig te lezen zijn.</p>
+</div>
+<div class="issue">
+<h3>#28 - Actieve filterstatus wordt niet aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 1.3.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.1.3.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm staat naast het zoekveld een knop &quot;Filters&quot;. Wanneer er filters zijn geselecteerd, verschijnt er visueel een rode indicator op de knop. TalkBack kondigt de knop echter steeds hetzelfde aan, of er nu filters actief zijn of niet. Schermlezergebruikers horen dus niet dat de filterstatus is veranderd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil weten wanneer er filters actief zijn, zodat ik de huidige status van de inhoud begrijp en mijn filters goed kan beheren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de actieve filterstatus aan hulpsoftware wordt doorgegeven. Wanneer filters zijn toegepast, moet de toegankelijke naam, status of beschrijving van de filterknop dat communiceren. TalkBack kan dan bijvoorbeeld &quot;Filters, actief&quot; of &quot;Filters, 3 filters geselecteerd&quot; aankondigen.</p>
+</div>
+<div class="issue">
+<h3>#29 - Eerste optie van de keuzelijst dient als label, maar zit niet in de toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.3</span>  
+	<span class="sc"><b>EN</b>: 9.2.5.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/19.jpg" alt="">
+</figure>
+<p>Op dit scherm verschijnt, zodra er minstens één filter is geselecteerd, onder het zoekveld een keuze-element &quot;Meest relevant&quot;. Het heeft geen zichtbaar label; de eerste optie dient als pseudo-label. Dat pseudo-label verdwijnt zodra je een andere optie kiest. Mensen die spraakbediening gebruiken, geven commando's op basis van zichtbare tekst. Als die tekst (de eerste optie) geen deel uitmaakt van de toegankelijke naam, mislukken de spraakcommando's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik bedien de app met spraakinvoer. Wanneer ik een optie uit een keuzelijst kies, verdwijnt het zichtbare label en kan ik het element niet meer met mijn stem activeren. Ik verwacht dat het label zichtbaar blijft en overeenkomt met de naam die ik uitspreek.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef het keuze-element een blijvend zichtbaar label &quot;Sorteer&quot;, en neem die labeltekst op in de toegankelijke naam van het element, bij voorkeur aan het begin. De toegankelijke naam mag gelijk zijn aan het zichtbare label. De huidige opzet, waarbij het &quot;label&quot; verdwijnt, is niet acceptabel.</p>
+</div>
+<div class="issue">
+<h3>#30 - Randen van selectievakjes en keuzerondjes hebben onvoldoende contrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/15.jpg" alt="">
+</figure>
+<p>Na een tik op de knop &quot;Filters&quot; verschijnt een venster met opties. De randen van alle selectievakjes en keuzerondjes zijn grijs (<code>#B2B2B2</code>) op de witte achtergrond (<code>#F4F4F4</code>). De contrastverhouding is te laag: 2,1:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar de selectievakjes en keuzerondjes staan. Ik verwacht dat invoervelden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>De randen van interactieve elementen, zoals invoervelden, keuzerondjes en selectievakjes, moeten een contrastverhouding van minimaal 3,0:1 hebben ten opzichte van de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#31 - Nieuwslinks hebben onduidelijke toegankelijke namen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.3, 2.4.4</span>  
+	<span class="sc"><b>EN</b>: 11.2.5.3, 11.2.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/27.jpg" alt="">
+</figure>
+<p>TalkBack kondigt nieuwsitems in de zoekresultaten aan als &quot;appview link&quot;, zonder betekenisvolle informatie over de inhoud. Visueel bevat elk item een kop, publicatiedatum, auteur en een stukje voorbeeldtekst, maar die informatie wordt niet doorgegeven bij focus. Schermlezergebruikers kunnen daardoor niet bepalen welk artikel ze openen, en kennen de bestemming van de link niet.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat nieuwslinks betekenisvolle informatie over het bijbehorende artikel geven, zodat ik kan kiezen welk artikel ik open.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk nieuwsitem een betekenisvolle toegankelijke naam doorgeeft die het artikel benoemt. De naam moet de kop bevatten en waar passend extra informatie, zoals de publicatiedatum of de auteur. Vermijd technische namen als &quot;appview&quot; die niet helpen om de inhoud of het doel van de link te begrijpen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-podcast-van-mozart-tot-bob-dylan">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-podcast-van-mozart-tot-bob-dylan">12 Podcast: Van Mozart tot Bob Dylan <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met koppen, alinea-indeling, contrast en andere zijn in eerdere secties beschreven.</em></p>
+<div class="issue">
+<h3>#32 - Statuswijziging wordt niet aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3, 1.3.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3, 11.1.3.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm staat boven de kop &quot;Laatste Afleveringen&quot; een knop &quot;+Volg NRC Onbehaarde Apen&quot;. Wanneer je die activeert, verandert de naam in &quot;-Ontvolg NRC Onbehaarde Apen&quot;, maar TalkBack kondigt dat niet aan. Schermlezergebruikers weten dan niet of hun actie is gelukt.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat veranderingen in de status van een knop worden aangekondigd op het moment dat ze gebeuren, zodat ik weet of mijn actie is gelukt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat statuswijzigingen aan hulpsoftware worden doorgegeven op het moment dat ze plaatsvinden. Wanneer de knop van een volg-staat naar een ontvolg-staat wisselt (of andersom), geef dan een toegankelijkheidsmelding met de bijgewerkte status. De gebruiker moet de bevestiging direct na het activeren krijgen.</p>
+</div>
+<div class="issue">
+<h3>#33 - Tekstcontrast is onder het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm staan onder de kop &quot;INFO&quot; de teksten &quot;Host&quot;, &quot;Gasten&quot;, &quot;Redactie en montage&quot; en &quot;Foto&quot;. Die teksten zijn grijs (<code>#8C8C8C</code>) op de lichte achtergrond (<code>#F4F4F4</code>), met een contrastverhouding van 3,1:1. Normale tekst moet minimaal 4,5:1 hebben. Controleer ook andere schermen op vergelijkbare kleurcombinaties.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid. Wanneer tekst nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of allebei aan zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="13-columnist">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-columnist">13 Columnist <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De bevindingen op dit scherm zijn al in eerdere secties beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="14-onderwerpen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-onderwerpen">14 Onderwerpen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#34 - Geselecteerde staat wordt niet doorgegeven aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/17.jpg" alt="">
+</figure>
+<p>Bovenaan dit scherm staan verschillende filters. Wanneer er één visueel geselecteerd is (bijvoorbeeld &quot;Meest gevolgd (10)&quot;), wordt die geselecteerde staat niet aan hulpsoftware doorgegeven. Schermlezergebruikers horen dus niet of een element geselecteerd is. Een vergelijkbare kwestie speelt op dezelfde pagina, op het tabblad &quot;Volgend&quot; (voor ingelogde gebruikers), bij de bel-iconen die dezelfde naam hebben in geselecteerde en niet-geselecteerde staat.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik een tab, een selectievakje of een filter tegenkom, kan ik niet horen of die op dat moment geselecteerd is. Ik verwacht dat mijn schermlezer de huidige status duidelijk aankondigt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Werk de toegankelijkheidsstatus van het element bij om weer te geven of het geselecteerd is. Roep <code>setSelected(true/false)</code> aan op de view, of gebruik <code>AccessibilityNodeInfoCompat.setCheckable(true)</code> en <code>setChecked(true/false)</code> voor aanvinkbare elementen. Zorg dat de status meebeweegt met elke waardewijziging, zodat schermlezergebruikers altijd de actuele staat horen.</p>
+</div>
+<div class="issue">
+<h3>#35 - Knop heeft geen toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/16.jpg" alt="">
+</figure>
+<p>Na een tik op de knop &quot;Zoeken&quot; verschijnt een zoekveld. Zodra je een zoekopdracht uitvoert, verschijnt er een &quot;x&quot;-knop, maar die heeft geen toegankelijke naam. TalkBack kondigt alleen &quot;Knop&quot; aan, zonder de functie. Schermlezergebruikers weten dan niet wat de knop doet. Een vergelijkbare kwestie speelt onderaan het &quot;Sudoku&quot;-scherm bij de &quot;x&quot;-knop naast &quot;Bekijk dit veld nog eens goed&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik bedien de app met TalkBack. Wanneer ik een knop zonder naam tegenkom, zegt de schermlezer alleen &quot;Knop&quot;, zonder context. Ik verwacht dat elke knop een duidelijke naam heeft die de functie beschrijft.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk interactief element een toegankelijke naam. Stel <code>contentDescription</code> in, of gebruik een native <code>Button</code> met een tekstattribuut. Kies bij voorkeur native elementen: die geven de juiste rol automatisch door.</p>
+</div>
+<div class="issue">
+<h3>#36 - Melding dat er geen zoekresultaten zijn, wordt niet voorgelezen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 9.4.1.3</span>  
+</div>
+<p>Na een tik op de knop &quot;Zoeken&quot; verschijnt een zoekveld. Wanneer er geen resultaten zijn, verschijnt eronder de melding &quot;Sorry, we hebben niets kunnen vinden&quot;. Deze statusmelding wordt niet door de schermlezer voorgelezen. Statusmeldingen moeten automatisch worden voorgelezen zodra ze verschijnen of veranderen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil het horen wanneer mijn zoekopdracht niets oplevert, zodat ik de uitkomst begrijp en mijn zoekopdracht zo nodig kan aanpassen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de melding aan hulpsoftware wordt doorgegeven zodra die verschijnt. Bied haar aan als statusmelding, zodat schermlezergebruikers de uitkomst van de zoekopdracht meteen na het bijwerken van de resultaten horen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="15-nieuwsbrieven">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-nieuwsbrieven">15 Nieuwsbrieven <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwestie met knopnamen is in een eerdere sectie beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="16-e-book">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#16-e-book">16 E-book <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#37 - Logo is niet beschikbaar voor schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/13.jpg" alt="">
+</figure>
+<p>Op dit scherm staat onder de knoppen &quot;Inloggen&quot; en &quot;Abonneer&quot; het logo &quot;Manteau&quot;. Het logo is verborgen voor hulpsoftware en kan geen TalkBack-focus krijgen. Schermlezergebruikers krijgen de informatie van het logo dus niet, en kunnen niet bij het tekstalternatief.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat het logo een toegankelijk tekstalternatief heeft, zodat ik begrijp welke informatie het overbrengt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef het logo een betekenisvol tekstalternatief en geef het door aan hulpsoftware. De toegankelijke naam moet dezelfde informatie bevatten die visueel beschikbaar is.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="17-word-abonnee-bij-nrc">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#17-word-abonnee-bij-nrc">17 Word abonnee bij NRC <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#38 - Tekstcontrast is onvoldoende</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/06.jpg" alt="">
+</figure>
+<p>Op dit scherm staat onder elk abonnementstype een groene tekst (<code>#4A8405</code>) op een lichtgroene achtergrond (<code>#EFF5E7</code>), bijvoorbeeld &quot;56% korting&quot;. Die teksten hebben een contrastverhouding van 3,3:1, minder dan het vereiste minimum van 4,5:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid of een verminderde contrastgevoeligheid, of ik gebruik mijn telefoon in fel licht. Ik wil dat tekst voldoende contrast heeft met de achtergrond, zodat ik de inhoud zonder moeite kan lezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of allebei aan zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker.</p>
+</div>
+<div class="issue">
+<h3>#39 - Focus wordt aan het zicht onttrokken</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.11</span>  
+	<span class="sc"><b>EN</b>: 9.2.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/30.jpg" alt="">
+</figure>
+<p>Op dit scherm staat een vastgezette header &quot;Alle artikelen, podcasts en puzzles. Abonnementen&quot;. Wanneer je met een extern toetsenbord van onder naar boven navigeert, verdwijnen gefocuste elementen soms achter die header, bijvoorbeeld de &quot;?&quot;-knoppen. Toetsenbordgebruikers kunnen dan niet zien welk element actief is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een extern toetsenbord. Wanneer ik met Shift+Tab door de pagina ga, verdwijnt het actieve element achter andere inhoud. Ik verwacht altijd te kunnen zien welk element ik heb geselecteerd.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat het gefocuste element nooit volledig achter andere inhoud verdwijnt.</p>
+</div>
+<div class="issue">
+<h3>#40 - Decoratieve iconen zijn niet verborgen voor de schermlezer</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/10.jpg" alt="">
+</figure>
+<p>Op dit scherm staan onder &quot;Veelgestelde vragen&quot; verschillende accordeons. De pijl-iconen van de accordeons worden aan TalkBack doorgegeven en aangekondigd als &quot;icoon&quot;. Die iconen zijn puur decoratief, want de open- of dichtstaat wordt al aangekondigd. Ze zouden verborgen moeten zijn, zodat schermlezergebruikers geen overbodige informatie horen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat decoratieve iconen worden genegeerd, zodat ik alleen betekenisvolle informatie over de accordeon en zijn status hoor.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg decoratieve pijl-iconen voor hulpsoftware. De accordeon moet zijn label, rol en open/dicht-staat doorgeven, terwijl het icoon niet wordt aangekondigd. Stel bijvoorbeeld voor Android Views <code>android:importantForAccessibility=&quot;no&quot;</code> in.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="18-inloggen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#18-inloggen">18 Inloggen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#41 - Doel van invoervelden is niet programmatisch ingesteld</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.5</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.5</span>  
+</div>
+<p>Op dit scherm verzamelen de invoervelden gegevens over de gebruiker (e-mailadres, wachtwoord), maar ze geven hun doel niet door aan het systeem. De autofill en wachtwoordbeheerder van het toetsenbord kunnen dan geen passende suggestie doen, waardoor mensen de gegevens elke keer handmatig moeten typen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb beperkte motoriek. Wanneer ik een formulier invul, kan mijn telefoon mijn opgeslagen gegevens niet automatisch voorstellen. Ik verwacht dat mijn e-mailadres en wachtwoord automatisch worden aangeboden.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel het doel in op elk veld dat gebruikersgegevens verzamelt. Stel op Android <code>android:autofillHints=&quot;emailAddress|phone|...&quot;</code> en <code>android:importantForAutofill=&quot;yes&quot;</code> in, plus <code>android:inputType</code> zodat de toetsenbordindeling klopt. Test met autofill of de wachtwoordbeheerder aan om te bevestigen dat de suggesties verschijnen.</p>
+</div>
+<div class="issue">
+<h3>#42 - Contrast van tekst op knop is minder dan 4,5:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 9.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/04.jpg" alt="">
+</figure>
+<p>Op dit scherm heeft de knop &quot;Inloggen&quot; onvoldoende kleurcontrast. De witte tekst op de groene achtergrond (<code>#57923A</code>) heeft een contrastverhouding van 3,8:1, onder het vereiste minimum van 4,5:1 voor normale tekst.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking, of ik gebruik mijn telefoon in fel zonlicht. Wanneer ik naar een knop kijk, is de tekst lastig te lezen omdat hij niet afsteekt tegen de achtergrond. Ik verwacht dat knoptekst altijd duidelijk zichtbaar is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knoptekst een contrastverhouding van minimaal 4,5:1 heeft ten opzichte van de achtergrondkleur.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="19-mijn-nieuws">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#19-mijn-nieuws">19 Mijn nieuws <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met knopnamen en koppen zijn in eerdere secties beschreven.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="20-de-grote-hittegids-met-deze-tips-kom-je-warme-dagen-door">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#20-de-grote-hittegids-met-deze-tips-kom-je-warme-dagen-door">20 De Grote Hittegids: met deze tips kom je warme dagen door <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>Op dit scherm zijn geen nieuwe bevindingen gedaan.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="21-ik-ben-jaloers-op-mensen-die-kunnen-kamperen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#21-ik-ben-jaloers-op-mensen-die-kunnen-kamperen">21 Ik ben jaloers op mensen die kunnen kamperen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>Op dit scherm zijn geen nieuwe bevindingen gedaan.</em></p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="22-sudoku">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#22-sudoku">22 Sudoku <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#43 - Timerwaarde is niet beschikbaar voor schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/02.jpg" alt="">
+</figure>
+<p>Op dit scherm staat boven de sudokupuzzel een timer die meeloopt tijdens het spel. Wanneer het element TalkBack-focus krijgt, wordt alleen de bediening &quot;Timer pauzeren&quot; aangekondigd. De actuele timerwaarde wordt niet doorgegeven, terwijl die wel zichtbaar is. Schermlezergebruikers hebben dus geen toegang tot dezelfde informatie als ziende gebruikers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat de timerwaarde toegankelijk is, zodat ik mijn voortgang kan volgen terwijl ik het spel speel.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de timerwaarde aan hulpsoftware wordt doorgegeven en programmatisch is gekoppeld aan de bijbehorende bediening. Wanneer de timer focus krijgt, moet de gebruiker naast de beschikbare acties (zoals het pauzeren) ook de actuele verstreken tijd kunnen opvragen.</p>
+</div>
+<div class="issue">
+<h3>#44 - Structuur van het sudokuraster is niet toegankelijk</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1, 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1, 11.2.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/03.jpg" alt="">
+</figure>
+<p>Op dit scherm wordt de sudokupuzzel als één element aan TalkBack doorgegeven. Losse vakjes kunnen geen focus krijgen, en de structuur van het raster wordt niet aan schermlezergebruikers doorgegeven. Daardoor kunnen zij de positie van vakjes niet bepalen, geen waarden nalopen en niet met de puzzel werken.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat het sudokuraster en de vakjes toegankelijk zijn, zodat ik de structuur van de puzzel begrijp en met losse vakjes kan werken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef het sudokuraster en de losse vakjes door aan hulpsoftware. Elk vakje moet focus kunnen krijgen en informatie geven zoals zijn rij, kolom en huidige waarde. Gebruikers moeten met standaard TalkBack-navigatie tussen vakjes kunnen bewegen en met de puzzel kunnen werken.</p>
+</div>
+<div class="issue">
+<h3>#45 - Decoratieve iconen zijn niet verborgen voor de schermlezer</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/01.jpg" alt="">
+</figure>
+<p>Onderaan dit scherm staan de knoppen &quot;Hint&quot;, &quot;Stap terug&quot;, &quot;Hulplijn&quot; en &quot;Herstart&quot;. De iconen op deze knoppen zijn niet verborgen en herhalen de knopnamen, wat dubbele en overbodige informatie oplevert voor schermlezergebruikers. Als de knoppen al duidelijke toegankelijke namen hebben, kunnen de iconen verborgen worden. Een vergelijkbare kwestie speelt op de schermen &quot;Testpagina voor digitale toegankelijkheid - deel 1&quot; en &quot;Testpagina voor digitale toegankelijkheid - deel 2&quot;, bij de knoppen &quot;Als cadeau delen&quot; en &quot;Standaard delen&quot; die na een tik op &quot;Delen&quot; verschijnen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat decoratieve iconen worden genegeerd, zodat ik de toegankelijke naam van een knop maar één keer hoor en geen dubbele informatie krijg.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg decoratieve iconen voor hulpsoftware. Een knop moet zijn label, rol en geselecteerde of niet-geselecteerde staat doorgeven, terwijl het icoon niet wordt aangekondigd.</p>
+</div>
+<div class="issue">
+<h3>#46 - Focusvolgorde is niet logisch wanneer een venster open is</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3, 2.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3, 11.2.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/18.jpg" alt="">
+</figure>
+<p>Op dit scherm opent de knop &quot;Herstart&quot; een dialoogvenster. De toetsenbordfocus wordt echter niet automatisch in het venster geplaatst wanneer het opent, maar blijft op de onderliggende pagina staan.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een toetsenbord en een schermlezer. Wanneer ik een dialoogvenster open, blijft de focus op de achterliggende pagina staan in plaats van naar het venster te gaan. Ik verwacht dat de focus naar het venster gaat zodra het opent.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Regel de focusvolgorde zo dat de toegankelijkheidsfocus direct op een logisch element binnen het net geopende dialoogvenster wordt geplaatst.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="23-testpagina-voor-digitale-toegankelijkheid-deel-1">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#23-testpagina-voor-digitale-toegankelijkheid-deel-1">23 Testpagina voor digitale toegankelijkheid - deel 1 <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#47 - Video bevat tekst of logo's zonder alternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.2.3, 1.2.5</span>  
+	<span class="sc"><b>EN</b>: 11.1.2.3, 11.1.2.5</span>  
+</div>
+<p>Op dit scherm staat onder de kop &quot;Agno player&quot; een video. De video bevat op verschillende momenten tekst en logo's (bijvoorbeeld rond 0:01). Er is geen media-alternatief of audiodescriptie. Daardoor is de visuele informatie (tekst en logo's) niet toegankelijk voor blinde gebruikers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Wanneer ik een video bekijk met logo's of tekst in beeld, mis ik die informatie volledig. Ik verwacht een audiodescriptie of een geschreven alternatief met die visuele details.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voor succescriterium 1.2.3 volstaat een geschreven tekst (media-alternatief). Voor succescriterium 1.2.5 is dat niet genoeg: daarvoor moet er een audiodescriptie komen die de visuele elementen in de video beschrijft, zoals namen, functies, logo's en tekst.</p>
+</div>
+<div class="issue">
+<h3>#48 - Kaart mist een tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.2.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/12.jpg" alt="">
+</figure>
+<p>Op dit scherm staat onder de kop &quot;Waar zijn de bolwerken van BBB?&quot; een kaart. De kaart &quot;Percentage BBB-stemmen per gemeente&quot; toont gegevens per regio. Ziende gebruikers kunnen een regio selecteren en de bijbehorende informatie bekijken. De inhoud van de kaart is echter niet beschikbaar voor TalkBack-gebruikers, en er is geen toegankelijk alternatief zoals een lijst of tabel.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik kan de kaart niet zien. Ik wil bij de informatie op de kaart kunnen komen, zodat ik dezelfde gegevens heb als ziende gebruikers.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied een toegankelijk alternatief voor de kaartgegevens, zoals een tabel, lijst of andere tekstvorm met dezelfde informatie die visueel beschikbaar is.</p>
+</div>
+<div class="issue">
+<h3>#49 - Kaartgegevens leunen op kleurverschillen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.1, 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.1, 11.1.4.11</span>  
+</div>
+<p>Op dit scherm staat onder de kop &quot;Waar zijn de bolwerken van BBB?&quot; een kaart met een legenda. Ze gebruiken alleen verschillende tinten groen om de waarden per regio weer te geven. Gebruikers moeten die kleurverschillen onderscheiden om de informatie te begrijpen, wat lastig is voor mensen met een kleurzienbeperking of slechtziendheid, zeker waar het contrast tussen aangrenzende tinten klein is. Sommige kleuren hebben ook op een witte achtergrond een laag contrast, zoals <code>#85BB79</code>, met een verhouding van 2,2:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een kleurzienbeperking of slechtziendheid. Ik wil dat kaartgegevens niet alleen met kleur worden overgebracht, zodat ik de informatie goed kan interpreteren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat het contrast tussen de informatie-elementen op de kaart en de legenda minimaal 3,0:1 is. Controleer alle gebruikte kleuren.</p>
+</div>
+<div class="issue">
+<h3>#50 - Afbeeldingen hebben weinig zinvolle tekstalternatieven</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/09.jpg" alt="">
+</figure>
+<p>Op dit scherm worden onder de kop &quot;Olympische Spelen&quot; afbeeldingen van sporten aangekondigd met bestandsnamen of andere niet-beschrijvende tekst. Die aankondigingen helpen schermlezergebruikers niet om het doel of de inhoud van de afbeeldingen te begrijpen. Het is onduidelijk of de afbeeldingen decoratief of informatief zijn. Dezelfde kwestie speelt op het scherm &quot;Testpagina voor digitale toegankelijkheid - deel 2&quot;, bij de afbeeldingen onder de koppen &quot;Kaart&quot; en &quot;Kaartenslider&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil dat afbeeldingen ofwel een betekenisvol tekstalternatief hebben, ofwel verborgen zijn voor hulpsoftware als ze decoratief zijn, zodat ik alleen nuttige informatie krijg.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Beoordeel het doel van elke afbeelding. Verberg decoratieve afbeeldingen voor hulpsoftware. Geef informatieve afbeeldingen een betekenisvol tekstalternatief dat het doel of de inhoud overbrengt. Gebruik geen bestandsnamen, interne identifiers of andere niet-beschrijvende tekst.</p>
+</div>
+<div class="issue">
+<h3>#51 - Bedienelement voor afbeeldingsvergelijking is niet toegankelijk</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Onder de kop &quot;Foto voor-na&quot; staat een component waarmee je twee afbeeldingen vergelijkt door een scheidingslijn te verslepen. Deze functie is niet bereikbaar via TalkBack-navigatie. Schermlezergebruikers kunnen het bedienelement niet bereiken of bedienen, en hebben dus geen toegang tot dezelfde functionaliteit als ziende gebruikers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Ik wil het vergelijkingscomponent kunnen bereiken en bedienen, zodat ik dezelfde informatie en functionaliteit heb als ziende gebruikers.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Beoordeel of het vergelijkingscomponent informatie overbrengt die belangrijk is. Is de vergelijking informatief, geef het bedienelement dan door aan hulpsoftware, zorg dat het focus kan krijgen, en bied een toegankelijke manier om bij de informatie van beide afbeeldingen te komen. Is de vergelijking puur decoratief, overweeg dan het component voor hulpsoftware te verbergen, zodat schermlezergebruikers geen ontoegankelijke functie tegenkomen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="24-testpagina-voor-digitale-toegankelijkheid-deel-2">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#24-testpagina-voor-digitale-toegankelijkheid-deel-2">24 Testpagina voor digitale toegankelijkheid - deel 2 <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p><em>De kwesties met podcasts, afbeeldingen, focus, contrast en andere zijn in eerdere secties beschreven.</em></p>
+<div class="issue">
+<h3>#52 - Wissel van slide alleen met gebaar of muisaanwijzer</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.1</span>  
+	<span class="sc"><b>EN</b>: 9.2.5.1</span>  
+</div>
+<p>Op dit scherm staat onder de kop &quot;Kaartenslider&quot; een carrousel. Je navigeert door de slides door ze horizontaal te slepen. WCAG vereist dat er, als een component een specifiek gebaar als slepen nodig heeft, ook een eenvoudiger alternatief is. Dat is er voor mensen die geen precieze gebaren kunnen maken of die hulpsoftware gebruiken zoals een hoofdpointer, oogbesturing of een spraakgestuurde muis. Sommige aanwijsapparaten kunnen geen multi-touch- of trackpadgebaren maken, of missen de precisie voor complexe gebaren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb beperkte motoriek en kan niet betrouwbaar swipen of slepen. Wanneer een carrousel alleen op swipe- of sleepgebaren reageert, blijf ik op één slide hangen. Ik verwacht een alternatief met één tik, zoals een vorige- en volgende-knop.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Maak de carrousel ook bedienbaar met eenvoudige tikken of met knoppen.</p>
+</div>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de app op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je app te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>
