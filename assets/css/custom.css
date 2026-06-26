@@ -4465,6 +4465,24 @@ html.dark .toolsuite-promo__text {
   margin-top: 0.125rem;
 }
 
+.hp-proof__case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #A30D4B;
+  text-decoration: none;
+}
+
+.hp-proof__case-link:hover {
+  text-decoration: underline;
+}
+
+.hp-proof__case-link .material-symbols-outlined {
+  font-size: 1.125rem;
+}
+
 /* Card 3: Quote */
 .hp-proof__card--quote {
   position: relative;
@@ -4628,6 +4646,8 @@ html.dark .toolsuite-promo__text {
 .hp-how__cta {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -5727,6 +5747,29 @@ html.dark .toolsuite-promo__text {
   text-decoration-color: #A30D4B;
   text-decoration-thickness: 0.12em;
   text-underline-offset: 0.15em;
+}
+
+.hp-pain__cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #A30D4B;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.2em;
+}
+
+.hp-pain__cta-link:hover,
+.hp-pain__cta-link:focus {
+  text-decoration-color: #fff;
+  text-decoration-thickness: 0.2em;
+}
+
+.hp-pain__cta-link .material-symbols-outlined {
+  font-size: 1.25rem;
+  color: #A30D4B;
 }
 
 .hp-pain__link:hover,
@@ -12957,25 +13000,120 @@ a.tool-link__href-url:hover {
   margin-bottom: 1rem;
 }
 
-.case__body > ul,
-.case__body > ol {
+/* De :not()-varianten matchen de centreer-regel hierboven
+   (.case__body > :not(.case-section):not(.protected-section), specificiteit 0,3,0)
+   en moeten die overtreffen, anders krijgen lijsten dezelfde 1rem-gutter als
+   paragrafen en verdwijnt de inspringing. */
+.case__body > ul:not(.case-section):not(.protected-section),
+.case__body > ol:not(.case-section):not(.protected-section) {
   color: #374151;
   line-height: 1.8;
   margin-bottom: 1rem;
-  /* 1rem gutter (gedeeld met paragrafen) + 1em inspringing voor de lijst */
-  padding-left: 2rem;
+  /* 1rem gutter (gedeeld met paragrafen) + extra inspringing voor de lijst */
+  padding-left: 2.5rem;
 }
 
-.case__body > ul {
+.case__body > ul:not(.case-section):not(.protected-section) {
   list-style: disc;
 }
 
-.case__body > ol {
+.case__body > ol:not(.case-section):not(.protected-section) {
   list-style: decimal;
 }
 
 .case__body > ul li,
 .case__body > ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contactkaart in artikel (bv. Phi onderaan): alleen border, geen vlak. */
+.case__body > .article-contact:not(.case-section):not(.protected-section) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 720px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.article-contact__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.article-contact__meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.article-contact__name {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.article-contact__role {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-bottom: 0.25rem;
+}
+
+.article-contact__link {
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.95rem;
+}
+
+.article-contact__link:hover {
+  color: #A30D4B;
+}
+
+/* Quote-notice (o.a. "Artikel 1 van de Grondwet"): geen grijze achtergrond,
+   donkere tekst voor voldoende contrast, magenta accentrand. */
+.notice.quote {
+  color: #1F2937;
+  background-color: transparent;
+  border-color: #A30D4B;
+}
+
+.notice.quote .notice-head p {
+  color: #1F2937;
+}
+
+.notice.quote .notice-head svg {
+  color: #A30D4B;
+}
+
+/* Zelfde lijst-inspringing in de blog-wcag layout (categorie "wcag-uitgelegd"
+   met afbeelding gebruikt .blog-wcag__text i.p.v. .case__body). De prose-regels
+   uit @tailwindcss/typography hebben specificiteit 0,0,0 en verliezen het van de
+   Tailwind-preflight reset `ul,ol{list-style:none}`, dus zetten we het hier
+   expliciet met hogere specificiteit terug. */
+.blog-wcag__text > ul,
+.blog-wcag__text > ol {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.blog-wcag__text > ul {
+  list-style: disc;
+}
+
+.blog-wcag__text > ol {
+  list-style: decimal;
+}
+
+.blog-wcag__text > ul li,
+.blog-wcag__text > ol li {
   margin-bottom: 0.5rem;
 }
 
@@ -14602,8 +14740,11 @@ body.pa-chat--open {
 
 /* Kernzin — opvallende kernuitspraak midden in een artikel */
 .content .kernzin {
-  border-left: 4px solid #A30D4B;
-  padding: 0.75rem 0 0.75rem 1.5rem;
+  border: 1px solid #A30D4B;
+  border-left-width: 5px;
+  background: #f5f5f5;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
   margin: 2.5rem 0;
   max-width: 720px;
   font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
@@ -14616,12 +14757,13 @@ body.pa-chat--open {
   color: #A30D4B;
 }
 html.dark .content .kernzin {
+  background: #1F2937;
   color: #f5f5f5;
 }
 @media (max-width: 640px) {
   .content .kernzin {
     font-size: 1.25rem;
-    padding-left: 1.125rem;
+    padding: 1rem 1.125rem;
   }
 }
 

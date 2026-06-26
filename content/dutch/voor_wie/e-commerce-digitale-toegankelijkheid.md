@@ -34,10 +34,12 @@ banner:
 trust:
   label: "Ervaring met onder andere"
   names:
+    - "Bijenkorf"
     - "Jumbo"
     - "Plus"
     - "NRC"
     - "Eteck"
+    - "Crisp"
 
 faqs:
   - question: "Helpt digitale toegankelijkheid ook bij SEO en conversie?"

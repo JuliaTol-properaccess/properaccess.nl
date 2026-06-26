@@ -30,7 +30,7 @@ Goed nieuws: vaak niet. Je hoeft echt niet elk element op je site toegankelijk t
 
 In de auditwereld doet daarom al jaren de "1-klik-regel" de ronde.
 
-<p class="kernzin">Als het toegankelijke alternatief één klik verwijderd is, mag je het ontoegankelijke element laten zoals het is.</p>
+<p class="kernzin">Als het toegankelijke alternatief één klik verderop staat, mag je het ontoegankelijke element laten zoals het is.</p>
 
 Die regel klopt in grote lijnen en hij is praktisch.
 
