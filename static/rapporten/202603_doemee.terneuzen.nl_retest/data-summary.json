@@ -2,7 +2,8 @@
   "impact": {
     "Klein": 0,
     "Medium": 11,
-    "Groot": 8
+    "Groot": 8,
+    "Advies": 0
   },
   "type": {
     "Content": 7,

@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202605_buitenbeter_android">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van de BuitenBeter Android-app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-op-veel-schermen">Op veel schermen</a></li><li><a href="#02-introductie-carrousel-van-5-schermen">Introductie (carrousel van 5 schermen)</a></li><li><a href="#03-home-nieuwe-melding">Home (Nieuwe melding)</a></li><li><a href="#04-menu-mijn-gegevens">Menu - Mijn gegevens</a></li><li><a href="#05-menu-instellingen">Menu - Instellingen</a></li><li><a href="#06-menu-over-buitenbeter">Menu - Over BuitenBeter</a></li><li><a href="#07-mijn-meldingen">Mijn meldingen</a></li><li><a href="#08-een-verstuurd-melding">Een verstuurd melding</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van de BuitenBeter Android-app</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de BuitenBeter Android-app onderzocht tussen 14 en 28 mei 2026. Op dit moment is een deel van de succescriteria als voldoende beoordeeld. In dit rapport lees je welke punten nog verbetering behoeven en hoe deze kunnen worden aangepakt.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.svg" alt="Logo van BuitenBeter B.V.">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="50"
+           data-perceivable="20"
+           data-operable="17"
+           data-understandable="10"
+           data-robust="3">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">50</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="50"
+             data-perceivable="20"
+             data-operable="17"
+             data-understandable="10"
+             data-robust="3">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 17</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 10</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>BuitenBeter B.V.</dd>
+              
+              <dt>Leverancier techniek</dt>
+              <dd>Android (Samsung Galaxy S25, Android 16)</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>28 mei 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle schermen van de BuitenBeter Android-app uit de steekproef</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Web views (inhoud die binnen de app via een browser-component wordt getoond)</li>
+              
+              <li>Ontoegankelijkheden die ontstaan door de manier waarop het device de app rendert, bijvoorbeeld kleurcontrast in alerts of de weergave van sommige knoppen</li>
+              
+              <li>Inhoud afkomstig van derden</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Samsung Galaxy S25 (Android-versie 16)</li>
+              
+              <li>TalkBack schermlezer</li>
+              
+              <li>Extern toetsenbord</li>
+              
+            </ul>
+
+            <h3>Technologieën van de app</h3>
+            <ul>
+              
+              <li>Android (native)</li>
+              
+              <li>TalkBack</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <section class="dash-info">
+      <div class="accordion accordion-highlight">
+        <details>
+          <summary>TalkBack aanzetten en gebruiken (Android)</summary>
+          <div>
+            <p>Om de bevindingen in dit rapport zelf te ervaren, test je de app met <strong>TalkBack</strong> — de schermlezer die standaard op iedere Android-telefoon en -tablet zit. Blinde en slechtziende gebruikers bedienen hun toestel hiermee. Hieronder vind je de stappen om TalkBack aan te zetten en de gebaren die je nodig hebt.</p>
+<blockquote>
+<p><strong>Let op: twee gebarensets.</strong> TalkBack kent twee varianten van sommige gebaren. De <strong>multi-finger-gebaren</strong> (met twee, drie of vier vingers) werken alleen op Android 11 of nieuwer én op Pixel 3 en nieuwer, Samsung Galaxy en een aantal andere toestellen. Op oudere of niet-ondersteunde toestellen gebruik je de <strong>L-vorm-alternatieven</strong> met één vinger. We noemen hieronder waar het verschil uitmaakt. Wil je weten welke set jouw toestel ondersteunt? Zet TalkBack aan en doe een <strong>three-finger tap</strong> — TalkBack vertelt je of multi-finger-gebaren actief zijn.</p>
+</blockquote>
+<blockquote>
+<p><strong>Tip.</strong> Oefen eerst een paar minuten in de <strong>Practice gestures</strong>-modus (op toestellen met multi-finger-ondersteuning: <em>four-finger tap</em>; anders via het TalkBack-menu → <strong>Help &amp; feedback</strong>). Je kunt daar elk gebaar uitproberen zonder dat de app reageert. TalkBack vertelt je telkens welk gebaar je zojuist hebt gemaakt.</p>
+</blockquote>
+<h4>TalkBack aan- en uitzetten</h4>
+<p>De snelste manier is de volumeknop-sneltoets. Ga naar <strong>Instellingen → Toegankelijkheid → TalkBack → TalkBack-sneltoets</strong> en schakel deze in. Vanaf dat moment zet je TalkBack aan of uit door de <strong>volume-omhoog- en volume-omlaag-toets</strong> een paar seconden <strong>tegelijk ingedrukt</strong> te houden.</p>
+<p>Alternatieven:</p>
+<ul>
+<li><strong>Instellingen → Toegankelijkheid → TalkBack</strong> → schakelaar aan of uit.</li>
+<li>Vraag Google Assistant: <em>&quot;Hey Google, zet TalkBack aan&quot;</em> of <em>&quot;… uit&quot;</em>.</li>
+</ul>
+<h4>De belangrijkste gebaren</h4>
+<p>Zodra TalkBack aan staat, werkt je toestel anders dan je gewend bent. Eén keer tikken selecteert alleen een element — je moet <strong>double-tappen</strong> om iets te activeren. Dit zijn de gebaren die je nodig hebt om door een scherm te bewegen:</p>
+<table>
+<thead>
+<tr>
+<th>Gebaar</th>
+<th>Wat het doet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Veeg met één vinger naar rechts</strong></td>
+<td>Spring naar het volgende element.</td>
+</tr>
+<tr>
+<td><strong>Veeg met één vinger naar links</strong></td>
+<td>Spring naar het vorige element.</td>
+</tr>
+<tr>
+<td><strong>Sleep één vinger over het scherm</strong></td>
+<td><em>Explore by touch</em> — TalkBack leest elk element voor dat je vinger raakt. Handig als je niet weet waar iets op het scherm staat.</td>
+</tr>
+<tr>
+<td><strong>Double-tap met één vinger</strong></td>
+<td>Activeer het element dat TalkBack heeft geselecteerd (link openen, knop indrukken, vinkje zetten). Je hoeft niet precies op het element te tikken.</td>
+</tr>
+<tr>
+<td><strong>Double-tap en vasthouden met één vinger</strong></td>
+<td>Lang indrukken (voor context-menu's en dergelijke).</td>
+</tr>
+<tr>
+<td><strong>Tik met twee vingers</strong></td>
+<td>Pauzeer of hervat de spraak. Handig als je iets wilt opschrijven.</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers</strong> omhoog, omlaag, links of rechts</td>
+<td>Scroll door het scherm.</td>
+</tr>
+</tbody>
+</table>
+<h4>Het TalkBack-menu openen</h4>
+<p>Het <strong>TalkBack-menu</strong> is een ingebouwd menu met commando's als <em>Lees vanaf boven</em>, <em>Zoek op scherm</em>, navigatie-instellingen en hulp. Je opent het op twee manieren:</p>
+<ul>
+<li><strong>L-vorm (werkt altijd)</strong>: veeg in één vloeiende beweging <strong>omlaag en dan naar rechts</strong>, of <strong>omhoog en dan naar rechts</strong>.</li>
+<li><strong>Multi-finger (indien ondersteund)</strong>: <strong>three-finger tap</strong>.</li>
+</ul>
+<p>In dat menu vind je onder andere <strong>Read from top</strong> (lees het hele scherm vanaf het begin voor — essentieel om de leesvolgorde te controleren) en <strong>Read from next item</strong> (lees door vanaf het huidige element).</p>
+<h4>Reading controls: springen per type element</h4>
+<p>De <strong>reading controls</strong> zijn het equivalent van de VoiceOver Rotor op iOS. Je kiest eerst op welk type element je wilt springen — bijvoorbeeld alleen de koppen, alleen de links, of alleen de formuliervelden — en beweegt vervolgens van element naar element.</p>
+<ul>
+<li><strong>Wissel tussen reading controls</strong>: veeg in één L-vorm <strong>omhoog en dan omlaag</strong>, of <strong>omlaag en dan omhoog</strong>. Op multi-finger-toestellen: <strong>three-finger swipe omhoog of omlaag</strong>. Herhaal het gebaar om door de beschikbare reading controls te bladeren. TalkBack vertelt welke instelling actief is (<em>&quot;Koppen&quot;</em>, <em>&quot;Links&quot;</em>, <em>&quot;Bedieningselementen&quot;</em>, …).</li>
+<li><strong>Volgend element van dat type</strong>: veeg met één vinger <strong>omlaag</strong>.</li>
+<li><strong>Vorig element van dat type</strong>: veeg met één vinger <strong>omhoog</strong>.</li>
+</ul>
+<p>Welke reading controls beschikbaar zijn, stel je in via <strong>TalkBack-instellingen → Menu's aanpassen → Reading controls aanpassen</strong>. Sommige opties staan standaard uit.</p>
+<h4>Systeemnavigatie met TalkBack</h4>
+<p>Als TalkBack aan staat, werken ook een aantal toestel-acties met gebaren:</p>
+<ul>
+<li><strong>Terug</strong>: veeg <strong>omlaag en dan naar links</strong>.</li>
+<li><strong>Beginscherm</strong>: veeg <strong>omhoog en dan naar links</strong>.</li>
+<li><strong>Recente apps</strong>: veeg <strong>naar links en dan omhoog</strong>.</li>
+<li><strong>Meldingen openen</strong>: veeg <strong>naar rechts en dan omlaag</strong>, of met twee vingers omlaag vanaf de bovenkant.</li>
+</ul>
+<h4>Bevindingen reproduceren</h4>
+<p>In dit rapport staat bij elke bevinding een <strong>&quot;Hoe te reproduceren&quot;</strong>-sectie. Daar leggen we uit welke stappen en welke gebaren je moet gebruiken om het probleem zelf te zien. Gebruik deze instructie als naslag: als een stap verwijst naar <em>&quot;de volgende kop&quot;</em>, dan weet je dat je de reading controls op <strong>Koppen</strong> moet zetten en met één vinger omlaag veegt.</p>
+<p>Kom je er niet uit? Stuur ons gerust een mail op <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a> — we denken graag mee.</p>
+
+          </div>
+        </details>
+      </div>
+    </section>
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-op-veel-schermen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-op-veel-schermen">01 Op veel schermen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#1 - Focus-indicator heeft onvoldoende contrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/15.webp" alt="">
+</figure>
+<p>Op veel schermen is de focus-indicator van verschillende elementen alleen te onderscheiden aan een subtiele kleurverandering van de achtergrond. Het contrast tussen de gefocuste en niet-gefocuste staat — of tussen de focusrand en de achtergrond — is lager dan 3:1, waardoor mensen met een verminderde kleurwaarneming niet kunnen zien waar de focus staat. Zie bijvoorbeeld de opties in de header, de opties in het menu, de knop &quot;Gemeente aanpassen&quot; op het Home-scherm, alle opties in de verschillende stappen van het aanmaken van een melding en andere elementen op andere schermen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een extern toetsenbord vanwege een motorische beperking. Wanneer ik met het toetsenbord door de app navigeer, verschilt de toetsenbordfocus zo weinig van de niet-gefocuste staat dat ik niet kan zien welk element nu geselecteerd is. Ik verwacht dat de focus-indicator duidelijk afsteekt tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de focus-indicator minimaal 3:1 contrast ten opzichte van zowel het gefocuste element als de omringende achtergrond. Vertrouw niet alleen op een subtiele kleurverschuiving — combineer kleur met een tweede signaal, zoals een zichtbare rand, een onderstreping, een dikkere rand of een gevulde achtergrond. Controleer dat elke focus-staat (default, geselecteerd, disabled) aan de verhouding voldoet, in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#2 - Toetsenbordfocus is niet zichtbaar</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.7</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.7</span>  
+</div>
+<p>Wanneer er met het toetsenbord door de app wordt genavigeerd, is de toetsenbordfocus op sommige elementen niet zichtbaar. Zie de volgende elementen op het Home-scherm (Nieuwe melding), al is dit geen uitputtende lijst:</p>
+<ul>
+<li>de knop met een pijl onder &quot;Waar gaat je melding over?&quot;</li>
+<li>de x-knoppen in verschillende zoekvelden</li>
+<li>de ?-knop naast het geselecteerde adres onder &quot;Wat is de locatie van je melding?&quot;</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een motorische beperking en navigeer door de app met een extern toetsenbord in plaats van met aanraakgebaren. Bij sommige interactieve elementen is de toetsenbordfocus niet zichtbaar, waardoor ik moeilijk kan bepalen welk element actief is en het risico groter wordt dat ik per ongeluk het verkeerde element activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk focusbaar element een duidelijk zichtbare focus-indicator toont. Gebruik op Android de standaard focus-highlight, of pas een custom <code>stateListAnimator</code> of <code>foreground</code> drawable toe die reageert op de gefocuste staat. De indicator moet minimaal 3:1 contrast hebben ten opzichte van zowel het element als de achtergrond eromheen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-introductie-carrousel-van-5-schermen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-introductie-carrousel-van-5-schermen">02 Introductie (carrousel van 5 schermen) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Direct na installatie van de app</p>
+<div class="issue">
+<h3>#3 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/05.webp" alt="">
+</figure>
+<p>De introductie van de app bestaat uit een carrousel van 5 slides. Op een aantal daarvan is het contrast onvoldoende.</p>
+<p>Op slide 1 van de introductie is de tekst &quot;Samen houden we de leefomgeving ..&quot; donkergroen (#3A5F5E) op een groene achtergrond (#62DF85), contrast 4,2:1. Hetzelfde probleem staat op slide 5.</p>
+<p>Op slide 2 van de introductie is de tekst &quot;Sla introductie over&quot; zwart (#011237) op een paarse (#7B61FF) achtergrond. De witte tekst &quot;Maak snel en eenvoudig ..&quot; heeft ook onvoldoende contrast op de paarse achtergrond: 4,2:1. Het slidenummer &quot;2 / 5&quot; is zwart (#0E1A4B) op de paarse achtergrond, contrast 3,9:1.</p>
+<figure class="screenshot">
+<img src="images/06.webp" alt="">
+</figure>
+<p>Op slide 3 van de introductie is de tekst &quot;Sla introductie over&quot; zwart (#011237) op een bruine (#B25F24) achtergrond. De verhouding is 4:1. Het slidenummer &quot;3 / 5&quot; is zwart (#131A35) op dezelfde bruine achtergrond, contrast 3,7:1.</p>
+<p>Zorg dat normale tekst een contrast van minimaal 4,5:1 heeft, en grote tekst (18pt en groter, of 14pt vetgedrukt en groter) minimaal 3:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik tekst lees die nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk leesbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrond, of beide aan zodat het contrast aan het minimum voldoet. Controleer het resultaat met een contrastchecker en verifieer voor elke staat waarin de tekst voorkomt (default, disabled, over afbeeldingen, op gekleurde achtergronden) en voor zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#4 - Contrast UI-element lager dan 3:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>De introductie bevat een carrousel van 5 slides met pijlknoppen voor de navigatie. Op sommige slides hebben de pijlen onvoldoende contrast tegen de achtergrond. Zie bijvoorbeeld slide 3, waar de zwarte (#313143) pijl op de bruine (#B25F24) achtergrond een contrast van 2,8:1 heeft. Ook de andere slides moeten gecontroleerd worden. Interface-elementen en betekenisvolle grafische elementen moeten minimaal 3:1 contrast hebben, zodat slechtziende bezoekers ze kunnen herkennen en lokaliseren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met slechtziendheid. De navigatiepijlen van de slider hebben te weinig contrast tegen de achtergrond, waardoor ze moeilijk te zien en te gebruiken zijn. Ik verwacht dat interactieve elementen voldoende contrast hebben zodat ze duidelijk zichtbaar blijven.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de kleur van de navigatiepijlen of hun achtergrond aan zodat het contrast tussen de pijlen en de omringende achtergrond minimaal 3:1 is.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-home-nieuwe-melding">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-home-nieuwe-melding">03 Home (Nieuwe melding) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home, of Menu &gt; Meldingen en Berichten</p>
+<div class="issue">
+<h3>#5 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/14.webp" alt="">
+</figure>
+<p>Op dit scherm staat een vraag om een gemeente te selecteren. De tekst &quot;Mijn huidige locatie&quot; is paars (#7B61FF) op een witte achtergrond. Het contrast is 4,2:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking of gebruik de app in fel zonlicht. Sommige tekst heeft te weinig contrast tegen de achtergrond, waardoor die moeilijk te lezen is. Ik verwacht dat tekst onder alle omstandigheden goed leesbaar blijft.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat het contrast minimaal 4,5:1 is en de leesbaarheid verbetert.</p>
+</div>
+<div class="issue">
+<h3>#6 - Knop heeft geen toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.4.1.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/10.webp" alt="">
+</figure>
+<p>Op dit scherm verschijnt na het tikken in het veld &quot;Zoek een gemeente&quot; en het typen van iets een x-knop naast het zoekveld. Deze knop wist de zoekterm, maar heeft geen toegankelijke naam. Gebruikers van hulpsoftware kunnen niet begrijpen wat de functie ervan is. Een toegankelijke naam mag nooit leeg zijn, want zonder naam weet een blinde bezoeker niet wat de knop doet. Hetzelfde probleem met de x-knop komt voor in andere zoekvelden, bijvoorbeeld in &quot;Zoek categorie&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer of spraakbediening heb ik bij elk element een naam nodig die ik kan horen of uitspreken — want zonder naam kondigt de schermlezer alleen de rol (&quot;knop&quot;) aan zonder context, heeft spraakbediening geen woord waarmee ik het kan activeren, en kan ik niet met het element werken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de knop een duidelijke toegankelijke naam, bijvoorbeeld &quot;Verwijderen&quot;.</p>
+</div>
+<div class="issue">
+<h3>#7 - Placeholdertekst wordt gebruikt als label</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 3.3.2</span>  
+	<span class="sc"><b>EN</b>: 11.3.3.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/03.webp" alt="">
+</figure>
+<p>Op dit scherm doet een placeholdertekst dienst als label voor het invoerveld. De placeholdertekst verdwijnt zodra de gebruiker begint te typen, waardoor de functie van het invoerveld onduidelijk wordt voor een gebruiker die afhankelijk is van een schermlezer. Een placeholder kan daarom niet als label dienen. Zorg dat het label altijd zichtbaar blijft.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer de placeholdertekst verdwijnt zodra ik begin te typen, weet ik niet meer waar het invoerveld voor bedoeld is. Ik verwacht dat het label van het veld altijd beschikbaar blijft.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een permanent zichtbaar label toe naast of boven het invoerveld. De placeholdertekst mag als aanvullende hint blijven staan, maar mag niet het enige label zijn. Zorg er ook voor dat de toegankelijke naam de zichtbare tekst van het veld bevat.</p>
+</div>
+<div class="issue">
+<h3>#8 - Statuswijziging wordt niet doorgegeven aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2, 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2, 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/16.webp" alt="">
+</figure>
+<p>Op dit scherm opent na het tikken in het veld &quot;Zoek een onderwerp&quot; een modal. Die bevat accordeon-secties die uit- en ingeklapt kunnen worden. De visuele pijl-indicator verandert afhankelijk van de staat van de accordeon, maar deze staat wordt niet aangekondigd aan schermlezergebruikers. Daardoor begrijpen gebruikers van hulpsoftware mogelijk niet of een sectie uitgeklapt of ingeklapt is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik op een accordeon focus, kan ik niet bepalen of de sectie uitgeklapt of ingeklapt is, omdat de status niet wordt aangekondigd. Ik verwacht dat de huidige status van de accordeon programmatisch wordt doorgegeven.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat accordeon-elementen hun uitgeklapt- en ingeklapt-staat programmatisch doorgeven, zodat schermlezers de huidige status aan gebruikers kunnen aankondigen.</p>
+</div>
+<div class="issue">
+<h3>#9 - Kaart heeft geen betekenisvol tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/17.webp" alt="">
+</figure>
+<p>Op dit scherm wordt onder de vraag &quot;Wat is de locatie van je melding?&quot; de &quot;Leaflet&quot;-kaart getoond om informatie over te brengen — de locatie van de melding. Het tekstalternatief is echter alleen &quot;webview&quot;. Die tekst beschrijft niet het doel of de functie van de kaart, waardoor die onduidelijk is voor schermlezergebruikers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik op het kaart-element focus, hoor ik alleen &quot;WebView&quot; en begrijp ik niet dat het een interactieve kaart is om een adres te selecteren. Ik verwacht dat informatieve elementen een beschrijvend tekstalternatief hebben.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Haal de kaart uit de accessibility-tree, aangezien er onder de kaart al een alternatief is om het adres te selecteren (<code>android:importantForAccessibility=&quot;no&quot;</code>). Of, als de focus op de kaart moet blijven, geef die dan een beschrijvend toegankelijk label via <code>contentDescription</code> dat duidelijk maakt wat de kaart toont (bijvoorbeeld &quot;Kaart voor het selecteren van een adres&quot;).</p>
+</div>
+<div class="issue">
+<h3>#10 - Contrast informatief icoon lager dan 3:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/08.webp" alt="">
+</figure>
+<p>Op dit scherm staat onder de vraag &quot;Wat is de locatie van je melding?&quot; een kaart. Wanneer er een adres is geselecteerd, wordt er een locatiemarkering op de kaart getoond. De kaartcomponent zelf is uitgezonderd van bepaalde toegankelijkheidseisen. Het custom locatie-icoon heeft echter onvoldoende contrast tegen de wisselende kaartachtergrond (op sommige plekken 1,4:1), waardoor het voor sommige gebruikers moeilijk waarneembaar is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Het locatie-icoon heeft weinig contrast tegen de achtergrond, waardoor ik de positie ervan moeilijk kan bepalen. Ik verwacht dat belangrijke interface-elementen duidelijk zichtbaar blijven.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Gebruik een contrastrijkere kleur, omlijning of rand voor het custom locatie-icoon om de zichtbaarheid tegen de kaartachtergrond te verbeteren.</p>
+</div>
+<div class="issue">
+<h3>#11 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<figure class="screenshot">
+<img src="images/07.webp" alt="">
+</figure>
+<p>Op dit scherm staat onder de vraag &quot;Wat is de locatie van je melding?&quot; naast de tekst &quot;Afstand tot adres: 24 meter&quot; een ?-knop die een &quot;Let op!&quot;-modal opent met extra informatie over het selecteren van een adres. De toegankelijke naam van de knop is &quot;Verwijder de tekst&quot;, wat de functie niet correct beschrijft. Daardoor is het voor blinde bezoekers en schermlezergebruikers moeilijk om het doel van de knop te begrijpen. De toegankelijke naam moet kort en helder de functie van de knop overbrengen. Bovendien staat er op dit scherm nog een knop (de x-knop in het zoekveld) met dezelfde naam, wat voor extra verwarring kan zorgen bij gebruikers van hulpsoftware.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik een knop tegenkom, hoor ik een naam die mij niet vertelt wat de knop doet. Ik verwacht dat elke knop een duidelijke naam heeft die de actie beschrijft.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de knop een beschrijvende toegankelijke naam die de functie en context duidelijk overbrengt, bijvoorbeeld &quot;Meer informatie over het adres&quot;.</p>
+</div>
+<div class="issue">
+<h3>#12 - Koppen zijn niet correct gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/12.webp" alt="">
+</figure>
+<p>Op dit scherm zijn meerdere teksten die visueel als kop functioneren niet als kop gemarkeerd. Wanneer een kop niet correct is gemarkeerd, verliest die zijn semantische betekenis en wordt die ontoegankelijk voor bezoekers die afhankelijk zijn van hulpsoftware zoals schermlezers. Koppen zijn essentieel om de inhoudsstructuur te navigeren en te begrijpen. Zie de volgende koppen:</p>
+<ul>
+<li>&quot;Selecteer een item om door te gaan&quot; in een modal die verschijnt na het tikken op &quot;Ja&quot; bij de vraag &quot;Wil je een afbeelding toevoegen aan je melding?&quot;</li>
+<li>&quot;Let op!&quot; in een modal die verschijnt na het tikken op de ?-knop onder de vraag &quot;Wat is de locatie van je melding?&quot;.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, gebruik ik reading controls om van kop naar kop te springen, zodat ik niet door elk afzonderlijk element hoef te swipen — want wanneer visuele koppen niet als echte kop zijn gemarkeerd, moet ik regel voor regel door het hele scherm swipen om te vinden wat ik zoek.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat deze teksten de juiste kop-semantiek krijgen die hun rol en hiërarchie in de inhoud weergeeft. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#13 - Dialoogvenster heeft geen toegankelijke rol en naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Onder de vraag &quot;Wil je een afbeelding toevoegen aan je melding?&quot; zijn er twee opties om te selecteren. Wanneer de gebruiker &quot;Ja&quot; kiest, verschijnt er een modaal dialoogvenster &quot;Selecteer een item om door te gaan&quot;. Dit dialoogvenster wordt niet correct doorgegeven aan hulpsoftware. TalkBack kondigt het element niet als dialoogvenster aan en er is geen toegankelijke naam, waardoor het voor gebruikers moeilijk is om te begrijpen dat er een nieuwe context is geopend. Hetzelfde probleem speelt bij het &quot;Taal&quot;-dialoogvenster op Menu - Instellingen en bij andere dialoogvensters.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met TalkBack. Wanneer het dialoogvenster opent, kondigt mijn schermlezer dit niet aan en beschrijft het de inhoud niet. Ik verwacht dat mijn schermlezer mij vertelt dat er een dialoogvenster is geopend en wat erin staat.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat het dialoogvenster correct wordt doorgegeven aan hulpsoftware door een dialog-component te gebruiken en een beschrijvende toegankelijke titel mee te geven (bijvoorbeeld met <code>android:accessibilityPaneTitle</code> of <code>paneTitle</code> in Compose), zodat TalkBack de context en het doel van de modal kan aankondigen.</p>
+</div>
+<div class="issue">
+<h3>#14 - Instructiebericht is afgekapt en niet volledig zichtbaar voor gebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 3.3.2</span>  
+	<span class="sc"><b>EN</b>: 11.3.3.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/09.webp" alt="">
+</figure>
+<p>Wanneer een gebruiker omhoog probeert te scrollen of teruggaat naar eerdere stappen van het aanmaken van een melding, verschijnt een bericht dat begint met &quot;Let op! Het is niet mogelijk…&quot;. Dit is een belangrijk instructiebericht, maar het is afgekapt met een beletselteken en kan niet worden uitgeklapt of volledig worden bekeken. Daardoor missen ziende gebruikers mogelijk belangrijke informatie over hoe het formulier zich gedraagt en welke velden niet meer gewijzigd kunnen worden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app om een formulier in te vullen. Belangrijke instructietekst wordt afgekapt en is niet volledig te lezen, waardoor ik moeilijk begrijp hoe het formulier zich gedraagt en welke velden ik niet meer kan wijzigen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat instructieberichten volledig getoond kunnen worden, bijvoorbeeld door de tekst over meerdere regels te laten lopen, de berichtcontainer te vergroten, of een manier te bieden om het bericht uit te klappen en de volledige tekst te bekijken.</p>
+</div>
+<div class="issue">
+<h3>#15 - Instructiebericht verdwijnt na korte tijd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.2.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.2.1</span>  
+</div>
+<p>Wanneer een gebruiker omhoog probeert te scrollen of teruggaat naar eerdere stappen van het aanmaken van een melding, verschijnt een bericht dat begint met &quot;Let op! Het is niet mogelijk…&quot;. Dit belangrijke instructiebericht verschijnt kort en verdwijnt daarna weer. Die korte duur is voor sommige gebruikers misschien niet genoeg tijd om de instructie te lezen en te begrijpen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees langzamer door een cognitieve beperking, slechtziendheid of dyslexie. Wanneer er een melding verschijnt, verdwijnt die voordat ik klaar ben met lezen. Ik verwacht dat instructie- en waarschuwingsberichten zichtbaar blijven totdat ik ze zelf wegklik.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat tijdelijke instructieberichten lang genoeg zichtbaar blijven om comfortabel te lezen, of bied een manier om het bericht te pauzeren, weg te klikken of opnieuw te openen nadat het is verdwenen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-menu-mijn-gegevens">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-menu-mijn-gegevens">04 Menu - Mijn gegevens <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home &gt; Menu &gt; Mijn gegevens</p>
+<div class="issue">
+<h3>#16 - Tekstcontrast is lager dan 4,5:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm voldoen de grijze (#6B6B77) teksten &quot;Naam&quot;, &quot;E-mailadres&quot; en &quot;Telefoonnummer&quot; niet aan het minimale contrast tegen de lichtbeige (#ECE7E2) achtergrond — het is namelijk 4,3:1. Normale tekst (kleiner dan 18pt, of kleiner dan 14pt vetgedrukt) vereist een contrast van minimaal 4,5:1 voor de leesbaarheid. Onvoldoende contrast maakt tekst moeilijk of onmogelijk te lezen voor mensen met slechtziendheid, kleurwaarnemingsproblemen of bij gebruik in een felle omgeving. Hetzelfde probleem speelt bij de teksten &quot;Berichten&quot; en &quot;Taal&quot; op het scherm Menu - Instellingen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een scherm lees, kan ik tekst met weinig contrast tegen de achtergrond niet onderscheiden. Ik verwacht dat tekst altijd duidelijk afsteekt tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur of achtergrondkleur aan zodat het contrast minimaal 4,5:1 is. Gebruik een contrastchecker om dit te verifiëren.</p>
+</div>
+<div class="issue">
+<h3>#17 - Contrast UI-element lager dan 3:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/04.webp" alt="">
+</figure>
+<p>Op dit scherm hebben de invoervelden &quot;Naam&quot;, &quot;E-mailadres&quot; en &quot;Telefoonnummer&quot; weinig contrast tegen de achtergrond. Het contrast tussen hun witte (#EFEFF1) randen en de lichtbeige (#ECE7E2) achtergrond is 1,1:1. Interface-elementen moeten minimaal 3:1 contrast hebben tegen achtergrondkleuren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar invoervelden beginnen of eindigen. Ik verwacht dat de randen van invoervelden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de kleur van de invoervelden of hun achtergrond aan zodat het contrast minimaal 3:1 is. Doe dit voor elke staat die informatie overbrengt (default, focused, selected, checked) en in zowel light- als dark mode. Controleer de verhouding met een contrastchecker.</p>
+</div>
+<div class="issue">
+<h3>#18 - Foutmeldingen worden niet als statusbericht aangekondigd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/13.webp" alt="">
+</figure>
+<p>Op dit scherm verschijnen bij onjuist ingevulde formuliervelden visueel foutmeldingen op het scherm, maar die worden niet door TalkBack aangekondigd. Daardoor weten schermlezergebruikers mogelijk niet dat er een fout is opgetreden of begrijpen ze niet wat er gecorrigeerd moet worden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met TalkBack. Wanneer een formulier fouten bevat, worden de foutmeldingen niet aangekondigd, waardoor ik mogelijk niet doorheb dat er iets mis is of welke velden ik moet corrigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat validatie-foutmeldingen programmatisch aan hulpsoftware worden doorgegeven en automatisch worden aangekondigd zodra ze verschijnen. Zorg er ook voor dat de bijbehorende formuliervelden hun ongeldige staat doorgeven en correct gekoppeld zijn aan de bijbehorende foutmeldingen.</p>
+</div>
+<div class="issue">
+<h3>#19 - Extern toetsenbord kan sommige elementen niet bereiken of bedienen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op dit scherm, in de verschillende stappen van het aanmaken van een melding, kunnen bepaalde elementen niet met Tab/Shift+Tab worden bereikt, niet met Space/Enter worden geactiveerd, of anderszins niet met een extern toetsenbord worden bediend. Gebruikers die geen touch kunnen gebruiken — omdat ze afhankelijk zijn van Switch Access (Android) of een extern toetsenbord — kunnen deze functie niet gebruiken. Zie de volgende elementen die niet met het toetsenbord bereikbaar zijn: de zoekresultaten van zoekvelden, bijvoorbeeld in &quot;Zoek een gemeente&quot; en &quot;Zoek een onderwerp&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een motorische beperking en navigeer door de app met een extern toetsenbord in plaats van met aanraakgebaren. Wanneer ik door de app navigeer, zijn sommige elementen niet bereikbaar of bruikbaar met mijn toetsenbord. Ik verwacht dat ik elk deel van het scherm alleen met mijn toetsenbord kan bedienen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk interactief element toetsenbord-focusbaar en toetsenbord-bedienbaar is. Stel op Android <code>android:focusable=&quot;true&quot;</code> en waar nodig <code>android:focusableInTouchMode=&quot;true&quot;</code> in, en handel <code>KeyEvent.KEYCODE_ENTER</code> / <code>KEYCODE_DPAD_CENTER</code> af. Test elk scherm met een aangesloten extern toetsenbord en zonder touch.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-menu-instellingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-menu-instellingen">05 Menu - Instellingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home &gt; Menu &gt; Instellingen</p>
+<p><em>Het contrastprobleem is beschreven in eerdere secties.</em></p>
+<div class="issue">
+<h3>#20 - Interface-elementen hebben onvoldoende niet-tekstcontrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/01.webp" alt="">
+</figure>
+<p>Op dit scherm zijn de toggle-schakelaars &quot;App notificaties&quot; en &quot;Berichten per email&quot; groen (#63DF85) op een witte achtergrond wanneer ze aan staan. Het contrast is 1,7:1. Wanneer ze uit staan zijn ze grijs (#9D9CBB), met een contrast van 2,6:1. Beide waardes zijn onvoldoende, waardoor gebruikers met slechtziendheid of in fel zonlicht het element mogelijk niet kunnen waarnemen of herkennen. Een vergelijkbaar probleem speelt bij de toggle &quot;Ontvang bevestiging via e-mail&quot; nadat een melding is verstuurd.</p>
+<figure class="screenshot">
+<img src="images/11.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app in verschillende lichtomstandigheden, ook in fel zonlicht. De toggle-schakelaars hebben te weinig contrast in zowel de aan- als de uit-staat, waardoor ik moeilijk kan zien in welke staat ze staan. Ik verwacht dat interface-elementen in alle staten duidelijk zichtbaar en te onderscheiden blijven.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Gebruik een donkerdere kleur voor zowel de aan- als de uit-staat van de toggle, of pas de achtergrond aan, zodat het contrast tussen de toggle en de achtergrond minimaal 3:1 is.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-menu-over-buitenbeter">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-menu-over-buitenbeter">06 Menu - Over BuitenBeter <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home &gt; Menu &gt; Over BuitenBeter</p>
+<div class="issue">
+<h3>#21 - Koppen zijn niet correct gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn teksten die visueel als kop functioneren niet als kop gemarkeerd. Zonder correcte kop-markering kunnen schermlezergebruikers moeite hebben om de inhoudsstructuur van het scherm te begrijpen en te navigeren. Zie bijvoorbeeld de koppen &quot;Welke gegevens verwerken wij?&quot;, &quot;Waarom verzamelen we deze informatie?&quot; en andere.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, gebruik ik reading controls om van kop naar kop te springen, zodat ik niet door elk afzonderlijk element hoef te swipen — want wanneer visuele koppen niet als echte kop zijn gemarkeerd, moet ik regel voor regel door het hele scherm swipen om te vinden wat ik zoek.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat deze teksten de juiste kop-semantiek krijgen die hun rol en hiërarchie weergeeft. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#22 - Items zijn visueel een lijst maar niet als lijst gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/18.webp" alt="">
+</figure>
+<p>Op dit scherm staat onder de kop &quot;Welke gegevens verwerken wij?&quot; visueel een lijst van 4 items. De items worden echter niet als lijst aan hulpsoftware doorgegeven. Schermlezergebruikers horen daardoor niet dat de items bij elkaar horen, hoeveel items er zijn, of op welk item ze zich bevinden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik een groep bij elkaar horende items tegenkom, hoor ik niet dat ze bij een lijst horen of hoeveel items de lijst bevat, omdat de lijst niet programmatisch is gedefinieerd. Ik verwacht dat mijn schermlezer de lijst aankondigt en aangeeft hoeveel items die bevat.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Groepeer de lijst-items met de juiste lijst-semantiek. Gebruik op Android een <code>RecyclerView</code>, of stel <code>AccessibilityNodeInfoCompat.setCollectionInfo(...)</code> in op het bovenliggende element en <code>setCollectionItemInfo(...)</code> op elk item, zodat TalkBack het aantal items en de positie aankondigt.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-mijn-meldingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-mijn-meldingen">07 Mijn meldingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home &gt; &quot;Bel&quot;-icoon in de header, of Menu - Meldingen en berichten</p>
+<div class="issue">
+<h3>#23 - Elementen niet te bedienen met het externe toetsenbord</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op dit scherm, op het tabblad &quot;Mijn meldingen&quot;, staan meerdere meldingen. Deze zijn niet alleen met het toetsenbord bereikbaar. Gebruikers die geen touch kunnen gebruiken — omdat ze afhankelijk zijn van Switch Access (Android) of een extern toetsenbord — kunnen deze functie niet gebruiken.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een motorische beperking en navigeer door de app met een extern toetsenbord in plaats van met aanraakgebaren. Wanneer ik door de app navigeer, zijn sommige elementen niet bereikbaar of bruikbaar met mijn toetsenbord. Ik verwacht dat ik elk deel van het scherm alleen met mijn toetsenbord kan bedienen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk interactief element toetsenbord-focusbaar en toetsenbord-bedienbaar is.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-een-verstuurd-melding">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-een-verstuurd-melding">08 Een verstuurd melding <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Home &gt; &quot;Bel&quot;-icoon in de header &gt; Open een melding</p>
+<div class="issue">
+<h3>#24 - Kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de kop (&quot;Afval&quot; of &quot;Object&quot;) niet als kop gemarkeerd. Zorg dat hulpsoftware koppen als kop herkent.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, gebruik ik reading controls om van kop naar kop te springen, zodat ik niet door elk afzonderlijk element hoef te swipen — want wanneer visuele koppen niet als echte kop zijn gemarkeerd, moet ik regel voor regel door het hele scherm swipen om te vinden wat ik zoek.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat deze teksten de juiste kop-semantiek krijgen die hun rol en hiërarchie in de inhoud weergeeft. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#25 - Zichtbare tekst ontbreekt in de toegankelijke naam van de knop</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.5.3</span>  
+</div>
+<figure class="screenshot">
+<img src="images/02.webp" alt="">
+</figure>
+<p>Op dit scherm staat in de header een knop met de zichtbare tekst &quot;Mijn meldingen&quot;, maar de toegankelijke naam ervan is &quot;Ga terug naar het vorige scherm&quot;. Dit verschil kan problemen veroorzaken voor gebruikers die met spraakbediening werken. Spraakcommando's zijn gebaseerd op de zichtbare tekst van elementen. Als de toegankelijke naam daar sterk van afwijkt, werken de spraakcommando's niet.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met spraakbediening. Wanneer ik de zichtbare tekst van een knop hardop uitspreek, reageert de knop niet. Ik verwacht dat de knop activeert wanneer ik de tekst uitspreek die ik op het scherm zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de toegankelijke naam de zichtbare tekst bevat, bij voorkeur aan het begin. Idealiter is de toegankelijke naam identiek aan de zichtbare tekst.</p>
+</div>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de app op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je app te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>

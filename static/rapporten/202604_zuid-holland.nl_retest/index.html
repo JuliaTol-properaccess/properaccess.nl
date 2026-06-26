@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -60,12 +63,14 @@
     <section class="dash-summary-row" id="samenvatting">
       <div class="dash-summary-text">
         <h2>Samenvatting</h2>
-        <p>Wij hebben de hercontrole van de website zuid-holland.nl uitgevoerd in april 2026. In dit rapport lees je welke punten uit de eerste audit nog verbetering behoeven en hoe je deze kunt aanpakken.</p>
+        <p>Wij hebben de hercontrole van de website zuid-holland.nl uitgevoerd op 22 april 2026. Alle bevindingen uit de vorige hercontrole zijn opgelost.</p>
 
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van provincie Zuid-Holland">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van provincie Zuid-Holland">
+        
       </div>
     </section>
 
@@ -161,7 +166,7 @@
               <dd>provincie Zuid-Holland</dd>
               
               <dt>Datum rapport</dt>
-              <dd>2 april 2026</dd>
+              <dd>22 april 2026</dd>
               <dt>Standaard</dt>
               <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
               <dt>Methodologie</dt>
@@ -193,9 +198,9 @@
             <h3>Basisniveau toegankelijkheidsondersteuning</h3>
             <ul>
               
-              <li>Mozilla Firefox, versie 142</li>
+              <li>Mozilla Firefox, versie 148</li>
               
-              <li>Google Chrome, versie 142</li>
+              <li>Google Chrome, versie 148</li>
               
               <li>Apple Safari, versie 18</li>
               
@@ -231,18 +236,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -251,13 +260,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -272,6 +274,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -316,25 +323,7 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://www.zuid-holland.nl/">https://www.zuid-holland.nl/</a></p>
-<div class="issue">
-<h3>#1 - Bezoekers die inzoomen tot 400% kunnen niet meer tekst (voor)lezen en daardoor is het inputveld mogelijk moeilijk met stem te bedienen</h3>
-<div class="meta">
-	<span class="impact"><b>Impact</b>: Medium</span>
-	<span class="type"><b>Type</b>: Techniek</span>
-	<span class="type"><b>WCAG</b>: 1.4.10</span>
-	<span class="type"><b>EN</b>: 9.1.4.10</span>
-</div>
-<p>Bij een schermresolutie van 1280 bij 1024 pixels en een zoomniveau van 400% verdwijnt de placeholdertekst in de zoekbalk volledig. Tijdens de eerste audit werd deze tekst nog afgekapt weergegeven; bij de hercontrole blijkt dat de tekst helemaal niet meer zichtbaar is.</p>
-<p>Dit vormt een toegankelijkheidsprobleem: de placeholdertekst is momenteel de enige toegankelijke naam van het invoerveld. Zonder deze zichtbare tekst is het veld niet te bedienen via stembesturing.</p>
-<h4>Oplossing:</h4>
-<p>Er zijn meerdere manieren om dit op te lossen:</p>
-<ul>
-<li>Voeg een permanent zichtbaar label toe boven het invoerveld dat meeschaalt op alle schermbreedtes.</li>
-<li>Vervang de huidige placeholdertekst door een kortere variant, zoals &quot;Typ zoekopdracht&quot;, die op alle breedtes leesbaar blijft.</li>
-<li>Verwijder de placeholdertekst en geef het invoerveld een <code>aria-label=&quot;Zoeken&quot;</code>. Het vergrootglasicoon op de knop naast het veld maakt de zoekfunctie al visueel duidelijk, en termen als &quot;zoek&quot; en &quot;zoeken&quot; zijn algemeen bekend en herkenbaar.</li>
-</ul>
-<p>De huidige tekst &quot;Vind het bij de provincie...&quot; is niet intuïtief te raden als deze niet zichtbaar is. Een kortere, generieke omschrijving verdient daarom de voorkeur.</p>
-</div>
+<p>Geen openstaande bevindingen.</p>
 
           </article>
           
@@ -345,13 +334,10 @@
               <h2 class="issue-title"><a href="#02-zoeken">02 Zoeken <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/algemeen/zoeken/?query=pdf&amp;page=1">https://www.zuid-holland.nl/algemeen/zoeken/?query=pdf&amp;page=1</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/algemeen/zoeken/?query=pdf&amp;page=1">https://www.zuid-holland.nl/algemeen/zoeken/?query=pdf&amp;page=1</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -360,13 +346,10 @@
               <h2 class="issue-title"><a href="#03-nieuws">03 Nieuws <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/actueel/nieuws/">https://www.zuid-holland.nl/actueel/nieuws/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/actueel/nieuws/">https://www.zuid-holland.nl/actueel/nieuws/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -375,13 +358,10 @@
               <h2 class="issue-title"><a href="#04-human-capital">04 Human Capital <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/economie/human-capital/">https://www.zuid-holland.nl/onderwerpen/economie/human-capital/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/economie/human-capital/">https://www.zuid-holland.nl/onderwerpen/economie/human-capital/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -390,13 +370,10 @@
               <h2 class="issue-title"><a href="#05-onderwerpen">05 Onderwerpen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/">https://www.zuid-holland.nl/onderwerpen/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/">https://www.zuid-holland.nl/onderwerpen/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -405,13 +382,10 @@
               <h2 class="issue-title"><a href="#06-chemours">06 Chemours <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/milieu/risicovolle-bedrijven/chemours/">https://www.zuid-holland.nl/onderwerpen/milieu/risicovolle-bedrijven/chemours/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/milieu/risicovolle-bedrijven/chemours/">https://www.zuid-holland.nl/onderwerpen/milieu/risicovolle-bedrijven/chemours/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -420,13 +394,10 @@
               <h2 class="issue-title"><a href="#07-water">07 Water <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/">https://www.zuid-holland.nl/onderwerpen/water/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/">https://www.zuid-holland.nl/onderwerpen/water/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -435,13 +406,10 @@
               <h2 class="issue-title"><a href="#08-organogram">08 Organogram <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/algemeen/organisatie/organogram/">https://www.zuid-holland.nl/algemeen/organisatie/organogram/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/algemeen/organisatie/organogram/">https://www.zuid-holland.nl/algemeen/organisatie/organogram/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -450,13 +418,10 @@
               <h2 class="issue-title"><a href="#09-declaraties-en-dienstreizen">09 Declaraties en dienstreizen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/declaraties-dienstreizen/">https://www.zuid-holland.nl/politiek-bestuur/declaraties-dienstreizen/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/declaraties-dienstreizen/">https://www.zuid-holland.nl/politiek-bestuur/declaraties-dienstreizen/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -465,13 +430,10 @@
               <h2 class="issue-title"><a href="#10-provinciale-staten">10 Provinciale Staten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -481,20 +443,7 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://www.zuid-holland.nl/algemeen/coordinated-vulnerable-disclosure-english/">https://www.zuid-holland.nl/algemeen/coordinated-vulnerable-disclosure-english/</a></p>
-<div class="issue">
-<h3>#2 - Taalwisseling ontbreekt op anderstalige content</h3>
-<div class="meta">
-	<span class="impact"><b>Impact</b>: Medium</span>
-	<span class="type"><b>Type</b>: Content</span>
-	<span class="type"><b>WCAG</b>: 3.1.2</span>
-	<span class="type"><b>EN</b>: 9.3.1.2</span>
-</div>
-<p>Op deze pagina is de hoofdinhoud in het Engels zonder lokaal taalattribuut.</p>
-<p>Deze tekst wordt nu voorgelezen volgens de uitspraakregels van de primaire taal van de pagina. Die is ingesteld in het <code>lang</code>-attribuut op het <code>html</code>-element, in dit geval op &quot;nl&quot;. De schermlezer zou juist op de taal van de zin moeten overschakelen. Dat bereik je door deze anderstalige inhoud een lokaal <code>lang</code>-attribuut te geven met de juiste waarde.</p>
-<p>De pagina begint met een h1 en een aantal alinea's in het Engels zonder het lokale taalattribuut.</p>
-<h4>Oplossing:</h4>
-<p>Voeg een <code>lang</code>-attribuut met de juiste taalcode toe aan elk html-element dat tekst in een andere taal bevat. Als de tekst bijvoorbeeld in het Engels is, voeg je <code>lang=&quot;en&quot;</code> toe aan het element.</p>
-</div>
+<p>Geen openstaande bevindingen.</p>
 
           </article>
           
@@ -505,13 +454,10 @@
               <h2 class="issue-title"><a href="#12-water-en-bodem-sturend-kaartmateriaal">12 Water en Bodem Sturend kaartmateriaal <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -520,13 +466,10 @@
               <h2 class="issue-title"><a href="#13-informatie-water-en-bodem-sturend-aanvragen">13 Informatie Water en Bodem Sturend aanvragen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/informatie-water-bodem-sturend-aanvragen/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/informatie-water-bodem-sturend-aanvragen/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/informatie-water-bodem-sturend-aanvragen/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/informatie-water-bodem-sturend-aanvragen/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -535,13 +478,10 @@
               <h2 class="issue-title"><a href="#14-waterveiligheid">14 Waterveiligheid <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/waterveiligheid/">https://www.zuid-holland.nl/onderwerpen/water/waterveiligheid/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/waterveiligheid/">https://www.zuid-holland.nl/onderwerpen/water/waterveiligheid/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -550,13 +490,10 @@
               <h2 class="issue-title"><a href="#15-voedsel">15 Voedsel <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/voedsel/">https://www.zuid-holland.nl/onderwerpen/voedsel/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/voedsel/">https://www.zuid-holland.nl/onderwerpen/voedsel/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -565,13 +502,10 @@
               <h2 class="issue-title"><a href="#16-reglement-van-orde">16 Reglement van Orde <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -580,13 +514,10 @@
               <h2 class="issue-title"><a href="#17-pdf-water-en-bodem-sturend">17 PDF: Water en bodem sturend <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/">https://www.zuid-holland.nl/onderwerpen/water/water-bodem-sturend/water-bodem-sturend-kaartmateriaal-0/</a></p>
 <p>De oorspronkelijk onderzochte PDF staat niet meer op deze locatie. De huidige versie is uit scope voor deze hercontrole.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -595,13 +526,10 @@
               <h2 class="issue-title"><a href="#18-pdf-reglement-van-orde">18 PDF: Reglement van Orde <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/</a></p>
+            <p>Link naar pagina: <a href="https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/">https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/reglement-orde/</a></p>
 <p>De oorspronkelijk onderzochte PDF staat niet meer op deze locatie. De huidige versie is uit scope voor deze hercontrole.</p>
 
-          </div>
-</article>
+          </article>
           
         
       </section>
@@ -613,6 +541,8 @@
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -681,7 +611,7 @@
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -691,5 +621,6 @@
   </main>
 </div>
 
+    
 </body>
 </html>

@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -65,7 +68,9 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van Museumvereniging">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van Museumvereniging">
+        
       </div>
     </section>
 
@@ -175,10 +180,17 @@
               
               <li>Alle schermen van de app</li>
               
-              <li>Buiten scope: alle webpagina&#39;s die in de app worden geopend. Deze pagina&#39;s zijn onderzocht in de volledige audit van de website museum.nl.</li>
-              
             </ul>
             
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Alle webpagina&#39;s die in de app worden geopend. Deze pagina&#39;s zijn onderzocht in de volledige audit van de website museum.nl.</li>
+              
+              <li>Ontoegankelijkheden die ontstaan door de manier waarop het device de app rendert, bijvoorbeeld kleurcontrast in alerts of de weergave van sommige knoppen</li>
+              
+            </ul>
             
 
             <h3>Basisniveau toegankelijkheidsondersteuning</h3>
@@ -204,18 +216,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -224,13 +240,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -245,6 +254,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -311,12 +325,9 @@
               <h2 class="issue-title"><a href="#02-altijd-je-museumkaart-op-zak">02 Altijd je Museumkaart op zak <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Geen bevindingen.</p>
+            <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -325,12 +336,9 @@
               <h2 class="issue-title"><a href="#03-heb-je-al-een-museumkaart">03 Heb je al een Museumkaart? <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Geen bevindingen.</p>
+            <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -339,12 +347,9 @@
               <h2 class="issue-title"><a href="#04-wat-is-je-museumkaartnummer">04 Wat is je Museumkaartnummer? <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Geen bevindingen.</p>
+            <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -400,12 +405,9 @@
               <h2 class="issue-title"><a href="#07-mijn-kaarten">07 Mijn kaarten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Geen bevindingen.</p>
+            <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -449,12 +451,9 @@
               <h2 class="issue-title"><a href="#09-foto-pashouder">09 Foto pashouder <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Geen bevindingen.</p>
+            <p>Geen bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -506,7 +505,7 @@
 	<span class="type"><b>EN</b>: 11.2.2.2</span>
 </div>
 <figure class="screenshot">
-<p><img src="images/museum_ios_222.png" alt=""></p>
+<p><img src="images/museum_ios_222.webp" alt=""></p>
 </figure>
 <p>Het vierkante vlak waarmee de foto kan worden gemaakt heeft een animatie die automatisch wordt afgespeeld en niet kan worden gepauzeerd of gestopt.</p>
 <p>Het kan storend zijn voor mensen met een cognitieve beperking als een video, GIF of animatie in een app automatisch gaat spelen. De bewegende inhoud zorgt voortdurend voor afleiding terwijl ze de tekst op het scherm proberen te lezen.</p>
@@ -526,11 +525,13 @@
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
 <h3>Gebruikte norm</h3>
-<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
 <p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
 <h3>Gebruikte onderzoeksmethode</h3>
 <p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
@@ -594,7 +595,7 @@
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -604,5 +605,6 @@
   </main>
 </div>
 
+    
 </body>
 </html>

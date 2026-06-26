@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -66,7 +69,9 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van provincie Zuid-Holland">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van provincie Zuid-Holland">
+        
       </div>
     </section>
 
@@ -192,9 +197,9 @@
             <h3>Basisniveau toegankelijkheidsondersteuning</h3>
             <ul>
               
-              <li>Mozilla Firefox, versie 142</li>
+              <li>Mozilla Firefox, versie 148</li>
               
-              <li>Google Chrome, versie 142</li>
+              <li>Google Chrome, versie 148</li>
               
               <li>Apple Safari, versie 18</li>
               
@@ -224,18 +229,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -244,13 +253,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -265,6 +267,7 @@
         </div>
       </div>
     </div>
+    
 
     
     
@@ -392,7 +395,7 @@
 	<span class="sc"><b>EN</b>: 9.4.1.2</span>
 </div>
 <figure class="screenshot">
-<img src="images/4.png" alt="">
+<img src="images/4.webp" alt="">
 </figure>
 <p>In de header van de website functioneert het zoekicoon (vergrootglas) als link en opent een paneel met een zoekveld. Naast het zoekveld staat een klikbaar &quot;X&quot;-icoon waarmee dit paneel gesloten kan worden. Dit interactieve element heeft echter niet de juiste toegankelijke rol.</p>
 <p>Dit element heeft niet de juiste toegankelijke rol. Daardoor herkennen schermlezers niet dat het om een knop gaat. Hulpsoftware kan het element niet correct aankondigen of bedienen.</p>
@@ -514,7 +517,7 @@
 	<span class="sc"><b>EN</b>: 9.1.4.3</span>
 </div>
 <figure class="screenshot">
-<img src="images/contrast.png" alt="">
+<img src="images/contrast.webp" alt="">
 </figure>
 <p>In de cookiebanner staat groene (<code>#2F9935</code>) tekst &quot;Ingeschakeld&quot; met onvoldoende contrast. De lettergrootte is 16px. Deze tekst is niet voor iedereen zichtbaar.</p>
 <h4>Oplossing</h4>
@@ -540,7 +543,7 @@
 	<span class="sc"><b>EN</b>: 9.1.4.11</span>
 </div>
 <figure class="screenshot">
-<img src="images/contrastpijlen.png" alt="">
+<img src="images/contrastpijlen.webp" alt="">
 </figure>
 <p>Onder &quot;Onze mogelijkmakers aan het woord&quot; staat een carrousel met grijze pijlen om door de slides te bladeren. De iconen op deze knoppen hebben te weinig contrast en zijn daarom niet voor iedereen zichtbaar. Momenteel bedraagt het contrast 1,5:1.</p>
 <h4>Oplossing</h4>
@@ -790,7 +793,7 @@
 	<span class="sc"><b>EN</b>: 9.1.4.12</span>
 </div>
 <figure class="screenshot">
-<img src="images/1.png" alt="">
+<img src="images/1.webp" alt="">
 </figure>
 <p>Op deze pagina wordt een visuele stappenindicator weergegeven die de verschillende fasen van het sollicitatieproces toont, zoals &quot;Sollicitatie&quot;, &quot;Ontvangstbevestiging&quot; en &quot;Aan de slag&quot;. Wanneer bezoekers de tekstafstand toepassen zoals beschreven in dit succescriterium, wordt de tekst in deze stappenindicator onleesbaar doordat de woorden visueel in elkaar overlopen: &quot;OntvangstbevestigingSollicitatiegesprek(ken)Arbeidsvoorwaardengesprek&quot;.</p>
 <p>Sommige bezoekers passen de weergave van de tekst aan, zodat zij de tekst beter kunnen lezen. Denk aan het vergroten van de afstand tussen regels, letters of woorden. Het gaat bijvoorbeeld om mensen met dyslexie. Als een bezoeker dit doet op de manier die in succescriterium 1.4.12 is beschreven, moet alles goed blijven werken. Bovendien moet de tekst leesbaar blijven.</p>
@@ -847,7 +850,7 @@
 	<span class="sc"><b>EN</b>: 9.3.1.2</span>
 </div>
 <figure class="screenshot">
-<img src="images/3.png" alt="">
+<img src="images/3.webp" alt="">
 </figure>
 <p>Op deze pagina bevat de internationale telefooninvoercomponent Engelstalige tekst, terwijl de paginataal is ingesteld op Nederlands (<code>lang=&quot;nl&quot;</code>). Deze teksten zijn niet voorzien van een lokaal <code>lang</code>-attribuut.</p>
 <p>Dit betreft onder andere:</p>
@@ -966,7 +969,7 @@
 	<span class="sc"><b>EN</b>: 9.1.4.11</span>
 </div>
 <figure class="screenshot">
-<img src="images/2.png" alt="">
+<img src="images/2.webp" alt="">
 </figure>
 <p>Op deze pagina staat een carrousel die om de paar seconden een nieuwe slide toont. Deze carrousel bevat knoppen met pijl-iconen om tussen de slides te wisselen. Deze pijl-iconen hebben onvoldoende kleurcontrast ten opzichte van de achtergrond. De contrastverhouding van 1,5:1 is te laag.</p>
 <p>Het icoon is dus niet voor iedereen zichtbaar.</p>
@@ -1009,13 +1012,10 @@
               <h2 class="issue-title"><a href="#08-pagina-niet-gevonden">08 Pagina niet gevonden <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/vacatures/404">https://werkenvoor.zuid-holland.nl/vacatures/404</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/vacatures/404">https://werkenvoor.zuid-holland.nl/vacatures/404</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1024,13 +1024,10 @@
               <h2 class="issue-title"><a href="#09-vakgebieden">09 Vakgebieden <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/vakgebieden/">https://werkenvoor.zuid-holland.nl/vakgebieden/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/vakgebieden/">https://werkenvoor.zuid-holland.nl/vakgebieden/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1039,13 +1036,10 @@
               <h2 class="issue-title"><a href="#10-traineeships">10 Traineeships <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/traineeships/">https://werkenvoor.zuid-holland.nl/traineeships/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/traineeships/">https://werkenvoor.zuid-holland.nl/traineeships/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1078,13 +1072,10 @@
               <h2 class="issue-title"><a href="#12-verhaal-van-een-medewerker">12 Verhaal van een medewerker <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/verhalen/josee-de-leeuw-managementondersteuner/">https://werkenvoor.zuid-holland.nl/verhalen/josee-de-leeuw-managementondersteuner/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/verhalen/josee-de-leeuw-managementondersteuner/">https://werkenvoor.zuid-holland.nl/verhalen/josee-de-leeuw-managementondersteuner/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1093,13 +1084,10 @@
               <h2 class="issue-title"><a href="#13-mijn-profiel">13 Mijn profiel <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/profiel/">https://werkenvoor.zuid-holland.nl/profiel/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/profiel/">https://werkenvoor.zuid-holland.nl/profiel/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1108,13 +1096,10 @@
               <h2 class="issue-title"><a href="#14-contact">14 Contact <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/contact/">https://werkenvoor.zuid-holland.nl/contact/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/contact/">https://werkenvoor.zuid-holland.nl/contact/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -1123,13 +1108,10 @@
               <h2 class="issue-title"><a href="#15-zoekresultaat">15 Zoekresultaat <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/zoeken/">https://werkenvoor.zuid-holland.nl/zoeken/</a></p>
+            <p>Link naar pagina: <a href="https://werkenvoor.zuid-holland.nl/zoeken/">https://werkenvoor.zuid-holland.nl/zoeken/</a></p>
 <p>Op deze pagina zijn geen nieuwe bevindingen gevonden. Wel gelden de algemene bevindingen uit dit rapport.</p>
 
-          </div>
-</article>
+          </article>
           
         
       </section>
@@ -1141,6 +1123,8 @@
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -1209,7 +1193,7 @@
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -1219,5 +1203,6 @@
   </main>
 </div>
 
+    
 </body>
 </html>

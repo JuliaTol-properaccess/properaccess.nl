@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202605_open-dataportaal-zuid-holland">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van website opendata.zuid-holland.nl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#hoe-nu-verder">Hoe nu verder</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-op-alle-paginas">Op alle pagina&#39;s</a></li><li><a href="#02-home">Home</a></li><li><a href="#03-zoekresultaten">Zoekresultaten</a></li><li><a href="#04-kaart">Kaart</a></li><li><a href="#05-geologische-kaart">Geologische kaart</a></li><li><a href="#06-natuurnetwerk-nederland">Natuurnetwerk Nederland — Informatiekaart Natuur</a></li><li><a href="#07-leefgebied-weidevogels">Leefgebied weidevogels — Informatiekaart Natuur</a></li><li><a href="#08-natura-2000-gebieden">Natura 2000-gebieden</a></li><li><a href="#09-bestaande-stads-en-dorpsgebieden">Bestaande stads- en dorpsgebieden 2024</a></li><li><a href="#10-cultuurhistorische-waarden">Cultuurhistorische waarden — Informatiekaart Natuur</a></li><li><a href="#11-novex-gebieden">NOVEX-gebieden</a></li><li><a href="#12-pdf-geologische-kaart">PDF: Geologische kaart</a></li><li><a href="#13-pdf-cultuurhistorische-waarden">PDF: Cultuurhistorische waarden — Informatiekaart Natuur</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van website opendata.zuid-holland.nl</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de website opendata.zuid-holland.nl onderzocht tussen 23 april en 7 mei 2026. In dit rapport lees je welke punten verbetering behoeven en hoe deze kunnen worden aangepakt.</p>
+<p>Het onderzoek richt zich op zowel de techniek als de content van de website.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.png" alt="Logo van provincie Zuid-Holland">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="55"
+           data-perceivable="20"
+           data-operable="20"
+           data-understandable="13"
+           data-robust="2">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">55</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="55"
+             data-perceivable="20"
+             data-operable="20"
+             data-understandable="13"
+             data-robust="2">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 13</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 2</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>Opdrachtgever</dt>
+              <dd>provincie Zuid-Holland</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>7 mei 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle pagina&#39;s op de website opendata.zuid-holland.nl</li>
+              
+              <li>Alle PDF&#39;s op de website opendata.zuid-holland.nl</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website</li>
+              
+              <li>De van derden afkomstige inhoud (wettelijke uitzondering voor de overheid)</li>
+              
+              <li>Oude PDF-bestanden (aangemaakt vanaf september 2018 of ouder)</li>
+              
+              <li>Oude video&#39;s (gepubliceerd op 23-09-2020 of ouder)</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Mozilla Firefox, versie 148</li>
+              
+              <li>Google Chrome, versie 148</li>
+              
+              <li>Apple Safari, versie 18</li>
+              
+              <li>PAC software om PDF te testen</li>
+              
+              <li>NVDA schermlezer in combinatie met Firefox</li>
+              
+              <li>VoiceOver schermlezer in combinatie met Safari</li>
+              
+              <li>Andere gangbare browsers en hulpapparatuur</li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>HTML</li>
+              
+              <li>CSS</li>
+              
+              <li>JavaScript</li>
+              
+              <li>DOM</li>
+              
+              <li>WAI-ARIA</li>
+              
+              <li>PDF</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+    <div class="dash-voortgang" id="hoe-nu-verder">
+      <h2>Hoe nu verder</h2>
+      <div class="voortgang-opties-grid">
+        
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-presentation-screen" aria-hidden="true"></i> Presentatie</h3>
+          <p>Bekijk een korte presentatie (~15 min) met de belangrijkste bevindingen, cijfers en vervolgstappen — handig voor een teammeeting.</p>
+          <a class="voortgang-btn" href="presentation.html" target="_blank" rel="noopener">Bekijk presentatie</a>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-op-alle-paginas">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-op-alle-paginas">01 Op alle pagina&#39;s <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <div class="issue">
+<h3>#1 - De lijst met suggesties is niet toegankelijk voor een schermlezer</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In de zoekbalk verschijnen tijdens het typen suggesties in een uitklaplijst. Deze interactie hoort bij een combobox, maar de bijbehorende rol ontbreekt op het invoerveld. Een schermlezer kan daardoor niet aankondigen dat het om een combobox gaat en dat er suggesties zijn.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een zoekbalk met automatische suggesties gebruikt met een schermlezer, heb ik nodig dat het invoerveld <code>role=&quot;combobox&quot;</code> krijgt, samen met <code>aria-expanded</code>, <code>aria-controls</code> en de andere attributen die het combobox-pattern vraagt — want nu verschijnt de suggestielijst alleen visueel, en mijn schermlezer kan op geen enkele manier herkennen dat het invoerveld een combobox is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Om deze zoekbalk toegankelijk te maken als combobox, voeg role=&quot;combobox&quot; toe aan het invoerveld om aan te geven dat het een combobox is.</p>
+<p>Voor meer details, zie <a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/">https://www.w3.org/WAI/ARIA/apg/patterns/combobox/</a>.</p>
+</div>
+<div class="issue">
+<h3>#2 - Onjuist gebruik van role=&quot;menu&quot; in de hoofdnavigatie</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/01.webp" alt="">
+</figure>
+<p>In de header zijn het logo en de links &quot;Zoeken&quot; en &quot;Kaart&quot; geplaatst in een container met <code>role=&quot;menu&quot;</code>. Deze container volgt het ARIA-menu-pattern niet: de juiste child-rollen zoals <code>menuitem</code> ontbreken en de bijbehorende toetsenbordafhandeling wordt niet geïmplementeerd.</p>
+<p>De rol <code>menu</code> is bedoeld voor menu's met een specifiek interactiepatroon, vergelijkbaar met menu's in desktopapplicaties. Voor reguliere websitenavigatie is deze rol niet geschikt. Het gebruik ervan op deze plek geeft hulpsoftware verkeerde semantiek en kan tot verwarring leiden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer of toetsenbord, heb ik nodig dat navigatie-elementen de juiste semantiek hebben, zodat ik begrijp hoe ik ermee om kan gaan. Wanneer een gewone navigatie wordt aangeboden als een menu, terwijl het zich niet als een menu gedraagt, verwacht ik menu-interacties die hier niet werken — en dat maakt de navigatie verwarrend.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verwijder <code>role=&quot;menu&quot;</code> en gebruik semantische HTML voor de navigatie, bijvoorbeeld een <code>&lt;nav&gt;</code>-element met links.</p>
+</div>
+<div class="issue">
+<h3>#3 - Visuele opsomming niet als lijst gemarkeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>In de header staan list-item-elementen (<code>&lt;li&gt;</code>), zoals de links &quot;Zoeken&quot; en &quot;Kaart&quot;, die niet zijn ondergebracht in een lijstcontainer (<code>&lt;ul&gt;</code> of <code>&lt;ol&gt;</code>).</p>
+<p>Hierdoor breekt de semantische relatie tussen list-items en hun bovenliggende lijst. Hulpsoftware kan de inhoud daardoor niet correct als een lijst herkennen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer heb ik nodig dat list-items netjes binnen een lijst staan, zodat ik de structuur begrijp en de items als geheel kan doorlopen. Zonder een correcte lijstcontainer hoor ik niet dat deze links bij elkaar horen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle <code>&lt;li&gt;</code>-elementen binnen een geschikte lijstcontainer (<code>&lt;ul&gt;</code> of <code>&lt;ol&gt;</code>) staan, zodat de lijststructuur correct wordt overgebracht.</p>
+</div>
+<div class="issue">
+<h3>#4 - Herhalende content niet te omzeilen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.1</span>
+	<span class="sc"><b>EN</b>: 9.2.4.1</span>
+</div>
+<p>Op deze pagina ontbreekt een manier om herhalende contentblokken over te slaan. Er is geen skiplink, er zijn geen landmarks, en de koppenstructuur is niet zo opgezet dat deze als alternatief voor een werkende skiplink kan dienen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met het toetsenbord, met een schermlezer, met spraakbesturing of met een schakelapparaat, heb ik nodig dat elke pagina ten minste één manier biedt om de terugkerende navigatie, header en andere gedeelde blokken over te slaan — een werkende skiplink, echte <code>nav</code>/<code>main</code>-landmarks, of een goede koppenstructuur — want nu moet ik op iedere pagina opnieuw langs dezelfde menu-items, mijn schermlezer heeft geen landmarks om naartoe te springen, en de enige manier om de hoofdinhoud te bereiken is door de navigatie steeds opnieuw door te lopen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Een van de volgende oplossingen kan worden toegepast:</p>
+<p>Een werkende skiplink (deze oplossing is geschikt voor alle gebruikers).
+Landmarks.
+Een correcte koppenstructuur.</p>
+</div>
+<div class="issue">
+<h3>#5 - Kleur is gebruikt om toetsenbordfocus aan te geven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.1</span>
+	<span class="sc"><b>EN</b>: 9.1.4.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/02.webp" alt="">
+</figure>
+<p>Op het kleine scherm staat een mobiele menuknop. Deze knop heeft toetsenbordfocus, maar dat is alleen te zien aan een verandering van de achtergrondkleur van wit naar lichtgrijs.</p>
+<p>Dat is niet voldoende: voor bezoekers met een visuele beperking, kleurenblindheid of een hoog-contrastthema is zo'n subtiele kleurverschuiving moeilijk waarneembaar.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die met het toetsenbord navigeert, kleurenblind ben, slechtziend ben, of een hoog-contrastthema gebruik, heb ik nodig dat elke focusindicator op deze pagina meer gebruikt dan alleen kleur — een outline, een rand, een onderstreping of een duidelijke vormverandering — want nu wordt focus alleen aangegeven met een kleurverschuiving van minder dan 3:1 contrast tussen de twee staten, mijn ogen pikken die kleine verschuiving niet op, en ik raak het spoor van de toetsenbordfocus kwijt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verbeter de zichtbaarheid van de toetsenbordfocus door naast de kleurverandering een extra visueel element toe te voegen. Denk aan een dikkere rand, een onderstreping, een duidelijker achtergrondverandering of een icoon. Zo is voor iedereen, ongeacht visuele mogelijkheden, te zien waar de focus zich bevindt.</p>
+</div>
+<div class="issue">
+<h3>#6 - Onvoldoende kleurcontrast bij UI-elementen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>
+	<span class="sc"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Het zoekveld heeft grijze (<code>#C9C9C9</code>) randen op een lichtgrijze (<code>#F5F5F7</code>) achtergrond. De contrastverhouding is 1,5:1.</p>
+<p>Als alternatief zou een placeholdertekst kunnen dienen, maar ook die heeft onvoldoende contrast met de achtergrond.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die slechtziend is, leeftijdsgerelateerd contrastverlies heeft, of een scherm in fel zonlicht gebruikt, heb ik nodig dat de rand van elk invoerveld minimaal 3:1 contrast heeft met de paginakleur — want de rand vertelt mij &quot;dit is een veld waarin je kunt typen&quot;, en een rand die ik niet zie levert mij een onzichtbaar formulierveld op dat ik gewoon over het hoofd zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Dit voldoet niet aan de minimale contrasteis van 3,0:1 voor de rand van invoervelden ten opzichte van de aangrenzende vlakken. Onvoldoende contrast maakt de begrenzing van het invoerveld moeilijk waarneembaar en beperkt de bruikbaarheid.</p>
+</div>
+<div class="issue">
+<h3>#7 - Meerdere pagina's hebben dezelfde paginatitel</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 2.4.2</span>
+	<span class="sc"><b>EN</b>: 9.2.4.2</span>
+</div>
+<p>Alle pagina's hebben dezelfde tekst in het <code>&lt;title&gt;</code>-element: &quot;Open-dataportaal Zuid-Holland&quot;.</p>
+<p>Elke pagina hoort een unieke en beschrijvende titel te hebben. Dezelfde paginatitels overal kunnen verwarrend zijn, en maken het vooral lastig om te navigeren via tabbladen, browsergeschiedenis of bookmarks.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer, meerdere browsertabbladen open heeft, mijn browsergeschiedenis doorbladert of pagina's bookmarked, heb ik nodig dat elke pagina op de site een unieke <code>title</code> heeft die de eigen inhoud beschrijft — want nu hebben alle pagina's dezelfde titel, mijn schermlezer kondigt steeds dezelfde woorden aan, mijn tabbladen zijn niet uit elkaar te houden, en geschiedenis en bookmarks geven rij na rij dezelfde naam voor verschillende pagina's.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas het <code>&lt;title&gt;</code>-element zo aan dat elke pagina een unieke en informatieve titel krijgt die de inhoud nauwkeurig weergeeft.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-home">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-home">02 Home <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/home">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/home</a></p>
+<div class="issue">
+<h3>#8 - Onjuiste tablist-structuur</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/03.webp" alt="">
+</figure>
+<p>Onder de sectie met thema's zijn de tabs gemaakt met een onjuiste ARIA-structuur. Een element met <code>role=&quot;tablist&quot;</code> bevat niet de verwachte child-elementen (<code>role=&quot;tab&quot;</code>). In plaats daarvan zit er nog een element met <code>role=&quot;tablist&quot;</code> in.</p>
+<p>Dit verbreekt de vereiste relatie tussen ouder en kind voor tabs en kan voorkomen dat hulpsoftware de tab-interface correct herkent en bedient.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer of toetsenbord heb ik nodig dat tabs goed gestructureerd zijn, zodat ik de relatie tussen tablist, tabs en bijbehorende panelen begrijp en met de standaard toetsenbordcombinaties tussen tabs kan wisselen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat een tablist alleen elementen met <code>role=&quot;tab&quot;</code> als directe kinderen bevat, en dat elke tab gekoppeld is aan het bijbehorende tab-panel.</p>
+</div>
+<div class="issue">
+<h3>#9 - Twee links naar dezelfde bestemming</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Advies</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.4</span>
+	<span class="sc"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Onder de tabs staan artikelen die elk twee aparte links naar dezelfde bestemming bevatten.</p>
+<p>Meerdere links met dezelfde bestemming binnen hetzelfde contentblok zijn overbodig en kunnen onnodige uitvoerigheid opleveren voor gebruikers van een schermlezer.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer of toetsenbord heb ik nodig dat elk artikel één duidelijke link naar de bestemming bevat, zodat ik niet steeds dubbele links tegenkom die het navigeren onnodig vertragen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Combineer de links in één link per artikel — bijvoorbeeld door het hele artikel als link te markeren of de klikbare elementen te bundelen — zodat bezoekers niet meerdere navigatieopties met hetzelfde doel zien.</p>
+</div>
+<div class="issue">
+<h3>#10 - Link met een te lange toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.4</span>
+	<span class="sc"><b>EN</b>: 9.2.4.4</span>
+</div>
+<figure class="screenshot">
+<img src="images/04.webp" alt="">
+</figure>
+<p>Onder de tabs staan artikelen die elk twee links naar dezelfde bestemming bevatten. De tweede link heeft een veel te lange toegankelijke naam, bijvoorbeeld:</p>
+<p>&quot;Deze laag wordt gebruikt voor de IC-Desk applicatie om te bepalen in welke regio (Noord, Zuid, Oost, West, Vaarwegen) een storing/incident plaatsvindt. Vanuit de IC-Desk applicatie wordt de service op deze laag eenmaal daags bevraagd om de geometrie van de regio's op te halen.&quot;</p>
+<p>Linkteksten horen kort en duidelijk te zijn. Lange, uitgebreide linknamen zijn moeilijk te scannen en te navigeren, vooral voor gebruikers van een schermlezer die met een lijst van links werken.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer die door links navigeert, heb ik nodig dat linknamen kort, duidelijk en betekenisvol zijn, zodat ik snel begrijp waar elke link naartoe leidt. Bij lange, uitgebreide linkteksten wordt scannen lastig en navigeren traag.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Maak de linktekst beknopt en passend bij de bestemming. Verplaats lange beschrijvingen naar de begeleidende tekst of de doelpagina, in plaats van ze in de toegankelijke naam van de link op te nemen.</p>
+</div>
+<div class="issue">
+<h3>#11 - Toetsenbordfocus is niet zichtbaar</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.7</span>
+	<span class="sc"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>Onder de tabs staan artikelen met elk twee links. De tweede link heeft geen zichtbare toetsenbordfocus.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die met het toetsenbord, met een schermvergroter of met een visuele beperking navigeert, heb ik nodig dat elk interactief element op elke pagina een duidelijk zichtbare focusindicator heeft — de standaard van de browser of een aangepaste vervanging — want nu is de standaard focusstijl verwijderd zonder vervanging, mijn toetsenbordnavigatie verloopt blind, en ik weet niet waar ik me op de pagina bevind tussen twee tab-aanslagen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk interactief element een duidelijk zichtbare focusindicator heeft tijdens toetsenbordnavigatie. Gebruik CSS met de <code>:focus</code>- of <code>:focus-visible</code>-pseudo-class om een zichtbare outline toe te voegen, bijvoorbeeld:</p>
+<p>a:focus-visible {
+outline: 2px solid <code>#005fcc</code>;
+outline-offset: 2px;
+}</p>
+<p>Verwijder de standaard focusstijl van de browser niet zonder een gelijkwaardig of beter alternatief.</p>
+</div>
+<div class="issue">
+<h3>#12 - Bij 400% zoom verdwijnt content</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.10</span>
+	<span class="sc"><b>EN</b>: 9.1.4.10</span>
+</div>
+<figure class="screenshot">
+<img src="images/05.webp" alt="">
+</figure>
+<p>Wanneer deze pagina op een schermresolutie van 1280 bij 1024 pixels wordt bekeken en 400% wordt ingezoomd, overlappen de links met thema's elkaar en zijn ze deels niet meer zichtbaar.</p>
+<p>Inzoomen tot 400% mag de leesbaarheid van een informatief element niet aantasten.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als slechtziende bezoeker die de pagina op een 1280×1024-scherm tot 400% inzoomt (effectief een viewport van 320px), heb ik nodig dat alle tekst zichtbaar blijft — niet wordt afgeknipt, verborgen, of buiten de viewport geduwd — want nu verdwijnt door inzoomen een deel van de tekst, het hulpmiddel waarmee ik de pagina lees neemt de woorden weg, en wat ik niet zie kan ik niet teruglezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alles werkt en leesbaar blijft als je inzoomt tot 400% op een scherm van 1280 bij 1024 pixels.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-zoekresultaten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-zoekresultaten">03 Zoekresultaten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/search">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/search</a></p>
+<div class="issue">
+<h3>#13 - Knop geeft niet aan dat extra content opent</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent en sluit de aanvullende zoekinstellingen, maar dat is in de code niet aangegeven.</p>
+<p>Hetzelfde probleem komt voor op de pagina:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/search">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/search</a>, onderaan de pagina, met de knop &quot;KAART&quot;.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer, heb ik nodig dat elke knop die extra content opent en sluit <code>aria-expanded</code> (true/false) heeft — want nu kan mijn schermlezer niet aankondigen dat de knop extra content opent of dat die content op dit moment open is, en ik druk op de knop zonder te weten welk soort overlay er gaat verschijnen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Het <code>aria-expanded</code>-attribuut kan worden gebruikt om de status aan te geven. Zet <code>aria-expanded=&quot;true&quot;</code> als de extra content open is, en <code>aria-expanded=&quot;false&quot;</code> als die gesloten is. Dit werkt alleen betrouwbaar als de focus op de knop blijft. Verschuift de focus weg van de knop terwijl de content open is, gebruik dan visueel verborgen tekst om de status van de content aan te geven. Werk die tekst dynamisch bij wanneer de status verandert.</p>
+</div>
+<div class="issue">
+<h3>#14 - Invoerveld heeft geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/06.webp" alt="">
+</figure>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent extra zoekinstellingen met invoervelden. Alle invoervelden onder de kop &quot;Wat?&quot; hebben geen toegankelijke naam. Daardoor kunnen blinde of slechtziende bezoekers die een schermlezer gebruiken niet horen waar het veld voor bedoeld is. Elk invoerveld heeft een toegankelijke naam nodig die de functie helder beschrijft.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die formulieren invult met een schermlezer, met spraakbesturing of met andere hulpsoftware, heb ik nodig dat elk formulierveld een toegankelijke naam heeft die beschrijft wat ik moet invullen — via een echt <code>label</code>-element, <code>aria-label</code> of <code>aria-labelledby</code> — want nu heeft dit veld geen naam, mijn schermlezer kondigt alleen &quot;tekstveld&quot; of &quot;keuzelijst&quot; aan, mijn spraakcommando heeft niets om op te richten, en ik weet niet wat ik moet typen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef het invoerveld een toegankelijke naam met een <code>label</code>-element, <code>aria-label</code> of <code>aria-labelledby</code>.</p>
+</div>
+<div class="issue">
+<h3>#15 - De lijst met suggesties is niet toegankelijk voor een schermlezer</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent extra zoekinstellingen met invoervelden die tijdens het typen suggesties tonen in een uitklaplijst. Deze interactie hoort bij een combobox, maar de bijbehorende rollen ontbreken op de invoervelden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die invoervelden met automatische suggesties gebruikt met een schermlezer, heb ik nodig dat het invoerveld <code>role=&quot;combobox&quot;</code> krijgt, samen met <code>aria-expanded</code>, <code>aria-controls</code> en de andere attributen die het combobox-pattern vraagt — want nu verschijnt de suggestielijst alleen visueel; mijn schermlezer kan niet herkennen dat het invoerveld een combobox is, dat suggesties open zijn, of hoeveel het er zijn.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Om deze invoervelden toegankelijk te maken als combobox, voeg in elk geval het volgende toe:</p>
+<p>role=&quot;combobox&quot;: voeg dit attribuut toe aan het invoerveld om aan te geven dat het een combobox is.
+aria-expanded: voeg dit attribuut toe om de status van de suggestielijst aan te geven. Zet <code>aria-expanded=&quot;true&quot;</code> als de lijst zichtbaar is en <code>aria-expanded=&quot;false&quot;</code> als die verborgen is.</p>
+<p>Voor meer details, zie <a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/">https://www.w3.org/WAI/ARIA/apg/patterns/combobox/</a>.</p>
+<p>Met deze attributen kan hulpsoftware de invoervelden correct herkennen en bedienen als combobox.</p>
+</div>
+<div class="issue">
+<h3>#16 - Placeholdertekst wordt gebruikt als label</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 3.3.2</span>
+	<span class="sc"><b>EN</b>: 9.3.3.2</span>
+</div>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent extra zoekinstellingen met datumvelden met placeholdertekst &quot;Van&quot; en &quot;Tot&quot;. Deze velden hebben geen blijvend zichtbaar label; de placeholdertekst wordt als label gebruikt.</p>
+<p>Naast deze datumvelden staan kalendericoontjes, maar daaruit is niet op te maken welk veld de begindatum is en welk de einddatum.</p>
+<p>Invoervelden hebben labels nodig die altijd zichtbaar zijn. Placeholdertekst kan die rol niet vervullen, omdat die verdwijnt zodra de bezoeker begint te typen. Een blijvend zichtbaar label is nodig.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die formulieren invult met een schermlezer, met cognitieve beperkingen, of die wil terugkijken wat hij heeft ingevuld, heb ik nodig dat elk invoerveld een blijvend zichtbaar label heeft — placeholdertekst alleen is niet genoeg — want de placeholder verdwijnt zodra ik begin te typen, ik kan dan niet meer zien waar het veld voor was, en controleren of corrigeren wordt onmogelijk.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een blijvend zichtbaar label toe aan het invoerveld.</p>
+</div>
+<div class="issue">
+<h3>#17 - Kleurcontrast tekst en achtergrond is minder dan 4,5:1</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>
+	<span class="sc"><b>EN</b>: 9.1.4.3</span>
+</div>
+<figure class="screenshot">
+<img src="images/07.webp" alt="">
+</figure>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent extra zoekinstellingen met blauwe (<code>#3277B3</code>) tekst op een lichtgrijze (<code>#F5F5F7</code>) achtergrond, zoals &quot;Bronnen aangemaakt in de laatste&quot;. De contrastverhouding is te laag: 4,4:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die slechtziend is, leeftijdsgerelateerd contrastverlies heeft, of een scherm in fel zonlicht gebruikt, heb ik nodig dat tekst kleiner dan 24px en niet-vetgedrukt minimaal 4,5:1 contrast heeft met de achtergrond — want deze tekst valt onder de standaard contrasteis en de gebruikte kleuren zakken eronder, met als gevolg lopende tekst die ik moet ontcijferen of waar ik overheen lees.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Deze tekst is kleiner dan 24px en niet vetgedrukt, dus het contrast hoort minimaal 4,5:1 te zijn.</p>
+</div>
+<div class="issue">
+<h3>#18 - Onvoldoende kleurcontrast bij UI-elementen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>
+	<span class="sc"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Naast het zoekveld staat een knop met een drie-punten-icoon. Deze knop opent extra zoekinstellingen met invoervelden. De grijze (<code>#C9C9C9</code>) randen van de invoervelden hebben op een lichtgrijze (<code>#F5F5F7</code>) achtergrond een te lage contrastverhouding: 1,5:1. Een placeholder zou een alternatief kunnen zijn, maar ook die heeft onvoldoende contrast met de achtergrond.</p>
+<p>Hetzelfde probleem komt voor op de pagina:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/map">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/map</a>, in de extra content na het klikken op de knop met het &quot;+&quot;-icoon.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die slechtziend is, leeftijdsgerelateerd contrastverlies heeft, of een scherm in fel zonlicht gebruikt, heb ik nodig dat de rand van elk invoerveld minimaal 3:1 contrast heeft met de paginakleur — want de rand vertelt mij &quot;dit is een veld waarin je kunt typen&quot;, en een rand die ik niet zie levert mij een onzichtbaar formulierveld op dat ik gewoon over het hoofd zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Dit voldoet niet aan de minimale contrasteis van 3,0:1 voor de rand van invoervelden ten opzichte van de aangrenzende vlakken. Onvoldoende contrast maakt de begrenzing van het invoerveld moeilijk waarneembaar en beperkt de bruikbaarheid.</p>
+</div>
+<div class="issue">
+<h3>#19 - Rol en status van accordion-knop ontbreken</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In de zijbalk staat een sectie met verborgen content, &quot;Filter&quot;, die extra content uit- en inklapt. Het element dat de verborgen content opent en sluit, mist de rol van knop. Gebruikers van een schermlezer kunnen niet herkennen dat het element bedienbaar is. Zonder de juiste rol kondigt hulpsoftware het element niet als knop aan, waardoor de accordion onbruikbaar wordt voor deze groep. Ook de open- of gesloten-status is wel visueel te zien, maar wordt programmatisch niet doorgegeven aan schermlezers.</p>
+<p>Hetzelfde probleem komt voor binnen deze sectie, bij andere accordions zoals &quot;BRONTYPE&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die accordions met een schermlezer of het toetsenbord bedient, heb ik nodig dat elke accordion-trigger als echte knop is opgenomen — meestal een <code>&lt;button&gt;</code> binnen een kop — want nu is de trigger een ander element, mijn schermlezer kondigt het niet als knop aan, mijn toetsenbord kan het niet activeren zoals het verwacht, en de accordion is onzichtbaar voor hulpsoftware.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Gebruik een kop-element met een <code>&lt;button&gt;</code> erin, bijvoorbeeld: <code>&lt;h2&gt;&lt;button&gt;Filter&lt;/button&gt;&lt;/h2&gt;</code>. Daarmee heeft de trigger de juiste knoprol en wordt het element door schermlezers als bedienbaar aangekondigd.</p>
+<p>Geef de status aan op een van de volgende manieren:</p>
+<ol>
+<li>Voeg het <code>aria-expanded</code>-attribuut toe aan het element dat het paneel opent en sluit. Zet <code>aria-expanded=&quot;true&quot;</code> als het paneel open is en <code>&quot;false&quot;</code> als het gesloten is. Werk dit dynamisch bij als de status verandert.</li>
+<li>Voeg visueel verborgen tekst toe die de status aangeeft (bijvoorbeeld &quot;(open)&quot; of &quot;(gesloten)&quot;) en werk die tekst dynamisch bij. Deze tekst wordt door een schermlezer voorgelezen, maar is visueel niet zichtbaar.</li>
+</ol>
+</div>
+<div class="issue">
+<h3>#20 - Accordion is niet met het toetsenbord te bedienen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>
+	<span class="sc"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>In de zijbalk staat een sectie met verborgen content, &quot;Filter&quot;, die niet met het toetsenbord bedienbaar is. Bezoekers die uitsluitend met het toetsenbord navigeren moeten alle interactieve elementen kunnen bedienen, waaronder links, knoppen, formulieren, dropdownmenu's, tabs, sliders en accordions. De accordion moet volledig met het toetsenbord werken. Dat betekent meestal pijltoetsen om tussen kopjes te navigeren, Enter/Spatie om secties open of dicht te klappen, en passende ARIA-attributen om de status door te geven aan hulpsoftware. Lees over toegankelijke accordions: <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">https://www.w3.org/WAI/ARIA/apg/patterns/accordion/</a>.</p>
+<p>Hetzelfde probleem komt voor binnen deze sectie, bij andere accordions zoals &quot;BRONTYPE&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met het toetsenbord, met een schermlezer, met spraakbesturing of met een schakelapparaat, heb ik nodig dat elke accordion op de pagina — net als elke andere klikbare component (links, knoppen, formulieren, dropdowns, tabs, sliders) — met Enter of Spatie via het toetsenbord open- en dicht klapt — want nu reageert de accordion alleen op een muisklik, mijn toetsenbord kan de verborgen content niet zichtbaar maken, en de informatie erin blijft afgesloten voor wie geen muis gebruikt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alles wat klikbaar is ook met het toetsenbord werkt.</p>
+</div>
+<div class="issue">
+<h3>#21 - Knop bestaat alleen uit een afbeelding zonder alternatieve tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.1.1, 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.1.1.1, 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/08.webp" alt="">
+</figure>
+<p>Naast de knop &quot;Sortering: Popularitet&quot; staat een knop met een 9-punten-icoon. Dit icoon heeft geen tekstalternatief. Wanneer een knop alleen uit een afbeelding bestaat, hoort het tekstalternatief van de afbeelding de functie van de knop te beschrijven.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die knoppen activeert met een schermlezer, de pagina via spraakbesturing bedient, of pagina's leest met afbeeldingen uit, heb ik nodig dat elke icoon-only knop een toegankelijke naam heeft die de functie beschrijft (via <code>aria-label</code> of visueel verborgen tekst) — want zonder die naam kondigt mijn schermlezer alleen &quot;knop&quot; aan, mijn spraakcommando heeft niets om op te richten, de plaatsvervanger bij images-off blijft leeg, en ik weet niet wat er gebeurt als ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een naam toe op een van de volgende manieren:</p>
+<p>aria-label: voeg een <code>aria-label</code>-attribuut toe aan de knop met een korte beschrijving van de functie.
+Visueel verborgen tekst: zet beschrijvende tekst binnen het knop-element en verberg die met CSS, terwijl de tekst wel toegankelijk blijft voor schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#22 - Linktekst is niet duidelijk genoeg</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 2.4.4</span>
+	<span class="sc"><b>EN</b>: 9.2.4.4</span>
+</div>
+<p>Op deze pagina staan paginatie-links. De toegankelijke namen &quot;Eerste&quot;, &quot;Vorig&quot; en andere beschrijven onvoldoende waar deze links naartoe leiden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die links volgt met een schermlezer, met spraakbesturing, met cognitieve beperkingen, of die de pagina scant door van link naar link te springen, heb ik nodig dat elke linktekst zelfstandig de bestemming beschrijft — niet algemene woorden als &quot;Eerste&quot;, die niets zeggen los van de context — want de linklijst van mijn schermlezer toont alleen de linktekst, mijn spraakcommando heeft een unieke naam nodig om naar te wijzen, en een lijst vol &quot;Eerste&quot;-links zegt mij niet welke ik moet volgen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de linktekst de bestemming duidelijk weergeeft. Als de context van de link visueel duidelijk is (bijvoorbeeld binnen een specifieke sectie), kun je de vage tekst aanvullen met visueel verborgen tekst die meer context biedt, bijvoorbeeld &quot;Eerste pagina&quot;.</p>
+</div>
+<div class="issue">
+<h3>#23 - Status van uit-/inklap-knoppen wordt niet programmatisch doorgegeven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In de zijbalk &quot;Filter&quot; staan twee knoppen — &quot;Uitklappen&quot; en &quot;Inklappen&quot; — die alle accordion-secties tegelijk openen of sluiten. De actieve status is alleen visueel zichtbaar (aan de uit- of ingeklapte accordions); in de code is geen indicatie van de huidige status.</p>
+<p>Daardoor kunnen gebruikers van hulpsoftware niet horen of de filters op dat moment uit- of ingeklapt zijn, of welke knop op dat moment de actieve actie is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer heb ik nodig dat ik weet of de filtersecties op dat moment uit- of ingeklapt zijn, zodat ik begrijp wat de huidige situatie is en wat er gebeurt als ik op de knop druk. Wordt die informatie alleen visueel doorgegeven, dan weet ik niet welke actie nu actief is en wat ik kan verwachten.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de status programmatisch wordt doorgegeven. Geef de status bijvoorbeeld terug op de knoppen (met <code>aria-pressed</code> of door de toegankelijke naam/status bij te werken), zodat hulpsoftware de huidige status kan aankondigen.</p>
+</div>
+<div class="issue">
+<h3>#24 - Klikbare oppervlakte van checkboxes is te klein</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.5.8</span>
+	<span class="sc"><b>EN</b>: —</span>
+</div>
+<p>Op deze pagina, in de zijbalk met filters, staan checkboxes met een klikoppervlak van minder dan 24x24 CSS-pixels (13x13). Interactieve elementen als checkboxes hebben een voldoende groot klikoppervlak nodig zodat bezoekers met een motorische beperking ze gemakkelijk kunnen activeren. De minimale doelafmeting is 24x24 CSS-pixels. Is het klikoppervlak kleiner, dan moet de afstand tussen aangrenzende doelen zo groot zijn dat een denkbeeldige cirkel met een diameter van 24 pixels rond het midden van een doelgebied geen ander doelgebied raakt.</p>
+<p>Hetzelfde probleem komt voor in de zoekresultaten, bij links met iconen boven de koppen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker met beperkte motoriek, met trillende handen, die met een vinger op een klein touchscreen tikt, of die een hoofdpointer of oogbesturing gebruikt, heb ik nodig dat elke interactieve knop een klikoppervlak heeft van minimaal 24×24 CSS-pixels — of voldoende ruimte rondom een kleiner doel zodat ik er zonder missers op kan klikken — want nu zijn deze knoppen kleiner dan de drempel, mijn pointer landt er niet betrouwbaar op, en ik mis het doel of activeer per ongeluk een andere knop ernaast.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de checkboxes voldoen aan de minimale afmeting, of plaats ze zo ver uit elkaar dat ze elkaar niet meer overlappen op grond van de cirkel-regel.</p>
+</div>
+<div class="issue">
+<h3>#25 - Checkboxes met dezelfde tekst voeren een andere actie uit</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>
+	<span class="sc"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>In de zoekresultaten staan checkboxes met dezelfde toegankelijke naam: &quot;Klik om te selecteren of deselecteren&quot;. Deze checkboxes voeren echter verschillende functies uit. Voor gebruikers van een schermlezer is dat verwarrend, omdat de identieke tekst de verschillende acties niet onderscheidt.</p>
+<p>Hetzelfde probleem komt voor onderaan elk zoekresultaat, bij knoppen met een ketting- en wereldbol-icoon.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die checkboxes activeert met een schermlezer, met spraakbesturing, of door door een lijst van bedieningselementen te scannen, heb ik nodig dat checkboxes die verschillende acties uitvoeren, ook verschillende namen krijgen — want nu hebben meerdere checkboxes dezelfde toegankelijke naam terwijl ze andere dingen doen, mijn schermlezer kan ze in de elementenlijst niet uit elkaar houden, mijn spraakcommando is dubbelzinnig, en ik activeer per ongeluk de verkeerde actie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de naam van elke checkbox duidelijk en uniek de actie beschrijft die de checkbox activeert. Checkboxes met verschillende functies horen verschillende, beschrijvende namen te hebben.</p>
+</div>
+<div class="issue">
+<h3>#26 - Statusbericht wordt niet programmatisch doorgegeven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>
+	<span class="sc"><b>EN</b>: 9.4.1.3</span>
+</div>
+<p>In de zoekresultaten verandert het aantal geselecteerde checkboxes een teller boven de resultaten (het aantal geselecteerde items). Deze verandering is wel visueel zichtbaar, maar wordt niet als statusbericht aangeboden aan hulpsoftware.</p>
+<p>Daardoor horen gebruikers van een schermlezer niet wanneer het aantal geselecteerde items verandert.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer die items selecteert in de zoekresultaten, heb ik nodig dat ik wordt geïnformeerd wanneer het aantal aangevinkte checkboxes verandert, zodat ik mijn selectie kan volgen zonder steeds handmatig naar de teller te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat updates van het aantal geselecteerde items programmatisch worden doorgegeven als statusbericht. Gebruik bijvoorbeeld een live region met <code>role=&quot;status&quot;</code> of <code>aria-live=&quot;polite&quot;</code>, zodat schermlezers de wijzigingen automatisch aankondigen.</p>
+</div>
+<div class="issue">
+<h3>#27 - De leesvolgorde is niet logisch</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.2</span>
+	<span class="sc"><b>EN</b>: 9.1.3.2</span>
+</div>
+<p>De volgorde van HTML-elementen in de zoekresultaten is niet logisch: links en checkboxes staan boven de koppen. De huidige volgorde is: links en checkboxes, kop, tekst. Wanneer een pagina meerdere zoekresultaten met links, checkboxes, koppen en tekst bevat, hoort de kop in de HTML als eerste te staan. Daarmee wordt de inhoud correct aan de bijbehorende kop gekoppeld. De aanbevolen volgorde is: kop, links en checkboxes, tekst. Zo wordt voor gebruikers van hulpsoftware zoals schermlezers duidelijk welke inhoud bij welke kop hoort, ongeacht de visuele opmaak.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die de pagina leest met een schermlezer, die met het toetsenbord tab't, een schermvergroter gebruikt, of afhankelijk is van een voorspelbare leesvolgorde, heb ik nodig dat elk zoekresultaat in de DOM begint met de kop, en dat links, checkboxes, datum en tekst daaronder in dezelfde container staan — want nu staan afbeeldingen in de bron boven de koppen, mijn schermlezer kondigt de alt-tekst aan voordat duidelijk is bij welk artikel die hoort, mijn tab-volgorde gaat eerst door afbeeldingen voor titels, en ik kan niet vaststellen waar het ene artikel eindigt en het volgende begint.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de volgorde van HTML-elementen aan zodat de kop als eerste komt.</p>
+</div>
+<div class="issue">
+<h3>#28 - Tekstalternatief herhaalt aangrenzende tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>
+	<span class="sc"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>In de zoekresultaten staan afbeeldingen. De tekstalternatieven van deze afbeeldingen zijn een herhaling van de kop ernaast, bijvoorbeeld &quot;Grondwaterbeschermingsgebieden&quot;.</p>
+<p>Omdat deze afbeeldingen geen aanvullende informatie bieden bovenop de tekst die al zichtbaar is, kunnen ze worden beschouwd als decoratief.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die de pagina via een schermlezer beluistert, heb ik nodig dat het <code>alt</code>-attribuut van een informatieve afbeelding leeg is wanneer de zichtbare tekst ernaast hetzelfde zegt — want als zowel de afbeelding als de omliggende tekst dezelfde woorden gebruiken, leest mijn schermlezer dezelfde zin twee keer, mijn leesritme wordt onderbroken, en ik vraag me af of ik iets gemist heb.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Maak het <code>alt</code>-attribuut van deze afbeeldingen leeg (<code>alt=&quot;&quot;</code>), zodat schermlezergebruikers geen overbodige informatie krijgen.</p>
+</div>
+<div class="issue">
+<h3>#29 - Onjuist gebruik van role=&quot;menu&quot;</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/09.webp" alt="">
+</figure>
+<p>In de zoekresultaten staat een knop met een ketting-icoon die extra content opent. Deze content is geplaatst in een container met <code>role=&quot;menu&quot;</code>. Deze container volgt het ARIA-menu-pattern niet (bijvoorbeeld de juiste child-rollen zoals <code>menuitem</code> ontbreken, en het verwachte toetsenbordgedrag is niet aanwezig).</p>
+<p>Hetzelfde probleem komt voor bij andere knoppen en links.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer of toetsenbord heb ik nodig dat navigatie-elementen de juiste semantiek gebruiken, zodat ik begrijp hoe ik ermee kan werken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verwijder <code>role=&quot;menu&quot;</code>.</p>
+</div>
+<div class="issue">
+<h3>#30 - Lijst-items staan niet in een lijst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>In de zoekresultaten staat een knop met een ketting-icoon die extra content opent. In deze content staan list-item-elementen (<code>&lt;li&gt;</code>), zoals de link &quot;BESCHERMINGSGEBIED_GRONDWATER&quot;, die door <code>role=&quot;menu&quot;</code> niet meer in een geldige lijstcontainer (<code>&lt;ul&gt;</code> of <code>&lt;ol&gt;</code>) staan.</p>
+<p>Dit verbreekt de semantische relatie tussen list-items en hun bovenliggende lijst, en hulpsoftware kan de inhoud daardoor niet correct als lijst herkennen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer heb ik nodig dat list-items netjes binnen een lijst staan, zodat ik de structuur begrijp en de items als geheel kan doorlopen. Zonder een correcte lijstcontainer hoor ik niet dat deze links bij elkaar horen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle <code>&lt;li&gt;</code>-elementen binnen een geschikte lijstcontainer (<code>&lt;ul&gt;</code> of <code>&lt;ol&gt;</code>) staan. Dit kan worden opgelost door <code>role=&quot;menu&quot;</code> te verwijderen.</p>
+</div>
+<div class="issue">
+<h3>#31 - Content verdwijnt bij aangepaste tekstafstand</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.12</span>
+	<span class="sc"><b>EN</b>: 9.1.4.12</span>
+</div>
+<figure class="screenshot">
+<img src="images/10.webp" alt="">
+</figure>
+<p>Op deze pagina wordt een deel van de tekst in de zoekresultaten gedeeltelijk onzichtbaar of onleesbaar wanneer bezoekers tekstafstanden toepassen zoals beschreven in dit succescriterium. Bezoekers passen tekstafstand vaak aan met eigen CSS om beter te kunnen lezen. Op deze pagina blijft de content niet volledig zichtbaar bij zulke aanpassingen. Alle informatie hoort toegankelijk en leesbaar te blijven, ook bij aangepaste tekstopmaak.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker met dyslexie, een visuele beperking of een cognitieve beperking die de tekst in de browser herstijlt om beter te kunnen lezen — bredere regelhoogte, meer letterafstand, meer woordafstand, grotere alinea-afstand — heb ik nodig dat elke container op de pagina meegroeit met de nieuwe afstand in plaats van tekst af te knippen of te verbergen — want nu verdwijnt door de WCAG-tekstafstandwaarden een deel van de kop of alinea, het hulpmiddel waarmee ik de pagina lees neemt de woorden weg, en wat ik niet zie kan ik niet teruglezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Maak de hoogte en breedte van containers responsief, zodat content niet wordt afgeknipt bij aangepaste tekstafstand.</p>
+</div>
+<div class="issue">
+<h3>#32 - Bij 400% zoom verschijnt een scrollbalk</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.10</span>
+	<span class="sc"><b>EN</b>: 9.1.4.10</span>
+</div>
+<figure class="screenshot">
+<img src="images/11.webp" alt="">
+</figure>
+<p>Wanneer deze pagina op een schermresolutie van 1280 bij 1024 pixels wordt bekeken en 400% wordt ingezoomd, verschijnt een scrollbalk en is een deel van de inhoud niet meer zichtbaar.</p>
+<p>Horizontaal scrollen is niet toegestaan, ook niet als de viewport is ingesteld op of ingezoomd tot 320 CSS-pixels breed (voor verticale content) of 256 CSS-pixels hoog (voor horizontale content). Zorg dat de tekst binnen het scherm past. Scrollen in beide richtingen is alleen toegestaan als het echt nodig is voor de betekenis of het gebruik van de inhoud. Uitzonderingen zijn tabellen, betekenisvolle afbeeldingen en kaarten — die moeten leesbaar blijven, dus scrollen binnen die elementen mag wel.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als slechtziende bezoeker die de pagina tot 400% inzoomt (of bekijkt op 320 CSS-pixels breed), heb ik nodig dat de pagina herstroomt naar één kolom zonder horizontaal scrollen op de hoofdcontent — alleen losse elementen zoals brede tabellen, complexe afbeeldingen of kaarten mogen een horizontale scrollbalk hebben — want horizontaal scrollen op elke regel dwingt me heen en weer te schuiven om de simpelste alinea te lezen, mijn ogen verliezen hun plek, en de pagina wordt onleesbaar in juist de modus waar ik op vertrouw.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Controleer of horizontaal scrollen écht nodig is. Zo niet, zorg dat horizontaal scrollen niet meer mogelijk is bij inzoomen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-kaart">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-kaart">04 Kaart <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/map">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/map</a></p>
+<div class="issue">
+<h3>#33 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>
+	<span class="sc"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>Aan de zijkant staan knoppen die extra content openen. Bij elk stuk extra content hoort een sluit-knop. De toegankelijke naam &quot;x&quot; beschrijft de functie niet duidelijk. Voor blinde bezoekers en gebruikers van een schermlezer is daardoor moeilijk te begrijpen waar de knop voor is. De toegankelijke naam hoort de actie van de knop helder en beknopt weer te geven.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344</a> — bij het dialoogvenster dat opent na het klikken op de link met envelop-icoon</li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a> — bij het dialoogvenster dat opent na het klikken op de link met envelop-icoon</li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a> — bij het dialoogvenster dat opent na het klikken op de link met envelop-icoon</li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die knoppen activeert met een schermlezer, met spraakbesturing, of die de pagina leest met afbeeldingen uit, heb ik nodig dat de toegankelijke naam van elke knop beschrijft wat er gebeurt als ik die activeer — niet de visuele vorm, niet een bestandsnaam, niet een label dat niets met de functie te maken heeft — want nu komt de aangekondigde naam niet overeen met de echte actie, mijn schermlezer misleidt me over wat ik op het punt sta te doen, en mijn spraakcommando landt op een knop die anders heet dan zijn functie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de toegankelijke naam aan (bijvoorbeeld via <code>aria-label</code>) zodat die de functie van de knop correct weergeeft, bijvoorbeeld &quot;Sluiten Voeg een kaartlaag toe uit&quot;.</p>
+</div>
+<div class="issue">
+<h3>#34 - Knop heeft geen code die aangeeft dat extra content opent</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/12.webp" alt="">
+</figure>
+<p>Aan de zijkant staan knoppen die extra content openen en sluiten, maar dat is in de code niet aangegeven.</p>
+<p>Hetzelfde probleem komt voor in de extra content &quot;Beheer lagen&quot; bij de knop &quot;Achtergrond kaart: BRT achtergrondkaart grijs&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer, heb ik nodig dat elke knop die extra content opent en sluit <code>aria-expanded</code> (true/false) heeft — want nu kan mijn schermlezer niet aankondigen dat de knop extra content opent of dat die op dit moment open is, en ik druk op de knop zonder te weten welk soort overlay er gaat verschijnen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Het <code>aria-expanded</code>-attribuut kan de status aangeven. Zet <code>aria-expanded=&quot;true&quot;</code> als de extra content open is en <code>&quot;false&quot;</code> als die gesloten is. Dit werkt alleen betrouwbaar als de focus op de knop blijft. Verschuift de focus weg van de knop terwijl de extra content open is, gebruik dan visueel verborgen tekst om de status aan te geven en werk die dynamisch bij wanneer de status verandert.</p>
+</div>
+<div class="issue">
+<h3>#35 - Kleur is gebruikt om toetsenbordfocus aan te geven</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.1</span>
+	<span class="sc"><b>EN</b>: 9.1.4.1</span>
+</div>
+<p>Naast het zoekveld staat een knop met een vizier-icoon voor locatiebepaling. Deze knop heeft toetsenbordfocus, maar dat is alleen te zien aan een verandering van de achtergrondkleur van wit naar lichtgrijs.</p>
+<p>Dat is niet voldoende: voor bezoekers met een visuele beperking, kleurenblindheid of een hoog-contrastthema is zo'n subtiele kleurverschuiving moeilijk waarneembaar.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344</a> — bij de sluit-knop in het dialoogvenster na het klikken op de link met envelop-icoon</li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a> — bij de sluit-knop in het dialoogvenster na het klikken op de link met envelop-icoon</li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a> — bij de sluit-knop in het dialoogvenster na het klikken op de link met envelop-icoon</li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die met het toetsenbord navigeert, kleurenblind ben, slechtziend ben, of een hoog-contrastthema gebruik, heb ik nodig dat elke focusindicator op deze pagina meer gebruikt dan alleen kleur — een outline, een rand, een onderstreping of een duidelijke vormverandering — want nu wordt focus alleen aangegeven met een kleurverschuiving van minder dan 3:1 contrast tussen de twee staten, mijn ogen pikken die kleine verschuiving niet op, en ik raak het spoor van de toetsenbordfocus kwijt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verbeter de zichtbaarheid van de toetsenbordfocus door naast de kleurverandering een extra visueel element toe te voegen. Denk aan een dikkere rand, een onderstreping, een duidelijker achtergrondverandering of een icoon. Zo is voor iedereen, ongeacht visuele mogelijkheden, te zien waar de focus zich bevindt.</p>
+</div>
+<div class="issue">
+<h3>#36 - Focus verschuift niet naar nieuw geopende content</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>
+	<span class="sc"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>Aan de zijkant van de pagina staan knoppen die extra content openen. Nadat de content is geopend, verschuift de toetsenbordfocus niet mee naar de nieuw zichtbare content. In plaats daarvan loopt de focus verder door de rest van de pagina.</p>
+<p>Daardoor is de focusvolgorde niet logisch en is de geopende content lastig te ontdekken of bedienen voor toetsenbordgebruikers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als toetsenbordgebruiker heb ik nodig dat de focus logisch meeverschuift naar nieuw geopende content, zodat ik er direct mee kan werken. Loopt de focus elders op de pagina door, dan merk ik niet eens dat er nieuwe content is, of heb ik moeite om er bij te komen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verplaats de toetsenbordfocus naar de nieuw geopende content of naar het eerste betekenisvolle focusbare element daarbinnen wanneer extra content opent. Zorg dat de focusvolgorde de visuele en logische volgorde van de interface volgt.</p>
+</div>
+<div class="issue">
+<h3>#37 - Kleur is gebruikt om informatie te onderscheiden</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 1.4.1</span>
+	<span class="sc"><b>EN</b>: 9.1.4.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/13.webp" alt="">
+</figure>
+<p>In de legenda van de kaart wordt alleen kleur gebruikt om onderscheid te maken. Alleen wie de kleuren kan zien en uit elkaar kan houden, ziet welke kleur bij welke categorie hoort.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die kleurenblind is, slechtziend ben, de pagina in zwart-wit print, of de pagina met een schermlezer beluister, heb ik nodig dat elke grafiek, schema en kaart op de pagina meer gebruikt dan kleur om categorieën te onderscheiden — bijvoorbeeld verschillende patronen, arceringen, lijnstijlen, labels of iconen — want nu koppelt de legenda elke kleur aan een categorie die ik niet van de andere categorieën kan onderscheiden, en de hele visualisatie bereikt de ziende, kleur-waarnemende bezoeker wel maar mij niet.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Gebruik naast kleur ook bijvoorbeeld verschillende patronen, vormen of datalabels.</p>
+</div>
+<div class="issue">
+<h3>#38 - Tekenfunctie op de kaart is niet met het toetsenbord te bedienen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>
+	<span class="sc"><b>EN</b>: 9.2.1.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/14.webp" alt="">
+</figure>
+<p>De kaart bevat een tekenfunctie, maar die is niet met het toetsenbord te bedienen. Een muis of pointer is nodig om te tekenen of met de functie te werken.</p>
+<p>Daardoor kunnen toetsenbord-gebruikers, waaronder gebruikers van een schermlezer, deze functie niet gebruiken.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als toetsenbordgebruiker heb ik nodig dat ik de tekenfunctie van de kaart zonder muis kan gebruiken, zodat ik er op dezelfde manier mee kan werken als andere bezoekers.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle tekenfuncties met het toetsenbord werken. Bied toetsenbordalternatieven om te tekenen, te bewerken en af te sluiten, of een gelijkwaardige toegankelijke methode om dezelfde acties uit te voeren.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-geologische-kaart">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-geologische-kaart">05 Geologische kaart <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344</a></p>
+<div class="issue">
+<h3>#39 - Onjuiste child-rol binnen menu</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Er staat een knop &quot;Acties&quot; die extra content opent met <code>role=&quot;menu&quot;</code>. Binnen dit menu heeft de &quot;Permalink&quot;-link niet de vereiste child-rol, zoals <code>role=&quot;menuitem&quot;</code>. Daardoor klopt de ARIA-menu-structuur niet, en kan hulpsoftware de link niet correct als item binnen het menu herkennen.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als gebruiker van een schermlezer heb ik nodig dat items binnen een menu de juiste rollen hebben, zodat ik de structuur begrijp en het menu voorspelbaar kan bedienen. Heeft een link binnen een menu niet de rol van menu-item, dan wordt het menu verwarrend of inconsistent om te gebruiken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle interactieve items binnen een <code>role=&quot;menu&quot;</code>-container een passende child-rol hebben, zoals <code>role=&quot;menuitem&quot;</code>. Gaat het feitelijk om gewone navigatie en niet om een menu in applicatie-stijl, verwijder dan <code>role=&quot;menu&quot;</code> en gebruik een gewone lijst met links.</p>
+</div>
+<div class="issue">
+<h3>#40 - Knop heeft niet de juiste rol en naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/15.webp" alt="">
+</figure>
+<p>Onder de kop &quot;Overzicht&quot; staat een afbeelding die fullscreen opent in een dialoogvenster. Deze afbeelding functioneert als knop, maar heeft niet de juiste toegankelijke rol en naam. Daardoor kunnen schermlezers het element niet als knop herkennen, en is de functie ontoegankelijk voor blinde bezoekers. Zij weten niet dat het element bedienbaar is en aangeklikt kan worden.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer, met spraakbesturing, met het toetsenbord, of met andere hulpsoftware, heb ik nodig dat elk klikbaar element de rol van knop heeft — via <code>&lt;button&gt;</code> of <code>role=&quot;button&quot;</code> plus toetsenbordafhandeling — want nu lijkt het element op een knop maar heeft die rol niet in de code, mijn schermlezer kondigt het niet als knop aan, en ik weet niet dat ik het kan activeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knop de juiste rol heeft op een van de volgende manieren:</p>
+<ol>
+<li>Gebruik het <code>button</code>-element. Dit element heeft standaard de juiste knoprol.</li>
+<li>Voeg <code>role=&quot;button&quot;</code> toe als een ander element wordt gebruikt (meestal niet aan te raden).</li>
+</ol>
+<p>Geef de knop een naam met een van deze methodes:</p>
+<ul>
+<li><code>alt</code>-tekst: als het icoon een <code>img</code> is, geef het via
+<code>alt</code> een functionele beschrijving (bijvoorbeeld <code>alt=&quot;Open afbeelding op volledig scherm&quot;</code>).</li>
+<li><code>aria-label</code>: voeg een <code>aria-label</code> toe aan de knop met een korte beschrijving van de functie.</li>
+<li>Visueel verborgen tekst: zet beschrijvende tekst in de knop en verberg die met CSS, terwijl de tekst toegankelijk blijft voor schermlezers.</li>
+</ul>
+</div>
+<div class="issue">
+<h3>#41 - Knop is niet met spatie en Enter te bedienen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>
+	<span class="sc"><b>EN</b>: 9.2.1.1</span>
+</div>
+<p>Onder de kop &quot;Overzicht&quot; staat een afbeelding die fullscreen opent in een dialoogvenster. Deze afbeelding functioneert als knop, maar is niet met het toetsenbord te bedienen. Activeren met spatie of Enter werkt niet. Knoppen horen met zowel de spatiebalk als de Enter-toets bedienbaar te zijn. Dat is de standaard-toetsenbordinteractie voor knoppen en essentieel voor bezoekers die op het toetsenbord vertrouwen.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met het toetsenbord, met een schermlezer, met spraakbesturing of met een schakelapparaat, heb ik nodig dat elke knop op de pagina werkt op zowel Enter als Spatie — de standaard activeer-toetsen voor een <code>&lt;button&gt;</code> — want nu reageert deze knop alleen op een muisklik, mijn toetsenbord kan hem niet activeren, en de functie zit verstopt achter een interactie die ik niet kan uitvoeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knop met beide toetsen geactiveerd kan worden.</p>
+</div>
+<div class="issue">
+<h3>#42 - Dialoogvenster heeft geen role=&quot;dialog&quot; en geen naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder de kop &quot;Overzicht&quot; staat een afbeelding die fullscreen opent in een dialoogvenster. Dit dialoogvenster heeft geen passende rol en geen toegankelijke naam.</p>
+<p>Daardoor kunnen schermlezers het element niet als dialoogvenster herkennen, en kunnen ze het doel of de inhoud ervan niet doorgeven.</p>
+<p>Hetzelfde probleem komt voor in het dialoogvenster dat opent na het klikken op de link met envelop-icoon.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die dialoogvensters bedient met een schermlezer, heb ik nodig dat elk dialoogvenster zowel <code>role=&quot;dialog&quot;</code> heeft (zodat mijn schermlezer aankondigt dat het om een dialoog gaat) als een toegankelijke naam (via <code>aria-label</code> of <code>aria-labelledby</code>) — want nu zijn beide afwezig, mijn schermlezer heeft geen idee dat er een overlay is verschenen of waar die voor is, en ik kan niet eens zien dat ik in een dialoogvenster zit.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg <code>role=&quot;dialog&quot;</code> en <code>aria-label=&quot;Beschrijving van de inhoud&quot;</code> toe aan het dialoog-element.</p>
+</div>
+<div class="issue">
+<h3>#43 - Knop bestaat alleen uit een afbeelding zonder alternatieve tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.1.1, 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.1.1.1, 9.4.1.2</span>
+</div>
+<p>Onder de kop &quot;Overzicht&quot; staat een afbeelding die fullscreen opent in een dialoogvenster. Dit dialoogvenster heeft een sluit-knop met een &quot;x&quot;-icoon. Dit icoon heeft geen tekstalternatief, en de knop heeft geen toegankelijke naam. Wanneer een knop alleen uit een afbeelding bestaat, hoort het tekstalternatief van de afbeelding de functie van de knop te beschrijven.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die knoppen activeert met een schermlezer, de pagina via spraakbesturing bedient, of pagina's leest met afbeeldingen uit, heb ik nodig dat elke icoon-only knop een toegankelijke naam heeft die de functie beschrijft (via <code>alt</code>, <code>aria-label</code> of visueel verborgen tekst) — want zonder die naam kondigt mijn schermlezer alleen &quot;knop&quot; aan, mijn spraakcommando heeft niets om op te richten, de plaatsvervanger bij images-off blijft leeg, en ik weet niet wat er gebeurt als ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een naam toe op een van de volgende manieren:</p>
+<p>aria-label: voeg een <code>aria-label</code>-attribuut toe aan de knop met een korte beschrijving van de functie.
+Visueel verborgen tekst: zet beschrijvende tekst in de knop en verberg die met CSS, terwijl de tekst toegankelijk blijft voor schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#44 - Visueel meerdere alinea's, in HTML maar één</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina, onder &quot;Geologische kaart&quot;, staat een tekstblok met meerdere alinea's dat onterecht is opgemaakt als één <code>&lt;div&gt;</code>-element. De visuele structuur van de inhoud hoort terug te komen in de HTML.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die de pagina leest met een schermlezer, heb ik nodig dat elke visuele alinea-overgang een echt <code>p</code>-element in de HTML is — niet witruimte binnen één <code>p</code> — want mijn schermlezer gebruikt alinea-grenzen om te pauzeren, om mij alinea voor alinea te laten springen, en om aan te geven waar één gedachte eindigt en de volgende begint, en als zes zichtbare alinea's in één <code>p</code> zitten verlies ik die structuur en leest de tekst als één onafgebroken blok.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Wanneer de inhoud visueel uit meerdere alinea's bestaat, hoort elke alinea in een eigen <code>&lt;p&gt;</code>-element. Daarmee komt de semantische structuur over op hulpsoftware zoals schermlezers, en krijgt iedereen dezelfde structurele informatie.</p>
+</div>
+<div class="issue">
+<h3>#45 - Link heeft geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2, 2.4.4</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2, 9.2.4.4</span>
+</div>
+<figure class="screenshot">
+<img src="images/16.webp" alt="">
+</figure>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon. Deze link heeft geen toegankelijke naam. Daardoor kunnen gebruikers van een schermlezer niet horen wat de link doet of waar die heen gaat. Alle links horen een toegankelijke naam te hebben die de bestemming helder weergeeft.</p>
+<p>Er is geprobeerd een naam toe te voegen via het <code>title</code>-attribuut, maar dat werkte niet.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die links volgt met een schermlezer, met spraakbesturing of met andere hulpsoftware, heb ik nodig dat elke link een toegankelijke naam heeft die beschrijft waar die naartoe leidt — via zichtbare tekst, een <code>aria-label</code> of visueel verborgen tekst — want nu heeft deze link helemaal geen naam, mijn schermlezer kondigt alleen &quot;link&quot; aan, en ik weet niet waar die mij naartoe brengt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef deze link een toegankelijke naam, via een beschrijvende linktekst, een <code>aria-label</code> of een andere passende techniek.</p>
+</div>
+<div class="issue">
+<h3>#46 - Kopniveaus niet correct toegepast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Advies</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<p>Op deze pagina staat een kop op niveau 2 direct gevolgd door nog een kop op hetzelfde niveau. Zie &quot;Feature catalogus&quot; en &quot;Over deze bron&quot;.</p>
+<p>Dat duidt op een verkeerde koppenstructuur. Koppen horen een logische hiërarchie te volgen. Een kop hoort niet direct gevolgd te worden door een kop van hetzelfde of hoger niveau zonder tussenliggende inhoud.</p>
+<p>Hetzelfde probleem komt voor op de pagina:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f</a>.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die door koppen springt met een schermlezer, heb ik nodig dat elke kop op de pagina een eigen stuk inhoud aankondigt — niet direct gevolgd wordt door nog een kop van hetzelfde of hoger niveau zonder iets ertussen — want twee koppen achter elkaar vertellen mij dat een sectie begint en daarna direct opnieuw begint, mijn mentale plattegrond van de pagina valt in duigen, en het is duidelijk dat een van de twee koppen wordt gebruikt voor visuele opmaak in plaats van structuur.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat koppen logisch genest zijn en de structuur van de inhoud weergeven. Een <code>h2</code> hoort gevolgd te worden door een <code>h3</code> of door inhoud, niet door nog een <code>h2</code> of een <code>h1</code>.</p>
+</div>
+<div class="issue">
+<h3>#47 - Focus verschuift niet naar nieuw geopende content</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>
+	<span class="sc"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>Onder de kop &quot;GEOLOGISCHE_KAART&quot; staat een knop &quot;Download data&quot; die extra content met links opent. De toetsenbordfocus landt niet op deze content, maar loopt verder door de pagina terwijl de extra content open staat.</p>
+<p>Daardoor is de focusvolgorde niet logisch en is de geopende content lastig te ontdekken of bedienen voor toetsenbordgebruikers.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als toetsenbordgebruiker heb ik nodig dat de focus logisch meeverschuift naar nieuw geopende content, zodat ik er direct mee kan werken. Loopt de focus elders op de pagina door, dan merk ik niet eens dat er nieuwe content is, of heb ik moeite om er bij te komen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verplaats de toetsenbordfocus naar de nieuw geopende content of naar het eerste betekenisvolle focusbare element daarbinnen wanneer extra content opent. Zorg dat de focusvolgorde de visuele en logische volgorde van de interface volgt.</p>
+</div>
+<div class="issue">
+<h3>#48 - Autocomplete-attribuut ontbreekt</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.5</span>
+	<span class="sc"><b>EN</b>: 9.1.3.5</span>
+</div>
+<figure class="screenshot">
+<img src="images/17.webp" alt="">
+</figure>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent met een formulier. Dit formulier met invoervelden voor persoonsgegevens (zoals naam, e-mailadres, telefoonnummer) mist het <code>autocomplete</code>-attribuut. Bij formulieren waarin persoonsgegevens worden gevraagd, hoort het juiste <code>autocomplete</code>-attribuut bij de invoervelden te staan. Daarmee kunnen browsers en hulpsoftware de gebruiker ondersteunen, bijvoorbeeld door velden automatisch in te vullen.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die formulieren invult met een wachtwoordmanager, met browser-autofill, met een symbolenset, met schakelbediening, of met een hulpmiddel dat voor mij typt omdat typen langzaam of pijnlijk is, heb ik nodig dat elk invoerveld dat persoonsgegevens vraagt (naam, e-mail, telefoon, adres, postcode, …) het juiste <code>autocomplete</code>-attribuut heeft — want zonder dat attribuut kan mijn browser het veld niet automatisch invullen, mijn wachtwoordmanager weet niet wat hij moet plakken, en ik moet elk teken handmatig typen terwijl de gegevens al in mijn apparaat staan.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Het <code>autocomplete</code>-attribuut ontbreekt op deze invoervelden. Meer informatie over autocomplete en de verplichte waarden: <a href="https://www.w3.org/Translations/WCAG22-nl/#input-purposes">https://www.w3.org/Translations/WCAG22-nl/#input-purposes</a>.</p>
+</div>
+<div class="issue">
+<h3>#49 - ARIA-hidden gebruikt op een interactief element</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>
+	<span class="sc"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent. In dit dialoogvenster staat een sluit-knop die met <code>aria-hidden=&quot;true&quot;</code> is verborgen. Daardoor is de knop onzichtbaar voor schermlezers. Toch kunnen verborgen klikbare elementen op dit moment nog wel toetsenbordfocus krijgen.</p>
+<p>Daardoor ontstaan meerdere problemen. Blinde gebruikers kunnen met het toetsenbord nog naar de elementen toe navigeren, maar weten niet wat de elementen zijn of welke functie ze hebben. Bovendien heeft de &quot;x&quot;-knop op dit moment ook geen toegankelijke naam.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die navigeert met een schermlezer en het toetsenbord, heb ik nodig dat elk focusbaar element op de pagina zichtbaar is voor hulpsoftware — <code>aria-hidden=&quot;true&quot;</code> hoort nooit op een knop, link of container met focusbare elementen — want nu landt mijn toetsenbordfocus op een element dat mijn schermlezer weigert aan te kondigen, ik krijg de focus-indicator zonder de naam, en ik weet niet wat ik op het punt sta te activeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verwijder het <code>aria-hidden=&quot;true&quot;</code>-attribuut.</p>
+</div>
+<div class="issue">
+<h3>#50 - Onvoldoende contrast bij icoon op knop</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>
+	<span class="sc"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent. In dit dialoogvenster staat een sluit-knop met een &quot;x&quot;-icoon dat onvoldoende kleurcontrast heeft tussen het lichtgrijze (<code>#CCCCCC</code>) icoon en de witte achtergrond. De contrastverhouding van 1,5:1 is te laag.</p>
+<p>Daardoor is het icoon voor een deel van de bezoekers moeilijk of niet te zien, vooral voor wie slechtziend of kleurenblind is. Bovendien werkt het icoon, als het bedoeld is als visueel label voor een invoerveld, niet als geldig label.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die slechtziend is, leeftijdsgerelateerd contrastverlies heeft, of een scherm in fel zonlicht gebruikt, heb ik nodig dat het icoon op elke icoon-only knop minimaal 3:1 contrast heeft met de achtergrond van de knop — want het icoon is de enige aanwijzing van wat de knop doet (er is geen tekstlabel), en een icoon dat ik niet zie is een knop die ik niet kan gebruiken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat het icoon minimaal 3,0:1 contrast heeft met de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#51 - Onvoldoende kleurcontrast bij UI-elementen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>
+	<span class="sc"><b>EN</b>: 9.1.4.11</span>
+</div>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent met een formulier. De contrastverhouding tussen de lichtgrijze (<code>#CCCCCC</code>) randen van de invoervelden en de witte paginakleur is 1,6:1.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die slechtziend is, leeftijdsgerelateerd contrastverlies heeft, of een scherm in fel zonlicht gebruikt, heb ik nodig dat de rand van elk invoerveld minimaal 3:1 contrast heeft met de paginakleur — want de rand vertelt mij &quot;dit is een veld waarin je kunt typen&quot;, en een rand die ik niet zie levert mij een onzichtbaar formulierveld op dat ik gewoon over het hoofd zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Dit voldoet niet aan de minimale contrasteis van 3,0:1 voor de rand van invoervelden ten opzichte van de aangrenzende vlakken. Onvoldoende contrast maakt de begrenzing van het invoerveld moeilijk waarneembaar en beperkt de bruikbaarheid.</p>
+</div>
+<div class="issue">
+<h3>#52 - Betekenis van het verplicht-symbool niet uitgelegd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 3.3.2</span>
+	<span class="sc"><b>EN</b>: 9.3.3.2</span>
+</div>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent met een formulier. De verplichte velden worden gemarkeerd met een asterisk (*). De betekenis van dit symbool is nergens in tekst uitgelegd.</p>
+<p>Voeg boven het formulier een instructie toe zoals &quot;Velden gemarkeerd met * zijn verplicht&quot;.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die formulieren invult met een cognitieve beperking, met een schermlezer, of zonder voorkennis, heb ik nodig dat elk formulier dat een asterisk (_) gebruikt om verplichte velden te markeren, in begrijpelijke tekst boven het formulier uitlegt wat de asterisk betekent (bijvoorbeeld &quot;Velden gemarkeerd met _ zijn verplicht&quot;) — want het symbool zelf zegt mij niets als ik de conventie niet ken, en een label met een losse asterisk geeft mij geen informatie waar ik wat mee kan.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg boven het formulier een instructie toe zoals &quot;Velden gemarkeerd met * zijn verplicht&quot;.</p>
+</div>
+<div class="issue">
+<h3>#53 - Aangepaste focusindicator heeft onvoldoende kleurcontrast</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>
+	<span class="sc"><b>EN</b>: 9.1.4.11</span>
+</div>
+<figure class="screenshot">
+<img src="images/18.webp" alt="">
+</figure>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent met een formulier. De select-elementen &quot;Functie&quot; en &quot;Categorie&quot; tonen toetsenbordfocus met een lichtblauwe (<code>#4FA7E7</code>) rand op een witte achtergrond. De contrastverhouding tussen deze kleuren is 2,6:1, onder de minimum-eis van 3,0:1.</p>
+<p>Aangepaste focusindicatoren moeten voldoen aan de contrasteis, anders dan de standaard browser-focusindicator. Omdat bezoekers aangepaste focusindicators niet zelf kunnen aanpassen, hebben deze minimaal 3,0:1 contrast met de achtergrond nodig.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die met het toetsenbord navigeert, slechtziend ben, of een scherm in fel zonlicht gebruik, heb ik nodig dat de aangepaste focusindicator minimaal 3:1 contrast heeft met de achtergrond — want als de indicator te bleek is om te zien, kan ik niet vaststellen welk element op dit moment focus heeft, en wordt toetsenbordnavigatie tot tabs drukken en hopen dat ik ergens nuttig terechtkom.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verhoog het contrast van de aangepaste focusindicator zodat het voldoet aan deze eis.</p>
+</div>
+<div class="issue">
+<h3>#54 - HTML5-validatie wordt gebruikt</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 3.3.1</span>
+	<span class="sc"><b>EN</b>: 9.3.3.1</span>
+</div>
+<p>Onder de kop &quot;Pagina laatst bijgewerkt:&quot; staat een link met een envelop-icoon die een dialoogvenster opent met een formulier. Dit formulier gebruikt HTML5-validatie en toont standaard HTML5-foutmeldingen wanneer het wordt verstuurd met lege of onjuiste gegevens. Deze standaard-meldingen worden niet betrouwbaar ondersteund in alle browsers en schermlezers. Elke browser geeft ze anders weer, en de toegankelijkheid (volledigheid, duur) is niet gegarandeerd.</p>
+<p>Hetzelfde probleem komt voor op de pagina's:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></li>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></li>
+</ul>
+<p>en op andere pagina's.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die formulieren invult met een schermlezer, met cognitieve beperkingen, of in een niet-standaard browser, heb ik nodig dat elke fout via het formulier zelf wordt gemeld — een duidelijke inline-melding die aan het veld is gekoppeld — niet alleen via de native HTML5-validatiepop-up van de browser — want nu vertrouwt het formulier op HTML5-validatie, browsers tonen die meldingen anders (en niet altijd toegankelijk), de pop-up is soms kort of onvolledig, en ik kan niet betrouwbaar zien wat er fout ging.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg eigen, toegankelijke foutmeldingen toe aan dit formulier. Controleer ook andere formulieren op de website op vergelijkbaar gebruik van HTML5-standaardmeldingen en pas dezelfde oplossing toe waar nodig.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-natuurnetwerk-nederland-informatiekaart-natuur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-natuurnetwerk-nederland-informatiekaart-natuur">06 Natuurnetwerk Nederland - Informatiekaart Natuur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/beb1c56a-a8fc-4e4e-b723-ad3d95d8c8ea</a></p>
+<p>De problemen op deze pagina zijn hierboven beschreven.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-leefgebied-weidevogels-informatiekaart-natuur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-leefgebied-weidevogels-informatiekaart-natuur">07 Leefgebied weidevogels - Informatiekaart Natuur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/f9cea6f2-e8ff-4ee7-815c-43d1296b003f</a></p>
+<p>De problemen op deze pagina zijn hierboven beschreven.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-natura-2000-gebieden">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-natura-2000-gebieden">08 Natura 2000-gebieden <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/14096698-04A3-444E-B22C-1EB539D2D74B</a></p>
+<p>Naast de eerder beschreven problemen, komt op deze pagina het volgende voor:</p>
+<div class="issue">
+<h3>#55 - Visuele lijst niet als lijst gemarkeerd</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/19.webp" alt="">
+</figure>
+<p>Onder de kop &quot;Technische informatie&quot; staat een tabel met daarin een opsomming van 5 items. Deze opsomming wordt visueel als lijst gepresenteerd (met streepjes), maar is in de HTML niet semantisch gemarkeerd met lijst-elementen (<code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>). Zonder een correcte lijstmarkering kunnen schermlezers niet herkennen dat het een lijst betreft, en kondigen ze het aantal items niet aan. Gebruikers van hulpsoftware missen daardoor structuurinformatie die ziende bezoekers wel zien.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die de pagina leest met een schermlezer, heb ik nodig dat elke visuele lijst — bullets, nummers, streepjes — gemarkeerd is als een echte <code>ul</code> of <code>ol</code> met <code>li</code>-items — want mijn schermlezer kondigt &quot;lijst van N items&quot; aan voor het voorlezen, de structuur vertelt mij wat ik kan verwachten, en zonder die markup verliezen de items hun nummering, hun aantal, en lezen ze als één lange ononderbroken zin.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer de visuele lijst met de juiste HTML-lijstelementen: <code>&lt;ul&gt;</code> voor een ongeordende lijst of <code>&lt;ol&gt;</code> voor een geordende lijst, met elk item in een <code>&lt;li&gt;</code>-element.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-bestaande-stads-en-dorpsgebieden-2024">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-bestaande-stads-en-dorpsgebieden-2024">09 Bestaande stads- en dorpsgebieden 2024 <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/c7519e61-b1d6-4b73-8b17-a99eebaafc9f</a></p>
+<p>De problemen op deze pagina zijn hierboven beschreven.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-cultuurhistorische-waarden-informatiekaart-natuur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-cultuurhistorische-waarden-informatiekaart-natuur">10 Cultuurhistorische waarden - Informatiekaart Natuur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/6fcbf252-e327-455d-92b0-5e72ccb0e9d1">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/6fcbf252-e327-455d-92b0-5e72ccb0e9d1</a></p>
+<p>De problemen op deze pagina zijn hierboven beschreven.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-novex-gebieden">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-novex-gebieden">11 NOVEX-gebieden <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/df88a2dc-3b42-4408-bcc5-f4955200382a">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/df88a2dc-3b42-4408-bcc5-f4955200382a</a></p>
+<p>Naast de eerder beschreven problemen, komt op deze pagina het volgende voor:</p>
+<div class="issue">
+<h3>#56 - Zichtbare tekst van het logo ontbreekt in de alternatieve tekst</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Groot</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>
+	<span class="sc"><b>EN</b>: 9.1.1.1</span>
+</div>
+<p>Onder de kop &quot;Aangeboden door&quot; staat een logo met de zichtbare tekst &quot;provincie Zuid-Holland&quot;, maar de alt-tekst is alleen &quot;logo&quot;. De alt-tekst hoort álle zichtbare tekst van het logo te bevatten, zodat bezoekers die de afbeelding niet kunnen zien dezelfde informatie krijgen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die op een schermlezer vertrouwt, de pagina met afbeeldingen uit leest, of de alt-tekst nodig heeft om te zien wat het logo zegt, heb ik nodig dat het <code>alt</code>-attribuut van het logo de volledige zichtbare tekst van het logo bevat — niet maar een deel ervan — want als alleen de helft van de tekst in de alt staat, krijg ik een onvolledige naam van de organisatie, kan ik niet vaststellen of ik op de juiste site ben, en ontbreken belangrijke details (slogan, sub-merk, eigenaar) die ziende bezoekers in een oogopslag wel zien.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas het tekstalternatief zo aan dat het de volledige tekst bevat, bijvoorbeeld: &quot;provincie Zuid-Holland - logo&quot;.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-pdf-geologische-kaart">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-pdf-geologische-kaart">12 PDF: Geologische kaart <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/110610CA-A066-4C75-9E86-F6CC7DE3C344</a></p>
+<p>Link naar PDF: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/api/records/110610CA-A066-4C75-9E86-F6CC7DE3C344/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true">https://opendata.zuid-holland.nl/geonetwork/srv/api/records/110610CA-A066-4C75-9E86-F6CC7DE3C344/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true</a></p>
+<div class="issue">
+<h3>#57 - PDF heeft geen tags</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>
+	<span class="sc"><b>EN</b>: 9.1.3.1</span>
+</div>
+<figure class="screenshot">
+<img src="images/21.webp" alt="">
+</figure>
+<p>Dit PDF-document mist codes, waardoor de inhoud niet toegankelijk is voor schermlezers. Door het ontbreken van deze codes is een volledige toegankelijkheidsbeoordeling niet mogelijk: alle succescriteria die met de PDF-codelaag te maken hebben (bijvoorbeeld semantische koppen en alternatieve teksten bij afbeeldingen) zijn niet te beoordelen. Het oplossen van dit probleem kan dan ook nieuwe toegankelijkheidsproblemen aan het licht brengen.</p>
+<p>Hetzelfde probleem komt voor in het PDF-document op:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true">https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true</a>.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die PDF's leest met een schermlezer, heb ik nodig dat elk PDF-document een complete tag-structuur draagt — koppen, alinea's, lijsten, tabellen, alt-teksten, de hele structuur — want zonder tags is de PDF voor mijn schermlezer alleen maar een platte afbeelding van letters, geen enkel element heeft betekenis, geen enkele navigatie-shortcut werkt, en het hele document zit verstopt achter een laag die ik niet kan lezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg codes toe aan het document die de structuur van het document weergeven.</p>
+</div>
+<div class="issue">
+<h3>#58 - Taal niet ingesteld</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 3.1.1</span>
+	<span class="sc"><b>EN</b>: 9.3.1.1</span>
+</div>
+<p>In de metadata van deze PDF is de taal niet ingesteld. De taal hoort ingesteld te zijn, zodat schermlezers de inhoud van het bestand met de juiste uitspraakregels kunnen voorlezen. Stel dit in via de eigenschappen van het bestand.</p>
+<p>Hetzelfde probleem komt voor in het PDF-document op:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true">https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true</a>.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die PDF's leest met een schermlezer, heb ik nodig dat elke PDF de taal vastlegt in de bestandseigenschappen — want zonder die instelling moet mijn schermlezer gokken, valt terug op de verkeerde standaardstem, en leest het hele document met de verkeerde uitspraakregels voor vanaf het allereerste woord.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel de taal in via de PDF-bestandseigenschappen. In Adobe Acrobat: ga naar Bestand &gt; Eigenschappen &gt; tabblad Geavanceerd, en kies de juiste taal in het veld Taal.</p>
+</div>
+<div class="issue">
+<h3>#59 - PDF-titel niet getoond (bestandsnaam wordt getoond)</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Medium</span>
+	<span class="type"><b>Type</b>: Content</span>
+	<span class="sc"><b>WCAG</b>: 2.4.2</span>
+	<span class="sc"><b>EN</b>: 9.2.4.2</span>
+</div>
+<figure class="screenshot">
+<img src="images/20.webp" alt="">
+</figure>
+<p>Dit PDF-document heeft een beschrijvende titel, maar die wordt niet weergegeven in de titelbalk; in plaats daarvan staat de bestandsnaam. De titel hoort in de titelbalk te staan zodat bezoekers het document snel kunnen herkennen. Dit is vooral nuttig voor bezoekers met beperkingen die op hulpsoftware vertrouwen. Pas dit aan via de eigenschappen van het bronbestand of de PDF zelf zodat de beschrijvende titel in de titelbalk verschijnt.</p>
+<p>Hetzelfde probleem komt voor in het PDF-document op:</p>
+<ul>
+<li><a href="https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true">https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true</a>.</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die PDF's leest met een schermlezer, meerdere PDF-vensters open heeft, of door recente bestanden bladert, heb ik nodig dat elke PDF zo is ingesteld dat de documenttitel in de titelbalk van de PDF-lezer wordt getoond — via de instelling &quot;Initial View&quot; — want nu staat er wel een beschrijvende titel in de metadata, maar de lezer toont de bestandsnaam, mijn schermlezer kondigt de bestandsnaam aan, en de beschrijvende titel zit ondergesneeuwd in de metadata waar niemand hem ziet.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de documenttitel in plaats van de bestandsnaam in de titelbalk wordt getoond. In Adobe Acrobat: ga naar Bestand &gt; Eigenschappen &gt; tabblad Beginweergave, en zet &quot;Tonen&quot; op &quot;Documenttitel&quot;.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="13-pdf-cultuurhistorische-waarden-informatiekaart-natuur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-pdf-cultuurhistorische-waarden-informatiekaart-natuur">13 PDF: Cultuurhistorische waarden - Informatiekaart Natuur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/6fcbf252-e327-455d-92b0-5e72ccb0e9d1">https://opendata.zuid-holland.nl/geonetwork/srv/dut/catalog.search#/metadata/6fcbf252-e327-455d-92b0-5e72ccb0e9d1</a></p>
+<p>Link naar PDF: <a href="https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true">https://opendata.zuid-holland.nl/geonetwork/srv/api/records/6fcbf252-e327-455d-92b0-5e72ccb0e9d1/formatters/xsl-view?output=pdf&amp;language=dut&amp;approved=true</a></p>
+<p>De problemen op deze pagina zijn hierboven beschreven.</p>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+            <p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+            <ul>
+              <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+              <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+            </ul>
+
+            <h3>Voortgang bijhouden</h3>
+            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
+            <ul>
+              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+            </ul>
+
+            <h3>Link naar een specifieke bevinding delen</h3>
+            <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>

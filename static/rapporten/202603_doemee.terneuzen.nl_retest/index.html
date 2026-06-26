@@ -10,14 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
   
+  
 </head>
 <body class="open-sans-pa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/rapporten/_assets/css/report.css">
-<link rel="stylesheet" href="/rapporten/_assets/css/icons.css">
-<script src="/rapporten/_assets/main.js"></script>
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782314263737"></script>
 
 
 
@@ -36,6 +38,7 @@
       <ul class="dash-nav">
         <li><a href="#samenvatting">Samenvatting</a></li>
         <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
         <li><a href="#bevindingen">Bevindingen</a></li>
         <li><a href="#vragen">Vragen over het rapport?</a></li>
       </ul>
@@ -65,7 +68,9 @@
       </div>
       <div class="dash-summary-logo">
         <p class="dash-summary-label">In opdracht van</p>
-        <img src="images/opdrachtgever.png" alt="Logo van Hoplr">
+        
+          <img src="images/opdrachtgever.png" alt="Logo van Hoplr">
+        
       </div>
     </section>
 
@@ -225,18 +230,22 @@
     </section>
 
     
+    
+
+    
+    
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
           <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn" id="exportCsvBtn">Exporteer bevindingen</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
           <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
         </div>
         <div class="voortgang-optie">
           <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
@@ -245,13 +254,6 @@
             <input type="checkbox" id="browserTrackingToggle">
             <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
           </label>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
-          
-          <p>Het plan van aanpak is voor dit rapport niet beschikbaar.</p>
-          <button class="voortgang-btn" disabled>Niet beschikbaar</button>
-          
         </div>
       </div>
       <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
@@ -266,6 +268,11 @@
         </div>
       </div>
     </div>
+    
+
+    
+    
+    
 
     
     <section class="dash-findings" id="bevindingen">
@@ -372,13 +379,10 @@ Dit probleem komt ook voor bij het zoekveld.</p>
               <h2 class="issue-title"><a href="#03-inloggen">03 Inloggen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/account/login?returnUrl=%2F">https://doemee.terneuzen.nl/account/login?returnUrl=%2F</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/account/login?returnUrl=%2F">https://doemee.terneuzen.nl/account/login?returnUrl=%2F</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -534,13 +538,10 @@ Voorbeeld:
               <h2 class="issue-title"><a href="#08-denk-mee-over-spelen-bewegen-en-ontmoeten-in-zuiddorpe">08 Denk mee over Spelen, Bewegen en Ontmoeten in Zuiddorpe <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/enquete/spelenzuiddorpe">https://doemee.terneuzen.nl/enquete/spelenzuiddorpe</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/enquete/spelenzuiddorpe">https://doemee.terneuzen.nl/enquete/spelenzuiddorpe</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -685,13 +686,10 @@ Dit is niet dezelfde informatie.</p>
               <h2 class="issue-title"><a href="#11-noordstraat-havenstraat">11 Noordstraat - Havenstraat <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/434/noordstraat-havenstraat">https://doemee.terneuzen.nl/project/434/noordstraat-havenstraat</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/434/noordstraat-havenstraat">https://doemee.terneuzen.nl/project/434/noordstraat-havenstraat</a></p>
 <p>De toegankelijkheidsproblemen die op deze pagina zijn vastgesteld, zijn hetzelfde als de problemen die eerder in dit rapport zijn beschreven.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -700,13 +698,10 @@ Dit is niet dezelfde informatie.</p>
               <h2 class="issue-title"><a href="#12-parkgebied-het-hart-van-sluiskil">12 Parkgebied het hart van Sluiskil <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/390/parkgebied-het-hart-van-sluiskil">https://doemee.terneuzen.nl/project/390/parkgebied-het-hart-van-sluiskil</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/390/parkgebied-het-hart-van-sluiskil">https://doemee.terneuzen.nl/project/390/parkgebied-het-hart-van-sluiskil</a></p>
 <p>De toegankelijkheidsproblemen die op deze pagina zijn vastgesteld, zijn hetzelfde als de problemen die eerder in dit rapport zijn beschreven.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -715,13 +710,10 @@ Dit is niet dezelfde informatie.</p>
               <h2 class="issue-title"><a href="#13-denk-mee-over-de-binnenstad-van-terneuzen">13 Denk mee over de binnenstad van Terneuzen! <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/285/denk-mee-over-de-binnenstad-van-terneuzen">https://doemee.terneuzen.nl/project/285/denk-mee-over-de-binnenstad-van-terneuzen</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/project/285/denk-mee-over-de-binnenstad-van-terneuzen">https://doemee.terneuzen.nl/project/285/denk-mee-over-de-binnenstad-van-terneuzen</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
           
@@ -800,13 +792,10 @@ Op deze pagina staan comboboxen, bijvoorbeeld &quot;Geboortejaar&quot;. Deze heb
               <h2 class="issue-title"><a href="#16-e-mailinstellingen">16 E-mailinstellingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
               <p></p>
             </div>
-            
-<div class="issue">
-<p>Link naar pagina: <a href="https://doemee.terneuzen.nl/account/emailsettings">https://doemee.terneuzen.nl/account/emailsettings</a></p>
+            <p>Link naar pagina: <a href="https://doemee.terneuzen.nl/account/emailsettings">https://doemee.terneuzen.nl/account/emailsettings</a></p>
 <p>Geen nieuwe bevindingen.</p>
 
-          </div>
-</article>
+          </article>
           
         
       </section>
@@ -818,6 +807,8 @@ Op deze pagina staan comboboxen, bijvoorbeeld &quot;Geboortejaar&quot;. Deze heb
         <details>
           <summary>Over dit onderzoek</summary>
           <div>
+            
+            
             <h3>Leeswijzer</h3>
 <p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
 <p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
@@ -886,7 +877,7 @@ Op deze pagina staan comboboxen, bijvoorbeeld &quot;Geboortejaar&quot;. Deze heb
         </div>
         <div class="dash-footer-col dash-footer-address">
           <strong>Proper Access</strong><br>
-          Willemserf 20, 3755XK Eemnes<br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
           085 5055 890<br>
           <a href="https://www.properaccess.nl">properaccess.nl</a>
         </div>
@@ -896,5 +887,6 @@ Op deze pagina staan comboboxen, bijvoorbeeld &quot;Geboortejaar&quot;. Deze heb
   </main>
 </div>
 
+    
 </body>
 </html>
