@@ -20,6 +20,7 @@ keywords:
   - "handmatige audit versus scanner"
   - "wat vindt axe niet"
   - "webshop toegankelijkheid eaa"
+image: "/images/blog/scan-vs-audit-bevindingen.webp"
 ---
 
 We onderzochten onlangs een grote Nederlandse webshop. Voordat we met de hand aan de slag gingen, lieten we er eerst een veelgebruikte automatische scanner op los, het soort tool als Axe dat veel developmentteams in hun pijplijn hebben zitten. De uitkomst: geen fouten. Een schoon rapport, een groen vinkje.
@@ -52,6 +53,8 @@ Hieronder loop ik de belangrijkste groepen langs, met voorbeelden uit dit rappor
 
 Een scanner kan zien dat een knop een toegankelijke naam heeft. Of die naam ergens op slaat, dat ziet hij niet. En juist daar ging het vaak mis.
 
+![Een wachtwoordsterkte-balk waarvan de schermlezer de naam voorleest als de technische code passwordProgressBar.passwordStrength in plaats van het woord wachtwoordsterkte.](/images/blog/naam-technische-string.webp)
+
 Het mooiste voorbeeld was de balk voor de wachtwoordsterkte bij het registreren. Die had keurig een naam, dus een tool gaf groen licht. Alleen was die naam letterlijk "dbk-components.inputs.passwordProgressBar.passwordStrength", een interne vertaalsleutel die per ongeluk doorgesijpeld was naar de buitenkant. Een screenreadergebruiker hoort dan die hele technische string voorbijkomen in plaats van het woord "wachtwoordsterkte". Hetzelfde gebeurde bij het cookievenster, waar de titel "dbk-components.cookieBar.accessibleTitle" was. Voor een tool is dat een geldige naam. Voor een mens is het onzin.
 
 Op de zoekpagina stonden twee invoervelden voor een prijsfilter, een voor de minimumprijs en een voor de maximumprijs. Hun namen waren "Prijs Prijs" en "Prijs". Allebei een naam, dus geen scanfout, maar wie ze niet kan zien weet niet welk veld het minimum is en welk het maximum. In de header zaten knoppen met het hartje voor de verlanglijst en het winkeltasje, met daarnaast een telletje: drie items, twee items. Dat getal stond wel in beeld, maar niet in de naam van de knop. Je hoort "Verlanglijst", maar niet dat er drie dingen in zitten.
@@ -61,6 +64,8 @@ En dan had je nog knoppen die allemaal dezelfde naam deelden maar iets anders de
 ## Dingen die veranderen zonder iets te zeggen
 
 Een groot deel van een webshop verandert terwijl je ernaar kijkt, zonder dat de pagina opnieuw laadt. Je vinkt een filter aan en het aantal resultaten verspringt. Je typt een wachtwoord en de eisen kleuren groen. Je verstuurt een formulier en er verschijnt een foutmelding. Voor wie het ziet, gebeurt dat vanzelf. Voor wie een screenreader gebruikt, moet zo'n verandering actief worden aangekondigd, met een zogenoemde live region. Gebeurt dat niet, dan verandert er voor die bezoeker stilletjes van alles zonder dat hij het doorheeft.
+
+![Iemand met een koptelefoon vinkt een filter aan, het aantal artikelen springt van 9 naar 4, maar de schermlezer blijft stil: boven het hoofd een lege tekstballon met een doorgestreepte luidspreker.](/images/blog/statusbericht-niet-aangekondigd.webp)
 
 Bij deze webshop werd vrijwel niets van dat soort wijzigingen aangekondigd. Pas je op de zoekpagina een filter aan, dan sprong "9 artikelen" naar een ander getal, maar de screenreader bleef stil. Maakte je een fout bij het inloggen, dan verscheen er een melding in beeld die nooit werd voorgelezen. Sterker nog, die foutmelding werd alleen aangegeven met een kleur: een rode rand om het veld. Wie kleurenblind of blind is, krijgt dan geen enkel signaal dat er iets mis is. En de eisen onder het wachtwoordveld die een voor een groen werden, plus het vinkje dat verscheen zodra je wachtwoord goed was, bleven voor een screenreader volledig onzichtbaar. Een tool ziet alleen dat de tekst aanwezig is. Dat die op het verkeerde moment, of helemaal niet, wordt aangekondigd, ontgaat hem.
 
@@ -75,6 +80,8 @@ Open je het informatievenster naast het wachtwoordveld, dan bleef de focus gewoo
 ## Alleen met de muis te bedienen
 
 Een tool beweegt geen muis, drukt niet op Tab en zoomt niet in. Daardoor mist hij precies de dingen die alleen opduiken als je dat wel doet.
+
+![Een carrousel met drie productkaarten waarvan de vorige- en volgende-knoppen alleen bij de muiscursor verschijnen; een toetsenbordgebruiker kijkt er vragend naar en kan er niet bij.](/images/blog/carrousel-alleen-muis.webp)
 
 De categoriepagina's stonden vol carrousels, van "Ontdek de heren categorieën" tot "Nieuwe merken". De pijlen om naar de volgende rij te gaan, verschenen alleen als je er met de muis overheen ging. Wie het toetsenbord gebruikt ziet die knoppen nooit, en moet dus door alle items van de carrousel heen tabben voordat hij verder kan. Een muisgebruiker is in twee klikken klaar, een toetsenbordgebruiker tikt zich suf.
 
