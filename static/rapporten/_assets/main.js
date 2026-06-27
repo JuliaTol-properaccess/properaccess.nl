@@ -1,3 +1,57 @@
+// === i18n: taal + UI-strings voor runtime-gegenereerde tekst ===
+const PA_LANG = (document.documentElement.lang || "nl").toLowerCase().indexOf("en") === 0 ? "en" : "nl";
+const PA_STR = {
+  nl: {
+    finding: "Bevinding", impact: "Impact", type: "Type", disability: "Beperking",
+    principle: "Principe", level: "Niveau",
+    expand: "Uitklappen", collapse: "Inklappen",
+    expandAll: "Alles uitklappen", collapseAll: "Alles inklappen",
+    linkCopied: "Link gekopieerd!",
+    pageLinkPrefix: "Link naar pagina:",
+    csv: ["Pagina", "Issue", "WCAG", "Impact", "Type", "Beschrijving", "User story", "Hoe te testen", "Oplossing"],
+    pageResolved: "Hele pagina is opgelost",
+    markPageResolved: "Markeer alle bevindingen op deze pagina als opgelost",
+    issueResolved: "Opgelost", markIssueResolved: "Markeer als opgelost",
+    issueResolvedAria: "Dit issue is opgelost", issueResolvedSr: "(opgelost)",
+    copyLink: "Kopieer link naar deze bevinding", copyLinkAria: "Kopieer link naar bevinding",
+  },
+  en: {
+    finding: "Finding", impact: "Impact", type: "Type", disability: "Disability",
+    principle: "Principle", level: "Level",
+    expand: "Expand", collapse: "Collapse",
+    expandAll: "Expand all", collapseAll: "Collapse all",
+    linkCopied: "Link copied!",
+    pageLinkPrefix: "Page:",
+    csv: ["Page", "Issue", "WCAG", "Impact", "Type", "Description", "User story", "How to test", "Solution"],
+    pageResolved: "Whole page resolved",
+    markPageResolved: "Mark all findings on this page as resolved",
+    issueResolved: "Resolved", markIssueResolved: "Mark as resolved",
+    issueResolvedAria: "This issue is resolved", issueResolvedSr: "(resolved)",
+    copyLink: "Copy link to this finding", copyLinkAria: "Copy link to finding",
+  },
+};
+const PA_T = PA_STR[PA_LANG];
+const PA_PRINCIPLE_EN = { Waarneembaar: "Perceivable", Bedienbaar: "Operable", Begrijpelijk: "Understandable", Robuust: "Robust" };
+const PA_DISABILITY_EN = { Visueel: "Visual", Auditief: "Auditory", Motorisch: "Motor", Cognitief: "Cognitive", Neurologisch: "Neurological" };
+function paTrPrinciple(v) { return PA_LANG === "en" ? (PA_PRINCIPLE_EN[v] || v) : v; }
+function paTrDisability(v) { return PA_LANG === "en" ? (PA_DISABILITY_EN[v] || v) : v; }
+// Bron-impactlabel (NL of EN) -> interne categorie voor filters/tellers.
+function paImpactKey(text) {
+  const t = (text || "").toLowerCase();
+  if (t.indexOf("serious") === 0 || t.indexOf("groot") === 0) return "groot";
+  if (t.indexOf("medium") === 0) return "medium";
+  if (t.indexOf("minor") === 0 || t.indexOf("klein") === 0) return "klein";
+  if (t.indexOf("advice") === 0 || t.indexOf("advies") === 0) return "advies";
+  return "unknown";
+}
+// Bron-typelabel (NL of EN) -> interne categorie.
+function paTypeKey(text) {
+  const t = (text || "").toLowerCase();
+  if (t.indexOf("content") !== -1 || t.indexOf("inhoud") !== -1) return "content";
+  if (t.indexOf("techniek") !== -1 || t.indexOf("technical") !== -1 || t.indexOf("code") !== -1 || t.indexOf("design") !== -1) return "techniek";
+  return "unknown";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // === Scroll-observer voor sidebar navigatie ===
   const sections = document.querySelectorAll("article");
@@ -36,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const paragraphs = article.querySelectorAll("p");
     for (const p of paragraphs) {
       const text = p.textContent.trim();
-      if (text.startsWith("Link naar pagina:")) {
+      if (text.startsWith("Link naar pagina:") || text.startsWith("Page:")) {
         const link = p.querySelector("a");
         if (!link) continue;
         const url = link.href;
@@ -208,21 +262,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (principes.size > 0) {
       const span = document.createElement("span");
       span.className = "type richtlijn";
-      span.innerHTML = `<b>Principe</b>: ${[...principes].join(", ")}`;
+      span.innerHTML = `<b>${PA_T.principle}</b>: ${[...principes].map(paTrPrinciple).join(", ")}`;
       meta.appendChild(span);
     }
 
     if (niveaus.size > 0) {
       const span = document.createElement("span");
       span.className = "type";
-      span.innerHTML = `<b>Niveau</b>: ${[...niveaus].sort().join(", ")}`;
+      span.innerHTML = `<b>${PA_T.level}</b>: ${[...niveaus].sort().join(", ")}`;
       meta.appendChild(span);
     }
 
     if (beperkingen.size > 0) {
       const span = document.createElement("span");
       span.className = "type beperking";
-      span.innerHTML = `<b>Beperking</b>: ${[...beperkingen].join(", ")}`;
+      span.innerHTML = `<b>${PA_T.disability}</b>: ${[...beperkingen].map(paTrDisability).join(", ")}`;
       meta.appendChild(span);
     }
   });
@@ -237,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navigator.clipboard.writeText(url).then(() => {
         const tooltip = document.createElement("span");
         tooltip.className = "copy-tooltip";
-        tooltip.textContent = "Link gekopieerd!";
+        tooltip.textContent = PA_T.linkCopied;
         const heading = link.closest("h2, h3");
         heading.appendChild(tooltip);
         setTimeout(() => tooltip.remove(), 2000);
@@ -251,8 +305,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function findingSectionFromH4(text) {
   const t = (text || "").trim().toLowerCase();
   if (t.startsWith("user story")) return "userstory";
-  if (t.startsWith("hoe te testen")) return "hoetetesten";
-  if (t.startsWith("oplossing")) return "oplossing";
+  if (t.startsWith("hoe te testen") || t.startsWith("how to test")) return "hoetetesten";
+  if (t.startsWith("oplossing") || t.startsWith("solution")) return "oplossing";
   return null;
 }
 
@@ -287,17 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   exportBtn.addEventListener("click", function () {
     const csvRows = [
-      [
-        "Pagina",
-        "Issue",
-        "WCAG",
-        "Impact",
-        "Type",
-        "Beschrijving",
-        "User story",
-        "Hoe te testen",
-        "Oplossing",
-      ],
+      PA_T.csv.slice(),
     ];
 
     // Alle artikelen met class "issue"
@@ -601,12 +645,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // TYPE
     const typeSpan = issue.querySelector(".meta .type");
     if (typeSpan) {
-      const text = typeSpan.textContent.toLowerCase();
-      issue.dataset.type = text.includes("techniek")
-        ? "techniek"
-        : text.includes("content")
-          ? "content"
-          : "unknown";
+      issue.dataset.type = paTypeKey(typeSpan.textContent);
     } else {
       issue.dataset.type = "unknown";
     }
@@ -614,15 +653,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // IMPACT
     const impactSpan = issue.querySelector(".meta .impact");
     if (impactSpan) {
-      const impactText = impactSpan.textContent
-        .replace(/impact\s*:\s*/i, "")
-        .trim()
-        .toLowerCase();
-
-      const allowed = ["groot", "medium", "klein", "advies"];
-      issue.dataset.impact = allowed.includes(impactText)
-        ? impactText
-        : "unknown";
+      issue.dataset.impact = paImpactKey(impactSpan.textContent.replace(/impact\s*:\s*/i, ""));
     } else {
       issue.dataset.impact = "unknown";
     }
@@ -643,17 +674,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerRow = document.createElement("div");
     headerRow.className = "finding-header-row";
     headerRow.innerHTML =
-      '<span class="fhr-title">Bevinding</span>' +
-      '<span class="fhr-col">Impact</span>' +
-      '<span class="fhr-col">Type</span>' +
-      '<span class="fhr-col">Beperking</span>';
+      '<span class="fhr-title">' + PA_T.finding + '</span>' +
+      '<span class="fhr-col">' + PA_T.impact + '</span>' +
+      '<span class="fhr-col">' + PA_T.type + '</span>' +
+      '<span class="fhr-col">' + PA_T.disability + '</span>';
     divIssues[0].before(headerRow);
 
     // Add per-section expand/collapse button
     const sectionBtn = document.createElement("button");
     sectionBtn.className = "expand-section-btn";
     sectionBtn.setAttribute("aria-expanded", "false");
-    sectionBtn.textContent = "Uitklappen";
+    sectionBtn.textContent = PA_T.expand;
     headerRow.before(sectionBtn);
 
     sectionBtn.addEventListener("click", () => {
@@ -661,7 +692,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const accordions = article.querySelectorAll("details.finding-accordion");
       accordions.forEach((d) => d.open = !expanded);
       sectionBtn.setAttribute("aria-expanded", String(!expanded));
-      sectionBtn.textContent = expanded ? "Uitklappen" : "Inklappen";
+      sectionBtn.textContent = expanded ? PA_T.expand : PA_T.collapse;
     });
 
     let issueCounter = 0;
@@ -715,13 +746,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const newLabel = h3.querySelector(".new-label");
       const titleText = h3.textContent.replace(/Nieuw$/, "").trim();
-      const impactLower = impact.toLowerCase();
+      const impactLower = paImpactKey(impact);
 
       summary.innerHTML =
         '<span class="finding-title-cell">' +
           '<span class="finding-chevron" aria-hidden="true">\u25B8</span>' +
           '<span class="finding-title">' + titleText + (newLabel ? '<span class="new-label">Nieuw</span>' : '') + '</span>' +
-          '<button class="permalink-btn" data-anchor="issue-' + issueNr + '" title="Kopieer link naar deze bevinding" aria-label="Kopieer link naar bevinding ' + issueNr + '">' +
+          '<button class="permalink-btn" data-anchor="issue-' + issueNr + '" title="' + PA_T.copyLink + '" aria-label="' + PA_T.copyLinkAria + ' ' + issueNr + '">' +
             '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7.8 11.1l-1.9 1.9a2 2 0 0 1-2.8-2.8l2.8-2.8a2 2 0 0 1 2.8 0 .7.7 0 0 0 1-1 3.4 3.4 0 0 0-4.8 0L2.1 9.2a3.4 3.4 0 0 0 4.8 4.8l1.9-1.9a.7.7 0 0 0-1-1zm6.1-8.2a3.4 3.4 0 0 0-4.8 0L7.2 4.8a.7.7 0 0 0 1 1l1.9-1.9a2 2 0 0 1 2.8 2.8l-2.8 2.8a2 2 0 0 1-2.8 0 .7.7 0 0 0-1 1 3.4 3.4 0 0 0 4.8 0l2.8-2.8a3.4 3.4 0 0 0 0-4.8z"/></svg>' +
           '</button>' +
         '</span>' +
@@ -754,7 +785,7 @@ document.addEventListener("DOMContentLoaded", () => {
         history.replaceState(null, "", "#" + anchor);
         const tip = document.createElement("span");
         tip.className = "copy-tooltip";
-        tip.textContent = "Link gekopieerd";
+        tip.textContent = PA_T.linkCopied;
         btn.style.position = "relative";
         btn.appendChild(tip);
         setTimeout(() => tip.remove(), 2000);
@@ -770,11 +801,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const allAccordions = document.querySelectorAll("#issues details.finding-accordion");
       allAccordions.forEach((d) => d.open = !expanded);
       expandAllBtn.setAttribute("aria-expanded", String(!expanded));
-      expandAllBtn.textContent = expanded ? "Alles uitklappen" : "Alles inklappen";
+      expandAllBtn.textContent = expanded ? PA_T.expandAll : PA_T.collapseAll;
       // Sync section buttons
       document.querySelectorAll(".expand-section-btn").forEach((btn) => {
         btn.setAttribute("aria-expanded", String(!expanded));
-        btn.textContent = expanded ? "Uitklappen" : "Inklappen";
+        btn.textContent = expanded ? PA_T.expand : PA_T.collapse;
       });
     });
   }
@@ -829,16 +860,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const label = document.createElement("label");
       label.className = "resolved-toggle resolved-toggle-page";
       label.hidden = true;
-      label.title = "Markeer alle bevindingen op deze pagina als opgelost";
+      label.title = PA_T.markPageResolved;
 
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
       checkbox.className = "resolved-checkbox";
-      checkbox.setAttribute("aria-label", "Hele pagina is opgelost");
+      checkbox.setAttribute("aria-label", PA_T.pageResolved);
 
       const span = document.createElement("span");
       span.className = "resolved-label";
-      span.innerHTML = '<i class="fa-solid fa-circle-check"></i> Hele pagina is opgelost';
+      span.innerHTML = '<i class="fa-solid fa-circle-check"></i> ' + PA_T.pageResolved;
 
       label.appendChild(checkbox);
       label.appendChild(span);
@@ -864,7 +895,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!h3.querySelector(".sr-only")) {
               const srSpan = document.createElement("span");
               srSpan.className = "sr-only";
-              srSpan.textContent = "(opgelost)";
+              srSpan.textContent = PA_T.issueResolvedSr;
               h3.appendChild(srSpan);
             }
           } else {
@@ -898,7 +929,7 @@ document.addEventListener("DOMContentLoaded", () => {
       issue.classList.add("is-resolved");
       const srSpan = document.createElement("span");
       srSpan.className = "sr-only";
-      srSpan.textContent = "(opgelost)";
+      srSpan.textContent = PA_T.issueResolvedSr;
       h3.appendChild(srSpan);
     }
 
@@ -906,18 +937,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const label = document.createElement("label");
     label.className = "resolved-toggle";
     label.hidden = true;
-    label.title = "Markeer als opgelost";
+    label.title = PA_T.markIssueResolved;
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.className = "resolved-checkbox";
     checkbox.dataset.issueSlug = slug;
     checkbox.checked = !!resolvedState.issues[slug];
-    checkbox.setAttribute("aria-label", "Dit issue is opgelost");
+    checkbox.setAttribute("aria-label", PA_T.issueResolvedAria);
 
     const span = document.createElement("span");
     span.className = "resolved-label";
-    span.innerHTML = '<i class="fa-solid fa-circle-check"></i> Dit issue is opgelost';
+    span.innerHTML = '<i class="fa-solid fa-circle-check"></i> ' + PA_T.issueResolvedAria;
 
     label.appendChild(checkbox);
     label.appendChild(span);
@@ -932,7 +963,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!h3.querySelector(".sr-only")) {
           const srSpan = document.createElement("span");
           srSpan.className = "sr-only";
-          srSpan.textContent = "(opgelost)";
+          srSpan.textContent = PA_T.issueResolvedSr;
           h3.appendChild(srSpan);
         }
       } else {

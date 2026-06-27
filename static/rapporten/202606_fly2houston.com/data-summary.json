@@ -1,13 +1,13 @@
 {
   "impact": {
-    "Klein": 3,
+    "Klein": 0,
     "Medium": 5,
-    "Groot": 11,
+    "Groot": 0,
     "Advies": 0
   },
   "type": {
     "Content": 3,
-    "Techniek": 16
+    "Techniek": 0
   },
   "wcag": [
     "1.1.1",
