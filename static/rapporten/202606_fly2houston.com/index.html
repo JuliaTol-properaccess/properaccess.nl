@@ -243,6 +243,29 @@
 
     
     
+    <section class="dash-info" id="disclosure">
+      <div class="accordion accordion-highlight">
+<details>
+<summary>About the AccessiBe overlay installed on this site</summary>
+<div>
+<p>The site runs the <strong>AccessiBe</strong> accessibility widget: the floating icon that opens an accessibility menu. Many organisations install an overlay like this believing it makes their website compliant. It does not, and two findings in this report prove it on your own site.</p>
+<p>An overlay is a single line of JavaScript that sits <em>on top of</em> your website. It can change some visual things for people who actively open it and click its options (larger fonts, higher contrast, a different cursor), but it does not change the underlying HTML. The underlying HTML is exactly what assistive technology reads: a screen reader parses your page's source before the overlay's JavaScript even finishes running. So an overlay structurally cannot fix keyboard navigation and focus order, missing accessible names, form errors that aren't linked to their fields, incorrect headings and structure, or status updates that aren't announced. Every one of those categories appears in this report.</p>
+<p>The proof is in two of the findings in this report. Both were tested with AccessiBe's own &quot;Keyboard Navigation&quot; option switched <strong>on</strong>:</p>
+<ul>
+<li><strong>The custom focus indicator still fails the contrast requirement</strong> (see the Flights page). With the option on, the indicator becomes a blue (<code>#639AF9</code>) border on white (<code>#F7F9FA</code>): a contrast ratio of 2.6:1, still below the 3.0:1 minimum.</li>
+<li><strong>The keyboard focus on the chat button is still invisible</strong> (see &quot;Keyboard focus is not visible&quot; on the On all pages section). The option made no difference.</li>
+</ul>
+<p>This matters beyond the audit. In April 2025 the U.S. Federal Trade Commission issued a Decision and Order against AccessiBe, fining the company <strong>$1 million</strong> and barring it from claiming its automated product makes a website WCAG-compliant without evidence. Installing an overlay also does not protect you from a complaint: in the first half of 2025 roughly a quarter of U.S. web accessibility lawsuits targeted sites that already had an accessibility widget installed.</p>
+<p>What actually works is fixing the issues in the code, retesting afterwards, and building accessibility into the workflow so new pages stay accessible. A fuller write-up is here (in Dutch): <a href="https://www.properaccess.nl/blog/overlay-tools-accessibe-userway-wcag/">https://www.properaccess.nl/blog/overlay-tools-accessibe-userway-wcag/</a>.</p>
+</div>
+</details>
+</div>
+
+    </section>
+    
+
+    
+    
 
     
     
@@ -329,22 +352,6 @@
               <p></p>
             </div>
             <p>Applies to: all pages of the website www.fly2houston.com</p>
-<div class="accordion accordion-highlight">
-<details>
-<summary>About the AccessiBe overlay installed on this site</summary>
-<div>
-<p>The site runs the <strong>AccessiBe</strong> accessibility widget: the floating icon that opens an accessibility menu. Many organisations install an overlay like this believing it makes their website compliant. It does not, and two findings in this report prove it on your own site.</p>
-<p>An overlay is a single line of JavaScript that sits <em>on top of</em> your website. It can change some visual things for people who actively open it and click its options (larger fonts, higher contrast, a different cursor), but it does not change the underlying HTML. The underlying HTML is exactly what assistive technology reads: a screen reader parses your page's source before the overlay's JavaScript even finishes running. So an overlay structurally cannot fix keyboard navigation and focus order, missing accessible names, form errors that aren't linked to their fields, incorrect headings and structure, or status updates that aren't announced. Every one of those categories appears in this report.</p>
-<p>The proof is in two of the findings below. Both were tested with AccessiBe's own &quot;Keyboard Navigation&quot; option switched <strong>on</strong>:</p>
-<ul>
-<li><strong>The custom focus indicator still fails the contrast requirement</strong> (see the Flights page). With the option on, the indicator becomes a blue (<code>#639AF9</code>) border on white (<code>#F7F9FA</code>): a contrast ratio of 2.6:1, still below the 3.0:1 minimum.</li>
-<li><strong>The keyboard focus on the chat button is still invisible</strong> (see &quot;Keyboard focus is not visible&quot; below). The option made no difference.</li>
-</ul>
-<p>This matters beyond the audit. In April 2025 the U.S. Federal Trade Commission issued a Decision and Order against AccessiBe, fining the company <strong>$1 million</strong> and barring it from claiming its automated product makes a website WCAG-compliant without evidence. Installing an overlay also does not protect you from a complaint: in the first half of 2025 roughly a quarter of U.S. web accessibility lawsuits targeted sites that already had an accessibility widget installed.</p>
-<p>What actually works is fixing the issues in the code, retesting afterwards, and building accessibility into the workflow so new pages stay accessible. A fuller write-up is here (in Dutch): <a href="https://www.properaccess.nl/blog/overlay-tools-accessibe-userway-wcag/">https://www.properaccess.nl/blog/overlay-tools-accessibe-userway-wcag/</a>.</p>
-</div>
-</details>
-</div>
 <div class="issue">
 <h3>#1 - Button has no code indicating that additional content opens</h3>
 <div class="meta">  
