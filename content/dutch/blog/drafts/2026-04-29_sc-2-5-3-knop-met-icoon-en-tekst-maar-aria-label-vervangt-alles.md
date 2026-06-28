@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Knop met icoon en tekst, maar aria-label vervangt alles"
 date: 2026-06-28
 slug: "sc-2-5-3-knop-met-icoon-en-tekst-maar-aria-label-vervangt-alles"
