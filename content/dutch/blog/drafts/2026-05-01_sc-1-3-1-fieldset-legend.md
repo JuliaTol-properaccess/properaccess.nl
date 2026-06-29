@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Fieldset legend"
 date: 2026-06-29
 slug: "sc-1-3-1-fieldset-legend"
