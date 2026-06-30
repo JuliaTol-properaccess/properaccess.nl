@@ -96,31 +96,32 @@ weight = 4
 
 [[main]]
 name = "Tools"
-url = "/tools/"
 weight = 5
-
-[[main]]
-name = "Quizzes"
-weight = 6
 hasChildren = true
 
 [[main]]
-parent = "Quizzes"
-name = "Museum"
-url = "/tools/quiz-museum/"
+parent = "Tools"
+name = "Alle tools"
+url = "/tools/"
 weight = 1
 
 [[main]]
-parent = "Quizzes"
-name = "Webredactie"
-url = "/tools/quiz-webredactie/"
+parent = "Tools"
+name = "Quiz: museum"
+url = "/tools/quiz-museum/"
 weight = 2
 
 [[main]]
-parent = "Quizzes"
-name = "Developers"
-url = "/tools/quiz-developers/"
+parent = "Tools"
+name = "Quiz: webredactie"
+url = "/tools/quiz-webredactie/"
 weight = 3
+
+[[main]]
+parent = "Tools"
+name = "Quiz: developers"
+url = "/tools/quiz-developers/"
+weight = 4
 
 [[main]]
 name = "Over ons"
