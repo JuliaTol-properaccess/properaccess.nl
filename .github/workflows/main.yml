@@ -79,6 +79,14 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
+      # Herbouwt het rapportoverzicht (static/rapporten/index.html) uit de
+      # aanwezige rapportmappen. Zo verschijnt elk nieuw rapport dat onder
+      # static/rapporten/<slug>/ is gecommit automatisch op het overzicht,
+      # zonder dat de kaart handmatig hoeft te worden toegevoegd. Draait
+      # in-place vóór de Hugo-build (geen commit terug naar de repo).
+      - name: Genereer rapportoverzicht
+        run: python3 scripts/generate_rapporten_index.py
+
       - name: Build site
         run: npm run build
 
