@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202606_bijenkorf_ios">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van de Bijenkorf iOS-app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782583988082"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+      
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#hoe-nu-verder">Hoe nu verder</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-op-alle-schermen">Op alle schermen</a></li><li><a href="#02-kies-een-land">Kies een land</a></li><li><a href="#03-personalisatie">Personalisatie</a></li><li><a href="#04-home-kies-je-wereld">Home (Kies je wereld)</a></li><li><a href="#05-inloggen-of-word-member">Inloggen of word member</a></li><li><a href="#06-dames">Dames</a></li><li><a href="#07-merkpagina-coach">Merkpagina: Coach</a></li><li><a href="#08-productpagina-coach-brooklyn-39-schoudertas-van-leer">Productpagina: Coach Brooklyn 39 schoudertas van leer</a></li><li><a href="#09-beleef-de-bijenkorf-5x-dit-is-er-deze-week-te-doen">Beleef de Bijenkorf: 5x dit is er deze week te doen</a></li><li><a href="#10-shoppen-zoeken">Shoppen - Zoeken</a></li><li><a href="#11-verlanglijst">Verlanglijst</a></li><li><a href="#12-winkelmand">Winkelmand</a></li><li><a href="#13-checkout">Checkout</a></li><li><a href="#14-mijn-account">Mijn Account</a></li><li><a href="#15-aankopen">Aankopen</a></li><li><a href="#16-mijn-gegevens">Mijn gegevens</a></li><li><a href="#17-instellingen">Instellingen</a></li><li><a href="#18-onze-winkels">Onze winkels</a></li><li><a href="#19-chun-cafe-x-de-bijenkorf">Chun Café x de Bijenkorf</a></li><li><a href="#20-klantenservice">Klantenservice</a></li><li><a href="#21-geef-feedback">Geef feedback</a></li><li><a href="#22-chat">Chat</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van de Bijenkorf iOS-app</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de Bijenkorf iOS-app onderzocht in juni 2026. Op dit moment is een deel van de succescriteria als voldoende beoordeeld. In dit rapport lees je welke punten nog verbetering behoeven en hoe deze kunnen worden aangepakt.</p>
+<p>De audit is uitgevoerd op de iOS-versie van de app. Bij de oplossingen geven we waar mogelijk ook aanwijzingen voor Android, zodat je vergelijkbare problemen op beide platformen kunt aanpakken.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.svg" alt="Logo van De Bijenkorf">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="50"
+           data-perceivable="20"
+           data-operable="17"
+           data-understandable="10"
+           data-robust="3">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">50</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="50"
+             data-perceivable="20"
+             data-operable="17"
+             data-understandable="10"
+             data-robust="3">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 17</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 10</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>In opdracht van</dt>
+              <dd>De Bijenkorf</dd>
+              
+              <dt>Leverancier techniek</dt>
+              <dd>iOS (iPhone 15 Pro Max, iOS 26.5, app-versie 8.46.0)</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>30 juni 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle schermen van de Bijenkorf iOS-app uit de steekproef</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Web views (inhoud die binnen de app via een browser-component wordt getoond)</li>
+              
+              <li>Ontoegankelijkheden die ontstaan door de manier waarop het device de app rendert, bijvoorbeeld kleurcontrast in alerts of de weergave van sommige knoppen</li>
+              
+              <li>Inhoud afkomstig van derden</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>iPhone 15 Pro Max (iOS-versie 26.5)</li>
+              
+              <li>VoiceOver schermlezer</li>
+              
+              <li>Extern toetsenbord</li>
+              
+            </ul>
+
+            <h3>Technologieën van de app</h3>
+            <ul>
+              
+              <li>iOS (native)</li>
+              
+              <li>VoiceOver</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+    <div class="dash-voortgang" id="hoe-nu-verder">
+      <h2>Hoe nu verder</h2>
+      <div class="voortgang-opties-grid">
+        
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-presentation-screen" aria-hidden="true"></i> Presentatie</h3>
+          <p>Bekijk een korte presentatie (~15 min) met de belangrijkste bevindingen, cijfers en vervolgstappen, handig voor een teammeeting.</p>
+          <a class="voortgang-btn" href="presentation.html" target="_blank" rel="noopener">Bekijk presentatie</a>
+        </div>
+        
+        
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-list-check" aria-hidden="true"></i> Plan van aanpak</h3>
+          <p>Download het plan van aanpak met een geprioriteerde aanpak om de gevonden problemen op te lossen.</p>
+          <a class="voortgang-btn" href="plan-van-aanpak.pdf" download>Download plan van aanpak</a>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <section class="dash-info">
+      <div class="accordion accordion-highlight">
+        <details>
+          <summary>VoiceOver aanzetten en gebruiken (iOS)</summary>
+          <div>
+            <p>Om de bevindingen in dit rapport zelf te ervaren, test je de app met <strong>VoiceOver</strong> — de schermlezer die standaard op iedere iPhone en iPad zit. Blinde en slechtziende gebruikers bedienen hun toestel hiermee. Hieronder vind je de stappen om VoiceOver aan te zetten en de gebaren die je nodig hebt.</p>
+<blockquote>
+<p><strong>Tip.</strong> Oefen eerst een paar minuten in de <strong>Gesture Help</strong>: <em>double-tap met vier vingers</em>. In die modus kun je elk gebaar uitproberen zonder dat de app reageert. VoiceOver vertelt je telkens welk gebaar je zojuist hebt gemaakt.</p>
+</blockquote>
+<h4>VoiceOver aan- en uitzetten</h4>
+<p>De snelste manier is een sneltoets instellen. Ga naar <strong>Instellingen → Toegankelijkheid → Toegankelijkheidssneltoets</strong> en kies <strong>VoiceOver</strong>. Vanaf dat moment zet je VoiceOver aan of uit door <strong>drie keer snel op de zijknop</strong> te drukken (op een iPhone X of nieuwer) of op de <strong>Home-knop</strong> (oudere modellen).</p>
+<p>Alternatieven:</p>
+<ul>
+<li><strong>Instellingen → Toegankelijkheid → VoiceOver</strong> → schakelaar aan of uit.</li>
+<li>Vraag Siri: <em>&quot;Hey Siri, zet VoiceOver aan&quot;</em> of <em>&quot;… uit&quot;</em>.</li>
+</ul>
+<h4>De belangrijkste gebaren</h4>
+<p>Zodra VoiceOver aan staat, werkt je toestel anders dan je gewend bent. Eén keer tikken selecteert alleen een element — je moet <strong>double-tappen</strong> om iets te activeren. Dit zijn de gebaren die je nodig hebt om door een scherm te bewegen:</p>
+<table>
+<thead>
+<tr>
+<th>Gebaar</th>
+<th>Wat het doet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Veeg met één vinger naar rechts</strong></td>
+<td>Spring naar het volgende element.</td>
+</tr>
+<tr>
+<td><strong>Veeg met één vinger naar links</strong></td>
+<td>Spring naar het vorige element.</td>
+</tr>
+<tr>
+<td><strong>Double-tap met één vinger</strong></td>
+<td>Activeer het element dat VoiceOver heeft geselecteerd (link openen, knop indrukken, vinkje zetten). Je hoeft niet precies op het element te tikken.</td>
+</tr>
+<tr>
+<td><strong>Triple-tap met één vinger</strong></td>
+<td>Lang indrukken (voor context-menu's en dergelijke).</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers omhoog</strong></td>
+<td>Lees het hele scherm vanaf het begin voor.</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers omlaag</strong></td>
+<td>Lees door vanaf het huidige element.</td>
+</tr>
+<tr>
+<td><strong>Tik met twee vingers</strong></td>
+<td>Pauzeer of hervat de spraak. Handig als je iets wilt opschrijven.</td>
+</tr>
+<tr>
+<td><strong>Veeg met drie vingers omhoog of omlaag</strong></td>
+<td>Scroll door het scherm.</td>
+</tr>
+<tr>
+<td><strong>Tik met vier vingers boven- of onderaan het scherm</strong></td>
+<td>Spring naar het eerste of laatste element op het scherm.</td>
+</tr>
+</tbody>
+</table>
+<h4>De Rotor: springen per type element</h4>
+<p>De <strong>Rotor</strong> is het belangrijkste hulpmiddel om snel door een scherm te navigeren. Je kiest eerst op welk type element je wilt springen — bijvoorbeeld alleen de koppen, alleen de knoppen, of alleen de formuliervelden — en beweegt vervolgens van element naar element.</p>
+<ul>
+<li><strong>Rotor openen of wisselen</strong>: draai twee vingers op het scherm alsof je aan een fysieke draaiknop draait. VoiceOver zegt welke instelling actief is (<em>&quot;Koppen&quot;</em>, <em>&quot;Links&quot;</em>, <em>&quot;Form controls&quot;</em>, …). Draai door tot je de gewenste optie hoort.</li>
+<li><strong>Volgende element van dat type</strong>: veeg met één vinger <strong>omlaag</strong>.</li>
+<li><strong>Vorige element van dat type</strong>: veeg met één vinger <strong>omhoog</strong>.</li>
+</ul>
+<p>Welke opties in de Rotor beschikbaar zijn, stel je in via <strong>Instellingen → Toegankelijkheid → VoiceOver → Rotor</strong>.</p>
+<h4>Bevindingen reproduceren</h4>
+<p>In dit rapport staat bij elke bevinding een <strong>&quot;Hoe te reproduceren&quot;</strong>-sectie. Daar leggen we uit welke stappen en welke gebaren je moet gebruiken om het probleem zelf te zien. Gebruik deze instructie als naslag: als een stap verwijst naar <em>&quot;de volgende kop&quot;</em>, dan weet je dat je de Rotor op <strong>Koppen</strong> moet zetten en met één vinger omlaag veegt.</p>
+<p>Kom je er niet uit? Stuur ons gerust een mail op <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a> — we denken graag mee.</p>
+
+          </div>
+        </details>
+      </div>
+    </section>
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-op-alle-schermen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-op-alle-schermen">01 Op alle schermen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Op alle schermen</p>
+<div class="issue">
+<h3>#1 - Schermoriëntatie (staand / liggend) is vergrendeld</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.4</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.4</span>  
+</div>
+<p>De app ondersteunt maar één schermoriëntatie. Wanneer het apparaat wordt gedraaid, past de interface zich niet aan en blijft die in één oriëntatie vergrendeld. Bezoekers moeten de app zowel staand als liggend kunnen gebruiken, tenzij een bepaalde oriëntatie essentieel is voor de werking van de app. Een vaste oriëntatie kan bezoekers buitensluiten die hun apparaat in een vaste houder hebben of het niet gemakkelijk kunnen draaien.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb beperkte controle over mijn motoriek. Wanneer mijn tablet in een vaste houder zit, werkt de app alleen in de oriëntatie die ik niet kan gebruiken. Ik verwacht dat de content in zowel staande als liggende modus werkt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de content van de app meedraait en zich aanpast aan de gekozen schermoriëntatie (staand of liggend). Gebruik CSS-media queries zoals <code>orientation: portrait</code> en <code>orientation: landscape</code> om de lay-out voor beide oriëntaties te optimaliseren. Vergrendel de oriëntatie niet in de manifest of via JavaScript, tenzij een specifieke oriëntatie aantoonbaar essentieel is voor de functionaliteit.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-kies-een-land">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-kies-een-land">02 Kies een land <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Scherm na installatie van de app</p>
+<div class="issue">
+<h3>#2 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien &quot;Kies een land&quot; en &quot;Waar wil je winkelen?&quot; er visueel uit als koppen, maar in de code is dat niet het geval en worden ze niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik door het scherm navigeer door tussen koppen te springen, zijn sommige visuele koppen onzichtbaar voor mijn schermlezer. Ik verwacht dat alle visuele koppen door mijn schermlezer worden herkend als echte koppen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer het element als kop, zodat hulpsoftware het correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#3 - Onzichtbaar element krijgt toetsenbordfocus</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.3</span>  
+</div>
+<p>Op dit scherm landt de toetsenbordfocus op een onzichtbare knop bovenaan, naast de tekst &quot;Kies een land&quot;. Onzichtbare interactieve elementen horen niet in de focusvolgorde thuis. Dit kan leiden tot het per ongeluk activeren ervan en tot verwarring, vooral voor bezoekers die afhankelijk zijn van toetsenbordnavigatie.</p>
+<figure class="screenshot">
+<img src="images/1.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een toetsenbord en een schermlezer. Wanneer ik op Tab druk om door het scherm te gaan, landt mijn focus soms op onzichtbare elementen die ik niet kan zien. Ik verwacht dat de focus alleen op zichtbare elementen landt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alleen zichtbare interactieve elementen focusbaar zijn en dat de focusvolgorde een logische volgorde aanhoudt.</p>
+</div>
+<div class="issue">
+<h3>#4 - Knop heeft geen toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm heeft de onzichtbare knop bovenaan geen toegankelijke naam. VoiceOver en TalkBack kondigen alleen &quot;Knop&quot; aan, zonder enige aanwijzing over de functie. Daardoor weten schermlezergebruikers niet wat er gebeurt als ze de knop activeren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik VoiceOver of TalkBack om de app te bedienen. Wanneer ik een knop zonder naam tegenkom, zegt de schermlezer alleen &quot;Knop&quot;, zonder context. Ik verwacht dat elke knop een duidelijke naam heeft die de functie beschrijft.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk interactief element een toegankelijke naam. In iOS stel je <code>accessibilityLabel</code> in of gebruik je een native <code>UIButton</code> of SwiftUI <code>Button</code> met een zichtbare titel. In Android stel je <code>contentDescription</code> in of gebruik je een native <code>Button</code> met een tekst-attribuut. Geef de voorkeur aan native bedieningselementen, die de juiste rol automatisch aanbieden. Voor zelfgebouwde bedieningselementen (een <code>View</code> met een tap-handler) stel je ook de accessibility trait of rol &quot;Knop&quot; in, zodat de bezoeker naast de naam ook hoort wat het element is.</p>
+</div>
+<div class="issue">
+<h3>#5 - Element mist een rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm bieden de interactieve elementen met de labels &quot;Nederland&quot; en &quot;België&quot; geen rol (of accessibility trait) aan hulpsoftware. Schermlezergebruikers horen wel het label van het element, maar komen niet te weten of het een knop, een link, een selectievakje, een kop of iets anders is. Daardoor kunnen ze niet voorspellen wat er gebeurt als ze het activeren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik een element zonder rol tegenkom, weet ik niet wat het doet. Ik verwacht dat mijn schermlezer me vertelt of het een knop, link of ander element is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel een rol of trait in op elk interactief en structureel element. In iOS gebruik je <code>accessibilityTraits</code> (bijvoorbeeld <code>.button</code>, <code>.link</code>, <code>.header</code>, <code>.image</code>) of SwiftUI's <code>.accessibilityAddTraits(...)</code>. In Android gebruik je native componenten die al een rol aanbieden (<code>Button</code>, <code>Switch</code>, <code>CheckBox</code>), of stel je op zelfgebouwde componenten de rol in via <code>AccessibilityNodeInfoCompat.setRoleDescription(...)</code> of door <code>View</code> te subclassen en <code>onInitializeAccessibilityNodeInfo</code> te overschrijven.</p>
+</div>
+<div class="issue">
+<h3>#6 - Decoratieve afbeeldingen zijn niet verborgen voor hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op dit scherm staat een carrousel met puur decoratieve afbeeldingen die aan schermlezers worden aangeboden. Omdat het icoon geen informatieve waarde heeft, levert het onnodige ruis op voor schermlezergebruikers en wordt het scherm lastiger te navigeren. Decoratieve elementen horen verborgen te zijn voor hulpsoftware.</p>
+<figure class="screenshot">
+<img src="images/2.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik door het scherm navigeer, hoor ik decoratieve iconen voorgelezen worden die niets toevoegen. Ik verwacht dat die iconen worden overgeslagen, zodat ik me op de echte content kan richten.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg het decoratieve icoon voor schermlezers door <code>aria-hidden=&quot;true&quot;</code> of <code>role=&quot;presentation&quot;</code> aan het element toe te voegen.</p>
+</div>
+<div class="issue">
+<h3>#7 - Bewegende content kan niet gestopt, gepauzeerd of verborgen worden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.2.2</span>  
+	<span class="sc"><b>EN</b>: 11.2.2.2</span>  
+</div>
+<p>Op dit scherm beweegt de carrousel automatisch langer dan vijf seconden en is die niet door de bezoeker te pauzeren, te stoppen of te verbergen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik raak afgeleid door beweging op een scherm. Wanneer ik het scherm bezoek en er beweegt iets continu, raak ik steeds de draad kwijt. Ik verwacht dat ik alle bewegende content kan pauzeren of verbergen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een zichtbare, bereikbare pauze-/stop-knop toe voor elke automatisch bewegende content die langer dan vijf seconden duurt. Een alternatief is om de beweging automatisch te stoppen na één keer afspelen, of te pauzeren zodra de bezoeker met iets op het scherm interactie heeft. Respecteer ook de systeeminstelling &quot;Beweging verminderen&quot; (iOS: <code>UIAccessibility.isReduceMotionEnabled</code>; Android: <code>ACCESSIBILITY_DISPLAY_ANIMATION_SCALE == 0</code>).</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-personalisatie">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-personalisatie">03 Personalisatie <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Kies een land (Start screen) &gt; knop 'Land'</p>
+<div class="issue">
+<h3>#8 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien &quot;Personalisatie&quot; en &quot;Help ons om jouw ervaring beter te maken&quot; er visueel uit als koppen, maar in de code is dat niet het geval en worden ze niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik door het scherm navigeer door tussen koppen te springen, zijn sommige visuele koppen onzichtbaar voor mijn schermlezer. Ik verwacht dat alle visuele koppen door mijn schermlezer worden herkend als echte koppen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer het element als kop, zodat hulpsoftware het correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#9 - Decoratieve afbeelding is niet verborgen voor hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Klein</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op dit scherm staat onder &quot;Personalisatie&quot; een decoratieve afbeelding die aan schermlezers wordt aangeboden met het tekstalternatief &quot;tracking_image&quot;. Omdat het icoon geen informatieve waarde heeft, levert het onnodige ruis op voor schermlezergebruikers en wordt het scherm lastiger te navigeren. Decoratieve elementen horen verborgen te zijn voor hulpsoftware.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik door het scherm navigeer, hoor ik decoratieve iconen voorgelezen worden die niets toevoegen. Ik verwacht dat die iconen worden overgeslagen, zodat ik me op de echte content kan richten.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg het decoratieve icoon voor schermlezers door <code>aria-hidden=&quot;true&quot;</code> of <code>role=&quot;presentation&quot;</code> aan het element toe te voegen.</p>
+</div>
+<div class="issue">
+<h3>#10 - Items zijn visueel een lijst maar niet als lijst gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm worden de items onder &quot;Help ons om jouw ervaring beter te maken&quot; visueel weergegeven als een lijst, maar in de code worden ze niet als lijst aangeboden aan hulpsoftware. Schermlezergebruikers horen niet dat de items bij elkaar horen, hoeveel items er zijn, of op welk item ze zich bevinden.</p>
+<p>Hetzelfde probleem doet zich voor bij de &quot;Welkom bij de Bijenkorf&quot;-popup die op het Home-scherm verschijnt wanneer een bezoeker de app voor het eerst opent. Daar staat een lijst met 4 items, zoals &quot;Gratis verzending vanaf € 50&quot;, maar die wordt niet als lijst aangeboden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik een groep items tegenkom, kan ik niet horen hoeveel het er zijn of waar de groep begint en eindigt. Ik verwacht dat mijn schermlezer aankondigt dat het een lijst is en hoeveel items die bevat.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Groepeer lijst-items met de juiste lijst-semantiek. In iOS gebruik je bij voorkeur <code>UICollectionView</code> of <code>UITableView</code>, die lijst-semantiek automatisch aanbieden; voor zelfgebouwde containers stel je <code>accessibilityContainerType = .list</code> in. In Android gebruik je <code>RecyclerView</code>, of stel je <code>AccessibilityNodeInfoCompat.setCollectionInfo(...)</code> in op de ouder en <code>setCollectionItemInfo(...)</code> op elk item, zodat TalkBack het aantal items en de positie aankondigt.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-home-kies-je-wereld">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-home-kies-je-wereld">04 Home (Kies je wereld) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Niet ingelogde gebruiker &gt; Home-tab na installatie van de app</p>
+<p>Op dit scherm staan toegankelijkheidsproblemen die elders in dit rapport al beschreven zijn.</p>
+<div class="issue">
+<h3>#11 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm staat de knop &quot;Kies je wereld&quot; voordat de bezoeker een categorie kiest. Deze knop kan met een schermlezer geactiveerd worden. Na het activeren verschijnt een wachtanimatie. Deze animatie fungeert als statusbericht, maar is niet toegankelijk voor blinde bezoekers. Wanneer informatie op het scherm verandert, zoals een bevestiging, een foutmelding of een laadstatus, moeten schermlezergebruikers daar een aankondiging van krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen.</p>
+<figure class="screenshot">
+<img src="images/3.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer. Wanneer er een statusbericht op het scherm verschijnt, kondigt mijn schermlezer het niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik er naartoe hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stuur statuswijzigingen als live-aankondiging naar hulpsoftware, zonder de focus te verplaatsen. Op iOS post je een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> voor grotere wijzigingen). Op Android gebruik je <code>View.announceForAccessibility(...)</code> of stel je de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor urgente berichten). De bezoeker blijft zo waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-inloggen-of-word-member">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-inloggen-of-word-member">05 Inloggen of word member <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Profiel-tab &gt; knop &quot;Inloggen of word member&quot;</p>
+<div class="issue">
+<h3>#12 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm ziet &quot;Inloggen of word member&quot; er visueel uit als een kop, maar in de code is dat niet het geval en wordt het niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer ik het scherm doorloop door tussen koppen te springen, zijn sommige visuele koppen onzichtbaar voor mijn schermlezer. Ik verwacht dat alle visuele koppen door mijn schermlezer als echte koppen worden herkend.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer het element als kop, zodat hulpsoftware het correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. Op Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-dames">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-dames">06 Dames <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Home-tab &gt; knop &quot;Dames&quot;</p>
+<div class="issue">
+<h3>#13 - Uitgeklapte of ingeklapte status wordt niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm opent en sluit de knop &quot;Dames&quot; bovenaan een paneel. De uitgeklapte of ingeklapte status van die knop wordt echter niet aangeboden aan hulpsoftware. Daardoor horen schermlezergebruikers niet of het bijbehorende paneel op dat moment uitgeklapt of ingeklapt is.</p>
+<figure class="screenshot">
+<img src="images/4.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik knoppen nodig die panelen openen en sluiten en die aankondigen of ze uitgeklapt of ingeklapt zijn, zodat ik weet of de bijbehorende inhoud op dat moment beschikbaar is zonder dat ik het scherm hoef te verkennen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg ervoor dat de knop in de code aangeeft of het bijbehorende paneel uitgeklapt of ingeklapt is, en dat deze status wordt bijgewerkt telkens wanneer het paneel wordt geopend of gesloten. Gebruik de native accessibility-API's of accessibility-eigenschappen van het platform, zodat hulpsoftware de actuele status correct kan aankondigen aan bezoekers.</p>
+</div>
+<div class="issue">
+<h3>#14 - Carrouselstructuur wordt niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm wordt de promotiebanner gepresenteerd als een carrousel met meerdere slides. Visueel laten paginastipjes zien dat er nog meer slides beschikbaar zijn. Deze informatie wordt echter niet overgebracht aan schermlezergebruikers.</p>
+<p>Wanneer de carrousel focus krijgt, kondigt de schermlezer niet aan dat het element meerdere slides bevat of dat er extra inhoud te bereiken is. De paginastipjes worden niet als afzonderlijk bereikbare bedieningselementen aangeboden, en bezoekers worden er niet over geïnformeerd dat ze tussen slides kunnen navigeren. Pas nadat de bezoeker de slide al heeft gewisseld, kondigt VoiceOver informatie aan zoals &quot;pagina 2 van 2&quot;.</p>
+<p>Daardoor ontdekken schermlezergebruikers mogelijk niet dat er extra slides beschikbaar zijn of begrijpen ze niet dat de banner een interactieve carrousel is.</p>
+<p>Dezelfde bevinding doet zich voor in de sectie &quot;De selecties van onze editors&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik een carrousel nodig die aankondigt dat hij meerdere slides bevat en die informatie geeft over de huidige positie, zodat ik weet dat er extra inhoud beschikbaar is en ik door alle slides kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bouw de carrousel met het native accessibility-patroon van het platform voor gepagineerde inhoud. Zorg ervoor dat de carrousel zijn rol, de huidige pagina, het totale aantal pagina's en de ondersteunde navigatie-acties aanbiedt aan hulpsoftware. De huidige pagina en de beschikbare navigatie moeten worden aangekondigd zodra de carrousel focus krijgt en worden bijgewerkt telkens wanneer de getoonde slide verandert.</p>
+</div>
+<div class="issue">
+<h3>#15 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien de volgende teksten er visueel uit als koppen, maar in de code is dat niet het geval en worden ze niet als koppen aangeboden aan hulpsoftware: &quot;Damesmode merken&quot;, &quot;De selecties van onze editors&quot; en andere. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als accessibility-koppen, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. Op Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#16 - Knoppen met dezelfde toegankelijke naam zijn niet te onderscheiden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm hebben meerdere knoppen dezelfde toegankelijke naam, zoals &quot;Toevoegen aan verlanglijst&quot; of &quot;Verwijderen van verlanglijst&quot;. Zie secties als &quot;Nieuwe collectie&quot;, &quot;Nieuwe merken&quot; en andere. Deze knoppen voeren weliswaar hetzelfde soort actie uit, maar gelden voor verschillende producten. Omdat de toegankelijke namen het bijbehorende product niet benoemen, kunnen schermlezergebruikers de knoppen niet van elkaar onderscheiden of bepalen welk product aan de verlanglijst wordt toegevoegd of eruit wordt verwijderd.</p>
+<p>Dezelfde bevinding doet zich voor in de sectie &quot;Laatst bekeken&quot; wanneer de bezoeker meerdere items heeft bekeken. Elk item bevat een &quot;X&quot;-knop met dezelfde toegankelijke naam: &quot;Verwijderen&quot;.</p>
+<p>Dezelfde bevindingen doen zich voor op de volgende schermen: &quot;Brand page: Coach&quot;, &quot;Product page: Coach Brooklyn 39 schoudertas van leer&quot;, &quot;Beleef de Bijenkorf: 5x dit is er deze week te doen&quot; en andere.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik per verlanglijst-knop nodig dat die benoemt bij welk product hij hoort, zodat ik precies weet welk item aan mijn verlanglijst wordt toegevoegd of eruit wordt verwijderd voordat ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de toegankelijke naam van elke verlanglijst-knop aan, zodat die zowel de actie als het bijbehorende product uniek benoemt. Gebruik bijvoorbeeld in plaats van &quot;Toevoegen aan verlanglijst&quot; een toegankelijke naam als &quot;Voeg Tommy Hilfiger Top met peplum en streepprint toe aan verlanglijst&quot;. Zorg er op dezelfde manier voor dat knoppen om items van de verlanglijst te verwijderen het betreffende product benoemen.</p>
+</div>
+<div class="issue">
+<h3>#17 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm, in secties zoals &quot;De selecties van onze editors&quot;, bevatten de knoppen witte tekst, bijvoorbeeld &quot;Nieuwe sneaker releases&quot;, met een lage contrastverhouding tegen de achtergrond. Omdat de achtergrond een afbeelding is, varieert de kleur ervan. Op de grijze (<code>#A2A0A0</code>) achtergrond is de contrastverhouding bijvoorbeeld 2,6:1. Normale tekst moet een contrastverhouding van minimaal 4,5:1 hebben, en grote tekst (18pt en groter, of 14pt vet en groter) moet een contrastverhouding van minimaal 3,0:1 hebben.</p>
+<figure class="screenshot">
+<img src="images/5.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik tekst lees die nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur of beide aan, zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrast-checker en verifieer dit voor elke status waarin de tekst voorkomt (standaard, uitgeschakeld, over afbeeldingen, op gekleurde achtergronden) en voor zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#18 - Productafbeeldingsgalerij is niet te bedienen met een schermlezer en extern toetsenbord</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm, in secties zoals &quot;Nieuwe collectie&quot;, bevatten productitems afbeeldingsgalerijen waarmee ziende bezoekers horizontaal kunnen swipen om extra productafbeeldingen te bekijken. Deze functionaliteit is echter niet beschikbaar voor schermlezergebruikers. Wanneer een productafbeelding focus krijgt, kondigt VoiceOver niet aan dat de galerij meerdere afbeeldingen bevat, geeft die de huidige afbeeldingspositie niet aan en biedt die geen ondersteunde acties aan om tussen afbeeldingen te navigeren. De galerij is ook niet te bedienen met een extern toetsenbord. Daardoor worden schermlezergebruikers er niet over geïnformeerd dat er extra productafbeeldingen beschikbaar zijn en kunnen ze die niet bereiken.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer of een extern toetsenbord gebruikt, heb ik per productafbeeldingsgalerij nodig dat die aanbiedt dat hij meerdere afbeeldingen bevat en die een toegankelijke manier biedt om ertussen te navigeren, zodat ik alle productafbeeldingen kan bereiken en niet alleen de eerste.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bouw de productafbeeldingsgalerij met het native accessibility-patroon van het platform voor gepagineerde of scrollbare inhoud. Zorg ervoor dat de galerij zijn rol, de huidige afbeeldingspositie, het totale aantal afbeeldingen en de ondersteunde navigatie-acties aanbiedt aan hulpsoftware. De galerij moet ook toetsenbordnavigatie ondersteunen, zodat bezoekers met standaard toetsenbordcommando's tussen afbeeldingen kunnen bewegen. Schermlezergebruikers moeten alle afbeeldingen in de galerij kunnen ontdekken en doorlopen met de standaard VoiceOver- en TalkBack-interacties.</p>
+</div>
+<div class="issue">
+<h3>#19 - Eén interactieve kaart wordt aangeboden als meerdere knoppen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm, in de secties &quot;Inspiratie&quot; en &quot;Je membership&quot;, fungeert elke kaart als één knop die het bijbehorende artikel opent. In plaats van als één interactief element wordt de kaart echter als meerdere afzonderlijke knoppen aangeboden aan hulpsoftware.</p>
+<p>De kaart &quot;Beleef de Bijenkorf: 5x dit is er deze week te doen&quot; in de sectie &quot;Inspiratie&quot; wordt bijvoorbeeld aangekondigd als meerdere losse knoppen, waaronder de categorie &quot;IN DE WINKEL&quot;, de artikeltitel en de publicatiedatum. Visueel vormen deze elementen één interactieve kaart en activeren ze dezelfde actie.</p>
+<p>Daardoor komen schermlezergebruikers meerdere bedieningselementen tegen waar er visueel maar één is, wat de navigatie verlengt en onzekerheid geeft over welk element geactiveerd moet worden.</p>
+<p>Dezelfde bevinding doet zich voor op het scherm &quot;Beleef de Bijenkorf: 5x dit is er deze week te doen&quot; in de sectie &quot;Lees meer&quot;.</p>
+<figure class="screenshot">
+<img src="images/6.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik per interactieve kaart nodig dat die als één knop met één toegankelijke naam wordt aangeboden, zodat ik hem als één bedieningselement begrijp en kan activeren zonder door meerdere overbodige knoppen te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied elke kaart aan als één toegankelijke knop. Voeg de informatie die in de kaart staat, zoals de categorie, de titel en andere relevante tekst, samen tot één toegankelijke naam voor de kaart. Decoratieve of puur structurele elementen mogen niet als afzonderlijke interactieve bedieningselementen worden aangeboden. De hele kaart moet als één element focus krijgen en één actie activeren.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-merkpagina-coach">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-merkpagina-coach">07 Merkpagina: Coach <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Home-tab &gt; Dames &gt; sectie Damesmode merken &gt; knop 'Coach'</p>
+<p>Dit scherm bevat toegankelijkheidsproblemen die al eerder in dit rapport zijn beschreven.</p>
+<div class="issue">
+<h3>#20 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan teksten die visueel opgemaakt zijn als koppen, maar in de code is dat niet het geval. Ze worden niet als kop aangeboden aan hulpsoftware. Het gaat om de tekst &quot;Coach&quot; op het scherm en de teksten &quot;Filteren&quot;, &quot;Sorteren&quot;, &quot;Type tassen&quot; en andere in het filterpaneel. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze juist aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. Op Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#21 - Informatie dat tekst visueel doorgestreept is, wordt niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm tonen sommige producten zowel een originele prijs als een afgeprijsde prijs. De originele prijs wordt visueel doorgestreept weergegeven om aan te geven dat die is vervangen door de afgeprijsde prijs. Dit onderscheid wordt echter niet overgebracht aan hulpsoftware. Bij &quot;Coach, Bleecker schoudertas van leer met uitneembaar etui&quot; kondigt een schermlezer bijvoorbeeld de twee prijzen aan zonder aan te geven welke de originele prijs is en welke de afgeprijsde prijs. Daardoor kunnen schermlezergebruikers de relatie tussen de twee prijzen niet begrijpen. Hetzelfde probleem doet zich voor op andere schermen:</p>
+<ul>
+<li>&quot;Productpagina: Coach Brooklyn 39 schoudertas van leer&quot;</li>
+<li>&quot;Beleef de Bijenkorf: 5x dit is er deze week te doen&quot;</li>
+<li>&quot;Verlanglijst&quot; en andere</li>
+</ul>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet de originele en de afgeprijsde prijs programmatisch te onderscheiden zijn, zodat ik kan begrijpen welke prijs is verlaagd en wat de huidige verkoopprijs is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de originele en de afgeprijsde prijs met betekenisvolle toegankelijkheidsinformatie aan hulpsoftware worden aangeboden. Gebruik de toegankelijkheids-API's van het platform om aan te geven welke prijs de originele prijs is en welke de huidige afgeprijsde prijs. De schermlezer moet bijvoorbeeld &quot;Originele prijs: €495. Huidige prijs: €395.&quot; aankondigen in plaats van simpelweg twee prijzen achter elkaar voor te lezen.</p>
+</div>
+<div class="issue">
+<h3>#22 - Geselecteerde status wordt niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm opent de filterknop een paneel met filteropties. In dit paneel opent de knop &quot;Sorteren&quot; een submenu. De geselecteerde sorteeroptie in dit submenu wordt nu aangeduid met een vinkje-icoon. De geselecteerde status wordt echter niet aangeboden aan hulpsoftware. De optie &quot;Aanbevolen&quot; is bijvoorbeeld visueel gemarkeerd als geselecteerd, maar VoiceOver kondigt alleen &quot;Aanbevolen, button&quot; aan. Daarnaast wordt het vinkje ook als losse afbeelding aan hulpsoftware aangeboden, met de toegankelijke naam &quot;Propolis/16/Check&quot;. Daardoor kunnen schermlezergebruikers niet bepalen welke sorteeroptie op dat moment geselecteerd is. Ze horen bovendien een niet ter zake doende afbeeldingsnaam die het doel van het vinkje niet overbrengt.</p>
+<figure class="screenshot">
+<img src="images/7.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet de op dat moment geselecteerde sorteeroptie haar geselecteerde status aanbieden, zodat ik kan vaststellen welke optie actief is zonder dat ik losse, niet ter zake doende toegankelijkheidselementen hoor.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de geselecteerde status aan op de sorteeroptie zelf, met de native toegankelijkheids-API's van het platform. De knop moet overbrengen dat die geselecteerd is. Het vinkje moet in dit geval niet als los toegankelijkheidselement worden aangeboden. Voeg het in plaats daarvan samen met de toegankelijkheidsinformatie van de knop, of verberg het voor hulpsoftware als het alleen dient als visuele indicator van de geselecteerde status.</p>
+</div>
+<div class="issue">
+<h3>#23 - Contrast UI-element lager dan 3,0:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op dit scherm opent de filterknop een paneel met filteropties. In dit paneel staan knoppen die submenu's met selectievakjes openen, bijvoorbeeld de knop &quot;Type tassen&quot;. De niet-aangevinkte selectievakjes hebben een grijze (#A6A6A6) rand met een contrastverhouding van 2,4:1 tegen de witte achtergrond. Interface-elementen en betekenisvolle grafische elementen moeten minimaal 3,0:1 contrast hebben tegen aangrenzende kleuren, zodat slechtziende bezoekers ze kunnen herkennen en lokaliseren. Hetzelfde probleem doet zich voor op het scherm &quot;Instellingen&quot;. De schermen die vanuit &quot;Instellingen&quot; worden geopend, zoals &quot;Pushmeldingen&quot;, &quot;E-mailvoorkeuren&quot;, &quot;SMS-voorkeuren&quot; en &quot;Postvoorkeuren&quot;, bevatten selectievakjes. De niet-aangevinkte selectievakjes hebben een grijze rand met onvoldoende contrast tegen de witte achtergrond.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar invoervelden beginnen of eindigen. Ik verwacht dat knoppen en velden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg hier voor een minimaal contrast van 3,0:1. Pas de kleur van het element of de achtergrond aan. Doe dit voor elke status die informatie overbrengt (standaard, met focus, geselecteerd, aangevinkt) en in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#24 - Prijsschuifregelaar wordt niet als instelbaar bedieningselement aangeboden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm opent de filterknop een paneel met filteropties. In dit paneel opent &quot;Prijs&quot; het submenu. Het filter &quot;Prijs&quot; in dit submenu wordt gepresenteerd als een schuifregelaar met bereik, waarmee bezoekers een minimum- en maximumprijs kunnen kiezen. De schuifregelaar wordt echter niet juist aangeboden aan hulpsoftware. In plaats van als instelbaar bedieningselement, biedt VoiceOver alleen de waarden &quot;50, Statische tekst&quot; en &quot;750, Statische tekst&quot; aan. De schuifregelaar zelf wordt niet als interactief bedieningselement aangeboden, de huidige waarden zijn niet gekoppeld aan instelbare elementen, en bezoekers kunnen het geselecteerde prijsbereik niet wijzigen. Daardoor kunnen schermlezergebruikers het prijsfilter niet bedienen.</p>
+<figure class="screenshot">
+<img src="images/8.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet de prijsschuifregelaar als instelbaar bedieningselement met de huidige waarde worden aangeboden, zodat ik zelfstandig de minimum- en maximumprijs kan instellen en het prijsfilter kan gebruiken.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de prijsschuifregelaar als instelbaar bedieningselement aan hulpsoftware wordt aangeboden. Schermlezergebruikers moeten de huidige minimum- en maximumprijs kunnen vaststellen en beide waarden zelfstandig kunnen aanpassen met de standaard VoiceOver- en TalkBack-gebaren.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-productpagina-coach-brooklyn-39-schoudertas-van-leer">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-productpagina-coach-brooklyn-39-schoudertas-van-leer">08 Productpagina: Coach Brooklyn 39 schoudertas van leer <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Home-tab &gt; Dames &gt; sectie Damesmode merken &gt; Coach &gt; knop 'Brooklyn 39 schoudertas van leer'</p>
+<p>Dit scherm bevat toegankelijkheidsproblemen die al eerder in dit rapport zijn beschreven.</p>
+<div class="issue">
+<h3>#25 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de volgende teksten visueel opgemaakt als koppen, maar in de code is dat niet het geval. Ze worden niet als kop aangeboden aan hulpsoftware: &quot;Coach&quot;, &quot;Anderen bekeken ook&quot;, &quot;Laatst bekeken&quot; en &quot;Bekijk meer&quot;. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem doet zich voor bij &quot;Bekijk winkelvoorraad&quot; en &quot;Prijsinformatie&quot; in de bijbehorende panelen. In het paneel &quot;Prijsinformatie&quot; worden ook de teksten &quot;Vorige laagste prijs&quot; en &quot;Originele prijs&quot; niet als kop aangeboden. In de sectie die wordt geopend met de knop &quot;Samenstelling en specificaties&quot; worden ook de teksten &quot;Materiaal en Onderhoud&quot; en &quot;Specificaties&quot; niet als kop aangeboden. In de sectie die wordt geopend met de knop &quot;Bestellen en retourneren&quot; worden ook de teksten &quot;Bezorgen&quot; en &quot;Gratis retourneren&quot; niet als kop aangeboden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze juist aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. Op Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#26 - Naam van knop beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm opent de knop met het &quot;i&quot;-icoon naast &quot;Vorige laagste prijs&quot; het paneel &quot;Prijsinformatie&quot;. De toegankelijke naam is echter &quot;Propolis/16/Info&quot;, die het doel van de knop of de actie die hij uitvoert niet beschrijft. Daardoor kunnen schermlezergebruikers niet begrijpen wat er gebeurt als ze de knop activeren. De toegankelijke naam moet de functie van de knop duidelijk beschrijven, in plaats van een interne assetnaam of bestandsnaam aan te bieden.</p>
+<figure class="screenshot">
+<img src="images/9.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet elke knop een duidelijke, beschrijvende, toegankelijke naam hebben, zodat ik kan begrijpen wat er gebeurt als ik die activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef de knop een betekenisvolle toegankelijke naam met de native toegankelijkheids-API's van het platform. De toegankelijke naam moet de functie van de knop beschrijven, bijvoorbeeld &quot;Prijsinformatie&quot; of &quot;Show price information&quot;, in plaats van een interne assetnaam zoals &quot;Propolis/16/Info&quot; aan te bieden.</p>
+</div>
+<div class="issue">
+<h3>#27 - Gestructureerde tekst wordt als één element aangeboden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm opent de knop met het &quot;i&quot;-icoon naast &quot;Vorige laagste prijs&quot; het paneel &quot;Prijsinformatie&quot;. Dit paneel bevat gestructureerde content met meerdere alinea's en sectiekoppen. Deze content wordt echter als één statisch tekstelement aan hulpsoftware aangeboden. Daardoor horen schermlezergebruikers het hele tekstblok als één doorlopende aankondiging. Ze kunnen niet in kleinere logische secties door de content navigeren en kunnen niet dezelfde structuur waarnemen als die visueel wordt gepresenteerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet gestructureerde tekst als losse toegankelijkheidselementen worden aangeboden, zodat ik de content sectie voor sectie kan lezen en begrijpen in plaats van naar één lang tekstblok te luisteren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de content aan met losse elementen die de visuele structuur weerspiegelen. Koppen, alinea's en andere logische secties moeten elk als individueel element worden weergegeven, zodat schermlezergebruikers makkelijker door de content kunnen navigeren en die kunnen begrijpen.</p>
+</div>
+<div class="issue">
+<h3>#28 - Uit- en ingeklapte status wordt niet juist aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm openen en sluiten de knoppen &quot;Productbeschrijving&quot;, &quot;Samenstelling en specificaties&quot;, &quot;Pasvorm&quot; en vergelijkbare knoppen secties met content. Wanneer een sectie is uitgeklapt, kondigt VoiceOver de knop aan als &quot;Productbeschrijving, Knop, Geselecteerd&quot;. Het bedieningselement biedt echter niet zijn uit- of ingeklapte status aan. In plaats daarvan biedt het een geselecteerde status aan, die het gedrag van dit element niet juist beschrijft. Daardoor kunnen schermlezergebruikers niet betrouwbaar vaststellen of de sectie uit- of ingeklapt is.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moeten de knoppen aankondigen of hun bijbehorende sectie uit- of ingeklapt is, zodat ik weet of de content op dat moment zichtbaar is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de knop die de verborgen content uit- en inklapt, overbrengt of de bijbehorende sectie uit- of ingeklapt is, en dat deze status wordt bijgewerkt telkens wanneer het accordeon-onderdeel wordt geopend of gesloten.</p>
+</div>
+<div class="issue">
+<h3>#29 - Rol van kop ontbreekt in een accordeon</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm openen de knoppen &quot;Productbeschrijving&quot;, &quot;Samenstelling en specificaties&quot;, &quot;Pasvorm&quot; en vergelijkbare knoppen secties met verborgen content. De teksten op de knoppen fungeren visueel als sectiekoppen, omdat ze de content die volgt inleiden en ordenen. Deze teksten worden echter alleen als knop aan hulpsoftware aangeboden en niet als kop. Daardoor kunnen schermlezergebruikers niet dezelfde contentstructuur waarnemen als ziende gebruikers en kunnen ze niet rechtstreeks tussen deze secties navigeren met de Headings-rotor (VoiceOver) of kop-navigatie in TalkBack.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moeten teksten die secties met content inleiden ook als koppen worden aangeboden, zodat ik de paginastructuur kan begrijpen en snel tussen secties kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer de sectie-bedieningselementen als koppen met de native toegankelijkheids-API's van het platform, en behoud de knopfunctionaliteit. Op iOS voeg je de Header accessibility trait toe naast de Button trait. Op Android markeer je het bedieningselement als toegankelijkheidskop en houd je het klikbaar. Zo herkent hulpsoftware deze bedieningselementen als zowel koppen als interactieve elementen.</p>
+</div>
+<div class="issue">
+<h3>#30 - Productafbeeldingen die de galerij op volledig scherm openen, worden niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm fungeren de productafbeeldingen bovenaan als knoppen die de productgalerij op volledig scherm openen. Deze afbeeldingen worden echter niet aangeboden aan hulpsoftware. Bij navigatie met VoiceOver krijgen de productafbeeldingen geen toegankelijkheidsfocus en worden ze niet aangekondigd. Daardoor kunnen schermlezergebruikers niet ontdekken dat de productafbeeldingen bestaan, kunnen ze niet begrijpen dat ze geactiveerd kunnen worden, en kunnen ze de productgalerij niet openen. Een vergelijkbaar probleem doet zich voor in de galerijweergave op volledig scherm. De rij miniaturen onderaan het scherm fungeert als bedieningselementen om tussen productafbeeldingen te navigeren. Deze miniatuur-bedieningselementen worden echter ook niet aangeboden aan hulpsoftware. Schermlezergebruikers kunnen er niet bij om vast te stellen welke afbeelding op dat moment getoond wordt, of om rechtstreeks naar een andere afbeelding in de galerij te navigeren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moeten productafbeeldingen die een galerij openen worden opgenomen in de toegankelijkheids-navigatievolgorde en als interactieve bedieningselementen worden aangeboden, zodat ik ze kan ontdekken, hun doel kan begrijpen en de galerij zelfstandig kan openen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de productafbeeldingen als toegankelijke interactieve bedieningselementen aan hulpsoftware aan. Elke afbeelding die de galerij opent, moet worden opgenomen in de navigatievolgorde, een passende interactieve rol zoals <code>button</code> aanbieden, een betekenisvolle toegankelijke naam hebben die zowel de afbeelding als de actie beschrijft, en bedienbaar zijn met standaard VoiceOver- en TalkBack-interacties.</p>
+</div>
+<div class="issue">
+<h3>#31 - Relatie tussen bezorgopties en kosten wordt niet programmatisch overgebracht</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm wordt in de sectie die met &quot;Bestellen en retourneren&quot; wordt geopend, de informatie onder &quot;Bezorgen&quot; en &quot;Retourmogelijkheden&quot; visueel in een tabelvorm gepresenteerd, waarbij elke bezorg- of retouroptie gekoppeld is aan bijbehorende informatie zoals bezorgtijden en kosten. Deze relatie wordt echter niet overgebracht aan hulpsoftware. In plaats daarvan kondigt VoiceOver de content aan als een reeks losse statische tekstelementen. Het leest bijvoorbeeld: &quot;Bezorgen op maandag t/m vrijdag&quot;, dan &quot;Kosten&quot;, dan &quot;08:30-22:00&quot;, en ten slotte &quot;3,95&quot;. Daardoor kunnen schermlezergebruikers niet betrouwbaar vaststellen welke kosten en bezorgtijd bij welke bezorgoptie horen.</p>
+<figure class="screenshot">
+<img src="images/10.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, moet de relatie tussen bezorgopties, bezorgtijden en kosten programmatisch worden overgebracht, zodat ik kan begrijpen welke informatie bij elkaar hoort.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de bezorg- en retourinformatie zo aan dat de relaties tussen elke optie, de bezorgtijd en de kosten programmatisch worden overgebracht. Als de informatie tabeldata is, bied die dan aan met de native toegankelijkheids-API's van het platform voor tabellen. Groepeer anders de bij elkaar horende informatie in één element, zodat elke bezorg- of retouroptie samen met de bijbehorende bezorgtijd en kosten wordt aangekondigd.</p>
+</div>
+<div class="issue">
+<h3>#32 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm verschijnt het statusbericht &quot;Artikel toegevoegd aan winkelmand&quot; wanneer het artikel aan de winkelmand wordt toegevoegd, maar dit wordt niet door schermlezers aangekondigd. Wanneer informatie op het scherm verandert, zoals een bevestiging, een foutmelding of een laadstatus, moeten schermlezergebruikers een aankondiging krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen. Hetzelfde probleem doet zich voor op het scherm &quot;Verlanglijst&quot;.</p>
+<figure class="screenshot">
+<img src="images/11.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de website met een schermlezer. Wanneer er een statusbericht op de pagina verschijnt, kondigt mijn schermlezer het niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaartoe hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stuur statuswijzigingen als live aankondigingen naar hulpsoftware, zonder de focus te verplaatsen. Op iOS plaats je een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> voor grotere wijzigingen). Op Android gebruik je <code>View.announceForAccessibility(...)</code> of stel je de status-container in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor urgente berichten). De bezoeker blijft waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-beleef-de-bijenkorf-5x-dit-is-er-deze-week-te-doen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-beleef-de-bijenkorf-5x-dit-is-er-deze-week-te-doen">09 Beleef de Bijenkorf: 5x dit is er deze week te doen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Home-tab &gt; Dames &gt; sectie Inspiratie &gt; knop &quot;Beleef de Bijenkorf: 5x dit is er deze week te doen&quot;</p>
+<p>Dit scherm bevat toegankelijkheidsproblemen die al eerder in dit rapport zijn beschreven.</p>
+<div class="issue">
+<h3>#33 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de volgende teksten visueel opgemaakt als koppen, maar in de code is dat niet het geval: &quot;Inspiratie&quot;, &quot;Beleef de Bijenkorf: 5x dit is er deze week te doen,&quot;, &quot;Björn Borg Rooftop Rally&quot; en andere. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>; gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-shoppen-zoeken">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-shoppen-zoeken">10 Shoppen - Zoeken <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Shoppen-tab</p>
+<div class="issue">
+<h3>#34 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de teksten in de submenu's visueel opgemaakt als koppen, maar in de code is dat niet het geval. In het submenu &quot;Sale&quot; met het filter &quot;Dames&quot; gaat het bijvoorbeeld om deze teksten: &quot;Sale&quot;, &quot;Categorieën&quot;, &quot;Bestsellers in de Sale&quot;, &quot;Merken&quot; en &quot;Populaire categorieën&quot;. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>; gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-verlanglijst">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-verlanglijst">11 Verlanglijst <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Verlanglijst</p>
+<p>Dit scherm bevat toegankelijkheidsproblemen die al eerder in dit rapport zijn beschreven.</p>
+<div class="issue">
+<h3>#35 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst &quot;Verlanglijst&quot; visueel opgemaakt als kop, maar in de code is dat niet het geval. In het paneel &quot;Selecteer maat&quot; is ook de tekst &quot;Selecteer maat&quot; niet als kop gemarkeerd. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>; gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#36 - Knoppen met dezelfde toegankelijke naam zijn niet van elkaar te onderscheiden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm hebben meerdere &quot;X&quot;-knoppen dezelfde toegankelijke naam &quot;Verwijderen van verlanglijst&quot; wanneer er meerdere items zijn toegevoegd. Deze knoppen voeren weliswaar hetzelfde soort actie uit, maar ze gelden voor verschillende producten. Omdat de toegankelijke namen het bijbehorende product niet benoemen, kunnen schermlezergebruikers de knoppen niet van elkaar onderscheiden en niet bepalen welk product aan de verlanglijst wordt toegevoegd of eruit wordt verwijderd.</p>
+<p>Hetzelfde probleem doet zich voor bij andere knoppen op dit scherm. Zie de knoppen met een envelop-icoon die dezelfde toegankelijke naam hebben: &quot;Mail bij nieuwe voorraad&quot;, en de knoppen met een tas-icoon die dezelfde toegankelijke naam hebben: &quot;In winkelmand&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik nodig dat elke &quot;X&quot;-knop het bijbehorende product benoemt, zodat ik precies weet welk item van mijn verlanglijst wordt verwijderd voordat ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de toegankelijke naam van elke &quot;X&quot;-knop aan, zodat die zowel de actie als het bijbehorende product uniek benoemt. Gebruik bijvoorbeeld in plaats van &quot;Verwijderen van verlanglijst&quot; een toegankelijke naam zoals &quot;Verwijderen van verlanglijst: NikeSKIMS Matte trainings crop top met stretch&quot;.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-winkelmand">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-winkelmand">12 Winkelmand <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Winkelmand</p>
+<div class="issue">
+<h3>#37 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst &quot;Winkelmand&quot; visueel opgemaakt als kop, maar in de code is dat niet het geval. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<p>Hetzelfde probleem doet zich voor bij de teksten &quot;Selecteer uw Aantal&quot; en &quot;Selecteer uw kleur&quot; in de bijbehorende panelen die openen via de pijl-knoppen in de itemsecties onder &quot;Aantal&quot; en &quot;Kleur&quot;.</p>
+<p>Ook de knop &quot;Laten inpakken&quot; opent een bijbehorend paneel. In dat paneel zijn de volgende teksten niet als kop gemarkeerd: &quot;Laten inpakken&quot;, &quot;De inpakkosten&quot;, &quot;Ergens anders laten bezorgen?&quot;, &quot;Stap 1&quot; en andere.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>; gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#38 - Een decoratieve afbeelding wordt niet verborgen voor schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op dit scherm wordt, wanneer de winkelmand leeg is, een decoratieve afbeelding aangeboden aan hulpsoftware met de toegankelijke naam &quot;basket-placeholder&quot;. Decoratieve afbeeldingen brengen geen informatie over en voeren geen actie uit, en horen niet aangeboden te worden aan schermlezers. Het aankondigen van decoratieve content voegt onnodige ruis toe en maakt het voor bezoekers lastiger om zich op betekenisvolle informatie te richten.</p>
+<p>Hetzelfde probleem doet zich voor wanneer de winkelmand items bevat. Zie het vrachtwagen-icoon vóór een tekst zoals &quot;Nu besteld, dinsdag 30 juni in huis&quot; met de toegankelijke naam &quot;truck&quot;, en het cadeau-icoon boven de tekst &quot;Laat je aankoop inpakken en voeg er desgewenst een persoonlijk bericht toe.&quot; met de toegankelijke naam &quot;gift&quot;.</p>
+<p>Daarnaast heeft het decoratieve &quot;%&quot;-icoon geen toegankelijk label en wordt het ook niet verborgen voor de schermlezer.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, verwacht ik dat decoratieve afbeeldingen worden genegeerd, zodat ik alleen betekenisvolle inhoud en bedieningselementen hoor. Wanneer decoratieve afbeeldingen worden aangekondigd, onderbreken ze de leesstroom en wordt navigeren minder efficiënt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Verberg decoratieve afbeeldingen voor hulpsoftware, zodat ze niet in de accessibility tree terechtkomen. In iOS UIKit stel je <code>isAccessibilityElement = false</code> in voor decoratieve <code>UIImageView</code>-elementen; in SwiftUI pas je <code>.accessibilityHidden(true)</code> toe op decoratieve afbeeldingen.</p>
+<p>Stel op Android <code>android:importantForAccessibility=&quot;no&quot;</code> in (of <code>&quot;noHideDescendants&quot;</code> waar passend), of zorg er op een andere manier voor dat de decoratieve view niet als accessibility-element wordt aangeboden.</p>
+<p>Alleen informatieve afbeeldingen horen aan hulpsoftware aangeboden te worden, voorzien van een betekenisvolle toegankelijke naam.</p>
+</div>
+<div class="issue">
+<h3>#39 - Productinformatie heeft in de code niet dezelfde structuur als visueel getoond</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm bevat elk productoverzicht gestructureerde informatie, waaronder het merk, de productnaam, de huidige prijs, de vorige prijs, de originele prijs en de korting. Visueel worden deze stukken informatie als losse elementen met een duidelijke hiërarchie getoond, bijvoorbeeld &quot;385&quot;, daarna &quot;Coach Brooklyn 39 schoudertas van leer&quot;, daarna &quot;Vorige laagste prijs: 475&quot; en &quot;Originele prijs: 550&quot;.</p>
+<p>Wanneer je deze informatie met een schermlezer doorloopt, worden al deze teksten echter samen als één doorlopend blok aangekondigd in plaats van als losse stukken informatie. Daardoor kunnen bezoekers niet afzonderlijk door het merk, de productnaam, de prijzen en de korting navigeren en nemen ze niet dezelfde structuur waar als die visueel wordt getoond.</p>
+<figure class="screenshot">
+<img src="images/12.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik nodig dat gestructureerde productinformatie wordt aangekondigd in dezelfde logische secties waarin ze visueel wordt getoond, zodat ik elk stuk informatie afzonderlijk kan doorlopen en begrijpen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de productinformatie aan met losse elementen die de visuele structuur weerspiegelen. Het merk, de productnaam, de huidige prijs, de vorige prijs, de originele prijs, de korting en andere betekenisvolle stukken informatie horen afzonderlijk en in een logische leesvolgorde aangekondigd te worden. Zo kunnen schermlezergebruikers de productinformatie op dezelfde manier doorlopen en begrijpen als ze visueel wordt getoond.</p>
+</div>
+<div class="issue">
+<h3>#40 - Knoppen met dezelfde toegankelijke naam zijn niet van elkaar te onderscheiden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm worden, wanneer er meerdere items zijn toegevoegd, meerdere knoppen met dezelfde teksten getoond: &quot;Verwijder&quot; en &quot;Verplaats naar verlanglijst&quot;. Ze hebben dezelfde toegankelijke namen. Deze knoppen voeren weliswaar hetzelfde soort actie uit, maar ze gelden voor verschillende producten. Omdat de toegankelijke namen het bijbehorende product niet benoemen, kunnen schermlezergebruikers de knoppen niet van elkaar onderscheiden en niet bepalen op welk product ze betrekking hebben.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik nodig dat elke knop het bijbehorende product benoemt, zodat ik bijvoorbeeld precies weet welk item uit de winkelmand wordt verwijderd voordat ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de toegankelijke naam van elke knop aan, zodat die zowel de actie als het bijbehorende product uniek benoemt.</p>
+</div>
+<div class="issue">
+<h3>#41 - Element mist een rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm bevatten de itemsecties, wanneer er items aan de winkelmand zijn toegevoegd, de pijl-iconen die panelen openen met keuzeopties, bijvoorbeeld onder &quot;Aantal&quot; of &quot;Kleur&quot;. Deze elementen bieden geen rol (of accessibility trait) aan hulpsoftware. Schermlezergebruikers horen het label van het element, maar komen niet te weten of het een knop, een link, een selectievakje, een kop of iets anders is, en kunnen dus niet voorspellen wat er gebeurt wanneer ze het activeren.</p>
+<figure class="screenshot">
+<img src="images/13.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de website met een schermlezer. Wanneer ik een element zonder rol tegenkom, weet ik niet wat het doet. Ik verwacht dat mijn schermlezer me vertelt of het een knop, link of ander element is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel een rol of trait in op elk interactief en structureel element. Gebruik op iOS <code>accessibilityTraits</code> (bijvoorbeeld <code>.button</code>, <code>.link</code>, <code>.header</code>, <code>.image</code>) of in SwiftUI <code>.accessibilityAddTraits(...)</code>. Gebruik op Android native componenten die al een rol aanbieden (<code>Button</code>, <code>Switch</code>, <code>CheckBox</code>), of stel op custom componenten de rol in via <code>AccessibilityNodeInfoCompat.setRoleDescription(...)</code> of door <code>View</code> te subclasseren en <code>onInitializeAccessibilityNodeInfo</code> te overschrijven.</p>
+</div>
+<div class="issue">
+<h3>#42 - Extern toetsenbord kan sommige bedieningselementen niet bereiken of bedienen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op dit scherm bevatten de itemsecties, wanneer er items aan de winkelmand zijn toegevoegd, de pijl-iconen die panelen openen met keuzeopties, bijvoorbeeld onder &quot;Aantal&quot; of &quot;Kleur&quot;. Deze bedieningselementen zijn niet te bereiken met Tab/Shift-Tab, niet te activeren met Space/Enter en ook niet anderszins te bedienen met een extern toetsenbord. Bezoekers die niet via touch kunnen werken, omdat ze afhankelijk zijn van Full Keyboard Access (iOS), Switch Access (Android) of een extern toetsenbord, worden buitengesloten van de functionaliteit.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de website met een toetsenbord. Wanneer ik door de pagina navigeer, zijn sommige knoppen of links niet bereikbaar of bruikbaar met mijn toetsenbord. Ik verwacht dat ik elk onderdeel van de pagina alleen met mijn toetsenbord kan bedienen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk interactief element toetsenbordfocus kan krijgen en met het toetsenbord te bedienen is. Hanteer op iOS Full Keyboard Access: standaard UIKit/SwiftUI-bedieningselementen werken meteen; implementeer voor custom bedieningselementen <code>UIFocusEnvironment</code> en verwerk toetscommando's (<code>UIKeyCommand</code>). Stel op Android <code>android:focusable=&quot;true&quot;</code> en <code>android:focusableInTouchMode=&quot;true&quot;</code> in (waar passend), en verwerk <code>KeyEvent.KEYCODE_ENTER</code> / <code>KEYCODE_DPAD_CENTER</code>. Test elk scherm met een aangesloten extern toetsenbord en zonder touch.</p>
+</div>
+<div class="issue">
+<h3>#43 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.2.4.6</span>  
+</div>
+<p>Op dit scherm bevatten de itemsecties, wanneer er items aan de winkelmand zijn toegevoegd, de pijl-iconen onder &quot;Aantal&quot;, &quot;Kleur&quot; en andere. Deze elementen openen panelen waarmee bezoekers de bijbehorende optie kunnen wijzigen.</p>
+<p>Hun toegankelijke naam is echter &quot;icon_arrow_down_gray_12x12&quot;, die het doel van het bedieningselement of de uit te voeren actie niet beschrijft. In plaats daarvan bevat de naam een interne assetnaam die voor schermlezergebruikers betekenisloos is.</p>
+<p>Daardoor kunnen schermlezergebruikers niet begrijpen wat het activeren van deze bedieningselementen doet. De toegankelijke naam zou duidelijk de actie moeten beschrijven van het openen van het bijbehorende keuzepaneel.</p>
+<p>Een vergelijkbaar probleem doet zich voor bij andere knoppen op dit scherm. Zie de &quot;X&quot;-knop in het paneel dat opent via de knop &quot;Laten inpakken&quot;. De toegankelijke naam is &quot;foundation general close&quot;. In het paneel &quot;Laten inpakken&quot; dat opent via de knop &quot;Laten inpakken&quot; hebben de keuzerondjes dezelfde niet-beschrijvende toegankelijke naam: &quot;CircleEmpty&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik nodig dat elke knop een duidelijke en beschrijvende toegankelijke naam heeft, zodat ik begrijp wat er gebeurt wanneer ik die activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk bedieningselement een betekenisvolle toegankelijke naam via de native accessibility-API's van het platform. De toegankelijke naam zou het doel van het bedieningselement of de uit te voeren actie moeten beschrijven, bijvoorbeeld &quot;Aantal wijzigen&quot;, &quot;Aantal selecteren&quot;, &quot;Kleur wijzigen&quot; of &quot;Kleur selecteren&quot;, in plaats van een interne assetnaam zoals &quot;icon_arrow_down_gray_12x12&quot;.</p>
+</div>
+<div class="issue">
+<h3>#44 - Toegankelijke naam bevat het zichtbare label niet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.5.3</span>  
+</div>
+<p>Op dit scherm heeft, in het paneel &quot;Laten inpakken&quot; dat opent via de knop &quot;Laten inpakken&quot;, de knop met het zichtbare tekstlabel &quot;Annuleer&quot; een toegankelijke naam die die zichtbare tekst niet bevat: &quot;Bewaar&quot;. Gebruikers van Voice Control en Voice Access, die het zichtbare label uitspreken om een bedieningselement te activeren, kunnen het niet aansturen. Schermlezergebruikers horen bovendien een verschil tussen wat ze zien en wat ze horen.</p>
+<figure class="screenshot">
+<img src="images/14.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de website met spraakinvoer. Wanneer ik de naam van een knop hardop uitspreek, gebeurt er niets, omdat de onderliggende naam anders is. Ik verwacht dat ik elke knop kan activeren door de tekst uit te spreken die ik op het scherm zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat de toegankelijke naam van elk bedieningselement het zichtbare label bevat, in dezelfde woordvolgorde. Begin op iOS, als je <code>accessibilityLabel</code> gebruikt, met de zichtbare tekst (&quot;Bewaar, concept&quot; voor een Bewaar-knop met een hint &quot;concept&quot;). Geef in SwiftUI de voorkeur aan <code>Button(&quot;Bewaar&quot;) { ... }</code> boven custom labels. Stel op Android de <code>contentDescription</code> zo in dat die de zichtbare tekst bevat, of laat de inhoud van een <code>TextView</code> automatisch de naam worden. Heb je extra context voor schermlezers nodig, voeg die dan toe ná het zichtbare label, vervang het nooit.</p>
+</div>
+<div class="issue">
+<h3>#45 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm opent de knop &quot;Cadeaucard of voucher toevoegen&quot; een paneel &quot;Cadeaucard of voucher toevoegen&quot;. Wanneer in dat paneel het formulier met een onjuiste code wordt verzonden, verschijnt er een foutmelding, zoals &quot;Helaas, het toevoegen of verwijderen van een voucher/cadeaucard is mislukt. Probeer het later nog eens.&quot;. Dit is een statusbericht, maar het wordt niet door schermlezers aangekondigd. Wanneer informatie op het scherm verandert, een bevestiging, een fout, een laadstatus, horen schermlezergebruikers een aankondiging te krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de website met een schermlezer. Wanneer er een statusbericht op de pagina verschijnt, kondigt mijn schermlezer het niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaartoe hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stuur statuswijzigingen als live-aankondigingen naar hulpsoftware, zonder de focus te verplaatsen. Plaats op iOS een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> bij grotere wijzigingen). Gebruik op Android <code>View.announceForAccessibility(...)</code> of stel de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor dringende berichten). De bezoeker blijft waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="13-checkout">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-checkout">13 Checkout <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Winkelmand-tab &gt; knop &quot;Bestellen&quot;</p>
+<div class="issue">
+<h3>#46 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien de teksten &quot;Bezorgmoment&quot;, &quot;Artikelen (1)&quot; en &quot;Factuuradres&quot; er visueel uit als kop, maar worden ze niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem doet zich voor bij andere teksten. De knop &quot;Adres toevoegen&quot; opent een paneel &quot;Bezorgadres&quot;. De tekst &quot;Bezorgadres&quot; wordt niet als kop aangeboden. In het paneel &quot;Factuuradres&quot;, dat opent met de knop &quot;Wijzig&quot; in de sectie &quot;Factuuradres&quot;, wordt de tekst &quot;Factuuradres&quot; ook niet als kop aangeboden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer en navigeer op koppen om de structuur van het scherm te begrijpen en snel tussen secties te springen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als kop, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>, in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#47 - Voortgangsindicator van de checkout wordt niet correct doorgegeven aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm staat bovenaan een voortgangsindicator voor de checkout. Visueel bestaat die uit drie verbonden stappen: &quot;Bezorging&quot;, &quot;Betaling&quot; en &quot;Bevestiging&quot;, waarbij de huidige stap is gemarkeerd. Bij navigatie met een schermlezer worden alleen de drie staplabels aangekondigd. Het verband tussen deze labels als één voortgangsindicator wordt niet overgebracht, en ook de huidige stap wordt niet aangeduid. Daardoor horen schermlezergebruikers drie losse tekstelementen in plaats van een gestructureerde voortgangsindicator die de voortgang door het checkoutproces laat zien. Hetzelfde probleem doet zich voor bij alle stappen binnen het checkoutproces.</p>
+<figure class="screenshot">
+<img src="images/15.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Ik heb nodig dat de voortgangsindicator van de checkout overbrengt dat de stappen bij één reeks horen en dat de huidige stap wordt aangeduid, zodat ik dezelfde informatie over de voortgang krijg als ziende bezoekers.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de voortgangsindicator van de checkout aan via de native accessibility-API's van het platform. Zorg dat hulpsoftware de stappen herkent als onderdeel van één voortgangsindicator, dat de volgorde behouden blijft en dat duidelijk wordt welke stap op dat moment actief is. Schermlezergebruikers horen zo dezelfde informatie over de voortgang van de checkout als visueel wordt getoond.</p>
+</div>
+<div class="issue">
+<h3>#48 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm staat bovenaan een voortgangsindicator die de huidige positie van de bezoeker in het checkoutproces toont. De lichtgrijze (#A0A0A0) teksten &quot;Betaling&quot; en &quot;Bevestiging&quot; hebben een contrastverhouding van 2,6:1 tegen de witte achtergrond. Hetzelfde probleem doet zich voor op de stap &quot;Betalen&quot; bij de tekst &quot;Bevestiging&quot;.</p>
+<p>Een vergelijkbaar probleem doet zich voor bij de knopteksten &quot;Mijn adres&quot; en &quot;Ophalen&quot; wanneer ze niet geselecteerd zijn. De grijze (#AEAEAE) tekst op de witte achtergrond heeft een contrastverhouding van 2,2:1.</p>
+<p>Normale tekst moet een contrastverhouding van minimaal 4,5:1 hebben, en grote tekst (18pt en groter, of 14pt vet en groter) een contrastverhouding van minimaal 3,0:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik tekst lees die nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur of beide aan, zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrast checker en verifieer het voor elke status waarin de tekst voorkomt (standaard, uitgeschakeld, over afbeeldingen, op gekleurde achtergronden) en in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#49 - Contrast UI-element lager dan 3,0:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op dit scherm staat bovenaan een voortgangsindicator die de huidige positie van de bezoeker in het checkoutproces toont. De grijze (#A7A7A7) stippen op deze voortgangsindicator hebben een contrastverhouding van 2,4:1 tegen de witte achtergrond. De oranje (#F6A801) stip die de huidige stap aangeeft, heeft een contrastverhouding van 2,0:1 tegen de witte achtergrond. Hetzelfde probleem doet zich voor op de stap &quot;Betalen&quot;. Interface-elementen en betekenisvolle grafische elementen moeten minimaal 3,0:1 contrast hebben tegen aangrenzende kleuren, zodat slechtziende bezoekers ze kunnen herkennen en lokaliseren.</p>
+<p>Een vergelijkbaar probleem doet zich voor bij de toggle-knop &quot;Bij afwezigheid bij de buren afgeven&quot; in de sectie &quot;Mijn adres&quot;. In de aan-status staat de witte toggle op de oranje achtergrond. Hetzelfde doet zich voor op de stap &quot;Betalen&quot;. Wanneer de betaalmethode &quot;Creditcard / debitcard&quot; is, geldt dit voor de toggle-knop naast &quot;Onthoud deze gegevens&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar invoervelden beginnen of eindigen. Ik verwacht dat knoppen en velden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de kleur van het element of de achtergrond aan zodat de contrastverhouding minimaal 3,0:1 is. Doe dit voor elke status die informatie overbrengt (standaard, met focus, geselecteerd, aangevinkt) en in zowel light- als dark mode. Controleer de verhouding met een contrast checker.</p>
+</div>
+<div class="issue">
+<h3>#50 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6, 2.5.3</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6, 11.2.5.3</span>  
+</div>
+<p>Op dit scherm heeft het keuzerondje naast het adres in de sectie &quot;Mijn adres&quot; de toegankelijke naam &quot;CircleFilled&quot;, die niet beschrijft wat het bedieningselement doet of welke actie het uitvoert. Daardoor kunnen schermlezergebruikers niet begrijpen wat er gebeurt als ze deze bedieningselementen activeren. Bovendien bevat de toegankelijke naam van de knop niet de zichtbare tekst. Gebruikers van Voice Control en Voice Access, die de zichtbare tekst uitspreken om een bedieningselement te activeren, kunnen het niet aansturen. Ook schermlezergebruikers ervaren een verschil tussen wat ze zien en wat ze horen.</p>
+<p>Een vergelijkbaar probleem doet zich voor op de stap &quot;Betalen&quot;. In de sectie &quot;Betalen&quot; opent de knop met de betaalmethode en een pijl-icoon het paneel &quot;Betalen&quot; met betaalopties. Dit paneel bevat een &quot;X&quot;-knop met een niet-beschrijvende toegankelijke naam: &quot;0PatternsIconsGeneralIconClose&quot;. Wanneer de betaalmethode &quot;Creditcard / debitcard&quot; is en de bezoeker het formulier met onjuiste gegevens verzendt, bevatten de invoervelden &quot;X&quot;-knoppen met dezelfde nietszeggende toegankelijke namen: &quot;iconRemoveBlack&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Ik heb nodig dat elke knop een duidelijke en beschrijvende toegankelijke naam heeft, zodat ik begrijp wat er gebeurt als ik die activeer. Ik gebruik de app ook met spraakbediening. Wanneer ik de naam van een knop hardop uitspreek, gebeurt er niets, omdat de onderliggende naam anders is. Ik verwacht elke knop te kunnen activeren door de tekst uit te spreken die ik op het scherm zie.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk bedieningselement een betekenisvolle toegankelijke naam via de native accessibility-API's van het platform. De toegankelijke naam beschrijft het doel van het bedieningselement of de actie die het uitvoert. Zorg dat de toegankelijke naam van elk bedieningselement het zichtbare label bevat, in dezelfde woordvolgorde.</p>
+</div>
+<div class="issue">
+<h3>#51 - Element mist een toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.5.3, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.2.5.3, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm heeft de toggle-knop &quot;Bij afwezigheid bij de buren afgeven&quot; in de sectie &quot;Mijn adres&quot; geen toegankelijke naam. De schermlezer kondigt alleen de rol aan, maar geeft geen informatie over wat het element is of doet. Hetzelfde probleem doet zich voor op de stap &quot;Betalen&quot;. Wanneer de betaalmethode &quot;Creditcard / debitcard&quot; is, geldt dit voor de toggle-knop naast &quot;Onthoud deze gegevens&quot;.</p>
+<figure class="screenshot">
+<img src="images/16.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik een knop of link zonder naam tegenkom, hoor ik alleen 'knop' of 'link' zonder context. Ik verwacht dat elk element een duidelijke naam heeft die het doel ervan uitlegt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Voeg een toegankelijke naam toe aan elk interactief element. In iOS stel je <code>accessibilityLabel</code> in of vertrouw je op de zichtbare titel van een standaard control. In Android stel je <code>contentDescription</code> in of zorg je dat de zichtbare tekst van het element als naam wordt gebruikt. De naam beschrijft beknopt het doel van het element, niet het uiterlijk, en komt overeen met het zichtbare label als dat er is, zodat gebruikers van Voice Control en Voice Access het kunnen activeren door de naam uit te spreken.</p>
+</div>
+<div class="issue">
+<h3>#52 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm opent de knop &quot;Adres toevoegen&quot; in de sectie &quot;Bezorgadres&quot; een paneel &quot;Bezorgadres&quot;. Wanneer in dit paneel het invoerveld &quot;Postcode&quot; met een onjuiste waarde wordt verzonden, verschijnt er onder het veld een foutmelding, zoals &quot;Gebruik het juiste format voor de postcode (1111AA)&quot;. Dit is een statusbericht, maar het wordt niet aangekondigd door schermlezers. Wanneer informatie op het scherm wijzigt, zoals een bevestiging, een fout of een laadstatus, moeten schermlezergebruikers een aankondiging krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer er een statusbericht op het scherm verschijnt, kondigt mijn schermlezer dit niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaar hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef statuswijzigingen aan hulpsoftware door als live-aankondiging, zonder de focus te verplaatsen. In iOS post je een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> voor grotere wijzigingen). In Android gebruik je <code>View.announceForAccessibility(...)</code> of stel je de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor dringende berichten). De bezoeker blijft zo waar die is en hoort de update op de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#53 - Selecteerbare bezorgopties worden niet als interactieve bedieningselementen aangeboden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm worden in de sectie &quot;Mijn adres&quot; de beschikbare bezorgopties onder &quot;Bezorgmoment&quot; gepresenteerd als selecteerbare kaarten. Door op zo'n kaart te tikken, selecteer je de bijbehorende bezorgdatum en -tijd. Deze elementen worden echter aan hulpsoftware aangeboden als statische tekst in plaats van als interactieve bedieningselementen. Daardoor horen schermlezergebruikers wel de bezorginformatie, maar krijgen ze niet te horen dat de elementen geactiveerd kunnen worden om een bezorgoptie te selecteren. Ze kunnen ook niet vaststellen welke bezorgoptie op dat moment geselecteerd is.</p>
+<figure class="screenshot">
+<img src="images/17.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Ik heb nodig dat bezorgopties als selecteerbare bedieningselementen worden aangeboden en aankondigen of ze geselecteerd zijn, zodat ik met vertrouwen mijn voorkeursmoment voor bezorging kan kiezen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Bied de bezorgopties aan via de native accessibility-API's van het platform als een groep met enkelvoudige selectie. Omdat er maar één bezorgoptie tegelijk geselecteerd kan worden, bied je elke optie aan als een selecteerbaar bedieningselement dat de huidige status (geselecteerd of niet geselecteerd) programmatisch overbrengt. Elke bezorgoptie heeft een betekenisvolle toegankelijke naam die de bezorgdatum, bezorgtijd en kosten bevat. Schermlezergebruikers kunnen zo naar elke optie navigeren, vaststellen of die geselecteerd is en die activeren met de standaard gebaren van VoiceOver of TalkBack om een andere bezorgoptie te kiezen.</p>
+</div>
+<div class="issue">
+<h3>#54 - Tekst kan niet worden geschaald</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.4</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<p>Wanneer je in de telefooninstellingen een grotere tekstgrootte kiest (voorbij de laatste optie), schaalt niet alle tekst in de app correct mee. Hetzelfde probleem doet zich voor op de stap &quot;Betalen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik de tekstgrootte in mijn telefooninstellingen vergroot, verandert de tekst in de app niet. Ik verwacht dat alle tekst in de app mijn gekozen instelling voor tekstgrootte volgt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat alle tekst kan worden vergroot.</p>
+</div>
+<div class="issue">
+<h3>#55 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien de teksten &quot;Bezorgen&quot;, &quot;Cadeaucard&quot;, &quot;Betalen&quot; en &quot;Artikelen (1)&quot; er visueel uit als kop, maar worden ze niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem doet zich voor bij andere teksten. Onder &quot;Betalen&quot; staat een knop die het paneel met betaalopties opent. De tekst &quot;Betalen&quot; in dit paneel wordt niet als kop aangeboden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer en navigeer op koppen om de structuur van het scherm te begrijpen en snel tussen secties te springen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als kop, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>, in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#56 - Element mist een rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm geeft het interactieve element met het &quot;+&quot;-icoon naast &quot;Voeg cadeaucard toe&quot; in de sectie &quot;Cadeaucard&quot; geen rol (of accessibility trait) door aan hulpsoftware. Schermlezergebruikers horen het label van het element, maar komen niet te weten of het een knop, link, selectievakje, kop of iets anders is. Daardoor kunnen ze niet voorspellen wat er gebeurt als ze het activeren. Hetzelfde probleem doet zich voor in de sectie &quot;Betalen&quot; bij het interactieve element met een pijl-icoon dat het paneel met betaalopties opent. In het paneel met betaalopties doet hetzelfde probleem zich voor bij de betaalopties.</p>
+<figure class="screenshot">
+<img src="images/18.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik een element zonder rol tegenkom, weet ik niet wat het doet. Ik verwacht dat mijn schermlezer mij vertelt of het een knop, link of ander element is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel een rol of trait in op elk interactief en structureel element. In iOS gebruik je <code>accessibilityTraits</code> (bijvoorbeeld <code>.button</code>, <code>.link</code>, <code>.header</code>, <code>.image</code>) of de SwiftUI-modifier <code>.accessibilityAddTraits(...)</code>. In Android gebruik je native componenten die al een rol doorgeven (<code>Button</code>, <code>Switch</code>, <code>CheckBox</code>), of stel je bij eigen componenten de rol in via <code>AccessibilityNodeInfoCompat.setRoleDescription(...)</code> of door <code>View</code> te subclassen en <code>onInitializeAccessibilityNodeInfo</code> te overschrijven.</p>
+</div>
+<div class="issue">
+<h3>#57 - Extern toetsenbord kan sommige bedieningselementen niet bereiken of bedienen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.2.1.1</span>  
+</div>
+<p>Op dit scherm kan het interactieve element met het &quot;+&quot;-icoon naast &quot;Voeg cadeaucard toe&quot; in de sectie &quot;Cadeaucard&quot; niet worden bereikt met Tab/Shift-Tab, niet worden geactiveerd met Space/Enter en ook niet anderszins worden bediend met een extern toetsenbord. Bezoekers die geen touch kunnen gebruiken, omdat ze afhankelijk zijn van Full Keyboard Access (iOS), Switch Access (Android) of een extern toetsenbord, kunnen deze functionaliteit niet gebruiken.</p>
+<p>Hetzelfde probleem doet zich voor in de sectie &quot;Betalen&quot; bij het interactieve element met een pijl-icoon dat het paneel met betaalopties opent. In het paneel met betaalopties doet hetzelfde probleem zich voor bij de betaalopties.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een toetsenbord. Wanneer ik door het scherm navigeer, zijn sommige knoppen of links niet bereikbaar of bedienbaar met mijn toetsenbord. Ik verwacht elk deel van het scherm te kunnen bedienen met alleen mijn toetsenbord.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat elk interactief element met het toetsenbord focusbaar en bedienbaar is. In iOS ondersteun je Full Keyboard Access: standaard UIKit/SwiftUI-controls werken direct; voor eigen controls implementeer je <code>UIFocusEnvironment</code> en handel je key commands af (<code>UIKeyCommand</code>). In Android stel je <code>android:focusable=&quot;true&quot;</code> en <code>android:focusableInTouchMode=&quot;true&quot;</code> in (waar passend) en handel je <code>KeyEvent.KEYCODE_ENTER</code> / <code>KEYCODE_DPAD_CENTER</code> af. Test elk scherm met een extern toetsenbord aangesloten en zonder touch.</p>
+</div>
+<div class="issue">
+<h3>#58 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm heeft het interactieve element met het &quot;+&quot;-icoon naast &quot;Voeg cadeaucard toe&quot; in de sectie &quot;Cadeaucard&quot; de toegankelijke naam &quot;+&quot;, die niet beschrijft wat het bedieningselement doet of welke actie het uitvoert. Daardoor kunnen schermlezergebruikers niet begrijpen wat er gebeurt als ze deze bedieningselementen activeren.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Ik heb nodig dat elke knop een duidelijke en beschrijvende toegankelijke naam heeft, zodat ik begrijp wat er gebeurt als ik die activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elk bedieningselement een betekenisvolle toegankelijke naam via de native accessibility-API's van het platform. De toegankelijke naam beschrijft het doel van het bedieningselement of de actie die het uitvoert.</p>
+</div>
+<div class="issue">
+<h3>#59 - Informatieve betaalmethode-iconen hebben geen tekstalternatief</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Content</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1</span>  
+</div>
+<p>Op dit scherm staat in de sectie &quot;Betalen&quot; een rij iconen van betaalmethoden (bijvoorbeeld Apple Pay, iDEAL, American Express, Visa, Mastercard, Klarna en PayPal). Deze iconen geven aan welke betaalmethoden beschikbaar zijn. De iconen worden echter niet aangeboden aan hulpsoftware en hebben geen tekstalternatief. Daardoor kunnen schermlezergebruikers niet vaststellen welke betaalmethoden worden geaccepteerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Ik heb nodig dat de beschikbare betaalmethoden worden aangekondigd, zodat ik weet welke betaalopties ik kan gebruiken voordat ik verderga met de checkout.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef een tekstalternatief voor de beschikbare betaalmethoden via de native accessibility-API's van het platform. Dat kan door elk betaalmethode-icoon een betekenisvolle toegankelijke naam te geven (bijvoorbeeld &quot;Visa&quot;, &quot;Mastercard&quot;, &quot;PayPal&quot;). Zorg dat schermlezergebruikers dezelfde informatie over de beschikbare betaalmethoden krijgen als ziende bezoekers.</p>
+</div>
+<div class="issue">
+<h3>#60 - Geselecteerde status wordt niet doorgegeven aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.1.1, 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.1.1.1, 11.4.1.2</span>  
+</div>
+<p>Op dit scherm opent in de sectie &quot;Betalen&quot; het interactieve element met een geselecteerde betaalmethode en een pijl-icoon het paneel met betaalopties. In dit paneel wordt de geselecteerde betaaloptie aangeduid met een vinkje, maar de geselecteerde status wordt niet doorgegeven aan hulpsoftware. Schermlezergebruikers horen niet of het element geselecteerd is of niet.</p>
+<figure class="screenshot">
+<img src="images/19.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer ik een tab of selectievakje tegenkom, kan ik niet horen of die op dat moment geselecteerd is. Ik verwacht dat mijn schermlezer de huidige status duidelijk aankondigt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Werk de accessibility-status van het element bij zodat die weergeeft of het geselecteerd is. In iOS voeg je <code>.selected</code> toe aan <code>accessibilityTraits</code>, of stel je <code>accessibilityValue</code> in op een gelokaliseerde &quot;Geselecteerd&quot; / &quot;Niet geselecteerd&quot;. In Android roep je <code>setSelected(true/false)</code> op de view aan, of werk je <code>AccessibilityNodeInfoCompat.setCheckable(true)</code> en <code>setChecked(true/false)</code> bij voor aanvinkbare elementen. Zorg dat de status wordt bijgewerkt zodra de waarde verandert, zodat schermlezergebruikers altijd de huidige status horen.</p>
+</div>
+<div class="issue">
+<h3>#61 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm verschijnt, wanneer de betaalmethode &quot;Creditcard / debitcard&quot; is en de bezoeker het formulier met onjuiste gegevens verzendt, het statusbericht &quot;Vul s.v.p. de ontbrekende gegevens in&quot;, maar dit wordt niet aangekondigd door schermlezers. Wanneer informatie op het scherm wijzigt, zoals een bevestiging, een fout of een laadstatus, moeten schermlezergebruikers een aankondiging krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik de app met een schermlezer. Wanneer er een statusbericht op het scherm verschijnt, kondigt mijn schermlezer dit niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaar hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef statuswijzigingen aan hulpsoftware door als live-aankondiging, zonder de focus te verplaatsen. In iOS post je een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> voor grotere wijzigingen). In Android gebruik je <code>View.announceForAccessibility(...)</code> of stel je de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor dringende berichten). De bezoeker blijft zo waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="14-mijn-account">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-mijn-account">14 Mijn Account <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account</p>
+<div class="issue">
+<h3>#62 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zien de teksten &quot;Account&quot; en &quot;Member&quot; er visueel uit als koppen, maar in de code is dat niet het geval: ze worden niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem zie je bij andere teksten. Wanneer je de knop voor de QR-code activeert, is in het geopende paneel de tekst &quot;Membercard&quot; niet als kop gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>. Gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="15-aankopen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-aankopen">15 Aankopen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; knop 'Aankopen'</p>
+<div class="issue">
+<h3>#63 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm ziet de tekst &quot;Aankopen&quot; er visueel uit als een kop, maar in de code is dat niet het geval: hij wordt niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem zie je op het scherm met aankoopdetails bij de teksten &quot;Aankoopdetails&quot;, &quot;Betaaloverzicht&quot;, &quot;Bezorgadres&quot; en andere. Hetzelfde probleem doet zich voor op andere schermen die vanaf dit scherm geopend worden: &quot;Retouren&quot;, &quot;Retourdetails&quot; en &quot;In de winkel retourneren&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>. Gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#64 - Knopnaam beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm wordt, wanneer het tabblad &quot;Online&quot; geselecteerd is, elk gekocht artikel gepresenteerd als een knop die de details van die aankoop opent. De toegankelijke namen van deze knoppen identificeren de bijbehorende aankoop echter niet. Voor de aankoop van &quot;Augustina dekbedovertrek van katoensatijn 220TC&quot; is de toegankelijke naam bijvoorbeeld &quot;29 juni 2026, 135,96&quot;, die alleen de aankoopdatum en het totaalbedrag bevat. Daardoor kunnen schermlezergebruikers niet bepalen welke aankoop geopend wordt wanneer ze de knop activeren. De toegankelijke naam moet de aankoop duidelijk identificeren, bijvoorbeeld door naast de aankoopdatum ook de productnaam of een andere betekenisvolle aanduiding op te nemen. Hetzelfde probleem zie je op het scherm &quot;Retouren&quot; dat geopend wordt met de knop &quot;Online retourneren&quot;.</p>
+<figure class="screenshot">
+<img src="images/20.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik bij elke aankoopknop een duidelijke aanduiding nodig van de aankoop die hij opent, zodat ik het juiste artikel kan kiezen zonder te moeten gokken op basis van alleen de aankoopdatum of het bedrag.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elke aankoopknop een betekenisvolle toegankelijke naam via de native toegankelijkheids-API's van het platform. De toegankelijke naam moet de aankoop identificeren, bijvoorbeeld met de productnaam of een andere betekenisvolle aanduiding, samen met aanvullende informatie die de aankoop onderscheidt van andere, zoals de aankoopdatum. Gebruik bijvoorbeeld in plaats van &quot;29 juni 2026, 135,96&quot; een toegankelijke naam als: &quot;Augustina dekbedovertrek van katoensatijn 220TC, gekocht op 29 juni 2026, totaal € 135,96&quot;. Zo kunnen schermlezergebruikers de juiste aankoop identificeren voordat ze de knop activeren.</p>
+</div>
+<div class="issue">
+<h3>#65 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm verschijnt het bevestigingsbericht &quot;Ordernummer gekopieerd&quot; wanneer de bezoeker de knop met het ordernummer activeert om het naar het klembord te kopiëren. Dit statusbericht wordt echter niet aangekondigd door schermlezers. Daardoor weten schermlezergebruikers niet of het ordernummer succesvol is gekopieerd. Statusberichten die verschijnen zonder dat de toetsenbord- of schermlezerfocus verplaatst, moeten automatisch worden aangekondigd door hulpsoftware.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Wanneer er een statusbericht op het scherm verschijnt, kondigt mijn schermlezer het niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaartoe hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stuur statuswijzigingen als live aankondiging naar hulpsoftware, zonder de focus te verplaatsen. Plaats op iOS een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> bij grotere wijzigingen). Gebruik op Android <code>View.announceForAccessibility(...)</code> of stel de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor urgente berichten). De bezoeker blijft waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="16-mijn-gegevens">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#16-mijn-gegevens">16 Mijn gegevens <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; knop 'Mijn gegevens'</p>
+<div class="issue">
+<h3>#66 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm ziet de tekst &quot;Mijn gegevens&quot; er visueel uit als een kop, maar in de code is dat niet het geval: hij wordt niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem zie je bij teksten op de schermen die vanaf dit scherm geopend worden, zoals &quot;Wachtwoord&quot;, &quot;Telefoonnummer&quot;, &quot;Factuuradres&quot; en &quot;Bezorgadressen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>. Gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#67 - Knoppen met dezelfde toegankelijke naam zijn niet te onderscheiden</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 2.4.6</span>  
+	<span class="sc"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op het scherm &quot;Wachtwoord&quot; bevat elk invoerveld een knop met een oog-icoon. Deze knoppen hebben dezelfde toegankelijke naam, &quot;Toon wachtwoord&quot; of &quot;Verberg wachtwoord&quot;. Hoewel deze knoppen dezelfde soort actie uitvoeren, horen ze bij verschillende wachtwoordvelden. Daardoor kunnen schermlezergebruikers niet bepalen welk wachtwoordveld wordt beïnvloed wanneer een knop wordt geactiveerd. Hierdoor is het lastig om het juiste bedieningselement te herkennen en te bedienen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, heb ik bij elke knop om een wachtwoord te tonen of te verbergen een aanduiding nodig van het wachtwoordveld dat hij bedient, zodat ik precies weet welk wachtwoord wordt getoond of verborgen voordat ik de knop activeer.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef elke knop om een wachtwoord te tonen of te verbergen een unieke toegankelijke naam die het bijbehorende wachtwoordveld identificeert. Gebruik bijvoorbeeld in plaats van &quot;Toon wachtwoord&quot; namen als &quot;Toon huidig wachtwoord&quot;, &quot;Toon nieuw wachtwoord&quot; en &quot;Toon bevestiging wachtwoord&quot;. Werk de toegankelijke namen op dezelfde manier bij wanneer het wachtwoord zichtbaar is (bijvoorbeeld &quot;Verberg huidig wachtwoord&quot;). Zo kunnen schermlezergebruikers het juiste bedieningselement herkennen voordat ze het activeren.</p>
+</div>
+<div class="issue">
+<h3>#68 - Wijzigingen in wachtwoordeisen worden niet aangekondigd aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op het scherm &quot;Wachtwoord&quot; worden de wachtwoordeisen bijgewerkt terwijl de bezoeker typt. Wanneer aan een eis is voldaan, verandert de visuele weergave (de tekst verandert bijvoorbeeld van kleur, van zwart naar groen). Deze wijzigingen worden echter niet aangekondigd door schermlezers. Daardoor krijgen bezoekers die op hulpsoftware vertrouwen geen bevestiging dat aan afzonderlijke wachtwoordeisen is voldaan en moeten ze van het wachtwoordveld weg navigeren om de bijgewerkte informatie te bekijken.</p>
+<figure class="screenshot">
+<img src="images/21.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, wil ik geïnformeerd worden wanneer aan een wachtwoordeis is voldaan, zodat ik het wachtwoord kan invullen zonder het invoerveld te verlaten en elke eis handmatig te controleren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Zorg dat wijzigingen in de wachtwoordeisen als statusberichten beschikbaar zijn via de native toegankelijkheids-API's van het platform. Telkens wanneer een eis van status verandert, moet hulpsoftware de bijgewerkte status automatisch aankondigen (bijvoorbeeld &quot;Bevat een cijfer, voldaan&quot; of &quot;Bevat een kleine letter, voldaan&quot;), zonder dat bezoekers de focus hoeven te verplaatsen.</p>
+</div>
+<div class="issue">
+<h3>#69 - Kleur is het enige middel om aan voldane wachtwoordeisen aan te geven</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.1</span>  
+</div>
+<p>Op het scherm &quot;Wachtwoord&quot; worden de wachtwoordeisen onder het veld &quot;Nieuw wachtwoord&quot; getoond. Terwijl de bezoeker een wachtwoord invoert, veranderen de eisen waaraan is voldaan van zwart naar groen. Kleur is echter de enige visuele aanduiding dat aan een eis is voldaan. Bezoekers die kleurverschillen niet kunnen waarnemen, kunnen mogelijk geen onderscheid maken tussen voldane en niet-voldane eisen. Hetzelfde probleem zie je wanneer het formulier met onjuiste gegevens is verzonden: dan verschijnt de tekst van de eisen in het rood.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker met een beperkte kleurwaarneming, heb ik nodig dat voldane wachtwoordeisen op meer dan alleen kleur worden aangeduid, zodat ik kan bepalen aan welke eisen is voldaan.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Vertrouw niet alleen op kleur om aan te geven dat aan een wachtwoordeis is voldaan. Bied een aanvullende visuele aanduiding, zoals een vinkje-icoon, een andere tekststijl of een andere niet-kleurgebonden aanwijzing. De aanvullende aanduiding moet voor alle bezoekers duidelijk onderscheid maken tussen voldane en niet-voldane eisen.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="17-instellingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#17-instellingen">17 Instellingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; knop 'Instellingen'</p>
+<p>Dit scherm bevat toegankelijkheidsproblemen die al eerder in dit rapport zijn beschreven.</p>
+<div class="issue">
+<h3>#70 - Visuele kop is niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm ziet de tekst &quot;Instellingen&quot; er visueel uit als een kop, maar in de code is dat niet het geval: hij wordt niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem zie je bij teksten op de schermen die vanaf dit scherm geopend worden, zoals &quot;Locatie&quot;, &quot;Pushmeldingen&quot;, &quot;E-mailvoorkeuren&quot; en andere.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker die een schermlezer gebruikt, vertrouw ik op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijkheidskoppen, zodat hulpsoftware ze correct aanbiedt. Voeg in iOS UIKit <code>.header</code> toe aan <code>accessibilityTraits</code>. Gebruik in SwiftUI <code>.accessibilityAddTraits(.isHeader)</code>. Stel op Android <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="18-onze-winkels">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#18-onze-winkels">18 Onze winkels <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; knop 'Winkels en openingstijden'</p>
+<div class="issue">
+<h3>#71 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst &quot;Onze winkels&quot; visueel opgemaakt als een kop, maar in de code is dat niet het geval en wordt die niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en vertrouw op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="19-chun-cafe-x-de-bijenkorf">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#19-chun-cafe-x-de-bijenkorf">19 Chun Café x de Bijenkorf <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; Winkels en openingstijden &gt; knop 'Chun Café x de Bijenkorf'</p>
+<div class="issue">
+<h3>#72 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de teksten &quot;Chun Café x de Bijenkorf&quot; en &quot;Openingstijden&quot; visueel opgemaakt als koppen, maar in de code is dat niet het geval en worden ze niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem doet zich voor bij de volgende teksten in het paneel &quot;Openingstijden&quot; dat geopend kan worden met de knop &quot;Bekijk meer openingstijden&quot;: &quot;Openingstijden&quot;, &quot;29 juni t/m 5 juli&quot; en &quot;6 juli t/m 12 juli&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en vertrouw op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="20-klantenservice">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#20-klantenservice">20 Klantenservice <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; Klantenservice</p>
+<div class="issue">
+<h3>#73 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst &quot;Klantenservice&quot; visueel opgemaakt als een kop, maar in de code is dat niet het geval en wordt die niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android). Hetzelfde probleem doet zich voor bij de teksten op de schermen die vanaf dit scherm geopend worden, zoals &quot;Gegevens servicekantoor&quot; en &quot;Veelgestelde vragen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en vertrouw op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="21-geef-feedback">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#21-geef-feedback">21 Geef feedback <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; Klantenservice &gt; Geef feedback</p>
+<div class="issue">
+<h3>#74 - Tekst is visueel een kop, maar in de code niet als kop gemarkeerd</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.3.1</span>  
+	<span class="sc"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm is de tekst &quot;Wat wil je met ons delen?&quot; visueel opgemaakt als een kop, maar in de code is dat niet het geval en wordt die niet als kop aangeboden aan hulpsoftware. Schermlezergebruikers vertrouwen op kop-semantiek om de structuur van het scherm te begrijpen en om tussen secties te springen met de rotor (iOS) of reading controls (Android).</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer en vertrouw op koppen om de structuur van het scherm te begrijpen en snel tussen secties te bewegen. Ik verwacht dat elke visuele sectiekop ook als kop wordt aangeboden, zodat ik efficiënt kan navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Markeer visuele sectiekoppen als toegankelijke koppen, zodat hulpsoftware ze correct aanbiedt. In iOS UIKit voeg je <code>.header</code> toe aan <code>accessibilityTraits</code>; in SwiftUI gebruik je <code>.accessibilityAddTraits(.isHeader)</code>. In Android stel je <code>android:accessibilityHeading=&quot;true&quot;</code> in (API 28+) of roep je <code>ViewCompat.setAccessibilityHeading(view, true)</code> aan.</p>
+</div>
+<div class="issue">
+<h3>#75 - Element mist een rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm hebben interactieve elementen geen rol (of accessibility trait) die aan hulpsoftware wordt aangeboden. Zo worden bijvoorbeeld het element met het &quot;X&quot;-icoon waarmee het scherm gesloten wordt, de beoordelingselementen onder &quot;Hoe zou je deze pagina of app beoordelen?&quot;, de interactieve elementen onder &quot;Waar wil je feedback over geven?&quot; en andere elementen aangekondigd zonder dat duidelijk is dat het interactieve bedieningselementen zijn. Daardoor horen schermlezergebruikers wel de labels van de elementen, maar niet of het knoppen of een ander type bedieningselement zijn. Dit maakt het lastig te begrijpen dat de elementen geactiveerd kunnen worden en welk type interactie ze ondersteunen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer om de app te lezen. Wanneer ik een element tegenkom zonder rol, weet ik niet wat het doet. Ik verwacht dat mijn schermlezer me vertelt of het een knop, link of ander element is.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stel op elk interactief en structureel element een rol of trait in. In iOS gebruik je <code>accessibilityTraits</code> (bijvoorbeeld <code>.button</code>, <code>.link</code>, <code>.header</code>, <code>.image</code>) of in SwiftUI <code>.accessibilityAddTraits(...)</code>. In Android gebruik je native componenten die al een rol hebben (<code>Button</code>, <code>Switch</code>, <code>CheckBox</code>), of stel je bij eigen componenten de rol in via <code>AccessibilityNodeInfoCompat.setRoleDescription(...)</code> of door <code>View</code> te subclassen en <code>onInitializeAccessibilityNodeInfo</code> te overschrijven.</p>
+</div>
+<div class="issue">
+<h3>#76 - Geselecteerde status wordt niet aangeboden aan hulpsoftware</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.2</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm zijn interactieve bedieningselementen visueel geselecteerd, maar hun geselecteerde status wordt niet aangeboden aan hulpsoftware. Schermlezergebruikers horen niet of het element wel of niet geselecteerd is. Dit geldt bijvoorbeeld voor de beoordelingselementen onder &quot;Hoe zou je deze pagina of app beoordelen?&quot;, de interactieve elementen onder &quot;Waar wil je feedback over geven?&quot;, het selectievakje &quot;Voeg schermfoto toe door door het vakje te selecteren&quot; en andere elementen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer om de app te lezen. Wanneer ik een tab of selectievakje tegenkom, kan ik niet horen of die op dat moment geselecteerd is. Ik verwacht dat mijn schermlezer de huidige status duidelijk aankondigt.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Werk de toegankelijkheidsstatus van het element bij, zodat die weergeeft of het geselecteerd is. In iOS voeg je <code>.selected</code> toe aan <code>accessibilityTraits</code>, of stel je <code>accessibilityValue</code> in op een gelokaliseerde waarde &quot;Selected&quot; / &quot;Not selected&quot;. In Android roep je <code>setSelected(true/false)</code> aan op de view, of werk je voor aanvinkbare elementen <code>AccessibilityNodeInfoCompat.setCheckable(true)</code> en <code>setChecked(true/false)</code> bij. Zorg dat de status meebeweegt zodra de waarde verandert, zodat schermlezergebruikers altijd de huidige status horen.</p>
+</div>
+<div class="issue">
+<h3>#77 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm staat een knop &quot;Verzenden&quot;. De witte tekst op de oranje (<code>#F6A801</code>) achtergrond heeft een contrastverhouding van 2,0:1 met de achtergrond. Normale tekst moet een contrastverhouding van minimaal 4,5:1 hebben, en grote tekst (18pt en groter, of 14pt vet en groter) minimaal 3,0:1. Hetzelfde probleem doet zich voor bij de tekst van de opties onder &quot;Waar wil je feedback over geven?&quot; wanneer deze opties geselecteerd zijn, en bij de foutmeldingen die verschijnen wanneer het formulier met fouten wordt verzonden. Een vergelijkbaar probleem doet zich voor bij de placeholderteksten in de invoervelden die getoond worden wanneer een van de opties (bijvoorbeeld &quot;Er werkt iets niet in de app&quot;) onder &quot;Waar wil je feedback over geven?&quot; geselecteerd is. De grijze (<code>#A8A8A8</code>) tekst (&quot;Vul hier jouw antwoord in&quot;) op de witte achtergrond heeft een contrastverhouding van 2,4:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik tekst lees die nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of beide aan, zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker en voor elke status waarin de tekst voorkomt (standaard, uitgeschakeld, over afbeeldingen, op gekleurde achtergronden) en in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#78 - Contrast UI-element lager dan 3,0:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op dit scherm hebben de oranje (<code>#F9AD11</code>) &quot;<code>*</code>&quot;-iconen naast de formulierlabels een contrastverhouding van 1,9:1 met de witte achtergrond. Interface-elementen en betekenisvolle grafische elementen moeten minimaal 3,0:1 contrast hebben met aangrenzende kleuren, zodat slechtziende bezoekers ze kunnen herkennen en lokaliseren. Hetzelfde probleem doet zich voor bij het aangevinkte selectievakje &quot;Voeg schermfoto toe door door het vakje te selecteren&quot; en bij geselecteerde keuzerondjes die verschijnen wanneer een van de opties (bijvoorbeeld &quot;Er werkt iets niet in de app&quot;) onder &quot;Waar wil je feedback over geven?&quot; geselecteerd is. Een vergelijkbaar probleem doet zich voor bij de invoervelden die getoond worden wanneer een van de opties (bijvoorbeeld &quot;Er werkt iets niet in de app&quot;) onder &quot;Waar wil je feedback over geven?&quot; geselecteerd is. De grijze (<code>#CECECE</code>) randen van de velden op de witte achtergrond hebben een contrastverhouding van 1,6:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar invoervelden beginnen of eindigen. Ik verwacht dat knoppen en velden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de kleur van het element of de achtergrond aan zodat de contrastverhouding minimaal 3,0:1 is. Doe dit voor elke status die informatie overbrengt (standaard, focus, geselecteerd, aangevinkt) en in zowel light- als dark mode. Controleer de verhouding met een contrastchecker.</p>
+</div>
+<div class="issue">
+<h3>#79 - Statusbericht wordt niet aangekondigd aan schermlezergebruikers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 4.1.3</span>  
+	<span class="sc"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op dit scherm verschijnt het statusbericht &quot;Bedankt voor uw feedback!&quot; wanneer het formulier succesvol is verzonden, maar dit wordt niet aangekondigd door schermlezers. Wanneer informatie op het scherm verandert, zoals een bevestiging, een foutmelding of een laadstatus, horen schermlezergebruikers een aankondiging te krijgen zonder dat ze de focus naar het bericht hoeven te verplaatsen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik een schermlezer om de app te lezen. Wanneer er een statusbericht op de pagina verschijnt, kondigt mijn schermlezer dat niet aan. Ik verwacht dat statusberichten automatisch worden voorgelezen, zonder dat ik ernaartoe hoef te navigeren.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Stuur statuswijzigingen als live aankondigingen naar hulpsoftware, zonder de focus te verplaatsen. In iOS verstuur je een <code>UIAccessibility.Notification.announcement</code> (of <code>.layoutChanged</code> / <code>.screenChanged</code> voor grotere wijzigingen). In Android gebruik je <code>View.announceForAccessibility(...)</code> of stel je de statuscontainer in als live region met <code>android:accessibilityLiveRegion=&quot;polite&quot;</code> (of <code>&quot;assertive&quot;</code> voor urgente berichten). De bezoeker blijft waar die is en hoort de update op de achtergrond.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="22-chat">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#22-chat">22 Chat <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Ingelogde gebruiker &gt; Mijn Account &gt; knop 'Chat' bovenaan</p>
+<div class="issue">
+<h3>#80 - Tekstcontrast is lager dan het minimum</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.3</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.3</span>  
+</div>
+<p>Op dit scherm opent de knop met drie puntjes bovenaan het scherm &quot;Gespreksopties&quot;. Op dat scherm bevat het tekstveld de grijze (<code>#B0B0B0</code>) placeholdertekst &quot;Zoeken&quot;. Die heeft een contrastverhouding van 2,0:1 met de lichtgrijze (<code>#F6F6F6</code>) achtergrond. Normale tekst moet een contrastverhouding van minimaal 4,5:1 hebben, en grote tekst (18pt en groter, of 14pt vet en groter) minimaal 3,0:1.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik tekst lees die nauwelijks afsteekt tegen de achtergrond, kan ik de woorden niet onderscheiden. Ik verwacht dat tekst altijd duidelijk zichtbaar is tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de tekstkleur, de achtergrondkleur, of beide aan, zodat de contrastverhouding aan het minimum voldoet. Controleer het resultaat met een contrastchecker en voor elke status waarin de tekst voorkomt (standaard, uitgeschakeld, over afbeeldingen, op gekleurde achtergronden) en in zowel light- als dark mode.</p>
+</div>
+<div class="issue">
+<h3>#81 - Contrast UI-element lager dan 3,0:1</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 1.4.11</span>  
+	<span class="sc"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<p>Op dit scherm opent de knop met drie puntjes bovenaan het scherm &quot;Gespreksopties&quot;. Op dat scherm bevat het tekstveld een grijs (<code>#A9A9A9</code>) vergrootglas-icoon. Dit icoon heeft een contrastverhouding van 2,2:1 met de lichtgrijze (<code>#F6F6F6</code>) achtergrond. Daarnaast heeft het tekstveld een lichtgrijze (<code>#F6F6F6</code>) kleur. Tegen de witte achtergrond is de contrastverhouding te laag: 1,1:1. Een vergelijkbaar probleem doet zich ook voor in de chat na het activeren van een zoekresultaat. Het overeenkomende bericht wordt aangegeven met een oranje (<code>#F4CB57</code>) markering, maar het contrast van de markering met de witte achtergrond is onvoldoende: 1,6:1. Interface-elementen en betekenisvolle grafische elementen moeten minimaal 3,0:1 contrast hebben met aangrenzende kleuren, zodat slechtziende bezoekers ze kunnen herkennen en lokaliseren.</p>
+<figure class="screenshot">
+<img src="images/22.webp" alt="">
+</figure>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Wanneer ik een formulier invul, kan ik niet zien waar invoervelden beginnen of eindigen. Ik verwacht dat knoppen en velden duidelijk afsteken tegen de achtergrond.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Pas de kleur van het element of de achtergrond aan zodat de contrastverhouding minimaal 3,0:1 is. Doe dit voor elke status die informatie overbrengt (standaard, focus, geselecteerd, aangevinkt) en in zowel light- als dark mode. Controleer de verhouding met een contrastchecker.</p>
+</div>
+<div class="issue">
+<h3>#82 - Placeholdertekst wordt als label gebruikt</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="sc"><b>WCAG</b>: 3.3.2</span>  
+	<span class="sc"><b>EN</b>: 11.3.3.2</span>  
+</div>
+<p>Op dit scherm opent de knop met drie puntjes bovenaan het scherm &quot;Gespreksopties&quot;. Op dat scherm gebruikt het zoekveld de placeholdertekst &quot;Zoeken&quot; als enige zichtbare label. Er wordt geen in beeld blijvend label geboden. Zodra bezoekers tekst gaan invoeren, verdwijnt de placeholder en blijft het veld zonder zichtbaar label achter. Daardoor kunnen bezoekers het doel van het veld mogelijk niet meer herkennen tijdens het invoeren of nakijken van hun invoer. Er is wel een zoekicoon (vergrootglas) aanwezig, maar dat kan geen volwaardige vervanging zijn van een zichtbaar label. Bovendien heeft het icoon onvoldoende contrast met de achtergrond, wat apart wordt gerapporteerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Als bezoeker met een cognitieve beperking, slechtziendheid of dyslexie heb ik bij elk invoerveld een zichtbaar label nodig dat beschikbaar blijft terwijl ik tekst invoer, zodat ik altijd het doel van het veld kan herkennen.</i></p>
+</blockquote>
+<h4>Oplossing</h4>
+<p>Geef het zoekveld een permanent zichtbaar label dat zichtbaar blijft, ongeacht of het veld tekst bevat. De placeholder mag gebruikt worden om een voorbeeld of hint te geven, maar niet als het enige zichtbare label.</p>
+</div>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de app op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je app te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+<p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+<ul>
+<li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+<li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+<li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+</ul>
+<h3>Voortgang bijhouden</h3>
+<p>Je kunt je voortgang op twee manieren bijhouden:</p>
+<ul>
+<li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+<li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+<li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+<li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+</ul>
+<h3>Link naar een specifieke bevinding delen</h3>
+<p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>
