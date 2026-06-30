@@ -95,6 +95,34 @@ url = "/blog/"
 weight = 4
 
 [[main]]
+name = "Tools"
+url = "/tools/"
+weight = 5
+
+[[main]]
+name = "Quizzes"
+weight = 6
+hasChildren = true
+
+[[main]]
+parent = "Quizzes"
+name = "Museum"
+url = "/tools/quiz-museum/"
+weight = 1
+
+[[main]]
+parent = "Quizzes"
+name = "Webredactie"
+url = "/tools/quiz-webredactie/"
+weight = 2
+
+[[main]]
+parent = "Quizzes"
+name = "Developers"
+url = "/tools/quiz-developers/"
+weight = 3
+
+[[main]]
 name = "Over ons"
 url = "/auditbureau-digitale-toegankelijkheid/"
 weight = 7
