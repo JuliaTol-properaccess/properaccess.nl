@@ -23,7 +23,7 @@ Voor precies dezelfde website betaal je bij het ene bureau 500 euro en bij het a
 
 Het verschil zit zelden in de prijs zelf en bijna altijd in wat er onder de motorkap gebeurt. Wordt er met de hand getest of draait er alleen een tool? Schrijft een senior auditor het rapport of een junior? Krijg je een lijst problemen of ook de oplossingen? Dit artikel geeft je de vragen die je stelt voordat je tekent, met per vraag waarom hij ertoe doet en hoe een goed antwoord klinkt.
 
-![Links een dun rapport uit een automatische scan met een vergrootglas en tandwiel erboven, rechts een dikke stapel rapportpagina's uit een handmatige audit met een hand die een pen vasthoudt.](/images/blog/kies-bureau-scan-vs-handmatig.webp)
+![](/images/blog/kies-bureau-scan-vs-handmatig.webp)
 
 ## De negen vragen die je stelt
 
@@ -41,7 +41,7 @@ Toegankelijkheid testen is een vak dat je in de praktijk leert. Een junior die e
 
 Goed antwoord: een senior auditor met meerdere jaren ervaring doet de audit, niet alleen de eindcontrole.
 
-![Een automatische testtool, weergegeven als vergrootglas met tandwiel boven een webpagina, die maar een paar plekken markeert terwijl andere problemen op de pagina ongemarkeerd blijven.](/images/blog/kies-bureau-automatische-tool.webp)
+![](/images/blog/kies-bureau-automatische-tool.webp)
 
 ### 3. Wordt er handmatig getest, of draait alleen een tool?
 
@@ -67,7 +67,7 @@ Goed antwoord:
 - het testen van formulieren op circa 100 punten
 - en nog veel meer
 
-![Een verzameling hulpmiddelen: een koptelefoon met geluidsgolven voor een schermlezer, een toetsenbord, een brailleleesregel en een smartphone met spraakbediening.](/images/blog/kies-bureau-hulpmiddelen.webp)
+![](/images/blog/kies-bureau-hulpmiddelen.webp)
 
 ### 5. Hoe is het rapport opgebouwd, per element of per succescriterium?
 
@@ -75,7 +75,7 @@ De meeste bureaus ordenen hun rapport per WCAG-succescriterium. Een ontoegankeli
 
 Goed antwoord: het rapport is geordend per onderdeel van de site, zodat je team een component opent en meteen weet wat er moet gebeuren.
 
-![Links een lange platte lijst met korte, gelijke regels, rechts een rapport geordend per component met per kaart een kleine illustratie en uitleg.](/images/blog/kies-bureau-per-element-vs-criterium.webp)
+![](/images/blog/kies-bureau-per-element-vs-criterium.webp)
 
 ### 6. Krijg ik ook de oplossingen, of alleen een lijst met problemen?
 
@@ -83,7 +83,7 @@ Een lijst met fouten vertelt je wat er mis is, niet wat je eraan doet. Lang niet
 
 Goed antwoord: per bevinding krijg je een concrete oplossingsrichting, in code waar dat helpt en in woorden waar dat genoeg is.
 
-![Een hand met een vergrootglas boven een beeldscherm zoekt op een webpagina naar de plekken waar hetzelfde probleem steeds terugkomt.](/images/blog/kies-bureau-zelf-problemen-zoeken.webp)
+![](/images/blog/kies-bureau-zelf-problemen-zoeken.webp)
 
 ### 7. Hoe zoek ik zelf problemen op?
 
