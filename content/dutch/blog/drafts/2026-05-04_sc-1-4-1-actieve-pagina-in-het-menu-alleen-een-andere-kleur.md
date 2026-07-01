@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Actieve pagina in het menu: alleen een andere kleur"
 date: 2026-07-01
 slug: "sc-1-4-1-actieve-pagina-in-het-menu-alleen-een-andere-kleur"
