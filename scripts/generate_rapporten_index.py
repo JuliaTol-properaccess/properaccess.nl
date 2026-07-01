@@ -34,7 +34,9 @@ START = "<!-- AUTO-GENERATED REPORT CARDS: START (scripts/generate_rapporten_ind
 END = "<!-- AUTO-GENERATED REPORT CARDS: END -->"
 
 # Mappen die geen rapport zijn (naast alles met een _ voorvoegsel).
-EXCLUDE = {"report_template", "pnh"}
+# 202512_videospelers is offline gehaald (op aanvraag bij Blue Billywig); de
+# map bevat alleen nog een notice-pagina, dus geen kaart op het overzicht.
+EXCLUDE = {"report_template", "pnh", "202512_videospelers"}
 
 # Wachtwoord-beveiligde rapporten tonen alleen een gate-pagina. Titel + datum
 # hier handmatig bijhouden (zelfde tekst als op de kaart hoort te staan).
