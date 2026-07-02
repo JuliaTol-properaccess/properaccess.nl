@@ -69,9 +69,3 @@ Drie nuances horen erbij, zowel voor de lezer als voor de leveranciers zelf.
 In dit specifieke rapport hebben we bewust geen oplossingen opgenomen bij de bevindingen. Het doel was per speler een eerste beeld geven, niet alle leveranciers tegelijk gaan adviseren. In onze reguliere audits ligt dat anders. Daar krijgt elke bevinding een toelichting, een werkende oplossing en de afwegingen die we daarbij zien. Dat is wat ons onderscheidt van bureaus die het bij een lijst met succescriteria en falen laten.
 
 Benieuwd hoe zo'n rapport eruitziet? Mail Phi op phi@properaccess.nl voor een voorbeeld.
-
-## Tot slot
-
-Wat Blue Billywig deed is wat we vaker in deze markt zouden willen zien. Niet alleen je eigen product laten toetsen, maar de spelers eromheen erbij betrekken, en het hele rapport openbaar publiceren. Voor de inkoper levert dat een eerlijk uitgangspunt op. Voor de markt levert het een meetlat op. En voor een bedrijf dat zelf goed scoort, is het zichtbaarder bewijs dan elke marketingclaim.
-
-Hun speler kwam in onze toetsing zonder bevindingen door. Hoe ze het rapport vervolgens gebruiken, vinden wij minstens zo sterk.
