@@ -1,6 +1,7 @@
 ---
 title: "Waarom overlay-tools zoals AccessiBe en UserWay je webshop niet WCAG-conform maken"
 date: 2026-04-09
+draft: true
 slug: "overlay-tools-accessibe-userway-wcag"
 categories:
   - "e-commerce-eaa"

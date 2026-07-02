@@ -107,7 +107,7 @@ Goed antwoord: het bureau is onafhankelijk en heeft geen belang bij de uitkomst,
 
 Een paar beloften klinken goed en zijn het niet.
 
-- **"Met onze tool ben je in één klik WCAG-conform."** Dat zijn overlay-widgets. Ze lossen de echte problemen niet op en maken je site soms slechter bedienbaar voor schermlezergebruikers. Lees [waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/).
+- **"Met onze tool ben je in één klik WCAG-conform."** Dat zijn overlay-widgets. Ze lossen de echte problemen niet op en maken je site soms slechter bedienbaar voor schermlezergebruikers.
 - **"Wij garanderen 100 procent toegankelijk."** Niemand kan dat garanderen. Een groot deel van de toegankelijkheid hangt af van hoe veel je investeert in het oplossen van de gevonden problemen.
 
 ## Zo beantwoorden wij deze vragen

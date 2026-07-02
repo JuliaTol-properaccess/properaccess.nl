@@ -129,7 +129,7 @@ In de praktijk:
 - Een overlay maakt je site soms zelfs slechter bedienbaar voor screenreader-gebruikers.
 - Je hebt geen rapport en dus geen aanwijsbare verbetering en geen juridische dekking.
 
-We schrijven hier een apart artikel over: [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/). De korte versie: een audit kost meer vooraf, maar helpt je probleem werkelijk op te lossen.
+Een audit kost meer vooraf, maar helpt je probleem werkelijk op te lossen.
 
 ## Hoe lang duurt een audit?
 
@@ -177,4 +177,3 @@ Wil je een concrete prijs voor jouw webshop? [Vraag een mini-audit aan](https://
 
 - [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [EAA-checklist 2026 voor webshops](/blog/eaa-checklist-2026-webshops/)
-- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/)

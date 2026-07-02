@@ -100,7 +100,7 @@ Deze vraag stelden we zelf. We deden een audit voor een webshop die op een platf
 
 ### Lossen overlay-tools het niet gewoon op?
 
-Iemand vroeg naar de tools die je als knopje aan je site plakt en die beloven je in één klap toegankelijk te maken, de zogeheten overlays. Caitlin was duidelijk: die tools verbeteren maar heel weinig aan je site en zorgen er niet voor dat je aan de wet voldoet. Dat is precies onze ervaring. Vorig jaar testten we de drie bekendste overlay-tools en kwamen tot dezelfde conclusie. Je leest het in [ons artikel over overlay-tools](https://www.properaccess.nl/blog/overlay-tools-accessibe-userway-wcag/).
+Iemand vroeg naar de tools die je als knopje aan je site plakt en die beloven je in één klap toegankelijk te maken, de zogeheten overlays. Caitlin was duidelijk: die tools verbeteren maar heel weinig aan je site en zorgen er niet voor dat je aan de wet voldoet. Dat is precies onze ervaring. Vorig jaar testten we de drie bekendste overlay-tools en kwamen tot dezelfde conclusie.
 
 ### Waarom legt elk EU-land de wet anders uit?
 

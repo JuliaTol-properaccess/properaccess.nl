@@ -228,4 +228,3 @@ Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://propera
 
 - [Geldt de EAA voor mijn webshop? Een beslisboom](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [Wat kost een WCAG-audit voor een webshop?](/blog/wat-kost-wcag-audit-webshop/)
-- [Waarom overlay-tools geen WCAG maken](/blog/overlay-tools-accessibe-userway-wcag/)
