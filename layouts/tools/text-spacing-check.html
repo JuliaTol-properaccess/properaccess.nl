@@ -1,0 +1,232 @@
+{{ define "main" }}
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+
+    {{ with .Content }}
+    <div class="tool-seo-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    <div id="toolContent">
+
+    <!-- De vier waarden -->
+    <div class="tool-spacing__values">
+      <h2>{{ if eq .Lang "nl" }}Wat past deze tool aan?{{ else }}What does this tool change?{{ end }}</h2>
+      <p class="tool-spacing__intro">
+        {{ if eq .Lang "nl" }}De tool vergroot de ruimte op vier plekken. Dit zijn de waarden die een bezoeker moet kunnen instellen zonder dat je tekst wegvalt. Ze horen bij de toegankelijkheidsregel WCAG 1.4.12 (Text Spacing).
+        {{ else }}The tool increases the space in four places. These are the values a visitor must be able to set without your text falling away. They belong to the accessibility rule WCAG 1.4.12 (Text Spacing).
+        {{ end }}
+      </p>
+      <table class="tool-spacing__ref-table">
+        <thead>
+          <tr>
+            <th>{{ if eq .Lang "nl" }}Eigenschap{{ else }}Property{{ end }}</th>
+            <th>{{ if eq .Lang "nl" }}CSS{{ else }}CSS{{ end }}</th>
+            <th>{{ if eq .Lang "nl" }}Minimum{{ else }}Minimum{{ end }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ if eq .Lang "nl" }}Regelhoogte{{ else }}Line height{{ end }}</td>
+            <td><code>line-height</code></td>
+            <td><strong>{{ if eq .Lang "nl" }}1.5x de lettergrootte{{ else }}1.5x the font size{{ end }}</strong></td>
+          </tr>
+          <tr>
+            <td>{{ if eq .Lang "nl" }}Alinea-afstand{{ else }}Paragraph spacing{{ end }}</td>
+            <td><code>margin</code></td>
+            <td><strong>{{ if eq .Lang "nl" }}2x de lettergrootte{{ else }}2x the font size{{ end }}</strong></td>
+          </tr>
+          <tr>
+            <td>{{ if eq .Lang "nl" }}Letterafstand{{ else }}Letter spacing{{ end }}</td>
+            <td><code>letter-spacing</code></td>
+            <td><strong>0.12em</strong></td>
+          </tr>
+          <tr>
+            <td>{{ if eq .Lang "nl" }}Woordafstand{{ else }}Word spacing{{ end }}</td>
+            <td><code>word-spacing</code></td>
+            <td><strong>0.16em</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tool-spacing__note">
+        {{ if eq .Lang "nl" }}Je hoeft deze waarden niet standaard toe te passen. Het gaat erom dat je site niet breekt als een bezoeker dat wel doet.
+        {{ else }}You do not have to apply these values by default. The point is that your site must not break when a visitor does.
+        {{ end }}
+      </p>
+    </div>
+
+    <!-- Bookmarklet -->
+    <div class="tool-spacing__bookmarklet-section">
+      <h2>{{ if eq .Lang "nl" }}Test je eigen live site{{ else }}Test your own live site{{ end }}</h2>
+      <p>
+        {{ if eq .Lang "nl" }}Sleep de knop hieronder naar je bladwijzerbalk. Ga daarna naar een pagina van je eigen site en klik op de bladwijzer. Alle vier de waarden worden dan toegepast, zodat je direct ziet waar je tekst breekt. Nog een keer klikken zet het weer uit.
+        {{ else }}Drag the button below to your bookmarks bar. Then open a page of your own site and click the bookmark. All four values are applied at once, so you can see straight away where your text breaks. Click again to switch it off.
+        {{ end }}
+      </p>
+
+      <div class="tool-spacing__bookmarklet-row">
+        <a class="tool-spacing__bookmarklet" id="bookmarkletLink"
+           href="javascript:(function(){var i='pa-1412-spacing',e=document.getElementById(i);if(e){e.remove();var b=document.getElementById(i+'-badge');if(b){b.remove();}return;}var s=document.createElement('style');s.id=i;s.textContent='*{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important;}p{margin-bottom:2em!important;}';document.head.appendChild(s);var d=document.createElement('div');d.id=i+'-badge';d.textContent='{{ if eq .Lang "nl" }}WCAG 1.4.12 tekstafstand actief{{ else }}WCAG 1.4.12 text spacing on{{ end }}';d.style.cssText='position:fixed;z-index:2147483647;bottom:16px;right:16px;background:#A30D4B;color:#fff;font:14px/1.4 sans-serif;padding:8px 12px;border-radius:4px;letter-spacing:normal;word-spacing:normal;';document.body.appendChild(d);})();">
+          {{ if eq .Lang "nl" }}Tekstafstand aan/uit{{ else }}Text spacing on/off{{ end }}
+        </a>
+        <button type="button" class="tool-spacing__copy" id="copyBookmarklet"
+                data-done="{{ if eq .Lang "nl" }}Gekopieerd naar klembord{{ else }}Copied to clipboard{{ end }}"
+                data-fail="{{ if eq .Lang "nl" }}Kopiëren mislukt, selecteer en kopieer handmatig{{ else }}Copy failed, select and copy manually{{ end }}">
+          {{ if eq .Lang "nl" }}Kopieer de code{{ else }}Copy the code{{ end }}
+        </button>
+        <span class="tool-spacing__copy-status" id="copyStatus" aria-live="polite"></span>
+      </div>
+
+      <p class="tool-spacing__hint">
+        {{ if eq .Lang "nl" }}Zie je geen bladwijzerbalk? Zet die aan met Ctrl+Shift+B (Windows) of Cmd+Shift+B (Mac). Kun je niet slepen? Gebruik dan de knop "Kopieer de code" en plak de code in een nieuwe bladwijzer.
+        {{ else }}No bookmarks bar? Turn it on with Ctrl+Shift+B (Windows) or Cmd+Shift+B (Mac). Cannot drag? Use the "Copy the code" button and paste the code into a new bookmark.
+        {{ end }}
+      </p>
+
+      <p class="tool-spacing__watch">
+        {{ if eq .Lang "nl" }}Let na het klikken op:{{ else }}After clicking, watch for:{{ end }}
+      </p>
+      <ul class="tool-spacing__watch-list">
+        {{ if eq .Lang "nl" }}
+        <li>tekst die verdwijnt of wordt afgeknipt</li>
+        <li>content die over andere content heen valt</li>
+        <li>knoppen of labels waar de tekst uitloopt</li>
+        <li>menu's, tooltips of dropdowns die onleesbaar worden</li>
+        {{ else }}
+        <li>text that disappears or gets clipped</li>
+        <li>content that overlaps other content</li>
+        <li>buttons or labels where the text spills out</li>
+        <li>menus, tooltips or dropdowns that become unreadable</li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Interactief voorbeeld -->
+    <div class="tool-spacing__demo">
+      <h2>{{ if eq .Lang "nl" }}Interactief voorbeeld{{ else }}Interactive example{{ end }}</h2>
+      <p class="tool-spacing__demo-intro">
+        {{ if eq .Lang "nl" }}Schuif met de knoppen om te zien wat er met de tekst gebeurt. Je mag de voorbeeldtekst ook zelf aanpassen. Zet "vaste hoogte" aan om te zien hoe een container met <code>overflow: hidden</code> de tekst afknipt.
+        {{ else }}Move the sliders to see what happens to the text. You can also edit the sample text yourself. Turn on "fixed height" to see how a container with <code>overflow: hidden</code> clips the text.
+        {{ end }}
+      </p>
+
+      <div class="tool-spacing__controls">
+        <div class="tool-spacing__slider">
+          <label for="lineHeight">{{ if eq .Lang "nl" }}Regelhoogte{{ else }}Line height{{ end }} <output id="lineHeightVal">1.2</output></label>
+          <input type="range" id="lineHeight" min="1" max="2" step="0.05" value="1.2">
+          <span class="tool-spacing__slider-min">{{ if eq .Lang "nl" }}WCAG-min: 1.5{{ else }}WCAG min: 1.5{{ end }}</span>
+        </div>
+        <div class="tool-spacing__slider">
+          <label for="letterSpacing">{{ if eq .Lang "nl" }}Letterafstand{{ else }}Letter spacing{{ end }} <output id="letterSpacingVal">0em</output></label>
+          <input type="range" id="letterSpacing" min="0" max="0.24" step="0.01" value="0">
+          <span class="tool-spacing__slider-min">{{ if eq .Lang "nl" }}WCAG-min: 0.12em{{ else }}WCAG min: 0.12em{{ end }}</span>
+        </div>
+        <div class="tool-spacing__slider">
+          <label for="wordSpacing">{{ if eq .Lang "nl" }}Woordafstand{{ else }}Word spacing{{ end }} <output id="wordSpacingVal">0em</output></label>
+          <input type="range" id="wordSpacing" min="0" max="0.32" step="0.01" value="0">
+          <span class="tool-spacing__slider-min">{{ if eq .Lang "nl" }}WCAG-min: 0.16em{{ else }}WCAG min: 0.16em{{ end }}</span>
+        </div>
+        <div class="tool-spacing__slider">
+          <label for="paraSpacing">{{ if eq .Lang "nl" }}Alinea-afstand{{ else }}Paragraph spacing{{ end }} <output id="paraSpacingVal">1em</output></label>
+          <input type="range" id="paraSpacing" min="0" max="3" step="0.1" value="1">
+          <span class="tool-spacing__slider-min">{{ if eq .Lang "nl" }}WCAG-min: 2em{{ else }}WCAG min: 2em{{ end }}</span>
+        </div>
+      </div>
+
+      <div class="tool-spacing__actions">
+        <button type="button" class="tool-spacing__btn tool-spacing__btn--primary" id="applyMin">
+          {{ if eq .Lang "nl" }}Zet op WCAG-minimum{{ else }}Set to WCAG minimum{{ end }}
+        </button>
+        <button type="button" class="tool-spacing__btn" id="resetSpacing">
+          {{ if eq .Lang "nl" }}Terug naar standaard{{ else }}Reset to default{{ end }}
+        </button>
+        <label class="tool-spacing__toggle">
+          <input type="checkbox" id="fixedHeight">
+          {{ if eq .Lang "nl" }}Simuleer vaste hoogte (overflow: hidden){{ else }}Simulate fixed height (overflow: hidden){{ end }}
+        </label>
+      </div>
+
+      <p class="tool-spacing__edit-hint">
+        {{ if eq .Lang "nl" }}Tip: je kunt hieronder in het voorbeeld klikken en je eigen tekst typen.{{ else }}Tip: you can click inside the example below and type your own text.{{ end }}
+      </p>
+
+      <div class="tool-spacing__preview" id="spacingPreview"
+           contenteditable="true" spellcheck="false"
+           role="textbox" aria-multiline="true"
+           aria-label="{{ if eq .Lang "nl" }}Bewerkbaar voorbeeld waarop de tekstafstand wordt toegepast{{ else }}Editable example that the text spacing is applied to{{ end }}">
+        <div class="tool-spacing__card" id="spacingCard">
+          <h3 class="tool-spacing__card-title">{{ if eq .Lang "nl" }}Een kaart met een titel die net past{{ else }}A card with a title that only just fits{{ end }}</h3>
+          <p>{{ if eq .Lang "nl" }}Deze kaart heeft standaard net genoeg ruimte voor de titel. Zet hierboven "vaste hoogte" aan en verhoog de regelafstand: je ziet de tekst uit de kaart lopen of afgeknipt worden.{{ else }}By default this card has just enough room for its title. Turn on "fixed height" above and increase the line height: you will see the text spill out of the card or get clipped.{{ end }}</p>
+          <a href="#" class="tool-spacing__demo-btn" onclick="return false;">{{ if eq .Lang "nl" }}Een knop met tekst{{ else }}A button with text{{ end }}</a>
+        </div>
+        <p>{{ if eq .Lang "nl" }}Gewone alinea's horen gewoon mee te groeien met de tekstafstand. Als een bezoeker meer ruimte tussen letters, woorden en regels instelt, moet alle tekst leesbaar blijven. Niets mag verdwijnen achter een rand of over een andere alinea heen vallen.{{ else }}Ordinary paragraphs should simply grow with the text spacing. When a visitor sets more space between letters, words and lines, all text has to stay readable. Nothing may disappear behind an edge or overlap another paragraph.{{ end }}</p>
+        <p>{{ if eq .Lang "nl" }}Meer witruimte helpt vooral mensen met dyslexie, slechtzienden en oudere lezers. Voor hen is die extra ruimte het verschil tussen een leesbare zin en een brei van letters.{{ else }}Extra white space helps people with dyslexia, low vision and older readers most. For them that extra room is the difference between a readable sentence and a jumble of letters.{{ end }}</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="tool-cta">
+      {{ if eq .Lang "nl" }}
+      <p>Tekstafstand is een van de 55 WCAG-succescriteria. Wil je weten of je hele website
+      voldoet aan de toegankelijkheidseisen?</p>
+      <p><a href="/contact/">Vraag een audit aan</a> of bel 085 5055 890.</p>
+      {{ else }}
+      <p>Text spacing is one of the 55 WCAG success criteria. Want to know if your entire
+      website meets accessibility requirements?</p>
+      <p><a href="/en/contact/">Request an audit</a> or call +31 85 5055 890.</p>
+      {{ end }}
+    </div>
+    </div><!-- /toolContent -->
+
+    {{ if eq .Lang "nl" }}
+    <!-- FAQ -->
+    <div class="tool-faq">
+      <h2>Veelgestelde vragen</h2>
+
+      <details class="faq-item">
+        <summary class="faq-question">Wat is WCAG 1.4.12 (Text Spacing)?</summary>
+        <div class="faq-answer">
+          <p>Dit succescriterium eist dat bezoekers de regelhoogte, alinea-afstand, letterafstand en woordafstand kunnen aanpassen zonder dat er content verdwijnt of onleesbaar wordt. Het gaat niet om zoomen, maar puur om de ruimte tussen letters, woorden, regels en alinea's. Sinds de European Accessibility Act (juni 2025) is dit op niveau AA verplicht voor veel webshops en dienstverleners.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Moet ik deze tekstafstand standaard toepassen op mijn site?</summary>
+        <div class="faq-answer">
+          <p>Nee. Je hoeft de waarden niet standaard te gebruiken. De eis is dat je site niet breekt als een bezoeker ze zelf instelt, bijvoorbeeld met een browserextensie of een eigen stylesheet. Je test dus of je site die aanpassing aankan.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Wat is de meest voorkomende fout?</summary>
+        <div class="faq-answer">
+          <p>Een vaste hoogte in combinatie met <code>overflow: hidden</code> op een container met tekst. Zodra de regelafstand groter wordt, past de tekst niet meer en wordt hij afgeknipt. Gebruik in plaats daarvan <code>min-height</code>, en centreer verticaal met <code>padding</code> en flexbox in plaats van een vaste <code>line-height</code>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Werkt de bookmarklet op elke website?</summary>
+        <div class="faq-answer">
+          <p>Op vrijwel alle websites die met HTML en CSS zijn gebouwd. Een uitzondering zijn frameworks die de interface in een <code>canvas</code>-element tekenen (zoals Flutter). Daar is geen tekst die de browser als tekst herkent, dus valt 1.4.12 buiten scope en heeft de bookmarklet geen effect.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Voor wie is tekstafstand belangrijk?</summary>
+        <div class="faq-answer">
+          <p>Vooral voor mensen met dyslexie, slechtzienden, ouderen en mensen met een cognitieve beperking. Meer ruimte tussen letters, woorden en regels maakt tekst voor deze groepen veel beter leesbaar. Het gaat om miljoenen mensen.</p>
+        </div>
+      </details>
+
+      <p class="tool-faq__cta">Wil je weten hoe je hele website scoort op tekstafstand en alle andere WCAG-criteria? <a href="/contact/">Vraag een audit aan</a> of begin met een <a href="/quickscan/">mini-audit</a> voor een eerste overzicht. Meer diepgang lees je in ons artikel <a href="/blog/succescriteria/sc-1-4-12-wat-betekent-tekstafstand/">over Text Spacing en vaste hoogtes</a>.</p>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+<script src="{{ "js/tool-text-spacing-check.js" | relURL }}" defer></script>
+{{ end }}

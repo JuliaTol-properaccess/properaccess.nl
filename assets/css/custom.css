@@ -15318,3 +15318,307 @@ html.dark .aanrader-card__link {
 html.dark .aanrader-card--cta .aanrader-card__title {
   color: #e8a0ba;
 }
+
+/* ============================================================
+   Tekstafstand-check — WCAG 1.4.12 (Text Spacing)
+   ============================================================ */
+
+.tool-spacing__intro,
+.tool-spacing__note,
+.tool-spacing__demo-intro {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.tool-spacing__note {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #004050;
+  font-style: italic;
+}
+
+html.dark .tool-spacing__note { border-left-color: #A30D4B; }
+
+.tool-spacing__values,
+.tool-spacing__bookmarklet-section,
+.tool-spacing__demo {
+  margin-top: 2.5rem;
+}
+
+.tool-spacing__values h2,
+.tool-spacing__bookmarklet-section h2,
+.tool-spacing__demo h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Reference table — reuse the contrast tool look */
+.tool-spacing__ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
+
+.tool-spacing__ref-table th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  background: #e2e8f0;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+}
+
+html.dark .tool-spacing__ref-table th {
+  background: var(--color-darkmode-body);
+  color: var(--color-darkmode-text);
+}
+
+.tool-spacing__ref-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+html.dark .tool-spacing__ref-table td {
+  border-bottom-color: var(--color-darkmode-border);
+  color: var(--color-darkmode-text);
+}
+
+.tool-spacing__ref-table tr:last-child td { border-bottom: none; }
+
+/* Bookmarklet */
+.tool-spacing__bookmarklet-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.tool-spacing__bookmarklet {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  background: #A30D4B;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: grab;
+  border: 2px solid #A30D4B;
+}
+
+.tool-spacing__bookmarklet:hover {
+  background: #ffffff;
+  color: #A30D4B;
+}
+
+.tool-spacing__copy {
+  padding: 0.55rem 1rem;
+  background: transparent;
+  color: #004050;
+  border: 1px solid #004050;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tool-spacing__copy:hover { background: #f5f5f5; }
+
+html.dark .tool-spacing__copy {
+  color: var(--color-darkmode-text);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .tool-spacing__copy:hover { background: var(--color-darkmode-body); }
+
+.tool-spacing__copy-status {
+  font-size: 0.85rem;
+  color: #004050;
+  font-weight: 600;
+}
+
+html.dark .tool-spacing__copy-status { color: #e8a0ba; }
+
+.tool-spacing__hint,
+.tool-spacing__edit-hint {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.tool-spacing__watch { margin-top: 1rem; font-weight: 600; }
+
+.tool-spacing__watch-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.tool-spacing__watch-list li { margin: 0.2rem 0; }
+
+/* Demo controls */
+.tool-spacing__controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.tool-spacing__slider label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.tool-spacing__slider output {
+  font-weight: 700;
+  color: #004050;
+}
+
+html.dark .tool-spacing__slider output { color: #e8a0ba; }
+
+/* Value reached the WCAG minimum */
+.tool-spacing__val--min {
+  color: #A30D4B !important;
+}
+
+.tool-spacing__slider input[type="range"] {
+  width: 100%;
+  accent-color: #004050;
+}
+
+html.dark .tool-spacing__slider input[type="range"] { accent-color: #A30D4B; }
+
+.tool-spacing__slider-min {
+  display: block;
+  font-size: 0.72rem;
+  opacity: 0.65;
+  margin-top: 0.15rem;
+}
+
+.tool-spacing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.tool-spacing__btn {
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #004050;
+  border: 1px solid #004050;
+}
+
+.tool-spacing__btn:hover { background: #f5f5f5; }
+
+.tool-spacing__btn--primary {
+  background: #A30D4B;
+  color: #ffffff;
+  border-color: #A30D4B;
+}
+
+.tool-spacing__btn--primary:hover { background: #82093c; }
+
+html.dark .tool-spacing__btn {
+  color: var(--color-darkmode-text);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .tool-spacing__btn:hover { background: var(--color-darkmode-body); }
+
+.tool-spacing__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tool-spacing__toggle input { accent-color: #A30D4B; }
+
+/* Preview — the four values applied via CSS variables */
+.tool-spacing__preview {
+  --ts-line-height: 1.2;
+  --ts-letter-spacing: 0em;
+  --ts-word-spacing: 0em;
+  --ts-para-spacing: 1em;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+}
+
+html.dark .tool-spacing__preview {
+  background: var(--color-darkmode-theme-dark, #1F2937);
+  border-color: var(--color-darkmode-border);
+}
+
+.tool-spacing__preview:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+}
+
+.tool-spacing__preview p {
+  line-height: var(--ts-line-height);
+  letter-spacing: var(--ts-letter-spacing);
+  word-spacing: var(--ts-word-spacing);
+  margin-bottom: var(--ts-para-spacing);
+}
+
+.tool-spacing__preview p:last-child { margin-bottom: 0; }
+
+/* Card inside the preview — the classic breaking case */
+.tool-spacing__card {
+  border: 1px solid #004050;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: var(--ts-para-spacing);
+}
+
+.tool-spacing__card-title {
+  line-height: var(--ts-line-height);
+  letter-spacing: var(--ts-letter-spacing);
+  word-spacing: var(--ts-word-spacing);
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tool-spacing__card p {
+  margin-bottom: 0.75rem;
+}
+
+/* Fixed height + overflow hidden: demonstrate clipping */
+.tool-spacing__card--fixed {
+  height: 150px;
+  overflow: hidden;
+}
+
+.tool-spacing__demo-btn {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 1rem;
+  background: #A30D4B;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: var(--ts-letter-spacing);
+  word-spacing: var(--ts-word-spacing);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .tool-spacing__controls {
+    grid-template-columns: 1fr;
+  }
+}
