@@ -97,20 +97,11 @@
 (function() {
   var form = document.getElementById('home-qs-form');
   if (!form) return;
-  var FORMSPREE_URL = 'https://formspree.io/f/xvzwowrw';
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    var btn = form.querySelector('button[type="submit"]');
-    var original = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.textContent = 'Versturen...'; }
-    var data = new FormData(form);
-    fetch(FORMSPREE_URL, {
-      method: 'POST', body: data, headers: { 'Accept': 'application/json' }
-    }).then(function(response) {
-      if (response.ok) { window.location.href = '/webshop-quickscan-bedankt/'; }
-      else { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
-    }).catch(function() {
-      if (btn) { btn.disabled = false; btn.innerHTML = original; }
+    window.paFormSubmit(form, {
+      bron: 'mini-audit-homepage',
+      onSuccess: function() { window.location.href = '/webshop-quickscan-bedankt/'; }
     });
   });
 })();
