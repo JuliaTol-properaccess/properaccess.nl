@@ -1,14 +1,16 @@
 /**
  * Cloudflare Worker — Website Form Submissions
  * Receives form submissions and forwards them to the Proper Access CRM.
- * Also sends quiz follow-up emails via Resend.
+ * Sends a notification email to Proper Access for every submission and a
+ * personalized quiz follow-up email to participants — all via AhaSend (EU).
  *
- * POST /submit  → forward to CRM webhook, send quiz email if applicable
+ * POST /submit  → forward to CRM webhook, notify Proper Access, send quiz email if applicable
  *   Body: { bron, email, naam?, bedrijf?, bericht?, quiz_* }
  *
  * Secrets (set via wrangler secret put):
  *   WEBSITE_FORM_SECRET   — shared secret for CRM webhook
- *   RESEND_API_KEY         — for quiz follow-up emails
+ *   AHASEND_API_KEY       — AhaSend API key (Bearer token)
+ *   AHASEND_ACCOUNT_ID    — AhaSend account UUID (used in the API path)
  *
  * Deploy: npx wrangler deploy worker.js --name pipedrive-forms
  */
@@ -20,6 +22,11 @@ const ALLOWED_ORIGINS = [
 ];
 
 const CRM_WEBHOOK_URL = "https://crm.properaccess.nl/api/webhooks/website-form";
+
+// E-mail via AhaSend (EU). Afzender en interne ontvanger.
+const FROM_EMAIL = "noreply@properaccess.nl";
+const FROM_NAME = "Proper Access";
+const NOTIFY_EMAIL = "juliatol@properaccess.nl";
 
 // Rate limiting: max 5 inzendingen per 10 minuten per IP.
 const RATE_LIMIT = 5;
@@ -98,18 +105,22 @@ async function handleSubmit(request, env, origin) {
       throw new Error("CRM responded with " + crmResponse.status + ": " + err);
     }
 
-    // Send personalized email to quiz participants via Resend.
+    // Notificatie naar Proper Access voor elke inzending (vervangt Formspree).
+    try {
+      await sendNotificationEmail(env, body);
+    } catch (e) { /* e-mailfout is niet-blokkerend */ }
+
+    // Gepersonaliseerde opvolgmail naar quizdeelnemers via AhaSend.
     // Alleen versturen als er ook echte quizresultaten zijn (geen kale trigger),
     // en hooguit 1x per 24 uur per ontvanger, tegen misbruik als mail-versterker.
     if (
       bron.startsWith("quiz") &&
-      env.RESEND_API_KEY &&
       hasQuizResults(body) &&
       !isEmailThrottled(email)
     ) {
       try {
-        await sendQuizEmail(env.RESEND_API_KEY, email, body);
-      } catch (e) { /* email failure is non-blocking */ }
+        await sendQuizEmail(env, email, body);
+      } catch (e) { /* e-mailfout is niet-blokkerend */ }
     }
 
     return json({ ok: true }, 200, origin);
@@ -195,7 +206,7 @@ const QUIZ_LABELS = {
   "quiz": "Accessibility Quiz",
 };
 
-async function sendQuizEmail(apiKey, toEmail, data) {
+async function sendQuizEmail(env, toEmail, data) {
   const score = data.quiz_score || "\u2013";
   const correct = data.quiz_correct || "\u2013";
   const total = data.quiz_total || "\u2013";
@@ -272,18 +283,103 @@ async function sendQuizEmail(apiKey, toEmail, data) {
 </table>
 </body></html>`;
 
-  await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      "Authorization": "Bearer " + apiKey,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: "Proper Access <noreply@properaccess.nl>",
-      to: [toEmail],
-      subject: "Je quizresultaten \u2014 " + score + " score",
-      html: emailHtml,
-    }),
+  const textContent =
+    "Je quizresultaten\n\n" +
+    quizLabel + "\n" +
+    "Score: " + score + " (" + correct + " van " + total + " vragen correct)\n\n" +
+    "Bekijk je resultaten en tips in de HTML-versie van deze e-mail, of vraag een quickscan aan via https://www.properaccess.nl/contact/\n\n" +
+    "Proper Access \u2014 properaccess.nl \u2014 085 5055 890";
+
+  await sendViaAhaSend(env, {
+    to: toEmail,
+    subject: "Je quizresultaten \u2014 " + score + " score",
+    html: emailHtml,
+    text: textContent,
+  });
+}
+
+// \u2500\u2500 AhaSend transport (EU) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+
+async function sendViaAhaSend(env, { to, subject, html, text, replyTo }) {
+  if (!env.AHASEND_API_KEY || !env.AHASEND_ACCOUNT_ID) return;
+
+  const payload = {
+    from: { email: FROM_EMAIL, name: FROM_NAME },
+    recipients: [{ email: to }],
+    subject: subject,
+  };
+  if (html) payload.html_content = html;
+  if (text) payload.text_content = text;
+  if (replyTo) payload.reply_to = { email: replyTo };
+
+  await fetch(
+    "https://api.ahasend.com/v2/accounts/" + env.AHASEND_ACCOUNT_ID + "/messages",
+    {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + env.AHASEND_API_KEY,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    }
+  );
+}
+
+// \u2500\u2500 Notificatie naar Proper Access (vervangt Formspree) \u2500\u2500\u2500\u2500\u2500\u2500
+
+async function sendNotificationEmail(env, data) {
+  const naam = data.naam || "\u2013";
+  const email = data.email || "\u2013";
+  const bron = data.bron || "onbekend";
+  const bericht = data.bericht || "";
+
+  let subject = "Website: " + bron + " \u2014 " + (data.naam || email);
+  const lines = [
+    "Nieuwe inzending via de website.",
+    "",
+    "Bron: " + bron,
+    "Naam: " + naam,
+    "E-mail: " + email,
+  ];
+  if (data.bedrijf || data.bedrijfsnaam) lines.push("Bedrijf: " + (data.bedrijf || data.bedrijfsnaam));
+  if (data.telefoon) lines.push("Telefoon: " + data.telefoon);
+  if (data.website_url) lines.push("Website: " + data.website_url);
+
+  // Quizinzending: score in onderwerp en tekst.
+  if (data.quiz_score) {
+    subject = "Quiz " + (data.quiz_type || bron) + " \u2014 " + email + " \u2014 score: " + data.quiz_score;
+    lines.push("");
+    lines.push("Quizscore: " + data.quiz_score + " (" + (data.quiz_correct || "\u2013") + " van " + (data.quiz_total || "\u2013") + " correct)");
+    if (data.quiz_weak_categories) lines.push("Zwakke categorie\u00ebn: " + data.quiz_weak_categories);
+  }
+
+  if (bericht) {
+    lines.push("");
+    lines.push("Bericht:");
+    lines.push(bericht);
+  }
+  if (data.opmerkingen) {
+    lines.push("");
+    lines.push("Opmerkingen:");
+    lines.push(data.opmerkingen);
+  }
+
+  const text = lines.join("\n");
+  const html =
+    "<pre style=\"font-family:'Nunito',Arial,sans-serif;font-size:14px;white-space:pre-wrap;\">" +
+    text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") +
+    "</pre>";
+
+  const validReplyTo = data.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)
+    ? data.email
+    : undefined;
+
+  await sendViaAhaSend(env, {
+    to: NOTIFY_EMAIL,
+    subject: subject,
+    html: html,
+    text: text,
+    replyTo: validReplyTo,
   });
 }
 

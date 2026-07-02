@@ -15,7 +15,6 @@
   "use strict";
 
   var WORKER_URL = "https://pipedrive-forms.juliatol.workers.dev/submit";
-  var FORMSPREE_URL = "https://formspree.io/f/xjgeyqej";
 
   window.paFormSubmit = function (form, opts) {
     if (!form || form._paSubmitting) return;
@@ -40,7 +39,8 @@
       }
     }
 
-    // Send to Worker (CRM) — primary
+    // Send to Worker — handles CRM, the notification email to Proper Access,
+    // and the quiz follow-up email, all server-side via AhaSend (EU).
     var workerRequest = fetch(WORKER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -53,30 +53,6 @@
       .then(function (result) {
         if (!result.ok) throw new Error(result.error || "Unknown error");
       });
-
-    // Send to Formspree (email notification) — fire and forget
-    var title = data.bron || "Website formulier";
-    var formspreeData = {
-      _subject: title + " — " + (data.naam || data.email),
-      naam: data.naam || "–",
-      email: data.email || "–",
-      bron: data.bron || "–",
-      bericht: data.bericht || "–",
-    };
-    // Include quiz results as a readable message
-    if (data.quiz_score) {
-      var quizLabel = (data.quiz_type || data.bron || "Quiz").replace("quiz ", "").replace("quiz", "algemeen");
-      formspreeData._subject = "Quiz " + quizLabel + " — " + data.email + " — score: " + data.quiz_score;
-      formspreeData.bericht =
-        "Quiz: " + quizLabel + "\n" +
-        "Score: " + data.quiz_score + " (" + (data.quiz_correct || "–") + " van " + (data.quiz_total || "–") + " vragen correct)\n" +
-        "E-mail: " + data.email;
-    }
-    fetch(FORMSPREE_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify(formspreeData),
-    }).catch(function () { /* email failure is non-blocking */ });
 
     // Handle Worker result
     workerRequest
