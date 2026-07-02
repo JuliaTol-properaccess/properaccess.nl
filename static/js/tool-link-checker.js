@@ -26,6 +26,9 @@
       // Intro & form
       intro: "Voer een URL in om alle links op die pagina te bekijken. Je ziet per link de toegankelijke naam, de URL en eventuele problemen.",
       urlLabel: "URL van de pagina",
+      urlHint: "Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.",
+      errorUrlEmpty: "Vul eerst een webadres in.",
+      errorUrlInvalid: "Dit is geen geldig webadres. Gebruik een adres zoals https://www.voorbeeld.nl.",
       urlPlaceholder: "https://www.voorbeeld.nl",
       submitBtn: "Controleer",
       submitBusy: "Bezig...",
@@ -37,6 +40,8 @@
       lblWarnings: "Waarschuwingen",
       noLinks: "Geen links gevonden op deze pagina.",
       jsNotice: "Let op: links die via JavaScript worden geladen (bijvoorbeeld door een cookie-manager of framework) worden niet gedetecteerd.",
+      resultsNote: "De tool toont alle links die in de HTML van de pagina staan, ook links die visueel verborgen zijn. Denk aan een mobiel menu dat op desktop verborgen is, of deelknoppen die niet worden getoond. Daardoor kan een link er dubbel in staan.",
+      resultsLimitations: "De tool kan niet beoordelen of de zichtbare tekst van een logo of afbeelding overeenkomt met de naam van de link. Ook links die pas na interactie of via JavaScript op de pagina komen, ziet de tool niet.",
       // Filter
       filterAll: "Alle links",
       filterIssues: "Alleen met problemen",
@@ -55,15 +60,19 @@
       external: "Extern",
       internal: "Intern",
       newWindow: "Nieuw venster",
+      noHref: "geen href",
       // Issue messages
       "no-accessible-name": "Link heeft geen toegankelijke naam. Voeg linktekst, aria-label of een afbeelding met alt-tekst toe.",
-      "img-link-no-alt": "Link bevat {count} afbeelding(en) zonder alt-tekst. Voeg een alt-attribuut toe aan de afbeelding.",
+      "img-link-no-alt": "Deze link bestaat uit een afbeelding zonder alternatieve tekst en heeft daardoor geen naam. Los dit op met een alt-tekst die de bestemming van de link beschrijft, of met een aria-label op de link. Zet zichtbare tekst in het logo vooraan in de naam.",
+      imgAltMissing: "De afbeelding heeft geen alt-attribuut.",
+      imgAltEmpty: "De afbeelding heeft een leeg alt-attribuut (alt=\"\").",
       "generic-text": "Generieke linktekst \"{text}\". Gebruik een beschrijvende tekst die het doel van de link duidelijk maakt.",
-      "missing-href": "Link heeft geen href-attribuut.",
+      "duplicate-name": "Er staan meer links met deze naam op de pagina, maar ze leiden naar verschillende adressen. Geef ze een onderscheidende naam.",
       "hash-only-href": "Link heeft alleen href=\"#\". Gebruik een <button> als het een actie is, of voeg een geldige URL toe.",
       "javascript-href": "Link gebruikt javascript: in het href-attribuut. Gebruik een <button> voor acties.",
       "new-window-no-warning": "Link opent in een nieuw venster zonder waarschuwing. Voeg een visuele en programmatische indicatie toe.",
       "title-repeats-name": "Het title-attribuut herhaalt de linktekst. Verwijder het overbodige title-attribuut.",
+      "title-only-name": "De naam van deze link komt alleen uit het title-attribuut. Niet alle hulpsoftware leest title voor. Gebruik zichtbare tekst, een alt-tekst op de afbeelding of een aria-label.",
       // Severity
       error: "Fout",
       warning: "Waarschuwing",
@@ -87,6 +96,9 @@
       gateError: "Incorrect password. Please try again.",
       intro: "Enter a URL to view all links on that page. You\u2019ll see the accessible name, URL and any issues per link.",
       urlLabel: "Page URL",
+      urlHint: "Enter the full web address, for example https://www.example.com. If you leave out https://, we add it automatically.",
+      errorUrlEmpty: "Enter a web address first.",
+      errorUrlInvalid: "This is not a valid web address. Use an address like https://www.example.com.",
       urlPlaceholder: "https://www.example.com",
       submitBtn: "Check",
       submitBusy: "Checking...",
@@ -97,6 +109,8 @@
       lblWarnings: "Warnings",
       noLinks: "No links found on this page.",
       jsNotice: "Note: links rendered via JavaScript (e.g. by a cookie manager or framework) are not detected.",
+      resultsNote: "The tool shows every link that is in the page HTML, including links that are visually hidden. Think of a mobile menu that is hidden on desktop, or share buttons that are not shown. A link can therefore appear twice.",
+      resultsLimitations: "The tool cannot judge whether the visible text of a logo or image matches the name of the link. It also does not see links that only appear after interaction or via JavaScript.",
       filterAll: "All links",
       filterIssues: "Only with issues",
       colNum: "#",
@@ -111,14 +125,18 @@
       external: "External",
       internal: "Internal",
       newWindow: "New window",
+      noHref: "no href",
       "no-accessible-name": "Link has no accessible name. Add link text, aria-label, or an image with alt text.",
-      "img-link-no-alt": "Link contains {count} image(s) without alt text. Add an alt attribute to the image.",
+      "img-link-no-alt": "This link consists of an image without alternative text, so the link has no name. Fix this with an alt text that describes the link\u2019s destination, or with an aria-label on the link. Put any visible text in the logo at the start of the name.",
+      imgAltMissing: "The image has no alt attribute.",
+      imgAltEmpty: "The image has an empty alt attribute (alt=\"\").",
       "generic-text": "Generic link text \"{text}\". Use descriptive text that clarifies the link\u2019s purpose.",
-      "missing-href": "Link has no href attribute.",
+      "duplicate-name": "Multiple links on this page have this name, but they lead to different addresses. Give each link a distinctive name.",
       "hash-only-href": "Link has only href=\"#\". Use a <button> for actions, or add a valid URL.",
       "javascript-href": "Link uses javascript: in the href attribute. Use a <button> for actions.",
       "new-window-no-warning": "Link opens in a new window without warning. Add a visual and programmatic indication.",
       "title-repeats-name": "The title attribute repeats the link text. Remove the redundant title attribute.",
+      "title-only-name": "The name of this link comes only from the title attribute. Not all assistive technology reads out title. Use visible text, an alt text on the image, or an aria-label.",
       error: "Error",
       warning: "Warning",
       // Landmark labels
@@ -206,6 +224,7 @@
 
   var form = document.getElementById("checkerForm");
   var urlInput = document.getElementById("urlInput");
+  var urlError = document.getElementById("urlError");
   var submitBtn = document.getElementById("submitBtn");
   var output = document.getElementById("output");
   var cta = document.getElementById("linkCta");
@@ -235,14 +254,61 @@
   }
 
   // ============================================================
+  // URL validation
+  // ============================================================
+
+  function showUrlError(message) {
+    if (urlError) {
+      urlError.textContent = message;
+      urlError.hidden = false;
+    }
+    urlInput.setAttribute("aria-invalid", "true");
+    urlInput.setAttribute("aria-describedby", "urlHint urlError");
+    urlInput.focus();
+  }
+
+  function clearUrlError() {
+    if (urlError) {
+      urlError.textContent = "";
+      urlError.hidden = true;
+    }
+    urlInput.removeAttribute("aria-invalid");
+    urlInput.setAttribute("aria-describedby", "urlHint");
+  }
+
+  function normalizeUrl(raw) {
+    var url = raw;
+    if (!/^https?:\/\//i.test(url)) {
+      url = "https://" + url;
+    }
+    try {
+      new URL(url);
+    } catch (e) {
+      return null;
+    }
+    return url;
+  }
+
+  // ============================================================
   // Form handler
   // ============================================================
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var url = urlInput.value.trim();
-    if (!url) return;
+    var raw = urlInput.value.trim();
+    if (!raw) {
+      showUrlError(t("errorUrlEmpty"));
+      return;
+    }
+
+    var url = normalizeUrl(raw);
+    if (!url) {
+      showUrlError(t("errorUrlInvalid"));
+      return;
+    }
+
+    clearUrlError();
 
     submitBtn.disabled = true;
     submitBtn.textContent = t("submitBusy");
@@ -261,8 +327,8 @@
           lastData = null;
           return;
         }
-        lastData = data;
-        output.innerHTML = renderResults(data);
+        lastData = processData(data);
+        output.innerHTML = renderResults(lastData);
         bindFilter();
         if (cta) cta.style.display = "";
       })
@@ -276,6 +342,112 @@
         submitBtn.textContent = t("submitBtn");
       });
   });
+
+  // ============================================================
+  // Post-processing of worker data
+  // (client-side, so the tool keeps working with the currently
+  // deployed worker; new worker fields are treated as optional)
+  // ============================================================
+
+  function normName(name) {
+    return String(name || "").toLowerCase().replace(/\s+/g, " ").trim();
+  }
+
+  function normHref(href) {
+    if (!href) return "";
+    try {
+      var u = new URL(href);
+      var path = u.pathname.replace(/\/+$/, "");
+      return u.origin.toLowerCase() + path + u.search + u.hash;
+    } catch (e) {
+      return String(href).replace(/\/+$/, "");
+    }
+  }
+
+  function processData(data) {
+    var links = data.links || [];
+    var i, j, link, key;
+
+    // Count how often each generic link text occurs
+    var genericCounts = {};
+    for (i = 0; i < links.length; i++) {
+      link = links[i];
+      for (j = 0; j < link.issues.length; j++) {
+        if (link.issues[j].id === "generic-text") {
+          key = normName(link.accessibleName);
+          genericCounts[key] = (genericCounts[key] || 0) + 1;
+        }
+      }
+    }
+
+    // Map each accessible name to its distinct target URLs
+    var nameHrefs = {};
+    for (i = 0; i < links.length; i++) {
+      link = links[i];
+      key = normName(link.accessibleName);
+      if (!key || !link.href) continue;
+      if (!nameHrefs[key]) nameHrefs[key] = {};
+      nameHrefs[key][normHref(link.href)] = true;
+    }
+
+    for (i = 0; i < links.length; i++) {
+      link = links[i];
+      var issues = [];
+      var hasGeneric = false;
+
+      for (j = 0; j < link.issues.length; j++) {
+        var issue = link.issues[j];
+
+        // <a> without href: not an issue, shown as a neutral tag instead
+        if (issue.id === "missing-href") continue;
+
+        // Generic text: only report when it occurs more than once
+        if (issue.id === "generic-text") {
+          if (genericCounts[normName(link.accessibleName)] < 2) continue;
+          hasGeneric = true;
+        }
+
+        // "title repeats link text" only applies when there is visible text.
+        // Without visible text the title is the only name source: different warning.
+        if (issue.id === "title-repeats-name" && !link.visibleText) {
+          issues.push({ severity: "warning", sc: "4.1.2", id: "title-only-name" });
+          continue;
+        }
+
+        issues.push(issue);
+      }
+
+      // Same accessible name, different targets (SC 2.4.4)
+      key = normName(link.accessibleName);
+      if (key && link.href && nameHrefs[key] && Object.keys(nameHrefs[key]).length > 1 && !hasGeneric) {
+        var alreadyFlagged = issues.some(function (it) { return it.id === "duplicate-name"; });
+        if (!alreadyFlagged) {
+          issues.push({ severity: "warning", sc: "2.4.4", id: "duplicate-name" });
+        }
+      }
+
+      link.issues = issues;
+    }
+
+    // Recompute summary after post-processing
+    var totalIssues = 0;
+    var totalWarnings = 0;
+    for (i = 0; i < links.length; i++) {
+      for (j = 0; j < links[i].issues.length; j++) {
+        if (links[i].issues[j].severity === "error") totalIssues++;
+        else totalWarnings++;
+      }
+    }
+    data.summary = {
+      totalLinks: links.length,
+      linksWithIssues: links.filter(function (l) { return l.issues.some(function (it) { return it.severity === "error"; }); }).length,
+      linksWithWarnings: links.filter(function (l) { return l.issues.some(function (it) { return it.severity === "warning"; }); }).length,
+      totalIssues: totalIssues,
+      totalWarnings: totalWarnings
+    };
+
+    return data;
+  }
 
   // ============================================================
   // Render results
@@ -298,6 +470,10 @@
       html += '<p class="tool-alt__notice">' + escapeHtml(t("jsNotice")) + '</p>';
       return html;
     }
+
+    // Notes: hidden links appear too, and what the tool cannot judge
+    html += '<p class="tool-alt__notice">' + escapeHtml(t("resultsNote")) + '</p>';
+    html += '<p class="tool-alt__notice">' + escapeHtml(t("resultsLimitations")) + '</p>';
 
     // Filter toggle
     html += '<div class="tool-link__filter">';
@@ -364,6 +540,11 @@
         html += '<span class="tool-link__tag">' + t("newWindow") + '</span>';
       }
       html += '</div>';
+    } else {
+      // <a> without href: neutral informative tag, not an issue
+      html += '<div class="tool-link__href">';
+      html += '<span class="tool-link__tag">' + escapeHtml(t("noHref")) + '</span>';
+      html += '</div>';
     }
 
     // Location
@@ -403,6 +584,13 @@
 
   function getIssueMessage(issue) {
     var detail = issue.detail || {};
+    if (issue.id === "img-link-no-alt") {
+      // altState is a newer worker field; treat it as optional
+      var msg = t("img-link-no-alt");
+      if (detail.altState === "missing") msg += " " + t("imgAltMissing");
+      else if (detail.altState === "empty") msg += " " + t("imgAltEmpty");
+      return msg;
+    }
     return tReplace(issue.id, {
       count: detail.count || "",
       text: detail.text || ""

@@ -20,16 +20,19 @@
         {{ end }}
       </p>
 
-      <form class="tool-heading__form" id="checkerForm">
+      <form class="tool-heading__form" id="checkerForm" novalidate>
         <div class="tool-heading__form-field">
-          <label for="urlInput">Website URL</label>
+          <label for="urlInput">{{ if eq .Lang "nl" }}URL van de pagina{{ else }}Page URL{{ end }}</label>
+          <p class="tool-url-hint" id="urlHint">{{ if eq .Lang "nl" }}Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.{{ else }}Enter the full web address, for example https://www.example.com. If you leave out https://, we add it automatically.{{ end }}</p>
           <input
             type="url"
             id="urlInput"
             placeholder="https://{{ if eq .Lang "nl" }}voorbeeld.nl{{ else }}example.com{{ end }}"
             required
+            aria-describedby="urlHint"
             autocomplete="url"
           >
+          <p class="tool-url-error" id="urlError" hidden></p>
         </div>
         <button type="submit" id="submitBtn" class="tool-heading__submit">{{ if eq .Lang "nl" }}Controleer{{ else }}Check{{ end }}</button>
       </form>
@@ -117,5 +120,6 @@
   </div>
 </section>
 
+<script>window.__paToolLang = "{{ .Lang }}";</script>
 <script src="{{ "js/tool-heading-checker.js" | relURL }}" defer></script>
 {{ end }}

@@ -117,10 +117,13 @@ export default {
 // =============================================================
 
 function analyzeHtml(html, pageUrl) {
-  // Strip scripts and styles
+  // Strip scripts, styles and noscript fallbacks.
+  // Noscript blocks often duplicate lazy-loaded images, which
+  // caused images inside links to be counted twice.
   const cleaned = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
-    .replace(/<style[\s\S]*?<\/style>/gi, "");
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replace(/<noscript[\s\S]*?<\/noscript>/gi, "");
 
   const links = extractLinks(cleaned, pageUrl);
 
@@ -229,8 +232,10 @@ function extractLinks(html, pageUrl) {
       return getAttr(imgAttrs, "alt");
     });
 
-    // Check for SVG with aria-label, title attribute, or <title> child element
-    const svgMatches = [...accessibleContent.matchAll(/<svg\s([^>]*?)([\s\S]*?)<\/svg>/gi)];
+    // Check for SVG with aria-label, title attribute, or <title> child element.
+    // Note: attrs and content are separated by the closing ">" of the open tag,
+    // so aria-label on the <svg> element itself is actually found.
+    const svgMatches = [...accessibleContent.matchAll(/<svg\b([^>]*)>([\s\S]*?)<\/svg>/gi)];
     const svgLabels = svgMatches.map(sm => {
       const svgAttrs = sm[1] || "";
       const svgContent = sm[2] || "";
@@ -246,6 +251,7 @@ function extractLinks(html, pageUrl) {
     // Determine accessible name following accname-1.2 computation order:
     // Step 2B: aria-labelledby → Step 2D: aria-label → Step 2F: content → Step 2I: title
     let accessibleName = "";
+    let nameFromTitle = false;
     if (ariaLabelledby) {
       // Step 2B: resolve aria-labelledby IDREFs from full HTML
       accessibleName = resolveAriaLabelledby(ariaLabelledby, html);
@@ -266,6 +272,7 @@ function extractLinks(html, pageUrl) {
       // If still empty, fall back to title
       if (!accessibleName && title) {
         accessibleName = title;
+        nameFromTitle = true;
       }
     }
 
@@ -293,14 +300,21 @@ function extractLinks(html, pageUrl) {
 
     // Check: No accessible name (SC 2.4.4 / 4.1.2)
     if (!accessibleName) {
-      // Check if it contains only image(s) without alt
-      const hasImgWithoutAlt = imgMatches.length > 0 && imgAlts.every(a => a === null || a === "");
-      if (hasImgWithoutAlt) {
+      // Image link (img or svg) without a name vs. a plain empty link.
+      // svg-only links count as image links too.
+      if (imgMatches.length > 0 || svgMatches.length > 0) {
+        // Distinguish missing alt from empty alt="" (only for <img>)
+        const missingAlt = imgAlts.filter(a => a === null).length;
+        const emptyAlt = imgAlts.filter(a => a === "").length;
+        let altState = null;
+        if (missingAlt > 0 && emptyAlt === 0) altState = "missing";
+        else if (emptyAlt > 0 && missingAlt === 0) altState = "empty";
+        else if (missingAlt > 0 && emptyAlt > 0) altState = "mixed";
         issues.push({
           severity: "error",
           sc: "1.1.1",
           id: "img-link-no-alt",
-          detail: { count: imgMatches.length },
+          detail: { count: imgMatches.length + svgMatches.length, altState },
         });
       } else {
         issues.push({
@@ -309,6 +323,14 @@ function extractLinks(html, pageUrl) {
           id: "no-accessible-name",
         });
       }
+    } else if (nameFromTitle) {
+      // Name comes only from the title attribute: not all assistive
+      // technology exposes title, so warn instead of passing silently.
+      issues.push({
+        severity: "warning",
+        sc: "4.1.2",
+        id: "title-only-name",
+      });
     }
 
     // Check: Generic link text (SC 2.4.4)
@@ -321,20 +343,15 @@ function extractLinks(html, pageUrl) {
       });
     }
 
-    // Check: Empty or missing href (not necessarily an error, but worth noting)
-    if (href === null || href === "") {
-      issues.push({
-        severity: "warning",
-        sc: "2.4.4",
-        id: "missing-href",
-      });
-    } else if (href === "#") {
+    // Note: <a> without href is intentionally NOT reported as an issue.
+    // The frontend shows a neutral "no href" tag for those links instead.
+    if (href === "#") {
       issues.push({
         severity: "warning",
         sc: "2.4.4",
         id: "hash-only-href",
       });
-    } else if (href.startsWith("javascript:")) {
+    } else if (href && href.startsWith("javascript:")) {
       issues.push({
         severity: "warning",
         sc: "2.4.4",
@@ -342,8 +359,10 @@ function extractLinks(html, pageUrl) {
       });
     }
 
-    // Check: title repeats accessible name (SC 4.1.2 / advisory)
-    if (title && accessibleName && title.trim().toLowerCase() === accessibleName.trim().toLowerCase()) {
+    // Check: title repeats the link text (SC 4.1.2 / advisory).
+    // Only when the link actually has visible text; for image links
+    // where title is the only name source, title-only-name applies instead.
+    if (title && visibleText && !nameFromTitle && title.trim().toLowerCase() === accessibleName.trim().toLowerCase()) {
       issues.push({
         severity: "warning",
         sc: "4.1.2",
