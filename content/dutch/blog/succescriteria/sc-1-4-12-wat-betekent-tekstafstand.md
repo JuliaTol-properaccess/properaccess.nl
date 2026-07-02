@@ -96,7 +96,9 @@ Nu past de gebruiker aan naar line-height 1.5 (48px). Ineens is een regel 48px h
 
 ## Hoe test je dit?
 
-De makkelijkste manier is met een bookmarklet die alle vier de spacing-waarden toepast. Voeg deze code toe als bookmark:
+De makkelijkste manier is onze gratis [tekstafstand-check](/tools/tekstafstand-check/). Je sleept de knop naar je bladwijzerbalk en klikt hem aan op een pagina van je eigen site. Alle vier de waarden worden dan in een keer toegepast, zodat je direct ziet waar je tekst breekt. Op dezelfde pagina staat ook een interactief voorbeeld waarmee je zelf met de waarden kunt spelen.
+
+Wil je het liever handmatig regelen? Dan voeg je deze bookmarklet toe als bladwijzer. Die past dezelfde vier waarden toe:
 
 ```javascript
 javascript: (function () {
