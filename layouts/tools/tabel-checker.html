@@ -18,12 +18,22 @@
         fouten en waarschuwingen.
       </p>
 
-      <form class="tool-alt__form" id="checkerForm">
+      <p class="tool-alt__notice" data-i18n="jsNotice">
+        Let op: deze tool ziet alleen tabellen die direct in de HTML van de
+        pagina staan. Tabellen die via JavaScript worden geladen (bijvoorbeeld
+        door een cookie-manager of framework), tabellen die pas na een actie
+        verschijnen (zoals klikken, filteren of scrollen) en tabellen in
+        iframes worden niet gedetecteerd.
+      </p>
+
+      <form class="tool-alt__form" id="checkerForm" novalidate>
+        <label for="urlInput" class="tool-url-label" data-i18n="urlLabel">URL van de pagina</label>
+        <p class="tool-url-hint" id="urlHint" data-i18n="urlHint">Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.</p>
         <div class="tool-alt__form-row">
-          <label for="urlInput" class="sr-only" data-i18n="urlLabel">URL van de pagina</label>
-          <input type="url" id="urlInput" class="tool-alt__input" data-i18n-ph="urlPlaceholder" placeholder="https://www.voorbeeld.nl" required autocomplete="url">
+          <input type="url" id="urlInput" class="tool-alt__input" data-i18n-ph="urlPlaceholder" placeholder="https://www.voorbeeld.nl" required aria-describedby="urlHint" autocomplete="url">
           <button type="submit" class="tool-alt__btn" id="submitBtn" data-i18n="submitBtn">Controleer</button>
         </div>
+        <p class="tool-url-error" id="urlError" hidden></p>
       </form>
 
       <div id="output" role="region" aria-live="polite"></div>

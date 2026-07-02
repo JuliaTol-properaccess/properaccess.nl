@@ -19,13 +19,24 @@
 
     <div id="toolContent">
 
-      <form class="tool-alt__form" id="checkerForm">
+      <form class="tool-alt__form" id="checkerForm" novalidate>
+        <label for="urlInput" class="tool-url-label" data-i18n="urlLabel">URL van de pagina</label>
+        <p class="tool-url-hint" id="urlHint" data-i18n="urlHint">Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.</p>
         <div class="tool-alt__form-row">
-          <label for="urlInput" class="sr-only" data-i18n="urlLabel">URL van de pagina</label>
-          <input type="url" id="urlInput" class="tool-alt__input" data-i18n-ph="urlPlaceholder" placeholder="https://www.voorbeeld.nl" required autocomplete="url">
+          <input type="url" id="urlInput" class="tool-alt__input" data-i18n-ph="urlPlaceholder" placeholder="https://www.voorbeeld.nl" required aria-describedby="urlHint" autocomplete="url">
           <button type="submit" class="tool-alt__btn" id="submitBtn" data-i18n="submitBtn">Controleer</button>
         </div>
+        <p class="tool-url-error" id="urlError" hidden></p>
       </form>
+
+      <div class="tool-alt__notice">
+        <p><strong data-i18n="limitsTitle">Wat deze tool niet kan beoordelen</strong></p>
+        <ul class="list-disc pl-5">
+          <li data-i18n="limitsCss">Afbeeldingen die via CSS zijn verborgen of toegevoegd.</li>
+          <li data-i18n="limitsRedundant">Of een alt-tekst hetzelfde zegt als de tekst ernaast (een overbodige alt-tekst).</li>
+          <li data-i18n="limitsLogo">Of de alt-tekst van een logo overeenkomt met de tekst die in het logo zichtbaar is.</li>
+        </ul>
+      </div>
 
       <div id="output" role="region" aria-live="polite"></div>
 

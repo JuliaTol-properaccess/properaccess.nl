@@ -26,6 +26,9 @@
       // Intro & form
       intro: "Voer een URL in om alle tabellen op die pagina te controleren op digitale toegankelijkheid. Je ziet per tabel de structuur, gevonden fouten en waarschuwingen.",
       urlLabel: "URL van de pagina",
+      urlHint: "Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.",
+      errorUrlEmpty: "Vul eerst een webadres in.",
+      errorUrlInvalid: "Dit is geen geldig webadres. Gebruik een adres zoals https://www.voorbeeld.nl.",
       urlPlaceholder: "https://www.voorbeeld.nl",
       submitBtn: "Controleer",
       submitBusy: "Bezig...",
@@ -33,21 +36,20 @@
       fetchError: "Kon de pagina niet analyseren. Controleer de URL en probeer het opnieuw.",
       // Summary
       lblTables: "Tabellen",
-      lblData: "Datatabel",
-      lblLayout: "Layout-tabel",
+      lblRolePresentation: "met role=\"presentation\"",
       lblIssues: "Fouten",
       lblWarnings: "Waarschuwingen",
       noTables: "Geen tabellen gevonden op deze pagina.",
-      jsNotice: "Let op: tabellen die via JavaScript worden geladen (bijvoorbeeld door een cookie-manager of framework) worden niet gedetecteerd.",
+      jsNotice: "Let op: deze tool ziet alleen tabellen die direct in de HTML van de pagina staan. Tabellen die via JavaScript worden geladen (bijvoorbeeld door een cookie-manager of framework), tabellen die pas na een actie verschijnen (zoals klikken, filteren of scrollen) en tabellen in iframes worden niet gedetecteerd.",
       // Table detail
       tableNum: "Tabel",
       type: "Type",
-      dataTable: "Datatabel",
-      layoutTable: "Layout-tabel",
+      dataTable: "Behandeld als datatabel",
+      layoutTable: "Layout-tabel (role=\"presentation\")",
       structure: "Structuur",
       rows: "rijen",
       cols: "kolommen",
-      thCount: "tabelkoppen",
+      thCount: "kopcellen",
       tdCount: "datacellen",
       name: "Naam",
       noName: "Geen naam",
@@ -56,19 +58,21 @@
       issuesFound: "Gevonden problemen",
       noIssues: "Geen problemen gevonden",
       // Issue messages
-      "no-th": "Geen tabelkoppen (`<th>`) gevonden. Markeer koppen met `<th>` in plaats van `<td>`.",
-      "th-no-scope": "{count} tabelkop(pen) mist een scope-attribuut (`scope=\"col\"` of `scope=\"row\"`).",
-      "empty-th": "{count} tabelkop(pen) is leeg. Vul een beschrijvende tekst in.",
+      "no-th": "Geen kopcellen (`<th>`) gevonden. Markeer kopcellen met `<th>` in plaats van `<td>`. Gebruik je deze tabel alleen voor de vormgeving en niet voor gegevens? Dan zijn kopcellen niet nodig. Geef de tabel dan `role=\"presentation\"`, zodat hulpsoftware hem niet als datatabel behandelt.",
+      "th-no-scope": "{count} kopcel(len) mist een scope-attribuut (`scope=\"col\"` of `scope=\"row\"`).",
+      "empty-th": "{count} kopcel(len) is leeg. Vul een beschrijvende tekst in.",
       "no-accessible-name": "Tabel heeft geen accessible name. Voeg een `<caption>` of `aria-label` toe (meerdere tabellen op pagina).",
       "invalid-headers-ref": "`headers`-attribuut verwijst naar niet-bestaand id \"{ref}\" in cel \"{cell}\".",
       "sortable-no-aria-sort": "Sorteerbare kolom \"{header}\" mist `aria-sort`-attribuut.",
       "layout-has-th": "Layout-tabel bevat {count} `<th>`-element(en). Verwijder deze of verwijder `role=\"presentation\"`.",
       "layout-has-caption": "Layout-tabel bevat een `<caption>`. Verwijder deze of verwijder `role=\"presentation\"`.",
       "layout-has-summary": "Layout-tabel bevat een `summary`-attribuut. Verwijder dit of verwijder `role=\"presentation\"`.",
-      "possible-layout-table": "Deze tabel heeft geen koppen en maar 1 rij. Is dit een layout-tabel? Voeg dan `role=\"presentation\"` toe.",
+      "possible-layout-table": "Deze tabel heeft geen kopcellen en maar 1 rij. Is dit een layout-tabel? Voeg dan `role=\"presentation\"` toe.",
       // Severity
       error: "Fout",
+      errorPlural: "fouten",
       warning: "Waarschuwing",
+      warningPlural: "waarschuwingen",
       // CTA
       ctaHtml: "Wil je alle tabellen op je hele website laten controleren? <a href=\"/contact\">Neem contact op</a> voor een complete WCAG-audit.",
       // Toggle
@@ -83,22 +87,24 @@
       gateError: "Incorrect password. Please try again.",
       intro: "Enter a URL to check all tables on that page for digital accessibility. You\u2019ll see the structure, issues and warnings per table.",
       urlLabel: "Page URL",
+      urlHint: "Enter the full web address, for example https://www.example.com. If you leave out https://, we add it automatically.",
+      errorUrlEmpty: "Enter a web address first.",
+      errorUrlInvalid: "This is not a valid web address. Use an address like https://www.example.com.",
       urlPlaceholder: "https://www.example.com",
       submitBtn: "Check",
       submitBusy: "Checking...",
       loading: "Fetching and analyzing page...",
       fetchError: "Could not analyze the page. Check the URL and try again.",
       lblTables: "Tables",
-      lblData: "Data table",
-      lblLayout: "Layout table",
+      lblRolePresentation: "with role=\"presentation\"",
       lblIssues: "Errors",
       lblWarnings: "Warnings",
       noTables: "No tables found on this page.",
-      jsNotice: "Note: tables rendered via JavaScript (e.g. by a cookie manager or framework) are not detected.",
+      jsNotice: "Note: this tool only sees tables that are directly in the page HTML. Tables rendered via JavaScript (e.g. by a cookie manager or framework), tables that only appear after an action (such as clicking, filtering or scrolling), and tables inside iframes are not detected.",
       tableNum: "Table",
       type: "Type",
-      dataTable: "Data table",
-      layoutTable: "Layout table",
+      dataTable: "Treated as data table",
+      layoutTable: "Layout table (role=\"presentation\")",
       structure: "Structure",
       rows: "rows",
       cols: "columns",
@@ -110,7 +116,7 @@
       location: "Location",
       issuesFound: "Issues found",
       noIssues: "No issues found",
-      "no-th": "No table headers (`<th>`) found. Mark headers with `<th>` instead of `<td>`.",
+      "no-th": "No table header cells (`<th>`) found. Mark header cells with `<th>` instead of `<td>`. Are you using this table only for layout and not for data? Then header cells are not needed. Give the table `role=\"presentation\"` instead, so assistive technology does not treat it as a data table.",
       "th-no-scope": "{count} header cell(s) missing a scope attribute (`scope=\"col\"` or `scope=\"row\"`).",
       "empty-th": "{count} header cell(s) are empty. Add descriptive text.",
       "no-accessible-name": "Table has no accessible name. Add a `<caption>` or `aria-label` (multiple tables on page).",
@@ -119,9 +125,11 @@
       "layout-has-th": "Layout table contains {count} `<th>` element(s). Remove them or remove `role=\"presentation\"`.",
       "layout-has-caption": "Layout table contains a `<caption>`. Remove it or remove `role=\"presentation\"`.",
       "layout-has-summary": "Layout table contains a `summary` attribute. Remove it or remove `role=\"presentation\"`.",
-      "possible-layout-table": "This table has no headers and only 1 row. Is it a layout table? Add `role=\"presentation\"` if so.",
+      "possible-layout-table": "This table has no header cells and only 1 row. Is it a layout table? Add `role=\"presentation\"` if so.",
       error: "Error",
+      errorPlural: "errors",
       warning: "Warning",
+      warningPlural: "warnings",
       ctaHtml: "Want to check all tables across your entire website? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
       langLabel: "Schakel naar Nederlands"
     }
@@ -205,6 +213,7 @@
 
   var form = document.getElementById("checkerForm");
   var urlInput = document.getElementById("urlInput");
+  var urlError = document.getElementById("urlError");
   var submitBtn = document.getElementById("submitBtn");
   var output = document.getElementById("output");
   var cta = document.getElementById("tabelCta");
@@ -234,14 +243,54 @@
   }
 
   // ============================================================
+  // URL validation
+  // ============================================================
+
+  function showUrlError(message) {
+    if (urlError) {
+      urlError.textContent = message;
+      urlError.removeAttribute("hidden");
+    }
+    urlInput.setAttribute("aria-invalid", "true");
+    urlInput.setAttribute("aria-describedby", "urlHint urlError");
+    urlInput.focus();
+  }
+
+  function clearUrlError() {
+    if (urlError) {
+      urlError.textContent = "";
+      urlError.setAttribute("hidden", "");
+    }
+    urlInput.removeAttribute("aria-invalid");
+    urlInput.setAttribute("aria-describedby", "urlHint");
+  }
+
+  // ============================================================
   // Form handler
   // ============================================================
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var url = urlInput.value.trim();
-    if (!url) return;
+    var raw = urlInput.value.trim();
+    if (!raw) {
+      showUrlError(t("errorUrlEmpty"));
+      return;
+    }
+
+    var url = raw;
+    if (!/^https?:\/\//i.test(url)) {
+      url = "https://" + url;
+    }
+
+    try {
+      new URL(url);
+    } catch (err) {
+      showUrlError(t("errorUrlInvalid"));
+      return;
+    }
+
+    clearUrlError();
 
     submitBtn.disabled = true;
     submitBtn.textContent = t("submitBusy");
@@ -285,7 +334,7 @@
 
     // Summary cards
     html += '<div class="tool-alt__summary">';
-    html += summaryCard(s.totalTables, t("lblTables"), s.dataTables + " " + t("lblData").toLowerCase() + ", " + s.layoutTables + " " + t("lblLayout").toLowerCase());
+    html += summaryCard(s.totalTables, t("lblTables"), s.layoutTables + " " + t("lblRolePresentation"));
     html += summaryCard(s.totalIssues, t("lblIssues"), "", s.totalIssues > 0 ? "tool-tbl__card--error" : "tool-tbl__card--ok");
     html += summaryCard(s.totalWarnings, t("lblWarnings"), "", s.totalWarnings > 0 ? "tool-tbl__card--warning" : "tool-tbl__card--ok");
     html += "</div>";
@@ -307,8 +356,8 @@
 
   function summaryCard(count, label, detail, extraClass) {
     return '<div class="tool-alt__summary-card ' + (extraClass || "") + '">' +
-      '<span class="tool-alt__summary-count">' + count + "</span>" +
-      '<span class="tool-alt__summary-label">' + escapeHtml(label) + "</span>" +
+      '<span class="tool-alt__summary-count">' + count + "</span> " +
+      '<span class="tool-alt__summary-label">' + escapeHtml(label) + "</span> " +
       (detail ? '<span class="tool-alt__summary-detail">' + escapeHtml(detail) + "</span>" : "") +
       "</div>";
   }
@@ -329,16 +378,16 @@
 
     // Header
     html += '<h2 class="tool-tbl__table-title">';
-    html += '<span class="tool-tbl__table-num">' + t("tableNum") + " " + table.index + "</span>";
-    html += '<span class="tool-tbl__table-type tool-tbl__table-type--' + table.type + '">' + escapeHtml(typeLabel) + "</span>";
+    html += '<span class="tool-tbl__table-num">' + t("tableNum") + " " + table.index + "</span> ";
+    html += '<span class="tool-tbl__table-type tool-tbl__table-type--' + table.type + '">' + escapeHtml(typeLabel) + "</span> ";
     if (errorCount > 0) {
-      html += '<span class="tool-tbl__badge tool-tbl__badge--error">' + errorCount + " " + t("error").toLowerCase() + (errorCount > 1 ? "en" : "") + "</span>";
+      html += '<span class="tool-tbl__badge tool-tbl__badge--error">' + errorCount + " " + escapeHtml(errorCount === 1 ? t("error").toLowerCase() : t("errorPlural")) + "</span> ";
     }
     if (warnCount > 0) {
-      html += '<span class="tool-tbl__badge tool-tbl__badge--warning">' + warnCount + " " + t("warning").toLowerCase() + (warnCount > 1 ? "en" : "") + "</span>";
+      html += '<span class="tool-tbl__badge tool-tbl__badge--warning">' + warnCount + " " + escapeHtml(warnCount === 1 ? t("warning").toLowerCase() : t("warningPlural")) + "</span> ";
     }
     if (!hasIssues) {
-      html += '<span class="tool-tbl__badge tool-tbl__badge--ok">\u2713</span>';
+      html += '<span class="tool-tbl__badge tool-tbl__badge--ok">\u2713 ' + escapeHtml(t("noIssues")) + "</span>";
     }
     html += "</h2>";
 

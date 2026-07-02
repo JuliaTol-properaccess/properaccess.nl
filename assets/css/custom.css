@@ -2396,9 +2396,9 @@ html.dark .tool-heading__form-field input[type="url"] {
 }
 
 .tool-heading__form-field input[type="url"]:focus {
-  outline: 3px solid #2563eb;
+  outline: 3px solid #A30D4B;
   outline-offset: 2px;
-  border-color: #2563eb;
+  border-color: #A30D4B;
 }
 
 .tool-heading__submit {
@@ -2417,7 +2417,7 @@ html.dark .tool-heading__form-field input[type="url"] {
 .tool-heading__submit:hover { background: #374151; }
 
 .tool-heading__submit:focus {
-  outline: 3px solid #2563eb;
+  outline: 2px solid #A30D4B;
   outline-offset: 2px;
 }
 
@@ -2487,9 +2487,9 @@ html.dark .tool-heading__summary-stats {
   color: var(--color-darkmode-text);
 }
 
-.tool-heading__stat--error { color: #dc2626; font-weight: 600; }
-.tool-heading__stat--warning { color: #d97706; font-weight: 600; }
-.tool-heading__stat--ok { color: #16a34a; font-weight: 600; }
+.tool-heading__stat--error { color: #b91c1c; font-weight: 600; }
+.tool-heading__stat--warning { color: #92400e; font-weight: 600; }
+.tool-heading__stat--ok { color: #166534; font-weight: 600; }
 
 /* Issues */
 .tool-heading__issues {
@@ -2585,7 +2585,7 @@ html.dark .tool-heading__text {
 }
 
 .tool-heading__text--empty {
-  color: #dc2626;
+  color: #b91c1c;
   font-style: italic;
 }
 
@@ -2596,7 +2596,7 @@ html.dark .tool-heading__text {
 
 .tool-heading__skip-marker {
   font-size: 0.75rem;
-  color: #dc2626;
+  color: #b91c1c;
   font-weight: 600;
   flex-shrink: 0;
 }
@@ -7543,7 +7543,7 @@ html.dark .tool-pdf__bg {
   border-radius: 1.25rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #6b7280;
+  color: #4b5563;
   transition: background 0.2s, color 0.2s;
 }
 
@@ -7654,7 +7654,7 @@ html.dark .tool-pdf__upload-text {
 
 .tool-pdf__upload-sub {
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: #4b5563;
   margin: 0 0 0.75rem;
 }
 
@@ -8144,10 +8144,10 @@ html.dark .tool-pdf__check-title {
   border-radius: 3px;
 }
 
-.tool-pdf__check-badge--pass { background: rgba(22, 163, 74, 0.1); color: #16a34a; }
+.tool-pdf__check-badge--pass { background: rgba(22, 163, 74, 0.1); color: #166534; }
 .tool-pdf__check-badge--fail { background: rgba(163, 13, 75, 0.1); color: #A30D4B; }
-.tool-pdf__check-badge--warn { background: rgba(217, 119, 6, 0.1); color: #d97706; }
-.tool-pdf__check-badge--na   { background: rgba(156, 163, 175, 0.1); color: #9ca3af; }
+.tool-pdf__check-badge--warn { background: rgba(217, 119, 6, 0.1); color: #92400e; }
+.tool-pdf__check-badge--na   { background: rgba(156, 163, 175, 0.1); color: #4b5563; }
 
 html.dark .tool-pdf__check-badge--pass { background: rgba(22, 163, 74, 0.15); }
 html.dark .tool-pdf__check-badge--fail { background: rgba(232, 160, 186, 0.15); color: #e8a0ba; }
@@ -8236,7 +8236,7 @@ html.dark .tool-pdf__check-pages {
   content: "\25B6";
   display: inline-block;
   font-size: 0.65rem;
-  color: #9ca3af;
+  color: #4b5563;
   transition: transform 0.2s;
 }
 
@@ -8594,7 +8594,7 @@ html.dark .tool-alt__summary-label {
 .tool-alt__summary-detail {
   display: block;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #4b5563;
 }
 
 html.dark .tool-alt__summary-detail {
@@ -8750,7 +8750,7 @@ html.dark .tool-alt__item-label {
 
 .tool-alt__status-badge--review {
   background: #f3f4f6;
-  color: #6b7280;
+  color: #4b5563;
 }
 
 html.dark .tool-alt__status-badge--error {
@@ -8770,7 +8770,7 @@ html.dark .tool-alt__status-badge--review {
   text-align: center;
   font-size: 0.7rem;
   font-weight: 700;
-  color: #6b7280;
+  color: #4b5563;
   background: #f3f4f6;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
@@ -8793,7 +8793,7 @@ html.dark .tool-alt__type-label {
 
 .tool-alt__review-text {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #4b5563;
   font-style: italic;
 }
 
@@ -8828,7 +8828,7 @@ html.dark .tool-alt__thumbnail {
 
 .tool-alt__no-thumb {
   font-size: 0.75rem;
-  color: #9ca3af;
+  color: #4b5563;
   font-style: italic;
 }
 
@@ -8866,7 +8866,7 @@ html.dark .tool-alt__empty-text {
 
 .tool-alt__decorative-text {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #4b5563;
   font-style: italic;
 }
 
@@ -11134,15 +11134,15 @@ html.dark .vw-faq .faq-answer {
 }
 .tool-tbl__badge--error {
   background: #fef2f2;
-  color: #dc2626;
+  color: #b91c1c;
 }
 .tool-tbl__badge--warning {
   background: #fffbeb;
-  color: #d97706;
+  color: #92400e;
 }
 .tool-tbl__badge--ok {
   background: #f0fdf4;
-  color: #16a34a;
+  color: #166534;
 }
 
 .tool-tbl__card--error .tool-alt__summary-count {
@@ -11358,7 +11358,7 @@ a.tool-link__href-url:hover {
   padding: 0.1rem 0.5rem;
   border-radius: 1rem;
   background: #f3f4f6;
-  color: #6b7280;
+  color: #4b5563;
   white-space: nowrap;
 }
 .tool-link__tag--external {
@@ -15621,4 +15621,96 @@ html.dark .tool-spacing__preview {
   .tool-spacing__controls {
     grid-template-columns: 1fr;
   }
+}
+
+/* ============================================================
+   Tools: zichtbare focus en formulierlabels
+   (verwerking toegankelijkheidsfeedback juni 2026)
+   ============================================================ */
+
+/* Zichtbare focus op magenta knoppen: donkerblauwe outline met offset,
+   zodat de indicator tegen de witte achtergrond >= 3:1 haalt. */
+.tool-alt__btn:focus-visible,
+.tool-alt__filter-btn:focus-visible,
+.tool-link__filter-btn:focus-visible,
+.tool-pdf__upload-btn:focus-visible,
+.tool-pdf__export:focus-visible,
+.tool-pdf__reset:focus-visible {
+  outline: 2px solid #1F2937;
+  outline-offset: 2px;
+}
+
+html.dark .tool-alt__btn:focus-visible,
+html.dark .tool-alt__filter-btn:focus-visible,
+html.dark .tool-link__filter-btn:focus-visible,
+html.dark .tool-pdf__upload-btn:focus-visible,
+html.dark .tool-pdf__export:focus-visible,
+html.dark .tool-pdf__reset:focus-visible {
+  outline-color: #ffffff;
+}
+
+/* Zichtbaar label, invoerhint en foutmelding bij het URL-veld */
+.tool-url-label {
+  display: block;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.25rem;
+}
+
+.tool-url-hint {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin: 0 0 0.5rem;
+}
+
+.tool-url-error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0;
+}
+
+html.dark .tool-url-label { color: var(--color-darkmode-text); }
+html.dark .tool-url-hint { color: #9ca3af; }
+html.dark .tool-url-error { color: #fda4af; }
+
+/* Koppen-checker: tekstlabel bij issue-blokken + disclaimer-noot */
+.tool-heading__issue-label {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.tool-heading__note {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-top: 1.25rem;
+}
+
+html.dark .tool-heading__note { color: #9ca3af; }
+
+/* PDF-checker: checktitels zijn nu h3's; reset heading-styling zodat de bestaande opmaak blijft */
+.tool-pdf__check-heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* PDF-checker: 'Oplossing'-label is nu een h4 i.p.v. strong */
+h4.tool-pdf__fix-label {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* PDF-checker: zichtbare focusring op 'Kies een bestand' als het verborgen file-input focus heeft */
+.tool-pdf__upload-btn--focus {
+  outline: 2px solid #1F2937;
+  outline-offset: 2px;
+}
+
+html.dark .tool-pdf__upload-btn--focus {
+  outline-color: #ffffff;
 }

@@ -29,6 +29,9 @@
       intro: "Voer een URL in om alle afbeeldingen op die pagina te controleren.",
       urlLabel: "URL van de pagina",
       urlPlaceholder: "https://www.voorbeeld.nl",
+      urlHint: "Vul het volledige webadres in, bijvoorbeeld https://www.voorbeeld.nl. Een adres zonder https:// vullen we automatisch aan.",
+      errorUrlEmpty: "Vul eerst een webadres in.",
+      errorUrlInvalid: "Dit is geen geldig webadres. Gebruik een adres zoals https://www.voorbeeld.nl.",
       submitBtn: "Controleer",
       submitBusy: "Bezig...",
       loading: "Pagina ophalen en analyseren...",
@@ -40,15 +43,21 @@
       // Summary
       lblImages: "Afbeeldingen",
       lblOther: "Andere typen afbeeldingen",
+      otherExplain: "Dit zijn SVG-afbeeldingen en icoon-fonts. Ze hebben geen alt-attribuut; hulpsoftware gebruikt hun toegankelijke naam (bijvoorbeeld uit aria-label of title). Bij icoon-fonts tonen we de CSS-class zodat je het icoon kunt terugvinden.",
       noneFound: "Geen gevonden",
-      present: "goed",
+      present: "informatief",
       missing: "fout",
       decorative: "decoratief",
       emptyInteractive: "leeg in link/knop",
-      good: "goed",
+      good: "informatief",
       redundant: "overbodig",
       hidden: "verborgen",
-      review: "controleer zelf",
+      review: "zelf controleren",
+      // Limitations (disclaimer)
+      limitsTitle: "Wat deze tool niet kan beoordelen",
+      limitsCss: "Afbeeldingen die via CSS zijn verborgen of toegevoegd.",
+      limitsRedundant: "Of een alt-tekst hetzelfde zegt als de tekst ernaast (een overbodige alt-tekst).",
+      limitsLogo: "Of de alt-tekst van een logo overeenkomt met de tekst die in het logo zichtbaar is.",
       // Card labels
       lblAltText: "Alt-tekst",
       lblName: "Naam",
@@ -106,6 +115,9 @@
       intro: "Enter a URL to check all images on that page.",
       urlLabel: "Page URL",
       urlPlaceholder: "https://www.example.com",
+      urlHint: "Enter the full web address, for example https://www.example.com. If you leave out https://, we add it automatically.",
+      errorUrlEmpty: "Enter a web address first.",
+      errorUrlInvalid: "This is not a valid web address. Use an address like https://www.example.com.",
       submitBtn: "Check",
       submitBusy: "Checking...",
       loading: "Fetching and analyzing page...",
@@ -115,15 +127,21 @@
       filterProblems: "Only problems",
       lblImages: "Images",
       lblOther: "Other image types",
+      otherExplain: "These are SVG images and icon fonts. They have no alt attribute; assistive technology uses their accessible name (for example from aria-label or title). For icon fonts we show the CSS class so you can find the icon.",
       noneFound: "None found",
-      present: "good",
+      present: "informative",
       missing: "error",
       decorative: "decorative",
       emptyInteractive: "empty in link/button",
-      good: "good",
+      good: "informative",
       redundant: "redundant",
       hidden: "hidden",
       review: "review",
+      // Limitations (disclaimer)
+      limitsTitle: "What this tool cannot check",
+      limitsCss: "Images that are hidden or added via CSS.",
+      limitsRedundant: "Whether an alt text repeats the text next to the image (a redundant alt text).",
+      limitsLogo: "Whether a logo's alt text matches the text visible in the logo.",
       lblAltText: "Alt text",
       lblName: "Name",
       lblLocation: "Location",
@@ -233,6 +251,7 @@
 
   var form = document.getElementById("checkerForm");
   var urlInput = document.getElementById("urlInput");
+  var urlError = document.getElementById("urlError");
   var submitBtn = document.getElementById("submitBtn");
   var output = document.getElementById("output");
   var cta = document.getElementById("altCta");
@@ -266,11 +285,50 @@
   // Form handler
   // ============================================================
 
+  // Custom URL validation (SC 3.3.1): visible error message instead of
+  // native browser validation, and auto-prepend https:// when missing.
+
+  function showUrlError(msg) {
+    if (urlError) {
+      urlError.textContent = msg;
+      urlError.removeAttribute("hidden");
+    }
+    urlInput.setAttribute("aria-invalid", "true");
+    urlInput.setAttribute("aria-describedby", "urlHint urlError");
+    urlInput.focus();
+  }
+
+  function clearUrlError() {
+    if (urlError) {
+      urlError.textContent = "";
+      urlError.setAttribute("hidden", "");
+    }
+    urlInput.removeAttribute("aria-invalid");
+    urlInput.setAttribute("aria-describedby", "urlHint");
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var url = urlInput.value.trim();
-    if (!url) return;
+    var raw = urlInput.value.trim();
+    if (!raw) {
+      showUrlError(t("errorUrlEmpty"));
+      return;
+    }
+
+    if (!/^https?:\/\//i.test(raw)) {
+      raw = "https://" + raw;
+    }
+
+    var url;
+    try {
+      url = new URL(raw).href;
+    } catch (err) {
+      showUrlError(t("errorUrlInvalid"));
+      return;
+    }
+
+    clearUrlError();
 
     submitBtn.disabled = true;
     submitBtn.textContent = t("submitBusy");
@@ -386,13 +444,13 @@
 
     // Images section
     if (data.images.length > 0) {
-      html += renderSection(t("lblImages"), data.images, renderImageCard);
+      html += renderSection(t("lblImages"), data.images, renderImageCard, null);
     }
 
     // Other types section (SVGs + icons combined)
     var otherItems = [].concat(data.svgs, data.icons);
     if (otherItems.length > 0) {
-      html += renderSection(t("lblOther"), otherItems, renderOtherCard);
+      html += renderSection(t("lblOther"), otherItems, renderOtherCard, t("otherExplain"));
     }
 
     // Nothing found
@@ -404,46 +462,65 @@
     return html;
   }
 
-  function summaryCard(total, label, detail) {
-    return '<div class="tool-alt__summary-card">' +
+  function summaryCard(total, label, detailLines) {
+    var html = '<div class="tool-alt__summary-card">' +
       '<span class="tool-alt__summary-count">' + total + "</span>" +
-      '<span class="tool-alt__summary-label">' + label + "</span>" +
-      '<span class="tool-alt__summary-detail">' + detail + "</span>" +
-      "</div>";
+      '<span class="tool-alt__summary-label">' + label + "</span>";
+    for (var i = 0; i < detailLines.length; i++) {
+      html += '<span class="tool-alt__summary-detail">' + escapeHtml(detailLines[i]) + "</span>";
+    }
+    html += "</div>";
+    return html;
   }
 
+  // Line 1: image types (informative, decorative)
+  // Line 2 (only when present): problems (errors, review)
   function summarizeImages(s) {
-    if (s.imgTotal === 0) return t("noneFound");
-    var parts = [];
-    if (s.imgPresent > 0) parts.push(s.imgPresent + " " + t("present"));
-    if (s.imgMissing > 0) parts.push(s.imgMissing + " " + t("missing"));
-    if (s.imgDecorative > 0) parts.push(s.imgDecorative + " " + t("decorative"));
-    if (s.imgEmptyInteractive > 0) parts.push(s.imgEmptyInteractive + " " + t("emptyInteractive"));
-    if (s.imgReview > 0) parts.push(s.imgReview + " " + t("review"));
-    return parts.join(", ");
+    if (s.imgTotal === 0) return [t("noneFound")];
+    var types = [];
+    if (s.imgPresent > 0) types.push(s.imgPresent + " " + t("present"));
+    if (s.imgDecorative > 0) types.push(s.imgDecorative + " " + t("decorative"));
+    var problems = [];
+    var errors = s.imgMissing + s.imgEmptyInteractive;
+    if (errors > 0) problems.push(errors + " " + t("missing"));
+    if (s.imgReview > 0) problems.push(s.imgReview + " " + t("review"));
+    var lines = [];
+    if (types.length > 0) lines.push(types.join(", "));
+    if (problems.length > 0) lines.push(problems.join(", "));
+    return lines;
   }
 
   function summarizeOther(s) {
     var total = s.svgTotal + s.iconTotal;
-    if (total === 0) return t("noneFound");
-    var good = s.svgGood + s.iconGood + s.svgDecorative + s.svgHidden + s.iconDecorative + s.iconHidden;
+    if (total === 0) return [t("noneFound")];
+    var informative = s.svgGood + s.iconGood;
+    var decorative = s.svgDecorative + s.svgHidden + s.iconDecorative + s.iconHidden;
     var errors = s.svgMissing + s.iconMissing;
     var reviews = s.svgRedundant + s.svgReview + s.iconReview;
-    var parts = [];
-    if (good > 0) parts.push(good + " " + t("good"));
-    if (errors > 0) parts.push(errors + " " + t("missing"));
-    if (reviews > 0) parts.push(reviews + " " + t("review"));
-    return parts.join(", ");
+    var types = [];
+    if (informative > 0) types.push(informative + " " + t("present"));
+    if (decorative > 0) types.push(decorative + " " + t("decorative"));
+    var problems = [];
+    if (errors > 0) problems.push(errors + " " + t("missing"));
+    if (reviews > 0) problems.push(reviews + " " + t("review"));
+    var lines = [];
+    if (types.length > 0) lines.push(types.join(", "));
+    if (problems.length > 0) lines.push(problems.join(", "));
+    return lines;
   }
 
   // ============================================================
   // Render sections with cards
   // ============================================================
 
-  function renderSection(title, items, cardRenderer) {
+  function renderSection(title, items, cardRenderer, note) {
     var html = '<div class="tool-alt__section">';
     html += '<h2 class="tool-alt__section-title">' + escapeHtml(title) +
       ' <span class="tool-alt__section-count">' + items.length + "</span></h2>";
+
+    if (note) {
+      html += '<p class="tool-alt__notice">' + escapeHtml(note) + '</p>';
+    }
 
     html += '<div class="tool-alt__items">';
     for (var i = 0; i < items.length; i++) {

@@ -306,10 +306,13 @@ function buildContextMap(html) {
     });
   }
 
-  const hRe = /<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi;
+  const hRe = /<h([1-6])((?:\s[^>]*)?)>([\s\S]*?)<\/h\1>/gi;
   let hm;
   while ((hm = hRe.exec(html)) !== null) {
-    const text = hm[2].replace(/<[^>]+>/g, "").trim();
+    // Skip headings that are hidden from sighted users, so the tool
+    // never points to a heading the visitor cannot see on the page.
+    if (isVisuallyHidden(hm[2] || "")) continue;
+    const text = hm[3].replace(/<[^>]+>/g, "").trim();
     headings.push({
       level: parseInt(hm[1], 10),
       text: text || "(leeg)",
@@ -318,6 +321,23 @@ function buildContextMap(html) {
   }
 
   return { landmarks, headings };
+}
+
+// Detect elements hidden via aria-hidden, the hidden attribute, inline
+// styles, or common visually-hidden utility classes. Static HTML parsing
+// cannot see external CSS, so this covers only the reliable cases.
+const HIDDEN_CLASS_RE = /(?:^|\s)(?:sr-only|visually-hidden|visuallyhidden|screen-reader-text|show-for-sr|u-vishidden)(?:-|\s|$)/i;
+
+function isVisuallyHidden(attrs) {
+  if (!attrs) return false;
+  if ((getAttr(attrs, "aria-hidden") || "").toLowerCase() === "true") return true;
+  // Standalone `hidden` attribute (avoid matching aria-hidden via getAttr)
+  if (/(?:^|\s)hidden(?:\s*=|\s|$)/i.test(attrs)) return true;
+  const style = getAttr(attrs, "style") || "";
+  if (/display\s*:\s*none|visibility\s*:\s*hidden/i.test(style)) return true;
+  const className = getAttr(attrs, "class") || "";
+  if (HIDDEN_CLASS_RE.test(className)) return true;
+  return false;
 }
 
 function getLandmark(position, context) {
@@ -444,7 +464,9 @@ function extractImages(html, context, baseUrl, pageLang) {
     if (role === "presentation" || role === "none" || ariaHidden === "true") {
       status = "decorative";
     } else if (alt === null && ariaLabel === null) {
-      // No alt attribute at all — WCAG violation
+      // No alt attribute at all — always a WCAG violation, also inside a
+      // link or button that already has text. Only an explicit alt="" makes
+      // an image in a link/button with text correctly decorative.
       status = "missing";
     } else if ((alt !== null && alt.trim() === "") && ariaLabel === null) {
       // alt="" — decorative if standalone or in interactive with text
@@ -478,9 +500,66 @@ function extractImages(html, context, baseUrl, pageLang) {
       interactive: interactive ? { element: interactive.element, hasText: interactive.hasText } : null,
       landmark,
       nearestHeading,
+      position,
     });
   }
 
+  // <input type="image"> is a graphical submit button: the alt attribute
+  // is required (it is the accessible name of the button).
+  const inputRe = /<input\s([^>]*?)\/?>/gi;
+  let im;
+  while ((im = inputRe.exec(html)) !== null) {
+    const attrs = im[1];
+    const inputType = (getAttr(attrs, "type") || "").toLowerCase();
+    if (inputType !== "image") continue;
+
+    const position = im.index;
+    const src = getAttr(attrs, "src");
+    const alt = getAttr(attrs, "alt");
+    const ariaLabel = getAttr(attrs, "aria-label");
+
+    let resolvedSrc = src;
+    if (src && !src.startsWith("http") && !src.startsWith("data:")) {
+      try {
+        resolvedSrc = new URL(src, baseUrl).href;
+      } catch { /* keep original */ }
+    }
+
+    let status;
+    const issues = [];
+
+    if (alt === null && ariaLabel === null) {
+      // No alt attribute at all — WCAG violation
+      status = "missing";
+    } else if ((alt === null || alt.trim() === "") && !ariaLabel) {
+      // alt="" is never allowed here: the button would have no name
+      status = "empty-interactive";
+    } else {
+      const text = ariaLabel || alt || "";
+      const quality = checkAltQuality(text, pageLang);
+      if (quality.length > 0) {
+        status = "review";
+        issues.push(...quality);
+      } else {
+        status = "present";
+      }
+    }
+
+    images.push({
+      type: "input-image",
+      src: resolvedSrc || "",
+      alt,
+      ariaLabel,
+      status,
+      issues,
+      interactive: { element: "button", hasText: false },
+      landmark: getLandmark(position, context),
+      nearestHeading: getNearestHeading(position, context),
+      position,
+    });
+  }
+
+  images.sort((a, b) => a.position - b.position);
   return images;
 }
 
@@ -565,7 +644,10 @@ function extractSvgs(html, context) {
 
 function extractIcons(html, context) {
   const icons = [];
-  const iconRe = /<(i|span)\s([^>]*class\s*=\s*["'][^"']*(?:fa-|icon-|material-|bi-|glyphicon)[^"']*["'][^>]*)>([\s\S]*?)<\/\1>/gi;
+  // The icon prefix must start a class token (right after the opening quote
+  // or after a space), so classes like "lexicon-item" or "combi-box" are
+  // not mistaken for icon fonts.
+  const iconRe = /<(i|span)\s([^>]*class\s*=\s*["'](?:[^"']*\s)?(?:fa-|icon-|material-|bi-|glyphicon)[^"']*["'][^>]*)>([\s\S]*?)<\/\1>/gi;
   let m;
 
   while ((m = iconRe.exec(html)) !== null) {

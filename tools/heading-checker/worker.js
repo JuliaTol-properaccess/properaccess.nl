@@ -185,6 +185,7 @@ function analyzeHeadings(headings) {
   if (visibleHeadings.length === 0) {
     issues.push({
       type: "error",
+      code: "no-headings",
       message: "Geen koppen gevonden op deze pagina.",
     });
     return issues;
@@ -194,8 +195,9 @@ function analyzeHeadings(headings) {
   const h1Count = visibleHeadings.filter((h) => h.level === 1).length;
   if (h1Count === 0) {
     issues.push({
-      type: "error",
-      message: "Geen <h1> gevonden. Elke pagina moet een hoofdkop hebben.",
+      type: "warning",
+      code: "no-h1",
+      message: "Geen <h1> gevonden. Gebruik bij voorkeur één hoofdkop per pagina.",
     });
   }
 
@@ -203,6 +205,8 @@ function analyzeHeadings(headings) {
   if (h1Count > 1) {
     issues.push({
       type: "warning",
+      code: "multiple-h1",
+      count: h1Count,
       message: `${h1Count} <h1>-koppen gevonden. Een pagina heeft meestal één hoofdkop nodig.`,
     });
   }
@@ -211,6 +215,8 @@ function analyzeHeadings(headings) {
   if (visibleHeadings.length > 0 && visibleHeadings[0].level !== 1) {
     issues.push({
       type: "warning",
+      code: "first-not-h1",
+      level: visibleHeadings[0].level,
       message: `De eerste kop is een <h${visibleHeadings[0].level}> in plaats van een <h1>.`,
     });
   }
@@ -227,6 +233,10 @@ function analyzeHeadings(headings) {
       }
       issues.push({
         type: "error",
+        code: "level-skipped",
+        from: previous,
+        to: current,
+        text: visibleHeadings[i].text,
         message: `Kopniveau overgeslagen: van <h${previous}> naar <h${current}> (${skipped.join(", ")} ontbreekt). Bij "${visibleHeadings[i].text}".`,
         headingIndex: i,
       });
@@ -241,7 +251,12 @@ function analyzeHeadings(headings) {
     if (current.level <= previous.level && !current.hasContentBefore) {
       issues.push({
         type: "warning",
-        message: `<h${current.level}> volgt direct op <h${previous.level}> zonder tussenliggende content. Bij "${current.text}".`,
+        code: "consecutive-same-level",
+        level: current.level,
+        prevLevel: previous.level,
+        prevText: previous.text,
+        text: current.text,
+        message: `<h${previous.level}> "${previous.text}" wordt direct gevolgd door <h${current.level}> "${current.text}" zonder tussenliggende content. Controleer of het eerste element echt een kop is.`,
         headingIndex: i,
       });
     }
@@ -251,7 +266,9 @@ function analyzeHeadings(headings) {
   headings.forEach((h, index) => {
     if (h.text === "(leeg)" && !h.hidden) {
       issues.push({
-        type: "error",
+        type: "warning",
+        code: "empty-heading",
+        level: h.level,
         message: `Lege <h${h.level}> gevonden. Een kop zonder tekst is niet bruikbaar voor screenreaders.`,
         headingIndex: index,
       });
