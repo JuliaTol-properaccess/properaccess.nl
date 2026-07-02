@@ -44,7 +44,7 @@
             Proper Access B.V.<br>
             Keizersgracht 520 H<br>
             1017 EK Amsterdam<br>
-            Nederland<br>
+            {{ i18n "footer_country" | default "Nederland" }}<br>
             <span class="site-footer__address-legal">KvK 95350985 · BTW NL867096755B01</span>
           </address>
         </div>
@@ -53,11 +53,16 @@
         <div class="site-footer__col">
           <h4 class="site-footer__col-title">{{ i18n "footer_services_title" | default "Diensten" }}</h4>
           <ul class="site-footer__links">
+            {{ if eq site.Language.Lang "en" }}
+            <li><a href="/en/accessibility-audit/">Accessibility audit</a></li>
+            <li><a href="/en/quick-scan/">Mini audit</a></li>
+            {{ else }}
             <li><a href="/toegankelijkheidsaudit/">WCAG-audit</a></li>
             <li><a href="/app-toegankelijkheid-testen/">App-audit</a></li>
             <li><a href="/quickscan-digitale-toegankelijkheid/">Mini-audit</a></li>
             <li><a href="/strippenkaart/">Strippenkaart</a></li>
             <li><a href="/academy/">Academy</a></li>
+            {{ end }}
           </ul>
         </div>
 
@@ -65,12 +70,19 @@
         <div class="site-footer__col">
           <h4 class="site-footer__col-title">{{ i18n "footer_company_title" | default "Bedrijf" }}</h4>
           <ul class="site-footer__links">
+            {{ if eq site.Language.Lang "en" }}
+            <li><a href="/en/proper_access_in_english/">{{ i18n "footer_about" | default "About us" }}</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="/en/tools/">Tools</a></li>
+            <li><a href="/en/contact/">Contact</a></li>
+            {{ else }}
             <li><a href="/auditbureau-digitale-toegankelijkheid/">Over ons</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/tools/">Tools</a></li>
             <li><a href="/bijzondere-initiatieven/">Bijzondere initiatieven</a></li>
             <li><a href="/samenwerken-proper-access/">Samenwerken</a></li>
             <li><a href="/contact/">Contact</a></li>
+            {{ end }}
           </ul>
         </div>
 
@@ -79,7 +91,7 @@
           <h4 class="site-footer__col-title">{{ i18n "footer_legal_title" | default "Juridisch" }}</h4>
           <ul class="site-footer__links">
             <li><a href="/privacyverklaring/">Privacy</a></li>
-            <li><a href="/algemene-voorwaarden/">Algemene voorwaarden</a></li>
+            <li><a href="/algemene-voorwaarden/">{{ i18n "footer_terms" | default "Algemene voorwaarden" }}</a></li>
           </ul>
           <div class="site-footer__social">
             {{ range site.Data.social.main }}
@@ -117,7 +129,7 @@
   <div class="site-footer__bottom">
     <div class="hp-container">
       <p class="site-footer__copyright">
-        &copy; {{ now.Year }} Proper Access. Alle rechten voorbehouden.
+        &copy; {{ now.Year }} Proper Access. {{ i18n "footer_copyright" | default "Alle rechten voorbehouden." }}
       </p>
     </div>
   </div>
