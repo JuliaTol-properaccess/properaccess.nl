@@ -1,0 +1,13 @@
+{
+  "name": "properaccess-intake",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-06-01",
+  "workers_dev": true,
+  "vars": {
+    "PROJECT_OWNER": "JuliaTol-properaccess",
+    "PROJECT_NUMBER": "3",
+    "ALLOW_ORIGIN": "https://www.properaccess.nl",
+    "NOTIFY_EMAIL": "julia@properaccess.nl",
+    "FROM_EMAIL": "julia@properaccess.nl"
+  }
+}
