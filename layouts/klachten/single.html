@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+<section class="section klacht">
+  <div class="container">
+    <div class="klacht__wrapper">
+
+      <header class="klacht__head">
+        <span class="klacht__label">Klachtenregeling</span>
+        <h1 class="klacht__title">{{ .Title }}</h1>
+        <div class="klacht__intro">{{ .Content }}</div>
+      </header>
+
+      <!-- ─── Zo gaan we met je klacht om ─── -->
+      <div class="klacht__block">
+        <h2 class="klacht__h2">Zo gaan we met je klacht om</h2>
+        <p>
+          We nemen elke klacht serieus. Je klacht komt rechtstreeks bij Julia Tol terecht,
+          onze directeur, en krijgt hoge prioriteit. Geen tussenpersonen, geen wachtrij.
+          We lossen het liever vandaag op dan morgen.
+        </p>
+
+        <ol class="klacht__steps">
+          <li>
+            <strong>Je krijgt snel een bevestiging.</strong>
+            Binnen 2 werkdagen laten we persoonlijk weten dat je klacht binnen is en wie
+            ermee aan de slag gaat.
+          </li>
+          <li>
+            <strong>We zoeken uit wat er speelt.</strong>
+            We bekijken wat er is gebeurd en nemen contact met je op om je klacht te
+            bespreken. Zo weten we zeker dat we het goed begrijpen.
+          </li>
+          <li>
+            <strong>We komen met een oplossing.</strong>
+            We streven ernaar je klacht binnen 10 werkdagen af te handelen. Lukt dat niet,
+            dan laten we je weten hoeveel tijd we nodig hebben en waarom.
+          </li>
+          <li>
+            <strong>We leren ervan.</strong>
+            We leggen vast wat er misging en wat we aanpassen, zodat hetzelfde niet nog
+            een keer gebeurt.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ─── Formulier ─── -->
+      <div class="klacht__block">
+        <h2 class="klacht__h2">Dien je klacht in</h2>
+        <p class="klacht__form-sub">
+          Beschrijf zo concreet mogelijk waar je klacht over gaat. Hoe meer je ons vertelt,
+          hoe sneller we je kunnen helpen. Velden met een sterretje zijn verplicht.
+        </p>
+
+        <form
+          id="klacht-form"
+          class="hp-form klacht__form"
+          novalidate
+          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'klacht', successMessage: 'Bedankt, je klacht is binnen. Je krijgt binnen 2 werkdagen een persoonlijke bevestiging van ons.' });">
+
+          <!-- Honeypot tegen bots, niet zichtbaar voor bezoekers -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+                 style="position:absolute;left:-9999px" />
+
+          <div class="hp-form__row">
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="klacht-naam">Naam <span class="klacht__req">*</span></label>
+              <input class="hp-form__input" type="text" id="klacht-naam" name="naam"
+                     autocomplete="name" required />
+            </div>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="klacht-email">E-mailadres <span class="klacht__req">*</span></label>
+              <input class="hp-form__input" type="email" id="klacht-email" name="email"
+                     autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="klacht-telefoon">Telefoonnummer</label>
+            <input class="hp-form__input" type="tel" id="klacht-telefoon" name="telefoon"
+                   autocomplete="tel" placeholder="Zodat we je kunnen bellen als dat sneller is" />
+          </div>
+
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="klacht-bericht">Je klacht <span class="klacht__req">*</span></label>
+            <textarea class="hp-form__input hp-form__textarea" id="klacht-bericht" name="bericht"
+                      rows="7" required
+                      placeholder="Waar gaat je klacht over? Wat is er gebeurd en wat had je verwacht?"></textarea>
+          </div>
+
+          <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+            Verstuur mijn klacht
+          </button>
+          <div role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- ─── Liever bellen ─── -->
+      <div class="klacht__block klacht__contact">
+        <h2 class="klacht__h2">Liever direct contact?</h2>
+        <p>
+          Je hoeft niet te wachten op dit formulier. Bel ons gerust op
+          <a href="tel:+31855055890">085 5055 890</a> of mail rechtstreeks naar
+          <a href="mailto:juliatol@properaccess.nl?subject=Klacht">juliatol@properaccess.nl</a>.
+          We helpen je graag verder.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .klacht__wrapper { max-width: 46rem; margin: 0 auto; }
+  .klacht__label {
+    display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.12em; color: #A30D4B; margin-bottom: 0.5rem;
+  }
+  .klacht__title { color: #1F2937; margin: 0 0 0.75rem; }
+  .klacht__intro { color: #4B5563; font-size: 1.0625rem; margin-bottom: 2.5rem; }
+
+  .klacht__block { margin: 0 0 2.5rem; }
+  .klacht__block:last-child { margin-bottom: 0; }
+  .klacht__h2 {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 700;
+    font-size: 1.375rem; color: #1F2937; padding: 0 0 1rem; margin: 0 0 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .klacht__block p { color: #1F2937; line-height: 1.6; margin: 0 0 1rem; }
+  .klacht__block p:last-child { margin-bottom: 0; }
+
+  .klacht__steps { margin: 1.25rem 0 0; padding: 0; list-style: none; counter-reset: klacht; }
+  .klacht__steps li {
+    position: relative; counter-increment: klacht; padding: 0 0 1.25rem 3rem;
+    color: #1F2937; line-height: 1.6;
+  }
+  .klacht__steps li:last-child { padding-bottom: 0; }
+  .klacht__steps li::before {
+    content: counter(klacht); position: absolute; left: 0; top: 0;
+    width: 2rem; height: 2rem; border: 2px solid #A30D4B; border-radius: 50%;
+    color: #A30D4B; font-weight: 700; font-size: 0.9375rem;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  }
+  .klacht__steps strong { color: #1F2937; }
+
+  .klacht__form-sub { color: #4B5563 !important; font-size: 0.9375rem; margin-bottom: 1.5rem !important; }
+  .klacht__req { color: #A30D4B; }
+
+  .klacht__form .hp-form__field { margin-bottom: 1.5rem; }
+  .klacht__form .hp-form__field:last-of-type { margin-bottom: 1.75rem; }
+
+  /* Voldoende randcontrast op invoervelden: #6b7280 op wit is ongeveer 4,8:1 (WCAG 1.4.11) */
+  .klacht__form .hp-form__input { border-color: #6b7280; }
+  .klacht__form .hp-form__input:focus { border-color: #A30D4B; }
+
+  .klacht__contact { border: 1px solid #e5e7eb; border-left: 4px solid #A30D4B;
+    border-radius: 4px; padding: 1.5rem; }
+  .klacht__contact .klacht__h2 { border-bottom: 0; padding-bottom: 0.25rem; }
+  .klacht__contact a { color: #004050; text-decoration: underline; font-weight: 700; }
+</style>
+
+{{ end }}
