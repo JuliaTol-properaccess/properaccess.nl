@@ -28,6 +28,31 @@ const FROM_EMAIL = "noreply@properaccess.nl";
 const FROM_NAME = "Proper Access";
 const NOTIFY_EMAIL = "juliatol@properaccess.nl";
 
+// Sommige formulieren gaan naar een ander intern adres.
+const NOTIFY_OVERRIDES = {
+  "offerte-audit": "info@properaccess.nl",
+};
+
+// Leesbare labels voor de velden van de offerte-rekentool, in weergavevolgorde.
+const OFFERTE_VELDEN = [
+  ["onderzoeksobject", "Onderzoeksobject"],
+  ["type_onderzoek", "Type onderzoek"],
+  ["app_platform", "Platform"],
+  ["aantal_documenten", "Aantal documenten"],
+  ["aantal_paginatypes", "Aantal paginatypes"],
+  ["functionaliteiten", "Functionaliteiten"],
+  ["aantal_domeinen", "Aantal domeinen"],
+  ["meertalig", "Meertalig"],
+  ["talen", "Talen"],
+  ["taal_rapport", "Taal rapport"],
+  ["extras", "Extra's"],
+  ["json_nodig", "JSON-bestand nodig (DIP online)"],
+  ["toelichting", "Toelichting"],
+  ["organisatie", "Organisatie"],
+  ["telefoon", "Telefoon"],
+  ["website", "Website"],
+];
+
 // Rate limiting: max 5 inzendingen per 10 minuten per IP.
 const RATE_LIMIT = 5;
 const RATE_WINDOW = 10 * 60 * 1000;
@@ -334,6 +359,10 @@ async function sendNotificationEmail(env, data) {
   const bericht = data.bericht || "";
 
   let subject = "Website: " + bron + " \u2014 " + (data.naam || email);
+  // Klachten krijgen een herkenbare onderwerpregel zodat ze direct opvallen.
+  if (bron === "klacht") {
+    subject = "Klacht: " + (data.naam || email);
+  }
   const lines = [
     "Nieuwe inzending via de website.",
     "",
@@ -341,6 +370,31 @@ async function sendNotificationEmail(env, data) {
     "Naam: " + naam,
     "E-mail: " + email,
   ];
+
+  // Offerte-rekentool: herkenbaar onderwerp en nette samenvatting van de scope.
+  if (bron === "offerte-audit") {
+    subject = "Offerte-aanvraag: " + (data.organisatie || data.naam || email);
+    for (const [key, label] of OFFERTE_VELDEN) {
+      if (data[key]) lines.push(label + ": " + data[key]);
+    }
+    const text = lines.join("\n");
+    const html =
+      "<pre style=\"font-family:'Nunito',Arial,sans-serif;font-size:14px;white-space:pre-wrap;\">" +
+      text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") +
+      "</pre>";
+    const validReplyToOfferte = data.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)
+      ? data.email
+      : undefined;
+    await sendViaAhaSend(env, {
+      to: NOTIFY_OVERRIDES[bron] || NOTIFY_EMAIL,
+      subject: subject,
+      html: html,
+      text: text,
+      replyTo: validReplyToOfferte,
+    });
+    return;
+  }
+
   if (data.bedrijf || data.bedrijfsnaam) lines.push("Bedrijf: " + (data.bedrijf || data.bedrijfsnaam));
   if (data.telefoon) lines.push("Telefoon: " + data.telefoon);
   if (data.website_url) lines.push("Website: " + data.website_url);

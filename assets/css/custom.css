@@ -4184,6 +4184,16 @@ html.dark .toolsuite-promo__text {
   padding: 1.5rem;
 }
 
+/* Dashboard-illustratie (inline SVG) in de hero */
+.hp-hero__dashboard {
+  background: #ffffff;
+}
+.hp-hero__dashboard svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hp-hero__stats-card {
   position: relative;
   margin-top: 1rem;
@@ -15713,4 +15723,125 @@ h4.tool-pdf__fix-label {
 
 html.dark .tool-pdf__upload-btn--focus {
   outline-color: #ffffff;
+}
+
+/* ─── Interactief offerteformulier (/offerte-wcag-onderzoek/) ─── */
+.offerte-layout {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.offerte-layout__intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.offerte-layout__intro .hp-contact__intro {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.offerte-layout__contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem 2.5rem;
+  margin-top: 2rem;
+}
+.offerte-layout__contact .cta-people {
+  margin: 0;
+}
+
+.offerte-form__hint {
+  color: #4B5563;
+  font-size: 0.9375rem;
+  margin: 0 0 1.75rem;
+}
+
+.offerte-form__block {
+  border: 0;
+  padding: 0;
+  margin: 0 0 2.5rem;
+}
+.offerte-form__block[hidden] {
+  display: none;
+}
+.offerte-form__legend {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1F2937;
+  padding: 0 0 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  width: 100%;
+}
+.offerte-form__group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.offerte-form__req {
+  color: #A30D4B;
+}
+
+/* Consistente ruimte tussen losse velden binnen een blok */
+.offerte-form__block > .hp-form__field,
+.offerte-form__block > .hp-form__row,
+.offerte-cond > .hp-form__field,
+.offerte-cond > .hp-form__row {
+  margin-bottom: 1.5rem;
+}
+.offerte-form__block > *:last-child,
+.offerte-cond > *:last-child {
+  margin-bottom: 0;
+}
+
+.offerte-form__option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  line-height: 1.45;
+  color: #1F2937;
+}
+.offerte-form__option input {
+  margin-top: 0.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #A30D4B;
+  flex-shrink: 0;
+}
+.offerte-form__option input:focus-visible {
+  outline: 2px solid #004050;
+  outline-offset: 2px;
+}
+
+.offerte-cond {
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid #A30D4B;
+}
+.offerte-cond[hidden] {
+  display: none;
+}
+
+.offerte-form__help {
+  color: #4B5563;
+  font-size: 0.9375rem;
+  margin: 0 0 0.75rem;
+}
+
+/* Voldoende randcontrast op invoervelden: #6b7280 op wit is ongeveer 4,8:1 (WCAG 1.4.11) */
+.offerte-form .hp-form__input {
+  border-color: #6b7280;
+}
+.offerte-form .hp-form__input:focus {
+  border-color: #A30D4B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offerte-cond {
+    transition: none;
+  }
 }

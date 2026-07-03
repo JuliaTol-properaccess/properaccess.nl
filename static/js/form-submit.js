@@ -30,12 +30,24 @@
       btn.textContent = "Verzenden...";
     }
 
-    // Collect form data
+    // Collect form data.
+    // Radio's en checkboxen tellen alleen mee als ze aangevinkt zijn; meerdere
+    // aangevinkte checkboxen met dezelfde naam worden samengevoegd tot een
+    // kommagescheiden string.
     var data = { bron: opts.bron || "onbekend" };
     var inputs = form.querySelectorAll("input, textarea, select");
     for (var i = 0; i < inputs.length; i++) {
       var input = inputs[i];
-      if (input.name && input.type !== "submit") {
+      if (!input.name || input.type === "submit") continue;
+
+      if (input.type === "radio" || input.type === "checkbox") {
+        if (!input.checked) continue;
+        if (data[input.name]) {
+          data[input.name] = data[input.name] + ", " + input.value;
+        } else {
+          data[input.name] = input.value;
+        }
+      } else {
         data[input.name] = input.value;
       }
     }
