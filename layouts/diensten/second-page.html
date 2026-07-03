@@ -23,31 +23,81 @@
           </a>
         </div>
       </div>
-      <div class="hp-hero__visual">
-        <div class="hp-hero__image-frame" style="aspect-ratio: auto; padding: 2.5rem; background: #f9fafb;">
-          <div class="qs-offer-items">
-            <div class="hp-service-card">
-              <div class="hp-service-card__icon">
-                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              </div>
-              <h3 class="hp-service-card__title">Aantoonbare naleving</h3>
-              <p class="hp-service-card__desc">Van de EAA en BDTO, met juridische onderbouwing.</p>
-            </div>
-            <div class="hp-service-card">
-              <div class="hp-service-card__icon">
-                <span class="material-symbols-outlined" aria-hidden="true">description</span>
-              </div>
-              <h3 class="hp-service-card__title">Rapport per element</h3>
-              <p class="hp-service-card__desc">Met screenshots, code-snippets en concrete oplossingen.</p>
-            </div>
-            <div class="hp-service-card">
-              <div class="hp-service-card__icon">
-                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
-              </div>
-              <h3 class="hp-service-card__title">Onbeperkte support</h3>
-              <p class="hp-service-card__desc">Vragen stellen over het rapport, ook weken later.</p>
-            </div>
-          </div>
+      <div class="hp-hero__visual" aria-hidden="true">
+        <div class="hp-hero__image-frame hp-hero__dashboard">
+          <svg viewBox="0 0 800 500" role="img" aria-hidden="true" focusable="false"
+               xmlns="http://www.w3.org/2000/svg">
+            <!-- Kleuren: magenta #A30D4B, donkerblauw #1F2937, petrol #004050, lichtgrijs #f5f5f5, wit #fff -->
+            <!-- Venster -->
+            <rect x="24" y="20" width="752" height="460" rx="20" fill="#ffffff" stroke="#1F2937" stroke-width="2"/>
+
+            <!-- Titelbalk -->
+            <circle cx="56" cy="50" r="6" fill="#A30D4B"/>
+            <circle cx="76" cy="50" r="6" fill="#004050"/>
+            <circle cx="96" cy="50" r="6" fill="#ffffff" stroke="#1F2937" stroke-width="1.5"/>
+            <rect x="120" y="43" width="150" height="14" rx="7" fill="#1F2937" opacity="0.12"/>
+            <line x1="24" y1="78" x2="776" y2="78" stroke="#1F2937" stroke-width="1" opacity="0.1"/>
+
+            <!-- Zijmenu -->
+            <rect x="44" y="98" width="120" height="360" rx="12" fill="#f5f5f5"/>
+            <rect x="58" y="120" width="92" height="16" rx="8" fill="#A30D4B"/>
+            <rect x="58" y="152" width="92" height="16" rx="8" fill="#1F2937" opacity="0.16"/>
+            <rect x="58" y="184" width="92" height="16" rx="8" fill="#1F2937" opacity="0.16"/>
+            <rect x="58" y="216" width="92" height="16" rx="8" fill="#1F2937" opacity="0.16"/>
+            <rect x="58" y="248" width="92" height="16" rx="8" fill="#1F2937" opacity="0.16"/>
+
+            <!-- Kop -->
+            <rect x="200" y="100" width="190" height="16" rx="8" fill="#1F2937" opacity="0.8"/>
+            <rect x="200" y="126" width="120" height="10" rx="5" fill="#1F2937" opacity="0.22"/>
+
+            <!-- KPI-kaart A: score-donut -->
+            <rect x="200" y="155" width="170" height="120" rx="12" fill="#ffffff" stroke="#1F2937" stroke-width="1.5" opacity="1"/>
+            <g transform="translate(285,217)">
+              <circle r="34" fill="none" stroke="#1F2937" stroke-width="10" opacity="0.12"/>
+              <circle r="34" fill="none" stroke="#A30D4B" stroke-width="10" stroke-linecap="round"
+                      stroke-dasharray="171 43" transform="rotate(-90)"/>
+              <circle r="6" fill="#A30D4B"/>
+            </g>
+            <rect x="228" y="255" width="60" height="8" rx="4" fill="#1F2937" opacity="0.18"/>
+
+            <!-- KPI-kaart B: staafdiagram -->
+            <rect x="388" y="155" width="170" height="120" rx="12" fill="#ffffff" stroke="#1F2937" stroke-width="1.5"/>
+            <line x1="408" y1="250" x2="540" y2="250" stroke="#1F2937" stroke-width="1" opacity="0.15"/>
+            <rect x="412" y="220" width="18" height="30" rx="3" fill="#A30D4B"/>
+            <rect x="444" y="195" width="18" height="55" rx="3" fill="#004050"/>
+            <rect x="476" y="208" width="18" height="42" rx="3" fill="#A30D4B"/>
+            <rect x="508" y="184" width="18" height="66" rx="3" fill="#004050"/>
+
+            <!-- KPI-kaart C: trend -->
+            <rect x="576" y="155" width="160" height="120" rx="12" fill="#ffffff" stroke="#1F2937" stroke-width="1.5"/>
+            <rect x="596" y="183" width="72" height="22" rx="6" fill="#1F2937" opacity="0.8"/>
+            <path d="M690 205 L706 183 L722 205 Z" fill="#A30D4B"/>
+            <rect x="596" y="223" width="118" height="9" rx="4.5" fill="#1F2937" opacity="0.2"/>
+            <rect x="596" y="240" width="86" height="9" rx="4.5" fill="#1F2937" opacity="0.2"/>
+
+            <!-- Grafiekkaart -->
+            <rect x="200" y="295" width="536" height="150" rx="12" fill="#ffffff" stroke="#1F2937" stroke-width="1.5"/>
+            <rect x="216" y="312" width="120" height="10" rx="5" fill="#1F2937" opacity="0.3"/>
+            <line x1="220" y1="352" x2="716" y2="352" stroke="#1F2937" stroke-width="1" opacity="0.07"/>
+            <line x1="220" y1="384" x2="716" y2="384" stroke="#1F2937" stroke-width="1" opacity="0.07"/>
+            <line x1="220" y1="416" x2="716" y2="416" stroke="#1F2937" stroke-width="1" opacity="0.07"/>
+            <!-- Vlak onder de lijn -->
+            <path d="M220 398 L280 372 L340 384 L400 344 L460 362 L520 330 L580 352 L640 316 L700 336 L700 416 L220 416 Z"
+                  fill="#A30D4B" opacity="0.1"/>
+            <!-- Secundaire lijn (petrol) -->
+            <polyline points="220,410 280,398 340,404 400,384 460,392 520,372 580,384 640,364 700,376"
+                      fill="none" stroke="#004050" stroke-width="2" opacity="0.6"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Hoofdlijn (magenta) -->
+            <polyline points="220,398 280,372 340,384 400,344 460,362 520,330 580,352 640,316 700,336"
+                      fill="none" stroke="#A30D4B" stroke-width="3"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#A30D4B">
+              <circle cx="400" cy="344" r="4"/>
+              <circle cx="520" cy="330" r="4"/>
+              <circle cx="640" cy="316" r="4"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
@@ -61,11 +111,53 @@
     <p class="hp-trust__label">Vertrouwd door</p>
     <div class="hp-trust__names">
       <span>Rijksmuseum</span>
+      <span>Bijenkorf</span>
       <span>NRC</span>
       <span>Prov. Noord-Holland</span>
       <span>Museumvereniging</span>
       <span>Jumbo</span>
       <span>Plus</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── OFFERTE FORMULIER ─── -->
+<section class="hp-contact-section" id="offerte-form">
+  <div class="hp-container">
+    <div class="offerte-layout">
+      <div class="offerte-layout__intro">
+        <h2 class="hp-heading-lg">Stel je offerte samen</h2>
+        <p class="hp-contact__intro">
+          Beantwoord een paar korte vragen over wat we gaan onderzoeken. Op basis daarvan
+          sturen we je binnen 1 werkdag een offerte op maat. Geen verplichtingen, geen
+          verrassingen achteraf.
+        </p>
+      </div>
+      <div class="hp-contact__form-card offerte-layout__card">
+        {{ partial "offerte-calculator.html" . }}
+      </div>
+      <div class="offerte-layout__contact">
+        <div class="hp-contact-final__info">
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+          </div>
+          <div class="hp-contact-final__info-row">
+            <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
+            <a href="tel:+31855055890">085 5055 890</a>
+          </div>
+        </div>
+        <div class="cta-people">
+          <div class="cta-people__person">
+            {{ partial "image" (dict "Src" "images/phi.jpg" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
+            <div class="cta-people__meta">
+              <span class="cta-people__name">Phi Pham</span>
+              <span class="cta-people__role">Relatiebeheer</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -111,74 +203,6 @@
 </section>
 
 
-<!-- ─── OFFERTE FORMULIER ─── -->
-<section class="hp-contact-section" id="offerte-form">
-  <div class="hp-container">
-    <div class="hp-contact__grid">
-      <div class="hp-contact__text">
-        <h2 class="hp-heading-lg">Vraag een offerte aan</h2>
-        <p class="hp-contact__intro">
-          Stuur ons je URL en we reageren binnen 1 werkdag met een indicatie.
-          Geen verplichtingen, geen verrassingen achteraf.
-        </p>
-        <div class="hp-contact-final__info" style="margin-top: 1.5rem;">
-          <div class="hp-contact-final__info-row">
-            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-            <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
-          </div>
-          <div class="hp-contact-final__info-row">
-            <span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span>
-            <a href="tel:+31855055890">085 5055 890</a>
-          </div>
-        </div>
-        <div class="cta-people">
-          <div class="cta-people__person">
-            {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
-            <div class="cta-people__meta">
-              <span class="cta-people__name">Julia Tol</span>
-              <span class="cta-people__role">Directeur</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hp-contact__form-card">
-        <h3 class="hp-heading-md">Stuur een bericht</h3>
-        <p class="hp-contact__form-sub">We reageren binnen 1 werkdag.</p>
-        <form
-          id="offerte-form"
-          class="hp-form"
-          novalidate
-          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'offerte-audit', successMessage: 'Verstuurd! We reageren binnen 1 werkdag.' });">
-          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-          <div class="hp-form__row">
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="offerte-naam">Naam</label>
-              <input class="hp-form__input" id="offerte-naam" name="naam" autocomplete="name" required type="text" placeholder="Je naam" />
-            </div>
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="offerte-email">E-mail</label>
-              <input class="hp-form__input" id="offerte-email" name="email" autocomplete="email" required type="email" placeholder="je@email.nl" />
-            </div>
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="offerte-url">Website-URL</label>
-            <input class="hp-form__input" id="offerte-url" name="website" type="url" placeholder="https://" />
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="offerte-bericht">Bericht</label>
-            <textarea class="hp-form__input hp-form__textarea" id="offerte-bericht" name="bericht" required placeholder="Vertel ons over je website of app" rows="4"></textarea>
-          </div>
-          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
-            Offerte aanvragen
-          </button>
-          <div role="status" aria-live="polite"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
 <section class="hp-faq">
@@ -201,5 +225,7 @@
 
 <!-- ─── CTA ─── -->
 {{ partial "call-to-action.html" . }}
+
+<script src="{{ "js/offerte-form.js" | relURL }}" defer></script>
 
 {{ end }}
