@@ -15840,6 +15840,63 @@ html.dark .tool-pdf__upload-btn--focus {
   border-color: #A30D4B;
 }
 
+/* ─── URL-lijst (meerdere producten) ─── */
+.offerte-form__urls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.offerte-form__url-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.offerte-form__url-input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.offerte-form__url-remove {
+  flex-shrink: 0;
+  background: transparent;
+  border: 0;
+  padding: 0.5rem 0.25rem;
+  color: #004050;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.offerte-form__url-remove:hover {
+  color: #A30D4B;
+  text-decoration: underline;
+}
+.offerte-form__url-remove:focus-visible {
+  outline: 2px solid #004050;
+  outline-offset: 2px;
+}
+.offerte-form__add-url {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: transparent;
+  border: 2px solid #A30D4B;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #A30D4B;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.offerte-form__add-url:hover {
+  background: #A30D4B;
+  color: #fff;
+}
+.offerte-form__add-url:focus-visible {
+  outline: 2px solid #004050;
+  outline-offset: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .offerte-cond {
     transition: none;

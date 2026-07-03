@@ -48,6 +48,15 @@
     var eq = expr.indexOf("=");
     var name = expr.slice(0, eq);
     var val = expr.slice(eq + 1);
+    var els = form.querySelectorAll('[name="' + name + '"]');
+    // Checkbox-groep (bv. onderzoeksobject): waar als één van de aangevinkte
+    // waarden overeenkomt, zodat een blok verschijnt zodra dat type gekozen is.
+    if (els.length && els[0].type === "checkbox") {
+      for (var i = 0; i < els.length; i++) {
+        if (els[i].checked && els[i].value === val) return true;
+      }
+      return false;
+    }
     return fieldValue(name) === val;
   }
 
@@ -90,9 +99,99 @@
   form.addEventListener("change", update);
   update();
 
+  // ── URL's: uitbreidbare lijst, één regel per product ──
+  var urlsWrap = document.getElementById("offerte-urls");
+  var addUrlBtn = document.getElementById("offerte-add-url");
+  var urlsValue = document.getElementById("offerte-urls-value");
+
+  function renumberUrls() {
+    if (!urlsWrap) return;
+    var rows = urlsWrap.querySelectorAll(".offerte-form__url-row");
+    for (var i = 0; i < rows.length; i++) {
+      var input = rows[i].querySelector(".offerte-form__url-input");
+      if (input) input.setAttribute("aria-label", "URL " + (i + 1));
+      var remove = rows[i].querySelector(".offerte-form__url-remove");
+      // Verwijderknop alleen tonen als er meer dan één regel is.
+      if (remove) remove.hidden = rows.length < 2;
+    }
+  }
+
+  function addUrlRow(focus) {
+    if (!urlsWrap) return;
+    var row = document.createElement("div");
+    row.className = "offerte-form__url-row";
+
+    var input = document.createElement("input");
+    input.className = "hp-form__input offerte-form__url-input";
+    input.type = "url";
+    input.placeholder = "https://";
+    row.appendChild(input);
+
+    var remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "offerte-form__url-remove";
+    remove.innerHTML = '<span aria-hidden="true">×</span> Verwijder';
+    remove.addEventListener("click", function () {
+      row.parentNode.removeChild(row);
+      renumberUrls();
+    });
+    row.appendChild(remove);
+
+    urlsWrap.appendChild(row);
+    renumberUrls();
+    if (focus) input.focus();
+  }
+
+  if (addUrlBtn) {
+    addUrlBtn.addEventListener("click", function () {
+      addUrlRow(true);
+    });
+  }
+
+  // Verzamelt alle ingevulde URL's tot een kommagescheiden string.
+  function collectUrls() {
+    if (!urlsValue) return;
+    var inputs = form.querySelectorAll(".offerte-form__url-input");
+    var vals = [];
+    for (var i = 0; i < inputs.length; i++) {
+      var v = inputs[i].value.trim();
+      if (v) vals.push(v);
+    }
+    urlsValue.value = vals.join(", ");
+  }
+
+  // Reset de URL-lijst naar één lege regel (na een succesvolle verzending).
+  function resetUrls() {
+    if (!urlsWrap) return;
+    var rows = urlsWrap.querySelectorAll(".offerte-form__url-row");
+    for (var i = 1; i < rows.length; i++) {
+      rows[i].parentNode.removeChild(rows[i]);
+    }
+    var first = urlsWrap.querySelector(".offerte-form__url-input");
+    if (first) first.value = "";
+    if (urlsValue) urlsValue.value = "";
+    renumberUrls();
+  }
+
   // ── Verzenden ──
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    // Minstens één onderzoeksobject aanvinken (checkbox-groep kent geen native required).
+    var objecten = form.querySelectorAll('[name="onderzoeksobject"]');
+    var objectGekozen = false;
+    for (var o = 0; o < objecten.length; o++) {
+      if (objecten[o].checked) { objectGekozen = true; break; }
+    }
+    if (!objectGekozen && objecten.length) {
+      objecten[0].focus();
+      if (objecten[0].setCustomValidity) {
+        objecten[0].setCustomValidity("Kies minstens één optie.");
+        if (objecten[0].reportValidity) objecten[0].reportValidity();
+        objecten[0].setCustomValidity("");
+      }
+      return;
+    }
 
     // Handmatige validatie, want het formulier staat op novalidate.
     var invalid = null;
@@ -111,12 +210,15 @@
       return;
     }
 
+    collectUrls();
+
     window.paFormSubmit(form, {
       bron: "offerte-audit",
       successMessage:
         "Bedankt, je aanvraag is binnen. We sturen je binnen 1 werkdag een offerte op maat. " +
         "Wil je iets aanvullen? Beantwoord gewoon onze mail.",
       onSuccess: function () {
+        resetUrls(); // extra URL-regels weg, eerste regel leeg
         update(); // formulier is gereset, blokken weer in beginstand
       }
     });
