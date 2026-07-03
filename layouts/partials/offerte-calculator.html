@@ -23,6 +23,7 @@
 
     <fieldset class="offerte-form__group" aria-required="true">
       <legend class="hp-form__label">Wat wil je laten onderzoeken? <span class="offerte-form__req">*</span></legend>
+      <p class="offerte-form__help">Je kunt meerdere opties aanvinken.</p>
       {{ range $opt := slice
           (dict "v" "website" "l" "Een website")
           (dict "v" "webshop" "l" "Een webshop")
@@ -30,7 +31,7 @@
           (dict "v" "documenten" "l" "Een of meer documenten (pdf)")
           (dict "v" "systeem" "l" "Een systeem of portaal") }}
       <label class="offerte-form__option">
-        <input type="radio" name="onderzoeksobject" value="{{ $opt.v }}" required />
+        <input type="checkbox" name="onderzoeksobject" value="{{ $opt.v }}" />
         <span>{{ $opt.l }}</span>
       </label>
       {{ end }}
@@ -64,6 +65,26 @@
       </p>
       <input class="hp-form__input" type="text" id="offerte-documenten" name="aantal_documenten"
              placeholder="Bijvoorbeeld 3 pdf's, samen zo'n 40 pagina's" />
+    </div>
+
+    <!-- URL's: één regel per product, uitbreidbaar -->
+    <div class="hp-form__field offerte-form__urls-block">
+      <span class="hp-form__label" id="offerte-urls-label">URL('s) van wat we onderzoeken</span>
+      <p class="offerte-form__help">
+        Geef de URL van elke website, webshop of elk systeem. Onderzoeken we meerdere producten?
+        Voeg dan per product een URL toe. Een app of losse documenten hebben geen URL nodig.
+      </p>
+      <div id="offerte-urls" class="offerte-form__urls" role="group" aria-labelledby="offerte-urls-label">
+        <div class="offerte-form__url-row">
+          <input class="hp-form__input offerte-form__url-input" type="url" aria-label="URL 1"
+                 placeholder="https://" />
+        </div>
+      </div>
+      <button type="button" class="offerte-form__add-url" id="offerte-add-url">
+        <span aria-hidden="true">+</span> Nog een URL toevoegen
+      </button>
+      <!-- Wordt bij verzenden gevuld met alle ingevulde URL's -->
+      <input type="hidden" name="urls" id="offerte-urls-value" />
     </div>
   </fieldset>
 
@@ -245,16 +266,10 @@
       <input class="hp-form__input" type="text" id="offerte-organisatie" name="organisatie"
              autocomplete="organization" />
     </div>
-    <div class="hp-form__row">
-      <div class="hp-form__field">
-        <label class="hp-form__label" for="offerte-telefoon">Telefoonnummer</label>
-        <input class="hp-form__input" type="tel" id="offerte-telefoon" name="telefoon" autocomplete="tel"
-               placeholder="Bijvoorbeeld 06-11 11 11 11" />
-      </div>
-      <div class="hp-form__field">
-        <label class="hp-form__label" for="offerte-website">Website-URL</label>
-        <input class="hp-form__input" type="url" id="offerte-website" name="website" placeholder="https://" />
-      </div>
+    <div class="hp-form__field">
+      <label class="hp-form__label" for="offerte-telefoon">Telefoonnummer</label>
+      <input class="hp-form__input" type="tel" id="offerte-telefoon" name="telefoon" autocomplete="tel"
+             placeholder="Bijvoorbeeld 06-11 11 11 11" />
     </div>
   </fieldset>
 
