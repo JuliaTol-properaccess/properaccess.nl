@@ -5,6 +5,7 @@
  * Usage:
  *   paFormSubmit(formElement, {
  *     bron: 'nieuwsbrief',
+ *     endpoint: 'https://...workers.dev/submit', // optioneel, standaard de CRM-Worker
  *     onSuccess: function() { ... },
  *     onError: function(msg) { ... },
  *     successMessage: 'Bedankt!',
@@ -41,7 +42,7 @@
 
     // Send to Worker — handles CRM, the notification email to Proper Access,
     // and the quiz follow-up email, all server-side via AhaSend (EU).
-    var workerRequest = fetch(WORKER_URL, {
+    var workerRequest = fetch(opts.endpoint || WORKER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

@@ -1,0 +1,482 @@
+{{ define "main" }}
+
+<section class="section intake">
+  <div class="container">
+    <div class="intake__wrapper">
+
+      <header class="intake__head">
+        <span class="intake__label">Onderzoek inplannen</span>
+        <h1 class="intake__title">{{ .Title }}</h1>
+        <div class="intake__intro">{{ .Content }}</div>
+      </header>
+
+      <form class="hp-form intake__form" id="intake-form" novalidate
+            aria-describedby="intake-form-hint">
+        <p id="intake-form-hint" class="intake__hint">
+          Velden met een sterretje zijn verplicht. Afhankelijk van je keuzes verschijnen er extra vragen.
+        </p>
+
+        <!-- Honeypot tegen bots, niet zichtbaar voor bezoekers -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+               style="position:absolute;left:-9999px" />
+
+        <!-- ─── BLOK 1: DE OPDRACHT ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">1. De opdracht</legend>
+
+          <fieldset class="intake__group" aria-required="true">
+            <legend class="hp-form__label">Type onderzoek <span class="intake__req">*</span></legend>
+            {{ range $i, $opt := slice
+                (dict "v" "mini-audit" "l" "Mini-audit")
+                (dict "v" "website-audit" "l" "Website-audit")
+                (dict "v" "content-audit" "l" "Content-audit")
+                (dict "v" "techniekaudit" "l" "Techniekaudit")
+                (dict "v" "systeemaudit" "l" "Systeemaudit")
+                (dict "v" "retest" "l" "Retest") }}
+            <label class="intake__radio">
+              <input type="radio" name="type_onderzoek" value="{{ $opt.v }}" required />
+              <span>{{ $opt.l }}</span>
+            </label>
+            {{ end }}
+          </fieldset>
+
+          <div class="intake-cond" data-show-when="type_onderzoek=content-audit" hidden>
+            <fieldset class="intake__group">
+              <legend class="hp-form__label">Is er al een techniekonderzoek van deze site of app?</legend>
+              <label class="intake__radio">
+                <input type="radio" name="techniekonderzoek_bestaat" value="ja" data-required />
+                <span>Ja, dat ligt er al</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="techniekonderzoek_bestaat" value="nee" data-required />
+                <span>Nee, nog niet</span>
+              </label>
+            </fieldset>
+
+            <div class="intake-cond hp-form__field" data-show-when="techniekonderzoek_bestaat=ja" hidden>
+              <label class="hp-form__label" for="intake-techniekrapport">Link naar het techniekrapport</label>
+              <input class="hp-form__input" type="url" id="intake-techniekrapport"
+                     name="techniekrapport_link" placeholder="https://" data-required />
+            </div>
+
+            <p class="intake__notice intake-cond" data-show-when="techniekonderzoek_bestaat=nee" hidden>
+              Een content-audit kan alleen als er al een techniekonderzoek ligt. Zonder dat onderzoek
+              maken we er een volledige audit van. We nemen contact op om dit met je af te stemmen.
+            </p>
+          </div>
+
+          <fieldset class="intake__group" aria-required="true">
+            <legend class="hp-form__label">Onder welke regels val je? <span class="intake__req">*</span></legend>
+            <label class="intake__radio">
+              <input type="radio" name="regelkader" value="overheid-bdto" required />
+              <span>Overheid, valt onder het Besluit digitale toegankelijkheid overheid</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="regelkader" value="bedrijf-eaa" required />
+              <span>Bedrijf of webshop, valt onder de Europese toegankelijkheidsrichtlijn</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="regelkader" value="leverancier-techniek" required />
+              <span>Leverancier of bouwer die een techniekonderzoek wil</span>
+            </label>
+          </fieldset>
+
+          <p class="intake__notice intake-cond" data-show-when="regelkader=overheid-bdto" hidden>
+            Als overheid stel je zelf een toegankelijkheidsverklaring op. Wij leveren de deelonderzoeken
+            die je daarvoor nodig hebt.
+          </p>
+
+          <div class="intake-cond hp-form__field"
+               data-show-when-any="regelkader=leverancier-techniek|type_onderzoek=techniekaudit" hidden>
+            <label class="hp-form__label" for="intake-functionaliteiten">
+              Link naar de lijst met functionaliteiten
+            </label>
+            <p class="intake__help">
+              Voor een techniekonderzoek hebben we een lijst met functionaliteiten nodig. Dat mag in een
+              online spreadsheet. Plak hier de link, dan kunnen we starten.
+            </p>
+            <input class="hp-form__input" type="url" id="intake-functionaliteiten"
+                   name="functionaliteiten_link" placeholder="https://" data-required />
+          </div>
+
+        </fieldset>
+
+        <!-- ─── BLOK 2: WAT ONDERZOEKEN WE ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">2. Wat onderzoeken we?</legend>
+
+          <fieldset class="intake__group" aria-required="true">
+            <legend class="hp-form__label">Wat gaan we onderzoeken? <span class="intake__req">*</span></legend>
+            {{ range $opt := slice
+                (dict "v" "website" "l" "Een website")
+                (dict "v" "webshop" "l" "Een webshop")
+                (dict "v" "app" "l" "Een app")
+                (dict "v" "documenten" "l" "Een of meer documenten")
+                (dict "v" "systeem" "l" "Een systeem of portaal") }}
+            <label class="intake__radio">
+              <input type="radio" name="onderzoeksobject" value="{{ $opt.v }}" required />
+              <span>{{ $opt.l }}</span>
+            </label>
+            {{ end }}
+          </fieldset>
+
+          <!-- Website, webshop of systeem/portaal -->
+          <div class="intake-cond" data-show-when-any="onderzoeksobject=website|onderzoeksobject=webshop|onderzoeksobject=systeem" hidden>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-hoofddomein">Hoofddomein</label>
+              <input class="hp-form__input" type="url" id="intake-hoofddomein" name="hoofddomein"
+                     placeholder="https://www.jouwsite.nl" data-required />
+            </div>
+            <fieldset class="intake__group">
+              <legend class="hp-form__label">Is dit de live-omgeving of een testomgeving?</legend>
+              <label class="intake__radio">
+                <input type="radio" name="omgeving" value="live" data-required />
+                <span>Live-omgeving</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="omgeving" value="test" data-required />
+                <span>Testomgeving</span>
+              </label>
+            </fieldset>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-extra-domeinen">
+                Extra domeinen of subdomeinen
+              </label>
+              <textarea class="hp-form__input hp-form__textarea" id="intake-extra-domeinen"
+                        name="extra_domeinen" rows="2"
+                        placeholder="Eén per regel, als die er zijn"></textarea>
+            </div>
+          </div>
+
+          <!-- App -->
+          <div class="intake-cond" data-show-when="onderzoeksobject=app" hidden>
+            <p class="intake__notice">
+              Vul per apparaat een apart intakeformulier in. Onderzoeken we zowel de iOS- als de
+              Android-versie, dan ontvangen we graag twee formulieren.
+            </p>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-app-naam">Naam van de app</label>
+              <input class="hp-form__input" type="text" id="intake-app-naam" name="app_naam"
+                     data-required />
+            </div>
+            <fieldset class="intake__group">
+              <legend class="hp-form__label">Om welk apparaat gaat dit formulier?</legend>
+              <label class="intake__radio">
+                <input type="radio" name="app_platform" value="ios" data-required />
+                <span>iOS (App Store)</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="app_platform" value="android" data-required />
+                <span>Android (Google Play)</span>
+              </label>
+            </fieldset>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-app-store">
+                Link naar de App Store of Google Play
+              </label>
+              <input class="hp-form__input" type="url" id="intake-app-store" name="app_store_link"
+                     placeholder="https://" data-required />
+            </div>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-app-taal">
+                Welke programmeertaal of framework is gebruikt?
+              </label>
+              <input class="hp-form__input" type="text" id="intake-app-taal" name="app_taal"
+                     placeholder="Bijvoorbeeld Swift, Kotlin, React Native of Flutter" data-required />
+            </div>
+          </div>
+
+          <!-- Documenten -->
+          <div class="intake-cond hp-form__field" data-show-when="onderzoeksobject=documenten" hidden>
+            <label class="hp-form__label" for="intake-documenten">Om welke documenten gaat het?</label>
+            <textarea class="hp-form__input hp-form__textarea" id="intake-documenten"
+                      name="documenten_omschrijving" rows="3"
+                      placeholder="Welke documenten en in welk formaat, bijvoorbeeld pdf" data-required></textarea>
+          </div>
+
+        </fieldset>
+
+        <!-- ─── BLOK 3: BELANGRIJKSTE ONDERDELEN ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">3. Wat is het belangrijkst?</legend>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="intake-belangrijk">
+              Welke onderdelen zijn het belangrijkst?
+            </label>
+            <p class="intake__help">
+              Onze onderzoeker neemt zelf een gewogen steekproef. Geef aan welke onderdelen het meest
+              gebruikt worden en het belangrijkst zijn voor je bedrijfsprocessen, dan nemen we die mee.
+            </p>
+            <textarea class="hp-form__input hp-form__textarea" id="intake-belangrijk"
+                      name="belangrijke_onderdelen" rows="4"
+                      placeholder="Bijvoorbeeld inloggen, bestellen of een formulier"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ─── BLOK 4: TOEGANG ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">4. Toegang</legend>
+
+          <fieldset class="intake__group" aria-required="true">
+            <legend class="hp-form__label">Is de site of app volledig openbaar? <span class="intake__req">*</span></legend>
+            <label class="intake__radio">
+              <input type="radio" name="toegang" value="openbaar" required />
+              <span>Ja, alles is openbaar toegankelijk</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="toegang" value="besloten" required />
+              <span>Nee, een deel is afgeschermd</span>
+            </label>
+          </fieldset>
+
+          <div class="intake-cond" data-show-when="toegang=besloten" hidden>
+            <p class="intake__help">
+              Onjuiste of ontbrekende gegevens hier kunnen zorgen voor vertraging of meerwerk.
+            </p>
+
+            <fieldset class="intake__group">
+              <legend class="hp-form__label">Werkt de site met IP-whitelisting?</legend>
+              <label class="intake__radio">
+                <input type="radio" name="ip_whitelisting" value="ja" data-required />
+                <span>Ja</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="ip_whitelisting" value="nee" data-required />
+                <span>Nee</span>
+              </label>
+            </fieldset>
+
+            <p class="intake__notice intake-cond" data-show-when="ip_whitelisting=ja" hidden>
+              Zet ons IP-adres op de whitelist. We laten je in de bevestiging weten welk adres dat is.
+            </p>
+
+            <fieldset class="intake__group">
+              <legend class="hp-form__label">Zijn er inloggegevens nodig?</legend>
+              <label class="intake__radio">
+                <input type="radio" name="inloggegevens" value="geen" data-required />
+                <span>Nee, geen inloggegevens nodig</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="inloggegevens" value="zelf-aanmaken" data-required />
+                <span>Onze onderzoeker kan zelf een account aanmaken</span>
+              </label>
+              <label class="intake__radio">
+                <input type="radio" name="inloggegevens" value="aangeleverd" data-required />
+                <span>Wij leveren een account aan</span>
+              </label>
+            </fieldset>
+
+            <div class="intake-cond" data-show-when="inloggegevens=aangeleverd" hidden>
+              <p class="intake__notice">
+                We testen niet met echte DigiD of eHerkenning. Zorg daarvoor altijd voor een testomgeving.
+              </p>
+              <div class="hp-form__field">
+                <label class="hp-form__label" for="intake-login">Hoe leveren jullie de inloggegevens aan?</label>
+                <textarea class="hp-form__input hp-form__textarea" id="intake-login"
+                          name="inloggegevens_details" rows="2"
+                          placeholder="Bijvoorbeeld waar en hoe we een testaccount kunnen ophalen"></textarea>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ─── BLOK 5: HULP EN KLANTPLATFORM ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">5. Hulp en klantplatform</legend>
+
+          <fieldset class="intake__group">
+            <legend class="hp-form__label">Wil je dat we meedenken bij het oplossen van de bevindingen?</legend>
+            <label class="intake__radio">
+              <input type="radio" name="hulp_oplossen" value="ja" />
+              <span>Ja, graag</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="hulp_oplossen" value="nee" />
+              <span>Nee, het rapport is genoeg</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="hulp_oplossen" value="later" />
+              <span>Dat beslis ik later</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="intake__group">
+            <legend class="hp-form__label">Wil je gebruikmaken van ons klantplatform?</legend>
+            <p class="intake__help">
+              Je rapport staat in een besloten omgeving waar alleen je team bij kan. Stel je vragen per
+              bevinding en geef aan of een issue is opgelost. We controleren of het klopt.
+            </p>
+            <label class="intake__radio">
+              <input type="radio" name="klantplatform" value="ja" />
+              <span>Ja</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="klantplatform" value="nee" />
+              <span>Nee</span>
+            </label>
+          </fieldset>
+
+          <div class="intake-cond hp-form__field" data-show-when="klantplatform=ja" hidden>
+            <label class="hp-form__label" for="intake-platform-gebruikers">
+              Wie krijgt toegang tot het platform?
+            </label>
+            <p class="intake__help">
+              Geef per persoon de voornaam en het e-mailadres, één per regel.
+            </p>
+            <textarea class="hp-form__input hp-form__textarea" id="intake-platform-gebruikers"
+                      name="platform_gebruikers" rows="3"
+                      placeholder="Bijvoorbeeld: Sanne, sanne@bedrijf.nl" data-required></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ─── BLOK 6: PLANNING ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">6. Planning</legend>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="intake-opleverdatum">
+              Uiterste datum voor het rapport <span class="intake__req">*</span>
+            </label>
+            <p class="intake__help">
+              Onze normale doorlooptijd is 4 weken. We hebben de datum alvast 4 weken vooruit gezet.
+              Pas hem aan als je een andere deadline hebt.
+            </p>
+            <input class="hp-form__input intake__date" type="date" id="intake-opleverdatum"
+                   name="opleverdatum" required />
+          </div>
+          <fieldset class="intake__group">
+            <legend class="hp-form__label">In welke taal moet het rapport?</legend>
+            <label class="intake__radio">
+              <input type="radio" name="taal" value="nl" checked />
+              <span>Nederlands</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="taal" value="en" />
+              <span>Engels</span>
+            </label>
+          </fieldset>
+        </fieldset>
+
+        <!-- ─── BLOK 7: ORGANISATIE EN CONTACT ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">7. Organisatie en contact</legend>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="intake-organisatie">Organisatie <span class="intake__req">*</span></label>
+            <input class="hp-form__input" type="text" id="intake-organisatie" name="organisatie"
+                   autocomplete="organization" required />
+          </div>
+          <div class="hp-form__row">
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-naam">Naam <span class="intake__req">*</span></label>
+              <input class="hp-form__input" type="text" id="intake-naam" name="contact_naam"
+                     autocomplete="name" required />
+            </div>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-email">E-mailadres <span class="intake__req">*</span></label>
+              <input class="hp-form__input" type="email" id="intake-email" name="contact_email"
+                     autocomplete="email" required />
+            </div>
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="intake-tel">Telefoonnummer</label>
+            <input class="hp-form__input" type="tel" id="intake-tel" name="contact_telefoon"
+                   autocomplete="tel" placeholder="Bijvoorbeeld 06-11 11 11 11" />
+          </div>
+
+          <p class="intake__help">Optioneel: een tweede contactpersoon, bijvoorbeeld de bouwer of leverancier.</p>
+          <div class="hp-form__row">
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-naam2">Naam</label>
+              <input class="hp-form__input" type="text" id="intake-naam2" name="contact2_naam" />
+            </div>
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="intake-email2">E-mailadres</label>
+              <input class="hp-form__input" type="email" id="intake-email2" name="contact2_email" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ─── BLOK 8: BEVESTIGING ─── -->
+        <fieldset class="intake__block">
+          <legend class="intake__legend">8. Bevestiging</legend>
+          <label class="intake__check">
+            <input type="checkbox" name="akkoord" value="ja" required />
+            <span>
+              Ik verklaar dat deze gegevens kloppen. Ik weet dat onjuiste of onvolledige informatie
+              kan zorgen voor vertraging of meerwerk. <span class="intake__req">*</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+          Verstuur het intakeformulier
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .intake__wrapper { max-width: 46rem; margin: 0 auto; }
+  .intake__label {
+    display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.12em; color: #A30D4B; margin-bottom: 0.5rem;
+  }
+  .intake__title { color: #1F2937; margin: 0 0 0.75rem; }
+  .intake__intro { color: #4B5563; font-size: 1.0625rem; margin-bottom: 2.5rem; }
+  .intake__hint { color: #4B5563; font-size: 0.9375rem; margin-bottom: 2rem; }
+
+  .intake__block { border: 0; padding: 0; margin: 0 0 2.5rem; }
+  .intake__legend {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 700;
+    font-size: 1.25rem; color: #1F2937; padding: 0 0 1rem; margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb; width: 100%;
+  }
+  .intake__group { border: 0; padding: 0; margin: 0 0 1.5rem; }
+  .intake__req { color: #A30D4B; }
+
+  /* Consistente ruimte tussen losse velden binnen een blok */
+  .intake__block > .hp-form__field,
+  .intake__block > .hp-form__row,
+  .intake-cond > .hp-form__field,
+  .intake-cond > .hp-form__row { margin-bottom: 1.5rem; }
+  .intake__block > *:last-child,
+  .intake-cond > *:last-child { margin-bottom: 0; }
+
+  .intake__radio, .intake__check {
+    display: flex; align-items: flex-start; gap: 0.625rem; padding: 0.5rem 0;
+    cursor: pointer; line-height: 1.45; color: #1F2937;
+  }
+  .intake__radio input, .intake__check input {
+    margin-top: 0.2rem; width: 1.1rem; height: 1.1rem; accent-color: #A30D4B; flex-shrink: 0;
+  }
+
+  .intake-cond {
+    margin: 0.5rem 0 1.5rem; padding-left: 1rem; border-left: 4px solid #A30D4B;
+  }
+  .intake-cond[hidden] { display: none; }
+
+  .intake__help { color: #4B5563; font-size: 0.9375rem; margin: 0 0 0.75rem; }
+  .intake__notice {
+    color: #1F2937; font-size: 0.9375rem; background: #f5f5f5;
+    border-left: 4px solid #A30D4B; padding: 0.875rem 1rem; margin: 0 0 1rem; border-radius: 4px;
+  }
+  .intake-cond .intake__notice { border-left: 0; padding-left: 1rem; }
+  .intake__date { max-width: 16rem; }
+
+  /* Voldoende randcontrast op invoervelden: #6b7280 op wit is ongeveer 4,8:1 (WCAG 1.4.11) */
+  .intake__form .hp-form__input { border-color: #6b7280; }
+  .intake__form .hp-form__input:focus { border-color: #A30D4B; }
+
+  .intake__radio input:focus-visible, .intake__check input:focus-visible {
+    outline: 2px solid #004050; outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .intake-cond { transition: none; }
+  }
+</style>
+
+<script src="{{ "js/intake-form.js" | relURL }}" defer></script>
+
+{{ end }}
