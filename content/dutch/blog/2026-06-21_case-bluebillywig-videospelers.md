@@ -14,17 +14,17 @@ tags:
 description: "Quickscan van 9 veelgebruikte videospelers. Bij 3 vonden we binnen de testtijd geen bevindingen. Wat dat zegt over de markt en je inkoopkeuze."
 ---
 
-Blue Billywig vroeg ons om een quickscan van negen veelgebruikte videospelers, inclusief hun eigen. Geen complete audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. De geteste spelers: Blue Billywig, Hihaho, Ivory Media Player, OpenGemeenten, Ping Player, Rijksoverheidsplayer PRO, Vimeo, Vixy Video en YouTube. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde het rapport vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
+Blue Billywig vroeg ons om een quickscan van de negen meest gebruikte videospelers, inclusief hun eigen. Geen complete audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde het rapport vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
 
 ## Les 1: Bij drie van de negen vonden we geen bevindingen
 
 De opdracht was om per speler 2 tot 3 uur uit te trekken voor een inzicht in de toegankelijkheid. Niet om alle spelers met elkaar te vergelijken, maar om per speler in beeld te brengen wat een bezoeker daadwerkelijk tegenkomt. We toetsten alleen de speler zelf, niet de webpagina eromheen en niet de ondertiteling of audiodescriptie van de inhoud. We keken naar knoppen, sneltoetsen, contrast, focusvolgorde, schermlezergedrag, zoom tot 400%, het sluiten van dialogen en meer, op WCAG 2.2 niveau A en AA. We testten in Firefox, Chrome en Safari, met NVDA en VoiceOver, en lazen daarbij de accessibility tree in Chrome DevTools.
 
-Bij 3 van de 9 spelers vonden we binnen die tijd geen bevindingen: Blue Billywig zelf, OpenGemeenten en de Rijksoverheidsplayer PRO. Bij de andere 6 wel. Vimeo en YouTube, die je in de meeste websites tegenkomt, struikelden op kerncriteria zoals toetsenbordbediening, de aankondiging van pop-ups en zoomgedrag.
+Bij 3 van de 9 spelers vonden we binnen die tijd geen bevindingen. Bij de andere 6 wel. Ook spelers die je op de meeste websites tegenkomt, van bedrijven met grote budgetten, struikelden op kerncriteria zoals toetsenbordbediening, de aankondiging van pop-ups en zoomgedrag.
 
 ![Negen gestileerde videospelers in een raster van 3 bij 3. Drie spelers zijn gemarkeerd met een groen accent als teken dat ze binnen onze testtijd geen bevindingen kregen. De overige zes blijven in neutraal grijs.](/images/cases/bluebillywig/bbw-les1-overzicht.png)
 
-**Wat je hieruit mee kunt nemen.** YouTube en Vimeo staan op miljoenen websites en zijn gemaakt door bedrijven met grote budgetten. Toch zien we bij beide veel toegankelijkheidsproblemen. Vraag bij elke speler die je inkoopt om een onafhankelijke toets, of doe hem zelf, voordat je een keuze maakt.
+**Wat je hieruit mee kunt nemen.** Ook de bekendste spelers, die op miljoenen websites staan en gemaakt zijn door bedrijven met grote budgetten, hadden veel toegankelijkheidsproblemen. Vraag bij elke speler die je inkoopt om een onafhankelijke toets, of doe hem zelf, voordat je een keuze maakt.
 
 ## Les 2: Drie pijnpunten die overal terugkwamen
 
