@@ -343,11 +343,27 @@
             <input class="hp-form__input intake__date" type="date" id="intake-opleverdatum"
                    name="opleverdatum" required />
           </div>
+          <fieldset class="intake__group">
+            <legend class="hp-form__label">In welke taal moet het rapport?</legend>
+            <label class="intake__radio">
+              <input type="radio" name="taal" value="nl" checked />
+              <span>Nederlands</span>
+            </label>
+            <label class="intake__radio">
+              <input type="radio" name="taal" value="en" />
+              <span>Engels</span>
+            </label>
+          </fieldset>
         </fieldset>
 
-        <!-- ─── BLOK 7: CONTACT ─── -->
+        <!-- ─── BLOK 7: ORGANISATIE EN CONTACT ─── -->
         <fieldset class="intake__block">
-          <legend class="intake__legend">7. Contactpersoon</legend>
+          <legend class="intake__legend">7. Organisatie en contact</legend>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="intake-organisatie">Organisatie <span class="intake__req">*</span></label>
+            <input class="hp-form__input" type="text" id="intake-organisatie" name="organisatie"
+                   autocomplete="organization" required />
+          </div>
           <div class="hp-form__row">
             <div class="hp-form__field">
               <label class="hp-form__label" for="intake-naam">Naam <span class="intake__req">*</span></label>

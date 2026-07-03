@@ -26,6 +26,7 @@ const DOORLOOPTIJD_DAGEN = 28; // normale doorlooptijd: 4 weken
 
 // Volgorde en labels voor de samenvatting. Alleen ingevulde velden komen terug.
 const VELDEN = [
+  ["organisatie", "Organisatie"],
   ["type_onderzoek", "Type onderzoek"],
   ["techniekonderzoek_bestaat", "Techniekonderzoek aanwezig"],
   ["techniekrapport_link", "Link techniekrapport"],
@@ -49,6 +50,7 @@ const VELDEN = [
   ["klantplatform", "Klantplatform gewenst"],
   ["platform_gebruikers", "Platformgebruikers"],
   ["opleverdatum", "Uiterste datum rapport"],
+  ["taal", "Taal rapport"],
   ["contact_naam", "Contactpersoon"],
   ["contact_email", "E-mailadres"],
   ["contact_telefoon", "Telefoonnummer"],
@@ -83,12 +85,13 @@ export default {
       return json({ ok: false, error: "Verplichte velden ontbreken" }, 400, cors);
     }
 
-    const summaryMd = buildSummary(data, "\n");
+    const summaryMd = buildSummary(data, "\n"); // Nederlands, voor de e-mails
+    const cardBody = buildCardBody(data); // pijplijnformat, voor het kaartje
     const column = bepaalKolom(data.opleverdatum);
     const title = buildTitle(data);
 
     try {
-      await maakKaartje(env, title, summaryMd, column);
+      await maakKaartje(env, title, cardBody, column);
     } catch (e) {
       return json({ ok: false, error: "Kaartje aanmaken mislukt" }, 502, cors);
     }
@@ -117,13 +120,105 @@ function buildSummary(data, sep) {
 }
 
 function buildTitle(data) {
-  const wie = (data.contact_naam || "Onbekend").toString().trim();
-  const wat =
-    (data.hoofddomein || data.app_naam || data.onderzoeksobject || "onderzoek")
-      .toString()
-      .trim();
-  const type = (data.type_onderzoek || "intake").toString().trim();
-  return `Intake — ${wie} — ${wat} (${type})`;
+  const org = (data.organisatie || data.contact_naam || "Onbekend").toString().trim();
+  const wat = (data.hoofddomein || data.app_naam || data.onderzoeksobject || "onderzoek")
+    .toString()
+    .trim()
+    .replace(/^https?:\/\//, "")
+    .replace(/\/$/, "");
+  return `${wat} (${org})`;
+}
+
+/* ─────────────── Kaartjes-body in pijplijnformat ─────────────── */
+// De HQ-pijplijn (tools/board.py) parset '### Label' met de waarde eronder.
+// Labels en waarden Engels, exact zoals templates/audit-intake.md, zodat het
+// rapportproject de velden zonder aanpassing kan uitlezen.
+
+function buildCardBody(data) {
+  const audittype = mapAuditType(data);
+  const domain = (data.hoofddomein || data.app_store_link || "").toString().trim();
+  const rows = [
+    ["Client", (data.organisatie || "").toString().trim()],
+    ["Domain / URL", domain],
+    ["Google Doc link (audit document)", ""],
+    ["Reviewer (peer review)", ""],
+    ["Drive folder link (screenshots)", ""],
+    ["Audit type", audittype],
+    ["WCAG version", mapWcag(audittype)],
+    ["OS (app only)", mapOs(data)],
+    ["Language", data.taal === "en" ? "EN" : "NL"],
+    ["JSON needed (WCAG-EM)", data.regelkader === "overheid-bdto" ? "yes" : "no"],
+    ["Presentation needed", "no"],
+    ["Action plan needed", "no"],
+    ["Report date", (data.opleverdatum || "").toString().trim()],
+    ["Notes", buildNotes(data)],
+  ];
+  return rows.map(([label, value]) => `### ${label}\n\n${value}\n`).join("\n");
+}
+
+function mapAuditType(data) {
+  if (data.onderzoeksobject === "app") return "app";
+  // Content-audit zonder techniekonderzoek wordt een volledige audit.
+  if (data.type_onderzoek === "content-audit" && data.techniekonderzoek_bestaat === "nee") {
+    return "full";
+  }
+  const map = {
+    "mini-audit": "mini",
+    "website-audit": "full",
+    "content-audit": "content",
+    "techniekaudit": "technical",
+    "systeemaudit": "full",
+    "retest": "retest",
+  };
+  return map[data.type_onderzoek] || "";
+}
+
+function mapWcag(audittype) {
+  if (audittype === "app") return "2.1";
+  if (audittype === "retest") return "inherits-from-original";
+  return "2.2";
+}
+
+function mapOs(data) {
+  if (data.onderzoeksobject !== "app") return "n/a";
+  if (data.app_platform === "ios") return "ios";
+  if (data.app_platform === "android") return "android";
+  return "n/a";
+}
+
+// Alles wat niet in een vaste kop past, onder Notes zodat er niets verdwijnt.
+const NOTES_VELDEN = [
+  ["regelkader", "Regelkader"],
+  ["onderzoeksobject", "Onderzoeksobject"],
+  ["belangrijke_onderdelen", "Belangrijkste onderdelen"],
+  ["omgeving", "Omgeving"],
+  ["extra_domeinen", "Extra domeinen"],
+  ["app_naam", "Naam app"],
+  ["app_taal", "Programmeertaal of framework"],
+  ["techniekonderzoek_bestaat", "Techniekonderzoek aanwezig"],
+  ["techniekrapport_link", "Link techniekrapport"],
+  ["functionaliteiten_link", "Lijst met functionaliteiten"],
+  ["toegang", "Toegang"],
+  ["ip_whitelisting", "IP-whitelisting"],
+  ["inloggegevens", "Inloggegevens"],
+  ["inloggegevens_details", "Details inloggegevens"],
+  ["hulp_oplossen", "Hulp bij oplossen"],
+  ["klantplatform", "Klantplatform"],
+  ["platform_gebruikers", "Platformgebruikers"],
+  ["contact_naam", "Contactpersoon"],
+  ["contact_email", "E-mailadres"],
+  ["contact_telefoon", "Telefoonnummer"],
+  ["contact2_naam", "Tweede contactpersoon"],
+  ["contact2_email", "E-mailadres tweede contactpersoon"],
+];
+
+function buildNotes(data) {
+  const lines = [];
+  for (const [key, label] of NOTES_VELDEN) {
+    const val = (data[key] || "").toString().trim();
+    if (val) lines.push(`- ${label}: ${val}`);
+  }
+  return lines.join("\n");
 }
 
 /* ─────────────────────── Kolom bepalen ─────────────────────── */
@@ -219,19 +314,19 @@ async function maakKaartje(env, title, bodyMd, columnName) {
 /* ─────────────────────────── E-mail (AhaSend) ─────────────────────────── */
 
 async function sendEmail(env, to, subject, text) {
-  // AhaSend transactional send. Verifieer endpoint en veldnamen tegen de
-  // bestaande CRM-Worker (pipedrive-forms) voordat je live gaat.
-  return fetch("https://api.ahasend.com/v2/email/send", {
+  // AhaSend transactional send. Zelfde vorm als de portaal-mailservice.
+  const url = `https://api.ahasend.com/v2/accounts/${env.AHASEND_ACCOUNT_ID}/messages`;
+  return fetch(url, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${env.AHASEND_API_KEY}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: env.FROM_EMAIL,
-      to: [{ email: to }],
+      from: { email: env.FROM_EMAIL, name: env.FROM_NAME || "Proper Access" },
+      recipients: [{ email: to }],
       subject,
-      text_body: text,
+      text_content: text,
     }),
   });
 }

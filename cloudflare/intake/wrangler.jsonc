@@ -8,6 +8,8 @@
     "PROJECT_NUMBER": "3",
     "ALLOW_ORIGIN": "https://www.properaccess.nl",
     "NOTIFY_EMAIL": "julia@properaccess.nl",
-    "FROM_EMAIL": "julia@properaccess.nl"
+    "FROM_EMAIL": "julia@properaccess.nl",
+    "FROM_NAME": "Proper Access"
   }
+  // Secrets (wrangler secret put): GITHUB_TOKEN, AHASEND_API_KEY, AHASEND_ACCOUNT_ID
 }
