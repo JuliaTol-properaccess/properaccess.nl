@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Kolommen die niet onder elkaar gaan"
 date: 2026-07-03
 slug: "sc-1-4-10-kolommen-die-niet-onder-elkaar-gaan"
