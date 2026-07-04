@@ -15,10 +15,7 @@ keywords:
   - tekstafstand testen
   - bookmarklet toegankelijkheid designer
 checks:
-  - titel: "Tekstcontrast"
-    uitleg: "De lens meet het contrast van alle tekst tegen de achtergrond en markeert wat te weinig contrast heeft. Je ziet direct de gemeten verhouding en de eis die geldt."
-    wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
-  - titel: "Contrast-pipet"
+  - titel: "Tekst contrast"
     uitleg: "Meet zelf twee kleuren op de pagina met twee pipetten, bijvoorbeeld tekst op een foto of een knop op een gekleurde achtergrond. Je ziet meteen de gemeten contrastverhouding en of die voldoet aan de eis voor normale en grote tekst."
     wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
   - titel: "Grijswaarden (kleurblind-check)"

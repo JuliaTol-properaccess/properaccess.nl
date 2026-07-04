@@ -1,49 +1,13 @@
 /* Design-checks: visueel, ontwerpgericht. */
 
-PA.register({
-  id: "contrast",
-  group: "Kleur",
-  label: "Tekstcontrast",
-  wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/",
-  run: function (ctx) {
-    var els = Array.prototype.slice.call(document.querySelectorAll("body *"));
-    var checked = 0, fails = 0;
-    els.forEach(function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var direct = "";
-      for (var i = 0; i < el.childNodes.length; i++) {
-        if (el.childNodes[i].nodeType === 3) direct += el.childNodes[i].nodeValue;
-      }
-      if (!direct.trim()) return;
-      if (!PA.visible(el)) return;
-      var cs = getComputedStyle(el);
-      var fg = PA.parseColor(cs.color);
-      if (!fg) return;
-      var bg = PA.effectiveBg(el);
-      var ratio = PA.contrastRatio(fg, bg);
-      var size = parseFloat(cs.fontSize);
-      var bold = parseInt(cs.fontWeight, 10) >= 700;
-      var large = size >= 24 || (bold && size >= 18.66);
-      var need = large ? 3 : 4.5;
-      checked++;
-      if (ratio < need) {
-        fails++;
-        ctx.mark(el, { status: "error", label: ratio.toFixed(2) + ":1 (moet ≥ " + need + ")" });
-      }
-    });
-    return { count: fails, summary: checked + " tekstelementen gemeten, " + fails + " met te weinig contrast." };
-  },
-  clear: function (ctx) { ctx.clearMarks(); }
-});
-
-/* Contrast-pipet: meet twee kleuren en toon de contrastverhouding.
+/* Tekst contrast: meet twee kleuren en toon de contrastverhouding.
    Gebruikt de EyeDropper API waar die bestaat (Chrome, Edge). In andere
    browsers meet een klik op de pagina de tekst- of achtergrondkleur van
    het aangeklikte element. */
 PA.register({
   id: "contrastpicker",
   group: "Kleur",
-  label: "Contrast-pipet",
+  label: "Tekst contrast",
   wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/",
   run: function () {
     var hasED = typeof window.EyeDropper === "function";
@@ -63,13 +27,13 @@ PA.register({
     var card = document.createElement("div");
     card.className = "pa-picker";
     card.setAttribute("role", "group");
-    card.setAttribute("aria-label", "Contrast-pipet");
+    card.setAttribute("aria-label", "Tekst contrast");
     st.card = card;
 
     var head = document.createElement("div");
     head.className = "pa-picker__head";
     head.title = "Sleep om het venster te verplaatsen";
-    head.textContent = "Contrast-pipet";
+    head.textContent = "Tekst contrast";
     card.appendChild(head);
 
     var body = document.createElement("div");

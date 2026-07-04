@@ -50,10 +50,7 @@ checks:
   - titel: "Opmaak uit (leesvolgorde)"
     uitleg: "Met één klik zet je alle opmaak uit. Je ziet dan de kale volgorde waarin een screenreader de pagina voorleest. Loopt je verhaal nog logisch?"
     wcag: "/blog/sc-1-3-2-wat-betekent-betekenisvolle-volgorde/"
-  - titel: "Tekstcontrast"
-    uitleg: "De lens meet het contrast van je tekst tegen de achtergrond en markeert wat te weinig contrast heeft. Handig als je zelf tekstkleuren of achtergronden kiest in je teksteditor."
-    wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
-  - titel: "Contrast-pipet"
+  - titel: "Tekst contrast"
     uitleg: "Meet zelf twee kleuren op de pagina met twee pipetten, bijvoorbeeld je tekstkleur en de achtergrond. Je ziet meteen de gemeten contrastverhouding en of die voldoet aan de eis voor normale en grote tekst."
     wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
 ---
