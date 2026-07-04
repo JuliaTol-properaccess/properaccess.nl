@@ -112,19 +112,19 @@ De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten
 
 ## Veelgestelde vragen
 
-**Moet elke kleurvariatie van een product een eigen alt-tekst hebben?**
+### Moet elke kleurvariatie van een product een eigen alt-tekst hebben?
 
 Ja. Toon je hetzelfde shirt in rood, blauw en groen, dan beschrijf je elke foto apart: "katoenen t-shirt in rood", "katoenen t-shirt in blauw", "katoenen t-shirt in groen".
 
-**Kan ik AI gebruiken om alt-teksten te genereren?**
+### Kan ik AI gebruiken om alt-teksten te genereren?
 
 AI kan helpen, maar controleer altijd de uitkomst. AI kent de context niet. Een foto van schoenen op het strand wordt bijvoorbeeld beschreven als "schoenen op het strand", terwijl jij wilt zeggen: "Nike hardloopschoenen in actie tijdens een strandtraining".
 
-**Geldt dit ook voor afbeeldingen in PDF's?**
+### Geldt dit ook voor afbeeldingen in PDF's?
 
 Ja. Bied je brochures, rapporten of catalogi als PDF aan? Dan hebben de afbeeldingen daarin ook een alt-tekst nodig.
 
-**Wat als ik geen alt-tekst-veld kan vinden in mijn CMS?**
+### Wat als ik geen alt-tekst-veld kan vinden in mijn CMS?
 
 Bijna alle moderne systemen hebben er een, soms onder een andere naam zoals "alternatieve tekst" of "beschrijving". Kun je het veld echt niet vinden? Vraag het aan je webbouwer.
 

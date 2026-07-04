@@ -107,19 +107,19 @@ De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten
 
 ## Veelgestelde vragen
 
-**Mijn CMS toont geen optie voor kopcellen in tabellen. Wat nu?**
+### Mijn CMS toont geen optie voor kopcellen in tabellen. Wat nu?
 
 Kijk eerst in de tabelinstellingen van je editor; de optie heet soms "koprij" of "header". Is de optie er echt niet? Vraag dan je webbouwer om de editor uit te breiden of om de kopcellen in de code te zetten.
 
-**Ik vind Kop 2 te groot. Mag ik dan Kop 4 gebruiken?**
+### Ik vind Kop 2 te groot. Mag ik dan Kop 4 gebruiken?
 
 Nee. Het kopniveau gaat over de structuur van je verhaal, niet over de grootte. Vraag je webbouwer om de vormgeving van de koppen aan te passen. Dan klopt de structuur én het uiterlijk.
 
-**Geldt dit ook voor documenten zoals PDF's?**
+### Geldt dit ook voor documenten zoals PDF's?
 
 Ja. Ook in een PDF moeten koppen, lijsten en tabellen echte structuur hebben. Maak je documenten in Word? Gebruik dan de ingebouwde stijlen voor koppen en lijsten voordat je exporteert naar PDF.
 
-**Hoe controleer ik snel de koppenstructuur van een hele pagina?**
+### Hoe controleer ik snel de koppenstructuur van een hele pagina?
 
 Klik de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/) aan op de pagina. Je ziet direct alle koppen met hun niveau. Liever een browserextensie? Lees dan onze [handleiding voor HeadingsMap](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
 
