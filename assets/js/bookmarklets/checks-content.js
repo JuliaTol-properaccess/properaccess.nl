@@ -11,13 +11,12 @@ PA.register({
     imgs.forEach(function (img) {
       var hasAlt = img.hasAttribute("alt");
       var alt = img.getAttribute("alt");
-      var decorative = img.getAttribute("role") === "presentation" || img.getAttribute("aria-hidden") === "true";
       if (!hasAlt) {
         missing++;
-        ctx.mark(img, { status: "error", label: "alt ontbreekt" });
+        ctx.mark(img, { status: "error", label: "geen alt-attribuut" });
       } else if (alt.trim() === "") {
         empty++;
-        ctx.mark(img, { status: decorative || true ? "info" : "info", label: "decoratief (alt=\"\")" });
+        ctx.mark(img, { status: "info", label: 'alt=""' });
       } else {
         ok++;
         ctx.mark(img, { status: "ok", label: "alt: " + alt });
@@ -25,8 +24,8 @@ PA.register({
     });
     return {
       count: imgs.length,
-      summary: imgs.length + " afbeeldingen: " + ok + " met alt, " + empty +
-        " decoratief, " + missing + " zonder alt-tekst."
+      summary: imgs.length + " afbeeldingen: " + ok + " met alt-tekst, " + empty +
+        ' met leeg alt (alt=""), ' + missing + " zonder alt-attribuut."
     };
   },
   clear: function (ctx) { ctx.clearMarks(); }
@@ -84,31 +83,29 @@ PA.register({
 });
 
 PA.register({
-  id: "formlabels",
+  id: "sensory",
   group: "Inhoud",
-  label: "Invoervelden zonder naam",
-  wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/",
+  label: "Zintuiglijke verwijzingen",
+  wcag: "/blog/sc-1-3-3-wat-betekent-zintuigelijke-eigenschappen/",
   run: function (ctx) {
-    var fields = Array.prototype.slice.call(
-      document.querySelectorAll("input,select,textarea")
-    ).filter(function (f) {
-      var t = (f.getAttribute("type") || "").toLowerCase();
-      return t !== "hidden" && t !== "submit" && t !== "button" && t !== "reset" && t !== "image";
-    });
-    var noName = 0;
-    fields.forEach(function (f) {
-      var name = PA.accName(f).trim();
-      var placeholderOnly = !name && f.getAttribute("placeholder");
-      if (!name) {
-        noName++;
-        ctx.mark(f, { status: "error", label: placeholderOnly ? "alleen placeholder, geen naam" : "geen naam" });
-      } else {
-        ctx.mark(f, { status: "ok", label: name });
+    var terms = ["rechtsboven", "rechtsonder", "linksboven", "linksonder", "hierboven", "hieronder", "hiernaast", "rechts", "links"];
+    var re = new RegExp("\\b(" + terms.join("|") + ")\\b", "i");
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var node, seen = [], hits = 0;
+    while ((node = walker.nextNode())) {
+      var el = node.parentElement;
+      if (!el || el.closest("[data-pa-lens]")) continue;
+      var tag = el.tagName.toLowerCase();
+      if (tag === "script" || tag === "style" || tag === "noscript") continue;
+      var m = node.nodeValue.match(re);
+      if (m) {
+        hits++;
+        if (seen.indexOf(el) === -1) { seen.push(el); ctx.mark(el, { status: "warn", label: "“" + m[1].toLowerCase() + "”" }); }
       }
-    });
+    }
     return {
-      count: fields.length,
-      summary: fields.length + " invoervelden, " + noName + " zonder toegankelijke naam. Die naam komt uit een zichtbaar label, een aria-label of gekoppelde tekst. Een placeholder telt niet."
+      count: seen.length,
+      summary: seen.length + " plekken met woorden als “links”, “rechts” of “hieronder”. Controleer of de instructie ook klopt voor wie niet kan zien waar iets staat."
     };
   },
   clear: function (ctx) { ctx.clearMarks(); }

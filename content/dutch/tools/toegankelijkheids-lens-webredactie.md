@@ -16,7 +16,7 @@ keywords:
   - bookmarklet toegankelijkheid
 checks:
   - titel: "Afbeeldingen en alt-tekst"
-    uitleg: "Je ziet welke afbeeldingen een goede alt-tekst hebben, welke decoratief zijn en welke er nog een missen. Zo weet je meteen waar je tekst moet toevoegen."
+    uitleg: "Je ziet welke afbeeldingen een alt-tekst hebben, welke een leeg alt-attribuut hebben (alt=\"\") en welke er geen hebben. De lens toont de alt-tekst, maar oordeelt niet: jij bepaalt of een afbeelding betekenis draagt of niet."
     wcag: "/blog/sc-1-1-1-wat-betekent-niet-tekstuele-content/"
   - titel: "Koppen en structuur"
     uitleg: "De lens tekent alle koppen met hun niveau en waarschuwt als je een niveau overslaat. Een logische koppenstructuur helpt iedereen die de pagina scant of met een screenreader leest."
@@ -24,9 +24,9 @@ checks:
   - titel: "Linkteksten"
     uitleg: "De lens markeert vage links zoals “lees meer” en links zonder tekst. Een goede linktekst vertelt op zichzelf waar je terechtkomt."
     wcag: "/blog/sc-2-4-4-wat-betekent-doel-van-links-in-context/"
-  - titel: "Invoervelden zonder naam"
-    uitleg: "De lens markeert invoervelden zonder toegankelijke naam. Die naam komt uit een zichtbaar label, een aria-label of gekoppelde tekst, en vertelt voorleessoftware wat je in het veld moet invullen. Een placeholder telt niet als naam."
-    wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/"
+  - titel: "Zintuiglijke verwijzingen"
+    uitleg: "De lens markeert woorden als “links”, “rechts” en “hieronder”. Wie de pagina niet ziet, weet dan niet waar iets staat. Controleer of je de instructie ook zonder die verwijzing kunt begrijpen."
+    wcag: "/blog/sc-1-3-3-wat-betekent-zintuigelijke-eigenschappen/"
   - titel: "Taal van de pagina"
     uitleg: "Je ziet of de paginataal is ingesteld en welke onderdelen een andere taal hebben. De juiste taal zorgt dat een screenreader de woorden goed uitspreekt."
     wcag: "/blog/sc-3-1-1-wat-betekent-taal-van-de-pagina/"
@@ -42,8 +42,11 @@ checks:
   - titel: "Opmaak uit (leesvolgorde)"
     uitleg: "Met één klik zet je alle opmaak uit. Je ziet dan de kale volgorde waarin een screenreader de pagina voorleest. Loopt je verhaal nog logisch?"
     wcag: "/blog/sc-1-3-2-wat-betekent-betekenisvolle-volgorde/"
+  - titel: "Tekstcontrast"
+    uitleg: "De lens meet het contrast van je tekst tegen de achtergrond en markeert wat te weinig contrast heeft. Handig als je zelf tekstkleuren of achtergronden kiest in je teksteditor."
+    wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
 ---
 
-Als webredacteur bepaal je elke dag of je content voor iedereen te gebruiken is. Deze gratis lens laat direct op je eigen pagina zien of je alt-teksten, koppen, linkteksten en labels kloppen. Je sleept hem één keer naar je bladwijzerbalk en klikt hem daarna op elke website aan.
+Als webredacteur bepaal je elke dag of je content voor iedereen te gebruiken is. Deze gratis lens laat direct op je eigen pagina zien of je alt-teksten, koppen, linkteksten, tabellen en contrast kloppen. Je sleept hem één keer naar je bladwijzerbalk en klikt hem daarna op elke website aan.
 
 De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert.
