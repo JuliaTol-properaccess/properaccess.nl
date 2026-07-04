@@ -86,7 +86,7 @@ PA.register({
 PA.register({
   id: "formlabels",
   group: "Inhoud",
-  label: "Formuliervelden zonder label",
+  label: "Invoervelden zonder naam",
   wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/",
   run: function (ctx) {
     var fields = Array.prototype.slice.call(
@@ -95,20 +95,48 @@ PA.register({
       var t = (f.getAttribute("type") || "").toLowerCase();
       return t !== "hidden" && t !== "submit" && t !== "button" && t !== "reset" && t !== "image";
     });
-    var noLabel = 0;
+    var noName = 0;
     fields.forEach(function (f) {
       var name = PA.accName(f).trim();
       var placeholderOnly = !name && f.getAttribute("placeholder");
       if (!name) {
-        noLabel++;
-        ctx.mark(f, { status: "error", label: placeholderOnly ? "alleen placeholder" : "geen label" });
+        noName++;
+        ctx.mark(f, { status: "error", label: placeholderOnly ? "alleen placeholder, geen naam" : "geen naam" });
       } else {
         ctx.mark(f, { status: "ok", label: name });
       }
     });
     return {
       count: fields.length,
-      summary: fields.length + " invoervelden, " + noLabel + " zonder gekoppeld label."
+      summary: fields.length + " invoervelden, " + noName + " zonder toegankelijke naam. Die naam komt uit een zichtbaar label, een aria-label of gekoppelde tekst. Een placeholder telt niet."
+    };
+  },
+  clear: function (ctx) { ctx.clearMarks(); }
+});
+
+PA.register({
+  id: "tablescontent",
+  group: "Inhoud",
+  label: "Tabellen",
+  wcag: "/blog/sc-1-3-1-tabellen/",
+  run: function (ctx) {
+    var tables = Array.prototype.slice.call(document.querySelectorAll("table")).filter(function (t) {
+      return !t.closest("[data-pa-lens]");
+    });
+    var noHead = 0;
+    tables.forEach(function (t) {
+      var ths = t.querySelectorAll("th").length;
+      var caption = t.querySelector("caption");
+      var bits = [], status = "ok";
+      if (!ths) { noHead++; status = "error"; bits.push("geen kopcellen"); }
+      else bits.push(ths + " kopcellen");
+      if (!caption) { if (status !== "error") status = "warn"; bits.push("geen bijschrift"); }
+      else bits.push("bijschrift aanwezig");
+      ctx.mark(t, { status: status, label: bits.join(" · ") });
+    });
+    return {
+      count: tables.length,
+      summary: tables.length + " tabellen, " + noHead + " zonder kopcellen. Kopcellen vertellen voorleessoftware welke rij of kolom bij een cel hoort. Een bijschrift geeft de tabel een titel."
     };
   },
   clear: function (ctx) { ctx.clearMarks(); }
