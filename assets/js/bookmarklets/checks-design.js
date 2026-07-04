@@ -36,6 +36,166 @@ PA.register({
   clear: function (ctx) { ctx.clearMarks(); }
 });
 
+/* Contrast-pipet: meet twee kleuren en toon de contrastverhouding.
+   Gebruikt de EyeDropper API waar die bestaat (Chrome, Edge). In andere
+   browsers meet een klik op de pagina de tekst- of achtergrondkleur van
+   het aangeklikte element. */
+PA.register({
+  id: "contrastpicker",
+  group: "Kleur",
+  label: "Contrast-pipet",
+  wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/",
+  run: function () {
+    var hasED = typeof window.EyeDropper === "function";
+    var st = { colors: [null, null], pickHandler: null, card: null };
+    PA._picker = st;
+
+    function hexToRgb(hex) {
+      var m = String(hex).replace("#", "");
+      if (m.length === 3) m = m[0] + m[0] + m[1] + m[1] + m[2] + m[2];
+      return { r: parseInt(m.slice(0, 2), 16), g: parseInt(m.slice(2, 4), 16), b: parseInt(m.slice(4, 6), 16), a: 1 };
+    }
+    function toHex(c) {
+      var h = function (v) { v = Math.round(v).toString(16); return v.length === 1 ? "0" + v : v; };
+      return "#" + h(c.r) + h(c.g) + h(c.b);
+    }
+
+    var card = document.createElement("div");
+    card.className = "pa-picker";
+    card.setAttribute("role", "group");
+    card.setAttribute("aria-label", "Contrast-pipet");
+    st.card = card;
+
+    var head = document.createElement("div");
+    head.className = "pa-picker__head";
+    head.title = "Sleep om het venster te verplaatsen";
+    head.textContent = "Contrast-pipet";
+    card.appendChild(head);
+
+    var body = document.createElement("div");
+    body.className = "pa-picker__body";
+    card.appendChild(body);
+
+    var hint = document.createElement("p");
+    hint.className = "pa-picker__hint";
+    hint.textContent = hasED
+      ? "Meet twee kleuren met de pipetten, bijvoorbeeld tekst en achtergrond."
+      : "Je browser heeft geen pixel-pipet. Klik na de knop op een element: pipet 1 meet de tekstkleur, pipet 2 de achtergrondkleur.";
+    body.appendChild(hint);
+
+    var swatches = [], vals = [];
+    var status = document.createElement("div");
+    var ratioEl, normEl;
+
+    function update() {
+      var a = st.colors[0], b = st.colors[1];
+      if (!a || !b) return;
+      var ratio = PA.contrastRatio(hexToRgb(a), hexToRgb(b));
+      var txt = ratio.toFixed(2) + ":1";
+      ratioEl.textContent = txt;
+      normEl.textContent = "";
+      [[4.5, "normale tekst"], [3, "grote tekst"]].forEach(function (n) {
+        var ok = ratio >= n[0];
+        var line = document.createElement("div");
+        line.className = "pa-picker__norm";
+        var mark = document.createElement("span");
+        mark.className = ok ? "pa-picker__mark pa-picker__mark--ok" : "pa-picker__mark pa-picker__mark--fail";
+        mark.textContent = ok ? "✓ " : "✗ ";
+        line.appendChild(mark);
+        line.appendChild(document.createTextNode(n[1] + " (eis ≥ " + n[0] + ":1): " + (ok ? "voldoet" : "voldoet niet")));
+        normEl.appendChild(line);
+      });
+      PA.announce("Contrast " + txt + ". Normale tekst: " + (ratio >= 4.5 ? "voldoet" : "voldoet niet") + ". Grote tekst: " + (ratio >= 3 ? "voldoet" : "voldoet niet") + ".");
+    }
+
+    function setColor(i, hex) {
+      st.colors[i] = hex;
+      swatches[i].style.background = hex;
+      vals[i].textContent = hex.toUpperCase();
+      status.textContent = "";
+      update();
+    }
+
+    function pick(i) {
+      if (hasED) {
+        new window.EyeDropper().open().then(function (res) { setColor(i, res.sRGBHex); }).catch(function () {});
+        return;
+      }
+      if (st.pickHandler) document.removeEventListener("click", st.pickHandler, true);
+      status.textContent = "Klik op de pagina om kleur " + (i + 1) + " te meten.";
+      st.pickHandler = function (e) {
+        var el = e.target;
+        document.removeEventListener("click", st.pickHandler, true);
+        st.pickHandler = null;
+        if (!el || el.nodeType !== 1 || el.closest("[data-pa-lens]")) { status.textContent = ""; return; }
+        e.preventDefault();
+        e.stopPropagation();
+        var c = i === 0 ? PA.parseColor(getComputedStyle(el).color) : PA.effectiveBg(el);
+        if (c) setColor(i, toHex(c));
+      };
+      document.addEventListener("click", st.pickHandler, true);
+    }
+
+    ["Pipet 1", "Pipet 2"].forEach(function (name, i) {
+      var row = document.createElement("div");
+      row.className = "pa-picker__row";
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "pa-btn pa-picker__btn";
+      btn.textContent = name;
+      btn.setAttribute("aria-label", "Meet kleur " + (i + 1) + " met de pipet");
+      btn.addEventListener("click", function () { pick(i); });
+      var sw = document.createElement("span");
+      sw.className = "pa-picker__swatch";
+      sw.setAttribute("aria-hidden", "true");
+      var val = document.createElement("span");
+      val.className = "pa-picker__val";
+      val.textContent = "–";
+      swatches.push(sw);
+      vals.push(val);
+      row.appendChild(btn);
+      row.appendChild(sw);
+      row.appendChild(val);
+      body.appendChild(row);
+    });
+
+    status.className = "pa-picker__status";
+    status.setAttribute("aria-live", "polite");
+    body.appendChild(status);
+
+    var res = document.createElement("div");
+    res.className = "pa-picker__result";
+    var resLabel = document.createElement("span");
+    resLabel.textContent = "Contrast: ";
+    ratioEl = document.createElement("strong");
+    ratioEl.className = "pa-picker__ratio";
+    ratioEl.textContent = "–";
+    res.appendChild(resLabel);
+    res.appendChild(ratioEl);
+    normEl = document.createElement("div");
+    res.appendChild(normEl);
+    body.appendChild(res);
+
+    head.addEventListener("pointerdown", function () {
+      var r = card.getBoundingClientRect();
+      card.style.top = r.top + "px";
+      card.style.bottom = "auto";
+    });
+    PA.makeDraggable(card, head);
+    PA.root.appendChild(card);
+
+    return { count: 0, summary: "Meet twee kleuren in het venster linksonder. Je ziet meteen de contrastverhouding en of die aan de WCAG-eis voldoet." };
+  },
+  clear: function () {
+    var st = PA._picker;
+    if (st) {
+      if (st.pickHandler) document.removeEventListener("click", st.pickHandler, true);
+      if (st.card && st.card.parentNode) st.card.parentNode.removeChild(st.card);
+    }
+    PA._picker = null;
+  }
+});
+
 PA.register({
   id: "grayscale",
   group: "Kleur",

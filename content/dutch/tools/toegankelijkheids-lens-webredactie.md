@@ -53,6 +53,9 @@ checks:
   - titel: "Tekstcontrast"
     uitleg: "De lens meet het contrast van je tekst tegen de achtergrond en markeert wat te weinig contrast heeft. Handig als je zelf tekstkleuren of achtergronden kiest in je teksteditor."
     wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
+  - titel: "Contrast-pipet"
+    uitleg: "Meet zelf twee kleuren op de pagina met twee pipetten, bijvoorbeeld je tekstkleur en de achtergrond. Je ziet meteen de gemeten contrastverhouding en of die voldoet aan de eis voor normale en grote tekst."
+    wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
 ---
 
 Als webredacteur bepaal je elke dag of je content voor iedereen te gebruiken is. Deze gratis lens laat direct op je eigen pagina zien of je alt-teksten, koppen, linkteksten, tabellen en contrast kloppen. Je sleept hem één keer naar je bladwijzerbalk en klikt hem daarna op elke website aan.
