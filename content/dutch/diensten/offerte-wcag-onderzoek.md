@@ -33,7 +33,7 @@ features:
     bulletpoints:
         - 900+ audits uitgevoerd sinds 2019
         - IAAP-gecertificeerd team van 6 specialisten
-        - 100% conform WCAG-EM en Europese toegankelijkheidswetgeving (EAA)
+        - We toetsen volledig volgens WCAG-EM en de eisen van de EAA
         - Heldere rapporten met concrete oplossingen
         - Onbeperkt vragen stellen over het rapport. Voor begeleiding bij het oplossen werken we met een strippenkaart
     button:
