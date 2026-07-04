@@ -30,49 +30,29 @@ PA.register({
 });
 
 PA.register({
-  id: "landmarks",
+  id: "accname",
   group: "Semantiek",
-  label: "Landmarks",
-  wcag: "/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/",
+  label: "Toon toegankelijke naam",
+  wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/",
   run: function (ctx) {
-    var map = { header: "banner", nav: "navigation", main: "main", aside: "complementary", footer: "contentinfo", form: "form", section: "region" };
-    var sel = "header,nav,main,aside,footer,form,section,[role=banner],[role=navigation],[role=main],[role=complementary],[role=contentinfo],[role=search],[role=region],[role=form]";
-    var nodes = Array.prototype.slice.call(document.querySelectorAll(sel));
-    var mains = 0;
-    nodes.forEach(function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var role = el.getAttribute("role") || map[el.tagName.toLowerCase()] || "";
-      if (role === "main") mains++;
-      var name = PA.accName(el);
-      ctx.mark(el, { status: role === "main" ? "ok" : "info", label: role + (name && name.length < 40 ? " · " + name : "") });
+    var sel = "a[href],button,input,select,textarea,summary,[role=button],[role=link],[role=checkbox],[role=radio],[role=tab],[role=menuitem],[role=combobox],[role=textbox],[role=switch],[role=slider],[role=searchbox]";
+    var nodes = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function (el) {
+      if (el.closest("[data-pa-lens]")) return false;
+      if ((el.getAttribute("type") || "").toLowerCase() === "hidden") return false;
+      return PA.visible(el);
     });
-    var msg = nodes.length + " landmarks. ";
-    msg += mains === 1 ? "Precies 1 main. " : mains + " keer main (moet er 1 zijn). ";
-    return { count: nodes.length, summary: msg };
-  },
-  clear: function (ctx) { ctx.clearMarks(); }
-});
-
-PA.register({
-  id: "formdetail",
-  group: "Formulieren",
-  label: "Labelkoppeling (for/id)",
-  wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/",
-  run: function (ctx) {
-    var labels = Array.prototype.slice.call(document.querySelectorAll("label"));
-    var noFor = 0, noMatch = 0;
-    labels.forEach(function (l) {
-      var f = l.getAttribute("for");
-      if (!f) {
-        if (l.querySelector("input,select,textarea")) { ctx.mark(l, { status: "ok", label: "label (wrapt veld)" }); }
-        else { noFor++; ctx.mark(l, { status: "warn", label: "label zonder for" }); }
-      } else if (!document.getElementById(f)) {
-        noMatch++; ctx.mark(l, { status: "error", label: 'for="' + f + '" → geen match' });
+    var missing = 0;
+    nodes.forEach(function (el) {
+      var name = PA.accName(el).replace(/\s+/g, " ").trim();
+      if (!name) {
+        missing++;
+        ctx.mark(el, { status: "error", label: "geen toegankelijke naam" });
       } else {
-        ctx.mark(l, { status: "ok", label: 'for="' + f + '"' });
+        if (name.length > 50) name = name.slice(0, 47) + "…";
+        ctx.mark(el, { status: "ok", label: "“" + name + "”" });
       }
     });
-    return { count: labels.length, summary: labels.length + " labels. " + noFor + " zonder for-attribuut, " + noMatch + " met een for die nergens op wijst." };
+    return { count: nodes.length, summary: nodes.length + " interactieve elementen. " + missing + " zonder toegankelijke naam." };
   },
   clear: function (ctx) { ctx.clearMarks(); }
 });
@@ -80,21 +60,74 @@ PA.register({
 PA.register({
   id: "tabindex",
   group: "Toetsenbord",
-  label: "Tabvolgorde (tabindex)",
+  label: "Tabvolgorde",
   wcag: "/blog/sc-2-4-3-wat-betekent-focusvolgorde/",
   run: function (ctx) {
-    var nodes = Array.prototype.slice.call(document.querySelectorAll("[tabindex]"));
-    var positive = 0;
-    nodes.forEach(function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var v = parseInt(el.getAttribute("tabindex"), 10);
-      var status = v > 0 ? "error" : "info";
-      if (v > 0) positive++;
-      ctx.mark(el, { status: status, label: "tabindex=" + v + (v > 0 ? " (breekt volgorde)" : "") });
+    var sel = "a[href],button,input,select,textarea,summary,iframe,audio[controls],video[controls],[tabindex],[contenteditable=true]";
+    var nodes = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function (el) {
+      if (el.closest("[data-pa-lens]")) return false;
+      if (el.disabled) return false;
+      if ((el.getAttribute("type") || "").toLowerCase() === "hidden") return false;
+      var ti = el.getAttribute("tabindex");
+      if (ti !== null && parseInt(ti, 10) < 0) return false;
+      return PA.visible(el);
     });
-    return { count: nodes.length, summary: nodes.length + " elementen met tabindex. " + positive + " met een positieve waarde (die verstoren de logische volgorde)." };
+    /* Echte tabvolgorde: positieve tabindex eerst (oplopend), daarna de rest
+       in de volgorde waarin ze op de pagina staan. */
+    var pos = [], rest = [];
+    nodes.forEach(function (el) {
+      var v = parseInt(el.getAttribute("tabindex"), 10);
+      if (v > 0) pos.push({ el: el, v: v }); else rest.push(el);
+    });
+    pos.sort(function (a, b) { return a.v - b.v; });
+    var ordered = pos.map(function (p) { return p.el; }).concat(rest);
+    var n = 0;
+    ordered.forEach(function (el) {
+      n++;
+      var v = parseInt(el.getAttribute("tabindex"), 10);
+      if (v > 0) ctx.mark(el, { status: "error", label: n + " · tabindex=" + v + " (breekt volgorde)" });
+      else ctx.mark(el, { status: "info", label: String(n) });
+    });
+    var msg = ordered.length + " focusbare elementen, genummerd in tabvolgorde. ";
+    msg += pos.length ? pos.length + " met een positieve tabindex: die springen vóór de rest en verstoren de logische volgorde." : "Geen positieve tabindex-waarden gevonden.";
+    return { count: ordered.length, summary: msg };
   },
   clear: function (ctx) { ctx.clearMarks(); }
+});
+
+PA.register({
+  id: "textresize",
+  group: "Interactie",
+  label: "Tekst vergroten (200%)",
+  wcag: "/blog/sc-1-4-4-wat-betekent-tekst-vergroten/",
+  run: function () {
+    /* Twee passes: eerst alle huidige groottes meten, dan pas verdubbelen.
+       Anders telt de vergroting van een ouder door in de meting van een kind. */
+    var list = [];
+    Array.prototype.forEach.call(document.querySelectorAll("body *"), function (el) {
+      if (el.closest("[data-pa-lens]")) return;
+      var hasText = false;
+      for (var i = 0; i < el.childNodes.length; i++) {
+        if (el.childNodes[i].nodeType === 3 && el.childNodes[i].nodeValue.trim()) { hasText = true; break; }
+      }
+      if (!hasText) return;
+      var size = parseFloat(getComputedStyle(el).fontSize);
+      if (!size) return;
+      list.push({ el: el, size: size, prev: el.style.getPropertyValue("font-size"), prio: el.style.getPropertyPriority("font-size") });
+    });
+    list.forEach(function (r) {
+      r.el.style.setProperty("font-size", (r.size * 2) + "px", "important");
+    });
+    PA._resized = list;
+    return { count: 0, summary: "Alle tekst staat nu op 200%. Kijk of er tekst wegvalt, overlapt of buiten beeld raakt en of alles nog te bedienen is. Klik nogmaals om terug te zetten." };
+  },
+  clear: function () {
+    (PA._resized || []).forEach(function (r) {
+      if (r.prev) r.el.style.setProperty("font-size", r.prev, r.prio);
+      else r.el.style.removeProperty("font-size");
+    });
+    PA._resized = [];
+  }
 });
 
 PA.register({
@@ -114,33 +147,6 @@ PA.register({
 });
 
 PA.register({
-  id: "tables",
-  group: "Structuur",
-  label: "Tabellen (th/scope)",
-  wcag: "/blog/sc-1-3-1-tabellen/",
-  run: function (ctx) {
-    var tables = Array.prototype.slice.call(document.querySelectorAll("table"));
-    var problems = 0;
-    tables.forEach(function (t) {
-      if (t.closest("[data-pa-lens]")) return;
-      var ths = t.querySelectorAll("th");
-      var caption = t.querySelector("caption");
-      var noScope = 0;
-      Array.prototype.forEach.call(ths, function (th) { if (!th.getAttribute("scope")) noScope++; });
-      var status = "ok", bits = [ths.length + " th"];
-      if (!ths.length) { status = "error"; bits.push("geen th"); problems++; }
-      if (noScope) { status = status === "error" ? "error" : "warn"; bits.push(noScope + " zonder scope"); }
-      if (!caption) bits.push("geen caption");
-      var depth = t.querySelectorAll("table").length;
-      if (depth) { status = "warn"; bits.push(depth + " geneste tabel(len)"); }
-      ctx.mark(t, { status: status, label: bits.join(" · ") });
-    });
-    return { count: tables.length, summary: tables.length + " tabellen, " + problems + " zonder header-cellen (th)." };
-  },
-  clear: function (ctx) { ctx.clearMarks(); }
-});
-
-PA.register({
   id: "iframes",
   group: "Structuur",
   label: "Iframes (titel)",
@@ -154,26 +160,6 @@ PA.register({
       else ctx.mark(f, { status: "ok", label: "title: " + title });
     });
     return { count: frames.length, summary: frames.length + " iframes, " + noTitle + " zonder titel." };
-  },
-  clear: function (ctx) { ctx.clearMarks(); }
-});
-
-PA.register({
-  id: "dupids",
-  group: "Structuur",
-  label: "Dubbele id's",
-  wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/",
-  run: function (ctx) {
-    var seen = {}, dups = {};
-    Array.prototype.forEach.call(document.querySelectorAll("[id]"), function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var id = el.id;
-      if (seen[id]) { dups[id] = (dups[id] || 1) + 1; ctx.mark(el, { status: "error", label: 'dubbele id="' + id + '"' }); }
-      else seen[id] = el;
-    });
-    var keys = Object.keys(dups);
-    keys.forEach(function (id) { if (seen[id]) PA.addOverlay("dupids", seen[id], { status: "error", label: 'dubbele id="' + id + '"' }); });
-    return { count: keys.length, summary: keys.length + " id-waarden komen meer dan één keer voor. Dat breekt label- en ARIA-koppelingen." };
   },
   clear: function (ctx) { ctx.clearMarks(); }
 });
