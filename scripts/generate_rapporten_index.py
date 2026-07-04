@@ -129,6 +129,17 @@ def main() -> int:
     block, skipped = build_cards()
     page = INDEX.read_text(encoding="utf-8")
 
+    # Skips altijd expliciet melden, ook bij --check: een overgeslagen rapport
+    # staat wel live maar verschijnt niet op het overzicht. Meestal is het een
+    # wachtwoord-rapport dat in OVERRIDES hoort.
+    for slug in skipped:
+        print(
+            f"OVERGESLAGEN: {slug} heeft geen leesbare titel/datum en komt NIET "
+            f"op het overzicht. Wachtwoord-rapport? Voeg het toe aan OVERRIDES "
+            f"in {Path(__file__).name}.",
+            file=sys.stderr,
+        )
+
     if START in page and END in page:
         pattern = re.compile(r"[ \t]*" + re.escape(START) + r".*?" + re.escape(END), re.S)
         new_page = pattern.sub(lambda _m: block, page)
