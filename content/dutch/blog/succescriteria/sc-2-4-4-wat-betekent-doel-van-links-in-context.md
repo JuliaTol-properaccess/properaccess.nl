@@ -1,56 +1,106 @@
 ---
 title: "SC 2.4.4 - Wat betekent “Doel van links (in context)”"
 date: 2025-05-18
-categories: 
+categories:
   - "wcag-uitgelegd"
-tags: 
+description: "WCAG 2.4.4 vraagt dat elke link duidelijk maakt waar hij naartoe gaat. Lees hoe je als webredacteur goede linkteksten schrijft en zelf controleert."
+keywords:
+  - WCAG 2.4.4
+  - doel van links in context
+  - linktekst schrijven
+  - lees meer links
+  - beschrijvende linkteksten
+  - linkteksten controleren
+  - linkteksten webredactie
+tags:
   - "2-4-4"
   - "links"
-description: "WCAG 2.4.4 vereist dat het doel van elke link duidelijk is uit de tekst of context. Lees hoe je beschrijvende linkteksten schrijft."
 aliases:
   - /sc-2-4-4-wat-betekent-doel-van-links-in-context/
 ---
 
-Links zijn een van de belangrijkste manieren om door een website te navigeren. Voor gebruikers van schermlezers, of mensen die snel door een pagina willen scannen, moet direct duidelijk zijn wat een link doet. Een linktekst als **“Klik hier”** of **“Meer info”** is vaak te vaag en onduidelijk buiten de context van de omringende tekst.
-
-Daarom zegt WCAG: **zorg dat het doel van een link duidelijk is uit de linktekst zelf of de context eromheen**.
+Links zijn de manier waarop bezoekers zich door je website bewegen. Daarom zegt WCAG: **het doel van elke link moet duidelijk zijn uit de linktekst zelf of uit de directe context eromheen**.
 
 Dit heet **2.4.4 Link Purpose (In Context)**.
 
-## Wat wordt er van websites verwacht?
+## Wat zegt het criterium?
 
-- De linktekst moet **duidelijk** en **beschrijvend** zijn, zodat gebruikers direct begrijpen waar de link naartoe leidt.
+[WCAG succescriterium 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html) vraagt dat bezoekers aan een link kunnen zien waar hij naartoe gaat, zonder te gokken. De linktekst mag kort zijn, zolang de directe context de betekenis aanvult: de zin waar de link in staat, het lijstitem, de tabelcel of de kop er direct boven.
 
-- De context waarin de link staat moet duidelijk maken wat de bestemming is, bijvoorbeeld door gebruik van koppen of lijstitems.
+Als webredacteur schrijf jij de linkteksten. Dit criterium is dus vooral jouw werk, niet dat van je webbouwer.
 
-- Als de linktekst zelf kort is, moet de omringende context de betekenis aanvullen.
+## Waarom is dit belangrijk?
 
-Kort: gebruikers moeten meteen begrijpen wat een link doet, zonder te moeten gokken.
+Schermlezergebruikers navigeren vaak met een linkenlijst: alle links van de pagina onder elkaar, zonder de tekst eromheen. Een pagina vol "lees meer" klinkt dan als: "Lees meer. Lees meer. Lees meer. Klik hier." Welke link waarheen gaat, valt niet te achterhalen.
 
-## Wat is niet verplicht?
+Ook andere bezoekers hebben er last van:
 
-- Je hoeft niet altijd lange, gedetailleerde linkteksten te schrijven als de context al duidelijk is.
+- Mensen die met de tabtoets van link naar link springen, horen of zien alleen de linktekst.
+- Mensen die schermvergroting gebruiken, zien vaak alleen de link en niet de tekst eromheen.
+- Iedereen die een pagina scant, zoekt op de blauwe onderstreepte woorden. "Klik hier" vertelt ze niets.
 
-- Interne navigatielinks (zoals in een menu) hoeven niet uitgebreid beschreven te worden als ze logisch zijn geplaatst.
+## Wat telt als "context"?
+
+De context moet in de directe omgeving van de link staan. Dat is bijvoorbeeld:
+
+- de zin waar de link in staat
+- hetzelfde lijstitem
+- dezelfde tabelcel, of de kop van die rij of kolom
+- de kop direct boven de alinea met de link
+
+Een alinea verderop of een kop twee blokken hoger telt niet. En zelfs als de context formeel voldoet, blijft een zelfstandig leesbare linktekst voor iedereen prettiger. Dat is de veilige route.
 
 ## Veelgemaakte fouten
 
-- Links met teksten als **“Lees meer”**, **“Klik hier”** of **“Meer informatie”** zonder verdere context.
+- **"Lees meer", "klik hier" of "meer informatie" zonder duidelijke context.** De meest voorkomende fout, en de makkelijkste om te voorkomen.
+- **Een kale URL als linktekst.** Een schermlezer leest die voor als woordenbrij of karakter voor karakter: "h-t-t-p-s dubbele punt slash slash". Schrijf op waar de link naartoe gaat.
+- **Meerdere links met dezelfde tekst naar verschillende bestemmingen.** Drie keer "lees meer" op één pagina, elk naar een ander artikel: in een linkenlijst zijn ze niet uit elkaar te houden.
+- **Downloadlinks zonder bestandstype.** Je bezoeker verwacht een webpagina en krijgt ineens een PDF. Vermeld het bestandstype en liefst ook de grootte.
+- **Een linkende afbeelding zonder beschrijvende alt-tekst.** Bij een afbeelding die ergens naartoe linkt, is de alt-tekst de linktekst. Een leeg alt-veld betekent hier: een link zonder naam.
 
-- Links die alleen bestaan uit een URL zonder duidelijke beschrijving.
+## Zo schrijf je een goede linktekst
 
-- Iconen of knoppen zonder tekstalternatief die onduidelijk zijn voor schermlezers.
+1. **Beschrijf de bestemming of de actie.** Niet "klik hier voor onze openingstijden", maar "bekijk onze openingstijden".
+2. **Maak de linktekst zelfstandig leesbaar.** Test het zo: als je alleen de linktekst hoort, weet je dan waar je terechtkomt?
+3. **Zet het belangrijkste woord voorop.** Bezoekers scannen linkteksten net als koppen. "Openingstijden bekijken" scant beter dan "Hier vind je meer over onze openingstijden".
+4. **Vermeld bestandstype en grootte bij downloads.** Bijvoorbeeld: "Jaarverslag 2025 (PDF, 2 MB)".
+5. **Hou het kort maar betekenisvol.** Een hele zin als link is zelden nodig; een enkel woord als "hier" is te weinig.
+6. **Linkt een afbeelding? Beschrijf de bestemming in de alt-tekst.** Bijvoorbeeld "Naar het programma van het zomerfestival", niet "foto van het festivalterrein".
 
-## Wat kun je als webredacteur of manager doen?
+## Controleer je pagina's met de Toegankelijkheids-lens
 
-- **Controleer al je links**: Is het direct duidelijk waar elke link naartoe gaat?
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De lens markeert direct de vage links zoals "lees meer", links zonder tekst en linkende afbeeldingen zonder naam.
 
-- **Voeg context toe**: Als je korte linkteksten gebruikt, zorg dan voor een duidelijke context eromheen.
+De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
-- **Test met schermlezers**: Laat je links voorlezen zonder de omringende tekst – is de betekenis nog steeds duidelijk?
+## Veelgestelde vragen
 
-- **Vraag je webbouwer**: Worden linkteksten technisch goed gemarkeerd, bijvoorbeeld met aria-labels waar nodig?
+**Mag "lees meer" echt nooit?**
+
+Het kan voldoen als de link in hetzelfde blok staat als een duidelijke kop, bijvoorbeeld in een nieuwsoverzicht waar elke "lees meer" direct onder de titel van het bericht staat. Maar veiliger en vriendelijker is: "Lees meer over de nieuwe dienstregeling". Dan werkt de link ook in een linkenlijst.
+
+**Moet ik erbij zetten dat een link in een nieuw venster opent?**
+
+Voor dit criterium hoeft het niet, maar het is wel zo netjes. Een nieuw venster kan bezoekers in verwarring brengen, want de terugknop werkt daar niet meer. Zet het in de linktekst, bijvoorbeeld "planningsoverzicht (opent in nieuw venster)".
+
+**Mag een URL ooit als linktekst?**
+
+Een kort webadres als "properaccess.nl" in een contactblok is prima leesbaar. Een lange URL met slashes, streepjes en cijfers nooit: schrijf dan op waar de link naartoe gaat.
+
+**Mijn website staat vol "lees meer"-links, waar begin ik?**
+
+Vaak komen die uit één sjabloon, bijvoorbeeld de kaartjes op je nieuwsoverzicht. Vraag je webbouwer om dat sjabloon aan te passen, dan zijn honderden links in één keer opgelost. De losse links in je teksten pak je daarna zelf op, pagina voor pagina.
 
 ## Samenvatting
 
-Duidelijke links maken je site toegankelijker en gebruiksvriendelijker voor iedereen. Zorg dat gebruikers altijd weten waar een link hen naartoe brengt, zonder te moeten gokken.
+WCAG-succescriterium 2.4.4 draait om vertrouwen: bezoekers moeten altijd weten waar een link ze naartoe brengt, zonder te gokken. Als webredacteur heb je dit criterium grotendeels zelf in de hand.
+
+De belangrijkste punten:
+
+- Beschrijf in de linktekst de bestemming of de actie.
+- Vermijd "lees meer", "klik hier" en kale URL's.
+- Vermeld bestandstype en grootte bij downloads.
+- Bij een linkende afbeelding is de alt-tekst de linktekst.
+- Controleer je pagina's met de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/).
+
+**Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.
