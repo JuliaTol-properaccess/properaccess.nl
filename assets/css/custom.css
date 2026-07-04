@@ -16101,3 +16101,33 @@ html.dark .tool-card--featured {
   vertical-align: middle;
   margin-left: 0.35rem;
 }
+
+/* Contrast-voorbeeld — kleurswatch met voorbeeldtekst naast de uitleg (blog) */
+.contrast-voorbeeld {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+.contrast-voorbeeld__swatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 4rem;
+  height: 3rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.contrast-voorbeeld__tekst {
+  margin: 0;
+}
+.contrast-voorbeeld__tekst p {
+  margin: 0;
+}
+html.dark .contrast-voorbeeld__swatch {
+  border-color: #4B5563;
+}

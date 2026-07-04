@@ -1,0 +1,21 @@
+{{- /*
+  Contrast-voorbeeld shortcode — toont een kleurswatch met voorbeeldtekst "Aa"
+  in de opgegeven kleurencombinatie, met de uitleg ernaast.
+
+  Gebruik:
+    {{< contrast-voorbeeld voorgrond="#999999" achtergrond="#FFFFFF" >}}
+    Lichtgrijs #999999 op wit: **2,85:1**. Onvoldoende.
+    {{< /contrast-voorbeeld >}}
+
+  Parameters:
+    voorgrond   (verplicht) — tekstkleur, bv. "#999999"
+    achtergrond (verplicht) — achtergrondkleur, bv. "#FFFFFF"
+
+  De swatch is decoratief (aria-hidden): alle informatie staat in de tekst ernaast.
+*/ -}}
+{{- $voorgrond := .Get "voorgrond" -}}
+{{- $achtergrond := .Get "achtergrond" -}}
+<div class="contrast-voorbeeld">
+  <span class="contrast-voorbeeld__swatch" style="color: {{ $voorgrond | safeCSS }}; background-color: {{ $achtergrond | safeCSS }};" aria-hidden="true">Aa</span>
+  <div class="contrast-voorbeeld__tekst">{{ .Inner | markdownify }}</div>
+</div>
