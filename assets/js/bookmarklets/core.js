@@ -183,7 +183,8 @@ PA.STYLE = [
   "display:flex;flex-direction:column;background:#fff;color:#1F2937;border:1px solid #1F2937;",
   "border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.28);pointer-events:auto;z-index:2147483647;font-size:14px}",
   ".pa-panel__head{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#1F2937;",
-  "color:#fff;border-radius:9px 9px 0 0}",
+  "color:#fff;border-radius:9px 9px 0 0;cursor:move;user-select:none;touch-action:none}",
+  ".pa-panel__grip{flex:0 0 auto;color:#fff;opacity:.7;font-size:13px;letter-spacing:1px}",
   ".pa-panel__logo{width:12px;height:12px;border-radius:50%;background:#A30D4B;flex:0 0 auto}",
   ".pa-panel__title{font-weight:800;font-size:14px;margin:0;flex:1 1 auto}",
   ".pa-panel__role{font-size:11px;font-weight:600;opacity:.85;display:block}",
@@ -200,8 +201,8 @@ PA.STYLE = [
   "border:0;background:#fff;color:#1F2937;cursor:pointer;padding:8px 10px;font-size:13px;font-weight:600}",
   ".pa-check__btn:hover{background:#f5f5f5}",
   ".pa-check__btn:focus-visible{outline:3px solid #004050;outline-offset:-2px}",
-  ".pa-sw{flex:0 0 auto;width:32px;height:18px;border-radius:9px;background:#cbd5e1;position:relative;transition:background .15s}",
-  ".pa-sw::after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:left .15s}",
+  ".pa-sw{flex:0 0 auto;width:34px;height:20px;border-radius:10px;background:#6b7280;position:relative;transition:background .15s}",
+  ".pa-sw::after{content:'';position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .15s}",
   ".pa-check--on .pa-sw{background:#A30D4B}",
   ".pa-check--on .pa-sw::after{left:16px}",
   ".pa-check__name{flex:1 1 auto}",
@@ -213,6 +214,7 @@ PA.STYLE = [
   "padding:6px 10px;font-size:12px;font-weight:700;cursor:pointer;flex:1 1 auto}",
   ".pa-btn:hover{background:#f5f5f5}",
   ".pa-btn--primary{background:#A30D4B;border-color:#A30D4B;color:#fff}",
+  ".pa-btn--primary:hover{background:#7d0a3a;border-color:#7d0a3a;color:#fff}",
   ".pa-btn:focus-visible{outline:3px solid #004050;outline-offset:1px}",
   ".pa-panel__credit{padding:7px 10px;border-top:1px solid #e5e7eb;font-size:11px;color:#004050;text-align:center;border-radius:0 0 9px 9px}",
   ".pa-panel__credit a{color:#A30D4B;font-weight:700}",
@@ -282,6 +284,35 @@ PA.destroy = function () {
   PA.host = null;
 };
 
+/* Sleep het paneel via de titelbalk (niet via de sluitknop). */
+PA.makeDraggable = function (panel, handle) {
+  var on = false, sx = 0, sy = 0, sl = 0, st = 0;
+  handle.addEventListener("pointerdown", function (e) {
+    if (e.target.closest(".pa-iconbtn")) return;
+    var r = panel.getBoundingClientRect();
+    panel.style.left = r.left + "px";
+    panel.style.top = r.top + "px";
+    panel.style.right = "auto";
+    on = true; sx = e.clientX; sy = e.clientY; sl = r.left; st = r.top;
+    try { handle.setPointerCapture(e.pointerId); } catch (err) {}
+    e.preventDefault();
+  });
+  handle.addEventListener("pointermove", function (e) {
+    if (!on) return;
+    var nx = sl + (e.clientX - sx), ny = st + (e.clientY - sy);
+    var minX = 40 - panel.offsetWidth, maxX = window.innerWidth - 40;
+    var maxY = window.innerHeight - 36;
+    panel.style.left = Math.max(minX, Math.min(nx, maxX)) + "px";
+    panel.style.top = Math.max(0, Math.min(ny, maxY)) + "px";
+  });
+  var end = function (e) {
+    on = false;
+    try { handle.releasePointerCapture(e.pointerId); } catch (err) {}
+  };
+  handle.addEventListener("pointerup", end);
+  handle.addEventListener("pointercancel", end);
+};
+
 PA.build = function () {
   PA.state = {};
   PA.host = document.createElement("div");
@@ -313,10 +344,12 @@ PA.build = function () {
 
   var head = document.createElement("div");
   head.className = "pa-panel__head";
+  head.title = "Sleep om het paneel te verplaatsen";
   head.innerHTML =
     '<span class="pa-panel__logo" aria-hidden="true"></span>' +
     '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
-    '<span class="pa-panel__role">' + PA.esc(PA.role) + "</span></h2>";
+    '<span class="pa-panel__role">' + PA.esc(PA.role) + "</span></h2>" +
+    '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
   var close = document.createElement("button");
   close.className = "pa-iconbtn";
   close.type = "button";
@@ -372,7 +405,7 @@ PA.build = function () {
   auditBtn.href = PA.baseURL + "/diensten/offerte-wcag-onderzoek/";
   auditBtn.target = "_blank";
   auditBtn.rel = "noopener";
-  auditBtn.textContent = "Laat het ons checken";
+  auditBtn.textContent = "Laat het een expert checken";
   foot.appendChild(resetBtn);
   foot.appendChild(auditBtn);
   panel.appendChild(foot);
@@ -388,6 +421,8 @@ PA.build = function () {
   panel.addEventListener("keydown", function (e) {
     if (e.key === "Escape") { e.stopPropagation(); PA.destroy(); }
   });
+
+  PA.makeDraggable(panel, head);
 
   window.addEventListener("scroll", PA.reposition, true);
   window.addEventListener("resize", PA.reposition, true);
