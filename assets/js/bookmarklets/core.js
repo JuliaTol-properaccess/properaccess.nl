@@ -67,9 +67,24 @@ PA.accName = function (el) {
   if (wrap) return (wrap.textContent || "").trim();
   var alt = el.getAttribute && el.getAttribute("alt");
   if (alt != null) return alt.trim();
+  var text = (el.textContent || "").trim();
+  if (text) return text;
+  /* Naam uit de inhoud: alt van afbeeldingen, aria-label of svg-titel van
+     kinderen. Zo krijgt een link met alleen een afbeelding toch een naam. */
+  var bits = [];
+  if (el.querySelectorAll) {
+    Array.prototype.forEach.call(el.querySelectorAll("img,svg,[aria-label]"), function (d) {
+      var dl = d.getAttribute("aria-label");
+      if (dl && dl.trim()) { bits.push(dl.trim()); return; }
+      var tag = d.tagName.toLowerCase();
+      if (tag === "img") { var a = d.getAttribute("alt"); if (a && a.trim()) bits.push(a.trim()); }
+      else if (tag === "svg") { var t = d.querySelector("title"); if (t) bits.push((t.textContent || "").trim()); }
+    });
+  }
+  if (bits.length) return bits.join(" ").trim();
   var title = el.getAttribute && el.getAttribute("title");
   if (title && title.trim()) return title.trim();
-  return (el.textContent || "").trim();
+  return "";
 };
 
 /* ---- kleur / contrast -------------------------------------------------- */
