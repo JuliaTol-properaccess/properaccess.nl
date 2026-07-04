@@ -81,33 +81,21 @@ De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten
 
 ## Veelgestelde vragen
 
-<details class="faq-item">
-<summary class="faq-question">Waarom is een placeholder niet genoeg als label?</summary>
-<div class="faq-answer">
+### Waarom is een placeholder niet genoeg als label?
+
 Een placeholder verdwijnt zodra iemand begint te typen. Wie halverwege het formulier terugkijkt, ziet niet meer wat er in de eerdere velden moest. Daarnaast is het contrast van placeholdertekst vaak te laag en behandelen schermlezers een placeholder niet betrouwbaar als label. Gebruik een placeholder hooguit als extra voorbeeld naast een zichtbaar label.
-</div>
-</details>
 
-<details class="faq-item">
-<summary class="faq-question">Mijn formulieren komen uit een module in mijn CMS, wat kan ik zelf doen?</summary>
-<div class="faq-answer">
+### Mijn formulieren komen uit een module in mijn CMS, wat kan ik zelf doen?
+
 De teksten zijn van jou: de labels, de instructies, de uitleg bovenaan en de vraag boven een groep opties. Die maak je in de formulierenmodule zelf duidelijk. Of een label technisch goed aan het veld gekoppeld is, bepaalt de module. Twijfel je daaraan? Vraag het aan je webbouwer of controleer het met de lens.
-</div>
-</details>
 
-<details class="faq-item">
-<summary class="faq-question">Moet ik verplichte of juist optionele velden markeren?</summary>
-<div class="faq-answer">
+### Moet ik verplichte of juist optionele velden markeren?
+
 Allebei mag, als het maar duidelijk en consistent is. Zijn de meeste velden optioneel? Markeer dan de verplichte velden. Is bijna alles verplicht? Dan is "niet verplicht" bij de paar optionele velden rustiger. Leg een sterretje altijd bovenaan het formulier uit.
-</div>
-</details>
 
-<details class="faq-item">
-<summary class="faq-question">Wat is het verschil met de andere WCAG-criteria over labels?</summary>
-<div class="faq-answer">
-SC 3.3.2 gaat over de aanwezigheid: staat er bij elk veld een label of instructie? <a href="/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/">SC 1.3.1</a> gaat over de technische koppeling tussen label en veld, dat is werk voor je webbouwer. En <a href="/blog/sc-2-4-6-wat-betekent-koppen-en-labels/">SC 2.4.6</a> gaat over de kwaliteit van de labeltekst: is die duidelijk genoeg?
-</div>
-</details>
+### Wat is het verschil met de andere WCAG-criteria over labels?
+
+SC 3.3.2 gaat over de aanwezigheid: staat er bij elk veld een label of instructie? [SC 1.3.1](/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/) gaat over de technische koppeling tussen label en veld, dat is werk voor je webbouwer. En [SC 2.4.6](/blog/sc-2-4-6-wat-betekent-koppen-en-labels/) gaat over de kwaliteit van de labeltekst: is die duidelijk genoeg?
 
 ## Samenvatting
 
