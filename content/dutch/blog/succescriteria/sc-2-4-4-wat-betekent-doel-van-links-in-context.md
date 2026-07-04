@@ -75,21 +75,33 @@ De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten
 
 ## Veelgestelde vragen
 
-**Mag "lees meer" echt nooit?**
-
+<details class="faq-item">
+<summary class="faq-question">Mag "lees meer" echt nooit?</summary>
+<div class="faq-answer">
 Het kan voldoen als de link in hetzelfde blok staat als een duidelijke kop, bijvoorbeeld in een nieuwsoverzicht waar elke "lees meer" direct onder de titel van het bericht staat. Maar veiliger en vriendelijker is: "Lees meer over de nieuwe dienstregeling". Dan werkt de link ook in een linkenlijst.
+</div>
+</details>
 
-**Moet ik erbij zetten dat een link in een nieuw venster opent?**
-
+<details class="faq-item">
+<summary class="faq-question">Moet ik erbij zetten dat een link in een nieuw venster opent?</summary>
+<div class="faq-answer">
 Voor dit criterium hoeft het niet, maar het is wel zo netjes. Een nieuw venster kan bezoekers in verwarring brengen, want de terugknop werkt daar niet meer. Zet het in de linktekst, bijvoorbeeld "planningsoverzicht (opent in nieuw venster)".
+</div>
+</details>
 
-**Mag een URL ooit als linktekst?**
-
+<details class="faq-item">
+<summary class="faq-question">Mag een URL ooit als linktekst?</summary>
+<div class="faq-answer">
 Een kort webadres als "properaccess.nl" in een contactblok is prima leesbaar. Een lange URL met slashes, streepjes en cijfers nooit: schrijf dan op waar de link naartoe gaat.
+</div>
+</details>
 
-**Mijn website staat vol "lees meer"-links, waar begin ik?**
-
+<details class="faq-item">
+<summary class="faq-question">Mijn website staat vol "lees meer"-links, waar begin ik?</summary>
+<div class="faq-answer">
 Vaak komen die uit één sjabloon, bijvoorbeeld de kaartjes op je nieuwsoverzicht. Vraag je webbouwer om dat sjabloon aan te passen, dan zijn honderden links in één keer opgelost. De losse links in je teksten pak je daarna zelf op, pagina voor pagina.
+</div>
+</details>
 
 ## Samenvatting
 
