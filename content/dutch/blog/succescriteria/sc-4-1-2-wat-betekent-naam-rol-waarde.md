@@ -3,47 +3,231 @@ title: 'SC 4.1.2 - Wat betekent \"Naam, rol, waarde\"'
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
-description: "WCAG 4.1.2 vraagt dat interactieve elementen een correcte naam, rol en waarde hebben. Lees hoe je aria-labels en semantische HTML correct toepast."
+description: "WCAG 4.1.2 voor ontwikkelaars: naam, rol en waarde uitgelegd met veel code. Goede en foute voorbeelden met semantische HTML en ARIA, plus testtips."
 aliases:
   - /sc-4-1-2-wat-betekent-naam-rol-waarde/
 ---
 
-Succescriterium 4.1.2 richt zich op het juist benoemen van interactieve elementen zoals knoppen, invoervelden en links. Dit succescriterium zorgt ervoor dat hulpsoftware zoals schermlezers deze elementen goed kunnen identificeren en de juiste naam, rol en waarde aan gebruikers kunnen overbrengen.
+Succescriterium 4.1.2 (Naam, rol, waarde) is het criterium waar je als ontwikkelaar het meest direct invloed op hebt. Het zegt dat elk interactief onderdeel dat je bouwt, programmatisch drie dingen moet prijsgeven: een **naam** (wat is het), een **rol** (wat voor soort onderdeel is het) en waar van toepassing een **waarde of status** (in welke stand staat het). Hulpsoftware zoals een screenreader leest die drie dingen uit de accessibility tree. Klopt er een van niet, dan hoort je gebruiker iets verkeerds of helemaal niets.
 
-Een toegankelijkheidsnaam (accessibility name) verwijst naar de beschrijvende tekst die aan een element wordt toegewezen via HTML-attributen zoals aria-label, aria-labelledby, alt, of door de zichtbare tekst van het element. Deze naam maakt duidelijk wat het element doet of welke inhoud het bevat.
+De kern in één zin: gebruik het juiste HTML-element, geef het een duidelijke naam, en houd de status synchroon. ARIA is het vangnet, niet het startpunt.
 
-## Waarom is toegankelijkheidsnaam belangrijk?
+## Rol: begin bij semantische HTML
 
-Een duidelijke en accurate toegankelijkheidsnaam is cruciaal omdat het gebruikers van hulpmiddelen, zoals schermlezers, in staat stelt om te begrijpen wat een element op een pagina doet. Zonder een goede naamgeving kunnen zij niet interactief en zelfstandig door een website navigeren. Voor mensen met visuele beperkingen of cognitieve uitdagingen is een duidelijke toegankelijkheidsnaam essentieel om de bedoeling en functionaliteit van een website-element te begrijpen.
+De rol vertelt de browser en de screenreader wat voor onderdeel iets is: een knop, een link, een selectievakje, een kop. Native HTML-elementen brengen hun rol, toetsenbordgedrag en focus gratis mee. Namaak met een `div` doet dat niet.
 
-## Hoe test je toegankelijkheidsnaam?
+Fout: een `div` die een knop nabootst. Geen rol, geen focus, geen toetsenbordbediening.
 
-Er zijn verschillende manieren om toegankelijkheidsnamen te testen:
+```html
+<div class="btn" onclick="verstuur()">Verstuur</div>
+```
 
-1. **Gebruik van een schermlezer**: Open de website met een schermlezer (zoals NVDA of VoiceOver) en navigeer naar interactieve elementen. Let op of de naam die wordt aangekondigd overeenkomt met de visuele functie van het element.
+Goed: een echt `button`-element. Rol `button`, focusbaar, reageert op Enter en spatie, en zit vanzelf in de tabvolgorde.
 
-3. **Developer Tools in browsers**: Inspecteer de broncode met ingebouwde tools van de browser (zoals Chrome DevTools) om te controleren of er relevante aria-label, alt, of title-attributen aanwezig zijn.
+```html
+<button type="button" onclick="verstuur()">Verstuur</button>
+```
 
-## Voorbeelden van fouten onder WCAG SC 4.1.2 over naam
+Moet je toch een niet-semantisch element gebruiken, dan moet je de rol, de focus en het toetsenbordgedrag allemaal zelf toevoegen. Dit is de minimale reparatie, en meteen het bewijs waarom een `button` bijna altijd beter is:
 
-1. **Knoppen zonder beschrijving**: Een knop die alleen een afbeelding bevat, zonder een aria-label of alt-tekst, bijvoorbeeld een zoekknop die alleen als "knop" wordt herkend door een schermlezer.
+```html
+<div
+  role="button"
+  tabindex="0"
+  onclick="verstuur()"
+  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();verstuur()}"
+>
+  Verstuur
+</div>
+```
 
-3. **Invoervelden zonder label**: Tekstvelden of formulieren die geen zichtbaar label hebben en geen associatie hebben met een label-element of aria-labelledby-attribuut.
+Veelgemaakte fout: een rol toekennen die niet klopt met het gedrag. Een link is geen knop.
 
-5. **Links met alleen een afbeelding**: Links die alleen een afbeelding bevatten zonder alternatieve tekst of aria-label, waardoor een schermlezer slechts "link" aankondigt zonder verdere context.
+```html
+<!-- Fout: een link die zich als knop gedraagt -->
+<a href="#" role="button" onclick="openModal()">Open venster</a>
 
-## Hoe geef je naam aan een element?
+<!-- Goed: gebruik waarvoor het bedoeld is -->
+<button type="button" onclick="openModal()">Open venster</button>
+<!-- Navigeer je echt naar een andere plek? Dan een gewone link -->
+<a href="/contact">Neem contact op</a>
+```
 
-Er zijn verschillende methoden om een naam aan een element toe te kennen. De juiste keuze hangt af van het type element:
+## Naam: de toegankelijke naam
 
-1. **aria-label**: Gebruik aria-label voor interactieve elementen zoals knoppen of links die geen zichtbare tekst bevatten. Bijvoorbeeld: `<button aria-label="Verstuur formulier"></button>.`
+De toegankelijke naam (accessible name) is de tekst die een screenreader voorleest bij een onderdeel. De browser berekent die naam volgens een vaste volgorde. Vereenvoudigd:
 
-3. **aria-labelledby**: Gebruik aria-labelledby wanneer een element zijn naam ontleent aan een ander element op de pagina. Bijvoorbeeld: `<input id="email" aria-labelledby="email-label"><label id="email-label" for="email">E-mailadres</label>`.
+1. `aria-labelledby` (verwijst naar tekst elders op de pagina)
+2. `aria-label` (letterlijke tekst op het element)
+3. de eigen inhoud of native koppeling: de tekst van een knop, een gekoppeld `label`, of de `alt` van een afbeelding
+4. `title` en `placeholder` als laatste redmiddel (onbetrouwbaar, gebruik dit niet als enige naam)
 
-5. **alt-attribuut voor afbeeldingen**: Gebruik een betekenisvolle alt-tekst voor afbeeldingen, bijvoorbeeld: `<img src="logo.png" alt="Logo van gemeente X">`.
+Een knop met zichtbare tekst heeft al een naam. Niets extra's nodig:
 
-7. **Zichtbare tekst als naam**: Voor knoppen of links met zichtbare tekst is het voldoende om de juiste en duidelijke tekst te gebruiken. Bijvoorbeeld: `<a href="/contact">Neem contact op</a>`.
+```html
+<button type="button">Bewaar concept</button>
+```
 
-## **Conclusie**
+Een icoonknop zonder tekst is de klassieker die misgaat. Zonder naam kondigt een screenreader alleen "knop" aan.
 
-Het juist benoemen van elementen onder WCAG SC 4.1.2 is essentieel om een toegankelijke digitale ervaring te bieden voor iedereen. Het biedt gebruikers van hulpmiddelen duidelijke en intuïtieve informatie, wat leidt tot betere navigatie en interactie. Door consistent namen aan elementen toe te voegen, zorg je ervoor dat je website voldoet aan WCAG-normen en toegankelijk blijft voor een breed publiek.
+```html
+<!-- Fout: naamloze icoonknop -->
+<button type="button">
+  <svg><use href="#icon-search"></use></svg>
+</button>
+
+<!-- Goed: aria-label op de knop, icoon verborgen voor hulpsoftware -->
+<button type="button" aria-label="Zoeken">
+  <svg aria-hidden="true" focusable="false"><use href="#icon-search"></use></svg>
+</button>
+
+<!-- Ook goed: visueel verborgen tekst (werkt ook als CSS niet laadt) -->
+<button type="button">
+  <svg aria-hidden="true" focusable="false"><use href="#icon-search"></use></svg>
+  <span class="sr-only">Zoeken</span>
+</button>
+```
+
+Invoervelden hebben een gekoppeld label nodig. Een `placeholder` is geen naam: hij verdwijnt zodra je typt en heeft vaak te weinig contrast.
+
+```html
+<!-- Fout: alleen een placeholder -->
+<input type="email" placeholder="E-mailadres">
+
+<!-- Goed: expliciet gekoppeld label via for/id -->
+<label for="email">E-mailadres</label>
+<input type="email" id="email">
+
+<!-- Ook goed: label om het veld heen -->
+<label>
+  E-mailadres
+  <input type="email">
+</label>
+```
+
+`aria-labelledby` gebruik je als de naam al ergens zichtbaar op de pagina staat. Je kunt meerdere id's combineren:
+
+```html
+<h2 id="titel">Facturen</h2>
+<button type="button" aria-labelledby="titel actie" id="actie-knop">
+  <span id="actie">Exporteren</span>
+</button>
+<!-- Screenreader leest: "Facturen Exporteren, knop" -->
+```
+
+Een link met alleen een afbeelding ontleent zijn naam aan de `alt` van die afbeelding. Leeg of ontbrekend, en de link heet "link".
+
+```html
+<!-- Fout: geen naam, screenreader zegt alleen "link" -->
+<a href="/"><img src="logo.svg" alt=""></a>
+
+<!-- Goed: de alt beschrijft de bestemming, niet het plaatje -->
+<a href="/"><img src="logo.svg" alt="Home, Proper Access"></a>
+```
+
+Let op de valkuil met `aria-label` op elementen die de rol niet dragen. `aria-label` werkt niet op een gewone `div` of `span` zonder rol, en niet op onbepaalde inline-elementen. Zet het op een element met een rol (een knop, een link, een landmark) of op een element dat native een naam accepteert.
+
+```html
+<!-- Fout: aria-label wordt genegeerd op een span zonder rol -->
+<span aria-label="Sluiten" onclick="close()">×</span>
+
+<!-- Goed -->
+<button type="button" aria-label="Sluiten">×</button>
+```
+
+## Waarde en status: houd ARIA synchroon met de UI
+
+Bij onderdelen die van stand wisselen moet de status ook programmatisch kloppen. Een knop die er "ingedrukt" uitziet maar dat nergens meldt, is voor een screenreadergebruiker gewoon een knop. De grootste fout hier is niet het ontbreken van ARIA, maar ARIA die niet meebeweegt met de werkelijke stand.
+
+Een schakelknop (toggle) gebruikt `aria-pressed`. Werk de waarde bij in JavaScript, niet alleen de klasse:
+
+```html
+<button type="button" aria-pressed="false" id="fav">Favoriet</button>
+```
+
+```js
+const knop = document.getElementById('fav');
+knop.addEventListener('click', () => {
+  const actief = knop.getAttribute('aria-pressed') === 'true';
+  knop.setAttribute('aria-pressed', String(!actief)); // status blijft synchroon
+});
+```
+
+Een in- en uitklapbaar onderdeel (disclosure) gebruikt `aria-expanded`, en wijst met `aria-controls` naar wat het opent:
+
+```html
+<!-- Fout: verandert visueel wel, maar meldt de stand niet -->
+<button type="button" class="accordion" onclick="toggle()">Verzendopties</button>
+<div id="panel" hidden>...</div>
+
+<!-- Goed -->
+<button type="button" aria-expanded="false" aria-controls="panel" id="acc">
+  Verzendopties
+</button>
+<div id="panel" hidden>...</div>
+```
+
+```js
+const acc = document.getElementById('acc');
+const panel = document.getElementById('panel');
+acc.addEventListener('click', () => {
+  const open = acc.getAttribute('aria-expanded') === 'true';
+  acc.setAttribute('aria-expanded', String(!open));
+  panel.hidden = open;
+});
+```
+
+Een aangepast selectievakje of switch krijgt de bijbehorende rol en `aria-checked`. Bouw je een switch, gebruik dan `role="switch"`:
+
+```html
+<!-- Fout: ziet eruit als een schakelaar, maar rol en status ontbreken -->
+<div class="switch" onclick="toggle(this)"></div>
+
+<!-- Goed -->
+<button type="button" role="switch" aria-checked="false" id="notif">
+  Meldingen
+</button>
+```
+
+Bij native formuliervelden zit de waarde al goed, mits je de `value`-property gebruikt en niet alleen visueel iets verandert. Bij een aangepaste schuifregelaar (slider) moet je de waarde expliciet melden:
+
+```html
+<div
+  role="slider"
+  tabindex="0"
+  aria-valuemin="0"
+  aria-valuemax="100"
+  aria-valuenow="40"
+  aria-valuetext="40 procent"
+  aria-label="Volume"
+></div>
+```
+
+Werk bij zo'n slider `aria-valuenow` bij op elke stap, anders hoort de gebruiker steeds dezelfde waarde terwijl de regelaar beweegt.
+
+## Veelgemaakte fouten op een rij
+
+- Een `div` of `span` met een `onclick` in plaats van een `button`. Geen rol, geen focus, geen toetsenbord.
+- Een icoonknop of icoonlink zonder `aria-label` of visueel verborgen tekst.
+- Een `placeholder` als vervanging voor een `label`.
+- `aria-label` op een element zonder rol (een kale `span` of `div`).
+- `aria-labelledby` of `aria-controls` die verwijst naar een `id` die niet bestaat.
+- Dezelfde `id` twee keer op de pagina, waardoor koppelingen stuk gaan.
+- `aria-expanded`, `aria-pressed` of `aria-checked` die in de HTML staat maar in JavaScript nooit wordt bijgewerkt.
+- ARIA toevoegen aan een native element dat de rol al heeft, bijvoorbeeld `role="button"` op een `<button>`.
+
+## Hoe test je naam, rol en waarde?
+
+Open de accessibility tree in je browser. In Chrome DevTools zie je onder het tabblad Accessibility per element de berekende Name, Role en de states. Vergelijk dat met wat je visueel verwacht.
+
+Test daarna met je toetsenbord: kun je elk interactief onderdeel bereiken met Tab, en bedienen met Enter of spatie? En luister met een screenreader (NVDA op Windows, VoiceOver op macOS) of de naam, de rol en de status kloppen bij wat je ziet.
+
+### Onze Toegankelijkheids-lens voor ontwikkelaars
+
+Wil je dit snel op je eigen pagina bekijken zonder DevTools open te klikken, gebruik dan onze gratis [Toegankelijkheids-lens voor ontwikkelaars](/tools/toegankelijkheids-lens-ontwikkelaars/). Het is een bookmarklet die je op elke pagina draait, ook op localhost. De lens toont live de ARIA-rollen en -attributen, markeert gebroken referenties naar id's die niet bestaan, vindt dubbele id's, laat de tabvolgorde zien en forceert een zichtbare focus. Zo zie je in één oogopslag waar naam, rol of waarde niet kloppen. De code draait volledig in je eigen browser en er wordt niets verstuurd.
+
+Wil je opzoeken welke rol welke states en properties verwacht, dan helpt onze [ARIA-rollen en -attributen referentie](/tools/aria-referentie/) je verder.
+
+## Conclusie
+
+Naam, rol en waarde zijn geen ARIA-oefening, maar een gewoonte. Kies het element dat de rol al draagt, geef het een naam die klopt met wat je ziet, en werk de status bij op dezelfde plek waar je de UI verandert. Doe je dat consistent, dan voldoet je interface aan WCAG 4.1.2 en werkt hij voor iedereen die met een screenreader of alleen een toetsenbord navigeert.
