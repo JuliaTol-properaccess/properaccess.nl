@@ -23,7 +23,7 @@ search_close: to close
 footer_optin_title: "We do more than audits"
 footer_optin_p1: "Every week we research how modern browsers and assistive technology work, build our own tools, and automate digital accessibility for our clients."
 footer_optin_p2: "For example: how does a screen reader behave with a specific ARIA pattern? What WCAG issues do we encounter most often? How do you build an accessible date picker? We share what we learn — openly and practically."
-footer_optin_p3: "We also build free tools that anyone can use — like our heading structure checker, colour contrast checker, and alt text guide."
+footer_optin_p3: "We also build free tools that anyone can use — like our colour contrast checker, alt text guide, and PDF checker."
 footer_optin_p4: "We send a newsletter once a month with information you can actually use. No spam."
 footer_newsletter_title: "Subscribe to newsletter"
 footer_newsletter_placeholder: "Your email address"
