@@ -17,11 +17,12 @@
         {{ $visible := where .RegularPages.ByWeight ".Params.toon_in_lijst" "!=" false }}
         {{ range $visible }}
           <a href="{{ .RelPermalink }}"
-             class="tool-card"
+             class="tool-card{{ if .Params.uitgelicht }} tool-card--featured{{ end }}"
              data-doelgroep="{{ delimit .Params.doelgroep "," }}">
             <div class="tool-card__body">
               <h2 class="tool-card__title">
                 {{ .Title }}
+                {{ if .Params.uitgelicht }}<span class="tool-card__new">Nieuw</span>{{ end }}
                 {{ if .Params.beta }}<span class="tool-card__beta">Beta</span>{{ end }}
               </h2>
               <p class="tool-card__description">{{ .Description }}</p>

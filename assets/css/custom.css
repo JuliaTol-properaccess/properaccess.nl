@@ -15902,3 +15902,202 @@ html.dark .tool-pdf__upload-btn--focus {
     transition: none;
   }
 }
+
+/* ============================================================
+   Toegankelijkheids-lens: install-pagina's (bookmarklet-install)
+   Het paneel zelf zit in Shadow DOM; hier alleen de landingspagina.
+   ============================================================ */
+.pa-bm {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid #1F2937;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.pa-bm__install {
+  padding: 1.5rem;
+  text-align: center;
+}
+.pa-bm__step {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+.pa-bm__drag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background: #A30D4B;
+  color: #fff;
+  border: 2px solid #A30D4B;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: grab;
+  box-shadow: 0 4px 14px rgba(163, 13, 75, 0.25);
+}
+.pa-bm__drag:hover {
+  background: #870a3e;
+}
+.pa-bm__drag:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+.pa-bm__drag-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+.pa-bm__hint {
+  margin: 0.9rem auto 0;
+  max-width: 34rem;
+  font-size: 0.9rem;
+  color: #004050;
+}
+.pa-bm__manual {
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+  background: #f5f5f5;
+}
+.pa-bm__manual summary {
+  font-weight: 700;
+  cursor: pointer;
+  color: #004050;
+}
+.pa-bm__manual-steps {
+  margin: 0.75rem 0;
+  padding-left: 1.2rem;
+}
+.pa-bm__manual-steps li {
+  margin: 0.3rem 0;
+}
+.pa-bm__code-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+.pa-bm__code {
+  width: 100%;
+  margin: 0.4rem 0;
+  padding: 0.6rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  resize: vertical;
+  background: #fff;
+  color: #1F2937;
+}
+.pa-bm__copy {
+  appearance: none;
+  border: 1px solid #1F2937;
+  background: #fff;
+  color: #1F2937;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.pa-bm__copy:hover {
+  background: #1F2937;
+  color: #fff;
+}
+.pa-bm__checks {
+  margin: 2rem 0;
+}
+.pa-bm__check-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.pa-bm__check {
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #A30D4B;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+}
+.pa-bm__check-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  color: #1F2937;
+}
+.pa-bm__check-text {
+  margin: 0;
+  color: #374151;
+}
+.pa-bm__check-wcag {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+}
+.pa-bm__check-wcag a {
+  color: #A30D4B;
+  font-weight: 700;
+}
+.pa-bm__note {
+  margin: 2rem 0;
+  padding: 1.2rem 1.4rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+.pa-bm__note h2 {
+  margin-top: 0;
+}
+
+html.dark .pa-bm,
+html.dark .pa-bm__check {
+  border-color: #374151;
+}
+html.dark .pa-bm__step,
+html.dark .pa-bm__check-title,
+html.dark .pa-bm__note h2 {
+  color: #f5f5f5;
+}
+html.dark .pa-bm__manual,
+html.dark .pa-bm__note {
+  background: #111827;
+}
+html.dark .pa-bm__code {
+  background: #1F2937;
+  color: #f5f5f5;
+  border-color: #374151;
+}
+html.dark .pa-bm__check-text {
+  color: #d1d5db;
+}
+
+/* Uitgelichte tool-kaarten: de Toegankelijkheids-lens (eerste rij) */
+.tool-card--featured {
+  background: #f5f5f5;
+  border: 2px solid #A30D4B;
+  border-top: 3px solid #A30D4B;
+}
+.tool-card--featured:hover {
+  box-shadow: 0 6px 20px rgba(163, 13, 75, 0.18);
+  border-top-color: #A30D4B;
+}
+.tool-card--featured .tool-card__title {
+  color: #A30D4B;
+}
+html.dark .tool-card--featured {
+  background: rgba(163, 13, 75, 0.12);
+  border-color: #A30D4B;
+  border-top-color: #A30D4B;
+}
+.tool-card__new {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  background: #A30D4B;
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}

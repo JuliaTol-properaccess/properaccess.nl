@@ -1,0 +1,113 @@
+{{ define "main" }}
+{{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <h1 class="mb-2">{{ .Title }}</h1>
+
+    {{ with .Content }}
+    <div class="tool-seo-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    {{ with $bm }}
+    <div class="pa-bm">
+      <div class="pa-bm__install">
+        <p class="pa-bm__step">
+          {{ if eq $.Lang "nl" }}Sleep deze knop naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar:{{ end }}
+        </p>
+        <a class="pa-bm__drag" href="{{ .href | safeURL }}" draggable="true">
+          <span class="pa-bm__drag-dot" aria-hidden="true"></span>
+          {{ $.Title }}
+        </a>
+        <p class="pa-bm__try">
+          {{ if eq $.Lang "nl" }}Je kunt er ook meteen hier op klikken om de lens op deze pagina te proberen.
+          {{ else }}You can also click it right here to try the lens on this page.{{ end }}
+        </p>
+        <p class="pa-bm__hint">
+          {{ if eq $.Lang "nl" }}Werkt in Chrome, Edge, Firefox en Safari. Klik daarna op de
+          bladwijzer op elke website om de lens te openen. Klik nogmaals om te sluiten.
+          {{ else }}Works in Chrome, Edge, Firefox and Safari. Then click the bookmark on any
+          website to open the lens. Click again to close.{{ end }}
+        </p>
+      </div>
+
+      <details class="pa-bm__manual">
+        <summary>{{ if eq $.Lang "nl" }}Slepen lukt niet? Maak de bladwijzer handmatig{{ else }}Can't drag it? Create the bookmark manually{{ end }}</summary>
+        <ol class="pa-bm__manual-steps">
+          <li>{{ if eq $.Lang "nl" }}Maak een nieuwe bladwijzer aan (ster-icoon of Ctrl/Cmd&nbsp;+&nbsp;D).{{ else }}Create a new bookmark (star icon or Ctrl/Cmd&nbsp;+&nbsp;D).{{ end }}</li>
+          <li>{{ if eq $.Lang "nl" }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, e.g. “{{ $.Title }}”.{{ end }}</li>
+          <li>{{ if eq $.Lang "nl" }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
+        </ol>
+        <label class="pa-bm__code-label" for="pa-bm-code">{{ if eq $.Lang "nl" }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
+        <textarea id="pa-bm-code" class="pa-bm__code" readonly rows="4">{{ .code }}</textarea>
+        <button type="button" class="pa-bm__copy" data-target="pa-bm-code">
+          {{ if eq $.Lang "nl" }}Kopieer de code{{ else }}Copy the code{{ end }}
+        </button>
+      </details>
+    </div>
+    {{ end }}
+
+    {{ with .Params.checks }}
+    <div class="pa-bm__checks">
+      <h2>{{ if eq $.Lang "nl" }}Wat de lens laat zien{{ else }}What the lens shows{{ end }}</h2>
+      <ul class="pa-bm__check-list">
+        {{ range . }}
+        <li class="pa-bm__check">
+          <h3 class="pa-bm__check-title">{{ .titel }}</h3>
+          <p class="pa-bm__check-text">{{ .uitleg }}</p>
+          {{ with .wcag }}<p class="pa-bm__check-wcag"><a href="{{ . }}">{{ if eq $.Lang "nl" }}WCAG-uitleg{{ else }}WCAG explainer{{ end }}</a></p>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    <div class="pa-bm__note">
+      <h2>{{ if eq $.Lang "nl" }}Waarom een lens en geen scanner?{{ else }}Why a lens, not a scanner?{{ end }}</h2>
+      {{ if eq .Lang "nl" }}
+      <p>Een automatische scan vindt hooguit een derde van de toegankelijkheidsproblemen.
+      Deze lens laat je zien wat er echt op je pagina staat, zodat je met je eigen ogen
+      beoordeelt of het klopt. De lens draait volledig in je eigen browser: er wordt
+      niets verstuurd of opgeslagen.</p>
+      {{ else }}
+      <p>An automated scan finds at most a third of accessibility problems. This lens shows
+      you what is really on your page, so you can judge with your own eyes whether it is
+      right. It runs entirely in your own browser: nothing is sent or stored.</p>
+      {{ end }}
+    </div>
+
+    <div class="tool-cta">
+      {{ if eq .Lang "nl" }}
+      <p>Wil je zeker weten dat je hele website voldoet? Wij testen handmatig met
+      screenreaders en echte gebruikersverhalen.</p>
+      <p><a href="/diensten/offerte-wcag-onderzoek/">Vraag een offerte aan</a> of bel 085 5055 890.</p>
+      {{ else }}
+      <p>Want to be sure your whole website complies? We test manually with screen readers
+      and real user stories.</p>
+      <p><a href="/en/contact/">Request a quote</a> or call +31 85 5055 890.</p>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var btns = document.querySelectorAll(".pa-bm__copy");
+  btns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var ta = document.getElementById(btn.getAttribute("data-target"));
+      if (!ta) return;
+      ta.select();
+      navigator.clipboard.writeText(ta.value).then(function () {
+        var old = btn.textContent;
+        btn.textContent = "Gekopieerd";
+        setTimeout(function () { btn.textContent = old; }, 1800);
+      });
+    });
+  });
+})();
+</script>
+{{ end }}
