@@ -8,6 +8,11 @@ gratis: true
 uitgelicht: true
 weight: -3
 doelgroep: ["Webredactie"]
+aliases:
+  - /tools/alt-tekst-checker/
+  - /tools/koppenstructuur-checker/
+  - /tools/link-checker/
+  - /tools/tabel-checker/
 keywords:
   - toegankelijkheid checken content
   - alt-tekst controleren
@@ -36,6 +41,9 @@ checks:
   - titel: "Tabellen"
     uitleg: "De lens markeert tabellen zonder kopcellen of bijschrift. Kopcellen vertellen voorleessoftware welke rij of kolom bij een cel hoort, zodat een bezoeker een tabel kan volgen."
     wcag: "/blog/sc-1-3-1-tabellen/"
+  - titel: "Titels van ingesloten kaders"
+    uitleg: "De lens markeert ingesloten kaders (iframes), zoals een video of een kaart, zonder titel. Een titel vertelt een screenreadergebruiker wat er in het kader zit."
+    wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/"
   - titel: "Paginatitel"
     uitleg: "De lens toont de titel van de pagina. Een duidelijke, unieke titel helpt bezoekers om tabbladen en zoekresultaten uit elkaar te houden."
     wcag: "/blog/sc-2-4-2-wat-betekent-paginatitels/"

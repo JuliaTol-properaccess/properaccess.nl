@@ -176,6 +176,29 @@ PA.register({
 });
 
 PA.register({
+  id: "iframetitle",
+  group: "Inhoud",
+  label: "Titels van ingesloten kaders",
+  wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/",
+  run: function (ctx) {
+    var frames = Array.prototype.slice.call(document.querySelectorAll("iframe")).filter(function (f) {
+      return !f.closest("[data-pa-lens]");
+    });
+    var noTitle = 0;
+    frames.forEach(function (f) {
+      var title = f.getAttribute("title") || f.getAttribute("aria-label");
+      if (!title || !title.trim()) { noTitle++; ctx.mark(f, { status: "error", label: "kader zonder titel" }); }
+      else ctx.mark(f, { status: "ok", label: "titel: " + title });
+    });
+    return {
+      count: frames.length,
+      summary: frames.length + " ingesloten kaders (iframes), " + noTitle + " zonder titel. Een titel vertelt een screenreadergebruiker wat er in het kader zit, bijvoorbeeld een video of een kaart."
+    };
+  },
+  clear: function (ctx) { ctx.clearMarks(); }
+});
+
+PA.register({
   id: "pagetitle",
   group: "Inhoud",
   label: "Paginatitel",
