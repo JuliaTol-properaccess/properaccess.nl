@@ -107,7 +107,7 @@ _WCAG: 3.1.1 Taal van de pagina, 3.1.2 Taal van delen_
 
 ### 11. Logische koppenstructuur (h1-h6) zonder gaten
 
-Eén `<h1>` per pagina, dan `<h2>` voor de secties, dan `<h3>` voor sub-secties. Geen `<h1>` gevolgd door `<h4>`, geen `<h2>` gebruikt voor opmaak. Je homepage en productpagina zijn de plekken waar dit het vaakst fout gaat. Test de koppen met onze tool: https://www.properaccess.nl/tools/koppenstructuur-checker/.
+Eén `<h1>` per pagina, dan `<h2>` voor de secties, dan `<h3>` voor sub-secties. Geen `<h1>` gevolgd door `<h4>`, geen `<h2>` gebruikt voor opmaak. Je homepage en productpagina zijn de plekken waar dit het vaakst fout gaat. Test de koppen met onze gratis [Toegankelijkheids-lens voor webredactie](https://www.properaccess.nl/tools/toegankelijkheids-lens-webredactie/).
 
 _WCAG: 1.3.1 Info en relaties, 2.4.6 Koppen en labels_
 

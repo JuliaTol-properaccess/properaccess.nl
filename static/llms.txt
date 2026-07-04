@@ -21,8 +21,9 @@
 
 ## Gratis tools
 
-- [Koppenstructuur checker](https://www.properaccess.nl/tools/koppenstructuur-checker/): Controleer de heading hierarchy van een pagina
-- [Alt-tekst checker](https://www.properaccess.nl/tools/alt-tekst-checker/): Controleer alt-teksten van afbeeldingen
+- [Toegankelijkheids-lens voor webredactie](https://www.properaccess.nl/tools/toegankelijkheids-lens-webredactie/): Bookmarklet die alt-teksten, koppen, linkteksten en labels op elke pagina controleert
+- [Toegankelijkheids-lens voor ontwikkelaars](https://www.properaccess.nl/tools/toegankelijkheids-lens-ontwikkelaars/): Bookmarklet die ARIA, landmarks, labels, tabvolgorde, focus en tabellen live op de pagina toont
+- [Toegankelijkheids-lens voor designers](https://www.properaccess.nl/tools/toegankelijkheids-lens-designers/): Bookmarklet die contrast, kleurgebruik, focus, doelgrootte en tekstafstand laat zien
 - [Kleurcontrast checker](https://www.properaccess.nl/tools/kleurcontrast-checker/): Test kleurcontrast volgens WCAG
 - [Foutmeldingen naslagwerk](https://www.properaccess.nl/tools/foutmeldingen/): Voorbeelden van toegankelijke foutmeldingen
 - [ARIA referentie](https://www.properaccess.nl/tools/aria-referentie/): Naslagwerk voor ARIA-attributen
