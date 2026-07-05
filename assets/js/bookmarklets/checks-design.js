@@ -9,7 +9,37 @@ PA.register({
   group: "Kleur",
   label: "Tekst contrast",
   wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/",
-  run: function () {
+  run: function (ctx) {
+    /* Automatische markering: tekst op een betrouwbaar effen achtergrond die
+       onder de eis zakt. Tekst op afbeeldingen, gradients of half-transparante
+       lagen slaan we over; meet die zelf met de pipetten hieronder. */
+    var els = Array.prototype.slice.call(document.querySelectorAll("body *"));
+    var checked = 0, fails = 0;
+    els.forEach(function (el) {
+      if (el.closest("[data-pa-lens]")) return;
+      var direct = "";
+      for (var i = 0; i < el.childNodes.length; i++) {
+        if (el.childNodes[i].nodeType === 3) direct += el.childNodes[i].nodeValue;
+      }
+      if (!direct.trim()) return;
+      if (!PA.visible(el)) return;
+      var cs = getComputedStyle(el);
+      var fg = PA.parseColor(cs.color);
+      if (!fg) return;
+      var bg = PA.solidBg(el);
+      if (!bg) return;
+      var ratio = PA.contrastRatio(fg, bg);
+      var size = parseFloat(cs.fontSize);
+      var bold = parseInt(cs.fontWeight, 10) >= 700;
+      var large = size >= 24 || (bold && size >= 18.66);
+      var need = large ? 3 : 4.5;
+      checked++;
+      if (ratio < need) {
+        fails++;
+        ctx.mark(el, { status: "error", label: ratio.toFixed(2) + ":1 (moet ≥ " + need + ")" });
+      }
+    });
+
     var hasED = typeof window.EyeDropper === "function";
     var st = { colors: [null, null], pickHandler: null, card: null };
     PA._picker = st;
@@ -148,9 +178,14 @@ PA.register({
     PA.makeDraggable(card, head);
     PA.root.appendChild(card);
 
-    return { count: 0, summary: "Meet twee kleuren in het venster linksonder. Je ziet meteen de contrastverhouding en of die aan de WCAG-eis voldoet." };
+    var summary = fails === 0
+      ? checked + " tekstelementen op een effen achtergrond gemeten, geen met te weinig contrast."
+      : fails + " van " + checked + " tekstelementen op een effen achtergrond hebben te weinig contrast (rood gemarkeerd).";
+    summary += " Meet tekst op een afbeelding of gradient zelf met de pipetten linksonder.";
+    return { count: fails, summary: summary };
   },
-  clear: function () {
+  clear: function (ctx) {
+    if (ctx) ctx.clearMarks();
     var st = PA._picker;
     if (st) {
       if (st.pickHandler) document.removeEventListener("click", st.pickHandler, true);
@@ -180,6 +215,7 @@ PA.register({
   id: "targetsize",
   group: "Interactie",
   label: "Doelgrootte (24px)",
+  wcag: "/blog/sc-2-5-8-wat-betekent-doelgrootte-minimum/",
   run: function (ctx) {
     var sel = "a[href],button,input,select,textarea,[role=button],[role=link],[onclick]";
     var nodes = Array.prototype.slice.call(document.querySelectorAll(sel));
@@ -193,10 +229,10 @@ PA.register({
       var r = el.getBoundingClientRect();
       if (r.width < 24 || r.height < 24) {
         small++;
-        ctx.mark(el, { status: "warn", label: Math.round(r.width) + "×" + Math.round(r.height) + " (< 24)" });
+        ctx.mark(el, { status: "warn", label: Math.round(r.width) + "×" + Math.round(r.height) + " px" });
       }
     });
-    return { count: small, summary: n + " klikbare elementen, " + small + " kleiner dan 24 bij 24 pixels." };
+    return { count: small, summary: n + " klikbare elementen bekeken, " + small + " kleiner dan 24 bij 24 pixels. Let op: een klein doel kan toch voldoen, bijvoorbeeld een link midden in een tekst of een doel met genoeg ruimte eromheen." };
   },
   clear: function (ctx) { ctx.clearMarks(); }
 });
@@ -271,20 +307,32 @@ PA.register({
     var common = "position:fixed;z-index:2147483645;background:#A30D4B;pointer-events:none";
     h.style.cssText = common + ";left:0;right:0;height:1px";
     v.style.cssText = common + ";top:0;bottom:0;width:1px";
+    var tag = document.createElement("div");
+    tag.style.cssText = "position:fixed;z-index:2147483645;background:#1F2937;color:#fff;" +
+      "font:600 11px/1.3 system-ui,-apple-system,sans-serif;padding:2px 6px;border-radius:3px;" +
+      "pointer-events:none;white-space:nowrap;transform:translate(10px,10px)";
     PA.root.appendChild(h);
     PA.root.appendChild(v);
-    PA._rulerH = h; PA._rulerV = v;
+    PA.root.appendChild(tag);
+    PA._rulerH = h; PA._rulerV = v; PA._rulerTag = tag;
     PA._rulerMove = function (e) {
       h.style.top = e.clientY + "px";
       v.style.left = e.clientX + "px";
+      var nearRight = e.clientX > window.innerWidth - 90;
+      var nearBottom = e.clientY > window.innerHeight - 30;
+      tag.style.left = e.clientX + "px";
+      tag.style.top = e.clientY + "px";
+      tag.style.transform = "translate(" + (nearRight ? "-100%" : "10px") + "," + (nearBottom ? "-100%" : "10px") + ")";
+      tag.textContent = "x " + Math.round(e.clientX) + ", y " + Math.round(e.clientY) + " px";
     };
     document.addEventListener("mousemove", PA._rulerMove, true);
-    return { count: 0, summary: "Er volgen nu een horizontale en verticale hulplijn je muis, zodat je uitlijning en afstanden kunt nalopen." };
+    return { count: 0, summary: "Een horizontale en verticale hulplijn volgen je muis en tonen de x- en y-positie in pixels, zodat je uitlijning en afstanden kunt nalopen." };
   },
   clear: function () {
     if (PA._rulerMove) document.removeEventListener("mousemove", PA._rulerMove, true);
     if (PA._rulerH) PA._rulerH.remove();
     if (PA._rulerV) PA._rulerV.remove();
-    PA._rulerMove = PA._rulerH = PA._rulerV = null;
+    if (PA._rulerTag) PA._rulerTag.remove();
+    PA._rulerMove = PA._rulerH = PA._rulerV = PA._rulerTag = null;
   }
 });

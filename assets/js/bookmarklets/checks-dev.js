@@ -101,33 +101,22 @@ PA.register({
   label: "Tekst vergroten (200%)",
   wcag: "/blog/sc-1-4-4-wat-betekent-tekst-vergroten/",
   run: function () {
-    /* Twee passes: eerst alle huidige groottes meten, dan pas verdubbelen.
-       Anders telt de vergroting van een ouder door in de meting van een kind. */
-    var list = [];
-    Array.prototype.forEach.call(document.querySelectorAll("body *"), function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var hasText = false;
-      for (var i = 0; i < el.childNodes.length; i++) {
-        if (el.childNodes[i].nodeType === 3 && el.childNodes[i].nodeValue.trim()) { hasText = true; break; }
-      }
-      if (!hasText) return;
-      var size = parseFloat(getComputedStyle(el).fontSize);
-      if (!size) return;
-      list.push({ el: el, size: size, prev: el.style.getPropertyValue("font-size"), prio: el.style.getPropertyPriority("font-size") });
-    });
-    list.forEach(function (r) {
-      r.el.style.setProperty("font-size", (r.size * 2) + "px", "important");
-    });
-    PA._resized = list;
+    PA.setTextZoom(2, true);
     return { count: 0, summary: "Alle tekst staat nu op 200%. Kijk of er tekst wegvalt, overlapt of buiten beeld raakt en of alles nog te bedienen is. Klik nogmaals om terug te zetten." };
   },
-  clear: function () {
-    (PA._resized || []).forEach(function (r) {
-      if (r.prev) r.el.style.setProperty("font-size", r.prev, r.prio);
-      else r.el.style.removeProperty("font-size");
-    });
-    PA._resized = [];
-  }
+  clear: function () { PA.setTextZoom(2, false); }
+});
+
+PA.register({
+  id: "textresize400",
+  group: "Interactie",
+  label: "Tekst vergroten (400%)",
+  wcag: "/blog/sc-1-4-10-wat-betekent-reflow/",
+  run: function () {
+    PA.setTextZoom(4, true);
+    return { count: 0, summary: "Alle tekst staat nu op 400%. Kijk of de tekst nog leesbaar meebeweegt zonder horizontaal scrollen, en of niets overlapt of wegvalt. Klik nogmaals om terug te zetten." };
+  },
+  clear: function () { PA.setTextZoom(4, false); }
 });
 
 PA.register({

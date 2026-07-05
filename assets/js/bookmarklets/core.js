@@ -120,6 +120,65 @@ PA.effectiveBg = function (el) {
   return { r: 255, g: 255, b: 255, a: 1 };
 };
 
+/* Betrouwbare effen achtergrond of null. Loopt omhoog tot een effen kleur;
+   komt er onderweg een background-image (foto of gradient) of een half-
+   transparante laag langs, dan is de meting niet betrouwbaar en geeft dit null
+   terug. Zo markeren we alleen tekst waarvan we het contrast echt kunnen meten. */
+PA.solidBg = function (el) {
+  var node = el;
+  while (node && node.nodeType === 1) {
+    var cs = getComputedStyle(node);
+    if (cs.backgroundImage && cs.backgroundImage !== "none") return null;
+    var c = PA.parseColor(cs.backgroundColor);
+    if (c && c.a === 1) return c;
+    if (c && c.a > 0 && c.a < 1) return null;
+    node = node.parentElement;
+  }
+  return { r: 255, g: 255, b: 255, a: 1 };
+};
+
+/* ---- tekst vergroten ---------------------------------------------------
+   Gedeeld mechanisme voor de vergroot-checks (200%, 400%). De originele
+   lettergroottes worden één keer gemeten en bewaard, zodat meerdere niveaus
+   niet op elkaar stapelen. De zichtbare vergroting is altijd het hoogste
+   actieve niveau; zet je 400% uit terwijl 200% aan staat, dan valt het terug
+   naar 200%. */
+PA.textBase = function () {
+  if (PA._textBase) return PA._textBase;
+  var list = [];
+  Array.prototype.forEach.call(document.querySelectorAll("body *"), function (el) {
+    if (el.closest("[data-pa-lens]")) return;
+    var hasText = false;
+    for (var i = 0; i < el.childNodes.length; i++) {
+      if (el.childNodes[i].nodeType === 3 && el.childNodes[i].nodeValue.trim()) { hasText = true; break; }
+    }
+    if (!hasText) return;
+    var size = parseFloat(getComputedStyle(el).fontSize);
+    if (!size) return;
+    list.push({ el: el, size: size, prev: el.style.getPropertyValue("font-size"), prio: el.style.getPropertyPriority("font-size") });
+  });
+  PA._textBase = list;
+  return list;
+};
+
+PA.setTextZoom = function (factor, on) {
+  PA._zoomSet = PA._zoomSet || {};
+  if (on) PA._zoomSet[factor] = true; else delete PA._zoomSet[factor];
+  var factors = Object.keys(PA._zoomSet).map(Number);
+  if (!factors.length) {
+    (PA._textBase || []).forEach(function (r) {
+      if (r.prev) r.el.style.setProperty("font-size", r.prev, r.prio);
+      else r.el.style.removeProperty("font-size");
+    });
+    PA._textBase = null;
+    return;
+  }
+  var max = Math.max.apply(null, factors);
+  PA.textBase().forEach(function (r) {
+    r.el.style.setProperty("font-size", (r.size * max) + "px", "important");
+  });
+};
+
 /* ---- overlay-laag (in shadow root, fixed, viewport-coordinaten) -------- */
 PA.overlays = [];
 

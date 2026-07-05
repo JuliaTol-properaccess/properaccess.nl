@@ -30,7 +30,7 @@ checks:
     uitleg: "De lens forceert een duidelijke focusrand op elk element. Tab door de pagina om te zien of de focus altijd zichtbaar is en logisch verspringt."
     wcag: "/blog/sc-2-4-7-wat-betekent-focus-zichtbaar/"
   - titel: "Tekst contrast"
-    uitleg: "Meet zelf twee kleuren met twee pipetten, bijvoorbeeld een tekstkleur en een achtergrond. Je ziet meteen de gemeten contrastverhouding en of die voldoet aan 4,5:1 en 3:1. Werkt ook voor kleuren die lastig automatisch te meten zijn, zoals tekst op een afbeelding of gradient."
+    uitleg: "De lens markeert automatisch tekst op een effen achtergrond die onder 4,5:1 (normale tekst) of 3:1 (grote tekst) zakt. Voor tekst op een afbeelding of gradient meet je zelf twee kleuren met de twee pipetten."
     wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
   - titel: "Tekstafstand (1.4.12)"
     uitleg: "De lens past de WCAG-tekstafstanden toe: regelhoogte, letter- en woordafstand en alinea-afstand. Zo zie je meteen of er tekst wegvalt, overlapt of wordt afgekapt."

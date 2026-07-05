@@ -51,7 +51,7 @@ checks:
     uitleg: "Met één klik zet je alle opmaak uit. Je ziet dan de kale volgorde waarin een screenreader de pagina voorleest. Loopt je verhaal nog logisch?"
     wcag: "/blog/sc-1-3-2-wat-betekent-betekenisvolle-volgorde/"
   - titel: "Tekst contrast"
-    uitleg: "Meet zelf twee kleuren op de pagina met twee pipetten, bijvoorbeeld je tekstkleur en de achtergrond. Je ziet meteen de gemeten contrastverhouding en of die voldoet aan de eis voor normale en grote tekst."
+    uitleg: "De lens markeert automatisch tekst op een effen achtergrond die te weinig contrast heeft. Voor tekst op een foto of gradient meet je zelf twee kleuren met de twee pipetten. Je ziet meteen de contrastverhouding en of die voldoet aan de eis voor normale en grote tekst."
     wcag: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
 ---
 
