@@ -30,11 +30,9 @@ const LOADER_BASE = "https://lens-loader.juliatol.workers.dev";
 
 const SHARED = ["core.js", "checks-content.js", "checks-dev.js", "checks-design.js"];
 
-const ROLES = [
-  { key: "webredactie", title: "Voor webredactie", boot: "boot-webredactie.js" },
-  { key: "ontwikkelaars", title: "Voor ontwikkelaars", boot: "boot-ontwikkelaars.js" },
-  { key: "designers", title: "Voor designers", boot: "boot-designers.js" },
-];
+/* Sinds de tab-merge is er nog één bundle: één paneel met drie tabbladen
+   (Redactie / Designer / Developer), gedefinieerd in boot-lens.js. */
+const BOOT = "boot-lens.js";
 
 /* Juridische banner. Blijft bovenaan de bundle staan (obfuscator raakt hem niet
    omdat we hem er na afloop voor plakken). Maakt kopiëren een aantoonbare
@@ -71,8 +69,8 @@ function read(file) {
   return fs.readFileSync(path.join(SRC, file), "utf8");
 }
 
-function buildRoleBundle(role) {
-  const parts = SHARED.concat([role.boot]).map(read).join("\n");
+function buildBundle() {
+  const parts = SHARED.concat([BOOT]).map(read).join("\n");
   const wrapped = "(function(){\n" + parts + "\n})();";
   const obf = JavaScriptObfuscator.obfuscate(wrapped, OBFUSCATOR_OPTIONS).getObfuscatedCode();
   return BANNER + obf + "\n";
@@ -80,8 +78,8 @@ function buildRoleBundle(role) {
 
 /* Kleine loader-bookmarklet. Bestaat de lens al op de pagina, dan togglet
    hij open/dicht; anders haalt hij het script bij de Worker op. */
-function loaderCode(role, version) {
-  const src = LOADER_BASE + "/l/" + role.key + ".js?v=" + version;
+function loaderCode(version) {
+  const src = LOADER_BASE + "/l/lens.js?v=" + version;
   const js =
     "(function(){" +
     "var P=window.__paLens;" +
@@ -95,18 +93,14 @@ function loaderCode(role, version) {
 }
 
 function main() {
-  const bundles = {};
-  ROLES.forEach((role) => {
-    bundles[role.key] = buildRoleBundle(role);
-  });
+  const bundle = buildBundle();
+  const bundles = { lens: bundle };
 
-  /* Eén versiehash over alle bundles: verandert alleen als de code verandert,
-     zodat de loader-URL netjes cachebust bij een echte wijziging. */
-  const hash = crypto.createHash("sha256");
-  ROLES.forEach((role) => hash.update(bundles[role.key]));
-  const version = hash.digest("hex").slice(0, 8);
+  /* Versiehash: verandert alleen als de code verandert, zodat de loader-URL
+     netjes cachebust bij een echte wijziging. */
+  const version = crypto.createHash("sha256").update(bundle).digest("hex").slice(0, 8);
 
-  /* 1. Obfuscated bundles voor de Worker. */
+  /* 1. Obfuscated bundle voor de Worker. */
   const bundlesModule =
     "/* AUTO-GEGENEREERD door scripts/build-bookmarklets.js - niet met de hand bewerken. */\n" +
     "export const VERSION = " + JSON.stringify(version) + ";\n" +
@@ -114,27 +108,23 @@ function main() {
   fs.mkdirSync(path.dirname(OUT_BUNDLES), { recursive: true });
   fs.writeFileSync(OUT_BUNDLES, bundlesModule, "utf8");
 
-  /* 2. Loader-bookmarklets voor de pagina. */
-  const data = {};
-  ROLES.forEach((role) => {
-    const code = loaderCode(role, version);
-    data[role.key] = {
-      title: role.title,
-      slug: "toegankelijkheids-lens-" + role.key,
+  /* 2. Loader-bookmarklet voor de pagina. */
+  const code = loaderCode(version);
+  const data = {
+    lens: {
+      title: "Toegankelijkheids-lens",
+      slug: "toegankelijkheids-lens",
       href: code,
       code: code,
-    };
-  });
+    },
+  };
   fs.mkdirSync(path.dirname(OUT_DATA), { recursive: true });
   fs.writeFileSync(OUT_DATA, JSON.stringify(data, null, 2) + "\n", "utf8");
 
-  ROLES.forEach((role) => {
-    console.log(
-      "lens " + role.key + ": bundle " + bundles[role.key].length +
-      " tekens (obfuscated), loader " + data[role.key].code.length + " tekens"
-    );
-  });
-  console.log("versie " + version + " -> " + LOADER_BASE + "/l/<rol>.js");
+  console.log(
+    "lens: bundle " + bundle.length + " tekens (obfuscated), loader " + code.length + " tekens"
+  );
+  console.log("versie " + version + " -> " + LOADER_BASE + "/l/lens.js");
 }
 
 main();

@@ -247,6 +247,13 @@ PA.STYLE = [
   ".pa-panel__logo{width:12px;height:12px;border-radius:50%;background:#A30D4B;flex:0 0 auto}",
   ".pa-panel__title{font-weight:800;font-size:14px;margin:0;flex:1 1 auto}",
   ".pa-panel__role{font-size:11px;font-weight:600;opacity:.85;display:block}",
+  ".pa-tabs{display:flex;gap:2px;padding:6px 6px 0;background:#1F2937}",
+  ".pa-tab{flex:1 1 0;appearance:none;border:0;background:transparent;color:#fff;opacity:.7;",
+  "cursor:pointer;padding:7px 6px;font-size:12px;font-weight:700;border-radius:6px 6px 0 0;",
+  "border-bottom:3px solid transparent}",
+  ".pa-tab:hover{opacity:1;background:rgba(255,255,255,.10)}",
+  ".pa-tab[aria-selected=true]{opacity:1;background:#fff;color:#A30D4B;border-bottom-color:#A30D4B}",
+  ".pa-tab:focus-visible{outline:3px solid #fff;outline-offset:-2px}",
   ".pa-iconbtn{appearance:none;border:0;background:transparent;color:#fff;cursor:pointer;",
   "font-size:18px;line-height:1;padding:4px;border-radius:4px}",
   ".pa-iconbtn:hover{background:rgba(255,255,255,.15)}",
@@ -390,57 +397,12 @@ PA.makeDraggable = function (panel, handle) {
   handle.addEventListener("pointercancel", end);
 };
 
-PA.build = function () {
-  PA.state = {};
-  PA.host = document.createElement("div");
-  PA.host.id = "pa-a11y-lens-host";
-  PA.host.setAttribute("data-pa-lens", "1");
-  var root = PA.host.attachShadow({ mode: "open" });
-  PA.root = root;
-  document.documentElement.appendChild(PA.host);
-
-  var style = document.createElement("style");
-  style.textContent = PA.STYLE;
-  root.appendChild(style);
-
-  PA.layer = document.createElement("div");
-  PA.layer.className = "pa-layer";
-  root.appendChild(PA.layer);
-
-  PA.live = document.createElement("div");
-  PA.live.className = "pa-sr";
-  PA.live.setAttribute("role", "status");
-  PA.live.setAttribute("aria-live", "polite");
-  root.appendChild(PA.live);
-
-  var panel = document.createElement("section");
-  panel.className = "pa-panel";
-  panel.setAttribute("role", "dialog");
-  panel.setAttribute("aria-label", "Toegankelijkheids-lens voor " + PA.role);
-  panel.setAttribute("tabindex", "-1");
-
-  var head = document.createElement("div");
-  head.className = "pa-panel__head";
-  head.title = "Sleep om het paneel te verplaatsen";
-  head.innerHTML =
-    '<span class="pa-panel__logo" aria-hidden="true"></span>' +
-    '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
-    '<span class="pa-panel__role">' + PA.esc(PA.role) + "</span></h2>" +
-    '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
-  var close = document.createElement("button");
-  close.className = "pa-iconbtn";
-  close.type = "button";
-  close.setAttribute("aria-label", "Lens sluiten");
-  close.innerHTML = "&times;";
-  close.addEventListener("click", PA.destroy);
-  head.appendChild(close);
-  panel.appendChild(head);
-
-  var body = document.createElement("div");
-  body.className = "pa-panel__body";
-
+/* Bouw de check-rijen voor het actieve tabblad in het body-paneel. */
+PA.renderBody = function () {
+  var body = PA.body;
+  body.textContent = "";
   var lastGroup = null;
-  PA.order.forEach(function (id) {
+  PA.tabs[PA.activeTab].order.forEach(function (id) {
     var check = PA.checks[id];
     if (!check) return;
     if (check.group && check.group !== lastGroup) {
@@ -468,6 +430,113 @@ PA.build = function () {
     wrap.appendChild(summary);
     body.appendChild(wrap);
   });
+};
+
+/* Wissel van tabblad. Zet eerst alle actieve checks uit (schone pagina), werk
+   dan de tab-ARIA en subtitel bij en herbouw de body. */
+PA.selectTab = function (index) {
+  if (index === PA.activeTab) return;
+  PA.resetAll();
+  var prev = PA.tabButtons[PA.activeTab];
+  prev.setAttribute("aria-selected", "false");
+  prev.setAttribute("tabindex", "-1");
+  PA.activeTab = index;
+  var cur = PA.tabButtons[index];
+  cur.setAttribute("aria-selected", "true");
+  cur.setAttribute("tabindex", "0");
+  cur.focus();
+  PA.roleEl.textContent = PA.tabs[index].role;
+  PA.body.setAttribute("aria-labelledby", "pa-tab-" + PA.tabs[index].key);
+  PA.renderBody();
+  PA.announce("Tabblad " + PA.tabs[index].label + " geopend.");
+};
+
+PA.build = function () {
+  PA.state = {};
+  PA.host = document.createElement("div");
+  PA.host.id = "pa-a11y-lens-host";
+  PA.host.setAttribute("data-pa-lens", "1");
+  var root = PA.host.attachShadow({ mode: "open" });
+  PA.root = root;
+  document.documentElement.appendChild(PA.host);
+
+  var style = document.createElement("style");
+  style.textContent = PA.STYLE;
+  root.appendChild(style);
+
+  PA.layer = document.createElement("div");
+  PA.layer.className = "pa-layer";
+  root.appendChild(PA.layer);
+
+  PA.live = document.createElement("div");
+  PA.live.className = "pa-sr";
+  PA.live.setAttribute("role", "status");
+  PA.live.setAttribute("aria-live", "polite");
+  root.appendChild(PA.live);
+
+  var panel = document.createElement("section");
+  panel.className = "pa-panel";
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-label", "Toegankelijkheids-lens");
+  panel.setAttribute("tabindex", "-1");
+
+  var head = document.createElement("div");
+  head.className = "pa-panel__head";
+  head.title = "Sleep om het paneel te verplaatsen";
+  head.innerHTML =
+    '<span class="pa-panel__logo" aria-hidden="true"></span>' +
+    '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
+    '<span class="pa-panel__role"></span></h2>' +
+    '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
+  PA.roleEl = head.querySelector(".pa-panel__role");
+  PA.roleEl.textContent = PA.tabs[PA.activeTab].role;
+  var close = document.createElement("button");
+  close.className = "pa-iconbtn";
+  close.type = "button";
+  close.setAttribute("aria-label", "Lens sluiten");
+  close.innerHTML = "&times;";
+  close.addEventListener("click", PA.destroy);
+  head.appendChild(close);
+  panel.appendChild(head);
+
+  /* Tabbalk: kies een rol (Redactie / Designer / Developer). */
+  var tablist = document.createElement("div");
+  tablist.className = "pa-tabs";
+  tablist.setAttribute("role", "tablist");
+  tablist.setAttribute("aria-label", "Kies een rol");
+  PA.tabButtons = [];
+  PA.tabs.forEach(function (tab, i) {
+    var t = document.createElement("button");
+    t.className = "pa-tab";
+    t.type = "button";
+    t.id = "pa-tab-" + tab.key;
+    t.setAttribute("role", "tab");
+    t.setAttribute("aria-controls", "pa-tabpanel");
+    t.setAttribute("aria-selected", i === PA.activeTab ? "true" : "false");
+    t.setAttribute("tabindex", i === PA.activeTab ? "0" : "-1");
+    t.textContent = tab.label;
+    t.addEventListener("click", function () { PA.selectTab(i); });
+    tablist.appendChild(t);
+    PA.tabButtons.push(t);
+  });
+  tablist.addEventListener("keydown", function (e) {
+    var n = PA.tabs.length, i = PA.activeTab, to = -1;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") to = (i + 1) % n;
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") to = (i - 1 + n) % n;
+    else if (e.key === "Home") to = 0;
+    else if (e.key === "End") to = n - 1;
+    if (to !== -1) { e.preventDefault(); PA.selectTab(to); }
+  });
+  panel.appendChild(tablist);
+
+  var body = document.createElement("div");
+  body.className = "pa-panel__body";
+  body.id = "pa-tabpanel";
+  body.setAttribute("role", "tabpanel");
+  body.setAttribute("tabindex", "0");
+  body.setAttribute("aria-labelledby", "pa-tab-" + PA.tabs[PA.activeTab].key);
+  PA.body = body;
+  PA.renderBody();
   panel.appendChild(body);
 
   var foot = document.createElement("div");

@@ -7,12 +7,19 @@
  * per licentie afschermen.
  *
  * Deploy: cd tools/lens-loader && npx wrangler deploy
- * URL:    GET https://lens-loader.<subdomein>.workers.dev/l/<rol>.js
- * Rollen: webredactie | ontwikkelaars | designers
+ * URL:    GET https://lens-loader.<subdomein>.workers.dev/l/lens.js
+ *
+ * Sinds de tab-merge is er nog één bundle ("lens"): één paneel met drie
+ * tabbladen. De oude rol-URL's (webredactie/ontwikkelaars/designers) blijven
+ * via een alias werken, zodat al gesleepte bookmarklets niet breken.
  *
  * bundles.js wordt gegenereerd door scripts/build-bookmarklets.js (npm run build).
  */
 import { BUNDLES, VERSION } from "./bundles.js";
+
+/* Oude rol-URL's wijzen naar de samengevoegde bundle. Enkele maanden aanhouden,
+   daarna kunnen ze weg. */
+const ALIASES = { webredactie: "lens", ontwikkelaars: "lens", designers: "lens" };
 
 /* Noodrem: op true zetten + opnieuw deployen schakelt alle lenzen tijdelijk uit. */
 const KILL_SWITCH = false;
@@ -57,7 +64,8 @@ export default {
       return new Response("// niet gevonden", { status: 404, headers: jsHeaders(0) });
     }
 
-    const bundle = BUNDLES[match[1]];
+    const key = ALIASES[match[1]] || match[1];
+    const bundle = BUNDLES[key];
     if (!bundle) {
       return new Response("// onbekende lens", { status: 404, headers: jsHeaders(0) });
     }
