@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Zelfgemaakte focusindicator die onzichtbaar is"
 date: 2026-07-04
 slug: "sc-1-4-11-zelfgemaakte-focusindicator-die-onzichtbaar-is"
