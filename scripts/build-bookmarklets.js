@@ -23,10 +23,10 @@ const SRC = path.join(__dirname, "..", "assets", "js", "bookmarklets");
 const OUT_DATA = path.join(__dirname, "..", "data", "bookmarklets.json");
 const OUT_BUNDLES = path.join(__dirname, "..", "tools", "lens-loader", "bundles.js");
 
-/* Basis-URL van de loader-Worker. Nu een workers.dev-adres; als je later een
-   eigen route koppelt (bv. https://tools.properaccess.nl) hoef je alleen deze
-   constante aan te passen en opnieuw te bouwen. */
-const LOADER_BASE = "https://lens-loader.juliatol.workers.dev";
+/* Basis-URL van de loader-Worker: het custom domain van de lens-loader-Worker.
+   Het oude workers.dev-adres blijft in de Worker actief (workers_dev: true),
+   want dat zit nog in bookmarks die vóór 6-7-2026 zijn gesleept. */
+const LOADER_BASE = "https://tools.properaccess.nl";
 
 const SHARED = ["core.js", "checks-content.js", "checks-dev.js", "checks-design.js"];
 

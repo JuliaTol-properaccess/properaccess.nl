@@ -1,5 +1,9 @@
 {
   "name": "lens-loader",
   "main": "worker.js",
-  "compatibility_date": "2026-02-28"
+  "compatibility_date": "2026-02-28",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "tools.properaccess.nl", "custom_domain": true }
+  ]
 }
