@@ -208,10 +208,66 @@ PA.positionOne = function (rec) {
   b.width = Math.max(r.width, 6) + "px";
   b.height = Math.max(r.height, 6) + "px";
   b.display = r.width === 0 && r.height === 0 ? "none" : "block";
+  /* Chip staat standaard bóven het element (translateY(-100%)). Voor elementen
+     die zelf tegen de bovenkant van de viewport zitten (denk aan een header op
+     y:0) valt het label achter de browser-chrome. In dat geval flippen we
+     naar onderin het element. Drempel 32px = ruime hoogte voor een chip. */
+  if (rec.chip) {
+    var flip = r.top < 32;
+    rec.chip.classList.toggle("pa-ov__chip--below", flip);
+  }
 };
 
 PA.reposition = function () {
   for (var i = 0; i < PA.overlays.length; i++) PA.positionOne(PA.overlays[i]);
+};
+
+/* Peek-modus: bij drukke pagina's (veel overlays op elkaar) blijven chips
+   standaard leesbaar staan, maar zodra je een gemarkeerd element aanwijst
+   worden alle andere chips gedimd. Zo kun je nog altijd één label rustig
+   lezen zonder dat de rest in de weg staat. Onder de drempel doen we niets. */
+PA.PEEK_THRESHOLD = 8;
+
+PA._peekHandler = function (e) {
+  if (PA._peekRaf) return;
+  PA._peekRaf = requestAnimationFrame(function () {
+    PA._peekRaf = 0;
+    if (!PA.overlays || PA.overlays.length < PA.PEEK_THRESHOLD) {
+      /* Onder de drempel: alle chips onbeperkt tonen. */
+      for (var j = 0; j < PA.overlays.length; j++) {
+        var rec2 = PA.overlays[j];
+        if (rec2.chip) rec2.chip.classList.remove("pa-ov__chip--dim");
+        rec2.box.style.zIndex = "";
+      }
+      return;
+    }
+    var t = document.elementFromPoint(e.clientX, e.clientY);
+    var over = null;
+    for (var i = 0; i < PA.overlays.length; i++) {
+      var rec = PA.overlays[i];
+      if (t && (rec.el === t || rec.el.contains(t))) { over = rec; break; }
+    }
+    for (var k = 0; k < PA.overlays.length; k++) {
+      var r = PA.overlays[k];
+      if (!r.chip) continue;
+      var focused = over === r;
+      r.chip.classList.toggle("pa-ov__chip--dim", !!over && !focused);
+      r.box.style.zIndex = focused ? "1" : "";
+    }
+  });
+};
+
+PA.wirePeek = function () {
+  if (PA._peekBound) return;
+  PA._peekBound = true;
+  document.addEventListener("mousemove", PA._peekHandler, { passive: true });
+};
+
+PA.unwirePeek = function () {
+  if (!PA._peekBound) return;
+  PA._peekBound = false;
+  document.removeEventListener("mousemove", PA._peekHandler);
+  if (PA._peekRaf) { cancelAnimationFrame(PA._peekRaf); PA._peekRaf = 0; }
 };
 
 PA.clearOverlays = function (checkId) {
@@ -235,6 +291,8 @@ PA.STYLE = [
   ".pa-ov__chip{position:absolute;top:0;left:0;transform:translateY(-100%);max-width:340px;",
   "font-size:11px;line-height:1.35;font-weight:600;color:#fff;background:#1F2937;padding:1px 5px;",
   "border-radius:3px 3px 3px 0;white-space:normal;pointer-events:none}",
+  ".pa-ov__chip--below{top:100%;transform:none;border-radius:0 3px 3px 3px}",
+  ".pa-ov__chip--dim{opacity:.12;transition:opacity .1s}",
   ".pa-ov__chip--ok{background:#004050}",
   ".pa-ov__chip--warn{background:#b45309}",
   ".pa-ov__chip--error{background:#A30D4B}",
@@ -285,6 +343,15 @@ PA.STYLE = [
   ".pa-panel__credit{padding:7px 10px;border-top:1px solid #e5e7eb;font-size:11px;color:#004050;text-align:center;border-radius:0 0 9px 9px}",
   ".pa-panel__credit a{color:#A30D4B;font-weight:700}",
   ".pa-panel__credit a:focus-visible{outline:2px solid #004050;outline-offset:1px}",
+  /* Compacte weergave bij kleine viewports of hoge browser-zoom (WCAG 1.4.4
+     tekst 200% en 1.4.10 reflow op 320 CSS px). Paneel wordt bijna-fullscreen
+     zodat de check-lijst zichtbaar blijft; de credit-regel wordt weggelaten
+     om verticale ruimte terug te winnen. */
+  "@media (max-width:520px),(max-height:520px){",
+  ".pa-panel{top:8px;right:8px;bottom:8px;left:8px;width:auto;max-height:none}",
+  ".pa-panel__credit{display:none}",
+  ".pa-picker{left:8px;right:8px;bottom:8px;width:auto;max-width:none}",
+  "}",
   ".pa-picker{position:fixed;left:16px;bottom:16px;width:280px;background:#fff;color:#1F2937;",
   "border:1px solid #1F2937;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.28);",
   "pointer-events:auto;z-index:2147483647;font-size:13px}",
@@ -365,6 +432,7 @@ PA.destroy = function () {
   if (PA.host && PA.host.parentNode) PA.host.parentNode.removeChild(PA.host);
   window.removeEventListener("scroll", PA.reposition, true);
   window.removeEventListener("resize", PA.reposition, true);
+  PA.unwirePeek();
   PA.host = null;
 };
 
@@ -559,7 +627,7 @@ PA.build = function () {
   var credit = document.createElement("div");
   credit.className = "pa-panel__credit";
   credit.innerHTML =
-    'Een gratis tool van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">properaccess.nl</a>';
+    'Een gratis tool op <a href="https://testtoegankelijkheid.nl" target="_blank" rel="noopener">testtoegankelijkheid.nl</a>, een initiatief van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">Proper Access</a>.';
   panel.appendChild(credit);
 
   root.appendChild(panel);
@@ -572,6 +640,7 @@ PA.build = function () {
 
   window.addEventListener("scroll", PA.reposition, true);
   window.addEventListener("resize", PA.reposition, true);
+  PA.wirePeek();
   panel.focus();
 };
 

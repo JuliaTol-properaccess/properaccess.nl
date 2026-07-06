@@ -255,32 +255,6 @@ PA.register({
 });
 
 PA.register({
-  id: "outline",
-  group: "Structuur",
-  label: "Blokken en tagnamen tonen",
-  wcag: "/blog/sc-1-3-1-wat-betekent-informatie-en-relaties/",
-  run: function () {
-    var st = document.createElement("style");
-    st.setAttribute("data-pa-outline", "1");
-    st.textContent =
-      "body * {outline:1px solid rgba(163,13,75,.35) !important}" +
-      "header,nav,main,aside,footer,section,article,form{outline:2px solid #004050 !important;position:relative}";
-    document.documentElement.appendChild(st);
-    PA._outlineStyle = st;
-    var tags = Array.prototype.slice.call(document.querySelectorAll("header,nav,main,aside,footer,section,article,form"));
-    tags.forEach(function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      PA.addOverlay("outline", el, { status: "info", label: el.tagName.toLowerCase() });
-    });
-    return { count: tags.length, summary: "Alle blokken krijgen een rand; belangrijke structuurelementen tonen hun tagnaam." };
-  },
-  clear: function (ctx) {
-    if (PA._outlineStyle) { PA._outlineStyle.remove(); PA._outlineStyle = null; }
-    ctx.clearMarks();
-  }
-});
-
-PA.register({
   id: "imagesoff",
   group: "Structuur",
   label: "Afbeeldingen uit",
