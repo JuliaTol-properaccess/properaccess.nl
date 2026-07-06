@@ -89,17 +89,17 @@ Wil je één combinatie controleren, bijvoorbeeld je linkkleur op wit? Gebruik o
 
 Weet je niet welke kleurcodes je pagina gebruikt? In ons instructieartikel [hoe test ik kleurcontrast](/blog/hoe-test-ik-kleurcontrast/) laten we stap voor stap zien hoe je kleuren van je scherm opzoekt en test.
 
-### De hele pagina in één keer: de Toegankelijkheids-lens
+### De hele pagina in één keer: WCAG Radar
 
-Wil je niet kleur voor kleur testen maar een complete pagina? Gebruik onze gratis [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De lens meet het contrast van alle tekst tegen de achtergrond, markeert wat onvoldoende is en toont de gemeten verhouding naast de eis die geldt.
+Wil je niet kleur voor kleur testen maar een complete pagina? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar meet het contrast van alle tekst tegen de achtergrond, markeert wat onvoldoende is en toont de gemeten verhouding naast de eis die geldt.
 
-De lens werkt op elke website en ook op localhost. Daarmee is hij net zo handig voor ontwikkelaars: draai hem tijdens het bouwen en je ziet meteen waar een kleur uit het ontwerp te licht uitpakt. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
+De radar werkt op elke website en ook op localhost. Daarmee is hij net zo handig voor ontwikkelaars: draai hem tijdens het bouwen en je ziet meteen waar een kleur uit het ontwerp te licht uitpakt. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
 
 ### Wie doet wat?
 
-- **Webredacteur:** kies in je editor geen lichte tekstkleuren en zet geen tekst over een foto zonder donkere laag. Test je pagina's met de lens.
+- **Webredacteur:** kies in je editor geen lichte tekstkleuren en zet geen tekst over een foto zonder donkere laag. Test je pagina's met de radar.
 - **Designer:** leg per kleurencombinatie vast waar hij wel en niet gebruikt mag worden. Controleer elke combinatie met de kleurcontrast checker voordat het ontwerp naar de bouw gaat.
-- **Ontwikkelaar:** neem de goedgekeurde kleuren over als variabelen en gebruik nergens een eigen, lichtere variant. Style ook de placeholder en de hoverstand bewust, want juist daar zakt het contrast vaak weg. Draai de lens op localhost voordat je oplevert.
+- **Ontwikkelaar:** neem de goedgekeurde kleuren over als variabelen en gebruik nergens een eigen, lichtere variant. Style ook de placeholder en de hoverstand bewust, want juist daar zakt het contrast vaak weg. Draai de radar op localhost voordat je oplevert.
 
 ```css
 :root {
@@ -145,6 +145,6 @@ De belangrijkste punten:
 - De eis geldt voor alle informatieve tekst, ook op knoppen, in invoervelden en in afbeeldingen, en in elke stand.
 - Logo's, decoratieve tekst en uitgeschakelde knoppen zijn uitgezonderd.
 - Test één combinatie met de [kleurcontrast checker](/tools/kleurcontrast-checker/).
-- Test een complete pagina met de [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/), ook op localhost.
+- Test een complete pagina met de [WCAG Radar](/tools/wcag-radar/), ook op localhost.
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien welke kleuren je moet aanpassen en waarom.

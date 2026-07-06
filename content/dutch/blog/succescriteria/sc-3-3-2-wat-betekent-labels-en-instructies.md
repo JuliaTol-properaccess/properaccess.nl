@@ -73,11 +73,11 @@ Een groep keuzerondjes of aankruisvakjes heeft een vraag of kop nodig die bij de
 5. **Vraag alleen wat je echt nodig hebt.** Hoe minder velden, hoe minder er mis kan gaan.
 6. **Vul je eigen formulier in.** Denk alle voorbeeldtekst in de velden weg: begrijp je dan nog steeds wat er overal moet staan?
 
-## Controleer je formulieren met de Toegankelijkheids-lens
+## Controleer je formulieren met WCAG Radar
 
-Wil je weten hoe jouw formulieren ervoor staan? Gebruik onze gratis [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De lens markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Een placeholder telt daarbij niet als naam.
+Wil je weten hoe jouw formulieren ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Een placeholder telt daarbij niet als naam.
 
-De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
 ## Veelgestelde vragen
 
@@ -87,7 +87,7 @@ Een placeholder verdwijnt zodra iemand begint te typen. Wie halverwege het formu
 
 ### Mijn formulieren komen uit een module in mijn CMS, wat kan ik zelf doen?
 
-De teksten zijn van jou: de labels, de instructies, de uitleg bovenaan en de vraag boven een groep opties. Die maak je in de formulierenmodule zelf duidelijk. Of een label technisch goed aan het veld gekoppeld is, bepaalt de module. Twijfel je daaraan? Vraag het aan je webbouwer of controleer het met de lens.
+De teksten zijn van jou: de labels, de instructies, de uitleg bovenaan en de vraag boven een groep opties. Die maak je in de formulierenmodule zelf duidelijk. Of een label technisch goed aan het veld gekoppeld is, bepaalt de module. Twijfel je daaraan? Vraag het aan je webbouwer of controleer het met de radar.
 
 ### Moet ik verplichte of juist optionele velden markeren?
 
@@ -107,6 +107,6 @@ De belangrijkste punten:
 - Een placeholder is geen label.
 - Vermeld formaat-eisen en verplichte velden vooraf, niet pas na een foutmelding.
 - Geef groepen keuzerondjes of aankruisvakjes een duidelijke vraag als kop.
-- Controleer je pagina's met de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

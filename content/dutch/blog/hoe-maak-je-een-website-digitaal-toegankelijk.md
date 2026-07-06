@@ -107,7 +107,7 @@ Je kunt pas een plan maken als je weet wat er aan de hand is. Er zijn twee manie
 
 - Navigeer je website met alleen het toetsenbord (Tab, Enter, Escape). Kom je overal? Zie je waar je bent?
 - Zet je browser op 200% zoom. Valt er content weg? Overlappen elementen?
-- Gebruik onze gratis [Toegankelijkheids-lens voor webredactie](https://www.properaccess.nl/tools/toegankelijkheids-lens-webredactie/) om alt-teksten, koppen en linkteksten te controleren
+- Gebruik onze gratis [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/) om alt-teksten, koppen en linkteksten te controleren
 - Draai Lighthouse in Chrome DevTools (maar weet dat dit maximaal 30 procent van de problemen vindt)
 
 **Een professionele audit laten doen:**

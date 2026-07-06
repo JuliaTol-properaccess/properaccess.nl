@@ -1,4 +1,4 @@
-# Toegankelijkheids-lens loader
+# WCAG Radar loader
 
 Cloudflare Worker die de geobfusceerde bookmarklet-bundles serveert. De
 bookmarklet op de site is nog maar een klein laadscriptje dat hier

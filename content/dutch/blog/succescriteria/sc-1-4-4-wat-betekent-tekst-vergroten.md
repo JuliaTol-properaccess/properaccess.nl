@@ -58,7 +58,7 @@ Bij onze audits gaat het bij dit succescriterium meestal mis op een van deze pun
 - Ontwerp componenten die met de tekst meegroeien. Teken kaders niet strak om de tekst heen, maar bedenk bij elk component: wat gebeurt er als deze tekst 2 keer zo groot wordt?
 - Reken niet op tekst die precies op één regel past. Een knoplabel, een menu-item of een kop moet ook over 2 regels kunnen lopen zonder dat het ontwerp breekt.
 - Leg in je design system vast dat componenten geen vaste hoogtes hebben rond tekst. Een minimale hoogte mag, een vaste niet.
-- Controleer je ontwerp met de check Tekst vergroten van onze gratis [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/). Eén klik en alle tekst staat op 200%, zoals een slechtziende bezoeker de pagina ziet.
+- Controleer je ontwerp met de check Tekst vergroten van onze gratis [WCAG Radar](/tools/wcag-radar/). Eén klik en alle tekst staat op 200%, zoals een slechtziende bezoeker de pagina ziet.
 
 ## Wat kun je doen als webredacteur?
 
@@ -91,7 +91,7 @@ h1 {
 ```
 
 - Kies voor lettergroottes in `rem` of `em`. Browserzoom schaalt pixels ook, maar relatieve eenheden werken daarnaast voor bezoekers die alleen de tekstgrootte aanpassen in hun browserinstellingen.
-- Draai de check Tekst vergroten van de [Toegankelijkheids-lens voor ontwikkelaars](/tools/toegankelijkheids-lens-ontwikkelaars/) op localhost voordat je oplevert. De lens werkt op elke pagina, ook achter een login.
+- Draai de check Tekst vergroten van de [WCAG Radar](/tools/wcag-radar/) op localhost voordat je oplevert. De radar werkt op elke pagina, ook achter een login.
 
 ## Zo test je het
 
@@ -102,7 +102,7 @@ De basistest kost een halve minuut: open de pagina en druk op Ctrl en plus, of C
 - Werken het menu, de knoppen en de formulieren nog?
 - Kun je op je telefoon met twee vingers inzoomen?
 
-Wil je het sneller en vaker testen, gebruik dan de check Tekst vergroten in onze gratis [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/) of [voor ontwikkelaars](/tools/toegankelijkheids-lens-ontwikkelaars/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De lens zet alle tekst in één klik op 200% en je ziet direct waar het knelt. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
+Wil je het sneller en vaker testen, gebruik dan de check Tekst vergroten in onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar zet alle tekst in één klik op 200% en je ziet direct waar het knelt. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
 
 ## Veelgestelde vragen
 
@@ -137,6 +137,6 @@ De belangrijkste punten:
 - Designer: ontwerp componenten die meegroeien met de tekst, zonder vaste hoogtes.
 - Webredacteur: zet belangrijke informatie in echte tekst, niet in een afbeelding.
 - Developer: gebruik `min-height` in plaats van `height` en combineer viewport-eenheden met `rem`.
-- Test met Ctrl en plus, of met de check Tekst vergroten in de [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/).
+- Test met Ctrl en plus, of met de check Tekst vergroten in de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon op 200% en laten per bevinding zien waar tekst wegvalt en hoe je dat oplost.

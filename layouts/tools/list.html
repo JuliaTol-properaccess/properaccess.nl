@@ -5,8 +5,8 @@
     <div class="container">
       <div class="tool-overview__intro">{{ .Content }}</div>
 
-      {{/* Uitgelichte rij: de Toegankelijkheids-lens met sleepbare bookmarklet-knop */}}
-      {{ $lens := .GetPage "toegankelijkheids-lens" }}
+      {{/* Uitgelichte rij: WCAG Radar met sleepbare bookmarklet-knop */}}
+      {{ $lens := .GetPage "wcag-radar" }}
       {{ with $lens }}
         {{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
         <div class="lens-hero">
@@ -50,7 +50,7 @@
               {{ end }}
             </ul>
             <a class="lens-hero__more" href="{{ .RelPermalink }}">
-              {{ if eq $.Lang "nl" }}Bekijk alle checks van de lens{{ else }}See all the lens checks{{ end }}
+              {{ if eq $.Lang "nl" }}Bekijk alle checks van WCAG Radar{{ else }}See all WCAG Radar checks{{ end }}
             </a>
           </div>
 
