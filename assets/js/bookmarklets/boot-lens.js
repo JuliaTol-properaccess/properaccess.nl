@@ -1,4 +1,4 @@
-/* Boot: Toegankelijkheids-lens - één paneel met drie tabbladen. */
+/* Boot: WCAG Radar - één paneel met drie tabbladen. */
 PA.tabs = [
   { key: "redactie", label: "Redactie", role: "Voor webredactie",
     order: ["alt", "headings", "links", "sensory", "lang", "lists", "tablescontent", "formlabels", "iframetitle", "pagetitle", "linearize", "contrastpicker"] },

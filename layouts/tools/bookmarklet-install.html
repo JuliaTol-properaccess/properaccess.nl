@@ -25,14 +25,14 @@
           {{ $.Title }}
         </a>
         <p class="pa-bm__try">
-          {{ if eq $.Lang "nl" }}Je kunt er ook meteen hier op klikken om de lens op deze pagina te proberen.
-          {{ else }}You can also click it right here to try the lens on this page.{{ end }}
+          {{ if eq $.Lang "nl" }}Je kunt er ook meteen hier op klikken om WCAG Radar op deze pagina te proberen.
+          {{ else }}You can also click it right here to try WCAG Radar on this page.{{ end }}
         </p>
         <p class="pa-bm__hint">
           {{ if eq $.Lang "nl" }}Werkt in Chrome, Edge, Firefox en Safari. Klik daarna op de
-          bladwijzer op elke website om de lens te openen. Klik nogmaals om te sluiten.
+          bladwijzer op elke website om de radar te openen. Klik nogmaals om te sluiten.
           {{ else }}Works in Chrome, Edge, Firefox and Safari. Then click the bookmark on any
-          website to open the lens. Click again to close.{{ end }}
+          website to open the radar. Click again to close.{{ end }}
         </p>
       </div>
 
@@ -54,7 +54,7 @@
 
     {{ with .Params.tabs }}
     <div class="pa-bm__checks">
-      <h2>{{ if eq $.Lang "nl" }}Wat de lens laat zien{{ else }}What the lens shows{{ end }}</h2>
+      <h2>{{ if eq $.Lang "nl" }}Wat WCAG Radar laat zien{{ else }}What WCAG Radar shows{{ end }}</h2>
       {{ range . }}
       <h3 class="pa-bm__tab-title">{{ if eq $.Lang "nl" }}Tabblad {{ .label }}{{ else }}{{ .label }} tab{{ end }}</h3>
       <ul class="pa-bm__check-list">
@@ -71,7 +71,7 @@
     {{ else }}
     {{ with .Params.checks }}
     <div class="pa-bm__checks">
-      <h2>{{ if eq $.Lang "nl" }}Wat de lens laat zien{{ else }}What the lens shows{{ end }}</h2>
+      <h2>{{ if eq $.Lang "nl" }}Wat WCAG Radar laat zien{{ else }}What WCAG Radar shows{{ end }}</h2>
       <ul class="pa-bm__check-list">
         {{ range . }}
         <li class="pa-bm__check">
@@ -86,14 +86,14 @@
     {{ end }}
 
     <div class="pa-bm__note">
-      <h2>{{ if eq $.Lang "nl" }}Waarom een lens en geen scanner?{{ else }}Why a lens, not a scanner?{{ end }}</h2>
+      <h2>{{ if eq $.Lang "nl" }}Waarom een radar en geen scanner?{{ else }}Why a radar, not a scanner?{{ end }}</h2>
       {{ if eq .Lang "nl" }}
       <p>Een automatische scan vindt hooguit een derde van de toegankelijkheidsproblemen.
-      Deze lens laat je zien wat er echt op je pagina staat, zodat je met je eigen ogen
-      beoordeelt of het klopt. De lens draait volledig in je eigen browser: er wordt
+      WCAG Radar laat je zien wat er echt op je pagina staat, zodat je met je eigen ogen
+      beoordeelt of het klopt. De radar draait volledig in je eigen browser: er wordt
       niets verstuurd of opgeslagen.</p>
       {{ else }}
-      <p>An automated scan finds at most a third of accessibility problems. This lens shows
+      <p>An automated scan finds at most a third of accessibility problems. WCAG Radar shows
       you what is really on your page, so you can judge with your own eyes whether it is
       right. It runs entirely in your own browser: nothing is sent or stored.</p>
       {{ end }}

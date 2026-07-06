@@ -1,4 +1,4 @@
-/* Proper Access - Toegankelijkheids-lens: gedeelde core.
+/* Proper Access - WCAG Radar: gedeelde core.
    Wordt door scripts/build-bookmarklets.js samengevoegd met de check-modules en
    een boot-bestand per rol, en daarna in een IIFE gewrapt. Schrijf dus geen eigen
    IIFE-wrapper hier. Gebruik geen // regelcommentaar binnen expressies: de
@@ -545,7 +545,7 @@ PA.build = function () {
   var panel = document.createElement("section");
   panel.className = "pa-panel";
   panel.setAttribute("role", "dialog");
-  panel.setAttribute("aria-label", "Toegankelijkheids-lens");
+  panel.setAttribute("aria-label", "WCAG Radar");
   panel.setAttribute("tabindex", "-1");
 
   var head = document.createElement("div");
@@ -553,7 +553,7 @@ PA.build = function () {
   head.title = "Sleep om het paneel te verplaatsen";
   head.innerHTML =
     '<span class="pa-panel__logo" aria-hidden="true"></span>' +
-    '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
+    '<h2 class="pa-panel__title">WCAG Radar' +
     '<span class="pa-panel__role"></span></h2>' +
     '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
   PA.roleEl = head.querySelector(".pa-panel__role");

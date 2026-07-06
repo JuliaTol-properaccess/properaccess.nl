@@ -67,11 +67,11 @@ Een alinea verderop of een kop twee blokken hoger telt niet. En zelfs als de con
 5. **Hou het kort maar betekenisvol.** Een hele zin als link is zelden nodig; een enkel woord als "hier" is te weinig.
 6. **Linkt een afbeelding? Beschrijf de bestemming in de alt-tekst.** Bijvoorbeeld "Naar het programma van het zomerfestival", niet "foto van het festivalterrein".
 
-## Controleer je pagina's met de Toegankelijkheids-lens
+## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De lens markeert direct de vage links zoals "lees meer", links zonder tekst en linkende afbeeldingen zonder naam.
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de vage links zoals "lees meer", links zonder tekst en linkende afbeeldingen zonder naam.
 
-De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
 ## Veelgestelde vragen
 
@@ -101,6 +101,6 @@ De belangrijkste punten:
 - Vermijd "lees meer", "klik hier" en kale URL's.
 - Vermeld bestandstype en grootte bij downloads.
 - Bij een linkende afbeelding is de alt-tekst de linktekst.
-- Controleer je pagina's met de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

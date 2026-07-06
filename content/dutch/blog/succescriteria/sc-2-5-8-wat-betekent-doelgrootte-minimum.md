@@ -65,7 +65,7 @@ Dit criterium wordt bijna volledig in de ontwerpfase beslist. Zo houd je het goe
 - Ontwerp het klikgebied, niet alleen het icoon. Zet elk icoon in een vast kader van bijvoorbeeld 44 bij 44 pixels en lever dat kader mee als onderdeel van de component. Zo kan de developer er niet omheen.
 - Kun of wil je een doel niet groter maken, geef het dan ruimte. Zet kleine doelen nooit strak tegen elkaar aan; met voldoende witruimte ertussen voldoe je alsnog.
 - Loop je risicoplekken na: paginering, sluitkruisjes, iconenrijen, carrouselbediening, tags met een verwijderknop en kalenders.
-- Controleer je ontwerp met de doelgrootte-check van onze gratis [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/). Eén klik en elk klikbaar element dat kleiner is dan 24 bij 24 pixels licht op.
+- Controleer je ontwerp met de doelgrootte-check van onze gratis [WCAG Radar](/tools/wcag-radar/). Eén klik en elk klikbaar element dat kleiner is dan 24 bij 24 pixels licht op.
 
 ## Wat kun je doen als webredacteur?
 
@@ -110,7 +110,7 @@ Jij bepaalt hoe groot het klikgebied echt is. De belangrijkste punten:
 
 ## Zo test je het
 
-De snelste test is de doelgrootte-check in onze gratis [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan, ook op localhost of achter een login. De check markeert elk klikbaar element dat kleiner is dan 24 bij 24 pixels. Loop de markeringen na met deze vragen:
+De snelste test is de doelgrootte-check in onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan, ook op localhost of achter een login. De check markeert elk klikbaar element dat kleiner is dan 24 bij 24 pixels. Loop de markeringen na met deze vragen:
 
 - Is dit een link in lopende tekst? Dan is het geen probleem.
 - Staat er ruim lege ruimte omheen, zonder andere doelen vlakbij? Dan voldoet het via de ruimte-uitzondering.
@@ -151,6 +151,6 @@ De belangrijkste punten:
 - Designer: leg een minimum van 24 pixels vast in je design system, ontwerp op 44 tot 48 voor touch en geef kleine doelen ruimte.
 - Webredacteur: zet losse links niet dicht op elkaar en kies waar mogelijk de knop-variant.
 - Developer: geef icoonknoppen een minimale maat, vergroot klikgebieden met padding of een pseudo-element en let op dat ze elkaar niet overlappen.
-- Test met de doelgrootte-check van de [Toegankelijkheids-lens voor designers](/tools/toegankelijkheids-lens-designers/): één klik en elk te klein doel licht op.
+- Test met de doelgrootte-check van de [WCAG Radar](/tools/wcag-radar/): één klik en elk te klein doel licht op.
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien welk doel te klein is en welke oplossing daar past.

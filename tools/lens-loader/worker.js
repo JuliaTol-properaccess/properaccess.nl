@@ -1,5 +1,5 @@
 /**
- * Cloudflare Worker - Toegankelijkheids-lens loader
+ * Cloudflare Worker - WCAG Radar loader
  *
  * Serveert de geobfusceerde bookmarklet-bundles per rol. De bookmarklet in de
  * pagina is nog maar een klein laadscriptje dat /l/<rol>.js hier ophaalt. Zo
@@ -71,7 +71,7 @@ export default {
     }
 
     if (KILL_SWITCH) {
-      return new Response("// De Toegankelijkheids-lens is tijdelijk uitgeschakeld.", {
+      return new Response("// WCAG Radar is tijdelijk uitgeschakeld.", {
         status: 503,
         headers: jsHeaders(0),
       });

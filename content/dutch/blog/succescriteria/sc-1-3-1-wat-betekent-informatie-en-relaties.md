@@ -94,16 +94,16 @@ Meer weten? Lees ons artikel over [labels](/blog/sc-1-3-1-labels/).
 - **Tabellen zonder kopcellen**, of tabellen die alleen voor de lay-out dienen.
 - **Structuur uit Word plakken.** Plak je tekst rechtstreeks uit Word, dan komt er vaak rommelige opmaak mee. Plak als platte tekst en bouw de structuur opnieuw op met de knoppen van je editor.
 
-## Controleer je pagina's met de Toegankelijkheids-lens
+## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/). Je sleept de lens één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium laat de lens precies zien wat je nodig hebt:
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium laat de radar precies zien wat je nodig hebt:
 
 - **Koppen en structuur:** je ziet alle koppen met hun niveau en krijgt een waarschuwing als er een niveau wordt overgeslagen.
 - **Lijststructuur:** je ziet of je opsommingen echte lijsten zijn, of losse regels met streepjes.
-- **Tabellen:** de lens markeert tabellen zonder kopcellen of bijschrift.
+- **Tabellen:** de radar markeert tabellen zonder kopcellen of bijschrift.
 - **Invoervelden zonder naam:** je ziet welke formuliervelden geen toegankelijke naam hebben, zodat je dit kunt doorgeven aan je webbouwer.
 
-De lens vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
 ## Veelgestelde vragen
 
@@ -121,7 +121,7 @@ Ja. Ook in een PDF moeten koppen, lijsten en tabellen echte structuur hebben. Ma
 
 ### Hoe controleer ik snel de koppenstructuur van een hele pagina?
 
-Klik de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/) aan op de pagina. Je ziet direct alle koppen met hun niveau. Liever een browserextensie? Lees dan onze [handleiding voor HeadingsMap](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
+Klik de [WCAG Radar](/tools/wcag-radar/) aan op de pagina. Je ziet direct alle koppen met hun niveau. Liever een browserextensie? Lees dan onze [handleiding voor HeadingsMap](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
 
 ## Samenvatting
 
@@ -133,6 +133,6 @@ De belangrijkste punten:
 - Sla geen kopniveaus over.
 - Gebruik de opsommingsknop voor lijsten.
 - Geef tabellen kopcellen en gebruik ze alleen voor echte gegevens.
-- Controleer je pagina's met de [Toegankelijkheids-lens voor webredactie](/tools/toegankelijkheids-lens-webredactie/).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

@@ -1,5 +1,5 @@
 /*
- * Bouwt de Toegankelijkheids-lens-bookmarklets uit assets/js/bookmarklets/.
+ * Bouwt de WCAG Radar-bookmarklets uit assets/js/bookmarklets/.
  *
  * Per rol wordt de gedeelde core + alle check-modules + het boot-bestand
  * samengevoegd, in een IIFE gewrapt en daarna GEOBFUSCEERD (javascript-obfuscator).
@@ -38,7 +38,7 @@ const BOOT = "boot-lens.js";
    omdat we hem er na afloop voor plakken). Maakt kopiëren een aantoonbare
    inbreuk in plaats van een grijs gebied. */
 const BANNER =
-  "/*! Toegankelijkheids-lens (c) Proper Access - properaccess.nl\n" +
+  "/*! WCAG Radar (c) Proper Access - properaccess.nl\n" +
   " * Alle rechten voorbehouden. Deze tool en de code erachter zijn eigendom van\n" +
   " * Proper Access. Verveelvoudigen, verspreiden, herpubliceren of onder een\n" +
   " * andere naam aanbieden is niet toegestaan zonder schriftelijke toestemming.\n" +
@@ -86,7 +86,7 @@ function loaderCode(version) {
     "if(P&&P.start){P.start();return;}" +
     'var s=document.createElement("script");' +
     's.src="' + src + '";' +
-    's.onerror=function(){window.alert("De Toegankelijkheids-lens kon niet laden. Controleer je internetverbinding of probeer een andere pagina.");};' +
+    's.onerror=function(){window.alert("WCAG Radar kon niet laden. Controleer je internetverbinding of probeer een andere pagina.");};' +
     "(document.head||document.documentElement).appendChild(s);" +
     "})();";
   return "javascript:" + encodeURIComponent(js);
@@ -112,8 +112,8 @@ function main() {
   const code = loaderCode(version);
   const data = {
     lens: {
-      title: "Toegankelijkheids-lens",
-      slug: "toegankelijkheids-lens",
+      title: "WCAG Radar",
+      slug: "wcag-radar",
       href: code,
       code: code,
     },
