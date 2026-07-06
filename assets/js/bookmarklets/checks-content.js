@@ -178,11 +178,15 @@ PA.register({
 PA.register({
   id: "iframetitle",
   group: "Inhoud",
-  label: "Titels van ingesloten kaders",
+  label: "Titels van ingesloten kaders (iframes)",
   wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/",
   run: function (ctx) {
+    // Alleen zichtbare iframes controleren. Iframes met display:none,
+    // visibility:hidden of zonder afmetingen zijn niet toegankelijk voor
+    // screenreaders en hoeven ook geen titel.
     var frames = Array.prototype.slice.call(document.querySelectorAll("iframe")).filter(function (f) {
-      return !f.closest("[data-pa-lens]");
+      if (f.closest("[data-pa-lens]")) return false;
+      return PA.visible(f);
     });
     var noTitle = 0;
     frames.forEach(function (f) {
@@ -192,7 +196,7 @@ PA.register({
     });
     return {
       count: frames.length,
-      summary: frames.length + " ingesloten kaders (iframes), " + noTitle + " zonder titel. Een titel vertelt een screenreadergebruiker wat er in het kader zit, bijvoorbeeld een video of een kaart."
+      summary: frames.length + " zichtbare kaders (iframes), " + noTitle + " zonder titel. Een titel vertelt een screenreadergebruiker wat er in het kader zit, bijvoorbeeld een video of een kaart."
     };
   },
   clear: function (ctx) { ctx.clearMarks(); }
@@ -252,4 +256,48 @@ PA.register({
     (PA._linSheets || []).forEach(function (n) { if (n.sheet) n.sheet.disabled = false; });
     PA._linSheets = [];
   }
+});
+
+PA.register({
+  id: "formlabels",
+  group: "Inhoud",
+  label: "Toegankelijke naam bij formuliervelden",
+  wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/",
+  run: function (ctx) {
+    var skipTypes = { hidden: 1, submit: 1, button: 1, reset: 1, image: 1 };
+    function fieldName(el) {
+      if (el.id) {
+        var safe = window.CSS && CSS.escape ? CSS.escape(el.id) : el.id;
+        var l = document.querySelector('label[for="' + safe + '"]');
+        if (l && (l.textContent || "").trim()) return (l.textContent || "").trim();
+      }
+      var wrap = el.closest("label");
+      if (wrap && (wrap.textContent || "").trim()) return (wrap.textContent || "").trim();
+      var al = el.getAttribute("aria-label");
+      if (al && al.trim()) return al.trim();
+      var lb = el.getAttribute("aria-labelledby");
+      if (lb) { var t = document.getElementById(lb.split(/\s+/)[0]); if (t && (t.textContent || "").trim()) return (t.textContent || "").trim(); }
+      var title = el.getAttribute("title");
+      if (title && title.trim()) return title.trim();
+      return "";
+    }
+    var nodes = Array.prototype.slice.call(document.querySelectorAll("input,select,textarea"));
+    var total = 0, missing = 0, placeholderOnly = 0;
+    nodes.forEach(function (el) {
+      if (el.closest("[data-pa-lens]")) return;
+      if (skipTypes[(el.getAttribute("type") || "").toLowerCase()]) return;
+      if (!PA.visible(el)) return;
+      total++;
+      var name = fieldName(el);
+      if (name) { ctx.mark(el, { status: "ok", label: "toegankelijke naam: " + name }); return; }
+      var ph = el.getAttribute("placeholder");
+      if (ph && ph.trim()) { placeholderOnly++; ctx.mark(el, { status: "warn", label: "alleen placeholder (geen toegankelijke naam)" }); }
+      else { missing++; ctx.mark(el, { status: "error", label: "geen toegankelijke naam" }); }
+    });
+    var msg = total + " formuliervelden. " + missing + " zonder toegankelijke naam";
+    msg += placeholderOnly ? ", " + placeholderOnly + " alleen met placeholder (telt niet). " : ". ";
+    msg += "Let op: zichtbare tekst naast een veld telt alleen als toegankelijke naam als hij via <label for>, aria-label of aria-labelledby aan het veld is gekoppeld.";
+    return { count: missing + placeholderOnly, summary: msg };
+  },
+  clear: function (ctx) { ctx.clearMarks(); }
 });

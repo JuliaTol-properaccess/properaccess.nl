@@ -1,6 +1,96 @@
 /* Developer-checks: technisch, met attribuutnamen. */
 
 PA.register({
+  id: "formerrors",
+  group: "Semantiek",
+  label: "Foutmeldingen bij formuliervelden",
+  wcag: "/blog/sc-3-3-1-wat-betekent-fout-identificatie/",
+  run: function (ctx) {
+    /* Kandidaat-foutmeldingen: elementen die op een validatie-fout lijken.
+       We combineren drie signalen — een ARIA-rol/live-region, of een klasse
+       die op error/invalid/foutmelding lijkt. Data-attributen laten we voor
+       nu buiten scope, die zijn te wisselend. */
+    var CLASS_PATTERN = /(?:^|[-_ ])(error|errors|invalid|is-invalid|has-error|foutmelding|foutmeldingen|validation-error|field-error|input-error|form-error|help-error)(?:$|[-_ ])/i;
+    var seen = new Set();
+    var candidates = [];
+    var byRole = document.querySelectorAll('[role="alert"],[role="status"],[aria-live]');
+    Array.prototype.forEach.call(byRole, function (el) { candidates.push(el); });
+    Array.prototype.forEach.call(document.querySelectorAll("[class]"), function (el) {
+      if (CLASS_PATTERN.test(el.className || "")) candidates.push(el);
+    });
+    candidates = candidates.filter(function (el) {
+      if (!el || seen.has(el)) return false;
+      if (el.closest("[data-pa-lens]")) return false;
+      if (!PA.visible(el)) return false;
+      /* Nul-tekst overslaan (bv. leeg containertje voor toekomstige melding). */
+      var text = (el.textContent || "").trim();
+      if (!text) return false;
+      seen.add(el);
+      return true;
+    });
+
+    /* Bouw een lookup: welk formulierveld verwijst naar welk id? */
+    var fields = Array.prototype.slice.call(document.querySelectorAll("input,select,textarea"));
+    var refToFields = new Map();
+    fields.forEach(function (f) {
+      ["aria-describedby", "aria-errormessage"].forEach(function (attr) {
+        var v = f.getAttribute(attr);
+        if (!v) return;
+        v.split(/\s+/).forEach(function (id) {
+          if (!id) return;
+          if (!refToFields.has(id)) refToFields.set(id, []);
+          refToFields.get(id).push({ field: f, attr: attr });
+        });
+      });
+    });
+
+    var unlinked = 0, linkedWithoutInvalid = 0, ok = 0;
+    candidates.forEach(function (el) {
+      var id = el.id;
+      var refs = id ? (refToFields.get(id) || []) : [];
+      var short = ((el.textContent || "").trim().replace(/\s+/g, " ").slice(0, 60));
+      var quoted = '"' + short + (short.length >= 60 ? "…" : "") + '"';
+      if (!refs.length) {
+        unlinked++;
+        ctx.mark(el, {
+          status: "error",
+          label: "foutmelding niet gekoppeld: " + quoted +
+            (id ? " (id=" + id + ", geen veld verwijst hierheen)" : " (geen id, kan niet gekoppeld worden)")
+        });
+        return;
+      }
+      /* Gekoppeld. Waarschuwen als geen van de velden aria-invalid="true" heeft;
+         dat is een indicator dat een screenreader de fout-status niet aankondigt. */
+      var invalid = refs.some(function (r) { return r.field.getAttribute("aria-invalid") === "true"; });
+      var attrLabel = refs.map(function (r) {
+        var name = r.field.getAttribute("name") || r.field.id || r.field.tagName.toLowerCase();
+        return r.attr + " ← " + name;
+      }).join(", ");
+      if (!invalid) {
+        linkedWithoutInvalid++;
+        ctx.mark(el, {
+          status: "warn",
+          label: "gekoppeld (" + attrLabel + "), maar geen aria-invalid=\"true\" op het veld"
+        });
+      } else {
+        ok++;
+        ctx.mark(el, { status: "ok", label: "goed gekoppeld (" + attrLabel + ", aria-invalid=\"true\")" });
+      }
+    });
+
+    var summary =
+      candidates.length + " zichtbare foutmeldingen. " +
+      ok + " goed gekoppeld, " +
+      linkedWithoutInvalid + " gekoppeld zonder aria-invalid, " +
+      unlinked + " niet gekoppeld aan een veld. " +
+      "Een screenreader kondigt een foutmelding pas aan als hij via aria-describedby of aria-errormessage aan het invoerveld hangt " +
+      "(en idealiter het veld aria-invalid=\"true\" heeft).";
+    return { count: candidates.length, summary: summary };
+  },
+  clear: function (ctx) { ctx.clearMarks(); }
+});
+
+PA.register({
   id: "aria",
   group: "Semantiek",
   label: "ARIA-rollen en -attributen",
@@ -12,8 +102,16 @@ PA.register({
       if (el.closest("[data-pa-lens]")) return;
       var bits = [];
       if (el.getAttribute("role")) bits.push("role=" + el.getAttribute("role"));
-      ["aria-label", "aria-labelledby", "aria-describedby", "aria-controls", "aria-expanded", "aria-live"].forEach(function (a) {
-        if (el.hasAttribute(a)) bits.push(a.replace("aria-", "") + "=" + el.getAttribute(a));
+      // aria-label krijgt géén 'label='-prefix: het is de leesbare naam, dus
+      // de waarde tussen aanhalingstekens is zelfverklarend. Voor de andere
+      // ARIA-attributen blijft attr=value (de waarde is een id-verwijzing of
+      // enum, niet leesbaar op zichzelf). Lege waarden slaan we over: die
+      // brachten voorheen 'label=' zonder inhoud in beeld.
+      var ariaLabel = el.getAttribute("aria-label");
+      if (ariaLabel && ariaLabel.trim()) bits.push('"' + ariaLabel + '"');
+      ["aria-labelledby", "aria-describedby", "aria-expanded", "aria-live"].forEach(function (a) {
+        var v = el.getAttribute(a);
+        if (v && v.trim()) bits.push(a.replace("aria-", "") + "=" + v);
       });
       var status = "info";
       ["aria-labelledby", "aria-describedby", "aria-controls"].forEach(function (a) {
@@ -101,33 +199,10 @@ PA.register({
   label: "Tekst vergroten (200%)",
   wcag: "/blog/sc-1-4-4-wat-betekent-tekst-vergroten/",
   run: function () {
-    /* Twee passes: eerst alle huidige groottes meten, dan pas verdubbelen.
-       Anders telt de vergroting van een ouder door in de meting van een kind. */
-    var list = [];
-    Array.prototype.forEach.call(document.querySelectorAll("body *"), function (el) {
-      if (el.closest("[data-pa-lens]")) return;
-      var hasText = false;
-      for (var i = 0; i < el.childNodes.length; i++) {
-        if (el.childNodes[i].nodeType === 3 && el.childNodes[i].nodeValue.trim()) { hasText = true; break; }
-      }
-      if (!hasText) return;
-      var size = parseFloat(getComputedStyle(el).fontSize);
-      if (!size) return;
-      list.push({ el: el, size: size, prev: el.style.getPropertyValue("font-size"), prio: el.style.getPropertyPriority("font-size") });
-    });
-    list.forEach(function (r) {
-      r.el.style.setProperty("font-size", (r.size * 2) + "px", "important");
-    });
-    PA._resized = list;
+    PA.setTextZoom(2, true);
     return { count: 0, summary: "Alle tekst staat nu op 200%. Kijk of er tekst wegvalt, overlapt of buiten beeld raakt en of alles nog te bedienen is. Klik nogmaals om terug te zetten." };
   },
-  clear: function () {
-    (PA._resized || []).forEach(function (r) {
-      if (r.prev) r.el.style.setProperty("font-size", r.prev, r.prio);
-      else r.el.style.removeProperty("font-size");
-    });
-    PA._resized = [];
-  }
+  clear: function () { PA.setTextZoom(2, false); }
 });
 
 PA.register({
@@ -152,14 +227,19 @@ PA.register({
   label: "Iframes (titel)",
   wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/",
   run: function (ctx) {
-    var frames = Array.prototype.slice.call(document.querySelectorAll("iframe"));
+    // Zichtbare iframes controleren; lens-eigen iframes en display:none/
+    // visibility:hidden/nul-afmeting frames overslaan.
+    var frames = Array.prototype.slice.call(document.querySelectorAll("iframe")).filter(function (f) {
+      if (f.closest("[data-pa-lens]")) return false;
+      return PA.visible(f);
+    });
     var noTitle = 0;
     frames.forEach(function (f) {
       var title = f.getAttribute("title") || f.getAttribute("aria-label");
       if (!title || !title.trim()) { noTitle++; ctx.mark(f, { status: "error", label: "iframe zonder titel" }); }
       else ctx.mark(f, { status: "ok", label: "title: " + title });
     });
-    return { count: frames.length, summary: frames.length + " iframes, " + noTitle + " zonder titel." };
+    return { count: frames.length, summary: frames.length + " zichtbare iframes, " + noTitle + " zonder titel." };
   },
   clear: function (ctx) { ctx.clearMarks(); }
 });

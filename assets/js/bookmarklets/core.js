@@ -120,6 +120,65 @@ PA.effectiveBg = function (el) {
   return { r: 255, g: 255, b: 255, a: 1 };
 };
 
+/* Betrouwbare effen achtergrond of null. Loopt omhoog tot een effen kleur;
+   komt er onderweg een background-image (foto of gradient) of een half-
+   transparante laag langs, dan is de meting niet betrouwbaar en geeft dit null
+   terug. Zo markeren we alleen tekst waarvan we het contrast echt kunnen meten. */
+PA.solidBg = function (el) {
+  var node = el;
+  while (node && node.nodeType === 1) {
+    var cs = getComputedStyle(node);
+    if (cs.backgroundImage && cs.backgroundImage !== "none") return null;
+    var c = PA.parseColor(cs.backgroundColor);
+    if (c && c.a === 1) return c;
+    if (c && c.a > 0 && c.a < 1) return null;
+    node = node.parentElement;
+  }
+  return { r: 255, g: 255, b: 255, a: 1 };
+};
+
+/* ---- tekst vergroten ---------------------------------------------------
+   Gedeeld mechanisme voor de vergroot-checks (200%, 400%). De originele
+   lettergroottes worden één keer gemeten en bewaard, zodat meerdere niveaus
+   niet op elkaar stapelen. De zichtbare vergroting is altijd het hoogste
+   actieve niveau; zet je 400% uit terwijl 200% aan staat, dan valt het terug
+   naar 200%. */
+PA.textBase = function () {
+  if (PA._textBase) return PA._textBase;
+  var list = [];
+  Array.prototype.forEach.call(document.querySelectorAll("body *"), function (el) {
+    if (el.closest("[data-pa-lens]")) return;
+    var hasText = false;
+    for (var i = 0; i < el.childNodes.length; i++) {
+      if (el.childNodes[i].nodeType === 3 && el.childNodes[i].nodeValue.trim()) { hasText = true; break; }
+    }
+    if (!hasText) return;
+    var size = parseFloat(getComputedStyle(el).fontSize);
+    if (!size) return;
+    list.push({ el: el, size: size, prev: el.style.getPropertyValue("font-size"), prio: el.style.getPropertyPriority("font-size") });
+  });
+  PA._textBase = list;
+  return list;
+};
+
+PA.setTextZoom = function (factor, on) {
+  PA._zoomSet = PA._zoomSet || {};
+  if (on) PA._zoomSet[factor] = true; else delete PA._zoomSet[factor];
+  var factors = Object.keys(PA._zoomSet).map(Number);
+  if (!factors.length) {
+    (PA._textBase || []).forEach(function (r) {
+      if (r.prev) r.el.style.setProperty("font-size", r.prev, r.prio);
+      else r.el.style.removeProperty("font-size");
+    });
+    PA._textBase = null;
+    return;
+  }
+  var max = Math.max.apply(null, factors);
+  PA.textBase().forEach(function (r) {
+    r.el.style.setProperty("font-size", (r.size * max) + "px", "important");
+  });
+};
+
 /* ---- overlay-laag (in shadow root, fixed, viewport-coordinaten) -------- */
 PA.overlays = [];
 
@@ -149,10 +208,66 @@ PA.positionOne = function (rec) {
   b.width = Math.max(r.width, 6) + "px";
   b.height = Math.max(r.height, 6) + "px";
   b.display = r.width === 0 && r.height === 0 ? "none" : "block";
+  /* Chip staat standaard bóven het element (translateY(-100%)). Voor elementen
+     die zelf tegen de bovenkant van de viewport zitten (denk aan een header op
+     y:0) valt het label achter de browser-chrome. In dat geval flippen we
+     naar onderin het element. Drempel 32px = ruime hoogte voor een chip. */
+  if (rec.chip) {
+    var flip = r.top < 32;
+    rec.chip.classList.toggle("pa-ov__chip--below", flip);
+  }
 };
 
 PA.reposition = function () {
   for (var i = 0; i < PA.overlays.length; i++) PA.positionOne(PA.overlays[i]);
+};
+
+/* Peek-modus: bij drukke pagina's (veel overlays op elkaar) blijven chips
+   standaard leesbaar staan, maar zodra je een gemarkeerd element aanwijst
+   worden alle andere chips gedimd. Zo kun je nog altijd één label rustig
+   lezen zonder dat de rest in de weg staat. Onder de drempel doen we niets. */
+PA.PEEK_THRESHOLD = 8;
+
+PA._peekHandler = function (e) {
+  if (PA._peekRaf) return;
+  PA._peekRaf = requestAnimationFrame(function () {
+    PA._peekRaf = 0;
+    if (!PA.overlays || PA.overlays.length < PA.PEEK_THRESHOLD) {
+      /* Onder de drempel: alle chips onbeperkt tonen. */
+      for (var j = 0; j < PA.overlays.length; j++) {
+        var rec2 = PA.overlays[j];
+        if (rec2.chip) rec2.chip.classList.remove("pa-ov__chip--dim");
+        rec2.box.style.zIndex = "";
+      }
+      return;
+    }
+    var t = document.elementFromPoint(e.clientX, e.clientY);
+    var over = null;
+    for (var i = 0; i < PA.overlays.length; i++) {
+      var rec = PA.overlays[i];
+      if (t && (rec.el === t || rec.el.contains(t))) { over = rec; break; }
+    }
+    for (var k = 0; k < PA.overlays.length; k++) {
+      var r = PA.overlays[k];
+      if (!r.chip) continue;
+      var focused = over === r;
+      r.chip.classList.toggle("pa-ov__chip--dim", !!over && !focused);
+      r.box.style.zIndex = focused ? "1" : "";
+    }
+  });
+};
+
+PA.wirePeek = function () {
+  if (PA._peekBound) return;
+  PA._peekBound = true;
+  document.addEventListener("mousemove", PA._peekHandler, { passive: true });
+};
+
+PA.unwirePeek = function () {
+  if (!PA._peekBound) return;
+  PA._peekBound = false;
+  document.removeEventListener("mousemove", PA._peekHandler);
+  if (PA._peekRaf) { cancelAnimationFrame(PA._peekRaf); PA._peekRaf = 0; }
 };
 
 PA.clearOverlays = function (checkId) {
@@ -176,6 +291,8 @@ PA.STYLE = [
   ".pa-ov__chip{position:absolute;top:0;left:0;transform:translateY(-100%);max-width:340px;",
   "font-size:11px;line-height:1.35;font-weight:600;color:#fff;background:#1F2937;padding:1px 5px;",
   "border-radius:3px 3px 3px 0;white-space:normal;pointer-events:none}",
+  ".pa-ov__chip--below{top:100%;transform:none;border-radius:0 3px 3px 3px}",
+  ".pa-ov__chip--dim{opacity:.12;transition:opacity .1s}",
   ".pa-ov__chip--ok{background:#004050}",
   ".pa-ov__chip--warn{background:#b45309}",
   ".pa-ov__chip--error{background:#A30D4B}",
@@ -188,6 +305,13 @@ PA.STYLE = [
   ".pa-panel__logo{width:12px;height:12px;border-radius:50%;background:#A30D4B;flex:0 0 auto}",
   ".pa-panel__title{font-weight:800;font-size:14px;margin:0;flex:1 1 auto}",
   ".pa-panel__role{font-size:11px;font-weight:600;opacity:.85;display:block}",
+  ".pa-tabs{display:flex;gap:2px;padding:6px 6px 0;background:#1F2937}",
+  ".pa-tab{flex:1 1 0;appearance:none;border:0;background:transparent;color:#fff;opacity:.7;",
+  "cursor:pointer;padding:7px 6px;font-size:12px;font-weight:700;border-radius:6px 6px 0 0;",
+  "border-bottom:3px solid transparent}",
+  ".pa-tab:hover{opacity:1;background:rgba(255,255,255,.10)}",
+  ".pa-tab[aria-selected=true]{opacity:1;background:#fff;color:#A30D4B;border-bottom-color:#A30D4B}",
+  ".pa-tab:focus-visible{outline:3px solid #fff;outline-offset:-2px}",
   ".pa-iconbtn{appearance:none;border:0;background:transparent;color:#fff;cursor:pointer;",
   "font-size:18px;line-height:1;padding:4px;border-radius:4px}",
   ".pa-iconbtn:hover{background:rgba(255,255,255,.15)}",
@@ -219,6 +343,15 @@ PA.STYLE = [
   ".pa-panel__credit{padding:7px 10px;border-top:1px solid #e5e7eb;font-size:11px;color:#004050;text-align:center;border-radius:0 0 9px 9px}",
   ".pa-panel__credit a{color:#A30D4B;font-weight:700}",
   ".pa-panel__credit a:focus-visible{outline:2px solid #004050;outline-offset:1px}",
+  /* Compacte weergave bij kleine viewports of hoge browser-zoom (WCAG 1.4.4
+     tekst 200% en 1.4.10 reflow op 320 CSS px). Paneel wordt bijna-fullscreen
+     zodat de check-lijst zichtbaar blijft; de credit-regel wordt weggelaten
+     om verticale ruimte terug te winnen. */
+  "@media (max-width:520px),(max-height:520px){",
+  ".pa-panel{top:8px;right:8px;bottom:8px;left:8px;width:auto;max-height:none}",
+  ".pa-panel__credit{display:none}",
+  ".pa-picker{left:8px;right:8px;bottom:8px;width:auto;max-width:none}",
+  "}",
   ".pa-picker{position:fixed;left:16px;bottom:16px;width:280px;background:#fff;color:#1F2937;",
   "border:1px solid #1F2937;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.28);",
   "pointer-events:auto;z-index:2147483647;font-size:13px}",
@@ -299,6 +432,7 @@ PA.destroy = function () {
   if (PA.host && PA.host.parentNode) PA.host.parentNode.removeChild(PA.host);
   window.removeEventListener("scroll", PA.reposition, true);
   window.removeEventListener("resize", PA.reposition, true);
+  PA.unwirePeek();
   PA.host = null;
 };
 
@@ -331,57 +465,12 @@ PA.makeDraggable = function (panel, handle) {
   handle.addEventListener("pointercancel", end);
 };
 
-PA.build = function () {
-  PA.state = {};
-  PA.host = document.createElement("div");
-  PA.host.id = "pa-a11y-lens-host";
-  PA.host.setAttribute("data-pa-lens", "1");
-  var root = PA.host.attachShadow({ mode: "open" });
-  PA.root = root;
-  document.documentElement.appendChild(PA.host);
-
-  var style = document.createElement("style");
-  style.textContent = PA.STYLE;
-  root.appendChild(style);
-
-  PA.layer = document.createElement("div");
-  PA.layer.className = "pa-layer";
-  root.appendChild(PA.layer);
-
-  PA.live = document.createElement("div");
-  PA.live.className = "pa-sr";
-  PA.live.setAttribute("role", "status");
-  PA.live.setAttribute("aria-live", "polite");
-  root.appendChild(PA.live);
-
-  var panel = document.createElement("section");
-  panel.className = "pa-panel";
-  panel.setAttribute("role", "dialog");
-  panel.setAttribute("aria-label", "Toegankelijkheids-lens voor " + PA.role);
-  panel.setAttribute("tabindex", "-1");
-
-  var head = document.createElement("div");
-  head.className = "pa-panel__head";
-  head.title = "Sleep om het paneel te verplaatsen";
-  head.innerHTML =
-    '<span class="pa-panel__logo" aria-hidden="true"></span>' +
-    '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
-    '<span class="pa-panel__role">' + PA.esc(PA.role) + "</span></h2>" +
-    '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
-  var close = document.createElement("button");
-  close.className = "pa-iconbtn";
-  close.type = "button";
-  close.setAttribute("aria-label", "Lens sluiten");
-  close.innerHTML = "&times;";
-  close.addEventListener("click", PA.destroy);
-  head.appendChild(close);
-  panel.appendChild(head);
-
-  var body = document.createElement("div");
-  body.className = "pa-panel__body";
-
+/* Bouw de check-rijen voor het actieve tabblad in het body-paneel. */
+PA.renderBody = function () {
+  var body = PA.body;
+  body.textContent = "";
   var lastGroup = null;
-  PA.order.forEach(function (id) {
+  PA.tabs[PA.activeTab].order.forEach(function (id) {
     var check = PA.checks[id];
     if (!check) return;
     if (check.group && check.group !== lastGroup) {
@@ -409,6 +498,113 @@ PA.build = function () {
     wrap.appendChild(summary);
     body.appendChild(wrap);
   });
+};
+
+/* Wissel van tabblad. Zet eerst alle actieve checks uit (schone pagina), werk
+   dan de tab-ARIA en subtitel bij en herbouw de body. */
+PA.selectTab = function (index) {
+  if (index === PA.activeTab) return;
+  PA.resetAll();
+  var prev = PA.tabButtons[PA.activeTab];
+  prev.setAttribute("aria-selected", "false");
+  prev.setAttribute("tabindex", "-1");
+  PA.activeTab = index;
+  var cur = PA.tabButtons[index];
+  cur.setAttribute("aria-selected", "true");
+  cur.setAttribute("tabindex", "0");
+  cur.focus();
+  PA.roleEl.textContent = PA.tabs[index].role;
+  PA.body.setAttribute("aria-labelledby", "pa-tab-" + PA.tabs[index].key);
+  PA.renderBody();
+  PA.announce("Tabblad " + PA.tabs[index].label + " geopend.");
+};
+
+PA.build = function () {
+  PA.state = {};
+  PA.host = document.createElement("div");
+  PA.host.id = "pa-a11y-lens-host";
+  PA.host.setAttribute("data-pa-lens", "1");
+  var root = PA.host.attachShadow({ mode: "open" });
+  PA.root = root;
+  document.documentElement.appendChild(PA.host);
+
+  var style = document.createElement("style");
+  style.textContent = PA.STYLE;
+  root.appendChild(style);
+
+  PA.layer = document.createElement("div");
+  PA.layer.className = "pa-layer";
+  root.appendChild(PA.layer);
+
+  PA.live = document.createElement("div");
+  PA.live.className = "pa-sr";
+  PA.live.setAttribute("role", "status");
+  PA.live.setAttribute("aria-live", "polite");
+  root.appendChild(PA.live);
+
+  var panel = document.createElement("section");
+  panel.className = "pa-panel";
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-label", "Toegankelijkheids-lens");
+  panel.setAttribute("tabindex", "-1");
+
+  var head = document.createElement("div");
+  head.className = "pa-panel__head";
+  head.title = "Sleep om het paneel te verplaatsen";
+  head.innerHTML =
+    '<span class="pa-panel__logo" aria-hidden="true"></span>' +
+    '<h2 class="pa-panel__title">Toegankelijkheids-lens' +
+    '<span class="pa-panel__role"></span></h2>' +
+    '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
+  PA.roleEl = head.querySelector(".pa-panel__role");
+  PA.roleEl.textContent = PA.tabs[PA.activeTab].role;
+  var close = document.createElement("button");
+  close.className = "pa-iconbtn";
+  close.type = "button";
+  close.setAttribute("aria-label", "Lens sluiten");
+  close.innerHTML = "&times;";
+  close.addEventListener("click", PA.destroy);
+  head.appendChild(close);
+  panel.appendChild(head);
+
+  /* Tabbalk: kies een rol (Redactie / Designer / Developer). */
+  var tablist = document.createElement("div");
+  tablist.className = "pa-tabs";
+  tablist.setAttribute("role", "tablist");
+  tablist.setAttribute("aria-label", "Kies een rol");
+  PA.tabButtons = [];
+  PA.tabs.forEach(function (tab, i) {
+    var t = document.createElement("button");
+    t.className = "pa-tab";
+    t.type = "button";
+    t.id = "pa-tab-" + tab.key;
+    t.setAttribute("role", "tab");
+    t.setAttribute("aria-controls", "pa-tabpanel");
+    t.setAttribute("aria-selected", i === PA.activeTab ? "true" : "false");
+    t.setAttribute("tabindex", i === PA.activeTab ? "0" : "-1");
+    t.textContent = tab.label;
+    t.addEventListener("click", function () { PA.selectTab(i); });
+    tablist.appendChild(t);
+    PA.tabButtons.push(t);
+  });
+  tablist.addEventListener("keydown", function (e) {
+    var n = PA.tabs.length, i = PA.activeTab, to = -1;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") to = (i + 1) % n;
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") to = (i - 1 + n) % n;
+    else if (e.key === "Home") to = 0;
+    else if (e.key === "End") to = n - 1;
+    if (to !== -1) { e.preventDefault(); PA.selectTab(to); }
+  });
+  panel.appendChild(tablist);
+
+  var body = document.createElement("div");
+  body.className = "pa-panel__body";
+  body.id = "pa-tabpanel";
+  body.setAttribute("role", "tabpanel");
+  body.setAttribute("tabindex", "0");
+  body.setAttribute("aria-labelledby", "pa-tab-" + PA.tabs[PA.activeTab].key);
+  PA.body = body;
+  PA.renderBody();
   panel.appendChild(body);
 
   var foot = document.createElement("div");
@@ -431,7 +627,7 @@ PA.build = function () {
   var credit = document.createElement("div");
   credit.className = "pa-panel__credit";
   credit.innerHTML =
-    'Een gratis tool van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">properaccess.nl</a>';
+    'Een gratis tool op <a href="https://testtoegankelijkheid.nl" target="_blank" rel="noopener">testtoegankelijkheid.nl</a>, een initiatief van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">Proper Access</a>.';
   panel.appendChild(credit);
 
   root.appendChild(panel);
@@ -444,6 +640,7 @@ PA.build = function () {
 
   window.addEventListener("scroll", PA.reposition, true);
   window.addEventListener("resize", PA.reposition, true);
+  PA.wirePeek();
   panel.focus();
 };
 

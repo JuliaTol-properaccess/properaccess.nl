@@ -17,7 +17,10 @@
         <p class="pa-bm__step">
           {{ if eq $.Lang "nl" }}Sleep deze knop naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar:{{ end }}
         </p>
-        <a class="pa-bm__drag" href="{{ .href | safeURL }}" draggable="true">
+        {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
+     dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
+     blijft de bookmark leeg. */}}
+        <a class="pa-bm__drag" href="{{ .href | safeURL }}">
           <span class="pa-bm__drag-dot" aria-hidden="true"></span>
           {{ $.Title }}
         </a>
@@ -49,6 +52,23 @@
     </div>
     {{ end }}
 
+    {{ with .Params.tabs }}
+    <div class="pa-bm__checks">
+      <h2>{{ if eq $.Lang "nl" }}Wat de lens laat zien{{ else }}What the lens shows{{ end }}</h2>
+      {{ range . }}
+      <h3 class="pa-bm__tab-title">{{ if eq $.Lang "nl" }}Tabblad {{ .label }}{{ else }}{{ .label }} tab{{ end }}</h3>
+      <ul class="pa-bm__check-list">
+        {{ range .checks }}
+        <li class="pa-bm__check">
+          <h4 class="pa-bm__check-title">{{ .titel }}</h4>
+          <p class="pa-bm__check-text">{{ .uitleg }}</p>
+          {{ with .wcag }}<p class="pa-bm__check-wcag"><a href="{{ . }}">{{ if eq $.Lang "nl" }}WCAG-uitleg{{ else }}WCAG explainer{{ end }}</a></p>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    {{ else }}
     {{ with .Params.checks }}
     <div class="pa-bm__checks">
       <h2>{{ if eq $.Lang "nl" }}Wat de lens laat zien{{ else }}What the lens shows{{ end }}</h2>
@@ -62,6 +82,7 @@
         {{ end }}
       </ul>
     </div>
+    {{ end }}
     {{ end }}
 
     <div class="pa-bm__note">

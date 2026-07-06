@@ -92,9 +92,7 @@ URL: {{ .Permalink }}
 
 ## Tools (gratis)
 
-- Toegankelijkheids-lens voor webredactie: {{ site.BaseURL }}tools/toegankelijkheids-lens-webredactie/
-- Toegankelijkheids-lens voor ontwikkelaars: {{ site.BaseURL }}tools/toegankelijkheids-lens-ontwikkelaars/
-- Toegankelijkheids-lens voor designers: {{ site.BaseURL }}tools/toegankelijkheids-lens-designers/
+- Toegankelijkheids-lens (Redactie, Designer, Developer): {{ site.BaseURL }}tools/toegankelijkheids-lens/
 - Kleurcontrast checker: {{ site.BaseURL }}tools/kleurcontrast-checker/
 - Foutmeldingen naslagwerk: {{ site.BaseURL }}tools/foutmeldingen/
 - ARIA referentie: {{ site.BaseURL }}tools/aria-referentie/
