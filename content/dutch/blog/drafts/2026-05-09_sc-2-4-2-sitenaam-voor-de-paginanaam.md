@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Sitenaam vóór de paginanaam"
 date: 2026-07-06
 slug: "sc-2-4-2-sitenaam-voor-de-paginanaam"
