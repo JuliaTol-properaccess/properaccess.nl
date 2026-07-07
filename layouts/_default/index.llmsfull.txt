@@ -93,7 +93,6 @@ URL: {{ .Permalink }}
 ## Tools (gratis)
 
 - WCAG Radar (Redactie, Designer, Developer): {{ site.BaseURL }}tools/wcag-radar/
-- Kleurcontrast checker: {{ site.BaseURL }}tools/kleurcontrast-checker/
 - Foutmeldingen naslagwerk: {{ site.BaseURL }}tools/foutmeldingen/
 - ARIA referentie: {{ site.BaseURL }}tools/aria-referentie/
 - BDTO-verklaring generator: {{ site.BaseURL }}tools/verklaring-generator/

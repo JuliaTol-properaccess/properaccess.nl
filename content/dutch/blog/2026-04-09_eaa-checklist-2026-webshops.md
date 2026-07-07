@@ -83,7 +83,7 @@ _WCAG: 2.4.7 Focus zichtbaar_
 
 ### 7. Kleurcontrast voldoet aan minimaal 4.5:1 voor tekst en 3:1 voor UI-elementen
 
-Open een contrast-checker, bijvoorbeeld deze gratis tool https://www.properaccess.nl/tools/kleurcontrast-checker/ en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker, bijna altijd te laag.
+Zet een contrast-check aan op je pagina, bijvoorbeeld met onze gratis WCAG Radar https://www.properaccess.nl/tools/wcag-radar/ en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker, bijna altijd te laag.
 
 _WCAG: 1.4.3 Contrast (minimum), 1.4.11 Contrast voor niet-tekstuele elementen_
 

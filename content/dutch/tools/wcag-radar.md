@@ -17,6 +17,8 @@ aliases:
   - /tools/koppenstructuur-checker/
   - /tools/link-checker/
   - /tools/tabel-checker/
+  - /tools/kleurcontrast-checker/
+  - /tools/tekstafstand-check/
 keywords:
   - toegankelijkheid checken
   - alt-tekst controleren

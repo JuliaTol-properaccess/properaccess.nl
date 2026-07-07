@@ -22,7 +22,6 @@
 ## Gratis tools
 
 - [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/): Bookmarklet met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op elke pagina toont
-- [Kleurcontrast checker](https://www.properaccess.nl/tools/kleurcontrast-checker/): Test kleurcontrast volgens WCAG
 - [Foutmeldingen naslagwerk](https://www.properaccess.nl/tools/foutmeldingen/): Voorbeelden van toegankelijke foutmeldingen
 - [ARIA referentie](https://www.properaccess.nl/tools/aria-referentie/): Naslagwerk voor ARIA-attributen
 

@@ -50,7 +50,7 @@ En dan zijn er productkaartjes die uit meerdere links bestaan die naar hetzelfde
 
 De norm voor tekstcontrast is 4,5:1. Een kleurencombinatie die precies op 4,5:1 uitkomt, haalt het en levert dus geen bevinding op. Maar bij een dunne letter of een klein lettertype is diezelfde tekst alsnog moeilijk te lezen. De grenswaarde is een minimum, geen garantie dat het prettig leest. Voldoen en prettig kunnen lezen zijn niet hetzelfde.
 
-Wil je je eigen kleurencombinaties controleren? Met onze [gratis kleurcontrast checker](/tools/kleurcontrast-checker/) zie je meteen of je aan de norm voldoet.
+Wil je je eigen kleurencombinaties controleren? Met onze gratis [WCAG Radar](/tools/wcag-radar/) zie je meteen of je aan de norm voldoet.
 
 ## Aanraakdoelen precies op 24 pixels
 
