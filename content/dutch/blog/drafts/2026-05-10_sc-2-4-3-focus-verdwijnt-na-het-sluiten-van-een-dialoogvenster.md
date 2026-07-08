@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Focus verdwijnt na het sluiten van een dialoogvenster"
 date: 2026-07-07
 slug: "sc-2-4-3-focus-verdwijnt-na-het-sluiten-van-een-dialoogvenster"
