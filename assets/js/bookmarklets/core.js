@@ -1,4 +1,4 @@
-/* Proper Access - WCAG Radar: gedeelde core.
+/* WCAG Radar - een initiatief van Proper Access: gedeelde core.
    Wordt door scripts/build-bookmarklets.js samengevoegd met de check-modules en
    een boot-bestand per rol, en daarna in een IIFE gewrapt. Schrijf dus geen eigen
    IIFE-wrapper hier. Gebruik geen // regelcommentaar binnen expressies: de
@@ -11,6 +11,36 @@ window.__paLens = PA;
 PA.checks = PA.checks || {};
 PA.baseURL = "https://properaccess.nl";
 PA.NS = "pa-lens";
+
+/* Taal: de loader-bookmarklet zet window.__paLensLang="en" voor de Engelse
+   variant; zonder vlag is alles Nederlands. */
+PA.lang = window.__paLensLang === "en" ? "en" : "nl";
+
+/* Vertaalhulp. De Nederlandse tekst is zelf de sleutel: PA.t zoekt hem op in
+   PA.EN (gevuld door strings.js) en valt terug op het Nederlands. Placeholders
+   als {n} worden daarna ingevuld. De build controleert dat elke PA.t-sleutel
+   een Engelse vertaling heeft. */
+PA.EN = PA.EN || {};
+PA.t = function (tpl, vars) {
+  var s = tpl;
+  if (PA.lang === "en") {
+    var e = PA.EN[tpl];
+    if (e != null) s = e;
+  }
+  if (vars) {
+    for (var k in vars) {
+      if (Object.prototype.hasOwnProperty.call(vars, k)) s = s.split("{" + k + "}").join(vars[k]);
+    }
+  }
+  return s;
+};
+
+/* Taalgevoelige woordenlijsten per taal; gevuld door strings.js. Checks lezen
+   PA.rx("naam") zodat de juiste taalvariant gebruikt wordt. */
+PA.RX = PA.RX || { nl: {}, en: {} };
+PA.rx = function (name) {
+  return (PA.RX[PA.lang] && PA.RX[PA.lang][name]) || PA.RX.nl[name];
+};
 
 /* Registreer een check. Vorm:
    { id, group, label, hint, wcag, run(ctx)->{count,summary}, clear(ctx) } */
@@ -88,6 +118,24 @@ PA.accName = function (el) {
 };
 
 /* ---- kleur / contrast -------------------------------------------------- */
+/* Vage linkteksten, gedeeld door de checks Linkteksten en Alle links.
+   Match altijd op PA.bareText(naam): kleine letters, zonder leestekens en
+   pijltjes aan de randen ("Lees verder »" is net zo vaag als "lees verder"). */
+PA.VAGUE_LINK = /^(lees (meer|verder|hier|dit)|verder lezen|meer (lezen|info|informatie|weten)|klik hier|hier klikken|klik|hier|meer|link|verder|ga verder|bekijk( hier| meer)?|ontdek meer|meer over|info|details|website|download|read (more|on)|click here|here|more( info(rmation)?)?|learn more|see more|view more|continue( reading)?|details|this link)$/;
+
+/* Strip leestekens, pijltjes en spaties aan de randen, maar laat letters uit
+   elk schrift staan (Cyrillisch, Grieks, Arabisch, CJK): "«Новости»" wordt
+   "новости", niet "". Unicode-properties via de RegExp-constructor, met een
+   ruime leestekenlijst als vangnet voor heel oude browsers. */
+PA.bareText = function (s) {
+  s = String(s == null ? "" : s).toLowerCase();
+  try {
+    return s.replace(new RegExp("^[^\\p{L}\\p{N}]+|[^\\p{L}\\p{N}]+$", "gu"), "");
+  } catch (e) {
+    return s.replace(/^[\s"'“”‘’«»‹›.,:;!?()\[\]{}\-–—_/\\|*+~^%$#@&=<>…·•→←]+|[\s"'“”‘’«»‹›.,:;!?()\[\]{}\-–—_/\\|*+~^%$#@&=<>…·•→←]+$/g, "");
+  }
+};
+
 PA.parseColor = function (str) {
   var m = String(str).match(/rgba?\(([^)]+)\)/);
   if (!m) return null;
@@ -194,10 +242,34 @@ PA.addOverlay = function (checkId, el, opts) {
     box.appendChild(chip);
   }
   PA.layer.appendChild(box);
-  var rec = { checkId: checkId, el: el, box: box, chip: chip };
+  var rec = { checkId: checkId, el: el, box: box, chip: chip, status: opts.status || "info" };
   PA.overlays.push(rec);
   PA.positionOne(rec);
   return rec;
+};
+
+/* Bevindingen van een check: alleen de overlays met status warn of error.
+   Gebruikt door de vorige/volgende-navigatie in de check-kaart. */
+PA.findings = function (checkId) {
+  return PA.overlays.filter(function (rec) {
+    return rec.checkId === checkId && (rec.status === "warn" || rec.status === "error");
+  });
+};
+
+/* Scroll naar een element en laat de bijbehorende overlay even pulseren,
+   zodat je ziet welke bevinding bedoeld wordt. */
+PA.jumpTo = function (el, checkId) {
+  var behavior = "smooth";
+  try { if (matchMedia("(prefers-reduced-motion: reduce)").matches) behavior = "auto"; } catch (e) {}
+  try { el.scrollIntoView({ block: "center", behavior: behavior }); } catch (e2) { el.scrollIntoView(); }
+  for (var i = 0; i < PA.overlays.length; i++) {
+    var rec = PA.overlays[i];
+    if (rec.el === el && (!checkId || rec.checkId === checkId)) {
+      rec.box.classList.remove("pa-ov--pulse");
+      void rec.box.offsetWidth; /* forceer reflow zodat de animatie herstart */
+      rec.box.classList.add("pa-ov--pulse");
+    }
+  }
 };
 
 PA.positionOne = function (rec) {
@@ -333,6 +405,25 @@ PA.STYLE = [
   ".pa-check__summary{padding:0 10px 8px 50px;font-size:12px;font-weight:400;color:#004050}",
   ".pa-check__summary a{color:#A30D4B;font-weight:600}",
   ".pa-check__summary[hidden]{display:none}",
+  /* Vorige/volgende-navigatie langs de bevindingen van een check. */
+  ".pa-check__nav{display:flex;align-items:center;gap:6px;padding:0 10px 8px 50px;font-size:12px}",
+  ".pa-navbtn{appearance:none;border:1px solid #1F2937;background:#fff;color:#1F2937;border-radius:6px;",
+  "padding:2px 8px;font-size:12px;font-weight:700;cursor:pointer}",
+  ".pa-navbtn:hover{background:#f5f5f5}",
+  ".pa-navbtn:focus-visible{outline:3px solid #004050;outline-offset:1px}",
+  ".pa-check__count{color:#004050;font-weight:600}",
+  /* Klikbare lijst met resultaten in het paneel (res.items van een check). */
+  ".pa-check__list{list-style:none;margin:0;padding:0 10px 8px 50px;max-height:220px;overflow:auto}",
+  ".pa-check__list li{margin:2px 0}",
+  ".pa-item{appearance:none;border:0;background:transparent;color:#1F2937;cursor:pointer;text-align:left;",
+  "width:100%;font-size:12px;padding:3px 6px;border-radius:4px;border-left:3px solid #004050}",
+  ".pa-item:hover{background:#f5f5f5}",
+  ".pa-item:focus-visible{outline:3px solid #004050;outline-offset:-2px}",
+  ".pa-item--warn{border-left-color:#b45309}",
+  ".pa-item--error{border-left-color:#A30D4B}",
+  ".pa-check__more{font-size:11px;color:#004050;padding:2px 6px}",
+  ".pa-ov--pulse{animation:pa-pulse 1s ease-out 2}",
+  "@keyframes pa-pulse{0%{box-shadow:0 0 0 3px rgba(163,13,75,.9)}100%{box-shadow:0 0 0 14px rgba(163,13,75,0)}}",
   ".pa-panel__foot{display:flex;gap:8px;padding:8px 10px;border-top:1px solid #e5e7eb}",
   ".pa-btn{appearance:none;border:1px solid #1F2937;background:#fff;color:#1F2937;border-radius:6px;",
   "padding:6px 10px;font-size:12px;font-weight:700;cursor:pointer;flex:1 1 auto}",
@@ -343,12 +434,21 @@ PA.STYLE = [
   ".pa-panel__credit{padding:7px 10px;border-top:1px solid #e5e7eb;font-size:11px;color:#004050;text-align:center;border-radius:0 0 9px 9px}",
   ".pa-panel__credit a{color:#A30D4B;font-weight:700}",
   ".pa-panel__credit a:focus-visible{outline:2px solid #004050;outline-offset:1px}",
+  /* Ingeklapt paneel: alleen de kopbalk blijft over, zodat de pagina
+     eronder bereikbaar is. De uitklapknop zit in de kop. */
+  ".pa-panel--min{width:auto;min-width:210px;max-height:none}",
+  ".pa-panel--min .pa-tabs,.pa-panel--min .pa-panel__body,.pa-panel--min .pa-panel__foot,.pa-panel--min .pa-panel__credit{display:none}",
+  ".pa-panel--min .pa-panel__head{border-radius:9px}",
   /* Compacte weergave bij kleine viewports of hoge browser-zoom (WCAG 1.4.4
-     tekst 200% en 1.4.10 reflow op 320 CSS px). Paneel wordt bijna-fullscreen
-     zodat de check-lijst zichtbaar blijft; de credit-regel wordt weggelaten
-     om verticale ruimte terug te winnen. */
+     tekst 200% en 1.4.10 reflow op 320 CSS px). Het paneel dokt onderaan en
+     laat de bovenste helft van de pagina vrij; de kop wordt compacter en de
+     credit-regel verdwijnt om verticale ruimte terug te winnen. */
   "@media (max-width:520px),(max-height:520px){",
-  ".pa-panel{top:8px;right:8px;bottom:8px;left:8px;width:auto;max-height:none}",
+  ".pa-panel{top:auto;right:8px;bottom:8px;left:8px;width:auto;max-height:55vh}",
+  ".pa-panel__head{padding:5px 8px}",
+  ".pa-panel__title{font-size:13px}",
+  ".pa-panel__role{display:none}",
+  ".pa-tab{padding:5px 4px;font-size:11px}",
   ".pa-panel__credit{display:none}",
   ".pa-picker{left:8px;right:8px;bottom:8px;width:auto;max-width:none}",
   "}",
@@ -371,7 +471,7 @@ PA.STYLE = [
   ".pa-picker__mark--ok{color:#004050}",
   ".pa-picker__mark--fail{color:#A30D4B}",
   ".pa-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}",
-  "@media (prefers-reduced-motion: reduce){*{transition:none!important}}"
+  "@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}"
 ].join("");
 
 PA.ctx = function (id) {
@@ -397,24 +497,98 @@ PA.toggle = function (id, checkEl) {
     if (check.clear) try { check.clear(ctx); } catch (e) {}
     PA.clearOverlays(id);
     st.on = false;
+    st.nav = null;
     checkEl.classList.remove("pa-check--on");
     checkEl.querySelector(".pa-check__btn").setAttribute("aria-pressed", "false");
     summaryEl.hidden = true;
-    PA.announce(check.label + " uitgezet.");
+    var oldNav = checkEl.querySelector(".pa-check__nav");
+    if (oldNav) oldNav.parentNode.removeChild(oldNav);
+    var oldList = checkEl.querySelector(".pa-check__list");
+    if (oldList) oldList.parentNode.removeChild(oldList);
+    PA.announce(PA.t("{label} uitgezet.", { label: PA.t(check.label) }));
   } else {
     var res = {};
-    try { res = check.run(ctx) || {}; } catch (e) { res = { summary: "Kon deze check niet uitvoeren." }; }
+    try { res = check.run(ctx) || {}; } catch (e) { res = { summary: PA.t("Kon deze check niet uitvoeren.") }; }
     st.on = true;
     checkEl.classList.add("pa-check--on");
     checkEl.querySelector(".pa-check__btn").setAttribute("aria-pressed", "true");
-    var html = res.summary ? PA.esc(res.summary) : "Geen problemen gevonden.";
-    if (check.wcag) {
+    var html = res.summary ? PA.esc(res.summary) : PA.t("Geen problemen gevonden.");
+    if (check.wcag && PA.lang === "nl") {
       html += ' <a href="' + PA.baseURL + check.wcag + '" target="_blank" rel="noopener">Meer uitleg</a>';
     }
     summaryEl.innerHTML = html;
     summaryEl.hidden = false;
-    PA.announce(check.label + ": " + (res.summary || "geen problemen gevonden") + ".");
+    PA.renderNav(id, checkEl, st);
+    if (res.items && res.items.length) PA.renderItems(id, checkEl, res.items);
+    PA.announce(PA.t(check.label) + ": " + (res.summary || PA.t("geen problemen gevonden")) + ".");
   }
+};
+
+/* Vorige/volgende-knoppen langs de bevindingen (warn/error-overlays) van een
+   check, met teller. Beantwoordt de vraag "x elementen voldoen niet, maar
+   wélke?": de knoppen scrollen naar elke bevinding en laten hem pulseren. */
+PA.renderNav = function (id, checkEl, st) {
+  var findings = PA.findings(id);
+  if (!findings.length) return;
+  st.nav = null;
+  var nav = document.createElement("div");
+  nav.className = "pa-check__nav";
+  var counter = document.createElement("span");
+  counter.className = "pa-check__count";
+  counter.setAttribute("aria-live", "polite");
+  counter.textContent = findings.length === 1 ? PA.t("1 bevinding") : PA.t("{n} bevindingen", { n: findings.length });
+  function go(delta) {
+    var list = PA.findings(id);
+    if (!list.length) return;
+    if (st.nav == null) st.nav = delta > 0 ? 0 : list.length - 1;
+    else st.nav = (st.nav + delta + list.length) % list.length;
+    var rec = list[st.nav];
+    PA.jumpTo(rec.el, id);
+    counter.textContent = PA.t("{i} van {n}", { i: st.nav + 1, n: list.length });
+    PA.announce(PA.t("Bevinding {i} van {n}", { i: st.nav + 1, n: list.length }) + (rec.chip ? ": " + rec.chip.textContent : "") + ".");
+  }
+  var prev = document.createElement("button");
+  prev.className = "pa-navbtn";
+  prev.type = "button";
+  prev.setAttribute("aria-label", PA.t("Vorige bevinding"));
+  prev.innerHTML = "&#8249; " + PA.esc(PA.t("Vorige"));
+  prev.addEventListener("click", function () { go(-1); });
+  var next = document.createElement("button");
+  next.className = "pa-navbtn";
+  next.type = "button";
+  next.setAttribute("aria-label", PA.t("Volgende bevinding"));
+  next.innerHTML = PA.esc(PA.t("Volgende")) + " &#8250;";
+  next.addEventListener("click", function () { go(1); });
+  nav.appendChild(prev);
+  nav.appendChild(next);
+  nav.appendChild(counter);
+  checkEl.appendChild(nav);
+};
+
+/* Klikbare resultatenlijst in het paneel. Een check levert items aan als
+   {label, el, status}; klikken scrolt naar het element op de pagina. */
+PA.MAX_LIST_ITEMS = 150;
+
+PA.renderItems = function (id, checkEl, items) {
+  var listEl = document.createElement("ul");
+  listEl.className = "pa-check__list";
+  items.slice(0, PA.MAX_LIST_ITEMS).forEach(function (item) {
+    var li = document.createElement("li");
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "pa-item pa-item--" + (item.status || "info");
+    b.textContent = item.label;
+    b.addEventListener("click", function () { PA.jumpTo(item.el, id); });
+    li.appendChild(b);
+    listEl.appendChild(li);
+  });
+  if (items.length > PA.MAX_LIST_ITEMS) {
+    var more = document.createElement("li");
+    more.className = "pa-check__more";
+    more.textContent = PA.t("… en nog {n} meer (niet getoond)", { n: items.length - PA.MAX_LIST_ITEMS });
+    listEl.appendChild(more);
+  }
+  checkEl.appendChild(listEl);
 };
 
 PA.resetAll = function () {
@@ -424,7 +598,7 @@ PA.resetAll = function () {
       if (el) PA.toggle(id, el);
     }
   });
-  PA.announce("Alle checks uitgezet.");
+  PA.announce(PA.t("Alle checks uitgezet."));
 };
 
 PA.destroy = function () {
@@ -470,15 +644,19 @@ PA.renderBody = function () {
   var body = PA.body;
   body.textContent = "";
   var lastGroup = null;
-  PA.tabs[PA.activeTab].order.forEach(function (id) {
+  var tab = PA.tabs[PA.activeTab];
+  tab.order.forEach(function (id) {
     var check = PA.checks[id];
     if (!check) return;
-    if (check.group && check.group !== lastGroup) {
+    /* Groepskopje: een check kan op meerdere tabs staan en daar in een andere
+       groep horen. tab.groups[id] gaat daarom vóór check.group. */
+    var group = (tab.groups && tab.groups[id]) || check.group;
+    if (group && group !== lastGroup) {
       var gl = document.createElement("div");
       gl.className = "pa-group__label";
-      gl.textContent = check.group;
+      gl.textContent = PA.t(group);
       body.appendChild(gl);
-      lastGroup = check.group;
+      lastGroup = group;
     }
     var wrap = document.createElement("div");
     wrap.className = "pa-check";
@@ -489,7 +667,7 @@ PA.renderBody = function () {
     btn.setAttribute("aria-pressed", "false");
     btn.innerHTML =
       '<span class="pa-sw" aria-hidden="true"></span>' +
-      '<span class="pa-check__name">' + PA.esc(check.label) + "</span>";
+      '<span class="pa-check__name">' + PA.esc(PA.t(check.label)) + "</span>";
     btn.addEventListener("click", function () { PA.toggle(id, wrap); });
     wrap.appendChild(btn);
     var summary = document.createElement("div");
@@ -516,7 +694,7 @@ PA.selectTab = function (index) {
   PA.roleEl.textContent = PA.tabs[index].role;
   PA.body.setAttribute("aria-labelledby", "pa-tab-" + PA.tabs[index].key);
   PA.renderBody();
-  PA.announce("Tabblad " + PA.tabs[index].label + " geopend.");
+  PA.announce(PA.t("Tabblad {label} geopend.", { label: PA.t(PA.tabs[index].label) }));
 };
 
 PA.build = function () {
@@ -550,18 +728,41 @@ PA.build = function () {
 
   var head = document.createElement("div");
   head.className = "pa-panel__head";
-  head.title = "Sleep om het paneel te verplaatsen";
+  head.title = PA.t("Sleep om het paneel te verplaatsen");
   head.innerHTML =
     '<span class="pa-panel__logo" aria-hidden="true"></span>' +
     '<h2 class="pa-panel__title">WCAG Radar' +
     '<span class="pa-panel__role"></span></h2>' +
     '<span class="pa-panel__grip" aria-hidden="true">⁙</span>';
   PA.roleEl = head.querySelector(".pa-panel__role");
-  PA.roleEl.textContent = PA.tabs[PA.activeTab].role;
+  PA.roleEl.textContent = PA.t(PA.tabs[PA.activeTab].role);
+  /* Inklappen: bij hoge zoom of kleine schermen dekt het paneel anders de
+     pagina af. Ingeklapt blijft alleen de kopbalk over; checks blijven actief. */
+  var minBtn = document.createElement("button");
+  minBtn.className = "pa-iconbtn";
+  minBtn.type = "button";
+  minBtn.setAttribute("aria-label", PA.t("Paneel inklappen"));
+  minBtn.setAttribute("aria-expanded", "true");
+  minBtn.innerHTML = "&#8211;";
+  minBtn.addEventListener("click", function () {
+    var min = panel.className.indexOf("pa-panel--min") !== -1;
+    if (min) {
+      panel.className = "pa-panel";
+      minBtn.setAttribute("aria-label", PA.t("Paneel inklappen"));
+      minBtn.setAttribute("aria-expanded", "true");
+      minBtn.innerHTML = "&#8211;";
+    } else {
+      panel.className = "pa-panel pa-panel--min";
+      minBtn.setAttribute("aria-label", PA.t("Paneel uitklappen"));
+      minBtn.setAttribute("aria-expanded", "false");
+      minBtn.innerHTML = "&#43;";
+    }
+  });
+  head.appendChild(minBtn);
   var close = document.createElement("button");
   close.className = "pa-iconbtn";
   close.type = "button";
-  close.setAttribute("aria-label", "Lens sluiten");
+  close.setAttribute("aria-label", PA.t("Lens sluiten"));
   close.innerHTML = "&times;";
   close.addEventListener("click", PA.destroy);
   head.appendChild(close);
@@ -571,7 +772,7 @@ PA.build = function () {
   var tablist = document.createElement("div");
   tablist.className = "pa-tabs";
   tablist.setAttribute("role", "tablist");
-  tablist.setAttribute("aria-label", "Kies een rol");
+  tablist.setAttribute("aria-label", PA.t("Kies een rol"));
   PA.tabButtons = [];
   PA.tabs.forEach(function (tab, i) {
     var t = document.createElement("button");
@@ -582,7 +783,7 @@ PA.build = function () {
     t.setAttribute("aria-controls", "pa-tabpanel");
     t.setAttribute("aria-selected", i === PA.activeTab ? "true" : "false");
     t.setAttribute("tabindex", i === PA.activeTab ? "0" : "-1");
-    t.textContent = tab.label;
+    t.textContent = PA.t(tab.label);
     t.addEventListener("click", function () { PA.selectTab(i); });
     tablist.appendChild(t);
     PA.tabButtons.push(t);
@@ -612,14 +813,14 @@ PA.build = function () {
   var resetBtn = document.createElement("button");
   resetBtn.className = "pa-btn";
   resetBtn.type = "button";
-  resetBtn.textContent = "Alles resetten";
+  resetBtn.textContent = PA.t("Alles resetten");
   resetBtn.addEventListener("click", PA.resetAll);
   var auditBtn = document.createElement("a");
   auditBtn.className = "pa-btn pa-btn--primary";
-  auditBtn.href = PA.baseURL + "/diensten/offerte-wcag-onderzoek/";
+  auditBtn.href = PA.baseURL + (PA.lang === "en" ? "/en/contact/" : "/diensten/offerte-wcag-onderzoek/");
   auditBtn.target = "_blank";
   auditBtn.rel = "noopener";
-  auditBtn.textContent = "Laat het een expert checken";
+  auditBtn.textContent = PA.t("Laat het een expert checken");
   foot.appendChild(resetBtn);
   foot.appendChild(auditBtn);
   panel.appendChild(foot);
@@ -627,7 +828,9 @@ PA.build = function () {
   var credit = document.createElement("div");
   credit.className = "pa-panel__credit";
   credit.innerHTML =
-    'Een gratis tool op <a href="https://testtoegankelijkheid.nl" target="_blank" rel="noopener">testtoegankelijkheid.nl</a>, een initiatief van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">Proper Access</a>.';
+    PA.lang === "en"
+      ? 'A free tool by <a href="' + PA.baseURL + '/en/" target="_blank" rel="noopener">Proper Access</a>.'
+      : 'Een gratis tool op <a href="https://testtoegankelijkheid.nl" target="_blank" rel="noopener">testtoegankelijkheid.nl</a>, een initiatief van <a href="' + PA.baseURL + '" target="_blank" rel="noopener">Proper Access</a>.';
   panel.appendChild(credit);
 
   root.appendChild(panel);
