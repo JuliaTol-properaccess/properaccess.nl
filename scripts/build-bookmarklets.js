@@ -28,7 +28,7 @@ const OUT_BUNDLES = path.join(__dirname, "..", "tools", "lens-loader", "bundles.
    want dat zit nog in bookmarks die vóór 6-7-2026 zijn gesleept. */
 const LOADER_BASE = "https://tools.properaccess.nl";
 
-const SHARED = ["core.js", "checks-content.js", "checks-dev.js", "checks-design.js"];
+const SHARED = ["core.js", "strings.js", "checks-content.js", "checks-dev.js", "checks-design.js"];
 
 /* Sinds de tab-merge is er nog één bundle: één paneel met drie tabbladen
    (Redactie / Designer / Developer), gedefinieerd in boot-lens.js. */
@@ -77,22 +77,59 @@ function buildBundle() {
 }
 
 /* Kleine loader-bookmarklet. Bestaat de lens al op de pagina, dan togglet
-   hij open/dicht; anders haalt hij het script bij de Worker op. */
-function loaderCode(version) {
+   hij open/dicht; anders haalt hij het script bij de Worker op. De Engelse
+   variant zet eerst window.__paLensLang="en": dezelfde bundle, Engelse UI. */
+const LOAD_ERROR = {
+  nl: "WCAG Radar kon niet laden. Sommige websites (zoals Google Docs en sommige webshops) blokkeren externe scripts met een Content Security Policy; daar kan de Radar niet werken. Werkt het op andere pagina's ook niet? Controleer dan je internetverbinding.",
+  en: "WCAG Radar could not load. Some websites (such as Google Docs and some webshops) block external scripts with a Content Security Policy; the Radar cannot run there. Not working on other pages either? Then check your internet connection.",
+};
+
+function loaderCode(version, lang) {
   const src = LOADER_BASE + "/l/lens.js?v=" + version;
   const js =
     "(function(){" +
+    (lang === "en" ? 'window.__paLensLang="en";' : "") +
     "var P=window.__paLens;" +
     "if(P&&P.start){P.start();return;}" +
     'var s=document.createElement("script");' +
     's.src="' + src + '";' +
-    's.onerror=function(){window.alert("WCAG Radar kon niet laden. Controleer je internetverbinding of probeer een andere pagina.");};' +
+    "s.onerror=function(){window.alert(" + JSON.stringify(LOAD_ERROR[lang] || LOAD_ERROR.nl) + ");};" +
     "(document.head||document.documentElement).appendChild(s);" +
     "})();";
   return "javascript:" + encodeURIComponent(js);
 }
 
+/* Vertaalguard: elke PA.t-sleutel en elk check-label en elke groepsnaam moet
+   een Engelse vertaling hebben in strings.js. Zo kan een nieuwe of gewijzigde
+   Nederlandse tekst nooit stilletjes onvertaald live gaan. */
+function checkTranslations() {
+  const stringsSrc = read("strings.js");
+  const PA = {};
+  eval(stringsSrc);
+  const en = PA.EN || {};
+  const missing = [];
+  const files = SHARED.concat([BOOT]).filter((f) => f !== "strings.js");
+  for (const f of files) {
+    const src = read(f);
+    const seen = new Set();
+    let m;
+    const reT = /PA\.t\(\s*"((?:[^"\\]|\\.)*)"/g;
+    while ((m = reT.exec(src))) seen.add(JSON.parse('"' + m[1] + '"'));
+    const reLabel = /^\s*(?:label|group):\s*"((?:[^"\\]|\\.)*)"/gm;
+    while ((m = reLabel.exec(src))) seen.add(JSON.parse('"' + m[1] + '"'));
+    for (const key of seen) {
+      if (!(key in en)) missing.push(f + ": " + key);
+    }
+  }
+  if (missing.length) {
+    console.error("FOUT: ontbrekende Engelse vertalingen (" + missing.length + "):");
+    missing.forEach((k) => console.error("  - " + k));
+    process.exit(1);
+  }
+}
+
 function main() {
+  checkTranslations();
   const bundle = buildBundle();
   const bundles = { lens: bundle };
 
@@ -108,14 +145,22 @@ function main() {
   fs.mkdirSync(path.dirname(OUT_BUNDLES), { recursive: true });
   fs.writeFileSync(OUT_BUNDLES, bundlesModule, "utf8");
 
-  /* 2. Loader-bookmarklet voor de pagina. */
-  const code = loaderCode(version);
+  /* 2. Loader-bookmarklets voor de pagina's: lens (NL, /tools/wcag-radar/)
+        en lens-en (EN, /en/tools/wcag-radar/). */
+  const code = loaderCode(version, "nl");
+  const codeEn = loaderCode(version, "en");
   const data = {
     lens: {
       title: "WCAG Radar",
       slug: "wcag-radar",
       href: code,
       code: code,
+    },
+    "lens-en": {
+      title: "WCAG Radar",
+      slug: "wcag-radar",
+      href: codeEn,
+      code: codeEn,
     },
   };
   fs.mkdirSync(path.dirname(OUT_DATA), { recursive: true });
