@@ -41,14 +41,6 @@ EXCLUDE = {"report_template", "pnh", "202512_videospelers"}
 # Wachtwoord-beveiligde rapporten tonen alleen een gate-pagina. Titel + datum
 # hier handmatig bijhouden (zelfde tekst als op de kaart hoort te staan).
 OVERRIDES: dict[str, tuple[str, str]] = {
-    "202604_crisp_android": (
-        "Audit digitale toegankelijkheid van de Crisp Android-app",
-        "4 mei 2026",
-    ),
-    "202604_crisp_ios": (
-        "Audit digitale toegankelijkheid van de Crisp iOS-app",
-        "4 mei 2026",
-    ),
     "202606_fly2houston.com": (
         "Accessibility evaluation of the website www.fly2houston.com, limited scope",
         "June 27, 2026",
