@@ -16450,3 +16450,478 @@ html.dark .lens-hero__bar--sub {
 html.dark .contrast-voorbeeld__swatch {
   border-color: #4B5563;
 }
+
+/* ============================================================
+   WCAG RADAR-PAGINA (layouts/tools/bookmarklet-install.html)
+   Money-page-opbouw: hero, garanties, tabgroep, rolsecties.
+   ============================================================ */
+
+/* ─── Hero ─── */
+.rad-hero {
+  padding: 3rem 0 4rem;
+}
+
+.rad-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.rad-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.rad-hero__visual {
+  max-width: 100%;
+}
+
+.rad-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Installatieblok in de hero ─── */
+.rad-install {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.rad-install__step {
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 0.875rem;
+}
+
+.rad-install__drag {
+  cursor: grab;
+}
+
+.rad-install__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.rad-install__hint {
+  font-size: 0.9rem;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0.875rem 0 0;
+}
+
+.rad-install__manual {
+  margin-top: 1.25rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+}
+
+.rad-install__manual > summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #004050;
+  font-size: 0.9rem;
+}
+
+.rad-install__manual > summary:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+.rad-install__manual-body {
+  padding-top: 1rem;
+}
+
+.rad-install__steps {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  list-style: decimal;
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.rad-install__code-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #1F2937;
+  margin-bottom: 0.375rem;
+}
+
+.rad-install__code {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  padding: 0.625rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #f5f5f5;
+  color: #1F2937;
+  resize: vertical;
+}
+
+.rad-install__copy {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ─── Garanties ─── */
+.rad-promise {
+  background: #1F2937;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.rad-promise__heading {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin: 0 0 2rem;
+}
+
+.rad-promise__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rad-promise__item {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.rad-promise__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.rad-promise__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.rad-promise__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.rad-promise__text {
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.rad-promise__version {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding-top: 0.875rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.rad-promise__version-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #d1d5db;
+}
+
+.rad-promise__version code,
+.rad-promise__note code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.375rem;
+}
+
+.rad-promise__note {
+  margin: 1.75rem 0 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+/* ─── Checks met tabbladen ─── */
+.rad-checks {
+  padding: 4.5rem 0;
+}
+
+.rad-checks__heading {
+  margin: 0 0 0.75rem;
+}
+
+.rad-checks__intro {
+  max-width: 42rem;
+  margin: 0 0 2rem;
+}
+
+.rad-checks__intro p {
+  color: #4B5563;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.rad-checks__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.rad-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.rad-tabs__tab {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+  background: #f5f5f5;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  padding: 0.875rem 1.75rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.rad-tabs__tab:hover {
+  background: #e9e9e9;
+}
+
+.rad-tabs__tab[aria-selected="true"] {
+  background: #A30D4B;
+  color: #fff;
+}
+
+.rad-tabs__tab:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 2px;
+}
+
+.rad-tabs__panel:focus-visible {
+  outline: 3px solid #004050;
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
+/* Zonder JavaScript staan de panelen onder elkaar met hun eigen kop. */
+.rad-tabs__panel + .rad-tabs__panel {
+  margin-top: 3rem;
+}
+
+.rad-tabs--ready .rad-tabs__panel + .rad-tabs__panel {
+  margin-top: 0;
+}
+
+.rad-tabs__panel-heading {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 1.25rem;
+}
+
+.rad-checks__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rad-check {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rad-check__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 0.625rem;
+  padding-left: 1rem;
+  border-left: 3px solid #A30D4B;
+}
+
+.rad-check__text {
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.rad-check__link {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rad-check__link:hover {
+  color: #A30D4B;
+}
+
+.rad-check__link:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* ─── Rolsecties (50/50) ─── */
+.rad-role {
+  padding: 4.5rem 0;
+}
+
+.rad-role--light {
+  background: #f5f5f5;
+}
+
+.rad-role__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.rad-role__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.rad-role__eyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #A30D4B;
+}
+
+.rad-role__body p {
+  color: #374151;
+  line-height: 1.8;
+  margin: 0 0 1rem;
+}
+
+.rad-role__body p:last-child {
+  margin-bottom: 0;
+}
+
+.rad-role__body strong {
+  color: #1F2937;
+}
+
+.rad-role__link {
+  margin-top: 0.5rem;
+}
+
+.rad-role__visual {
+  max-width: 100%;
+}
+
+/* ─── Waarom een radar ─── */
+.rad-why {
+  padding: 4.5rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.rad-why__inner {
+  max-width: 44rem;
+}
+
+.rad-why__inner h2 {
+  margin: 0 0 1.25rem;
+}
+
+.rad-why__inner p {
+  color: #374151;
+  line-height: 1.8;
+  margin: 0 0 1rem;
+}
+
+.rad-why__inner p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Responsive ─── */
+@media (min-width: 640px) {
+  .rad-promise__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rad-checks__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .rad-hero__grid,
+  .rad-role__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .rad-promise__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .rad-checks__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rad-role--reverse .rad-role__visual {
+    order: -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rad-tabs__tab {
+    transition: none;
+  }
+}

@@ -1,0 +1,61 @@
+{{/* Rolsectie Developer: tabvolgorde, ARIA-referenties en toegankelijke namen. Decoratief. */}}
+{{ $nl := eq $.Lang "nl" }}
+{{ $t0 := cond $nl "TABVOLGORDE" "TAB ORDER" }}
+{{ $t1 := cond $nl "ARIA-REFERENTIES" "ARIA REFERENCES" }}
+{{ $t2 := cond $nl "TOEGANKELIJKE NAAM" "ACCESSIBLE NAME" }}
+{{ $t3 := cond $nl "id bestaat niet" "id does not exist" }}
+{{ $t4 := cond $nl "knop zonder naam" "button without a name" }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="rad-svg">
+  <rect x="0" y="0" width="400" height="300" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Tabvolgorde -->
+  <text x="24" y="34" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t0 }}</text>
+
+  <path d="M52 62 L152 62 L152 106 L52 106" stroke="#004050" stroke-width="1.4" stroke-dasharray="4 3" fill="none"/>
+  <path d="M52 106 L292 106" stroke="#A30D4B" stroke-width="1.4" stroke-dasharray="4 3" fill="none"/>
+
+  <rect x="24" y="48" width="80" height="28" rx="6" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="34" y="58" width="46" height="8" rx="4" fill="#1F2937" opacity="0.6"/>
+  <circle cx="26" cy="50" r="10" fill="#004050"/>
+  <text x="23" y="54" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="800">1</text>
+
+  <rect x="128" y="48" width="80" height="28" rx="6" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="138" y="58" width="46" height="8" rx="4" fill="#1F2937" opacity="0.6"/>
+  <circle cx="130" cy="50" r="10" fill="#004050"/>
+  <text x="127" y="54" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="800">2</text>
+
+  <rect x="24" y="92" width="80" height="28" rx="6" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="34" y="102" width="46" height="8" rx="4" fill="#1F2937" opacity="0.6"/>
+  <circle cx="26" cy="94" r="10" fill="#004050"/>
+  <text x="23" y="98" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="800">3</text>
+
+  <!-- Positieve tabindex, springt voor -->
+  <rect x="264" y="92" width="112" height="28" rx="6" fill="#A30D4B" opacity="0.08"/>
+  <rect x="264" y="92" width="112" height="28" rx="6" stroke="#A30D4B" stroke-width="1.4"/>
+  <text x="276" y="110" fill="#A30D4B" font-family="monospace" font-size="9" font-weight="700">tabindex="5"</text>
+  <circle cx="266" cy="94" r="10" fill="#A30D4B"/>
+  <text x="263" y="98" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="800">4</text>
+
+  <!-- ARIA-referenties -->
+  <text x="24" y="152" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t1 }}</text>
+
+  <rect x="24" y="162" width="352" height="34" rx="6" fill="#1F2937"/>
+  <text x="38" y="183" fill="#9ca3af" font-family="monospace" font-size="9">&lt;<tspan fill="#e5e7eb">button</tspan> <tspan fill="#f0a8c4">aria-controls</tspan>=<tspan fill="#8fd6c0">"paneel-2"</tspan>&gt;</text>
+  <rect x="290" y="170" width="74" height="18" rx="9" fill="#A30D4B"/>
+  <text x="298" y="183" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">{{ $t3 }}</text>
+
+  <rect x="24" y="204" width="352" height="34" rx="6" fill="#1F2937"/>
+  <text x="38" y="225" fill="#9ca3af" font-family="monospace" font-size="9">&lt;<tspan fill="#e5e7eb">div</tspan> <tspan fill="#f0a8c4">role</tspan>=<tspan fill="#8fd6c0">"tabpanel"</tspan> <tspan fill="#f0a8c4">id</tspan>=<tspan fill="#8fd6c0">"paneel-1"</tspan>&gt;</text>
+  <circle cx="352" cy="221" r="9" fill="#004050"/>
+  <path d="M348 221 l3 3 5-6" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Toegankelijke naam -->
+  <text x="24" y="266" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t2 }}</text>
+
+  <rect x="152" y="256" width="34" height="34" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <circle cx="167" cy="271" r="6" stroke="#1F2937" stroke-width="1.8"/>
+  <path d="M172 276 l6 6" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="194" y="262" width="182" height="22" rx="11" fill="#A30D4B" opacity="0.1"/>
+  <rect x="194" y="262" width="182" height="22" rx="11" stroke="#A30D4B" stroke-width="1.3"/>
+  <text x="206" y="277" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t4 }}</text>
+</svg>

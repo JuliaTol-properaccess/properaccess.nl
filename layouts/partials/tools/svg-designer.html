@@ -1,0 +1,73 @@
+{{/* Rolsectie Designer: contrastmeting, focusrand, doelgrootte en grijswaarden. Decoratief. */}}
+{{ $nl := eq $.Lang "nl" }}
+{{ $t0 := cond $nl "TEKSTCONTRAST" "TEXT CONTRAST" }}
+{{ $t1 := cond $nl "voldoet" "passes" }}
+{{ $t2 := cond $nl "te weinig" "too low" }}
+{{ $t3 := cond $nl "FOCUS ZICHTBAAR" "FOCUS VISIBLE" }}
+{{ $t4 := cond $nl "Verstuur" "Submit" }}
+{{ $t5 := cond $nl "DOELGROOTTE" "TARGET SIZE" }}
+{{ $t6 := cond $nl "GRIJSWAARDEN" "GREYSCALE" }}
+{{ $t7 := cond $nl "TEKSTAFSTAND EN 200%" "TEXT SPACING AND 200%" }}
+{{ $t8 := cond $nl "valt weg" "clipped" }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="rad-svg">
+  <rect x="0" y="0" width="400" height="300" rx="12" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Contrastmeter -->
+  <text x="24" y="34" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t0 }}</text>
+
+  <rect x="24" y="44" width="164" height="72" rx="8" fill="#A30D4B"/>
+  <text x="40" y="76" fill="#fff" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="800">Aa</text>
+  <rect x="88" y="60" width="84" height="8" rx="4" fill="#fff" opacity="0.85"/>
+  <rect x="88" y="74" width="60" height="8" rx="4" fill="#fff" opacity="0.55"/>
+  <rect x="40" y="92" width="60" height="16" rx="8" fill="#fff"/>
+  <text x="50" y="104" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="800">8,6 : 1</text>
+  <text x="110" y="104" fill="#fff" font-family="Nunito, sans-serif" font-size="8" font-weight="700">{{ $t1 }}</text>
+
+  <rect x="200" y="44" width="176" height="72" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="216" y="76" fill="#c9c9c9" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="800">Aa</text>
+  <rect x="264" y="60" width="84" height="8" rx="4" fill="#d8d8d8"/>
+  <rect x="264" y="74" width="60" height="8" rx="4" fill="#e2e2e2"/>
+  <rect x="216" y="92" width="60" height="16" rx="8" fill="#A30D4B"/>
+  <text x="226" y="104" fill="#fff" font-family="Nunito, sans-serif" font-size="9" font-weight="800">1,9 : 1</text>
+  <text x="286" y="104" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="8" font-weight="700">{{ $t2 }}</text>
+
+  <!-- Pipet -->
+  <g transform="translate(348 32)">
+    <circle cx="0" cy="0" r="14" fill="#1F2937"/>
+    <path d="M-5 5 l7-7 M2 -2 l4-4 a2.8 2.8 0 1 1 4 4 l-4 4 M-5 5 l-1 3 3-1" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Focusrand -->
+  <text x="24" y="152" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t3 }}</text>
+  <rect x="24" y="162" width="112" height="38" rx="19" fill="#A30D4B"/>
+  <text x="52" y="186" fill="#fff" font-family="Nunito, sans-serif" font-size="11" font-weight="700">{{ $t4 }}</text>
+  <rect x="18" y="156" width="124" height="50" rx="25" stroke="#004050" stroke-width="3"/>
+  <rect x="14" y="152" width="132" height="58" rx="29" stroke="#004050" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+
+  <!-- Doelgrootte -->
+  <text x="170" y="152" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t5 }}</text>
+  <rect x="170" y="162" width="44" height="44" rx="8" fill="#f5f5f5" stroke="#004050" stroke-width="1.4"/>
+  <circle cx="192" cy="184" r="9" fill="#004050"/>
+  <text x="174" y="220" fill="#004050" font-family="Nunito, sans-serif" font-size="8" font-weight="700">44 px</text>
+
+  <rect x="230" y="174" width="20" height="20" rx="5" fill="#f5f5f5" stroke="#A30D4B" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <circle cx="240" cy="184" r="5" fill="#A30D4B"/>
+  <text x="228" y="220" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="8" font-weight="700">20 px</text>
+
+  <!-- Grijswaarden -->
+  <text x="286" y="152" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t6 }}</text>
+  <rect x="286" y="162" width="44" height="44" rx="8" fill="#A30D4B"/>
+  <rect x="332" y="162" width="44" height="44" rx="8" fill="#8f8f8f"/>
+  <path d="M330 184 h14 M340 179 l5 5 -5 5" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tekstafstand en vergroting -->
+  <text x="24" y="246" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ $t7 }}</text>
+  <rect x="24" y="256" width="150" height="6" rx="3" fill="#e5e7eb"/>
+  <rect x="24" y="268" width="120" height="6" rx="3" fill="#e5e7eb"/>
+  <rect x="24" y="280" width="136" height="6" rx="3" fill="#e5e7eb"/>
+
+  <rect x="196" y="252" width="180" height="40" rx="6" fill="#f5f5f5" stroke="#A30D4B" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <rect x="206" y="260" width="130" height="9" rx="4" fill="#1F2937" opacity="0.75"/>
+  <rect x="206" y="275" width="180" height="9" rx="4" fill="#1F2937" opacity="0.75"/>
+  <text x="344" y="248" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="8" font-weight="700">{{ $t8 }}</text>
+</svg>

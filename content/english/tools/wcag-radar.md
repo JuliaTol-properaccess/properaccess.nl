@@ -27,6 +27,41 @@ keywords:
   - resize text test
   - make focus visible
   - accessibility bookmarklet
+hero_sub: "A free button in your bookmarks bar that shows how any page is doing on accessibility. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The radar runs entirely in your browser: nothing is sent and nothing is stored."
+rollen:
+  - eyebrow: "For web editors"
+    titel: "The checks you run every week, in one click"
+    svg: "redactie"
+    tekst: |
+      As an editor you work in the CMS, not in the code. Yet your work decides a large part of the accessibility: the alt text, the heading structure, the link text, the tables. That is exactly where things go wrong most often.
+
+      Our ambition for the Editors tab is straightforward: make the checks you should be doing anyway so easy that you actually do them. No source code to read, no developer to ask. You click the radar and see at once which image has no alt text, where a heading level is skipped and which link is called "read more".
+
+      The radar does not judge for you. With alt text it shows you what is there; you decide whether it fits the image. That is precisely the part an automated scanner can never do for you.
+    link: "/en/blog/"
+    link_tekst: "Read more on our blog"
+  - eyebrow: "For designers"
+    titel: "Check contrast, focus and target size without a plugin"
+    svg: "designer"
+    tekst: |
+      In your design tool everything looks fine. In the browser it comes down to the real colours, the real fonts and the real behaviour when someone zooms. You want to get at that, including on a page that is not finished yet.
+
+      Our ambition for the Designer tab is to bring the checks you normally spread across three tools into one place. Measure contrast with the two eyedroppers, drop the page to greyscale, force a visible focus ring, mark tap targets smaller than 24 pixels and push the text to 200% to see whether your layout holds.
+
+      There is nothing to install and your design does not have to be online. The radar works just as well on a staging environment or on localhost.
+    link: "/en/blog/"
+    link_tekst: "Read more on our blog"
+  - eyebrow: "For developers"
+    titel: "Faster than opening the inspector"
+    svg: "developer"
+    tekst: |
+      You know what to look for. What costs time is the digging: which button exactly has no accessible name, does that aria-controls point at an id that exists, and in what order does focus actually travel?
+
+      Our ambition for the Developer tab is to answer those questions before you open the inspector. The radar numbers every focusable element in tab order and flags positive tabindex values as an error. It shows every role and aria attribute and reveals which references point at nothing. On hover you get the tag, id, class, role, accessible name and size of any element.
+
+      Useful while building, and useful when resolving an audit finding: you see straight away whether your fix had the effect you wanted.
+    link: "/en/blog/"
+    link_tekst: "Read more on our blog"
 tabs:
   - label: "Editors"
     checks:
@@ -144,12 +179,6 @@ tabs:
         uitleg: "Measures the contrast of input field borders and of the focus style (WCAG 1.4.11). The Radar briefly focuses each element and warns below 3:1, or when a visible focus style is missing entirely."
 ---
 
-This free tool shows the accessibility of your page live, right in your own browser. Drag it to your bookmarks bar once and click it on any website afterwards, including behind a login or on localhost. Nothing is sent or stored.
+At the top of the panel you switch between three tabs, tuned to what you do. Each tab holds the checks that belong to that role, so you never scroll past things you do not use.
 
-At the top of the panel you switch between three tabs, tuned to what you do:
-
-- **Editors**, for alt text, headings, link text, tables, language, forms and contrast.
-- **Designer**, for contrast, colour use, focus, target size, text spacing and text resizing.
-- **Developer**, for ARIA, accessible names, forms, tab order, focus, contrast and iframes.
-
-When a check finds something, previous/next buttons appear in the panel: use them to jump along every finding on the page. The Radar does not replace a full audit, but it helps you find and fix the most common problems yourself.
+When a check finds something, previous and next buttons appear in the panel. Use them to jump along every finding on the page instead of hunting for them yourself.

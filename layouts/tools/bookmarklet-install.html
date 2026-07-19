@@ -1,122 +1,333 @@
 {{ define "main" }}
 {{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
-<section class="section pt-14">
-  <div class="tool-container">
+{{ $nl := eq .Lang "nl" }}
 
-    <h1 class="mb-2">{{ .Title }}</h1>
+<!-- ─── HERO ─── -->
+<section class="rad-hero">
+  <div class="hp-container">
+    <div class="rad-hero__grid">
+      <div class="rad-hero__text">
+        <span class="hp-hero__badge">{{ if $nl }}Gratis tool{{ else }}Free tool{{ end }}</span>
+        <h1 class="hp-hero__title">{{ .Title }}</h1>
 
-    {{ with .Content }}
-    <div class="tool-seo-content">
-      {{ . }}
-    </div>
-    {{ end }}
+        {{ with .Params.hero_sub }}
+        <p class="hp-hero__subtitle">{{ . | markdownify }}</p>
+        {{ end }}
 
-    {{ with $bm }}
-    <div class="pa-bm">
-      <div class="pa-bm__install">
-        <p class="pa-bm__step">
-          {{ if eq $.Lang "nl" }}Sleep deze knop naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar:{{ end }}
-        </p>
-        {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
-     dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
-     blijft de bookmark leeg. */}}
-        <a class="pa-bm__drag" href="{{ .href | safeURL }}">
-          <span class="pa-bm__drag-dot" aria-hidden="true"></span>
-          {{ $.Title }}
-        </a>
-        <p class="pa-bm__try">
-          {{ if eq $.Lang "nl" }}Je kunt er ook meteen hier op klikken om WCAG Radar op deze pagina te proberen.
-          {{ else }}You can also click it right here to try WCAG Radar on this page.{{ end }}
-        </p>
-        <p class="pa-bm__hint">
-          {{ if eq $.Lang "nl" }}Werkt in Chrome, Edge, Firefox en Safari. Klik daarna op de
-          bladwijzer op elke website om de radar te openen. Klik nogmaals om te sluiten.
-          {{ else }}Works in Chrome, Edge, Firefox and Safari. Then click the bookmark on any
-          website to open the radar. Click again to close.{{ end }}
-        </p>
+        {{ with $bm }}
+        <div class="rad-install">
+          <p class="rad-install__step">
+            {{ if $nl }}Sleep deze knop één keer naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar once:{{ end }}
+          </p>
+          {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
+               dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
+               blijft de bookmark leeg. */}}
+          <a class="hp-btn hp-btn--primary rad-install__drag" href="{{ .href | safeURL }}">
+            <span class="rad-install__dot" aria-hidden="true"></span>
+            {{ $.Title }}
+          </a>
+          <p class="rad-install__hint">
+            {{ if $nl }}Klik hem daarna aan op elke website. Je kunt hem ook nu meteen op deze
+            pagina uitproberen. Werkt in Chrome, Edge, Firefox en Safari.
+            {{ else }}Then click it on any website. You can also try it right here on this page.
+            Works in Chrome, Edge, Firefox and Safari.{{ end }}
+          </p>
+
+          <details class="rad-install__manual">
+            <summary>{{ if $nl }}Slepen lukt niet? Maak de bladwijzer handmatig{{ else }}Can't drag it? Create the bookmark manually{{ end }}</summary>
+            <div class="rad-install__manual-body">
+              <ol class="rad-install__steps">
+                <li>{{ if $nl }}Maak een nieuwe bladwijzer aan met het ster-icoon of met Ctrl&nbsp;+&nbsp;D, op een Mac Cmd&nbsp;+&nbsp;D.{{ else }}Create a new bookmark with the star icon or with Ctrl&nbsp;+&nbsp;D, on a Mac Cmd&nbsp;+&nbsp;D.{{ end }}</li>
+                <li>{{ if $nl }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, for example “{{ $.Title }}”.{{ end }}</li>
+                <li>{{ if $nl }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
+              </ol>
+              <label class="rad-install__code-label" for="pa-bm-code">{{ if $nl }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
+              <textarea id="pa-bm-code" class="rad-install__code" readonly rows="4">{{ .code }}</textarea>
+              <button type="button" class="hp-btn hp-btn--outline rad-install__copy"
+                      data-target="pa-bm-code"
+                      data-done="{{ if $nl }}Gekopieerd{{ else }}Copied{{ end }}">
+                {{ if $nl }}Kopieer de code{{ else }}Copy the code{{ end }}
+              </button>
+            </div>
+          </details>
+        </div>
+        {{ end }}
       </div>
 
-      <details class="pa-bm__manual">
-        <summary>{{ if eq $.Lang "nl" }}Slepen lukt niet? Maak de bladwijzer handmatig{{ else }}Can't drag it? Create the bookmark manually{{ end }}</summary>
-        <ol class="pa-bm__manual-steps">
-          <li>{{ if eq $.Lang "nl" }}Maak een nieuwe bladwijzer aan (ster-icoon of Ctrl/Cmd&nbsp;+&nbsp;D).{{ else }}Create a new bookmark (star icon or Ctrl/Cmd&nbsp;+&nbsp;D).{{ end }}</li>
-          <li>{{ if eq $.Lang "nl" }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, e.g. “{{ $.Title }}”.{{ end }}</li>
-          <li>{{ if eq $.Lang "nl" }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
-        </ol>
-        <label class="pa-bm__code-label" for="pa-bm-code">{{ if eq $.Lang "nl" }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
-        <textarea id="pa-bm-code" class="pa-bm__code" readonly rows="4">{{ .code }}</textarea>
-        <button type="button" class="pa-bm__copy" data-target="pa-bm-code">
-          {{ if eq $.Lang "nl" }}Kopieer de code{{ else }}Copy the code{{ end }}
-        </button>
-      </details>
+      <div class="rad-hero__visual" aria-hidden="true">
+        {{ partial "tools/svg-radar-hero.html" . }}
+      </div>
     </div>
-    {{ end }}
-
-    {{ with .Params.tabs }}
-    <div class="pa-bm__checks">
-      <h2>{{ if eq $.Lang "nl" }}Wat WCAG Radar laat zien{{ else }}What WCAG Radar shows{{ end }}</h2>
-      {{ range . }}
-      <h3 class="pa-bm__tab-title">{{ if eq $.Lang "nl" }}Tabblad {{ .label }}{{ else }}{{ .label }} tab{{ end }}</h3>
-      <ul class="pa-bm__check-list">
-        {{ range .checks }}
-        <li class="pa-bm__check">
-          <h4 class="pa-bm__check-title">{{ .titel }}</h4>
-          <p class="pa-bm__check-text">{{ .uitleg }}</p>
-          {{ with .wcag }}<p class="pa-bm__check-wcag"><a href="{{ . }}">{{ if eq $.Lang "nl" }}WCAG-uitleg{{ else }}WCAG explainer{{ end }}</a></p>{{ end }}
-        </li>
-        {{ end }}
-      </ul>
-      {{ end }}
-    </div>
-    {{ else }}
-    {{ with .Params.checks }}
-    <div class="pa-bm__checks">
-      <h2>{{ if eq $.Lang "nl" }}Wat WCAG Radar laat zien{{ else }}What WCAG Radar shows{{ end }}</h2>
-      <ul class="pa-bm__check-list">
-        {{ range . }}
-        <li class="pa-bm__check">
-          <h3 class="pa-bm__check-title">{{ .titel }}</h3>
-          <p class="pa-bm__check-text">{{ .uitleg }}</p>
-          {{ with .wcag }}<p class="pa-bm__check-wcag"><a href="{{ . }}">{{ if eq $.Lang "nl" }}WCAG-uitleg{{ else }}WCAG explainer{{ end }}</a></p>{{ end }}
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-    {{ end }}
-    {{ end }}
-
-    <div class="pa-bm__note">
-      <h2>{{ if eq $.Lang "nl" }}Waarom een radar en geen scanner?{{ else }}Why a radar, not a scanner?{{ end }}</h2>
-      {{ if eq .Lang "nl" }}
-      <p>Een automatische scan vindt hooguit een derde van de toegankelijkheidsproblemen.
-      WCAG Radar laat je zien wat er echt op je pagina staat, zodat je met je eigen ogen
-      beoordeelt of het klopt. De radar draait volledig in je eigen browser: er wordt
-      niets verstuurd of opgeslagen.</p>
-      {{ else }}
-      <p>An automated scan finds at most a third of accessibility problems. WCAG Radar shows
-      you what is really on your page, so you can judge with your own eyes whether it is
-      right. It runs entirely in your own browser: nothing is sent or stored.</p>
-      {{ end }}
-    </div>
-
-    <div class="tool-cta">
-      {{ if eq .Lang "nl" }}
-      <p>Wil je zeker weten dat je hele website voldoet? Wij testen handmatig met
-      screenreaders en echte gebruikersverhalen.</p>
-      <p><a href="/diensten/offerte-wcag-onderzoek/">Vraag een offerte aan</a> of bel 085 5055 890.</p>
-      {{ else }}
-      <p>Want to be sure your whole website complies? We test manually with screen readers
-      and real user stories.</p>
-      <p><a href="/en/contact/">Request a quote</a> or call +31 85 5055 890.</p>
-      {{ end }}
-    </div>
-
   </div>
 </section>
 
+<!-- ─── GARANTIES ─── -->
+<section class="rad-promise">
+  <div class="hp-container">
+    <h2 class="rad-promise__heading">
+      {{ if $nl }}Wat je van de radar mag verwachten{{ else }}What you can expect from the radar{{ end }}
+    </h2>
+    <ul class="rad-promise__grid">
+
+      <li class="rad-promise__item">
+        <span class="rad-promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="10" width="16" height="10" rx="2"/>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+          </svg>
+        </span>
+        <h3 class="rad-promise__title">{{ if $nl }}Er wordt niets opgeslagen{{ else }}Nothing is stored{{ end }}</h3>
+        <p class="rad-promise__text">
+          {{ if $nl }}De radar draait volledig in je eigen browser. Je pagina, je teksten en je
+          afbeeldingen verlaten je computer niet. We slaan geen URL's op en houden niet bij wat
+          je controleert.
+          {{ else }}The radar runs entirely in your own browser. Your page, your text and your
+          images never leave your computer. We store no URLs and keep no record of what you
+          check.{{ end }}
+        </p>
+      </li>
+
+      <li class="rad-promise__item">
+        <span class="rad-promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 4 6v6c0 4.4 3.2 8.3 8 9 4.8-.7 8-4.6 8-9V6l-8-3Z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </span>
+        <h3 class="rad-promise__title">{{ if $nl }}Veilig in afgeschermde omgevingen{{ else }}Safe in protected environments{{ end }}</h3>
+        <p class="rad-promise__text">
+          {{ if $nl }}Je kunt de radar gebruiken achter een login, op een acceptatieomgeving en
+          op localhost. Er gaat niets naar buiten, dus je hoeft geen testomgeving open te zetten
+          voor een externe scanner.
+          {{ else }}You can use the radar behind a login, on a staging environment and on
+          localhost. Nothing goes out, so you never have to expose a test environment to an
+          external scanner.{{ end }}
+        </p>
+      </li>
+
+      <li class="rad-promise__item">
+        <span class="rad-promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z"/>
+          </svg>
+        </span>
+        <h3 class="rad-promise__title">{{ if $nl }}100% Europees{{ else }}100% European{{ end }}</h3>
+        <p class="rad-promise__text">
+          {{ if $nl }}Het script komt van een server binnen de Europese Unie. Geen Amerikaanse
+          clouddienst, geen tracking, geen cookies. Ook de rest van deze website draait op
+          Europese infrastructuur.
+          {{ else }}The script is served from within the European Union. No US cloud service, no
+          tracking, no cookies. The rest of this website runs on European infrastructure
+          too.{{ end }}
+        </p>
+      </li>
+
+      <li class="rad-promise__item">
+        <span class="rad-promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 1 1-2.6-6.4"/>
+            <path d="M21 4v5h-5"/>
+          </svg>
+        </span>
+        <h3 class="rad-promise__title">{{ if $nl }}Actief in ontwikkeling{{ else }}Actively developed{{ end }}</h3>
+        <p class="rad-promise__text">
+          {{ if $nl }}We voegen regelmatig checks toe en scherpen bestaande aan. Je bladwijzer
+          werkt vanzelf bij, je hoeft hem niet opnieuw te slepen. Binnen een dag heb je de
+          nieuwste versie te pakken.
+          {{ else }}We add checks regularly and sharpen existing ones. Your bookmark updates by
+          itself, so you never need to drag it again. Within a day you are on the latest
+          version.{{ end }}
+        </p>
+        {{ with $bm.version }}
+        <p class="rad-promise__version">
+          <span class="rad-promise__version-label">{{ if $nl }}Huidige versie{{ else }}Current version{{ end }}</span>
+          <code>{{ . }}</code>
+        </p>
+        {{ end }}
+      </li>
+
+    </ul>
+    {{ with $bm.version }}
+    <p class="rad-promise__note">
+      {{ if $nl }}Loopt er iets mis? Noem het versienummer <code>{{ . }}</code> als je ons mailt,
+      dan weten we precies welke versie je gebruikt.
+      {{ else }}Something not working? Mention version number <code>{{ . }}</code> when you email
+      us, so we know exactly which version you are on.{{ end }}
+    </p>
+    {{ end }}
+  </div>
+</section>
+
+<!-- ─── TABS: WAT DE RADAR LAAT ZIEN ─── -->
+{{ with .Params.tabs }}
+<section class="rad-checks" id="checks">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg rad-checks__heading">
+      {{ if $nl }}Wat WCAG Radar laat zien{{ else }}What WCAG Radar shows{{ end }}
+    </h2>
+    <div class="rad-checks__intro">
+      {{ if $.Content }}{{ $.Content }}{{ else }}
+      <p>{{ if $nl }}Bovenin het paneel wissel je tussen drie tabbladen, afgestemd op wat jij doet.
+      {{ else }}At the top of the panel you switch between three tabs, tuned to what you do.{{ end }}</p>
+      {{ end }}
+    </div>
+
+    {{/* Zonder JavaScript blijven alle drie de panelen zichtbaar; het script hieronder
+         maakt er daarna een tabgroep van. */}}
+    <div class="rad-tabs" data-rad-tabs>
+      <div class="rad-tabs__list" data-rad-tablist
+           aria-label="{{ if $nl }}Kies een rol{{ else }}Choose a role{{ end }}">
+        {{ range $i, $tab := . }}
+        <button type="button" class="rad-tabs__tab" data-rad-tab
+                id="rad-tab-{{ $i }}" aria-controls="rad-panel-{{ $i }}" hidden>
+          {{ $tab.label }}
+        </button>
+        {{ end }}
+      </div>
+
+      {{ range $i, $tab := . }}
+      <div class="rad-tabs__panel" data-rad-panel
+           id="rad-panel-{{ $i }}" aria-labelledby="rad-tab-{{ $i }}">
+        <h3 class="rad-tabs__panel-heading" data-rad-panel-heading>
+          {{ if $nl }}Tabblad {{ $tab.label }}{{ else }}{{ $tab.label }} tab{{ end }}
+        </h3>
+        <ul class="rad-checks__grid">
+          {{ range $tab.checks }}
+          <li class="rad-check">
+            <h4 class="rad-check__title">{{ .titel }}</h4>
+            <p class="rad-check__text">{{ .uitleg }}</p>
+            {{ with .wcag }}
+            <a class="rad-check__link" href="{{ . }}">
+              {{ if $nl }}Lees de uitleg bij dit succescriterium{{ else }}Read the explainer for this success criterion{{ end }}
+            </a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── ROLSECTIES: 50/50 ─── -->
+{{ range $i, $rol := .Params.rollen }}
+{{ $odd := eq (mod $i 2) 1 }}
+<section class="rad-role{{ if $odd }} rad-role--reverse{{ else }} rad-role--light{{ end }}">
+  <div class="hp-container">
+    <div class="rad-role__grid">
+      <div class="rad-role__text">
+        <span class="rad-role__eyebrow">{{ $rol.eyebrow }}</span>
+        <h2 class="hp-heading-lg">{{ $rol.titel }}</h2>
+        <div class="rad-role__body">{{ $rol.tekst | markdownify }}</div>
+        {{ with $rol.link }}
+        <a class="hp-btn hp-btn--outline rad-role__link" href="{{ . }}">
+          {{ $rol.link_tekst }}
+        </a>
+        {{ end }}
+      </div>
+      <div class="rad-role__visual" aria-hidden="true">
+        {{/* $ meegeven, niet ., want binnen range is de context de rol zelf en
+             hebben de partials geen toegang meer tot .Lang. */}}
+        {{ partial (printf "tools/svg-%s.html" $rol.svg) $ }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ─── WAAROM EEN RADAR ─── -->
+<section class="rad-why">
+  <div class="hp-container">
+    <div class="rad-why__inner">
+      <h2 class="hp-heading-lg">{{ if $nl }}Waarom een radar en geen scanner?{{ else }}Why a radar, not a scanner?{{ end }}</h2>
+      {{ if $nl }}
+      <p>Een automatische scan vindt hooguit een derde van de toegankelijkheidsproblemen. Die
+      scan zegt je wat er fout is volgens een regel, maar niet of je pagina klopt voor een
+      bezoeker.</p>
+      <p>WCAG Radar draait dat om. De radar laat zien wat er echt op je pagina staat: welke
+      koppen je hebt, wat er in je alt-teksten staat, waar de focus heen springt. Jij beoordeelt
+      met je eigen ogen of het klopt. Daarmee leer je je eigen site kennen, en dat werkt beter
+      dan een lijst met foutcodes.</p>
+      <p>De radar vervangt geen volledige audit. Hij helpt je de meest voorkomende fouten zelf op
+      te sporen en op te lossen, zodat er bij een audit minder overblijft.</p>
+      {{ else }}
+      <p>An automated scan finds at most a third of accessibility problems. It tells you what
+      breaks a rule, but not whether your page makes sense to a visitor.</p>
+      <p>WCAG Radar turns that around. It shows what is really on your page: which headings you
+      have, what your alt text says, where focus jumps to. You judge with your own eyes whether
+      it holds up. That way you get to know your own site, which beats a list of error codes.</p>
+      <p>The radar does not replace a full audit. It helps you find and fix the most common
+      problems yourself, so less is left over when an audit does happen.</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
 <script>
+/* WCAG Radar-pagina: maakt van de rolpanelen een toegankelijke tabgroep.
+   Zonder JavaScript blijven alle panelen gewoon zichtbaar onder elkaar staan,
+   dus de inhoud is nooit afhankelijk van dit script. */
 (function () {
-  var btns = document.querySelectorAll(".pa-bm__copy");
+  var group = document.querySelector("[data-rad-tabs]");
+  if (!group) return;
+
+  var list = group.querySelector("[data-rad-tablist]");
+  var tabs = Array.prototype.slice.call(group.querySelectorAll("[data-rad-tab]"));
+  var panels = Array.prototype.slice.call(group.querySelectorAll("[data-rad-panel]"));
+  if (!list || tabs.length === 0 || tabs.length !== panels.length) return;
+
+  list.setAttribute("role", "tablist");
+  group.classList.add("rad-tabs--ready");
+
+  tabs.forEach(function (tab, i) {
+    tab.hidden = false;
+    tab.setAttribute("role", "tab");
+    panels[i].setAttribute("role", "tabpanel");
+    panels[i].setAttribute("tabindex", "0");
+    /* De tabknop neemt visueel de rol van paneelkop over. De kop zelf blijft
+       staan, alleen onzichtbaar, zodat de koppenstructuur h2 - h3 - h4 heel
+       blijft voor wie op koppen navigeert. */
+    var heading = panels[i].querySelector("[data-rad-panel-heading]");
+    if (heading) heading.classList.add("sr-only");
+    tab.addEventListener("click", function () { select(i); });
+    tab.addEventListener("keydown", onKeydown);
+  });
+
+  function select(index, moveFocus) {
+    tabs.forEach(function (tab, i) {
+      var current = i === index;
+      tab.setAttribute("aria-selected", current ? "true" : "false");
+      tab.setAttribute("tabindex", current ? "0" : "-1");
+      panels[i].hidden = !current;
+    });
+    if (moveFocus) tabs[index].focus();
+  }
+
+  function onKeydown(event) {
+    var current = tabs.indexOf(event.target);
+    if (current < 0) return;
+    var next = null;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (current + 1) % tabs.length;
+    else if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (current - 1 + tabs.length) % tabs.length;
+    else if (event.key === "Home") next = 0;
+    else if (event.key === "End") next = tabs.length - 1;
+    if (next === null) return;
+    event.preventDefault();
+    select(next, true);
+  }
+
+  select(0);
+})();
+
+/* Kopieerknop bij de handmatige installatie. */
+(function () {
+  var btns = document.querySelectorAll(".rad-install__copy");
   btns.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var ta = document.getElementById(btn.getAttribute("data-target"));
@@ -124,7 +335,7 @@
       ta.select();
       navigator.clipboard.writeText(ta.value).then(function () {
         var old = btn.textContent;
-        btn.textContent = "Gekopieerd";
+        btn.textContent = btn.getAttribute("data-done") || "Gekopieerd";
         setTimeout(function () { btn.textContent = old; }, 1800);
       });
     });

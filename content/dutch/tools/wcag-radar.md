@@ -34,6 +34,41 @@ keywords:
   - tekst vergroten testen
   - focus zichtbaar maken
   - bookmarklet toegankelijkheid
+hero_sub: "Een gratis knop in je bladwijzerbalk die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus, ARIA en tabvolgorde, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
+rollen:
+  - eyebrow: "Voor webredactie"
+    titel: "De controles die je elke week doet, in één klik"
+    svg: "redactie"
+    tekst: |
+      Als redacteur werk je in het CMS, niet in de code. Toch bepaalt jouw werk een groot deel van de toegankelijkheid: de alt-teksten, de koppenstructuur, de linkteksten, de tabellen. Precies daar gaat het het vaakst mis.
+
+      Onze ambitie met het tabblad Redactie is simpel: de controles die je toch al zou moeten doen, zo makkelijk maken dat je ze ook echt doet. Je hoeft geen broncode te lezen en geen developer te vragen. Je klikt de radar aan en ziet meteen welke afbeelding geen alt-tekst heeft, waar een kopniveau wordt overgeslagen en welke link "lees meer" heet.
+
+      De radar oordeelt niet voor je. Bij een alt-tekst laat hij zien wat er staat, jij bepaalt of dat klopt bij de afbeelding. Dat is precies het stuk werk dat een automatische scanner nooit voor je kan doen.
+    link: "/blog/checklist-toegankelijke-content/"
+    link_tekst: "Bekijk de checklist voor redacteuren"
+  - eyebrow: "Voor designers"
+    titel: "Contrast, focus en doelgrootte nakijken zonder plugin"
+    svg: "designer"
+    tekst: |
+      In je ontwerptool ziet alles er goed uit. In de browser komt het aan op de echte kleuren, de echte fonts en het echte gedrag bij zoomen. Daar wil je bij kunnen, ook op een pagina die nog niet af is.
+
+      Onze ambitie met het tabblad Designer is om de checks die je normaal over drie tools verdeelt, op één plek te zetten. Meet het contrast met de pipetten, zet de pagina in grijswaarden, forceer een zichtbare focusrand, markeer klikdoelen kleiner dan 24 pixels en zet de tekst op 200% om te zien of je layout dat aankan.
+
+      Je hoeft niets te installeren en je ontwerp hoeft niet online te staan. De radar werkt net zo goed op een acceptatieomgeving of op localhost.
+    link: "/blog/sc-1-4-3-wat-betekent-contrast-minimum/"
+    link_tekst: "Lees hoe contrast werkt"
+  - eyebrow: "Voor developers"
+    titel: "Sneller dan de inspector openen"
+    svg: "developer"
+    tekst: |
+      Je weet waar je op moet letten. Wat tijd kost, is het uitzoeken: welke knop heeft nu precies geen toegankelijke naam, wijst die aria-controls wel naar een bestaand id, en in welke volgorde loopt de focus eigenlijk?
+
+      Onze ambitie met het tabblad Developer is om die vragen te beantwoorden voordat je de inspector opent. De radar nummert elk focusbaar element in tabvolgorde en markeert positieve tabindex-waarden als fout. Hij toont alle rollen en aria-attributen en laat zien welke referenties nergens op wijzen. Bij hover krijg je tag, id, class, rol, toegankelijke naam en afmeting van elk element.
+
+      Handig tijdens het bouwen, en handig bij het oplossen van een auditbevinding: je ziet direct of je aanpassing het gewenste effect heeft.
+    link: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/"
+    link_tekst: "Lees over naam, rol en waarde"
 tabs:
   - label: "Redactie"
     checks:
@@ -130,12 +165,6 @@ tabs:
         uitleg: "Beweeg met de muis over de pagina en zie tag, id, class, rol, toegankelijke naam en afmeting van elk element. Sneller dan de inspector openen voor een snelle check."
 ---
 
-WCAG Radar laat de toegankelijkheid van je pagina live zien, gratis en direct in je eigen browser. Sleep de knop één keer naar je bladwijzerbalk en klik hem daarna aan op elke website, ook achter een login of op localhost. Er wordt niets verstuurd of opgeslagen.
+Bovenin het paneel wissel je tussen drie tabbladen, afgestemd op wat jij doet. Elk tabblad bevat de controles die bij die rol horen, dus je hoeft niet langs alles te scrollen wat je toch niet gebruikt.
 
-Bovenin het paneel wissel je tussen drie tabbladen, afgestemd op wat jij doet:
-
-- **Redactie**, voor alt-teksten, koppen, linkteksten, tabellen, taal en contrast.
-- **Designer**, voor contrast, kleurgebruik, focus, doelgrootte, tekstafstand en tekstvergroting.
-- **Developer**, voor ARIA, toegankelijke namen, tabvolgorde, focus, contrast en iframes.
-
-De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen.
+Vindt een check iets, dan verschijnen er knoppen om vooruit en achteruit door de resultaten te springen. Zo loop je elke bevinding op de pagina langs zonder zelf te zoeken.
