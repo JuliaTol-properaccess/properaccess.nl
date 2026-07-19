@@ -16,9 +16,9 @@
  *
  * Daarom haalt hij de bundle nu op bij testtoegankelijkheid.nl, de plek waar de
  * WCAG Radar ontwikkeld wordt (repo wcag-scan, map wcag-radar/). Eén bron, dus
- * de twee kunnen niet meer uit elkaar lopen. De bron in
- * assets/js/bookmarklets/ en het bestand bundles.js in deze map doen hier niets
- * meer; bewerk ze niet.
+ * de twee kunnen niet meer uit elkaar lopen. De oude kopie in deze repo
+ * (assets/js/bookmarklets/, bundles.js, scripts/build-bookmarklets.js) is
+ * verwijderd. Zie README.md in deze map.
  *
  * De oude rol-URL's (webredactie/ontwikkelaars/designers) blijven werken, zodat
  * al gesleepte bookmarklets uit die tijd niet breken.
