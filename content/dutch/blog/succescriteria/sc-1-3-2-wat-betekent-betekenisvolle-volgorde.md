@@ -3,107 +3,143 @@ title: "1.3.2 - Wat betekent “Betekenisvolle volgorde”?"
 date: 2025-05-17
 categories:
   - "wcag-uitgelegd"
-description: "WCAG 1.3.2 vereist een betekenisvolle volgorde in de broncode. Lees waarom de HTML-volgorde belangrijk is voor schermlezers en hoe je dit goed aanpakt."
+description: "WCAG 1.3.2 vraagt dat je pagina in een logische volgorde wordt voorgelezen. Lees hoe je als webredacteur de leesvolgorde controleert met de WCAG Radar."
+keywords:
+  - WCAG 1.3.2
+  - betekenisvolle volgorde
+  - leesvolgorde controleren
+  - leesvolgorde schermlezer
+  - volgorde nieuwsoverzicht
+  - datum boven de kop
+  - opmaak uitzetten
+tags:
+  - "1-3-2"
+  - "Structuur"
 aliases:
   - /sc-1-3-2-wat-betekent-betekenisvolle-volgorde/
 ---
 
-## Waar gaat het over?
+Jij ziet een pagina in één oogopslag: de kop staat groot bovenaan, de datum eronder in het klein, de foto ernaast. Je hersenen leggen die verbanden vanzelf. Iemand die een schermlezer gebruikt, krijgt de pagina niet in één oogopslag, maar als één lange reeks: item na item, van boven naar beneden. En die reeks komt uit de code, niet uit de vormgeving.
 
-De inhoud van een webpagina moet in een logische, begrijpelijke volgorde door hulpsoftware kunnen worden gepresenteerd. Dit bereik je door de inhoud op een betekenisvolle manier in de broncode te plaatsen. De visuele weergave mag afwijken van de volgorde in de HTML.
+Staat de datum in de code boven de kop, dan hoort de bezoeker eerst "17 mei 2025" en pas daarna waar dat bij hoort. Dat is waar dit criterium over gaat.
 
-[Officiële tekst van 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence)
+Dit heet **1.3.2 Meaningful Sequence**, in het Nederlands "Betekenisvolle volgorde".
 
-Dit artikel is bedoeld voor [de ontwikkelaar](https://properaccess.nl/tag/ontwikkelaar/).
+## Wat zegt het criterium?
 
-## Waarom is dit belangrijk?
+[WCAG-succescriterium 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence) vraagt dat de volgorde waarin de inhoud wordt voorgelezen, klopt met de betekenis van je verhaal.
 
-Niet iedereen gebruikt websites op dezelfde manier. Sommige mensen laten de tekst bijvoorbeeld voorlezen door een schermlezer. Zo’n hulpmiddel kijkt niet naar hoe de pagina eruitziet, maar naar de achterliggende code. Als de volgorde daarin niet logisch is, hoor je als bezoeker een rommelig of verwarrend verhaal. Dat is frustrerend en maakt een website moeilijk te gebruiken.
+In begrijpelijke taal: als de volgorde uitmaakt voor het begrip, moet die volgorde ook in de code kloppen. Wat bij elkaar hoort, staat bij elkaar. En wat eerst gelezen moet worden, staat eerst.
 
-## Wat moet je doen?
+Let op het woord "als". Niet alles hoeft in dezelfde volgorde te staan als op het scherm. Of het menu links of rechts van de tekst staat, verandert niets aan de betekenis. Maar bij een nieuwsbericht maakt het wel uit of de datum boven of onder de kop komt.
 
-Zorg dat je website aan de volgende punten voldoet:
+## Wat heeft dit met jouw werk te maken?
 
-- De volgorde van de elementen in de broncode is logisch.
+Veel redacteuren denken: dit is iets voor de webbouwer. Voor een deel klopt dat. De volgorde van de vaste onderdelen van een sjabloon regelt je webbouwer.
 
-- Nieuwe content wordt op de juiste plek in de DOM van de pagina toegevoegd.
+Maar binnen je eigen tekst bepaal jij de volgorde. En bij overzichtspagina's bepaal jij vaak, zonder het te weten, of er een informatieve afbeelding boven de kop komt te staan. Dat is precies de fout die wij bij audits het vaakst zien bij dit criterium.
 
-- Staan er pdf-documenten op de site? Die moeten ook een logische volgorde in de tags hebben.
+## Wat kun jij zelf doen?
 
-## Wat is _niet_ verplicht?
+### Zet bij elkaar wat bij elkaar hoort
 
-Bij onderdelen waarvan de betekenis _niet_ verandert door de volgorde, hoeft de visuele volgorde niet hetzelfde te zijn als de volgorde in de code. Denk bijvoorbeeld aan de volgorde van het navigatiemenu en de hoofdcontent van een pagina. Het maakt voor de betekenis van de pagina niet uit welk deel eerst in de code staat.
+Schrijf je een blok tekst met een tussenkop? Zorg dat alles wat bij die kop hoort, er ook onder staat. Een introzin die boven de kop hangt, komt bij een schermlezer los te staan van het onderwerp.
 
-## Hoe test je succescriterium 1.3.2?
+### Wees voorzichtig met tekst in kolommen
 
-- Gebruik een schermlezer: Test de pagina met een schermlezer zoals NVDA (NonVisual Desktop Access) voor Windows of VoiceOver voor macOS. Luister naar de volgorde waarin de inhoud wordt voorgelezen en controleer of deze logisch is.
+Zet je in het CMS twee kolommen naast elkaar, dan worden die vrijwel altijd na elkaar voorgelezen: eerst de hele linkerkolom, dan de hele rechterkolom. Loopt je verhaal van links naar rechts door, bijvoorbeeld een vraag links en het antwoord rechts, dan valt het uit elkaar. Zet vraag en antwoord dan onder elkaar in dezelfde kolom.
 
-- Controleer de broncode: Bekijk de HTML-broncode van de pagina en controleer de volgorde van de elementen. Zorg dat de volgorde van de elementen in de code overeenkomt met de visuele volgorde op de pagina, als dit de betekenis beïnvloedt.
+### Let op de uitgelichte afbeelding in overzichten
+
+Dit is de klassieker. In een nieuws- of blogoverzicht staat de uitgelichte afbeelding meestal bóven de kop. Heeft die afbeelding een alt-tekst, dan hoort de bezoeker eerst een beschrijving van een plaatje en pas daarna bij welk bericht dat hoort.
+
+De oplossing is verrassend simpel: geef de uitgelichte afbeelding een leeg alt-attribuut. De afbeelding is decoratief, want de kop en de samenvatting vertellen het verhaal al. Met een leeg alt-attribuut slaat de schermlezer hem over en begint het item netjes bij de kop.
+
+Let op als je in WordPress met Yoast SEO werkt. Yoast raadt aan om je zoekterm in de alt-tekst te zetten. Doe dat niet bij de uitgelichte afbeelding. In WordPress stel je de alt-tekst in de mediabibliotheek in, en die geldt dan overal waar de afbeelding wordt getoond, dus ook in het overzicht. Je wint dan een groen bolletje bij Yoast en verliest een logische leesvolgorde.
+
+### Gebruik echte tabellen voor gegevens
+
+Zet je openingstijden of tarieven neer als losse regels, of als een raster van tekstvakken, dan raakt het verband tussen dag en tijd kwijt. De bezoeker hoort dan eerst alle dagen achter elkaar en daarna alle tijden. Gebruik de tabelknop van je editor en wijs de kopcellen aan.
+
+## Wat je aan je webbouwer doorgeeft
+
+Deze dingen kun je niet zelf oplossen, maar wel signaleren:
+
+- **Uitklapbare tekst die op de verkeerde plek verschijnt.** Klap je een blok open en verschijnt de tekst voor de schermlezer helemaal onderaan de pagina, dan staat de tekst op de verkeerde plek in de code.
+- **Een pop-up of lightbox waarbij de schermlezer gewoon de pagina eronder blijft voorlezen.** Dat is ook een fout bij [2.4.3 Focusvolgorde](/blog/sc-2-4-3-wat-betekent-focusvolgorde/).
+- **Tabbladen waarbij eerst alle tabtitels worden voorgelezen en pas daarna de inhoud van het geopende tabblad.**
+- **Verborgen tekst die toch wordt voorgelezen**, bijvoorbeeld het mobiele menu op een breed scherm.
+
+## Controleer de leesvolgorde met WCAG Radar
+
+Je hoeft hiervoor geen schermlezer te leren bedienen. Met onze gratis [WCAG Radar](/tools/wcag-radar/) zie je de leesvolgorde in één klik. Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan.
+
+### Stap 1: zet de opmaak uit
+
+Open het tabblad **Redactie** en klik op **Opmaak uit (leesvolgorde)**. De radar schakelt alle stijlen uit. Wat je overhoudt, is de kale volgorde waarin de inhoud in de code staat, en dat is precies de volgorde die een schermlezer volgt.
+
+Klik nog een keer om de opmaak terug te zetten.
+
+### Stap 2: lees van boven naar beneden
+
+Lees de kale pagina nu gewoon van boven naar beneden en stel jezelf drie vragen:
+
+1. Loopt het verhaal nog? Of moet je terugspringen om te snappen waar iets bij hoort?
+2. Staat er informatie boven een kop die er eigenlijk onder hoort, zoals datums, labels en afbeeldingen in een overzicht?
+3. Vallen kolommen uit elkaar? Twee kolommen worden na elkaar getoond. Klopt je verhaal dan nog?
+
+Alles wat je in deze kale weergave niet meer kunt volgen, kan een bezoeker met een schermlezer ook niet volgen.
+
+### Stap 3: check de afbeeldingen in overzichten
+
+Zet de opmaak weer aan en klik op **Afbeeldingen en alt-tekst**. Op een overzichtspagina zie je meteen welke uitgelichte afbeeldingen een alt-tekst hebben. Staat die afbeelding boven de kop en heeft hij een alt-tekst? Dan hoort de bezoeker die tekst voordat hij weet om welk bericht het gaat. Maak het alt-attribuut leeg.
+
+### Stap 4: controleer koppen en tabellen
+
+Twee checks die de leesvolgorde ondersteunen:
+
+- **Koppen en structuur** laat zien of je koppen op de juiste plek en het juiste niveau staan. Een kop is voor een schermlezergebruiker het startpunt van een blok, dus alles wat erbij hoort, moet erna komen.
+- **Tabellen** markeert tabellen zonder kopcellen. Zonder kopcellen valt het verband tussen rij en kolom weg.
+
+De radar vervangt geen volledige audit, maar hij haalt de meest voorkomende fouten eruit voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
 ## Veelgemaakte fouten
 
-Bij onze audits zien we dat het bij dit succescriterium vaak fout gaat op een van de volgende punten:
+- **Een informatieve afbeelding of datum boven de kop** in een nieuws- of blogoverzicht.
+- **Alt-teksten op uitgelichte afbeeldingen**, waardoor elk item in een overzicht begint met een beschrijving van een plaatje.
+- **Tekst in kolommen** die visueel van links naar rechts loopt, maar in de code kolom na kolom staat.
+- **Tabellen nagebouwd met losse tekstvakken**, waardoor dagen en tijden los van elkaar worden voorgelezen.
+- **Een introzin boven de tussenkop** in plaats van eronder.
+- **Tekst in een pdf** waarvan de tags in een andere volgorde staan dan wat je op papier ziet. Dit gaat vaak mis bij voetnoten en bij tekst in kolommen.
 
-- Bij overzichten van nieuwsberichten of events staan de datums of informatieve afbeeldingen _boven_ de kop. Als dit van boven naar beneden wordt voorgelezen, is niet meer duidelijk bij welk bericht de datum of afbeelding hoort. Dit los je op door alles wat bij een kop hoort in de code onder die kop te plaatsen.
+## Veelgestelde vragen
 
-- Bij tooltips staat de tekst van de tooltip pas verderop in de code. Dit zorgt ervoor dat een schermlezer de tekst niet direct voorleest als een bezoeker de tooltip opent, maar pas veel later.
+### Moet de volgorde in de code altijd gelijk zijn aan wat ik op het scherm zie?
 
-- Bij een tablijst worden eerst alle titels van de tabs voorgelezen, en dan pas de inhoud van de geopende tab.
+Nee, alleen als de volgorde uitmaakt voor de betekenis. Of het menu boven of naast de tekst staat, maakt niet uit. Of de datum boven of onder de kop van een bericht staat, maakt wel uit.
 
-- Nieuwe content wordt op de verkeerde plek in de DOM van een pagina toegevoegd als de bezoeker op een knop of link drukt.
+### Mag ik nooit een alt-tekst op een uitgelichte afbeelding zetten?
 
-- Gebruik van `<div>` of `<span>` in plaats van `<table>` bij tabellen, waardoor de betekenis van de tabel verloren gaat. Dit komt vaak voor bij tabellen met openingstijden. Daardoor worden eerst alle dagen van de week voorgelezen, en daarna pas de openingstijden.
+Op de pagina van het bericht zelf mag het prima, want daar staat de afbeelding meestal onder de kop. Het probleem ontstaat in het overzicht, waar dezelfde afbeelding boven de kop komt. Kun je dat in je CMS niet per plek regelen? Kies dan voor een leeg alt-attribuut, want een logische leesvolgorde weegt zwaarder.
 
-- Er is content die verborgen is voor hulpsoftware met `display:none` of `visibility:hidden`. Hierdoor kan de leesvolgorde van andere content onlogisch worden.
+### Hoe zie ik de leesvolgorde zonder een schermlezer te installeren?
 
-- Als een lightbox of pop-up wordt geopend, blijft de schermlezer de content van de onderliggende pagina voorlezen, in plaats van de content van de lightbox of pop-up. Dit is ook een fout bij succescriterium 2.4.3 (onjuiste focusvolgorde).
+Klik de [WCAG Radar](/tools/wcag-radar/) aan en kies **Opmaak uit (leesvolgorde)** in het tabblad Redactie. Je ziet dan dezelfde volgorde als een schermlezer volgt.
 
-- Tags in de codelaag van pdf-documenten staan in een andere volgorde dan wat in het document te zien is. Dit gaat ook vaak fout bij de voetnoten.
+### Geldt dit ook voor pdf's?
 
-### Hoe los je problemen met succescriterium 1.3.2 op?
+Ja. Ook in een pdf moet de volgorde van de tags kloppen met wat je ziet. Maak je documenten in Word en exporteer je die naar pdf? Gebruik dan de ingebouwde koppenstijlen en zet tekst niet in tekstvakken, want die belanden vaak achteraan in de leesvolgorde.
 
-Zorg dat de HTML-code in een logische en betekenisvolle volgorde staat, en verander de plek in de DOM waar nieuwe content wordt geïnjecteerd als de leesvolgorde niet klopt.
+## Samenvatting
 
-Dit is een voorbeeld van een betekenisvolle volgorde voor een artikel in een nieuwsoverzicht. Alle informatie die bij het artikel hoort, staat in de code _onder_ de h2-kop:
+WCAG-succescriterium 1.3.2 vraagt dat je pagina wordt voorgelezen in een volgorde die klopt met je verhaal.
 
-```
-<article>
-  <h2>Titel bericht</h2>
-  <p>01-01-2024</p>
-  <img src="#" alt="betekenisvol tekstalternatief">
-  <p>Tekst bericht</p>
-</article>
-```
+De belangrijkste punten:
 
-De volgende structuur mag ook, omdat de afbeelding verborgen is voor hulpsoftware door het lege alt-attribuut:
+- Zet alles wat bij een kop hoort, ook onder die kop.
+- Geef uitgelichte afbeeldingen in overzichten een leeg alt-attribuut.
+- Wees voorzichtig met kolommen: die worden na elkaar voorgelezen.
+- Gebruik echte tabellen voor gegevens die bij elkaar horen.
+- Controleer de leesvolgorde met **Opmaak uit** in de [WCAG Radar](/tools/wcag-radar/).
 
-```
-<article>
-  <img src="#" alt="">
-  <h2>Titel bericht</h2>
-  <p>01-01-2024</p>
-  <p>Tekst bericht</p>
-</article>
-```
-
-## Update 8 augustus 2024
-
-Vandaag was ik bezig met het verbeteren van mijn SEO met de onlangs aangeschafte Yoast SEO plugin. Een van de rode stippen had betrekking op de afbeeldingen. Het werd aangeraden om afbeeldingen aan de pagina toe te voegen met de focus key phrase in de alt-tekst. Een begrijpelijke tip uit SEO-oogpunt, maar let op: als je dit doet bij de uitgelichte afbeelding, creëer je een ontoegankelijke situatie.
-
-Het probleem is dat je in WordPress de alt-teksten alleen in de mediatheek kunt toevoegen. Ze worden vervolgens standaard altijd aan de afbeelding toegevoegd. Als webredacteur kun je niet per pagina kiezen of je wel of geen alt-tekst wilt.
-
-Op de pagina zelf is dat geen probleem, maar op de pagina met het overzicht van berichten wel. Want voor succescriterium 1.3.2 mag er geen informatieve content boven de kop staan. En dat is precies wat er gebeurt als de uitgelichte afbeelding een alt-tekst heeft.
-
-De enige snelle oplossing was het verwijderen van de alt-tekst. Hiermee herstel ik de logische leesvolgorde op de blogpagina, maar verlies ik punten bij Yoast SEO.
-
-## Goede bronnen over 1.3.2
-
-- [Deque University](https://dequeuniversity.com/rules/axe/3.5/meaningful-sequence)
-
-- [Mozilla Developer Network (MDN) Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript)
-
-- [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=131#meaningful-sequence)
-
-## Disclaimer
-
-Sommige situaties en uitzonderingen komen minder vaak voor en staan niet in dit artikel. In zulke gevallen is het slim om een expert mee te laten kijken. Toegankelijkheid is geen eenmalige klus, maar iets waar je steeds aandacht aan moet geven. Regelmatig controleren en verbeteren helpt om te blijven voldoen aan de WCAG-richtlijnen.
+**Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.
