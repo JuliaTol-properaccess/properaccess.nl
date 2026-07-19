@@ -174,12 +174,13 @@
           itself, so you never need to drag it again. Within a day you are on the latest
           version.{{ end }}
         </p>
-        {{ with $bm.version }}
+        {{/* Bewust geen versienummer hier. De bundle wordt sinds juli 2026 door de
+             Worker opgehaald bij de bron, dus een nummer uit deze repo zou een
+             tweede waarheid zijn. Het echte nummer staat onderin het paneel. */}}
         <p class="rad-promise__version">
-          <span class="rad-promise__version-label">{{ if $nl }}Huidige versie{{ else }}Current version{{ end }}</span>
-          <code>{{ . }}</code>
+          {{ if $nl }}Welke versie je draait, zie je onderin het paneel van de radar zelf.
+          {{ else }}The version you are running is shown at the bottom of the radar panel itself.{{ end }}
         </p>
-        {{ end }}
       </li>
 
     </ul>
