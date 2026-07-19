@@ -5,47 +5,108 @@
   <div class="hp-container">
     <div class="hp-hero__grid">
       <div class="hp-hero__text">
-        <span class="hp-hero__badge">Independent audit bureau</span>
+        <span class="hp-hero__badge">900+ audits for Rijksmuseum, NRC, Plus and many others</span>
         <h1 class="hp-hero__title">
-          Your website or app must be accessible.<br>
-          <span class="hp-hero__title-accent hp-hero__title-sub">But where do you start?</span>
+          In 12 weeks a <span class="hp-hero__underline">website</span> or <span class="hp-hero__underline">app</span> that converts better,<br>
+          <span class="hp-hero__title-accent hp-hero__title-sub">ranks better and meets the law.</span>
         </h1>
         <p class="hp-hero__subtitle">
-          We help organisations with accessibility audits, concrete solutions,
-          and a report your developers can act on right away. Every finding
-          starts with a user story from the visitor who gets stuck &mdash; no
-          thick documents full of jargon, just a clear plan towards an
-          accessible website.
+          No 100-page PDF nobody opens. No list of WCAG codes that leaves your team stuck.
+          You get a report with a user story from the visitor, a concrete solution and &mdash; where it helps &mdash;
+          a screenshot and a code example. So everyone on your team knows what to do: from content editor to developer.
         </p>
+        <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span><strong>Per element:</strong> what are the issues and how do you fix them?</span>
+          </div>
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span><strong>An action plan</strong> worked out per team</span>
+          </div>
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span><strong>We think along</strong> about alternatives</span>
+          </div>
+        </div>
         <div class="hp-hero__actions">
           <a href="/en/contact/" class="hp-btn hp-btn--primary">
-            Request a quote
+            Book an intake call
             <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
           </a>
-          <a href="#approach" class="hp-btn hp-btn--outline">
-            Our approach
+          <a href="/en/accessibility-audit/" class="hp-btn hp-btn--outline">
+            See how we report
           </a>
         </div>
+        <p class="hp-hero__fud">
+          Reply within 1 business day &middot; Direct contact with the senior auditor &middot; 30 min &mdash; no obligations
+        </p>
       </div>
       <div class="hp-hero__visual">
-        <div class="hp-hero__image-frame">
-          {{ partial "image" (dict "Src" "/images/logos.webp" "Alt" "Client logos including Rijksmuseum, NRC, Museumvereniging, Jumbo and Plus" "Loading" "eager" "Class" "hp-hero__image") }}
-        </div>
-        <div class="hp-hero__stats-card" aria-label="Statistics">
-          <div class="hp-hero__stat">
-            <span class="hp-hero__stat-number">900+</span>
-            <span class="hp-hero__stat-label">websites audited</span>
-          </div>
-          <div class="hp-hero__stat-divider"></div>
-          <div class="hp-hero__stat">
-            <span class="hp-hero__stat-number">50+</span>
-            <span class="hp-hero__stat-label">apps audited</span>
-          </div>
+        <div class="hp-hero__form-card">
+          <h2 class="hp-hero__form-title">Rather find out where you stand first?</h2>
+          <p class="hp-hero__form-intro">
+            Request a mini audit (&euro;495 excl. VAT). A senior auditor spends up to five hours
+            reviewing your site by hand, and within five working days you receive an extensive
+            overview of the biggest accessibility problems.
+          </p>
+          <form class="hp-form" id="home-qs-form-en" novalidate>
+            <input type="hidden" name="_subject" value="New mini audit request (EN homepage)" />
+            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-url">
+                URL of your website <span aria-label="required">*</span>
+              </label>
+              <input class="hp-form__input" type="url" id="home-qs-url" name="website_url" required autocomplete="url" placeholder="https://yourwebsite.com" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-name">
+                Your name <span aria-label="required">*</span>
+              </label>
+              <input class="hp-form__input" type="text" id="home-qs-name" name="naam" required autocomplete="name" placeholder="First name Last name" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-email">
+                Email address <span aria-label="required">*</span>
+              </label>
+              <input class="hp-form__input" type="email" id="home-qs-email" name="email" required autocomplete="email" placeholder="name@company.com" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="home-qs-tel">
+                Phone number <span class="hp-form__optional">(optional)</span>
+              </label>
+              <input class="hp-form__input" type="tel" id="home-qs-tel" name="telefoon" autocomplete="tel" placeholder="+31 6 12345678" />
+            </div>
+
+            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+              Request the mini audit
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </button>
+            <div role="status" aria-live="polite"></div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var form = document.getElementById('home-qs-form-en');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.paFormSubmit(form, {
+      bron: 'mini-audit-homepage-en',
+      successMessage: 'Thanks! We will get back to you within 1 business day.'
+    });
+  });
+})();
+</script>
 
 
 <!-- ─── TRUST BAR ─── -->
@@ -53,220 +114,447 @@
   <div class="hp-container">
     <p class="hp-trust__label">Trusted by</p>
     <div class="hp-trust__names">
-      <span>Rijksmuseum</span>
-      <span>Museumvereniging</span>
-      <span lang="nl">Prov. Noord-Holland</span>
-      <span lang="nl">Prov. Zuid-Holland</span>
-      <span>NRC</span>
       <span>Jumbo</span>
-      <span>Plus</span>
+      <span lang="nl">Bijenkorf</span>
+      <span>Van Gogh Museum</span>
+      <span>Netherlands Judiciary</span>
+      <span>Q42</span>
+      <span>Dutch Safety Board</span>
+      <span lang="nl">Provincie Noord-Holland</span>
+      <span lang="nl">Museumvereniging</span>
+      <span>ReadSpeaker</span>
     </div>
   </div>
 </section>
 
 
-<!-- ─── HOW WE HELP ─── -->
-<section class="hp-services" id="approach">
+<!-- ─── PAIN POINT / OLD WAY ─── -->
+<section class="hp-pain">
   <div class="hp-container">
-    <div class="hp-services__header">
-      <h2 class="hp-heading-lg">How we help</h2>
-      <p class="hp-services__intro">Expertise at every level of the digital lifecycle.</p>
-    </div>
-    <div class="hp-services__grid">
-      <div class="hp-service-card">
-        <div class="hp-service-card__icon">
-          <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
-        </div>
-        <h3 class="hp-service-card__title"><span lang="nl">WCAG</span> Audits</h3>
-        <p class="hp-service-card__desc">
-          Thorough inspection of your platform against the latest WCAG guidelines
-          with clear reporting per element.
+    <div class="hp-pain__grid">
+      <div class="hp-pain__text">
+        <h2 class="hp-pain__title">
+          <span class="hp-pain__title-highlight">Self-assessment</span> is too big a risk
+        </h2>
+        <p class="hp-pain__body">
+          The European Accessibility Act has applied since June 2025. For many webshops and online
+          services that means your product is already non-compliant today. The reaction we hear most:
+          <em>&ldquo;we will send someone on a course and judge it ourselves.&rdquo;</em>
+          That sounds efficient, but the risk is too big.
         </p>
-        <a class="hp-service-card__link" href="/en/accessibility-audit/">
-          Learn more
-          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
-        </a>
+        <p class="hp-pain__body">
+          And that risk is concrete:
+          <a href="https://www.acm.nl/en/accessibility"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="hp-pain__link">complaints to the regulator<span class="sr-only"> (opens in a new window)</span></a>,
+          claims from advocacy organisations, reputational damage &mdash; and a site your visitors
+          still cannot use.
+        </p>
       </div>
 
-      <div class="hp-service-card">
-        <div class="hp-service-card__icon">
-          <span class="material-symbols-outlined" aria-hidden="true">confirmation_number</span>
+      <div class="hp-pain__visuals">
+        <div class="hp-pain-card hp-pain-card--summary">
+          <span class="hp-pain-card__eyebrow">
+            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+            Duty to report
+          </span>
+          <h3 class="hp-pain-card__title">What the law asks of you</h3>
+          <ul class="hp-pain-card__list">
+            <li><strong>You must report</strong> to the regulator if you do not meet the accessibility requirements.</li>
+            <li><strong>The only exception:</strong> proving it would be &ldquo;a disproportionate burden or a fundamental alteration&rdquo;.</li>
+            <li><strong>Supervision:</strong> the regulator checks compliance and confirms every report.</li>
+          </ul>
+          <a href="https://www.acm.nl/en/accessibility"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="hp-pain-card__link">
+            Read the rules at acm.nl<span class="sr-only"> (opens in a new window)</span>
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+          </a>
         </div>
-        <h3 class="hp-service-card__title">Support bundle</h3>
-        <p class="hp-service-card__desc">
-          Direct access to our experts for ad-hoc questions and quick
-          reviews whenever you need them.
-        </p>
-        <a class="hp-service-card__link" href="/en/contact/">
-          Learn about support
-          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
-        </a>
-      </div>
-
-      <div class="hp-service-card">
-        <div class="hp-service-card__icon">
-          <span class="material-symbols-outlined" aria-hidden="true">search</span>
-        </div>
-        <h3 class="hp-service-card__title">Mini audit</h3>
-        <p class="hp-service-card__desc">
-          A senior auditor reviews your website by hand for technical,
-          design and content issues. Ideal as a starting point.
-        </p>
-        <a class="hp-service-card__link" href="/en/quick-scan/">
-          View offer
-          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
-        </a>
-      </div>
-
-      <div class="hp-service-card">
-        <div class="hp-service-card__icon">
-          <span class="material-symbols-outlined" aria-hidden="true">school</span>
-        </div>
-        <h3 class="hp-service-card__title">Workshops and training</h3>
-        <p class="hp-service-card__desc">
-          We make your team self-sufficient in digital accessibility
-          through practical knowledge sharing for developers and content teams.
-        </p>
-        <a class="hp-service-card__link" href="/en/contact/">
-          View offer
-          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
-        </a>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- ─── CONTACT FORM 1 ─── -->
-<section class="hp-contact-section">
+<!-- ─── SOCIAL PROOF ─── -->
+<section class="hp-proof">
   <div class="hp-container">
-    <div class="hp-contact__grid">
-      <div class="hp-contact__text">
-        <h2 class="hp-heading-lg">Ready to lower the barrier?</h2>
-        <p class="hp-contact__intro">
-          Our experts are ready to guide you towards a digital
-          landscape where everyone is welcome.
-        </p>
-        <div class="cta-people">
-          <div class="cta-people__person">
-            {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "hp-contact__photo" "Loading" "lazy") }}
-            <div class="cta-people__meta">
-              <span class="cta-people__name">Julia Tol</span>
-              <span class="cta-people__role">Director</span>
-            </div>
-          </div>
-          <div class="cta-people__person">
-            <img src="/images/phi.jpeg" alt="" class="hp-contact__photo" loading="lazy">
-            <div class="cta-people__meta">
-              <span class="cta-people__name">Phi Pham</span>
-              <span class="cta-people__role">Client relations</span>
-            </div>
-          </div>
+    <div class="hp-proof__header">
+      <h2 class="hp-proof__title">This is why 53 organisations choose us</h2>
+      <p class="hp-proof__intro">
+        From a Rijksmuseum app to a Jumbo checkout &mdash; we deliver reports
+        that teams actually get somewhere with.
+      </p>
+    </div>
+
+    <div class="hp-proof__grid">
+      <!-- Card 1: Stats -->
+      <div class="hp-proof__card hp-proof__card--stats">
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">900+</span>
+          <span class="hp-proof__stat-label">audits of websites and apps</span>
+          <span class="hp-proof__stat-sub">since 2019</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">53</span>
+          <span class="hp-proof__stat-label">organisations and companies</span>
+          <span class="hp-proof__stat-sub">Rijksmuseum &middot; Jumbo &middot; NRC &middot; Dutch provinces</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">1 in 3</span>
+          <span class="hp-proof__stat-label">clients come back for a second audit</span>
         </div>
       </div>
-      <div class="hp-contact__form-card">
-        <h3 class="hp-heading-md">Get in touch</h3>
-        <p class="hp-contact__form-sub">Have a specific question? Let us know.</p>
-        <form
-          id="hp-contact-form-1"
-          class="hp-form"
-          novalidate
-          onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-contact-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
-          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-          <div class="hp-form__row">
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="hp-name1">Name</label>
-              <input class="hp-form__input" id="hp-name1" name="naam" autocomplete="name" required type="text" placeholder="Your name" />
-            </div>
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="hp-email1">Email</label>
-              <input class="hp-form__input" id="hp-email1" name="email" autocomplete="email" required type="email" placeholder="your@email.com" />
-            </div>
-          </div>
-          <div class="hp-form__field">
-            <label class="hp-form__label" for="hp-message1">Message</label>
-            <textarea class="hp-form__input hp-form__textarea" id="hp-message1" name="bericht" required placeholder="How can we help you?" rows="4"></textarea>
-          </div>
-          <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
-            Send message
-          </button>
-          <div role="status" aria-live="polite"></div>
-        </form>
+
+      <!-- Card 2: Concrete work -->
+      <div class="hp-proof__card hp-proof__card--case">
+        <h3 class="hp-proof__case-title">Concrete sprint tickets for your Jira or GitHub</h3>
+        <p class="hp-proof__case-body">No translation work. Every finding contains:</p>
+        <ul class="hp-proof__case-list">
+          <li>A screenshot where needed</li>
+          <li>A user story from the visitor</li>
+          <li>A code example with the fix where needed</li>
+          <li>A priority based on impact for your visitors</li>
+        </ul>
+        <p class="hp-proof__case-plus">
+          Plus an <strong>action plan per team</strong> &mdash; development, content, design.
+        </p>
+        <p class="hp-proof__case-result">
+          <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">ios_share</span>
+          <span><strong>The result:</strong> export buttons move everything straight into your tool.</span>
+        </p>
+      </div>
+
+      <!-- Card 3: Quotes -->
+      <div class="hp-proof__card hp-proof__card--quote">
+        <span class="material-symbols-outlined hp-proof__quote-icon" aria-hidden="true">format_quote</span>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            Finally a report my team understood. No WCAG codes, just concrete tickets.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Head of Development, cultural sector
+          </footer>
+        </blockquote>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            They really think along. When we got stuck on an alternative solution,
+            we called &mdash; and we had an answer.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; Product Owner, webshop
+          </footer>
+        </blockquote>
+        <p class="hp-proof__quote-note">Out of respect for their privacy we leave out our clients' names.</p>
       </div>
     </div>
+
   </div>
 </section>
 
 
-<!-- ─── TEST YOUR CONTRAST ─── -->
-<section class="hp-contrast">
+<!-- ─── VALUE PROPS ─── -->
+<section class="hp-vp" id="approach">
   <div class="hp-container">
-    <div class="hp-contrast__grid">
-      <div class="hp-contrast__text">
-        <span class="hp-hero__badge" style="margin-bottom: 1rem;">One of our tools</span>
-        <h2 class="hp-heading-lg">Test your contrast</h2>
-        <p class="hp-contrast__intro">
-          Poor contrast is the most common error on the web. Use our
-          free tool to see how colour choices affect readability.
-        </p>
-        <div class="hp-contrast__checks">
-          <div class="hp-contrast__check">
-            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span>WCAG AA and AAA checked</span>
+
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">The shortest route to an accessible result</h2>
+    </div>
+
+    <!-- VP 1: The report (visual left, text right) -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-finding" aria-hidden="true">
+          <div class="hp-vp-finding__header">
+            <span class="hp-vp-finding__priority">Priority: high</span>
+            <span class="hp-vp-finding__element">Element <code>&lt;button&gt;</code></span>
           </div>
-          <div class="hp-contrast__check hp-contrast__check--muted">
-            <span class="material-symbols-outlined" aria-hidden="true">info</span>
-            <span>Based on the WCAG contrast algorithm</span>
+          <div class="hp-vp-finding__story">
+            <span class="hp-vp-finding__label">User story</span>
+            <p>
+              &ldquo;As a screen reader user I only hear <em>&lsquo;button&rsquo;</em>.
+              I have no idea what happens when I click it.&rdquo;
+            </p>
+          </div>
+          <div class="hp-vp-finding__code">
+            <span class="hp-vp-finding__label">Fix</span>
+            <pre><code>&lt;button aria-label="Read more"&gt;
+  &rarr;
+&lt;/button&gt;</code></pre>
+          </div>
+          <div class="hp-vp-finding__export">
+            <span class="hp-vp-finding__export-label">Export</span>
+            <span class="hp-vp-finding__export-btn">Jira</span>
+            <span class="hp-vp-finding__export-btn">GitHub</span>
+            <span class="hp-vp-finding__export-btn">PDF</span>
           </div>
         </div>
-        <a href="/tools/" class="hp-btn hp-btn--outline" style="margin-top: 1.5rem;">
-          View other tools
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">The report</span>
+        <h3 class="hp-vp__title">A report your team can start on tomorrow</h3>
+        <p class="hp-vp__body">
+          Per element, not per WCAG criterion. Every finding gets a user story and a priority &mdash;
+          with a screenshot or code example where it helps. An action plan per team, a PDF analysis
+          of the findings for the manager, and findings you can export to Jira or GitHub.
+        </p>
+        <a href="/en/accessibility-audit/" class="hp-btn hp-btn--primary">
+          See what an audit gives you
           <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
         </a>
       </div>
-      <div class="hp-contrast__demo">
-        <div class="hp-contrast__preview-card">
-          <div class="hp-contrast__preview-block">
-            <p class="hp-contrast__preview-label">Sample text</p>
-            <p class="hp-contrast__preview-ratio">Contrast Ratio 7.2:1</p>
-          </div>
-          <div class="hp-contrast__color-grid">
-            <div class="hp-contrast__color-swatch">
-              <span class="hp-contrast__swatch-label">Background</span>
-              <div class="hp-contrast__swatch hp-contrast__swatch--primary"></div>
-            </div>
-            <div class="hp-contrast__color-swatch">
-              <span class="hp-contrast__swatch-label">Text colour</span>
-              <div class="hp-contrast__swatch hp-contrast__swatch--white"></div>
+    </div>
+
+    <!-- VP 2: During the project (text left, visual right) -->
+    <div class="hp-vp__row hp-vp__row--reverse">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-chat" aria-hidden="true">
+          <div class="hp-vp-chat__message hp-vp-chat__message--dev">
+            <span class="hp-vp-chat__avatar">JD</span>
+            <div class="hp-vp-chat__bubble">
+              <span class="hp-vp-chat__name">Jan &middot; Developer</span>
+              <p>We are stuck on this dropdown. What is the alternative to <code>aria-expanded</code> here?</p>
+              <span class="hp-vp-chat__time">14:02</span>
             </div>
           </div>
-        </div>
-        <div class="hp-contrast__result">
-          <div class="hp-contrast__result-label">
-            <span class="hp-contrast__result-dot"></span>
-            <span>Magenta Primary</span>
+          <div class="hp-vp-chat__message hp-vp-chat__message--auditor">
+            <span class="hp-vp-chat__avatar hp-vp-chat__avatar--auditor">PA</span>
+            <div class="hp-vp-chat__bubble hp-vp-chat__bubble--auditor">
+              <span class="hp-vp-chat__name">Proper Access</span>
+              <p>Good question. A <code>&lt;details&gt;</code> element works natively here &mdash; less code, accessible out of the box.</p>
+              <span class="hp-vp-chat__time">14:05</span>
+            </div>
           </div>
-          <span class="hp-contrast__result-status">PASSED AAA</span>
+          <div class="hp-vp-chat__typing">
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+            <span class="hp-vp-chat__dot"></span>
+          </div>
         </div>
-        <a href="/en/tools/colour-contrast-checker/" class="hp-btn hp-btn--outline hp-contrast__cta">
-          Open the colour contrast checker
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">During the project</span>
+        <h3 class="hp-vp__title">Stuck? Your senior auditor is one message away</h3>
+        <p class="hp-vp__body">
+          No account managers, no project managers between you and the person doing the work.
+          With our support bundle we join your sprints &mdash; reviewing code, coming up with
+          alternatives, answering questions. We adapt to the way you work.
+        </p>
+      </div>
+    </div>
+
+    <!-- VP 3: After delivery (visual left, text right) -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-ba" aria-hidden="true">
+          <div class="hp-vp-ba__column hp-vp-ba__column--before">
+            <span class="hp-vp-ba__label">Before the audit</span>
+            <ul class="hp-vp-ba__list">
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Contrast
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Alt text
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Keyboard
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Focus visibility
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--fail">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                Form labels
+              </li>
+            </ul>
+          </div>
+          <div class="hp-vp-ba__column hp-vp-ba__column--after">
+            <span class="hp-vp-ba__label">After the retest</span>
+            <ul class="hp-vp-ba__list">
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Contrast
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Alt text
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Keyboard
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Focus visibility
+              </li>
+              <li class="hp-vp-ba__item hp-vp-ba__item--pass">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Form labels
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">After delivery</span>
+        <h3 class="hp-vp__title">From headache to a website or app that meets the law, ranks better and welcomes more visitors</h3>
+        <p class="hp-vp__body">
+          An audit is only finished when the issues are really solved. That is why the retest is part
+          of our process. We check how your website or app is doing as a whole, you can demonstrate
+          EAA compliance, and the file can be closed.
+        </p>
+        <a href="/en/contact/" class="hp-btn hp-btn--primary">
+          Request a quote
           <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
         </a>
       </div>
     </div>
+
+  </div>
+</section>
+
+
+<!-- ─── DIFFERENTIATORS ─── -->
+<section class="hp-diff">
+  <div class="hp-container">
+
+    <div class="hp-diff__header">
+      <h2 class="hp-diff__title">
+        The approach you would expect from an audit bureau
+        &mdash; but rarely get
+      </h2>
+    </div>
+
+    <div class="hp-diff__grid">
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">widgets</span>
+        <h3 class="hp-diff__card-title">Structured per component</h3>
+        <p class="hp-diff__card-body">
+          The market sorts by WCAG success criterion. We sort by component
+          &mdash; which is what works for a team that has to fix things.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">record_voice_over</span>
+        <h3 class="hp-diff__card-title">A user story per finding</h3>
+        <p class="hp-diff__card-body">
+          Every finding starts with a story from a visitor with a disability.
+          That way everyone on your team understands the impact &mdash; not just developers.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">image</span>
+        <h3 class="hp-diff__card-title">Visual examples</h3>
+        <p class="hp-diff__card-body">
+          Not just text. Screenshots, code examples and mockups where they help.
+          We write in language that suits your reader.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">balance</span>
+        <h3 class="hp-diff__card-title">Genuinely independent</h3>
+        <p class="hp-diff__card-body">
+          We do not build websites, sell software or push overlays. We only do the audit work.
+          No conflict of interest, no upsell.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">science</span>
+        <h3 class="hp-diff__card-title">Our own research, every week</h3>
+        <p class="hp-diff__card-body">
+          WCAG evolves, browsers change, assistive technology moves on.
+          We test new tools every week so your audit stays up to date.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">translate</span>
+        <h3 class="hp-diff__card-title">In English or Dutch</h3>
+        <p class="hp-diff__card-body">
+          Prefer an English report for your international team? We deliver that
+          as standard, at no extra cost.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="hp-how">
+  <div class="hp-container">
+
+    <div class="hp-how__header">
+      <h2 class="hp-how__title">
+        From first conversation to closed file &mdash; in 3 steps
+      </h2>
+    </div>
+
+    <ol class="hp-how__grid">
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">1</span>
+        <h3 class="hp-how__step-title">Intake call and quote</h3>
+        <p class="hp-how__step-body">
+          In 30 minutes we go through your site or app, your team, your deadlines and what you
+          already have. You get a clear quote within 2 working days &mdash; no standard price list,
+          but fixed hourly rates.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">2</span>
+        <h3 class="hp-how__step-title">A thorough audit</h3>
+        <p class="hp-how__step-body">
+          Manual testing by a senior auditor, reviewed by a second pair of eyes. We simulate
+          different disabilities and listen to your website or app with a screen reader.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">3</span>
+        <h3 class="hp-how__step-title">Report and retest</h3>
+        <p class="hp-how__step-body">
+          You receive the report per component, with user stories, an action plan per team
+          and export buttons. After your fixes we run the retest &mdash; to check everything
+          works and the file can be closed.
+        </p>
+      </li>
+    </ol>
+
+    <div class="hp-how__cta">
+      <a href="/en/contact/" class="hp-btn hp-btn--primary">
+        Book an intake call
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
   </div>
 </section>
 
 
 <!-- ─── LATEST INSIGHTS ─── -->
 {{ $allBlog := where site.RegularPages "Section" "blog" }}
+{{ $allBlog = where $allBlog "Params.sitemap_exclude" "!=" true }}
+{{ $allBlog = where $allBlog "Params.locked" "!=" true }}
 {{ $recentPosts := first 4 ($allBlog.ByDate.Reverse) }}
 {{ if $recentPosts }}
 <section class="hp-insights">
   <div class="hp-container">
     <div class="hp-insights__header">
       <div class="hp-insights__header-text">
-        <h2 class="hp-heading-lg">Latest insights</h2>
+        <h2 class="hp-heading-lg">What you need to know about digital accessibility</h2>
         <p class="hp-insights__intro">Stay up to date with developments in digital accessibility.</p>
       </div>
       <a class="hp-insights__all-link" href="/en/blog/">View all articles</a>
@@ -299,17 +587,17 @@
         <div class="hp-legal-cta__content">
           <h2 class="hp-heading-lg hp-legal-cta__title">Need a compliance statement?</h2>
           <p class="hp-legal-cta__desc">
-            Comply with national digital accessibility laws or the European Accessibility Act
-            (EAA) with our specialised audits and reports.
+            Meet the legal requirements for digital accessibility with your website or app &mdash;
+            for business (EAA) or for government. Audits and guidance included.
           </p>
           <div class="hp-legal-cta__buttons">
-            <a class="hp-btn hp-btn--white" href="/en/digital-accessibility-government/">
-              Government
-              <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+            <a class="hp-btn hp-btn--white" href="/en/e-commerce-digital-accessibility/">
+              EAA statement
+              <span class="material-symbols-outlined" aria-hidden="true">launch</span>
             </a>
-            <a class="hp-btn hp-btn--ghost" href="/en/e-commerce-digital-accessibility/">
-              EAA compliance
-              <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+            <a class="hp-btn hp-btn--white" href="/en/digital-accessibility-government/">
+              Government statement
+              <span class="material-symbols-outlined" aria-hidden="true">launch</span>
             </a>
           </div>
         </div>
@@ -319,11 +607,11 @@
             How well does your team know digital accessibility? Take one of our quizzes and find out.
           </p>
           <div class="hp-legal-cta__buttons">
-            <a class="hp-btn hp-btn--white" href="/tools/quiz-webredactie/">
+            <a class="hp-btn hp-btn--white" href="/en/tools/quiz-web-editors/">
               Quiz content editors
               <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
             </a>
-            <a class="hp-btn hp-btn--ghost" href="/tools/quiz-developers/">
+            <a class="hp-btn hp-btn--ghost" href="/en/tools/quiz-developers/">
               Quiz developers
               <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
             </a>
@@ -339,7 +627,7 @@
 {{ with .Params.faqs }}
 <section class="hp-faq">
   <div class="hp-container">
-    <h2 class="hp-heading-lg hp-faq__title">Frequently asked questions</h2>
+    <h2 class="hp-heading-lg hp-faq__title">Questions you probably have</h2>
     <div class="hp-faq__container faq-container">
       {{ range . }}
         <details class="faq-item">
@@ -360,10 +648,10 @@
   <div class="hp-container">
     <div class="hp-contact-final__grid">
       <div class="hp-contact-final__text">
-        <h2 class="hp-heading-lg">Let's build a more accessible web together.</h2>
+        <h2 class="hp-heading-lg">Ready to find out where you stand?</h2>
         <p class="hp-contact-final__intro">
-          Have questions about our services or want to schedule an audit?
-          We typically respond within one business day.
+          Two ways to start: an intake call or a mini audit.
+          We usually respond within one business day.
         </p>
         <div class="hp-contact-final__info">
           <div class="hp-contact-final__info-row">
