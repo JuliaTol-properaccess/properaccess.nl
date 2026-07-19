@@ -61,6 +61,41 @@
   </div>
 </section>
 
+<!-- ─── WAT DE RADAR WEL EN NIET DOET ─── -->
+<section class="rad-caveat">
+  <div class="hp-container">
+    <div class="rad-caveat__box">
+      <span class="rad-caveat__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/>
+          <path d="m16 16 5 5M11 8v4M11 15h.01"/>
+        </svg>
+      </span>
+      <div class="rad-caveat__text">
+        <h2 class="rad-caveat__title">
+          {{ if $nl }}De radar vindt mogelijke problemen, jij beoordeelt ze{{ else }}The radar finds possible problems, you judge them{{ end }}
+        </h2>
+        {{ if $nl }}
+        <p>Gebruik de radar om te zien waar mogelijk iets misgaat. Wat oplicht is een
+        startpunt, geen oordeel. Uitzonderingen en ingewikkelde onderdelen beoordeel je
+        daarna zelf.</p>
+        <p>Een klein klikdoel kan alsnog voldoen. Een alt-tekst kan aanwezig zijn en
+        toch niet kloppen bij de afbeelding. Of iets echt een probleem is, hangt af van
+        de context, en die kent geen enkele tool. <strong>Geen enkele tool vervangt een
+        menselijk oordeel.</strong></p>
+        {{ else }}
+        <p>Use the radar to see where something might be going wrong. What lights up is a
+        starting point, not a verdict. Exceptions and complicated components are yours to
+        judge afterwards.</p>
+        <p>A small tap target can still pass. Alt text can be present and still not match
+        the image. Whether something is really a problem depends on context, and no tool
+        knows the context. <strong>No tool replaces human judgement.</strong></p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ─── GARANTIES ─── -->
 <section class="rad-promise">
   <div class="hp-container">
