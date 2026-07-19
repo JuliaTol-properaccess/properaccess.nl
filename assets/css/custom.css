@@ -16658,8 +16658,7 @@ html.dark .contrast-voorbeeld__swatch {
   color: #d1d5db;
 }
 
-.rad-promise__version code,
-.rad-promise__note code {
+.rad-promise__version code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.85rem;
   font-weight: 700;
@@ -16667,13 +16666,6 @@ html.dark .contrast-voorbeeld__swatch {
   color: #fff;
   padding: 0.2rem 0.55rem;
   border-radius: 0.375rem;
-}
-
-.rad-promise__note {
-  margin: 1.75rem 0 0;
-  font-size: 0.9rem;
-  color: #d1d5db;
-  line-height: 1.7;
 }
 
 /* ─── Checks met tabbladen ─── */
