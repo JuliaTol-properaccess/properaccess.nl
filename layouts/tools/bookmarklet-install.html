@@ -185,13 +185,17 @@
           {{ if $nl }}Tabblad {{ $tab.label }}{{ else }}{{ $tab.label }} tab{{ end }}
         </h3>
         <ul class="rad-checks__grid">
-          {{ range $tab.checks }}
+          {{ range $check := $tab.checks }}
           <li class="rad-check">
-            <h4 class="rad-check__title">{{ .titel }}</h4>
-            <p class="rad-check__text">{{ .uitleg }}</p>
-            {{ with .wcag }}
+            <h4 class="rad-check__title">{{ $check.titel }}</h4>
+            <p class="rad-check__text">{{ $check.uitleg }}</p>
+            {{ with $check.wcag }}
+            {{/* Linktekst benoemt het onderwerp van de check, zodat elke link op
+                 zichzelf leesbaar is en niet overal hetzelfde zegt. Zonder
+                 onderwerp valt hij terug op de titel van de check. */}}
+            {{ $onderwerp := $check.onderwerp | default (lower $check.titel) }}
             <a class="rad-check__link" href="{{ . }}">
-              {{ if $nl }}Lees de uitleg bij dit succescriterium{{ else }}Read the explainer for this success criterion{{ end }}
+              {{ if $nl }}Lees meer uitleg over {{ $onderwerp }}{{ else }}Read more about {{ $onderwerp }}{{ end }}
             </a>
             {{ end }}
           </li>
