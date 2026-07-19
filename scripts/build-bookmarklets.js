@@ -153,14 +153,12 @@ function main() {
     lens: {
       title: "WCAG Radar",
       slug: "wcag-radar",
-      version: version,
       href: code,
       code: code,
     },
     "lens-en": {
       title: "WCAG Radar",
       slug: "wcag-radar",
-      version: version,
       href: codeEn,
       code: codeEn,
     },
