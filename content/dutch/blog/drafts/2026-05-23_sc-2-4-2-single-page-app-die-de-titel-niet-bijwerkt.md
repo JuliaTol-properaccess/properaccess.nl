@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Single-page app die de titel niet bijwerkt"
 date: 2026-07-19
 slug: "sc-2-4-2-single-page-app-die-de-titel-niet-bijwerkt"
