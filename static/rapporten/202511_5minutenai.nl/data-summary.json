@@ -7,7 +7,8 @@
   },
   "type": {
     "Content": 1,
-    "Techniek": 14
+    "Techniek": 14,
+    "Design": 0
   },
   "wcag": [
     "1.1.1",
