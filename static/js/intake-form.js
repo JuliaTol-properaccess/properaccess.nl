@@ -135,6 +135,7 @@
       bron: "intake",
       endpoint: INTAKE_ENDPOINT,
       successMessage:
+        form.getAttribute("data-success-message") ||
         "Bedankt, je intake is binnen. We hebben je een bevestiging gemaild met een " +
         "samenvatting van je antwoorden. Wil je iets aanvullen of wijzigen? Beantwoord die mail gewoon.",
       onSuccess: function () {
