@@ -70,7 +70,7 @@
     // Handle Worker result
     workerRequest
       .then(function () {
-        form.reset();
+        if (typeof form.reset === "function") form.reset();
         showStatus(form, opts.successMessage || "Verstuurd! We nemen contact op.", "success");
         if (window.plausible) {
           window.plausible('form_submission', {
