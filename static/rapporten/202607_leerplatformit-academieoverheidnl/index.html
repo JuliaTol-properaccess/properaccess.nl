@@ -387,35 +387,7 @@
 <p>Voeg een beschrijvend <code>title</code>-attribuut toe aan het <code>&lt;iframe&gt;</code>-element dat duidelijk maakt welke content is ingesloten. Bijvoorbeeld: <code>&lt;iframe title=&quot;E-learning module Jouw kompas om bewust met AI te werken&quot; src=&quot;...&quot;&gt;&lt;/iframe&gt;</code>.</p>
 </div>
 <div class="issue">
-<h3>#3 - Tekstcontrast is lager dan 4,5:1</h3>
-<div class="meta">
-	<span class="impact"><b>Impact</b>: Medium</span>
-	<span class="type"><b>Type</b>: Techniek</span>
-	<span class="type"><b>WCAG</b>: 1.4.3</span>
-	<span class="type"><b>EN</b>: 9.1.4.3</span>
-</div>
-<figure class="screenshot">
-<img src="images/03.png" alt="">
-</figure>
-<p>Op veel pagina's van de cursus en de toets wordt de combinatie van blauw (<code>#007DC7</code>) en wit gebruikt. Die combinatie heeft een contrastverhouding van 4,4:1 en haalt daarmee het vereiste minimum van 4,5:1 niet. Tekst van normale grootte (kleiner dan 18 pt, of kleiner dan 14 pt vet) heeft een contrast van minimaal 4,5:1 nodig om goed leesbaar te zijn. Onvoldoende contrast maakt tekst moeilijk of niet leesbaar voor bezoekers die slechtziend of kleurenblind zijn, of die een scherm in fel licht gebruiken.</p>
-<p>Enkele voorbeelden van zulke teksten, deze lijst is niet uitputtend:</p>
-<ul>
-<li>Pagina &quot;Start&quot;: de &quot;Controleer&quot;-knoppen, de antwoordopties onder &quot;Checkvragen&quot; en teksten zoals &quot;Onderzoeksmedewerker&quot; en &quot;Beleidsondersteuner&quot;</li>
-<li>Pagina &quot;Hoe gebruik je een AI-assistent bewust?&quot;: de &quot;Controleer&quot;-knoppen, de antwoordopties onder &quot;Checkvragen&quot; en de tekst die begint met &quot;Daarom is het belangrijk om bewust met AI om te gaan...&quot;</li>
-<li>Pagina &quot;Wat is jouw professionele rol?&quot;: de &quot;Controleer&quot;-knoppen, de antwoordopties onder &quot;Checkvragen&quot; en de namen in de carrousel zoals &quot;Chantal&quot; en &quot;Yara&quot;. Controleer ook de andere pagina's.</li>
-<li>&quot;Jouw kompas om bewust met AI te werken: Toets&quot;: de knop &quot;Start toets&quot;</li>
-</ul>
-<h4>User story</h4>
-<blockquote>
-<p><i>Ik heb een visuele beperking. Als ik een pagina lees, kan ik tekst met weinig contrast ten opzichte van de achtergrond niet ontcijferen. Ik verwacht dat tekst altijd duidelijk afsteekt tegen de achtergrond.</i></p>
-</blockquote>
-<h4>Hoe te testen</h4>
-<p>Open de <a href="https://www.properaccess.nl/tools/wcag-radar/">WCAG Radar</a>, optie Contrast, en meet de kleur van de tekst en de achtergrond. Test de tekst op de normale weergavegrootte en het normale gewicht. Uitgeschakelde bedieningselementen zijn uitgezonderd van deze eis.</p>
-<h4>Oplossing</h4>
-<p>Pas de tekstkleur of de achtergrondkleur aan zodat de contrastverhouding minimaal 4,5:1 is. Voor grote tekst is het vereiste minimum 3,0:1.</p>
-</div>
-<div class="issue">
-<h3>#4 - Bij 200% en 400% zoom is content niet zichtbaar en bedienbaar</h3>
+<h3>#3 - Bij 200% en 400% zoom is content niet zichtbaar en bedienbaar</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Groot</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -449,7 +421,7 @@
             <p>Deze pagina is de schil waar de e-learningcursus op staat. De modulestappen openen vanaf deze pagina in een popup-venster en delen één sessiegebonden URL. Deze pagina maakt geen deel uit van de e-learningmodule. We geven deze bevindingen enkel ter informatie.</p>
 <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/course/view.php?id=80"><a href="https://leerplatform.it-academieoverheid.nl/course/view.php?id=80">https://leerplatform.it-academieoverheid.nl/course/view.php?id=80</a></a></p>
 <div class="issue">
-<h3>#5 - Relatie tussen links in de broodkruimelnavigatie is niet in de code vastgelegd</h3>
+<h3>#4 - Relatie tussen links in de broodkruimelnavigatie is niet in de code vastgelegd</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -472,7 +444,7 @@
 <p>Deze structuur maakt voor hulpsoftware duidelijk dat de links een broodkruimelnavigatie vormen met een vaste volgorde en hiërarchie.</p>
 </div>
 <div class="issue">
-<h3>#6 - Kopniveaus zijn niet juist gebruikt</h3>
+<h3>#5 - Kopniveaus zijn niet juist gebruikt</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -497,7 +469,7 @@
 <p>Zorg dat koppen juist genest zijn en de structuur van de content weerspiegelen. Na een <code>&lt;h2&gt;</code> hoort bijvoorbeeld een <code>&lt;h3&gt;</code> of content te volgen, geen tweede <code>&lt;h2&gt;</code> of een <code>&lt;h1&gt;</code>.</p>
 </div>
 <div class="issue">
-<h3>#7 - Links zijn alleen door kleur te onderscheiden van de omringende tekst</h3>
+<h3>#6 - Links zijn alleen door kleur te onderscheiden van de omringende tekst</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -515,7 +487,7 @@
 <p>Links in lopende tekst moeten aan twee voorwaarden tegelijk voldoen: het kleurcontrast tussen de link en de omringende tekst is minimaal 3,0:1 en er is een extra visueel onderscheid als de link gehoverd wordt of focus krijgt. Let op! De linktekst zelf moet een contrast van minimaal 4,5:1 hebben.</p>
 </div>
 <div class="issue">
-<h3>#8 - Decoratieve iconen zijn niet verborgen voor hulpsoftware</h3>
+<h3>#7 - Decoratieve iconen zijn niet verborgen voor hulpsoftware</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Klein</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -536,7 +508,7 @@
 <p>Verberg de decoratieve iconen voor schermlezers door het alt-attribuut leeg te laten: <code>alt=&quot;&quot;</code>.</p>
 </div>
 <div class="issue">
-<h3>#9 - Koppen in de footer zijn niet als kop gemarkeerd</h3>
+<h3>#8 - Koppen in de footer zijn niet als kop gemarkeerd</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -558,7 +530,7 @@
 <p>Verwijder de <code>&lt;strong&gt;</code>-elementen en gebruik voor deze teksten de juiste kopelementen.</p>
 </div>
 <div class="issue">
-<h3>#10 - Tekstcontrast is onvoldoende bij toetsenbordfocus</h3>
+<h3>#9 - Tekstcontrast is onvoldoende bij toetsenbordfocus</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -602,7 +574,7 @@
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
 <div class="issue">
-<h3>#11 - Instructie leunt op visuele kenmerken</h3>
+<h3>#10 - Instructie leunt op visuele kenmerken</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -623,7 +595,7 @@
 <p>Verwijs in de tekst naar het element zelf, niet naar de kleur of vorm.</p>
 </div>
 <div class="issue">
-<h3>#12 - Koppen zijn niet als kop gemarkeerd</h3>
+<h3>#11 - Koppen zijn niet als kop gemarkeerd</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -645,7 +617,7 @@
 <p>Verwijder de <code>&lt;strong&gt;</code>-elementen en gebruik voor deze teksten de juiste kopelementen.</p>
 </div>
 <div class="issue">
-<h3>#13 - Groepslabel is niet gekoppeld aan de groep</h3>
+<h3>#12 - Groepslabel is niet gekoppeld aan de groep</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -674,9 +646,9 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
 <div class="issue">
-<h3>#14 - Geselecteerde puzzelstukjes hebben onvoldoende contrast</h3>
+<h3>#13 - Geselecteerde puzzelstukjes hebben onvoldoende contrast</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -704,9 +676,9 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
 <div class="issue">
-<h3>#15 - Decoratieve emoji's worden voorgelezen door schermlezers</h3>
+<h3>#14 - Decoratieve emoji's worden voorgelezen door schermlezers</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -737,9 +709,9 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
 <div class="issue">
-<h3>#16 - Instructie leunt alleen op visuele positie</h3>
+<h3>#15 - Instructie leunt alleen op visuele positie</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Content</span>
@@ -758,7 +730,7 @@
 <p>Verwijs in de tekst naar het element zelf, niet naar de positie. Is dat binnen deze module niet mogelijk? Overweeg dan een alternatieve toets voor mensen voor wie deze opdracht ontoegankelijk is.</p>
 </div>
 <div class="issue">
-<h3>#17 - Onvoldoende tekstcontrast bij de feedback op de opdracht</h3>
+<h3>#16 - Onvoldoende tekstcontrast bij de feedback op de opdracht</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -789,9 +761,9 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
 <div class="issue">
-<h3>#18 - Bedieningselementen van de carrousel hebben onvoldoende contrast</h3>
+<h3>#17 - Bedieningselementen van de carrousel hebben onvoldoende contrast</h3>
 <div class="meta">
 	<span class="impact"><b>Impact</b>: Medium</span>
 	<span class="type"><b>Type</b>: Techniek</span>
@@ -819,7 +791,7 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=251&amp;currentorg=articulate_rise&amp;scoid=531&amp;sesskey=n3M7IhLRo9&amp;display=popup&amp;mode=normal#maincontent</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe, en de ontoegankelijke instructie zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe, en de ontoegankelijke instructie zijn beschreven in eerdere secties.</p>
 
           </article>
           
@@ -831,7 +803,7 @@
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=252&amp;currentorg=articulate_rise&amp;scoid=533&amp;sesskey=nwHvZYLTGw&amp;display=popup&amp;mode=normal"><a href="https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=252&amp;currentorg=articulate_rise&amp;scoid=533&amp;sesskey=nwHvZYLTGw&amp;display=popup&amp;mode=normal">https://leerplatform.it-academieoverheid.nl/mod/scorm/player.php?a=252&amp;currentorg=articulate_rise&amp;scoid=533&amp;sesskey=nwHvZYLTGw&amp;display=popup&amp;mode=normal</a></a></p>
-<p>De bevindingen over contrast, de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
+<p>De bevindingen over de paginatitel en het iframe zijn beschreven in eerdere secties.</p>
 
           </article>
           
