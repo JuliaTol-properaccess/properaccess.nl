@@ -35,7 +35,6 @@
     ["type_onderzoek", "Type onderzoek"],
     ["aantal_paginatypes", "Pagina- of schermtypes"],
     ["functionaliteiten", "Functionaliteiten"],
-    ["aantal_domeinen", "Domeinen"],
     ["meertalig", "Meertalig"],
     ["talen", "Talen"]
   ];

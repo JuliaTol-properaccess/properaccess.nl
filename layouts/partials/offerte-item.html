@@ -128,20 +128,6 @@
       </label>
       {{ end }}
     </fieldset>
-
-    <fieldset class="offerte-form__group offerte-cond"
-              data-show-when-any="soort=website|soort=webshop|soort=systeem" hidden>
-      <legend class="hp-form__label">Hoeveel domeinen of subdomeinen horen erbij?</legend>
-      {{ range $opt := slice
-          (dict "v" "1" "l" "1")
-          (dict "v" "2-3" "l" "2 tot 3")
-          (dict "v" "meer" "l" "Meer dan 3") }}
-      <label class="offerte-form__option">
-        <input type="radio" data-name="aantal_domeinen" value="{{ $opt.v }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
   </div>
 
   <!-- Talen: per onderzoek, want de ene site is meertalig en de andere niet -->
