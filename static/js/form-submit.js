@@ -39,6 +39,11 @@
     for (var i = 0; i < inputs.length; i++) {
       var input = inputs[i];
       if (!input.name || input.type === "submit") continue;
+      // Namen die met __ beginnen zijn alleen voor de interface (bijvoorbeeld de
+      // losse velden per onderzoek in het offerteformulier). Die gaan samengevat
+      // mee in een eigen veld en hoeven hier niet nog eens los in.
+      if (input.name.indexOf("__") === 0) continue;
+      if (input.disabled) continue;
 
       if (input.type === "radio" || input.type === "checkbox") {
         if (!input.checked) continue;

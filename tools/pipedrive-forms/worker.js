@@ -34,8 +34,14 @@ const NOTIFY_OVERRIDES = {
 };
 
 // Leesbare labels voor de velden van de offerte-rekentool, in weergavevolgorde.
+// Een aanvraag kan meerdere onderzoeken bevatten; die staan samengevat in
+// "onderzoeksobjecten". De losse velden eronder komen alleen nog voor bij
+// oudere inzendingen van één onderzoek.
 const OFFERTE_VELDEN = [
+  ["aantal_onderzoeken", "Aantal onderzoeken"],
   ["onderzoeksobject", "Onderzoeksobject"],
+  ["urls", "URL's"],
+  ["onderzoeksobjecten", "Scope per onderzoek"],
   ["type_onderzoek", "Type onderzoek"],
   ["app_platform", "Platform"],
   ["aantal_documenten", "Aantal documenten"],
