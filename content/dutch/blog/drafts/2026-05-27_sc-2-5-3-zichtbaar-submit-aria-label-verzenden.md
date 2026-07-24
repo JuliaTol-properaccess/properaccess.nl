@@ -3,12 +3,12 @@ title: 'Zichtbaar "Submit", aria-label "Verzenden"'
 date: 2026-07-23
 slug: "sc-2-5-3-zichtbaar-submit-aria-label-verzenden"
 categories:
-  -' "wcag-uitgelegd"'
+  - "wcag-uitgelegd"
 tags:
-  -' "wcag"'
-  -' "2-5-3"'
-  -' "label"'
-  -' "spraaksturing"'
+  - "wcag"
+  - "2-5-3"
+  - "label"
+  - "spraaksturing"
 description: 'Zichtbaar "Submit", aria-label "Verzenden" — WCAG 2.5.3 Label in naam (post 5/7)'
 keywords:
   - digitale toegankelijkheid
