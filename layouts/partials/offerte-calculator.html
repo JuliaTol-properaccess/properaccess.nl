@@ -1,7 +1,12 @@
 {{/*
   Interactief offerteformulier voor /offerte-wcag-onderzoek/.
   Vraagt gericht de gegevens uit die de prijs van een audit bepalen.
-  Toon/verberg-logica en verzending via static/js/offerte-form.js.
+
+  Opbouw: één of meer onderzoeksblokken (offerte-item.html), gevolgd door de
+  vragen die voor de hele aanvraag gelden. Zo kan iemand met drie websites en
+  een app alles in één offerte aanvragen.
+
+  Toon/verberg-logica, nummering en verzending via static/js/offerte-form.js.
 */}}
 <form
   id="offerte-form"
@@ -10,186 +15,52 @@
   aria-describedby="offerte-form-hint">
   <p id="offerte-form-hint" class="offerte-form__hint">
     Velden met een sterretje zijn verplicht. Afhankelijk van je keuzes verschijnen er extra vragen.
+    Heb je meerdere websites, apps of systemen? Voeg ze allemaal toe, dan krijg je één offerte voor het geheel.
     We rekenen niet meteen een bedrag uit, maar sturen je binnen 1 werkdag een offerte op maat.
   </p>
+
+  <noscript>
+    <p class="offerte-form__hint">
+      Dit formulier werkt alleen met JavaScript. Mail je aanvraag anders naar
+      <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of bel 085 5055 890.
+    </p>
+  </noscript>
 
   <!-- Honeypot tegen bots, niet zichtbaar voor bezoekers -->
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
          style="position:absolute;left:-9999px" />
 
-  <!-- ─── BLOK 1: WAT ONDERZOEKEN WE ─── -->
+  <!-- ─── WAT ONDERZOEKEN WE: één blok per website, app of systeem ─── -->
+  <div id="offerte-items" class="offerte-form__items">
+    {{ partial "offerte-item.html" . }}
+  </div>
+
+  <template id="offerte-item-template">
+    {{ partial "offerte-item.html" . }}
+  </template>
+
+  <div class="offerte-form__items-bar">
+    <button type="button" class="offerte-form__add-item" id="offerte-add-item">
+      <span aria-hidden="true">+</span> Nog een onderzoek toevoegen
+    </button>
+    <p class="offerte-form__help" id="offerte-items-hint">
+      Bijvoorbeeld een tweede website, een subsite of de app die erbij hoort.
+    </p>
+  </div>
+  <div class="offerte-form__announce" aria-live="polite" id="offerte-items-status"></div>
+
+  <!-- Wordt bij verzenden gevuld met de samenvatting van alle onderzoeken -->
+  <input type="hidden" name="aantal_onderzoeken" id="offerte-aantal-onderzoeken" />
+  <input type="hidden" name="onderzoeksobject" id="offerte-soorten" />
+  <input type="hidden" name="urls" id="offerte-urls-value" />
+  <input type="hidden" name="onderzoeksobjecten" id="offerte-scope" />
+
+  <!-- ─── RAPPORT ─── -->
   <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Wat onderzoeken we?</legend>
-
-    <fieldset class="offerte-form__group" aria-required="true">
-      <legend class="hp-form__label">Wat wil je laten onderzoeken? <span class="offerte-form__req">*</span></legend>
-      <p class="offerte-form__help">Je kunt meerdere opties aanvinken.</p>
-      {{ range $opt := slice
-          (dict "v" "website" "l" "Een website")
-          (dict "v" "webshop" "l" "Een webshop")
-          (dict "v" "app" "l" "Een mobiele app")
-          (dict "v" "documenten" "l" "Een of meer documenten (pdf)")
-          (dict "v" "systeem" "l" "Een systeem of portaal") }}
-      <label class="offerte-form__option">
-        <input type="checkbox" name="onderzoeksobject" value="{{ $opt.v }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
-
-    <!-- App: welk platform -->
-    <fieldset class="offerte-form__group offerte-cond" data-show-when="onderzoeksobject=app" hidden>
-      <legend class="hp-form__label">Welk platform?</legend>
-      <p class="offerte-form__help">
-        Twee platforms betekent meer werk. Onderzoeken we zowel iOS als Android, kies dan "Beide".
-      </p>
-      <label class="offerte-form__option">
-        <input type="radio" name="app_platform" value="ios" data-required />
-        <span>iOS (App Store)</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="app_platform" value="android" data-required />
-        <span>Android (Google Play)</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="app_platform" value="beide" data-required />
-        <span>Beide</span>
-      </label>
-    </fieldset>
-
-    <!-- Documenten: hoeveelheid -->
-    <div class="offerte-cond hp-form__field" data-show-when="onderzoeksobject=documenten" hidden>
-      <label class="hp-form__label" for="offerte-documenten">Hoeveel documenten en pagina's ongeveer?</label>
-      <p class="offerte-form__help">
-        Het aantal documenten en de totale omvang bepalen de prijs van een documentaudit.
-      </p>
-      <input class="hp-form__input" type="text" id="offerte-documenten" name="aantal_documenten"
-             placeholder="Bijvoorbeeld 3 pdf's, samen zo'n 40 pagina's" />
-    </div>
-
-    <!-- URL's: één regel per product, uitbreidbaar -->
-    <div class="hp-form__field offerte-form__urls-block">
-      <span class="hp-form__label" id="offerte-urls-label">URL('s) van wat we onderzoeken</span>
-      <p class="offerte-form__help">
-        Geef de URL van elke website, webshop of elk systeem. Onderzoeken we meerdere producten?
-        Voeg dan per product een URL toe. Een app of losse documenten hebben geen URL nodig.
-      </p>
-      <div id="offerte-urls" class="offerte-form__urls" role="group" aria-labelledby="offerte-urls-label">
-        <div class="offerte-form__url-row">
-          <input class="hp-form__input offerte-form__url-input" type="url" aria-label="URL 1"
-                 placeholder="https://" />
-        </div>
-      </div>
-      <button type="button" class="offerte-form__add-url" id="offerte-add-url">
-        <span aria-hidden="true">+</span> Nog een URL toevoegen
-      </button>
-      <!-- Wordt bij verzenden gevuld met alle ingevulde URL's -->
-      <input type="hidden" name="urls" id="offerte-urls-value" />
-    </div>
-  </fieldset>
-
-  <!-- ─── BLOK 2: TYPE ONDERZOEK ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Type onderzoek</legend>
-    <fieldset class="offerte-form__group" aria-required="true">
-      <legend class="hp-form__label">Wat voor onderzoek wil je? <span class="offerte-form__req">*</span></legend>
-      <label class="offerte-form__option">
-        <input type="radio" name="type_onderzoek" value="volledig" required />
-        <span>Volledige audit (content én techniek)</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="type_onderzoek" value="content" required />
-        <span>Alleen content</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="type_onderzoek" value="techniek" required />
-        <span>Alleen techniek</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="type_onderzoek" value="weet-niet" required />
-        <span>Weet ik niet, denk met me mee</span>
-      </label>
-    </fieldset>
-  </fieldset>
-
-  <!-- ─── BLOK 3: OMVANG (website, webshop of systeem) ─── -->
-  <fieldset class="offerte-form__block offerte-cond"
-            data-show-when-any="onderzoeksobject=website|onderzoeksobject=webshop|onderzoeksobject=systeem" hidden>
-    <legend class="offerte-form__legend">Omvang</legend>
-
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Hoeveel verschillende paginatypes heeft de site?</legend>
-      <p class="offerte-form__help">
-        Denk aan sjablonen: homepage, artikel, formulier, productpagina, overzicht. Niet het totaal aantal pagina's.
-      </p>
-      {{ range $opt := slice
-          (dict "v" "1-5" "l" "1 tot 5")
-          (dict "v" "6-10" "l" "6 tot 10")
-          (dict "v" "11-20" "l" "11 tot 20")
-          (dict "v" "20-plus" "l" "Meer dan 20") }}
-      <label class="offerte-form__option">
-        <input type="radio" name="aantal_paginatypes" value="{{ $opt.v }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
-
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Welke functionaliteiten heeft de site?</legend>
-      <p class="offerte-form__help">Vink aan wat van toepassing is. Meer functionaliteit betekent meer om te onderzoeken.</p>
-      {{ range $opt := slice
-          (dict "v" "inlog" "l" "Inlog of account")
-          (dict "v" "webshop" "l" "Webshop of afrekenen")
-          (dict "v" "formulieren" "l" "Formulieren")
-          (dict "v" "zoeken-filteren" "l" "Zoeken of filteren")
-          (dict "v" "widgets" "l" "Interactieve widgets (kalender, configurator)")
-          (dict "v" "video" "l" "Video of mediaspeler")
-          (dict "v" "kaart" "l" "Kaart")
-          (dict "v" "documenten" "l" "Downloads of documenten") }}
-      <label class="offerte-form__option">
-        <input type="checkbox" name="functionaliteiten" value="{{ $opt.l }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
-
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Hoeveel domeinen of subdomeinen horen erbij?</legend>
-      {{ range $opt := slice
-          (dict "v" "1" "l" "1")
-          (dict "v" "2-3" "l" "2 tot 3")
-          (dict "v" "meer" "l" "Meer dan 3") }}
-      <label class="offerte-form__option">
-        <input type="radio" name="aantal_domeinen" value="{{ $opt.v }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
-  </fieldset>
-
-  <!-- ─── BLOK 4: TALEN ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Talen</legend>
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Is het onderzoeksobject meertalig?</legend>
-      <p class="offerte-form__help">Extra talen betekenen extra pagina's om te onderzoeken.</p>
-      <label class="offerte-form__option">
-        <input type="radio" name="meertalig" value="nee" />
-        <span>Nee, één taal</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="meertalig" value="ja" />
-        <span>Ja, meerdere talen</span>
-      </label>
-    </fieldset>
-    <div class="offerte-cond hp-form__field" data-show-when="meertalig=ja" hidden>
-      <label class="hp-form__label" for="offerte-talen">Welke talen?</label>
-      <input class="hp-form__input" type="text" id="offerte-talen" name="talen"
-             placeholder="Bijvoorbeeld Nederlands en Engels" data-required />
-    </div>
-
+    <legend class="offerte-form__legend">Rapport</legend>
     <fieldset class="offerte-form__group">
       <legend class="hp-form__label">In welke taal moet het rapport?</legend>
+      <p class="offerte-form__help">Deze keuze geldt voor alle onderzoeken in deze aanvraag.</p>
       <label class="offerte-form__option">
         <input type="radio" name="taal_rapport" value="nl" checked />
         <span>Nederlands</span>
@@ -197,27 +68,6 @@
       <label class="offerte-form__option">
         <input type="radio" name="taal_rapport" value="en" />
         <span>Engels</span>
-      </label>
-    </fieldset>
-  </fieldset>
-
-  <!-- ─── BLOK 5: EXTRA'S ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Extra's</legend>
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Wil je hier alvast rekening mee houden?</legend>
-      <p class="offerte-form__help">Optioneel. Je zit nergens aan vast, we zetten het als keuze in de offerte.</p>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Hercontrole na oplossen" />
-        <span>Hercontrole nadat we de bevindingen hebben opgelost</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Nabespreking (1 uur)" />
-        <span>Nabespreking van het rapport (1 uur)</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Begeleiding bij oplossen" />
-        <span>Begeleiding bij het oplossen (strippenkaart)</span>
       </label>
     </fieldset>
 
@@ -238,17 +88,38 @@
     </fieldset>
   </fieldset>
 
-  <!-- ─── BLOK 6: TOELICHTING ─── -->
+  <!-- ─── EXTRA'S ─── -->
+  <fieldset class="offerte-form__block">
+    <legend class="offerte-form__legend">Extra's</legend>
+    <fieldset class="offerte-form__group">
+      <legend class="hp-form__label">Wil je hier alvast rekening mee houden?</legend>
+      <p class="offerte-form__help">Optioneel. Je zit nergens aan vast, we zetten het als keuze in de offerte.</p>
+      <label class="offerte-form__option">
+        <input type="checkbox" name="extras" value="Hercontrole na oplossen" />
+        <span>Hercontrole nadat we de bevindingen hebben opgelost</span>
+      </label>
+      <label class="offerte-form__option">
+        <input type="checkbox" name="extras" value="Nabespreking (1 uur)" />
+        <span>Nabespreking van het rapport (1 uur)</span>
+      </label>
+      <label class="offerte-form__option">
+        <input type="checkbox" name="extras" value="Begeleiding bij oplossen" />
+        <span>Begeleiding bij het oplossen (strippenkaart)</span>
+      </label>
+    </fieldset>
+  </fieldset>
+
+  <!-- ─── TOELICHTING ─── -->
   <fieldset class="offerte-form__block">
     <legend class="offerte-form__legend">Toelichting</legend>
     <div class="hp-form__field">
       <label class="hp-form__label" for="offerte-toelichting">Iets wat we moeten weten? (optioneel)</label>
       <textarea class="hp-form__input hp-form__textarea" id="offerte-toelichting" name="toelichting" rows="3"
-                placeholder="Bijvoorbeeld een deadline, of welke onderdelen het belangrijkst zijn"></textarea>
+                placeholder="Bijvoorbeeld een deadline, welk onderzoek het eerst moet, of welke onderdelen het belangrijkst zijn"></textarea>
     </div>
   </fieldset>
 
-  <!-- ─── BLOK 7: JOUW GEGEVENS ─── -->
+  <!-- ─── JOUW GEGEVENS ─── -->
   <fieldset class="offerte-form__block">
     <legend class="offerte-form__legend">Jouw gegevens</legend>
     <div class="hp-form__row">

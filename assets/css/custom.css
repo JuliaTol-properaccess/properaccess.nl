@@ -15787,6 +15787,8 @@ html.dark .tool-pdf__upload-btn--focus {
 /* Consistente ruimte tussen losse velden binnen een blok */
 .offerte-form__block > .hp-form__field,
 .offerte-form__block > .hp-form__row,
+.offerte-item > .hp-form__field,
+.offerte-item > .hp-form__row,
 .offerte-cond > .hp-form__field,
 .offerte-cond > .hp-form__row {
   margin-bottom: 1.5rem;
@@ -15825,6 +15827,12 @@ html.dark .tool-pdf__upload-btn--focus {
 .offerte-cond[hidden] {
   display: none;
 }
+/* Een voorwaardelijk blok in een voorwaardelijk blok krijgt geen tweede streep */
+.offerte-cond .offerte-cond {
+  margin: 0 0 1.5rem;
+  padding-left: 0;
+  border-left: 0;
+}
 
 .offerte-form__help {
   color: #4B5563;
@@ -15840,41 +15848,66 @@ html.dark .tool-pdf__upload-btn--focus {
   border-color: #A30D4B;
 }
 
-/* ─── URL-lijst (meerdere producten) ─── */
-.offerte-form__urls {
+/* ─── Onderzoeksblokken (meerdere audits in één aanvraag) ─── */
+.offerte-form__items {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
 }
-.offerte-form__url-row {
+
+.offerte-item {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0;
+  background: #fff;
+}
+.offerte-item__legend {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #A30D4B;
+  padding: 0 0.5rem;
+  margin-left: -0.5rem;
+}
+.offerte-item > .offerte-form__group:last-of-type {
+  margin-bottom: 0;
+}
+.offerte-item__actions {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
-.offerte-form__url-input {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-.offerte-form__url-remove {
-  flex-shrink: 0;
+.offerte-item__remove {
   background: transparent;
   border: 0;
   padding: 0.5rem 0.25rem;
   color: #004050;
+  font-family: inherit;
   font-size: 0.9375rem;
   font-weight: 600;
   cursor: pointer;
 }
-.offerte-form__url-remove:hover {
+.offerte-item__remove[hidden] {
+  display: none;
+}
+.offerte-item__remove:hover {
   color: #A30D4B;
   text-decoration: underline;
 }
-.offerte-form__url-remove:focus-visible {
+.offerte-item__remove:focus-visible {
   outline: 2px solid #004050;
   outline-offset: 2px;
 }
-.offerte-form__add-url {
+
+.offerte-form__items-bar {
+  margin-bottom: 2.5rem;
+}
+.offerte-form__items-bar .offerte-form__help {
+  margin: 0.625rem 0 0;
+}
+.offerte-form__add-item {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
@@ -15888,13 +15921,29 @@ html.dark .tool-pdf__upload-btn--focus {
   font-weight: 700;
   cursor: pointer;
 }
-.offerte-form__add-url:hover {
+.offerte-form__add-item[hidden] {
+  display: none;
+}
+.offerte-form__add-item:hover {
   background: #A30D4B;
   color: #fff;
 }
-.offerte-form__add-url:focus-visible {
+.offerte-form__add-item:focus-visible {
   outline: 2px solid #004050;
   outline-offset: 2px;
+}
+
+/* Meldingen bij toevoegen en verwijderen: alleen voor hulpsoftware */
+.offerte-form__announce {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 @media (prefers-reduced-motion: reduce) {
