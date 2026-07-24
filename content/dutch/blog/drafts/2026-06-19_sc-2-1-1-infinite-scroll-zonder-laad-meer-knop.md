@@ -4,11 +4,11 @@ title: 'Infinite scroll zonder "laad meer"-knop'
 date: 2026-08-13
 slug: "sc-2-1-1-infinite-scroll-zonder-laad-meer-knop"
 categories:
-  -' "wcag-uitgelegd"'
+  - "wcag-uitgelegd"
 tags:
-  -' "wcag"'
-  -' "2-1-1"'
-  -' "toetsenbord"'
+  - "wcag"
+  - "2-1-1"
+  - "toetsenbord"
 description: 'Infinite scroll zonder "laad meer"-knop — WCAG 2.1.1 Toetsenbord (post 7/9)'
 keywords:
   - digitale toegankelijkheid
