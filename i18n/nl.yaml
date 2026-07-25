@@ -82,3 +82,17 @@
   translation: "Praat met een mens via WhatsApp"
 - id: chat_disclaimer
   translation: "AI-assistent. Voor advies op maat, neem contact met ons op."
+- id: share_on
+  translation: "Deel dit artikel op %s (nieuw venster)"
+- id: share_email
+  translation: "Deel dit artikel via e-mail"
+- id: share_copy
+  translation: "Kopieer de link naar dit artikel"
+- id: share_copied
+  translation: "Link gekopieerd"
+- id: share_fediverse_instance
+  translation: "Adres van je Fediverse-server"
+- id: share_action
+  translation: "Delen"
+- id: share_fediverse
+  translation: "Deel dit artikel op de Fediverse"
