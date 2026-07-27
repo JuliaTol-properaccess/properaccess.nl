@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Grafiek die onbegrijpelijk wordt voorgelezen"
 date: 2026-07-26
 slug: "sc-1-3-2-grafiek-die-onbegrijpelijk-wordt-voorgelezen"
