@@ -18,8 +18,13 @@ const ALLOWED_ORIGINS = [
 ];
 
 const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
-const MODEL = "claude-sonnet-4-20250514";
+const MODEL = "claude-sonnet-5";
 const MAX_TOKENS = 500;
+
+const ERROR_MESSAGES = {
+  nl: "Er ging iets mis. Probeer het later opnieuw.",
+  en: "Something went wrong. Please try again later.",
+};
 const MAX_MESSAGES = 10;
 const MAX_CONTENT_LENGTH = 500;
 
@@ -63,7 +68,8 @@ Proper Access heeft 9 gratis tools voor webredactie op properaccess.nl/tools/: k
 - Als je iets niet weet, zeg dat eerlijk en verwijs naar het contactformulier op properaccess.nl/contact/
 - Als iemand een mens wil spreken, verwijs naar de WhatsApp-knop onderaan het chatvenster
 - Geen jargon zonder uitleg
-- Zeg "je", nooit "u"`;
+- Zeg "je", nooit "u"
+- Gebruik geen emoji's`;
 
 const SYSTEM_PROMPT_EN = `You are the AI assistant of Proper Access, a digital accessibility specialist based in the Netherlands. You help visitors with questions about accessibility, WCAG, and Proper Access services.
 
@@ -95,7 +101,8 @@ Proper Access offers 9 free tools for web editors at properaccess.nl/tools/: hea
 - NEVER give legal advice
 - If you don't know something, say so honestly and refer to the contact form at properaccess.nl/contact/
 - If someone wants to speak to a person, point them to the WhatsApp button at the bottom of the chat window
-- Avoid jargon without explanation`;
+- Avoid jargon without explanation
+- Do not use emojis`;
 
 // ── Main handler ──────────────────────────────────────────────
 
@@ -181,6 +188,10 @@ async function handleChat(request, env, origin) {
       body: JSON.stringify({
         model: MODEL,
         max_tokens: MAX_TOKENS,
+        // Zonder dit denkt Sonnet 5 standaard mee (adaptive thinking) en gaat
+        // dat van de 500 output-tokens af; voor korte chatantwoorden onnodig.
+        thinking: { type: "disabled" },
+        output_config: { effort: "low" },
         system: systemPrompt,
         messages: trimmedMessages.map(function (m) {
           return { role: m.role, content: m.content };
@@ -198,7 +209,8 @@ async function handleChat(request, env, origin) {
 
     return json({ ok: true, content: content }, 200, origin);
   } catch (err) {
-    return json({ ok: false, error: "Something went wrong. Please try again." }, 500, origin);
+    console.error("pa-chat error:", err.message);
+    return json({ ok: false, error: ERROR_MESSAGES[lang === "en" ? "en" : "nl"] }, 500, origin);
   }
 }
 
