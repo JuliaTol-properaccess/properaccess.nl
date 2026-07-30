@@ -137,6 +137,8 @@ weight = 99
 name = "Portaal"
 url = "https://portaal.properaccess.nl/"
 weight = 100
+[main.params]
+underline = true
 
 
 # footer menu

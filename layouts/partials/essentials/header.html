@@ -99,7 +99,7 @@
 
           <li class="nav-item">
             <a
-              class="nav-link {{ if $active }}active{{- end -}}{{ if .Params.highlight }} nav-link--highlight{{ end }}"
+              class="nav-link {{ if $active }}active{{- end -}}{{ if .Params.highlight }} nav-link--highlight{{ end }}{{ if .Params.underline }} nav-link--underline{{ end }}"
               {{ if findRE `^http` .URL }}
                 target="_blank" rel="noopener"
               {{ end }}
