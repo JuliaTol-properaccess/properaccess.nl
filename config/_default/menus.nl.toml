@@ -133,6 +133,11 @@ name = "Contact"
 url = "/contact/"
 weight = 99
 
+[[main]]
+name = "Portaal"
+url = "https://portaal.properaccess.nl/"
+weight = 100
+
 
 # footer menu
 [[footer]]
