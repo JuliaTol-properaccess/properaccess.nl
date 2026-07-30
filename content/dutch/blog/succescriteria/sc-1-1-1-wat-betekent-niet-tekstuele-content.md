@@ -87,7 +87,7 @@ Er zijn twee situaties waarin een lege alt-tekst de juiste keuze is:
 1. **De afbeelding is decoratief.** Een sfeerbeeld, sierlijn of achtergrondpatroon voegt geen informatie toe. Bijna alle stockfoto's zijn decoratief.
 2. **De informatie staat al in de tekst ernaast.** Staat een productfoto direct naast de productnaam en de beschrijving? Dan mag het alt-veld leeg blijven. Een korte alt-tekst zoals "Draadloze koptelefoon" kan ook, maar herhaal niet de hele beschrijving.
 
-Twijfel je of een afbeelding decoratief is? Mail je vraag naar contact@properaccess.nl. We kijken graag met je mee.
+Twijfel je of een afbeelding decoratief is? Mail je vraag naar info@properaccess.nl. We kijken graag met je mee.
 
 ## Zo schrijf je een goede alt-tekst
 

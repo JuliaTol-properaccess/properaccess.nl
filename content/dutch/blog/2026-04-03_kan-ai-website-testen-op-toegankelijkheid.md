@@ -60,7 +60,7 @@ De vragen die ik met dit onderzoek wil beantwoorden:
 - Welke tools, frameworks en methodes zijn er om digitale toegankelijkheid met AI te testen?
 - Hoe werkt elk AI-hulpmiddel onder de motorkap?
 
-Die eerlijkheid is belangrijk. Want als je AI overschat, mis je problemen die je bezoekers dagelijks raken. En als je AI onderschat, loop je achter.
+Dat onderscheid is belangrijk. Want als je AI overschat, mis je problemen die je bezoekers dagelijks raken. En als je AI onderschat, loop je achter.
 
 {{< /case-section >}}
 
@@ -140,7 +140,7 @@ Aan het eind van de serie maken we een compleet overzicht: welke WCAG-criteria k
 - **Webshop-eigenaren** die voor de EAA-deadline staan en snel willen handelen
 - **Digital agencies** die klanten adviseren over toegankelijkheid en zelf automatisch willen testen
 
-Geen AI-hype. Geen doemscenario's. Gewoon eerlijke tests met echte code.
+Geen AI-hype. Geen doemscenario's. Gewoon echte tests met echte code.
 
 ---
 

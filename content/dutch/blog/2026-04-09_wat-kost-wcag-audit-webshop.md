@@ -1,5 +1,5 @@
 ---
-title: "Wat kost een WCAG-audit voor een webshop? Een eerlijk antwoord met indicatie"
+title: "Wat kost een WCAG-audit voor een webshop? Een antwoord met prijsindicatie"
 date: 2026-04-09
 slug: "wat-kost-wcag-audit-webshop"
 categories:
@@ -10,7 +10,7 @@ tags:
   - "prijs"
   - "webshop"
   - "e-commerce"
-description: "Wat betaal je voor een WCAG-audit van een webshop, en waar zit het verschil tussen € 2.100 en € 4.500? Een eerlijk overzicht van wat een audit kost, wat erin zit en wat de prijs bepaalt."
+description: "Wat betaal je voor een WCAG-audit van een webshop, en waar zit het verschil tussen € 2.100 en € 4.500? Een overzicht van wat een audit kost, wat erin zit en wat de prijs bepaalt."
 keywords:
   - "kosten WCAG audit webshop"
   - "prijs WCAG audit"
@@ -18,8 +18,8 @@ keywords:
   - "WCAG audit webshop"
   - "EAA audit kosten"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-seo_title: "Wat kost een WCAG-audit voor een webshop? Eerlijke prijsindicatie 2026"
-seo_description: "Wat kost een WCAG-audit voor een webshop in 2026? Een eerlijk overzicht van prijsindicaties, variabelen en wat je er precies voor krijgt. Geschreven door een senior auditor."
+seo_title: "Wat kost een WCAG-audit voor een webshop? Prijsindicatie 2026"
+seo_description: "Wat kost een WCAG-audit voor een webshop in 2026? Een overzicht van prijsindicaties, variabelen en wat je er precies voor krijgt. Geschreven door een senior auditor."
 seo_keywords:
   [
     "kosten WCAG audit webshop",
@@ -137,7 +137,7 @@ Bij ons zit er meestal **twee tot vier weken** tussen de intake en de oplevering
 
 ## Wat kost het als je het niet doet?
 
-Dit is de eerlijke andere kant van de vraag. De kosten van _niet_ auditeren zijn lastiger te berekenen, maar reëel:
+Dit is de andere kant van de vraag. De kosten van _niet_ auditeren zijn lastiger te berekenen, maar reëel:
 
 - **Verloren omzet.** Volgens het CBS heeft ruim 15% van de Nederlandse volwassenen een functiebeperking die digitale toegankelijkheid raakt. Als je checkout niet werkt voor screenreader-gebruikers, verlies je die conversies. Niet zichtbaar in je dashboard, want ze haken af zonder een spoor achter te laten. De [cijfers van de Europese Raad](https://www.consilium.europa.eu/nl/infographics/disability-eu-facts-figures/) komen zelfs uit op meer dan 20% van de EU-bevolking. Een groot deel van de beperkingen, zoals cognitieve beperkingen, is niet eens te meten.
 - **Klacht bij de ACM of het College voor de Rechten van de Mens.** Eén klacht kost weinig geld direct, maar trekt aandacht en vraagt om herstel binnen een termijn, vaak met dezelfde audit die je vooraf had kunnen doen, plus extra kosten voor haastwerk.

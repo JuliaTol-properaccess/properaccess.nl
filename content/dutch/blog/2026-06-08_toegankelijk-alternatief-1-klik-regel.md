@@ -115,7 +115,7 @@ Daar zit jouw verantwoordelijkheid als eigenaar van de site of app. Je website i
 
 ## Mijn standpunt als auditor
 
-Voor losse elementen op een pagina ben ik positief. Een poster, een infographic of een prijskaart met dezelfde informatie als tekst ernaast: prima oplossing. Je hoeft niet alles toegankelijk te maken, je hoeft de informatie alleen toegankelijk te ontsluiten. Dat scheelt werk en het is een eerlijke uitkomst voor je bezoekers.
+Voor losse elementen op een pagina ben ik positief. Een poster, een infographic of een prijskaart met dezelfde informatie als tekst ernaast: prima oplossing. Je hoeft niet alles toegankelijk te maken, je hoeft de informatie alleen toegankelijk te ontsluiten. Dat scheelt werk en je bezoekers krijgen dezelfde informatie.
 
 ![Twee vrijwel identieke webpagina's naast elkaar met een sync-pijl ertussen. De rechter versie is vager, als teken dat de twee versies uit elkaar lopen.](/images/blog/alt-twee-versies.webp)
 
@@ -127,7 +127,7 @@ Kom ik zo'n volledige tweede versie tegen met een echt gelijkwaardig alternatief
 
 Bepaal eerst waar je mee te maken hebt. Gaat het om een los element op een pagina, zoals een poster, een infographic of een prijskaart? Lever dan dezelfde informatie als echte tekst op dezelfde pagina. Daarmee los je de meeste barrières op zonder het element zelf aan te raken, en dat is precies waar de regel voor bedoeld is.
 
-Gaat het om een heel apart document of een complete tweede versie van een pagina? Dan luidt mijn vuistregel: maak het origineel toegankelijk. Dat is op de lange termijn goedkoper, eerlijker naar je bezoekers, en het scheelt je een hoop discussie tijdens audits.
+Gaat het om een heel apart document of een complete tweede versie van een pagina? Dan luidt mijn vuistregel: maak het origineel toegankelijk. Dat is op de lange termijn goedkoper, beter voor je bezoekers, en het scheelt je een hoop discussie tijdens audits.
 
 Werk je tóch met zo'n volledige tweede versie, controleer dan minstens deze vier dingen:
 

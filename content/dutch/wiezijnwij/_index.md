@@ -20,7 +20,7 @@ features:
     content: "Hoe kies je de beste partner voor zoiets belangrijk en omvangrijk als digitale toegankelijkheid? Ervaring, reputatie, continuïteit en certificering zijn de belangrijkste argumenten."
     bulletpoints:
       - "900+ audits uitgevoerd sinds 2019"
-      - "Eerlijke tarieven"
+      - "Duidelijke tarieven"
       - "Sterk technisch team"
       - "IAAP-gecertificeerd: WAS en CPACC"
     button:

@@ -127,7 +127,7 @@ Als de methode er niet bij staat in de offerte, vraag er dan naar. Een professio
 
 ## Wat je eraan hebt
 
-De kracht van WCAG-EM zit in de reproduceerbaarheid. Als je over een jaar een hertest laat doen, of als je van aanbieder wisselt, komt er geen discussie over "jullie hebben andere pagina's getest". De methode dwingt je een eerlijk, vergelijkbaar en controleerbaar onderzoek te krijgen.
+De kracht van WCAG-EM zit in de reproduceerbaarheid. Als je over een jaar een hertest laat doen, of als je van aanbieder wisselt, komt er geen discussie over "jullie hebben andere pagina's getest". De methode dwingt je een vergelijkbaar en controleerbaar onderzoek te krijgen.
 
 Voor ons is het ook een manier om het gesprek met klanten te structureren. Stap 1 en 2 doen we samen, dan weten beide partijen wat er getoetst gaat worden voordat we aan stap 4 beginnen. Geen verrassingen, geen scope creep.
 

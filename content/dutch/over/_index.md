@@ -19,6 +19,7 @@ keywords:
   ]
 slug: "auditbureau-digitale-toegankelijkheid"
 url: "/auditbureau-digitale-toegankelijkheid/"
+hide_cta: true
 
 banner:
   title: "Wij zijn vakidioten in digitale toegankelijkheid"
@@ -64,19 +65,21 @@ team:
         - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
         - "900+ audits uitgevoerd sinds 2019"
         - "Werkt direct met klanten, geen tussenlaag van accountmanagers"
-    - name: "Het team"
-      role: "Specialisten met dezelfde passie"
+    - name: "Het team achter Julia"
+      role: "Circa 10 auditors, onderzoekers en reviewers"
       image: "/images/pages/iaap.webp"
       bio: >
-        We zijn vakidioten. We worden wakker met de vraag: hoe gedraagt een screenreader
-        zich nou echt bij dit ARIA-patroon? Welke WCAG-interpretatie klopt? We bespreken
-        onze rapporten wekelijks, tonen ons werk aan collega-onderzoekers voor peer review,
-        en doen eigen research, want *"dat staat in de standaard"* is voor ons
-        niet genoeg. We willen weten of we het correct interpreteren.
+        Je werkt niet met één persoon, maar met een team van circa 10 specialisten:
+        senior auditors, onderzoekers en reviewers. We zijn vakidioten. We worden wakker
+        met de vraag: hoe gedraagt een screenreader zich nou echt bij dit ARIA-patroon?
+        Welke WCAG-interpretatie klopt? We bespreken onze rapporten wekelijks, tonen ons
+        werk aan collega-onderzoekers voor peer review, en doen eigen research. Want
+        *"dat staat in de standaard"* is voor ons niet genoeg. We willen weten of we het
+        correct interpreteren.
       highlights:
-        - "Veel intern overleg over rapporten, WCAG-richtlijnen en hulpsoftware"
-        - "Peer review door collega-onderzoekers, ook buiten ons team"
+        - "Een vast team van circa 10 auditors, onderzoekers en reviewers"
         - "6-ogen-controle: elk rapport door minimaal 2 auditors gelezen"
+        - "Peer review door collega-onderzoekers, ook buiten ons team"
         - "Eigen research: we testen op echte hulpsoftware en browsers"
         - "Uitleg zonder jargon, zonder ambtenarentaal"
 
@@ -182,7 +185,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
   <h3 class="card__title">Onafhankelijk</h3>
-  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong>, alleen eerlijk advies.</p>
+  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong>, alleen onafhankelijk advies.</p>
 </div>
 {{< /section-cards >}}
 
@@ -211,8 +214,6 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 Geen account managers, geen project managers ertussen. Bij Proper Access praat je **direct met de auditor** die je rapport schrijft. Dat scheelt tijd, misverstanden en frustratie.
 
 Heb je een technische vraag? Die wordt beantwoord door iemand die je code begrijpt. Wil je sparren over de beste aanpak? We denken mee, ook als het buiten de scope van de audit valt.
-
-[Plan een kennismaking](/contact/) | [Bel ons: 085 5055 890](tel:+31855055890)
 
 {{< /section-full >}}
 

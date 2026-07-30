@@ -158,4 +158,4 @@ De duurzame aanpak:
 ## Volgende stap
 
 Het begint met een audit. Wil je weten wat Proper Access voor je kan doen?  
-Mail Julia Tol via contact@properaccess.nl of bel 085 5055 890.
+Mail Julia Tol via info@properaccess.nl of bel 085 5055 890.

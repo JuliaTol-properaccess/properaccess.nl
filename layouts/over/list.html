@@ -120,9 +120,7 @@
 {{ end }}
 
 
-<!-- ─── STATS ─── -->
-{{ partial "voor-wie/stats-bar.html" . }}
-
+<!-- ─── BEDRIJFSGEGEVENS ─── -->
 {{ with .Params.stats.note }}
 <div class="hp-container" style="text-align: center; padding-bottom: 2rem;">
   <p style="color: #6b7280; font-size: 0.85rem;">{{ . | markdownify }}</p>

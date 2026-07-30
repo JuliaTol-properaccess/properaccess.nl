@@ -10,7 +10,7 @@ tags:
   - "audit"
   - "wcag"
   - "mini-audit"
-description: "Wat is een toegankelijkheidsonderzoek, wat zit er in en wanneer kies je voor een mini-audit versus een volledige audit? Een eerlijke uitleg zonder jargon."
+description: "Wat is een toegankelijkheidsonderzoek, wat zit er in en wanneer kies je voor een mini-audit versus een volledige audit? Een uitleg zonder jargon."
 keywords:
   - toegankelijkheidsonderzoek
   - mini-audit website
@@ -60,7 +60,7 @@ Dat doen we door de pagina systematisch te doorlopen met:
 
 Daarnaast wordt de onderliggende code geïnspecteerd: semantiek, ARIA, koppenstructuur, labels. Dat is geen "scan die we draaien" maar een inspectie die de auditor zelf doet terwijl hij de pagina doorloopt.
 
-Bij elkaar komen we uit op zo'n **200 controlepunten per pagina**. Eén WCAG-succescriterium vraagt vaak meerdere checks — "voldoende contrast" betekent contrast van lopende tekst, grote tekst, iconen, formulierranden, focusindicator en statuskleuren, allemaal apart nagemeten. Al die checks samen geven pas een eerlijk beeld.
+Bij elkaar komen we uit op zo'n **200 controlepunten per pagina**. Eén WCAG-succescriterium vraagt vaak meerdere checks — "voldoende contrast" betekent contrast van lopende tekst, grote tekst, iconen, formulierranden, focusindicator en statuskleuren, allemaal apart nagemeten. Al die checks samen geven pas een volledig beeld.
 
 Welke criteria voor welke beperking gelden, hebben we overzichtelijk gemaakt in [onze gratis tool WCAG-succescriteria per beperking](/tools/sc-per-beperking/). Daar zie je per type bezoeker welke succescriteria relevant zijn.
 

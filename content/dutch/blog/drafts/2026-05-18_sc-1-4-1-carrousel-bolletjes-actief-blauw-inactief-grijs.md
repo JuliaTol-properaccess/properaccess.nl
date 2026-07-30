@@ -43,4 +43,4 @@ In grijstinten: vijf grijze bolletjes. Welke is actief? Onmogelijk te zeggen.
 
 Het mooiste: combineer grootte en rand. Dan is het verschil in grijstinten direct zichtbaar.
 
-**Eerlijk advies:** als je carrousel vijf bolletjes nodig heeft om navigatie te bieden, is je carrousel misschien te lang. Maar dat is een UX-discussie voor een andere post.
+**Advies:** als je carrousel vijf bolletjes nodig heeft om navigatie te bieden, is je carrousel misschien te lang. Maar dat is een UX-discussie voor een andere post.

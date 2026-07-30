@@ -1,5 +1,6 @@
 ---
 title: "Techniek- of systeemaudit"
+hide_cta: true
 meta_title: "Techniek- of systeemaudit: voor softwareleveranciers en productteams | Proper Access"
 layout: "agency"
 date: 2026-05-30

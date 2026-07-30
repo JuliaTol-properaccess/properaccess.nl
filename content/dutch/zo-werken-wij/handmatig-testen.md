@@ -1,5 +1,6 @@
 ---
 title: "2. Handmatig testen"
+hide_cta: true
 meta_title: "Handmatig testen op toegankelijkheid: browsers, hulpsoftware en tools | Proper Access"
 type: "zo-werken-wij"
 layout: "agency"

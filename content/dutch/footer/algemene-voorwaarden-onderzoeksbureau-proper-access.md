@@ -1,5 +1,6 @@
 ---
 title: "Algemene voorwaarden"
+hide_cta: true
 meta_title: "Algemene voorwaarden | Proper Access"
 description: "De algemene voorwaarden van Proper Access, auditbureau voor digitale toegankelijkheid."
 date: 2026-02-21
@@ -57,7 +58,7 @@ De prijs spreken we vooraf af. Elke offerte is maatwerk: geen verborgen kosten, 
 
 {{< offerte-section title="7. SEO en webstatistieken" >}}
 
-Even een eerlijk verhaal: het toegankelijk maken van je website kan invloed hebben op je SEO-resultaten of andere webstatistieken. Soms tijdelijk, soms structureel. Dat is een normaal bijeffect van het aanpassen van je code en content. Het goede nieuws? Een toegankelijke website is op de lange termijn bijna altijd beter voor je vindbaarheid. Maar we willen dat je het weet voordat je begint.
+Goed om te weten: het toegankelijk maken van je website kan invloed hebben op je SEO-resultaten of andere webstatistieken. Soms tijdelijk, soms structureel. Dat is een normaal bijeffect van het aanpassen van je code en content. Het goede nieuws? Een toegankelijke website is op de lange termijn bijna altijd beter voor je vindbaarheid. Maar we willen dat je het weet voordat je begint.
 
 {{< /offerte-section >}}
 
@@ -79,13 +80,13 @@ We kunnen deze voorwaarden af en toe bijwerken. We doen ons best om je daarover 
 
 {{< offerte-section title="10. Toepasselijk recht" bg="light" >}}
 
-Op deze algemene voorwaarden is het Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland. Maar laten we eerlijk zijn: we lossen het liever op met een goed gesprek.
+Op deze algemene voorwaarden is het Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland. Maar we lossen het liever op met een goed gesprek.
 
 {{< /offerte-section >}}
 
 {{< offerte-section title="11. Contact" >}}
 
-Heb je vragen over deze voorwaarden? Neem gerust contact met ons op via [contact@properaccess.nl](mailto:contact@properaccess.nl). We bijten niet.
+Heb je vragen over deze voorwaarden? Neem gerust contact met ons op via [info@properaccess.nl](mailto:info@properaccess.nl).
 
 **Proper Access B.V.**
 Keizersgracht 520 H

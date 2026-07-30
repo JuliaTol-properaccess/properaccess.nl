@@ -1,5 +1,6 @@
 ---
 title: "Hercontrole"
+hide_cta: true
 meta_title: "Hercontrole WCAG: bewijs dat de bevindingen zijn opgelost | Proper Access"
 layout: "agency"
 date: 2026-05-30
@@ -28,7 +29,7 @@ trust:
     - "Binnen 12 weken"
     - "Circa 6 uur werk"
     - "Bewijs voor status A"
-    - "Eerlijke beoordeling"
+    - "Onafhankelijke beoordeling"
     - "Per element rapport"
 ---
 
@@ -77,13 +78,13 @@ Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het
 
 {{< section-full title="Wat we onderweg tegenkomen" >}}
 
-Een hercontrole is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we eerlijk moeten benoemen.
+Een hercontrole is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we moeten benoemen.
 
 - **Vervangende pagina's.** Een pagina uit de oorspronkelijke steekproef die inmiddels weg is, vervangen we door een vergelijkbare pagina. Die kijken we vervolgens volledig na, wat kan betekenen dat eerder goedgekeurde succescriteria alsnog worden afgekeurd op die nieuwe pagina.
 - **Nieuwe componenten.** Heeft het team in de tussentijd een nieuw type kaart, modal of formulier toegevoegd op een pagina in de steekproef? Dan nemen we dat mee.
 - **Nieuwe fouten in de fix.** Soms ontstaat een nieuw probleem tijdens het oplossen: een aria-label dat per ongeluk de oude label-tekst overschrijft, een focus-trap die te streng is afgesteld.
 
-We schrijven dat allemaal eerlijk op. Het doel is geen mooi rapport, het doel is dat je website werkt voor je gebruikers, en dat je toegankelijkheidsverklaring klopt met de werkelijkheid.
+We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je website werkt voor je gebruikers, en dat je toegankelijkheidsverklaring klopt met de werkelijkheid.
 
 {{< /section-full >}}
 

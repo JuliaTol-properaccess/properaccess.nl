@@ -1,5 +1,6 @@
 ---
 title: "4. Begeleiding"
+hide_cta: true
 meta_title: "Begeleiding na het auditrapport: vragen stellen via chat of mail | Proper Access"
 type: "zo-werken-wij"
 layout: "agency"

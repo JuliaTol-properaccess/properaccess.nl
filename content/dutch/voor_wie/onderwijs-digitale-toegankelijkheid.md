@@ -1,5 +1,6 @@
 ---
 title: "Onderwijs"
+hide_cta: true
 meta_title: "Digitale toegankelijkheid in het onderwijs | Proper Access"
 date: 2026-03-07
 slug: "onderwijs-digitale-toegankelijkheid"

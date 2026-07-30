@@ -7,7 +7,7 @@
 
 URL: {{ site.BaseURL }}
 Telefoon: 085 5055 890 (+31 85 5055 890)
-E-mail: contact@properaccess.nl
+E-mail: info@properaccess.nl
 Adres: Keizersgracht 520 H, 1017 EK Amsterdam
 Oprichter: Julia Tol (senior auditor)
 Opgericht: september 2019
@@ -83,7 +83,7 @@ URL: {{ .Permalink }}
 ## Contact
 
 - Bel: [085 5055 890](tel:+31855055890)
-- Mail: [contact@properaccess.nl](mailto:contact@properaccess.nl)
+- Mail: [info@properaccess.nl](mailto:info@properaccess.nl)
 - Plan een videocall: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
 - Offerte aanvragen: {{ site.BaseURL }}offerte-wcag-onderzoek/
 - LinkedIn bedrijf: https://www.linkedin.com/company/properaccess

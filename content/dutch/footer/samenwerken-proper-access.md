@@ -1,5 +1,6 @@
 ---
 title: "Samenwerken met Proper Access"
+hide_cta: true
 date: 2026-02-21
 slug: "samenwerken-proper-access"
 url: "/samenwerken-proper-access/"
@@ -19,7 +20,7 @@ hero_meta:
 
 Je hebt een klant die een toegankelijkheidsaudit nodig heeft. Of misschien wordt het een terugkerend thema: steeds meer organisaties moeten vanaf juni 2025 voldoen aan de European Accessibility Act (EAA).
 
-Je zou het zelf kunnen doen. Een cursus volgen, een paar audits uitvoeren, kijken hoe het gaat. Maar eerlijk is eerlijk: WCAG leer je niet in een paar dagen. Het is een vak apart. En zonder jarenlange ervaring loop je risico op fouten, klachten, en in het ergste geval boetes voor je klant.
+Je zou het zelf kunnen doen. Een cursus volgen, een paar audits uitvoeren, kijken hoe het gaat. Maar WCAG leer je niet in een paar dagen. Het is een vak apart. En zonder jarenlange ervaring loop je risico op fouten, klachten, en in het ergste geval boetes voor je klant.
 
 Wat als je gewoon kunt leveren wat je klant nodig heeft, zonder zelf alles op te zetten? **Dat is precies waar deze samenwerking over gaat.**
 
@@ -73,7 +74,7 @@ Voor elke audit die via jouw bureau loopt, ontvang je een commissie. Geen opstar
 
 {{< offerte-section title="Waarom niet zelf een cursus volgen?" >}}
 
-Laten we eerlijk zijn: een cursus is nuttig als introductie. Maar WCAG toepassen in de praktijk vraagt om meer dan theorie.
+Een cursus is nuttig als introductie. Maar WCAG toepassen in de praktijk vraagt om meer dan theorie.
 
 - **200+ controlepunten per pagina**, elk met nuances die je alleen leert door ze dagelijks te zien
 - **Technische diepgang**: hoe werkt een screenreader écht? Wat doet browser X met bepaalde ARIA-attributen? Wat is de impact van een fout in de focusvolgorde?
