@@ -166,8 +166,8 @@ Bekijk voorbeelden van onze rapporten om een indruk te krijgen van de diepgang e
 {{< offerte-section title="Contactgegevens" bg="light" >}}
 
 **Proper Access B.V.**
-Willemserf 20
-3755 XK Eemnes
+Keizersgracht 520 H
+1017 EK Amsterdam
 
 **Website:** [properaccess.nl](https://properaccess.nl/)
 **Telefoon:** 06-28742274

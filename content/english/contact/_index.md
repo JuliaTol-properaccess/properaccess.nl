@@ -129,7 +129,7 @@ Sometimes. Contact us directly and mention that it's urgent — we'll see what's
 <summary class="faq-question">Where are you based?</summary>
 <div class="faq-answer">
 
-In Eemnes, the Netherlands. But we work fully remote — so location doesn't matter. We support organisations throughout the Netherlands and internationally.
+In Amsterdam, the Netherlands. But we work fully remote — so location doesn't matter. We support organisations throughout the Netherlands and internationally.
 
 </div>
 </details>

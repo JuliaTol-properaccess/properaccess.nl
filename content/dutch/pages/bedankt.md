@@ -33,5 +33,5 @@ faqs:
   - question: Bieden jullie ook spoedservice aan?
     answer: In sommige gevallen kunnen we een versnelde audit of adviestraject aanbieden. Neem direct contact op en vermeld dat het om spoed gaat, dan kijken we wat mogelijk is.
   - question: Waar is Proper Access gevestigd?
-    answer: Wij zijn gevestigd in Eemnes en werken landelijk, volledig digitaal. Onze diensten zijn beschikbaar voor organisaties door het hele land.
+    answer: Wij zijn gevestigd in Amsterdam en werken landelijk, volledig digitaal. Onze diensten zijn beschikbaar voor organisaties door het hele land.
 ---

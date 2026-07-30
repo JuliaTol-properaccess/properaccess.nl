@@ -149,8 +149,8 @@ Wil je een indruk krijgen van de kwaliteit en diepgang van onze rapporten? Bekij
 {{< offerte-section title="Contact" >}}
 
 **Proper Access B.V.**
-Willemserf 20
-3755 XK Eemnes
+Keizersgracht 520 H
+1017 EK Amsterdam
 
 **Telefoon:** 06-28742274
 **E-mail:** info@properaccess.nl
