@@ -47,6 +47,8 @@ De strippenkaart is een vooraf afgesproken aantal uren dat je besteedt aan alles
 - **Mini-audits**: een specifiek deel van je site laten toetsen met dezelfde diepgang als een volledige audit
 - **Hertoets van losse bevindingen**: specifieke punten laten hercontroleren na verbetering
 
+Vragen over een rapport dat we voor je maakten, blijven altijd gratis. Nieuw werk daarbuiten, zoals een extra component reviewen, een nieuwe pagina testen of meekijken bij een vers ontwerp, brengen we per keer in rekening tegen ons losse uurtarief. Met een strippenkaart ben je daar per vraag voordeliger uit: je koopt de uren vooraf in bundel in, tegen een lager tarief dan een losse vraag, en je hebt ze meteen bij de hand.
+
 {{< /section-full >}}
 
 {{< section-cards title="Past in elke werkwijze" columns="2" bg="light" >}}
@@ -95,6 +97,13 @@ Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account manager
 <summary class="faq-question">Hoeveel uur heb ik nodig?</summary>
 <div class="faq-answer">
 <p>Dat hangt af van hoe vaak je ons wilt inzetten. Een code review van een component kost 1-2 uur, een snelle check van een pagina 2-3 uur, sprint-testing per sprint 3-5 uur. We adviseren je bij de kennismaking over een passende bundel.</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary class="faq-question">Kost een losse vraag zonder strippenkaart ook geld?</summary>
+<div class="faq-answer">
+<p>Vragen over een rapport dat we voor je maakten, blijven gratis. Dat blijft zo. Maar nieuw werk buiten dat rapport brengen we per keer in rekening tegen ons losse uurtarief. Bijvoorbeeld een extra component reviewen, een nieuwe pagina testen of meekijken bij een vers ontwerp. Met een strippenkaart is elke vraag voordeliger: je koopt de uren vooraf in bundel in tegen een lager tarief, dus je betaalt per vraag minder dan bij een losse vraag.</p>
 </div>
 </details>
 

@@ -66,10 +66,10 @@ team:
         - "900+ audits uitgevoerd sinds 2019"
         - "Werkt direct met klanten, geen tussenlaag van accountmanagers"
     - name: "Het team achter Julia"
-      role: "Circa 10 auditors, onderzoekers en reviewers"
+      role: "Een team van 10 auditors, onderzoekers en reviewers"
       image: "/images/pages/iaap.webp"
       bio: >
-        Je werkt niet met één persoon, maar met een team van circa 10 specialisten:
+        Je werkt niet met één persoon, maar met een team van 10 specialisten:
         senior auditors, onderzoekers en reviewers. We zijn vakidioten. We worden wakker
         met de vraag: hoe gedraagt een screenreader zich nou echt bij dit ARIA-patroon?
         Welke WCAG-interpretatie klopt? We bespreken onze rapporten wekelijks, tonen ons
@@ -77,7 +77,7 @@ team:
         *"dat staat in de standaard"* is voor ons niet genoeg. We willen weten of we het
         correct interpreteren.
       highlights:
-        - "Een vast team van circa 10 auditors, onderzoekers en reviewers"
+        - "Een vast team van 10 auditors, onderzoekers en reviewers"
         - "6-ogen-controle: elk rapport door minimaal 2 auditors gelezen"
         - "Peer review door collega-onderzoekers, ook buiten ons team"
         - "Eigen research: we testen op echte hulpsoftware en browsers"
