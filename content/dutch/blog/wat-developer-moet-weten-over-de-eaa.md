@@ -38,7 +38,7 @@ Bel Julia (06-28742275), dan kunnen we samen kijken naar waar je behoefte ligt.�
 
 Op basis van onze ervaring in het auditen van websites volgens WCAG 2.1 en 2.2 hebben we een lijst gemaakt met controlepunten die je minimaal moet checken. Deze lijst bevat de meest voorkomende problemen die we op de websites zien. Als je deze fouten niet maakt, heb je al een behoorlijk toegankelijke website. 
 
-Zijn sommige begrippen voor jou nieuw? Wil je meer weten over dit onderwerp? Of wil je je team door ons laten trainen? Neem dan contact op met Julia Tol: [contact@properaccess.nl](mailto:contact@properaccess.nl). 
+Zijn sommige begrippen voor jou nieuw? Wil je meer weten over dit onderwerp? Of wil je je team door ons laten trainen? Neem dan contact op met Julia Tol: [info@properaccess.nl](mailto:info@properaccess.nl). 
 
 ## Meest voorkomende toegankelijkheidsissues
 
@@ -139,4 +139,4 @@ Onze training is volledig afgestemd op jouw team en projecten. We analyseren je 
 
 We zijn trots op onze samenwerking met bedrijven als Ilionix, Stichting Rijksmuseum, Plus Retail, Jumbo Supermarkten, Wirelab en vele anderen.
 
-Wil je bespreken wat wij voor jouw team kunnen betekenen? Neem contact op via **contact@properaccess.nl** of bel **Julia Tol op 06 2874 22 75**.
+Wil je bespreken wat wij voor jouw team kunnen betekenen? Neem contact op via **info@properaccess.nl** of bel **Julia Tol op 06 2874 22 75**.

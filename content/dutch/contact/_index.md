@@ -10,6 +10,7 @@ keywords:
   - EAA compliance hulp
 slug: "contact"
 url: "/contact/"
+hide_cta: true
 ---
 
 {{< section-cards title="Kies hoe je contact opneemt" columns="4" >}}
@@ -23,7 +24,7 @@ url: "/contact/"
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
   <h3 class="card__title">Mail ons</h3>
-  <p><a href="mailto:contact@properaccess.nl"><strong>contact@properaccess.nl</strong></a></p>
+  <p><a href="mailto:info@properaccess.nl"><strong>info@properaccess.nl</strong></a></p>
   <p class="card__meta">Reactie binnen 1 werkdag. Meestal sneller.</p>
 </div>
 <div class="card">
@@ -119,12 +120,3 @@ Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digi
 </details>
 
 {{< /section-full >}}
-
-
-{{< section-cta title="Nog twijfels?" >}}
-
-**53 organisaties** gingen je voor, samen goed voor meer dan **900 audits**. Van overheidsinstellingen tot webshops, van musea tot digital agencies. Ze kozen voor Proper Access omdat we niet alleen rapporten schrijven: we denken mee, leggen uit en lossen op.
-
-[Bel ons: 085 5055 890](tel:+31855055890) | [Mail ons](mailto:contact@properaccess.nl) | [Plan een videocall](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
-
-{{< /section-cta >}}

@@ -43,7 +43,7 @@ Dit is een probleem dat ik bij bijna elke custom videospeler tegenkom. De standa
 - M voor mute
 - Escape om fullscreen te verlaten
 
-**Het eerlijke advies:** gebruik een bestaande toegankelijke videospeler. Plyr, Video.js met het accessibility-plugin, of gewoon de native HTML5 `<video>` met `controls`. Het wiel opnieuw uitvinden is hier bijna altijd een slecht idee.
+**Het advies:** gebruik een bestaande toegankelijke videospeler. Plyr, Video.js met het accessibility-plugin, of gewoon de native HTML5 `<video>` met `controls`. Het wiel opnieuw uitvinden is hier bijna altijd een slecht idee.
 
 ```html
 <!-- De simpelste oplossing -->

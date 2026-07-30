@@ -50,7 +50,7 @@ Je staat er niet alleen voor!
 
 ## De kortste route naar het beste resultaat
 
-Onze ideale klant is iemand die digitale toegankelijkheid wil begrijpen én zijn digitale kanalen wil verbeteren. Herken jij je hierin? Dan kijken we ernaar uit om met je samen te werken. Bel of mail Julia Tol: 06-28742275 of contact@properaccess.nl
+Onze ideale klant is iemand die digitale toegankelijkheid wil begrijpen én zijn digitale kanalen wil verbeteren. Herken jij je hierin? Dan kijken we ernaar uit om met je samen te werken. Bel of mail Julia Tol: 06-28742275 of info@properaccess.nl
 
 - Snelle oplevertijden en reactietijd op vragen
 - Je hebt altijd een directe lijn met je auditor. Je mag altijd vragen stellen naar aanleiding van je rapport.

@@ -1,5 +1,6 @@
 ---
 title: "Trainen van webredactie"
+hide_cta: true
 meta_title: "Training digitale toegankelijkheid voor webredactie | Proper Access"
 weight: 4
 date: 2025-08-04

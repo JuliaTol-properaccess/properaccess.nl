@@ -420,7 +420,7 @@ A: Een goede alt-tekst is verplicht onder SC 1.1.1, maar lost het probleem van 1
 
 **Q: We gebruiken een heel speciaal lettertype dat niet als webfont beschikbaar is. Wat nu?**
 
-A: Als het lettertype echt niet als webfont te gebruiken is en de specifieke visuele presentatie essentieel is voor de boodschap, dan valt het onder de uitzondering. Maar wees eerlijk: de meeste lettertypes zijn tegenwoordig als webfont beschikbaar of hebben een goed alternatief. "Het staat mooier" is geen geldige reden.
+A: Als het lettertype echt niet als webfont te gebruiken is en de specifieke visuele presentatie essentieel is voor de boodschap, dan valt het onder de uitzondering. Maar kijk kritisch: de meeste lettertypes zijn tegenwoordig als webfont beschikbaar of hebben een goed alternatief. "Het staat mooier" is geen geldige reden.
 
 **Q: Hoe zit het met social media afbeeldingen die we op onze site tonen?**
 

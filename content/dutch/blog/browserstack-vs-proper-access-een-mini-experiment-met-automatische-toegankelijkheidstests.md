@@ -7,7 +7,7 @@ categories:
   - "de EAA"
 tags: 
   - "developer"
-description: "Mini-experiment met BrowserStack en automatische toegankelijkheidstests. Wat mis je zonder handmatige WCAG-audit? Een eerlijk developerperspectief."
+description: "Mini-experiment met BrowserStack en automatische toegankelijkheidstests. Wat mis je zonder handmatige WCAG-audit? Een developerperspectief uit de praktijk."
 keywords:
   - browserstack toegankelijkheid
   - automatische toegankelijkheidstests

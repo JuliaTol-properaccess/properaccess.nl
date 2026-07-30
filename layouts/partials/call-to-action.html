@@ -1,4 +1,5 @@
 <!-- Call to actions -->
+{{ if not .Params.hide_cta }}
 {{ with site.GetPage "/sections/call-to-action" }}
   {{ if .Params.enable }}
     <section class="mb-28 cta bg-light" id="cta">
@@ -106,5 +107,6 @@
       </div>
     </section>
   {{ end }}
+{{ end }}
 {{ end }}
 <!-- /Call to actions -->

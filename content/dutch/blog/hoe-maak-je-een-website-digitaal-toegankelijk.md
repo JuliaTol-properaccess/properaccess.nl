@@ -28,7 +28,7 @@ aliases:
   - /hoe-maak-je-een-website-digitaal-toegankelijk/
 ---
 
-Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik wekelijks dezelfde vraag: "We moeten iets met toegankelijkheid, maar waar beginnen we?" Het eerlijke antwoord: dat hangt af van je website, je team en je budget. Maar er is een duidelijk pad. In dit artikel loop ik je er doorheen.
+Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik wekelijks dezelfde vraag: "We moeten iets met toegankelijkheid, maar waar beginnen we?" Het antwoord: dat hangt af van je website, je team en je budget. Maar er is een duidelijk pad. In dit artikel loop ik je er doorheen.
 
 Ik doe dit werk sinds 2019. In die tijd heb ik meer dan 900 audits uitgevoerd, voor musea, overheden, webshops, uitgeverijen en alles daartussenin. Ik heb gezien hoe organisaties vastlopen, maar ook hoe ze in een paar maanden enorme stappen maken. Dit artikel is gebaseerd op die ervaring.
 
@@ -136,7 +136,7 @@ Na het doorvoeren van verbeteringen wil je weten of het gelukt is. Een retest be
 
 ## Wat kost het om een website toegankelijk te maken?
 
-Dit is de tweede vraag die ik het vaakst krijg. Het eerlijke antwoord: dat verschilt enorm. Maar ik kan je wel een kader geven.
+Dit is de tweede vraag die ik het vaakst krijg. Het antwoord: dat verschilt enorm. Maar ik kan je wel een kader geven.
 
 ### De audit
 

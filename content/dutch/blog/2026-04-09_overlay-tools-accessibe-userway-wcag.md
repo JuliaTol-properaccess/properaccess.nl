@@ -11,7 +11,7 @@ tags:
   - "overlay"
   - "wcag"
   - "webshop"
-description: "AccessiBe, UserWay en EqualWeb beloven WCAG-compliance met één regel JavaScript. In de praktijk werken overlays niet, soms zelfs averechts, en bieden ze geen juridische dekking. Een eerlijk overzicht."
+description: "AccessiBe, UserWay en EqualWeb beloven WCAG-compliance met één regel JavaScript. In de praktijk werken overlays niet, soms zelfs averechts, en bieden ze geen juridische dekking. Een overzicht op basis van onderzoek en rechtspraak."
 keywords:
   - "AccessiBe review"
   - "UserWay review"
@@ -19,8 +19,8 @@ keywords:
   - "accessibility overlay werkt niet"
   - "AccessiBe alternatief"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-seo_title: "Werken overlay-tools? AccessiBe en UserWay eerlijk getest | Proper Access"
-seo_description: "Maken AccessiBe, UserWay en EqualWeb je site echt WCAG-conform? Wat zeggen screenreader-gebruikers, wat zegt onderzoek en wat zegt de rechter? Een eerlijk overzicht voor webshops."
+seo_title: "Werken overlay-tools? AccessiBe en UserWay getest | Proper Access"
+seo_description: "Maken AccessiBe, UserWay en EqualWeb je site echt WCAG-conform? Wat zeggen screenreader-gebruikers, wat zegt onderzoek en wat zegt de rechter? Een overzicht voor webshops."
 seo_keywords:
   [
     "AccessiBe review",
@@ -147,7 +147,7 @@ Met andere woorden: de overlay was geen verdediging. De schikking vereiste preci
 
 ### En de overlay-leveranciers zelf?
 
-Eerlijk is eerlijk: AccessiBe publiceert op hun eigen site ook voorbeelden van zaken waarin een overlay door een rechter wél werd geaccepteerd. In *Erkan v. David A. Hidalgo, MD, P.C.* bijvoorbeeld werd de zaak door een rechtbank in de Eastern District van New York geseponeerd, mede omdat het bedrijf een widget had geïnstalleerd. Dat is een echt voorbeeld en het hoort in een eerlijk overzicht thuis.
+AccessiBe publiceert op hun eigen site ook voorbeelden van zaken waarin een overlay door een rechter wél werd geaccepteerd. In *Erkan v. David A. Hidalgo, MD, P.C.* bijvoorbeeld werd de zaak door een rechtbank in de Eastern District van New York geseponeerd, mede omdat het bedrijf een widget had geïnstalleerd. Dat is een echt voorbeeld en het hoort in een volledig overzicht thuis.
 
 Maar twee dingen. Eén: zulke uitspraken zijn zeldzaam en vaak zaak-specifiek (een rechter oordeelde dat er geen redelijke verwachting was dat de klacht zou terugkomen, niet dat de widget daadwerkelijk WCAG-conform maakte). Twee: het is precies waar de FTC vervolgens mee kwam, namelijk dat de claim dat een widget je sluitend beschermt, commercieel overdreven is. De analyses bij [Adrian Roselli](https://adrianroselli.com/2025/01/ftc-catches-up-to-accessibe.html) en [Lainey Feingold](https://www.lflegal.com/2025/01/ftc-accessibe-million-dollar-fine/) zijn de moeite waard voor wie de nuance wil lezen.
 

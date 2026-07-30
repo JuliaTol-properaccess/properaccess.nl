@@ -357,6 +357,6 @@ Gebruik deze checklist om je document te controleren voordat je het deelt:
 <div class="offerte-cta">
   <div class="container">
     <p><em>Proper Access, Julia Tol</em></p>
-    <p><em>Heb je vragen? Neem contact op via <a href="mailto:contact@properaccess.nl">contact@properaccess.nl</a></em></p>
+    <p><em>Heb je vragen? Neem contact op via <a href="mailto:info@properaccess.nl">info@properaccess.nl</a></em></p>
   </div>
 </div>

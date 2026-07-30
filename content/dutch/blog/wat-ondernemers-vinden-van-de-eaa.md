@@ -9,14 +9,14 @@ tags:
   - "webshops"
 aliases:
   - /wat-ondernemers-vinden-van-de-eaa/
-description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen en geven eerlijke antwoorden."
+description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen en geven duidelijke antwoorden."
 ---
 
-De European Accessibility Act is sinds 28 juni 2025 van kracht. Maar hoe kijken ondernemers, freelancers en webshop-eigenaren er eigenlijk naar? We doken in fora, communities en onderzoeken om te achterhalen wat er echt leeft. Het resultaat: eerlijke zorgen, verrassende kansen en een paar hardnekkige misverstanden die we graag rechtzetten.
+De European Accessibility Act is sinds 28 juni 2025 van kracht. Maar hoe kijken ondernemers, freelancers en webshop-eigenaren er eigenlijk naar? We doken in fora, communities en onderzoeken om te achterhalen wat er echt leeft. Het resultaat: reele zorgen, verrassende kansen en een paar hardnekkige misverstanden die we graag rechtzetten.
 
 ## "Weer iets dat tijd en geld kost"
 
-Laten we eerlijk zijn: dit is de reactie die we het vaakst tegenkomen. Op Reddit schrijft een ontwikkelaar: *"The EAA is the next thing that costs time and money, when many clients don't care."*
+Dit is de reactie die we het vaakst tegenkomen. Op Reddit schrijft een ontwikkelaar: *"The EAA is the next thing that costs time and money, when many clients don't care."*
 
 Die frustratie is begrijpelijk. Als ondernemer heb je al te maken met privacywetgeving, cookieregels, btw-verplichtingen en nu ook nog digitale toegankelijkheid. Het voelt als de zoveelste regel die van bovenaf wordt opgelegd.
 
@@ -58,7 +58,7 @@ Begin met de pagina's die het meest worden bezocht: je homepage, productoverzich
 
 Niet iedereen ziet de EAA als last. Een groeiende groep ondernemers beschouwt het als een kans om zich te onderscheiden. Zeker in markten waar concurrenten nog niet bezig zijn met toegankelijkheid, kun je je hiermee positioneren als de partij die het wel serieus neemt.
 
-En eerlijk: veel EAA-eisen zijn gewoon goed design. Duidelijke contrasten, consistente navigatie, formulieren met heldere labels, logische koppenstructuur. Dingen die al je bezoekers helpen, niet alleen mensen met een beperking.
+En veel EAA-eisen zijn gewoon goed design. Duidelijke contrasten, consistente navigatie, formulieren met heldere labels, logische koppenstructuur. Dingen die al je bezoekers helpen, niet alleen mensen met een beperking.
 
 Ondernemers die eerder al met toegankelijkheid bezig waren, zeggen: *"We moesten dit toch al doen. Nu wordt het alleen afdwingbaar."*
 
@@ -72,7 +72,7 @@ In communities zie je ontwikkelaars die zich afvragen: *"Hoeveel moet ik me hier
 
 Die hoop is deels terecht. De grote platforms worden steeds beter. Maar een platform kan niet alles oplossen. Custom thema's, plugins, content -- die verantwoordelijkheid ligt bij jou als bouwer. En bij je opdrachtgever als content-eigenaar.
 
-**Ons advies aan bureaus en freelancers:** begin met de basis. Leer semantische HTML schrijven, begrijp hoe een screenreader door een pagina navigeert, en test elke oplevering minimaal met toetsenbord. Dat dekt al een groot deel van de WCAG-criteria. En als je klanten adviseert over toegankelijkheid, wees dan eerlijk: een overlay of plugin lost het niet op. Een audit door een specialist wel.
+**Ons advies aan bureaus en freelancers:** begin met de basis. Leer semantische HTML schrijven, begrijp hoe een screenreader door een pagina navigeert, en test elke oplevering minimaal met toetsenbord. Dat dekt al een groot deel van de WCAG-criteria. En als je klanten adviseert over toegankelijkheid, wees dan duidelijk: een overlay of plugin lost het niet op. Een audit door een specialist wel.
 
 ## De angst voor boetes en claims
 

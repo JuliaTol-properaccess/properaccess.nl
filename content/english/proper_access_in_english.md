@@ -74,7 +74,7 @@ Schedule a video call to discuss your goals and see how we can help. [Google Mee
 
 - Willemserf 20
 - 3755 XK Eemnes
-- E-mail: contact@properaccess.nl
+- E-mail: info@properaccess.nl
 - Telefoon/Whatsapp: 0031 855055 890
 - [Linkedin Proper Access](https://www.linkedin.com/company/proper-access-nl)
 - KVK: 95350985

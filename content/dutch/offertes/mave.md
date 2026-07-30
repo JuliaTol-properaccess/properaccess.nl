@@ -153,7 +153,7 @@ Willemserf 20
 3755 XK Eemnes
 
 **Telefoon:** 06-28742274
-**E-mail:** contact@properaccess.nl
+**E-mail:** info@properaccess.nl
 **Website:** [properaccess.nl](https://properaccess.nl/)
 
 **BTW-nummer:** NL867096755B01

@@ -43,4 +43,4 @@ Twee veranderingen. Van `<div>` naar `<button>`. En een `aria-label` omdat de pi
 - Maakt links en knoppen in niet-actieve slides niet-focusbaar
 - Kondigt de huidige slide aan voor schermlezers
 
-Dat is veel. Daarom de eerlijke vraag: heb je die carrousel echt nodig? Onderzoek na onderzoek laat zien dat bezoekers zelden voorbij de eerste slide komen. Een statische hero met je belangrijkste boodschap werkt vaak beter.
+Dat is veel. Daarom de vraag: heb je die carrousel echt nodig? Onderzoek na onderzoek laat zien dat bezoekers zelden voorbij de eerste slide komen. Een statische hero met je belangrijkste boodschap werkt vaak beter.

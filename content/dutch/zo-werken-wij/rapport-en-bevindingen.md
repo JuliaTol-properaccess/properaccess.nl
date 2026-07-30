@@ -1,5 +1,6 @@
 ---
 title: "3. Het rapport"
+hide_cta: true
 meta_title: "Auditrapport met bevindingen, user stories en vierogencontrole | Proper Access"
 type: "zo-werken-wij"
 layout: "agency"

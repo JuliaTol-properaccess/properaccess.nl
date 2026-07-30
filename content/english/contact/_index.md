@@ -23,7 +23,7 @@ url: "/en/contact/"
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
   <h3 class="card__title">Email us</h3>
-  <p><a href="mailto:contact@properaccess.nl"><strong>contact@properaccess.nl</strong></a></p>
+  <p><a href="mailto:info@properaccess.nl"><strong>info@properaccess.nl</strong></a></p>
   <p class="card__meta">Reply within 1 business day. Usually faster.</p>
 </div>
 <div class="card">
@@ -141,6 +141,6 @@ In Eemnes, the Netherlands. But we work fully remote — so location doesn't mat
 
 **53 organisations** chose us — together accounting for more than **900 audits**. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports — we think along, explain, and solve.
 
-[Call us: +31 85 5055 890](tel:+31855055890) | [Email us](mailto:contact@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
+[Call us: +31 85 5055 890](tel:+31855055890) | [Email us](mailto:info@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 
 {{< /section-cta >}}

@@ -85,7 +85,7 @@ Claude identificeerde drie categorieën contrastproblemen.
 
 > "Een typisch Divi-paars haalt ongeveer 4,5-5:1 tegen wit. Dat is op de grens."
 
-**Score: Gevonden.** Claude twijfelt en zegt terecht dat het geverifieerd moet worden met een kleurmeter. Dat is een eerlijk antwoord. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#9534EC;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #9534EC op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F6F0FE;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F6F0FE met een kleurcontrast van 4,7:1. Ik vind het niet acceptabel dat mijn software ergens over twijfelt.
+**Score: Gevonden.** Claude twijfelt en zegt terecht dat het geverifieerd moet worden met een kleurmeter. Dat is een verstandig voorbehoud. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#9534EC;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #9534EC op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F6F0FE;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F6F0FE met een kleurcontrast van 4,7:1. Ik vind het niet acceptabel dat mijn software ergens over twijfelt.
 
 ### 5. Blauwe kop: voldoet waarschijnlijk
 

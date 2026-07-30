@@ -1,5 +1,6 @@
 ---
 title: "5. Heronderzoek"
+hide_cta: true
 meta_title: "Heronderzoek WCAG: bewijs dat de problemen zijn opgelost | Proper Access"
 type: "zo-werken-wij"
 layout: "agency"
@@ -29,7 +30,7 @@ trust:
     - "Bewijs voor status A"
     - "Aangepast rapport"
     - "Vernieuwde steekproef"
-    - "Eerlijke beoordeling"
+    - "Onafhankelijke beoordeling"
 ---
 
 {{< section-full >}}
@@ -62,13 +63,13 @@ Werk je naar een EAA- of BDTO-deadline toe? Plan het heronderzoek dan al in op h
 
 {{< section-full title="Wat we onderweg tegenkomen" >}}
 
-Een heronderzoek is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we eerlijk moeten benoemen.
+Een heronderzoek is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we moeten benoemen.
 
 - **Vervangende pagina's.** Een pagina uit de oorspronkelijke steekproef die inmiddels weg is, vervangen we door een vergelijkbare pagina. Die kijken we vervolgens volledig na, wat kan betekenen dat eerder goedgekeurde succescriteria alsnog worden afgekeurd op die nieuwe pagina.
 - **Nieuwe componenten.** Heeft het team in de tussentijd een nieuw type kaart, modal of formulier toegevoegd op een pagina in de steekproef? Dan nemen we dat mee.
 - **Nieuwe fouten in de fix.** Soms ontstaat een nieuw probleem tijdens het oplossen: een aria-label dat per ongeluk de oude label-tekst overschrijft, een focus-trap die te streng is afgesteld.
 
-We schrijven dat allemaal eerlijk op. Het doel is geen mooi rapport, het doel is dat je website werkt voor je gebruikers, en dat je toegankelijkheidsverklaring klopt met de werkelijkheid.
+We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je website werkt voor je gebruikers, en dat je toegankelijkheidsverklaring klopt met de werkelijkheid.
 
 {{< /section-full >}}
 

@@ -1,5 +1,6 @@
 ---
 title: "1. De steekproef en scope"
+hide_cta: true
 meta_title: "Scope en steekproef van een WCAG-audit: hoe wij de omvang bepalen | Proper Access"
 type: "zo-werken-wij"
 layout: "agency"

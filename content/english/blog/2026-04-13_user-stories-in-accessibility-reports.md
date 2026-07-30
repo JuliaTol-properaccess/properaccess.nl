@@ -106,6 +106,6 @@ It costs us more writing time. We are honest about that. But this is what our wo
 
 We are happy to walk you through an anonymised example report in a 30-minute introductory call. You will get an immediate feel for what one user story per finding looks like, and what difference it makes to the team that has to act on it.
 
-[Schedule an introduction](/contact/) or write to us at [contact@properaccess.nl](mailto:contact@properaccess.nl).
+[Schedule an introduction](/contact/) or write to us at [info@properaccess.nl](mailto:info@properaccess.nl).
 
 {{< /case-section >}}

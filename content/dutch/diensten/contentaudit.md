@@ -1,5 +1,6 @@
 ---
 title: "Contentaudit"
+hide_cta: true
 meta_title: "Contentaudit: alleen je content getoetst op WCAG | Proper Access"
 layout: "agency"
 date: 2026-05-30
@@ -50,7 +51,7 @@ Een contentaudit dekt 33 van de 55 succescriteria van WCAG 2.2. We toetsen allee
 
 De grens tussen content en techniek is niet altijd scherp. Een voorbeeld: kan een redacteur een `autocomplete`-attribuut toevoegen aan een invoerveld waar persoonlijke informatie wordt verzameld? In de meeste CMS-en niet, dat is werk voor een ontwikkelaar. Maar sinds kort kan het in WordPress met de GravityForms-plugin, zonder dat een redacteur de techniek hoeft aan te raken. Wat eerst een technisch probleem was, is in zo'n geval redactie-werk.
 
-Er zullen dus altijd grensgevallen zijn. We schrijven in het rapport waar we een bevinding plaatsen en waarom. Mocht de classificatie in jouw context niet kloppen, laat het ons weten, dan zetten we hem over. Beter eerlijk grijs dan onterecht zwart-wit.
+Er zullen dus altijd grensgevallen zijn. We schrijven in het rapport waar we een bevinding plaatsen en waarom. Mocht de classificatie in jouw context niet kloppen, laat het ons weten, dan zetten we hem over. Beter grijs benoemd dan onterecht zwart-wit.
 
 We werken met dezelfde steekproef-aanpak als een volledige audit: een representatieve selectie pagina's volgens WCAG-EM, met de homepage, contactpagina, formulieren, processen en multimedia in elk geval erin. User stories per bevinding, rapport per element op de pagina. Lees daarover meer in [stap 3 over het rapport](/zo-werken-wij/rapport-en-bevindingen/).
 

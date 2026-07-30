@@ -45,6 +45,6 @@ Een echte HTML-tabel (`<table>`, `<tr>`, `<th>`, `<td>`) koppelt de gegevens aan
 
 Dat was tien jaar geleden waar. Met moderne CSS kun je tabellen vrijwel alles laten doen. En als je echt een grid-layout wilt, voeg dan `role="table"`, `role="row"` en `role="cell"` toe aan je divs. Dan begrijpt een schermlezer alsnog de structuur.
 
-Maar eerlijk? Gebruik gewoon een `<table>`. Het is eenvoudiger, robuuster en je hoeft geen ARIA-rollen te onthouden.
+Maar waarom zou je? Gebruik gewoon een `<table>`. Het is eenvoudiger, robuuster en je hoeft geen ARIA-rollen te onthouden.
 
 **Test:** gebruik de Web Developer-extensie in Firefox. Ga naar Miscellaneous > Linearize Page. Klopt de koppeling tussen de gegevens nog?

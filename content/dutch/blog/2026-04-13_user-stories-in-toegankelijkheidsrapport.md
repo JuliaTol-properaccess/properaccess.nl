@@ -97,7 +97,7 @@ Dit is misschien het belangrijkste. We schrijven niet één user story per WCAG-
 
 Want hetzelfde succescriterium kan op de ene plek een groot probleem zijn voor schermlezergebruikers en op een andere plek vooral hinderlijk voor toetsenbordgebruikers. Dat verschil verdwijnt zodra je gaat groeperen. Door per bevinding te schrijven, blijft het verhaal precies op de plek waar het hoort: bij dat ene element, op die ene pagina, in die ene context.
 
-Het kost ons meer schrijftijd. Daar zijn we eerlijk over. Maar dit is wat ons werk is. En het werkt.
+Het kost ons meer schrijftijd, dat geven we toe. Maar dit is wat ons werk is. En het werkt.
 
 {{< /case-section >}}
 
