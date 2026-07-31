@@ -13,7 +13,7 @@ keywords:
   - toegankelijkheidsverklaring
 slug: ""
 url: "/"
-layout: "homepage-aaas"
+layout: "homepage-aaas-v2"
 
 faqs:
   - question: "Wat kost een audit?"
