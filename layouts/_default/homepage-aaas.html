@@ -28,11 +28,8 @@
         </div>
         <div class="hp-hero__actions">
           <a href="/contact/" class="hp-btn hp-btn--primary">
-            Plan een kennismaking
-            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-          </a>
-          <a href="/contact/" class="hp-btn hp-btn--outline">
             Vraag een demo van het portaal aan
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
           </a>
         </div>
         <p class="hp-hero__fud">
@@ -126,16 +123,30 @@
 <section class="hp-trust aaas-trust">
   <div class="hp-container">
     <p class="hp-trust__label">Werken samen met</p>
-    <div class="hp-trust__names">
-      <span>Rijksmuseum</span>
-      <span>Bijenkorf</span>
-      <span>Provincie Noord-Holland</span>
-      <span>Provincie Zuid-Holland</span>
-      <span>NRC</span>
-      <span>Museumvereniging</span>
-      <span>Plus</span>
-      <span>Jumbo</span>
-      <span>Crisp</span>
+    <div class="aaas-trust__groups">
+      <div class="aaas-trust__group">
+        <span class="aaas-trust__cat">Overheid en cultuur</span>
+        <span class="aaas-trust__name">Provincie Noord-Holland</span>
+        <span class="aaas-trust__name">Provincie Zuid-Holland</span>
+        <span class="aaas-trust__name">Gemeente Amersfoort</span>
+        <span class="aaas-trust__name">Gemeente Alkmaar</span>
+        <span class="aaas-trust__name">De Rechtspraak</span>
+        <span class="aaas-trust__name">Onderzoeksraad</span>
+        <span class="aaas-trust__name">Rijksmuseum</span>
+        <span class="aaas-trust__name">Van Gogh Museum</span>
+        <span class="aaas-trust__name">Museumvereniging</span>
+      </div>
+      <div class="aaas-trust__group">
+        <span class="aaas-trust__cat">Bedrijven</span>
+        <span class="aaas-trust__name">Jumbo</span>
+        <span class="aaas-trust__name">Plus</span>
+        <span class="aaas-trust__name">Bijenkorf</span>
+        <span class="aaas-trust__name">NRC</span>
+        <span class="aaas-trust__name">Crisp</span>
+        <span class="aaas-trust__name">Eteck</span>
+        <span class="aaas-trust__name">ReadSpeaker</span>
+        <span class="aaas-trust__name">Q42</span>
+      </div>
     </div>
   </div>
 </section>
@@ -934,7 +945,20 @@
   .aaas-hero .hp-contrast__check { font-size: 0.9rem; }
   .aaas-hero .hp-hero__actions { padding-top: 0.25rem; }
   .aaas-hero .hp-hero__fud { margin-top: 0.45rem; font-size: 0.8rem; }
-  .aaas-trust { padding: 1.25rem 0; }
+  .aaas-trust { padding: 1.35rem 0; }
+  .aaas-trust__groups { display: flex; flex-direction: column; gap: 0.55rem; margin-top: 0.55rem; }
+  .aaas-trust__group {
+    display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 0.3rem 1.4rem;
+  }
+  .aaas-trust__cat {
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    color: #F2B8D0; margin-right: 0.25rem;
+  }
+  .aaas-trust__name { font-size: 0.95rem; font-weight: 800; color: #FFFFFF; white-space: nowrap; }
+  @media (max-width: 700px) {
+    .aaas-trust__group { gap: 0.25rem 1rem; }
+    .aaas-trust__name { font-size: 0.85rem; }
+  }
   @media (min-width: 992px) {
     .aaas-hero .hp-hero__grid { grid-template-columns: 1.18fr 0.82fr; align-items: center; }
     .aaas-hero .hp-hero__visual { max-width: 460px; margin-left: auto; }
