@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Markeringen op screenshots die onzichtbaar zijn"
 date: 2026-07-30
 slug: "sc-1-4-11-markeringen-op-screenshots-die-onzichtbaar-zijn"
