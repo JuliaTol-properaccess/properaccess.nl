@@ -1,0 +1,1016 @@
+{{ define "main" }}
+{{/*
+  Homepage Accessibility as a Service, richting 1A "Bewijs voorop".
+  Uitwerking van het ontwerp uit Claude Design (homepagina-redesign-twee-richtingen).
+  Palet: magenta #A30D4B, donkerblauw #1F2937, petrol #004050, lichtgrijs #F5F5F5, wit.
+  Op donkere vlakken staat #FF66A0 als lichte variant van magenta; #A30D4B haalt
+  daar maar 1,9:1 en is dus onbruikbaar voor tekst en focusranden.
+*/}}
+
+<!-- ════════════════ 1. HERO ════════════════ -->
+<section class="rd-hero rd-dark">
+  <span class="rd-hero__glow" aria-hidden="true"></span>
+  <span class="rd-hero__dots" aria-hidden="true"></span>
+  <div class="rd-container rd-hero__inner">
+    <div class="rd-hero__text">
+      <span class="rd-eyebrow rd-eyebrow--light">Accessibility as a Service · WCAG 2.2 AA · EAA</span>
+      <h1 class="rd-hero__title">Weet elke maand hoe je <span class="rd-accent">hele website</span> ervoor staat.</h1>
+      <p class="rd-hero__lead">
+        Eén handmatige audit als nulmeting. Daarna elke maand je hele site en tot 100 pdf's gescand,
+        en een senior auditor die alles beoordeelt voordat jij het ziet.
+      </p>
+      <div class="rd-hero__actions">
+        <a href="#contact" class="rd-btn rd-btn--primary">
+          Plan een kennismaking
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="rd-btn rd-btn--ghost" data-rd-demo>Vraag een demo aan</a>
+      </div>
+      <ul class="rd-claims">
+        <li class="rd-claim">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span><strong>100% EU</strong></span>
+        </li>
+        <li class="rd-claim">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4a2 2 0 0 1 2-2h9l-1.5 4L15 10H6"/><path d="M4 21h6"/></svg>
+          <span>Gebaseerd op de <strong>Nederlandse WCAG-auditpraktijk</strong></span>
+        </li>
+      </ul>
+      <p class="rd-hero__fud">Reactie binnen 1 werkdag · een videocall van 30 minuten</p>
+    </div>
+
+    <div class="rd-portalcard">
+      <div class="rd-portalcard__head">
+        <span class="rd-portalcard__label">Portaal · jouw-site.nl</span>
+        <span class="rd-portalcard__date">juli 2026</span>
+      </div>
+      <div class="rd-portalcard__stats">
+        <div class="rd-portalcard__stat">
+          <span class="rd-portalcard__num rd-portalcard__num--pink">+7</span>
+          <span class="rd-portalcard__caption">nieuw deze maand</span>
+        </div>
+        <div class="rd-portalcard__stat">
+          <span class="rd-portalcard__num">&minus;5</span>
+          <span class="rd-portalcard__caption">opgelost</span>
+        </div>
+      </div>
+      <div class="rd-portalcard__chart">
+        <span class="rd-portalcard__label">Openstaand werk per maand</span>
+        <div class="rd-bars" role="img" aria-label="Staafdiagram: het openstaande werk daalt van januari tot december, van hoge staven naar lage.">
+          <span class="rd-bar" style="height:46%"></span>
+          <span class="rd-bar" style="height:62%"></span>
+          <span class="rd-bar" style="height:54%"></span>
+          <span class="rd-bar" style="height:82%"></span>
+          <span class="rd-bar" style="height:58%"></span>
+          <span class="rd-bar rd-bar--pink" style="height:44%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:30%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:24%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:18%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:14%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:11%"></span>
+          <span class="rd-bar rd-bar--petrol" style="height:9%"></span>
+        </div>
+        <p class="rd-portalcard__caption">minder open werk, maand na maand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 2. LOGOSTRIP ════════════════ -->
+<section class="rd-logos">
+  <div class="rd-container rd-logos__inner">
+    <span class="rd-logos__count">900+ audits</span>
+    <span class="rd-logos__divider" aria-hidden="true"></span>
+    <ul class="rd-logos__names">
+      <li>Rijksmuseum</li>
+      <li>Bijenkorf</li>
+      <li>Provincie Noord-Holland</li>
+      <li>Provincie Zuid-Holland</li>
+      <li>NRC</li>
+      <li>Museumvereniging</li>
+      <li>Plus</li>
+      <li>Jumbo</li>
+      <li>Crisp</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 3. WAT JE KRIJGT ════════════════ -->
+<section class="rd-usp">
+  <div class="rd-container">
+    <span class="rd-eyebrow">Wat je krijgt</span>
+    <h2 class="rd-h2">We werken samen aan de toegankelijkheid van je website.</h2>
+    <div class="rd-usp__cols">
+      <div class="rd-usp__group">
+        <h3 class="rd-usp__grouptitle">Wat wij doen</h3>
+        <ul class="rd-usp__list">
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Handmatige audit</strong>
+              <span class="rd-usp__desc">20 pagina's, inclusief 2 pdf's.</span>
+            </span>
+          </li>
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Monitoring, elke maand</strong>
+              <span class="rd-usp__desc">Duizenden pagina's en 100 pdf's.</span>
+            </span>
+          </li>
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Senior auditor kijkt na</strong>
+              <span class="rd-usp__desc">Controleert, corrigeert en vult aan.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rd-usp__group">
+        <h3 class="rd-usp__grouptitle">Wat jij doet</h3>
+        <ul class="rd-usp__list">
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Stel je vraag</strong>
+              <span class="rd-usp__desc">Bij de bevinding zelf, in het portaal.</span>
+            </span>
+          </li>
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Meld af wat je oplost</strong>
+              <span class="rd-usp__desc">Wij controleren of het klopt.</span>
+            </span>
+          </li>
+          <li class="rd-usp__item">
+            <svg class="rd-usp__check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>
+              <strong class="rd-usp__term">Stand van zaken doorsturen</strong>
+              <span class="rd-usp__desc">Altijd actueel, klaar voor je verklaring.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="rd-usp__note">
+      Je abonnement schaalt mee met het aantal webpagina's dat we voor je monitoren. In een kennismaking
+      rekenen we voor wat dat in jouw geval betekent.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════ 4. FOTO / FILM ════════════════ -->
+<section class="rd-problem">
+  <div class="rd-container rd-problem__grid">
+    <div>
+      <span class="rd-eyebrow">Het probleem</span>
+      <h2 class="rd-h2">Een audit is een foto. Monitoring is een film.</h2>
+      <p class="rd-lead">
+        Eens in de drie jaar een audit, een rapport, een verklaring, klaar. Alleen: die audit ging over
+        20 pagina's van de duizenden die je hebt. En je site staat niet stil, er komt elke week content
+        bij en er gaat elk kwartaal een release doorheen.
+      </p>
+      <p class="rd-lead">
+        Sinds 28 juni 2025 vraagt de European Accessibility Act om een site die blíjft voldoen. Een
+        momentopname is daar te weinig voor.
+      </p>
+    </div>
+    <div class="rd-compare">
+      <div class="rd-compare__card">
+        <span class="rd-compare__label">Audit: één foto</span>
+        <span class="rd-compare__num">20</span>
+        <span class="rd-compare__sub">pagina's, eens per 3 jaar</span>
+        <div class="rd-compare__grid" aria-hidden="true">
+          <span class="rd-cell rd-cell--on"></span><span class="rd-cell rd-cell--on"></span><span class="rd-cell rd-cell--on"></span>
+          <span class="rd-cell"></span><span class="rd-cell"></span><span class="rd-cell"></span>
+          <span class="rd-cell"></span><span class="rd-cell"></span><span class="rd-cell"></span>
+          <span class="rd-cell"></span><span class="rd-cell"></span><span class="rd-cell"></span>
+        </div>
+      </div>
+      <div class="rd-compare__card rd-compare__card--dark">
+        <span class="rd-compare__label rd-compare__label--pink">Monitoring: een film</span>
+        <span class="rd-compare__num rd-compare__num--light">12&times;</span>
+        <span class="rd-compare__sub rd-compare__sub--light">per jaar je hele site en tot 100 pdf's</span>
+        <div class="rd-compare__grid" aria-hidden="true">
+          <span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span>
+          <span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span>
+          <span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span>
+          <span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span><span class="rd-cell rd-cell--full"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 5. HOE HET WERKT ════════════════ -->
+<section class="rd-steps">
+  <div class="rd-container">
+    <div class="rd-steps__intro">
+      <span class="rd-eyebrow">Hoe het werkt</span>
+      <h2 class="rd-h2">Van nulmeting naar doorlopend zicht.</h2>
+      <p class="rd-lead">
+        Elke stap levert je iets op wat je kunt gebruiken, en je hebt bij elke stap dezelfde auditor aan tafel.
+      </p>
+    </div>
+
+    <div class="rd-tabs" data-rd-tabs>
+      <div class="rd-tablist" role="tablist" aria-label="Fases van de dienst">
+        <button type="button" class="rd-tab" role="tab" id="rd-tab-fase1" aria-controls="rd-panel-fase1" aria-selected="true">
+          <span class="rd-tab__num">01</span> Nulmeting
+        </button>
+        <button type="button" class="rd-tab" role="tab" id="rd-tab-fase2" aria-controls="rd-panel-fase2" aria-selected="false" tabindex="-1">
+          <span class="rd-tab__num">02</span> Maandelijkse bewaking
+        </button>
+        <button type="button" class="rd-tab" role="tab" id="rd-tab-fase3" aria-controls="rd-panel-fase3" aria-selected="false" tabindex="-1">
+          <span class="rd-tab__num">03</span> In het portaal
+        </button>
+      </div>
+
+      <div class="rd-steplist" role="tabpanel" id="rd-panel-fase1" aria-labelledby="rd-tab-fase1" tabindex="0">
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">Nulmeting</span>
+            <h3 class="rd-step__title">We brengen je website in kaart</h3>
+            <p>Een gemiddelde website bestaat uit circa 120 componenten: navigatie, formulieren, zoekfunctie, kaartweergaven, betaalstappen. Wij brengen ze allemaal in beeld en kiezen daaruit een steekproef van 20 pagina's volgens WCAG-EM, de Europese methode om een website te beoordelen.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">~120</span>
+            <span class="rd-step__statlabel">componenten in beeld</span>
+          </div>
+        </div>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">Nulmeting</span>
+            <h3 class="rd-step__title">Een handmatige audit van 20 pagina's</h3>
+            <p>Een senior auditor test de steekproef, inclusief 2 pdf's. Handmatig, met hulpsoftware en met mensen met een beperking, want dat is de enige manier om te weten hoe het écht werkt voor een bezoeker.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">55</span>
+            <span class="rd-step__statlabel">succescriteria, WCAG 2.2 niveau A en AA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rd-steplist" role="tabpanel" id="rd-panel-fase2" aria-labelledby="rd-tab-fase2" tabindex="0" hidden>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">Maandelijkse bewaking</span>
+            <h3 class="rd-step__title">Inteliscan scant je hele website</h3>
+            <p>Onze eigen scanner is gebouwd op wat wij in 900+ audits zijn tegengekomen en op de Nederlandse beoordelingspraktijk. Elke maand je hele site, plus tot 100 pdf-documenten.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">80%</span>
+            <span class="rd-step__statlabel">automatisch, de overige 20% blijft mensenwerk</span>
+          </div>
+        </div>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">Maandelijkse bewaking</span>
+            <h3 class="rd-step__title">Een senior auditor beoordeelt de bevindingen</h3>
+            <p>Voordat jij iets te zien krijgt, kijkt er een auditor naar. Die haalt eruit wat bij nader inzien geen probleem is, en legt keuzes die van jou zijn als vraag voor in plaats van als fout.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">0</span>
+            <span class="rd-step__statlabel">fouten die geen fout zijn</span>
+          </div>
+        </div>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">Maandelijkse bewaking</span>
+            <h3 class="rd-step__title">Je krijgt de kern, niet de berg</h3>
+            <p>Wij tellen oorzaken, geen pagina's. Een contrastfout in de footer is niet duizenden fouten, het is 1 stijlregel. Je krijgt de oorzaak met de voorbeelden erbij, en de volledige lijst eronder voor wie hem nodig heeft.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">8.412 → 12</span>
+            <span class="rd-step__statlabel">losse meldingen worden dingen om op te lossen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rd-steplist" role="tabpanel" id="rd-panel-fase3" aria-labelledby="rd-tab-fase3" tabindex="0" hidden>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">In het portaal</span>
+            <h3 class="rd-step__title">Vragen stellen en afmelden</h3>
+            <p>Bij elke bevinding stel je een vraag aan de auditor die hem vond. Geen ticketsysteem, geen accountmanager ertussen. Zet je hem op opgelost, dan controleren wij of het klopt en of hij elders ook goed staat.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">1 werkdag</span>
+            <span class="rd-step__statlabel">reactie, van de auditor zelf</span>
+          </div>
+        </div>
+        <div class="rd-step">
+          <div class="rd-step__text">
+            <span class="rd-eyebrow">In het portaal</span>
+            <h3 class="rd-step__title">Je verklaring blijft vanzelf actueel</h3>
+            <p>We stellen je EAA-toegankelijkheidsverklaring of VPAT op en vullen hem elke maand aan met wat de monitoring heeft gevonden en wat jij hebt geaccordeerd. Ook wat je niet kunt oplossen staat erin, met de reden erbij.</p>
+          </div>
+          <div class="rd-step__stat">
+            <span class="rd-step__statnum">12&times;</span>
+            <span class="rd-step__statlabel">per jaar bijgewerkt, door ons gehost</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 6. PORTAAL: ZO ZIET EEN BEVINDING ERUIT ════════════════ -->
+<section class="rd-portal rd-dark" id="portaal">
+  <div class="rd-container">
+    <div class="rd-portal__intro">
+      <span class="rd-eyebrow rd-eyebrow--light">In het portaal</span>
+      <h2 class="rd-h2 rd-h2--light">Zo ziet een bevinding eruit.</h2>
+      <p class="rd-lead rd-lead--light">
+        Kies een bevinding. Je leest een verhaal, geen foutcode, inclusief hoe je het zelf natest.
+        Zo leer je dit vak zelf.
+      </p>
+    </div>
+
+    <div class="rd-portal__grid" data-rd-tabs>
+      <div class="rd-portal__aside">
+        <div class="rd-findlist" role="tablist" aria-orientation="vertical" aria-label="Voorbeeldbevindingen">
+          <button type="button" class="rd-find" role="tab" id="rd-tab-bev1" aria-controls="rd-panel-bev1" aria-selected="true">
+            <span class="rd-find__meta"><span class="rd-find__id">#5</span> <span class="rd-find__team">Techniek</span></span>
+            <span class="rd-find__title">Tekst kleiner dan 24px heeft onvoldoende kleurcontrast</span>
+          </button>
+          <button type="button" class="rd-find" role="tab" id="rd-tab-bev2" aria-controls="rd-panel-bev2" aria-selected="false" tabindex="-1">
+            <span class="rd-find__meta"><span class="rd-find__id">#12</span> <span class="rd-find__team">Redactie</span></span>
+            <span class="rd-find__title">Afbeelding zonder tekstalternatief</span>
+          </button>
+          <button type="button" class="rd-find" role="tab" id="rd-tab-bev3" aria-controls="rd-panel-bev3" aria-selected="false" tabindex="-1">
+            <span class="rd-find__meta"><span class="rd-find__id">#3</span> <span class="rd-find__team">Techniek</span></span>
+            <span class="rd-find__title">Link zonder toegankelijke naam</span>
+          </button>
+        </div>
+
+        <div class="rd-ordening">
+          <span class="rd-eyebrow rd-eyebrow--light">Onze ordening</span>
+          <ul class="rd-ordening__list">
+            <li>Geordend per pagina en per element, niet per succescriterium.</li>
+            <li>Alles van één pagina staat bij elkaar, dus je zoekt niet door tien succescriteria heen.</li>
+            <li>Geschreven in de taal van de lezer: de redactie krijgt geen HTML, de ontwikkelaar juist wel.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rd-portal__panels">
+        <!-- Bevinding 1 -->
+        <div class="rd-detail" role="tabpanel" id="rd-panel-bev1" aria-labelledby="rd-tab-bev1" tabindex="0">
+          <div class="rd-detail__head">
+            <span class="rd-detail__id">#5</span>
+            <h3 class="rd-detail__title">Tekst kleiner dan 24px heeft onvoldoende kleurcontrast</h3>
+          </div>
+          <div class="rd-detail__meta">
+            <div><span class="rd-detail__key">Impact</span><span class="rd-detail__val">Gemiddeld</span></div>
+            <div><span class="rd-detail__key">WCAG</span><span class="rd-detail__val">1.4.3</span></div>
+            <div><span class="rd-detail__key">Team</span><span class="rd-detail__val">Techniek</span></div>
+            <div class="rd-detail__status">
+              <span class="rd-detail__key">Status</span>
+              <button type="button" class="rd-solve" aria-pressed="false" data-rd-solve>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-rd-solve-label>Markeer als opgelost</span>
+              </button>
+            </div>
+          </div>
+          <div class="rd-story">
+            <svg class="rd-story__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#A30D4B"/><circle cx="16" cy="12.5" r="4.6" fill="#fff"/><path d="M7.6 25.5c1.1-4.3 4.5-6.6 8.4-6.6s7.3 2.3 8.4 6.6z" fill="#fff"/></svg>
+            <div>
+              <span class="rd-eyebrow">User story</span>
+              <p class="rd-story__text">Ik ben slechtziend. Ik werk met vergroting en soms een hoog-contrastmodus. De grijze koppen bij "Laatste nieuws" vallen voor mij weg tegen het wit, waardoor ik de nieuwste artikelen niet zie.</p>
+            </div>
+          </div>
+          <div class="rd-detail__block">
+            <h4 class="rd-detail__sub">Wat er aan de hand is</h4>
+            <p>Onder de kop "Laatste nieuws" staat grijze tekst <span class="rd-hex"><span class="rd-hex__swatch" style="background:#8C8C8C"></span>#8C8C8C</span> op een witte achtergrond. De contrastratio is 3,4:1 en dat is te laag. In de donkere modus komt dit probleem niet voor.</p>
+          </div>
+          <div class="rd-detail__block rd-detail__block--sep">
+            <h4 class="rd-detail__sub">Hoe je het zelf test</h4>
+            <p>Meet de tekstkleur en de achtergrondkleur met de kleurenpicker in de DevTools en vul beide kleuren in een contrastchecker in. Vergelijk de uitkomst met de eis van 4,5:1.</p>
+          </div>
+          <div class="rd-fix">
+            <h4 class="rd-fix__title">Oplossing</h4>
+            <p>Deze tekst is kleiner dan 24px en niet vetgedrukt, dus het contrast moet minimaal 4,5:1 zijn. Maak de tekstkleur donkerder tot de eis gehaald wordt.</p>
+          </div>
+        </div>
+
+        <!-- Bevinding 2 -->
+        <div class="rd-detail" role="tabpanel" id="rd-panel-bev2" aria-labelledby="rd-tab-bev2" tabindex="0" hidden>
+          <div class="rd-detail__head">
+            <span class="rd-detail__id">#12</span>
+            <h3 class="rd-detail__title">Afbeelding zonder tekstalternatief</h3>
+          </div>
+          <div class="rd-detail__meta">
+            <div><span class="rd-detail__key">Impact</span><span class="rd-detail__val">Hoog</span></div>
+            <div><span class="rd-detail__key">WCAG</span><span class="rd-detail__val">1.1.1</span></div>
+            <div><span class="rd-detail__key">Team</span><span class="rd-detail__val">Redactie</span></div>
+            <div class="rd-detail__status">
+              <span class="rd-detail__key">Status</span>
+              <button type="button" class="rd-solve" aria-pressed="false" data-rd-solve>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-rd-solve-label>Markeer als opgelost</span>
+              </button>
+            </div>
+          </div>
+          <div class="rd-story">
+            <svg class="rd-story__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#A30D4B"/><circle cx="16" cy="12.5" r="4.6" fill="#fff"/><path d="M7.6 25.5c1.1-4.3 4.5-6.6 8.4-6.6s7.3 2.3 8.4 6.6z" fill="#fff"/></svg>
+            <div>
+              <span class="rd-eyebrow">User story</span>
+              <p class="rd-story__text">Als blinde bezoeker wil ik weten wat er op een foto staat, zodat ik het bericht kan volgen zonder dat er informatie voor mij wegvalt.</p>
+            </div>
+          </div>
+          <div class="rd-detail__block">
+            <h4 class="rd-detail__sub">Wat er aan de hand is</h4>
+            <p>De bestuursfoto op /over-ons heeft een leeg alt-attribuut, terwijl de foto informatie draagt die verder nergens in tekst staat.</p>
+          </div>
+          <div class="rd-detail__block rd-detail__block--sep">
+            <h4 class="rd-detail__sub">Hoe je het zelf test</h4>
+            <p>Zet in je browser de weergave zonder afbeeldingen aan, of laat een schermlezer de pagina voorlezen. Blijft er een leeg vlak staan, dan mist die afbeelding een tekstalternatief. Lees daarna de pagina van boven naar beneden en kijk of je nog steeds hetzelfde verhaal krijgt.</p>
+          </div>
+          <div class="rd-fix">
+            <h4 class="rd-fix__title">Oplossing</h4>
+            <p>Zet bij de foto een korte beschrijving in het CMS. Schrijf in één zin wat er op de foto te zien is, en niet dát het een foto is. Een leeg alt-attribuut gebruik je alleen bij decoratie.</p>
+          </div>
+        </div>
+
+        <!-- Bevinding 3 -->
+        <div class="rd-detail" role="tabpanel" id="rd-panel-bev3" aria-labelledby="rd-tab-bev3" tabindex="0" hidden>
+          <div class="rd-detail__head">
+            <span class="rd-detail__id">#3</span>
+            <h3 class="rd-detail__title">Link zonder toegankelijke naam</h3>
+          </div>
+          <div class="rd-detail__meta">
+            <div><span class="rd-detail__key">Impact</span><span class="rd-detail__val">Hoog</span></div>
+            <div><span class="rd-detail__key">WCAG</span><span class="rd-detail__val">2.4.4</span></div>
+            <div><span class="rd-detail__key">Team</span><span class="rd-detail__val">Techniek</span></div>
+            <div class="rd-detail__status">
+              <span class="rd-detail__key">Status</span>
+              <button type="button" class="rd-solve" aria-pressed="false" data-rd-solve>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-rd-solve-label>Markeer als opgelost</span>
+              </button>
+            </div>
+          </div>
+          <div class="rd-story">
+            <svg class="rd-story__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#A30D4B"/><circle cx="16" cy="12.5" r="4.6" fill="#fff"/><path d="M7.6 25.5c1.1-4.3 4.5-6.6 8.4-6.6s7.3 2.3 8.4 6.6z" fill="#fff"/></svg>
+            <div>
+              <span class="rd-eyebrow">User story</span>
+              <p class="rd-story__text">Als blinde bezoeker wil ik weten waar een link naartoe gaat, zodat ik kan beslissen of ik erop klik.</p>
+            </div>
+          </div>
+          <div class="rd-detail__block">
+            <h4 class="rd-detail__sub">Wat er aan de hand is</h4>
+            <p>De pijl-link in de kaartlijst bevat alleen een icoon zonder tekst. De schermlezer leest alleen "link" voor, op 24 plekken in de lijst.</p>
+          </div>
+          <div class="rd-detail__block rd-detail__block--sep">
+            <h4 class="rd-detail__sub">Hoe je het zelf test</h4>
+            <p>Tab met je toetsenbord door de pagina en luister of je bij elke link hoort waar hij naartoe gaat. Staat er alleen "link", of dezelfde tekst bij meerdere links, dan kun je er los van de context niets mee.</p>
+          </div>
+          <div class="rd-fix">
+            <h4 class="rd-fix__title">Oplossing</h4>
+            <p>Geef de link een toegankelijke naam. Dat kan via een zichtbare linktekst, een aria-label of een andere geschikte techniek.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 7. HET VERSCHIL ════════════════ -->
+<section class="rd-diff">
+  <div class="rd-container">
+    <div class="rd-diff__intro">
+      <span class="rd-eyebrow">Het verschil</span>
+      <h2 class="rd-h2">Wat je bij ons anders krijgt.</h2>
+    </div>
+    <div class="rd-diff__grid">
+      <div class="rd-diff__card">
+        <span class="rd-diff__num">01</span>
+        <h3 class="rd-diff__title">Er kijkt een mens naar voordat jij begint</h3>
+        <p>Een scanner levert meldingen, wij leveren beoordeelde bevindingen. Elke maand opnieuw, door een auditor die je site kent.</p>
+      </div>
+      <div class="rd-diff__card">
+        <span class="rd-diff__num">02</span>
+        <h3 class="rd-diff__title">Wij melden anders met opzet</h3>
+        <p>Elke bevinding begint met een user story vanuit de bezoeker die vastloopt, zodat iedereen ziet waar het om gaat. Daarna lees je het in de taal van je eigen team: de redactie krijgt geen HTML, de ontwikkelaar juist wel, als code-snippet.</p>
+      </div>
+      <div class="rd-diff__card">
+        <span class="rd-diff__num">03</span>
+        <h3 class="rd-diff__title">Componenten, geen succescriteria</h3>
+        <p>De markt telt afgekeurde succescriteria. Wij ordenen per component, want zo werk je het op. Eén knop die op 3.000 pagina's misgaat is bij ons 1 taak, met het bereik erbij als bewijs.</p>
+      </div>
+      <div class="rd-diff__card">
+        <span class="rd-diff__num">04</span>
+        <h3 class="rd-diff__title">Onafhankelijk</h3>
+        <p>We bouwen geen websites en beheren geen content. We hebben er dus geen belang bij om iets groter of kleiner te maken dan het is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 8. FAQ ════════════════ -->
+<section class="rd-faq">
+  <div class="rd-container rd-faq__grid">
+    <div class="rd-faq__intro">
+      <span class="rd-eyebrow">Vragen vooraf</span>
+      <h2 class="rd-h2">Veelgestelde vragen</h2>
+    </div>
+    <div class="rd-faq__list">
+      <details class="rd-faq__item" open>
+        <summary class="rd-faq__q">Wat kost het?</summary>
+        <p class="rd-faq__a">Het abonnement schaalt mee met het aantal webpagina's dat we voor je monitoren. In een kennismaking van 30 minuten rekenen we voor wat dat in jouw geval betekent, inclusief de eenmalige nulmeting.</p>
+      </details>
+      <details class="rd-faq__item">
+        <summary class="rd-faq__q">Hoe snel zijn we live?</summary>
+        <p class="rd-faq__a">Na de kennismaking plannen we de nulmeting in. Die duurt maximaal 2 weken, afhankelijk van de omvang van je site. Vanaf het moment dat de handmatige audit is afgerond loopt de maandelijkse bewaking door, zonder dat jij er iets voor hoeft in te richten.</p>
+      </details>
+      <details class="rd-faq__item">
+        <summary class="rd-faq__q">Vindt de scan alles?</summary>
+        <p class="rd-faq__a">Nee, en dat zeggen we er ook bij. Inteliscan neemt circa 80% van het testwerk over, de overige 20% blijft mensenwerk. Het portaal laat zien wat de monitoring níet bewaakt, zodat je niet bedrogen uitkomt op het moment dat het ertoe doet.</p>
+      </details>
+      <details class="rd-faq__item">
+        <summary class="rd-faq__q">We hebben net een audit laten doen, is dit dan nog nodig?</summary>
+        <p class="rd-faq__a">Dan doen we de nulmeting verkort. De monitoring begint waar je audit ophoudt: die ging over 20 pagina's, wij volgen je hele site en je pdf's elke maand. Breng je rapport mee naar de kennismaking, dan kijken we wat we kunnen hergebruiken.</p>
+      </details>
+      <details class="rd-faq__item">
+        <summary class="rd-faq__q">Werkt dit op ons platform?</summary>
+        <p class="rd-faq__a">Ja. We scannen de publieke site zoals een bezoeker hem krijgt, dus het maakt niet uit welk CMS of framework eronder zit. Ook een site zonder nette semantische code of met strenge beveiligingsinstellingen houdt ons niet tegen. Voor afgeschermde omgevingen maken we een afspraak over toegang.</p>
+      </details>
+      <details class="rd-faq__item">
+        <summary class="rd-faq__q">Wat krijgen we nu precies?</summary>
+        <p class="rd-faq__a">Een handmatige audit als nulmeting, elke maand een gescande site plus tot 100 pdf's, beoordeelde bevindingen in het portaal, direct contact met de auditor, en een toegankelijkheidsverklaring of VPAT die actueel blijft.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 9. CONTACT ════════════════ -->
+<section class="rd-cta" id="contact">
+  <div class="rd-container rd-cta__grid">
+    <div>
+      <h2 class="rd-cta__title">Benieuwd hoe je site ervoor staat?</h2>
+      <p class="rd-lead">
+        Plan een kennismaking van 30 minuten. Je spreekt meteen een senior auditor, we kijken samen naar
+        je site, en je hoort wat een nulmeting voor jouw situatie inhoudt. Daarna beslis je.
+      </p>
+      <div class="rd-cta__contact">
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+        <a href="tel:+31855055890">085 5055 890</a>
+      </div>
+      <div class="rd-cta__person">
+        <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="rd-cta__avatar" loading="lazy" width="64" height="64" />
+        <div>
+          <span class="rd-cta__name">Phi Pham</span>
+          <span class="rd-cta__role">Relatiebeheer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rd-formcard">
+      <form
+        id="rd-contact-form"
+        novalidate
+        onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-redesign', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
+        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+        <input type="hidden" name="aanvraag" id="rd-aanvraag" value="Kennismaking" />
+        <p class="rd-formcard__badge" id="rd-demo-note" hidden>Je vraagt een demo van het portaal aan.</p>
+        <div class="rd-field">
+          <label class="rd-field__label" for="rd-naam">Naam</label>
+          <input class="rd-field__input" id="rd-naam" name="naam" autocomplete="name" required type="text" />
+        </div>
+        <div class="rd-field">
+          <label class="rd-field__label" for="rd-email">E-mailadres</label>
+          <input class="rd-field__input" id="rd-email" name="email" autocomplete="email" required type="email" />
+        </div>
+        <div class="rd-field">
+          <label class="rd-field__label" for="rd-site">Wat is de url van je site?</label>
+          <input class="rd-field__input" id="rd-site" name="website" required type="text" placeholder="jouw-site.nl" />
+        </div>
+        <button class="rd-btn rd-btn--primary rd-btn--full" type="submit">Plan een kennismaking</button>
+        <p class="rd-formcard__note">Je hoort binnen 1 werkdag van ons, of sneller.</p>
+        <div role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* ═══════ Homepage richting 1A: "Bewijs voorop" ═══════
+     #A30D4B magenta · #1F2937 donkerblauw · #004050 petrol · #F5F5F5 grijs · #fff
+     #FF66A0 is de lichte magenta voor donkere vlakken (5,4:1 op #1F2937). */
+
+  .rd-container { max-width: 1280px; margin: 0 auto; padding: 0 5rem; }
+  .rd-dark { background: #1F2937; position: relative; overflow: hidden; }
+  .rd-dark :focus-visible { outline: 3px solid #FF66A0; outline-offset: 2px; }
+
+  .rd-eyebrow {
+    display: block; font-family: "Nunito", sans-serif; font-weight: 700; font-size: 0.75rem;
+    letter-spacing: 0.125em; text-transform: uppercase; color: #A30D4B;
+  }
+  .rd-eyebrow--light { color: #FF66A0; }
+  .rd-h2 {
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 2.875rem;
+    line-height: 1.1; letter-spacing: -0.026em; color: #1F2937; margin: 0.875rem 0 0;
+    text-wrap: pretty;
+  }
+  .rd-h2--light { color: #fff; }
+  .rd-lead { font-size: 1.125rem; line-height: 1.6; color: #4B5563; margin: 1rem 0 0; max-width: 36rem; }
+  .rd-lead--light { color: #D1D5DB; }
+  .rd-accent { color: #FF66A0; }
+
+  .rd-btn {
+    display: inline-flex; align-items: center; gap: 0.625rem; border-radius: 999px;
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.0625rem;
+    padding: 1.125rem 1.875rem; text-decoration: none; border: 0; cursor: pointer;
+  }
+  .rd-btn--primary { background: #A30D4B; color: #fff; box-shadow: 0 20px 60px rgba(163,13,75,0.40); }
+  .rd-btn--primary:hover { background: #8C0B40; color: #fff; }
+  .rd-btn--ghost { color: #fff; border: 2px solid rgba(255,255,255,0.35); padding: 1rem 1.75rem; }
+  .rd-btn--ghost:hover { border-color: #FF66A0; color: #FF66A0; }
+  .rd-btn--full { width: 100%; justify-content: center; }
+
+  /* ── Hero ── */
+  /* Hero blijft compact zodat de logostrip nog boven de vouw valt. */
+  .rd-hero { padding: 3rem 0 2.75rem; }
+  .rd-hero__glow {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(760px 440px at 88% -10%, rgba(163,13,75,0.55), transparent 70%),
+      radial-gradient(620px 400px at -6% 112%, rgba(0,64,80,0.45), transparent 70%);
+  }
+  .rd-hero__dots {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .rd-hero__inner {
+    position: relative; display: grid; grid-template-columns: 1fr 400px; gap: 4.5rem; align-items: center;
+  }
+  .rd-hero__text { display: flex; flex-direction: column; align-items: flex-start; gap: 1.15rem; }
+  .rd-hero__title {
+    margin: 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 3.5rem;
+    line-height: 1.04; letter-spacing: -0.032em; color: #fff; text-wrap: pretty;
+  }
+  .rd-hero__lead { margin: 0; max-width: 36rem; font-size: 1.125rem; line-height: 1.5; color: #D1D5DB; }
+  .rd-hero__actions { display: flex; gap: 0.875rem; align-items: center; flex-wrap: wrap; }
+  .rd-hero__fud { margin: 0; font-size: 0.9375rem; color: #9CA3AF; }
+  .rd-claims { list-style: none; margin: 0; padding: 0; display: flex; gap: 0.625rem; flex-wrap: wrap; }
+  .rd-claim {
+    display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.9375rem;
+    border: 1px solid rgba(255,255,255,0.28); border-radius: 999px;
+    font-size: 0.9375rem; line-height: 1.2; color: #D1D5DB;
+  }
+  .rd-claim strong { color: #fff; font-weight: 700; }
+  .rd-claim svg { flex: none; color: #FF66A0; }
+
+  .rd-portalcard {
+    position: relative; background: #28323F; border: 1px solid #3A4553; border-radius: 20px;
+    padding: 1.375rem; display: flex; flex-direction: column; gap: 1rem;
+  }
+  .rd-portalcard__head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .rd-portalcard__label {
+    font-family: "Nunito", sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.09em;
+    text-transform: uppercase; color: #D1D5DB;
+  }
+  .rd-portalcard__date { font-size: 0.75rem; color: #D1D5DB; }
+  .rd-portalcard__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .rd-portalcard__stat { background: #1F2937; border-radius: 12px; padding: 0.875rem; }
+  .rd-portalcard__num {
+    display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800;
+    font-size: 2rem; line-height: 1; color: #fff;
+  }
+  .rd-portalcard__num--pink { color: #FF66A0; }
+  .rd-portalcard__caption { display: block; font-size: 0.8125rem; color: #D1D5DB; margin-top: 0.25rem; }
+  .rd-portalcard__chart { background: #1F2937; border-radius: 12px; padding: 1rem 0.875rem; }
+  .rd-bars { display: flex; align-items: flex-end; gap: 7px; height: 62px; margin-top: 0.75rem; }
+  .rd-bar { flex: 1; background: #A30D4B; border-radius: 3px; }
+  .rd-bar--pink { background: #FF66A0; }
+  .rd-bar--petrol { background: #004050; }
+  .rd-portalcard__chart .rd-portalcard__caption { margin-top: 0.625rem; }
+
+  /* ── Logostrip ── */
+  .rd-logos { background: #fff; border-bottom: 1px solid #E5E7EB; padding: 1.25rem 0; }
+  .rd-logos__inner { display: flex; align-items: center; gap: 2.75rem; flex-wrap: wrap; }
+  .rd-logos__count {
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 1.375rem;
+    color: #A30D4B; white-space: nowrap;
+  }
+  .rd-logos__divider { width: 1px; height: 1.75rem; align-self: center; background: #E5E7EB; }
+  .rd-logos__names {
+    list-style: none; margin: 0; padding: 0; display: flex; gap: 0.6rem 1.75rem; flex-wrap: wrap;
+    flex: 1; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1rem; color: #1F2937;
+  }
+
+  /* ── Wat je krijgt ── */
+  .rd-usp { background: #fff; padding: 5rem 0 4.5rem; }
+  .rd-usp__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; margin-top: 2.25rem; }
+  .rd-usp__grouptitle {
+    margin: 0 0 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid #E5E7EB;
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 1.0625rem;
+    letter-spacing: 0.02em; color: #A30D4B;
+  }
+  .rd-usp__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; }
+  .rd-usp__item { display: flex; gap: 0.75rem; align-items: flex-start; }
+  .rd-usp__term {
+    display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700;
+    font-size: 1.25rem; line-height: 1.25; color: #1F2937;
+  }
+  .rd-usp__desc { display: block; margin-top: 0.2rem; font-size: 1.0625rem; line-height: 1.45; color: #4B5563; }
+  .rd-usp__check { flex: none; color: #A30D4B; margin-top: 0.35rem; }
+  .rd-usp__note {
+    margin: 2rem 0 0; padding-left: 1.25rem; border-left: 4px solid #004050;
+    color: #4B5563; line-height: 1.6; font-size: 0.9375rem;
+  }
+
+  /* ── Foto / film ── */
+  .rd-problem { background: #F5F5F5; padding: 6rem 0; }
+  .rd-problem__grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 5rem; align-items: center; }
+  .rd-problem .rd-lead + .rd-lead { margin-top: 1rem; }
+  .rd-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .rd-compare__card {
+    background: #fff; border-radius: 16px; padding: 1.625rem;
+    box-shadow: 0 8px 24px rgba(163,13,75,0.15); display: flex; flex-direction: column;
+  }
+  .rd-compare__card--dark { background: #1F2937; box-shadow: 0 8px 24px rgba(31,41,55,0.25); }
+  .rd-compare__label {
+    font-family: "Nunito", sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.09em;
+    text-transform: uppercase; color: #4B5563;
+  }
+  .rd-compare__label--pink { color: #FF66A0; }
+  .rd-compare__num {
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 2.875rem;
+    color: #1F2937; line-height: 1; margin: 1.125rem 0 0.375rem;
+  }
+  .rd-compare__num--light { color: #fff; }
+  .rd-compare__sub { font-size: 0.9375rem; color: #4B5563; }
+  .rd-compare__sub--light { color: #D1D5DB; }
+  .rd-compare__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin-top: 1.375rem; }
+  .rd-cell { height: 16px; background: #E5E7EB; border-radius: 3px; }
+  .rd-cell--on { background: none; border: 1.5px solid #A30D4B; }
+  .rd-cell--full { background: #A30D4B; }
+
+  /* ── Stappen ── */
+  .rd-steps { background: #fff; padding: 6rem 0; }
+  .rd-steps__intro { max-width: 45rem; }
+  .rd-tablist { display: flex; gap: 0.625rem; margin: 2.75rem 0 0; flex-wrap: wrap; }
+  .rd-tab {
+    display: flex; align-items: center; gap: 0.625rem; padding: 0.875rem 1.375rem; border-radius: 999px;
+    border: 1px solid #E5E7EB; background: #fff; color: #4B5563; cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.0625rem;
+  }
+  .rd-tab__num { font-weight: 800; font-size: 0.8125rem; color: #A30D4B; }
+  .rd-tab:hover { border-color: #A30D4B; }
+  .rd-tab[aria-selected="true"] { background: #1F2937; border-color: #1F2937; color: #fff; }
+  .rd-tab[aria-selected="true"] .rd-tab__num { color: #FF66A0; }
+
+  .rd-steplist {
+    margin-top: 2rem; display: flex; flex-direction: column; gap: 1px;
+    background: #E5E7EB; border: 1px solid #E5E7EB; border-radius: 16px; overflow: hidden;
+  }
+  .rd-steplist:focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; }
+  .rd-step {
+    background: #fff; padding: 2.25rem; display: grid; grid-template-columns: 1fr 300px;
+    gap: 3.5rem; align-items: start;
+  }
+  .rd-step__title {
+    margin: 0.625rem 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700;
+    font-size: 1.6875rem; line-height: 1.2; color: #1F2937;
+  }
+  .rd-step__text p { margin: 0; font-size: 1.0625rem; line-height: 1.6; color: #4B5563; max-width: 40rem; }
+  .rd-step__stat { background: #F5F5F5; border-radius: 12px; padding: 1.5rem; }
+  .rd-step__statnum {
+    display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800;
+    font-size: 2.125rem; line-height: 1; color: #A30D4B;
+  }
+  .rd-step__statlabel { display: block; margin-top: 0.5rem; font-size: 0.875rem; line-height: 1.45; color: #4B5563; }
+
+  /* ── Portaal ── */
+  .rd-portal { padding: 6rem 0; }
+  .rd-portal__intro { position: relative; max-width: 46rem; margin-bottom: 2.5rem; }
+  .rd-portal__grid { position: relative; display: grid; grid-template-columns: 380px 1fr; gap: 1.5rem; align-items: start; }
+  .rd-findlist { display: flex; flex-direction: column; gap: 0.625rem; }
+  .rd-find {
+    text-align: left; display: flex; flex-direction: column; gap: 0.5rem; padding: 1.125rem 1.25rem;
+    border-radius: 12px; background: #28323F; border: 2px solid #3A4553; cursor: pointer;
+  }
+  .rd-find:hover { border-color: #FF66A0; }
+  .rd-find__meta { display: flex; align-items: center; gap: 0.625rem; }
+  .rd-find__id { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 0.8125rem; color: #FF66A0; }
+  .rd-find__team { font-size: 0.75rem; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 700; color: #D1D5DB; }
+  .rd-find__title { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1rem; line-height: 1.3; color: #fff; }
+  .rd-find[aria-selected="true"] { background: #fff; border-color: #A30D4B; }
+  .rd-find[aria-selected="true"] .rd-find__id { color: #A30D4B; }
+  .rd-find[aria-selected="true"] .rd-find__team { color: #4B5563; }
+  .rd-find[aria-selected="true"] .rd-find__title { color: #1F2937; }
+
+  /* Geen kader: anders leest dit blok als een vierde knop naast de bevindingen. */
+  .rd-ordening { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #3A4553; }
+  .rd-ordening__list { margin: 0.875rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+  .rd-ordening__list li {
+    position: relative; padding-left: 1.25rem;
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.0625rem;
+    line-height: 1.35; color: #fff;
+  }
+  .rd-ordening__list li::before {
+    content: ""; position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px;
+    border-radius: 999px; background: #FF66A0;
+  }
+
+  .rd-detail { background: #fff; border-radius: 16px; padding: 2rem 2.125rem; }
+  .rd-detail:focus-visible { outline: 3px solid #FF66A0; outline-offset: 3px; }
+  .rd-detail__head { display: flex; align-items: baseline; gap: 0.75rem; }
+  .rd-detail__id { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 0.9375rem; color: #A30D4B; }
+  .rd-detail__title { margin: 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.375rem; line-height: 1.25; color: #1F2937; }
+  .rd-detail__meta {
+    display: flex; gap: 2.25rem; margin: 1.375rem 0; padding: 1rem 0; flex-wrap: wrap;
+    border-top: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;
+  }
+  .rd-detail__status { margin-left: auto; }
+  .rd-detail__key { display: block; font-size: 0.6875rem; letter-spacing: 0.09em; text-transform: uppercase; color: #4B5563; font-weight: 700; }
+  .rd-detail__val { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 0.9375rem; color: #1F2937; margin-top: 0.25rem; }
+  .rd-solve {
+    display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.375rem; border-radius: 999px;
+    padding: 0.5rem 1rem; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 0.875rem;
+    background: #fff; color: #004050; border: 2px solid #004050; cursor: pointer;
+  }
+  .rd-solve[aria-pressed="true"] { background: #004050; color: #fff; }
+
+  .rd-story { border-left: 6px solid #A30D4B; padding: 0.25rem 0 0.25rem 1.125rem; margin-bottom: 1.375rem; display: flex; gap: 0.875rem; align-items: flex-start; }
+  .rd-story__icon { flex: none; margin-top: 0.125rem; }
+  .rd-story__text { margin: 0.5rem 0 0; font-size: 1.0625rem; line-height: 1.55; color: #1F2937; font-style: italic; }
+  .rd-detail__block { margin-bottom: 1.125rem; }
+  .rd-detail__block--sep { border-top: 1px solid #E5E7EB; padding-top: 1.125rem; }
+  .rd-detail__sub { margin: 0 0 0.375rem; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 0.9375rem; color: #1F2937; }
+  .rd-detail__block p { margin: 0; font-size: 1rem; line-height: 1.55; color: #4B5563; }
+  .rd-hex {
+    display: inline-flex; align-items: center; gap: 0.375rem; border: 1px solid #E5E7EB; border-radius: 6px;
+    padding: 1px 7px 1px 4px; margin: 0 2px; font-weight: 700; font-size: 0.875rem; color: #1F2937;
+  }
+  .rd-hex__swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; border: 1px solid #D1D5DB; }
+  .rd-fix { background: #F5F5F5; border-radius: 12px; padding: 1.125rem 1.25rem; }
+  .rd-fix__title { margin: 0 0 0.375rem; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 0.9375rem; color: #004050; }
+  .rd-fix p { margin: 0; font-size: 1rem; line-height: 1.55; color: #4B5563; }
+
+  /* ── Het verschil ── */
+  .rd-diff { background: #fff; padding: 6rem 0; }
+  .rd-diff__intro { max-width: 45rem; margin-bottom: 2.75rem; }
+  .rd-diff__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .rd-diff__card { border: 1px solid #E5E7EB; border-radius: 16px; padding: 1.875rem 2rem; }
+  .rd-diff__card:hover { border-color: #A30D4B; }
+  .rd-diff__num { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 0.875rem; letter-spacing: 0.07em; color: #A30D4B; }
+  .rd-diff__title { margin: 0.875rem 0 0.625rem; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.4375rem; line-height: 1.25; color: #1F2937; }
+  .rd-diff__card p { margin: 0; font-size: 1.0625rem; line-height: 1.55; color: #4B5563; }
+
+  /* ── FAQ ── */
+  .rd-faq { background: #F5F5F5; padding: 6rem 0; }
+  .rd-faq__grid { display: grid; grid-template-columns: 340px 1fr; gap: 4rem; align-items: start; }
+  .rd-faq__list { display: flex; flex-direction: column; gap: 0.75rem; }
+  .rd-faq__item { background: #fff; border-radius: 12px; border: 1px solid #E5E7EB; }
+  .rd-faq__item:hover { border-color: #A30D4B; }
+  .rd-faq__q {
+    display: flex; justify-content: space-between; align-items: center; gap: 1.25rem; cursor: pointer;
+    padding: 1.25rem 1.5rem; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700;
+    font-size: 1.125rem; color: #1F2937; list-style: none;
+  }
+  .rd-faq__q::-webkit-details-marker { display: none; }
+  .rd-faq__q::after {
+    content: "+"; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.375rem;
+    color: #A30D4B; line-height: 1; flex: none;
+  }
+  .rd-faq__item[open] .rd-faq__q::after { content: "–"; }
+  .rd-faq__a { margin: 0; padding: 0 1.5rem 1.375rem; font-size: 1.0625rem; line-height: 1.6; color: #4B5563; max-width: 45rem; }
+
+  /* ── Contact ── */
+  .rd-cta { padding: 6rem 0; background: #F5F5F5; border-top: 1px solid #E5E7EB; }
+  .rd-cta__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: center; }
+  .rd-cta__title {
+    margin: 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 3.25rem;
+    line-height: 1.05; letter-spacing: -0.029em; color: #1F2937; text-wrap: pretty;
+  }
+  .rd-cta .rd-lead { margin: 1.25rem 0 1.75rem; font-size: 1.1875rem; max-width: 35rem; }
+  .rd-cta__contact { display: flex; gap: 1.75rem; flex-wrap: wrap; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.0625rem; }
+  .rd-cta__contact a { color: #A30D4B; text-decoration: underline; text-underline-offset: 3px; }
+  .rd-cta__contact a:hover { color: #004050; }
+  .rd-cta__person { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; }
+  .rd-cta__avatar { width: 64px; height: 64px; border-radius: 999px; object-fit: cover; flex: none; }
+  .rd-cta__name { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 1.0625rem; color: #1F2937; }
+  .rd-cta__role { display: block; font-size: 0.9375rem; color: #4B5563; margin-top: 0.125rem; }
+
+  .rd-formcard {
+    background: #fff; border: 1px solid #E5E7EB; border-radius: 20px; padding: 2rem;
+    box-shadow: 0 18px 44px rgba(31,41,55,0.10);
+  }
+  .rd-formcard form { display: flex; flex-direction: column; gap: 1rem; }
+  .rd-field__label {
+    display: block; font-family: "Nunito", sans-serif; font-weight: 700; font-size: 0.75rem;
+    letter-spacing: 0.09em; text-transform: uppercase; color: #4B5563; margin-bottom: 0.5rem;
+  }
+  .rd-field__input {
+    width: 100%; border: 1px solid #9CA3AF; border-radius: 12px; padding: 0.875rem 1rem;
+    font-family: "Nunito", sans-serif; font-size: 1rem; color: #1F2937; background: #fff;
+  }
+  .rd-field__input:focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; }
+  .rd-formcard__note { margin: 0; font-size: 0.875rem; color: #4B5563; text-align: center; }
+  .rd-formcard__badge {
+    margin: 0; padding: 0.625rem 0.875rem; border-radius: 10px; background: #F5F5F5;
+    border-left: 4px solid #A30D4B; font-size: 0.9375rem; color: #1F2937;
+  }
+
+  /* ── Responsief ── */
+  @media (max-width: 1100px) {
+    .rd-container { padding: 0 2.5rem; }
+    .rd-hero__inner { grid-template-columns: 1fr; gap: 3rem; }
+    .rd-portalcard { max-width: 30rem; }
+    .rd-problem__grid,
+    .rd-cta__grid { grid-template-columns: 1fr; gap: 3rem; }
+    .rd-portal__grid { grid-template-columns: 1fr; }
+    .rd-faq__grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  @media (max-width: 900px) {
+    .rd-container { padding: 0 1.5rem; }
+    .rd-hero { padding: 3.5rem 0; }
+    .rd-hero__title { font-size: 2.5rem; }
+    .rd-hero__lead { font-size: 1.0625rem; }
+    .rd-h2 { font-size: 1.875rem; }
+    .rd-cta__title { font-size: 2.125rem; }
+    .rd-usp__cols,
+    .rd-diff__grid,
+    .rd-compare { grid-template-columns: 1fr; }
+    .rd-step { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.75rem; }
+    .rd-steps, .rd-problem, .rd-portal, .rd-diff, .rd-faq, .rd-cta { padding: 3.5rem 0; }
+    .rd-usp { padding: 3rem 0; }
+    .rd-detail { padding: 1.5rem; }
+    .rd-detail__meta { gap: 1.25rem; }
+    .rd-detail__status { margin-left: 0; }
+    .rd-logos__divider { display: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    "use strict";
+
+    // Tabs: pijltjestoetsen, Home en End, met roving tabindex.
+    document.querySelectorAll("[data-rd-tabs]").forEach(function (group) {
+      var tabs = Array.prototype.slice.call(group.querySelectorAll('[role="tab"]'));
+      if (!tabs.length) return;
+
+      function select(tab, focus) {
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.setAttribute("aria-selected", on ? "true" : "false");
+          t.tabIndex = on ? 0 : -1;
+          var panel = document.getElementById(t.getAttribute("aria-controls"));
+          if (panel) panel.hidden = !on;
+        });
+        if (focus) tab.focus();
+      }
+
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener("click", function () { select(tab, false); });
+        tab.addEventListener("keydown", function (e) {
+          var next = null;
+          if (e.key === "ArrowRight" || e.key === "ArrowDown") next = tabs[(i + 1) % tabs.length];
+          else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = tabs[(i - 1 + tabs.length) % tabs.length];
+          else if (e.key === "Home") next = tabs[0];
+          else if (e.key === "End") next = tabs[tabs.length - 1];
+          if (next) { e.preventDefault(); select(next, true); }
+        });
+      });
+    });
+
+    // Wie via "Vraag een demo aan" bij het formulier komt, stuurt dat mee.
+    document.querySelectorAll("[data-rd-demo]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var veld = document.getElementById("rd-aanvraag");
+        var note = document.getElementById("rd-demo-note");
+        if (veld) veld.value = "Demo van het portaal";
+        if (note) note.hidden = false;
+      });
+    });
+
+    // "Markeer als opgelost" in het portaalvoorbeeld.
+    document.querySelectorAll("[data-rd-solve]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var on = btn.getAttribute("aria-pressed") !== "true";
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        var label = btn.querySelector("[data-rd-solve-label]");
+        if (label) label.textContent = on ? "Opgelost" : "Markeer als opgelost";
+      });
+    });
+  })();
+</script>
+
+{{ end }}
