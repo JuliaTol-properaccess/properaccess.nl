@@ -46,7 +46,7 @@ This also affects people who never touch a screen reader. Real headings drive th
 
 **Tables.** Data tables need `<th>` for header cells, with `scope="col"` or `scope="row"` when the table is anything other than trivial. A `<caption>` gives the table a name, which matters when a page has several. Never use a table for layout.
 
-**Form fields.** Every input needs a `<label>` connected with `for` and `id`, or an equally explicit alternative. Placeholder text is not a label: it disappears the moment somebody types, and many screen readers ignore it.
+**Form fields.** Every input needs a `<label>` connected with `for` and `id`, or an equally explicit alternative. Placeholder text is not a label: it disappears the moment somebody types, and there is nothing to click to focus the field.
 
 **Groups.** Radio buttons and checkboxes that belong together need a `<fieldset>` with a `<legend>`. Without it, someone tabbing into the third radio button hears "Yes" with no idea what question they are answering.
 
@@ -64,7 +64,7 @@ This also affects people who never touch a screen reader. Real headings drive th
 
 **Visually grouped, structurally loose.** A card with a border around a heading, an image and a link looks like one unit. In the code it is three unrelated elements. Sometimes that is fine, sometimes the border is carrying meaning that needs to be said out loud.
 
-**Placeholder as label.** The most common form failure we see, and the easiest to fix.
+**Placeholder as label.** The most common form problem we see, and the easiest to fix. Strictly it is not a 1.3.1 failure, because the placeholder still gives the field a name, but the visible hint is gone as soon as somebody types. That is [SC 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html).
 
 ## How to test it
 

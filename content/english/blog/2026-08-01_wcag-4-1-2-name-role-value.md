@@ -30,7 +30,7 @@ This is the criterion that separates "it works with a mouse" from "it works". It
 
 Three words worth unpacking:
 
-- **Name.** The label a screen reader announces. It can come from the visible text, a `<label>`, an `aria-label`, an `aria-labelledby`, or an `alt` attribute.
+- **Name.** The label a screen reader announces. It can come from the visible text, a `<label>`, an `aria-label`, an `aria-labelledby`, or an `alt` attribute, and as a last resort from `title` or `placeholder`.
 - **Role.** What kind of control it is. `<button>` has the role button for free. A `<div>` has no role at all.
 - **Value or state.** Whether a checkbox is checked, whether an accordion is expanded, how far a slider has moved.
 
@@ -68,8 +68,6 @@ If you genuinely cannot, you have to rebuild everything a `<button>` gave you fo
 
 **Iframes without a title.** An embedded video, map or form is a document inside your document. Without `title` on the `<iframe>`, a screen reader announces "frame" and the user has no idea whether to enter it.
 
-**Placeholder as the only name.** Covered under [SC 1.3.1](/en/blog/wcag-1-3-1-info-and-relationships/) too, but it fails here as well: the field has no name once the user starts typing.
-
 **ARIA on the wrong element.** `role="button"` on an `<a href>` removes the link semantics without adding keyboard behaviour. ARIA changes what is announced, never what the element does.
 
 ## How to test it
@@ -101,6 +99,12 @@ No. Native HTML elements come with name, role and state already. ARIA exists to 
 ### Does `title` provide an accessible name?
 
 Technically it can, as a last resort in the accessible name calculation. In practice do not rely on it: it does not show on touch devices, it is announced inconsistently, and it is invisible to keyboard users.
+
+### Is a field with only a placeholder a failure of 4.1.2?
+
+Usually not, and this one gets misquoted a lot. `placeholder` is the final fallback in the accessible name calculation, below `title`, so the field does get a name. The attribute stays in the DOM while somebody types, so that name does not disappear either.
+
+The damage sits under other criteria. The visible hint vanishes as soon as the field has content, so anyone checking their answers halfway through the form has nothing left to read, which is what [SC 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) is about. Placeholder text is also usually too light for [SC 1.4.3](/en/blog/wcag-1-4-3-contrast-minimum/), and there is no `<label>` to click, so the focus target is smaller than it should be. Use a real label and keep the placeholder for an example of the format, if at all.
 
 ### Do decorative icons inside a labelled button need hiding?
 
