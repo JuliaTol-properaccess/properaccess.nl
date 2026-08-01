@@ -1,5 +1,6 @@
 ---
 title: 'SC 3.1.2 - Wat betekent "Taal van onderdelen"'
+translationKey: "sc-3-1-2"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

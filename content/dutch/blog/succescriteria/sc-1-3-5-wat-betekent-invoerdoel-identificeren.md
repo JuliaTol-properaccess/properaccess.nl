@@ -1,5 +1,6 @@
 ---
 title: 'SC 1.3.5 - Wat betekent "Invoerdoel identificeren"'
+translationKey: "sc-1-3-5"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

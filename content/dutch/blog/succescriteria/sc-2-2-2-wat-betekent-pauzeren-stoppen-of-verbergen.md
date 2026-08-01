@@ -1,5 +1,6 @@
 ---
 title: 'SC 2.2.2 - Wat betekent "Pauzeren, stoppen of verbergen"'
+translationKey: "sc-2-2-2"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

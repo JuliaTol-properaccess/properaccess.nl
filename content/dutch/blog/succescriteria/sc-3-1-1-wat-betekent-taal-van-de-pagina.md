@@ -1,5 +1,6 @@
 ---
 title: "SC 3.1.1 - Wat betekent “Taal van de pagina”"
+translationKey: "sc-3-1-1"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
