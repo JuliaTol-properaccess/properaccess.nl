@@ -1,5 +1,6 @@
 ---
 title: 'SC 4.1.3 - Wat betekent "Statusbericht"'
+translationKey: "sc-4-1-3"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

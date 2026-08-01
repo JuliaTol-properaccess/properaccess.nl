@@ -1,5 +1,6 @@
 ---
 title: '1.3.3 - Wat betekent "Zintuiglijke kenmerken"?'
+translationKey: "sc-1-3-3"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

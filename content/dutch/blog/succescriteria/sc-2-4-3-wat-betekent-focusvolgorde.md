@@ -1,5 +1,6 @@
 ---
 title: "SC 2.4.3 - Wat betekent “Focusvolgorde”"
+translationKey: "sc-2-4-3"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

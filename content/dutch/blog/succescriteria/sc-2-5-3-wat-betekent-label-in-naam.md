@@ -1,5 +1,6 @@
 ---
 title: "SC 2.5.3 - Wat betekent “Label in naam”"
+translationKey: "sc-2-5-3"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

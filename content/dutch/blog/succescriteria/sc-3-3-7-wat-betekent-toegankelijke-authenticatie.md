@@ -1,5 +1,6 @@
 ---
 title: 'SC 3.3.8 - Wat betekent "Toegankelijke authenticatie"'
+translationKey: "sc-3-3-8"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
