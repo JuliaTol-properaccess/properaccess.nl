@@ -1,6 +1,7 @@
 ---
 title: "SC 2.4.4 - Wat betekent “Doel van links (in context)”"
 date: 2025-05-18
+translationKey: "sc-2-4-4"
 categories:
   - "wcag-uitgelegd"
 description: "WCAG 2.4.4 vraagt dat elke link duidelijk maakt waar hij naartoe gaat. Lees hoe je als webredacteur goede linkteksten schrijft en zelf controleert."

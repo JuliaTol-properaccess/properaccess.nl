@@ -548,6 +548,7 @@
 {{ $allBlog := where site.RegularPages "Section" "blog" }}
 {{ $allBlog = where $allBlog "Params.sitemap_exclude" "!=" true }}
 {{ $allBlog = where $allBlog "Params.locked" "!=" true }}
+{{ $allBlog = where $allBlog "Params.homepage_exclude" "!=" true }}
 {{ $recentPosts := first 4 ($allBlog.ByDate.Reverse) }}
 {{ if $recentPosts }}
 <section class="hp-insights">

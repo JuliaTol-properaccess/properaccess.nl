@@ -6,7 +6,10 @@
 */}}
 {{ $active := .activeSlug }}
 {{ $ctx := .Context }}
-{{ $order := slice "achtergrond_wcag" "cases" "wcag-uitgelegd" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "de-eaa" "tips-en-tools" }}
+{{/* Vaste volgorde van de filterknoppen. Een categorie die hier niet in
+     staat verschijnt niet, ook niet als er artikelen in zitten. De Engelse
+     slugs (ai-and-wcag, wcag-explained) staan er dus ook in. */}}
+{{ $order := slice "achtergrond_wcag" "cases" "wcag-uitgelegd" "wcag-explained" "wcag-vragen" "e-commerce-eaa" "webdeveloper" "webredactie" "ai-en-wcag" "ai-and-wcag" "de-eaa" "tips-en-tools" }}
 
 <nav class="blog-filter" aria-label="{{ T "blog_filter_label" }}">
   {{ range $slug := $order }}
