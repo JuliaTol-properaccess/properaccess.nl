@@ -48,13 +48,15 @@ This deserves its own section, because it is the most common failure of this cri
 
 A placeholder disappears the moment somebody types. Anyone checking their answers halfway through a form has nothing left to read. Placeholder text is also usually too light to meet [SC 1.4.3](/en/blog/wcag-1-4-3-contrast-minimum/), and there is no `<label>` to click, so the target area is smaller than it should be.
 
-One nuance worth being precise about, because it gets misquoted: a field with only a placeholder does still have an accessible name. `placeholder` is the last fallback in the accessible name calculation, below `title`, and the attribute stays in the DOM while you type. So a screen reader user is not left with an unnamed field. The damage is to everybody who can see the form and has just lost the only hint they had.
+Be precise about which criterion this fails, because it gets misquoted in both directions. Giving a field its *name* through a placeholder is acceptable under [SC 4.1.2](/en/blog/wcag-4-1-2-name-role-value/): `placeholder` is the last fallback in the accessible name calculation, below `title`, and the attribute stays in the DOM while you type, so a screen reader user is not left with an unnamed field. Using a placeholder as the *visible label* is a failure of this criterion, 3.3.2, and it is one of the most common failures we report.
+
+The two statements are not in tension. The name is there for assistive software and the label is gone for everyone looking at the form, including the screen reader user who has some sight, the person with dyslexia checking their answers, and anyone who got interrupted halfway down.
 
 Use a placeholder as an extra example next to a visible label, or not at all.
 
 ## Mistakes we keep finding
 
-**Placeholder as the only label.** Covered above. It looks clean in the design and it fails in use.
+**Placeholder as the only label.** Covered above. A failure of this criterion, whatever the accessible name calculation says.
 
 **A label too far from its field.** If it is not visually obvious which label belongs to which input, people guess, especially in multi-column layouts.
 

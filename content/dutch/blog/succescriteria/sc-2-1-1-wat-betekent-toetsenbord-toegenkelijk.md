@@ -19,6 +19,12 @@ Dit succescriterium is interessant voor de [webontwikkelaar.](https://properacce
 
 Toetsenbordtoegankelijkheid zorgt ervoor dat mensen met motorische beperkingen, slechtziendheid of blindheid, en zelfs tijdelijke beperkingen, zoals een gebroken arm, de website kunnen gebruiken. Het verbetert ook de bruikbaarheid voor iedereen, zoals mensen die liever toetsenbordnavigatie gebruiken.
 
+## De uitzondering: bewegingen die van het pad afhangen
+
+Er is een uitzondering op "alles moet met het toetsenbord kunnen". Een functie mag een muis of vinger vereisen als het resultaat afhangt van de weg die je aflegt, en niet alleen van het begin- en eindpunt. Een handtekeningveld is het bekendste voorbeeld: de vorm van de krul is de inhoud. Vrij tekenen valt er ook onder.
+
+Die uitzondering is smaller dan hij lijkt. Slepen om een lijst te herordenen valt er niet onder, want daarbij tellen alleen het begin- en eindpunt. Voor zulke functies bied je een toetsenbordroute, bijvoorbeeld knoppen om een item omhoog of omlaag te verplaatsen. Sinds WCAG 2.2 vraagt [succescriterium 2.5.7 Sleepbewegingen](/blog/sc-2-5-7-wat-betekent-sleepbewegingen/) daarnaast een alternatief zonder slepen voor mensen die wel een aanwijsapparaat gebruiken.
+
 ## Hoe test je toetsenbordtoegankelijkheid?
 
 Gebruik alleen je toetsenbord om door je website te navigeren. Controleer of je alle interactieve elementen kunt bereiken en gebruiken. Begin in de adresbalk van de browser:
