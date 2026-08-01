@@ -1,6 +1,7 @@
 ---
 title: 'SC 4.1.2 - Wat betekent "Naam, rol, waarde"'
 date: 2025-05-18
+translationKey: "sc-4-1-2"
 categories: 
   - "wcag-uitgelegd"
 description: "WCAG 4.1.2 voor ontwikkelaars: naam, rol en waarde uitgelegd met veel code. Goede en foute voorbeelden met semantische HTML en ARIA, plus testtips."

@@ -1,6 +1,7 @@
 ---
 title: "SC 1.3.1 - Wat betekent “Informatie en relaties”"
 date: 2025-05-18
+translationKey: "sc-1-3-1"
 categories:
   - "wcag-uitgelegd"
 description: "WCAG 1.3.1 vraagt dat de structuur van je pagina ook in de code klopt. Lees hoe je als webredacteur koppen, lijsten en tabellen goed opmaakt en zelf controleert."

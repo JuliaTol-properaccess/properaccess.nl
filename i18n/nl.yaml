@@ -1,3 +1,9 @@
+- id: article_updated
+  translation: "Bijgewerkt:"
+- id: reading_time
+  translation: "min leestijd"
+- id: tldr_title
+  translation: "Korte versie"
 - id: toc
   translation: "Inhoudsopgave"
 - id: toc_in_article

@@ -46,7 +46,7 @@
     {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "blog-byline__photo") }}
     <div class="blog-byline__text">
       <span class="blog-byline__name">Julia Tol</span>
-      <span class="blog-byline__meta">{{ .ReadingTime }} min leestijd</span>
+      <span class="blog-byline__meta">{{ .ReadingTime }} {{ i18n "reading_time" }}</span>
     </div>
   </div>
 </div>

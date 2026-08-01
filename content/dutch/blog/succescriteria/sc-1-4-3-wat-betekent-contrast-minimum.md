@@ -1,6 +1,7 @@
 ---
 title: 'SC 1.4.3 - Wat betekent "Contrast (minimum)"?'
 date: 2025-05-18
+translationKey: "sc-1-4-3"
 categories:
   - "wcag-uitgelegd"
 tags:
