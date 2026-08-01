@@ -1,5 +1,6 @@
 ---
 title: "Text Spacing: waarom vaste hoogtes je code breken (WCAG 1.4.12)"
+translationKey: "sc-1-4-12"
 date: 2026-02-17
 seo_description: "Leer waarom containers met vaste hoogtes tekst afknippen bij aangepaste regelafstand. Met code-voorbeelden en een test-bookmarklet."
 categories:

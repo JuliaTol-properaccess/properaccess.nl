@@ -1,5 +1,6 @@
 ---
 title: 'SC 2.4.6 - Wat betekent "Koppen en labels"'
+translationKey: "sc-2-4-6"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"

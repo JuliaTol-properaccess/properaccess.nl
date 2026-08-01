@@ -1,5 +1,6 @@
 ---
 title: 'SC 2.1.1 - Wat betekent "Toetsenbord toegankelijk"'
+translationKey: "sc-2-1-1"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"

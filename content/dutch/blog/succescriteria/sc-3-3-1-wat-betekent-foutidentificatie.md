@@ -1,5 +1,6 @@
 ---
 title: 'SC 3.3.1 - Wat betekent "Foutidentificatie"'
+translationKey: "sc-3-3-1"
 date: 2025-05-18
 categories: 
   - "wcag-uitgelegd"
