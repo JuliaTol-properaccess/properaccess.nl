@@ -50,7 +50,7 @@ That last case trips up the most experienced teams. The alt text of a functional
 
 **Repeating the caption.** If the caption directly under the photo already reads "Our team at the 2026 conference", an identical alt text means the sentence is announced twice in a row. Use `alt=""` and let the caption do the work.
 
-**Icon fonts and emoji as the accessible name.** A button whose entire label is a Font Awesome glyph or a magnifying-glass emoji has no word attached to it. Assistive software drops the name and announces just the role, so the user hears "button" and nothing else. Give the button an `aria-label` describing its function and set the icon to `aria-hidden="true"`.
+**Icon fonts and emoji as the accessible name.** A button whose entire label is a Font Awesome glyph or a magnifying-glass emoji has no words in it. That rarely means silence, which is what makes it easy to miss: an emoji is announced by its Unicode name, so the user hears "magnifying glass tilted left, button", and an icon font glyph is read out in Chrome but dropped in Firefox. The name exists, it just describes the artwork instead of the action. Give the button an `aria-label` describing its function and set the icon to `aria-hidden="true"`.
 
 **Charts with a one-line alt.** `alt="Bar chart of revenue"` tells a blind reader that they are missing something without telling them what. Either put the takeaway in the alt text ("Revenue grew from 1.2 to 3.4 million between 2023 and 2026") or, better, put the underlying figures in a table near the chart.
 

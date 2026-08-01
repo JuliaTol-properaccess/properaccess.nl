@@ -46,7 +46,7 @@ The everyday version: a mouse user sees a blue rounded rectangle that says "Send
 <div class="btn" onclick="submit()">Send</div>
 ```
 
-This looks right, works with a mouse, and fails three criteria at once. Under **4.1.2** it has no role, so it is announced as plain text. Under [**2.1.1 Keyboard**](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) it is not in the tab order and does not respond to Enter or Space, so a keyboard user can never reach it or operate it. And under [**2.4.7 Focus Visible**](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html) there is no focus state to show.
+This looks right, works with a mouse, and fails two criteria at once. Under **4.1.2** it has no role, so it is announced as plain text. Under [**2.1.1 Keyboard**](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) it is not in the tab order and does not respond to Enter or Space, so a keyboard user can never reach it or operate it. [SC 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html) does not apply at all, which sounds like a let-off and is the opposite: there is no focus indicator to judge because focus never arrives.
 
 The fix is almost always to use the real element:
 
@@ -58,7 +58,7 @@ If you genuinely cannot, you have to rebuild everything a `<button>` gave you fo
 
 ## Mistakes we keep finding
 
-**Icon-only buttons with no name.** A button containing only an icon font glyph or an emoji has no word attached. Assistive software drops the name entirely and announces just "button". Give it an `aria-label` and set the icon to `aria-hidden="true"`.
+**Icon-only buttons with no usable name.** A button containing only an icon font glyph or an emoji has no words in it. That rarely means silence: an emoji is announced by its Unicode name, so a magnifying-glass emoji becomes "magnifying glass tilted left, button", and an icon font glyph is read out in Chrome but dropped in Firefox. The name exists and describes the picture rather than the action. Give it an `aria-label` and set the icon to `aria-hidden="true"`.
 
 **`aria-label` that contradicts the visible text.** A button that visibly reads "Send" but carries `aria-label="Submit form"` breaks voice control: the user says "click Send" and nothing happens. Under [SC 2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html) the visible text must be contained in the accessible name.
 
