@@ -60,7 +60,7 @@ De toegankelijke naam (accessible name) is de tekst die een screenreader voorlee
 1. `aria-labelledby` (verwijst naar tekst elders op de pagina)
 2. `aria-label` (letterlijke tekst op het element)
 3. de eigen inhoud of native koppeling: de tekst van een knop, een gekoppeld `label`, of de `alt` van een afbeelding
-4. `title` en `placeholder` als laatste redmiddel (onbetrouwbaar, gebruik dit niet als enige naam)
+4. `title` en `placeholder` als laatste redmiddel. Gebruik dit niet als enige naam: `title` wordt wisselend voorgelezen en is onzichtbaar op touchapparaten, en een placeholder is geen label.
 
 Een knop met zichtbare tekst heeft al een naam. Niets extra's nodig:
 
@@ -88,7 +88,9 @@ Een icoonknop zonder tekst is de klassieker die misgaat. Zonder naam kondigt een
 </button>
 ```
 
-Invoervelden hebben een gekoppeld label nodig. Een `placeholder` is geen naam: hij verdwijnt zodra je typt en heeft vaak te weinig contrast.
+Invoervelden hebben een gekoppeld label nodig. Let op wat een `placeholder` hier wel en niet doet, want dat wordt vaak verkeerd geciteerd. Een placeholder levert wél een naam op: hij staat als laatste in de berekening hierboven, onder `title`. Dat attribuut blijft ook gewoon staan terwijl iemand typt, dus die naam verdwijnt niet. Op dit succescriterium slaagt zo'n veld dus meestal.
+
+De schade zit bij andere criteria. De zichtbare voorbeeldtekst is weg zodra het veld gevuld is, dus wie halverwege het formulier terugkijkt, ziet niet meer wat er in de eerdere velden moest. Dat is [SC 3.3.2 Labels en instructies](/blog/sc-3-3-2-wat-betekent-labels-en-instructies/): onder dat criterium is een placeholder geen label. Daar komt bij dat placeholdertekst vaak te weinig contrast heeft voor [SC 1.4.3](/blog/sc-1-4-3-wat-betekent-contrast-minimum/), en dat er geen `label` is om op te klikken, waardoor het klikgebied kleiner is dan nodig.
 
 ```html
 <!-- Fout: alleen een placeholder -->
@@ -209,7 +211,7 @@ Werk bij zo'n slider `aria-valuenow` bij op elke stap, anders hoort de gebruiker
 
 - Een `div` of `span` met een `onclick` in plaats van een `button`. Geen rol, geen focus, geen toetsenbord.
 - Een icoonknop of icoonlink zonder `aria-label` of visueel verborgen tekst.
-- Een `placeholder` als vervanging voor een `label`.
+- Een `placeholder` als vervanging voor een `label`. Op dit criterium slaagt het veld meestal, want de placeholder levert een naam op. De fout valt onder [SC 3.3.2](/blog/sc-3-3-2-wat-betekent-labels-en-instructies/).
 - `aria-label` op een element zonder rol (een kale `span` of `div`).
 - `aria-labelledby` of `aria-controls` die verwijst naar een `id` die niet bestaat.
 - Dezelfde `id` twee keer op de pagina, waardoor koppelingen stuk gaan.
