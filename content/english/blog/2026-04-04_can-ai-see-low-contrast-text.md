@@ -59,25 +59,25 @@ No hints. No color values. Just the image.
 
 ## What AI found
 
-Claude identified three categories of contrast issues.
+Claude flagged three elements as failing and assessed three more. Six verdicts in total.
 
 ### 1. Green heading: fails
 
 > "Green is the most problematic hue for contrast against white. A typical green like #4CAF50 only achieves about 2.5 to 3.2:1 against white."
 
-**Score: Not found.** I measured the actual green used in the heading as #2CD991 on a background of #F0FBF5. My contrast value is 1.7:1. That's too far off from Claude's estimate of 2.5 to 3.2:1. And the margin of 0.5 between 2.5:1 and 3.0:1 is simply too wide to accept. WCAG measures contrast to two decimal places, for example 2.99:1.
+**Score: Missed.** I measured the actual green used in the heading as #2CD991 on a background of #F0FBF5. My contrast value is 1.7:1. That's too far off from Claude's estimate of 2.5 to 3.2:1. And the margin of 0.5 between 2.5:1 and 3.0:1 is simply too wide to accept. WCAG measures contrast to two decimal places, for example 2.99:1.
 
 ### 2. Orange heading: fails
 
 > "Orange is also a problematic hue. A typical orange like #FF9800 achieves about 2.9:1 against white. Even a darker orange like #F57C00 only reaches about 3.6:1."
 
-**Score: Not found.** Wrong again. Claude measures a different shade of orange and doesn't notice that each block on the screenshot has a subtle background color. My measurement is #FC7519 on #FDF4EF with a result of 2.5:1.
+**Score: Missed.** Wrong again. Claude measures a different shade of orange and doesn't notice that each block on the screenshot has a subtle background color. My measurement is #FC7519 on #FDF4EF with a result of 2.5:1.
 
 ### 3. Body text in light gray: fails
 
 > "A typical light gray in this kind of design is #888888 to #AAAAAA. That gives a ratio of 2.3 to 3.5:1. That fails the required 4.5:1."
 
-**Score: Not found.** Claude sees light gray body text on this screenshot. I see body text in dark tones that all meet the minimum contrast requirements.
+**Score: False alarm.** Claude sees light gray body text on this screenshot. I see body text in dark tones that all meet the minimum contrast requirements.
 
 ### 4. Purple heading: borderline
 
@@ -103,8 +103,8 @@ Claude correctly reports that the illustrations are decorative and don't fall un
 
 | Element | AI verdict | My measurement | Score |
 |---------|-----------|---------------|-------|
-| Green heading | "Fails, ratio ~2.5-3.2:1" | #2CD991 on #F0FBF5 = 1.7:1 | Not found |
-| Orange heading | "Fails, ratio ~2.9-3.6:1" | #FC7519 on #FDF4EF = 2.5:1 | Not found |
+| Green heading | "Fails, ratio ~2.5-3.2:1" | #2CD991 on #F0FBF5 = 1.7:1 | Missed |
+| Orange heading | "Fails, ratio ~2.9-3.6:1" | #FC7519 on #FDF4EF = 2.5:1 | Missed |
 | Body text | "Fails, ratio ~2.3-3.5:1" | Dark tones, passes | False alarm |
 | Purple heading | "Borderline, verify" | #9534EC on #F6F0FE = 4.7:1 | Found |
 | Blue heading | "Likely passes" | #2372FF on #F4F6FF = 4.0:1 | Found |
@@ -164,10 +164,10 @@ And for colors: always test green, orange, and light blue on white. Those three 
 
 | Color on white | Ratio | Passes? |
 |---|---|---|
-| #4CAF50 (green) | 2.9:1 | No |
-| #FF9800 (orange) | 2.9:1 | No |
-| #2196F3 (blue) | 3.3:1 | No (regular text) |
-| #7B1FA2 (purple) | 6.6:1 | Yes |
+| #4CAF50 (green) | 2.8:1 | No |
+| #FF9800 (orange) | 2.2:1 | No |
+| #2196F3 (blue) | 3.1:1 | No (regular text) |
+| #7B1FA2 (purple) | 8.2:1 | Yes |
 | #999999 (gray) | 2.8:1 | No |
 | #767676 (gray) | 4.5:1 | Yes (right on the threshold) |
 

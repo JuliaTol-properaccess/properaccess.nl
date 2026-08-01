@@ -40,7 +40,7 @@ This is the number 1 keyboard issue I encounter in audits (WCAG 2.1.1). And the 
 I gave Claude the following HTML, without hints:
 
 ```html
-<div class="btn-primary" onclick="addToCart(123)">In winkelwagen</div>
+<div class="btn-primary" onclick="addToCart(123)">Add to cart</div>
 ```
 
 My prompt: *"What accessibility issues do you see in this code?"*

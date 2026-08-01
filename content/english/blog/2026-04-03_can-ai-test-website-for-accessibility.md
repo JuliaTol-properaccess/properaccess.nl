@@ -48,7 +48,7 @@ I'm Julia Tol, founder of Proper Access. I have a degree in computer science, 8 
 
 What fascinates me most is whether AI is capable of performing the same tests we carry out as accessibility researchers. And crucially: with the same results and the correct interpretation of findings.
 
-Drawing on my 9 years of experience as an accessibility researcher and the 900+ audits I've completed or supervised, I know that a WCAG assessment can be highly complex and time-consuming. In our internal wiki, we've documented no fewer than 586 issues that you can encounter on a web page, in a mobile app, or in a PDF document.
+Drawing on my 8 years of experience as an accessibility researcher and the 900+ audits I've completed or supervised, I know that a WCAG assessment can be highly complex and time-consuming. In our internal wiki, we've documented no fewer than 586 issues that you can encounter on a web page, in a mobile app, or in a PDF document.
 
 What I want to do over the coming months is test these 586 points to see whether AI can perform these tests as successfully as an experienced accessibility researcher. Follow along if you're curious about the outcome. This series will be published on LinkedIn, our website (properaccess.nl), and Medium (in English).
 

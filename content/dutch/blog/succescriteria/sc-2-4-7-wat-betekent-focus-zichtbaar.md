@@ -95,12 +95,13 @@ Een focus-indicator moet **duidelijk zichtbaar** zijn, op alle achtergrondkleure
 - **Focusstijl die niet werkt op donkere achtergronden** -- een donkerblauwe outline op een donkere achtergrond is onzichtbaar
 - **Hover-stijl maar geen focusstijl** -- een knop verandert van kleur bij :hover maar niet bij :focus
 
-## De relatie met SC 2.4.11 en 2.4.12
+## De relatie met SC 2.4.11, 2.4.12 en 2.4.13
 
-SC 2.4.7 gaat over of de focus **zichtbaar** is. De nieuwere criteria gaan verder:
+SC 2.4.7 gaat over of de focus **zichtbaar** is. De nieuwere criteria uit WCAG 2.2 gaan verder:
 
-- **SC 2.4.11** (niveau AA): het gefocuste element mag niet volledig bedekt worden door andere elementen
-- **SC 2.4.12** (niveau AAA): definieert minimale eisen voor de grootte en het contrast van de focus-indicator
+- **SC 2.4.11 Focus niet bedekt (minimum)** (niveau AA): het gefocuste element mag niet volledig bedekt worden door andere elementen, bijvoorbeeld door een cookiebalk of een plakkende koptekst
+- **SC 2.4.12 Focus niet bedekt (uitgebreid)** (niveau AAA): strenger, het element mag zelfs niet gedeeltelijk bedekt worden
+- **SC 2.4.13 Weergave van focus** (niveau AAA): stelt minimale eisen aan de grootte en het contrast van de focus-indicator
 
 ## Hoe test je het?
 
@@ -108,7 +109,7 @@ SC 2.4.7 gaat over of de focus **zichtbaar** is. De nieuwere criteria gaan verde
 2. Navigeer met **Tab** door je hele pagina
 3. Kun je op elk moment zien welk element focus heeft?
 4. Is de focus-indicator duidelijk genoeg op alle achtergrondkleuren?
-5. Werkt de focus ook op custom componenten (dropdowns, tabpanelen, modals)?
+5. Werkt de focus ook op zelfgemaakte componenten zoals dropdowns, tabpanelen en modals?
 
 ## Wat kun je als webredacteur of manager doen?
 

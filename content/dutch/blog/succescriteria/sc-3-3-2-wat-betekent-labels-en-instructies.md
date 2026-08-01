@@ -59,7 +59,7 @@ Een groep keuzerondjes of aankruisvakjes heeft een vraag of kop nodig die bij de
 
 ## Veelgemaakte fouten
 
-- **Alleen een placeholder als label.** De meest voorkomende fout. Een formulier met alleen placeholders oogt strak, maar de tekst verdwijnt bij het typen, het contrast is vaak te laag en schermlezers behandelen een placeholder niet betrouwbaar als label.
+- **Alleen een placeholder als label.** De meest voorkomende fout, en een afkeur onder dit criterium. Een formulier met alleen placeholders oogt strak, maar de tekst verdwijnt zodra iemand typt en het contrast is vaak te laag. Technisch krijgt het veld er wel een naam van, want een placeholder is de laatste stap in de berekening van de toegankelijke naam. Voor 3.3.2 telt dat niet: het criterium vraagt om een aanwijzing die zichtbaar blijft.
 - **Een label dat te ver van het veld staat.** Als het label visueel niet duidelijk bij het veld hoort, weten bezoekers niet welk label bij welk veld hoort. Zet labels direct boven of naast het veld.
 - **Geen instructie bij formaat-eisen.** Een datumveld zonder uitleg: moet je 11-03-2026, 03/11/2026 of 11 maart 2026 typen? Een rekeningnummerveld: met of zonder spaties?
 - **Uitleg die pas na een fout komt.** Sommige formulieren geven pas uitleg als je een fout maakt: "Ongeldig telefoonnummer". Maar welk formaat is dan wél geldig? Geef de instructie vooraf, niet achteraf.
@@ -76,7 +76,7 @@ Een groep keuzerondjes of aankruisvakjes heeft een vraag of kop nodig die bij de
 
 ## Controleer je formulieren met WCAG Radar
 
-Wil je weten hoe jouw formulieren ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Een placeholder telt daarbij niet als naam.
+Wil je weten hoe jouw formulieren ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Velden die hun naam alleen uit de placeholder halen krijgen een waarschuwing: de naam bestaat wel, maar hij is weg zodra iemand typt.
 
 De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
@@ -84,7 +84,9 @@ De radar vervangt geen volledige audit, maar helpt je de meest voorkomende foute
 
 ### Waarom is een placeholder niet genoeg als label?
 
-Een placeholder verdwijnt zodra iemand begint te typen. Wie halverwege het formulier terugkijkt, ziet niet meer wat er in de eerdere velden moest. Daarnaast is het contrast van placeholdertekst vaak te laag en behandelen schermlezers een placeholder niet betrouwbaar als label. Gebruik een placeholder hooguit als extra voorbeeld naast een zichtbaar label.
+Een placeholder verdwijnt zodra iemand begint te typen. Wie halverwege het formulier terugkijkt, ziet niet meer wat er in de eerdere velden moest. Daarnaast is het contrast van placeholdertekst vaak te laag.
+
+Let op het verschil met de techniek. Een schermlezer leest de placeholder wel voor als naam van het veld, want dat is de laatste stap in de berekening van de toegankelijke naam. Onder [4.1.2 Naam, rol, waarde](/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/) heeft het veld dus gewoon een naam. Onder 3.3.2 is het alsnog een afkeur, omdat de aanwijzing verdwijnt op het moment dat je hem nodig hebt. Gebruik een placeholder hooguit als extra voorbeeld naast een zichtbaar label.
 
 ### Mijn formulieren komen uit een module in mijn CMS, wat kan ik zelf doen?
 

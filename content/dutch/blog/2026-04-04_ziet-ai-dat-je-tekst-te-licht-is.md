@@ -61,25 +61,25 @@ Geen hints. Geen kleurnummers. Alleen het plaatje.
 
 ## Wat AI vond
 
-Claude identificeerde drie categorieën contrastproblemen.
+Claude bestempelde drie elementen als een afkeur en beoordeelde er nog drie. Zes oordelen in totaal.
 
 ### 1. Groene kop: faalt
 
 > "Groen is de meest problematische kleur voor contrast op wit. Een typisch groen zoals #4CAF50 haalt maar 2,5 tot 3,2:1 tegen wit."
 
-**Score: Niet gevonden.** Ik meet met mijn tools de groene kleur die in de kop is gebruikt als <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op een <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5. Mijn contrastwaarde is 1,7:1. Dit is te groot verschil met 2,5 tot 3,2:1 van Claude. Overigens is de marge van 0,5 tussen 2,5:1 en 3,0:1 gewoon te groot om te accepteren. WCAG heeft het over contrast die met 2 cijfers achter de komma wordt gemeten, bijvoorbeeld 2,99:1.
+**Score: Gemist.** Ik meet met mijn tools de groene kleur die in de kop is gebruikt als <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op een <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5. Mijn contrastwaarde is 1,7:1. Dit is te groot verschil met 2,5 tot 3,2:1 van Claude. Overigens is de marge van 0,5 tussen 2,5:1 en 3,0:1 gewoon te groot om te accepteren. WCAG heeft het over contrast die met 2 cijfers achter de komma wordt gemeten, bijvoorbeeld 2,99:1.
 
 ### 2. Oranje kop: faalt
 
 > "Oranje is ook een problematische kleur. Een typisch oranje zoals #FF9800 haalt ongeveer 2,9:1 tegen wit. Zelfs een donkerder oranje zoals #F57C00 haalt maar 3,6:1."
 
-**Score: Niet gevonden.** Weer mis. Claude meet een andere tint oranje en ziet niet dat elk blokje op de screenshot een subtiele achtergrondkleur heeft. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF met resultaat van 2,5:1.
+**Score: Gemist.** Weer mis. Claude meet een andere tint oranje en ziet niet dat elk blokje op de screenshot een subtiele achtergrondkleur heeft. Mijn meting is <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF met resultaat van 2,5:1.
 
 ### 3. Bodytekst in lichtgrijs: faalt
 
 > "Een typisch lichtgrijs in dit soort ontwerpen is #888888 tot #AAAAAA. Dat geeft een ratio van 2,3 tot 3,5:1. Dat faalt voor de vereiste 4,5:1."
 
-**Score: Niet gevonden.** Claude ziet lichtgrijze tekst op deze screenshot. Ik zie broodtekst in donkere tinten die allemaal voldoen aan de minimale contrasteisen.
+**Score: Vals alarm.** Claude ziet lichtgrijze tekst op deze screenshot. Ik zie broodtekst in donkere tinten die allemaal voldoen aan de minimale contrasteisen.
 
 ### 4. Paarse kop: twijfelgeval
 
@@ -105,8 +105,8 @@ Claude meldt correct dat de illustraties decoratief zijn en niet onder WCAG 1.4.
 
 | Element                  | AI-oordeel                 | Mijn meting                    | Score             |
 | ------------------------ | -------------------------- | ------------------------------ | ----------------- |
-| Groene kop               | "Faalt, ratio ~2,5-3,2:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5 = 1,7:1    | Niet gevonden     |
-| Oranje kop               | "Faalt, ratio ~2,9-3,6:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF = 2,5:1    | Niet gevonden     |
+| Groene kop               | "Faalt, ratio ~2,5-3,2:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#2CD991;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2CD991 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F0FBF5;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F0FBF5 = 1,7:1    | Gemist            |
+| Oranje kop               | "Faalt, ratio ~2,9-3,6:1"  | <span style="display:inline-block;width:0.9em;height:0.9em;background:#FC7519;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FC7519 op <span style="display:inline-block;width:0.9em;height:0.9em;background:#FDF4EF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FDF4EF = 2,5:1    | Gemist            |
 | Bodytekst                | "Faalt, ratio ~2,3-3,5:1"  | Donkere tinten, voldoet        | Vals alarm        |
 | Paarse kop               | "Op de grens, verifieer"   | <span style="display:inline-block;width:0.9em;height:0.9em;background:#9534EC;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #9534EC op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F6F0FE;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F6F0FE = 4,7:1    | Gevonden          |
 | Blauwe kop               | "Voldoet waarschijnlijk"   | <span style="display:inline-block;width:0.9em;height:0.9em;background:#2372FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2372FF op <span style="display:inline-block;width:0.9em;height:0.9em;background:#F4F6FF;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #F4F6FF = 4,0:1    | Gevonden          |
@@ -166,10 +166,10 @@ En voor kleuren: test altijd groen, oranje en lichtblauw op wit. Die drie vallen
 
 | Kleur op wit     | Ratio | Voldoet?                 |
 | ---------------- | ----- | ------------------------ |
-| <span style="display:inline-block;width:0.9em;height:0.9em;background:#4CAF50;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #4CAF50 (groen)  | 2,9:1 | Nee                      |
-| <span style="display:inline-block;width:0.9em;height:0.9em;background:#FF9800;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FF9800 (oranje) | 2,9:1 | Nee                      |
-| <span style="display:inline-block;width:0.9em;height:0.9em;background:#2196F3;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2196F3 (blauw)  | 3,3:1 | Nee (gewone tekst)       |
-| <span style="display:inline-block;width:0.9em;height:0.9em;background:#7B1FA2;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #7B1FA2 (paars)  | 6,6:1 | Ja                       |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#4CAF50;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #4CAF50 (groen)  | 2,8:1 | Nee                      |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#FF9800;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #FF9800 (oranje) | 2,2:1 | Nee                      |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#2196F3;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #2196F3 (blauw)  | 3,1:1 | Nee (gewone tekst)       |
+| <span style="display:inline-block;width:0.9em;height:0.9em;background:#7B1FA2;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #7B1FA2 (paars)  | 8,2:1 | Ja                       |
 | <span style="display:inline-block;width:0.9em;height:0.9em;background:#999999;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #999999 (grijs)  | 2,8:1 | Nee                      |
 | <span style="display:inline-block;width:0.9em;height:0.9em;background:#767676;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #767676 (grijs)  | 4,5:1 | Ja (precies op de grens) |
 
