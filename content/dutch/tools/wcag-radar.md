@@ -101,7 +101,7 @@ tabs:
         wcag: "/blog/sc-1-3-1-tabellen/"
         onderwerp: "tabellen"
       - titel: "Toegankelijke naam bij formuliervelden"
-        uitleg: "De radar markeert invoervelden zonder toegankelijke naam en velden die alleen een placeholder hebben. Let op: zichtbare tekst naast een veld telt alleen als toegankelijke naam als hij via <label for>, aria-label of aria-labelledby aan het veld is gekoppeld. Een placeholder verdwijnt zodra je typt en telt sowieso niet."
+        uitleg: "De radar markeert invoervelden zonder toegankelijke naam en velden die alleen een placeholder hebben. Let op: zichtbare tekst naast een veld telt alleen als toegankelijke naam als hij via <label for>, aria-label of aria-labelledby aan het veld is gekoppeld. Een placeholder levert technisch wel een naam op, maar hij verdwijnt zodra je typt, dus we markeren zo'n veld toch."
         wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/"
         onderwerp: "labels bij formuliervelden"
       - titel: "Titels van ingesloten kaders (iframes)"

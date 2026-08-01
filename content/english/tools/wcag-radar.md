@@ -102,7 +102,7 @@ tabs:
       - titel: "Autocomplete on personal data"
         uitleg: "Fields asking for personal data, such as name, email address or phone number, should have an autocomplete attribute. The browser can then fill them in, which helps people with motor or cognitive disabilities, among others. The Radar shows the value and warns when it is missing or unknown."
       - titel: "Accessible names of form fields"
-        uitleg: "Marks input fields without an accessible name and fields that only have a placeholder. Note: visible text next to a field only counts as its accessible name when it is linked to the field via <label for>, aria-label or aria-labelledby. A placeholder disappears as soon as you type and never counts."
+        uitleg: "Marks input fields without an accessible name and fields that only have a placeholder. Note: visible text next to a field only counts as its accessible name when it is linked to the field via <label for>, aria-label or aria-labelledby. A placeholder does technically provide a name, but it disappears as soon as you type, so we flag those fields anyway."
       - titel: "Error messages on form fields"
         uitleg: "The Radar looks for visible error messages (via role=alert, aria-live, or a class like error/invalid) and checks whether they are linked to an input via aria-describedby or aria-errormessage. Unlinked messages are an error: a screen reader will not announce them."
       - titel: "Text contrast"
