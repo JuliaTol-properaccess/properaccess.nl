@@ -3,6 +3,7 @@ title: 'SC 1.4.3 - What does "Contrast (Minimum)" mean?'
 date: 2026-07-30
 slug: "wcag-1-4-3-contrast-minimum"
 translationKey: "sc-1-4-3"
+homepage_exclude: true
 categories:
   - "wcag-explained"
 tags:
@@ -21,7 +22,7 @@ keywords:
 
 Light grey text on a white background looks calm and modern. Put a bit of sunlight on the screen and it is gone. For visitors with reduced vision it is not gone occasionally, it is gone always. That is why WCAG says: **text needs enough contrast with its background**.
 
-This is the criterion with the highest hit rate in our audits. It is also the cheapest to fix, because it usually comes down to a handful of values in a design system.
+It is one of the failures we report most often, and one of the cheapest to fix, because it usually comes down to a handful of values in a design system.
 
 ## What the criterion says
 
@@ -72,7 +73,7 @@ Text sitting on an image or a gradient cannot be measured automatically, because
 Two more checks in the same panel are worth running at the same time:
 
 - **Dark mode** applies a dark palette so you can see whether your colours hold up.
-- **Grayscale** removes all colour, which shows immediately whether anything relies on hue alone. That is [SC 1.4.1](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html) rather than 1.4.3, but the two are usually fixed in the same sitting.
+- **Grayscale (colour-blindness check)** removes all colour, which shows immediately whether anything relies on hue alone. That is [SC 1.4.1](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html) rather than 1.4.3, but the two are usually fixed in the same sitting.
 
 Remember to check hover, focus and visited states. Those need a deliberate pass, because no tool can hover for you.
 
@@ -115,4 +116,4 @@ No. Overlay widgets that offer a "high contrast mode" do not make your default p
 - Check hover, focus and dark mode separately.
 - Measure a whole page at once with the text contrast check in [WCAG Radar](https://wcagtoolkit.com/wcag-radar), and use the colour pickers for text on images.
 
-Contrast is one of the few criteria an automated tool judges reliably. If you want to know what the other two thirds of WCAG say about your site, [request a quote](/en/contact/) or run the [free scan](https://wcagtoolkit.com) first.
+Contrast is one of the few criteria an automated tool judges reliably. Most of WCAG is not like that. If you want to know what the rest of it says about your site, [request a quote](/en/contact/) or run the [free scan](https://wcagtoolkit.com) first.

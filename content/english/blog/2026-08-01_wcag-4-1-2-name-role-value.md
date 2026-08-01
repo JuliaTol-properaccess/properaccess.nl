@@ -3,6 +3,7 @@ title: 'SC 4.1.2 - What does "Name, Role, Value" mean?'
 date: 2026-08-01
 slug: "wcag-4-1-2-name-role-value"
 translationKey: "sc-4-1-2"
+homepage_exclude: true
 categories:
   - "wcag-explained"
 tags:
@@ -45,7 +46,7 @@ The everyday version: a mouse user sees a blue rounded rectangle that says "Send
 <div class="btn" onclick="submit()">Send</div>
 ```
 
-This looks right, works with a mouse, and fails four criteria at once. It has no role, so it is announced as plain text. It is not in the tab order, so a keyboard user can never reach it. It does not respond to Enter or Space. And it gets no focus indicator.
+This looks right, works with a mouse, and fails three criteria at once. Under **4.1.2** it has no role, so it is announced as plain text. Under [**2.1.1 Keyboard**](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) it is not in the tab order and does not respond to Enter or Space, so a keyboard user can never reach it or operate it. And under [**2.4.7 Focus Visible**](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html) there is no focus state to show.
 
 The fix is almost always to use the real element:
 

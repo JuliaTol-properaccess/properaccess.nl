@@ -3,6 +3,7 @@ title: 'SC 1.1.1 - What does "Non-text Content" mean?'
 date: 2026-07-28
 slug: "wcag-1-1-1-non-text-content"
 translationKey: "sc-1-1-1"
+homepage_exclude: true
 categories:
   - "wcag-explained"
 tags:
@@ -49,7 +50,7 @@ That last case trips up the most experienced teams. The alt text of a functional
 
 **Repeating the caption.** If the caption directly under the photo already reads "Our team at the 2026 conference", an identical alt text means the sentence is announced twice in a row. Use `alt=""` and let the caption do the work.
 
-**Icon fonts and emoji as the accessible name.** A button whose entire label is a Font Awesome glyph or a 🔍 emoji has no word attached to it. Assistive software drops the name and announces just the role, so the user hears "button" and nothing else. Give the button an `aria-label` describing its function and set the icon to `aria-hidden="true"`.
+**Icon fonts and emoji as the accessible name.** A button whose entire label is a Font Awesome glyph or a magnifying-glass emoji has no word attached to it. Assistive software drops the name and announces just the role, so the user hears "button" and nothing else. Give the button an `aria-label` describing its function and set the icon to `aria-hidden="true"`.
 
 **Charts with a one-line alt.** `alt="Bar chart of revenue"` tells a blind reader that they are missing something without telling them what. Either put the takeaway in the alt text ("Revenue grew from 1.2 to 3.4 million between 2023 and 2026") or, better, put the underlying figures in a table near the chart.
 
@@ -59,9 +60,9 @@ That last case trips up the most experienced teams. The alt text of a functional
 
 ## How to test it
 
-Open the page and turn on the images check in **[WCAG Radar](https://wcagtoolkit.com/wcag-radar)**, our free bookmarklet. It marks every image with what it found: alt text present, an empty alt, or no alt attribute at all. Visible SVGs join in too, showing their title and description. It also flags redundant words like "image of", while leaving the judgement to you, because only you know whether a picture carries meaning.
+Open the page and turn on the **images and alt text** check in **[WCAG Radar](https://wcagtoolkit.com/wcag-radar)**, our free bookmarklet. It marks every image with what it found: alt text present, an empty alt, or no alt attribute at all. Visible SVGs join in too, showing their title and description. It also flags redundant words like "image of", while leaving the judgement to you, because only you know whether a picture carries meaning.
 
-Then use the images-off check in the same panel. All imagery dims, and you read the page as if nothing loaded. If a sentence stops making sense, the alt text next to it is doing too little.
+Then use the **images off** check in the same panel. All imagery dims, and you read the page as if nothing loaded. If a sentence stops making sense, the alt text next to it is doing too little.
 
 Two things a tool cannot decide for you:
 
@@ -101,6 +102,6 @@ It is a decent first draft for straightforward photos and a poor one for anythin
 - Every non-text element needs a text alternative with an equivalent purpose.
 - Ask what the page would lose without the image. Nothing means `alt=""`, information means describe the information, function means describe the action.
 - Skip "image of", do not repeat the caption, and never let an icon or emoji be the only name of a button.
-- Test with the images and images-off checks in [WCAG Radar](https://wcagtoolkit.com/wcag-radar), then read the result as a human.
+- Test with the images-and-alt-text and images-off checks in [WCAG Radar](https://wcagtoolkit.com/wcag-radar), then read the result as a human.
 
 Want to know how your whole site scores rather than one page? Start with the [free accessibility scan](https://wcagtoolkit.com), or [ask us for a quote](/en/contact/) if you would rather have a senior auditor go through it with you.

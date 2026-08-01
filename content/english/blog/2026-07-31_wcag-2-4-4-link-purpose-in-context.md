@@ -3,6 +3,7 @@ title: 'SC 2.4.4 - What does "Link Purpose (In Context)" mean?'
 date: 2026-07-31
 slug: "wcag-2-4-4-link-purpose-in-context"
 translationKey: "sc-2-4-4"
+homepage_exclude: true
 categories:
   - "wcag-explained"
 tags:
@@ -37,7 +38,7 @@ Three groups feel this immediately.
 
 **Voice control users** say "click Read more" and get asked which one, then have to work through a numbered overlay. Distinct link text means the command just works.
 
-**Everybody who scans.** Eye-tracking research has shown for years that people read link text and skip the prose around it. Descriptive links are not an accessibility feature that happens to help everyone, they are a usability feature that happens to be required.
+**People who use the keyboard.** Tabbing through a page moves from link to link, so the link text arrives on its own, without the sentence around it. Same list, same problem: "Read more, read more, read more".
 
 ## What good link text looks like
 

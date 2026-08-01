@@ -3,6 +3,7 @@ title: 'SC 1.3.1 - What does "Info and Relationships" mean?'
 date: 2026-07-29
 slug: "wcag-1-3-1-info-and-relationships"
 translationKey: "sc-1-3-1"
+homepage_exclude: true
 categories:
   - "wcag-explained"
 tags:
@@ -89,11 +90,11 @@ Then do the one test no tool can do for you: turn on **styles off (reading order
 
 ### Does the heading order really have to be perfect?
 
-Skipping a level going down (H2 to H4) is a failure. Going back up (H4 to H2) to start a new section is completely normal. The rule is about the descent.
+WCAG has no failure technique for skipped levels, so an H2 followed by an H4 is not automatically a failure of 1.3.1. It is still a signal that a layer is missing, and it is the kind of thing a screen reader user notices when they navigate by heading, so we report it. Going back up (H4 to H2) to start a new section is completely normal.
 
 ### Are ARIA roles a valid alternative?
 
-`role="heading" aria-level="2"` works, but native HTML works better and breaks less. Reach for ARIA only when no HTML element fits. The first rule of ARIA is not to use ARIA.
+`role="heading" aria-level="2"` works, but native HTML works better and breaks less. Reach for ARIA only when no HTML element fits.
 
 ### Is a table without a caption a failure?
 
@@ -114,4 +115,4 @@ Yes, and it is worth knowing which parts you can influence. In most systems edit
 - If styling carries meaning, add the meaning as text.
 - Check with the headings, lists, tables, form-name and group checks in [WCAG Radar](https://wcagtoolkit.com/wcag-radar), then turn styles off and read the page as a story.
 
-An automated scan finds roughly a third of the problems under this criterion. The rest needs someone reading the page. If you want that done properly, [ask us for a quote](/en/contact/).
+An automated scan finds the missing header cells and the unlabelled fields. It cannot tell you whether a heading level matches the meaning of the section, or whether a border is carrying a relationship that nobody wrote down. That part needs someone reading the page. If you want that done properly, [ask us for a quote](/en/contact/).
