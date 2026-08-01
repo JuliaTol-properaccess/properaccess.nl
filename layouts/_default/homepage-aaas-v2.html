@@ -931,8 +931,10 @@
   /* ── Responsief ── */
   @media (max-width: 1100px) {
     .rd-container { padding: 0 2.5rem; }
-    .rd-hero__inner { grid-template-columns: 1fr; gap: 3rem; }
-    .rd-portalcard { max-width: 30rem; }
+    .rd-hero__inner { grid-template-columns: 1fr; gap: 0; }
+    /* De portaalkaart is decoratief; onder de tweekolomsgrens valt hij onder de
+       tekst en voegt hij niets toe, dus we halen hem helemaal weg. */
+    .rd-portalcard { display: none; }
     .rd-problem__grid,
     .rd-cta__grid { grid-template-columns: 1fr; gap: 3rem; }
     .rd-portal__grid { grid-template-columns: 1fr; }
