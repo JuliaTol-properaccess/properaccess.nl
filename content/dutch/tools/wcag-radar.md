@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar"
 meta_title: "WCAG Radar (Redactie, Designer, Developer) | Proper Access"
-description: "Gratis bookmarklet met drie tabbladen: Redactie, Designer en Developer. Laat op elke pagina live zien of alt-teksten, koppen, contrast, focus, ARIA, tabvolgorde en meer kloppen."
+description: "Gratis bookmarklet met drie tabbladen: Redactie, Designer en Developer. Laat op elke pagina live zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. Een deel van de checks vraagt een licentie."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
 gratis: true
@@ -34,7 +34,7 @@ keywords:
   - tekst vergroten testen
   - focus zichtbaar maken
   - bookmarklet toegankelijkheid
-hero_sub: "Een gratis knop in je bladwijzerbalk die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus, ARIA en tabvolgorde, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
+hero_sub: "Een gratis knop in je bladwijzerbalk die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
 rollen:
   - eyebrow: "Voor webredactie"
     titel: "De controles die je elke week doet, in één klik"
@@ -100,6 +100,7 @@ tabs:
         uitleg: "De radar markeert tabellen zonder kopcellen of bijschrift. Kopcellen vertellen voorleessoftware welke rij of kolom bij een cel hoort, zodat een bezoeker een tabel kan volgen."
         wcag: "/blog/sc-1-3-1-tabellen/"
         onderwerp: "tabellen"
+        pro: true
       - titel: "Toegankelijke naam bij formuliervelden"
         uitleg: "De radar markeert invoervelden zonder toegankelijke naam en velden die alleen een placeholder hebben. Let op: zichtbare tekst naast een veld telt alleen als toegankelijke naam als hij via <label for>, aria-label of aria-labelledby aan het veld is gekoppeld. Een placeholder verdwijnt zodra je typt en telt sowieso niet."
         wcag: "/blog/sc-3-3-2-wat-betekent-labels-en-instructies/"
@@ -108,6 +109,7 @@ tabs:
         uitleg: "De radar markeert ingesloten kaders (iframes), zoals een video of een kaart, zonder titel. Een titel vertelt een screenreadergebruiker wat er in het kader zit."
         wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/"
         onderwerp: "titels van iframes"
+        pro: true
       - titel: "Paginatitel"
         uitleg: "De radar toont de titel van de pagina. Een duidelijke, unieke titel helpt bezoekers om tabbladen en zoekresultaten uit elkaar te houden."
         wcag: "/blog/sc-2-4-2-wat-betekent-paginatitels/"
@@ -138,6 +140,7 @@ tabs:
         uitleg: "De radar markeert klikbare elementen die kleiner zijn dan 24 bij 24 pixels. Let op: een klein doel kan toch voldoen, bijvoorbeeld een link midden in een tekst of een doel met genoeg ruimte eromheen. Gebruik de markering als startpunt om te controleren."
         wcag: "/blog/sc-2-5-8-wat-betekent-doelgrootte-minimum/"
         onderwerp: "doelgrootte"
+        pro: true
       - titel: "Tekstafstand (1.4.12)"
         uitleg: "De radar past de WCAG-tekstafstanden toe. Kijk of er tekst wegvalt, overlapt of wordt afgekapt als een bezoeker meer ruimte tussen letters en regels instelt."
         wcag: "/blog/sc-1-4-12-wat-betekent-tekstafstand/"
@@ -172,6 +175,7 @@ tabs:
         uitleg: "Elk focusbaar element krijgt een nummer in de volgorde waarin je er met Tab doorheen gaat. Positieve tabindex-waarden springen vóór de rest en worden als fout gemarkeerd, want die verstoren de logische toetsenbordvolgorde."
         wcag: "/blog/sc-2-4-3-wat-betekent-focusvolgorde/"
         onderwerp: "de focusvolgorde"
+        pro: true
       - titel: "Focus zichtbaar maken"
         uitleg: "De radar forceert een duidelijke focusrand op elk element. Tab door de pagina om te zien of de focus altijd zichtbaar is en logisch verspringt."
         wcag: "/blog/sc-2-4-7-wat-betekent-focus-zichtbaar/"
@@ -196,6 +200,7 @@ tabs:
         uitleg: "Iframes zonder title of aria-label springen eruit. Een titel is nodig zodat een screenreadergebruiker weet wat er in het kader zit."
         wcag: "/blog/sc-4-1-2-wat-betekent-naam-rol-waarde/"
         onderwerp: "titels van iframes"
+        pro: true
       - titel: "Element-info bij hover"
         uitleg: "Beweeg met de muis over de pagina en zie tag, id, class, rol, toegankelijke naam en afmeting van elk element. Sneller dan de inspector openen voor een snelle check."
 ---
@@ -203,3 +208,5 @@ tabs:
 Bovenin het paneel wissel je tussen drie tabbladen, afgestemd op wat jij doet. Elk tabblad bevat de controles die bij die rol horen, dus je hoeft niet langs alles te scrollen wat je toch niet gebruikt.
 
 Vindt een check iets, dan verschijnen er knoppen om vooruit en achteruit door de resultaten te springen. Zo loop je elke bevinding op de pagina langs zonder zelf te zoeken.
+
+De meeste checks zijn gratis en blijven dat. Een deel is gemarkeerd met "Licentie": die staan wel in het paneel, maar draaien pas als je een licentie hebt. Daarbij hoort ook het opslaan van een rapport van je testsessie. Wat een licentie kost, staat op [de prijzenpagina van Testtoegankelijkheid](https://testtoegankelijkheid.nl/prijzen).

@@ -223,7 +223,18 @@
         <ul class="rad-checks__grid">
           {{ range $check := $tab.checks }}
           <li class="rad-check">
-            <h4 class="rad-check__title">{{ $check.titel }}</h4>
+            {{/* Checks met `pro: true` in de front matter zitten in de extensie
+                 achter een licentie. De markering staat in de kop en niet bij de
+                 uitleg: wie de lijst met een screenreader doorloopt, hoort hem dan
+                 meteen bij de naam. De aria-label noemt de check erbij, anders
+                 heet elke markering "Licentie" en zijn ze in een lijst met links
+                 niet uit elkaar te houden. Zelfde opzet als op
+                 testtoegankelijkheid.nl/wcag-radar. */}}
+            <h4 class="rad-check__title">{{ $check.titel }}{{ if $check.pro }}
+              <a class="rad-check__pro" href="https://testtoegankelijkheid.nl/prijzen"
+                 aria-label="{{ if $nl }}{{ $check.titel }} vraagt een licentie, bekijk de prijzen{{ else }}{{ $check.titel }} requires a licence, see the pricing{{ end }}"
+                >{{ if $nl }}Licentie{{ else }}Licence{{ end }}</a>
+            {{ end }}</h4>
             <p class="rad-check__text">{{ $check.uitleg }}</p>
             {{ with $check.wcag }}
             {{/* Linktekst benoemt het onderwerp van de check, zodat elke link op

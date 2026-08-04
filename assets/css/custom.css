@@ -16873,6 +16873,31 @@ html.dark .contrast-voorbeeld__swatch {
   border-left: 3px solid #A30D4B;
 }
 
+.rad-check__pro {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  font-family: "Nunito", "Nunito Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #004050;
+  background: #F5F5F5;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  text-decoration: none;
+}
+
+.rad-check__pro:hover {
+  color: #A30D4B;
+  border-color: #A30D4B;
+}
+
+.rad-check__pro:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+}
+
 .rad-check__text {
   font-size: 0.925rem;
   line-height: 1.7;
