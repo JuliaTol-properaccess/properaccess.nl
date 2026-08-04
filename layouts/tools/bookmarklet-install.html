@@ -1,6 +1,10 @@
 {{ define "main" }}
 {{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
 {{ $nl := eq .Lang "nl" }}
+{{/* Winkelpagina's van de extensie. Firefox serveert per taal een eigen pad,
+     de Chrome Web Store kiest de taal zelf op basis van je account. */}}
+{{ $chrome := "https://chromewebstore.google.com/detail/wcag-radar/ppnojdoamdfckokjapadjkcggbdnfamc" }}
+{{ $firefox := cond $nl "https://addons.mozilla.org/nl/firefox/addon/wcag-radar/" "https://addons.mozilla.org/en-US/firefox/addon/wcag-radar/" }}
 
 <!-- ─── HERO ─── -->
 <section class="rad-hero">
@@ -14,50 +18,127 @@
         <p class="hp-hero__subtitle">{{ . | markdownify }}</p>
         {{ end }}
 
-        {{ with $bm }}
-        <div class="rad-install">
-          <p class="rad-install__step">
-            {{ if $nl }}Sleep deze knop één keer naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar once:{{ end }}
-          </p>
-          {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
-               dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
-               blijft de bookmark leeg. */}}
-          <a class="hp-btn hp-btn--primary rad-install__drag" href="{{ .href | safeURL }}">
-            <span class="rad-install__dot" aria-hidden="true"></span>
-            {{ $.Title }}
-          </a>
-          <p class="rad-install__hint">
-            {{ if $nl }}Klik hem daarna aan op elke website. Je kunt hem ook nu meteen op deze
-            pagina uitproberen. Werkt in Chrome, Edge, Firefox en Safari.
-            {{ else }}Then click it on any website. You can also try it right here on this page.
-            Works in Chrome, Edge, Firefox and Safari.{{ end }}
-          </p>
-
-          <details class="rad-install__manual">
-            <summary>{{ if $nl }}Slepen lukt niet? Maak de bladwijzer handmatig{{ else }}Can't drag it? Create the bookmark manually{{ end }}</summary>
-            <div class="rad-install__manual-body">
-              <ol class="rad-install__steps">
-                <li>{{ if $nl }}Maak een nieuwe bladwijzer aan met het ster-icoon of met Ctrl&nbsp;+&nbsp;D, op een Mac Cmd&nbsp;+&nbsp;D.{{ else }}Create a new bookmark with the star icon or with Ctrl&nbsp;+&nbsp;D, on a Mac Cmd&nbsp;+&nbsp;D.{{ end }}</li>
-                <li>{{ if $nl }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, for example “{{ $.Title }}”.{{ end }}</li>
-                <li>{{ if $nl }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
-              </ol>
-              <label class="rad-install__code-label" for="pa-bm-code">{{ if $nl }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
-              <textarea id="pa-bm-code" class="rad-install__code" readonly rows="4">{{ .code }}</textarea>
-              <button type="button" class="hp-btn hp-btn--outline rad-install__copy"
-                      data-target="pa-bm-code"
-                      data-done="{{ if $nl }}Gekopieerd{{ else }}Copied{{ end }}">
-                {{ if $nl }}Kopieer de code{{ else }}Copy the code{{ end }}
-              </button>
-            </div>
-          </details>
-        </div>
-        {{ end }}
+        <a class="hp-btn hp-btn--primary rad-hero__cta" href="#installeren">
+          {{ if $nl }}Zo krijg je de radar{{ else }}How to get the radar{{ end }}
+        </a>
       </div>
 
       <div class="rad-hero__visual" aria-hidden="true">
         {{ partial "tools/svg-radar-hero.html" . }}
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ─── INSTALLEREN: BOOKMARKLET, CHROME, FIREFOX ─── -->
+<section class="rad-get" id="installeren">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg rad-get__heading">
+      {{ if $nl }}Zo krijg je de radar{{ else }}How to get the radar{{ end }}
+    </h2>
+    <p class="rad-get__intro">
+      {{ if $nl }}Drie manieren, dezelfde radar. De bookmarklet installeer je niet: je sleept
+      hem naar je bladwijzerbalk en hij werkt in elke browser. De extensie zet je één keer in
+      Chrome of Firefox en staat daarna in je werkbalk.
+      {{ else }}Three ways, the same radar. The bookmarklet needs no install: you drag it to
+      your bookmarks bar and it works in any browser. The extension goes into Chrome or Firefox
+      once and then sits in your toolbar.{{ end }}
+    </p>
+
+    <ul class="rad-get__grid">
+
+      {{ with $bm }}
+      <li class="rad-get__item">
+        <span class="rad-get__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z"/>
+          </svg>
+        </span>
+        <h3 class="rad-get__title">{{ if $nl }}Bookmarklet{{ else }}Bookmarklet{{ end }}</h3>
+        <p class="rad-get__text">
+          {{ if $nl }}Werkt in elke browser, zonder iets te installeren. Ook op een computer
+          waarop dat niet mag.
+          {{ else }}Works in any browser, with nothing to install. Also on a machine where you
+          are not allowed to.{{ end }}
+        </p>
+        <p class="rad-get__step">
+          {{ if $nl }}Sleep deze knop naar je bladwijzerbalk:{{ else }}Drag this button to your bookmarks bar:{{ end }}
+        </p>
+        {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
+             dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
+             blijft de bookmark leeg. */}}
+        <a class="hp-btn hp-btn--primary rad-install__drag" href="{{ .href | safeURL }}">
+          <span class="rad-install__dot" aria-hidden="true"></span>
+          {{ $.Title }}
+        </a>
+
+        <details class="rad-install__manual">
+          <summary>{{ if $nl }}Slepen lukt niet? Maak de bladwijzer handmatig{{ else }}Can't drag it? Create the bookmark manually{{ end }}</summary>
+          <div class="rad-install__manual-body">
+            <ol class="rad-install__steps">
+              <li>{{ if $nl }}Maak een nieuwe bladwijzer aan met het ster-icoon of met Ctrl&nbsp;+&nbsp;D, op een Mac Cmd&nbsp;+&nbsp;D.{{ else }}Create a new bookmark with the star icon or with Ctrl&nbsp;+&nbsp;D, on a Mac Cmd&nbsp;+&nbsp;D.{{ end }}</li>
+              <li>{{ if $nl }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, for example “{{ $.Title }}”.{{ end }}</li>
+              <li>{{ if $nl }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
+            </ol>
+            <label class="rad-install__code-label" for="pa-bm-code">{{ if $nl }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
+            <textarea id="pa-bm-code" class="rad-install__code" readonly rows="4">{{ .code }}</textarea>
+            <button type="button" class="hp-btn hp-btn--outline rad-install__copy"
+                    data-target="pa-bm-code"
+                    data-done="{{ if $nl }}Gekopieerd{{ else }}Copied{{ end }}">
+              {{ if $nl }}Kopieer de code{{ else }}Copy the code{{ end }}
+            </button>
+          </div>
+        </details>
+      </li>
+      {{ end }}
+
+      <li class="rad-get__item">
+        <span class="rad-get__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="3.5"/>
+            <path d="M15.5 12H21M10.25 15.03 7.5 19.8M13.75 15.03l2.75 4.77"/>
+          </svg>
+        </span>
+        <h3 class="rad-get__title">{{ if $nl }}Extensie voor Chrome{{ else }}Extension for Chrome{{ end }}</h3>
+        <p class="rad-get__text">
+          {{ if $nl }}Ook voor Edge, Brave en Vivaldi, want die draaien op dezelfde extensies.
+          De radar krijgt een eigen knop in je werkbalk, dus je hebt geen bladwijzerbalk in
+          beeld nodig.
+          {{ else }}Also for Edge, Brave and Vivaldi, since they run the same extensions. The
+          radar gets its own button in your toolbar, so you do not need a visible bookmarks
+          bar.{{ end }}
+        </p>
+        <a class="hp-btn hp-btn--primary" href="{{ $chrome }}">
+          {{ if $nl }}Installeer in Chrome{{ else }}Install in Chrome{{ end }}
+        </a>
+        <p class="rad-get__hint">
+          {{ if $nl }}Je gaat naar de Chrome Web Store.{{ else }}Takes you to the Chrome Web Store.{{ end }}
+        </p>
+      </li>
+
+      <li class="rad-get__item">
+        <span class="rad-get__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21a6 6 0 0 0 6-6c0-3.5-2.5-5.4-3.6-8-.5 1.5-1.2 2.4-2.1 3-1-1.6-1-3.5-.7-5.6C8.6 6 6 9 6 15a6 6 0 0 0 6 6Z"/>
+          </svg>
+        </span>
+        <h3 class="rad-get__title">{{ if $nl }}Extensie voor Firefox{{ else }}Extension for Firefox{{ end }}</h3>
+        <p class="rad-get__text">
+          {{ if $nl }}Voor Firefox op Windows, macOS en Linux. Ook hier krijgt de radar een
+          eigen knop in je werkbalk en werkt hij op pagina's achter een login en op localhost.
+          {{ else }}For Firefox on Windows, macOS and Linux. Here too the radar gets its own
+          toolbar button, and it works on pages behind a login and on localhost.{{ end }}
+        </p>
+        <a class="hp-btn hp-btn--primary" href="{{ $firefox }}">
+          {{ if $nl }}Installeer in Firefox{{ else }}Install in Firefox{{ end }}
+        </a>
+        <p class="rad-get__hint">
+          {{ if $nl }}Je gaat naar addons.mozilla.org.{{ else }}Takes you to addons.mozilla.org.{{ end }}
+        </p>
+      </li>
+
+    </ul>
   </div>
 </section>
 

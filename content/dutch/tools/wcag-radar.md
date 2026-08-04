@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar"
 meta_title: "WCAG Radar (Redactie, Designer, Developer) | Proper Access"
-description: "Gratis bookmarklet met drie tabbladen: Redactie, Designer en Developer. Laat op elke pagina live zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. Een deel van de checks vraagt een licentie."
+description: "Gratis bookmarklet en browserextensie voor Chrome en Firefox, met drie tabbladen: Redactie, Designer en Developer. Laat op elke pagina live zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. Een deel van de checks vraagt een licentie."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
 gratis: true
@@ -34,7 +34,7 @@ keywords:
   - tekst vergroten testen
   - focus zichtbaar maken
   - bookmarklet toegankelijkheid
-hero_sub: "Een gratis knop in je bladwijzerbalk die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
+hero_sub: "Een gratis knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
 rollen:
   - eyebrow: "Voor webredactie"
     titel: "De controles die je elke week doet, in één klik"
