@@ -16537,19 +16537,87 @@ html.dark .contrast-voorbeeld__swatch {
   display: block;
 }
 
-/* ─── Installatieblok in de hero ─── */
-.rad-install {
-  width: 100%;
-  border: 1px solid #e5e7eb;
-  border-radius: 1rem;
-  padding: 1.5rem;
+.rad-hero__cta {
   margin-top: 0.5rem;
 }
 
-.rad-install__step {
+/* ─── Installeren: bookmarklet, Chrome, Firefox naast elkaar ─── */
+.rad-get {
+  padding: 0 0 3.5rem;
+}
+
+.rad-get__heading {
+  margin: 0 0 0.75rem;
+}
+
+.rad-get__intro {
+  max-width: 44rem;
+  color: #4B5563;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+
+.rad-get__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rad-get__item {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rad-get__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid #004050;
+  border-radius: 9999px;
+  color: #004050;
+  margin-bottom: 1rem;
+}
+
+.rad-get__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.rad-get__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 0.625rem;
+}
+
+.rad-get__text {
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0 0 1.25rem;
+}
+
+.rad-get__step {
   font-weight: 700;
   color: #1F2937;
   margin: 0 0 0.875rem;
+}
+
+.rad-get__hint {
+  font-size: 0.875rem;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0.75rem 0 0;
 }
 
 .rad-install__drag {
@@ -16564,14 +16632,8 @@ html.dark .contrast-voorbeeld__swatch {
   flex-shrink: 0;
 }
 
-.rad-install__hint {
-  font-size: 0.9rem;
-  color: #4B5563;
-  line-height: 1.6;
-  margin: 0.875rem 0 0;
-}
-
 .rad-install__manual {
+  width: 100%;
   margin-top: 1.25rem;
   border-top: 1px solid #f0f0f0;
   padding-top: 1rem;
@@ -16873,6 +16935,31 @@ html.dark .contrast-voorbeeld__swatch {
   border-left: 3px solid #A30D4B;
 }
 
+.rad-check__pro {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  font-family: "Nunito", "Nunito Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #004050;
+  background: #F5F5F5;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  text-decoration: none;
+}
+
+.rad-check__pro:hover {
+  color: #A30D4B;
+  border-color: #A30D4B;
+}
+
+.rad-check__pro:focus-visible {
+  outline: 2px solid #A30D4B;
+  outline-offset: 2px;
+}
+
 .rad-check__text {
   font-size: 0.925rem;
   line-height: 1.7;
@@ -16999,7 +17086,8 @@ html.dark .contrast-voorbeeld__swatch {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .rad-checks__grid {
+  .rad-checks__grid,
+  .rad-get__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 

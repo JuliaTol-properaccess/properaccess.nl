@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar"
 meta_title: "WCAG Radar — free accessibility bookmarklet (Editors, Designer, Developer) | Proper Access"
-description: "Free bookmarklet with three tabs: Editors, Designer and Developer. Shows live, on any page, whether alt text, headings, contrast, focus, ARIA, tab order and much more hold up."
+description: "Free bookmarklet and browser extension for Chrome and Firefox, with three tabs: Editors, Designer and Developer. Shows live, on any page, whether alt text, headings, contrast, focus, ARIA, tab order and much more hold up."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens-en"
 gratis: true
@@ -27,7 +27,7 @@ keywords:
   - resize text test
   - make focus visible
   - accessibility bookmarklet
-hero_sub: "A free button in your bookmarks bar that shows how any page is doing on accessibility. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The radar runs entirely in your browser: nothing is sent and nothing is stored."
+hero_sub: "A free button in your bookmarks bar, or an extension for Chrome and Firefox, that shows how any page is doing on accessibility. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The radar runs entirely in your browser: nothing is sent and nothing is stored."
 rollen:
   - eyebrow: "For web editors"
     titel: "The checks you run every week, in one click"
