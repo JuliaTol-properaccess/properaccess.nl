@@ -16,6 +16,16 @@ description: "Quickscan van 9 veelgebruikte videospelers. Bij 3 vonden we binnen
 
 Blue Billywig vroeg ons om een quickscan van de negen meest gebruikte videospelers, inclusief hun eigen. Geen complete audit, maar een verkennend beeld per speler, om te zien hoe het in deze markt staat met de digitale toegankelijkheid. Bij 3 van de 9 vonden we binnen die tijd geen bevindingen. Blue Billywig publiceerde het rapport vervolgens openbaar op [hun knowledge hub](https://www.bluebillywig.com/nl/knowledge-hub/toegankelijke-video-9-videospelers-vergeleken/).
 
+## Update 6 augustus: Ping videospeler is toegankelijk
+
+Een van de negen onderzochte spelers is PingVP, de videospeler van Ping Media. Op verzoek van Ping Media heeft Stichting Accessibility in juli 2026 een aanvullende verificatie op die speler uitgevoerd. Stichting Accessibility heeft de bevindingen uit onze quickscan onafhankelijk nagetest en vastgesteld dat die knelpunten niet meer aanwezig zijn. In februari 2025 had Stichting Accessibility al vastgesteld dat PingVP voldoet aan WCAG 2.2 AA.
+
+Dat is een goed resultaat en het verdient een compliment aan het team van Ping Media. Volgens Stichting Accessibility ging het bij de pagina die wij onderzochten om een verouderde implementatie, die sindsdien is aangepast.
+
+We hebben Blue Billywig gevraagd hun publicatie op dit punt aan te passen, zodat ook daar staat dat de speler van Ping Media aan WCAG 2.2 voldoet.
+
+Voor de andere leveranciers uit dit onderzoek geldt hetzelfde aanbod. Laat je speler opnieuw toetsen en stuur ons het resultaat, dan nemen we dat hier op.
+
 ## Les 1: Bij drie van de negen vonden we geen bevindingen
 
 De opdracht was om per speler 2 tot 3 uur uit te trekken voor een inzicht in de toegankelijkheid. Niet om alle spelers met elkaar te vergelijken, maar om per speler in beeld te brengen wat een bezoeker daadwerkelijk tegenkomt. We toetsten alleen de speler zelf, niet de webpagina eromheen en niet de ondertiteling of audiodescriptie van de inhoud. We keken naar knoppen, sneltoetsen, contrast, focusvolgorde, schermlezergedrag, zoom tot 400%, het sluiten van dialogen en meer, op WCAG 2.2 niveau A en AA. We testten in Firefox, Chrome en Safari, met NVDA en VoiceOver, en lazen daarbij de accessibility tree in Chrome DevTools.
