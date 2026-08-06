@@ -20,7 +20,7 @@ Blue Billywig vroeg ons om een quickscan van de negen meest gebruikte videospele
 
 Een van de negen onderzochte spelers is PingVP, de videospeler van Ping Media. Op verzoek van Ping Media heeft Stichting Accessibility in juli 2026 een aanvullende verificatie op die speler uitgevoerd. Stichting Accessibility heeft de bevindingen uit onze quickscan onafhankelijk nagetest en vastgesteld dat die knelpunten niet meer aanwezig zijn. In februari 2025 had Stichting Accessibility al vastgesteld dat PingVP voldoet aan WCAG 2.2 AA.
 
-Dat is een goed resultaat en het verdient een compliment aan het team van Ping Media. Volgens Stichting Accessibility ging het bij de pagina die wij onderzochten om een verouderde implementatie, die sindsdien is aangepast. Wat wij toetsten was de speler zoals die op dat moment op die pagina stond. Dat is precies wat we hieronder in les 4 schrijven: een audit is een momentopname en zegt iets over die versie, niet automatisch over de versie die er vandaag staat.
+Dat is een goed resultaat en het verdient een compliment aan het team van Ping Media. Volgens Stichting Accessibility ging het bij de pagina die wij onderzochten om een verouderde implementatie, die sindsdien is aangepast.
 
 We hebben Blue Billywig gevraagd hun publicatie op dit punt aan te passen, zodat ook daar staat dat de speler van Ping Media aan WCAG 2.2 voldoet.
 
