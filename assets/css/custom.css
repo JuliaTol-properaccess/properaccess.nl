@@ -10934,6 +10934,18 @@ html.dark .tool-fout__level {
   margin-top: 0.25rem;
 }
 
+/* ─── Peildatum onder een statistiekenblok ─── */
+.stats-peildatum {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.stats-peildatum--center {
+  text-align: center;
+}
+
 /* ─── FAQ ─── */
 .vw-faq {
   background-color: #1F2937;

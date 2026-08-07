@@ -139,7 +139,7 @@ In Amsterdam, the Netherlands. But we work fully remote — so location doesn't 
 
 {{< section-cta title="Still hesitating?" >}}
 
-**53 organisations** chose us — together accounting for more than **900 audits**. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports — we think along, explain, and solve.
+**63 organisations** chose us — together accounting for more than **900 audits**. Measured 7 August 2026. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports — we think along, explain, and solve.
 
 [Call us: +31 85 5055 890](tel:+31855055890) | [Email us](mailto:info@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 
