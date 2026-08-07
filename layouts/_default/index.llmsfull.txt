@@ -86,7 +86,7 @@ URL: {{ .Permalink }}
 - Mail: [info@properaccess.nl](mailto:info@properaccess.nl)
 - Plan een videocall: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
 - Offerte aanvragen: {{ site.BaseURL }}offerte-wcag-onderzoek/
-- LinkedIn bedrijf: https://www.linkedin.com/company/properaccess
+- LinkedIn bedrijf: https://www.linkedin.com/company/77001248/
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag
 
