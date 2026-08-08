@@ -34,7 +34,7 @@ keywords:
   - tekst vergroten testen
   - focus zichtbaar maken
   - bookmarklet toegankelijkheid
-hero_sub: "Een gratis knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De radar draait volledig in je browser: er wordt niets verstuurd en niets opgeslagen."
+hero_sub: "Een knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, die op elke pagina laat zien hoe het met de toegankelijkheid staat. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De meeste checks draai je gratis en zonder account; een deel hoort bij een licentie. De Radar rekent alles in je eigen browser uit: hij verstuurt niets en slaat niets op."
 rollen:
   - eyebrow: "Voor webredactie"
     titel: "De controles die je elke week doet, in één klik"
