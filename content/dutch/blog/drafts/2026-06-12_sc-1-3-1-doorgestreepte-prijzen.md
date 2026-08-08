@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Doorgestreepte prijzen"
 date: 2026-08-07
 slug: "sc-1-3-1-doorgestreepte-prijzen"
