@@ -12,7 +12,7 @@ tags:
   - "digitale toegankelijkheid"
   - "wcag"
   - "toetsenbord"
-description: "Hoe kies je een WordPress-thema dat toegankelijk is? Met 5 tests die je zelf op een demo kunt doen, zonder dat je code hoeft te lezen."
+description: "Bouw je je WordPress-website op een kant-en-klaar thema? Met deze 5 tests op de demo zie je vooraf of het thema toegankelijk is, zonder dat je code hoeft te lezen."
 keywords:
   - toegankelijk WordPress thema
   - WordPress accessibility
@@ -28,16 +28,24 @@ faqs:
   - question: "Hoe test je een WordPress-thema zonder technische kennis?"
     answer: "Open de demo en druk op Tab: verschijnt er een skiplink? Bekijk de koppenstructuur met de WCAG Radar of met HeadingsMap en kijk of er één h1 is en of er geen kopniveaus worden overgeslagen. Zoom in tot het hamburgermenu verschijnt en controleer of het een knop is met een naam. Tab door het geopende menu en kijk of de focus erin blijft. Tab daarna door de hele pagina en kijk of de focus nergens onzichtbaar wordt."
   - question: "Kun je een ontoegankelijk WordPress-thema zelf repareren?"
-    answer: "Sommige problemen wel. Een ontbrekende skiplink toevoegen kost weinig werk. Een hamburgerknop die geen echte knop is en een focusvolgorde die langs verborgen sliders loopt vragen om JavaScript-kennis, en je weet vooraf niet hoe het thema op je aanpassing reageert. Vooraf het juiste thema kiezen kost vrijwel altijd minder dan achteraf repareren."
+    answer: "Sommige problemen wel. Een ontbrekende skiplink toevoegen kost weinig werk. Een hamburgerknop die geen echte knop is en een focusvolgorde die langs verborgen sliders loopt vragen om JavaScript-kennis. Bij een gekocht thema komt daar het onderhoud bij: je aanpassingen horen in een child theme, anders verdwijnen ze bij de eerstvolgende update, en na elke update moet je opnieuw testen of je oplossing nog werkt. Vooraf het juiste thema kiezen kost vrijwel altijd minder dan achteraf repareren."
   - question: "Zijn de meeste WordPress-thema's toegankelijk?"
     answer: "Nee. De meeste thema's zakken al bij de eerste tests op toetsenbordnavigatie en koppenstructuur. Thema-ontwikkelaars richten zich vooral op het visuele ontwerp, en de marktplaatsen stellen geen toegankelijkheidseisen."
 ---
 
-In de meer dan 900 audits die we sinds 2019 hebben gedaan, zit het grootste deel van de problemen al in het thema. Niet in de content die de eigenaar er later in heeft gezet. In de code van het thema zelf.
+Ik was acht jaar WordPress-ontwikkelaar voordat ik overstapte naar toegankelijkheidsonderzoek. In de meer dan 900 audits die we sinds 2019 hebben gedaan, zit het grootste deel van de problemen al in het thema. Dus in de code die je koopt, en niet in de content die de eigenaar er later in heeft gezet.
 
 Dat is vervelend, want je kiest een thema op hoe het eruitziet. Niemand controleert vooraf of het hamburgermenu met het toetsenbord te bedienen is. Kom je er later achter dat het niet werkt, dan heb je je hele website al in dat thema gebouwd.
 
-Hieronder staat het proces dat ik zou doorlopen als ik vandaag een thema moest kiezen. Je hebt er een browser voor nodig en een kwartier tijd.
+## Voor wie dit stuk bedoeld is
+
+Dit gaat over een kant-en-klaar thema dat je koopt of downloadt, van ThemeForest, Elegant Themes, StudioPress of uit de themabibliotheek van WordPress. Je installeert het, je vult het met je eigen content en je past kleuren, lettertypen en blokken aan. De onderliggende HTML en JavaScript blijven van de themamaker.
+
+Dat onderscheid bepaalt wat je met een bevinding kunt. Bouw je de front-end zelf, dan is een hamburgermenu dat de focus niet vasthoudt een taak voor de volgende sprint. Zit je op een gekocht thema, dan zit die code in bestanden die bij de volgende update worden overschreven. Je kunt hem overrulen met een child theme of een eigen script, maar je moet dat wel bij elke update opnieuw controleren.
+
+Daarom is de keuze vooraf hier zoveel belangrijker. Met een thema kies je een ontwerp, en tegelijk kies je de problemen waar je de komende jaren mee werkt.
+
+Bouw je de front-end helemaal zelf, dan kun je de vijf tests hieronder nog steeds als checklist op je eigen werk gebruiken. De strekking van dit artikel gaat voor jou niet op: jij kunt elk van deze punten zelf oplossen zodra je het vindt.
 
 ## In het kort
 
@@ -45,6 +53,9 @@ Hieronder staat het proces dat ik zou doorlopen als ik vandaag een thema moest k
 - Vijf tests: skiplink, koppenstructuur, de hamburgerknop, de focus in het menu, en de focusvolgorde over de pagina.
 - De meeste thema's zakken al bij test 1 of 2.
 - Voor test 2, 3 en 5 gebruik je onze gratis [WCAG Radar](/tools/wcag-radar/), dan hoef je geen code te lezen.
+- Wat het thema fout doet, staat in bestanden die je bij een update kwijtraakt. Kiezen is daarom goedkoper dan repareren.
+
+Hieronder staat het proces dat ik zou doorlopen als ik vandaag een thema moest kiezen. Je hebt er een browser voor nodig en een kwartier tijd.
 
 ## Stap 1: waar zoek je
 
@@ -120,7 +131,7 @@ Let op twee dingen:
 - **Komt de focus in het menu terecht?** Na het openen zou Tab je langs de menu-items moeten voeren. Springt de focus naar elementen achter het menu, dan is het menu niet goed gebouwd.
 - **Blijft de focus in het menu?** Tab je langs het laatste menu-item, dan hoort de focus terug te gaan naar het begin van het menu, totdat je het sluit. Loopt de focus door naar de rest van de pagina terwijl het menu nog openstaat, dan kunnen toetsenbordgebruikers het menu niet bedienen.
 
-Dit is een van de bevindingen die we het vaakst opschrijven. Repareren kan alleen door de JavaScript van het thema aan te passen.
+Dit is een van de bevindingen die we het vaakst opschrijven. Repareren kan alleen door de JavaScript van het thema aan te passen, en dat is precies het bestand dat bij de volgende update van de themamaker wordt overschreven.
 
 ## Test 5: de focusvolgorde
 
@@ -140,6 +151,8 @@ Doorstaat een thema alle vijf de tests, dan heb je een goede basis. Perfect toeg
 
 Zakt een thema op één of twee punten, dan is de vraag of je het zelf oplost. Een skiplink toevoegen kost weinig werk. Een hamburgerknop die geen echte knop is vraagt om JavaScript-kennis. Aan een focusvolgorde die langs een slider of tabbladen loopt, ben je dagen bezig, en je weet vooraf niet hoe het thema op je aanpassingen reageert.
 
+Reken bij die afweging het onderhoud mee. Je aanpassingen horen in een child theme of in een eigen script, anders verdwijnen ze bij de eerstvolgende update van de themamaker. En ook mét een child theme moet je na elke update opnieuw testen of je oplossing nog werkt, want de themamaker kan de opbouw van het menu of de slider hebben gewijzigd. Eén ontbrekende skiplink is dat waard. Vijf losse reparaties op de knoppen en de focus meestal niet.
+
 ## De conclusie
 
 Zoek je een WordPress-thema dat uit de doos niet ontoegankelijk is, dan ben je lang bezig.
@@ -148,8 +161,8 @@ De meeste thema-ontwikkelaars zien toegankelijkheid niet als prioriteit. Ze bouw
 
 Dat laat je drie opties:
 
-1. Kies het thema dat het dichtst in de buurt komt en los de resterende problemen op, of laat ze oplossen.
-2. Laat een thema op maat bouwen door een ontwikkelaar die verstand heeft van toegankelijkheid.
+1. Kies het thema dat het dichtst in de buurt komt en los de resterende problemen op in een child theme, of laat ze oplossen.
+2. Stap af van een kant-en-klaar thema en laat er een op maat bouwen door een ontwikkelaar die verstand heeft van toegankelijkheid. Dan zit de code in je eigen beheer.
 3. Laat een thema onderzoeken voordat je er je hele website in bouwt. Dat kost minder dan achteraf alles aanpassen.
 
 Wij onderzoeken regelmatig thema's en templates voor bedrijven die de keuze willen maken voordat ze investeren. Een halve dag testen vooraf scheelt weken repareren achteraf.
