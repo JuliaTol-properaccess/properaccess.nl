@@ -84,7 +84,7 @@ Nu ga je testen. Vijf keer, zonder dat je een regel code hoeft te begrijpen.
 
 Dit is de snelste test en meteen de meest veelzeggende.
 
-![](/images/blog/wordpress-thema-skiplink.webp)
+![Twee browservensters naast elkaar. Links verschijnt na Tab linksboven een magenta link "Ga naar inhoud", met een vinkje: de skiplink verschijnt. Rechts verschijnt niets en staat de focus op het eerste menu-item, met een kruisje: geen skiplink.](/images/blog/wordpress-thema-skiplink.webp)
 
 Open de demo. Klik in de adresbalk van de browser. Druk op de Tab-toets totdat de focus in de webpagina komt.
 
@@ -96,7 +96,7 @@ Verschijnt er niets? Dan heeft de ontwikkelaar niet aan toetsenbordgebruikers ge
 
 Deze test laat zien hoe zorgvuldig het thema in elkaar zit.
 
-![](/images/blog/wordpress-thema-koppenstructuur.webp)
+![Twee panelen met de koppen van een pagina. Links een rommelige structuur met twee h1's, een h5 na een h2 met "h3 en h4 overgeslagen", en vette tekst zonder kop, gemarkeerd met een kruisje. Rechts een nette volgorde h1, h2, h3, h3, h2, h3, met een vinkje.](/images/blog/wordpress-thema-koppenstructuur.webp)
 
 Start onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op de demo en open het tabblad Redactie. Je ziet dan de koppen van de pagina op volgorde, met hun niveau erbij.
 
@@ -111,7 +111,7 @@ Koppen zijn belangrijk voor mensen die niet kunnen zien en via koppen door de we
 
 Hier valt het grootste deel van de thema's af.
 
-![](/images/blog/wordpress-thema-hamburgerknop.webp)
+![Twee panelen over de hamburgerknop in een themademo. Links: rol generic, naam leeg, aria-expanded ontbreekt, alle drie met een kruisje, geen echte knop. Rechts: rol button, naam Menu, aria-expanded false, alle drie met een vinkje, wel een echte knop.](/images/blog/wordpress-thema-hamburgerknop.webp)
 
 Zoom in op de pagina met Ctrl en + op Windows of Cmd en + op de Mac, tot het gewone menu verdwijnt en er een hamburgericoon verschijnt. Dat is het menu dat bezoekers op hun telefoon zien.
 
@@ -138,7 +138,7 @@ Dit is een van de bevindingen die we het vaakst opschrijven. Repareren kan allee
 
 ## Test 5: toetsenbordbediening
 
-![](/images/blog/wordpress-thema-focusvolgorde.webp)
+![Een browservenster met genummerde focusstops. Stops 1, 2 en 3 staan op zichtbare menu-items, stops 4 en 5 in een gestippeld kader "slider buiten beeld", stop 6 op een zichtbare knop "Lees verder". De focus loopt langs elementen die je niet ziet.](/images/blog/wordpress-thema-focusvolgorde.webp)
 
 Tab van boven naar beneden door de hele pagina. Let op of alle interactieve elementen focus krijgen en met het toetsenbord te bedienen zijn: links, knoppen, invoervelden, sliders en uitklapbare onderdelen.
 
