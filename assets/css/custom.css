@@ -13170,6 +13170,19 @@ a.tool-link__href-url:hover {
   background: #f9fafb;
 }
 
+.case__body > table tbody th[scope="row"] {
+  background: transparent;
+  font-weight: 600;
+}
+
+.case__body > table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  color: #1F2937;
+  padding-bottom: 0.5rem;
+}
+
 .case__body > pre,
 .case__body > .highlight {
   background: #1F2937;
