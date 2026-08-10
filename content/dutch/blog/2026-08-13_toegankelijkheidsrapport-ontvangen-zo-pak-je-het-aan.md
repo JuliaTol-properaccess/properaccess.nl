@@ -1,5 +1,5 @@
 ---
-title: "Je hebt een toegankelijkheidsrapport ontvangen. En nu?"
+title: "Waaraan herken je een goed toegankelijkheidsrapport?"
 date: 2026-08-13
 slug: "toegankelijkheidsrapport-ontvangen-zo-pak-je-het-aan"
 categories:
@@ -8,7 +8,7 @@ tags:
   - "toegankelijkheidsrapport"
   - "wcag"
   - "audit"
-description: "Een WCAG-rapport van tientallen pagina's ontvangen? Zo lees je het, prioriteer je de bevindingen en verbeter je stap voor stap, zonder dat het rapport blijft liggen."
+description: "Wat maakt een toegankelijkheidsrapport bruikbaar? Waar je op let, en hoe je van een goed WCAG-rapport in vier stappen naar een toegankelijke website komt."
 keywords:
   - toegankelijkheidsrapport
   - wcag rapport
@@ -17,7 +17,7 @@ keywords:
   - toegankelijkheid verbeteren
 ---
 
-# Je hebt een toegankelijkheidsrapport ontvangen. En nu?
+# Waaraan herken je een goed toegankelijkheidsrapport?
 
 ![Illustratie: een grote, chaotische stapel rapportpagina's aan de linkerkant verandert via een magenta pijl in een rustig, geordend stappenplan met vier genummerde stappen aan de rechterkant.](/images/blog/toegankelijkheidsrapport-stappenplan.webp)
 
@@ -25,15 +25,9 @@ Er komt een mail binnen met als onderwerp "Toegankelijkheidsrapport, definitieve
 
 Morgen wordt volgende week. Volgende week wordt volgend kwartaal. En de vraag blijft staan: wat moet je nu eigenlijk doen met al die informatie?
 
-Herken je dat, dan ben je niet de enige. Het is een van de dingen die ik het vaakst hoor van organisaties die hun website toegankelijk willen maken. Ze investeren in een audit, krijgen een rapport, en weten daarna niet waar ze moeten beginnen.
+Herken je dat, dan ligt het vaak niet aan jou. Het ligt aan het rapport. De meeste toegankelijkheidsrapporten zijn geschreven voor de auditor die ze maakt, niet voor het team dat ermee verder moet. En dan doe je er niets mee, hoe goed het onderzoek eronder ook is.
 
-Sinds juni 2025 geldt de European Accessibility Act voor alle middelgrote en grote bedrijven. Je digitale diensten, dus je website, je webshop en je app, moeten bruikbaar zijn voor mensen met een beperking. Voldoe je niet, dan riskeer je een boete.
-
-De meeste organisaties beginnen met een audit. Dat is logisch: je wilt weten waar je staat voordat je gaat investeren in aanpassingen. Maar een audit is het begin, niet het einde. Een rapport is geen to-dolijst die je even afvinkt. Het is een technisch document, en als je niet weet hoe je het leest, blijft het liggen.
-
-En elk kwartaal dat je wacht, kost wat. Bezoekers die je teksten niet kunnen lezen omdat het contrast te laag is. Toetsenbordgebruikers die vastlopen in je navigatie. Screenreadergebruikers die een knop niet vinden omdat die geen naam heeft. Plus: elke dag dat je website niet voldoet aan de EAA telt mee als een dag dat je niet aan de wet voldoet.
-
-Tijd om te beginnen. Zo pak je het aan.
+Datzelfde onderzoek kun je op twee manieren opschrijven. De ene versie leest niemand. Met de andere begint je team de volgende dag. Het zit in hoe de bevindingen zijn geordend, in welke taal ze staan en of er een plan bij hoort. In 900 audits heb ik gezien wat dat verschil maakt. Hieronder laat ik zien waar je op let, en hoe je van een goed rapport naar een toegankelijke website komt.
 
 ## Het probleem met traditionele rapporten
 
