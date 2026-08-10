@@ -1,7 +1,7 @@
 ---
 title: "Een toegankelijk WordPress-thema kiezen: waar let je op?"
 meta_title: "Toegankelijk WordPress-thema kiezen: 5 tests | Proper Access"
-date: 2026-08-13
+date: 2026-08-14
 slug: "toegankelijk-wordpress-thema-kiezen-waar-let-je-op"
 categories:
   - "tips-en-tools"
@@ -52,7 +52,7 @@ Bouw je de front-end helemaal zelf, dan kun je de vijf tests hieronder nog steed
 - Test altijd de demo van het thema, niet de website van de verkoper.
 - Vijf tests: skiplink, koppenstructuur, de hamburgerknop, de focus in het menu, en de focusvolgorde over de pagina.
 - De meeste thema's zakken al bij test 1 of 2.
-- Voor test 2, 3 en 5 gebruik je onze gratis [WCAG Radar](/tools/wcag-radar/), dan hoef je geen code te lezen.
+- Voor test 2, 3 en 5 gebruik je onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), dan hoef je geen code te lezen.
 - Wat het thema fout doet, staat in bestanden die je bij een update kwijtraakt. Kiezen is daarom goedkoper dan repareren.
 
 Hieronder staat het proces dat ik zou doorlopen als ik vandaag een thema moest kiezen. Je hebt er een browser voor nodig en een kwartier tijd.
@@ -97,7 +97,7 @@ Deze test laat zien hoe zorgvuldig het thema in elkaar zit.
 
 ![](/images/blog/wordpress-thema-koppenstructuur.webp)
 
-Start onze gratis [WCAG Radar](/tools/wcag-radar/) op de demo en open het tabblad Redactie. Je ziet dan de koppen van de pagina op volgorde, met hun niveau erbij. De browserextensie HeadingsMap voor Chrome en Firefox doet hetzelfde.
+Start onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op de demo en open het tabblad Redactie. Je ziet dan de koppen van de pagina op volgorde, met hun niveau erbij. De browserextensie HeadingsMap voor Chrome en Firefox doet hetzelfde.
 
 Kijk naar twee dingen:
 
@@ -187,6 +187,6 @@ Nee. De meeste zakken al bij de eerste tests op toetsenbordnavigatie en koppenst
 
 ## Zelf aan de slag
 
-Wil je je huidige thema nakijken, dan kun je de vijf tests hierboven vandaag zelf doen met de gratis [WCAG Radar](/tools/wcag-radar/). Die draait volledig in je browser en stuurt niets door.
+Wil je je huidige thema nakijken, dan kun je de vijf tests hierboven vandaag zelf doen met de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Die draait volledig in je browser en stuurt niets door.
 
 Wil je liever dat iemand met auditervaring ernaar kijkt voordat je een thema kiest? Bekijk dan de [mini-audit](/quickscan-digitale-toegankelijkheid/) of [neem contact op](/contact/).
