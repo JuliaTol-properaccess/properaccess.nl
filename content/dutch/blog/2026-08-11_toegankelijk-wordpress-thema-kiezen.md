@@ -1,7 +1,7 @@
 ---
 title: "Een toegankelijk WordPress-thema kiezen: waar let je op?"
 meta_title: "Toegankelijk WordPress-thema kiezen: 5 tests | Proper Access"
-date: 2026-08-14
+date: 2026-08-11
 slug: "toegankelijk-wordpress-thema-kiezen-waar-let-je-op"
 categories:
   - "tips-en-tools"
