@@ -90,18 +90,34 @@ export default {
     const column = bepaalKolom(data.opleverdatum);
     const title = buildTitle(data);
 
+    // Het kaartje is het doel, maar een weigerende GitHub mag de inzending
+    // niet laten verdwijnen: dan komt de intake alsnog per mail binnen en
+    // maken we de kaart met de hand. De klant vult dit formulier één keer in.
+    let kaart = null;
+    let kaartFout = "";
     try {
-      await maakKaartje(env, title, cardBody, column);
+      kaart = await maakKaartje(env, title, cardBody, column);
     } catch (e) {
-      return json({ ok: false, error: "Kaartje aanmaken mislukt" }, 502, cors);
+      kaartFout = (e && e.message) || String(e);
     }
 
-    // E-mails zijn niet kritiek voor het antwoord aan de bezoeker.
     try {
       await stuurKlantmail(env, data, summaryMd);
-      await stuurInternemail(env, title, summaryMd, column);
     } catch (e) {
-      // stil: het kaartje staat er, de mail proberen we niet opnieuw
+      // stil: de bevestiging aan de klant is niet waar de gegevens in zitten
+    }
+
+    let internOk = false;
+    try {
+      await stuurInternemail(env, title, summaryMd, column, kaart, kaartFout);
+      internOk = true;
+    } catch (e) {
+      internOk = false;
+    }
+
+    // Alleen als er niets is gelukt, hoort de bezoeker het te weten.
+    if (!kaart && !internOk) {
+      return json({ ok: false, error: "Verzenden mislukt" }, 502, cors);
     }
 
     return json({ ok: true }, 200, cors);
@@ -152,8 +168,25 @@ function buildCardBody(data) {
     ["Action plan needed", "no"],
     ["Report date", (data.opleverdatum || "").toString().trim()],
     ["Notes", buildNotes(data)],
+    ["Sample", buildSample(domain)],
   ];
   return rows.map(([label, value]) => `### ${label}\n\n${value}\n`).join("\n");
+}
+
+/**
+ * De steekproef, leeg maar met de kop erbij. tools/audit-start.py leest de
+ * URL's uit "### Sample" en stopt met een foutmelding als de sectie ontbreekt.
+ * Hier draait geen crawl, dus de auditor vult hem aan; het hoofddomein staat
+ * er als eerste regel in zodat de vorm meteen klopt.
+ */
+function buildSample(domain) {
+  const regels = [
+    '<!-- One page per line: "- URL - Page name [template]". -->',
+    "⚠ INCOMPLETE — this card comes from the intake form, so no crawl was run. Please compile the sample first.",
+    "",
+  ];
+  if (domain) regels.push(`- ${domain}`);
+  return regels.join("\n");
 }
 
 function mapAuditType(data) {
@@ -257,6 +290,24 @@ async function gh(env, query, variables) {
   return body.data;
 }
 
+async function ghRest(env, pad, init) {
+  const res = await fetch(`https://api.github.com${pad}`, {
+    method: (init && init.method) || "GET",
+    headers: {
+      Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+      "User-Agent": "properaccess-intake",
+    },
+    body: init && init.body,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(`GitHub REST ${res.status}: ${data.message || "onbekende fout"}`);
+  }
+  return data;
+}
+
 async function maakKaartje(env, title, bodyMd, columnName) {
   // 1. Project-id + Status-veld met opties ophalen (op naam, dus geen harde id's).
   const info = await gh(
@@ -278,19 +329,33 @@ async function maakKaartje(env, title, bodyMd, columnName) {
   if (!project) throw new Error("Project niet gevonden");
   const projectId = project.id;
 
-  // 2. Draft issue als kaartje toevoegen.
+  // 2. Een echte issue in de auditplanning-repo, geen draft. De pijplijn
+  // (tools/board.py, tools/audit-start.py) haalt een kaart op via
+  // repos/<repo>/issues/<nummer>; een draft heeft geen nummer en is voor de
+  // pijplijn onzichtbaar.
+  const issue = await ghRest(env, `/repos/${env.ISSUES_REPO}/issues`, {
+    method: "POST",
+    body: JSON.stringify({
+      title,
+      body: bodyMd,
+      labels: ["PA"],
+      assignees: [env.ASSIGNEE],
+    }),
+  });
+
+  // 3. Issue op het bord zetten.
   const added = await gh(
     env,
-    `mutation($projectId:ID!, $title:String!, $body:String!){
-      addProjectV2DraftIssue(input:{projectId:$projectId, title:$title, body:$body}){
-        projectItem { id }
+    `mutation($projectId:ID!, $contentId:ID!){
+      addProjectV2ItemById(input:{projectId:$projectId, contentId:$contentId}){
+        item { id }
       }
     }`,
-    { projectId, title, body: bodyMd }
+    { projectId, contentId: issue.node_id }
   );
-  const itemId = added.addProjectV2DraftIssue.projectItem.id;
+  const itemId = added.addProjectV2ItemById.item.id;
 
-  // 3. Kolom (Status) zetten, als het veld en de optie bestaan.
+  // 4. Kolom (Status) zetten, als het veld en de optie bestaan.
   const field = project.field;
   if (field && field.id) {
     const option = (field.options || []).find(
@@ -309,6 +374,8 @@ async function maakKaartje(env, title, bodyMd, columnName) {
       );
     }
   }
+
+  return { number: issue.number, url: issue.html_url };
 }
 
 /* ─────────────────────────── E-mail (AhaSend) ─────────────────────────── */
@@ -316,7 +383,7 @@ async function maakKaartje(env, title, bodyMd, columnName) {
 async function sendEmail(env, to, subject, text) {
   // AhaSend transactional send. Zelfde vorm als de portaal-mailservice.
   const url = `https://api.ahasend.com/v2/accounts/${env.AHASEND_ACCOUNT_ID}/messages`;
-  return fetch(url, {
+  const res = await fetch(url, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${env.AHASEND_API_KEY}`,
@@ -329,6 +396,13 @@ async function sendEmail(env, to, subject, text) {
       text_content: text,
     }),
   });
+  // Een geweigerde mail komt terug als 4xx, niet als exception. Zonder deze
+  // controle zou de aanroeper denken dat de intake veilig is aangekomen.
+  if (!res.ok) {
+    const melding = await res.text().catch(() => "");
+    throw new Error(`AhaSend ${res.status}: ${melding.slice(0, 200)}`);
+  }
+  return res;
 }
 
 function stuurKlantmail(env, data, summaryMd) {
@@ -344,9 +418,12 @@ function stuurKlantmail(env, data, summaryMd) {
   return sendEmail(env, data.contact_email, "Je intake bij Proper Access", body);
 }
 
-function stuurInternemail(env, title, summaryMd, column) {
+function stuurInternemail(env, title, summaryMd, column, kaart, kaartFout) {
   const plat = summaryMd.replace(/\*\*/g, "");
-  const body = `Nieuwe intake, kolom: ${column}\n\n${title}\n\n${plat}`;
+  const kop = kaart
+    ? `Kaartje #${kaart.number}: ${kaart.url}\nKolom: ${column}`
+    : `LET OP: het kaartje is niet aangemaakt (${kaartFout}). Maak het met de hand aan, kolom ${column}.`;
+  const body = `Nieuwe intake\n\n${kop}\n\n${title}\n\n${plat}`;
   return sendEmail(env, env.NOTIFY_EMAIL, `Nieuwe intake: ${title}`, body);
 }
 

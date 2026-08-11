@@ -2,12 +2,22 @@
 
 Verwerkt het intakeformulier van `properaccess.nl/intake`. Voor elke inzending:
 
-1. maakt een kaartje aan op het GitHub Projects-bord (draft issue);
-2. zet het kaartje in de juiste kolom op basis van de opleverdatum;
+1. maakt een issue aan in `JuliaTol-properaccess/audit-planning`, met label `PA`;
+2. zet die issue als kaartje op het GitHub Projects-bord, in de juiste kolom op basis van de opleverdatum;
 3. mailt de klant een bevestiging met een samenvatting;
-4. mailt Proper Access een interne melding.
+4. mailt Proper Access een interne melding, met het nummer van het kaartje erbij.
+
+Dit is sinds augustus 2026 de enige plek waar een auditkaartje ontstaat. Het CRM maakte er eerst ook een bij het ondertekenen van een offerte; dat leverde twee kaartjes per opdracht op en is eruit gehaald.
+
+Het moet een echte issue zijn, geen draft. De pijplijn in `~/git/ProperAccess` haalt een kaart op via `repos/<repo>/issues/<nummer>`, en een draft heeft geen nummer.
+
+De steekproef staat leeg op het kaartje, onder de kop `### Sample` met het hoofddomein als eerste regel. Hier draait geen crawl, dus de auditor vult hem aan. `tools/audit-start.py` stopt met een foutmelding als die sectie ontbreekt.
 
 Er komen **geen prijzen** in het formulier of op het kaartje. De Worker zet alleen de binnengekomen velden over.
+
+## Als GitHub weigert
+
+Dan verdwijnt de inzending niet. De Worker mailt de intake alsnog naar `NOTIFY_EMAIL`, met de foutmelding erboven, en antwoordt de bezoeker met `ok`. Maak het kaartje dan met de hand aan. Pas als ook die mail faalt, krijgt de bezoeker een foutmelding te zien en kan hij het opnieuw proberen.
 
 ## Kolomlogica
 
@@ -17,7 +27,14 @@ Het startmoment is de opleverdatum min 4 weken doorlooptijd. Ligt dat startmomen
 
 ### 1. GitHub-token
 
-Maak een token met lees- en schrijfrechten op je Projects. Een fijnmazige PAT met de permissie **Projects: Read and write** volstaat, of een classic PAT met scope `project`. De eigenaar van het token moet toegang hebben tot bord nummer 3.
+Het token heeft twee dingen nodig, want de Worker maakt nu ook een issue aan:
+
+- **Projects: Read and write** voor het bord;
+- **Issues: Read and write** op `JuliaTol-properaccess/audit-planning`.
+
+Een fijnmazige PAT met die twee permissies volstaat. Een classic PAT heeft de scopes `project` en `repo` nodig. De eigenaar van het token moet toegang hebben tot bord nummer 3 en tot de repo.
+
+Staat er nog een token uit de eerste opzet, met alleen Projects-rechten? Dan mislukt het aanmaken van de issue met `GitHub REST 403` en komt de intake per mail binnen in plaats van op het bord. Vervang het token dan:
 
 ```bash
 cd cloudflare/intake
@@ -48,7 +65,7 @@ curl -X POST https://properaccess-intake.juliatol.workers.dev/submit \
   -d '{"contact_naam":"Test Klant","contact_email":"test@example.com","akkoord":"ja","type_onderzoek":"website-audit","onderzoeksobject":"website","hoofddomein":"https://voorbeeld.nl","opleverdatum":"2026-08-01"}'
 ```
 
-Verwacht: `{"ok":true}`, een nieuw kaartje op het bord in de juiste kolom, en twee mails.
+Verwacht: `{"ok":true}`, een nieuwe issue in `audit-planning` die als kaartje in de juiste kolom op het bord staat, en twee mails. Ruim de testissue daarna op, anders staat er een testopdracht in de planning.
 
 ## Velden
 
