@@ -130,7 +130,7 @@ Voordat de toezichthouder langskomt, wil je zelf al weten of je site klopt. Bel 
   <img src="/images/phi.jpeg" alt="Phi Pham" class="article-contact__photo" />
   <div class="article-contact__meta">
     <span class="article-contact__name">Phi Pham</span>
-    <span class="article-contact__role">Relatiebeheer</span>
+    <span class="article-contact__role">Projectmanager</span>
     <a class="article-contact__link" href="tel:+31855055890">085 5055 890</a>
     <a class="article-contact__link" href="mailto:phi@properaccess.nl">phi@properaccess.nl</a>
   </div>
