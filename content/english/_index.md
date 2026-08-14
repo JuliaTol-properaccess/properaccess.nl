@@ -16,7 +16,7 @@ layout: "homepage-en"
 
 faqs:
   - question: "What does an audit cost?"
-    answer: "That depends on the size and complexity of your site. Our prices start at around € 2,100 for a simple website. Most websites fall into the medium-complex category and land around € 3,600. We always give you a clear indication up front, no surprises afterwards."
+    answer: "That depends on the size and complexity of your site. Our prices start at around € 2,250 for a simple website. Most websites fall into the medium category and land around € 3,150. We always give you a clear indication up front, no surprises afterwards."
   - question: "Do we have to fix everything right away?"
     answer: "No. We help you prioritise. For every finding we indicate how severe it is and how much effort the fix takes. That way you start with what has the most impact."
   - question: "What does the report look like?"

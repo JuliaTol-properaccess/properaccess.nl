@@ -48,18 +48,19 @@ Dat kost meer tijd, maar het bespaart je team weken zoekwerk.
 
 | Type audit                   | Prijs         |
 | ---------------------------- | ------------- |
-| Eenvoudige website           | € 2.100       |
-| Gemiddelde website           | € 2.850       |
-| Gemiddeld-complexe website   | € 3.600       |
-| Complexe website             | € 4.500       |
-| Content-audit                | € 1.500       |
-| Techniekaudit                | € 2.250       |
-| Systeem-audit                | € 3.750       |
-| Retest content-audit         | € 300         |
-| Retest techniek/website      | vanaf € 600   |
-| Nabespreking (1 uur)         | € 150         |
+| Mini-audit                   | € 495         |
+| Eenvoudige website           | € 2.250       |
+| Gemiddelde website           | € 3.150       |
+| Gemiddeld-complexe website   | € 4.200       |
+| Complexe website             | € 5.100       |
+| Content-audit                | € 1.650       |
+| Techniekaudit                | € 2.700       |
+| Systeem-audit                | € 4.500       |
+| Retest content-audit         | € 350         |
+| Retest website               | € 450 tot € 1.000 |
+| Nabespreking (1 uur)         | € 250         |
 
-De meeste websites vallen in de categorie "gemiddeld-complex" (€ 3.600). Dat is inclusief een volledig rapport, maar exclusief retest en nabespreking.
+De meeste websites vallen in de categorie "gemiddeld" (€ 3.150). Dat is inclusief een volledig rapport, maar exclusief retest en nabespreking.
 
 ## Waarom zijn sommige aanbieders veel duurder?
 

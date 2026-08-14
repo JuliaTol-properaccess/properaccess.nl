@@ -57,14 +57,14 @@ Een hercontrole kost gemiddeld zo'n zes uur. Aan het einde krijg je een aangepas
 
 We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type hercontrole volgt het type oorspronkelijke audit: een contentaudit krijgt een content-hercontrole, een systeemaudit krijgt een systeem-hercontrole.
 
-| Type audit | Hercontrole vanaf |
+| Type audit | Hercontrole |
 | --- | --- |
-| [Contentaudit](/contentaudit/) | circa € 300 |
-| [Techniekaudit](/techniekaudit/) | circa € 600 |
-| [Systeemaudit](/techniekaudit/) | circa € 600 |
-| [Volledige audit](/toegankelijkheidsaudit/) | circa € 600 |
+| [Contentaudit](/contentaudit/) | € 350 |
+| [Techniekaudit](/techniekaudit/) | € 550 |
+| [Systeemaudit](/techniekaudit/) | € 900 |
+| [Volledige audit](/toegankelijkheidsaudit/) | € 450 tot € 1.000 |
 
-Indicatieve prijzen, exclusief 21% btw. De definitieve prijs hangt af van het aantal bevindingen, de omvang van wijzigingen op de site en of er nieuwe componenten zijn toegevoegd. We sturen een offerte na een korte mailwisseling.
+Vaste bedragen, exclusief 21% btw. Bij een volledige audit hangt het bedrag af van de omvang van de oorspronkelijke audit: € 450 voor een eenvoudige website, € 1.000 voor een complexe. Staan er meer dan 150 bevindingen in je rapport, dan spreken we vooraf een aangepaste prijs af. We sturen een offerte na een korte mailwisseling.
 
 {{< /section-full >}}
 

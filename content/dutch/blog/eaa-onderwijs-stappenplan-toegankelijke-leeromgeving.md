@@ -96,7 +96,7 @@ Bij onderwijsinstellingen auditen we per platform:
 
 We weten bovendien of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
 
-_Indicatieve prijzen: een website-audit start vanaf circa 2.100 euro, een leeromgeving (Moodle/Canvas) vanaf circa 3.600 euro._
+_Indicatieve prijzen: een website-audit start vanaf circa 2.250 euro, een leeromgeving (Moodle/Canvas) vanaf circa 4.200 euro._
 
 ### Stap 4: Prioriteer en plan de verbeteringen
 
@@ -133,7 +133,7 @@ Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en 
 
 Maar een retest is niet het eindpunt. Toegankelijkheid is geen project met een einddatum -- het is een doorlopend proces. Nieuwe content, nieuwe plugins, nieuwe functionaliteit: alles kan nieuwe barrières introduceren.
 
-**Hoe wij hierbij helpen:** Een retest kost vanaf 600 euro, afhankelijk van de omvang. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
+**Hoe wij hierbij helpen:** Een retest kost tussen 450 en 1.000 euro, afhankelijk van de omvang van de oorspronkelijke audit. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
 
 Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids-abonnement of strippenkaart aan. Dan denken we doorlopend mee: bij nieuwe releases, bij de keuze voor een nieuwe plugin, bij de inrichting van een nieuw deel van je leeromgeving. Zo voorkom je dat je over een jaar weer van voren af aan moet beginnen.
 
