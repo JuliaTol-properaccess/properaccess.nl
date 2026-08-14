@@ -79,7 +79,7 @@ faqs:
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 ---
 
-{{< section-full title="Wat is een toegankelijkheidsonderzoek?" >}}
+{{< section-full title="Wat is een toegankelijkheidsonderzoek?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
 
 Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2,
 niveau AA. Je hoort er ook andere namen voor: toegankelijkheidsaudit, WCAG-audit,
@@ -96,7 +96,7 @@ Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
 
 {{< /section-full >}}
 
-{{< section-full title="Volgens welke methode onderzoeken we?" bg="light" >}}
+{{< section-full title="Volgens welke methode onderzoeken we?" bg="light" id="methode" >}}
 
 We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Toezichthouders hanteren dezelfde
 methode, dus je rapport is bruikbaar als bewijs. WCAG-EM schrijft vijf stappen voor.
@@ -109,21 +109,20 @@ methode, dus je rapport is bruikbaar als bewijs. WCAG-EM schrijft vijf stappen v
 3. **Een representatieve steekproef samenstellen.** We kiezen pagina's die samen alle
    paginatypes en alle interactie dekken. Die selectie krijg je vooraf te zien.
 4. **De steekproef toetsen.** Handmatig, met schermlezer, alleen toetsenbord, zoom tot 400% en
-   een controle op kleurgebruik en contrast. Bij een gemiddelde website staat hier 18 uur voor,
-   plus 3 uur interne review door een tweede auditor.
+   een controle op kleurgebruik en contrast. Daarna doet een tweede auditor de interne review.
 5. **De bevindingen rapporteren.** Per element in plaats van per succescriterium, met per
    bevinding een user story vanuit een bezoeker met een beperking.
 
 Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
 tweeduizend URL's. In 900 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
-sjablonen zitten. Een pagina toevoegen die hetzelfde sjabloon gebruikt levert dan dezelfde
+templates zitten. Een pagina toevoegen die dezelfde template gebruikt levert dan dezelfde
 bevinding nog een keer op, en die tijd besteed je beter aan het uitwerken van oplossingen.
 Zitten er uitzonderingen tussen, zoals een kaartmodule of een pdf-viewer, dan nemen we die er
 apart bij.
 
 {{< /section-full >}}
 
-{{< section-full title="Welk type onderzoek past bij jouw situatie?" >}}
+{{< section-full title="Welk type onderzoek past bij jouw situatie?" id="welk-onderzoek" >}}
 
 Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter.
 
@@ -143,7 +142,7 @@ dan samen naar je site en zeggen welk onderzoek past.
 
 {{< /section-full >}}
 
-{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" bg="light" >}}
+{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" bg="light" id="prijzen" >}}
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
 aantal pagina's. Alle bedragen zijn exclusief 21% btw.
@@ -168,7 +167,7 @@ Meer over de opbouw lees je in het artikel
 
 {{< /section-full >}}
 
-{{< section-full title="Waarom een onafhankelijk bureau?" >}}
+{{< section-full title="Waarom een onafhankelijk bureau?" id="onafhankelijk" >}}
 
 Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk, en we
 hebben geen belang bij een uitkomst. Dat is de reden dat opdrachtgevers als het Rijksmuseum,
