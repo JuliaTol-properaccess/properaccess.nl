@@ -73,7 +73,32 @@ Toegankelijkheidsverklaringen.
 
 {{< /section-full >}}
 
-{{< section-full title="Wat houdt een onafhankelijk toegankelijkheidsonderzoek in?" bg="light" >}}
+{{< section-cards columns="3" bg="light" title="Wat betekent dit voor je toegankelijkheidsverklaring?" >}}
+{{< section-card title="Vijf statussen in het Register" >}}
+
+A betekent dat je volledig voldoet, B dat je gedeeltelijk voldoet, C dat het onderzoek loopt of
+dat er eerste maatregelen zijn genomen, D dat je niet voldoet en E dat er geen eigenaar is.
+
+{{< /section-card >}}
+{{< section-card title="Een rapport vervalt na 36 maanden" >}}
+
+Zodra het oudste deelonderzoek die leeftijd bereikt, verdwijnt de onderbouwing en zakt je
+status. Organisaties komen daarom bij ons terug voordat die termijn verstrijkt, en niet pas als
+het dashboard rood kleurt.
+
+{{< /section-card >}}
+{{< section-card title="42% heeft geen enkel rapport" >}}
+
+We analyseerden in augustus 2026 het hele Register. Van de 9.075 sites heeft 42% geen enkel
+rapport, en bij 603 verklaringen met status A of B staat de annotatie "onderbouwing
+ontoereikend". De meest voorkomende oorzaak is een ontbrekend deelonderzoek.
+
+[Lees ons onderzoek naar het Register →](/blog/toegankelijkheidsregister-oogt-gezond-brokkelt-af/)
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Wat houdt een onafhankelijk toegankelijkheidsonderzoek in?" >}}
 
 Een onafhankelijk toegankelijkheidsonderzoek is een handmatige toets aan WCAG 2.2, niveau A en
 AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Voor het
@@ -81,47 +106,42 @@ Register telt alleen een onderzoek volgens
 [WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/), de evaluatiemethode van het W3C.
 Zonder WCAG-EM krijg je geen status A.
 
-Wat wij doen bij een overheidsorganisatie:
-
-1. **Reikwijdte vastleggen.** Welke kanalen, welke subdomeinen, welke talen. We bepalen samen
-   welke onderzoeken je nodig hebt om je verklaringen compleet te krijgen.
-2. **Steekproef samenstellen.** Representatief voor alle paginatypes en alle
-   gebruikersroutes, waaronder aanvragen, inloggen en betalen. Je krijgt de selectie vooraf
-   te zien.
-3. **Handmatig toetsen.** Met schermlezer, alleen toetsenbord, zoom tot 400% en controle op
-   contrast en kleurgebruik. Een tweede auditor doet de interne review.
-4. **Rapporteren per element.** Elke bevinding begint met een user story vanuit een bezoeker
-   met een beperking, zodat je redactie, je developers en je bestuurder allemaal begrijpen
-   wat er misgaat.
-5. **Verklaring onderbouwen.** We leveren het rapport in de vorm die het Register vraagt en
-   helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
-
-Voor documenten, video's en pdf's die je redactie zelf beheert, kan een
+Voor documenten, video's en PDF's die je redactie zelf beheert, kan een
 [contentaudit](/contentaudit/) genoeg zijn. Ligt de techniek bij een externe leverancier, dan
 is dat de verstandigste keuze: je rapport staat dan niet vol met bevindingen waar je zelf
 niets aan kunt doen.
 
 {{< /section-full >}}
 
-{{< section-full title="Wat betekent dit voor je toegankelijkheidsverklaring?" >}}
+{{< section-steps title="Zo verloopt het onderzoek bij een overheidsorganisatie" subtitle="Vijf stappen, van de eerste mail tot een onderbouwde verklaring in het Register." >}}
+<div class="card">
+  <i class="card__icon" aria-hidden="true">1</i>
+  <h3 class="card__title">Reikwijdte vastleggen</h3>
+  <p>Welke kanalen, welke subdomeinen, welke talen. We bepalen samen welke onderzoeken je nodig hebt om je verklaringen compleet te krijgen.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">2</i>
+  <h3 class="card__title">Steekproef samenstellen</h3>
+  <p>Representatief voor alle paginatypes en alle gebruikersroutes, waaronder aanvragen, inloggen en betalen. Je krijgt de selectie vooraf te zien.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">3</i>
+  <h3 class="card__title">Handmatig toetsen</h3>
+  <p>Met schermlezer, alleen toetsenbord, zoom tot 400% en controle op contrast en kleurgebruik. Een tweede auditor doet de interne review.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">4</i>
+  <h3 class="card__title">Rapporteren per element</h3>
+  <p>Elke bevinding begint met een user story vanuit een bezoeker met een beperking, zodat redactie, developers en bestuurder begrijpen wat er misgaat.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">5</i>
+  <h3 class="card__title">Verklaring onderbouwen</h3>
+  <p>We leveren het rapport in de vorm die het Register vraagt en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.</p>
+</div>
+{{< /section-steps >}}
 
-Het Register kent vijf statussen. A betekent dat je volledig voldoet, B dat je gedeeltelijk
-voldoet, C dat het onderzoek loopt of dat er eerste maatregelen zijn genomen, D dat je niet
-voldoet en E dat er geen eigenaar is.
-
-Een rapport vervalt na 36 maanden. Zodra het oudste deelonderzoek die leeftijd bereikt,
-verdwijnt de onderbouwing en zakt je status. Dat is de reden dat organisaties bij ons
-terugkomen voordat die termijn verstrijkt, en niet pas als het dashboard rood kleurt.
-
-We analyseerden in augustus 2026 het hele Register. Van de 9.075 sites heeft 42% geen enkel
-rapport, en bij 603 verklaringen met status A of B staat de annotatie "onderbouwing
-ontoereikend". De meest voorkomende oorzaak is een ontbrekend deelonderzoek. De cijfers en de
-methode staan in
-[ons onderzoek naar het Register](/blog/toegankelijkheidsregister-oogt-gezond-brokkelt-af/).
-
-{{< /section-full >}}
-
-{{< section-full title="Waarom een partij die niets voor je bouwt?" bg="light" >}}
+{{< section-full title="Waarom een partij die niets voor je bouwt?" >}}
 
 Proper Access bouwt en beheert zelf geen websites. Er is dus geen situatie waarin we ons eigen
 werk beoordelen, en geen belang bij een gunstige uitkomst. Voor een overheidsorganisatie is dat

@@ -96,22 +96,35 @@ Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
 
 {{< /section-full >}}
 
-{{< section-full title="Volgens welke methode onderzoeken we?" bg="light" id="methode" >}}
+{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Toezichthouders hanteren dezelfde methode, dus je rapport is bruikbaar als bewijs." >}}
+<div class="card">
+  <i class="card__icon" aria-hidden="true">1</i>
+  <h3 class="card__title">Reikwijdte bepalen</h3>
+  <p>Welke website, welke subdomeinen, welke talen, welke apps. We leggen ook vast op welke browsers en hulpsoftware we toetsen.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">2</i>
+  <h3 class="card__title">De site verkennen</h3>
+  <p>Welke paginatypes zijn er, welke onderdelen zitten erin zoals formulieren, filters en video's, en waar lopen de gebruikersroutes.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">3</i>
+  <h3 class="card__title">Steekproef samenstellen</h3>
+  <p>We kiezen pagina's die samen alle paginatypes en alle interactie dekken. Die selectie krijg je vooraf te zien.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">4</i>
+  <h3 class="card__title">De steekproef toetsen</h3>
+  <p>Handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%. Daarna doet een tweede auditor de interne review.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">5</i>
+  <h3 class="card__title">Bevindingen rapporteren</h3>
+  <p>Per element in plaats van per succescriterium, met per bevinding een user story vanuit een bezoeker met een beperking.</p>
+</div>
+{{< /section-steps >}}
 
-We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Toezichthouders hanteren dezelfde
-methode, dus je rapport is bruikbaar als bewijs. WCAG-EM schrijft vijf stappen voor.
-
-1. **Reikwijdte bepalen.** Welke website, welke subdomeinen, welke talen, welke apps. We
-   leggen ook vast op welke browsers en hulpsoftware we toetsen.
-2. **De site verkennen.** We brengen in kaart welke paginatypes er zijn, welke onderdelen
-   erin zitten zoals formulieren, filters en video's, en waar de gebruikersroutes lopen zoals
-   bestellen, aanvragen of inloggen.
-3. **Een representatieve steekproef samenstellen.** We kiezen pagina's die samen alle
-   paginatypes en alle interactie dekken. Die selectie krijg je vooraf te zien.
-4. **De steekproef toetsen.** Handmatig, met schermlezer, alleen toetsenbord, zoom tot 400% en
-   een controle op kleurgebruik en contrast. Daarna doet een tweede auditor de interne review.
-5. **De bevindingen rapporteren.** Per element in plaats van per succescriterium, met per
-   bevinding een user story vanuit een bezoeker met een beperking.
+{{< section-full title="Waarom een steekproef genoeg is" >}}
 
 Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
 tweeduizend URL's. In 900 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
@@ -120,29 +133,48 @@ bevinding nog een keer op, en die tijd besteed je beter aan het uitwerken van op
 Zitten er uitzonderingen tussen, zoals een kaartmodule of een pdf-viewer, dan nemen we die er
 apart bij.
 
-{{< /section-full >}}
-
-{{< section-full title="Welk type onderzoek past bij jouw situatie?" id="welk-onderzoek" >}}
-
-Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter.
-
-- **[Contentaudit](/contentaudit/)**, 33 van de 55 succescriteria. Voor organisaties waar de
-  techniek bij een externe leverancier ligt en je alleen de redactie zelf beheert. Zo staat je
-  rapport niet vol met bevindingen die je toch niet kunt oplossen.
-- **[Techniek- of systeemaudit](/techniekaudit/)**, 48 van de 55 succescriteria. Voor
-  softwareleveranciers en productteams die hun klanten een toegankelijk platform willen
-  leveren.
-- **[App-audit](/app-toegankelijkheid-testen/)**. Voor iOS- en Android-apps, handmatig getest
-  op echte toestellen met VoiceOver en TalkBack.
-- **[Mini-audit](/webshop-quickscan/)**, € 495. Tot 5 uur handmatige controle als je nog niet
-  weet waar je staat en eerst een beeld wilt.
-
-Weet je het niet zeker, kies dan een [gratis kennismaking van 30 minuten](/contact/). We kijken
-dan samen naar je site en zeggen welk onderzoek past.
+Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastleggen, staat in
+[stap 1 van onze werkwijze](/zo-werken-wij/steekproef-en-scope/).
 
 {{< /section-full >}}
 
-{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" bg="light" id="prijzen" >}}
+{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type onderzoek past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter." >}}
+{{< section-card title="Contentaudit" >}}
+
+33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
+ligt en je alleen de redactie zelf beheert. Zo staat je rapport niet vol met bevindingen die je
+toch niet kunt oplossen.
+
+[Lees over de contentaudit →](/contentaudit/)
+
+{{< /section-card >}}
+{{< section-card title="Techniek- of systeemaudit" >}}
+
+48 van de 55 succescriteria. Voor softwareleveranciers en productteams die hun klanten een
+toegankelijk platform willen leveren, los van de content die er straks in komt.
+
+[Lees over de techniek- of systeemaudit →](/techniekaudit/)
+
+{{< /section-card >}}
+{{< section-card title="App-audit" >}}
+
+Voor iOS- en Android-apps, handmatig getest op echte toestellen met VoiceOver en TalkBack. We
+toetsen aan WCAG 2.1 in combinatie met de Europese norm EN 301 549.
+
+[Lees over de app-audit →](/app-toegankelijkheid-testen/)
+
+{{< /section-card >}}
+{{< section-card title="Mini-audit" >}}
+
+€ 495. Tot 5 uur handmatige controle als je nog niet weet waar je staat en eerst een beeld
+wilt. Een senior auditor bekijkt je site en benoemt de grootste knelpunten.
+
+[Lees over de mini-audit →](/webshop-quickscan/)
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" id="prijzen" >}}
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
 aantal pagina's. Alle bedragen zijn exclusief 21% btw.
@@ -154,8 +186,9 @@ aantal pagina's. Alle bedragen zijn exclusief 21% btw.
 | Gemiddeld-complexe website, webshop, inlog, filters | circa € 4.200 |
 | Complexe website, maatwerkapplicatie, veel interactie | circa € 5.100 |
 
-De meeste websites vallen in de categorie gemiddeld. Na een kennismaking krijg je een vaste
-prijs, geen nacalculatie.
+De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categorie bij jou past,
+[plan dan een kennismaking van 30 minuten](/contact/). We kijken samen naar je site, zeggen
+welk onderzoek past en je krijgt daarna een vaste prijs, geen nacalculatie.
 
 Twee dingen bieden we er altijd bij aan, allebei optioneel. Een
 [hercontrole](/hercontrole/) van € 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost,
@@ -167,18 +200,29 @@ Meer over de opbouw lees je in het artikel
 
 {{< /section-full >}}
 
-{{< section-full title="Waarom een onafhankelijk bureau?" id="onafhankelijk" >}}
+{{< section-cards id="onafhankelijk" columns="3" bg="light" title="Waarom een onafhankelijk bureau?" >}}
+{{< section-card title="We bouwen zelf niets" >}}
 
-Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk, en we
-hebben geen belang bij een uitkomst. Dat is de reden dat opdrachtgevers als het Rijksmuseum,
-NRC, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar ons inschakelen
-naast hun eigen bouwer.
+Proper Access bouwt en beheert geen websites. We keuren dus nooit ons eigen werk en we hebben
+geen belang bij een uitkomst. Opdrachtgevers als het Rijksmuseum, NRC, de provincies Noord- en
+Zuid-Holland en de gemeenten Amersfoort en Alkmaar schakelen ons daarom in naast hun eigen
+bouwer.
 
-Sinds 2019 deden we 900 audits, 236 opdrachten voor 63 opdrachtgevers. 40% komt terug voor een
-tweede opdracht. Peildatum 7 augustus 2026.
+{{< /section-card >}}
+{{< section-card title="900 audits sinds 2019" >}}
 
-Wil je dat we tijdens het oplossen meedenken, dan kan dat met een
-[strippenkaart](/strippenkaart/) van € 100 per uur. Je koopt losse uren waarin we alternatieven
-bekijken, code reviewen of tussentijds testen.
+236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
+7 augustus 2026. Een deel van die rapporten is openbaar, dus je kunt vooraf zien wat je krijgt.
 
-{{< /section-full >}}
+[Bekijk een voorbeeldrapport →](#voorbeeldrapporten)
+
+{{< /section-card >}}
+{{< section-card title="We denken mee bij het oplossen" >}}
+
+Wil je tijdens het oplossen kunnen overleggen, dan kan dat met een strippenkaart van € 100 per
+uur. Je koopt losse uren waarin we alternatieven bekijken, code reviewen of tussentijds testen.
+
+[Lees over de strippenkaart →](/strippenkaart/)
+
+{{< /section-card >}}
+{{< /section-cards >}}

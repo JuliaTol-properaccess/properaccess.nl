@@ -48,13 +48,12 @@
 </section>
 
 <!-- ─── Content (if any) ─── -->
+<!-- De body van _index.md gebruikt de section-shortcodes, die hun eigen container
+     meebrengen. Daarom hier geen extra container of prose-wrapper omheen: dat zou
+     de secties dubbel laten inspringen. Zelfde opzet als layouts/diensten/audit.html. -->
 {{ with .Content }}
 <article class="offerte-content">
-  <div class="container">
-    <div class="sectie-prose">
-      {{ . }}
-    </div>
-  </div>
+  {{ . }}
 </article>
 {{ end }}
 

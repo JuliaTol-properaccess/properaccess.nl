@@ -7,49 +7,56 @@ url: "/diensten/"
 description: "WCAG-audits, mini-audits, trainingen voor devteams en webredactie, en doorlopende ondersteuning. Ontdek hoe Proper Access je helpt met digitale toegankelijkheid."
 ---
 
-## Welke soorten toegankelijkheidsonderzoek zijn er?
+{{< section-full title="Welke soorten toegankelijkheidsonderzoek zijn er?" bg="light" >}}
 
-Welk onderzoek je nodig hebt, hangt af van wat je zelf kunt veranderen.
+Welk onderzoek je nodig hebt, hangt af van wat je zelf kunt veranderen. Ligt de techniek bij
+een externe leverancier, dan heeft het weinig zin om een rapport te krijgen vol bevindingen
+waar je zelf niets mee kunt.
 
-Een **volledig toegankelijkheidsonderzoek** toetst je website aan alle 55 succescriteria van
-WCAG 2.2 op niveau AA, volgens de WCAG-EM methodiek. Dit is het onderzoek dat je nodig hebt
-als je moet aantonen dat je voldoet aan de European Accessibility Act of aan het Besluit
-digitale toegankelijkheid overheid.
+| Onderzoek | Wat we toetsen | Succescriteria | Voor wie |
+| --- | --- | --- | --- |
+| Volledig toegankelijkheidsonderzoek | Techniek en content samen, volgens WCAG-EM | 55 van de 55 | Organisaties die moeten aantonen dat ze voldoen aan de European Accessibility Act of het Besluit digitale toegankelijkheid overheid |
+| [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt |
+| [Techniek- of systeemaudit](/techniekaudit/) | De bouwstenen van je product: componenten, code en interactiepatronen, los van de content | 48 van de 55 | Softwareleveranciers, productteams en SaaS-partijen |
+| [App-audit](/app-toegankelijkheid-testen/) | Een iOS- of Android-app op echte toestellen, met VoiceOver en TalkBack | WCAG 2.1 met EN 301 549 | Organisaties met een mobiele app |
+| [Mini-audit](/webshop-quickscan/) | Een handmatige eerste blik op techniek, design en content | Steekproef, tot 5 uur | Organisaties die nog niet weten waar ze staan |
 
-Een **[contentaudit](/contentaudit/)** toetst alleen wat je webredactie zelf beheert: teksten,
-koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's. Dat zijn 33 van de 55
-succescriteria. Bedoeld voor organisaties waar de techniek bij een externe leverancier ligt en
-je daar zelf niets aan kunt veranderen. Zo staat je rapport niet vol met bevindingen die je
-toch niet kunt oplossen.
+Weet je niet welk onderzoek past, [plan dan een kennismaking](/contact/). We kijken samen naar
+je site en zeggen wat we zouden doen.
 
-Een **[techniek- of systeemaudit](/techniekaudit/)** toetst de bouwstenen van je product:
-componenten, code en interactiepatronen, los van de content die er straks in komt. Dat zijn 48
-van de 55 succescriteria. Bedoeld voor softwareleveranciers, productteams en SaaS-partijen die
-hun klanten een toegankelijk platform willen leveren.
+{{< /section-full >}}
 
-Een **[app-audit](/app-toegankelijkheid-testen/)** toetst een iOS- of Android-app handmatig op
-echte toestellen, met VoiceOver en TalkBack. Daarbij toetsen we aan WCAG 2.1 in combinatie met
-de Europese norm EN 301 549, de standaard die de European Accessibility Act voor apps hanteert.
+{{< section-steps title="Wat gebeurt er na het onderzoek?" subtitle="Het rapport is het begin. Daarna volgt het oplossen, en daarna het bewijs dat het opgelost is." >}}
+<div class="card">
+  <i class="card__icon" aria-hidden="true">1</i>
+  <h3 class="card__title">Nabespreking</h3>
+  <p>We lopen het rapport door met je team en helpen prioriteren. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen, ook maanden later.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">2</i>
+  <h3 class="card__title">Oplossen met een strippenkaart</h3>
+  <p>Wil je tijdens het oplossen kunnen overleggen, dan koop je losse uren. We denken mee over alternatieven, reviewen code en testen tussentijds.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">3</i>
+  <h3 class="card__title">Hercontrole</h3>
+  <p>We leggen vast dat de bevindingen werkelijk zijn opgelost. Dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en bij handhaving.</p>
+</div>
+{{< /section-steps >}}
 
-Weet je nog niet waar je staat, dan is een [mini-audit](/webshop-quickscan/) het startpunt. Een
-senior auditor bekijkt je site met de hand en je weet daarna waar de grootste knelpunten
-zitten.
+{{< section-full title="Wat je bij elk onderzoek krijgt" >}}
 
-## Wat gebeurt er na het onderzoek?
+- Een rapport per element in plaats van per succescriterium, zodat je per knop, formulier of
+  menu ziet wat er misgaat.
+- Per bevinding een user story vanuit een bezoeker met een beperking, zodat je redactie, je
+  developers en je bestuurder allemaal begrijpen waarom het uitmaakt.
+- Screenshots en code-voorbeelden bij de bevindingen.
+- Een CSV met alle bevindingen, zodat je ze in je eigen projectmanagement kunt inlezen.
 
-Je lost de bevindingen op, en daarna legt een **[hercontrole](/hercontrole/)** vast dat ze
-werkelijk zijn opgelost. Dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring
-en bij handhaving. Een hercontrole kan tot 12 weken na het oorspronkelijke rapport; daarna is
-een nieuw onderzoek nodig.
-
-Wil je tijdens het oplossen kunnen overleggen, dan kan dat met een
-[strippenkaart](/strippenkaart/). Je koopt losse uren waarin we meedenken over alternatieven,
-code reviewen of tussentijds testen.
-
-## Wat je bij elk onderzoek krijgt
-
-Een rapport per element in plaats van per succescriterium, met per bevinding een user story
-vanuit een bezoeker met een beperking, screenshots, code-voorbeelden en een CSV met alle
-bevindingen voor je projectmanagement. Vragen over het rapport mag je daarna onbeperkt stellen.
+Een [hercontrole](/hercontrole/) kan tot 12 weken na het oorspronkelijke rapport. Daarna is een
+nieuw onderzoek nodig, omdat er in de tussentijd te veel veranderd kan zijn om nog iets over de
+oude bevindingen te zeggen.
 
 Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk.
+
+{{< /section-full >}}
