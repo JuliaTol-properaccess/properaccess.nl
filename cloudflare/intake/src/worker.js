@@ -23,6 +23,7 @@
  */
 
 const DOORLOOPTIJD_DAGEN = 28; // normale doorlooptijd: 4 weken
+const READY_VENSTER_DAGEN = 14; // start binnen twee weken? dan meteen oppakken
 
 // Volgorde en labels voor de samenvatting. Alleen ingevulde velden komen terug.
 const VELDEN = [
@@ -86,7 +87,8 @@ export default {
     }
 
     const summaryMd = buildSummary(data, "\n"); // Nederlands, voor de e-mails
-    const cardBody = buildCardBody(data); // pijplijnformat, voor het kaartje
+    const audittype = mapAuditType(data);
+    const cardBody = buildCardBody(data, audittype); // pijplijnformat, voor het kaartje
     const column = bepaalKolom(data.opleverdatum);
     const title = buildTitle(data);
 
@@ -96,7 +98,7 @@ export default {
     let kaart = null;
     let kaartFout = "";
     try {
-      kaart = await maakKaartje(env, title, cardBody, column);
+      kaart = await maakKaartje(env, title, cardBody, column, kaartLabels(audittype));
     } catch (e) {
       kaartFout = (e && e.message) || String(e);
     }
@@ -150,8 +152,7 @@ function buildTitle(data) {
 // Labels en waarden Engels, exact zoals templates/audit-intake.md, zodat het
 // rapportproject de velden zonder aanpassing kan uitlezen.
 
-function buildCardBody(data) {
-  const audittype = mapAuditType(data);
+function buildCardBody(data, audittype) {
   const domain = (data.hoofddomein || data.app_store_link || "").toString().trim();
   const rows = [
     ["Client", (data.organisatie || "").toString().trim()],
@@ -200,10 +201,31 @@ function mapAuditType(data) {
     "website-audit": "full",
     "content-audit": "content",
     "techniekaudit": "technical",
-    "systeemaudit": "full",
+    "systeemaudit": "system",
     "retest": "retest",
   };
   return map[data.type_onderzoek] || "";
+}
+
+/**
+ * Audittype -> bestaand label in de auditplanning-repo, zodat het soort
+ * onderzoek op het bord zichtbaar is zonder de kaart te openen. Techniek en
+ * systeem delen één label; het veld "Audit type" in de body houdt het verschil
+ * vast. Labels die hier niet in staan komen er niet bij.
+ */
+const TYPE_LABEL = {
+  full: "Full audit",
+  content: "Content audit",
+  technical: "Techniek/System audit",
+  system: "Techniek/System audit",
+  retest: "Retest",
+  mini: "Mini audit",
+  app: "App",
+};
+
+function kaartLabels(audittype) {
+  const label = TYPE_LABEL[audittype];
+  return label ? ["PA", label] : ["PA"];
 }
 
 function mapWcag(audittype) {
@@ -220,36 +242,96 @@ function mapOs(data) {
 }
 
 // Alles wat niet in een vaste kop past, onder Notes zodat er niets verdwijnt.
+// Het formulier is Nederlands, maar de kaart is Engels: de auditors lezen geen
+// Nederlands. Labels en keuzewaarden gaan hieronder door de vertaaltabel; wat
+// de klant zelf intypt blijft staan zoals het is ingevuld.
 const NOTES_VELDEN = [
-  ["regelkader", "Regelkader"],
-  ["onderzoeksobject", "Onderzoeksobject"],
-  ["belangrijke_onderdelen", "Belangrijkste onderdelen"],
-  ["omgeving", "Omgeving"],
-  ["extra_domeinen", "Extra domeinen"],
-  ["app_naam", "Naam app"],
-  ["app_taal", "Programmeertaal of framework"],
-  ["techniekonderzoek_bestaat", "Techniekonderzoek aanwezig"],
-  ["techniekrapport_link", "Link techniekrapport"],
-  ["functionaliteiten_link", "Lijst met functionaliteiten"],
-  ["toegang", "Toegang"],
-  ["ip_whitelisting", "IP-whitelisting"],
-  ["inloggegevens", "Inloggegevens"],
-  ["inloggegevens_details", "Details inloggegevens"],
-  ["hulp_oplossen", "Hulp bij oplossen"],
-  ["klantplatform", "Klantplatform"],
-  ["platform_gebruikers", "Platformgebruikers"],
-  ["contact_naam", "Contactpersoon"],
-  ["contact_email", "E-mailadres"],
-  ["contact_telefoon", "Telefoonnummer"],
-  ["contact2_naam", "Tweede contactpersoon"],
-  ["contact2_email", "E-mailadres tweede contactpersoon"],
+  ["type_onderzoek", "Product requested"],
+  ["regelkader", "Legal framework"],
+  ["onderzoeksobject", "Subject"],
+  ["belangrijke_onderdelen", "Most important parts"],
+  ["omgeving", "Environment"],
+  ["extra_domeinen", "Extra domains"],
+  ["app_naam", "App name"],
+  ["app_taal", "Programming language or framework"],
+  ["techniekonderzoek_bestaat", "Technical audit already done"],
+  ["techniekrapport_link", "Link to technical report"],
+  ["functionaliteiten_link", "List of features"],
+  ["documenten_omschrijving", "Documents"],
+  ["toegang", "Access"],
+  ["ip_whitelisting", "IP whitelisting"],
+  ["inloggegevens", "Credentials"],
+  ["inloggegevens_details", "Credential details"],
+  ["hulp_oplossen", "Support while fixing"],
+  ["klantplatform", "Client portal"],
+  ["platform_gebruikers", "Portal users"],
+  ["contact_naam", "Contact"],
+  ["contact_email", "Email"],
+  ["contact_telefoon", "Phone"],
+  ["contact2_naam", "Second contact"],
+  ["contact2_email", "Email second contact"],
 ];
+
+const JA_NEE = { ja: "yes", nee: "no" };
+
+// Keuzewaarden uit het formulier (Nederlandse slugs) -> Engels. Een waarde die
+// hier niet in staat gaat ongewijzigd mee; vrije tekst valt daar vanzelf onder.
+const WAARDEN_EN = {
+  type_onderzoek: {
+    "mini-audit": "mini audit",
+    "website-audit": "website audit",
+    "content-audit": "content audit",
+    techniekaudit: "technical audit",
+    systeemaudit: "system audit",
+    retest: "retest",
+  },
+  regelkader: {
+    "overheid-bdto": "public sector, Dutch accessibility decree (BDTO)",
+    "bedrijf-eaa": "business or webshop, European Accessibility Act",
+    "leverancier-techniek": "supplier or builder, wants a technical audit",
+  },
+  onderzoeksobject: {
+    website: "website",
+    webshop: "webshop",
+    app: "app",
+    documenten: "documents",
+    systeem: "system or portal",
+  },
+  omgeving: { live: "live environment", test: "test environment" },
+  techniekonderzoek_bestaat: JA_NEE,
+  toegang: { openbaar: "fully public", besloten: "partly restricted" },
+  ip_whitelisting: JA_NEE,
+  inloggegevens: {
+    geen: "none needed",
+    "zelf-aanmaken": "auditor can create an account",
+    aangeleverd: "client supplies an account",
+  },
+  hulp_oplossen: { ja: "yes", nee: "no", later: "to be decided later" },
+  klantplatform: JA_NEE,
+};
+
+function vertaalWaarde(key, waarde) {
+  const tabel = WAARDEN_EN[key];
+  return (tabel && tabel[waarde]) || waarde;
+}
+
+/**
+ * Eén regel onder Notes. Een tekstvak met meerdere regels (de belangrijkste
+ * onderdelen, extra domeinen, platformgebruikers) werd platgeslagen tot één
+ * bullet met losse regels eronder, waardoor de opsomming uit elkaar viel. Bij
+ * meer dan één regel komt de waarde nu ingesprongen onder het label te staan.
+ */
+function notitieRegel(label, waarde) {
+  const regels = waarde.split("\n").map((r) => r.trim()).filter(Boolean);
+  if (regels.length <= 1) return `- ${label}: ${regels[0] || ""}`;
+  return [`- ${label}:`, ...regels.map((r) => `  ${r.replace(/^[-*+]\s*/, "- ")}`)].join("\n");
+}
 
 function buildNotes(data) {
   const lines = [];
   for (const [key, label] of NOTES_VELDEN) {
     const val = (data[key] || "").toString().trim();
-    if (val) lines.push(`- ${label}: ${val}`);
+    if (val) lines.push(notitieRegel(label, vertaalWaarde(key, val)));
   }
   return lines.join("\n");
 }
@@ -258,15 +340,19 @@ function buildNotes(data) {
 
 function bepaalKolom(opleverdatum) {
   const deadline = new Date(opleverdatum);
-  if (isNaN(deadline.getTime())) return "Backlog";
+
+  // Geen of onleesbare datum betekent: zo snel mogelijk. Zo'n aanvraag hoort
+  // meteen oppakbaar te zijn en niet op de stapel te belanden.
+  if (isNaN(deadline.getTime())) return "Ready to start";
 
   // Startmoment = opleverdatum minus de normale doorlooptijd.
   const start = new Date(deadline);
   start.setDate(start.getDate() - DOORLOOPTIJD_DAGEN);
 
-  // Binnen een maand starten? Dan is het klaar om op te pakken.
+  // Kunnen we binnen twee weken beginnen, dan is het kaartje klaar om op te
+  // pakken. Moet het onderzoek pas later, dan wachtte het op het bord in de weg.
   const grens = new Date();
-  grens.setMonth(grens.getMonth() + 1);
+  grens.setDate(grens.getDate() + READY_VENSTER_DAGEN);
 
   return start <= grens ? "Ready to start" : "Backlog";
 }
@@ -308,7 +394,7 @@ async function ghRest(env, pad, init) {
   return data;
 }
 
-async function maakKaartje(env, title, bodyMd, columnName) {
+async function maakKaartje(env, title, bodyMd, columnName, labels) {
   // 1. Project-id + Status-veld met opties ophalen (op naam, dus geen harde id's).
   const info = await gh(
     env,
@@ -338,7 +424,7 @@ async function maakKaartje(env, title, bodyMd, columnName) {
     body: JSON.stringify({
       title,
       body: bodyMd,
-      labels: ["PA"],
+      labels: labels || ["PA"],
       assignees: [env.ASSIGNEE],
     }),
   });
