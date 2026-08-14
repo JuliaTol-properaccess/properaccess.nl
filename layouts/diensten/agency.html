@@ -54,6 +54,30 @@
   {{ .Content }}
 </article>
 
+<!-- ─── FAQ ─── -->
+<!-- Deze layout toonde het faqs-veld niet, terwijl json-ld.html er wel FAQPage-schema
+     van maakte. Daarmee stond er gestructureerde data op de pagina die een bezoeker
+     nergens kon lezen, en dat is precies wat Google's richtlijn voor FAQ-schema
+     verbiedt. Zelfde blok als in layouts/diensten/audit.html. Pagina's zonder faqs
+     in de front matter renderen niets. -->
+{{ with .Params.faqs }}
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- ─── STATS ─── -->
 {{ partial "voor-wie/stats-bar.html" . }}
 
