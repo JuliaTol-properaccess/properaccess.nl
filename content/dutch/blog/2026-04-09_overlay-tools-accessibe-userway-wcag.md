@@ -163,7 +163,7 @@ Drie stappen, in deze volgorde.
 
 ### 1. Laat een audit doen op je onderliggende site
 
-Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.100 tot € 4.500](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel tegenover een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + retest hebben gehad én de echte issues opgelost.
+Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.895 tot € 5.100](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel tegenover een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + retest hebben gehad én de echte issues opgelost.
 
 ### 2. Los de issues op in de code, niet in een widget
 

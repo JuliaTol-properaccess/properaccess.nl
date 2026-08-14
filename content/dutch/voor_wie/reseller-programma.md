@@ -115,7 +115,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Hoeveel verdien ik per audit?</summary>
 <div class="faq-answer">
-<p>7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van circa 3.600 euro is dat ongeveer 252 euro per opdracht.</p>
+<p>7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van circa 3.150 euro is dat ongeveer 220 euro per opdracht.</p>
 </div>
 </details>
 
