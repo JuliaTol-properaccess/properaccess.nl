@@ -8,13 +8,27 @@ Opgesteld 14 augustus 2026, op basis van de Peec AI-meting over 15 juli tot 14 a
 
 ## Status
 
+Bijgewerkt 14 augustus 2026, eind van de dag.
+
 | Batch | Stand |
 | --- | --- |
-| 0. Prijzen rechtzetten | Julia, loopt |
-| 1. Techniek en zichtbaarheid | Uitgevoerd 14 augustus 2026 |
-| 2. Bodyteksten op zes lege pagina's | Wacht op batch 0 |
-| 3. Twee nieuwe pagina's | Nog niet gestart |
-| Fase 2 | Na de eerste meting, vanaf eind september |
+| 0. Prijzen rechtzetten | Klaar, door Julia zelf |
+| 1. Techniek en zichtbaarheid | Live, 14 augustus 2026 |
+| 2. Bodyteksten op zes lege pagina's | Live, 14 augustus 2026 (PR #75) |
+| 3. Twee nieuwe pagina's | Live, 14 augustus 2026 (PR #76) |
+| Meting | Vanaf circa 28 augustus, twee weken na de laatste deploy |
+| Fase 2 | Pas na die meting |
+
+Alles uit batch 1 tot en met 3 staat sinds 14 augustus op properaccess.nl. Wat er daarna nog
+ligt staat onderaan onder [Restwerk](#restwerk).
+
+**Belangrijk voor wie hier verder schrijft.** In de reviewronde van batch 2 en 3 zaten negen
+feitelijke fouten over hoe digitale toegankelijkheid in Nederland werkt, waarvan twee
+overgenomen uit teksten die al op deze site stonden. Ze zijn gecorrigeerd, maar de les geldt
+voor elk volgend stuk tekst: **bestaande content op properaccess.nl is geen bron.** De
+geverifieerde vakinhoud staat in het hoofdstuk "Vakinhoud: wetgeving, het Register en onze
+methode" in `~/.claude/CLAUDE.md`. Staat het daar niet, dan weet je het niet: vraag het na of
+laat het weg.
 
 ---
 
@@ -209,10 +223,22 @@ onze sterkste ingang met 94 ophalingen; die gooien we niet weg voor een gok.
 `content/dutch/diensten/hulp-europese-toegankelijkheidswetgeving.md`, titel "Hulp bij het
 voldoen aan de Europese toegankelijkheidswetgeving".
 
-De vraag achter de 0%-prompt is niet "wie test" maar "wie helpt me voldoen". De pagina
-benoemt per wet (EAA, BDTO, EN 301 549) voor wie die geldt, welke vier stappen "voldoen"
-vereist (onderzoek, herstel, hercontrole, toegankelijkheidsverklaring), wie handhaaft (ACM,
-RDI, Logius) en welke dienst van ons elke stap dekt.
+De vraag achter de 0%-prompt is "wie helpt me voldoen", niet "wie test". De pagina benoemt per
+wet voor wie die geldt, welke weg je aflegt naar een toegankelijke site, wie er toezicht houdt
+en welke dienst van ons elke stap dekt.
+
+Twee dingen uit dit plan bleken bij het schrijven feitelijk onjuist en zijn anders uitgevoerd.
+Ze staan hier zodat ze niet opnieuw uit dit document worden overgenomen:
+
+- Er stond dat "voldoen" vier stappen vereist: onderzoek, herstel, hercontrole en
+  toegankelijkheidsverklaring. **Dat klopt niet voor de EAA.** Die verplicht een toegankelijke
+  website of app; een onderzoek is de manier om te weten waar je staat, geen wettelijke eis.
+  De verklaring en het Register horen bij het BDTO, niet bij de EAA. De pagina heet daarom
+  "Van waar je nu staat naar een toegankelijke website", met de nuance in stap 1.
+- Er stond dat ACM, RDI en Logius handhaven. **Logius handhaaft niet.** Toezicht op de EAA
+  ligt bij zes toezichthouders, elk voor een eigen soort product of dienst: ACM, AFM, RDI,
+  Commissariaat voor de Media, ILT en Inspectie JenV. De volledige tabel met bronnen staat in
+  `~/.claude/CLAUDE.md`.
 
 Raakt: de enige prompt waarop we exact nul scoren terwijl Stichting Accessibility op 93,3%
 staat, plus de 6,7%-prompt. Hoogste rendement van alle nieuwe pagina's.
@@ -226,8 +252,39 @@ staat, plus de 6,7%-prompt. Hoogste rendement van alle nieuwe pagina's.
 - Het kostencluster consolideren: van vier kostenartikelen presteert er één (citation rate
   1,34) en dilueren er drie (0,30, 0,22, 0,14). Canonical of redirect naar de sterke.
 - `howto:` front matter zetten op de bestaande how-to-artikelen. Het veld wordt al door
-  `layouts/partials/json-ld.html` ondersteund en door geen enkele pagina gebruikt.
+  `layouts/partials/json-ld.html` ondersteund en door geen enkele pagina gebruikt. Dit is de
+  goedkoopste ingang naar het gat van 94% op how-to-guides, want er hoeft geen tekst voor
+  geschreven te worden. Let op de verhouding: dat gat gaat over 67 chats, tegen 166 voor
+  productpagina's, dus in absolute aantallen is het de kleinere kans.
+- Uitzoeken waarom van de 33 Nederlandse artikelen met een vraag als titel er precies één
+  presteert. `/blog/hoe-maak-ik-mijn-website-toegankelijk` haalt een citation rate van 2,80,
+  het hoogste cijfer in het hele bronnenrapport. De andere 32 halen dat niet. Die analyse gaat
+  vóór het schrijven van nieuwe how-to's.
 - AI-bots bij naam in `robots.txt`. Hygiëne, geen maatregel: alles is nu al toegestaan.
+
+---
+
+## Restwerk
+
+Klein, blokkeert niets, opgekomen tijdens batch 1 tot en met 3.
+
+- Twee blogbestanden delen de slug `wat-kost-een-toegankelijkheidsaudit`:
+  `2026-04-09_wat-kost-een-toegankelijkheidsaudit.md` en
+  `wat-kost-een-toegankelijkheidsaudit.md`. Hugo publiceert er stilzwijgend één van. Kijken
+  welke gepubliceerd wordt en welke de betere tekst heeft, dan de verliezer verwijderen met
+  een `aliases:` op de blijver.
+- Circa 500 gedachtestreepjes in Nederlandse teksten, tegen de schrijfregel in: ongeveer 65 in
+  de layouts voor overheid, e-commerce, cultuur en audit, en 240 verspreid over 101
+  contentbestanden. `layouts/voor_wie/agency.html` is gedaan. Engelse content valt buiten de
+  regel. Streepjes vóór de naam bij een citaat zijn een naamsvermelding en blijven staan.
+- Drie claims die niet te onderbouwen zijn: "boetes tot € 900.000" in
+  `layouts/voor_wie/agency.html`, "61% van de webshops voldoet niet" in
+  `layouts/voor_wie/ecommerce.html`, en het woord "compliance" op meerdere plekken terwijl dat
+  op de verbodslijst staat.
+- Zeventien CSS-klassen staan alleen in `assets/css/custom`, een bestand zonder extensie dat
+  niet wordt gecompileerd. De `dn-*`-klassen zijn overgezet naar `custom.css` (daardoor had
+  /diensten/ geen opmaak); `footer-certs*` en `ov-team` zien er in de browser goed uit maar
+  zijn nog niet verklaard.
 
 ---
 
