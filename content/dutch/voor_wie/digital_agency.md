@@ -120,9 +120,6 @@ voordat we beginnen. Zegt een developer dat iets niet kan binnen het
 framework, dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in
 plaats van een bevinding te laten staan die niemand oplost.
 
-Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026.
-
 Een onderzoek begint bij circa € 2.250 voor een eenvoudige site en loopt op tot circa € 5.100
 voor een maatwerkapplicatie met veel interactie, exclusief 21% btw. Wil je je eigen team
 opleiden in plaats van elk project laten toetsen, dan kan dat met een

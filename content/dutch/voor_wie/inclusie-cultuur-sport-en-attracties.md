@@ -57,9 +57,7 @@ volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het o
 een tweede auditor doet de interne review.
 
 In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de
-Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde. Sinds 2019 deden we 950+ audits,
-236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
-7 augustus 2026.
+Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde.
 
 We bouwen en beheren zelf geen websites. Er is dus geen situatie waarin we ons eigen werk
 beoordelen. Voor een instelling die het rapport gebruikt richting een subsidieverlener of een
@@ -93,9 +91,9 @@ muis werkt, want daar zit vaak jarenlang opgebouwd maatwerk in.
 {{< section-card title="App en audiotour" >}}
 
 Een museum-app toetsen we handmatig op echte toestellen, met VoiceOver op iOS en TalkBack op
-Android. Voor de Rijksmuseum-apps leverde dat 83 bevindingen op, verdeeld over twee platforms.
-Een audiotour die je zonder hulp van een ziende bezoeker niet kunt starten, sluit precies de
-mensen uit voor wie hij bedoeld is.
+Android. Voor de Rijksmuseum-apps liepen we met telefoon en koptelefoon door de zalen, volgden
+we de audiotours en deden we de interactieve speurtocht. Een audiotour die je zonder hulp van
+een ziende bezoeker niet kunt starten, sluit precies de mensen uit voor wie hij bedoeld is.
 
 {{< /section-card >}}
 {{< /section-cards >}}

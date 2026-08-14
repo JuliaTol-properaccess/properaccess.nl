@@ -60,7 +60,7 @@ faqs:
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
   - question: "Is dit verplicht voor ons?"
-    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
+    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO), dat sinds 2018 geldt."
   - question: "Wat als we niet technisch zijn?"
     answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
   - question: "Kunnen jullie ook de problemen oplossen?"
@@ -211,10 +211,10 @@ Zuid-Holland en de gemeenten Amersfoort en Alkmaar schakelen ons daarom in naast
 bouwer.
 
 {{< /section-card >}}
-{{< section-card title="950 audits sinds 2019" >}}
+{{< section-card title="Je ziet vooraf wat je krijgt" >}}
 
-236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
-7 augustus 2026. Een deel van die rapporten is openbaar, dus je kunt vooraf zien wat je krijgt.
+Een deel van onze rapporten is openbaar. Je kunt dus lezen hoe een bevinding bij ons is
+opgeschreven en welke taal we gebruiken, voordat je iets afspreekt.
 
 [Bekijk een voorbeeldrapport →](#voorbeeldrapporten)
 

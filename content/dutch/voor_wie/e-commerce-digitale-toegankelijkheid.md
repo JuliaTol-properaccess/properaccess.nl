@@ -125,9 +125,8 @@ de evaluatiemethode van het W3C. Een senior auditor voert het
 toegankelijkheidsonderzoek uit, een tweede auditor doet de interne review. We bouwen en beheren
 zelf geen webshops, dus we keuren nooit ons eigen werk.
 
-Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026. In e-commerce en media werkten we onder meer
-voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en Eteck. Hoe zo'n samenwerking eruitziet, staat in
+In e-commerce en media werkten we onder meer voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en
+Eteck. Hoe zo'n samenwerking eruitziet, staat in
 [het verhaal over NRC](/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/).
 
 Het platform maakt niet uit. We toetsen webshops op Shopify, Magento en WooCommerce, en op
