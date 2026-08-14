@@ -130,8 +130,8 @@ een tweede opdracht. Peildatum 7 augustus 2026. In e-commerce en media werkten w
 voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en Eteck. Hoe zo'n samenwerking eruitziet, staat in
 [het verhaal over NRC](/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/).
 
-Het platform maakt niet uit. We toetsten webshops op Shopify, Magento, WooCommerce, Lightspeed
-en op maatwerk. Kun je iets binnen de grenzen van je platform niet oplossen, dan zoeken we mee
+Het platform maakt niet uit. We toetsen webshops op Shopify, Magento en WooCommerce, en op
+maatwerk. Kun je iets binnen de grenzen van je platform niet oplossen, dan zoeken we mee
 naar een alternatief of naar de formulering waarmee je het bij je leverancier neerlegt.
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het

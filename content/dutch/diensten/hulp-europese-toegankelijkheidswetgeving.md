@@ -64,7 +64,7 @@ bedrijf, terwijl er technisch niets verschilt.
 | Wet | Voor wie | Sinds | Toezicht |
 | --- | --- | --- | --- |
 | European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Verdeeld over meerdere toezichthouders, per soort product of dienst |
-| Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2020 voor websites, 2021 voor apps | Verantwoording via het Register van Toegankelijkheidsverklaringen |
+| Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2018 | Verantwoording via het Register van Toegankelijkheidsverklaringen |
 
 Beide wijzen naar dezelfde norm: **EN 301 549**. Die verwijst op dit moment naar WCAG 2.1
 niveau AA, en stelt daarnaast eisen aan je klantondersteuning en aan de informatie die je zelf

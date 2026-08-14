@@ -128,8 +128,9 @@ een vaste prijs.
 
 Wil je eerst weten waar je staat, dan is een
 [mini-audit](/quickscan-digitale-toegankelijkheid/) van € 495 het startpunt. Ligt de techniek
-bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan is een
-[contentaudit](/contentaudit/) vaak de verstandigere keuze: je rapport staat dan niet vol met
-bevindingen waar je zelf niets aan kunt doen.
+bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan kan een
+[contentaudit](/contentaudit/) uitkomst bieden. Die doen we alleen als de techniek ook is
+onderzocht, door ons of door je bouwer, want een verklaring vraagt om bewijs over de hele
+website en niet alleen over de redactie-laag.
 
 {{< /section-full >}}

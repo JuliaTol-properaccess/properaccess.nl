@@ -143,8 +143,8 @@ Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastl
 {{< section-card title="Contentaudit" >}}
 
 33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
-ligt en je alleen de redactie zelf beheert. Zo staat je rapport niet vol met bevindingen die je
-toch niet kunt oplossen.
+ligt en je alleen de redactie zelf beheert. Alleen mogelijk als de techniek ook is onderzocht,
+door ons of door een andere partij.
 
 [Lees over de contentaudit →](/contentaudit/)
 

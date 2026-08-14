@@ -64,7 +64,7 @@ faqs:
 
 Alle overheidsinstanties en publiekrechtelijke instellingen in Nederland. Gemeenten,
 provincies, waterschappen, ministeries, uitvoeringsorganisaties, scholen en zorginstellingen
-met een publieke taak. Voor websites geldt de plicht sinds 2020, voor mobiele apps sinds 2021.
+met een publieke taak. De plicht geldt sinds 2018.
 
 De plicht dekt je hele digitale dienstverlening: je hoofdwebsite, maar ook subsites,
 aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van die kanalen
@@ -76,8 +76,11 @@ heeft een eigen toegankelijkheidsverklaring nodig in het
 {{< section-cards columns="3" bg="light" title="Wat betekent dit voor je toegankelijkheidsverklaring?" >}}
 {{< section-card title="Vijf statussen in het Register" >}}
 
-A betekent dat je volledig voldoet, B dat je gedeeltelijk voldoet, C dat het onderzoek loopt of
-dat er eerste maatregelen zijn genomen, D dat je niet voldoet en E dat er geen eigenaar is.
+- **A:** je voldoet volledig
+- **B:** je voldoet gedeeltelijk
+- **C:** het onderzoek loopt of er zijn eerste maatregelen genomen
+- **D:** je voldoet niet
+- **E:** er is geen eigenaar
 
 {{< /section-card >}}
 {{< section-card title="Een rapport vervalt na 36 maanden" >}}
@@ -89,9 +92,9 @@ het dashboard rood kleurt.
 {{< /section-card >}}
 {{< section-card title="42% heeft geen enkel rapport" >}}
 
-We analyseerden in augustus 2026 het hele Register. Van de 9.075 sites heeft 42% geen enkel
-rapport, en bij 603 verklaringen met status A of B staat de annotatie "onderbouwing
-ontoereikend". De meest voorkomende oorzaak is een ontbrekend deelonderzoek.
+Van de 9.075 sites in het Register, geanalyseerd in augustus 2026. Bij 603 verklaringen met
+status A of B staat bovendien "onderbouwing ontoereikend", meestal door een ontbrekend
+deelonderzoek.
 
 [Lees ons onderzoek naar het Register →](/blog/toegankelijkheidsregister-oogt-gezond-brokkelt-af/)
 
@@ -106,10 +109,11 @@ Register telt alleen een onderzoek volgens
 [WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/), de evaluatiemethode van het W3C.
 Onderzoek dat er niet volgens is uitgevoerd, accepteert het Register niet.
 
-Voor documenten, video's en PDF's die je redactie zelf beheert, kan een
-[contentaudit](/contentaudit/) genoeg zijn. Ligt de techniek bij een externe leverancier, dan
-is dat de verstandigste keuze: je rapport staat dan niet vol met bevindingen waar je zelf
-niets aan kunt doen.
+Ligt de techniek bij een externe leverancier en beheer je zelf alleen de teksten, beelden en
+PDF's, dan kan een [contentaudit](/contentaudit/) uitkomst bieden. Let op de voorwaarde: we
+voeren een contentaudit alleen uit als de techniek ook is onderzocht, door ons of door iemand
+anders. Je verklaring vraagt om bewijs dat de hele website is getoetst, niet alleen de
+redactie-laag, dus een contentaudit op zichzelf levert je een halve onderbouwing op.
 
 {{< /section-full >}}
 

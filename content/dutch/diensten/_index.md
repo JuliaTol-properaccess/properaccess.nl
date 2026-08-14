@@ -11,12 +11,13 @@ description: "WCAG-audits, mini-audits, trainingen voor devteams en webredactie,
 
 Welk onderzoek je nodig hebt, hangt af van wat je zelf kunt veranderen. Ligt de techniek bij
 een externe leverancier, dan heeft het weinig zin om een rapport te krijgen vol bevindingen
-waar je zelf niets mee kunt.
+waar je zelf niets mee kunt. Let op: een deelonderzoek van alleen de content kan alleen als de
+techniek ook is onderzocht, door ons of door iemand anders.
 
 | Onderzoek | Wat we toetsen | Succescriteria | Voor wie |
 | --- | --- | --- | --- |
 | Volledig toegankelijkheidsonderzoek | Techniek en content samen, volgens WCAG-EM | 55 van de 55 | Organisaties die moeten aantonen dat ze voldoen aan de European Accessibility Act of het Besluit digitale toegankelijkheid overheid |
-| [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt |
+| [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt. Alleen mogelijk als de techniek ook is onderzocht |
 | [Techniek- of systeemaudit](/techniekaudit/) | De bouwstenen van je product: componenten, code en interactiepatronen, los van de content | 48 van de 55 | Softwareleveranciers, productteams en SaaS-partijen |
 | [App-audit](/app-toegankelijkheid-testen/) | Een iOS- of Android-app op echte toestellen, met VoiceOver en TalkBack | WCAG 2.1 met EN 301 549 | Organisaties met een mobiele app |
 | [Mini-audit](/webshop-quickscan/) | Een handmatige eerste blik op techniek, design en content | Steekproef, tot 5 uur | Organisaties die nog niet weten waar ze staan |

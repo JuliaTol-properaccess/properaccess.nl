@@ -114,8 +114,8 @@ omdat je projectmanager en je klant moeten kunnen zien waarom iets prioriteit he
 niet met een criteriumnummer. Daarnaast een screenshot, een code-voorbeeld en een CSV met alle
 bevindingen die je rechtstreeks in Jira of Linear kunt inlezen.
 
-We kennen React, Vue, Angular, WordPress, Drupal en Laravel, en we weten waar toegankelijkheid in
-elk van die stacks meestal misgaat. Zegt een developer dat iets niet kan binnen het framework,
+We kennen React, Vue en WordPress, en we weten waar toegankelijkheid in elk van die stacks
+meestal misgaat. Zegt een developer dat iets niet kan binnen het framework,
 dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in plaats van
 een bevinding te laten staan die niemand oplost.
 

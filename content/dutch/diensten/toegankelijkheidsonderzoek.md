@@ -117,15 +117,17 @@ zelf niets mee kunt.
 | Onderzoek | Wat we toetsen | Succescriteria | Voor wie |
 | --- | --- | --- | --- |
 | [Volledig onderzoek](/toegankelijkheidsaudit/) | Techniek en content samen, volgens WCAG-EM | 55 van de 55 | Organisaties die moeten aantonen dat ze voldoen aan de European Accessibility Act of het Besluit digitale toegankelijkheid overheid |
-| [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt |
+| [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt. Alleen mogelijk als de techniek ook is onderzocht |
 | [Techniek- of systeemaudit](/techniekaudit/) | De bouwstenen van je product: componenten, code en interactiepatronen, los van de content | 48 van de 55 | Softwareleveranciers, productteams en SaaS-partijen |
 | [App-audit](/app-toegankelijkheid-testen/) | Een iOS- of Android-app op echte toestellen, met VoiceOver en TalkBack | WCAG 2.1 met EN 301 549 | Organisaties met een mobiele app |
 | [Mini-audit](/webshop-quickscan/) | Een handmatige eerste blik op techniek, design en content | Steekproef, tot 5 uur | Organisaties die nog niet weten waar ze staan |
 
-Een deelonderzoek is geen halve maatregel. Een contentaudit die precies laat zien wat je
-redactie de komende maand kan oplossen, brengt je verder dan een volledig rapport waarvan de
-helft bij een leverancier ligt die niet reageert. Twijfel je, dan kijken we in de kennismaking
-met je mee.
+Een deelonderzoek staat nooit op zichzelf. Een contentaudit voeren we alleen uit als de
+techniek ook is onderzocht, door ons of door een andere partij. Een toegankelijkheidsverklaring
+vraagt om bewijs dat de hele website is getoetst, en met alleen een contentrapport heb je die
+onderbouwing niet rond. Wat een contentaudit wel doet: je redactie krijgt een rapport waarin
+alles staat wat zij zelf kan oplossen, zonder bevindingen die bij een leverancier liggen.
+Twijfel je wat je nodig hebt, dan kijken we in de kennismaking met je mee.
 
 Heb je zowel een website als een app, dan zijn dat twee onderzoeken met twee rapporten. Dat is
 ook wat het Register van Toegankelijkheidsverklaringen en de European Accessibility Act
