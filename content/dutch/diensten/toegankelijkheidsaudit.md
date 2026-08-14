@@ -73,4 +73,113 @@ faqs:
     answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
+  - question: "Volgens welke methode voeren jullie het onderzoek uit?"
+    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek volgens deze methode voor status A, dus je rapport is bruikbaar als bewijs."
+  - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
+    answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 ---
+
+{{< section-full title="Wat is een toegankelijkheidsonderzoek?" >}}
+
+Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2,
+niveau AA. Je hoort er ook andere namen voor: toegankelijkheidsaudit, WCAG-audit,
+toegankelijkheidstoets. Het gaat om hetzelfde werk.
+
+WCAG 2.2 op niveau AA telt 55 succescriteria. Een geautomatiseerde scan herkent daarvan
+ongeveer 30%, vooral codefouten die een tool kan meten. De overige 70% vraagt om een mens die
+een schermlezer start, met het toetsenbord door een formulier loopt, de focusvolgorde
+controleert en inzoomt tot 400%.
+
+De Europese norm EN 301 549 neemt de WCAG-criteria over voor websites en stelt daarnaast eisen
+aan onder meer documentatie en klantondersteuning. Die norm is de maatstaf onder de European
+Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
+
+{{< /section-full >}}
+
+{{< section-full title="Volgens welke methode onderzoeken we?" bg="light" >}}
+
+We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Toezichthouders hanteren dezelfde
+methode, dus je rapport is bruikbaar als bewijs. WCAG-EM schrijft vijf stappen voor.
+
+1. **Reikwijdte bepalen.** Welke website, welke subdomeinen, welke talen, welke apps. We
+   leggen ook vast op welke browsers en hulpsoftware we toetsen.
+2. **De site verkennen.** We brengen in kaart welke paginatypes er zijn, welke onderdelen
+   erin zitten zoals formulieren, filters en video's, en waar de gebruikersroutes lopen zoals
+   bestellen, aanvragen of inloggen.
+3. **Een representatieve steekproef samenstellen.** We kiezen pagina's die samen alle
+   paginatypes en alle interactie dekken. Die selectie krijg je vooraf te zien.
+4. **De steekproef toetsen.** Handmatig, met schermlezer, alleen toetsenbord, zoom tot 400% en
+   een controle op kleurgebruik en contrast. Bij een gemiddelde website staat hier 18 uur voor,
+   plus 3 uur interne review door een tweede auditor.
+5. **De bevindingen rapporteren.** Per element in plaats van per succescriterium, met per
+   bevinding een user story vanuit een bezoeker met een beperking.
+
+Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
+tweeduizend URL's. In 900 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
+sjablonen zitten. Een pagina toevoegen die hetzelfde sjabloon gebruikt levert dan dezelfde
+bevinding nog een keer op, en die tijd besteed je beter aan het uitwerken van oplossingen.
+Zitten er uitzonderingen tussen, zoals een kaartmodule of een pdf-viewer, dan nemen we die er
+apart bij.
+
+{{< /section-full >}}
+
+{{< section-full title="Welk type onderzoek past bij jouw situatie?" >}}
+
+Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter.
+
+- **[Contentaudit](/contentaudit/)**, 33 van de 55 succescriteria. Voor organisaties waar de
+  techniek bij een externe leverancier ligt en je alleen de redactie zelf beheert. Zo staat je
+  rapport niet vol met bevindingen die je toch niet kunt oplossen.
+- **[Techniek- of systeemaudit](/techniekaudit/)**, 48 van de 55 succescriteria. Voor
+  softwareleveranciers en productteams die hun klanten een toegankelijk platform willen
+  leveren.
+- **[App-audit](/app-toegankelijkheid-testen/)**. Voor iOS- en Android-apps, handmatig getest
+  op echte toestellen met VoiceOver en TalkBack.
+- **[Mini-audit](/webshop-quickscan/)**, € 495. Tot 5 uur handmatige controle als je nog niet
+  weet waar je staat en eerst een beeld wilt.
+
+Weet je het niet zeker, kies dan een [gratis kennismaking van 30 minuten](/contact/). We kijken
+dan samen naar je site en zeggen welk onderzoek past.
+
+{{< /section-full >}}
+
+{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" bg="light" >}}
+
+De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
+aantal pagina's. Alle bedragen zijn exclusief 21% btw.
+
+| Type website | Indicatieprijs |
+| --- | --- |
+| Eenvoudige website, informatief, weinig interactie | circa € 2.250 |
+| Gemiddelde website, formulieren, enige interactie | circa € 3.150 |
+| Gemiddeld-complexe website, webshop, inlog, filters | circa € 4.200 |
+| Complexe website, maatwerkapplicatie, veel interactie | circa € 5.100 |
+
+De meeste websites vallen in de categorie gemiddeld. Na een kennismaking krijg je een vaste
+prijs, geen nacalculatie.
+
+Twee dingen bieden we er altijd bij aan, allebei optioneel. Een
+[hercontrole](/hercontrole/) van € 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost,
+en dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring. Een nabespreking
+van € 250 per uur betekent dat we het rapport samen doorlopen en helpen prioriteren.
+
+Meer over de opbouw lees je in het artikel
+[wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
+
+{{< /section-full >}}
+
+{{< section-full title="Waarom een onafhankelijk bureau?" >}}
+
+Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk, en we
+hebben geen belang bij een uitkomst. Dat is de reden dat opdrachtgevers als het Rijksmuseum,
+NRC, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar ons inschakelen
+naast hun eigen bouwer.
+
+Sinds 2019 deden we 900 audits, 236 opdrachten voor 63 opdrachtgevers. 40% komt terug voor een
+tweede opdracht. Peildatum 7 augustus 2026.
+
+Wil je dat we tijdens het oplossen meedenken, dan kan dat met een
+[strippenkaart](/strippenkaart/) van € 100 per uur. Je koopt losse uren waarin we alternatieven
+bekijken, code reviewen of tussentijds testen.
+
+{{< /section-full >}}
