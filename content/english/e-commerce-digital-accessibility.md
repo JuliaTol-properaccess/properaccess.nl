@@ -92,5 +92,5 @@ faqs:
   - question: "How long until my webshop is accessible?"
     answer: "A mini audit gives you results within a week. A full audit takes three to five weeks. Implementation depends on your development capacity — we're happy to help you plan realistically."
   - question: "What does an audit cost?"
-    answer: "It depends on the size and complexity of your webshop. An audit starts from approximately €2,100 (excl. VAT) for a simple shop and can rise to around €4,500 for a complex international webshop. We always give you a clear indication up front."
+    answer: "It depends on the size and complexity of your webshop. An audit starts from approximately €2,895 (excl. VAT) for a simple shop and can rise to around €5,100 for a complex international webshop. We always give you a clear indication up front."
 ---

@@ -66,7 +66,7 @@ Uit onze ervaring met webshop-audits zien we steeds dezelfde issues:
 
 ## Hoeveel kost het om aan de wet te voldoen?
 
-Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf circa € 2.100. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
+Dat hangt af van de staat van je webshop. Een audit kost bij ons vanaf circa € 2.895. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
 
 Het goede nieuws: de meeste webshops hebben dezelfde soort issues, en die zijn vaak in een paar sprints op te lossen.
 

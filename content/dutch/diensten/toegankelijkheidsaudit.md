@@ -68,7 +68,7 @@ faqs:
   - question: "Wat krijgen we precies?"
     answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen. Wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.100 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
+    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.250 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
     answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
