@@ -59,5 +59,87 @@ faqs:
     answer: "Ja. Of je app nu native, hybride (React Native, Flutter) of een webview-wrapper is: wij testen het eindresultaat op het apparaat. Het maakt voor de gebruiker niet uit hoe de app gebouwd is, het maakt uit of die werkt."
   - question: "Wat kost een app-audit?"
     answer: "Een app-audit kost **€ 2.150 per platform** (excl. 21% BTW). Test je je app op zowel iOS als Android, dan reken je twee platformen."
+  - question: "Welke partij kan de toegankelijkheid van een mobiele app onderzoeken?"
+    answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum, Museumkaart en Eteck."
 ---
 
+{{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
+
+Een toegankelijkheidsonderzoek van een app is een handmatige toets van je iOS- of Android-app op
+echte toestellen, met de schermlezer die het besturingssysteem zelf meelevert: VoiceOver op iOS
+en TalkBack op Android.
+
+De maatstaf is EN 301 549, de Europese norm. Die neemt de succescriteria van WCAG 2.1 over en
+vertaalt ze naar wat een app is: geen pagina's maar schermen, geen muis maar gebaren, geen
+browserinstellingen maar systeeminstellingen. Daar komen eisen bij die op het web niet bestaan,
+bijvoorbeeld dat je app moet meebewegen met de tekstgrootte die de gebruiker in zijn
+telefooninstellingen heeft gezet, en dat je scherm in beide oriëntaties moet werken.
+
+We testen op recente iPhones, iPads en Android-toestellen, niet in een emulator. Een simulator
+bootst het scherm na, maar niet het gedrag van de schermlezer, de touch-doelgroottes of de
+manier waarop het systeem met verminderde beweging omgaat. Precies daar zitten de bevindingen.
+
+De broncode hoeft niet gedeeld te worden. We gebruiken de app zoals een gebruiker dat doet, via
+TestFlight of de App Store bij iOS en via een APK of de Play Store bij Android.
+
+{{< /section-full >}}
+
+{{< section-cards columns="2" bg="light" title="Wat we in een app toetsen" subtitle="Een app valt op andere dingen om dan een website. Dit zijn de vier onderdelen waar we in elke app-audit de meeste bevindingen noteren." >}}
+{{< section-card title="Schermlezer en labels" >}}
+
+Knoppen die als "knop" worden voorgelezen zonder te zeggen wat ze doen, iconen zonder
+toegankelijke naam, en decoratieve afbeeldingen die de schermlezer wel oppikt. We controleren ook
+de voorleesvolgorde: die volgt in code vaak de opbouw van de view, niet wat de gebruiker ziet.
+
+{{< /section-card >}}
+{{< section-card title="Gebaren en touch" >}}
+
+Handelingen die alleen met een swipe of een lange druk werken en waarvoor geen alternatief
+bestaat, en aanraakvlakken die te klein zijn om betrouwbaar te raken. Voor iemand met een
+motorische beperking of tremor is dat het verschil tussen wel en niet kunnen bestellen.
+
+{{< /section-card >}}
+{{< section-card title="Tekstgrootte en zoom" >}}
+
+Wat er gebeurt als de gebruiker in de systeeminstellingen een grotere letter kiest. Vaste
+schermhoogtes, tekst die achter een knop verdwijnt en labels die worden afgekapt zijn de meest
+voorkomende bevinding op dit punt, en tegelijk de makkelijkste om te voorkomen.
+
+{{< /section-card >}}
+{{< section-card title="Formulieren en processen" >}}
+
+Inloggen, een account aanmaken, een kaartje kopen, een betaling afronden. We doorlopen die
+routes helemaal, met alleen de schermlezer, en kijken of foutmeldingen worden aangekondigd en of
+je na een fout terug kunt naar het veld dat niet klopte.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Wat een app-audit kost en oplevert" id="prijs" >}}
+
+Een app-audit kost € 2.150 per platform, exclusief 21% btw. Staat je app in beide winkels, dan
+reken je twee platforms.
+
+Dat is geen dubbel werk om er dubbel voor te rekenen. iOS-apps en Android-apps zijn in
+verschillende talen geschreven, VoiceOver en TalkBack gedragen zich anders, en zelfs bij een
+hybride app in React Native of Flutter rendert elk platform zijn eigen componenten. Wat op de
+één klopt, kan op de ander een bevinding zijn. Je krijgt daarom ook een apart rapport per
+platform, met een aparte steekproef aan schermen.
+
+Voor de apps van het Rijksmuseum leverde dat 83 bevindingen op, verdeeld over twee apps. Andere
+apps die we onderzochten zijn die van Museumkaart en Eteck.
+
+Een onderzoek duurt 3 tot 5 weken. We stemmen de planning af op je release-cyclus, want een
+rapport dat aankomt op de dag van een grote release is voor niemand handig.
+
+Je krijgt een rapport per element, niet per succescriterium. Elke bevinding begint met een user
+story vanuit een gebruiker met een beperking, met daarbij een screenshot van het scherm, welke
+hulpsoftware we gebruikten en op welk toestel, en een concrete oplossingsrichting. Daarnaast
+een CSV met alle bevindingen, zodat je ze rechtstreeks in je backlog kunt inlezen.
+
+Heb je naast een app ook een website, dan is een
+[toegankelijkheidsonderzoek van de website](/toegankelijkheidsaudit/) een apart onderzoek met een
+eigen rapport. Dat is ook wat het Register van Toegankelijkheidsverklaringen en de EAA
+verwachten: per kanaal een eigen onderbouwing.
+
+{{< /section-full >}}
