@@ -47,8 +47,8 @@ In de praktijk hebben de meeste websites dezelfde problemen:
 
 ## WCAG 2.1 of 2.2?
 
-De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 is backwards compatible: alles uit 2.1 zit er nog in. De Europese wetgeving (EAA) verwijst naar de EN 301 549-norm, die inmiddels is bijgewerkt naar WCAG 2.2.
+De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 is backwards compatible: alles uit 2.1 zit er nog in. De Europese wetgeving verwijst naar de EN 301 549-norm, en die staat op dit moment op WCAG 2.1 niveau AA. Dat is dus de versie waar je aan moet voldoen.
 
-Ons advies: audit direct op WCAG 2.2. Dan voldoe je niet alleen aan de wet, maar ben je ook toekomstbestendig.
+Ons advies: laat toch op WCAG 2.2 toetsen. Je voldoet daarmee sowieso aan de geldende norm, je hebt de negen extra criteria alvast in beeld, en je hoeft niet opnieuw te beginnen zodra EN 301 549 wordt bijgewerkt. Wij toetsen daarom standaard aan 2.2.
 
 Wil je weten hoe jouw website scoort op WCAG? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Je weet binnen een paar dagen waar je staat.
