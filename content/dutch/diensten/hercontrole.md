@@ -3,6 +3,7 @@ title: "Hercontrole"
 hide_cta: true
 meta_title: "Hercontrole WCAG: bewijs dat de bevindingen zijn opgelost | Proper Access"
 layout: "agency"
+weight: 6
 date: 2026-05-30
 slug: "hercontrole"
 url: "/hercontrole/"
@@ -13,7 +14,6 @@ keywords:
   - retest audit
   - status A toegankelijkheidsverklaring
   - wcag heronderzoek
-hide_from_overview: true
 
 banner:
   title: "Hercontrole"

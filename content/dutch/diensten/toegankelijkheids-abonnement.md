@@ -3,7 +3,7 @@ title: "Toegankelijkheids-abonnement"
 hide_cta: true
 meta_title: "Toegankelijkheidsabonnement: doorlopend WCAG-partnerschap | Proper Access"
 layout: "agency"
-weight: 7
+weight: 9
 date: 2026-02-28
 slug: "toegankelijkheids-abonnement"
 url: "/toegankelijkheids-abonnement/"

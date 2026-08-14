@@ -86,7 +86,14 @@
   {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
   {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{/* x-default moet binnen een vertaalcluster op elke variant dezelfde URL aanwijzen.
+       Met .Permalink wees hij naar de pagina zelf, dus de NL-versie zei "x-default is NL"
+       en de EN-versie "x-default is EN". Nederlands is de hoofdtaal, dus die wint. */}}
+  {{ $default := . }}
+  {{ range .AllTranslations }}
+    {{ if eq .Lang "nl" }}{{ $default = . }}{{ end }}
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ $default.Permalink }}" />
 {{ end }}
 
 

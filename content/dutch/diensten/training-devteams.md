@@ -2,7 +2,7 @@
 title: "Training voor devteams"
 hide_cta: true
 meta_title: "WCAG-training voor developers: praktisch en hands-on | Proper Access"
-weight: 5
+weight: 11
 date: 2024-12-05
 slug: "training-devteams"
 url: "/training-devteams/"

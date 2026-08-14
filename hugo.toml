@@ -10,6 +10,14 @@ timeZone = "Europe/Amsterdam"
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
 
+# Haal lastmod uit de git-historie in plaats van uit de publicatiedatum. Zonder dit
+# blijft lastmod (en dus dateModified in de JSON-LD en de sitemap) gelijk aan de
+# datum waarop de pagina is aangemaakt, ook nadat de tekst is herschreven. AI-search
+# en zoekmachines zien een herschreven pagina dan als ongewijzigd, en de IndexNow-stap
+# in .github/workflows/main.yml leunt op deze datum om te bepalen wat er is gewijzigd.
+# Vereist fetch-depth: 0 bij de checkout, dat staat al in de workflow.
+enableGitInfo = true
+
 defaultContentLanguage = "nl"
 defaultContentLanguageInSubdir = false
 

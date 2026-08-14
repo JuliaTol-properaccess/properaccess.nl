@@ -3,6 +3,7 @@ title: "Techniek- of systeemaudit"
 hide_cta: true
 meta_title: "Techniek- of systeemaudit: voor softwareleveranciers en productteams | Proper Access"
 layout: "agency"
+weight: 5
 date: 2026-05-30
 slug: "techniekaudit"
 url: "/techniekaudit/"
@@ -14,7 +15,6 @@ keywords:
   - systeemaudit toegankelijkheid
   - wcag voor softwareleveranciers
   - deelonderzoek techniek
-hide_from_overview: true
 
 service:
   serviceType: "Techniek- en systeemaudit volgens WCAG 2.2"

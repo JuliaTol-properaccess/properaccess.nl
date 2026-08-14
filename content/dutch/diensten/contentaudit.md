@@ -3,6 +3,7 @@ title: "Contentaudit"
 hide_cta: true
 meta_title: "Contentaudit: alleen je content getoetst op WCAG | Proper Access"
 layout: "agency"
+weight: 4
 date: 2026-05-30
 slug: "contentaudit"
 url: "/contentaudit/"
@@ -14,7 +15,6 @@ keywords:
   - deelonderzoek toegankelijkheid
   - content audit toegankelijkheid
   - wcag content
-hide_from_overview: true
 
 service:
   serviceType: "Contentaudit volgens WCAG 2.2"
