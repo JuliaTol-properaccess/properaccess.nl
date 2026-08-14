@@ -45,4 +45,91 @@ faqs:
     answer: "Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de inhoud, niet via een account manager."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
+  - question: "Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?"
+    answer: "Proper Access doet dat. We toetsen websites, ticketingsystemen, evenementenkalenders, digitale collecties en apps van culturele instellingen volgens WCAG-EM, de evaluatiemethode van het W3C, aan WCAG 2.2 niveau AA. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde."
 ---
+
+{{< section-full title="Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?" id="wie-doet-het-onderzoek" >}}
+
+Proper Access doet dat. We toetsen de website, het ticketingsysteem, de evenementenkalender, de
+digitale collectie en de app van culturele instellingen, handmatig aan WCAG 2.2 niveau AA en
+volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het onderzoek uit,
+een tweede auditor doet de interne review.
+
+In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de
+Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde. Sinds 2019 deden we 950+ audits,
+236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
+7 augustus 2026.
+
+We bouwen en beheren zelf geen websites. Er is dus geen situatie waarin we ons eigen werk
+beoordelen. Voor een instelling die het rapport gebruikt richting een subsidieverlener of een
+gemeente maakt dat het verschil tussen een document en bewijs.
+
+{{< /section-full >}}
+
+{{< section-cards columns="2" bg="light" title="Wat we in de culturele sector toetsen" subtitle="Het bezoekerspad loopt van de programmapagina tot het kaartje op de telefoon bij de ingang. We toetsen die hele route, niet alleen de homepage." >}}
+{{< section-card title="Ticketing en reservering" >}}
+
+Het onderdeel waar het vaakst iets misgaat, en meestal precies op het moment dat het geld kost.
+Een datumkiezer die alleen met de muis werkt, een zaalplattegrond zonder tekstalternatief,
+stoelen die je zonder muis niet kunt selecteren, en een tijdslot dat verloopt zonder
+waarschuwing. Draait je ticketing bij een externe leverancier, dan toetsen we die gewoon mee.
+
+{{< /section-card >}}
+{{< section-card title="Programma en evenementenkalender" >}}
+
+Kalenders die als tabel zijn gebouwd terwijl ze als filter werken, datums die een schermlezer
+als losse cijfers voorleest, en filters op genre of periode waarbij niet wordt aangekondigd
+hoeveel voorstellingen er overblijven.
+
+{{< /section-card >}}
+{{< section-card title="Collectie, beeld en video" >}}
+
+Alt-teksten bij objecten uit de collectie, ondertiteling en audiodescriptie bij video's, en de
+mediaspeler zelf. Bij een digitale collectie kijken we ook of het zoeken en filteren zonder
+muis werkt, want daar zit vaak jarenlang opgebouwd maatwerk in.
+
+{{< /section-card >}}
+{{< section-card title="App en audiotour" >}}
+
+Een museum-app toetsen we handmatig op echte toestellen, met VoiceOver op iOS en TalkBack op
+Android. Voor de Rijksmuseum-apps leverde dat 83 bevindingen op, verdeeld over twee platforms.
+Een audiotour die je zonder hulp van een ziende bezoeker niet kunt starten, sluit precies de
+mensen uit voor wie hij bedoeld is.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Welke regels gelden voor musea, theaters en attracties?" id="welke-regels" >}}
+
+Dat hangt af van wat je doet en wie je bent, en in de praktijk gelden er vaak twee dingen
+tegelijk.
+
+Verkoop je online kaartjes, abonnementen of een museumjaarkaart, dan valt die verkoop sinds
+28 juni 2025 onder de European Accessibility Act. Dat is de wet die geldt voor e-commerce, en
+online ticketverkoop is e-commerce. De norm eronder is EN 301 549, die de 55 succescriteria van
+WCAG 2.2 niveau AA overneemt.
+
+Ben je daarnaast een overheidsinstelling of een publiekrechtelijke organisatie, bijvoorbeeld een
+gemeentelijk museum of een archief, dan geldt ook het Besluit digitale toegankelijkheid overheid
+en heb je een toegankelijkheidsverklaring nodig in het Register van
+Toegankelijkheidsverklaringen. Voor status A in dat register telt alleen onderzoek volgens
+WCAG-EM. Twijfel je of je daaronder valt, dan kijken we in de kennismaking met je mee.
+
+Los van beide wetten vragen steeds meer subsidieverleners en fondsen om een
+toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij is daarvoor
+bruikbaar; een scanresultaat uit een gratis tool niet.
+
+De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
+aantal pagina's. Een onderzoek begint bij circa € 2.250 voor een informatieve site en loopt op
+tot circa € 5.100 als er ticketing, een collectie en een inlog in zitten. Een app-onderzoek
+rekenen we per platform. Alle bedragen zijn exclusief 21% btw, en na een kennismaking krijg je
+een vaste prijs.
+
+Wil je eerst weten waar je staat, dan is een
+[mini-audit](/quickscan-digitale-toegankelijkheid/) van € 495 het startpunt. Ligt de techniek
+bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan is een
+[contentaudit](/contentaudit/) vaak de verstandigere keuze: je rapport staat dan niet vol met
+bevindingen waar je zelf niets aan kunt doen.
+
+{{< /section-full >}}
