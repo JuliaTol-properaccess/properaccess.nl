@@ -102,19 +102,24 @@ mensen uit voor wie hij bedoeld is.
 
 {{< section-full title="Welke regels gelden voor musea, theaters en attracties?" id="welke-regels" >}}
 
-Dat hangt af van wat je doet en wie je bent, en in de praktijk gelden er vaak twee dingen
-tegelijk.
+Dat hangt niet af van wat je verkoopt, maar van wat je instelling is. Het is de ene wet of de
+andere, en welke van de twee moet je per instelling bekijken.
 
-Verkoop je online kaartjes, abonnementen of een museumjaarkaart, dan valt die verkoop sinds
-28 juni 2025 onder de European Accessibility Act. Dat is de wet die geldt voor e-commerce, en
-online ticketverkoop is e-commerce. De norm eronder is EN 301 549; de geldende norm is op dit
-moment WCAG 2.1 niveau AA. Wij toetsen aan WCAG 2.2 als extra service.
+Krijg je overheidsfinanciering, dan val je onder het **Besluit digitale toegankelijkheid
+overheid**. Je hebt dan een toegankelijkheidsverklaring nodig in het
+[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register),
+en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd.
 
-Ben je daarnaast een overheidsinstelling of een publiekrechtelijke organisatie, bijvoorbeeld een
-gemeentelijk museum of een archief, dan geldt ook het Besluit digitale toegankelijkheid overheid
-en heb je een toegankelijkheidsverklaring nodig in het Register van
-Toegankelijkheidsverklaringen. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is
-uitgevoerd. Twijfel je of je daaronder valt, dan kijken we in de kennismaking met je mee.
+Ben je een commercieel bedrijf, dan val je onder de **European Accessibility Act**, die sinds
+28 juni 2025 geldt.
+
+De norm eronder is in beide gevallen EN 301 549. De geldende norm is op dit moment WCAG 2.1
+niveau AA. Wij toetsen aan WCAG 2.2 als extra service. De eisen aan je website verschillen dus
+niet tussen de twee wetten; wat verschilt is hoe je erover verantwoording aflegt.
+
+In de culturele sector loopt die grens niet altijd waar je hem verwacht. Twee musea die er van
+buiten hetzelfde uitzien, kunnen onder verschillende wetten vallen. In de kennismaking kijken we
+met je mee welke van de twee het bij jou is.
 
 Los van beide wetten vragen steeds meer subsidieverleners en fondsen om een
 toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij is daarvoor
