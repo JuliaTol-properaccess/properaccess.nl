@@ -63,8 +63,8 @@ faqs:
 {{< section-full title="Waarom een agency een onafhankelijk bureau inschakelt" id="waarom-onafhankelijk" >}}
 
 Je kunt je eigen werk niet keuren. Dat is geen verwijt aan de kwaliteit van een developmentteam,
-het is hoe toezicht werkt. Voor status A in het Register van Toegankelijkheidsverklaringen eist
-de overheid onderzoek door een partij die het kanaal niet zelf heeft gebouwd of beheert. Onder
+het is hoe toezicht werkt. Voor het Register van Toegankelijkheidsverklaringen eist de overheid
+onderzoek door een partij die het kanaal niet zelf heeft gebouwd of beheert. Onder
 de European Accessibility Act geldt hetzelfde principe: een verklaring van de bouwer weegt
 minder dan een rapport van iemand die er geen belang bij heeft.
 

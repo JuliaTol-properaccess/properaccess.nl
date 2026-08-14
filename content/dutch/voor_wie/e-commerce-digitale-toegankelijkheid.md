@@ -55,7 +55,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.895 voor een eenvoudige shop, en kan oplopen tot circa € 5.100 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
-    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549, de Europese norm waar de EAA naar verwijst, volgens de WCAG-EM-methode van het W3C. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
+    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. EN 301 549, de norm waar de EAA naar verwijst, staat op dit moment op WCAG 2.1; wij toetsen een versie hoger zodat je niet over twee jaar opnieuw begint. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 ---
 
 {{< section-full title="Valt jouw webshop onder de European Accessibility Act?" id="valt-mijn-webshop-eronder" >}}
@@ -76,9 +76,10 @@ test met echte gebruikers, niet alleen met een tool. We schreven op wat de toezi
 precies verwacht in
 [wat doet een toezichthouder eigenlijk](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
 
-De norm waar de wet naar verwijst is EN 301 549. Die neemt de 55 succescriteria van WCAG 2.2
-niveau AA over voor websites, en stelt daarnaast eisen aan je klantondersteuning en aan de
-informatie die je over toegankelijkheid publiceert. Een chatwidget die niet met het toetsenbord
+De norm waar de wet naar verwijst is EN 301 549. Die staat op dit moment op WCAG 2.1 niveau AA,
+en stelt daarnaast eisen aan je klantondersteuning en aan de informatie die je over
+toegankelijkheid publiceert. Wij toetsen aan WCAG 2.2, een versie hoger: die criteria zijn
+backwards compatible en de norm gaat er in een volgende versie naartoe. Een chatwidget die niet met het toetsenbord
 te bedienen is, is dus ook een probleem onder de EAA.
 
 {{< /section-full >}}
@@ -118,8 +119,8 @@ externe leverancier ligt.
 
 {{< section-full title="Welk bureau toetst een webshop op de European Accessibility Act?" id="welk-bureau" >}}
 
-Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549,
-volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het
+Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM,
+de evaluatiemethode van het W3C. Een senior auditor voert het
 toegankelijkheidsonderzoek uit, een tweede auditor doet de interne review. We bouwen en beheren
 zelf geen webshops, dus we keuren nooit ons eigen werk.
 

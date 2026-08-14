@@ -57,7 +57,7 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen, onbeperkt en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
-    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen vereist voor status A. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland, de Sociale Verzekeringsbank en de gemeenten Amersfoort, Alkmaar, 's-Hertogenbosch en Terneuzen."
+    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland, de Sociale Verzekeringsbank en de gemeenten Amersfoort, Alkmaar, 's-Hertogenbosch en Terneuzen."
 ---
 
 {{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
@@ -104,7 +104,7 @@ Een onafhankelijk toegankelijkheidsonderzoek is een handmatige toets aan WCAG 2.
 AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Voor het
 Register telt alleen een onderzoek volgens
 [WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/), de evaluatiemethode van het W3C.
-Zonder WCAG-EM krijg je geen status A.
+Onderzoek dat er niet volgens is uitgevoerd, accepteert het Register niet.
 
 Voor documenten, video's en PDF's die je redactie zelf beheert, kan een
 [contentaudit](/contentaudit/) genoeg zijn. Ligt de techniek bij een externe leverancier, dan

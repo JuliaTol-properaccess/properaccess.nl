@@ -107,14 +107,14 @@ tegelijk.
 
 Verkoop je online kaartjes, abonnementen of een museumjaarkaart, dan valt die verkoop sinds
 28 juni 2025 onder de European Accessibility Act. Dat is de wet die geldt voor e-commerce, en
-online ticketverkoop is e-commerce. De norm eronder is EN 301 549, die de 55 succescriteria van
-WCAG 2.2 niveau AA overneemt.
+online ticketverkoop is e-commerce. De norm eronder is EN 301 549, die op dit moment verwijst
+naar WCAG 2.1 niveau AA. Wij toetsen aan WCAG 2.2, omdat die criteria er toch aankomen.
 
 Ben je daarnaast een overheidsinstelling of een publiekrechtelijke organisatie, bijvoorbeeld een
 gemeentelijk museum of een archief, dan geldt ook het Besluit digitale toegankelijkheid overheid
 en heb je een toegankelijkheidsverklaring nodig in het Register van
-Toegankelijkheidsverklaringen. Voor status A in dat register telt alleen onderzoek volgens
-WCAG-EM. Twijfel je of je daaronder valt, dan kijken we in de kennismaking met je mee.
+Toegankelijkheidsverklaringen. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is
+uitgevoerd. Twijfel je of je daaronder valt, dan kijken we in de kennismaking met je mee.
 
 Los van beide wetten vragen steeds meer subsidieverleners en fondsen om een
 toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij is daarvoor

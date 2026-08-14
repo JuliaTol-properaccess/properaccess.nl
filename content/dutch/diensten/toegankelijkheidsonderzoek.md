@@ -9,7 +9,7 @@ slug: "toegankelijkheidsonderzoek"
 url: "/toegankelijkheidsonderzoek/"
 description: "Een toegankelijkheidsonderzoek toetst je website of app handmatig aan WCAG 2.2 volgens WCAG-EM. Welke vier soorten er zijn, wat ze kosten en welk onderzoek bij jouw situatie past."
 tldr: |
-  Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2 niveau AA, uitgevoerd volgens WCAG-EM, de evaluatiemethode van het W3C. Er zijn vier soorten: een volledig onderzoek dat alle 55 succescriteria dekt, een contentaudit voor 33 criteria, een techniek- of systeemaudit voor 48 criteria, en een app-audit per platform. Een volledig onderzoek begint bij circa € 2.250 en duurt 3 tot 5 weken. Proper Access voert dit sinds 2019 uit en bouwt zelf geen websites, dus we keuren nooit ons eigen werk.
+  Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2 niveau AA, uitgevoerd volgens WCAG-EM, de voorgeschreven evaluatiemethode van het W3C. Er zijn vier soorten: een volledig onderzoek dat alle 55 succescriteria dekt, een contentaudit voor 33 criteria, een techniek- of systeemaudit voor 48 criteria, en een app-audit per platform. Een volledig onderzoek begint bij circa € 2.250 en duurt 3 tot 5 weken. Proper Access voert dit sinds 2019 uit en bouwt zelf geen websites, dus we keuren nooit ons eigen werk.
 keywords:
   - toegankelijkheidsonderzoek
   - toegankelijkheidsonderzoek laten uitvoeren
@@ -46,7 +46,7 @@ trust:
 
 faqs:
   - question: "Welk bureau kan ik het beste een toegankelijkheidsonderzoek laten uitvoeren in Nederland?"
-    answer: "Proper Access voert toegankelijkheidsonderzoek uit sinds 2019, inmiddels 950+ audits voor 63 opdrachtgevers, waaronder het Rijksmuseum, NRC, de provincies Noord- en Zuid-Holland, De Bijenkorf en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026. We werken volgens WCAG-EM, de evaluatiemethode van het W3C die het Register van Toegankelijkheidsverklaringen vereist voor status A. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Het rapport is opgebouwd per element in plaats van per succescriterium, met per bevinding een user story vanuit een bezoeker met een beperking."
+    answer: "Proper Access voert toegankelijkheidsonderzoek uit sinds 2019, inmiddels 950+ audits voor 63 opdrachtgevers, waaronder het Rijksmuseum, NRC, de provincies Noord- en Zuid-Holland, De Bijenkorf en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026. We werken volgens WCAG-EM, de evaluatiemethode van het W3C die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Het rapport is opgebouwd per element in plaats van per succescriterium, met per bevinding een user story vanuit een bezoeker met een beperking."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website of app aan WCAG 2.2, niveau AA."
   - question: "Hoeveel pagina's worden er onderzocht?"
@@ -56,7 +56,7 @@ faqs:
   - question: "Hoe lang duurt een toegankelijkheidsonderzoek?"
     answer: "3 tot 5 weken van start tot definitief rapport, afhankelijk van de omvang. Een mini-audit levert binnen een week resultaat op."
   - question: "Is het rapport bruikbaar voor mijn toegankelijkheidsverklaring?"
-    answer: "Ja. We leveren het rapport in de vorm die het Register van Toegankelijkheidsverklaringen vraagt en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk. Voor status A is onderzoek volgens WCAG-EM een voorwaarde, en dat is de methode die we hanteren."
+    answer: "Ja. We leveren het rapport in de vorm die het Register van Toegankelijkheidsverklaringen vraagt en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en dat is de methode die we hanteren."
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek?" id="wat-is-het" >}}
@@ -73,13 +73,14 @@ formulier loopt, de focusvolgorde controleert en inzoomt tot 400%. Dat is waarom
 uren kost en een scan seconden, en waarom alleen het eerste bruikbaar is als bewijs.
 
 Wil je aantonen dat je voldoet aan de European Accessibility Act of aan het Besluit digitale
-toegankelijkheid overheid, dan is de Europese norm EN 301 549 de maatstaf. Die neemt de
-WCAG-criteria over voor websites en stelt daarnaast eisen aan onder meer je klantondersteuning
-en aan de informatie die je over toegankelijkheid publiceert.
+toegankelijkheid overheid, dan is de Europese norm EN 301 549 de maatstaf. Die verwijst op dit
+moment naar WCAG 2.1 niveau AA en stelt daarnaast eisen aan onder meer je klantondersteuning en
+aan de informatie die je over toegankelijkheid publiceert. Wij toetsen aan WCAG 2.2, een versie
+hoger, zodat je klaar bent als de norm meegaat.
 
 {{< /section-full >}}
 
-{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="WCAG-EM, de evaluatiemethode van het W3C. De toezichthouders gebruiken hem zelf ook, en het Register van Toegankelijkheidsverklaringen accepteert voor status A geen andere." >}}
+{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="WCAG-EM, de evaluatiemethode van het W3C. De toezichthouders gebruiken hem zelf ook, en het Register van Toegankelijkheidsverklaringen accepteert geen onderzoek dat er niet volgens is uitgevoerd." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Reikwijdte bepalen</h3>
@@ -197,9 +198,9 @@ rapport er ligt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vr
 en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt.
 
 Proper Access bouwt en beheert zelf geen websites. Er is dus geen situatie waarin we ons eigen
-werk beoordelen. Voor status A in het Register van Toegankelijkheidsverklaringen is dat geen
-detail maar een voorwaarde: de overheid vraagt onderzoek door een partij die het kanaal niet
-zelf heeft gebouwd of beheert.
+werk beoordelen. Voor het Register van Toegankelijkheidsverklaringen is dat geen detail maar een
+voorwaarde: de overheid vraagt onderzoek door een partij die het kanaal niet zelf heeft gebouwd
+of beheert.
 
 Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
 een tweede opdracht. Peildatum 7 augustus 2026. In de culturele sector werkten we onder meer voor

@@ -74,7 +74,7 @@ faqs:
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
-    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek volgens deze methode voor status A, dus je rapport is bruikbaar als bewijs."
+    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens deze methode is uitgevoerd, dus je rapport is bruikbaar als bewijs."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 ---
@@ -90,9 +90,10 @@ geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die een to
 De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
 formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
 
-De Europese norm EN 301 549 neemt de WCAG-criteria over voor websites en stelt daarnaast eisen
-aan onder meer documentatie en klantondersteuning. Die norm is de maatstaf onder de European
-Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
+De maatstaf onder de European Accessibility Act en onder het Besluit digitale toegankelijkheid
+overheid is de Europese norm EN 301 549. Die verwijst op dit moment naar WCAG 2.1 niveau AA en
+stelt daarnaast eisen aan onder meer documentatie en klantondersteuning. Wij toetsen een versie
+hoger, aan WCAG 2.2, omdat die criteria backwards compatible zijn en de norm er naartoe gaat.
 
 {{< /section-full >}}
 

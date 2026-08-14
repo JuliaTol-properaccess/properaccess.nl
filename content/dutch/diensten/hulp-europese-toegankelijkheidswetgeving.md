@@ -9,7 +9,7 @@ slug: "hulp-europese-toegankelijkheidswetgeving"
 url: "/hulp-bij-europese-toegankelijkheidswetgeving/"
 description: "Welke Europese toegankelijkheidswetgeving geldt voor jou, wat voldoen in de praktijk vraagt, en waar je hulp krijgt bij elke stap. Voor webshops, overheidsorganisaties en softwareleveranciers."
 tldr: |
-  Er zijn twee wetten die er in Nederland toe doen: de European Accessibility Act voor bedrijven die digitale diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Allebei verwijzen ze naar dezelfde norm, EN 301 549, die de succescriteria van WCAG 2.2 niveau AA overneemt. Voldoen vraagt vier stappen: onderzoek, herstel, hercontrole en verantwoording. Proper Access begeleidt alle vier, sinds 2019 en voor 63 opdrachtgevers.
+  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers.
 keywords:
   - Europese toegankelijkheidswetgeving
   - hulp European Accessibility Act
@@ -42,7 +42,7 @@ trust:
 
 faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
-    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM aan WCAG 2.2 niveau AA en aan EN 301 549, de norm waar zowel de European Accessibility Act als het Besluit digitale toegankelijkheid overheid naar verwijst. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de bevindingen weg zijn, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
+    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2 niveau AA, een niveau hoger dan EN 301 549 op dit moment vraagt, zodat je niet over twee jaar opnieuw begint. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de problemen zijn opgelost, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
   - question: "Vanaf wanneer geldt de European Accessibility Act?"
     answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen euro omzet, dan geldt de plicht niet."
   - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
@@ -66,36 +66,38 @@ bedrijf, terwijl er technisch niets verschilt.
 | European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Autoriteit Consument en Markt |
 | Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2020 voor websites, 2021 voor apps | Verantwoording via het Register van Toegankelijkheidsverklaringen |
 
-Beide wijzen naar dezelfde norm: **EN 301 549**. Die neemt de 55 succescriteria van WCAG 2.2
-niveau AA over voor websites, en stelt daarnaast eisen aan je klantondersteuning en aan de
-informatie die je zelf over toegankelijkheid publiceert. Dat betekent dat de eisen aan je site
-niet verschillen tussen een gemeente en een webshop. Wat verschilt is hoe je erover verantwoording
-aflegt en wie er meekijkt.
+Beide wijzen naar dezelfde norm: **EN 301 549**. Die verwijst op dit moment naar WCAG 2.1
+niveau AA, en stelt daarnaast eisen aan je klantondersteuning en aan de informatie die je zelf
+over toegankelijkheid publiceert. De eisen aan je site verschillen dus niet tussen een gemeente
+en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt.
 
-Val je onder allebei, dan komt dat vaker voor dan je denkt. Een gemeentelijk theater dat online
-kaartjes verkoopt, een uitvoeringsorganisatie met een webshop: dan geldt het BDTO voor je
-dienstverlening en de EAA voor je verkoop.
+Wij toetsen aan WCAG 2.2, een versie hoger dan de norm nu vraagt. Die criteria zijn backwards
+compatible en de norm gaat er in een volgende versie naartoe, dus je bent er dan al klaar voor
+in plaats van dat je opnieuw begint.
 
 Er is één uitzondering onder de EAA. Verkoop je met minder dan 10 medewerkers en blijf je onder
 de 2 miljoen euro omzet, dan geldt de plicht niet.
 
+Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
+[EAA-monitor](https://eaa-monitor.nl).
+
 {{< /section-full >}}
 
-{{< section-steps id="stappen" title="Wat voldoen in de praktijk vraagt" subtitle="Weten welke wet voor je geldt is het makkelijke deel. Dit zijn de vier stappen die daarna komen, en waar organisaties meestal niet verder komen." >}}
+{{< section-steps id="stappen" title="Van waar je nu staat naar een toegankelijke website" subtitle="De EAA schrijft geen onderzoek voor. Die schrijft voor dat je website of app werkt voor iedereen. Dit is de route daarheen, en die levert je meteen het bewijs op dat het BDTO en een toezichthouder wel vragen." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
-  <h3 class="card__title">Onderzoek</h3>
-  <p>Een handmatige toets volgens WCAG-EM, de methode die de toezichthouders zelf ook gebruiken. Zonder onderzoek weet je niet wat er misgaat, en heb je later niets om je verhaal mee te onderbouwen.</p>
+  <h3 class="card__title">Weten waar je staat</h3>
+  <p>Een handmatig onderzoek volgens WCAG-EM, de methode die de toezichthouders zelf ook gebruiken. Niet omdat de EAA het voorschrijft, maar omdat je zonder onderzoek niet weet wat je moet oplossen.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">2</i>
-  <h3 class="card__title">Herstel</h3>
-  <p>Je developers en je redactie lossen de bevindingen op. Dit is de langste stap en de stap waar de meeste vragen ontstaan, meestal over wat een alternatief mag zijn.</p>
+  <h3 class="card__title">Oplossen</h3>
+  <p>Je developers en je redactie lossen de problemen op. Dit is de langste stap en de stap waar de meeste vragen ontstaan, meestal over wat een alternatief mag zijn.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">3</i>
   <h3 class="card__title">Hercontrole</h3>
-  <p>Iemand legt vast dat de bevindingen werkelijk weg zijn. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing. Precies dat vraagt een toezichthouder wel.</p>
+  <p>Iemand legt vast dat de problemen werkelijk zijn opgelost. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing. Precies dat wil een toezichthouder zien.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">4</i>
@@ -104,69 +106,34 @@ de 2 miljoen euro omzet, dan geldt de plicht niet.
 </div>
 {{< /section-steps >}}
 
-{{< section-cards columns="2" bg="light" title="Waar organisaties in de praktijk niet verder komen" subtitle="Vier situaties die we bij vrijwel elke opdracht tegenkomen, met wat er dan wel werkt." >}}
-{{< section-card title="De leverancier lost het niet op" >}}
-
-Het probleem zit in het platform van je leverancier en die beweegt niet. De ACM bevestigde dat
-je zelf verantwoordelijk blijft, ook dan. Wat wel werkt: de bevinding zo opgeschreven krijgen dat
-je hem kunt doorgeven, met de code en de norm erbij, en tegelijk weten welk alternatief er is
-als de leverancier het niet oppakt.
-
-{{< /section-card >}}
-{{< section-card title="Er is een overlay-tool geïnstalleerd" >}}
-
-Het knopje rechtsonder dat belooft je site in één klap toegankelijk te maken. De ACM was daar
-duidelijk over: die tools verbeteren heel weinig en zorgen er niet voor dat je aan de wet
-voldoet. Wij testten de drie bekendste en kwamen tot dezelfde conclusie.
-
-{{< /section-card >}}
-{{< section-card title="De deadline is al verstreken" >}}
-
-De EAA gold al vanaf 28 juni 2025 en het BDTO al vanaf 2020. Te laat beginnen is geen reden om
-niet te beginnen: een onderzoek met een plan van aanpak eronder laat zien dat je bezig bent, en
-dat is een ander gesprek met een toezichthouder dan helemaal niets kunnen laten zien.
-
-{{< /section-card >}}
-{{< section-card title="Het rapport is verlopen" >}}
-
-Een rapport onder een toegankelijkheidsverklaring vervalt na 36 maanden. Zodra het oudste
-deelonderzoek die leeftijd bereikt, verdwijnt de onderbouwing en zakt je status. In augustus 2026
-analyseerden we het hele Register: van de 9.075 sites heeft 42% geen enkel rapport, en bij 603
-verklaringen met status A of B staat "onderbouwing ontoereikend".
-
-{{< /section-card >}}
-{{< /section-cards >}}
-
 {{< section-full title="Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?" id="wie-helpt" >}}
 
 Proper Access doet dat, en we dekken alle vier de stappen hierboven.
 
-Voor het **onderzoek** toetsen we je website, webshop of app handmatig aan WCAG 2.2 niveau AA en
-aan EN 301 549, volgens WCAG-EM. Welk type onderzoek past hangt af van wat je zelf kunt
-veranderen; die keuze staat uitgelegd op de pagina over
-[toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een volledig onderzoek begint bij
-circa € 2.250 en duurt 3 tot 5 weken.
+Voor het **onderzoek** toetsen we je website, webshop of app handmatig volgens WCAG-EM, de
+methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2 niveau AA.
+Welk type onderzoek past hangt af van wat je zelf kunt veranderen; die keuze staat uitgelegd op
+de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een volledig onderzoek
+begint bij circa € 2.250 en duurt 3 tot 5 weken.
 
-Voor het **herstel** werken we met een [strippenkaart](/strippenkaart/) van € 100 per uur. Je
+Voor de **begeleiding** werken we met een [strippenkaart](/strippenkaart/) van € 100 per uur. Je
 koopt losse uren waarin we alternatieven bekijken, code reviewen of tussentijds testen, zonder
 dat er een traject omheen hoeft. Wil je je eigen team opleiden, dan kan dat met een
 [training voor devteams](/training-devteams/) of een
 [training voor je webredactie](/trainen-van-webredactie/).
 
-Voor de **hercontrole** toetsen we de aangepaste punten opnieuw en leggen we vast dat ze zijn
-opgelost. Dat is een vast bedrag van € 450 tot € 1.000, afhankelijk van de omvang van het
+Voor de **hercontrole** toetsen we de opgeloste problemen opnieuw en leggen we vast dat ze weg
+zijn. Dat is een vast bedrag van € 450 tot € 1.000, afhankelijk van de omvang van het
 oorspronkelijke onderzoek. Meer daarover staat op de pagina over de
 [hercontrole](/hercontrole/).
 
 Voor de **verantwoording** leveren we het rapport in de vorm die het Register van
 Toegankelijkheidsverklaringen vraagt en helpen we bij het invullen in de Mijn-omgeving van
-DigiToegankelijk. Voor status A is onderzoek volgens WCAG-EM een voorwaarde, en dat is de
-methode die we hanteren.
+DigiToegankelijk. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en
+dat is de methode die we hanteren.
 
-Wat ons daarbij een andere positie geeft dan een bureau dat ook bouwt: Proper Access bouwt en
-beheert zelf geen websites. Er is geen situatie waarin we ons eigen werk beoordelen, en geen
-belang bij een gunstige uitkomst. Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63
-opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum 7 augustus 2026.
+Hoe andere organisaties deze route lopen en waar zij tegenaan lopen, kun je meelezen in de
+[EAA-monitor](https://eaa-monitor.nl).
 
 {{< /section-full >}}
 
