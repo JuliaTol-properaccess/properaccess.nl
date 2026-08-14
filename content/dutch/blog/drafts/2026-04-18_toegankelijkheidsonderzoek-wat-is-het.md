@@ -31,8 +31,8 @@ Grofweg drie niveaus:
 | Type                                         | Wat je krijgt                                                     | Prijsindicatie   |
 | -------------------------------------------- | ----------------------------------------------------------------- | ---------------- |
 | **Mini-audit**                               | Globaal beeld van knelpunten op hoofdpagina's                     | 495 euro         |
-| **Deelaudit** (content, techniek of systeem) | Diepgaand onderzoek op één deelgebied                             | Vanaf € 1.500    |
-| **Volledige audit**                          | WCAG-toets op alle succescriteria, representatieve paginaselectie | Vanaf € 2.100    |
+| **Deelaudit** (content, techniek of systeem) | Diepgaand onderzoek op één deelgebied                             | Vanaf € 1.650    |
+| **Volledige audit**                          | WCAG-toets op alle succescriteria, representatieve paginaselectie | Vanaf € 2.250    |
 
 Daaronder zit een soort "nulde niveau": de puur geautomatiseerde scan. Een tool als axe of Lighthouse draait over je pagina's en spuugt een rapport uit. Zo'n scan is geen toegankelijkheidsonderzoek — hij vindt hooguit een derde van de problemen en mist bijna alles wat met context, betekenis of gebruikerservaring te maken heeft. Zelf gebruiken we ze zelden, omdat ze vaak ook valse meldingen geven en je daarmee op het verkeerde spoor zetten.
 

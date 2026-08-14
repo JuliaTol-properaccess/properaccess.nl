@@ -44,5 +44,5 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de inhoud, niet via een account manager."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.100. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
 ---

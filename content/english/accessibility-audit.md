@@ -96,5 +96,5 @@ faqs:
   - question: "What exactly do we get?"
     answer: "A report per page with screenshots and explanations, a CSV file with all findings for project management, code snippets per solution, and a walkthrough in an online session (optional). You can keep asking questions about the report afterwards at no extra cost. If you want us to help while you fix things, we work with a support bundle at €100/hour."
   - question: "What does an audit cost?"
-    answer: "It depends on the size and type of your site. A full audit starts from approximately €2,100 (excl. VAT). During an introductory call we give you a clear indication straight away — no surprises afterwards."
+    answer: "It depends on the size and type of your site. A full audit starts from approximately €2,250 (excl. VAT). During an introductory call we give you a clear indication straight away — no surprises afterwards."
 ---

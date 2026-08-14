@@ -51,7 +51,7 @@ faqs:
   - question: "Hoe lang duurt een audit?"
     answer: "Binnen 3 tot 5 weken na opstart lever je een definitief rapport op. De doorlooptijd hangt af van de omvang van je website of app en het aantal pagina's dat we toetsen."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.100. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wat gebeurt er na de audit?"
     answer: "Je krijgt een presentatie van het rapport aan je team. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen, ook weken of maanden later, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur). We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"

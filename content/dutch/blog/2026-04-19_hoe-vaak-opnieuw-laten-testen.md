@@ -30,7 +30,7 @@ Als vuistregel: laat je website **minimaal één keer per jaar** volledig audite
 Naast de jaarlijkse audit zijn er situaties waarin je eerder moet laten testen:
 
 ### Na het oplossen van auditbevindingen
-Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **retest**: gerichter en goedkoper dan een volledige audit. Bij ons kost een retest van een content-audit € 300; een retest van een techniek-, systeem- of website-audit start vanaf € 600.
+Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **retest**: gerichter en goedkoper dan een volledige audit. Bij ons kost een retest van een content-audit € 350, van een techniekaudit € 550 en van een systeemaudit € 900. Voor een website-audit ligt de retest tussen € 450 en € 1.000, afhankelijk van de omvang van de oorspronkelijke audit.
 
 ### Na een redesign of rebranding
 Een nieuw ontwerp betekent nieuwe componenten, nieuwe kleuren, nieuwe interactiepatronen. Laat testen voordat je live gaat, niet erna.
@@ -79,6 +79,6 @@ Een retest focust op de punten uit de eerdere audit. We controleren of:
 - De oplossingen geen nieuwe problemen hebben geïntroduceerd
 - Er geen regressie is op eerder goedgekeurde onderdelen
 
-Kosten: € 300 voor een content-retest; vanaf € 600 voor een techniek-, systeem- of website-retest, afhankelijk van de omvang.
+Kosten: € 350 voor een content-retest, € 550 voor een techniek-retest, € 900 voor een systeem-retest en € 450 tot € 1.000 voor een website-retest, afhankelijk van de omvang.
 
 Wil je starten met een eerste meting? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan heb je een baseline om vanuit te werken.

@@ -88,7 +88,7 @@ faqs:
   - question: "How long does an audit take?"
     answer: "You receive a final report within three to five weeks of starting. The lead time depends on the size of your website or app and the number of pages we test."
   - question: "What does an audit cost?"
-    answer: "It depends on the size and complexity of your digital channels. An audit starts from approximately €2,100 (excl. VAT). We always give you a clear indication up front."
+    answer: "It depends on the size and complexity of your digital channels. An audit starts from approximately €2,250 (excl. VAT). We always give you a clear indication up front."
   - question: "Who does the work?"
     answer: "You always have direct access to a senior auditor for substantive questions. You work directly with the content, not through an account manager."
 ---

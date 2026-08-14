@@ -26,7 +26,7 @@ In Nederland bieden zo'n 15-20 partijen toegankelijkheidsaudits aan. De prijzen 
 
 ## Waarom zijn sommige audits zo goedkoop?
 
-Een audit onder de € 1.500 is bijna altijd:
+Een volledige audit onder de € 1.500 is bijna altijd:
 - **Alleen geautomatiseerd**: een tool draait over je pagina's, het resultaat wordt in een rapport gegoten
 - **Beperkt in scope**: alleen de homepage of een paar pagina's
 - **Zonder handmatig testen**: geen toetsenbordtest, geen schermlezertest
@@ -44,16 +44,16 @@ Dat betekent niet dat duur slecht is, maar check wat je krijgt voor het geld.
 
 ## Wat is een redelijke prijs?
 
-Voor een volledige, handmatige WCAG-audit van een gemiddelde website (10-20 unieke paginatypes) is een prijs tussen de **€ 2.100 en € 4.500** realistisch bij een specialist.
+Voor een volledige, handmatige WCAG-audit van een gemiddelde website (10-20 unieke paginatypes) is een prijs tussen de **€ 2.250 en € 5.100** realistisch bij een specialist.
 
 Bij ons:
 
 | Type                         | Prijs         |
 | ---------------------------- | ------------- |
-| Eenvoudige website           | € 2.100       |
-| Gemiddelde website           | € 2.850       |
-| Gemiddeld-complexe website   | € 3.600       |
-| Complexe website             | € 4.500       |
+| Eenvoudige website           | € 2.250       |
+| Gemiddelde website           | € 3.150       |
+| Gemiddeld-complexe website   | € 4.200       |
+| Complexe website             | € 5.100       |
 
 ## Waar betaal je eigenlijk voor?
 
@@ -67,8 +67,8 @@ Een audit is meer dan "even je website checken". Dit is wat erbij komt kijken:
 6. **Review**: het rapport controleren op consistentie en volledigheid
 
 Bij ons komt daar optioneel bij:
-- **Nabespreking** (€ 150/uur): het rapport samen doorlopen met je team
-- **Retest** (€ 300 voor content, vanaf € 600 voor techniek/website): controleren of de fixes werken
+- **Nabespreking** (€ 250/uur, een half uur € 125): het rapport samen doorlopen met je team
+- **Retest** (€ 350 voor content, € 450 tot € 1.000 voor een website): controleren of de fixes werken
 
 ## Hoe vergelijk je aanbieders?
 
