@@ -52,7 +52,7 @@ faqs:
   - question: "Moeten we de broncode delen?"
     answer: "Nee, dat hoeft niet. Wij testen de app zoals een gebruiker die ervaart: via de App Store of TestFlight (iOS) en de Play Store of een APK (Android). Als je wilt dat we ook de code reviewen, kan dat als aanvulling."
   - question: "Zijn mobiele apps ook verplicht toegankelijk?"
-    answer: "Ja. De **European Accessibility Act** (EAA) geldt sinds juni 2025 en dekt ook mobiele apps van bedrijven die digitale diensten aanbieden, zoals bankieren, reizen boeken, ticketing en e-commerce. Overheidsapps moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
+    answer: "Ja. De **European Accessibility Act** (EAA) geldt sinds juni 2025 en dekt ook mobiele apps van bedrijven die digitale diensten aanbieden, zoals bankieren, reizen boeken, ticketing en e-commerce. Overheidsapps vallen onder het Besluit digitale toegankelijkheid overheid (BDTO) en hebben een eigen toegankelijkheidsverklaring nodig in het Register."
   - question: "Wat is het verschil met een website-audit?"
     answer: "Bij een app-audit testen we op echte apparaten met native schermlezers (VoiceOver, TalkBack) in plaats van browsers. We testen touch-interactie, gebaren, schermrotatie, en platformspecifieke patronen die op het web niet bestaan, zoals swipe-navigatie, haptic feedback en systeeminstellingen voor toegankelijkheid."
   - question: "Kunnen jullie ook hybride apps testen?"
@@ -65,15 +65,15 @@ faqs:
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
 
-Een toegankelijkheidsonderzoek van een app is een handmatige toets van je iOS- of Android-app op
-echte toestellen, met de schermlezer die het besturingssysteem zelf meelevert: VoiceOver op iOS
-en TalkBack op Android.
+Een app toets je anders dan een website. Je werkt met schermen in plaats van pagina's, met
+gebaren in plaats van een muis, en met systeeminstellingen in plaats van browserinstellingen. De
+schermlezer zit in het besturingssysteem zelf: VoiceOver op iOS, TalkBack op Android.
 
 De maatstaf is EN 301 549, de Europese norm. Die neemt de succescriteria van WCAG 2.1 over en
-vertaalt ze naar wat een app is: geen pagina's maar schermen, geen muis maar gebaren, geen
-browserinstellingen maar systeeminstellingen. Daar komen eisen bij die op het web niet bestaan,
-bijvoorbeeld dat je app moet meebewegen met de tekstgrootte die de gebruiker in zijn
-telefooninstellingen heeft gezet, en dat je scherm in beide oriëntaties moet werken.
+voegt er eisen aan toe die op het web niet bestaan. Je app moet meebewegen met de tekstgrootte
+die de gebruiker in zijn telefooninstellingen heeft gezet, en je schermen moeten in beide
+oriëntaties werken. Precies op die twee noteren we in de meeste apps bevindingen, omdat een
+ontwerp in Figma zelden op 200% tekstgrootte is nagelopen.
 
 We testen op recente iPhones, iPads en Android-toestellen, niet in een emulator. Een simulator
 bootst het scherm na, maar niet het gedrag van de schermlezer, de touch-doelgroottes of de

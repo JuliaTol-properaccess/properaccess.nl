@@ -57,9 +57,7 @@ volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het o
 een tweede auditor doet de interne review.
 
 In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de
-Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde. Sinds 2019 deden we 950+ audits,
-236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
-7 augustus 2026.
+Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde.
 
 We bouwen en beheren zelf geen websites. Er is dus geen situatie waarin we ons eigen werk
 beoordelen. Voor een instelling die het rapport gebruikt richting een subsidieverlener of een
@@ -93,28 +91,33 @@ muis werkt, want daar zit vaak jarenlang opgebouwd maatwerk in.
 {{< section-card title="App en audiotour" >}}
 
 Een museum-app toetsen we handmatig op echte toestellen, met VoiceOver op iOS en TalkBack op
-Android. Voor de Rijksmuseum-apps leverde dat 83 bevindingen op, verdeeld over twee platforms.
-Een audiotour die je zonder hulp van een ziende bezoeker niet kunt starten, sluit precies de
-mensen uit voor wie hij bedoeld is.
+Android. Voor de Rijksmuseum-apps liepen we met telefoon en koptelefoon door de zalen, volgden
+we de audiotours en deden we de interactieve speurtocht. Een audiotour die je zonder hulp van
+een ziende bezoeker niet kunt starten, sluit precies de mensen uit voor wie hij bedoeld is.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-full title="Welke regels gelden voor musea, theaters en attracties?" id="welke-regels" >}}
 
-Dat hangt af van wat je doet en wie je bent, en in de praktijk gelden er vaak twee dingen
-tegelijk.
+Dat hangt niet af van wat je verkoopt, maar van wat je instelling is. Het is de ene wet of de
+andere, en welke van de twee moet je per instelling bekijken.
 
-Verkoop je online kaartjes, abonnementen of een museumjaarkaart, dan valt die verkoop sinds
-28 juni 2025 onder de European Accessibility Act. Dat is de wet die geldt voor e-commerce, en
-online ticketverkoop is e-commerce. De norm eronder is EN 301 549, die de 55 succescriteria van
-WCAG 2.2 niveau AA overneemt.
+Krijg je overheidsfinanciering, dan val je onder het **Besluit digitale toegankelijkheid
+overheid**. Je hebt dan een toegankelijkheidsverklaring nodig in het
+[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register),
+en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd.
 
-Ben je daarnaast een overheidsinstelling of een publiekrechtelijke organisatie, bijvoorbeeld een
-gemeentelijk museum of een archief, dan geldt ook het Besluit digitale toegankelijkheid overheid
-en heb je een toegankelijkheidsverklaring nodig in het Register van
-Toegankelijkheidsverklaringen. Voor status A in dat register telt alleen onderzoek volgens
-WCAG-EM. Twijfel je of je daaronder valt, dan kijken we in de kennismaking met je mee.
+Ben je een commercieel bedrijf, dan val je onder de **European Accessibility Act**, die sinds
+28 juni 2025 geldt.
+
+De norm eronder is in beide gevallen EN 301 549. De geldende norm is op dit moment WCAG 2.1
+niveau AA. Wij toetsen aan WCAG 2.2 als extra service. De eisen aan je website verschillen dus
+niet tussen de twee wetten; wat verschilt is hoe je erover verantwoording aflegt.
+
+In de culturele sector loopt die grens niet altijd waar je hem verwacht. Twee musea die er van
+buiten hetzelfde uitzien, kunnen onder verschillende wetten vallen. In de kennismaking kijken we
+met je mee welke van de twee het bij jou is.
 
 Los van beide wetten vragen steeds meer subsidieverleners en fondsen om een
 toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij is daarvoor
@@ -128,8 +131,9 @@ een vaste prijs.
 
 Wil je eerst weten waar je staat, dan is een
 [mini-audit](/quickscan-digitale-toegankelijkheid/) van € 495 het startpunt. Ligt de techniek
-bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan is een
-[contentaudit](/contentaudit/) vaak de verstandigere keuze: je rapport staat dan niet vol met
-bevindingen waar je zelf niets aan kunt doen.
+bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan kan een
+[contentaudit](/contentaudit/) uitkomst bieden. Die doen we alleen als de techniek ook is
+onderzocht, door ons of door je bouwer, want een verklaring vraagt om bewijs over de hele
+website en niet alleen over de redactie-laag.
 
 {{< /section-full >}}

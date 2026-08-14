@@ -120,7 +120,7 @@ Onze dank aan Caitlin de Rooij voor het heldere verhaal, aan Angeliek Lieverdink
 
 ![Illustratie van een dashboard met een ranglijst van bedrijven en een staafdiagram, waarbij één balk in magenta is uitgelicht. Het verbeeldt een marktoverzicht van hoe bedrijven scoren op toegankelijkheid.](/images/blog/eaa-monitor-marktoverzicht.webp)
 
-Je staat er niet alleen voor. Met onze [EAA-monitor](https://eaa-monitor.nl) krijg je inzicht in hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je waar je terecht kunt zodra je vastloopt. Kijk op [eaa-monitor.nl](https://eaa-monitor.nl).
+Je staat er niet alleen voor. Met de [EAA-monitor](https://eaa-monitor.nl) van Flonam krijg je inzicht in hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je waar je terecht kunt zodra je vastloopt. Kijk op [eaa-monitor.nl](https://eaa-monitor.nl).
 
 ## Wil je weten waar je staat?
 

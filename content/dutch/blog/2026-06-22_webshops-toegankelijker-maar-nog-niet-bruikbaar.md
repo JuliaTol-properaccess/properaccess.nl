@@ -84,6 +84,6 @@ In het bericht van de NOS schemert een belangrijk onderscheid door. Een website 
 
 ## Volg de markt met de EAA-monitor
 
-Je staat er niet alleen voor. Met onze [EAA-monitor](https://eaa-monitor.nl) krijg je inzicht in hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je waar je terecht kunt zodra je vastloopt. Kijk op [eaa-monitor.nl](https://eaa-monitor.nl).
+Je staat er niet alleen voor. Met de [EAA-monitor](https://eaa-monitor.nl) van Flonam krijg je inzicht in hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je waar je terecht kunt zodra je vastloopt. Kijk op [eaa-monitor.nl](https://eaa-monitor.nl).
 
 Wil je nu al weten hoe jouw webshop werkt voor iemand met een beperking? Vraag een [miniaudit](https://properaccess.nl/quickscan/) aan of bel 085 5055 890. Dan gaat de toets niet over of je site een vinkje haalt, maar of je klant ermee uit de voeten kan.

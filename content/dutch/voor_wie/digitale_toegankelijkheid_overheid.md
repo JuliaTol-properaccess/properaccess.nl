@@ -42,8 +42,8 @@ trust:
     - "Gemeente 's-Hertogenbosch"
 
 faqs:
-  - question: "Voldoet een audit van Proper Access aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
-    answer: "Ja. Onze audits zijn gebaseerd op WCAG 2.2 (niveau A + AA) en uitgevoerd volgens de formele richtlijnen van DigiToegankelijk. Ze voldoen volledig aan de eisen uit het BDTO. Je kunt ons rapport gebruiken om je toegankelijkheidsverklaring te onderbouwen."
+  - question: "Kan ik met jullie rapport aantonen dat ik voldoe aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
+    answer: "Ja, daar is het rapport voor gemaakt. We onderzoeken volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist, en volgens de richtlijnen van DigiToegankelijk. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Je gebruikt het rapport om je toegankelijkheidsverklaring te onderbouwen, en we helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk."
   - question: "Kunnen jullie helpen bij het opstellen of actualiseren van een toegankelijkheidsverklaring?"
     answer: "Zeker. Na de audit helpen we je bij het opstellen van een correcte en actuele toegankelijkheidsverklaring, conform het format van toegankelijkheidsverklaring.nl. We begeleiden je ook in de Mijn-omgeving van DigiToegankelijk en bij het verwerken van feedback via DIP."
   - question: "Kunnen jullie ook apps en intranetten toetsen?"
@@ -57,27 +57,30 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen, onbeperkt en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
-    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen vereist voor status A. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland, de Sociale Verzekeringsbank en de gemeenten Amersfoort, Alkmaar, 's-Hertogenbosch en Terneuzen."
+    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---
 
 {{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
 
 Alle overheidsinstanties en publiekrechtelijke instellingen in Nederland. Gemeenten,
 provincies, waterschappen, ministeries, uitvoeringsorganisaties, scholen en zorginstellingen
-met een publieke taak. Voor websites geldt de plicht sinds 2020, voor mobiele apps sinds 2021.
+met een publieke taak. De plicht geldt sinds 2018.
 
 De plicht dekt je hele digitale dienstverlening: je hoofdwebsite, maar ook subsites,
 aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van die kanalen
-heeft een eigen toegankelijkheidsverklaring nodig in het Register van
-Toegankelijkheidsverklaringen.
+heeft een eigen toegankelijkheidsverklaring nodig in het
+[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
 
 {{< /section-full >}}
 
 {{< section-cards columns="3" bg="light" title="Wat betekent dit voor je toegankelijkheidsverklaring?" >}}
 {{< section-card title="Vijf statussen in het Register" >}}
 
-A betekent dat je volledig voldoet, B dat je gedeeltelijk voldoet, C dat het onderzoek loopt of
-dat er eerste maatregelen zijn genomen, D dat je niet voldoet en E dat er geen eigenaar is.
+- **A:** je voldoet volledig
+- **B:** je voldoet gedeeltelijk
+- **C:** het onderzoek loopt of er zijn eerste maatregelen genomen
+- **D:** je voldoet niet
+- **E:** er is geen eigenaar
 
 {{< /section-card >}}
 {{< section-card title="Een rapport vervalt na 36 maanden" >}}
@@ -89,9 +92,9 @@ het dashboard rood kleurt.
 {{< /section-card >}}
 {{< section-card title="42% heeft geen enkel rapport" >}}
 
-We analyseerden in augustus 2026 het hele Register. Van de 9.075 sites heeft 42% geen enkel
-rapport, en bij 603 verklaringen met status A of B staat de annotatie "onderbouwing
-ontoereikend". De meest voorkomende oorzaak is een ontbrekend deelonderzoek.
+Van de 9.075 sites in het Register, geanalyseerd in augustus 2026. Bij 603 verklaringen met
+status A of B staat bovendien "onderbouwing ontoereikend", meestal door een ontbrekend
+deelonderzoek.
 
 [Lees ons onderzoek naar het Register →](/blog/toegankelijkheidsregister-oogt-gezond-brokkelt-af/)
 
@@ -104,12 +107,13 @@ Een onafhankelijk toegankelijkheidsonderzoek is een handmatige toets aan WCAG 2.
 AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Voor het
 Register telt alleen een onderzoek volgens
 [WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/), de evaluatiemethode van het W3C.
-Zonder WCAG-EM krijg je geen status A.
+Onderzoek dat er niet volgens is uitgevoerd, accepteert het Register niet.
 
-Voor documenten, video's en PDF's die je redactie zelf beheert, kan een
-[contentaudit](/contentaudit/) genoeg zijn. Ligt de techniek bij een externe leverancier, dan
-is dat de verstandigste keuze: je rapport staat dan niet vol met bevindingen waar je zelf
-niets aan kunt doen.
+Ligt de techniek bij een externe leverancier en beheer je zelf alleen de teksten, beelden en
+PDF's, dan kan een [contentaudit](/contentaudit/) uitkomst bieden. Let op de voorwaarde: we
+voeren een contentaudit alleen uit als de techniek ook is onderzocht, door ons of door iemand
+anders. Je verklaring vraagt om bewijs dat de hele website is getoetst, niet alleen de
+redactie-laag, dus een contentaudit op zichzelf levert je een halve onderbouwing op.
 
 {{< /section-full >}}
 
@@ -147,10 +151,5 @@ Proper Access bouwt en beheert zelf geen websites. Er is dus geen situatie waari
 werk beoordelen, en geen belang bij een gunstige uitkomst. Voor een overheidsorganisatie is dat
 niet alleen prettig, het is ook wat een auditrapport bruikbaar maakt als bewijs richting
 toezicht en gemeenteraad.
-
-Sinds 2019 deden we 950 audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026. Onze openbare rapporten voor onder meer de
-provincies Noord- en Zuid-Holland en de gemeente Amersfoort kun je inzien, zodat je vooraf ziet
-wat je krijgt.
 
 {{< /section-full >}}

@@ -34,12 +34,17 @@ banner:
 trust:
   label: "Werken samen met onder andere"
   names:
-    - "Eidra-groep"
-    - "Fabrique"
-    - "Q42"
-    - "CuriosMind"
-    - "Wirelab"
-    - "Onstuimig"
+    - name: "Eidra-groep"
+    - name: "Fabrique"
+      link: "https://www.fabrique.nl/"
+    - name: "Q42"
+      link: "https://www.q42.nl/"
+    - name: "Curious Mind"
+      link: "https://www.curiousmind.se/"
+    - name: "Wirelab"
+      link: "https://wirelab.nl/"
+    - name: "Onstuimig"
+      link: "https://onstuimig.nl/"
 
 faqs:
   - question: "Kunnen jullie al tijdens de bouw van een website testen?"
@@ -57,20 +62,23 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau kan een agency inschakelen voor een onafhankelijk toegankelijkheidsonderzoek van een klantproject?"
-    answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met Fabrique, Q42, Wirelab, CuriosMind en Onstuimig."
+    answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/), [Wirelab](https://wirelab.nl/), [Curious Mind](https://www.curiousmind.se/) en [Onstuimig](https://onstuimig.nl/)."
 ---
 
 {{< section-full title="Waarom een agency een onafhankelijk bureau inschakelt" id="waarom-onafhankelijk" >}}
 
-Je kunt je eigen werk niet keuren. Dat is geen verwijt aan de kwaliteit van een developmentteam,
-het is hoe toezicht werkt. Voor status A in het Register van Toegankelijkheidsverklaringen eist
-de overheid onderzoek door een partij die het kanaal niet zelf heeft gebouwd of beheert. Onder
-de European Accessibility Act geldt hetzelfde principe: een verklaring van de bouwer weegt
-minder dan een rapport van iemand die er geen belang bij heeft.
+Een audit in eigen beheer mag. Er is geen regel die voorschrijft dat een ander bureau het
+onderzoek moet doen, en we merken dat sommige webbureaus voor die route kiezen.
+
+Het risico zit ergens anders. De ACM toetst websites zelf en laat webshops weten op welke punten
+ze niet toegankelijk zijn. Lever je een webshop op die je zelf hebt gebouwd en zelf hebt
+getoetst, en komt de ACM daarna met een lijst punten, dan gaat het gesprek met je klant niet
+meer over de website. Dan gaat het over jouw beoordeling.
 
 Proper Access bouwt en beheert zelf geen websites. We concurreren dus niet met je op de
 opdracht, en we nemen je klant niet over. Dat is de reden dat we sinds 2019 samenwerken met
-bureaus als Fabrique, Q42, Wirelab, CuriosMind en Onstuimig.
+bureaus als [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/),
+[Wirelab](https://wirelab.nl/), [Curious Mind](https://www.curiousmind.se/) en [Onstuimig](https://onstuimig.nl/).
 
 Voor jou is er nog een reden. Het gesprek met je klant over extra budget en extra tijd voer je
 anders zelf. "Wij denken dat dit nog moet gebeuren" is een ander gesprek dan "dit staat in het
@@ -105,22 +113,29 @@ een framework. Dat loopt via een strippenkaart van € 100 per uur, dus zonder e
 {{< section-full title="Wat je klant krijgt, en wat jouw team eraan heeft" id="wat-je-krijgt" >}}
 
 Het rapport is opgebouwd per element in plaats van per succescriterium. Dat verschil is voor een
-developmentteam het belangrijkste: je krijgt geen lijst van 55 criteria met een vinkje, maar per
-component wat er misgaat, op welke pagina's het voorkomt en welke kant een oplossing op moet.
-Eén bevinding op de datepicker, niet dezelfde bevinding twaalf keer.
+developmentteam het belangrijkste. In een klassiek rapport kan één component onder twaalf
+verschillende succescriteria worden vermeld. De datepicker staat dan op twaalf plekken in het
+document, elke keer met een stuk van het probleem. Voordat je iets kunt oplossen, ben je eerst
+bezig die stukken bij elkaar te zoeken.
+
+Wij groeperen de bevindingen per component en per pagina. De datepicker staat op één plek, met
+alles wat eraan mankeert en op welke pagina's hij voorkomt.
+
+<figure class="pa-pullquote">
+  <blockquote><p>Onze rapporten zijn geschreven voor mensen die problemen moeten oplossen, niet voor mensen die WCAG hebben bedacht.</p></blockquote>
+  <figcaption>Julia Tol<span>Oprichter en senior auditor</span></figcaption>
+</figure>
 
 Elke bevinding begint met een user story vanuit een bezoeker met een beperking. Die staat er
 omdat je projectmanager en je klant moeten kunnen zien waarom iets prioriteit heeft, en dat lukt
 niet met een criteriumnummer. Daarnaast een screenshot, een code-voorbeeld en een CSV met alle
 bevindingen die je rechtstreeks in Jira of Linear kunt inlezen.
 
-We kennen React, Vue, Angular, WordPress, Drupal en Laravel, en we weten waar toegankelijkheid in
-elk van die stacks meestal misgaat. Zegt een developer dat iets niet kan binnen het framework,
-dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in plaats van
-een bevinding te laten staan die niemand oplost.
-
-Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026.
+Inmiddels kennen we zo'n 150 verschillende systemen, van maatwerkframeworks tot
+standaard-CMS'en. We weten daardoor meestal al waar toegankelijkheid in jullie stack misgaat
+voordat we beginnen. Zegt een developer dat iets niet kan binnen het
+framework, dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in
+plaats van een bevinding te laten staan die niemand oplost.
 
 Een onderzoek begint bij circa € 2.250 voor een eenvoudige site en loopt op tot circa € 5.100
 voor een maatwerkapplicatie met veel interactie, exclusief 21% btw. Wil je je eigen team

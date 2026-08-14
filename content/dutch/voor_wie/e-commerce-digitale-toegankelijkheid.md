@@ -55,7 +55,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.895 voor een eenvoudige shop, en kan oplopen tot circa € 5.100 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
-    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549, de Europese norm waar de EAA naar verwijst, volgens de WCAG-EM-methode van het W3C. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
+    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 ---
 
 {{< section-full title="Valt jouw webshop onder de European Accessibility Act?" id="valt-mijn-webshop-eronder" >}}
@@ -68,7 +68,8 @@ Er is één uitzondering. Verkoop je met minder dan 10 medewerkers en blijf je o
 euro omzet, dan geldt de plicht niet. Vrijwel elke webshop met een eigen developmentteam valt
 er dus wel onder.
 
-In Nederland houdt de Autoriteit Consument en Markt toezicht. De ACM onderzocht in juni 2026
+Het toezicht op de EAA is in Nederland verdeeld over meerdere toezichthouders, per soort
+product of dienst. Voor webshops is dat de Autoriteit Consument en Markt. De ACM onderzocht in juni 2026
 honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen; bij tien grote
 winkels waren die ernstig. De toezichthouder kondigde een hertest na drie maanden aan, met een
 boete voor wie dan nog niet voldoet. Wat de ACM daarbij zegt is belangrijker dan het cijfer:
@@ -76,9 +77,10 @@ test met echte gebruikers, niet alleen met een tool. We schreven op wat de toezi
 precies verwacht in
 [wat doet een toezichthouder eigenlijk](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
 
-De norm waar de wet naar verwijst is EN 301 549. Die neemt de 55 succescriteria van WCAG 2.2
-niveau AA over voor websites, en stelt daarnaast eisen aan je klantondersteuning en aan de
-informatie die je over toegankelijkheid publiceert. Een chatwidget die niet met het toetsenbord
+De norm waar de wet naar verwijst is EN 301 549. De geldende norm is op dit moment WCAG 2.1
+niveau AA. EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
+je over toegankelijkheid publiceert. Wij toetsen aan WCAG 2.2 als extra service; die criteria
+zijn backwards compatible, dus alles uit 2.1 zit erin. Een chatwidget die niet met het toetsenbord
 te bedienen is, is dus ook een probleem onder de EAA.
 
 {{< /section-full >}}
@@ -118,18 +120,17 @@ externe leverancier ligt.
 
 {{< section-full title="Welk bureau toetst een webshop op de European Accessibility Act?" id="welk-bureau" >}}
 
-Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549,
-volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het
+Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM,
+de evaluatiemethode van het W3C. Een senior auditor voert het
 toegankelijkheidsonderzoek uit, een tweede auditor doet de interne review. We bouwen en beheren
 zelf geen webshops, dus we keuren nooit ons eigen werk.
 
-Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026. In e-commerce en media werkten we onder meer
-voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en Eteck. Hoe zo'n samenwerking eruitziet, staat in
+In e-commerce en media werkten we onder meer voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en
+Eteck. Hoe zo'n samenwerking eruitziet, staat in
 [het verhaal over NRC](/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/).
 
-Het platform maakt niet uit. We toetsten webshops op Shopify, Magento, WooCommerce, Lightspeed
-en op maatwerk. Kun je iets binnen de grenzen van je platform niet oplossen, dan zoeken we mee
+Het platform maakt niet uit. We toetsen webshops op Shopify, Magento en WooCommerce, en op
+maatwerk. Kun je iets binnen de grenzen van je platform niet oplossen, dan zoeken we mee
 naar een alternatief of naar de formulering waarmee je het bij je leverancier neerlegt.
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het

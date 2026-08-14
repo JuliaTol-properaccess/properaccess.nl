@@ -60,7 +60,7 @@ faqs:
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
   - question: "Is dit verplicht voor ons?"
-    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten al sinds 2020 voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO)."
+    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO), dat sinds 2018 geldt."
   - question: "Wat als we niet technisch zijn?"
     answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
   - question: "Kunnen jullie ook de problemen oplossen?"
@@ -74,25 +74,27 @@ faqs:
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
-    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek volgens deze methode voor status A, dus je rapport is bruikbaar als bewijs."
+    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens deze methode is uitgevoerd, dus je rapport is bruikbaar als bewijs."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
 
-Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2,
-niveau AA. Je hoort er ook andere namen voor: toegankelijkheidsaudit, WCAG-audit,
-toegankelijkheidstoets. Het gaat om hetzelfde werk.
+Toegankelijkheidsaudit, WCAG-audit, toegankelijkheidstoets, toegankelijkheidsonderzoek. Vier
+namen die je in offertes en aanbestedingen door elkaar ziet staan, voor hetzelfde werk. Wie een
+van deze vier vraagt, vraagt om een toets aan WCAG 2.2 op niveau A en AA.
 
-WCAG 2.2 op niveau AA telt 55 succescriteria. Een geautomatiseerde scan herkent daarvan
-ongeveer 30%, vooral codefouten die een tool kan meten. De overige 70% vraagt om een mens die
-een schermlezer start, met het toetsenbord door een formulier loopt, de focusvolgorde
-controleert en inzoomt tot 400%.
+Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 op niveau AA telt 55 succescriteria. Een
+geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die een tool kan meten.
+De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
+formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
 
-De Europese norm EN 301 549 neemt de WCAG-criteria over voor websites en stelt daarnaast eisen
-aan onder meer documentatie en klantondersteuning. Die norm is de maatstaf onder de European
-Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
+De maatstaf onder de European Accessibility Act en onder het Besluit digitale toegankelijkheid
+overheid is de Europese norm EN 301 549. De geldende norm is op dit moment WCAG 2.1 niveau AA.
+EN 301 549 stelt daarnaast eisen aan onder meer documentatie en klantondersteuning. Wij toetsen
+aan WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles uit 2.1 zit
+erin.
 
 {{< /section-full >}}
 
@@ -142,8 +144,8 @@ Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastl
 {{< section-card title="Contentaudit" >}}
 
 33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
-ligt en je alleen de redactie zelf beheert. Zo staat je rapport niet vol met bevindingen die je
-toch niet kunt oplossen.
+ligt en je alleen de redactie zelf beheert. Alleen mogelijk als de techniek ook is onderzocht,
+door ons of door een andere partij.
 
 [Lees over de contentaudit →](/contentaudit/)
 
@@ -209,10 +211,10 @@ Zuid-Holland en de gemeenten Amersfoort en Alkmaar schakelen ons daarom in naast
 bouwer.
 
 {{< /section-card >}}
-{{< section-card title="950 audits sinds 2019" >}}
+{{< section-card title="Je ziet vooraf wat je krijgt" >}}
 
-236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
-7 augustus 2026. Een deel van die rapporten is openbaar, dus je kunt vooraf zien wat je krijgt.
+Een deel van onze rapporten is openbaar. Je kunt dus lezen hoe een bevinding bij ons is
+opgeschreven en welke taal we gebruiken, voordat je iets afspreekt.
 
 [Bekijk een voorbeeldrapport →](#voorbeeldrapporten)
 

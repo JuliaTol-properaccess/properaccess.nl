@@ -8,6 +8,7 @@
 
 ## Toegankelijkheidsonderzoek
 
+- [Toegankelijkheidsonderzoek](https://www.properaccess.nl/toegankelijkheidsonderzoek/): overzicht van de vier soorten onderzoek, de WCAG-EM methode in vijf stappen, de prijzen en wat je krijgt
 - [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): volledig onderzoek van een website aan alle 55 succescriteria van WCAG 2.2 niveau AA, met een rapport per element
 - [App-audit](https://www.properaccess.nl/app-toegankelijkheid-testen/): handmatig onderzoek van een iOS- of Android-app op echte toestellen met VoiceOver en TalkBack, getoetst aan WCAG 2.1 en EN 301 549
 - [Contentaudit](https://www.properaccess.nl/contentaudit/): deelonderzoek van alleen de content die je webredactie beheert, 33 van de 55 succescriteria
@@ -17,6 +18,7 @@
 
 ## Ondersteuning en training
 
+- [Hulp bij Europese toegankelijkheidswetgeving](https://www.properaccess.nl/hulp-bij-europese-toegankelijkheidswetgeving/): welke wet voor je geldt, de vier stappen naar voldoen (onderzoek, herstel, hercontrole, verantwoording) en welke dienst elke stap dekt
 - [Testen tijdens de bouw](https://www.properaccess.nl/toegankelijkheid-testen-tijdens-de-bouw/): WCAG-tests in de sprint, directe feedback voor developers
 - [Strippenkaart](https://www.properaccess.nl/strippenkaart/): losse uren voor meedenken bij het oplossen, code reviews en tussentijds testen
 - [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): meerjarig partnerschap met onderzoek, trainingen en tooling
