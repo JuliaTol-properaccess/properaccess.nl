@@ -57,8 +57,9 @@ faqs:
 
 {{< section-full title="Welke Europese toegankelijkheidswetgeving geldt voor jou?" id="welke-wet" >}}
 
-Twee wetten doen er in Nederland toe, en welke voor jou geldt hangt af van wat je bent, niet van
-wat je website doet.
+Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een
+webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een
+bedrijf, terwijl er technisch niets verschilt.
 
 | Wet | Voor wie | Sinds | Toezicht |
 | --- | --- | --- | --- |

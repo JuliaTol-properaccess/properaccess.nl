@@ -65,15 +65,15 @@ faqs:
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
 
-Een toegankelijkheidsonderzoek van een app is een handmatige toets van je iOS- of Android-app op
-echte toestellen, met de schermlezer die het besturingssysteem zelf meelevert: VoiceOver op iOS
-en TalkBack op Android.
+Een app toets je anders dan een website. Je werkt met schermen in plaats van pagina's, met
+gebaren in plaats van een muis, en met systeeminstellingen in plaats van browserinstellingen. De
+schermlezer zit in het besturingssysteem zelf: VoiceOver op iOS, TalkBack op Android.
 
 De maatstaf is EN 301 549, de Europese norm. Die neemt de succescriteria van WCAG 2.1 over en
-vertaalt ze naar wat een app is: geen pagina's maar schermen, geen muis maar gebaren, geen
-browserinstellingen maar systeeminstellingen. Daar komen eisen bij die op het web niet bestaan,
-bijvoorbeeld dat je app moet meebewegen met de tekstgrootte die de gebruiker in zijn
-telefooninstellingen heeft gezet, en dat je scherm in beide oriëntaties moet werken.
+voegt er eisen aan toe die op het web niet bestaan. Je app moet meebewegen met de tekstgrootte
+die de gebruiker in zijn telefooninstellingen heeft gezet, en je schermen moeten in beide
+oriëntaties werken. Precies op die twee noteren we in de meeste apps bevindingen, omdat een
+ontwerp in Figma zelden op 200% tekstgrootte is nagelopen.
 
 We testen op recente iPhones, iPads en Android-toestellen, niet in een emulator. Een simulator
 bootst het scherm na, maar niet het gedrag van de schermlezer, de touch-doelgroottes of de

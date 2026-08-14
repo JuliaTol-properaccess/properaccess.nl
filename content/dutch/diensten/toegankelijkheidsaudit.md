@@ -81,14 +81,14 @@ faqs:
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
 
-Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2,
-niveau AA. Je hoort er ook andere namen voor: toegankelijkheidsaudit, WCAG-audit,
-toegankelijkheidstoets. Het gaat om hetzelfde werk.
+Toegankelijkheidsaudit, WCAG-audit, toegankelijkheidstoets, toegankelijkheidsonderzoek. Vier
+namen die je in offertes en aanbestedingen door elkaar ziet staan, voor hetzelfde werk. Wie een
+van deze vier vraagt, vraagt om een toets aan WCAG 2.2 op niveau A en AA.
 
-WCAG 2.2 op niveau AA telt 55 succescriteria. Een geautomatiseerde scan herkent daarvan
-ongeveer 30%, vooral codefouten die een tool kan meten. De overige 70% vraagt om een mens die
-een schermlezer start, met het toetsenbord door een formulier loopt, de focusvolgorde
-controleert en inzoomt tot 400%.
+Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 op niveau AA telt 55 succescriteria. Een
+geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die een tool kan meten.
+De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
+formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
 
 De Europese norm EN 301 549 neemt de WCAG-criteria over voor websites en stelt daarnaast eisen
 aan onder meer documentatie en klantondersteuning. Die norm is de maatstaf onder de European
