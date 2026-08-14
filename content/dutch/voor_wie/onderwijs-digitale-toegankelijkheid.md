@@ -138,7 +138,7 @@ Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op
 
 {{< section-full title="Wij kennen jullie systemen van binnenuit" >}}
 
-Onze oprichter was 9 jaar ontwikkelaar bij de Rechtspraak, waar ze werkte met complexe webapplicaties en interne systemen. Ze kent de technische kant van platformen als Moodle, WordPress, Canvas, Class en Articulate niet van de buitenkant, maar van de broncode.
+In ons team zit ervaring bij de Rechtspraak, het Studiecentrum voor Rechtspleging, RADIO en veel andere onderwijsorganisaties. Dat is ervaring met complexe webapplicaties en met de interne systemen eromheen. Leeromgevingen als Moodle, WordPress, Canvas, Class en Articulate kennen we daardoor uit de broncode en niet alleen van het scherm.
 
 **Dat maakt het verschil.** We auditen niet alleen of een knop het juiste label heeft. We begrijpen waarom die knop dat label mist, welke template of plugin het veroorzaakt, en hoe je het oplost zonder je hele leeromgeving overhoop te halen.
 

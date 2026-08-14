@@ -5263,6 +5263,26 @@ html.dark .toolsuite-promo__text {
   color: #A30D4B;
 }
 
+/* Het getal boven de lijst. Stond hier eerst een opsomming van frameworks bij
+   naam; die is vervangen door het aantal systemen, omdat een lijstje van zes
+   altijd te kort is voor wat we inmiddels hebben gezien. */
+.hp-vp-methods__stat {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1.2;
+}
+
+.hp-vp-methods__stat strong {
+  display: block;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #A30D4B;
+  line-height: 1;
+}
+
 .hp-vp-methods__list {
   list-style: none;
   padding: 0;
