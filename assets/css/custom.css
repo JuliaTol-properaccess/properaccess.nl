@@ -4403,11 +4403,32 @@ html.dark .toolsuite-promo__text {
   gap: 0.5rem 2rem;
 }
 
-.hp-trust__names span {
+.hp-trust__names span,
+.hp-trust__names a {
   font-size: 1rem;
   font-weight: 900;
   color: #FFFFFF;
   white-space: nowrap;
+}
+
+/* De onderstreping staat er standaard, zodat de link ook zonder kleurverschil
+   te herkennen is naast de namen die geen link zijn. */
+.hp-trust__names a {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.hp-trust__names a:hover,
+.hp-trust__names a:focus-visible {
+  text-decoration-color: #FFFFFF;
+}
+
+.hp-trust__names a:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /* ─── SOCIAL PROOF ─── */

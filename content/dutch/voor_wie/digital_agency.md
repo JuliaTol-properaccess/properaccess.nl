@@ -34,12 +34,16 @@ banner:
 trust:
   label: "Werken samen met onder andere"
   names:
-    - "Eidra-groep"
-    - "Fabrique"
-    - "Q42"
-    - "CuriosMind"
-    - "Wirelab"
-    - "Onstuimig"
+    - name: "Eidra-groep"
+    - name: "Fabrique"
+      link: "https://www.fabrique.nl/"
+    - name: "Q42"
+      link: "https://www.q42.nl/"
+    - name: "CuriosMind"
+    - name: "Wirelab"
+      link: "https://wirelab.nl/"
+    - name: "Onstuimig"
+      link: "https://onstuimig.nl/"
 
 faqs:
   - question: "Kunnen jullie al tijdens de bouw van een website testen?"
@@ -57,7 +61,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau kan een agency inschakelen voor een onafhankelijk toegankelijkheidsonderzoek van een klantproject?"
-    answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met Fabrique, Q42, Wirelab, CuriosMind en Onstuimig."
+    answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/), [Wirelab](https://wirelab.nl/), CuriosMind en [Onstuimig](https://onstuimig.nl/)."
 ---
 
 {{< section-full title="Waarom een agency een onafhankelijk bureau inschakelt" id="waarom-onafhankelijk" >}}
@@ -72,7 +76,8 @@ meer over de website. Dan gaat het over jouw beoordeling.
 
 Proper Access bouwt en beheert zelf geen websites. We concurreren dus niet met je op de
 opdracht, en we nemen je klant niet over. Dat is de reden dat we sinds 2019 samenwerken met
-bureaus als Fabrique, Q42, Wirelab, CuriosMind en Onstuimig.
+bureaus als [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/),
+[Wirelab](https://wirelab.nl/), CuriosMind en [Onstuimig](https://onstuimig.nl/).
 
 Voor jou is er nog een reden. Het gesprek met je klant over extra budget en extra tijd voer je
 anders zelf. "Wij denken dat dit nog moet gebeuren" is een ander gesprek dan "dit staat in het

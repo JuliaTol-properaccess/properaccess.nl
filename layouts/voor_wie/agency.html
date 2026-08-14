@@ -47,9 +47,20 @@
 <section class="hp-trust">
   <div class="hp-container">
     <p class="hp-trust__label">{{ .label }}</p>
+    {{/* Een naam mag een losse tekst zijn of een paar van name en link. Zo kan
+         één pagina naar de bureaus linken zonder dat de andere pagina's met een
+         gewone namenlijst hoeven te veranderen. */}}
     <div class="hp-trust__names">
       {{ range .names }}
-        <span>{{ . }}</span>
+        {{ if reflect.IsMap . }}
+          {{ if .link }}
+            <a href="{{ .link }}"{{ if hasPrefix .link "http" }} rel="noopener"{{ end }}>{{ .name }}</a>
+          {{ else }}
+            <span>{{ .name }}</span>
+          {{ end }}
+        {{ else }}
+          <span>{{ . }}</span>
+        {{ end }}
       {{ end }}
     </div>
   </div>
