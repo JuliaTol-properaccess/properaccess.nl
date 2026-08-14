@@ -48,13 +48,12 @@
 </section>
 
 <!-- ─── Content (if any) ─── -->
+<!-- De body van _index.md gebruikt de section-shortcodes, die hun eigen container
+     meebrengen. Daarom hier geen extra container of prose-wrapper omheen: dat zou
+     de secties dubbel laten inspringen. Zelfde opzet als layouts/diensten/audit.html. -->
 {{ with .Content }}
 <article class="offerte-content">
-  <div class="container">
-    <div class="sectie-prose">
-      {{ . }}
-    </div>
-  </div>
+  {{ . }}
 </article>
 {{ end }}
 
@@ -63,7 +62,7 @@
   <div class="container">
     <div class="vw-stats__grid">
       <div class="vw-stats__item">
-        <span class="vw-stats__number">900+</span>
+        <span class="vw-stats__number">950+</span>
         <span class="vw-stats__label">audits uitgevoerd</span>
       </div>
       <div class="vw-stats__item">

@@ -54,4 +54,99 @@ faqs:
     answer: "Een mini-audit levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.895 voor een eenvoudige shop, en kan oplopen tot circa € 5.100 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
+  - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
+    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549, de Europese norm waar de EAA naar verwijst, volgens de WCAG-EM-methode van het W3C. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 ---
+
+{{< section-full title="Valt jouw webshop onder de European Accessibility Act?" id="valt-mijn-webshop-eronder" >}}
+
+Sinds 28 juni 2025 geldt de European Accessibility Act voor webshops en online diensten in de
+hele Europese Unie. De wet raakt de verkoop van producten en diensten aan consumenten: kleding,
+elektronica, boodschappen, tickets, e-books, bankieren, reizen boeken en telecomdiensten.
+
+Er is één uitzondering. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen
+euro omzet, dan geldt de plicht niet. Vrijwel elke webshop met een eigen developmentteam valt
+er dus wel onder.
+
+In Nederland houdt de Autoriteit Consument en Markt toezicht. De ACM onderzocht in juni 2026
+honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen; bij tien grote
+winkels waren die ernstig. De toezichthouder kondigde een hertest na drie maanden aan, met een
+boete voor wie dan nog niet voldoet. Wat de ACM daarbij zegt is belangrijker dan het cijfer:
+test met echte gebruikers, niet alleen met een tool. We schreven op wat de toezichthouder
+precies verwacht in
+[wat doet een toezichthouder eigenlijk](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
+
+De norm waar de wet naar verwijst is EN 301 549. Die neemt de 55 succescriteria van WCAG 2.2
+niveau AA over voor websites, en stelt daarnaast eisen aan je klantondersteuning en aan de
+informatie die je over toegankelijkheid publiceert. Een chatwidget die niet met het toetsenbord
+te bedienen is, is dus ook een probleem onder de EAA.
+
+{{< /section-full >}}
+
+{{< section-cards columns="2" bg="light" title="Wat we in een webshop toetsen" subtitle="We lopen het hele klantpad door, van zoeken tot betaalbevestiging. Een webshop valt zelden om op de homepage." >}}
+{{< section-card title="Zoeken en filteren" >}}
+
+Filters die alleen met de muis werken, aantallen die niet worden aangekondigd, en zoekresultaten
+waarbij een schermlezergebruiker niet hoort dat de pagina is ververst. Dit is waar bezoekers als
+eerste afhaken, en het onderdeel waar we in webshops de meeste bevindingen noteren.
+
+{{< /section-card >}}
+{{< section-card title="Productpagina's" >}}
+
+Productafbeeldingen zonder tekstalternatief, maattabellen die als plaatje zijn opgeslagen,
+kleurkeuzes die alleen aan de kleur te herkennen zijn, en varianten die je zonder muis niet
+kunt selecteren. We toetsen ook of de prijs, de voorraadstatus en de leverdatum voor een
+schermlezer in de juiste volgorde staan.
+
+{{< /section-card >}}
+{{< section-card title="Winkelwagen, checkout en betalen" >}}
+
+Het zwaarste deel van het onderzoek. Foutmeldingen die alleen in rood verschijnen, velden zonder
+label, een adrescheck die de focus naar een ander veld verplaatst, en betaalstappen bij iDEAL of
+een externe payment-provider waar je met alleen een toetsenbord niet verder komt. We rekenen
+echt af, zodat we de hele route zien.
+
+{{< /section-card >}}
+{{< section-card title="Klantenservice en documenten" >}}
+
+Chatwidgets, retourformulieren, PDF-facturen en algemene voorwaarden. De EAA stelt hier
+expliciet eisen aan, en dit is het onderdeel dat webshops het vaakst vergeten omdat het bij een
+externe leverancier ligt.
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< section-full title="Welk bureau toetst een webshop op de European Accessibility Act?" id="welk-bureau" >}}
+
+Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA en aan EN 301 549,
+volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het
+toegankelijkheidsonderzoek uit, een tweede auditor doet de interne review. We bouwen en beheren
+zelf geen webshops, dus we keuren nooit ons eigen werk.
+
+Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
+een tweede opdracht. Peildatum 7 augustus 2026. In e-commerce en media werkten we onder meer
+voor De Bijenkorf, Plus, Jumbo, NRC, Crisp en Eteck. Hoe zo'n samenwerking eruitziet, staat in
+[het verhaal over NRC](/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/).
+
+Het platform maakt niet uit. We toetsten webshops op Shopify, Magento, WooCommerce, Lightspeed
+en op maatwerk. Kun je iets binnen de grenzen van je platform niet oplossen, dan zoeken we mee
+naar een alternatief of naar de formulering waarmee je het bij je leverancier neerlegt.
+
+De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
+aantal producten. Een shop met tienduizend artikelen op vier templates is goedkoper dan een shop
+met honderd artikelen en een configurator. Alle bedragen zijn exclusief 21% btw.
+
+| Type webshop | Indicatieprijs |
+| --- | --- |
+| Eenvoudige webshop, standaardtemplate, één taal | vanaf circa € 2.895 |
+| Gemiddelde webshop, filters, account, meerdere betaalmethoden | circa € 3.150 |
+| Webshop met inlog, configurator of complexe filters | circa € 4.200 |
+| Internationale of maatwerkwebshop, veel interactie | circa € 5.100 |
+
+Een volledig onderzoek duurt 3 tot 5 weken. Weet je nog niet waar je staat, dan is een
+[mini-audit](/webshop-quickscan/) van € 495 het startpunt: tot 5 uur handmatige controle door
+een senior auditor, met de grootste knelpunten op een rij. Na het oplossen legt een
+[hercontrole](/hercontrole/) vast dat de bevindingen weg zijn, en dat is het bewijs dat je nodig
+hebt als de ACM aanklopt.
+
+{{< /section-full >}}

@@ -1,7 +1,8 @@
 {{ $title := .Get "title" }}
 {{ $subtitle := .Get "subtitle" }}
+{{ $id := .Get "id" }}
 
-<section class="section-steps">
+<section class="section-steps"{{ with $id }} id="{{ . }}"{{ end }}>
   <div class="container">
     {{ if or $title $subtitle }}
     <div class="section-steps__header">

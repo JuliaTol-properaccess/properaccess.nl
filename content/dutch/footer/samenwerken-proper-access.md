@@ -106,7 +106,7 @@ Wij doen dit fulltime, sinds 2019. Ons team test wekelijks nieuwe situaties, ond
 
 {{< section-full title="Wat kun je verwachten?" bg="light" >}}
 
-- **900+ audits uitgevoerd**, van overheidsinstanties, musea tot webshops
+- **950+ audits uitgevoerd**, van overheidsinstanties, musea tot webshops
 - **Rapporten die je team direct kan gebruiken**: per pagina, per element, met screenshots en code-snippets
 - **Onbeperkt vragen stellen na het rapport**: we denken mee tot het resultaat er staat
 - **Een partner die meedenkt**: niet alleen een rapport opleveren, maar denken graag mee over de alternatieve oplossingen

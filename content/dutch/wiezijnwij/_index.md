@@ -1,7 +1,7 @@
 ---
 layout: "second-page"
 meta_title: "Over Proper Access: auditbureau digitale toegankelijkheid"
-description: "Proper Access is een onafhankelijk auditbureau voor digitale toegankelijkheid. 900+ audits, directe toegang tot je auditor en rapporten met concrete oplossingen."
+description: "Proper Access is een onafhankelijk auditbureau voor digitale toegankelijkheid. 950+ audits, directe toegang tot je auditor en rapporten met concrete oplossingen."
 
 # Banner
 banner:
@@ -19,7 +19,7 @@ features:
     image: "/images/logos.webp"
     content: "Hoe kies je de beste partner voor zoiets belangrijk en omvangrijk als digitale toegankelijkheid? Ervaring, reputatie, continuïteit en certificering zijn de belangrijkste argumenten."
     bulletpoints:
-      - "900+ audits uitgevoerd sinds 2019"
+      - "950+ audits uitgevoerd sinds 2019"
       - "Duidelijke tarieven"
       - "Sterk technisch team"
       - "IAAP-gecertificeerd: WAS en CPACC"

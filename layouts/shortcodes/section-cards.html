@@ -3,8 +3,9 @@
 {{ $image := .Get "image" }}
 {{ $bg := .Get "bg" }}
 {{ $columns := .Get "columns" | default "3" }}
+{{ $id := .Get "id" }}
 
-<section class="section-cards{{ if eq $bg "light" }} section-cards--light{{ end }}{{ if eq $bg "dark" }} section-cards--dark{{ end }}">
+<section class="section-cards{{ if eq $bg "light" }} section-cards--light{{ end }}{{ if eq $bg "dark" }} section-cards--dark{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
   <div class="hp-container">
     {{ if or $title $subtitle $image }}
     <div class="section-cards__header{{ with $image }} section-cards__header--with-image{{ end }}">
