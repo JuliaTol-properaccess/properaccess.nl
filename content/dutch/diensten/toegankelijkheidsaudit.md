@@ -91,9 +91,10 @@ De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord
 formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
 
 De maatstaf onder de European Accessibility Act en onder het Besluit digitale toegankelijkheid
-overheid is de Europese norm EN 301 549. Die verwijst op dit moment naar WCAG 2.1 niveau AA en
-stelt daarnaast eisen aan onder meer documentatie en klantondersteuning. Wij toetsen een versie
-hoger, aan WCAG 2.2, omdat die criteria backwards compatible zijn en de norm er naartoe gaat.
+overheid is de Europese norm EN 301 549. De geldende norm is op dit moment WCAG 2.1 niveau AA.
+EN 301 549 stelt daarnaast eisen aan onder meer documentatie en klantondersteuning. Wij toetsen
+aan WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles uit 2.1 zit
+erin.
 
 {{< /section-full >}}
 

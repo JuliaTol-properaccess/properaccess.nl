@@ -114,10 +114,11 @@ omdat je projectmanager en je klant moeten kunnen zien waarom iets prioriteit he
 niet met een criteriumnummer. Daarnaast een screenshot, een code-voorbeeld en een CSV met alle
 bevindingen die je rechtstreeks in Jira of Linear kunt inlezen.
 
-We kennen React, Vue en WordPress, en we weten waar toegankelijkheid in elk van die stacks
-meestal misgaat. Zegt een developer dat iets niet kan binnen het framework,
-dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in plaats van
-een bevinding te laten staan die niemand oplost.
+Inmiddels kennen we zo'n 150 verschillende systemen, van maatwerkframeworks tot
+standaard-CMS'en. We weten daardoor meestal al waar toegankelijkheid in jullie stack misgaat
+voordat we beginnen. Zegt een developer dat iets niet kan binnen het
+framework, dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in
+plaats van een bevinding te laten staan die niemand oplost.
 
 Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
 een tweede opdracht. Peildatum 7 augustus 2026.

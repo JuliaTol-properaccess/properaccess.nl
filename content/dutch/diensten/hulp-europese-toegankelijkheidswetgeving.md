@@ -42,7 +42,7 @@ trust:
 
 faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
-    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2 niveau AA, een niveau hoger dan EN 301 549 op dit moment vraagt, zodat je niet over twee jaar opnieuw begint. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de problemen zijn opgelost, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
+    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de problemen zijn opgelost, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
   - question: "Vanaf wanneer geldt de European Accessibility Act?"
     answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen euro omzet, dan geldt de plicht niet."
   - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
@@ -66,14 +66,14 @@ bedrijf, terwijl er technisch niets verschilt.
 | European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Verdeeld over meerdere toezichthouders, per soort product of dienst |
 | Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2018 | Verantwoording via het Register van Toegankelijkheidsverklaringen |
 
-Beide wijzen naar dezelfde norm: **EN 301 549**. Die verwijst op dit moment naar WCAG 2.1
-niveau AA, en stelt daarnaast eisen aan je klantondersteuning en aan de informatie die je zelf
-over toegankelijkheid publiceert. De eisen aan je site verschillen dus niet tussen een gemeente
-en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt.
+Beide wijzen naar dezelfde norm: **EN 301 549**. De geldende norm is op dit moment WCAG 2.1
+niveau AA. EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
+je zelf over toegankelijkheid publiceert. De eisen aan je site verschillen dus niet tussen een
+gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er
+meekijkt.
 
-Wij toetsen aan WCAG 2.2, een versie hoger dan de norm nu vraagt. Die criteria zijn backwards
-compatible en de norm gaat er in een volgende versie naartoe, dus je bent er dan al klaar voor
-in plaats van dat je opnieuw begint.
+Wij toetsen aan WCAG 2.2 als extra service. Die criteria zijn backwards compatible, dus alles
+uit 2.1 zit erin.
 
 Er is één uitzondering onder de EAA. Verkoop je met minder dan 10 medewerkers en blijf je onder
 de 2 miljoen euro omzet, dan geldt de plicht niet.

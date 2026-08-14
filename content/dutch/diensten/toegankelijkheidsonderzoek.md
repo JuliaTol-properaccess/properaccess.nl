@@ -73,10 +73,10 @@ formulier loopt, de focusvolgorde controleert en inzoomt tot 400%. Dat is waarom
 uren kost en een scan seconden, en waarom alleen het eerste bruikbaar is als bewijs.
 
 Wil je aantonen dat je voldoet aan de European Accessibility Act of aan het Besluit digitale
-toegankelijkheid overheid, dan is de Europese norm EN 301 549 de maatstaf. Die verwijst op dit
-moment naar WCAG 2.1 niveau AA en stelt daarnaast eisen aan onder meer je klantondersteuning en
-aan de informatie die je over toegankelijkheid publiceert. Wij toetsen aan WCAG 2.2, een versie
-hoger, zodat je klaar bent als de norm meegaat.
+toegankelijkheid overheid, dan is de Europese norm EN 301 549 de maatstaf. De geldende norm is
+op dit moment WCAG 2.1 niveau AA. EN 301 549 stelt daarnaast eisen aan onder meer je
+klantondersteuning en aan de informatie die je over toegankelijkheid publiceert. Wij toetsen aan
+WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles uit 2.1 zit erin.
 
 {{< /section-full >}}
 

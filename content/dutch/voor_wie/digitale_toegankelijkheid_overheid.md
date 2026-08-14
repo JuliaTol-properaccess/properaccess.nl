@@ -152,9 +152,4 @@ werk beoordelen, en geen belang bij een gunstige uitkomst. Voor een overheidsorg
 niet alleen prettig, het is ook wat een auditrapport bruikbaar maakt als bewijs richting
 toezicht en gemeenteraad.
 
-Sinds 2019 deden we 950 audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
-een tweede opdracht. Peildatum 7 augustus 2026. Onze openbare rapporten voor onder meer de
-provincies Noord- en Zuid-Holland en de gemeente Amersfoort kun je inzien, zodat je vooraf ziet
-wat je krijgt.
-
 {{< /section-full >}}
