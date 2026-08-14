@@ -42,8 +42,8 @@ trust:
     - "Gemeente 's-Hertogenbosch"
 
 faqs:
-  - question: "Voldoet een audit van Proper Access aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
-    answer: "Ja. Onze audits zijn gebaseerd op WCAG 2.2 (niveau A + AA) en uitgevoerd volgens de formele richtlijnen van DigiToegankelijk. Ze voldoen volledig aan de eisen uit het BDTO. Je kunt ons rapport gebruiken om je toegankelijkheidsverklaring te onderbouwen."
+  - question: "Kan ik met jullie rapport aantonen dat ik voldoe aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
+    answer: "Ja, daar is het rapport voor gemaakt. We onderzoeken volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist, en volgens de richtlijnen van DigiToegankelijk. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Je gebruikt het rapport om je toegankelijkheidsverklaring te onderbouwen, en we helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk."
   - question: "Kunnen jullie helpen bij het opstellen of actualiseren van een toegankelijkheidsverklaring?"
     answer: "Zeker. Na de audit helpen we je bij het opstellen van een correcte en actuele toegankelijkheidsverklaring, conform het format van toegankelijkheidsverklaring.nl. We begeleiden je ook in de Mijn-omgeving van DigiToegankelijk en bij het verwerken van feedback via DIP."
   - question: "Kunnen jullie ook apps en intranetten toetsen?"
@@ -57,7 +57,7 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen, onbeperkt en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
-    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland, de Sociale Verzekeringsbank en de gemeenten Amersfoort, Alkmaar, 's-Hertogenbosch en Terneuzen."
+    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---
 
 {{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
