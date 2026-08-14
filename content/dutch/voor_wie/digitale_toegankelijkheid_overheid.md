@@ -68,8 +68,8 @@ met een publieke taak. Voor websites geldt de plicht sinds 2020, voor mobiele ap
 
 De plicht dekt je hele digitale dienstverlening: je hoofdwebsite, maar ook subsites,
 aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van die kanalen
-heeft een eigen toegankelijkheidsverklaring nodig in het Register van
-Toegankelijkheidsverklaringen.
+heeft een eigen toegankelijkheidsverklaring nodig in het
+[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
 
 {{< /section-full >}}
 

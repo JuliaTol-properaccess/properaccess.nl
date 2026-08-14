@@ -68,7 +68,8 @@ Er is één uitzondering. Verkoop je met minder dan 10 medewerkers en blijf je o
 euro omzet, dan geldt de plicht niet. Vrijwel elke webshop met een eigen developmentteam valt
 er dus wel onder.
 
-In Nederland houdt de Autoriteit Consument en Markt toezicht. De ACM onderzocht in juni 2026
+Het toezicht op de EAA is in Nederland verdeeld over meerdere toezichthouders, per soort
+product of dienst. Voor webshops is dat de Autoriteit Consument en Markt. De ACM onderzocht in juni 2026
 honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen; bij tien grote
 winkels waren die ernstig. De toezichthouder kondigde een hertest na drie maanden aan, met een
 boete voor wie dan nog niet voldoet. Wat de ACM daarbij zegt is belangrijker dan het cijfer:

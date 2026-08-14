@@ -46,7 +46,7 @@ faqs:
   - question: "Vanaf wanneer geldt de European Accessibility Act?"
     answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen euro omzet, dan geldt de plicht niet."
   - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
-    answer: "De Autoriteit Consument en Markt. De ACM onderzocht in juni 2026 honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen, bij tien grote winkels ernstige. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
+    answer: "Niet één partij. Het toezicht op de EAA is in Nederland verdeeld over meerdere toezichthouders, afhankelijk van het soort product of dienst. Voor webshops en online consumentendiensten is dat de Autoriteit Consument en Markt. De ACM onderzocht in juni 2026 honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen, bij tien grote winkels ernstige. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
   - question: "Voldoen we aan de wet als we een overlay-tool installeren?"
     answer: "Nee. De ACM was daar op de Dag van Digitale Toegankelijkheid duidelijk over: overlays verbeteren maar heel weinig aan je site en zorgen er niet voor dat je aan de wet voldoet. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie."
   - question: "Onze leverancier wil de problemen niet oplossen. Wat nu?"
@@ -63,7 +63,7 @@ bedrijf, terwijl er technisch niets verschilt.
 
 | Wet | Voor wie | Sinds | Toezicht |
 | --- | --- | --- | --- |
-| European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Autoriteit Consument en Markt |
+| European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Verdeeld over meerdere toezichthouders, per soort product of dienst |
 | Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2020 voor websites, 2021 voor apps | Verantwoording via het Register van Toegankelijkheidsverklaringen |
 
 Beide wijzen naar dezelfde norm: **EN 301 549**. Die verwijst op dit moment naar WCAG 2.1
@@ -139,7 +139,7 @@ Hoe andere organisaties deze route lopen en waar zij tegenaan lopen, kun je meel
 
 {{< section-full title="Volg de markt met de EAA-monitor" id="eaa-monitor" bg="light" >}}
 
-Je staat er niet alleen voor. Met onze [EAA-monitor](https://eaa-monitor.nl) krijg je inzicht in
+Je staat er niet alleen voor. Met de [EAA-monitor](https://eaa-monitor.nl) van Flonam krijg je inzicht in
 hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je
 leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen
 experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je
