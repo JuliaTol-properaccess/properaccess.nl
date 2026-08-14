@@ -15,7 +15,7 @@ Talen: Nederlands, Engels, Zweeds
 
 ## Over Proper Access
 
-Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 900+ audits uitgevoerd, 236 opdrachten bij 63 klanten — waaronder Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo. 40% van onze klanten komt terug. Peildatum van die cijfers: 7 augustus 2026.
+Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 950+ audits uitgevoerd, 236 opdrachten bij 63 klanten — waaronder Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo. 40% van onze klanten komt terug. Peildatum van die cijfers: 7 augustus 2026.
 
 Wat ons onderscheidt:
 - **Rapport per element**, niet per WCAG-succescriterium zoals de rest van de markt

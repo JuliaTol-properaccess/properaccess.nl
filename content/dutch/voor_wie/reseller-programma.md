@@ -99,7 +99,7 @@ Je ontvangt elke maand een blogartikel en elk kwartaal een EAA/WCAG-update voor 
 
 {{< section-full title="Over Proper Access" >}}
 
-Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We hebben 900+ audits uitgevoerd voor organisaties als het Rijksmuseum, Provincie Noord-Holland en NRC. Onze rapporten zijn per element opgebouwd, niet per succescriterium, zodat developers direct weten wat ze moeten aanpassen.
+Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We hebben 950+ audits uitgevoerd voor organisaties als het Rijksmuseum, Provincie Noord-Holland en NRC. Onze rapporten zijn per element opgebouwd, niet per succescriterium, zodat developers direct weten wat ze moeten aanpassen.
 
 {{< /section-full >}}
 

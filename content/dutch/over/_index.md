@@ -29,7 +29,7 @@ banner:
     in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
     met onze klanten.
   bulletpoints:
-    - "Opgericht in 2019, 900+ audits uitgevoerd"
+    - "Opgericht in 2019, 950+ audits uitgevoerd"
     - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
     - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
@@ -63,7 +63,7 @@ team:
       highlights:
         - "Senior WCAG-auditor, IAAP-gecertificeerd (WAS)"
         - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-        - "900+ audits uitgevoerd sinds 2019"
+        - "950+ audits uitgevoerd sinds 2019"
         - "Werkt direct met klanten, geen tussenlaag van accountmanagers"
     - name: "Het team achter Julia"
       role: "Een team van 10 auditors, onderzoekers en reviewers"

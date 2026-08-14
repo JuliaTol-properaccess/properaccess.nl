@@ -10948,6 +10948,15 @@ html.dark .tool-fout__level {
   text-align: center;
 }
 
+/* Op de donkere statistiekenblokken erfde de peildatum de donkere bodytekst en
+   werd hij daardoor onleesbaar: 1,3:1 op de petrol balk. Wit op 0,8 dekking komt
+   uit op 7,9:1 (#004050) en 9,8:1 (#1F2937). */
+.vw-stats .stats-peildatum,
+.hp-legal-cta__card .stats-peildatum {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
 /* ─── FAQ ─── */
 .vw-faq {
   background-color: #1F2937;

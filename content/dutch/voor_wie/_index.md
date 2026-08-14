@@ -39,7 +39,7 @@ Kunnen al je studenten bij de lesstof? Van LMS-platformen tot e-learning modules
 Wij ondersteunen bedrijven en organisaties die digitale toegankelijkheid willen begrijpen én verbeteren.
 
 - 7 jaar ervaring met WCAG
-- 900+ audits uitgevoerd
+- 950+ audits uitgevoerd
 - 12 eigen auditors
 
 - 150+ klanten

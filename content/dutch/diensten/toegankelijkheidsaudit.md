@@ -127,7 +127,7 @@ Accessibility Act en onder het Besluit digitale toegankelijkheid overheid.
 {{< section-full title="Waarom een steekproef genoeg is" >}}
 
 Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
-tweeduizend URL's. In 900 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
+tweeduizend URL's. In 950 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
 templates zitten. Een pagina toevoegen die dezelfde template gebruikt levert dan dezelfde
 bevinding nog een keer op, en die tijd besteed je beter aan het uitwerken van oplossingen.
 Zitten er uitzonderingen tussen, zoals een kaartmodule of een pdf-viewer, dan nemen we die er
@@ -209,7 +209,7 @@ Zuid-Holland en de gemeenten Amersfoort en Alkmaar schakelen ons daarom in naast
 bouwer.
 
 {{< /section-card >}}
-{{< section-card title="900 audits sinds 2019" >}}
+{{< section-card title="950 audits sinds 2019" >}}
 
 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor een tweede opdracht. Peildatum
 7 augustus 2026. Een deel van die rapporten is openbaar, dus je kunt vooraf zien wat je krijgt.
