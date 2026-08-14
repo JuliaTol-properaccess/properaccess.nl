@@ -132,12 +132,53 @@ jobs:
             -H "Content-Type: application/json" \
             --data '{"purge_everything":true}'
 
-      - name: Ping Google to recrawl sitemap
-        run: curl -s "https://www.google.com/ping?sitemap=https://www.properaccess.nl/sitemap.xml"
-
       # IndexNow nudge voor Bing/Copilot (ChatGPT-search leunt op de Bing-index).
       # De key is publiek (gepubliceerd op /<key>.txt), dus geen secret.
-      # Basislijst met kernpagina's; uit te breiden met change-detectie indien gewenst.
+      #
+      # Stuurt de URL's die de afgelopen 3 dagen zijn gewijzigd, afgeleid uit de
+      # lastmod in de gebouwde sitemaps. Dat werkt alleen goed met enableGitInfo
+      # in hugo.toml: zonder dat is lastmod gelijk aan de publicatiedatum en
+      # wordt gewijzigde content nooit gemeld. Het venster is 3 dagen zodat een
+      # overgeslagen of mislukte deploy niet betekent dat een pagina helemaal
+      # niet wordt ingestuurd.
+      #
+      # De Google sitemap-ping die hier stond is verwijderd: dat endpoint is in
+      # juni 2023 uitgezet en gaf stilzwijgend niets terug.
       - name: Ping IndexNow (Bing/Copilot)
         run: |
-          curl -s -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json" -d '{"host":"www.properaccess.nl","key":"4da3b6cd119f757a090fc80e4ce46fd2","keyLocation":"https://www.properaccess.nl/4da3b6cd119f757a090fc80e4ce46fd2.txt","urlList":["https://www.properaccess.nl/","https://www.properaccess.nl/toegankelijkheidsaudit/"]}'
+          python3 - <<'PY' > /tmp/indexnow.json
+          import glob, json, xml.etree.ElementTree as ET
+          from datetime import datetime, timedelta, timezone
+
+          NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          cutoff = datetime.now(timezone.utc) - timedelta(days=3)
+          urls = []
+          for path in glob.glob("public/**/sitemap.xml", recursive=True):
+              root = ET.parse(path).getroot()
+              if root.tag.endswith("sitemapindex"):
+                  continue
+              for url in root.findall("sm:url", NS):
+                  loc = url.findtext("sm:loc", namespaces=NS)
+                  mod = url.findtext("sm:lastmod", namespaces=NS)
+                  if not loc or not mod:
+                      continue
+                  try:
+                      if datetime.fromisoformat(mod) >= cutoff:
+                          urls.append(loc)
+                  except ValueError:
+                      continue
+
+          urls = sorted(set(urls))[:10000]
+          print(json.dumps({
+              "host": "www.properaccess.nl",
+              "key": "4da3b6cd119f757a090fc80e4ce46fd2",
+              "keyLocation": "https://www.properaccess.nl/4da3b6cd119f757a090fc80e4ce46fd2.txt",
+              "urlList": urls,
+          }))
+          PY
+          count=$(python3 -c "import json;print(len(json.load(open('/tmp/indexnow.json'))['urlList']))")
+          echo "IndexNow: $count gewijzigde URL's"
+          if [ "$count" -gt 0 ]; then
+            curl -s -X POST "https://api.indexnow.org/indexnow" \
+              -H "Content-Type: application/json" --data @/tmp/indexnow.json
+          fi

@@ -1,36 +1,54 @@
 # Proper Access
 
-> Onafhankelijk auditbureau voor digitale toegankelijkheid. WCAG-audits, trainingen en doorlopende ondersteuning.
+> Onafhankelijk auditbureau voor digitale toegankelijkheid in Nederland. Wij voeren
+> toegankelijkheidsonderzoek uit volgens WCAG 2.2 niveau AA en de WCAG-EM methodiek, geven
+> trainingen en begeleiden organisaties bij het voldoen aan de European Accessibility Act (EAA)
+> en het Besluit digitale toegankelijkheid overheid (BDTO). Wij bouwen en beheren zelf geen
+> websites, dus we keuren nooit ons eigen werk.
 
-## Diensten
+## Toegankelijkheidsonderzoek
 
-- [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): Volledige WCAG 2.2 AA audit met rapport per element
+- [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): volledig onderzoek van een website aan alle 55 succescriteria van WCAG 2.2 niveau AA, met een rapport per element
+- [App-audit](https://www.properaccess.nl/app-toegankelijkheid-testen/): handmatig onderzoek van een iOS- of Android-app op echte toestellen met VoiceOver en TalkBack, getoetst aan WCAG 2.1 en EN 301 549
+- [Contentaudit](https://www.properaccess.nl/contentaudit/): deelonderzoek van alleen de content die je webredactie beheert, 33 van de 55 succescriteria
+- [Techniek- of systeemaudit](https://www.properaccess.nl/techniekaudit/): deelonderzoek van componenten, code en interactiepatronen, 48 van de 55 succescriteria, voor softwareleveranciers en SaaS-partijen
+- [Mini-audit](https://www.properaccess.nl/webshop-quickscan/): tot 5 uur handmatige controle door een senior auditor, 495 euro exclusief btw, rapport binnen 5 werkdagen
+- [Hercontrole](https://www.properaccess.nl/hercontrole/): retest die vastlegt dat de bevindingen uit een eerder onderzoek zijn opgelost, tot 12 weken na het oorspronkelijke rapport
+
+## Ondersteuning en training
+
 - [Testen tijdens de bouw](https://www.properaccess.nl/toegankelijkheid-testen-tijdens-de-bouw/): WCAG-tests in de sprint, directe feedback voor developers
-- [Strippenkaart](https://www.properaccess.nl/strippenkaart/): Flexibele toegankelijkheidsondersteuning op uurbasis
-- [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): Meerjarig partnerschap met audits, trainingen en tooling
-- [Training voor devteams](https://www.properaccess.nl/training-devteams/): Praktische WCAG-training voor developers
-- [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): Training toegankelijke webcontent en PDF's
-- [Quickscan](https://www.properaccess.nl/webshop-quickscan/): Gratis quickscan van je website
+- [Strippenkaart](https://www.properaccess.nl/strippenkaart/): losse uren voor meedenken bij het oplossen, code reviews en tussentijds testen
+- [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): meerjarig partnerschap met onderzoek, trainingen en tooling
+- [Training voor devteams](https://www.properaccess.nl/training-devteams/): praktische WCAG-training voor developers
+- [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): training toegankelijke webcontent en PDF's
+- [Zo werken wij](https://www.properaccess.nl/zo-werken-wij/): onze werkwijze per stap, van intake tot heronderzoek
 
 ## Sectoren
 
-- [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): BDTO-compliance voor gemeenten en uitvoeringsorganisaties
-- [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA-compliance voor webshops en e-diensten
-- [Cultuur en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): Toegankelijke websites voor musea, theaters en attracties
-- [Digital agencies](https://www.properaccess.nl/digital-agency/): Samenwerking met agencies op toegankelijkheidsprojecten
+- [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): BDTO voor gemeenten, provincies en uitvoeringsorganisaties
+- [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA voor webshops en e-diensten
+- [Cultuur, sport en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): musea, theaters, festivals en ticketing
+- [Onderwijs](https://www.properaccess.nl/onderwijs-digitale-toegankelijkheid/): leeromgevingen zoals Moodle en Canvas
+- [Digital agencies](https://www.properaccess.nl/digital-agency/): samenwerking met bureaus die voor hun klanten bouwen
 
 ## Gratis tools
 
-- [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/): Bookmarklet met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op elke pagina toont
-- [Foutmeldingen naslagwerk](https://www.properaccess.nl/tools/foutmeldingen/): Voorbeelden van toegankelijke foutmeldingen
-- [ARIA referentie](https://www.properaccess.nl/tools/aria-referentie/): Naslagwerk voor ARIA-attributen
+- [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/): bookmarklet met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op elke pagina toont
+- [Toegankelijkheidsverklaring opstellen (EAA)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/)
+- [Toegankelijkheidsverklaring opstellen (BDTO)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-wdo/)
+- [Alt-tekst keuzehulp](https://www.properaccess.nl/tools/alt-tekst-keuzehulp/): welke alt-tekst hoort bij welk type afbeelding
+- [PDF-checker](https://www.properaccess.nl/tools/pdf-checker/)
+- [Foutmeldingen naslagwerk](https://www.properaccess.nl/tools/foutmeldingen/): voorbeelden van toegankelijke foutmeldingen
+- [ARIA referentie](https://www.properaccess.nl/tools/aria-referentie/): naslagwerk voor ARIA-attributen
+- [Succescriteria per beperking](https://www.properaccess.nl/tools/sc-per-beperking/)
 
 ## Over ons
 
-- [Over Proper Access](https://www.properaccess.nl/auditbureau-digitale-toegankelijkheid/): 900+ audits, 53 opdrachtgevers, onafhankelijk
+- [Over Proper Access](https://www.properaccess.nl/auditbureau-digitale-toegankelijkheid/): 900+ audits sinds 2019, 236 opdrachten voor 63 opdrachtgevers, 40% komt terug voor een tweede opdracht (peildatum 7 augustus 2026)
 - [Contact](https://www.properaccess.nl/contact/): 085 5055 890
 - [Offerte aanvragen](https://www.properaccess.nl/offerte-wcag-onderzoek/)
 
 ## Blog
 
-- [Blog](https://www.properaccess.nl/blog/): Artikelen over WCAG, EAA en digitale toegankelijkheid
+- [Blog](https://www.properaccess.nl/blog/): artikelen over WCAG, de EAA, het BDTO en digitale toegankelijkheid

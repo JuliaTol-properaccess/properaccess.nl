@@ -61,33 +61,51 @@ weight = 3
 
 [[main]]
 parent = "Diensten"
+name = "Contentaudit"
+url = "/contentaudit/"
+weight = 4
+
+[[main]]
+parent = "Diensten"
+name = "Techniek- of systeemaudit"
+url = "/techniekaudit/"
+weight = 5
+
+[[main]]
+parent = "Diensten"
+name = "Hercontrole"
+url = "/hercontrole/"
+weight = 6
+
+[[main]]
+parent = "Diensten"
 name = "Strippenkaart"
 url = "/strippenkaart/"
-weight = 4
+weight = 7
 
 [[main]]
 parent = "Diensten"
 name = "Abonnement"
 url = "/toegankelijkheids-abonnement/"
-weight = 5
+weight = 8
 
 [[main]]
 parent = "Diensten"
 name = "Training devteam"
 url = "/training-devteams/"
-weight = 6
+weight = 9
 
 [[main]]
 parent = "Diensten"
 name = "Training webredactie"
 url = "/trainen-van-webredactie/"
-weight = 7
+weight = 10
 
 [[main]]
 parent = "Diensten"
 name = "Zo werken wij"
 url = "/zo-werken-wij/"
-weight = 8
+weight = 11
 
 [[main]]
 name = "Blog"

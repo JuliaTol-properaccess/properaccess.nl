@@ -15,7 +15,7 @@ keywords:
   - WCAG
   - Afbeeldingen in webshops
   - knop zonder naam
-image: "/images/blog/webshop-wireframe-eaa.svg"
+image: "/images/blog/serie-afbeeldingen-webshops/knop-zonder-naam.webp"
 ---
 
 Je hebt op je website een zoekveld met een knop. Op een desktop staat er "Zoeken" naast het vergrootglas-icoon. Prima, dat werkt. Maar wat gebeurt er als je inzoomt of de pagina op een telefoon bekijkt? De tekst "Zoeken" verdwijnt en alleen het icoon blijft over. En als dat icoon geen tekstalternatief heeft, dan weet iemand die voorleessoftware gebruikt niet wat die knop doet. Ze horen: "Knop." Dat is alles. Geen "zoeken", geen "versturen", gewoon "knop."
