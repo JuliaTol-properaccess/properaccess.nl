@@ -136,37 +136,55 @@ jobs:
       # De key is publiek (gepubliceerd op /<key>.txt), dus geen secret.
       #
       # Stuurt de URL's die de afgelopen 3 dagen zijn gewijzigd, afgeleid uit de
-      # lastmod in de gebouwde sitemaps. Dat werkt alleen goed met enableGitInfo
-      # in hugo.toml: zonder dat is lastmod gelijk aan de publicatiedatum en
-      # wordt gewijzigde content nooit gemeld. Het venster is 3 dagen zodat een
+      # lastmod in de sitemaps. Dat werkt alleen goed met enableGitInfo in
+      # hugo.toml: zonder dat is lastmod gelijk aan de publicatiedatum en wordt
+      # gewijzigde content nooit gemeld. Het venster is 3 dagen zodat een
       # overgeslagen of mislukte deploy niet betekent dat een pagina helemaal
       # niet wordt ingestuurd.
+      #
+      # De sitemaps worden over HTTP van de live site gehaald, niet uit public/:
+      # deze stap draait in de deploy-job en die heeft geen checkout en geen
+      # build-output. Bijkomend voordeel is dat we alleen insturen wat er
+      # werkelijk gepubliceerd staat.
       #
       # De Google sitemap-ping die hier stond is verwijderd: dat endpoint is in
       # juni 2023 uitgezet en gaf stilzwijgend niets terug.
       - name: Ping IndexNow (Bing/Copilot)
         run: |
+          sleep 15  # even wachten tot Pages en de Cloudflare-purge doorwerken
           python3 - <<'PY' > /tmp/indexnow.json
-          import glob, json, xml.etree.ElementTree as ET
+          import json, urllib.request, xml.etree.ElementTree as ET
           from datetime import datetime, timedelta, timezone
 
           NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          INDEX = "https://www.properaccess.nl/sitemap.xml"
           cutoff = datetime.now(timezone.utc) - timedelta(days=3)
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "properaccess-deploy"})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return ET.fromstring(r.read())
+
           urls = []
-          for path in glob.glob("public/**/sitemap.xml", recursive=True):
-              root = ET.parse(path).getroot()
+          try:
+              root = fetch(INDEX)
               if root.tag.endswith("sitemapindex"):
-                  continue
-              for url in root.findall("sm:url", NS):
-                  loc = url.findtext("sm:loc", namespaces=NS)
-                  mod = url.findtext("sm:lastmod", namespaces=NS)
-                  if not loc or not mod:
-                      continue
-                  try:
-                      if datetime.fromisoformat(mod) >= cutoff:
-                          urls.append(loc)
-                  except ValueError:
-                      continue
+                  children = [s.findtext("sm:loc", namespaces=NS) for s in root.findall("sm:sitemap", NS)]
+              else:
+                  children = [INDEX]
+              for child in filter(None, children):
+                  for url in fetch(child).findall("sm:url", NS):
+                      loc = url.findtext("sm:loc", namespaces=NS)
+                      mod = url.findtext("sm:lastmod", namespaces=NS)
+                      if not loc or not mod:
+                          continue
+                      try:
+                          if datetime.fromisoformat(mod) >= cutoff:
+                              urls.append(loc)
+                      except ValueError:
+                          continue
+          except Exception as e:  # een mislukte ping mag de deploy niet laten falen
+              print(f"sitemap ophalen mislukt: {e}", file=__import__("sys").stderr)
 
           urls = sorted(set(urls))[:10000]
           print(json.dumps({
