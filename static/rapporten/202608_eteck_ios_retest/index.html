@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202608_eteck_ios_retest">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Hercontrole digitale toegankelijkheid van de iOS-app MijnEteck, versie 26.7.2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1781955322224">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1782583988082"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+      
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        <li><a href="#01-algemene-knelpunten">Algemene knelpunten</a></li><li><a href="#02-inloggen">Inloggen</a></li><li><a href="#03-privacy-statement">Privacy statement</a></li><li><a href="#04-welkom-bij-eteck">Welkom bij Eteck</a></li><li><a href="#05-overzicht">Overzicht</a></li><li><a href="#06-maandbedrag">Maandbedrag</a></li><li><a href="#07-voorschot-wijzigen">Voorschot wijzigen</a></li><li><a href="#08-contact">Contact</a></li><li><a href="#09-meer">Meer</a></li><li><a href="#10-mijn-gegevens">Mijn gegevens</a></li><li><a href="#11-storingen">Storingen</a></li><li><a href="#12-communicatie-voorkeuren">Communicatie-voorkeuren</a></li><li><a href="#13-betalingen">Betalingen</a></li><li><a href="#14-documenten">Documenten</a></li><li><a href="#15-voorkeuren">Voorkeuren</a></li><li><a href="#16-individueel-warmte">Individueel (Warmte)</a></li><li><a href="#17-vul-een-toegangscode-in">Vul een toegangscode in</a></li><li><a href="#18-verbruik">Verbruik</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Hercontrole digitale toegankelijkheid van de iOS-app MijnEteck, versie 26.7.2</h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de hercontrole van de MijnEteck iOS-app uitgevoerd in augustus 2026, op versie 26.7.2 (26.3.111). We hebben de 72 bevindingen uit de audit van juli 2025 opnieuw getoetst aan de norm WCAG 2.1, niveau AA, en de Europese norm EN 301 549. 27 bevindingen zijn opgelost en vallen daarom buiten dit rapport. De bevindingen die hieronder staan, zijn nog niet opgelost.</p>
+<p>De nummers van de bevindingen zijn gelijk aan die in de oorspronkelijke audit, zodat je elke bevinding gemakkelijk terugvindt. De bevindingen zijn per scherm geordend.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.svg" alt="Logo van Eteck B.V.">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="50"
+           data-perceivable="20"
+           data-operable="17"
+           data-understandable="10"
+           data-robust="3">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">50</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Medium: <strong id="stat-medium">0</strong></span>
+          <span>Groot: <strong id="stat-groot">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="50"
+             data-perceivable="20"
+             data-operable="17"
+             data-understandable="10"
+             data-robust="3">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 17</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 10</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>In opdracht van</dt>
+              <dd>Eteck B.V.</dd>
+              
+              <dt>Leverancier techniek</dt>
+              <dd>iOS (iPhone 17 Pro, iOS 26.5.2)</dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>13 augustus 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>Alle eerder geconstateerde bevindingen in de MijnEteck iOS-app uit de audit van juli 2025</li>
+              
+            </ul>
+            
+            
+            <p><strong>Buiten scope:</strong></p>
+            <ul>
+              
+              <li>Het inlogscherm, dat nu via een webview wordt getoond en niet meer als eigen scherm in de app bestaat</li>
+              
+              <li>Het scherm &quot;Privacy statement&quot;, dat niet meer in de app aanwezig is</li>
+              
+              <li>Inhoud afkomstig van derden</li>
+              
+            </ul>
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>iPhone 17 Pro (iOS-versie 26.5.2)</li>
+              
+              <li>VoiceOver schermlezer</li>
+              
+              <li>Extern toetsenbord</li>
+              
+            </ul>
+
+            <h3>Technologieën van de app</h3>
+            <ul>
+              
+              <li>iOS (native)</li>
+              
+              <li>VoiceOver</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+
+    
+    
+    <div class="dash-voortgang" id="voortgang">
+      <h2>Voortgang opgeloste bevindingen</h2>
+      <div class="voortgang-opties-grid">
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
+          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
+          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
+          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
+        </div>
+        <div class="voortgang-optie">
+          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
+          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
+          <label class="browser-tracking-toggle">
+            <input type="checkbox" id="browserTrackingToggle">
+            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
+          </label>
+        </div>
+      </div>
+      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
+        <div class="resolved-progress">
+          <div class="resolved-progress-bar">
+            <div class="resolved-progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="resolved-progress-text">
+            <strong class="resolved-count">0</strong> van
+            <strong class="resolved-total">0</strong> opgelost
+          </span>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <section class="dash-info">
+      <div class="accordion accordion-highlight">
+        <details>
+          <summary>VoiceOver aanzetten en gebruiken (iOS)</summary>
+          <div>
+            <p>Om de bevindingen in dit rapport zelf te ervaren, test je de app met <strong>VoiceOver</strong> — de schermlezer die standaard op iedere iPhone en iPad zit. Blinde en slechtziende gebruikers bedienen hun toestel hiermee. Hieronder vind je de stappen om VoiceOver aan te zetten en de gebaren die je nodig hebt.</p>
+<blockquote>
+<p><strong>Tip.</strong> Oefen eerst een paar minuten in de <strong>Gesture Help</strong>: <em>double-tap met vier vingers</em>. In die modus kun je elk gebaar uitproberen zonder dat de app reageert. VoiceOver vertelt je telkens welk gebaar je zojuist hebt gemaakt.</p>
+</blockquote>
+<h4>VoiceOver aan- en uitzetten</h4>
+<p>De snelste manier is een sneltoets instellen. Ga naar <strong>Instellingen → Toegankelijkheid → Toegankelijkheidssneltoets</strong> en kies <strong>VoiceOver</strong>. Vanaf dat moment zet je VoiceOver aan of uit door <strong>drie keer snel op de zijknop</strong> te drukken (op een iPhone X of nieuwer) of op de <strong>Home-knop</strong> (oudere modellen).</p>
+<p>Alternatieven:</p>
+<ul>
+<li><strong>Instellingen → Toegankelijkheid → VoiceOver</strong> → schakelaar aan of uit.</li>
+<li>Vraag Siri: <em>&quot;Hey Siri, zet VoiceOver aan&quot;</em> of <em>&quot;… uit&quot;</em>.</li>
+</ul>
+<h4>De belangrijkste gebaren</h4>
+<p>Zodra VoiceOver aan staat, werkt je toestel anders dan je gewend bent. Eén keer tikken selecteert alleen een element — je moet <strong>double-tappen</strong> om iets te activeren. Dit zijn de gebaren die je nodig hebt om door een scherm te bewegen:</p>
+<table>
+<thead>
+<tr>
+<th>Gebaar</th>
+<th>Wat het doet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Veeg met één vinger naar rechts</strong></td>
+<td>Spring naar het volgende element.</td>
+</tr>
+<tr>
+<td><strong>Veeg met één vinger naar links</strong></td>
+<td>Spring naar het vorige element.</td>
+</tr>
+<tr>
+<td><strong>Double-tap met één vinger</strong></td>
+<td>Activeer het element dat VoiceOver heeft geselecteerd (link openen, knop indrukken, vinkje zetten). Je hoeft niet precies op het element te tikken.</td>
+</tr>
+<tr>
+<td><strong>Triple-tap met één vinger</strong></td>
+<td>Lang indrukken (voor context-menu's en dergelijke).</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers omhoog</strong></td>
+<td>Lees het hele scherm vanaf het begin voor.</td>
+</tr>
+<tr>
+<td><strong>Veeg met twee vingers omlaag</strong></td>
+<td>Lees door vanaf het huidige element.</td>
+</tr>
+<tr>
+<td><strong>Tik met twee vingers</strong></td>
+<td>Pauzeer of hervat de spraak. Handig als je iets wilt opschrijven.</td>
+</tr>
+<tr>
+<td><strong>Veeg met drie vingers omhoog of omlaag</strong></td>
+<td>Scroll door het scherm.</td>
+</tr>
+<tr>
+<td><strong>Tik met vier vingers boven- of onderaan het scherm</strong></td>
+<td>Spring naar het eerste of laatste element op het scherm.</td>
+</tr>
+</tbody>
+</table>
+<h4>De Rotor: springen per type element</h4>
+<p>De <strong>Rotor</strong> is het belangrijkste hulpmiddel om snel door een scherm te navigeren. Je kiest eerst op welk type element je wilt springen — bijvoorbeeld alleen de koppen, alleen de knoppen, of alleen de formuliervelden — en beweegt vervolgens van element naar element.</p>
+<ul>
+<li><strong>Rotor openen of wisselen</strong>: draai twee vingers op het scherm alsof je aan een fysieke draaiknop draait. VoiceOver zegt welke instelling actief is (<em>&quot;Koppen&quot;</em>, <em>&quot;Links&quot;</em>, <em>&quot;Form controls&quot;</em>, …). Draai door tot je de gewenste optie hoort.</li>
+<li><strong>Volgende element van dat type</strong>: veeg met één vinger <strong>omlaag</strong>.</li>
+<li><strong>Vorige element van dat type</strong>: veeg met één vinger <strong>omhoog</strong>.</li>
+</ul>
+<p>Welke opties in de Rotor beschikbaar zijn, stel je in via <strong>Instellingen → Toegankelijkheid → VoiceOver → Rotor</strong>.</p>
+<h4>Bevindingen reproduceren</h4>
+<p>In dit rapport staat bij elke bevinding een <strong>&quot;Hoe te reproduceren&quot;</strong>-sectie. Daar leggen we uit welke stappen en welke gebaren je moet gebruiken om het probleem zelf te zien. Gebruik deze instructie als naslag: als een stap verwijst naar <em>&quot;de volgende kop&quot;</em>, dan weet je dat je de Rotor op <strong>Koppen</strong> moet zetten en met één vinger omlaag veegt.</p>
+<p>Kom je er niet uit? Stuur ons gerust een mail op <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> — we denken graag mee.</p>
+
+          </div>
+        </details>
+      </div>
+    </section>
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="groot">Groot <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Medium <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-algemene-knelpunten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-algemene-knelpunten">01 Algemene knelpunten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Deze bevindingen komen op meerdere schermen in de app voor.</p>
+<div class="issue">
+<h3>#1 - Alle schermen zijn beperkt tot één weergavestand</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.4</span>  
+	<span class="type"><b>EN</b>: 11.1.3.4</span>  
+</div>
+<p>De lay-out van alle schermen is beperkt tot één weergavestand, namelijk staand.</p>
+<p>Apps moeten zowel staand als liggend goed werken. Bezoekers kiezen zelf welke stand voor hen het beste werkt. Je mag daar alleen van afwijken als één stand echt noodzakelijk is. Dit is belangrijk voor mensen die hun toestel aan hun rolstoel hebben gemonteerd en de stand niet kunnen aanpassen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik mijn telefoon in een houder aan mijn rolstoel. Die houder staat vast in liggende stand. Wanneer ik de app open, staat de inhoud gedraaid en kan ik hem niet lezen. Ik verwacht dat de app meedraait met de stand van mijn toestel.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de inhoud van de app draait en zich aanpast aan de weergavestand.</p>
+</div>
+<div class="issue">
+<h3>#2 - Statusberichten worden niet voorgelezen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.3</span>  
+	<span class="type"><b>EN</b>: 11.4.1.3</span>  
+</div>
+<p>Op sommige schermen verschijnt informatie als resultaat van de interactie van de bezoeker met de app. Er verschijnt bijvoorbeeld een foutmelding of een bericht dat een actie is geslaagd. Die informatie is een statusbericht, maar de schermlezer leest het niet voor.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met VoiceOver. Wanneer ik een formulier verstuur en er verschijnt een foutmelding, hoor ik daar niets van. Ik denk dat het gelukt is en ga verder. Ik verwacht dat de schermlezer zo'n bericht meteen aankondigt.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat nieuwe of bijgewerkte informatie duidelijk wordt aangekondigd aan gebruikers van hulpsoftware.</p>
+</div>
+<div class="issue">
+<h3>#6 - Tekst kan niet worden vergroot</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<p>Nieuwe bevinding als gevolg van het oplossen van een bevinding uit de vorige audit:</p>
+<figure class="screenshot">
+<img src="images/1.webp" alt="">
+</figure>
+<p>In het menu onderaan het scherm verandert de tekstgrootte niet mee wanneer je de tekst in de instellingen van je telefoon tot de maximale grootte vergroot. De tekst valt daardoor niet meer weg, want hij schaalt helemaal niet meer mee.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking en heb de tekst in iOS op de grootste stand gezet. Overal in de app groeit de tekst mee, maar in het menu onderaan blijft hij even klein. Juist die knoppen gebruik ik het vaakst. Ik verwacht dat ook die labels meegroeien.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de tekst in het menu onderaan het scherm meeschaalt met de tekstinstelling van het toestel.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-inloggen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-inloggen">02 Inloggen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Dit scherm bestaat niet meer in de app. Inloggen gaat nu via een webview, met een andere vormgeving dan het oorspronkelijke scherm. De bevindingen uit de audit van juli 2025 zijn daarom niet opnieuw onderzocht. De webview valt buiten de scope van deze hercontrole.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-privacy-statement">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-privacy-statement">03 Privacy statement <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Ook dit scherm bestaat niet meer in de app. De bevindingen uit de audit van juli 2025 zijn daarom niet opnieuw onderzocht.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-welkom-bij-eteck">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-welkom-bij-eteck">04 Welkom bij Eteck <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Vul een toegangscode in &gt; Welkom bij Eteck</p>
+<div class="issue">
+<h3>#15 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>In de carrousel staan de koppen &quot;Welkom bij MijnEteck&quot;, &quot;Regel het eenvoudig zelf&quot; en &quot;Heb je een storing?&quot;. Deze teksten zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en spring van kop naar kop om te weten waar ik ben. Op dit scherm vindt de schermlezer geen enkele kop, dus moet ik alle tekst achter elkaar aanhoren. Ik verwacht dat wat er als kop uitziet ook een kop is in de code.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-overzicht">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-overzicht">05 Overzicht <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start, ingelogd &gt; Overzicht</p>
+<div class="issue">
+<h3>#17 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan de kopjes &quot;Overzicht&quot; en &quot;Zelf regelen&quot;. Deze teksten zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik gebruik VoiceOver en navigeer met de rotor op koppen. Op dit scherm krijg ik te horen dat er geen koppen zijn. Ik moet daardoor het hele scherm doorlopen om bij &quot;Zelf regelen&quot; te komen.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#18 - Link heeft geen correcte toegankelijke rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm heeft de link met de tekst &quot;Maandbedrag&quot; niet de juiste toegankelijke rol.</p>
+<p>Elk element heeft standaard een bepaalde rol. Die rol bepaalt wat het element doet en welke eigenschappen en functies het heeft. Schermlezers en andere hulpmiddelen moeten de rol van elk element kennen. Zo kunnen ze op een goede manier met het element omgaan en aan de bezoeker uitleggen wat het doet.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Bij &quot;Maandbedrag&quot; hoor ik alleen de tekst, niet dat ik erop kan tikken. Ik loop er dus gewoon voorbij. Ik verwacht te horen dat het een link is.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg dat de link de juiste rol heeft.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-maandbedrag">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-maandbedrag">06 Maandbedrag <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start &gt; Maandbedrag</p>
+<div class="issue">
+<h3>#19 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan kopjes &quot;Maandbedrag&quot;, &quot;Opbouw maandbedrag&quot;, &quot;Zelf regelen&quot; en andere, die niet als koptekst zijn gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Ik wil weten hoe mijn maandbedrag is opgebouwd, maar ik kan niet naar dat blok springen omdat er geen koppen zijn. Ik verwacht dat ik met de rotor direct bij &quot;Opbouw maandbedrag&quot; kom.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#20 - Leesvolgorde is niet logisch</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.2</span>  
+	<span class="type"><b>EN</b>: 11.1.3.2</span>  
+</div>
+<p>Op dit scherm staat de knop &quot;Wijzigen&quot; naast &quot;Je betaalt 50 euro&quot;. De schermlezer leest voor: &quot;Je betaalt Wijzigen 50 euro&quot;. Dat is geen logische leesvolgorde.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Op dit scherm hoor ik het bedrag door de knoptekst heen. Ik moet twee keer luisteren om te begrijpen wat ik betaal. Ik verwacht dat de tekst wordt voorgelezen in de volgorde waarin hij op het scherm staat.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat tekst die bij elkaar hoort in de juiste volgorde wordt gelezen door schermlezers.</p>
+</div>
+<div class="issue">
+<h3>#22 - De accordeon heeft geen koppen of de rol van kop is overschreven</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staat een sectie met verborgen inhoud, &quot;Voorschot € 199,00&quot;. Het element dat die inhoud opent en sluit heeft niet de rol van koptekst. De teksten waarmee je delen van een accordeon in- en uitklapt, doen dienst als kop voor de inhoud van dat deel. Daarom moeten die teksten ook de rol van kop hebben.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en gebruik koppen om snel het juiste onderdeel te vinden. Deze accordeon staat niet in de lijst met koppen, dus ik moet alles langs om te zien welke delen er zijn.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Markeer deze tekst als kop of zorg dat de bestaande rol van kop niet wordt overschreven.</p>
+</div>
+<div class="issue">
+<h3>#23 - Tekst valt weg bij vergroting</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<p>Wanneer je de tekst in de instellingen van je telefoon tot de maximale grootte vergroot, wordt de tekst op de link &quot;Jouw voorschotbedrag kan omlaag&quot; afgesneden.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid en gebruik de app met vergrote tekst. De link over mijn voorschotbedrag loopt buiten het scherm, dus ik lees maar de helft van de zin. Ik verwacht dat de tekst binnen het scherm blijft en volledig leesbaar is.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat tekst leesbaar blijft wanneer deze wordt vergroot.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-voorschot-wijzigen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-voorschot-wijzigen">07 Voorschot wijzigen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start &gt; Maandbedrag &gt; Voorschot wijzigen</p>
+<div class="issue">
+<h3>#24 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan de tussenkopjes &quot;Voorschot wijzigen&quot; en &quot;Samenvatting&quot;. Deze teksten zijn niet als koptekst gemarkeerd. Hetzelfde probleem staat bij de kop &quot;Waarom je voorschot wijzigen?&quot; in de pop-up die opent via de link &quot;Nieuw voorschot&quot;, en bij de koppen &quot;Bedankt voor het doorgeven van je wijziging!&quot; en &quot;Samenvatting&quot; in de pop-up die opent via de knop &quot;Voorschot wijzigen&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Nadat ik mijn voorschot heb gewijzigd, opent er een pop-up. Ik hoor niet waar die over gaat, want de titel is geen kop. Ik weet daardoor niet meteen of mijn wijziging is gelukt.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#25 - De accordeon heeft geen koppen of de rol van kop is overschreven</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan onder &quot;Samenvatting&quot; de secties met verborgen inhoud &quot;Nieuw maandbedrag&quot; en &quot;Oud maandbedrag&quot;. Bij de elementen waarmee je die inhoud opent en sluit ontbreekt de rol van koptekst.</p>
+<p>Hetzelfde probleem staat op de pop-up &quot;Bedankt voor het doorgeven van je wijziging!&quot;, die verschijnt nadat de bezoeker op de knop &quot;Voorschot wijzigen&quot; heeft getikt.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Ik wil mijn oude en nieuwe maandbedrag vergelijken, maar ik kan niet tussen die twee blokken springen omdat het geen koppen zijn. Ik moet steeds vanaf het begin van het scherm opnieuw beginnen.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Markeer deze tekst als kop of zorg dat de bestaande rol van kop niet wordt overschreven.</p>
+</div>
+<div class="issue">
+<h3>#29 - De kleur van de slider heeft niet genoeg contrast</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.11</span>  
+	<span class="type"><b>EN</b>: 11.1.4.11</span>  
+</div>
+<figure class="screenshot">
+<img src="images/2.webp" alt="">
+</figure>
+<p>Op dit scherm is de contrastverhouding tussen de grijze schuifregelaar en de achtergrond van het invoerscherm 1,3:1. Een bezoeker met een milde visuele beperking ziet deze schuifregelaar niet goed.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb een visuele beperking. Op dit scherm zie ik wel dat er iets staat, maar ik zie de schuifregelaar zelf nauwelijks tegen de achtergrond. Ik verwacht dat een element dat ik moet bedienen duidelijk te onderscheiden is.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>De randen van interactieve elementen moeten minimaal een contrast van 3,0:1 hebben met de achtergrond.</p>
+</div>
+<div class="issue">
+<h3>#32 - Knop heeft niet de juiste toegankelijke rol en toegankelijke naam</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<figure class="screenshot">
+<img src="images/3.webp" alt="">
+</figure>
+<p>Op dit scherm opent de link &quot;Nieuw voorschot&quot; de pop-up &quot;Waarom je voorschot wijzigen?&quot;. Op die pop-up staat een knop met een kruisje. Die knop mist een toegankelijke rol en een toegankelijke naam.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. De pop-up is open en ik wil hem sluiten, maar ik hoor niet waar de sluitknop staat of wat hij doet. Ik kom niet verder in de app.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg dat de knop de juiste toegankelijke rol en toegankelijke naam heeft.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-contact">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-contact">08 Contact <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start &gt; Contact</p>
+<div class="issue">
+<h3>#33 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De tussenkopjes &quot;Contact&quot;, &quot;Storingen&quot;, &quot;Veelgestelde vragen&quot;, &quot;Digitaal contact&quot; en andere zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en zoek het telefoonnummer voor een storing. Zonder koppen moet ik de hele contactpagina afluisteren voordat ik bij het juiste blok ben.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-meer">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-meer">09 Meer <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start &gt; Meer</p>
+<div class="issue">
+<h3>#35 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De kopjes &quot;Meer&quot;, &quot;Betalingen&quot;, &quot;Storingen&quot;, &quot;Documenten&quot; en andere zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Dit scherm is een menu met veel onderdelen. Zonder koppen krijg ik één lange lijst en moet ik tellen waar ik ben.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#36 - De naam van de knop beschrijft niet wat de knop doet</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm staan onder &quot;Wat vind je van de app?&quot; knoppen met smileys. De schermlezer leest voor: &quot;enigszins lachend gezicht&quot;, &quot;neutraal gezicht&quot; en &quot;licht fronsend gezicht&quot;. Die knoppen staan voor goed, neutraal en niet goed.</p>
+<p>Hetzelfde probleem staat bij twee andere knoppen met een neutrale en een treurige smiley, die doorsturen naar de webpagina van de klantenservice.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil een oordeel geven over de app. Ik hoor alleen beschrijvingen van gezichtjes, niet wat ze betekenen. Ik weet niet welke knop staat voor &quot;tevreden&quot;.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Voeg tekst toe die beschrijft wat de knop doet. Gebruik bijvoorbeeld &quot;Ik ben tevreden&quot; en &quot;Ik ben niet tevreden, neem contact op met de klantenservice&quot;.</p>
+</div>
+<div class="issue">
+<h3>#37 - Link heeft geen correcte toegankelijke rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm hebben de interactieve elementen die naar een ander scherm leiden geen juiste rol, bijvoorbeeld het element met de tekst &quot;Facturen en betalingen Overzicht van facturen&quot;. Hetzelfde probleem staat bij de interactieve elementen met smileys in het gedeelte &quot;Wat vind je van de app?&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Ik hoor tekst die eruitziet als een menu-item, maar ik hoor niet dat ik erop kan tikken. Ik verwacht te horen of iets een link of een knop is.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg dat deze elementen de juiste rol krijgen, link of knop.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-mijn-gegevens">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-mijn-gegevens">10 Mijn gegevens <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Mijn gegevens</p>
+<div class="issue">
+<h3>#39 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De tussenkopjes &quot;Mijn gegevens&quot;, &quot;Persoonlijke gegevens&quot;, &quot;Account&quot;, &quot;Adres&quot; en andere zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil mijn adres controleren. Zonder koppen loop ik eerst langs al mijn persoonlijke gegevens voordat ik bij het adres ben.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#40 - Er zijn knoppen met dezelfde tekst maar een andere functie</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 2.4.6</span>  
+	<span class="type"><b>EN</b>: 11.2.4.6</span>  
+</div>
+<p>Op dit scherm staan meerdere knoppen met de naam &quot;Wijzigen&quot;, terwijl ze verschillende dingen doen. Dat is verwarrend voor bezoekers.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en krijg een lijst met knoppen te horen. Ze heten allemaal &quot;Wijzigen&quot;. Ik kan niet zien welke bij mijn e-mailadres hoort en welke bij mijn adres.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg dat knoppen met dezelfde tekst dezelfde functie hebben. Gaat het om een andere functie, geef de knop dan een andere tekst.</p>
+</div>
+<div class="issue">
+<h3>#41 - Invoervelden hebben geen toegankelijke namen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2, 2.5.3</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2, 11.2.5.3</span>  
+</div>
+<p>Op dit scherm openen de knoppen &quot;Wijzigen&quot; schermen met invoervelden, bijvoorbeeld het scherm &quot;Contactgegevens&quot;. Die invoervelden hebben geen toegankelijke naam. Is een invoerveld leeg, dan leest de schermlezer de tekst in het veld voor als label. Is het veld ingevuld, dan verdwijnt die tekst en hoort de bezoeker alleen de ingevulde waarde, niet waar het veld voor dient.</p>
+<p>Blinde en slechtziende bezoekers die een schermlezer gebruiken weten daardoor niet wat ze moeten invullen.</p>
+<p>Omdat de zichtbare tekst van de velden niet in de toegankelijke naam staat, zijn deze velden ook niet met spraak te bedienen, zie succescriterium 2.5.3.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil mijn telefoonnummer aanpassen. Zodra het veld is ingevuld, hoor ik alleen het nummer en niet meer waar het veld voor is. Ik weet niet zeker of ik in het goede veld sta.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Geef elk invoerveld een toegankelijke naam die de zichtbare tekst bevat.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-storingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-storingen">11 Storingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Storingen</p>
+<div class="issue">
+<h3>#43 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de tussenkopjes &quot;Storingen&quot;, &quot;Mijn meldingen&quot; en &quot;Zelf regelen&quot; niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil weten of mijn melding er nog staat. Ik kan niet direct naar &quot;Mijn meldingen&quot; springen, want dat is geen kop.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#44 - Informatie is niet toegankelijk voor schermlezers</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1, 2.5.3</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1, 11.2.5.3</span>  
+</div>
+<p>De schermlezer leest de inhoud van een melding onder &quot;Mijn meldingen&quot; niet voor. In plaats van tekst als &quot;Individueel (Warmte)&quot; en de rest van de melding hoort de schermlezergebruiker alleen de naam van de knop, &quot;open details&quot;.</p>
+<p>Omdat de zichtbare tekst afwijkt van de tekst op de knop, is deze knop ook niet met spraak te bedienen, zie succescriterium 2.5.3.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Ik heb een storing gemeld en wil weten waar die over ging. Ik hoor alleen &quot;open details&quot; en moet elke melding openen om te ontdekken welke ik zoek.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat alle informatie en relaties die zichtbaar zijn op het scherm ook beschikbaar zijn voor schermlezers.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-communicatie-voorkeuren">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-communicatie-voorkeuren">12 Communicatie-voorkeuren <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Communicatie-voorkeuren</p>
+<div class="issue">
+<h3>#46 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De tussenkopjes &quot;Communicatie-voorkeuren&quot;, &quot;Hoe mogen we je bereiken?&quot; en &quot;Zelf regelen&quot; zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Op dit scherm stel ik in hoe Eteck mij benadert. Zonder koppen weet ik niet waar de ene instelling ophoudt en de volgende begint.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="13-betalingen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-betalingen">13 Betalingen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Betalingen</p>
+<div class="issue">
+<h3>#47 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De kopjes &quot;Betalingen&quot;, &quot;Openstaande facturen&quot;, &quot;Betaalde facturen&quot; en &quot;Zelf regelen&quot; zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil zien of ik nog iets openstaan heb. Ik kan niet naar &quot;Openstaande facturen&quot; springen, dus ik luister eerst de hele lijst met betaalde facturen af.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#49 - De accordeon heeft geen koppen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan secties met verborgen inhoud, bijvoorbeeld &quot;maart 2025 € 650,34 Betaal factuur voor 24 februari 2025&quot;. Het element dat die inhoud opent en sluit heeft niet de rol van koptekst. De teksten waarmee je delen van een accordeon in- en uitklapt, doen dienst als kop voor die delen. Daarom moeten die teksten ook de rol van kop hebben.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en zoek de factuur van maart. De maanden staan niet in mijn koppenlijst, dus ik loop alle facturen langs tot ik de goede tegenkom.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Markeer deze tekst als kop of zorg dat de bestaande rol van kop niet wordt overschreven.</p>
+</div>
+<div class="issue">
+<h3>#52 - Als je een knop selecteert, verschuift de focus</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 3.2.2</span>  
+	<span class="type"><b>EN</b>: 11.3.2.2</span>  
+</div>
+<p>Op dit scherm verplaatst de toetsenbordfocus onverwacht naar de bovenkant wanneer je met een extern toetsenbord de knop &quot;Bekijk alle facturen&quot; selecteert, of &quot;Toon alleen laatste drie facturen&quot; wanneer de lijst met facturen open staat. Bezoekers krijgen daar vooraf geen melding van.</p>
+<p>Een contextwijziging, zoals het verplaatsen van de focus, mag niet zomaar gebeuren als een bezoeker iets in een formulier aanpast. Het mag dus niet gebeuren als een bezoeker een keuzevakje aanvinkt, een invoerveld invult of een optie uit een keuzelijst kiest. Ook het verzenden van een formulier of het openen van een nieuw venster is een grote contextwijziging. Die mogen alleen gebeuren als de bezoeker vooraf is gewaarschuwd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik bedien de app met een extern toetsenbord. Ik klap de lijst met facturen open en sta ineens weer bovenaan het scherm. Ik moet opnieuw naar beneden om te lezen wat er is opengeklapt.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat de focus na het selecteren van &quot;Bekijk alle facturen&quot; of &quot;Toon alleen laatste drie facturen&quot; naar het volgende logische element gaat.</p>
+</div>
+<div class="issue">
+<h3>#54 - Tekst valt weg bij vergroting</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<p>Deze bevinding hebben we tijdens de hercontrole niet opnieuw kunnen onderzoeken. De sectie &quot;Openstaande facturen&quot; was er op dat moment niet. De tekst hieronder komt ongewijzigd uit de audit van juli 2025.</p>
+<p>Wanneer je de tekst in de instellingen van je telefoon tot de maximale grootte vergroot, worden de teksten in de secties met verborgen inhoud onder &quot;Openstaande facturen&quot; afgesneden. Zie bijvoorbeeld &quot;januari 2025 € 73,31 Factuur status: Aanmaning&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid en gebruik de app met vergrote tekst. Bij mijn openstaande facturen valt het einde van de regel weg, dus ik zie niet welk bedrag erbij hoort.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat tekst leesbaar blijft wanneer deze wordt vergroot.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="14-documenten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-documenten">14 Documenten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Documenten</p>
+<div class="issue">
+<h3>#55 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de kopjes &quot;Documenten&quot;, &quot;MijnEteck - Informatie&quot;, &quot;MijnEteck - Tarieven&quot; en &quot;Zelf regelen&quot; niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en zoek mijn tarieven. Zonder koppen kan ik niet direct naar dat blok, dus ik luister eerst alle andere documenten af.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="15-voorkeuren">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-voorkeuren">15 Voorkeuren <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Meer &gt; Voorkeuren</p>
+<div class="issue">
+<h3>#56 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>De tussenkopjes &quot;Voorkeuren&quot;, &quot;App beveiligingen&quot;, &quot;Beveiliging app&quot; en andere zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil de beveiliging van de app instellen. Ik hoor een reeks losse teksten en schakelaars zonder dat duidelijk is welke bij elkaar horen.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#58 - Schakelknoppen hebben geen toegankelijke namen</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm missen meerdere schakelknoppen een toegankelijke naam. Bezoekers die een schermlezer gebruiken begrijpen daardoor niet wat een knop doet.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. Ik hoor &quot;schakelaar, uit&quot;, maar niet waar die schakelaar over gaat. Ik durf hem niet aan te zetten, want ik weet niet wat er dan gebeurt.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat elke schakelknop een toegankelijke naam heeft die de functie duidelijk beschrijft.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="16-individueel-warmte">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#16-individueel-warmte">16 Individueel (Warmte) <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Dit scherm was tijdens de hercontrole niet meer aanwezig. We hebben een scherm onderzocht dat op dezelfde manier werkt.</p>
+<p>Pad: Meer &gt; Storingen &gt; Persoonlijke storing, gesloten melding</p>
+<div class="issue">
+<h3>#61 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm zijn de tussenkopjes &quot;Individueel (Warmte)&quot;, &quot;Service ticket code: S000118573&quot;, &quot;Historie&quot; en andere niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil de historie van mijn storing nalezen. Zonder koppen weet ik niet waar het ene onderdeel eindigt en het volgende begint.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#62 - Het aantal alinea's in de code wijkt af van de visuele weergave</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Medium</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<figure class="screenshot">
+<img src="images/4.webp" alt="">
+</figure>
+<p>Op het scherm staat een kopje &quot;Service ticket code: S000118573&quot; met daaronder meerdere alinea's over de storing. De schermlezer leest die tekst voor als één blok.</p>
+<p>Een blinde bezoeker kan dan niet naar een stukje in het midden van de tekst luisteren. Het hele blok moet opnieuw worden voorgelezen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer. De omschrijving van mijn storing komt als één lange lap tekst voorbij. Wil ik één zin teruglezen, dan moet ik het hele verhaal opnieuw aanhoren.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Plaats deze alinea's in afzonderlijke alinea's.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="17-vul-een-toegangscode-in">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#17-vul-een-toegangscode-in">17 Vul een toegangscode in <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Privacy statement &gt; Ik ga akkoord &gt; Vul een toegangscode in</p>
+<div class="issue">
+<h3>#63 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staat de kop &quot;Vul een toegangscode in&quot;. Die tekst is niet als koptekst gemarkeerd. Hetzelfde probleem staat bij de kop &quot;Herhaal de toegangscode&quot;, die verschijnt nadat een bezoeker een code van 4 cijfers heeft ingevoerd.</p>
+<p>Let op: de invoervelden om de code aan te maken reageren niet op aanraking. Dat is een probleem voor alle bezoekers, niet alleen voor mensen met een beperking.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en stel een toegangscode in. Ik hoor niet dat er een nieuwe stap begint wanneer ik de code moet herhalen. Ik denk dat mijn invoer niet is aangekomen.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier koppen van.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="18-verbruik">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#18-verbruik">18 Verbruik <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Pad: Start &gt; Verbruik</p>
+<div class="issue">
+<h3>#67 - Kop is niet gemarkeerd als koptekst</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.3.1</span>  
+	<span class="type"><b>EN</b>: 11.1.3.1</span>  
+</div>
+<p>Op dit scherm staan de koppen &quot;Verbruik&quot;, &quot;Vergelijken&quot;, &quot;Koude december&quot; en &quot;Zelf regelen&quot;. Deze teksten zijn niet als koptekst gemarkeerd.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil mijn verbruik vergelijken met vorig jaar. Zonder koppen kan ik niet naar het blok &quot;Vergelijken&quot; springen.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Maak hier een kop van.</p>
+</div>
+<div class="issue">
+<h3>#68 - Interactieve elementen hebben geen juiste toegankelijke rol</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 4.1.2</span>  
+	<span class="type"><b>EN</b>: 11.4.1.2</span>  
+</div>
+<p>Op dit scherm hebben de interactieve elementen &quot;Maand&quot; en &quot;Jaar&quot; geen passende rol. Hetzelfde probleem staat bij het interactieve element dat wisselt tussen &quot;Energie&quot; en &quot;€&quot; om de bijbehorende inhoud te tonen.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik lees de app met een schermlezer en wil van maand naar jaar wisselen. Ik hoor de woorden wel, maar niet dat ik er iets mee kan. Ik ontdek de knop pas als ik er per ongeluk op tik.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat deze elementen de juiste rol hebben.</p>
+</div>
+<div class="issue">
+<h3>#72 - Tekst valt weg bij vergroting</h3>
+<div class="meta">  
+	<span class="impact"><b>Impact</b>: Groot</span>  
+	<span class="type"><b>Type</b>: Techniek</span>  
+	<span class="type"><b>WCAG</b>: 1.4.4</span>  
+	<span class="type"><b>EN</b>: 11.1.4.4</span>  
+</div>
+<figure class="screenshot">
+<img src="images/5.webp" alt="">
+</figure>
+<p>Wanneer je de tekst in de instellingen van je telefoon tot de maximale grootte vergroot, wordt de tekst op de knop &quot;Hoe en wanneer meten we dit?&quot; afgesneden. Hetzelfde gebeurt bij de tekst op het interactieve element &quot;Energie €&quot;.</p>
+<h4>User story</h4>
+<blockquote>
+<p><i>Ik heb slechtziendheid en gebruik de app met vergrote tekst. Op dit scherm valt het einde van de knoptekst weg, dus ik moet raden wat de knop doet.</i></p>
+</blockquote>
+<h4>Oplossing:</h4>
+<p>Zorg ervoor dat tekst leesbaar blijft wanneer deze wordt vergroot.</p>
+</div>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de app op dit moment voldoet aan WCAG 2.1, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je app te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+<p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+<ul>
+<li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+<li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+<li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+</ul>
+<h3>Voortgang bijhouden</h3>
+<p>Je kunt je voortgang op twee manieren bijhouden:</p>
+<ul>
+<li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+<li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+<li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+<li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+</ul>
+<h3>Link naar een specifieke bevinding delen</h3>
+<p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>
