@@ -82,7 +82,7 @@ Neem contact op voor een vrijblijvend gesprek. We adviseren je over een passende
 
 {{< section-full title="Altijd toegang tot senior auditor" >}}
 
-Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account managers ertussen, geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat: je krijgt antwoord van iemand die het dagelijks test.
+Als klant met een rapport van ons heb je rechtstreeks toegang tot de senior auditor voor inhoudelijke vragen. Geen wachtrij, geen informatieverlies. Of je nu een technische vraag hebt over ARIA of wilt weten hoe een screenreader met je component omgaat: je krijgt antwoord van iemand die het dagelijks test.
 
 - Altijd toegang tot senior auditor voor inhoudelijke vragen
 - Direct contact via e-mail, telefoon of videocall
@@ -131,7 +131,7 @@ Altijd toegang tot senior auditor voor inhoudelijke vragen. Geen account manager
 <details class="faq-item">
 <summary class="faq-question">Wie doet het werk?</summary>
 <div class="faq-answer">
-<p>Altijd toegang tot senior auditor voor inhoudelijke vragen. Je werkt direct met de specialist, niet met een junior of een account manager.</p>
+<p>Je strippenkaarturen lopen rechtstreeks via de senior auditor die je rapport kent. Je werkt met de specialist zelf, niet met een junior.</p>
 </div>
 </details>
 

@@ -46,7 +46,7 @@ faqs:
   - question: "Vanaf wanneer geldt de European Accessibility Act?"
     answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen euro omzet, dan geldt de plicht niet."
   - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
-    answer: "Niet één partij. Het toezicht is verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De **ACM** voor webshops, apps en elektronische communicatiediensten. De **AFM** voor bankdiensten aan consumenten. De **RDI** voor apparaten, zoals computers, smartphones, geldautomaten, betaalterminals en ticketautomaten. Het **Commissariaat voor de Media** voor e-boeken en diensten die toegang geven tot audiovisuele media. De **ILT** voor personenvervoer per vliegtuig, bus, trein en boot. En de **Inspectie JenV** voor het noodnummer 112. Heb je een webshop, dan is de ACM je toezichthouder. De ACM onderzocht in juni 2026 honderd webwinkels en vond bij meer dan de helft toegankelijkheidsproblemen, bij tien grote winkels ernstige. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
+    answer: "Niet één partij. Het toezicht is verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De **ACM** voor webshops, apps en elektronische communicatiediensten. De **AFM** voor bankdiensten aan consumenten. De **RDI** voor apparaten, zoals computers, smartphones, geldautomaten, betaalterminals en ticketautomaten. Het **Commissariaat voor de Media** voor e-boeken en diensten die toegang geven tot audiovisuele media. De **ILT** voor personenvervoer per vliegtuig, bus, trein en boot. En de **Inspectie JenV** voor het noodnummer 112. Heb je een webshop, dan is de ACM je toezichthouder. Die begon met begeleiden: tien bedrijven kregen een volledig onderzoek volgens WCAG-EM en daarna een bedrijfsbezoek, en bij ruim honderd bedrijven keek de ACM naar één belangrijk functioneel onderdeel. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
   - question: "Voldoen we aan de wet als we een overlay-tool installeren?"
     answer: "Nee. De ACM was daar op de Dag van Digitale Toegankelijkheid duidelijk over: overlays verbeteren maar heel weinig aan je site en zorgen er niet voor dat je aan de wet voldoet. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie."
   - question: "Onze leverancier wil de problemen niet oplossen. Wat nu?"
@@ -87,7 +87,7 @@ Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Weten waar je staat</h3>
-  <p>Een handmatig onderzoek volgens WCAG-EM, de methode die de toezichthouders zelf ook gebruiken. Niet omdat de EAA het voorschrijft, maar omdat je zonder onderzoek niet weet wat je moet oplossen.</p>
+  <p>Een handmatig onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. De EAA schrijft dat niet voor. Je doet het omdat je zonder onderzoek niet weet wat je moet oplossen.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">2</i>

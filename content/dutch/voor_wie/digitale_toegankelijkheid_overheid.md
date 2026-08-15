@@ -62,9 +62,11 @@ faqs:
 
 {{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
 
-Alle overheidsinstanties en publiekrechtelijke instellingen in Nederland. Gemeenten,
-provincies, waterschappen, ministeries, uitvoeringsorganisaties, scholen en zorginstellingen
-met een publieke taak. De plicht geldt sinds 2018.
+Alle overheidsinstanties en publiekrechtelijke instellingen in Nederland. Gemeenten, provincies,
+waterschappen, ministeries en uitvoeringsorganisaties. De plicht geldt sinds 2018. Of een
+instelling publiekrechtelijk is, hangt af van hoe ze is opgericht en gefinancierd, niet van de
+vraag of ze een publieke taak uitvoert. Twijfel je of jouw organisatie eronder valt, dan kijken
+we in de kennismaking met je mee.
 
 De plicht dekt je hele digitale dienstverlening: je hoofdwebsite, maar ook subsites,
 aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van die kanalen

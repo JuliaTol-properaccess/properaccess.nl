@@ -100,7 +100,7 @@ Die vijf dingen oplossen maakt al een wereld van verschil voor je bezoekers. En 
 
 De meningen over de EAA lopen uiteen, maar op een ding is iedereen het eens: je moet ergens beginnen.
 
-Wij helpen je daar graag bij. Niet met een dik rapport dat in een la verdwijnt, maar met concrete adviezen die je team direct kan oppakken. We rapporteren per element, zodat je precies weet wat er waar moet veranderen. En je spreekt altijd direct met de auditor -- geen tussenlaag.
+Wij helpen je daar graag bij. Niet met een dik rapport dat in een la verdwijnt, maar met concrete adviezen die je team direct kan oppakken. We rapporteren per element, zodat je precies weet wat er waar moet veranderen. En zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschreven heeft.
 
 Benieuwd hoe jouw website ervoor staat? Neem contact op voor een vrijblijvend gesprek: 085 5055 890 of mail naar info@properaccess.nl.
 

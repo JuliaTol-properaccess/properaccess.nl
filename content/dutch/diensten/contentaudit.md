@@ -31,7 +31,7 @@ trust:
   label: "Wat erin zit"
   names:
     - "33 succescriteria"
-    - "8-12 uur testen"
+    - "Tot 9 uur testen"
     - "Per element rapport"
     - "User story per bevinding"
     - "Technische fouten als info"
@@ -49,7 +49,7 @@ Een contentaudit beperkt zich tot wat jij wel beheert: teksten, koppenstructuur,
 
 Een contentaudit dekt 33 van de 55 succescriteria van WCAG 2.2. We toetsen alleen de content die je webredactie zelf heeft toegevoegd en in eigen hand heeft, niet de techniek eronder.
 
-De grens tussen content en techniek is niet altijd scherp. Een voorbeeld: kan een redacteur een `autocomplete`-attribuut toevoegen aan een invoerveld waar persoonlijke informatie wordt verzameld? In de meeste CMS-en niet, dat is werk voor een ontwikkelaar. Maar sinds kort kan het in WordPress met de GravityForms-plugin, zonder dat een redacteur de techniek hoeft aan te raken. Wat eerst een technisch probleem was, is in zo'n geval redactie-werk.
+De grens tussen content en techniek is niet altijd scherp. Een voorbeeld: kan een redacteur een `autocomplete`-attribuut toevoegen aan een invoerveld waar persoonlijke informatie wordt verzameld? In de meeste CMS-en niet, dat is werk voor een ontwikkelaar. Maar er zijn formulier-plugins waarin het inmiddels wel kan, zonder dat een redacteur de techniek hoeft aan te raken. Wat eerst een technisch probleem was, is in zo'n geval redactie-werk.
 
 Er zullen dus altijd grensgevallen zijn. We schrijven in het rapport waar we een bevinding plaatsen en waarom. Mocht de classificatie in jouw context niet kloppen, laat het ons weten, dan zetten we hem over. Beter grijs benoemd dan onterecht zwart-wit.
 

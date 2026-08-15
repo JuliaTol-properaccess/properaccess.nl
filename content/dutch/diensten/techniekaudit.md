@@ -31,7 +31,7 @@ trust:
   label: "Wat erin zit"
   names:
     - "48 succescriteria"
-    - "16-30 uur testen"
+    - "15-30 uur testen"
     - "Per element rapport"
     - "Multimedia uitgesloten"
     - "Herbruikbaar door je klanten"

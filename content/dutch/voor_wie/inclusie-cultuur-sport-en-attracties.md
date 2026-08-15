@@ -40,7 +40,7 @@ faqs:
   - question: "Kan ik zelf testen hoe toegankelijk onze museum-website is?"
     answer: "Ja. We hebben een [gratis accessibility quiz voor musea](/tools/quiz-museum/) waarmee je je kennis over toegankelijkheid kunt toetsen. Wil je direct inzicht in je eigen site? Vraag dan een [mini-audit](/quickscan-digitale-toegankelijkheid/) aan."
   - question: "Helpen jullie ook bij het schrijven van toegankelijkheidsbeleid?"
-    answer: "Ja. We hebben een [online tool](/tools/toegankelijkheidsverklaring-wdo/) om je te helpen een toegankelijkheidsverklaring (verplicht) op te stellen en kunnen meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen."
+    answer: "Ja. We hebben een [online tool](/tools/toegankelijkheidsverklaring-wdo/) waarmee je een toegankelijkheidsverklaring opstelt. Die verklaring is verplicht als je onder het Besluit digitale toegankelijkheid overheid valt. We kunnen ook meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen."
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen, onbeperkt en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Wat kost een audit?"

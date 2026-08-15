@@ -28,7 +28,7 @@ service:
 banner:
   badge: "WCAG 2.2 en WCAG-EM"
   title: "Toegankelijkheidsonderzoek laten uitvoeren"
-  content: "Een handmatige toets van je website of app aan WCAG 2.2, volgens de methode die toezichthouders zelf ook gebruiken. Je weet daarna wat er misgaat, voor wie, en hoe je het oplost."
+  content: "Een handmatige toets van je website of app aan WCAG 2.2, volgens WCAG-EM. Je weet daarna wat er misgaat, voor wie, en hoe je het oplost."
   button:
     enable: true
     label: "Plan een kennismaking"
@@ -80,7 +80,7 @@ WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles ui
 
 {{< /section-full >}}
 
-{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="WCAG-EM, de evaluatiemethode van het W3C. De toezichthouders gebruiken hem zelf ook, en het Register van Toegankelijkheidsverklaringen accepteert geen onderzoek dat er niet volgens is uitgevoerd." >}}
+{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert geen onderzoek dat er niet volgens is uitgevoerd." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Reikwijdte bepalen</h3>
@@ -129,9 +129,10 @@ onderbouwing niet rond. Wat een contentaudit wel doet: je redactie krijgt een ra
 alles staat wat zij zelf kan oplossen, zonder bevindingen die bij een leverancier liggen.
 Twijfel je wat je nodig hebt, dan kijken we in de kennismaking met je mee.
 
-Heb je zowel een website als een app, dan zijn dat twee onderzoeken met twee rapporten. Dat is
-ook wat het Register van Toegankelijkheidsverklaringen en de European Accessibility Act
-verwachten: per kanaal een eigen onderbouwing.
+Heb je zowel een website als een app, dan zijn dat twee onderzoeken met twee rapporten. Val je
+onder het Besluit digitale toegankelijkheid overheid, dan is dat ook wat het Register van
+Toegankelijkheidsverklaringen vraagt: elk digitaal kanaal heeft een eigen verklaring met een
+eigen onderbouwing.
 
 {{< /section-full >}}
 
@@ -200,9 +201,10 @@ rapport er ligt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vr
 en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt.
 
 Proper Access bouwt en beheert zelf geen websites. Er is dus geen situatie waarin we ons eigen
-werk beoordelen. Voor het Register van Toegankelijkheidsverklaringen is dat geen detail maar een
-voorwaarde: de overheid vraagt onderzoek door een partij die het kanaal niet zelf heeft gebouwd
-of beheert.
+werk beoordelen. Onderzoek in eigen beheer mag: er is geen regel die voorschrijft dat een
+externe partij het doet. Het verschil zit in wat je met het rapport kunt. Heb je zelf gebouwd
+en zelf getoetst, en komt een toezichthouder daarna met een lijst punten, dan gaat het gesprek
+over jouw oordeel in plaats van over de website.
 
 Sinds 2019 deden we 950+ audits, 236 opdrachten voor 63 opdrachtgevers, en 40% komt terug voor
 een tweede opdracht. Peildatum 7 augustus 2026. In de culturele sector werkten we onder meer voor

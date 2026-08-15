@@ -25,7 +25,7 @@ faqs:
   - question: "Werken jullie ook met ons development team?"
     answer: "Ja. Via onze strippenkaart kunnen we meedraaien in jullie sprints, code reviewen en vragen beantwoorden. We passen ons aan jullie werkwijze aan."
   - question: "Zijn jullie onafhankelijk?"
-    answer: "Volledig. We bouwen geen websites, beheren geen content en verkopen geen software. Ons enige product is een bruikbaar rapport."
+    answer: "Ja. We bouwen en beheren geen websites, dus we keuren nooit ons eigen werk en we hebben geen belang bij een uitkomst. We maken wel eigen tools, gebouwd en gehost in de EU, maar we blijven weg uit het bouwen en beheren zelf."
   - question: "Moeten wij voldoen aan de EAA?"
     answer: "De European Accessibility Act geldt voor bedrijven die producten of diensten aanbieden aan consumenten in de EU, bijvoorbeeld webshops, banken, telecom en vervoersbedrijven. Twijfel je? Neem contact op, dan zoeken we het samen uit."
 

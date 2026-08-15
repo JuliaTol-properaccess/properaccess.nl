@@ -35,7 +35,7 @@ Statische informatiepagina's testen sneller dan:
 Een website gebouwd met semantische HTML en goed gestructureerde CSS is sneller te auditen dan een website met veel custom JavaScript, geneste div's en ARIA-overuse.
 
 ### 4. De beschikbaarheid van de auditor
-Bij grote bureaus kan de wachttijd oplopen tot weken voordat de audit überhaupt begint. Bij ons is de wachttijd doorgaans korter omdat je direct met de auditor werkt.
+Bij grote bureaus kan de wachttijd oplopen tot weken voordat de audit überhaupt begint. Bij ons zit er weinig tussen de offerte en de eerste testdag.
 
 ## Ons proces
 

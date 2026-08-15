@@ -77,7 +77,7 @@ We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je 
 
 Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een heronderzoek laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
 
-Bij overheidsorganisaties houdt Logius op dit moment toezicht waar voor de formele BDTO-toezichthouder die nog benoemd moet worden. Voor EAA-handhaving wordt op dit moment de Autoriteit Toegankelijkheid ingericht. Voor beide is een audit plus hercontrole de meest robuuste vorm van bewijs: geen losse zelfverklaringen, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
+Bij overheidsorganisaties leg je die onderbouwing vast in het Register van Toegankelijkheidsverklaringen. Onder de European Accessibility Act is het toezicht verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst; voor webshops en apps is dat de Autoriteit Consument en Markt. In beide gevallen is een audit plus heronderzoek de sterkste vorm van bewijs: geen zelfverklaring, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
 
 {{< /section-full >}}
 
