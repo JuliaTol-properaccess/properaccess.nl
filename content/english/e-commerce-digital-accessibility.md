@@ -31,10 +31,10 @@ banner:
 trust:
   label: "Experience with"
   names:
-    - "De Bijenkorf"
     - "Jumbo"
     - "Plus"
     - "NRC"
+    - "Eteck"
 
 sections_header: "Accessible commerce, in practice"
 sections:

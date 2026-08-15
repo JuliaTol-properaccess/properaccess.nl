@@ -38,6 +38,7 @@ trust:
   names:
     - Rijksmuseum
     - Museumkaart
+    - Eteck
 
 faqs:
   - question: "Welke richtlijnen gebruiken jullie voor apps?"
@@ -59,7 +60,7 @@ faqs:
   - question: "Wat kost een app-audit?"
     answer: "Een app-audit kost **€ 2.150 per platform** (excl. 21% BTW). Test je je app op zowel iOS als Android, dan reken je twee platformen."
   - question: "Welke partij kan de toegankelijkheid van een mobiele app onderzoeken?"
-    answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum en Museumkaart."
+    answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum, Museumkaart en Eteck."
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
@@ -125,8 +126,8 @@ hybride app in React Native of Flutter rendert elk platform zijn eigen component
 één klopt, kan op de ander een bevinding zijn. Je krijgt daarom ook een apart rapport per
 platform, met een aparte steekproef aan schermen.
 
-Voor het Rijksmuseum onderzochten we op die manier twee apps, elk met een eigen rapport. Ook de
-app van Museumkaart namen we onder handen.
+Voor het Rijksmuseum onderzochten we op die manier twee apps, elk met een eigen rapport. Andere
+apps die we onderzochten zijn die van Museumkaart en Eteck.
 
 Een onderzoek duurt 3 tot 5 weken. We stemmen de planning af op je release-cyclus, want een
 rapport dat aankomt op de dag van een grote release is voor niemand handig.
