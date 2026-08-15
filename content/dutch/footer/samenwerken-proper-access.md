@@ -57,12 +57,12 @@ Samenwerken in plaats van alles zelf doen. Jij begrijpt het merk van je klant, h
 {{< section-cards title="Hoe werkt het?" columns="3" >}}
 {{< section-card title="1. Jij behoudt de klantrelatie" >}}
 
-De klant blijft jouw klant. Wij zijn het aanspreekpunt, wij sturen de communicatie.
+De klant blijft jouw klant. Jij bent het aanspreekpunt en jij stuurt de communicatie; wij leveren de audit.
 
 {{< /section-card >}}
 {{< section-card title="2. Wij leveren alles wat je nodig hebt" >}}
 
-Een landingspagina, de audit zelf binnen 5 tot 8 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur. Je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
+Een landingspagina, de audit zelf binnen 3 tot 5 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur. Je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
 
 {{< /section-card >}}
 {{< section-card title="3. Jij krijgt een aantrekkelijke commissie" >}}
@@ -79,7 +79,7 @@ Een cursus is nuttig als introductie. Maar WCAG toepassen in de praktijk vraagt 
 - **200+ controlepunten per pagina**, elk met nuances die je alleen leert door ze dagelijks te zien
 - **Technische diepgang**: hoe werkt een screenreader écht? Wat doet browser X met bepaalde ARIA-attributen? Wat is de impact van een fout in de focusvolgorde?
 - **Juridische context**: wat moet er echt volgens de wet, en wat is een "nice to have"?
-- **Updates**: WCAG 2.2 is er, 2.3 wordt voorbereid, en browsers veranderen continu
+- **Updates**: WCAG 2.2 is er, aan WCAG 3.0 wordt gewerkt, en browsers veranderen continu
 
 Wij doen dit fulltime, sinds 2019. Ons team test wekelijks nieuwe situaties, onderzoekt browsergedrag, en stelt kritische vragen bij wat "de standaard" zegt. Die ervaring kun je niet in een paar dagen oppikken.
 

@@ -37,7 +37,7 @@ trust:
 
 Een rapport van honderd bevindingen voelt overweldigend zodra het binnenkomt. Waar begin je? Wat eerst? En wat doe je met die ene bevinding waarvan de oplossingsrichting onduidelijk is voor jouw stack?
 
-Daarom is het rapport niet het eindpunt. Tijdens de fase waarin je problemen oplost, blijven we bereikbaar. Geen formeel ticket-systeem, geen wachtrij, geen account manager die jouw vraag doorzet. Gewoon een direct kanaal naar de auditor die je rapport heeft geschreven.
+Daarom is het rapport niet het eindpunt. Tijdens de fase waarin je problemen oplost, blijven we bereikbaar. Geen formeel ticket-systeem en geen wachtrij: als klant met een rapport van ons heb je een direct kanaal naar de auditor die het geschreven heeft.
 
 {{< /section-full >}}
 
@@ -96,7 +96,7 @@ De strippenkaart is geen verplichte vervolgstap. Veel klanten ronden hun audit a
 
 {{< section-full title="Wat wij niet doen" >}}
 
-Wij bouwen niet, beheren geen content, verkopen geen software. Geen plug-ins, geen toegankelijkheids-widgets, geen abonnement waarmee je "in één klik compliant" wordt. Wij geven advies: onafhankelijk, zonder belangenconflict.
+Wij bouwen niet en beheren geen content. Geen toegankelijkheids-widgets, geen overlay, geen abonnement waarmee je "in één klik compliant" wordt. We keuren dus nooit ons eigen werk, en we hebben geen belang bij een uitkomst.
 
 Dat betekent dat we soms zullen zeggen: hier zou je beter een ontwikkelaar voor inschakelen, hier moet je redactie aan de bak, hier loopt het scheef met je leverancier en moeten zij dit oplossen. Onze begeleiding helpt je de juiste vraag op het juiste bord te leggen, niet om elk probleem in onze eigen agenda te schuiven.
 

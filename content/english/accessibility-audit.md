@@ -20,7 +20,7 @@ banner:
   title: "An accessible website or app — in less than 12 weeks"
   content: "More reach, better conversion and a stronger reputation, through digital products that work for everyone. Get guided by a senior auditor and meet the European Accessibility Act (EAA) with as little cost and effort as possible."
   bullets:
-    - "**More reach** — up to 20% more potential customers"
+    - "**More reach** — the visitors who now give up halfway"
     - "**Better conversion** and a stronger reputation"
     - "**Compliant** with the EAA, without the stress"
   button:
@@ -51,7 +51,7 @@ sections:
       - "**Fix:** add a meaningful `aria-label`"
   - eyebrow: "The method"
     title: "Tested by hand by a senior auditor — not by a scanner"
-    body: "Automated tools only find part of the WCAG issues. They don't start a screen reader, don't use the keyboard, don't test zoom. Our auditor does — with a four-eyes check and real assistive technology for everything scanners miss."
+    body: "Automated tools only find part of the WCAG issues. They don't start a screen reader, don't use the keyboard, don't test zoom. Our auditor does — with real assistive technology and a six-eyes principle: every finding is double-checked."
     card_eyebrow: "Manually tested with"
     card_icon: "accessibility_new"
     card_title: ""
@@ -70,15 +70,15 @@ sections:
     card_list:
       - "We don't build websites"
       - "We don't manage content"
-      - "We don't sell software"
-      - "We only audit and advise"
+      - "We never audit our own work"
+      - "We audit and advise"
 
 steps_header: "From first call to closed file — in 3 steps"
 steps:
   - title: "Introduction + quote"
     body: "In 30 minutes we discuss your site or app, your team, your deadlines and what you already have. You get a clear quote within two working days — no standard price list, just fixed hourly rates."
   - title: "Thorough audit"
-    body: "A manual test by a senior auditor, with a four-eyes check. We simulate different disabilities and listen to your website or app with a screen reader."
+    body: "A manual test by a senior auditor, with every finding double-checked. We simulate different disabilities and listen to your website or app with a screen reader."
   - title: "Report + retest"
     body: "You receive the report per component, with user stories, an action plan per team and export buttons. After your fixes we run the retest — to check everything works and the file can be closed."
 

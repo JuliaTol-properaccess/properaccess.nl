@@ -31,16 +31,16 @@ banner:
 trust:
   label: "Experience with"
   names:
+    - "De Bijenkorf"
     - "Jumbo"
     - "Plus"
     - "NRC"
-    - "Eteck"
 
 sections_header: "Accessible commerce, in practice"
 sections:
   - eyebrow: "The obligation"
     title: "The EAA applies now — not someday"
-    body: "Since June 2025 the European Accessibility Act requires most consumer-facing digital services to be accessible: webshops, banking, travel booking, e-books and communication services. The benchmark is WCAG 2.2 (A + AA) via the harmonised standard EN 301 549. Enforcement and penalties are set per EU member state, but the requirement is the same everywhere."
+    body: "Since June 2025 the European Accessibility Act requires most consumer-facing digital services to be accessible: webshops, banking, travel booking, e-books and communication services. The benchmark is the harmonised standard EN 301 549, which currently points to WCAG 2.1 (A + AA). We test against WCAG 2.2, one version ahead of the standard, at no extra cost. Enforcement and penalties are set per EU member state, but the requirement is the same everywhere."
     card_eyebrow: "What the rules ask"
     card_icon: "shopping_cart"
     card_title: "Who this covers"
@@ -51,7 +51,7 @@ sections:
       - "E-books and communication services"
   - eyebrow: "What you get"
     title: "An accessible checkout converts better — for everyone"
-    body: "Accessibility overlaps roughly 80% with usability. A checkout that works with a keyboard, a screen reader and on a small screen is simply a better checkout. Fewer dropped carts, fewer support tickets, more customers who complete the purchase."
+    body: "Accessibility and usability overlap heavily. A checkout that works with a keyboard, a screen reader and on a small screen is simply a better checkout. Fewer dropped carts, fewer support tickets, more customers who complete the purchase."
     card_eyebrow: "The full journey"
     card_icon: "check_circle"
     card_title: "We test all of it"
@@ -68,15 +68,15 @@ sections:
     card_title: "No conflict of interest"
     card_list:
       - "We don't build webshops"
-      - "We don't sell software"
-      - "We only audit and advise"
+      - "We don't manage content"
+      - "We never audit our own work"
 
 steps_header: "From baseline to closed file — in 3 steps"
 steps:
   - title: "Introduction + quote"
     body: "We discuss your webshop, your platform and your deadlines. You get a clear quote with fixed hourly rates — no standard price list."
   - title: "Thorough audit"
-    body: "A manual test by a senior auditor across the whole customer journey, with a four-eyes check and real assistive technology. Your customers notice nothing — no downtime."
+    body: "A manual test by a senior auditor across the whole customer journey, with real assistive technology and a six-eyes principle: every finding is double-checked. Your customers notice nothing — no downtime."
   - title: "Report + retest"
     body: "You receive a report per element with user stories and an action plan per team. After your fixes we run the retest, so your compliance is demonstrable."
 

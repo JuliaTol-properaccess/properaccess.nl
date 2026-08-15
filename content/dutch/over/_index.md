@@ -30,7 +30,7 @@ banner:
     met onze klanten.
   bulletpoints:
     - "Opgericht in 2019, 950+ audits uitgevoerd"
-    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
+    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, De Bijenkorf, Museumvereniging"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
     - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
   button:
@@ -45,7 +45,7 @@ trust:
     - Prov. Noord-Holland
     - NRC
     - Museumvereniging
-    - Eteck
+    - De Bijenkorf
     - Jumbo
 
 team:
@@ -64,7 +64,7 @@ team:
         - "Senior WCAG-auditor, IAAP-gecertificeerd (WAS)"
         - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
         - "950+ audits uitgevoerd sinds 2019"
-        - "Werkt direct met klanten, geen tussenlaag van accountmanagers"
+        - "Rechtstreeks aanspreekbaar voor klanten met een rapport van ons"
     - name: "Het team achter Julia"
       role: "Een team van 10 auditors, onderzoekers en reviewers"
       image: "/images/pages/iaap.webp"
@@ -78,7 +78,7 @@ team:
         correct interpreteren.
       highlights:
         - "Een vast team van 10 auditors, onderzoekers en reviewers"
-        - "6-ogen-controle: elk rapport door minimaal 2 auditors gelezen"
+        - "6-ogen-principe: elke bevinding wordt dubbel gecontroleerd"
         - "Peer review door collega-onderzoekers, ook buiten ons team"
         - "Eigen research: we testen op echte hulpsoftware en browsers"
         - "Uitleg zonder jargon, zonder ambtenarentaal"
@@ -151,7 +151,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
   <h3 class="card__title">Peer review door collega-onderzoekers</h3>
-  <p>We tonen ons werk aan vakgenoten voor kritische review. <strong>6-ogen-controle</strong> op elk rapport, en regelmatig overleg met onderzoekers buiten ons team om onze bevindingen te toetsen.</p>
+  <p>We tonen ons werk aan vakgenoten voor kritische review. Het <strong>6-ogen-principe</strong> op elk rapport, en regelmatig overleg met onderzoekers buiten ons team om onze bevindingen te toetsen.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
@@ -185,7 +185,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
   <h3 class="card__title">Onafhankelijk</h3>
-  <p>We bouwen geen websites, beheren geen content, verkopen geen software. <strong>Geen belangenconflict</strong>, alleen onafhankelijk advies.</p>
+  <p>We bouwen geen websites en beheren geen content. We keuren dus <strong>nooit ons eigen werk</strong> en hebben geen belang bij een uitkomst.</p>
 </div>
 {{< /section-cards >}}
 
@@ -211,7 +211,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 
 {{< section-full title="Directe toegang tot de auditor" bg="light" >}}
 
-Geen account managers, geen project managers ertussen. Bij Proper Access praat je **direct met de auditor** die je rapport schrijft. Dat scheelt tijd, misverstanden en frustratie.
+Zodra je rapport er ligt, praat je **direct met de auditor** die het geschreven heeft. Onbeperkt en zonder meerkosten. Dat scheelt tijd en misverstanden. In de fase daarvoor, van eerste gesprek tot offerte, is een relatiebeheerder je aanspreekpunt.
 
 Heb je een technische vraag? Die wordt beantwoord door iemand die je code begrijpt. Wil je sparren over de beste aanpak? We denken mee, ook als het buiten de scope van de audit valt.
 

@@ -47,8 +47,8 @@ sections:
     card_icon: "balance"
     card_title: "No strings attached"
     card_list:
-      - "We don't sell software"
       - "We don't build websites"
+      - "We never audit our own work"
       - "One fixed price: €495 excl. VAT"
 
 faqs:

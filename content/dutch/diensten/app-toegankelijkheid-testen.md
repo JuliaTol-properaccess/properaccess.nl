@@ -25,7 +25,7 @@ banner:
   title: "In minder dan 12 weken een app die beter verkoopt en voldoet aan de wet"
   content: "Meer bereik, betere conversie en een sterker imago, door je app toegankelijker te maken voor een grotere doelgroep. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
-    - "**Meer bereik**: tot 20% extra potentiële gebruikers"
+    - "**Meer bereik**: de gebruikers die nu vastlopen"
     - "**Betere conversie** en sterker imago"
     - "**Compliant met EAA of BDTO**, zonder stress"
   button:
@@ -38,7 +38,6 @@ trust:
   names:
     - Rijksmuseum
     - Museumkaart
-    - Eteck
 
 faqs:
   - question: "Welke richtlijnen gebruiken jullie voor apps?"
@@ -60,7 +59,7 @@ faqs:
   - question: "Wat kost een app-audit?"
     answer: "Een app-audit kost **€ 2.150 per platform** (excl. 21% BTW). Test je je app op zowel iOS als Android, dan reken je twee platformen."
   - question: "Welke partij kan de toegankelijkheid van een mobiele app onderzoeken?"
-    answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum, Museumkaart en Eteck."
+    answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum en Museumkaart."
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
@@ -126,8 +125,8 @@ hybride app in React Native of Flutter rendert elk platform zijn eigen component
 één klopt, kan op de ander een bevinding zijn. Je krijgt daarom ook een apart rapport per
 platform, met een aparte steekproef aan schermen.
 
-Voor de apps van het Rijksmuseum leverde dat 83 bevindingen op, verdeeld over twee apps. Andere
-apps die we onderzochten zijn die van Museumkaart en Eteck.
+Voor het Rijksmuseum onderzochten we op die manier twee apps, elk met een eigen rapport. Ook de
+app van Museumkaart namen we onder handen.
 
 Een onderzoek duurt 3 tot 5 weken. We stemmen de planning af op je release-cyclus, want een
 rapport dat aankomt op de dag van een grote release is voor niemand handig.
@@ -139,7 +138,8 @@ een CSV met alle bevindingen, zodat je ze rechtstreeks in je backlog kunt inleze
 
 Heb je naast een app ook een website, dan is een
 [toegankelijkheidsonderzoek van de website](/toegankelijkheidsaudit/) een apart onderzoek met een
-eigen rapport. Dat is ook wat het Register van Toegankelijkheidsverklaringen en de EAA
-verwachten: per kanaal een eigen onderbouwing.
+eigen rapport. Val je onder het Besluit digitale toegankelijkheid overheid, dan vraagt het
+Register van Toegankelijkheidsverklaringen dat ook zo: elk digitaal kanaal heeft een eigen
+verklaring met een eigen onderbouwing.
 
 {{< /section-full >}}

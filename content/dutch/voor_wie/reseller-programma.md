@@ -42,7 +42,7 @@ Je verwijst een klant door. Wij nemen het over: intake, planning, audit, rapport
 {{< section-card title="Commissie" >}}
 
 - 7% van de opdrachtwaarde, gedurende het eerste jaar
-- Gemiddeld circa 252 euro per audit
+- Gemiddeld circa 220 euro per audit
 - Geen minimum aantal opdrachten, geen commitment
 
 {{< /section-card >}}
@@ -143,7 +143,7 @@ Proper Access is gespecialiseerd in audits voor digitale toegankelijkheid. We he
 <details class="faq-item">
 <summary class="faq-question">Wie doet het werk?</summary>
 <div class="faq-answer">
-<p>Altijd toegang tot senior auditor voor inhoudelijke vragen. Je klant werkt direct met de inhoud, niet via een account manager.</p>
+<p>Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra het rapport er ligt, kan je klant met inhoudelijke vragen rechtstreeks bij de auditor terecht.</p>
 </div>
 </details>
 

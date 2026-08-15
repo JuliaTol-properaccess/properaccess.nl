@@ -36,7 +36,7 @@ banner:
   title: "In minder dan 12 weken een toegankelijke website of app"
   content: "Meer bereik, betere conversie en een sterker imago, door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
-    - "**Meer bereik**: tot 20% extra potenti&euml;le klanten"
+    - "**Meer bereik**: de bezoekers die nu halverwege afhaken"
     - "**Betere conversie** en sterker imago"
     - "**Voldoe** aan EAA of BDTO, zonder stress"
   button:
@@ -51,7 +51,7 @@ trust:
     - Prov. Noord-Holland
     - NRC
     - Museumvereniging
-    - Eteck
+    - De Bijenkorf
     - Jumbo
 
 faqs:
@@ -60,7 +60,7 @@ faqs:
   - question: "Moeten we alles meteen oplossen?"
     answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
   - question: "Is dit verplicht voor ons?"
-    answer: "Als je website of app onder de European Accessibility Act valt: ja, vanaf juni 2025. Dat geldt voor de meeste commerciële diensten, zoals webshops, bankieren, reizen boeken, e-books en communicatiediensten. Ook overheidsorganisaties moeten voldoen aan het Besluit digitale toegankelijkheid overheid (BDTO), dat sinds 2018 geldt."
+    answer: "Een toegankelijke website of app is verplicht. Een onderzoek niet: de European Accessibility Act, die sinds 28 juni 2025 geldt, vraagt om een product dat werkt, niet om een rapport. Zonder onderzoek weet je alleen niet waar je staat en kun je het ook niet aantonen. Val je onder het Besluit digitale toegankelijkheid overheid, dat sinds 2018 geldt, dan ligt het anders: daar hoort een toegankelijkheidsverklaring bij met onderzoek eronder."
   - question: "Wat als we niet technisch zijn?"
     answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
   - question: "Kunnen jullie ook de problemen oplossen?"
@@ -70,7 +70,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.250 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
-    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met zes-ogen-controle en echte assistieve technologie."
+    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met echte assistieve technologie en volgens het 6-ogen-principe: elke bevinding wordt dubbel gecontroleerd."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
@@ -98,7 +98,7 @@ erin.
 
 {{< /section-full >}}
 
-{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Toezichthouders hanteren dezelfde methode, dus je rapport is bruikbaar als bewijs." >}}
+{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat er volgens is uitgevoerd, dus je rapport is bruikbaar als bewijs." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Reikwijdte bepalen</h3>

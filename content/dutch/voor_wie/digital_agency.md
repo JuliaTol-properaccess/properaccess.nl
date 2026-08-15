@@ -14,9 +14,8 @@ keywords:
   - WCAG training developers
   - digitale toegankelijkheid partnership
   - EAA digital agency
-  - WCAG React
-  - WCAG Vue
-  - WCAG WordPress
+  - WCAG voor developers
+  - toegankelijkheid tijdens de bouw
 
 banner:
   badge: "WCAG-partner voor agencies"
@@ -52,7 +51,7 @@ faqs:
   - question: "Bieden jullie ook ondersteuning tijdens het ontwikkelproces?"
     answer: "Zeker. We kunnen sparren met developers, code reviews uitvoeren, meehelpen met interpretatie van WCAG-richtlijnen, en feedback geven op componentniveau. Geen formeel traject nodig, gewoon even bellen of mailen als er vragen zijn."
   - question: "Geven jullie trainingen of workshops voor ontwikkelteams?"
-    answer: "Ja, we verzorgen praktische trainingen voor developers, designers en contentteams. Focus op wat jullie daadwerkelijk gebruiken: React, Vue, WordPress, etcetera. Bijvoorbeeld workshops over WCAG, semantische HTML, ARIA, toetsenbordnavigatie en screenreadertests. Hands-on, met code-voorbeelden."
+    answer: "Ja, we verzorgen praktische trainingen voor developers, designers en contentteams. We stemmen ze af op de stack die jullie daadwerkelijk gebruiken. Bijvoorbeeld workshops over WCAG, semantische HTML, ARIA, toetsenbordnavigatie en screenreadertests. Hands-on, met code-voorbeelden."
   - question: "Wat als onze klant al een rapport van een ander bureau heeft?"
     answer: "Geen probleem. We helpen jullie het rapport interpreteren en de aanpassingen prioriteren. Soms zijn rapporten van andere bureaus te technisch of te algemeen; wij vertalen ze naar concrete acties voor je team."
   - question: "Hoe kunnen we een audit aanvragen voor een lopend project?"

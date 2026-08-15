@@ -10,10 +10,9 @@ description: "Kunnen al je studenten bij de lesstof? Proper Access audits digita
 keywords:
   - digitale toegankelijkheid onderwijs
   - WCAG audit leeromgeving
-  - Moodle toegankelijkheid
-  - Canvas toegankelijkheid
+  - toegankelijkheid leeromgeving
   - LMS audit WCAG
-  - Articulate toegankelijkheid
+  - toegankelijkheid e-learning
   - e-learning toegankelijkheid
   - EAA onderwijs
   - BDTO onderwijs
@@ -32,37 +31,37 @@ banner:
     link: "/contact/"
 
 trust:
-  label: "Ervaring met onder andere"
+  label: "Onderzoek gedaan voor onder meer"
   names:
-    - "Moodle"
-    - "Canvas"
-    - "WordPress"
-    - "Articulate"
-    - "Class"
+    - "Provincie Noord-Holland"
+    - "Gemeente Amersfoort"
+    - "Rijksmuseum"
+    - "NRC"
 
 vp_framework:
-  label: "We kennen je LMS:"
+  label: "Wat we toetsen:"
   items:
     - icon: "school"
-      name: "Moodle"
-    - icon: "school"
-      name: "Canvas"
-    - icon: "school"
-      name: "Blackboard"
+      name: "Leeromgevingen"
+    - icon: "quiz"
+      name: "Toetssystemen"
     - icon: "play_circle"
-      name: "Articulate"
+      name: "E-learningmodules"
     - icon: "cast_for_education"
-      name: "Class"
-    - icon: "widgets"
-      name: "WordPress"
+      name: "Colleges op video"
+    - icon: "badge"
+      name: "Studentportalen"
+    - icon: "picture_as_pdf"
+      name: "Readers en syllabi"
   footer: "We geven oplossingen die passen bij jullie platform, geen generieke WCAG-uitleg."
   eyebrow: "Platform-kennis"
-  title: "We kennen Moodle, Articulate, Class, en waar toegankelijkheid daar misgaat"
+  title: "We kennen zo'n 150 systemen, en waar toegankelijkheid daar misgaat"
   body: >
-    Je ontwikkelaar twijfelt hoe je een Moodle-toets toegankelijk maakt voor schermlezers?
-    Articulate-modules correct labelen voor toetsenbordgebruikers? De custom thema-layer van
-    Canvas werkend houden met hulpsoftware? We kijken mee, delen concrete oplossingen en leggen
-    uit waarom bepaalde keuzes beter werken, in de platformen die jullie studenten gebruiken.
+    Je ontwikkelaar twijfelt hoe je een digitale toets toegankelijk maakt voor schermlezers?
+    Hoe je e-learningmodules correct labelt voor toetsenbordgebruikers? Hoe je een eigen
+    thema-layer werkend houdt met hulpsoftware? We kijken mee, delen concrete oplossingen en
+    leggen uit waarom bepaalde keuzes beter werken, in de platformen die jullie studenten
+    gebruiken.
   button:
     label: "Bekijk een voorbeeldrapport"
     link: "/toegankelijkheidsaudit/#voorbeeldrapporten"
@@ -74,10 +73,10 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 **De impact is groot:**
 
-- Een blinde student die een toets niet kan maken omdat de knoppen in Moodle geen labels hebben
-- Een student met dyslexie die vastloopt op een Articulate-module met tekst in afbeeldingen
+- Een blinde student die een digitale toets niet kan maken omdat de knoppen geen labels hebben
+- Een student met dyslexie die vastloopt op een e-learningmodule met tekst in afbeeldingen
 - Een slechthorende student die hoorcolleges terugkijkt zonder ondertiteling
-- Een student met een motorische beperking die de drag-and-drop oefening in Canvas niet kan bedienen
+- Een student met een motorische beperking die de drag-and-drop oefening niet kan bedienen
 
 {{< /section-full >}}
 
@@ -109,7 +108,7 @@ Opgenomen hoorcolleges, instructievideo's, webinars: het onderwijs leunt zwaar o
 {{< /section-card >}}
 {{< section-card title="Custom thema's die de toegankelijkheid kapotmaken" >}}
 
-Moodle en Canvas zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpassing aan het thema, bijvoorbeeld een fancy navigatiemenu, een custom dashboard of een branded login-pagina, introduceert vaak nieuwe barrières.
+De grote leeromgevingen zijn out-of-the-box redelijk toegankelijk. Maar de eerste aanpassing aan het thema, bijvoorbeeld een fancy navigatiemenu, een custom dashboard of een branded login-pagina, introduceert vaak nieuwe barrières.
 
 {{< /section-card >}}
 {{< /section-cards >}}
@@ -124,11 +123,11 @@ Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een mini-audit aan (495 eu
 
 {{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" image="/images/pages/tool-verklaring-wdo.svg" alt="Illustratie van de toegankelijkheidsverklaring-tool" >}}
 
-De **Inspectie van het Onderwijs** houdt toezicht op onderwijsinstellingen. Zij kijken of je "in control" bent:
+Val je onder het Besluit digitale toegankelijkheid overheid, dan heeft elk digitaal kanaal een eigen verklaring nodig in het Register van Toegankelijkheidsverklaringen: je website, je leeromgeving, je studentportaal en je apps. Wat daarin telt:
 
-- Is er een toegankelijkheidsverklaring?
-- Zijn er maatregelen genomen?
-- Is er voortgang?
+- Is er een verklaring, en klopt de status?
+- Ligt er onderzoek volgens WCAG-EM onder?
+- Zijn er maatregelen genomen en is er voortgang?
 
 Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op, in het formaat van het officiële register.
 
@@ -138,18 +137,18 @@ Met onze gratis tool stel je binnen 5 minuten een toegankelijkheidsverklaring op
 
 {{< section-full title="Wij kennen jullie systemen van binnenuit" >}}
 
-In ons team zit ervaring bij de Rechtspraak, het Studiecentrum voor Rechtspleging, RADIO en veel andere onderwijsorganisaties. Dat is ervaring met complexe webapplicaties en met de interne systemen eromheen. Leeromgevingen als Moodle, WordPress, Canvas, Class en Articulate kennen we daardoor uit de broncode en niet alleen van het scherm.
+Inmiddels kennen we zo'n 150 verschillende systemen, van maatwerkframeworks tot standaard-CMS'en, en daar zitten de leeromgevingen, toetssystemen en e-learningtools bij die in het onderwijs worden gebruikt. We kennen ze uit de broncode en niet alleen van het scherm.
 
 **Dat maakt het verschil.** We auditen niet alleen of een knop het juiste label heeft. We begrijpen waarom die knop dat label mist, welke template of plugin het veroorzaakt, en hoe je het oplost zonder je hele leeromgeving overhoop te halen.
 
-**We testen zoals je studenten je platform gebruiken:** met toetsenbord, screenreader, vergroting en spraakbesturing. Niet met een geautomatiseerde scanner die 70% van de problemen mist.
+**We testen zoals je studenten je platform gebruiken:** met toetsenbord, screenreader, vergroting en spraakbesturing. Een geautomatiseerde scanner herkent ongeveer 30% van de succescriteria; de rest vraagt om een mens.
 
 {{< /section-full >}}
 
 {{< section-cards title="Waarom Proper Access voor onderwijs?" columns="2" bg="dark" >}}
 {{< section-card title="We kennen de techniek achter je platform" >}}
 
-Andere bureaus testen de voorkant. Wij begrijpen de achterkant. We weten of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
+Andere bureaus testen de voorkant. Wij begrijpen de achterkant. We weten of een probleem in je thema zit, in een plugin, of in de core van je leeromgeving. Dat scheelt je IT-afdeling weken zoekwerk.
 
 {{< /section-card >}}
 {{< section-card title="Rapport per element, niet per succescriterium" >}}
@@ -159,12 +158,12 @@ Je krijgt niet "SC 1.1.1 is niet gehaald" met een lijst van 40 pagina's. Je krij
 {{< /section-card >}}
 {{< section-card title="Onafhankelijk" >}}
 
-We bouwen geen websites, beheren geen content, verkopen geen software. We hebben geen belang bij een bepaalde uitkomst. Dat betekent dat je erop kunt vertrouwen dat ons advies klopt, ook als dat advies is: "dit platform is niet geschikt".
+We bouwen geen websites en beheren geen content. We keuren dus nooit ons eigen werk en hebben geen belang bij een bepaalde uitkomst. Dat betekent dat je erop kunt vertrouwen dat ons advies klopt, ook als dat advies is: "dit platform is niet geschikt".
 
 {{< /section-card >}}
 {{< section-card title="Directe lijn met de auditor" >}}
 
-Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct met de specialist die je audit uitvoert. Vragen over het rapport mag je daarna onbeperkt stellen, zonder meerkosten. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur).
+Zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschreven heeft. Vragen over het rapport mag je onbeperkt stellen, zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur).
 
 {{< /section-card >}}
 {{< /section-cards >}}
@@ -183,12 +182,12 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 <details class="faq-item">
 <summary class="faq-question">Kunnen jullie ons LMS auditen, of alleen de website?</summary>
 <div class="faq-answer">
-<p>Beide. We auditen je website, je leeromgeving (Moodle, Canvas, Blackboard), je studentportaal en zelfs losse e-learning modules. We testen elk platform zoals een student het gebruikt.</p>
+<p>Beide. We auditen je website, je leeromgeving, je studentportaal en zelfs losse e-learningmodules. We testen elk platform zoals een student het gebruikt.</p>
 </div>
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">Onze Moodle-omgeving is niet publiek toegankelijk. Hoe werkt dat?</summary>
+<summary class="faq-question">Onze leeromgeving is niet publiek toegankelijk. Hoe werkt dat?</summary>
 <div class="faq-answer">
 <p>We werken met een testaccount. Jullie maken een studentaccount aan met toegang tot representatieve cursussen, toetsen en modules. Dat is alles wat we nodig hebben.</p>
 </div>
@@ -202,7 +201,7 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">We hebben honderden Articulate-modules. Moeten die allemaal geaudit?</summary>
+<summary class="faq-question">We hebben honderden e-learningmodules. Moeten die allemaal geaudit?</summary>
 <div class="faq-answer">
 <p>Nee. We auditen een representatieve steekproef en leveren richtlijnen op die je kunt toepassen op al je modules. Zo weet je precies waar je op moet letten bij bestaande en nieuwe content.</p>
 </div>
@@ -225,7 +224,7 @@ Geen accountmanagers, geen projectmanagers, geen tussenlaag. Je spreekt direct m
 <details class="faq-item">
 <summary class="faq-question">Hoe lang duurt een audit?</summary>
 <div class="faq-answer">
-<p>Gemiddeld 3 tot 4 weken. Een mini-audit is binnen 5 werkdagen klaar.</p>
+<p>3 tot 5 weken, afhankelijk van de omvang. Een mini-audit is binnen 5 werkdagen klaar.</p>
 </div>
 </details>
 
