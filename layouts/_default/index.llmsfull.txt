@@ -21,8 +21,8 @@ Wat ons onderscheidt:
 - **Rapport per element**, niet per WCAG-succescriterium zoals de rest van de markt
 - **Visuele voorbeelden** en taal afgestemd op de lezer
 - **User stories per bevinding** vanuit de bezoeker met een beperking
-- **Onafhankelijk** — we bouwen geen websites, beheren geen content, verkopen geen software
-- **Direct contact met senior auditor** — geen account managers ertussen
+- **Onafhankelijk** — we bouwen en beheren geen websites, dus we keuren nooit ons eigen werk
+- **Direct contact met senior auditor** — voor klanten met een rapport van ons; daarvoor is een relatiebeheerder het aanspreekpunt
 - **Eigen research** — wekelijks studeren, browser- en hulpsoftwaregedrag testen
 
 ## Diensten
