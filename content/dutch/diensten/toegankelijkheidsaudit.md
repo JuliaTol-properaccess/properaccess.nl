@@ -51,7 +51,7 @@ trust:
     - Prov. Noord-Holland
     - NRC
     - Museumvereniging
-    - De Bijenkorf
+    - Eteck
     - Jumbo
 
 faqs:

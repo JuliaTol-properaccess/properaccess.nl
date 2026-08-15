@@ -30,7 +30,7 @@ banner:
     met onze klanten.
   bulletpoints:
     - "Opgericht in 2019, 950+ audits uitgevoerd"
-    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, De Bijenkorf, Museumvereniging"
+    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
     - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
     - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
   button:
@@ -45,7 +45,7 @@ trust:
     - Prov. Noord-Holland
     - NRC
     - Museumvereniging
-    - De Bijenkorf
+    - Eteck
     - Jumbo
 
 team:
