@@ -49,7 +49,7 @@ We pakken dezelfde steekproef erbij die we in de oorspronkelijke audit hebben ge
 - **Is het probleem juist opgelost?** Een onlogische workaround is geen oplossing. Een knop die nu wel een naam heeft maar de verkeerde naam, is nog steeds een probleem.
 - **Zijn er bij het oplossen nieuwe problemen ontstaan?** Dat gebeurt vaker dan je denkt. Een component dat eindelijk toetsenbordtoegankelijk is, kan in dat proces zijn focuszichtbaarheid verloren hebben.
 
-Een heronderzoek kost gemiddeld zo'n zes uur. Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bevinding (opgelost, deels opgelost, niet opgelost) en eventuele nieuwe bevindingen die we onderweg tegenkwamen.
+Hoeveel werk een heronderzoek is, hangt af van het aantal bevindingen in je rapport. Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bevinding (opgelost, deels opgelost, niet opgelost) en eventuele nieuwe bevindingen die we onderweg tegenkwamen.
 
 {{< /section-full >}}
 

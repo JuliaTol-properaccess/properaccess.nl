@@ -66,7 +66,7 @@ faqs:
   - question: "Kunnen jullie ook de problemen oplossen?"
     answer: "Wij adviseren, jouw developers voeren uit. Maar als je geen eigen developers hebt, kunnen we je doorverwijzen naar agencies waarmee we samenwerken."
   - question: "Wat krijgen we precies?"
-    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie (optioneel). Vragen over het rapport mag je daarna onbeperkt stellen. Wil je dat we meedenken bij het oplossen, dan werken we met een [strippenkaart](/strippenkaart/) à € 100/uur."
+    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie, die laatste optioneel. Vragen daarna, en meedenken bij het oplossen, lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag, vanaf € 20 per vraag."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.250 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
@@ -193,7 +193,7 @@ De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categori
 welk onderzoek past en je krijgt daarna een vaste prijs, geen nacalculatie.
 
 Twee dingen bieden we er altijd bij aan, allebei optioneel. Een
-[hercontrole](/hercontrole/) van € 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost,
+[hercontrole](/hercontrole/) legt vast dat je bevindingen zijn opgelost,
 en dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring. Een nabespreking
 van € 250 per uur betekent dat we het rapport samen doorlopen en helpen prioriteren.
 
@@ -221,8 +221,9 @@ opgeschreven en welke taal we gebruiken, voordat je iets afspreekt.
 {{< /section-card >}}
 {{< section-card title="We denken mee bij het oplossen" >}}
 
-Wil je tijdens het oplossen kunnen overleggen, dan kan dat met een strippenkaart van € 100 per
-uur. Je koopt losse uren waarin we alternatieven bekijken, code reviewen of tussentijds testen.
+Wil je tijdens het oplossen kunnen overleggen, dan kan dat met een strippenkaart. Eén strip is
+één vraag over één onderwerp, vanaf € 20 per vraag: alternatieven bekijken, code reviewen of
+tussentijds testen.
 
 [Lees over de strippenkaart →](/strippenkaart/)
 

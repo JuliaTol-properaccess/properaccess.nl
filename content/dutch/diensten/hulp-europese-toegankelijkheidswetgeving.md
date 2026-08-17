@@ -116,9 +116,9 @@ Welk type onderzoek past hangt af van wat je zelf kunt veranderen; die keuze sta
 de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een volledig onderzoek
 begint bij circa € 2.250 en duurt 3 tot 5 weken.
 
-Voor de **begeleiding** werken we met een [strippenkaart](/strippenkaart/) van € 100 per uur. Je
-koopt losse uren waarin we alternatieven bekijken, code reviewen of tussentijds testen, zonder
-dat er een traject omheen hoeft. Wil je je eigen team opleiden, dan kan dat met een
+Voor **vragen en begeleiding** werken we met een [strippenkaart](/strippenkaart/): één strip is
+één vraag over één onderwerp, vanaf € 20 per vraag. Daarmee bekijken we alternatieven, reviewen we
+code of testen we tussentijds, zonder dat er een traject omheen hoeft. Wil je je eigen team opleiden, dan kan dat met een
 [training voor devteams](/training-devteams/) of een
 [training voor je webredactie](/trainen-van-webredactie/).
 

@@ -62,7 +62,7 @@ De klant blijft jouw klant. Jij bent het aanspreekpunt en jij stuurt de communic
 {{< /section-card >}}
 {{< section-card title="2. Wij leveren alles wat je nodig hebt" >}}
 
-Een landingspagina, de audit zelf binnen 3 tot 5 weken, en ruimte voor onbeperkt vragen over het rapport. Voor inhoudelijke begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/) à € 100/uur. Je betaalt alleen voor de uren die je daadwerkelijk gebruikt.
+Een landingspagina en de audit zelf binnen 3 tot 5 weken. Voor vragen en begeleiding bij het oplossen werken we met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag.
 
 {{< /section-card >}}
 {{< section-card title="3. Jij krijgt een aantrekkelijke commissie" >}}

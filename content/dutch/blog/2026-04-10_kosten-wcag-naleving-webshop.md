@@ -50,11 +50,11 @@ Dit is de grootste variabele. De kosten hangen af van:
 ### Je development-team
 Heeft je team ervaring met toegankelijkheid? Zo niet, reken op extra tijd voor kennisopbouw. Wij bieden nabesprekingen aan (€ 250/uur, of een half uur voor € 125) om je team door het rapport te leiden.
 
-## 3. Onderhoud: € 450 tot € 1.000 per retest
+## 3. Onderhoud: meestal € 300 tot € 1.100 per retest
 
 Na de eerste audit en fixes heb je periodiek een hertest nodig. Elke keer dat je nieuwe features toevoegt, een thema-update doet of content wijzigt, kunnen er nieuwe problemen ontstaan.
 
-Een retest van een webshop kost bij ons tussen € 450 en € 1.000, afhankelijk van de omvang van de oorspronkelijke audit.
+Wat een retest van een webshop bij ons kost, hangt af van het aantal bevindingen in je rapport. Meestal ligt dat tussen € 300 en € 1.100. Je krijgt de prijs zodra het rapport klaar is en het aantal bevindingen vaststaat.
 
 ## Totaalplaatje
 
@@ -62,9 +62,9 @@ Een retest van een webshop kost bij ons tussen € 450 en € 1.000, afhankelijk
 | ----------------------------- | ----------------- |
 | Audit                         | € 2.895 - € 5.100 |
 | Oplossen (inschatting)        | € 2.000 - € 15.000 |
-| Retest na fixes               | € 450 - € 1.000   |
+| Retest na fixes               | meestal € 300 - € 1.100 |
 | Nabespreking (optioneel)      | € 250 / uur       |
-| Strippenkaart                 | € 100 / uur       |
+| Strippenkaart                 | € 20 tot € 25 per vraag |
 
 ## Hoe bespaar je kosten?
 

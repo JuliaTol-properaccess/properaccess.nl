@@ -123,7 +123,7 @@ Een paar tips uit de praktijk:
 - **PDF's:** Maak een handleiding voor docenten. Hoe voeg je koppenstructuur toe in Word? Hoe schrijf je alt-teksten bij diagrammen? Hoe exporteer je een toegankelijke PDF? Dit hoeft geen ingewikkeld document te zijn -- een pagina met de vijf belangrijkste regels volstaat.
 - **Video:** Automatische ondertiteling (bijvoorbeeld via Panopto of YouTube) is een goed startpunt, maar moet altijd handmatig worden gecorrigeerd. Vooral vaktermen en eigennamen gaan fout.
 
-**Hoe wij hierbij helpen:** Vragen over het rapport mag je na de audit onbeperkt stellen: over een bevinding die niet duidelijk is, of over de interpretatie van een richtlijn. Zonder meerkosten. Je IT-afdeling loopt vast op een Moodle-probleem en wil dat we daadwerkelijk meedenken bij de oplossing? Dan werken we met een [strippenkaart](/strippenkaart/) (€ 100/uur), zo betaal je alleen voor de uren die je gebruikt. In beide gevallen spreek je rechtstreeks met de auditor die je rapport heeft geschreven, zonder tussenlaag.
+**Hoe wij hierbij helpen:** Vragen na de audit stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag. Dat geldt voor een bevinding die niet duidelijk is, voor de interpretatie van een richtlijn, en voor een IT-afdeling die vastloopt op een Moodle-probleem en wil dat we meedenken bij de oplossing. Je spreekt rechtstreeks met de auditor die je rapport heeft geschreven, zonder tussenlaag.
 
 We bieden daarnaast een content-audit aan: we auditen een steekproef van jullie documenten, video's en LMS-pagina's en leveren concrete richtlijnen op die je hele organisatie kan toepassen. Handig als je honderden docenten hebt die content produceren.
 
@@ -133,7 +133,7 @@ Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en 
 
 Maar een retest is niet het eindpunt. Toegankelijkheid is geen project met een einddatum -- het is een doorlopend proces. Nieuwe content, nieuwe plugins, nieuwe functionaliteit: alles kan nieuwe barrières introduceren.
 
-**Hoe wij hierbij helpen:** Een retest kost tussen 450 en 1.000 euro, afhankelijk van de omvang van de oorspronkelijke audit. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
+**Hoe wij hierbij helpen:** Wat een retest kost hangt af van het aantal bevindingen in je rapport; meestal ligt dat tussen 300 en 1.100 euro. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
 
 Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids-abonnement of strippenkaart aan. Dan denken we doorlopend mee: bij nieuwe releases, bij de keuze voor een nieuwe plugin, bij de inrichting van een nieuw deel van je leeromgeving. Zo voorkom je dat je over een jaar weer van voren af aan moet beginnen.
 
