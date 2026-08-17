@@ -52,7 +52,7 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | ------------------------------------- | ----------------- |
 | Webshop-audit (eenvoudig tot complex) | € 2.895 - € 5.100 |
 | Mini-audit (handmatige eerste controle) | € 495 exclusief btw |
-| Retest na fixes                       | € 450 tot € 1.000 |
+| Retest na fixes                       | meestal € 300 tot € 1.100 |
 | Nabespreking met je team              | € 250 per uur     |
 | Strippenkaart (per vraag)             | € 20 tot € 25     |
 

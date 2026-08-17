@@ -193,7 +193,7 @@ De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categori
 welk onderzoek past en je krijgt daarna een vaste prijs, geen nacalculatie.
 
 Twee dingen bieden we er altijd bij aan, allebei optioneel. Een
-[hercontrole](/hercontrole/) van € 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost,
+[hercontrole](/hercontrole/) legt vast dat je bevindingen zijn opgelost,
 en dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring. Een nabespreking
 van € 250 per uur betekent dat we het rapport samen doorlopen en helpen prioriteren.
 

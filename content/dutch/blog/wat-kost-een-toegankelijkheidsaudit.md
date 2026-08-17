@@ -57,7 +57,7 @@ De meeste websites vallen in de categorie "gemiddeld", bijvoorbeeld een overheid
 Na een audit bieden we altijd twee optionele extra's aan:
 
 - **Nabespreking** (1 uur, 250 euro; een half uur kan ook, voor 125 euro): we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
-- **Retest** (content-retest 350 euro, website-retest 450 tot 1.000 euro): nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
+- **Retest** (meestal 300 tot 1.100 euro, afhankelijk van het aantal bevindingen in je rapport): nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
 
 ## Prijstabel volledig onderzoek
 

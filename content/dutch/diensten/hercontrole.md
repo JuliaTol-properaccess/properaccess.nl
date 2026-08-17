@@ -27,7 +27,7 @@ trust:
   label: "Wat erin zit"
   names:
     - "Binnen 12 weken"
-    - "Circa 6 uur werk"
+    - "Elke bevinding nagelopen"
     - "Bewijs voor status A"
     - "Onafhankelijke beoordeling"
     - "Per element rapport"
@@ -49,7 +49,7 @@ We pakken dezelfde steekproef erbij die we in de oorspronkelijke audit hebben ge
 - **Is het probleem juist opgelost?** Een onlogische workaround is geen oplossing. Een knop die nu wel een naam heeft maar de verkeerde naam, is nog steeds een probleem.
 - **Zijn er bij het oplossen nieuwe problemen ontstaan?** Dat gebeurt vaker dan je denkt. Een component dat eindelijk toetsenbordtoegankelijk is, kan in dat proces zijn focuszichtbaarheid verloren hebben.
 
-Een hercontrole kost gemiddeld zo'n zes uur. Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bevinding (opgelost, deels opgelost, niet opgelost) en eventuele nieuwe bevindingen die we onderweg tegenkwamen.
+Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bevinding (opgelost, deels opgelost, niet opgelost) en eventuele nieuwe bevindingen die we onderweg tegenkwamen.
 
 {{< /section-full >}}
 
@@ -57,18 +57,19 @@ Een hercontrole kost gemiddeld zo'n zes uur. Aan het einde krijg je een aangepas
 
 We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type hercontrole volgt het type oorspronkelijke audit: een contentaudit krijgt een content-hercontrole, een systeemaudit krijgt een systeem-hercontrole.
 
-| Type audit | Hercontrole |
-| --- | --- |
-| [Contentaudit](/contentaudit/) | € 350 |
-| [Techniekaudit](/techniekaudit/) | € 550 |
-| [Systeemaudit](/techniekaudit/) | € 900 |
-| [Volledige audit](/toegankelijkheidsaudit/) | € 450 tot € 1.000 |
-
-Vaste bedragen, exclusief 21% btw. Bij een volledige audit hangt het bedrag af van de omvang van de oorspronkelijke audit: € 450 voor een eenvoudige website, € 1.000 voor een complexe. Staan er meer dan 150 bevindingen in je rapport, dan spreken we vooraf een aangepaste prijs af. We sturen een offerte na een korte mailwisseling.
+We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniekaudit/), een systeemaudit en een [volledige audit](/toegankelijkheidsaudit/).
 
 {{< /section-full >}}
 
-{{< section-full title="De twaalf-wekentermijn" bg="light" >}}
+{{< section-full title="Wat een hercontrole kost" bg="light" >}}
+
+Dat hangt af van het aantal bevindingen in je rapport, want we lopen ze allemaal na. Het ene rapport heeft twintig bevindingen, het andere honderdtwintig, en dat is een verschil van uren werk. Meestal komt een hercontrole tussen € 300 en € 1.100 uit, exclusief 21% btw.
+
+Je krijgt die prijs op het moment dat hij te bepalen is. Op de offerte voor de audit vink je aan dat je een hercontrole wilt: dat is een voorkeur, geen opdracht, en het kost niets. Zodra je rapport klaar is en we weten hoeveel bevindingen erin staan, sturen we je een aparte offerte voor de hercontrole.
+
+{{< /section-full >}}
+
+{{< section-full title="De twaalf-wekentermijn" >}}
 
 Een hercontrole is alleen mogelijk binnen twaalf weken na oplevering van het oorspronkelijke rapport. Daarna zijn er meestal te veel wijzigingen op de website doorgevoerd (nieuwe content, nieuwe componenten, een nieuwe release) om de oude steekproef nog representatief te noemen. In dat geval is een volledig nieuwe audit nodig.
 
@@ -76,7 +77,7 @@ Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het
 
 {{< /section-full >}}
 
-{{< section-full title="Wat we onderweg tegenkomen" >}}
+{{< section-full title="Wat we onderweg tegenkomen" bg="light" >}}
 
 Een hercontrole is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we moeten benoemen.
 
@@ -88,7 +89,7 @@ We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je 
 
 {{< /section-full >}}
 
-{{< section-full title="Wat een hercontrole oplevert" bg="light" >}}
+{{< section-full title="Wat een hercontrole oplevert" >}}
 
 Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een hercontrole laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
 
