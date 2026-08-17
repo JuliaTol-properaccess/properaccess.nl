@@ -57,7 +57,7 @@ faqs:
   - question: "Hoe kunnen we een audit aanvragen voor een lopend project?"
     answer: "Neem contact met ons op met informatie over jullie project: URL (staging-omgeving mag), gebruikersrollen, gebruikte frameworks. We stemmen samen af welke onderdelen we toetsen en welke toegang nodig is. Binnen een week kunnen we vaak al starten."
   - question: "Wie doet het werk?"
-    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra het rapport er ligt, heeft je team rechtstreeks toegang tot de auditor voor inhoudelijke vragen, onbeperkt en zonder meerkosten. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
+    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra het rapport er ligt, heeft je team rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau kan een agency inschakelen voor een onafhankelijk toegankelijkheidsonderzoek van een klantproject?"
@@ -104,7 +104,8 @@ toegankelijkheidsverklaring kan toelichten.
 {{< section-card title="Als sparringpartner" >}}
 
 Code reviews, een tweede mening over een ARIA-patroon, of de vraag of iets echt niet kan binnen
-een framework. Dat loopt via een strippenkaart van € 100 per uur, dus zonder een traject eromheen.
+een framework. Dat loopt via een strippenkaart: één strip is één vraag, vanaf € 20 per vraag, dus
+zonder een traject eromheen.
 
 {{< /section-card >}}
 {{< /section-cards >}}

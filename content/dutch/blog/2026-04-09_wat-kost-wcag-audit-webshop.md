@@ -36,13 +36,13 @@ Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-
 
 ## Korte antwoord
 
-> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.895 en € 5.100**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, custom componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een mini-audit kost 495 euro exclusief btw.
+> Een WCAG-audit voor een webshop kost bij Proper Access indicatief tussen de **€ 2.895 en € 5.100**. Het exacte bedrag hangt af van de complexiteit: een eenvoudige webshop met één template en één taal zit aan de onderkant, een complexe internationale webshop met multilingual checkout, zelfgemaakte componenten en een uitgebreid accountgedeelte zit aan de bovenkant. Een mini-audit kost 495 euro exclusief btw.
 
 Dat is het in één alinea. De rest van dit artikel is uitleg waarom die range zo is, wat je voor dat bedrag krijgt, en welke factoren het naar boven of beneden duwen.
 
 ## Waarom is er geen vaste prijs?
 
-Webshops verschillen enorm. Een eenvoudige webshop met dertig producten en één template is iets heel anders dan een marktplaats met vierduizend producten, vijf taalversies, een complexe checkout en honderd custom componenten. Een audit-prijs is geen "abonnement op WCAG", het is een prijs voor menselijk werk. Hoe meer eigen patronen, hoe meer er getest moet worden.
+Webshops verschillen enorm. Een eenvoudige webshop met dertig producten en één template is iets heel anders dan een marktplaats met vierduizend producten, vijf taalversies, een complexe checkout en honderd zelfgemaakte componenten. Een audit-prijs is geen "abonnement op WCAG", het is een prijs voor menselijk werk. Hoe meer eigen patronen, hoe meer er getest moet worden.
 
 Tegelijk wil je niet dat een audit betaald wordt per gevonden probleem of per pagina. Dan krijg je perverse prikkels. Wat je wel wilt, is een prijs die gekoppeld is aan **complexiteit en omvang**, en die vooraf duidelijk is.
 
@@ -54,7 +54,7 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | Mini-audit (handmatige eerste controle) | € 495 exclusief btw |
 | Retest na fixes                       | € 450 tot € 1.000 |
 | Nabespreking met je team              | € 250 per uur     |
-| Strippenkaart                         | € 100 per uur     |
+| Strippenkaart (per vraag)             | € 20 tot € 25     |
 
 Waar je in die range zit, hangt af van je webshop. Een eenvoudige Shopify-shop zit aan de onderkant. Een marketplace met meerdere talen, een uitgebreid accountgedeelte, subdomeinen met eigen templates en een actieve blog zit aan de bovenkant. De meeste Nederlandse webshops vallen in de categorie gemiddeld en liggen rond de € 3.150.
 

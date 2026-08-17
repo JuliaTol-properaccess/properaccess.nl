@@ -95,10 +95,10 @@ faqs:
       **Andere bureaus leveren rapporten.** Wij leveren oplossingen. Andere bureaus zijn inspectie-instellingen. Wij helpen je je websites toegankelijk te maken voor echte gebruikers.
 
 
-      Het verschil zit in de details: rapporten per webpagina en per element (niet per succescriterium),
-      concrete code-snippets en screenshots, en ruimte voor onbeperkt vragen over het rapport.
-      Wil je dat we meedenken bij het oplossen zelf? Dat doen we via een strippenkaart, zodat je
-      alleen betaalt voor de uren die je daadwerkelijk gebruikt.
+      Het verschil zit in de details: rapporten per webpagina en per element, dus niet per
+      succescriterium, met concrete code-snippets en screenshots. Wil je dat we meedenken bij het
+      oplossen zelf? Dat doen we met een strippenkaart: één strip is één vraag over één onderwerp,
+      vanaf € 20 per vraag.
 
   - question: "Hoe blijven jullie up-to-date?"
     answer: >
@@ -180,7 +180,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
   <h3 class="card__title">Begeleiding tijdens het oplossen</h3>
-  <p>Na het rapport verdwijnen we niet. Je mag <strong>onbeperkt vragen stellen</strong>. Voor inhoudelijke begeleiding bij het oplossen hebben we een strippenkaart: zo betaal je alleen voor de uren die je gebruikt.</p>
+  <p>Na het rapport verdwijnen we niet. Je vragen gaan naar de auditor die je rapport schreef, met een strippenkaart: <strong>één strip is één vraag</strong>, vanaf € 20 per vraag.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
@@ -211,7 +211,7 @@ Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfs
 
 {{< section-full title="Directe toegang tot de auditor" bg="light" >}}
 
-Zodra je rapport er ligt, praat je **direct met de auditor** die het geschreven heeft. Onbeperkt en zonder meerkosten. Dat scheelt tijd en misverstanden. In de fase daarvoor, van eerste gesprek tot offerte, is een relatiebeheerder je aanspreekpunt.
+Zodra je rapport er ligt, praat je **direct met de auditor** die het geschreven heeft. Geen wachtrij en geen tussenlaag, dus dat scheelt tijd en misverstanden. Je vragen lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor, van eerste gesprek tot offerte, is een relatiebeheerder je aanspreekpunt.
 
 Heb je een technische vraag? Die wordt beantwoord door iemand die je code begrijpt. Wil je sparren over de beste aanpak? We denken mee, ook als het buiten de scope van de audit valt.
 
