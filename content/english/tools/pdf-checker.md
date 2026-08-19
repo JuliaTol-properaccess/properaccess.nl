@@ -36,9 +36,6 @@ no tool can settle that. So we do not issue any statement that your document mee
 European Accessibility Act. What we do deliver is a document with the remaining faults written out,
 and that is the list a person can work from.
 
-In a scan without a text layer we cannot set tags. The tool says so, instead of handing back a result
-you cannot use.
-
 ## Where your document stays
 
 Every step runs on our own server in the EU. Your document does not go to Adobe, to Google, to a

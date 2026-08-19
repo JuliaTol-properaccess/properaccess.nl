@@ -36,9 +36,6 @@ vaststellen. Wij leveren dus geen verklaring dat je document aan WCAG of aan de 
 wel leveren is een document waarin de fouten staan die er nog zijn, en dat is de lijst waarmee een
 mens verder kan.
 
-Bij een scan zonder tekstlaag kunnen we geen tags zetten. Dat zegt de tool dan, in plaats van een
-resultaat terug te geven waar je niets aan hebt.
-
 ## Waar je document blijft
 
 Alle stappen draaien op onze eigen server in de EU. Je document gaat niet naar Adobe, niet naar
