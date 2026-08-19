@@ -1,0 +1,59 @@
+{{/* Wat de tool niet doet: leesorde, tabelkop en beeldbeschrijving vragen een mens. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 440 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfann-svg">
+  <rect x="0.5" y="0.5" width="439" height="319" rx="14" fill="#fff" stroke="#e5e7eb"/>
+
+  <text x="28" y="38" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="800" letter-spacing="0.06em">{{ cond $nl "HIER MOET EEN MENS NAAR KIJKEN" "A PERSON HAS TO LOOK AT THIS" }}</text>
+
+  <!-- Leesorde -->
+  <rect x="28" y="52" width="122" height="118" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="44" y="70" width="42" height="30" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.3"/>
+  <rect x="94" y="70" width="40" height="30" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.3"/>
+  <rect x="44" y="108" width="90" height="18" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.3"/>
+  <text x="61" y="89" fill="#004050" font-family="Nunito, sans-serif" font-size="11" font-weight="800">1</text>
+  <text x="111" y="89" fill="#004050" font-family="Nunito, sans-serif" font-size="11" font-weight="800">2</text>
+  <text x="85" y="121" fill="#004050" font-family="Nunito, sans-serif" font-size="11" font-weight="800">3</text>
+  <path d="M76 85 h12" stroke="#A30D4B" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M84 81 l5 4 -5 4" stroke="#A30D4B" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126 102 C 126 111, 100 108, 96 113" stroke="#A30D4B" stroke-width="1.7" fill="none"/>
+  <path d="M102 110 l-6 3 1 -6" stroke="#A30D4B" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="44" y="152" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Klopt de leesorde?" "Is the order right?" }}</text>
+
+  <!-- Tabelkop -->
+  <rect x="162" y="52" width="122" height="118" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="178" y="70" width="90" height="56" rx="4" fill="#fff" stroke="#e5e7eb"/>
+  <path d="M178 88 h90 M178 107 h90 M208 70 v56 M238 70 v56" stroke="#e5e7eb"/>
+  <path d="M178 74 a4 4 0 0 1 4 -4 h26 v18 h-30 z" fill="#004050" fill-opacity="0.12"/>
+  <text x="186" y="83" fill="#004050" font-family="monospace" font-size="7.5" font-weight="700">TH</text>
+  <rect x="214" y="76" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="244" y="76" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="184" y="95" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="214" y="95" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="244" y="95" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="184" y="114" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="214" y="114" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="244" y="114" width="18" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <circle cx="270" cy="64" r="8" fill="#A30D4B"/>
+  <path d="M270 60 v4.5 M270 67.4 v0.1" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="178" y="152" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Staat de kop goed?" "Is the header right?" }}</text>
+
+  <!-- Beeldbeschrijving -->
+  <rect x="296" y="52" width="116" height="118" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="312" y="70" width="84" height="46" rx="5" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <circle cx="332" cy="86" r="6" fill="#1F2937" opacity="0.2"/>
+  <path d="M314 112 l20 -18 14 12 12 -10 34 22" stroke="#1F2937" stroke-width="1.4" opacity="0.28" fill="none" stroke-linejoin="round"/>
+  <rect x="312" y="124" width="84" height="18" rx="4" fill="#fff" stroke="#A30D4B" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="320" y="136.5" fill="#A30D4B" font-family="monospace" font-size="8" font-weight="700">Alt ?</text>
+  <text x="310" y="152" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">{{ cond $nl "Klopt de alt-tekst?" "Is the alt text right?" }}</text>
+
+  <!-- Wat er niet uit komt -->
+  <rect x="28" y="192" width="384" height="100" rx="10" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <rect x="52" y="212" width="96" height="60" rx="6" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="66" y="228" width="52" height="7" rx="3.5" fill="#1F2937" opacity="0.3"/>
+  <rect x="66" y="242" width="68" height="5" rx="2.5" fill="#1F2937" opacity="0.16"/>
+  <rect x="66" y="253" width="44" height="5" rx="2.5" fill="#1F2937" opacity="0.16"/>
+  <path d="M60 268 l80 -50" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="172" y="236" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="800">{{ cond $nl "Geen verklaring" "No statement" }}</text>
+  <text x="172" y="255" fill="#4b5563" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "Wij zeggen niet dat je document aan WCAG" "We do not say your document meets WCAG" }}</text>
+  <text x="172" y="270" fill="#4b5563" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "of aan de EAA voldoet." "or the EAA." }}</text>
+</svg>
