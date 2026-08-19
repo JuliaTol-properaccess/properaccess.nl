@@ -25,19 +25,19 @@ Je krijgt er een verslag bij: wat er is opgelost, wat er nog open staat, en welk
 hebben gedraaid omdat er een mens naar moet kijken. Dat laatste lijstje hoort erbij. Een controle die
 niet draait, levert geen schoon document op.
 
-## Wat we hebben gemeten
-
-Op 19 augustus 2026 hebben we 33 PDF's van Nederlandse organisaties door deze reparatie gehaald,
-allemaal documenten die door een auditor van Proper Access als ontoegankelijk zijn beoordeeld. Voor
-de reparatie stonden er 78 bevindingen op, erna 30. Van de 33 documenten waren er 32 daarna
-pixel-identiek aan het origineel.
+We testen de reparatie op documenten uit onze eigen auditpraktijk, en de komende maanden werken we
+hem verder uit. Zodra we cijfers hebben waar we voor kunnen staan, zetten we ze erbij.
 
 ## Wat de tool niet doet
 
-Dat de codelaag is gerepareerd, betekent niet dat je document toegankelijk is. Of de leesorde klopt,
-of een tabelkop op de goede plek staat, of een beschrijving bij een afbeelding de afbeelding dekt:
-dat kan geen tool vaststellen. Wij leveren dus geen verklaring dat je document aan WCAG of aan de
-EAA voldoet.
+Een gerepareerde codelaag is geen toegankelijk document. Of de leesorde klopt, of een tabelkop op de
+goede plek staat, of een beschrijving bij een afbeelding de afbeelding dekt: dat kan geen tool
+vaststellen. Wij leveren dus geen verklaring dat je document aan WCAG of aan de EAA voldoet. Wat we
+wel leveren is een document waarin de fouten staan die er nog zijn, en dat is de lijst waarmee een
+mens verder kan.
+
+Bij een scan zonder tekstlaag kunnen we geen tags zetten. Dat zegt de tool dan, in plaats van een
+resultaat terug te geven waar je niets aan hebt.
 
 ## Waar je document blijft
 
