@@ -47,12 +47,3 @@ reparatie te draaien met de netwerkverbinding dicht.
 
 Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het resultaat verwijderen we
 24 uur later.
-
-## Waarom de oude tool weg is
-
-Die tool deed het werk in je browser, en dat had een voordeel: je bestand verliet je computer niet.
-Het had ook een gevolg dat wij niet wilden. Alles wat de tool nakeek, stond als leesbare code op
-onze site, inclusief onze lijsten en onze meldingsteksten.
-
-De nieuwe tool draait op de server. Je bestand komt dus wel bij ons, en daarom staat hierboven
-precies wat we ermee doen en hoe lang het blijft staan.

@@ -17582,7 +17582,8 @@ html.dark .contrast-voorbeeld__swatch {
 
 .pdfann-wachtlijst {
   padding: 4.5rem 0;
-  background: #f5f5f5;
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
 }
 
 .pdfann-wachtlijst__kaart {
@@ -17686,9 +17687,13 @@ html.dark .pdfann-blok--wit {
   border-color: var(--color-darkmode-border);
 }
 
-html.dark .pdfann-blok--grijs,
-html.dark .pdfann-wachtlijst {
+html.dark .pdfann-blok--grijs {
   background: var(--color-darkmode-theme-light, #111827);
+}
+
+html.dark .pdfann-wachtlijst {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
 }
 
 html.dark .pdfann-hero__title,

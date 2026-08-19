@@ -46,12 +46,3 @@ language model or to any other supplier. We tested that by running the repair wi
 connection closed.
 
 We delete the file you upload as soon as the repair finishes. We delete the result 24 hours later.
-
-## Why the old tool is gone
-
-That tool did its work in your browser, which had one clear advantage: your file never left your
-computer. It also had a consequence we did not want. Everything the tool looked at sat on our site as
-readable code, including our word lists and our message texts.
-
-The new tool runs on the server. Your file does reach us, which is why the section above spells out
-what we do with it and how long we keep it.
