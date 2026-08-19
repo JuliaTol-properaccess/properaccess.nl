@@ -1,0 +1,50 @@
+{{/* Tags: de structuurlaag onder de zichtbare pagina. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfdoc-svg">
+  <rect x="0.5" y="0.5" width="399" height="299" rx="12" fill="#fff" stroke="#e5e7eb"/>
+
+  <text x="28" y="34" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "WAT JE ZIET" "WHAT YOU SEE" }}</text>
+  <text x="228" y="34" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "WAT DE SCHERMLEZER LEEST" "WHAT THE SCREEN READER READS" }}</text>
+
+  <!-- Zichtbare pagina -->
+  <rect x="28" y="48" width="132" height="176" rx="8" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="44" y="66" width="76" height="11" rx="5.5" fill="#1F2937" opacity="0.7"/>
+  <rect x="44" y="88" width="100" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="44" y="99" width="100" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="44" y="110" width="62" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="44" y="128" width="100" height="42" rx="5" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <circle cx="62" cy="144" r="6" stroke="#1F2937" stroke-width="1.4" opacity="0.35"/>
+  <path d="M46 166 l20 -18 14 12 12 -9 22 15" stroke="#1F2937" stroke-width="1.4" opacity="0.35" fill="none" stroke-linejoin="round"/>
+  <rect x="44" y="182" width="100" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+  <rect x="44" y="193" width="78" height="5" rx="2.5" fill="#1F2937" opacity="0.22"/>
+
+  <!-- Verbinding -->
+  <path d="M170 136 h44" stroke="#004050" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M208 130 l8 6 -8 6" stroke="#004050" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tagboom -->
+  <rect x="228" y="48" width="144" height="176" rx="8" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <rect x="238" y="58" width="64" height="18" rx="4" fill="#004050"/>
+  <text x="246" y="71" fill="#fff" font-family="monospace" font-size="9" font-weight="700">Document</text>
+
+  <path d="M248 76 v110" stroke="#004050" stroke-width="1.2" opacity="0.4"/>
+  <path d="M248 96 h12 M248 124 h12 M248 152 h12 M248 186 h12" stroke="#004050" stroke-width="1.2" opacity="0.4"/>
+
+  <rect x="260" y="87" width="34" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="269" y="99.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">H1</text>
+
+  <rect x="260" y="115" width="30" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="269" y="127.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">P</text>
+
+  <rect x="260" y="143" width="58" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="268" y="155.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">Figure</text>
+
+  <rect x="260" y="177" width="30" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="269" y="189.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">P</text>
+
+  <!-- Zonder tags -->
+  <rect x="28" y="244" width="344" height="32" rx="8" stroke="#A30D4B" stroke-width="1.4" fill="none"/>
+  <circle cx="48" cy="260" r="9" fill="#A30D4B"/>
+  <path d="M48 255.5 v5.5 M48 264.6 v0.1" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="66" y="264" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Geen tags? Dan is de rechterkolom leeg." "No tags? Then the right column is empty." }}</text>
+</svg>

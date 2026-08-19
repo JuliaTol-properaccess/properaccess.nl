@@ -1,0 +1,43 @@
+{{/* Afbeeldingen: alt-tekst aanwezig, ontbrekend of automatisch gegenereerd. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfdoc-svg">
+  <rect x="0.5" y="0.5" width="399" height="299" rx="12" fill="#fff" stroke="#e5e7eb"/>
+
+  <!-- Afbeelding met goede alt -->
+  <rect x="28" y="46" width="104" height="76" rx="8" fill="#f5f5f5" stroke="#004050" stroke-width="1.3"/>
+  <circle cx="56" cy="70" r="7" fill="#004050" opacity="0.35"/>
+  <path d="M34 116 l26 -26 18 16 14 -12 34 30" stroke="#004050" stroke-width="1.5" opacity="0.5" fill="none" stroke-linejoin="round"/>
+  <rect x="28" y="132" width="104" height="52" rx="8" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="38" y="150" fill="#004050" font-family="monospace" font-size="8" font-weight="700">Alt</text>
+  <text x="38" y="164" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5">{{ cond $nl "Twee monteurs bij" "Two engineers at" }}</text>
+  <text x="38" y="175" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5">{{ cond $nl "een laadpaal" "a charging point" }}</text>
+  <circle cx="80" cy="204" r="10" fill="#004050"/>
+  <path d="M75 204 l3.5 3.5 6 -7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Afbeelding zonder alt -->
+  <rect x="148" y="46" width="104" height="76" rx="8" fill="#f5f5f5" stroke="#A30D4B" stroke-width="1.3"/>
+  <circle cx="176" cy="70" r="7" fill="#A30D4B" opacity="0.3"/>
+  <path d="M154 116 l26 -26 18 16 14 -12 34 30" stroke="#A30D4B" stroke-width="1.5" opacity="0.4" fill="none" stroke-linejoin="round"/>
+  <rect x="148" y="132" width="104" height="52" rx="8" stroke="#A30D4B" stroke-width="1.2" stroke-dasharray="4 3" fill="none"/>
+  <text x="158" y="152" fill="#A30D4B" font-family="monospace" font-size="8" font-weight="700">Alt</text>
+  <path d="M158 164 h84" stroke="#A30D4B" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="158" y="178" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="8.5" font-weight="700">{{ cond $nl "ontbreekt" "missing" }}</text>
+  <circle cx="200" cy="204" r="10" fill="#A30D4B"/>
+  <path d="M196 200 l8 8 M204 200 l-8 8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Afbeelding met automatische alt -->
+  <rect x="268" y="46" width="104" height="76" rx="8" fill="#f5f5f5" stroke="#1F2937" stroke-opacity="0.3" stroke-width="1.3"/>
+  <circle cx="296" cy="70" r="7" fill="#1F2937" opacity="0.25"/>
+  <path d="M274 116 l26 -26 18 16 14 -12 34 30" stroke="#1F2937" stroke-width="1.5" opacity="0.3" fill="none" stroke-linejoin="round"/>
+  <rect x="268" y="132" width="104" height="52" rx="8" fill="#fff" stroke="#1F2937" stroke-opacity="0.35" stroke-width="1.2"/>
+  <text x="278" y="150" fill="#6B7280" font-family="monospace" font-size="8" font-weight="700">Alt</text>
+  <text x="278" y="164" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8.5" lang="en">Content generated</text>
+  <text x="278" y="175" fill="#6B7280" font-family="Nunito, sans-serif" font-size="8.5" lang="en">by AI</text>
+  <circle cx="320" cy="204" r="10" fill="#fff" stroke="#A30D4B" stroke-width="2"/>
+  <path d="M320 199.5 v5.5 M320 208.6 v0.1" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Toelichting -->
+  <rect x="28" y="232" width="344" height="42" rx="10" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <text x="48" y="250" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">{{ cond $nl "De tool ziet of er alt-tekst staat." "The tool sees whether alt text is there." }}</text>
+  <text x="48" y="265" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "Of die tekst de afbeelding beschrijft, lees jij zelf." "Whether it describes the image, you read yourself." }}</text>
+</svg>

@@ -1,0 +1,54 @@
+{{/* Koppen: niveaus die logisch op elkaar volgen. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfdoc-svg">
+  <rect x="0.5" y="0.5" width="399" height="299" rx="12" fill="#fff" stroke="#e5e7eb"/>
+
+  <!-- Goede volgorde -->
+  <text x="28" y="32" fill="#004050" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "LOOPT GOED" "IN ORDER" }}</text>
+
+  <rect x="28" y="42" width="30" height="18" rx="4" fill="#004050"/>
+  <text x="36" y="55" fill="#fff" font-family="monospace" font-size="9.5" font-weight="700">H1</text>
+  <rect x="66" y="46" width="96" height="10" rx="5" fill="#1F2937" opacity="0.6"/>
+
+  <path d="M43 66 v10 h9" stroke="#004050" stroke-width="1.2" opacity="0.5" fill="none"/>
+  <rect x="56" y="70" width="30" height="18" rx="4" fill="#fff" stroke="#004050" stroke-width="1.3"/>
+  <text x="64" y="83" fill="#004050" font-family="monospace" font-size="9.5" font-weight="700">H2</text>
+  <rect x="94" y="75" width="72" height="8" rx="4" fill="#1F2937" opacity="0.3"/>
+
+  <path d="M71 94 v10 h9" stroke="#004050" stroke-width="1.2" opacity="0.5" fill="none"/>
+  <rect x="84" y="98" width="30" height="18" rx="4" fill="#fff" stroke="#004050" stroke-width="1.3"/>
+  <text x="92" y="111" fill="#004050" font-family="monospace" font-size="9.5" font-weight="700">H3</text>
+  <rect x="122" y="103" width="60" height="8" rx="4" fill="#1F2937" opacity="0.3"/>
+
+  <path d="M43 122 v10 h9" stroke="#004050" stroke-width="1.2" opacity="0.5" fill="none"/>
+  <rect x="56" y="126" width="30" height="18" rx="4" fill="#fff" stroke="#004050" stroke-width="1.3"/>
+  <text x="64" y="139" fill="#004050" font-family="monospace" font-size="9.5" font-weight="700">H2</text>
+  <rect x="94" y="131" width="80" height="8" rx="4" fill="#1F2937" opacity="0.3"/>
+
+  <!-- Scheidingslijn -->
+  <path d="M198 30 v240" stroke="#e5e7eb"/>
+
+  <!-- Overgeslagen niveau -->
+  <text x="222" y="32" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "NIVEAU OVERGESLAGEN" "LEVEL SKIPPED" }}</text>
+
+  <rect x="222" y="42" width="30" height="18" rx="4" fill="#004050"/>
+  <text x="230" y="55" fill="#fff" font-family="monospace" font-size="9.5" font-weight="700">H1</text>
+  <rect x="260" y="46" width="96" height="10" rx="5" fill="#1F2937" opacity="0.6"/>
+
+  <path d="M237 66 v34 h9" stroke="#A30D4B" stroke-width="1.4" stroke-dasharray="4 3" fill="none"/>
+  <rect x="250" y="70" width="86" height="20" rx="10" stroke="#A30D4B" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+  <text x="262" y="84" fill="#A30D4B" font-family="monospace" font-size="9.5" font-weight="700">H2 ?</text>
+
+  <rect x="250" y="94" width="30" height="18" rx="4" fill="#A30D4B"/>
+  <text x="258" y="107" fill="#fff" font-family="monospace" font-size="9.5" font-weight="700">H3</text>
+  <rect x="288" y="99" width="68" height="8" rx="4" fill="#1F2937" opacity="0.3"/>
+
+  <circle cx="352" cy="103" r="9" fill="#A30D4B"/>
+  <path d="M352 98.5 v5.5 M352 107.6 v0.1" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Toelichting onderaan -->
+  <rect x="28" y="176" width="344" height="98" rx="10" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <text x="48" y="204" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Een schermlezer springt van kop naar kop." "A screen reader jumps from heading to heading." }}</text>
+  <text x="48" y="226" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "Ontbreekt er een niveau, dan lijkt het alsof er een" "If a level is missing, it sounds as if a piece of" }}</text>
+  <text x="48" y="241" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "stuk tekst is weggevallen." "the text has gone missing." }}</text>
+</svg>

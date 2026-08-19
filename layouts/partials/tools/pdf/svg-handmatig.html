@@ -1,0 +1,53 @@
+{{/* Wat een machine niet ziet: contrast, leesvolgorde, betekenis. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfdoc-svg">
+  <rect x="0.5" y="0.5" width="399" height="299" rx="12" fill="#fff" stroke="#e5e7eb"/>
+
+  <text x="28" y="32" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "HIER KIJKT EEN MENS NAAR" "A HUMAN LOOKS AT THIS" }}</text>
+
+  <!-- Contrast -->
+  <rect x="28" y="44" width="106" height="88" rx="8" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="66" cy="78" r="16" fill="#1F2937"/>
+  <circle cx="88" cy="78" r="16" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <path d="M78 62 a16 16 0 0 1 0 32 z" fill="#1F2937" opacity="0.5"/>
+  <text x="46" y="118" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9.5" font-weight="700">{{ cond $nl "Contrast" "Contrast" }}</text>
+
+  <!-- Leesvolgorde -->
+  <rect x="146" y="44" width="106" height="88" rx="8" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="160" y="58" width="36" height="26" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.35"/>
+  <rect x="202" y="58" width="36" height="26" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.35"/>
+  <rect x="160" y="90" width="78" height="14" rx="4" fill="#f5f5f5" stroke="#004050" stroke-opacity="0.35"/>
+  <text x="175" y="75" fill="#004050" font-family="Nunito, sans-serif" font-size="10" font-weight="800">1</text>
+  <text x="217" y="75" fill="#004050" font-family="Nunito, sans-serif" font-size="10" font-weight="800">2</text>
+  <text x="196" y="101" fill="#004050" font-family="Nunito, sans-serif" font-size="10" font-weight="800">3</text>
+  <path d="M188 71 h8" stroke="#A30D4B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M193 67 l5 4 -5 4" stroke="#A30D4B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M228 86 v3 " stroke="#A30D4B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M228 86 C 228 94, 208 92, 206 96" stroke="#A30D4B" stroke-width="1.6" fill="none"/>
+  <path d="M211 93 l-6 3 1 -6" stroke="#A30D4B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="158" y="118" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9.5" font-weight="700">{{ cond $nl "Leesvolgorde" "Reading order" }}</text>
+
+  <!-- Tekst in een plaatje -->
+  <rect x="264" y="44" width="108" height="88" rx="8" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="278" y="58" width="80" height="44" rx="5" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <text x="290" y="78" fill="#004050" font-family="Nunito, sans-serif" font-size="11" font-weight="800">30%</text>
+  <rect x="290" y="86" width="56" height="5" rx="2.5" fill="#1F2937" opacity="0.25"/>
+  <path d="M348 52 l14 14 M362 52 l-14 14" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+  <text x="276" y="118" fill="#1F2937" font-family="Nunito, sans-serif" font-size="9.5" font-weight="700">{{ cond $nl "Tekst in een plaatje" "Text inside an image" }}</text>
+
+  <!-- Persoon met loep over het rapport -->
+  <rect x="28" y="150" width="344" height="124" rx="10" fill="#f5f5f5" stroke="#e5e7eb"/>
+
+  <rect x="52" y="170" width="76" height="86" rx="6" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="64" y="184" width="40" height="7" rx="3.5" fill="#004050" opacity="0.6"/>
+  <rect x="64" y="200" width="52" height="5" rx="2.5" fill="#1F2937" opacity="0.2"/>
+  <rect x="64" y="211" width="52" height="5" rx="2.5" fill="#1F2937" opacity="0.2"/>
+  <rect x="64" y="222" width="34" height="5" rx="2.5" fill="#1F2937" opacity="0.2"/>
+  <circle cx="112" cy="228" r="19" fill="#fff" fill-opacity="0.8" stroke="#004050" stroke-width="2"/>
+  <path d="M126 242 l12 12" stroke="#004050" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="164" y="192" fill="#1F2937" font-family="Nunito, sans-serif" font-size="11" font-weight="800">{{ cond $nl "Ongeveer 30%" "Roughly 30%" }}</text>
+  <text x="164" y="212" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "van de succescriteria is automatisch te" "of the success criteria can be checked" }}</text>
+  <text x="164" y="227" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "controleren. De rest is handwerk, en dat" "automatically. The rest is manual work," }}</text>
+  <text x="164" y="242" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "geldt ook voor deze tool." "and that goes for this tool too." }}</text>
+</svg>

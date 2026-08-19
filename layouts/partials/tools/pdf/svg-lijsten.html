@@ -1,0 +1,55 @@
+{{/* Lijsten: de tagstructuur L, LI en LBody. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfdoc-svg">
+  <rect x="0.5" y="0.5" width="399" height="299" rx="12" fill="#fff" stroke="#e5e7eb"/>
+
+  <!-- Zichtbare lijst -->
+  <text x="28" y="32" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "OP DE PAGINA" "ON THE PAGE" }}</text>
+  <rect x="28" y="42" width="130" height="112" rx="8" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="46" cy="66" r="3" fill="#004050"/>
+  <rect x="58" y="62" width="82" height="7" rx="3.5" fill="#1F2937" opacity="0.28"/>
+  <circle cx="46" cy="92" r="3" fill="#004050"/>
+  <rect x="58" y="88" width="64" height="7" rx="3.5" fill="#1F2937" opacity="0.28"/>
+  <circle cx="46" cy="118" r="3" fill="#004050"/>
+  <rect x="58" y="114" width="74" height="7" rx="3.5" fill="#1F2937" opacity="0.28"/>
+
+  <path d="M170 98 h30" stroke="#004050" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M194 92 l8 6 -8 6" stroke="#004050" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Correcte tagstructuur -->
+  <text x="214" y="32" fill="#004050" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "GOED OPGEBOUWD" "CORRECTLY BUILT" }}</text>
+  <rect x="214" y="42" width="158" height="112" rx="8" fill="#f5f5f5" stroke="#e5e7eb"/>
+
+  <rect x="228" y="56" width="26" height="17" rx="4" fill="#004050"/>
+  <text x="237" y="68.5" fill="#fff" font-family="monospace" font-size="9" font-weight="700">L</text>
+
+  <path d="M241 75 v14 h9 M241 89 v28 h9" stroke="#004050" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <rect x="252" y="80" width="28" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="259" y="92.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">LI</text>
+  <path d="M282 89 h10" stroke="#004050" stroke-width="1.2" opacity="0.45"/>
+  <rect x="292" y="80" width="52" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="299" y="92.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">LBody</text>
+
+  <rect x="252" y="108" width="28" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="259" y="120.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">LI</text>
+  <path d="M282 117 h10" stroke="#004050" stroke-width="1.2" opacity="0.45"/>
+  <rect x="292" y="108" width="52" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="299" y="120.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">LBody</text>
+
+  <!-- Onvolledige structuur -->
+  <text x="28" y="182" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="700">{{ cond $nl "SCHAKEL ONTBREEKT" "A LINK IS MISSING" }}</text>
+  <rect x="28" y="192" width="344" height="82" rx="8" stroke="#A30D4B" stroke-width="1.3" fill="none"/>
+
+  <rect x="48" y="208" width="26" height="17" rx="4" fill="#004050"/>
+  <text x="57" y="220.5" fill="#fff" font-family="monospace" font-size="9" font-weight="700">L</text>
+  <path d="M61 227 v14 h9" stroke="#004050" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <rect x="72" y="232" width="28" height="17" rx="4" fill="#fff" stroke="#004050" stroke-width="1.2"/>
+  <text x="79" y="244.5" fill="#004050" font-family="monospace" font-size="9" font-weight="700">LI</text>
+  <path d="M102 241 h10" stroke="#A30D4B" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="112" y="232" width="52" height="17" rx="4" stroke="#A30D4B" stroke-width="1.3" stroke-dasharray="3 3" fill="none"/>
+  <text x="119" y="244.5" fill="#A30D4B" font-family="monospace" font-size="9" font-weight="700">LBody</text>
+
+  <text x="184" y="228" fill="#1F2937" font-family="Nunito, sans-serif" font-size="10" font-weight="700">{{ cond $nl "Zonder LBody hoort de schermlezer" "Without LBody the screen reader hears" }}</text>
+  <text x="184" y="244" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "wel een lijst, maar geen inhoud in" "a list, but no content in the item" }}</text>
+  <text x="184" y="258" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10">{{ cond $nl "het lijstitem." "itself." }}</text>
+</svg>

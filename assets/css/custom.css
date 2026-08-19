@@ -7995,141 +7995,224 @@ html.dark .tool-pdf__disclaimer {
   border-color: var(--color-darkmode-border);
 }
 
-/* Documentation */
+/* Documentatie in secties */
 
-.tool-pdf__docs {
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
+.pdfdoc {
+  margin-top: 4rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2.5rem;
 }
 
-.tool-pdf__docs-summary {
-  padding: 1rem 1.25rem;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: #1F2937;
-  cursor: pointer;
-  list-style: none;
-}
-
-.tool-pdf__docs-summary::-webkit-details-marker {
+.pdfdoc[hidden] {
   display: none;
 }
 
-.tool-pdf__docs-summary::before {
-  content: "\25B6";
-  display: inline-block;
-  margin-right: 0.5rem;
-  font-size: 0.75rem;
-  transition: transform 0.2s ease;
+.pdfdoc__intro {
+  max-width: 40rem;
+  margin-bottom: 1rem;
 }
 
-.tool-pdf__docs[open] > .tool-pdf__docs-summary::before {
-  transform: rotate(90deg);
+.pdfdoc__title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 0.75rem;
 }
 
-.tool-pdf__docs-content {
-  padding: 0 1.25rem 1.5rem;
-  color: #374151;
+.pdfdoc__intro p {
+  color: #4b5563;
   line-height: 1.7;
+  margin: 0;
 }
 
-.tool-pdf__docs-content h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
+.pdfdoc__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdfdoc__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .pdfdoc__row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  /* Om en om: bij de even secties staat de tekening links */
+  .pdfdoc__row:nth-of-type(even) .pdfdoc__text {
+    order: 2;
+  }
+
+  .pdfdoc__row:nth-of-type(even) .pdfdoc__visual {
+    order: 1;
+  }
+}
+
+.pdfdoc__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.4rem;
+}
+
+.pdfdoc__text h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
   color: #1F2937;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.3;
 }
 
-.tool-pdf__docs-content h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #1F2937;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+.pdfdoc__text p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 0.85rem;
 }
 
-.tool-pdf__docs-content h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #374151;
-  margin-top: 1.25rem;
-  margin-bottom: 0.4rem;
+.pdfdoc__text p:last-child {
+  margin-bottom: 0;
 }
 
-.tool-pdf__docs-content p {
-  margin-bottom: 0.75rem;
+.pdfdoc__text code {
+  font-size: 0.9em;
+  background: #f5f5f5;
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.25rem;
 }
 
-.tool-pdf__docs-content ul,
-.tool-pdf__docs-content ol {
-  margin: 0.5rem 0 1rem 1.25rem;
-  padding: 0;
-}
-
-.tool-pdf__docs-content li {
-  margin-bottom: 0.4rem;
-}
-
-.tool-pdf__docs-content table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
+.pdfdoc__note {
+  border-left: 3px solid #A30D4B;
+  padding-left: 0.85rem;
   font-size: 0.95rem;
 }
 
-.tool-pdf__docs-content th,
-.tool-pdf__docs-content td {
-  border: 1px solid #e5e7eb;
-  padding: 0.5rem 0.75rem;
-  text-align: left;
+.pdfdoc__list {
+  list-style: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
 }
 
-.tool-pdf__docs-content th {
-  background: #f9fafb;
-  font-weight: 700;
-  color: #1F2937;
+.pdfdoc__list li {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
 }
 
-.tool-pdf__docs-content code {
-  background: #f3f4f6;
-  padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
-  font-size: 0.9em;
+/* Regels die met een statuslabel beginnen: label ervoor, tekst netjes ingesprongen */
+.pdfdoc__list--status li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
-html.dark .tool-pdf__docs {
+.pdfdoc__list li:last-child {
+  margin-bottom: 0;
+}
+
+.pdfdoc__tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 0.75rem;
+  padding: 0.1rem 0.55rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 1px solid currentColor;
+}
+
+.pdfdoc__tag--ok { color: #15803d; }
+.pdfdoc__tag--fail { color: #A30D4B; }
+.pdfdoc__tag--warn { color: #b45309; }
+
+.pdfdoc__cols {
+  list-style: decimal;
+  margin: 0.5rem 0 0;
+  padding-left: 1.35rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.pdfdoc__cols li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.15rem;
+  break-inside: avoid;
+}
+
+/* De lange lijst met handmatige controles loopt over de volle breedte */
+.pdfdoc__row--wide .pdfdoc__cols {
+  grid-column: 1 / -1;
+  order: 3;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .pdfdoc__row--wide .pdfdoc__cols {
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+}
+
+.pdfdoc__visual {
+  max-width: 100%;
+}
+
+.pdfdoc-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Donkere modus */
+
+html.dark .pdfdoc,
+html.dark .pdfdoc__row {
   border-color: var(--color-darkmode-border);
 }
 
-html.dark .tool-pdf__docs-summary {
+html.dark .pdfdoc__title,
+html.dark .pdfdoc__text h3 {
   color: #e5e7eb;
 }
 
-html.dark .tool-pdf__docs-content {
+html.dark .pdfdoc__intro p,
+html.dark .pdfdoc__text p,
+html.dark .pdfdoc__list li,
+html.dark .pdfdoc__cols {
   color: #9ca3af;
 }
 
-html.dark .tool-pdf__docs-content h2,
-html.dark .tool-pdf__docs-content h3,
-html.dark .tool-pdf__docs-content h4 {
-  color: #e5e7eb;
+html.dark .pdfdoc__eyebrow {
+  color: #e8a0ba;
 }
 
-html.dark .tool-pdf__docs-content th {
+html.dark .pdfdoc__note {
+  border-left-color: #e8a0ba;
+}
+
+html.dark .pdfdoc__text code {
   background: var(--color-darkmode-body);
-  color: #e5e7eb;
 }
 
-html.dark .tool-pdf__docs-content th,
-html.dark .tool-pdf__docs-content td {
-  border-color: var(--color-darkmode-border);
-}
+html.dark .pdfdoc__tag--ok { color: #4ade80; }
+html.dark .pdfdoc__tag--fail { color: #e8a0ba; }
+html.dark .pdfdoc__tag--warn { color: #fbbf24; }
 
-html.dark .tool-pdf__docs-content code {
-  background: var(--color-darkmode-body);
+/* De tekeningen hebben een witte ondergrond, ook in donkere modus.
+   Iets dimmen zodat ze niet uit de pagina springen. */
+html.dark .pdfdoc-svg {
+  opacity: 0.92;
 }
 
 /* Action buttons */
