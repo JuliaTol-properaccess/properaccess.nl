@@ -1,0 +1,137 @@
+{{/*
+  Aankondiging op de plek waar de gratis PDF-check stond.
+
+  Die tool is op 19 augustus 2026 offline gehaald, op besluit van Julia. Twee redenen. De tool draaide
+  volledig in de browser, en daarmee stond onze hele controlelijst als leesbare JavaScript op de site.
+  En er komt een betaalde opvolger die het document ook repareert, met een gratis deel erin.
+
+  Deze pagina was de tweede meest bezochte pagina van de site, dus de URL blijft bestaan. Wat er nu
+  staat is een aankondiging met een aanmelding voor de wachtlijst.
+
+  De tekst staat in de contentbestanden, in het Nederlands en in het Engels apart. Deze layout regelt
+  alleen de vorm en het formulier. Terugzetten van de oude tool kan door in het contentbestand
+  `layout: "pdf-checker"` te zetten en `static/js/tool-pdf-checker.js` uit de git-historie te halen.
+
+  Het formulier gebruikt `paFormSubmit` uit `static/js/form-submit.js`, dat in de footer op elke pagina
+  staat. Dat stuurt naar de Cloudflare Worker die het adres in het CRM zet, dus er komt geen nieuwe
+  verwerker bij en het adres blijft in de EU.
+*/}}
+{{ define "main" }}
+{{ $nl := eq .Lang "nl" }}
+
+<section class="section pt-14">
+  <div class="tool-container">
+
+    <span class="hp-hero__badge">
+      {{ if $nl }}Binnenkort{{ else }}Coming soon{{ end }}
+    </span>
+
+    <h1 class="mb-6">{{ .Title }}</h1>
+
+    <div class="content mb-12">
+      {{ .Content }}
+    </div>
+
+    <div class="pdf-wachtlijst">
+      <h2 class="mb-2">
+        {{ if $nl }}Ik wil bericht als de tool er is{{ else }}Tell me when it launches{{ end }}
+      </h2>
+      <p class="mb-6">
+        {{ if $nl }}
+          Je krijgt één e-mail, op de dag dat de tool live gaat. Geen nieuwsbrief, tenzij je je daar los
+          voor aanmeldt.
+        {{ else }}
+          You get one email, on the day the tool goes live. No newsletter, unless you sign up for that
+          separately.
+        {{ end }}
+      </p>
+
+      <form
+        id="pdf-tool-wachtlijst"
+        class="pa-form"
+        novalidate
+        onsubmit="event.preventDefault(); paFormSubmit(this, {
+          bron: 'pdf-tool-wachtlijst',
+          successMessage: '{{ if $nl }}Gelukt. We mailen je zodra de tool er is.{{ else }}Done. We will email you as soon as the tool is available.{{ end }}',
+          errorMessage: '{{ if $nl }}Dat ging mis. Probeer het later opnieuw, of mail ons.{{ else }}That did not work. Please try again later, or email us.{{ end }}'
+        });">
+        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+        <p class="pdf-wachtlijst__veld">
+          <label for="wachtlijst-email">
+            {{ if $nl }}Je e-mailadres{{ else }}Your email address{{ end }}
+          </label>
+          <input
+            type="email"
+            id="wachtlijst-email"
+            name="email"
+            class="pa-form__input"
+            autocomplete="email"
+            required
+            placeholder="{{ if $nl }}jij@organisatie.nl{{ else }}you@organisation.com{{ end }}" />
+        </p>
+
+        <p class="pdf-wachtlijst__veld">
+          <label for="wachtlijst-organisatie">
+            {{ if $nl }}Organisatie, niet verplicht{{ else }}Organisation, optional{{ end }}
+          </label>
+          <input
+            type="text"
+            id="wachtlijst-organisatie"
+            name="organisatie"
+            class="pa-form__input"
+            autocomplete="organization" />
+          <span class="pdf-wachtlijst__uitleg">
+            {{ if $nl }}
+              Hiermee weten we met hoeveel PDF's je werkt, en dat bepaalt hoe we de tool inrichten.
+            {{ else }}
+              This tells us how many PDFs you work with, and that shapes how we build the tool.
+            {{ end }}
+          </span>
+        </p>
+
+        <button type="submit" class="hp-btn hp-btn--primary">
+          {{ if $nl }}Houd me op de hoogte{{ else }}Keep me posted{{ end }}
+        </button>
+
+        <div role="status" aria-live="polite"></div>
+
+        <p class="pdf-wachtlijst__uitleg">
+          {{ if $nl }}
+            We gebruiken je adres alleen hiervoor. Hoe we met gegevens omgaan staat in onze
+            <a href="/privacyverklaring/">privacyverklaring</a>.
+          {{ else }}
+            We use your address for this and nothing else. How we handle data is in our
+            <a href="/privacyverklaring/" hreflang="nl" lang="nl">privacyverklaring</a>, which is in
+            Dutch.
+          {{ end }}
+        </p>
+      </form>
+    </div>
+
+    <div class="pdf-wachtlijst pdf-wachtlijst--rustig">
+      <h2 class="mb-2">
+        {{ if $nl }}Heb je nu een antwoord nodig?{{ else }}Do you need an answer now?{{ end }}
+      </h2>
+      <p>
+        {{ if $nl }}
+          Moet je weten of een document klaar is om te publiceren, dan is een onderzoek het antwoord en
+          geen tool. Een auditor beoordeelt de leesorde, de tabellen en de beschrijvingen bij
+          afbeeldingen. Dat kan een tool niet, en die grens verschuift niet doordat de tool beter wordt.
+        {{ else }}
+          If you need to know whether a document is ready to publish, an audit is the answer and a tool
+          is not. An auditor judges the reading order, the tables and the descriptions of images. No tool
+          can do that, and better tools will not move that line.
+        {{ end }}
+      </p>
+      <p class="mt-4">
+        {{/* Engels heeft geen dienstenoverzicht, alleen de auditpagina. Zie config/_default/menus.en.toml. */}}
+        <a href="{{ if $nl }}/diensten/{{ else }}/en/accessibility-audit/{{ end }}" class="hp-btn hp-btn--outline">
+          {{ if $nl }}Bekijk wat een onderzoek inhoudt{{ else }}See what an audit involves{{ end }}
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+{{ end }}

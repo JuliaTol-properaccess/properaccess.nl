@@ -175,7 +175,7 @@ En voor kleuren: test altijd groen, oranje en lichtblauw op wit. Die drie vallen
 
 Wil je zelf checken of je kleuren voldoen? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/): die meet het contrast van alle tekst op je pagina in één keer.
 
-Werkt je organisatie veel met PDF's? Onze [PDF toegankelijkheidscheck](/tools/pdf-checker/) controleert op tags, taal, koppen en meer. Kleurcontrast in PDF's controleren we bewust niet, omdat dat technisch nog niet betrouwbaar kan. We geven liever geen resultaat dan een vals positief.
+Werkt je organisatie veel met PDF's? We bouwen een tool die een PDF controleert en de codelaag ook repareert. Kleurcontrast in PDF's laten we daar bewust buiten, omdat dat technisch nog niet betrouwbaar kan. We geven liever geen resultaat dan een vals positief. [Meld je aan voor bericht bij de lancering](/tools/pdf-checker/).
 
 {{< /case-section >}}
 

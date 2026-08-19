@@ -99,6 +99,7 @@
                 {{ .Title }}
                 {{ if .Params.uitgelicht }}<span class="tool-card__new">Nieuw</span>{{ end }}
                 {{ if .Params.beta }}<span class="tool-card__beta">Beta</span>{{ end }}
+                {{ if .Params.binnenkort }}<span class="tool-card__beta">{{ if eq $.Lang "nl" }}Binnenkort{{ else }}Coming soon{{ end }}</span>{{ end }}
               </h2>
               <p class="tool-card__description">{{ .Description }}</p>
             </div>

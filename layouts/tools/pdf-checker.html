@@ -1,3 +1,18 @@
+{{/*
+  NIET IN GEBRUIK sinds 19 augustus 2026.
+
+  Deze layout hoorde bij de gratis PDF-check die in de browser draaide. Julia heeft die tool offline
+  gehaald: alles wat hij nakeek stond als leesbare JavaScript op de site, en er komt een betaalde
+  opvolger. Wat er nu op /tools/pdf-checker/ staat is de aankondiging in
+  layouts/tools/pdf-tool-aankondiging.html.
+
+  Geen enkel contentbestand verwijst nog naar deze layout, dus Hugo rendert hem niet. Het bestand
+  blijft staan omdat de documentatie eronder bruikbaar is voor de teksten van het nieuwe product.
+
+  Terugzetten vraagt twee dingen: `layout: "pdf-checker"` in het contentbestand, en
+  static/js/tool-pdf-checker.js terughalen uit de git-historie. Dat JS-bestand is verwijderd omdat
+  alles in static/ gepubliceerd wordt, ook zonder pagina die ernaar linkt.
+*/}}
 {{ define "main" }}
 <section class="section pt-14 tool-pdf__bg">
   <div class="tool-container">
