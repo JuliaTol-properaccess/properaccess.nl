@@ -17425,41 +17425,301 @@ html.dark .contrast-voorbeeld__swatch {
 /* Staat op /tools/pdf-checker/, waar de gratis check stond tot 19 augustus 2026.
    Zie layouts/tools/pdf-tool-aankondiging.html voor waarom die tool weg is. */
 
-.pdf-wachtlijst {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: #f6f6f6;
-  border: 1px solid #eaeaea;
-  border-radius: 1rem;
+/* ==================================================
+   PDF-TOOL AANKONDIGING — paginabrede secties
+   ================================================== */
+
+.pdfann-svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.pdf-wachtlijst--rustig {
-  background: #ffffff;
+/* ─── Hero ─── */
+
+.pdfann-hero {
+  padding: 3.5rem 0 4rem;
+  background: #fff;
 }
 
-.pdf-wachtlijst h2 {
-  font-size: 1.5rem;
+.pdfann-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
 }
 
-.pdf-wachtlijst__veld {
+@media (min-width: 900px) {
+  .pdfann-hero__grid {
+    grid-template-columns: 6fr 5fr;
+    gap: 4rem;
+  }
+}
+
+.pdfann-hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.pdfann-hero__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #1F2937;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .pdfann-hero__title {
+    font-size: 3.25rem;
+  }
+}
+
+.pdfann-hero__intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #4B5563;
+  margin: 0 0 1rem;
+}
+
+.pdfann-hero__intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── De secties uit de content ─── */
+
+.pdfann-blok {
+  padding: 4.5rem 0;
+}
+
+.pdfann-blok--wit {
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
+}
+
+.pdfann-blok--grijs {
+  background: #f5f5f5;
+}
+
+.pdfann-blok--donker {
+  background: #1F2937;
+}
+
+.pdfann-blok__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .pdfann-blok__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+  }
+
+  /* Om en om: bij de gespiegelde secties staat de tekening links */
+  .pdfann-blok--gespiegeld .pdfann-blok__tekst {
+    order: 2;
+  }
+
+  .pdfann-blok--gespiegeld .pdfann-blok__visual {
+    order: 1;
+  }
+}
+
+.pdfann-blok__kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.85rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #1F2937;
+  margin: 0 0 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .pdfann-blok__kop {
+    font-size: 2.25rem;
+  }
+}
+
+.pdfann-blok__tekst p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #4B5563;
+  margin: 0 0 1rem;
+}
+
+.pdfann-blok__tekst p:last-child {
+  margin-bottom: 0;
+}
+
+.pdfann-blok__tekst strong {
+  color: #1F2937;
+  font-weight: 700;
+}
+
+/* Donkere sectie */
+
+.pdfann-blok--donker .pdfann-blok__kop {
+  color: #fff;
+}
+
+.pdfann-blok--donker .pdfann-blok__tekst p {
+  color: #d1d5db;
+}
+
+.pdfann-blok--donker .pdfann-blok__tekst strong {
+  color: #fff;
+}
+
+/* ─── Wachtlijst ─── */
+
+.pdfann-wachtlijst {
+  padding: 4.5rem 0;
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
+}
+
+.pdfann-wachtlijst__kaart {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .pdfann-wachtlijst__kaart {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    padding: 3.5rem;
+  }
+}
+
+.pdfann-wachtlijst__kop p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin: 0;
+}
+
+.pdfann-form__veld {
   margin-bottom: 1.25rem;
 }
 
-.pdf-wachtlijst__veld label {
+.pdfann-form__veld label {
   display: block;
   margin-bottom: 0.35rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: #1F2937;
 }
 
-.pdf-wachtlijst__veld .pa-form__input {
+.pdfann-form__veld .pa-form__input {
   width: 100%;
-  max-width: 26rem;
-  background: #ffffff;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.7rem 1rem;
 }
 
-.pdf-wachtlijst__uitleg {
+.pdfann-form__uitleg {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #444444;
+  line-height: 1.6;
+  color: #4B5563;
+}
+
+/* ─── Slot: nu al een antwoord nodig ─── */
+
+.pdfann-slot {
+  padding: 4rem 0 5rem;
+  background: #1F2937;
+}
+
+.pdfann-slot__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .pdfann-slot__grid {
+    grid-template-columns: 7fr 5fr;
+    gap: 3rem;
+  }
+
+  .pdfann-slot__actie {
+    justify-self: end;
+  }
+}
+
+.pdfann-slot__kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+.pdfann-slot__tekst {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Donkere modus: de donkere secties blijven donker, de lichte volgen mee */
+
+html.dark .pdfann-hero,
+html.dark .pdfann-blok--wit {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .pdfann-blok--grijs {
+  background: var(--color-darkmode-theme-light, #111827);
+}
+
+html.dark .pdfann-wachtlijst {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .pdfann-hero__title,
+html.dark .pdfann-blok--wit .pdfann-blok__kop,
+html.dark .pdfann-blok--grijs .pdfann-blok__kop {
+  color: #e5e7eb;
+}
+
+html.dark .pdfann-hero__intro p,
+html.dark .pdfann-blok--wit .pdfann-blok__tekst p,
+html.dark .pdfann-blok--grijs .pdfann-blok__tekst p,
+html.dark .pdfann-wachtlijst__kop p,
+html.dark .pdfann-form__uitleg {
+  color: #9ca3af;
+}
+
+html.dark .pdfann-wachtlijst__kaart {
+  background: var(--color-darkmode-body);
+  border-color: var(--color-darkmode-border);
+}
+
+html.dark .pdfann-form__veld label {
+  color: #e5e7eb;
+}
+
+/* De tekeningen staan op een witte ondergrond, ook in donkere modus */
+html.dark .pdfann-svg {
+  opacity: 0.92;
 }

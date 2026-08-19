@@ -1,0 +1,60 @@
+{{/* Waar je document blijft: eigen server in de EU, en wanneer het weg is. Decoratief. */}}
+{{ $nl := .nl }}
+<svg viewBox="0 0 440 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfann-svg">
+  <rect x="0.5" y="0.5" width="439" height="319" rx="14" fill="#fff" stroke="#e5e7eb"/>
+
+  <!-- Onze server in de EU -->
+  <rect x="28" y="42" width="180" height="148" rx="10" fill="#f5f5f5" stroke="#004050" stroke-width="1.4"/>
+  <text x="46" y="68" fill="#004050" font-family="Nunito, sans-serif" font-size="9" font-weight="800" letter-spacing="0.06em">{{ cond $nl "ONZE EIGEN SERVER, IN DE EU" "OUR OWN SERVER, IN THE EU" }}</text>
+
+  <rect x="76" y="84" width="100" height="24" rx="4" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="164" cy="96" r="3.5" fill="#004050"/>
+  <rect x="88" y="93" width="52" height="6" rx="3" fill="#1F2937" opacity="0.2"/>
+  <rect x="76" y="114" width="100" height="24" rx="4" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="164" cy="126" r="3.5" fill="#004050"/>
+  <rect x="88" y="123" width="40" height="6" rx="3" fill="#1F2937" opacity="0.2"/>
+  <rect x="76" y="144" width="100" height="24" rx="4" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="164" cy="156" r="3.5" fill="#004050"/>
+  <rect x="88" y="153" width="60" height="6" rx="3" fill="#1F2937" opacity="0.2"/>
+
+  <!-- EU-merkje bij de server -->
+  <rect x="36" y="112" width="30" height="28" rx="6" fill="#004050"/>
+  <text x="42" y="131" fill="#fff" font-family="Nunito, sans-serif" font-size="12" font-weight="800">EU</text>
+
+  <!-- Wat er niet gebeurt -->
+  <text x="236" y="56" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9" font-weight="800" letter-spacing="0.06em">{{ cond $nl "GAAT NERGENS ANDERS HEEN" "GOES NOWHERE ELSE" }}</text>
+
+  <rect x="236" y="68" width="176" height="26" rx="13" stroke="#e5e7eb" fill="#fff"/>
+  <text x="256" y="85" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">Adobe</text>
+  <path d="M386 74 l12 12 M398 74 l-12 12" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="236" y="100" width="176" height="26" rx="13" stroke="#e5e7eb" fill="#fff"/>
+  <text x="256" y="117" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">Google</text>
+  <path d="M386 106 l12 12 M398 106 l-12 12" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="236" y="132" width="176" height="26" rx="13" stroke="#e5e7eb" fill="#fff"/>
+  <text x="256" y="149" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Een taalmodel" "A language model" }}</text>
+  <path d="M386 138 l12 12 M398 138 l-12 12" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="236" y="164" width="176" height="26" rx="13" stroke="#e5e7eb" fill="#fff"/>
+  <text x="256" y="181" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10.5" font-weight="700">{{ cond $nl "Een andere leverancier" "Any other supplier" }}</text>
+  <path d="M386 170 l12 12 M398 170 l-12 12" stroke="#A30D4B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hoe lang het blijft staan -->
+  <rect x="28" y="216" width="384" height="76" rx="10" fill="#f5f5f5" stroke="#e5e7eb"/>
+  <path d="M60 244 h324" stroke="#004050" stroke-width="1.4" stroke-opacity="0.35"/>
+
+  <circle cx="60" cy="244" r="7" fill="#004050"/>
+  <text x="48" y="234" fill="#004050" font-family="Nunito, sans-serif" font-size="9.5" font-weight="800">{{ cond $nl "upload" "upload" }}</text>
+  <text x="42" y="268" fill="#4b5563" font-family="Nunito, sans-serif" font-size="9.5">{{ cond $nl "je bestand" "your file" }}</text>
+
+  <circle cx="204" cy="244" r="7" fill="#A30D4B"/>
+  <path d="M201 244 l2.5 2.5 4 -4.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="160" y="234" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9.5" font-weight="800">{{ cond $nl "reparatie klaar" "repair done" }}</text>
+  <text x="148" y="268" fill="#4b5563" font-family="Nunito, sans-serif" font-size="9.5">{{ cond $nl "je bestand is weg" "your file is deleted" }}</text>
+
+  <circle cx="384" cy="244" r="7" fill="#A30D4B"/>
+  <path d="M381 244 l2.5 2.5 4 -4.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="332" y="234" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9.5" font-weight="800">{{ cond $nl "24 uur later" "24 hours later" }}</text>
+  <text x="316" y="268" fill="#4b5563" font-family="Nunito, sans-serif" font-size="9.5">{{ cond $nl "het resultaat is weg" "the result is deleted" }}</text>
+</svg>

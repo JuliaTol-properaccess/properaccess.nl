@@ -1,16 +1,20 @@
 {{/*
   Aankondiging op de plek waar de gratis PDF-check stond.
 
-  Die tool is op 19 augustus 2026 offline gehaald, op besluit van Julia. Twee redenen. De tool draaide
-  volledig in de browser, en daarmee stond onze hele controlelijst als leesbare JavaScript op de site.
-  En er komt een betaalde opvolger die het document ook repareert, met een gratis deel erin.
+  Die tool is op 19 augustus 2026 offline gehaald, op besluit van Julia. Er komt een betaalde opvolger
+  die het document ook repareert, met een gratis deel erin.
 
   Deze pagina was de tweede meest bezochte pagina van de site, dus de URL blijft bestaan. Wat er nu
   staat is een aankondiging met een aanmelding voor de wachtlijst.
 
-  De tekst staat in de contentbestanden, in het Nederlands en in het Engels apart. Deze layout regelt
-  alleen de vorm en het formulier. Terugzetten van de oude tool kan door in het contentbestand
-  `layout: "pdf-checker"` te zetten en `static/js/tool-pdf-checker.js` uit de git-historie te halen.
+  De tekst staat in de contentbestanden, in het Nederlands en in het Engels apart. Deze layout knipt
+  die tekst bij elke h2 in een eigen sectie over de volle paginabreedte, met een tekening ernaast.
+  Welke tekening en welke ondergrond bij een kop horen staat in $secties hieronder, op de id die
+  Hugo van de kop maakt. Verandert een kop van tekst, dan verandert die id mee en valt de tekening
+  weg zonder dat de pagina stukgaat. Zet hem er dan opnieuw in.
+
+  Terugzetten van de oude tool kan door in het contentbestand `layout: "pdf-checker"` te zetten en
+  `static/js/tool-pdf-checker.js` uit de git-historie te halen.
 
   Het formulier gebruikt `paFormSubmit` uit `static/js/form-submit.js`, dat in de footer op elke pagina
   staat. Dat stuurt naar de Cloudflare Worker die het adres in het CRM zet, dus er komt geen nieuwe
@@ -19,36 +23,86 @@
 {{ define "main" }}
 {{ $nl := eq .Lang "nl" }}
 
-<section class="section pt-14">
-  <div class="tool-container">
+{{ $secties := dict
+  "wat-de-nieuwe-tool-doet"    (dict "visual" "reparatie" "toon" "grijs")
+  "what-the-new-tool-does"     (dict "visual" "reparatie" "toon" "grijs")
+  "wat-de-tool-niet-doet"      (dict "visual" "grens"     "toon" "donker")
+  "what-the-tool-does-not-do"  (dict "visual" "grens"     "toon" "donker")
+  "waar-je-document-blijft"    (dict "visual" "eu"        "toon" "grijs")
+  "where-your-document-stays"  (dict "visual" "eu"        "toon" "grijs")
+}}
 
-    <span class="hp-hero__badge">
-      {{ if $nl }}Binnenkort{{ else }}Coming soon{{ end }}
-    </span>
+{{ $chunks := split .Content "<h2" }}
+{{ $intro := index $chunks 0 }}
 
-    <h1 class="mb-6">{{ .Title }}</h1>
-
-    <div class="content mb-12">
-      {{ .Content }}
+<!-- ─── HERO ─── -->
+<section class="pdfann-hero">
+  <div class="hp-container">
+    <div class="pdfann-hero__grid">
+      <div class="pdfann-hero__text">
+        <span class="hp-hero__badge">{{ if $nl }}Binnenkort{{ else }}Coming soon{{ end }}</span>
+        <h1 class="pdfann-hero__title">{{ .Title }}</h1>
+        <div class="pdfann-hero__intro">{{ $intro | safeHTML }}</div>
+        <div class="pdfann-hero__actions">
+          <a class="hp-btn hp-btn--primary" href="#wachtlijst">
+            {{ if $nl }}Houd me op de hoogte{{ else }}Keep me posted{{ end }}
+          </a>
+        </div>
+      </div>
+      <div class="pdfann-hero__visual" aria-hidden="true">
+        {{ partial "tools/pdf-aankondiging/svg-hero.html" (dict "nl" $nl) }}
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="pdf-wachtlijst">
-      <h2 class="mb-2">
-        {{ if $nl }}Ik wil bericht als de tool er is{{ else }}Tell me when it launches{{ end }}
-      </h2>
-      <p class="mb-6">
-        {{ if $nl }}
-          Je krijgt één e-mail, op de dag dat de tool live gaat. Geen nieuwsbrief, tenzij je je daar los
-          voor aanmeldt.
-        {{ else }}
-          You get one email, on the day the tool goes live. No newsletter, unless you sign up for that
-          separately.
+<!-- ─── EEN SECTIE PER KOP UIT DE CONTENT ─── -->
+{{ range $i, $chunk := after 1 $chunks }}
+  {{ $full  := printf "<h2%s" $chunk }}
+  {{ $id    := $full | replaceRE `(?s)^<h2[^>]*id="([^"]*)".*$` "$1" }}
+  {{ $kop   := $full | replaceRE `(?s)^<h2[^>]*>(.*?)</h2>.*$` "$1" }}
+  {{ $body  := $full | replaceRE `(?s)^<h2[^>]*>.*?</h2>` "" }}
+  {{ $meta  := index $secties $id }}
+  {{ $toon  := cond (ne $meta nil) (index $meta "toon") "wit" }}
+  <section class="pdfann-blok pdfann-blok--{{ $toon }}{{ if modBool $i 2 }} pdfann-blok--gespiegeld{{ end }}" id="{{ $id }}">
+    <div class="hp-container">
+      <div class="pdfann-blok__grid">
+        <div class="pdfann-blok__tekst">
+          <h2 class="pdfann-blok__kop">{{ $kop | safeHTML }}</h2>
+          {{ $body | safeHTML }}
+        </div>
+        {{ with $meta }}
+        <div class="pdfann-blok__visual" aria-hidden="true">
+          {{ partial (printf "tools/pdf-aankondiging/svg-%s.html" (index . "visual")) (dict "nl" $nl) }}
+        </div>
         {{ end }}
-      </p>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+<!-- ─── WACHTLIJST ─── -->
+<section class="pdfann-wachtlijst" id="wachtlijst">
+  <div class="hp-container">
+    <div class="pdfann-wachtlijst__kaart">
+      <div class="pdfann-wachtlijst__kop">
+        <h2 class="pdfann-blok__kop">
+          {{ if $nl }}Ik wil bericht als de tool er is{{ else }}Tell me when it launches{{ end }}
+        </h2>
+        <p>
+          {{ if $nl }}
+            Je krijgt één e-mail, op de dag dat de tool live gaat. Geen nieuwsbrief, tenzij je je daar los
+            voor aanmeldt.
+          {{ else }}
+            You get one email, on the day the tool goes live. No newsletter, unless you sign up for that
+            separately.
+          {{ end }}
+        </p>
+      </div>
 
       <form
         id="pdf-tool-wachtlijst"
-        class="pa-form"
+        class="pa-form pdfann-form"
         novalidate
         onsubmit="event.preventDefault(); paFormSubmit(this, {
           bron: 'pdf-tool-wachtlijst',
@@ -57,7 +111,7 @@
         });">
         <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
 
-        <p class="pdf-wachtlijst__veld">
+        <p class="pdfann-form__veld">
           <label for="wachtlijst-email">
             {{ if $nl }}Je e-mailadres{{ else }}Your email address{{ end }}
           </label>
@@ -71,7 +125,7 @@
             placeholder="{{ if $nl }}jij@organisatie.nl{{ else }}you@organisation.com{{ end }}" />
         </p>
 
-        <p class="pdf-wachtlijst__veld">
+        <p class="pdfann-form__veld">
           <label for="wachtlijst-organisatie">
             {{ if $nl }}Organisatie, niet verplicht{{ else }}Organisation, optional{{ end }}
           </label>
@@ -81,7 +135,7 @@
             name="organisatie"
             class="pa-form__input"
             autocomplete="organization" />
-          <span class="pdf-wachtlijst__uitleg">
+          <span class="pdfann-form__uitleg">
             {{ if $nl }}
               Hiermee weten we met hoeveel PDF's je werkt, en dat bepaalt hoe we de tool inrichten.
             {{ else }}
@@ -96,7 +150,7 @@
 
         <div role="status" aria-live="polite"></div>
 
-        <p class="pdf-wachtlijst__uitleg">
+        <p class="pdfann-form__uitleg">
           {{ if $nl }}
             We gebruiken je adres alleen hiervoor. Hoe we met gegevens omgaan staat in onze
             <a href="/privacyverklaring/">privacyverklaring</a>.
@@ -108,30 +162,36 @@
         </p>
       </form>
     </div>
+  </div>
+</section>
 
-    <div class="pdf-wachtlijst pdf-wachtlijst--rustig">
-      <h2 class="mb-2">
-        {{ if $nl }}Heb je nu een antwoord nodig?{{ else }}Do you need an answer now?{{ end }}
-      </h2>
-      <p>
-        {{ if $nl }}
-          Moet je weten of een document klaar is om te publiceren, dan is een onderzoek het antwoord en
-          geen tool. Een auditor beoordeelt de leesorde, de tabellen en de beschrijvingen bij
-          afbeeldingen. Dat kan een tool niet, en die grens verschuift niet doordat de tool beter wordt.
-        {{ else }}
-          If you need to know whether a document is ready to publish, an audit is the answer and a tool
-          is not. An auditor judges the reading order, the tables and the descriptions of images. No tool
-          can do that, and better tools will not move that line.
-        {{ end }}
-      </p>
-      <p class="mt-4">
+<!-- ─── NU AL EEN ANTWOORD NODIG ─── -->
+<section class="pdfann-slot">
+  <div class="hp-container">
+    <div class="pdfann-slot__grid">
+      <div>
+        <h2 class="pdfann-slot__kop">
+          {{ if $nl }}Heb je nu een antwoord nodig?{{ else }}Do you need an answer now?{{ end }}
+        </h2>
+        <p class="pdfann-slot__tekst">
+          {{ if $nl }}
+            Moet je weten of een document klaar is om te publiceren, dan is een onderzoek het antwoord en
+            geen tool. Een auditor beoordeelt de leesorde, de tabellen en de beschrijvingen bij
+            afbeeldingen. Dat kan een tool niet, en die grens verschuift niet doordat de tool beter wordt.
+          {{ else }}
+            If you need to know whether a document is ready to publish, an audit is the answer and a tool
+            is not. An auditor judges the reading order, the tables and the descriptions of images. No tool
+            can do that, and better tools will not move that line.
+          {{ end }}
+        </p>
+      </div>
+      <div class="pdfann-slot__actie">
         {{/* Engels heeft geen dienstenoverzicht, alleen de auditpagina. Zie config/_default/menus.en.toml. */}}
-        <a href="{{ if $nl }}/diensten/{{ else }}/en/accessibility-audit/{{ end }}" class="hp-btn hp-btn--outline">
+        <a href="{{ if $nl }}/diensten/{{ else }}/en/accessibility-audit/{{ end }}" class="hp-btn hp-btn--ghost">
           {{ if $nl }}Bekijk wat een onderzoek inhoudt{{ else }}See what an audit involves{{ end }}
         </a>
-      </p>
+      </div>
     </div>
-
   </div>
 </section>
 {{ end }}

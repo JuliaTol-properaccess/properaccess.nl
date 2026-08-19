@@ -25,19 +25,16 @@ You also get a report: what was fixed, what is still open, and which checks we d
 person has to look at them. That last list belongs in there. A check that does not run does not
 produce a clean document.
 
-## What we measured
-
-On 19 August 2026 we ran 33 PDFs from Dutch organisations through this repair, all of them documents
-an auditor at Proper Access had already written the answer for. Before the repair they carried 78
-findings between them, afterwards 30. Of the 33 documents, 32 came out pixel-identical to the
-original.
+We are testing the repair on documents from our own audit practice, and we will keep developing it
+over the coming months. Once we have figures we can stand behind, we will put them here.
 
 ## What the tool does not do
 
-A repaired code layer does not make your document accessible. Whether the reading order is right,
-whether a table header sits in the right place, whether a description of an image actually describes
-the image: no tool can settle that. So we do not issue any statement that your document meets WCAG or
-the European Accessibility Act.
+A repaired code layer is not an accessible document. Whether the reading order is right, whether a
+table header sits in the right place, whether a description of an image actually describes the image:
+no tool can settle that. So we do not issue any statement that your document meets WCAG or the
+European Accessibility Act. What we do deliver is a document with the remaining faults written out,
+and that is the list a person can work from.
 
 ## Where your document stays
 
@@ -46,12 +43,3 @@ language model or to any other supplier. We tested that by running the repair wi
 connection closed.
 
 We delete the file you upload as soon as the repair finishes. We delete the result 24 hours later.
-
-## Why the old tool is gone
-
-That tool did its work in your browser, which had one clear advantage: your file never left your
-computer. It also had a consequence we did not want. Everything the tool looked at sat on our site as
-readable code, including our word lists and our message texts.
-
-The new tool runs on the server. Your file does reach us, which is why the section above spells out
-what we do with it and how long we keep it.

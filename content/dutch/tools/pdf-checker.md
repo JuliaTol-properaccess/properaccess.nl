@@ -25,19 +25,16 @@ Je krijgt er een verslag bij: wat er is opgelost, wat er nog open staat, en welk
 hebben gedraaid omdat er een mens naar moet kijken. Dat laatste lijstje hoort erbij. Een controle die
 niet draait, levert geen schoon document op.
 
-## Wat we hebben gemeten
-
-Op 19 augustus 2026 hebben we 33 PDF's van Nederlandse organisaties door deze reparatie gehaald,
-allemaal documenten waar een auditor van Proper Access het antwoord al bij had geschreven. Voor de
-reparatie stonden er 78 bevindingen op, erna 30. Van de 33 documenten waren er 32 daarna
-pixel-identiek aan het origineel.
+We testen de reparatie op documenten uit onze eigen auditpraktijk, en de komende maanden werken we
+hem verder uit. Zodra we cijfers hebben waar we voor kunnen staan, zetten we ze erbij.
 
 ## Wat de tool niet doet
 
-Dat de codelaag is gerepareerd, betekent niet dat je document toegankelijk is. Of de leesorde klopt,
-of een tabelkop op de goede plek staat, of een beschrijving bij een afbeelding de afbeelding dekt:
-dat kan geen tool vaststellen. Wij leveren dus geen verklaring dat je document aan WCAG of aan de
-EAA voldoet.
+Een gerepareerde codelaag is geen toegankelijk document. Of de leesorde klopt, of een tabelkop op de
+goede plek staat, of een beschrijving bij een afbeelding de afbeelding dekt: dat kan geen tool
+vaststellen. Wij leveren dus geen verklaring dat je document aan WCAG of aan de EAA voldoet. Wat we
+wel leveren is een document waarin de fouten staan die er nog zijn, en dat is de lijst waarmee een
+mens verder kan.
 
 ## Waar je document blijft
 
@@ -47,12 +44,3 @@ reparatie te draaien met de netwerkverbinding dicht.
 
 Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het resultaat verwijderen we
 24 uur later.
-
-## Waarom de oude tool weg is
-
-Die tool deed het werk in je browser, en dat had een voordeel: je bestand verliet je computer niet.
-Het had ook een gevolg dat wij niet wilden. Alles wat de tool nakeek, stond als leesbare code op
-onze site, inclusief onze lijsten en onze meldingsteksten.
-
-De nieuwe tool draait op de server. Je bestand komt dus wel bij ons, en daarom staat hierboven
-precies wat we ermee doen en hoe lang het blijft staan.
