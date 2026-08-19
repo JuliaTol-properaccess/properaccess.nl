@@ -17420,3 +17420,46 @@ html.dark .contrast-voorbeeld__swatch {
   }
 }
 
+
+/* ─── Wachtlijst voor de PDF-tool ─── */
+/* Staat op /tools/pdf-checker/, waar de gratis check stond tot 19 augustus 2026.
+   Zie layouts/tools/pdf-tool-aankondiging.html voor waarom die tool weg is. */
+
+.pdf-wachtlijst {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #f6f6f6;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+}
+
+.pdf-wachtlijst--rustig {
+  background: #ffffff;
+}
+
+.pdf-wachtlijst h2 {
+  font-size: 1.5rem;
+}
+
+.pdf-wachtlijst__veld {
+  margin-bottom: 1.25rem;
+}
+
+.pdf-wachtlijst__veld label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.pdf-wachtlijst__veld .pa-form__input {
+  width: 100%;
+  max-width: 26rem;
+  background: #ffffff;
+}
+
+.pdf-wachtlijst__uitleg {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444444;
+}
