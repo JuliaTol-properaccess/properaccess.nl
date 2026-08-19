@@ -28,8 +28,8 @@ niet draait, levert geen schoon document op.
 ## Wat we hebben gemeten
 
 Op 19 augustus 2026 hebben we 33 PDF's van Nederlandse organisaties door deze reparatie gehaald,
-allemaal documenten waar een auditor van Proper Access het antwoord al bij had geschreven. Voor de
-reparatie stonden er 78 bevindingen op, erna 30. Van de 33 documenten waren er 32 daarna
+allemaal documenten die door een auditor van Proper Access als ontoegankelijk zijn beoordeeld. Voor
+de reparatie stonden er 78 bevindingen op, erna 30. Van de 33 documenten waren er 32 daarna
 pixel-identiek aan het origineel.
 
 ## Wat de tool niet doet

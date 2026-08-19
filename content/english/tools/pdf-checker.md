@@ -28,8 +28,8 @@ produce a clean document.
 ## What we measured
 
 On 19 August 2026 we ran 33 PDFs from Dutch organisations through this repair, all of them documents
-an auditor at Proper Access had already written the answer for. Before the repair they carried 78
-findings between them, afterwards 30. Of the 33 documents, 32 came out pixel-identical to the
+an auditor at Proper Access had judged inaccessible. Before the repair they carried 78 findings
+between them, afterwards 30. Of the 33 documents, 32 came out pixel-identical to the
 original.
 
 ## What the tool does not do
