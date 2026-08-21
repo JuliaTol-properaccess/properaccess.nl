@@ -20,7 +20,7 @@ features:
       - "Aantoonbare naleving van de EAA"
       - "Onderbouwd plan van aanpak richting toezichthouder"
       - "Beter imago en groter bereik"
-      - "Onbeperkte ondersteuning als je vragen hebt over het rapport"
+      - "Een senior auditor die je vragen beantwoordt, via de strippenkaart"
       - "Juridische onderbouwing"
     button:
       enable: true
@@ -32,10 +32,10 @@ features:
     content: "Bij Proper Access ontvang je niet alleen een lijst met WCAG-fouten, maar een helder rapport vol oplossingen, prioriteiten en slimme keuzes. Zo kun je gericht verbeteren."
     bulletpoints:
         - 950+ audits uitgevoerd sinds 2019
-        - IAAP-gecertificeerd team van 6 specialisten
+        - IAAP-gecertificeerd team van 10 specialisten
         - We toetsen volledig volgens WCAG-EM en de eisen van de EAA
         - Heldere rapporten met concrete oplossingen
-        - Onbeperkt vragen stellen over het rapport. Voor begeleiding bij het oplossen werken we met een strippenkaart
+        - Vragen over je rapport stel je via de strippenkaart: één strip per vraag, vervolgvragen in dezelfde draad gratis
     button:
       enable: true
       label: "Neem contact op"
