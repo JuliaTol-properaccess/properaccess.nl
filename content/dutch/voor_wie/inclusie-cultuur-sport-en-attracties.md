@@ -38,7 +38,7 @@ faqs:
   - question: "Is het mogelijk om te verbeteren zonder een volledig redesign?"
     answer: "Bijna altijd. De meeste problemen zijn op te lossen met gerichte aanpassingen: labels toevoegen, contrast verhogen, alt-teksten schrijven, toetsenbordnavigatie repareren. Een volledig redesign is zelden nodig."
   - question: "Kan ik zelf testen hoe toegankelijk onze museum-website is?"
-    answer: "Ja. We hebben een [gratis accessibility quiz voor musea](/tools/quiz-museum/) waarmee je je kennis over toegankelijkheid kunt toetsen. Wil je direct inzicht in je eigen site? Vraag dan een [mini-audit](/quickscan-digitale-toegankelijkheid/) aan."
+    answer: "Ja. We hebben een [gratis accessibility quiz voor musea](/tools/quiz-museum/) waarmee je je kennis over toegankelijkheid kunt toetsen. Wil je direct inzicht in je eigen site? Vraag dan een [mini-audit](/webshop-quickscan/) aan."
   - question: "Helpen jullie ook bij het schrijven van toegankelijkheidsbeleid?"
     answer: "Ja. We hebben een [online tool](/tools/toegankelijkheidsverklaring-wdo/) waarmee je een toegankelijkheidsverklaring opstelt. Die verklaring is verplicht als je onder het Besluit digitale toegankelijkheid overheid valt. We kunnen ook meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen."
   - question: "Wie doet het werk?"
@@ -130,7 +130,7 @@ rekenen we per platform. Alle bedragen zijn exclusief 21% btw, en na een kennism
 een vaste prijs.
 
 Wil je eerst weten waar je staat, dan is een
-[mini-audit](/quickscan-digitale-toegankelijkheid/) van € 495 het startpunt. Ligt de techniek
+[mini-audit](/webshop-quickscan/) van € 495 het startpunt. Ligt de techniek
 bij je websitebouwer en beheer je zelf alleen de teksten, beelden en PDF's, dan kan een
 [contentaudit](/contentaudit/) uitkomst bieden. Die doen we alleen als de techniek ook is
 onderzocht, door ons of door je bouwer, want een verklaring vraagt om bewijs over de hele

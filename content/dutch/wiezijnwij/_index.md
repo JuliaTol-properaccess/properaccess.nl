@@ -11,7 +11,7 @@ banner:
   button:
     enable: true
     label: "Kennis maken?"
-    link: "https://properaccess.nl/contact"
+    link: "/contact/"
 
 # Features
 features:
@@ -26,7 +26,7 @@ features:
     button:
       enable: false
       label: "Vraag een offerte aan"
-      link: "https://properaccess.nl/contact"
+      link: "/contact/"
 
   - title: "Proper Access BV"
     image: "/images/oplossing.webp"
@@ -37,7 +37,7 @@ features:
     button:
       enable: false
       label: "Neem contact op"
-      link: "https://properaccess.nl/contact"
+      link: "/contact/"
 faqs:
   - question: Wie zit er achter Proper Access?
     answer: Proper Access is door Julia Tol, een van de experts in digitale toegankelijkheid, met 8 jaar ervaring in audits, advies en training. Het team bestaat uit 6 auditors die we zelf hebbeb opgeleid. We zijn een sterk technisch team met grote passie voor ons vak en maatschappelijke betrokkenheid.

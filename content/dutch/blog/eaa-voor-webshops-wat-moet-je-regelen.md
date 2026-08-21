@@ -74,7 +74,7 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 ## Waar begin je?
 
-**Stap 1: Mini-audit.** Begin met een [mini-audit](/quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
+**Stap 1: Mini-audit.** Begin met een [mini-audit](/webshop-quickscan/) om te zien waar je staat. Je krijgt een overzicht van de belangrijkste knelpunten.
 
 **Stap 2: Grootste blokkers fixen.** Focus op dingen die mensen uitsluiten: bestelproces, cookie-banner, formulieren zonder labels.
 
@@ -120,6 +120,6 @@ Een kant-en-klaar thema is geen garantie voor toegankelijkheid. Zelfs thema's di
 
 - [Alt-tekst keuzehulp](/blog/alt-tekst-keuzehulp/): bepaal welke alt-tekst je productafbeeldingen nodig hebben
 - [Wat kost een toegankelijkheidsaudit?](/blog/wat-kost-een-toegankelijkheidsaudit/): transparant overzicht van prijzen en pakketten
-- [Mini-audit aanvragen](/quickscan/): eerste stap om te zien waar je webshop staat
+- [Mini-audit aanvragen](/webshop-quickscan/): eerste stap om te zien waar je webshop staat
 
 {{< /case-section >}}

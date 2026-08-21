@@ -133,6 +133,6 @@ Voor ons is het ook een manier om het gesprek met klanten te structureren. Stap 
 
 ## Eerste stap
 
-Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? Een [mini-audit](/quickscan/) van de belangrijkste pagina's is een goed begin. Daarna kunnen we samen bepalen of een volledig WCAG-EM-onderzoek bij je wettelijke verplichting of interne doelen past.
+Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? Een [mini-audit](/webshop-quickscan/) van de belangrijkste pagina's is een goed begin. Daarna kunnen we samen bepalen of een volledig WCAG-EM-onderzoek bij je wettelijke verplichting of interne doelen past.
 
 Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek: wat is het en wanneer heb je het nodig?](/blog/toegankelijkheidsonderzoek-wat-is-het/)

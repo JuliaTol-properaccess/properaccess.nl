@@ -154,7 +154,7 @@ Keizersgracht 520 H
 
 **Telefoon:** 06-28742274
 **E-mail:** info@properaccess.nl
-**Website:** [properaccess.nl](https://properaccess.nl/)
+**Website:** [properaccess.nl](/)
 
 **BTW-nummer:** NL867096755B01
 **KVK-nummer:** 95350985

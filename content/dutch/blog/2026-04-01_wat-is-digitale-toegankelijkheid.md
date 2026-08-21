@@ -63,4 +63,4 @@ Het is geen nice-to-have. Het is een basisvoorwaarde.
 
 De eerste stap is inzicht krijgen in hoe je website er nu voorstaat. Een mini-audit geeft je in kort tijdsbestek een overzicht van de grootste problemen. Van daaruit kun je gericht verbeteren.
 
-Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw) en je weet binnen een paar dagen waar je staat.
+Wil je weten hoe jouw website scoort? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw) en je weet binnen een paar dagen waar je staat.

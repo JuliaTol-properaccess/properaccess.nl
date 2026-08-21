@@ -55,4 +55,4 @@ Het beste wat je kunt doen is **beginnen**. Niet wachten tot de eerste boetes va
 3. **Publiceer een toegankelijkheidsverklaring**: dat laat zien dat je ermee bezig bent
 4. **Plan periodieke hertests**: toegankelijkheid is geen eenmalige exercitie
 
-Wil je weten waar je staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan heb je binnen een paar dagen een eerste beeld.
+Wil je weten waar je staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je binnen een paar dagen een eerste beeld.

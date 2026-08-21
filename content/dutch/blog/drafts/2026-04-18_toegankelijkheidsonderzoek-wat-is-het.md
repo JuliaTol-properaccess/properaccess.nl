@@ -114,4 +114,4 @@ Een paar dingen die géén toegankelijkheidsonderzoek zijn, hoewel ze zo worden 
 
 ## Eerste stap
 
-Weet je nog niet of je een mini-audit of een audit nodig hebt? Een [mini-audit](/quickscan/) is het startpunt. Daarna kunnen we samen bepalen wat bij je organisatie, wettelijke verplichting en budget past.
+Weet je nog niet of je een mini-audit of een audit nodig hebt? Een [mini-audit](/webshop-quickscan/) is het startpunt. Daarna kunnen we samen bepalen wat bij je organisatie, wettelijke verplichting en budget past.

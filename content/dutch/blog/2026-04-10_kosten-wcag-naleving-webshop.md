@@ -73,4 +73,4 @@ Wat een retest van een webshop bij ons kost, hangt af van het aantal bevindingen
 3. **Train je content-team**: veel issues ontstaan door content (alt-teksten, kopstructuur, contrast)
 4. **Los structureel op**: fix het in het component, niet op elke pagina apart
 
-Wil je weten hoe jouw webshop ervoor staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je wat de impact is voordat je gaat budgetteren.
+Wil je weten hoe jouw webshop ervoor staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je wat de impact is voordat je gaat budgetteren.

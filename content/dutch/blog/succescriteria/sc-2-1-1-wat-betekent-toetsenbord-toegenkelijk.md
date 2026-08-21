@@ -13,7 +13,7 @@ aliases:
 
 WCAG 2.1.1 stelt dat alle functionaliteiten op een website toegankelijk zijn via een toetsenbord. Dit is belangrijk omdat niet iedereen een muis kan gebruiken. Interactieve elementen die niet met het toetsenbord te bedienen zijn, zullen ook niet voor schermlezers toegankelijk zijn.
 
-Dit succescriterium is interessant voor de [webontwikkelaar.](https://properaccess.nl/tag/ontwikkelaar/)
+Dit succescriterium is interessant voor de [webontwikkelaar.](/categories/webdeveloper/)
 
 ## Waarom is toetsenbordtoegankelijkheid belangrijk?
 

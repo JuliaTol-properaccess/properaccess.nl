@@ -147,6 +147,6 @@ Deze checklist is dus **geen vervanging van een audit**. Wel een werkbare lijst 
 
 ## Eerste stap
 
-Weet je niet waar je moet beginnen? Een [mini-audit](/quickscan/) van je hoofdpagina's geeft je binnen een paar dagen een overzicht van de grootste struikelblokken, en of je ze zelf kunt oplossen of een audit nodig hebt.
+Weet je niet waar je moet beginnen? Een [mini-audit](/webshop-quickscan/) van je hoofdpagina's geeft je binnen een paar dagen een overzicht van de grootste struikelblokken, en of je ze zelf kunt oplossen of een audit nodig hebt.
 
 Meer context over de wettelijke verplichting zelf: [Moet mijn overheidswebsite al voldoen aan WCAG?](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/)

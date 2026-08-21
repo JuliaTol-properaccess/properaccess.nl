@@ -222,7 +222,7 @@ _Vereist door EAA voor het kunnen opstellen van een onderbouwde toegankelijkheid
 - 30 punten verdeeld over scope, technische basis, productpagina's, checkout, account, content en governance.
 - Volgorde: eerst scope, dan basis, dan checkout en productpagina's, dan governance.
 
-Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw) of bel **085 5055 890**.
+Wil je weten waar jouw webshop staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw) of bel **085 5055 890**.
 
 ## Meer in deze serie
 

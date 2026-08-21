@@ -71,4 +71,4 @@ Die onderdelen vereisen een volledige audit. Maar de mini-audit is een uitsteken
 
 ## Hoe vraag je het aan?
 
-[Vraag een mini-audit aan](https://properaccess.nl/quickscan/). Vul het formulier in met je website-URL. Een senior auditor kijkt tot 5 uur handmatig naar je site en je ontvangt binnen 5 werkdagen een uitgebreid rapport per e-mail. 495 euro exclusief btw, geen verkooppraatje.
+[Vraag een mini-audit aan](/webshop-quickscan/). Vul het formulier in met je website-URL. Een senior auditor kijkt tot 5 uur handmatig naar je site en je ontvangt binnen 5 werkdagen een uitgebreid rapport per e-mail. 495 euro exclusief btw, geen verkooppraatje.

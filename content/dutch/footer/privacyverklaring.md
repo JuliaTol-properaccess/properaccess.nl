@@ -22,7 +22,7 @@ Proper Access, gevestigd aan Keizersgracht 520 H, 1017 EK te Amsterdam, is veran
 
 **Contactgegevens**
 
-- Website: [properaccess.nl](https://properaccess.nl)
+- Website: [properaccess.nl](https://www.properaccess.nl)
 - Postadres: Keizersgracht 520 H, 1017 EK Amsterdam
 - Telefoon: +31 (0)85 5055 890
 

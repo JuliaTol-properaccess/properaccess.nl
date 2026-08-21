@@ -65,4 +65,4 @@ Bij de meeste aanbieders zit mobiel testen inbegrepen in de standaard audit. Dat
 
 Als je website een aparte native app heeft (iOS of Android), is dat wél een apart traject.
 
-Wil je weten of jouw website op alle apparaten werkt? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan geven we je een eerste beeld.
+Wil je weten of jouw website op alle apparaten werkt? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan geven we je een eerste beeld.

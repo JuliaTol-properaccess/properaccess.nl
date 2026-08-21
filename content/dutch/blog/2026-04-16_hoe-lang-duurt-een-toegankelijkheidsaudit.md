@@ -68,4 +68,4 @@ Gemiddeld zijn teams 4 tot 12 weken bezig met het oplossen van de issues uit een
 
 Na de fixes kun je een **retest** laten doen (doorlooptijd: 1-2 weken) om te bevestigen dat alles is opgelost.
 
-Wil je alvast een planning maken? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je vooraf wat je kunt verwachten.
+Wil je alvast een planning maken? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je vooraf wat je kunt verwachten.

@@ -92,7 +92,7 @@ Een automatische toegankelijkheidstool lijkt verleidelijk, maar herkent slechts 
 
 Bovendien bieden zogenaamde 'overlay-tools' vaak een schijnoplossing die de gebruikservaring voor mensen met een beperking juist verslechtert. Een menselijke audit geeft je betrouwbaar inzicht en werkbare oplossingen.
 
-Meer hierover lees je op: [properaccess.nl/overlay-toegankelijkheidstools/](https://properaccess.nl/overlay-toegankelijkheidstools/)
+Meer hierover lees je op: [properaccess.nl/overlay-toegankelijkheidstools/](/blog/overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/)
 
 {{< /offerte-section >}}
 
@@ -157,7 +157,7 @@ Keizersgracht 520 H
 
 **Telefoon:** 06-28742274
 **E-mail:** info@properaccess.nl
-**Website:** [properaccess.nl](https://properaccess.nl/)
+**Website:** [properaccess.nl](/)
 
 **BTW-nummer:** NL867096755B01
 **KVK-nummer:** 95350985

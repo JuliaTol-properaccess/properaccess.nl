@@ -13,7 +13,7 @@ aliases:
 
 Succescriterium (SC) 4.1.3 gaat over de statusmeldingen. Bij dit criterium moeten statusmeldingen (bijvoorbeeld foutmeldingen, bevestigingen, waarschuwingen) als dusdanig programmatisch bepaald kunnen worden, zodat gebruikers die afhankelijk zijn van ondersteunende technologieën (zoals schermlezers) deze meldingen kunnen horen op het moment dat ze worden getoond. Dit betekent dat je statusmeldingen zo codeert dat software ze kan herkennen en aan de gebruiker kan voorlezen.
 
-Dit succescriterium is grotendeels bedoeld voor [webontwikkelaar](https://properaccess.nl/tag/ontwikkelaar/).
+Dit succescriterium is grotendeels bedoeld voor [webontwikkelaar](/categories/webdeveloper/).
 
 ## Waarom is SC 4.1.3 belangrijk?
 
