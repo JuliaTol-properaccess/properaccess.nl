@@ -67,7 +67,7 @@ sections:
     card_list:
       - "Direct access to the auditor who wrote it"
       - "A relationship manager handles everything before that"
-      - "Unlimited questions about the report"
+      - "Questions about the report, answered through accessibility credits"
 
 steps_header: "From baseline to closed file — in 3 steps"
 steps:
@@ -90,5 +90,5 @@ faqs:
   - question: "What does an audit cost?"
     answer: "It depends on the size and complexity of your digital channels. An audit starts from approximately €2,250 (excl. VAT). We always give you a clear indication up front."
   - question: "Who does the work?"
-    answer: "A senior auditor runs the audit and a second auditor does the internal review. Once your report is delivered, you have direct access to the auditor for substantive questions, unlimited and at no extra cost. Before that, a relationship manager is your point of contact."
+    answer: "A senior auditor runs the audit and a second auditor does the internal review. Once your report is delivered, you have direct access to the auditor for substantive questions, through our accessibility credits: one credit is one question on one topic. Before that, a relationship manager is your point of contact."
 ---

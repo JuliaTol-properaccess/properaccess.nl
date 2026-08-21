@@ -31,7 +31,7 @@ je site en zeggen wat we zouden doen.
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Nabespreking</h3>
-  <p>We lopen het rapport door met je team en helpen prioriteren. Vragen over wat er in het rapport staat mag je daarna onbeperkt stellen, ook maanden later.</p>
+  <p>We lopen het rapport door met je team en helpen prioriteren. Kom je er later alsnog niet uit, dan stel je je vraag via de strippenkaart, ook maanden later nog.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">2</i>
