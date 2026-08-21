@@ -96,6 +96,10 @@ EN 301 549 stelt daarnaast eisen aan onder meer documentatie en klantondersteuni
 aan WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles uit 2.1 zit
 erin.
 
+Ben je nog aan het vergelijken tussen bureaus? We hebben opgeschreven
+[waar je op let bij het kiezen van een auditbureau](/auditbureau-kiezen/): zeven vragen die je
+aan ons kunt stellen en aan elke andere partij die je spreekt.
+
 {{< /section-full >}}
 
 {{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat er volgens is uitgevoerd, dus je rapport is bruikbaar als bewijs." >}}

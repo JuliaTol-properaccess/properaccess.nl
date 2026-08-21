@@ -139,6 +139,8 @@ We werken sinds 2019 met product owners, digitale teams, marketingleiders en web
 
 Kleine aanpassingen maken een groot verschil. Bezoekers die voor het eerst zelfstandig tickets kopen. Mensen met een beperking die een online collectie volledig kunnen ervaren. Teams die rustig richting naleving van de EAA bewegen, zonder last-minute druk. Dát is waarom we dit werk doen.
 
+Zit je nog midden in de keuze voor een bureau? Op [hoe kies je een auditbureau](/auditbureau-kiezen/) staan zeven vragen die je aan ons kunt stellen en aan elke andere partij die je spreekt. Kom je bij een ander uit omdat die de vragen beter beantwoordt, dan is dat een goede uitkomst.
+
 {{< /section-full >}}
 
 
