@@ -77,6 +77,13 @@ Elk checkpoint verwijst naar een artikel waarin in niet-technische taal staat wa
 controleren en wat je kunt verwachten. De checks volgen de Nederlandse auditpraktijk, dus ze zijn
 geordend naar wat er hier het vaakst misgaat.
 
+Eén ding zit in geen van de andere tools in dit artikel: onder elke check staat een link waarmee
+je een vraag stelt aan een auditor. Kom je een probleem tegen dat je zelf niet opgelost krijgt,
+dan gaat de vraag mee met de context waarin je hem stelde, dus het tabblad, het thema, de check,
+de versie van de Radar en het pad van de pagina waar je op stond. Je ziet eerst wat er verstuurd
+wordt, en query strings met tokens of sessie-ID's blijven eruit. De andere tools laten je op dat
+moment alleen met een melding zitten waar je zelf uit moet komen.
+
 Twee dingen die hem praktisch maken: alles rekent lokaal in je browser, dus er gaat geen
 pagina-inhoud naar een server, en hij werkt achter een login en op localhost. Daarmee kun je een
 besloten omgeving of een staging-site testen, wat met een online scanner niet lukt.
@@ -219,5 +226,5 @@ De tools maken ons sneller. Het oordeel blijft mensenwerk, en bij ons kijkt er a
 auditor naar elke bevinding.
 
 Wil je weten waar je staat zonder meteen een volledig onderzoek te laten doen? Een
-[mini-audit](/quickscan-digitale-toegankelijkheid/) kost € 495 exclusief btw en combineert deze
+[mini-audit](/webshop-quickscan/) kost € 495 exclusief btw en combineert deze
 tools met handmatig onderzoek.
