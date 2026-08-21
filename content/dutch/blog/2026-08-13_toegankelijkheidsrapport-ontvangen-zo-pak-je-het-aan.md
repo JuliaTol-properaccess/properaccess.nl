@@ -95,7 +95,7 @@ De oplossing die afgestemd is op het team dat het moet oplossen, met concrete ti
 
 Idealiter heb je niet alleen informatie over een specifiek element, maar weet je ook hoe je vergelijkbare problemen op andere pagina's kunt vinden. Hoe meer je zelf kunt testen, hoe onafhankelijker je wordt van een externe auditor. Een goed rapport helpt je niet alleen begrijpen wat er misgaat, maar ook hoe je het zelf opspoort.
 
-Voor een snelle eigen controle tussendoor kun je de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op je pagina zetten. Die laat direct op het scherm zien of contrast, koppen, focus en toegankelijke namen kloppen, dus je ziet meteen of je aanpassing het gewenste effect heeft voordat je een retest aanvraagt. Het vervangt geen test met een schermlezer of met echte gebruikers, maar het scheelt veel heen-en-weer.
+Voor een snelle eigen controle tussendoor kun je de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op je pagina zetten. Die laat direct op het scherm zien of contrast, koppen, focus en toegankelijke namen kloppen, dus je ziet meteen of je aanpassing het gewenste effect heeft voordat je een hercontrole aanvraagt. Het vervangt geen test met een schermlezer of met echte gebruikers, maar het scheelt veel heen-en-weer.
 
 Want dat laatste is het belangrijkst: test met echte gebruikers. Mensen met een beperking vertellen je of je oplossing in de praktijk werkt, niet wat je dénkt dat ze nodig hebben.
 

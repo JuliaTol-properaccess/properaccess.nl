@@ -77,7 +77,7 @@ In dat HTML-rapport zitten een paar dingen die het werk makkelijker maken:
 
 Naast het rapport krijg je een aparte HTML-presentatie: een toegankelijke presentatie van de bevindingen die je team inzicht geeft in hoe het staat met de digitale toegankelijkheid van je website of app. Geen PowerPoint, maar een webpagina die je doorklikt en intern deelt met collega's of management.
 
-Het rapport blijft beschikbaar tot het heronderzoek klaar is. Daarna sluiten we de URL of laten hem op verzoek nog een tijd staan.
+Het rapport blijft beschikbaar tot de hercontrole klaar is. Daarna sluiten we de URL of laten hem op verzoek nog een tijd staan.
 
 {{< /section-full >}}
 

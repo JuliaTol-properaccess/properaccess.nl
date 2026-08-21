@@ -163,15 +163,15 @@ Drie stappen, in deze volgorde.
 
 ### 1. Laat een audit doen op je onderliggende site
 
-Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.895 tot € 5.100](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel tegenover een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + retest hebben gehad én de echte issues opgelost.
+Een handmatige WCAG-audit door een onafhankelijke partij geeft je een rapport met concrete issues en oplossingen. Voor een webshop kost dat bij ons indicatief [€ 2.895 tot € 5.100](/blog/wat-kost-wcag-audit-webshop/). Dat klinkt veel tegenover een overlay-abonnement van € 49 per maand voor een kleine site. Maar voor grote e-commerce sites begint een overlay-abonnement vaak pas vanaf **€ 2.000 per jaar** en loopt het bij enterprise-tarieven snel verder op. Reken het uit over drie jaar: dat is € 6.000 of meer aan abonnementskosten, en je hebt nog steeds geen rapport, geen aanwijsbare verbetering en geen juridische dekking. Voor datzelfde bedrag kun je een complete audit + hercontrole hebben gehad én de echte issues opgelost.
 
 ### 2. Los de issues op in de code, niet in een widget
 
 Je developer pakt het rapport ter hand. Dingen als toetsenbord-toegankelijkheid, formulier-labels, koppenstructuur en alt-teksten zijn doorgaans relatief snel op te lossen. Complexere zaken zoals een variant-picker of een mini-cart kosten meer werk, maar zijn eenmalig.
 
-### 3. Plan een retest en blijf testen
+### 3. Plan een hercontrole en blijf testen
 
-Na de fixes laat je een retest doen. Zo weet je dat de oplossingen werken én documenteer je dat je voldoet, wat nodig is voor je toegankelijkheidsverklaring. Daarna bouw je in dat nieuwe features standaard worden getest met toetsenbord en screenreader, zodat je niet langzaam weer verslechtert.
+Na de fixes laat je een hercontrole doen. Zo weet je dat de oplossingen werken én documenteer je dat je voldoet, wat nodig is voor je toegankelijkheidsverklaring. Daarna bouw je in dat nieuwe features standaard worden getest met toetsenbord en screenreader, zodat je niet langzaam weer verslechtert.
 
 Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](/webshop-quickscan/) (495 euro exclusief btw) waarin een senior auditor de meest opvallende problemen vindt.
 
@@ -198,7 +198,7 @@ Technisch kan dat. Maar het maakt je site niet conformer, en het kan voor een de
 - Onderzoek (WebAIM, Overlay Fact Sheet) en ervaringen van screenreader-gebruikers wijzen uit dat overlays in de meeste gevallen niet helpen en soms juist storend zijn.
 - De Amerikaanse FTC legde AccessiBe in 2025 een boete van $ 1 miljoen op voor misleidende WCAG-claims, en de Murphy v. Eyebobs-schikking verplichtte de webshop om de overlay te verwijderen en handmatig te remediëren.
 - Een overlay biedt geen juridische bescherming, ook niet onder de EAA in Europa.
-- De juiste route is: audit → fixes in de code → retest → blijven testen.
+- De juiste route is: audit → fixes in de code → hercontrole → blijven testen.
 - Begin met een [mini-audit](/webshop-quickscan/). Wat je niet weet kun je niet repareren.
 
 Wil je weten wat een echte audit voor jouw webshop oplevert? Bel **085 5055 890** of vraag een mini-audit aan.

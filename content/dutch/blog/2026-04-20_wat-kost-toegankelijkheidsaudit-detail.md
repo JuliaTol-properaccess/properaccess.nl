@@ -68,7 +68,7 @@ Een audit is meer dan "even je website checken". Dit is wat erbij komt kijken:
 
 Bij ons komt daar optioneel bij:
 - **Nabespreking** (€ 250/uur, een half uur € 125): het rapport samen doorlopen met je team
-- **Retest** (meestal € 300 tot € 1.100, afhankelijk van het aantal bevindingen in je rapport): controleren of de fixes werken
+- **Hercontrole** (meestal € 300 tot € 1.100, afhankelijk van het aantal bevindingen in je rapport): controleren of de fixes werken
 
 ## Hoe vergelijk je aanbieders?
 

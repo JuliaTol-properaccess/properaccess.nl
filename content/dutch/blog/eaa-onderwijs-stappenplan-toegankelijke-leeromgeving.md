@@ -127,13 +127,13 @@ Een paar tips uit de praktijk:
 
 We bieden daarnaast een content-audit aan: we auditen een steekproef van jullie documenten, video's en LMS-pagina's en leveren concrete richtlijnen op die je hele organisatie kan toepassen. Handig als je honderden docenten hebt die content produceren.
 
-### Stap 6: Laat een retest uitvoeren en borg de toegankelijkheid
+### Stap 6: Laat een hercontrole uitvoeren en borg de toegankelijkheid
 
-Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en dat er geen nieuwe problemen zijn ontstaan. Een retest geeft je die zekerheid.
+Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en dat er geen nieuwe problemen zijn ontstaan. Een hercontrole geeft je die zekerheid.
 
-Maar een retest is niet het eindpunt. Toegankelijkheid is geen project met een einddatum -- het is een doorlopend proces. Nieuwe content, nieuwe plugins, nieuwe functionaliteit: alles kan nieuwe barrières introduceren.
+Maar een hercontrole is niet het eindpunt. Toegankelijkheid is geen project met een einddatum -- het is een doorlopend proces. Nieuwe content, nieuwe plugins, nieuwe functionaliteit: alles kan nieuwe barrières introduceren.
 
-**Hoe wij hierbij helpen:** Wat een retest kost hangt af van het aantal bevindingen in je rapport; meestal ligt dat tussen 300 en 1.100 euro. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
+**Hoe wij hierbij helpen:** Wat een hercontrole kost hangt af van het aantal bevindingen in je rapport; meestal ligt dat tussen 300 en 1.100 euro. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
 
 Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids-abonnement of strippenkaart aan. Dan denken we doorlopend mee: bij nieuwe releases, bij de keuze voor een nieuwe plugin, bij de inrichting van een nieuw deel van je leeromgeving. Zo voorkom je dat je over een jaar weer van voren af aan moet beginnen.
 

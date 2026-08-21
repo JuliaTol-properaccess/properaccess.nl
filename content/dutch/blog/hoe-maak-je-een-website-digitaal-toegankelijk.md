@@ -130,9 +130,9 @@ De meeste toegankelijkheidsproblemen vallen in twee categorieen:
 
 Verdeel het werk over de juiste mensen. Een webredacteur hoeft niet te weten hoe ARIA werkt, en een developer hoeft niet na te denken over alt-teksten.
 
-### Stap 4: Laat een retest doen
+### Stap 4: Laat een hercontrole doen
 
-Na het doorvoeren van verbeteringen wil je weten of het gelukt is. Een retest bevestigt dat de aanpassingen correct zijn doorgevoerd en dat er geen nieuwe problemen zijn ontstaan.
+Na het doorvoeren van verbeteringen wil je weten of het gelukt is. Een hercontrole bevestigt dat de aanpassingen correct zijn doorgevoerd en dat er geen nieuwe problemen zijn ontstaan.
 
 ## Wat kost het om een website toegankelijk te maken?
 
@@ -151,7 +151,7 @@ Dit is waar de kosten het meest variëren. Factoren die meespelen:
 - **Je team:** als je developers al ervaring hebben met toegankelijkheid, gaat het sneller
 - **De omvang:** een website met 10 templates is sneller aangepast dan een met 50
 
-**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en retest. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud, en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossignen in hun rapporten staan. Goed uitleg kan je vele uren en duizenden euro's schelen.
+**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en hercontrole. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud, en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossignen in hun rapporten staan. Goed uitleg kan je vele uren en duizenden euro's schelen.
 
 ### Waar kun je op besparen?
 
@@ -184,7 +184,7 @@ Tools zijn een goed startpunt, maar geen eindpunt.
 
 ### Hoe lang duurt het om een website toegankelijk te maken?
 
-Reken op drie tot zes maanden voor het hele traject: audit, verbeteringen doorvoeren, retest. Maar de eerste verbeteringen kun je vaak al binnen een week doorvoeren.
+Reken op drie tot zes maanden voor het hele traject: audit, verbeteringen doorvoeren, hercontrole. Maar de eerste verbeteringen kun je vaak al binnen een week doorvoeren.
 
 ## Volgende stap
 

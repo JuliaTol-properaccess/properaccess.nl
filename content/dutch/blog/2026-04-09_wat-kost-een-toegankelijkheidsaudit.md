@@ -56,10 +56,10 @@ Dat kost meer tijd, maar het bespaart je team weken zoekwerk.
 | Content-audit                | € 1.650       |
 | Techniekaudit                | € 2.700       |
 | Systeem-audit                | € 4.500       |
-| Retest na een audit          | meestal € 300 tot € 1.100 |
+| Hercontrole na een audit          | meestal € 300 tot € 1.100 |
 | Nabespreking (1 uur)         | € 250         |
 
-De meeste websites vallen in de categorie "gemiddeld" (€ 3.150). Dat is inclusief een volledig rapport, maar exclusief retest en nabespreking. Wat een retest kost hangt af van het aantal bevindingen in je rapport, dus die prijs krijg je pas als het rapport klaar is.
+De meeste websites vallen in de categorie "gemiddeld" (€ 3.150). Dat is inclusief een volledig rapport, maar exclusief hercontrole en nabespreking. Wat een hercontrole kost hangt af van het aantal bevindingen in je rapport, dus die prijs krijg je pas als het rapport klaar is.
 
 ## Waarom zijn sommige aanbieders veel duurder?
 

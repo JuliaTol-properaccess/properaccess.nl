@@ -52,7 +52,7 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | ------------------------------------- | ----------------- |
 | Webshop-audit (eenvoudig tot complex) | € 2.895 - € 5.100 |
 | Mini-audit (handmatige eerste controle) | € 495 exclusief btw |
-| Retest na fixes                       | meestal € 300 tot € 1.100 |
+| Hercontrole na fixes                       | meestal € 300 tot € 1.100 |
 | Nabespreking met je team              | € 250 per uur     |
 | Strippenkaart (per vraag)             | € 20 tot € 25     |
 
@@ -106,7 +106,7 @@ Als je bij ons een audit afneemt voor de gemiddelde webshop, dan krijg je:
 4. **Visuele voorbeelden.** Screenshots van het probleem, inclusief annotaties. Let op, geen screenshots van de pagina of een element. Je weet zelf toch wel hoe je logo eruit ziet. Daar heb je geen screenshot van nodig.
 5. **Een prioriteitenlijst.** Niet alles is even erg. We labelen issues op impact en urgentie zodat je weet waar je moet beginnen.
 6. **Eén nabespreking** waarin we het rapport met je team doorlopen en vragen beantwoorden.
-7. **Optionele retest** nadat je de issues hebt opgelost. Dat is een aparte stap met aparte prijs, zodat je niet betaalt voor herwerk dat je niet nodig hebt.
+7. **Optionele hercontrole** nadat je de issues hebt opgelost. Dat is een aparte stap met aparte prijs, zodat je niet betaalt voor herwerk dat je niet nodig hebt.
 
 ## Hoe verhoudt dit zich tot een mini-audit?
 
@@ -169,7 +169,7 @@ Mijn advies: vraag minimaal twee offertes aan. Vraag specifiek **wie de audit ui
 - De prijs hangt af van templates, checkout-complexiteit, interactieve componenten, talen en de diepte van het rapport.
 - Een mini-audit (495 euro exclusief btw bij ons) is een diagnose, geen vervanging van een audit.
 - Een overlay-tool is geen audit en lost het probleem niet op.
-- Vraag minimaal twee offertes aan en let op wie hem uitvoert, hoe het rapport er uit ziet en of een retest erin zit.
+- Vraag minimaal twee offertes aan en let op wie hem uitvoert, hoe het rapport er uit ziet en of een hercontrole erin zit.
 
 Wil je een concrete prijs voor jouw webshop? [Vraag een mini-audit aan](/webshop-quickscan/) of bel **085 5055 890**. Dan weet je precies waar je aan toe bent.
 

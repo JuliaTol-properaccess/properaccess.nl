@@ -4,7 +4,10 @@
 <section class="zwj-hero">
   <div class="container">
     <div class="zwj-hero__inner">
-      <p class="zwj-hero__eyebrow">Het traject in vijf stappen</p>
+      {{/* Telt de stappen zelf, zodat dit getal niet verloopt als er een pagina bij komt of weg gaat. */}}
+      {{ $stappen := len .RegularPages }}
+      {{ $woord := index (slice "nul" "één" "twee" "drie" "vier" "vijf" "zes" "zeven" "acht") $stappen }}
+      <p class="zwj-hero__eyebrow">Het traject in {{ $woord }} stappen</p>
       <h1 class="zwj-hero__title">{{ .Title }}</h1>
       <p class="zwj-hero__subtitle">{{ .Description }}</p>
     </div>
