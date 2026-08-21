@@ -20,7 +20,7 @@
 
 - [Hulp bij Europese toegankelijkheidswetgeving](https://www.properaccess.nl/hulp-bij-europese-toegankelijkheidswetgeving/): welke wet voor je geldt, de vier stappen naar voldoen (onderzoek, herstel, hercontrole, verantwoording) en welke dienst elke stap dekt
 - [Testen tijdens de bouw](https://www.properaccess.nl/toegankelijkheid-testen-tijdens-de-bouw/): WCAG-tests in de sprint, directe feedback voor developers
-- [Strippenkaart](https://www.properaccess.nl/strippenkaart/): losse uren voor meedenken bij het oplossen, code reviews en tussentijds testen
+- [Strippenkaart](https://www.properaccess.nl/strippenkaart/): vragen stellen aan een senior auditor, afgerekend per vraag en niet per uur. Eén strip is één vraag over één onderwerp, vervolgvragen in dezelfde draad zijn gratis. Bundels van 10 tot 100 strippen, van 25 euro tot 20 euro per vraag, 12 maanden geldig. Iedereen kan kopen, ook zonder audit bij ons
 - [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): meerjarig partnerschap met onderzoek, trainingen en tooling
 - [Training voor devteams](https://www.properaccess.nl/training-devteams/): praktische WCAG-training voor developers
 - [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): training toegankelijke webcontent en PDF's
@@ -54,3 +54,17 @@
 ## Blog
 
 - [Blog](https://www.properaccess.nl/blog/): artikelen over WCAG, de EAA, het BDTO en digitale toegankelijkheid
+
+### Veelgelezen artikelen
+
+- [Welke tools gebruik je om je website op WCAG te testen?](https://www.properaccess.nl/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/): vergelijking van in-pagina checkers, contrasttools, schermlezers en bookmarklets, met per categorie wat er buiten beeld blijft
+- [Automatische tool of handmatige test?](https://www.properaccess.nl/blog/automatische-tool-vs-handmatige-test/): wat een scan dekt, wat handwerk vraagt en waarom de combinatie nodig is
+- [Nul fouten in de scan, ruim honderd bevindingen in de audit](https://www.properaccess.nl/blog/nul-fouten-scan-ruim-honderd-bevindingen-audit/): één webshop, twee uitkomsten, en waar het verschil vandaan komt
+- [Lossen overlay-tools zoals AccessiBe en UserWay echt iets op?](https://www.properaccess.nl/blog/overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/): wat een overlay wel en niet aan de onderliggende code verandert
+- [Kan AI een website testen op toegankelijkheid?](https://www.properaccess.nl/blog/kan-ai-website-testen-op-toegankelijkheid/): eigen onderzoek naar wat taalmodellen en vision-modellen wel en niet vinden
+- [Hoe kies je een toegankelijkheidsbureau?](https://www.properaccess.nl/blog/hoe-kies-je-een-toegankelijkheidsbureau/): waar offertes van elkaar verschillen en welke vragen je stelt
+- [Wat doet een toezichthouder? De ACM over de EAA](https://www.properaccess.nl/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/): verslag van de aanpak die de ACM in 2026 presenteerde
+
+## Kiezen en vergelijken
+
+- [Auditbureau kiezen](https://www.properaccess.nl/auditbureau-kiezen/): zeven vragen waarmee je offertes van auditbureaus naast elkaar legt

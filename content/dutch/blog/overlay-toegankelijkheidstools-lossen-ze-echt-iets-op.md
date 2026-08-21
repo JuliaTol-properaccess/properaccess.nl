@@ -155,6 +155,8 @@ De duurzame aanpak:
 > 
 > Julia tol
 
+Zoek je gereedschap dat wel werkt? We vergelijken [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/), van in-pagina checkers tot schermlezers.
+
 ## Volgende stap
 
 Het begint met een audit. Wil je weten wat Proper Access voor je kan doen?  

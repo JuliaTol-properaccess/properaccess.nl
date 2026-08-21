@@ -78,6 +78,8 @@ Dit is strikt genomen geen AI. Het zijn deterministische regels. Maar het is wel
 
 Ze zijn snel, schaalbaar en gratis. Maar ze falen bij alles wat context vereist. Een tool kan zien dat een alt-tekst aanwezig is, maar niet of die zinvol is. "afbeelding123.jpg" als alt-tekst? De tool zegt: voldoet.
 
+In een apart artikel zetten we op een rij [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/), met per tool wat hij juist niet vindt.
+
 De vraag die ik me steeds stel: waarom zijn deze tools nog steeds zo beperkt? Google en Deque zijn grote bedrijven met grote researchbudgetten, maar het resultaat dat deze tools produceren is even beperkt als 7 jaar geleden.
 
 ### Laag 2: LLM code-analyse (Claude, ChatGPT)
