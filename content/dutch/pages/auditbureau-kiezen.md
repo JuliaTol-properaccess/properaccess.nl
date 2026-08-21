@@ -1,13 +1,13 @@
 ---
 title: "Hoe kies je een auditbureau voor digitale toegankelijkheid?"
-meta_title: "Auditbureau kiezen voor digitale toegankelijkheid: 7 vragen"
+meta_title: "Auditbureau kiezen voor digitale toegankelijkheid: 6 vragen"
 date: 2026-08-21
 slug: "auditbureau-kiezen"
 url: "/auditbureau-kiezen/"
 layout: sectie
 sectie_layout: true
-subtitle: "Zeven vragen die het verschil maken tussen een rapport dat in een la verdwijnt en een rapport waar je team mee vooruit kan"
-description: "Waar let je op bij het kiezen van een bureau voor een WCAG-onderzoek? Zeven concrete vragen over handmatig testen, WCAG-EM, review, rapportvorm, onafhankelijkheid, nazorg en geldigheid."
+subtitle: "Zes vragen die het verschil maken tussen een rapport dat niemand gebruikt en een rapport waar je team mee vooruit kan"
+description: "Waar let je op bij het kiezen van een bureau voor een WCAG-onderzoek? Zes concrete vragen over handmatig testen, WCAG-EM, zelf leren toetsen, de opbouw van het rapport, ervaring en nazorg."
 keywords: "auditbureau kiezen, WCAG audit bureau, toegankelijkheidsonderzoek laten uitvoeren, WCAG-EM, digitale toegankelijkheid bureau, auditbureau vergelijken, WCAG audit offerte"
 hero_meta:
   - label: "Auteur"
@@ -18,31 +18,32 @@ hero_meta:
 
 {{< section-full >}}
 
-Je moet een onderzoek laten doen en er zijn tientallen partijen die dat aanbieden. De offertes
+Je moet weten hoe toegankelijk jouw website of app is en er zijn tientallen partijen die een audit aanbieden. De offertes
 lijken op elkaar: WCAG 2.2 niveau AA, handmatig getoetst, rapport binnen een paar weken. Het
 verschil wordt pas zichtbaar op het moment dat het rapport op tafel ligt en je developers ermee
 aan de slag moeten.
 
-Hieronder staan zeven vragen die dat verschil zichtbaar maken vóórdat je tekent. Stel ze aan ons,
+Hieronder staan zes vragen die dat verschil zichtbaar maken vóórdat je tekent. Stel ze aan ons,
 en stel ze ook aan de andere bureaus die je spreekt. Kom je bij een ander uit omdat die de vragen
 beter beantwoordt, dan is dat een goede uitkomst.
+
+> Ons belangrijkste advies: vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
 
 **Eerst iets wat vaak verkeerd wordt verteld.** Onderzoek in eigen beheer is toegestaan. Er is
 geen regel die voorschrijft dat een externe partij het onderzoek doet, en sommige webbureaus
 kiezen daar bewust voor. Het argument om het toch uit te besteden gaat over risico: lever je een
-site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw
+site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek met de toezichthouder daarna over jouw
 oordeel. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier
 om te weten waar je staat.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Zeven vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
+{{< section-cards columns="2" bg="light" title="Zes vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
 
 {{< section-card title="1. Hoeveel wordt er met de hand getoetst?" >}}
 
-Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. Vraag
-welk deel van het onderzoek bestaat uit testen met een schermlezer, alleen het toetsenbord, zoom
-tot 400% en controle op contrast en kleurgebruik.
+Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. Vraag door
+welk deel van het onderzoek uit handmatig testen bestaat, en waarmee er dan getest wordt.
 
 Bij apps hoort daar een echt toestel bij, met VoiceOver op iOS en TalkBack op Android. Een
 emulator laat je niet zien wat een gebruiker werkelijk hoort.
@@ -52,65 +53,44 @@ emulator laat je niet zien wat een gebruiker werkelijk hoort.
 {{< section-card title="2. Volgt het onderzoek WCAG-EM?" >}}
 
 Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register)
-accepteert geen onderzoek dat niet volgens WCAG-EM is uitgevoerd. Dat geldt voor élk onderzoek,
-ook wanneer je op status B uitkomt en dus gedeeltelijk voldoet.
+accepteert geen onderzoek dat niet volgens WCAG-EM is uitgevoerd. Dat geldt voor élk onderzoek.
 
 Val je onder de EAA en niet onder het BDTO, dan heb je geen verklaring in het Register nodig. De
 methode is dan nog steeds de reden dat een steekproef representatief is voor je hele site.
 
 {{< /section-card >}}
 
-{{< section-card title="3. Wie controleert de auditor?" >}}
+{{< section-card title="3. Begrijp je hoe je zelf moet toetsen?" >}}
 
-Vraag hoe de interne review is geregeld. Bij ons voert een senior auditor het onderzoek uit en
-doet een tweede auditor de review. Dat heet het 6-ogen-principe: elke bevinding wordt dubbel
-gecontroleerd.
+Een WCAG-audit is een steekproef van circa 15 tot 20 pagina's. Los je alle fouten op die pagina's op, dan is je hele website of app daarmee nog niet toegankelijk.
 
-Die review staat bij ons apart op de offerte en schaalt mee met de omvang, van 2 uur bij een
-eenvoudige site tot 5 uur bij een complexe. Zo kun je zien dat het werkelijk gebeurt.
+Staat er in het rapport hoe je deze problemen ook op andere pagina's opspoort? Met die kennis ben je op termijn niet meer afhankelijk van een auditbureau.
 
 {{< /section-card >}}
 
 {{< section-card title="4. Hoe is het rapport geordend?" >}}
 
-Vraag om een voorbeeldrapport en zoek op waar de bevindingen over één component staan. In een
-klassiek rapport staat dezelfde datepicker onder twaalf verschillende succescriteria, verspreid
-over het document.
+Vraag om een voorbeeldrapport en kijk hoe de bevindingen zijn gestructureerd. Een klassiek WCAG-rapport volgt de oplopende lijst van succescriteria: dezelfde datepicker kan onder twaalf verschillende succescriteria staan.
 
-Wij groeperen per component en per pagina. Alles wat er aan die datepicker mankeert staat op één
-plek, met screenshot en code-voorbeeld erbij.
+Een andere aanpak is om alle problemen binnen één component bij elkaar te zetten. Alles wat er aan die datepicker mankeert staat dan op
+één plek, met screenshot en code-voorbeeld erbij.
 
 {{< /section-card >}}
 
-{{< section-card title="5. Bouwt of beheert het bureau ook websites?" >}}
+{{< section-card title="5. Hoeveel ervaring heeft het bureau?" >}}
 
-Een partij die bouwt of beheert, keurt vroeg of laat het eigen werk. Dat hoeft geen probleem te
-zijn als je het weet, en het is een probleem als je het niet weet.
+De betrouwbaarheid van een bureau lees je af aan het aantal jaren ervaring, het aantal uitgevoerde audits en het aandeel klanten dat terugkomt.
 
-Wij bouwen geen websites en doen geen contentbeheer, dus we keuren nooit ons eigen werk. We
-verkopen sinds augustus 2026 wel software, de WCAG Radar. Dat is de volledige lijst.
+De ACM, de toezichthouder voor webshops en apps, toetst websites zelf en laat weten op welke punten ze niet toegankelijk zijn. Word je zo benaderd, dan is een ervaren sparringspartner van groot belang.
 
 {{< /section-card >}}
 
 {{< section-card title="6. Wat gebeurt er ná het rapport?" >}}
 
 Het oplossen is het moment waarop de vragen komen. Vraag wat er dan is geregeld: kun je terecht
-bij de auditor die het onderzoek deed, en wat kost dat?
+bij de auditor die het onderzoek deed, en wat kost dat? Hoe lang duurt het voordat je antwoord krijgt, en hoe verloopt dat contact?
 
-Bij ons loopt dat via de strippenkaart, waarbij één vraag over één onderwerp één strip kost.
-Vervolgvragen in dezelfde draad zijn gratis. Een strip kost € 20 tot € 25, afhankelijk van de
-bundel.
-
-{{< /section-card >}}
-
-{{< section-card title="7. Hoelang blijft het rapport bruikbaar?" >}}
-
-Een rapport vervalt na 36 maanden. Zodra het oudste deelonderzoek die leeftijd bereikt, verdwijnt
-de onderbouwing onder je verklaring en zakt je status in het Register.
-
-Uit ons eigen onderzoek van augustus 2026 over 9.075 sites in het Register: 42% heeft geen enkel
-rapport, en bij 603 verklaringen met status A of B staat "onderbouwing ontoereikend", meestal
-door een ontbrekend deelonderzoek.
+Leg dit vast voordat je begint, zodat je later weet wat je mag verwachten.
 
 {{< /section-card >}}
 
@@ -118,7 +98,7 @@ door een ontbrekend deelonderzoek.
 
 {{< section-highlight title="Waarom wij per element rapporteren" image="/images/pages/auditbureau-rapport-per-element.svg" link="/zo-werken-wij/rapport-en-bevindingen/" link_text="Zo ziet ons rapport eruit" >}}
 
-De rest van de markt rapporteert per succescriterium. Dat is logisch vanuit de norm en het werkt
+De rest van de markt rapporteert per succescriterium. Dat is logisch voor mensen die WCAG hebben geschreven en het werkt
 slecht voor de mensen die het moeten oplossen. Eén datepicker duikt op onder 1.3.1, 2.1.1, 2.4.3,
 2.4.7, 4.1.2 en nog zeven andere criteria. Je developer zoekt eerst twaalf stukken bij elkaar
 voordat er iets kan worden aangepast.
@@ -196,14 +176,14 @@ voor. Meestal komt dat uit tussen € 300 en € 1.100.
 De prijs hangt af van de omvang en de complexiteit van je site of app. Dit zijn indicaties; je
 krijgt altijd vooraf een offerte met de uren erbij.
 
-| Type onderzoek | Indicatie |
-| --- | --- |
-| Mini-audit | circa € 495 |
+| Type onderzoek     | Indicatie           |
+| ------------------ | ------------------- |
+| Mini-audit         | circa € 495         |
 | Eenvoudige website | vanaf circa € 2.250 |
-| Gemiddelde website | circa € 3.150 |
-| Complexe website | circa € 5.100 |
-| Content-audit | circa € 1.650 |
-| Techniekaudit | circa € 2.700 |
+| Gemiddelde website | circa € 3.150       |
+| Complexe website   | circa € 5.100       |
+| Content-audit      | circa € 1.650       |
+| Techniekaudit      | circa € 2.700       |
 
 Alle bedragen zijn exclusief 21% btw. De meeste websites vallen in de categorie gemiddeld.
 
