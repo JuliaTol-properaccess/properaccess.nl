@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="presentation">
+  <rect width="480" height="270" fill="#ffffff"/>
+
+  <!-- ===== browservenster ===== -->
+  <rect x="14" y="14" width="290" height="200" rx="4" fill="#ffffff" stroke="#1F2937" stroke-width="1"/>
+  <rect x="14" y="14" width="290" height="18" rx="4" fill="#1F2937"/>
+  <rect x="14" y="26" width="290" height="6" fill="#1F2937"/>
+  <circle cx="26" cy="23" r="2.5" fill="#A30D4B"/>
+  <circle cx="35" cy="23" r="2.5" fill="#004050"/>
+  <circle cx="44" cy="23" r="2.5" fill="#f5f5f5"/>
+  <rect x="58" y="19" width="110" height="8" rx="4" fill="#f5f5f5"/>
+
+  <!-- navigatie -->
+  <rect x="26" y="44" width="52" height="6" rx="3" fill="#1F2937"/>
+  <rect x="180" y="45" width="26" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="214" y="45" width="32" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="254" y="45" width="26" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- koptekst -->
+  <rect x="26" y="66" width="150" height="9" rx="3" fill="#1F2937"/>
+  <rect x="26" y="82" width="230" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="26" y="92" width="205" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- formulier met focusring -->
+  <rect x="26" y="110" width="120" height="22" rx="3" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="33" y="118" width="46" height="5" rx="2.5" fill="#d1d5db"/>
+  <rect x="26" y="140" width="120" height="22" rx="3" fill="#ffffff" stroke="#A30D4B" stroke-width="2"/>
+  <rect x="33" y="148" width="60" height="5" rx="2.5" fill="#d1d5db"/>
+  <rect x="26" y="172" width="66" height="22" rx="3" fill="#A30D4B"/>
+  <rect x="38" y="181" width="42" height="5" rx="2.5" fill="#ffffff"/>
+
+  <!-- afbeeldingsvlak -->
+  <rect x="164" y="110" width="118" height="84" rx="3" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="1"/>
+  <path d="M180 172 l22 -26 16 18 12 -12 26 20 z" fill="#d1d5db"/>
+  <circle cx="192" cy="132" r="8" fill="#d1d5db"/>
+
+  <!-- ===== vier testmodi rechts ===== -->
+  <g font-family="sans-serif">
+    <!-- 1 schermlezer -->
+    <rect x="322" y="14" width="144" height="44" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="322" y="14" width="3" height="44" rx="1.5" fill="#004050"/>
+    <g transform="translate(336, 28)" fill="none" stroke="#1F2937" stroke-width="1.4" stroke-linecap="round">
+      <path d="M2,9 v-2 a6,6 0 0 1 12,0 v2"/>
+      <rect x="0" y="9" width="4.5" height="8" rx="2" fill="#1F2937" stroke="none"/>
+      <rect x="11.5" y="9" width="4.5" height="8" rx="2" fill="#1F2937" stroke="none"/>
+    </g>
+    <text x="364" y="34" font-size="9.5" font-weight="700" fill="#1F2937">Schermlezer</text>
+    <text x="364" y="47" font-size="7" fill="#6B7280">Wat krijgt iemand te horen?</text>
+
+    <!-- 2 toetsenbord -->
+    <rect x="322" y="66" width="144" height="44" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="322" y="66" width="3" height="44" rx="1.5" fill="#A30D4B"/>
+    <g transform="translate(335, 80)">
+      <rect x="0" y="0" width="20" height="14" rx="2" fill="none" stroke="#1F2937" stroke-width="1.4"/>
+      <rect x="3" y="3" width="3" height="3" rx="0.5" fill="#1F2937"/>
+      <rect x="8.5" y="3" width="3" height="3" rx="0.5" fill="#1F2937"/>
+      <rect x="14" y="3" width="3" height="3" rx="0.5" fill="#1F2937"/>
+      <rect x="3" y="8.5" width="14" height="3" rx="1" fill="#1F2937"/>
+    </g>
+    <text x="364" y="86" font-size="9.5" font-weight="700" fill="#1F2937">Alleen toetsenbord</text>
+    <text x="364" y="99" font-size="7" fill="#6B7280">Kom je overal zonder muis?</text>
+
+    <!-- 3 zoom -->
+    <rect x="322" y="118" width="144" height="44" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="322" y="118" width="3" height="44" rx="1.5" fill="#004050"/>
+    <g transform="translate(336, 131)" fill="none" stroke="#1F2937" stroke-width="1.4" stroke-linecap="round">
+      <circle cx="8" cy="8" r="6.5"/>
+      <path d="M13 13 l5 5"/>
+      <path d="M5.5 8 h5 M8 5.5 v5"/>
+    </g>
+    <text x="364" y="138" font-size="9.5" font-weight="700" fill="#1F2937">Zoom tot 400%</text>
+    <text x="364" y="151" font-size="7" fill="#6B7280">Blijft alles leesbaar?</text>
+
+    <!-- 4 contrast -->
+    <rect x="322" y="170" width="144" height="44" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="322" y="170" width="3" height="44" rx="1.5" fill="#A30D4B"/>
+    <g transform="translate(336, 183)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#1F2937" stroke-width="1.4"/>
+      <path d="M8 1 a7 7 0 0 1 0 14 z" fill="#1F2937"/>
+    </g>
+    <text x="364" y="190" font-size="9.5" font-weight="700" fill="#1F2937">Contrast en kleur</text>
+    <text x="364" y="203" font-size="7" fill="#6B7280">Werkt het ook zonder kleur?</text>
+  </g>
+
+  <!-- ===== onderregel ===== -->
+  <line x1="14" y1="232" x2="466" y2="232" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="14" y="244" width="140" height="10" rx="5" fill="#f5f5f5"/>
+  <rect x="14" y="244" width="42" height="10" rx="5" fill="#A30D4B"/>
+  <text x="162" y="253" font-family="sans-serif" font-size="9" fill="#1F2937">Een scan herkent ongeveer 30% van de succescriteria.</text>
+  <text x="14" y="268" font-family="sans-serif" font-size="8" fill="#6B7280">De rest is handwerk, en dat is precies waar de meeste problemen zitten.</text>
+</svg>
