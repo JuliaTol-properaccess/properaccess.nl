@@ -4,8 +4,9 @@
 <section class="zwj-hero">
   <div class="container">
     <div class="zwj-hero__inner">
-      {{/* Telt de stappen zelf, zodat dit getal niet verloopt als er een pagina bij komt of weg gaat. */}}
-      {{ $stappen := len .RegularPages }}
+      {{/* Telt de stappen zelf, zodat dit getal niet verloopt als er een pagina bij komt of weg gaat.
+           De hercontrole is de laatste stap maar heeft een eigen dienstpagina, dus die telt apart mee. */}}
+      {{ $stappen := add (len .RegularPages) 1 }}
       {{ $woord := index (slice "nul" "één" "twee" "drie" "vier" "vijf" "zes" "zeven" "acht") $stappen }}
       <p class="zwj-hero__eyebrow">Het traject in {{ $woord }} stappen</p>
       <h1 class="zwj-hero__title">{{ .Title }}</h1>
@@ -28,7 +29,9 @@
 <!-- ─── Process flow (children sorted by weight) ─── -->
 <section class="zwj-process">
   <div class="container">
-    <ol class="zwj-process__list" aria-label="Vijf stappen van een audit bij Proper Access">
+    {{ $hercontrole := site.GetPage "/diensten/hercontrole" }}
+    {{ $totaal := add (len .Pages) 1 }}
+    <ol class="zwj-process__list" aria-label="De {{ $totaal }} stappen van een audit bij Proper Access">
       {{ $pages := sort .Pages "Weight" }}
       {{ range $i, $page := $pages }}
       {{ $cleanTitle := replaceRE `^\d+\.\s+` "" $page.Title }}
@@ -37,6 +40,21 @@
           <span class="zwj-process__num" aria-hidden="true">{{ add $i 1 }}</span>
           <h2 class="zwj-process__title">{{ $cleanTitle }}</h2>
           <p class="zwj-process__desc">{{ $page.Description }}</p>
+          <span class="zwj-process__cta">
+            Lees deze stap
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </li>
+      {{ end }}
+      {{/* De hercontrole hoort bij het traject maar staat op een eigen dienstpagina,
+           omdat je hem ook los van een audit kunt afnemen. */}}
+      {{ with $hercontrole }}
+      <li class="zwj-process__item">
+        <a href="{{ .RelPermalink }}" class="zwj-process__card">
+          <span class="zwj-process__num" aria-hidden="true">{{ $totaal }}</span>
+          <h2 class="zwj-process__title">{{ .Title }}</h2>
+          <p class="zwj-process__desc">{{ .Description }}</p>
           <span class="zwj-process__cta">
             Lees deze stap
             <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
