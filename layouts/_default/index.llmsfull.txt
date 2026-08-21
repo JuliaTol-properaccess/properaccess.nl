@@ -1,4 +1,4 @@
-{{- /* llms-full.txt — uitgebreide content voor AI-systemen
+{{- /* llms-full.txt: uitgebreide content voor AI-systemen
        Volgt llmstxt.org pattern: meer detail dan llms.txt
        Diensten + Voor wie volledig, blog en academy als index met description */ -}}
 # {{ site.Title }}
@@ -15,15 +15,15 @@ Talen: Nederlands, Engels, Zweeds
 
 ## Over Proper Access
 
-Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 950+ audits uitgevoerd, 236 opdrachten bij 63 klanten — waaronder Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo. 40% van onze klanten komt terug. Peildatum van die cijfers: 7 augustus 2026.
+Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 950+ audits uitgevoerd: 236 opdrachten bij 63 klanten. Daar zitten Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo bij. 40% van onze klanten komt terug. Peildatum van die cijfers: 7 augustus 2026.
 
 Wat ons onderscheidt:
 - **Rapport per element**, niet per WCAG-succescriterium zoals de rest van de markt
 - **Visuele voorbeelden** en taal afgestemd op de lezer
 - **User stories per bevinding** vanuit de bezoeker met een beperking
-- **Onafhankelijk** — we bouwen en beheren geen websites, dus we keuren nooit ons eigen werk
-- **Direct contact met senior auditor** — voor klanten met een rapport van ons; daarvoor is een relatiebeheerder het aanspreekpunt
-- **Eigen research** — wekelijks studeren, browser- en hulpsoftwaregedrag testen
+- **Onafhankelijk**: we bouwen en beheren geen websites, dus we keuren nooit ons eigen werk
+- **Direct contact met senior auditor**: voor klanten met een rapport van ons; daarvoor is een relatiebeheerder het aanspreekpunt
+- **Eigen research**: wekelijks studeren, browser- en hulpsoftwaregedrag testen
 
 ## Diensten
 
@@ -60,13 +60,13 @@ URL: {{ .Permalink }}
 ---
 {{ end }}
 
-## Academy — uitleg WCAG en BDTO
+## Academy: uitleg WCAG en BDTO
 
 {{ range where (where site.RegularPages "Section" "academy") "Lang" site.Language.Lang }}
-- [{{ .Title }}]({{ .Permalink }}){{ with .Params.description }} — {{ . }}{{ end }}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Params.description }}: {{ . }}{{ end }}
 {{- end }}
 
-## Blog — recente artikelen
+## Blog: recente artikelen
 
 {{ range first 30 (where (where site.RegularPages "Section" "blog") "Lang" site.Language.Lang).ByLastmod.Reverse }}
 
