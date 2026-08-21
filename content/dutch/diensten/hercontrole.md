@@ -7,7 +7,7 @@ weight: 6
 date: 2026-05-30
 slug: "hercontrole"
 url: "/hercontrole/"
-description: "Een hercontrole toetst of de bevindingen uit een eerdere audit correct zijn opgelost. Binnen 12 weken na het oorspronkelijke rapport; daarna is een nieuwe audit nodig."
+description: "Een hercontrole toetst of de bevindingen uit een eerdere audit correct zijn opgelost. De richtlijn is binnen 12 weken na de audit, later kan ook."
 keywords:
   - hercontrole wcag
   - heronderzoek toegankelijkheid
@@ -17,7 +17,7 @@ keywords:
 
 banner:
   title: "Hercontrole"
-  content: "Een eerdere audit laat zien waar het mis was. Een hercontrole laat zien dat het opgelost is. Binnen 12 weken na het oorspronkelijke rapport, voor overheid én bedrijfsleven."
+  content: "Een eerdere audit laat zien waar het mis was. Een hercontrole laat zien dat het opgelost is. Voor overheid én bedrijfsleven."
   button:
     enable: true
     label: "Plan een hercontrole"
@@ -26,7 +26,7 @@ banner:
 trust:
   label: "Wat erin zit"
   names:
-    - "Binnen 12 weken"
+    - "Je bepaalt wanneer"
     - "Elke bevinding nagelopen"
     - "Bewijs voor status A"
     - "Onafhankelijke beoordeling"
@@ -69,9 +69,9 @@ Je krijgt die prijs op het moment dat hij te bepalen is. Op de offerte voor de a
 
 {{< /section-full >}}
 
-{{< section-full title="De twaalf-wekentermijn" >}}
+{{< section-full title="Wanneer plan je het in?" >}}
 
-Een hercontrole is alleen mogelijk binnen twaalf weken na oplevering van het oorspronkelijke rapport. Daarna zijn er meestal te veel wijzigingen op de website doorgevoerd (nieuwe content, nieuwe componenten, een nieuwe release) om de oude steekproef nog representatief te noemen. In dat geval is een volledig nieuwe audit nodig.
+Onze richtlijn is binnen twaalf weken na oplevering van het oorspronkelijke rapport. Hoe langer je wacht, hoe meer er op de website verandert: nieuwe content, nieuwe componenten, een nieuwe release. Op een gegeven moment is de oude steekproef niet meer representatief en heeft een hercontrole geen zin meer. Duurt het oplossen bij jullie langer dan twaalf weken, overleg dan even; het hoeft geen harde grens te zijn.
 
 Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het moment dat de oorspronkelijke audit start. Dan weet je team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
 
@@ -103,7 +103,7 @@ Lees ook over de [hercontrole-stap in ons werktraject](/zo-werken-wij/heronderzo
 
 ## Plan je hercontrole op tijd
 
-Stuur ons een mail met het oorspronkelijke auditrapport (of het projectnummer) en de datum waarop je de fixes live wilt hebben. Vergeet de twaalf-wekentermijn niet, daarna is een nieuwe audit nodig.
+Je rapport staat in het portaal. Daar vink je per bevinding aan dat het is opgelost en dat wij mogen controleren, dus je hoeft niet te wachten tot alles klaar is. Onze richtlijn is binnen twaalf weken na de audit.
 
 [Stuur ons een mail](/contact/) · [Lees over de audit zelf](/toegankelijkheidsaudit/)
 

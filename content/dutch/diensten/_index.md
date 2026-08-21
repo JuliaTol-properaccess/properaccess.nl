@@ -54,9 +54,8 @@ je site en zeggen wat we zouden doen.
 - Screenshots en code-voorbeelden bij de bevindingen.
 - Een CSV met alle bevindingen, zodat je ze in je eigen projectmanagement kunt inlezen.
 
-Een [hercontrole](/hercontrole/) kan tot 12 weken na het oorspronkelijke rapport. Daarna is een
-nieuw onderzoek nodig, omdat er in de tussentijd te veel veranderd kan zijn om nog iets over de
-oude bevindingen te zeggen.
+Een [hercontrole](/hercontrole/) doe je wanneer je zover bent. De richtlijn is binnen 12 weken na
+de audit, want hoe langer je wacht, hoe meer er in de tussentijd verandert. Later kan ook.
 
 Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk.
 
