@@ -68,9 +68,9 @@ URL: {{ .Permalink }}
 
 ## Blog — recente artikelen
 
-{{ range first 30 (where (where site.RegularPages "Section" "blog") "Lang" site.Language.Lang).ByDate.Reverse }}
+{{ range first 30 (where (where site.RegularPages "Section" "blog") "Lang" site.Language.Lang).ByLastmod.Reverse }}
 
-### {{ .Title }} ({{ .PublishDate.Format "2006-01-02" }})
+### {{ .Title }} ({{ .PublishDate.Format "2006-01-02" }}{{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}, bijgewerkt {{ .Lastmod.Format "2006-01-02" }}{{ end }})
 
 URL: {{ .Permalink }}
 {{ with .Params.description }}

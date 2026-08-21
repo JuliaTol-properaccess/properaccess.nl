@@ -131,6 +131,6 @@ Voor webshops is dit verschil extra belangrijk geworden. Sinds de European Acces
 
 ## Tot slot
 
-Een automatische scan is een prima eerste filter. Gebruik hem, laat hem meedraaien in je build, ruim op wat hij vindt. Maar ga er niet van uit dat een leeg scanrapport bewijst dat je site toegankelijk is. De ruim honderd bevindingen bij deze webshop zaten allemaal in de hoek die een tool nooit bereikt, en het zijn precies de dingen waar mensen in de praktijk op stranden.
+Een automatische scan is een prima eerste filter. Gebruik hem, laat hem meedraaien in je build, ruim op wat hij vindt. Welke scanner je daarvoor kiest maakt minder uit dan je denkt; we zetten uiteen [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/) en wat elke tool laat liggen. Maar ga er niet van uit dat een leeg scanrapport bewijst dat je site toegankelijk is. De ruim honderd bevindingen bij deze webshop zaten allemaal in de hoek die een tool nooit bereikt, en het zijn precies de dingen waar mensen in de praktijk op stranden.
 
 Wil je weten wat een scan op jouw site mist? Wij testen het met de hand, met een screenreader en met het toetsenbord, en je krijgt een rapport waarin per element staat wat er aan de hand is en hoe je het oplost. Bel ons gerust op 085 5055 890, dan kijken we mee.
