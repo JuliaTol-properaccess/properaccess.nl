@@ -20,11 +20,15 @@ keywords:
   - automatische WCAG-scan
 ---
 
-Het korte antwoord: begin met een browserextensie zoals WAVE, axe DevTools of de WCAG Radar,
-meet contrast met de Colour Contrast Analyser, en test daarna met een schermlezer en met alleen
-je toetsenbord. Die combinatie kost niets en brengt je verder dan welke losse tool ook.
+Het korte antwoord: WAVE, axe DevTools, Accessibility Insights en de Colour Contrast Analyser
+doen alle vier een deel van het werk, en elk is ergens beter in dan de rest. Sinds deze zomer is
+er een nieuwe tool bij die de losse checks in één extensie combineert: de
+[WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
 
-Het langere antwoord gaat over wat die tools níét vinden, want daar zit het werk.
+Wil je het zelf doen, dan werkt deze combinatie het beste: een tool die de meetbare fouten voor je
+opzoekt, een schermlezer erbij (NVDA op Windows of VoiceOver op Mac) en een doorloop met alleen je
+toetsenbord. In de gratis vorm kost die combinatie niets en je komt er verder mee dan met welke
+losse tool ook.
 
 ## Wat een geautomatiseerde tool wel en niet ziet
 
@@ -48,27 +52,33 @@ gaf en leverden een rapport op met ruim honderd bevindingen. Dat verhaal staat i
 Deze zet je aan op de pagina die je op dat moment bekijkt. Ze zijn gratis, je hebt geen account
 nodig en je ziet het resultaat meteen in de pagina zelf.
 
-| Tool | Sterk in | Wat het niet vindt |
-| --- | --- | --- |
-| **WAVE** | snel visueel overzicht, ook zonder technische kennis | meldt regelmatig dingen die geen echt probleem zijn, dus je moet het nalopen |
-| **axe DevTools** | nauwkeurig, weinig valse meldingen, uitleg per bevinding | alles wat om een oordeel vraagt: volgorde, betekenis, of een alternatief klopt |
-| **WCAG Radar** | drie tabbladen voor redactie, design en development; leesvolgorde en simulaties | het is geen crawler: je zet hem zelf aan, per pagina |
-| **Lighthouse** | zit al in Chrome, geeft snel een indruk | de score van 0 tot 100 is misleidend; 100 betekent niet dat je site toegankelijk is |
+![](/images/blog/tools-inpagina-checker.webp)
+
+| Tool             | Sterk in                                                                        | Wat het niet vindt                                                                  |
+| ---------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **WAVE**         | snel visueel overzicht, ook zonder technische kennis                            | meldt regelmatig dingen die geen echt probleem zijn, dus je moet het nalopen        |
+| **axe DevTools** | nauwkeurig, weinig valse meldingen, uitleg per bevinding                        | alles wat om een oordeel vraagt: volgorde, betekenis, of een alternatief klopt      |
+| **WCAG Radar**   | drie tabbladen voor redactie, design en development; leesvolgorde en simulaties | het is geen crawler: je zet hem zelf aan, per pagina                                |
+| **Lighthouse**   | zit al in Chrome, geeft snel een indruk                                         | de score van 0 tot 100 is misleidend; 100 betekent niet dat je site toegankelijk is |
 
 Over die laatste: een score van 100 in Lighthouse zegt dat er niets is gevonden in de dingen die
 Lighthouse kan controleren. Dat is iets heel anders dan voldoen. We zien die 100 met enige
 regelmaat langskomen als bewijs in een aanbesteding, en dat is het niet.
 
-### Over onze eigen tool
+### Over de WCAG Radar
 
-De [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) maken we zelf, dus lees dit stukje met
-dat in het achterhoofd. Wat hij doet: je zet hem aan als bookmarklet of browserextensie en hij
-markeert problemen in de pagina die je bekijkt, verdeeld over drie tabbladen voor redactie,
-designers en developers. Hij toont de leesvolgorde zoals een schermlezer die tegenkomt, meet
-contrast met een kleurenpipet, en heeft simulaties voor grijswaarden, tekstzoom en paginazoom.
+De [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) zet je aan als bookmarklet of als
+browserextensie. Hij markeert problemen in de pagina die je op dat moment bekijkt, verdeeld over
+drie tabbladen: één voor redactie, één voor designers en één voor developers. Hij toont de
+leesvolgorde zoals een schermlezer die tegenkomt, meet contrast met een kleurenpipet, en heeft
+simulaties voor grijswaarden, tekstzoom en paginazoom.
+
+Elk checkpoint verwijst naar een artikel waarin in niet-technische taal staat wat je moet
+controleren en wat je kunt verwachten. De checks volgen de Nederlandse auditpraktijk, dus ze zijn
+geordend naar wat er hier het vaakst misgaat.
 
 Twee dingen die hem praktisch maken: alles rekent lokaal in je browser, dus er gaat geen
-paginainhoud naar een server, en hij werkt achter een login en op localhost. Daarmee kun je een
+pagina-inhoud naar een server, en hij werkt achter een login en op localhost. Daarmee kun je een
 besloten omgeving of een staging-site testen, wat met een online scanner niet lukt.
 
 De gratis versie doet 28 van de 45 checks en vraagt geen account. Voor alle checks en een
@@ -82,6 +92,8 @@ sites werkt alleen de extensie.
 
 ## Contrast meten
 
+![](/images/blog/tools-contrast-pipet.webp)
+
 **WebAIM Contrast Checker** is de snelste: twee kleuren invullen, ratio eruit, met een oordeel over
 AA en AAA. Werkt in de browser en kost niets.
 
@@ -89,7 +101,10 @@ AA en AAA. Werkt in de browser en kost niets.
 waarmee je kleuren van je scherm plukt. Dat is precies wat je nodig hebt bij tekst op een foto of
 op een verloop, waar geen CSS-waarde te vinden is.
 
-Wat geen van beide voor je oplost: bepalen welke twee kleuren je eigenlijk moet vergelijken.
+De **WCAG Radar** meet het contrast van tekst en van informatieve interface-elementen, en geeft de
+contrastverhouding erbij.
+
+Wat geen van deze drie voor je oplost: bepalen welke twee kleuren je eigenlijk moet vergelijken.
 Halftransparante lagen, schaduwen en achtergrondafbeeldingen maken dat lastiger dan het lijkt.
 
 ## Structuur bekijken
@@ -97,31 +112,39 @@ Halftransparante lagen, schaduwen en achtergrondafbeeldingen maken dat lastiger 
 **HeadingsMap** toont de koppenstructuur van een pagina als boom. In één blik zie je of je van een
 h2 naar een h4 springt of dat er twee h1's staan.
 
+De **WCAG Radar** laat zien welke kopniveaus je pagina gebruikt. Je ziet daardoor meteen wanneer
+tekst alleen groot en opvallend is gemaakt zonder dat er een kop-element onder zit. Ook de
+kopteksten zelf krijgen een beoordeling.
+
 Een kloppende hiërarchie betekent niet dat je koppen goed zijn. Een pagina waar elke kop "Meer
 informatie" heet, komt er foutloos doorheen en helpt niemand.
 
 ## Schermlezers
 
-Hier stopt het gereedschap en begint het testen. Een schermlezer is de manier waarop een deel van
-je bezoekers je site werkelijk gebruikt. Je zet hem dus niet aan om iets af te vinken; je zet hem
-aan om te horen wat er gebeurt.
+![](/images/blog/tools-leesvolgorde.webp)
+
+Een schermlezer is geen meetinstrument. Het is de manier waarop een deel van je bezoekers je site
+werkelijk gebruikt. Je zet hem dus niet aan om iets af te vinken, maar om te horen wat er gebeurt.
 
 - **NVDA**, gratis en open source, op Windows. Dit is de schermlezer waar wij het meest mee toetsen.
 - **VoiceOver**, ingebouwd in macOS en iOS. Op de Mac zet je hem aan met Cmd + F5.
 - **TalkBack**, ingebouwd in Android. Nodig zodra je een Android-app onderzoekt.
 - **JAWS**, betaald, op Windows. Veel gebruikt binnen grotere organisaties.
 
-Apps toetsen we op echte toestellen, met VoiceOver op iOS en TalkBack op Android. Een emulator laat
-je zien hoe het eruitziet en niet wat iemand te horen krijgt.
-
 Reken erop dat de eerste keer tegenvalt. Een schermlezer bedienen is een vaardigheid, en wie hem
 voor het eerst aanzet hoort vooral ruis. Dat went, en daarna is het de snelste manier om te merken
 dat je formulier nergens vertelt wat er misging.
+
+In de **WCAG Radar** kun je de inhoud van je pagina tonen zoals een schermlezer die krijgt. Je kunt
+er ook een lijst met alle links uit halen, zodat je kunt beoordelen of een linktekst los van de
+pagina nog te begrijpen is.
 
 ## Bookmarklets
 
 **Tota11y** van Khan Academy en **ANDI** van de Amerikaanse Social Security Administration zijn
 allebei gratis en installeren niets. Handig op een machine waar je geen extensies mag installeren.
+
+De **WCAG Radar** werkt ook als bookmarklet, om diezelfde reden.
 
 ## Werken toegankelijkheidsoverlays zoals AccessiBe en UserWay?
 
@@ -134,7 +157,7 @@ formulier waarvan de foutmelding niet wordt aangekondigd blijft dat ook.
 
 Daar komt bij dat de functies die een overlay aanbiedt, grotendeels al in het apparaat van de
 bezoeker zitten. Wie een schermlezer gebruikt, heeft die al ingesteld zoals hij hem wil. Een extra
-laag eroverheen kan dat juist in de weg zitten.
+laag eroverheen kan die instellingen verstoren.
 
 Wij schreven er uitgebreider over in
 [overlay-toegankelijkheidstools: lossen ze echt iets op?](/blog/overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/).
@@ -143,7 +166,7 @@ Wij schreven er uitgebreider over in
 
 Ze helpen, en ze nemen het niet over. Een taalmodel is goed in het beoordelen van dingen waar
 betekenis bij komt kijken, zoals of een alt-tekst past bij een afbeelding of een linktekst
-duidelijk maakt waar hij heen gaat. Dat is precies waar de klassieke scanners op stuklopen.
+duidelijk maakt waar hij heen gaat. Dat is precies wat een klassieke scanner niet kan.
 
 Waar het misgaat is betrouwbaarheid: hetzelfde model geeft niet altijd hetzelfde antwoord, en het
 levert soms een keurig onderbouwde bevinding op die niet klopt. Voor een rapport dat als
@@ -186,12 +209,11 @@ en AA. Wij toetsen aan WCAG 2.2 als extra service.
 ## Wat wij zelf gebruiken
 
 - **axe DevTools** en de **WCAG Radar** voor de eerste doorloop
-- **NVDA** op Windows en **VoiceOver** op macOS en iOS voor schermlezertesten
-- **Colour Contrast Analyser** voor contrast, vooral bij tekst op beeld
-- **HeadingsMap** voor koppenstructuur
+- **NVDA** op Windows en **VoiceOver** op macOS en iOS voor de schermlezertesten
 - **Alleen het toetsenbord** op elke pagina in de steekproef
-- **Zoom tot 400%** en controle op kleurgebruik
-- De **browser-DevTools** voor de code eronder
+- **Zoom tot 200% en tot 400%**, plus meer afstand tussen letters, woorden en regels
+- Controle op kleurgebruik, dus niet alleen op contrast maar ook op kleur als enige aanwijzing
+- De **browser-DevTools** om de broncode en de accessibility tree te lezen
 
 De tools maken ons sneller. Het oordeel blijft mensenwerk, en bij ons kijkt er altijd een tweede
 auditor naar elke bevinding.
