@@ -65,9 +65,9 @@ De route is:
 1. **Audit laten uitvoeren**: weet exact wat er niet voldoet
 2. **Rapport doorlopen met je development-team**: prioriteer op impact
 3. **Oplossen in sprints**: begin met de meest impactvolle issues
-4. **Retest**: laat opnieuw testen om te bevestigen dat de fixes werken
+4. **Hercontrole**: laat opnieuw testen om te bevestigen dat de fixes werken
 5. **Verklaring updaten**: pas je status aan in het register
 
-Wij helpen overheden door dit hele traject heen. Van de eerste audit tot de retest en de nabespreking.
+Wij helpen overheden door dit hele traject heen. Van de eerste audit tot de hercontrole en de nabespreking.
 
 Wil je weten waar je website nu staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je snel een eerste beeld.

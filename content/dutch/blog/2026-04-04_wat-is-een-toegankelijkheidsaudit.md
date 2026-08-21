@@ -72,6 +72,6 @@ Dat klinkt misschien als een investering, maar bedenk: zonder audit weet je niet
 - Voor een **nieuwe website** die moet voldoen aan het BDTO of de EAA
 - Na een **grote redesign of migratie**
 - Als je een **toegankelijkheidsverklaring** moet publiceren
-- Als je na een eerdere audit **verbeteringen hebt doorgevoerd** en wilt weten of je nu voldoet (retest)
+- Als je na een eerdere audit **verbeteringen hebt doorgevoerd** en wilt weten of je nu voldoet (hercontrole)
 
 Wil je eerst een globaal beeld? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je waar je staat voordat je investeert in een volledige audit.

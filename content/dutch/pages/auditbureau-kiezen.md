@@ -176,9 +176,9 @@ lezen zijn ontstaan. € 250 per uur, een half uur kan ook.
 
 {{< /section-card >}}
 
-{{< section-card title="Een retest wanneer je zover bent" >}}
+{{< section-card title="Een hercontrole wanneer je zover bent" >}}
 
-Op de auditofferte staat de retest als aanvinkregel zonder bedrag, want hoeveel werk het is hangt
+Op de auditofferte staat de hercontrole als aanvinkregel zonder bedrag, want hoeveel werk het is hangt
 af van het aantal bevindingen. Na oplevering van het rapport krijg je daar een aparte offerte
 voor. Meestal komt dat uit tussen € 300 en € 1.100.
 

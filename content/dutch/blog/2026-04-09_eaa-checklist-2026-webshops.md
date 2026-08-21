@@ -211,9 +211,9 @@ _WCAG: alle content-gerelateerde criteria_
 
 ## Categorie G: Governance & test (2 punten)
 
-### 30. Audit door een onafhankelijke partij plus retest na fixes
+### 30. Audit door een onafhankelijke partij plus hercontrole na fixes
 
-Een interne check is geen audit. Een onafhankelijke partij met een handmatige werkwijze vindt issues die je zelf nooit zou vinden, niet omdat je dom bent, maar omdat je je eigen blinde vlekken hebt. Plan minimaal één audit per jaar, plus een retest nadat je de issues hebt opgelost. Zo voorkom je dat je dezelfde fouten een jaar later weer hebt.
+Een interne check is geen audit. Een onafhankelijke partij met een handmatige werkwijze vindt issues die je zelf nooit zou vinden, niet omdat je dom bent, maar omdat je je eigen blinde vlekken hebt. Plan minimaal één audit per jaar, plus een hercontrole nadat je de issues hebt opgelost. Zo voorkom je dat je dezelfde fouten een jaar later weer hebt.
 
 _Vereist door EAA voor het kunnen opstellen van een onderbouwde toegankelijkheidsverklaring_
 

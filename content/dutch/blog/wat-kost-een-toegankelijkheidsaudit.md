@@ -57,7 +57,7 @@ De meeste websites vallen in de categorie "gemiddeld", bijvoorbeeld een overheid
 Na een audit bieden we altijd twee optionele extra's aan:
 
 - **Nabespreking** (1 uur, 250 euro; een half uur kan ook, voor 125 euro): we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
-- **Retest** (meestal 300 tot 1.100 euro, afhankelijk van het aantal bevindingen in je rapport): nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
+- **Hercontrole** (meestal 300 tot 1.100 euro, afhankelijk van het aantal bevindingen in je rapport): nadat je verbeteringen hebt doorgevoerd, checken we of alles goed is opgelost
 
 ## Prijstabel volledig onderzoek
 
@@ -100,7 +100,7 @@ Nee. De European Accessibility Act vereist dat je website voldoet aan WCAG 2.1 n
 <details class="faq-item">
 <summary class="faq-question">Hoe vaak moet ik een audit laten doen?</summary>
 <div class="faq-answer">
-Na de eerste audit en het doorvoeren van verbeteringen, adviseer ik een retest. Daarna is een jaarlijkse check verstandig, zeker als je regelmatig content toevoegt of functionaliteit wijzigt.
+Na de eerste audit en het doorvoeren van verbeteringen, adviseer ik een hercontrole. Daarna is een jaarlijkse check verstandig, zeker als je regelmatig content toevoegt of functionaliteit wijzigt.
 </div>
 </details>
 

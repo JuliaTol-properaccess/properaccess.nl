@@ -80,9 +80,9 @@ Met een rapport per element hoeft je developer niet eerst op zoektocht door de h
 
 Als je weet dat er 3 afbeeldingen zonder alt-tekst zijn op de homepage en 47 productafbeeldingen zonder alt-tekst in de webshop, kun je een betere inschatting maken van de werklast. Bij een rapport per succescriterium weet je alleen dat "SC 1.1.1 niet voldaan is", maar niet hoe groot het probleem is.
 
-### 3. De retest gaat sneller
+### 3. De hercontrole gaat sneller
 
-Bij een retest checken we of de gevonden problemen zijn opgelost. Met een rapport per element kunnen we precies dezelfde elementen opnieuw controleren. Dat is sneller en goedkoper dan opnieuw de hele website doorlopen.
+Bij een hercontrole checken we of de gevonden problemen zijn opgelost. Met een rapport per element kunnen we precies dezelfde elementen opnieuw controleren. Dat is sneller en goedkoper dan opnieuw de hele website doorlopen.
 
 ### 4. Je ziet patronen
 

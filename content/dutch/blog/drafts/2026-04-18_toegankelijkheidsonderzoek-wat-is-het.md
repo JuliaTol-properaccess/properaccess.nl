@@ -68,9 +68,9 @@ Welke criteria voor welke beperking gelden, hebben we overzichtelijk gemaakt in 
 
 Elk probleem wordt beschreven met locatie (URL, element), betrokken WCAG-criterium, impact voor de gebruiker, screenshot en een oplossingsrichting. Bij ons begint elke bevinding met een user story vanuit de bezoeker — zodat niet-technische collega's ook begrijpen waarom iets belangrijk is.
 
-### 4. Nabespreking en retest (optioneel)
+### 4. Nabespreking en hercontrole (optioneel)
 
-Nabespreking: samen het rapport doorlopen en vragen beantwoorden. Retest: na de fixes opnieuw controleren of alles nu wel klopt.
+Nabespreking: samen het rapport doorlopen en vragen beantwoorden. Hercontrole: na de fixes opnieuw controleren of alles nu wel klopt.
 
 ## Mini-audit of volledige audit: wat past bij jou?
 

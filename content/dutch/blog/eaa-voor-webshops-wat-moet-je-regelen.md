@@ -70,7 +70,7 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 {{< /case-section >}}
 
-{{< case-section image="/images/blog/svg-stappenplan.svg" alt="Stappenplan in 4 stappen: mini-audit, blokkers fixen, volledige audit, retest" >}}
+{{< case-section image="/images/blog/svg-stappenplan.svg" alt="Stappenplan in 4 stappen: mini-audit, blokkers fixen, volledige audit, hercontrole" >}}
 
 ## Waar begin je?
 
@@ -80,7 +80,7 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 
 **Stap 3: Volledige audit.** Een WCAG-EM onderzoek geeft je een compleet beeld en een nulmeting.
 
-**Stap 4: Retest.** Check of alle verbeteringen goed zijn doorgevoerd. Voorkomt dat je denkt dat alles in orde is terwijl er nog fouten zitten.
+**Stap 4: Hercontrole.** Check of alle verbeteringen goed zijn doorgevoerd. Voorkomt dat je denkt dat alles in orde is terwijl er nog fouten zitten.
 
 {{< /case-section >}}
 

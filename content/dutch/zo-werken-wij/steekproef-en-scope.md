@@ -69,9 +69,9 @@ Voor softwareleveranciers en productteams die een component, plug-in of compleet
 [Lees over de techniek- of systeemaudit →](/techniekaudit/)
 
 {{< /section-card >}}
-{{< section-card title="Heronderzoek" >}}
+{{< section-card title="Hercontrole" >}}
 
-Een controle van eerdere bevindingen, na het oplossen. Voor de status A in een toegankelijkheidsverklaring is een heronderzoek nodig. We werken die stap apart uit in [aflevering 5](/zo-werken-wij/heronderzoek/).
+Een controle van eerdere bevindingen, na het oplossen. Voor status A in een toegankelijkheidsverklaring is een hercontrole nodig. Wat daarbij komt kijken staat op de pagina over de [hercontrole](/hercontrole/).
 
 {{< /section-card >}}
 {{< /section-cards >}}

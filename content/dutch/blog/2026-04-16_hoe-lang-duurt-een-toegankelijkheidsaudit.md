@@ -66,6 +66,6 @@ Na de audit is het aan jouw team om de gevonden problemen op te lossen. Hoe lang
 
 Gemiddeld zijn teams 4 tot 12 weken bezig met het oplossen van de issues uit een eerste audit.
 
-Na de fixes kun je een **retest** laten doen (doorlooptijd: 1-2 weken) om te bevestigen dat alles is opgelost.
+Na de fixes kun je een **hercontrole** laten doen (doorlooptijd: 1-2 weken) om te bevestigen dat alles is opgelost.
 
 Wil je alvast een planning maken? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je vooraf wat je kunt verwachten.

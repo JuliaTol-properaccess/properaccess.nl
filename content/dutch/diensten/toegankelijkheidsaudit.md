@@ -72,7 +72,7 @@ faqs:
   - question: "Wat is het verschil met een automatische scan?"
     answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met echte assistieve technologie en volgens het 6-ogen-principe: elke bevinding wordt dubbel gecontroleerd."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
-    answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een retest die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
+    answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een hercontrole die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
     answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens deze methode is uitgevoerd, dus je rapport is bruikbaar als bewijs."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"

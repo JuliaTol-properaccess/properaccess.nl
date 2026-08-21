@@ -90,7 +90,7 @@ Een rapport met honderd bevindingen los je niet in één sprint op. Bij de eerst
 
 Vragen stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag. Dat werkt voor een losse vraag tussendoor en voor structureel meer, denk aan sprint-testing, code reviews op pull requests of mini-audits op nieuwe componenten. Zo hoeven we per vraag geen offerte te sturen.
 
-De strippenkaart is geen verplichte vervolgstap. Veel klanten ronden hun audit af zonder hem, en komen pas terug bij een heronderzoek of een volgende audit. Maar als je weet dat je ons vaker nodig hebt, is het de simpelste manier om snel te schakelen.
+De strippenkaart is geen verplichte vervolgstap. Veel klanten ronden hun audit af zonder hem, en komen pas terug bij een hercontrole of een volgende audit. Maar als je weet dat je ons vaker nodig hebt, is het de simpelste manier om snel te schakelen.
 
 {{< /section-full >}}
 
@@ -106,8 +106,8 @@ Dat betekent dat we soms zullen zeggen: hier zou je beter een ontwikkelaar voor 
 
 ## Klaar voor stap 4?
 
-Tijdens het oplossen sta je niet alleen. Vragen via je kanaal naar keuze, directe links naar elke bevinding, antwoorden binnen de werkdag.
+Tijdens het oplossen sta je niet alleen. Je stelt je vraag met een directe link naar de bevinding erbij, en je krijgt binnen 3 tot 5 werkdagen antwoord van een auditor. Ben je klaar met oplossen, dan volgt de hercontrole.
 
-[Stuur ons een mail](/contact/) [Bekijk de strippenkaart](/strippenkaart/)
+[Stuur ons een mail](/contact/) [Bekijk de strippenkaart](/strippenkaart/) [Lees over de hercontrole](/hercontrole/)
 
 {{< /section-cta >}}
