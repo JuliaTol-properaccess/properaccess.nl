@@ -1,13 +1,13 @@
 ---
 title: "Hoe kies je een auditbureau voor digitale toegankelijkheid?"
-meta_title: "Auditbureau kiezen voor digitale toegankelijkheid: 6 vragen"
+meta_title: "Auditbureau kiezen voor digitale toegankelijkheid: 7 vragen"
 date: 2026-08-21
 slug: "auditbureau-kiezen"
 url: "/auditbureau-kiezen/"
 layout: sectie
 sectie_layout: true
-subtitle: "Zes vragen die het verschil maken tussen een rapport dat niemand gebruikt en een rapport waar je team mee vooruit kan"
-description: "Waar let je op bij het kiezen van een bureau voor een WCAG-onderzoek? Zes concrete vragen over handmatig testen, WCAG-EM, zelf leren toetsen, de opbouw van het rapport, ervaring en nazorg."
+subtitle: "Zeven vragen die het verschil maken tussen een rapport dat niemand gebruikt en een rapport waar je team mee vooruit kan"
+description: "Waar let je op bij het kiezen van een bureau voor een WCAG-onderzoek? Zeven concrete vragen over handmatig testen, WCAG-EM, zelf leren toetsen, de opbouw van het rapport, ervaring, onafhankelijkheid en nazorg."
 keywords: "auditbureau kiezen, WCAG audit bureau, toegankelijkheidsonderzoek laten uitvoeren, WCAG-EM, digitale toegankelijkheid bureau, auditbureau vergelijken, WCAG audit offerte"
 hero_meta:
   - label: "Auteur"
@@ -23,11 +23,13 @@ lijken op elkaar: WCAG 2.2 niveau AA, handmatig getoetst, rapport binnen een paa
 verschil wordt pas zichtbaar op het moment dat het rapport op tafel ligt en je developers ermee
 aan de slag moeten.
 
-Hieronder staan zes vragen die dat verschil zichtbaar maken vóórdat je tekent. Stel ze aan ons,
+Hieronder staan zeven vragen die dat verschil zichtbaar maken vóórdat je tekent. Stel ze aan ons,
 en stel ze ook aan de andere bureaus die je spreekt. Kom je bij een ander uit omdat die de vragen
 beter beantwoordt, dan is dat een goede uitkomst.
 
-> Ons belangrijkste advies: vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
+{{< notice type="quote" title="Ons belangrijkste advies" >}}
+Vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
+{{< /notice >}}
 
 **Eerst iets wat vaak verkeerd wordt verteld.** Onderzoek in eigen beheer is toegestaan. Er is
 geen regel die voorschrijft dat een externe partij het onderzoek doet, en sommige webbureaus
@@ -38,12 +40,14 @@ om te weten waar je staat.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Zes vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
+{{< section-cards columns="2" bg="light" title="Zeven vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
 
 {{< section-card title="1. Hoeveel wordt er met de hand getoetst?" >}}
 
 Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. Vraag door
-welk deel van het onderzoek uit handmatig testen bestaat, en waarmee er dan getest wordt.
+welk deel van het onderzoek uit handmatig testen bestaat en waarmee er wordt getest. Denk aan een
+schermlezer, alleen het toetsenbord, zoom tot 400% en controle op contrast en kleurgebruik. Een
+volledig onderzoek omvat meer dan deze vier.
 
 Bij apps hoort daar een echt toestel bij, met VoiceOver op iOS en TalkBack op Android. Een
 emulator laat je niet zien wat een gebruiker werkelijk hoort.
@@ -85,7 +89,18 @@ De ACM, de toezichthouder voor webshops en apps, toetst websites zelf en laat we
 
 {{< /section-card >}}
 
-{{< section-card title="6. Wat gebeurt er ná het rapport?" >}}
+{{< section-card title="6. Bouwt of beheert het bureau ook websites?" >}}
+
+Een partij die zelf bouwt of beheert, keurt vroeg of laat het eigen werk. Dat hoeft geen probleem
+te zijn zolang je het weet, en het is een probleem als je het niet weet. Vraag het gewoon, en
+vraag er meteen bij of ze ook aan jouw site hebben gewerkt.
+
+Wij bouwen geen websites en doen geen contentbeheer, dus we keuren nooit ons eigen werk. We
+verkopen sinds augustus 2026 wel software, de WCAG Radar. Dat is de volledige lijst.
+
+{{< /section-card >}}
+
+{{< section-card title="7. Wat gebeurt er ná het rapport?" >}}
 
 Het oplossen is het moment waarop de vragen komen. Vraag wat er dan is geregeld: kun je terecht
 bij de auditor die het onderzoek deed, en wat kost dat? Hoe lang duurt het voordat je antwoord krijgt, en hoe verloopt dat contact?
