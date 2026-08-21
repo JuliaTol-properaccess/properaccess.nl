@@ -51,7 +51,7 @@ Below that come the technical explanation, the code example and the screenshot. 
 At Proper Access, we go beyond checklists—we build lasting partnerships to help you succeed in digital accessibility. Here’s why organizations across Europe choose us:
 
 - **Expertise You Can Trust**  
-    Our team consists of **12 full-time, in-house trained auditors**, all dedicated exclusively to accessibility. We are **WAS-certified by the International Association of Accessibility Professionals (IAAP)**, ensuring deep technical and standards-based knowledge.
+    We are **a team of 10**, trained in house and working on accessibility full time. We are **WAS-certified by the International Association of Accessibility Professionals (IAAP)**, ensuring deep technical and standards-based knowledge.
     
 - **Rigorous Quality Control**  
     Every audit report we deliver is **reviewed by at least three accessibility experts** to guarantee accuracy and consistency. This multi-layered quality assurance ensures reliable results you can act on with confidence.
