@@ -120,6 +120,6 @@ Dan is een audit op het ontwerp of de staging-omgeving vaak zinvoller dan wachte
 
 ## Wil je weten wat een audit voor jouw website kost?
 
-Begin met onze [mini-audit](/quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs, we reageren binnen een werkdag.
+Begin met onze [mini-audit](/webshop-quickscan/) voor een eerste beeld. Of neem direct [contact](/contact/) op voor een indicatieprijs, we reageren binnen een werkdag.
 
 {{< /case-section >}}

@@ -39,7 +39,7 @@ features:
     button:
       enable: true
       label: "Neem contact op"
-      link: "https://properaccess.nl/contact"
+      link: "/contact/"
 
 faqs:
   - question: Krijg ik een certificaat of keurmerk na de audit?

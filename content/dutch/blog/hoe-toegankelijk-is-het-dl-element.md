@@ -42,7 +42,7 @@ Maar hoe toegankelijk is dit element eigenlijk? Vooral voor schermlezers?
 
 ## Het probleem met NVDA
 
-In de praktijk blijkt dat het `<dl>`\-element niet goed wordt ondersteund door NVDA, een van de meest gebruikte schermlezers. NVDA behandelt de definitielijst als [een gewone lijst,](https://properaccess.nl/waarom-correcte-html-lijsten-het-verschil-maken-in-toegankelijkheid/) zonder onderscheid te maken tussen termen en definities. Dit veroorzaakt verwarring in de navigatie.
+In de praktijk blijkt dat het `<dl>`\-element niet goed wordt ondersteund door NVDA, een van de meest gebruikte schermlezers. NVDA behandelt de definitielijst als [een gewone lijst,](/blog/waarom-correcte-html-lijsten-het-verschil-maken-in-toegankelijkheid/) zonder onderscheid te maken tussen termen en definities. Dit veroorzaakt verwarring in de navigatie.
 
 Gebruikers van NVDA zijn gewend om met de toetsen L (spring naar lijst) en I (volgend item in een lijst) te navigeren. Bij een `<dl>` werkt dat anders: de schermlezer kondigt een lijst aan, maar de sneltoetsen functioneren niet zoals verwacht. Druk je op I, dan spring je naar het eerstvolgende item in **een andere lijst** – bijvoorbeeld in het navigatiemenu of de zijbalk. Je raakt de context kwijt, en op drukke pagina’s zoals webshops of nieuwsoverzichten wordt dit al snel frustrerend.
 

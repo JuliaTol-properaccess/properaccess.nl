@@ -115,7 +115,7 @@ Een mini-audit is geen volledige audit. Het is een handmatige eerste controle wa
 1. _Hoe ernstig is het ongeveer?_
 2. _Wat zou een complete audit voor jou ongeveer kosten?_
 
-Een mini-audit vervangt geen audit. Hij is een diagnose-instrument voorafgaand aan de behandeling. Als je tijd hebt, [vraag er een aan](https://properaccess.nl/quickscan/) voordat je een offerte aanvraagt, bij ons of bij wie dan ook.
+Een mini-audit vervangt geen audit. Hij is een diagnose-instrument voorafgaand aan de behandeling. Als je tijd hebt, [vraag er een aan](/webshop-quickscan/) voordat je een offerte aanvraagt, bij ons of bij wie dan ook.
 
 De term verschilt per bureau. De een noemt een snelle geautomatiseerde scan een 'quickscan', de ander een handmatige controle van een paar uur. Bij ons is de mini-audit handwerk van een senior auditor, tot 5 uur. Als je aanbiedingen van verschillende bureaus vergelijkt, vraag dan altijd wie de controle doet en hoeveel tijd erin zit.
 
@@ -171,7 +171,7 @@ Mijn advies: vraag minimaal twee offertes aan. Vraag specifiek **wie de audit ui
 - Een overlay-tool is geen audit en lost het probleem niet op.
 - Vraag minimaal twee offertes aan en let op wie hem uitvoert, hoe het rapport er uit ziet en of een retest erin zit.
 
-Wil je een concrete prijs voor jouw webshop? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) of bel **085 5055 890**. Dan weet je precies waar je aan toe bent.
+Wil je een concrete prijs voor jouw webshop? [Vraag een mini-audit aan](/webshop-quickscan/) of bel **085 5055 890**. Dan weet je precies waar je aan toe bent.
 
 ## Meer in deze serie
 

@@ -81,4 +81,4 @@ Een retest focust op de punten uit de eerdere audit. We controleren of:
 
 Kosten: we rekenen per bevinding die we nakijken, met een minimum van € 300. Meestal komt een retest daarmee tussen € 300 en € 1.100 uit. Je krijgt de prijs als het rapport er is en het aantal bevindingen vaststaat.
 
-Wil je starten met een eerste meting? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan heb je een baseline om vanuit te werken.
+Wil je starten met een eerste meting? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je een baseline om vanuit te werken.

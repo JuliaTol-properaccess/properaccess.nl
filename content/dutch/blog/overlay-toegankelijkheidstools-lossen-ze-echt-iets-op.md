@@ -109,7 +109,7 @@ Overlay‑tools beloven met één tool een pagina “toegankelijker” te maken:
 
 Tijdens het testen kwamen tal van problemen voor die geen van de tools herkende of verhielp, zoals:
 
-- Ontbrekende of slechte [toegankelijke namen](https://properaccess.nl/accessible-name-que/) (voor knoppen, links, iframes).
+- Ontbrekende of slechte [toegankelijke namen](/blog/accessible-name-que/) (voor knoppen, links, iframes).
 - Interactieve elementen die niet herkenbaar zijn voor hulpsoftware (div‑knoppen, ontoegankelijke accordions/dialogen).
 - Foute headingstructuur (hiaten in niveaus, headings gebruikt voor opmaak).
 - Afbeeldingen zonder passend tekstalternatief (of dubbelingen van zichtbare tekst).

@@ -440,4 +440,4 @@ Wil je weten of jouw website voldoet aan WCAG 1.4.5 en andere toegankelijkheidsc
 
 ---
 
-_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Meer weten? Neem gerust contact op via [contact](https://properaccess.nl/contact)._
+_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Meer weten? Neem gerust contact op via [contact](/contact/)._

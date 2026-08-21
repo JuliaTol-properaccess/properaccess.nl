@@ -130,7 +130,7 @@ De belangrijkste route voor een culturele instelling is: **bezoeker vindt de web
 
 ### Stap 3: Begin met een mini-audit
 
-Een [mini-audit](/quickscan/) geeft je een eerste beeld van de grootste knelpunten. Dat helpt om intern het gesprek te voeren en budget vrij te maken voor verbeteringen.
+Een [mini-audit](/webshop-quickscan/) geeft je een eerste beeld van de grootste knelpunten. Dat helpt om intern het gesprek te voeren en budget vrij te maken voor verbeteringen.
 
 ### Stap 4: Laat een volledige audit doen
 
@@ -144,7 +144,7 @@ Toegankelijkheid is niet alleen een technisch verhaal. Je redacteuren, marketeer
 
 We werken al jaren samen met musea en culturele instellingen. We kennen de specifieke uitdagingen: van ticketingsystemen die je niet kunt aanpassen, tot plattegronden die opnieuw moeten, tot audiogids-apps die niet voldoen.
 
-Wil je weten waar jouw instelling staat? Begin met een [mini-audit](/quickscan/) of neem [contact](/contact/) op voor een vrijblijvend gesprek.
+Wil je weten waar jouw instelling staat? Begin met een [mini-audit](/webshop-quickscan/) of neem [contact](/contact/) op voor een vrijblijvend gesprek.
 
 ## Verder lezen
 

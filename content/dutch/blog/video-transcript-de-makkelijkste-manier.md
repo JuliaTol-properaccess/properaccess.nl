@@ -57,7 +57,7 @@ Stap 3: Sla het eindresultaat op als een toegankelijk Word- of PDF-document en v
 
 ## Bekijk de video "Gevaarlijkste achtbanen ter wereld"
 
-Wil je weten hoe je een PDF toegankelijk maakt? [**Bekijk deze tutorial**](https://properaccess.nl/instructie-pdfs-testen-met-pac-2024/).
+Wil je weten hoe je controleert of een PDF toegankelijk is? [**Zo herken je niet-getagde tekst in een PDF**](/blog/hoe-herken-je-niet-getagde-tekst-in-een-pdf/).
 
 Het transcript is slechts één onderdeel van een toegankelijke video.  
 Er komt nog veel meer bij kijken als je echt toegankelijke content wilt publiceren.

@@ -72,4 +72,4 @@ Er bleef nog een probleem over. Op sommige pagina’s werd nog steeds de eerste 
 
 Voor technische consultancy in digitale toegankelijkheid, neem contact op met Julia: julia@properaccess.nl.
 
-Meer artikelen voor webontwikkelaars? Volg tag: [ontwikkelaar](https://properaccess.nl/tag/ontwikkelaar/)
+Meer artikelen voor webontwikkelaars? Volg tag: [ontwikkelaar](/categories/webdeveloper/)

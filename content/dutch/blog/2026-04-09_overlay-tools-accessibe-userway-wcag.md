@@ -173,7 +173,7 @@ Je developer pakt het rapport ter hand. Dingen als toetsenbord-toegankelijkheid,
 
 Na de fixes laat je een retest doen. Zo weet je dat de oplossingen werken én documenteer je dat je voldoet, wat nodig is voor je toegankelijkheidsverklaring. Daarna bouw je in dat nieuwe features standaard worden getest met toetsenbord en screenreader, zodat je niet langzaam weer verslechtert.
 
-Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](https://properaccess.nl/quickscan/) (495 euro exclusief btw) waarin een senior auditor de meest opvallende problemen vindt.
+Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](/webshop-quickscan/) (495 euro exclusief btw) waarin een senior auditor de meest opvallende problemen vindt.
 
 ## Veelgestelde vragen
 
@@ -199,7 +199,7 @@ Technisch kan dat. Maar het maakt je site niet conformer, en het kan voor een de
 - De Amerikaanse FTC legde AccessiBe in 2025 een boete van $ 1 miljoen op voor misleidende WCAG-claims, en de Murphy v. Eyebobs-schikking verplichtte de webshop om de overlay te verwijderen en handmatig te remediëren.
 - Een overlay biedt geen juridische bescherming, ook niet onder de EAA in Europa.
 - De juiste route is: audit → fixes in de code → retest → blijven testen.
-- Begin met een [mini-audit](https://properaccess.nl/quickscan/). Wat je niet weet kun je niet repareren.
+- Begin met een [mini-audit](/webshop-quickscan/). Wat je niet weet kun je niet repareren.
 
 Wil je weten wat een echte audit voor jouw webshop oplevert? Bel **085 5055 890** of vraag een mini-audit aan.
 

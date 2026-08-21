@@ -90,4 +90,4 @@ Maar binnen wat het belooft te doen, doet Tolkie het goed. En de mensen erachter
 
 ---
 
-_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Meer weten? Neem contact op via [properaccess.nl](https://properaccess.nl)._
+_Julia Tol is oprichter van Proper Access en helpt organisaties bij het realiseren van digitale toegankelijkheid. Niet met dikke rapporten, maar met concrete oplossingen. Meer weten? Neem contact op via [properaccess.nl](https://www.properaccess.nl)._

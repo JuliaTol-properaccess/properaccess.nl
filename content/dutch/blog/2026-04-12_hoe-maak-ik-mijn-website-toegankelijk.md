@@ -73,4 +73,4 @@ Na je eigen fixes: laat een professionele audit uitvoeren. Een externe auditor v
 
 Plan daarna periodiek een hertest. Elke update aan je website kan nieuwe problemen introduceren.
 
-Wil je beginnen met een overzicht van de huidige stand? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je precies waar je moet beginnen.
+Wil je beginnen met een overzicht van de huidige stand? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je precies waar je moet beginnen.

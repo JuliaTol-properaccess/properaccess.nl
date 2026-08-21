@@ -81,4 +81,4 @@ Ook als je organisatie formeel niet onder deze wetten valt, zijn er goede redene
 
 Ongeacht welke wet voor jou geldt: de eerste stap is inzicht. Laat je website testen, zodat je weet wat er moet gebeuren.
 
-[Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Dan weet je binnen een paar dagen waar je staat en welke wet op jouw organisatie van toepassing is.
+[Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je binnen een paar dagen waar je staat en welke wet op jouw organisatie van toepassing is.

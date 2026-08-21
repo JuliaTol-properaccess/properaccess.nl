@@ -78,4 +78,4 @@ Bij Proper Access is dat standaard. We gebruiken tools om efficiënt te werken, 
 
 Wil je weten met welke tools je die eerste 30% zelf afdekt? We vergelijken [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/), inclusief schermlezers en contrasttools.
 
-Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw).
+Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw).

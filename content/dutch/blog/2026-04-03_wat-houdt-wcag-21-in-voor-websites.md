@@ -51,4 +51,4 @@ De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 
 
 Ons advies: laat toch op WCAG 2.2 toetsen. Je voldoet daarmee sowieso aan de geldende norm, je hebt de negen extra criteria alvast in beeld, en je hoeft niet opnieuw te beginnen zodra EN 301 549 wordt bijgewerkt. Wij toetsen daarom standaard aan 2.2.
 
-Wil je weten hoe jouw website scoort op WCAG? [Vraag een mini-audit aan](https://properaccess.nl/quickscan/) (495 euro exclusief btw). Je weet binnen een paar dagen waar je staat.
+Wil je weten hoe jouw website scoort op WCAG? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Je weet binnen een paar dagen waar je staat.

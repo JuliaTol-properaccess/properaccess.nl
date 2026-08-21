@@ -190,4 +190,4 @@ Nee, de commerciële thema's die je voor 60 tot 80 dollar koopt zijn dat niet. D
 
 Wil je je huidige thema nakijken, dan kun je de vijf tests hierboven vandaag zelf doen met de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Die draait volledig in je browser en stuurt niets door.
 
-Wil je liever dat iemand met auditervaring ernaar kijkt voordat je een thema kiest? Bekijk dan de [mini-audit](/quickscan-digitale-toegankelijkheid/) of [neem contact op](/contact/).
+Wil je liever dat iemand met auditervaring ernaar kijkt voordat je een thema kiest? Bekijk dan de [mini-audit](/webshop-quickscan/) of [neem contact op](/contact/).

@@ -86,7 +86,7 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 
 Automatische tools kunnen slechts 20-30% van toegankelijkheidsproblemen herkennen. Voor een betrouwbaar en compleet beeld is menselijke expertise noodzakelijk. Onze senior auditors testen met echte hulpmiddelen (screenreaders, toetsenbordnavigatie) en beoordelen context, gebruikservaring en begrip.
 
-Meer informatie: [properaccess.nl/overlay-toegankelijkheidstools/](https://properaccess.nl/overlay-toegankelijkheidstools/)
+Meer informatie: [properaccess.nl/overlay-toegankelijkheidstools/](/blog/overlay-toegankelijkheidstools-lossen-ze-echt-iets-op/)
 
 {{< /offerte-section >}}
 
@@ -169,7 +169,7 @@ Bekijk voorbeelden van onze rapporten om een indruk te krijgen van de diepgang e
 Keizersgracht 520 H
 1017 EK Amsterdam
 
-**Website:** [properaccess.nl](https://properaccess.nl/)
+**Website:** [properaccess.nl](/)
 **Telefoon:** 06-28742274
 **E-mail:** info@properaccess.nl
 
