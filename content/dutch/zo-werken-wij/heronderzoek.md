@@ -53,9 +53,9 @@ Hoeveel werk een heronderzoek is, hangt af van het aantal bevindingen in je rapp
 
 {{< /section-full >}}
 
-{{< section-full title="De twaalf-wekentermijn" >}}
+{{< section-full title="Wanneer plan je het in?" >}}
 
-Een heronderzoek is alleen mogelijk binnen twaalf weken na oplevering van het oorspronkelijke rapport. Daarna zijn er meestal te veel wijzigingen op de website doorgevoerd (nieuwe content, nieuwe componenten, een nieuwe release) om de oude steekproef nog representatief te noemen. In dat geval is een volledig nieuwe audit nodig.
+Onze richtlijn is binnen twaalf weken na oplevering van het oorspronkelijke rapport. Hoe langer je wacht, hoe meer er op de website verandert: nieuwe content, nieuwe componenten, een nieuwe release. Op een gegeven moment is de oude steekproef niet meer representatief en heeft een heronderzoek geen zin meer. Duurt het oplossen bij jullie langer dan twaalf weken, overleg dan even; het hoeft geen harde grens te zijn.
 
 Werk je naar een EAA- of BDTO-deadline toe? Plan het heronderzoek dan al in op het moment dat de oorspronkelijke audit start. Dan weet jouw team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
 
@@ -85,7 +85,7 @@ Bij overheidsorganisaties leg je die onderbouwing vast in het Register van Toega
 
 ## Klaar voor stap 5?
 
-Een heronderzoek plan je vooraf, tegelijk met de oorspronkelijke audit, of zodra je weet wanneer de fixes live gaan. Vergeet de twaalf-wekentermijn niet, daarna is een nieuwe audit nodig.
+Een heronderzoek plan je vooraf, tegelijk met de oorspronkelijke audit, of zodra je weet wanneer de fixes live gaan. In het portaal geef je per bevinding aan dat wij mogen controleren. Onze richtlijn is binnen twaalf weken na de audit.
 
 [Plan een heronderzoek](/contact/) [Lees alles over de hercontrole](/hercontrole/) [Lees over de audit zelf](/toegankelijkheidsaudit/)
 

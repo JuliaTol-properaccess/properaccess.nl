@@ -14,7 +14,7 @@
 - [Contentaudit](https://www.properaccess.nl/contentaudit/): deelonderzoek van alleen de content die je webredactie beheert, 33 van de 55 succescriteria
 - [Techniek- of systeemaudit](https://www.properaccess.nl/techniekaudit/): deelonderzoek van componenten, code en interactiepatronen, 48 van de 55 succescriteria, voor softwareleveranciers en SaaS-partijen
 - [Mini-audit](https://www.properaccess.nl/webshop-quickscan/): tot 5 uur handmatige controle door een senior auditor, 495 euro exclusief btw, rapport binnen 5 werkdagen
-- [Hercontrole](https://www.properaccess.nl/hercontrole/): retest die vastlegt dat de bevindingen uit een eerder onderzoek zijn opgelost, tot 12 weken na het oorspronkelijke rapport
+- [Hercontrole](https://www.properaccess.nl/hercontrole/): retest die per bevinding vastlegt of het probleem is opgelost. Het rapport staat in het portaal, waar je per bevinding aangeeft dat je klaar bent en wij mogen controleren. De richtlijn is binnen 12 weken na de audit, later mag ook. Wat een retest kost hangt af van het aantal bevindingen en staat in een aparte offerte die volgt na oplevering van het rapport
 
 ## Ondersteuning en training
 
