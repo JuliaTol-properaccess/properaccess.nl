@@ -120,7 +120,7 @@ Benieuwd wat een abonnement voor jouw organisatie kan betekenen? Neem contact op
 <details class="faq-item">
 <summary class="faq-question">Kunnen we tussentijds ook vragen stellen?</summary>
 <div class="faq-answer">
-<p>Ja. Net als bij onze andere diensten stel je vragen over bevindingen, prioriteiten of technische uitvoering met een strippenkaart, vanaf € 20 per vraag. Je hebt een vaste contactpersoon die je situatie kent.</p>
+<p>Ja. Net als bij onze andere diensten stel je vragen over bevindingen, prioriteiten of technische uitvoering met een strippenkaart. Je hebt een vaste contactpersoon die je situatie kent.</p>
 </div>
 </details>
 

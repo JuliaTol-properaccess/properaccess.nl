@@ -45,7 +45,7 @@ faqs:
   - question: Krijg ik een certificaat of keurmerk na de audit?
     answer: Wij leveren onafhankelijke auditrapporten die gebruikt kunnen worden voor het invullen van een toegankelijkheidsverklaring. Hoewel er (nog) geen nationaal keurmerk is, gebruiken veel organisaties onze audits als bewijs van naleving.
   - question: Hoe lang duurt een audittraject?
-    answer: "Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van je website of app. Vragen daarna, en de begeleiding bij het oplossen, lopen via een strippenkaart: één strip is één vraag over één onderwerp, vanaf € 20 per vraag."
+    answer: "Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van je website of app. Vragen daarna, en de begeleiding bij het oplossen, lopen via een strippenkaart: één strip is één vraag over één onderwerp."
   - question: Wat kost een toegankelijkheidsaudit?
     answer: De kosten variëren afhankelijk van de omvang en complexiteit van je digitale product. Vraag vrijblijvend een offerte aan via onze website.
   - question: Hoe vaak moet ik een audit laten uitvoeren?

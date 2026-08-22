@@ -123,7 +123,7 @@ Een paar tips uit de praktijk:
 - **PDF's:** Maak een handleiding voor docenten. Hoe voeg je koppenstructuur toe in Word? Hoe schrijf je alt-teksten bij diagrammen? Hoe exporteer je een toegankelijke PDF? Dit hoeft geen ingewikkeld document te zijn -- een pagina met de vijf belangrijkste regels volstaat.
 - **Video:** Automatische ondertiteling (bijvoorbeeld via Panopto of YouTube) is een goed startpunt, maar moet altijd handmatig worden gecorrigeerd. Vooral vaktermen en eigennamen gaan fout.
 
-**Hoe wij hierbij helpen:** Vragen na de audit stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag. Dat geldt voor een bevinding die niet duidelijk is, voor de interpretatie van een richtlijn, en voor een IT-afdeling die vastloopt op een Moodle-probleem en wil dat we meedenken bij de oplossing. Je spreekt rechtstreeks met de auditor die je rapport heeft geschreven, zonder tussenlaag.
+**Hoe wij hierbij helpen:** Vragen na de audit stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. Dat geldt voor een bevinding die niet duidelijk is, voor de interpretatie van een richtlijn, en voor een IT-afdeling die vastloopt op een Moodle-probleem en wil dat we meedenken bij de oplossing. Je spreekt rechtstreeks met de auditor die je rapport heeft geschreven, zonder tussenlaag.
 
 We bieden daarnaast een content-audit aan: we auditen een steekproef van jullie documenten, video's en LMS-pagina's en leveren concrete richtlijnen op die je hele organisatie kan toepassen. Handig als je honderden docenten hebt die content produceren.
 

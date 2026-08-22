@@ -17735,7 +17735,6 @@ html.dark .pdfann-svg {
   opacity: 0.92;
 }
 
-
 /* ==========================================================================
    Toetsaanduidingen in artikelen: <kbd> als toetsenbordknop
    ========================================================================== */
@@ -17775,3 +17774,71 @@ html.dark .content kbd {
   border-color: #9ca3af;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Jaartijdlijn: een chronologie waarin het jaartal de marker is
+   in plaats van een bolletje. Beschrijvingslijst, want de relatie
+   jaar → gebeurtenis is precies wat dt/dd uitdrukt: hulpsoftware
+   kondigt de twee dan als paar aan. Bij smalle schermen zakt het
+   jaartal boven de tekst, zodat er niets afgeknepen wordt.
+   ───────────────────────────────────────────────────────────── */
+.jaartijdlijn {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.25rem;
+  row-gap: 0.65rem;
+  margin: 1.75rem 0;
+  padding: 0;
+}
+
+.jaartijdlijn dt {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #a30d4b;
+  line-height: inherit;
+  margin: 0;
+}
+
+.jaartijdlijn dd {
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid #e5e7eb;
+  color: inherit;
+}
+
+@media (max-width: 30rem) {
+  .jaartijdlijn {
+    grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+  }
+  .jaartijdlijn dt {
+    margin-top: 0.75rem;
+  }
+  .jaartijdlijn dd {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .jaartijdlijn dt:first-of-type {
+    margin-top: 0;
+  }
+}
+
+html.dark .jaartijdlijn dt {
+  color: #f0a5c0;
+}
+
+html.dark .jaartijdlijn dd {
+  border-left-color: #4b5563;
+}
+
+/* Variant voor een tijdlijn in een hero: iets compacter, en het jaartal krijgt
+   dezelfde regelhoogte als de tekst ernaast zodat de twee uitlijnen. */
+.jaartijdlijn--hero {
+  margin: 1.5rem 0 0;
+  row-gap: 0.55rem;
+  column-gap: 1rem;
+}
+
+.jaartijdlijn--hero dd p {
+  margin: 0;
+}

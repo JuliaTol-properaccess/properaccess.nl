@@ -1,10 +1,10 @@
 ---
 title: "Accessibility credits"
-meta_title: "Ask a senior accessibility auditor one question, from €20 | Proper Access"
+meta_title: "Ask a senior accessibility auditor one question | Proper Access"
 date: 2026-08-17
 slug: "accessibility-credits"
 layout: "service-en"
-description: "Buy a bundle of credits and ask a senior accessibility auditor a question whenever you need one. One credit is one question on one topic, from €20. No audit required."
+description: "Buy a bundle of credits and ask a senior accessibility auditor a question whenever you need one. One credit is one question on one topic. No audit required."
 keywords:
   - accessibility question
   - WCAG advice
@@ -13,7 +13,7 @@ keywords:
   - ask an accessibility auditor
 
 banner:
-  badge: "from €20 per question · senior auditor"
+  badge: "one question at a time · senior auditor"
   title: "Ask one question, without buying an audit first"
   content: "Most accessibility work is sold in one size: a full audit. That leaves nowhere to go with a question you could answer in fifteen minutes. So you can buy a bundle of credits instead. One credit is one question on one topic, and the credit is only spent once we answer."
   bullets:
@@ -40,7 +40,7 @@ sections:
       - "Whether an ARIA pattern is the right one"
       - "A question about a finding in your report"
   - eyebrow: "What it costs"
-    title: "From €20 per question, valid for twelve months"
+    title: "What a bundle costs, and how long it lasts"
     body: "Ten credits cost €250, twenty cost €470, fifty cost €1,100 and a hundred cost €2,000. A single question without a bundle costs €37.50, so a bundle is always cheaper. All prices exclude 21% Dutch VAT. Each bundle is valid for twelve months from the payment date, and we always spend the credits that expire first."
     card_eyebrow: "In the portal"
     card_icon: "search"

@@ -28,11 +28,15 @@ banner:
     voor iedereen. Dat is geen tagline, dat is onze passie. We willen de beste zijn
     in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
     met onze klanten.
-  bulletpoints:
-    - "Opgericht in 2019, 950+ audits uitgevoerd"
-    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
-    - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-    - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
+  tijdlijn:
+    - jaar: "2019"
+      tekst: "Proper Access opgericht in Amsterdam"
+    - jaar: "2022"
+      tekst: "Aangewezen als expert binnen DigiToegankelijk TOP van Logius, tot en met 2026"
+    - jaar: "2023"
+      tekst: "IAAP-gecertificeerd: WAS en CPACC"
+    - jaar: "2026"
+      tekst: "950+ audits, 236 opdrachten voor 63 opdrachtgevers. Stand op 7 augustus 2026"
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"
@@ -97,8 +101,7 @@ faqs:
 
       Het verschil zit in de details: rapporten per webpagina en per element, dus niet per
       succescriterium, met concrete code-snippets en screenshots. Wil je dat we meedenken bij het
-      oplossen zelf? Dat doen we met een strippenkaart: één strip is één vraag over één onderwerp,
-      vanaf € 20 per vraag.
+      oplossen zelf? Dat doen we met een strippenkaart: één strip is één vraag over één onderwerp.
 
   - question: "Hoe blijven jullie up-to-date?"
     answer: >
@@ -182,7 +185,7 @@ Zit je nog midden in de keuze voor een bureau? Op [hoe kies je een auditbureau](
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
   <h3 class="card__title">Begeleiding tijdens het oplossen</h3>
-  <p>Na het rapport verdwijnen we niet. Je vragen gaan naar de auditor die je rapport schreef, met een strippenkaart: <strong>één strip is één vraag</strong>, vanaf € 20 per vraag.</p>
+  <p>Na het rapport verdwijnen we niet. Je vragen gaan naar de auditor die je rapport schreef, met een strippenkaart: <strong>één strip is één vraag</strong>.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
@@ -213,7 +216,7 @@ Zit je nog midden in de keuze voor een bureau? Op [hoe kies je een auditbureau](
 
 {{< section-full title="Directe toegang tot de auditor" bg="light" >}}
 
-Zodra je rapport er ligt, praat je **direct met de auditor** die het geschreven heeft. Geen wachtrij en geen tussenlaag, dus dat scheelt tijd en misverstanden. Je vragen lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor, van eerste gesprek tot offerte, is een relatiebeheerder je aanspreekpunt.
+Zodra je rapport er ligt, praat je **direct met de auditor** die het geschreven heeft. Geen wachtrij en geen tussenlaag, dus dat scheelt tijd en misverstanden. Je vragen lopen via een strippenkaart. In de fase daarvoor, van eerste gesprek tot offerte, is een relatiebeheerder je aanspreekpunt.
 
 Heb je een technische vraag? Die wordt beantwoord door iemand die je code begrijpt. Wil je sparren over de beste aanpak? We denken mee, ook als het buiten de scope van de audit valt.
 

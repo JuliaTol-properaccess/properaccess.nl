@@ -117,7 +117,7 @@ de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een v
 begint bij circa € 2.250 en duurt 3 tot 5 weken.
 
 Voor **vragen en begeleiding** werken we met een [strippenkaart](/strippenkaart/): één strip is
-één vraag over één onderwerp, vanaf € 20 per vraag. Daarmee bekijken we alternatieven, reviewen we
+één vraag over één onderwerp. Daarmee bekijken we alternatieven, reviewen we
 code of testen we tussentijds, zonder dat er een traject omheen hoeft. Wil je je eigen team opleiden, dan kan dat met een
 [training voor devteams](/training-devteams/) of een
 [training voor je webredactie](/trainen-van-webredactie/).
