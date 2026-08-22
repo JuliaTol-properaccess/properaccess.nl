@@ -9,6 +9,18 @@
         <span class="hp-hero__badge">{{ $.Params.title }}</span>
         <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
         <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{/* Een chronologie krijgt het jaartal als marker in plaats van een vinkje:
+             beschrijvingslijst, want jaar en gebeurtenis horen bij elkaar en
+             hulpsoftware kondigt dt en dd dan als paar aan. Losse punten zonder
+             jaartal blijven de oude opsomming met vinkjes. */}}
+        {{ with .tijdlijn }}
+        <dl class="jaartijdlijn jaartijdlijn--hero">
+          {{ range . }}
+          <dt>{{ .jaar }}</dt>
+          <dd>{{ .tekst | markdownify }}</dd>
+          {{ end }}
+        </dl>
+        {{ end }}
         {{ with .bulletpoints }}
         <div class="hp-contrast__checks" style="margin-top: 0.5rem;">
           {{ range . }}
@@ -48,8 +60,8 @@
               <div class="hp-service-card__icon">
                 <span class="material-symbols-outlined" aria-hidden="true">forum</span>
               </div>
-              <h3 class="hp-service-card__title">Onbeperkt vragen</h3>
-              <p class="hp-service-card__desc">Ook weken of maanden na oplevering. Zonder meerkosten.</p>
+              <h3 class="hp-service-card__title">Vragen na oplevering</h3>
+              <p class="hp-service-card__desc">Bij de auditor die je rapport schreef, via de strippenkaart. Eén strip is één vraag.</p>
             </div>
             <div class="hp-service-card">
               <div class="hp-service-card__icon">

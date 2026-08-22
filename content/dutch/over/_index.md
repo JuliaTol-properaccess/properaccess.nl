@@ -28,11 +28,15 @@ banner:
     voor iedereen. Dat is geen tagline, dat is onze passie. We willen de beste zijn
     in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
     met onze klanten.
-  bulletpoints:
-    - "Opgericht in 2019, 950+ audits uitgevoerd"
-    - "Klanten: Rijksmuseum, NRC, Jumbo, Plus, Eteck, Museumvereniging"
-    - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
-    - "IAAP-gecertificeerd, peer-reviewed, altijd bijleren"
+  tijdlijn:
+    - jaar: "2019"
+      tekst: "Proper Access opgericht in Amsterdam"
+    - jaar: "2022"
+      tekst: "Aangewezen als expert binnen DigiToegankelijk TOP van Logius, tot en met 2026"
+    - jaar: "2023"
+      tekst: "IAAP-gecertificeerd: WAS en CPACC"
+    - jaar: "2026"
+      tekst: "950+ audits, 236 opdrachten voor 63 opdrachtgevers. Stand op 7 augustus 2026"
   button:
     enable: true
     label: "Plan een vrijblijvend gesprek"

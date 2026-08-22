@@ -17830,3 +17830,15 @@ html.dark .jaartijdlijn dt {
 html.dark .jaartijdlijn dd {
   border-left-color: #4b5563;
 }
+
+/* Variant voor een tijdlijn in een hero: iets compacter, en het jaartal krijgt
+   dezelfde regelhoogte als de tekst ernaast zodat de twee uitlijnen. */
+.jaartijdlijn--hero {
+  margin: 1.5rem 0 0;
+  row-gap: 0.55rem;
+  column-gap: 1rem;
+}
+
+.jaartijdlijn--hero dd p {
+  margin: 0;
+}
