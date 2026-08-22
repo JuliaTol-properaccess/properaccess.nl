@@ -2,7 +2,7 @@
 title: "Accessibility as a Service: toegankelijkheid als doorlopende dienst"
 meta_title: "Accessibility as a Service | Proper Access"
 date: 2026-03-07
-description: "Weet elke maand hoe je hele website ervoor staat. Accessibility as a Service scant je hele site en tot 100 pdf's, een senior auditor beoordeelt elke bevinding, en je toegankelijkheidsverklaring blijft vanzelf actueel."
+description: "Weet elke maand hoe je hele website ervoor staat. Accessibility as a Service scant je hele site en tot 100 PDF's, een senior auditor beoordeelt elke bevinding, en je toegankelijkheidsverklaring blijft vanzelf actueel."
 keywords:
   - accessibility as a service
   - continue monitoring toegankelijkheid

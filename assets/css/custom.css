@@ -17734,3 +17734,99 @@ html.dark .pdfann-form__veld label {
 html.dark .pdfann-svg {
   opacity: 0.92;
 }
+
+/* ==========================================================================
+   Toetsaanduidingen in artikelen: <kbd> als toetsenbordknop
+   ========================================================================== */
+
+.case__body kbd,
+.blog-wcag__text kbd,
+.article-tldr__body kbd,
+.content kbd {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.82em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #ffffff;
+  border: 1px solid #1f2937;
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  padding: 0.05em 0.45em;
+  margin: 0 0.05em;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.case__body table kbd,
+.blog-wcag__text table kbd,
+.content table kbd {
+  margin-bottom: 0.15em;
+}
+
+html.dark .case__body kbd,
+html.dark .blog-wcag__text kbd,
+html.dark .article-tldr__body kbd,
+html.dark .content kbd {
+  color: #e5e7eb;
+  background: var(--color-darkmode-body);
+  border-color: #9ca3af;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Jaartijdlijn: een chronologie waarin het jaartal de marker is
+   in plaats van een bolletje. Beschrijvingslijst, want de relatie
+   jaar → gebeurtenis is precies wat dt/dd uitdrukt: hulpsoftware
+   kondigt de twee dan als paar aan. Bij smalle schermen zakt het
+   jaartal boven de tekst, zodat er niets afgeknepen wordt.
+   ───────────────────────────────────────────────────────────── */
+.jaartijdlijn {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.25rem;
+  row-gap: 0.65rem;
+  margin: 1.75rem 0;
+  padding: 0;
+}
+
+.jaartijdlijn dt {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #a30d4b;
+  line-height: inherit;
+  margin: 0;
+}
+
+.jaartijdlijn dd {
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid #e5e7eb;
+  color: inherit;
+}
+
+@media (max-width: 30rem) {
+  .jaartijdlijn {
+    grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+  }
+  .jaartijdlijn dt {
+    margin-top: 0.75rem;
+  }
+  .jaartijdlijn dd {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .jaartijdlijn dt:first-of-type {
+    margin-top: 0;
+  }
+}
+
+html.dark .jaartijdlijn dt {
+  color: #f0a5c0;
+}
+
+html.dark .jaartijdlijn dd {
+  border-left-color: #4b5563;
+}

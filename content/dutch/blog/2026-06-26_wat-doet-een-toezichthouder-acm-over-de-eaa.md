@@ -41,12 +41,20 @@ Dat laatste punt vonden we het sterkst. De ACM legt zichzelf op dat een oordeel 
 
 Caitlin plaatste de EAA in een veel langere lijn. Toegankelijkheid is geen los modeonderwerp, maar het sluitstuk van bijna tachtig jaar mensenrechten. De tijdlijn die ze liet zien:
 
-- 1946: de Commissie voor de Rechten van de Mens
-- 1948: de Universele verklaring van de rechten van de mens. Als mens heb je het recht om gelijk behandeld te worden.
-- 2006: het Verdrag inzake de rechten van personen met een handicap
-- 2016: ratificatie van het VN-Verdrag Handicap, en de Web Accessibility Directive
-- 2023: de wijziging van artikel 1 van de Grondwet
-- 2025: de inwerkingtreding van de European Accessibility Act
+<dl class="jaartijdlijn">
+  <dt>1946</dt>
+  <dd>de Commissie voor de Rechten van de Mens</dd>
+  <dt>1948</dt>
+  <dd>de Universele verklaring van de rechten van de mens. Als mens heb je het recht om gelijk behandeld te worden.</dd>
+  <dt>2006</dt>
+  <dd>het Verdrag inzake de rechten van personen met een handicap</dd>
+  <dt>2016</dt>
+  <dd>ratificatie van het VN-Verdrag Handicap, en de Web Accessibility Directive</dd>
+  <dt>2023</dt>
+  <dd>de wijziging van artikel 1 van de Grondwet</dd>
+  <dt>2025</dt>
+  <dd>de inwerkingtreding van de European Accessibility Act</dd>
+</dl>
 
 Die wijziging van artikel 1 in 2023 is veelzeggend. Waar eerst stond dat discriminatie wegens godsdienst, ras of geslacht niet is toegestaan, staat er nu ook handicap en seksuele gerichtheid bij. Ongelijke behandeling van mensen met een beperking is sinds 2023 dus expliciet in de Grondwet verboden. De EAA is daarvan de praktische uitwerking voor producten en diensten.
 
@@ -71,7 +79,7 @@ Het meest concrete deel ging over de aanpak. De ACM doet niet alleen handhaving,
 - twee weken later een bedrijfsbezoek, met hun CEO aan tafel en een ervaringsdeskundige van de ACM erbij
 - bij ruim honderd bedrijven een beperkt onderzoek doen naar alleen één belangrijk functioneel onderdeel van de website
 
-Dat bedrijfsbezoek is slim. Een rapport op afstand is makkelijk weg te leggen. Maar als een ervaringsdeskundige bij je aan tafel laat zien waar diegene vastloopt op jouw site, en je eigen CEO zit ernaast, dan landt het probleem op een manier die geen enkel pdf-bestand voor elkaar krijgt.
+Dat bedrijfsbezoek is slim. Een rapport op afstand is makkelijk weg te leggen. Maar als een ervaringsdeskundige bij je aan tafel laat zien waar diegene vastloopt op jouw site, en je eigen CEO zit ernaast, dan landt het probleem op een manier die geen enkel PDF-bestand voor elkaar krijgt.
 
 Daarnaast werkt de ACM niet alleen. Caitlin noemde een rij samenwerkingen:
 

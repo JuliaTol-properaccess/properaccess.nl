@@ -59,7 +59,7 @@ Julia Tol staat vermeld als freelance partner bij Swink (toegankelijkheidsbureau
 
 ## Erkenningen
 
-- **IAAP Web Accessibility Specialist (WAS)**: Julia Tol is gecertificeerd door de International Association of Accessibility Professionals. [Bekijk de certificering op Credly](https://www.credly.com/badges/e23aa0b8-1092-4c71-9d30-72fded861470)
+- **IAAP Web Accessibility Specialist (WAS), sinds 2023**: Julia Tol is gecertificeerd door de International Association of Accessibility Professionals. [Bekijk de certificering op Credly](https://www.credly.com/badges/e23aa0b8-1092-4c71-9d30-72fded861470)
 - **DigiToegankelijk TOP Logius (2022–2026)**: Door het Ministerie van Binnenlandse Zaken aangewezen als expert voor de toetsing van digitale toegankelijkheid bij overheidsorganisaties.
 
 ## Voor journalisten en redacteuren

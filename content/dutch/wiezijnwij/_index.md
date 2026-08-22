@@ -22,7 +22,7 @@ features:
       - "950+ audits uitgevoerd sinds 2019"
       - "Duidelijke tarieven"
       - "Sterk technisch team"
-      - "IAAP-gecertificeerd: WAS en CPACC"
+      - "IAAP-gecertificeerd sinds 2023: WAS en CPACC"
     button:
       enable: false
       label: "Vraag een offerte aan"
