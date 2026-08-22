@@ -34,9 +34,16 @@
 - [Onderwijs](https://www.properaccess.nl/onderwijs-digitale-toegankelijkheid/): leeromgevingen zoals Moodle en Canvas
 - [Digital agencies](https://www.properaccess.nl/digital-agency/): samenwerking met bureaus die voor hun klanten bouwen
 
+## Onze eigen tools
+
+Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengekomen.
+
+- [Testtoegankelijkheid.nl](https://testtoegankelijkheid.nl): onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser
+- [WCAG Toolkit](https://wcagtoolkit.com): dezelfde tools in het Engels
+
 ## Gratis tools
 
-- [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/): bookmarklet met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op elke pagina toont
+- [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar): bookmarklet en browserextensie met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op de pagina toont die je bekijkt. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor
 - [Toegankelijkheidsverklaring opstellen (EAA)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/)
 - [Toegankelijkheidsverklaring opstellen (BDTO)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-wdo/)
 - [Alt-tekst keuzehulp](https://www.properaccess.nl/tools/alt-tekst-keuzehulp/): welke alt-tekst hoort bij welk type afbeelding

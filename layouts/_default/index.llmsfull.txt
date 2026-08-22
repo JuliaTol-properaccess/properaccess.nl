@@ -90,9 +90,19 @@ URL: {{ .Permalink }}
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag
 
+{{/* De toolsite heeft twee taalversies; verwijs naar de versie die bij deze taal hoort. */}}
+{{- $toolsite := cond (eq site.Language.Lang "nl") "https://testtoegankelijkheid.nl" "https://wcagtoolkit.com" -}}
+{{- $toolsiteNaam := cond (eq site.Language.Lang "nl") "Testtoegankelijkheid.nl" "WCAG Toolkit" -}}
+
+## Onze eigen tools
+
+Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengekomen.
+
+- {{ $toolsiteNaam }}: {{ $toolsite }}. Onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser. De andere taalversie staat op {{ cond (eq site.Language.Lang "nl") "https://wcagtoolkit.com" "https://testtoegankelijkheid.nl" }}.
+
 ## Tools (gratis)
 
-- WCAG Radar (Redactie, Designer, Developer): {{ site.BaseURL }}tools/wcag-radar/
+- WCAG Radar (Redactie, Designer, Developer): {{ $toolsite }}/wcag-radar. Bookmarklet en browserextensie, rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks.
 - Foutmeldingen naslagwerk: {{ site.BaseURL }}tools/foutmeldingen/
 - ARIA referentie: {{ site.BaseURL }}tools/aria-referentie/
 - BDTO-verklaring generator: {{ site.BaseURL }}tools/verklaring-generator/
