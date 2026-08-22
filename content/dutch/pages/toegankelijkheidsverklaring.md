@@ -7,7 +7,7 @@ hide_cta: true
 date: 2026-08-22
 slug: "toegankelijkheidsverklaring"
 url: "/toegankelijkheidsverklaring/"
-description: "Hoe je een toegankelijkheidsverklaring opstelt voor een overheidswebsite: de zes stappen, de vijf statussen, wat het Register aan onderbouwing vraagt en hoe lang een rapport geldig blijft. Met twee gratis generators."
+description: "Hoe je een toegankelijkheidsverklaring opstelt. Voor de overheid: de zes stappen naar het Register, de vijf statussen en wat er aan onderbouwing bij hoort. Voor bedrijven: wat de European Accessibility Act van je vraagt. Met twee gratis generators."
 keywords:
   - toegankelijkheidsverklaring
   - toegankelijkheidsverklaring opstellen
@@ -15,13 +15,15 @@ keywords:
   - Register van Toegankelijkheidsverklaringen
   - DigiToegankelijk
   - BDTO verklaring
+  - toegankelijkheidsverklaring EAA
+  - toegankelijkheidsverklaring webshop
   - status A B C D
   - WCAG-EM onderbouwing
 
 banner:
   badge: "BDTO, het Register en de EAA"
   title: "Een toegankelijkheidsverklaring opstellen"
-  content: "De verklaring zelf is een formulier van een halve dag. Het onderzoek eronder is het werk, en daar loopt het in het Register op vast. We leggen uit wat er van je wordt gevraagd en wat er in de praktijk misgaat."
+  content: "Overheidsorganisaties en bedrijven publiceren allebei een verklaring, op een andere plek en met een andere onderbouwing. We lopen allebei de routes langs, en we hebben er twee gratis generators voor."
   button:
     enable: true
     label: "Vraag je onderzoek aan"
@@ -48,7 +50,7 @@ faqs:
   - question: "Mag ik het onderzoek zelf doen?"
     answer: "Ja. Er is geen regel die voorschrijft dat een externe partij het onderzoek uitvoert, en sommige webbureaus kiezen daar bewust voor. Het onderzoek moet wel volgens WCAG-EM zijn uitgevoerd, ook als je status C of D wordt. Het argument om het toch uit te besteden gaat over risico: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek daarna over jouw oordeel."
   - question: "Heeft mijn webshop ook een toegankelijkheidsverklaring nodig?"
-    answer: "Nee, het Register hoort bij het Besluit digitale toegankelijkheid overheid. Val je onder de European Accessibility Act, dan publiceer je informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je algemene voorwaarden. Dat is iets anders dan een verklaring per kanaal in een register."
+    answer: "Ja. Sinds 28 juni 2025 val je onder de European Accessibility Act en publiceer je een toegankelijkheidsverklaring over je dienst. Je zet die op je eigen kanalen, bijvoorbeeld bij je algemene voorwaarden. Het verschil met de overheid: je hoeft je niet per digitaal kanaal in het Register te verantwoorden, want dat Register hoort bij het Besluit digitale toegankelijkheid overheid. Met onze gratis generator stel je de verklaring in een paar minuten op."
   - question: "Accepteert het Register een automatische scan als onderbouwing?"
     answer: "Nee. Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria; de rest vraagt handwerk met een schermlezer, alleen toetsenbord en zoom tot 400%. Het Register vraagt om een onderzoek volgens WCAG-EM, en dat is een handmatige methode met een steekproef die je verantwoordt."
 ---
@@ -56,10 +58,30 @@ faqs:
 {{< section-full title="Wie moet een toegankelijkheidsverklaring publiceren?" id="wie" >}}
 
 Een toegankelijkheidsverklaring legt vast hoe toegankelijk je website of app is, welke onderdelen
-nog niet voldoen en wat je eraan doet. De plicht komt uit het **Besluit digitale toegankelijkheid
-overheid**, dat sinds 2018 geldt voor overheidsinstanties en publiekrechtelijke instellingen. Je
-publiceert de verklaring in het
-[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
+nog niet voldoen en wat je eraan doet. Overheidsorganisaties en bedrijven publiceren allebei zo'n
+verklaring. Welke wet dat van je vraagt hangt af van wat je organisatie is, en dat bepaalt ook
+waar je verklaring terechtkomt.
+
+| Wat je bent | Welke wet | Waar je verklaring komt |
+| --- | --- | --- |
+| Overheidsinstantie of publiekrechtelijke instelling | Besluit digitale toegankelijkheid overheid, sinds 2018 | Het Register van Toegankelijkheidsverklaringen, per digitaal kanaal |
+| Bedrijf dat producten of diensten aan consumenten levert | European Accessibility Act, sinds 28 juni 2025 | Je eigen kanalen, bijvoorbeeld bij je algemene voorwaarden |
+
+De norm is voor allebei dezelfde: EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau A
+en AA.
+
+{{< /section-full >}}
+
+{{< section-full title="Overheid: je verklaring in het Register" id="overheid" >}}
+
+Val je onder het **Besluit digitale toegankelijkheid overheid**, dan publiceer je je verklaring op
+[toegankelijkheidsverklaring.nl](https://www.toegankelijkheidsverklaring.nl/). Invullen gaat via
+de Mijn-omgeving van DigiToegankelijk, en meldingen van bezoekers lopen via DIP.
+
+Twee dingen die het Register strenger maken dan mensen verwachten. Elk digitaal kanaal heeft een
+eigen verklaring nodig, dus je hoofdwebsite, elke subsite, je aanvraagformulieren, je intranet,
+portalen achter een inlog en je apps zijn allemaal apart. En het onderzoek eronder moet volgens
+WCAG-EM zijn uitgevoerd, voor élke status en niet alleen voor status A.
 
 Publiekrechtelijke instelling is een juridisch begrip en geen kwestie van subsidie. Er zijn drie
 voorwaarden die allemaal moeten gelden: de organisatie is opgericht om te voorzien in behoeften
@@ -68,14 +90,6 @@ en ze wordt in hoofdzaak door de overheid gefinancierd, staat onder toezicht van
 heeft een bestuur waarvan de overheid meer dan de helft benoemt. Een museum met een subsidie valt
 er dus niet automatisch onder. Twijfel je, leg het dan voor aan een jurist en niet aan een
 auditor.
-
-| Wat je bent | Wat je publiceert | Waar |
-| --- | --- | --- |
-| Overheidsinstantie of publiekrechtelijke instelling | Een toegankelijkheidsverklaring per digitaal kanaal | Het Register van Toegankelijkheidsverklaringen |
-| Bedrijf dat onder de European Accessibility Act valt | Informatie over de toegankelijkheid van je dienst | Je eigen kanalen, bijvoorbeeld je algemene voorwaarden |
-
-De norm is voor allebei dezelfde: EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau A
-en AA.
 
 {{< /section-full >}}
 
@@ -159,11 +173,45 @@ De uitgebreide analyse, met de verdeling per status en de projectie tot 2028, st
 
 {{< /section-full >}}
 
+{{< section-full title="Bedrijven: je verklaring onder de European Accessibility Act" id="eaa" >}}
+
+Lever je als bedrijf producten of diensten aan consumenten, dan val je sinds 28 juni 2025 onder de
+**European Accessibility Act**. Dat geldt bijvoorbeeld voor webshops, bankieren, reizen boeken,
+ticketing, e-books en telecomdiensten. Ook jij publiceert een toegankelijkheidsverklaring, alleen doe je dat op je eigen
+kanalen en niet in een register. In de praktijk zet je hem bij je algemene voorwaarden of op een
+eigen pagina waar je vanuit je footer naar linkt.
+
+Onze gratis generator stelt die verklaring voor je op:
+[toegankelijkheidsverklaring opstellen voor de EAA](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/).
+Je vult je bedrijf en je dienst in, je nalevingsstatus, welke content nog niet toegankelijk is en
+hoe bezoekers een probleem kunnen melden. Je krijgt de tekst terug en plakt hem op je site. Er is
+geen account voor nodig.
+
+Drie dingen die anders werken dan bij de overheid:
+
+- **Geen verklaring per kanaal.** De eis om elk digitaal kanaal apart te verantwoorden hoort bij
+  het Register en dus bij de overheid.
+- **Onderzoek is niet voorgeschreven.** Wat de EAA verplicht is een toegankelijke website of app.
+  Een onderzoek is de manier om te weten waar je staat, en zonder onderzoek kun je je verklaring
+  niet onderbouwen als je toezichthouder ernaar vraagt.
+- **Er is een uitzondering voor micro-ondernemingen.** Heb je minder dan 10 werknemers en blijf je
+  onder de 2 miljoen euro omzet óf balanstotaal, dan geldt de plicht niet voor diensten. Lever je
+  producten, dan geldt de vrijstelling niet.
+
+Beroep je je op een onevenredige last, dan is dat geen automatische uitzondering. Je legt de
+beoordeling vast, onderbouwt hem, herhaalt hem elke 5 jaar, en je toezichthouder mag hem opvragen.
+
+Welke toezichthouder dat is hangt af van wat je verkoopt. Voor webshops en apps is dat de ACM.
+Alle zes staan uitgelegd op de pagina over
+[hulp bij Europese toegankelijkheidswetgeving](/hulp-bij-europese-toegankelijkheidswetgeving/).
+
+{{< /section-full >}}
+
 {{< section-full title="Twee gratis generators" id="generators" bg="light" >}}
 
-We bouwden twee tools die de verklaring voor je opstellen. Je vult de gegevens in en krijgt de
-tekst terug in het formaat dat erbij hoort. Ze zijn gratis en je hoeft er geen account voor aan te
-maken.
+Voor allebei de routes hebben we een tool die de tekst voor je opstelt. Je vult de gegevens in en
+krijgt de verklaring terug in het formaat dat erbij hoort. Ze zijn gratis en je hoeft er geen
+account voor aan te maken.
 
 - [Toegankelijkheidsverklaring opstellen (BDTO)](/tools/toegankelijkheidsverklaring-wdo/) is
   bedoeld voor overheids- en semi-overheidsorganisaties en volgt de opbouw van het officiële
