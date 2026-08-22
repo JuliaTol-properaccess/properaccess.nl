@@ -9,4 +9,4 @@ aliases:
   - /en/tools/table-checker/
 ---
 
-Useful tools to check and improve the accessibility of your website. All tools are free to use.
+Useful tools to check and improve the accessibility of your website. Most of them are free. Some of the WCAG Radar checks sit in a paid version, and the PDF repair is in closed testing.

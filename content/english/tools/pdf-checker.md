@@ -1,6 +1,6 @@
 ---
 title: "PDF accessibility checker"
-description: "The free PDF checker is offline. We are building a successor that repairs your PDF as well as checking it, without changing how the document looks."
+description: "The free PDF checker is offline. Its successor is at pdf-toegankelijk.nl and is in closed testing: it repairs the code layer of your PDF without changing how the document looks."
 layout: "pdf-tool-aankondiging"
 weight: 10
 binnenkort: true
@@ -9,8 +9,9 @@ doelgroep:
   - "Web developers"
 ---
 
-The free checker that used to be here is offline. A successor is on the way, and it does more than
-check: it repairs the document.
+The free checker that used to be here is offline. Its successor is at
+[pdf-toegankelijk.nl](https://pdf-toegankelijk.nl), and it does more than check: it repairs the document. The tool is in
+closed testing and access runs per organisation. The site is in Dutch for now.
 
 ## What the new tool does
 
@@ -26,7 +27,8 @@ person has to look at them. That last list belongs in there. A check that does n
 produce a clean document.
 
 We are testing the repair on documents from our own audit practice, and we will keep developing it
-over the coming months. Once we have figures we can stand behind, we will put them here.
+over the coming months. Once we have figures we can stand behind, we will put them here. To see how
+it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span lang="nl">(in Dutch)</span>.
 
 ## What the tool does not do
 

@@ -40,12 +40,15 @@
   <div class="hp-container">
     <div class="pdfann-hero__grid">
       <div class="pdfann-hero__text">
-        <span class="hp-hero__badge">{{ if $nl }}Binnenkort{{ else }}Coming soon{{ end }}</span>
+        <span class="hp-hero__badge">{{ if $nl }}In besloten test{{ else }}In closed testing{{ end }}</span>
         <h1 class="pdfann-hero__title">{{ .Title }}</h1>
         <div class="pdfann-hero__intro">{{ $intro | safeHTML }}</div>
         <div class="pdfann-hero__actions">
           <a class="hp-btn hp-btn--primary" href="#wachtlijst">
             {{ if $nl }}Houd me op de hoogte{{ else }}Keep me posted{{ end }}
+          </a>
+          <a class="hp-btn hp-btn--ghost" href="https://pdf-toegankelijk.nl">
+            {{ if $nl }}Bekijk pdf-toegankelijk.nl{{ else }}See pdf-toegankelijk.nl{{ end }}
           </a>
         </div>
       </div>

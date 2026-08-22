@@ -78,7 +78,7 @@ SC 2.4.6 gaat over de **inhoud**: is die kop ook beschrijvend? Is dat label ook 
 
 ### Koppen testen
 
-1. Gebruik een schermlezer of browser-extensie (zoals HeadingsMap) om een lijst van alle koppen op de pagina te genereren
+1. Gebruik een schermlezer of browser-extensie (zoals HeadingsMap, of het tabblad Redactie van onze [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar)) om een lijst van alle koppen op de pagina te genereren
 2. Lees alleen de koppen, zonder de rest van de pagina. Begrijp je waar elke sectie over gaat?
 3. Als je dat niet kunt, zijn de koppen niet beschrijvend genoeg
 

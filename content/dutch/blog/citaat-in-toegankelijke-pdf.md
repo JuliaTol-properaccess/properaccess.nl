@@ -54,6 +54,8 @@ Dit werkt alleen in een **tagged PDF**. Zorg dus dat je document eerst van tags 
 
 Niet alle tekstverwerkers voegen automatisch een _Quote_\-tag toe bij export naar PDF. Vaak moet je dit dus handmatig aanpassen in Acrobat Pro.
 
+Zit er in je document helemaal geen tagstructuur, dan begin je een stap eerder. [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) zet die basisstructuur er alsnog in, met koppen, alinea's, lijsten en tabellen, zonder dat er iets verandert aan wat je ziet. Het fijnwerk zoals dit citaat blijft daarna handwerk in Acrobat. De tool is van ons en nu in besloten test.
+
 ## Conclusie
 
 Een citaat taggen in een PDF is een kleine moeite, maar het maakt een groot verschil voor toegankelijkheid. Door de juiste semantische tags te gebruiken, zorg je dat alle lezers – ook wie een schermlezer gebruikt – de inhoud goed kunnen volgen.

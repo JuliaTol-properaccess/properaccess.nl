@@ -64,6 +64,12 @@ Klik op het vierkantje onder het label "Color Picker" in het kader onder "Foregr
 
 Doe hetzelfde voor de achtergrondkleur met het tweede pipet onder "Background".
 
+## Meten zonder tweede venster
+
+Bij allebei de methodes hierboven meet je in een apart programma naast je pagina. Dat kan ook in de pagina zelf, met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), de bookmarklet en browserextensie die wij maken. Op het tabblad Designer zitten twee pipetten voor de voorgrond- en achtergrondkleur, en je krijgt de verhouding met het oordeel voor 1.4.3 en 1.4.11 erbij.
+
+Je hoeft niets te downloaden, dus dit werkt ook als je geen software mag installeren. En omdat de radar in je eigen browser rekent, kun je meten op een pagina achter een login of op een omgeving die nog niet online staat.
+
 ## **Hoe analyseer je het resultaat?**
 
 - Grote tekst (24 px of font-weight: normal / 400) moet een minimale contrastverhouding van 3,0:1 hebben.

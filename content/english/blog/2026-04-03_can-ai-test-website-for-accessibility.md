@@ -77,6 +77,8 @@ Strictly speaking, this isn't AI. These are deterministic rules. But it's what m
 
 They're fast, scalable, and free. But they fail at anything requiring context. A tool can see that an alt attribute exists, but not whether it's useful. "image123.jpg" as alt text? The tool says: pass.
 
+This is also why our own [WCAG Radar](https://wcagtoolkit.com/wcag-radar) does not hand you a score. It marks what it finds on the page in front of you and leaves the judgement to you, because that judgement is the part no rule engine reaches.
+
 The question I keep asking myself: why are these tools still so limited? Google and Deque are large companies with large research budgets, yet the results these tools produce are just as limited as they were 7 years ago.
 
 ### Layer 2: LLM code analysis (Claude, ChatGPT)

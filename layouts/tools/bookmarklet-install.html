@@ -312,7 +312,7 @@
                  niet uit elkaar te houden. Zelfde opzet als op
                  testtoegankelijkheid.nl/wcag-radar. */}}
             <h4 class="rad-check__title">{{ $check.titel }}{{ if $check.pro }}
-              <a class="rad-check__pro" href="https://testtoegankelijkheid.nl/prijzen"
+              <a class="rad-check__pro" href="{{ if $nl }}https://testtoegankelijkheid.nl/prijzen{{ else }}https://wcagtoolkit.com/wcag-radar#licentie{{ end }}"
                  aria-label="{{ if $nl }}{{ $check.titel }} vraagt een licentie, bekijk de prijzen{{ else }}{{ $check.titel }} requires a licence, see the pricing{{ end }}"
                 >{{ if $nl }}Licentie{{ else }}Licence{{ end }}</a>
             {{ end }}</h4>

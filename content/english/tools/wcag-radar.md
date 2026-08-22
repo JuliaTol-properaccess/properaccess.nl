@@ -84,6 +84,7 @@ tabs:
       - titel: "List structure"
         uitleg: "Marks real lists, so you can see whether bullet points are actually marked up as lists rather than loose lines with dashes."
       - titel: "Tables"
+        pro: true
         uitleg: "Marks tables without header cells or a caption. Header cells tell assistive software which row or column a cell belongs to. A caption gives the table a title."
       - titel: "Images and alt text"
         uitleg: "See which images have alt text, which have an empty alt attribute (alt=\"\") and which have none. Visible svg images join in too: you see their title and desc. The Radar warns about redundant words like “image of” in alt text, but leaves the judgement to you: you decide whether an image carries meaning."
@@ -98,6 +99,7 @@ tabs:
       - titel: "All links"
         uitleg: "All links on the page in a single list in the panel, the way a screen reader announces them: just the link text, without surrounding context. Empty and vague texts stand out. Click a row to jump to that link on the page."
       - titel: "Titles of embedded frames (iframes)"
+        pro: true
         uitleg: "Marks embedded frames (iframes), such as a video or a map, without a title. A title tells a screen reader user what is inside the frame."
       - titel: "Autocomplete on personal data"
         uitleg: "Fields asking for personal data, such as name, email address or phone number, should have an autocomplete attribute. The browser can then fill them in, which helps people with motor or cognitive disabilities, among others. The Radar shows the value and warns when it is missing or unknown."
@@ -122,6 +124,7 @@ tabs:
       - titel: "Make focus visible"
         uitleg: "The Radar forces a clear focus outline. Tab through your design to see whether every interactive layer has visible focus."
       - titel: "Target size (24px)"
+        pro: true
         uitleg: "Every clickable element shows its dimensions; elements smaller than 24 by 24 pixels get an orange mark. Note: a small target can still pass, for example a link within a sentence or a target with enough space around it. Use the marks as a starting point."
       - titel: "Gestures and mouse-only controls"
         uitleg: "Marks elements that can only be operated with a mouse or touch: script-clickable elements without keyboard focus, drag and drop without a clear alternative, and fake buttons with only a mouse cursor."
@@ -148,6 +151,7 @@ tabs:
       - titel: "ARIA roles and attributes"
         uitleg: "Shows all roles and aria attributes and marks four kinds of errors: broken references to non-existent ids, unknown roles (typos), roles missing a required attribute (such as checkbox without aria-checked), and aria-hidden on focusable content."
       - titel: "Iframes (title)"
+        pro: true
         uitleg: "Iframes without a title or aria-label stand out. A title is needed so a screen reader user knows what is inside the frame."
       - titel: "Autocomplete on personal data"
         uitleg: "Fields asking for personal data should have an autocomplete attribute with a valid value (WCAG 1.3.5). The Radar shows the value per field and warns about missing or unknown values."
@@ -164,8 +168,10 @@ tabs:
       - titel: "Make focus visible"
         uitleg: "The Radar forces a clear focus outline on every element. Tab through the page to see whether focus is always visible and moves logically."
       - titel: "Tab order"
+        pro: true
         uitleg: "Every focusable element gets a number in the order you reach it with Tab. Positive tabindex values jump ahead of the rest and are marked as errors, because they disturb the logical keyboard order."
       - titel: "Target size (24px)"
+        pro: true
         uitleg: "Every clickable element shows its dimensions; elements smaller than 24 by 24 pixels get an orange mark. A small target can still pass, for example a link within a sentence."
       - titel: "Gestures and mouse-only controls"
         uitleg: "Marks elements that can only be operated with a mouse or touch: script-clickable elements without keyboard focus, drag and drop without a clear alternative, and fake buttons with only a mouse cursor."
@@ -186,3 +192,5 @@ tabs:
 At the top of the panel you switch between three tabs, tuned to what you do. Each tab holds the checks that belong to that role, so you never scroll past things you do not use.
 
 When a check finds something, previous and next buttons appear in the panel. Use them to jump along every finding on the page instead of hunting for them yourself.
+
+Most checks are free and will stay that way. Some are marked "Licence": they sit in the panel but only run once you have one. Saving a report of your test session belongs to that group too. What a licence costs is on [the WCAG Radar page at WCAG Toolkit](https://wcagtoolkit.com/wcag-radar#licentie).

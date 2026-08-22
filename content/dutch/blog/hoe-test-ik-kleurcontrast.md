@@ -51,7 +51,13 @@ Ga naar de officiele website: [https://www.tpgi.com/color-contrast-checker/](htt
 
 De tool toont direct de **contrastverhouding** en of de combinatie voldoet aan WCAG AA voor normale tekst, grote tekst en informatieve elementen.
 
-## Methode 2: Chrome DevTools
+## Methode 2: de kleurenpipet in de WCAG Radar
+
+Mag je niets installeren, of wil je meten op een pagina die nog niet online staat? De [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) is een bookmarklet of browserextensie die we zelf maken. Op het tabblad Designer zitten twee pipetten waarmee je de voorgrond- en achtergrondkleur van je scherm plukt, net als in de desktop-app. Hij rekent in je browser, dus hij werkt ook op een acceptatieomgeving, achter een login en op localhost.
+
+Daarnaast kun je de pagina in grijswaarden zetten. Dat is de snelste manier om te zien of je ergens kleur gebruikt als enige drager van informatie.
+
+## Methode 3: Chrome DevTools
 
 Snel en handig als je al in de browser aan het inspecteren bent:
 
@@ -61,7 +67,7 @@ Snel en handig als je al in de browser aan het inspecteren bent:
 
 **Let op:** Chrome controleert alleen tekst, niet UI-componenten zoals randen van invoervelden.
 
-## Methode 3: Online tools
+## Methode 4: Online tools
 
 Kun je geen software installeren? Gebruik een online checker:
 
