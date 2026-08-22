@@ -23,7 +23,7 @@ keywords:
 banner:
   badge: "BDTO, het Register en de EAA"
   title: "Een toegankelijkheidsverklaring opstellen"
-  content: "Overheidsorganisaties en bedrijven publiceren allebei een verklaring, op een andere plek en met een andere onderbouwing. We lopen allebei de routes langs, en we hebben er twee gratis generators voor."
+  content: "Overheidsorganisaties en bedrijven publiceren allebei een verklaring, op een andere plek en met een andere onderbouwing. Hieronder allebei de routes, met voor elk een gratis generator."
   button:
     enable: true
     label: "Vraag je onderzoek aan"
@@ -57,10 +57,10 @@ faqs:
 
 {{< section-full title="Wie moet een toegankelijkheidsverklaring publiceren?" id="wie" >}}
 
-Een toegankelijkheidsverklaring legt vast hoe toegankelijk je website of app is, welke onderdelen
-nog niet voldoen en wat je eraan doet. Overheidsorganisaties en bedrijven publiceren allebei zo'n
-verklaring. Welke wet dat van je vraagt hangt af van wat je organisatie is, en dat bepaalt ook
-waar je verklaring terechtkomt.
+Een toegankelijkheidsverklaring legt vast hoe toegankelijk je website of app is, wat nog niet
+voldoet en wat je eraan doet. Overheidsorganisaties en bedrijven publiceren er allebei een. Welke
+wet dat van je vraagt hangt af van wat je organisatie is, en dat bepaalt ook waar je verklaring
+terechtkomt.
 
 | Wat je bent | Welke wet | Waar je verklaring komt |
 | --- | --- | --- |
@@ -74,22 +74,19 @@ en AA.
 
 {{< section-full title="Overheid: je verklaring in het Register" id="overheid" >}}
 
-Val je onder het **Besluit digitale toegankelijkheid overheid**, dan publiceer je je verklaring op
-[toegankelijkheidsverklaring.nl](https://www.toegankelijkheidsverklaring.nl/). Invullen gaat via
-de Mijn-omgeving van DigiToegankelijk, en meldingen van bezoekers lopen via DIP.
+Je publiceert je verklaring op
+[toegankelijkheidsverklaring.nl](https://www.toegankelijkheidsverklaring.nl/). Invullen gaat via de
+Mijn-omgeving van DigiToegankelijk, meldingen van bezoekers lopen via DIP. Twee eisen worden
+onderschat: elk digitaal kanaal krijgt een **eigen verklaring**, en het onderzoek eronder moet
+volgens **WCAG-EM** zijn uitgevoerd, ook bij status C en D. Wil je de tekst alvast opstellen, dan
+doet onze [gratis BDTO-generator](/tools/toegankelijkheidsverklaring-wdo/) dat in het formaat van
+het Register.
 
-Twee dingen die het Register strenger maken dan mensen verwachten. Elk digitaal kanaal heeft een
-eigen verklaring nodig, dus je hoofdwebsite, elke subsite, je aanvraagformulieren, je intranet,
-portalen achter een inlog en je apps zijn allemaal apart. En het onderzoek eronder moet volgens
-WCAG-EM zijn uitgevoerd, voor élke status en niet alleen voor status A.
-
-Publiekrechtelijke instelling is een juridisch begrip en geen kwestie van subsidie. Er zijn drie
-voorwaarden die allemaal moeten gelden: de organisatie is opgericht om te voorzien in behoeften
-van algemeen belang zonder industrieel of commercieel karakter, ze heeft rechtspersoonlijkheid,
-en ze wordt in hoofdzaak door de overheid gefinancierd, staat onder toezicht van de overheid of
-heeft een bestuur waarvan de overheid meer dan de helft benoemt. Een museum met een subsidie valt
-er dus niet automatisch onder. Twijfel je, leg het dan voor aan een jurist en niet aan een
-auditor.
+Publiekrechtelijke instelling is een juridisch begrip en geen kwestie van subsidie. Er gelden drie
+voorwaarden tegelijk: algemeen belang zonder commercieel karakter, rechtspersoonlijkheid, en
+overwegend overheidsfinanciering, overheidstoezicht of een bestuur dat de overheid grotendeels
+benoemt. Een museum met subsidie valt er dus niet automatisch onder. Twijfel je, leg het dan voor
+aan een jurist.
 
 {{< /section-full >}}
 
@@ -97,36 +94,36 @@ auditor.
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Tel je kanalen</h3>
-  <p>Elk digitaal kanaal krijgt een eigen verklaring: de hoofdwebsite, elke subsite, aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Wie hier te laag telt, mist later een deelonderzoek, en dat is de meest voorkomende reden dat het Register een onderbouwing ontoereikend noemt.</p>
+  <p>Hoofdwebsite, subsites, aanvraagformulieren, intranet, portalen achter een inlog en apps. Te laag tellen kost je later een ontbrekend deelonderzoek.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">2</i>
   <h3 class="card__title">Laat onderzoek doen volgens WCAG-EM</h3>
-  <p>Het Register accepteert geen onderzoek dat er niet volgens is uitgevoerd, en die eis geldt voor élke status, ook voor D. WCAG-EM heeft vijf stappen: reikwijdte bepalen, de site verkennen, een steekproef samenstellen, toetsen en rapporteren.</p>
+  <p>Vijf stappen: reikwijdte bepalen, de site verkennen, een steekproef samenstellen, toetsen en rapporteren.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">3</i>
   <h3 class="card__title">Vul de verklaring in</h3>
-  <p>Invullen gaat via de Mijn-omgeving van DigiToegankelijk. Je koppelt het onderzoek aan het kanaal waar het over gaat, en per kanaal kan dat uit meerdere deelonderzoeken bestaan.</p>
+  <p>Via de Mijn-omgeving van DigiToegankelijk, per kanaal, met het onderzoek eraan gekoppeld.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">4</i>
   <h3 class="card__title">Kies de status die klopt</h3>
-  <p>A tot en met D beschrijven waar je staat. Een status die er beter uitziet dan je onderbouwing rechtvaardigt, houdt geen stand: het Register merkt een A of B zonder compleet onderzoek aan als ontoereikend.</p>
+  <p>Een A of B zonder compleet onderzoek merkt het Register aan als ontoereikend.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">5</i>
   <h3 class="card__title">Richt de feedbackroute in</h3>
-  <p>Bezoekers moeten een probleem kunnen melden. Die meldingen lopen via DIP. Zorg dat er iemand is die ze leest en beantwoordt, want dit is het enige deel van de verklaring waar een gebruiker iets van merkt.</p>
+  <p>Meldingen van bezoekers lopen via DIP, en iemand moet ze lezen en beantwoorden.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">6</i>
   <h3 class="card__title">Zet de vervaldatum in je agenda</h3>
-  <p>Een rapport telt 36 maanden mee. Bestaat je onderbouwing uit meerdere deelonderzoeken, dan telt de datum van het oudste. Op die dag verdwijnt de onderbouwing en zakt je status, zonder dat er iets aan je website is veranderd.</p>
+  <p>Na 36 maanden vervalt je onderbouwing, gerekend vanaf het oudste deelonderzoek.</p>
 </div>
 {{< /section-steps >}}
 
-{{< section-full title="De vijf statussen, en wat er onder elke status ligt" id="statussen" bg="light" >}}
+{{< section-full title="De vijf statussen" id="statussen" bg="light" >}}
 
 | Status | Betekenis | Ligt er onderzoek onder? |
 | --- | --- | --- |
@@ -136,113 +133,61 @@ auditor.
 | D | Voldoet niet | Nee |
 | E | Geen organisatie heeft de site geclaimd | Er is geen verklaring |
 
-Status E kies je niet zelf. Die geldt voor overheidssites die wel bekend zijn, maar waarvan geen
-enkele organisatie heeft bevestigd dat ze van haar zijn.
-
-De statussen zeggen niets over de kwaliteit van je website los van het onderzoek. Een B met een
-volledig rapport eronder is bruikbaarder dan een A met een gat erin, en toezicht kijkt naar dat
-rapport.
+Status E kies je niet zelf. Een B met een volledig rapport eronder is bruikbaarder dan een A met
+een gat erin, want toezicht kijkt naar dat rapport.
 
 {{< /section-full >}}
 
 {{< section-full title="Waar het in de praktijk misgaat" id="praktijk" >}}
 
-Wij analyseerden alle 8.268 toegankelijkheidsverklaringen in het Register, stand 31 juli 2026.
-Het dashboard van DigiToegankelijk meldt dat 63% van de overheidswebsites aan de wet voldoet. Dat
-getal telt 9.075 sites en drie statussen samen: een afgerond rapport, een lopend onderzoek, of
-een site die wordt uitgefaseerd.
+We analyseerden alle 8.268 verklaringen in het Register, stand 31 juli 2026. Drie dingen die je bij
+je eigen verklaring kunt voorkomen:
 
-Onder dat cijfer zitten drie problemen die je bij je eigen verklaring kunt voorkomen.
+- **42% van de 9.075 overheidssites heeft geen enkel rapport.** Dat zijn de statussen C, D en E.
+- **603 verklaringen met status A of B hebben een onvolledige onderbouwing**, meestal door een
+  ontbrekend deelonderzoek: de hoofdwebsite is getoetst, het formulier of de app eronder niet.
+- **Ruim 2.800 rapporten verlopen voor eind 2027.** Bijna alle onderzoekscapaciteit gaat daarmee
+  op aan vervanging, dus plan je eigen hercontrole op tijd.
 
-**42% heeft geen enkel rapport.** Dat zijn 3.803 sites met status C, D of E. Bij C en D staat er
-geen onderzoek in de verklaring, en bij E is er niet eens een verklaring. Van die groep zijn 807
-sites sinds 2023 door niemand geclaimd.
-
-**603 verklaringen met status A of B hebben een onderbouwing die niet compleet is.** De meest
-voorkomende oorzaak is een ontbrekend deelonderzoek. De hoofdwebsite is getoetst, en het
-aanvraagformulier of de app eronder is nooit apart onderzocht. Dat is precies de fout die in
-stap 1 hierboven ontstaat, drie jaar voordat iemand hem opmerkt.
-
-**Ruim 2.800 rapporten verlopen tussen nu en eind 2027.** Bij de huidige vraag naar onderzoek gaat
-bijna alle capaciteit op aan het vervangen van verlopen rapporten. Websites die nog nooit zijn
-onderzocht, blijven daardoor liggen. Onze projectie is dat de 63% zakt naar 54% eind 2028 als het
-tempo zo laag blijft.
-
-De uitgebreide analyse, met de verdeling per status en de projectie tot 2028, staat in ons artikel
+De volledige analyse staat in
 [Het toegankelijkheidsregister oogt gezond](/blog/toegankelijkheidsregister-oogt-gezond-brokkelt-af/).
 
 {{< /section-full >}}
 
 {{< section-full title="Bedrijven: je verklaring onder de European Accessibility Act" id="eaa" >}}
 
-Lever je als bedrijf producten of diensten aan consumenten, dan val je sinds 28 juni 2025 onder de
-**European Accessibility Act**. Dat geldt bijvoorbeeld voor webshops, bankieren, reizen boeken,
-ticketing, e-books en telecomdiensten. Ook jij publiceert een toegankelijkheidsverklaring, alleen doe je dat op je eigen
-kanalen en niet in een register. In de praktijk zet je hem bij je algemene voorwaarden of op een
-eigen pagina waar je vanuit je footer naar linkt.
+Lever je producten of diensten aan consumenten, dan val je sinds 28 juni 2025 onder de **European
+Accessibility Act**. Dat geldt bijvoorbeeld voor webshops, bankieren, reizen boeken, ticketing,
+e-books en telecomdiensten. Je publiceert je verklaring op je eigen kanalen, bijvoorbeeld bij je
+algemene voorwaarden. Onze
+[gratis EAA-generator](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/)
+stelt de tekst voor je op, zonder account.
 
-Onze gratis generator stelt die verklaring voor je op:
-[toegankelijkheidsverklaring opstellen voor de EAA](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/).
-Je vult je bedrijf en je dienst in, je nalevingsstatus, welke content nog niet toegankelijk is en
-hoe bezoekers een probleem kunnen melden. Je krijgt de tekst terug en plakt hem op je site. Er is
-geen account voor nodig.
+Drie dingen werken anders dan bij de overheid:
 
-Drie dingen die anders werken dan bij de overheid:
+- **Geen verklaring per kanaal.** Die eis hoort bij het Register en dus bij de overheid.
+- **Onderzoek is niet voorgeschreven.** Verplicht is een toegankelijke website of app. Zonder
+  onderzoek kun je je verklaring alleen niet onderbouwen als je toezichthouder ernaar vraagt, en
+  hetzelfde geldt voor een beroep op onevenredige last.
+- **Micro-ondernemingen zijn vrijgesteld voor diensten.** Minder dan 10 werknemers en onder de
+  2 miljoen euro omzet óf balanstotaal. Lever je producten, dan geldt de vrijstelling niet.
 
-- **Geen verklaring per kanaal.** De eis om elk digitaal kanaal apart te verantwoorden hoort bij
-  het Register en dus bij de overheid.
-- **Onderzoek is niet voorgeschreven.** Wat de EAA verplicht is een toegankelijke website of app.
-  Een onderzoek is de manier om te weten waar je staat, en zonder onderzoek kun je je verklaring
-  niet onderbouwen als je toezichthouder ernaar vraagt.
-- **Er is een uitzondering voor micro-ondernemingen.** Heb je minder dan 10 werknemers en blijf je
-  onder de 2 miljoen euro omzet óf balanstotaal, dan geldt de plicht niet voor diensten. Lever je
-  producten, dan geldt de vrijstelling niet.
-
-Beroep je je op een onevenredige last, dan is dat geen automatische uitzondering. Je legt de
-beoordeling vast, onderbouwt hem, herhaalt hem elke 5 jaar, en je toezichthouder mag hem opvragen.
-
-Welke toezichthouder dat is hangt af van wat je verkoopt. Voor webshops en apps is dat de ACM.
-Alle zes staan uitgelegd op de pagina over
+Welke van de zes toezichthouders bij je hoort hangt af van wat je verkoopt. Voor webshops en apps
+is dat de ACM. Alle zes staan op de pagina over
 [hulp bij Europese toegankelijkheidswetgeving](/hulp-bij-europese-toegankelijkheidswetgeving/).
 
 {{< /section-full >}}
 
-{{< section-full title="Twee gratis generators" id="generators" bg="light" >}}
-
-Voor allebei de routes hebben we een tool die de tekst voor je opstelt. Je vult de gegevens in en
-krijgt de verklaring terug in het formaat dat erbij hoort. Ze zijn gratis en je hoeft er geen
-account voor aan te maken.
-
-- [Toegankelijkheidsverklaring opstellen (BDTO)](/tools/toegankelijkheidsverklaring-wdo/) is
-  bedoeld voor overheids- en semi-overheidsorganisaties en volgt de opbouw van het officiële
-  register: organisatie en kanaal, nalevingsstatus, onderzoeksresultaten, alternatieven en
-  maatregelen, feedback en contact.
-- [Toegankelijkheidsverklaring opstellen (EAA)](/tools/toegankelijkheidsverklaring-generator/) is
-  bedoeld voor bedrijven die onder de European Accessibility Act vallen en vraagt om je dienst, je
-  nalevingsstatus, de content die nog niet toegankelijk is en de feedbackroute.
-
-Een generator vult de tekst in. Het onderzoek waar de tekst naar verwijst, moet je nog steeds
-laten doen.
-
-{{< /section-full >}}
-
-{{< section-full title="Hulp bij de onderbouwing" id="hulp" >}}
+{{< section-full title="Hulp bij de onderbouwing" id="hulp" bg="light" >}}
 
 Proper Access levert het rapport dat onder je verklaring komt te staan. We toetsen handmatig
-volgens WCAG-EM, met schermlezer, alleen toetsenbord, zoom tot 400% en controle op contrast en
-kleurgebruik. Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne
-review; dat noemen we het 6-ogen-principe, en het betekent dat elke bevinding dubbel wordt
-gecontroleerd. We toetsen aan WCAG 2.2 niveau AA, een versie hoger dan de norm vraagt.
+volgens WCAG-EM aan WCAG 2.2 niveau AA, met schermlezer, alleen toetsenbord en zoom tot 400%. Een
+senior auditor voert het onderzoek uit en een tweede auditor reviewt, zodat elke bevinding dubbel
+is gecontroleerd.
 
-Welk type onderzoek bij je kanaal past, staat op de pagina over
-[toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een volledig onderzoek begint bij
-circa € 2.250. Heb je meerdere kanalen die allemaal een eigen verklaring nodig hebben, dan
-bespreken we in welke volgorde je ze aanpakt en wat een deelonderzoek per kanaal kost.
-
-Zijn de bevindingen opgelost, dan legt een [hercontrole](/hercontrole/) vast dat ze weg zijn. Dat
-is de onderbouwing waarmee je van B naar A gaat. Voor losse vragen tijdens het oplossen is er de
-[strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20.
-
-We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk.
+Een volledig onderzoek begint bij circa € 2.250; welk type bij je kanaal past staat op de pagina
+over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Zijn de bevindingen opgelost, dan
+legt een [hercontrole](/hercontrole/) vast dat ze weg zijn, en dat is de onderbouwing waarmee je
+van B naar A gaat. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk.
 
 {{< /section-full >}}
