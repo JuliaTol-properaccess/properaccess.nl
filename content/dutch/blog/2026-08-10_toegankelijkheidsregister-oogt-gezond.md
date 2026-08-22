@@ -39,7 +39,7 @@ Daar bovenop komt een zorg die we niet uit de data kunnen halen, maar wel in ons
 
 ## Hoe het register werkt
 
-Elke overheidswebsite en app die onder het Besluit digitale toegankelijkheid overheid valt, hoort een toegankelijkheidsverklaring te hebben. Die verklaring krijgt een status:
+Elke overheidswebsite en app die onder het Besluit digitale toegankelijkheid overheid valt, hoort een toegankelijkheidsverklaring te hebben. Wil je weten hoe je er zelf een opstelt, dan staan de zes stappen op onze pagina over de [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/). Die verklaring krijgt een status:
 
 - A: de site of app voldoet volledig.
 - B: de site of app voldoet gedeeltelijk.

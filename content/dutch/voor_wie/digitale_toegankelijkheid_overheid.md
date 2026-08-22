@@ -72,6 +72,8 @@ De plicht dekt je hele digitale dienstverlening: je hoofdwebsite, maar ook subsi
 aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van die kanalen
 heeft een eigen toegankelijkheidsverklaring nodig in het
 [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
+Hoe je zo'n verklaring opstelt en wat het Register aan onderbouwing vraagt, staat op onze pagina
+over de [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/).
 
 {{< /section-full >}}
 
