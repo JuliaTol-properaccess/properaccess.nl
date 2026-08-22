@@ -51,7 +51,9 @@ De beste oplossing is voorkomen. Zorg dat je brondocument (Word, InDesign) corre
 - Vermijd **tekstvakken** voor belangrijke content.
 - Controleer bij het exporteren dat de optie voor toegankelijkheidstags is ingeschakeld.
 
-Heb je al een PDF zonder tags? Dan kun je in **Adobe Acrobat Pro** de tagstructuur handmatig toevoegen via het paneel "Accessibility Tags". Dat is arbeidsintensief, maar soms de enige optie.
+Heb je al een PDF zonder tags? Dan kun je in **Adobe Acrobat Pro** de tagstructuur handmatig toevoegen via het paneel "Accessibility Tags". Dat is arbeidsintensief werk, en bij een stapel documenten loopt dat hard op.
+
+Daarom bouwen we [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl). Je uploadt je document en je krijgt hetzelfde bestand terug met een tagstructuur erin, plus de titel en de taal. Aan de pagina's verandert niets: elke pagina gaat van voor en na de reparatie als afbeelding langs elkaar, en verschilt er iets, dan staat in het verslag welke pagina het is. Wat een tool niet kan beoordelen, zoals de leesorde en de alt-teksten, staat er als openstaand punt in. De tool is van ons en nu in besloten test.
 
 Niet-getagde tekst is een van de meest voorkomende problemen in PDF's. Het is visueel onzichtbaar -- je ziet het pas als je het test. Gebruik PAC om het te controleren en zorg dat je brondocumenten goed zijn opgemaakt.
 

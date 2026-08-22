@@ -25,7 +25,7 @@ Je wilt weten of je website voldoet aan de EAA, maar je wilt niet meteen duizend
 
 ## Wat kan een gratis automatische tool wel?
 
-Geautomatiseerde tools zoals WAVE, axe DevTools of de Lighthouse-audit in Chrome vinden een deel van de toegankelijkheidsproblemen. Bijvoorbeeld:
+Geautomatiseerde tools zoals WAVE, axe DevTools, de Lighthouse-audit in Chrome of onze eigen [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) vinden een deel van de toegankelijkheidsproblemen. Bijvoorbeeld:
 
 - Ontbrekende alt-teksten op afbeeldingen
 - Te laag kleurcontrast
@@ -33,7 +33,7 @@ Geautomatiseerde tools zoals WAVE, axe DevTools of de Lighthouse-audit in Chrome
 - Ontbrekende taalattribuut op de HTML-tag
 - Lege knoppen of links
 
-Deze tools zijn gratis, direct beschikbaar en geven je een eerste indruk.
+Deze tools zijn gratis, direct beschikbaar en geven je een eerste indruk. Staan er PDF's op je site, dan tellen die mee voor de EAA. De codelaag daarvan repareer je met [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl), ook van ons, nu in besloten test.
 
 ## Wat kan een gratis automatische tool niet?
 

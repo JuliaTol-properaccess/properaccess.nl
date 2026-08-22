@@ -61,4 +61,10 @@ Met HeadingsMap zie je meteen waar de structuur niet klopt:
 
 - Controleer daarna opnieuw met HeadingsMap of de structuur nu klopt.
 
+## Mag je niets installeren?
+
+Op veel werkplekken kun je geen extensies toevoegen. Dan gebruik je de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), die wij zelf maken. Die zet je aan als bladwijzer in je bladwijzerbalk, en er is ook een extensie voor Chrome en Firefox. Op het tabblad Redactie staat de koppenstructuur van de pagina, met de overgeslagen niveaus erin gemarkeerd, plus de tekst die eruitziet als een kop maar het in de code niet is.
+
+De radar rekent in je eigen browser. Een pagina op een acceptatieomgeving, achter een login of op localhost kun je dus ook nakijken, en dat lukt HeadingsMap niet altijd.
+
 Met deze simpele check zorg je dat jouw website beter toegankelijk wordt voor schermlezers, makkelijker te begrijpen is voor bezoekers en ook nog eens SEO-technisch sterker scoort.

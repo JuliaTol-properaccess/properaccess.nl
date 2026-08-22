@@ -39,6 +39,15 @@ Deze tools scannen je pagina en rapporteren technische fouten:
 - Geeft een score van 0-100
 - Let op: een score van 100 betekent niet dat je website toegankelijk is. Het betekent alleen dat de tool geen fouten heeft gevonden
 
+### WCAG Radar
+- Bookmarklet of browserextensie voor Chrome en Firefox
+- Drie tabbladen: een voor redactie, een voor design en een voor development
+- Rekent in je eigen browser, dus werkt ook achter een login en op localhost
+- De gratis versie doet 28 van de 45 checks
+- [testtoegankelijkheid.nl/wcag-radar](https://testtoegankelijkheid.nl/wcag-radar)
+
+Deze maken we zelf, op basis van wat we in onze audits tegenkomen.
+
 ### Wat vinden deze tools wel?
 - Ontbrekende alt-teksten
 - Te laag contrast
@@ -73,13 +82,13 @@ Zoom in naar 200% en naar 400%.
 - Moet je horizontaal scrollen bij 400%?
 
 ### Koppen-check
-Installeer de HeadingsMap-extensie en bekijk de kopstructuur.
+Installeer de HeadingsMap-extensie of open het tabblad Redactie van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) en bekijk de kopstructuur.
 - Is er één h1 per pagina?
 - Worden er geen niveaus overgeslagen?
 - Beschrijven de koppen de content?
 
 ### Contrastcheck
-Gebruik de WebAIM Contrast Checker voor twijfelgevallen.
+Gebruik de WebAIM Contrast Checker of de kleurenpipet in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) voor twijfelgevallen.
 - Normale tekst: minimaal 4,5:1
 - Grote tekst (18px+ of 14px+ bold): minimaal 3:1
 
@@ -93,6 +102,12 @@ Een professionele auditor:
 - Levert een rapport op waarmee je team direct aan de slag kan
 
 Dit is wat je nodig hebt als je moet aantonen dat je voldoet aan de wet, of als je na eigen verbeteringen wilt weten of je het goed hebt gedaan.
+
+## Vergeet de PDF's niet
+
+Documenten op je site vallen onder dezelfde regels als de pagina's eromheen, en bij een zelftest worden ze bijna altijd overgeslagen. Open een PDF in [PAC](https://pac.pdf-accessibility.org/en/download): zie je daar tekst ontbreken die in het document wel staat, dan zit er geen tagstructuur in.
+
+Zit die er niet, dan repareert [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) de codelaag van het document, met tags, een titel en de taal erin, zonder dat er iets verandert aan hoe het eruitziet. Die tool is van ons en staat nu in besloten test.
 
 ## Onze aanbeveling
 

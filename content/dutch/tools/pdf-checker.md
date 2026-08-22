@@ -1,6 +1,6 @@
 ---
 title: "PDF toegankelijkheidscheck"
-description: "De gratis PDF-check is offline. We bouwen een opvolger die je PDF niet alleen controleert maar ook repareert, zonder dat er iets verandert aan hoe het document eruitziet."
+description: "De gratis PDF-check is offline. De opvolger staat op pdf-toegankelijk.nl en is nu in besloten test: hij repareert de codelaag van je PDF, zonder dat er iets verandert aan hoe het document eruitziet."
 layout: "pdf-tool-aankondiging"
 weight: 10
 binnenkort: true
@@ -9,8 +9,9 @@ doelgroep:
   - "Webdeveloper"
 ---
 
-De gratis check die hier stond is offline. Er komt een opvolger, en die doet meer dan controleren:
-hij repareert je document ook.
+De gratis check die hier stond is offline. De opvolger staat op
+[pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) en doet meer dan controleren: hij repareert je document ook. De tool
+draait nu in besloten test, waarbij de toegang per organisatie loopt.
 
 ## Wat de nieuwe tool doet
 
@@ -26,7 +27,8 @@ hebben gedraaid omdat er een mens naar moet kijken. Dat laatste lijstje hoort er
 niet draait, levert geen schoon document op.
 
 We testen de reparatie op documenten uit onze eigen auditpraktijk, en de komende maanden werken we
-hem verder uit. Zodra we cijfers hebben waar we voor kunnen staan, zetten we ze erbij.
+hem verder uit. Zodra we cijfers hebben waar we voor kunnen staan, zetten we ze erbij. Wil je nu al
+zien hoe hij werkt, kijk dan op [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl).
 
 ## Wat de tool niet doet
 

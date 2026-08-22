@@ -328,6 +328,8 @@ Je kunt een Word-bestand exporteren naar PDF met behoud van de meeste toegankeli
 
 **Belangrijk:** controleer na export altijd de tagboom en de leesvolgorde in de PDF. Bij de automatische conversie kunnen fouten optreden.
 
+Heb je een PDF waar helemaal geen tags in zitten, bijvoorbeeld omdat het bestand uit een ander programma komt? Dan zet [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) die structuur er alsnog in, met de titel en de taal erbij, zonder dat er iets verandert aan de opmaak. Die tool maken we zelf en hij staat nu in besloten test.
+
 {{< /offerte-section >}}
 
 {{< offerte-section title="Toetsenbordtip" bg="light" >}}

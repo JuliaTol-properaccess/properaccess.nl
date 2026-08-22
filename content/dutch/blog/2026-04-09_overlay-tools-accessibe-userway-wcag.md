@@ -173,6 +173,8 @@ Je developer pakt het rapport ter hand. Dingen als toetsenbord-toegankelijkheid,
 
 Na de fixes laat je een hercontrole doen. Zo weet je dat de oplossingen werken én documenteer je dat je voldoet, wat nodig is voor je toegankelijkheidsverklaring. Daarna bouw je in dat nieuwe features standaard worden getest met toetsenbord en screenreader, zodat je niet langzaam weer verslechtert.
 
+Wil je vast zelf kijken hoe je site ervoor staat, gebruik dan de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Die is van ons en verandert niets aan je site: hij markeert wat er mis is op de pagina die je bekijkt, en laat het oplossen aan jou. Dat is het verschil met een overlay, die belooft het voor je op te lossen en dat niet waarmaakt.
+
 Bij Proper Access werken we volgens deze drie stappen bij elke webshop-klant. Je kunt beginnen met een [mini-audit](/webshop-quickscan/) (495 euro exclusief btw) waarin een senior auditor de meest opvallende problemen vindt.
 
 ## Veelgestelde vragen

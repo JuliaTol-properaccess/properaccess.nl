@@ -216,6 +216,8 @@ De werkende route loopt via Word:
 
 Je krijgt dan een pdf met basistagging. Reken erop dat je daarna nog handmatig moet corrigeren, zeker bij tabellen en bij afbeeldingen die tekst bevatten.
 
+Heb je geen Word, of heb je al een stapel pdf's zonder tags liggen? [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) zet de tagstructuur er alsnog in, samen met de titel en de taal, en laat de pagina's zoals ze zijn. Je krijgt er een verslag bij van wat er is opgelost en wat handwerk blijft. De tool is van ons en nu in besloten test.
+
 ## Checklist voor je het document deelt
 
 Loop deze punten langs:

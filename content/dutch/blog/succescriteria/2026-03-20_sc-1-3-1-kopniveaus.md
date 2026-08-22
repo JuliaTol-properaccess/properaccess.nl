@@ -26,4 +26,4 @@ Dat is precies wat een schermlezer voorleest als kopniveaus worden overgeslagen.
 
 Google gebruikt diezelfde koppenstructuur om te begrijpen hoe je content is georganiseerd. Een logische structuur helpt je ranking. Een rommelige structuur doet het tegenovergestelde.
 
-Het goede nieuws: dit is een van de makkelijkste dingen om te controleren. Installeer de HeadingsMap-extensie in je browser, open een pagina en je ziet direct of de structuur klopt.
+Het goede nieuws: dit is een van de makkelijkste dingen om te controleren. Installeer de HeadingsMap-extensie in je browser, open een pagina en je ziet direct of de structuur klopt. Mag je niets installeren, dan doet het tabblad Redactie van onze [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) hetzelfde vanuit je bladwijzerbalk.
