@@ -83,7 +83,7 @@ _WCAG: 2.4.7 Focus zichtbaar_
 
 ### 7. Kleurcontrast voldoet aan minimaal 4.5:1 voor tekst en 3:1 voor UI-elementen
 
-Zet een contrast-check aan op je pagina, bijvoorbeeld met onze gratis WCAG Radar https://www.properaccess.nl/tools/wcag-radar/ en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker, bijna altijd te laag.
+Zet een contrast-check aan op je pagina, bijvoorbeeld met onze gratis WCAG Radar op https://testtoegankelijkheid.nl/wcag-radar en test je hoofdtekst, je knop-tekst, je linkkleur, je placeholder-tekst en je foutmeldingen. Lichtgrijze tekst op witte achtergrond is een klassieker, bijna altijd te laag.
 
 _WCAG: 1.4.3 Contrast (minimum), 1.4.11 Contrast voor niet-tekstuele elementen_
 
@@ -107,7 +107,7 @@ _WCAG: 3.1.1 Taal van de pagina, 3.1.2 Taal van delen_
 
 ### 11. Logische koppenstructuur (h1-h6) zonder gaten
 
-Eén `<h1>` per pagina, dan `<h2>` voor de secties, dan `<h3>` voor sub-secties. Geen `<h1>` gevolgd door `<h4>`, geen `<h2>` gebruikt voor opmaak. Je homepage en productpagina zijn de plekken waar dit het vaakst fout gaat. Test de koppen met onze gratis [WCAG Radar](https://www.properaccess.nl/tools/wcag-radar/).
+Eén `<h1>` per pagina, dan `<h2>` voor de secties, dan `<h3>` voor sub-secties. Geen `<h1>` gevolgd door `<h4>`, geen `<h2>` gebruikt voor opmaak. Je homepage en productpagina zijn de plekken waar dit het vaakst fout gaat. Test de koppen met onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
 
 _WCAG: 1.3.1 Info en relaties, 2.4.6 Koppen en labels_
 

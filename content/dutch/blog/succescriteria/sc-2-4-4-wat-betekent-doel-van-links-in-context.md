@@ -70,7 +70,7 @@ Een alinea verderop of een kop twee blokken hoger telt niet. En zelfs als de con
 
 ## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de vage links zoals "lees meer", links zonder tekst en linkende afbeeldingen zonder naam.
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de vage links zoals "lees meer", links zonder tekst en linkende afbeeldingen zonder naam.
 
 De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
@@ -102,6 +102,6 @@ De belangrijkste punten:
 - Vermijd "lees meer", "klik hier" en kale URL's.
 - Vermeld bestandstype en grootte bij downloads.
 - Bij een linkende afbeelding is de alt-tekst de linktekst.
-- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
+- Controleer je pagina's met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

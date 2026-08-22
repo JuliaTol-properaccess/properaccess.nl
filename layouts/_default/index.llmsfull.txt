@@ -1,31 +1,74 @@
 {{- /* llms-full.txt: uitgebreide content voor AI-systemen
        Volgt llmstxt.org pattern: meer detail dan llms.txt
-       Diensten + Voor wie volledig, blog en academy als index met description */ -}}
+       Diensten + Voor wie volledig, blog en academy als index met description
+
+       Dit template levert beide talen. Alle vaste tekst staat in $t of in een
+       if/else op $nl, zodat de Engelse versie niet half Nederlands is. */ -}}
+{{- $nl := eq site.Language.Lang "nl" -}}
+{{- $toolsite := cond $nl "https://testtoegankelijkheid.nl" "https://wcagtoolkit.com" -}}
+{{- $toolsiteNaam := cond $nl "Testtoegankelijkheid.nl" "WCAG Toolkit" -}}
+{{- $toolsiteAnder := cond $nl "https://wcagtoolkit.com" "https://testtoegankelijkheid.nl" -}}
+{{- $t := dict
+  "phone"     (cond $nl "Telefoon" "Phone")
+  "email"     (cond $nl "E-mail" "Email")
+  "address"   (cond $nl "Adres" "Address")
+  "founder"   (cond $nl "Oprichter" "Founder")
+  "founded"   (cond $nl "Opgericht" "Founded")
+  "foundedOn" (cond $nl "september 2019" "September 2019")
+  "languages" (cond $nl "Talen" "Languages")
+  "langList"  (cond $nl "Nederlands, Engels, Zweeds" "Dutch, English, Swedish")
+  "seniorAud" (cond $nl "senior auditor" "senior auditor")
+  "about"     (cond $nl "Over Proper Access" "About Proper Access")
+  "services"  (cond $nl "Diensten" "Services")
+  "sectors"   (cond $nl "Sectoren / Voor wie" "Sectors we work in")
+  "academy"   (cond $nl "Academy: uitleg WCAG en BDTO" "Academy: WCAG and the law explained")
+  "blog"      (cond $nl "Blog: recente artikelen" "Blog: recent articles")
+  "contact"   (cond $nl "Contact" "Contact")
+  "ownTools"  (cond $nl "Onze eigen tools" "Our own tools")
+  "freeTools" (cond $nl "Gratis tools" "Free tools")
+  "terms"     (cond $nl "Veelgebruikte termen" "Terms you will see")
+  "type"      (cond $nl "Type" "Type")
+  "updated"   (cond $nl "bijgewerkt" "updated")
+-}}
 # {{ site.Title }}
 
-> {{ site.Params.metadata.description }}
+> {{ if $nl }}{{ site.Params.metadata.description }}{{ else }}Independent WCAG audit firm for websites and mobile apps. For government, business and the cultural sector: audits and guidance towards the EAA and the Web Accessibility Directive.{{ end }}
 
 URL: {{ site.BaseURL }}
-Telefoon: 085 5055 890 (+31 85 5055 890)
-E-mail: info@properaccess.nl
-Adres: Keizersgracht 520 H, 1017 EK Amsterdam
-Oprichter: Julia Tol (senior auditor)
-Opgericht: september 2019
-Talen: Nederlands, Engels, Zweeds
+{{ $t.phone }}: 085 5055 890 (+31 85 5055 890)
+{{ $t.email }}: info@properaccess.nl
+{{ $t.address }}: Keizersgracht 520 H, 1017 EK Amsterdam, {{ cond $nl "Nederland" "the Netherlands" }}
+{{ $t.founder }}: Julia Tol ({{ $t.seniorAud }})
+{{ $t.founded }}: {{ $t.foundedOn }}
+{{ $t.languages }}: {{ $t.langList }}
 
-## Over Proper Access
+## {{ $t.about }}
 
+{{ if $nl -}}
 Onafhankelijk auditbureau voor digitale toegankelijkheid. Sinds 2019 hebben we 950+ audits uitgevoerd: 236 opdrachten bij 63 klanten. Daar zitten Rijksmuseum, Provincies Noord- en Zuid-Holland, NRC, Museumvereniging, Plus en Jumbo bij. 40% van onze klanten komt terug. Peildatum van die cijfers: 7 augustus 2026.
 
 Wat ons onderscheidt:
+- **We leren je hoe je zelf moet testen**: een rapport zegt wat er nu mis is, wij zorgen dat je het de volgende keer zelf ziet
 - **Rapport per element**, niet per WCAG-succescriterium zoals de rest van de markt
 - **Visuele voorbeelden** en taal afgestemd op de lezer
-- **User stories per bevinding** vanuit de bezoeker met een beperking
 - **Onafhankelijk**: we bouwen en beheren geen websites, dus we keuren nooit ons eigen werk
 - **Direct contact met senior auditor**: voor klanten met een rapport van ons; daarvoor is een relatiebeheerder het aanspreekpunt
 - **Eigen research**: wekelijks studeren, browser- en hulpsoftwaregedrag testen
+- **Eigen tools, volledig EU**: gebouwd op basis van onze auditervaring, gemaakt en gehost in Europa
+{{- else -}}
+Independent audit firm for digital accessibility. Since 2019 we have carried out more than 950 audits: 236 assignments for 63 clients, among them the Rijksmuseum, the provinces of North and South Holland, NRC, the Dutch Museum Association, Plus and Jumbo. 40% of our clients come back for a second assignment. Those figures are current as of 7 August 2026.
 
-## Diensten
+What sets us apart:
+- **We teach you how to test it yourself**: a report tells you what is wrong today, we make sure you spot it yourself next time
+- **A report organised per element**, not per WCAG success criterion the way the rest of the market does it
+- **Visual examples** and language pitched at whoever has to act on the finding
+- **Independent**: we do not build or maintain websites, so we never audit our own work
+- **Direct contact with a senior auditor**: for clients who have had a report from us; before that a relationship manager is your point of contact
+- **Our own research**: we study weekly and test how browsers and assistive software actually behave
+- **Our own tools, entirely EU**: built on what we found in our audits, made and hosted in Europe
+{{- end }}
+
+## {{ $t.services }}
 
 {{ range where (where site.RegularPages "Section" "diensten") "Lang" site.Language.Lang }}
 {{- if not (in (slice "offerte-wcag-onderzoek") .File.ContentBaseName) -}}
@@ -36,7 +79,7 @@ URL: {{ .Permalink }}
 {{ with .Params.description }}
 {{ . }}
 {{ end }}
-{{ with .Params.service.serviceType }}Type: {{ . }}{{ end }}
+{{ with .Params.service.serviceType }}{{ $t.type }}: {{ . }}{{ end }}
 
 {{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
 
@@ -44,7 +87,7 @@ URL: {{ .Permalink }}
 {{ end -}}
 {{ end }}
 
-## Sectoren / Voor wie
+## {{ $t.sectors }}
 
 {{ range where (where site.RegularPages "Section" "voor_wie") "Lang" site.Language.Lang }}
 
@@ -60,17 +103,17 @@ URL: {{ .Permalink }}
 ---
 {{ end }}
 
-## Academy: uitleg WCAG en BDTO
+## {{ $t.academy }}
 
 {{ range where (where site.RegularPages "Section" "academy") "Lang" site.Language.Lang }}
 - [{{ .Title }}]({{ .Permalink }}){{ with .Params.description }}: {{ . }}{{ end }}
 {{- end }}
 
-## Blog: recente artikelen
+## {{ $t.blog }}
 
 {{ range first 30 (where (where site.RegularPages "Section" "blog") "Lang" site.Language.Lang).ByLastmod.Reverse }}
 
-### {{ .Title }} ({{ .PublishDate.Format "2006-01-02" }}{{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}, bijgewerkt {{ .Lastmod.Format "2006-01-02" }}{{ end }})
+### {{ .Title }} ({{ .PublishDate.Format "2006-01-02" }}{{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}, {{ $t.updated }} {{ .Lastmod.Format "2006-01-02" }}{{ end }})
 
 URL: {{ .Permalink }}
 {{ with .Params.description }}
@@ -80,8 +123,9 @@ URL: {{ .Permalink }}
 ---
 {{ end }}
 
-## Contact
+## {{ $t.contact }}
 
+{{ if $nl -}}
 - Bel: [085 5055 890](tel:+31855055890)
 - Mail: [info@properaccess.nl](mailto:info@properaccess.nl)
 - Plan een videocall: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
@@ -89,24 +133,42 @@ URL: {{ .Permalink }}
 - LinkedIn bedrijf: https://www.linkedin.com/company/proper-access-nl
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag
+{{- else -}}
+- Call: [+31 85 5055 890](tel:+31855055890)
+- Email: [info@properaccess.nl](mailto:info@properaccess.nl)
+- Book a video call: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
+- Request a quote: {{ site.BaseURL }}en/quote/
+- LinkedIn company: https://www.linkedin.com/company/proper-access-nl
+- LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
+- CodePen: https://codepen.io/Julia-Tol-wcag
+{{- end }}
 
-{{/* De toolsite heeft twee taalversies; verwijs naar de versie die bij deze taal hoort. */}}
-{{- $toolsite := cond (eq site.Language.Lang "nl") "https://testtoegankelijkheid.nl" "https://wcagtoolkit.com" -}}
-{{- $toolsiteNaam := cond (eq site.Language.Lang "nl") "Testtoegankelijkheid.nl" "WCAG Toolkit" -}}
+## {{ $t.ownTools }}
 
-## Onze eigen tools
-
+{{ if $nl -}}
 Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengekomen.
 
-- {{ $toolsiteNaam }}: {{ $toolsite }}. Onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser. De andere taalversie staat op {{ cond (eq site.Language.Lang "nl") "https://wcagtoolkit.com" "https://testtoegankelijkheid.nl" }}.
+- {{ $toolsiteNaam }}: {{ $toolsite }}. Onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser. De andere taalversie staat op {{ $toolsiteAnder }}.
+- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet en browserextensie met drie tabbladen voor redactie, design en development. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor.
+{{- else -}}
+Made and hosted in the EU, built on what we ran into across more than 950 audits.
 
-## Tools (gratis)
+- {{ $toolsiteNaam }}: {{ $toolsite }}. Our tool site, with the WCAG Radar and a scan that walks up to ten pages of a public address using axe-core in a real browser. The other language version is at {{ $toolsiteAnder }}.
+- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet and browser extension with three tabs, one each for editors, designers and developers. Everything runs locally in your browser, including behind a login and on localhost. The free version covers 28 of the 45 checks. Under every check is a link that puts the finding to an auditor.
+{{- end }}
 
-- WCAG Radar (Redactie, Designer, Developer): {{ $toolsite }}/wcag-radar. Bookmarklet en browserextensie, rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks.
-- Foutmeldingen naslagwerk: {{ site.BaseURL }}tools/foutmeldingen/
-- ARIA referentie: {{ site.BaseURL }}tools/aria-referentie/
-- BDTO-verklaring generator: {{ site.BaseURL }}tools/verklaring-generator/
+## {{ $t.freeTools }}
 
-## Veelgebruikte termen
+{{ range where (where site.RegularPages "Section" "tools") "Lang" site.Language.Lang }}
+{{- if ne .File.ContentBaseName "wcag-radar" }}
+- {{ .Title }}: {{ .Permalink }}{{ with .Params.description }}. {{ . | plainify | truncate 220 }}{{ end }}
+{{- end }}
+{{- end }}
 
-WCAG 2.2, EAA (European Accessibility Act), BDTO (Besluit digitale toegankelijkheid overheid), WCAG-EM methodologie, screenreader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantische HTML, toetsenbordnavigatie, kleurcontrast, alt-tekst, EN 301 549, toegankelijkheidsverklaring.
+## {{ $t.terms }}
+
+{{ if $nl -}}
+WCAG 2.2, EAA (European Accessibility Act), BDTO (Besluit digitale toegankelijkheid overheid), WCAG-EM methodologie, screenreader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantische HTML, toetsenbordnavigatie, kleurcontrast, alt-tekst, EN 301 549, toegankelijkheidsverklaring, hercontrole, strippenkaart.
+{{- else -}}
+WCAG 2.2, EAA (European Accessibility Act), Web Accessibility Directive, EN 301 549, WCAG-EM evaluation methodology, screen reader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantic HTML, keyboard navigation, colour contrast, alt text, accessibility statement, retest, accessibility credits.
+{{- end }}

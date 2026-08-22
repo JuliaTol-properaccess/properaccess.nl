@@ -40,7 +40,7 @@ Meet het. Twee kleurcodes invoeren in een contrastchecker kost 5 seconden. Het r
 Tools:
 - WebAIM Contrast Checker (webaim.org)
 - Chrome DevTools (inspecteer element > klik op kleur)
-- De WCAG Radar op properaccess.nl/tools/wcag-radar/
+- De WCAG Radar op testtoegankelijkheid.nl/wcag-radar
 
 Het gaat niet om mooi of lelijk. Het gaat niet om jouw ogen. Het gaat om leesbaarheid voor iedereen, onder alle omstandigheden.
 

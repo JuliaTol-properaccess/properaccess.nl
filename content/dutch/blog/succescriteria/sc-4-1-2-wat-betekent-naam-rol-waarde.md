@@ -225,7 +225,7 @@ Test daarna met je toetsenbord: kun je elk interactief onderdeel bereiken met Ta
 
 ### Onze gratis WCAG Radar
 
-Wil je dit snel op je eigen pagina bekijken zonder DevTools open te klikken, gebruik dan onze gratis [WCAG Radar](/tools/wcag-radar/). Het is een bookmarklet die je op elke pagina draait, ook op localhost. De radar toont live de ARIA-rollen en -attributen, markeert gebroken referenties naar id's die niet bestaan, vindt dubbele id's, laat de tabvolgorde zien en forceert een zichtbare focus. Zo zie je in één oogopslag waar naam, rol of waarde niet kloppen. De code draait volledig in je eigen browser en er wordt niets verstuurd.
+Wil je dit snel op je eigen pagina bekijken zonder DevTools open te klikken, gebruik dan onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Het is een bookmarklet die je op elke pagina draait, ook op localhost. De radar toont live de ARIA-rollen en -attributen, markeert gebroken referenties naar id's die niet bestaan, vindt dubbele id's, laat de tabvolgorde zien en forceert een zichtbare focus. Zo zie je in één oogopslag waar naam, rol of waarde niet kloppen. De code draait volledig in je eigen browser en er wordt niets verstuurd.
 
 Wil je opzoeken welke rol welke states en properties verwacht, dan helpt onze [ARIA-rollen en -attributen referentie](/tools/aria-referentie/) je verder.
 
