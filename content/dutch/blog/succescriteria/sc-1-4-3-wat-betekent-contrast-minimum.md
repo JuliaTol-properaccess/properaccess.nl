@@ -60,7 +60,7 @@ Wit op oranje #FFA500: **1,97:1**. Ver onvoldoende, hoe groot je de tekst ook ma
 Donkerblauw #1F2937 op wit: **14,68:1**. Ruim voldoende.
 {{< /contrast-voorbeeld >}}
 
-Je hoeft dit niet zelf uit te rekenen. Zet onze gratis [WCAG Radar](/tools/wcag-radar/) aan op je pagina en je ziet per tekst direct de contrastverhouding, en of die voldoet aan de eis.
+Je hoeft dit niet zelf uit te rekenen. Zet onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) aan op je pagina en je ziet per tekst direct de contrastverhouding, en of die voldoet aan de eis.
 
 ## Wat is niet verplicht?
 
@@ -86,7 +86,7 @@ Bij onze audits gaat het bij dit succescriterium meestal mis op een van deze pun
 
 ### De hele pagina in één keer: WCAG Radar
 
-Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar meet het contrast van alle tekst tegen de achtergrond, markeert wat onvoldoende is en toont de gemeten verhouding naast de eis die geldt.
+Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar meet het contrast van alle tekst tegen de achtergrond, markeert wat onvoldoende is en toont de gemeten verhouding naast de eis die geldt.
 
 Wil je liever één losse kleurencombinatie testen? In ons instructieartikel [hoe test ik kleurcontrast](/blog/hoe-test-ik-kleurcontrast/) laten we stap voor stap zien hoe je kleuren van je scherm opzoekt en test.
 
@@ -141,6 +141,6 @@ De belangrijkste punten:
 - Normale tekst: minimaal 4,5:1. Grote tekst: minimaal 3:1.
 - De eis geldt voor alle informatieve tekst, ook op knoppen, in invoervelden en in afbeeldingen, en in elke stand.
 - Logo's, decoratieve tekst en uitgeschakelde knoppen zijn uitgezonderd.
-- Test een complete pagina met de [WCAG Radar](/tools/wcag-radar/), ook op localhost.
+- Test een complete pagina met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), ook op localhost.
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien welke kleuren je moet aanpassen en waarom.

@@ -173,7 +173,7 @@ En voor kleuren: test altijd groen, oranje en lichtblauw op wit. Die drie vallen
 | <span style="display:inline-block;width:0.9em;height:0.9em;background:#999999;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #999999 (grijs)  | 2,8:1 | Nee                      |
 | <span style="display:inline-block;width:0.9em;height:0.9em;background:#767676;border:1px solid #ccc;border-radius:2px;vertical-align:middle"></span> #767676 (grijs)  | 4,5:1 | Ja (precies op de grens) |
 
-Wil je zelf checken of je kleuren voldoen? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/): die meet het contrast van alle tekst op je pagina in één keer.
+Wil je zelf checken of je kleuren voldoen? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar): die meet het contrast van alle tekst op je pagina in één keer.
 
 Werkt je organisatie veel met PDF's? We bouwen een tool die een PDF controleert en de codelaag ook repareert. Kleurcontrast in PDF's laten we daar bewust buiten, omdat dat technisch nog niet betrouwbaar kan. We geven liever geen resultaat dan een vals positief. [Meld je aan voor bericht bij de lancering](/tools/pdf-checker/).
 

@@ -61,7 +61,7 @@ Dit criterium wordt vrijwel altijd in de ontwerpfase gewonnen of verloren. Zo ho
 - Leg in je design system vast dat links in lopende tekst onderstreept zijn. Dat voorkomt discussie per pagina.
 - Geef grafiekstijlen naast kleur ook patronen, vormen of directe labels bij de data. Een label bij de lijn zelf werkt beter dan een legenda ernaast.
 - Ontwerp de actieve stand van menu's, tabs en stappen met een vormverschil: een streep eronder, een vette letter, een ingekleurde marker.
-- Controleer je ontwerp met de grijswaarden-check van onze gratis [WCAG Radar](/tools/wcag-radar/). Eén klik en de hele pagina wordt grijs. Alles wat dan onduidelijk wordt, leunt te veel op kleur.
+- Controleer je ontwerp met de grijswaarden-check van onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Eén klik en de hele pagina wordt grijs. Alles wat dan onduidelijk wordt, leunt te veel op kleur.
 
 ## Wat kun je doen als webredacteur?
 
@@ -70,7 +70,7 @@ Ook in de content zelf sluipt dit probleem er makkelijk in:
 - Verwijs in instructies nooit naar kleur. Niet "klik op de groene knop", maar "klik op de knop Verstuur".
 - Geef betekenis niet via tekstkleur in je editor. Een rood woord om iets belangrijks te markeren zegt een deel van je bezoekers niets. Gebruik woorden: "let op:".
 - Plaats je een grafiek of kaart als afbeelding, controleer dan of de series ook zonder kleur uit elkaar te houden zijn. Vraag anders om een versie met labels of patronen.
-- Bekijk je pagina in grijstinten met de [WCAG Radar](/tools/wcag-radar/). Begrijp je nog alles? Zie je welke tekst een link is?
+- Bekijk je pagina in grijstinten met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Begrijp je nog alles? Zie je welke tekst een link is?
 
 ## Wat kun je doen als developer?
 
@@ -99,11 +99,11 @@ main li a {
 - Markeer verplichte velden met het woord "verplicht" in het label of met `required` plus een zichtbaar teken, niet alleen met een kleur.
 - Geef de actieve pagina in navigatie `aria-current="page"` en style die stand met meer dan kleur, bijvoorbeeld een onderstreping.
 - Gebruik in grafiekbibliotheken de opties voor patronen, markervormen en directe labels. De meeste bibliotheken, zoals Chart.js en Highcharts, ondersteunen dit.
-- Draai de grijswaarden-check van de [WCAG Radar](/tools/wcag-radar/) op localhost voordat je oplevert. De radar werkt op elke pagina, ook achter een login.
+- Draai de grijswaarden-check van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op localhost voordat je oplevert. De radar werkt op elke pagina, ook achter een login.
 
 ## Zo test je het
 
-De snelste test is de grijswaarden-check in onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Met één klik wordt de hele pagina grijs. Stel jezelf dan deze vragen:
+De snelste test is de grijswaarden-check in onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Met één klik wordt de hele pagina grijs. Stel jezelf dan deze vragen:
 
 - Zie ik welke tekst een link is?
 - Zie ik welk veld fout is ingevuld en waarom?
@@ -145,6 +145,6 @@ De belangrijkste punten:
 - Designer: ontwerp elke status met een dubbele drager en leg onderstreepte links vast in je design system.
 - Webredacteur: verwijs niet naar kleur in instructies en markeer niets met alleen een tekstkleur.
 - Developer: onderstreep links in lopende tekst, bouw foutmeldingen met tekst en icoon, en style actieve standen met meer dan kleur.
-- Test met de grijswaarden-check van de [WCAG Radar](/tools/wcag-radar/): één klik en je ziet wat er zonder kleur overblijft.
+- Test met de grijswaarden-check van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar): één klik en je ziet wat er zonder kleur overblijft.
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien waar kleur nu de enige drager is en welke oplossing daar past.

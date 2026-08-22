@@ -61,7 +61,7 @@ Je hoeft geen code te kunnen schrijven om dit te checken:
 
 ## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Je ziet direct of de paginataal is ingesteld en welke onderdelen een andere taal hebben.
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Je ziet direct of de paginataal is ingesteld en welke onderdelen een andere taal hebben.
 
 De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
@@ -92,7 +92,7 @@ De belangrijkste punten:
 - Elke pagina heeft een hoofdtaal in de code nodig, bijvoorbeeld `<html lang="nl">`.
 - Controleer bij meertalige websites elke taalversie apart.
 - De oplossing zit in het sjabloon: één melding aan je webbouwer lost het voor de hele website op.
-- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
+- Controleer je pagina's met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
 - Anderstalige stukken tekst binnen een pagina vallen onder [3.1.2 Taal van onderdelen](/blog/sc-3-1-2-wat-betekent-taal-van-onderdelen/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

@@ -62,7 +62,7 @@ Het verschil tussen die laatste twee is waar de meeste bugs zitten. Een property
 
 ## De 4 fouten die wij het vaakst vinden
 
-Dit zijn precies de 4 dingen die de check **ARIA-rollen en -attributen** in de [WCAG Radar](/tools/wcag-radar/) markeert, want die is erop gebouwd.
+Dit zijn precies de 4 dingen die de check **ARIA-rollen en -attributen** in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) markeert, want die is erop gebouwd.
 
 ### 1. Gebroken verwijzingen naar id's die niet bestaan
 
@@ -136,7 +136,7 @@ Zet `aria-hidden` verder nooit op een element dat focus kan krijgen, en ook niet
 
 ## Zo test je het
 
-Zet op het tabblad **Developer** van de gratis [WCAG Radar](/tools/wcag-radar/) de check **ARIA-rollen en -attributen** aan. Je ziet per element alle rollen en aria-attributen, en de 4 fouten hierboven worden als fout gemarkeerd. Alles draait in je eigen browser, ook op localhost en achter een login.
+Zet op het tabblad **Developer** van de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) de check **ARIA-rollen en -attributen** aan. Je ziet per element alle rollen en aria-attributen, en de 4 fouten hierboven worden als fout gemarkeerd. Alles draait in je eigen browser, ook op localhost en achter een login.
 
 Loop daarna deze 3 dingen na die de radar niet voor je kan beoordelen:
 
@@ -176,6 +176,6 @@ Eén. Je mag er meerdere opschrijven, gescheiden door spaties, maar de browser g
 - Bestaat er een HTML-element dat het al kan, gebruik dat dan.
 - De 4 fouten die wij het vaakst vinden: gebroken id-verwijzingen, onbekende rollen, een rol zonder verplicht attribuut, en `aria-hidden` op focusbare inhoud.
 - Een state die niet meebeweegt is erger dan geen state, want hulpsoftware meldt dan iets dat niet klopt.
-- Controleer met **ARIA-rollen en -attributen** in de [WCAG Radar](/tools/wcag-radar/), zoek rollen op in de [ARIA-referentie](/tools/aria-referentie/) en test je kennis met de [quiz voor developers](/tools/quiz-developers/).
+- Controleer met **ARIA-rollen en -attributen** in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), zoek rollen op in de [ARIA-referentie](/tools/aria-referentie/) en test je kennis met de [quiz voor developers](/tools/quiz-developers/).
 
 Of een rol klopt met wat het onderdeel doet, kan geen enkele scan bepalen. Dat is de reden dat wij elk zelfgemaakt component met de hand nalopen. Wil je weten hoe jouw componenten ervoor staan? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan.
