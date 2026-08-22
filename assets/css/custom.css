@@ -17734,3 +17734,44 @@ html.dark .pdfann-form__veld label {
 html.dark .pdfann-svg {
   opacity: 0.92;
 }
+
+
+/* ==========================================================================
+   Toetsaanduidingen in artikelen: <kbd> als toetsenbordknop
+   ========================================================================== */
+
+.case__body kbd,
+.blog-wcag__text kbd,
+.article-tldr__body kbd,
+.content kbd {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.82em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #ffffff;
+  border: 1px solid #1f2937;
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  padding: 0.05em 0.45em;
+  margin: 0 0.05em;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.case__body table kbd,
+.blog-wcag__text table kbd,
+.content table kbd {
+  margin-bottom: 0.15em;
+}
+
+html.dark .case__body kbd,
+html.dark .blog-wcag__text kbd,
+html.dark .article-tldr__body kbd,
+html.dark .content kbd {
+  color: #e5e7eb;
+  background: var(--color-darkmode-body);
+  border-color: #9ca3af;
+}
+
