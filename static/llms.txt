@@ -24,6 +24,7 @@
 - [Toegankelijkheidsabonnement](https://www.properaccess.nl/toegankelijkheids-abonnement/): meerjarig partnerschap met onderzoek, trainingen en tooling
 - [Training voor devteams](https://www.properaccess.nl/training-devteams/): praktische WCAG-training voor developers
 - [Training webredactie](https://www.properaccess.nl/trainen-van-webredactie/): training toegankelijke webcontent en PDF's
+- [Toegankelijkheidsverklaring opstellen](https://www.properaccess.nl/toegankelijkheidsverklaring/): wie er een nodig heeft, de zes stappen voor een overheidswebsite, de vijf statussen in het Register van Toegankelijkheidsverklaringen, wat het Register aan onderbouwing vraagt (onderzoek volgens WCAG-EM, per digitaal kanaal, 36 maanden geldig) en hoe dat verschilt van de EAA
 - [Zo werken wij](https://www.properaccess.nl/zo-werken-wij/): onze werkwijze per stap, van intake tot heronderzoek
 
 ## Sectoren
