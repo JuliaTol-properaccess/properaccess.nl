@@ -825,6 +825,7 @@ dl.dash-research-list dd {
 
 /* div.issue with accordion inside: remove redundant styling */
 div.issue:has(.finding-accordion) {
+  position: relative;
   padding: 0;
   border: none;
   border-radius: 0;
@@ -894,6 +895,19 @@ div.issue:has(.finding-accordion) {
 .permalink-btn:hover,
 .permalink-btn:focus-visible {
   color: #a30d4b;
+}
+
+/* In a finding, the permalink button is a sibling of <details> instead of a
+   child of <summary>: a button nested in a summary is not reliably exposed by
+   screen readers. These rules put it back on the summary row. */
+div.issue:has(.finding-accordion) > .permalink-btn {
+  position: absolute;
+  /* right edge of the title column: 80 + 80 + 100px meta columns,
+     3 × 0.5rem grid gap and 0.75rem summary padding */
+  right: calc(260px + 2.25rem);
+  top: 0.6rem;
+  z-index: 1;
+  margin-left: 0;
 }
 
 .copy-tooltip {
@@ -1251,6 +1265,8 @@ figure.chart figcaption {
   align-items: center;
   gap: 0;
   min-width: 0;
+  /* room for the permalink button that lies over this cell */
+  padding-right: 2.25rem;
 }
 
 .finding-title {
@@ -1328,6 +1344,10 @@ figure.chart figcaption {
 
   .finding-title-cell {
     flex: 1 1 100%;
+  }
+
+  div.issue:has(.finding-accordion) > .permalink-btn {
+    right: 0.75rem;
   }
 
   .finding-meta-impact,

@@ -752,13 +752,22 @@ document.addEventListener("DOMContentLoaded", () => {
         '<span class="finding-title-cell">' +
           '<span class="finding-chevron" aria-hidden="true">\u25B8</span>' +
           '<span class="finding-title">' + titleText + (newLabel ? '<span class="new-label">Nieuw</span>' : '') + '</span>' +
-          '<button class="permalink-btn" data-anchor="issue-' + issueNr + '" title="' + PA_T.copyLink + '" aria-label="' + PA_T.copyLinkAria + ' ' + issueNr + '">' +
-            '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7.8 11.1l-1.9 1.9a2 2 0 0 1-2.8-2.8l2.8-2.8a2 2 0 0 1 2.8 0 .7.7 0 0 0 1-1 3.4 3.4 0 0 0-4.8 0L2.1 9.2a3.4 3.4 0 0 0 4.8 4.8l1.9-1.9a.7.7 0 0 0-1-1zm6.1-8.2a3.4 3.4 0 0 0-4.8 0L7.2 4.8a.7.7 0 0 0 1 1l1.9-1.9a2 2 0 0 1 2.8 2.8l-2.8 2.8a2 2 0 0 1-2.8 0 .7.7 0 0 0-1 1 3.4 3.4 0 0 0 4.8 0l2.8-2.8a3.4 3.4 0 0 0 0-4.8z"/></svg>' +
-          '</button>' +
         '</span>' +
         '<span class="finding-meta-impact" data-impact="' + impactLower + '"><span class="sr-only">Impact: </span>' + impact + "</span>" +
         '<span class="finding-meta-type"><span class="sr-only">Type: </span>' + type + "</span>" +
         '<span class="finding-meta-beperking"><span class="sr-only">Beperking: </span>' + beperking + "</span>";
+
+      // Permalink button sits next to the details, not inside the summary:
+      // screen readers do not reliably expose a button nested in a summary.
+      // CSS puts it back on the summary row.
+      const permalink = document.createElement("button");
+      permalink.type = "button";
+      permalink.className = "permalink-btn";
+      permalink.dataset.anchor = "issue-" + issueNr;
+      permalink.title = PA_T.copyLink;
+      permalink.setAttribute("aria-label", PA_T.copyLinkAria + " " + issueNr);
+      permalink.innerHTML =
+        '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7.8 11.1l-1.9 1.9a2 2 0 0 1-2.8-2.8l2.8-2.8a2 2 0 0 1 2.8 0 .7.7 0 0 0 1-1 3.4 3.4 0 0 0-4.8 0L2.1 9.2a3.4 3.4 0 0 0 4.8 4.8l1.9-1.9a.7.7 0 0 0-1-1zm6.1-8.2a3.4 3.4 0 0 0-4.8 0L7.2 4.8a.7.7 0 0 0 1 1l1.9-1.9a2 2 0 0 1 2.8 2.8l-2.8 2.8a2 2 0 0 1-2.8 0 .7.7 0 0 0-1 1 3.4 3.4 0 0 0 4.8 0l2.8-2.8a3.4 3.4 0 0 0 0-4.8z"/></svg>';
 
       const body = document.createElement("div");
       body.className = "finding-body";
@@ -770,6 +779,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       details.appendChild(summary);
       details.appendChild(body);
+      divIssue.appendChild(permalink);
       divIssue.appendChild(details);
     });
   });
@@ -778,7 +788,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".permalink-btn").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      e.stopPropagation(); // Don't toggle accordion
       const anchor = btn.dataset.anchor;
       const url = location.origin + location.pathname + "#" + anchor;
       navigator.clipboard.writeText(url).then(() => {
@@ -786,7 +795,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const tip = document.createElement("span");
         tip.className = "copy-tooltip";
         tip.textContent = PA_T.linkCopied;
-        btn.style.position = "relative";
         btn.appendChild(tip);
         setTimeout(() => tip.remove(), 2000);
       });
