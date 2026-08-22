@@ -183,9 +183,11 @@ met honderd pagina's en een configurator. Alle bedragen zijn exclusief 21% btw.
 De meeste websites vallen in de categorie gemiddeld. Een onderzoek duurt 3 tot 5 weken en na een
 kennismaking krijg je een vaste prijs, geen nacalculatie.
 
-Twee dingen bieden we er altijd bij aan, allebei optioneel. Een [hercontrole](/hercontrole/) van
-€ 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig
-hebt voor je toegankelijkheidsverklaring en bij handhaving. Een nabespreking van € 250 per uur
+Twee dingen bieden we er altijd bij aan, allebei optioneel. Een [hercontrole](/hercontrole/) legt
+vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt voor je
+[toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) en bij handhaving. Wat die kost hangt
+af van het aantal bevindingen, meestal € 300 tot € 1.100, en je krijgt die prijs in een aparte
+offerte nadat het rapport er ligt. Een nabespreking van € 250 per uur
 betekent dat we het rapport samen doorlopen en helpen prioriteren. Wil je tijdens het oplossen
 kunnen overleggen, dan kan dat met een [strippenkaart](/strippenkaart/).
 

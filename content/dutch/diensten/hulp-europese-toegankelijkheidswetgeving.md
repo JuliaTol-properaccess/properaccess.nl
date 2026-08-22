@@ -102,7 +102,7 @@ Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 <div class="card">
   <i class="card__icon" aria-hidden="true">4</i>
   <h3 class="card__title">Verantwoording</h3>
-  <p>Een toegankelijkheidsverklaring in het Register bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op je site zelf moet publiceren.</p>
+  <p>Een <a href="/toegankelijkheidsverklaring/">toegankelijkheidsverklaring</a> in het Register bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op je site zelf moet publiceren.</p>
 </div>
 {{< /section-steps >}}
 
@@ -123,13 +123,13 @@ code of testen we tussentijds, zonder dat er een traject omheen hoeft. Wil je je
 [training voor je webredactie](/trainen-van-webredactie/).
 
 Voor de **hercontrole** toetsen we de opgeloste problemen opnieuw en leggen we vast dat ze weg
-zijn. Dat is een vast bedrag van € 450 tot € 1.000, afhankelijk van de omvang van het
-oorspronkelijke onderzoek. Meer daarover staat op de pagina over de
-[hercontrole](/hercontrole/).
+zijn. Wat dat kost hangt af van het aantal bevindingen in je rapport, meestal € 300 tot € 1.100.
+Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja
+tegen zegt. Meer daarover staat op de pagina over de [hercontrole](/hercontrole/).
 
-Voor de **verantwoording** leveren we het rapport in de vorm die het Register van
-Toegankelijkheidsverklaringen vraagt en helpen we bij het invullen in de Mijn-omgeving van
-DigiToegankelijk. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en
+Voor de **verantwoording** leveren we het rapport in de vorm die het
+[Register van Toegankelijkheidsverklaringen](/toegankelijkheidsverklaring/) vraagt en helpen we
+bij het invullen in de Mijn-omgeving van DigiToegankelijk. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en
 dat is de methode die we hanteren.
 
 Hoe andere organisaties deze route lopen en waar zij tegenaan lopen, kun je meelezen in de

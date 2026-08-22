@@ -32,7 +32,7 @@ faqs:
 
 TalkBack zit al op je Android-toestel. Je hoeft niets te downloaden en niets te betalen, en met twee volumeknoppen staat hij aan. De schrik komt daarna: je tikt op een app en er gebeurt niets, je veegt om te scrollen en het scherm blijft staan.
 
-Dat komt doordat TalkBack de bediening overneemt. Op een computer is een schermlezer iets dat je erbij gebruikt; op een telefoon verandert elk gebaar van betekenis. Zodra je die nieuwe betekenis kent, is het toestel weer van jou.
+Dat komt doordat TalkBack de bediening overneemt. Op een computer is een schermlezer iets dat je erbij gebruikt; op een telefoon verandert elk gebaar van betekenis. Zodra je die nieuwe betekenis kent, kun je het toestel weer bedienen.
 
 ## Wat er verandert zodra TalkBack aan staat
 
@@ -48,7 +48,7 @@ Drie dingen, en ze verklaren bijna alle verwarring van de eerste tien minuten:
 
 Ga naar Instellingen, Toegankelijkheid, TalkBack en zet hem aan. Zet in datzelfde scherm de snelkoppeling aan. Daarna kun je TalkBack starten en stoppen door de twee volumeknoppen samen 3 seconden ingedrukt te houden, en dat is de weg die je vaak nodig hebt.
 
-Bedenk vooraf hoe je hem weer uitzet. Staat TalkBack aan, dan werkt het instellingenscherm ook met gebaren, en zonder de snelkoppeling zoek je je een weg door een menu dat je nog niet kunt bedienen.
+Bedenk vooraf hoe je hem weer uitzet. Staat TalkBack aan, dan werkt het instellingenscherm ook met gebaren, en zonder de snelkoppeling moet je die gebaren al kennen om bij de knop te komen.
 
 TalkBack is onderdeel van de Android Toegankelijkheidssuite en wordt bijgewerkt via de Play Store. Zie je op een ouder toestel iets anders staan dan wat hieronder beschreven is, controleer dan eerst of die suite een update heeft.
 
@@ -89,11 +89,11 @@ Welke regelaars in de lijst staan, kun je in de instellingen van TalkBack aanpas
 
 ## Het TalkBack-menu
 
-Tik met drie vingers en er verschijnt een menu met acties die je verder niets kosten om te onthouden. De drie die je het vaakst nodig hebt:
+Tik met drie vingers en er verschijnt een menu met acties die je niet als gebaar hoeft te onthouden. De drie die je het vaakst nodig hebt:
 
 - **Voorlezen vanaf boven.** TalkBack leest het hele scherm voor, van bovenaf. De snelste manier om te horen wat er op een scherm staat en in welke volgorde.
 - **Voorlezen vanaf het volgende onderdeel.** Hetzelfde, maar vanaf de plek waar de focus nu staat.
-- **Feedback pauzeren.** TalkBack blijft aan en houdt zijn mond, handig als je even iets anders wilt doen.
+- **Feedback pauzeren.** TalkBack blijft aan en zegt niets meer, handig als je even iets anders wilt doen.
 
 De TalkBack-instellingen staan ook in dit menu, dus je hoeft er niet voor naar de app Instellingen.
 
@@ -129,4 +129,4 @@ TalkBack werkt overal in Android. Wat je te horen krijgt, hangt af van wat de bo
 
 ## Verder
 
-Loop je vast op een gebaar dat op jouw toestel iets anders doet? Stuur je vraag naar info@properaccess.nl.
+Doet een gebaar op jouw toestel iets anders dan hier staat? Stuur je vraag naar info@properaccess.nl.
