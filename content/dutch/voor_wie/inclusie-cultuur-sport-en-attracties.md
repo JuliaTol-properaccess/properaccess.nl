@@ -42,7 +42,7 @@ faqs:
   - question: "Helpen jullie ook bij het schrijven van toegankelijkheidsbeleid?"
     answer: "Ja. We hebben een [online tool](/tools/toegankelijkheidsverklaring-wdo/) waarmee je een toegankelijkheidsverklaring opstelt. Die verklaring is verplicht als je onder het Besluit digitale toegankelijkheid overheid valt. We kunnen ook meedenken over beleidsstukken of toegankelijkheidsparagrafen voor subsidieaanvragen."
   - question: "Wie doet het werk?"
-    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
+    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?"

@@ -163,7 +163,7 @@ We bouwen geen websites en beheren geen content. We keuren dus nooit ons eigen w
 {{< /section-card >}}
 {{< section-card title="Directe lijn met de auditor" >}}
 
-Zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschreven heeft. In de fase daarvoor is een relatiebeheerder je aanspreekpunt. Je vragen en de begeleiding bij het oplossen lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag.
+Zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschreven heeft. In de fase daarvoor is een relatiebeheerder je aanspreekpunt. Je vragen en de begeleiding bij het oplossen lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp.
 
 {{< /section-card >}}
 {{< /section-cards >}}

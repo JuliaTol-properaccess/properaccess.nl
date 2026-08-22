@@ -187,7 +187,7 @@ Twee dingen bieden we er altijd bij aan, allebei optioneel. Een [hercontrole](/h
 € 450 tot € 1.000 legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig
 hebt voor je toegankelijkheidsverklaring en bij handhaving. Een nabespreking van € 250 per uur
 betekent dat we het rapport samen doorlopen en helpen prioriteren. Wil je tijdens het oplossen
-kunnen overleggen, dan kan dat met een [strippenkaart](/strippenkaart/), vanaf € 20 per vraag.
+kunnen overleggen, dan kan dat met een [strippenkaart](/strippenkaart/).
 
 Meer over de opbouw van de prijs lees je in het artikel
 [wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
@@ -198,7 +198,7 @@ Meer over de opbouw van de prijs lees je in het artikel
 
 Een senior auditor doet het onderzoek, een tweede auditor doet de interne review. Zodra je
 rapport er ligt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen
-lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor is een relatiebeheerder je
+lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je
 aanspreekpunt.
 
 Proper Access bouwt en beheert zelf geen websites. Er is dus geen situatie waarin we ons eigen

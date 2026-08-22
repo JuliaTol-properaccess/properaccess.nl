@@ -63,7 +63,7 @@ sections:
       - "Forms with autofill and focus order"
   - eyebrow: "After the report"
     title: "Questions about your report? Ask a senior auditor"
-    body: "Something unclear? A finding you want to double-check? Put the question to the auditor who wrote it, through our [accessibility credits](/en/accessibility-credits/). One credit is one question on one topic, from €20, and follow-up questions in the same thread are free."
+    body: "Something unclear? A finding you want to double-check? Put the question to the auditor who wrote it, through our [accessibility credits](/en/accessibility-credits/). One credit is one question on one topic, and follow-up questions in the same thread are free."
     card_eyebrow: "Independent"
     card_icon: "balance"
     card_title: "No conflict of interest"
@@ -94,7 +94,7 @@ faqs:
   - question: "Can you fix the problems as well?"
     answer: "We advise, your developers implement. If you don't have your own developers, we can refer you to agencies we work with."
   - question: "What exactly do we get?"
-    answer: "A report per page with screenshots and explanations, a CSV file with all findings for project management, code snippets per solution, and a walkthrough in an online session (optional). You can put questions about the report to a senior auditor afterwards through our accessibility credits: one credit is one question on one topic, from €20."
+    answer: "A report per page with screenshots and explanations, a CSV file with all findings for project management, code snippets per solution, and a walkthrough in an online session (optional). You can put questions about the report to a senior auditor afterwards through our accessibility credits: one credit is one question on one topic."
   - question: "What does an audit cost?"
     answer: "It depends on the size and type of your site. A full audit starts from approximately €2,250 (excl. VAT). During an introductory call we give you a clear indication straight away — no surprises afterwards."
 ---

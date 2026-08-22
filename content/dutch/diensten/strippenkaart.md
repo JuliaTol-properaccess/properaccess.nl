@@ -6,7 +6,7 @@ weight: 7
 date: 2026-02-28
 slug: "strippenkaart"
 url: "/strippenkaart/"
-description: "Stel een korte vraag over digitale toegankelijkheid aan een senior auditor. Eén strip is één vraag over één onderwerp, vanaf € 20 per vraag. Geen audit nodig."
+description: "Stel een korte vraag over digitale toegankelijkheid aan een senior auditor. Eén strip is één vraag over één onderwerp. Geen audit nodig."
 keywords:
   - strippenkaart toegankelijkheid
   - wcag vraag stellen

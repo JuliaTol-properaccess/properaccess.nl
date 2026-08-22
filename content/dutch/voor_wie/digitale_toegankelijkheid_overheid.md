@@ -53,9 +53,9 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wat gebeurt er na de audit?"
-    answer: "Je krijgt een presentatie van het rapport aan je team. Vragen daarna, ook weken of maanden later, stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
+    answer: "Je krijgt een presentatie van het rapport aan je team. Vragen daarna, ook weken of maanden later, stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"
-    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart, vanaf € 20 per vraag. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
+    answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
     answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---

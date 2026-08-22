@@ -88,7 +88,7 @@ Een rapport met honderd bevindingen los je niet in één sprint op. Bij de eerst
 
 {{< section-full title="Strippenkaart voor structurele inzet" >}}
 
-Vragen stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp, vanaf € 20 per vraag. Dat werkt voor een losse vraag tussendoor en voor structureel meer, denk aan sprint-testing, code reviews op pull requests of mini-audits op nieuwe componenten. Zo hoeven we per vraag geen offerte te sturen.
+Vragen stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. Dat werkt voor een losse vraag tussendoor en voor structureel meer, denk aan sprint-testing, code reviews op pull requests of mini-audits op nieuwe componenten. Zo hoeven we per vraag geen offerte te sturen.
 
 De strippenkaart is geen verplichte vervolgstap. Veel klanten ronden hun audit af zonder hem, en komen pas terug bij een hercontrole of een volgende audit. Maar als je weet dat je ons vaker nodig hebt, is het de simpelste manier om snel te schakelen.
 
