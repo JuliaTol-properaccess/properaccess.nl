@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "De footer die niemand kan lezen"
 date: 2026-08-23
 slug: "sc-1-4-3-de-footer-die-niemand-kan-lezen"
