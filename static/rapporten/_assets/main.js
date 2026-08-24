@@ -54,36 +54,135 @@ function paTypeKey(text) {
 
 document.addEventListener("DOMContentLoaded", function () {
   // === Scroll-observer voor sidebar navigatie ===
-  const sections = document.querySelectorAll("article");
-  const navLinks = document.querySelectorAll(".dash-sidebar a");
+  // Volgt precies de onderdelen waar de sidebar naar linkt, dus ook de
+  // samenvatting, "Over dit onderzoek" en de voettekst, en niet alleen de
+  // article-elementen. De link van het onderdeel dat je leest krijgt de class
+  // "active" en aria-current, zodat hij ook zonder kleur te herkennen is.
+  const navLinks = Array.prototype.slice.call(
+    document.querySelectorAll(".dash-sidebar a[href^='#']"),
+  );
+  const linkVoorDoel = new Map();
+  const doelen = [];
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const id = href.length > 1 ? decodeURIComponent(href.slice(1)) : "";
+    const doel = id ? document.getElementById(id) : null;
+    if (!doel || linkVoorDoel.has(doel)) return;
+    linkVoorDoel.set(doel, link);
+    doelen.push(doel);
+  });
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navLinks.forEach((link) => link.classList.remove("active"));
-          const id = entry.target.getAttribute("id");
-          const activeLink = document.querySelector(
-            `.dash-sidebar a[href="#${id}"]`,
-          );
-          if (activeLink) {
-            activeLink.classList.add("active");
-            const sidebar = activeLink.closest(".dash-sidebar");
-            if (sidebar) {
-              const linkRect = activeLink.getBoundingClientRect();
-              const sidebarRect = sidebar.getBoundingClientRect();
-              if (linkRect.top < sidebarRect.top || linkRect.bottom > sidebarRect.bottom) {
-                activeLink.scrollIntoView({ block: "nearest", behavior: "smooth" });
-              }
-            }
-          }
-        }
-      });
-    },
-    { rootMargin: "-50% 0px -50% 0px", threshold: 0 },
+  const inBeeld = new Set();
+  let huidigeLink = null;
+  // De sidebar zet "Vragen" boven de hoofdstukken, terwijl die voettekst in de
+  // pagina juist onderaan staat. Voor "waar ben ik" telt de volgorde van de
+  // pagina, dus die bepalen we hier apart.
+  const opVolgorde = doelen.slice().sort((a, b) =>
+    a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1,
   );
 
-  sections.forEach((section) => observer.observe(section));
+  // De sidebar heeft alleen op een breed scherm een eigen scrollbalk. Verzet
+  // daarom scrollTop van de sidebar zelf; scrollIntoView zou de pagina
+  // meeverplaatsen terwijl de bezoeker aan het lezen is.
+  function paHoudLinkInBeeld(link) {
+    const sidebar = link.closest(".dash-sidebar");
+    if (!sidebar || sidebar.scrollHeight <= sidebar.clientHeight + 1) return;
+    const linkRect = link.getBoundingClientRect();
+    const barRect = sidebar.getBoundingClientRect();
+    if (linkRect.top < barRect.top) {
+      sidebar.scrollTop -= barRect.top - linkRect.top + 16;
+    } else if (linkRect.bottom > barRect.bottom) {
+      sidebar.scrollTop += linkRect.bottom - barRect.bottom + 16;
+    }
+  }
+
+  function paZetActief(doel) {
+    const link = doel ? linkVoorDoel.get(doel) : null;
+    if (!link || link === huidigeLink) return;
+    navLinks.forEach((l) => {
+      l.classList.remove("active");
+      l.removeAttribute("aria-current");
+    });
+    link.classList.add("active");
+    link.setAttribute("aria-current", "location");
+    huidigeLink = link;
+    paHoudLinkInBeeld(link);
+  }
+
+  function paOnderaanDePagina() {
+    return (
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 4
+    );
+  }
+
+  function paMarkeerHuidige() {
+    // Onderaan de pagina komt de voettekst niet meer in de band bovenin; daar
+    // telt het laatste onderdeel van de pagina.
+    if (paOnderaanDePagina() && opVolgorde.length) {
+      paZetActief(opVolgorde[opVolgorde.length - 1]);
+      return;
+    }
+    // Het onderdeel dat het laatst begon wint. Zo wint een hoofdstuk van de
+    // sectie Bevindingen waar het in ligt.
+    let keuze = null;
+    let keuzeTop = -Infinity;
+    inBeeld.forEach((el) => {
+      const top = el.getBoundingClientRect().top;
+      if (top > keuzeTop) {
+        keuzeTop = top;
+        keuze = el;
+      }
+    });
+    if (!keuze) return; // niets in beeld: laat de vorige markering staan
+    paZetActief(keuze);
+  }
+
+  // Bij het laden staat er nog niets in de band in het midden van het scherm.
+  // Markeer dan het onderdeel waar de bezoeker in zit, en anders het eerste.
+  function paMarkeerBijStart() {
+    if (huidigeLink || !doelen.length) return;
+    const bandOnder = window.innerHeight * 0.27;
+    let keuze = null;
+    opVolgorde.forEach((el) => {
+      if (el.getBoundingClientRect().top <= bandOnder) keuze = el;
+    });
+    paZetActief(keuze || opVolgorde[0]);
+  }
+
+  if (doelen.length && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) inBeeld.add(entry.target);
+          else inBeeld.delete(entry.target);
+        });
+        paMarkeerHuidige();
+      },
+      // Een smalle band vlak onder de bovenkant van het scherm. Dat is waar je
+      // leest, en het is ook waar een onderdeel terechtkomt als je in de
+      // sidebar op de link ernaartoe klikt.
+      { rootMargin: "-12% 0px -73% 0px", threshold: 0 },
+    );
+    doelen.forEach((doel) => observer.observe(doel));
+    paMarkeerBijStart();
+
+    // De observer meldt zich alleen als er iets de band in of uit gaat. Onderaan
+    // de pagina gebeurt dat niet meer, dus daar kijken we mee met het scrollen.
+    let bodemWacht = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (bodemWacht) return;
+        bodemWacht = true;
+        window.requestAnimationFrame(() => {
+          bodemWacht = false;
+          if (paOnderaanDePagina()) paMarkeerHuidige();
+        });
+      },
+      { passive: true },
+    );
+  }
 
   // === Paginatitel linken naar externe URL ===
   document.querySelectorAll("#issues > article.issue").forEach((article) => {
@@ -828,9 +927,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Open accordion and scroll to issue if URL has hash
-  if (location.hash) {
-    const target = document.querySelector(location.hash);
+  // Open accordion and scroll to issue if URL has hash.
+  // Let op: de id's van de hoofdstukken beginnen met een cijfer ("06-..."), en
+  // dat is geen geldige CSS-selector. querySelector(location.hash) gooit daar
+  // een SyntaxError op, en dan draait de rest van dit bestand niet meer: geen
+  // tellers, geen filters, geen export. Vandaar getElementById.
+  if (location.hash.length > 1) {
+    const target = document.getElementById(
+      decodeURIComponent(location.hash.slice(1)),
+    );
     if (target) {
       const details = target.querySelector("details.finding-accordion");
       if (details) details.open = true;
