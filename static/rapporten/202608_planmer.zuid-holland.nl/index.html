@@ -1209,10 +1209,10 @@
 <p><i>Ik lees de website met een schermlezer. Ik verwacht dat alleen woorden die echt belangrijk zijn extra nadruk krijgen.</i></p>
 </blockquote>
 <h4>Hoe te testen</h4>
-<p>Bekijk de pagina als redacteur en loop elk vet of cursief woord langs.</p>
+<p>Open de <a href="https://www.properaccess.nl/tools/wcag-radar/">WCAG Radar</a> en zet in het onderdeel Tekst de opties &quot;Sterke nadruk (strong)&quot; en &quot;Nadruk (em)&quot; aan. De Radar markeert elk <code>strong</code>- en <code>em</code>-element op de pagina en telt hoe vaak zo'n element om een hele zin of een hele alinea heen staat.</p>
 <ol>
-<li>Vraag je bij elk vet of cursief stuk tekst af: is dit woord echt belangrijk, of zou je het in spraak benadrukken? Zo niet, dan hoort het niet in een <code>strong</code>- of <code>em</code>-element en hoort de opmaak in CSS.</li>
-<li>Bekijk de HTML: klik met de rechtermuisknop op het vette of cursieve woord en kies &quot;Inspecteren&quot;. Staat het woord in een <code>&lt;strong&gt;</code>- of <code>&lt;em&gt;</code>-element zonder dat er een reden voor nadruk is, dan is de markering onjuist.</li>
+<li>Loop de gemarkeerde plekken langs en vraag je bij elke af: is dit woord echt belangrijk, of zou je het in spraak benadrukken? Zo niet, dan hoort het niet in een <code>strong</code>- of <code>em</code>-element en hoort de opmaak in CSS.</li>
+<li>Let op de nadruk om een hele zin of een hele alinea. <code>strong</code> hoort om het woord of de paar woorden waar het om draait; nadruk op alles is nadruk op niets.</li>
 </ol>
 <p>Terecht gebruik is bijvoorbeeld een waarschuwing (&quot;verwijder dit <strong>nooit</strong>&quot;), een kernbegrip op de plek waar het wordt uitgelegd, of een woord dat de betekenis van de zin verandert (&quot;ik zei dat <em>niet</em>&quot;). Productnamen, koppen en decoratieve woorden krijgen geen nadruk met <code>strong</code> of <code>em</code>.</p>
 <h4>Oplossing</h4>
