@@ -1,12 +1,12 @@
 {
   "impact": {
     "Klein": 1,
-    "Medium": 27,
+    "Medium": 26,
     "Groot": 17,
     "Advies": 0
   },
   "type": {
-    "Content": 22,
+    "Content": 21,
     "Techniek": 23,
     "Design": 0
   },
