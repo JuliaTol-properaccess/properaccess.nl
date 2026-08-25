@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Viewport meta-tag die inzoomen blokkeert"
 date: 2026-08-24
 slug: "sc-1-4-10-viewport-meta-tag-die-inzoomen-blokkeert"
