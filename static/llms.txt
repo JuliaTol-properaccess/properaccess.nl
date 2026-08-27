@@ -63,6 +63,10 @@ Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengek
 
 - [Blog](https://www.properaccess.nl/blog/): artikelen over WCAG, de EAA, het BDTO en digitale toegankelijkheid
 
+### Achtergrond en standpunten
+
+- [WebMCP: wat het is, en waarom het toegankelijkheid niet vervangt](https://www.properaccess.nl/blog/webmcp-en-toegankelijkheid/): wat de voorgestelde browser-API doet waarmee een website zijn functies aanbiedt als tools voor AI-agents, de status van het voorstel (Draft Community Group Report van de W3C Web Machine Learning Community Group, origin trial in Chrome 149, de API heet document.modelContext en niet meer navigator.modelContext), waarom het niets verandert aan vindbaarheid in AI-antwoorden, en waarom het geen vervanging is van een toegankelijke pagina. Met de discussie in de W3C-groep over de verhouding tot de accessibility tree, die op 17 augustus 2026 is gesloten omdat geen browserpartij WebMCP-tools in de accessibility tree wil zetten
+
 ### Veelgelezen artikelen
 
 - [Welke tools gebruik je om je website op WCAG te testen?](https://www.properaccess.nl/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/): vergelijking van in-pagina checkers, contrasttools, schermlezers en bookmarklets, met per categorie wat er buiten beeld blijft

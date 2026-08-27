@@ -106,6 +106,10 @@ Menselijk testen gaat over gedrag. Over hoe iets aanvoelt. Over context die je a
 
 En het belangrijkste is de interpretatie van de bevindingen. Alles wat AI doet, moet door een mens worden gecontroleerd. Dat is hier extra belangrijk, omdat een slecht advies je team aan het werk kan zetten om 'problemen' op te lossen die geen problemen zijn. Alleen een mens kan beoordelen of er een toegankelijk alternatief is voor een gevonden barriere en of dit alternatief gelijkwaardig is.
 
+### Wat als de pagina de agent zelf vertelt wat er kan?
+
+Naast het testen loopt er een tweede ontwikkeling. Er is een voorstel voor een browser-API waarmee een website zijn eigen functies aanbiedt als tools die een AI-agent kan aanroepen. De agent hoeft dan niet meer af te leiden welk element de knop is, want de pagina zegt het. Wat dat voorstel doet, waar het staat, en waarom het toegankelijk bouwen niet vervangt, staat in [WebMCP: wat het is, en waarom het toegankelijkheid niet vervangt](/blog/webmcp-en-toegankelijkheid/).
+
 {{< /case-section >}}
 
 {{< case-section image="/images/blog/ai-wcag-scorekaart.svg" alt="" >}}
