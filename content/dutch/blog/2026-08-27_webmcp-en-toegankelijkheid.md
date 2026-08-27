@@ -21,13 +21,19 @@ keywords:
 image: "/images/blog/ai-wcag-serie.svg"
 ---
 
-{{< case-section >}}
+{{< case-section image="/images/blog/ai-wcag-webmcp-gokken-vs-vertellen.svg" >}}
 
 ## Wat WebMCP doet
 
 Een AI-agent die vandaag iets voor je moet regelen op een website, leest de pagina en gokt. Welk element is de zoekbalk, welke knop verstuurt het formulier, is dat vinkje al aangezet. Dat werkt tot het moment waarop de pagina er net iets anders uitziet.
 
 WebMCP draait dat om. De website vertelt zelf welke handelingen er zijn. Je registreert per handeling een tool: een naam, een beschrijving in gewone taal, een schema voor de invoer, en de JavaScript-functie die het werk doet.
+
+{{< /case-section >}}
+
+{{< case-section >}}
+
+## Zo ziet een tool uit in code
 
 ```js
 await document.modelContext.registerTool({
@@ -99,7 +105,7 @@ Op 17 augustus 2026 is de discussie gesloten als <span lang="en">"not planned"</
 
 {{< /case-section >}}
 
-{{< case-section >}}
+{{< case-section image="/images/blog/ai-wcag-webmcp-sr-only.svg" >}}
 
 ## Wat er gebeurt als je het toch probeert
 
@@ -113,7 +119,7 @@ Dit is het scenario waar ik in de praktijk bang voor ben. Er is niemand die toeg
 
 {{< /case-section >}}
 
-{{< case-section >}}
+{{< case-section image="/images/blog/ai-wcag-webmcp-schermlezer-vs-agent.svg" >}}
 
 ## Waarom een schermlezer dit niet zomaar kan overnemen
 

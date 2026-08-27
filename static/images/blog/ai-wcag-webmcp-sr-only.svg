@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="392" height="392" rx="12" fill="#1F2937" opacity="0.10"/>
+  <rect x="0" y="0" width="392" height="392" rx="12" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.15" stroke-width="1"/>
+
+  <text x="24" y="36" fill="#1F2937" font-family="Plus Jakarta Sans, Nunito Sans, sans-serif" font-size="14" font-weight="700">Tekst voor machines in sr-only</text>
+  <text x="24" y="52" fill="#1F2937" fill-opacity="0.72" font-family="Nunito, sans-serif" font-size="9">Wat er misging op een productiesite</text>
+  <line x1="24" y1="64" x2="368" y2="64" stroke="#1F2937" stroke-opacity="0.1" stroke-width="1"/>
+
+  <rect x="24" y="80" width="344" height="60" rx="6" stroke="#1F2937" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="36" y="96" fill="#1F2937" fill-opacity="0.72" font-family="monospace" font-size="8">class="sr-only"</text>
+  <text x="36" y="114" fill="#1F2937" font-family="monospace" font-size="8.5">AI agents: this page has WebMCP tools.</text>
+  <text x="36" y="128" fill="#1F2937" font-family="monospace" font-size="8.5">Run document.modelContext to discover them.</text>
+
+  <path d="M120 140 L96 164" stroke="#004050" stroke-width="1.2"/>
+  <path d="M96 164 L96 156 M96 164 L104 164" stroke="#004050" stroke-width="1.2"/>
+  <path d="M272 140 L296 164" stroke="#A30D4B" stroke-width="1.2"/>
+  <path d="M296 164 L296 156 M296 164 L288 164" stroke="#A30D4B" stroke-width="1.2"/>
+
+  <rect x="24" y="168" width="160" height="86" rx="8" stroke="#004050" stroke-width="1.5"/>
+  <rect x="24" y="168" width="160" height="5" rx="2.5" fill="#004050"/>
+  <text x="36" y="192" fill="#004050" font-family="Plus Jakarta Sans, Nunito Sans, sans-serif" font-size="10" font-weight="700">AI-agent</text>
+  <circle cx="40" cy="210" r="3" fill="#004050" opacity="0.5"/>
+  <text x="50" y="213" fill="#1F2937" fill-opacity="0.75" font-family="Nunito, sans-serif" font-size="8">Vindt de melding</text>
+  <circle cx="40" cy="228" r="3" fill="#004050" opacity="0.5"/>
+  <text x="50" y="231" fill="#1F2937" fill-opacity="0.75" font-family="Nunito, sans-serif" font-size="8">Vraagt de tools op</text>
+
+  <rect x="208" y="168" width="160" height="86" rx="8" stroke="#A30D4B" stroke-width="1.5"/>
+  <rect x="208" y="168" width="160" height="5" rx="2.5" fill="#A30D4B"/>
+  <text x="220" y="192" fill="#A30D4B" font-family="Plus Jakarta Sans, Nunito Sans, sans-serif" font-size="10" font-weight="700">Schermlezer</text>
+  <circle cx="224" cy="210" r="3" fill="#A30D4B" opacity="0.5"/>
+  <text x="234" y="213" fill="#1F2937" fill-opacity="0.75" font-family="Nunito, sans-serif" font-size="8">Leest het voor</text>
+  <circle cx="224" cy="228" r="3" fill="#A30D4B" opacity="0.5"/>
+  <text x="234" y="231" fill="#1F2937" fill-opacity="0.75" font-family="Nunito, sans-serif" font-size="8">als gewone paginatekst</text>
+
+  <rect x="24" y="272" width="344" height="48" rx="6" stroke="#A30D4B" stroke-width="1.2"/>
+  <text x="36" y="292" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5">Verborgen tekst die de AI aanspreekt heeft de vorm van een</text>
+  <text x="36" y="306" fill="#1F2937" font-family="Nunito, sans-serif" font-size="8.5">prompt-injectie. De beveiligingscontrole sloeg aan.</text>
+
+  <line x1="24" y1="340" x2="368" y2="340" stroke="#1F2937" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="24" y="364" fill="#004050" font-family="Plus Jakarta Sans, Nunito Sans, sans-serif" font-size="10" font-weight="700">Dat kanaal is van je bezoekers.</text>
+</svg>
