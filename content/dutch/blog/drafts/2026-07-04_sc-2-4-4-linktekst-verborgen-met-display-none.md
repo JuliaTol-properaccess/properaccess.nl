@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Linktekst verborgen met display: none"
 date: 2026-08-27
 slug: "sc-2-4-4-linktekst-verborgen-met-display-none"
