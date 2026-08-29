@@ -16,8 +16,8 @@ keywords:
   - mini-audit website
   - WCAG audit
   - digitale toegankelijkheid onderzoek
-seo_title: "Toegankelijkheidsonderzoek: wat is het en wanneer kies je het? | Proper Access"
-seo_description: "Wat zit er in een toegankelijkheidsonderzoek? Verschil tussen mini-audit en audit, wat je krijgt, wat het kost en hoe je de juiste keuze maakt."
+meta_title: "Toegankelijkheidsonderzoek: wat is het en wanneer kies je het? | Proper Access"
+meta_description: "Wat zit er in een toegankelijkheidsonderzoek? Verschil tussen mini-audit en audit, wat je krijgt, wat het kost en hoe je de juiste keuze maakt."
 ---
 
 Een toegankelijkheidsonderzoek is een systematische test van je website, app of document tegen de WCAG-richtlijnen. Het laat zien wat werkt voor bezoekers met een beperking — en wat niet.

@@ -155,15 +155,11 @@ Maak een lijst van alle digitale diensten die je aanbiedt:
 
 De belangrijkste route voor een culturele instelling is: **bezoeker vindt de website → kiest een tentoonstelling/voorstelling → koopt een ticket → ontvangt bevestiging**. Test die route met een toetsenbord. Lukt het? Waar loop je vast?
 
-### Stap 3: Begin met een mini-audit
+### Stap 3: Laat je site onderzoeken
 
-Een [mini-audit](/webshop-quickscan/) geeft je een eerste beeld van de grootste knelpunten. Dat helpt om intern het gesprek te voeren en budget vrij te maken voor verbeteringen.
+Een volledig WCAG-EM onderzoek geeft je een compleet beeld en een nulmeting: welke kanalen voldoen, waar het misgaat en wat er als eerste moet gebeuren. [Vraag een offerte aan](/offerte-wcag-onderzoek/) en je krijgt binnen twee werkdagen een prijs met de scope en de steekproef erbij. Daarmee kun je intern het gesprek voeren en budget vrijmaken.
 
-### Stap 4: Laat een volledige audit doen
-
-Na de eerste verbeteringen is een volledige WCAG-EM audit de volgende stap. Die geeft je een compleet beeld en een nulmeting.
-
-### Stap 5: Train je team
+### Stap 4: Train je team
 
 Toegankelijkheid is niet alleen een technisch verhaal. Je redacteuren, marketeers en educatief medewerkers moeten weten hoe ze toegankelijke content maken. Elke nieuwe tentoonstelling, elke nieuwe pagina, elk nieuw social media-bericht: het moet elke keer weer goed.
 
@@ -171,7 +167,7 @@ Toegankelijkheid is niet alleen een technisch verhaal. Je redacteuren, marketeer
 
 We werken al jaren samen met musea en culturele instellingen. We kennen de specifieke uitdagingen: van ticketingsystemen die je niet kunt aanpassen, tot plattegronden die opnieuw moeten, tot audiogids-apps die niet voldoen.
 
-Wil je weten waar jouw instelling staat? Begin met een [mini-audit](/webshop-quickscan/) of neem [contact](/contact/) op voor een vrijblijvend gesprek.
+Wil je weten waar jouw instelling staat? [Vraag een offerte aan](/offerte-wcag-onderzoek/) of neem [contact](/contact/) op voor een gesprek.
 
 ## Verder lezen
 

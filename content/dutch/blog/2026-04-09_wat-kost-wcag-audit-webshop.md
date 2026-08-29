@@ -22,16 +22,7 @@ keywords:
   - "WCAG audit webshop"
   - "EAA audit kosten"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-seo_title: "Wat kost een WCAG-audit voor een webshop? Prijsindicatie 2026"
-seo_description: "Wat kost een WCAG-audit voor een webshop in 2026? Een overzicht van prijsindicaties, variabelen en wat je er precies voor krijgt. Geschreven door een senior auditor."
-seo_keywords:
-  [
-    "kosten WCAG audit webshop",
-    "prijs WCAG audit Nederland",
-    "wat kost een toegankelijkheidsaudit",
-    "WCAG audit webshop",
-    "EAA audit kosten",
-  ]
+meta_description: "Wat kost een WCAG-audit voor een webshop in 2026? Een overzicht van prijsindicaties, variabelen en wat je er precies voor krijgt. Geschreven door een senior auditor."
 ---
 
 Dit is een vraag die bijna elke webshop-eigenaar mij stelt in het eerste gesprek: _wat gaat dit me kosten?_ En het is een vraag die bijna geen auditbureau beantwoordt op zijn site. Je krijgt zinnen als "neem contact op voor een offerte" of "afhankelijk van uw situatie". Soms krijg je achteraf een offerte van € 8.000 voor iets waar een ander bureau € 2.500 voor rekent, en je hebt geen idee hoe dat verschil ontstaat.
@@ -187,7 +178,7 @@ Mijn advies: vraag minimaal twee offertes aan. Vraag specifiek **wie de audit ui
 
 ## Kort samengevat
 
-- Een WCAG-audit voor een webshop kost bij Proper Access indicatief **€ 2.895 - € 5.100**. Eenvoudige webshops aan de onderkant, complexe internationale webshops aan de bovenkant. De meeste Nederlandse webshops vallen in de categorie gemiddeld en liggen rond de € 3.150.
+- Een WCAG-audit voor een webshop kost bij Proper Access indicatief **€ 2.895 - € 5.100**, met de meeste Nederlandse webshops rond de € 3.150.
 - De prijs hangt af van templates, checkout-complexiteit, interactieve componenten, talen en de diepte van het rapport.
 - Een mini-audit (495 euro exclusief btw bij ons) is een diagnose, geen vervanging van een audit.
 - Een overlay-tool is geen audit en lost het probleem niet op.
