@@ -12,7 +12,7 @@ aliases:
 description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen en geven duidelijke antwoorden."
 ---
 
-De European Accessibility Act is sinds 28 juni 2025 van kracht. Maar hoe kijken ondernemers, freelancers en webshop-eigenaren er eigenlijk naar? We doken in fora, communities en onderzoeken om te achterhalen wat er echt leeft. Het resultaat: reele zorgen, verrassende kansen en een paar hardnekkige misverstanden die we graag rechtzetten.
+De [European Accessibility Act](/eaa/) is sinds 28 juni 2025 van kracht. Maar hoe kijken ondernemers, freelancers en webshop-eigenaren er eigenlijk naar? We doken in fora, communities en onderzoeken om te achterhalen wat er echt leeft. Het resultaat: reele zorgen, verrassende kansen en een paar hardnekkige misverstanden die we graag rechtzetten.
 
 ## "Weer iets dat tijd en geld kost"
 

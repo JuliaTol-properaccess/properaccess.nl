@@ -30,7 +30,7 @@ seo_keywords:
   ]
 ---
 
-Sinds 28 juni 2025 moet je webshop voldoen aan de European Accessibility Act. Lees [het overzicht van wat de EAA precies inhoudt](/blog/geldt-de-eaa-voor-mijn-webshop/) als je nog twijfelt of de wet voor jou geldt. Dit artikel slaat dat over en beantwoordt de vervolgvraag: _waar moet ik concreet op letten?_
+Sinds 28 juni 2025 moet je webshop voldoen aan de [European Accessibility Act](/eaa/). Twijfel je nog of de wet voor jou geldt, dan staat dat op die pagina. Dit artikel slaat dat over en beantwoordt de vervolgvraag: _waar moet ik concreet op letten?_
 
 Hieronder een checklist van 30 punten, georganiseerd per onderdeel van je webshop. Geen academische opsomming van succescriteria, maar praktische checks die je samen met je developer of contentmanager kunt afvinken. Bij elk punt staat waar het over gaat, hoe je het test, en welk WCAG-criterium erachter zit voor wie wil doorlezen.
 

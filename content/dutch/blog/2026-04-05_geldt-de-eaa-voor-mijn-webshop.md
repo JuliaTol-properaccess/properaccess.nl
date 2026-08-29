@@ -45,7 +45,7 @@ Er is een beperkte uitzondering voor **micro-ondernemingen**. De ACM omschrijft 
 
 ## Wat als je niet voldoet?
 
-Het toezicht op de EAA is in Nederland verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. Voor webshops en apps is dat de [ACM (Autoriteit Consument & Markt)](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid). Ze kunnen:
+Het toezicht op [de EAA](/eaa/) is in Nederland verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. Voor webshops en apps is dat de [ACM (Autoriteit Consument & Markt)](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid). Ze kunnen:
 
 - **Waarschuwingen** geven
 - **Boetes** opleggen (de exacte hoogte hangt af van de overtreding en de omvang van het bedrijf)

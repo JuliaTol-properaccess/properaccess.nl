@@ -18,6 +18,7 @@
 
 ## Ondersteuning en training
 
+- [European Accessibility Act (EAA)](https://www.properaccess.nl/eaa/): wat de EAA is (richtlijn (EU) 2019/882, in Nederland de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, toegepast sinds 28 juni 2025), voor wie hij geldt, de uitzondering voor micro-ondernemingen (minder dan 10 mensen in dienst én maximaal 2 miljoen euro jaaromzet, allebei), de norm EN 301 549 die nu op WCAG 2.1 niveau A en AA staat, de zes Nederlandse toezichthouders met hun eigen terrein, en wat je concreet moet doen. De EAA verplicht een toegankelijke website of app, geen onderzoek
 - [Hulp bij Europese toegankelijkheidswetgeving](https://www.properaccess.nl/hulp-bij-europese-toegankelijkheidswetgeving/): welke wet voor je geldt, de vier stappen naar voldoen (onderzoek, herstel, hercontrole, verantwoording) en welke dienst elke stap dekt
 - [Testen tijdens de bouw](https://www.properaccess.nl/toegankelijkheid-testen-tijdens-de-bouw/): WCAG-tests in de sprint, directe feedback voor developers
 - [Strippenkaart](https://www.properaccess.nl/strippenkaart/): vragen stellen aan een senior auditor, afgerekend per vraag en niet per uur. Eén strip is één vraag over één onderwerp, vervolgvragen in dezelfde draad zijn gratis. Bundels van 10 tot 100 strippen, van 25 euro tot 20 euro per vraag, 12 maanden geldig. Iedereen kan kopen, ook zonder audit bij ons
