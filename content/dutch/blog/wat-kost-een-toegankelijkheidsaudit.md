@@ -30,7 +30,7 @@ keywords:
 
 ## Wat het kost
 
-"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg, en die bijna geen enkel bureau op de website beantwoordt. Hieronder staat onze hele lijst. Alle bedragen zijn exclusief 21% btw.
+"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg. Hieronder staat onze hele lijst. Alle bedragen zijn exclusief 21% btw.
 
 **Volledig WCAG-EM onderzoek.** De 55 succescriteria van WCAG 2.2 op niveau A en AA, volgens de WCAG-EM methodiek.
 
@@ -77,11 +77,15 @@ Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkr
 
 Een audit is menselijk werk, dus de prijs volgt de omvang en de complexiteit: hoeveel unieke paginatypes je hebt en hoeveel eigen componenten daarin zitten. Het onderzoek gaat handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%, plus controle op contrast en kleurgebruik. Apps toetsen we op echte toestellen.
 
-Daarna leest een tweede auditor het hele rapport na. Die reviewstap staat apart in de offerte en loopt van twee uur bij een eenvoudige site tot vijf uur bij een complexe. Elke bevinding wordt dus dubbel gecontroleerd, en dat noemen wij het 6-ogen-principe.
+Daarna gaat het rapport langs de review. Elk rapport wordt door drie mensen bekeken voordat het de deur uit gaat, en dat noemen wij het 6-ogen-principe. Die review kost drie uur bij een eenvoudige site en loopt op tot tien uur bij een complexe.
 
 ## Zes vragen als je offertes vergelijkt
 
-Twee dingen zie je niet aan een bedrag. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, ongeacht welke status je aanvraagt. En de meeste bureaus rapporteren per succescriterium, waardoor één datepicker onder twaalf criteria terugkomt en je developer die stukken eerst bij elkaar mag zoeken.
+Twee dingen zie je niet aan een bedrag.
+
+Het eerste is de methode. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, ongeacht welke status je aanvraagt.
+
+Het tweede is hoe het rapport is ingedeeld. Bij de meeste bureaus staat alles wat er aan één onderdeel van je site mankeert, bijvoorbeeld het datumveld in een formulier, verspreid over het hele rapport. Degene die het gaat oplossen moet die stukken eerst zelf bij elkaar zoeken. Wij zetten ze bij elkaar op één plek.
 
 De rest haal je met deze zes vragen boven tafel.
 
@@ -124,7 +128,7 @@ Nee. De EAA verplicht je tot een toegankelijke website of app; een onderzoek is 
 <details class="faq-item">
 <summary class="faq-question">Kan ik het zelf doen?</summary>
 <div class="faq-answer">
-Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus in eigen beheer mag. Je kunt zelf al veel verbeteren met de <a href="/blog/alt-tekst-keuzehulp/">alt-tekst keuzehulp</a>, je koppenstructuur en een toetsenbordtest van je formulieren. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel.
+Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus in eigen beheer mag. Je kunt zelf al veel vinden met de <a href="/tools/wcag-radar/">WCAG Radar van Proper Access</a>: 28 van de 45 checks zijn gratis en vragen geen account. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel.
 </div>
 </details>
 
@@ -138,7 +142,16 @@ Na de eerste audit en het doorvoeren van de verbeteringen adviseer ik een hercon
 <details class="faq-item">
 <summary class="faq-question">Waarom lopen de prijzen in de markt zo uiteen?</summary>
 <div class="faq-answer">
-Twee dingen verklaren het grootste deel. Aan de onderkant zit vaak een geautomatiseerde scan met een rapport eromheen, zonder toetsenbordtest en zonder schermlezer. Aan de bovenkant zit overhead: accountmanagers, projectmanagers en een langere keten tussen jou en degene die het werk doet. Vraag dus door op twee dingen: wat er precies getest wordt, en wie het doet.
+Het verschil zit vrijwel helemaal in de uren die iemand aan jouw project besteedt, en in hoe ver het rapport gaat. Vraag dus door op de inhoud:
+<ul>
+<li>Hoe uitgebreid wordt een bevinding beschreven?</li>
+<li>Krijg je er een oplossing bij, of alleen de constatering?</li>
+<li>Zitten er screenshots bij?</li>
+<li>Staat er een user story bij, zodat je ziet wat een bezoeker met een beperking meemaakt?</li>
+<li>Hoeveel voorbeelden krijg je per probleem?</li>
+<li>Legt iemand uit hoe je het de volgende keer zelf test?</li>
+</ul>
+Een rapport dat op al die punten ja zegt, kost meer tijd om te maken. Dat verschil zie je terug in de prijs.
 </div>
 </details>
 
