@@ -34,7 +34,7 @@ De EAA geldt voor bedrijven die **producten of diensten aanbieden aan consumente
 - **Digitale diensten** zoals online bankieren, telecom, e-books, streaming
 - **Ticketverkoop** voor evenementen, vervoer, cultuur
 
-Er is een beperkte uitzondering voor **micro-ondernemingen**. De ACM omschrijft die als een onderneming met minder dan 10 mensen in dienst én een jaaromzet van maximaal € 2 miljoen. Let op dat het allebei moet gelden, niet één van de twee. Een balanstotaal noemt de ACM niet als criterium. Maar let op: als je webshop onderdeel is van een grotere organisatie, telt de hele organisatie mee.
+Er is een beperkte uitzondering voor **micro-ondernemingen**. De ACM omschrijft die als een onderneming met minder dan 10 mensen in dienst én een jaaromzet van maximaal € 2 miljoen. Let op dat het allebei moet gelden, niet één van de twee. Een balanstotaal noemt de ACM niet als criterium.
 
 ## Wat moet je concreet doen?
 

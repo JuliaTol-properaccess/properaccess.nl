@@ -60,4 +60,4 @@ Zit er in je document helemaal geen tagstructuur, dan begin je een stap eerder. 
 
 Een citaat taggen in een PDF is een kleine moeite, maar het maakt een groot verschil voor toegankelijkheid. Door de juiste semantische tags te gebruiken, zorg je dat alle lezers – ook wie een schermlezer gebruikt – de inhoud goed kunnen volgen.
 
-👉 Wil je weten hoe toegankelijk jouw documenten zijn? Met een **[mini-audit digitale toegankelijkheid](/webshop-quickscan/)** ontdek je snel welke verbeteringen nodig zijn.
+Wil je weten hoe toegankelijk jouw documenten zijn? Met een **[mini-audit digitale toegankelijkheid](/webshop-quickscan/)** ontdek je snel welke verbeteringen nodig zijn.

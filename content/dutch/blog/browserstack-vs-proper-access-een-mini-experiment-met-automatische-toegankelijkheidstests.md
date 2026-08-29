@@ -57,6 +57,6 @@ Geautomatiseerde tests kunnen zeker nuttig zijn als eerste stap. Maar ze missen 
 
 En vooral: **de grote hoeveelheid false positives zorgt voor ruis en kan leiden tot onnodig werk**. Wees kritisch en verlies geen tijd of mankracht aan het oplossen van problemen die er niet zijn.
 
-👉 Benieuwd naar het verschil tussen mens en machine? Plan gerust een call in. Mijn deur staat altijd open.
+Benieuwd naar het verschil tussen mens en machine? Plan gerust een call in, of stuur een mail.
 
 📌 _Ik deel geen screenshots of resultaten uit dit experiment, omdat het om een klantwebsite ging._
