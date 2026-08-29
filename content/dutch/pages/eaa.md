@@ -48,12 +48,12 @@ eaa_feiten:
     v: "Een toegankelijke website of app. Een onderzoek is geen wettelijke eis"
 
 eaa_monitor_punten:
-  - k: "Anoniem"
-    v: "Je stelt je vraag zonder je bedrijfsnaam erbij."
-  - k: "Van elkaar"
-    v: "Je leest terug hoe andere bedrijven de EAA aanpakken en waar zij tegenaan lopen."
-  - k: "Van experts"
-    v: "Je vindt er hulp bij mensen die digitale toegankelijkheid dagelijks doen."
+  - k: "De markt"
+    v: "Je ziet hoe andere bedrijven de European Accessibility Act aanpakken en waar zij tegenaan lopen."
+  - k: "Op één plek"
+    v: "De informatie over de wet en over de praktijk staat er bij elkaar op één website."
+  - k: "Hulp zoeken"
+    v: "Je vindt er partijen die je verder helpen met digitale toegankelijkheid."
 
 trust:
   label: "Onderzochten onder meer voor"
@@ -218,31 +218,29 @@ We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het 
 
 {{< section-monitor id="eaa-monitor" eyebrow="EAA-monitor" title="Kijken hoe andere bedrijven het aanpakken" link="https://eaa-monitor.nl" link_text="Ga naar de EAA-monitor" punten="eaa_monitor_punten" >}}
 
-In de [EAA-monitor](https://eaa-monitor.nl) van Flonam stel je anoniem je vragen over de European Accessibility Act, lees je de antwoorden en ervaringen van andere bedrijven terug, en vind je hulp bij experts in digitale toegankelijkheid. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
+In de [EAA-monitor](https://eaa-monitor.nl) van Flonam staat de informatie over de European Accessibility Act bij elkaar op één website. Je leest er hoe andere bedrijven de wet aanpakken en waar zij tegenaan lopen, je stelt anoniem je eigen vragen, en je vindt er partijen die je verder helpen. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
 
 {{< /section-monitor >}}
 
-{{< section-full title="Verder lezen over de EAA" id="verder-lezen" bg="light" >}}
+{{< section-cards title="Verder lezen over de EAA" id="verder-lezen" bg="light" columns="3" noot="Zoek je begeleiding over de hele route, van onderzoek tot verantwoording, kijk dan bij [hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/)." >}}
 
-**Voor wie geldt het en wat kost het**
-
+{{< section-card title="Voor wie geldt het en wat kost het" >}}
 - [Geldt de EAA voor mijn webshop?](/blog/geldt-de-eaa-voor-mijn-webshop/)
 - [EAA voor webshops: wat moet je regelen en waar begin je?](/blog/eaa-voor-webshops/)
 - [EAA-checklist 2026: 30 punten waarop je webshop moet voldoen](/blog/eaa-checklist-2026-webshops/)
 - [Mini-audit voor MKB: weet of je website aan de EAA voldoet](/blog/mini-audit-mkb/)
+{{< /section-card >}}
 
-**Handhaving en boetes**
-
+{{< section-card title="Handhaving en boetes" >}}
 - [Wat doet een toezichthouder? De ACM over de EAA](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/)
 - [Wat zijn de boetes bij niet-nakoming van de EAA?](/blog/boetes-niet-nakoming-eaa/)
 - [Boetes onder de EAA: zo verschilt de wet per land](/blog/eaa-boetes/)
+{{< /section-card >}}
 
-**Per sector en per rol**
-
+{{< section-card title="Per sector en per rol" >}}
 - [EAA en het onderwijs: 6 stappen naar een toegankelijke leeromgeving](/blog/eaa-onderwijs-stappenplan-toegankelijke-leeromgeving/)
 - [Wat je als web agency moet weten over de EAA](/blog/wat-developer-moet-weten-over-de-eaa/)
 - [Wat ondernemers echt vinden van de EAA](/blog/wat-ondernemers-vinden-van-de-eaa/)
+{{< /section-card >}}
 
-Zoek je begeleiding over de hele route, van onderzoek tot verantwoording, kijk dan bij [hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/).
-
-{{< /section-full >}}
+{{< /section-cards >}}

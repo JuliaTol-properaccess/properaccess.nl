@@ -1467,6 +1467,54 @@ html.dark .section-card__content {
   margin-bottom: 0;
 }
 
+/* Een lijst in een kaart kreeg geen opmaak: de reset haalt de bolletjes en de
+   inspringing weg, waardoor de items als losse regels onder elkaar stonden.
+   Zelfde behandeling als in section-full. */
+.section-card__content ul,
+.section-card__content ol {
+  padding-left: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.section-card__content ul {
+  list-style: disc;
+}
+
+.section-card__content ol {
+  list-style: decimal;
+}
+
+.section-card__content li {
+  margin-bottom: 0.4rem;
+}
+
+.section-card__content li:last-child {
+  margin-bottom: 0;
+}
+
+.section-card__content > ul:last-child,
+.section-card__content > ol:last-child {
+  margin-bottom: 0;
+}
+
+.section-cards__noot {
+  max-width: 46rem;
+  margin: 2rem auto 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4B5563;
+}
+
+.section-cards__noot a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.section-cards__noot a:hover {
+  color: #004050;
+}
+
 /* Links in een kaart hadden geen enkele opmaak: zelfde kleur als de lopende
    tekst en geen onderstreping. Zelfde behandeling als in section-full. */
 .section-card__content a {
