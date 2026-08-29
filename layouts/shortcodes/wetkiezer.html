@@ -1,0 +1,92 @@
+{{- $id := .Get "id" | default "welke-wet" -}}
+{{- $title := .Get "title" | default "Welke wet geldt voor jou?" -}}
+
+<section class="wetkiezer" id="{{ $id }}">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg wetkiezer__titel">{{ $title }}</h2>
+    <div class="wetkiezer__intro">{{ .Inner | markdownify }}</div>
+
+    <fieldset class="wetkiezer__keuze">
+      <legend class="wetkiezer__legend">Kies je situatie</legend>
+      <div class="wetkiezer__opties">
+        <input class="wetkiezer__radio" type="radio" name="wetsituatie" id="wetsituatie-bedrijf" value="bedrijf">
+        <label class="wetkiezer__label" for="wetsituatie-bedrijf">Bedrijf dat aan consumenten levert</label>
+
+        <input class="wetkiezer__radio" type="radio" name="wetsituatie" id="wetsituatie-overheid" value="overheid">
+        <label class="wetkiezer__label" for="wetsituatie-overheid">Overheidsinstantie</label>
+
+        <input class="wetkiezer__radio" type="radio" name="wetsituatie" id="wetsituatie-twijfel" value="twijfel">
+        <label class="wetkiezer__label" for="wetsituatie-twijfel">Museum, theater, school of zorginstelling</label>
+      </div>
+    </fieldset>
+
+    <div class="wetkiezer__kaarten">
+
+      <article class="wetkaart" data-geldt="bedrijf twijfel">
+        <p class="wetkaart__markering">Dit past bij de situatie die je koos</p>
+        <h3 class="wetkaart__titel">European Accessibility Act (EAA)</h3>
+        <p class="wetkaart__voorwie"><strong>Geldt voor</strong> commerciële bedrijven die digitale producten of diensten aan consumenten leveren: webshops, bankieren, reizen boeken, ticketing, e-books, streaming en telecom.</p>
+        <dl class="wetkaart__meta">
+          <div class="wetkaart__rij">
+            <dt>Sinds</dt>
+            <dd>28 juni 2025</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Norm</dt>
+            <dd>EN 301 549, op dit moment WCAG 2.1 niveau A en AA</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Toezicht</dt>
+            <dd>Zes toezichthouders, elk voor een eigen soort product of dienst. Voor webshops en apps is dat de ACM</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Wat je moet doen</dt>
+            <dd>Zorgen dat je website of app toegankelijk is, en informatie over de toegankelijkheid publiceren, bijvoorbeeld in je algemene voorwaarden. Een onderzoek is geen wettelijke eis</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Uitzondering</dt>
+            <dd>Micro-ondernemingen: minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Allebei</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="wetkaart" data-geldt="overheid twijfel">
+        <p class="wetkaart__markering">Dit past bij de situatie die je koos</p>
+        <h3 class="wetkaart__titel">Besluit digitale toegankelijkheid overheid (BDTO)</h3>
+        <p class="wetkaart__voorwie"><strong>Geldt voor</strong> overheidsinstanties en publiekrechtelijke instellingen. Let op dat publiekrechtelijke instelling een juridisch begrip is en geen kwestie van subsidie.</p>
+        <dl class="wetkaart__meta">
+          <div class="wetkaart__rij">
+            <dt>Sinds</dt>
+            <dd>1 juli 2018</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Norm</dt>
+            <dd>EN 301 549, op dit moment WCAG 2.1 niveau A en AA</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Toezicht</dt>
+            <dd>Verantwoording via het <a href="/toegankelijkheidsverklaring/">Register van Toegankelijkheidsverklaringen</a></dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Wat je moet doen</dt>
+            <dd>Een toegankelijkheidsverklaring per digitaal kanaal, met onderzoek volgens WCAG-EM eronder. Een rapport vervalt na 36 maanden</dd>
+          </div>
+          <div class="wetkaart__rij">
+            <dt>Uitzondering</dt>
+            <dd>Geen</dd>
+          </div>
+        </dl>
+      </article>
+
+    </div>
+
+    <p class="wetkiezer__noot" id="wetkiezer-noot-twijfel">
+      Hier loopt de grens niet waar je hem verwacht. Twee musea die er van buiten hetzelfde
+      uitzien kunnen onder verschillende wetten vallen. Publiekrechtelijke instelling is een
+      begrip uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden, en
+      overheidsgeld op zichzelf zet het BDTO niet in werking. Voor je eigen website geldt het ene
+      of het andere, nooit allebei. Leg een twijfelgeval voor aan een jurist en niet aan een
+      auditor.
+    </p>
+  </div>
+</section>
