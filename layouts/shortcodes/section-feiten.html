@@ -15,9 +15,6 @@
         {{ with $eyebrow }}<p class="feiten__eyebrow">{{ . }}</p>{{ end }}
         {{ with $title }}<h2 class="hp-heading-lg feiten__titel">{{ . }}</h2>{{ end }}
         {{ .Inner | markdownify }}
-        {{ with .Get "image" }}
-        <img class="feiten__beeld" src="{{ . | relURL }}" alt="{{ $.Get "alt" | default "" }}" loading="lazy" />
-        {{ end }}
       </div>
       {{ with $feiten }}
       <dl class="feiten__lijst">
