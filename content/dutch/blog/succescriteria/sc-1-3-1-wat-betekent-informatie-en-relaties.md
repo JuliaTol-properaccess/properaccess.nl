@@ -97,7 +97,7 @@ Meer weten? Lees ons artikel over [labels](/blog/sc-1-3-1-labels/).
 
 ## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium laat de radar precies zien wat je nodig hebt:
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium laat de radar precies zien wat je nodig hebt:
 
 - **Koppen en structuur:** je ziet alle koppen met hun niveau en krijgt een waarschuwing als er een niveau wordt overgeslagen.
 - **Lijststructuur:** je ziet of je opsommingen echte lijsten zijn, of losse regels met streepjes.
@@ -122,7 +122,7 @@ Ja. Ook in een PDF moeten koppen, lijsten en tabellen echte structuur hebben. Ma
 
 ### Hoe controleer ik snel de koppenstructuur van een hele pagina?
 
-Klik de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) aan op de pagina. Je ziet direct alle koppen met hun niveau. Liever een browserextensie? Lees dan onze [handleiding voor HeadingsMap](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
+Klik de [WCAG Radar](/tools/wcag-radar/) aan op de pagina. Je ziet direct alle koppen met hun niveau. Liever een browserextensie? Lees dan onze [handleiding voor HeadingsMap](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
 
 ## Samenvatting
 
@@ -134,6 +134,6 @@ De belangrijkste punten:
 - Sla geen kopniveaus over.
 - Gebruik de opsommingsknop voor lijsten.
 - Geef tabellen kopcellen en gebruik ze alleen voor echte gegevens.
-- Controleer je pagina's met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

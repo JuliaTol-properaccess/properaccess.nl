@@ -40,7 +40,7 @@ Open je website en doe het volgende:
 
 4. **Lees je formulieren.** Heeft elk veld een zichtbaar label? Zijn foutmeldingen duidelijk?
 
-5. **Check je contrast.** Is alle tekst goed leesbaar? Gebruik een tool als de WebAIM Contrast Checker of de kleurenpipet in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+5. **Check je contrast.** Is alle tekst goed leesbaar? Gebruik een tool als de WebAIM Contrast Checker of de kleurenpipet in de [WCAG Radar van Proper Access](/tools/wcag-radar/).
 
 Na vijf minuten heb je al een eerste indruk.
 
@@ -48,7 +48,7 @@ Na vijf minuten heb je al een eerste indruk.
 
 Installeer de WAVE-extensie of axe DevTools in je browser en scan je homepage. Je krijgt een lijst met problemen die je kunt filteren op ernst.
 
-Wil je zien waar het misgaat op de pagina zelf, dan is de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) handiger. Die maken we zelf, op basis van wat we in onze audits tegenkomen. Hij markeert de problemen in de pagina die je op dat moment bekijkt en heeft een apart tabblad voor redactie, design en development. Hij rekent in je browser, dus een acceptatieomgeving of een pagina achter een login werkt ook.
+Wil je zien waar het misgaat op de pagina zelf, dan is de [WCAG Radar](/tools/wcag-radar/) handiger. Die maken we zelf, op basis van wat we in onze audits tegenkomen. Hij markeert de problemen in de pagina die je op dat moment bekijkt en heeft een apart tabblad voor redactie, design en development. Hij rekent in je browser, dus een acceptatieomgeving of een pagina achter een login werkt ook.
 
 Onthoud: deze tools vinden maximaal 30% van de problemen. Maar het is een goed startpunt.
 

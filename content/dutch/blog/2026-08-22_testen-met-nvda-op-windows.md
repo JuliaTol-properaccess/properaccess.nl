@@ -125,7 +125,7 @@ Ga naar het begin van de pagina met <kbd>Ctrl</kbd> + <kbd>Home</kbd> en druk op
 
 <kbd>NVDA</kbd> + <kbd>F7</kbd>. Je krijgt een venster met links, koppen, formuliervelden, knoppen en oriëntatiepunten, elk in een eigen weergave. Loop de koppenlijst langs en vraag je af of je hieruit begrijpt wat er op de pagina staat.
 
-Wil je diezelfde structuur zien in plaats van horen, dan legt de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) de koppen als blokjes over de pagina heen. Handig om een developer te laten zien wat er ontbreekt.
+Wil je diezelfde structuur zien in plaats van horen, dan legt de [WCAG Radar van Proper Access](/tools/wcag-radar/) de koppen als blokjes over de pagina heen. Handig om een developer te laten zien wat er ontbreekt.
 
 ### 3. Doe het formulier
 

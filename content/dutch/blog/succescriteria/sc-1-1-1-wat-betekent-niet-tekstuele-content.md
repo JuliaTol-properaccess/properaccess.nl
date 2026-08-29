@@ -107,7 +107,7 @@ Twijfel je of een afbeelding decoratief is? Mail je vraag naar info@properaccess
 
 ## Controleer je pagina's met WCAG Radar
 
-Wil je weten hoe jouw pagina's ervoor staan? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Je ziet direct welke afbeeldingen een goede alt-tekst hebben, welke decoratief zijn en welke er nog een missen.
+Wil je weten hoe jouw pagina's ervoor staan? Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Je ziet direct welke afbeeldingen een goede alt-tekst hebben, welke decoratief zijn en welke er nog een missen.
 
 De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
@@ -138,7 +138,7 @@ De belangrijkste punten:
 - Elke informatieve afbeelding heeft een beschrijvende alt-tekst nodig.
 - Decoratieve afbeeldingen krijgen een leeg alt-veld.
 - Zet belangrijke informatie nooit alleen in een afbeelding.
-- Controleer je pagina's met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 - Maak er een gewoonte van om direct een alt-tekst toe te voegen bij nieuwe content.
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

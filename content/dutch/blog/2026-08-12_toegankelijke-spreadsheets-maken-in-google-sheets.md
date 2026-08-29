@@ -96,7 +96,7 @@ Heb je rijen groen gemarkeerd voor goedgekeurd en rood voor afgekeurd? Voor wie 
 
 Voor de rijkleuren via **Opmaak > Afwisselende kleuren** geldt: alle standaardstijlen halen de contrasteis, maar er zit verschil in. Donkerroze met zwarte tekst komt uit op 4,8:1, dus net genoeg. Geel met zwarte tekst leest een stuk makkelijker. In hetzelfde menu maak je een eigen stijl met sterker contrast.
 
-Meten doe je met de Colour Contrast Analyser van TPGi of de online contrastchecker van Deque. Publiceer je het blad als webpagina, dan meet je de kleuren daar met de pipetten in onze [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+Meten doe je met de Colour Contrast Analyser van TPGi of de online contrastchecker van Deque. Publiceer je het blad als webpagina, dan meet je de kleuren daar met de pipetten in onze [WCAG Radar van Proper Access](/tools/wcag-radar/).
 
 ## Voorwaardelijke opmaak
 

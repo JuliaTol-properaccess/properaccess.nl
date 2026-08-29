@@ -51,7 +51,7 @@ Bouw je de front-end helemaal zelf, dan kun je de vijf tests hieronder nog steed
 
 - Test altijd de demo van het thema, niet de website van de verkoper.
 - Vijf tests: skiplink, koppenstructuur, de hamburgerknop, de focusvolgorde en toetsenbordtoegankelijkheid.
-- Voor test 2, 3, 4 en 5 gebruik je onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), dan hoef je geen code te lezen.
+- Voor test 2, 3, 4 en 5 gebruik je de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/), dan hoef je geen code te lezen.
 - Externe plugins en widgets laat ik buiten beschouwing, ook al maken die je website vaak leuker en ingewikkelder.
 
 Hieronder staat het proces dat ik zou doorlopen als ik vandaag een nieuw thema moest kiezen. Je hebt er een browser voor nodig en een kwartier tijd.
@@ -98,7 +98,7 @@ Deze test laat zien hoe zorgvuldig het thema in elkaar zit.
 
 ![Twee panelen met de koppen van een pagina. Links een rommelige structuur met twee h1's, een h5 na een h2 met "h3 en h4 overgeslagen", en vette tekst zonder kop, gemarkeerd met een kruisje. Rechts een nette volgorde h1, h2, h3, h3, h2, h3, met een vinkje.](/images/blog/wordpress-thema-koppenstructuur.webp)
 
-Start onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op de demo en open het tabblad Redactie. Je ziet dan de koppen van de pagina op volgorde, met hun niveau erbij.
+Start onze gratis [WCAG Radar](/tools/wcag-radar/) op de demo en open het tabblad Redactie. Je ziet dan de koppen van de pagina op volgorde, met hun niveau erbij.
 
 Kijk naar twee dingen:
 
@@ -188,6 +188,8 @@ Nee, de commerciële thema's die je voor 60 tot 80 dollar koopt zijn dat niet. D
 
 ## Zelf aan de slag
 
-Wil je je huidige thema nakijken, dan kun je de vijf tests hierboven vandaag zelf doen met de gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Die draait volledig in je browser en stuurt niets door.
+Wil je je huidige thema nakijken, dan kun je de vijf tests hierboven vandaag zelf doen met de gratis [WCAG Radar](/tools/wcag-radar/). Die draait volledig in je browser en stuurt niets door.
+
+Loop je bij een van de tests vast, dan kun je die ene vraag voorleggen via de [strippenkaart](/strippenkaart/). Eén vraag over één onderwerp kost één strip, vanaf 20 euro, en je krijgt binnen 3 tot 5 werkdagen antwoord van een auditor van Proper Access. Daar hoef je geen audit bij ons voor te hebben gehad.
 
 Wil je liever dat iemand met auditervaring ernaar kijkt voordat je een thema kiest? Bekijk dan de [mini-audit](/webshop-quickscan/) of [neem contact op](/contact/).

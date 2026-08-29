@@ -21,7 +21,7 @@ keywords:
   - aria-hidden true
 ---
 
-Je controleert een pagina met [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) en zet de optie "Verborgen elementen" aan. Er lichten een paar plekken op. Bij elk daarvan staat: `aria-hidden`.
+Je controleert een pagina met de [WCAG Radar van Proper Access](/tools/wcag-radar/) en zet de optie "Verborgen elementen" aan. Er lichten een paar plekken op. Bij elk daarvan staat: `aria-hidden`.
 
 Wat betekent dat? En is het erg?
 

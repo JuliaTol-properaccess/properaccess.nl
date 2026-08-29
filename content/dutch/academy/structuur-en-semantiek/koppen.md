@@ -98,7 +98,7 @@ Soms wordt een `<h3>` gebruikt puur omdat de tekst kleiner moet zijn dan een `<h
 <div class="academy-tip">
 <p class="academy-tip__title">Tip: koppenstructuur controleren</p>
 
-Installeer de browser-extensie HeadingsMap (beschikbaar voor Chrome en Firefox). Die toont in een oogopslag de volledige koppenstructuur van elke pagina, inclusief overgeslagen niveaus. Onze eigen [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) doet dit ook, als bladwijzer of als extensie, en werkt ook op een pagina achter een login.
+Installeer de browser-extensie HeadingsMap (beschikbaar voor Chrome en Firefox). Die toont in een oogopslag de volledige koppenstructuur van elke pagina, inclusief overgeslagen niveaus. Onze eigen [WCAG Radar van Proper Access](/tools/wcag-radar/) doet dit ook, als bladwijzer of als extensie, en werkt ook op een pagina achter een login.
 
 </div>
 

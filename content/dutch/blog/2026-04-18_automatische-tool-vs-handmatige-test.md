@@ -76,6 +76,6 @@ Een goede audit combineert altijd:
 
 Bij Proper Access is dat standaard. We gebruiken tools om efficiënt te werken, maar de beoordeling is altijd mensenwerk.
 
-Wil je weten met welke tools je die eerste 30% zelf afdekt? We vergelijken [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/), inclusief schermlezers en contrasttools. Zelf beginnen kan met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar); de gratis versie doet 28 van de 45 checks.
+Wil je weten met welke tools je die eerste 30% zelf afdekt? We vergelijken [welke tools je gebruikt om je website op WCAG te testen](/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/), inclusief schermlezers en contrasttools. Zelf beginnen kan met de [WCAG Radar van Proper Access](/tools/wcag-radar/); de gratis versie doet 28 van de 45 checks.
 
 Wil je zien wat een combinatie van tools en handmatig onderzoek oplevert? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw).

@@ -107,7 +107,7 @@ Je kunt pas een plan maken als je weet wat er aan de hand is. Er zijn twee manie
 
 - Navigeer je website met alleen het toetsenbord (Tab, Enter, Escape). Kom je overal? Zie je waar je bent?
 - Zet je browser op 200% zoom. Valt er content weg? Overlappen elementen?
-- Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) om alt-teksten, koppen en linkteksten te controleren
+- Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/) om alt-teksten, koppen en linkteksten te controleren
 - Draai Lighthouse in Chrome DevTools (maar weet dat dit maximaal 30 procent van de problemen vindt)
 
 **Een professionele audit laten doen:**
@@ -192,6 +192,8 @@ Wil je weten waar jouw website staat? Neem [contact op](https://www.properaccess
 
 Liever eerst zelf checken? Gebruik onze [gratis tools](https://www.properaccess.nl/tools/) om de basis te controleren.
 
+Kom je bij het zelf verbeteren ergens niet uit, dan kun je die ene vraag voorleggen via de [strippenkaart](/strippenkaart/). Eén vraag over één onderwerp kost één strip, vanaf 20 euro, en een auditor van Proper Access antwoordt binnen 3 tot 5 werkdagen. Vervolgvragen in dezelfde draad zijn gratis.
+
 ---
 
-_Julia Tol is oprichter van Proper Access en voert sinds 2019 toegankelijkheidsaudits uit. Niet met dikke rapporten, maar met concrete oplossingen._
+_Julia Tol is oprichter van Proper Access en voert sinds 2019 toegankelijkheidsaudits uit, met concrete oplossingen in plaats van dikke rapporten._

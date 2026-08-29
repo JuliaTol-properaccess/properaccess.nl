@@ -97,7 +97,7 @@ Nu past de gebruiker aan naar line-height 1.5 (48px). Ineens is een regel 48px h
 
 ## Hoe test je dit?
 
-De makkelijkste manier is onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop naar je bladwijzerbalk, klikt hem aan op een pagina van je eigen site en zet de check Tekstafstand aan. Alle vier de waarden worden dan in een keer toegepast, zodat je direct ziet waar je tekst breekt.
+De makkelijkste manier is de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop naar je bladwijzerbalk, klikt hem aan op een pagina van je eigen site en zet de check Tekstafstand aan. Alle vier de waarden worden dan in een keer toegepast, zodat je direct ziet waar je tekst breekt.
 
 Wil je het liever handmatig regelen? Dan voeg je deze bookmarklet toe als bladwijzer. Die past dezelfde vier waarden toe:
 

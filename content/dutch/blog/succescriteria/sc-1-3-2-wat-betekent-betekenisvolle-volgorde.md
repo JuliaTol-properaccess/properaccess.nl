@@ -73,7 +73,7 @@ Deze dingen kun je niet zelf oplossen, maar wel signaleren:
 
 ## Controleer de leesvolgorde met WCAG Radar
 
-Je hoeft hiervoor geen schermlezer te leren bedienen. Met onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) zie je de leesvolgorde in één klik. Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan.
+Je hoeft hiervoor geen schermlezer te leren bedienen. Met de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/) zie je de leesvolgorde in één klik. Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan.
 
 ### Stap 1: zet de opmaak uit
 
@@ -125,7 +125,7 @@ Op de pagina van het bericht zelf mag het prima, want daar staat de afbeelding m
 
 ### Hoe zie ik de leesvolgorde zonder een schermlezer te installeren?
 
-Klik de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) aan en kies **Opmaak uit (leesvolgorde)** in het tabblad Redactie. Je ziet dan dezelfde volgorde als een schermlezer volgt.
+Klik de [WCAG Radar](/tools/wcag-radar/) aan en kies **Opmaak uit (leesvolgorde)** in het tabblad Redactie. Je ziet dan dezelfde volgorde als een schermlezer volgt.
 
 ### Geldt dit ook voor pdf's?
 
@@ -141,6 +141,6 @@ De belangrijkste punten:
 - Geef uitgelichte afbeeldingen in overzichten een leeg alt-attribuut.
 - Wees voorzichtig met kolommen: die worden na elkaar voorgelezen.
 - Gebruik echte tabellen voor gegevens die bij elkaar horen.
-- Controleer de leesvolgorde met **Opmaak uit** in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Controleer de leesvolgorde met **Opmaak uit** in de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.
