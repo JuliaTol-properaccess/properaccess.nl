@@ -17,7 +17,7 @@ description: "Wat moet jouw onderwijsinstelling doen voor de European Accessibil
 
 Je leeromgeving draait, je docenten zijn enthousiast over digitaal onderwijs en je studenten loggen dagelijks in op Moodle of Canvas. Maar kun je garanderen dat een blinde student die toets kan maken? Of dat een student met een motorische beperking door je WordPress-site kan navigeren om zich in te schrijven voor een minor?
 
-Sinds 28 juni 2025 is de European Accessibility Act (EAA) van kracht. Voor veel onderwijsinstellingen betekent dat een wettelijke verplichting om digitale omgevingen toegankelijk te maken. Maar wat moet je precies doen? En waar begin je als je meerdere platformen hebt, honderden documenten en een IT-afdeling die al overvol zit?
+Sinds 28 juni 2025 is de [European Accessibility Act (EAA)](/eaa/) van kracht. Voor veel onderwijsinstellingen betekent dat een wettelijke verplichting om digitale omgevingen toegankelijk te maken. Maar wat moet je precies doen? En waar begin je als je meerdere platformen hebt, honderden documenten en een IT-afdeling die al overvol zit?
 
 In dit artikel neem ik je mee door de zes stappen die we bij Proper Access doorlopen met onderwijsinstellingen. Geen theorie, maar een concreet stappenplan gebaseerd op honderden audits bij scholen, hogescholen en universiteiten.
 

@@ -15,7 +15,7 @@ keywords:
   - EAA
 ---
 
-De European Accessibility Act (EAA) is sinds 28 juni 2025 van kracht. Als je bedrijf niet voldoet, kunnen er sancties volgen. Maar hoe werkt dat precies?
+De [European Accessibility Act (EAA)](/eaa/) is sinds 28 juni 2025 van kracht. Als je bedrijf niet voldoet, kunnen er sancties volgen. Maar hoe werkt dat precies?
 
 ## Wie handhaaft de EAA in Nederland?
 

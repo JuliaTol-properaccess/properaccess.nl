@@ -17,7 +17,7 @@ keywords:
 
 ## Introductie
 
-Ontwikkel je software, apps of digitale platforms voor klanten buiten Nederland? Of koop je digitale producten in andere Europese landen? Dan krijg je onvermijdelijk te maken met [de European Accessibility Act (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en). Deze Europese richtlijn is sinds 28 juni 2025 volledig in werking en verplicht bedrijven om digitale producten en diensten toegankelijk te maken voor iedereen, inclusief mensen met een beperking.
+Ontwikkel je software, apps of digitale platforms voor klanten buiten Nederland? Of koop je digitale producten in andere Europese landen? Dan krijg je onvermijdelijk te maken met [de [European Accessibility Act](/eaa/) (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en). Deze Europese richtlijn is sinds 28 juni 2025 volledig in werking en verplicht bedrijven om digitale producten en diensten toegankelijk te maken voor iedereen, inclusief mensen met een beperking.
 
 De EAA heeft één gemeenschappelijk doel: gelijke toegang tot digitale technologie in heel Europa. Toch betekent dat niet dat de regels overal hetzelfde zijn. Elke lidstaat heeft de richtlijn omgezet in eigen nationale wetgeving, met verschillen in normen, documentatie-eisen en boetes. In dit artikel krijg je een praktisch overzicht van hoe verschillende landen de EAA toepassen, en waar je rekening mee moet houden als je daar digitale producten of diensten aanbiedt.
 

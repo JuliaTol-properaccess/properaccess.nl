@@ -21,7 +21,7 @@ keywords:
   - "eaa toezicht digitale toegankelijkheid"
 ---
 
-Op 25 juni stonden we op de Dag van Digitale Toegankelijkheid, georganiseerd door Angeliek Lieverdink en stichting DUIT. Een van de sprekers was Caitlin de Rooij van de Autoriteit Consument en Markt (ACM). Het toezicht op de European Accessibility Act is in Nederland verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De ACM gaat over webshops en apps, en is daarmee de organisatie die straks bepaalt of jouw webshop genoeg doet.
+Op 25 juni stonden we op de Dag van Digitale Toegankelijkheid, georganiseerd door Angeliek Lieverdink en stichting DUIT. Een van de sprekers was Caitlin de Rooij van de Autoriteit Consument en Markt (ACM). Het toezicht op de [European Accessibility Act](/eaa/) is in Nederland verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De ACM gaat over webshops en apps, en is daarmee de organisatie die straks bepaalt of jouw webshop genoeg doet.
 
 ![Caitlin de Rooij van de ACM op het podium tijdens de Dag van Digitale Toegankelijkheid, met een gebarentolk naast haar en een slide met de tekst Wat doet een toezichthouder.](/images/blog/caitlin-de-rooij-acm-dag-digitale-toegankelijkheid.webp)
 

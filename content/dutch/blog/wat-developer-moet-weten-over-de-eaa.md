@@ -14,7 +14,7 @@ description: "Wat moeten web agencies weten over de European Accessibility Act (
 
 ## Wat is de toegankelijkheidswet?
 
-De toegankelijkheidswet is een Europese wet die op **28 juni** van **2025** ingaat en gevolgen heeft voor **heel veel** bedrijven die via een website diensten of producten leveren aan consumenten of de overheid. De wet is ook bekend als de EAA, de European Accessibility Act. **Alle** bedrijven die meer dan **10** medewerkers hebben, **óf** meer dan **2 miljoen** omzet per jaar, moeten eraan voldoen. 
+De toegankelijkheidswet is een Europese wet die op **28 juni** van **2025** ingaat en gevolgen heeft voor **heel veel** bedrijven die via een website diensten of producten leveren aan consumenten of de overheid. De wet is ook bekend als de EAA, de [European Accessibility Act](/eaa/). **Alle** bedrijven die meer dan **10** medewerkers hebben, **óf** meer dan **2 miljoen** omzet per jaar, moeten eraan voldoen. 
 
 Om te voldoen aan deze wet, moet je zorgen dat jouw websites, apps of andere digitale kanalen **toegankelijk** zijn voor mensen met een functiebeperking. Dat zijn bijvoorbeeld mensen die niet kunnen zien, die de muis niet kunnen gebruiken of die kleurenblind zijn. Uit onderzoeken blijkt dat het om zo’n **25 procent** van alle mensen gaat. De wet is bedacht om ervoor te zorgen dat **elk mens**, met of zonder beperking, digitale diensten en producten kan gebruiken.
 
