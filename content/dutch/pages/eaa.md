@@ -3,7 +3,6 @@ title: "European Accessibility Act (EAA)"
 meta_title: "European Accessibility Act (EAA): wat het is en wat je moet doen | Proper Access"
 type: "diensten"
 layout: "agency"
-hide_cta: true
 date: 2026-08-29
 slug: "eaa"
 url: "/eaa/"
@@ -60,65 +59,103 @@ faqs:
 
 {{< section-full title="Wat is de European Accessibility Act?" id="wat-is-het" >}}
 
-De European Accessibility Act is richtlijn (EU) 2019/882, vastgesteld op 17 april 2019. De richtlijn verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken voor mensen met een beperking. Nederland heeft hem omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, Staatsblad 2024, 87. De regels worden toegepast sinds 28 juni 2025.
+De European Accessibility Act is
+[richtlijn (EU) 2019/882](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882), vastgesteld op 17 april 2019. De richtlijn verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken voor mensen met een beperking. Nederland heeft hem omgezet met de
+[Implementatiewet toegankelijkheidsvoorschriften producten en diensten](https://zoek.officielebekendmakingen.nl/stb-2024-87.html), Staatsblad 2024, 87. De regels worden toegepast sinds 28 juni 2025.
 
-Voor die datum was digitale toegankelijkheid in Nederland vooral een verplichting voor de overheid, via het Besluit digitale toegankelijkheid overheid (BDTO) uit 2018. De EAA breidt dat uit naar het bedrijfsleven.
+Voor die datum was digitale toegankelijkheid in Nederland vooral een verplichting voor de overheid, via het
+[Besluit digitale toegankelijkheid overheid](https://wetten.overheid.nl/BWBR0040936) uit 2018. De EAA breidt die plicht uit naar het bedrijfsleven.
 
-Er lopen twee overgangstermijnen. Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar.
-
-{{< /section-full >}}
-
-{{< section-full title="Voor wie geldt de EAA?" id="voor-wie" bg="light" >}}
-
-De EAA geldt voor commerciële bedrijven die digitale producten of diensten aan consumenten aanbieden. In de praktijk gaat het om:
-
-- **Webshops en online marktplaatsen**
-- **Bankieren en verzekeren** voor consumenten
-- **Reizen boeken en ticketverkoop**, voor vervoer, evenementen en cultuur
-- **E-books en streamingdiensten**
-- **Telecom- en communicatiediensten**
-- **Apparaten** zoals betaalterminals, geldautomaten, ticketautomaten en e-readers
-
-Welke wet voor je geldt hangt af van **wat je organisatie is**, niet van wat je verkoopt. Een commercieel bedrijf valt onder de EAA. Een overheidsinstantie of publiekrechtelijke instelling valt onder het BDTO. Voor de eigen website of app geldt het ene of het andere, nooit allebei.
-
-In de culturele sector loopt die grens niet waar je hem verwacht. Twee musea die er van buiten hetzelfde uitzien kunnen onder verschillende wetten vallen, want publiekrechtelijke instelling is een juridisch begrip uit het aanbestedingsrecht en geen kwestie van subsidie. Een museum met subsidie is dus niet automatisch BDTO-plichtig. Twijfel je, leg dat dan voor aan een jurist.
-
-### De uitzondering voor micro-ondernemingen
-
-De ACM omschrijft een micro-onderneming als een bedrijf met **minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro**. Allebei de voorwaarden moeten gelden. Een balanstotaal voert de ACM niet op als criterium.
-
-### Onevenredige last
-
-Een bedrijf kan zich beroepen op een onevenredige last, of op een fundamentele wijziging van het product. Dat is geen automatische uitzondering. De beoordeling moet zijn vastgelegd en onderbouwd, moet elke vijf jaar opnieuw worden gedaan, en de toezichthouder mag hem opvragen.
+**Er lopen twee overgangstermijnen.** Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Voor een website of app die je vandaag onderhoudt betekent dat weinig: die valt gewoon onder de plicht.
 
 {{< /section-full >}}
 
-{{< section-full title="Aan welke norm moet je voldoen?" id="norm" >}}
+{{< section-cards title="Voor wie geldt de EAA?" subtitle="De wet geldt voor commerciële bedrijven die digitale producten of diensten aan consumenten aanbieden. Dit zijn de groepen die we in de praktijk het vaakst tegenkomen." id="voor-wie" bg="light" columns="3" >}}
 
-Onder de EAA ligt **EN 301 549**, de Europese norm voor toegankelijkheid van ICT. Die norm staat op dit moment op **WCAG 2.1 niveau A en AA**, samen 50 succescriteria.
+{{< section-card title="Webshops en marktplaatsen" >}}
+Alles waar een consument iets kan bestellen en betalen. Het afrekenproces is het onderdeel waar de ACM als eerste naar kijkt, van product in het mandje tot betaling. [Toegankelijkheid voor e-commerce](/e-commerce-digitale-toegankelijkheid/) {{< /section-card >}}
 
-De versie die juridisch telt is V3.2.1 uit maart 2021, aangewezen met uitvoeringsbesluit (EU) 2021/1339. Er ligt een concept voor een versie 4 die WCAG 2.2 overneemt, en de verwachting is dat die rond eind 2026 wordt aangewezen. Zolang dat niet is gebeurd, is WCAG 2.1 de juridische ondergrens. Kom je een tekst tegen die zegt dat EN 301 549 nu al naar WCAG 2.2 verwijst, dan klopt dat niet.
+{{< section-card title="Ticketing, cultuur en attracties" >}} Kaartverkoop voor evenementen, musea, theaters en pretparken. Let op: of je onder de EAA valt of onder het BDTO hangt af van wat je organisatie juridisch is. [Toegankelijkheid voor cultuur en attracties](/inclusie-cultuur-sport-en-attracties/) {{< /section-card >}}
+
+{{< section-card title="Bankieren, verzekeren en telecom" >}} Online bankieren, verzekeringen afsluiten, telefonie- en internetabonnementen. Voor bankdiensten aan consumenten is de AFM de toezichthouder en niet de ACM.
+{{< /section-card >}}
+
+{{< section-card title="Reizen boeken en vervoer" >}}
+Boekingssites, reisapps en de verkoop van vervoerbewijzen. Het toezicht op personenvervoer per vliegtuig, bus, trein en over water ligt bij de ILT.
+{{< /section-card >}}
+
+{{< section-card title="E-books, streaming en software" >}}
+E-boeken en lezers, streamingdiensten en software die je aan consumenten levert. EN 301 549 stelt ook eisen aan de documentatie die je meelevert.
+[Techniek- of systeemaudit](/techniekaudit/)
+{{< /section-card >}}
+
+{{< section-card title="Ben je overheid? Dan geldt het BDTO" >}} Een overheidsinstantie of publiekrechtelijke instelling valt onder het Besluit digitale toegankelijkheid overheid. Voor je eigen website geldt het ene of het andere, nooit allebei. [Toegankelijkheid voor de overheid](/digitale-toegankelijkheid-overheid/) {{< /section-card >}}
+
+{{< /section-cards >}}
+
+{{< section-full title="Welke wet geldt voor jou?" id="welke-wet" >}}
+
+Welke wet voor je geldt hangt af van **wat je organisatie is**, niet van wat je verkoopt. Een commercieel bedrijf valt onder de EAA. Een overheidsinstantie of publiekrechtelijke instelling valt onder het BDTO.
+
+In de culturele sector loopt die grens niet waar je hem verwacht. Twee musea die er van buiten hetzelfde uitzien kunnen onder verschillende wetten vallen. Publiekrechtelijke instelling is een juridisch begrip uit het aanbestedingsrecht, met drie voorwaarden die allemaal moeten gelden, en het is dus geen kwestie van subsidie. Een museum met subsidie is niet automatisch BDTO-plichtig. Twijfel je, leg dat dan voor aan een jurist en niet aan een auditor.
+
+{{< /section-full >}}
+
+{{< section-cards title="Twee uitzonderingen, en ze worden vaak door elkaar gehaald" subtitle="Val je onder de EAA, dan zijn er twee routes waarlangs de plicht kan vervallen of verlicht worden. Ze werken totaal verschillend." id="uitzonderingen" bg="light" columns="2" >}}
+
+{{< section-card title="Micro-onderneming: vrijgesteld" >}}
+De [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten) omschrijft een micro-onderneming als een bedrijf met **minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro**.
+
+Twee dingen gaan hier het vaakst mis. Allebei de voorwaarden moeten gelden, dus het is niet één van de twee. En een balanstotaal voert de ACM niet op als criterium, ook al kom je dat in andere teksten wel tegen.
+
+Zit je boven een van beide grenzen, dan geldt de plicht gewoon.
+{{< /section-card >}}
+
+{{< section-card title="Onevenredige last: onderbouwen" >}}
+Hier val je niet buiten de wet. Je stelt vast dat een specifieke aanpassing onevenredig zwaar is, of dat die het product fundamenteel zou veranderen.
+
+Dat werkt niet vanzelf. De beoordeling moet zijn **vastgelegd en onderbouwd**, moet **elke vijf jaar opnieuw** worden gedaan, en de **toezichthouder mag hem opvragen**.
+
+Wie zich hierop beroept zonder dossier, staat bij een controle met lege handen.
+{{< /section-card >}}
+
+{{< /section-cards >}}
+
+{{< section-highlight title="Aan welke norm moet je voldoen?" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" link="/toegankelijkheidsaudit/" link_text="Zo toetsen wij" >}}
+
+Onder de EAA ligt **[EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)**, de Europese norm voor toegankelijkheid van ICT. Die norm staat op dit moment op **[WCAG 2.1 niveau A en AA](https://www.w3.org/TR/WCAG21/)**, samen 50 succescriteria.
+
+Het BDTO wijst naar diezelfde norm. De eisen aan je website verschillen dus niet tussen een gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt.
+
+{{< /section-highlight >}}
+
+{{< section-full title="Welke versie van de norm telt?" id="norm" >}}
+
 
 Bij Proper Access toetsen we aan WCAG 2.2. Dat is een versie hoger dan de norm vraagt, en het scheelt je een tweede ronde zodra versie 4 wel wordt aangewezen. WCAG 2.2 voegde negen criteria toe, waarvan er zes op niveau A en AA vallen. Een paar daarvan raken precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie.
 
-EN 301 549 gaat over meer dan websites. De norm behandelt ook hardware, software, documentatie en klantondersteuning. Hoofdstuk 9 is het webhoofdstuk en neemt daar de WCAG-succescriteria over. Je website kan dus aan WCAG voldoen en op de norm alsnog tekortschieten, bijvoorbeeld omdat je klantenservice alleen telefonisch bereikbaar is.
+### De norm gaat over meer dan je website
+
+Dit verrast de meeste mensen. EN 301 549 behandelt ook hardware, software, documentatie en klantondersteuning. Hoofdstuk 9 is het webhoofdstuk en neemt daar de WCAG-succescriteria over, maar de norm houdt daar niet op.
+
+Een voorbeeld dat we in de praktijk tegenkomen. Stel dat je webshop netjes aan WCAG voldoet, maar je klantenservice is alleen te bereiken via een telefoonnummer. Iemand die doof of slechthorend is kan dan wel bestellen, maar niet vragen waar zijn pakket blijft of een klacht indienen. Je website haalt de WCAG-toets, en op de norm als geheel schiet je alsnog tekort. Een chatfunctie, een e-mailadres of een formulier lost dat op.
 
 {{< /section-full >}}
 
 {{< section-full title="Wie houdt er toezicht?" id="toezicht" bg="light" >}}
 
-Het toezicht op de EAA is in Nederland verdeeld over **zes toezichthouders**, elk voor een eigen soort product of dienst.
+Het toezicht op de EAA is in Nederland verdeeld over **zes toezichthouders**, elk voor een eigen soort product of dienst. Er is dus geen enkele "Autoriteit Toegankelijkheid": kom je die naam tegen, dan bestaat die organisatie niet.
 
 | Toezichthouder | Waarvoor |
 | --- | --- |
-| **ACM** | E-handelsdiensten: webshops en apps. Plus elektronische communicatiediensten. |
-| **AFM** | Bankdiensten voor consumenten, en e-handelsdiensten van financiële aard. |
-| **RDI** | Apparaten: computers, smartphones, geldautomaten, betaalterminals, ticket- en incheckautomaten, e-readers, tv's. |
+| **[ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten)** | E-handelsdiensten: webshops en apps. Plus elektronische communicatiediensten. |
+| **[AFM](https://www.afm.nl/nl-nl/sector/themas/dienstverlening-aan-consumenten/toegankelijkheid)** | Bankdiensten voor consumenten, en e-handelsdiensten van financiële aard. |
+| **[RDI](https://www.rdi.nl/onderwerpen/europese-toegankelijkheidsrichtlijn)** | Apparaten: computers, smartphones, geldautomaten, betaalterminals, ticket- en incheckautomaten, e-readers, tv's. |
 | **Commissariaat voor de Media** | E-boeken, en diensten die toegang geven tot audiovisuele mediadiensten. |
 | **ILT** | Personenvervoer per vliegtuig, bus, trein en over water. |
 | **Inspectie JenV** | Het noodnummer 112. |
 
-Heb je een webshop, dan is de [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten) je toezichthouder.
+Heb je een webshop, dan is de ACM je toezichthouder.
 
 ### Hoe de ACM het in 2026 aanpakte
 
@@ -128,19 +165,28 @@ Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Bij het toetsen 
 
 {{< /section-full >}}
 
-{{< section-full title="Wat moet je nu doen?" id="wat-nu" >}}
-
-**De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis.** Dat verschil is belangrijk, want het bepaalt waar je op stuurt. Een onderzoek is de manier om te weten waar je staat, en om het te kunnen onderbouwen als een toezichthouder ernaar vraagt.
-
-Dit is de route die wij aanhouden:
-
-1. **Weet waar je staat.** Een onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. Wil je eerst een indicatie, dan is een [mini-audit](/webshop-quickscan/) van 495 euro exclusief btw een klein begin.
-2. **Los op wat de bezoeker blokkeert.** Begin bij wat iemand tegenhoudt om te bestellen of te betalen. Bij een webshop is dat vrijwel altijd het afrekenproces, en dat is ook precies wat de ACM doorloopt.
-3. **Leg vast dat het is opgelost.** Met een [hercontrole](/hercontrole/) toets je de opgeloste bevindingen opnieuw, zodat je bewijs hebt in plaats van een aanname.
-4. **Publiceer informatie over de toegankelijkheid van je dienst**, bijvoorbeeld in je algemene voorwaarden. Let op dat dit iets anders is dan een toegankelijkheidsverklaring in het Register: dat Register hoort bij het BDTO en geldt voor de overheid.
-5. **Houd het bij.** De meeste bevindingen die wij bij een hercontrole tegenkomen zijn nieuw en komen uit content en features die er na het onderzoek bij zijn gekomen.
-
-{{< /section-full >}}
+{{< section-steps id="wat-nu" title="Wat moet je nu doen?" subtitle="De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis. Je doet het omdat je zonder onderzoek niet weet wat er mis is, en omdat je het moet kunnen onderbouwen als een toezichthouder ernaar vraagt. Dit is de route die wij aanhouden." >}}
+<div class="card">
+  <i class="card__icon" aria-hidden="true">1</i>
+  <h3 class="card__title">Weten waar je staat</h3>
+  <p>Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. Wil je eerst een indicatie voordat je een heel traject start, dan is een <a href="/webshop-quickscan/">mini-audit</a> van 495 euro exclusief btw een klein begin.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">2</i>
+  <h3 class="card__title">Oplossen wat blokkeert</h3>
+  <p>Begin bij wat iemand tegenhoudt om te bestellen of te betalen. Bij een webshop is dat vrijwel altijd het afrekenproces, en dat is ook precies het onderdeel dat de ACM doorloopt. Dit is de langste stap.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">3</i>
+  <h3 class="card__title">Vastleggen dat het weg is</h3>
+  <p>Met een <a href="/hercontrole/">hercontrole</a> toetsen we de opgeloste bevindingen opnieuw. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.</p>
+</div>
+<div class="card">
+  <i class="card__icon" aria-hidden="true">4</i>
+  <h3 class="card__title">Publiceren en bijhouden</h3>
+  <p>Publiceer informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je algemene voorwaarden. Dat is iets anders dan een <a href="/toegankelijkheidsverklaring/">toegankelijkheidsverklaring</a> in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.</p>
+</div>
+{{< /section-steps >}}
 
 {{< section-full title="Verder lezen over de EAA" id="verder-lezen" bg="light" >}}
 
@@ -163,14 +209,6 @@ Dit is de route die wij aanhouden:
 - [Wat je als web agency moet weten over de EAA](/blog/wat-developer-moet-weten-over-de-eaa/)
 - [Wat ondernemers echt vinden van de EAA](/blog/wat-ondernemers-vinden-van-de-eaa/)
 
+Zoek je begeleiding over de hele route, van onderzoek tot verantwoording, kijk dan bij [hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/).
+
 {{< /section-full >}}
-
-{{< section-cta title="Weten waar je webshop staat?" id="contact" >}}
-
-We onderzoeken je website, webshop of app volgens WCAG-EM en toetsen aan WCAG 2.2. Je krijgt een rapport per element en niet per succescriterium, met screenshots en code-voorbeelden erbij, zodat je developer er maandag mee aan de slag kan. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, peildatum 7 augustus 2026.
-
-Zoek je begeleiding over de hele route, van onderzoek tot verantwoording, kijk dan bij [hulp bij Europese toegankelijkheidswetgeving](/hulp-bij-europese-toegankelijkheidswetgeving/).
-
-{{< button label="Plan een kennismaking" link="/contact/" >}}
-
-{{< /section-cta >}}

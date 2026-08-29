@@ -1,0 +1,39 @@
+<svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="eaanormtitle">
+  <title id="eaanormtitle">Twee wetten wijzen naar dezelfde norm</title>
+
+  <!-- Wet links: EAA -->
+  <rect x="8" y="8" width="188" height="74" rx="10" fill="#ffffff" stroke="#A30D4B" stroke-width="2"/>
+  <text x="102" y="34" text-anchor="middle" font-family="Plus Jakarta Sans, Nunito, sans-serif" font-size="14" font-weight="700" fill="#1F2937">European Accessibility Act</text>
+  <text x="102" y="53" text-anchor="middle" font-family="Nunito, sans-serif" font-size="12" fill="#004050">Bedrijven</text>
+  <text x="102" y="70" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" fill="#004050">sinds 28 juni 2025</text>
+
+  <!-- Wet rechts: BDTO -->
+  <rect x="224" y="8" width="188" height="74" rx="10" fill="#ffffff" stroke="#004050" stroke-width="2"/>
+  <text x="318" y="34" text-anchor="middle" font-family="Plus Jakarta Sans, Nunito, sans-serif" font-size="14" font-weight="700" fill="#1F2937">BDTO</text>
+  <text x="318" y="53" text-anchor="middle" font-family="Nunito, sans-serif" font-size="12" fill="#004050">Overheid</text>
+  <text x="318" y="70" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" fill="#004050">sinds 2018</text>
+
+  <!-- Pijlen omlaag naar de norm -->
+  <path d="M102 82 L102 122" stroke="#A30D4B" stroke-width="2" fill="none"/>
+  <path d="M96 116 L102 124 L108 116" stroke="#A30D4B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M318 82 L318 122" stroke="#004050" stroke-width="2" fill="none"/>
+  <path d="M312 116 L318 124 L324 116" stroke="#004050" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- De norm -->
+  <rect x="8" y="128" width="404" height="76" rx="10" fill="#f5f5f5" stroke="#1F2937" stroke-width="2"/>
+  <text x="210" y="156" text-anchor="middle" font-family="Plus Jakarta Sans, Nunito, sans-serif" font-size="15" font-weight="700" fill="#1F2937">EN 301 549</text>
+  <text x="210" y="176" text-anchor="middle" font-family="Nunito, sans-serif" font-size="12" fill="#004050">De Europese norm voor toegankelijke ICT</text>
+  <text x="210" y="193" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" fill="#004050">Web, software, hardware, documentatie en klantondersteuning</text>
+
+  <!-- Pijl omlaag naar WCAG -->
+  <path d="M210 204 L210 244" stroke="#1F2937" stroke-width="2" fill="none"/>
+  <path d="M204 238 L210 246 L216 238" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="222" y="228" font-family="Nunito, sans-serif" font-size="11" fill="#004050">hoofdstuk 9</text>
+
+  <!-- WCAG -->
+  <rect x="8" y="250" width="404" height="82" rx="10" fill="#ffffff" stroke="#1F2937" stroke-width="2"/>
+  <text x="210" y="277" text-anchor="middle" font-family="Plus Jakarta Sans, Nunito, sans-serif" font-size="15" font-weight="700" fill="#1F2937">WCAG 2.1, niveau A en AA</text>
+  <text x="210" y="296" text-anchor="middle" font-family="Nunito, sans-serif" font-size="12" fill="#004050">50 succescriteria. Dit is de juridische ondergrens.</text>
+  <rect x="86" y="306" width="248" height="20" rx="10" fill="#ffffff" stroke="#A30D4B" stroke-width="1.5"/>
+  <text x="210" y="320" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" font-weight="700" fill="#A30D4B">Proper Access toetst aan WCAG 2.2</text>
+</svg>
