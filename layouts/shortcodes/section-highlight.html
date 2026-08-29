@@ -5,7 +5,7 @@
 {{ $link_text := .Get "link_text" }}
 {{ $bg := .Get "bg" }}
 
-<section class="section-highlight{{ if eq $bg "light" }} section-highlight--light{{ end }}">
+<section class="section-highlight{{ if eq $bg "light" }} section-highlight--light{{ end }}{{ if eq (.Get "reverse") "true" }} section-highlight--reverse{{ end }}"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
   <div class="hp-container">
     <div class="section-highlight__grid">
       <div class="section-highlight__text">

@@ -13536,6 +13536,12 @@ a.tool-link__href-url:hover {
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem;
   }
+
+  /* reverse="true" zet het beeld links en de tekst rechts, zodat opeenvolgende
+     secties elkaar afwisselen. Onder 768px staat het beeld altijd boven. */
+  .section-highlight--reverse .section-highlight__media {
+    order: -1;
+  }
 }
 
 @media (max-width: 767px) {

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="presentation">
+  <rect width="480" height="300" fill="#ffffff"/>
+
+  <text x="12" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#1F2937">Honderd bevindingen, op volgorde gezet</text>
+  <text x="12" y="38" font-family="sans-serif" font-size="8.5" fill="#4B5563">Wat eerst moet, en wat kan wachten</text>
+
+  <!-- Eerst -->
+  <rect x="12" y="50" width="456" height="66" rx="8" fill="#ffffff" stroke="#A30D4B" stroke-width="2"/>
+  <rect x="26" y="62" width="52" height="16" rx="8" fill="#A30D4B"/>
+  <text x="52" y="73" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#ffffff">Eerst</text>
+  <text x="88" y="74" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1F2937">Het afrekenproces</text>
+  <text x="26" y="94" font-family="sans-serif" font-size="8.5" fill="#4B5563">Houdt bezoekers tegen bij het afronden van een bestelling.</text>
+  <text x="26" y="107" font-family="sans-serif" font-size="8.5" fill="#4B5563">Ook het eerste waar de ACM naar kijkt.</text>
+
+  <!-- Daarna -->
+  <rect x="12" y="126" width="456" height="60" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="26" y="138" width="52" height="16" rx="8" fill="#004050"/>
+  <text x="52" y="149" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#ffffff">Daarna</text>
+  <text x="88" y="150" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1F2937">Componenten die overal terugkomen</text>
+  <text x="26" y="172" font-family="sans-serif" font-size="8.5" fill="#4B5563">Eén keer goed maken lost tientallen bevindingen tegelijk op.</text>
+
+  <!-- Later -->
+  <rect x="12" y="196" width="456" height="60" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="26" y="208" width="52" height="16" rx="8" fill="#f5f5f5" stroke="#d1d5db" stroke-width="1"/>
+  <text x="52" y="219" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#4B5563">Later</text>
+  <text x="88" y="220" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1F2937">Losse pagina's met weinig verkeer</text>
+  <text x="26" y="242" font-family="sans-serif" font-size="8.5" fill="#4B5563">Wel oplossen, alleen niet als eerste.</text>
+
+  <text x="12" y="282" font-family="sans-serif" font-size="8.5" font-weight="700" fill="#A30D4B">De volgorde komt uit de Nederlandse auditpraktijk.</text>
+</svg>
