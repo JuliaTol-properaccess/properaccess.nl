@@ -19,7 +19,9 @@ De European Accessibility Act (EAA) is sinds 28 juni 2025 van kracht. Als je bed
 
 ## Wie handhaaft de EAA in Nederland?
 
-De ACM (Autoriteit Consument & Markt) is aangewezen als toezichthouder voor de EAA. Zij controleren of bedrijven die producten of diensten aanbieden aan consumenten voldoen aan de toegankelijkheidseisen.
+Het toezicht op de EAA is in Nederland verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De ACM (Autoriteit Consument & Markt) gaat over e-handelsdiensten, dus webshops en apps, plus elektronische communicatiediensten. De AFM gaat over bankdiensten voor consumenten, de RDI over apparaten zoals betaalterminals en incheckautomaten, het Commissariaat voor de Media over e-boeken, de ILT over personenvervoer en de Inspectie JenV over het noodnummer 112.
+
+Voor de meeste bedrijven die dit lezen is de ACM de toezichthouder. Zij controleren of bedrijven die producten of diensten aanbieden aan consumenten voldoen aan de toegankelijkheidseisen.
 
 ## Welke sancties zijn er mogelijk?
 
@@ -55,4 +57,4 @@ Het beste wat je kunt doen is **beginnen**. Niet wachten tot de eerste boetes va
 3. **Publiceer een toegankelijkheidsverklaring**: dat laat zien dat je ermee bezig bent
 4. **Plan periodieke hertests**: toegankelijkheid is geen eenmalige exercitie
 
-Wil je weten waar je staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je binnen een paar dagen een eerste beeld.
+Wil je weten waar je staat? [Vraag een mini-audit aan](/webshop-quickscan/) bij Proper Access (495 euro exclusief btw). Dan heb je binnen een paar dagen een eerste beeld, uitgevoerd door een senior auditor en niet door een scanner.

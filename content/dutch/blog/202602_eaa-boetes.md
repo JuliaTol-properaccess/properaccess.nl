@@ -19,8 +19,7 @@ keywords:
 
 Ontwikkel je software, apps of digitale platforms voor klanten buiten Nederland? Of koop je digitale producten in andere Europese landen? Dan krijg je onvermijdelijk te maken met [de European Accessibility Act (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en). Deze Europese richtlijn is sinds 28 juni 2025 volledig in werking en verplicht bedrijven om digitale producten en diensten toegankelijk te maken voor iedereen, inclusief mensen met een beperking.
 
-De EAA heeft één gemeenschappelijk doel: gelijke toegang tot digitale technologie in heel Europa. Toch betekent dat niet dat de regels overal hetzelfde zijn. Elke lidstaat heeft de richtlijn omgezet in eigen nationale wetgeving, met verschillen in normen, documentatie-eisen en boetes.
-In dit artikel krijg je een praktisch overzicht van hoe verschillende landen de EAA toepassen, en waar je rekening mee moet houden als je daar digitale producten of diensten aanbiedt.
+De EAA heeft één gemeenschappelijk doel: gelijke toegang tot digitale technologie in heel Europa. Toch betekent dat niet dat de regels overal hetzelfde zijn. Elke lidstaat heeft de richtlijn omgezet in eigen nationale wetgeving, met verschillen in normen, documentatie-eisen en boetes. In dit artikel krijg je een praktisch overzicht van hoe verschillende landen de EAA toepassen, en waar je rekening mee moet houden als je daar digitale producten of diensten aanbiedt.
 
 Eén Europese richtlijn, meerdere nationale regels
 De EAA schrijft voor wat toegankelijk moet zijn, maar laat ruimte aan landen om te bepalen hoe zij dit organiseren. Dat heeft gevolgen voor:
@@ -45,8 +44,7 @@ Belangrijke punten:
 - Handhaving: zie deel 7 van de regelgeving
 
 Bron:
-European Union (Accessibility Requirements of Products and Services) Regulations 2023
-https://www.irishstatutebook.ie/eli/2023/si/651/made/en/print#part7
+European Union (Accessibility Requirements of Products and Services) Regulations 2023 https://www.irishstatutebook.ie/eli/2023/si/651/made/en/print#part7
 
 ### Duitsland
 
@@ -164,16 +162,14 @@ Belangrijke punten:
 
 - Voor de overheid geldt: naleving Besluit digitale toegankelijkheid.
 - Voor de commerciële markt gelden verschillende wetten.
-- Toezichthouders zijn onder andere [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid), [AFM](https://www.afm.nl/nl-nl/sector/themas/dienstverlening-aan-consumenten/toegankelijkheid).
+- Het toezicht is verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. Voor webshops en apps is dat de [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid), voor bankdiensten aan consumenten de [AFM](https://www.afm.nl/nl-nl/sector/themas/dienstverlening-aan-consumenten/toegankelijkheid). De andere vier zijn de RDI (apparaten), het Commissariaat voor de Media (e-boeken), de ILT (personenvervoer) en de Inspectie JenV (112).
 - [Meldplicht bij niet voldoen aan toegankelijkheid](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid).
 
 Boetes kunnen oplopen tot [900.000 euro](https://nos.nl/artikel/2572793-websites-en-automaten-zijn-vaak-moeilijk-met-een-beperking-ondanks-nieuwe-wet).
 
 ### België (Vlaanderen)
 
-In Vlaanderen worden de federale regels gehanteerd, maar met aanvullende regionale eisen:
-Belangrijke punten:
-\_ Documentatie in het Nederlands
+In Vlaanderen worden de federale regels gehanteerd, maar met aanvullende regionale eisen: Belangrijke punten: \_ Documentatie in het Nederlands
 
 - Rapportage aan Vlaamse autoriteiten
 - Eigen certificeringskaders
@@ -186,8 +182,7 @@ Bronnen:
 
 ### Portugal
 
-Portugal hanteert hoge boetes en bij structurele overtredingen kunnen beperkingen worden opgelegd.
-Belangrijke punten:
+Portugal hanteert hoge boetes en bij structurele overtredingen kunnen beperkingen worden opgelegd. Belangrijke punten:
 
 - Boetes tussen € 5.000 en € 100.000
 - Operationele beperkingen bij niet-naleving
@@ -227,7 +222,6 @@ Dit overzicht helpt je op weg, maar vervangt geen gerichte analyse per land of m
 
 ## Meer weten of even sparren?
 
-Werk je aan een app, platform of digitale dienst die in meerdere landen wordt gebruikt? Of wil je zeker weten dat jouw oplossing voldoet aan [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) en de eisen van de Europese Toegankelijkheidsakte (EAA)?
+Werk je aan een app, platform of digitale dienst die in meerdere landen wordt gebruikt? Of wil je zeker weten dat jouw oplossing voldoet aan [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) en de eisen van de European Accessibility Act?
 
-👉 Neem gerust contact met mij op als je vragen hebt, wilt sparren, of behoefte hebt aan advies. [Een mini-audit](https://www.properaccess.nl/webshop-quickscan/) kan je helpen begrijpen hoe groot je boeterisico is.
-Ik denk graag met je mee over praktische oplossingen en teststrategieën voor digitale toegankelijkheid.
+Neem gerust contact met mij op als je vragen hebt, wilt sparren, of behoefte hebt aan advies. Bij Proper Access toetsen we op WCAG 2.2, een versie hoger dan EN 301 549 vraagt, en [een mini-audit](https://www.properaccess.nl/webshop-quickscan/) geeft je een beeld van hoe groot je boeterisico is. Ik denk graag met je mee over praktische oplossingen en teststrategieën voor digitale toegankelijkheid.

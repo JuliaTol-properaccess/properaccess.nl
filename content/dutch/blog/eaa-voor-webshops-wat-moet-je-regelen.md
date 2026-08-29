@@ -32,13 +32,13 @@ image: "/images/blog/webshop-wireframe-eaa.svg"
 
 Sinds 28 juni 2025 is de European Accessibility Act (EAA) van kracht. En ja, die geldt ook voor jouw webshop. Toch merk ik dat veel webshophouders nog niet weten wat ze precies moeten doen.
 
-Je online winkel moet voldoen aan **WCAG 2.1 niveau AA**: 50 concrete eisen. In de praktijk adviseer ik om te toetsen op WCAG 2.2, met 5 extra criteria die specifiek relevant zijn voor webshops.
+Je online winkel moet voldoen aan **WCAG 2.1**, niveau A en AA samen: 50 succescriteria. In de praktijk adviseer ik om te toetsen op WCAG 2.2. Die versie voegde negen criteria toe, waarvan er zes op niveau A en AA vallen, en een aantal daarvan raakt precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie. Zo doen we het bij Proper Access ook, een versie hoger dan de norm vraagt.
 
 ## Voor wie geldt de EAA?
 
 De EAA geldt voor e-commercediensten: webshops, ticketverkoop, boekingsplatforms, abonnementsdiensten en digitale marktplaatsen.
 
-**Uitzondering:** micro-ondernemingen (minder dan 10 medewerkers en minder dan 2 miljoen euro omzet). Maar zelfs dan: toegankelijkheid is goed voor je conversie.
+**Uitzondering:** micro-ondernemingen. De ACM omschrijft die als minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Het moet allebei gelden, en een balanstotaal telt niet mee. Maar zelfs dan: toegankelijkheid is goed voor je conversie.
 
 {{< /case-section >}}
 
@@ -91,7 +91,7 @@ Ik heb tientallen webshops geaudit. Dit zijn de problemen die ik het vaakst tege
 <details class="faq-item">
 <summary class="faq-question">Wordt er al gehandhaafd?</summary>
 <div class="faq-answer">
-Ja, de wet is sinds juni 2025 van kracht. De AFM houdt toezicht op e-commercediensten. In de praktijk richten toezichthouders zich nu vooral op voorlichting, maar formeel kunnen ze handhaven.
+Ja, de wet is sinds juni 2025 van kracht. Het toezicht is verdeeld over zes toezichthouders; voor webshops en apps is dat de ACM, niet de AFM. Die laatste gaat over bankdiensten voor consumenten en e-handelsdiensten van financiële aard. De ACM begon in 2026 met begeleiden: tien bedrijven kregen een volledig onderzoek volgens WCAG-EM plus een bedrijfsbezoek, en bij ruim honderd bedrijven keek de ACM naar één belangrijk functioneel onderdeel. Wie niet voldoet krijgt drie maanden, daarna volgt een hertest.
 </div>
 </details>
 
