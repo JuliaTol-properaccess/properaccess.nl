@@ -27,7 +27,7 @@ keywords:
   - resize text test
   - make focus visible
   - accessibility bookmarklet
-hero_sub: "A button in your bookmarks bar, or an extension for Chrome and Firefox, that shows how any page is doing on accessibility. 28 of the 45 checks are free and need no account. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The radar runs entirely in your browser: nothing is sent and nothing is stored."
+hero_sub: "A button in your bookmarks bar, or an extension for Chrome and Firefox, that shows how any page is doing on accessibility. 28 of the 45 checks are free and need no account. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The Radar does all the work in your own browser: it sends nothing and stores nothing."
 rollen:
   - eyebrow: "For web editors"
     titel: "The checks you run every week, in one click"
@@ -35,9 +35,9 @@ rollen:
     tekst: |
       As an editor you work in the CMS, not in the code. Yet your work decides a large part of the accessibility: the alt text, the heading structure, the link text, the tables. That is exactly where things go wrong most often.
 
-      Our ambition for the Editors tab is straightforward: make the checks you should be doing anyway so easy that you actually do them. No source code to read, no developer to ask. You click the radar and see at once which image has no alt text, where a heading level is skipped and which link is called "read more".
+      Our ambition for the Editors tab is straightforward: make the checks you should be doing anyway so easy that you actually do them. No source code to read, no developer to ask. You click the Radar and see at once which image has no alt text, where a heading level is skipped and which link is called "read more".
 
-      The radar does not judge for you. With alt text it shows you what is there; you decide whether it fits the image. That is precisely the part an automated scanner can never do for you.
+      The Radar does not judge for you. With alt text it shows you what is there; you decide whether it fits the image. That is precisely the part an automated scanner can never do for you.
     link: "/en/blog/"
     link_tekst: "Read more on our blog"
   - eyebrow: "For designers"
@@ -48,7 +48,7 @@ rollen:
 
       Our ambition for the Designer tab is to bring the checks you normally spread across three tools into one place. Measure contrast with the two eyedroppers, drop the page to greyscale, force a visible focus ring, mark tap targets smaller than 24 pixels and push the text to 200% to see whether your layout holds.
 
-      There is nothing to install and your design does not have to be online. The radar works just as well on a staging environment or on localhost.
+      There is nothing to install and your design does not have to be online. The Radar works just as well on a staging environment or on localhost.
     link: "/en/blog/"
     link_tekst: "Read more on our blog"
   - eyebrow: "For developers"
@@ -57,7 +57,7 @@ rollen:
     tekst: |
       You know what to look for. What costs time is the digging: which button exactly has no accessible name, does that aria-controls point at an id that exists, and in what order does focus actually travel?
 
-      Our ambition for the Developer tab is to answer those questions before you open the inspector. The radar numbers every focusable element in tab order and flags positive tabindex values as an error. It shows every role and aria attribute and reveals which references point at nothing. On hover you get the tag, id, class, role, accessible name and size of any element.
+      Our ambition for the Developer tab is to answer those questions before you open the inspector. The Radar numbers every focusable element in tab order and flags positive tabindex values as an error. It shows every role and aria attribute and reveals which references point at nothing. On hover you get the tag, id, class, role, accessible name and size of any element.
 
       Useful while building, and useful when resolving an audit finding: you see straight away whether your fix had the effect you wanted.
     link: "/en/blog/"
