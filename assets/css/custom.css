@@ -12982,16 +12982,6 @@ a.tool-link__href-url:hover {
   max-width: 720px;
 }
 
-/* stack="true": illustratie onder de tekst in plaats van ernaast */
-.case-section__figure {
-  margin: 2rem 0 0;
-  max-width: 480px;
-}
-
-.case-section__figure .case-section__caption {
-  text-align: left;
-}
-
 .case-section__prose h2 {
   font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
   font-size: 1.5rem;
@@ -13488,6 +13478,17 @@ a.tool-link__href-url:hover {
 }
 
 .case__body > figure img {
+  border-radius: 0.5rem;
+}
+
+/* Illustraties in de lopende tekst van een blogartikel. Goldmark maakt van een losse
+   markdown-afbeelding een <p><img>, en die stond links uitgelijnd op zijn eigen breedte. */
+.case__body > p > img,
+.blog-wcag__text > p > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem auto;
   border-radius: 0.5rem;
 }
 
