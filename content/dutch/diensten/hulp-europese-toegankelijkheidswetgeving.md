@@ -1,16 +1,19 @@
 ---
-title: "Hulp bij Europese toegankelijkheidswetgeving"
+title: "Hulp bij digitale toegankelijkheid"
 hide_cta: true
-meta_title: "Hulp bij het voldoen aan de Europese toegankelijkheidswetgeving | Proper Access"
+meta_title: "Hulp bij digitale toegankelijkheid: audit, herstel en verantwoording | Proper Access"
 layout: "agency"
 weight: 12
 date: 2026-08-14
 slug: "hulp-europese-toegankelijkheidswetgeving"
 url: "/hulp-bij-europese-toegankelijkheidswetgeving/"
-description: "Welke Europese toegankelijkheidswetgeving geldt voor jou, wat voldoen in de praktijk vraagt, en waar je hulp krijgt bij elke stap. Voor webshops, overheidsorganisaties en softwareleveranciers."
+description: "Hulp bij digitale toegankelijkheid, van onderzoek tot verantwoording. Welke wet voor je geldt, wat voldoen in de praktijk vraagt, en wie welke stap voor je doet. Voor webshops, overheidsorganisaties en softwareleveranciers."
 tldr: |
   Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers.
 keywords:
+  - hulp bij digitale toegankelijkheid
+  - digitale toegankelijkheid hulp
+  - WCAG-audit laten uitvoeren
   - Europese toegankelijkheidswetgeving
   - hulp European Accessibility Act
   - voldoen aan de EAA
@@ -24,8 +27,8 @@ service:
 
 banner:
   badge: "EAA, BDTO en EN 301 549"
-  title: "Hulp bij het voldoen aan de Europese toegankelijkheidswetgeving"
-  content: "Weten welke wet voor je geldt is het makkelijke deel. Weten wat je maandag moet doen is het werk. We lopen de vier stappen met je door: onderzoek, herstel, hercontrole en verantwoording."
+  title: "Hulp bij digitale toegankelijkheid, van onderzoek tot verantwoording"
+  content: "Weten welke wet voor je geldt is het makkelijke deel. Weten wat je maandag moet doen is het werk. We lopen de vier stappen met je door: onderzoek, herstel, hercontrole en verantwoording. Of je nu onder de EAA valt of onder het BDTO."
   button:
     enable: true
     label: "Plan een kennismaking"
@@ -44,7 +47,7 @@ faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
     answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de problemen zijn opgelost, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
   - question: "Vanaf wanneer geldt de European Accessibility Act?"
-    answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Verkoop je met minder dan 10 medewerkers en blijf je onder de 2 miljoen euro omzet, dan geldt de plicht niet."
+    answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Er is een uitzondering voor micro-ondernemingen: minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro, allebei."
   - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
     answer: "Niet één partij. Het toezicht is verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De **ACM** voor webshops, apps en elektronische communicatiediensten. De **AFM** voor bankdiensten aan consumenten. De **RDI** voor apparaten, zoals computers, smartphones, geldautomaten, betaalterminals en ticketautomaten. Het **Commissariaat voor de Media** voor e-boeken en diensten die toegang geven tot audiovisuele media. De **ILT** voor personenvervoer per vliegtuig, bus, trein en boot. En de **Inspectie JenV** voor het noodnummer 112. Heb je een webshop, dan is de ACM je toezichthouder. Die begon met begeleiden: tien bedrijven kregen een volledig onderzoek volgens WCAG-EM en daarna een bedrijfsbezoek, en bij ruim honderd bedrijven keek de ACM naar één belangrijk functioneel onderdeel. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
   - question: "Voldoen we aan de wet als we een overlay-tool installeren?"
@@ -55,7 +58,7 @@ faqs:
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm, maar de boetes en de hersteltermijnen verschillen. Nederland geeft drie maanden, Noorwegen acht weken."
 ---
 
-{{< section-full title="Welke Europese toegankelijkheidswetgeving geldt voor jou?" id="welke-wet" >}}
+{{< section-full title="Welke wet geldt voor jou?" id="welke-wet" >}}
 
 Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een
 webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een
@@ -67,7 +70,8 @@ bedrijf, terwijl er technisch niets verschilt.
 | Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2018 | Verantwoording via het Register van Toegankelijkheidsverklaringen |
 
 Beide wijzen naar dezelfde norm: **EN 301 549**. De geldende norm is op dit moment WCAG 2.1
-niveau AA. EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
+niveau A en AA. Wat de EAA precies is en voor wie hij geldt, staat uitgebreid op de pagina over
+de [European Accessibility Act](/eaa/). EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
 je zelf over toegankelijkheid publiceert. De eisen aan je site verschillen dus niet tussen een
 gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er
 meekijkt.
@@ -75,8 +79,9 @@ meekijkt.
 Wij toetsen aan WCAG 2.2 als extra service. Die criteria zijn backwards compatible, dus alles
 uit 2.1 zit erin.
 
-Er is één uitzondering onder de EAA. Verkoop je met minder dan 10 medewerkers en blijf je onder
-de 2 miljoen euro omzet, dan geldt de plicht niet.
+Er is één uitzondering onder de EAA, voor micro-ondernemingen. De ACM omschrijft die als minder
+dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Allebei de voorwaarden
+moeten gelden.
 
 Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 [EAA-monitor](https://eaa-monitor.nl).
@@ -106,7 +111,7 @@ Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 </div>
 {{< /section-steps >}}
 
-{{< section-full title="Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?" id="wie-helpt" >}}
+{{< section-full title="Wie biedt praktische hulp bij digitale toegankelijkheid?" id="wie-helpt" >}}
 
 Proper Access doet dat, en we dekken alle vier de stappen hierboven.
 
