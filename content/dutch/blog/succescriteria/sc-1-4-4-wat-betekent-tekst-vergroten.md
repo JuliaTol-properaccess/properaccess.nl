@@ -90,7 +90,7 @@ Bij onze audits gaat het bij dit succescriterium meestal mis op een van deze pun
 - Reken niet op tekst die precies op één regel past. Een knoplabel, een menu-item of een kop moet ook over 2 regels kunnen lopen zonder dat het ontwerp breekt.
 - Leg in je design system vast dat componenten geen vaste hoogtes hebben rond tekst. Een minimale hoogte mag, een vaste niet.
 - Teken ook de smalle variant van elk component uit. Bij 200% zoom krijgt je desktopbezoeker die variant te zien, dus een accordion of hamburgermenu dat je "alleen voor mobiel" bedacht hebt, is in de praktijk ook een desktopcomponent.
-- Controleer je ontwerp met de check Alleen tekst vergroten van onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Eén klik en alle tekst staat op 200% terwijl je lay-out blijft staan, dus je ziet direct welke kaders niet meegroeien.
+- Controleer je ontwerp met de check Alleen tekst vergroten van de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Eén klik en alle tekst staat op 200% terwijl je lay-out blijft staan, dus je ziet direct welke kaders niet meegroeien.
 
 ## Wat kun je doen als webredacteur?
 
@@ -125,7 +125,7 @@ h1 {
 
 - Kies voor lettergroottes in `rem` of `em`. Browserzoom schaalt pixels ook, maar relatieve eenheden werken daarnaast voor bezoekers die alleen de tekstgrootte aanpassen in hun browserinstellingen.
 - Test je componenten op beide breedtes. Bouw je een accordion die pas onder een breakpoint verschijnt, dan is dat de component die je desktopbezoeker bij 200% zoom krijgt. Geef hem dezelfde aandacht als de brede variant: bedienbaar met het toetsenbord, een `button` met een duidelijke naam en een correcte `aria-expanded`.
-- Draai de checks Alleen tekst vergroten en Pagina-zoom 200% van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op localhost voordat je oplevert. De radar werkt op elke pagina, ook achter een login.
+- Draai de checks Alleen tekst vergroten en Pagina-zoom 200% van de [WCAG Radar](/tools/wcag-radar/) op localhost voordat je oplevert. De radar werkt op elke pagina, ook achter een login.
 
 ## Zo test je het
 
@@ -152,7 +152,7 @@ En op je telefoon: kun je met twee vingers inzoomen, of is dat geblokkeerd?
 
 ### Sneller testen met de WCAG Radar
 
-Wil je het vaker en sneller doen, gebruik dan onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium staan er twee checks in:
+Wil je het vaker en sneller doen, gebruik dan onze gratis [WCAG Radar](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Voor dit criterium staan er twee checks in:
 
 - **Alleen tekst vergroten (200%)** zet alle tekst op 200% en laat je viewport staan. Dit is test 2, zonder dat je een browserinstelling hoeft om te zetten.
 - **Pagina-zoom 200% (640 px)** opent de pagina in een venster van 640 pixels breed. Dat geeft dezelfde lay-out, dezelfde mediaquery's en dezelfde ingeklapte componenten als 1280 pixels op 200%. Zoom dat venster daarna zelf in om ook de lettergrootte te zien.
@@ -204,6 +204,6 @@ De belangrijkste punten:
 - Designer: ontwerp componenten die meegroeien met de tekst, zonder vaste hoogtes.
 - Webredacteur: zet belangrijke informatie in echte tekst, niet in een afbeelding.
 - Developer: gebruik `min-height` in plaats van `height` en combineer viewport-eenheden met `rem`.
-- Test met Ctrl en plus, of Command en plus op een Mac, op 1280 pixels, en met de checks Alleen tekst vergroten en Pagina-zoom 200% in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Test met Ctrl en plus, of Command en plus op een Mac, op 1280 pixels, en met de checks Alleen tekst vergroten en Pagina-zoom 200% in de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon op 200% en laten per bevinding zien waar tekst wegvalt en hoe je dat oplost.

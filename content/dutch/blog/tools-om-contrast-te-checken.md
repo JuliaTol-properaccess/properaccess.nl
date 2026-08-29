@@ -66,7 +66,7 @@ Doe hetzelfde voor de achtergrondkleur met het tweede pipet onder "Background".
 
 ## Meten zonder tweede venster
 
-Bij allebei de methodes hierboven meet je in een apart programma naast je pagina. Dat kan ook in de pagina zelf, met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), de bookmarklet en browserextensie die wij maken. Op het tabblad Designer zitten twee pipetten voor de voorgrond- en achtergrondkleur, en je krijgt de verhouding met het oordeel voor 1.4.3 en 1.4.11 erbij.
+Bij allebei de methodes hierboven meet je in een apart programma naast je pagina. Dat kan ook in de pagina zelf, met de [WCAG Radar van Proper Access](/tools/wcag-radar/), de bookmarklet en browserextensie die wij maken. Op het tabblad Designer zitten twee pipetten voor de voorgrond- en achtergrondkleur, en je krijgt de verhouding met het oordeel voor 1.4.3 en 1.4.11 erbij.
 
 Je hoeft niets te downloaden, dus dit werkt ook als je geen software mag installeren. En omdat de radar in je eigen browser rekent, kun je meten op een pagina achter een login of op een omgeving die nog niet online staat.
 

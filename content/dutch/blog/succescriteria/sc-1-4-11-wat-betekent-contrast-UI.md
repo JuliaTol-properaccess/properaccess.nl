@@ -306,7 +306,7 @@ button:focus {
 
 Mijn favoriet is de app die je downloadt: [Colour Contrast Analyser](https://vispero.com/color-contrast-checker/).
 
-Mag je geen software installeren, dan zijn er twee routes. Online vul je twee kleuren in bij de [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/). Wil je meten wat er op de pagina staat, dan gebruik je de pipetten in onze [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), een bladwijzer of extensie die in je eigen browser rekent. Die heeft een aparte check voor de randen van invoervelden en voor de focusstijl, en dat zijn precies de elementen waar dit succescriterium over gaat.
+Mag je geen software installeren, dan zijn er twee routes. Online vul je twee kleuren in bij de [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/). Wil je meten wat er op de pagina staat, dan gebruik je de pipetten in onze [WCAG Radar van Proper Access](/tools/wcag-radar/), een bladwijzer of extensie die in je eigen browser rekent. Die heeft een aparte check voor de randen van invoervelden en voor de focusstijl, en dat zijn precies de elementen waar dit succescriterium over gaat.
 
 Vul de voorgrond- en achtergrondkleur in. De tool geeft direct aan:
 

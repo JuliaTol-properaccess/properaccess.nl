@@ -20,7 +20,7 @@ Je website toegankelijk maken is geen eenmalig project dat je in een middag afro
 
 Voordat je gaat fixen, moet je weten wat er mis is. Gebruik een combinatie van:
 
-- **Geautomatiseerde tools** (WAVE, axe DevTools of onze eigen [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar)) voor een eerste scan
+- **Geautomatiseerde tools** (WAVE, axe DevTools of de [WCAG Radar van Proper Access](/tools/wcag-radar/)) voor een eerste scan
 - **Handmatige tests:** navigeer door je website met alleen je toetsenbord
 - **Een professionele mini-audit of audit** voor een compleet beeld
 

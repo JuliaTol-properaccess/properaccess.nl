@@ -101,7 +101,7 @@ Laad de pagina en luister naar wat VoiceOver als eerste zegt. Beschrijft de tite
 
 <kbd>VO</kbd> + <kbd>U</kbd>, koppenlijst. Lees hem van boven naar beneden en stel jezelf één vraag: begrijp ik hieruit waar deze pagina over gaat en wat erop staat? Let op één h1, op overgeslagen niveaus en op koppen die alleen visueel een kop zijn.
 
-Wil je hetzelfde zien in plaats van horen, dan legt de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) de koppenstructuur als blokjes over je pagina heen. Hoe je die structuur controleert, staat in [zo controleer je de koppenstructuur van je website](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
+Wil je hetzelfde zien in plaats van horen, dan legt de [WCAG Radar van Proper Access](/tools/wcag-radar/) de koppenstructuur als blokjes over je pagina heen. Hoe je die structuur controleert, staat in [zo controleer je de koppenstructuur van je website](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/).
 
 ### 3. Vraag de links op
 

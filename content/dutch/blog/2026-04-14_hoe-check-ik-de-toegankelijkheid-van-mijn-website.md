@@ -22,6 +22,15 @@ Er zijn drie manieren om de toegankelijkheid van je website te checken: geautoma
 
 Deze tools scannen je pagina en rapporteren technische fouten:
 
+### WCAG Radar van Proper Access
+- Bookmarklet of browserextensie voor Chrome en Firefox
+- Drie tabbladen: een voor redactie, een voor design en een voor development
+- Rekent in je eigen browser, dus werkt ook achter een login en op localhost
+- De gratis versie doet 28 van de 45 checks, zonder account
+- [Bekijk wat de WCAG Radar controleert](/tools/wcag-radar/)
+
+Deze bouwen we zelf bij Proper Access, op basis van wat we in 950 audits sinds 2019 zijn tegengekomen. Onder elke check zit een link waarmee je de bevinding voorlegt aan een van onze auditors.
+
 ### WAVE (web accessibility evaluation tool)
 - Browser-extensie voor Chrome en Firefox
 - Geeft visuele indicatoren op je pagina
@@ -38,15 +47,6 @@ Deze tools scannen je pagina en rapporteren technische fouten:
 - Open DevTools → Lighthouse → Accessibility
 - Geeft een score van 0-100
 - Let op: een score van 100 betekent niet dat je website toegankelijk is. Het betekent alleen dat de tool geen fouten heeft gevonden
-
-### WCAG Radar
-- Bookmarklet of browserextensie voor Chrome en Firefox
-- Drie tabbladen: een voor redactie, een voor design en een voor development
-- Rekent in je eigen browser, dus werkt ook achter een login en op localhost
-- De gratis versie doet 28 van de 45 checks
-- [testtoegankelijkheid.nl/wcag-radar](https://testtoegankelijkheid.nl/wcag-radar)
-
-Deze maken we zelf, op basis van wat we in onze audits tegenkomen.
 
 ### Wat vinden deze tools wel?
 - Ontbrekende alt-teksten
@@ -82,15 +82,23 @@ Zoom in naar 200% en naar 400%.
 - Moet je horizontaal scrollen bij 400%?
 
 ### Koppen-check
-Installeer de HeadingsMap-extensie of open het tabblad Redactie van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) en bekijk de kopstructuur.
+Installeer de HeadingsMap-extensie of open het tabblad Redactie van de [WCAG Radar](/tools/wcag-radar/) en bekijk de kopstructuur.
 - Is er één h1 per pagina?
 - Worden er geen niveaus overgeslagen?
 - Beschrijven de koppen de content?
 
 ### Contrastcheck
-Gebruik de WebAIM Contrast Checker of de kleurenpipet in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) voor twijfelgevallen.
+Gebruik de WebAIM Contrast Checker of de kleurenpipet in de [WCAG Radar](/tools/wcag-radar/) voor twijfelgevallen.
 - Normale tekst: minimaal 4,5:1
 - Grote tekst (18px+ of 14px+ bold): minimaal 3:1
+
+## Als je er bij het zelf testen niet uitkomt
+
+Op een gegeven moment loop je vast op één ding. De radar markeert een knop zonder toegankelijke naam en je weet niet welke van de drie oplossingen hier de goede is. Of je twijfelt of die alt-tekst klopt bij de afbeelding. Dat is precies het stuk dat geen enkele tool voor je beslist.
+
+Daarvoor is de strippenkaart. Je stelt een vraag over één onderwerp, een auditor van Proper Access antwoordt binnen 3 tot 5 werkdagen, en dat kost één strip. Vervolgvragen in dezelfde draad zijn gratis, en de strip gaat er pas af als wij antwoorden: valt je vraag buiten onze scope, dan kost hij niets. Een bundel van 10 strippen kost 250 euro exclusief btw, een losse vraag 37,50 euro. Je hoeft geen audit bij ons te hebben gehad om er een te kopen.
+
+[Zo werkt de strippenkaart](/strippenkaart/)
 
 ## 3. Professionele audit (betaald, meest grondig)
 

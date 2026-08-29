@@ -96,7 +96,7 @@ Dit heb je in de hand:
 - **Knopteksten in blokken en kaarten.** Veel thema's hebben een knop met een instelbare tekst. Die tekst is de naam.
 - **Titels van ingesloten video's en kaarten.** Sommige CMS'en laten je een titel meegeven aan een embed. Doen.
 
-Zo controleer je het zelf: zet op het tabblad **Redactie** van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) de check **Toon toegankelijke naam** aan. Bij elke link, knop en elk veld verschijnt de naam die voorleessoftware uitspreekt. Elementen zonder naam worden als fout gemarkeerd.
+Zo controleer je het zelf: zet op het tabblad **Redactie** van de [WCAG Radar van Proper Access](/tools/wcag-radar/) de check **Toon toegankelijke naam** aan. Bij elke link, knop en elk veld verschijnt de naam die voorleessoftware uitspreekt. Elementen zonder naam worden als fout gemarkeerd.
 
 Loop daarna de lijst **Alle links** door in hetzelfde paneel. Die toont alle links onder elkaar, precies zoals een schermlezer ze aankondigt, dus alleen de naam zonder de zin eromheen. Kun je bij een regel niet zien waar hij heen gaat, dan kan niemand dat.
 
@@ -146,7 +146,7 @@ Let op deze 5 valkuilen:
 
 **Verberg decoratieve iconen in een knop met tekst.** Zonder `aria-hidden="true"` kan de glyph in de naam terechtkomen en hoort de bezoeker een raar teken voor het label.
 
-Controleren doe je op het tabblad **Developer** van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) met **Toon toegankelijke naam**. Combineer het met **ARIA-rollen en -attributen**, die gebroken verwijzingen naar niet-bestaande id's markeert. Dat is precies de stille variant: er staat een keurige `aria-labelledby` en het element heet nergens naar.
+Controleren doe je op het tabblad **Developer** van de [WCAG Radar](/tools/wcag-radar/) met **Toon toegankelijke naam**. Combineer het met **ARIA-rollen en -attributen**, die gebroken verwijzingen naar niet-bestaande id's markeert. Dat is precies de stille variant: er staat een keurige `aria-labelledby` en het element heet nergens naar.
 
 ## Veelgemaakte fouten
 
@@ -188,6 +188,6 @@ Een zichtbaar label zie je staan, een toegankelijke naam hoor je. Meestal zijn z
 - Beschrijf de functie, niet het uiterlijk. Laat de zichtbare woorden in de naam staan. Zet het belangrijkste vooraan.
 - Webredacteur: linktekst, alt-tekst en formulierlabels zijn namen die jij schrijft.
 - Ontwikkelaar: gebruik het juiste element met tekst erin, en pak ARIA er pas bij als er geen zichtbare tekst is.
-- Controleer het met **Toon toegankelijke naam** in de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), op het tabblad Redactie of Developer.
+- Controleer het met **Toon toegankelijke naam** in de [WCAG Radar](/tools/wcag-radar/), op het tabblad Redactie of Developer.
 
 Een naam die er staat maar niets zegt, is de lastigste categorie: geen enkele scan meldt hem, en de bezoeker loopt er wel op vast. Daar kijken wij per element naar. Wil je weten hoe jouw site ervoor staat? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan.

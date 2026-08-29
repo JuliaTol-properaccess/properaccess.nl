@@ -53,7 +53,7 @@ De tool toont direct de **contrastverhouding** en of de combinatie voldoet aan W
 
 ## Methode 2: de kleurenpipet in de WCAG Radar
 
-Mag je niets installeren, of wil je meten op een pagina die nog niet online staat? De [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) is een bookmarklet of browserextensie die we zelf maken. Op het tabblad Designer zitten twee pipetten waarmee je de voorgrond- en achtergrondkleur van je scherm plukt, net als in de desktop-app. Hij rekent in je browser, dus hij werkt ook op een acceptatieomgeving, achter een login en op localhost.
+Mag je niets installeren, of wil je meten op een pagina die nog niet online staat? De [WCAG Radar van Proper Access](/tools/wcag-radar/) is een bookmarklet of browserextensie die we zelf maken. Op het tabblad Designer zitten twee pipetten waarmee je de voorgrond- en achtergrondkleur van je scherm plukt, net als in de desktop-app. Hij rekent in je browser, dus hij werkt ook op een acceptatieomgeving, achter een login en op localhost.
 
 Daarnaast kun je de pagina in grijswaarden zetten. Dat is de snelste manier om te zien of je ergens kleur gebruikt als enige drager van informatie.
 

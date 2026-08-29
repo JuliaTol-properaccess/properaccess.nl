@@ -76,7 +76,7 @@ Een groep keuzerondjes of aankruisvakjes heeft een vraag of kop nodig die bij de
 
 ## Controleer je formulieren met WCAG Radar
 
-Wil je weten hoe jouw formulieren ervoor staan? Gebruik onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Velden die hun naam alleen uit de placeholder halen krijgen een waarschuwing: de naam bestaat wel, maar hij is weg zodra iemand typt.
+Wil je weten hoe jouw formulieren ervoor staan? Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Velden die hun naam alleen uit de placeholder halen krijgen een waarschuwing: de naam bestaat wel, maar hij is weg zodra iemand typt.
 
 De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
 
@@ -110,6 +110,6 @@ De belangrijkste punten:
 - Een placeholder is geen label.
 - Vermeld formaat-eisen en verplichte velden vooraf, niet pas na een foutmelding.
 - Geef groepen keuzerondjes of aankruisvakjes een duidelijke vraag als kop.
-- Controleer je pagina's met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Controleer je pagina's met de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je dat je hele redactie toegankelijk leert schrijven en publiceren?** Bekijk dan onze [training voor webredacties](/trainen-van-webredactie/) of vraag [een contentaudit](/contentaudit/) aan.

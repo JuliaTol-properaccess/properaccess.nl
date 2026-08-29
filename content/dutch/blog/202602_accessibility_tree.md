@@ -339,7 +339,7 @@ Combineer Accessibility Tree met:
 
 - **axe DevTools**: Uitgebreide accessibility testing
 - **WAVE**: Visual feedback over accessibility issues
-- **[WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar)**: onze eigen bookmarklet en extensie. Het tabblad Developer toont de toegankelijke naam en de rol van elk element op de pagina zelf, zodat je niet per element de tree in hoeft
+- **[WCAG Radar van Proper Access](/tools/wcag-radar/)**: onze eigen bookmarklet en extensie. Het tabblad Developer toont de toegankelijke naam en de rol van elk element op de pagina zelf, zodat je niet per element de tree in hoeft
 - **Screen readers**: NVDA (Windows), VoiceOver (Mac)
 
 ### 4. Documentatie en resources

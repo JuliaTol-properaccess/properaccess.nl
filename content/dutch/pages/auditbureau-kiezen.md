@@ -70,7 +70,7 @@ Een WCAG-audit is een steekproef van circa 15 tot 20 pagina's. Los je alle foute
 
 Staat er in het rapport hoe je deze problemen ook op andere pagina's opspoort? Met die kennis ben je op termijn niet meer afhankelijk van een auditbureau.
 
-Zelf nakijken kan met de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar), die 28 checks gratis in je eigen browser draait.
+Zelf nakijken kan met de [WCAG Radar van Proper Access](/tools/wcag-radar/), die 28 checks gratis in je eigen browser draait.
 
 {{< /section-card >}}
 

@@ -44,7 +44,7 @@ Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengek
 
 ## Gratis tools
 
-- [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar): bookmarklet en browserextensie met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op de pagina toont die je bekijkt. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor
+- [WCAG Radar van Proper Access](https://www.properaccess.nl/tools/wcag-radar/): gratis bookmarklet en browserextensie voor Chrome en Firefox, met drie tabbladen (Redactie, Designer, Developer) die alt-teksten, koppen, linkteksten, labels, contrast, kleurgebruik, focus, doelgrootte, tekstafstand, ARIA en tabvolgorde live op de pagina toont die je bekijkt. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks, zonder account. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor. De tool zelf draait op onze toolsite [testtoegankelijkheid.nl/wcag-radar](https://testtoegankelijkheid.nl/wcag-radar)
 - [Toegankelijkheidsverklaring opstellen (EAA)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-generator/)
 - [Toegankelijkheidsverklaring opstellen (BDTO)](https://www.properaccess.nl/tools/toegankelijkheidsverklaring-wdo/)
 - [Alt-tekst keuzehulp](https://www.properaccess.nl/tools/alt-tekst-keuzehulp/): welke alt-tekst hoort bij welk type afbeelding

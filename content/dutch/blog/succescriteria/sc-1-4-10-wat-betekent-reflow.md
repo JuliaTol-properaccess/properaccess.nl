@@ -60,7 +60,7 @@ Bij onze audits gaat het bij dit succescriterium meestal mis op een van deze pun
 - Bepaal per sectie wat er stapelt: welke kolom komt eerst, wat gebeurt er met beeld naast tekst, waar mag witruimte verdwijnen.
 - Schrap in het smalle ontwerp geen functies. Alles wat de bezoeker op desktop kan, moet ook op het smalle scherm kunnen, desnoods achter een duidelijke knop.
 - Houd vaste elementen zoals headers klein. Wat op desktop een subtiele balk is, vreet op 400% zoom het halve scherm op.
-- Controleer je ontwerp met de check Tekst vergroten 400% van onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar). Je ziet direct of de tekst netjes meebeweegt of dat er iets afsnijdt of overlapt.
+- Controleer je ontwerp met de check Tekst vergroten 400% van de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je ziet direct of de tekst netjes meebeweegt of dat er iets afsnijdt of overlapt.
 
 ## Wat kun je doen als webredacteur?
 
@@ -99,7 +99,7 @@ iframe {
 
 - Gebruik `min-height` in plaats van `height` op elementen met tekst. Op een smal scherm wordt tekst langer en moet het kader meegroeien.
 - Verberg in je media queries geen functionaliteit. Verplaats een filter of menu naar een uitklapbaar element in plaats van hem met `display: none` te laten verdwijnen.
-- Test tijdens het bouwen op 320 pixels in de responsive mode van je browser, of draai de check Tekst vergroten 400% van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) op localhost. De radar werkt op elke pagina, ook achter een login.
+- Test tijdens het bouwen op 320 pixels in de responsive mode van je browser, of draai de check Tekst vergroten 400% van de [WCAG Radar](/tools/wcag-radar/) op localhost. De radar werkt op elke pagina, ook achter een login.
 
 ## Zo test je het
 
@@ -110,7 +110,7 @@ Zet je browservenster op 1280 pixels breed en zoom in tot 400% met Ctrl en plus,
 - Werken het menu, de knoppen, de filters en de formulieren nog allemaal?
 - Blijft er genoeg scherm over naast de vaste balken zoals de header?
 
-Onze gratis [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar) heeft hiervoor de check Tekst vergroten 400%. Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
+Onze gratis [WCAG Radar](/tools/wcag-radar/) heeft hiervoor de check Tekst vergroten 400%. Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Alles draait in je eigen browser, er wordt niets verstuurd of opgeslagen.
 
 ## Veelgestelde vragen
 
@@ -145,6 +145,6 @@ De belangrijkste punten:
 - Designer: ontwerp elke pagina ook op 320 pixels en schrap daarbij geen functies.
 - Webredacteur: geen opmaaktabellen en geen brede afbeeldingen met tekst erin.
 - Developer: `max-width: 100%` op media, geen vaste breedtes en hoogtes, functionaliteit nooit verbergen in media queries.
-- Test op 320 pixels in de responsive mode, of met de check Tekst vergroten 400% van de [WCAG Radar](https://testtoegankelijkheid.nl/wcag-radar).
+- Test op 320 pixels in de responsive mode, of met de check Tekst vergroten 400% van de [WCAG Radar](/tools/wcag-radar/).
 
 **Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon op 400% zoom en laten per bevinding zien waar de pagina breekt en hoe je dat oplost.
