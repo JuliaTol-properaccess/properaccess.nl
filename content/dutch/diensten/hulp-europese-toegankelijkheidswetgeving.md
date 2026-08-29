@@ -1,6 +1,5 @@
 ---
 title: "Hulp bij digitale toegankelijkheid"
-hide_cta: true
 meta_title: "Hulp bij digitale toegankelijkheid: audit, herstel en verantwoording | Proper Access"
 layout: "agency"
 weight: 12
@@ -58,7 +57,7 @@ faqs:
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm, maar de boetes en de hersteltermijnen verschillen. Nederland geeft drie maanden, Noorwegen acht weken."
 ---
 
-{{< section-full title="Welke wet geldt voor jou?" id="welke-wet" >}}
+{{< section-highlight title="Welke wet geldt voor jou?" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" link="/eaa/" link_text="Alles over de EAA" >}}
 
 Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een
 webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een
@@ -86,7 +85,7 @@ moeten gelden.
 Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 [EAA-monitor](https://eaa-monitor.nl).
 
-{{< /section-full >}}
+{{< /section-highlight >}}
 
 {{< section-steps id="stappen" title="Van waar je nu staat naar een toegankelijke website" subtitle="De EAA schrijft geen onderzoek voor. Die schrijft voor dat je website of app werkt voor iedereen. Dit is de route daarheen, en die levert je meteen het bewijs op dat het BDTO en een toezichthouder wel vragen." >}}
 <div class="card">
@@ -111,36 +110,41 @@ Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
 </div>
 {{< /section-steps >}}
 
-{{< section-full title="Wie biedt praktische hulp bij digitale toegankelijkheid?" id="wie-helpt" >}}
+{{< section-cards title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." id="wie-helpt" columns="2" >}}
 
-Proper Access doet dat, en we dekken alle vier de stappen hierboven.
+{{< section-card title="1. Onderzoek" >}}
+We toetsen je website, webshop of app handmatig volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
 
-Voor het **onderzoek** toetsen we je website, webshop of app handmatig volgens WCAG-EM, de
-methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2 niveau AA.
-Welk type onderzoek past hangt af van wat je zelf kunt veranderen; die keuze staat uitgelegd op
-de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Een volledig onderzoek
-begint bij circa € 2.250 en duurt 3 tot 5 weken.
+Welk type onderzoek past hangt af van wat je zelf kunt veranderen. Die keuze staat uitgelegd op de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/).
 
-Voor **vragen en begeleiding** werken we met een [strippenkaart](/strippenkaart/): één strip is
-één vraag over één onderwerp. Daarmee bekijken we alternatieven, reviewen we
-code of testen we tussentijds, zonder dat er een traject omheen hoeft. Wil je je eigen team opleiden, dan kan dat met een
-[training voor devteams](/training-devteams/) of een
-[training voor je webredactie](/trainen-van-webredactie/).
+**Vanaf circa € 2.250, doorlooptijd 3 tot 5 weken.**
+{{< /section-card >}}
 
-Voor de **hercontrole** toetsen we de opgeloste problemen opnieuw en leggen we vast dat ze weg
-zijn. Wat dat kost hangt af van het aantal bevindingen in je rapport, meestal € 300 tot € 1.100.
-Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja
-tegen zegt. Meer daarover staat op de pagina over de [hercontrole](/hercontrole/).
+{{< section-card title="2. Vragen tijdens het oplossen" >}}
+Het oplossen doet je eigen team. De vragen die daarbij ontstaan gaan bijna altijd over wat een goed alternatief is.
 
-Voor de **verantwoording** leveren we het rapport in de vorm die het
-[Register van Toegankelijkheidsverklaringen](/toegankelijkheidsverklaring/) vraagt en helpen we
-bij het invullen in de Mijn-omgeving van DigiToegankelijk. Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en
-dat is de methode die we hanteren.
+Daarvoor werken we met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. Daarmee bekijken we alternatieven, reviewen we code of testen we tussentijds, zonder dat er een traject omheen hoeft.
 
-Hoe andere organisaties deze route lopen en waar zij tegenaan lopen, kun je meelezen in de
-[EAA-monitor](https://eaa-monitor.nl).
+**Vanaf € 20 per vraag. Wil je je team opleiden, dan kan dat met een [training voor devteams](/training-devteams/) of voor je [webredactie](/trainen-van-webredactie/).**
+{{< /section-card >}}
 
-{{< /section-full >}}
+{{< section-card title="3. Hercontrole" >}}
+We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.
+
+Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja tegen zegt.
+
+**Meestal € 300 tot € 1.100. Meer daarover op de pagina over de [hercontrole](/hercontrole/).**
+{{< /section-card >}}
+
+{{< section-card title="4. Verantwoording" >}}
+We leveren het rapport in de vorm die het [Register van Toegankelijkheidsverklaringen](/toegankelijkheidsverklaring/) vraagt, en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
+
+Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en dat is de methode die we hanteren. Val je onder de EAA, dan gaat het om de informatie over toegankelijkheid die je zelf publiceert.
+
+**Onderdeel van het onderzoek, geen apart tarief.**
+{{< /section-card >}}
+
+{{< /section-cards >}}
 
 {{< section-full title="Volg de markt met de EAA-monitor" id="eaa-monitor" bg="light" >}}
 
