@@ -1348,6 +1348,10 @@ html.dark .section-cards--dark {
   font-size: 1.1rem;
   color: #4b5563;
   line-height: 1.6;
+  /* Zonder maximum liep deze regel over de volle 1200px van de container en
+     werd hij te lang om comfortabel te lezen. */
+  max-width: 46rem;
+  margin-inline: auto;
 }
 
 .section-cards--dark .section-cards__subtitle {
@@ -1455,6 +1459,24 @@ html.dark .section-card__content {
 
 .section-card__content p:last-child {
   margin-bottom: 0;
+}
+
+/* Links in een kaart hadden geen enkele opmaak: zelfde kleur als de lopende
+   tekst en geen onderstreping. Zelfde behandeling als in section-full. */
+.section-card__content a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+html.dark .section-card__content a {
+  color: #e8a0ba;
+}
+
+.section-steps__track .card a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* --- section-steps: stappen met verbindingslijnen --- */
@@ -18448,6 +18470,35 @@ html.dark .jaartijdlijn dd {
   font-size: 1rem;
   line-height: 1.5;
   color: #f5f5f5;
+}
+
+.wetkaart a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.wetkaart a:hover {
+  color: #004050;
+}
+
+/* --- links in de nieuwe secties ---
+   Zelfde opmaak als in section-full: magenta met onderstreping, zodat een
+   link ook zonder kleur herkenbaar blijft (WCAG 1.4.1). */
+.feiten__tekst a,
+.feiten__waarde a,
+.route__stap-tekst a,
+.dienst-kaart__tekst a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.feiten__tekst a:hover,
+.feiten__waarde a:hover,
+.route__stap-tekst a:hover,
+.dienst-kaart__tekst a:hover {
+  color: #004050;
 }
 
 /* --- FAQ, vlakke variant ---
