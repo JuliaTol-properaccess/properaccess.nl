@@ -19,16 +19,8 @@ keywords:
   - "accessibility overlay werkt niet"
   - "AccessiBe alternatief"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-seo_title: "Werken overlay-tools? AccessiBe en UserWay getest | Proper Access"
-seo_description: "Maken AccessiBe, UserWay en EqualWeb je site echt WCAG-conform? Wat zeggen screenreader-gebruikers, wat zegt onderzoek en wat zegt de rechter? Een overzicht voor webshops."
-seo_keywords:
-  [
-    "AccessiBe review",
-    "UserWay review",
-    "overlay accessibility tool",
-    "AccessiBe WCAG",
-    "accessibility overlay nadelen",
-  ]
+meta_title: "Werken overlay-tools? AccessiBe en UserWay getest | Proper Access"
+meta_description: "Maken AccessiBe, UserWay en EqualWeb je site echt WCAG-conform? Wat zeggen screenreader-gebruikers, wat zegt onderzoek en wat zegt de rechter? Een overzicht voor webshops."
 ---
 
 Als je de afgelopen maanden iets hebt opgezocht over de European Accessibility Act, is de kans groot dat je een advertentie hebt gezien voor AccessiBe, UserWay, EqualWeb of accessiBle. De boodschap is overal hetzelfde: _"Maak je site WCAG-conform met één knop op je website. Vanaf vandaag. Geen developer nodig. Vanaf € 49 per maand."_

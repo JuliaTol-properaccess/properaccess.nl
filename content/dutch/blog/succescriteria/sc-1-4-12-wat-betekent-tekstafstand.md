@@ -12,17 +12,6 @@ keywords:
   - WCAG 1.4.12
   - leesbaarheid vergroten WCAG
   - hoe test je SC 1.4.12
-seo_keywords:
-  [
-    "WCAG 1.4.12",
-    "text spacing",
-    "line-height",
-    "toegankelijke CSS",
-    "overflow hidden",
-    "vaste hoogte container",
-    "dyslexie tekstopmaak",
-    "EAA compliance",
-  ]
 aliases:
   - /sc-1-4-12-wat-betekent-tekstafstand/
 ---

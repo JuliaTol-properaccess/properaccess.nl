@@ -10,15 +10,15 @@ tags:
   - "audit"
   - "methodiek"
   - "veelgestelde-vragen"
-description: "WCAG-EM is de W3C-methode voor een toegankelijkheidsonderzoek. In vijf stappen leg ik uit wat het is, hoe het werkt en waarom het voor overheid en EAA-audits verplicht is."
+description: "WCAG-EM is de W3C-methode voor een toegankelijkheidsonderzoek. In vijf stappen leg ik uit wat het is, hoe het werkt en wanneer je er niet omheen kunt."
 keywords:
   - WCAG-EM
   - WCAG-EM methode
   - toegankelijkheidsonderzoek methode
   - WCAG audit methodiek
   - evaluatiemethodiek WCAG
-seo_title: "WCAG-EM uitgelegd: de 5 stappen van een officieel onderzoek | Proper Access"
-seo_description: "Wat is WCAG-EM en waarom is het verplicht voor overheids- en EAA-audits? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
+meta_title: "WCAG-EM uitgelegd: de 5 stappen van een officieel onderzoek | Proper Access"
+meta_description: "Wat is WCAG-EM en wanneer heb je het nodig? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
 ---
 
 Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een WCAG-audit hoort uit te voeren.
@@ -38,13 +38,13 @@ WCAG-EM lost dat op. Het legt vast:
 
 Daardoor zijn audits van verschillende partijen vergelijkbaar, en kan een hercontrole door een andere auditor dezelfde conclusies opleveren.
 
-## Wanneer is WCAG-EM verplicht?
+## Wanneer heb je WCAG-EM nodig?
 
-- **Overheidswebsites onder het BDTO (Besluit Digitale Toegankelijkheid Overheid)**: de [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) moet gebaseerd zijn op een WCAG-EM-evaluatie
-- **Webshops en diensten onder de EAA**: voor een geldige conformiteitsbeoordeling
-- **Formele audits voor een A-verklaring**: zonder WCAG-EM geen status A in het Register van Toegankelijkheidsverklaringen
+Op één plek is het een harde eis. Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register) accepteert geen onderzoek dat er niet volgens is uitgevoerd, en dat geldt voor elke status die je aanvraagt, niet alleen voor status A. Val je onder het BDTO, dan moet je [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) dus op een WCAG-EM-evaluatie zijn gebaseerd.
 
-Ook als je niet wettelijk verplicht bent, is het de reden om erom te vragen. Een aanbieder die niet volgens WCAG-EM werkt, werkt met zelfbedachte scope en dat zegt iets.
+Onder de EAA ligt het anders. Die wet verplicht je tot een toegankelijke website of app, niet tot een onderzoek. Een onderzoek is de manier om te weten waar je staat, en WCAG-EM is de manier om dat onderzoek volledig te maken. Kun je bij een toezichthouder niet laten zien hoe je aan je conclusie komt, dan heb je weinig in handen.
+
+Ook zonder wettelijke eis is het de reden om erom te vragen. Een aanbieder die niet volgens WCAG-EM werkt, bepaalt zelf welk deel van je site hij bekijkt.
 
 ## De vijf stappen van WCAG-EM
 
@@ -133,6 +133,6 @@ Voor ons is het ook een manier om het gesprek met klanten te structureren. Stap 
 
 ## Eerste stap
 
-Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? Een [mini-audit](/webshop-quickscan/) van de belangrijkste pagina's is een goed begin. Daarna kunnen we samen bepalen of een volledig WCAG-EM-onderzoek bij je wettelijke verplichting of interne doelen past.
+Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? [Vraag een offerte aan](/offerte-wcag-onderzoek/); je krijgt binnen twee werkdagen een prijs met de scope en de steekproef erbij. Liever eerst overleggen, [neem dan contact op](/contact/).
 
 Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek: wat is het en wanneer heb je het nodig?](/blog/toegankelijkheidsonderzoek-wat-is-het/)
