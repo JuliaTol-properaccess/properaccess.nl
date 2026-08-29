@@ -28,6 +28,33 @@ banner:
     label: "Plan een kennismaking"
     link: "/contact/"
 
+faq_style: "flat"
+faq_title: "Alles wat je wilt weten voordat je mailt"
+
+eaa_feiten:
+  - k: "Wat"
+    v: "Richtlijn (EU) 2019/882, in Nederland de Implementatiewet toegankelijkheidsvoorschriften producten en diensten"
+  - k: "Sinds"
+    v: "28 juni 2025"
+  - k: "Voor wie"
+    v: "Bedrijven die digitale producten of diensten aan consumenten leveren"
+  - k: "Uitzondering"
+    v: "Micro-ondernemingen: minder dan 10 mensen in dienst én maximaal € 2 miljoen jaaromzet. Allebei"
+  - k: "Norm"
+    v: "EN 301 549, op dit moment WCAG 2.1 niveau A en AA"
+  - k: "Toezicht"
+    v: "Zes toezichthouders. Voor webshops en apps is dat de ACM"
+  - k: "Verplicht"
+    v: "Een toegankelijke website of app. Een onderzoek is geen wettelijke eis"
+
+eaa_monitor_punten:
+  - k: "Anoniem"
+    v: "Je stelt je vraag zonder je bedrijfsnaam erbij."
+  - k: "Van elkaar"
+    v: "Je leest terug hoe andere bedrijven de EAA aanpakken en waar zij tegenaan lopen."
+  - k: "Van experts"
+    v: "Je vindt er hulp bij mensen die digitale toegankelijkheid dagelijks doen."
+
 trust:
   label: "Onderzochten onder meer voor"
   names:
@@ -57,7 +84,7 @@ faqs:
     answer: "Nee. Een overlay is een stuk JavaScript dat bovenop je site draait en de code eronder niet repareert. Een knop zonder toegankelijke naam blijft een knop zonder toegankelijke naam. De ACM was daar op de Dag van Digitale Toegankelijkheid duidelijk over. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie."
 ---
 
-{{< section-full title="Wat is de European Accessibility Act?" id="wat-is-het" >}}
+{{< section-feiten title="Wat is de European Accessibility Act?" eyebrow="Sinds 28 juni 2025" id="wat-is-het" feiten="eaa_feiten" >}}
 
 De European Accessibility Act is
 [richtlijn (EU) 2019/882](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882), vastgesteld op 17 april 2019. De richtlijn verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken voor mensen met een beperking. Nederland heeft hem omgezet met de
@@ -66,9 +93,9 @@ De European Accessibility Act is
 Voor die datum was digitale toegankelijkheid in Nederland vooral een verplichting voor de overheid, via het
 [Besluit digitale toegankelijkheid overheid](https://wetten.overheid.nl/BWBR0040936) uit 2018. De EAA breidt die plicht uit naar het bedrijfsleven.
 
-**Er lopen twee overgangstermijnen.** Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Voor een website of app die je vandaag onderhoudt betekent dat weinig: die valt gewoon onder de plicht.
+Er lopen twee overgangstermijnen. Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Voor een website of app die je vandaag onderhoudt betekent dat weinig: die valt gewoon onder de plicht.
 
-{{< /section-full >}}
+{{< /section-feiten >}}
 
 {{< section-cards title="Voor wie geldt de EAA?" subtitle="De wet geldt voor commerciële bedrijven die digitale producten of diensten aan consumenten aanbieden. Dit zijn de groepen die we in de praktijk het vaakst tegenkomen." id="voor-wie" bg="light" columns="3" >}}
 
@@ -124,14 +151,13 @@ Onder de EAA ligt **[EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301
 
 Het BDTO wijst naar diezelfde norm. De eisen aan je website verschillen dus niet tussen een gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt.
 
+**Welke versie telt?** Juridisch alleen de versie waarnaar het Publicatieblad van de EU verwijst, en dat is V3.2.1 uit maart 2021, aangewezen met [uitvoeringsbesluit (EU) 2021/1339](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32021D1339). Er ligt een concept voor een versie 4 die WCAG 2.2 overneemt. ETSI heeft die nog niet gepubliceerd en het Publicatieblad wijst hem nog niet aan.
+
+Bij Proper Access toetsen we aan **[WCAG 2.2](https://www.w3.org/TR/WCAG22/)**, een versie hoger dan de norm vraagt. Dat scheelt je een tweede ronde zodra versie 4 wel wordt aangewezen. WCAG 2.2 voegde negen criteria toe, waarvan er zes op niveau A en AA vallen. Een paar daarvan raken precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie.
+
 {{< /section-highlight >}}
 
-{{< section-full title="Welke versie van de norm telt?" id="norm" >}}
-
-
-Bij Proper Access toetsen we aan WCAG 2.2. Dat is een versie hoger dan de norm vraagt, en het scheelt je een tweede ronde zodra versie 4 wel wordt aangewezen. WCAG 2.2 voegde negen criteria toe, waarvan er zes op niveau A en AA vallen. Een paar daarvan raken precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie.
-
-### De norm gaat over meer dan je website
+{{< section-full title="De norm gaat over meer dan je website" id="norm" >}}
 
 Dit verrast de meeste mensen. EN 301 549 behandelt ook hardware, software, documentatie en klantondersteuning. Hoofdstuk 9 is het webhoofdstuk en neemt daar de WCAG-succescriteria over, maar de norm houdt daar niet op.
 
@@ -162,28 +188,51 @@ Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Bij het toetsen 
 
 {{< /section-full >}}
 
-{{< section-steps id="wat-nu" title="Wat moet je nu doen?" subtitle="De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis. Je doet het omdat je zonder onderzoek niet weet wat er mis is, en omdat je het moet kunnen onderbouwen als een toezichthouder ernaar vraagt. Dit is de route die wij aanhouden." >}}
-<div class="card">
-  <i class="card__icon" aria-hidden="true">1</i>
-  <h3 class="card__title">Weten waar je staat</h3>
-  <p>Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. Wil je eerst een indicatie voordat je een heel traject start, dan is een <a href="/webshop-quickscan/">mini-audit</a> van 495 euro exclusief btw een klein begin.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">2</i>
-  <h3 class="card__title">Oplossen wat blokkeert</h3>
-  <p>Begin bij wat iemand tegenhoudt om te bestellen of te betalen. Bij een webshop is dat vrijwel altijd het afrekenproces, en dat is ook precies het onderdeel dat de ACM doorloopt. Dit is de langste stap.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">3</i>
-  <h3 class="card__title">Vastleggen dat het weg is</h3>
-  <p>Met een <a href="/hercontrole/">hercontrole</a> toetsen we de opgeloste bevindingen opnieuw. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">4</i>
-  <h3 class="card__title">Publiceren en bijhouden</h3>
-  <p>Publiceer informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je algemene voorwaarden. Dat is iets anders dan een <a href="/toegankelijkheidsverklaring/">toegankelijkheidsverklaring</a> in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.</p>
-</div>
-{{< /section-steps >}}
+{{< section-route id="wat-nu" eyebrow="De route" title="Wat moet je nu doen?" subtitle="De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis. Je doet het omdat je zonder onderzoek niet weet wat er mis is, en omdat je het moet kunnen onderbouwen als een toezichthouder ernaar vraagt. Dit is de route die wij aanhouden." >}}
+
+{{< route-stap n="01" title="Weten waar je staat" >}}
+Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. Wil je eerst een indicatie voordat je een heel traject start, dan is een [mini-audit](/webshop-quickscan/) van € 495 een klein begin.
+{{< /route-stap >}}
+
+{{< route-stap n="02" title="Oplossen wat blokkeert" >}}
+Begin bij wat iemand tegenhoudt om te bestellen of te betalen. Bij een webshop is dat vrijwel altijd het afrekenproces, en dat is ook precies het onderdeel dat de ACM doorloopt. Dit is de langste stap.
+{{< /route-stap >}}
+
+{{< route-stap n="03" title="Vastleggen dat het weg is" >}}
+Met een [hercontrole](/hercontrole/) toetsen we de opgeloste bevindingen opnieuw. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.
+{{< /route-stap >}}
+
+{{< route-stap n="04" title="Publiceren en bijhouden" >}}
+Publiceer informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je algemene voorwaarden. Dat is iets anders dan een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.
+{{< /route-stap >}}
+
+{{< /section-route >}}
+
+{{< section-diensten id="hoe-we-helpen" eyebrow="Hoe we helpen" title="Praktische hulp bij elke stap" subtitle="Je hoeft niet alles zelf te doen. Wat je wel zelf moet weten, is waar je staat." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
+
+{{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
+Een handmatig onderzoek volgens WCAG-EM, getoetst aan WCAG 2.2 niveau AA. Je krijgt een rapport per element, met screenshots en code-voorbeelden, en een user story per bevinding.
+{{< /dienst-kaart >}}
+
+{{< dienst-kaart title="Mini-audit" prijs="€ 495 · rapport binnen 5 werkdagen" link="/webshop-quickscan/" cta="Bekijk de mini-audit" >}}
+Tot 5 uur handmatige controle door een senior auditor. Voor als je eerst wilt weten hoe groot het probleem is voordat je een heel traject start.
+{{< /dienst-kaart >}}
+
+{{< dienst-kaart title="Vragen tijdens het oplossen" prijs="€ 20 tot € 25 per vraag" link="/strippenkaart/" cta="Bekijk de strippenkaart" >}}
+Loopt je developer vast op een bevinding, dan legt hij de vraag voor aan een senior auditor. Eén strip is één vraag over één onderwerp; vervolgvragen in dezelfde draad kosten niets extra.
+{{< /dienst-kaart >}}
+
+{{< dienst-kaart title="Hercontrole" prijs="Prijs hangt af van het aantal bevindingen" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het probleem weg is. Dat is het bewijs dat een toezichthouder wil zien.
+{{< /dienst-kaart >}}
+
+{{< /section-diensten >}}
+
+{{< section-monitor id="eaa-monitor" eyebrow="EAA-monitor" title="Kijken hoe andere bedrijven het aanpakken" link="https://eaa-monitor.nl" link_text="Ga naar de EAA-monitor" punten="eaa_monitor_punten" >}}
+
+De [EAA-monitor](https://eaa-monitor.nl) is een initiatief van Flonam en niet van ons. Je stelt er anoniem je vragen over de European Accessibility Act, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt er hulp bij experts in digitale toegankelijkheid. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
+
+{{< /section-monitor >}}
 
 {{< section-full title="Verder lezen over de EAA" id="verder-lezen" bg="light" >}}
 

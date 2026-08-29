@@ -61,9 +61,20 @@
      verbiedt. Zelfde blok als in layouts/diensten/audit.html. Pagina's zonder faqs
      in de front matter renderen niets. -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+{{/* faq_style: "flat" in de front matter zet de FAQ op wit met hairlines in
+     plaats van de donkerblauwe standaardvariant. faq_title vervangt dan de
+     standaardkop; "Veelgestelde vragen" schuift naar het eyebrow-label. */}}
+{{ $flat := eq $.Params.faq_style "flat" }}
+<section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}">
   <div class="hp-container">
+    {{ if $flat }}
+    <div class="hp-faq__header">
+      <p class="hp-faq__eyebrow">Veelgestelde vragen</p>
+      <h2 class="hp-heading-lg hp-faq__title">{{ $.Params.faq_title | default "Veelgestelde vragen" }}</h2>
+    </div>
+    {{ else }}
     <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
+    {{ end }}
     <div class="hp-faq__container faq-container">
       {{ range . }}
         <details class="faq-item">

@@ -1,0 +1,21 @@
+{{/* Witte dienstkaarten op een grijs vlak, elk met een prijsregel en een link.
+     Vul met {{< dienst-kaart >}}. */}}
+{{- $title := .Get "title" -}}
+{{- $eyebrow := .Get "eyebrow" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $noot := .Get "noot" -}}
+{{- $id := .Get "id" -}}
+
+<section class="diensten"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    <div class="diensten__header">
+      {{ with $eyebrow }}<p class="diensten__eyebrow">{{ . }}</p>{{ end }}
+      {{ with $title }}<h2 class="hp-heading-lg">{{ . }}</h2>{{ end }}
+      {{ with $subtitle }}<p class="diensten__subtitle">{{ . }}</p>{{ end }}
+    </div>
+    <div class="diensten__grid">
+      {{ .Inner }}
+    </div>
+    {{ with $noot }}<p class="diensten__noot">{{ . }}</p>{{ end }}
+  </div>
+</section>

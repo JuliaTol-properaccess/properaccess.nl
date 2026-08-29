@@ -1,0 +1,31 @@
+{{/* Twee kolommen: lopende tekst links, een compacte feitentabel rechts.
+     De feiten komen uit de front matter, zodat ze ook als losse data bruikbaar
+     zijn. Geef met feiten="..." de naam van het front-matterveld mee. */}}
+{{- $title := .Get "title" -}}
+{{- $eyebrow := .Get "eyebrow" -}}
+{{- $id := .Get "id" -}}
+{{- $page := .Page -}}
+{{- $feiten := slice -}}
+{{- with .Get "feiten" -}}{{- with index $page.Params . -}}{{- $feiten = . -}}{{- end -}}{{- end -}}
+
+<section class="feiten"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    <div class="feiten__grid">
+      <div class="feiten__tekst">
+        {{ with $eyebrow }}<p class="feiten__eyebrow">{{ . }}</p>{{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg feiten__titel">{{ . }}</h2>{{ end }}
+        {{ .Inner | markdownify }}
+      </div>
+      {{ with $feiten }}
+      <dl class="feiten__lijst">
+        {{ range . }}
+        <div class="feiten__rij">
+          <dt class="feiten__term">{{ .k }}</dt>
+          <dd class="feiten__waarde">{{ .v | markdownify }}</dd>
+        </div>
+        {{ end }}
+      </dl>
+      {{ end }}
+    </div>
+  </div>
+</section>

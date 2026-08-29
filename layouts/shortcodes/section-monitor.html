@@ -1,0 +1,38 @@
+{{/* Donkere band met een verwijzing naar een externe bron. De punten rechts
+     komen uit de front matter; geef met punten="..." de veldnaam mee. */}}
+{{- $title := .Get "title" -}}
+{{- $eyebrow := .Get "eyebrow" -}}
+{{- $link := .Get "link" -}}
+{{- $linktekst := .Get "link_text" -}}
+{{- $id := .Get "id" -}}
+{{- $page := .Page -}}
+{{- $punten := slice -}}
+{{- with .Get "punten" -}}{{- with index $page.Params . -}}{{- $punten = . -}}{{- end -}}{{- end -}}
+
+<section class="monitor"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    <div class="monitor__grid">
+      <div class="monitor__tekst">
+        {{ with $eyebrow }}<p class="monitor__eyebrow">{{ . }}</p>{{ end }}
+        {{ with $title }}<h2 class="hp-heading-lg monitor__titel">{{ . }}</h2>{{ end }}
+        <div class="monitor__body">{{ .Inner | markdownify }}</div>
+        {{ if and $link $linktekst }}
+        <a class="hp-btn hp-btn--white" href="{{ $link }}">
+          {{ $linktekst }}
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+        {{ end }}
+      </div>
+      {{ with $punten }}
+      <ul class="monitor__punten">
+        {{ range . }}
+        <li class="monitor__punt">
+          <span class="monitor__punt-kop">{{ .k }}</span>
+          <span class="monitor__punt-tekst">{{ .v }}</span>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </div>
+</section>

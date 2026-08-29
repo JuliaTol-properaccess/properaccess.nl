@@ -18054,3 +18054,488 @@ html.dark .jaartijdlijn dd {
     transition: none;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Secties voor de EAA-pagina
+   Feitentabel, route, dienstkaarten, monitorband en een vlakke
+   FAQ-variant. Kleuren komen uit het palet; #f0a5c0 is de lichte
+   magenta die elders in dit bestand al op donker wordt gebruikt.
+   ───────────────────────────────────────────────────────────── */
+
+/* --- eyebrow, gedeeld --- */
+.feiten__eyebrow,
+.route__eyebrow,
+.diensten__eyebrow,
+.hp-faq__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.75rem;
+}
+
+/* --- In het kort: tekst links, feiten rechts --- */
+.feiten {
+  padding: 5rem 0 3.5rem;
+}
+
+.feiten__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .feiten__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.feiten__titel {
+  margin-bottom: 1.25rem;
+}
+
+.feiten__tekst,
+.feiten__tekst p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #1F2937;
+}
+
+.feiten__tekst p {
+  margin-bottom: 1rem;
+}
+
+.feiten__tekst p:last-child {
+  margin-bottom: 0;
+}
+
+.feiten__lijst {
+  margin: 0;
+  padding: 0.5rem 1.75rem;
+  background: #f5f5f5;
+  border-radius: 1.25rem;
+}
+
+.feiten__rij {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+@media (min-width: 480px) {
+  .feiten__rij {
+    grid-template-columns: minmax(6rem, 30%) 1fr;
+    gap: 1rem;
+  }
+}
+
+.feiten__rij:last-child {
+  border-bottom: 0;
+}
+
+.feiten__term {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #A30D4B;
+}
+
+.feiten__waarde {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1F2937;
+}
+
+.feiten__waarde p {
+  margin: 0;
+}
+
+/* --- De route: genummerde stappen --- */
+.route {
+  padding: 4.5rem 0;
+}
+
+.route__header {
+  max-width: 45rem;
+  margin-bottom: 2.5rem;
+}
+
+.route__subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #4B5563;
+  margin: 0.75rem 0 0;
+}
+
+.route__lijst {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .route__lijst {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .route__lijst {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+.route__stap {
+  padding: 1.25rem 0 0;
+  border-top: 3px solid #A30D4B;
+}
+
+.route__nummer {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  letter-spacing: 0.06em;
+  color: #A30D4B;
+  margin: 0 0 0.75rem;
+}
+
+.route__stap-titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1F2937;
+  margin: 0 0 0.5rem;
+}
+
+.route__stap-tekst,
+.route__stap-tekst p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4B5563;
+}
+
+.route__stap-tekst p {
+  margin: 0 0 0.75rem;
+}
+
+.route__stap-tekst p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Hoe we helpen: dienstkaarten --- */
+.diensten {
+  padding: 4.5rem 0;
+  background: #f5f5f5;
+}
+
+.diensten__header {
+  max-width: 45rem;
+  margin-bottom: 2.5rem;
+}
+
+.diensten__subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #4B5563;
+  margin: 0.75rem 0 0;
+}
+
+.diensten__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .diensten__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1050px) {
+  .diensten__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.dienst-kaart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.dienst-kaart__titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1F2937;
+  margin: 0;
+}
+
+.dienst-kaart__tekst {
+  flex: 1;
+}
+
+.dienst-kaart__tekst,
+.dienst-kaart__tekst p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #4B5563;
+}
+
+.dienst-kaart__tekst p {
+  margin: 0 0 0.75rem;
+}
+
+.dienst-kaart__tekst p:last-child {
+  margin-bottom: 0;
+}
+
+.dienst-kaart__prijs {
+  font-size: 0.9375rem;
+  color: #4B5563;
+  padding-top: 0.75rem;
+  border-top: 1px solid #d1d5db;
+  margin: 0;
+}
+
+.dienst-kaart__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dienst-kaart__link:hover {
+  color: #004050;
+}
+
+.dienst-kaart__link .material-symbols-outlined {
+  font-size: 1.125rem;
+}
+
+.diensten__noot {
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin: 1.5rem 0 0;
+}
+
+/* --- EAA-monitor: donkere band --- */
+.monitor {
+  padding: 4.5rem 0;
+  background-color: #1F2937;
+  background-image:
+    radial-gradient(circle at 88% 8%, rgba(163, 13, 75, 0.55), transparent 55%),
+    radial-gradient(circle at 6% 96%, rgba(0, 64, 80, 0.5), transparent 55%);
+}
+
+.monitor__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .monitor__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+  }
+}
+
+.monitor__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f0a5c0;
+  margin: 0 0 0.75rem;
+}
+
+.monitor__titel {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* markdownify laat de <p> weg bij een enkele alinea, dus de kleur staat ook
+   op de wrapper zelf. */
+.monitor__body,
+.monitor__body p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #f5f5f5;
+}
+
+.monitor__body {
+  margin-bottom: 1.5rem;
+}
+
+.monitor__body p {
+  margin: 0 0 1rem;
+}
+
+.monitor__body p:last-child {
+  margin-bottom: 0;
+}
+
+.monitor__body a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.monitor__body a:hover {
+  color: #f0a5c0;
+}
+
+.monitor__punten {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.875rem;
+}
+
+.monitor__punt {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0.875rem;
+  padding: 1.125rem 1.375rem;
+}
+
+@media (min-width: 480px) {
+  .monitor__punt {
+    grid-template-columns: minmax(7rem, max-content) 1fr;
+    gap: 1.25rem;
+    align-items: baseline;
+  }
+}
+
+.monitor__punt-kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: #f0a5c0;
+}
+
+.monitor__punt-tekst {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
+/* --- FAQ, vlakke variant ---
+   De standaard-FAQ is donkerblauw met witte kaarten. Op pagina's met
+   faq_style: "flat" in de front matter staat de FAQ op wit, met hairlines
+   tussen de vragen. */
+.hp-faq--flat {
+  background-color: #ffffff;
+  padding: 4.5rem 0;
+}
+
+.hp-faq--flat .hp-faq__header {
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+}
+
+.hp-faq--flat .hp-faq__title {
+  text-align: left;
+  color: #1F2937;
+  margin-bottom: 0;
+}
+
+.hp-faq--flat .hp-faq__container {
+  border-top: 1px solid #d1d5db;
+}
+
+.hp-faq--flat .faq-container {
+  gap: 0;
+}
+
+.hp-faq.hp-faq--flat details.faq-item {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #d1d5db;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.hp-faq.hp-faq--flat summary.faq-question {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1F2937;
+  padding: 1.375rem 3rem 1.375rem 0;
+}
+
+.hp-faq.hp-faq--flat summary.faq-question:hover {
+  color: #A30D4B;
+}
+
+.hp-faq--flat summary.faq-question::after {
+  content: "+";
+  top: 50%;
+  right: 0.25rem;
+  font-size: 1.625rem;
+  line-height: 1;
+  color: #A30D4B;
+  transform: translateY(-50%);
+  transition: transform 0.25s ease;
+}
+
+.hp-faq--flat details[open] summary.faq-question::after {
+  content: "+";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hp-faq--flat details[open] summary.faq-question {
+  border-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+.hp-faq--flat .faq-answer {
+  padding: 0 3rem 1.625rem 0;
+  margin-top: 0;
+}
+
+.hp-faq--flat .faq-answer p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #4B5563;
+  max-width: 68ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-faq--flat summary.faq-question::after {
+    transition: none;
+  }
+}

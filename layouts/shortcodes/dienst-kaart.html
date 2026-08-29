@@ -1,0 +1,15 @@
+{{- $title := .Get "title" -}}
+{{- $prijs := .Get "prijs" -}}
+{{- $link := .Get "link" -}}
+{{- $cta := .Get "cta" -}}
+<article class="dienst-kaart">
+  <h3 class="dienst-kaart__titel">{{ $title }}</h3>
+  <div class="dienst-kaart__tekst">{{ .Inner | markdownify }}</div>
+  {{ with $prijs }}<p class="dienst-kaart__prijs">{{ . }}</p>{{ end }}
+  {{ if and $link $cta }}
+  <a class="dienst-kaart__link" href="{{ $link }}">
+    {{ $cta }}
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+  </a>
+  {{ end }}
+</article>
