@@ -2,6 +2,7 @@
 title: "Toegankelijke spreadsheets maken in Google Sheets"
 date: 2026-08-12
 slug: "toegankelijke-spreadsheets-maken-in-google-sheets"
+meta_title: "Google Sheets kan geen tabelkoppen. Wat je dan wel kunt doen"
 categories:
   - "webredactie"
   - "tips-en-tools"

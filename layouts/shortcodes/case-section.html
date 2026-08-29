@@ -1,9 +1,13 @@
 {{- $image := .Get "image" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $round := .Get "round" | default "" -}}
-<section class="case-section{{ if not $image }} case-section--full{{ end }}">
+{{/* stack="true": tekst over de volle breedte met de illustratie eronder, in plaats van
+     twee kolommen naast elkaar. Op een blogartikel met een inhoudsopgave in de zijkolom
+     levert dat naast-elkaar namelijk een tweede kolomsysteem op in de hoofdkolom. */}}
+{{- $stack := eq (.Get "stack") "true" -}}
+<section class="case-section{{ if or (not $image) $stack }} case-section--full{{ end }}{{ if $stack }} case-section--stack{{ end }}">
   <div class="container">
-    {{ if $image }}
+    {{ if and $image (not $stack) }}
     <div class="case-section__grid{{ if $round }} case-section__grid--round{{ end }}">
       <div class="case-section__text content">
         {{ .Inner | markdownify }}
@@ -18,6 +22,14 @@
     {{ else }}
     <div class="case-section__prose content">
       {{ .Inner | markdownify }}
+      {{ if and $image $stack }}
+      <figure class="case-section__figure">
+        <img src="{{ $image }}" alt="{{ $alt }}" class="case-section__image" loading="lazy">
+        {{- with .Get "caption" }}
+        <figcaption class="case-section__caption">{{ . }}</figcaption>
+        {{- end }}
+      </figure>
+      {{ end }}
     </div>
     {{ end }}
   </div>

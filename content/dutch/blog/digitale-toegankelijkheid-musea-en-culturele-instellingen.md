@@ -2,6 +2,7 @@
 title: "Digitale toegankelijkheid voor musea en culturele instellingen"
 date: 2026-03-19
 slug: "digitale-toegankelijkheid-musea-cultuur"
+meta_title: "Twee musea die op elkaar lijken, twee verschillende wetten"
 categories:
   - "de EAA"
   - "achtergrond_wcag"
@@ -44,18 +45,44 @@ Culturele instellingen hebben te maken met een combinatie van factoren die je bi
 
 5. **Publieke functie.** Musea en theaters zijn er voor iedereen. Dat maakt toegankelijkheid niet alleen een wettelijke verplichting, maar een kernwaarde.
 
-## De EAA en de culturele sector
+## Welke wet geldt voor jouw museum?
 
-Sinds juni 2025 geldt de European Accessibility Act (EAA) voor e-commercediensten. Dat betekent: als je online tickets verkoopt, valt je ticketverkoop onder de EAA.
+Nederland kent twee regimes voor digitale toegankelijkheid, en voor de eigen website of app van een organisatie geldt het ene of het andere. Nooit allebei.
 
-Maar het gaat verder dan alleen ticketing. De EAA is van toepassing op de hele keten van online dienstverlening:
+- Het **Besluit digitale toegankelijkheid overheid (BDTO)** geldt sinds 2018 voor overheidsinstanties en publiekrechtelijke instellingen.
+- De **European Accessibility Act (EAA)** geldt sinds 28 juni 2025 voor commerciële bedrijven die digitale diensten aanbieden.
+
+Welke van de twee op jou van toepassing is, hangt af van wat je organisatie juridisch is. Niet van wat je aanbiedt. Online tickets verkopen zet je dus niet automatisch onder de EAA.
+
+En hier zit het punt waar de culturele sector zich van andere sectoren onderscheidt: die grens loopt niet waar je hem verwacht. Twee musea die er van buiten hetzelfde uitzien, met dezelfde soort collectie en dezelfde ticketshop, kunnen onder verschillende wetten vallen.
+
+### Subsidie is niet het criterium
+
+Dit gaat het vaakst mis. "Wij krijgen overheidsgeld, dus wij vallen onder het BDTO" klopt niet.
+
+Publiekrechtelijke instelling is een juridisch begrip uit het aanbestedingsrecht, uit artikel 2 van richtlijn 2014/24. Er zijn drie voorwaarden en die moeten alle drie gelden:
+
+1. de instelling is opgericht om te voorzien in behoeften van algemeen belang, zonder industrieel of commercieel karakter;
+2. ze heeft rechtspersoonlijkheid;
+3. ze wordt in hoofdzaak door de overheid gefinancierd, óf staat onder toezicht van de overheid, óf heeft een bestuur waarvan de overheid meer dan de helft benoemt.
+
+Een museum met een subsidie is dus niet automatisch BDTO-plichtig. Het gaat om financiering in hoofdzaak, en de eerste twee voorwaarden moeten er ook zijn. Twijfel je, leg het dan voor aan een jurist en niet aan een auditor. Wij kunnen je website toetsen, maar niet vaststellen wat je organisatie in juridische zin is.
+
+### Wat het verschil in de praktijk betekent
+
+Voor het testwerk maakt het weinig uit: onder beide wetten ligt de Europese norm EN 301 549, en die neemt de WCAG-succescriteria over. Het verschil zit in wat je moet publiceren.
+
+- **Onder het BDTO** heeft elk digitaal kanaal een eigen toegankelijkheidsverklaring nodig in het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register). Je hoofdwebsite, je collectiesite, je ticketshop en je museum-app zijn dus vier verklaringen, geen één.
+- **Onder de EAA** publiceer je informatie over de toegankelijkheid van je dienst op je eigen website. Dat is iets anders dan een verklaring in het Register; dat Register hoort bij het BDTO.
+
+## Wat er onder de wet valt
+
+Val je onder de EAA, dan gaat het om meer dan alleen de knop "koop een ticket". De hele keten telt mee:
 
 - **Ticketverkoop:** het volledige proces van selecteren tot betalen
 - **Online reserveringen:** rondleidingen, workshops, groepsbezoeken
 - **Digitale informatievoorziening:** tentoonstellingspagina's, openingstijden, routebeschrijvingen
 - **Nieuwsbrieven en e-mailcommunicatie**
-
-Het Besluit digitale toegankelijkheid overheid (BDTO) geldt daarnaast voor musea en instellingen die publiek gefinancierd zijn. Die moeten ook hun websites en apps toegankelijk maken.
 
 ## De 6 meest voorkomende problemen
 

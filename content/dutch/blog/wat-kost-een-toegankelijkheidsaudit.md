@@ -2,6 +2,7 @@
 title: "Wat kost een toegankelijkheidsaudit? Prijzen, pakketten en waar je op moet letten"
 date: 2026-03-16
 slug: "wat-kost-een-toegankelijkheidsaudit"
+meta_title: "Wat kost een toegankelijkheidsaudit? Van 495 tot 5.100 euro"
 breadcrumb_title: "Wat kost een audit?"
 aliases:
   - "/blog/wat-kost-toegankelijkheidsaudit-detail/"
@@ -27,97 +28,70 @@ keywords:
   - wat kost een wcag audit
 ---
 
-{{< case-section image="/images/blog/svg-prijzen-overview.svg" alt="Prijsindicatie WCAG-audit: staafdiagram met prijzen per type website" >}}
+{{< case-section image="/images/blog/svg-prijzen-overview.svg" alt="Prijsindicatie WCAG-audit: staafdiagram met prijzen per type website" stack="true" >}}
 
-## De korte versie
+## Wat het kost
 
-"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg, en die bijna geen enkel bureau beantwoordt op de website.
+"Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg, en die bijna geen enkel bureau op de website beantwoordt. Hieronder staat onze hele lijst. Alle bedragen zijn exclusief 21% btw.
 
-Bij Proper Access beginnen de prijzen vanaf circa 2.250 euro voor een eenvoudige website en lopen ze op tot circa 5.100 euro voor een complexe website. Alle bedragen op deze pagina zijn exclusief 21% btw.
-
-De meeste websites vallen in de categorie "gemiddeld", bijvoorbeeld een overheidssite met formulieren, een site met een inlogomgeving of een webshop met filteropties.
-
-{{< /case-section >}}
-
-{{< case-section image="/images/blog/svg-audit-typen.svg" alt="Vier typen onderzoek: mini-audit, content-audit, techniekaudit en volledig WCAG-EM" >}}
-
-## Typen onderzoek en wat ze kosten
-
-**Mini-audit** (495 euro): een senior auditor bekijkt je site met de hand. Geen volledige audit, maar je weet waar je staat.
-
-**Content-audit** (v.a. 1.650 euro): gericht op teksten, afbeeldingen, video's en documenten. Bruikbaar als je CMS goed is maar redacteuren niet getraind zijn in toegankelijkheid. We doen dit onderzoek alleen als de techniek van de website ook is onderzocht, door ons of door iemand anders. Een verklaring vraagt om bewijs over de hele website en niet alleen over de redactielaag.
-
-**Techniekaudit** (v.a. 2.700 euro): HTML-structuur, ARIA, toetsenbordbediening, formuliervalidatie. Het onderzoek dat je developer nodig heeft.
-
-**Volledig WCAG-EM onderzoek** (v.a. 2.250 euro): de 55 succescriteria van WCAG 2.2 op niveau A en AA, volgens de WCAG-EM methodiek. Het meest complete onderzoek.
-
-{{< /case-section >}}
-
-{{< case-section >}}
-
-## Prijstabel volledig onderzoek
+**Volledig WCAG-EM onderzoek.** De 55 succescriteria van WCAG 2.2 op niveau A en AA, volgens de WCAG-EM methodiek.
 
 | Type website | Indicatieprijs |
 |---|---|
-| Eenvoudige website (informatief, weinig interactie) | Circa 2.250 euro |
-| Gemiddelde website (formulieren, enige interactie) | Circa 3.150 euro |
-| Gemiddeld-complexe website (webshop, inlog, filters) | Circa 4.200 euro |
-| Complexe website (maatwerkapplicatie, veel interactie) | Circa 5.100 euro |
+| Eenvoudig, informatief, weinig interactie | circa 2.250 euro |
+| Gemiddeld, formulieren, enige interactie | circa 3.150 euro |
+| Gemiddeld-complex, webshop, inlog, filters | circa 4.200 euro |
+| Complex, maatwerkapplicatie, veel interactie | circa 5.100 euro |
 
-## Optionele extra's
+De meeste websites vallen in de categorie gemiddeld.
 
-Na een audit bieden we altijd twee optionele extra's aan:
+{{< /case-section >}}
 
-- **Nabespreking** (1 uur, 250 euro; een half uur kan ook, voor 125 euro): we lopen samen door het rapport, beantwoorden vragen en helpen prioriteiten stellen
-- **Hercontrole** (meestal 300 tot 1.100 euro): nadat je verbeteringen hebt doorgevoerd, controleren we of alles goed is opgelost
+{{< case-section image="/images/blog/svg-audit-typen.svg" alt="Vier typen onderzoek: mini-audit, content-audit, techniekaudit en volledig WCAG-EM" stack="true" >}}
 
-Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk een hercontrole is hangt af van het aantal bevindingen, en dat weet niemand vooraf. Het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs pas als het rapport klaar is, in een tweede offerte.
+## Een deelonderzoek of een extra
+
+| Onderzoek | Prijs |
+|---|---|
+| Mini-audit: een senior auditor kijkt tot 5 uur met de hand | 495 euro |
+| Content-audit: teksten, afbeeldingen, video's, documenten | v.a. 1.650 euro |
+| Techniekaudit: HTML, ARIA, toetsenbord, formuliervalidatie | v.a. 2.700 euro |
+| Systeem-audit: herbruikbare componenten en design systems | 4.500 euro |
+| Nabespreking, 1 uur (een half uur kan ook, voor 125 euro) | 250 euro |
+| Hercontrole nadat je de bevindingen hebt opgelost | meestal 300 tot 1.100 euro |
+
+Een content-audit voeren we alleen uit als de techniek van de website ook is onderzocht, door ons of door iemand anders. Een verklaring vraagt om bewijs over de hele website en niet alleen over de redactielaag.
+
+Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk het is hangt af van het aantal bevindingen, en dat weet niemand vooraf: het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs in een tweede offerte, zodra het rapport klaar is.
 
 {{< /case-section >}}
 
 {{< case-section >}}
 
-## Waar betaal je eigenlijk voor?
+## Waar betaal je voor?
 
-Een audit is meer dan even je website nakijken. Dit zit er in:
+Een audit is menselijk werk, dus de prijs volgt de omvang en de complexiteit: hoeveel unieke paginatypes je hebt en hoeveel eigen componenten daarin zitten. Het onderzoek gaat handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%, plus controle op contrast en kleurgebruik. Apps toetsen we op echte toestellen.
 
-1. **Intake**: begrijpen wat je website doet, welke paginatypes er zijn, wie de bezoekers zijn
-2. **Paginaselectie**: een representatieve steekproef samenstellen, want WCAG-EM toetst niet elke pagina
-3. **Geautomatiseerde scan**: tools draaien voor de technische basis
-4. **Handmatige test**: elke pagina doorlopen met schermlezer, alleen toetsenbord, zoom tot 400%, plus controle op contrast en kleurgebruik
-5. **Rapportage**: elke bevinding beschrijven met locatie, impact, screenshot en oplossingsrichting
-6. **Interne review**: een tweede auditor controleert het rapport op consistentie en volledigheid
-
-Die zesde stap is de reden dat een audit niet in twee dagen klaar is. Hij staat apart in de offerte en schaalt mee met de omvang: twee uur bij een eenvoudige site, vijf uur bij een complexe. Elke bevinding wordt dubbel gecontroleerd, wat wij het 6-ogen-principe noemen.
+Daarna leest een tweede auditor het hele rapport na. Die reviewstap staat apart in de offerte en loopt van twee uur bij een eenvoudige site tot vijf uur bij een complexe. Elke bevinding wordt dus dubbel gecontroleerd, en dat noemen wij het 6-ogen-principe.
 
 {{< /case-section >}}
 
-{{< case-section image="/images/blog/svg-offerte-checklist.svg" alt="Checklist: vijf punten waar je op moet letten bij het vergelijken van offertes" >}}
+{{< case-section image="/images/blog/svg-offerte-checklist.svg" alt="Checklist: vijf punten waar je op moet letten bij het vergelijken van offertes" stack="true" >}}
 
-## Waar je op moet letten bij offertes
+## Zes vragen als je offertes vergelijkt
 
-**WCAG-EM methodiek.** Vraag altijd of het onderzoek volgens WCAG-EM wordt uitgevoerd. Het Register van Toegankelijkheidsverklaringen accepteert geen onderzoek dat er niet volgens is gedaan, ongeacht welke status je aanvraagt.
+Twee dingen zie je niet aan een bedrag. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, ongeacht welke status je aanvraagt. En de meeste bureaus rapporteren per succescriterium, waardoor één datepicker onder twaalf criteria terugkomt en je developer die stukken eerst bij elkaar mag zoeken.
 
-**Rapport per element.** De meeste bureaus rapporteren per succescriterium: "SC 1.1.1 is niet voldaan". Eén datepicker komt dan onder twaalf verschillende criteria terug en je developer mag die stukken eerst bij elkaar zoeken. Wij groeperen de bevindingen per component en per pagina, zodat alles wat er aan die datepicker mankeert op één plek staat.
-
-**Handmatig testen.** Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. Een goedkope audit die alleen een tool laat draaien geeft je een vals gevoel van zekerheid.
-
-**Wie voert het uit?** Bij ons doet een senior auditor het onderzoek en een tweede auditor de interne review.
-
-**Onafhankelijkheid.** Wees alert op partijen die zowel auditen als bouwen. Wie zijn eigen werk keurt, keurt niet meer onafhankelijk.
-
-## Vergelijk je meerdere offertes?
-
-Deze zes vragen halen de verschillen naar boven:
+De rest haal je met deze zes vragen boven tafel.
 
 | Vraag | Waarom die ertoe doet |
 |---|---|
-| Wordt er handmatig getest? | Zonder handwerk mis je het grootste deel van de succescriteria |
+| Wordt er handmatig getest? | Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. |
 | Met welke schermlezers? | Minimaal NVDA en VoiceOver, en op apps VoiceOver en TalkBack op echte toestellen |
-| Hoe wordt het rapport opgeleverd? | Per element is bruikbaarder dan per succescriterium |
+| Per element of per succescriterium? | Dat bepaalt hoeveel zoekwerk je team eraan heeft voordat het kan beginnen |
 | Wie voert de audit uit? | Een senior auditor of iemand die het vak nog leert |
-| Kan ik vragen stellen na oplevering? | En zo ja, wat kost dat dan |
-| Hoe lang duurt het? | Twee tot vier weken is normaal |
+| Bouwt of beheert die partij ook websites? | Wie zijn eigen werk keurt, keurt niet onafhankelijk |
+| Mag ik vragen stellen na oplevering? | En zo ja, wat dat kost |
 
 {{< /case-section >}}
 
@@ -133,13 +107,6 @@ Nee. De EAA verplicht je tot een toegankelijke website of app; een onderzoek is 
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">Hoe vaak moet ik een audit laten doen?</summary>
-<div class="faq-answer">
-Na de eerste audit en het doorvoeren van de verbeteringen adviseer ik een hercontrole. Daarna is een jaarlijkse check verstandig, zeker als je regelmatig content toevoegt of functionaliteit wijzigt. Let op: voor het Register vervalt een rapport na 36 maanden. Zodra het oudste deelonderzoek die leeftijd bereikt, verdwijnt je onderbouwing.
-</div>
-</details>
-
-<details class="faq-item">
 <summary class="faq-question">Kan ik het zelf doen?</summary>
 <div class="faq-answer">
 Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus in eigen beheer mag. Je kunt zelf al veel verbeteren met de <a href="/blog/alt-tekst-keuzehulp/">alt-tekst keuzehulp</a>, je koppenstructuur en een toetsenbordtest van je formulieren. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel.
@@ -147,9 +114,9 @@ Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus
 </details>
 
 <details class="faq-item">
-<summary class="faq-question">Wat als mijn website nog in ontwikkeling is?</summary>
+<summary class="faq-question">Hoe vaak moet ik een audit laten doen?</summary>
 <div class="faq-answer">
-Dan is een audit op het ontwerp of de staging-omgeving vaak zinvoller dan wachten tot de livegang. Hoe eerder je een probleem vindt, hoe goedkoper het is om het op te lossen.
+Na de eerste audit en het doorvoeren van de verbeteringen adviseer ik een hercontrole. Daarna is een jaarlijkse check verstandig, zeker als je regelmatig content toevoegt of functionaliteit wijzigt. Let op: voor het Register vervalt een rapport na 36 maanden. Zodra het oudste deelonderzoek die leeftijd bereikt, verdwijnt je onderbouwing.
 </div>
 </details>
 

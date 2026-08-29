@@ -2,6 +2,7 @@
 title: "Wat kost een WCAG-audit voor een webshop? Een antwoord met prijsindicatie"
 date: 2026-04-09
 slug: "wat-kost-wcag-audit-webshop"
+meta_title: "Webshop toegankelijk maken: wat de audit en het herstel kosten"
 breadcrumb_title: "Wat kost een webshop-audit?"
 aliases:
   - "/blog/kosten-wcag-naleving-webshop/"
