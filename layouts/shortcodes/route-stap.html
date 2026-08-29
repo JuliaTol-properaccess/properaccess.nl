@@ -1,0 +1,7 @@
+{{- $n := .Get "n" -}}
+{{- $title := .Get "title" -}}
+<li class="route__stap">
+  <p class="route__nummer"><span class="sr-only">Stap </span>{{ $n }}</p>
+  <h3 class="route__stap-titel">{{ $title }}</h3>
+  <div class="route__stap-tekst">{{ .Inner | markdownify }}</div>
+</li>

@@ -1,0 +1,19 @@
+{{/* Genummerde route: vier stappen naast elkaar, elk met een magenta bovenrand.
+     Vul met {{< route-stap >}}. */}}
+{{- $title := .Get "title" -}}
+{{- $eyebrow := .Get "eyebrow" | default "De route" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $id := .Get "id" -}}
+
+<section class="route"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    <div class="route__header">
+      {{ with $eyebrow }}<p class="route__eyebrow">{{ . }}</p>{{ end }}
+      {{ with $title }}<h2 class="hp-heading-lg">{{ . }}</h2>{{ end }}
+      {{ with $subtitle }}<p class="route__subtitle">{{ . }}</p>{{ end }}
+    </div>
+    <ol class="route__lijst">
+      {{ .Inner }}
+    </ol>
+  </div>
+</section>
