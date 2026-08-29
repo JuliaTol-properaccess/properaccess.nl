@@ -33,6 +33,31 @@ banner:
     label: "Plan een kennismaking"
     link: "/contact/"
 
+faq_style: "flat"
+faq_title: "Meestgestelde vragen over de wetgeving"
+
+hulp_feiten:
+  - k: "EAA"
+    v: "Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom. Sinds 28 juni 2025"
+  - k: "BDTO"
+    v: "Overheidsinstanties en publiekrechtelijke instellingen. Sinds 2018"
+  - k: "De norm"
+    v: "Allebei wijzen ze naar EN 301 549, dat op dit moment op WCAG 2.1 niveau A en AA staat"
+  - k: "Wij toetsen aan"
+    v: "WCAG 2.2, een versie hoger dan de norm vraagt. Die criteria zijn backwards compatible, dus alles uit 2.1 zit erin"
+  - k: "Verantwoording"
+    v: "Onder het BDTO een verklaring in het Register. Onder de EAA informatie over toegankelijkheid op je eigen website"
+  - k: "Uitzondering"
+    v: "Alleen onder de EAA, voor micro-ondernemingen: minder dan 10 mensen in dienst én maximaal € 2 miljoen jaaromzet. Allebei"
+
+hulp_monitor_punten:
+  - k: "De markt"
+    v: "Je ziet hoe andere bedrijven de European Accessibility Act aanpakken en waar zij tegenaan lopen."
+  - k: "Op één plek"
+    v: "De informatie over de wet en over de praktijk staat er bij elkaar op één website."
+  - k: "Hulp zoeken"
+    v: "Je vindt er partijen die je verder helpen met digitale toegankelijkheid."
+
 trust:
   label: "Begeleiden onder meer"
   names:
@@ -57,106 +82,66 @@ faqs:
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm, maar de boetes en de hersteltermijnen verschillen. Nederland geeft drie maanden, Noorwegen acht weken."
 ---
 
-{{< section-highlight title="Welke wet geldt voor jou?" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" link="/eaa/" link_text="Alles over de EAA" >}}
+{{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" >}}
 
-Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een
-webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een
-bedrijf, terwijl er technisch niets verschilt.
+Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een bedrijf, terwijl er technisch niets verschilt.
 
-| Wet | Voor wie | Sinds | Toezicht |
-| --- | --- | --- | --- |
-| European Accessibility Act | Bedrijven die producten en diensten aan consumenten leveren: webshops, bankieren, reizen, ticketing, e-books, telecom | 28 juni 2025 | Verdeeld over meerdere toezichthouders, per soort product of dienst |
-| Besluit digitale toegankelijkheid overheid | Overheidsinstanties en publiekrechtelijke instellingen | 2018 | Verantwoording via het Register van Toegankelijkheidsverklaringen |
+Allebei de wetten wijzen naar dezelfde norm, dus de eisen aan je site verschillen niet tussen een gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt. EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die je zelf over toegankelijkheid publiceert.
 
-Beide wijzen naar dezelfde norm: **EN 301 549**. De geldende norm is op dit moment WCAG 2.1
-niveau A en AA. Wat de EAA precies is en voor wie hij geldt, staat uitgebreid op de pagina over
-de [European Accessibility Act](/eaa/). EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
-je zelf over toegankelijkheid publiceert. De eisen aan je site verschillen dus niet tussen een
-gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er
-meekijkt.
+Wat de EAA precies is en voor wie hij geldt, staat op de pagina over de [European Accessibility Act](/eaa/).
 
-Wij toetsen aan WCAG 2.2 als extra service. Die criteria zijn backwards compatible, dus alles
-uit 2.1 zit erin.
+{{< /section-feiten >}}
 
-Er is één uitzondering onder de EAA, voor micro-ondernemingen. De ACM omschrijft die als minder
-dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Allebei de voorwaarden
-moeten gelden.
+{{< section-route id="stappen" eyebrow="De route" title="Van waar je nu staat naar een toegankelijke website" subtitle="De EAA schrijft geen onderzoek voor. Die schrijft voor dat je website of app werkt voor iedereen. Dit is de route daarheen, en die levert je meteen het bewijs op dat het BDTO en een toezichthouder wel vragen." >}}
 
-Benieuwd hoe andere bedrijven hier nu mee omgaan? Dat kun je volgen in de
-[EAA-monitor](https://eaa-monitor.nl).
+{{< route-stap n="01" title="Weten waar je staat" >}}
+Een handmatig onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. De EAA schrijft dat niet voor. Je doet het omdat je zonder onderzoek niet weet wat je moet oplossen.
+{{< /route-stap >}}
 
-{{< /section-highlight >}}
+{{< route-stap n="02" title="Oplossen" >}}
+Je developers en je redactie lossen de problemen op. Dit is de langste stap en de stap waar de meeste vragen ontstaan, meestal over wat een alternatief mag zijn. Bij het rapport zit een plan van aanpak, en per bevinding leggen we uit hoe je zelf controleert of het klaar is.
+{{< /route-stap >}}
 
-{{< section-steps id="stappen" title="Van waar je nu staat naar een toegankelijke website" subtitle="De EAA schrijft geen onderzoek voor. Die schrijft voor dat je website of app werkt voor iedereen. Dit is de route daarheen, en die levert je meteen het bewijs op dat het BDTO en een toezichthouder wel vragen." >}}
-<div class="card">
-  <i class="card__icon" aria-hidden="true">1</i>
-  <h3 class="card__title">Weten waar je staat</h3>
-  <p>Een handmatig onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. De EAA schrijft dat niet voor. Je doet het omdat je zonder onderzoek niet weet wat je moet oplossen.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">2</i>
-  <h3 class="card__title">Oplossen</h3>
-  <p>Je developers en je redactie lossen de problemen op. Dit is de langste stap en de stap waar de meeste vragen ontstaan, meestal over wat een alternatief mag zijn.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">3</i>
-  <h3 class="card__title">Hercontrole</h3>
-  <p>Iemand legt vast dat de problemen werkelijk zijn opgelost. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing. Precies dat wil een toezichthouder zien.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">4</i>
-  <h3 class="card__title">Verantwoording</h3>
-  <p>Een <a href="/toegankelijkheidsverklaring/">toegankelijkheidsverklaring</a> in het Register bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op je site zelf moet publiceren.</p>
-</div>
-{{< /section-steps >}}
+{{< route-stap n="03" title="Hercontrole" >}}
+Iemand legt vast dat de problemen werkelijk zijn opgelost. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing. Precies dat wil een toezichthouder zien.
+{{< /route-stap >}}
 
-{{< section-cards title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." id="wie-helpt" columns="2" >}}
+{{< route-stap n="04" title="Verantwoording" >}}
+Een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op een eigen pagina op je website publiceert.
+{{< /route-stap >}}
 
-{{< section-card title="1. Onderzoek" >}}
+{{< /section-route >}}
+
+{{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
+
+{{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
 We toetsen je website, webshop of app handmatig volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
 
-Welk type onderzoek past hangt af van wat je zelf kunt veranderen. Die keuze staat uitgelegd op de pagina over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/).
+Welk type onderzoek past hangt af van wat je zelf kunt veranderen. Wil je eerst een indicatie, dan is er de [mini-audit](/webshop-quickscan/) van € 495.
+{{< /dienst-kaart >}}
 
-**Vanaf circa € 2.250, doorlooptijd 3 tot 5 weken.**
-{{< /section-card >}}
+{{< dienst-kaart title="Vragen tijdens het oplossen" prijs="€ 20 tot € 25 per vraag" link="/strippenkaart/" cta="Bekijk de strippenkaart" >}}
+Het oplossen doet je eigen team. De vragen die daarbij ontstaan gaan bijna altijd over wat een goed alternatief is. Met een strip bekijken we alternatieven, reviewen we code of testen we tussentijds, zonder dat er een traject omheen hoeft.
 
-{{< section-card title="2. Vragen tijdens het oplossen" >}}
-Het oplossen doet je eigen team. De vragen die daarbij ontstaan gaan bijna altijd over wat een goed alternatief is.
+Wil je je team opleiden, dan kan dat met een [training voor devteams](/training-devteams/) of voor je [webredactie](/trainen-van-webredactie/).
+{{< /dienst-kaart >}}
 
-Daarvoor werken we met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. Daarmee bekijken we alternatieven, reviewen we code of testen we tussentijds, zonder dat er een traject omheen hoeft.
-
-**Vanaf € 20 per vraag. Wil je je team opleiden, dan kan dat met een [training voor devteams](/training-devteams/) of voor je [webredactie](/trainen-van-webredactie/).**
-{{< /section-card >}}
-
-{{< section-card title="3. Hercontrole" >}}
-We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.
+{{< dienst-kaart title="Hercontrole" prijs="Meestal € 300 tot € 1.100" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Dat is het bewijs dat een toezichthouder wil zien.
 
 Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja tegen zegt.
+{{< /dienst-kaart >}}
 
-**Meestal € 300 tot € 1.100. Meer daarover op de pagina over de [hercontrole](/hercontrole/).**
-{{< /section-card >}}
+{{< dienst-kaart title="Verantwoording" prijs="Onderdeel van het onderzoek, geen apart tarief" link="/toegankelijkheidsverklaring/" cta="Bekijk de verklaring" >}}
+We leveren het rapport in de vorm die het Register van Toegankelijkheidsverklaringen vraagt, en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
 
-{{< section-card title="4. Verantwoording" >}}
-We leveren het rapport in de vorm die het [Register van Toegankelijkheidsverklaringen](/toegankelijkheidsverklaring/) vraagt, en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
+Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en dat is de methode die we hanteren. Val je onder de EAA, dan gaat het om de informatie die je zelf publiceert.
+{{< /dienst-kaart >}}
 
-Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en dat is de methode die we hanteren. Val je onder de EAA, dan gaat het om de informatie over toegankelijkheid die je zelf publiceert.
+{{< /section-diensten >}}
 
-**Onderdeel van het onderzoek, geen apart tarief.**
-{{< /section-card >}}
+{{< section-monitor id="eaa-monitor" eyebrow="EAA-monitor" title="Volg de markt met de EAA-monitor" link="https://eaa-monitor.nl" link_text="Ga naar de EAA-monitor" punten="hulp_monitor_punten" >}}
 
-{{< /section-cards >}}
+Je staat er niet alleen voor. In de [EAA-monitor](https://eaa-monitor.nl) van Flonam staat de informatie over de European Accessibility Act bij elkaar op één website. Je leest er hoe andere bedrijven de wet aanpakken, je stelt anoniem je eigen vragen, en je vindt er partijen die je verder helpen.
 
-{{< section-full title="Volg de markt met de EAA-monitor" id="eaa-monitor" bg="light" >}}
-
-Je staat er niet alleen voor. Met de [EAA-monitor](https://eaa-monitor.nl) van Flonam krijg je inzicht in
-hoe andere bedrijven met de European Accessibility Act omgaan. Je stelt er anoniem je vragen, je
-leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt hulp bij bewezen
-experts in digitale toegankelijkheid. Zo zie je waar je staat vergeleken met de rest, en weet je
-waar je terecht kunt zodra je ergens niet verder komt. Kijk op
-[eaa-monitor.nl](https://eaa-monitor.nl).
-
-Wil je eerst weten waar je staat, zonder meteen een volledig onderzoek? Een
-[mini-audit](/webshop-quickscan/) van € 495 geeft je binnen een week de grootste knelpunten,
-handmatig bekeken door een senior auditor.
-
-{{< /section-full >}}
+{{< /section-monitor >}}

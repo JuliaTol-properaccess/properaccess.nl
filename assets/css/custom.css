@@ -18721,3 +18721,12 @@ html.dark .jaartijdlijn dd {
   margin-top: 0;
   font-size: 0.875rem;
 }
+
+/* Optionele illustratie onder de tekst in de linkerkolom van section-feiten. */
+.feiten__beeld {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  margin-top: 2rem;
+}
