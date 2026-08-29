@@ -23,5 +23,6 @@
     <div class="section-cards__grid section-cards__grid--{{ $columns }}">
       {{ .Inner }}
     </div>
+    {{ with .Get "noot" }}<p class="section-cards__noot">{{ . | markdownify }}</p>{{ end }}
   </div>
 </section>
