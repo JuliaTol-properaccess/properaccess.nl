@@ -1,4 +1,4 @@
-<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="480" height="480" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Card 1: Mini-audit -->
   <rect x="4" y="4" width="184" height="170" rx="10" fill="#e5e7eb"/>
   <rect x="0" y="0" width="184" height="170" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>

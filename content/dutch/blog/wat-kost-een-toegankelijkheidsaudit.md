@@ -28,8 +28,6 @@ keywords:
   - wat kost een wcag audit
 ---
 
-{{< case-section image="/images/blog/svg-prijzen-overview.svg" alt="Prijsindicatie WCAG-audit: staafdiagram met prijzen per type website" stack="true" >}}
-
 ## Wat het kost
 
 "Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg, en die bijna geen enkel bureau op de website beantwoordt. Hieronder staat onze hele lijst. Alle bedragen zijn exclusief 21% btw.
@@ -45,9 +43,7 @@ keywords:
 
 De meeste websites vallen in de categorie gemiddeld.
 
-{{< /case-section >}}
-
-{{< case-section image="/images/blog/svg-audit-typen.svg" alt="Vier typen onderzoek: mini-audit, content-audit, techniekaudit en volledig WCAG-EM" stack="true" >}}
+![](/images/blog/svg-prijzen-overview.svg)
 
 ## Een deelonderzoek of een extra
 
@@ -64,19 +60,13 @@ Een content-audit voeren we alleen uit als de techniek van de website ook is ond
 
 Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk het is hangt af van het aantal bevindingen, en dat weet niemand vooraf: het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs in een tweede offerte, zodra het rapport klaar is.
 
-{{< /case-section >}}
-
-{{< case-section >}}
+![](/images/blog/svg-audit-typen.svg)
 
 ## Waar betaal je voor?
 
 Een audit is menselijk werk, dus de prijs volgt de omvang en de complexiteit: hoeveel unieke paginatypes je hebt en hoeveel eigen componenten daarin zitten. Het onderzoek gaat handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%, plus controle op contrast en kleurgebruik. Apps toetsen we op echte toestellen.
 
 Daarna leest een tweede auditor het hele rapport na. Die reviewstap staat apart in de offerte en loopt van twee uur bij een eenvoudige site tot vijf uur bij een complexe. Elke bevinding wordt dus dubbel gecontroleerd, en dat noemen wij het 6-ogen-principe.
-
-{{< /case-section >}}
-
-{{< case-section image="/images/blog/svg-offerte-checklist.svg" alt="Checklist: vijf punten waar je op moet letten bij het vergelijken van offertes" stack="true" >}}
 
 ## Zes vragen als je offertes vergelijkt
 
@@ -93,9 +83,7 @@ De rest haal je met deze zes vragen boven tafel.
 | Bouwt of beheert die partij ook websites? | Wie zijn eigen werk keurt, keurt niet onafhankelijk |
 | Mag ik vragen stellen na oplevering? | En zo ja, wat dat kost |
 
-{{< /case-section >}}
-
-{{< case-section >}}
+![](/images/blog/svg-offerte-checklist.svg)
 
 ## Veelgestelde vragen
 
@@ -130,5 +118,3 @@ Twee dingen verklaren het grootste deel. Aan de onderkant zit vaak een geautomat
 ## Wat kost een audit voor jouw website?
 
 Dat hangt af van hoeveel unieke paginatypes je hebt en hoeveel interactie erin zit. [Vraag een offerte aan](/offerte-wcag-onderzoek/) en je krijgt binnen twee werkdagen een prijs die klopt met het werk. Liever eerst even overleggen? [Neem contact op](/contact/), we reageren binnen een werkdag.
-
-{{< /case-section >}}
