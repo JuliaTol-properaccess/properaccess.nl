@@ -1,0 +1,39 @@
+{{/*
+  Bouwt het kruimelpad op uit de paginahiërarchie van Hugo, niet uit de URL-onderdelen.
+  Dat laatste deed json-ld.html eerder, en dan meldde /en/blog/wcag-2-2-2-pause-stop-hide/
+  zich bij Google als "Home > En > Blog > Wcag 2 2 2 pause stop hide".
+
+  Geeft een slice terug van dicts: name, url, current.
+  Een sectiepagina mag met `breadcrumb_title` in de front matter een kortere naam kiezen.
+*/}}
+{{- $trail := slice -}}
+{{- $home := .Site.Home -}}
+{{- $trail = $trail | append (dict "name" (i18n "breadcrumb_home" | default "Home") "url" $home.Permalink "current" false) -}}
+
+{{- $ancestors := slice -}}
+{{- range .Ancestors -}}
+  {{- $name := or .Params.breadcrumb_title .LinkTitle .Title -}}
+  {{/* Een sectie zonder _index.md is geen echte pagina. Hugo verzint er een titel bij,
+       en dan lekt een mapnaam naar buiten: /eaa/ meldde zich als "Home > Pages > ...".
+       Zulke secties slaan we over, net als secties zonder titel. */}}
+  {{- $real := false -}}
+  {{- with .File -}}{{- $real = true -}}{{- end -}}
+  {{- if and $real (ne .RelPermalink $home.RelPermalink) (ne (trim $name " ") "") -}}
+    {{- $ancestors = $ancestors | append (dict "name" $name "url" .Permalink) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* .Ancestors loopt van dichtstbijzijnde ouder naar home, dus omkeren */}}
+{{- if gt (len $ancestors) 0 -}}
+  {{- range seq (len $ancestors) 1 -}}
+    {{- $a := index $ancestors (sub . 1) -}}
+    {{- $trail = $trail | append (dict "name" $a.name "url" $a.url "current" false) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $self := or .Params.breadcrumb_title .LinkTitle .Title -}}
+{{- if ne (trim $self " ") "" -}}
+  {{- $trail = $trail | append (dict "name" $self "url" .Permalink "current" true) -}}
+{{- end -}}
+
+{{- return $trail -}}

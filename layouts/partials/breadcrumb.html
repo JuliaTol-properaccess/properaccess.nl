@@ -1,0 +1,17 @@
+{{/* Zichtbaar kruimelpad. Het schema staat in json-ld.html en gebruikt dezelfde partial. */}}
+{{- $trail := partial "breadcrumb-trail.html" . -}}
+{{- if gt (len $trail) 2 -}}
+<nav class="breadcrumb" aria-label="{{ i18n "breadcrumb_label" | default "Kruimelpad" }}">
+  <ol class="breadcrumb__list">
+    {{- range $trail }}
+    <li class="breadcrumb__item">
+      {{- if .current -}}
+      <span class="breadcrumb__current" aria-current="page">{{ .name }}</span>
+      {{- else -}}
+      <a class="breadcrumb__link" href="{{ .url }}">{{ .name }}</a>
+      {{- end -}}
+    </li>
+    {{- end }}
+  </ol>
+</nav>
+{{- end -}}

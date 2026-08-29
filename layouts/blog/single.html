@@ -4,6 +4,7 @@
     <section class="case__hero">
       <div class="container">
         <div class="case__hero-inner">
+          {{ partial "breadcrumb.html" . }}
           {{ with .Params.categories }}
             <p class="case__label">
               {{ range $i, $cat := . }}{{ if $i }}, {{ end }}{{ $cat | humanize }}{{ end }}

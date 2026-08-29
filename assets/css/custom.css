@@ -12804,6 +12804,50 @@ a.tool-link__href-url:hover {
   max-width: 720px;
 }
 
+/* ── Kruimelpad ── */
+
+.breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Scheidingsteken is decoratief: het staat in CSS zodat een schermlezer het niet voorleest */
+.breadcrumb__item + .breadcrumb__item::before {
+  content: "/";
+  color: #6b7280;
+}
+
+.breadcrumb__link {
+  color: #004050;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb__link:hover {
+  color: #A30D4B;
+}
+
+.breadcrumb__current {
+  color: #4b5563;
+}
+
 .case__label {
   font-size: 0.75rem;
   font-weight: 700;
