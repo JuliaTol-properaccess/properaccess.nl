@@ -12982,6 +12982,16 @@ a.tool-link__href-url:hover {
   max-width: 720px;
 }
 
+/* stack="true": illustratie onder de tekst in plaats van ernaast */
+.case-section__figure {
+  margin: 2rem 0 0;
+  max-width: 480px;
+}
+
+.case-section__figure .case-section__caption {
+  text-align: left;
+}
+
 .case-section__prose h2 {
   font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
   font-size: 1.5rem;
