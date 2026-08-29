@@ -18,8 +18,8 @@ Bijgewerkt 29 augustus 2026.
 | 3. Twee nieuwe pagina's | Live, 14 augustus 2026 (PR #76) |
 | Meting | Gedaan op 29 augustus, zie hieronder |
 | Merknaam koppelen | Live, 29 augustus 2026 |
-| Search Console | Wacht op Julia |
-| Fase 2 | Pas als Search Console draait |
+| Search Console | Draait; nulmeting geëxporteerd op 29 augustus 2026 |
+| Fase 2 | Kan starten |
 
 Alles uit batch 1 tot en met 3 staat sinds 14 augustus op properaccess.nl. Wat er daarna nog
 ligt staat onderaan onder [Restwerk](#restwerk).
@@ -68,10 +68,32 @@ in de tekst staan die wordt opgehaald.
   stellen en wat een expert oplevert. Die pagina staat inmiddels in de AI Overview.
 - `llms.txt` is bijgewerkt.
 
-**Wat blokkeert.** Search Console staat nog open en dat is het punt dat de rest meetbaar maakt.
-Julia moet de property toevoegen en kiezen tussen een DNS-domeinproperty of een
-URL-prefixproperty met een meta-tag. Zonder die data blijft elke uitspraak over het effect van
-batch 1 tot en met 3 een schatting.
+**Search Console draait.** De property is aangesloten en op 29 augustus 2026 is de eerste export
+gemaakt over 30 juli tot en met 26 augustus. Die export is de nulmeting waartegen batch 1 tot en
+met 3 wordt afgerekend.
+
+De uitkomst verandert de diagnose op één punt. Het plan ging uit van onvindbaarheid; wat de data
+laat zien is dat er twee verschillende problemen naast elkaar lopen.
+
+- **Op informatieve vragen zijn we vindbaar en verliezen we de klik.** De Engelse WCAG-serie staat
+  gemiddeld op positie 6 tot 9 en haalt een CTR ver onder wat op die posities normaal is. Wat het
+  bewijs niet toelaat: Search Console schrijft geen enkele vertoning aan een AI Overview toe, dus
+  dat een AI-antwoord de klik opneemt past bij de cijfers maar staat niet vast.
+- **Op commerciële vragen in het Nederlands zijn we niet vindbaar.** Op de kerntermen van het vak
+  staan we buiten pagina 2, en de pagina's die Google daarvoor kiest zijn blogartikelen en geen
+  dienstpagina's.
+
+Daar volgen drie richtingen uit voor Fase 2:
+
+1. **De Nederlandse dienstpagina's moeten gaan ranken op de kerntermen.** Daar zit het gat met de
+   meeste omzet erachter.
+2. **Bij informatieve content is de klik niet meer de maatstaf.** Daar telt of onze naam in het
+   opgehaalde antwoord staat, en dat is precies wat er op 29 augustus is aangepakt.
+3. **Meer tools, minder uitleg.** De tools zijn de enige categorie op de site met een normale CTR,
+   en het enige wat een AI-antwoord niet kan overnemen.
+
+De cijfers zelf staan bewust niet in dit bestand: deze repository is openbaar. De volledige
+analyse ligt naast de export in `~/Downloads/properaccess.nl-Performance-on-Search-2026-08-29/`.
 
 ---
 
@@ -288,8 +310,21 @@ staat, plus de 6,7%-prompt. Hoogste rendement van alle nieuwe pagina's.
 
 ---
 
-## Fase 2, pas na de eerste meting
+## Fase 2
 
+De eerste meting is gedaan, dus deze lijst kan open. De bovenste drie punten komen uit de
+Search Console-nulmeting en gaan vóór de rest: daar zit het verschil tussen ranken en verkopen.
+
+- **De Nederlandse dienstpagina's laten ranken op de kerntermen.** Op "digitale
+  toegankelijkheid" en varianten daarvan kiest Google nu twee blogartikelen, allebei ver buiten
+  pagina 2. Uitzoeken of die artikelen de dienstpagina in de weg zitten of dat de dienstpagina's
+  te dun zijn, en dan één pagina per kernterm aanwijzen.
+- **De alt-tekst-cluster oplossen.** `/blog/alt-tekst-keuzehulp/` en `/tools/alt-tekst-keuzehulp/`
+  bestaan naast elkaar. De alt-tekst-vragen zijn samen goed voor ruim 850 vertoningen op positie
+  11 tot 15 en leveren niets op. Eén pagina aanwijzen, de andere laten linken.
+- **Nagaan of `audit.properaccess.nl` in de index hoort.** Twintig rapportpagina's van dat
+  subdomein staan in Google, terwijl `/rapporten/` op de hoofdsite bewust op Disallow staat. Als
+  dat niet de bedoeling is, is het één regel in `robots.txt` daar.
 - `/toegankelijkheidsverklaring/` als uitlegpagina die naar de twee bestaande generators
   linkt. Nu pakt `digitoegankelijk.nl` die citaties.
 - Het kostencluster consolideren: van vier kostenartikelen presteert er één (citation rate
