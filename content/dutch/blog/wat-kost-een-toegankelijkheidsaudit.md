@@ -81,13 +81,7 @@ Daarna gaat het rapport langs de review. Elk rapport wordt door drie mensen beke
 
 ## Zes vragen als je offertes vergelijkt
 
-Twee dingen zie je niet aan een bedrag.
-
-Het eerste is de methode. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, ongeacht welke status je aanvraagt.
-
-Het tweede is hoe het rapport is ingedeeld. Bij de meeste bureaus staat alles wat er aan één onderdeel van je site mankeert, bijvoorbeeld het datumveld in een formulier, verspreid over het hele rapport. Degene die het gaat oplossen moet die stukken eerst zelf bij elkaar zoeken. Wij zetten ze bij elkaar op één plek.
-
-De rest haal je met deze zes vragen boven tafel.
+Aan een bedrag zie je niet wat je ervoor krijgt. Deze zes vragen halen dat boven tafel.
 
 <ul class="checklist">
   <li>
@@ -100,7 +94,7 @@ De rest haal je met deze zes vragen boven tafel.
   </li>
   <li>
     <strong>Per element of per succescriterium?</strong>
-    Dat bepaalt hoeveel zoekwerk je team eraan heeft voordat het kan beginnen.
+    Bij de meeste bureaus staat alles wat er aan één onderdeel van je site mankeert, bijvoorbeeld het datumveld in een formulier, verspreid over het hele rapport. Degene die het gaat oplossen moet die stukken eerst zelf bij elkaar zoeken. Wij zetten ze bij elkaar op één plek.
   </li>
   <li>
     <strong>Wie voert de audit uit?</strong>
