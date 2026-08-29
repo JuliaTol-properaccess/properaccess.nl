@@ -104,11 +104,11 @@ Alles waar een consument iets kan bestellen en betalen. Het afrekenproces is het
 
 {{< section-card title="Ticketing, cultuur en attracties" >}} Kaartverkoop voor evenementen, musea, theaters en pretparken. Let op: of je onder de EAA valt of onder het BDTO hangt af van wat je organisatie juridisch is. [Toegankelijkheid voor cultuur en attracties](/inclusie-cultuur-sport-en-attracties/) {{< /section-card >}}
 
-{{< section-card title="Bankieren, verzekeren en telecom" >}} Online bankieren, verzekeringen afsluiten, telefonie- en internetabonnementen. Voor bankdiensten aan consumenten is de AFM de toezichthouder en niet de ACM.
+{{< section-card title="Bankieren, verzekeren en telecom" >}} Online bankieren, verzekeringen afsluiten, telefonie- en internetabonnementen. Voor bankdiensten aan consumenten is de AFM de toezichthouder en niet de ACM. [Toegankelijkheid voor e-commerce](/e-commerce-digitale-toegankelijkheid/)
 {{< /section-card >}}
 
 {{< section-card title="Reizen boeken en vervoer" >}}
-Boekingssites, reisapps en de verkoop van vervoerbewijzen. Het toezicht op personenvervoer per vliegtuig, bus, trein en over water ligt bij de ILT.
+Boekingssites, reisapps en de verkoop van vervoerbewijzen. Het toezicht op personenvervoer per vliegtuig, bus, trein en over water ligt bij de ILT. [Toegankelijkheid voor e-commerce](/e-commerce-digitale-toegankelijkheid/)
 {{< /section-card >}}
 
 {{< section-card title="E-books, streaming en software" >}}
@@ -138,7 +138,7 @@ Zit je boven een van beide grenzen, dan geldt de plicht gewoon.
 {{< section-card title="Onevenredige last: onderbouwen" >}}
 Hier val je niet buiten de wet. Je stelt vast dat een specifieke aanpassing onevenredig zwaar is, of dat die het product fundamenteel zou veranderen.
 
-Dat werkt niet vanzelf. De beoordeling moet zijn **vastgelegd en onderbouwd**, moet **elke vijf jaar opnieuw** worden gedaan, en de **toezichthouder mag hem opvragen**.
+Dat werkt niet vanzelf. De beoordeling moet zijn **vastgelegd en onderbouwd** en de **toezichthouder mag hem opvragen**. En je bent er niet met één keer: [artikel 14, lid 4 van de richtlijn](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32019L0882) schrijft voor dat dienstverleners "het al dan niet onevenredige karakter van de lasten ten minste om de vijf jaar opnieuw" beoordelen.
 
 Wie zich hierop beroept zonder dossier, staat bij een controle met lege handen.
 {{< /section-card >}}
@@ -153,10 +153,17 @@ Een voorbeeld dat we in de praktijk tegenkomen. Stel dat je webshop netjes aan W
 
 {{< /section-full >}}
 
-{{< section-full title="Wie houdt er toezicht?" id="toezicht" bg="light" >}}
+{{< section-tweekolom title="Wie houdt er toezicht?" id="toezicht" bg="light" >}}
 
+{{< kolom-tekst >}}
 Het toezicht op de EAA is in Nederland verdeeld over **zes toezichthouders**, elk voor een eigen soort product of dienst. Er is dus geen enkele "Autoriteit Toegankelijkheid": kom je die naam tegen, dan bestaat die organisatie niet.
 
+Heb je een webshop, dan is de ACM je toezichthouder. Die toetst websites zelf en laat webshops weten op welke punten ze niet toegankelijk zijn. Bij het toetsen loopt de ACM het hele afrekenproces door, van product in het mandje tot betaling.
+
+Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Ons verslag van de dag waarop de ACM haar aanpak presenteerde staat in [wat doet een toezichthouder? De ACM over de EAA](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
+{{< /kolom-tekst >}}
+
+{{< kolom-naast >}}
 | Toezichthouder | Waarvoor |
 | --- | --- |
 | **[ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten)** | E-handelsdiensten: webshops en apps. Plus elektronische communicatiediensten. |
@@ -165,19 +172,18 @@ Het toezicht op de EAA is in Nederland verdeeld over **zes toezichthouders**, el
 | **Commissariaat voor de Media** | E-boeken, en diensten die toegang geven tot audiovisuele mediadiensten. |
 | **ILT** | Personenvervoer per vliegtuig, bus, trein en over water. |
 | **Inspectie JenV** | Het noodnummer 112. |
+{{< /kolom-naast >}}
 
-Heb je een webshop, dan is de ACM je toezichthouder.
-
-{{< /section-full >}}
+{{< /section-tweekolom >}}
 
 {{< section-route id="wat-nu" eyebrow="De route" title="Wat moet je nu doen?" subtitle="De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis. Je doet het omdat je zonder onderzoek niet weet wat er mis is, en omdat je het moet kunnen onderbouwen als een toezichthouder ernaar vraagt. Dit is de route die wij aanhouden." >}}
 
 {{< route-stap n="01" title="Weten waar je staat" >}}
-Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. Wil je eerst een indicatie voordat je een heel traject start, dan is een [mini-audit](/webshop-quickscan/) van € 495 een klein begin.
+Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. [Vraag een offerte aan](/offerte-wcag-onderzoek/) voor een volledige audit; je krijgt binnen twee werkdagen een prijs die past bij de omvang van je site.
 {{< /route-stap >}}
 
-{{< route-stap n="02" title="Oplossen wat blokkeert" >}}
-Begin bij wat iemand tegenhoudt om te bestellen of te betalen. Bij een webshop is dat vrijwel altijd het afrekenproces, en dat is ook precies het onderdeel dat de ACM doorloopt. Dit is de langste stap.
+{{< route-stap n="02" title="Oplossen met een plan van aanpak" >}}
+Een gemiddelde audit levert in onze praktijk zo'n honderd bevindingen op, en die zitten in de componenten van je website. Je krijgt er een plan van aanpak bij, met per bevinding hoe je hem oplost en hoe je zelf controleert of het klaar is. Dit is de langste stap.
 {{< /route-stap >}}
 
 {{< route-stap n="03" title="Vastleggen dat het weg is" >}}
@@ -185,7 +191,7 @@ Met een [hercontrole](/hercontrole/) toetsen we de opgeloste bevindingen opnieuw
 {{< /route-stap >}}
 
 {{< route-stap n="04" title="Publiceren en bijhouden" >}}
-Publiceer informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je algemene voorwaarden. Dat is iets anders dan een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.
+Publiceer informatie over de toegankelijkheid van je dienst op een eigen pagina op je website, zodat een bezoeker hem kan vinden zonder door je algemene voorwaarden te hoeven lezen. Dat is iets anders dan een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.
 {{< /route-stap >}}
 
 {{< /section-route >}}

@@ -1063,7 +1063,8 @@ html.dark .section-full--light {
   -webkit-overflow-scrolling: touch;
 }
 
-.section-full__content table {
+.section-full__content table,
+.tweekolom__naast table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -1076,7 +1077,8 @@ html.dark .section-full--light {
   margin: 1.5rem 0;
 }
 
-.section-full__content thead th {
+.section-full__content thead th,
+.tweekolom__naast thead th {
   background: #1F2937;
   color: #fff;
   font-weight: 700;
@@ -1085,7 +1087,8 @@ html.dark .section-full--light {
   text-align: left;
 }
 
-.section-full__content tbody th {
+.section-full__content tbody th,
+.tweekolom__naast tbody th {
   font-weight: 700;
   color: #1F2937;
   padding: 0.875rem 1.25rem;
@@ -1094,14 +1097,17 @@ html.dark .section-full--light {
   border-bottom: 1px solid #f3f4f6;
 }
 
-.section-full__content tbody td {
+.section-full__content tbody td,
+.tweekolom__naast tbody td {
   padding: 0.875rem 1.25rem;
   color: #4B5563;
   border-bottom: 1px solid #f3f4f6;
 }
 
 .section-full__content tbody tr:last-child th,
-.section-full__content tbody tr:last-child td {
+.section-full__content tbody tr:last-child td,
+.tweekolom__naast tbody tr:last-child th,
+.tweekolom__naast tbody tr:last-child td {
   border-bottom: none;
 }
 
@@ -18589,4 +18595,81 @@ html.dark .jaartijdlijn dd {
   .hp-faq--flat summary.faq-question::after {
     transition: none;
   }
+}
+
+/* --- section-tweekolom: tekst links, tabel of ander blok rechts ---
+   De tabelopmaak zelf komt uit de regels bij .section-full__content, waar
+   .tweekolom__naast aan is toegevoegd, zodat er maar één opmaak is. */
+.tweekolom {
+  padding: 4.5rem 0;
+}
+
+.tweekolom--light {
+  background: #f5f5f5;
+}
+
+.tweekolom__header {
+  max-width: 45rem;
+  margin-bottom: 2rem;
+}
+
+.tweekolom__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.75rem;
+}
+
+.tweekolom__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .tweekolom__grid {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 3rem;
+  }
+}
+
+.tweekolom__tekst,
+.tweekolom__tekst p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #1F2937;
+}
+
+.tweekolom__tekst p {
+  margin: 0 0 1rem;
+}
+
+.tweekolom__tekst p:last-child {
+  margin-bottom: 0;
+}
+
+.tweekolom__tekst a,
+.tweekolom__naast a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.tweekolom__tekst a:hover,
+.tweekolom__naast a:hover {
+  color: #004050;
+}
+
+/* Op smalle schermen mag de tabel horizontaal schuiven; de pagina zelf niet. */
+.tweekolom__naast {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tweekolom__naast table {
+  margin-top: 0;
+  font-size: 0.875rem;
 }
