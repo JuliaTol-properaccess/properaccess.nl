@@ -34,7 +34,7 @@ banner:
     link: "/contact/"
 
 faq_style: "flat"
-faq_title: "Meestgestelde vragen over de wetgeving"
+faq_title: "Meestgestelde vragen over het traject"
 
 hulp_feiten:
   - k: "EAA"
@@ -69,17 +69,17 @@ trust:
 
 faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
-    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Daarna begeleiden we het oplossen met een strippenkaart, leggen we met een hercontrole vast dat de problemen zijn opgelost, en helpen we bij de toegankelijkheidsverklaring. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
-  - question: "Vanaf wanneer geldt de European Accessibility Act?"
-    answer: "Sinds 28 juni 2025. De wet geldt voor bedrijven die producten en diensten aan consumenten leveren, waaronder webshops, bankieren, reizen boeken, ticketing, e-books en telecomdiensten. Er is een uitzondering voor micro-ondernemingen: minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro, allebei."
-  - question: "Wie houdt in Nederland toezicht op de European Accessibility Act?"
-    answer: "Niet één partij. Het toezicht is verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst. De **ACM** voor webshops, apps en elektronische communicatiediensten. De **AFM** voor bankdiensten aan consumenten. De **RDI** voor apparaten, zoals computers, smartphones, geldautomaten, betaalterminals en ticketautomaten. Het **Commissariaat voor de Media** voor e-boeken en diensten die toegang geven tot audiovisuele media. De **ILT** voor personenvervoer per vliegtuig, bus, trein en boot. En de **Inspectie JenV** voor het noodnummer 112. Heb je een webshop, dan is de ACM je toezichthouder. Die begon met begeleiden: tien bedrijven kregen een volledig onderzoek volgens WCAG-EM en daarna een bedrijfsbezoek, en bij ruim honderd bedrijven keek de ACM naar één belangrijk functioneel onderdeel. Wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest en kan er een boete komen. De ACM toetst volgens WCAG-EM en loopt daarbij het hele afrekenproces door."
-  - question: "Voldoen we aan de wet als we een overlay-tool installeren?"
-    answer: "Nee. De ACM was daar op de Dag van Digitale Toegankelijkheid duidelijk over: overlays verbeteren maar heel weinig aan je site en zorgen er niet voor dat je aan de wet voldoet. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie."
+    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, begeleiden het oplossen met een strippenkaart, leggen met een hercontrole vast dat de problemen weg zijn, en helpen bij de verantwoording. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
+  - question: "Wat kost het om te voldoen?"
+    answer: "Het onderzoek is het enige deel waar wij vooraf een prijs op kunnen zetten: een volledig onderzoek begint bij circa € 2.250 exclusief btw. Wat het oplossen kost hangt af van je eigen team of je leverancier, en daar hebben wij geen zicht op. Wat we wel zien in de praktijk: een gemiddelde audit levert zo\u2019n honderd bevindingen op, en het grootste deel daarvan zit in een klein aantal componenten die op elke pagina terugkomen. Eén keer een datepicker of een formulier goed maken lost er dus vaak tientallen tegelijk op. Daarom groeperen we de bevindingen per element, zodat alles wat er aan één component mankeert op één plek staat."
+  - question: "Hoe lang duurt zo\u2019n traject?"
+    answer: "Het onderzoek duurt 3 tot 5 weken, afhankelijk van de omvang van je site. Het oplossen is de langste stap en duurt zo lang als je eigen planning toelaat; dat deel ligt bij je developers en je redactie. Voor de hercontrole houden we als richtlijn 12 weken na de audit aan, en later mag ook. Val je onder het BDTO, houd er dan rekening mee dat een rapport na 36 maanden vervalt en de status in het Register dan zakt."
+  - question: "Kunnen we het onderzoek niet zelf doen?"
+    answer: "Dat mag. Er is geen regel die voorschrijft dat een externe partij het onderzoek uitvoert, en sommige webbureaus kiezen daar bewust voor. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel. Wij bouwen en beheren geen websites, dus we keuren nooit ons eigen werk. Wil je het zelf leren, dan is een training voor je devteam of je webredactie een goedkopere route dan elk jaar een onderzoek inkopen."
   - question: "Onze leverancier wil de problemen niet oplossen. Wat nu?"
-    answer: "Je blijft zelf verantwoordelijk voor je eigen website of webshop, ook als het probleem in het platform van je leverancier zit. Dat bevestigde de ACM. Wij schrijven de bevinding zo op dat je hem bij je leverancier kunt neerleggen, met de code erbij en de norm waar het om gaat, en denken mee over een alternatief als de leverancier niet beweegt."
+    answer: "Je blijft zelf verantwoordelijk voor je eigen website of webshop, ook als het probleem in het platform van je leverancier zit. Dat bevestigde de ACM. Wij schrijven de bevinding zo op dat je hem bij je leverancier kunt neerleggen, met de code erbij en het succescriterium waar het om gaat, en denken mee over een alternatief als de leverancier niet beweegt."
   - question: "Verschilt de wet per EU-land?"
-    answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm, maar de boetes en de hersteltermijnen verschillen. Nederland geeft drie maanden, Noorwegen acht weken."
+    answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm. Wat verschilt zijn de sancties en de hersteltermijnen: Nederland geeft drie maanden, Noorwegen acht weken. Let bij dat laatste op dat Noorwegen de regels toepast zonder in de EU te zitten, dus reken het niet mee als je een lijstje EU-landen maakt."
 ---
 
 {{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" >}}
