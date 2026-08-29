@@ -82,7 +82,7 @@ faqs:
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm. Wat verschilt zijn de sancties en de hersteltermijnen: Nederland geeft drie maanden, Noorwegen acht weken. Let bij dat laatste op dat Noorwegen de regels toepast zonder in de EU te zitten, dus reken het niet mee als je een lijstje EU-landen maakt."
 ---
 
-{{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" >}}
+{{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" >}}
 
 Welke wet voor je geldt hangt af van wat je organisatie is, niet van wat je website doet. Een webshop van een gemeentelijk museum valt onder andere regels dan dezelfde webshop van een bedrijf, terwijl er technisch niets verschilt.
 
