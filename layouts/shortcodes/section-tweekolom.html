@@ -1,0 +1,20 @@
+{{/* Twee kolommen: lopende tekst links, een tabel of ander blok rechts.
+     Vul met {{< kolom-tekst >}} en {{< kolom-naast >}}. */}}
+{{- $title := .Get "title" -}}
+{{- $eyebrow := .Get "eyebrow" -}}
+{{- $bg := .Get "bg" -}}
+{{- $id := .Get "id" -}}
+
+<section class="tweekolom{{ if eq $bg "light" }} tweekolom--light{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    {{ if or $title $eyebrow }}
+    <div class="tweekolom__header">
+      {{ with $eyebrow }}<p class="tweekolom__eyebrow">{{ . }}</p>{{ end }}
+      {{ with $title }}<h2 class="hp-heading-lg">{{ . }}</h2>{{ end }}
+    </div>
+    {{ end }}
+    <div class="tweekolom__grid">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>
