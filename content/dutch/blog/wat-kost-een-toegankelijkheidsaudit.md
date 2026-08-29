@@ -34,16 +34,29 @@ keywords:
 
 **Volledig WCAG-EM onderzoek.** De 55 succescriteria van WCAG 2.2 op niveau A en AA, volgens de WCAG-EM methodiek.
 
-| Type website | Indicatieprijs |
-|---|---|
-| Eenvoudig, informatief, weinig interactie | circa 2.250 euro |
-| Gemiddeld, formulieren, enige interactie | circa 3.150 euro |
-| Gemiddeld-complex, webshop, inlog, filters | circa 4.200 euro |
-| Complex, maatwerkapplicatie, veel interactie | circa 5.100 euro |
-
-De meeste websites vallen in de categorie gemiddeld.
-
-![](/images/blog/svg-prijzen-overview.svg)
+<ul class="prijsbalken">
+  <li class="prijsbalk">
+    <span class="prijsbalk__label">Eenvoudig<span class="prijsbalk__toelichting">informatief, weinig interactie</span></span>
+    <span class="prijsbalk__prijs">circa 2.250 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 44%"></span></span>
+  </li>
+  <li class="prijsbalk prijsbalk--nadruk">
+    <span class="prijsbalk__label">Gemiddeld<span class="prijsbalk__toelichting">formulieren, enige interactie</span></span>
+    <span class="prijsbalk__prijs">circa 3.150 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 62%"></span></span>
+    <span class="prijsbalk__tag">Hier valt het merendeel van de websites in</span>
+  </li>
+  <li class="prijsbalk">
+    <span class="prijsbalk__label">Gemiddeld-complex<span class="prijsbalk__toelichting">webshop, inlog, filters</span></span>
+    <span class="prijsbalk__prijs">circa 4.200 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 82%"></span></span>
+  </li>
+  <li class="prijsbalk">
+    <span class="prijsbalk__label">Complex<span class="prijsbalk__toelichting">maatwerkapplicatie, veel interactie</span></span>
+    <span class="prijsbalk__prijs">circa 5.100 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 100%"></span></span>
+  </li>
+</ul>
 
 ## Een deelonderzoek of een extra
 
@@ -60,8 +73,6 @@ Een content-audit voeren we alleen uit als de techniek van de website ook is ond
 
 Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk het is hangt af van het aantal bevindingen, en dat weet niemand vooraf: het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs in een tweede offerte, zodra het rapport klaar is.
 
-![](/images/blog/svg-audit-typen.svg)
-
 ## Waar betaal je voor?
 
 Een audit is menselijk werk, dus de prijs volgt de omvang en de complexiteit: hoeveel unieke paginatypes je hebt en hoeveel eigen componenten daarin zitten. Het onderzoek gaat handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%, plus controle op contrast en kleurgebruik. Apps toetsen we op echte toestellen.
@@ -74,16 +85,32 @@ Twee dingen zie je niet aan een bedrag. Het Register van Toegankelijkheidsverkla
 
 De rest haal je met deze zes vragen boven tafel.
 
-| Vraag | Waarom die ertoe doet |
-|---|---|
-| Wordt er handmatig getest? | Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. |
-| Met welke schermlezers? | Minimaal NVDA en VoiceOver, en op apps VoiceOver en TalkBack op echte toestellen |
-| Per element of per succescriterium? | Dat bepaalt hoeveel zoekwerk je team eraan heeft voordat het kan beginnen |
-| Wie voert de audit uit? | Een senior auditor of iemand die het vak nog leert |
-| Bouwt of beheert die partij ook websites? | Wie zijn eigen werk keurt, keurt niet onafhankelijk |
-| Mag ik vragen stellen na oplevering? | En zo ja, wat dat kost |
-
-![](/images/blog/svg-offerte-checklist.svg)
+<ul class="checklist">
+  <li>
+    <strong>Wordt er handmatig getest?</strong>
+    Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk, en dat is precies het deel waar het duurder van wordt.
+  </li>
+  <li>
+    <strong>Met welke schermlezers?</strong>
+    Minimaal NVDA en VoiceOver. Bij een app horen VoiceOver en TalkBack op echte toestellen erbij, niet op een simulator.
+  </li>
+  <li>
+    <strong>Per element of per succescriterium?</strong>
+    Dat bepaalt hoeveel zoekwerk je team eraan heeft voordat het kan beginnen.
+  </li>
+  <li>
+    <strong>Wie voert de audit uit?</strong>
+    Een senior auditor, of iemand die het vak nog leert. Vraag ook wie de review doet.
+  </li>
+  <li>
+    <strong>Bouwt of beheert die partij ook websites?</strong>
+    Wie zijn eigen werk keurt, keurt niet onafhankelijk.
+  </li>
+  <li>
+    <strong>Mag ik vragen stellen na oplevering?</strong>
+    En zo ja, wat dat kost. Bij ons loopt dat via de strippenkaart, vanaf 20 euro per vraag.
+  </li>
+</ul>
 
 ## Veelgestelde vragen
 

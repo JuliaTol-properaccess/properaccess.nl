@@ -13481,6 +13481,133 @@ a.tool-link__href-url:hover {
   border-radius: 0.5rem;
 }
 
+/* ── Prijsbalken: staafdiagram met echte tekst in plaats van een afbeelding ── */
+
+.case__body > ul.prijsbalken:not(.case-section) {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 1.5rem auto 2rem;
+}
+
+.case__body > ul.prijsbalken > li.prijsbalk {
+  margin-bottom: 0;
+}
+
+.prijsbalk {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.9rem 0 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.prijsbalk:last-child {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.prijsbalk__label {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.prijsbalk__toelichting {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.prijsbalk__prijs {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #004050;
+  white-space: nowrap;
+}
+
+/* De balk herhaalt alleen het bedrag dat er al naast staat, dus hij blijft
+   buiten de schermlezer. */
+.prijsbalk__spoor {
+  grid-column: 1 / -1;
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: #f3f4f6;
+}
+
+.prijsbalk__vulling {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: #004050;
+}
+
+/* De nadruk staat er ook als tekst, niet alleen als kleur */
+.prijsbalk--nadruk {
+  border-left: 3px solid #A30D4B;
+  padding-left: 1rem;
+  margin-left: -1rem;
+}
+
+.prijsbalk--nadruk .prijsbalk__prijs,
+.prijsbalk--nadruk .prijsbalk__label {
+  color: #A30D4B;
+}
+
+.prijsbalk--nadruk .prijsbalk__toelichting {
+  color: #4b5563;
+}
+
+.prijsbalk--nadruk .prijsbalk__vulling {
+  background: #A30D4B;
+}
+
+.prijsbalk__tag {
+  grid-column: 1 / -1;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+@media (max-width: 30rem) {
+  .prijsbalk {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Checklist ── */
+
+.case__body > ul.checklist:not(.case-section) {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 1.5rem auto 2rem;
+}
+
+.case__body > ul.checklist > li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.65;
+}
+
+/* Vinkje uit twee randen, dus decoratief en geen afbeelding van tekst */
+.case__body > ul.checklist > li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.45em;
+  width: 0.85rem;
+  height: 0.45rem;
+  border-left: 2px solid #A30D4B;
+  border-bottom: 2px solid #A30D4B;
+  transform: rotate(-45deg);
+}
+
+.case__body > ul.checklist > li strong {
+  display: block;
+  color: #1F2937;
+}
+
 /* Illustraties in de lopende tekst van een blogartikel. Goldmark maakt van een losse
    markdown-afbeelding een <p><img>, en die stond links uitgelijnd op zijn eigen breedte. */
 .case__body > p > img,
