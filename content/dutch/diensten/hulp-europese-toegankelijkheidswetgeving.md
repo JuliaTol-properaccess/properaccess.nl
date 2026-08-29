@@ -8,7 +8,7 @@ slug: "hulp-europese-toegankelijkheidswetgeving"
 url: "/hulp-bij-europese-toegankelijkheidswetgeving/"
 description: "Hulp bij digitale toegankelijkheid, van onderzoek tot verantwoording. Welke wet voor je geldt, wat voldoen in de praktijk vraagt, en wie welke stap voor je doet. Voor webshops, overheidsorganisaties en softwareleveranciers."
 tldr: |
-  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers.
+  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.250 of losse vragen vanaf € 20.
 keywords:
   - hulp bij digitale toegankelijkheid
   - digitale toegankelijkheid hulp
@@ -91,6 +91,83 @@ Allebei de wetten wijzen naar dezelfde norm, dus de eisen aan je site verschille
 Wat de EAA precies is en voor wie hij geldt, staat op de pagina over de [European Accessibility Act](/eaa/).
 
 {{< /section-feiten >}}
+
+{{< section-tweekolom title="Kun je digitale toegankelijkheid zelf leren?" eyebrow="Zelf doen" id="zelf-leren" bg="light" >}}
+
+{{< kolom-tekst >}}
+We horen het vaak: we lezen WCAG door, we vragen het verder aan een AI, en dan sporen we de problemen zelf op. Dat is een begrijpelijke gedachte. De richtlijnen staan gratis online en een taalmodel geeft binnen een seconde antwoord.
+
+Het risico zit in wat je niet ziet. WCAG is geschreven als norm, en een succescriterium laat ruimte voor uitleg. Leg je er een te ruim of verkeerd uit, dan lijkt je site te voldoen terwijl dat niet zo is. Onder de EAA moet je website of app toegankelijk zijn, en die verkeerde uitleg blijft daarmee je eigen verantwoordelijkheid.
+
+Ben je nieuw in dit onderwerp, dan kost zelf uitzoeken zo veel tijd dat je niet goedkoper uit bent dan met een expert erbij. Ter vergelijking: hiernaast staat wat het bij ons kost om auditor te worden.
+{{< /kolom-tekst >}}
+
+{{< kolom-naast >}}
+| Het leertraject | Wat het vraagt |
+| --- | --- |
+| Duur | Gemiddeld twee jaar |
+| In die tijd | Fulltime audits doen |
+| Bijsturing | Continu feedback van een senior auditor |
+| Resultaat | Daarna noem je jezelf medior auditor |
+{{< /kolom-naast >}}
+
+{{< /section-tweekolom >}}
+
+{{< section-highlight title="Tools die we aanraden" id="tools" image="/images/pages/hulp-tools.svg" alt="" link="/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/" link_text="Alle tools vergeleken" >}}
+
+Er is veel dat je zelf kunt controleren, en daar heb je geen auditor voor nodig. Dit zijn de drie die wij dagelijks gebruiken.
+
+De **[WCAG Radar](/tools/wcag-radar/)** van Proper Access is een gratis bookmarklet en browserextensie. Die toont bevindingen op de pagina die je op dat moment bekijkt, met drie tabbladen voor redactie, design en development. De gratis versie doet 28 van de 45 checks, rekent lokaal in je browser, en werkt ook achter een login en op localhost.
+
+**axe** scant de code van een pagina en is sterk in wat een machine kan vaststellen: een ontbrekende alt-tekst, een veld zonder label, contrast dat rekenkundig tekortschiet. Houd er rekening mee dat een scan ongeveer 30% van de succescriteria raakt. De rest blijft handwerk.
+
+De **Colour Contrast Analyzer** meet twee kleuren tegen elkaar, ook buiten de browser. Handig als je een huisstijl vaststelt en wilt weten of een combinatie de 4,5:1 voor gewone tekst haalt voordat hij in het ontwerp belandt.
+
+{{< /section-highlight >}}
+
+{{< section-highlight title="Loop je vast? Stel je vraag via de WCAG Radar" id="vragen" reverse="true" bg="light" image="/images/pages/hulp-vraag-stellen.svg" alt="" link="/strippenkaart/" link_text="Bekijk de strippenkaart" >}}
+
+Een tool laat zien dát er iets mis is. Wat een goed alternatief is, staat er zelden bij. Precies daar komen teams niet verder: je ziet de bevinding, je begrijpt hem, en dan botst de oplossing met het ontwerp of met het framework waarin je werkt.
+
+Onder elke check in de WCAG Radar zit een link waarmee je die bevinding voorlegt aan een senior auditor.
+
+Eén strip is één vraag over één onderwerp. Vervolgvragen in dezelfde draad kosten niets extra, en de strip gaat er pas af als wij antwoorden. Valt je vraag buiten onze scope, dan kost hij dus niets. Je hoort binnen 3 tot 5 werkdagen iets, en afhankelijk van de bundel betaal je € 20 tot € 25 per vraag.
+
+{{< /section-highlight >}}
+
+{{< section-highlight title="Wanneer schakel je een expert in?" id="expert" image="/images/pages/hulp-expert.svg" alt="" link="/offerte-wcag-onderzoek/" link_text="Vraag een offerte aan" >}}
+
+Er komt een moment waarop zelf doorgaan meer kost dan het oplevert. Dat moment herken je aan drie dingen: je weet niet zeker of je een succescriterium goed uitlegt, je weet niet wat je als eerste moet oplossen, en je hebt niets om aan een toezichthouder te laten zien.
+
+Je kunt klein beginnen. Een [mini-audit](/webshop-quickscan/) van € 495 is tot 5 uur handmatige controle door een senior auditor, met een rapport binnen 5 werkdagen. Wil je het compleet, dan toetst een [volledig onderzoek](/toegankelijkheidsonderzoek/) je site volgens WCAG-EM aan alle succescriteria, vanaf circa € 2.250.
+
+Daarna houdt het niet op. Met een [strippenkaart](/strippenkaart/) blijft er iemand bereikbaar tijdens het oplossen, en met een [hercontrole](/hercontrole/) leg je vast dat de bevindingen weg zijn.
+
+{{< /section-highlight >}}
+
+{{< section-cards title="Wat levert een expert je op?" subtitle="Vijf dingen die je met alleen de richtlijnen en een tool niet krijgt." id="voordelen" bg="light" columns="3" >}}
+
+{{< section-card title="Een sparringspartner" >}}
+Voor je vragen tijdens het oplossen, en voor de meldingen die je van een toezichthouder krijgt. Je legt de melding voor en je hoort wat eronder ligt en wat er van je wordt gevraagd.
+{{< /section-card >}}
+
+{{< section-card title="Hulp bij prioriteiten" >}}
+Honderd bevindingen op een lijst zeggen niets over volgorde. We geven aan wat een bezoeker echt tegenhoudt en welke componenten je het eerst aanpakt, want die komen op elke pagina terug.
+{{< /section-card >}}
+
+{{< section-card title="Een objectieve analyse" >}}
+Een oordeel van buiten je eigen team, gebaseerd op de Nederlandse auditpraktijk en op wat we in ruim 950 audits sinds 2019 zijn tegengekomen. Peildatum 7 augustus 2026.
+{{< /section-card >}}
+
+{{< section-card title="De snelste route" >}}
+Je hoeft niet eerst zelf uit te zoeken wat er mis is. Een volledig onderzoek ligt er in 3 tot 5 weken, en je begint daarna meteen bij het onderdeel dat het meeste oplevert.
+{{< /section-card >}}
+
+{{< section-card title="Je leert het zelf te zien" >}}
+Bij elke bevinding staat hoe je hem oplost en hoe je zelf controleert of het klaar is. Bij de volgende release zie je het aankomen voordat het live staat.
+{{< /section-card >}}
+
+{{< /section-cards >}}
 
 {{< section-route id="stappen" eyebrow="De route" title="Van waar je nu staat naar een toegankelijke website" subtitle="De EAA schrijft geen onderzoek voor. Die schrijft voor dat je website of app werkt voor iedereen. Dit is de route daarheen, en die levert je meteen het bewijs op dat het BDTO en een toezichthouder wel vragen." >}}
 
