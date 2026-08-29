@@ -63,13 +63,13 @@
 {{ with .Params.faqs }}
 {{/* faq_style: "flat" in de front matter zet de FAQ op wit met hairlines in
      plaats van de donkerblauwe standaardvariant. faq_title vervangt dan de
-     standaardkop; "Veelgestelde vragen" schuift naar het eyebrow-label. */}}
+     standaardkop, faq_eyebrow zet er een label boven. */}}
 {{ $flat := eq $.Params.faq_style "flat" }}
 <section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}">
   <div class="hp-container">
     {{ if $flat }}
     <div class="hp-faq__header">
-      <p class="hp-faq__eyebrow">Veelgestelde vragen</p>
+      {{ with $.Params.faq_eyebrow }}<p class="hp-faq__eyebrow">{{ . }}</p>{{ end }}
       <h2 class="hp-heading-lg hp-faq__title">{{ $.Params.faq_title | default "Veelgestelde vragen" }}</h2>
     </div>
     {{ else }}

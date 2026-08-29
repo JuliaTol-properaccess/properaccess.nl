@@ -29,7 +29,7 @@ banner:
     link: "/contact/"
 
 faq_style: "flat"
-faq_title: "Alles wat je wilt weten voordat je mailt"
+faq_title: "Meestgestelde vragen over de EAA"
 
 eaa_feiten:
   - k: "Wat"
@@ -145,21 +145,9 @@ Wie zich hierop beroept zonder dossier, staat bij een controle met lege handen.
 
 {{< /section-cards >}}
 
-{{< section-highlight title="Aan welke norm moet je voldoen?" image="/images/blog/svg-eaa-bdto-norm.svg" alt="" link="/toegankelijkheidsaudit/" link_text="Zo toetsen wij" >}}
-
-Onder de EAA ligt **[EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)**, de Europese norm voor toegankelijkheid van ICT. Die norm staat op dit moment op **[WCAG 2.1 niveau A en AA](https://www.w3.org/TR/WCAG21/)**, samen 50 succescriteria.
-
-Het BDTO wijst naar diezelfde norm. De eisen aan je website verschillen dus niet tussen een gemeente en een webshop. Wat verschilt is hoe je erover verantwoording aflegt en wie er meekijkt.
-
-**Welke versie telt?** Juridisch alleen de versie waarnaar het Publicatieblad van de EU verwijst, en dat is V3.2.1 uit maart 2021, aangewezen met [uitvoeringsbesluit (EU) 2021/1339](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32021D1339). Er ligt een concept voor een versie 4 die WCAG 2.2 overneemt. ETSI heeft die nog niet gepubliceerd en het Publicatieblad wijst hem nog niet aan.
-
-Bij Proper Access toetsen we aan **[WCAG 2.2](https://www.w3.org/TR/WCAG22/)**, een versie hoger dan de norm vraagt. Dat scheelt je een tweede ronde zodra versie 4 wel wordt aangewezen. WCAG 2.2 voegde negen criteria toe, waarvan er zes op niveau A en AA vallen. Een paar daarvan raken precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie.
-
-{{< /section-highlight >}}
-
 {{< section-full title="De norm gaat over meer dan je website" id="norm" >}}
 
-Dit verrast de meeste mensen. EN 301 549 behandelt ook hardware, software, documentatie en klantondersteuning. Hoofdstuk 9 is het webhoofdstuk en neemt daar de WCAG-succescriteria over, maar de norm houdt daar niet op.
+Dit verrast de meeste mensen. [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) behandelt ook hardware, software, documentatie en klantondersteuning. Hoofdstuk 9 is het webhoofdstuk en neemt daar de [WCAG-succescriteria](https://www.w3.org/TR/WCAG21/) over, maar de norm houdt daar niet op.
 
 Een voorbeeld dat we in de praktijk tegenkomen. Stel dat je webshop netjes aan WCAG voldoet, maar je klantenservice is alleen te bereiken via een telefoonnummer. Iemand die doof of slechthorend is kan dan wel bestellen, maar niet vragen waar zijn pakket blijft of een klacht indienen. Je website haalt de WCAG-toets, en op de norm als geheel schiet je alsnog tekort. Een chatfunctie, een e-mailadres of een formulier lost dat op.
 
@@ -179,12 +167,6 @@ Het toezicht op de EAA is in Nederland verdeeld over **zes toezichthouders**, el
 | **Inspectie JenV** | Het noodnummer 112. |
 
 Heb je een webshop, dan is de ACM je toezichthouder.
-
-### Hoe de ACM het in 2026 aanpakte
-
-Dit hoorden we uit de eerste hand, op de Dag van Digitale Toegankelijkheid van 25 juni 2026, waar we zelf bij waren. De ACM begon met begeleiden. Tien bedrijven kregen een volledig onderzoek volgens WCAG-EM met een rapport, en twee weken later een bedrijfsbezoek met de CEO aan tafel en een ervaringsdeskundige van de ACM erbij. Daarnaast keek de ACM bij ruim honderd bedrijven naar één belangrijk functioneel onderdeel van de website.
-
-Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Bij het toetsen loopt de ACM het hele afrekenproces door, van product in het mandje tot betaling. Ons verslag van die dag staat in [wat doet een toezichthouder? De ACM over de EAA](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
 
 {{< /section-full >}}
 
@@ -210,7 +192,7 @@ Publiceer informatie over de toegankelijkheid van je dienst, bijvoorbeeld in je 
 
 {{< section-diensten id="hoe-we-helpen" eyebrow="Hoe we helpen" title="Praktische hulp bij elke stap" subtitle="Je hoeft niet alles zelf te doen. Wat je wel zelf moet weten, is waar je staat." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
-{{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
+{{< dienst-kaart title="WCAG-audit" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsaudit/" cta="Bekijk de WCAG-audit" >}}
 Een handmatig onderzoek volgens WCAG-EM, getoetst aan WCAG 2.2 niveau AA. Je krijgt een rapport per element, met screenshots en code-voorbeelden, en een user story per bevinding.
 {{< /dienst-kaart >}}
 
@@ -219,7 +201,7 @@ Tot 5 uur handmatige controle door een senior auditor. Voor als je eerst wilt we
 {{< /dienst-kaart >}}
 
 {{< dienst-kaart title="Vragen tijdens het oplossen" prijs="€ 20 tot € 25 per vraag" link="/strippenkaart/" cta="Bekijk de strippenkaart" >}}
-Loopt je developer vast op een bevinding, dan legt hij de vraag voor aan een senior auditor. Eén strip is één vraag over één onderwerp; vervolgvragen in dezelfde draad kosten niets extra.
+Kom je bij een bevinding niet verder, dan leg je de vraag voor aan een senior auditor. Eén strip is één vraag over één onderwerp; vervolgvragen in dezelfde draad kosten niets extra.
 {{< /dienst-kaart >}}
 
 {{< dienst-kaart title="Hercontrole" prijs="Prijs hangt af van het aantal bevindingen" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
@@ -230,7 +212,7 @@ We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het 
 
 {{< section-monitor id="eaa-monitor" eyebrow="EAA-monitor" title="Kijken hoe andere bedrijven het aanpakken" link="https://eaa-monitor.nl" link_text="Ga naar de EAA-monitor" punten="eaa_monitor_punten" >}}
 
-De [EAA-monitor](https://eaa-monitor.nl) is een initiatief van Flonam en niet van ons. Je stelt er anoniem je vragen over de European Accessibility Act, je leest de antwoorden en ervaringen van andere bedrijven terug, en je vindt er hulp bij experts in digitale toegankelijkheid. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
+In de [EAA-monitor](https://eaa-monitor.nl) van Flonam stel je anoniem je vragen over de European Accessibility Act, lees je de antwoorden en ervaringen van andere bedrijven terug, en vind je hulp bij experts in digitale toegankelijkheid. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
 
 {{< /section-monitor >}}
 
