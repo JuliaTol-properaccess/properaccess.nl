@@ -17842,3 +17842,215 @@ html.dark .jaartijdlijn dd {
 .jaartijdlijn--hero dd p {
   margin: 0;
 }
+
+/* ─── Wetkiezer op /eaa/ ─────────────────────────────────────────────
+   Radiogroep die de kaart oplicht die bij de gekozen situatie hoort.
+   Werkt zonder JavaScript. De informatie staat volledig in de tekst van
+   elke kaart, dus wie de kiezer niet gebruikt of niet ziet mist niets. */
+
+.wetkiezer {
+  padding: 4rem 0;
+}
+
+.wetkiezer__titel {
+  margin-bottom: 1rem;
+}
+
+.wetkiezer__intro {
+  max-width: 46rem;
+  margin-bottom: 2rem;
+}
+
+.wetkiezer__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.wetkiezer__keuze {
+  border: 0;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.wetkiezer__legend {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.wetkiezer__opties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Radio blijft bedienbaar en focusbaar, alleen visueel weggehaald. */
+.wetkiezer__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wetkiezer__label {
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1F2937;
+  background: #ffffff;
+  border: 2px solid #6b7280;
+  border-radius: 9999px;
+  padding: 0.75rem 1.35rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.wetkiezer__label:hover {
+  border-color: #A30D4B;
+  color: #A30D4B;
+}
+
+.wetkiezer__radio:checked + .wetkiezer__label {
+  background: #1F2937;
+  border-color: #1F2937;
+  color: #ffffff;
+}
+
+.wetkiezer__radio:focus-visible + .wetkiezer__label {
+  outline: 3px solid #A30D4B;
+  outline-offset: 2px;
+}
+
+.wetkiezer__kaarten {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .wetkiezer__kaarten {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wetkaart {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wetkaart__titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 0.75rem;
+}
+
+.wetkaart__voorwie {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1F2937;
+  margin: 0 0 1.25rem;
+}
+
+.wetkaart__meta {
+  margin: 0;
+}
+
+.wetkaart__rij {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (min-width: 480px) {
+  .wetkaart__rij {
+    grid-template-columns: 8.5rem 1fr;
+    gap: 1rem;
+  }
+}
+
+.wetkaart__rij dt {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #004050;
+}
+
+.wetkaart__rij dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #1F2937;
+}
+
+/* De markering en de noot staan standaard uit en komen op bij een keuze.
+   Ze herhalen wat er al in de kaarttekst staat, dus er gaat niets verloren
+   als een browser :has() niet ondersteunt. */
+.wetkaart__markering,
+.wetkiezer__noot {
+  display: none;
+}
+
+.wetkaart__markering {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.6rem;
+}
+
+.wetkiezer__noot {
+  max-width: 46rem;
+  margin: 1.75rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid #A30D4B;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1F2937;
+}
+
+.wetkiezer:has(#wetsituatie-bedrijf:checked) .wetkaart[data-geldt~="bedrijf"],
+.wetkiezer:has(#wetsituatie-overheid:checked) .wetkaart[data-geldt~="overheid"],
+.wetkiezer:has(#wetsituatie-twijfel:checked) .wetkaart[data-geldt~="twijfel"] {
+  border-color: #A30D4B;
+  box-shadow: 0 20px 40px -15px rgba(163, 13, 75, 0.25);
+}
+
+.wetkiezer:has(#wetsituatie-bedrijf:checked) .wetkaart[data-geldt~="bedrijf"] .wetkaart__markering,
+.wetkiezer:has(#wetsituatie-overheid:checked) .wetkaart[data-geldt~="overheid"] .wetkaart__markering,
+.wetkiezer:has(#wetsituatie-twijfel:checked) .wetkaart[data-geldt~="twijfel"] .wetkaart__markering {
+  display: block;
+}
+
+.wetkiezer:has(#wetsituatie-twijfel:checked) .wetkiezer__noot {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wetkiezer__label,
+  .wetkaart {
+    transition: none;
+  }
+}

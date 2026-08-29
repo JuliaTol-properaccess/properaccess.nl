@@ -93,14 +93,11 @@ E-boeken en lezers, streamingdiensten en software die je aan consumenten levert.
 
 {{< /section-cards >}}
 
-{{< section-full title="Welke wet geldt voor jou?" id="welke-wet" >}}
+{{< wetkiezer id="welke-wet" title="Welke wet geldt voor jou?" >}}
+Welke wet voor je geldt hangt af van **wat je organisatie is**, niet van wat je verkoopt. Een commercieel bedrijf valt onder de EAA, een overheidsinstantie of publiekrechtelijke instelling onder het BDTO. Voor je eigen website geldt het ene of het andere, nooit allebei.
 
-Welke wet voor je geldt hangt af van **wat je organisatie is**, niet van wat je verkoopt. Een commercieel bedrijf valt onder de EAA. Een overheidsinstantie of publiekrechtelijke instelling valt onder het BDTO.
-
-In de culturele sector loopt die grens niet waar je hem verwacht. Twee musea die er van buiten hetzelfde uitzien kunnen onder verschillende wetten vallen. Publiekrechtelijke instelling is een juridisch begrip uit het aanbestedingsrecht, met drie voorwaarden die allemaal moeten gelden, en het is dus geen kwestie van subsidie. Een museum met subsidie is niet automatisch BDTO-plichtig. Twijfel je, leg dat dan voor aan een jurist en niet aan een auditor.
-
-{{< /section-full >}}
-
+Kies hieronder je situatie, dan licht de wet op die daarbij hoort. Allebei de kaarten blijven staan, zodat je het verschil kunt zien.
+{{< /wetkiezer >}}
 {{< section-cards title="Twee uitzonderingen, en ze worden vaak door elkaar gehaald" subtitle="Val je onder de EAA, dan zijn er twee routes waarlangs de plicht kan vervallen of verlicht worden. Ze werken totaal verschillend." id="uitzonderingen" bg="light" columns="2" >}}
 
 {{< section-card title="Micro-onderneming: vrijgesteld" >}}
