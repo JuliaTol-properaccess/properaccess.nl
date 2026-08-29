@@ -112,6 +112,6 @@ Een paar beloften klinken goed en zijn het niet.
 
 ## Zo beantwoorden wij deze vragen
 
-We vinden dat je dit gewoon moet kunnen nalezen voordat je belt. Bij Proper Access werken alleen senior auditors. We testen met de hand, met meerdere hulpmiddelen, op desktop en mobiel. Het rapport is geordend per element, met een user story en reproduceerstappen per bevinding, en gaat pas de deur uit na een vierogencontrole. We bouwen geen websites en beheren geen content, dus we hebben geen belang bij de uitkomst. En onze [prijzen staan gewoon op de site](/blog/wat-kost-toegankelijkheidsaudit-detail/).
+We vinden dat je dit gewoon moet kunnen nalezen voordat je belt. Bij Proper Access werken alleen senior auditors. We testen met de hand, met meerdere hulpmiddelen, op desktop en mobiel. Het rapport is geordend per element, met een user story en reproduceerstappen per bevinding, en gaat pas de deur uit nadat een tweede auditor elke bevinding heeft nagekeken, wat wij het 6-ogen-principe noemen. We bouwen geen websites en beheren geen content, dus we hebben geen belang bij de uitkomst. En onze [prijzen staan gewoon op de site](/blog/wat-kost-een-toegankelijkheidsaudit/).
 
 Wil je eerst zien wat eruit komt? Vraag een [mini-audit](/webshop-quickscan/) aan voor 495 euro exclusief btw, of bekijk [wat een volledige audit kost](/toegankelijkheidsaudit/). Twijfel je nog of bel je liever even? Dat kan op 085 5055 890.

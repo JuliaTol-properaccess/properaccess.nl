@@ -102,3 +102,7 @@
   translation: "Delen"
 - id: share_fediverse
   translation: "Deel dit artikel op de Fediverse"
+- id: breadcrumb_home
+  translation: "Home"
+- id: breadcrumb_label
+  translation: "Kruimelpad"

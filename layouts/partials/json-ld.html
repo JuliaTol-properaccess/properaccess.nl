@@ -96,28 +96,19 @@
 
 {{/* BreadcrumbList — on all non-home pages */}}
 {{ if not .IsHome }}
-{{ $trimmed := strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink) }}
-{{ if $trimmed }}
-{{ $segments := split $trimmed "/" }}
+{{ $trail := partial "breadcrumb-trail.html" . }}
+{{ if gt (len $trail) 1 }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
+    {{- range $i, $c := $trail }}
+    {{ if $i }},{{ end }}{
       "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ site.BaseURL }}"
-    }
-    {{- $cum := "" }}
-    {{- range $i, $seg := $segments }}
-    {{- $cum = printf "%s/%s" $cum $seg }}
-    ,{
-      "@type": "ListItem",
-      "position": {{ add $i 2 }},
-      "name": "{{ humanize (replace $seg "-" " ") }}",
-      "item": "{{ site.BaseURL }}{{ strings.TrimPrefix "/" $cum }}/"
+      "position": {{ add $i 1 }},
+      "name": "{{ $c.name }}",
+      "item": "{{ $c.url }}"
     }
     {{- end }}
   ]

@@ -2,6 +2,9 @@
 title: "Wat kost een WCAG-audit voor een webshop? Een antwoord met prijsindicatie"
 date: 2026-04-09
 slug: "wat-kost-wcag-audit-webshop"
+breadcrumb_title: "Wat kost een webshop-audit?"
+aliases:
+  - "/blog/kosten-wcag-naleving-webshop/"
 categories:
   - "e-commerce-eaa"
 tags:
@@ -134,6 +137,24 @@ Een audit kost meer vooraf, maar helpt je probleem werkelijk op te lossen.
 ## Hoe lang duurt een audit?
 
 Bij ons zit er meestal **twee tot vier weken** tussen de intake en de oplevering van het rapport, afhankelijk van planning. Het pure auditwerk duurt voor een gemiddelde webshop ongeveer twee tot drie volle dagen, plus een paar dagen rapport schrijven en de interne controle. Heb je haast vanwege een EAA-deadline? Dan kunnen we vaak versnellen, dat bespreken we in de intake.
+
+## En wat kost het oplossen daarna?
+
+De audit is het kleinste bedrag in het traject. Wat het herstel kost, hangt vooral af van je platform en van hoe diep het probleem zit.
+
+**Je platform.** Bij een webshop op maat past je ontwikkelaar de code direct aan. Dat is het snelst en het goedkoopst. Op Shopify, WooCommerce of Magento zit een deel in themawijzigingen en vraagt een ander deel eigen code of een ander thema. Zit je op een SaaS-platform, dan ben je voor sommige punten afhankelijk van je leverancier; vraag die naar zijn plannen voor toegankelijkheid voordat je zelf gaat begroten.
+
+**Hoe diep het zit.** Alt-teksten, contrast en labels zijn een paar dagen werk. Navigatie, ARIA en formuliervalidatie zijn een tot twee sprints. Zit er geen semantische HTML onder het thema, dan is een themawissel soms goedkoper dan repareren.
+
+**Je team.** Heeft je team dit eerder gedaan? Zo niet, reken op tijd voor kennisopbouw. Daar is de nabespreking voor, en daarna de strippenkaart voor losse vragen tijdens het oplossen.
+
+Vier dingen die het bedrag omlaag brengen:
+
+1. **Begin vroeg.** Hoe langer je wacht, hoe meer content en features er zijn om te herstellen.
+2. **Kies een toegankelijk thema.** Dat scheelt het meest in developmenttijd.
+3. **Train je contentteam.** Een groot deel van de bevindingen ontstaat in de redactielaag: alt-teksten, koppen, contrast.
+4. **Los het op in het component**, niet op elke pagina apart. Eén variant-picker repareren lost hem op duizend productpagina's op.
+
 
 ## Wat kost het als je het niet doet?
 
