@@ -315,10 +315,10 @@ staat, plus de 6,7%-prompt. Hoogste rendement van alle nieuwe pagina's.
 De eerste meting is gedaan, dus deze lijst kan open. De bovenste drie punten komen uit de
 Search Console-nulmeting en gaan vóór de rest: daar zit het verschil tussen ranken en verkopen.
 
-- **De Nederlandse dienstpagina's laten ranken op de kerntermen.** Op "digitale
-  toegankelijkheid" en varianten daarvan kiest Google nu twee blogartikelen, allebei ver buiten
-  pagina 2. Uitzoeken of die artikelen de dienstpagina in de weg zitten of dat de dienstpagina's
-  te dun zijn, en dan één pagina per kernterm aanwijzen.
+- **De Nederlandse dienstpagina's laten ranken op de kerntermen.** Uitgezocht op 30 augustus
+  2026. Het uitgewerkte voorstel staat hieronder onder "Voorstel: de Nederlandse kerntermen".
+  Kern van de bevinding: geen enkele pagina op de site mikt op de term zelf, en er ligt al een
+  exacte URL klaar die sinds 2021 uit één alinea bestaat.
 - ~~**De alt-tekst-cluster oplossen.**~~ Gedaan op 30 augustus 2026 (PR #132). Het artikel blijft
   de uitlegpagina en had de tool al ingebed; de toolpagina heeft nu een eigen titel, description
   en drie punten over wat de keuzehulp doet, zodat de twee niet meer op dezelfde vraag mikken.
@@ -328,9 +328,12 @@ Search Console-nulmeting en gaan vóór de rest: daar zit het verschil tussen ra
   beslissen.** Nagetrokken op 30 augustus 2026: dat subdomein heeft **geen robots.txt** (404) en
   de rapportpagina's hebben geen `noindex`. Een klantrapport is met een 200 publiek bereikbaar en
   Google toont het: twintig rapportpagina's, 821 vertoningen en 5 klikken in 28 dagen. Op de
-  hoofdsite staat `/rapporten/` juist bewust op Disallow, dus de bedoeling is duidelijk en het
-  subdomein volgt die niet. Het draait op LiteSpeed en niet op GitHub Pages, dus het is niet
-  vanuit deze repo op te lossen. Vraag Julia of dit zo hoort voordat er iets verandert.
+  hoofdsite dragen alle rapporten sinds 30 augustus 2026 een `noindex`, dus de bedoeling is
+  duidelijk en het subdomein volgt die niet. Het draait op LiteSpeed en niet op GitHub Pages,
+  dus het is niet vanuit deze repo op te lossen.
+
+  Op 30 augustus 2026 besloten: de rapporten blijven staan, ze gaan niet offline. Wat er nog
+  moet gebeuren staat hieronder onder "De oude rapporten op audit.properaccess.nl".
 - `/toegankelijkheidsverklaring/` als uitlegpagina die naar de twee bestaande generators
   linkt. Nu pakt `digitoegankelijk.nl` die citaties.
 - Het kostencluster consolideren: van vier kostenartikelen presteert er één (citation rate
@@ -345,6 +348,159 @@ Search Console-nulmeting en gaan vóór de rest: daar zit het verschil tussen ra
   het hoogste cijfer in het hele bronnenrapport. De andere 32 halen dat niet. Die analyse gaat
   vóór het schrijven van nieuwe how-to's.
 - AI-bots bij naam in `robots.txt`. Hygiëne, geen maatregel: alles is nu al toegestaan.
+
+---
+
+## De oude rapporten op audit.properaccess.nl
+
+Uitgezocht op 30 augustus 2026.
+
+**Welke rapporten het zijn.** Twintig rapportpagina's van dat subdomein krijgen vertoningen in
+Google. Achttien daarvan staan alleen daar en niet in `static/rapporten/` van deze repo:
+
+| Rapport | Vertoningen | Klikken |
+| --- | --- | --- |
+| `202506_museum_ios` | 570 | 3 |
+| `202501_rvr.org` | 61 | 0 |
+| `202506_museum.nl` | 38 | 0 |
+| `202503_shertogenbosch_makelpunt` | 24 | 0 |
+| `202504_readspeaker_retest` | 24 | 0 |
+| `202506_museumvereniging` | 14 | 1 |
+| `202507_mijn_wrb` | 14 | 0 |
+| `202504_rechtsbijstand.nl` | 14 | 0 |
+| `202503_rijksmuseum` | 13 | 1 |
+| `202505_loonwaardemethodiek` | 8 | 0 |
+| `202502_bureauwsnp` | 7 | 0 |
+| `202510_hercontrole_formulier_shertogenbosch` | 7 | 0 |
+| `202503_bureauwbtv` | 6 | 0 |
+| `202505_rechtwijzer` | 6 | 0 |
+| `202504_jaarverslag.raadvoorrechtsbijstand` | 5 | 0 |
+| `202412_raadvoorrechtsbijstand` | 4 | 0 |
+| `202411_oudersuitelkaar` | 3 | 0 |
+| `202412_bestpracticesleidraad` | 1 | 0 |
+
+De twee overige, `202509_formulieren.noord-holland` en `202508_kerkrade.nl_hercontrole`, staan
+op allebei de hosts. Dat is dubbele content: dezelfde inhoud op twee adressen, waarvan er één
+een `noindex` heeft en de andere niet.
+
+**Hoe oud de opmaak is.** De oude pagina's gebruiken een ander sjabloon dan de rapporten die we
+nu opleveren:
+
+| | audit.properaccess.nl | properaccess.nl/rapporten/ |
+| --- | --- | --- |
+| CSS-klassen | `sidebar`, `sidemenu`, `container`, `issue` | `dash-*`, `score-*` |
+| Stylesheet | `../../_assets/css/main.css`, 2,6 kB | `/rapporten/_assets/css/main.css`, 4,4 kB |
+| Lettertypes | geen webfont, valt terug op de systeemletter | Nunito en Nunito Sans |
+| Iconen | Font Awesome | eigen |
+| `noindex` | nee | ja |
+| `data-report-id` | nee | ja |
+
+De nieuwe stylesheet werkt dus niet op de oude opmaak: de klassenamen sluiten nergens op elkaar
+aan.
+
+**Waarom herbouwen niet zomaar kan.** De bron van die achttien rapporten zit niet in
+`~/git/pa-audit`. Niet in `src/reports/`, en ook niet in de geschiedenis van die repo:
+`git rev-list --all` geeft nul commits voor die mappen. Ze zijn dus ergens anders gemaakt of
+rechtstreeks naar die host gezet. Zonder bron is er niets om opnieuw te genereren.
+
+**Wat er dan wel kan, in volgorde van moeite.**
+
+1. **De HTML overzetten en opnieuw stylen.** De pagina's zijn losse HTML-bestanden. Ze kunnen
+   naar `static/rapporten/` van deze repo, met een omzetting van de oude klassenamen naar de
+   nieuwe. Dan draaien ze mee in de bestaande generator, krijgen ze het huidige uiterlijk en de
+   `noindex`, en staat alles op één adres. Kost een conversieslag per rapport, en die moet per
+   rapport worden nagekeken.
+2. **Alleen doorverwijzen.** Een 301 van `audit.properaccess.nl/reports/<naam>/` naar
+   `properaccess.nl/rapporten/<naam>/` voor de twee die al dubbel staan, en de rest overzetten.
+3. **Laten staan zoals het is.** Dan blijft de oude opmaak zichtbaar en blijft het subdomein
+   buiten de `noindex`-afspraak vallen.
+
+**Wat ik nodig heb om verder te kunnen:** hoe die host gevoed wordt. Staat er een repo achter,
+of zijn de bestanden er handmatig op gezet? Zonder toegang tot die kant kan ik alleen de
+overzetkant bouwen.
+
+---
+
+## Voorstel: de Nederlandse kerntermen
+
+Uitgezocht op 30 augustus 2026, naar aanleiding van punt 3 van de Search Console-nulmeting.
+
+### Wat er nu gebeurt
+
+Op "digitale toegankelijkheid" en tien varianten daarvan staan we tussen positie 23 en 65, met
+nul klikken. Google kiest daarvoor twee blogartikelen:
+`/blog/voor-wie-is-digitale-toegankelijkheid-verplicht/` op positie 44,1 en
+`/blog/hoe-maak-je-een-website-digitaal-toegankelijk/` op positie 31,9. Dat zijn de twee
+grootste pagina's van de site in vertoningen, en samen leveren ze twee klikken op.
+
+Drie dingen verklaren dat, en ze zijn alle drie op te lossen.
+
+**Geen enkele pagina mikt op de term.** De homepage heet "Accessibility as a Service:
+toegankelijkheid als doorlopende dienst". Dat is de naam van ons product, geen zoekterm: op
+"accessibility as a service" zoekt in Nederland vrijwel niemand. Google heeft dus geen
+dienstpagina om te kiezen en valt terug op de blog.
+
+**Er ligt al een exacte URL, en die is leeg.** `/digitale-toegankelijkheid/` bestaat sinds
+9 november 2021, staat in `content/dutch/footer/` en bestaat uit één alinea met cijfers over
+hoeveel Nederlanders een beperking hebben. De pagina haalt geen enkele vertoning. Een
+exact-match URL die niets doet is de goedkoopste ingang die we hebben.
+
+**Twaalf Nederlandse pagina's dragen de term in hun titel.** Blogartikelen, een sectie, een
+offertesjabloon en twee dienstpagina's. Google moet daaruit kiezen en kiest niet de pagina waar
+de omzet zit.
+
+### Eén pagina per zoekterm
+
+| Zoekterm | Vertoningen | Positie nu | Pagina die hem moet krijgen |
+| --- | --- | --- | --- |
+| digitale toegankelijkheid | 915 | 53,0 | `/digitale-toegankelijkheid/` |
+| toegankelijke website | 395 | 32,3 | `/digitale-toegankelijkheid/` |
+| website toegankelijkheid | 263 | 31,7 | `/digitale-toegankelijkheid/` |
+| digitaal toegankelijk | 195 | 33,2 | `/digitale-toegankelijkheid/` |
+| wat is digitale toegankelijkheid | 135 | 65,3 | `/digitale-toegankelijkheid/` |
+| toegankelijkheidsonderzoek | 167 | 9,2 | `/toegankelijkheidsonderzoek/` |
+| wcag audit | 196 | 16,8 | `/toegankelijkheidsaudit/` |
+| wcag expert | 149 | 33,7 | `/toegankelijkheidsaudit/` |
+| digitale toegankelijkheid wet | 174 | 36,6 | `/eaa/` |
+| wetgeving digitale toegankelijkheid | 172 | 23,0 | `/eaa/` |
+| cursus digitale toegankelijkheid | 161 | 27,5 | `/trainen-van-webredactie/` of de academy |
+| kosten website toegankelijkheid | 105 | 6,1 | staat al goed, dit is een klikprobleem |
+
+### De vier stappen
+
+**1. Bouw `/digitale-toegankelijkheid/` om tot pijlerpagina.** Dit is de grootste ingreep en de
+enige die de kernterm kan pakken. De pagina moet de vraag "wat is digitale toegankelijkheid"
+volledig beantwoorden, en daarna de lezer doorsturen naar het onderzoek, de wet en de tools. De
+cijfers die er nu staan blijven bruikbaar, maar ze zijn niet genoeg voor een pagina die op
+positie 53 vandaan moet komen.
+
+**2. Draai de interne links om.** De twee blogartikelen hebben samen 5.783 vertoningen. Die
+aandacht is er al; alleen gaat hij nergens heen. Een prominente link naar de pijlerpagina en
+naar `/toegankelijkheidsaudit/`, hoog in het artikel, verplaatst zowel de bezoeker als het
+signaal naar Google.
+
+**3. Ruim de titelconcurrentie op.** Van de twaalf pagina's met de term in de titel mogen er
+drie hem houden: de pijlerpagina, de overheidspagina en het artikel "wat is digitale
+toegankelijkheid", en dat laatste alleen als het een canonical naar de pijlerpagina krijgt. De
+rest krijgt een titel die zijn eigen vraag beschrijft.
+
+**4. Duw `/toegankelijkheidsaudit/` over de rand.** Die pagina staat op 18,9 met 676
+vertoningen. Dat is de kortste afstand tot pagina 1 van alle commerciële pagina's, en de
+zoektermen eromheen ("wcag audit", "wcag expert", "toegankelijkheidsonderzoek") zijn koopvragen.
+Dit is de snelste meetbare winst; stap 1 duurt maanden.
+
+### Wat dit niet oplevert
+
+Van positie 53 naar pagina 1 op een kernterm duurt maanden en is niet gegarandeerd. Wat wel
+binnen één meetronde zichtbaar moet zijn: `/toegankelijkheidsaudit/` binnen de top 10, en de
+eerste klikken op de pijlerpagina.
+
+### Meetpunten voor de volgende export
+
+- Positie op "digitale toegankelijkheid", nu 53,0.
+- Positie en klikken van `/toegankelijkheidsaudit/`, nu 18,9 en 3.
+- Vertoningen van `/digitale-toegankelijkheid/`, nu nul.
+- Klikken op de Nederlandse dienstpagina's, nu 36.
 
 ---
 
