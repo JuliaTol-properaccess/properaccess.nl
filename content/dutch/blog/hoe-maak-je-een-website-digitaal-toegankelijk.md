@@ -26,6 +26,7 @@ keywords:
   - wcag verplicht
 aliases:
   - /hoe-maak-je-een-website-digitaal-toegankelijk/
+  - /blog/hoe-maak-ik-mijn-website-toegankelijk/
 ---
 
 Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik wekelijks dezelfde vraag: "We moeten iets met toegankelijkheid, maar waar beginnen we?" Het antwoord: dat hangt af van je website, je team en je budget. Maar er is een duidelijk pad. In dit artikel loop ik je er doorheen.
@@ -38,12 +39,12 @@ Een digitaal toegankelijke website is een website die iedereen kan gebruiken. Oo
 
 Dat klinkt abstract, maar in de praktijk gaat het om heel concrete dingen:
 
-- **Afbeeldingen** hebben een tekstbeschrijving nodig (alt-tekst) zodat een schermlezer kan vertellen wat erop staat
-- **Koppen** moeten een logische structuur volgen (H1, H2, H3) zodat iemand met een schermlezer door de pagina kan navigeren
-- **Formulieren** moeten duidelijke labels en foutmeldingen hebben
-- **Knoppen en links** moeten met het toetsenbord bereikbaar en bedienbaar zijn
-- **Kleurcontrast** moet hoog genoeg zijn zodat tekst leesbaar is voor mensen met een visuele beperking
-- **Video's** hebben ondertiteling nodig
+- **Afbeeldingen** hebben een tekstbeschrijving nodig (alt-tekst) die zegt wat erop staat. Dus niet `alt="IMG_4523.jpg"` maar `alt="Vrouw gebruikt een schermlezer op een laptop"`. Een decoratieve afbeelding krijgt een lege alt: `alt=""`
+- **Koppen** volgen een logische structuur (h1, h2, h3) zonder niveaus over te slaan. Gebruik ze niet om tekst groter te maken, daar is CSS voor
+- **Formulieren** hebben per veld een zichtbaar label dat programmatisch is gekoppeld. Een placeholder is geen label: die verdwijnt zodra iemand begint te typen
+- **Knoppen en links** moeten met het toetsenbord bereikbaar zijn, en je moet zien waar de focus staat. Staat er `outline: none` in je CSS zonder vervanging, dan is dat laatste weg
+- **Kleurcontrast** is minimaal 4,5:1 voor gewone tekst en 3:1 voor grote tekst
+- **Video's** hebben ondertiteling nodig, en een podcast een transcript
 
 Ongeveer 25 procent van alle mensen heeft een vorm van beperking. Dat is niet een kleine groep, dat is een kwart van je bezoekers.
 
@@ -59,7 +60,7 @@ WCAG kent drie niveaus:
 
 - **Niveau A:** de basislaag. Dit zijn de absolute minimumeisen. Als je hier niet aan voldoet, is je website voor sommige gebruikers letterlijk onbruikbaar. Voorbeeld: afbeeldingen zonder alt-tekst (SC 1.1.1) of video zonder ondertiteling (SC 1.2.2).
 
-- **Niveau AA:** de standaard waar je aan moet voldoen. De EAA en het Besluit digitale overheid (Bdo) vereisen allebei niveau AA. Dit gaat een stap verder dan de basis. Voorbeeld: voldoende kleurcontrast (SC 1.4.3), zichtbare focusindicator (SC 2.4.7) en foutidentificatie bij formulieren (SC 3.3.1).
+- **Niveau AA:** de standaard waar je aan moet voldoen. De EAA en het Besluit digitale toegankelijkheid overheid (BDTO) vereisen allebei niveau AA. Dit gaat een stap verder dan de basis. Voorbeeld: voldoende kleurcontrast (SC 1.4.3), zichtbare focusindicator (SC 2.4.7) en foutidentificatie bij formulieren (SC 3.3.1).
 
 - **Niveau AAA:** het hoogste niveau. Dit is in de meeste gevallen niet realistisch voor een volledige website en wordt ook niet wettelijk vereist. Maar voor specifieke onderdelen kan het waardevol zijn.
 
@@ -84,8 +85,8 @@ De belangrijkste nieuwe criteria:
 | **2.5.7 Sleepbewegingen (AA)**             | Alles wat je kunt slepen, moet ook met een klik of tik werken                                       | Drag-and-drop werd steeds vaker gebruikt, maar is onmogelijk voor sommige gebruikers                         |
 | **2.5.8 Doelgebied minimaal (AA)**         | Klikbare elementen moeten minimaal 24x24 CSS-pixels zijn                                            | Op mobiel waren knoppen vaak te klein om nauwkeurig te raken                                                 |
 | **3.2.6 Consistente hulp (A)**             | Hulpfuncties (contactinfo, chat) staan op elke pagina op dezelfde plek                              | Gebruikers met een cognitieve beperking raakten in de war als hulpfuncties steeds op een andere plek stonden |
-| **3.3.7 Toegankelijke authenticatie (AA)** | Inloggen mag geen geheugentest zijn (geen puzzels, geen wachtwoord overtypen)                       | CAPTCHAs en complexe inlogschermen sloten te veel mensen uit                                                 |
-| **3.3.8 Redundante invoer (A)**            | Informatie die je al hebt ingevuld, mag niet opnieuw gevraagd worden                                | Lange formulieren vroegen steeds vaker dezelfde gegevens meerdere keren                                      |
+| **3.3.8 Toegankelijke authenticatie (AA)** | Inloggen mag geen geheugentest zijn (geen puzzels, geen wachtwoord overtypen)                       | CAPTCHAs en complexe inlogschermen sloten te veel mensen uit                                                 |
+| **3.3.7 Overtollige invoer (A)**           | Informatie die je al hebt ingevuld, mag niet opnieuw gevraagd worden                                | Lange formulieren vroegen steeds vaker dezelfde gegevens meerdere keren                                      |
 
 **Kort gezegd:** WCAG 2.2 repareert problemen die we in de praktijk steeds vaker tegenkwamen. Het is geen revolutie, maar een logische update.
 
@@ -93,7 +94,7 @@ De belangrijkste nieuwe criteria:
 
 - **Website of webshop?** Toets op WCAG 2.2
 - **App?** Toets op WCAG 2.1 (conform EN 301 549)
-- **Overheidswebsite?** Het Bdo verwijst naar EN 301 549, die nu WCAG 2.1 bevat. In de praktijk adviseer ik om op 2.2 te toetsen: die criteria komen er toch aan, en je bent dan voorbereid
+- **Overheidswebsite?** Het BDTO verwijst naar EN 301 549, die nu WCAG 2.1 bevat. In de praktijk adviseer ik om op 2.2 te toetsen: die criteria komen er toch aan, en je bent dan voorbereid
 
 ## Waar begin je als je niet weet waar je staat?
 
@@ -111,7 +112,7 @@ Je kunt pas een plan maken als je weet wat er aan de hand is. Er zijn twee manie
 - Draai Lighthouse in Chrome DevTools (maar weet dat dit maximaal 30 procent van de problemen vindt)
 
 **Een professionele audit laten doen:**
-Een audit door een gespecialiseerd bureau geeft je een compleet beeld. Bij Proper Access toetsen we handmatig op alle 55 succescriteria van WCAG 2.2, met echte hulpsoftware. Je krijgt een rapport met per pagina en per element precies wat er aan de hand is en hoe je het oplost.
+Weet je nog niet of een volledig onderzoek nodig is, dan is een [mini-audit](/webshop-quickscan/) van 495 euro exclusief btw de kortste weg naar een eerste beeld: tot vijf uur handmatige controle, binnen een paar dagen. Een audit door een gespecialiseerd bureau geeft je een compleet beeld. Bij Proper Access toetsen we handmatig op alle 55 succescriteria van WCAG 2.2, met echte hulpsoftware. Je krijgt een rapport met per pagina en per element precies wat er aan de hand is en hoe je het oplost.
 
 ### Stap 2: Prioriteer
 
@@ -171,8 +172,8 @@ Ja. WCAG 2.1 is nog steeds een geldige standaard. Maar omdat WCAG 2.2 achterwaar
 Kort gezegd: ja, voor de meeste organisaties is WCAG verplicht. De wetgeving verschilt per sector:
 
 - **Bedrijfsleven:** de European Accessibility Act (EAA) is de WCAG-wet voor het bedrijfsleven. Heb je 10 of meer medewerkers, dan is de toegankelijkheid van je website verplicht sinds juni 2025. Ben je kleiner, dan geldt die plicht zodra je jaaromzet én je balanstotaal boven de 2 miljoen euro liggen. De EAA verwijst naar de Europese norm EN 301 549, die op haar beurt verwijst naar WCAG.
-- **Overheid:** het Besluit digitale overheid (Bdo) verplicht overheidswebsites al langer om aan WCAG te voldoen.
-- **Semipublieke sector:** organisaties in het onderwijs, de zorg en de cultuursector vallen vaak onder de EAA of het Bdo, afhankelijk van hun financiering en rechtsvorm.
+- **Overheid:** het Besluit digitale toegankelijkheid overheid (BDTO) verplicht overheidswebsites al langer om aan WCAG te voldoen.
+- **Semipublieke sector:** organisaties in het onderwijs, de zorg en de cultuursector vallen vaak onder de EAA of het BDTO, afhankelijk van hun financiering en rechtsvorm.
 
 De WCAG-wetgeving is dus geen optie meer; het is een verplichting. Hoe eerder je begint, hoe minder het kost.
 

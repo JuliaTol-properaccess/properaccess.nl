@@ -14,11 +14,13 @@ keywords:
   - WCAG
 ---
 
-De hoeveelheid informatie over digitale toegankelijkheid kan overweldigend zijn. 86 succescriteria, vier principes, drie niveaus, meerdere wetten. Maar je hoeft niet alles tegelijk te doen. Dit is hoe je begint.
+De hoeveelheid informatie over digitale toegankelijkheid kan overweldigend zijn. 55 succescriteria op de niveaus A en AA, vier principes, meerdere wetten. Maar je hoeft niet alles tegelijk te doen. Dit is hoe je begint.
+
+Zoek je eerst de uitleg zelf, dan staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/) wat het inhoudt, om welke beperkingen het gaat, welke wet voor jou geldt en waaraan je het afmeet.
 
 ## Begin met begrijpen waarom
 
-Digitale toegankelijkheid gaat over echte mensen. 4,5 miljoen Nederlanders hebben een beperking. Zij gebruiken je website met schermlezers, toetsenborden, vergroting, spraakherkenning of aangepaste invoerapparaten.
+Digitale toegankelijkheid gaat over echte mensen. Van de EU-inwoners van 16 jaar en ouder gaf over 2024 bijna een kwart (23,9%) aan beperkt te zijn in dagelijkse activiteiten, meet Eurostat. Zij gebruiken je website met schermlezers, toetsenborden, vergroting, spraakherkenning of aangepaste invoerapparaten.
 
 Als je website niet met die hulpmiddelen werkt, kunnen zij niet:
 - Je producten bekijken of bestellen

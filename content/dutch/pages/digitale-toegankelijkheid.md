@@ -111,7 +111,7 @@ Bron: [Eurostat](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/wdn-
 
 {{< /section-tweekolom >}}
 
-{{< section-cards title="Waaraan je het afmeet: WCAG" id="wcag" columns="2" subtitle="De standaard heet WCAG, de Web Content Accessibility Guidelines van het W3C. De actuele versie is 2.2, uit 2023, en telt 55 succescriteria op de niveaus A en AA. Dat zijn de niveaus waar de wetgeving naar verwijst. Alle criteria staan onder vier principes." >}}
+{{< section-cards title="Waaraan je het afmeet: WCAG" id="wcag" columns="2" subtitle="De standaard heet WCAG, de Web Content Accessibility Guidelines van het W3C. De actuele versie is 2.2, uit 2023, en telt 55 succescriteria op de niveaus A en AA. Dat zijn de niveaus waar de wetgeving naar verwijst. Alle criteria staan onder vier principes." noot="Wil je het verschil tussen WCAG 2.1 en 2.2 uitgewerkt zien, met de negen criteria die in 2.2 zijn bijgekomen en waarom ze er zijn, lees dan [hoe je een website digitaal toegankelijk maakt](/blog/hoe-maak-je-een-website-digitaal-toegankelijk/)." >}}
 
 {{< section-card title="1. Waarneembaar" >}}
 
