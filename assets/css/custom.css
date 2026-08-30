@@ -3379,6 +3379,24 @@ html.dark .section-split__title { color: #fff; }
   color: #374151;
 }
 html.dark .section-split__text { color: #d1d5db; }
+/* Meerdere alinea's in deze kolom liepen tegen elkaar aan. */
+.section-split__text p {
+  margin-bottom: 1rem;
+}
+.section-split__text p:last-child {
+  margin-bottom: 0;
+}
+/* Zonder deze regel kreeg een link hier dezelfde kleur als de lopende tekst,
+   waardoor hij niet als link te herkennen was (WCAG 1.4.1). */
+.section-split__text a:not(.hp-btn):not(.btn) {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.section-split__text a:not(.hp-btn):not(.btn):hover {
+  color: #004050;
+}
+html.dark .section-split__text a:not(.hp-btn):not(.btn) { color: var(--color-darkmode-text-dark); }
 .section-split__text ul {
   padding-left: 1.25rem;
   margin: 0.75rem 0;
@@ -18936,16 +18954,23 @@ html.dark .jaartijdlijn dd {
   margin-bottom: 0;
 }
 
-.tweekolom__tekst a,
-.tweekolom__naast a {
+/* Een knop in de tekstkolom houdt zijn eigen opmaak. Zonder deze uitzondering
+   won de linkkleur van de knopkleur, en stond er magenta tekst met een
+   onderstreping op een donkere knop. */
+.tweekolom__tekst a:not(.hp-btn):not(.btn),
+.tweekolom__naast a:not(.hp-btn):not(.btn) {
   color: #A30D4B;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.tweekolom__tekst a:hover,
-.tweekolom__naast a:hover {
+.tweekolom__tekst a:not(.hp-btn):not(.btn):hover,
+.tweekolom__naast a:not(.hp-btn):not(.btn):hover {
   color: #004050;
+}
+
+.tweekolom__tekst .hp-btn {
+  margin-top: 0.5rem;
 }
 
 /* Op smalle schermen mag de tabel horizontaal schuiven; de pagina zelf niet. */
