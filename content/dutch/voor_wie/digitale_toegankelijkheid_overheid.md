@@ -73,7 +73,9 @@ aanvraagformulieren, het intranet, portalen achter een inlog en je apps. Elk van
 heeft een eigen toegankelijkheidsverklaring nodig in het
 [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
 Hoe je zo'n verklaring opstelt en wat het Register aan onderbouwing vraagt, staat op onze pagina
-over de [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/).
+over de [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/). Wat er onder de eisen zelf
+valt en waaraan een auditor het afmeet, staat op onze pagina over
+[digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
 {{< /section-full >}}
 

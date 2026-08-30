@@ -51,8 +51,8 @@ Wij auditen standaard op WCAG 2.2, tenzij een opdrachtgever expliciet om 2.1 vra
 
 ## Wat betekent dit voor jou?
 
-Als je een website hebt die onder de EAA of het BDTO valt, moet je aantoonbaar voldoen aan WCAG. Dat doe je met een toegankelijkheidsaudit: een grondige handmatige en geautomatiseerde test van je website.
+Als je een website hebt die onder de EAA of het BDTO valt, moet je aantoonbaar voldoen aan WCAG. Dat doe je met een toegankelijkheidsaudit: een grondige handmatige en geautomatiseerde test van je website. Welke van de twee wetten voor je geldt en waar WCAG in dat geheel past, staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
-Het klinkt misschien overweldigend, 86 criteria, maar in de praktijk komen dezelfde problemen steeds terug. Ontbrekende alt-teksten, te laag contrast, formulieren zonder labels, focusindicators die zijn uitgeschakeld. De meeste websites hebben vijf tot tien terugkerende patronen die 80% van de issues veroorzaken.
+Het klinkt misschien overweldigend, 55 criteria op A en AA, maar in de praktijk komen dezelfde problemen steeds terug. Ontbrekende alt-teksten, te laag contrast, formulieren zonder labels, focusindicators die zijn uitgeschakeld. De meeste websites hebben vijf tot tien terugkerende patronen die 80% van de issues veroorzaken.
 
 Wil je weten welke patronen op jouw website spelen? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw) en je krijgt een helder overzicht.

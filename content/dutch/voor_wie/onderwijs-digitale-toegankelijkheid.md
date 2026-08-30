@@ -88,6 +88,8 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 Dit is niet iets voor "later". Studenten met een beperking volgen nu onderwijs op jouw instelling.
 
+Achter beide wetten ligt dezelfde standaard. Wat [digitale toegankelijkheid](/digitale-toegankelijkheid/) inhoudt en welke eisen daaruit volgen, staat op één pagina bij elkaar.
+
 {{< /section-split >}}
 
 {{< section-cards title="Dit zien we bij elke onderwijsinstelling" columns="2" bg="light" >}}

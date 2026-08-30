@@ -103,8 +103,15 @@ een ziende bezoeker niet kunt starten, sluit precies de mensen uit voor wie hij 
 Dat hangt niet af van wat je verkoopt, maar van wat je instelling is. Het is de ene wet of de
 andere, en welke van de twee moet je per instelling bekijken.
 
-Krijg je overheidsfinanciering, dan val je onder het **Besluit digitale toegankelijkheid
-overheid**. Je hebt dan een toegankelijkheidsverklaring nodig in het
+Ben je een publiekrechtelijke instelling, dan val je onder het **Besluit digitale
+toegankelijkheid overheid**. Publiekrechtelijk is een juridisch begrip en geen kwestie van
+subsidie: er moet aan drie voorwaarden tegelijk zijn voldaan. De instelling is opgericht om te
+voorzien in een behoefte van algemeen belang zonder commercieel karakter, ze heeft
+rechtspersoonlijkheid, en ze wordt in hoofdzaak door de overheid gefinancierd, staat onder
+toezicht van de overheid of heeft een bestuur dat de overheid grotendeels benoemt. Een museum met
+een subsidie valt er dus niet automatisch onder. Twijfelgevallen leg je voor aan een jurist.
+
+Val je eronder, dan heb je een toegankelijkheidsverklaring nodig in het
 [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register),
 en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd.
 
@@ -118,6 +125,9 @@ niet tussen de twee wetten; wat verschilt is hoe je erover verantwoording aflegt
 In de culturele sector loopt die grens niet altijd waar je hem verwacht. Twee musea die er van
 buiten hetzelfde uitzien, kunnen onder verschillende wetten vallen. In de kennismaking kijken we
 met je mee welke van de twee het bij jou is.
+
+Welke wet het ook wordt, de eisen aan je website blijven dezelfde. Wat die inhouden staat op
+[digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
 Los van beide wetten vragen steeds meer subsidieverleners en fondsen om een
 toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij is daarvoor

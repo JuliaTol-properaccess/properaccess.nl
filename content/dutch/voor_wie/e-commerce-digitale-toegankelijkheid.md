@@ -69,6 +69,10 @@ ten hoogste 2 miljoen euro, dan geldt de plicht niet voor je diensten. Het perso
 harde grens; van de omzet en het balanstotaal hoeft er maar één onder de twee miljoen te zitten. Vrijwel elke webshop met een eigen developmentteam valt
 er dus wel onder.
 
+Ken je de inhoudelijke kant nog niet, dan staat op
+[digitale toegankelijkheid](/digitale-toegankelijkheid/) om welke beperkingen het gaat, waaraan je
+een webshop afmeet en welke van de twee Nederlandse wetten voor je geldt.
+
 Het toezicht op de EAA is in Nederland verdeeld over zes toezichthouders, per soort product of
 dienst. Voor webshops en apps is dat de Autoriteit Consument en Markt. Die begon met begeleiden.
 Tien bedrijven kregen een volledig onderzoek volgens WCAG-EM en daarna een bedrijfsbezoek met een
