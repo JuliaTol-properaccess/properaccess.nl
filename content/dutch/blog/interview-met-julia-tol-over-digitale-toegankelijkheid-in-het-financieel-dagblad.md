@@ -42,7 +42,7 @@ Toegankelijkheid is daarmee niet alleen een economische noodzaak, maar biedt ook
 
 ## Uitzonderingen
 
-De EAA stelt duidelijke eisen aan onder andere websites, apps, pinautomaten, klantenserviceportals en mediatoepassingen en is van toepassing op bedrijven die producten en diensten aanbieden aan consumenten. Organisaties die uitsluitend business-to-business opereren vallen niet onder de wet. Voor ondernemingen met minder dan tien medewerkers en een jaaromzet onder de twee miljoen euro geldt een uitzondering voor digitale diensten. Kleine bedrijven zijn dus (deels) uitgezonderd, maar voor digitale producten geldt de verplichting alsnog.
+De EAA stelt duidelijke eisen aan onder andere websites, apps, pinautomaten, klantenserviceportals en mediatoepassingen en is van toepassing op bedrijven die producten en diensten aanbieden aan consumenten. Organisaties die uitsluitend business-to-business opereren vallen niet onder de wet. Voor ondernemingen met minder dan tien mensen in dienst én een jaaromzet van maximaal twee miljoen euro geldt een uitzondering voor digitale diensten. Die twee voorwaarden moeten allebei gelden. Kleine bedrijven zijn dus (deels) uitgezonderd, maar voor digitale producten geldt de verplichting alsnog.
 
 ## Hulp voor ondernemers
 

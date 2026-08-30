@@ -49,7 +49,7 @@ De **European Accessibility Act** (EAA) geldt sinds 28 juni 2025 voor bedrijven 
 - Ticketverkoop en reisdiensten
 - Zelfbedieningsterminals (geldautomaten, ticketmachines)
 
-**Uitzondering:** Micro-ondernemingen (minder dan 10 medewerkers én minder dan € 2 miljoen omzet) zijn uitgezonderd.
+**Uitzondering:** micro-ondernemingen zijn uitgezonderd. Dat zijn bedrijven met minder dan 10 mensen in dienst én een jaaromzet van maximaal € 2 miljoen; die twee voorwaarden moeten allebei gelden.
 
 **Wie controleert?**
 De ACM (Autoriteit Consument & Markt).

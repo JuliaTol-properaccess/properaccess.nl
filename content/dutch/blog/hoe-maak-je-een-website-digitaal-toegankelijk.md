@@ -170,7 +170,7 @@ Ja. WCAG 2.1 is nog steeds een geldige standaard. Maar omdat WCAG 2.2 achterwaar
 
 Kort gezegd: ja, voor de meeste organisaties is WCAG verplicht. De wetgeving verschilt per sector:
 
-- **Bedrijfsleven:** de European Accessibility Act (EAA) is de WCAG-wet voor het bedrijfsleven. Als je meer dan 10 medewerkers hebt of meer dan 2 miljoen euro omzet, dan is de toegankelijkheid van je website verplicht sinds juni 2025. De EAA verwijst naar de Europese norm EN 301 549, die op haar beurt verwijst naar WCAG.
+- **Bedrijfsleven:** de European Accessibility Act (EAA) is de WCAG-wet voor het bedrijfsleven. Heb je 10 of meer medewerkers of meer dan 2 miljoen euro omzet, dan is de toegankelijkheid van je website verplicht sinds juni 2025. De EAA verwijst naar de Europese norm EN 301 549, die op haar beurt verwijst naar WCAG.
 - **Overheid:** het Besluit digitale overheid (Bdo) verplicht overheidswebsites al langer om aan WCAG te voldoen.
 - **Semipublieke sector:** organisaties in het onderwijs, de zorg en de cultuursector vallen vaak onder de EAA of het Bdo, afhankelijk van hun financiering en rechtsvorm.
 

@@ -30,11 +30,11 @@ Uit een enquete onder meer dan 1.000 freelancers blijkt dat ongeveer een derde n
 
 Dit is misschien wel het grootste probleem. Niet onwil, maar onwetendheid. Ondernemers en freelancers weten niet wat er precies van ze wordt verwacht, en de officiële bronnen helpen niet mee. WCAG-richtlijnen lezen als een technisch handboek. EU-documenten zijn geschreven voor juristen. En de meeste samenvattingen online zijn oppervlakkig of onvolledig.
 
-**Wat je moet weten in vijf zinnen:** De EAA verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De technische standaard is WCAG 2.1 niveau AA -- zo'n 50 criteria. De wet geldt voor de meeste bedrijven met meer dan 10 medewerkers of meer dan 2 miljoen euro omzet. Micro-ondernemingen zijn uitgezonderd voor diensten, maar niet voor producten. Alles wat je na 28 juni 2025 lanceert of substantieel wijzigt, moet direct voldoen.
+**Wat je moet weten in vijf zinnen:** De EAA verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De technische standaard is WCAG 2.1 niveau AA -- zo'n 50 criteria. De wet geldt voor de meeste bedrijven met 10 of meer medewerkers of meer dan 2 miljoen euro omzet. Micro-ondernemingen zijn uitgezonderd voor diensten, maar niet voor producten. Alles wat je na 28 juni 2025 lanceert of substantieel wijzigt, moet direct voldoen.
 
 ## "Ik ben een micro-onderneming, dus ik hoef niks te doen"
 
-Dit horen we vaak. En het klopt deels. Micro-ondernemingen (minder dan 10 medewerkers en minder dan 2 miljoen euro jaaromzet) zijn uitgezonderd van de EAA-verplichtingen voor diensten.
+Dit horen we vaak. En het klopt deels. Micro-ondernemingen (minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro, allebei) zijn uitgezonderd van de EAA-verplichtingen voor diensten.
 
 Maar er zitten twee valkuilen aan die opluchting.
 
