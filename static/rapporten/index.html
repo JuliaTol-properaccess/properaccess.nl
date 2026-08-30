@@ -19,6 +19,12 @@
       flex-direction: column;
       align-items: center;
     }
+    main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     header {
       background: #1F2937;
       width: 100%;
@@ -31,7 +37,10 @@
       font-size: 1.4rem;
       font-weight: 700;
     }
-    header h1 span { color: #A30D4B; }
+    /* Magenta op donkerblauw komt uit op 1,9:1 en zakt daarmee door zowel de
+       4,5:1 voor gewone tekst als de 3:1 voor grote tekst. Op deze achtergrond
+       is wit de enige kleur uit het palet die het haalt. */
+    header h1 span { color: #fff; }
 
     /* Login scherm */
     #login-screen {
@@ -127,6 +136,7 @@
     <h1><span>Proper Access</span> — Rapporten</h1>
   </header>
 
+  <main>
   <div id="login-screen">
     <h2>Inloggen</h2>
     <p>Voer het wachtwoord in om de rapportoverzicht te bekijken.</p>
@@ -627,6 +637,7 @@
     </div>
     <!-- AUTO-GENERATED REPORT CARDS: END -->
   </div>
+  </main>
 
   <script>
     async function sha256(text) {

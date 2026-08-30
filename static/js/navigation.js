@@ -102,9 +102,56 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init, { once: true });
-  } else {
+  /* ---------- ZOEKVENSTER UIT DE TAB-VOLGORDE ----------
+     Het zoekvenster komt uit een Hugo-module en draagt daar een vaste
+     aria-hidden="true", ook als het openstaat. Dat is een WCAG-fout: er zit
+     een invoerveld in dat wel focus kan krijgen, dus een toetsenbordgebruiker
+     landt in een venster dat voor een schermlezer niet bestaat.
+
+     We vervangen dat door inert. Dat haalt de inhoud uit zowel de
+     toegankelijkheidsboom als de tab-volgorde, en we halen het weg zodra de
+     module de klasse "show" zet. Het venster zelf blijft ongemoeid, zodat een
+     update van de module niets overschrijft. */
+  function initSearchModal() {
+    var modal = document.querySelector('.search-modal');
+    if (!modal) return;
+
+    var sync = function () {
+      if (modal.classList.contains('show')) {
+        modal.removeAttribute('inert');
+        modal.removeAttribute('aria-hidden');
+      } else {
+        modal.setAttribute('inert', '');
+        modal.removeAttribute('aria-hidden');
+      }
+    };
+
+    sync();
+    new MutationObserver(sync).observe(modal, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    /* Vangnet: inert blokkeert ook muisklikken, dus als de observer om wat voor
+       reden dan ook niet afgaat, is de zoekfunctie onbruikbaar. Daarom halen we
+       inert bij een klik op de zoekknop ook rechtstreeks weg. */
+    document
+      .querySelectorAll('[data-target="search-modal"]')
+      .forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          modal.removeAttribute('inert');
+        });
+      });
+  }
+
+  function start() {
     init();
+    initSearchModal();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
   }
 })();

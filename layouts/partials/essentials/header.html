@@ -40,10 +40,17 @@
         {{ if .HasChildren }}
           <li class="nav-item nav-dropdown group relative">
 
+            {{/* Deze checkbox is een stylingmechanisme voor peer-checked, geen
+                 bedienbaar element. De knop eronder doet het echte werk, met
+                 aria-expanded en aria-controls. Daarom staat hij buiten de
+                 toegankelijkheidsboom: anders kondigt een schermlezer een
+                 naamloos selectievakje aan. */}}
             <input
               type="checkbox"
               id="submenu-{{ .Name | urlize }}"
-              class="peer hidden" />
+              class="peer hidden"
+              aria-hidden="true"
+              tabindex="-1" />
 
             <button
               type="button"

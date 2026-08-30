@@ -200,7 +200,9 @@
       <table class="qs-compare-table">
         <thead>
           <tr>
-            <th scope="col"></th>
+            {{/* De hoek linksboven is geen kop, dus een lege td. Een lege th
+                 laat een schermlezer een kolomkop aankondigen die er niet is. */}}
+            <td></td>
             <th scope="col">Automatische scan</th>
             <th scope="col">Proper Access mini-audit</th>
           </tr>
