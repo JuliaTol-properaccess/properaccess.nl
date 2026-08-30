@@ -440,9 +440,10 @@ toegankelijkheid als doorlopende dienst". Dat is de naam van ons product, geen z
 "accessibility as a service" zoekt in Nederland vrijwel niemand. Google heeft dus geen
 dienstpagina om te kiezen en valt terug op de blog.
 
-**Er ligt al een exacte URL, en die is leeg.** `/digitale-toegankelijkheid/` bestaat sinds
-9 november 2021, staat in `content/dutch/footer/` en bestaat uit één alinea met cijfers over
-hoeveel Nederlanders een beperking hebben. De pagina haalt geen enkele vertoning. Een
+**Er ligt al een exacte URL, en die doet niets.** `/digitale-toegankelijkheid/` bestaat sinds
+9 november 2021 en stond in `content/dutch/footer/`. De pagina was niet leeg, zoals hier eerst
+stond: er stonden tien korte secties op, over de overlap met SEO en usability. Wel klopt dat er
+geen enkele pagina op de site naar linkte en dat hij geen enkele vertoning haalde. Een
 exact-match URL die niets doet is de goedkoopste ingang die we hebben.
 
 **Twaalf Nederlandse pagina's dragen de term in hun titel.** Blogartikelen, een sectie, een
@@ -468,6 +469,8 @@ de omzet zit.
 
 ### De vier stappen
 
+Stap 1 tot en met 3 zijn uitgevoerd op 30 augustus 2026. Stap 4 staat nog open.
+
 **1. Bouw `/digitale-toegankelijkheid/` om tot pijlerpagina.** Dit is de grootste ingreep en de
 enige die de kernterm kan pakken. De pagina moet de vraag "wat is digitale toegankelijkheid"
 volledig beantwoorden, en daarna de lezer doorsturen naar het onderzoek, de wet en de tools. De
@@ -484,7 +487,7 @@ drie hem houden: de pijlerpagina, de overheidspagina en het artikel "wat is digi
 toegankelijkheid", en dat laatste alleen als het een canonical naar de pijlerpagina krijgt. De
 rest krijgt een titel die zijn eigen vraag beschrijft.
 
-**4. Duw `/toegankelijkheidsaudit/` over de rand.** Die pagina staat op 18,9 met 676
+**4. Duw `/toegankelijkheidsaudit/` over de rand.** Nog te doen. Die pagina staat op 18,9 met 676
 vertoningen. Dat is de kortste afstand tot pagina 1 van alle commerciële pagina's, en de
 zoektermen eromheen ("wcag audit", "wcag expert", "toegankelijkheidsonderzoek") zijn koopvragen.
 Dit is de snelste meetbare winst; stap 1 duurt maanden.
@@ -501,6 +504,24 @@ eerste klikken op de pijlerpagina.
 - Positie en klikken van `/toegankelijkheidsaudit/`, nu 18,9 en 3.
 - Vertoningen van `/digitale-toegankelijkheid/`, nu nul.
 - Klikken op de Nederlandse dienstpagina's, nu 36.
+
+### Wat er op 30 augustus 2026 is gedaan
+
+- `/digitale-toegankelijkheid/` herschreven tot pijlerpagina, verplaatst naar
+  `content/dutch/pages/`, met de money-page-layout die ook op `/toegankelijkheidsverklaring/`
+  staat: banner, trust-regel, zes secties en zes FAQ-vragen met FAQPage-schema.
+- `/blog/wat-is-digitale-toegankelijkheid/` samengevoegd in die pagina en omgeleid met een
+  `aliases:`. Twee pagina's die op dezelfde vraag mikten zijn er nu één.
+- De twee grote blogartikelen linken nu hoog in de tekst naar de pijlerpagina en onderaan naar
+  `/toegankelijkheidsaudit/`. Ze hadden samen 5.783 vertoningen en nul interne uitgang.
+- De pijlerpagina staat in de footer, dus hij heeft nu vanaf elke pagina een link. Daarvoor was
+  hij vijf jaar lang een wees.
+- Twee titels die op de kernterm meededen zonder daarop te mikken zijn aangepast: het
+  blogoverzicht en `/hulp-bij-europese-toegankelijkheidswetgeving/`.
+- Meegenomen in `/blog/voor-wie-is-digitale-toegankelijkheid-verplicht/`: de bullet
+  "organisaties die overwegend door de overheid gefinancierd worden" is vervangen door de drie
+  voorwaarden voor een publiekrechtelijke instelling, en de zin dat Logius steekproeven
+  uitvoert is eruit. Allebei stonden ze op de lijst met bekende fouten.
 
 ---
 
