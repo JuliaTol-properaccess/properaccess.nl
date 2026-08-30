@@ -319,12 +319,18 @@ Search Console-nulmeting en gaan vóór de rest: daar zit het verschil tussen ra
   toegankelijkheid" en varianten daarvan kiest Google nu twee blogartikelen, allebei ver buiten
   pagina 2. Uitzoeken of die artikelen de dienstpagina in de weg zitten of dat de dienstpagina's
   te dun zijn, en dan één pagina per kernterm aanwijzen.
-- **De alt-tekst-cluster oplossen.** `/blog/alt-tekst-keuzehulp/` en `/tools/alt-tekst-keuzehulp/`
-  bestaan naast elkaar. De alt-tekst-vragen zijn samen goed voor ruim 850 vertoningen op positie
-  11 tot 15 en leveren niets op. Eén pagina aanwijzen, de andere laten linken.
-- **Nagaan of `audit.properaccess.nl` in de index hoort.** Twintig rapportpagina's van dat
-  subdomein staan in Google, terwijl `/rapporten/` op de hoofdsite bewust op Disallow staat. Als
-  dat niet de bedoeling is, is het één regel in `robots.txt` daar.
+- ~~**De alt-tekst-cluster oplossen.**~~ Gedaan op 30 augustus 2026 (PR #132). Het artikel blijft
+  de uitlegpagina en had de tool al ingebed; de toolpagina heeft nu een eigen titel, description
+  en drie punten over wat de keuzehulp doet, zodat de twee niet meer op dezelfde vraag mikken.
+  Bewust geen canonical van tool naar artikel, want dan verdwijnt de tool uit de index terwijl
+  hij in het tools-overzicht staat.
+- **`audit.properaccess.nl` staat open voor zoekmachines. Dit is het punt om als eerste te
+  beslissen.** Nagetrokken op 30 augustus 2026: dat subdomein heeft **geen robots.txt** (404) en
+  de rapportpagina's hebben geen `noindex`. Een klantrapport is met een 200 publiek bereikbaar en
+  Google toont het: twintig rapportpagina's, 821 vertoningen en 5 klikken in 28 dagen. Op de
+  hoofdsite staat `/rapporten/` juist bewust op Disallow, dus de bedoeling is duidelijk en het
+  subdomein volgt die niet. Het draait op LiteSpeed en niet op GitHub Pages, dus het is niet
+  vanuit deze repo op te lossen. Vraag Julia of dit zo hoort voordat er iets verandert.
 - `/toegankelijkheidsverklaring/` als uitlegpagina die naar de twee bestaande generators
   linkt. Nu pakt `digitoegankelijk.nl` die citaties.
 - Het kostencluster consolideren: van vier kostenartikelen presteert er één (citation rate
