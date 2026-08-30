@@ -3,6 +3,18 @@ Allow: /
 
 Disallow: /offertes/
 Disallow: /bedankt/
-Disallow: /rapporten/
+
+# Rapporten mogen niet in de zoekmachines staan. Dat regelen we met een noindex op
+# elke rapportpagina, en daarvoor moet Google de pagina wél kunnen ophalen: een
+# Disallow blokkeert alleen het crawlen, en een geblokkeerde URL kan gewoon in de
+# index blijven staan. Tot 30 augustus 2026 stond hier "Disallow: /rapporten/", en
+# precies daardoor stonden er vier rapport-URL's in Search Console die Google nooit
+# had kunnen opschonen. Zet die regel dus niet terug.
+#
+# De twee uitzonderingen hieronder zijn HTML-fragmenten zonder <head>, dus daar kan
+# geen noindex in. Die blijven op Disallow.
+Disallow: /rapporten/_shared-content/
+Disallow: /rapporten/_assets/
+Disallow: /rapporten/202508_kerkrade.nl_hercontrole/*/
 
 Sitemap: https://www.properaccess.nl/sitemap.xml
