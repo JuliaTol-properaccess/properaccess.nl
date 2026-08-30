@@ -48,7 +48,7 @@ hulp_feiten:
   - k: "Verantwoording"
     v: "Onder het BDTO een verklaring in het Register. Onder de EAA informatie over toegankelijkheid op je eigen website"
   - k: "Uitzondering"
-    v: "Alleen onder de EAA, voor micro-ondernemingen: minder dan 10 mensen in dienst én maximaal € 2 miljoen jaaromzet. Allebei"
+    v: "Alleen onder de EAA, voor micro-ondernemingen: minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van maximaal € 2 miljoen"
 
 hulp_monitor_punten:
   - k: "De markt"

@@ -38,7 +38,7 @@ Je online winkel moet voldoen aan **WCAG 2.1**, niveau A en AA samen: 50 succesc
 
 De EAA geldt voor e-commercediensten: webshops, ticketverkoop, boekingsplatforms, abonnementsdiensten en digitale marktplaatsen.
 
-**Uitzondering:** micro-ondernemingen. De ACM omschrijft die als minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Het moet allebei gelden, en een balanstotaal telt niet mee. Maar zelfs dan: toegankelijkheid is goed voor je conversie.
+**Uitzondering:** micro-ondernemingen. De richtlijn omschrijft die als minder dan 10 werknemers én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro. Het personeelsaantal is een harde grens; van de twee financiële cijfers hoeft er maar één onder de grens te zitten. De ACM noemt op haar eigen pagina alleen de omzet, dus val je daartussenin, laat het dan toetsen. Maar zelfs dan: toegankelijkheid is goed voor je conversie.
 
 {{< /case-section >}}
 

@@ -34,7 +34,7 @@ Dit is misschien wel het grootste probleem. Niet onwil, maar onwetendheid. Onder
 
 ## "Ik ben een micro-onderneming, dus ik hoef niks te doen"
 
-Dit horen we vaak. En het klopt deels. Micro-ondernemingen (minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro, allebei) zijn uitgezonderd van de EAA-verplichtingen voor diensten.
+Dit horen we vaak. En het klopt deels. Micro-ondernemingen zijn uitgezonderd van de EAA-verplichtingen voor diensten. Dat zijn bedrijven met minder dan 10 werknemers én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro.
 
 Maar er zitten twee valkuilen aan die opluchting.
 

@@ -22,7 +22,7 @@ Vanaf 26 juni 2025 moeten alle websites die je nieuw oplevert of ingrijpend aanp
 
 ## Wie moet voldoen aan de toegankelijkheidswet?
 
-De wet geldt voor de meeste middelgrote en grote bedrijven die via digitale kanalen diensten of producten leveren aan consumenten of de overheid. Er zijn een paar uitzonderingen. Ten eerste geldt de wet niet voor bedrijven die uitsluitend aan de zakelijke markt leveren. Maar let op: de overheid valt hier dus niet onder. De wet geldt ook niet voor micro-ondernemingen. Dat zijn bedrijven met minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro. Die twee voorwaarden moeten allebei gelden: kom je op één ervan boven de grens, dan val je er gewoon onder.
+De wet geldt voor de meeste middelgrote en grote bedrijven die via digitale kanalen diensten of producten leveren aan consumenten of de overheid. Er zijn een paar uitzonderingen. Ten eerste geldt de wet niet voor bedrijven die uitsluitend aan de zakelijke markt leveren. Maar let op: de overheid valt hier dus niet onder. De wet geldt ook niet voor de diensten van micro-ondernemingen. Dat zijn bedrijven met minder dan 10 werknemers én een jaaromzet óf een jaarlijks balanstotaal van ten hoogste 2 miljoen euro. Het personeelsaantal is een harde grens: kom je daarboven, dan val je er hoe dan ook onder. Van de omzet en het balanstotaal hoeft er maar één onder de twee miljoen te zitten.
 
 ## Wat gebeurt er als ik niet voldoe aan de toegankelijkheidswet?
 
