@@ -39,7 +39,7 @@ eaa_feiten:
   - k: "Voor wie"
     v: "Bedrijven die digitale producten of diensten aan consumenten leveren"
   - k: "Uitzondering"
-    v: "Micro-ondernemingen: minder dan 10 mensen in dienst én maximaal € 2 miljoen jaaromzet. Allebei"
+    v: "Micro-ondernemingen: minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van maximaal € 2 miljoen"
   - k: "Norm"
     v: "EN 301 549, op dit moment WCAG 2.1 niveau A en AA"
   - k: "Toezicht"
@@ -69,7 +69,7 @@ faqs:
   - question: "Geldt de EAA voor mijn bedrijf?"
     answer: "Dat hangt af van wat je organisatie juridisch is. Een commercieel bedrijf dat digitale producten of diensten aan consumenten levert valt onder de EAA. Een overheidsinstantie of publiekrechtelijke instelling valt onder het BDTO, ook als die precies dezelfde webshop draait. In de culturele sector loopt die grens niet waar je hem verwacht: twee musea die er van buiten hetzelfde uitzien kunnen onder verschillende wetten vallen, omdat het aan hun rechtsvorm en hun financiering ligt. Twijfel je, leg het dan voor aan een jurist en niet aan een auditor."
   - question: "Gelden de regels ook voor kleine bedrijven?"
-    answer: "Ja, tenzij je een micro-onderneming bent. De ACM omschrijft die als minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro, en allebei de voorwaarden moeten gelden. Let op hoe je die tien telt: de Europese definitie rekent in arbeidsjaareenheden, dus in voltijdbanen opgeteld over een heel jaar. Twee mensen die halve weken werken zijn samen één, en een drukke zomer met tijdelijke krachten telt naar rato mee. Eigenaren en meewerkende vennoten tellen mee, leerlingen met een leerovereenkomst niet, en zwangerschaps- en ouderschapsverlof wordt er niet bij gerekend. Kom je boven een grens uit, dan verandert je status pas als dat twee boekjaren op rij gebeurt."
+    answer: "Ja, tenzij je een micro-onderneming bent. De richtlijn omschrijft die als een onderneming met minder dan 10 werknemers én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro. Het personeelsaantal is een harde grens; van de twee financiële cijfers hoeft er maar één onder de grens te zitten. De ACM noemt op haar eigen pagina alleen de omzet. Let op hoe je die tien telt: de Europese definitie rekent in arbeidsjaareenheden, dus in voltijdbanen opgeteld over een heel jaar. Twee mensen die halve weken werken zijn samen één, en een drukke zomer met tijdelijke krachten telt naar rato mee. Eigenaren en meewerkende vennoten tellen mee, leerlingen met een leerovereenkomst niet, en zwangerschaps- en ouderschapsverlof wordt er niet bij gerekend. Kom je boven een grens uit, dan verandert je status pas als dat twee boekjaren op rij gebeurt."
   - question: "Waaraan moet een website of app precies voldoen?"
     answer: "Aan EN 301 549, de Europese norm voor toegankelijke ICT. Die staat op dit moment op WCAG 2.1 niveau A en AA, samen 50 succescriteria; wij toetsen aan WCAG 2.2, dat er 55 heeft. Concreet gaat het om dingen als: elk formulierveld heeft een zichtbaar label, je kunt de hele bestelling met alleen het toetsenbord afronden, een foutmelding zegt wat er mis is en bij welk veld, en een schermlezer leest je knoppen voor met een naam die klopt. Een geautomatiseerde scan raakt ongeveer 30% van de succescriteria, de rest is handwerk. En de norm houdt niet op bij je website: ook je klantondersteuning valt eronder."
   - question: "Moet ik mijn bestaande website direct aanpassen?"
@@ -128,11 +128,13 @@ Kies hieronder je situatie, dan licht de wet op die daarbij hoort. Allebei de ka
 {{< section-cards title="Twee uitzonderingen, en ze worden vaak door elkaar gehaald" subtitle="Val je onder de EAA, dan zijn er twee routes waarlangs de plicht kan vervallen of verlicht worden. Ze werken totaal verschillend." id="uitzonderingen" bg="light" columns="2" >}}
 
 {{< section-card title="Micro-onderneming: vrijgesteld" >}}
-De [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten) omschrijft een micro-onderneming als een bedrijf met **minder dan 10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro**.
+[Artikel 3, punt 23 van de richtlijn](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32019L0882) omschrijft een micro-onderneming als een "onderneming met minder dan 10 werknemers en een jaaromzet of een jaarlijks balanstotaal van ten hoogste 2 miljoen EUR".
 
-Twee dingen gaan hier het vaakst mis. Allebei de voorwaarden moeten gelden, dus het is niet één van de twee. En een balanstotaal voert de ACM niet op als criterium, ook al kom je dat in andere teksten wel tegen.
+Het personeelsaantal is dus een harde grens, en van de twee financiële cijfers hoeft er maar één onder de twee miljoen te zitten. Zit je met zes mensen op drie miljoen omzet maar op anderhalf miljoen balanstotaal, dan ben je volgens de richtlijn een micro-onderneming.
 
-Zit je boven een van beide grenzen, dan geldt de plicht gewoon. De ACM zegt dat zelf van de andere kant: heb je 10 of meer mensen in dienst óf een jaaromzet van meer dan 2 miljoen euro, dan moet je e-handelsdienst toegankelijk zijn. Dat is dezelfde regel, alleen andersom opgeschreven.
+Let op: de [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten) noemt op haar eigen pagina alleen de omzet en laat het balanstotaal weg. Val je precies in dat gat, laat het dan juridisch toetsen voordat je ervan uitgaat dat je niets hoeft te doen.
+
+De ACM zegt het van de andere kant: heb je 10 of meer mensen in dienst óf een jaaromzet van meer dan 2 miljoen euro, dan moet je e-handelsdienst toegankelijk zijn. En de vrijstelling geldt alleen voor diensten; lever je producten, dan blijft de plicht staan met alleen een lichter regime op de papieren.
 {{< /section-card >}}
 
 {{< section-card title="Onevenredige last: onderbouwen" >}}

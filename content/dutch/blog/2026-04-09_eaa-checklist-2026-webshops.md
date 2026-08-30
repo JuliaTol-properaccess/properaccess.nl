@@ -43,7 +43,7 @@ Pak een Google Doc, vink af wat je weet, zet vraagtekens bij wat je niet weet, e
 
 ### 1. Bepaal of de EAA op jou van toepassing is
 
-De wet geldt niet als je webshop een micro-onderneming is: **minder dan 10 mensen in dienst én een jaaromzet van maximaal € 2 miljoen**. Beide voorwaarden moeten gelden, anders val je er gewoon onder. Twijfel je? Lees [Geldt de EAA voor mijn webshop](/blog/geldt-de-eaa-voor-mijn-webshop/).
+De wet geldt niet als je webshop een micro-onderneming is: **minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van ten hoogste € 2 miljoen**. Het personeelsaantal is een harde grens; van de omzet en het balanstotaal hoeft er maar één onder de twee miljoen te zitten. Twijfel je? Lees [Geldt de EAA voor mijn webshop](/blog/geldt-de-eaa-voor-mijn-webshop/).
 
 ### 2. Bepaal welke onderdelen van je site onder de wet vallen
 

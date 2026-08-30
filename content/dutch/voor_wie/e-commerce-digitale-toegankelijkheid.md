@@ -64,9 +64,9 @@ Sinds 28 juni 2025 geldt de European Accessibility Act voor webshops en online d
 hele Europese Unie. De wet raakt de verkoop van producten en diensten aan consumenten: kleding,
 elektronica, boodschappen, tickets, e-books, bankieren, reizen boeken en telecomdiensten.
 
-Er is één uitzondering. Heb je minder dan 10 mensen in dienst én een jaaromzet van maximaal
-2 miljoen euro, dan geldt de plicht niet. Kom je op één van die twee boven de grens, dan val je
-er gewoon onder. Vrijwel elke webshop met een eigen developmentteam valt
+Er is één uitzondering. Heb je minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van
+ten hoogste 2 miljoen euro, dan geldt de plicht niet voor je diensten. Het personeelsaantal is een
+harde grens; van de omzet en het balanstotaal hoeft er maar één onder de twee miljoen te zitten. Vrijwel elke webshop met een eigen developmentteam valt
 er dus wel onder.
 
 Het toezicht op de EAA is in Nederland verdeeld over zes toezichthouders, per soort product of

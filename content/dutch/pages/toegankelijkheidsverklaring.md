@@ -169,10 +169,9 @@ Drie dingen werken anders dan bij de overheid:
 - **Onderzoek is niet voorgeschreven.** Verplicht is een toegankelijke website of app. Zonder
   onderzoek kun je je verklaring alleen niet onderbouwen als je toezichthouder ernaar vraagt, en
   hetzelfde geldt voor een beroep op onevenredige last.
-- **Micro-ondernemingen zijn vrijgesteld voor diensten.** De ACM omschrijft die als minder dan
-  10 mensen in dienst én een jaaromzet van maximaal 2 miljoen euro; die twee voorwaarden moeten
-  allebei gelden. Een balanstotaal noemt de ACM niet als criterium. Lever je producten, dan geldt
-  de vrijstelling niet.
+- **Micro-ondernemingen zijn vrijgesteld voor diensten.** De richtlijn omschrijft die als minder
+  dan 10 werknemers én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro. De ACM
+  noemt op haar eigen pagina alleen de omzet. Lever je producten, dan geldt de vrijstelling niet.
 
 Welke van de zes toezichthouders bij je hoort hangt af van wat je verkoopt. Voor webshops en apps
 is dat de ACM. Alle zes staan op de pagina over
