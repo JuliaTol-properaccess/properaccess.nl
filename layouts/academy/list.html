@@ -117,7 +117,8 @@
             </div>
             {{ with .Description }}<p class="academy__section-card-desc">{{ . }}</p>{{ end }}
             {{ if $isLocked }}
-            <div class="academy__section-card-lock" aria-label="Dit hoofdstuk is vergrendeld">
+            <div class="academy__section-card-lock">
+              <span class="sr-only">Dit hoofdstuk is vergrendeld</span>
               <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
@@ -226,7 +227,8 @@
               </span>
             </div>
             {{ if $sectionLocked }}
-            <div class="academy__section-card-lock" aria-label="Deze sectie is vergrendeld">
+            <div class="academy__section-card-lock">
+              <span class="sr-only">Deze sectie is vergrendeld</span>
               <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
