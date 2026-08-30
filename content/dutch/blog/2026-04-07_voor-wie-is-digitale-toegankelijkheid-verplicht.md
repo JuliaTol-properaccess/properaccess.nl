@@ -21,6 +21,8 @@ keywords:
 
 Digitale toegankelijkheid is in Nederland inmiddels voor een groot deel van de organisaties verplicht. Welke wet voor jou geldt, hangt af van het type organisatie.
 
+Weet je nog niet precies waar het over gaat? Op [digitale toegankelijkheid](/digitale-toegankelijkheid/) staat wat het inhoudt, waaraan je het afmeet en hoe je erachter komt waar je staat.
+
 ## Overheid en publieke sector: het BDTO
 
 Het **Besluit digitale toegankelijkheid overheid (BDTO)** is al sinds 2018 van kracht. Het geldt voor:
@@ -28,15 +30,16 @@ Het **Besluit digitale toegankelijkheid overheid (BDTO)** is al sinds 2018 van k
 - Rijksoverheid, provincies, gemeenten, waterschappen
 - Zelfstandige bestuursorganen (ZBO's)
 - Publiekrechtelijke instellingen
-- Organisaties die overwegend door de overheid gefinancierd worden
+
+Dat laatste is een juridisch begrip uit het aanbestedingsrecht, en geen kwestie van subsidie. Er gelden drie voorwaarden, die allemaal moeten kloppen: de organisatie is opgericht om te voorzien in behoeften van algemeen belang zonder industrieel of commercieel karakter, ze heeft rechtspersoonlijkheid, en ze wordt in hoofdzaak door de overheid gefinancierd, staat onder toezicht van de overheid of heeft een bestuur waarvan de overheid meer dan de helft benoemt. Een museum met een subsidie valt er dus niet automatisch onder. Twijfel je, leg het dan voor aan een jurist.
 
 **Wat moet je doen?**
 - Voldoen aan WCAG 2.1 niveau AA (via de EN 301 549-norm)
 - Een toegankelijkheidsverklaring publiceren op je website
 - Die verklaring registreren bij DigiToegankelijk
 
-**Wie controleert?**
-Logius voert steekproefsgewijze controles uit namens het ministerie van BZK.
+**Waar je verklaring terechtkomt**
+In het Register van Toegankelijkheidsverklaringen. Logius beheert dat Register en de omgeving DigiToegankelijk waarmee je de verklaring invult. Logius is geen toezichthouder.
 
 ## Bedrijfsleven: de EAA
 
@@ -82,3 +85,5 @@ Ook als je organisatie formeel niet onder deze wetten valt, zijn er goede redene
 Ongeacht welke wet voor jou geldt: de eerste stap is inzicht. Laat je website testen, zodat je weet wat er moet gebeuren.
 
 [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je binnen een paar dagen waar je staat en welke wet op jouw organisatie van toepassing is.
+
+Heb je een onderbouwing nodig die standhoudt richting het Register of een toezichthouder, dan is een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) de volgende stap.

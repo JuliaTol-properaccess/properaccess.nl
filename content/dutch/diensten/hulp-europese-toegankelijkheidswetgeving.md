@@ -1,6 +1,6 @@
 ---
-title: "Hulp bij digitale toegankelijkheid"
-meta_title: "Hulp bij digitale toegankelijkheid: audit, herstel en verantwoording | Proper Access"
+title: "Hulp bij de Europese toegankelijkheidswetgeving"
+meta_title: "Hulp bij de EAA en het BDTO: audit, herstel en verantwoording | Proper Access"
 layout: "agency"
 weight: 12
 date: 2026-08-14
