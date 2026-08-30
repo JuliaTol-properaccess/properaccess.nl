@@ -132,7 +132,7 @@ De [ACM](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdi
 
 Twee dingen gaan hier het vaakst mis. Allebei de voorwaarden moeten gelden, dus het is niet één van de twee. En een balanstotaal voert de ACM niet op als criterium, ook al kom je dat in andere teksten wel tegen.
 
-Zit je boven een van beide grenzen, dan geldt de plicht gewoon.
+Zit je boven een van beide grenzen, dan geldt de plicht gewoon. De ACM zegt dat zelf van de andere kant: heb je 10 of meer mensen in dienst óf een jaaromzet van meer dan 2 miljoen euro, dan moet je e-handelsdienst toegankelijk zijn. Dat is dezelfde regel, alleen andersom opgeschreven.
 {{< /section-card >}}
 
 {{< section-card title="Onevenredige last: onderbouwen" >}}
