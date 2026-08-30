@@ -87,6 +87,13 @@ jobs:
       - name: Genereer rapportoverzicht
         run: python3 scripts/generate_rapporten_index.py
 
+      # Rapporten mogen niet in de zoekmachines staan. Dat regelen we met een noindex
+      # in de <head> van elke rapportpagina; zie de toelichting in static/robots.txt.
+      # De generator van pa-audit zet die niet overal neer, dus de build faalt liever
+      # dan dat er een rapport zonder noindex live gaat.
+      - name: Controleer noindex op de rapporten
+        run: python3 scripts/check_rapporten_noindex.py
+
       - name: Build site
         run: npm run build
 
