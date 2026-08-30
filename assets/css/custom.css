@@ -2556,7 +2556,38 @@ html.dark .tool-cta a {
 
 .tool-heading__intro {
   color: var(--color-text);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Korte puntenlijst onder de intro van een toolpagina */
+.tool-heading__punten {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 2rem;
+  color: var(--color-text);
+}
+
+.tool-heading__punten li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Vinkje uit twee CSS-randen, dus decoratief */
+.tool-heading__punten li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.45em;
+  width: 0.8rem;
+  height: 0.4rem;
+  border-left: 2px solid #A30D4B;
+  border-bottom: 2px solid #A30D4B;
+  transform: rotate(-45deg);
+}
+
+html.dark .tool-heading__punten {
+  color: var(--color-darkmode-text);
 }
 
 html.dark .tool-heading__intro {
