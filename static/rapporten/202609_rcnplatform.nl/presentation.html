@@ -148,6 +148,7 @@ li { margin-bottom: 0.5rem; }
 .stat.medium .num { color: var(--medium); }
 .stat.klein .num { color: var(--klein); }
 .stat.advies .num { color: var(--advies); }
+.type-single { font-size: 1.05rem; color: var(--ink); margin-top: 0.6rem; }
 .chart-wrap { position: relative; height: 50vh; max-height: 380px; margin-top: 1rem; }
 .issue-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; flex: 1; align-items: start; }
 /* Zonder beeldkolom loopt de tekst door over de hele slide, maar niet breder
@@ -241,6 +242,16 @@ li { margin-bottom: 0.5rem; }
 }
 .tools-grid.tools-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 1100px; margin: 0 auto; }
 .tools-grid.tools-grid-4 { grid-template-columns: repeat(4, 1fr); }
+/* Eén tool: geen raster van genummerde kaartjes, maar de opties die bij dit
+   rapport horen. */
+.tool-single { flex: 1; }
+.tool-single h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; margin: 0 0 0.9rem; color: var(--accent); }
+.tool-options { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.7rem 1.2rem; max-width: 1000px; }
+.tool-options li {
+  background: #fff; border: 1px solid #E5E7EB; border-left: 4px solid var(--primary);
+  border-radius: 6px; padding: 0.7rem 1rem; font-weight: 600;
+}
+.tool-options-note { margin-top: 1.1rem; color: #6B7280; font-size: 0.95rem; }
 .tool-card {
   background: #fff;
   border: 1px solid #E5E7EB;
@@ -592,7 +603,10 @@ li { margin-bottom: 0.5rem; }
       </div>
       <div>
         <h3>Type bevindingen</h3>
-        <div class="chart-wrap"><canvas id="type_1"></canvas></div>
+        
+        
+        <p class="type-single">Alle 13 bevindingen zijn van het type <b>Content</b>.</p>
+        
       </div>
     </div>
     <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>03 / 12</span></div>
@@ -857,60 +871,20 @@ li { margin-bottom: 0.5rem; }
   
   <section class="slide tools-slide">
     <div class="eyebrow">Hulpmiddelen</div>
-    <h2>Onze tools, gratis te gebruiken</h2>
-    <p style="font-size: 1.1rem; color: var(--ink); max-width: 70ch; margin-bottom: 1.6rem;">Voor elk type bevinding in dit rapport hebben we een tool gebouwd die je redacteuren en ontwikkelaars helpt om het zelf te controleren, zonder ons erbij te hoeven halen.</p>
-    <div class="tools-grid tools-grid-4">
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/alt-tekst-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">01</div>
-        <div class="tool-name">Alt-tekst checker</div>
-        <div class="tool-desc">Controleert of afbeeldingen een alt-tekst hebben en of die beschrijvend is.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/alt-tekst-keuzehulp/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">02</div>
-        <div class="tool-name">Alt-tekst keuzehulp</div>
-        <div class="tool-desc">Beslisboom: wel of geen alt-tekst, en wat erin?</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/koppenstructuur-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">03</div>
-        <div class="tool-name">Koppenstructuur checker</div>
-        <div class="tool-desc">Toont de koppenstructuur van een pagina en signaleert sprongen of ontbrekende h1.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/kleurcontrast-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">04</div>
-        <div class="tool-name">Kleurcontrast checker</div>
-        <div class="tool-desc">Berekent de contrastverhouding tussen twee kleuren en geeft WCAG-oordeel.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/tabel-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">05</div>
-        <div class="tool-name">Tabel checker</div>
-        <div class="tool-desc">Beoordeelt of HTML-tabellen correct gemarkeerd zijn met th, scope en caption.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/pdf-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">06</div>
-        <div class="tool-name">PDF checker</div>
-        <div class="tool-desc">Controleert PDF's op titel, taal, koppen-tags en leesvolgorde.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/foutmeldingen/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">07</div>
-        <div class="tool-name">Foutmeldingen naslagwerk</div>
-        <div class="tool-desc">Voorbeeldteksten en patronen voor toegankelijke formuliervalidatie.</div>
-      </a>
-      
-      <a class="tool-card" href="https://www.properaccess.nl/tools/link-checker/" target="_blank" rel="noopener">
-        <div class="tool-num" aria-hidden="true">08</div>
-        <div class="tool-name">Link checker</div>
-        <div class="tool-desc">Vindt links zonder duidelijke linktekst, lege links en dubbele linkdoelen.</div>
-      </a>
-      
+
+    <h2>Zelf controleren met de WCAG Radar</h2>
+    <p style="font-size: 1.1rem; color: var(--ink); max-width: 75ch; margin-bottom: 1.6rem;">Een knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, met tabbladen voor redactie, design en development. 28 van de 45 checks zijn gratis en vragen geen account. De Radar rekent alles in je eigen browser uit: hij verstuurt niets en slaat niets op.</p>
+    
+    <div class="tool-single">
+      <h3>De opties die je voor dit rapport nodig hebt</h3>
+      <ul class="tool-options">
+        <li>Sterke nadruk (strong)</li><li>Afbeeldingen en alt-tekst</li><li>Contrast</li><li>Toegankelijke naam</li><li>Koppen en structuur</li><li>Sensory characteristics</li><li>Titels van ingesloten kaders</li>
+      </ul>
+      <p class="tool-options-note">Bij elke bevinding in het rapport staat welke optie je aanzet en waar je op let.</p>
     </div>
-    <div class="tools-cta">Alle tools op één plek: <a href="https://www.properaccess.nl/tools/">properaccess.nl/tools</a></div>
+    
+    <div class="tools-cta">Installeren en aan de slag: <a href="https://www.properaccess.nl/tools/wcag-radar/">properaccess.nl/tools/wcag-radar</a></div>
+
     <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>11 / 12</span></div>
   </section>
   
@@ -1002,7 +976,11 @@ const impactBgByKey = {
   klein: pattern.draw('cross', C.klein),
   advies: pattern.draw('line', C.advies)
 };
-const typeBg = [C.techniek, pattern.draw('diagonal', C.content)];
+const typeBgByKey = {
+  Techniek: C.techniek,
+  Content: pattern.draw('diagonal', C.content),
+  Design: pattern.draw('dot', C.accent)
+};
 
 const baseDoughnut = (labels, data) => ({
   type: 'doughnut',
@@ -1061,14 +1039,7 @@ const baseDoughnut = (labels, data) => ({
   cfg.data.datasets[0].backgroundColor = [impactBgByKey['groot'], impactBgByKey['medium'], impactBgByKey['klein'], impactBgByKey['advies']];
   new Chart(document.getElementById('impact_1'), cfg);
 }
-{
-  const cfg = baseDoughnut(
-    ['Techniek (5)', 'Content (8)'],
-    [5, 8]
-  );
-  cfg.data.datasets[0].backgroundColor = typeBg;
-  new Chart(document.getElementById('type_1'), cfg);
-}
+
 
 
 
