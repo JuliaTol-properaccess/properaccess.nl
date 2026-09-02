@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rijksdienst Caribisch Nederland toegankelijkheidsaudit: Content audit digitale toegankelijkheid van website rcnplatform.nl</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<style>
+:root {
+  --primary: #A30D4B;
+  --primary-soft: #FFB3CB;
+  --ink: #1F2937;
+  --accent: #004050;
+  --surface: #F5F5F5;
+  --white: #FFFFFF;
+  --kritiek: #7B1E12;
+  --groot: #C0392B;
+  --medium: #E67E22;
+  --klein: #B8860B;
+  --advies: #4B5563;
+  --techniek: #A30D4B;
+  --content-color: #004050;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--ink);
+  color: var(--ink);
+  overflow: hidden;
+}
+.color-swatch {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.25em;
+  vertical-align: -0.1em;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 2px;
+}
+.deck { position: relative; width: 100vw; height: 100vh; }
+.slide {
+  position: absolute; inset: 0;
+  background: #fff;
+  padding: 4vh 6vw;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.slide.active { display: flex; }
+h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.15;
+}
+h1 { font-size: clamp(2.4rem, 4.5vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin-bottom: 1.5rem; }
+h3 { font-size: clamp(1.2rem, 1.8vw, 1.6rem); margin-bottom: 0.6rem; }
+p, li { font-size: clamp(1rem, 1.25vw, 1.15rem); line-height: 1.55; }
+ul { padding-left: 1.4rem; }
+li { margin-bottom: 0.5rem; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+.problem-intro {
+  max-width: 75ch;
+  margin: 0.4rem 0 1.4rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #374151;
+}
+.problem-intro code {
+  font-size: 0.92em;
+}
+.controls {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: flex; gap: 0.5rem; align-items: center;
+  background: rgba(31, 41, 55, 0.92); color: #fff;
+  padding: 0.5rem 0.9rem; border-radius: 999px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600; font-size: 0.85rem; z-index: 100;
+}
+.controls button {
+  background: transparent; border: 1px solid rgba(255,255,255,0.3);
+  color: #fff; width: 2rem; height: 2rem; border-radius: 50%;
+  cursor: pointer; font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.controls button:hover { background: var(--primary); border-color: var(--primary); }
+.controls button:focus-visible { outline: 3px solid var(--primary-soft); outline-offset: 2px; }
+.counter { padding: 0 0.4rem; }
+.cover { background: linear-gradient(135deg, var(--ink) 0%, var(--accent) 100%); color: #fff; justify-content: center; }
+.cover h1, .cover h2, .cover .eyebrow { color: #fff; }
+.cover .eyebrow { color: var(--primary-soft); }
+.cover .meta { margin-top: 2rem; font-size: 1.1rem; opacity: 0.85; }
+.cover .logo {
+  position: absolute; top: 3rem; right: 4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800; letter-spacing: 0.05em;
+  color: #fff; font-size: 0.95rem;
+}
+.cover .logo .dot { color: var(--primary); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; }
+.card {
+  background: var(--surface);
+  border-left: 5px solid var(--primary);
+  padding: 1.5rem 1.8rem; border-radius: 6px;
+}
+.card h3 { margin-bottom: 1rem; }
+.card .platform-tag {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem; border-radius: 999px;
+  margin-bottom: 0.8rem;
+  background: var(--ink); color: #fff;
+}
+.stat-row { display: flex; gap: 1.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+.stat {
+  flex: 1 1 120px; background: #fff;
+  border: 1px solid #E5E7EB; border-radius: 8px;
+  padding: 1rem 1.2rem;
+}
+.stat .num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800; font-size: 2.2rem; line-height: 1;
+  color: var(--ink);
+}
+.stat .label { font-size: 0.85rem; color: #6B7280; margin-top: 0.4rem; }
+.stat.kritiek .num { color: var(--kritiek); }
+.stat.groot .num { color: var(--groot); }
+.stat.medium .num { color: var(--medium); }
+.stat.klein .num { color: var(--klein); }
+.stat.advies .num { color: var(--advies); }
+.chart-wrap { position: relative; height: 50vh; max-height: 380px; margin-top: 1rem; }
+.issue-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; flex: 1; align-items: start; }
+/* Zonder beeldkolom loopt de tekst door over de hele slide, maar niet breder
+   dan prettig leest. */
+.issue-layout.text-only { grid-template-columns: minmax(0, 90ch); }
+.issue-text { display: flex; flex-direction: column; }
+.issue-text .meta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0.5rem 0 1.2rem; }
+.tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem; border-radius: 4px;
+}
+.tag.impact-groot { background: #FDE2DE; color: var(--ink); border-left: 4px solid var(--groot); padding-left: 0.5rem; }
+.tag.impact-medium { background: #FCE5CB; color: var(--ink); border-left: 4px solid var(--medium); padding-left: 0.5rem; }
+.tag.impact-klein { background: #FFF8DC; color: var(--ink); border-left: 4px solid var(--klein); padding-left: 0.5rem; }
+/* ACM-schaal sinds 30 augustus 2026; de drie regels hierboven blijven staan
+   voor gearchiveerde rapporten met de oude labels. */
+.tag.impact-kritiek { background: #F7D7D1; color: var(--ink); border-left: 4px solid var(--kritiek); padding-left: 0.5rem; }
+.tag.impact-serieus { background: #FDE2DE; color: var(--ink); border-left: 4px solid var(--groot); padding-left: 0.5rem; }
+.tag.impact-matig { background: #FCE5CB; color: var(--ink); border-left: 4px solid var(--medium); padding-left: 0.5rem; }
+.tag.impact-advies { background: #EEF1F4; color: var(--ink); border-left: 4px solid var(--advies); padding-left: 0.5rem; }
+.tag.wcag { background: var(--surface); color: var(--ink); }
+.tag.platform { background: var(--ink); color: #fff; }
+.user-story {
+  background: var(--surface);
+  border-left: 4px solid var(--primary);
+  padding: 1rem 1.2rem; margin-top: 1rem;
+  font-style: italic; font-size: 0.95rem; border-radius: 4px;
+}
+.user-story::before {
+  content: "User story"; display: block; font-style: normal;
+  font-weight: 700; font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--primary); margin-bottom: 0.4rem;
+}
+.issue-image {
+  background: var(--surface); border-radius: 8px;
+  padding: 1rem; display: flex; align-items: center;
+  justify-content: center; height: 100%; max-height: 60vh;
+}
+.issue-image img { max-width: 100%; max-height: 55vh; object-fit: contain; border-radius: 4px; }
+.issue-image .caption { display: block; text-align: center; margin-top: 0.5rem; font-size: 0.8rem; color: #6B7280; }
+.problems-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; flex: 1; }
+.problem-card {
+  background: #fff; border: 1px solid #E5E7EB;
+  border-top: 4px solid var(--primary); border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+}
+.problem-card .num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800; font-size: 2rem;
+  color: var(--primary); line-height: 1;
+}
+.problem-card h3 { margin: 0.5rem 0 0.6rem; font-size: 1.1rem; }
+.problem-card p { font-size: 0.92rem; color: #4B5563; }
+.conclusion-box {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 8%, white) 0%, color-mix(in srgb, var(--primary) 14%, white) 100%);
+  border-left: 6px solid var(--primary);
+  padding: 1.8rem 2rem; border-radius: 8px; margin-top: 1rem;
+}
+.next-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 1.5rem; }
+.step {
+  background: #fff; border: 1px solid #E5E7EB;
+  border-radius: 8px; padding: 1.2rem 1.4rem;
+}
+.step .step-num {
+  display: inline-block; background: var(--primary);
+  color: #fff; width: 28px; height: 28px;
+  border-radius: 50%; text-align: center; line-height: 28px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; margin-bottom: 0.7rem; font-size: 0.9rem;
+}
+.step h3 { font-size: 1.05rem; }
+.slide-footer {
+  margin-top: auto; padding-top: 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.8rem; color: #4B5563;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.slide-footer .brand-name { color: var(--primary); font-weight: 700; }
+.tools-slide {
+  background: linear-gradient(135deg, #FFF8FB 0%, #FFFFFF 60%);
+}
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  flex: 1;
+  align-content: start;
+}
+.tools-grid.tools-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 1100px; margin: 0 auto; }
+.tools-grid.tools-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.tool-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  position: relative;
+}
+.tool-card::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 10px 10px 0 0;
+}
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+  border-color: var(--primary);
+}
+.tool-card:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+.tool-num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--primary);
+  letter-spacing: 0.08em;
+  margin-top: 0.15rem;
+}
+.tool-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--primary);
+}
+.tool-desc {
+  font-size: 0.85rem;
+  color: #374151;
+  line-height: 1.4;
+}
+.tools-cta {
+  margin-top: 1.4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-align: center;
+}
+.tools-cta a { color: var(--primary); text-decoration: underline; }
+@media (max-width: 1100px) {
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.contact-block {
+  margin-top: 2rem; padding: 1.5rem 2rem;
+  background: var(--ink); color: #fff;
+  border-radius: 8px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.contact-block .logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+}
+.contact-block .logo .dot { color: var(--primary-soft); }
+.criteria-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; flex: 1; }
+.criteria-card {
+  background: var(--surface); border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  border: 2px solid transparent;
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.criteria-card.worst { border-color: var(--primary); box-shadow: 0 4px 18px rgba(163, 13, 75, 0.18); }
+.criteria-card .head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem;
+}
+.criteria-card h3 {
+  font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--primary); margin: 0;
+}
+.criteria-card.worst h3 { color: var(--primary); }
+.criteria-card .pct {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800; font-size: 1.6rem; line-height: 1;
+  color: var(--ink);
+}
+.criteria-card.worst .pct { color: var(--primary); }
+.criteria-card .pct .label { display: block; font-size: 0.7rem; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; text-align: right; }
+.criteria-card .ratio { font-size: 0.85rem; color: #4B5563; }
+.criteria-card .sc-section { display: flex; flex-direction: column; gap: 0.35rem; }
+.criteria-card .sc-section .sec-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: #6B7280; }
+.criteria-card .sc-list { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.criteria-card .sc {
+  background: #fff; border: 1px solid #E5E7EB;
+  padding: 0.22rem 0.55rem; border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.78rem; color: #4B5563;
+}
+.criteria-card .sc.failed { background: #FDE2DE; color: var(--groot); border-color: rgba(192, 57, 43, 0.25); font-weight: 600; }
+.criteria-card .sc.passed { color: #4B5563; }
+
+/* Sample / steekproef list: 2-koloms voor websites */
+.sample-card {
+  background: var(--surface); border-left: 5px solid var(--primary);
+  padding: 1.4rem 1.6rem; border-radius: 6px; margin-top: 0.5rem;
+}
+.sample-card h3 { margin-bottom: 0.8rem; font-size: 1.15rem; }
+.sample-list {
+  list-style: none; padding: 0; margin: 0;
+  column-count: 2; column-gap: 2rem;
+}
+.sample-list li {
+  break-inside: avoid; margin-bottom: 0.45rem;
+  display: flex; align-items: baseline; gap: 0.5rem;
+  font-size: 0.92rem; line-height: 1.4;
+}
+.sample-list .num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; color: var(--primary); font-size: 0.78rem;
+  min-width: 1.4rem;
+}
+.sample-list .pdf-tag {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: #fff; background: var(--accent);
+  padding: 0.1rem 0.45rem; border-radius: 3px; margin-right: 0.35rem;
+}
+
+/* Top-overview grid: strikt 3 per rij voor 6 thema's */
+.problems-list-3col {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem 1.2rem; flex: 1;
+}
+.problems-list-3col .problem-card { padding: 1rem 1.2rem; }
+.problems-list-3col .problem-card .num { font-size: 1.6rem; }
+.problems-list-3col .problem-card h3 { font-size: 1rem; margin: 0.4rem 0 0.5rem; }
+.problems-list-3col .problem-card p { font-size: 0.85rem; line-height: 1.45; }
+@media print {
+  body { background: #fff; }
+  .controls { display: none; }
+  .slide { display: flex !important; position: relative; page-break-after: always; height: 100vh; }
+}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  
+  <section class="slide cover active">
+    <div class="logo">PROPER<span class="dot">•</span>ACCESS</div>
+    <div class="eyebrow">Toegankelijkheidsaudit · 8 september 2026</div>
+    <h1>Content audit digitale toegankelijkheid van website rcnplatform.nl</h1>
+    <h2 style="font-weight: 500; opacity: 0.9; margin-top: 1rem;">Status, grootste problemen en vervolgstappen</h2>
+    <div class="meta">Onderzocht tussen 25 augustus 2026 en 8 september 2026 · Rapportdatum 8 september 2026</div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow">Scope</div>
+    <h2>Wat hebben we onderzocht</h2>
+    <div class="">
+      
+      <div class="card">
+        <span class="platform-tag">Web</span>
+        <h3>Content audit digitale toegankelijkheid van website rcnplatform.nl</h3>
+        <ul>
+          
+          
+          
+          <li><b>Pagina's:</b> 20 (geselecteerde steekproef, zie hieronder)</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+
+    
+    <div class="sample-card">
+      <h3>Steekproef</h3>
+      <ol class="sample-list">
+        
+        <li>
+          <span class="num">01.</span>
+          
+          <a href="https://rcnplatform.nl/welcome" target="_blank" rel="noopener">Home</a>
+        </li>
+        
+        <li>
+          <span class="num">02.</span>
+          
+          <a href="https://rcnplatform.nl/groups/10-over-rcn/welcome" target="_blank" rel="noopener">Over de Rijksdienst Caribisch Nederland</a>
+        </li>
+        
+        <li>
+          <span class="num">03.</span>
+          
+          <a href="https://rcnplatform.nl/groups/13-faq/welcome" target="_blank" rel="noopener">Welkom in de FAQ</a>
+        </li>
+        
+        <li>
+          <span class="num">04.</span>
+          
+          <a href="https://rcnplatform.nl/groups/112-vacatures/welcome" target="_blank" rel="noopener">Vacatures</a>
+        </li>
+        
+        <li>
+          <span class="num">05.</span>
+          
+          <a href="https://rcnplatform.nl/groups/16-rcn-nieuws/welcome" target="_blank" rel="noopener">Nieuws</a>
+        </li>
+        
+        <li>
+          <span class="num">06.</span>
+          
+          <a href="https://rcnplatform.nl/groups/46-mijn-werk/welcome" target="_blank" rel="noopener">Mijn werk</a>
+        </li>
+        
+        <li>
+          <span class="num">07.</span>
+          
+          <a href="https://rcnplatform.nl/groups/49-sso-communicatie/welcome" target="_blank" rel="noopener">Welkom bij SSO-communicatie</a>
+        </li>
+        
+        <li>
+          <span class="num">08.</span>
+          
+          <a href="https://rcnplatform.nl/groups/49-sso-communicatie/timeline" target="_blank" rel="noopener">Timeline</a>
+        </li>
+        
+        <li>
+          <span class="num">09.</span>
+          
+          <a href="https://rcnplatform.nl/groups/49-sso-communicatie/introductions" target="_blank" rel="noopener">Leden</a>
+        </li>
+        
+        <li>
+          <span class="num">10.</span>
+          
+          <a href="https://rcnplatform.nl/groups" target="_blank" rel="noopener">Groepen</a>
+        </li>
+        
+        <li>
+          <span class="num">11.</span>
+          
+          <a href="https://rcnplatform.nl/calendar_events" target="_blank" rel="noopener">Agenda</a>
+        </li>
+        
+        <li>
+          <span class="num">12.</span>
+          
+          <a href="https://rcnplatform.nl/calendar_events/268" target="_blank" rel="noopener">Agenda-item</a>
+        </li>
+        
+        <li>
+          <span class="num">13.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts" target="_blank" rel="noopener">Bijdragen</a>
+        </li>
+        
+        <li>
+          <span class="num">14.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/11969" target="_blank" rel="noopener">Individuele bijdrage</a>
+        </li>
+        
+        <li>
+          <span class="num">15.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/11333" target="_blank" rel="noopener">Onze dienstverlening</a>
+        </li>
+        
+        <li>
+          <span class="num">16.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/2811" target="_blank" rel="noopener">Een bericht van 1 november</a>
+        </li>
+        
+        <li>
+          <span class="num">17.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/742" target="_blank" rel="noopener">Analyseren en signaleren</a>
+        </li>
+        
+        <li>
+          <span class="num">18.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/631" target="_blank" rel="noopener">RCN huisstijl</a>
+        </li>
+        
+        <li>
+          <span class="num">19.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/634" target="_blank" rel="noopener">SocialMediaBeleid</a>
+        </li>
+        
+        <li>
+          <span class="num">20.</span>
+          
+          <a href="https://rcnplatform.nl/thoughts/784" target="_blank" rel="noopener">Communicatie-advies</a>
+        </li>
+        
+      </ol>
+    </div>
+    
+
+    <div class="card" style="margin-top: 1.2rem;">
+      <h3>Tools en hulpsoftware</h3>
+      <ul style="columns: 2; column-gap: 2rem;">
+        
+        <li><b>Browsers:</b> Firefox, Chrome, Safari (laatste versies)</li>
+        <li><b>Schermlezers:</b> NVDA + Firefox (Windows), VoiceOver + Safari (macOS)</li>
+        <li><b>Toetsenbord:</b> navigeren zonder computermuis</li>
+        <li><b>Spraakbesturing:</b> Voice Control (macOS), Spraakherkenning (Windows)</li>
+        <li><b>Contrast:</b> Colour Contrast Analyser (CCA)</li>
+        <li><b>Zoom:</b> 200% en 400% bij 1280×1024</li>
+        <li><b>DevTools:</b> axe DevTools, accessibility inspector</li>
+        <li><b>Inhoud-check:</b> handmatige review op begrijpelijkheid en taalniveau</li>
+        
+      </ul>
+    </div>
+
+    <div style="margin-top: 1.2rem; padding: 1rem 1.5rem; background: var(--surface); border-radius: 6px;">
+      <p><b>Norm:</b> WCAG 2.2 niveau AA (55 succescriteria) · <b>Methode:</b> WCAG-EM, aanbevolen door DigiToegankelijk</p>
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>02 / 12</span></div>
+  </section>
+
+  
+  
+  <section class="slide">
+    <div class="eyebrow">Web · Resultaat</div>
+    <h2>Content audit digitale toegankelijkheid van website rcnplatform.nl: 13 bevindingen</h2>
+    <div class="stat-row">
+      <div class="stat groot"><div class="num">1</div><div class="label">Serieus</div></div>
+      <div class="stat medium"><div class="num">8</div><div class="label">Matig</div></div>
+      <div class="stat klein"><div class="num">3</div><div class="label">Klein</div></div>
+      <div class="stat advies"><div class="num">1</div><div class="label">Advies</div></div>
+
+      <div class="stat"><div class="num">8</div><div class="label">WCAG-criteria geraakt</div></div>
+    </div>
+    <div class="grid-2" style="flex: 1;">
+      <div>
+        <h3>Verdeling naar impact</h3>
+        <div class="chart-wrap"><canvas id="impact_1"></canvas></div>
+      </div>
+      <div>
+        <h3>Type bevindingen</h3>
+        <div class="chart-wrap"><canvas id="type_1"></canvas></div>
+      </div>
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>03 / 12</span></div>
+  </section>
+  
+
+  
+  
+
+  
+  
+  <section class="slide">
+    <div class="eyebrow">Resultaat per WCAG-principe</div>
+    <h2>Welke richtlijnen lopen mis</h2>
+    <p style="margin-bottom: 1.2rem; max-width: 70ch;">8 van de 55 succescriteria niet behaald. De richtlijn met het laagste percentage is gemarkeerd.</p>
+    <div class="criteria-grid">
+      
+      <div class="criteria-card">
+        <div class="head">
+          <h3>Waarneembaar</h3>
+          <div class="pct">75%<span class="label">behaald</span></div>
+        </div>
+        <div class="ratio">15 van de 20 succescriteria behaald · 5 niet</div>
+        
+        <div class="sc-section">
+          <span class="sec-label">Niet behaald</span>
+          <div class="sc-list">
+            <span class="sc failed">1.1.1</span><span class="sc failed">1.2.2</span><span class="sc failed">1.3.1</span><span class="sc failed">1.3.3</span><span class="sc failed">1.4.3</span>
+          </div>
+        </div>
+        
+        
+        <div class="sc-section">
+          <span class="sec-label">Wel behaald</span>
+          <div class="sc-list">
+            <span class="sc passed">1.2.1</span><span class="sc passed">1.2.3</span><span class="sc passed">1.2.4</span><span class="sc passed">1.2.5</span><span class="sc passed">1.3.2</span><span class="sc passed">1.3.4</span><span class="sc passed">1.3.5</span><span class="sc passed">1.4.1</span><span class="sc passed">1.4.2</span><span class="sc passed">1.4.4</span><span class="sc passed">1.4.5</span><span class="sc passed">1.4.10</span><span class="sc passed">1.4.11</span><span class="sc passed">1.4.12</span><span class="sc passed">1.4.13</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="criteria-card">
+        <div class="head">
+          <h3>Bedienbaar</h3>
+          <div class="pct">90%<span class="label">behaald</span></div>
+        </div>
+        <div class="ratio">18 van de 20 succescriteria behaald · 2 niet</div>
+        
+        <div class="sc-section">
+          <span class="sec-label">Niet behaald</span>
+          <div class="sc-list">
+            <span class="sc failed">2.4.4</span><span class="sc failed">2.4.6</span>
+          </div>
+        </div>
+        
+        
+        <div class="sc-section">
+          <span class="sec-label">Wel behaald</span>
+          <div class="sc-list">
+            <span class="sc passed">2.1.1</span><span class="sc passed">2.1.2</span><span class="sc passed">2.1.4</span><span class="sc passed">2.2.1</span><span class="sc passed">2.2.2</span><span class="sc passed">2.3.1</span><span class="sc passed">2.4.1</span><span class="sc passed">2.4.2</span><span class="sc passed">2.4.3</span><span class="sc passed">2.4.5</span><span class="sc passed">2.4.7</span><span class="sc passed">2.4.11</span><span class="sc passed">2.5.1</span><span class="sc passed">2.5.2</span><span class="sc passed">2.5.3</span><span class="sc passed">2.5.4</span><span class="sc passed">2.5.7</span><span class="sc passed">2.5.8</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="criteria-card">
+        <div class="head">
+          <h3>Begrijpelijk</h3>
+          <div class="pct">100%<span class="label">behaald</span></div>
+        </div>
+        <div class="ratio">13 van de 13 succescriteria behaald · 0 niet</div>
+        
+        
+        <div class="sc-section">
+          <span class="sec-label">Wel behaald</span>
+          <div class="sc-list">
+            <span class="sc passed">3.1.1</span><span class="sc passed">3.1.2</span><span class="sc passed">3.2.1</span><span class="sc passed">3.2.2</span><span class="sc passed">3.2.3</span><span class="sc passed">3.2.4</span><span class="sc passed">3.2.6</span><span class="sc passed">3.3.1</span><span class="sc passed">3.3.2</span><span class="sc passed">3.3.3</span><span class="sc passed">3.3.4</span><span class="sc passed">3.3.7</span><span class="sc passed">3.3.8</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="criteria-card worst">
+        <div class="head">
+          <h3>Robuust</h3>
+          <div class="pct">50%<span class="label">behaald</span></div>
+        </div>
+        <div class="ratio">1 van de 2 succescriteria behaald · 1 niet</div>
+        
+        <div class="sc-section">
+          <span class="sec-label">Niet behaald</span>
+          <div class="sc-list">
+            <span class="sc failed">4.1.2</span>
+          </div>
+        </div>
+        
+        
+        <div class="sc-section">
+          <span class="sec-label">Wel behaald</span>
+          <div class="sc-list">
+            <span class="sc passed">4.1.3</span>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>04 / 12</span></div>
+  </section>
+  
+
+  
+  <section class="slide">
+    <div class="eyebrow">Hoofdthema's</div>
+    <h2>De 5 grootste problemen</h2>
+    <p style="margin-bottom: 1.2rem; max-width: 70ch;">Deze thema's verklaren samen het grootste deel van de bevindingen. Ze komen vaak terug en raken iedereen die afhankelijk is van hulpsoftware.</p>
+    <div class="problems-list-3col">
+      
+      <div class="problem-card">
+        <div class="num">1</div>
+        <h3>Afbeeldingen zonder alt-tekst</h3>
+        <p>Informatieve afbeeldingen en iconen hebben geen tekstalternatief. De inhoud is daardoor onbereikbaar voor schermlezer-gebruikers.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="num">2</div>
+        <h3>Info en relaties ontbreken in de code</h3>
+        <p>Wat visueel duidelijk is, zoals een groep bij elkaar horende velden, een kop of een lijst, staat niet in de HTML. Schermlezers missen die samenhang.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="num">3</div>
+        <h3>Ingesloten inhoud zonder naam</h3>
+        <p>Een iframe met een video of een kaart heeft geen title-attribuut. De schermlezer kondigt het kader aan zonder te zeggen wat erin zit.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="num">4</div>
+        <h3>Onvoldoende kleurcontrast</h3>
+        <p>Tekst en interactieve elementen halen de minimale contrastverhouding niet. Onleesbaar voor slechtzienden of in fel licht.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="num">5</div>
+        <h3>Ontoegankelijke multimedia</h3>
+        <p>Video's zonder ondertiteling, geen tekstalternatief voor visuele info. Bezoekers die niet kunnen horen of niet kunnen zien missen het verhaal.</p>
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>05 / 12</span></div>
+  </section>
+
+  
+  
+  <section class="slide">
+    <div class="eyebrow">Probleem 1</div>
+    <h2>Afbeeldingen zonder alt-tekst</h2>
+    <div class="meta-row">
+      <span class="tag impact-matig">Impact: Matig</span>
+      <span class="tag wcag">WCAG 1.1.1</span>
+      <span class="tag platform">Web</span>
+    </div>
+    <div class="issue-layout text-only">
+      <div class="issue-text">
+        <p class="problem-intro">Afbeeldingen die informatie dragen, moeten een tekstalternatief krijgen. Zonder dat alternatief bestaan ze niet voor schermlezer-gebruikers. Puur decoratieve afbeeldingen krijgen juist een leeg alt-attribuut, zodat de schermlezer ze overslaat.</p>
+        <div><p>Op deze pagina werkt een afbeelding onder "Al onze diensten" als een link, maar het <code>alt</code>-attribuut ontbreekt. De link bestaat daardoor uitsluitend uit een afbeelding zonder tekstalternatief en heeft geen inhoud voor hulpsoftware. Ook is niet duidelijk waar de link naartoe gaat. De link heeft zo geen toegankelijke naam en voldoet daarmee ook niet aan succescriterium 4.1.2.</p></div>
+        
+        <div class="user-story">Ik lees de website met een schermlezer. Als ik een afbeelding tegenkom die als link werkt, maakt de toegankelijke naam niet duidelijk waar die naartoe gaat. Ik verwacht dat elke link een duidelijke omschrijving heeft zodat ik weet waar die naartoe gaat.</div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>06 / 12</span></div>
+  </section>
+  
+  <section class="slide">
+    <div class="eyebrow">Probleem 2</div>
+    <h2>Info en relaties ontbreken in de code</h2>
+    <div class="meta-row">
+      <span class="tag impact-klein">Impact: Klein</span>
+      <span class="tag wcag">WCAG 1.3.1</span>
+      <span class="tag platform">Web</span>
+    </div>
+    <div class="issue-layout text-only">
+      <div class="issue-text">
+        <p class="problem-intro">Informatie en relaties die je visueel ziet, zoals dat een aantal velden bij elkaar horen, dat iets een kop is of dat iets een lijst is, moeten ook in de HTML staan. Anders is de samenhang alleen toegankelijk voor wie het scherm kan zien.</p>
+        <div><p>Op deze pagina is het <code>strong</code>-element gebruikt om tekst visueel te laten opvallen, terwijl de inhoud die nadruk niet nodig heeft. Dat gebeurt bij de eerste alinea van elke sectie en bij de koppen in het artikel.</p></div>
+        
+        <div class="user-story">Ik lees de website met een schermlezer. Ik verwacht dat alleen woorden die echt belangrijk zijn een andere klemtoon krijgen.</div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>07 / 12</span></div>
+  </section>
+  
+  <section class="slide">
+    <div class="eyebrow">Probleem 3</div>
+    <h2>Ingesloten inhoud zonder naam</h2>
+    <div class="meta-row">
+      <span class="tag impact-serieus">Impact: Serieus</span>
+      <span class="tag wcag">WCAG 4.1.2</span>
+      <span class="tag platform">Web</span>
+    </div>
+    <div class="issue-layout text-only">
+      <div class="issue-text">
+        <p class="problem-intro">Een iframe is voor een schermlezer een apart kader in de pagina. Zonder title-attribuut hoort de gebruiker alleen dat er een kader is, niet wat erin zit. Hij kan dan niet bepalen of het de moeite waard is om erin te navigeren.</p>
+        <div><p>Op deze pagina staat een <code>iframe</code>-element met de video, en dat element heeft geen <code>title</code>-attribuut. Een schermlezer kan het doel van het <code>iframe</code> daardoor niet aankondigen. Bezoekers horen niet wat er in het kader zit en kunnen niet bepalen of het de moeite waard is om erin te navigeren.</p></div>
+        
+        <div class="user-story">Ik lees de website met een schermlezer. Als ik een ingesloten kader tegenkom, hoor ik geen omschrijving en weet ik niet wat erin staat. Ik verwacht dat mijn schermlezer een duidelijke naam voorleest, zodat ik kan besluiten of ik het kader in ga.</div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>08 / 12</span></div>
+  </section>
+  
+  <section class="slide">
+    <div class="eyebrow">Probleem 4</div>
+    <h2>Onvoldoende kleurcontrast</h2>
+    <div class="meta-row">
+      <span class="tag impact-matig">Impact: Matig</span>
+      <span class="tag wcag">WCAG 1.4.3 / 1.4.11</span>
+      <span class="tag platform">Web</span>
+    </div>
+    <div class="issue-layout text-only">
+      <div class="issue-text">
+        <p class="problem-intro">Niet iedereen heeft perfecte ogen, denk aan slechtzienden of iedereen die de site in fel zonlicht bekijkt. Met genoeg contrast (4,5:1 voor standaard tekst, 3,0:1 voor grote tekst, randen en iconen) blijven knoppen en links voor iedereen leesbaar.</p>
+        <div><p>Op deze pagina staat een carrousel met witte tekst op wisselende afbeeldingen. Op de slides met een lichtgrijze achtergrond heeft die tekst een contrastverhouding van 2,3:1. Dat is te weinig, waardoor de tekst niet voor iedereen leesbaar is.</p></div>
+        
+        <div class="user-story">Ik heb een visuele beperking. Als tekst te weinig contrast heeft met de achtergrond, is die moeilijk te lezen. Ik verwacht dat tekst genoeg contrast heeft om goed leesbaar te zijn.</div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>09 / 12</span></div>
+  </section>
+  
+  <section class="slide">
+    <div class="eyebrow">Probleem 5</div>
+    <h2>Ontoegankelijke multimedia</h2>
+    <div class="meta-row">
+      <span class="tag impact-matig">Impact: Matig</span>
+      <span class="tag wcag">WCAG 1.2.2 / 1.2.3 / 1.2.5</span>
+      <span class="tag platform">Web</span>
+    </div>
+    <div class="issue-layout text-only">
+      <div class="issue-text">
+        <p class="problem-intro">Wie doof is, mist het geluid. Wie blind is, mist de visuele context. Een toegankelijke video heeft daarom altijd ondertiteling én een tekstalternatief voor wat niet wordt uitgesproken.</p>
+        <div><p>Op deze pagina staat een video met gesproken tekst, maar de ondertiteling ontbreekt. Bezoekers die doof of slechthorend zijn hebben die ondertiteling nodig om de inhoud van de video te volgen. Naast de gesproken woorden hoort daar ook belangrijk geluid bij, en de namen van sprekers die niet in beeld zijn.</p></div>
+        
+        <div class="user-story">Ik ben doof of slechthorend. Als ik een video bekijk, mis ik alles wat er wordt gezegd, omdat er geen ondertiteling is. Ik verwacht dat elke video ondertiteling heeft met alle gesproken tekst.</div>
+        
+      </div>
+      
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>10 / 12</span></div>
+  </section>
+  
+
+  
+  
+  <section class="slide tools-slide">
+    <div class="eyebrow">Hulpmiddelen</div>
+    <h2>Onze tools, gratis te gebruiken</h2>
+    <p style="font-size: 1.1rem; color: var(--ink); max-width: 70ch; margin-bottom: 1.6rem;">Voor elk type bevinding in dit rapport hebben we een tool gebouwd die je redacteuren en ontwikkelaars helpt om het zelf te controleren, zonder ons erbij te hoeven halen.</p>
+    <div class="tools-grid tools-grid-4">
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/alt-tekst-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">01</div>
+        <div class="tool-name">Alt-tekst checker</div>
+        <div class="tool-desc">Controleert of afbeeldingen een alt-tekst hebben en of die beschrijvend is.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/alt-tekst-keuzehulp/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">02</div>
+        <div class="tool-name">Alt-tekst keuzehulp</div>
+        <div class="tool-desc">Beslisboom: wel of geen alt-tekst, en wat erin?</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/koppenstructuur-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">03</div>
+        <div class="tool-name">Koppenstructuur checker</div>
+        <div class="tool-desc">Toont de koppenstructuur van een pagina en signaleert sprongen of ontbrekende h1.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/kleurcontrast-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">04</div>
+        <div class="tool-name">Kleurcontrast checker</div>
+        <div class="tool-desc">Berekent de contrastverhouding tussen twee kleuren en geeft WCAG-oordeel.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/tabel-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">05</div>
+        <div class="tool-name">Tabel checker</div>
+        <div class="tool-desc">Beoordeelt of HTML-tabellen correct gemarkeerd zijn met th, scope en caption.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/pdf-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">06</div>
+        <div class="tool-name">PDF checker</div>
+        <div class="tool-desc">Controleert PDF's op titel, taal, koppen-tags en leesvolgorde.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/foutmeldingen/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">07</div>
+        <div class="tool-name">Foutmeldingen naslagwerk</div>
+        <div class="tool-desc">Voorbeeldteksten en patronen voor toegankelijke formuliervalidatie.</div>
+      </a>
+      
+      <a class="tool-card" href="https://www.properaccess.nl/tools/link-checker/" target="_blank" rel="noopener">
+        <div class="tool-num" aria-hidden="true">08</div>
+        <div class="tool-name">Link checker</div>
+        <div class="tool-desc">Vindt links zonder duidelijke linktekst, lege links en dubbele linkdoelen.</div>
+      </a>
+      
+    </div>
+    <div class="tools-cta">Alle tools op één plek: <a href="https://www.properaccess.nl/tools/">properaccess.nl/tools</a></div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>11 / 12</span></div>
+  </section>
+  
+
+  
+  <section class="slide">
+    <div class="eyebrow">Vervolgstappen</div>
+    <h2>Wat raden we aan</h2>
+    <div class="conclusion-box">
+      <p><b>Op dit moment voldoet Content audit digitale toegankelijkheid van website rcnplatform.nl niet aan WCAG 2.2 AA.</b> Het goede nieuws: de meeste problemen zijn structureel, ze komen vele malen voor maar hebben dezelfde oplossing. Er is slechts één aanpassing nodig om deze problemen integraal op te lossen.</p>
+    </div>
+    <div class="next-steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <h3>Pak de structurele issues eerst</h3>
+        <p>De 5 hoofdthema's verklaren het grootste deel van de bevindingen. Eén aanpassing lost veel tegelijk op.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <h3>Gebruik het Plan van Aanpak</h3>
+        <p>Bij het rapport zit een Plan van Aanpak met concrete oplossingen, gegroepeerd naar wie wat moet doen: designer, ontwikkelaar, redactie.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <h3>Plan een hercontrole</h3>
+        <p>Na het oplossen kunnen we hertesten zodat een actuele toegankelijkheidsverklaring gepubliceerd kan worden.</p>
+      </div>
+    </div>
+    <div class="contact-block">
+      <div>
+        <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.3rem;">Vragen?</div>
+        <div style="opacity: 0.85; margin-top: 0.3rem;">Volledige rapporten en Plan van Aanpak via Proper Access</div>
+      </div>
+      <div style="text-align: right; font-family: 'Plus Jakarta Sans', sans-serif;">
+        <div class="logo">PROPER<span class="dot">•</span>ACCESS</div>
+        <div style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">properaccess.nl · 085 5055 890</div>
+      </div>
+    </div>
+    <div class="slide-footer"><span><span class="brand-name">Proper Access</span> · Rijksdienst Caribisch Nederland</span><span>12 / 12</span></div>
+  </section>
+
+</div>
+
+<div class="controls">
+  <button id="prev" aria-label="Vorige slide">‹</button>
+  <span class="counter"><span id="cur">1</span> / <span id="total">12</span></span>
+  <button id="next" aria-label="Volgende slide">›</button>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+function go(n) {
+  current = Math.max(0, Math.min(slides.length - 1, n));
+  slides.forEach((s, i) => s.classList.toggle('active', i === current));
+  document.getElementById('cur').textContent = current + 1;
+  history.replaceState(null, '', '#' + (current + 1));
+}
+document.getElementById('next').onclick = () => go(current + 1);
+document.getElementById('prev').onclick = () => go(current - 1);
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'BUTTON') return;
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(current + 1); }
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(current - 1); }
+  if (e.key === 'Home') go(0);
+  if (e.key === 'End') go(slides.length - 1);
+});
+const hash = parseInt(location.hash.replace('#', ''), 10);
+if (!isNaN(hash) && hash > 0 && hash <= slides.length) go(hash - 1);
+
+// === Charts: kleur + patroon + vorm + datalabel (WCAG 1.4.1) ===
+Chart.register(ChartDataLabels);
+
+const C = {
+  groot: '#C0392B',
+  medium: '#E67E22',
+  klein: '#B8860B',
+  techniek: '#A30D4B',
+  content: '#004050',
+  ink: '#1F2937',
+  primary: '#A30D4B'
+};
+
+// Patroon-lagen per impactniveau, elk met een eigen vulling
+const impactBgByKey = {
+  kritiek: C.kritiek,
+  groot: pattern.draw('diagonal', C.groot),
+  medium: pattern.draw('dot', C.medium),
+  klein: pattern.draw('cross', C.klein),
+  advies: pattern.draw('line', C.advies)
+};
+const typeBg = [C.techniek, pattern.draw('diagonal', C.content)];
+
+const baseDoughnut = (labels, data) => ({
+  type: 'doughnut',
+  data: {
+    labels: labels,
+    datasets: [{ data: data, borderWidth: 0, borderColor: '#fff' }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '55%',
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          font: { family: 'Nunito', size: 13 },
+          padding: 14,
+          usePointStyle: true,
+          pointStyleWidth: 16,
+          generateLabels: (chart) => {
+            const data = chart.data;
+            const styles = ['rect', 'triangle', 'circle', 'rectRot'];
+            return data.labels.map((label, i) => ({
+              text: label,
+              fillStyle: data.datasets[0].backgroundColor[i],
+              strokeStyle: C.ink,
+              lineWidth: 1,
+              pointStyle: styles[i % styles.length],
+              hidden: false,
+              index: i
+            }));
+          }
+        }
+      },
+      datalabels: {
+        color: '#fff',
+        font: { family: 'Plus Jakarta Sans', weight: 'bold', size: 16 },
+        textStrokeColor: 'rgba(0,0,0,0.5)',
+        textStrokeWidth: 3,
+        formatter: (v) => v > 0 ? v : ''
+      },
+      tooltip: {
+        titleFont: { family: 'Plus Jakarta Sans' },
+        bodyFont: { family: 'Nunito' }
+      }
+    }
+  }
+});
+
+
+{
+  const cfg = baseDoughnut(
+    ['Serieus (1)', 'Matig (8)', 'Klein (3)', 'Advies (1)'],
+    [1, 8, 3, 1]
+  );
+  cfg.data.datasets[0].backgroundColor = [impactBgByKey['groot'], impactBgByKey['medium'], impactBgByKey['klein'], impactBgByKey['advies']];
+  new Chart(document.getElementById('impact_1'), cfg);
+}
+{
+  const cfg = baseDoughnut(
+    ['Techniek (5)', 'Content (8)'],
+    [5, 8]
+  );
+  cfg.data.datasets[0].backgroundColor = typeBg;
+  new Chart(document.getElementById('type_1'), cfg);
+}
+
+
+
+</script>
+</body>
+</html>
