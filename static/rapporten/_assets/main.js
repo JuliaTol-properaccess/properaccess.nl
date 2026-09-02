@@ -36,10 +36,14 @@ const PA_DISABILITY_EN = { Visueel: "Visual", Auditief: "Auditory", Motorisch: "
 function paTrPrinciple(v) { return PA_LANG === "en" ? (PA_PRINCIPLE_EN[v] || v) : v; }
 function paTrDisability(v) { return PA_LANG === "en" ? (PA_DISABILITY_EN[v] || v) : v; }
 // Bron-impactlabel (NL of EN) -> interne categorie voor filters/tellers.
+// De interne sleutels (groot/medium/klein) blijven staan; alleen de zichtbare
+// labels volgen sinds 30 augustus 2026 de ACM-schaal. "kritiek" is nieuw en
+// geldt alleen bij de niet-interferentie-SC 1.4.2, 2.1.2, 2.2.2 en 2.3.1.
 function paImpactKey(text) {
   const t = (text || "").toLowerCase();
-  if (t.indexOf("serious") === 0 || t.indexOf("groot") === 0) return "groot";
-  if (t.indexOf("medium") === 0) return "medium";
+  if (t.indexOf("kritiek") === 0 || t.indexOf("critical") === 0) return "kritiek";
+  if (t.indexOf("serieus") === 0 || t.indexOf("serious") === 0 || t.indexOf("groot") === 0) return "groot";
+  if (t.indexOf("matig") === 0 || t.indexOf("moderate") === 0 || t.indexOf("medium") === 0) return "medium";
   if (t.indexOf("minor") === 0 || t.indexOf("klein") === 0) return "klein";
   if (t.indexOf("advice") === 0 || t.indexOf("advies") === 0) return "advies";
   return "unknown";
@@ -548,10 +552,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!exportBtn) return;
 
   const IMPACT_TO_PRIORITY = {
-    "Groot": "Highest",
-    "Medium": "High",
-    "Klein": "Medium",
+    "Kritiek": "Highest",
+    "Serieus": "High",
+    "Matig": "Medium",
+    "Klein": "Low",
     "Advies": "Low",
+    // Labels van voor de ACM-schaal (30 augustus 2026)
+    "Groot": "High",
+    "Medium": "Medium",
   };
 
   function extractFindings() {
@@ -1112,6 +1120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const impactCounts = {
       all: issues.length,
+      kritiek: 0,
       groot: 0,
       medium: 0,
       klein: 0,
@@ -1298,19 +1307,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const divIssuesAll = issues.filter((i) => i.tagName !== "ARTICLE");
 
   // Impact counts
-  let klein = 0, medium = 0, groot = 0;
+  let klein = 0, medium = 0, groot = 0, kritiek = 0;
   divIssuesAll.forEach((i) => {
     if (i.dataset.impact === "klein") klein++;
     else if (i.dataset.impact === "medium") medium++;
     else if (i.dataset.impact === "groot") groot++;
+    else if (i.dataset.impact === "kritiek") kritiek++;
   });
 
   const statKlein = document.getElementById("stat-klein");
   const statMedium = document.getElementById("stat-medium");
   const statGroot = document.getElementById("stat-groot");
+  const statKritiek = document.getElementById("stat-kritiek");
   if (statKlein) statKlein.textContent = klein;
   if (statMedium) statMedium.textContent = medium;
   if (statGroot) statGroot.textContent = groot;
+  if (statKritiek) statKritiek.textContent = kritiek;
 
   // Type counts
   let contentCount = 0, techniekCount = 0;

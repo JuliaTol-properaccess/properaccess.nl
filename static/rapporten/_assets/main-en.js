@@ -377,11 +377,16 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!exportBtn) return;
 
   const IMPACT_TO_PRIORITY = {
-    "High": "Highest",
-    "Medium": "High",
-    "Low": "Medium",
+    "Critical": "Highest",
+    "Serious": "High",
+    "Moderate": "Medium",
+    "Minor": "Low",
     "Advice": "Low",
     "Advisory": "Low",
+    // Labels van voor de ACM-schaal (30 augustus 2026)
+    "High": "High",
+    "Medium": "Medium",
+    "Low": "Low",
   };
 
   function extractFindings() {
@@ -596,12 +601,22 @@ document.addEventListener("DOMContentLoaded", () => {
         .trim()
         .toLowerCase();
 
+      // De interne sleutels blijven staan; alleen de zichtbare labels volgen
+      // sinds 30 augustus 2026 de ACM-schaal. "kritiek" is nieuw en geldt
+      // alleen bij de niet-interferentie-SC 1.4.2, 2.1.2, 2.2.2 en 2.3.1.
       const impactKeyMap = {
+        critical: "kritiek",
+        serious: "groot",
+        moderate: "medium",
+        minor: "klein",
         high: "groot",
         medium: "medium",
         low: "klein",
         advice: "advies",
         advisory: "advies",
+        kritiek: "kritiek",
+        serieus: "groot",
+        matig: "medium",
         groot: "groot",
         klein: "klein",
         advies: "advies",
@@ -701,12 +716,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const newLabel = h3.querySelector(".new-label");
       const titleText = h3.textContent.replace(/\s*(Nieuw|New)$/, "").trim();
       const impactLowerRaw = impact.toLowerCase();
+      // De interne sleutels blijven staan; alleen de zichtbare labels volgen
+      // sinds 30 augustus 2026 de ACM-schaal. "kritiek" is nieuw en geldt
+      // alleen bij de niet-interferentie-SC 1.4.2, 2.1.2, 2.2.2 en 2.3.1.
       const impactKeyMap = {
+        critical: "kritiek",
+        serious: "groot",
+        moderate: "medium",
+        minor: "klein",
         high: "groot",
         medium: "medium",
         low: "klein",
         advice: "advies",
         advisory: "advies",
+        kritiek: "kritiek",
+        serieus: "groot",
+        matig: "medium",
         groot: "groot",
         klein: "klein",
         advies: "advies",
@@ -964,6 +989,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const impactCounts = {
       all: issues.length,
+      kritiek: 0,
       groot: 0,
       medium: 0,
       klein: 0,
@@ -1150,19 +1176,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const divIssuesAll = issues.filter((i) => i.tagName !== "ARTICLE");
 
   // Impact counts
-  let klein = 0, medium = 0, groot = 0;
+  let klein = 0, medium = 0, groot = 0, kritiek = 0;
   divIssuesAll.forEach((i) => {
     if (i.dataset.impact === "klein") klein++;
     else if (i.dataset.impact === "medium") medium++;
     else if (i.dataset.impact === "groot") groot++;
+    else if (i.dataset.impact === "kritiek") kritiek++;
   });
 
   const statKlein = document.getElementById("stat-klein");
   const statMedium = document.getElementById("stat-medium");
   const statGroot = document.getElementById("stat-groot");
+  const statKritiek = document.getElementById("stat-kritiek");
   if (statKlein) statKlein.textContent = klein;
   if (statMedium) statMedium.textContent = medium;
   if (statGroot) statGroot.textContent = groot;
+  if (statKritiek) statKritiek.textContent = kritiek;
 
   // Type counts
   let contentCount = 0, techniekCount = 0;

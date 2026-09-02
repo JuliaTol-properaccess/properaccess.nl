@@ -1296,6 +1296,11 @@ figure.chart figcaption {
   white-space: nowrap;
 }
 
+.finding-meta-impact[data-impact="kritiek"] {
+  color: #991b1b;
+  font-weight: 800;
+}
+
 .finding-meta-impact[data-impact="groot"] {
   color: #dc2626;
   font-weight: 700;
