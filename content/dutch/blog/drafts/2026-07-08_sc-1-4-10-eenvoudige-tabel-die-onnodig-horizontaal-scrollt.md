@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Eenvoudige tabel die onnodig horizontaal scrollt"
 date: 2026-08-31
 slug: "sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt"
