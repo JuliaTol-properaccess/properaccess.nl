@@ -35,6 +35,10 @@ it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span l
 Upload your PDF, let the tool repair it, and download the result to your own computer. After 8 hours
 your document disappears from our database.
 
+Between the upload and the download sits your own work: checking what the tool cannot judge. On an
+ordinary document that takes 3 to 15 minutes. A scan, or a document running to dozens of pages,
+takes longer.
+
 Not finished within those 8 hours? Upload the repaired file again the next day and carry on where you
 stopped. Your work sits in the file you downloaded, so you never start over.
 

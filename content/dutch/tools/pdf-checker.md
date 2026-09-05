@@ -35,6 +35,10 @@ zien hoe hij werkt, kijk dan op [pdf-toegankelijk.nl](https://pdf-toegankelijk.n
 Je uploadt je PDF, de tool repareert hem, en je haalt het resultaat op naar je eigen computer.
 Na 8 uur verdwijnt je document uit onze database.
 
+Tussen het uploaden en het downloaden zit je eigen werk: nakijken wat de tool niet kan beoordelen.
+Bij een gewoon document kost dat 3 tot 15 minuten. Een scan of een document van tientallen pagina's
+kost meer.
+
 Ben je binnen die 8 uur niet klaar? Upload het gerepareerde bestand de volgende dag opnieuw en werk
 verder waar je gebleven was. Je werk zit in het bestand dat je hebt gedownload, dus je begint niet
 opnieuw.
