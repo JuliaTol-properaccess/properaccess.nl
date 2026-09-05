@@ -11,7 +11,7 @@ Dit is sinds augustus 2026 de enige plek waar een auditkaartje ontstaat. Het CRM
 
 Het moet een echte issue zijn, geen draft. De pijplijn in `~/git/ProperAccess` haalt een kaart op via `repos/<repo>/issues/<nummer>`, en een draft heeft geen nummer.
 
-De steekproef staat leeg op het kaartje, onder de kop `### Sample` met het hoofddomein als eerste regel. Hier draait geen crawl, dus de auditor vult hem aan. `tools/audit-start.py` stopt met een foutmelding als die sectie ontbreekt.
+De steekproef staat leeg op het kaartje, onder de kop `### Sample` met het hoofddomein als eerste regel. Hier draait geen crawl. Sinds 5 september 2026 vult de pijplijn in `~/git/ProperAccess` hem in: `tools/inventaris-check.sh` draait elke 30 minuten voor kaartjes in "Ready to start", inventariseert de site (pagina's, PDF's, tabellen, iframes, video, formulieren) en zet een steekproefvoorstel in de lege sectie. De auditor vult daarna aan tot 100%. `tools/audit-start.py` stopt met een foutmelding als de sectie ontbreekt.
 
 Er komen **geen prijzen** in het formulier of op het kaartje. De Worker zet alleen de binnengekomen velden over.
 
