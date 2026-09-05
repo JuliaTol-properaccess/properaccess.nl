@@ -30,6 +30,19 @@ We testen de reparatie op documenten uit onze eigen auditpraktijk, en de komende
 hem verder uit. Zodra we cijfers hebben waar we voor kunnen staan, zetten we ze erbij. Wil je nu al
 zien hoe hij werkt, kijk dan op [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl).
 
+## Hoe het werkt
+
+Je uploadt je PDF, de tool repareert hem, en je haalt het resultaat op naar je eigen computer.
+Na 8 uur verdwijnt je document van onze server.
+
+Tussen het uploaden en het downloaden zit je eigen werk: nakijken wat de tool niet kan beoordelen.
+Bij een gewoon document kost dat 3 tot 15 minuten. Een scan of een document van tientallen pagina's
+kost meer.
+
+Ben je binnen die 8 uur niet klaar? Upload het gerepareerde bestand de volgende dag opnieuw en werk
+verder waar je gebleven was. Je werk zit in het bestand dat je hebt gedownload, dus je begint niet
+opnieuw.
+
 ## Wat de tool niet doet
 
 Een gerepareerde codelaag is geen toegankelijk document. Of de leesorde klopt, of een tabelkop op de
@@ -44,5 +57,5 @@ Alle stappen draaien op onze eigen server in de EU. Je document gaat niet naar A
 Google, niet naar een taalmodel en niet naar een andere leverancier. We hebben dat getest door de
 reparatie te draaien met de netwerkverbinding dicht.
 
-Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het resultaat verwijderen we
-24 uur later.
+Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het gerepareerde bestand
+verwijderen we 8 uur na je laatste handeling erin.
