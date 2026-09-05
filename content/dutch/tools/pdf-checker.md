@@ -33,7 +33,7 @@ zien hoe hij werkt, kijk dan op [pdf-toegankelijk.nl](https://pdf-toegankelijk.n
 ## Hoe het werkt
 
 Je uploadt je PDF, de tool repareert hem, en je haalt het resultaat op naar je eigen computer.
-Na 8 uur verdwijnt je document uit onze database.
+Na 8 uur verdwijnt je document van onze server.
 
 Tussen het uploaden en het downloaden zit je eigen werk: nakijken wat de tool niet kan beoordelen.
 Bij een gewoon document kost dat 3 tot 15 minuten. Een scan of een document van tientallen pagina's
@@ -58,5 +58,4 @@ Google, niet naar een taalmodel en niet naar een andere leverancier. We hebben d
 reparatie te draaien met de netwerkverbinding dicht.
 
 Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het gerepareerde bestand
-blijft 8 uur staan. Werk je ondertussen in het scherm, dan begint die 8 uur bij elke handeling
-opnieuw.
+verwijderen we 8 uur na je laatste handeling erin.

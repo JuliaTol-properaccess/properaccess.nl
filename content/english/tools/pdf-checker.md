@@ -33,7 +33,7 @@ it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span l
 ## How it works
 
 Upload your PDF, let the tool repair it, and download the result to your own computer. After 8 hours
-your document disappears from our database.
+your document disappears from our server.
 
 Between the upload and the download sits your own work: checking what the tool cannot judge. On an
 ordinary document that takes 3 to 15 minutes. A scan, or a document running to dozens of pages,
@@ -56,5 +56,5 @@ Every step runs on our own server in the EU. Your document does not go to Adobe,
 language model or to any other supplier. We tested that by running the repair with the network
 connection closed.
 
-We delete the file you upload as soon as the repair finishes. The repaired file stays for 8 hours.
-While you are working in the editor, those 8 hours restart with every action.
+We delete the file you upload as soon as the repair finishes. We delete the repaired file 8 hours
+after your last action in it.
