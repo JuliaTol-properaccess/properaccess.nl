@@ -30,6 +30,14 @@ We are testing the repair on documents from our own audit practice, and we will 
 over the coming months. Once we have figures we can stand behind, we will put them here. To see how
 it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span lang="nl">(in Dutch)</span>.
 
+## How it works
+
+Upload your PDF, let the tool repair it, and download the result to your own computer. Your document
+then stays with us for another 8 hours.
+
+Not finished within those 8 hours? Upload the repaired file again the next day and carry on where you
+stopped. Your work sits in the file you downloaded, so you never start over.
+
 ## What the tool does not do
 
 A repaired code layer is not an accessible document. Whether the reading order is right, whether a
@@ -44,4 +52,5 @@ Every step runs on our own server in the EU. Your document does not go to Adobe,
 language model or to any other supplier. We tested that by running the repair with the network
 connection closed.
 
-We delete the file you upload as soon as the repair finishes. We delete the result 8 hours after your last action. While you are working in the editor, that clock restarts with every change, so you will not lose work in progress.
+We delete the file you upload as soon as the repair finishes. The repaired file stays for 8 hours.
+While you are working in the editor, those 8 hours restart with every action.
