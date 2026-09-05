@@ -45,4 +45,5 @@ Google, niet naar een taalmodel en niet naar een andere leverancier. We hebben d
 reparatie te draaien met de netwerkverbinding dicht.
 
 Het bestand dat je uploadt verwijderen we zodra de reparatie klaar is. Het resultaat verwijderen we
-24 uur later.
+8 uur na je laatste handeling. Werk je in het scherm, dan begint die 8 uur bij elke wijziging
+opnieuw, dus je raakt je werk niet kwijt terwijl je bezig bent.

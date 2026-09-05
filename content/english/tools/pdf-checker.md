@@ -44,4 +44,4 @@ Every step runs on our own server in the EU. Your document does not go to Adobe,
 language model or to any other supplier. We tested that by running the repair with the network
 connection closed.
 
-We delete the file you upload as soon as the repair finishes. We delete the result 24 hours later.
+We delete the file you upload as soon as the repair finishes. We delete the result 8 hours after your last action. While you are working in the editor, that clock restarts with every change, so you will not lose work in progress.
