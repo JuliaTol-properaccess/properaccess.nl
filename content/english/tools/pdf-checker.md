@@ -32,8 +32,8 @@ it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span l
 
 ## How it works
 
-Upload your PDF, let the tool repair it, and download the result to your own computer. Your document
-then stays with us for another 8 hours.
+Upload your PDF, let the tool repair it, and download the result to your own computer. After 8 hours
+your document disappears from our database.
 
 Not finished within those 8 hours? Upload the repaired file again the next day and carry on where you
 stopped. Your work sits in the file you downloaded, so you never start over.

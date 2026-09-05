@@ -33,7 +33,7 @@ zien hoe hij werkt, kijk dan op [pdf-toegankelijk.nl](https://pdf-toegankelijk.n
 ## Hoe het werkt
 
 Je uploadt je PDF, de tool repareert hem, en je haalt het resultaat op naar je eigen computer.
-Daarna staat je document nog 8 uur bij ons.
+Na 8 uur verdwijnt je document uit onze database.
 
 Ben je binnen die 8 uur niet klaar? Upload het gerepareerde bestand de volgende dag opnieuw en werk
 verder waar je gebleven was. Je werk zit in het bestand dat je hebt gedownload, dus je begint niet
