@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Toggle-knop zonder status"
 date: 2026-09-04
 slug: "sc-4-1-2-toggle-knop-zonder-status"
