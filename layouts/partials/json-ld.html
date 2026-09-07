@@ -202,12 +202,24 @@
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   {{ with .Params.description }}"description": "{{ . }}",{{ end }}
   {{ with .Params.image }}"image": "{{ . | absURL }}",{{ end }}
-  "author": {
+  "author": {{ if .Params.coauthors }}[
+    {
+      "@type": "Person",
+      "@id": "{{ site.BaseURL }}#julia-tol",
+      "name": "Julia Tol",
+      "url": "{{ site.BaseURL }}authors/julia/"
+    }{{ range .Params.coauthors }},
+    {
+      "@type": "Person",
+      "name": "{{ index . "name" }}"{{ with index . "url" }},
+      "url": "{{ . }}"{{ end }}
+    }{{ end }}
+  ]{{ else }}{
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#julia-tol",
     "name": "Julia Tol",
     "url": "{{ site.BaseURL }}authors/julia/"
-  },
+  }{{ end }},
   "publisher": {
     "@type": "Organization",
     "@id": "{{ site.BaseURL }}#organization",

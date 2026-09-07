@@ -4,6 +4,9 @@ date: 2026-09-07
 slug: "toegankelijkheid-en-cybersecurity-hoeven-geen-tegenpolen-te-zijn"
 meta_title: "Toegankelijkheid en cybersecurity: geen tegenpolen"
 breadcrumb_title: "Toegankelijkheid en cybersecurity"
+coauthors:
+  - name: "Janita Top"
+    url: "https://janitatop.nl/"
 categories:
   - "wcag-uitgelegd"
   - "achtergrond_wcag"
