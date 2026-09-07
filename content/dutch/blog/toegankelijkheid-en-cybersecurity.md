@@ -34,6 +34,8 @@ Het bekendste voorbeeld is de captcha. Vervormde tekst overtypen, of alle plaatj
 
 WCAG vraagt via succescriterium 1.1.1 om een alternatief voor een ander zintuig, meestal een audioversie. In de praktijk is dat geen bruikbaar alternatief. Juist wie de afbeelding niet ziet, is erop aangewezen. Je hoort dan een reeks tekens door zoveel ruis en gekraak heen dat je het fragment 2 of 3 keer moet afspelen voordat je denkt te weten wat er staat. Daar komt bij dat de afspeelknop lang niet altijd met het toetsenbord te bedienen is, of dat de focus er niet naartoe gaat. En je moet de code daarna alsnog overtypen. Het alternatief staat er dus wel, alleen kom je er niet mee verder.
 
+![Links een invoerveld met vervormde, onleesbare letters en daarboven een doorgestreept oog, met als bijschrift "Overtypen lukt niet". Rechts een afspeelknop met ruisgolven en een doorgestreept toetsenbord, met als bijschrift "Het audio-alternatief ook niet".](/images/blog/cyber-captcha.webp)
+
 Het goede nieuws: een zichtbare puzzel is allang niet meer de enige manier om bots buiten te houden. Er zijn aanpakken die de bezoeker helemaal niet belasten:
 
 - Honeypot-velden: een veld dat een bezoeker niet ziet en een bot wel invult. Wel goed om te weten dat dit een oude truc is waar veel bots inmiddels omheen werken. Het helpt alleen nog als je het veld met CSS verbergt op een manier die niet meteen herkenbaar is, en er geen namen aan geeft als `honeypot` of `nospam`. Zet er `tabindex="-1"` en `autocomplete="off"` bij, zodat iemand met een toetsenbord of schermlezer er niet per ongeluk in terechtkomt.
@@ -58,6 +60,8 @@ Hier is WCAG duidelijk over. Succescriterium 2.2.1 Timing Adjustable vraagt dat 
 
 Zo houd je de korte sessie die je om veiligheidsredenen wilt, zonder dat langzamere bezoekers hun werk kwijtraken.
 
+![Een browservenster met een half ingevuld formulier. Daaroverheen een venster met een zandloper en de tekst "Je wordt over 2 minuten uitgelogd", met daaronder een knop "Ingelogd blijven" en een knop "Uitloggen".](/images/blog/cyber-sessietimeout.webp)
+
 ## Wachtwoordregels zijn streng op de verkeerde dingen
 
 Veel sites stellen strenge eisen aan wachtwoorden. Minstens één hoofdletter, één cijfer, één vreemd teken, en elke 3 maanden verplicht wijzigen. Het voelt veilig, maar het werkt vaak averechts. Mensen bedenken voorspelbare trucjes, plakken er een uitroepteken achter, en schrijven het op een briefje omdat ze het niet meer onthouden.
@@ -68,6 +72,8 @@ Moderne beveiligingsrichtlijnen, zoals die van het Amerikaanse National Institut
 - Dwing geen verplichte wisselrondes af zonder aanleiding. Alleen wisselen als er een aanwijzing is dat een wachtwoord is uitgelekt.
 - Sta plakken toe, zodat wachtwoordmanagers gewoon werken.
 - Controleer tegen bekende gelekte wachtwoorden in plaats van willekeurige samenstellingsregels op te leggen.
+
+![Links een kort wachtwoordveld met "P@ssw0rd!", drie afgekruiste regels en een geeltje op de rand, met als bijschrift "Streng op de verkeerde dingen". Rechts een breed veld met de wachtzin "paarse fiets zonder zadel", een vinkje en een slotje, met als bijschrift "Lang en te onthouden".](/images/blog/cyber-wachtwoord.webp)
 
 Wat het wachtwoord veiliger maakt, is ook wat het voor de gebruiker makkelijker maakt. Ingewikkelde regels die mensen dwingen tot onthouden en overtypen, botsen ook met succescriterium 3.3.8 Accessible Authentication. Dat criterium verbiedt een verplichte cognitieve test bij het inloggen, zoals iets uit je hoofd onthouden of een reeks tekens overtypen. Dat mag alleen als er een alternatief of een hulpmiddel is. Een wachtwoordmanager die het veld invult, telt als zo'n hulpmiddel.
 
