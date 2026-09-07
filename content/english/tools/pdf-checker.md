@@ -1,54 +1,67 @@
 ---
 title: "PDF accessibility checker"
-description: "The free PDF checker is offline. Its successor is at pdf-toegankelijk.nl and is in closed testing: it repairs the code layer of your PDF without changing how the document looks."
+description: "Check for free which accessibility problems are in your PDF. No account, and your file is deleted as soon as the check is done."
 layout: "pdf-tool-aankondiging"
 weight: 10
-binnenkort: true
 doelgroep:
   - "Web editors"
   - "Web developers"
 ---
 
-The free checker that used to be here is offline. Its successor is at
-[pdf-toegankelijk.nl](https://pdf-toegankelijk.nl), and it does more than check: it repairs the document. The tool is in
-closed testing and access runs per organisation. The site is in Dutch for now.
+Upload a PDF and see which accessibility problems it contains. It costs nothing, there is no account
+to create, and your document leaves our server as soon as the check is done. The checker is at
+[pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). The result page is in
+Dutch for now.
 
-## What the new tool does
+## What you get
 
-You upload a PDF and you get **your own document back**, with a tag structure where there was none and
-with the title, the language and the matching viewer settings written in. Same pages, same layout. We
-do not build a second document that looks different.
+How many errors are in your document, how many points need a human to look at them, and how many
+suggestions come with it. Below that a count per topic: tags, title, language, headings, images,
+tables. And the three that weigh heaviest, with the success criterion and a link to the explanation
+in our knowledge base.
 
-For every document we compare the pages before and after the repair as images. If anything changed, we
-tell you which page and how large the difference is.
+If your document is a scan without a text layer, the checker says so. A document like that is empty
+for anyone using a screen reader, however well the rest is arranged, and the file itself does not
+show you that.
 
-You also get a report: what was fixed, what is still open, and which checks we did not run because a
-person has to look at them. That last list belongs in there. A check that does not run does not
-produce a clean document.
+Up to 10 MB and 20 pages, five documents a day. The 20 pages is a limit of the check itself: above
+that it no longer reads the whole text layer, and the result would say less than it appears to say.
 
-We are testing the repair on documents from our own audit practice, and we will keep developing it
-over the coming months. Once we have figures we can stand behind, we will put them here. To see how
-it works today, go to [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl) <span lang="nl">(in Dutch)</span>.
+## What we keep
 
-## How it works
+Nothing. No row about you or your document goes into our database, we do not keep the name of your
+file, and we delete the file itself as soon as the check is done. The result stays for half an hour
+at an address only you have, and then it goes.
 
-Upload your PDF, let the tool repair it, and download the result to your own computer. After 8 hours
-your document disappears from our server.
+We do count how many checks come from your internet address, because the limit of five a day hangs
+on that. We do not store the address to do it: we compute an irreversible fingerprint of it, using a
+secret number that changes every day. What happens exactly is in the
+[privacy statement of pdf-toegankelijk.nl](https://pdf-toegankelijk.nl/privacy), which is in Dutch.
 
-Between the upload and the download sits your own work: checking what the tool cannot judge. On an
-ordinary document that takes 3 to 15 minutes. A scan, or a document running to dozens of pages,
-takes longer.
+## Repairing is in closed testing
 
-Not finished within those 8 hours? Upload the repaired file again the next day and carry on where you
-stopped. Your work sits in the file you downloaded, so you never start over.
+The check tells you what is wrong. Repairing sits in the same tool and is in closed testing at the
+moment, with access arranged per organisation.
+
+You upload a PDF and you get **your own document back**, with a tag structure where there was none
+and with the title, the language and the matching viewer settings written in. Same pages, same
+layout. We do not build a second document that looks different.
+
+For every document we compare the pages before and after the repair as images. If anything changed,
+we tell you which page and how large the difference is.
+
+The full list comes with it: per element what is wrong, which page it is on, and the wording you can
+lift into an audit report. That list downloads as CSV and as JSON. The free check gives you the
+totals and not that list.
+
+Want to take part in the test? Leave your address and you get one message.
 
 ## What the tool does not do
 
 A repaired code layer is not an accessible document. Whether the reading order is right, whether a
-table header sits in the right place, whether a description of an image actually describes the image:
-no tool can settle that. So we do not issue any statement that your document meets WCAG or the
-European Accessibility Act. What we do deliver is a document with the remaining faults written out,
-and that is the list a person can work from.
+table header sits in the right place, whether a description covers the image it belongs to: no tool
+can establish that. So we do not issue a statement that your document meets WCAG or the EAA. What we
+do deliver is a list of the problems that are still there, and a person can work from that.
 
 ## Where your document stays
 
@@ -56,5 +69,5 @@ Every step runs on our own server in the EU. Your document does not go to Adobe,
 language model or to any other supplier. We tested that by running the repair with the network
 connection closed.
 
-We delete the file you upload as soon as the repair finishes. We delete the repaired file 8 hours
-after your last action in it.
+After a check your file is gone as soon as the check is done. If you have a document repaired, we
+delete the repaired file 8 hours after your last action in it.

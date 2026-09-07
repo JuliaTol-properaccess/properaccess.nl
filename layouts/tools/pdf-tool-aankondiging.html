@@ -1,11 +1,14 @@
 {{/*
   Aankondiging op de plek waar de gratis PDF-check stond.
 
-  Die tool is op 19 augustus 2026 offline gehaald, op besluit van Julia. Er komt een betaalde opvolger
-  die het document ook repareert, met een gratis deel erin.
+  Die tool is op 19 augustus 2026 offline gehaald, op besluit van Julia. De opvolger staat op
+  pdf-toegankelijk.nl en valt in twee delen.
 
-  Deze pagina was de tweede meest bezochte pagina van de site, dus de URL blijft bestaan. Wat er nu
-  staat is een aankondiging met een aanmelding voor de wachtlijst.
+  Sinds 7 september 2026 is het controleren openbaar: iedereen kan er zonder account een PDF laten
+  nakijken op pdf-toegankelijk.nl/controleren. Het repareren draait nog in besloten test, en daar
+  gaat de wachtlijst onderaan deze pagina over.
+
+  Deze pagina was de tweede meest bezochte pagina van de site, dus de URL blijft bestaan.
 
   De tekst staat in de contentbestanden, in het Nederlands en in het Engels apart. Deze layout knipt
   die tekst bij elke h2 in een eigen sectie over de volle paginabreedte, met een tekening ernaast.
@@ -23,13 +26,18 @@
 {{ define "main" }}
 {{ $nl := eq .Lang "nl" }}
 
+{{/* De sectie "wat je te zien krijgt" heeft met opzet geen tekening. De vier die er zijn gaan over
+     repareren, over de grens van de tool en over waar het document blijft; een van die drie hier
+     neerzetten zou de controle iets laten beloven wat hij niet doet. */}}
 {{ $secties := dict
-  "wat-de-nieuwe-tool-doet"    (dict "visual" "reparatie" "toon" "grijs")
-  "what-the-new-tool-does"     (dict "visual" "reparatie" "toon" "grijs")
-  "wat-de-tool-niet-doet"      (dict "visual" "grens"     "toon" "donker")
-  "what-the-tool-does-not-do"  (dict "visual" "grens"     "toon" "donker")
-  "waar-je-document-blijft"    (dict "visual" "eu"        "toon" "grijs")
-  "where-your-document-stays"  (dict "visual" "eu"        "toon" "grijs")
+  "wat-we-van-je-bewaren"          (dict "visual" "eu"        "toon" "grijs")
+  "what-we-keep"                   (dict "visual" "eu"        "toon" "grijs")
+  "repareren-zit-in-de-besloten-test" (dict "visual" "reparatie" "toon" "wit")
+  "repairing-is-in-closed-testing" (dict "visual" "reparatie" "toon" "wit")
+  "wat-de-tool-niet-doet"          (dict "visual" "grens"     "toon" "donker")
+  "what-the-tool-does-not-do"      (dict "visual" "grens"     "toon" "donker")
+  "waar-je-document-blijft"        (dict "visual" "eu"        "toon" "grijs")
+  "where-your-document-stays"      (dict "visual" "eu"        "toon" "grijs")
 }}
 
 {{ $chunks := split .Content "<h2" }}
@@ -40,15 +48,18 @@
   <div class="hp-container">
     <div class="pdfann-hero__grid">
       <div class="pdfann-hero__text">
-        <span class="hp-hero__badge">{{ if $nl }}In besloten test{{ else }}In closed testing{{ end }}</span>
+        <span class="hp-hero__badge">{{ if $nl }}Gratis, zonder account{{ else }}Free, no account{{ end }}</span>
         <h1 class="pdfann-hero__title">{{ .Title }}</h1>
         <div class="pdfann-hero__intro">{{ $intro | safeHTML }}</div>
+        {{/* Sinds 7 september 2026 is de controle er echt, dus de eerste knop gaat ernaartoe en niet
+             meer naar de wachtlijst. Die wachtlijst blijft en gaat over het repareren, dat nog in
+             besloten test draait. */}}
         <div class="pdfann-hero__actions">
-          <a class="hp-btn hp-btn--primary" href="#wachtlijst">
-            {{ if $nl }}Houd me op de hoogte{{ else }}Keep me posted{{ end }}
+          <a class="hp-btn hp-btn--primary" href="https://pdf-toegankelijk.nl/controleren">
+            {{ if $nl }}Controleer je PDF{{ else }}Check your PDF{{ end }}
           </a>
-          <a class="hp-btn hp-btn--ghost" href="https://pdf-toegankelijk.nl">
-            {{ if $nl }}Bekijk pdf-toegankelijk.nl{{ else }}See pdf-toegankelijk.nl{{ end }}
+          <a class="hp-btn hp-btn--ghost" href="#wachtlijst">
+            {{ if $nl }}Houd me op de hoogte{{ else }}Keep me posted{{ end }}
           </a>
         </div>
       </div>
@@ -90,15 +101,15 @@
     <div class="pdfann-wachtlijst__kaart">
       <div class="pdfann-wachtlijst__kop">
         <h2 class="pdfann-blok__kop">
-          {{ if $nl }}Ik wil bericht als de tool er is{{ else }}Tell me when it launches{{ end }}
+          {{ if $nl }}Ik wil bericht als ik kan repareren{{ else }}Tell me when I can repair{{ end }}
         </h2>
         <p>
           {{ if $nl }}
-            Je krijgt één e-mail, op de dag dat de tool live gaat. Geen nieuwsbrief, tenzij je je daar los
-            voor aanmeldt.
+            Controleren kan nu al. Je krijgt één e-mail op de dag dat het repareren open gaat. Geen
+            nieuwsbrief, tenzij je je daar los voor aanmeldt.
           {{ else }}
-            You get one email, on the day the tool goes live. No newsletter, unless you sign up for that
-            separately.
+            Checking is available now. You get one email on the day repairing opens up. No newsletter,
+            unless you sign up for that separately.
           {{ end }}
         </p>
       </div>
