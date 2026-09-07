@@ -27,7 +27,9 @@ keywords:
   - tweestapsverificatie toegankelijk
 ---
 
-Dit artikel schreven Julia Tol en Janita Top samen. Julia is oprichter en senior auditor bij Proper Access. Janita is zelfstandig adviseur digitale toegankelijkheid, je vindt haar werk op [janitatop.nl](https://janitatop.nl/).
+Dit artikel schreven Julia Tol en Janita Top samen. Ze begonnen allebei als webontwikkelaar en onderzoeken al jaren digitale kanalen op toegankelijkheid. Allebei volgden ze ook een reeks cursussen cybersecurity, uit interesse in wat er gebeurt waar dit vak aan een ander vakgebied raakt. Dit artikel komt daaruit voort.
+
+Julia is oprichter en senior auditor bij Proper Access. Janita is zelfstandig adviseur digitale toegankelijkheid, je vindt haar werk op [janitatop.nl](https://janitatop.nl/).
 
 Beveiliging en toegankelijkheid worden vaak tegenover elkaar gezet. Hoe veiliger een site, hoe meer drempels je opwerpt, zo lijkt het. Een captcha hier, een sessie die verloopt daar, een wachtwoord met minstens 12 tekens en 3 hoofdletters. Voor de gemiddelde bezoeker vervelend, voor iemand met een beperking vaak het punt waarop het bezoek stopt.
 
