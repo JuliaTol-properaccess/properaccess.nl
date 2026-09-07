@@ -27,6 +27,8 @@ keywords:
   - tweestapsverificatie toegankelijk
 ---
 
+Dit artikel schreven Julia Tol en Janita Top samen. Julia is oprichter en senior auditor bij Proper Access. Janita is zelfstandig adviseur digitale toegankelijkheid, je vindt haar werk op [janitatop.nl](https://janitatop.nl/).
+
 Beveiliging en toegankelijkheid worden vaak tegenover elkaar gezet. Hoe veiliger een site, hoe meer drempels je opwerpt, zo lijkt het. Een captcha hier, een sessie die verloopt daar, een wachtwoord met minstens 12 tekens en 3 hoofdletters. Voor de gemiddelde bezoeker vervelend, voor iemand met een beperking vaak het punt waarop het bezoek stopt.
 
 Dat beeld klopt niet. Goede beveiliging en goede toegankelijkheid willen hetzelfde: de juiste persoon soepel binnenlaten en de rest tegenhouden. Een drempel die de echte gebruiker frustreert, houdt een vastberaden aanvaller zelden tegen.
@@ -113,5 +115,3 @@ Een tweede stap die soepel werkt, gebruiken mensen ook echt. Een tweede stap die
 Slechte beveiliging herken je aan de drempels die de echte gebruiker in de weg staan terwijl ze een aanvaller amper afremmen. Ontwerp je een inlog of een betaling zo dat je slechtziende of langzaam typende bezoeker er nog doorheen komt, dan komt iedereen er doorheen. En je beveiliging wordt er niet minder van.
 
 Wil je weten of de beveiligde onderdelen van jouw site echt te gebruiken zijn, zoals inloggen of betalen? Bel ons op 085 5055 890, dan kijken we mee.
-
-Dit artikel schreven Julia Tol en Janita Top samen. Julia is oprichter en senior auditor bij Proper Access. Janita is zelfstandig adviseur digitale toegankelijkheid, je vindt haar werk op [janitatop.nl](https://janitatop.nl/).
