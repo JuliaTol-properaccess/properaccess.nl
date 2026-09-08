@@ -36,6 +36,7 @@
 
 - [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): BDTO voor gemeenten, provincies en uitvoeringsorganisaties
 - [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA voor webshops en e-diensten
+- [Financiële instellingen](https://www.properaccess.nl/financiele-instellingen-digitale-toegankelijkheid/): EAA voor banken, verzekeraars, kredietaanbieders, betaaldiensten en beleggingsondernemingen, met de AFM als toezichthouder. Wat de AFM in haar drie EAA-updates (april 2025, november 2025, april 2026) verwacht: nalevingsonderzoek naar websites met aandacht voor niveau A, vier criteria die altijd kritiek zijn (1.4.2, 2.1.2, 2.2.2, 2.3.1), meldplicht in het AFM Portaal binnen een week bij kritieke en serieuze impact en binnen een maand bij matige en kleine. Wat we toetsen: inloggen en identificeren, aanvragen en ondertekenen, klantportaal en app, PDF-documenten en e-mail. Rapport per element waarmee je de zes vragen van het AFM-meldformulier invult. Indicatieprijzen van circa 2.250 tot 5.100 euro per website en 2.150 euro per app-platform, exclusief btw
 - [Cultuur, sport en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): musea, theaters, festivals en ticketing
 - [Onderwijs](https://www.properaccess.nl/onderwijs-digitale-toegankelijkheid/): leeromgevingen zoals Moodle en Canvas
 - [Digital agencies](https://www.properaccess.nl/digital-agency/): samenwerking met bureaus die voor hun klanten bouwen

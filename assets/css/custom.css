@@ -18983,3 +18983,51 @@ html.dark .jaartijdlijn dd {
   margin-top: 0;
   font-size: 0.875rem;
 }
+
+/* ─── Money page financiële instellingen (fin-) ───
+   Koppeling tussen de vragen uit het AFM-meldformulier en wat er in ons
+   rapport staat. Decoratief blok in de value-prop-rij; de tekst ernaast
+   draagt de betekenis. */
+.fin-mapping {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 12px 28px -18px rgba(31, 41, 55, 0.18);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.25rem;
+  align-items: start;
+}
+
+.fin-mapping__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fin-mapping__q {
+  font-size: 0.9rem;
+  color: #4B5563;
+  line-height: 1.4;
+}
+
+.fin-mapping__a {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1.4;
+  padding-left: 0.75rem;
+  border-left: 3px solid #A30D4B;
+}
+
+textarea.hp-form__input {
+  resize: vertical;
+  min-height: 5rem;
+  font-family: inherit;
+}
