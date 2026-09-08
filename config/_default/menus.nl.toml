@@ -26,6 +26,12 @@ weight = 3
 
 [[main]]
 parent = "Voor wie"
+name = "Financiële instellingen"
+url = "/financiele-instellingen-digitale-toegankelijkheid/"
+weight = 4
+
+[[main]]
+parent = "Voor wie"
 name = "Digital Agency"
 url = "/digital_agency/"
 weight = 5

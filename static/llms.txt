@@ -36,6 +36,7 @@
 
 - [Overheid](https://www.properaccess.nl/digitale-toegankelijkheid-overheid/): BDTO voor gemeenten, provincies en uitvoeringsorganisaties
 - [E-commerce](https://www.properaccess.nl/e-commerce-digitale-toegankelijkheid/): EAA voor webshops en e-diensten
+- [Financiële instellingen](https://www.properaccess.nl/financiele-instellingen-digitale-toegankelijkheid/): EAA voor banken, verzekeraars, kredietaanbieders, betaaldiensten, beleggingsondernemingen, crowdfundingplatformen en online advies en bemiddeling, met de AFM als toezichthouder. Wat de AFM verwacht: nalevingsonderzoek naar websites sinds april 2026, vier criteria die altijd kritiek zijn, meldplicht in het AFM Portaal binnen een week bij kritieke en serieuze impact en binnen een maand bij matige en kleine. Wat we toetsen: inloggen en identificeren, aanvragen en ondertekenen, klantportaal en app, documenten en communicatie, corporate website, webapps en rekentools. Rapport per component waarmee je de zes vragen van het AFM-meldformulier invult. Indicatieprijzen van circa 2.250 tot 5.100 euro per website en 2.150 euro per app-platform, exclusief btw
 - [Cultuur, sport en attracties](https://www.properaccess.nl/inclusie-cultuur-sport-en-attracties/): musea, theaters, festivals en ticketing
 - [Onderwijs](https://www.properaccess.nl/onderwijs-digitale-toegankelijkheid/): leeromgevingen zoals Moodle en Canvas
 - [Digital agencies](https://www.properaccess.nl/digital-agency/): samenwerking met bureaus die voor hun klanten bouwen
@@ -70,6 +71,7 @@ Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengek
 
 ### Achtergrond en standpunten
 
+- [Wat de AFM in drie EAA-updates van financiële instellingen verwacht](https://www.properaccess.nl/blog/eaa-updates-afm-financiele-sector/): samenvatting met citaten van de EAA-updates van de AFM van april 2025, november 2025 en april 2026: de reikwijdte (bankdiensten en financiële e-handelsdiensten), de meldplicht met vier impactniveaus en termijnen van een week en een maand, het nalevingsonderzoek van 2026 met prioriteit voor de niveau-A-criteria terwijl de norm AA blijft, de vier non-interferentiecriteria 1.4.2, 2.1.2, 2.2.2 en 2.3.1, en de zes vragen van het meldformulier met de instructies van de AFM
 - [WebMCP: wat het is, en waarom het toegankelijkheid niet vervangt](https://www.properaccess.nl/blog/webmcp-en-toegankelijkheid/): wat de voorgestelde browser-API doet waarmee een website zijn functies aanbiedt als tools voor AI-agents, de status van het voorstel (Draft Community Group Report van de W3C Web Machine Learning Community Group, origin trial in Chrome 149, de API heet document.modelContext en niet meer navigator.modelContext), waarom het niets verandert aan vindbaarheid in AI-antwoorden, en waarom het geen vervanging is van een toegankelijke pagina. Met de discussie in de W3C-groep over de verhouding tot de accessibility tree, die op 17 augustus 2026 is gesloten omdat geen browserpartij WebMCP-tools in de accessibility tree wil zetten
 
 ### Veelgelezen artikelen
