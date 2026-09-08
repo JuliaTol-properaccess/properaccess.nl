@@ -42,7 +42,7 @@ trust:
     - "Plus"
     - "Rijksmuseum"
     - "Provincie Noord-Holland"
-    - "Gemeente Amersfoort"
+    - "Provincie Zuid-Holland"
 
 faqs:
   - question: "Valt mijn organisatie onder de AFM of onder de ACM?"
@@ -53,21 +53,15 @@ faqs:
     answer: "Een volledige audit van een website duurt 3 tot 5 weken. Een mini-audit, tot 5 uur handmatige controle door een senior auditor, levert binnen 5 werkdagen de grootste knelpunten op. Laat je website, portaal en app tegelijk toetsen, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
   - question: "Moet ik de melding bij de AFM doen voordat de audit klaar is?"
     answer: "De meldplicht loopt vanaf het moment dat je een probleem constateert: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Wat je precies wanneer meldt is een juridische vraag voor je eigen jurist. Wat de audit doet, is de melding concreet maken: welk deel van de dienstverlening, welk WCAG-criterium, of het om iOS of Android gaat, en welke maatregelen je neemt. Dat zijn precies de vragen uit het meldformulier van de AFM."
-  - question: "Toetsen jullie ook het klantportaal achter een login en de app?"
-    answer: "Ja. Voor het portaal werken we met een testaccount dat jij aanmaakt, zodat we inloggen, overboeken, een aanvraag doen en documenten downloaden zoals een klant dat doet. Apps toetsen we op echte toestellen met VoiceOver op iOS en TalkBack op Android. We rekenen ook echt af of dienen een aanvraag in als dat in een testomgeving kan, zodat we de hele route zien."
   - question: "Onze inlog, identificatie en ondertekening lopen via een leverancier. Hoe zit dat?"
     answer: "Die schermen horen bij jouw dienst, dus we nemen ze mee in de audit. In het rapport staat per bevinding bij welk onderdeel het hoort, zodat je weet wat je zelf oplost en wat je bij de leverancier neerlegt. De AFM schrijft in haar EAA-updates dat je uitbestedingspartners vroeg moet betrekken en afspraken moet maken over aanpassingen. Wij leveren daarvoor de formulering per bevinding, met het criterium erbij."
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
-  - question: "Wat krijgen we precies?"
-    answer: "Het rapport per element, een CSV met alle bevindingen, schermafbeeldingen en code-voorbeelden. Elke bevinding begint met wat een klant met een beperking merkt, en noemt het WCAG-criterium, het niveau en de oplossing. Daarna een nabespreking met je team als je die wilt, vragen aan de auditor via de strippenkaart, en na het herstel een hercontrole die per bevinding vastlegt dat het is opgelost."
 ---
 
 {{< section-full title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}
 
-Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk.
-
-De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie. Een klantportaal achter een login telt mee in de omvang van de website. Alle bedragen zijn exclusief 21% btw.
+Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk. De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie; een klantportaal achter een login telt mee in de omvang. Alle bedragen zijn exclusief 21% btw.
 
 | Wat we toetsen | Indicatieprijs |
 | --- | --- |
@@ -77,6 +71,19 @@ De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie
 | Complexe omgeving met meerdere labels, portalen of maatwerkcomponenten | circa € 5.100 |
 | App, per platform (iOS of Android) | € 2.150 |
 
-Een volledige audit duurt 3 tot 5 weken. Weet je nog niet waar je staat, dan is een [mini-audit](/webshop-quickscan/) van € 495 het startpunt: tot 5 uur handmatige controle door een senior auditor, met de grootste knelpunten op een rij. Na het oplossen legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is. Wat die kost hangt af van het aantal bevindingen en staat in een aparte offerte die volgt na oplevering van het rapport.
-
 {{< /section-full >}}
+
+{{< section-route title="Zo verloopt een audit, van offerte tot bewijs" eyebrow="Stappenplan" id="stappenplan" >}}
+{{< route-stap n="1" title="Offerte" >}}
+In 30 minuten bespreken we je digitale kanalen en je deadline. Binnen 2 werkdagen krijg je een offerte op maat, met de reikwijdte en het aantal uren. Wil je eerst weten waar je staat, dan is een [mini-audit](/webshop-quickscan/) van € 495 het startpunt.
+{{< /route-stap >}}
+{{< route-stap n="2" title="Audit" >}}
+Een senior auditor stelt volgens WCAG-EM een steekproef samen en loopt de klantreis door, van inloggen tot ondertekenen. Een volledige audit duurt 3 tot 5 weken.
+{{< /route-stap >}}
+{{< route-stap n="3" title="Rapport en nabespreking" >}}
+Je ontvangt het rapport per component, met CSV en schermafbeeldingen. In een nabespreking lopen we de bevindingen door met je team en je leveranciers.
+{{< /route-stap >}}
+{{< route-stap n="4" title="Herstel en hercontrole" >}}
+Tijdens het herstel stel je vragen aan de auditor via de strippenkaart. Daarna legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is; die staat in een aparte offerte op basis van het aantal bevindingen.
+{{< /route-stap >}}
+{{< /section-route >}}

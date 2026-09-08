@@ -19192,3 +19192,138 @@ textarea.hp-form__input {
   color: #A30D4B;
   text-decoration: underline;
 }
+
+/* Tabs "Wat we toetsen" op de financiële pagina. Zonder JavaScript staan alle
+   panelen open; het script verbergt de niet-gekozen panelen. */
+.fin-tabs__intro {
+  max-width: 44rem;
+  margin: 1rem auto 0;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.fin-tabs {
+  margin-top: 2.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.fin-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.fin-tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid #1F2937;
+  background: #fff;
+  color: #1F2937;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.fin-tabs__tab .material-symbols-outlined {
+  font-size: 1.25rem;
+  color: #A30D4B;
+}
+
+.fin-tabs__tab:hover {
+  border-color: #A30D4B;
+  color: #A30D4B;
+}
+
+.fin-tabs__tab[aria-selected="true"] {
+  background: #1F2937;
+  border-color: #1F2937;
+  color: #fff;
+}
+
+.fin-tabs__tab[aria-selected="true"] .material-symbols-outlined {
+  color: #fff;
+}
+
+.fin-tabs__tab:focus-visible,
+.fin-tabs__panel:focus-visible {
+  outline: 3px solid #A30D4B;
+  outline-offset: 2px;
+}
+
+.fin-tabs__panel {
+  padding: 2rem 1.75rem 2.25rem;
+  max-width: 52rem;
+}
+
+.fin-tabs__panel[hidden] {
+  display: none;
+}
+
+.fin-tabs__title {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1F2937;
+  margin: 0 0 0.75rem;
+}
+
+.fin-tabs__panel p {
+  color: #4B5563;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.fin-tabs__panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.fin-tabs__panel li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+.fin-tabs__panel li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: #A30D4B;
+}
+
+.fin-tabs-section .hp-diff__cta {
+  margin-top: 2.5rem;
+}
+
+/* Velden van het contactblok onderaan elke pagina (call-to-action.html). De
+   themakleur border is #eaeaea en haalt 1.4.11 niet; navy geeft 14,7:1. */
+#cta-form input,
+#cta-form textarea {
+  border-color: #1F2937;
+}
+
+#cta-form input::placeholder,
+#cta-form textarea::placeholder {
+  color: #1F2937;
+  opacity: 0.75;
+}
