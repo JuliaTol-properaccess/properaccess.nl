@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "In-page link die de focus niet meeneemt"
 date: 2026-09-07
 slug: "sc-2-4-3-in-page-link-die-de-focus-niet-meeneemt"
