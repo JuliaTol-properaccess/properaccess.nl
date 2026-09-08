@@ -1,0 +1,536 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+{{ with .Params.banner }}
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">{{ .badge | default "EAA en AFM-toezicht" }}</span>
+        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
+        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bullets }}
+        <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
+          {{ range . }}
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span>{{ . | markdownify }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="hp-hero__actions">
+              <a class="hp-btn hp-btn--primary" href="{{ .link | absURL }}">
+                {{ .label }}
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+              <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+                Bel 085 5055 890
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+        <p class="hp-hero__fud">Reactie binnen 1 werkdag &middot; offerte binnen 2 werkdagen &middot; geen standaardprijslijst, wel vaste uurtarieven</p>
+      </div>
+      <div class="hp-hero__visual">
+        <div class="hp-hero__form-card">
+          <h2 class="hp-hero__form-title">Vraag een offerte aan voor je website, portaal of app</h2>
+          <p class="hp-hero__form-intro">
+            Je krijgt binnen 2 werkdagen een offerte met de reikwijdte, het aantal uren en de
+            prijs. Wil je eerst weten waar je staat, zet dat dan in het bericht: een mini-audit
+            van 495 euro exclusief btw geeft binnen 5 werkdagen de grootste knelpunten.
+          </p>
+          <form class="hp-form" id="fin-offerte-form" novalidate>
+            <input type="hidden" name="_subject" value="Nieuwe offerteaanvraag (financiële instellingen)" />
+            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="fin-url">
+                URL van je website of app <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="text" id="fin-url" name="website_url" required autocomplete="url" placeholder="https://www.jouwbank.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="fin-name">
+                Je naam <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="text" id="fin-name" name="naam" required autocomplete="name" placeholder="Voornaam Achternaam" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="fin-email">
+                E-mailadres <span aria-label="verplicht">*</span>
+              </label>
+              <input class="hp-form__input" type="email" id="fin-email" name="email" required autocomplete="email" placeholder="naam@organisatie.nl" />
+            </div>
+
+            <div class="hp-form__field">
+              <label class="hp-form__label" for="fin-bericht">
+                Wat wil je laten toetsen? <span class="hp-form__optional">(optioneel)</span>
+              </label>
+              <textarea class="hp-form__input" id="fin-bericht" name="bericht" rows="3" placeholder="Bijvoorbeeld: website, klantportaal achter login en de iOS- en Android-app"></textarea>
+            </div>
+
+            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
+              Vraag de offerte aan
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </button>
+            <p class="hp-form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var form = document.getElementById('fin-offerte-form');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.paFormSubmit(form, {
+      bron: 'offerte-financieel',
+      onSuccess: function() { window.location.href = '/bedankt/'; }
+    });
+  });
+})();
+</script>
+{{ end }}
+
+{{ partial "tldr-capsule.html" . }}
+
+<!-- ─── TRUST BAR ─── -->
+{{ with .Params.trust }}
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">{{ .label }}</p>
+    <div class="hp-trust__names">
+      {{ range .names }}
+        <span>{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── PAIN / AFM ─── -->
+<section class="hp-pain">
+  <div class="hp-container">
+    <div class="hp-pain__grid">
+      <div class="hp-pain__text">
+        <h2 class="hp-pain__title">
+          De AFM toetst nu zelf,
+          <span class="hp-pain__title-accent">en wil een <span class="hp-pain__title-highlight">concrete melding</span></span>
+        </h2>
+        <p class="hp-pain__body">
+          Sinds 28 juni 2025 geldt de European Accessibility Act. Voor bankdiensten en
+          financi&euml;le e-handelsdiensten aan consumenten is de Autoriteit Financi&euml;le
+          Markten de toezichthouder. In april 2026 kondigde de AFM een nalevingsonderzoek aan:
+          ze toetst websites van financi&euml;le ondernemingen aan de WCAG-criteria, met
+          aandacht voor niveau A, en richt zich op de diensten die consumenten het meest
+          gebruiken.
+        </p>
+        <p class="hp-pain__body">
+          <em>"We hebben een scan gedraaid en de melding ingediend."</em> Dat is wat we het
+          vaakst horen. De AFM schrijft in dezelfde update dat meldingen vaak niet concreet
+          genoeg zijn ingevuld: ze kan dan niet beoordelen wat de problemen zijn en waar ze
+          zitten. Een scan herkent ongeveer 30% van de succescriteria. De rest, en dat zijn de
+          inlog, het aanvraagproces en de app, is handwerk.
+        </p>
+        <div class="hp-pain__cta">
+          <a href="/offerte-wcag-onderzoek/" class="hp-btn hp-btn--primary">
+            Vraag een offerte aan
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hp-pain__visuals">
+        <div class="hp-pain-card hp-pain-card--summary">
+          <span class="hp-pain-card__eyebrow">
+            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+            Uit de EAA-updates van de AFM
+          </span>
+          <h3 class="hp-pain-card__title">Wat de AFM van je verwacht</h3>
+          <ul class="hp-pain-card__list">
+            <li><strong>Nalevingsonderzoek</strong> naar de websites van financi&euml;le ondernemingen, aangekondigd in april 2026 voor het kwartaal erna.</li>
+            <li><strong>Niveau A eerst.</strong> Vier criteria beoordeelt de AFM altijd als kritiek: geluidsbediening, geen toetsenbordval, pauzeren en stoppen, en drie flitsen.</li>
+            <li><strong>Meldplicht.</strong> Kritieke en serieuze problemen meld je binnen een week na constatering in het AFM Portaal, matige en kleine binnen een maand.</li>
+            <li><strong>Een audit als basis.</strong> De AFM noemt een toegankelijkheidsaudit als startpunt voor gerichte verbeterstappen, en vraagt om structurele borging daarna.</li>
+          </ul>
+          <a href="https://www.afm.nl/nl-nl/sector/themas/dienstverlening-aan-consumenten/toegankelijkheid"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="hp-pain-card__link">
+            Lees de themapagina en de EAA-updates op afm.nl<span class="sr-only"> (opent in nieuw venster)</span>
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── CONTENT: reikwijdte + wat we toetsen ─── -->
+<article class="offerte-content">
+  {{ .Content }}
+</article>
+
+
+<!-- ─── VALUE PROPS ─── -->
+<section class="hp-vp">
+  <div class="hp-container">
+
+    <div class="hp-vp__header">
+      <h2 class="hp-vp__section-title">Wat je krijgt, voor, tijdens en na het herstel</h2>
+    </div>
+
+    <!-- VP 1: Het rapport -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="fin-mapping" aria-hidden="true">
+          <span class="fin-mapping__label">Vraag in het AFM-meldformulier</span>
+          <span class="fin-mapping__label fin-mapping__label--right">In ons rapport</span>
+          <span class="fin-mapping__q">Voor welk deel van de dienstverlening?</span>
+          <span class="fin-mapping__a">Per pagina en per element</span>
+          <span class="fin-mapping__q">Welke WCAG-criteria, iOS of Android?</span>
+          <span class="fin-mapping__a">Criterium en platform per bevinding</span>
+          <span class="fin-mapping__q">Mate van impact: kritiek tot klein?</span>
+          <span class="fin-mapping__a">Niveau A of AA per bevinding</span>
+          <span class="fin-mapping__q">Welke maatregelen?</span>
+          <span class="fin-mapping__a">Oplossing met code-voorbeeld</span>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Het rapport</span>
+        <h3 class="hp-vp__title">Een rapport waarmee je de AFM-melding concreet invult</h3>
+        <p class="hp-vp__body">
+          De AFM vraagt in het meldformulier welk deel van de dienstverlening het betreft, welke
+          WCAG-criteria, of het om iOS of Android gaat, wat de impact is en welke maatregelen je
+          neemt. Ons rapport is per element opgebouwd: alles wat er aan het inlogscherm of het
+          uploadveld mankeert staat op &eacute;&eacute;n plek, met het criterium, het niveau, een
+          schermafbeelding en de oplossing. Je krijgt het rapport ook als CSV.
+        </p>
+        <a href="/rapporten/202508_igc/" class="hp-btn hp-btn--primary">
+          Bekijk een voorbeeldrapport
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 2: Tijdens het herstel -->
+    <div class="hp-vp__row hp-vp__row--reverse">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-methods" aria-hidden="true">
+          <span class="hp-vp-methods__label">Wie stelt de vragen tijdens het herstel:</span>
+          <ul class="hp-vp-methods__list">
+            <li><span class="material-symbols-outlined" aria-hidden="true">code</span> Je eigen developers</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">handshake</span> Je leverancier van de app</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">key</span> De partij achter de inlog</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">edit_document</span> De webredactie en de documentmakers</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">balance</span> De jurist die de melding schrijft</li>
+          </ul>
+          <p class="hp-vp-methods__footer">E&eacute;n strip per vraag, vervolgvragen in dezelfde draad gratis.</p>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Tijdens het herstel</span>
+        <h3 class="hp-vp__title">Vragen aan de auditor, ook namens je leverancier</h3>
+        <p class="hp-vp__body">
+          Bij een financi&euml;le dienstverlener zit een deel van de klantreis bij een andere
+          partij: de inlog, het ondertekenen, de betaalstap, de chat. Na oplevering van het
+          rapport stellen jouw team en je leveranciers hun vragen aan de auditor die het
+          onderzoek deed, via de strippenkaart. Kan iets binnen een platform niet worden opgelost,
+          dan denken we mee over een alternatief en over de formulering waarmee je het bij je
+          leverancier neerlegt.
+        </p>
+        <a href="/strippenkaart/" class="hp-btn hp-btn--outline">
+          Zo werkt de strippenkaart
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VP 3: Na oplevering -->
+    <div class="hp-vp__row">
+      <div class="hp-vp__visual">
+        <div class="hp-vp-finding" aria-hidden="true">
+          <div class="hp-vp-finding__header">
+            <span class="hp-vp-finding__priority">Hercontrole</span>
+            <span class="hp-vp-finding__element">Element <code>Document uploaden</code></span>
+          </div>
+          <div class="hp-vp-finding__story">
+            <span class="hp-vp-finding__label">Bevinding uit het rapport</span>
+            <p>De knop <em>Document uploaden</em> is niet bereikbaar met het toetsenbord (2.1.1, niveau A).</p>
+          </div>
+          <div class="hp-vp-finding__export">
+            <span class="hp-vp-finding__export-label">Status na hercontrole</span>
+            <span class="hp-vp-finding__export-btn">Opgelost</span>
+            <span class="hp-vp-finding__export-btn">Datum vastgelegd</span>
+          </div>
+        </div>
+      </div>
+      <div class="hp-vp__content">
+        <span class="hp-vp__eyebrow">Na oplevering</span>
+        <h3 class="hp-vp__title">Bewijs dat het is opgelost, en een team dat het zelf ziet</h3>
+        <p class="hp-vp__body">
+          Na het herstel legt een hercontrole per bevinding vast dat het probleem weg is. Dat is
+          wat je nodig hebt als de AFM vraagt welke maatregelen je hebt genomen. De AFM verwacht
+          daarna structurele borging: periodieke controles en duidelijke verantwoordelijkheden.
+          Daarvoor trainen we je developers en je webredactie, zodat een nieuwe release of een
+          nieuw PDF-jaaroverzicht niet opnieuw een melding oplevert.
+        </p>
+        <a href="/hercontrole/" class="hp-btn hp-btn--outline">
+          Zo werkt de hercontrole
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── DIFFERENTIATORS ─── -->
+<section class="hp-diff">
+  <div class="hp-container">
+
+    <div class="hp-diff__header">
+      <h2 class="hp-diff__title">Waarom kiezen voor Proper Access</h2>
+    </div>
+
+    <div class="hp-diff__grid">
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">widgets</span>
+        <h3 class="hp-diff__card-title">Rapport per element</h3>
+        <p class="hp-diff__card-body">
+          De markt rapporteert per succescriterium, waardoor &eacute;&eacute;n inlogscherm onder
+          twaalf koppen terugkomt. Wij zetten alles wat aan dat scherm mankeert op &eacute;&eacute;n
+          plek, in de volgorde waarin je het oplost.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">record_voice_over</span>
+        <h3 class="hp-diff__card-title">Handmatig, met hulpsoftware</h3>
+        <p class="hp-diff__card-body">
+          Schermlezer, alleen toetsenbord, zoom tot 400% en controle op contrast en kleurgebruik.
+          Apps toetsen we op echte toestellen met VoiceOver op iOS en TalkBack op Android.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">balance</span>
+        <h3 class="hp-diff__card-title">Onafhankelijk</h3>
+        <p class="hp-diff__card-body">
+          We bouwen en beheren geen websites of apps, dus we keuren nooit ons eigen werk. Laat je
+          leverancier zijn eigen werk toetsen, dan gaat het gesprek met de AFM daarna over dat
+          oordeel.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">groups</span>
+        <h3 class="hp-diff__card-title">Taal per lezer</h3>
+        <p class="hp-diff__card-body">
+          De developer krijgt het code-voorbeeld, de redacteur de tekst die anders moet, en wie
+          de melding schrijft het criterium en het niveau. Elke bevinding begint met wat een
+          klant met een beperking merkt.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">visibility</span>
+        <h3 class="hp-diff__card-title">6-ogen-principe</h3>
+        <p class="hp-diff__card-body">
+          Een senior auditor voert het onderzoek uit, een tweede auditor doet de interne review,
+          en elk rapport wordt door drie mensen bekeken voordat het naar je toe gaat.
+        </p>
+      </div>
+
+      <div class="hp-diff__card">
+        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">science</span>
+        <h3 class="hp-diff__card-title">Eigen research, alles in de EU</h3>
+        <p class="hp-diff__card-body">
+          We testen wekelijks hoe browsers en hulpsoftware zich gedragen, en bouwen onze eigen
+          tools op ruim 950 audits. Server, opslag en statistieken staan bij Europese bedrijven.
+        </p>
+      </div>
+    </div>
+
+    <div class="hp-diff__cta">
+      <a href="/offerte-wcag-onderzoek/" class="hp-btn hp-btn--primary">
+        Vraag een offerte aan
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="hp-how">
+  <div class="hp-container">
+
+    <div class="hp-how__header">
+      <h2 class="hp-how__title">Van offerte tot bewijs in 3 stappen</h2>
+    </div>
+
+    <ol class="hp-how__grid">
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">1</span>
+        <h3 class="hp-how__step-title">Kennismaking en offerte</h3>
+        <p class="hp-how__step-body">
+          In 30 minuten bespreken we je website, je klantportaal, je app en je deadline. Je
+          krijgt binnen 2 werkdagen een offerte met de reikwijdte en het aantal uren. Werk je
+          met een testaccount voor de omgeving achter de login, dan regelen we dat hier.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">2</span>
+        <h3 class="hp-how__step-title">Handmatig onderzoek</h3>
+        <p class="hp-how__step-body">
+          Een senior auditor stelt volgens WCAG-EM een steekproef samen en loopt de klantreis
+          door: van inloggen tot aanvragen, ondertekenen en het downloaden van documenten. Een
+          volledig onderzoek duurt 3 tot 5 weken.
+        </p>
+      </li>
+
+      <li class="hp-how__step">
+        <span class="hp-how__step-number">3</span>
+        <h3 class="hp-how__step-title">Rapport, nabespreking en hercontrole</h3>
+        <p class="hp-how__step-body">
+          Je ontvangt het rapport per element, met CSV en schermafbeeldingen. In een
+          nabespreking lopen we de bevindingen door met je team. Na het herstel volgt de
+          hercontrole, met een aparte offerte op basis van het aantal bevindingen.
+        </p>
+      </li>
+    </ol>
+
+    <div class="hp-how__cta">
+      <a href="/zo-werken-wij/" class="hp-btn hp-btn--outline">
+        Lees hoe we werken
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── SOCIAL PROOF ─── -->
+<section class="hp-proof">
+  <div class="hp-container">
+    <div class="hp-proof__header">
+      <h2 class="hp-proof__title">Waar dit op gebouwd is</h2>
+      <p class="hp-proof__intro">
+        Ruim 950 audits sinds 2019, van abonnementsflows en afrekenprocessen tot apps op echte
+        toestellen. De cijfers hieronder zijn van 7 augustus 2026.
+      </p>
+    </div>
+
+    <div class="hp-proof__grid">
+      <div class="hp-proof__card hp-proof__card--stats">
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">950+</span>
+          <span class="hp-proof__stat-label">audits van websites</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">50+</span>
+          <span class="hp-proof__stat-label">audits van apps</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">63</span>
+          <span class="hp-proof__stat-label">opdrachtgevers</span>
+          <span class="hp-proof__stat-sub">NRC &middot; De Bijenkorf &middot; Jumbo &middot; Rijksmuseum</span>
+        </div>
+        <div class="hp-proof__stat">
+          <span class="hp-proof__stat-number">4 op de 10</span>
+          <span class="hp-proof__stat-label">opdrachtgevers komt terug voor een tweede opdracht</span>
+        </div>
+        <p class="stats-peildatum">Peildatum 7 augustus 2026.</p>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--case">
+        <h3 class="hp-proof__case-title">Ook de schermen van je leveranciers</h3>
+        <p class="hp-proof__case-body">Een klantreis bij een financi&euml;le dienstverlener loopt langs meer dan &eacute;&eacute;n partij:</p>
+        <ul class="hp-proof__case-list">
+          <li>Inloggen en identificeren, ook met een externe identificatiedienst</li>
+          <li>Aanvragen, document uploaden en digitaal ondertekenen</li>
+          <li>Betalen, overboeken en beleggingsorders in portaal en app</li>
+          <li>PDF-documenten, e-mails en de chat van de klantenservice</li>
+        </ul>
+        <p class="hp-proof__case-plus">
+          Loopt een stap via een <strong>externe partij</strong>, dan blijft het jouw dienst. We nemen die schermen mee in het onderzoek.
+        </p>
+        <p class="hp-proof__case-result">
+          <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span><strong>Resultaat:</strong> je weet per stap wat er misgaat, bij wie het ligt en wat je erover meldt.</span>
+        </p>
+        <a href="/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/" class="hp-proof__case-link">
+          Lees hoe dat ging bij de betaalstap van NRC
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="hp-proof__card hp-proof__card--quote">
+        <span class="material-symbols-outlined hp-proof__quote-icon" aria-hidden="true">format_quote</span>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            Een toegankelijkheidsaudit helpt om knelpunten, risico's en overtredingen van de
+            toegankelijkheidsvereisten in kaart te brengen. Een audit vormt de basis voor
+            gerichte verbeterstappen.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; AFM, EAA-update 3, april 2026
+          </footer>
+        </blockquote>
+        <blockquote class="hp-proof__quote">
+          <p class="hp-proof__quote-text">
+            Toch valt ons op dat de meldingen niet altijd concreet worden ingevuld. Wij kunnen
+            dan niet goed beoordelen wat de toegankelijkheidsproblemen precies zijn en waar deze
+            zich bevinden.
+          </p>
+          <footer class="hp-proof__quote-attribution">
+            &mdash; AFM, EAA-update 3, april 2026
+          </footer>
+        </blockquote>
+        <p class="hp-proof__quote-note">Citaten uit de <a href="https://www.afm.nl/~/profmedia/files/publicaties/2026/eaa-update-3_nl.pdf" rel="noopener noreferrer" target="_blank">EAA-update 3 van de AFM (PDF)<span class="sr-only"> (opent in nieuw venster)</span></a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── FAQ ─── -->
+{{ with .Params.faqs }}
+<section class="hp-faq">
+  <div class="hp-container">
+    <h2 class="hp-heading-lg hp-faq__title">Vragen die financi&euml;le dienstverleners ons stellen</h2>
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

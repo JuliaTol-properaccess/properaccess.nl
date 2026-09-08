@@ -24,6 +24,11 @@ Wist je dat een toegankelijke webshop tot 25% minder bezoekersverlies leidt?
 Een toegankelijke site werkt probleemloos op alle apparaten en biedt álle klanten een prettige gebruikerservaring. Benieuwd waar in jouw funnel klanten afhaken? Wij brengen het voor je in kaart.
 
 
+## Financiële instellingen
+
+Banken, verzekeraars, kredietaanbieders en beleggingsondernemingen vallen voor hun diensten aan consumenten onder de EAA, met de AFM als toezichthouder. We toetsen de hele klantreis, van inloggen tot ondertekenen en het PDF-jaaroverzicht, en leveren een rapport waarmee je de EAA-melding concreet invult. [Lees meer over toegankelijkheid voor financiële instellingen](/financiele-instellingen-digitale-toegankelijkheid/).
+
+
 ## Digital Agency
 
 We testen digitale toegankelijkheid tijdens de bouw van een website en draaien met je team mee in sprints. We maken user stories op basis van verschillende beperkingen en dragen oplossignen bij. Zo zorgen we samen voor een toegankelijk resultaat waar we trots op zijn!

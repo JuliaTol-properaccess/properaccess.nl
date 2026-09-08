@@ -104,7 +104,7 @@ Alles waar een consument iets kan bestellen en betalen. Het afrekenproces is het
 
 {{< section-card title="Ticketing, cultuur en attracties" >}} Kaartverkoop voor evenementen, musea, theaters en pretparken. Let op: of je onder de EAA valt of onder het BDTO hangt af van wat je organisatie juridisch is. [Toegankelijkheid voor cultuur en attracties](/inclusie-cultuur-sport-en-attracties/) {{< /section-card >}}
 
-{{< section-card title="Bankieren, verzekeren en telecom" >}} Online bankieren, verzekeringen afsluiten, telefonie- en internetabonnementen. Voor bankdiensten aan consumenten is de AFM de toezichthouder en niet de ACM. [Toegankelijkheid voor e-commerce](/e-commerce-digitale-toegankelijkheid/)
+{{< section-card title="Bankieren, verzekeren en telecom" >}} Online bankieren, verzekeringen afsluiten, telefonie- en internetabonnementen. Voor bankdiensten aan consumenten is de AFM de toezichthouder en niet de ACM. [Toegankelijkheid voor financiële instellingen](/financiele-instellingen-digitale-toegankelijkheid/)
 {{< /section-card >}}
 
 {{< section-card title="Reizen boeken en vervoer" >}}
