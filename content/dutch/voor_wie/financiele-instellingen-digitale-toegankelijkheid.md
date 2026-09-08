@@ -5,7 +5,6 @@ date: 2026-09-08
 slug: "financiele-instellingen-digitale-toegankelijkheid"
 url: "/financiele-instellingen-digitale-toegankelijkheid/"
 layout: "financieel"
-draft: true
 description: "De AFM houdt toezicht op de EAA bij bankdiensten en financiële e-handelsdiensten en startte in 2026 een nalevingsonderzoek. Laat je website, klantportaal en app handmatig toetsen aan WCAG 2.2 en vul je EAA-melding concreet in."
 keywords:
   - toegankelijkheid bank
