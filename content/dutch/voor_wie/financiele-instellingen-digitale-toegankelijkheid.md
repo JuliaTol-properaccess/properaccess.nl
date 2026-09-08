@@ -59,10 +59,13 @@ faqs:
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
 ---
 
-{{< section-full title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}
+{{< section-tweekolom title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}
+{{< kolom-tekst >}}
+Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk.
 
-Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk. De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie; een klantportaal achter een login telt mee in de omvang. Alle bedragen zijn exclusief 21% btw.
-
+De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie; een klantportaal achter een login telt mee in de omvang. Alle bedragen zijn exclusief 21% btw.
+{{< /kolom-tekst >}}
+{{< kolom-naast >}}
 | Wat we toetsen | Indicatieprijs |
 | --- | --- |
 | Eenvoudige website, informatie en contact, geen portaal | vanaf circa € 2.250 |
@@ -70,8 +73,8 @@ Proper Access doet dat. We toetsen websites, klantportalen en apps van financië
 | Website met klantportaal, inlog, aanvraagflows en ondertekenen | circa € 4.200 |
 | Complexe omgeving met meerdere labels, portalen of maatwerkcomponenten | circa € 5.100 |
 | App, per platform (iOS of Android) | € 2.150 |
-
-{{< /section-full >}}
+{{< /kolom-naast >}}
+{{< /section-tweekolom >}}
 
 {{< section-route title="Zo verloopt een audit, van offerte tot bewijs" eyebrow="Stappenplan" id="stappenplan" >}}
 {{< route-stap n="1" title="Offerte" >}}

@@ -19367,3 +19367,10 @@ textarea.hp-form__input {
     min-height: 100%;
   }
 }
+
+/* Welk bureau op de financiële pagina: tekst een derde, prijstabel twee derde. */
+@media (min-width: 900px) {
+  #welk-bureau .tweekolom__grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
