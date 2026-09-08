@@ -6243,17 +6243,25 @@ html.dark .toolsuite-promo__text {
   letter-spacing: 0.08em;
 }
 
+/* Rand en placeholder van invoervelden. De rand was #e5e7eb (1,2:1 op wit) en
+   dat haalt 1.4.11 niet; navy geeft 14,7:1. De placeholder krijgt navy op 75%
+   dekking, dat is circa #575f69 en 6,4:1 op wit. */
 .hp-form__input {
   width: 100%;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #1F2937;
   outline: none;
   transition: all 0.2s;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   color: #1F2937;
   background: #fff;
+}
+
+.hp-form__input::placeholder {
+  color: #1F2937;
+  opacity: 0.75;
 }
 
 .hp-form__input:focus {
