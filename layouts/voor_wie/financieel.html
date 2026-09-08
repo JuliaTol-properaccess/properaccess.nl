@@ -98,7 +98,7 @@
           <h3 class="hp-pain-card__title">Wat de AFM van je verwacht</h3>
           <ul class="hp-pain-card__list">
             <li><strong>Nalevingsonderzoek</strong> naar de websites van financi&euml;le ondernemingen, aangekondigd in april 2026 voor het kwartaal erna.</li>
-            <li><strong>Vier criteria altijd kritiek:</strong> geluidsbediening, geen toetsenbordval, pauzeren en stoppen, en drie flitsen. Een fout daarin maakt de hele website onbruikbaar.</li>
+            <li><strong>Vier criteria altijd kritiek:</strong> geluidsbediening, geen toetsenbordval, beweging op de pagina, en drie flitsen. Een fout daarin maakt de hele website onbruikbaar.</li>
             <li><strong>Meldplicht.</strong> Kritieke en serieuze problemen meld je binnen een week na constatering in het AFM Portaal, matige en kleine binnen een maand.</li>
             <li><strong>Een audit als basis.</strong> De AFM noemt een toegankelijkheidsaudit als startpunt voor gerichte verbeterstappen, en vraagt om structurele borging daarna.</li>
           </ul>
@@ -166,7 +166,7 @@
 
 
 <!-- ─── VALUE PROPS ─── -->
-<section class="hp-vp">
+<section class="hp-vp fin-vp">
   <div class="hp-container">
 
     <div class="hp-vp__header">
@@ -283,8 +283,8 @@
       <p class="fin-tabs__intro">We lopen de klantreis door zoals een consument dat doet. De inlog en het aanvraagproces zijn de onderdelen waar we bij financi&euml;le diensten de meeste bevindingen noteren.</p>
     </div>
 
-    <div class="fin-tabs" data-fin-tabs>
-      <div class="fin-tabs__list" role="tablist" aria-label="Onderdelen van de klantreis">
+    <div class="fin-tabs fin-tabs--vertical" data-fin-tabs>
+      <div class="fin-tabs__list" role="tablist" aria-orientation="vertical" aria-label="Onderdelen van de klantreis">
         <button type="button" class="fin-tabs__tab" role="tab" id="fin-tab-inlog" aria-controls="fin-panel-inlog" aria-selected="true">
           <span class="material-symbols-outlined" aria-hidden="true">key</span> Inloggen en identificeren
         </button>
@@ -297,7 +297,14 @@
         <button type="button" class="fin-tabs__tab" role="tab" id="fin-tab-documenten" aria-controls="fin-panel-documenten" aria-selected="false" tabindex="-1">
           <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span> Documenten en communicatie
         </button>
+        <button type="button" class="fin-tabs__tab" role="tab" id="fin-tab-corporate" aria-controls="fin-panel-corporate" aria-selected="false" tabindex="-1">
+          <span class="material-symbols-outlined" aria-hidden="true">language</span> Corporate website
+        </button>
+        <button type="button" class="fin-tabs__tab" role="tab" id="fin-tab-webapps" aria-controls="fin-panel-webapps" aria-selected="false" tabindex="-1">
+          <span class="material-symbols-outlined" aria-hidden="true">calculate</span> Webapps en rekentools
+        </button>
       </div>
+      <div class="fin-tabs__panels">
 
       <div class="fin-tabs__panel" role="tabpanel" id="fin-panel-inlog" aria-labelledby="fin-tab-inlog" tabindex="0">
         <h3 class="fin-tabs__title">Inloggen en identificeren</h3>
@@ -337,6 +344,27 @@
           <li>Dit onderdeel wordt het vaakst vergeten, omdat de documenten uit een ander systeem komen dan de website.</li>
           <li>Het taalniveau B2 dat de AFM vraagt is geen WCAG-criterium en valt buiten de audit.</li>
         </ul>
+      </div>
+
+      <div class="fin-tabs__panel" role="tabpanel" id="fin-panel-corporate" aria-labelledby="fin-tab-corporate" tabindex="0" hidden>
+        <h3 class="fin-tabs__title">Corporate website</h3>
+        <p>De openbare website: productinformatie, tarieven, voorwaarden, nieuws en contact. Hier begint de klantreis, en hier kijkt de AFM als eerste bij een nalevingsonderzoek naar websites.</p>
+        <ul>
+          <li>Koppen, links, tabellen met tarieven en de zoekfunctie, zoals een schermlezer ze voorleest.</li>
+          <li>Cookiebanner, chatwidget en video's: bedienbaar zonder muis en zonder dat ze de pagina blokkeren.</li>
+          <li>Contactroute en klachtenformulier, want de AFM vraagt een toegankelijke helpdesk.</li>
+        </ul>
+      </div>
+
+      <div class="fin-tabs__panel" role="tabpanel" id="fin-panel-webapps" aria-labelledby="fin-tab-webapps" tabindex="0" hidden>
+        <h3 class="fin-tabs__title">Webapps en rekentools</h3>
+        <p>Hypotheekberekening, premieberekening, een beleggingsdashboard of een aanvraagstraat die als webapp is gebouwd. Hier gaat het vaak mis bij wat er verandert zonder dat de pagina herlaadt.</p>
+        <ul>
+          <li>Wordt een nieuw resultaat of een nieuwe stap aangekondigd aan een schermlezer, en komt de focus op de juiste plek?</li>
+          <li>Schuifregelaars, grafieken en dialoogvensters: bedienbaar met het toetsenbord en met een tekstalternatief.</li>
+          <li>We toetsen de webapp in de browser zoals een klant hem gebruikt, ook achter een login.</li>
+        </ul>
+      </div>
       </div>
     </div>
 
@@ -428,10 +456,6 @@
           <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">verified</span>
           <span><strong>Resultaat:</strong> je weet per stap bij wie het ligt en wat je erover meldt.</span>
         </p>
-        <a href="/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/" class="hp-proof__case-link">
-          Lees hoe dat ging bij de betaalstap van NRC
-          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-        </a>
       </div>
 
       <div class="hp-proof__card hp-proof__card--quote">
