@@ -18,7 +18,7 @@ keywords:
   - toegankelijkheid beleggingsapp
   - AFM nalevingsonderzoek toegankelijkheid
 tldr: |
-  Sinds 28 juni 2025 moeten bankdiensten en financiële e-handelsdiensten aan consumenten voldoen aan de European Accessibility Act (EAA). De Autoriteit Financiële Markten (AFM) is daarvoor de toezichthouder: voor banken, verzekeraars, kredietaanbieders, betaaldiensten, beleggingsondernemingen, crowdfundingplatformen en online advies- en bemiddelingsdiensten. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen, met aandacht voor de WCAG-criteria op niveau A. Wie niet voldoet, is verplicht dat te melden in het AFM Portaal: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Proper Access toetst websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM, en levert een rapport per element waarmee je de melding concreet invult. Een onderzoek kost circa € 2.250 tot € 5.100 voor een website en € 2.150 per platform voor een app, exclusief btw.
+  Sinds 28 juni 2025 moeten bankdiensten en financiële e-handelsdiensten aan consumenten voldoen aan de European Accessibility Act (EAA). De Autoriteit Financiële Markten (AFM) is daarvoor de toezichthouder: voor banken, verzekeraars, kredietaanbieders, betaaldiensten, beleggingsondernemingen, crowdfundingplatformen en online advies- en bemiddelingsdiensten. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen, aan de WCAG-criteria, met de niveau-A-criteria als eerste prioriteit; de norm blijft niveau AA. Wie niet voldoet, is verplicht dat te melden in het AFM Portaal: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Proper Access toetst websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM, en levert een rapport per element waarmee je de melding concreet invult. Een audit kost circa € 2.250 tot € 5.100 voor een website en € 2.150 per platform voor een app, exclusief btw.
 
 banner:
   badge: "EAA en AFM-toezicht"
@@ -38,7 +38,7 @@ trust:
   names:
     - "NRC"
     - "De Bijenkorf"
-    - "Jumbo"
+    - "Plus"
     - "Rijksmuseum"
     - "Provincie Noord-Holland"
     - "Gemeente Amersfoort"
@@ -46,16 +46,16 @@ trust:
 faqs:
   - question: "Valt mijn organisatie onder de AFM of onder de ACM?"
     answer: "Dat hangt af van de dienst. Bankdiensten aan consumenten en financiële e-handelsdiensten vallen onder de AFM: kredietovereenkomsten, beleggingsdiensten, betalingsdiensten, elektronisch geld, betaalrekeningen, online verzekeringen, crowdfunding en online advies en bemiddeling in financiële producten. Webshops en apps die geen financiële dienst zijn, vallen onder de ACM. Verkoop je verzekeringen via een webshop van een andere partij, dan kan die partij met de ACM te maken krijgen en jij met de AFM. Twijfel je, leg de vraag dan voor aan je jurist; de AFM verwacht dat je zelf in kaart brengt of je onder de EAA valt."
-  - question: "Wat kost een onderzoek voor een bank of verzekeraar?"
+  - question: "Wat kost een audit voor een bank of verzekeraar?"
     answer: "Dat hangt af van het aantal unieke paginatypes en de hoeveelheid interactie. Een eenvoudige website begint vanaf circa € 2.250, een gemiddelde website kost circa € 3.150 en een complexe website met klantportaal, aanvraagflows en ondertekenen circa € 5.100. Een app kost € 2.150 per platform, dus iOS en Android tellen apart. Alle bedragen zijn exclusief 21% btw. Je krijgt vooraf een offerte met de reikwijdte en het aantal uren."
-  - question: "Hoelang duurt een onderzoek?"
-    answer: "Een volledig onderzoek van een website duurt 3 tot 5 weken. Een mini-audit, tot 5 uur handmatige controle door een senior auditor, levert binnen 5 werkdagen de grootste knelpunten op. Onderzoek je website, portaal en app tegelijk, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
-  - question: "Moet ik de melding bij de AFM doen voordat het onderzoek klaar is?"
-    answer: "De meldplicht loopt vanaf het moment dat je een probleem constateert: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Wat je precies wanneer meldt is een juridische vraag voor je eigen jurist. Wat het onderzoek doet, is de melding concreet maken: welk deel van de dienstverlening, welk WCAG-criterium, of het om iOS of Android gaat, en welke maatregelen je neemt. Dat zijn precies de vragen uit het meldformulier van de AFM."
+  - question: "Hoelang duurt een audit?"
+    answer: "Een volledige audit van een website duurt 3 tot 5 weken. Een mini-audit, tot 5 uur handmatige controle door een senior auditor, levert binnen 5 werkdagen de grootste knelpunten op. Laat je website, portaal en app tegelijk toetsen, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
+  - question: "Moet ik de melding bij de AFM doen voordat de audit klaar is?"
+    answer: "De meldplicht loopt vanaf het moment dat je een probleem constateert: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Wat je precies wanneer meldt is een juridische vraag voor je eigen jurist. Wat de audit doet, is de melding concreet maken: welk deel van de dienstverlening, welk WCAG-criterium, of het om iOS of Android gaat, en welke maatregelen je neemt. Dat zijn precies de vragen uit het meldformulier van de AFM."
   - question: "Toetsen jullie ook het klantportaal achter een login en de app?"
     answer: "Ja. Voor het portaal werken we met een testaccount dat jij aanmaakt, zodat we inloggen, overboeken, een aanvraag doen en documenten downloaden zoals een klant dat doet. Apps toetsen we op echte toestellen met VoiceOver op iOS en TalkBack op Android. We rekenen ook echt af of dienen een aanvraag in als dat in een testomgeving kan, zodat we de hele route zien."
   - question: "Onze inlog, identificatie en ondertekening lopen via een leverancier. Hoe zit dat?"
-    answer: "Die schermen horen bij jouw dienst, dus we nemen ze mee in het onderzoek. In het rapport staat per bevinding bij welk onderdeel het hoort, zodat je weet wat je zelf oplost en wat je bij de leverancier neerlegt. De AFM schrijft in haar EAA-updates dat je uitbestedingspartners vroeg moet betrekken en afspraken moet maken over aanpassingen. Wij leveren daarvoor de formulering per bevinding, met het criterium erbij."
+    answer: "Die schermen horen bij jouw dienst, dus we nemen ze mee in de audit. In het rapport staat per bevinding bij welk onderdeel het hoort, zodat je weet wat je zelf oplost en wat je bij de leverancier neerlegt. De AFM schrijft in haar EAA-updates dat je uitbestedingspartners vroeg moet betrekken en afspraken moet maken over aanpassingen. Wij leveren daarvoor de formulering per bevinding, met het criterium erbij."
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
   - question: "Wat krijgen we precies?"
@@ -78,7 +78,7 @@ Die opsomming is volgens de AFM niet volledig. Ze verwacht dat je zelf in kaart 
 
 Drie grenzen om te kennen. Dienstverlening aan zakelijke klanten valt buiten de EAA, maar een zzp'er die een financiële dienst privé afneemt telt als consument. Een tweede-pijlerpensioenregeling valt in principe buiten de reikwijdte. En micro-ondernemingen zijn voor hun diensten vrijgesteld: minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro. In de financiële sector geldt die vrijstelling zelden.
 
-Wat de wet vraagt is een toegankelijke dienst, geen onderzoek. Een onderzoek is de manier om te weten waar je staat en om je melding concreet te maken. Wat de EAA is en welke norm eronder ligt, staat op [de pagina over de European Accessibility Act](/eaa/).
+Wat de wet vraagt is een toegankelijke dienst, geen audit. Een audit is de manier om te weten waar je staat en om je melding concreet te maken. Wat de EAA is en welke norm eronder ligt, staat op [de pagina over de European Accessibility Act](/eaa/).
 
 {{< /section-full >}}
 
@@ -117,14 +117,14 @@ Saldo bekijken, overboeken, een beleggingsorder plaatsen, een polis wijzigen. Ac
 {{< /section-card >}}
 {{< section-card title="Documenten en communicatie" >}}
 
-Het jaaroverzicht, de polis, de offerte en de klantovereenkomst als PDF, de e-mails en de chat van de klantenservice. De AFM rekent alles wat een klant nodig heeft om de dienst te gebruiken tot de dienstverlening, en een PDF die je op een duurzame drager moet verstrekken moet zelf toegankelijk zijn. Dit is het onderdeel dat het vaakst wordt vergeten, omdat de documenten uit een ander systeem komen dan de website. Het taalniveau B2 dat de AFM vraagt is geen WCAG-criterium en valt buiten het onderzoek.
+Het jaaroverzicht, de polis, de offerte en de klantovereenkomst als PDF, de e-mails en de chat van de klantenservice. De AFM rekent alles wat een klant nodig heeft om de dienst te gebruiken tot de dienstverlening, en een PDF die je op een duurzame drager moet verstrekken moet zelf toegankelijk zijn. Dit is het onderdeel dat het vaakst wordt vergeten, omdat de documenten uit een ander systeem komen dan de website. Het taalniveau B2 dat de AFM vraagt is geen WCAG-criterium en valt buiten de audit.
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-full title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}
 
-Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het onderzoek uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk.
+Proper Access doet dat. We toetsen websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk.
 
 Het rapport is per element opgebouwd en niet per succescriterium. Alles wat er aan het inlogscherm of het uploadveld mankeert staat op één plek, met het WCAG-criterium, het niveau, een schermafbeelding en de oplossing. Daarmee vul je de zes vragen uit het meldformulier van de AFM in zonder eerst twaalf hoofdstukken bij elkaar te zoeken.
 
@@ -138,6 +138,6 @@ De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie
 | Complexe omgeving met meerdere labels, portalen of maatwerkcomponenten | circa € 5.100 |
 | App, per platform (iOS of Android) | € 2.150 |
 
-Een volledig onderzoek duurt 3 tot 5 weken. Weet je nog niet waar je staat, dan is een [mini-audit](/webshop-quickscan/) van € 495 het startpunt: tot 5 uur handmatige controle door een senior auditor, met de grootste knelpunten op een rij. Na het oplossen legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is. Wat die kost hangt af van het aantal bevindingen en staat in een aparte offerte die volgt na oplevering van het rapport.
+Een volledige audit duurt 3 tot 5 weken. Weet je nog niet waar je staat, dan is een [mini-audit](/webshop-quickscan/) van € 495 het startpunt: tot 5 uur handmatige controle door een senior auditor, met de grootste knelpunten op een rij. Na het oplossen legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is. Wat die kost hangt af van het aantal bevindingen en staat in een aparte offerte die volgt na oplevering van het rapport.
 
 {{< /section-full >}}
