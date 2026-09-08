@@ -23,11 +23,11 @@ tldr: |
 banner:
   badge: "EAA en AFM-toezicht"
   title: "Voldoe aan de EAA voordat de AFM je website toetst"
-  content: "Geen scanrapport met honderd WCAG-codes en geen melding die de AFM niet kan beoordelen. Je krijgt een handmatig onderzoek van je website, klantportaal en app, met per element wat er misgaat, voor welke klant, en hoe je het oplost."
+  content: "Je moet voldoen aan de EAA, het liefst snel en zonder meer uit te geven dan nodig. We brengen je digitale kanalen in kaart, toetsen handmatig wat een consument aanraakt en leveren een plan van aanpak dat je team zelf kan uitvoeren."
   bullets:
-    - "**Per element:** alles wat aan het inlogscherm mankeert op één plek, met het criterium en het niveau dat de AFM in je melding wil zien"
-    - "**Hele klantreis:** van inloggen en identificeren tot aanvragen, ondertekenen en het PDF-jaaroverzicht"
-    - "**Bewijs na herstel:** een hercontrole legt per bevinding vast dat het probleem weg is"
+    - "**Per component:** alles wat aan een component mankeert op één plek, met het criterium en het niveau dat de AFM in je melding wil zien"
+    - "**Alles wat een consument aanraakt:** van inloggen tot het kiezen en kopen van digitale producten, via de website of de mobiele app"
+    - "**Plan van aanpak en een gesprekspartner:** oplossingen per bevinding, training zodat je team problemen zelf opspoort, en iemand die meedenkt over je melding en je gesprek met de AFM"
   button:
     enable: true
     label: "Vraag een offerte aan"
