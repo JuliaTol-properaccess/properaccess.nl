@@ -25,9 +25,9 @@ banner:
   title: "Voldoe aan de EAA voordat de AFM je website toetst"
   content: "Je moet voldoen aan de EAA, het liefst snel en zonder meer uit te geven dan nodig. We brengen je digitale kanalen in kaart, toetsen handmatig wat een consument aanraakt en leveren een plan van aanpak dat je team zelf kan uitvoeren."
   bullets:
-    - "**Per component:** alles wat aan een component mankeert op één plek, met het criterium en het niveau dat de AFM in je melding wil zien"
+    - "**Per component:** alles wat aan een component mankeert op één plek, met een concrete oplossing en instructie hoe je zelf test"
     - "**Alles wat een consument aanraakt:** van inloggen tot het kiezen en kopen van digitale producten, via de website of de mobiele app"
-    - "**Plan van aanpak en een gesprekspartner:** oplossingen per bevinding, training zodat je team problemen zelf opspoort, en iemand die meedenkt over je melding en je gesprek met de AFM"
+    - "**Plan van aanpak en een gesprekspartner:** oplossingen per bevinding, training zodat je team problemen zelf opspoort, en iemand die je bij de AFM vertegenwoordigt"
   button:
     enable: true
     label: "Vraag een offerte aan"
