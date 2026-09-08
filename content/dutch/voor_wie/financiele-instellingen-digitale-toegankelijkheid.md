@@ -23,7 +23,7 @@ tldr: |
 
 banner:
   badge: "EAA en AFM-toezicht"
-  title: "Voldoe aan de EAA voordat de AFM je website toetst"
+  title: "Voldoe aan de European Accessibility Act"
   content: "Je moet voldoen aan de EAA, het liefst snel en zonder meer uit te geven dan nodig. We brengen je digitale kanalen in kaart, toetsen handmatig wat een consument aanraakt en leveren een plan van aanpak dat je team zelf kan uitvoeren."
   bullets:
     - "**Per component:** alles wat aan een component mankeert op één plek, met een concrete oplossing en instructie hoe je zelf test"
