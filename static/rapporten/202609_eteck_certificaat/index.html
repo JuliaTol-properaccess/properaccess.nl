@@ -109,6 +109,30 @@
 
   .kenmerk strong { display: block; font-size: 1rem; color: var(--donkerblauw); }
 
+  .opdrachtgever {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    background: var(--wit);
+    border: 1px solid var(--lijn);
+    border-left: 5px solid var(--magenta);
+    padding: 1.25rem 1.5rem;
+    margin: 0 0 2rem;
+  }
+
+  .opdrachtgever img { width: 150px; height: auto; }
+
+  .opdrachtgever p {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: .9375rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--petrol);
+  }
+
   .soort {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
@@ -224,6 +248,11 @@
     <p class="soort">Certificaat</p>
     <h1>Toegankelijkheidsonderzoek Eteck</h1>
 
+    <div class="opdrachtgever">
+      <img src="/rapporten/202609_eteck_certificaat/eteck-logo.svg" alt="Eteck">
+      <p>In opdracht van Eteck B.V.</p>
+    </div>
+
     <p class="inleiding">Proper Access heeft tussen juni 2025 en augustus 2026 vier digitale kanalen van Eteck onderzocht op digitale toegankelijkheid: de website, Mijn Eteck, de Android-app en de iOS-app. Dit certificaat beschrijft welke onderzoeken zijn uitgevoerd, hoe het traject verliep en hoe wij werken.</p>
 
     <h2>De onderzochte kanalen</h2>
@@ -294,7 +323,7 @@
     <p>Wij hebben elke eerdere bevinding opnieuw getoetst en de nieuwe bevindingen die wij daarbij vonden erbij gezet. De website ging als eerste, daarna Mijn Eteck, en in augustus de iOS-app na de release van versie 26.7.2. Een deel van de bevindingen was opgelost, een deel niet. Die staan in de hercontrolerapporten, met per bevinding wat er nog niet klopt.</p>
 
     <h3>Augustus en september 2026: het vervolg bij Eteck en Fabrique</h3>
-    <p>Fabrique liet ons op 16 augustus en 8 september 2026 weten dat de resterende punten uit de hercontroles inmiddels zijn opgelost, op de contentpunten na. Die pakt Eteck zelf op. Wij hebben die oplossingen niet opnieuw getoetst, dus dit is de opgave van Fabrique en geen bevinding van ons.</p>
+    <p>Fabrique liet ons op 16 augustus en 8 september 2026 weten dat de resterende punten uit de hercontroles inmiddels zijn opgelost, op de contentpunten na. Die pakt Eteck zelf op. Wij hebben die oplossingen niet zelf getoetst, dus we geven ze hier weer zoals Fabrique ze aan ons doorgaf.</p>
 
     <h2>Hoe wij onderzoeken</h2>
 
@@ -309,7 +338,9 @@
     <div class="kader">
       <h2>Wat dit certificaat zegt, en wat niet</h2>
       <p>Dit certificaat legt vast welke onderzoeken Proper Access heeft uitgevoerd, wanneer, volgens welke norm en volgens welke methode. Het is een bevestiging van het traject.</p>
-      <p>Het is geen verklaring dat de kanalen van Eteck voldoen aan WCAG 2.2 of aan EN 301 549. Zo'n uitspraak kunnen wij alleen doen op grond van een onderzoek waarin geen enkel succescriterium is afgekeurd, en dat is hier niet het geval. Wat er per kanaal is getoetst en wat er nog openstond op de datum van elk rapport, staat in de rapporten waarnaar deze pagina linkt.</p>
+      <p>Het is geen verklaring dat de kanalen van Eteck aan WCAG 2.2 of aan EN 301 549 voldoen. Zo'n verklaring hoort bij een onderzoek waarin geen succescriterium meer is afgekeurd. Wat er per kanaal is getoetst en wat er openstond op de datum van elk rapport, staat in de rapporten waarnaar deze pagina linkt.</p>
+
+      <p>Eteck en Fabrique werken door aan de punten uit de hercontroles. Toetsen in eigen beheer mag: er is geen regel die voorschrijft dat een externe partij de volgende controle doet.</p>
       <p>Een rapport beschrijft de stand op de onderzoeksdatum. Een website of app die daarna verandert, kan andere bevindingen opleveren.</p>
     </div>
 
@@ -335,6 +366,11 @@
 
     <p class="soort">Certificate</p>
     <h1>Accessibility testing at Eteck</h1>
+
+    <div class="opdrachtgever">
+      <img src="/rapporten/202609_eteck_certificaat/eteck-logo.svg" alt="Eteck">
+      <p>Commissioned by Eteck B.V.</p>
+    </div>
 
     <p class="inleiding">Between June 2025 and August 2026, Proper Access tested four of Eteck's digital channels for accessibility: the website, Mijn Eteck, the Android app and the iOS app. This certificate sets out which audits were carried out, how the project ran, and how we work.</p>
 
@@ -406,7 +442,7 @@
     <p>We retested every earlier finding and added the new findings that surfaced along the way. The website came first, then Mijn Eteck, and in August the iOS app after the release of version 26.7.2. Some findings had been resolved and some had not. Those are in the retest reports, each one describing what is still wrong.</p>
 
     <h3>August and September 2026: what happened next at Eteck and Fabrique</h3>
-    <p>On 16 August and 8 September 2026, Fabrique told us that the remaining points from the retests have since been resolved, apart from the content issues, which Eteck is handling itself. We have not retested those fixes, so this is Fabrique's account and not a finding of ours.</p>
+    <p>On 16 August and 8 September 2026, Fabrique told us that the remaining points from the retests have since been resolved, apart from the content issues, which Eteck is handling itself. We have not tested those fixes ourselves, so we report them here as Fabrique passed them on to us.</p>
 
     <h2>How we test</h2>
 
@@ -421,7 +457,9 @@
     <div class="kader">
       <h2>What this certificate does and does not say</h2>
       <p>This certificate records which audits Proper Access carried out, when, against which standard and using which methodology. It confirms the project took place.</p>
-      <p>It is not a statement that Eteck's channels conform to WCAG 2.2 or to EN 301 549. We can only make that statement on the basis of an audit in which no success criterion failed, and that is not the case here. What was tested per channel, and what was still open on the date of each report, is set out in the reports this page links to.</p>
+      <p>It is not a statement that Eteck's channels conform to WCAG 2.2 or to EN 301 549. Such a statement belongs with an audit in which no success criterion fails. What was tested per channel, and what was open on the date of each report, is set out in the reports this page links to.</p>
+
+      <p>Eteck and Fabrique are continuing to work on the points from the retests. Testing in-house is permitted: no rule requires an external party to carry out the next check.</p>
       <p>A report describes the situation on the date of the audit. A website or app that changes afterwards may produce different findings.</p>
     </div>
 
