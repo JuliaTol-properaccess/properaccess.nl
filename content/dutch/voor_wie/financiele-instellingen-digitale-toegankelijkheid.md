@@ -49,7 +49,7 @@ faqs:
   - question: "Wat kost een audit voor een bank of verzekeraar?"
     answer: "Dat hangt af van het aantal unieke paginatypes en de hoeveelheid interactie. Een eenvoudige website begint vanaf circa € 2.250, een gemiddelde website kost circa € 3.150 en een complexe website met klantportaal, aanvraagflows en ondertekenen circa € 5.100. Een app kost € 2.150 per platform, dus iOS en Android tellen apart. Alle bedragen zijn exclusief 21% btw. Je krijgt vooraf een offerte met de reikwijdte en het aantal uren."
   - question: "Hoelang duurt een audit?"
-    answer: "Een volledige audit van een website duurt 3 tot 5 weken. Een mini-audit, tot 5 uur handmatige controle door een senior auditor, levert binnen 5 werkdagen de grootste knelpunten op. Laat je website, portaal en app tegelijk toetsen, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
+    answer: "Een volledige audit van een website duurt 3 tot 5 weken. Een mini-audit levert binnen 5 werkdagen de grootste knelpunten op. Laat je website, portaal en app tegelijk toetsen, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
   - question: "Moet ik de melding bij de AFM doen voordat de audit klaar is?"
     answer: "De meldplicht loopt vanaf het moment dat je een probleem constateert: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Wat je precies wanneer meldt is een juridische vraag voor je eigen jurist. Wat de audit doet, is de melding concreet maken: welk deel van de dienstverlening, welk WCAG-criterium, of het om iOS of Android gaat, en welke maatregelen je neemt. Dat zijn precies de vragen uit het meldformulier van de AFM."
   - question: "Onze inlog, identificatie en ondertekening lopen via een leverancier. Hoe zit dat?"
