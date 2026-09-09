@@ -18,7 +18,7 @@ keywords:
   - toegankelijkheid beleggingsapp
   - AFM nalevingsonderzoek toegankelijkheid
 tldr: |
-  Bankdiensten en financiële e-handelsdiensten aan consumenten vallen sinds 28 juni 2025 onder de European Accessibility Act, met de AFM als toezichthouder. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen; wie niet voldoet, meldt dat in het AFM Portaal. Proper Access toetst websites, klantportalen en apps handmatig aan WCAG 2.2 niveau AA en levert een rapport per component waarmee je die melding concreet invult. Een audit kost circa € 2.250 tot € 5.100 per website en € 2.150 per app-platform, exclusief btw.
+  Bankdiensten en financiële e-handelsdiensten aan consumenten vallen sinds 28 juni 2025 onder de European Accessibility Act, met de AFM als toezichthouder. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen; wie niet voldoet, meldt dat in het AFM Portaal. Proper Access toetst websites, klantportalen en apps handmatig aan WCAG 2.2 niveau AA en levert een rapport per component waarmee je die melding concreet invult. Een audit kost circa € 2.250 tot € 5.100 per website en € 2.150 per app-platform, exclusief btw. Wie alles in één keer wil regelen, kiest een begeleidingstraject van 3 tot 6 maanden: inventarisatie, audits van alle kanalen, een voortgangsdashboard, trainingen voor devteams, webredactie en klantenservice, en begeleiding bij het herstel.
 
 banner:
   badge: "EAA en AFM-toezicht"
@@ -54,6 +54,8 @@ faqs:
     answer: "De meldplicht loopt vanaf het moment dat je een probleem constateert: kritieke en serieuze problemen binnen een week, matige en kleine binnen een maand. Wat je precies wanneer meldt is een juridische vraag voor je eigen jurist. Wat de audit doet, is de melding concreet maken: welk deel van de dienstverlening, welk WCAG-criterium, of het om iOS of Android gaat, en welke maatregelen je neemt. Dat zijn precies de vragen uit het meldformulier van de AFM."
   - question: "Onze inlog, identificatie en ondertekening lopen via een leverancier. Hoe zit dat?"
     answer: "Die schermen horen bij jouw dienst, dus we nemen ze mee in de audit. In het rapport staat per bevinding bij welk onderdeel het hoort, zodat je weet wat je zelf oplost en wat je bij de leverancier neerlegt. De AFM schrijft in haar EAA-updates dat je uitbestedingspartners vroeg moet betrekken en afspraken moet maken over aanpassingen. Wij leveren daarvoor de formulering per bevinding, met het criterium erbij."
+  - question: "Kunnen jullie het hele traject begeleiden, van inventarisatie tot herstel?"
+    answer: "Ja. In een traject van 3 tot 6 maanden brengen we in kaart wat er moet gebeuren, toetsen we al je digitale kanalen, zetten we een dashboard op waarin directie, jurist en teams de voortgang zien, trainen we je devteams, je webredactie en je klantenservice, en begeleiden we het herstel tot de hercontrole. Hoe lang het duurt hangt af van het aantal kanalen en van de capaciteit van je teams; dat bespreken we in de kennismaking."
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
 ---
