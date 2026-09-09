@@ -49,7 +49,7 @@ OVERRIDES: dict[str, tuple[str, str]] = {
         "June 27, 2026",
     ),
     "202609_eteck_certificaat": (
-        "Certificaat toegankelijkheidsonderzoek Eteck",
+        "Certificaat digitale toegankelijkheid Eteck",
         "9 september 2026",
     ),
 }

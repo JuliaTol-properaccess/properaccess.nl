@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, follow">
-<title>Certificaat toegankelijkheidsonderzoek Eteck</title>
+<title>Certificaat digitale toegankelijkheid Eteck</title>
 <link rel="icon" href="/rapporten/_assets/images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,11 +142,8 @@
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    background: var(--wit);
-    border: 1px solid var(--lijn);
-    border-left: 5px solid var(--magenta);
-    padding: 1.25rem 1.5rem;
-    margin: 0 0 2rem;
+    padding: 0 0 1.75rem;
+    margin: 0 0 1.5rem;
   }
 
   .opdrachtgever img { width: 150px; height: auto; }
@@ -234,6 +231,38 @@
 
   .noot { font-size: .9375rem; color: #4B5563; }
 
+  /* Kerncijfers */
+
+  .cijfers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cijfers li {
+    background: var(--lichtgrijs);
+    border-top: 4px solid var(--magenta);
+    padding: 1.1rem 1.25rem 1.25rem;
+  }
+
+  .cijfers b {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: var(--petrol);
+  }
+
+  .cijfers span { font-size: .9375rem; }
+
+  @media (min-width: 46rem) {
+    .cijfers { grid-template-columns: repeat(4, 1fr); }
+  }
+
   /* Tijdlijn */
 
   .tijdlijn {
@@ -271,25 +300,7 @@
     margin-bottom: .1rem;
   }
 
-  /* Werkwijze in kaarten */
-
-  .kaarten {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1rem;
-    margin-top: 1.25rem;
-  }
-
-  .kaart {
-    background: var(--lichtgrijs);
-    border-top: 4px solid var(--petrol);
-    padding: 1.1rem 1.25rem 1.25rem;
-  }
-
-  .kaart h3 { margin-bottom: .35rem; }
-  .kaart p { margin: 0; font-size: .9375rem; }
-
-  /* Slotkader */
+  /* Kaders */
 
   .kader {
     background: var(--lichtgrijs);
@@ -300,6 +311,16 @@
 
   .kader h2 { margin-top: 0; }
   .kader p:last-child { margin-bottom: 0; }
+
+  .aantekening {
+    border-left: 5px solid var(--magenta);
+    padding: .25rem 0 .25rem 1.75rem;
+    margin: 2.5rem 0 0;
+    font-size: 1.125rem;
+  }
+
+  .aantekening p:first-child { margin-top: 0; }
+  .aantekening p:last-child { margin-bottom: 0; }
 
   /* Ondertekening */
 
@@ -328,7 +349,7 @@
       print-color-adjust: exact;
     }
     h2 { break-after: avoid; }
-    .kader, .kaart, .tijdlijn > li { break-inside: avoid; }
+    .kader, .aantekening, .cijfers li, .tijdlijn > li { break-inside: avoid; }
   }
 </style>
 </head>
@@ -360,7 +381,7 @@
   <div id="tekst-nl">
 
     <p class="soort">Certificaat</p>
-    <h1>Toegankelijkheidsonderzoek Eteck</h1>
+    <h1>Digitale toegankelijkheid bij Eteck</h1>
     <hr class="streep">
 
     <div class="opdrachtgever">
@@ -368,7 +389,50 @@
       <p>In opdracht van Eteck B.V.</p>
     </div>
 
-    <p class="inleiding">Proper Access heeft tussen juni 2025 en augustus 2026 vier digitale kanalen van Eteck onderzocht op digitale toegankelijkheid: de website, Mijn Eteck, de Android-app en de iOS-app. Dit certificaat beschrijft welke onderzoeken zijn uitgevoerd, hoe het traject verliep en hoe wij werken.</p>
+    <p class="inleiding">Eteck levert warmte aan bewoners en bedrijven. Wie zijn maandbedrag wil wijzigen of een storing wil melden, doet dat op de website of in de app. Dat moet ook lukken met een schermlezer, met alleen een toetsenbord, of met sterk vergrote tekst. De European Accessibility Act, die sinds 28 juni 2025 geldt, vraagt van bedrijven dat hun digitale diensten toegankelijk zijn.</p>
+
+    <p>Eteck is daar in het voorjaar van 2025 mee begonnen, samen met ontwerp- en ontwikkelbureau Fabrique. Vier digitale kanalen zijn onderzocht, de bevindingen zijn over meerdere releases opgelost, en in 2026 zijn drie van die kanalen opnieuw getoetst. Proper Access heeft de onderzoeken uitgevoerd.</p>
+
+    <h2>Wat er in dat jaar is gebeurd</h2>
+
+    <ul class="cijfers">
+      <li><b>4</b><span>digitale kanalen onderzocht: de website, Mijn Eteck, de Android-app en de iOS-app</span></li>
+      <li><b>237</b><span>bevindingen in de nulmeting van 2025, elk met een oplossing erbij</span></li>
+      <li><b>6</b><span>rapporten tussen juni 2025 en augustus 2026, waarvan 2 hercontroles</span></li>
+      <li><b>14</b><span>maanden tussen de eerste meting en de laatste hercontrole</span></li>
+    </ul>
+
+    <p>Alle onderzoeken zijn uitgevoerd volgens WCAG-EM, de evaluatiemethode van het W3C, en handmatig getoetst met schermlezer, toetsenbord en zoom. De apps zijn getest op echte toestellen, met VoiceOver op iOS en TalkBack op Android.</p>
+
+    <h2>Het traject stap voor stap</h2>
+
+    <ul class="tijdlijn">
+      <li>
+        <span class="wanneer">Juni en juli 2025</span>
+        <h3>Weten waar je staat</h3>
+        <p>Vier onderzoeken, vier rapporten. Elk kanaal kreeg de bevindingen per pagina of per scherm, met screenshots, code-voorbeelden en een oplossing per bevinding.</p>
+      </li>
+      <li>
+        <span class="wanneer">10 juli 2025</span>
+        <h3>Kennissessie op kantoor in Voorburg</h3>
+        <p>Proper Access besprak de uitkomsten met het team van Eteck en Fabrique: ontwikkelaars, contentmakers en management in één ruimte. Naast de bevindingen ging het over de vraag erachter, namelijk hoe iemand met een schermlezer of zonder muis door de site en de app beweegt.</p>
+      </li>
+      <li>
+        <span class="wanneer">Juli 2025 tot mei 2026</span>
+        <h3>Oplossen</h3>
+        <p>Fabrique verwerkte de bevindingen in het ontwikkelproces van Eteck, verdeeld over meerdere releases. In maart 2026 was het merendeel klaar en stonden er nog vijf stories open. Eteck en Fabrique kozen ervoor om die eerst af te maken en de hercontrole uit te stellen, zodat er een afgeronde versie op tafel lag. De release volgde in mei 2026.</p>
+      </li>
+      <li>
+        <span class="wanneer">Mei tot augustus 2026</span>
+        <h3>Opnieuw meten</h3>
+        <p>Elke eerdere bevinding is opnieuw getoetst. De website ging als eerste, daarna Mijn Eteck, en in augustus de iOS-app na de release van versie 26.7.2. Bij de iOS-app waren 27 van de 72 bevindingen uit 2025 opgelost. Wat nog openstond staat per bevinding in de hercontrolerapporten.</p>
+      </li>
+      <li>
+        <span class="wanneer">Augustus en september 2026</span>
+        <h3>De laatste punten</h3>
+        <p>Fabrique liet ons op 16 augustus en 8 september 2026 weten dat de resterende punten uit de hercontroles inmiddels zijn opgelost, op de contentpunten na. Die pakt Eteck zelf op. Wij hebben die oplossingen niet zelf getoetst, dus we geven ze hier weer zoals Fabrique ze aan ons doorgaf.</p>
+      </li>
+    </ul>
 
     <h2>De onderzochte kanalen</h2>
 
@@ -424,7 +488,7 @@
       </table>
     </div>
 
-    <p class="noot">Het dashboard viel in 2025 binnen de scope van het website-onderzoek en is toen in een aanvullend onderzoek getoetst.</p>
+    <p class="noot">Mijn Eteck viel in 2025 binnen de scope van het website-onderzoek en is toen in een aanvullend onderzoek getoetst.</p>
 
     <h2>Aantal bevindingen per rapport</h2>
 
@@ -444,7 +508,7 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Website, werkenbijeteck.nl en dashboard, juni 2025</th>
+            <th scope="row">Website, werkenbijeteck.nl en Mijn Eteck, juni 2025</th>
             <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:100%" aria-hidden="true"></span><span class="getal">97</span></span></td>
           </tr>
           <tr>
@@ -471,57 +535,18 @@
       </table>
     </div>
 
-    <p class="noot">Lees de staven niet als een score. De rapporten van 2025 en 2026 dekken niet dezelfde schermen: in 2025 stonden eteck.nl, werkenbijeteck.nl en het dashboard in één rapport, en in 2026 kregen eteck.nl en Mijn Eteck elk een eigen rapport. Bij de iOS-app is de vergelijking wel rechtstreeks: van de 72 bevindingen uit 2025 waren er bij de hercontrole 27 opgelost.</p>
+    <p class="noot">Lees de staven niet als een score. De rapporten van 2025 en 2026 dekken niet dezelfde schermen: in 2025 stonden eteck.nl, werkenbijeteck.nl en Mijn Eteck in één rapport, en in 2026 kregen eteck.nl en Mijn Eteck elk een eigen rapport. Bij de iOS-app is de vergelijking wel rechtstreeks: van de 72 bevindingen uit 2025 waren er bij de hercontrole 27 opgelost.</p>
 
-    <h2>Hoe het traject verliep</h2>
-
-    <ul class="tijdlijn">
-      <li>
-        <span class="wanneer">Juni en juli 2025</span>
-        <h3>Weten waar je staat</h3>
-        <p>Het traject begon met vier losse onderzoeken. Elk kanaal kreeg een eigen rapport met de bevindingen per pagina of per scherm, screenshots, code-voorbeelden en een oplossing per bevinding. Voor de apps testten wij op echte toestellen: een Samsung A34 en een Nokia X10 met TalkBack, een iPhone 15 Pro Max en een iPhone Xr met VoiceOver.</p>
-      </li>
-      <li>
-        <span class="wanneer">Juli 2025 tot mei 2026</span>
-        <h3>Oplossen</h3>
-        <p>Fabrique verwerkte de bevindingen in het ontwikkelproces van Eteck, verdeeld over meerdere releases. In maart 2026 was het merendeel klaar en stonden er nog vijf stories open. Fabrique koos ervoor om die eerst af te maken en de hercontrole uit te stellen, zodat wij een afgeronde versie zouden hertesten. De release volgde in mei 2026.</p>
-      </li>
-      <li>
-        <span class="wanneer">Mei tot augustus 2026</span>
-        <h3>Hercontrole</h3>
-        <p>Wij hebben elke eerdere bevinding opnieuw getoetst en de nieuwe bevindingen die wij daarbij vonden erbij gezet. De website ging als eerste, daarna Mijn Eteck, en in augustus de iOS-app na de release van versie 26.7.2. Een deel van de bevindingen was opgelost, een deel niet. Die staan in de hercontrolerapporten, met per bevinding wat er nog niet klopt.</p>
-      </li>
-      <li>
-        <span class="wanneer">Augustus en september 2026</span>
-        <h3>Het vervolg bij Eteck en Fabrique</h3>
-        <p>Fabrique liet ons op 16 augustus en 8 september 2026 weten dat de resterende punten uit de hercontroles inmiddels zijn opgelost, op de contentpunten na. Die pakt Eteck zelf op. Wij hebben die oplossingen niet zelf getoetst, dus we geven ze hier weer zoals Fabrique ze aan ons doorgaf.</p>
-      </li>
-    </ul>
-
-    <h2>Hoe wij onderzoeken</h2>
-
-    <div class="kaarten">
-      <div class="kaart">
-        <h3>WCAG-EM</h3>
-        <p>De evaluatiemethode van het W3C, in vijf stappen: de reikwijdte bepalen, de website of app verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren.</p>
-      </div>
-      <div class="kaart">
-        <h3>Met de hand getoetst</h3>
-        <p>Met een schermlezer, met alleen het toetsenbord, met zoom tot 400%, en met controle op contrast en kleurgebruik. Voor het web NVDA met Firefox en VoiceOver met Safari. Apps op echte toestellen, met VoiceOver op iOS en TalkBack op Android.</p>
-      </div>
-      <div class="kaart">
-        <h3>Het 6-ogen-principe</h3>
-        <p>Elk rapport wordt door drie mensen bekeken. Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review, voordat het rapport naar de opdrachtgever gaat.</p>
-      </div>
-      <div class="kaart">
-        <h3>Rapport per element</h3>
-        <p>De bevindingen staan per element in het rapport en niet per succescriterium. Alles wat er aan één component mankeert staat dus bij elkaar, zodat een ontwikkelaar het in één keer kan verhelpen.</p>
-      </div>
+    <div class="aantekening">
+      <h2>Wat mij is bijgebleven</h2>
+      <p>Op 10 juli 2025 gaf ik de kennissessie op het kantoor van Eteck in Voorburg. Ontwikkelaars, contentmakers en management zaten samen aan tafel, en dat gebeurt lang niet altijd.</p>
+      <p>Wat mij bijbleef is de belangstelling voor het onderwerp zelf. De vragen gingen over hoe iemand met een schermlezer werkt en waarom een bevinding ertoe doet, niet over hoe het onderzoek sneller kon worden afgevinkt. Daarna is er ruim een jaar aan doorgewerkt, ook toen het uitkwam om het te laten liggen.</p>
+      <p>Julia Tol, senior auditor</p>
     </div>
 
     <div class="kader">
       <h2>Waar dit certificaat over gaat</h2>
-      <p>Toegankelijk worden gaat in stappen. Eerst weten waar je staat, dan oplossen, dan opnieuw meten, en daarna bijhouden wat er nieuw op de site of in de app komt. Proper Access heeft de meetstappen gedaan: de nulmeting in 2025 en de hercontroles in 2026. Fabrique en Eteck hebben de bevindingen opgelost.</p>
+      <p>Toegankelijk worden gaat in stappen. Eerst weten waar je staat, dan oplossen, dan opnieuw meten, en daarna bijhouden wat er nieuw op de site of in de app komt. Eteck en Fabrique hebben het werk gedaan, Proper Access heeft gemeten.</p>
       <p>Dit certificaat legt die stappen vast: welke onderzoeken zijn uitgevoerd, wanneer, tegen welke norm en volgens welke methode. Het beschrijft het traject tot hier. Wat er per kanaal is getoetst en wat er openstond op de datum van elk rapport, staat in de rapporten waarnaar deze pagina linkt.</p>
       <p>Eteck werkt de laatste punten zelf af. Toetsen in eigen beheer mag: er is geen regel die voorschrijft dat een externe partij de volgende controle doet.</p>
     </div>
@@ -547,7 +572,7 @@
   <div id="tekst-en" lang="en" hidden>
 
     <p class="soort">Certificate</p>
-    <h1>Accessibility testing at Eteck</h1>
+    <h1>Digital accessibility at Eteck</h1>
     <hr class="streep">
 
     <div class="opdrachtgever">
@@ -555,7 +580,50 @@
       <p>Commissioned by Eteck B.V.</p>
     </div>
 
-    <p class="inleiding">Between June 2025 and August 2026, Proper Access tested four of Eteck's digital channels for accessibility: the website, Mijn Eteck, the Android app and the iOS app. This certificate sets out which audits were carried out, how the project ran, and how we work.</p>
+    <p class="inleiding">Eteck supplies heat to residents and businesses. Customers who want to change their monthly payment or report a fault do so on the website or in the app. That has to work with a screen reader, with the keyboard alone, or with heavily enlarged text. The European Accessibility Act, in force since 28 June 2025, requires companies to make their digital services accessible.</p>
+
+    <p>Eteck started on this in the spring of 2025, together with design and development agency Fabrique. Four digital channels were audited, the findings were resolved across several releases, and in 2026 three of those channels were tested again. Proper Access carried out the audits.</p>
+
+    <h2>What happened over that year</h2>
+
+    <ul class="cijfers">
+      <li><b>4</b><span>digital channels audited: the website, Mijn Eteck, the Android app and the iOS app</span></li>
+      <li><b>237</b><span>findings in the 2025 baseline, each with a solution alongside it</span></li>
+      <li><b>6</b><span>reports between June 2025 and August 2026, two of them retests</span></li>
+      <li><b>14</b><span>months between the first measurement and the last retest</span></li>
+    </ul>
+
+    <p>All audits followed WCAG-EM, the evaluation methodology of the W3C, and were carried out by hand with a screen reader, the keyboard and zoom. The apps were tested on real devices, with VoiceOver on iOS and TalkBack on Android.</p>
+
+    <h2>The project step by step</h2>
+
+    <ul class="tijdlijn">
+      <li>
+        <span class="wanneer">June and July 2025</span>
+        <h3>Establishing the baseline</h3>
+        <p>Four audits, four reports. Each channel received its findings per page or per screen, with screenshots, code examples and a solution for every finding.</p>
+      </li>
+      <li>
+        <span class="wanneer">10 July 2025</span>
+        <h3>Knowledge session at the Voorburg office</h3>
+        <p>Proper Access went through the results with the Eteck and Fabrique team: developers, content people and management in one room. Alongside the findings, the session covered the question behind them, namely how someone using a screen reader or working without a mouse moves through the site and the app.</p>
+      </li>
+      <li>
+        <span class="wanneer">July 2025 to May 2026</span>
+        <h3>Fixing</h3>
+        <p>Fabrique took the findings into Eteck's development process, spread across several releases. By March 2026 most of the work was done and five stories were still open. Eteck and Fabrique chose to finish those first and postpone the retest, so that a completed version would be on the table. The release followed in May 2026.</p>
+      </li>
+      <li>
+        <span class="wanneer">May to August 2026</span>
+        <h3>Measuring again</h3>
+        <p>Every earlier finding was tested again. The website came first, then Mijn Eteck, and in August the iOS app after the release of version 26.7.2. For the iOS app, 27 of the 72 findings from 2025 had been resolved. Whatever was still open is described finding by finding in the retest reports.</p>
+      </li>
+      <li>
+        <span class="wanneer">August and September 2026</span>
+        <h3>The remaining points</h3>
+        <p>On 16 August and 8 September 2026, Fabrique told us that the remaining points from the retests have since been resolved, apart from the content issues, which Eteck is handling itself. We have not tested those fixes ourselves, so we report them here as Fabrique passed them on to us.</p>
+      </li>
+    </ul>
 
     <h2>The channels we tested</h2>
 
@@ -611,7 +679,7 @@
       </table>
     </div>
 
-    <p class="noot">In 2025 the dashboard fell within the scope of the website audit and was tested in a supplementary audit at that time.</p>
+    <p class="noot">In 2025 Mijn Eteck fell within the scope of the website audit and was tested in a supplementary audit at that time.</p>
 
     <h2>Number of findings per report</h2>
 
@@ -631,7 +699,7 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Website, werkenbijeteck.nl and dashboard, June 2025</th>
+            <th scope="row">Website, werkenbijeteck.nl and Mijn Eteck, June 2025</th>
             <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:100%" aria-hidden="true"></span><span class="getal">97</span></span></td>
           </tr>
           <tr>
@@ -658,57 +726,18 @@
       </table>
     </div>
 
-    <p class="noot">The bars are not a score. The 2025 and 2026 reports do not cover the same screens: in 2025 eteck.nl, werkenbijeteck.nl and the dashboard shared one report, while in 2026 eteck.nl and Mijn Eteck each got their own. For the iOS app the comparison is direct: of the 72 findings from 2025, 27 had been resolved by the time of the retest.</p>
+    <p class="noot">The bars are not a score. The 2025 and 2026 reports do not cover the same screens: in 2025 eteck.nl, werkenbijeteck.nl and Mijn Eteck shared one report, while in 2026 eteck.nl and Mijn Eteck each got their own. For the iOS app the comparison is direct: of the 72 findings from 2025, 27 had been resolved by the time of the retest.</p>
 
-    <h2>How the project ran</h2>
-
-    <ul class="tijdlijn">
-      <li>
-        <span class="wanneer">June and July 2025</span>
-        <h3>Establishing the baseline</h3>
-        <p>The project started with four separate audits. Each channel got its own report, listing findings per page or per screen, with screenshots, code examples and a solution for every finding. We tested the apps on real devices: a Samsung A34 and a Nokia X10 with TalkBack, an iPhone 15 Pro Max and an iPhone Xr with VoiceOver.</p>
-      </li>
-      <li>
-        <span class="wanneer">July 2025 to May 2026</span>
-        <h3>Fixing</h3>
-        <p>Fabrique took the findings into Eteck's development process, spread across several releases. By March 2026 most of the work was done and five stories were still open. Fabrique chose to finish those first and postpone the retest, so that what we retested would be complete. The release followed in May 2026.</p>
-      </li>
-      <li>
-        <span class="wanneer">May to August 2026</span>
-        <h3>Retesting</h3>
-        <p>We retested every earlier finding and added the new findings that surfaced along the way. The website came first, then Mijn Eteck, and in August the iOS app after the release of version 26.7.2. Some findings had been resolved and some had not. Those are in the retest reports, each one describing what is still wrong.</p>
-      </li>
-      <li>
-        <span class="wanneer">August and September 2026</span>
-        <h3>What happened next at Eteck and Fabrique</h3>
-        <p>On 16 August and 8 September 2026, Fabrique told us that the remaining points from the retests have since been resolved, apart from the content issues, which Eteck is handling itself. We have not tested those fixes ourselves, so we report them here as Fabrique passed them on to us.</p>
-      </li>
-    </ul>
-
-    <h2>How we test</h2>
-
-    <div class="kaarten">
-      <div class="kaart">
-        <h3>WCAG-EM</h3>
-        <p>The evaluation methodology of the W3C, in five steps: define the scope, explore the website or app, select a representative sample, test that sample and report the findings.</p>
-      </div>
-      <div class="kaart">
-        <h3>Tested by hand</h3>
-        <p>With a screen reader, with the keyboard only, with zoom up to 400%, and by checking contrast and the use of colour. On the web, NVDA with Firefox and VoiceOver with Safari. Apps on real devices, with VoiceOver on iOS and TalkBack on Android.</p>
-      </div>
-      <div class="kaart">
-        <h3>The six-eyes principle</h3>
-        <p>Three people look at every report. A senior auditor carries out the audit and a second auditor does the internal review before the report goes to the client.</p>
-      </div>
-      <div class="kaart">
-        <h3>Reported per element</h3>
-        <p>Findings are grouped per element rather than per success criterion. Everything that is wrong with one component sits together, so a developer can deal with it in one go.</p>
-      </div>
+    <div class="aantekening">
+      <h2>What stayed with me</h2>
+      <p>On 10 July 2025 I ran the knowledge session at Eteck's office in Voorburg. Developers, content people and management sat around one table, and that does not happen everywhere.</p>
+      <p>What stayed with me is the interest in the subject itself. The questions were about how someone uses a screen reader and why a finding matters, not about how the audit could be ticked off faster. The work then carried on for more than a year, including at moments when letting it slide would have been easier.</p>
+      <p>Julia Tol, senior auditor</p>
     </div>
 
     <div class="kader">
       <h2>What this certificate covers</h2>
-      <p>Becoming accessible happens in steps. First you find out where you stand, then you fix, then you measure again, and after that you keep track of whatever new goes onto the site or into the app. Proper Access carried out the measuring steps: the baseline in 2025 and the retests in 2026. Fabrique and Eteck resolved the findings.</p>
+      <p>Becoming accessible happens in steps. First you find out where you stand, then you fix, then you measure again, and after that you keep track of whatever new goes onto the site or into the app. Eteck and Fabrique did the work, Proper Access did the measuring.</p>
       <p>This certificate records those steps: which audits were carried out, when, against which standard and using which methodology. It describes the project up to this point. What was tested per channel, and what was open on the date of each report, is set out in the reports this page links to.</p>
       <p>Eteck is finishing the remaining points itself. Testing in-house is permitted: no rule requires an external party to carry out the next check.</p>
     </div>
@@ -742,8 +771,8 @@
     en: [document.getElementById('tekst-en'), document.getElementById('kenmerk-en')]
   };
   var titels = {
-    nl: 'Certificaat toegankelijkheidsonderzoek Eteck',
-    en: 'Certificate of accessibility testing at Eteck'
+    nl: 'Certificaat digitale toegankelijkheid Eteck',
+    en: 'Certificate of digital accessibility at Eteck'
   };
   var logoAlt = {
     nl: 'Proper Access, digitale toegankelijkheid',
