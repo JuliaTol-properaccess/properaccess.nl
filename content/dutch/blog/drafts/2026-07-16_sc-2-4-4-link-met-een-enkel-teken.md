@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Link met een enkel teken"
 date: 2026-09-08
 slug: "sc-2-4-4-link-met-een-enkel-teken"
