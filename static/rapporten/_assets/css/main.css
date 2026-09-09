@@ -136,6 +136,26 @@ code {
     background-color: #eee;
 }
 
+/* Toetsen op het toetsenbord. Bewust anders dan `code`: een toets is geen code,
+   en de lezer moet in een testinstructie in een oogopslag zien welke toets hij
+   moet indrukken. Rand #6B7280 op wit haalt 4,8:1, ruim boven de 3,0:1 die
+   1.4.11 vraagt voor de begrenzing van een onderdeel. */
+kbd {
+    font-family: inherit;
+    font-size: 90%;
+    font-weight: 700;
+    line-height: 1;
+    color: #1F2937;
+    background-color: #fff;
+    border: 1px solid #6B7280;
+    border-bottom-width: 3px;
+    border-radius: 4px;
+    padding: 0.25em 0.5em;
+    margin: 0 .15em;
+    display: inline-block;
+    white-space: nowrap;
+}
+
 
 a {
     color: #A30D4B; 
