@@ -38,12 +38,19 @@ END = "<!-- AUTO-GENERATED REPORT CARDS: END -->"
 # map bevat alleen nog een notice-pagina, dus geen kaart op het overzicht.
 EXCLUDE = {"report_template", "pnh", "202512_videospelers"}
 
-# Wachtwoord-beveiligde rapporten tonen alleen een gate-pagina. Titel + datum
-# hier handmatig bijhouden (zelfde tekst als op de kaart hoort te staan).
+# Pagina's waar het script titel of datum niet uit de HTML kan halen. Dat zijn
+# wachtwoord-beveiligde rapporten, die alleen een gate-pagina tonen, en pagina's
+# die geen rapport zijn en dus geen veld "Datum rapport" hebben, zoals een
+# certificaat. Titel + datum hier handmatig bijhouden (zelfde tekst als op de
+# kaart hoort te staan).
 OVERRIDES: dict[str, tuple[str, str]] = {
     "202606_fly2houston.com": (
         "Accessibility evaluation of the website www.fly2houston.com, limited scope",
         "June 27, 2026",
+    ),
+    "202609_eteck_certificaat": (
+        "Certificaat digitale toegankelijkheid Eteck",
+        "9 september 2026",
     ),
 }
 

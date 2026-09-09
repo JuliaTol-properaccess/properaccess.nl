@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Certificaat digitale toegankelijkheid Eteck</title>
+<link rel="icon" href="/rapporten/_assets/images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --magenta: #A30D4B;
+    --donkerblauw: #1F2937;
+    --petrol: #004050;
+    --lichtgrijs: #F5F5F5;
+    --wit: #FFFFFF;
+    --lijn: #D8DBE0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 2rem 1rem 5rem;
+    background: var(--lichtgrijs);
+    color: var(--donkerblauw);
+    font-family: Nunito, "Nunito Sans", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3 {
+    font-family: "Plus Jakarta Sans", Nunito, system-ui, sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--donkerblauw);
+  }
+
+  a { color: var(--petrol); }
+  a:hover, a:focus { color: var(--magenta); }
+
+  :focus-visible { outline: 3px solid var(--magenta); outline-offset: 2px; }
+
+  /* Taalkeuze */
+
+  .taalkeuze {
+    max-width: 54rem;
+    margin: 0 auto .75rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+
+  .taalkeuze p { margin: 0; font-weight: 700; font-size: .9375rem; }
+
+  .taalknop {
+    font: inherit;
+    font-weight: 700;
+    font-size: .9375rem;
+    padding: .4rem .9rem;
+    border: 2px solid var(--petrol);
+    border-radius: 2rem;
+    background: var(--wit);
+    color: var(--petrol);
+    cursor: pointer;
+  }
+
+  .taalknop[aria-pressed="true"] { background: var(--petrol); color: var(--wit); }
+
+  /* Het blad */
+
+  .certificaat {
+    max-width: 54rem;
+    margin: 0 auto;
+    background: var(--wit);
+    box-shadow: 0 2px 16px rgba(31, 41, 55, .12);
+    overflow: hidden;
+  }
+
+  .blad { padding: 0 clamp(1.25rem, 5vw, 4.5rem) 4rem; }
+
+  /* Donkere kopband */
+
+  .kop {
+    background: var(--petrol);
+    color: var(--wit);
+    padding: 2rem clamp(1.25rem, 5vw, 4.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-bottom: 6px solid var(--magenta);
+  }
+
+  .kop img { width: 200px; height: auto; display: block; }
+
+  .kenmerk { margin: 0; font-size: .875rem; text-align: right; color: #CFE0E4; }
+
+  .kenmerk strong {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.0625rem;
+    letter-spacing: .05em;
+    color: var(--wit);
+  }
+
+  /* Titelblok */
+
+  .soort {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-size: .8125rem;
+    color: var(--magenta);
+    margin: 3rem 0 .5rem;
+  }
+
+  h1 { font-size: clamp(1.875rem, 4.5vw, 2.75rem); margin: 0 0 1.25rem; }
+
+  .streep {
+    width: 4rem;
+    height: 5px;
+    background: var(--magenta);
+    border: 0;
+    margin: 0 0 1.75rem;
+  }
+
+  h2 { font-size: 1.5rem; margin: 3.25rem 0 .75rem; }
+  h3 { font-size: 1.0625rem; margin: 0 0 .2rem; font-weight: 700; }
+
+  .inleiding { font-size: 1.1875rem; margin-top: 0; }
+
+  /* Band met het logo van de opdrachtgever */
+
+  .opdrachtgever {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0 0 1.75rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .opdrachtgever img { width: 150px; height: auto; }
+
+  .opdrachtgever p {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: .9375rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--petrol);
+  }
+
+  /* Tabellen */
+
+  .tabelwrap { overflow-x: auto; margin: 1rem 0 .5rem; }
+
+  table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+
+  caption { text-align: left; font-weight: 700; padding-bottom: .6rem; }
+
+  th, td {
+    text-align: left;
+    vertical-align: middle;
+    padding: .75rem;
+    border-bottom: 1px solid var(--lijn);
+  }
+
+  thead th {
+    background: var(--lichtgrijs);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid var(--petrol);
+    vertical-align: bottom;
+  }
+
+  tbody th { font-weight: 700; }
+
+  .kanalen tbody tr:hover { background: #FAFAFA; }
+
+  /* Staafdiagram */
+
+  .grafiek .staafcel { width: 55%; }
+
+  .staafrij { display: flex; align-items: center; gap: .75rem; }
+
+  .staaf {
+    height: 1.1rem;
+    background: var(--petrol);
+    border-radius: 2px;
+    min-width: 3px;
+  }
+
+  .staaf--nulmeting { background: var(--magenta); }
+
+  .getal {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .legenda {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1rem 0 .5rem;
+    padding: 0;
+    font-size: .9375rem;
+  }
+
+  .legenda li { display: flex; align-items: center; gap: .5rem; }
+
+  .vlak {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    background: var(--petrol);
+    flex: none;
+  }
+
+  .vlak--nulmeting { background: var(--magenta); }
+
+  .noot { font-size: .9375rem; color: #4B5563; }
+
+  /* Kerncijfers */
+
+  .cijfers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cijfers li {
+    background: var(--lichtgrijs);
+    border-top: 4px solid var(--magenta);
+    padding: 1.1rem 1.25rem 1.25rem;
+  }
+
+  .cijfers b {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: var(--petrol);
+  }
+
+  .cijfers span { font-size: .9375rem; }
+
+  @media (min-width: 46rem) {
+    .cijfers { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* Tijdlijn */
+
+  .tijdlijn {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.75rem;
+    border-left: 3px solid var(--lijn);
+  }
+
+  .tijdlijn > li { position: relative; padding-bottom: 1.75rem; }
+  .tijdlijn > li:last-child { padding-bottom: 0; }
+
+  .tijdlijn > li::before {
+    content: "";
+    position: absolute;
+    left: -2.4rem;
+    top: .45rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--magenta);
+    border: 3px solid var(--wit);
+  }
+
+  .tijdlijn p { margin: .35rem 0 0; }
+
+  .wanneer {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: .8125rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--magenta);
+    display: block;
+    margin-bottom: .1rem;
+  }
+
+  /* Kaders */
+
+  .kader {
+    background: var(--lichtgrijs);
+    border-left: 5px solid var(--petrol);
+    padding: 1.5rem 1.75rem;
+    margin: 2.5rem 0 0;
+  }
+
+  .kader h2 { margin-top: 0; }
+  .kader p:last-child { margin-bottom: 0; }
+
+  .aantekening {
+    border-left: 5px solid var(--magenta);
+    padding: .25rem 0 .25rem 1.75rem;
+    margin: 2.5rem 0 0;
+    font-size: 1.125rem;
+  }
+
+  .aantekening p:first-child { margin-top: 0; }
+  .aantekening p:last-child { margin-bottom: 0; }
+
+  /* Ondertekening */
+
+  .ondertekening {
+    margin-top: 3rem;
+    padding-top: 1.75rem;
+    border-top: 3px solid var(--magenta);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .ondertekening p { margin: 0 0 .2rem; }
+
+  .naam { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 1.25rem; }
+
+  .colofon { font-size: .875rem; color: var(--petrol); text-align: right; }
+
+  @media print {
+    body { background: var(--wit); padding: 0; font-size: 10pt; }
+    .taalkeuze { display: none; }
+    .certificaat { box-shadow: none; max-width: none; }
+    .kop, .staaf, .vlak, .tijdlijn > li::before {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    h2 { break-after: avoid; }
+    .kader, .aantekening, .cijfers li, .tijdlijn > li { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="taalkeuze" role="group" aria-labelledby="taallabel">
+  <p id="taallabel">Taal / Language</p>
+  <button type="button" class="taalknop" id="knop-nl" aria-pressed="true" lang="nl">Nederlands</button>
+  <button type="button" class="taalknop" id="knop-en" aria-pressed="false" lang="en">English</button>
+</div>
+
+<main class="certificaat">
+
+  <div class="kop">
+    <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access, digitale toegankelijkheid" id="logo">
+    <p class="kenmerk" id="kenmerk-nl">
+      <strong>PA-2026-ETECK-01</strong>
+      Afgegeven op 9 september 2026
+    </p>
+    <p class="kenmerk" id="kenmerk-en" lang="en" hidden>
+      <strong>PA-2026-ETECK-01</strong>
+      Issued on 9 September 2026
+    </p>
+  </div>
+
+  <div class="blad">
+
+  <!-- Nederlands -->
+  <div id="tekst-nl">
+
+    <p class="soort">Certificaat</p>
+    <h1>Digitale toegankelijkheid bij Eteck</h1>
+    <hr class="streep">
+
+    <div class="opdrachtgever">
+      <img src="/rapporten/202609_eteck_certificaat/eteck-logo.svg" alt="Eteck">
+      <p>In opdracht van Eteck B.V.</p>
+    </div>
+
+    <p class="inleiding">Eteck levert warmte aan bewoners en bedrijven. Wie zijn maandbedrag wil wijzigen of een storing wil melden, doet dat op de website of in de app. Dat moet ook lukken met een schermlezer, met alleen een toetsenbord, of met sterk vergrote tekst. De European Accessibility Act, die sinds 28 juni 2025 geldt, vraagt van bedrijven dat hun digitale diensten toegankelijk zijn.</p>
+
+    <p>Eteck is daar in het voorjaar van 2025 mee begonnen, samen met ontwerp- en ontwikkelbureau Fabrique. Vier digitale kanalen zijn onderzocht, de bevindingen zijn over meerdere releases opgelost, en in 2026 zijn drie van die kanalen opnieuw getoetst. Proper Access heeft de onderzoeken uitgevoerd.</p>
+
+    <h2>Wat er in dat jaar is gebeurd</h2>
+
+    <ul class="cijfers">
+      <li><b>4</b><span>digitale kanalen onderzocht: de website, Mijn Eteck, de Android-app en de iOS-app</span></li>
+      <li><b>237</b><span>bevindingen in de nulmeting van 2025, elk met een oplossing erbij</span></li>
+      <li><b>6</b><span>rapporten tussen juni 2025 en augustus 2026, waarvan 2 hercontroles</span></li>
+      <li><b>14</b><span>maanden tussen de eerste meting en de laatste hercontrole</span></li>
+    </ul>
+
+    <p>Alle onderzoeken zijn uitgevoerd volgens WCAG-EM, de evaluatiemethode van het W3C, en handmatig getoetst met schermlezer, toetsenbord en zoom. De apps zijn getest op echte toestellen, met VoiceOver op iOS en TalkBack op Android.</p>
+
+    <h2>Het traject stap voor stap</h2>
+
+    <ul class="tijdlijn">
+      <li>
+        <span class="wanneer">Juni en juli 2025</span>
+        <h3>Weten waar je staat</h3>
+        <p>Vier onderzoeken, vier rapporten. Elk kanaal kreeg de bevindingen per pagina of per scherm, met screenshots, code-voorbeelden en een oplossing per bevinding.</p>
+      </li>
+      <li>
+        <span class="wanneer">10 juli 2025</span>
+        <h3>Kennissessie op kantoor in Voorburg</h3>
+        <p>Proper Access besprak de uitkomsten met het team van Eteck en Fabrique: ontwikkelaars, contentmakers en management in één ruimte. Naast de bevindingen ging het over de vraag erachter, namelijk hoe iemand met een schermlezer of zonder muis door de site en de app beweegt.</p>
+      </li>
+      <li>
+        <span class="wanneer">Juli 2025 tot mei 2026</span>
+        <h3>Oplossen</h3>
+        <p>Fabrique verwerkte de bevindingen in het ontwikkelproces van Eteck, verdeeld over meerdere releases. In maart 2026 was het merendeel klaar en stonden er nog vijf stories open. Eteck en Fabrique kozen ervoor om die eerst af te maken en de hercontrole uit te stellen, zodat er een afgeronde versie op tafel lag. De release volgde in mei 2026.</p>
+      </li>
+      <li>
+        <span class="wanneer">Mei tot augustus 2026</span>
+        <h3>Opnieuw meten</h3>
+        <p>Elke eerdere bevinding is opnieuw getoetst. De website ging als eerste, daarna Mijn Eteck, en in augustus de iOS-app na de release van versie 26.7.2. Bij de iOS-app waren 27 van de 72 bevindingen uit 2025 opgelost. Wat nog openstond staat per bevinding in de hercontrolerapporten.</p>
+      </li>
+      <li>
+        <span class="wanneer">Augustus en september 2026</span>
+        <h3>De laatste punten</h3>
+        <p>Fabrique liet ons op 16 augustus en 8 september 2026 weten dat de resterende punten uit de hercontroles inmiddels zijn opgelost, op de contentpunten na. Die pakt Eteck zelf op. Wij hebben die oplossingen niet zelf getoetst, dus we geven ze hier weer zoals Fabrique ze aan ons doorgaf.</p>
+      </li>
+    </ul>
+
+    <h2>De onderzochte kanalen</h2>
+
+    <div class="tabelwrap">
+      <table class="kanalen">
+        <caption>Uitgevoerde onderzoeken per kanaal, met de toegepaste norm</caption>
+        <thead>
+          <tr>
+            <th scope="col">Kanaal</th>
+            <th scope="col">Onderzoek</th>
+            <th scope="col">Periode</th>
+            <th scope="col">Norm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website eteck.nl en werkenbijeteck.nl</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck/">Audit</a></td>
+            <td>5 tot 17 juni 2025</td>
+            <td>WCAG 2.2, niveau AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Website eteck.nl</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202605_eteck.nl_retest/">Hercontrole</a></td>
+            <td>18 tot 20 mei 2026</td>
+            <td>WCAG 2.2, niveau AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Mijn Eteck</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202606_mijn-eteck/">Audit</a></td>
+            <td>21 mei tot 4 juni 2026</td>
+            <td>WCAG 2.2, niveau AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Android-app Eteck, versie 1.19.0</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck_android/">Audit</a></td>
+            <td>1 tot 18 juni 2025</td>
+            <td>EN 301 549 met WCAG 2.1, niveau AA</td>
+          </tr>
+          <tr>
+            <th scope="row">iOS-app Eteck, versie 1.20.0</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck_iOS/">Audit</a></td>
+            <td>1 tot 3 juli 2025</td>
+            <td>EN 301 549 met WCAG 2.1, niveau AA</td>
+          </tr>
+          <tr>
+            <th scope="row">iOS-app MijnEteck, versie 26.7.2</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202608_eteck_ios_retest/">Hercontrole</a></td>
+            <td>augustus 2026</td>
+            <td>EN 301 549 met WCAG 2.1, niveau AA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="noot">Mijn Eteck viel in 2025 binnen de scope van het website-onderzoek en is toen in een aanvullend onderzoek getoetst.</p>
+
+    <h2>Aantal bevindingen per rapport</h2>
+
+    <ul class="legenda">
+      <li><span class="vlak vlak--nulmeting" aria-hidden="true"></span> Nulmeting 2025</li>
+      <li><span class="vlak" aria-hidden="true"></span> Onderzoek 2026</li>
+    </ul>
+
+    <div class="tabelwrap">
+      <table class="grafiek">
+        <caption>Aantal bevindingen in elk rapport, van 37 tot 97</caption>
+        <thead>
+          <tr>
+            <th scope="col">Rapport</th>
+            <th scope="col" class="staafcel">Bevindingen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website, werkenbijeteck.nl en Mijn Eteck, juni 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:100%" aria-hidden="true"></span><span class="getal">97</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">iOS-app 1.20.0, juli 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:74.2%" aria-hidden="true"></span><span class="getal">72</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Android-app 1.19.0, juni 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:70.1%" aria-hidden="true"></span><span class="getal">68</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Mijn Eteck, juni 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:59.8%" aria-hidden="true"></span><span class="getal">58</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Website eteck.nl, hercontrole mei 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:57.7%" aria-hidden="true"></span><span class="getal">56</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">iOS-app 26.7.2, hercontrole augustus 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:38.1%" aria-hidden="true"></span><span class="getal">37</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="noot">Lees de staven niet als een score. De rapporten van 2025 en 2026 dekken niet dezelfde schermen: in 2025 stonden eteck.nl, werkenbijeteck.nl en Mijn Eteck in één rapport, en in 2026 kregen eteck.nl en Mijn Eteck elk een eigen rapport. Bij de iOS-app is de vergelijking wel rechtstreeks: van de 72 bevindingen uit 2025 waren er bij de hercontrole 27 opgelost.</p>
+
+    <div class="aantekening">
+      <h2>Wat mij is bijgebleven</h2>
+      <p>Op 10 juli 2025 gaf ik de kennissessie op het kantoor van Eteck in Voorburg. Ontwikkelaars, contentmakers en management zaten samen aan tafel, en dat gebeurt lang niet altijd.</p>
+      <p>Wat mij bijbleef is de belangstelling voor het onderwerp zelf. De vragen gingen over hoe iemand met een schermlezer werkt en waarom een bevinding ertoe doet, niet over hoe het onderzoek sneller kon worden afgevinkt. Daarna is er ruim een jaar aan doorgewerkt, ook toen het uitkwam om het te laten liggen.</p>
+      <p>Julia Tol, senior auditor</p>
+    </div>
+
+    <div class="kader">
+      <h2>Waar dit certificaat over gaat</h2>
+      <p>Toegankelijk worden gaat in stappen. Eerst weten waar je staat, dan oplossen, dan opnieuw meten, en daarna bijhouden wat er nieuw op de site of in de app komt. Eteck en Fabrique hebben het werk gedaan, Proper Access heeft gemeten.</p>
+      <p>Dit certificaat legt die stappen vast: welke onderzoeken zijn uitgevoerd, wanneer, tegen welke norm en volgens welke methode. Het beschrijft het traject tot hier. Wat er per kanaal is getoetst en wat er openstond op de datum van elk rapport, staat in de rapporten waarnaar deze pagina linkt.</p>
+      <p>Eteck werkt de laatste punten zelf af. Toetsen in eigen beheer mag: er is geen regel die voorschrijft dat een externe partij de volgende controle doet.</p>
+    </div>
+
+    <div class="ondertekening">
+      <div>
+        <p class="naam">Julia Tol</p>
+        <p>Oprichter en senior auditor</p>
+        <p>Proper Access</p>
+      </div>
+      <div class="colofon">
+        <p>Proper Access</p>
+        <p>Keizersgracht 520 H, 1017 EK Amsterdam</p>
+        <p>085 5055 890</p>
+        <p><a href="https://www.properaccess.nl/">properaccess.nl</a></p>
+        <p>KVK: 95350985</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- English -->
+  <div id="tekst-en" lang="en" hidden>
+
+    <p class="soort">Certificate</p>
+    <h1>Digital accessibility at Eteck</h1>
+    <hr class="streep">
+
+    <div class="opdrachtgever">
+      <img src="/rapporten/202609_eteck_certificaat/eteck-logo.svg" alt="Eteck">
+      <p>Commissioned by Eteck B.V.</p>
+    </div>
+
+    <p class="inleiding">Eteck supplies heat to residents and businesses. Customers who want to change their monthly payment or report a fault do so on the website or in the app. That has to work with a screen reader, with the keyboard alone, or with heavily enlarged text. The European Accessibility Act, in force since 28 June 2025, requires companies to make their digital services accessible.</p>
+
+    <p>Eteck started on this in the spring of 2025, together with design and development agency Fabrique. Four digital channels were audited, the findings were resolved across several releases, and in 2026 three of those channels were tested again. Proper Access carried out the audits.</p>
+
+    <h2>What happened over that year</h2>
+
+    <ul class="cijfers">
+      <li><b>4</b><span>digital channels audited: the website, Mijn Eteck, the Android app and the iOS app</span></li>
+      <li><b>237</b><span>findings in the 2025 baseline, each with a solution alongside it</span></li>
+      <li><b>6</b><span>reports between June 2025 and August 2026, two of them retests</span></li>
+      <li><b>14</b><span>months between the first measurement and the last retest</span></li>
+    </ul>
+
+    <p>All audits followed WCAG-EM, the evaluation methodology of the W3C, and were carried out by hand with a screen reader, the keyboard and zoom. The apps were tested on real devices, with VoiceOver on iOS and TalkBack on Android.</p>
+
+    <h2>The project step by step</h2>
+
+    <ul class="tijdlijn">
+      <li>
+        <span class="wanneer">June and July 2025</span>
+        <h3>Establishing the baseline</h3>
+        <p>Four audits, four reports. Each channel received its findings per page or per screen, with screenshots, code examples and a solution for every finding.</p>
+      </li>
+      <li>
+        <span class="wanneer">10 July 2025</span>
+        <h3>Knowledge session at the Voorburg office</h3>
+        <p>Proper Access went through the results with the Eteck and Fabrique team: developers, content people and management in one room. Alongside the findings, the session covered the question behind them, namely how someone using a screen reader or working without a mouse moves through the site and the app.</p>
+      </li>
+      <li>
+        <span class="wanneer">July 2025 to May 2026</span>
+        <h3>Fixing</h3>
+        <p>Fabrique took the findings into Eteck's development process, spread across several releases. By March 2026 most of the work was done and five stories were still open. Eteck and Fabrique chose to finish those first and postpone the retest, so that a completed version would be on the table. The release followed in May 2026.</p>
+      </li>
+      <li>
+        <span class="wanneer">May to August 2026</span>
+        <h3>Measuring again</h3>
+        <p>Every earlier finding was tested again. The website came first, then Mijn Eteck, and in August the iOS app after the release of version 26.7.2. For the iOS app, 27 of the 72 findings from 2025 had been resolved. Whatever was still open is described finding by finding in the retest reports.</p>
+      </li>
+      <li>
+        <span class="wanneer">August and September 2026</span>
+        <h3>The remaining points</h3>
+        <p>On 16 August and 8 September 2026, Fabrique told us that the remaining points from the retests have since been resolved, apart from the content issues, which Eteck is handling itself. We have not tested those fixes ourselves, so we report them here as Fabrique passed them on to us.</p>
+      </li>
+    </ul>
+
+    <h2>The channels we tested</h2>
+
+    <div class="tabelwrap">
+      <table class="kanalen">
+        <caption>Audits carried out per channel, with the standard applied</caption>
+        <thead>
+          <tr>
+            <th scope="col">Channel</th>
+            <th scope="col">Audit</th>
+            <th scope="col">Period</th>
+            <th scope="col">Standard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website eteck.nl and werkenbijeteck.nl</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck/">Audit</a></td>
+            <td>5 to 17 June 2025</td>
+            <td>WCAG 2.2, level AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Website eteck.nl</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202605_eteck.nl_retest/">Retest</a></td>
+            <td>18 to 20 May 2026</td>
+            <td>WCAG 2.2, level AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Mijn Eteck</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202606_mijn-eteck/">Audit</a></td>
+            <td>21 May to 4 June 2026</td>
+            <td>WCAG 2.2, level AA</td>
+          </tr>
+          <tr>
+            <th scope="row">Android app Eteck, version 1.19.0</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck_android/">Audit</a></td>
+            <td>1 to 18 June 2025</td>
+            <td>EN 301 549 with WCAG 2.1, level AA</td>
+          </tr>
+          <tr>
+            <th scope="row">iOS app Eteck, version 1.20.0</th>
+            <td><a href="https://audit.properaccess.nl/reports/202506_eteck_iOS/">Audit</a></td>
+            <td>1 to 3 July 2025</td>
+            <td>EN 301 549 with WCAG 2.1, level AA</td>
+          </tr>
+          <tr>
+            <th scope="row">iOS app MijnEteck, version 26.7.2</th>
+            <td><a href="https://www.properaccess.nl/rapporten/202608_eteck_ios_retest/">Retest</a></td>
+            <td>August 2026</td>
+            <td>EN 301 549 with WCAG 2.1, level AA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="noot">In 2025 Mijn Eteck fell within the scope of the website audit and was tested in a supplementary audit at that time.</p>
+
+    <h2>Number of findings per report</h2>
+
+    <ul class="legenda">
+      <li><span class="vlak vlak--nulmeting" aria-hidden="true"></span> Baseline 2025</li>
+      <li><span class="vlak" aria-hidden="true"></span> Audit 2026</li>
+    </ul>
+
+    <div class="tabelwrap">
+      <table class="grafiek">
+        <caption>Number of findings in each report, ranging from 37 to 97</caption>
+        <thead>
+          <tr>
+            <th scope="col">Report</th>
+            <th scope="col" class="staafcel">Findings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website, werkenbijeteck.nl and Mijn Eteck, June 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:100%" aria-hidden="true"></span><span class="getal">97</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">iOS app 1.20.0, July 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:74.2%" aria-hidden="true"></span><span class="getal">72</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Android app 1.19.0, June 2025</th>
+            <td><span class="staafrij"><span class="staaf staaf--nulmeting" style="width:70.1%" aria-hidden="true"></span><span class="getal">68</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Mijn Eteck, June 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:59.8%" aria-hidden="true"></span><span class="getal">58</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Website eteck.nl, retest May 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:57.7%" aria-hidden="true"></span><span class="getal">56</span></span></td>
+          </tr>
+          <tr>
+            <th scope="row">iOS app 26.7.2, retest August 2026</th>
+            <td><span class="staafrij"><span class="staaf" style="width:38.1%" aria-hidden="true"></span><span class="getal">37</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="noot">The bars are not a score. The 2025 and 2026 reports do not cover the same screens: in 2025 eteck.nl, werkenbijeteck.nl and Mijn Eteck shared one report, while in 2026 eteck.nl and Mijn Eteck each got their own. For the iOS app the comparison is direct: of the 72 findings from 2025, 27 had been resolved by the time of the retest.</p>
+
+    <div class="aantekening">
+      <h2>What stayed with me</h2>
+      <p>On 10 July 2025 I ran the knowledge session at Eteck's office in Voorburg. Developers, content people and management sat around one table, and that does not happen everywhere.</p>
+      <p>What stayed with me is the interest in the subject itself. The questions were about how someone uses a screen reader and why a finding matters, not about how the audit could be ticked off faster. The work then carried on for more than a year, including at moments when letting it slide would have been easier.</p>
+      <p>Julia Tol, senior auditor</p>
+    </div>
+
+    <div class="kader">
+      <h2>What this certificate covers</h2>
+      <p>Becoming accessible happens in steps. First you find out where you stand, then you fix, then you measure again, and after that you keep track of whatever new goes onto the site or into the app. Eteck and Fabrique did the work, Proper Access did the measuring.</p>
+      <p>This certificate records those steps: which audits were carried out, when, against which standard and using which methodology. It describes the project up to this point. What was tested per channel, and what was open on the date of each report, is set out in the reports this page links to.</p>
+      <p>Eteck is finishing the remaining points itself. Testing in-house is permitted: no rule requires an external party to carry out the next check.</p>
+    </div>
+
+    <div class="ondertekening">
+      <div>
+        <p class="naam">Julia Tol</p>
+        <p>Founder and senior auditor</p>
+        <p>Proper Access</p>
+      </div>
+      <div class="colofon">
+        <p>Proper Access</p>
+        <p>Keizersgracht 520 H, 1017 EK Amsterdam, the Netherlands</p>
+        <p>+31 85 5055 890</p>
+        <p><a href="https://www.properaccess.nl/">properaccess.nl</a></p>
+        <p>Chamber of Commerce: 95350985</p>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</main>
+
+<script>
+(function () {
+  var knopNl = document.getElementById('knop-nl');
+  var knopEn = document.getElementById('knop-en');
+  var blokken = {
+    nl: [document.getElementById('tekst-nl'), document.getElementById('kenmerk-nl')],
+    en: [document.getElementById('tekst-en'), document.getElementById('kenmerk-en')]
+  };
+  var titels = {
+    nl: 'Certificaat digitale toegankelijkheid Eteck',
+    en: 'Certificate of digital accessibility at Eteck'
+  };
+  var logoAlt = {
+    nl: 'Proper Access, digitale toegankelijkheid',
+    en: 'Proper Access, digital accessibility'
+  };
+
+  function toon(taal) {
+    var ander = taal === 'nl' ? 'en' : 'nl';
+    blokken[taal].forEach(function (el) { el.hidden = false; });
+    blokken[ander].forEach(function (el) { el.hidden = true; });
+    knopNl.setAttribute('aria-pressed', String(taal === 'nl'));
+    knopEn.setAttribute('aria-pressed', String(taal === 'en'));
+    document.documentElement.lang = taal;
+    document.title = titels[taal];
+    document.getElementById('logo').alt = logoAlt[taal];
+    try { history.replaceState(null, '', taal === 'nl' ? location.pathname : '?lang=en'); } catch (e) {}
+  }
+
+  knopNl.addEventListener('click', function () { toon('nl'); knopNl.focus(); });
+  knopEn.addEventListener('click', function () { toon('en'); knopEn.focus(); });
+
+  var params = new URLSearchParams(location.search);
+  if (params.get('lang') === 'en') { toon('en'); }
+})();
+</script>
+
+</body>
+</html>
