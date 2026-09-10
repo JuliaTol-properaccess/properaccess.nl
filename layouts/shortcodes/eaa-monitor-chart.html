@@ -1,0 +1,69 @@
+{{/* Staafdiagram met de cijfers van eaa-monitor.nl per sector, uit
+     data/eaa_monitor.yaml. Eén reeks: het aandeel zonder verklaring. De
+     volledige uitsplitsing staat in de tabel eronder, zodat niemand op
+     kleur alleen hoeft te lezen. Teksten zijn Engels; de pagina is Engels. */}}
+{{- $d := site.Data.eaa_monitor -}}
+{{- $id := .Get "id" | default "eaa-monitor" -}}
+<section class="emc" id="{{ $id }}">
+  <div class="hp-container">
+    <div class="emc__kop">
+      <p class="emc__eyebrow">EAA monitor · measured {{ dateFormat "2 January 2006" $d.measured }}</p>
+      <h2 class="hp-heading-lg emc__titel">How many companies in the Netherlands publish accessibility information?</h2>
+      <p class="emc__intro">
+        Every Monday our <a href="{{ $d.source }}">EAA monitor</a> checks the footer of Dutch websites in seven sectors
+        for a link to an accessibility statement. A statement is a promise, not proof: whether a site works for
+        someone with a disability only shows in a test of the site itself. But a company without one has not started.
+      </p>
+    </div>
+
+    <figure class="emc__figuur">
+      <figcaption class="emc__figcaption">Share of websites <strong>without</strong> an accessibility statement, per sector</figcaption>
+      <ol class="emc__balken" aria-hidden="true">
+        {{- range $d.sectors }}
+        <li class="emc__rij">
+          <span class="emc__label">{{ .label }} <span class="emc__n">({{ .total | lang.FormatNumber 0 }} checked · {{ .regulator }})</span></span>
+          <span class="emc__spoor"><span class="emc__balk" style="width: {{ .pct_without }}%"></span></span>
+          <span class="emc__waarde">{{ .pct_without }}%</span>
+        </li>
+        {{- end }}
+      </ol>
+      <table class="emc__tabel">
+        <caption class="sr-only">Accessibility statements per sector, measured {{ dateFormat "2 January 2006" $d.measured }}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Sector</th>
+            <th scope="col">Regulator</th>
+            <th scope="col">Checked</th>
+            <th scope="col">With statement</th>
+            <th scope="col">Without statement</th>
+            <th scope="col">Could not be checked</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{- range $d.sectors }}
+          <tr>
+            <th scope="row">{{ .label }}</th>
+            <td>{{ .regulator }}</td>
+            <td>{{ .total | lang.FormatNumber 0 }}</td>
+            <td>{{ .with_statement | lang.FormatNumber 0 }} ({{ .pct_with }}%)</td>
+            <td>{{ .without_statement | lang.FormatNumber 0 }} ({{ .pct_without }}%)</td>
+            <td>{{ .not_measurable | lang.FormatNumber 0 }} ({{ .pct_not_measurable }}%)</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+      <p class="emc__noot">
+        "Could not be checked" means the site blocked the automated check, for example with bot protection.
+        Sources for the lists: Thuiswinkel.org and WebwinkelKeur for web shops; the other sectors are curated lists.
+        The regulator column names the Dutch authority that supervises that sector under the EAA.
+      </p>
+    </figure>
+
+    <div class="emc__acties">
+      <a class="hp-btn hp-btn--primary" href="{{ $d.source }}">
+        See the live figures on the EAA monitor
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>

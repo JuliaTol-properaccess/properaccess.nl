@@ -31,8 +31,8 @@ weight = 4
 
 [[main]]
 parent = "Who we help"
-name = "Government"
-url = "/en/digital-accessibility-government/"
+name = "Software suppliers to government"
+url = "/en/software-suppliers-dutch-government/"
 weight = 5
 
 [[main]]
