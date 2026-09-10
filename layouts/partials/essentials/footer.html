@@ -55,7 +55,10 @@
           <ul class="site-footer__links">
             {{ if eq site.Language.Lang "en" }}
             <li><a href="/en/accessibility-audit/">Accessibility audit</a></li>
-            <li><a href="/en/quick-scan/">Mini audit</a></li>
+            <li><a href="/en/app-accessibility-audit/">App audit</a></li>
+            <li><a href="/en/mini-audit/">Mini audit</a></li>
+            <li><a href="/en/accessibility-credits/">Accessibility credits</a></li>
+            <li><a href="/en/european-accessibility-act/">The EAA in the Netherlands</a></li>
             {{ else }}
             <li><a href="/toegankelijkheidsaudit/">WCAG-audit</a></li>
             <li><a href="/app-toegankelijkheid-testen/">App-audit</a></li>
@@ -71,7 +74,7 @@
           <h2 class="site-footer__col-title">{{ i18n "footer_company_title" | default "Bedrijf" }}</h2>
           <ul class="site-footer__links">
             {{ if eq site.Language.Lang "en" }}
-            <li><a href="/en/proper_access_in_english/">{{ i18n "footer_about" | default "About us" }}</a></li>
+            <li><a href="/en/about-us/">{{ i18n "footer_about" | default "About us" }}</a></li>
             <li><a href="/en/blog/">Blog</a></li>
             <li><a href="/en/tools/">Tools</a></li>
             <li><a href="/en/contact/">Contact</a></li>
@@ -91,9 +94,16 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">{{ i18n "footer_legal_title" | default "Juridisch" }}</h2>
           <ul class="site-footer__links">
+            {{ if eq site.Language.Lang "en" }}
+            <li><a href="/privacyverklaring/" hreflang="nl">Privacy <span class="sr-only">(in Dutch)</span></a></li>
+            <li><a href="/algemene-voorwaarden/" hreflang="nl">{{ i18n "footer_terms" | default "Terms and conditions" }} <span class="sr-only">(in Dutch)</span></a></li>
+            <li><a href="/klachtenregeling/" hreflang="nl">{{ i18n "footer_complaints" | default "Complaints procedure" }} <span class="sr-only">(in Dutch)</span></a></li>
+            <li class="site-footer__note">Our legal pages are in Dutch. Ask us for an English copy of the terms.</li>
+            {{ else }}
             <li><a href="/privacyverklaring/">Privacy</a></li>
             <li><a href="/algemene-voorwaarden/">{{ i18n "footer_terms" | default "Algemene voorwaarden" }}</a></li>
             <li><a href="/klachtenregeling/">{{ i18n "footer_complaints" | default "Klachtenregeling" }}</a></li>
+            {{ end }}
           </ul>
           <div class="site-footer__social">
             {{ range site.Data.social.main }}

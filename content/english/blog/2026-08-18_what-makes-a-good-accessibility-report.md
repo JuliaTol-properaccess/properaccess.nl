@@ -27,7 +27,7 @@ Tomorrow becomes next week. Next week becomes next quarter. And the question sta
 
 If that sounds familiar, it's usually not your fault. It's the report. Most accessibility reports are written for the auditor who makes them, not for the team that has to work with them. So nothing happens with it, however good the research underneath may be.
 
-You can write up that same research in two ways. One version nobody reads. With the other, your team starts the next day. It comes down to how the findings are ordered, what language they're written in, and whether there's a plan alongside them. Across 900 audits I've seen what makes that difference. Below I'll show you what to look for, and how a good report gets you to an accessible website.
+You can write up that same research in two ways. One version nobody reads. With the other, your team starts the next day. It comes down to how the findings are ordered, what language they're written in, and whether there's a plan alongside them. Across 950 audits I've seen what makes that difference. Below I'll show you what to look for, and how a good report gets you to an accessible website.
 
 ## The problem with traditional reports
 

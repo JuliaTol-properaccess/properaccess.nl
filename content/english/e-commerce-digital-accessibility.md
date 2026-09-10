@@ -40,7 +40,7 @@ sections_header: "Accessible commerce, in practice"
 sections:
   - eyebrow: "The obligation"
     title: "The EAA applies now — not someday"
-    body: "Since June 2025 the European Accessibility Act requires most consumer-facing digital services to be accessible: webshops, banking, travel booking, e-books and communication services. The benchmark is the harmonised standard EN 301 549, which currently points to WCAG 2.1 (A + AA). We test against WCAG 2.2, one version ahead of the standard, at no extra cost. Enforcement and penalties are set per EU member state, but the requirement is the same everywhere."
+    body: "Since June 2025 the European Accessibility Act requires most consumer-facing digital services to be accessible: webshops, banking, travel booking, e-books and communication services. The benchmark is the harmonised standard EN 301 549, which currently points to WCAG 2.1 (A + AA). We test against WCAG 2.2, one version ahead of the standard, at no extra cost. In the Netherlands the regulator for webshops and online services is the ACM; it takes reports from consumers, tests webshops itself and requires you to report non-compliance within a week or a month. Read [how the ACM enforces the EAA](/en/eaa-acm-e-commerce/)."
     card_eyebrow: "What the rules ask"
     card_icon: "shopping_cart"
     card_title: "Who this covers"
@@ -76,7 +76,7 @@ steps:
   - title: "Introduction + quote"
     body: "We discuss your webshop, your platform and your deadlines. You get a clear quote with fixed hourly rates — no standard price list."
   - title: "Thorough audit"
-    body: "A manual test by a senior auditor across the whole customer journey, with real assistive technology and a six-eyes principle: every finding is double-checked. Your customers notice nothing — no downtime."
+    body: "A manual test by a senior auditor across the whole customer journey, with real assistive technology and the six-eyes principle: a second auditor reviews the work and every report is checked by three people before delivery. Your customers notice nothing — no downtime."
   - title: "Report + retest"
     body: "You receive a report per element with user stories and an action plan per team. After your fixes we run the retest, so your compliance is demonstrable."
 
@@ -92,5 +92,5 @@ faqs:
   - question: "How long until my webshop is accessible?"
     answer: "A mini audit gives you results within a week. A full audit takes three to five weeks. Implementation depends on your development capacity — we're happy to help you plan realistically."
   - question: "What does an audit cost?"
-    answer: "It depends on the size and complexity of your webshop. An audit starts from approximately €2,895 (excl. VAT) for a simple shop and can rise to around €5,100 for a complex international webshop. We always give you a clear indication up front."
+    answer: "It depends on the size and complexity of your webshop. A simple shop on a standard template starts from approximately €2,895, a medium shop with filters, accounts and several payment methods is around €3,150, a shop with login, a configurator or complex filters around €4,200, and an international or custom shop around €5,100. A webshop starts higher than a plain website because we test the full checkout. All prices exclude 21% VAT; you get a quote with the scope and the hours before we start."
 ---
