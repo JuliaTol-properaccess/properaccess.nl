@@ -1,0 +1,73 @@
+measured: 2026-09-07
+source: https://eaa-monitor.nl/en/
+sectors:
+  - key: webshops
+    label: "Web shops"
+    regulator: ACM
+    total: 10271
+    with_statement: 202
+    without_statement: 8523
+    not_measurable: 1546
+    pct_with: 2
+    pct_without: 83
+    pct_not_measurable: 15
+  - key: financieel
+    label: "Banks, insurers and payment services"
+    regulator: AFM
+    total: 68
+    with_statement: 42
+    without_statement: 21
+    not_measurable: 5
+    pct_with: 62
+    pct_without: 31
+    pct_not_measurable: 7
+  - key: telecom
+    label: "Telecom providers"
+    regulator: ACM
+    total: 18
+    with_statement: 12
+    without_statement: 5
+    not_measurable: 1
+    pct_with: 67
+    pct_without: 28
+    pct_not_measurable: 6
+  - key: vervoer
+    label: "Passenger transport"
+    regulator: ILT
+    total: 21
+    with_statement: 6
+    without_statement: 11
+    not_measurable: 4
+    pct_with: 29
+    pct_without: 52
+    pct_not_measurable: 19
+  - key: media
+    label: "Media and streaming"
+    regulator: CvdM
+    total: 15
+    with_statement: 8
+    without_statement: 5
+    not_measurable: 2
+    pct_with: 53
+    pct_without: 33
+    pct_not_measurable: 13
+  - key: ebooks
+    label: "E-book platforms"
+    regulator: ACM
+    total: 10
+    with_statement: 5
+    without_statement: 1
+    not_measurable: 4
+    pct_with: 50
+    pct_without: 10
+    pct_not_measurable: 40
+  - key: reizen
+    label: "Tour operators and travel agencies"
+    regulator: ACM
+    total: 24
+    with_statement: 4
+    without_statement: 18
+    not_measurable: 2
+    pct_with: 17
+    pct_without: 75
+    pct_not_measurable: 8

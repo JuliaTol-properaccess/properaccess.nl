@@ -110,3 +110,5 @@ faqs:
   - question: "Does an overlay tool make us compliant?"
     answer: "No. An overlay is a script that runs on top of your site and leaves the code underneath unchanged. A button without an accessible name is still a button without an accessible name. We tested the three best-known overlay tools and reached the same conclusion the ACM gave publicly in June 2026."
 ---
+
+{{< eaa-monitor-chart id="eaa-monitor" >}}
