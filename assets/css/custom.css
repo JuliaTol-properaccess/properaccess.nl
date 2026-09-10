@@ -5860,6 +5860,23 @@ html.dark .toolsuite-promo__text {
   gap: 0.75rem;
 }
 
+.hp-hero__form-card .hp-pain-card__list a {
+  color: #1F2937;
+  text-decoration: underline;
+  text-decoration-color: #A30D4B;
+  text-underline-offset: 3px;
+}
+
+.hp-hero__form-card .hp-pain-card__list a:hover,
+.hp-hero__form-card .hp-pain-card__list a:focus-visible {
+  color: #A30D4B;
+}
+
+.site-footer__note {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 .hp-pain-card__list li {
   font-size: 0.9375rem;
   color: #374151;
@@ -6668,7 +6685,8 @@ html.dark .toolsuite-promo__text {
 }
 
 .hp-legal-cta__desc {
-  color: var(--pa-text-muted);
+  /* Op de donkerblauwe kaart; #E5E7EB op #1F2937 geeft ruim 11:1. */
+  color: #E5E7EB;
   font-size: 1.125rem;
   margin-bottom: 2rem;
   line-height: 1.7;

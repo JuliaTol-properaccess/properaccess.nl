@@ -2,19 +2,91 @@
 
 # main menu
 [[main]]
+name = "Who we help"
+weight = 1
+
+[[main]]
+parent = "Who we help"
+name = "Webshops and online services (ACM)"
+url = "/en/eaa-acm-e-commerce/"
+weight = 1
+
+[[main]]
+parent = "Who we help"
+name = "Banks and financial services (AFM)"
+url = "/en/eaa-afm-financial-services/"
+weight = 2
+
+[[main]]
+parent = "Who we help"
+name = "Passenger transport (ILT)"
+url = "/en/eaa-ilt-passenger-transport/"
+weight = 3
+
+[[main]]
+parent = "Who we help"
+name = "E-commerce audit"
+url = "/en/e-commerce-digital-accessibility/"
+weight = 4
+
+[[main]]
+parent = "Who we help"
+name = "Government"
+url = "/en/digital-accessibility-government/"
+weight = 5
+
+[[main]]
+name = "Services"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Accessibility audit"
+url = "/en/accessibility-audit/"
+weight = 1
+
+[[main]]
+parent = "Services"
+name = "App audit"
+url = "/en/app-accessibility-audit/"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Mini audit"
+url = "/en/mini-audit/"
+weight = 3
+
+[[main]]
+parent = "Services"
+name = "Accessibility credits"
+url = "/en/accessibility-credits/"
+weight = 4
+
+[[main]]
+name = "The EAA"
+url = "/en/european-accessibility-act/"
+weight = 3
+
+[[main]]
 name = "Blog"
 url = "/en/blog/"
-weight = 1
+weight = 4
 
 [[main]]
 name = "Tools"
 url = "/en/tools/"
-weight = 2
+weight = 5
+
+[[main]]
+name = "About us"
+url = "/en/about-us/"
+weight = 6
 
 [[main]]
 name = "Contact"
 url = "/en/contact/"
-weight = 3
+weight = 7
 
 # footer menu
 [[footer]]

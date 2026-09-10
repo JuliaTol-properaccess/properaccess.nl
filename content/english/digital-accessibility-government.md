@@ -74,7 +74,7 @@ steps:
   - title: "Introduction + quote"
     body: "We discuss your channels, your team and your deadlines. You get a clear quote with fixed hourly rates — no standard price list."
   - title: "Thorough audit"
-    body: "A manual test by a senior auditor against WCAG 2.2 and EN 301 549, with real assistive technology and a six-eyes principle: every finding is double-checked."
+    body: "A manual test by a senior auditor against WCAG 2.2 and EN 301 549, with real assistive technology and the six-eyes principle: a second auditor reviews the work and every report is checked by three people before delivery."
   - title: "Report + accessibility statement"
     body: "You receive a report per element with user stories and an action plan per team, plus guidance to publish an accurate accessibility statement. A retest confirms the fixes work."
 
@@ -88,7 +88,7 @@ faqs:
   - question: "How long does an audit take?"
     answer: "You receive a final report within three to five weeks of starting. The lead time depends on the size of your website or app and the number of pages we test."
   - question: "What does an audit cost?"
-    answer: "It depends on the size and complexity of your digital channels. An audit starts from approximately €2,250 (excl. VAT). We always give you a clear indication up front."
+    answer: "It depends on the size and complexity of your digital channels. A simple website starts from approximately €2,250, most websites land around €3,150, and a complex environment with portals is around €5,100. An app costs €2,150 per platform. All prices exclude 21% VAT; you get a quote with the scope and the hours before we start."
   - question: "Who does the work?"
-    answer: "A senior auditor runs the audit and a second auditor does the internal review. Once your report is delivered, you have direct access to the auditor for substantive questions, through our accessibility credits: one credit is one question on one topic. Before that, a relationship manager is your point of contact."
+    answer: "A senior auditor runs the audit, a second auditor does the internal review, and every report is checked by three people before delivery: the six-eyes principle. Once your report is delivered, you have direct access to the auditor for substantive questions, through our accessibility credits: one credit is one question on one topic. Before that, a relationship manager is your point of contact."
 ---

@@ -3,7 +3,7 @@ title: Julia Tol
 meta_title: "Julia Tol — Senior Digital Accessibility Auditor"
 email: julia@properaccess.nl
 image: "/images/julia.webp"
-description:
+description: "Julia Tol is the founder and senior auditor of Proper Access, an independent web accessibility audit firm in Amsterdam."
 social:
   - name: github
     icon: fa-brands fa-github
@@ -18,5 +18,4 @@ social:
     link: https://www.linkedin.com/in/julia-a11y/
 ---
 
-Afgestudeerd webdeveloper in Zweden (2015). Tussen 2020 en 2024 actief als zelfstandig auditor voor alle grote Nederlandse auditbureaus, gecombineerd met een rol als expert binnen DigiToegankelijk Top (2022–2025). Beschikt over ruim 13 jaar ervaring bij het Ministerie van Justitie en Veiligheid, het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties. Sinds 2022 directeur van Proper Access, gespecialiseerd in digitale toegankelijkheid.
-Golfer, reader, teckelliefhebber.
+Graduated as a web developer in Sweden (2015). Between 2020 and 2024 she worked as an independent auditor for all the major Dutch accessibility audit firms, combined with a role as an expert within DigiToegankelijk Top (2022–2025). She has more than 13 years of experience at the Dutch Ministry of Justice and Security and the Ministry of the Interior and Kingdom Relations. Director of Proper Access since 2022, specialised in digital accessibility. Golfer, reader, dachshund lover.

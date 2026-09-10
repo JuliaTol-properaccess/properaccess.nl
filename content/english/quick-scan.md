@@ -2,7 +2,10 @@
 title: "Mini audit"
 meta_title: "Accessibility mini audit (€495) — a senior auditor, not a tool | Proper Access"
 date: 2026-05-31
-slug: "quick-scan"
+slug: "mini-audit"
+url: "/en/mini-audit/"
+aliases:
+  - /en/quick-scan/
 layout: "service-en"
 description: "A manual mini audit of your website or app by a senior accessibility auditor. Up to five hours of hands-on review of technical, design and content issues, with advice and a project estimate. €495 excl. VAT, report within five working days."
 keywords:
@@ -41,7 +44,7 @@ sections:
       - "Forms, buttons and error messages"
       - "Components you're better off replacing"
   - eyebrow: "What you receive"
-    title: "An honest starting point — no sales pitch"
+    title: "A clear starting point — no sales pitch"
     body: "You get an extensive, readable document with the technical, design and content issues, advice on how to fix each one, and a list of components you're probably better off replacing. Plus an estimate of how long the work will take and how much your site still needs. A clear picture of where you stand before a full audit."
     card_eyebrow: "Independent"
     card_icon: "balance"
@@ -59,5 +62,5 @@ faqs:
   - question: "When do I get the report?"
     answer: "Within five working days. You receive an extensive, readable document with the most important findings, advice on how to fix them, and an estimate of the work involved."
   - question: "What happens after the mini audit?"
-    answer: "Nothing you don't ask for. If you want to go deeper, a full accessibility audit gives you a report per element with concrete solutions, and we carry the mini audit findings over so you don't pay twice."
+    answer: "Nothing you don't ask for. If you want to go deeper, a full accessibility audit gives you a report per element with concrete solutions, and we carry the mini audit findings over so you don't pay twice. A full website audit starts from approximately €2,250 excl. VAT."
 ---

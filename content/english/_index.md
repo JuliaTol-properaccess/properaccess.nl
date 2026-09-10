@@ -16,7 +16,7 @@ layout: "homepage-en"
 
 faqs:
   - question: "What does an audit cost?"
-    answer: "That depends on the size and complexity of your site. Our prices start at around € 2,250 for a simple website. Most websites fall into the medium category and land around € 3,150. We always give you a clear indication up front, no surprises afterwards."
+    answer: "That depends on the size and the amount of interaction. A simple website starts at around €2,250, most websites land around €3,150, and a complex custom application is around €5,100. A webshop starts from around €2,895 because we test the full checkout, and an app costs €2,150 per platform. All prices exclude 21% VAT. You get a quote with the scope and the hours before we start."
   - question: "Do we have to fix everything right away?"
     answer: "No. We help you prioritise. For every finding we indicate how severe it is and how much effort the fix takes. That way you start with what has the most impact."
   - question: "What does the report look like?"
@@ -24,8 +24,8 @@ faqs:
   - question: "Do you work with our development team as well?"
     answer: "Yes. With our support bundle we can join your sprints, review code and answer questions. We adapt to the way you work."
   - question: "Are you independent?"
-    answer: "Completely. We do not build websites, manage content or sell software. Our only product is an honest and usable report."
+    answer: "Completely. We do not build websites, do not manage content and never audit our own work. Our own tool, the WCAG Radar, is a checker your team uses in the browser; it does not change your site. What you buy from us is a report your team can fix from."
   - question: "Do we have to comply with the EAA?"
-    answer: "The European Accessibility Act applies to companies offering products or services to consumers in the EU, for example webshops, banks, telecom and transport companies. Not sure? Get in touch and we will figure it out together."
+    answer: "The [European Accessibility Act](/en/european-accessibility-act/) applies to companies offering covered services to consumers, for example webshops, banks and insurers, telecom and passenger transport. In the Netherlands the ACM, the AFM and the ILT enforce it for those sectors. Not sure whether you are in scope? Ask your lawyer for the legal answer, and ask us where your website stands."
 
 ---

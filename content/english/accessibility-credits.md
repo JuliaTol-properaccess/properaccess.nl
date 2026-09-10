@@ -85,7 +85,7 @@ owners get plain language.
 
 ## Questions about your own report
 
-Until August 2026 those were free. That changed. Our reports are written to be used without a
+Questions about your own report cost a credit too, since August 2026. Our reports are written to be used without a
 briefing: every finding opens with a user story from a visitor with a disability, and carries a
 screenshot, a code example and a fix. Anything you ask us on top of that is work, and work has to
 be paid for somewhere. Clients whose report was already in progress when this changed keep their
