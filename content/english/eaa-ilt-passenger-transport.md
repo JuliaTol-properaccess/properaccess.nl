@@ -16,13 +16,13 @@ keywords:
   - transport app WCAG audit
 
 banner:
-  badge: "Regulator: ILT"
-  title: "Planning, booking and travelling: the ILT checks whether a passenger with a disability can do all three"
-  content: "The ILT supervises the digital accessibility of passenger transport by aircraft, train, bus and a number of cruise and ferry services. It looks at websites and apps with travel information, at digital ticketing, and at screens and announcements at stations and on board. If you carry passengers to, from or within the Netherlands, this page tells you what is in scope and how we audit it."
+  badge: "Passenger transport in the Netherlands · regulator: ILT"
+  title: "You carry passengers in the Netherlands, so planning, booking and travelling have to work for everyone. Here is what to do"
+  content: "Airlines, rail and bus operators, ferry and cruise lines and the platforms that sell their tickets fall under the European Accessibility Act, with the ILT as regulator. On this page: which parts of the journey are in scope, how the ILT handles reports from passengers, and how we audit your website, app and e-tickets so a passenger with a disability can plan, book and travel."
   bullets:
-    - "**In scope:** websites and apps with travel information, digital tickets, displays and announcements"
-    - "**How the ILT works:** passengers report to the carrier first, then to the ILT; the ILT tells carriers where they fall short"
-    - "**Ticket and check-in machines** are products, supervised by the RDI"
+    - "**Does it apply to you:** websites and apps with travel information, digital tickets, displays and announcements, for passengers in the Netherlands"
+    - "**What you must do:** make the whole route accessible, from journey search to holding a ticket; ticket machines are products under the RDI"
+    - "**Who can help:** an audit of the booking flow on the website and in the app, and a retest before a passenger's report reaches the ILT"
   button:
     enable: true
     label: "Request a quote"

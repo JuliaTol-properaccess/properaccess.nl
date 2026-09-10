@@ -15,16 +15,16 @@ keywords:
   - telecom accessibility EAA
 
 banner:
-  badge: "Regulator: ACM"
-  title: "The ACM checks webshops itself, and expects you to report what does not work"
-  content: "The ACM supervises the accessibility of e-commerce services and electronic communication services. It takes reports from consumers, selects websites and apps to test itself, and requires companies to report non-compliance within a week or a month. This is what that means for your webshop or online service."
+  badge: "Selling to consumers in the Netherlands · regulator: ACM"
+  title: "You sell online in the Netherlands, so your webshop or app has to meet the European Accessibility Act. Here is what to do"
+  content: "Since 28 June 2025 a webshop, app or online service for Dutch consumers must be accessible, and the ACM checks whether it is. On this page: what the ACM looks at, what you must report and by when, what counts as an exception, and how we get your shop through it. Kept up to date with the ACM's own pages."
   bullets:
-    - "**In scope:** webshops, marketplaces, apps, online booking, telephony and internet subscriptions"
-    - "**Reporting duty:** critical and serious problems within one week, moderate and minor within one month"
-    - "**What the ACM tests:** the whole checkout, from product in the basket to payment"
+    - "**Does it apply to you:** 10 or more employees, or a turnover above €2 million, and you sell to consumers"
+    - "**What you must do:** make the shop accessible; if you cannot fix a problem at once, report it to the ACM within a week or a month"
+    - "**Who can help:** an audit of the full checkout, the wording for the ACM form, and a retest that proves the fix"
   button:
     enable: true
-    label: "Request a quote for your webshop"
+    label: "Find out where your webshop stands"
     link: "/en/contact/"
 
 trust:
@@ -36,7 +36,7 @@ trust:
     - "Crisp"
     - "NRC"
 
-sections_header: "What the ACM does, in its own words"
+sections_header: "What the ACM checks, and what it expects from you"
 sections:
   - eyebrow: "Supervision"
     title: "Reports from consumers, and checks the ACM starts itself"

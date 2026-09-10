@@ -16,13 +16,13 @@ keywords:
   - WCAG audit financial services
 
 banner:
-  badge: "Regulator: AFM"
-  title: "The AFM started a compliance investigation in 2026 and wants concrete reports"
-  content: "The AFM supervises the accessibility of banking services and financial e-commerce services to consumers. It published three EAA updates, requires firms to report non-compliance in the AFM Portal within a week or a month, and announced an investigation into firms' websites in April 2026. This is what it expects from you, and how an audit fits in."
+  badge: "Financial services to Dutch consumers · regulator: AFM"
+  title: "You offer financial services to Dutch consumers, and the AFM is checking whether your website and app are accessible. Here is what to do"
+  content: "Banks, insurers, lenders, payment providers and investment firms fall under the European Accessibility Act, with the AFM as regulator. The AFM started checking firms' websites in 2026 and wants concrete reports of what does not work. On this page: what the AFM expects, how and when to report in the AFM Portal, and how an audit gives you the answers the form asks for. Kept up to date with the AFM's own EAA updates."
   bullets:
-    - "**In scope:** credit, investment, payment, accounts, e-money, online insurance, crowdfunding, buy-now-pay-later"
-    - "**Reporting duty:** critical and serious problems within one week, moderate and minor within one month"
-    - "**The AFM's own words:** a physical branch is not an equivalent alternative for people with a disability"
+    - "**Does it apply to you:** credit, investment, payment, accounts, e-money, online insurance, crowdfunding, buy-now-pay-later, sold to consumers"
+    - "**What you must do:** make website, portal and app accessible; report what you cannot fix within a week or a month"
+    - "**Who can help:** an audit per component with the WCAG criterion and the platform, ready for the six questions in the AFM form"
   button:
     enable: true
     label: "Request a quote"

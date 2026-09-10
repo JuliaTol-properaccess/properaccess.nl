@@ -17,7 +17,7 @@ keywords:
 
 banner:
   badge: "WCAG 2.2 and the EAA"
-  title: "More visitors, higher conversion, happier customers — and EAA-compliant"
+  title: "Your webshop has to meet the European Accessibility Act, and the ACM checks the checkout. Find the problems before a customer or the regulator does"
   content: "We guide you to an accessible webshop in clear steps — with a plan your team can actually carry out."
   bullets:
     - "**Per element:** what are the issues and how do you fix them?"

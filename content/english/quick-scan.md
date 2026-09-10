@@ -18,7 +18,7 @@ keywords:
 
 banner:
   badge: "€495 · manual · senior auditor"
-  title: "How accessible is your website really?"
+  title: "You need to know how big the accessibility problem is before you commit a budget. A senior auditor tells you in five working days, for €495"
   content: "A mini audit by a senior auditor. Not an automated tool that flags a fraction of the issues — a person who spends up to five hours checking your site by hand for technical, design and content problems, and tells you exactly where you stand and what it takes to fix it."
   bullets:
     - "**A senior auditor, not a tool** — tested with a real screen reader and keyboard"

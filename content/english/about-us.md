@@ -1,5 +1,5 @@
 ---
-title: "About Proper Access"
+title: "You need an auditor whose report your team can fix from, and whose findings hold up when a regulator asks"
 meta_title: "About Proper Access: independent web accessibility auditors in Amsterdam | Proper Access"
 date: 2026-09-10
 slug: "about-us"
@@ -13,8 +13,6 @@ keywords:
   - IAAP WAS certified
   - Proper Access
 ---
-
-# Independent web accessibility auditors, based in Amsterdam
 
 Proper Access audits websites and apps for digital accessibility, against WCAG 2.2 and the European standard EN 301 549. We work for companies that serve consumers in the Netherlands and must comply with the [European Accessibility Act](/en/european-accessibility-act/), and for public sector bodies under the Dutch government decree. Our clients are in the Netherlands, Sweden and Germany, and we report in English or Dutch at no extra cost.
 
