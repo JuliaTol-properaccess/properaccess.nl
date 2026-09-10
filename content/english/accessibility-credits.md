@@ -14,7 +14,7 @@ keywords:
 
 banner:
   badge: "one question at a time · senior auditor"
-  title: "Ask one question, without buying an audit first"
+  title: "You have one accessibility question and nobody to put it to without buying a full audit. Ask a senior auditor, one credit at a time"
   content: "Most accessibility work is sold in one size: a full audit. That leaves nowhere to go with a question you could answer in fifteen minutes. So you can buy a bundle of credits instead. One credit is one question on one topic, and the credit is only spent once we answer."
   bullets:
     - "**One credit is one question** — follow-up questions in the same thread are free"

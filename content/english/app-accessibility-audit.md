@@ -17,7 +17,7 @@ keywords:
 
 banner:
   badge: "€2,150 per platform · real devices"
-  title: "An app that works with VoiceOver and TalkBack, and meets the European Accessibility Act"
+  title: "Your app has to meet the European Accessibility Act, and nobody on your team can see what a screen reader user runs into. We can"
   content: "An app fails in different places than a website: screens instead of pages, gestures instead of a mouse, system settings instead of browser settings. We test on real devices, with the screen reader built into the operating system, and give you a report per component your developers can act on."
   bullets:
     - "**On real iPhones, iPads and Android devices**, never in an emulator"

@@ -16,7 +16,7 @@ keywords:
 
 banner:
   badge: "WCAG 2.2 and EN 301 549"
-  title: "A passing dashboard, satisfied citizens, and a team that knows how and why"
+  title: "Your accessibility statement needs an audit behind it, and your team needs to know what to fix. We deliver both"
   content: "We guide you to an accessible website in clear steps — with a plan your team can actually carry out."
   bullets:
     - "**Per element:** what are the issues and how do you fix them?"

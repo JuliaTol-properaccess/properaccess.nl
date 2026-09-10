@@ -17,7 +17,7 @@ keywords:
 
 banner:
   badge: "WCAG 2.2, level AA"
-  title: "An accessible website or app — in less than 12 weeks"
+  title: "Your website has to be accessible, and a scanner will not tell you where it fails. A senior auditor will, per component, with the fix"
   content: "More reach, better conversion and a stronger reputation, through digital products that work for everyone. Get guided by a senior auditor and meet the European Accessibility Act (EAA) with as little cost and effort as possible."
   bullets:
     - "**More reach** — the visitors who now give up halfway"

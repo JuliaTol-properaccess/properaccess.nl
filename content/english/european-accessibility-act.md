@@ -17,7 +17,7 @@ keywords:
 
 banner:
   badge: "In force since 28 June 2025"
-  title: "The European Accessibility Act, as it works in the Netherlands"
+  title: "You have to comply with the European Accessibility Act in the Netherlands, and nobody explains plainly what that means. This page does"
   content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. This page tells you which rules apply to you, who supervises you and what to do first."
   bullets:
     - "**Directive (EU) 2019/882**, implemented in Dutch law and applied since 28 June 2025"
