@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Accordion zonder aria-expanded"
 date: 2026-09-09
 slug: "sc-4-1-2-accordion-zonder-aria-expanded"
