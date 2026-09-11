@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Positieve tabindex die alles in de war gooit"
 date: 2026-09-10
 slug: "sc-2-4-3-positieve-tabindex-die-alles-in-de-war-gooit"
