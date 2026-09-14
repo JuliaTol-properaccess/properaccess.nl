@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode | default `nl` }}">
+<head>
+{{/* Losse pagina zonder header, footer en chatwidget van de site. De stijl staat hieronder inline. */}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ partialCached "favicon" . }}
+{{ partial "basic-seo.html" . }}
+<script async src="https://plausible.io/js/pa-EuRVvi2Qz629kFHPY_4ab.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
+<style>
+:root{
+  --ground:#F5F5F5; --paper:#FFFFFF; --ink:#1F2937; --ink-soft:#4B5563; --line:#DDE1E7;
+  --magenta:#A30D4B; --magenta-tint:#F9E7EE; --petrol:#004050; --petrol-tint:#E3EFF1;
+  --plan:#4B5563; --plan-tint:#ECEEF2; --shadow:0 1px 2px rgba(31,41,55,.06),0 8px 24px rgba(31,41,55,.06);
+}
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.65 Nunito,"Nunito Sans",system-ui,sans-serif;padding-inline:20px;padding-block:0 64px}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto}
+.col{max-width:700px;display:grid;gap:14px}
+h1,h2,h3{font-family:"Plus Jakarta Sans","Nunito Sans",system-ui,sans-serif;text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.75rem;font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+a{color:var(--magenta)}
+a:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
+code{font-size:.92em}
+.num{font-variant-numeric:tabular-nums}
+
+.site-top{padding-block:28px 0}
+.site-top a{display:inline-block}
+.site-top img{display:block;width:200px;height:auto}
+.intro{padding-block:40px 40px;display:grid;gap:18px;border-bottom:1px solid var(--line)}
+.lead{font-size:1.25rem;color:var(--ink-soft);max-width:640px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.9rem;color:var(--ink-soft)}
+.meta strong{color:var(--ink)}
+
+section{padding-block:56px 8px;display:grid;gap:22px}
+section>*,.intro>*,.col>*,figure>*{min-width:0}
+.kicker{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+
+.status{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;letter-spacing:.02em;padding:3px 10px 3px 8px;border-radius:999px;white-space:nowrap}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.s-ja{color:var(--petrol);background:var(--petrol-tint)}
+.s-test{color:var(--magenta);background:var(--magenta-tint)}
+.s-test::before{background:transparent;border:2px solid currentColor;width:6px;height:6px}
+.s-plan{color:var(--plan);background:var(--plan-tint)}
+.s-plan::before{background:transparent;border:1.5px dashed currentColor;width:5px;height:5px}
+
+.legenda{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.92rem;color:var(--ink-soft)}
+.legenda div{display:flex;gap:8px;align-items:center}
+
+.tabel{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:.95rem}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+td.eenheid{font-variant-numeric:tabular-nums;color:var(--ink-soft);white-space:nowrap}
+td strong{font-weight:700}
+
+.lijst{display:grid;gap:0;border-top:1px solid var(--line)}
+.item{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-bottom:1px solid var(--line)}
+.item h3{font-size:1.02rem;font-family:Nunito,system-ui,sans-serif;font-weight:700}
+.item p{color:var(--ink-soft)}
+
+figure{margin:8px 0 0;display:grid;gap:10px}
+figure img{display:block;width:100%;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
+figcaption{font-size:.88rem;color:var(--ink-soft);max-width:700px}
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:start}
+
+.module{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:22px 24px;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.module-kop{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+.stand{font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-weight:700;font-size:.92rem;color:var(--magenta)}
+.module ul{margin:0;padding-left:1.1em;color:var(--ink-soft)}
+.module li+li{margin-top:2px}
+.niet{font-size:.93rem;border-top:1px dashed var(--line);padding-top:10px}
+.niet strong{color:var(--ink)}
+.modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:18px}
+
+.let-op{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--magenta);border-radius:6px;padding:18px 22px;display:grid;gap:8px;max-width:760px}
+ul.plain{margin:0;padding-left:1.1em}
+ul.plain li+li{margin-top:6px}
+.page-foot{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);font-size:.88rem;color:var(--ink-soft);display:grid;gap:6px}
+@media (max-width:520px){ body{font-size:1rem} .module{padding:18px} .site-top img{width:160px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site-top">
+  <a href="{{ site.Home.RelPermalink }}">
+    {{ with resources.Get "images/logo_pa.svg" }}<img src="{{ .RelPermalink }}" alt="Proper Access, naar de homepage" width="520" height="42">{{ end }}
+  </a>
+</header>
+
+<main>
+<div class="intro">
+  <h1>Automatische monitoring</h1>
+  <p class="lead">Elke maand meten we je hele website automatisch na. Je ziet in één dashboard hoe je website ervoor staat, wat er nieuw is, wat er is opgelost en waar het al maanden hetzelfde blijft.</p>
+  <div class="meta">
+    <span>Te bestellen vanaf <strong>15 oktober 2026</strong></span>
+    <span>Stand van zaken <strong>14 september 2026</strong></span>
+    <span>Tot <strong class="num">3.000</strong> pagina's per website</span>
+  </div>
+</div>
+
+<section aria-label="Het dashboard">
+  <figure>
+    <img src="/images/automatische-monitoring/dashboard.jpg" alt="Het dashboard van een website in de monitoring. Bovenaan tegels met de stand per onderwerp: toegankelijkheid 60 van 100 met plus 5, zoekmachines 33,3%, vindbaar door AI 2 van 3, duurzaamheid en open meldingen. Daaronder de tijdlijn 'Gaat het de goede kant op?' met een stijgende lijn van april tot september, en de verdeling van de meldingen over kritiek, ernstig, gemiddeld en klein." width="1800" height="948">
+    <figcaption>Het dashboard van één website: de stand per onderwerp, de tijdlijn van de toegankelijkheidsscore en hoe zwaar de meldingen wegen. Ontwerp met testgegevens; de weergave kan tot de start nog wijzigen.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="overzicht">
+  <div class="col">
+    <p class="kicker">In één oogopslag</p>
+    <h2 id="overzicht">Wat het product meet</h2>
+    <p>Toegankelijkheid is de basis. Daarnaast bouwen we losse onderwerpen die je per website kunt afnemen. Elk onderwerp krijgt een eigen stand in een eigen eenheid. Er is bewust geen totaalcijfer: scores over verschillende onderwerpen optellen levert een getal op dat niets zegt, en het verbergt juist het onderwerp waar het misgaat.</p>
+  </div>
+  <div class="legenda">
+    <div><span class="status s-ja">Beschikbaar</span> zit in het abonnement vanaf 15 oktober</div>
+    <div><span class="status s-test">Gebouwd, in test</span> werkt, draait nog niet bij klanten</div>
+    <div><span class="status s-plan">Gepland</span> nog te bouwen</div>
+  </div>
+  <div class="tabel" tabindex="0" role="region" aria-label="Wat het product meet">
+    <table>
+      <thead><tr><th scope="col">Onderwerp</th><th scope="col">Waarin je de stand ziet</th><th scope="col">Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Toegankelijkheid</strong></td><td class="eenheid">score van 0 tot 100</td><td><span class="status s-ja">Beschikbaar</span></td></tr>
+        <tr><td><strong>Vindbaarheid in zoekmachines</strong></td><td class="eenheid">% pagina's zonder bevinding</td><td><span class="status s-test">Gebouwd, in test</span></td></tr>
+        <tr><td><strong>Vindbaarheid door AI</strong></td><td class="eenheid">aantal voorwaarden, bijvoorbeeld 7 van 9</td><td><span class="status s-test">Gebouwd, in test</span></td></tr>
+        <tr><td><strong>Kapotte links</strong></td><td class="eenheid">% werkende links</td><td><span class="status s-test">Gebouwd, in test</span></td></tr>
+        <tr><td><strong>Beveiligingsheaders</strong></td><td class="eenheid">aantal van 8 instructies</td><td><span class="status s-test">Gebouwd, in test</span></td></tr>
+        <tr><td><strong>Duurzaamheid</strong></td><td class="eenheid">gram CO<sub>2</sub>e per paginabezoek</td><td><span class="status s-test">Gebouwd, in test</span></td></tr>
+        <tr><td><strong>Performance</strong></td><td class="eenheid">laadtijd, Core Web Vitals</td><td><span class="status s-plan">Gepland</span></td></tr>
+        <tr><td><strong>Leesbaarheid</strong></td><td class="eenheid">nog te bepalen</td><td><span class="status s-plan">Gepland</span></td></tr>
+        <tr><td><strong>Cookies vóór toestemming</strong></td><td class="eenheid">nog te bepalen</td><td><span class="status s-plan">Gepland</span></td></tr>
+        <tr><td><strong>PDF-documenten</strong></td><td class="eenheid">meldingen per document</td><td><span class="status s-plan">Gepland</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="toeg">
+  <div class="col">
+    <p class="kicker"><span class="status s-ja">Beschikbaar</span></p>
+    <h2 id="toeg">Toegankelijkheid</h2>
+    <p>De scan loopt over je hele website. We volgen je sitemap, de interne links en de links die pas verschijnen als de pagina in een browser is geladen. Elke pagina wordt met een echte browser geopend en getoetst tegen WCAG 2.1 niveau A en AA en WCAG 2.2 niveau AA.</p>
+  </div>
+
+  <div class="lijst col">
+    <div class="item"><h3>Wordt je website beter of slechter?</h3><p>Dat is de vraag die de tijdlijn beantwoordt. Na elke scan komt er een punt bij op de lijn, zodat je maand na maand ziet welke kant het op gaat. Bij de laatste scan staat of je website verbeterd, verslechterd of gelijk gebleven is tegenover de vorige, met het verschil in punten. In een tabel staan alle eerdere scores met hun datum.</p></div>
+    <figure>
+      <img src="/images/automatische-monitoring/tijdlijn.jpg" loading="lazy" alt="De tijdlijn 'Gaat het de goede kant op' met de score per meting van 20 augustus tot 11 september: 55, 43, 82, 82, daarna een daling naar 27 en een stijging naar 41. Onder de grafiek begint een tabel met datum, score, pagina's gescand en meldingen." width="1800" height="779">
+      <figcaption>De tijdlijn van een website in de testperiode. Elk punt is een scan. Een daling zie je meteen, en ook of het daarna weer beter gaat.</figcaption>
+    </figure>
+    <div class="item"><h3>Een score die vergelijkbaar blijft</h3><p>De score loopt van 0 tot 100 en is een dichtheid: openstaande problemen per gemeten pagina, waarbij een ernstig probleem zwaarder telt. Groeit je website, dan blijft de score vergelijkbaar met vorige maanden. Het aantal meldingen en hoe zwaar ze wegen, staat er apart naast.</p></div>
+    <div class="item"><h3>Nieuw, aanhoudend en opgelost</h3><p>Per ronde zie je wat erbij kwam, wat bleef en wat verdween. Een melding telt pas als opgelost als de scan in dezelfde ronde nog een keer heeft gekeken. Zo gaat "opgelost" niet af op een toevallige meting.</p></div>
+    <div class="item"><h3>Gegroepeerd op oorzaak</h3><p>Dezelfde fout in een sjabloon is één ding om te repareren, ook als hij op 70 pagina's staat. In een meting op een echte website kwamen 276 meldingen terug tot 51 oorzaken.</p></div>
+    <div class="item"><h3>Uitleg in gewoon Nederlands</h3><p>Per melding staat op welke pagina hij zit, waar op de pagina, om welk element het gaat en wat eraan mankeert. Ook staat erbij hoe je het element terugvindt in je browser.</p></div>
+    <div class="item"><h3>Hoe zwaar de meldingen wegen</h3><p>Elke melding heeft een niveau: kritiek, ernstig, gemiddeld of klein. Zo zie je waar je begint.</p></div>
+    <div class="item"><h3>Meldingen om zelf te controleren</h3><p>Sommige dingen kan een scan niet zeker weten. Die staan apart als melding om te controleren en tellen nergens mee.</p></div>
+    <div class="item"><h3>Wat buiten de meting viel</h3><p>Je ziet hoeveel pagina's er gemeten zijn en welke niet lukten, bijvoorbeeld door een inlog, een cookiemelding of een fout. Een pagina die we niet konden meten staat nooit als "in orde" in het dashboard.</p></div>
+    <div class="item"><h3>De omvang van je website</h3><p>Hoeveel pagina's en hoeveel PDF's je website telt.</p></div>
+  </div>
+
+  <div class="duo">
+    <figure>
+      <img src="/images/automatische-monitoring/k04-ronde.jpg" loading="lazy" alt="De pagina van één scanronde met de tellingen 8 nieuw, 0 opgelost, 0 aanhoudend en 8 open, een tabel met de dekking, en de lijst met nieuwe meldingen met hun niveau." width="1286" height="1800">
+      <figcaption>Eén ronde: nieuw, opgelost, aanhoudend, en welke pagina's gemeten zijn.</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/automatische-monitoring/k05-melding.jpg" loading="lazy" alt="De detailpagina van de melding 'Afbeelding zonder alt-tekst' met de pagina, waar het staat, de selector met uitleg hoe je het element vindt, het HTML-fragment en de regel." width="1800" height="1327">
+      <figcaption>Eén melding: wat er misgaat, waar het staat en hoe je het terugvindt.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section aria-labelledby="org">
+  <div class="col">
+    <p class="kicker"><span class="status s-ja">Beschikbaar</span></p>
+    <h2 id="org">Werken met je team en meerdere websites</h2>
+  </div>
+  <div class="lijst col">
+    <div class="item"><h3>Alle websites naast elkaar</h3><p>Werk je met meerdere websites of meerdere organisaties, dan zie je ze in één overzicht met score, open meldingen en het verschil met de vorige scan.</p></div>
+    <div class="item"><h3>Toegang via je e-maildomein</h3><p>Geef het e-maildomein van je organisatie op. Iedereen met zo'n adres kan dan bij de eigen websites, zonder dat wij per persoon een account aanmaken. Mensen van buiten, zoals je websitebouwer, nodig je los uit.</p></div>
+    <div class="item"><h3>Voor bureaus</h3><p>Het domein van een bureau geeft toegang tot de websites van alle klanten onder dat bureau. Een klant ziet alleen het eigen werk. Organisaties zien elkaars websites nooit.</p></div>
+    <div class="item"><h3>Inloggen zonder wachtwoord</h3><p>Collega's loggen in met een inloglink op hun eigen e-mailadres.</p></div>
+  </div>
+  <figure>
+    <img src="/images/automatische-monitoring/k01-overzicht.jpg" loading="lazy" alt="Het overzicht Monitoring met een tabel per website: laatste scan, score, open meldingen en het verschil met de vorige scan." width="1800" height="1125">
+    <figcaption>Het overzicht van alle websites waar je bij kunt, met per website de laatste scan, de score, de open meldingen en het verschil met de vorige scan. Voorbeeld met testwebsites.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="nieuw">
+  <div class="col">
+    <p class="kicker"><span class="status s-test">Gebouwd, in test</span></p>
+    <h2 id="nieuw">De nieuwe onderwerpen naast toegankelijkheid</h2>
+    <p>Deze onderwerpen zijn gebouwd en getest op testwebsites. Ze draaien nog niet in een echte ronde bij klanten. Je neemt ze straks per website af. Wanneer ze bij te bestellen zijn, laten we je weten zodra ze bij een klant hebben gedraaid.</p>
+    <p>Elk onderwerp werkt op dezelfde manier. Een check levert een <strong>bevinding</strong> op, die telt mee. Of een <strong>advies</strong>, dat telt niet mee, want het kan een bewuste keuze zijn. Of <strong>niet gemeten</strong>, als we er niet bij konden. Per onderwerp staat er een actielijst waarin één fout in een sjabloon één regel is, en een verloop over de rondes.</p>
+  </div>
+
+  <figure>
+    <img src="/images/automatische-monitoring/s01-tegelrij.jpg" loading="lazy" alt="Een rij tegels met de stand per onderwerp: vindbaarheid in zoekmachines 66,7%, duurzaamheid 0 g, AI-vindbaarheid 2 van 2, kapotte links 75% en beveiligingsheaders 0 van 8. Daarnaast 3 tegels met de status gepland: performance, leesbaarheid en cookies vóór toestemming." width="1800" height="566">
+    <figcaption>De tegelrij bovenaan de sitepagina: elk onderwerp in zijn eigen eenheid, zonder totaal. De 5 gebouwde onderwerpen tonen een echte meting op een testwebsite. Performance, leesbaarheid en cookies staan erbij als gepland. Deze weergave is nu nog alleen zichtbaar voor Proper Access.</figcaption>
+  </figure>
+
+  <div class="modules">
+    <article class="module">
+      <div class="module-kop"><h3>Vindbaarheid in zoekmachines</h3><span class="stand num">% pagina's zonder bevinding</span></div>
+      <ul>
+        <li>Is er een titel, en is die niet te lang voor de zoekresultaten?</li>
+        <li>Is er een omschrijving?</li>
+        <li>Is er precies één hoofdkop?</li>
+        <li>Staat de taal van de pagina erbij?</li>
+        <li>Klopt het voorkeursadres?</li>
+        <li>Vraagt de pagina per ongeluk om uit de zoekresultaten te blijven?</li>
+        <li>Laadt de pagina, en stuurt het adres niet te vaak door?</li>
+        <li>Welke titels en omschrijvingen staan dubbel op de website?</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> advies over welke woorden je gebruikt of hoe je hoger komt dan een concurrent. We meten of de techniek onder je pagina klopt.</p>
+    </article>
+    <article class="module">
+      <div class="module-kop"><h3>Vindbaarheid door AI</h3><span class="stand num">aantal voorwaarden</span></div>
+      <ul>
+        <li>Per AI-crawler: mag hij je website lezen volgens robots.txt? Het gaat om 11 crawlers, zoals die van ChatGPT, Claude, Perplexity, Google en Apple. Per crawler staat erbij van wie hij is.</li>
+        <li>Is er een llms.txt?</li>
+        <li>Staan er gestructureerde gegevens op de pagina, en kloppen die?</li>
+        <li>Is de tekst ook te lezen zonder JavaScript?</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> een belofte dat je vaker genoemd wordt in AI-antwoorden. We meten of de deur openstaat en of er iets leesbaars achter die deur ligt. Een crawler die je bewust blokkeert, staat als advies en niet als fout.</p>
+    </article>
+    <article class="module">
+      <div class="module-kop"><h3>Kapotte links</h3><span class="stand num">% werkende links</span></div>
+      <ul>
+        <li>Links naar eigen pagina's die niet bestaan.</li>
+        <li>Links naar andere websites die verdwenen zijn.</li>
+        <li>Adressen waar de server een fout geeft.</li>
+        <li>In de actielijst staat welk adres kapot is en op welke pagina de link staat.</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> volledig. Een adres dat niet reageert, levert geen melding op. Het telt als niet gecontroleerd, en dat aantal staat erbij.</p>
+    </article>
+    <article class="module">
+      <div class="module-kop"><h3>Beveiligingsheaders</h3><span class="stand num">aantal van 8</span></div>
+      <ul>
+        <li>Gaat de pagina over een beveiligde verbinding?</li>
+        <li>Is er een regel voor wat de pagina mag laden?</li>
+        <li>Mag een andere website je pagina in een venster tonen?</li>
+        <li>Verraadt de server welke software en versie hij draait?</li>
+        <li>En de overige instructies die de server meestuurt, 8 in totaal.</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> een uitspraak over de veiligheid van je website. Staan alle headers er, dan zegt dat niets over een lek in je inlogscherm of een verouderd systeem.</p>
+    </article>
+    <article class="module">
+      <div class="module-kop"><h3>Duurzaamheid</h3><span class="stand num">g CO<sub>2</sub>e per bezoek</span></div>
+      <ul>
+        <li>Een schatting van de uitstoot per paginabezoek, op basis van hoeveel data een nieuwe bezoeker binnenhaalt.</li>
+        <li>Gemeten op een steekproef van maximaal 20 pagina's.</li>
+        <li>Rekenmodel: het Sustainable Web Design Model versie 4, hetzelfde model dat de Green Web Foundation gebruikt.</li>
+        <li>Draait je hosting op groene stroom, voor zover dat vast te stellen is?</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> een meting van het echte energieverbruik. Het is een schatting uit een model.</p>
+    </article>
+  </div>
+
+  <div class="duo">
+    <figure>
+      <img src="/images/automatische-monitoring/s02-dimensie-seo.jpg" loading="lazy" alt="Het blok Vindbaarheid in zoekmachines met 66,7%, een tabel 'Wat er fout is' met pagina zonder omschrijving, een tabel met adviezen, de pagina's die niet gemeten zijn en het verloop." width="1477" height="1800">
+      <figcaption>Vindbaarheid in zoekmachines: bevindingen, adviezen en wat niet gemeten is.</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/automatische-monitoring/s02-dimensie-geo.jpg" loading="lazy" alt="Het blok Vindbaarheid door AI met 2 van 2, geblokkeerde AI-crawler GPTBot, llms.txt niet aanwezig, en een advies over gestructureerde gegevens." width="1729" height="1800">
+      <figcaption>Vindbaarheid door AI: welke crawlers geblokkeerd zijn en wat er op de pagina ontbreekt.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section aria-labelledby="gepland">
+  <div class="col">
+    <p class="kicker"><span class="status s-plan">Gepland</span></p>
+    <h2 id="gepland">Wat daarna komt</h2>
+    <p>Deze onderwerpen staan op de planning. Er is nog geen datum.</p>
+  </div>
+  <div class="lijst col">
+    <div class="item"><h3>Performance</h3><p>De laadtijd van je pagina's op een mobiele telefoon, en of de Core Web Vitals van Google slagen. Gemeten op een steekproef, met de middelste waarde van 3 metingen.</p></div>
+    <div class="item"><h3>Leesbaarheid</h3><p>Hoe goed je teksten te lezen zijn. Met een eigen basismeting, en de mogelijkheid om een gespecialiseerde partner aan te sluiten.</p></div>
+    <div class="item"><h3>Cookies vóór toestemming</h3><p>Of je website cookies plaatst voordat een bezoeker toestemming heeft gegeven.</p></div>
+    <div class="item"><h3>PDF-documenten</h3><p>De PDF's op je website toetsen op toegankelijkheid, met de meldingen in hetzelfde dashboard als de pagina's.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="niet">
+  <div class="col">
+    <h2 id="niet">Wat automatische monitoring niet doet</h2>
+    <p>Dit deel is net zo belangrijk als de rest. Een automatische scan kan minder dan veel mensen denken.</p>
+  </div>
+  <div class="let-op">
+    <ul class="plain">
+      <li><strong>Een scan vindt niet alles.</strong> Wij legden de scan naast 2 handmatige onderzoeken. Van een contentonderzoek met 21 bevindingen vond de scan er 6. Van een techniekonderzoek met 19 afgekeurde succescriteria vond de scan er 8. Een website met een score van 100 kan nog steeds ontoegankelijk zijn.</li>
+      <li><strong>Het is geen audit en geen onderbouwing voor een toegankelijkheidsverklaring.</strong> Daarvoor is handmatig onderzoek nodig. Monitoring laat zien hoe je ervoor staat tussen 2 onderzoeken in.</li>
+      <li><strong>Er kijkt geen auditor naar elke meting.</strong> Wat je ziet, komt rechtstreeks uit de scan.</li>
+      <li><strong>We meten geen schermen achter een inlog</strong>, en geen stappen die je alleen met klikken bereikt, zoals een dialoogvenster of een uitklapmenu.</li>
+      <li><strong>Er hoort geen nulmeting bij.</strong> De eerste meting is een startpunt en geen oordeel over je website.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="vergelijk">
+  <div class="col">
+    <h2 id="vergelijk">Automatisch, volledig of een audit</h2>
+    <p>Het verschil in één zin: bij de automatische monitoring zie je wat de scan vindt, bij de volledige monitoring kijkt elke maand een senior auditor naar de uitkomst voordat jij hem ziet.</p>
+  </div>
+  <div class="tabel" tabindex="0" role="region" aria-label="Automatisch, volledig of een audit">
+    <table>
+      <thead><tr><th scope="col">Kenmerk</th><th scope="col">Automatische monitoring</th><th scope="col">Volledige monitoring</th><th scope="col">Audit</th></tr></thead>
+      <tbody>
+        <tr><td>Hoe vaak</td><td>elke maand</td><td>elke maand</td><td>eenmalig</td></tr>
+        <tr><td>Wie kijkt ernaar</td><td>de scan</td><td>de scan en een senior auditor</td><td>een senior auditor</td></tr>
+        <tr><td>Wat het dekt</td><td>wat automatisch te vinden is</td><td>ook wat alleen een mens ziet</td><td>het hele onderzoek</td></tr>
+        <tr><td>Hoeveel pagina's</td><td class="num">tot 3.000</td><td class="num">tot 10.000</td><td class="num">een steekproef van 15 tot 20</td></tr>
+        <tr><td>Begint met een audit</td><td>nee</td><td>ja</td><td>de audit zelf</td></tr>
+        <tr><td>Bruikbaar voor het Register</td><td>nee</td><td>nee</td><td>ja</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="praktisch">
+  <div class="col">
+    <h2 id="praktisch">Praktisch</h2>
+  </div>
+  <div class="lijst col">
+    <div class="item"><h3>Wanneer we scannen</h3><p>'s Nachts tussen 02:00 en 06:00, met hoogstens 2 pagina's tegelijk en een korte pauze ertussen. Dat is circa 30 pagina's per minuut. Past een ronde niet in één nacht, dan gaat hij de volgende nacht verder waar hij was.</p></div>
+    <div class="item"><h3>Wat we van je website vragen</h3><p>Onze scanner meldt zich als <code>ProperAccessMonitor</code>. Staat er een firewall of een bescherming tegen bots voor je website, dan vragen we je bij de start om ons toe te laten.</p></div>
+    <div class="item"><h3>De eerste maanden</h3><p>Tot en met oktober 2026 lopen wij de oorzaken na en wijzen we af wat geen echt probleem is. Een afgewezen oorzaak komt daarna niet terug in je tellingen. Heb je later twijfel over een melding, dan kun je die vraag stellen met een strippenkaart.</p></div>
+    <div class="item"><h3>Waar je gegevens staan</h3><p>Alles staat op servers in de Europese Unie. We meten pagina's die voor iedereen te bezoeken zijn, dus we verwerken geen gegevens van je bezoekers.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="page-foot">
+  <p>Proper Access, digitale toegankelijkheid. <a href="{{ site.Home.RelPermalink }}">properaccess.nl</a>, <a href="tel:+31855055890">085 5055 890</a>.</p>
+  <p>De screenshots komen van een testwebsite met expres ingebouwde fouten. De weergave kan tot de start nog wijzigen. Alleen wat als beschikbaar staat, hoort bij het abonnement vanaf 15 oktober 2026.</p>
+</footer>
+</div>
+</body>
+</html>
