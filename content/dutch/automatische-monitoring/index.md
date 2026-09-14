@@ -50,7 +50,7 @@ en het verbergt juist het onderwerp waar het misgaat.
 | Performance | laadtijd, Core Web Vitals | Gepland |
 | Leesbaarheid | nog te bepalen | Gepland |
 | Cookies vóór toestemming | nog te bepalen | Gepland |
-| Pdf-documenten | meldingen per document | Gepland |
+| PDF-documenten | meldingen per document | Gepland |
 
 **Beschikbaar** zit in het abonnement vanaf 15 oktober 2026. **Gebouwd, in test** werkt, maar
 draait nog niet bij klanten. **Gepland** moet nog gebouwd worden.
@@ -192,7 +192,7 @@ Deze onderwerpen staan op de planning. Er is nog geen datum.
 - **Leesbaarheid:** hoe goed je teksten te lezen zijn.
 - **Cookies vóór toestemming:** of je website cookies plaatst voordat een bezoeker toestemming
   heeft gegeven.
-- **Pdf-documenten:** de pdf's op je website toetsen op toegankelijkheid.
+- **PDF-documenten:** de PDF's op je website toetsen op toegankelijkheid.
 
 {{< /section-full >}}
 
