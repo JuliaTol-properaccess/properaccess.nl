@@ -105,6 +105,106 @@
   };
 
   /* ═══════════════════════════════════════════
+     HTML scenes: de situatie die de webredacteur voor zich heeft
+     ═══════════════════════════════════════════ */
+
+  function sceneBrowser(url, body) {
+    return '<div class="quiz-scene__browser">' +
+      '<div class="quiz-scene__bar"><span class="quiz-scene__url">' + url + '</span></div>' +
+      '<div class="quiz-scene__page">' + body + '</div>' +
+      '</div>';
+  }
+
+  var SCENE = {
+    banner: sceneBrowser('gemeente-voorbeeld.nl/zwemles',
+      '<div class="quiz-scene__banner">Inschrijving sluit op 1 juli!</div>' +
+      '<p class="quiz-scene__heading">Zwemles voor kinderen</p>' +
+      '<p class="quiz-scene__text">Vanaf 5 jaar kan je kind op zwemles in het Sportfondsenbad.</p>'),
+
+    // Een foto die een link is: handje erop, linkadres onderin zoals de browser het toont
+    imageLink: '<div class="quiz-scene__browser">' +
+      '<div class="quiz-scene__bar"><span class="quiz-scene__url">bibliotheek-voorbeeld.nl</span></div>' +
+      '<div class="quiz-scene__page quiz-scene__page--link">' +
+      '<svg class="quiz-scene__photo" viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg">' +
+      '<rect width="240" height="150" rx="6" fill="#f5f5f5"/>' +
+      '<circle cx="96" cy="50" r="18" fill="#1F2937"/>' +
+      '<path d="M66 132c0-30 13-50 30-50s30 20 30 50z" fill="#A30D4B"/>' +
+      '<path d="M104 100l30-9 30 9v32l-30-9-30 9z" fill="#fff" stroke="#004050" stroke-width="3" stroke-linejoin="round"/>' +
+      '<line x1="134" y1="91" x2="134" y2="123" stroke="#004050" stroke-width="3"/>' +
+      '</svg>' +
+      '<svg class="quiz-scene__pointer" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M8 2.5a2 2 0 0 1 4 0V12l1-.2a2 2 0 0 1 2.2 1.3l.3-.1a2 2 0 0 1 2.5 1.4 2 2 0 0 1 2.8 1.8V21a6 6 0 0 1-6 6h-3a6 6 0 0 1-5-2.7L3.3 19a2 2 0 0 1 3.1-2.5L8 18z" fill="#fff" stroke="#1F2937" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '</svg>' +
+      '</div>' +
+      '<div class="quiz-scene__status-url">bibliotheek-voorbeeld.nl/boeken-voor-kinderen</div>' +
+      '</div>',
+
+    headingOutline: '<div class="quiz-scene__panel">' +
+      '<p class="quiz-scene__caption">Koppen op deze pagina</p>' +
+      '<div class="quiz-scene__outline">' +
+      '<div class="quiz-scene__outline-item" style="--lvl:0"><span class="quiz-scene__tag">H1</span>Afval en recycling</div>' +
+      '<div class="quiz-scene__outline-item" style="--lvl:1"><span class="quiz-scene__tag">H2</span>Wanneer halen we op?</div>' +
+      '<div class="quiz-scene__outline-item" style="--lvl:3"><span class="quiz-scene__tag">H4</span>Glas en papier</div>' +
+      '<div class="quiz-scene__outline-item" style="--lvl:1"><span class="quiz-scene__tag">H2</span>Grofvuil aanmelden</div>' +
+      '<div class="quiz-scene__outline-item" style="--lvl:2"><span class="quiz-scene__tag">H3</span>Kosten</div>' +
+      '</div></div>',
+
+    readMore: sceneBrowser('gemeente-voorbeeld.nl/nieuws',
+      '<p class="quiz-scene__heading">Nieuws</p>' +
+      '<div class="quiz-scene__cards">' +
+      '<div class="quiz-scene__card"><div class="quiz-scene__card-img"></div><p class="quiz-scene__card-title">Nieuwe openingstijden bibliotheek</p><span class="quiz-scene__link">Lees meer</span></div>' +
+      '<div class="quiz-scene__card"><div class="quiz-scene__card-img"></div><p class="quiz-scene__card-title">Afval rond de feestdagen</p><span class="quiz-scene__link">Lees meer</span></div>' +
+      '<div class="quiz-scene__card"><div class="quiz-scene__card-img"></div><p class="quiz-scene__card-title">Parkeervergunning online aanvragen</p><span class="quiz-scene__link">Lees meer</span></div>' +
+      '</div>'),
+
+    statusTable: '<div class="quiz-scene__panel">' +
+      '<p class="quiz-scene__caption">Voortgang projecten</p>' +
+      '<div class="quiz-scene__table">' +
+      '<div class="quiz-scene__row quiz-scene__row--head"><span>Project</span><span>Status</span></div>' +
+      '<div class="quiz-scene__row"><span>Nieuwe website</span><span class="quiz-scene__status quiz-scene__status--green"></span></div>' +
+      '<div class="quiz-scene__row"><span>Klantportaal</span><span class="quiz-scene__status quiz-scene__status--orange"></span></div>' +
+      '<div class="quiz-scene__row"><span>Digitaal loket</span><span class="quiz-scene__status quiz-scene__status--red"></span></div>' +
+      '</div>' +
+      '<p class="quiz-scene__legend">Groen = afgerond, oranje = in uitvoering, rood = vertraagd</p>' +
+      '</div>',
+
+    lineChart: '<div class="quiz-scene__panel">' +
+      '<p class="quiz-scene__caption">Contact met de gemeente per kanaal</p>' +
+      '<svg class="quiz-scene__chart" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<line x1="20" y1="130" x2="290" y2="130" stroke="#1F2937" stroke-width="1"/>' +
+      '<line x1="20" y1="10" x2="20" y2="130" stroke="#1F2937" stroke-width="1"/>' +
+      '<polyline points="20,40 74,34 128,46 182,30 236,38 290,26" stroke="#A30D4B" stroke-width="2.5"/>' +
+      '<polyline points="20,58 74,52 128,60 182,48 236,56 290,50" stroke="#A30D4B" stroke-opacity="0.55" stroke-width="2.5"/>' +
+      '<polyline points="20,78 74,86 128,72 182,80 236,70 290,76" stroke="#004050" stroke-width="2.5"/>' +
+      '<polyline points="20,96 74,90 128,100 182,92 236,98 290,88" stroke="#004050" stroke-opacity="0.55" stroke-width="2.5"/>' +
+      '<polyline points="20,112 74,116 128,108 182,114 236,106 290,110" stroke="#1F2937" stroke-width="2.5"/>' +
+      '</svg>' +
+      '<div class="quiz-scene__chart-legend">' +
+      '<span><i style="background:#A30D4B"></i>Website</span>' +
+      '<span><i style="background:#A30D4B;opacity:.55"></i>Telefoon</span>' +
+      '<span><i style="background:#004050"></i>Balie</span>' +
+      '<span><i style="background:#004050;opacity:.55"></i>E-mail</span>' +
+      '<span><i style="background:#1F2937"></i>Chat</span>' +
+      '</div></div>'
+  };
+
+  // Een scene met sceneLabel draagt informatie die nodig is voor de vraag:
+  // die krijgt role="img" met een label. Andere scenes herhalen de vraagtekst
+  // en blijven verborgen voor hulpsoftware.
+  function renderIllustration(q, wrapperClass) {
+    if (q.scene && SCENE[q.scene]) {
+      var a11y = q.sceneLabel
+        ? ' role="img" aria-label="' + q.sceneLabel + '"'
+        : ' aria-hidden="true"';
+      return '<div class="' + wrapperClass + '"><div class="quiz-scene"' + a11y + '>' + SCENE[q.scene] + '</div></div>';
+    }
+    if (q.svg && SVG[q.svg]) {
+      return '<div class="' + wrapperClass + '">' + SVG[q.svg] + '</div>';
+    }
+    return '';
+  }
+
+  /* ═══════════════════════════════════════════
      UI translations
      ═══════════════════════════════════════════ */
 
@@ -154,7 +254,8 @@
   var Q = [
     {
       id: 1,
-      svg: 'image',
+      scene: 'banner',
+      sceneLabel: 'Banner op een webpagina met de tekst: Inschrijving sluit op 1 juli!',
       scenario: 'Je plaatst deze banner op de pagina. Wat zet je in de alt-tekst?',
       options: [
         { l: 'A', t: '"Illustratie"' },
@@ -167,7 +268,7 @@
     },
     {
       id: 2,
-      svg: 'imageLink',
+      scene: 'imageLink',
       scenario: 'Een foto van een lezend kind is tegelijk een link naar de pagina "Boeken voor kinderen". Wat is de beste alt-tekst?',
       options: [
         { l: 'A', t: '"Kind dat een boek leest"' },
@@ -232,7 +333,7 @@
     },
     {
       id: 7,
-      svg: 'headingStructure',
+      scene: 'headingOutline',
       scenario: 'Je pagina heeft deze koppen: H1, H2, H4, H2, H3. Wat is het probleem?',
       options: [
         { l: 'A', t: 'Er mogen geen twee H2\'s op een pagina' },
@@ -271,7 +372,7 @@
     },
     {
       id: 10,
-      svg: 'link',
+      scene: 'readMore',
       scenario: 'Welke linktekst is het meest toegankelijk?',
       options: [
         { l: 'A', t: '"Klik hier"' },
@@ -310,7 +411,7 @@
     },
     {
       id: 13,
-      svg: 'colorStatus',
+      scene: 'statusTable',
       scenario: 'Je publiceert een tabel met de voortgang van projecten. De status wordt aangegeven met gekleurde bolletjes: groen = afgerond, oranje = in uitvoering, rood = vertraagd. Wat moet je verbeteren?',
       options: [
         { l: 'A', t: 'Niets, onder de tabel staat een legenda met uitleg' },
@@ -375,7 +476,7 @@
     },
     {
       id: 18,
-      svg: 'colorChart',
+      scene: 'lineChart',
       scenario: 'In een grafiek op je pagina worden vijf categorie\u00ebn onderscheiden met verschillende kleuren. Wat moet je toevoegen?',
       options: [
         { l: 'A', t: 'Niets, de kleuren zijn duidelijk genoeg' },
@@ -601,10 +702,7 @@
       '<span class="quiz__question-number">' + t('questionOf').replace('{0}', q.id).replace('{1}', Q.length) + '</span>' +
       '</div>';
 
-    // SVG illustration
-    if (q.svg && SVG[q.svg]) {
-      html += '<div class="quiz__illustration">' + SVG[q.svg] + '</div>';
-    }
+    html += renderIllustration(q, 'quiz__illustration');
 
     html += '<div class="quiz__scenario">' + q.scenario + '</div>';
 
@@ -841,7 +939,7 @@
       });
 
       // Include SVG in review
-      var svgHtml = (q.svg && SVG[q.svg]) ? '<div class="quiz__review-svg">' + SVG[q.svg] + '</div>' : '';
+      var svgHtml = renderIllustration(q, 'quiz__review-svg');
 
       item.innerHTML = '<button class="quiz__review-item-header" aria-expanded="false">' +
         '<span class="quiz__review-item-num">Q' + q.id + '</span>' +
