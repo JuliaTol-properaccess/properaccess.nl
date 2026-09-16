@@ -107,7 +107,7 @@ ul.plain li+li{margin-top:6px}
   <p class="lead">Elke maand meten we je hele website automatisch na. Je ziet in één dashboard hoe je website ervoor staat, wat er nieuw is, wat er is opgelost en waar het al maanden hetzelfde blijft.</p>
   <div class="meta">
     <span>Te bestellen vanaf <strong>15 oktober 2026</strong></span>
-    <span>Stand van zaken <strong>14 september 2026</strong></span>
+    <span>Stand van zaken <strong>16 september 2026</strong></span>
     <span>Tot <strong class="num">3.000</strong> pagina's per website</span>
   </div>
 </div>
@@ -144,6 +144,7 @@ ul.plain li+li{margin-top:6px}
         <tr><td><strong>Leesbaarheid</strong></td><td class="eenheid">nog te bepalen</td><td><span class="status s-plan">Gepland</span></td></tr>
         <tr><td><strong>Cookies vóór toestemming</strong></td><td class="eenheid">nog te bepalen</td><td><span class="status s-plan">Gepland</span></td></tr>
         <tr><td><strong>PDF-documenten</strong></td><td class="eenheid">meldingen per document</td><td><span class="status s-plan">Gepland</span></td></tr>
+        <tr><td><strong>Webstatistieken</strong></td><td class="eenheid">bezoeken per maand</td><td><span class="status s-plan">Gepland</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -298,6 +299,50 @@ ul.plain li+li{margin-top:6px}
   </div>
 </section>
 
+<section aria-labelledby="stats">
+  <div class="col">
+    <p class="kicker"><span class="status s-plan">Gepland</span></p>
+    <h2 id="stats">Webstatistieken: zien welke fout de meeste bezoekers raakt</h2>
+    <p>Van een melding weten we nu hoe ernstig hij is en op hoeveel pagina's hij staat. Wat ontbreekt is hoeveel mensen die pagina's openen. Een fout op een pagina met 40.000 bezoeken per maand is dringender dan dezelfde fout op 70 pagina's die bijna niemand opent. Met bezoekcijfers erbij krijgt je actielijst die volgorde.</p>
+    <p>Hiervoor komt er één regel JavaScript op je website. Dat is anders dan bij alle andere onderwerpen op deze pagina, want daar kijkt onze scanner van buitenaf naar pagina's die voor iedereen te bezoeken zijn.</p>
+  </div>
+
+  <div class="modules">
+    <article class="module">
+      <div class="module-kop"><h3>Bezoekcijfers</h3><span class="stand num">bezoeken per maand</span></div>
+      <ul>
+        <li>Hoeveel bezoeken je website krijgt, en het verschil met de maand ervoor.</li>
+        <li>Welke pagina's bezocht worden, waar bezoekers vandaan komen, en met welk apparaat.</li>
+        <li>Het bezoekcijfer komt per pagina naast de meldingen te staan, zodat je de werkvoorraad kunt sorteren op wat de meeste mensen raakt.</li>
+        <li>Je ziet de cijfers in ons portaal, in het Nederlands en toegankelijk. Je logt nergens anders voor in.</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> een cijfer dat meetelt in je score. Bezoekaantallen zeggen niets over hoe toegankelijk je website is, dus ze wegen nergens in mee.</p>
+    </article>
+    <article class="module">
+      <div class="module-kop"><h3>Wat je bezoekers hebben ingesteld</h3><span class="stand num">% van de bezoeken</span></div>
+      <ul>
+        <li>Zoomniveau: hoeveel bezoekers je pagina vergroot bekijken. Daarmee wordt WCAG 1.4.4 en 1.4.10 een cijfer over je eigen publiek in plaats van een verwijzing naar de norm.</li>
+        <li>Toetsenbord: hoeveel bezoekers met Tab door de pagina gaan voordat ze de muis aanraken.</li>
+        <li>Minder beweging, hoog contrast, een eigen kleurenschema en donkere modus: hoeveel bezoekers daar in hun browser of besturingssysteem om vragen.</li>
+        <li>Tekstgrootte: of bezoekers hun standaardlettergrootte hebben verhoogd.</li>
+        <li>Afgebroken formulieren: hoe vaak iemand in een formulier begint en het niet verstuurt.</li>
+      </ul>
+      <p class="niet"><strong>Wat het niet is:</strong> een meting van wie je bezoeker is. Dit zijn eigenschappen van een weergave. Ze gaan mee als losse gebeurtenis zonder identificatie, dus er ontstaat geen profiel.</p>
+    </article>
+  </div>
+
+  <div class="let-op">
+    <ul class="plain">
+      <li><strong>Geen heatmaps en geen opnames van sessies.</strong> Andere partijen bieden die wel. Ze leggen de muisbewegingen en het scherm van je bezoekers vast, en dat past niet bij ons: we willen zo min mogelijk gegevens van je bezoekers verwerken. We bieden ze bewust niet aan.</li>
+      <li><strong>Geen detectie van schermlezers.</strong> Dat is niet betrouwbaar te meten, en het zegt iets over iemands gezondheid. Een leverancier die het toch aanbiedt, gokt.</li>
+      <li><strong>Geen cookies.</strong> De meting werkt zonder cookies en herkent een bezoeker niet tussen twee bezoeken. Of daarmee ook de toestemmingsvraag op je website vervalt, laten we juridisch nakijken voordat we het beweren.</li>
+      <li><strong>Wij worden verwerker.</strong> Bij elke andere meting kijken we naar iets wat openbaar staat. Hier verwerken we gegevens van jouw bezoekers. Er hoort dus een verwerkersovereenkomst bij, en jij bepaalt of het script op je website komt.</li>
+      <li><strong>De software draait op onze eigen server in de Europese Unie</strong>, en het script komt van ons eigen domein.</li>
+      <li><strong>Er is nog geen datum en nog geen prijs.</strong> Deze module wordt ook los af te nemen, dus zonder abonnement op de scan.</li>
+    </ul>
+  </div>
+</section>
+
 <section aria-labelledby="niet">
   <div class="col">
     <h2 id="niet">Wat automatische monitoring niet doet</h2>
@@ -342,7 +387,7 @@ ul.plain li+li{margin-top:6px}
     <div class="item"><h3>Wanneer we scannen</h3><p>'s Nachts tussen 02:00 en 06:00, met hoogstens 2 pagina's tegelijk en een korte pauze ertussen. Dat is circa 30 pagina's per minuut. Past een ronde niet in één nacht, dan gaat hij de volgende nacht verder waar hij was.</p></div>
     <div class="item"><h3>Wat we van je website vragen</h3><p>Onze scanner meldt zich als <code>ProperAccessMonitor</code>. Staat er een firewall of een bescherming tegen bots voor je website, dan vragen we je bij de start om ons toe te laten.</p></div>
     <div class="item"><h3>De eerste maanden</h3><p>Tot en met oktober 2026 lopen wij de oorzaken na en wijzen we af wat geen echt probleem is. Een afgewezen oorzaak komt daarna niet terug in je tellingen. Heb je later twijfel over een melding, dan kun je die vraag stellen met een strippenkaart.</p></div>
-    <div class="item"><h3>Waar je gegevens staan</h3><p>Alles staat op servers in de Europese Unie. We meten pagina's die voor iedereen te bezoeken zijn, dus we verwerken geen gegevens van je bezoekers.</p></div>
+    <div class="item"><h3>Waar je gegevens staan</h3><p>Alles staat op servers in de Europese Unie. De scan opent pagina's die voor iedereen te bezoeken zijn, dus daarbij verwerken we geen gegevens van je bezoekers. Neem je straks de webstatistieken erbij, dan verandert dat. Hierboven staat wat we dan wel en niet meten.</p></div>
   </div>
 </section>
 </main>
