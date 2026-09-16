@@ -1,5 +1,4 @@
 ---
-draft: true
 title: '"Download" — maar download van wat?'
 date: 2026-09-15
 slug: "sc-2-4-4-download-maar-download-van-wat"
