@@ -36,12 +36,27 @@
 {{ partialCached "custom-script.html" . }}
 
 
-<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-EuRVvi2Qz629kFHPY_4ab.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
+<!-- Bezoekcijfers zonder cookies, en de meting van toegankelijkheidsgedrag.
+     pa-stats.js doet drie dingen: het zet de shim klaar, het hangt zoom,
+     tekstgrootte en de browservoorkeuren aan de paginaweergave zelf, en het
+     laadt daarna de teller waar data-api-bron naar wijst. Die eigenschappen
+     rijden mee met de weergave, dus ze kosten geen extra gebeurtenis in het
+     abonnement.
+
+     data-api-bron wijst nu naar Plausible Cloud, met hetzelfde scriptadres dat
+     hier eerder rechtstreeks stond. Komt de eigen server er, dan verandert
+     alleen deze ene waarde.
+
+     data-gedrag-steekproef bepaalt welk deel van de weergaven scrolldiepte en
+     interacties meldt. Die twee gebeuren wel bij elke weergave en tellen dus
+     mee in het verbruik. Op onze eigen site staat hij op 100 om de meting te
+     controleren; bij een drukke klantwebsite gaat hij omlaag.
+
+     Het bestand is een kopie uit de portaalrepo; zie de kop ervan. -->
+<script defer src="/js/pa-stats.js"
+        data-domain="properaccess.nl"
+        data-api-bron="https://plausible.io/js/pa-EuRVvi2Qz629kFHPY_4ab.js"
+        data-gedrag-steekproef="100"></script>
 
 
 <!-- search index -->
