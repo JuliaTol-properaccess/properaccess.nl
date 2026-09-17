@@ -642,6 +642,45 @@ Google.
 - Opgeruimd in de repo: `content/dutch/webshop-quickscan/index.md` noemde zijn eigen URL als
   alias.
 
+### Stap 2: de functienamen hun eigen pagina geven. Begonnen 17 september 2026
+
+Uit stap 1 kwamen zes functienamen waar vraag naar is en waarvoor alleen een doorverwijzing
+bestaat. Bij het uitzoeken bleek dat ze in twee soorten uiteenvallen.
+
+**Twee functies hadden hun sjabloon nog.** `layouts/tools/contrast-checker.html` en
+`layouts/tools/text-spacing-check.html` staan nog in de repo en draaien in productie op de
+Engelse kant, met alle Nederlandse teksten er nog in via `eq .Lang`-voorwaarden. Alleen de
+Nederlandse contentbestanden waren weggehaald in commit `7ad7fe8`, "vervangen door WCAG Radar".
+Die twee zijn nu terug als echte pagina's:
+
+| Pagina | Vraag over 3 maanden |
+| --- | --- |
+| `/tools/kleurcontrast-checker/` | 785 vertoningen, positie 6,3, 34 klikken, CTR 4,33% |
+| `/tools/tekstafstand-check/` | 71 vertoningen, positie 13,4, 1 klik |
+
+De twee URL's zijn uit de `aliases` van `wcag-radar.md` gehaald, anders botsen ze. Beide pagina's
+verwijzen naar de Radar voor de overige checks, dus de deur staat open en leidt naar het product.
+
+**Vier functies hebben geen sjabloon meer.** `/tools/alt-tekst-checker/`,
+`/tools/koppenstructuur-checker/`, `/tools/link-checker/` en `/tools/tabel-checker/` zijn eerst
+samengevoegd in de Toegankelijkheids-lens en daarna in de Radar; hun layouts zijn verwijderd in
+`31a0a3b` en `e9e1b17`. Samen met de Engelse varianten gaat het om 1.290 vertoningen en 11
+klikken over drie maanden, met `/en/tools/link-checker/` als grootste (618 vertoningen, positie
+10,5).
+
+Daar is een keuze nodig, want dit is geen redactiewerk meer:
+
+1. De vier sjablonen herbouwen als losse tools, zoals contrast en tekstafstand er nu staan.
+2. Per functie een echte pagina maken die de betreffende check uit de Radar inbedt, als dat
+   technisch kan met de bookmarklet-opzet.
+3. Laten zoals het is en de vraag op die vier namen laten liggen.
+
+Mijn voorkeur is 2 als het kan en 1 als het niet kan. Een pagina die alleen naar de Radar
+doorlinkt is precies het probleem dat we oplossen: de zoeker wil de check gebruiken, niet erover
+lezen.
+
+---
+
 ---
 
 ## Restwerk
