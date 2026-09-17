@@ -8,6 +8,40 @@
   Zet `hide_cta: true` in de front matter om de CTA op één artikel uit te zetten.
 */}}
 
+{{ $eaa := dict
+  "heading" "Wat de EAA van je vraagt"
+  "items" (slice
+    (dict
+      "url" "/eaa/"
+      "title" "De EAA van begin tot eind"
+      "text" "Voor wie de wet geldt, welke norm eronder ligt, wie toezicht houdt en wat je nu concreet moet doen.")
+    (dict
+      "url" "/webshop-quickscan/"
+      "title" "Begin met een mini-audit"
+      "text" "Tot 5 uur handmatige controle op techniek, design en content, met een inschatting van het traject. € 495 exclusief btw.")
+    (dict
+      "url" "/toegankelijkheidsaudit/"
+      "title" "Laat je site volledig onderzoeken"
+      "text" "Een rapport per element, met screenshots en code-voorbeelden, zodat je team weet wat er moet gebeuren."))
+}}
+
+{{ $uitleg := dict
+  "heading" "Zelf verder met dit onderwerp"
+  "items" (slice
+    (dict
+      "url" "/tools/wcag-radar/"
+      "title" "Bekijk je pagina met de WCAG Radar"
+      "text" "Een bookmarklet en browserextensie die live laat zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. 28 van de 45 checks zijn gratis.")
+    (dict
+      "url" "/strippenkaart/"
+      "title" "Stel je vraag aan een auditor"
+      "text" "Eén strip is één vraag over één onderwerp. Je hebt er geen audit voor nodig.")
+    (dict
+      "url" "/toegankelijkheidsaudit/"
+      "title" "Laat je site onderzoeken"
+      "text" "Een rapport per element, met screenshots en code-voorbeelden, zodat je team weet wat er moet gebeuren."))
+}}
+
 {{ $map := dict
   "webredactie" (dict
     "heading" "Zelf verder met je content"
@@ -39,14 +73,70 @@
         "url" "/strippenkaart/"
         "title" "Stel je vraag aan een auditor"
         "text" "Eén strip is één vraag over één onderwerp. We denken mee over alternatieven en reviewen code.")))
+  "de eaa" $eaa
+  "de-eaa" $eaa
+  "e-commerce-eaa" (dict
+    "heading" "Weten waar je webshop staat"
+    "items" (slice
+      (dict
+        "url" "/webshop-quickscan/"
+        "title" "Begin met een mini-audit"
+        "text" "Tot 5 uur handmatige controle op techniek, design en content, met een inschatting van het traject. € 495 exclusief btw.")
+      (dict
+        "url" "/e-commerce-digitale-toegankelijkheid/"
+        "title" "Wat de EAA voor webshops betekent"
+        "text" "De wet geldt sinds 28 juni 2025 en de ACM onderzoekt webwinkels al.")
+      (dict
+        "url" "/toegankelijkheidsaudit/"
+        "title" "Laat je webshop volledig onderzoeken"
+        "text" "Een rapport per element, met screenshots en code-voorbeelden, zodat je team weet wat er moet gebeuren.")))
+  "wcag-uitgelegd" $uitleg
+  "achtergrond_wcag" $uitleg
+  "tips-en-tools" (dict
+    "heading" "Zelf aan de slag"
+    "items" (slice
+      (dict
+        "url" "/tools/wcag-radar/"
+        "title" "Bekijk je pagina met de WCAG Radar"
+        "text" "Een bookmarklet en browserextensie die live laat zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. 28 van de 45 checks zijn gratis.")
+      (dict
+        "url" "/tools/"
+        "title" "Alle toegankelijkheidstools"
+        "text" "Test je PDF's, zoek een succescriterium per beperking of stel een toegankelijkheidsverklaring op.")
+      (dict
+        "url" "/strippenkaart/"
+        "title" "Stel je vraag aan een auditor"
+        "text" "Kom je er met een tool niet uit, dan leg je de vraag voor. Eén strip is één vraag over één onderwerp.")))
+  "wcag-vragen" (dict
+    "heading" "Nog een vraag over dit onderwerp"
+    "items" (slice
+      (dict
+        "url" "/strippenkaart/"
+        "title" "Stel je vraag aan een auditor"
+        "text" "Eén strip is één vraag over één onderwerp. Je hebt er geen audit voor nodig.")
+      (dict
+        "url" "/tools/wcag-radar/"
+        "title" "Zoek het zelf op met de WCAG Radar"
+        "text" "Laat op je eigen pagina live zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. 28 van de 45 checks zijn gratis.")
+      (dict
+        "url" "/webshop-quickscan/"
+        "title" "Laat een mini-audit doen"
+        "text" "Tot 5 uur handmatige controle door een senior auditor, met een inschatting van het traject. € 495 exclusief btw.")))
 }}
 
 {{ if not .Params.hide_cta }}
-  {{ $block := false }}
+  {{/* Vaste prioriteit: een artikel heeft vaak meerdere categorieën, en de volgorde
+       in de front matter is willekeurig. De specifieke doelgroep wint van de algemene. */}}
+  {{ $priority := slice "webredactie" "webdeveloper" "e-commerce-eaa" "de eaa" "de-eaa" "wcag-vragen" "tips-en-tools" "wcag-uitgelegd" "achtergrond_wcag" }}
+  {{ $cats := slice }}
   {{ range .Params.categories }}
-    {{ $key := . | lower }}
-    {{ if and (not $block) (index $map $key) }}
-      {{ $block = index $map $key }}
+    {{ $cats = $cats | append (. | lower) }}
+  {{ end }}
+
+  {{ $block := false }}
+  {{ range $priority }}
+    {{ if and (not $block) (in $cats .) }}
+      {{ $block = index $map . }}
     {{ end }}
   {{ end }}
 
