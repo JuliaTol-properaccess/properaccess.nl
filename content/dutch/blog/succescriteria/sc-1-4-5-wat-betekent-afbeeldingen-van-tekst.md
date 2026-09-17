@@ -103,10 +103,10 @@ Hier begint het eigenlijk al. SC 1.1.1 (niveau A) zegt dat alle niet-tekstuele c
 Als je een afbeelding van tekst gebruikt, moet je dus altijd een alt-tekst toevoegen met de volledige tekst uit de afbeelding.
 
 ```html
-<!-- ❌ Niet toegankelijk -->
+<!-- Fout: niet toegankelijk -->
 <img src="welkom-bij-ons-bedrijf.png" alt="header" />
 
-<!-- ✅ Beter -->
+<!-- Goed: wel toegankelijk -->
 <img src="welkom-bij-ons-bedrijf.png" alt="" />
 <h1>Welkom bij ons bedrijf - De beste oplossingen sinds 1995</h1>
 ```
@@ -250,15 +250,15 @@ Maak de infographic met HTML en CSS. Ja, dat is meer werk. Maar het resultaat is
 Maar denk wel aan:
 
 ```html
-<!-- ✅ Logo in de header -->
+<!-- Goed: logo in de header -->
 <a href="/">
   <img src="logo.svg" alt="Proper Access" />
 </a>
 
-<!-- ✅ Logo in de footer -->
+<!-- Goed: logo in de footer -->
 <img src="logo.svg" alt="Proper Access logo" />
 
-<!-- ❌ Lege alt-tekst voor een logo -->
+<!-- Fout: lege alt-tekst voor een logo -->
 <img src="logo.svg" alt="" />
 ```
 

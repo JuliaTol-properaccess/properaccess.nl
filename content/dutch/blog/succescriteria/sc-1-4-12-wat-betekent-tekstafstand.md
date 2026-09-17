@@ -58,7 +58,7 @@ Kortom: dit is geen klein groepje. Het gaat om miljoenen mensen die jouw website
 Dit is het probleem dat ik het vaakst tegenkom:
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .hero {
   height: 400px;
   overflow: hidden;
@@ -112,7 +112,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 ### Voorbeeld 1: Hero-sectie
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .hero {
   height: 400px;
   overflow: hidden;
@@ -130,7 +130,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 **Wat er misgaat:** Bij line-height 1.5 wordt de tekst afgeknipt. De container groeit niet mee.
 
 ```css
-/* ✅ GOED */
+/* GOED */
 .hero {
   min-height: 400px; /* min-height i.p.v. height */
   overflow: visible; /* of helemaal weglaten */
@@ -151,7 +151,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 ### Voorbeeld 2: Knoppen
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .button {
   height: 48px;
   line-height: 48px; /* tekst verticaal centreren */
@@ -163,7 +163,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 **Wat er misgaat:** Bij grotere woordafstand loopt de tekst uit de knop. Bij grotere regelafstand wordt tekst afgeknipt.
 
 ```css
-/* ✅ GOED */
+/* GOED */
 .button {
   min-height: 48px; /* minimale hoogte behouden */
   padding: 0.75rem 1.5rem; /* ruimte rondom tekst */
@@ -179,7 +179,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 ### Voorbeeld 3: Card met titel
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .card-title {
   height: 60px;
   overflow: hidden;
@@ -193,7 +193,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 **Wat er misgaat:** Bij aangepaste regelafstand wordt tekst nog steeds afgeknipt, maar nu op een vreemde manier. Line-clamp houdt geen rekening met custom spacing.
 
 ```css
-/* ✅ GOED */
+/* GOED */
 .card-title {
   /* geen vaste hoogte */
   /* line-clamp kan je behouden als je wilt beperken tot 2 regels,
@@ -216,7 +216,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 ### Voorbeeld 4: Navigatiemenu
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .nav-item {
   height: 60px;
   line-height: 60px;
@@ -227,7 +227,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 **Wat er misgaat:** Bij grotere letter- of woordafstand loopt tekst uit het menu, of wordt afgeknipt.
 
 ```css
-/* ✅ GOED */
+/* GOED */
 .nav-item {
   min-height: 60px;
   padding: 1rem 1.5rem;
@@ -243,7 +243,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 Tooltips zijn lastig. Ze zijn vaak absoluut gepositioneerd met een vaste breedte. Bij grotere woordafstand wordt de tekst breder, en kan buiten de tooltip vallen.
 
 ```css
-/* ❌ FOUT */
+/* FOUT */
 .tooltip {
   position: absolute;
   width: 200px;
@@ -256,7 +256,7 @@ Tooltips zijn lastig. Ze zijn vaak absoluut gepositioneerd met een vaste breedte
 **Wat er misgaat:** Tekst loopt uit de tooltip, of wordt afgeknipt. Gebruiker mist cruciale informatie.
 
 ```css
-/* ✅ GOED */
+/* GOED */
 .tooltip {
   position: absolute;
   max-width: 250px; /* max-width i.p.v. width */

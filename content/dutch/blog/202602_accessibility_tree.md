@@ -178,10 +178,10 @@ navigation "Hoofdnavigatie"
 
 **Interpretatie:**
 
-- ✅ Duidelijke `navigation` rol
-- ✅ Toegankelijke naam ("Hoofdnavigatie")
-- ✅ Elk item is een link met duidelijke naam
-- ✅ Logische hierarchie
+- Duidelijke `navigation` rol
+- Toegankelijke naam ("Hoofdnavigatie")
+- Elk item is een link met duidelijke naam
+- Logische hierarchie
 
 #### Voorbeeld 2: Slecht toegankelijke button
 
@@ -192,10 +192,10 @@ generic
 
 **Problemen:**
 
-- ❌ Geen `button` rol (waarschijnlijk een `<div>` met onclick)
-- ❌ Role is `generic` - geen semantische betekenis
-- ❌ Niet toetsenbord-toegankelijk
-- ❌ Schermlezer leest het niet als button
+- Geen `button` rol (waarschijnlijk een `<div>` met onclick)
+- Role is `generic` - geen semantische betekenis
+- Niet toetsenbord-toegankelijk
+- Schermlezer leest het niet als button
 
 **Oplossing:**
 
@@ -216,11 +216,11 @@ textbox "E-mailadres", required, invalid
 
 **Interpretatie:**
 
-- ✅ Correcte `textbox` rol
-- ✅ Duidelijke label ("E-mailadres")
-- ✅ Required state is gecommuniceerd
-- ⚠️ Invalid state - gebruiker moet dit corrigeren
-- ✅ Huidige waarde is zichtbaar
+- Correcte `textbox` rol
+- Duidelijke label ("E-mailadres")
+- Required state is gecommuniceerd
+- **Let op:** invalid state, de gebruiker moet dit corrigeren
+- Huidige waarde is zichtbaar
 
 ## Praktijkvoorbeelden
 
@@ -246,7 +246,7 @@ heading "Welkom" level=1
 
 ```HTML
 heading "Welkom" level=1
-  └─ heading "Details" level=4  ❌ Level 2 en 3 overgeslagen
+  └─ heading "Details" level=4  (level 2 en 3 overgeslagen)
 ```
 
 Dit wordt alleen afgekeurd als er geen content tussen de `<h1>` en `<h4>` staat.
@@ -304,7 +304,7 @@ Voor een custom dropdown:
 **Ontbrekende namen:**
 
 ```HTML
-button ""  ❌ Geen toegankelijke naam
+button ""  (geen toegankelijke naam)
 ```
 
 Oplossing: Voeg `aria-label` of (zichtbare) tekst toe.
@@ -312,7 +312,7 @@ Oplossing: Voeg `aria-label` of (zichtbare) tekst toe.
 **Generieke roles:**
 
 ```HTML
-generic  ❌ Geen semantische betekenis
+generic  (geen semantische betekenis)
 ```
 
 Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, enzovoort) of ARIA roles.
@@ -320,7 +320,7 @@ Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, enzovoort) of ARIA rol
 **Verborgen content die toegankelijk moet zijn:**
 
 ```HTML
-element, hidden=true  ❌ Onbedoeld verborgen
+element, hidden=true  (onbedoeld verborgen)
 ```
 
 Oplossing: Gebruik `visibility: hidden` of `display: none` alleen voor echt verborgen content.
@@ -353,11 +353,11 @@ Combineer Accessibility Tree met:
 
 De Accessibility Tree is een essentieel hulpmiddel voor het bouwen van toegankelijke websites. Door de tree te inspecteren kun je:
 
-- ✅ Verifiëren dat elementen de juiste roles hebben
-- ✅ Controleren of alle interactieve elementen toegankelijke namen hebben
-- ✅ States en properties valideren
-- ✅ Heading hierarchie controleren
-- ✅ Formulier accessibility testen
-- ✅ Custom componenten debuggen
+- Verifiëren dat elementen de juiste roles hebben
+- Controleren of alle interactieve elementen toegankelijke namen hebben
+- States en properties valideren
+- Heading hierarchie controleren
+- Formulier accessibility testen
+- Custom componenten debuggen
 
 **Onthoud:** De Accessibility Tree laat zien wat ondersteunende technologieën "zien" - als het daar niet klopt, is je site niet toegankelijk voor gebruikers die op deze technologieën vertrouwen.

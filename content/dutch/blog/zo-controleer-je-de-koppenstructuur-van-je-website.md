@@ -51,7 +51,7 @@ Met HeadingsMap zie je meteen waar de structuur niet klopt:
 
 - **Oneigenlijk gebruik van koppen:** Soms wordt een tekst die géén kop is, zoals een call-to-action of een afsluitende zin, onterecht in een h-element geplaatst. Ook dat is fout.
 
-💡 **Tip:** Een kop hoort altijd inhoud in te leiden – of dat nu tekst, een afbeelding, een lijst of een video is. Staat er niets onder? Dan is het geen kop.
+**Tip:** Een kop hoort altijd inhoud in te leiden – of dat nu tekst, een afbeelding, een lijst of een video is. Staat er niets onder? Dan is het geen kop.
 
 ## 6\. Verbeter de toegankelijkheid van je pagina
 

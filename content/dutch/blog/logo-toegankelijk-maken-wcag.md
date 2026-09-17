@@ -60,9 +60,9 @@ Het W3C-logo bevat een abstract vignet en de tekst “World Wide Web Consortium�
 
 ![screenshot logo W3C](images/logow3.png)
 
-✅ Voordeel: Het is kort, helder en prettig om naar te luisteren.
+**Voordeel:** het is kort, helder en prettig om naar te luisteren.
 
-❌ Nadeel: Je kunt deze link niet met stem bedienen, omdat “W3C” niet letterlijk voorkomt in de zichtbare afbeeldingstekst.
+**Nadeel:** je kunt deze link niet met stem bedienen, omdat “W3C” niet letterlijk voorkomt in de zichtbare afbeeldingstekst.
 
 ### Conclusie
 
