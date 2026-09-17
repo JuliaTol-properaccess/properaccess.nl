@@ -14674,6 +14674,17 @@ body.pa-chat--open {
   font-size: 0.85rem;
 }
 
+/* Onder 48rem zet het thema de root font-size op 12.8px. Deze links werden daardoor
+   23,8px hoog, net onder de 24px van WCAG 2.2 SC 2.5.8 (AA). De links staan tegen
+   elkaar aan, dus de tussenruimte was net zo krap. Extra padding lost beide op.
+   Boven 48rem is de root 16px en haalt de link al 29,8px. */
+@media (width < 48rem) {
+  .article-toc nav a {
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+  }
+}
+
 /* Koppen niet onder de sticky header laten verdwijnen bij een ankersprong */
 .js-article-body h2,
 .js-article-body h3 {
