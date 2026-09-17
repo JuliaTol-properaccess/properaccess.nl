@@ -675,9 +675,28 @@ Daar is een keuze nodig, want dit is geen redactiewerk meer:
    technisch kan met de bookmarklet-opzet.
 3. Laten zoals het is en de vraag op die vier namen laten liggen.
 
-Mijn voorkeur is 2 als het kan en 1 als het niet kan. Een pagina die alleen naar de Radar
-doorlinkt is precies het probleem dat we oplossen: de zoeker wil de check gebruiken, niet erover
-lezen.
+**Besloten door Julia op 17 september 2026: geen losse tools meer voor functies die in de Radar
+zitten.** Dat is optie 3, en het geldt ook voor de twee die ik diezelfde dag had teruggezet.
+`/tools/kleurcontrast-checker/` en `/tools/tekstafstand-check/` zijn weer een doorverwijzing naar
+de Radar. Ik had daar een productbeslissing uit `7ad7fe8` gedeeltelijk ongedaan gemaakt zonder
+het te vragen.
+
+De vraag op die functienamen blijft echter bestaan, en die moet nu door de Radar-pagina zelf
+worden opgevangen. Die pagina mikte op haar eigen merknaam:
+
+| | Was | Is |
+| --- | --- | --- |
+| h1 | WCAG Radar | WCAG Radar: contrast, koppen en alt-teksten checken in je browser |
+| meta_title | WCAG Radar (Redactie, Designer, Developer) | Kleurcontrast, koppen en alt-teksten checken in je browser |
+| description | begon met "Bookmarklet en browserextensie voor Chrome en Firefox" | begint met de checks die je kunt doen |
+| keywords | begonnen met "toegankelijkheid checken" | zeven functienamen uit de meting vooraan |
+
+Niemand zoekt op "WCAG Radar". De tien oude tool-URL's blijven als alias staan, dus de
+opgebouwde autoriteit blijft naar de Radar lopen, en de klikken op
+`/tools/kleurcontrast-checker/` blijven binnenkomen zoals ze nu binnenkomen.
+
+Of dit genoeg is, is te zien in de meting van medio oktober: staat `/tools/wcag-radar/` dan zelf
+op "kleurcontrast checker", of blijft de alias dat doen?
 
 ---
 

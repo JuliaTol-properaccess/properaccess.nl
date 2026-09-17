@@ -1,7 +1,7 @@
 ---
-title: "WCAG Radar"
-meta_title: "WCAG Radar (Redactie, Designer, Developer) | Proper Access"
-description: "Bookmarklet en browserextensie voor Chrome en Firefox, met drie tabbladen: Redactie, Designer en Developer. Laat op elke pagina live zien of alt-teksten, koppen, contrast, focus en ARIA kloppen. 28 van de 45 checks zijn gratis, de rest vraagt een licentie."
+title: "WCAG Radar: contrast, koppen en alt-teksten checken in je browser"
+meta_title: "Kleurcontrast, koppen en alt-teksten checken in je browser | Proper Access"
+description: "Check kleurcontrast, koppenstructuur, alt-teksten, linkteksten, tabellen en tekstafstand op elke pagina, in je eigen browser. 28 van de 45 checks zijn gratis en vragen geen account."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
 gratis: true
@@ -17,7 +17,16 @@ aliases:
   - /tools/koppenstructuur-checker/
   - /tools/link-checker/
   - /tools/tabel-checker/
+  - /tools/kleurcontrast-checker/
+  - /tools/tekstafstand-check/
 keywords:
+  - kleurcontrast checker
+  - contrast checker
+  - koppenstructuur checker
+  - alt tekst checker
+  - link checker toegankelijkheid
+  - tabel checker
+  - tekstafstand check
   - toegankelijkheid checken
   - alt-tekst controleren
   - koppenstructuur checken
