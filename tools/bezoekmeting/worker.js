@@ -279,6 +279,22 @@ async function handleRapport(env, url) {
   }
 
   const dagen = Math.min(parseInt(url.searchParams.get("dagen") || "7", 10) || 7, BEWAARTERMIJN_DAGEN);
+  const data = await rapportData(env, dagen);
+
+  // Het CRM leest deze Worker serverside uit en wil JSON; in de browser is
+  // platte tekst prettiger.
+  if (url.searchParams.get("formaat") === "json") {
+    return new Response(JSON.stringify(data), {
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+    });
+  }
+
+  return new Response(tekstRapport(data), {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+async function rapportData(env, dagen) {
   const vanaf = dagenGeleden(dagen);
 
   const totaal = await env.DB.prepare(
@@ -292,7 +308,7 @@ async function handleRapport(env, url) {
             COUNT(DISTINCT pad) AS paginas,
             MAX(moment) AS laatst
      FROM bezoek
-     WHERE moment > ? AND soort = 'bedrijf'
+     WHERE moment > ? AND soort = 'bedrijf' AND organisatie IS NOT NULL
      GROUP BY organisatie
      ORDER BY weergaven DESC
      LIMIT 100`
@@ -307,18 +323,50 @@ async function handleRapport(env, url) {
      LIMIT 25`
   ).bind(vanaf).all();
 
-  return new Response(tekstRapport(dagen, totaal.results, bedrijven.results, paden.results), {
-    headers: { "Content-Type": "text/plain; charset=utf-8" },
-  });
+  // Per organisatie de pagina's, zodat het CRM kan laten zien waar iemand keek.
+  const perOrganisatie = await env.DB.prepare(
+    `SELECT organisatie, pad, COUNT(*) AS weergaven
+     FROM bezoek
+     WHERE moment > ? AND soort = 'bedrijf' AND organisatie IS NOT NULL
+     GROUP BY organisatie, pad
+     ORDER BY weergaven DESC`
+  ).bind(vanaf).all();
+
+  const padenPerOrganisatie = new Map();
+  for (const rij of perOrganisatie.results) {
+    const lijst = padenPerOrganisatie.get(rij.organisatie) || [];
+    if (lijst.length < 5) lijst.push({ pad: rij.pad, weergaven: rij.weergaven });
+    padenPerOrganisatie.set(rij.organisatie, lijst);
+  }
+
+  const soorten = totaal.results;
+  const weergaven = soorten.reduce((som, r) => som + r.aantal, 0);
+  const herleidbaar = (soorten.find((r) => r.soort === "bedrijf") || {}).aantal || 0;
+
+  return {
+    dagen: dagen,
+    vanaf: vanaf,
+    weergaven: weergaven,
+    herleidbaar: herleidbaar,
+    soorten: soorten,
+    organisaties: bedrijven.results.map((r) => ({
+      ...r,
+      paden: padenPerOrganisatie.get(r.organisatie) || [],
+    })),
+    paden: paden.results,
+  };
 }
 
-function tekstRapport(dagen, soorten, bedrijven, paden) {
+function tekstRapport(data) {
   const regels = [];
-  const alle = soorten.reduce((som, r) => som + r.aantal, 0);
-  const bedrijf = (soorten.find((r) => r.soort === "bedrijf") || {}).aantal || 0;
+  const soorten = data.soorten;
+  const bedrijven = data.organisaties;
+  const paden = data.paden;
+  const alle = data.weergaven;
+  const bedrijf = data.herleidbaar;
 
   regels.push("BEZOEKMETING properaccess.nl");
-  regels.push("Periode: laatste " + dagen + " dagen");
+  regels.push("Periode: laatste " + data.dagen + " dagen");
   regels.push("");
   regels.push("Paginaweergaven gemeten: " + alle);
   regels.push("Daarvan te herleiden naar een organisatie: " + bedrijf +

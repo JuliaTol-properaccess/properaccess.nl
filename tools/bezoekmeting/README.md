@@ -36,45 +36,55 @@ Dat verschil is precies waar een betaalde dienst voor betaald wordt. Die hebben
 een eigen database die IP-adressen aan bedrijven koppelt, uit veel meer bronnen
 dan een RDAP-lookup.
 
-## Uitrollen
+## Stand van zaken
 
-De Worker staat klaar maar is nog niet uitgerold. Vier stappen:
+De Worker draait sinds 17 september 2026 op
+`https://pa-bezoekmeting.juliatol.workers.dev`, met een D1-database in WEUR
+(Falkenstein/Amsterdam). De meting staat aan op de site.
+
+Eén ding moet nog met de hand, want een sessie van Claude mag geen secrets
+wegschrijven:
 
 ```bash
 cd tools/bezoekmeting
-
-# 1. Database aanmaken. Zet de database_id die hij teruggeeft in wrangler.json.
-npx wrangler d1 create pa-bezoekmeting
-
-# 2. Tabellen aanmaken
-npx wrangler d1 execute pa-bezoekmeting --remote --file=schema.sql
-
-# 3. Wachtwoord voor /rapport instellen
 npx wrangler secret put RAPPORT_SLEUTEL
-
-# 4. Uitrollen
-npx wrangler deploy
 ```
 
-Daarna in `config/_default/params.toml` de meting aanzetten:
+Zolang die ontbreekt geeft `/rapport` een 401 en blijft het CRM leeg. Het
+verzamelen loopt wel gewoon door.
+
+Opnieuw uitrollen na een wijziging in `worker.js`:
+
+```bash
+cd tools/bezoekmeting && npx wrangler deploy
+```
+
+Let op: `wrangler deploy` overschrijft secrets die in het dashboard zijn gezet.
+Zet `RAPPORT_SLEUTEL` daarna opnieuw als je hem daar had ingevuld.
+
+Aan- en uitzetten op de site gaat via `config/_default/params.toml`:
 
 ```toml
 [bezoekmeting]
-enable = false   # → true
+enable = true
 ```
 
-Het script laadt alleen in een productiebuild, dus lokaal meet hij niets.
-
 ## Rapport lezen
+
+Platte tekst in de browser:
 
 ```
 https://pa-bezoekmeting.juliatol.workers.dev/rapport?sleutel=<sleutel>&dagen=7
 ```
 
-Platte tekst in de browser. Bovenaan staat het getal waar het om gaat: hoeveel
-paginaweergaven er gemeten zijn en welk deel daarvan bij een organisatie hoort.
-Daaronder de organisaties met hun pagina's, en de pagina's waar bedrijfsbezoek
-op binnenkomt.
+Bovenaan staat het getal waar het om gaat: hoeveel paginaweergaven er gemeten
+zijn en welk deel daarvan bij een organisatie hoort. Daaronder de organisaties
+met hun pagina's, en de pagina's waar bedrijfsbezoek op binnenkomt.
+
+Met `&formaat=json` komt hetzelfde als JSON terug. Dat is wat het CRM
+serverside ophaalt voor de pagina Websitebezoekers; zie `src/lib/bezoekmeting.ts`
+in de CRM-repo. De sleutel staat daar in `BEZOEKMETING_SLEUTEL` en komt nooit
+bij de browser terecht.
 
 ## Onderhoud
 
@@ -95,7 +105,7 @@ Zet `enable` op `false` in params.toml. Dan stopt de meting meteen en blijft er
 niets op de site achter. De Worker en de database verwijderen kan daarna met
 `npx wrangler delete` en `npx wrangler d1 delete pa-bezoekmeting`.
 
-## Nog te regelen voordat dit aan mag
+## Nog te regelen
 
 - De privacyverklaring moet vertellen dat we het netwerk van bezoekers opzoeken,
   met welke grondslag en hoe lang we het bewaren.
