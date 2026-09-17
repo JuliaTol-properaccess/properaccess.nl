@@ -222,6 +222,20 @@ textbox "E-mailadres", required, invalid
 - **Let op:** invalid state, de gebruiker moet dit corrigeren
 - Huidige waarde is zichtbaar
 
+## Rol en naam zonder DevTools: de WCAG Radar
+
+De tree laat alles zien, ook wat je op dat moment niet zoekt. Bij een concrete vraag kost dat tijd: welke knop heeft geen toegankelijke naam, welke rol heeft dit element, en wijst deze `aria-labelledby` wel ergens heen?
+
+Daarvoor is [de WCAG Radar van Proper Access](/tools/wcag-radar/) gemaakt, een bookmarklet en een browserextensie voor Chrome en Firefox. Op het tabblad Developer zitten drie checks die dezelfde gegevens tonen als de tree:
+
+- **Toon toegankelijke naam**: elk interactief element toont de naam die een screenreader voorleest. Elementen zonder naam worden als fout gemarkeerd.
+- **ARIA-rollen en -attributen**: alle rollen en aria-attributen komen in beeld, inclusief verwijzingen naar een id dat niet bestaat. Zo zie je waar `aria-labelledby` of `aria-controls` nergens op wijst.
+- **Element-info bij hover**: beweeg over de pagina en zie tag, id, class, rol, toegankelijke naam en afmeting van het element onder je muis.
+
+Het verschil zit in waar je kijkt. De Radar zet die gegevens op de pagina zelf, zodat je ze per element naast elkaar ziet zonder in een paneel te scrollen. Voor het narekenen van een enkel element blijft de tree preciezer, want die toont ook de berekende waarde en de toestand.
+
+28 van de 45 checks zijn gratis en vragen geen account. De Radar rekent alles in je eigen browser uit, verstuurt niets en slaat niets op. Hij werkt dus ook op een acceptatieomgeving of op localhost.
+
 ## Praktijkvoorbeelden
 
 ### Voorbeeld 1: Heading structuur controleren
@@ -339,7 +353,7 @@ Combineer Accessibility Tree met:
 
 - **axe DevTools**: Uitgebreide accessibility testing
 - **WAVE**: Visual feedback over accessibility issues
-- **[WCAG Radar van Proper Access](/tools/wcag-radar/)**: onze eigen bookmarklet en extensie. Het tabblad Developer toont de toegankelijke naam en de rol van elk element op de pagina zelf, zodat je niet per element de tree in hoeft
+- **[WCAG Radar van Proper Access](/tools/wcag-radar/)**: rol, toegankelijke naam en aria-attributen op de pagina zelf
 - **Screen readers**: NVDA (Windows), VoiceOver (Mac)
 
 ### 4. Documentatie en resources
