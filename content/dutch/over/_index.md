@@ -209,7 +209,7 @@ Zit je nog midden in de keuze voor een bureau? Op [hoe kies je een auditbureau](
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
   <h3 class="card__title">Hulpsoftware</h3>
-  <p>NVDA, JAWS, VoiceOver, TalkBack: we testen websites én apps op echte hulpsoftware en weten hoe browsers en screenreaders zich gedragen.</p>
+  <p>NVDA, VoiceOver, TalkBack: we testen websites én apps op echte hulpsoftware en weten hoe browsers en screenreaders zich gedragen.</p>
 </div>
 {{< /section-cards >}}
 
