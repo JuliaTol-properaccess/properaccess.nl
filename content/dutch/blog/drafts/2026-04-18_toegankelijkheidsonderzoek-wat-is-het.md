@@ -51,7 +51,7 @@ Dit is het grootste deel van het werk. Het idee is simpel: elke beperking die WC
 Dat doen we door de pagina systematisch te doorlopen met:
 
 - **Toetsenbord** — werkt alles zonder muis? Is de focus altijd zichtbaar, volgt die een logische volgorde, en zijn er geen plekken waar je niet meer weg komt?
-- **Schermlezer** (NVDA, JAWS, VoiceOver) — wat hoort iemand die niet kan zien? Klopt de koppenstructuur, zijn labels en alt-teksten zinvol, worden statusberichten voorgelezen?
+- **Schermlezer** (NVDA en VoiceOver) — wat hoort iemand die niet kan zien? Klopt de koppenstructuur, zijn labels en alt-teksten zinvol, worden statusberichten voorgelezen?
 - **Zoom tot 400%** en **vergrote tekstafstand** — blijft content leesbaar en bruikbaar, past alles in één kolom, verdwijnt er niets?
 - **Spraakbesturing** (Dragon, Voice Control) — kun je alle knoppen bij naam aanroepen?
 - **Kleurfilters en contrastsimulatie** — wat mist iemand met deuteranopie of een cataract? Is informatie alleen via kleur herkenbaar?

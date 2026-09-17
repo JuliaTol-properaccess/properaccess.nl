@@ -103,7 +103,7 @@ Daarvoor is de strippenkaart. Je stelt een vraag over één onderwerp, een audit
 ## 3. Professionele audit (betaald, meest grondig)
 
 Een professionele auditor:
-- Test met meerdere schermlezers (NVDA, JAWS, VoiceOver)
+- Test met meerdere schermlezers (NVDA en VoiceOver)
 - Test op meerdere apparaten en browsers
 - Kent de nuances van de WCAG-standaard
 - Weet wanneer iets technisch voldoet maar praktisch niet werkt

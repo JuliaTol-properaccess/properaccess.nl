@@ -28,12 +28,12 @@ Een toegankelijkheidsaudit is een grondige beoordeling van je website of app op 
 Een goede audit combineert twee methoden:
 
 ### Geautomatiseerd testen
-Tools zoals axe of WAVE scannen je pagina's op technische fouten: ontbrekende alt-teksten, te laag contrast, formuliervelden zonder label. Dit vangt ongeveer 30% van de problemen.
+Tools zoals axe of WAVE scannen je pagina's op technische fouten: ontbrekende alt-teksten, te laag contrast, formuliervelden zonder label. Dit vangt ongeveer 30% van de succescriteria.
 
 ### Handmatig testen
-De overige 70% vind je alleen door handmatig te testen. Een auditor navigeert door je website met:
+De overige 70% toets je alleen met de hand. Een auditor navigeert door je website met:
 - **Toetsenbord alleen**: kan je alles bereiken en bedienen zonder muis?
-- **Schermlezer** (NVDA, VoiceOver, JAWS): wordt alle informatie correct voorgelezen?
+- **Schermlezer** (NVDA en VoiceOver): wordt alle informatie correct voorgelezen?
 - **Zoom en tekstaanpassingen**: breekt de layout bij 200% of 400% zoom?
 - **Verschillende browsers en apparaten**
 

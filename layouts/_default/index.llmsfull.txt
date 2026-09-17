@@ -168,7 +168,7 @@ Made and hosted in the EU, built on what we ran into across more than 950 audits
 ## {{ $t.terms }}
 
 {{ if $nl -}}
-WCAG 2.2, EAA (European Accessibility Act), BDTO (Besluit digitale toegankelijkheid overheid), WCAG-EM methodologie, screenreader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantische HTML, toetsenbordnavigatie, kleurcontrast, alt-tekst, EN 301 549, toegankelijkheidsverklaring, hercontrole, strippenkaart.
+WCAG 2.2, EAA (European Accessibility Act), BDTO (Besluit digitale toegankelijkheid overheid), WCAG-EM methodologie, screenreader (VoiceOver, NVDA, TalkBack), ARIA, semantische HTML, toetsenbordnavigatie, kleurcontrast, alt-tekst, EN 301 549, toegankelijkheidsverklaring, hercontrole, strippenkaart.
 {{- else -}}
-WCAG 2.2, EAA (European Accessibility Act), Web Accessibility Directive, EN 301 549, WCAG-EM evaluation methodology, screen reader (VoiceOver, NVDA, JAWS, TalkBack), ARIA, semantic HTML, keyboard navigation, colour contrast, alt text, accessibility statement, retest, accessibility credits.
+WCAG 2.2, EAA (European Accessibility Act), Web Accessibility Directive, EN 301 549, WCAG-EM evaluation methodology, screen reader (VoiceOver, NVDA, TalkBack), ARIA, semantic HTML, keyboard navigation, colour contrast, alt text, accessibility statement, retest, accessibility credits.
 {{- end }}

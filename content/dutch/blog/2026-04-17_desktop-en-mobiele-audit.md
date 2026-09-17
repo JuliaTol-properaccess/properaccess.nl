@@ -41,7 +41,7 @@ Complexe gebaren (vegen, pinch-to-zoom op kaarten, drag-and-drop) moeten ook met
 | Test                              | Desktop | Mobiel |
 | --------------------------------- | ------- | ------ |
 | Toetsenbordnavigatie              | Ja      | -      |
-| Schermlezer (NVDA/JAWS)           | Ja      | -      |
+| Schermlezer (NVDA)                | Ja      | -      |
 | Schermlezer (VoiceOver)           | Ja      | Ja     |
 | Zoom tot 400%                     | Ja      | -      |
 | Responsive gedrag                 | Ja      | Ja     |
