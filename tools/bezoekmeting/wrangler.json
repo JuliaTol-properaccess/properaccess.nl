@@ -1,0 +1,12 @@
+{
+  "name": "pa-bezoekmeting",
+  "main": "worker.js",
+  "compatibility_date": "2026-03-12",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pa-bezoekmeting",
+      "database_id": "VUL_IN_NA_WRANGLER_D1_CREATE"
+    }
+  ]
+}

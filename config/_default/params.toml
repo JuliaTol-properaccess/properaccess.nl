@@ -87,6 +87,15 @@ content_detail = "Meer informatie vind je in onze [privacyverklaring](/privacyve
 button_accept = "Accepteren"
 button_reject = "Alleen noodzakelijke"
 
+# bezoekmeting (tijdelijk, september 2026)
+# Meet welk deel van het bezoek te herleiden is naar een organisatie, via de
+# pa-bezoekmeting Worker in tools/bezoekmeting/. Zet geen cookie en slaat geen
+# IP-adressen op, dus de cookiebanner blijft uit. Staat uit tot de Worker is
+# uitgerold en de privacyverklaring is bijgewerkt.
+[bezoekmeting]
+enable = false
+eindpunt = "https://pa-bezoekmeting.juliatol.workers.dev"
+
 # diagrams
 [mermaid]
 js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
