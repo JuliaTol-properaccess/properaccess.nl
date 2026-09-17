@@ -41,8 +41,8 @@ Waarom? Mensen die spraaksturing gebruiken (zoals Dragon NaturallySpeaking) navi
 
 Maar omdat `aria-label` de tekst van beide span-elementen overschrijft, is er geen match. De gebruiker kan het element niet activeren door de zichtbare tekst te zeggen.
 
-✅ Wel toegankelijk: zichtbare tekst = "EN", toegankelijke naam = "English (EN)"  
-⚠️ Niet toegankelijk: zichtbare tekst = "EN" of "NL", toegankelijke naam = "Switch language"
+- Wel toegankelijk: zichtbare tekst = "EN", toegankelijke naam = "English (EN)"
+- Niet toegankelijk: zichtbare tekst = "EN" of "NL", toegankelijke naam = "Switch language"
 
 ### Probleem 2: Geen indicatie van de huidige taal
 
@@ -78,7 +78,7 @@ Dit is lang niet de enige oplossing!
 
 ## Veelgemaakte fouten (en hoe je ze voorkomt)
 
-### ❌ Fout: aria-hidden op zichtbare tekst
+### Fout: aria-hidden op zichtbare tekst
 
 ```html
 <a href="/en/">
