@@ -90,10 +90,10 @@ button_reject = "Alleen noodzakelijke"
 # bezoekmeting (tijdelijk, september 2026)
 # Meet welk deel van het bezoek te herleiden is naar een organisatie, via de
 # pa-bezoekmeting Worker in tools/bezoekmeting/. Zet geen cookie en slaat geen
-# IP-adressen op, dus de cookiebanner blijft uit. Staat uit tot de Worker is
-# uitgerold en de privacyverklaring is bijgewerkt.
+# IP-adressen op, dus de cookiebanner blijft uit. De Worker draait sinds
+# 17 september 2026. De privacyverklaring moet hier nog op aangepast worden.
 [bezoekmeting]
-enable = false
+enable = true
 eindpunt = "https://pa-bezoekmeting.juliatol.workers.dev"
 
 # diagrams
