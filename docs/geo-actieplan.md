@@ -524,6 +524,24 @@ eerste klikken op de pijlerpagina.
   voorwaarden voor een publiekrechtelijke instelling, en de zin dat Logius steekproeven
   uitvoert is eruit. Allebei stonden ze op de lijst met bekende fouten.
 
+### Meting van 17 september 2026
+
+Vier exports, waaronder twee met een paginafilter. De volledige analyse staat buiten deze repo,
+in `~/Downloads/search console/analyse-17-september-2026.md`, omdat deze repo publiek is.
+
+De kern: `/digitale-toegankelijkheid/` had in de 76 dagen vóór de herbouw nul vertoningen en in
+de zestien dagen erna 1.139, nog steeds stijgend op de laatste dag van het venster. Op de
+kernterm staat die pagina zelf op 19,9, terwijl de site als geheel op 42,2 staat. Dat verschil
+komt door de twee blogartikelen, die op 49,7 en 30,7 blijven meedoen.
+
+Twee dingen die daaruit volgen en nog openstaan:
+
+- **De twee blogartikelen loskoppelen van de kernterm.** Zolang die meedoen, blijft het
+  sitegemiddelde op 42 hangen terwijl de pijlerpagina op 20 staat. Een canonical of een
+  herpositionering is de volgende stap.
+- **Het klikprobleem is niet aangeraakt en wordt groter.** De CTR op positie 4 tot 10 ging van
+  0,64% naar 0,48%. De pijlerpagina haalde 1 klik uit 1.139 vertoningen.
+
 ### Wat er op 17 september 2026 is gedaan
 
 Stap 4, en het bleek een ander probleem dan verwacht. De pagina was inhoudelijk niet te dun; hij
