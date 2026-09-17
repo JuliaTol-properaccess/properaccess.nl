@@ -5,10 +5,10 @@ layout: "audit"
 weight: 2
 featured: true
 date: 2024-12-05
-lastmod: 2026-05-31
+lastmod: 2026-09-17
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
-description: "Een audit die verder gaat dan fouten oplijsten. Je krijgt concrete oplossingen, visueel onderbouwd, met code-voorbeelden. Zodat je team direct aan de slag kan."
+description: "Een toegankelijkheidsaudit is een handmatige toets van je website aan WCAG 2.2 niveau AA. Concrete oplossingen met code-voorbeelden. Vanaf circa 2.250 euro."
 tldr: |
   Een toegankelijkheidsaudit is een handmatig onderzoek waarin we je website of app toetsen aan WCAG 2.2, niveau AA. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.250 en duurt 3 tot 5 weken. Je weet daarna precies wat er nog niet voldoet aan de EAA of het BDTO en hoe je het oplost.
 keywords:
@@ -33,7 +33,7 @@ service:
     description: "Indicatie vanaf circa € 2.250 exclusief btw. De definitieve prijs hangt af van omvang en type site en volgt na een gratis kennismaking."
 
 banner:
-  title: "In minder dan 12 weken een toegankelijke website of app"
+  title: "Toegankelijkheidsaudit: in minder dan 12 weken een toegankelijke website of app"
   content: "Meer bereik, betere conversie en een sterker imago, door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
   bullets:
     - "**Meer bereik**: de bezoekers die nu halverwege afhaken"
@@ -70,7 +70,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.250 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
-    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met echte assistieve technologie en volgens het 6-ogen-principe: elke bevinding wordt dubbel gecontroleerd."
+    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met echte assistieve technologie en volgens het 6-ogen-principe: elk rapport wordt door drie mensen bekeken voordat het de deur uit gaat."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een hercontrole die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
@@ -79,7 +79,7 @@ faqs:
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 ---
 
-{{< section-full title="Wat is een toegankelijkheidsonderzoek?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
+{{< section-full title="Wat is een toegankelijkheidsaudit?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
 
 Toegankelijkheidsaudit, WCAG-audit, toegankelijkheidstoets, toegankelijkheidsonderzoek. Vier
 namen die je in offertes en aanbestedingen door elkaar ziet staan, voor hetzelfde werk. Wie een
@@ -102,7 +102,7 @@ aan ons kunt stellen en aan elke andere partij die je spreekt.
 
 {{< /section-full >}}
 
-{{< section-steps id="methode" title="Volgens welke methode onderzoeken we?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat er volgens is uitgevoerd, dus je rapport is bruikbaar als bewijs." >}}
+{{< section-steps id="methode" title="Volgens welke methode voeren we de audit uit?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat er volgens is uitgevoerd, dus je rapport is bruikbaar als bewijs." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Reikwijdte bepalen</h3>
@@ -144,7 +144,7 @@ Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastl
 
 {{< /section-full >}}
 
-{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type onderzoek past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter." >}}
+{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type audit past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter." >}}
 {{< section-card title="Contentaudit" >}}
 
 33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
@@ -180,7 +180,7 @@ wilt. Een senior auditor bekijkt je site en benoemt de grootste knelpunten.
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-full title="Wat kost een toegankelijkheidsonderzoek?" id="prijzen" >}}
+{{< section-full title="Wat kost een toegankelijkheidsaudit?" id="prijzen" >}}
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
 aantal pagina's. Alle bedragen zijn exclusief 21% btw.

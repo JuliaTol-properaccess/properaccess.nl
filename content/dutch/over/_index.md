@@ -82,7 +82,7 @@ team:
         correct interpreteren.
       highlights:
         - "Een vast team van 10 auditors, onderzoekers en reviewers"
-        - "6-ogen-principe: elke bevinding wordt dubbel gecontroleerd"
+        - "6-ogen-principe: elk rapport wordt door drie mensen bekeken"
         - "Peer review door collega-onderzoekers, ook buiten ons team"
         - "Eigen research: we testen op echte hulpsoftware en browsers"
         - "Uitleg zonder jargon, zonder ambtenarentaal"

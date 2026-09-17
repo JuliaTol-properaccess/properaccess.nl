@@ -63,7 +63,7 @@ Met deze audit krijgen jullie drie belangrijke resultaten:
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Contrast getest** in dark mode en licht mode
 - **Screenreaders:** VoiceOver (Mac) en NVDA (Windows)
-- **6-ogenprincipe:** elke bevinding gecontroleerd door twee senior onderzoekers
+- **6-ogen-principe:** elk rapport wordt door drie mensen bekeken
 - **Rapport kan desgewenst ook in het Engels worden opgeleverd**
 
 ### Oplossingsrichtingen
