@@ -70,9 +70,9 @@ function contrastRatio(hex1, hex2) {
 function checkContrastWithWhite(hex) {
   const ratio = contrastRatio(hex, "#FFFFFF");
   if (ratio < 4.5) {
-    console.warn(`⚠️ Contrast te laag (${ratio.toFixed(2)}): ${hex}`);
+    console.warn(`Contrast te laag (${ratio.toFixed(2)}): ${hex}`);
   } else {
-    console.log(`✔️ Contrast OK (${ratio.toFixed(2)}): ${hex}`);
+    console.log(`Contrast OK (${ratio.toFixed(2)}): ${hex}`);
   }
 }
 

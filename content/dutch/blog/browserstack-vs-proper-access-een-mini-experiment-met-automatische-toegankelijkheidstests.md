@@ -24,13 +24,13 @@ Mijn verwachtingen waren hoog. Dit is tenslotte een van de duurste tools op de m
 
 Browserstack rapporteerde 86 kritieke issues. Maar…
 
-### ✅ **Wat** ging goed?
+### Wat ging goed?
 
 - 30 van de 86 bevindingen waren terecht.
 - De tool herkende dat een koptekst afgesneden was. Dat vond ik knap!
 - Ook zag het dat een decoratieve afbeelding onnodig focus kreeg – netjes opgemerkt (zie ook punt 3 op de lijst hieronder).
 
-### ❌ Wat ging minder goed?
+### Wat ging minder goed?
 
 - 56 bevindingen bleken false positives.
 - De tool kijkt heel geïsoleerd naar een element en ziet niet hoe omliggende elementen invloed hebben op de toegankelijkheid.
@@ -59,4 +59,4 @@ En vooral: **de grote hoeveelheid false positives zorgt voor ruis en kan leiden 
 
 Benieuwd naar het verschil tussen mens en machine? Plan gerust een call in, of stuur een mail.
 
-📌 _Ik deel geen screenshots of resultaten uit dit experiment, omdat het om een klantwebsite ging._
+_Ik deel geen screenshots of resultaten uit dit experiment, omdat het om een klantwebsite ging._

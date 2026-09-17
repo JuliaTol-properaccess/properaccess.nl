@@ -178,10 +178,10 @@ navigation "Hoofdnavigatie"
 
 **Interpretatie:**
 
-- ✅ Duidelijke `navigation` rol
-- ✅ Toegankelijke naam ("Hoofdnavigatie")
-- ✅ Elk item is een link met duidelijke naam
-- ✅ Logische hierarchie
+- Duidelijke `navigation` rol
+- Toegankelijke naam ("Hoofdnavigatie")
+- Elk item is een link met duidelijke naam
+- Logische hierarchie
 
 #### Voorbeeld 2: Slecht toegankelijke button
 
@@ -192,10 +192,10 @@ generic
 
 **Problemen:**
 
-- ❌ Geen `button` rol (waarschijnlijk een `<div>` met onclick)
-- ❌ Role is `generic` - geen semantische betekenis
-- ❌ Niet toetsenbord-toegankelijk
-- ❌ Schermlezer leest het niet als button
+- Geen `button` rol (waarschijnlijk een `<div>` met onclick)
+- Role is `generic` - geen semantische betekenis
+- Niet toetsenbord-toegankelijk
+- Schermlezer leest het niet als button
 
 **Oplossing:**
 
@@ -216,11 +216,25 @@ textbox "E-mailadres", required, invalid
 
 **Interpretatie:**
 
-- ✅ Correcte `textbox` rol
-- ✅ Duidelijke label ("E-mailadres")
-- ✅ Required state is gecommuniceerd
-- ⚠️ Invalid state - gebruiker moet dit corrigeren
-- ✅ Huidige waarde is zichtbaar
+- Correcte `textbox` rol
+- Duidelijke label ("E-mailadres")
+- Required state is gecommuniceerd
+- **Let op:** invalid state, de gebruiker moet dit corrigeren
+- Huidige waarde is zichtbaar
+
+## Rol en naam zonder DevTools: de WCAG Radar
+
+De tree laat alles zien, ook wat je op dat moment niet zoekt. Bij een concrete vraag kost dat tijd: welke knop heeft geen toegankelijke naam, welke rol heeft dit element, en wijst deze `aria-labelledby` wel ergens heen?
+
+Daarvoor is [de WCAG Radar van Proper Access](/tools/wcag-radar/) gemaakt, een bookmarklet en een browserextensie voor Chrome en Firefox. Op het tabblad Developer zitten drie checks die dezelfde gegevens tonen als de tree:
+
+- **Toon toegankelijke naam**: elk interactief element toont de naam die een screenreader voorleest. Elementen zonder naam worden als fout gemarkeerd.
+- **ARIA-rollen en -attributen**: alle rollen en aria-attributen komen in beeld, inclusief verwijzingen naar een id dat niet bestaat. Zo zie je waar `aria-labelledby` of `aria-controls` nergens op wijst.
+- **Element-info bij hover**: beweeg over de pagina en zie tag, id, class, rol, toegankelijke naam en afmeting van het element onder je muis.
+
+Het verschil zit in waar je kijkt. De Radar zet die gegevens op de pagina zelf, zodat je ze per element naast elkaar ziet zonder in een paneel te scrollen. Voor het narekenen van een enkel element blijft de tree preciezer, want die toont ook de berekende waarde en de toestand.
+
+28 van de 45 checks zijn gratis en vragen geen account. De Radar rekent alles in je eigen browser uit, verstuurt niets en slaat niets op. Hij werkt dus ook op een acceptatieomgeving of op localhost.
 
 ## Praktijkvoorbeelden
 
@@ -246,7 +260,7 @@ heading "Welkom" level=1
 
 ```HTML
 heading "Welkom" level=1
-  └─ heading "Details" level=4  ❌ Level 2 en 3 overgeslagen
+  └─ heading "Details" level=4  (level 2 en 3 overgeslagen)
 ```
 
 Dit wordt alleen afgekeurd als er geen content tussen de `<h1>` en `<h4>` staat.
@@ -304,7 +318,7 @@ Voor een custom dropdown:
 **Ontbrekende namen:**
 
 ```HTML
-button ""  ❌ Geen toegankelijke naam
+button ""  (geen toegankelijke naam)
 ```
 
 Oplossing: Voeg `aria-label` of (zichtbare) tekst toe.
@@ -312,7 +326,7 @@ Oplossing: Voeg `aria-label` of (zichtbare) tekst toe.
 **Generieke roles:**
 
 ```HTML
-generic  ❌ Geen semantische betekenis
+generic  (geen semantische betekenis)
 ```
 
 Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, enzovoort) of ARIA roles.
@@ -320,7 +334,7 @@ Oplossing: Gebruik semantische HTML (`<button>`, `<nav>`, enzovoort) of ARIA rol
 **Verborgen content die toegankelijk moet zijn:**
 
 ```HTML
-element, hidden=true  ❌ Onbedoeld verborgen
+element, hidden=true  (onbedoeld verborgen)
 ```
 
 Oplossing: Gebruik `visibility: hidden` of `display: none` alleen voor echt verborgen content.
@@ -339,7 +353,7 @@ Combineer Accessibility Tree met:
 
 - **axe DevTools**: Uitgebreide accessibility testing
 - **WAVE**: Visual feedback over accessibility issues
-- **[WCAG Radar van Proper Access](/tools/wcag-radar/)**: onze eigen bookmarklet en extensie. Het tabblad Developer toont de toegankelijke naam en de rol van elk element op de pagina zelf, zodat je niet per element de tree in hoeft
+- **[WCAG Radar van Proper Access](/tools/wcag-radar/)**: rol, toegankelijke naam en aria-attributen op de pagina zelf
 - **Screen readers**: NVDA (Windows), VoiceOver (Mac)
 
 ### 4. Documentatie en resources
@@ -353,11 +367,11 @@ Combineer Accessibility Tree met:
 
 De Accessibility Tree is een essentieel hulpmiddel voor het bouwen van toegankelijke websites. Door de tree te inspecteren kun je:
 
-- ✅ Verifiëren dat elementen de juiste roles hebben
-- ✅ Controleren of alle interactieve elementen toegankelijke namen hebben
-- ✅ States en properties valideren
-- ✅ Heading hierarchie controleren
-- ✅ Formulier accessibility testen
-- ✅ Custom componenten debuggen
+- Verifiëren dat elementen de juiste roles hebben
+- Controleren of alle interactieve elementen toegankelijke namen hebben
+- States en properties valideren
+- Heading hierarchie controleren
+- Formulier accessibility testen
+- Custom componenten debuggen
 
 **Onthoud:** De Accessibility Tree laat zien wat ondersteunende technologieën "zien" - als het daar niet klopt, is je site niet toegankelijk voor gebruikers die op deze technologieën vertrouwen.

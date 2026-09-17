@@ -46,7 +46,7 @@ Laten we beginnen. Gaat het mij lukken om lid te worden?
 Toetsenbord?  
 Nee. Ik kom al niet langs stap 1. Je moet een bedrag kiezen, maar de knoppen reageren niet op het toetsenbord. Zonder bedrag geen lidmaatschap.
 
-👨‍💻 Tip voor de webontwikkelaar: gebruik geen `display: none` voor interactieve elementen. Dan zijn deze namelijk écht weg voor hulpsoftware.
+**Tip voor de webontwikkelaar:** gebruik geen `display: none` voor interactieve elementen. Dan zijn deze namelijk écht weg voor hulpsoftware.
 
 Andere problemen:
 
@@ -64,7 +64,7 @@ Andere problemen:
 Toetsenbord?  
 Nee. Ik kan de optie D66 activeren met het toetsenbord, maar zodra ik op de knop “Ga verder” met Enter of Spatiebalk druk, gebeurt er niets. 
 
-👨‍💻 Tip voor webdeveloper: kijk waar `preventDefault()` je knop saboteert.
+**Tip voor webdeveloper:** kijk waar `preventDefault()` je knop saboteert.
 
 Andere problemen:
 
@@ -78,7 +78,7 @@ Andere problemen:
 ### BBB
 
 Toetsenbord?  
-Ja! Het eerste formulier dat ik zonder muis kan invullen én versturen! 🎉
+Ja! Het eerste formulier dat ik zonder muis kan invullen én versturen!
 
 Andere problemen:
 

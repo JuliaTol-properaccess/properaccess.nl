@@ -1225,7 +1225,7 @@ figure.chart figcaption {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #64748b;
+  color: #475569;
   border-bottom: 2px solid #e2e8f0;
   margin-top: 1rem;
 }
@@ -1277,7 +1277,7 @@ figure.chart figcaption {
 }
 
 .finding-chevron {
-  color: #94a3b8;
+  color: #475569;
   font-size: 0.8em;
   margin-right: 0.3rem;
   flex-shrink: 0;
@@ -1302,21 +1302,21 @@ figure.chart figcaption {
 }
 
 .finding-meta-impact[data-impact="groot"] {
-  color: #dc2626;
+  color: #c1272d;
   font-weight: 700;
 }
 
 .finding-meta-impact[data-impact="medium"] {
-  color: #b45309;
+  color: #9a4a06;
   font-weight: 600;
 }
 
 .finding-meta-impact[data-impact="klein"] {
-  color: #047857;
+  color: #036b4e;
 }
 
 .finding-meta-impact[data-impact="advies"] {
-  color: #6b7280;
+  color: #4b5563;
   font-style: italic;
 }
 
@@ -1325,7 +1325,7 @@ figure.chart figcaption {
 }
 
 .finding-meta-beperking {
-  color: #64748b;
+  color: #475569;
   font-weight: 600;
   letter-spacing: 0.1em;
 }

@@ -47,3 +47,53 @@
   @apply prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
 }
+
+/* Blog-CTA: vervolgstappen onder een blogartikel, gekozen op categorie */
+.blog-cta__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .blog-cta__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blog-cta__item {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #a30d4b;
+}
+
+.blog-cta__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.blog-cta__link {
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+.blog-cta__link:hover {
+  color: #a30d4b;
+}
+
+.blog-cta__link:focus-visible {
+  outline: 3px solid #a30d4b;
+  outline-offset: 2px;
+}
+
+.blog-cta__text {
+  margin: 0;
+  color: #1f2937;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}

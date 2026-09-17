@@ -106,7 +106,7 @@ Als auditor zie ik steeds dezelfde problemen:
 </svg>
 
 ```css
-/* ❌ Dit haalt de 3:1 niet */
+/* Fout: dit haalt de 3:1 niet */
 input {
   border: 1px solid #ccc; /* Contrast: 1.6:1 */
   background: #fff;
@@ -123,7 +123,7 @@ input {
 **De oplossing:**
 
 ```css
-/* ✅ Dit haalt makkelijk de 3:1 */
+/* Goed: dit haalt makkelijk de 3:1 */
 input {
   border: 1px solid #767676; /* Contrast: 4.54:1 — ruim voldoende */
   background: #fff;
@@ -160,7 +160,7 @@ input {
 </svg>
 
 ```css
-/* ❌ Vaak gezien, zelden goed */
+/* Fout: vaak gezien, zelden goed */
 button:focus {
   outline: 2px solid #a8d5ff; /* Contrast: 1.4:1 op wit */
 }
@@ -169,7 +169,7 @@ button:focus {
 **De oplossing:**
 
 ```css
-/* ✅ Hoog contrast, duidelijk zichtbaar */
+/* Goed: hoog contrast, duidelijk zichtbaar */
 button:focus {
   outline: 2px solid #005fcc; /* Contrast: 5.1:1 */
   outline-offset: 2px;
@@ -207,7 +207,7 @@ button:focus {
 </svg>
 
 ```css
-/* ❌ Lichtgrijze iconen op wit */
+/* Fout: lichtgrijze iconen op wit */
 .icon {
   color: #bbb; /* Contrast: 1.9:1 */
 }
@@ -216,7 +216,7 @@ button:focus {
 **De oplossing:**
 
 ```css
-/* ✅ Donker genoeg om te zien */
+/* Goed: donker genoeg om te zien */
 .icon {
   color: #666; /* Contrast: 5.7:1 */
 }
@@ -250,7 +250,7 @@ button:focus {
 </svg>
 
 ```css
-/* ❌ Te subtiel verschil */
+/* Fout: te subtiel verschil */
 .toggle {
   background: #e0e0e0; /* Uit-status */
 }
@@ -263,7 +263,7 @@ button:focus {
 **De oplossing:**
 
 ```css
-/* ✅ Duidelijk onderscheid */
+/* Goed: duidelijk onderscheid */
 .toggle {
   background: #999; /* Uit-status */
 }
