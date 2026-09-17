@@ -1,28 +1,42 @@
 ---
-title: "Digitale toegankelijkheid overheid"
-meta_title: "WCAG-audit en begeleiding voor overheid en bedrijfsleven"
+title: "Toegankelijkheidsonderzoek voor overheidsorganisaties"
+meta_title: "Toegankelijkheidsonderzoek voor overheidsorganisaties | Proper Access"
 date: 2025-04-02
+lastmod: 2026-09-17
 slug: "digitale-toegankelijkheid-overheid"
 url: "/digitale-toegankelijkheid-overheid/"
 aliases:
   - /digitale_toegankelijkheid_overheid/
 layout: "single"
-description: "Voldoe aan het Besluit digitale toegankelijkheid overheid (BDTO) met een grondige audit en praktische begeleiding. Voor gemeenten, ministeries en uitvoeringsorganisaties die echt vooruitgang willen boeken."
+description: "Onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties, volgens WCAG-EM. Bruikbaar als onderbouwing van je verklaring in het Register."
+tldr: |
+  Proper Access doet onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties in
+  Nederland: gemeenten, provincies, waterschappen, ministeries, uitvoeringsorganisaties,
+  zelfstandige bestuursorganen en andere publiekrechtelijke instellingen. We onderzoeken
+  websites, apps, intranetten, aanvraagformulieren en portalen achter een inlog volgens
+  WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek
+  vereist. Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
+  geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de
+  provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en
+  's-Hertogenbosch. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken.
 keywords:
+  - toegankelijkheidsonderzoek overheid
+  - toegankelijkheidsonderzoek overheidsorganisatie
+  - onafhankelijk toegankelijkheidsonderzoek
   - digitale toegankelijkheid overheid
-  - WDO audit
+  - toegankelijkheidsonderzoek gemeente
+  - toegankelijkheidsonderzoek provincie
+  - toegankelijkheidsonderzoek waterschap
+  - WCAG-onderzoek overheidswebsite
   - toegankelijkheidsverklaring
-  - WCAG overheid
   - DigiToegankelijk
-  - toegankelijkheid gemeente
-  - Wet digitale overheid
   - DIP-melding
   - BDTO
 
 banner:
-  badge: "WCAG 2.2 en BDTO"
-  title: "Groen dashboard, tevreden burgers en een team dat weet hoe en waarom"
-  content: "Wij helpen je in heldere stappen naar een toegankelijke website, met een plan dat je team kan uitvoeren."
+  badge: "WCAG-EM en BDTO"
+  title: "Onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties"
+  content: "Voor gemeenten, provincies, waterschappen, ministeries, uitvoeringsorganisaties en andere publiekrechtelijke instellingen. Een rapport waarmee je je verklaring onderbouwt, en een plan dat je team kan uitvoeren."
   bullets:
     - "**Per element:** wat zijn de issues en hoe los je ze op?"
     - "**Plan van aanpak** uitgewerkt per team"
@@ -56,6 +70,10 @@ faqs:
     answer: "Je krijgt een presentatie van het rapport aan je team. Vragen daarna, ook weken of maanden later, stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
+  - question: "Voor welke overheidsorganisaties doen jullie toegankelijkheidsonderzoek?"
+    answer: "Voor elke organisatie die onder het Besluit digitale toegankelijkheid overheid (BDTO) valt. Dat zijn er veel meer dan de gemeenten alleen: ook provincies, waterschappen, ministeries, uitvoeringsorganisaties, zelfstandige bestuursorganen, veiligheidsregio's, omgevingsdiensten en gemeenschappelijke regelingen. Of een instelling eronder valt, hangt af van hoe ze is opgericht en gefinancierd, en niet van de vraag of ze een publieke taak uitvoert. Twijfel je, dan kijken we in de kennismaking met je mee."
+  - question: "Welk bureau kan een toegankelijkheidsonderzoek uitvoeren voor een overheidswebsite?"
+    answer: "Proper Access doet dat, voor de website van elke organisatie die onder het BDTO valt. We werken volgens WCAG-EM en leveren het rapport in de vorm die het Register vraagt, zodat je het direct als onderbouwing kunt gebruiken. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
     answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---
