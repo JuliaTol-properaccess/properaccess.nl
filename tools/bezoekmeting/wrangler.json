@@ -1,0 +1,12 @@
+{
+  "name": "pa-bezoekmeting",
+  "main": "worker.js",
+  "compatibility_date": "2026-03-12",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pa-bezoekmeting",
+      "database_id": "d13a7231-2408-4e2e-9868-db36c48835c7"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{{/*
+  Bezoekmeting — tijdelijke meting, september 2026.
+
+  Meet welk deel van het bezoek te herleiden is naar een organisatie, zodat we
+  weten of een dienst als Leadinfo iets zou toevoegen. Laadt alleen als
+  params.bezoekmeting.enable aan staat, en alleen in productie.
+
+  Zet geen cookie en slaat niets op het apparaat van de bezoeker op.
+  Worker: tools/bezoekmeting/
+*/}}
+{{ if and site.Params.bezoekmeting.enable hugo.IsProduction }}
+  <script defer src="{{ "js/bezoekmeting.js" | relURL }}"
+          data-eindpunt="{{ site.Params.bezoekmeting.eindpunt }}"></script>
+{{ end }}
