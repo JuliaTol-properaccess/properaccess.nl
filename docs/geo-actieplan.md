@@ -560,6 +560,90 @@ website of app", en alle h2's zeiden *toegankelijkheidsonderzoek*, wat de eigen 
 
 ---
 
+## Het klikprobleem
+
+Uitgezocht op 17 september 2026, na de meting. De cijfers staan in
+`~/Downloads/search console/analyse-17-september-2026.md`.
+
+### Eerst de correctie: één CTR over de hele site zegt niets
+
+De CTR van 0,53% is grotendeels een meetgevolg van publiek buiten onze markt. Nederland zit op
+0,74% en België op 0,85%, maar de Verenigde Staten leveren 15.093 vertoningen op positie 7,7 met
+tien klikken, dus 0,07%. Ruim de helft van alle vertoningen komt van buiten Nederland en België.
+
+### Wat er dan wel aan de hand is
+
+Niet de positie. Alle pagina's op gemiddelde positie 5 tot 12, dus vergelijkbare plekken in
+dezelfde zoekresultaten:
+
+| Type pagina | Pagina's | Vertoningen | Klikken | CTR |
+| --- | --- | --- | --- | --- |
+| Tools | 5 | 2.253 | 50 | 2,22% |
+| Homepage | 2 | 1.153 | 20 | 1,73% |
+| Academy | 3 | 433 | 5 | 1,15% |
+| Blog | 35 | 26.186 | 90 | 0,34% |
+
+Zeven keer verschil op dezelfde posities. Het type pagina bepaalt de klik, niet de plek.
+
+### Stap 1: de aliassen. Uitgezocht op 17 september 2026
+
+Er staan **130 aliassen** in `content/`, waarvan 129 echte doorverwijspagina's met een
+meta-refresh en een canonical. GitHub Pages kan geen 301 serveren, dus Hugo maakt er een
+HTML-stub van. Achttien van die stubs staan los in de index.
+
+En ze vallen in twee groepen die het tegenovergestelde doen.
+
+**Groep A, artikel- en paginastubs. Samen 3.762 vertoningen en 10 klikken, CTR 0,27%.**
+
+| Stub | Vertoningen | Positie | Klikken |
+| --- | --- | --- | --- |
+| `/blog/hoe-maak-ik-mijn-website-toegankelijk/` | 2.238 | 23,0 | 1 |
+| `/blog/kosten-wcag-naleving-webshop/` | 891 | 28,6 | 4 |
+| `/blog/wat-kost-toegankelijkheidsaudit-detail/` | 599 | 16,8 | 4 |
+| `/en/proper_access_in_english/` | 25 | 5,4 | 0 |
+| `/blog/wat-is-digitale-toegankelijkheid/` | 8 | 8,8 | 1 |
+| `/zo-werken-wij/heronderzoek/` | 1 | 1,0 | 0 |
+
+De bovenste is het duidelijkst: over de laatste 28 dagen staat die stub op positie 17,2 en het
+artikel waar hij naar verwijst op 30,7. De doorverwijzing rankt beter dan de pagina zelf, en
+levert niets op. Dat splitst de autoriteit van één artikel over twee URL's.
+
+**Groep B, toolstubs. Samen 2.207 vertoningen en 52 klikken, CTR 2,36%.**
+
+| Stub | Vertoningen | Positie | Klikken | CTR |
+| --- | --- | --- | --- | --- |
+| `/tools/kleurcontrast-checker/` | 785 | 6,3 | 34 | 4,33% |
+| `/en/tools/link-checker/` | 618 | 10,5 | 1 | 0,16% |
+| `/tools/alt-tekst-checker/` | 342 | 34,0 | 7 | 2,05% |
+| `/en/tools/heading-structure-checker/` | 173 | 10,9 | 3 | 1,73% |
+| `/tools/koppenstructuur-checker/` | 53 | 7,7 | 3 | 5,66% |
+| `/en/tools/alt-text-checker/` | 12 | 8,9 | 1 | 8,33% |
+
+Dit zijn de oude URL's van de losse tools, van vóór ze samen de WCAG Radar werden. Ze halen negen
+keer de CTR van de site. `/tools/kleurcontrast-checker/` is met 34 klikken een van de grootste
+klikbronnen van de hele site, en `/tools/wcag-radar/` haalt in Plausible zeven bezoekers uit
+Google.
+
+**Dat is de bevinding onder de bevinding: mensen zoeken op de functie, niet op de merknaam.**
+
+### Wat er uit stap 1 volgt
+
+- **Groep A: 301 zetten.** Zes URL's. Alle zes doelen geven een 200. De CSV staat klaar als
+  `~/Downloads/search console/cloudflare-redirects-groep-a.csv`, in het formaat van Cloudflare
+  Bulk Redirects. Kan niet vanuit een sessie: het wrangler-token heeft alleen workers-rechten en
+  geen zone- of rules-rechten. Julia zet ze in het dashboard, of geeft een token met
+  `Zone.Rules.Edit`.
+- **Groep B: juist niet 301 zetten.** Een 301 haalt die URL's uit de index en dan verdwijnen de
+  klikken mogelijk mee, want de Radar-pagina mikt niet op "kleurcontrast checker". Dit is input
+  voor stap 2: geef die functies een eigen pagina die op de functienaam mikt.
+- De volledige lijst van alle 129 staat als
+  `~/Downloads/search console/cloudflare-redirects-alle-129.csv`, voor als we later besluiten
+  alles te consolideren.
+- Opgeruimd in de repo: `content/dutch/webshop-quickscan/index.md` noemde zijn eigen URL als
+  alias.
+
+---
+
 ## Restwerk
 
 Klein, blokkeert niets, opgekomen tijdens batch 1 tot en met 3. Alle vier nagelopen op
