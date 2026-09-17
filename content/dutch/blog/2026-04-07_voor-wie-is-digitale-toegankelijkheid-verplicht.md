@@ -1,5 +1,6 @@
 ---
 title: "Voor wie is digitale toegankelijkheid verplicht?"
+meta_title: "Voor wie is een toegankelijke website verplicht? | Proper Access"
 date: 2026-04-07
 slug: "voor-wie-is-digitale-toegankelijkheid-verplicht"
 categories:
@@ -10,13 +11,15 @@ tags:
   - "webshop"
   - "wcag"
   - "overheid"
-description: "Moet jouw organisatie digitaal toegankelijk zijn? Overzicht van de wetgeving voor overheid, bedrijfsleven, onderwijs en zorg."
+description: "Welke wet geldt voor jouw organisatie: het BDTO of de EAA? Per sector wat de plicht inhoudt, en wat er geldt als je nergens onder valt."
 keywords:
-  - digitale toegankelijkheid
-  - WCAG
-  - EAA
-  - webshop
-  - overheid
+  - voor wie is digitale toegankelijkheid verplicht
+  - is een toegankelijke website verplicht
+  - wie moet voldoen aan de EAA
+  - BDTO voor wie geldt het
+  - toegankelijkheid verplicht onderwijs
+  - toegankelijkheid verplicht zorg
+  - publiekrechtelijke instelling toegankelijkheid
 ---
 
 Digitale toegankelijkheid is in Nederland inmiddels voor een groot deel van de organisaties verplicht. Welke wet voor jou geldt, hangt af van het type organisatie.

@@ -1,5 +1,6 @@
 ---
 title: "Hoe maak je een website digitaal toegankelijk? Van WCAG tot actieplan"
+meta_title: "Website toegankelijk maken: van WCAG-niveau naar een actieplan | Proper Access"
 date: 2026-03-11
 slug: "hoe-maak-je-een-website-digitaal-toegankelijk"
 categories:
@@ -9,21 +10,14 @@ tags:
   - "toegankelijke-website"
   - "wcag"
   - "eaa"
-  - "digitale-toegankelijkheid"
 description: "Hoe maak je een website digitaal toegankelijk? Lees over het verschil tussen WCAG 2.1 en 2.2, niveau A en AA, wat het kost en waar je begint als je niet weet waar je staat."
 keywords:
   - hoe maak je een website toegankelijk
   - website digitaal toegankelijk maken
+  - website toegankelijk maken stappenplan
   - wcag 2.1 vs 2.2
-  - kosten toegankelijke website
   - verschil wcag niveau a aa
-  - eaa digitale toegankelijkheid
-  - waar beginnen digitale toegankelijkheid
-  - toegankelijkheidsaudit kosten
-  - toegankelijkheid website verplicht
-  - wcag wetgeving
-  - wcag wet
-  - wcag verplicht
+  - welk wcag niveau moet ik halen
 aliases:
   - /hoe-maak-je-een-website-digitaal-toegankelijk/
   - /blog/hoe-maak-ik-mijn-website-toegankelijk/
@@ -33,7 +27,7 @@ Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik w
 
 Ik doe dit werk sinds 2019. In die tijd heb ik meer dan 900 audits uitgevoerd, voor musea, overheden, webshops, uitgeverijen en alles daartussenin. Ik heb gezien hoe organisaties vastlopen, maar ook hoe ze in een paar maanden enorme stappen maken. Dit artikel is gebaseerd op die ervaring.
 
-## Wat betekent "digitaal toegankelijk"?
+## Wat je concreet moet regelen
 
 Een digitaal toegankelijke website is een website die iedereen kan gebruiken. Ook mensen die blind zijn en een schermlezer gebruiken. Ook mensen die geen muis kunnen bedienen en alles met het toetsenbord doen. Ook mensen met een cognitieve beperking die extra tijd nodig hebben. De volledige uitleg, met de vier WCAG-principes en de wet die voor jou geldt, staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
@@ -48,15 +42,11 @@ Dat klinkt abstract, maar in de praktijk gaat het om heel concrete dingen:
 
 Ongeveer 25 procent van alle mensen heeft een vorm van beperking. Dat is niet een kleine groep, dat is een kwart van je bezoekers.
 
-## De standaard: WCAG
+## Niveau A, AA en AAA: welk niveau moet je halen?
 
-WCAG staat voor Web Content Accessibility Guidelines. Dit zijn de internationale richtlijnen voor digitale toegankelijkheid, opgesteld door het W3C (World Wide Web Consortium). Als iemand zegt dat een website "aan de richtlijnen moet voldoen", bedoelen ze WCAG.
+De norm heet WCAG en bestaat uit **succescriteria**: concrete eisen waaraan je website moet voldoen. Bijvoorbeeld: "Alle afbeeldingen hebben een tekstalternatief" of "De focusvolgorde is logisch". Waar WCAG vandaan komt en hoe de vier principes eronder liggen, staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
-WCAG bestaat uit **succescriteria**: concrete eisen waaraan je website moet voldoen. Bijvoorbeeld: "Alle afbeeldingen hebben een tekstalternatief" of "De focusvolgorde is logisch".
-
-### Niveau A en AA: wat is het verschil?
-
-WCAG kent drie niveaus:
+Waar het hier om gaat is welk niveau jij moet halen. WCAG kent er drie:
 
 - **Niveau A:** de basislaag. Dit zijn de absolute minimumeisen. Als je hier niet aan voldoet, is je website voor sommige gebruikers letterlijk onbruikbaar. Voorbeeld: afbeeldingen zonder alt-tekst (SC 1.1.1) of video zonder ondertiteling (SC 1.2.2).
 
@@ -152,7 +142,7 @@ Dit is waar de kosten het meest variëren. Factoren die meespelen:
 - **Je team:** als je developers al ervaring hebben met toegankelijkheid, gaat het sneller
 - **De omvang:** een website met 10 templates is sneller aangepast dan een met 50
 
-**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en hercontrole. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud, en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossignen in hun rapporten staan. Goed uitleg kan je vele uren en duizenden euro's schelen.
+**Een grove indicatie:** voor een gemiddelde bedrijfswebsite ben je in totaal tussen de 5.000 en 15.000 euro kwijt voor audit, aanpassingen en hercontrole. Dat klinkt als veel, maar het is een eenmalige investering. Daarna gaat het om onderhoud, en dat is een stuk goedkoper. Als je een auditbureau zoekt, let dan op hoeveel informatie en oplossingen er in hun rapporten staan. Goede uitleg kan je vele uren en duizenden euro's schelen. De volledige prijslijst en zes vragen om offertes mee te vergelijken staan in [wat kost een toegankelijkheidsaudit](/blog/wat-kost-een-toegankelijkheidsaudit/).
 
 ### Waar kun je op besparen?
 
