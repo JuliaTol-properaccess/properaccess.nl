@@ -1,0 +1,70 @@
+{{/*
+  Blog-CTA — toont onder een blogartikel maximaal drie vervolgstappen, gekozen op categorie.
+
+  De mapping staat in $map hieronder. Sleutel is de categorie in kleine letters,
+  want in de front matter komen zowel "webredactie" als "Webredactie" voor.
+  Een artikel zonder categorie in de mapping krijgt geen CTA.
+
+  Zet `hide_cta: true` in de front matter om de CTA op één artikel uit te zetten.
+*/}}
+
+{{ $map := dict
+  "webredactie" (dict
+    "heading" "Zelf verder met je content"
+    "items" (slice
+      (dict
+        "url" "/tools/wcag-radar/"
+        "title" "Bekijk je pagina met de WCAG Radar"
+        "text" "Een bookmarklet en browserextensie die live laat zien of alt-teksten, koppen en linkteksten kloppen. 28 van de 45 checks zijn gratis.")
+      (dict
+        "url" "/strippenkaart/"
+        "title" "Stel je vraag aan een auditor"
+        "text" "Eén strip is één vraag over één onderwerp. Je hebt er geen audit voor nodig.")
+      (dict
+        "url" "/contentaudit/"
+        "title" "Laat je content onderzoeken"
+        "text" "We toetsen alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten en PDF's.")))
+  "webdeveloper" (dict
+    "heading" "Zelf verder met de techniek"
+    "items" (slice
+      (dict
+        "url" "/tools/wcag-radar/"
+        "title" "Bekijk je pagina met de WCAG Radar"
+        "text" "Een bookmarklet en browserextensie die live laat zien of contrast, focus en ARIA kloppen. 28 van de 45 checks zijn gratis.")
+      (dict
+        "url" "/techniekaudit/"
+        "title" "Laat de techniek onderzoeken"
+        "text" "We toetsen de bouwstenen van je product: componenten, code en interactiepatronen, los van de content.")
+      (dict
+        "url" "/strippenkaart/"
+        "title" "Stel je vraag aan een auditor"
+        "text" "Eén strip is één vraag over één onderwerp. We denken mee over alternatieven en reviewen code.")))
+}}
+
+{{ if not .Params.hide_cta }}
+  {{ $block := false }}
+  {{ range .Params.categories }}
+    {{ $key := . | lower }}
+    {{ if and (not $block) (index $map $key) }}
+      {{ $block = index $map $key }}
+    {{ end }}
+  {{ end }}
+
+  {{ with $block }}
+    <section class="section-sm blog-cta" aria-labelledby="blog-cta-heading">
+      <div class="container">
+        <h2 class="h3 mb-8" id="blog-cta-heading">{{ .heading }}</h2>
+        <ul class="blog-cta__list">
+          {{ range .items }}
+            <li class="blog-cta__item">
+              <h3 class="blog-cta__title">
+                <a class="blog-cta__link" href="{{ .url | relLangURL }}">{{ .title }}</a>
+              </h3>
+              <p class="blog-cta__text">{{ .text }}</p>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
