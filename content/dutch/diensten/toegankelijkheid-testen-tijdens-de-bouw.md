@@ -33,7 +33,7 @@ Wij voeren grondige, handmatige toegankelijkheidstesten uit. Dit kun je van ons 
 - **Getest in 3 browsers** – meestal Chrome, Firefox en Safari of Edge   
 - **Gebruik van 2 screenreaders** – onder andere NVDA en VoiceOver    
 - **Per websitecomponent** – dus grondig én modulair getest    
-- **6-ogenprincipe** – elke bevinding wordt dubbel gecontroleerd   
+- **6-ogen-principe** – elk rapport wordt door drie mensen bekeken   
 - **Rapportage in het Nederlands of Engels** – afhankelijk van jouw voorkeur   
 - **Export in CSV-formaat** – handig voor issue trackers of spreadsheets   
 - **Sterke focus op informatiebeveiliging** – VOG op verzoek beschikbaar

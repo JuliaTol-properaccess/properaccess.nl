@@ -69,7 +69,7 @@ Een onafhankelijk gevalideerd rapport geeft overheidsklanten het vertrouwen dat 
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Screenreaders:** VoiceOver (Mac) en NVDA (Windows)
 - **Toetsenbordnavigatie:** volledige bediening zonder muis
-- **6-ogenprincipe:** elke bevinding gecontroleerd door twee senior onderzoekers
+- **6-ogen-principe:** elk rapport wordt door drie mensen bekeken
 
 ### Oplossingsrichtingen
 

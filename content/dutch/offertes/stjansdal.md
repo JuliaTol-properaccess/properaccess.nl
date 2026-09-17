@@ -59,7 +59,7 @@ CEO Proper Access, senior WCAG-auditor
 - **Testen in donkere en lichte modus**
 - **Browsers:** laatste versies van Google Chrome, Firefox en Safari
 - **Screenreaders:** VoiceOver (Mac) en NVDA (Windows)
-- **6-ogenprincipe:** elke bevinding gecontroleerd door twee senior onderzoekers
+- **6-ogen-principe:** elk rapport wordt door drie mensen bekeken
 
 ### Oplossingsrichtingen
 
