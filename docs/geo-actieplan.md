@@ -469,7 +469,7 @@ de omzet zit.
 
 ### De vier stappen
 
-Stap 1 tot en met 3 zijn uitgevoerd op 30 augustus 2026. Stap 4 staat nog open.
+Stap 1 tot en met 3 zijn uitgevoerd op 30 augustus 2026, stap 4 op 17 september 2026.
 
 **1. Bouw `/digitale-toegankelijkheid/` om tot pijlerpagina.** Dit is de grootste ingreep en de
 enige die de kernterm kan pakken. De pagina moet de vraag "wat is digitale toegankelijkheid"
@@ -487,7 +487,8 @@ drie hem houden: de pijlerpagina, de overheidspagina en het artikel "wat is digi
 toegankelijkheid", en dat laatste alleen als het een canonical naar de pijlerpagina krijgt. De
 rest krijgt een titel die zijn eigen vraag beschrijft.
 
-**4. Duw `/toegankelijkheidsaudit/` over de rand.** Nog te doen. Die pagina staat op 18,9 met 676
+**4. Duw `/toegankelijkheidsaudit/` over de rand.** Uitgevoerd op 17 september 2026 (PR #177).
+Die pagina stond op 18,9 met 676
 vertoningen. Dat is de kortste afstand tot pagina 1 van alle commerciële pagina's, en de
 zoektermen eromheen ("wcag audit", "wcag expert", "toegankelijkheidsonderzoek") zijn koopvragen.
 Dit is de snelste meetbare winst; stap 1 duurt maanden.
@@ -522,6 +523,22 @@ eerste klikken op de pijlerpagina.
   "organisaties die overwegend door de overheid gefinancierd worden" is vervangen door de drie
   voorwaarden voor een publiekrechtelijke instelling, en de zin dat Logius steekproeven
   uitvoert is eruit. Allebei stonden ze op de lijst met bekende fouten.
+
+### Wat er op 17 september 2026 is gedaan
+
+Stap 4, en het bleek een ander probleem dan verwacht. De pagina was inhoudelijk niet te dun; hij
+noemde de term alleen nergens in een kop. De h1 luidde "In minder dan 12 weken een toegankelijke
+website of app", en alle h2's zeiden *toegankelijkheidsonderzoek*, wat de eigen term is van
+`/toegankelijkheidsonderzoek/`. De twee pagina's deden mee aan elkaars zoekopdracht.
+
+- De h1 noemt nu de term en houdt de belofte: "Toegankelijkheidsaudit: in minder dan 12 weken een
+  toegankelijke website of app".
+- Vier h2's gaan van onderzoek naar audit. De `id`-attributen zijn expres blijven staan, zodat
+  bestaande ankerlinks blijven werken.
+- De meta-description was 254 tekens en begon met een belofte. Nu 156 tekens, beginnend met de
+  definitie, met de prijsindicatie erin.
+- Meegenomen: het 6-ogen-principe stond op zeven plekken uitgelegd als "dubbel gecontroleerd" of
+  "door twee senior onderzoekers". Het zijn drie mensen.
 
 ---
 
