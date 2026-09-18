@@ -43,9 +43,13 @@
     {{ partialCached "announcement.html" . }}
 
 
-    <!-- header (don't cache it) -->
-    {{ partial "essentials/header.html" . }}
-    {{ partial "search-modal.html" (dict "Context" . ) }}
+    <!-- header (don't cache it). header_minimaal: alleen logo en menuknop, zie docs/homepage-vernieuwing-ab-test.md -->
+    {{ if .Params.header_minimaal }}
+      {{ partial "essentials/header-minimaal.html" . }}
+    {{ else }}
+      {{ partial "essentials/header.html" . }}
+      {{ partial "search-modal.html" (dict "Context" . ) }}
+    {{ end }}
 
 
     <main id="main-content">
@@ -53,10 +57,16 @@
     </main>
 
     <!-- footer -->
-    {{ partial "essentials/footer.html" . }}
+    {{ if .Params.footer_groot }}
+      {{ partial "essentials/footer-groot.html" . }}
+    {{ else }}
+      {{ partial "essentials/footer.html" . }}
+    {{ end }}
 
-    <!-- chat widget -->
-    {{ partial "chat-widget.html" . }}
+    <!-- chat widget; zonder_chatknop op pagina's die de chat zelf in de pagina hebben -->
+    {{ if not .Params.zonder_chatknop }}
+      {{ partial "chat-widget.html" . }}
+    {{ end }}
 
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}

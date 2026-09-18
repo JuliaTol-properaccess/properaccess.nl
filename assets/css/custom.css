@@ -15555,6 +15555,12 @@ html.dark .content .kernzin {
   margin-top: 0.25rem;
 }
 
+/* Tweede vestiging (Emmeloord) onder het adres in Amsterdam */
+.site-footer__address-extra {
+  display: block;
+  margin-top: 0.75rem;
+}
+
 /* ============================================
    Zo werken wij — process flow (/zo-werken-wij/)
    ============================================ */

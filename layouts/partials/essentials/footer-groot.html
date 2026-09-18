@@ -1,0 +1,141 @@
+{{/*
+  Grote footer met de structuur van de site, naar het voorbeeld van q42.nl.
+  Staat tijdens de A/B-test alleen op /home-b/ (front matter footer_groot).
+  De linkkolommen komen uit data/footer_groot.yaml.
+*/}}
+{{ $data := site.Data.footer_groot }}
+<footer class="fg">
+  <div class="fg__inner">
+
+    <div class="fg__top">
+      <div class="fg__merk">
+        <a class="fg__logo" href="{{ site.Home.RelPermalink }}">{{ partial "logo" }}</a>
+        <p class="fg__tagline">Onafhankelijk auditbureau voor digitale toegankelijkheid.</p>
+      </div>
+      <div class="fg__contact">
+        <a class="fg__contact-link" href="tel:+31855055890">085 5055 890</a>
+        <a class="fg__contact-link" href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+      </div>
+    </div>
+
+    <div class="fg__kolommen">
+      {{ range $data.kolommen }}
+        <div class="fg__kolom">
+          <h2 class="fg__titel">{{ .titel }}</h2>
+          <ul class="fg__lijst">
+            {{ range .links }}
+              <li>
+                <a class="fg__link" href="{{ .url }}"
+                  {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+                  {{- .naam -}}
+                  {{ if findRE `^http` .url }}<span class="sr-only"> (opent in een nieuw tabblad)</span>{{ end }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="fg__adressen">
+      <address class="fg__adres">
+        <span class="fg__adres-plaats">Amsterdam</span>
+        Keizersgracht 520 H<br>
+        1017 EK Amsterdam
+      </address>
+      <address class="fg__adres">
+        <span class="fg__adres-plaats">Emmeloord</span>
+        Randweg 25<br>
+        8304 AS Emmeloord
+      </address>
+      <p class="fg__adres fg__adres--juridisch">
+        Proper Access B.V.<br>
+        KvK 95350985<br>
+        BTW NL867096755B01
+      </p>
+      <div class="fg__certs">
+        <img src="{{ "images/iaap.png" | relURL }}" alt="IAAP, International Association of Accessibility Professionals" width="160" height="40" loading="lazy" class="fg__cert fg__cert--breed">
+        <img src="{{ "images/logo_was.png" | relURL }}" alt="IAAP Certified WAS, Web Accessibility Specialist" width="48" height="48" loading="lazy" class="fg__cert">
+        <img src="{{ "images/cpacc2.png" | relURL }}" alt="IAAP Certified CPACC, Certified Professional in Accessibility Core Competencies" width="48" height="48" loading="lazy" class="fg__cert">
+      </div>
+    </div>
+
+    <div class="fg__onder">
+      <ul class="fg__juridisch">
+        {{ range $data.juridisch }}
+          <li><a class="fg__link fg__link--klein" href="{{ .url }}">{{ .naam }}</a></li>
+        {{ end }}
+      </ul>
+      <div class="fg__social">
+        {{ range site.Data.social.main }}
+          <a href="{{ .link | safeURL }}" target="_blank" rel="nofollow noopener" class="fg__social-link">
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+            <span class="sr-only">{{ .name }} (opent in een nieuw tabblad)</span>
+          </a>
+        {{ end }}
+      </div>
+      <p class="fg__copyright">&copy; {{ now.Year }} Proper Access</p>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  .fg { background: #1F2937; color: #D1D5DB; font-size: 1rem; }
+  .fg__inner { max-width: 1280px; margin: 0 auto; padding: 4rem clamp(1rem, 4vw, 3rem) 2rem; }
+  .fg a:focus-visible { outline: 3px solid #FF66A0; outline-offset: 3px; }
+
+  .fg__top {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem;
+    padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .fg__logo img { height: 2.25rem; width: auto; filter: brightness(0) invert(1); }
+  .fg__tagline { margin: 0.75rem 0 0; color: #D1D5DB; }
+  .fg__contact { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; }
+  .fg__contact-link {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem); color: #fff; text-decoration: none;
+  }
+  .fg__contact-link:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+
+  .fg__kolommen {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 2.5rem 2rem;
+    padding: 2.5rem 0;
+  }
+  .fg__titel {
+    font-family: "Nunito", sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #FF66A0; margin: 0 0 1rem;
+  }
+  .fg__lijst, .fg__juridisch { list-style: none; margin: 0; padding: 0; }
+  .fg__lijst li { margin: 0 0 0.5rem; }
+  .fg__link { color: #fff; text-decoration: none; line-height: 1.4; }
+  .fg__link:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+  .fg__link--klein { font-size: 0.9375rem; color: #D1D5DB; }
+
+  .fg__adressen {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1.5rem 2rem;
+    padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .fg__adres { font-style: normal; line-height: 1.6; margin: 0; }
+  .fg__adres-plaats { display: block; font-weight: 700; color: #fff; }
+  .fg__certs { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .fg__cert { height: 3rem; width: auto; background: #fff; border-radius: 4px; padding: 0.25rem; }
+  .fg__cert--breed { height: 2.5rem; }
+
+  .fg__onder {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
+    padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .fg__juridisch { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+  .fg__social { display: flex; gap: 0.5rem; }
+  .fg__social-link {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border: 1px solid rgba(255,255,255,0.4); border-radius: 999px; color: #fff; text-decoration: none;
+  }
+  .fg__social-link:hover { background: #fff; color: #1F2937; }
+  .fg__copyright { margin: 0; font-size: 0.9375rem; }
+</style>
+
+<!-- dezelfde scripts als de gewone footer -->
+<script src="{{ "js/navigation.js" | relURL }}" defer></script>
+<script src="{{ "js/form-submit.js" | relURL }}" defer></script>

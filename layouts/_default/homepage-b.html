@@ -1,0 +1,350 @@
+{{ define "main" }}
+{{/*
+  Homepagina variant B, naar het voorbeeld van q42.nl: weinig tekst, en als
+  tweede sectie een vraagveld waarin de bezoeker meteen antwoord krijgt.
+  Plan en A/B-test: docs/homepage-vernieuwing-ab-test.md.
+
+  Palet: magenta #A30D4B, donkerblauw #1F2937, petrol #004050, lichtgrijs #F5F5F5, wit.
+  Op donkere vlakken is #FF66A0 de lichte magenta. Op #1F2937 haalt hij 5,35:1, dus
+  bruikbaar voor tekst. Op petrol #004050 haalt hij maar 4,14:1: genoeg voor een
+  focusrand (3:1), niet voor kleine tekst. Kleine labels op petrol zijn daarom wit.
+*/}}
+{{ $radar := "/tools/wcag-radar/" }}
+{{ $pdf := "/tools/pdf-checker/" }}
+
+<div class="hb" data-pa-variant="B">
+
+<!-- ════════════════ 1. WIE WE ZIJN ════════════════ -->
+<section class="hb-hero">
+  <div class="hb-container">
+    <h1 class="hb-hero__titel">
+      We zijn Proper Access, een team enthousiaste WCAG-fanaten in
+      <span class="hb-plaats" data-plaatsen="Amsterdam|Emmeloord"><span class="hb-plaats__vast">Amsterdam en Emmeloord</span><span class="hb-plaats__wissel" aria-hidden="true" hidden></span></span>.
+    </h1>
+    <p class="hb-hero__lead">
+      Je kunt bij ons terecht voor een <a href="/toegankelijkheidsaudit/">WCAG-audit</a>,
+      <a href="/tools/">tools die toegankelijkheid makkelijker maken</a>,
+      <a href="/strippenkaart/">consultancy</a> of gewoon een <a href="#contact">goed gesprek</a>.
+    </p>
+    <button type="button" class="hb-pauze" hidden aria-pressed="false">Wisselende plaatsnaam stoppen</button>
+  </div>
+</section>
+
+
+<!-- ════════════════ 2. STEL JE VRAAG ════════════════ -->
+<section class="hb-vraag" aria-labelledby="hb-vraag-titel">
+  <div class="hb-container hb-vraag__inner">
+    <h2 class="hb-vraag__titel" id="hb-vraag-titel">Stel je vraag</h2>
+    <p class="hb-vraag__intro">Over WCAG, de EAA, onze audits of onze tools. Je krijgt direct antwoord.</p>
+
+    <div
+      class="hb-vraag__log"
+      id="hb-vraag-log"
+      role="log"
+      aria-live="polite"
+      aria-label="Vragen en antwoorden"
+      hidden></div>
+
+    <form class="hb-vraag__form" id="hb-vraag-form" novalidate>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+      <label class="sr-only" for="hb-vraag-invoer">Je vraag</label>
+      <input
+        class="hb-vraag__invoer"
+        id="hb-vraag-invoer"
+        name="vraag"
+        type="text"
+        maxlength="500"
+        autocomplete="off"
+        placeholder="Bijvoorbeeld: geldt de EAA voor ons?">
+      <button class="hb-vraag__verstuur" type="submit">Vraag het</button>
+    </form>
+
+    <div class="hb-vraag__voorbeelden">
+      <h3 class="hb-vraag__voorbeelden-titel" id="hb-voorbeelden-titel">Of kies een vraag</h3>
+      <ul class="hb-vraag__chips" id="hb-vraag-chips" aria-labelledby="hb-voorbeelden-titel">
+        <li><button type="button" class="hb-chip">Moeten wij voldoen aan de EAA?</button></li>
+        <li><button type="button" class="hb-chip">Wat kost een audit?</button></li>
+        <li><button type="button" class="hb-chip">Wat doet de WCAG Radar?</button></li>
+        <li><button type="button" class="hb-chip">Hoe controleer ik of mijn PDF toegankelijk is?</button></li>
+      </ul>
+    </div>
+
+    <div class="hb-vraag__acties">
+      <button type="button" class="hb-vraag__opnieuw" id="hb-vraag-opnieuw" hidden>Begin opnieuw</button>
+    </div>
+
+    <p class="hb-vraag__disclaimer">
+      Een AI-assistent geeft het antwoord, en die kan zich vergissen. Zet geen persoonsgegevens in je vraag.
+      <a href="/privacyverklaring/">Wat we met je vraag doen</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════ 3. BEWIJS ════════════════ -->
+<section class="hb-bewijs" aria-labelledby="hb-bewijs-titel">
+  <div class="hb-container">
+    <h2 class="hb-bewijs__titel" id="hb-bewijs-titel">950+ audits sinds 2019</h2>
+    <p class="hb-bewijs__tekst">236 opdrachten voor 63 opdrachtgevers, onder wie:</p>
+    <ul class="hb-bewijs__namen">
+      <li>Rijksmuseum</li>
+      <li>De Bijenkorf</li>
+      <li>Provincie Noord-Holland</li>
+      <li>Provincie Zuid-Holland</li>
+      <li>NRC</li>
+      <li>Museumvereniging</li>
+      <li>Plus</li>
+      <li>Jumbo</li>
+      <li>Crisp</li>
+    </ul>
+    <p class="hb-bewijs__peildatum">Stand 7 augustus 2026. <a href="/klanten/">Meer over onze klanten</a></p>
+  </div>
+</section>
+
+
+<!-- ════════════════ 4. WAT WE DOEN ════════════════ -->
+<section class="hb-doen" aria-labelledby="hb-doen-titel">
+  <div class="hb-container">
+    <h2 class="hb-h2" id="hb-doen-titel">Waarvoor je bij ons terechtkunt</h2>
+    <ul class="hb-doen__tegels">
+      <li class="hb-tegel">
+        <h3 class="hb-tegel__titel">WCAG-audit</h3>
+        <p>We testen je website of app met de hand op WCAG 2.2 AA. Je krijgt een rapport per element, met veel voorbeelden.</p>
+        <a class="hb-tegel__link" href="/toegankelijkheidsaudit/">Over de WCAG-audit</a>
+      </li>
+      <li class="hb-tegel">
+        <h3 class="hb-tegel__titel">Zelf testen met onze tools</h3>
+        <p>Met de WCAG Radar check je contrast, koppen en alt-teksten in je eigen browser. De PDF-checker laat zien welke fouten in je PDF zitten.</p>
+        <a class="hb-tegel__link" href="{{ $radar }}">De WCAG Radar</a>
+        <a class="hb-tegel__link" href="{{ $pdf }}">De PDF-checker</a>
+      </li>
+      <li class="hb-tegel">
+        <h3 class="hb-tegel__titel">Consultancy</h3>
+        <p>Heb je een vraag tijdens het bouwen of oplossen? Met de strippenkaart stel je hem aan ons. Eén strip is één vraag over één onderwerp.</p>
+        <a class="hb-tegel__link" href="/strippenkaart/">Over de strippenkaart</a>
+      </li>
+      <li class="hb-tegel">
+        <h3 class="hb-tegel__titel">Een goed gesprek</h3>
+        <p>Weet je nog niet wat je nodig hebt? Bel of mail ons, dan zoeken we het samen uit.</p>
+        <a class="hb-tegel__link" href="#contact">Neem contact op</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 5. CONTACT ════════════════ -->
+<section class="hb-contact" id="contact" aria-labelledby="hb-contact-titel">
+  <div class="hb-container hb-contact__grid">
+    <div>
+      <h2 class="hb-h2 hb-h2--licht" id="hb-contact-titel">Zin in een goed gesprek?</h2>
+      <p class="hb-contact__tekst">
+        Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
+        Je hoort binnen 1 werkdag van ons.
+      </p>
+      <ul class="hb-contact__mensen">
+        <li class="hb-persoon">
+          <img src="{{ "images/julia.webp" | relURL }}" alt="" class="hb-persoon__foto" loading="lazy" width="64" height="64">
+          <span><span class="hb-persoon__naam">Julia Tol</span><span class="hb-persoon__functie">Directeur</span></span>
+        </li>
+        <li class="hb-persoon">
+          <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="hb-persoon__foto" loading="lazy" width="64" height="64">
+          <span><span class="hb-persoon__naam">Phi Pham</span><span class="hb-persoon__functie">Projectmanager</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <form
+      class="hb-form"
+      id="hb-contact-form"
+      novalidate
+      onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-b', successMessage: 'Bericht verstuurd. Je hoort binnen 1 werkdag van ons.' });">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-naam">Naam</label>
+        <input class="hb-veld__invoer" id="hb-naam" name="naam" autocomplete="name" required type="text">
+      </div>
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-email">E-mailadres</label>
+        <input class="hb-veld__invoer" id="hb-email" name="email" autocomplete="email" required type="email">
+      </div>
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-bericht">Waar wil je het over hebben? <span class="hb-veld__optioneel">(niet verplicht)</span></label>
+        <textarea class="hb-veld__invoer" id="hb-bericht" name="bericht" rows="3"></textarea>
+      </div>
+      <button class="hb-knop" type="submit">Verstuur</button>
+      <div role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</div>
+
+{{/* Paginanamen voor de links in de antwoorden: de chat geeft een URL, het
+     script maakt daar een link met de naam van de pagina van. */}}
+{{ $paginas := dict "/contact/" "Contact" "/" "De homepagina" }}
+{{ range site.Data.footer_groot.kolommen }}{{ range .links }}{{ $paginas = merge $paginas (dict .url .naam) }}{{ end }}{{ end }}
+<script type="application/json" id="hb-paginas">{{ $paginas | jsonify | safeJS }}</script>
+<script src="{{ "js/homepage-b.js" | relURL }}" defer></script>
+
+<style>
+  .hb { --hb-magenta: #A30D4B; --hb-magenta-hover: #8a0b3f; --hb-navy: #1F2937; --hb-petrol: #004050;
+        --hb-grijs: #F5F5F5; --hb-licht-magenta: #FF66A0; --hb-tekst: #374151; }
+  .hb-container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
+  .hb a:focus-visible, .hb button:focus-visible, .hb input:focus-visible, .hb textarea:focus-visible {
+    outline: 3px solid var(--hb-magenta); outline-offset: 3px;
+  }
+  .hb-vraag :focus-visible, .hb-contact :focus-visible { outline-color: var(--hb-licht-magenta) !important; }
+
+  .hb-h2 {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; color: var(--hb-navy);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 2rem;
+  }
+  .hb-h2--licht { color: #fff; }
+
+  /* 1. Hero */
+  .hb-hero { padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5rem); background: #fff; }
+  .hb-hero__titel {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; color: var(--hb-navy);
+    font-size: clamp(2.25rem, 6vw, 4.75rem); line-height: 1.05; letter-spacing: -0.03em;
+    max-width: 18ch; margin: 0;
+  }
+  .hb-plaats { color: var(--hb-magenta); white-space: nowrap; }
+  .hb-plaats__wissel { display: inline-block; }
+  .hb-plaats__wissel.is-nieuw { animation: hb-in 400ms ease-out; }
+  @keyframes hb-in { from { opacity: 0; transform: translateY(0.3em); } to { opacity: 1; transform: none; } }
+  .hb-hero__lead {
+    font-size: clamp(1.125rem, 2vw, 1.5rem); line-height: 1.5; color: var(--hb-tekst);
+    max-width: 44rem; margin: 2rem 0 0;
+  }
+  .hb-hero__lead a { color: var(--hb-navy); font-weight: 700; text-decoration: underline;
+    text-decoration-color: var(--hb-magenta); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+  .hb-hero__lead a:hover { color: var(--hb-magenta); }
+  .hb-pauze {
+    margin-top: 1.5rem; background: none; border: 0; padding: 0.5rem 0; cursor: pointer; min-height: 44px;
+    font: inherit; font-size: 0.9375rem; color: var(--hb-tekst); text-decoration: underline; text-underline-offset: 0.2em;
+  }
+
+  /* 2. Stel je vraag */
+  .hb-vraag { background: var(--hb-petrol); color: #fff; padding: clamp(3.5rem, 8vw, 6rem) 0; }
+  .hb-vraag__inner > * { max-width: 56rem; }
+  .hb-vraag__titel {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; color: #fff;
+    font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0;
+  }
+  .hb-vraag__intro { font-size: 1.125rem; color: #E5E7EB; margin: 0.75rem 0 2rem; }
+
+  .hb-vraag__log { display: flex; flex-direction: column; gap: 1rem; margin: 0 0 1.5rem; }
+  .hb-bericht { max-width: 44rem; line-height: 1.6; font-size: 1.0625rem; }
+  .hb-bericht__wie {
+    display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #fff; margin-bottom: 0.25rem;
+  }
+  .hb-bericht--vraag { align-self: flex-end; text-align: right; }
+  .hb-bericht--vraag .hb-bericht__tekst {
+    display: inline-block; background: #fff; color: var(--hb-navy); border-radius: 1.25rem 1.25rem 0.25rem 1.25rem;
+    padding: 0.75rem 1.125rem; text-align: left;
+  }
+  .hb-bericht--antwoord .hb-bericht__tekst {
+    border-left: 4px solid var(--hb-licht-magenta); padding: 0.25rem 0 0.25rem 1.125rem; white-space: pre-line;
+  }
+  .hb-bericht--antwoord a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+  .hb-bericht--fout .hb-bericht__tekst { border-left: 4px solid #fff; padding-left: 1.125rem; }
+  .hb-denkt { font-style: italic; color: #E5E7EB; }
+
+  .hb-vraag__form { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .hb-vraag__invoer {
+    flex: 1 1 18rem; min-width: 0; font: inherit; font-size: 1.125rem; color: var(--hb-navy); background: #fff;
+    border: 2px solid #fff; border-radius: 999px; padding: 1rem 1.5rem; min-height: 3.5rem;
+  }
+  .hb-vraag__invoer::placeholder { color: #4B5563; opacity: 1; }
+  .hb-vraag__verstuur, .hb-knop {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 700; font-size: 1.0625rem;
+    background: var(--hb-magenta); color: #fff; border: 2px solid #fff; border-radius: 999px;
+    padding: 1rem 1.75rem; min-height: 3.5rem; cursor: pointer;
+  }
+  .hb-vraag__verstuur:hover, .hb-knop:hover { background: var(--hb-magenta-hover); }
+  .hb-vraag__verstuur:disabled { opacity: 0.7; cursor: wait; }
+
+  .hb-vraag__voorbeelden-titel {
+    font-family: "Nunito", sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #fff; margin: 2rem 0 0.75rem;
+  }
+  .hb-vraag__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .hb-vraag__chips li { margin: 0; }
+  .hb-chip {
+    font: inherit; font-size: 1rem; font-weight: 700; color: #fff; background: transparent; cursor: pointer;
+    border: 2px solid rgba(255,255,255,0.7); border-radius: 999px; padding: 0.625rem 1.125rem; min-height: 44px;
+    text-align: left;
+  }
+  .hb-chip:hover { background: #fff; color: var(--hb-petrol); }
+  .hb-chip:disabled { opacity: 0.6; cursor: wait; }
+  .hb-vraag__acties { margin-top: 1rem; }
+  .hb-vraag__opnieuw {
+    background: none; border: 0; padding: 0.5rem 0; min-height: 44px; font: inherit; color: #fff;
+    text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer;
+  }
+  .hb-vraag__disclaimer { font-size: 0.875rem; color: #E5E7EB; margin: 1.5rem 0 0; }
+  .hb-vraag__disclaimer a { color: #fff; text-decoration: underline; }
+
+  /* 3. Bewijs */
+  .hb-bewijs { padding: clamp(3.5rem, 8vw, 6rem) 0; background: #fff; }
+  .hb-bewijs__titel {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; color: var(--hb-magenta);
+    font-size: clamp(2.5rem, 7vw, 5.5rem); line-height: 1; letter-spacing: -0.03em; margin: 0;
+  }
+  .hb-bewijs__tekst { font-size: 1.25rem; color: var(--hb-navy); margin: 1rem 0 1.5rem; }
+  .hb-bewijs__namen { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 2.5rem; }
+  .hb-bewijs__namen li {
+    margin: 0; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 700;
+    font-size: clamp(1.125rem, 2vw, 1.5rem); color: var(--hb-navy);
+  }
+  .hb-bewijs__peildatum { margin: 1.5rem 0 0; color: var(--hb-tekst); font-size: 0.9375rem; }
+  .hb-bewijs__peildatum a { color: var(--hb-petrol); font-weight: 700; }
+
+  /* 4. Wat we doen */
+  .hb-doen { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--hb-grijs); }
+  .hb-doen__tegels {
+    list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .hb-tegel {
+    margin: 0; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--hb-magenta);
+    border-radius: 0.5rem; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem;
+  }
+  .hb-tegel p { margin: 0; color: var(--hb-tekst); line-height: 1.6; flex-grow: 1; }
+  .hb-tegel__titel {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 1.375rem;
+    color: var(--hb-navy); margin: 0;
+  }
+  .hb-tegel__link { color: var(--hb-petrol); font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+  .hb-tegel__link:hover { color: var(--hb-magenta); }
+
+  /* 5. Contact */
+  .hb-contact { background: var(--hb-navy); color: #fff; padding: clamp(3.5rem, 8vw, 6rem) 0; }
+  .hb-contact__grid { display: grid; gap: 3rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); align-items: start; }
+  .hb-contact__tekst { font-size: 1.125rem; line-height: 1.6; color: #E5E7EB; margin: 0; max-width: 32rem; }
+  .hb-contact__tekst a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+  .hb-contact__mensen { list-style: none; margin: 2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+  .hb-persoon { display: flex; align-items: center; gap: 0.875rem; margin: 0; }
+  .hb-persoon__foto { width: 64px; height: 64px; border-radius: 999px; object-fit: cover; }
+  .hb-persoon__naam { display: block; font-weight: 700; color: #fff; }
+  .hb-persoon__functie { display: block; color: #D1D5DB; font-size: 0.9375rem; }
+
+  .hb-form { display: flex; flex-direction: column; gap: 1.25rem; }
+  .hb-veld { display: flex; flex-direction: column; gap: 0.375rem; }
+  .hb-veld__label { font-weight: 700; color: #fff; }
+  .hb-veld__optioneel { font-weight: 400; color: #D1D5DB; }
+  .hb-veld__invoer {
+    font: inherit; font-size: 1.0625rem; color: var(--hb-navy); background: #fff;
+    border: 2px solid #fff; border-radius: 0.5rem; padding: 0.75rem 1rem; min-height: 3rem;
+  }
+  .hb-form [role="status"] { color: #fff; }
+  .hb-knop { align-self: flex-start; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hb-plaats__wissel.is-nieuw { animation: none; }
+  }
+</style>
+{{ end }}
