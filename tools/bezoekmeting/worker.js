@@ -28,11 +28,26 @@ const ALLOWED_ORIGINS = [
 
 // Netwerken van hostingpartijen en clouddiensten. Bezoek hiervandaan is vrijwel
 // altijd een crawler of een proxy en telt niet mee als bedrijfsbezoek.
-const HOSTERS = /\b(amazon|aws|google|microsoft|azure|oracle|hetzner|digitalocean|linode|ovh|scaleway|vultr|cloudflare|fastly|akamai|leaseweb|contabo|alibaba|tencent|huawei|datacamp|m247|choopa|upcloud|netcup|ionos|strato|transip|hostnet|serverius|nforce|worldstream|bit bv|previder|solcon hosting|apnic|arin|lacnic|afrinic|ripe ncc)\b/i;
+const HOSTERS = /\b(amazon|aws|google|microsoft|msn|bing|azure|oracle|hetzner|digitalocean|linode|ovh|scaleway|vultr|cloudflare|fastly|akamai|leaseweb|contabo|alibaba|tencent|huawei|datacamp|m247|choopa|upcloud|netcup|ionos|strato|transip|hostnet|serverius|nforce|worldstream|bit bv|previder|solcon hosting|web2objects|gtt|cogent|hurricane electric|apnic|arin|lacnic|afrinic|ripe ncc)\b/i;
 
 // Consumenten- en telecomproviders. Hier zit wel een mens achter, maar je weet
 // niet bij welk bedrijf hij werkt.
-const PROVIDERS = /\b(kpn|ziggo|vodafone|odido|t-mobile|tele2|delta fiber|caiway|freedom internet|online\.nl|xs4all|solcon|budget ?internet|edutel|proximus|telenet|telia|telenor|deutsche telekom|orange|free sas|sfr|british telecom|virgin media|sky (uk|broadband)|liberty global|starlink|three|o2)\b/i;
+const PROVIDERS = /\b(kpn|ziggo|vodafone|odido|t-mobile|tele2|delta fiber|caiway|freedom internet|online\.nl|xs4all|solcon|budget ?internet|edutel|proximus|telenet|telia|telenor|deutsche telekom|orange|free sas|sfr|british telecom|virgin media|sky|liberty global|starlink|three|o2|netia|fidium|at&t|att inc|comcast|verizon|charter|spectrum|cox communications|centurylink|lumen|telefonica|movistar|swisscom|a1 telekom|bouygues|iliad|post luxembourg|arise[o0]n)\b/i;
+
+/**
+ * Woorden waarmee een netwerk zelf zegt dat er consumenten achter zitten. Die
+ * zijn betrouwbaarder dan de merknaam, want elke provider gebruikt ze en er
+ * komen er steeds nieuwe bij. CGNAT is het duidelijkst: dat is een gedeelde
+ * pool waar honderden klanten achter zitten.
+ */
+const CONSUMENTENMARKERS = /\b(cgnat|cg-nat|end ?user|enduser|ip ?pool|pool for|dynamic|dial-?up|dsl|adsl|vdsl|cable|broadband|residential|subscriber|customers?|consumer|mobile|4g|5g|lte)\b/i;
+
+/**
+ * Bedrijfsproxies en beveiligingsdiensten. Hier zit wel degelijk een werknemer
+ * achter, maar van welk bedrijf is niet te zien: al het verkeer van alle
+ * klanten komt uit dezelfde adressen. Dus niet bruikbaar als lead.
+ */
+const PROXIES = /\b(zscaler|netskope|iboss|forcepoint|menlo security|cloudflare warp|palo alto|prisma access|symantec|broadcom|bluecoat|mcafee|skyhigh|cato networks|perimeter ?81|nordlayer|proton ?vpn|nordvpn|expressvpn|mullvad|surfshark|private internet access)\b/i;
 
 // Eigen netwerken. Staan wel in de database, maar blijven buiten het rapport.
 const EIGEN = /\b(proper access)\b/i;
@@ -133,19 +148,54 @@ async function verwerk(env, bezoek) {
  */
 async function zoekNetwerkOp(ip, asOrganisatie) {
   const ptr = await zoekPtr(ip);
-  const rdap = await zoekRdap(ip);
+  const gevonden = await zoekRdap(ip);
+  const rdap = gevonden ? gevonden.naam : null;
 
-  const naam = rdap || domeinUit(ptr) || asOrganisatie || null;
-  const alles = [naam, ptr, asOrganisatie].filter(Boolean).join(" ");
+  // Alleen een echte organisatienaam uit RIPE mag voorgaan op de rest. Een
+  // netnaam als NL-PI-PLUS is te vaag: dat blijkt een consumentenblok van KPN.
+  const rdapOrganisatie = gevonden && gevonden.bron === "organisatie" ? rdap : null;
 
-  let soort = "onbekend";
-  if (!naam) soort = "onbekend";
-  else if (HOSTERS.test(alles)) soort = "hosting";
-  else if (PROVIDERS.test(alles)) soort = "provider";
-  else if (EIGEN.test(alles)) soort = "eigen";
-  else soort = "bedrijf";
+  // De eerste naam die iets zegt. Een blokcode als SKY-6191063 of OTS212484
+  // valt af, want daar kun je geen organisatie in herkennen.
+  const naam =
+    [rdap, domeinUit(ptr), asOrganisatie].find((n) => bruikbareNaam(n)) || null;
 
-  return { organisatie: naam, soort: soort };
+  // Voor de indeling telt alles mee wat we weten, ook de namen die als naam
+  // zijn afgevallen. "End user ip pool" is geen bruikbare naam, maar het zegt
+  // wel precies wat voor netwerk het is.
+  const alles = [rdap, ptr, asOrganisatie].filter(Boolean).join(" ");
+
+  return { organisatie: naam, soort: deelIn(rdapOrganisatie, alles, naam) };
+}
+
+/**
+ * Deelt een netwerk in.
+ *
+ * Een organisatienaam uit RDAP gaat voor op de rest. Een gemeente die een blok huurt van
+ * KPN staat bij RIPE op eigen naam, terwijl het netwerk eromheen van KPN is.
+ * Kijk je dan naar alles tegelijk, dan verdwijnt die gemeente in de categorie
+ * provider en mis je precies het bezoek waar het om gaat.
+ *
+ * Zegt de RDAP-naam niets, dan telt alles mee wat we weten. Daarbij weegt een
+ * consumentenmarker zwaarder dan een merknaam, en wordt een naam die nergens
+ * op slaat "onbekend" in plaats van "bedrijf". Liever een bezoek missen dan een
+ * provider als lead op de lijst zetten.
+ */
+function deelIn(rdapNaam, alles, naam) {
+  if (bruikbareNaam(rdapNaam) && soortUit(rdapNaam) === null) return "bedrijf";
+  // Zonder naam nooit "bedrijf": dan telt het mee in het percentage terwijl
+  // het in de lijst met organisaties niet te zien is.
+  return soortUit(alles) ?? (naam ? "bedrijf" : "onbekend");
+}
+
+function soortUit(tekst) {
+  if (!tekst) return null;
+  if (EIGEN.test(tekst)) return "eigen";
+  if (HOSTERS.test(tekst)) return "hosting";
+  if (PROXIES.test(tekst)) return "proxy";
+  if (CONSUMENTENMARKERS.test(tekst)) return "provider";
+  if (PROVIDERS.test(tekst)) return "provider";
+  return null;
 }
 
 /** Reverse DNS via DNS-over-HTTPS. Alleen IPv4; IPv6 gaat via RDAP. */
@@ -181,8 +231,8 @@ async function zoekRdap(ip) {
       const res = await fetch(bron, { headers: { Accept: "application/rdap+json" } });
       if (!res.ok) continue;
       const data = await res.json();
-      const naam = organisatieUit(data);
-      if (naam) return String(naam).trim();
+      const gevonden = organisatieUit(data);
+      if (gevonden) return { naam: String(gevonden.naam).trim(), bron: gevonden.bron };
     } catch {
       // volgende bron
     }
@@ -215,10 +265,10 @@ function organisatieUit(data) {
 
   for (const entiteit of kandidaten) {
     const naam = fnUit(entiteit);
-    if (bruikbareNaam(naam)) return naam;
+    if (bruikbareNaam(naam)) return { naam: naam, bron: "organisatie" };
   }
 
-  return bruikbareNaam(data.name) ? data.name : null;
+  return bruikbareNaam(data.name) ? { naam: data.name, bron: "netnaam" } : null;
 }
 
 function fnUit(entiteit) {
@@ -232,9 +282,14 @@ function fnUit(entiteit) {
 function bruikbareNaam(naam) {
   if (!naam || naam.length < 3) return false;
   if (/-(MNT|RIPE)$/i.test(naam)) return false;
-  if (/^(RIPE-NCC|IRT-|ORG-|AS\d+$)/i.test(naam)) return false;
+  if (/^(RIPE-NCC|IRT-|ORG-|MNT-|AS\d+$)/i.test(naam)) return false;
   // Sommige beheerobjecten hebben een GUID als naam.
   if (/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(naam)) return false;
+  // Blokcodes van providers: SKY-6191063, OTS212484, SOCC-4615408. Een lange
+  // reeks cijfers achter een afkorting is een administratienummer en geen naam.
+  if (/^[A-Z]{2,8}-?\d{4,}$/i.test(naam)) return false;
+  // Een naam die alleen uit cijfers, streepjes en losse letters bestaat.
+  if (!/[a-z]{3}/i.test(naam)) return false;
   return true;
 }
 
@@ -306,7 +361,8 @@ async function rapportData(env, dagen) {
             COUNT(*) AS weergaven,
             COUNT(DISTINCT substr(moment, 1, 10)) AS dagen,
             COUNT(DISTINCT pad) AS paginas,
-            MAX(moment) AS laatst
+            MAX(moment) AS laatst,
+            GROUP_CONCAT(DISTINCT land) AS land
      FROM bezoek
      WHERE moment > ? AND soort = 'bedrijf' AND organisatie IS NOT NULL
      GROUP BY organisatie
@@ -384,7 +440,8 @@ function tekstRapport(data) {
     regels.push("  (nog niets)");
   }
   for (const r of bedrijven) {
-    regels.push("  " + String(r.organisatie).slice(0, 45).padEnd(47) +
+    regels.push("  " + String(r.organisatie).slice(0, 40).padEnd(42) +
+      String(r.land || "--").padEnd(6) +
       String(r.weergaven).padStart(4) + " weergaven, " +
       r.paginas + " pagina's, " + r.dagen + " dag(en), laatst " + r.laatst.slice(0, 10));
   }
@@ -456,4 +513,4 @@ function json(data, status, origin) {
 }
 
 // Alleen voor de test in test-lookup.mjs; de Worker gebruikt hier niets van.
-export { zoekNetwerkOp, organisatieUit, domeinUit, netwerkPrefix, bruikbareNaam };
+export { zoekNetwerkOp, organisatieUit, domeinUit, netwerkPrefix, bruikbareNaam, deelIn };
