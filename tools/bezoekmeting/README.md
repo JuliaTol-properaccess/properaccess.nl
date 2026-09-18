@@ -17,8 +17,35 @@ Dit is dus een meting en geen leadtool: er is geen dashboard en geen opvolging.
    - het PTR-record in DNS, via DNS-over-HTTPS bij 1.1.1.1
    - de RDAP-gegevens van RIPE, en anders via rdap.org bij de juiste registrar
    - als beide niets geven: de netwerknaam die Cloudflare zelf meegeeft
-3. De uitkomst wordt ingedeeld als `bedrijf`, `provider`, `hosting`, `eigen` of
-   `onbekend`, en als losse regel in D1 opgeslagen.
+3. De uitkomst wordt ingedeeld als `bedrijf`, `provider`, `hosting`, `proxy`,
+   `eigen` of `onbekend`, en als losse regel in D1 opgeslagen.
+
+### Hoe de indeling werkt
+
+Een echte organisatienaam uit RIPE (een `ORG-`-object) gaat voor op de rest. Een
+gemeente die een blok huurt van KPN staat daar op eigen naam, en die moet niet
+als provider in de lijst verdwijnen.
+
+Is er geen organisatienaam, dan telt alles mee wat bekend is: de netnaam, het
+PTR-record en de netwerknaam van Cloudflare. In deze volgorde:
+
+- `hosting`: clouddiensten en hostingpartijen, en de crawlers van Microsoft en Google
+- `proxy`: bedrijfsproxies als Zscaler en VPN-diensten. Er zit een werknemer
+  achter, maar van welk bedrijf is niet te zien
+- `provider`: een netwerk dat zelf zegt dat er consumenten achter zitten
+  (CGNAT, end user pool, DSL, mobiel), of een bekende provider
+- `bedrijf`: alles wat overblijft en een bruikbare naam heeft
+- `onbekend`: geen bruikbare naam
+
+Een blokcode als `SKY-6191063` of `OTS212484` is geen bruikbare naam. Een netnaam
+als `NL-PI-PLUS` telt wel als naam, maar weegt niet op tegen de netwerkeigenaar:
+dat blijkt een consumentenblok van KPN.
+
+De keuze is bewust streng. Liever een bezoek missen dan een provider als lead op
+de lijst zetten.
+
+`node test-lookup.mjs` controleert de indeling met de namen die in de eerste
+meting voorkwamen. Vul die lijst aan als je een nieuw geval tegenkomt.
 
 Het IP-adres wordt niet opgeslagen. Het bestaat alleen in het geheugen van de
 Worker en wordt daar teruggebracht tot een /24 (IPv4) of /48 (IPv6), puur als
