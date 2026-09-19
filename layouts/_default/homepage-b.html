@@ -1,0 +1,547 @@
+{{ define "main" }}
+{{/*
+  Homepagina variant B, naar het voorbeeld van q42.nl: weinig tekst, en als
+  tweede sectie een gesprek met de assistent.
+  Ontwerp: "Homepage D papier" (Claude Design, 19-09-2026).
+  Plan en A/B-test: docs/homepage-vernieuwing-ab-test.md.
+
+  Achtergrond wit (Julia, 19-09-2026; het ontwerp had papier #F4F1EA, dat
+  blijft alleen als lichte tekstkleur op donkerblauw). Verder donkerblauw #1F2937, magenta #A30D4B, en #FF66A0
+  als lichte magenta op donkerblauw (5,35:1). De grijze tinten uit het ontwerp
+  zijn als vaste kleuren uitgerekend, zodat het contrast vaststaat:
+  #454D57 (7,6:1) en #5F656D (5,2:1) op papier; #C5C5C3 (8,5:1) en
+  #B8B9B8 (7,5:1) op donkerblauw.
+
+  Afwijkingen van het ontwerp, omdat de tekst niet klopte of niet te
+  controleren was:
+  - klanten: alleen namen uit de goedgekeurde lijst (niet Kixx, Naturalis,
+    Gemeente Almere, Waternet, Stedelijk Museum); Van Gogh Museum weg op
+    verzoek van Julia (19-09-2026)
+  - "1 dag reactie" wordt "1 werkdag", zoals op de rest van de site
+  - geen "user story en code-advies per bevinding" bij de audit
+  - monitoring: de tekst van /automatische-monitoring/, niet "Jira of per mail"
+  - de assistent: niet "een senior auditor leest mee"
+  - de kop "Waar loop je tegenaan?" wordt "Wat wil je weten over digitale
+    toegankelijkheid?" (geen beeldspraak; Julia wilde het begrip vaker in de koppen)
+  - de h1 "We zijn Proper Access ... in Amsterdam/Emmeloord" met de
+    wisselende plaatsnaam is vervangen door "De EAA geldt al. Weet je waar je
+    staat?" (Julia, 19-09-2026)
+*/}}
+<div class="hb" data-pa-variant="B">
+
+<!-- ════════════════ 1. WIE WE ZIJN ════════════════ -->
+<section class="hb-hero">
+  <div class="hb-container">
+    <p class="hb-hero__kenmerken">
+      <span>Onafhankelijk auditbureau</span>
+      <span class="hb-hero__kenmerk-grijs">Sinds 2019</span>
+      <span class="hb-hero__kenmerk-grijs">IAAP-gecertificeerd</span>
+    </p>
+    <h1 class="hb-hero__titel">
+      <span class="hb-hero__groot">De EAA geldt al.</span>
+      <span class="hb-hero__klein hb-hero__klein--ruimte hb-hero__groot--petrol">Weet je waar je staat?</span>
+    </h1>
+    <p class="hb-hero__lead">
+      Wij <a href="/toegankelijkheidsaudit/">testen je site of app op WCAG 2.2 AA</a> en leveren een plan van aanpak waar je morgen mee verder kunt.
+      Binnen 5&nbsp;werkdagen reactie op je aanvraag.
+    </p>
+    <ul class="hb-bewijs" role="list" aria-label="Wat we gedaan hebben en voor wie">
+      <li class="hb-bewijs__cijfer">950+ audits</li>
+      <li>Rijksmuseum</li>
+      <li>De Bijenkorf</li>
+      <li>Provincie Noord-Holland</li>
+      <li>Provincie Zuid-Holland</li>
+      <li>NRC</li>
+      <li>Plus</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 2. DE ASSISTENT ════════════════ -->
+<section class="hb-vraag" id="vraag" aria-labelledby="hb-vraag-titel">
+  <div class="hb-container hb-vraag__grid">
+
+    <div class="hb-vraag__intro">
+      <p class="hb-label hb-label--licht"><span class="hb-label__blokje" aria-hidden="true"></span>De assistent is er</p>
+      <h2 class="hb-vraag__titel" id="hb-vraag-titel">Wat wil je weten over digitale toegankelijkheid?</h2>
+
+      <form class="hb-vraag__form" id="hb-vraag-form" novalidate>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+        <label class="sr-only" for="hb-vraag-invoer">Je vraag aan de assistent</label>
+        <input class="hb-vraag__invoer" id="hb-vraag-invoer" name="vraag" type="text" maxlength="500" autocomplete="off" placeholder="Typ je vraag…">
+        <button class="hb-vraag__verstuur" type="submit">Vraag het</button>
+      </form>
+
+      <h3 class="hb-vraag__voorbeelden-titel" id="hb-voorbeelden-titel">Of kies een vraag</h3>
+      <ul class="hb-vraag__chips" id="hb-vraag-chips" aria-labelledby="hb-voorbeelden-titel">
+        <li><button type="button" class="hb-chip">Moeten wij voldoen aan de EAA?</button></li>
+        <li><button type="button" class="hb-chip">Wat kost een WCAG-audit?</button></li>
+        <li><button type="button" class="hb-chip">Wat doet monitoring precies?</button></li>
+        <li><button type="button" class="hb-chip">Hoe controleer ik mijn PDF?</button></li>
+      </ul>
+
+      <button type="button" class="hb-vraag__opnieuw" id="hb-vraag-opnieuw" hidden>Begin opnieuw</button>
+
+      <p class="hb-vraag__disclaimer">
+        Een AI-assistent antwoordt en kan zich vergissen. Zet geen persoonsgegevens in je vraag.
+        <a href="/privacyverklaring/">Wat we met je vraag doen</a>.
+        Liever meteen een mens? Bel <a href="tel:+31855055890">085 5055 890</a>.
+      </p>
+    </div>
+
+    <div class="hb-vraag__gesprek">
+      <p class="hb-vraag__groet">
+        <span class="sr-only hb-groet-tekst">Ik ben de assistent van Proper Access. Stel je vraag over digitale toegankelijkheid, WCAG, de EAA, een audit of monitoring. Je krijgt meteen antwoord.</span>
+        <span class="hb-vraag__getypt" aria-hidden="true"></span><span class="hb-vraag__cursor" aria-hidden="true"></span>
+      </p>
+      <div class="hb-vraag__log" id="hb-vraag-log" role="log" aria-live="polite" aria-label="Gesprek met de assistent"></div>
+      <div class="hb-denkt" id="hb-denkt" hidden>
+        <span class="sr-only">De assistent denkt na</span>
+        <span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 3. CIJFERS EN KLANTEN ════════════════ -->
+<section class="hb-cijfers" aria-labelledby="hb-cijfers-titel">
+  <div class="hb-container">
+    <h2 class="sr-only" id="hb-cijfers-titel">WCAG-audits in cijfers</h2>
+    <ul class="hb-cijfers__rij">
+      <li><span class="hb-cijfer">950+</span><span class="hb-cijfer__uitleg">audits van websites en apps</span></li>
+      <li><span class="hb-cijfer">236</span><span class="hb-cijfer__uitleg">opdrachten uitgevoerd</span></li>
+      <li><span class="hb-cijfer">63</span><span class="hb-cijfer__uitleg">opdrachtgevers</span></li>
+      <li><span class="hb-cijfer hb-cijfer--woord">1 werkdag</span><span class="hb-cijfer__uitleg">reactie op je aanvraag</span></li>
+    </ul>
+
+    <div class="hb-klanten">
+      <p class="hb-label"><span aria-hidden="true">01 </span>Klanten</p>
+      <div class="hb-klanten__sectoren">
+        <div>
+          <h3 class="hb-klanten__sector">Cultuur</h3>
+          <ul class="hb-klanten__namen">
+            <li>Rijksmuseum</li>
+            <li>Museumvereniging</li>
+            <li>Museumkaart</li>
+            <li>Museum.nl</li>
+            <li>Huis van Hilde</li>
+            <li>Joods monument Amersfoort</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hb-klanten__sector">Overheid</h3>
+          <ul class="hb-klanten__namen">
+            <li>Provincie Noord-Holland</li>
+            <li>Provincie Zuid-Holland</li>
+            <li>IPO</li>
+            <li>Gemeente Amersfoort</li>
+            <li>Gemeente 's-Hertogenbosch</li>
+            <li>Gemeente Alkmaar</li>
+            <li>Raad voor Rechtsbijstand</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hb-klanten__sector">Bedrijfsleven en media</h3>
+          <ul class="hb-klanten__namen">
+            <li>NRC</li>
+            <li>De Bijenkorf</li>
+            <li>Plus</li>
+            <li>Jumbo</li>
+            <li>Crisp</li>
+            <li>Eteck</li>
+            <li>Mave</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hb-klanten__sector">Softwareleveranciers</h3>
+          <ul class="hb-klanten__namen">
+            <li>Hoplr</li>
+            <li>Numonix</li>
+            <li>ilionx</li>
+            <li>Progresity</li>
+            <li>Metafoor</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hb-klanten__voet">Cijfers per 7 augustus 2026.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 4. DIENSTEN ════════════════ -->
+<section class="hb-diensten" id="diensten" aria-labelledby="hb-diensten-titel">
+  <div class="hb-container">
+    <div class="hb-diensten__kop">
+      <div>
+        <p class="hb-label"><span aria-hidden="true">02 </span>Diensten</p>
+        <h2 class="hb-h2" id="hb-diensten-titel">Welke hulp met digitale toegankelijkheid zoek je?</h2>
+      </div>
+      <p class="hb-diensten__twijfel">Twijfel je welke je nodig hebt? <button type="button" class="hb-tekstknop" id="hb-vraag-diensten">Vraag het de assistent.</button></p>
+    </div>
+
+    <ul class="hb-diensten__raster">
+      <li class="hb-dienst hb-dienst--donker">
+        <span class="hb-dienst__nummer" aria-hidden="true">01</span>
+        <h3 class="hb-dienst__titel">WCAG-audit en begeleiding</h3>
+        <p>Je website of app getest op WCAG 2.2 AA. Je krijgt een rapport per element, met veel voorbeelden, en we denken mee terwijl je team de bevindingen oplost.</p>
+        <a class="hb-dienst__link" href="/toegankelijkheidsaudit/">Over de audit <span aria-hidden="true">→</span></a>
+      </li>
+      <li class="hb-dienst">
+        <span class="hb-dienst__nummer" aria-hidden="true">02</span>
+        <h3 class="hb-dienst__titel">Toegankelijkheid monitoren <span class="hb-badge">Nieuw</span></h3>
+        <p>Elke maand meten we je hele website automatisch na. Je ziet in één dashboard of je website beter of slechter wordt, wat er nieuw is en wat er is opgelost.</p>
+        <a class="hb-dienst__link" href="/automatische-monitoring/">Over monitoring <span aria-hidden="true">→</span></a>
+      </li>
+      <li class="hb-dienst">
+        <span class="hb-dienst__nummer" aria-hidden="true">03</span>
+        <h3 class="hb-dienst__titel">Zelf op WCAG testen met onze tools</h3>
+        <p>Met de WCAG Radar check je contrast, koppen en alt-teksten in je eigen browser. De PDF-checker laat zien welke toegankelijkheidsfouten er in je PDF zitten.</p>
+        <span class="hb-dienst__links">
+          <a class="hb-dienst__link" href="/tools/wcag-radar/">WCAG Radar <span aria-hidden="true">→</span></a>
+          <a class="hb-dienst__link" href="/tools/pdf-checker/">PDF-checker <span aria-hidden="true">→</span></a>
+        </span>
+      </li>
+      <li class="hb-dienst">
+        <span class="hb-dienst__nummer" aria-hidden="true">04</span>
+        <h3 class="hb-dienst__titel">Hulp met digitale toegankelijkheid</h3>
+        <p>Onder welke wet valt je website of app, en wat moet je doen? We zoeken uit of de European Accessibility Act of het Besluit digitale toegankelijkheid overheid voor je geldt, en wat er eerst moet.</p>
+        <span class="hb-dienst__links">
+          <a class="hb-dienst__link" href="/eaa/">De EAA <span aria-hidden="true">→</span></a>
+          <a class="hb-dienst__link" href="/digitale_toegankelijkheid_overheid/">Het BDTO <span aria-hidden="true">→</span></a>
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 5. CONTACT ════════════════ -->
+<section class="hb-contact" id="contact" aria-labelledby="hb-contact-titel">
+  <div class="hb-container hb-contact__grid">
+    <div>
+      <h2 class="hb-contact__titel" id="hb-contact-titel">Kennismaken?</h2>
+      <p class="hb-contact__tekst">
+        Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
+        Je hoort binnen 1 werkdag van ons.
+      </p>
+      <ul class="hb-contact__mensen">
+        <li class="hb-persoon">
+          <img class="hb-persoon__foto" src="{{ "images/julia.webp" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="hb-contact__naam">Julia Tol</span><span class="hb-contact__functie">Directeur</span></span>
+        </li>
+        <li class="hb-persoon">
+          <img class="hb-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="hb-contact__naam">Phi Pham</span><span class="hb-contact__functie">Projectmanager</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <form
+      class="hb-form"
+      id="hb-contact-form"
+      novalidate
+      onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'homepage-b', successMessage: 'Dank je, we hebben je bericht. Je hoort binnen 1 werkdag van ons.' });">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-naam">Naam</label>
+        <input class="hb-veld__invoer" id="hb-naam" name="naam" autocomplete="name" required type="text">
+      </div>
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-email">E-mailadres</label>
+        <input class="hb-veld__invoer" id="hb-email" name="email" autocomplete="email" required type="email">
+      </div>
+      <div class="hb-veld">
+        <label class="hb-veld__label" for="hb-bericht">Waar wil je het over hebben?</label>
+        <textarea class="hb-veld__invoer" id="hb-bericht" name="bericht" rows="4"></textarea>
+      </div>
+      <button class="hb-knop" type="submit">Verstuur</button>
+      <div role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</div>
+
+{{/* Paginanamen voor de links in de antwoorden: de chat geeft een URL, het
+     script maakt daar een link met de naam van de pagina van. */}}
+{{ $paginas := dict "/contact/" "Contact" "/" "De homepagina" }}
+{{ range site.Data.footer_groot.kolommen }}{{ range .links }}{{ $paginas = merge $paginas (dict .url .naam) }}{{ end }}{{ end }}
+<script type="application/json" id="hb-paginas">{{ $paginas | jsonify | safeJS }}</script>
+<script src="{{ "js/homepage-b.js" | relURL }}" defer></script>
+
+<style>
+  body:has(.hb) { background: #fff; }
+  .hb { --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0; --petrol: #004050;
+        --tekst: #454D57; --tekst-zacht: #5F656D; --lijn: rgba(31,41,55,0.22);
+        --kop: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+        background: #fff; color: var(--navy); }
+  .hb-container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+  .hb a:focus-visible, .hb button:focus-visible, .hb input:focus-visible, .hb textarea:focus-visible {
+    outline: 3px solid var(--magenta); outline-offset: 3px;
+  }
+  .hb-vraag :focus-visible, .hb-contact :focus-visible { outline-color: var(--licht-magenta) !important; }
+  .hb-contact .hb-contact__tekst :focus-visible { outline-color: #fff !important; }
+
+  .hb-label {
+    display: flex; align-items: center; gap: 10px; margin: 0 0 16px;
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px;
+    text-transform: uppercase; color: var(--magenta);
+  }
+  .hb-label--licht { color: var(--licht-magenta); }
+  .hb-label__blokje { width: 8px; height: 8px; background: var(--licht-magenta); }
+  .hb-h2 {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(30px, 4.4vw, 56px);
+    letter-spacing: -2px; line-height: 1.0; margin: 0; max-width: 22ch; color: var(--navy);
+  }
+  .hb-pijl-link, .hb-dienst__link {
+    text-decoration: none; color: var(--navy); font-family: var(--kop); font-weight: 800; font-size: 12px;
+    letter-spacing: 1.6px; text-transform: uppercase; display: inline-flex; gap: 8px; align-items: center;
+    padding: 6px 0;
+  }
+  .hb-pijl-link span, .hb-dienst__link span { color: var(--magenta); }
+  .hb-pijl-link:hover, .hb-dienst__link:hover { color: var(--magenta); text-decoration: underline; text-underline-offset: 0.3em; }
+
+  /* 1. Hero */
+  .hb-hero__kenmerken {
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: center; text-align: center; margin: 0;
+    padding-top: clamp(40px, 6vw, 76px);
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--petrol);
+  }
+  .hb-hero__kenmerk-grijs { color: var(--tekst-zacht); }
+  .hb-hero__titel {
+    font-family: var(--kop); font-weight: 800; line-height: 0.92; letter-spacing: -3.4px; color: var(--navy);
+    font-size: clamp(38px, 7.4vw, 104px); margin: clamp(26px, 4vw, 48px) 0 0;
+    display: flex; flex-direction: column; align-items: center; text-align: center; text-wrap: pretty;
+  }
+  .hb-hero__klein { font-size: 0.58em; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+  .hb-hero__klein--ruimte { margin-top: 0.14em; }
+  .hb-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
+  .hb-hero__groot--petrol { color: var(--petrol); }
+  .hb-hero__lead {
+    font-size: clamp(17px, 1.9vw, 23px); line-height: 1.5; color: var(--tekst);
+    margin: clamp(22px, 3vw, 34px) auto 0; max-width: 640px; text-align: center;
+  }
+  .hb-bewijs {
+    list-style: none; margin: clamp(28px, 4vw, 44px) auto 0; padding: 18px 0 clamp(28px, 4vw, 40px);
+    border-top: 1px solid rgba(31,41,55,0.22);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 0;
+    font-family: var(--kop); font-weight: 700; font-size: 14px; color: var(--tekst-zacht);
+  }
+  .hb-bewijs li { margin: 0; }
+  .hb-bewijs li + li::before { content: "·"; content: "·" / ""; padding: 0 12px; color: var(--petrol); }
+  .hb-bewijs__cijfer { color: var(--navy); font-weight: 800; }
+  @media (max-width: 48rem) {
+    .hb-bewijs { gap: 8px 20px; }
+    .hb-bewijs li + li::before { content: none; }
+  }
+  .hb-hero__lead a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--petrol);
+    text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+  .hb-hero__lead a:hover { color: var(--petrol); }
+
+  /* 2. De assistent */
+  .hb-vraag { background: var(--navy); color: var(--papier); }
+  .hb-vraag__grid {
+    padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(44px, 6vw, 76px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: clamp(28px, 4vw, 60px); align-items: start;
+  }
+  .hb-vraag__intro, .hb-vraag__gesprek { min-width: 0; }
+  .hb-vraag__titel {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(30px, 3.8vw, 52px); line-height: 1.0;
+    letter-spacing: -1.8px; margin: 20px 0 0; color: var(--papier);
+  }
+  .hb-vraag__groet { font-size: clamp(16px, 1.7vw, 19px); line-height: 1.65; margin: 0; max-width: 36rem; color: #C5C5C3; }
+  .hb-vraag__intro { display: flex; flex-direction: column; gap: 22px; }
+  .hb-vraag__intro .hb-vraag__titel { margin: 0; }
+  .hb-vraag__intro .hb-label { margin: 0 0 -8px; }
+  .hb-vraag__voorbeelden-titel {
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase;
+    color: var(--papier); margin: 8px 0 -12px;
+  }
+  .hb-vraag__cursor {
+    display: inline-block; width: 2px; height: 18px; background: var(--licht-magenta); vertical-align: -3px;
+    margin-left: 2px; animation: hb-cursor 1s step-end infinite;
+  }
+  @keyframes hb-cursor { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  .hb-vraag__disclaimer {
+    margin: 0; font-size: 12.5px; line-height: 1.55; color: #C5C5C3; max-width: 420px;
+    border-top: 1px solid rgba(244,241,234,0.18); padding-top: 14px;
+  }
+  .hb-vraag__disclaimer a { color: var(--licht-magenta); text-decoration: underline; text-underline-offset: 0.2em; }
+
+  .hb-vraag__gesprek {
+    display: flex; flex-direction: column; gap: 22px;
+    border-left: 2px solid var(--papier); padding-left: clamp(18px, 2.5vw, 34px); align-self: stretch;
+  }
+  .hb-vraag__log { display: flex; flex-direction: column; gap: 22px; }
+  .hb-vraag__log:empty { display: none; }
+  .hb-bericht { margin: 0; animation: hb-rijs 320ms cubic-bezier(0.16,1,0.3,1) both; }
+  @keyframes hb-rijs { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .hb-bericht--vraag {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(19px, 2.1vw, 26px); line-height: 1.25;
+    letter-spacing: -0.8px; color: var(--licht-magenta);
+  }
+  .hb-bericht--antwoord, .hb-bericht--fout { font-size: clamp(16px, 1.7vw, 19px); line-height: 1.65; color: var(--papier); white-space: pre-wrap; }
+  .hb-bericht--antwoord a { color: var(--licht-magenta); font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+  .hb-bericht--typen, .hb-bericht--zonder-animatie { animation: none; }
+  .hb-denkt { display: flex; gap: 5px; align-items: center; }
+  .hb-denkt[hidden] { display: none; }
+  .hb-denkt__blok { width: 8px; height: 8px; background: var(--licht-magenta); animation: hb-stip 1.1s ease-in-out infinite; }
+  .hb-denkt__blok:nth-child(3) { animation-delay: .15s; }
+  .hb-denkt__blok:nth-child(4) { animation-delay: .3s; }
+  @keyframes hb-stip { 0%, 60%, 100% { transform: translateY(0); opacity: .4; } 30% { transform: translateY(-5px); opacity: 1; } }
+
+  .hb-vraag__form { display: flex; align-items: stretch; flex-wrap: wrap; border-bottom: 2px solid var(--papier); }
+  .hb-vraag__invoer {
+    flex: 1; min-width: 140px; font-family: var(--kop); font-weight: 700; font-size: clamp(17px, 1.9vw, 21px);
+    letter-spacing: -0.4px; padding: 12px 4px; border: 0; background: transparent; color: var(--papier);
+  }
+  .hb-vraag__invoer::placeholder { color: #B8B9B8; opacity: 1; }
+  .hb-vraag__verstuur, .hb-knop {
+    font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase;
+    color: var(--navy); background: var(--papier); border: 0; border-radius: 0; padding: 14px 22px;
+    cursor: pointer; white-space: nowrap; min-height: 44px;
+  }
+  .hb-vraag__verstuur:hover, .hb-knop:hover { background: var(--licht-magenta); }
+  .hb-vraag__verstuur:disabled { opacity: 0.7; cursor: wait; }
+
+  .hb-vraag__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .hb-vraag__chips li { margin: 0; }
+  .hb-chip {
+    width: 100%; text-align: left; font-family: "Nunito", sans-serif; font-size: 15.5px; font-weight: 700;
+    color: var(--papier); background: none; border: 0; border-bottom: 1px solid rgba(244,241,234,0.18);
+    padding: 11px 0; cursor: pointer; display: flex; justify-content: space-between; gap: 14px; transition: color 160ms;
+  }
+  .hb-chip::after { content: "→"; color: var(--licht-magenta); }
+  .hb-chip:hover { color: var(--licht-magenta); }
+  .hb-chip:disabled { opacity: 0.6; cursor: wait; }
+  .hb-vraag__opnieuw {
+    align-self: flex-start; font-family: "Nunito", sans-serif; font-size: 13.5px; font-weight: 700;
+    color: var(--licht-magenta); background: none; border: 0; padding: 10px 0; min-height: 44px; cursor: pointer; text-decoration: underline;
+  }
+
+  /* 3. Cijfers en klanten */
+  .hb-cijfers { border-bottom: 1px solid var(--lijn); }
+  .hb-cijfers .hb-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .hb-cijfers__rij {
+    list-style: none; margin: 0; padding: 0 0 clamp(32px, 4vw, 52px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 24px 20px;
+    border-bottom: 1px solid var(--lijn);
+  }
+  .hb-cijfers__rij li { margin: 0; min-width: 0; }
+  .hb-cijfer {
+    display: block; font-family: var(--kop); font-weight: 800; font-size: clamp(34px, 5.4vw, 74px);
+    letter-spacing: -3px; color: var(--magenta); line-height: 0.9;
+  }
+  .hb-cijfer--woord { font-size: clamp(30px, 3.6vw, 52px); white-space: nowrap; letter-spacing: -2px; line-height: 1.2; }
+  .hb-cijfer__uitleg { display: block; margin-top: 12px; font-size: 14px; line-height: 1.45; color: var(--tekst); }
+  .hb-klanten { padding-top: clamp(28px, 3.5vw, 44px); }
+  .hb-klanten__namen {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .hb-klanten > .hb-label { margin-bottom: 28px; }
+  .hb-klanten__sectoren {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 32px 22px;
+  }
+  .hb-klanten__sector {
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--tekst-zacht); margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--lijn);
+  }
+  .hb-klanten__namen li {
+    margin: 0; min-width: 0; font-family: var(--kop); font-weight: 800; font-size: clamp(15px, 1.5vw, 19px);
+    line-height: 1.2; letter-spacing: -0.4px; color: var(--navy);
+  }
+  .hb-klanten__voet { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; margin: 24px 0 0; font-size: 14px; color: var(--tekst); }
+
+  /* 4. Diensten */
+  .hb-diensten { border-bottom: 1px solid var(--lijn); }
+  .hb-diensten .hb-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .hb-diensten__kop {
+    display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: baseline; justify-content: space-between;
+    margin-bottom: clamp(28px, 4vw, 48px);
+  }
+  .hb-diensten__twijfel { margin: 0; font-size: 15px; color: var(--tekst-zacht); }
+  .hb-tekstknop {
+    font: inherit; font-weight: 700; color: var(--magenta); background: none; border: 0; padding: 10px 0;
+    cursor: pointer; text-decoration: underline;
+  }
+  .hb-diensten__raster {
+    list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--lijn);
+    display: grid; grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 58rem) { .hb-diensten__raster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .hb-dienst {
+    margin: 0; min-width: 0; border-bottom: 1px solid var(--lijn);
+    padding: clamp(24px, 3vw, 40px) 0;
+    display: flex; flex-direction: column; gap: 14px; transition: background 200ms;
+  }
+  .hb-dienst:hover { background: rgba(31,41,55,0.05); }
+  @media (min-width: 58rem) {
+    .hb-dienst:nth-child(odd) { border-right: 1px solid var(--lijn); padding-right: clamp(20px, 2.5vw, 36px); }
+    .hb-dienst:nth-child(even) { padding-left: clamp(20px, 2.5vw, 36px); }
+  }
+  .hb-dienst__nummer { font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; color: var(--magenta); }
+  .hb-dienst__titel {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(22px, 2.6vw, 32px); letter-spacing: -1px;
+    margin: 0; line-height: 1.05; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: var(--navy);
+  }
+  .hb-badge {
+    font-family: "Nunito", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--papier); background: var(--magenta); padding: 5px 10px; line-height: 1.2;
+  }
+  .hb-dienst p { font-size: 15.5px; line-height: 1.6; color: var(--tekst); margin: 0; flex: 1; }
+  .hb-dienst__links { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+  /* De audit is de hoofddienst: donker vlak, witte tekst. Lichte magenta
+     #FF66A0 haalt 5,35:1 op donkerblauw, de gewone magenta niet. */
+  .hb-dienst.hb-dienst--donker { background: var(--navy); color: #fff; padding-left: clamp(20px, 2.5vw, 36px); padding-right: clamp(20px, 2.5vw, 36px); }
+  .hb-dienst--donker:hover { background: var(--navy); }
+  .hb-dienst--donker .hb-dienst__titel, .hb-dienst--donker p, .hb-dienst--donker .hb-dienst__link { color: #fff; }
+  .hb-dienst--donker .hb-dienst__nummer, .hb-dienst--donker .hb-dienst__link span { color: var(--licht-magenta); }
+  .hb-dienst--donker .hb-dienst__link:hover { color: #fff; }
+  .hb .hb-dienst--donker :focus-visible { outline-color: var(--licht-magenta) !important; }
+
+  /* 5. Contact */
+  .hb-contact { background: var(--magenta); color: #fff; }
+  .hb-contact__grid {
+    padding-top: clamp(48px, 7vw, 92px); padding-bottom: clamp(48px, 7vw, 92px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: clamp(28px, 4vw, 60px); align-items: start;
+  }
+  .hb-contact__titel {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(32px, 5vw, 64px); letter-spacing: -2.4px;
+    line-height: 0.98; margin: 0; color: #fff;
+  }
+  .hb-contact__tekst { font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; color: #fff; margin: 22px 0 28px; max-width: 420px; }
+  .hb-contact__tekst a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+  .hb-contact__mensen {
+    list-style: none; margin: 0; padding: 20px 0 0; display: flex; gap: 32px; flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.35);
+  }
+  .hb-contact__mensen li { margin: 0; }
+  .hb-persoon { display: flex; align-items: center; gap: 14px; }
+  .hb-persoon__foto { width: 64px; height: 64px; object-fit: cover; border-radius: 999px; }
+  .hb-contact__naam { display: block; font-family: var(--kop); font-weight: 800; font-size: 15px; }
+  .hb-contact__functie { display: block; font-size: 13px; color: #F7DCE6; }
+
+  .hb-form { min-width: 0; background: var(--navy); color: var(--papier); padding: clamp(22px, 3vw, 32px); display: flex; flex-direction: column; gap: 16px; }
+  .hb-veld { display: flex; flex-direction: column; gap: 6px; }
+  .hb-veld__label { font-family: var(--kop); font-size: 11px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--papier); }
+  .hb-veld__invoer {
+    font-family: "Nunito", sans-serif; font-size: 15.5px; padding: 12px 14px; border: 2px solid #fff; border-radius: 0;
+    background: #fff; color: var(--navy);
+  }
+  .hb-veld__invoer:focus { border-color: var(--licht-magenta); }
+  textarea.hb-veld__invoer { resize: vertical; }
+  .hb-knop { align-self: flex-start; padding: 15px 26px; }
+  .hb-form [role="status"] { color: var(--papier); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hb *, .hb *::before, .hb *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+{{ end }}

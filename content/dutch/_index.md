@@ -1,11 +1,11 @@
 ---
-title: "Accessibility as a Service: toegankelijkheid als doorlopende dienst"
-meta_title: "Digitale toegankelijkheid: WCAG-audits en doorlopende hulp | Proper Access"
-date: 2026-03-07
-description: "Weet elke maand hoe je hele website ervoor staat. Accessibility as a Service scant je hele site en tot 100 PDF's, een senior auditor beoordeelt elke bevinding, en je toegankelijkheidsverklaring blijft vanzelf actueel."
+title: "Proper Access: WCAG-audits, tools en advies over digitale toegankelijkheid"
+meta_title: "Digitale toegankelijkheid: WCAG-audits, tools en advies | Proper Access"
+date: 2026-09-19
+description: "De EAA geldt al. Proper Access test je website of app op WCAG 2.2 AA. Onafhankelijk auditbureau voor digitale toegankelijkheid, sinds 2019 en IAAP-gecertificeerd."
 keywords:
-  - accessibility as a service
-  - continue monitoring toegankelijkheid
+  - WCAG-audit
+  - toegankelijkheidsonderzoek
   - WCAG
   - European Accessibility Act
   - EAA
@@ -13,20 +13,12 @@ keywords:
   - toegankelijkheidsverklaring
 slug: ""
 url: "/"
-layout: "homepage-aaas-v2"
-
-faqs:
-  - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Onze prijzen beginnen vanaf circa € 2.250 voor een eenvoudige website. De meeste websites vallen in de categorie gemiddeld en liggen rond de € 3.150. We geven je altijd vooraf een duidelijke indicatie, geen verrassingen achteraf."
-  - question: "Moeten we alles meteen oplossen?"
-    answer: "Nee. We helpen je prioriteren. Per bevinding geven we aan hoe ernstig het is en hoeveel moeite de oplossing kost. Zo pak je eerst aan wat het meeste impact heeft."
-  - question: "Hoe ziet het rapport eruit?"
-    answer: "Per pagina, per element. Met screenshots, code-voorbeelden en concrete oplossingsrichtingen. Bekijk onze voorbeeldrapporten om het verschil te zien."
-  - question: "Werken jullie ook met ons development team?"
-    answer: "Ja. Via onze strippenkaart kunnen we meedraaien in jullie sprints, code reviewen en vragen beantwoorden. We passen ons aan jullie werkwijze aan."
-  - question: "Zijn jullie onafhankelijk?"
-    answer: "Ja. We bouwen en beheren geen websites, dus we keuren nooit ons eigen werk en we hebben geen belang bij een uitkomst. We maken wel eigen tools, gebouwd en gehost in de EU, maar we blijven weg uit het bouwen en beheren zelf."
-  - question: "Moeten wij voldoen aan de EAA?"
-    answer: "De European Accessibility Act geldt voor bedrijven die producten of diensten aanbieden aan consumenten in de EU, bijvoorbeeld webshops, banken, telecom en vervoersbedrijven. Twijfel je? Neem contact op, dan zoeken we het samen uit."
-
+layout: "homepage-b"
+# De homepagina volgt sinds 19-09-2026 het ontwerp "Homepage D papier", dat
+# eerst als variant B op /home-b/ stond. Dat adres verwijst hierheen.
+aliases:
+  - "/home-b/"
+header_minimaal: true
+footer_groot: true
+zonder_chatknop: true
 ---

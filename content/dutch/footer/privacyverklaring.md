@@ -13,7 +13,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "juni 2026"
+    value: "september 2026"
 ---
 
 {{< offerte-section title="1. Wie zijn wij" >}}
@@ -38,6 +38,20 @@ Proper Access verwerkt persoonsgegevens doordat je gebruik maakt van onze dienst
 
 Voor websitestatistieken gebruiken we Plausible Analytics. Plausible werkt zonder cookies en verzamelt geen persoonsgegevens: bezoeken worden geanonimiseerd en alleen als totalen bijgehouden. We kunnen individuele bezoekers niet herkennen of volgen.
 
+**De chat op onze website**
+
+Stel je een vraag in de chat, dan sturen we je vraag naar Anthropic. Anthropic maakt met het taalmodel Claude het antwoord. De eerdere berichten uit hetzelfde gesprek gaan mee, zodat het antwoord op je vraag aansluit. We slaan de chatberichten zelf niet op. Zet geen persoonsgegevens in je vraag, zoals je naam, je e-mailadres of je telefoonnummer.
+
+Om misbruik te voorkomen, telt onze server hoeveel berichten er in 10 minuten van hetzelfde IP-adres komen. Dat getal staat alleen in het werkgeheugen van de server en wordt niet opgeslagen.
+
+**Welke organisaties onze website bezoeken**
+
+Sinds september 2026 kijken we bij elke paginaweergave van welke organisatie het netwerk is waar het bezoek vandaan komt. Zo zien we bijvoorbeeld dat een gemeente of een universiteit onze site heeft bezocht. We zien niet wie daar de site bezocht.
+
+Daarvoor gebruiken we je IP-adres, alleen zolang het opzoeken duurt. We slaan je IP-adres niet op. In onze database staan de datum, de bezochte pagina, de website waar je vandaan kwam, de naam van de eigenaar van het netwerk, het soort netwerk en het land. Kom je via een thuisaansluiting of een mobiel netwerk, dan staat daar de naam van je internetprovider en niet de jouwe.
+
+Om niet voor elk bezoek opnieuw te zoeken, bewaren we per blok van 256 IP-adressen welke organisatie erbij hoort. Staat in je browser "Do Not Track" aan, dan doen we dit helemaal niet.
+
 We gebruiken geen social media plugins.
 
 {{< /offerte-section >}}
@@ -51,6 +65,8 @@ Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over web
 {{< offerte-section title="4. Doel en grondslag" bg="light" >}}
 
 Proper Access gebruikt geanonimiseerde bezoekstatistieken om de website te verbeteren. Daarvoor verwerken we geen persoonsgegevens.
+
+Voor de chat en voor het opzoeken van de organisatie achter een bezoek verwerken we je IP-adres kort. De grondslag daarvoor is ons gerechtvaardigd belang: je vragen beantwoorden, misbruik van de chat voorkomen, en weten welke organisaties onze website bezoeken.
 
 Proper Access verwerkt jouw persoonsgegevens voor de volgende doelen:
 
@@ -74,8 +90,9 @@ Proper Access bewaart je persoonsgegevens niet langer dan strikt nodig is om de 
 Proper Access verstrekt gegevens uitsluitend aan derden als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting. Wij maken gebruik van de volgende derde partijen:
 
 - **Plausible Analytics**: voor geanonimiseerde websitestatistieken. Plausible plaatst geen cookies en verzamelt geen persoonsgegevens. Plausible is gevestigd in de EU en verwerkt gegevens conform de AVG. Meer informatie: [plausible.io/data-policy](https://plausible.io/data-policy).
-- **Formspree**: voor het verwerken van berichten via ons contactformulier. Meer informatie: [formspree.io/legal/privacy-policy](https://formspree.io/legal/privacy-policy/).
-- **Cloudflare**: voor beveiliging en prestatie-optimalisatie van de website. Cloudflare kan technische cookies plaatsen (zie sectie 7).
+- **AhaSend**: voor het versturen van e-mail na een bericht via een formulier op onze website. AhaSend is gevestigd in de EU. Meer informatie: [ahasend.com/privacy](https://ahasend.com/privacy).
+- **Anthropic**: voor de antwoorden in de chat op onze website. Anthropic krijgt de berichten uit het gesprek, zie sectie 2. Meer informatie: [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy).
+- **Cloudflare**: voor beveiliging en prestatie-optimalisatie van de website. Onze formulieren, de chat en het opzoeken van de organisatie achter een bezoek draaien op servers van Cloudflare. Cloudflare kan technische cookies plaatsen (zie sectie 7).
 
 {{< /offerte-section >}}
 

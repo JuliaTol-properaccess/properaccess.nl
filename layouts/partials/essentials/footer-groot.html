@@ -1,0 +1,150 @@
+{{/*
+  Grote footer met de structuur van de site, naar het voorbeeld van q42.nl.
+  Staat op de homepagina (front matter footer_groot).
+  Ontwerp: "Homepage D papier" (Claude Design, 19-09-2026).
+  De linkkolommen komen uit data/footer_groot.yaml.
+
+  Bewust niet overgenomen uit het ontwerp: ISO 27001 en W3C WAI (niet
+  bevestigd), "Volg ons" (data/social.json bevat nog geen echte adressen),
+  "Nieuwsbrief" (staat uit) en "Het team" en "Werken bij" (die pagina's
+  bestaan niet).
+*/}}
+{{ $data := site.Data.footer_groot }}
+<footer class="fg">
+  <div class="fg__inner">
+
+    <div class="fg__top">
+      <div>
+        <a class="fg__logo" href="{{ site.Home.RelPermalink }}">{{ partial "logo" }}</a>
+        <p class="fg__tagline">Onafhankelijk auditbureau voor digitale toegankelijkheid.</p>
+      </div>
+      <div class="fg__contact">
+        <a href="tel:+31855055890">085 5055 890</a>
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+      </div>
+    </div>
+
+    <div class="fg__kolommen">
+      {{ range $data.kolommen }}
+        <div class="fg__kolom">
+          <h2 class="fg__titel">{{ .titel }}</h2>
+          <ul class="fg__lijst">
+            {{ range .links }}
+              <li>
+                <a class="fg__link" href="{{ .url }}"
+                  {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+                  {{- .naam -}}
+                  {{ if findRE `^http` .url }}<span class="sr-only"> (opent in een nieuw tabblad)</span>{{ end }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="fg__adressen">
+      <address class="fg__adres">
+        <span class="fg__adres-kop">Amsterdam</span>
+        Keizersgracht 520 H<br>1017 EK Amsterdam
+      </address>
+      <address class="fg__adres">
+        <span class="fg__adres-kop">Emmeloord</span>
+        Randweg 25<br>8304 AS Emmeloord
+      </address>
+      <p class="fg__adres">
+        <span class="fg__adres-kop">Proper Access B.V.</span>
+        KvK 95350985<br>BTW NL867096755B01
+      </p>
+    </div>
+
+    <div class="fg__certs">
+      <div>
+        <h2 class="fg__titel">Certificeringen</h2>
+        <p class="fg__certs-tekst">Onze auditors zijn gecertificeerd door de International Association of Accessibility Professionals (IAAP).</p>
+      </div>
+      <div class="fg__certs-logos">
+        <span class="fg__cert"><img src="{{ "images/iaap.png" | relURL }}" alt="IAAP, International Association of Accessibility Professionals" loading="lazy" width="108" height="50"></span>
+        <span class="fg__cert"><img src="{{ "images/logo_was.png" | relURL }}" alt="IAAP Certified WAS, Web Accessibility Specialist" loading="lazy" width="50" height="50"></span>
+        <span class="fg__cert"><img src="{{ "images/cpacc2.png" | relURL }}" alt="IAAP Certified CPACC, Certified Professional in Accessibility Core Competencies" loading="lazy" width="50" height="50"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fg__onder">
+    <div class="fg__onder-inner">
+      <ul class="fg__juridisch">
+        {{ range $data.juridisch }}
+          <li><a href="{{ .url }}">{{ .naam }}</a></li>
+        {{ end }}
+      </ul>
+      <span>&copy; {{ now.Year }} Proper Access</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .fg { background: #1F2937; color: #C5C5C3; padding-top: clamp(44px, 6vw, 72px); }
+  .fg__inner { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+  .fg a:focus-visible { outline: 3px solid #FF66A0; outline-offset: 3px; }
+
+  .fg__top { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: flex-end; justify-content: space-between; padding-bottom: 32px; }
+  .fg__logo img { height: 2rem; width: auto; filter: brightness(0) invert(1); }
+  .fg__tagline { font-size: 14.5px; line-height: 1.55; color: #B8B9B8; margin: 14px 0 0; max-width: 400px; }
+  .fg__contact { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+  .fg__contact a {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800;
+    font-size: clamp(18px, 2.2vw, 26px); letter-spacing: -0.6px; color: #F4F1EA; text-decoration: none;
+  }
+  .fg__contact a:hover { color: #FF66A0; }
+
+  .fg__kolommen {
+    border-top: 1px solid rgba(244,241,234,0.22); padding: 36px 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 32px 20px; align-items: start;
+  }
+  .fg__titel {
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 11px;
+    color: #FF66A0; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 14px;
+  }
+  .fg__lijst, .fg__juridisch { list-style: none; margin: 0; padding: 0; }
+  .fg__lijst li { margin: 0; }
+  .fg__link { display: inline-block; color: #C9C9C6; text-decoration: none; font-size: 14px; line-height: 1.45; padding: 5px 0; }
+  .fg__link:hover { color: #F4F1EA; text-decoration: underline; text-underline-offset: 0.2em; }
+
+  .fg__adressen {
+    border-top: 1px solid rgba(244,241,234,0.22); padding: 30px 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 24px 20px;
+    font-size: 14px; line-height: 1.6; color: #B8B9B8;
+  }
+  .fg__adres { font-style: normal; margin: 0; }
+  .fg__adres-kop {
+    display: block; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 11px;
+    letter-spacing: 1.8px; text-transform: uppercase; color: #F4F1EA; margin-bottom: 8px;
+  }
+
+  .fg__certs {
+    border-top: 1px solid rgba(244,241,234,0.22); padding: 30px 0;
+    display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between;
+  }
+  .fg__certs .fg__titel { margin: 0; }
+  .fg__certs-tekst { margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: #B8B9B8; max-width: 360px; }
+  .fg__certs-logos { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .fg__cert {
+    background: #F4F1EA; padding: 10px; height: 70px; min-width: 70px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fg__cert img { max-height: 50px; width: auto; }
+
+  .fg__onder { border-top: 1px solid rgba(244,241,234,0.22); }
+  .fg__onder-inner {
+    max-width: 1320px; margin: 0 auto; padding: 18px 24px;
+    display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; font-size: 12.5px; color: #9FA1A2;
+  }
+  .fg__juridisch { display: flex; gap: 20px; flex-wrap: wrap; }
+  .fg__juridisch a { color: #9FA1A2; text-decoration: none; display: inline-block; padding: 4px 0; }
+  .fg__juridisch a:hover { color: #F4F1EA; text-decoration: underline; }
+</style>
+
+<!-- dezelfde scripts als de gewone footer -->
+<script src="{{ "js/navigation.js" | relURL }}" defer></script>
+<script src="{{ "js/form-submit.js" | relURL }}" defer></script>

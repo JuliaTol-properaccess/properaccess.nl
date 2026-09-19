@@ -1,0 +1,72 @@
+# Linkkolommen van de grote footer (partial essentials/footer-groot.html).
+# Staat onder de homepagina (front matter footer_groot), zie
+# docs/homepage-vernieuwing-ab-test.md. Een pagina toevoegen is één regel.
+# Trainingen staan er bewust niet in: die bieden we sinds 17-09-2026 niet
+# actief aan.
+
+kolommen:
+  - titel: "Diensten"
+    links:
+      - { naam: "WCAG-audit", url: "/toegankelijkheidsaudit/" }
+      - { naam: "Monitoring van je website", url: "/automatische-monitoring/" }
+      - { naam: "App-audit", url: "/app-toegankelijkheid-testen/" }
+      - { naam: "Contentaudit", url: "/contentaudit/" }
+      - { naam: "Techniek- of systeemaudit", url: "/techniekaudit/" }
+      - { naam: "Hercontrole", url: "/hercontrole/" }
+      - { naam: "Mini-audit", url: "/webshop-quickscan/" }
+      - { naam: "Strippenkaart", url: "/strippenkaart/" }
+      - { naam: "Toegankelijkheids-abonnement", url: "/toegankelijkheids-abonnement/" }
+      - { naam: "Testen tijdens de bouw", url: "/toegankelijkheid-testen-tijdens-de-bouw/" }
+      - { naam: "Hulp bij de EAA", url: "/hulp-europese-toegankelijkheidswetgeving/" }
+      - { naam: "Offerte aanvragen", url: "/offerte-wcag-onderzoek/" }
+
+  - titel: "Voor wie"
+    links:
+      - { naam: "Overheid", url: "/digitale_toegankelijkheid_overheid/" }
+      - { naam: "Cultuur, sport en attracties", url: "/inclusie-cultuur-sport-en-attracties/" }
+      - { naam: "E-commerce", url: "/e-commerce-digitale-toegankelijkheid/" }
+      - { naam: "Financiële instellingen", url: "/financiele-instellingen-digitale-toegankelijkheid/" }
+      - { naam: "Digital agencies", url: "/digital_agency/" }
+      - { naam: "Onderwijs", url: "/onderwijs-digitale-toegankelijkheid/" }
+      - { naam: "Resellers", url: "/reseller-programma/" }
+
+  - titel: "Tools"
+    links:
+      - { naam: "WCAG Radar", url: "/tools/wcag-radar/" }
+      - { naam: "PDF-checker", url: "/tools/pdf-checker/" }
+      - { naam: "Toegankelijkheidsverklaring (EAA)", url: "/tools/toegankelijkheidsverklaring-generator/" }
+      - { naam: "Toegankelijkheidsverklaring (BDTO)", url: "/tools/toegankelijkheidsverklaring-wdo/" }
+      - { naam: "Alt-tekst keuzehulp", url: "/tools/alt-tekst-keuzehulp/" }
+      - { naam: "ARIA-referentie", url: "/tools/aria-referentie/" }
+      - { naam: "Foutmeldingen", url: "/tools/foutmeldingen/" }
+      - { naam: "Succescriteria per beperking", url: "/tools/sc-per-beperking/" }
+      - { naam: "Alle tools en quizzen", url: "/tools/" }
+
+  - titel: "Kennis"
+    links:
+      - { naam: "Digitale toegankelijkheid", url: "/digitale-toegankelijkheid/" }
+      - { naam: "De European Accessibility Act", url: "/eaa/" }
+      - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
+      - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
+      - { naam: "Academy", url: "/academy/" }
+      - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
+      - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }
+      - { naam: "Blog: voor webredacties", url: "/categories/webredactie/" }
+      - { naam: "Blog: voor developers", url: "/categories/webdeveloper/" }
+      - { naam: "Alle blogartikelen", url: "/blog/" }
+
+  - titel: "Over ons"
+    links:
+      - { naam: "Over Proper Access", url: "/auditbureau-digitale-toegankelijkheid/" }
+      - { naam: "Zo werken wij", url: "/zo-werken-wij/" }
+      - { naam: "Klanten", url: "/klanten/" }
+      - { naam: "In de media", url: "/in-de-media/" }
+      - { naam: "Bijzondere initiatieven", url: "/bijzondere-initiatieven/" }
+      - { naam: "Samenwerken", url: "/samenwerken-proper-access/" }
+      - { naam: "Contact", url: "/contact/" }
+      - { naam: "Portaal", url: "https://portaal.properaccess.nl/" }
+
+juridisch:
+  - { naam: "Privacy", url: "/privacyverklaring/" }
+  - { naam: "Algemene voorwaarden", url: "/algemene-voorwaarden/" }
+  - { naam: "Klachtenregeling", url: "/klachtenregeling/" }
