@@ -23,7 +23,9 @@
   - de assistent: niet "een senior auditor leest mee"
   - de kop "Waar loop je tegenaan?" wordt "Wat wil je weten over digitale
     toegankelijkheid?" (geen beeldspraak; Julia wilde het begrip vaker in de koppen)
-  - de wisselende plaatsnaam heeft een stopknop (WCAG 2.2.2)
+  - de h1 "We zijn Proper Access ... in Amsterdam/Emmeloord" met de
+    wisselende plaatsnaam is vervangen door "De EAA geldt al. Weet je waar je
+    staat?" (Julia, 19-09-2026)
 */}}
 <div class="hb" data-pa-variant="B">
 
@@ -31,23 +33,18 @@
 <section class="hb-hero">
   <div class="hb-container">
     <p class="hb-hero__kenmerken">
-      <span>Onafhankelijk auditbureau voor digitale toegankelijkheid</span>
+      <span>Onafhankelijk auditbureau</span>
       <span class="hb-hero__kenmerk-grijs">Sinds 2019</span>
       <span class="hb-hero__kenmerk-grijs">IAAP-gecertificeerd</span>
     </p>
     <h1 class="hb-hero__titel">
-      <span class="hb-hero__klein">We zijn</span>
-      <span class="hb-hero__groot">Proper Access</span>
-      <span class="hb-hero__klein hb-hero__klein--ruimte">een team enthousiaste</span>
-      <span class="hb-hero__groot hb-hero__groot--magenta">WCAG-experts</span>
-      <span class="hb-hero__klein hb-hero__klein--ruimte">in <span class="hb-plaats" data-plaatsen="Amsterdam|Emmeloord"><span class="hb-plaats__vast">Amsterdam en Emmeloord</span><span class="hb-plaats__wissel" aria-hidden="true" hidden></span></span></span>
+      <span class="hb-hero__groot">De EAA geldt al.</span>
+      <span class="hb-hero__groot hb-hero__groot--petrol">Weet je waar je staat?</span>
     </h1>
     <p class="hb-hero__lead">
-      Je kunt bij ons terecht voor een <a href="/toegankelijkheidsaudit/">WCAG-audit</a>,
-      <a href="/tools/">tools die toegankelijkheid makkelijker maken</a>,
-      <a href="/automatische-monitoring/">monitoring</a> of gewoon een <a href="#contact">goed gesprek</a>.
+      Wij <a href="/toegankelijkheidsaudit/">testen je site of app op WCAG 2.2 AA</a> en leveren een plan van aanpak waar je morgen mee verder kunt.
+      Binnen 5&nbsp;werkdagen reactie op je aanvraag.
     </p>
-    <p class="hb-hero__pauze"><button type="button" class="hb-pauze" hidden aria-pressed="false">Beweging stoppen</button></p>
   </div>
 </section>
 
@@ -314,27 +311,15 @@
   .hb-hero__klein { font-size: 0.58em; font-weight: 700; letter-spacing: -1.4px; line-height: 1.05; }
   .hb-hero__klein--ruimte { margin-top: 0.14em; }
   .hb-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
-  .hb-hero__groot--magenta { color: var(--magenta); }
-  .hb-plaats { color: var(--petrol); }
-  .hb-plaats__wissel { display: inline-block; }
-  .hb-plaats__wissel.is-nieuw { animation: hb-plaats 6s ease-in-out both; }
-  @keyframes hb-plaats {
-    0% { opacity: 0; transform: translateY(0.2em); } 6%, 94% { opacity: 1; transform: none; }
-    100% { opacity: 0; transform: translateY(-0.2em); }
-  }
-  .hb-plaats__wissel.is-stil { animation: none; opacity: 1; transform: none; }
+  .hb-hero__groot--petrol { color: var(--petrol); }
   .hb-hero__lead {
     font-size: clamp(17px, 1.9vw, 23px); line-height: 1.5; color: var(--tekst);
     margin: clamp(22px, 3vw, 34px) auto 0; max-width: 640px; text-align: center;
+    padding-bottom: clamp(36px, 5vw, 60px);
   }
   .hb-hero__lead a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--petrol);
     text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
   .hb-hero__lead a:hover { color: var(--petrol); }
-  .hb-hero__pauze { text-align: center; margin: 12px 0 0; padding-bottom: clamp(36px, 5vw, 60px); }
-  .hb-pauze {
-    background: none; border: 0; padding: 10px 4px; min-height: 44px; cursor: pointer;
-    font: inherit; font-size: 13.5px; color: var(--tekst-zacht); text-decoration: underline; text-underline-offset: 0.2em;
-  }
 
   /* 2. De assistent */
   .hb-vraag { background: var(--navy); color: var(--papier); }

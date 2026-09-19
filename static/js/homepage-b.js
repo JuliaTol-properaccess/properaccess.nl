@@ -1,9 +1,8 @@
 /*
   Homepagina variant B (layouts/_default/homepage-b.html).
-  Drie onderdelen:
-  1. De plaatsnaam in de h1 wisselt elke 6 seconden, met een stopknop.
-  2. De assistent: de chat van pa-chat, in de pagina zelf, met getypte tekst.
-  3. De meting voor de A/B-test: Plausible-event "Homepage stap".
+  Twee onderdelen:
+  1. De assistent: de chat van pa-chat, in de pagina zelf, met getypte tekst.
+  2. De meting voor de A/B-test: Plausible-event "Homepage stap".
   Zie docs/homepage-vernieuwing-ab-test.md.
 */
 (function () {
@@ -13,7 +12,6 @@
   var MAX_HISTORY = 10;
   var MAX_LENGTH = 500;
   var TIMEOUT_MS = 30000;
-  var WISSEL_MS = 6000;
   var TEKENS_PER_SECONDE = 55;
 
   var root = document.querySelector("[data-pa-variant]");
@@ -47,62 +45,7 @@
     window.requestAnimationFrame(stap);
   }
 
-  // ── 1. Wisselende plaatsnaam ─────────────────────────────
-  //
-  // Een schermlezer leest altijd de vaste tekst "Amsterdam en Emmeloord";
-  // het wisselende woord is aria-hidden, zodat de naam van de kop niet
-  // verandert. Wie minder beweging wil, ziet de vaste tekst en geen wissel.
-  // WCAG 2.2.2: beweging die langer dan 5 seconden duurt, moet te stoppen zijn.
-
-  function startWissel() {
-    var plaats = root.querySelector(".hb-plaats");
-    var knop = root.querySelector(".hb-pauze");
-    if (!plaats || !knop || minderBeweging) return;
-
-    var namen = (plaats.getAttribute("data-plaatsen") || "").split("|");
-    if (namen.length < 2) return;
-
-    var vast = plaats.querySelector(".hb-plaats__vast");
-    var wissel = plaats.querySelector(".hb-plaats__wissel");
-    var i = 0;
-    var timer = null;
-
-    vast.classList.add("sr-only");
-    wissel.hidden = false;
-    knop.hidden = false;
-
-    function toon() {
-      wissel.classList.remove("is-nieuw", "is-stil");
-      void wissel.offsetWidth; // animatie opnieuw starten
-      wissel.textContent = namen[i];
-      wissel.classList.add("is-nieuw");
-    }
-
-    function start() {
-      toon();
-      timer = window.setInterval(function () {
-        i = (i + 1) % namen.length;
-        toon();
-      }, WISSEL_MS);
-      knop.setAttribute("aria-pressed", "false");
-    }
-
-    function stop() {
-      window.clearInterval(timer);
-      timer = null;
-      wissel.classList.remove("is-nieuw");
-      wissel.classList.add("is-stil");
-      knop.setAttribute("aria-pressed", "true");
-    }
-
-    knop.addEventListener("click", function () {
-      if (timer) { stop(); } else { start(); }
-    });
-
-    start();
-  }
-
-  // ── 2. De assistent ──────────────────────────────────────
+  // ── 1. De assistent ──────────────────────────────────────
 
   var VOORBEELDEN = [
     "Moeten wij voldoen aan de EAA?",
@@ -309,7 +252,7 @@
     });
   }
 
-  // ── 3. Meting: klikken naar een volgende stap ────────────
+  // ── 2. Meting: klikken naar een volgende stap ────────────
 
   function soortVan(href) {
     if (/\/offerte/.test(href)) return "offerte";
@@ -331,7 +274,6 @@
   }
 
   function init() {
-    startWissel();
     startGroet();
     startVraag();
     startMeting();
