@@ -62,7 +62,7 @@
 </header>
 
 <style>
-  .hm { position: sticky; top: 0; z-index: 50; background: #F4F1EA; border-bottom: 1px solid rgba(31,41,55,0.22); }
+  .hm { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid rgba(31,41,55,0.22); }
   .hm__bar {
     max-width: 1320px; margin: 0 auto; padding: 14px 24px; min-height: 66px;
     display: flex; align-items: center; justify-content: space-between; gap: 20px;
@@ -82,7 +82,7 @@
   .hm__toggle[aria-expanded="true"] .hm__streepjes span:last-child { transform: translateY(-3px) rotate(-45deg); }
   .hm a:focus-visible, .hm button:focus-visible { outline: 3px solid #A30D4B; outline-offset: 3px; }
 
-  .hm__paneel { border-top: 1px solid rgba(31,41,55,0.22); background: #F4F1EA; max-height: calc(100vh - 67px); overflow-y: auto; }
+  .hm__paneel { border-top: 1px solid rgba(31,41,55,0.22); background: #fff; max-height: calc(100vh - 67px); overflow-y: auto; }
   .hm__paneel:not([hidden]) { animation: hm-in 220ms cubic-bezier(0.16,1,0.3,1) both; }
   @keyframes hm-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
   .hm__paneel-inner {

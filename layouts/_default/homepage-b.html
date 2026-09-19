@@ -5,7 +5,8 @@
   Ontwerp: "Homepage D papier" (Claude Design, 19-09-2026).
   Plan en A/B-test: docs/homepage-vernieuwing-ab-test.md.
 
-  Kleuren: papier #F4F1EA, donkerblauw #1F2937, magenta #A30D4B, en #FF66A0
+  Achtergrond wit (Julia, 19-09-2026; het ontwerp had papier #F4F1EA, dat
+  blijft alleen als lichte tekstkleur op donkerblauw). Verder donkerblauw #1F2937, magenta #A30D4B, en #FF66A0
   als lichte magenta op donkerblauw (5,35:1). De grijze tinten uit het ontwerp
   zijn als vaste kleuren uitgerekend, zodat het contrast vaststaat:
   #454D57 (7,6:1) en #5F656D (5,2:1) op papier; #C5C5C3 (8,5:1) en
@@ -223,11 +224,11 @@
 <script src="{{ "js/homepage-b.js" | relURL }}" defer></script>
 
 <style>
-  body:has(.hb) { background: #F4F1EA; }
+  body:has(.hb) { background: #fff; }
   .hb { --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0;
         --tekst: #454D57; --tekst-zacht: #5F656D; --lijn: rgba(31,41,55,0.22);
         --kop: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
-        background: var(--papier); color: var(--navy); }
+        background: #fff; color: var(--navy); }
   .hb-container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
   .hb a:focus-visible, .hb button:focus-visible, .hb input:focus-visible, .hb textarea:focus-visible {
     outline: 3px solid var(--magenta); outline-offset: 3px;
