@@ -111,27 +111,42 @@
 
     <div class="hb-klanten">
       <p class="hb-label"><span aria-hidden="true">01 </span>Klanten</p>
-      <ul class="hb-klanten__namen">
-        <li>Rijksmuseum</li>
-        <li>De Bijenkorf</li>
-        <li>Provincie Noord-Holland</li>
-        <li>Provincie Zuid-Holland</li>
-        <li>NRC</li>
-        <li>Jumbo</li>
-        <li>Plus</li>
-        <li>Crisp</li>
-        <li>Museumvereniging</li>
-        <li>Museumkaart</li>
-        <li>Museum.nl</li>
-        <li>Huis van Hilde</li>
-        <li>IPO</li>
-        <li>Gemeente Amersfoort</li>
-        <li>Gemeente 's-Hertogenbosch</li>
-        <li>Gemeente Alkmaar</li>
-        <li>Eteck</li>
-        <li>Hoplr</li>
-        <li>Mave</li>
-      </ul>
+      <div class="hb-klanten__sectoren">
+        <div>
+          <h3 class="hb-klanten__sector">Cultuur</h3>
+          <ul class="hb-klanten__namen">
+            <li>Rijksmuseum</li>
+            <li>Museumvereniging</li>
+            <li>Museumkaart</li>
+            <li>Museum.nl</li>
+            <li>Huis van Hilde</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hb-klanten__sector">Overheid</h3>
+          <ul class="hb-klanten__namen">
+            <li>Provincie Noord-Holland</li>
+            <li>Provincie Zuid-Holland</li>
+            <li>IPO</li>
+            <li>Gemeente Amersfoort</li>
+            <li>Gemeente 's-Hertogenbosch</li>
+            <li>Gemeente Alkmaar</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hb-klanten__sector">Bedrijfsleven en media</h3>
+          <ul class="hb-klanten__namen">
+            <li>NRC</li>
+            <li>De Bijenkorf</li>
+            <li>Plus</li>
+            <li>Jumbo</li>
+            <li>Crisp</li>
+            <li>Eteck</li>
+            <li>Hoplr</li>
+            <li>Mave</li>
+          </ul>
+        </div>
+      </div>
       <p class="hb-klanten__voet">Cijfers per 7 augustus 2026.</p>
     </div>
   </div>
@@ -408,10 +423,16 @@
   .hb-klanten { padding-top: clamp(28px, 3.5vw, 44px); }
   .hb-klanten__namen {
     list-style: none; margin: 0; padding: 0;
-    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 22px;
+    display: flex; flex-direction: column; gap: 12px;
   }
-  @media (min-width: 48rem) { .hb-klanten__namen { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (min-width: 64rem) { .hb-klanten__namen { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+  .hb-klanten > .hb-label { margin-bottom: 28px; }
+  .hb-klanten__sectoren {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 32px 22px;
+  }
+  .hb-klanten__sector {
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--tekst-zacht); margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--lijn);
+  }
   .hb-klanten__namen li {
     margin: 0; min-width: 0; font-family: var(--kop); font-weight: 800; font-size: clamp(15px, 1.5vw, 19px);
     line-height: 1.2; letter-spacing: -0.4px; color: var(--navy);
