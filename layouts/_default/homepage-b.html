@@ -183,7 +183,7 @@
     </div>
 
     <ul class="hb-diensten__raster">
-      <li class="hb-dienst">
+      <li class="hb-dienst hb-dienst--donker">
         <span class="hb-dienst__nummer" aria-hidden="true">01</span>
         <h3 class="hb-dienst__titel">WCAG-audit en begeleiding</h3>
         <p>Je website of app getest op WCAG 2.2 AA. Je krijgt een rapport per element, met veel voorbeelden, en we denken mee terwijl je team de bevindingen oplost.</p>
@@ -496,6 +496,14 @@
   }
   .hb-dienst p { font-size: 15.5px; line-height: 1.6; color: var(--tekst); margin: 0; flex: 1; }
   .hb-dienst__links { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+  /* De audit is de hoofddienst: donker vlak, witte tekst. Lichte magenta
+     #FF66A0 haalt 5,35:1 op donkerblauw, de gewone magenta niet. */
+  .hb-dienst.hb-dienst--donker { background: var(--navy); color: #fff; padding-left: clamp(20px, 2.5vw, 36px); padding-right: clamp(20px, 2.5vw, 36px); }
+  .hb-dienst--donker:hover { background: var(--navy); }
+  .hb-dienst--donker .hb-dienst__titel, .hb-dienst--donker p, .hb-dienst--donker .hb-dienst__link { color: #fff; }
+  .hb-dienst--donker .hb-dienst__nummer, .hb-dienst--donker .hb-dienst__link span { color: var(--licht-magenta); }
+  .hb-dienst--donker .hb-dienst__link:hover { color: #fff; }
+  .hb .hb-dienst--donker :focus-visible { outline-color: var(--licht-magenta) !important; }
 
   /* 5. Contact */
   .hb-contact { background: var(--magenta); color: #fff; }
