@@ -1,5 +1,5 @@
 # Linkkolommen van de grote footer (partial essentials/footer-groot.html).
-# Staat tijdens de A/B-test alleen onder de B-homepagina (/home-b/), zie
+# Staat onder de homepagina (front matter footer_groot), zie
 # docs/homepage-vernieuwing-ab-test.md. Een pagina toevoegen is één regel.
 # Trainingen staan er bewust niet in: die bieden we sinds 17-09-2026 niet
 # actief aan.
