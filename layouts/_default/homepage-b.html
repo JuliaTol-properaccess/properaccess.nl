@@ -45,6 +45,15 @@
       Wij <a href="/toegankelijkheidsaudit/">testen je site of app op WCAG 2.2 AA</a> en leveren een plan van aanpak waar je morgen mee verder kunt.
       Binnen 5&nbsp;werkdagen reactie op je aanvraag.
     </p>
+    <ul class="hb-bewijs" role="list" aria-label="Wat we gedaan hebben en voor wie">
+      <li class="hb-bewijs__cijfer">950+ audits</li>
+      <li>Rijksmuseum</li>
+      <li>De Bijenkorf</li>
+      <li>Provincie Noord-Holland</li>
+      <li>Provincie Zuid-Holland</li>
+      <li>NRC</li>
+      <li>Plus</li>
+    </ul>
   </div>
 </section>
 
@@ -315,7 +324,19 @@
   .hb-hero__lead {
     font-size: clamp(17px, 1.9vw, 23px); line-height: 1.5; color: var(--tekst);
     margin: clamp(22px, 3vw, 34px) auto 0; max-width: 640px; text-align: center;
-    padding-bottom: clamp(36px, 5vw, 60px);
+  }
+  .hb-bewijs {
+    list-style: none; margin: clamp(28px, 4vw, 44px) auto 0; padding: 18px 0 clamp(28px, 4vw, 40px);
+    border-top: 1px solid rgba(31,41,55,0.22);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 0;
+    font-family: var(--kop); font-weight: 700; font-size: 14px; color: var(--tekst-zacht);
+  }
+  .hb-bewijs li { margin: 0; }
+  .hb-bewijs li + li::before { content: "·"; content: "·" / ""; padding: 0 12px; color: var(--petrol); }
+  .hb-bewijs__cijfer { color: var(--navy); font-weight: 800; }
+  @media (max-width: 48rem) {
+    .hb-bewijs { gap: 8px 20px; }
+    .hb-bewijs li + li::before { content: none; }
   }
   .hb-hero__lead a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--petrol);
     text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
