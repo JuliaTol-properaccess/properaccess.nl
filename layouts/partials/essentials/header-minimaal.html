@@ -1,6 +1,6 @@
 {{/*
   Minimale header: alleen het logo en een menuknop, ook op desktop.
-  Staat op de homepagina (front matter header_minimaal).
+  Staat op elke Nederlandse pagina (zie baseof.html).
   Ontwerp: "Homepage D papier" (Claude Design, 19-09-2026).
   Zie docs/homepage-vernieuwing-ab-test.md.
 
@@ -49,13 +49,16 @@
         <a class="hm__link" href="/eaa/">De EAA</a>
         <a class="hm__link" href="/academy/">Academy</a>
         <a class="hm__link" href="/auditbureau-digitale-toegankelijkheid/">Over ons</a>
-        <a class="hm__link" href="/en/" lang="en" hreflang="en">English</a>
+        {{- $en := "/en/" -}}
+        {{- range .Translations -}}{{- if eq .Language.Lang "en" -}}{{- $en = .RelPermalink -}}{{- end -}}{{- end }}
+        <a class="hm__link" href="{{ $en }}" lang="en" hreflang="en">English</a>
       </div>
       <div class="hm__groep hm__groep--actie">
         <h2 class="hm__groep-titel">Zelf aan de slag</h2>
         <a class="hm__cta" href="/offerte-wcag-onderzoek/">Audit aanvragen</a>
         <a class="hm__link hm__link--vet" href="https://portaal.properaccess.nl/" target="_blank" rel="noopener">Naar het portaal<span class="sr-only"> (opent in een nieuw tabblad)</span></a>
         <a class="hm__telefoon" href="tel:+31855055890">085 5055 890</a>
+        <button type="button" class="hm__zoek" data-target="search-modal">Zoeken in de blog</button>
       </div>
     </div>
   </nav>
@@ -110,6 +113,11 @@
     color: #1F2937; text-decoration: none; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
     font-weight: 800; font-size: 19px;
   }
+  .hm__zoek {
+    background: none; border: 0; padding: 5px 0; min-height: 44px; cursor: pointer; font: inherit; font-size: 15px;
+    font-weight: 700; color: #1F2937; text-decoration: underline; text-underline-offset: 0.2em;
+  }
+  .hm__zoek:hover { color: #A30D4B; }
   @media (prefers-reduced-motion: reduce) {
     .hm__paneel:not([hidden]) { animation: none; }
     .hm__streepjes span { transition: none; }
@@ -131,9 +139,10 @@
     zet(knop.getAttribute("aria-expanded") !== "true");
   });
 
-  // Een link naar een plek op dezelfde pagina sluit het menu.
+  // Een link naar een plek op dezelfde pagina sluit het menu, net als de
+  // zoekknop: het zoekvenster opent dan boven een rustige pagina.
   paneel.addEventListener("click", function (e) {
-    var a = e.target.closest("a[href^='#']");
+    var a = e.target.closest("a[href^='#'], .hm__zoek");
     if (a) zet(false);
   });
 
