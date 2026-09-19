@@ -43,13 +43,17 @@
     {{ partialCached "announcement.html" . }}
 
 
-    <!-- header (don't cache it). header_minimaal: alleen logo en menuknop, zie docs/homepage-vernieuwing-ab-test.md -->
-    {{ if .Params.header_minimaal }}
+    <!-- header (don't cache it). Sinds 19-09-2026 krijgt elke Nederlandse pagina
+         de header en footer van de homepagina: alleen logo en menuknop, en de
+         grote footer. De Engelse site houdt de oude, want die twee zijn in het
+         Nederlands geschreven. -->
+    {{ $nieuw := or (eq site.Language.Lang "nl") .Params.header_minimaal }}
+    {{ if $nieuw }}
       {{ partial "essentials/header-minimaal.html" . }}
     {{ else }}
       {{ partial "essentials/header.html" . }}
-      {{ partial "search-modal.html" (dict "Context" . ) }}
     {{ end }}
+    {{ partial "search-modal.html" (dict "Context" . ) }}
 
 
     <main id="main-content">
@@ -57,7 +61,7 @@
     </main>
 
     <!-- footer -->
-    {{ if .Params.footer_groot }}
+    {{ if or $nieuw .Params.footer_groot }}
       {{ partial "essentials/footer-groot.html" . }}
     {{ else }}
       {{ partial "essentials/footer.html" . }}
