@@ -1,7 +1,7 @@
 ---
 title: "Proper Access: WCAG-audits, tools en advies over digitale toegankelijkheid"
 meta_title: "Digitale toegankelijkheid: WCAG-audits, tools en advies | Proper Access"
-description: "We zijn Proper Access, een team WCAG-fanaten in Amsterdam en Emmeloord. Je kunt bij ons terecht voor een WCAG-audit, eigen tools, consultancy of gewoon een goed gesprek."
+description: "We zijn Proper Access, een team WCAG-experts in Amsterdam en Emmeloord. Je kunt bij ons terecht voor een WCAG-audit, eigen tools, monitoring of gewoon een goed gesprek."
 date: 2026-09-18
 url: "/home-b/"
 layout: "homepage-b"
