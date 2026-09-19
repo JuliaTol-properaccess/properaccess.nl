@@ -15,7 +15,8 @@
   Afwijkingen van het ontwerp, omdat de tekst niet klopte of niet te
   controleren was:
   - klanten: alleen namen uit de goedgekeurde lijst (niet Kixx, Naturalis,
-    Gemeente Almere, Waternet, Stedelijk Museum)
+    Gemeente Almere, Waternet, Stedelijk Museum); Van Gogh Museum weg op
+    verzoek van Julia (19-09-2026)
   - "1 dag reactie" wordt "1 werkdag", zoals op de rest van de site
   - geen "user story en code-advies per bevinding" bij de audit
   - monitoring: de tekst van /automatische-monitoring/, niet "Jira of per mail"
@@ -45,7 +46,7 @@
       <a href="/tools/">tools die toegankelijkheid makkelijker maken</a>,
       <a href="/strippenkaart/">consultancy</a> of gewoon een <a href="#contact">goed gesprek</a>.
     </p>
-    <p class="hb-hero__pauze"><button type="button" class="hb-pauze" hidden aria-pressed="false">Wisselende plaatsnaam stoppen</button></p>
+    <p class="hb-hero__pauze"><button type="button" class="hb-pauze" hidden aria-pressed="false">Beweging stoppen</button></p>
   </div>
 </section>
 
@@ -57,23 +58,6 @@
     <div class="hb-vraag__intro">
       <p class="hb-label hb-label--licht"><span class="hb-label__blokje" aria-hidden="true"></span>De assistent is er</p>
       <h2 class="hb-vraag__titel" id="hb-vraag-titel">Wat wil je weten?</h2>
-      <p class="hb-vraag__groet">
-        <span class="sr-only hb-groet-tekst">Ik ben de assistent van Proper Access. Stel je vraag over WCAG, de EAA, een audit of monitoring. Je krijgt meteen antwoord.</span>
-        <span class="hb-vraag__getypt" aria-hidden="true"></span><span class="hb-vraag__cursor" aria-hidden="true"></span>
-      </p>
-      <p class="hb-vraag__disclaimer">
-        Een AI-assistent antwoordt en kan zich vergissen. Zet geen persoonsgegevens in je vraag.
-        <a href="/privacyverklaring/">Wat we met je vraag doen</a>.
-        Liever meteen een mens? Bel <a href="tel:+31855055890">085 5055 890</a>.
-      </p>
-    </div>
-
-    <div class="hb-vraag__gesprek">
-      <div class="hb-vraag__log" id="hb-vraag-log" role="log" aria-live="polite" aria-label="Gesprek met de assistent"></div>
-      <div class="hb-denkt" id="hb-denkt" hidden>
-        <span class="sr-only">De assistent denkt na</span>
-        <span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span>
-      </div>
 
       <form class="hb-vraag__form" id="hb-vraag-form" novalidate>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
@@ -82,7 +66,7 @@
         <button class="hb-vraag__verstuur" type="submit">Vraag het</button>
       </form>
 
-      <h3 class="sr-only" id="hb-voorbeelden-titel">Voorbeeldvragen</h3>
+      <h3 class="hb-vraag__voorbeelden-titel" id="hb-voorbeelden-titel">Of kies een vraag</h3>
       <ul class="hb-vraag__chips" id="hb-vraag-chips" aria-labelledby="hb-voorbeelden-titel">
         <li><button type="button" class="hb-chip">Moeten wij voldoen aan de EAA?</button></li>
         <li><button type="button" class="hb-chip">Wat kost een WCAG-audit?</button></li>
@@ -91,6 +75,24 @@
       </ul>
 
       <button type="button" class="hb-vraag__opnieuw" id="hb-vraag-opnieuw" hidden>Begin opnieuw</button>
+
+      <p class="hb-vraag__disclaimer">
+        Een AI-assistent antwoordt en kan zich vergissen. Zet geen persoonsgegevens in je vraag.
+        <a href="/privacyverklaring/">Wat we met je vraag doen</a>.
+        Liever meteen een mens? Bel <a href="tel:+31855055890">085 5055 890</a>.
+      </p>
+    </div>
+
+    <div class="hb-vraag__gesprek">
+      <p class="hb-vraag__groet">
+        <span class="sr-only hb-groet-tekst">Ik ben de assistent van Proper Access. Stel je vraag over WCAG, de EAA, een audit of monitoring. Je krijgt meteen antwoord.</span>
+        <span class="hb-vraag__getypt" aria-hidden="true"></span><span class="hb-vraag__cursor" aria-hidden="true"></span>
+      </p>
+      <div class="hb-vraag__log" id="hb-vraag-log" role="log" aria-live="polite" aria-label="Gesprek met de assistent"></div>
+      <div class="hb-denkt" id="hb-denkt" hidden>
+        <span class="sr-only">De assistent denkt na</span>
+        <span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span><span class="hb-denkt__blok" aria-hidden="true"></span>
+      </div>
     </div>
   </div>
 </section>
@@ -101,7 +103,7 @@
   <div class="hb-container">
     <h2 class="sr-only" id="hb-cijfers-titel">Cijfers en klanten</h2>
     <ul class="hb-cijfers__rij">
-      <li><span class="hb-cijfer">950+</span><span class="hb-cijfer__uitleg">audits sinds 2019</span></li>
+      <li><span class="hb-cijfer">950+</span><span class="hb-cijfer__uitleg">audits van websites en apps</span></li>
       <li><span class="hb-cijfer">236</span><span class="hb-cijfer__uitleg">opdrachten uitgevoerd</span></li>
       <li><span class="hb-cijfer">63</span><span class="hb-cijfer__uitleg">opdrachtgevers</span></li>
       <li><span class="hb-cijfer hb-cijfer--woord">1 werkdag</span><span class="hb-cijfer__uitleg">reactie op je aanvraag</span></li>
@@ -119,12 +121,18 @@
         <li>Plus</li>
         <li>Crisp</li>
         <li>Museumvereniging</li>
-        <li>Van Gogh Museum</li>
+        <li>Museumkaart</li>
+        <li>Museum.nl</li>
+        <li>Huis van Hilde</li>
+        <li>IPO</li>
+        <li>Gemeente Amersfoort</li>
+        <li>Gemeente 's-Hertogenbosch</li>
+        <li>Gemeente Alkmaar</li>
+        <li>Eteck</li>
+        <li>Hoplr</li>
+        <li>Mave</li>
       </ul>
-      <p class="hb-klanten__voet">
-        <span>Cijfers per 7 augustus 2026.</span>
-        <a class="hb-pijl-link" href="/klanten/">Meer over onze klanten <span aria-hidden="true">→</span></a>
-      </p>
+      <p class="hb-klanten__voet">Cijfers per 7 augustus 2026.</p>
     </div>
   </div>
 </section>
@@ -165,9 +173,12 @@
       </li>
       <li class="hb-dienst">
         <span class="hb-dienst__nummer" aria-hidden="true">04</span>
-        <h3 class="hb-dienst__titel">Hulp bij de EAA</h3>
-        <p>Moet je voldoen, en waaraan precies? We zoeken uit wat de European Accessibility Act voor jouw product betekent en wat er eerst moet.</p>
-        <a class="hb-dienst__link" href="/hulp-europese-toegankelijkheidswetgeving/">Over de EAA <span aria-hidden="true">→</span></a>
+        <h3 class="hb-dienst__titel">Hulp met digitale toegankelijkheid</h3>
+        <p>Onder welke wet valt je website of app, en wat moet je doen? We zoeken uit of de European Accessibility Act of het Besluit digitale toegankelijkheid overheid voor je geldt, en wat er eerst moet.</p>
+        <span class="hb-dienst__links">
+          <a class="hb-dienst__link" href="/eaa/">De EAA <span aria-hidden="true">→</span></a>
+          <a class="hb-dienst__link" href="/digitale_toegankelijkheid_overheid/">Het BDTO <span aria-hidden="true">→</span></a>
+        </span>
       </li>
     </ul>
   </div>
@@ -178,15 +189,21 @@
 <section class="hb-contact" id="contact" aria-labelledby="hb-contact-titel">
   <div class="hb-container hb-contact__grid">
     <div>
-      <h2 class="hb-contact__titel" id="hb-contact-titel">Zin in een goed gesprek?</h2>
+      <h2 class="hb-contact__titel" id="hb-contact-titel">Kennismaken?</h2>
       <p class="hb-contact__tekst">
         Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
         <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
         Je hoort binnen 1 werkdag van ons.
       </p>
       <ul class="hb-contact__mensen">
-        <li><span class="hb-contact__naam">Julia Tol</span><span class="hb-contact__functie">Directeur</span></li>
-        <li><span class="hb-contact__naam">Phi Pham</span><span class="hb-contact__functie">Projectmanager</span></li>
+        <li class="hb-persoon">
+          <img class="hb-persoon__foto" src="{{ "images/julia.webp" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="hb-contact__naam">Julia Tol</span><span class="hb-contact__functie">Directeur</span></span>
+        </li>
+        <li class="hb-persoon">
+          <img class="hb-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="hb-contact__naam">Phi Pham</span><span class="hb-contact__functie">Projectmanager</span></span>
+        </li>
       </ul>
     </div>
 
@@ -303,21 +320,28 @@
     font-family: var(--kop); font-weight: 800; font-size: clamp(30px, 3.8vw, 52px); line-height: 1.0;
     letter-spacing: -1.8px; margin: 20px 0 0; color: var(--papier);
   }
-  .hb-vraag__groet { font-size: clamp(16px, 1.6vw, 18.5px); line-height: 1.6; margin: 18px 0 0; max-width: 460px; min-height: 90px; }
+  .hb-vraag__groet { font-size: clamp(16px, 1.7vw, 19px); line-height: 1.65; margin: 0; max-width: 36rem; color: #C5C5C3; }
+  .hb-vraag__intro { display: flex; flex-direction: column; gap: 22px; }
+  .hb-vraag__intro .hb-vraag__titel { margin: 0; }
+  .hb-vraag__intro .hb-label { margin: 0 0 -8px; }
+  .hb-vraag__voorbeelden-titel {
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase;
+    color: var(--papier); margin: 8px 0 -12px;
+  }
   .hb-vraag__cursor {
     display: inline-block; width: 2px; height: 18px; background: var(--licht-magenta); vertical-align: -3px;
     margin-left: 2px; animation: hb-cursor 1s step-end infinite;
   }
   @keyframes hb-cursor { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
   .hb-vraag__disclaimer {
-    margin: 22px 0 0; font-size: 12.5px; line-height: 1.55; color: #C5C5C3; max-width: 420px;
+    margin: 0; font-size: 12.5px; line-height: 1.55; color: #C5C5C3; max-width: 420px;
     border-top: 1px solid rgba(244,241,234,0.18); padding-top: 14px;
   }
   .hb-vraag__disclaimer a { color: var(--licht-magenta); text-decoration: underline; text-underline-offset: 0.2em; }
 
   .hb-vraag__gesprek {
     display: flex; flex-direction: column; gap: 22px;
-    border-left: 2px solid var(--papier); padding-left: clamp(18px, 2.5vw, 34px);
+    border-left: 2px solid var(--papier); padding-left: clamp(18px, 2.5vw, 34px); align-self: stretch;
   }
   .hb-vraag__log { display: flex; flex-direction: column; gap: 22px; }
   .hb-vraag__log:empty { display: none; }
@@ -384,8 +408,10 @@
   .hb-klanten { padding-top: clamp(28px, 3.5vw, 44px); }
   .hb-klanten__namen {
     list-style: none; margin: 0; padding: 0;
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: 18px 22px;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 22px;
   }
+  @media (min-width: 48rem) { .hb-klanten__namen { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 64rem) { .hb-klanten__namen { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
   .hb-klanten__namen li {
     margin: 0; min-width: 0; font-family: var(--kop); font-weight: 800; font-size: clamp(15px, 1.5vw, 19px);
     line-height: 1.2; letter-spacing: -0.4px; color: var(--navy);
@@ -449,6 +475,8 @@
     border-top: 1px solid rgba(255,255,255,0.35);
   }
   .hb-contact__mensen li { margin: 0; }
+  .hb-persoon { display: flex; align-items: center; gap: 14px; }
+  .hb-persoon__foto { width: 64px; height: 64px; object-fit: cover; border-radius: 999px; }
   .hb-contact__naam { display: block; font-family: var(--kop); font-weight: 800; font-size: 15px; }
   .hb-contact__functie { display: block; font-size: 13px; color: #F7DCE6; }
 

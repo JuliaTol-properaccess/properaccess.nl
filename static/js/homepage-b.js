@@ -230,6 +230,8 @@
       typen.setAttribute("aria-hidden", "true");
       log.parentNode.insertBefore(typen, log.nextSibling);
 
+      typen.scrollIntoView({ block: "nearest", behavior: minderBeweging ? "auto" : "smooth" });
+
       typ(typen, tekst, function () {
         typen.remove();
         voegToe("antwoord", tekst);
