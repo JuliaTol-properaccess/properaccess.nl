@@ -54,7 +54,8 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - Hercontrole na het oplossen: de prijs hangt af van het aantal bevindingen in het rapport, meestal € 300 tot € 1.100. https://www.properaccess.nl/hercontrole/
 - Nabespreking van het rapport: € 250 per uur
 - Strippenkaart: één strip is één vraag over één onderwerp. Bundels vanaf 10 strippen voor € 250. https://www.properaccess.nl/strippenkaart/
-- Doorlopende monitoring: https://www.properaccess.nl/toegankelijkheids-abonnement/
+- Monitoring van je website: elke maand meten we je hele website automatisch na. Je ziet in één dashboard of je website beter of slechter wordt, wat er nieuw is en wat er is opgelost. https://www.properaccess.nl/automatische-monitoring/
+- Toegankelijkheids-abonnement, voor organisaties met meerdere websites en apps: https://www.properaccess.nl/toegankelijkheids-abonnement/
 - Offerte aanvragen: https://www.properaccess.nl/offerte-wcag-onderzoek/
 
 ## Eigen tools

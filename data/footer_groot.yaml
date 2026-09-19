@@ -8,13 +8,14 @@ kolommen:
   - titel: "Diensten"
     links:
       - { naam: "WCAG-audit", url: "/toegankelijkheidsaudit/" }
+      - { naam: "Monitoring van je website", url: "/automatische-monitoring/" }
       - { naam: "App-audit", url: "/app-toegankelijkheid-testen/" }
       - { naam: "Contentaudit", url: "/contentaudit/" }
       - { naam: "Techniek- of systeemaudit", url: "/techniekaudit/" }
       - { naam: "Hercontrole", url: "/hercontrole/" }
       - { naam: "Mini-audit", url: "/webshop-quickscan/" }
       - { naam: "Strippenkaart", url: "/strippenkaart/" }
-      - { naam: "Doorlopende monitoring", url: "/toegankelijkheids-abonnement/" }
+      - { naam: "Toegankelijkheids-abonnement", url: "/toegankelijkheids-abonnement/" }
       - { naam: "Testen tijdens de bouw", url: "/toegankelijkheid-testen-tijdens-de-bouw/" }
       - { naam: "Hulp bij de EAA", url: "/hulp-europese-toegankelijkheidswetgeving/" }
       - { naam: "Offerte aanvragen", url: "/offerte-wcag-onderzoek/" }
@@ -47,7 +48,6 @@ kolommen:
       - { naam: "De European Accessibility Act", url: "/eaa/" }
       - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
       - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
-      - { naam: "Zo werken wij", url: "/zo-werken-wij/" }
       - { naam: "Academy", url: "/academy/" }
       - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
       - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }
@@ -58,6 +58,7 @@ kolommen:
   - titel: "Over ons"
     links:
       - { naam: "Over Proper Access", url: "/auditbureau-digitale-toegankelijkheid/" }
+      - { naam: "Zo werken wij", url: "/zo-werken-wij/" }
       - { naam: "Klanten", url: "/klanten/" }
       - { naam: "In de media", url: "/in-de-media/" }
       - { naam: "Bijzondere initiatieven", url: "/bijzondere-initiatieven/" }

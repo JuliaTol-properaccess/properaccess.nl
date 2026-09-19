@@ -2,7 +2,7 @@
   Homepagina variant B (layouts/_default/homepage-b.html).
   Drie onderdelen:
   1. De plaatsnaam in de h1 wisselt elke 6 seconden, met een stopknop.
-  2. De vraagsectie: de chat van pa-chat, in de pagina zelf.
+  2. De assistent: de chat van pa-chat, in de pagina zelf, met getypte tekst.
   3. De meting voor de A/B-test: Plausible-event "Homepage stap".
   Zie docs/homepage-vernieuwing-ab-test.md.
 */
@@ -14,15 +14,37 @@
   var MAX_LENGTH = 500;
   var TIMEOUT_MS = 30000;
   var WISSEL_MS = 6000;
+  var TEKENS_PER_SECONDE = 55;
 
   var root = document.querySelector("[data-pa-variant]");
   if (!root) return;
   var variant = root.getAttribute("data-pa-variant");
+  var minderBeweging = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function meet(soort) {
     if (typeof window.plausible === "function") {
       window.plausible("Homepage stap", { props: { variant: variant, soort: soort } });
     }
+  }
+
+  // Typt tekst in een element. Zonder beweging staat de tekst er meteen.
+  function typ(el, tekst, klaar) {
+    if (minderBeweging) {
+      el.textContent = tekst;
+      if (klaar) klaar();
+      return;
+    }
+    var start = performance.now();
+    function stap(nu) {
+      var n = Math.min(tekst.length, Math.floor(((nu - start) / 1000) * TEKENS_PER_SECONDE));
+      if (el.textContent.length !== n) el.textContent = tekst.slice(0, n);
+      if (n < tekst.length) {
+        window.requestAnimationFrame(stap);
+      } else if (klaar) {
+        klaar();
+      }
+    }
+    window.requestAnimationFrame(stap);
   }
 
   // ── 1. Wisselende plaatsnaam ─────────────────────────────
@@ -35,8 +57,7 @@
   function startWissel() {
     var plaats = root.querySelector(".hb-plaats");
     var knop = root.querySelector(".hb-pauze");
-    if (!plaats || !knop) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!plaats || !knop || minderBeweging) return;
 
     var namen = (plaats.getAttribute("data-plaatsen") || "").split("|");
     if (namen.length < 2) return;
@@ -47,26 +68,30 @@
     var timer = null;
 
     vast.classList.add("sr-only");
-    wissel.textContent = namen[0];
     wissel.hidden = false;
     knop.hidden = false;
 
-    function volgende() {
-      i = (i + 1) % namen.length;
-      wissel.classList.remove("is-nieuw");
+    function toon() {
+      wissel.classList.remove("is-nieuw", "is-stil");
       void wissel.offsetWidth; // animatie opnieuw starten
       wissel.textContent = namen[i];
       wissel.classList.add("is-nieuw");
     }
 
     function start() {
-      timer = window.setInterval(volgende, WISSEL_MS);
+      toon();
+      timer = window.setInterval(function () {
+        i = (i + 1) % namen.length;
+        toon();
+      }, WISSEL_MS);
       knop.setAttribute("aria-pressed", "false");
     }
 
     function stop() {
       window.clearInterval(timer);
       timer = null;
+      wissel.classList.remove("is-nieuw");
+      wissel.classList.add("is-stil");
       knop.setAttribute("aria-pressed", "true");
     }
 
@@ -77,24 +102,36 @@
     start();
   }
 
-  // ── 2. Vraagsectie ───────────────────────────────────────
+  // ── 2. De assistent ──────────────────────────────────────
 
   var VOORBEELDEN = [
     "Moeten wij voldoen aan de EAA?",
-    "Wat kost een audit?",
+    "Wat kost een WCAG-audit?",
+    "Wat doet monitoring precies?",
+    "Hoe controleer ik mijn PDF?",
     "Wat doet de WCAG Radar?",
-    "Hoe controleer ik of mijn PDF toegankelijk is?",
     "Wat is het verschil tussen een audit en een mini-audit?",
     "Wat moet er in een toegankelijkheidsverklaring?",
     "Hoe werkt de strippenkaart?",
     "Wat is een hercontrole?"
   ];
+  var DIENSTVRAAG = "Welke dienst past bij ons? We hebben een website en een app.";
 
-  var log, form, invoer, verstuur, chips, opnieuw;
+  var log, form, invoer, verstuur, chips, opnieuw, denkt;
   var berichten = [];
   var gesteld = {};
   var bezig = false;
   var paginas = {};
+
+  function startGroet() {
+    var getypt = root.querySelector(".hb-vraag__getypt");
+    var cursor = root.querySelector(".hb-vraag__cursor");
+    var tekst = root.querySelector(".hb-groet-tekst");
+    if (!getypt || !tekst) return;
+    typ(getypt, tekst.textContent.trim(), function () {
+      if (cursor) cursor.hidden = true;
+    });
+  }
 
   function startVraag() {
     log = document.getElementById("hb-vraag-log");
@@ -102,7 +139,8 @@
     invoer = document.getElementById("hb-vraag-invoer");
     chips = document.getElementById("hb-vraag-chips");
     opnieuw = document.getElementById("hb-vraag-opnieuw");
-    if (!log || !form || !invoer || !chips || !opnieuw) return;
+    denkt = document.getElementById("hb-denkt");
+    if (!log || !form || !invoer || !chips || !opnieuw || !denkt) return;
     verstuur = form.querySelector(".hb-vraag__verstuur");
 
     try {
@@ -123,11 +161,18 @@
       if (chip) stel(chip.textContent.trim(), "vraag-voorbeeld");
     });
 
+    var dienstknop = document.getElementById("hb-vraag-diensten");
+    if (dienstknop) {
+      dienstknop.addEventListener("click", function () {
+        document.getElementById("vraag").scrollIntoView({ behavior: minderBeweging ? "auto" : "smooth" });
+        stel(DIENSTVRAAG, "vraag-diensten");
+      });
+    }
+
     opnieuw.addEventListener("click", function () {
       berichten = [];
       gesteld = {};
       log.innerHTML = "";
-      log.hidden = true;
       opnieuw.hidden = true;
       toonVoorbeelden();
       invoer.focus();
@@ -142,9 +187,9 @@
     voegToe("vraag", tekst);
     berichten.push({ role: "user", content: tekst });
     invoer.value = "";
-
-    var denkt = voegToe("denkt", "Even denken…");
     zetBezig(true);
+    denkt.hidden = false;
+    opnieuw.hidden = false;
 
     var controller = new AbortController();
     var timeout = window.setTimeout(function () { controller.abort(); }, TIMEOUT_MS);
@@ -157,29 +202,44 @@
     })
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        denkt.remove();
         if (data.ok && data.content) {
-          voegToe("antwoord", data.content);
           berichten.push({ role: "assistant", content: data.content });
-        } else {
-          voegToe("fout", data.error || foutTekst());
+          return toonAntwoord(data.content.trim());
         }
+        voegToe("fout", foutTekst());
       })
       .catch(function () {
-        denkt.remove();
         voegToe("fout", foutTekst());
       })
       .finally(function () {
         window.clearTimeout(timeout);
+        denkt.hidden = true;
         zetBezig(false);
-        opnieuw.hidden = false;
         toonVoorbeelden();
-        invoer.focus();
       });
   }
 
+  // Het antwoord wordt zichtbaar getypt in een element dat voor schermlezers
+  // verborgen is. Pas als het af is, komt het echte bericht in het log: zo
+  // hoort een schermlezer het antwoord één keer, in zijn geheel.
+  function toonAntwoord(tekst) {
+    return new Promise(function (klaar) {
+      denkt.hidden = true;
+      var typen = document.createElement("p");
+      typen.className = "hb-bericht hb-bericht--antwoord hb-bericht--typen";
+      typen.setAttribute("aria-hidden", "true");
+      log.parentNode.insertBefore(typen, log.nextSibling);
+
+      typ(typen, tekst, function () {
+        typen.remove();
+        voegToe("antwoord", tekst);
+        klaar();
+      });
+    });
+  }
+
   function foutTekst() {
-    return "Er ging iets mis. Probeer het later opnieuw, of bel ons op 085 5055 890.";
+    return "Daar kom ik nu niet bij. Bel ons op 085 5055 890 of mail naar info@properaccess.nl.";
   }
 
   function zetBezig(aan) {
@@ -189,33 +249,26 @@
   }
 
   function voegToe(rol, tekst) {
-    log.hidden = false;
-    var div = document.createElement("div");
-    div.className = "hb-bericht hb-bericht--" + rol;
+    var p = document.createElement("p");
+    p.className = "hb-bericht hb-bericht--" + rol;
+    if (rol === "antwoord") p.classList.add("hb-bericht--zonder-animatie");
 
     var wie = document.createElement("span");
-    wie.className = "hb-bericht__wie";
-    wie.textContent = rol === "vraag" ? "Jij" : "Proper Access";
-
-    var inhoud = document.createElement("div");
-    inhoud.className = "hb-bericht__tekst";
-    if (rol === "denkt") inhoud.classList.add("hb-denkt");
-    if (rol === "fout") div.setAttribute("role", "alert");
+    wie.className = "sr-only";
+    wie.textContent = rol === "vraag" ? "Jij: " : "Assistent: ";
+    p.appendChild(wie);
 
     if (rol === "antwoord") {
-      vulMetLinks(inhoud, tekst);
+      vulMetLinks(p, tekst);
     } else {
-      inhoud.textContent = tekst;
+      p.appendChild(document.createTextNode(tekst));
     }
-
-    div.appendChild(wie);
-    div.appendChild(inhoud);
-    log.appendChild(div);
-    return div;
+    log.appendChild(p);
+    return p;
   }
 
-  // De chat noemt de pagina met een volledige URL. Die wordt een link met de
-  // naam van de pagina als linktekst; een onbekende pagina houdt het pad.
+  // De chat noemt de pagina met een URL. Die wordt een link met de naam van
+  // de pagina als linktekst; een onbekende pagina houdt het adres.
   function vulMetLinks(el, tekst) {
     var patroon = /(?:https?:\/\/)?(?:www\.)?properaccess\.nl(\/[^\s)]*)?/g;
     var laatste = 0;
@@ -239,9 +292,8 @@
   // Na elk antwoord staan er vier vragen klaar die nog niet gesteld zijn.
   function toonVoorbeelden() {
     var open = VOORBEELDEN.filter(function (v) { return !gesteld[v]; });
-    if (open.length === 0) open = VOORBEELDEN.slice();
-    var start = Object.keys(gesteld).length % open.length;
-    var keuze = open.slice(start).concat(open.slice(0, start)).slice(0, 4);
+    if (open.length < 4) open = VOORBEELDEN.slice();
+    var keuze = open.slice(0, 4);
 
     chips.innerHTML = "";
     keuze.forEach(function (v) {
@@ -261,7 +313,7 @@
     if (/\/offerte/.test(href)) return "offerte";
     if (/\/contact\/|^tel:|^mailto:|#contact$/.test(href)) return "contact";
     if (/\/tools\//.test(href)) return "tool";
-    if (/toegankelijkheidsaudit|audit|hercontrole|strippenkaart|abonnement|testen|webshop-quickscan|europese-toegankelijkheidswetgeving/.test(href)) return "dienst";
+    if (/toegankelijkheidsaudit|audit|monitoring|hercontrole|strippenkaart|abonnement|testen|webshop-quickscan|europese-toegankelijkheidswetgeving/.test(href)) return "dienst";
     return null;
   }
 
@@ -278,6 +330,7 @@
 
   function init() {
     startWissel();
+    startGroet();
     startVraag();
     startMeting();
   }

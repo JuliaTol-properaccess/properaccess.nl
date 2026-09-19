@@ -20,6 +20,8 @@ We zetten de nieuwe pagina niet meteen live. We laten de oude (A) en de nieuwe (
 
 ## Deel 1: variant B
 
+Sinds 19 september 2026 volgt variant B het ontwerp "Homepage D papier" uit Claude Design: een papierkleurige achtergrond, de assistent in een donkerblauw blok met getypte tekst, cijfers en klanten, vier diensten in een raster van 2 bij 2, en een magenta contactblok. Waar de teksten van het ontwerp niet klopten, staat dat bovenaan `layouts/_default/homepage-b.html`. De opbouw hieronder is de oorspronkelijke schets.
+
 ### Opbouw van boven naar beneden
 
 **Header.** Alleen het logo en een menuknop, ook op desktop. De knop opent een paneel met hetzelfde menu als nu (`config/_default/menus.nl.toml`). De zoekknop vervalt, want zoeken zit in de vraagsectie. De knop "Offerte audit" staat onderaan in het paneel.
