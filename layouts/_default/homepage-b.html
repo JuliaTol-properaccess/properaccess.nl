@@ -269,7 +269,7 @@
 
 <style>
   body:has(.hb) { background: #fff; }
-  .hb { --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0;
+  .hb { --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0; --petrol: #004050;
         --tekst: #454D57; --tekst-zacht: #5F656D; --lijn: rgba(31,41,55,0.22);
         --kop: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
         background: #fff; color: var(--navy); }
@@ -303,7 +303,7 @@
   .hb-hero__kenmerken {
     display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: center; text-align: center; margin: 0;
     padding-top: clamp(40px, 6vw, 76px);
-    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--magenta);
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--petrol);
   }
   .hb-hero__kenmerk-grijs { color: var(--tekst-zacht); }
   .hb-hero__titel {
@@ -314,7 +314,8 @@
   .hb-hero__klein { font-size: 0.58em; font-weight: 700; letter-spacing: -1.4px; line-height: 1.05; }
   .hb-hero__klein--ruimte { margin-top: 0.14em; }
   .hb-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
-  .hb-hero__groot--magenta, .hb-plaats { color: var(--magenta); }
+  .hb-hero__groot--magenta { color: var(--magenta); }
+  .hb-plaats { color: var(--petrol); }
   .hb-plaats__wissel { display: inline-block; }
   .hb-plaats__wissel.is-nieuw { animation: hb-plaats 6s ease-in-out both; }
   @keyframes hb-plaats {
@@ -326,9 +327,9 @@
     font-size: clamp(17px, 1.9vw, 23px); line-height: 1.5; color: var(--tekst);
     margin: clamp(22px, 3vw, 34px) auto 0; max-width: 640px; text-align: center;
   }
-  .hb-hero__lead a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--magenta);
+  .hb-hero__lead a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--petrol);
     text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
-  .hb-hero__lead a:hover { color: var(--magenta); }
+  .hb-hero__lead a:hover { color: var(--petrol); }
   .hb-hero__pauze { text-align: center; margin: 12px 0 0; padding-bottom: clamp(36px, 5vw, 60px); }
   .hb-pauze {
     background: none; border: 0; padding: 10px 4px; min-height: 44px; cursor: pointer;
