@@ -2,6 +2,8 @@
 title: "outline: none, de meest destructieve regel in CSS"
 date: 2026-03-17
 slug: "sc-2-4-7-outline-none"
+aliases:
+  - "/blog/sc-2-4-7-outline-none-de-meest-destructieve-regel-in-css/"
 categories:
   - "wcag-uitgelegd"
 tags:

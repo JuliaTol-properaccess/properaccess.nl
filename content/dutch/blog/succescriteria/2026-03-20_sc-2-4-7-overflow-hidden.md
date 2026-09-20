@@ -2,6 +2,8 @@
 title: "overflow: hidden knipt de focusindicator af"
 date: 2026-03-20
 slug: "sc-2-4-7-overflow-hidden"
+aliases:
+  - "/blog/sc-2-4-7-overflow-hidden-knipt-de-focusindicator-af/"
 categories:
   - "wcag-uitgelegd"
 tags:
