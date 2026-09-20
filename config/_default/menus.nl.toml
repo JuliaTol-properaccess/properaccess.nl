@@ -9,7 +9,7 @@ hasChildren = true
 [[main]]
 parent = "Voor wie"
 name = "Overheid"
-url = "/digitale_toegankelijkheid_overheid/"
+url = "/digitale-toegankelijkheid-overheid/"
 weight = 1
 
 [[main]]
@@ -33,7 +33,7 @@ weight = 4
 [[main]]
 parent = "Voor wie"
 name = "Digital Agency"
-url = "/digital_agency/"
+url = "/digital-agency/"
 weight = 5
 
 [[main]]

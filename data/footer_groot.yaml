@@ -22,13 +22,14 @@ kolommen:
 
   - titel: "Voor wie"
     links:
-      - { naam: "Overheid", url: "/digitale_toegankelijkheid_overheid/" }
+      - { naam: "Overheid", url: "/digitale-toegankelijkheid-overheid/" }
       - { naam: "Cultuur, sport en attracties", url: "/inclusie-cultuur-sport-en-attracties/" }
       - { naam: "E-commerce", url: "/e-commerce-digitale-toegankelijkheid/" }
       - { naam: "Financiële instellingen", url: "/financiele-instellingen-digitale-toegankelijkheid/" }
-      - { naam: "Digital agencies", url: "/digital_agency/" }
+      - { naam: "Digital agencies", url: "/digital-agency/" }
       - { naam: "Onderwijs", url: "/onderwijs-digitale-toegankelijkheid/" }
       - { naam: "Resellers", url: "/reseller-programma/" }
+      - { naam: "Alle sectoren op een rij", url: "/sectoren/" }
 
   - titel: "Tools"
     links:
