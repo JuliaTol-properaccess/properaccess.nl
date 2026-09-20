@@ -3031,7 +3031,7 @@ html.dark .tool-contrast__size-row input[type="range"] {
 
 .tool-contrast__size-hint {
   font-size: 0.7rem;
-  opacity: 0.6;
+  color: #5b6270;
   flex-shrink: 0;
 }
 
@@ -3131,7 +3131,7 @@ html.dark .tool-contrast__row-label { color: var(--color-darkmode-text); }
 
 .tool-contrast__row-threshold {
   font-size: 0.8125rem;
-  color: #888;
+  color: #5b6270;
   font-family: monospace;
 }
 
@@ -9559,7 +9559,7 @@ html.dark .tool-fout__example--good {
   display: block;
   font-size: 0.7rem;
   margin-bottom: 0.35rem;
-  opacity: 0.7;
+  color: #5b6270;
 }
 
 .tool-fout__example--bad .tool-fout__example-label {
@@ -10457,7 +10457,8 @@ html.dark .tool-fout__level {
 }
 
 .academy__content-body .academy-example__good .academy-example__label {
-  color: #16a34a;
+  /* #16a34a haalde op 12px maar 3,30:1; deze tint haalt 5,02:1 */
+  color: #15803d;
 }
 
 .academy__content-body .academy-example__bad .academy-example__label {
@@ -14533,7 +14534,6 @@ body.pa-chat--open {
   color: #fff;
 }
 .blog-filter__count {
-  opacity: 0.7;
   font-size: 0.9em;
 }
 
@@ -16266,7 +16266,7 @@ html.dark .tool-spacing__slider input[type="range"] { accent-color: #A30D4B; }
 .tool-spacing__slider-min {
   display: block;
   font-size: 0.72rem;
-  opacity: 0.65;
+  color: #5b6270;
   margin-top: 0.15rem;
 }
 
@@ -18269,7 +18269,7 @@ html.dark .contrast-voorbeeld__swatch {
 .pdfann-slot__tekst {
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: var(--pa-text-muted);
+  color: #d7dbe2;
   margin: 0;
 }
 
@@ -19889,4 +19889,180 @@ textarea.hp-form__input {
     display: block;
     overflow-x: auto;
   }
+}
+
+/* ==========================================================================
+   Codeblokken: syntax highlighting die WCAG 2.2 AA haalt
+
+   Het Chroma-thema monokai bleef onder 4,5:1 (roze 3,92:1 en commentaargrijs
+   3,02:1 op #272822). Daarom een eigen palet op het donkerblauw uit de
+   huisstijl. Elke kleur hieronder is nagerekend tegen #1F2937 en haalt
+   minstens 5,7:1. Aanzetten gebeurt met noClasses = false in hugo.toml.
+   ========================================================================== */
+
+.highlight pre.chroma,
+pre.chroma {
+  color: #f5f5f5;
+  background-color: #1f2937;
+}
+
+/* Achtergrond van het omhullende blok, voor de zeldzame .bg-variant */
+.chroma .bg {
+  color: #f5f5f5;
+  background-color: #1f2937;
+}
+
+/* Regelnummers en regelmarkering */
+.chroma .lnt,
+.chroma .ln {
+  color: #9ba3ae;
+  white-space: pre;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em;
+}
+.chroma .hl {
+  background-color: #33404f;
+}
+.chroma .line {
+  display: flex;
+}
+.chroma .lnlinks {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Fout */
+.chroma .err {
+  color: #ff9a9a;
+}
+
+/* Sleutelwoorden: lichtblauw, 9,30:1 */
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt {
+  color: #8fd8f5;
+}
+
+/* HTML-tags, namespaces en operatoren: roze, 6,86:1 */
+.chroma .kn,
+.chroma .nt,
+.chroma .o,
+.chroma .ow {
+  color: #ff8fb1;
+}
+
+/* Namen van attributen, functies en klassen: groen, 10,13:1 */
+.chroma .na,
+.chroma .nc,
+.chroma .nd,
+.chroma .ne,
+.chroma .nf,
+.chroma .nx,
+.chroma .fm {
+  color: #a5e887;
+}
+
+/* Constanten en ingebouwde namen: lichtblauw, 9,30:1 */
+.chroma .no,
+.chroma .bp,
+.chroma .nb {
+  color: #8fd8f5;
+}
+
+/* Strings: geel, 10,41:1 */
+.chroma .l,
+.chroma .ld,
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+  color: #edd98a;
+}
+
+/* Getallen en escapes: paars, 7,68:1 */
+.chroma .se,
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #c9aeff;
+}
+
+/* Commentaar: grijs, 7,75:1. Cursief zodat het ook zonder kleur opvalt. */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #b6bdc7;
+  font-style: italic;
+}
+
+/* Diff-regels: de tekens + en - dragen de betekenis, niet alleen de kleur */
+.chroma .gd {
+  color: #ff9a9a;
+}
+.chroma .gi {
+  color: #a5e887;
+}
+.chroma .ge {
+  font-style: italic;
+}
+.chroma .gs {
+  font-weight: bold;
+}
+.chroma .gh,
+.chroma .gu,
+.chroma .gp {
+  color: #b6bdc7;
+}
+.chroma .gl {
+  text-decoration: underline;
+}
+.chroma .gt {
+  color: #ff9a9a;
+}
+
+/* Overige naamvarianten die Chroma kan afgeven */
+.chroma .nl,
+.chroma .nn,
+.chroma .py,
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm,
+.chroma .w {
+  color: #f5f5f5;
 }
