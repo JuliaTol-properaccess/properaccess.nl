@@ -6,6 +6,8 @@ weight: 12
 date: 2026-08-14
 slug: "hulp-europese-toegankelijkheidswetgeving"
 url: "/hulp-bij-europese-toegankelijkheidswetgeving/"
+aliases:
+  - "/hulp-europese-toegankelijkheidswetgeving/"
 description: "Hulp bij digitale toegankelijkheid, van onderzoek tot verantwoording. Welke wet voor je geldt, wat voldoen in de praktijk vraagt, en wie welke stap voor je doet. Voor webshops, overheidsorganisaties en softwareleveranciers."
 tldr: |
   Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.250 of losse vragen vanaf € 20.
