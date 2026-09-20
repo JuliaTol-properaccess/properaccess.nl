@@ -20,7 +20,7 @@ aliases:
   - /sc-1-4-5-wat-betekent-afbeeldingen-van-tekst/
 ---
 
-# WCAG 1.4.5 Afbeeldingen van tekst: waarom je tekst nooit als plaatje mag gebruiken
+## WCAG 1.4.5 Afbeeldingen van tekst: waarom je tekst nooit als plaatje mag gebruiken
 
 Je designer heeft een prachtige header gemaakt. Goed verkopende tekst, perfecte kleurverloop, precies het juiste effect. Hij levert een JPG aan. Klaar, toch?
 
@@ -382,12 +382,12 @@ En dat is alleen je header.
 
 **Checklist bij het bouwen:**
 
-- [ ] Alle tekst is echte HTML-tekst
-- [ ] Webfonts zijn geïmplementeerd met fallbacks
-- [ ] CSS-effecten zijn getest in verschillende browsers
-- [ ] Tekst blijft leesbaar bij 200% zoom
-- [ ] Dark mode werkt (als je dat ondersteunt)
-- [ ] Focus-stijlen zijn zichtbaar
+- Alle tekst is echte HTML-tekst
+- Webfonts zijn geïmplementeerd met fallbacks
+- CSS-effecten zijn getest in verschillende browsers
+- Tekst blijft leesbaar bij 200% zoom
+- Dark mode werkt (als je dat ondersteunt)
+- Focus-stijlen zijn zichtbaar
 
 **Bonus tip:** Gebruik CSS Custom Properties voor je typografie:
 

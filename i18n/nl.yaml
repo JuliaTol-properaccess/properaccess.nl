@@ -1,3 +1,5 @@
+- id: main_menu
+  translation: "Hoofdmenu"
 - id: article_updated
   translation: "Bijgewerkt:"
 - id: reading_time

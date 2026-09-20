@@ -36,7 +36,7 @@
       principle333dd: "Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond \u2014 tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.",
       ctaLine1: "Wil je weten of de foutmeldingen op jouw website voldoen aan de WCAG-richtlijnen?",
       ctaLine2: "<a href=\"/contact/\">Vraag een audit aan</a> of bel <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
-      langLabel: "Switch to English"
+      langLabel: "NL EN, switch to English"
     },
     en: {
       toolTitle: "Error messages reference",
@@ -62,7 +62,7 @@
       principle333dd: "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user \u2014 unless it would jeopardize the security or purpose of the content.",
       ctaLine1: "Want to know if the error messages on your website comply with WCAG guidelines?",
       ctaLine2: "<a href=\"/contact/\">Request an audit</a> or call <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
-      langLabel: "Schakel naar Nederlands"
+      langLabel: "NL EN, schakel naar Nederlands"
     }
   };
 

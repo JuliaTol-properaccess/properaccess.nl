@@ -27,7 +27,7 @@ aliases:
   - /sc-1-4-11-wat-betekent-contrast-UI/
 ---
 
-# Non-text Contrast: waarom je formuliervelden, knoppen en iconen onzichtbaar zijn voor slechtzienden (WCAG 1.4.11)
+## Non-text Contrast: waarom je formuliervelden, knoppen en iconen onzichtbaar zijn voor slechtzienden (WCAG 1.4.11)
 
 Je staat met je telefoon in de felle zon voor een museum. Je wilt tickets kopen, maar het formulier op de website is nauwelijks zichtbaar. Invoervelden met lichtgrijze randjes, knoppen die opgaan in de achtergrond: je tuurt, draait je scherm, houdt je hand erboven. Uiteindelijk geef je het op en sluit je aan bij de rij voor de kassa.
 
@@ -356,33 +356,33 @@ Doorloop deze lijst voor elk component:
 
 ### Invoervelden
 
-- [ ] Heeft die rand een contrast van minimaal 3:1 tegen de achtergrond?
-- [ ] Is de focus-indicator zichtbaar én heeft die 3:1 contrast? Met alle achtergronden van je website? Echt alles getest? Dit is best arbeidsintensief. Beter is gewoon de browserfocus te gebruiken.
+- Heeft die rand een contrast van minimaal 3:1 tegen de achtergrond?
+- Is de focus-indicator zichtbaar én heeft die 3:1 contrast? Met alle achtergronden van je website? Echt alles getest? Dit is best arbeidsintensief. Beter is gewoon de browserfocus te gebruiken.
 
 ### Knoppen
 
-- [ ] Heeft de knop een icoon en geen tekst? Dan moet het icoon voldoen. Vaak zie je op desktop een knop met een icoon en tekst, bijvoorbeeld "Zoek" en op een klein scherm alleen het icoon. Je moet het icoon alleen in het tweede geval testen.
-- [ ] Is de focus-indicator zichtbaar met 3:1 contrast?
+- Heeft de knop een icoon en geen tekst? Dan moet het icoon voldoen. Vaak zie je op desktop een knop met een icoon en tekst, bijvoorbeeld "Zoek" en op een klein scherm alleen het icoon. Je moet het icoon alleen in het tweede geval testen.
+- Is de focus-indicator zichtbaar met 3:1 contrast?
 
 ### Checkboxes en radiobuttons
 
-- [ ] Is de omtrek van de checkbox/radiobutton zichtbaar met 3:1 contrast?
-- [ ] Is de aangevinkte status (vinkje, gevulde cirkel) zichtbaar met 3:1 contrast?
+- Is de omtrek van de checkbox/radiobutton zichtbaar met 3:1 contrast?
+- Is de aangevinkte status (vinkje, gevulde cirkel) zichtbaar met 3:1 contrast?
 
 ### Iconen
 
-- [ ] Staat naast het icoon een tekst? Zo niet: heeft het icoon 3:1 contrast?
-- [ ] Draagt het icoon betekenis? Dan moet het contrast voldoen.
+- Staat naast het icoon een tekst? Zo niet: heeft het icoon 3:1 contrast?
+- Draagt het icoon betekenis? Dan moet het contrast voldoen.
 
 ### Toggle switches
 
-- [ ] Heeft de uit-status 3:1 contrast tegen de achtergrond?
-- [ ] Is het verschil tussen aan en uit duidelijk herkenbaar?
+- Heeft de uit-status 3:1 contrast tegen de achtergrond?
+- Is het verschil tussen aan en uit duidelijk herkenbaar?
 
 ### Grafieken
 
-- [ ] Hebben lijnen, segmenten en datapunten 3:1 contrast?
-- [ ] Gebruik je naast kleur ook patronen of labels om onderscheid te maken?
+- Hebben lijnen, segmenten en datapunten 3:1 contrast?
+- Gebruik je naast kleur ook patronen of labels om onderscheid te maken?
 
 ## Het verschil met SC 1.4.3 (tekstcontrast)
 

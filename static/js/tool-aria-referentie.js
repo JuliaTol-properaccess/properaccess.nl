@@ -1770,7 +1770,7 @@
       noResultsTip: 'Tip: probeer een Engelse naam (bijv. "button") of een ARIA-attribuut (bijv. "aria-label").',
       resultsSingular: "resultaat",
       resultsPlural: "resultaten",
-      langLabel: "Switch to English"
+      langLabel: "NL EN, switch to English"
     },
     en: {
       toolTitle: "ARIA Roles & Attributes Reference",
@@ -1801,7 +1801,7 @@
       noResultsTip: 'Tip: try a role name (e.g. "button") or an ARIA attribute (e.g. "aria-label").',
       resultsSingular: "result",
       resultsPlural: "results",
-      langLabel: "Schakel naar Nederlands"
+      langLabel: "NL EN, schakel naar Nederlands"
     }
   };
 
