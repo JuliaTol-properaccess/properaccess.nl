@@ -1,0 +1,788 @@
+{{ define "main" }}
+{{/*
+  De pagina over monitoring, /automatische-monitoring/.
+
+  Doelgroep sinds 20 september 2026: bedrijven en organisaties die willen weten
+  hoe hun website ervoor staat. Dus niet alleen toegankelijkheid: de zeven
+  onderwerpen staan naast elkaar, in de volgorde waarin het portaal ze toont.
+
+  Bron voor alle cijfers en checks: ~/git/properaccess-portaal/docs
+  (PLAN-DIMENSIES.md, LICHTE-MONITORING.md, DEKKING-LICHTE-MONITORING.md,
+  PROPERWEBSITE-MARKETING.md) en de modules in app/dimensies/. Wijzigt daar
+  iets, dan wijzigt het hier ook.
+
+  De vorige versie staat in monitoring-los.html: een losse pagina zonder header
+  en footer, met de statussen beschikbaar, in test en gepland. Die opzet paste
+  bij een productblad voor testers, niet bij een pagina die iedereen leest.
+*/}}
+<div class="mo">
+
+<!-- ════════════════ 1. HERO ════════════════ -->
+<section class="mo-hero">
+  <div class="mo-container">
+    <p class="mo-hero__kenmerken">
+      <span>Elke maand</span>
+      <span class="mo-hero__kenmerk-grijs">Je hele website</span>
+      <span class="mo-hero__kenmerk-grijs">7 onderwerpen</span>
+    </p>
+    <h1 class="mo-hero__titel">
+      <span class="mo-hero__groot">Hoe staat je website ervoor?</span>
+      <span class="mo-hero__klein">Elke maand gemeten, elke pagina.</span>
+    </h1>
+    <p class="mo-hero__lead">
+      We lopen maandelijks je hele website langs met een echte browser en meten zeven onderwerpen door:
+      toegankelijkheid, vindbaarheid in zoekmachines, vindbaarheid door AI, snelheid, duurzaamheid,
+      kapotte links en de beveiliging van de verbinding. In het dashboard zie je per onderwerp wat er
+      nieuw is, wat er is opgelost en waar het al maanden hetzelfde blijft.
+    </p>
+    <p class="mo-hero__knoppen">
+      <a class="mo-knop" href="#contact">Vraag monitoring aan</a>
+      <a class="mo-knop mo-knop--tekst" href="#onderwerpen">Bekijk wat we meten <span aria-hidden="true">↓</span></a>
+    </p>
+    <ul class="mo-bewijs" role="list" aria-label="Wat monitoring omvat">
+      <li class="mo-bewijs__cijfer">Tot 3.000 pagina's per website</li>
+      <li>Te bestellen vanaf 15 oktober 2026</li>
+      <li>Alles op servers in de EU</li>
+      <li>950+ audits sinds 2019</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 2. WAAROM ════════════════ -->
+<section class="mo-waarom" aria-labelledby="mo-waarom-titel">
+  <div class="mo-container mo-waarom__grid">
+    <div>
+      <p class="mo-label"><span aria-hidden="true">01 </span>Waarom</p>
+      <h2 class="mo-h2" id="mo-waarom-titel">Je website verandert elke week</h2>
+      <p class="mo-tekst">
+        Een redacteur plaatst een pagina, een ontwikkelaar zet een nieuwe versie live, een leverancier
+        past een formulier aan. Elk van die wijzigingen kan iets breken dat vorige maand nog in orde was.
+        Een onderzoek laat zien hoe je website er op dat moment voor stond. Over de maanden daarna zegt
+        het niets.
+      </p>
+      <p class="mo-tekst">
+        Een meting loopt over elke pagina, en dat is wat handwerk niet kan. Daardoor zie je twee dingen
+        die je uit een onderzoek niet haalt: hoe groot een probleem is, en welke kant het op gaat.
+      </p>
+    </div>
+    <div class="mo-kaart mo-kaart--bewijs">
+      <h3 class="mo-kaart__titel">Wat één meting liet zien</h3>
+      <p class="mo-kaart__intro">Een website op het platform Pleio, gemeten op 22 augustus 2026 en naast
+        het handmatige onderzoek van dezelfde site gelegd.</p>
+      <ul class="mo-feiten">
+        <li><strong>500 pagina's</strong> gemeten, tegenover een steekproef van 15 in het onderzoek.</li>
+        <li><strong>276 meldingen</strong> kwamen terug tot <strong>51 oorzaken</strong>. Dat zijn 51 dingen om te repareren.</li>
+        <li><strong>Eén fout in een component stond op 70 pagina's.</strong> Je repareert één ding en lost 70 pagina's op.</li>
+      </ul>
+      <p class="mo-kaart__voet">De onderbouwing van deze cijfers staat in ons eigen meetverslag van 22 augustus 2026.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 3. HET DASHBOARD ════════════════ -->
+<section class="mo-dashboard" aria-labelledby="mo-dashboard-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">02 </span>Het dashboard</p>
+    <h2 class="mo-h2" id="mo-dashboard-titel">Wat je elke maand ziet</h2>
+
+    <figure class="mo-figuur">
+      <img src="/images/automatische-monitoring/dashboard.jpg"
+           alt="Het dashboard van één website. Bovenaan tegels met de stand per onderwerp: toegankelijkheid 60 van 100 met plus 5, zoekmachines 33,3%, vindbaar door AI 2 van 3, duurzaamheid en open meldingen. Daaronder een grafiek met het verloop per maand en de verdeling van de meldingen over kritiek, ernstig, gemiddeld en klein."
+           width="1800" height="948">
+      <figcaption>Het dashboard van één website. Schermafdruk van een testwebsite met expres ingebouwde fouten.</figcaption>
+    </figure>
+
+    <ul class="mo-raster" role="list">
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Een stand per onderwerp</h3>
+        <p>Elk onderwerp heeft zijn eigen eenheid: een score van 0 tot 100, een percentage, een aantal voorwaarden, seconden of grammen. Bovenaan staan ze naast elkaar.</p>
+      </li>
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Een lijn per onderwerp</h3>
+        <p>Na elke ronde komt er een punt bij. Zo zie je maand na maand welke kant het op gaat, en of een reparatie in de cijfers terugkomt.</p>
+      </li>
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Nieuw, nog open en opgelost</h3>
+        <p>Per ronde zie je wat erbij kwam, wat bleef en wat verdween. Iets telt pas als opgelost wanneer de pagina in die ronde ook echt gemeten is.</p>
+      </li>
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Een actielijst op oorzaak</h3>
+        <p>Dezelfde fout in een sjabloon is één regel in de lijst, ook als hij op 70 pagina's staat. Daarachter staat op welke pagina's hij voorkomt.</p>
+      </li>
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Wat we niet konden meten</h3>
+        <p>Een pagina achter een inlog, achter een cookiemelding of met een serverfout krijgt geen oordeel. Hij staat apart, met de reden erbij, en nooit als "in orde".</p>
+      </li>
+      <li class="mo-kaart">
+        <h3 class="mo-kaart__titel">Export naar je eigen werklijst</h3>
+        <p>Per onderwerp of alles samen, als CSV, Excel of PDF. Wat op het scherm staat, staat in het bestand.</p>
+      </li>
+    </ul>
+
+    <div class="mo-uitgelicht">
+      <h3 class="mo-uitgelicht__titel">Er is bewust geen totaalcijfer</h3>
+      <p>Scores over verschillende onderwerpen bij elkaar optellen levert een getal op dat niets zegt. Erger:
+        een goed gemiddelde verbergt juist het onderwerp waar het misgaat. Elk onderwerp houdt daarom zijn
+        eigen stand in zijn eigen eenheid.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 4. DE ZEVEN ONDERWERPEN ════════════════ -->
+<section class="mo-onderwerpen" id="onderwerpen" aria-labelledby="mo-onderwerpen-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">03 </span>Wat we meten</p>
+    <h2 class="mo-h2" id="mo-onderwerpen-titel">De zeven onderwerpen</h2>
+    <p class="mo-intro">
+      Je kiest per website welke onderwerpen je afneemt. Bij elk onderwerp staat erbij wat het niet meet,
+      want dat voorkomt een verwachting die we later niet waarmaken. Toegankelijkheid kun je vanaf
+      15 oktober 2026 bestellen. De andere zes draaien nu in echte rondes op onze eigen website; we laten
+      weten zodra je ze kunt afnemen.
+    </p>
+
+    <ul class="mo-modules" role="list">
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Toegankelijkheid</h3>
+          <p class="mo-module__eenheid">Score van 0 tot 100</p>
+          </div>
+          <p class="mo-module__status mo-module__status--nu">Vanaf 15 oktober 2026</p>
+        </div>
+        <p>Elke pagina wordt met een echte browser geopend en getoetst tegen WCAG 2.1 niveau A en AA en
+          WCAG 2.2 niveau AA. De score is een dichtheid: openstaande problemen per gemeten pagina, waarbij
+          een ernstig probleem zwaarder telt. Groeit je website, dan blijft de score vergelijkbaar met
+          vorige maanden. Per melding staat er op welke pagina hij zit, om welk element het gaat, wat
+          eraan mankeert en hoe je dat element terugvindt in je browser.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> een audit. Een machine bereikt maar een
+          deel van de succescriteria; de rest vraagt een mens. Zie hieronder bij de grenzen.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Vindbaarheid in zoekmachines</h3>
+          <p class="mo-module__eenheid">Percentage pagina's zonder bevinding</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>Per pagina lopen we 14 controles langs. Is er een titel, en is die niet te lang voor de
+          zoekresultaten? Is er een omschrijving? Is er precies één hoofdkop? Staat de taal van de pagina
+          erbij? Klopt het voorkeursadres, of wijst het naar een andere pagina? Vraagt de pagina per
+          ongeluk om uit de zoekresultaten te blijven? Laadt de pagina, en stuurt het adres niet te vaak
+          door? Over de hele website zoeken we daarnaast titels en omschrijvingen die dubbel staan.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> advies over welke woorden je gebruikt of
+          hoe je hoger komt dan een concurrent. We meten of de techniek onder je pagina klopt.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Vindbaarheid door AI</h3>
+          <p class="mo-module__eenheid">Aantal voorwaarden, bijvoorbeeld 7 van 9</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>Twee vragen. Mag een AI-crawler binnen, en staat er op de pagina genoeg om iets mee te doen?
+          Voor het eerste lezen we je robots.txt voor 11 crawlers, waaronder GPTBot en OAI-SearchBot van
+          OpenAI, ClaudeBot en Claude-SearchBot van Anthropic, PerplexityBot, Google-Extended,
+          Applebot-Extended en CCBot van Common Crawl. Per crawler staat erbij van wie hij is en wat hij
+          doet. Voor het tweede kijken we naar de pagina zelf: is er een llms.txt, staan er gestructureerde
+          gegevens en kloppen die, is de tekst ook te lezen zonder JavaScript, en begint de pagina met een
+          antwoord dat op zichzelf staat.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> een belofte dat je vaker genoemd wordt in
+          AI-antwoorden. We meten of de deur openstaat en of er iets leesbaars achter die deur ligt. Een
+          crawler die je bewust blokkeert, telt als advies en niet als fout.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Snelheid</h3>
+          <p class="mo-module__eenheid">Seconden tot het grootste element verschijnt</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>We draaien Lighthouse op een steekproef van je pagina's, drie keer per pagina, en nemen de
+          middelste uitkomst. Het getal is de mediaan over de gemeten pagina's, gemeten alsof iemand je
+          website op een mobiele telefoon opent. Daarbij zie je hoeveel de inhoud verspringt tijdens het
+          laden, hoe lang scripts de pagina bezighouden, en de verbeterpunten die Lighthouse noemt met de
+          winst die eraan hangt.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> een uitspraak dat je website slaagt voor
+          de Core Web Vitals van Google. Eén van die drie waarden gaat over het reageren op een klik, en in
+          een meting zonder bezoeker klikt niemand. Die meten we dus niet.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Duurzaamheid</h3>
+          <p class="mo-module__eenheid">Gram CO<sub>2</sub>e per paginabezoek, plus een beoordeling van A+ tot F</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>Een schatting van de uitstoot per paginabezoek, op basis van hoeveel data een nieuwe bezoeker
+          binnenhaalt. Het rekenmodel is het Sustainable Web Design Model versie 4, hetzelfde model dat de
+          Green Web Foundation gebruikt. Daarbij controleren we of de server tekstbestanden comprimeert,
+          of vaste bestanden een cache-instelling hebben, of er video vanzelf start, of afbeeldingen laden
+          voordat iemand scrolt, hoeveel lettertypebestanden de pagina ophaalt, hoeveel data van andere
+          partijen komt, en of de hosting op groene stroom draait.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> een meting van het werkelijke
+          energieverbruik. Het is een schatting uit een model. Wat de servers echt verbruiken, meten wij niet.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Kapotte links</h3>
+          <p class="mo-module__eenheid">Percentage werkende links</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>Elk adres op je website vragen we één keer op. Je ziet links naar eigen pagina's die er niet
+          zijn, links naar andere websites die verdwenen zijn, en adressen waar de server een fout geeft.
+          In de actielijst staat welk adres kapot is en op welke pagina de link staat.</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> volledig. Een adres dat niet reageert
+          levert geen melding op, want dat zegt niets over het adres zelf. Zo'n link telt als niet
+          gecontroleerd, en dat aantal staat erbij.</p>
+      </li>
+
+      <li class="mo-module">
+        <div class="mo-module__zij">
+          <div class="mo-module__kop">
+          <h3 class="mo-module__titel">Beveiliging van de verbinding</h3>
+          <p class="mo-module__eenheid">Aantal van 8 instellingen</p>
+          </div>
+          <p class="mo-module__status">In test</p>
+        </div>
+        <p>We lezen welke instructies je server met een pagina meestuurt. Gaat de pagina over een beveiligde
+          verbinding? Krijgt de browser te horen dat hij https moet gebruiken? Staat er een regel voor wat
+          de pagina mag laden? Raadt de browser zelf wat voor bestand hij binnenkrijgt? Bepaal je zelf wat
+          er over je bezoeker meegaat naar een andere website? Mag een andere website je pagina in een
+          venster tonen? Ligt vast welke apparaatfuncties de pagina mag gebruiken? En verraden de headers
+          een versienummer van de server?</p>
+        <p class="mo-module__niet"><strong>Wat het niet is:</strong> een uitspraak over de veiligheid van je
+          website. Staan alle 8 instellingen er, dan zegt dat niets over een lek in je inlogscherm, een
+          verouderd systeem of een gestolen wachtwoord.</p>
+      </li>
+
+    </ul>
+
+    <figure class="mo-figuur mo-figuur--smal">
+      <img src="/images/automatische-monitoring/k05-melding.jpg" loading="lazy"
+           alt="De detailpagina van de melding Afbeelding zonder alt-tekst, met de pagina waar het staat, hoe je het element terugvindt, het stukje HTML en de regel die erbij hoort."
+           width="1800" height="1327">
+      <figcaption>Eén melding uitgeklapt: wat er misgaat, waar het staat en hoe je het terugvindt.</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- ════════════════ 5. HOE DE METING WERKT ════════════════ -->
+<section class="mo-werkwijze" aria-labelledby="mo-werkwijze-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">04 </span>Hoe het werkt</p>
+    <h2 class="mo-h2" id="mo-werkwijze-titel">Wat er in een ronde gebeurt</h2>
+
+    <ol class="mo-stappen" role="list">
+      <li class="mo-stap">
+        <span class="mo-stap__nummer" aria-hidden="true">01</span>
+        <h3 class="mo-stap__titel">We zoeken je pagina's</h3>
+        <p>We volgen je sitemap, de interne links en de links die pas verschijnen als de pagina in een
+          browser is geladen. Dat laatste scheelt veel: op een site waar de links met JavaScript worden
+          neergezet, ging de meting van 116 naar 500 pagina's.</p>
+      </li>
+      <li class="mo-stap">
+        <span class="mo-stap__nummer" aria-hidden="true">02</span>
+        <h3 class="mo-stap__titel">We openen elke pagina echt</h3>
+        <p>Elke pagina gaat open in een echte browser, en op diezelfde geladen pagina meten we alle
+          onderwerpen die je afneemt. Voor snelheid en duurzaamheid nemen we een steekproef met een
+          browser zonder cache, want anders meten we wat er al klaarstond.</p>
+      </li>
+      <li class="mo-stap">
+        <span class="mo-stap__nummer" aria-hidden="true">03</span>
+        <h3 class="mo-stap__titel">We leggen het naast vorige maand</h3>
+        <p>De uitkomst gaat naast de vorige ronde. Daaruit komen de lijnen, de tellingen nieuw, nog open
+          en opgelost, en de actielijst op oorzaak. Je krijgt bericht zodra de ronde klaar is.</p>
+      </li>
+    </ol>
+
+    <div class="mo-praktisch">
+      <h3 class="mo-praktisch__titel">Wat het van je website vraagt</h3>
+      <dl class="mo-dl">
+        <div>
+          <dt>Wanneer we scannen</dt>
+          <dd>'s Nachts tussen 02:00 en 06:00, met hoogstens 2 pagina's tegelijk en een pauze ertussen.
+            Dat is circa 30 pagina's per minuut, dus een website van 3.000 pagina's kost ongeveer
+            100 minuten. Past een ronde niet in één nacht, dan gaat hij de volgende nacht verder waar hij was.</dd>
+        </div>
+        <div>
+          <dt>Hoe je ons herkent</dt>
+          <dd>Onze scanner meldt zich als <code>ProperAccessMonitor</code>. Staat er een firewall of een
+            bescherming tegen bots voor je website, dan vragen we je bij de start om ons toe te laten.</dd>
+        </div>
+        <div>
+          <dt>Wat we niet aanraken</dt>
+          <dd>We openen pagina's die voor iedereen te bezoeken zijn. Er komt geen script op je website en
+            we verwerken geen gegevens van je bezoekers.</dd>
+        </div>
+        <div>
+          <dt>Waar je gegevens staan</dt>
+          <dd>Op servers in de Europese Unie. De software is van ons en draait bij Europese leveranciers.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 6. DE GRENZEN ════════════════ -->
+<section class="mo-grenzen" aria-labelledby="mo-grenzen-titel">
+  <div class="mo-container">
+    <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>De grenzen</p>
+    <h2 class="mo-h2 mo-h2--licht" id="mo-grenzen-titel">Wat monitoring niet doet</h2>
+    <p class="mo-intro mo-intro--licht">Dit deel is net zo belangrijk als de rest, want een automatische
+      meting kan minder dan veel mensen denken.</p>
+
+    <ul class="mo-grens-lijst" role="list">
+      <li>
+        <h3>Een meting vindt niet alles</h3>
+        <p>We legden onze scan naast 2 handmatige onderzoeken. Van een contentonderzoek met 21 bevindingen
+          vond de scan er 6. Van een techniekonderzoek met 19 afgekeurde succescriteria vond de scan er 8.
+          De regels die wij aan hebben staan raken 23 van de 55 succescriteria op niveau A en AA; voor de
+          andere 32 bestaat geen enkele regel. Een website met een score van 100 kan dus nog steeds
+          ontoegankelijk zijn.</p>
+      </li>
+      <li>
+        <h3>Het is geen onderbouwing voor een toegankelijkheidsverklaring</h3>
+        <p>Daarvoor is handmatig onderzoek volgens WCAG-EM nodig. Monitoring laat zien hoe je ervoor staat
+          tussen twee onderzoeken in. Een klant mag nooit denken: wij worden gemeten, dus wij voldoen.</p>
+      </li>
+      <li>
+        <h3>Er kijkt geen auditor naar elke meting</h3>
+        <p>Wat je ziet, komt rechtstreeks uit de scan. Wil je dat een senior auditor elke maand naar de
+          uitkomst kijkt voordat jij hem ziet, dan is dat de volledige monitoring.</p>
+      </li>
+      <li>
+        <h3>We komen niet overal</h3>
+        <p>Schermen achter een inlog vallen erbuiten, en ook stappen die je alleen met klikken bereikt,
+          zoals een dialoogvenster of een uitklapmenu. Wat we niet konden meten, staat als zodanig in je
+          dashboard.</p>
+      </li>
+      <li>
+        <h3>Er hoort geen nulmeting bij</h3>
+        <p>De eerste meting is een startpunt en geen oordeel over je website. Wil je weten waar je echt
+          staat, dan is een audit de manier, en die staat los van dit abonnement.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 7. DE KEUZE ════════════════ -->
+<section class="mo-keuze" aria-labelledby="mo-keuze-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">05 </span>De keuze</p>
+    <h2 class="mo-h2" id="mo-keuze-titel">Automatisch, volledig of een audit</h2>
+    <p class="mo-intro">Het verschil in één zin: bij de automatische monitoring zie je wat de meting vindt,
+      bij de volledige monitoring kijkt elke maand een senior auditor naar de uitkomst voordat jij hem ziet.
+      Veel klanten combineren ze: een audit als beginpunt, monitoring om te zien of het zo blijft.</p>
+
+    <div class="mo-tabel" tabindex="0" role="region" aria-label="Automatische monitoring, volledige monitoring en een audit naast elkaar">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Kenmerk</th>
+            <th scope="col">Automatische monitoring</th>
+            <th scope="col">Volledige monitoring</th>
+            <th scope="col">Audit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Hoe vaak</th><td>elke maand</td><td>elke maand</td><td>eenmalig</td></tr>
+          <tr><th scope="row">Wie kijkt ernaar</th><td>de meting</td><td>de meting en een senior auditor</td><td>een senior auditor</td></tr>
+          <tr><th scope="row">Wat het dekt</th><td>wat automatisch te vinden is</td><td>ook wat alleen een mens ziet</td><td>het hele onderzoek</td></tr>
+          <tr><th scope="row">Hoeveel pagina's</th><td>tot 3.000</td><td>tot 10.000</td><td>een steekproef van 15 tot 20</td></tr>
+          <tr><th scope="row">Begint met een audit</th><td>nee</td><td>ja</td><td>de audit zelf</td></tr>
+          <tr><th scope="row">Bruikbaar voor het Register</th><td>nee</td><td>nee</td><td>ja</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mo-team">
+      <h3 class="mo-team__titel">Werken met je team en meerdere websites</h3>
+      <ul role="list">
+        <li><strong>Alle websites naast elkaar.</strong> Werk je met meerdere websites of meerdere organisaties, dan zie je ze in één overzicht met de stand en het verschil met de vorige ronde.</li>
+        <li><strong>Toegang via je e-maildomein.</strong> Iedereen met een adres van jouw organisatie kan bij de eigen websites. Mensen van buiten, zoals je websitebouwer, nodig je los uit.</li>
+        <li><strong>Voor bureaus.</strong> Het domein van een bureau geeft toegang tot de websites van alle klanten onder dat bureau. Een klant ziet alleen het eigen werk.</li>
+        <li><strong>Inloggen zonder wachtwoord.</strong> Collega's loggen in met een inloglink op hun eigen e-mailadres.</li>
+      </ul>
+      <figure class="mo-figuur">
+        <img src="/images/automatische-monitoring/k01-overzicht.jpg" loading="lazy"
+             alt="Het overzicht Monitoring met een tabel per website: de laatste scan, de stand, het aantal open meldingen en het verschil met de vorige scan."
+             width="1800" height="1125">
+        <figcaption>Het overzicht van alle websites waar je bij kunt. Voorbeeld met testwebsites.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 8. VRAGEN ════════════════ -->
+<section class="mo-faq" aria-labelledby="mo-faq-titel">
+  <div class="mo-container">
+    <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>Vragen</p>
+    <h2 class="mo-h2 mo-h2--licht" id="mo-faq-titel">Veelgestelde vragen</h2>
+
+    <div class="mo-faq__lijst">
+      <details class="mo-vraag">
+        <summary><span>Wat kost monitoring?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>De prijs is per website per maand en hangt af van het aantal websites en de onderwerpen die je
+            afneemt. Hij ligt duidelijk onder die van de volledige monitoring, omdat er geen auditor per
+            meting in zit. Vraag de prijs op via het formulier hieronder of bel ons.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Moeten we hier iets voor installeren?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Nee. We meten van buitenaf, op pagina's die voor iedereen te bezoeken zijn. Er komt geen script
+            en geen plug-in op je website. Het enige dat we soms vragen is dat je onze scanner toelaat langs
+            je firewall.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Werkt dit met ons CMS?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Ja. We openen je pagina's zoals een bezoeker dat doet, dus het maakt niet uit waarmee je website
+            gebouwd is. Ook pagina's waarvan de inhoud pas met JavaScript verschijnt, meten we mee.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Onze website is groter dan 3.000 pagina's. Kan dat?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Dan spreken we vooraf af welk deel we meten, bijvoorbeeld de pagina's die er het meest toe doen.
+            Bij de volledige monitoring ligt de grens op 10.000 pagina's.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>We hebben al een audit laten doen. Heeft dit dan nog zin?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Juist dan. Een audit laat zien hoe je website er op dat moment voor stond. Monitoring laat zien
+            of de reparaties er zijn gekomen en of er sindsdien iets nieuws is stukgegaan. Audit voor de diepte,
+            monitoring voor de maanden daartussen.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Hoe weten we of een melding wel klopt?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Tot en met oktober 2026 lopen wij de oorzaken na en wijzen we af wat geen echt probleem is.
+            Een afgewezen oorzaak komt daarna niet meer terug in je tellingen. Heb je later twijfel over een
+            melding, dan stel je die vraag met een strippenkaart.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Kunnen we hiermee onze toegankelijkheidsverklaring onderbouwen?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Nee. Voor een verklaring in het Register is onderzoek volgens WCAG-EM nodig, en dat is handwerk.
+            Monitoring is vroegsignalering tussen twee onderzoeken in.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 9. CONTACT ════════════════ -->
+<section class="mo-contact" id="contact" aria-labelledby="mo-contact-titel">
+  <div class="mo-container mo-contact__grid">
+    <div>
+      <h2 class="mo-contact__titel" id="mo-contact-titel">Wil je weten waar je website staat?</h2>
+      <p class="mo-contact__tekst">
+        Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
+        Zet er het adres van je website bij, dan kijken we alvast hoe groot hij is. Je hoort binnen
+        1 werkdag van ons.
+      </p>
+      <ul class="mo-contact__mensen" role="list">
+        <li class="mo-persoon">
+          <img class="mo-persoon__foto" src="{{ "images/julia.webp" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="mo-contact__naam">Julia Tol</span><span class="mo-contact__functie">Directeur</span></span>
+        </li>
+        <li class="mo-persoon">
+          <img class="mo-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="mo-contact__naam">Phi Pham</span><span class="mo-contact__functie">Projectmanager</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <form
+      class="mo-form"
+      id="mo-contact-form"
+      novalidate
+      onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'monitoring', successMessage: 'Dank je, we hebben je bericht. Je hoort binnen 1 werkdag van ons.' });">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-naam">Naam</label>
+        <input class="mo-veld__invoer" id="mo-naam" name="naam" autocomplete="name" required type="text">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-email">E-mailadres</label>
+        <input class="mo-veld__invoer" id="mo-email" name="email" autocomplete="email" required type="email">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-website">Adres van je website</label>
+        <input class="mo-veld__invoer" id="mo-website" name="website" autocomplete="url" type="text">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-bericht">Waar wil je het over hebben?</label>
+        <textarea class="mo-veld__invoer" id="mo-bericht" name="bericht" rows="4"></textarea>
+      </div>
+      <button class="mo-knop mo-knop--verstuur" type="submit">Verstuur</button>
+      <div role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<p class="mo-voetnoot">
+  <span class="mo-container">Stand van zaken 20 september 2026. De schermafdrukken komen van testwebsites met
+  expres ingebouwde fouten; het dashboard kan tot de start nog wijzigen. De cijfers over onze audits hebben
+  als peildatum 7 augustus 2026.</span>
+</p>
+
+</div>
+
+<style>
+  /* Dezelfde vormtaal als de homepagina (hb-): vlakken zonder afronding, een
+     magenta label boven elke kop, en de kleuren met een uitgerekend contrast. */
+  body:has(.mo) { background: #fff; }
+  .mo {
+    --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0; --petrol: #004050;
+    --tekst: #454D57; --tekst-zacht: #5F656D; --lijn: rgba(31,41,55,0.22);
+    --lijn-licht: rgba(244,241,234,0.22);
+    --kop: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+    background: #fff; color: var(--navy);
+  }
+  .mo-container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+  .mo a:focus-visible, .mo button:focus-visible, .mo input:focus-visible,
+  .mo textarea:focus-visible, .mo summary:focus-visible, .mo [tabindex]:focus-visible {
+    outline: 3px solid var(--magenta); outline-offset: 3px;
+  }
+  .mo-grenzen :focus-visible, .mo-faq :focus-visible, .mo-contact :focus-visible { outline-color: var(--licht-magenta) !important; }
+  .mo-contact .mo-contact__tekst :focus-visible { outline-color: #fff !important; }
+
+  .mo-label {
+    display: flex; align-items: center; gap: 10px; margin: 0 0 16px;
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px;
+    text-transform: uppercase; color: var(--magenta);
+  }
+  .mo-label--licht { color: var(--licht-magenta); }
+  .mo-label__blokje { width: 8px; height: 8px; background: var(--licht-magenta); }
+  .mo-h2 {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(30px, 4.4vw, 56px);
+    letter-spacing: -2px; line-height: 1.0; margin: 0; max-width: 20ch; color: var(--navy);
+  }
+  .mo-h2--licht { color: var(--papier); }
+  .mo-intro { margin: 22px 0 0; max-width: 62ch; font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; color: var(--tekst); }
+  .mo-intro--licht { color: #C5C5C3; }
+  .mo-tekst { margin: 20px 0 0; max-width: 56ch; font-size: clamp(16px, 1.7vw, 18px); line-height: 1.65; color: var(--tekst); }
+
+  .mo-knop {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 14px 24px;
+    font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase;
+    background: var(--magenta); color: #fff; text-decoration: none; border: 0; cursor: pointer;
+  }
+  .mo-knop:hover { background: #8a0b3f; color: #fff; }
+  .mo-knop--tekst { background: none; color: var(--navy); padding-left: 0; padding-right: 0; }
+  .mo-knop--tekst:hover { background: none; color: var(--magenta); text-decoration: underline; text-underline-offset: 0.3em; }
+
+  /* 1. Hero */
+  .mo-hero__kenmerken {
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: center; text-align: center; margin: 0;
+    padding-top: clamp(36px, 5vw, 68px);
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--petrol);
+  }
+  .mo-hero__kenmerk-grijs { color: var(--tekst-zacht); }
+  .mo-hero__titel {
+    font-family: var(--kop); font-weight: 800; line-height: 0.92; letter-spacing: -3px; color: var(--navy);
+    font-size: clamp(36px, 6.4vw, 92px); margin: clamp(24px, 4vw, 44px) 0 0;
+    display: flex; flex-direction: column; align-items: center; text-align: center; text-wrap: pretty;
+  }
+  .mo-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
+  .mo-hero__klein { font-size: 0.5em; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-top: 0.18em; color: var(--petrol); }
+  .mo-hero__lead {
+    font-size: clamp(17px, 1.9vw, 21px); line-height: 1.55; color: var(--tekst);
+    margin: clamp(22px, 3vw, 32px) auto 0; max-width: 700px; text-align: center;
+  }
+  .mo-hero__knoppen { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: center; align-items: center; margin: clamp(22px, 3vw, 32px) 0 0; }
+  .mo-bewijs {
+    list-style: none; margin: clamp(26px, 4vw, 40px) auto 0; padding: 18px 0 clamp(28px, 4vw, 40px);
+    border-top: 1px solid var(--lijn);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 0;
+    font-family: var(--kop); font-weight: 700; font-size: 14px; color: var(--tekst-zacht);
+  }
+  .mo-bewijs li { margin: 0; }
+  .mo-bewijs li + li::before { content: "·"; content: "·" / ""; padding: 0 12px; color: var(--petrol); }
+  .mo-bewijs__cijfer { color: var(--navy); font-weight: 800; }
+  @media (max-width: 48rem) {
+    .mo-bewijs { gap: 8px 20px; }
+    .mo-bewijs li + li::before { content: none; }
+  }
+
+  /* 2. Waarom */
+  .mo-waarom { border-top: 1px solid var(--lijn); }
+  .mo-waarom__grid {
+    padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: clamp(28px, 4vw, 56px); align-items: start;
+  }
+  .mo-waarom__grid > * { min-width: 0; }
+
+  /* Kaarten: geen vulkleur, alleen een rand en een magenta zijkant. */
+  .mo-kaart { border: 1px solid var(--lijn); border-left: 4px solid var(--magenta); padding: clamp(20px, 2.6vw, 30px); background: #fff; }
+  .mo-kaart__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(18px, 1.9vw, 22px); letter-spacing: -0.5px; margin: 0; color: var(--navy); }
+  .mo-kaart p { margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: var(--tekst); }
+  .mo-kaart__intro { max-width: 46ch; }
+  .mo-kaart__voet { font-size: 13.5px !important; color: var(--tekst-zacht) !important; border-top: 1px solid var(--lijn); padding-top: 12px; margin-top: 18px !important; }
+  .mo-feiten { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .mo-feiten li { margin: 0; font-size: 16px; line-height: 1.55; color: var(--tekst); padding-left: 18px; border-left: 2px solid var(--lijn); }
+  .mo-feiten strong { color: var(--navy); }
+
+  /* 3. Dashboard */
+  .mo-dashboard { border-top: 1px solid var(--lijn); background: var(--papier); }
+  .mo-dashboard .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-figuur { margin: clamp(26px, 3.5vw, 44px) 0 0; display: grid; gap: 12px; }
+  .mo-figuur img { display: block; width: 100%; height: auto; border: 1px solid var(--lijn); background: #fff; }
+  .mo-figuur figcaption { font-size: 14px; line-height: 1.5; color: var(--tekst-zacht); max-width: 70ch; }
+  .mo-raster {
+    list-style: none; margin: clamp(30px, 4vw, 48px) 0 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1px;
+    background: var(--lijn); border: 1px solid var(--lijn);
+  }
+  .mo-raster > li { margin: 0; min-width: 0; background: var(--papier); padding: clamp(20px, 2.4vw, 28px); border: 0; }
+  .mo-raster h3 { font-family: var(--kop); font-weight: 800; font-size: 17px; letter-spacing: -0.3px; margin: 0; color: var(--navy); }
+  .mo-raster p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
+  .mo-uitgelicht { margin: clamp(30px, 4vw, 44px) 0 0; border-top: 2px solid var(--navy); padding-top: 22px; max-width: 64ch; }
+  .mo-uitgelicht__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(19px, 2.1vw, 24px); letter-spacing: -0.6px; margin: 0; color: var(--navy); }
+  .mo-uitgelicht p { margin: 12px 0 0; font-size: 16.5px; line-height: 1.6; color: var(--tekst); }
+
+  /* 4. De onderwerpen */
+  .mo-onderwerpen .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-modules { list-style: none; margin: clamp(30px, 4vw, 48px) 0 0; padding: 0; display: grid; gap: 1px; background: var(--lijn); border-top: 1px solid var(--lijn); border-bottom: 1px solid var(--lijn); }
+  .mo-module { margin: 0; background: #fff; padding: clamp(22px, 3vw, 34px) 0; }
+  .mo-module__kop { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 20px; }
+  .mo-module__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(21px, 2.4vw, 30px); letter-spacing: -0.8px; margin: 0; color: var(--navy); }
+  .mo-module__eenheid { margin: 0; font-family: var(--kop); font-weight: 700; font-size: 13px; color: var(--petrol); }
+  .mo-module__status {
+    margin: 10px 0 0; display: inline-block; font-family: var(--kop); font-weight: 800; font-size: 11px;
+    letter-spacing: 1.6px; text-transform: uppercase; color: var(--tekst-zacht);
+    border: 1px solid var(--lijn); padding: 5px 10px;
+  }
+  .mo-module__status--nu { color: var(--magenta); border-color: var(--magenta); }
+  .mo-module > p { margin: 14px 0 0; max-width: 78ch; font-size: 16.5px; line-height: 1.65; color: var(--tekst); }
+  .mo-module__niet { border-left: 3px solid var(--petrol); padding-left: 16px; font-size: 15.5px !important; }
+  .mo-module__niet strong { color: var(--navy); }
+  .mo-figuur--smal img { max-width: 900px; }
+  @media (min-width: 64rem) {
+    .mo-module { display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); column-gap: 48px; align-items: start; }
+    .mo-module__zij { grid-column: 1; grid-row: 1; }
+    .mo-module__kop { display: block; }
+    .mo-module__eenheid { margin-top: 8px; }
+    .mo-module > p { grid-column: 2; }
+    .mo-module > p:first-of-type { margin-top: 0; }
+  }
+
+  /* 5. Werkwijze */
+  .mo-werkwijze { background: var(--papier); border-top: 1px solid var(--lijn); }
+  .mo-werkwijze .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-stappen { list-style: none; margin: clamp(30px, 4vw, 48px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: clamp(24px, 3vw, 40px); }
+  .mo-stap { margin: 0; min-width: 0; border-top: 2px solid var(--navy); padding-top: 18px; }
+  .mo-stap__nummer { font-family: var(--kop); font-weight: 800; font-size: 13px; letter-spacing: 2px; color: var(--magenta); }
+  .mo-stap__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(18px, 2vw, 23px); letter-spacing: -0.5px; margin: 10px 0 0; color: var(--navy); }
+  .mo-stap p { margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: var(--tekst); }
+  .mo-praktisch { margin: clamp(34px, 4.5vw, 56px) 0 0; border-top: 1px solid var(--lijn); padding-top: clamp(24px, 3vw, 36px); }
+  .mo-praktisch__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(19px, 2.1vw, 24px); letter-spacing: -0.6px; margin: 0; color: var(--navy); }
+  .mo-dl { margin: 22px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 22px 40px; }
+  .mo-dl > div { min-width: 0; }
+  .mo-dl dt { font-family: var(--kop); font-weight: 800; font-size: 15px; color: var(--navy); }
+  .mo-dl dd { margin: 8px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
+  .mo-dl code { font-size: 0.94em; background: #fff; border: 1px solid var(--lijn); padding: 1px 5px; }
+
+  /* 6. Grenzen */
+  .mo-grenzen { background: var(--navy); color: var(--papier); }
+  .mo-grenzen .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-grens-lijst { list-style: none; margin: clamp(30px, 4vw, 44px) 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--lijn-licht); }
+  .mo-grens-lijst > li { margin: 0; padding: 22px 0; border-bottom: 1px solid var(--lijn-licht); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 8px 40px; align-items: start; }
+  .mo-grens-lijst h3 { font-family: var(--kop); font-weight: 800; font-size: clamp(17px, 1.9vw, 21px); letter-spacing: -0.4px; margin: 0; color: var(--papier); }
+  .mo-grens-lijst p { margin: 0; font-size: 16px; line-height: 1.65; color: #C5C5C3; }
+
+  /* 7. Keuze */
+  .mo-keuze .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-tabel { margin: clamp(26px, 3.5vw, 40px) 0 0; overflow-x: auto; border: 1px solid var(--lijn); }
+  .mo-tabel table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 15.5px; }
+  .mo-tabel th, .mo-tabel td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--lijn); vertical-align: top; color: var(--tekst); }
+  .mo-tabel tbody tr:last-child th, .mo-tabel tbody tr:last-child td { border-bottom: 0; }
+  .mo-tabel thead th { font-family: var(--kop); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--navy); font-weight: 800; }
+  .mo-tabel tbody th { font-family: var(--kop); font-weight: 800; color: var(--navy); }
+  .mo-team { margin: clamp(34px, 4.5vw, 56px) 0 0; border-top: 1px solid var(--lijn); padding-top: clamp(24px, 3vw, 36px); }
+  .mo-team__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(19px, 2.1vw, 24px); letter-spacing: -0.6px; margin: 0; color: var(--navy); }
+  .mo-team ul { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 18px 40px; }
+  .mo-team li { margin: 0; min-width: 0; font-size: 15.5px; line-height: 1.6; color: var(--tekst); padding-left: 16px; border-left: 2px solid var(--lijn); }
+  .mo-team strong { color: var(--navy); }
+
+  /* 8. Vragen */
+  .mo-faq { background: var(--navy); color: var(--papier); }
+  .mo-faq .mo-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .mo-faq__lijst { margin: clamp(28px, 4vw, 44px) 0 0; display: grid; gap: 12px; }
+  .mo-vraag { background: #fff; border: 1px solid #fff; }
+  .mo-vraag summary {
+    list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    padding: 18px 20px; font-family: var(--kop); font-weight: 800; font-size: clamp(16px, 1.7vw, 19px);
+    letter-spacing: -0.3px; color: var(--navy); min-height: 44px;
+  }
+  .mo-vraag summary::-webkit-details-marker { display: none; }
+  .mo-vraag summary::after { content: "+"; font-size: 26px; font-weight: 700; color: var(--magenta); line-height: 1; transition: transform 160ms ease; }
+  .mo-vraag[open] summary::after { content: "×"; }
+  .mo-vraag summary:hover { color: var(--magenta); }
+  .mo-vraag__antwoord { padding: 0 20px 20px; }
+  .mo-vraag__antwoord p { margin: 0; max-width: 72ch; font-size: 16px; line-height: 1.65; color: var(--tekst); }
+
+  /* 9. Contact */
+  .mo-contact { background: var(--petrol); color: var(--papier); }
+  .mo-contact__grid {
+    padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: clamp(28px, 4vw, 60px); align-items: start;
+  }
+  .mo-contact__grid > * { min-width: 0; }
+  .mo-contact__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(28px, 3.6vw, 48px); letter-spacing: -1.6px; line-height: 1.02; margin: 0; color: #fff; max-width: 16ch; }
+  .mo-contact__tekst { margin: 22px 0 0; font-size: clamp(16px, 1.7vw, 18px); line-height: 1.65; color: #fff; max-width: 46ch; }
+  .mo-contact__tekst a { color: #fff; text-decoration: underline; text-underline-offset: 0.2em; }
+  .mo-contact__mensen { list-style: none; margin: 26px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 20px 36px; }
+  .mo-persoon { margin: 0; display: flex; align-items: center; gap: 12px; }
+  .mo-persoon__foto { width: 48px; height: 48px; object-fit: cover; border-radius: 50%; }
+  .mo-contact__naam { display: block; font-family: var(--kop); font-weight: 800; font-size: 15px; color: #fff; }
+  .mo-contact__functie { display: block; font-size: 13.5px; color: #E5EDEE; }
+  .mo-form { display: grid; gap: 16px; }
+  .mo-veld { display: grid; gap: 6px; }
+  .mo-veld__label { font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #fff; }
+  .mo-veld__invoer {
+    width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; color: var(--navy); background: #fff;
+    border: 2px solid #fff; border-radius: 0; min-height: 48px;
+  }
+  .mo-knop--verstuur { justify-content: center; background: #fff; color: var(--navy); }
+  .mo-knop--verstuur:hover { background: var(--licht-magenta); color: var(--navy); }
+  .mo-contact [role="status"] { font-size: 15px; color: #fff; }
+
+  .mo-voetnoot { margin: 0; padding: 24px 0; font-size: 13.5px; line-height: 1.6; color: var(--tekst-zacht); border-top: 1px solid var(--lijn); }
+  .mo-voetnoot .mo-container { display: block; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mo *, .mo *::before, .mo *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  }
+</style>
+
+{{ end }}
