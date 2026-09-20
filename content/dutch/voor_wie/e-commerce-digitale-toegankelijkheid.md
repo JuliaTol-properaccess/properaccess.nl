@@ -1,5 +1,6 @@
 ---
 title: "EAA voor E-commerce en e-diensten"
+weight: 3
 meta_title: "WCAG-audit en begeleiding voor webshops en apps"
 date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"

@@ -1,5 +1,6 @@
 ---
 title: "Digitale toegankelijkheid voor financiële instellingen"
+weight: 4
 meta_title: "WCAG-audit voor banken, verzekeraars en beleggingsondernemingen | Proper Access"
 date: 2026-09-08
 slug: "financiele-instellingen-digitale-toegankelijkheid"
