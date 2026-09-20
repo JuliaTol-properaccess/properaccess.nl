@@ -179,66 +179,7 @@
 </section>
 
 
-<!-- ════════════════ 4. HOE HET WERKT ════════════════ -->
-<section class="mo-werkwijze" aria-labelledby="mo-werkwijze-titel">
-  <div class="mo-container">
-    <p class="mo-label"><span aria-hidden="true">03 </span>Hoe het werkt</p>
-    <h2 class="mo-h2" id="mo-werkwijze-titel">Wat er in een ronde gebeurt</h2>
-
-    <ol class="mo-stappen" role="list">
-      <li class="mo-stap">
-        <span class="mo-stap__nummer" aria-hidden="true">01</span>
-        <h3 class="mo-stap__titel">We zoeken je pagina's</h3>
-        <p>Via je sitemap, de interne links en de links die pas verschijnen als de pagina in een browser
-          geladen is.</p>
-      </li>
-      <li class="mo-stap">
-        <span class="mo-stap__nummer" aria-hidden="true">02</span>
-        <h3 class="mo-stap__titel">We meten ze 's nachts</h3>
-        <p>Tussen 02:00 en 06:00, met 2 pagina's tegelijk. Dat is circa 30 pagina's per minuut. Onze scanner
-          meldt zich als <code>ProperAccessMonitor</code>.</p>
-      </li>
-      <li class="mo-stap">
-        <span class="mo-stap__nummer" aria-hidden="true">03</span>
-        <h3 class="mo-stap__titel">We leggen het naast vorige maand</h3>
-        <p>Daaruit komen de lijnen, de tellingen en de actielijst. Je krijgt bericht zodra de ronde klaar is.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-
-<!-- ════════════════ 5. TWEE VORMEN ════════════════ -->
-<section class="mo-keuze" aria-labelledby="mo-keuze-titel">
-  <div class="mo-container">
-    <p class="mo-label"><span aria-hidden="true">04 </span>Twee vormen</p>
-    <h2 class="mo-h2" id="mo-keuze-titel">Met of zonder auditor</h2>
-    <p class="mo-intro">Bij de automatische monitoring zie je wat de meting vindt. Bij de semi-automatische
-      monitoring kijkt elke maand een senior auditor naar de uitkomst voordat jij hem ziet.</p>
-
-    <div class="mo-tabel" tabindex="0" role="region" aria-label="De twee vormen naast elkaar">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Kenmerk</th>
-            <th scope="col">Automatische monitoring</th>
-            <th scope="col">Semi-automatische monitoring</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><th scope="row">Wie kijkt ernaar</th><td>de meting</td><td>de meting en een senior auditor</td></tr>
-          <tr><th scope="row">Begint met een audit</th><td>nee</td><td>ja, eenmalig op de offerte</td></tr>
-          <tr><th scope="row">De blokjes</th><td>kies je erbij</td><td>zitten er allemaal in</td></tr>
-          <tr><th scope="row">Toegankelijkheidsverklaring of VPAT</th><td>nee</td><td>ja, elke maand bijgewerkt</td></tr>
-          <tr><th scope="row">Vanaf</th><td>€ 395 per maand</td><td>€ 1.545 per maand</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════════ 6. PRIJZEN EN REKENHULP ════════════════ -->
+<!-- ════════════════ 4. PRIJZEN EN REKENHULP ════════════════ -->
 <section class="mo-prijzen" id="prijzen" aria-labelledby="mo-prijzen-titel">
   <div class="mo-container">
     <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>Prijzen</p>
@@ -317,7 +258,7 @@
 </section>
 
 
-<!-- ════════════════ 7. VRAGEN ════════════════ -->
+<!-- ════════════════ 5. VRAGEN ════════════════ -->
 <section class="mo-faq" aria-labelledby="mo-faq-titel">
   <div class="mo-container">
     <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>Vragen</p>
@@ -371,7 +312,7 @@
 </section>
 
 
-<!-- ════════════════ 8. CONTACT ════════════════ -->
+<!-- ════════════════ 6. CONTACT ════════════════ -->
 <section class="mo-contact" id="contact" aria-labelledby="mo-contact-titel">
   <div class="mo-container mo-contact__grid">
     <div>
@@ -681,28 +622,8 @@
   .mo-module[data-thema="links"] { --tint: #E9EEF9; --rand: #C2D1EE; }
   .mo-module[data-thema="beveiliging"] { --tint: #ECEEF2; --rand: #CAD1DA; }
   .mo-module[data-thema="stats"] { --tint: #F5F5F5; --rand: #DDE1E7; }
-  .mo-niet { border-left: 3px solid var(--petrol); padding-left: 14px; font-size: 14.5px !important; color: var(--tekst-zacht) !important; }
 
-  /* 4. Hoe het werkt */
-  .mo-werkwijze { background: var(--papier); border-top: 1px solid var(--lijn); }
-  .mo-werkwijze .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
-  .mo-stappen { list-style: none; margin: clamp(28px, 4vw, 44px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: clamp(24px, 3vw, 40px); }
-  .mo-stap { margin: 0; min-width: 0; border-top: 2px solid var(--navy); padding-top: 18px; }
-  .mo-stap__nummer { font-family: var(--kop); font-weight: 800; font-size: 13px; letter-spacing: 2px; color: var(--magenta); }
-  .mo-stap__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(18px, 2vw, 22px); letter-spacing: -0.5px; margin: 10px 0 0; color: var(--navy); }
-  .mo-stap p { margin: 12px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
-  .mo-stap code { font-size: 0.94em; background: #fff; border: 1px solid var(--lijn); padding: 1px 5px; }
-
-  /* 5. Twee vormen */
-  .mo-keuze .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
-  .mo-tabel { margin: clamp(24px, 3.5vw, 36px) 0 0; overflow-x: auto; border: 1px solid var(--lijn); }
-  .mo-tabel table { border-collapse: collapse; width: 100%; min-width: 600px; font-size: 15.5px; }
-  .mo-tabel th, .mo-tabel td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--lijn); vertical-align: top; color: var(--tekst); }
-  .mo-tabel tbody tr:last-child th, .mo-tabel tbody tr:last-child td { border-bottom: 0; }
-  .mo-tabel thead th { font-family: var(--kop); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--navy); font-weight: 800; }
-  .mo-tabel tbody th { font-family: var(--kop); font-weight: 800; color: var(--navy); }
-
-  /* 6. Prijzen en rekenhulp */
+  /* 4. Prijzen en rekenhulp */
   .mo-prijzen { background: var(--navy); color: var(--papier); }
   .mo-prijzen .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
   .mo-prijzen .mo-h2 { color: var(--papier); }
@@ -747,7 +668,7 @@
   .mo-uitkomst .mo-knop { margin-top: 6px; }
   .mo-vergelijking { margin: clamp(24px, 3vw, 36px) 0 0; font-size: 14px; line-height: 1.6; color: #C5C5C3; max-width: 70ch; }
 
-  /* 7. Vragen */
+  /* 5. Vragen */
   .mo-faq { background: var(--papier); border-top: 1px solid var(--lijn); }
   .mo-faq .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
   .mo-faq .mo-h2 { color: var(--navy); }
@@ -767,7 +688,7 @@
   .mo-vraag__antwoord { padding: 0 20px 18px; }
   .mo-vraag__antwoord p { margin: 0; max-width: 72ch; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
 
-  /* 8. Contact */
+  /* 6. Contact */
   .mo-contact { background: var(--petrol); color: var(--papier); }
   .mo-contact__grid {
     padding-top: clamp(44px, 6vw, 72px); padding-bottom: clamp(44px, 6vw, 72px);
