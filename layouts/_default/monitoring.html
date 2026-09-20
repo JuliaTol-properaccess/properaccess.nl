@@ -65,6 +65,13 @@
     <p class="mo-label"><span aria-hidden="true">01 </span>Het dashboard</p>
     <h2 class="mo-h2" id="mo-dashboard-titel">Wat je elke maand krijgt</h2>
 
+    <figure class="mo-figuur">
+      <img src="/images/automatische-monitoring/db-onderwerpen.jpg"
+           alt="De onderwerpen van één website als tegels naast elkaar: toegankelijkheid 7 van 100 met de melding actie nodig, vindbaarheid in zoekmachines 93,5 procent, vindbaarheid door AI 3 van 3, duurzaamheid 0,08 gram CO2 per pagina, snelheid 3,4 seconden, kapotte links 99,3 procent werkend, en beveiliging van de verbinding 2 van 8 controles gehaald. Onder elke tegel staat hoeveel bevindingen en adviezen er zijn."
+           width="1600" height="608">
+      <figcaption>Elk onderwerp in zijn eigen eenheid. Er is geen totaal en geen gemiddelde.</figcaption>
+    </figure>
+
     <ul class="mo-raster" role="list">
       <li>
         <h3>Een stand per onderwerp</h3>
@@ -91,6 +98,13 @@
         <p>Per onderwerp of alles samen, als CSV, Excel of PDF. Werk je met meerdere websites, dan zie je ze in één overzicht.</p>
       </li>
     </ul>
+
+    <figure class="mo-figuur">
+      <img src="/images/automatische-monitoring/db-verloop.jpg" loading="lazy"
+           alt="Links een grafiek met het verloop per onderwerp over de scans van 23 augustus tot 20 september, met daarnaast de laatste stand per onderwerp. Rechts hoe zwaar de meldingen wegen, verdeeld over kritiek 17, ernstig 2268, gemiddeld 2376 en klein 0, met het totaal van 4.661 meldingen en 9,4 per pagina."
+           width="1600" height="587">
+      <figcaption>Het verloop per onderwerp, en hoe zwaar de meldingen wegen.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -127,6 +141,12 @@
           <p class="mo-niet">Niet: een uitspraak over de veiligheid van je website. Alle 8 aanwezig zegt niets over een lek in je inlogscherm.</p>
         </li>
       </ul>
+      <figure class="mo-figuur">
+        <img src="/images/automatische-monitoring/db-problemen.jpg" loading="lazy"
+             alt="Links de lijst met open problemen, per succescriterium en met het aantal varianten erbij, bijvoorbeeld 1.4.3 contrast met 14 varianten. Rechts de meldingen die je zelf moet controleren, die niet meetellen in de cijfers."
+             width="1600" height="550">
+        <figcaption>De actielijst bij toegankelijkheid, gegroepeerd op oorzaak. De meldingen om zelf te controleren staan apart en tellen nergens mee.</figcaption>
+      </figure>
     </div>
 
     <div class="mo-blok">
@@ -602,12 +622,18 @@
   .mo-dashboard .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
   .mo-raster {
     list-style: none; margin: clamp(28px, 4vw, 44px) 0 0; padding: 0;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1px;
     background: var(--lijn); border: 1px solid var(--lijn);
   }
   .mo-raster > li { margin: 0; min-width: 0; background: var(--papier); padding: clamp(20px, 2.4vw, 26px); }
   .mo-raster h3 { font-family: var(--kop); font-weight: 800; font-size: 17px; letter-spacing: -0.3px; margin: 0; color: var(--navy); }
   .mo-raster p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.55; color: var(--tekst); }
+
+  .mo-figuur { margin: clamp(24px, 3.5vw, 40px) 0 0; display: grid; gap: 12px; }
+  .mo-figuur img { display: block; width: 100%; height: auto; border: 1px solid var(--lijn); background: #fff; }
+  .mo-figuur figcaption { font-size: 14px; line-height: 1.5; color: var(--tekst-zacht); max-width: 70ch; }
+  .mo-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: clamp(20px, 2.6vw, 34px); align-items: start; }
+  .mo-duo .mo-figuur { min-width: 0; }
 
   /* 3. Wat we meten */
   .mo-onderwerpen .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
