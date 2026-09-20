@@ -39,11 +39,10 @@
     </p>
     <h1 class="mo-hero__titel">
       <span class="mo-hero__groot">Elke maand weten hoe je website ervoor staat</span>
-      <span class="mo-hero__klein">Zeven onderwerpen, gemeten vanaf 500 pagina's.</span>
+      <span class="mo-hero__klein">Toegankelijkheid in de basis, zeven onderwerpen naar keuze.</span>
     </h1>
     <p class="mo-hero__lead">
-      Toegankelijkheid, vindbaarheid, snelheid en duurzaamheid, in één dashboard. Je ziet wat er nieuw is,
-      wat er is opgelost en waar het al maanden hetzelfde blijft.
+      In één dashboard zie je wat er nieuw is, wat er is opgelost en waar het al maanden hetzelfde blijft.
     </p>
     <p class="mo-hero__knoppen">
       <a class="mo-knop" href="#contact">Vraag monitoring aan</a>
@@ -97,7 +96,6 @@
           <p>Elke gemeten pagina gaat open in een echte browser en wordt getoetst tegen WCAG 2.1 niveau A en AA en
             WCAG 2.2 niveau AA. Per melding zie je waar hij zit, om welk element het gaat en hoe je dat
             element terugvindt.</p>
-          <p class="mo-niet">Niet: een audit. Een machine vindt een deel van de succescriteria, de rest vraagt een mens.</p>
         </li>
       </ul>
       <figure class="mo-figuur">
@@ -111,7 +109,7 @@
     <div class="mo-blok">
       <h3 class="mo-blok__titel">Blokjes die je erbij kiest</h3>
       <ul class="mo-modules" role="list">
-        <li class="mo-module">
+        <li class="mo-module" data-thema="seo">
           <h4>Vindbaarheid in zoekmachines</h4>
           <p class="mo-module__eenheid">Percentage pagina's zonder bevinding</p>
           <p class="mo-module__prijs">€ 75 per maand</p>
@@ -119,7 +117,7 @@
             voorkeursadres, doorstuuradressen, en titels die dubbel staan.</p>
           <p class="mo-niet">Niet: advies over welke woorden je gebruikt of hoe je hoger komt dan een concurrent.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="geo">
           <h4>Vindbaarheid door AI</h4>
           <p class="mo-module__eenheid">Aantal voorwaarden</p>
           <p class="mo-module__prijs">€ 75 per maand</p>
@@ -128,7 +126,7 @@
             die ook zonder JavaScript te lezen is?</p>
           <p class="mo-niet">Niet: een belofte dat je vaker genoemd wordt in AI-antwoorden. We meten of de deur openstaat.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="performance">
           <h4>Snelheid</h4>
           <p class="mo-module__eenheid">Seconden tot het grootste element verschijnt</p>
           <p class="mo-module__prijs">€ 75 per maand</p>
@@ -136,7 +134,7 @@
             gemeten alsof iemand je website op een mobiele telefoon opent.</p>
           <p class="mo-niet">Niet: een uitspraak dat je website slaagt voor de Core Web Vitals van Google. Eén van die drie waarden meten we niet.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="co2">
           <h4>Duurzaamheid</h4>
           <p class="mo-module__eenheid">Gram CO<sub>2</sub>e per paginabezoek, plus een beoordeling van A+ tot F</p>
           <p class="mo-module__prijs">€ 50 per maand</p>
@@ -154,7 +152,7 @@
             fout de meeste mensen raakt.</p>
           <p class="mo-niet">Niet: heatmaps, opnames van sessies of cookies. Hiervoor komt wel één regel JavaScript op je website.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="links">
           <h4>Kapotte links</h4>
           <p class="mo-module__eenheid">Percentage werkende links</p>
           <p class="mo-module__prijs">prijs volgt</p>
@@ -162,7 +160,7 @@
             waar de server een fout geeft.</p>
           <p class="mo-niet">Niet: volledig. Een adres dat niet reageert telt als niet gecontroleerd, en dat aantal staat erbij.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="beveiliging">
           <h4>Beveiliging van de verbinding</h4>
           <p class="mo-module__eenheid">Aantal van 8 instellingen</p>
           <p class="mo-module__prijs">prijs volgt</p>
@@ -621,6 +619,21 @@
   .mo-module__prijs { margin: 6px 0 0 !important; font-family: var(--kop); font-weight: 800; font-size: 13px; color: var(--magenta) !important; }
   .mo-module__eenheid { margin: 6px 0 0 !important; font-family: var(--kop); font-weight: 700; font-size: 13px; color: var(--petrol) !important; }
   .mo-module p { margin: 12px 0 0; max-width: 60ch; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
+
+  /* De kleuren van de thema's, overgenomen uit THEMAS in
+     app/services/thema_verloop.py in het portaal, zodat een blokje op deze
+     pagina dezelfde kleur draagt als zijn tegel en zijn lijn in het dashboard.
+     Alle zeven halen minstens 6,8:1 tegen wit. Kleur draagt hier geen
+     betekenis: de naam van het blokje staat er in tekst boven. */
+  .mo-module[data-thema] { border-top-color: var(--thema); }
+  .mo-module[data-thema] .mo-module__eenheid { color: var(--thema) !important; }
+  .mo-module[data-thema] .mo-niet { border-left-color: var(--thema); }
+  .mo-module[data-thema="seo"] { --thema: #A30D4B; }
+  .mo-module[data-thema="geo"] { --thema: #5B21A6; }
+  .mo-module[data-thema="performance"] { --thema: #8A4B00; }
+  .mo-module[data-thema="co2"] { --thema: #04663A; }
+  .mo-module[data-thema="links"] { --thema: #1C4CA0; }
+  .mo-module[data-thema="beveiliging"] { --thema: #33404F; }
   .mo-niet { border-left: 3px solid var(--petrol); padding-left: 14px; font-size: 14.5px !important; color: var(--tekst-zacht) !important; }
 
   /* 4. Hoe het werkt */
