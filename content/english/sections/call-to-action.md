@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Get clarity on your digital accessibility — without stress"
+title: "Get clarity on your digital accessibility, without the stress"
 image: "/images/rapport.webp"
-description: "Schedule an introductory meeting. No commitments — just valuable insight into your risks and opportunities."
+description: "Schedule an introductory meeting. No commitments, just a concrete picture of your risks and opportunities."
 button:
   enable: true
   label: "Schedule an introduction"
