@@ -16,7 +16,7 @@ keywords:
   - digitale toegankelijkheid developers
 ---
 
-# Toetsenbordfocus moet logisch zijn
+## Toetsenbordfocus moet logisch zijn
 
 Als bezoekers met het toetsenbord door een website navigeren, moeten interactieve elementen in een logische volgorde focus krijgen. Logisch betekent: aansluitend op de visuele volgorde. Wijkt de focusvolgorde daar sterk van af, dan wordt de website moeilijk te gebruiken voor mensen die geen muis kunnen of willen gebruiken.
 

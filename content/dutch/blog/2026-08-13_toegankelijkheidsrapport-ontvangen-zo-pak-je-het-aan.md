@@ -17,7 +17,7 @@ keywords:
   - toegankelijkheid verbeteren
 ---
 
-# Waaraan herken je een goed toegankelijkheidsrapport?
+## Waaraan herken je een goed toegankelijkheidsrapport?
 
 ![Illustratie: een grote, chaotische stapel rapportpagina's aan de linkerkant verandert via een magenta pijl in een rustig, geordend stappenplan met vier genummerde stappen aan de rechterkant.](/images/blog/toegankelijkheidsrapport-stappenplan.webp)
 

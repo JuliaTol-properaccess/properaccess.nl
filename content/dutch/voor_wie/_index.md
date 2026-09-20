@@ -1,65 +1,80 @@
 ---
-title: "Voor wie"
-meta_title: "Voor wie is een toegankelijkheidsaudit? | Proper Access"
-description: "Overheid, e-commerce, cultuur of digital agency: ontdek hoe een WCAG-audit jouw organisatie helpt om digitale drempels weg te nemen."
-layout: "home-style"
+title: "Voor wie we werken"
+meta_title: "Voor welke sectoren doet Proper Access toegankelijkheidsonderzoek? | Proper Access"
+description: "Overheid, cultuur, webshops, financiële instellingen, onderwijs en digital agencies. Welke wet voor je geldt hangt af van wat je organisatie is, en dat bepaalt wat je moet aantonen."
 date: 2025-07-12
+lastmod: 2026-09-20
 slug: "sectoren"
 url: "/sectoren/"
+keywords:
+  - toegankelijkheidsonderzoek sector
+  - WCAG-audit overheid
+  - WCAG-audit webshop
+  - digitale toegankelijkheid cultuur
+  - EAA of BDTO
 ---
 
-## Overheid
+{{< section-full title="Welke wet voor jou geldt" bg="light" >}}
 
-Sinds 2018 zijn overheidsinstanties verplicht om hun digitale kanalen toegankelijk te maken én hierover een toegankelijkheidsverklaring op te stellen. Ons toegankelijkheidsrapport helpt je deze verplichting te onderbouwen – helder, concreet en conform de wetgeving.
+Wat je organisatie is bepaalt dat, en niet wat je verkoopt. Een overheidsinstantie of een
+publiekrechtelijke instelling valt onder het Besluit digitale toegankelijkheid overheid. Een
+commercieel bedrijf dat digitale diensten aan consumenten levert, valt onder de European
+Accessibility Act. Voor je eigen website of app geldt er altijd één van de twee.
 
+In de culturele sector loopt die grens zelden waar je hem verwacht. Twee musea die er van buiten
+hetzelfde uitzien kunnen onder verschillende wetten vallen. "Publiekrechtelijke instelling" is
+namelijk een begrip uit het aanbestedingsrecht met drie voorwaarden, en een subsidie op zich is er
+geen van. Twijfel je, dan kijken we daar samen naar voordat we een offerte maken.
 
-## Cultuur, sport en attracties
+Onder allebei de wetten ligt dezelfde norm: EN 301 549, die op dit moment verwijst naar WCAG 2.1
+niveau A en AA. Wij toetsen aan WCAG 2.2, een versie verder dan de wet vraagt.
 
-Een museumbezoek of sportwedstrijd begint vaak online – bij het kopen van een ticket of opzoeken van informatie. Een toegankelijke website zorgt ervoor dat iedereen, ongeacht beperking, gelijke toegang heeft tot kunst, cultuur of vermaak. Wij helpen je inzicht te krijgen in de digitale drempels op jouw website.
+Wil je weten wat dat voor jouw organisatie betekent, lees dan verder over
+[de European Accessibility Act](/eaa/) of over
+[hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/), van
+onderzoek tot verantwoording.
 
+{{< /section-full >}}
 
-## E-commerce en e-diensten
+{{< section-full title="Wat per sector verschilt" >}}
 
-Wist je dat een toegankelijke webshop tot 25% minder bezoekersverlies leidt?  
-Een toegankelijke site werkt probleemloos op alle apparaten en biedt álle klanten een prettige gebruikerservaring. Benieuwd waar in jouw funnel klanten afhaken? Wij brengen het voor je in kaart.
+De succescriteria zijn overal dezelfde 55. Wat verschilt is waar we kijken, en wat je met het
+rapport moet aantonen.
 
+Bij een webshop lopen we het hele afrekenproces door, van product in het mandje tot betaling.
+Daar kijkt de Autoriteit Consument en Markt ook naar. Die toetste in 2026 tien bedrijven volledig
+volgens WCAG-EM en keek bij ruim honderd andere bedrijven naar één belangrijk onderdeel van de
+site. Wie niet voldoet, krijgt drie maanden en daarna een hertest.
 
-## Financiële instellingen
+Bij een overheidsorganisatie is het rapport het bewijsstuk onder je verklaring in het Register.
+Daar gelden eigen spelregels. Elk digitaal kanaal heeft een eigen verklaring nodig: je
+hoofdwebsite, je aanvraagformulieren, je portaal achter de inlog en je app zijn allemaal apart.
+Elk onderzoek moet volgens WCAG-EM zijn uitgevoerd, ook als je maar op status B mikt. En na
+36 maanden vervalt de onderbouwing, waarna je status zakt.
 
-Banken, verzekeraars, kredietaanbieders, betaaldiensten en beleggingsondernemingen vallen voor hun diensten aan consumenten onder de EAA, met de AFM als toezichthouder. We toetsen alles wat een consument aanraakt, van inloggen tot ondertekenen, en leveren een rapport waarmee je de EAA-melding concreet invult. [Lees meer over toegankelijkheid voor financiële instellingen](/financiele-instellingen-digitale-toegankelijkheid/).
+Bij een museum of een festival begint het bezoek bij de ticketshop, lang voordat iemand bij de
+deur staat. Bij een bank of verzekeraar begint het bij het inloggen.
 
+Werk je bij een digital agency, dan is de rol omgedraaid: jouw klanten moeten voldoen en jij
+bouwt het. We draaien mee in de sprint en leveren bevindingen op die je team
+dezelfde week kan oppakken.
 
-## Digital Agency
+{{< /section-full >}}
 
-We testen digitale toegankelijkheid tijdens de bouw van een website en draaien met je team mee in sprints. We maken user stories op basis van verschillende beperkingen en dragen oplossignen bij. Zo zorgen we samen voor een toegankelijk resultaat waar we trots op zijn!
+{{< section-full title="Wat in elke sector hetzelfde blijft" bg="light" >}}
 
+Elke audit is handwerk. We testen met een schermlezer, met alleen het toetsenbord, op 400% zoom,
+en we meten contrast en kleurgebruik na. Apps toetsen we op echte toestellen, met VoiceOver op
+iOS en TalkBack op Android.
 
-## Onderwijs
+Het rapport is opgebouwd per element. In een klassiek rapport komt één onderdeel van je site terug
+onder twaalf verschillende succescriteria, en moet je developer die twaalf stukken eerst bij
+elkaar zoeken. Bij ons staat alles wat er aan je bestelformulier mankeert op één plek.
 
-Kunnen al je studenten bij de lesstof? Van LMS-platformen tot e-learning modules: we toetsen digitale leeromgevingen op toegankelijkheid, zodat iedere student zelfstandig kan leren. [Lees meer over toegankelijkheid in het onderwijs](/onderwijs-digitale-toegankelijkheid/).
+Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Dat heet
+het 6-ogen-principe: elk rapport wordt door drie mensen bekeken.
 
+We kennen zo'n 150 verschillende systemen, van maatwerkframeworks tot standaard-CMS'en.
+Proper Access bouwt en beheert zelf geen websites, dus we keuren nooit ons eigen werk.
 
-# Digitale toegankelijkheid
-
-Wij ondersteunen bedrijven en organisaties die digitale toegankelijkheid willen begrijpen én verbeteren.
-
-- 7 jaar ervaring met WCAG
-- 950+ audits uitgevoerd
-- 12 eigen auditors
-
-- 150+ klanten
-- Oplossingen en hulp
-- Hercontrole en presentatie
-
-Je staat er niet alleen voor!
-
-## De kortste route naar het beste resultaat
-
-Onze ideale klant is iemand die digitale toegankelijkheid wil begrijpen én zijn digitale kanalen wil verbeteren. Herken jij je hierin? Dan kijken we ernaar uit om met je samen te werken. Bel of mail Julia Tol: 06-28742275 of info@properaccess.nl
-
-- Snelle oplevertijden en reactietijd op vragen
-- Je hebt altijd een directe lijn met je auditor. Je mag altijd vragen stellen naar aanleiding van je rapport.
-- Veel oplossingen, tip en instructies
-- Je krijgt van ons meer dan een lijst met problemen. Elk rapport staat bomvol adviezen en tips.
-- We denken met je mee buiten het rapport
-- Heb je hulp nodig met vragen die buiten je website of app gaan, stel ze gerust! We denken graag met je mee!
+{{< /section-full >}}

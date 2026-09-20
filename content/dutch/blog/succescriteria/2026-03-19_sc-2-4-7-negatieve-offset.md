@@ -2,6 +2,8 @@
 title: "Negatieve outline-offset die de focus verbergt"
 date: 2026-03-19
 slug: "sc-2-4-7-negatieve-offset"
+aliases:
+  - "/blog/sc-2-4-7-negatieve-outline-offset-die-de-focus-verbergt/"
 categories:
   - "wcag-uitgelegd"
 tags:

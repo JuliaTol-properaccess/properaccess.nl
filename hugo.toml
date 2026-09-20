@@ -99,7 +99,8 @@ maxAge = "720h"
 unsafe = true
 
 [markup.highlight]
-style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+# Eigen palet in assets/css/custom.css: monokai haalde 4,5:1 niet.
+noClasses = false
 lineNumbersInTable = false
 
 [markup.tableOfContents]

@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Krijg duidelijkheid over je digitale toegankelijkheid – zonder stress"
+title: "Krijg duidelijkheid over je digitale toegankelijkheid, zonder stress"
 image: "/images/rapport.webp"
-description: "Plan een vrijblijvende kennismaking. Geen verplichtingen – wel waardevol inzicht in je risico’s én kansen."
+description: "Plan een vrijblijvende kennismaking. Geen verplichtingen, wel een concreet beeld van je risico’s en je kansen."
 button:
   enable: true
   label: "Plan een kennismaking"

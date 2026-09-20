@@ -1,0 +1,80 @@
+{{/*
+  Overzichtspagina /sectoren/. Opgezet naar het model van layouts/diensten/list.html:
+  hero, kaarten per sector, daarna de body van _index.md.
+
+  Tot 20 september 2026 stond hier layout "home-style" in de front matter. Die
+  partial rendert alleen banner, features en testimonials uit de front matter en
+  negeert de markdown-body, waardoor de pagina live leeg was.
+*/}}
+{{ define "main" }}
+
+<!-- ─── Hero ─── -->
+<section class="dn-hero">
+  <div class="container">
+    <h1 class="dn-hero__title">{{ .Title }}</h1>
+    <p class="dn-hero__subtitle">{{ .Description }}</p>
+  </div>
+</section>
+
+<!-- ─── Sectorkaarten ─── -->
+<section class="section dn-services">
+  <div class="container">
+    <div class="dn-services__grid">
+      {{/* Pagina's met noindex, zoals het reseller-programma, horen niet in een
+           openbaar overzicht. */}}
+      {{ $zichtbaar := where .Pages "Params.hide_from_overview" "ne" true }}
+      {{ range sort $zichtbaar "Weight" }}
+        {{ if not (or (in (.Params.robots | default "") "noindex") .Params.noindex) }}
+          <a href="{{ .RelPermalink }}" class="dn-card">
+            <div class="dn-card__inner">
+              <h2 class="dn-card__title">{{ .Title }}</h2>
+              <p class="dn-card__desc">{{ .Description }}</p>
+              <span class="dn-card__link">
+                Meer informatie <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ─── Body van _index.md ─── -->
+<!-- De section-shortcodes brengen hun eigen container mee, dus hier geen extra
+     wrapper omheen. Zelfde opzet als layouts/diensten/list.html. -->
+{{ with .Content }}
+<article class="offerte-content">
+  {{ . }}
+</article>
+{{ end }}
+
+<!-- ─── Cijfers ─── -->
+<section class="vw-stats">
+  <div class="container">
+    <div class="vw-stats__grid">
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">950+</span>
+        <span class="vw-stats__label">audits uitgevoerd</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">63</span>
+        <span class="vw-stats__label">opdrachtgevers</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">40%</span>
+        <span class="vw-stats__label">herhalingsklanten</span>
+      </div>
+      <div class="vw-stats__item">
+        <span class="vw-stats__number">236</span>
+        <span class="vw-stats__label">opdrachten</span>
+      </div>
+    </div>
+    <p class="stats-peildatum stats-peildatum--center">Peildatum 7 augustus 2026.</p>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

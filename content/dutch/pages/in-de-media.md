@@ -12,8 +12,6 @@ slug: "in-de-media"
 url: "/in-de-media/"
 ---
 
-# In de media
-
 Julia Tol en Proper Access verschijnen regelmatig in vakpers, interviews en branchefora over digitale toegankelijkheid, de European Accessibility Act (EAA) en het Besluit digitale toegankelijkheid overheid (BDTO). Een selectie hieronder.
 
 ## Gepubliceerde artikelen

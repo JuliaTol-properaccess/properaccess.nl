@@ -175,7 +175,7 @@ tabs:
         onderwerp: "tekstcontrast"
       - titel: "Contrast van invoervelden en focus"
         uitleg: "Dit gaat niet over tekst, maar over de dingen eromheen: de rand van een invoerveld, en het kadertje dat verschijnt als je met de Tab-toets door de pagina loopt. Ook die moeten genoeg verschillen van de achtergrond, anders zie je niet waar je moet typen of waar je bent. De Radar loopt de pagina langs en meldt het als het verschil te klein is, of als er helemaal geen kadertje verschijnt."
-        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-UI/"
+        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-ui/"
         onderwerp: "contrast van niet-tekstuele onderdelen"
       - titel: "Taal van de pagina"
         uitleg: "Je ziet of de paginataal is ingesteld en welke onderdelen een andere taal hebben. De juiste taal zorgt dat een screenreader de woorden goed uitspreekt."
@@ -202,7 +202,7 @@ tabs:
         onderwerp: "tekstcontrast"
       - titel: "Contrast van randen en focus"
         uitleg: "Meet het contrast van de randen van invoervelden en van de focusstijl (WCAG 1.4.11). De Radar zet daarvoor kort focus op elk element en waarschuwt onder 3:1, of als een zichtbare focusstijl helemaal ontbreekt."
-        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-UI/"
+        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-ui/"
         onderwerp: "contrast van niet-tekstuele onderdelen"
       - titel: "Links alleen in kleur"
         uitleg: "Vindt links in lopende tekst die alleen door kleur van de tekst te onderscheiden zijn (geen onderstreping) en toont het kleurverschil met de omringende tekst. Onderstrepen is de veiligste oplossing."
@@ -349,7 +349,7 @@ tabs:
         onderwerp: "tekstcontrast"
       - titel: "Contrast van randen en focus"
         uitleg: "Meet het contrast van de randen van invoervelden en van de focusstijl (WCAG 1.4.11). De Radar zet daarvoor kort focus op elk element en waarschuwt onder 3:1, of als een zichtbare focusstijl helemaal ontbreekt."
-        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-UI/"
+        wcag: "/blog/sc-1-4-11-wat-betekent-contrast-ui/"
         onderwerp: "contrast van niet-tekstuele onderdelen"
 ---
 

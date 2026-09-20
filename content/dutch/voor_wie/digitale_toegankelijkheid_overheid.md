@@ -1,5 +1,6 @@
 ---
 title: "Toegankelijkheidsonderzoek voor overheidsorganisaties"
+weight: 1
 meta_title: "Toegankelijkheidsonderzoek voor overheidsorganisaties | Proper Access"
 date: 2025-04-02
 lastmod: 2026-09-17

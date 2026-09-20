@@ -19,7 +19,7 @@ keywords:
   - Chrome DevTools accessibility
 ---
 
-# Accessibility Tree in Chrome: Installatie en Interpretatie
+## Accessibility Tree in Chrome: Installatie en Interpretatie
 
 ## Wat is de Accessibility Tree?
 

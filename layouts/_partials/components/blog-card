@@ -12,7 +12,7 @@
       "pa-placeholder-4-magnifier"
       "pa-placeholder-5-checklist" }}
     {{ $idx := mod (hash.FNV32a .RelPermalink) (len $placeholders) }}
-    {{ $src := printf "images/blog/placeholders/%s.png" (index $placeholders $idx) }}
+    {{ $src := printf "images/blog/placeholders/%s.webp" (index $placeholders $idx) }}
     <img src="{{ $src | relURL }}" alt="" class="mb-6 w-full rounded" loading="lazy" />
   {{ end }}
   <h2 class="mb-3 h4">

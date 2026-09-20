@@ -2,9 +2,11 @@
 <section class="section pt-14">
   <div class="container">
 
+    <h1 class="mb-2">{{ .Title }}</h1>
+
     <section class="quiz-section" id="quizSection">
       <div class="quiz__lang-toggle">
-        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="Switch to English">
+        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="NL EN, switch to English">
           <span class="quiz__lang-opt quiz__lang-opt--active" id="quizLangNL">NL</span>
           <span class="quiz__lang-opt" id="quizLangEN">EN</span>
         </button>
@@ -26,7 +28,7 @@
         currentLang = currentLang === 'nl' ? 'en' : 'nl';
         nlOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'nl');
         enOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'en');
-        btn.setAttribute('aria-label', currentLang === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands');
+        btn.setAttribute('aria-label', currentLang === 'nl' ? 'NL EN, switch to English' : 'NL EN, schakel naar Nederlands');
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }

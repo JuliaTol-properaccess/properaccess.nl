@@ -1,5 +1,6 @@
 ---
 title: "Cultuur, sport en attracties"
+weight: 2
 meta_title: "Toegankelijke websites voor musea, theaters en attracties | Proper Access"
 date: 2025-04-02
 slug: "inclusie-cultuur-sport-en-attracties"

@@ -64,9 +64,17 @@
             class="{{ if not (modBool $i 2) }}
               md:order-1
             {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
-              {{ .title | markdownify }}
-            </h2>
+            {{/* Zonder banner staat er verder geen h1 op de pagina. De eerste
+                 feature draagt dan de hoofdkop, zoals op /bedankt/. */}}
+            {{ if and (eq $i 0) (not $.Params.banner) }}
+              <h1 class="mb-4">
+                {{ .title | markdownify }}
+              </h1>
+            {{ else }}
+              <h2 class="mb-4">
+                {{ .title | markdownify }}
+              </h2>
+            {{ end }}
             <p class="mb-8 text-lg">
               {{ .content | markdownify }}
             </p>

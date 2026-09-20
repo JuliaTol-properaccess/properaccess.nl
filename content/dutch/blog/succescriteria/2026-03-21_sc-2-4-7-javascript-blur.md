@@ -2,6 +2,8 @@
 title: "JavaScript dat de focus actief verwijdert"
 date: 2026-03-21
 slug: "sc-2-4-7-javascript-blur"
+aliases:
+  - "/blog/sc-2-4-7-javascript-dat-de-focus-actief-verwijdert/"
 categories:
   - "wcag-uitgelegd"
 tags:
