@@ -1,0 +1,719 @@
+{{ define "main" }}
+{{/*
+  De pagina over monitoring, /automatische-monitoring/.
+
+  Doelgroep: bedrijven en organisaties die willen weten hoe hun website ervoor
+  staat. Korte teksten, twee schermafdrukken van het dashboard, en onderaan de
+  prijzen met een rekenhulp.
+
+  Bronnen:
+  - de blokjes en de prijzen: "Monitoring: prijsvoorstel per blokje", versie 2
+    van 19 september 2026 (Google Docs).
+  - wat elke module meet: app/dimensies/ in properaccess-portaal, en
+    docs/PLAN-DIMENSIES.md en docs/PROPERWEBSITE-MARKETING.md daar.
+
+  De vorige versie staat in monitoring-los.html.
+*/}}
+{{ $paginatrappen := slice
+  (dict "id" "p1" "label" "tot 1.000" "toeslag" 0)
+  (dict "id" "p2" "label" "tot 2.500" "toeslag" 100)
+  (dict "id" "p3" "label" "tot 5.000" "toeslag" 250)
+  (dict "id" "p4" "label" "tot 10.000" "toeslag" 500)
+}}
+{{ $blokjes := slice
+  (dict "id" "seo" "naam" "Vindbaarheid in zoekmachines" "prijs" 75)
+  (dict "id" "geo" "naam" "Vindbaarheid door AI" "prijs" 75)
+  (dict "id" "snelheid" "naam" "Snelheid" "prijs" 75)
+  (dict "id" "co2" "naam" "Duurzaamheid" "prijs" 50)
+  (dict "id" "stats" "naam" "Webstatistieken" "prijs" 25)
+}}
+<div class="mo">
+
+<!-- ════════════════ 1. HERO ════════════════ -->
+<section class="mo-hero">
+  <div class="mo-container">
+    <p class="mo-hero__kenmerken">
+      <span>Monitoring van je website</span>
+      <span class="mo-hero__kenmerk-grijs">Elke maand</span>
+      <span class="mo-hero__kenmerk-grijs">Vanaf € 395 per maand</span>
+    </p>
+    <h1 class="mo-hero__titel">
+      <span class="mo-hero__groot">Elke maand weten hoe je website ervoor staat</span>
+      <span class="mo-hero__klein">8 thema's om uit te kiezen.</span>
+    </h1>
+    <p class="mo-hero__lead">
+      In een dashboard zie je hoe je website het doet, per thema, met concrete aanbevelingen.
+    </p>
+    <p class="mo-hero__knoppen">
+      <a class="mo-knop" href="#contact" data-verzoek="Een demo">Vraag een demo aan</a>
+      <a class="mo-knop mo-knop--tekst" href="#prijzen">Bereken je prijs <span aria-hidden="true">↓</span></a>
+    </p>
+    <ul class="mo-bewijs" role="list" aria-label="Kenmerken van de monitoring">
+      <li class="mo-bewijs__cijfer">Vanaf 500 pagina's per ronde</li>
+      <li>Alles op servers in de EU</li>
+      <li>950+ audits sinds 2019</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ 2. WAT JE KRIJGT ════════════════ -->
+<section class="mo-dashboard" aria-labelledby="mo-dashboard-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">01 </span>Het dashboard</p>
+    <h2 class="mo-h2" id="mo-dashboard-titel">Wat je elke maand krijgt</h2>
+
+    <figure class="mo-figuur">
+      <img src="/images/automatische-monitoring/db-onderwerpen.jpg"
+           alt="De onderwerpen van één website als tegels naast elkaar: toegankelijkheid 7 van 100 met de melding actie nodig, vindbaarheid in zoekmachines 93,5 procent, vindbaarheid door AI 3 van 3, duurzaamheid 0,08 gram CO2 per pagina, snelheid 3,4 seconden, kapotte links 99,3 procent werkend, en beveiliging van de verbinding 2 van 8 controles gehaald. Onder elke tegel staat hoeveel bevindingen en adviezen er zijn."
+           width="1600" height="608">
+      <figcaption>Elk onderwerp in zijn eigen eenheid. Er is geen totaal en geen gemiddelde.</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- ════════════════ 3. WAT WE METEN ════════════════ -->
+<section class="mo-onderwerpen" id="onderwerpen" aria-labelledby="mo-onderwerpen-titel">
+  <div class="mo-container">
+    <p class="mo-label"><span aria-hidden="true">02 </span>Wat we meten</p>
+    <h2 class="mo-h2" id="mo-onderwerpen-titel">Een basis, en blokjes die je erbij kiest</h2>
+
+    <div class="mo-blok">
+      <h3 class="mo-blok__titel">In de basis</h3>
+      <ul class="mo-modules" role="list">
+        <li class="mo-module">
+          <h4>Toegankelijkheid</h4>
+          <p class="mo-module__eenheid">Score van 0 tot 100</p>
+          <p class="mo-module__prijs">€ 395 per maand, tot 1.000 pagina's</p>
+          <p>Elke gemeten pagina gaat open in een echte browser en wordt getoetst tegen WCAG 2.2 niveau AA.
+            Per melding zie je waar hij zit, om welk element het gaat en hoe je dat element terugvindt.</p>
+          <p class="mo-module__checks">650 controlepunten per pagina</p>
+        </li>
+      </ul>
+      <figure class="mo-figuur">
+        <img src="/images/automatische-monitoring/db-problemen.jpg" loading="lazy"
+             alt="Links de lijst met open problemen, per succescriterium en met het aantal varianten erbij, bijvoorbeeld 1.4.3 contrast met 14 varianten. Rechts de meldingen die je zelf moet controleren, die niet meetellen in de cijfers."
+             width="1600" height="550">
+        <figcaption>De actielijst bij toegankelijkheid, gegroepeerd op oorzaak. De meldingen om zelf te controleren staan apart en tellen nergens mee.</figcaption>
+      </figure>
+    </div>
+
+    <div class="mo-blok">
+      <h3 class="mo-blok__titel">Blokjes die je erbij kiest</h3>
+      <ul class="mo-modules" role="list">
+        <li class="mo-module" data-thema="seo">
+          <h4>Vindbaarheid in zoekmachines</h4>
+          <p class="mo-module__vraag">Kunnen zoekmachines je pagina's goed lezen?</p>
+          <p class="mo-module__prijs">€ 75 per maand</p>
+          <p>Een pagina zonder titel of zonder omschrijving komt er in de zoekresultaten slecht uit. Twee
+            pagina's met dezelfde titel gaan met elkaar concurreren. We lopen de techniek onder elke pagina
+            na en zeggen welke pagina wat mist.</p>
+          <p class="mo-module__checks">14 controles per pagina</p>
+        </li>
+        <li class="mo-module" data-thema="geo">
+          <h4>Vindbaarheid door AI</h4>
+          <p class="mo-module__vraag">Mag ChatGPT je website lezen?</p>
+          <p class="mo-module__prijs">€ 75 per maand</p>
+          <p>Steeds meer mensen stellen hun vraag aan een AI-assistent. Die kan jou alleen noemen als hij
+            binnen mag en iets leesbaars vindt. We kijken per crawler of de deur openstaat, en of je tekst
+            ook zonder JavaScript te lezen is.</p>
+          <p class="mo-module__checks">10 controles, voor 11 AI-crawlers</p>
+        </li>
+        <li class="mo-module" data-thema="performance">
+          <h4>Snelheid</h4>
+          <p class="mo-module__vraag">Hoe lang wacht je bezoeker op een pagina?</p>
+          <p class="mo-module__prijs">€ 75 per maand</p>
+          <p>We meten met Lighthouse van Google hoe snel je pagina's openen op een mobiele telefoon. Je ziet
+            hoeveel seconden het duurt voordat de pagina echt in beeld staat, en welke bestanden daar de
+            meeste tijd kosten.</p>
+          <p class="mo-module__checks">15 controles, op een steekproef van je pagina's</p>
+        </li>
+        <li class="mo-module" data-thema="co2">
+          <h4>Duurzaamheid</h4>
+          <p class="mo-module__vraag">Hoe zwaar is je website?</p>
+          <p class="mo-module__prijs">€ 50 per maand</p>
+          <p>Hoe meer data een bezoeker binnenhaalt, hoe meer stroom dat kost. Je krijgt een schatting in
+            grammen CO<sub>2</sub> per bezoek en een beoordeling van A+ tot F, plus wat je pagina's zwaar
+            maakt: afbeeldingen die te vroeg laden, of bestanden die je server niet inpakt.</p>
+          <p class="mo-module__checks">9 controles, op een steekproef van je pagina's</p>
+        </li>
+        <li class="mo-module" data-thema="stats">
+          <h4>Webstatistieken</h4>
+          <p class="mo-module__vraag">Welke fout raakt de meeste bezoekers?</p>
+          <p class="mo-module__prijs">€ 25 per maand</p>
+          <p>Je ziet hoeveel bezoek je website krijgt en welke pagina's mensen openen. Daarbij meten we wat
+            je bezoekers zelf hebben ingesteld: zoomniveau, hoog contrast, minder beweging of een grotere
+            letter. Naast de meldingen weet je dan waar je begint. Hiervoor komt één regel JavaScript op je
+            website.</p>
+          <p class="mo-module__checks">Zonder cookies, en zonder opnames van sessies</p>
+        </li>
+        <li class="mo-module" data-thema="links">
+          <h4>Kapotte links</h4>
+          <p class="mo-module__vraag">Kom je met elke link nog ergens?</p>
+          <p class="mo-module__prijs">Zit in het basisabonnement</p>
+          <p>Links verlopen. Een pagina verdwijnt, een leverancier stopt, een adres verandert. We vragen elk
+            adres op je website één keer op en zeggen welk adres kapot is en op welke pagina die link
+            staat.</p>
+          <p class="mo-module__checks">4 controles per adres</p>
+        </li>
+        <li class="mo-module" data-thema="beveiliging">
+          <h4>Beveiliging van de verbinding</h4>
+          <p class="mo-module__vraag">Staan de instellingen aan die je bezoeker beschermen?</p>
+          <p class="mo-module__prijs">Zit in het basisabonnement</p>
+          <p>Je server stuurt met elke pagina instructies mee die bepalen wat de browser mag doen. Ontbreken
+            ze, dan mag een andere website jouw pagina in een eigen venster tonen, of verraadt je server
+            welke software hij draait.</p>
+          <p class="mo-module__checks">9 controles op 8 instellingen</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 4. PRIJZEN EN REKENHULP ════════════════ -->
+<section class="mo-prijzen" id="prijzen" aria-labelledby="mo-prijzen-titel">
+  <div class="mo-container">
+    <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>Prijzen</p>
+    <h2 class="mo-h2" id="mo-prijzen-titel">Reken je prijs uit</h2>
+    <p class="mo-intro">Kies de vorm, het aantal pagina's en de blokjes die je erbij wilt. Alle bedragen zijn
+      per website per maand en zonder 21% BTW.</p>
+
+    <div class="mo-rekenhulp">
+      <form class="mo-rekenhulp__keuzes" id="mo-rekenhulp" novalidate>
+
+        <fieldset class="mo-fieldset">
+          <legend>Welke vorm?</legend>
+          <div class="mo-keuzerij">
+            <label class="mo-optie">
+              <input type="radio" name="vorm" value="automatisch" checked data-prijs="395">
+              <span class="mo-optie__naam">Automatische monitoring</span>
+              <span class="mo-optie__prijs">€ 395</span>
+            </label>
+            <label class="mo-optie">
+              <input type="radio" name="vorm" value="semi" data-prijs="1545">
+              <span class="mo-optie__naam">Semi-automatische monitoring<span class="mo-optie__uitleg">basis, alle blokjes, de maandelijkse beoordeling van een auditor en je verklaring of VPAT</span></span>
+              <span class="mo-optie__prijs">€ 1.545</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mo-fieldset">
+          <legend>Hoeveel pagina's heeft je website?</legend>
+          <div class="mo-keuzerij">
+            {{ range $i, $trap := $paginatrappen }}
+            <label class="mo-optie">
+              <input type="radio" name="paginas" value="{{ $trap.id }}" data-prijs="{{ $trap.toeslag }}"{{ if eq $i 0 }} checked{{ end }}>
+              <span class="mo-optie__naam">{{ $trap.label }} pagina's</span>
+              <span class="mo-optie__prijs">{{ if eq $trap.toeslag 0 }}in de basis{{ else }}+ € {{ $trap.toeslag }}{{ end }}</span>
+            </label>
+            {{ end }}
+            <label class="mo-optie">
+              <input type="radio" name="paginas" value="p5" data-prijs="0" data-opmaat="ja">
+              <span class="mo-optie__naam">meer dan 10.000 pagina's</span>
+              <span class="mo-optie__prijs">op maat</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mo-fieldset" id="mo-blokjes-veld">
+          <legend>Welke blokjes wil je erbij?</legend>
+          <p class="mo-fieldset__hint" id="mo-blokjes-hint">Je betaalt voor de blokjes nooit meer dan € 250 samen. Kapotte links en beveiliging van de verbinding zitten in de basis en staan er daarom niet bij.</p>
+          <div class="mo-keuzerij">
+            {{ range $blokjes }}
+            <label class="mo-optie">
+              <input type="checkbox" name="blokje" value="{{ .id }}" data-prijs="{{ .prijs }}" aria-describedby="mo-blokjes-hint">
+              <span class="mo-optie__naam">{{ .naam }}</span>
+              <span class="mo-optie__prijs">€ {{ .prijs }}</span>
+            </label>
+            {{ end }}
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="mo-uitkomst">
+        <h3 class="mo-uitkomst__titel">Jouw prijs</h3>
+        <p class="mo-uitkomst__bedrag" id="mo-totaal">€ 395</p>
+        <p class="mo-uitkomst__eenheid">per maand, per website, zonder BTW</p>
+        <ul class="mo-uitkomst__regels" id="mo-regels" role="list"></ul>
+        <p class="sr-only" role="status" aria-live="polite" id="mo-status"></p>
+        <p class="mo-uitkomst__voet" id="mo-voet">Bij de semi-automatische monitoring komt de audit aan het
+          begin er eenmalig bij, van € 2.250 tot € 5.100. Die prijs hangt af van hoe groot en hoe complex je
+          website is.</p>
+        <a class="mo-knop mo-knop--licht" href="#contact" data-verzoek="Een offerte">Vraag een offerte aan</a>
+      </div>
+    </div>
+
+    <p class="mo-vergelijking">Ter vergelijking, prijzen van 19 september 2026: bij 5.000 pagina's rekent
+      Silktide € 878 per maand en Siteimprove € 1.268. Daar zit geen auditor in die de uitkomst beoordeelt.</p>
+  </div>
+</section>
+
+
+<!-- ════════════════ 5. VRAGEN ════════════════ -->
+<section class="mo-faq" aria-labelledby="mo-faq-titel">
+  <div class="mo-container">
+    <p class="mo-label mo-label--licht"><span class="mo-label__blokje" aria-hidden="true"></span>Vragen</p>
+    <h2 class="mo-h2 mo-h2--licht" id="mo-faq-titel">Veelgestelde vragen</h2>
+
+    <div class="mo-faq__lijst">
+      <details class="mo-vraag">
+        <summary><span>Moeten we hier iets voor installeren?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Nee. We meten van buitenaf, op pagina's die voor iedereen te bezoeken zijn. Alleen bij het blokje
+            webstatistieken komt er één regel JavaScript op je website.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Werkt dit met ons CMS?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Ja. We openen je pagina's zoals een bezoeker dat doet, dus waarmee je website gebouwd is maakt
+            niet uit. Ook pagina's waarvan de inhoud pas met JavaScript verschijnt, meten we mee.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>We hebben al een audit laten doen. Heeft dit dan nog zin?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Juist dan. Een audit laat zien hoe je website er op dat moment voor stond. Monitoring laat zien
+            of de reparaties er zijn gekomen en of er sindsdien iets nieuws is stukgegaan.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Kunnen we hiermee onze toegankelijkheidsverklaring onderbouwen?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Bij de semi-automatische monitoring wel: daar hoort een handmatige audit bij en werkt een auditor
+            je verklaring of VPAT bij. Bij de automatische monitoring niet.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Wie kan er bij het dashboard?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Iedereen met een e-mailadres van jouw organisatie, met een inloglink op dat adres. Mensen van
+            buiten, zoals je websitebouwer, nodig je los uit. Organisaties zien elkaars websites nooit.</p>
+        </div>
+      </details>
+      <details class="mo-vraag">
+        <summary><span>Kunnen we opzeggen?</span></summary>
+        <div class="mo-vraag__antwoord">
+          <p>Het abonnement loopt per maand. Kies je ervoor om de audit van de semi-automatische monitoring
+            over de maanden uit te smeren, dan hoort daar een contract van 12 maanden bij.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════ 6. CONTACT ════════════════ -->
+<section class="mo-contact" id="contact" aria-labelledby="mo-contact-titel">
+  <div class="mo-container mo-contact__grid">
+    <div>
+      <h2 class="mo-contact__titel" id="mo-contact-titel">Een demo of een offerte?</h2>
+      <p class="mo-contact__tekst">
+        In een demo laten we het dashboard zien van een website die we al meten. Wil je liever een prijs op
+        papier, vraag dan een offerte. Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
+        <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
+        Zet er het adres van je website bij, dan kijken we alvast hoe groot hij is. Je hoort binnen
+        1 werkdag van ons.
+      </p>
+      <ul class="mo-contact__mensen" role="list">
+        <li class="mo-persoon">
+          <img class="mo-persoon__foto" src="{{ "images/julia.webp" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="mo-contact__naam">Julia Tol</span><span class="mo-contact__functie">Directeur</span></span>
+        </li>
+        <li class="mo-persoon">
+          <img class="mo-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="64" height="64" loading="lazy">
+          <span><span class="mo-contact__naam">Phi Pham</span><span class="mo-contact__functie">Projectmanager</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <form
+      class="mo-form"
+      id="mo-contact-form"
+      novalidate
+      onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'monitoring', successMessage: 'Dank je, we hebben je bericht. Je hoort binnen 1 werkdag van ons.' });">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <fieldset class="mo-veld mo-keuzeveld">
+        <legend class="mo-veld__label">Waar gaat het over?</legend>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Een demo" checked>
+          <span>Een demo</span>
+        </label>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Een offerte">
+          <span>Een offerte</span>
+        </label>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Iets anders">
+          <span>Iets anders</span>
+        </label>
+      </fieldset>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-naam">Naam</label>
+        <input class="mo-veld__invoer" id="mo-naam" name="naam" autocomplete="name" required type="text">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-email">E-mailadres</label>
+        <input class="mo-veld__invoer" id="mo-email" name="email" autocomplete="email" required type="email">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-website">Adres van je website</label>
+        <input class="mo-veld__invoer" id="mo-website" name="website" autocomplete="url" type="text">
+      </div>
+      <div class="mo-veld">
+        <label class="mo-veld__label" for="mo-bericht">Waar wil je het over hebben?</label>
+        <textarea class="mo-veld__invoer" id="mo-bericht" name="bericht" rows="4"></textarea>
+      </div>
+      <button class="mo-knop mo-knop--verstuur" type="submit">Verstuur</button>
+      <div role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var form = document.getElementById("mo-rekenhulp");
+  if (!form) return;
+
+  var totaalEl = document.getElementById("mo-totaal");
+  var regelsEl = document.getElementById("mo-regels");
+  var statusEl = document.getElementById("mo-status");
+  var blokjesVeld = document.getElementById("mo-blokjes-veld");
+  var hintEl = document.getElementById("mo-blokjes-hint");
+
+  var ALLE_BLOKJES_SAMEN = 250;
+    var hintTekst = hintEl.textContent;
+
+  function euro(bedrag) {
+    return "€ " + bedrag.toLocaleString("nl-NL");
+  }
+
+  function gekozen(naam) {
+    return form.querySelector('input[name="' + naam + '"]:checked');
+  }
+
+  function reken() {
+    var vorm = gekozen("vorm");
+    var paginas = gekozen("paginas");
+    var semi = vorm.value === "semi";
+    var opMaat = paginas.dataset.opmaat === "ja";
+
+    var regels = [];
+    var totaal = Number(vorm.dataset.prijs);
+
+    if (semi) {
+      regels.push(["Semi-automatische monitoring, tot 1.000 pagina's", 395]);
+      regels.push(["Alle blokjes", ALLE_BLOKJES_SAMEN]);
+      regels.push(["Beoordeling door een auditor", 750]);
+      regels.push(["Verklaring of VPAT bijwerken", 150]);
+    } else {
+      regels.push(["Automatische monitoring, tot 1.000 pagina's", 395]);
+    }
+
+    var toeslag = Number(paginas.dataset.prijs);
+    if (toeslag > 0) {
+      regels.push([paginas.parentNode.querySelector(".mo-optie__naam").textContent, toeslag]);
+      totaal += toeslag;
+    }
+
+    if (!semi) {
+      var aangevinkt = Array.prototype.filter.call(
+        form.querySelectorAll('input[name="blokje"]'),
+        function (b) { return b.checked; }
+      );
+      var som = aangevinkt.reduce(function (t, b) { return t + Number(b.dataset.prijs); }, 0);
+      if (som > ALLE_BLOKJES_SAMEN) {
+        // Boven het bundelbedrag betaal je het bundelbedrag. Anders zou het
+        // weghalen van een blokje de prijs kunnen verhogen.
+        regels.push([
+          aangevinkt.length + " blokjes samen, in plaats van " + euro(som),
+          ALLE_BLOKJES_SAMEN
+        ]);
+        totaal += ALLE_BLOKJES_SAMEN;
+      } else {
+        aangevinkt.forEach(function (b) {
+          var prijs = Number(b.dataset.prijs);
+          regels.push([b.parentNode.querySelector(".mo-optie__naam").textContent, prijs]);
+          totaal += prijs;
+        });
+      }
+    }
+
+    regelsEl.innerHTML = "";
+    regels.forEach(function (regel) {
+      var li = document.createElement("li");
+      var naam = document.createElement("span");
+      naam.textContent = regel[0];
+      var prijs = document.createElement("span");
+      prijs.className = "mo-uitkomst__regelprijs";
+      prijs.textContent = euro(regel[1]);
+      li.appendChild(naam);
+      li.appendChild(prijs);
+      regelsEl.appendChild(li);
+    });
+
+    if (opMaat) {
+      totaalEl.textContent = "Prijs op maat";
+      statusEl.textContent = "Boven 10.000 pagina's maken we een prijs op maat.";
+    } else {
+      totaalEl.textContent = euro(totaal);
+      statusEl.textContent = "Jouw prijs: " + euro(totaal) + " per maand.";
+    }
+
+    blokjesVeld.hidden = semi;
+    hintEl.textContent = hintTekst;
+  }
+
+  form.addEventListener("change", reken);
+  reken();
+})();
+
+// De knop waarop iemand klikt, zet de keuze in het contactformulier alvast goed.
+(function () {
+  var knoppen = document.querySelectorAll("[data-verzoek]");
+  for (var i = 0; i < knoppen.length; i++) {
+    knoppen[i].addEventListener("click", function () {
+      var keuze = document.querySelector(
+        'input[name="verzoek"][value="' + this.dataset.verzoek + '"]'
+      );
+      if (keuze) keuze.checked = true;
+    });
+  }
+})();
+</script>
+
+<style>
+  /* Dezelfde vormtaal als de homepagina (hb-): vlakken zonder afronding, een
+     magenta label boven elke kop, en kleuren met een uitgerekend contrast. */
+  body:has(.mo) { background: #fff; }
+  .mo {
+    --papier: #F4F1EA; --navy: #1F2937; --magenta: #A30D4B; --licht-magenta: #FF66A0; --petrol: #004050;
+    --tekst: #454D57; --tekst-zacht: #5F656D; --lijn: rgba(31,41,55,0.22);
+    --lijn-licht: rgba(244,241,234,0.22);
+    --kop: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+    background: #fff; color: var(--navy);
+  }
+  .mo-container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+  .mo a:focus-visible, .mo button:focus-visible, .mo input:focus-visible,
+  .mo textarea:focus-visible, .mo summary:focus-visible, .mo [tabindex]:focus-visible {
+    outline: 3px solid var(--magenta); outline-offset: 3px;
+  }
+  .mo-faq :focus-visible, .mo-contact :focus-visible, .mo-prijzen :focus-visible { outline-color: var(--licht-magenta) !important; }
+  .mo-contact .mo-contact__tekst :focus-visible { outline-color: #fff !important; }
+
+  .mo-label {
+    display: flex; align-items: center; gap: 10px; margin: 0 0 16px;
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px;
+    text-transform: uppercase; color: var(--magenta);
+  }
+  .mo-label--licht { color: var(--licht-magenta); }
+  .mo-label__blokje { width: 8px; height: 8px; background: var(--licht-magenta); }
+  .mo-h2 {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(30px, 4.4vw, 56px);
+    letter-spacing: -2px; line-height: 1.0; margin: 0; max-width: 20ch; color: var(--navy);
+  }
+  .mo-h2--licht { color: var(--papier); }
+  .mo-intro { margin: 22px 0 0; max-width: 62ch; font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; color: var(--tekst); }
+
+  .mo-knop {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 14px 24px;
+    font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase;
+    background: var(--magenta); color: #fff; text-decoration: none; border: 0; cursor: pointer;
+  }
+  .mo-knop:hover { background: #8a0b3f; color: #fff; }
+  .mo-knop--tekst { background: none; color: var(--navy); padding-left: 0; padding-right: 0; }
+  .mo-knop--tekst:hover { background: none; color: var(--magenta); text-decoration: underline; text-underline-offset: 0.3em; }
+  .mo-knop--licht { background: #fff; color: var(--navy); justify-content: center; }
+  .mo-knop--licht:hover { background: var(--licht-magenta); color: var(--navy); }
+
+  /* 1. Hero */
+  .mo-hero__kenmerken {
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: center; text-align: center; margin: 0;
+    padding-top: clamp(36px, 5vw, 68px);
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--petrol);
+  }
+  .mo-hero__kenmerk-grijs { color: var(--tekst-zacht); }
+  .mo-hero__titel {
+    font-family: var(--kop); font-weight: 800; line-height: 0.92; letter-spacing: -3px; color: var(--navy);
+    font-size: clamp(36px, 6.4vw, 92px); margin: clamp(24px, 4vw, 44px) 0 0;
+    /* Tussen circa 1.280 en 1.440 px staat de kop stil in breedte terwijl de
+       letter nog groeit. Zonder deze ruimte raakt hij daar bijna de rand. */
+    padding-inline: clamp(0px, 4vw, 72px);
+    display: flex; flex-direction: column; align-items: center; text-align: center; text-wrap: pretty;
+  }
+  .mo-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
+  .mo-hero__klein { font-size: 0.5em; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-top: 0.18em; color: var(--petrol); }
+  .mo-hero__lead {
+    font-size: clamp(17px, 1.9vw, 21px); line-height: 1.55; color: var(--tekst);
+    margin: clamp(22px, 3vw, 32px) auto 0; max-width: 640px; text-align: center;
+  }
+  .mo-hero__knoppen { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: center; align-items: center; margin: clamp(22px, 3vw, 32px) 0 0; }
+  .mo-bewijs {
+    list-style: none; margin: clamp(26px, 4vw, 40px) auto 0; padding: 18px 0 clamp(28px, 4vw, 40px);
+    border-top: 1px solid var(--lijn);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 0;
+    font-family: var(--kop); font-weight: 700; font-size: 14px; color: var(--tekst-zacht);
+  }
+  .mo-bewijs li { margin: 0; }
+  .mo-bewijs li + li::before { content: "\00b7"; content: "\00b7" / ""; padding: 0 12px; color: var(--petrol); }
+  .mo-bewijs__cijfer { color: var(--navy); font-weight: 800; }
+  @media (max-width: 48rem) {
+    .mo-bewijs { gap: 8px 20px; }
+    .mo-bewijs li + li::before { content: none; }
+  }
+
+  /* 2. Het dashboard */
+  .mo-dashboard { background: var(--papier); border-top: 1px solid var(--lijn); }
+  .mo-dashboard .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
+
+  .mo-figuur { margin: clamp(28px, 4vw, 48px) 0 0; display: grid; gap: 12px; }
+  .mo-figuur img { display: block; width: 100%; height: auto; border: 1px solid var(--lijn); background: #fff; }
+  .mo-figuur figcaption { font-size: 14px; line-height: 1.5; color: var(--tekst-zacht); max-width: 70ch; }
+
+  /* 3. Wat we meten */
+  .mo-onderwerpen .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
+  .mo-blok { margin-top: clamp(28px, 4vw, 44px); }
+  .mo-blok__titel {
+    font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.2px; text-transform: uppercase;
+    color: var(--tekst-zacht); margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--lijn);
+  }
+  .mo-modules {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: clamp(22px, 2.6vw, 34px);
+  }
+  .mo-module { margin: 0; min-width: 0; border-top: 2px solid var(--navy); padding-top: 16px; }
+  .mo-module h4 { font-family: var(--kop); font-weight: 800; font-size: clamp(18px, 2vw, 22px); letter-spacing: -0.5px; margin: 0; color: var(--navy); }
+  .mo-module__prijs { margin: 6px 0 0 !important; font-family: var(--kop); font-weight: 800; font-size: 13px; color: var(--magenta) !important; }
+  .mo-module__eenheid { margin: 6px 0 0 !important; font-family: var(--kop); font-weight: 700; font-size: 13px; color: var(--petrol) !important; }
+  .mo-module__vraag { margin: 8px 0 0 !important; font-family: var(--kop); font-weight: 800; font-size: 15px; line-height: 1.3; color: var(--petrol) !important; }
+  .mo-module__checks {
+    margin-top: 14px !important; padding-top: 10px; border-top: 1px solid rgba(31,41,55,0.18);
+    font-family: var(--kop); font-weight: 700; font-size: 13px; color: var(--tekst-zacht) !important;
+  }
+  .mo-module p { margin: 12px 0 0; max-width: 60ch; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
+
+  /* De tegels van de thema's, overgenomen uit THEMAS in
+     app/services/thema_verloop.py in het portaal: een lichte vulling met een
+     donkerder rand, zodat een blokje hier dezelfde kleur draagt als zijn tegel
+     in het dashboard. De tekst blijft de gewone donkere tekstkleur; op de
+     lichtste tint haalt die nog 5,05:1. Kleur draagt geen betekenis, want de
+     naam van het blokje staat er in tekst boven.
+     Webstatistieken is geen thema in het portaal en krijgt daarom het
+     lichtgrijs uit de huisstijl. */
+  .mo-module[data-thema] {
+    background: var(--tint); border: 1px solid var(--rand);
+    padding: clamp(18px, 2.2vw, 24px);
+  }
+  .mo-module[data-thema="seo"] { --tint: #FBEAF1; --rand: #EEC2D5; }
+  .mo-module[data-thema="geo"] { --tint: #F1EBFB; --rand: #D5C4F0; }
+  .mo-module[data-thema="performance"] { --tint: #F7EFE2; --rand: #E3CEAC; }
+  .mo-module[data-thema="co2"] { --tint: #E5F1EB; --rand: #B7DBC8; }
+  .mo-module[data-thema="links"] { --tint: #E9EEF9; --rand: #C2D1EE; }
+  .mo-module[data-thema="beveiliging"] { --tint: #ECEEF2; --rand: #CAD1DA; }
+  .mo-module[data-thema="stats"] { --tint: #F5F5F5; --rand: #DDE1E7; }
+
+  /* 4. Prijzen en rekenhulp */
+  .mo-prijzen { background: var(--navy); color: var(--papier); }
+  .mo-prijzen .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
+  .mo-prijzen .mo-h2 { color: var(--papier); }
+  .mo-prijzen .mo-intro { color: #C5C5C3; }
+  .mo-rekenhulp {
+    margin: clamp(28px, 4vw, 44px) 0 0; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); gap: clamp(24px, 3vw, 40px); align-items: start;
+  }
+  .mo-rekenhulp > * { min-width: 0; }
+  .mo-rekenhulp__keuzes { display: grid; gap: clamp(22px, 2.6vw, 32px); }
+  .mo-fieldset { border: 0; margin: 0; padding: 0; }
+  .mo-fieldset[hidden] { display: none; }
+  .mo-fieldset legend {
+    padding: 0; margin: 0 0 12px; font-family: var(--kop); font-weight: 800; font-size: 11px;
+    letter-spacing: 2.2px; text-transform: uppercase; color: var(--licht-magenta);
+  }
+  .mo-fieldset__hint { margin: -6px 0 12px; font-size: 14px; color: #C5C5C3; }
+  .mo-keuzerij { display: grid; gap: 1px; background: var(--lijn-licht); border: 1px solid var(--lijn-licht); }
+  .mo-optie {
+    display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--navy);
+    cursor: pointer; font-size: 15.5px; line-height: 1.4; min-height: 48px;
+  }
+  .mo-optie:hover { background: #26303c; }
+  .mo-optie input { margin: 3px 0 0; width: 18px; height: 18px; accent-color: var(--licht-magenta); flex: none; }
+  .mo-optie__naam { flex: 1; color: var(--papier); }
+  .mo-optie__uitleg { display: block; margin-top: 4px; font-size: 13.5px; color: #C5C5C3; }
+  .mo-optie__prijs { font-family: var(--kop); font-weight: 800; font-size: 14px; color: var(--licht-magenta); white-space: nowrap; }
+  .mo-optie:has(input:checked) { background: #26303c; }
+  .mo-optie:has(input:focus-visible) { outline: 3px solid var(--licht-magenta); outline-offset: -3px; }
+
+  .mo-uitkomst { background: var(--petrol); padding: clamp(22px, 3vw, 32px); display: grid; gap: 10px; align-content: start; }
+  @media (min-width: 64rem) {
+    .mo-uitkomst { position: sticky; top: 24px; }
+  }
+  .mo-uitkomst__titel { font-family: var(--kop); font-weight: 800; font-size: 11px; letter-spacing: 2.2px; text-transform: uppercase; color: #fff; margin: 0; }
+  .mo-uitkomst__bedrag { font-family: var(--kop); font-weight: 800; font-size: clamp(40px, 6vw, 68px); letter-spacing: -2.5px; line-height: 1; color: #fff; margin: 6px 0 0; }
+  .mo-uitkomst__eenheid { margin: 0; font-size: 14px; color: #E5EDEE; }
+  .mo-uitkomst__regels { list-style: none; margin: 14px 0 0; padding: 14px 0 0; border-top: 1px solid rgba(255,255,255,0.28); display: grid; gap: 8px; }
+  .mo-uitkomst__regels li { margin: 0; display: flex; justify-content: space-between; gap: 16px; font-size: 14.5px; line-height: 1.4; color: #fff; }
+  .mo-uitkomst__regelprijs { font-family: var(--kop); font-weight: 800; white-space: nowrap; }
+  .mo-uitkomst__voet { margin: 6px 0 0; font-size: 13.5px; line-height: 1.55; color: #E5EDEE; border-top: 1px solid rgba(255,255,255,0.28); padding-top: 14px; }
+  .mo-uitkomst .mo-knop { margin-top: 6px; }
+  .mo-vergelijking { margin: clamp(24px, 3vw, 36px) 0 0; font-size: 14px; line-height: 1.6; color: #C5C5C3; max-width: 70ch; }
+
+  /* 5. Vragen */
+  .mo-faq { background: var(--papier); border-top: 1px solid var(--lijn); }
+  .mo-faq .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
+  .mo-faq .mo-h2 { color: var(--navy); }
+  .mo-faq .mo-label { color: var(--magenta); }
+  .mo-faq .mo-label__blokje { background: var(--magenta); }
+  .mo-faq__lijst { margin: clamp(26px, 4vw, 40px) 0 0; display: grid; gap: 10px; }
+  .mo-vraag { background: #fff; border: 1px solid var(--lijn); }
+  .mo-vraag summary {
+    list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    padding: 16px 20px; font-family: var(--kop); font-weight: 800; font-size: clamp(16px, 1.7vw, 18px);
+    letter-spacing: -0.3px; color: var(--navy); min-height: 44px;
+  }
+  .mo-vraag summary::-webkit-details-marker { display: none; }
+  .mo-vraag summary::after { content: "+"; font-size: 26px; font-weight: 700; color: var(--magenta); line-height: 1; }
+  .mo-vraag[open] summary::after { content: "\00d7"; }
+  .mo-vraag summary:hover { color: var(--magenta); }
+  .mo-vraag__antwoord { padding: 0 20px 18px; }
+  .mo-vraag__antwoord p { margin: 0; max-width: 72ch; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
+
+  /* 6. Contact */
+  .mo-contact { background: var(--petrol); color: var(--papier); }
+  .mo-contact__grid {
+    padding-top: clamp(44px, 6vw, 72px); padding-bottom: clamp(44px, 6vw, 72px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: start;
+  }
+  .mo-contact__grid > * { min-width: 0; }
+  .mo-contact__titel { font-family: var(--kop); font-weight: 800; font-size: clamp(28px, 3.6vw, 46px); letter-spacing: -1.6px; line-height: 1.02; margin: 0; color: #fff; max-width: 16ch; }
+  .mo-contact__tekst { margin: 20px 0 0; font-size: clamp(16px, 1.7vw, 18px); line-height: 1.6; color: #fff; max-width: 46ch; }
+  .mo-contact__tekst a { color: #fff; text-decoration: underline; text-underline-offset: 0.2em; }
+  .mo-contact__mensen { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 20px 36px; }
+  .mo-persoon { margin: 0; display: flex; align-items: center; gap: 12px; }
+  .mo-persoon__foto { width: 48px; height: 48px; object-fit: cover; border-radius: 50%; }
+  .mo-contact__naam { display: block; font-family: var(--kop); font-weight: 800; font-size: 15px; color: #fff; }
+  .mo-contact__functie { display: block; font-size: 13.5px; color: #E5EDEE; }
+  .mo-form { display: grid; gap: 14px; }
+  .mo-veld { display: grid; gap: 6px; }
+  .mo-veld__label { font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #fff; }
+  .mo-keuzeveld { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .mo-keuzeveld legend { padding: 0; margin: 0 0 8px; float: left; width: 100%; }
+  .mo-keuzeveld__optie { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; color: #fff; font-size: 15.5px; }
+  .mo-keuzeveld__optie input { width: 18px; height: 18px; accent-color: #fff; }
+  .mo-veld__invoer {
+    width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; color: var(--navy); background: #fff;
+    border: 2px solid #fff; border-radius: 0; min-height: 48px;
+  }
+  .mo-knop--verstuur { justify-content: center; background: #fff; color: var(--navy); }
+  .mo-knop--verstuur:hover { background: var(--licht-magenta); color: var(--navy); }
+  .mo-contact [role="status"] { font-size: 15px; color: #fff; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mo *, .mo *::before, .mo *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  }
+</style>
+
+{{ end }}
