@@ -4,6 +4,7 @@ meta_title: "Kleurcontrast, koppen en alt-teksten checken in je browser | Proper
 description: "Check kleurcontrast, koppenstructuur, alt-teksten, linkteksten, tabellen en tekstafstand op elke pagina, in je eigen browser. 28 van de 45 checks zijn gratis en vragen geen account."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
+bookmark_naam: "WCAG Radar"
 gratis: true
 uitgelicht: true
 weight: -3

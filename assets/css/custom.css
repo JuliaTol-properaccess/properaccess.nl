@@ -17300,7 +17300,7 @@ html.dark .contrast-voorbeeld__swatch {
   margin-top: 0.5rem;
 }
 
-/* ─── Installeren: bookmarklet, Chrome, Firefox naast elkaar ─── */
+/* ─── Installeren: bookmarklet, Chrome, Edge, Firefox naast elkaar ─── */
 .rad-get {
   padding: 0 0 3.5rem;
 }
@@ -17381,14 +17381,6 @@ html.dark .contrast-voorbeeld__swatch {
 
 .rad-install__drag {
   cursor: grab;
-}
-
-.rad-install__dot {
-  width: 0.625rem;
-  height: 0.625rem;
-  border-radius: 9999px;
-  background: #fff;
-  flex-shrink: 0;
 }
 
 .rad-install__manual {
@@ -17829,7 +17821,8 @@ html.dark .contrast-voorbeeld__swatch {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .rad-checks__grid {
+  .rad-checks__grid,
+  .rad-get__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -17841,12 +17834,12 @@ html.dark .contrast-voorbeeld__swatch {
     gap: 4rem;
   }
 
-  .rad-promise__grid {
+  .rad-promise__grid,
+  .rad-get__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .rad-checks__grid,
-  .rad-get__grid {
+  .rad-checks__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 

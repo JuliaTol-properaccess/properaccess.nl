@@ -1,9 +1,14 @@
 {{ define "main" }}
 {{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
 {{ $nl := eq .Lang "nl" }}
+{{/* De naam op de sleepknop wordt de naam van de bladwijzer in de browser. De
+     paginatitel is daar te lang voor, dus die kan per pagina worden overschreven
+     met `bookmark_naam` in de front matter. */}}
+{{ $bmNaam := .Params.bookmark_naam | default .Title }}
 {{/* Winkelpagina's van de extensie. Firefox serveert per taal een eigen pad,
-     de Chrome Web Store kiest de taal zelf op basis van je account. */}}
+     de Chrome Web Store en Edge Add-ons kiezen de taal zelf. */}}
 {{ $chrome := "https://chromewebstore.google.com/detail/wcag-radar/ppnojdoamdfckokjapadjkcggbdnfamc" }}
+{{ $edge := "https://microsoftedge.microsoft.com/addons/detail/wcag-radar/ofmanijiiffoehlpbegbdnchonjjdpfb" }}
 {{ $firefox := cond $nl "https://addons.mozilla.org/nl/firefox/addon/wcag-radar/" "https://addons.mozilla.org/en-US/firefox/addon/wcag-radar/" }}
 
 <!-- ─── HERO ─── -->
@@ -30,19 +35,19 @@
   </div>
 </section>
 
-<!-- ─── INSTALLEREN: BOOKMARKLET, CHROME, FIREFOX ─── -->
+<!-- ─── INSTALLEREN: BOOKMARKLET, CHROME, EDGE, FIREFOX ─── -->
 <section class="rad-get" id="installeren">
   <div class="hp-container">
     <h2 class="hp-heading-lg rad-get__heading">
       {{ if $nl }}Zo krijg je de Radar{{ else }}How to get the Radar{{ end }}
     </h2>
     <p class="rad-get__intro">
-      {{ if $nl }}Drie manieren, dezelfde Radar. De bookmarklet installeer je niet: je sleept
+      {{ if $nl }}Vier manieren, dezelfde Radar. De bookmarklet installeer je niet: je sleept
       hem naar je bladwijzerbalk en hij werkt in elke browser. De extensie zet je één keer in
-      Chrome of Firefox en staat daarna in je werkbalk.
-      {{ else }}Three ways, the same Radar. The bookmarklet needs no install: you drag it to
-      your bookmarks bar and it works in any browser. The extension goes into Chrome or Firefox
-      once and then sits in your toolbar.{{ end }}
+      Chrome, Edge of Firefox en staat daarna in je werkbalk.
+      {{ else }}Four ways, the same Radar. The bookmarklet needs no install: you drag it to
+      your bookmarks bar and it works in any browser. The extension goes into Chrome, Edge or
+      Firefox once and then sits in your toolbar.{{ end }}
     </p>
 
     <ul class="rad-get__grid">
@@ -68,8 +73,7 @@
              dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
              blijft de bookmark leeg. */}}
         <a class="hp-btn hp-btn--primary rad-install__drag" href="{{ .href | safeURL }}">
-          <span class="rad-install__dot" aria-hidden="true"></span>
-          {{ $.Title }}
+          {{ $bmNaam }}
         </a>
 
         <details class="rad-install__manual">
@@ -77,7 +81,7 @@
           <div class="rad-install__manual-body">
             <ol class="rad-install__steps">
               <li>{{ if $nl }}Maak een nieuwe bladwijzer aan met het ster-icoon of met Ctrl&nbsp;+&nbsp;D, op een Mac Cmd&nbsp;+&nbsp;D.{{ else }}Create a new bookmark with the star icon or with Ctrl&nbsp;+&nbsp;D, on a Mac Cmd&nbsp;+&nbsp;D.{{ end }}</li>
-              <li>{{ if $nl }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $.Title }}”.{{ else }}Give the bookmark a name, for example “{{ $.Title }}”.{{ end }}</li>
+              <li>{{ if $nl }}Geef de bladwijzer een naam, bijvoorbeeld “{{ $bmNaam }}”.{{ else }}Give the bookmark a name, for example “{{ $bmNaam }}”.{{ end }}</li>
               <li>{{ if $nl }}Plak de onderstaande code in het adresveld van de bladwijzer.{{ else }}Paste the code below into the bookmark's URL field.{{ end }}</li>
             </ol>
             <label class="rad-install__code-label" for="pa-bm-code">{{ if $nl }}Bookmarklet-code{{ else }}Bookmarklet code{{ end }}</label>
@@ -102,11 +106,11 @@
         </span>
         <h3 class="rad-get__title">{{ if $nl }}Extensie voor Chrome{{ else }}Extension for Chrome{{ end }}</h3>
         <p class="rad-get__text">
-          {{ if $nl }}Ook voor Edge, Brave en Vivaldi, want die draaien op dezelfde extensies.
+          {{ if $nl }}Ook voor Brave en Vivaldi, want die draaien op dezelfde extensies.
           De Radar krijgt een eigen knop in je werkbalk, dus je hebt geen bladwijzerbalk in
           beeld nodig.
-          {{ else }}Also for Edge, Brave and Vivaldi, since they run the same extensions. The
-          Radar gets its own button in your toolbar, so you do not need a visible bookmarks
+          {{ else }}Also for Brave and Vivaldi, since they run the same extensions. The Radar
+          gets its own button in your toolbar, so you do not need a visible bookmarks
           bar.{{ end }}
         </p>
         <a class="hp-btn hp-btn--primary" href="{{ $chrome }}">
@@ -114,6 +118,28 @@
         </a>
         <p class="rad-get__hint">
           {{ if $nl }}Je gaat naar de Chrome Web Store.{{ else }}Takes you to the Chrome Web Store.{{ end }}
+        </p>
+      </li>
+
+      <li class="rad-get__item">
+        <span class="rad-get__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M4.6 15.4c2.3 1.7 5.4 2.3 8.3 1.5 2.9-.8 4.9-2.8 5.5-5.2-1.5 1.2-3.5 1.6-5.3 1-2.2-.7-3.4-2.7-2.8-4.6.4-1.3 1.5-2.4 3-2.9"/>
+          </svg>
+        </span>
+        <h3 class="rad-get__title">{{ if $nl }}Extensie voor Edge{{ else }}Extension for Edge{{ end }}</h3>
+        <p class="rad-get__text">
+          {{ if $nl }}Uit de winkel van Edge zelf, dus je hoeft geen extensies uit een andere
+          winkel toe te staan. De Radar krijgt ook hier een eigen knop in je werkbalk.
+          {{ else }}From Edge's own add-ons store, so you do not have to allow extensions from
+          another store. Here too the Radar gets its own button in your toolbar.{{ end }}
+        </p>
+        <a class="hp-btn hp-btn--primary" href="{{ $edge }}">
+          {{ if $nl }}Installeer in Edge{{ else }}Install in Edge{{ end }}
+        </a>
+        <p class="rad-get__hint">
+          {{ if $nl }}Je gaat naar Microsoft Edge Add-ons.{{ else }}Takes you to Microsoft Edge Add-ons.{{ end }}
         </p>
       </li>
 
