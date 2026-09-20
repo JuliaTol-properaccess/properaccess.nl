@@ -13,7 +13,7 @@ keywords:
   - boetes de EAA
 ---
 
-# Kopen en verkopen van digitale producten in Europa? Zo verschilt de European Accessibility Act per land
+## Kopen en verkopen van digitale producten in Europa? Zo verschilt de European Accessibility Act per land
 
 ## Introductie
 

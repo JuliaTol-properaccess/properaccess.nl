@@ -17,7 +17,7 @@ keywords:
   - improve accessibility
 ---
 
-# What makes a good accessibility report?
+## What makes a good accessibility report?
 
 ![Illustration: a large, chaotic stack of report pages on the left turns, via a magenta arrow, into a calm, ordered step-by-step plan with four numbered steps on the right.](/images/blog/toegankelijkheidsrapport-stappenplan.webp)
 

@@ -16,7 +16,7 @@ aliases:
   - /sc-1-4-12-wat-betekent-tekstafstand/
 ---
 
-# Text Spacing: waarom je tekst nooit mag vastzetten in een vaste hoogte (WCAG 1.4.12)
+## Text Spacing: waarom je tekst nooit mag vastzetten in een vaste hoogte (WCAG 1.4.12)
 
 Je hebt net die perfecte hero-sectie gebouwd. Exacte hoogte van 400px, tekst keurig gecentreerd, pixel-perfect zoals in het ontwerp. Merkte je dat het laatste woord van de titel ineens is verdwenen? Welkom bij WCAG succescriterium 1.4.12.
 
