@@ -572,6 +572,9 @@
   .mo-hero__titel {
     font-family: var(--kop); font-weight: 800; line-height: 0.92; letter-spacing: -3px; color: var(--navy);
     font-size: clamp(36px, 6.4vw, 92px); margin: clamp(24px, 4vw, 44px) 0 0;
+    /* Tussen circa 1.280 en 1.440 px staat de kop stil in breedte terwijl de
+       letter nog groeit. Zonder deze ruimte raakt hij daar bijna de rand. */
+    padding-inline: clamp(0px, 4vw, 72px);
     display: flex; flex-direction: column; align-items: center; text-align: center; text-wrap: pretty;
   }
   .mo-hero__groot { letter-spacing: -0.04em; line-height: 0.9; }
