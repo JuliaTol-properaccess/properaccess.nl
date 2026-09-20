@@ -42,9 +42,8 @@
       <span class="mo-hero__klein">Zeven onderwerpen, gemeten vanaf 500 pagina's.</span>
     </h1>
     <p class="mo-hero__lead">
-      Wij meten je website elke maand door op zeven onderwerpen, van toegankelijkheid en vindbaarheid tot
-      snelheid en duurzaamheid. De uitkomst staat in één dashboard: wat er nieuw is, wat er is opgelost en
-      waar het al maanden hetzelfde blijft.
+      Toegankelijkheid, vindbaarheid, snelheid en duurzaamheid, in één dashboard. Je ziet wat er nieuw is,
+      wat er is opgelost en waar het al maanden hetzelfde blijft.
     </p>
     <p class="mo-hero__knoppen">
       <a class="mo-knop" href="#contact">Vraag monitoring aan</a>
@@ -71,33 +70,6 @@
            width="1600" height="608">
       <figcaption>Elk onderwerp in zijn eigen eenheid. Er is geen totaal en geen gemiddelde.</figcaption>
     </figure>
-
-    <ul class="mo-raster" role="list">
-      <li>
-        <h3>Een stand per onderwerp</h3>
-        <p>Elk onderwerp in zijn eigen eenheid. Geen totaalcijfer, want een gemiddelde verbergt juist het onderwerp waar het misgaat.</p>
-      </li>
-      <li>
-        <h3>Een lijn door de tijd</h3>
-        <p>Na elke ronde komt er een punt bij. Zo zie je of een reparatie in de cijfers terugkomt.</p>
-      </li>
-      <li>
-        <h3>Nieuw, nog open, opgelost</h3>
-        <p>Per ronde zie je wat erbij kwam en wat verdween. Iets telt pas als opgelost wanneer die pagina ook echt gemeten is.</p>
-      </li>
-      <li>
-        <h3>Een actielijst op oorzaak</h3>
-        <p>Eén fout in een sjabloon is één regel, ook als hij op 70 pagina's staat. Je repareert één ding en lost 70 pagina's op.</p>
-      </li>
-      <li>
-        <h3>Wat we niet konden meten</h3>
-        <p>Een pagina achter een inlog of een cookiemelding krijgt geen oordeel, en staat nooit als "in orde" in je dashboard.</p>
-      </li>
-      <li>
-        <h3>Export naar je eigen werklijst</h3>
-        <p>Per onderwerp of alles samen, als CSV, Excel of PDF. Werk je met meerdere websites, dan zie je ze in één overzicht.</p>
-      </li>
-    </ul>
 
     <figure class="mo-figuur">
       <img src="/images/automatische-monitoring/db-verloop.jpg" loading="lazy"
@@ -620,20 +592,10 @@
   /* 2. Het dashboard */
   .mo-dashboard { background: var(--papier); border-top: 1px solid var(--lijn); }
   .mo-dashboard .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
-  .mo-raster {
-    list-style: none; margin: clamp(28px, 4vw, 44px) 0 0; padding: 0;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1px;
-    background: var(--lijn); border: 1px solid var(--lijn);
-  }
-  .mo-raster > li { margin: 0; min-width: 0; background: var(--papier); padding: clamp(20px, 2.4vw, 26px); }
-  .mo-raster h3 { font-family: var(--kop); font-weight: 800; font-size: 17px; letter-spacing: -0.3px; margin: 0; color: var(--navy); }
-  .mo-raster p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.55; color: var(--tekst); }
 
-  .mo-figuur { margin: clamp(24px, 3.5vw, 40px) 0 0; display: grid; gap: 12px; }
+  .mo-figuur { margin: clamp(28px, 4vw, 48px) 0 0; display: grid; gap: 12px; }
   .mo-figuur img { display: block; width: 100%; height: auto; border: 1px solid var(--lijn); background: #fff; }
   .mo-figuur figcaption { font-size: 14px; line-height: 1.5; color: var(--tekst-zacht); max-width: 70ch; }
-  .mo-duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: clamp(20px, 2.6vw, 34px); align-items: start; }
-  .mo-duo .mo-figuur { min-width: 0; }
 
   /* 3. Wat we meten */
   .mo-onderwerpen .mo-container { padding-top: clamp(44px, 6vw, 76px); padding-bottom: clamp(44px, 6vw, 76px); }
