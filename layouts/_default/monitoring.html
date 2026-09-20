@@ -45,7 +45,7 @@
       In een dashboard zie je hoe je website het doet, per thema, met concrete aanbevelingen.
     </p>
     <p class="mo-hero__knoppen">
-      <a class="mo-knop" href="#contact">Vraag een demo aan</a>
+      <a class="mo-knop" href="#contact" data-verzoek="Een demo">Vraag een demo aan</a>
       <a class="mo-knop mo-knop--tekst" href="#prijzen">Bereken je prijs <span aria-hidden="true">↓</span></a>
     </p>
     <ul class="mo-bewijs" role="list" aria-label="Kenmerken van de monitoring">
@@ -143,7 +143,7 @@
             groene stroom draait.</p>
           <p class="mo-niet">Niet: een meting van het werkelijke energieverbruik. Het is een schatting uit een model.</p>
         </li>
-        <li class="mo-module">
+        <li class="mo-module" data-thema="stats">
           <h4>Webstatistieken</h4>
           <p class="mo-module__eenheid">Bezoeken per maand</p>
           <p class="mo-module__prijs">€ 25 per maand</p>
@@ -302,7 +302,7 @@
         <p class="mo-uitkomst__voet" id="mo-voet">Bij de semi-automatische monitoring komt de audit aan het
           begin er eenmalig bij, van € 2.250 tot € 5.100. Die prijs hangt af van hoe groot en hoe complex je
           website is.</p>
-        <a class="mo-knop mo-knop--licht" href="#contact">Vraag een offerte aan</a>
+        <a class="mo-knop mo-knop--licht" href="#contact" data-verzoek="Een offerte">Vraag een offerte aan</a>
       </div>
     </div>
 
@@ -370,9 +370,10 @@
 <section class="mo-contact" id="contact" aria-labelledby="mo-contact-titel">
   <div class="mo-container mo-contact__grid">
     <div>
-      <h2 class="mo-contact__titel" id="mo-contact-titel">Wil je weten waar je website staat?</h2>
+      <h2 class="mo-contact__titel" id="mo-contact-titel">Een demo of een offerte?</h2>
       <p class="mo-contact__tekst">
-        Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
+        In een demo laten we het dashboard zien van een website die we al meten. Wil je liever een prijs op
+        papier, vraag dan een offerte. Bel <a href="tel:+31855055890">085 5055 890</a>, mail naar
         <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
         Zet er het adres van je website bij, dan kijken we alvast hoe groot hij is. Je hoort binnen
         1 werkdag van ons.
@@ -395,6 +396,21 @@
       novalidate
       onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'monitoring', successMessage: 'Dank je, we hebben je bericht. Je hoort binnen 1 werkdag van ons.' });">
       <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <fieldset class="mo-veld mo-keuzeveld">
+        <legend class="mo-veld__label">Waar gaat het over?</legend>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Een demo" checked>
+          <span>Een demo</span>
+        </label>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Een offerte">
+          <span>Een offerte</span>
+        </label>
+        <label class="mo-keuzeveld__optie">
+          <input type="radio" name="verzoek" value="Iets anders">
+          <span>Iets anders</span>
+        </label>
+      </fieldset>
       <div class="mo-veld">
         <label class="mo-veld__label" for="mo-naam">Naam</label>
         <input class="mo-veld__invoer" id="mo-naam" name="naam" autocomplete="name" required type="text">
@@ -516,6 +532,19 @@
   form.addEventListener("change", reken);
   reken();
 })();
+
+// De knop waarop iemand klikt, zet de keuze in het contactformulier alvast goed.
+(function () {
+  var knoppen = document.querySelectorAll("[data-verzoek]");
+  for (var i = 0; i < knoppen.length; i++) {
+    knoppen[i].addEventListener("click", function () {
+      var keuze = document.querySelector(
+        'input[name="verzoek"][value="' + this.dataset.verzoek + '"]'
+      );
+      if (keuze) keuze.checked = true;
+    });
+  }
+})();
 </script>
 
 <style>
@@ -623,20 +652,25 @@
   .mo-module__eenheid { margin: 6px 0 0 !important; font-family: var(--kop); font-weight: 700; font-size: 13px; color: var(--petrol) !important; }
   .mo-module p { margin: 12px 0 0; max-width: 60ch; font-size: 15.5px; line-height: 1.6; color: var(--tekst); }
 
-  /* De kleuren van de thema's, overgenomen uit THEMAS in
-     app/services/thema_verloop.py in het portaal, zodat een blokje op deze
-     pagina dezelfde kleur draagt als zijn tegel en zijn lijn in het dashboard.
-     Alle zeven halen minstens 6,8:1 tegen wit. Kleur draagt hier geen
-     betekenis: de naam van het blokje staat er in tekst boven. */
-  .mo-module[data-thema] { border-top-color: var(--thema); }
-  .mo-module[data-thema] .mo-module__eenheid { color: var(--thema) !important; }
-  .mo-module[data-thema] .mo-niet { border-left-color: var(--thema); }
-  .mo-module[data-thema="seo"] { --thema: #A30D4B; }
-  .mo-module[data-thema="geo"] { --thema: #5B21A6; }
-  .mo-module[data-thema="performance"] { --thema: #8A4B00; }
-  .mo-module[data-thema="co2"] { --thema: #04663A; }
-  .mo-module[data-thema="links"] { --thema: #1C4CA0; }
-  .mo-module[data-thema="beveiliging"] { --thema: #33404F; }
+  /* De tegels van de thema's, overgenomen uit THEMAS in
+     app/services/thema_verloop.py in het portaal: een lichte vulling met een
+     donkerder rand, zodat een blokje hier dezelfde kleur draagt als zijn tegel
+     in het dashboard. De tekst blijft de gewone donkere tekstkleur; op de
+     lichtste tint haalt die nog 5,05:1. Kleur draagt geen betekenis, want de
+     naam van het blokje staat er in tekst boven.
+     Webstatistieken is geen thema in het portaal en krijgt daarom het
+     lichtgrijs uit de huisstijl. */
+  .mo-module[data-thema] {
+    background: var(--tint); border: 1px solid var(--rand);
+    padding: clamp(18px, 2.2vw, 24px);
+  }
+  .mo-module[data-thema="seo"] { --tint: #FBEAF1; --rand: #EEC2D5; }
+  .mo-module[data-thema="geo"] { --tint: #F1EBFB; --rand: #D5C4F0; }
+  .mo-module[data-thema="performance"] { --tint: #F7EFE2; --rand: #E3CEAC; }
+  .mo-module[data-thema="co2"] { --tint: #E5F1EB; --rand: #B7DBC8; }
+  .mo-module[data-thema="links"] { --tint: #E9EEF9; --rand: #C2D1EE; }
+  .mo-module[data-thema="beveiliging"] { --tint: #ECEEF2; --rand: #CAD1DA; }
+  .mo-module[data-thema="stats"] { --tint: #F5F5F5; --rand: #DDE1E7; }
   .mo-niet { border-left: 3px solid var(--petrol); padding-left: 14px; font-size: 14.5px !important; color: var(--tekst-zacht) !important; }
 
   /* 4. Hoe het werkt */
@@ -741,6 +775,10 @@
   .mo-form { display: grid; gap: 14px; }
   .mo-veld { display: grid; gap: 6px; }
   .mo-veld__label { font-family: var(--kop); font-weight: 800; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #fff; }
+  .mo-keuzeveld { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .mo-keuzeveld legend { padding: 0; margin: 0 0 8px; float: left; width: 100%; }
+  .mo-keuzeveld__optie { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; color: #fff; font-size: 15.5px; }
+  .mo-keuzeveld__optie input { width: 18px; height: 18px; accent-color: #fff; }
   .mo-veld__invoer {
     width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; color: var(--navy); background: #fff;
     border: 2px solid #fff; border-radius: 0; min-height: 48px;
