@@ -17,7 +17,7 @@ kolommen:
       - { naam: "Strippenkaart", url: "/strippenkaart/" }
       - { naam: "Toegankelijkheids-abonnement", url: "/toegankelijkheids-abonnement/" }
       - { naam: "Testen tijdens de bouw", url: "/toegankelijkheid-testen-tijdens-de-bouw/" }
-      - { naam: "Hulp bij de EAA", url: "/hulp-europese-toegankelijkheidswetgeving/" }
+      - { naam: "Hulp bij de EAA", url: "/hulp-bij-europese-toegankelijkheidswetgeving/" }
       - { naam: "Offerte aanvragen", url: "/offerte-wcag-onderzoek/" }
 
   - titel: "Voor wie"
