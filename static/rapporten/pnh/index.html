@@ -4,78 +4,221 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Rapporten provincie Noord-Holland — Proper Access</title>
+  <title>Dashboard provincie Noord-Holland | Proper Access</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --magenta: #A30D4B;
+      --ink: #1F2937;
+      --ink-2: #4b5563;
+      --muted: #6b7280;
+      --petrol: #004050;
+      --plane: #F5F5F5;
+      --surface: #ffffff;
+      --grid: #e5e7eb;
+      --axis: #c9ccd1;
+      /* Status in het Register (DigiToegankelijk). Altijd met letter en naam. */
+      --st-A: #0a8a3a;
+      --st-B: #2a78d6;
+      --st-C: #eda100;
+      --st-D: #d03b3b;
+      --st-E: #a8a7a1;
+      /* Voor en na de hercontrole: één tint, licht naar donker, plus nieuw */
+      --voor: #7aa7b3;
+      --open: #004050;
+      --nieuw: #e87ba4;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Nunito', sans-serif;
-      background: #F5F5F5;
-      color: #1F2937;
+      background: var(--plane);
+      color: var(--ink);
+      line-height: 1.5;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', 'Nunito Sans', sans-serif; line-height: 1.25; }
+    a { color: var(--petrol); }
+    a:hover { color: var(--magenta); }
+    :focus-visible { outline: 3px solid var(--magenta); outline-offset: 2px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .num { font-variant-numeric: tabular-nums; }
+
     header {
-      background: #1F2937;
-      width: 100%;
-      padding: 1.5rem 2rem;
+      background: var(--ink);
+      padding: 1.5rem 1rem;
       text-align: center;
     }
-    header h1 {
-      font-family: 'Nunito Sans', sans-serif;
-      color: #fff;
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-    header h1 span { color: #A30D4B; }
-    #report-list {
-      max-width: 800px;
-      width: 100%;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    #report-list h2 {
-      font-family: 'Nunito Sans', sans-serif;
-      margin-bottom: 1rem;
-    }
-    .report-card {
-      background: #fff;
-      padding: 1rem 1.25rem;
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
+    header h1 { color: #fff; font-size: 1.4rem; font-weight: 800; }
+    header h1 span { color: #f06a9f; }
+
+    main { max-width: 1120px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    .intro { color: var(--ink-2); max-width: 70ch; margin-bottom: 2rem; }
+
+    section { margin-bottom: 2.5rem; }
+    section > h2 { font-size: 1.3rem; margin-bottom: 0.35rem; }
+    .lead { color: var(--ink-2); max-width: 75ch; margin-bottom: 1rem; }
+    .card {
+      background: var(--surface);
+      border-radius: 8px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 1.25rem;
     }
-    .report-card a {
-      color: #004050;
-      text-decoration: none;
-      font-weight: 700;
-      font-family: 'Nunito Sans', sans-serif;
+    .grid-2 { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+    .card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .card .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 1rem; }
+    .source { color: var(--muted); font-size: 0.85rem; margin-top: 0.75rem; }
+
+    /* Kerncijfers */
+    .tiles { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+    .tile { background: var(--surface); border-radius: 8px; padding: 1rem 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .tile dt { color: var(--ink-2); font-size: 0.9rem; }
+    .tile dd { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 2rem; line-height: 1.2; }
+    .tile dd small { display: block; font-family: 'Nunito', sans-serif; font-weight: 400; font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+    .tile.hero dd { font-size: 3rem; color: var(--petrol); }
+    .meter { height: 8px; background: #d6e6ea; border-radius: 4px; margin-top: 0.5rem; overflow: hidden; }
+    .meter span { display: block; height: 100%; background: var(--petrol); border-radius: 4px; }
+
+    /* Legenda */
+    .legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; list-style: none; font-size: 0.85rem; color: var(--ink-2); margin-bottom: 0.75rem; }
+    .legend li { display: flex; align-items: center; gap: 0.4rem; }
+    .swatch { width: 16px; height: 16px; border-radius: 3px; flex: none; }
+
+    /* Patronen: elke status en elk soort balk heeft naast een kleur ook een
+       eigen vorm, zodat de grafiek zonder kleur te lezen is. A effen,
+       B schuine strepen, C stippen, D ruitjes, E liggende lijnen. */
+    .pat { forced-color-adjust: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .pat-A { background-color: var(--st-A); }
+    .pat-B { background-color: var(--st-B); background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.6) 0 2px, transparent 2px 6px); }
+    .pat-C { background-color: var(--st-C); background-image: radial-gradient(circle, rgba(31,41,55,.7) 1.3px, transparent 1.8px); background-size: 5px 5px; }
+    .pat-D { background-color: var(--st-D); background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.55) 0 1.5px, transparent 1.5px 5px), repeating-linear-gradient(-45deg, rgba(255,255,255,.55) 0 1.5px, transparent 1.5px 5px); }
+    .pat-E { background-color: var(--st-E); background-image: repeating-linear-gradient(0deg, rgba(31,41,55,.45) 0 1.5px, transparent 1.5px 5px); }
+    .pat-voor { background-color: var(--voor); }
+    .pat-open { background-color: var(--open); }
+    .pat-nieuw { background-color: var(--nieuw); background-image: repeating-linear-gradient(45deg, rgba(31,41,55,.55) 0 1.5px, transparent 1.5px 5px); }
+    .shape-voor { width: 12px; height: 12px; border-radius: 50%; border: 2.5px solid var(--voor); background: var(--surface); }
+    .shape-na { width: 11px; height: 11px; background: var(--open); transform: rotate(45deg); border-radius: 1px; }
+    .badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 1.5rem; height: 1.5rem; border-radius: 4px;
+      font-weight: 700; font-size: 0.85rem; color: #fff; flex: none;
     }
-    .report-card a:hover { color: #A30D4B; }
-    .report-date {
-      color: #9ca3af;
-      font-size: 0.85rem;
-      white-space: nowrap;
-      margin-left: 1rem;
+    .badge.st-C, .badge.st-E { color: var(--ink); }
+
+    /* Gestapelde 100%-balk */
+    .stack-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.75rem; align-items: center; margin-bottom: 0.6rem; }
+    .stack-row .label { font-size: 0.9rem; }
+    .stack { display: flex; gap: 2px; height: 24px; }
+    .stack .seg { position: relative; height: 100%; min-width: 2px; }
+    .stack .seg:first-child { border-radius: 4px 0 0 4px; }
+    .stack .seg:last-child { border-radius: 0 4px 4px 0; }
+    .stack .seg b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+    .stack .seg b span { background: var(--surface); color: var(--ink); border-radius: 3px; padding: 0 0.3rem; line-height: 1.3; }
+
+    /* Historie: gestapelde kolommen */
+    .columns { display: flex; align-items: flex-end; gap: 4px; height: 190px; border-bottom: 1px solid var(--axis); padding-top: 1.25rem; list-style: none; }
+    .columns li { position: relative; flex: 1; height: 100%; display: flex; flex-direction: column-reverse; align-items: center; outline-offset: 1px; }
+    .columns li:focus-visible { outline: 2px solid var(--magenta); }
+    .columns .col { width: 100%; max-width: 24px; display: flex; flex-direction: column-reverse; gap: 2px; }
+    .columns .col span { display: block; width: 100%; }
+    .columns .col span:last-child { border-radius: 4px 4px 0 0; }
+    .columns .total { font-size: 0.7rem; color: var(--muted); margin-bottom: 2px; }
+    .columns li:hover .col, .columns li:focus .col { filter: brightness(1.1); }
+    .x-axis { display: flex; gap: 4px; list-style: none; font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }
+    .x-axis li { flex: 1; text-align: center; white-space: nowrap; }
+
+    /* Tooltip */
+    .tip {
+      display: none; position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%);
+      background: var(--ink); color: #fff; border-radius: 6px; padding: 0.5rem 0.65rem;
+      font-size: 0.8rem; line-height: 1.4; white-space: nowrap; z-index: 5;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); text-align: left;
     }
-    .retest-needed {
-      color: #A30D4B;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-left: 1rem;
-      white-space: nowrap;
-    }
-    .retest-placeholder {
-      display: inline-block;
-      width: 1.1rem;
-      margin-left: 1rem;
+    .tip strong { display: block; margin-bottom: 0.2rem; }
+    .tip .row { display: flex; align-items: center; gap: 0.4rem; }
+    .tip .key { width: 12px; height: 12px; border-radius: 2px; }
+    .tip .v { font-weight: 700; min-width: 1.5rem; text-align: right; }
+    .has-tip:hover > .tip, .has-tip:focus > .tip { display: block; }
+    .has-tip.tip-off > .tip { display: none; }
+    .columns li:first-child .tip, .columns li:nth-child(2) .tip { left: 0; transform: none; }
+    .columns li:last-child .tip, .columns li:nth-last-child(2) .tip { left: auto; right: 0; transform: none; }
+
+    /* Voor en na: gegroepeerde balken */
+    .pairs { list-style: none; }
+    .pair { display: grid; grid-template-columns: 1fr 6.5rem; gap: 0.3rem 1rem; align-items: center; padding: 0.6rem 0; border-top: 1px solid var(--grid); }
+    .pair .result { grid-column: 2; grid-row: 1 / span 2; }
+    .pair:first-child { border-top: 0; }
+    .pair .name { font-weight: 700; font-size: 0.9rem; overflow-wrap: anywhere; }
+    .pair .name small { font-weight: 400; color: var(--muted); margin-left: 0.4rem; }
+    .bars { display: flex; flex-direction: column; gap: 3px; }
+    .bar-line { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-2); }
+    .bar-line .which { flex: none; width: 5.5rem; color: var(--muted); font-size: 0.75rem; }
+    .bar { display: flex; gap: 2px; height: 16px; }
+    .bar span { height: 100%; min-width: 2px; }
+    .bar span:last-child { border-radius: 0 4px 4px 0; }
+    .pair .result { text-align: right; font-size: 0.85rem; color: var(--ink-2); }
+    .pair .result strong { display: block; font-size: 1.1rem; color: var(--ink); }
+
+    /* Afgekeurde succescriteria: dumbbell */
+    .dumbbells { list-style: none; }
+    .dumbbell { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr 6.5rem; gap: 1rem; align-items: center; padding: 0.45rem 0; }
+    .dumbbell .name { font-size: 0.9rem; overflow-wrap: anywhere; }
+    .track { position: relative; height: 16px; background: linear-gradient(var(--grid), var(--grid)) center / 100% 1px no-repeat; }
+    .track .link { position: absolute; top: 7px; height: 2px; background: var(--voor); }
+    .track .dot { position: absolute; top: 2px; margin-left: -6px; box-shadow: 0 0 0 2px var(--surface); }
+    .track .dot.shape-na { top: 2.5px; margin-left: -5.5px; }
+    .dumbbell .val { text-align: right; font-size: 0.85rem; white-space: nowrap; }
+    .scale { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr 6.5rem; gap: 1rem; font-size: 0.72rem; color: var(--muted); }
+    .scale div { display: flex; justify-content: space-between; }
+
+    /* Tabel */
+    .table-wrap { overflow-x: auto; background: var(--surface); border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    caption { text-align: left; padding: 1rem 1.25rem 0.5rem; color: var(--ink-2); font-size: 0.85rem; }
+    th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border-top: 1px solid var(--grid); }
+    thead th { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; color: var(--ink-2); border-top: 0; white-space: nowrap; }
+    tbody th { font-weight: 700; overflow-wrap: anywhere; }
+    .sites col.c-site { width: 18%; } .sites col.c-audit { width: 24%; } .sites col.c-retest { width: 26%; } .sites col.c-trend { width: 150px; } .sites col.c-reg { width: 17%; }
+    .trend { display: block; overflow: visible; }
+    .trend .base { stroke: var(--grid); stroke-width: 1; }
+    .trend .line { fill: none; stroke: var(--open); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+    .trend .pt-audit { fill: var(--surface); stroke: var(--voor); stroke-width: 2.5; }
+    .trend .pt-retest { fill: var(--open); stroke: var(--surface); stroke-width: 2; }
+    .trend text { font-family: 'Nunito', sans-serif; font-size: 11px; fill: var(--ink); font-weight: 700; }
+    .trend { forced-color-adjust: none; }
+    td .report + .report { margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--grid); }
+    td .report a { font-weight: 700; }
+    td .meta { color: var(--muted); font-size: 0.82rem; }
+    td .figs { font-size: 0.85rem; }
+    td .gain { color: #0a6b2e; font-weight: 700; }
+    .reg { display: flex; align-items: center; gap: 0.5rem; white-space: nowrap; }
+    .todo { color: var(--magenta); font-weight: 700; white-space: nowrap; }
+    .done { white-space: nowrap; }
+    .none { color: var(--muted); }
+
+    details.data { margin-top: 1rem; font-size: 0.85rem; overflow-x: auto; }
+    details.data summary { cursor: pointer; color: var(--petrol); font-weight: 700; }
+    details.data table { margin-top: 0.5rem; font-size: 0.8rem; }
+    details.data th, details.data td { padding: 0.35rem 0.6rem; }
+    details.data td, details.data thead th { text-align: right; }
+    details.data th:first-child { text-align: left; }
+
+    @media (max-width: 640px) {
+      .dumbbell, .scale { grid-template-columns: 1fr; gap: 0.3rem; }
+      .pair { grid-template-columns: 1fr 5rem; }
+      .dumbbell .val { text-align: left; }
+      .scale > span, .scale > span:last-child { display: none; }
+      .stack-row { grid-template-columns: 1fr; gap: 0.25rem; }
+      .x-axis li:not(.year) { visibility: hidden; }
+      .table-wrap table.sites, .table-wrap .sites tbody, .table-wrap .sites tr, .table-wrap .sites th, .table-wrap .sites td { display: block; }
+      .table-wrap .sites thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .table-wrap .sites tr { border-top: 1px solid var(--grid); padding: 0.5rem 0; }
+      .table-wrap .sites th, .table-wrap .sites td { border-top: 0; padding: 0.35rem 1rem; }
+      .table-wrap .sites td::before { content: attr(data-label); display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.75rem; color: var(--ink-2); }
     }
 
     /* Login scherm */
@@ -88,321 +231,1228 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       text-align: center;
     }
-    #login-screen h2 {
-      font-family: 'Nunito Sans', sans-serif;
-      margin-bottom: 0.5rem;
-    }
-    #login-screen p {
-      color: #6b7280;
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
+    #login-screen h2 { margin-bottom: 0.5rem; }
+    #login-screen p { color: #6b7280; margin-bottom: 1.5rem; font-size: 0.95rem; }
     #login-screen input[type="password"] {
       width: 100%;
       padding: 0.7rem 1rem;
-      border: 2px solid #e5e7eb;
+      border: 2px solid #6b7280;
       border-radius: 6px;
       font-size: 1rem;
       font-family: 'Nunito', sans-serif;
       margin-bottom: 1rem;
     }
-    #login-screen input[type="password"]:focus {
-      outline: none;
-      border-color: #A30D4B;
-    }
+    #login-screen input[type="password"]:focus { outline: 3px solid var(--magenta); border-color: var(--magenta); }
     #login-screen button {
       width: 100%;
       padding: 0.7rem;
-      background: #A30D4B;
+      background: var(--magenta);
       color: #fff;
       border: none;
       border-radius: 6px;
       font-size: 1rem;
-      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 700;
       cursor: pointer;
     }
     #login-screen button:hover { background: #8a0b3f; }
-    #login-error {
-      color: #dc2626;
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      display: none;
-    }
+    #login-error { color: #dc2626; margin-top: 0.75rem; font-size: 0.9rem; display: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1><span>Proper Access</span> — Rapporten provincie Noord-Holland</h1>
+    <h1><span>Proper Access</span> | Digitale toegankelijkheid provincie Noord-Holland</h1>
   </header>
 
   <div id="login-screen">
     <h2>Inloggen</h2>
     <p>Voer het wachtwoord in om de rapporten te bekijken.</p>
     <form id="login-form">
-      <label for="password" class="sr-only" style="position:absolute;left:-9999px;">Wachtwoord</label>
+      <label for="password" class="sr-only">Wachtwoord</label>
       <input type="password" id="password" placeholder="Wachtwoord" autocomplete="off">
       <button type="submit">Inloggen</button>
     </form>
-    <p id="login-error">Onjuist wachtwoord.</p>
+    <p id="login-error" role="alert">Onjuist wachtwoord.</p>
   </div>
 
-  <div id="report-list" style="display:none">
-    <h2>Rapporten provincie Noord-Holland</h2>
-    <p style="color:#6b7280;font-size:0.9rem;margin-bottom:1rem;">Een vinkje (<span style="color:#A30D4B;font-weight:700;">✓</span>) geeft aan dat de retest nog moet worden uitgevoerd.</p>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202511_biografienzkg/">Audit digitale toegankelijkheid van website biografienzkg.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">5 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_boerenbusinessinbalans/">Audit digitale toegankelijkheid van website boerenbusinessinbalans.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">21 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_evdata/">Audit digitale toegankelijkheid van website evdata.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">27 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_financien.noord-holland/">Audit digitale toegankelijkheid van website financien.noord-holland.nl en noordholland.begroting-2026.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">15 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_formulieren.noord-holland/">Audit digitale toegankelijkheid van website formulieren.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">18 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202510_gwbeheergooi/">Audit digitale toegankelijkheid van website gwbeheergooi.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">16 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_jouwnoord-holland/">Audit digitale toegankelijkheid van website jouwnoord-holland.nl/jouwruimte</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">6 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202510_kanaalnaardetoekomst/">Audit digitale toegankelijkheid van website kanaalnaardetoekomst.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">31 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_mra-e/">Audit digitale toegankelijkheid van website laadpaal.mrae.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">27 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202511_nzkg/">Audit digitale toegankelijkheid van website noordzeekanaalgebied.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">5 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202510_platform.groenkapitaal/">Audit digitale toegankelijkheid van website platform.groenkapitaal.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">17 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202510_servicepuntduurzameenergie/">Audit digitale toegankelijkheid van website servicepuntduurzameenergie.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">14 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_steunpuntcultureelerfgoednh/">Audit digitale toegankelijkheid van website steunpuntcultureelerfgoednh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">13 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_vacatures.noord-holland/">Content audit digitale toegankelijkheid van website vacatures.noord-holland.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">16 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="https://audit.properaccess.nl/reports/202509_vveladen/">Audit digitale toegankelijkheid van website vveladen.nl</a>
-      <span class="retest-placeholder" aria-hidden="true"></span>
-      <span class="report-date">20 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_magazine.noord-holland_techniek/">Techniekaudit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">6 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_retest_jouwnoord-holland/">Hercontrole van de audit digitale toegankelijkheid van website jouwnoord-holland.nl/jouwruimte</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">16 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_retest.vacatures.noord-holland/">Hercontrole van content-audit digitale toegankelijkheid van website vacatures.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">26 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_vveladen.nl_retest/">Hercontrole digitale toegankelijkheid van website vveladen.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">21 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_pimnh.nl_retest/">Hercontrole digitale toegankelijkheid van website pimnh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">14 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_noordzeekanaalgebied.nl_retest/">Hercontrole digitale toegankelijkheid van website noordzeekanaalgebied.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202604_nhbereikbaar.nl_retest/">Hercontrole digitale toegankelijkheid van website nhbereikbaar.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">6 mei 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_laadpaal.laadwerk.nl_retest/">Hercontrole digitale toegankelijkheid van website laadpaal.laadwerk.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_laadkaart.laadwerk.nl_retest/">Hercontrole digitale toegankelijkheid van website laadkaart.laadwerk.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_kanaalnaardetoekomst.nl_retest/">Hercontrole digitale toegankelijkheid van website kanaalnaardetoekomst.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202605_energieregionh.nl_retest/">Hercontrole digitale toegankelijkheid van website energieregionh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">7 mei 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202609_biografienzkg.nl_retest/">Hercontrole digitale toegankelijkheid van website biografienzkg.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">22 september 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202508_noord-holland.bestuurlijkeinformatie/">Content-audit digitale toegankelijkheid van website noordholland.bestuurlijkeinformatie.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 augustus 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202508_noord-holland.stateninformatie/">Content-audit digitale toegankelijkheid van website noord-holland.stateninformatie.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">22 augustus 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_magazine.noord-holland_content/">Content-audit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">6 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_vacatures.noord-holland/">Content audit digitale toegankelijkheid van website vacatures.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">16 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_geoapps.noord-holland/">Content audit digitale toegankelijkheid van website geoapps.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">13 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_cijfers.noord-holland.nl:jive/">Content audit digitale toegankelijkheid van website cijfers.noord-holland.nl/jive</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">19 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202510_cijfers_noordholland/">Content audit digitale toegankelijkheid van website cijfers.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">16 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_geodata_noord-holland/">Audit digitale toegankelijkheid van zeven kaartenwebsites van de provincie Noord-Holland</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">19 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202508_tickets.huisvanhilde/">Audit digitale toegankelijkheid van website tickets.huisvanhilde.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">29 augustus 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_steunpuntcultureelerfgoednh/">Audit digitale toegankelijkheid van website steunpuntcultureelerfgoednh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">13 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_pimnh.nl/">Audit digitale toegankelijkheid van website pimnh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">29 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202510_nhbereikbaar/">Audit digitale toegankelijkheid van website nhbereikbaar.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">31 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202601_mijnsubsidie/">Audit digitale toegankelijkheid van website mijnsubsidie.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">23 januari 2026</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_magazine.noord-holland/">Audit digitale toegankelijkheid van website magazine.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">6 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202510_leidraadlc.noord-holland.nl/">Audit digitale toegankelijkheid van website leidraadlc.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">21 oktober 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_koopstromen.nl/">Audit digitale toegankelijkheid van website koopstromen.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">27 november 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_jouwnoord-holland/">Audit digitale toegankelijkheid van website jouwnoord-holland.nl/jouwruimte</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">6 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202508_huisvanhilde/">Audit digitale toegankelijkheid van website huisvanhilde.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">30 augustus 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_formulieren.noord-holland/">Audit digitale toegankelijkheid van website formulieren.noord-holland.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">18 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202509_financien.noord-holland/">Audit digitale toegankelijkheid van website financien.noord-holland.nl en noordholland.begroting-2026.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">15 september 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202510_energieregionh/">Audit digitale toegankelijkheid van website energieregionh.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">27-10-2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202508_collectie.huisvanhilde/">Audit digitale toegankelijkheid van website collectie.huisvanhilde.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">30 augustus 2025</span>
-    </div>
-    <div class="report-card">
-      <a href="/rapporten/202511_5minutenai.nl/">Audit digitale toegankelijkheid van website 5minutenai.nl</a>
-      <span class="retest-needed" aria-label="Retest moet nog worden uitgevoerd">✓</span>
-      <span class="report-date">22 november 2025</span>
-    </div>
-  </div>
+  <main id="report-list" style="display:none">
+    <p class="intro">Hier vind je alle rapporten die we voor de provincie Noord-Holland maakten, en wat de hercontroles hebben opgeleverd. De cijfers over onze rapporten komen uit de rapporten zelf. De statussen komen van het dashboard van DigiToegankelijk.</p>
+
+    
+    <section aria-labelledby="kop-kerncijfers">
+      <h2 id="kop-kerncijfers" class="sr-only">Kerncijfers</h2>
+      <dl class="tiles">
+        <div class="tile">
+          <dt>Websites onderzocht</dt>
+          <dd>32<small>in 45 rapporten: 34 audits en 11 hercontroles</small></dd>
+        </div>
+        <div class="tile">
+          <dt>Bevindingen gevonden</dt>
+          <dd>1654<small>in alle audits samen, zonder de hercontroles</small></dd>
+        </div>
+        <div class="tile hero">
+          <dt>Bevindingen opgelost</dt>
+          <dd>144<small>van de 268 bevindingen in 7 hercontroles die het aantal opgelost tellen</small></dd>
+        </div>
+        <div class="tile">
+          <dt>Hercontrole uitgevoerd</dt>
+          <dd>10 van 31<small>websites met bevindingen</small>
+            <div class="meter" aria-hidden="true"><span style="width: 32.3%"></span></div>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    
+    <section aria-labelledby="kop-register">
+      <h2 id="kop-register">Status in het Register</h2>
+      <p class="lead">De provincie is verantwoordelijk voor 34 websites en apps. Elke website heeft een toegankelijkheidsverklaring met een status van A (voldoet volledig) tot E (geen verklaring). A, B en C voldoen aan de wet.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Status nu, vergeleken met alle provincies</h3>
+          <p class="sub">Percentage websites en apps per status</p>
+          <ul class="legend" aria-hidden="true">
+            <li><span class="swatch pat pat-A"></span><strong>A</strong> Voldoet volledig</li>
+            <li><span class="swatch pat pat-B"></span><strong>B</strong> Voldoet gedeeltelijk</li>
+            <li><span class="swatch pat pat-C"></span><strong>C</strong> Eerste maatregelen genomen</li>
+            <li><span class="swatch pat pat-D"></span><strong>D</strong> Voldoet niet</li>
+            <li><span class="swatch pat pat-E"></span><strong>E</strong> Geen verklaring</li>
+          </ul>
+          <div class="stack-row">
+            <span class="label">Noord-Holland</span>
+            <div class="stack">
+              <span class="seg has-tip pat pat-A" tabindex="0" style="flex: 3" aria-label="Noord-Holland, status A (Voldoet volledig): 3%"><span class="tip" aria-hidden="true"><strong>3%</strong>A: Voldoet volledig</span>
+              </span>
+              <span class="seg has-tip pat pat-B" tabindex="0" style="flex: 94" aria-label="Noord-Holland, status B (Voldoet gedeeltelijk): 94%"><b aria-hidden="true"><span>B 94%</span></b><span class="tip" aria-hidden="true"><strong>94%</strong>B: Voldoet gedeeltelijk</span>
+              </span>
+              <span class="seg has-tip pat pat-D" tabindex="0" style="flex: 3" aria-label="Noord-Holland, status D (Voldoet niet): 3%"><span class="tip" aria-hidden="true"><strong>3%</strong>D: Voldoet niet</span>
+              </span>
+            </div>
+          </div>
+          <div class="stack-row">
+            <span class="label">Alle provincies</span>
+            <div class="stack">
+              <span class="seg has-tip pat pat-A" tabindex="0" style="flex: 5" aria-label="Alle provincies, status A (Voldoet volledig): 5%"><span class="tip" aria-hidden="true"><strong>5%</strong>A: Voldoet volledig</span>
+              </span>
+              <span class="seg has-tip pat pat-B" tabindex="0" style="flex: 55" aria-label="Alle provincies, status B (Voldoet gedeeltelijk): 55%"><b aria-hidden="true"><span>B 55%</span></b><span class="tip" aria-hidden="true"><strong>55%</strong>B: Voldoet gedeeltelijk</span>
+              </span>
+              <span class="seg has-tip pat pat-C" tabindex="0" style="flex: 7" aria-label="Alle provincies, status C (Eerste maatregelen genomen): 7%"><span class="tip" aria-hidden="true"><strong>7%</strong>C: Eerste maatregelen genomen</span>
+              </span>
+              <span class="seg has-tip pat pat-D" tabindex="0" style="flex: 28" aria-label="Alle provincies, status D (Voldoet niet): 28%"><b aria-hidden="true"><span>D 28%</span></b><span class="tip" aria-hidden="true"><strong>28%</strong>D: Voldoet niet</span>
+              </span>
+              <span class="seg has-tip pat pat-E" tabindex="0" style="flex: 6" aria-label="Alle provincies, status E (Geen verklaring): 6%"><span class="tip" aria-hidden="true"><strong>6%</strong>E: Geen verklaring</span>
+              </span>
+            </div>
+          </div>
+          <details class="data">
+            <summary>Toon als tabel</summary>
+            <table>
+              <thead><tr><th scope="col">Status</th><th scope="col">Noord-Holland</th><th scope="col">Alle provincies</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">A: Voldoet volledig</th><td class="num">1 (3%)</td><td class="num">5%</td></tr>
+                <tr><th scope="row">B: Voldoet gedeeltelijk</th><td class="num">32 (94%)</td><td class="num">55%</td></tr>
+                <tr><th scope="row">C: Eerste maatregelen genomen</th><td class="num">0 (0%)</td><td class="num">7%</td></tr>
+                <tr><th scope="row">D: Voldoet niet</th><td class="num">1 (3%)</td><td class="num">28%</td></tr>
+                <tr><th scope="row">E: Geen verklaring</th><td class="num">0 (0%)</td><td class="num">6%</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+
+        <div class="card">
+          <h3>Zo veranderde de status</h3>
+          <p class="sub">Aantal websites en apps per status, per kwartaal</p>
+          <ul class="legend" aria-hidden="true">
+            <li><span class="swatch pat pat-A"></span>A</li>
+            <li><span class="swatch pat pat-B"></span>B</li>
+            <li><span class="swatch pat pat-C"></span>C</li>
+            <li><span class="swatch pat pat-D"></span>D</li>
+            <li><span class="swatch pat pat-E"></span>E</li>
+          </ul>
+          <ul class="columns">
+            <li class="has-tip" tabindex="0" aria-label="1 jul 2022: A 0, B 1, C 0, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 1.6%"><span class="pat pat-B" style="flex: 1"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jul 2022</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">1</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 okt 2022: A 0, B 1, C 0, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 1.6%"><span class="pat pat-B" style="flex: 1"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 okt 2022</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">1</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jan 2023: A 0, B 1, C 0, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 1.6%"><span class="pat pat-B" style="flex: 1"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jan 2023</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">1</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 apr 2023: A 0, B 0, C 0, D 1, E 0">
+              <div class="col" aria-hidden="true" style="height: 1.6%"><span class="pat pat-D" style="flex: 1"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 apr 2023</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jul 2023: A 0, B 0, C 0, D 1, E 0">
+              <div class="col" aria-hidden="true" style="height: 1.6%"><span class="pat pat-D" style="flex: 1"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jul 2023</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 okt 2023: A 0, B 0, C 0, D 1, E 60">
+              <div class="col" aria-hidden="true" style="height: 100%"><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 60"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 okt 2023</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">60</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jan 2024: A 0, B 0, C 0, D 1, E 60">
+              <div class="col" aria-hidden="true" style="height: 100%"><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 60"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jan 2024</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">60</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 apr 2024: A 0, B 0, C 0, D 1, E 47">
+              <div class="col" aria-hidden="true" style="height: 78.7%"><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 47"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 apr 2024</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">47</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jul 2024: A 0, B 0, C 0, D 1, E 47">
+              <div class="col" aria-hidden="true" style="height: 78.7%"><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 47"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jul 2024</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">47</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 okt 2024: A 0, B 0, C 0, D 1, E 47">
+              <div class="col" aria-hidden="true" style="height: 78.7%"><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 47"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 okt 2024</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">0</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">47</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jan 2025: A 0, B 1, C 0, D 1, E 44">
+              <div class="col" aria-hidden="true" style="height: 75.4%"><span class="pat pat-B" style="flex: 1"></span><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 44"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jan 2025</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">1</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">44</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 apr 2025: A 0, B 1, C 0, D 1, E 44">
+              <div class="col" aria-hidden="true" style="height: 75.4%"><span class="pat pat-B" style="flex: 1"></span><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 44"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 apr 2025</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">1</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">0</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">44</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jul 2025: A 0, B 3, C 17, D 1, E 15">
+              <div class="col" aria-hidden="true" style="height: 59%"><span class="pat pat-B" style="flex: 3"></span><span class="pat pat-C" style="flex: 17"></span><span class="pat pat-D" style="flex: 1"></span><span class="pat pat-E" style="flex: 15"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jul 2025</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">3</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">17</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">1</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">15</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 okt 2025: A 0, B 13, C 15, D 5, E 2">
+              <div class="col" aria-hidden="true" style="height: 57.4%"><span class="pat pat-B" style="flex: 13"></span><span class="pat pat-C" style="flex: 15"></span><span class="pat pat-D" style="flex: 5"></span><span class="pat pat-E" style="flex: 2"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 okt 2025</strong><span class="row"><span class="key pat pat-A"></span><span class="v">0</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">13</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">15</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">5</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">2</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jan 2026: A 1, B 31, C 3, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 57.4%"><span class="pat pat-A" style="flex: 1"></span><span class="pat pat-B" style="flex: 31"></span><span class="pat pat-C" style="flex: 3"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 jan 2026</strong><span class="row"><span class="key pat pat-A"></span><span class="v">1</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">31</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">3</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 apr 2026: A 1, B 32, C 2, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 57.4%"><span class="pat pat-A" style="flex: 1"></span><span class="pat pat-B" style="flex: 32"></span><span class="pat pat-C" style="flex: 2"></span></div>
+              <span class="tip" aria-hidden="true"><strong>1 apr 2026</strong><span class="row"><span class="key pat pat-A"></span><span class="v">1</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">32</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">2</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+            <li class="has-tip" tabindex="0" aria-label="1 jul 2026: A 1, B 32, C 1, D 0, E 0">
+              <div class="col" aria-hidden="true" style="height: 55.7%"><span class="pat pat-A" style="flex: 1"></span><span class="pat pat-B" style="flex: 32"></span><span class="pat pat-C" style="flex: 1"></span></div><span class="total" aria-hidden="true">34</span>
+              <span class="tip" aria-hidden="true"><strong>1 jul 2026</strong><span class="row"><span class="key pat pat-A"></span><span class="v">1</span> A: Voldoet volledig</span><span class="row"><span class="key pat pat-B"></span><span class="v">32</span> B: Voldoet gedeeltelijk</span><span class="row"><span class="key pat pat-C"></span><span class="v">1</span> C: Eerste maatregelen genomen</span><span class="row"><span class="key pat pat-D"></span><span class="v">0</span> D: Voldoet niet</span><span class="row"><span class="key pat pat-E"></span><span class="v">0</span> E: Geen verklaring</span></span>
+            </li>
+          </ul>
+          <ul class="x-axis" aria-hidden="true">
+            <li></li>
+            <li></li>
+            <li class="year">2023</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="year">2024</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="year">2025</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="year">2026</li>
+            <li></li>
+            <li></li>
+          </ul>
+          <details class="data">
+            <summary>Toon als tabel</summary>
+            <table>
+              <thead><tr><th scope="col">Datum</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1 jul 2022</th><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 okt 2022</th><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 jan 2023</th><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 apr 2023</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 jul 2023</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 okt 2023</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">60</td></tr>
+                <tr><th scope="row">1 jan 2024</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">60</td></tr>
+                <tr><th scope="row">1 apr 2024</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">47</td></tr>
+                <tr><th scope="row">1 jul 2024</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">47</td></tr>
+                <tr><th scope="row">1 okt 2024</th><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">47</td></tr>
+                <tr><th scope="row">1 jan 2025</th><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">44</td></tr>
+                <tr><th scope="row">1 apr 2025</th><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">44</td></tr>
+                <tr><th scope="row">1 jul 2025</th><td class="num">0</td><td class="num">3</td><td class="num">17</td><td class="num">1</td><td class="num">15</td></tr>
+                <tr><th scope="row">1 okt 2025</th><td class="num">0</td><td class="num">13</td><td class="num">15</td><td class="num">5</td><td class="num">2</td></tr>
+                <tr><th scope="row">1 jan 2026</th><td class="num">1</td><td class="num">31</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 apr 2026</th><td class="num">1</td><td class="num">32</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+                <tr><th scope="row">1 jul 2026</th><td class="num">1</td><td class="num">32</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </div>
+      <p class="source">Bron: <a href="https://dashboard.digitoegankelijk.nl/organisaties/128">dashboard DigiToegankelijk, provincie Noord-Holland</a>, bijgewerkt op 23-09-2026. Het dashboard telt websites met een verklaring in het Register; E betekent dat een website nog geen verklaring heeft.</p>
+    </section>
+
+    
+    <section aria-labelledby="kop-hercontroles">
+      <h2 id="kop-hercontroles">Wat de hercontroles opleverden</h2>
+      <p class="lead">Bij een hercontrole toetsen we de bevindingen uit de audit opnieuw. De bovenste balk is het aantal bevindingen bij de audit, de onderste wat er bij de hercontrole nog openstaat, plus de nieuwe bevindingen.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Bevindingen voor en na de hercontrole</h3>
+          <p class="sub">Aantal bevindingen per hercontrole, nieuwste eerst</p>
+          <ul class="legend" aria-hidden="true">
+            <li><span class="swatch pat pat-voor"></span>Bij de audit</li>
+            <li><span class="swatch pat pat-open"></span>Staat nog open</li>
+            <li><span class="swatch pat pat-nieuw"></span>Nieuw bij de hercontrole (gestreept)</li>
+          </ul>
+          <ul class="pairs">
+            <li class="pair">
+              <span class="name">kanaalnaardetoekomst.nl<small>22 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 35.1%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">33</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 20.2%"><span class="pat pat-open" style="flex: 17"></span><span class="pat pat-nieuw" style="flex: 2"></span></div><span class="num">19</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 33 bevindingen. Bij de hercontrole 17 nog open en 2 nieuw.</span>
+              <span class="result"><strong>16</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">laadpaal.laadwerk.nl<small>21 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 17%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">16</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 7.4%"><span class="pat pat-open" style="flex: 3"></span><span class="pat pat-nieuw" style="flex: 4"></span></div><span class="num">7</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 16 bevindingen. Bij de hercontrole 3 nog open en 4 nieuw.</span>
+              <span class="result"><strong>13</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">laadkaart.laadwerk.nl<small>22 t/m 23 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 19.1%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">18</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 7.4%"><span class="pat pat-open" style="flex: 7"></span></div><span class="num">7</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 18 bevindingen. Bij de hercontrole 7 nog open.</span>
+              <span class="result"><strong>11</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">noordzeekanaalgebied.nl<small>21 t/m 23 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 51.1%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">48</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 35.1%"><span class="pat pat-open" style="flex: 20"></span><span class="pat pat-nieuw" style="flex: 13"></span></div><span class="num">33</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 48 bevindingen. Bij de hercontrole 20 nog open en 13 nieuw.</span>
+              <span class="result"><strong>28</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">biografienzkg.nl<small>17 t/m 20 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 46.8%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">44</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 17%"><span class="pat pat-open" style="flex: 14"></span><span class="pat pat-nieuw" style="flex: 2"></span></div><span class="num">16</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 44 bevindingen. Bij de hercontrole 14 nog open en 2 nieuw.</span>
+              <span class="result"><strong>30</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">vveladen.nl<small>16 t/m 20 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 66%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">62</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 42.6%"><span class="pat pat-open" style="flex: 33"></span><span class="pat pat-nieuw" style="flex: 7"></span></div><span class="num">40</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 62 bevindingen. Bij de hercontrole 33 nog open en 7 nieuw.</span>
+              <span class="result"><strong>24</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">pimnh.nl<small>12 t/m 14 september 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 50%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">47</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 27.7%"><span class="pat pat-open" style="flex: 22"></span><span class="pat pat-nieuw" style="flex: 4"></span></div><span class="num">26</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 47 bevindingen. Bij de hercontrole 22 nog open en 4 nieuw.</span>
+              <span class="result"><strong>22</strong>opgelost</span>
+            </li>
+            <li class="pair">
+              <span class="name">energieregionh.nl<small>5 t/m 7 mei 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 100%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">94</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 50%"><span class="pat pat-open" style="flex: 47"></span></div><span class="num">47</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 94 bevindingen. Bij de hercontrole 47 nog open.</span>
+              <span class="result">aantal opgelost niet geteld</span>
+            </li>
+            <li class="pair">
+              <span class="name">nhbereikbaar.nl<small>4 t/m 6 mei 2026</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 36.2%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">34</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 12.8%"><span class="pat pat-open" style="flex: 11"></span><span class="pat pat-nieuw" style="flex: 1"></span></div><span class="num">12</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 34 bevindingen. Bij de hercontrole 11 nog open en 1 nieuw.</span>
+              <span class="result">aantal opgelost niet geteld</span>
+            </li>
+            <li class="pair">
+              <span class="name">vacatures.noord-holland.nl<small>20 t/m 26 november 2025</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 20.2%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">19</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 2.1%"><span class="pat pat-open" style="flex: 2"></span></div><span class="num">2</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 19 bevindingen. Bij de hercontrole 2 nog open.</span>
+              <span class="result">aantal opgelost niet geteld</span>
+            </li>
+            <li class="pair">
+              <span class="name">jouwnoord-holland.nl/jouwruimte<small>16 oktober 2025</small></span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar-line"><span class="which">Audit</span><div class="bar" style="width: 29.8%"><span class="pat pat-voor" style="flex: 1"></span></div><span class="num">28</span></div>
+                <div class="bar-line"><span class="which">Hercontrole</span><div class="bar" style="width: 18.1%"><span class="pat pat-open" style="flex: 17"></span></div><span class="num">17</span></div>
+              </div>
+              <span class="sr-only">Bij de audit 28 bevindingen. Bij de hercontrole 17 nog open.</span>
+              <span class="result">aantal opgelost niet geteld</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Afgekeurde succescriteria voor en na</h3>
+          <p class="sub">Hoe minder, hoe beter. Een website voldoet pas aan WCAG 2.2 AA als dit 0 is.</p>
+          <ul class="legend" aria-hidden="true">
+            <li><span class="shape-voor pat"></span>Bij de audit (open rondje)</li>
+            <li><span class="shape-na pat"></span>Bij de hercontrole (dicht ruitje)</li>
+          </ul>
+          <ul class="dumbbells">
+            <li class="dumbbell">
+              <span class="name">kanaalnaardetoekomst.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 66.7%; width: 16.7%"></span>
+                <span class="dot shape-voor pat" style="left: 83.3%"></span>
+                <span class="dot shape-na pat" style="left: 66.7%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>20<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>16</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">laadpaal.laadwerk.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 20.8%; width: 12.5%"></span>
+                <span class="dot shape-voor pat" style="left: 33.3%"></span>
+                <span class="dot shape-na pat" style="left: 20.8%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>8<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>5</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">laadkaart.laadwerk.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 25%; width: 20.8%"></span>
+                <span class="dot shape-voor pat" style="left: 45.8%"></span>
+                <span class="dot shape-na pat" style="left: 25%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>11<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>6</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">noordzeekanaalgebied.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 70.8%; width: 29.2%"></span>
+                <span class="dot shape-voor pat" style="left: 100%"></span>
+                <span class="dot shape-na pat" style="left: 70.8%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>24<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>17</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">biografienzkg.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 37.5%; width: 50%"></span>
+                <span class="dot shape-voor pat" style="left: 87.5%"></span>
+                <span class="dot shape-na pat" style="left: 37.5%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>21<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>9</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">vveladen.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 70.8%; width: 16.7%"></span>
+                <span class="dot shape-voor pat" style="left: 87.5%"></span>
+                <span class="dot shape-na pat" style="left: 70.8%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>21<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>17</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">pimnh.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 66.7%; width: 20.8%"></span>
+                <span class="dot shape-voor pat" style="left: 87.5%"></span>
+                <span class="dot shape-na pat" style="left: 66.7%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>21<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>16</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">energieregionh.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 75%; width: 20.8%"></span>
+                <span class="dot shape-voor pat" style="left: 95.8%"></span>
+                <span class="dot shape-na pat" style="left: 75%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>23<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>18</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">nhbereikbaar.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 33.3%; width: 16.7%"></span>
+                <span class="dot shape-voor pat" style="left: 50%"></span>
+                <span class="dot shape-na pat" style="left: 33.3%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>12<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>8</strong></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">vacatures.noord-holland.nl</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 12.5%; width: 37.5%"></span>
+                <span class="dot shape-voor pat" style="left: 50%"></span>
+                <span class="dot shape-na pat" style="left: 12.5%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>12<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>3</strong> <small>(van 33)</small></span>
+            </li>
+            <li class="dumbbell">
+              <span class="name">jouwnoord-holland.nl/jouwruimte</span>
+              <div class="track" aria-hidden="true">
+                <span class="link" style="left: 41.7%; width: 12.5%"></span>
+                <span class="dot shape-voor pat" style="left: 54.2%"></span>
+                <span class="dot shape-na pat" style="left: 41.7%"></span>
+              </div>
+              <span class="val num"><span class="sr-only">Van </span>13<span aria-hidden="true"> → </span><span class="sr-only"> naar </span><strong>10</strong></span>
+            </li>
+          </ul>
+          <div class="scale" aria-hidden="true"><span></span><div><span>0</span><span>24</span></div><span></span></div>
+        </div>
+      </div>
+      <p class="source">4 oudere hercontroles noemen niet hoeveel bevindingen zijn opgelost. Het verschil tussen de twee balken is daar geen goede telling: een bevinding op een pagina die niet meer bestaat, vervalt, en is dan niet opgelost.</p>
+    </section>
+
+    
+    <section aria-labelledby="kop-websites">
+      <h2 id="kop-websites">Alle websites en rapporten</h2>
+      <p class="lead">Per website de audit, de hercontrole en de status in het Register. Het lijntje bij Verloop loopt van het aantal bevindingen bij de audit (open rondje) naar wat er na de hercontrole nog in het rapport staat (dicht ruitje), nieuwe bevindingen meegeteld. De status in het Register komt uit de toegankelijkheidsverklaring en telt 50 succescriteria (WCAG 2.1); onze rapporten toetsen aan WCAG 2.2 met 55.</p>
+      <div class="table-wrap">
+        <table class="sites">
+          <caption>32 websites, gesorteerd op naam</caption>
+          <colgroup><col class="c-site"><col class="c-audit"><col class="c-retest"><col class="c-trend"><col class="c-reg"></colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Website</th>
+              <th scope="col">Audit</th>
+              <th scope="col">Hercontrole</th>
+              <th scope="col">Verloop</th>
+              <th scope="col">Register</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">5minutenai.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_5minutenai.nl/" data-pnh-rapport>Audit<span class="sr-only"> 5minutenai.nl</span></a>
+                  <div class="meta">Onderzocht 22 november 2025</div>
+                  <div class="figs num">15 bevindingen · 10 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">40 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">biografienzkg.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202511_biografienzkg/" data-pnh-rapport>Audit<span class="sr-only"> biografienzkg.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 november 2025</div>
+                  <div class="figs num">44 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_biografienzkg.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> biografienzkg.nl</span></a>
+                  <div class="meta">Onderzocht 17 t/m 20 september 2026</div>
+                  <div class="figs num"><span class="gain">30 van 44 opgelost</span> · 14 open, 2 nieuw · afgekeurde succescriteria 21 → 9
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 44 bij de audit, 16 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 31"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">44</text>
+                  <rect class="pt-retest" x="105" y="26" width="10" height="10" transform="rotate(45 110 31)"></rect>
+                  <text x="110" y="22" text-anchor="middle" aria-hidden="true">16</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">29 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">boerenbusinessinbalans.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202509_boerenbusinessinbalans/" data-pnh-rapport>Audit<span class="sr-only"> boerenbusinessinbalans.nl</span></a>
+                  <div class="meta">Onderzocht 15 t/m 21 september 2025</div>
+                  <div class="figs num">114 bevindingen · 25 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">25 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">cijfers.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202510_cijfers_noordholland/" data-pnh-rapport>Content audit<span class="sr-only"> cijfers.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 6 t/m 16 oktober 2025</div>
+                  <div class="figs num">16 bevindingen · 9 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register"><span class="none">Niet te koppelen</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">cijfers.noord-holland.nl/jive</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_cijfers.noord-holland.nl:jive/" data-pnh-rapport>Content audit<span class="sr-only"> cijfers.noord-holland.nl/jive</span></a>
+                  <div class="meta">Onderzocht 18 t/m 19 november 2025</div>
+                  <div class="figs num">0 bevindingen · 0 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="none">Niet nodig, geen bevindingen</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-A" style="background: var(--st-A)" aria-hidden="true">A</span><span><span class="sr-only">Status A: </span>Voldoet volledig</span></span><div class="meta num">50 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">collectie.huisvanhilde.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202508_collectie.huisvanhilde/" data-pnh-rapport>Audit<span class="sr-only"> collectie.huisvanhilde.nl</span></a>
+                  <div class="meta">Onderzocht 25 t/m 31 augustuss 2025</div>
+                  <div class="figs num">129 bevindingen · 29 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">15 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">energieregionh.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202510_energieregionh/" data-pnh-rapport>Audit<span class="sr-only"> energieregionh.nl</span></a>
+                  <div class="meta">Onderzocht 20 t/m 27 oktober 2025</div>
+                  <div class="figs num">94 bevindingen · 23 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202605_energieregionh.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> energieregionh.nl</span></a>
+                  <div class="meta">Onderzocht 5 t/m 7 mei 2026</div>
+                  <div class="figs num">47 open · afgekeurde succescriteria 23 → 18
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 94 bij de audit, 47 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 28"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">94</text>
+                  <rect class="pt-retest" x="105" y="23" width="10" height="10" transform="rotate(45 110 28)"></rect>
+                  <text x="110" y="19" text-anchor="middle" aria-hidden="true">47</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">27 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">evdata.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202509_evdata/" data-pnh-rapport>Audit<span class="sr-only"> evdata.nl</span></a>
+                  <div class="meta">Onderzocht 18 t/m 27 september 2025</div>
+                  <div class="figs num">72 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">29 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">financien.noord-holland.nl en noordholland.begroting-2026.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_financien.noord-holland/" data-pnh-rapport>Audit<span class="sr-only"> financien.noord-holland.nl en noordholland.begroting-2026.nl</span></a>
+                  <div class="meta">Onderzocht 10 t/m 15 september 2025</div>
+                  <div class="figs num">44 bevindingen · 14 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">34 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">formulieren.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_formulieren.noord-holland/" data-pnh-rapport>Audit<span class="sr-only"> formulieren.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 14 t/m 18 september 2025</div>
+                  <div class="figs num">34 bevindingen · 11 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">37 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">geoapps.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_geoapps.noord-holland/" data-pnh-rapport>Content audit<span class="sr-only"> geoapps.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 5 t/m 13 november 2025</div>
+                  <div class="figs num">29 bevindingen · 7 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register"><span class="none">Niet te koppelen</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">gwbeheergooi.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202510_gwbeheergooi/" data-pnh-rapport>Audit<span class="sr-only"> gwbeheergooi.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 15 oktober 2025</div>
+                  <div class="figs num">73 bevindingen · 24 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">26 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">huisvanhilde.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202508_huisvanhilde/" data-pnh-rapport>Audit<span class="sr-only"> huisvanhilde.nl</span></a>
+                  <div class="meta">Onderzocht 25 t/m 30 augustus 2025</div>
+                  <div class="figs num">96 bevindingen · 33 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">15 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">jouwnoord-holland.nl/jouwruimte</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_jouwnoord-holland/" data-pnh-rapport>Audit<span class="sr-only"> jouwnoord-holland.nl/jouwruimte</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 september 2025</div>
+                  <div class="figs num">28 bevindingen · 13 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202509_retest_jouwnoord-holland/" data-pnh-rapport>Hercontrole van de audit<span class="sr-only"> jouwnoord-holland.nl/jouwruimte</span></a>
+                  <div class="meta">Onderzocht 16 oktober 2025</div>
+                  <div class="figs num">17 open · afgekeurde succescriteria 13 → 10
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 28 bij de audit, 17 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 25"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">28</text>
+                  <rect class="pt-retest" x="105" y="20" width="10" height="10" transform="rotate(45 110 25)"></rect>
+                  <text x="110" y="16" text-anchor="middle" aria-hidden="true">17</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">37 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">kanaalnaardetoekomst.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202510_kanaalnaardetoekomst/" data-pnh-rapport>Audit<span class="sr-only"> kanaalnaardetoekomst.nl</span></a>
+                  <div class="meta">Onderzocht 25 t/m 31 oktober 2025</div>
+                  <div class="figs num">33 bevindingen · 20 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_kanaalnaardetoekomst.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> kanaalnaardetoekomst.nl</span></a>
+                  <div class="meta">Onderzocht 22 september 2026</div>
+                  <div class="figs num"><span class="gain">16 van 33 opgelost</span> · 17 open, 2 nieuw · afgekeurde succescriteria 20 → 16
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 33 bij de audit, 19 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 26"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">33</text>
+                  <rect class="pt-retest" x="105" y="21" width="10" height="10" transform="rotate(45 110 26)"></rect>
+                  <text x="110" y="17" text-anchor="middle" aria-hidden="true">19</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">30 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">koopstromen.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_koopstromen.nl/" data-pnh-rapport>Audit<span class="sr-only"> koopstromen.nl</span></a>
+                  <div class="meta">Onderzocht 18 t/m 25 november 2025</div>
+                  <div class="figs num">65 bevindingen · 23 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">27 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">laadpaal.laadwerk.nl en laadkaart.laadwerk.nl (voorheen laadpaal.mrae.nl)</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202509_mra-e/" data-pnh-rapport>Audit<span class="sr-only"> laadpaal.laadwerk.nl en laadkaart.laadwerk.nl (voorheen laadpaal.mrae.nl)</span></a>
+                  <div class="meta">Onderzocht 25 t/m 27 september 2025</div>
+                  <div class="figs num">34 bevindingen · 14 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_laadpaal.laadwerk.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> laadpaal.laadwerk.nl en laadkaart.laadwerk.nl (voorheen laadpaal.mrae.nl)</span></a>
+                  <div class="meta">Onderzocht 21 september 2026</div>
+                  <div class="figs num"><span class="gain">13 van 16 opgelost</span> · 3 open, 4 nieuw · afgekeurde succescriteria 8 → 5
+                  </div>
+                </div>
+                <div class="report">
+                  <a href="/rapporten/202609_laadkaart.laadwerk.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> laadpaal.laadwerk.nl en laadkaart.laadwerk.nl (voorheen laadpaal.mrae.nl)</span></a>
+                  <div class="meta">Onderzocht 22 t/m 23 september 2026</div>
+                  <div class="figs num"><span class="gain">11 van 18 opgelost</span> · 7 open · afgekeurde succescriteria 11 → 6
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 34 bij de audit, 14 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 30"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">34</text>
+                  <rect class="pt-retest" x="105" y="25" width="10" height="10" transform="rotate(45 110 30)"></rect>
+                  <text x="110" y="21" text-anchor="middle" aria-hidden="true">14</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">38 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">leidraadlc.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202510_leidraadlc.noord-holland.nl/" data-pnh-rapport>Audit<span class="sr-only"> leidraadlc.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 10 t/m 21 oktober 2025</div>
+                  <div class="figs num">72 bevindingen · 17 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">33 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">magazine.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_magazine.noord-holland/" data-pnh-rapport>Audit<span class="sr-only"> magazine.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 september 2025</div>
+                  <div class="figs num">49 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+                <div class="report">
+                  <a href="/rapporten/202509_magazine.noord-holland_techniek/" data-pnh-rapport>Techniekaudit<span class="sr-only"> magazine.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 september 2025</div>
+                  <div class="figs num">31 bevindingen · 17 van 55 succescriteria afgekeurd</div>
+                </div>
+                <div class="report">
+                  <a href="/rapporten/202509_magazine.noord-holland_content/" data-pnh-rapport>Content-audit<span class="sr-only"> magazine.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 september 2025</div>
+                  <div class="figs num">19 bevindingen · 6 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">29 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">mijnsubsidie.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202601_mijnsubsidie/" data-pnh-rapport>Audit<span class="sr-only"> mijnsubsidie.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 12 t/m 23 januari 2026</div>
+                  <div class="figs num">4 bevindingen · 4 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">46 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">nhbereikbaar.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202510_nhbereikbaar/" data-pnh-rapport>Audit<span class="sr-only"> nhbereikbaar.nl</span></a>
+                  <div class="meta">Onderzocht 28 t/m 31 oktober 2025</div>
+                  <div class="figs num">34 bevindingen · 12 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202604_nhbereikbaar.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> nhbereikbaar.nl</span></a>
+                  <div class="meta">Onderzocht 4 t/m 6 mei 2026</div>
+                  <div class="figs num">11 open, 1 nieuw · afgekeurde succescriteria 12 → 8
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 34 bij de audit, 12 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 32"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">34</text>
+                  <rect class="pt-retest" x="105" y="27" width="10" height="10" transform="rotate(45 110 32)"></rect>
+                  <text x="110" y="23" text-anchor="middle" aria-hidden="true">12</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">38 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">noord-holland.stateninformatie.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202508_noord-holland.stateninformatie/" data-pnh-rapport>Content-audit<span class="sr-only"> noord-holland.stateninformatie.nl</span></a>
+                  <div class="meta">Onderzocht 20 t/m 22 augustus 2025</div>
+                  <div class="figs num">17 bevindingen · 5 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">28 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">noordholland.bestuurlijkeinformatie.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202508_noord-holland.bestuurlijkeinformatie/" data-pnh-rapport>Content-audit<span class="sr-only"> noordholland.bestuurlijkeinformatie.nl</span></a>
+                  <div class="meta">Onderzocht 21 t/m 23 augustus 2025</div>
+                  <div class="figs num">17 bevindingen · 7 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">42 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">noordzeekanaalgebied.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202511_nzkg/" data-pnh-rapport>Audit<span class="sr-only"> noordzeekanaalgebied.nl</span></a>
+                  <div class="meta">Onderzocht 1 t/m 5 november 2025</div>
+                  <div class="figs num">58 bevindingen · 24 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_noordzeekanaalgebied.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> noordzeekanaalgebied.nl</span></a>
+                  <div class="meta">Onderzocht 21 t/m 23 september 2026</div>
+                  <div class="figs num"><span class="gain">28 van 48 opgelost</span> · 20 open, 13 nieuw · afgekeurde succescriteria 24 → 17
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 58 bij de audit, 33 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 26"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">58</text>
+                  <rect class="pt-retest" x="105" y="21" width="10" height="10" transform="rotate(45 110 26)"></rect>
+                  <text x="110" y="17" text-anchor="middle" aria-hidden="true">33</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">26 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">pimnh.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_pimnh.nl/" data-pnh-rapport>Audit<span class="sr-only"> pimnh.nl</span></a>
+                  <div class="meta">Onderzocht 25 t/m 29 november 2025</div>
+                  <div class="figs num">47 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_pimnh.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> pimnh.nl</span></a>
+                  <div class="meta">Onderzocht 12 t/m 14 september 2026</div>
+                  <div class="figs num"><span class="gain">22 van 47 opgelost</span> · 22 open, 4 nieuw · afgekeurde succescriteria 21 → 16
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 47 bij de audit, 26 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 27"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">47</text>
+                  <rect class="pt-retest" x="105" y="22" width="10" height="10" transform="rotate(45 110 27)"></rect>
+                  <text x="110" y="18" text-anchor="middle" aria-hidden="true">26</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">29 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">platform.groenkapitaal.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202510_platform.groenkapitaal/" data-pnh-rapport>Audit<span class="sr-only"> platform.groenkapitaal.nl</span></a>
+                  <div class="meta">Onderzocht 5 t/m 17 oktober 2025</div>
+                  <div class="figs num">76 bevindingen · 26 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">24 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">servicepuntduurzameenergie.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202510_servicepuntduurzameenergie/" data-pnh-rapport>Audit<span class="sr-only"> servicepuntduurzameenergie.nl</span></a>
+                  <div class="meta">Onderzocht 4 t/m 14 oktober 2025</div>
+                  <div class="figs num">76 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">19 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">steunpuntcultureelerfgoednh.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_steunpuntcultureelerfgoednh/" data-pnh-rapport>Audit<span class="sr-only"> steunpuntcultureelerfgoednh.nl</span></a>
+                  <div class="meta">Onderzocht 11 t/m 13 september 2025</div>
+                  <div class="figs num">102 bevindingen · 29 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">21 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">tickets.huisvanhilde.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202508_tickets.huisvanhilde/" data-pnh-rapport>Audit<span class="sr-only"> tickets.huisvanhilde.nl</span></a>
+                  <div class="meta">Onderzocht 23 t/m 29 augustus 2025</div>
+                  <div class="figs num">26 bevindingen · 14 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">15 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">vacatures.noord-holland.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202509_vacatures.noord-holland/" data-pnh-rapport>Content audit<span class="sr-only"> vacatures.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 10 t/m 16 september 2025</div>
+                  <div class="figs num">19 bevindingen · 12 van 33 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202509_retest.vacatures.noord-holland/" data-pnh-rapport>Hercontrole van content-audit<span class="sr-only"> vacatures.noord-holland.nl</span></a>
+                  <div class="meta">Onderzocht 20 t/m 26 november 2025</div>
+                  <div class="figs num">2 open · afgekeurde succescriteria 12 → 3
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 19 bij de audit, 2 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 37"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">19</text>
+                  <rect class="pt-retest" x="105" y="32" width="10" height="10" transform="rotate(45 110 37)"></rect>
+                  <text x="110" y="28" text-anchor="middle" aria-hidden="true">2</text>
+                </svg>
+              </td>
+              <td data-label="Register"><span class="none">Niet te koppelen</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">vveladen.nl</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="https://audit.properaccess.nl/reports/202509_vveladen/" data-pnh-rapport>Audit<span class="sr-only"> vveladen.nl</span></a>
+                  <div class="meta">Onderzocht 15 t/m 20 september 2025</div>
+                  <div class="figs num">62 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole">
+                <div class="report">
+                  <a href="/rapporten/202609_vveladen.nl_retest/" data-pnh-rapport>Hercontrole<span class="sr-only"> vveladen.nl</span></a>
+                  <div class="meta">Onderzocht 16 t/m 20 september 2026</div>
+                  <div class="figs num"><span class="gain">24 van 62 opgelost</span> · 33 open, 7 nieuw · afgekeurde succescriteria 21 → 17
+                  </div>
+                </div>
+              </td>
+              <td data-label="Verloop">
+                <svg class="trend" width="132" height="46" viewBox="0 0 132 46" role="img" aria-label="Bevindingen: 62 bij de audit, 40 na de hercontrole">
+                  <line class="base" x1="0" x2="132" y1="40" y2="40"></line>
+                  <path class="line" d="M22 16 L110 25"></path>
+                  <circle class="pt-audit" cx="22" cy="16" r="4.5"></circle>
+                  <text x="22" y="7" text-anchor="middle" aria-hidden="true">62</text>
+                  <rect class="pt-retest" x="105" y="20" width="10" height="10" transform="rotate(45 110 25)"></rect>
+                  <text x="110" y="16" text-anchor="middle" aria-hidden="true">40</text>
+                </svg>
+              </td>
+              <td data-label="Register">
+                <span class="reg"><span class="badge st-B" style="background: var(--st-B)" aria-hidden="true">B</span><span><span class="sr-only">Status B: </span>Voldoet gedeeltelijk</span></span><div class="meta num">29 van 50 succescriteria</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">zeven kaartenwebsites van de provincie Noord-Holland</th>
+              <td data-label="Audit">
+                <div class="report">
+                  <a href="/rapporten/202511_geodata_noord-holland/" data-pnh-rapport>Audit<span class="sr-only"> zeven kaartenwebsites van de provincie Noord-Holland</span></a>
+                  <div class="meta">19 november 2025</div>
+                  <div class="figs num">75 bevindingen · 21 van 55 succescriteria afgekeurd</div>
+                </div>
+              </td>
+              <td data-label="Hercontrole"><span class="todo">Nog niet uitgevoerd</span>
+              </td>
+              <td data-label="Verloop"><span class="none" aria-hidden="true">–</span><span class="sr-only">Nog geen verloop</span>
+              </td>
+              <td data-label="Register"><span class="none">Niet te koppelen</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
   <script>
+    // Tooltips: verbergen met Escape (WCAG 1.4.13).
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      document.querySelectorAll('.has-tip:hover, .has-tip:focus').forEach((el) => el.classList.add('tip-off'));
+    });
+    document.addEventListener('pointerout', (e) => {
+      const el = e.target.closest && e.target.closest('.has-tip');
+      if (el) el.classList.remove('tip-off');
+    });
+    document.addEventListener('focusout', (e) => {
+      const el = e.target.closest && e.target.closest('.has-tip');
+      if (el) el.classList.remove('tip-off');
+    });
+
     async function sha256(text) {
       const encoder = new TextEncoder();
       const data = encoder.encode(text);
