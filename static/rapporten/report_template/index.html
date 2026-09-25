@@ -155,6 +155,59 @@
       <span class="failed-sc-list" id="failed-sc-list"></span>
     </div>
 
+    <section class="dash-info" id="score-per-succescriterium">
+      <div class="accordion">
+        <details>
+          <summary>Score per succescriterium</summary>
+          <div>
+            <p>Alle 55 succescriteria van WCAG 2.2 op niveau A en AA, met de uitkomst van dit onderzoek. Deze lijst laat zien dat alle eisen zijn onderzocht. Dat is een voorwaarde voor een toegankelijkheidsverklaring met status A of B.</p>
+            <table class="dash-sc-table">
+              <caption>Uitkomst per succescriterium</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Nummer</th>
+                  <th scope="col">Succescriterium</th>
+                  <th scope="col">Niveau</th>
+                  <th scope="col">Uitkomst</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>1.1.1</td>
+                  <td>Niet-tekstuele content</td>
+                  <td>A</td>
+                  <td>Onvoldoende</td>
+                </tr>
+
+                <tr>
+                  <td>1.2.1</td>
+                  <td>Louter-geluid en louter-videobeeld (voorafgaand opgenomen)</td>
+                  <td>A</td>
+                  <td>Voldoende</td>
+                </tr>
+
+                <tr>
+                  <td>1.2.2</td>
+                  <td>Ondertitels voor doven en slechthorenden (voorafgaand opgenomen)</td>
+                  <td>A</td>
+                  <td>Niet van toepassing</td>
+                </tr>
+
+                <tr>
+                  <td>4.1.1</td>
+                  <td>Parsen</td>
+                  <td>A</td>
+                  <td>Niet getoetst, zie Gebruikte norm</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </section>
+
     
     <section class="dash-info" id="over-dit-onderzoek">
       <div class="accordion">
@@ -215,7 +268,8 @@
               <li>De pagina&#39;s op subdomein.website.nl. Dit subdomein gebruikt een ander systeem en andere HTML.</li>
 
             </ul>
-            <p>Dit is geen wettelijke uitzondering. Voor een toegankelijkheidsverklaring met status A of B moet het onderzoek alle onderdelen van de website dekken. Voor de onderdelen hierboven is dus apart onderzoek nodig, en soms een eigen verklaring.</p>
+            <p>Dit is geen wettelijke uitzondering. Het model van de toegankelijkheidsverklaring vraagt dat de onderzoeksresultaten representatief zijn voor alle content op het hoofddomein en eventuele sub- en andere domeinen, of op alle platformversies van de app, die in de toegankelijkheidsverklaring worden genoemd. Voor de onderdelen hierboven is dus apart onderzoek nodig, en soms een eigen verklaring.</p>
+            <p>Web views in een app horen hier niet. Dat is geen wettelijke uitzondering en ook geen scopekeuze, maar een andere techniek. Die content onderzoeken we in het rapport over de website.</p>
             
 
             <h3>Basisniveau toegankelijkheidsondersteuning</h3>
@@ -263,6 +317,34 @@
 
     
     
+    <section class="dash-info" id="opgeloste-bevindingen">
+      <div class="accordion">
+        <details>
+          <summary>Opgeloste bevindingen uit de vorige audit</summary>
+          <div>
+            <p>Deze bevindingen zijn opgelost en staan daarom niet meer bij de gevonden problemen. Ze zijn geordend per succescriterium, zodat je ze kunt overnemen onder de kop Voortgang in je toegankelijkheidsverklaring. Als datum van oplossen geldt de datum van deze hercontrole.</p>
+
+            <h3>Succescriterium 1.1.1 Niet-tekstuele content</h3>
+            <ul>
+
+              <li>#03 Logo in de header heeft geen tekstalternatief. Opgelost op DATE.</li>
+
+              <li>#15 Afbeelding heeft geen tekstalternatief. Opgelost op DATE.</li>
+
+            </ul>
+
+            <h3>Succescriterium 2.4.7 Focus zichtbaar</h3>
+            <ul>
+
+              <li>#22 De focus is niet zichtbaar op de knoppen in het formulier. Opgelost op DATE.</li>
+
+            </ul>
+
+          </div>
+        </details>
+      </div>
+    </section>
+
     <div class="dash-voortgang" id="voortgang">
       <h2>Voortgang opgeloste bevindingen</h2>
       <div class="voortgang-opties-grid">
@@ -356,7 +438,7 @@
 <h3>Gebruikte norm</h3>
 <p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines en is de internationale norm voor digitale toegankelijkheid.</p>
 <p>Voor de wet geldt de Europese norm EN 301 549. Hoofdstuk 9 van die norm gaat over websites, hoofdstuk 11 over apps. De versie die in het Publicatieblad van de Europese Unie is aangewezen, is V3.2.1, en die verwijst naar WCAG 2.1 niveau A en AA. Dat zijn 50 eisen. Wij toetsen aan WCAG 2.2, een versie verder. Wie aan WCAG 2.2 voldoet, voldoet ook aan WCAG 2.1.</p>
-<p>Eén succescriterium valt daarbij op. Succescriterium 4.1.1 Parsen hoort bij de 50 eisen van WCAG 2.1, maar is in WCAG 2.2 vervallen omdat browsers deze fouten zelf opvangen. In het overzicht van succescriteria staat 4.1.1 daarom als "niet van toepassing".</p>
+<p>Eén succescriterium valt daarbij op. Succescriterium 4.1.1 Parsen hoort bij de 50 eisen van WCAG 2.1, maar is in WCAG 2.2 vervallen omdat browsers deze fouten zelf opvangen. In 2025 is in overleg met Logius besloten om succescriterium 4.1.1 niet meer te toetsen. In het overzicht van succescriteria staat 4.1.1 daarom als "niet getoetst".</p>
 <p>ETSI publiceerde op 3 september 2026 versie 4.1.1 van EN 301 549. Die verwijst naar WCAG 2.2. Die versie geldt voor de wet pas als de Europese Commissie hem aanwijst, en daarvoor is nog geen datum bekend.</p>
 <p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
 <h3>Gebruikte onderzoeksmethode</h3>
