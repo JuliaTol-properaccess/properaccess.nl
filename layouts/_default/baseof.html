@@ -21,6 +21,10 @@
     {{ partialCached "essentials/style.html" . }}
 
 
+    <!-- stylesheets voor een deel van de pagina's (niet cachen: per pagina) -->
+    {{ partial "essentials/pagina-style.html" . }}
+
+
   </head>
 
   <body>
