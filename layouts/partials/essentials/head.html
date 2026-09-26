@@ -88,8 +88,28 @@
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/crisp-chat */}}
 {{/* {{ partialCached "crisp-chat.html" . }} */}}
 
+<!-- Webfonts.
+
+     Nunito, Plus Jakarta Sans en Nunito Sans komen sinds 26 september 2026 van
+     ons eigen domein; de @font-face-regels staan in assets/css/fonts.css en de
+     bestanden in static/fonts/. De <link> naar fonts.googleapis.com die hier
+     stond blokkeerde de eerste render: de browser zette eerst een verbinding
+     met een tweede domein op voordat er iets op het scherm kwam.
+
+     Hier stond een `rel="preload"` op Nunito en Plus Jakarta Sans, zodat de
+     tekst meteen in het juiste lettertype zou verschijnen. Die is er weer uit.
+     Gemeten met Lighthouse over HTTP/2 met een afgeknepen verbinding, mediaan
+     van vier metingen op de homepagina: eerste render 2391 ms zonder preload,
+     2611 ms met alleen Nunito, 2762 ms met allebei. De 66 kB aan lettertypen
+     pakt bandbreedte af van style.min.css, en dat bestand houdt de render
+     tegen. Zonder preload haalt de browser het lettertype op zodra hij de CSS
+     gelezen heeft, en dat is vroeg genoeg.
+
+     Material Symbols blijft van Google komen. Dat is een icoonfont van
+     honderden kilobytes die alleen op een deel van de pagina's staat, en hij
+     laadt al buiten de eerste render om (media="print" met onload). De
+     preconnects hieronder zijn daarvoor. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet"></noscript>
