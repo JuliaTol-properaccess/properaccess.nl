@@ -1,0 +1,55 @@
+{{- /*
+  Doorverwijspagina voor een `aliases`-regel in de front matter.
+
+  GitHub Pages kan geen 301 serveren, dus Hugo maakt van elke alias een HTML-
+  pagina met een meta-refresh. Het ingebouwde sjabloon van Hugo zet de URL van
+  de doelpagina als `<title>` en laat een description weg. Zoekmachines tonen
+  die titel soms letterlijk, en een bezoeker bij wie de verversing niet werkt
+  komt op een lege pagina zonder link.
+
+  Dit sjabloon zet de titel en de description van de doelpagina erin en geeft
+  de bezoeker een zichtbare link. De canonical en de refresh blijven zoals ze
+  waren. `noindex` staat er bewust niet in: dat zou de doorverwijzingen die wel
+  klikken opleveren (de oude tool-URL's) uit de index halen, en het blokkeert
+  het samenvoegen van signalen met de doelpagina. Een echte 301 is het
+  gereedschap daarvoor; die staat in docs/geo-actieplan.md.
+
+  De h1 zegt alleen dat de pagina verhuisd is en herhaalt de kop van de
+  doelpagina niet. Anders zouden 410 doorverwijzingen dezelfde koptekst dragen
+  als de pagina waar ze heen wijzen, en dat is precies het probleem uit groep A
+  van het geo-actieplan: de doorverwijzing die beter rankt dan de pagina zelf.
+
+  Het gaat om 410 pagina's, dus houd dit klein.
+*/ -}}
+{{- $doel := .Permalink -}}
+{{- $p := .Page -}}
+{{- $titel := "" -}}
+{{- $naam := "" -}}
+{{- with $p -}}{{- $titel = or .Params.meta_title .Title -}}{{- $naam = or .Title .Params.meta_title -}}{{- end -}}
+{{- /* De taalwortel /nl/ verwijst naar de homepagina en heeft geen eigen titel. */ -}}
+{{- $titel = or $titel site.Title -}}
+{{- $naam = or $naam site.Title -}}
+{{- $beschrijving := "" -}}
+{{- with $p -}}{{- $beschrijving = or .Description .Params.description "" -}}{{- end -}}
+<!DOCTYPE html>
+<html lang="{{ with $p }}{{ .Language.LanguageCode }}{{ else }}nl{{ end }}">
+<head>
+<meta charset="utf-8">
+<title>{{ with $titel }}{{ . }}{{ else }}{{ $doel }}{{ end }}</title>
+{{- with $beschrijving }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ $doel }}">
+<meta http-equiv="refresh" content="0; url={{ $doel }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{font:1rem/1.6 system-ui,sans-serif;margin:0;padding:2rem;color:#1F2937}a{color:#A30D4B}</style>
+</head>
+<body>
+{{- $en := false -}}
+{{- with $p }}{{ if eq .Language.Lang "en" }}{{ $en = true }}{{ end }}{{ end }}
+<main>
+<h1>{{ if $en }}This page has moved{{ else }}Deze pagina is verhuisd{{ end }}</h1>
+<p>{{ if $en }}Go to{{ else }}Ga naar{{ end }} <a href="{{ $doel }}">{{ $naam }}</a></p>
+</main>
+</body>
+</html>
