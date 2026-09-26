@@ -26,6 +26,10 @@
   - de h1 "We zijn Proper Access ... in Amsterdam/Emmeloord" met de
     wisselende plaatsnaam is vervangen door "De EAA geldt al. Weet je waar je
     staat?" (Julia, 19-09-2026)
+  - in de hero staat sinds 26-09-2026 één primaire knop naar /contact/. Die
+    stond niet in het ontwerp; de hero had boven de vouw geen eerste actie.
+    Het label volgt de rest van de site ("kennismaking", niet "intake": /intake/
+    is het formulier ná de opdracht).
 */}}
 <div class="hb" data-pa-variant="B">
 
@@ -44,6 +48,9 @@
     <p class="hb-hero__lead">
       Wij <a href="/toegankelijkheidsaudit/">testen je site of app op WCAG 2.2 AA</a> en leveren een plan van aanpak waar je morgen mee verder kunt.
       Binnen 5&nbsp;werkdagen reactie op je aanvraag.
+    </p>
+    <p class="hb-hero__actie">
+      <a class="hb-cta" href="/contact/">Plan een kennismaking</a>
     </p>
     <ul class="hb-bewijs" role="list" aria-label="Wat we gedaan hebben en voor wie">
       <li class="hb-bewijs__cijfer">950+ audits</li>
@@ -325,6 +332,27 @@
     font-size: clamp(17px, 1.9vw, 23px); line-height: 1.5; color: var(--tekst);
     margin: clamp(22px, 3vw, 34px) auto 0; max-width: 640px; text-align: center;
   }
+  /* De enige primaire actie boven de vouw. Wit op magenta is 7,7:1, en de knop
+     zelf steekt met 7,7:1 af tegen de witte achtergrond (SC 1.4.3 en 1.4.11).
+     De focusrand is donkerblauw met 3px ruimte ertussen, zodat hij tegen het
+     wit staat en niet tegen het magenta (14,7:1). Onder 480px wordt de knop
+     volle breedte, zodat het label bij 320px niet buiten het scherm valt. */
+  .hb-hero__actie { margin: clamp(24px, 3.2vw, 36px) 0 0; display: flex; justify-content: center; }
+  .hb-cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 56px; padding: 17px 36px;
+    font-family: var(--kop); font-weight: 800; font-size: 15px; letter-spacing: 1.8px;
+    text-transform: uppercase; text-align: center; text-decoration: none;
+    color: #fff; background: var(--magenta); border: 2px solid var(--magenta);
+    transition: background 160ms, border-color 160ms;
+  }
+  .hb-cta:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .hb .hb-cta:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+  @media (max-width: 30rem) {
+    .hb-hero__actie { display: block; }
+    .hb-cta { display: flex; padding: 17px 18px; letter-spacing: 1.2px; }
+  }
+
   .hb-bewijs {
     list-style: none; margin: clamp(28px, 4vw, 44px) auto 0; padding: 18px 0 clamp(28px, 4vw, 40px);
     border-top: 1px solid rgba(31,41,55,0.22);
