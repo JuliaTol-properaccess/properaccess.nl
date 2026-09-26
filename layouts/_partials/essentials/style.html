@@ -6,12 +6,12 @@
   - De JS-injectie van Google Fonts is weg: de fonts worden al rechtstreeks in
     head.html geladen, dit was een dubbele lading.
   - $styles wordt nu ook geminified (was alleen fingerprint).
+  - De dns-prefetch naar googletagmanager.com en google-analytics.com is weg
+    (26-09-2026): de site laadt geen Tag Manager en geen Analytics, dus dat
+    waren twee DNS-opzoekingen die niets opleverden.
 -->
 
-<!-- DNS preconnect (alleen wat echt gebruikt wordt) -->
 <meta http-equiv="x-dns-prefetch-control" content="on" />
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
-<link rel="dns-prefetch" href="//www.google-analytics.com" />
 
 <!-- main styles -->
 {{ $styles := slice }}
