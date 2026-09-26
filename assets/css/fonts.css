@@ -12,8 +12,12 @@
    kunstmatig vet.
 
    Alleen latin en latin-ext zitten erin. Cyrillisch, Grieks en Vietnamees
-   niet: die schriften staan niet op de site, en de browser haalde die subsets
-   ook bij Google al niet op.
+   niet: die schriften staan niet in content/, layouts/, i18n/ of data/.
+   Google definieerde die @font-face-regels wel, en de unicode-range zorgde
+   dat de browser ze pas ophaalde als zo'n teken op de pagina stond. Hier zijn
+   de regels zelf weg. Komt er ooit tekst in zo'n schrift, dan kreeg die
+   voorheen vanzelf Nunito en nu het systeemlettertype. Geen WCAG-punt
+   (Gerard, 26-09-2026), wel iets om te weten.
 
    Bijwerken: haal de CSS op bij fonts.googleapis.com met een actuele
    browser-User-Agent en de volledige assen in de URL
