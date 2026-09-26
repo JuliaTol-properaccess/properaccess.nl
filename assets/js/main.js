@@ -1,42 +1,7 @@
 // main script
-// Project-override van het hugoplate-main.js.
-// Swiper zit nu in de lazy (async) bundel, dus de testimonial-slider wordt pas
-// geïnitialiseerd zodra Swiper beschikbaar is. Op pagina's zonder slider gebeurt
-// er niets.
-(function () {
-  "use strict";
-
-  function initTestimonialSlider() {
-    if (typeof Swiper === "undefined") return false; // Swiper nog niet geladen
-    if (!document.querySelector(".testimonial-slider")) return true; // geen slider op deze pagina
-    new Swiper(".testimonial-slider", {
-      spaceBetween: 24,
-      loop: true,
-      pagination: {
-        el: ".testimonial-slider-pagination",
-        type: "bullets",
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 3,
-        },
-      },
-    });
-    return true;
-  }
-
-  // Direct proberen; lukt het niet (Swiper nog niet geladen), kort pollen tot de
-  // lazy-bundel binnen is. Stopt na een ruime marge.
-  if (!initTestimonialSlider()) {
-    var tries = 0;
-    var timer = setInterval(function () {
-      if (initTestimonialSlider() || ++tries > 100) {
-        clearInterval(timer);
-      }
-    }, 50);
-  }
-})();
+// Project-override van het hugoplate-main.js. Die versie start een Swiper op
+// `.testimonial-slider`; die klasse staat op geen enkele pagina en Swiper zit
+// sinds 26-09-2026 niet meer in de bundel (zie de Plugins-sectie in hugo.toml).
+// Dit bestand blijft bestaan omdat essentials/script.html het ophaalt, en omdat
+// het zonder override terugvalt op de theme-versie, die dan een fout geeft.
+// Wil je de slider terug, haal de oude inhoud dan uit de git-historie.

@@ -136,14 +136,18 @@ notAlternative = true
 
 ############################# Plugins ##############################
 
+# Vijf plugins zijn er op 26-09-2026 uit gehaald: swiper (CSS en JS),
+# glightbox (CSS en JS), gallery-slider.js, tab.js en youtube-lite.js. Ze
+# stonden op geen enkele van de 1185 gebouwde pagina's, en de bijbehorende
+# shortcodes ({{< gallery >}}, {{< slider >}}, {{< tabs >}}, {{< youtube-lite >}},
+# {{< vimeo-lite >}}) staan in geen enkel contentbestand.
+#
+# Ze gingen wel mee in style-lazy.min.css en script-lazy.min.js, en die twee
+# bestanden downloaden tegelijk met de CSS die de eerste render tegenhoudt.
+# Op een trage verbinding pakken ze daar bandbreedte van af. Wil je een slider
+# of een lightbox terug, zet de regel dan terug en meet opnieuw.
+
 # CSS Plugins
-[[params.plugins.css]]
-link = "plugins/swiper/swiper-bundle.css" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-lazy = true
-[[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css"
-# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/brands.css"
 # https://github.com/gethugothemes/hugo-modules/tree/master/icons/font-awesome
@@ -160,31 +164,13 @@ lazy = true
 link = "js/search.js" # https://github.com/gethugothemes/hugo-modules/tree/master/search
 lazy = false
 [[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js"
-# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-# lazy: Swiper is alleen nodig voor de sliders (homepage). De init in
-# assets/js/main.js wacht tot Swiper uit de lazy-bundel geladen is.
-lazy = true
-[[params.plugins.js]]
-link = "plugins/glightbox/glightbox.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-lazy = true
-[[params.plugins.js]]
-link = "js/gallery-slider.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
-lazy = true
-[[params.plugins.js]]
 link = "plugins/cookie.js" # https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 lazy = false
 [[params.plugins.js]]
 link = "js/accordion.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
 lazy = true
 [[params.plugins.js]]
-link = "js/tab.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
-lazy = true
-[[params.plugins.js]]
 link = "js/modal.js" # https://github.com/gethugothemes/hugo-modules/tree/master/modal
-lazy = true
-[[params.plugins.js]]
-link = "plugins/youtube-lite.js" # https://github.com/gethugothemes/hugo-modules/tree/master/videos
 lazy = true
 
 [sitemap]
