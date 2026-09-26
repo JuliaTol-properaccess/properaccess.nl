@@ -97,13 +97,14 @@
      met een tweede domein op voordat er iets op het scherm kwam.
 
      Hier stond een `rel="preload"` op Nunito en Plus Jakarta Sans, zodat de
-     tekst meteen in het juiste lettertype zou verschijnen. Die is er weer uit.
-     Gemeten met Lighthouse over HTTP/2 met een afgeknepen verbinding, mediaan
-     van vier metingen op de homepagina: eerste render 2391 ms zonder preload,
-     2611 ms met alleen Nunito, 2762 ms met allebei. De 66 kB aan lettertypen
-     pakt bandbreedte af van style.min.css, en dat bestand houdt de render
-     tegen. Zonder preload haalt de browser het lettertype op zodra hij de CSS
-     gelezen heeft, en dat is vroeg genoeg.
+     tekst meteen in het juiste lettertype zou verschijnen. Die is er op
+     26 september 2026 weer uit gehaald. Gemeten met Lighthouse over HTTP/2 met
+     een afgeknepen verbinding, mediaan van vier metingen op de homepagina:
+     eerste render 2391 ms zonder preload, 2611 ms met alleen Nunito, 2762 ms
+     met allebei. De 66 kB aan lettertypen pakt bandbreedte af van
+     style.min.css, en dat bestand houdt de render tegen. Zonder preload haalt
+     de browser het lettertype op zodra hij de CSS gelezen heeft, en dat is
+     vroeg genoeg.
 
      Material Symbols blijft van Google komen. Dat is een icoonfont van
      honderden kilobytes die alleen op een deel van de pagina's staat, en hij
