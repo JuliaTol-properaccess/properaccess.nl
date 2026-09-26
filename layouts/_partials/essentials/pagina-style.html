@@ -1,0 +1,41 @@
+{{/*
+  Stylesheets die maar op een deel van de pagina's nodig zijn.
+
+  essentials/style.html bouwt style.min.css: die blokkeert de eerste render en
+  staat op elke pagina. Alles wat daarin zit en maar op een handvol pagina's
+  nodig is, kost de andere pagina's tijd. Dit partial laadt zulke CSS apart.
+
+  Een groep is een bestand in assets/css/paginas/. Een pagina krijgt de groep
+  `tools` als hij in de sectie `tools` staat, en verder via de front matter:
+
+      paginacss: ["tools"]
+
+  De link komt na style.min.css, dus deze regels winnen bij gelijke
+  specificiteit. Zet daarom in een groepsbestand alleen klassen die nergens
+  anders op de site voorkomen. 26 september 2026.
+*/}}
+{{ $groepen := slice }}
+{{ if eq .Section "tools" }}
+  {{ $groepen = $groepen | append "tools" }}
+{{ end }}
+{{ range .Params.paginacss }}
+  {{ $groepen = $groepen | append . }}
+{{ end }}
+
+{{ range uniq $groepen }}
+  {{ with resources.Get (printf "css/paginas/%s.css" .) }}
+    {{ if hugo.IsProduction }}
+      {{ $css := . | minify | fingerprint }}
+      <link
+        href="{{ $css.RelPermalink }}"
+        integrity="{{ $css.Data.Integrity }}"
+        rel="stylesheet" />
+    {{ else }}
+      <link
+        href="{{ .RelPermalink }}"
+        rel="stylesheet" />
+    {{ end }}
+  {{ else }}
+    {{ errorf "pagina-style: assets/css/paginas/%s.css bestaat niet (pagina %s)" . $.RelPermalink }}
+  {{ end }}
+{{ end }}
