@@ -19,6 +19,8 @@ keywords:
   - toegankelijkheidsverklaring webshop
   - status A B C D
   - WCAG-EM onderbouwing
+  - modeltoegankelijkheidsverklaring
+  - wettelijke uitzonderingen BDTO
 
 banner:
   badge: "BDTO, het Register en de EAA"
@@ -44,7 +46,9 @@ faqs:
   - question: "Moet elke website en app een eigen verklaring hebben?"
     answer: "Ja. Het Register werkt per digitaal kanaal. Je hoofdwebsite, elke subsite, je aanvraagformulieren, je intranet, portalen achter een inlog en je apps hebben allemaal een eigen verklaring nodig, met een eigen onderbouwing. Eén verklaring voor de hele organisatie bestaat niet."
   - question: "Wat betekenen de statussen A, B, C, D en E?"
-    answer: "A betekent dat het kanaal volledig voldoet. B betekent gedeeltelijk. C betekent dat het onderzoek loopt of dat er eerste maatregelen zijn genomen. D betekent dat het kanaal niet voldoet. E is geen status die je zelf kiest: die geldt voor sites waarvan geen enkele organisatie heeft bevestigd dat ze van haar zijn. Alleen onder A en B ligt een afgerond onderzoek."
+    answer: "A betekent dat je een verklaring hebt met een compleet onderzoek van hooguit 3 jaar oud, en dat het kanaal aan alle 50 eisen voldoet. B is hetzelfde, maar dan met minder dan 50 eisen gehaald. C betekent dat je een verklaring hebt zonder compleet onderzoek, omdat je het kanaal binnen 6 maanden laat onderzoeken of het opheft. D betekent dat er een verklaring is zonder onderzoek en zonder planning. E betekent dat er helemaal geen verklaring is. Alleen onder A en B ligt een afgerond onderzoek. Alleen A betekent toegankelijk; A, B en C betekenen dat je aan de wet voldoet."
+  - question: "Wat verandert er op 1 oktober 2026 aan de toegankelijkheidsverklaring?"
+    answer: "Dan geldt een nieuw model, vastgesteld door de staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties op 8 december 2025 en gepubliceerd in Staatscourant 2026, 515. Er veranderen drie dingen. Valt content onder een van de wettelijke uitzonderingen in artikel 2 lid 2 van het Besluit digitale toegankelijkheid overheid, dan benoem je voortaan in je verklaring onder welke uitzondering die valt. Voldoe je gedeeltelijk, of doe je een beroep op onevenredige last, dan noem je de toegankelijke alternatieven die je bezoekers aanbiedt. En de termijn bij status C wordt 12 maanden als je het kanaal opheft; laat je onderzoek doen, dan blijft het 6 maanden."
   - question: "Hoe lang is een toegankelijkheidsverklaring geldig?"
     answer: "De verklaring blijft staan, het onderzoek eronder vervalt na 36 maanden. Zodra het oudste deelonderzoek die leeftijd bereikt, verdwijnt de onderbouwing en zakt je status. Bestaat je onderbouwing uit meerdere deelonderzoeken van verschillende datums, dan telt de oudste."
   - question: "Mag ik het onderzoek zelf doen?"
@@ -125,16 +129,52 @@ aan een jurist.
 
 {{< section-full title="De vijf statussen" id="statussen" bg="light" >}}
 
-| Status | Betekenis | Ligt er onderzoek onder? |
+| Status | Wat er onder ligt | Voldoe je aan de wet? |
 | --- | --- | --- |
-| A | Voldoet volledig | Ja |
-| B | Voldoet gedeeltelijk | Ja |
-| C | Onderzoek loopt of eerste maatregelen genomen | Nee |
-| D | Voldoet niet | Nee |
-| E | Geen organisatie heeft de site geclaimd | Er is geen verklaring |
+| A | Een verklaring plus een compleet onderzoek van hooguit 3 jaar oud. Het kanaal haalt alle 50 eisen | Ja |
+| B | Een verklaring plus een compleet onderzoek, maar het kanaal haalt minder dan 50 eisen | Ja, als je maatregelen hebt beschreven en er elk jaar verbetering is |
+| C | Een verklaring zonder compleet onderzoek. Je laat het kanaal binnen 6 maanden onderzoeken, of je heft het op | Ja, tot die termijn afloopt. Daarna word je automatisch D |
+| D | Een verklaring, geen onderzoek en niets gepland | Nee |
+| E | Er is geen verklaring | Nee |
 
-Status E kies je niet zelf. Een B met een volledig rapport eronder is bruikbaarder dan een A met
-een gat erin, want toezicht kijkt naar dat rapport.
+**Alleen A betekent toegankelijk.** A, B en C betekenen dat je aan de wet voldoet, en dat is iets
+anders. Status E kies je niet zelf: die geldt voor kanalen zonder verklaring, en die staan alleen
+in het Dashboard DigiToegankelijk. Een B met een volledig rapport eronder is bruikbaarder dan een A
+met een gat erin, want het Register merkt een onvolledige onderbouwing aan als ontoereikend.
+
+{{< /section-full >}}
+
+{{< section-full title="Wat er op 1 oktober 2026 verandert" id="nieuw-model" >}}
+
+Per 1 oktober 2026 geldt een nieuw model voor de toegankelijkheidsverklaring. De staatssecretaris
+van Binnenlandse Zaken en Koninkrijksrelaties stelde het vast op 8 december 2025; het besluit staat
+in [Staatscourant 2026, 515](https://zoek.officielebekendmakingen.nl/stcrt-2026-515.html).
+Digitoegankelijk kondigde het aan in het bericht
+[Modeltoegankelijkheidsverklaring vastgesteld](https://www.digitoegankelijk.nl/nieuws/modeltoegankelijkheidsverklaring-vastgesteld).
+
+Er veranderen drie dingen:
+
+- **Je benoemt de wettelijke uitzonderingen.** Valt content onder een van de acht onderdelen van
+  artikel 2 lid 2 van het Besluit digitale toegankelijkheid overheid, dan schrijf je in je
+  verklaring op onder welk onderdeel die valt. In onze rapporten gaat het meestal om
+  kantoorbestanden van vóór 23 september 2018, om video en audio van vóór 23 september 2020, en om
+  content van derden die je niet financiert en niet hebt ontwikkeld.
+- **Je benoemt de toegankelijke alternatieven.** Voldoe je gedeeltelijk, of doe je een beroep op
+  onevenredige last, dan noem je wat je bezoekers aanbiedt zolang een afwijking niet is opgelost.
+- **De termijn bij status C wordt 12 maanden als je het kanaal opheft.** Laat je onderzoek doen,
+  dan blijft die termijn 6 maanden. De 12 maanden is dus geen algemene verruiming van status C.
+
+De eerste twee punten gaan over je onderzoek. Een wettelijke uitzondering vraagt drie gegevens:
+welke content het is, waar die staat, en onder welk onderdeel die valt. Die komen uit de reikwijdte
+die de auditor in stap 1 van WCAG-EM vaststelt. Het toegankelijke alternatief komt er niet uit: dat
+is een keuze van je organisatie, en wij denken daar hooguit in mee.
+
+In onze rapporten staan de wettelijke uitzonderingen daarom apart van de onderdelen die we niet
+hebben onderzocht. Dat tweede is een scopekeuze en geen wettelijke uitzondering, en daar is apart
+onderzoek voor nodig.
+
+Logius overlegt nog met de toetsbureaus over de uitvoering. Je hoeft op dit moment nog niets te
+doen aan een bestaande verklaring.
 
 {{< /section-full >}}
 
@@ -182,9 +222,13 @@ is dat de ACM. Alle zes staan op de pagina over
 {{< section-full title="Hulp bij de onderbouwing" id="hulp" bg="light" >}}
 
 Proper Access levert het rapport dat onder je verklaring komt te staan. We toetsen handmatig
-volgens WCAG-EM aan WCAG 2.2 niveau AA, met schermlezer, alleen toetsenbord en zoom tot 400%. Een
-senior auditor voert het onderzoek uit en een tweede auditor reviewt, zodat elke bevinding dubbel
-is gecontroleerd.
+volgens WCAG-EM aan WCAG 2.2 niveau AA, met twee schermlezers, alleen toetsenbord en zoom tot 400%.
+Een senior auditor voert het onderzoek uit en een tweede auditor reviewt. Dat heet het
+6-ogen-principe: elk rapport wordt door drie mensen bekeken.
+
+De gegevens die het nieuwe model over het onderzoek vraagt staan bij elkaar in het rapport, in de
+woorden van het model, zodat je ze kunt overnemen in de invulassistent. De wettelijke uitzonderingen
+staan er met het onderdeel van artikel 2 lid 2 en de vindplaats erbij.
 
 Een volledig onderzoek begint bij circa € 2.250; welk type bij je kanaal past staat op de pagina
 over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Zijn de bevindingen opgelost, dan
