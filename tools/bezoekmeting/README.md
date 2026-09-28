@@ -17,18 +17,28 @@ Dit is dus een meting en geen leadtool: er is geen dashboard en geen opvolging.
    - het PTR-record in DNS, via DNS-over-HTTPS bij 1.1.1.1
    - de RDAP-gegevens van RIPE, en anders via rdap.org bij de juiste registrar
    - als beide niets geven: de netwerknaam die Cloudflare zelf meegeeft
-3. De uitkomst wordt ingedeeld als `bedrijf`, `provider`, `hosting`, `proxy`,
-   `eigen` of `onbekend`, en als losse regel in D1 opgeslagen.
+3. De uitkomst wordt ingedeeld als `bedrijf`, `bot`, `provider`, `hosting`,
+   `proxy`, `eigen` of `onbekend`, en als losse regel in D1 opgeslagen.
 
 ### Hoe de indeling werkt
 
-Een echte organisatienaam uit RIPE (een `ORG-`-object) gaat voor op de rest. Een
-gemeente die een blok huurt van KPN staat daar op eigen naam, en die moet niet
-als provider in de lijst verdwijnen.
+Zegt het netwerk eromheen dat er een machine achter zit, dan is dat het antwoord:
+een crawler, een hostingnetwerk of een proxy gaat voor op de naam uit RDAP. Ook
+als het blok op naam van een klant staat, zit daar geen bezoeker achter.
+
+Daarna telt een echte organisatienaam uit RIPE (een `ORG`-object). Een gemeente
+die een blok huurt van KPN staat daar op eigen naam, en die moet niet als
+provider in de lijst verdwijnen. Een providernaam weegt dus niet op tegen een
+organisatienaam, een hostingnaam wel.
 
 Is er geen organisatienaam, dan telt alles mee wat bekend is: de netnaam, het
 PTR-record en de netwerknaam van Cloudflare. In deze volgorde:
 
+- `bot`: crawlers van AI-diensten, zoekmachines en SEO-tools. Een deel heeft
+  eigen IP-ruimte die bij de registrar op hun naam staat, en kwam daardoor als
+  bedrijf in de lijst. Het blok `216.73.216.0/22` heet `AWS-ANTHROPIC`, staat op
+  naam van Anthropic, PBC en staat in de crawlerlijst op
+  `claude.com/crawling/bots.json`
 - `hosting`: clouddiensten en hostingpartijen, en de crawlers van Microsoft en Google
 - `proxy`: bedrijfsproxies als Zscaler en VPN-diensten. Er zit een werknemer
   achter, maar van welk bedrijf is niet te zien
@@ -40,6 +50,11 @@ PTR-record en de netwerknaam van Cloudflare. In deze volgorde:
 Een blokcode als `SKY-6191063` of `OTS212484` is geen bruikbare naam. Een netnaam
 als `NL-PI-PLUS` telt wel als naam, maar weegt niet op tegen de netwerkeigenaar:
 dat blijkt een consumentenblok van KPN.
+
+Niet elke naam die RDAP als registrant teruggeeft is een organisatie. Bij Hetzner
+staat `HOS-GUN` als registrant, en dat is een beheerobject. Daarom telt de naam
+van het blok zelf (`HETZNER-fsn1-dc7`) mee bij het indelen, ook al komt hij niet
+in de lijst met organisaties.
 
 De keuze is bewust streng. Liever een bezoek missen dan een provider als lead op
 de lijst zetten.
@@ -89,6 +104,15 @@ cd tools/bezoekmeting && npx wrangler deploy
 Let op: `wrangler deploy` overschrijft secrets die in het dashboard zijn gezet.
 Zet `RAPPORT_SLEUTEL` daarna opnieuw als je hem daar had ingevuld.
 
+Verandert er iets aan de indeling, leeg dan ook de cache. Anders blijft een
+netwerk tot dertig dagen op de oude soort staan:
+
+```bash
+npx wrangler d1 execute pa-bezoekmeting --remote --command "DELETE FROM netwerk_cache"
+```
+
+Wat al gemeten is verandert daar niet van: de soort staat per regel in `bezoek`.
+
 Aan- en uitzetten op de site gaat via `config/_default/params.toml`:
 
 ```toml
@@ -106,7 +130,9 @@ https://pa-bezoekmeting.juliatol.workers.dev/rapport?sleutel=<sleutel>&dagen=7
 
 Bovenaan staat het getal waar het om gaat: hoeveel paginaweergaven er gemeten
 zijn en welk deel daarvan bij een organisatie hoort. Daaronder de organisaties
-met hun pagina's, en de pagina's waar bedrijfsbezoek op binnenkomt.
+met hun pagina's, en de pagina's waar bedrijfsbezoek op binnenkomt. Onderaan
+staan de crawlers apart, met hoeveel pagina's ze ophaalden. Dat is geen bezoek,
+maar het laat wel zien wat AI-diensten en zoekmachines van de site lezen.
 
 Met `&formaat=json` komt hetzelfde als JSON terug. Dat is wat het CRM
 serverside ophaalt voor de pagina Websitebezoekers; zie `src/lib/bezoekmeting.ts`
@@ -115,9 +141,10 @@ bij de browser terecht.
 
 ## Onderhoud
 
-De lijsten `HOSTERS` en `PROVIDERS` in `worker.js` zijn een eerste inschatting op
-naam. Kijk na een paar dagen naar de organisaties die als `bedrijf` zijn geteld:
-staan er providers of hostingpartijen tussen, vul die lijsten dan aan.
+De lijsten `BOTS`, `HOSTERS` en `PROVIDERS` in `worker.js` zijn een eerste
+inschatting op naam. Kijk na een paar dagen naar de organisaties die als
+`bedrijf` zijn geteld: staan er crawlers, providers of hostingpartijen tussen,
+vul die lijsten dan aan.
 
 Opruimen kan met de hand:
 
