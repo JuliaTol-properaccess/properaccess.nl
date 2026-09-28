@@ -6,4 +6,5 @@ type: quickscan
 aliases:
   - /quickscan/
   - /mini-audit/
+translationKey: "mini-audit"
 ---

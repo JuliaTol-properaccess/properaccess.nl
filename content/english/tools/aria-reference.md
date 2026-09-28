@@ -5,4 +5,5 @@ layout: "aria-referentie"
 gratis: true
 weight: 10
 doelgroep: ["Web developers"]
+translationKey: "tool-aria-referentie"
 ---

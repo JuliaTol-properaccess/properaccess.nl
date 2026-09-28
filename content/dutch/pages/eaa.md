@@ -82,6 +82,7 @@ faqs:
     answer: "Nee. De EAA verplicht een toegankelijke website of app en zegt niets over onderzoek. Dat is een verschil met het BDTO, waar een toegankelijkheidsverklaring met onderzoek eronder wél verplicht is. Het praktische argument ligt ergens anders: de ACM toetst zelf volgens WCAG-EM, dus met een onderzoek in diezelfde methode heb je iets om op tafel te leggen als er vragen komen. En zonder onderzoek weet je niet wat er mis is. Een gemiddelde audit levert bij ons zo\u2019n honderd bevindingen op, en die zitten vrijwel nooit waar mensen ze verwachten."
   - question: "Voldoe ik als ik een overlay-tool installeer?"
     answer: "Nee. Een overlay is JavaScript dat bovenop je site draait en de code eronder ongemoeid laat. Een knop zonder toegankelijke naam blijft een knop zonder toegankelijke naam, ook met een widget erbij. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie als de ACM, die daar op de Dag van Digitale Toegankelijkheid in juni 2026 duidelijk over was. Wat een overlay wel doet, is een knop op je site zetten die suggereert dat het geregeld is."
+translationKey: "eaa"
 ---
 
 {{< section-feiten title="Wat is de European Accessibility Act?" eyebrow="Sinds 28 juni 2025" id="wat-is-het" feiten="eaa_feiten" >}}

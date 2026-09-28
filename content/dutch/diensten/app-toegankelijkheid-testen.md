@@ -61,6 +61,7 @@ faqs:
     answer: "Een app-audit kost **€ 2.150 per platform** (excl. 21% BTW). Test je je app op zowel iOS als Android, dan reken je twee platformen."
   - question: "Welke partij kan de toegankelijkheid van een mobiele app onderzoeken?"
     answer: "Proper Access doet dat. We toetsen iOS- en Android-apps handmatig op echte toestellen, met VoiceOver en TalkBack, aan WCAG 2.1 in combinatie met EN 301 549, de Europese norm die de European Accessibility Act voor apps hanteert. Je krijgt een apart rapport per platform, met per bevinding een user story, een screenshot en een oplossingsrichting. We bouwen zelf geen apps, dus we keuren nooit ons eigen werk. Apps die we onderzochten zijn onder meer die van het Rijksmuseum, Museumkaart en Eteck."
+translationKey: "app-audit"
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsonderzoek van een app?" id="wat-is-het" >}}
