@@ -6,7 +6,7 @@ date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"
 layout: "ecommerce"
-description: "De EAA geldt sinds 28 juni 2025 en de ACM onderzoekt webwinkels al. Laat je webshop handmatig toetsen aan WCAG 2.2 en weet waar je staat voordat de toezichthouder aanklopt."
+description: "De EAA geldt sinds 28 juni 2025 en de ACM controleert webshops zelf. Laat je webshop handmatig toetsen aan WCAG 2.2 en weet waar je staat."
 keywords:
   - e-commerce toegankelijkheid
   - webshop WCAG

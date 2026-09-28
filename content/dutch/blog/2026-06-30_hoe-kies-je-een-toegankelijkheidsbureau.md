@@ -10,7 +10,7 @@ tags:
   - "wcag"
   - "offerte"
   - "kiezen"
-description: "Voor dezelfde website betaal je bij het ene bureau 500 euro en bij het andere 25.000. Welke vragen stel je een auditbureau, hoe lees je de antwoorden, en hoe herken je dat een rapport echt door een mens is gemaakt?"
+description: "Voor dezelfde website betaal je bij het ene bureau € 500 en bij het andere € 25.000. Negen vragen die je stelt voordat je een auditbureau kiest."
 keywords:
   - toegankelijkheidsbureau kiezen
   - vragen auditbureau wcag
