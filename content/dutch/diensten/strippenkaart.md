@@ -33,6 +33,7 @@ trust:
     - "Snelle checks"
     - "Technisch advies"
     - "Vragen over een rapport"
+translationKey: "strippenkaart"
 ---
 
 {{< section-full title="Eén strip is één vraag over één onderwerp" >}}

@@ -18,6 +18,7 @@ keywords:
   - readable accessibility report
   - agile accessibility
 image: "/images/rapport/rapport1.png"
+translationKey: "user-stories-in-rapport"
 ---
 
 {{< case-section image="/images/rapport/rapport1.png" alt="Summary page of an audit report showing the number of passed and failed success criteria, impact distribution and score per WCAG principle" >}}

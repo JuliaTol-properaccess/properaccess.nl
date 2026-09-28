@@ -132,6 +132,7 @@ faqs:
 
       Of je nu een Nederlandse overheidsinstelling bent, een internationale e-commerce speler,
       of een museum met bezoekers over de hele wereld: wij helpen je verder.
+translationKey: "over-ons"
 ---
 
 {{< section-full title="Onze missie: toegankelijkheid als vanzelfsprekend fundament" >}}

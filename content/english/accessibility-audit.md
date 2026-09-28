@@ -97,4 +97,5 @@ faqs:
     answer: "A report per page with screenshots and explanations, a CSV file with all findings for project management, code snippets per solution, and a walkthrough in an online session (optional). You can put questions about the report to a senior auditor afterwards through our accessibility credits: one credit is one question on one topic."
   - question: "What does an audit cost?"
     answer: "It depends on the size and the amount of interaction. A simple, mostly informational website starts from approximately €2,250; most websites are medium-sized and land around €3,150; a website with login, filters or a webshop is around €4,200; a complex custom application around €5,100. A webshop starts from approximately €2,895 because we test the full checkout. An app costs €2,150 per platform. All prices exclude 21% VAT, and you get a quote with the scope and the hours before we start."
+translationKey: "toegankelijkheidsaudit"
 ---

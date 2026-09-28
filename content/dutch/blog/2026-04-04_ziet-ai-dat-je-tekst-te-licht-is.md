@@ -20,6 +20,7 @@ serie: "AI en Toegankelijkheidstesten"
 wcag: "1.4.3 Contrast (minimum)"
 test_datum: "2026-04-04"
 image: "/images/blog/ai-wcag-serie.svg"
+translationKey: "ziet-ai-lichte-tekst"
 ---
 
 {{< case-section >}}

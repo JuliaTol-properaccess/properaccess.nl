@@ -7,4 +7,5 @@ weight: 10
 doelgroep:
   - "Webredactie"
   - "Webdeveloper"
+translationKey: "tool-foutmeldingen"
 ---
