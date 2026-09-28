@@ -7,7 +7,7 @@ url: "/auditbureau-kiezen/"
 layout: sectie
 sectie_layout: true
 subtitle: "Zeven vragen die het verschil maken tussen een rapport dat niemand gebruikt en een rapport waar je team mee vooruit kan"
-description: "Waar let je op bij het kiezen van een bureau voor een WCAG-onderzoek? Zeven concrete vragen over handmatig testen, WCAG-EM, zelf leren toetsen, de opbouw van het rapport, ervaring, onafhankelijkheid en nazorg."
+description: "Zeven vragen die je stelt voordat je een auditbureau kiest: over handmatig testen, WCAG-EM, de opbouw van het rapport, onafhankelijkheid en nazorg."
 keywords: "auditbureau kiezen, WCAG audit bureau, toegankelijkheidsonderzoek laten uitvoeren, WCAG-EM, digitale toegankelijkheid bureau, auditbureau vergelijken, WCAG audit offerte"
 hero_meta:
   - label: "Auteur"

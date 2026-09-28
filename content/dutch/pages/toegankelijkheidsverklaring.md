@@ -7,7 +7,7 @@ hide_cta: true
 date: 2026-08-22
 slug: "toegankelijkheidsverklaring"
 url: "/toegankelijkheidsverklaring/"
-description: "Hoe je een toegankelijkheidsverklaring opstelt. Voor de overheid: de zes stappen naar het Register, de vijf statussen en wat er aan onderbouwing bij hoort. Voor bedrijven: wat de European Accessibility Act van je vraagt. Met twee gratis generators."
+description: "Een toegankelijkheidsverklaring opstellen: de zes stappen naar het Register, de vijf statussen en wat de EAA van bedrijven vraagt. Met twee generators."
 keywords:
   - toegankelijkheidsverklaring
   - toegankelijkheidsverklaring opstellen

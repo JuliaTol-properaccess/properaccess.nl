@@ -7,7 +7,7 @@ hide_cta: true
 date: 2026-08-30
 slug: "digitale-toegankelijkheid"
 url: "/digitale-toegankelijkheid/"
-description: "Digitale toegankelijkheid betekent dat je website, app en documenten te gebruiken zijn met hulpsoftware, met alleen het toetsenbord en sterk ingezoomd. Wat WCAG 2.2 voorschrijft, welke wet voor jou geldt, en hoe je erachter komt waar je staat."
+description: "Wat digitale toegankelijkheid is: je site te gebruiken met hulpsoftware, met alleen het toetsenbord en sterk ingezoomd. En welke wet voor jou geldt."
 keywords:
   - digitale toegankelijkheid
   - wat is digitale toegankelijkheid

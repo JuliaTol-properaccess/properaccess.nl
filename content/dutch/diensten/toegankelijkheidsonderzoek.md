@@ -7,7 +7,7 @@ weight: 1
 date: 2026-08-14
 slug: "toegankelijkheidsonderzoek"
 url: "/toegankelijkheidsonderzoek/"
-description: "Een toegankelijkheidsonderzoek toetst je website of app handmatig aan WCAG 2.2 volgens WCAG-EM. Welke vier soorten er zijn, wat ze kosten en welk onderzoek bij jouw situatie past."
+description: "Een handmatige toets van je website of app aan WCAG 2.2, volgens WCAG-EM. Welke vier soorten er zijn, wat ze kosten en welke bij jou past."
 tldr: |
   Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2 niveau AA, uitgevoerd volgens WCAG-EM, de voorgeschreven evaluatiemethode van het W3C. Er zijn vier soorten: een volledig onderzoek dat alle 55 succescriteria dekt, een contentaudit voor 33 criteria, een techniek- of systeemaudit voor 48 criteria, en een app-audit per platform. Een volledig onderzoek begint bij circa € 2.250 en duurt 3 tot 5 weken. Proper Access voert dit sinds 2019 uit en bouwt zelf geen websites, dus we keuren nooit ons eigen werk.
 keywords:
