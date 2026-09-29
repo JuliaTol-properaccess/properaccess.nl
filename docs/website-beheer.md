@@ -82,6 +82,7 @@ keywords:
   - keyword 1
   - keyword 2
 image: "/images/blog/pad-naar-afbeelding.png"
+image_alt: "Beschrijving van wat er op de afbeelding staat"
 ---
 ```
 
@@ -102,6 +103,14 @@ Plaats afbeeldingen in `static/images/` (of een submap daarvan, bijv. `static/im
 image: "/images/blog/mijn-afbeelding.png"
 ![Alt-tekst](/images/blog/mijn-afbeelding.png)
 ```
+
+**Alt-tekst bij de hoofdafbeelding.** Artikelen in de categorie `wcag-uitgelegd` tonen
+`image` boven de tekst. Die afbeelding krijgt zijn alt-tekst uit het veld `image_alt`
+in de front matter. Laat je het veld weg, dan blijft de alt-tekst leeg en telt de
+afbeelding als decoratief. Draagt de afbeelding informatie die niet ook in de tekst
+staat, dan hoort er een `image_alt` bij. Bij de andere categorieën komt `image` niet op
+de pagina zelf. Hugo gebruikt hem dan alleen voor `og:image` bij het delen op social
+media en voor het veld `image` in de structured data.
 
 ### Beschikbare shortcodes
 
