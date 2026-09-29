@@ -61,9 +61,15 @@
       <div class="article-layout__content">
         {{ if and (gt (len $isWcagUitgelegd) 0) .Params.image }}
           <!-- WCAG uitgelegd: afbeelding boven tekst -->
+          {{/* `image_alt` in de front matter vult de alt-tekst. Staat het veld er
+               niet, dan blijft alt leeg en telt de afbeelding als decoratief. */}}
           <div class="blog-wcag">
             <div class="blog-wcag__image">
-              <img src="{{ .Params.image }}" alt="" loading="eager" decoding="async" />
+              <img
+                src="{{ .Params.image }}"
+                alt="{{ .Params.image_alt | default "" }}"
+                loading="eager"
+                decoding="async" />
             </div>
             <div class="blog-wcag__text content js-article-body">
               {{ .Content }}

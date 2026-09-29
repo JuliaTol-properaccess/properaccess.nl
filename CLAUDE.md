@@ -40,6 +40,7 @@ push zelf doen.
 - Blogcategorieën: `wcag-uitgelegd`, `webdeveloper`, `webredactie`, `ai-en-wcag`, `de-eaa`, `tips-en-tools`, `achtergrond_wcag`.
 - Shortcodes: `{{< button label="" link="" >}}`, `{{< notice "type" >}}…{{< /notice >}}`, `{{< case-section >}}`.
 - Afbeeldingen in `static/images/`, aangeroepen als `/images/…`.
+- `image:` in de front matter van een blogartikel komt alleen bij de categorie `wcag-uitgelegd` als afbeelding op de pagina zelf; elders vult hij alleen `og:image` en de structured data. De alt-tekst van die afbeelding staat in `image_alt:`. Zonder dat veld blijft de alt-tekst leeg en telt de afbeelding als decoratief.
 - Config ligt verspreid: `config/_default/` (hugo.toml, languages.toml, params.toml, menus.nl.toml, menus.en.toml), kleuren en fonts in `data/theme.json`, labels in `i18n/nl.yaml` en `i18n/en.yaml`.
 - `sitemap_exclude: true` in de front matter houdt een pagina uit de sitemap.
 
