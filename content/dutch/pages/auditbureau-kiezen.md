@@ -13,7 +13,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "augustus 2026"
+    value: "september 2026"
 ---
 
 {{< section-full >}}
@@ -83,9 +83,16 @@ Een andere aanpak is om alle problemen binnen één component bij elkaar te zett
 
 {{< /section-card >}}
 
-{{< section-card title="5. Hoeveel ervaring heeft het bureau?" >}}
+{{< section-card title="5. Wie doet de audit, en hoeveel ervaring heeft het bureau?" >}}
 
-De betrouwbaarheid van een bureau lees je af aan het aantal jaren ervaring, het aantal uitgevoerde audits en het aandeel klanten dat terugkomt.
+Toegankelijkheid testen leer je in de praktijk. Een junior die een checklist afwerkt mist de
+bevindingen die ertoe doen, en herkent niet wanneer iets technisch klopt en in de praktijk toch
+onbruikbaar is. Een senior kijkt naar het totaalbeeld en beoordeelt of er een
+[toegankelijk alternatief](/blog/toegankelijk-alternatief-1-klik-regel/) is, waardoor je niet
+alles hoeft op te lossen wat op het eerste gezicht een probleem lijkt. Vraag dus wie de audit
+uitvoert, en niet alleen wie de eindcontrole doet.
+
+De betrouwbaarheid van een bureau lees je verder af aan het aantal jaren ervaring, het aantal uitgevoerde audits en het aandeel klanten dat terugkomt.
 
 De ACM, de toezichthouder voor webshops en apps, toetst websites zelf en laat weten op welke punten ze niet toegankelijk zijn. Word je zo benaderd, dan is een ervaren sparringspartner van groot belang.
 
@@ -112,6 +119,21 @@ Leg dit vast voordat je begint, zodat je later weet wat je mag verwachten.
 {{< /section-card >}}
 
 {{< /section-cards >}}
+
+{{< section-full title="Twee beloften die niet kloppen" >}}
+
+Twee dingen klinken goed in een verkoopgesprek en houden geen stand.
+
+De eerste is "met onze tool ben je in één klik WCAG-conform". Dat gaat over overlay-widgets:
+een stuk JavaScript dat over je bestaande site heen wordt gelegd. De problemen eronder blijven
+staan, en voor mensen die een schermlezer gebruiken wordt de site er soms slechter bedienbaar
+van.
+
+De tweede is "wij garanderen 100% toegankelijk". Dat kan niemand garanderen. Hoe toegankelijk je
+site wordt, hangt af van wat je na het rapport oplost, en dat werk doet een auditbureau niet voor
+je.
+
+{{< /section-full >}}
 
 {{< section-highlight title="Waarom wij per element rapporteren" image="/images/pages/auditbureau-rapport-per-element.svg" link="/zo-werken-wij/rapport-en-bevindingen/" link_text="Zo ziet ons rapport eruit" >}}
 
@@ -147,6 +169,20 @@ Een scan vindt ontbrekende alt-teksten, lege knoppen en een deel van de contrast
 scan niet ziet: of de volgorde waarin een schermlezer voorleest klopt, of je met het toetsenbord
 uit een dialoogvenster komt, of een foutmelding wordt aangekondigd, en of een alt-tekst behalve
 aanwezig ook zinnig is.
+
+Zo ziet onze eigen testlijst eruit. Vraag een bureau waarmee zij testen en leg de antwoorden
+ernaast:
+
+- de twee meest gebruikte schermlezers, VoiceOver op macOS en NVDA op Windows
+- voorleessoftware op de tekst van je site
+- bediening met alleen het toetsenbord
+- spraakherkenning
+- de twee meest gebruikte browsers, Chrome en Firefox, waarvan één in een licht en één in een donker thema
+- zoom tot 200% en tot 400%
+- tekst herschalen
+- contrast van tekst en van informatieve elementen in de interface
+- multimedia, zoals iemand met een beperking het ervaart
+- formulieren, op circa 100 punten
 
 Dat cijfer van ongeveer 30% is een schatting uit het vakgebied en geen meting van ons. Als orde
 van grootte klopt het met wat we in de praktijk zien. We kennen inmiddels zo'n 150 verschillende
