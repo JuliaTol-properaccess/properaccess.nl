@@ -84,6 +84,24 @@ URL's opgehaald, geen fouten. Dat script kijkt naar twee dingen.
   lijst wijst nu naar de eindpagina.
 - De bron geeft 404 en bestaat dus echt niet meer.
 
+### Twee slugs noemen het verkeerde succescriterium
+
+De 56 tag-regels zijn gelegd op het nummer in de slug van het uitlegartikel. Bij twee
+artikelen klopt dat nummer niet met de inhoud:
+
+- `/blog/sc-1-4-5-wat-betekent-contrast-voor-niet-tekstuele-onderdelen/` heeft als titel
+  "SC 1.4.11" en als tag `1-4-11`. Contrast voor niet-tekstuele onderdelen is 1.4.11;
+  1.4.5 is afbeeldingen van tekst, en daarover gaat
+  `/blog/sc-1-4-5-wat-betekent-afbeeldingen-van-tekst/`.
+- `/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/` heeft als titel "SC 3.3.8".
+  Toegankelijke authenticatie is 3.3.8; 3.3.7 is redundante invoer, en daarover gaat
+  `/blog/sc-3-3-7-wat-betekent-redundante-invoer/`.
+
+Mijn eerste versie van de lijst stuurde `/tag/1-4-5/` daardoor naar het artikel over
+1.4.11. Dat is gecorrigeerd en die twee URL's zijn nu uitgesloten als doel. De slug zelf
+verander ik niet: dat is een URL die bestaat, dus dan is er weer een redirect nodig. Het
+staat als vraag bij Nata.
+
 ### De koppelingen waar een keuze in zit
 
 De meeste regels zijn een oude naam naar dezelfde pagina onder een nieuwe naam. Deze acht
