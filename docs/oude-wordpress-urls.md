@@ -29,15 +29,27 @@ Dit kan niet vanuit een sessie: het token hier heeft alleen rechten voor Workers
 
 ## Wat Julia doet
 
-1. Open in het Cloudflare-dashboard de zone `properaccess.nl` en ga naar Bulk Redirects.
-2. Maak een lijst aan en importeer `docs/redirects/cloudflare-bulk-redirects.csv`.
-3. Zet er een Bulk Redirect-regel op die de lijst gebruikt.
-4. Controleer het resultaat met `python3 scripts/controleer_redirect_lijst.py`. Elke bron
+Bulk Redirects zitten op het niveau van het account en niet in de zone. Het zijn twee
+stappen: een lijst met de URL's, en een regel die die lijst gebruikt. Zonder die tweede
+stap doet de lijst niets.
+
+1. Download het bestand `docs/redirects/cloudflare-bulk-redirects.csv` uit de repo.
+2. Ga in het Cloudflare-dashboard naar het account en daar naar Bulk Redirects.
+3. Maak een lijst aan onder "Bulk Redirect Lists" en upload de CSV.
+4. Maak daarna onder "Bulk Redirect Rules" een regel die naar die lijst wijst, en zet hem
+   aan.
+5. Controleer het resultaat met `python3 scripts/controleer_redirect_lijst.py`. Elke bron
    die nog 404 geeft, is nog niet actief; na het importeren horen ze allemaal 301 te geven.
 
-De CSV heeft de kolommen `source`, `target` en `status`. Of het dashboard die kolomnamen
-accepteert, heb ik niet kunnen testen: ik kom niet in het Cloudflare-account. Klopt het
-formaat niet, dan is het een kwestie van de koppen aanpassen, niet van de inhoud.
+Twee dingen die ik niet kan testen, want ik kom niet in het account.
+
+- **Of de kolomnamen kloppen.** De CSV heeft `source`, `target` en `status`. Klopt het
+  formaat niet, dan is het een kwestie van de koppen aanpassen, niet van de inhoud.
+- **Of het aantal past.** Cloudflare stelt een maximum aan het aantal URL's in een lijst,
+  en dat hangt af van het abonnement; op het gratis plan is het laag. De lijst heeft 190
+  regels. Zegt het dashboard dat het er te veel zijn, dan maak ik een korte lijst met de
+  belangrijkste. Begin dan bij `/author/julia_a11y/`, de 12 oude sitemaps en de oude
+  dienst- en sectorpagina's.
 
 De alias in de front matter van `content/dutch/authors/julia.md` kan blijven staan. Zolang
 de 301 er niet is, is die doorverwijspagina het enige wat de bezoeker nog bij de juiste
