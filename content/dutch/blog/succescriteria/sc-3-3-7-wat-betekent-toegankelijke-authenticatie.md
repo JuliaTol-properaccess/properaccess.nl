@@ -1,6 +1,7 @@
 ---
 title: 'SC 3.3.8 - Wat betekent "Toegankelijke authenticatie"'
 translationKey: "sc-3-3-8"
+slug: "sc-3-3-8-wat-betekent-toegankelijke-authenticatie"
 date: 2025-05-18
 categories:
   - "wcag-uitgelegd"
@@ -9,6 +10,7 @@ tags:
 description: "WCAG 3.3.8 vraagt om toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze toepast."
 aliases:
   - /sc-3-3-7-wat-betekent-toegankelijke-authenticatie/
+  - /blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/
 ---
 
 Je wilt inloggen op een website. Eerst moet je een wachtwoord van zestien tekens typen dat je uit je hoofd moet kennen. Dan krijg je een CAPTCHA met vervormde tekst die je moet ontcijferen. Vervolgens moet je alle verkeerslichten in een raster aanklikken. En als je een fout maakt, begin je van voren af aan.

@@ -117,7 +117,7 @@ Content en bediening moeten voor iedereen duidelijk zijn.
 
 ### Invoerhulp
 
-- **Inloggen vraagt geen geheugenpuzzel** (WCAG 2.2 — zie [toegankelijke authenticatie](/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/))
+- **Inloggen vraagt geen geheugenpuzzel** (WCAG 2.2 — zie [toegankelijke authenticatie](/blog/sc-3-3-8-wat-betekent-toegankelijke-authenticatie/))
 - **Dezelfde info wordt niet dubbel gevraagd** binnen een proces (WCAG 2.2 — zie [redundante invoer](/blog/sc-3-3-7-wat-betekent-redundante-invoer/))
 - Bij belangrijke acties (indienen, betalen) is er een **bevestigingsstap** of undo-optie
 

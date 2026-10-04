@@ -12,8 +12,10 @@ Per regel in de CSV:
   die de bezoeker nog een keer doorstuurt. Dat kost linkwaarde en is te
   vermijden door meteen naar de eindpagina te wijzen.
 - De bron hoort 404 te geven zolang de lijst nog niet in Cloudflare staat, en
-  301 daarna. Beide zijn goed; 200 is een fout, want dan bestaat de pagina nog
-  en hoort hij niet in de lijst.
+  301 daarna. Beide zijn goed. Een bron die 200 geeft met een meta-refresh is
+  ook goed: dat is een Hugo-aliaspagina die op de 301 wacht. Een bron die 200
+  geeft zonder meta-refresh is een fout, want dan bestaat de pagina nog en
+  hoort hij niet in de lijst.
 
 Zonder netwerk draait dit script niet. Afsluitcode 1 als er iets mis is.
 """
@@ -68,9 +70,9 @@ def main():
             fouten.append(f"{doel}: doel geeft {dcode}, verwacht 200")
         elif dalias:
             fouten.append(f"{doel}: doel is zelf een doorverwijspagina, wijs naar de eindpagina")
-        bcode = status[bron][0]
-        if bcode not in (301, 404):
-            fouten.append(f"{bron}: bron geeft {bcode}, verwacht 404 (nog niet gezet) of 301 (gezet)")
+        bcode, balias = status[bron]
+        if bcode not in (301, 404) and not (bcode == 200 and balias):
+            fouten.append(f"{bron}: bron geeft {bcode}, verwacht 404 of een aliaspagina (nog niet gezet) of 301 (gezet)")
 
     gezet = sum(1 for r in rijen if status[r["source"]][0] == 301)
     print(f"{len(rijen)} regels, {len(urls)} URL's opgehaald, {gezet} bronnen geven al een 301")
