@@ -2,6 +2,8 @@
 
 Status, 18 september 2026: variant B is gebouwd op `/home-b/`, nog niet live. De verdeling over A en B (de Worker) en het opslaan van chatvragen zijn nog niet gebouwd.
 
+Bijgewerkt op 4 oktober 2026: Proper Access heeft één vestiging, Keizersgracht 520 H in Amsterdam. De vestiging in Emmeloord is van de site af. De beslissingen hieronder zijn daarop aangepast.
+
 ## Waarom
 
 De huidige homepagina (`layouts/_default/homepage-aaas-v2.html`) heeft 9 secties en draait om één dienst: doorlopende monitoring. Julia wil een homepagina met weinig tekst, die in één zin zegt wie we zijn en wat je bij ons kunt halen, en die de bezoeker direct iets laat doen: een vraag stellen. Het voorbeeld is q42.nl.
@@ -11,10 +13,10 @@ We zetten de nieuwe pagina niet meteen live. We laten de oude (A) en de nieuwe (
 ## Beslissingen van Julia (18 september 2026)
 
 - Trainingen staan niet in de h1. Ze worden sinds 17 september niet actief aangeboden.
-- In de h1 wisselt de plaats: Amsterdam en Emmeloord.
+- In de h1 staat de plaats: Amsterdam.
 - De verdeling over A en B gebeurt door een Cloudflare Worker, zonder cookie en zonder iets op het apparaat van de bezoeker op te slaan.
 - De vragen die bezoekers in de vraagsectie typen, worden anoniem opgeslagen, tot 3 maanden na het einde van de test.
-- Het adres in Emmeloord is Randweg 25, 8304 AS Emmeloord. Het staat in de footer, net als bij q42.nl.
+- Het adres staat in de footer, net als bij q42.nl.
 - "We leren je hoe je zelf moet testen" krijgt op de homepagina de vorm van onze tools: de WCAG Radar en de PDF-checker.
 - Phi Pham is Projectmanager.
 
@@ -30,17 +32,13 @@ Sinds 19 september 2026 volgt variant B het ontwerp "Homepage D papier" uit Clau
 
 > We zijn Proper Access, een team enthousiaste WCAG-fanaten in Amsterdam.
 
-"Amsterdam" wisselt elke 6 seconden met "Emmeloord". Daaronder één zin:
+De plaatsnaam staat vast; er wisselt niets. Daaronder één zin:
 
 > Je kunt bij ons terecht voor een WCAG-audit, tools die toegankelijkheid makkelijker maken, consultancy of gewoon een goed gesprek.
 
 Elk van de vier onderdelen is een link: `/toegankelijkheidsaudit/`, `/tools/`, `/strippenkaart/` en `/contact/`. Controleer de paden bij het bouwen.
 
-De wisseltekst moet toegankelijk blijven:
-
-- Voor screenreaders staat er vaste tekst in de h1: "in Amsterdam en Emmeloord". Het wisselende woord is `aria-hidden`, zodat de naam van de kop niet elke 6 seconden verandert.
-- Beweging die vanzelf start, langer dan 5 seconden duurt en naast andere inhoud staat, heeft een pauzeknop nodig (WCAG 2.2.2). Die komt direct naast de h1.
-- Bij `prefers-reduced-motion: reduce` wisselt er niets en staat er "in Amsterdam en Emmeloord".
+De eerdere schets liet de plaatsnaam elke 6 seconden wisselen. Dat is vervallen met de tweede vestiging, en daarmee ook de pauzeknop die WCAG 2.2.2 voor zulke beweging vraagt.
 
 **2. Vraagsectie.** Dit is het onderdeel dat de pagina anders maakt. De chat staat in de pagina zelf, als tweede sectie, en niet in een venster eroverheen.
 
@@ -81,7 +79,7 @@ Het Engels valt buiten deze test. De Engelse homepagina heeft sinds 10 september
 | --- | --- |
 | Pagina B (gebouwd) | `layouts/_default/homepage-b.html`, `content/dutch/home-b.md` (`url: /home-b/`, `sitemap_exclude: true`, `canonical: https://www.properaccess.nl/`) |
 | Header en footer (gebouwd) | `layouts/partials/essentials/header-minimaal.html`, `footer-groot.html` en `data/footer_groot.yaml`. De keuze staat in de front matter (`header_minimaal`, `footer_groot`, `zonder_chatknop`) en werkt via `layouts/_default/baseof.html` |
-| Vraagsectie en meting (gebouwd) | `static/js/homepage-b.js`: de wisselende plaatsnaam, de chat in de pagina en het event `Homepage stap`. `chat-widget.js` blijft ongewijzigd |
+| Vraagsectie en meting (gebouwd) | `static/js/homepage-b.js`: de chat in de pagina en het event `Homepage stap`. `chat-widget.js` blijft ongewijzigd |
 | Systeemprompt chat (aangepast, nog niet gedeployed) | `tools/chat-worker/worker.js`. De oude prompt had verouderde prijzen, "geen software" en een verwijzing naar een WhatsApp-knop die in variant B niet bestaat |
 | Chatvragen opslaan | D1-database en tabel voor `tools/chat-worker/` |
 | Verdeling | nieuwe Worker `tools/homepage-test/` |
@@ -186,4 +184,4 @@ Deze verschillen zijn klein. Bij het bezoek van een gespecialiseerde B2B-site du
 - **Grondslag in de privacyverklaring.** Er staat nu "gerechtvaardigd belang" voor de chat en de bezoekmeting. Dat is nog niet juridisch nagekeken.
 - **Privacyverklaring bij de start van de test.** De verdeling op basis van een hash van IP-adres en het opslaan van chatvragen komen erbij zodra die gebouwd zijn. Nu staat er "We slaan de chatberichten zelf niet op", en dat klopt tot dan.
 - **Consultancy in de h1** linkt naar de strippenkaart. Er is geen aparte pagina over consultancy.
-- **Contactpagina.** Daar staat nog "We werken volledig digitaal, dus locatie maakt niet uit", en alleen het adres in Amsterdam. Het adres in Emmeloord staat nu alleen in de footer.
+- **Contactpagina.** Daar staat nog "We werken volledig digitaal, dus locatie maakt niet uit", en het adres in Amsterdam. Dat is sinds 4 oktober 2026 het enige adres.
