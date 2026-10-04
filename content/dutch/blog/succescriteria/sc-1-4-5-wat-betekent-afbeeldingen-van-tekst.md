@@ -1,5 +1,5 @@
 ---
-title: "Tekst in afbeeldingen: waarom het niet mag (WCAG 1.4.5)”"
+title: "Tekst in afbeeldingen: waarom het niet mag (WCAG 1.4.5)"
 date: 2026-02-16
 description: Ontdek waarom tekst als afbeelding problemen geeft voor toegankelijkheid en hoe je het beter aanpakt. Met praktische code-voorbeelden.
 categories:
