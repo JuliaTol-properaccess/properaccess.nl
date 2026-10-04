@@ -5,4 +5,5 @@ layout: "alt-tekst-keuzehulp"
 gratis: true
 weight: 0
 doelgroep: ["Web editors", "Web developers"]
+translationKey: "tool-alt-tekst-keuzehulp"
 ---

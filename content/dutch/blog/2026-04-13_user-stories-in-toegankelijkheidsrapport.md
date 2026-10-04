@@ -19,6 +19,7 @@ keywords:
   - toegankelijkheidsrapport leesbaar
   - agile toegankelijkheid
 image: "/images/rapport/rapport1.png"
+translationKey: "user-stories-in-rapport"
 ---
 
 {{< case-section image="/images/rapport/rapport1.png" alt="Samenvatting-pagina van een auditrapport met aantal voldoet en afgekeurde succescriteria, impactverdeling en score per WCAG-richtlijn" >}}

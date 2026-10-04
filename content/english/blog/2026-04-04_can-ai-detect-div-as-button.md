@@ -19,6 +19,7 @@ keywords:
   - clickable div
   - Playwright accessibility
 image: "/images/blog/ai-serie-kickoff-en.webp"
+translationKey: "herkent-ai-div-als-knop"
 ---
 
 {{< case-section >}}

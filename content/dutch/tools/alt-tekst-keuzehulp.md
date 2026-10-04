@@ -6,4 +6,5 @@ layout: "alt-tekst-keuzehulp"
 gratis: true
 weight: 0
 doelgroep: ["Webredactie", "Webdeveloper"]
+translationKey: "tool-alt-tekst-keuzehulp"
 ---

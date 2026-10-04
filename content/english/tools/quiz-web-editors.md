@@ -16,4 +16,5 @@ keywords:
   - WCAG web editors
   - alt text quiz
   - heading structure quiz
+translationKey: "quiz-webredactie"
 ---

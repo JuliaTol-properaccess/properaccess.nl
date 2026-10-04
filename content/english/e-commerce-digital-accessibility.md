@@ -93,4 +93,5 @@ faqs:
     answer: "A mini audit gives you results within a week. A full audit takes three to five weeks. Implementation depends on your development capacity — we're happy to help you plan realistically."
   - question: "What does an audit cost?"
     answer: "It depends on the size and complexity of your webshop. A simple shop on a standard template starts from approximately €2,895, a medium shop with filters, accounts and several payment methods is around €3,150, a shop with login, a configurator or complex filters around €4,200, and an international or custom shop around €5,100. A webshop starts higher than a plain website because we test the full checkout. All prices exclude 21% VAT; you get a quote with the scope and the hours before we start."
+translationKey: "e-commerce"
 ---

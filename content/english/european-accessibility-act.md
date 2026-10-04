@@ -109,6 +109,7 @@ faqs:
     answer: "No. The law requires an accessible service, not an audit. The practical reason to have one: without it you do not know what is wrong, and the ACM tests according to WCAG-EM itself, so an audit in that same method gives you something to put on the table when questions come. An average audit at Proper Access produces around a hundred findings, and they are rarely where people expect them."
   - question: "Does an overlay tool make us compliant?"
     answer: "No. An overlay is a script that runs on top of your site and leaves the code underneath unchanged. A button without an accessible name is still a button without an accessible name. We tested the three best-known overlay tools and reached the same conclusion the ACM gave publicly in June 2026."
+translationKey: "eaa"
 ---
 
 {{< eaa-monitor-chart id="eaa-monitor" >}}

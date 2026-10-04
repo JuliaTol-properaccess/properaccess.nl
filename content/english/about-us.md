@@ -81,4 +81,5 @@ sections:
       - "Phone or WhatsApp: [+31 85 5055 890](tel:+31855055890)"
       - "[LinkedIn](https://www.linkedin.com/company/proper-access-nl)"
       - "Chamber of Commerce (KVK): 95350985"
+translationKey: "over-ons"
 ---

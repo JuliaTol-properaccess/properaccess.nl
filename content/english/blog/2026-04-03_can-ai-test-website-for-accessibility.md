@@ -18,6 +18,7 @@ keywords:
   - accessibility automation
   - digital accessibility AI
 image: "/images/blog/ai-serie-kickoff-en.webp"
+translationKey: "kan-ai-website-testen"
 ---
 
 {{< case-section >}}
