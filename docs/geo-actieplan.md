@@ -641,6 +641,10 @@ Google.
   alles te consolideren.
 - Opgeruimd in de repo: `content/dutch/webshop-quickscan/index.md` noemde zijn eigen URL als
   alias.
+- **Stand 4 oktober 2026: groep A geeft nog 200, dus die zes 301's zijn er nooit gekomen.**
+  De oude WordPress-URL's die een 404 geven, zijn een los probleem en staan nu als
+  importeerbare lijst in `docs/redirects/`; de uitleg staat in
+  [docs/oude-wordpress-urls.md](oude-wordpress-urls.md).
 
 ### Stap 2: de functienamen hun eigen pagina geven. Begonnen 17 september 2026
 
