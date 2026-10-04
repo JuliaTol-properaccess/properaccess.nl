@@ -19,6 +19,7 @@ keywords:
   - toegankelijkheid automatiseren
   - digitale toegankelijkheid AI
 image: "/images/blog/ai-wcag-serie.svg"
+translationKey: "kan-ai-website-testen"
 ---
 
 {{< case-section >}}

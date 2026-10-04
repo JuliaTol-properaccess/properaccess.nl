@@ -61,6 +61,7 @@ sections:
       - "Faster if something has to go live for a deadline"
       - "Attachments welcome: screenshots, PDFs, code"
       - "Nothing charged if we cannot help with it"
+translationKey: "strippenkaart"
 ---
 
 ## Who buys credits

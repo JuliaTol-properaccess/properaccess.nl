@@ -6,7 +6,7 @@ layout: "agency"
 date: 2026-08-29
 slug: "eaa"
 url: "/eaa/"
-description: "De European Accessibility Act geldt sinds 28 juni 2025. Wat de wet is, voor wie hij geldt, welke norm eronder ligt, wie er toezicht houdt en wat je nu concreet moet doen."
+description: "De European Accessibility Act geldt sinds 28 juni 2025. Voor wie hij geldt, welke norm eronder ligt, wie toezicht houdt en wat je nu moet doen."
 tldr: |
   De European Accessibility Act (EAA) is richtlijn (EU) 2019/882. In Nederland is die omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, en de regels gelden sinds 28 juni 2025. De wet verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken: webshops, bankieren, reizen boeken, ticketing, e-books en telecom. De maatstaf is EN 301 549, die nu verwijst naar WCAG 2.1 niveau A en AA. Het toezicht ligt bij zes toezichthouders; voor webshops en apps is dat de ACM. De wet schrijft een toegankelijke website of app voor, geen onderzoek. Een onderzoek is de manier om te weten waar je staat.
 keywords:
@@ -82,6 +82,7 @@ faqs:
     answer: "Nee. De EAA verplicht een toegankelijke website of app en zegt niets over onderzoek. Dat is een verschil met het BDTO, waar een toegankelijkheidsverklaring met onderzoek eronder wél verplicht is. Het praktische argument ligt ergens anders: de ACM toetst zelf volgens WCAG-EM, dus met een onderzoek in diezelfde methode heb je iets om op tafel te leggen als er vragen komen. En zonder onderzoek weet je niet wat er mis is. Een gemiddelde audit levert bij ons zo\u2019n honderd bevindingen op, en die zitten vrijwel nooit waar mensen ze verwachten."
   - question: "Voldoe ik als ik een overlay-tool installeer?"
     answer: "Nee. Een overlay is JavaScript dat bovenop je site draait en de code eronder ongemoeid laat. Een knop zonder toegankelijke naam blijft een knop zonder toegankelijke naam, ook met een widget erbij. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie als de ACM, die daar op de Dag van Digitale Toegankelijkheid in juni 2026 duidelijk over was. Wat een overlay wel doet, is een knop op je site zetten die suggereert dat het geregeld is."
+translationKey: "eaa"
 ---
 
 {{< section-feiten title="Wat is de European Accessibility Act?" eyebrow="Sinds 28 juni 2025" id="wat-is-het" feiten="eaa_feiten" >}}

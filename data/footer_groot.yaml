@@ -41,6 +41,9 @@ kolommen:
       - { naam: "ARIA-referentie", url: "/tools/aria-referentie/" }
       - { naam: "Foutmeldingen", url: "/tools/foutmeldingen/" }
       - { naam: "Succescriteria per beperking", url: "/tools/sc-per-beperking/" }
+      - { naam: "Quiz: museum", url: "/tools/quiz-museum/" }
+      - { naam: "Quiz: webredactie", url: "/tools/quiz-webredactie/" }
+      - { naam: "Quiz: developers", url: "/tools/quiz-developers/" }
       - { naam: "Alle tools en quizzen", url: "/tools/" }
 
   - titel: "Kennis"

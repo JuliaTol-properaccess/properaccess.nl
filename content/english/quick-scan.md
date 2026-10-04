@@ -63,4 +63,5 @@ faqs:
     answer: "Within five working days. You receive an extensive, readable document with the most important findings, advice on how to fix them, and an estimate of the work involved."
   - question: "What happens after the mini audit?"
     answer: "Nothing you don't ask for. If you want to go deeper, a full accessibility audit gives you a report per element with concrete solutions, and we carry the mini audit findings over so you don't pay twice. A full website audit starts from approximately €2,250 excl. VAT."
+translationKey: "mini-audit"
 ---

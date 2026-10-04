@@ -20,6 +20,7 @@ keywords:
   - klikbare div
   - Playwright accessibility
 image: "/images/blog/ai-wcag-serie.svg"
+translationKey: "herkent-ai-div-als-knop"
 ---
 
 {{< case-section >}}

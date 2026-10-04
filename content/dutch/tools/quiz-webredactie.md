@@ -19,4 +19,5 @@ keywords:
   - "WCAG webredactie"
   - "alt-tekst quiz"
   - "koppenstructuur quiz"
+translationKey: "quiz-webredactie"
 ---

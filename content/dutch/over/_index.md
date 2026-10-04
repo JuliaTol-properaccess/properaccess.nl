@@ -3,6 +3,9 @@ title: "Over Proper Access"
 meta_title: "Over ons: WCAG-audits voor websites en apps | Proper Access"
 date: 2026-02-17
 type: "over"
+# /team gaf een 404 en werd in de week van 21-09-2026 nog bezocht.
+aliases:
+  - "/team"
 description: "Onafhankelijk WCAG-auditbureau voor websites en mobiele apps. Audits en begeleiding voor overheid, bedrijfsleven en culturele instellingen."
 keywords:
   [
@@ -132,6 +135,7 @@ faqs:
 
       Of je nu een Nederlandse overheidsinstelling bent, een internationale e-commerce speler,
       of een museum met bezoekers over de hele wereld: wij helpen je verder.
+translationKey: "over-ons"
 ---
 
 {{< section-full title="Onze missie: toegankelijkheid als vanzelfsprekend fundament" >}}

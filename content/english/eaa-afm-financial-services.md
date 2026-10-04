@@ -89,4 +89,5 @@ faqs:
     answer: "The AFM writes that all providers of banking and e-commerce services to consumers must draw up an accessibility statement, describing how the service works, how it is accessible and which assistive technology it supports, and available in more than one sensory format. This is information on your own website. It is not the statement in the Dutch government register, which belongs to the government decree."
   - question: "Where can I read the AFM's own material?"
     answer: "On the AFM theme page [accessibility of services to consumers](https://www.afm.nl/nl-nl/sector/themas/dienstverlening-aan-consumenten/toegankelijkheid) (in Dutch), with the three EAA updates as PDFs and the page on EAA reports. Questions about the rules can go to toegankelijkheidsrichtlijn@afm.nl; the AFM says that address cannot be used for the reports themselves. Our summary of the three updates is in [what the AFM expects in three EAA updates](/blog/eaa-updates-afm-financiele-sector/) (in Dutch)."
+translationKey: "financiele-instellingen"
 ---

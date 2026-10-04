@@ -29,7 +29,8 @@ for (const h of ["proxy.gemeente-x.nl", "mail.bbc.co.uk", "host", "a.b.c.example
 console.log("\nprefix ipv6:", netwerkPrefix("2a02:a44f:1234:5678::1"));
 
 // ── Indeling, met de namen die echt in de meting stonden ──────
-// verwachting per regel: wat het hoort te worden.
+// Per regel: de naam uit RDAP, de netwerknaam van Cloudflare, wat het hoort te
+// worden, en als vierde de netnaam van het blok als die meetelt.
 const GEVALLEN = [
   ["SKY-6191063", "SOCC-4615408", "provider"],
   ["NETIA-CGNAT", "Netia CGNAT", "provider"],
@@ -46,13 +47,24 @@ const GEVALLEN = [
   ["ASTRON-NET", "SURF", "bedrijf"],
   // een gemeente op een blok van KPN hoort bij de gemeente te blijven staan
   ["Gemeente Alkmaar", "KPN B.V.", "bedrijf"],
+  // crawlers met eigen IP-ruimte op hun naam; die stonden als bedrijf in de lijst
+  ["Anthropic, PBC", "AMAZON-02", "bot"],
+  ["AHREFS-CRAWLER-A-USA", "Ahrefs Pte Ltd", "bot"],
+  ["BAIDU HONG KONG LIMITED", "Baidu (Hong Kong) Limited", "bot"],
+  ["facebook-neteng", "Facebook, Inc.", "bot"],
+  // HOS-GUN is het beheerobject van Hetzner en stond als registrant in RDAP;
+  // de netnaam van het blok laat zien dat het hosting is
+  ["HOS-GUN", null, "hosting", "HETZNER-fsn1-dc7"],
+  // de underscore maakte van STARLINK één woord, dus de provider viel niet op
+  ["STARLINK_7467_MDRDESP1_IPV6", null, "provider"],
+  ["Yettel d.o.o.", null, "provider"],
 ];
 
 console.log("\nIndeling:");
 let fout = 0;
-for (const [rdap, asOrg, verwacht] of GEVALLEN) {
+for (const [rdap, asOrg, verwacht, netnaam = null] of GEVALLEN) {
   const naam = [rdap, asOrg].find((n) => bruikbareNaam(n)) || null;
-  const soort = deelIn(rdap, [rdap, asOrg].filter(Boolean).join(" "), naam);
+  const soort = deelIn(rdap, [rdap, netnaam, asOrg].filter(Boolean).join(" "), naam);
   const goed = soort === verwacht;
   if (!goed) fout++;
   console.log(

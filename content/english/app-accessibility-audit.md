@@ -91,4 +91,5 @@ faqs:
     answer: "No. We use the app the way a user does, through TestFlight or the App Store on iOS and through an APK or the Play Store on Android. A code review can be added if you want it."
   - question: "What does it cost?"
     answer: "€2,150 per platform, excl. 21% VAT. Two platforms is two audits and two reports. For the Rijksmuseum we audited two apps this way, each with its own report."
+translationKey: "app-audit"
 ---

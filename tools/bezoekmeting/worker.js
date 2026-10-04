@@ -26,13 +26,27 @@ const ALLOWED_ORIGINS = [
   "http://localhost:1313",
 ];
 
+/**
+ * Crawlers van AI-diensten, zoekmachines en SEO-tools. Die halen pagina's op om
+ * ze te verwerken; er zit geen bezoeker achter en ze horen niet in de lijst met
+ * organisaties. Ze krijgen een eigen soort en niet `hosting`, omdat het wél
+ * interessant is om te zien welke pagina's een AI-dienst ophaalt.
+ *
+ * Een deel van deze partijen heeft eigen IP-ruimte die bij de registrar op hun
+ * naam staat. Anthropic is daar het duidelijkste voorbeeld van: het blok
+ * 216.73.216.0/22 heet AWS-ANTHROPIC en staat op naam van Anthropic, PBC, en
+ * het staat in de crawlerlijst op claude.com/crawling/bots.json. Zonder deze
+ * lijst komen die adressen als bedrijf in de organisatielijst terecht.
+ */
+const BOTS = /\b(anthropic|claudebot|claude-user|claude-searchbot|openai|gptbot|oai-?searchbot|chatgpt|perplexity|bytespider|bytedance|common ?crawl|ccbot|ahrefs|semrush|majestic12|dataforseo|screaming ?frog|baidu|yandex|sogou|petal ?search|seznam|duckduck|googlebot|bingbot|applebot|facebook|meta ?platforms|diffbot|mistral ?ai)\b/i;
+
 // Netwerken van hostingpartijen en clouddiensten. Bezoek hiervandaan is vrijwel
 // altijd een crawler of een proxy en telt niet mee als bedrijfsbezoek.
 const HOSTERS = /\b(amazon|aws|google|microsoft|msn|bing|azure|oracle|hetzner|digitalocean|linode|ovh|scaleway|vultr|cloudflare|fastly|akamai|leaseweb|contabo|alibaba|tencent|huawei|datacamp|m247|choopa|upcloud|netcup|ionos|strato|transip|hostnet|serverius|nforce|worldstream|bit bv|previder|solcon hosting|web2objects|gtt|cogent|hurricane electric|apnic|arin|lacnic|afrinic|ripe ncc)\b/i;
 
 // Consumenten- en telecomproviders. Hier zit wel een mens achter, maar je weet
 // niet bij welk bedrijf hij werkt.
-const PROVIDERS = /\b(kpn|ziggo|vodafone|odido|t-mobile|tele2|delta fiber|caiway|freedom internet|online\.nl|xs4all|solcon|budget ?internet|edutel|proximus|telenet|telia|telenor|deutsche telekom|orange|free sas|sfr|british telecom|virgin media|sky|liberty global|starlink|three|o2|netia|fidium|at&t|att inc|comcast|verizon|charter|spectrum|cox communications|centurylink|lumen|telefonica|movistar|swisscom|a1 telekom|bouygues|iliad|post luxembourg|arise[o0]n)\b/i;
+const PROVIDERS = /\b(kpn|ziggo|vodafone|odido|t-mobile|tele2|delta fiber|caiway|freedom internet|online\.nl|xs4all|solcon|budget ?internet|edutel|proximus|telenet|telia|telenor|deutsche telekom|orange|free sas|sfr|british telecom|virgin media|sky|liberty global|starlink|three|o2|netia|fidium|at&t|att inc|comcast|verizon|charter|spectrum|cox communications|centurylink|lumen|telefonica|movistar|swisscom|a1 telekom|bouygues|iliad|post luxembourg|yettel|arise[o0]n)\b/i;
 
 /**
  * Woorden waarmee een netwerk zelf zegt dat er consumenten achter zitten. Die
@@ -150,6 +164,7 @@ async function zoekNetwerkOp(ip, asOrganisatie) {
   const ptr = await zoekPtr(ip);
   const gevonden = await zoekRdap(ip);
   const rdap = gevonden ? gevonden.naam : null;
+  const netnaam = gevonden ? gevonden.netnaam : null;
 
   // Alleen een echte organisatienaam uit RIPE mag voorgaan op de rest. Een
   // netnaam als NL-PI-PLUS is te vaag: dat blijkt een consumentenblok van KPN.
@@ -162,8 +177,10 @@ async function zoekNetwerkOp(ip, asOrganisatie) {
 
   // Voor de indeling telt alles mee wat we weten, ook de namen die als naam
   // zijn afgevallen. "End user ip pool" is geen bruikbare naam, maar het zegt
-  // wel precies wat voor netwerk het is.
-  const alles = [rdap, ptr, asOrganisatie].filter(Boolean).join(" ");
+  // wel precies wat voor netwerk het is. De netnaam van het blok hoort daar
+  // ook bij: bij Hetzner staat HOS-GUN als registrant, en dat is een
+  // beheerobject, terwijl het blok zelf HETZNER-fsn1-dc7 heet.
+  const alles = [rdap, netnaam, ptr, asOrganisatie].filter(Boolean).join(" ");
 
   return { organisatie: naam, soort: deelIn(rdapOrganisatie, alles, naam) };
 }
@@ -182,15 +199,25 @@ async function zoekNetwerkOp(ip, asOrganisatie) {
  * provider als lead op de lijst zetten.
  */
 function deelIn(rdapNaam, alles, naam) {
+  const rondom = soortUit(alles);
+  // Een crawler, een hostingnetwerk of een proxy gaat voor op de naam uit
+  // RDAP: daar zit een machine achter, ook als het blok op naam van een klant
+  // staat. Een providernaam telt hier juist niet mee, want dan zou de gemeente
+  // op een blok van KPN alsnog in de categorie provider verdwijnen.
+  if (rondom && rondom !== "provider") return rondom;
   if (bruikbareNaam(rdapNaam) && soortUit(rdapNaam) === null) return "bedrijf";
   // Zonder naam nooit "bedrijf": dan telt het mee in het percentage terwijl
   // het in de lijst met organisaties niet te zien is.
-  return soortUit(alles) ?? (naam ? "bedrijf" : "onbekend");
+  return rondom ?? (naam ? "bedrijf" : "onbekend");
 }
 
 function soortUit(tekst) {
   if (!tekst) return null;
+  // Een underscore telt in een regex als letter, dus \bstarlink\b vindt niets
+  // in STARLINK_7467_MDRDESP1_IPV6. Als scheidingsteken is het een spatie.
+  tekst = String(tekst).replace(/_+/g, " ");
   if (EIGEN.test(tekst)) return "eigen";
+  if (BOTS.test(tekst)) return "bot";
   if (HOSTERS.test(tekst)) return "hosting";
   if (PROXIES.test(tekst)) return "proxy";
   if (CONSUMENTENMARKERS.test(tekst)) return "provider";
@@ -232,7 +259,15 @@ async function zoekRdap(ip) {
       if (!res.ok) continue;
       const data = await res.json();
       const gevonden = organisatieUit(data);
-      if (gevonden) return { naam: String(gevonden.naam).trim(), bron: gevonden.bron };
+      if (gevonden) {
+        return {
+          naam: String(gevonden.naam).trim(),
+          bron: gevonden.bron,
+          // De naam van het blok zelf. Niet als organisatienaam bruikbaar, wel
+          // om te zien in wat voor netwerk we zitten.
+          netnaam: data.name ? String(data.name).trim() : null,
+        };
+      }
     } catch {
       // volgende bron
     }
@@ -395,6 +430,20 @@ async function rapportData(env, dagen) {
     padenPerOrganisatie.set(rij.organisatie, lijst);
   }
 
+  // Crawlers staan apart. Ze zijn geen bezoek, maar welke pagina's een
+  // AI-dienst of een zoekmachine ophaalt is wel iets om te volgen.
+  const bots = await env.DB.prepare(
+    `SELECT organisatie,
+            COUNT(*) AS weergaven,
+            COUNT(DISTINCT pad) AS paginas,
+            MAX(moment) AS laatst
+     FROM bezoek
+     WHERE moment > ? AND soort = 'bot' AND organisatie IS NOT NULL
+     GROUP BY organisatie
+     ORDER BY weergaven DESC
+     LIMIT 25`
+  ).bind(vanaf).all();
+
   const soorten = totaal.results;
   const weergaven = soorten.reduce((som, r) => som + r.aantal, 0);
   const herleidbaar = (soorten.find((r) => r.soort === "bedrijf") || {}).aantal || 0;
@@ -410,6 +459,7 @@ async function rapportData(env, dagen) {
       paden: padenPerOrganisatie.get(r.organisatie) || [],
     })),
     paden: paden.results,
+    bots: bots.results,
   };
 }
 
@@ -451,6 +501,17 @@ function tekstRapport(data) {
   for (const r of paden) {
     regels.push("  " + String(r.pad).slice(0, 55).padEnd(57) +
       String(r.weergaven).padStart(4) + " weergaven, " + r.organisaties + " organisaties");
+  }
+
+  regels.push("");
+  regels.push("CRAWLERS (AI-diensten, zoekmachines, SEO-tools; geen bezoek)");
+  if (!(data.bots || []).length) {
+    regels.push("  (geen)");
+  }
+  for (const r of data.bots || []) {
+    regels.push("  " + String(r.organisatie).slice(0, 40).padEnd(42) +
+      String(r.weergaven).padStart(4) + " weergaven, " + r.paginas +
+      " pagina's, laatst " + String(r.laatst).slice(0, 10));
   }
 
   return regels.join("\n") + "\n";

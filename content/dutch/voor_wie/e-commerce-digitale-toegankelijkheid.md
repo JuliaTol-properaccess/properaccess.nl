@@ -6,7 +6,7 @@ date: 2026-01-24
 slug: "e-commerce-digitale-toegankelijkheid"
 url: "/e-commerce-digitale-toegankelijkheid/"
 layout: "ecommerce"
-description: "De EAA geldt sinds 28 juni 2025 en de ACM onderzoekt webwinkels al. Laat je webshop handmatig toetsen aan WCAG 2.2 en weet waar je staat voordat de toezichthouder aanklopt."
+description: "De EAA geldt sinds 28 juni 2025 en de ACM controleert webshops zelf. Laat je webshop handmatig toetsen aan WCAG 2.2 en weet waar je staat."
 keywords:
   - e-commerce toegankelijkheid
   - webshop WCAG
@@ -57,6 +57,7 @@ faqs:
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.895 voor een eenvoudige shop, en kan oplopen tot circa € 5.100 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
     answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
+translationKey: "e-commerce"
 ---
 
 {{< section-full title="Valt jouw webshop onder de European Accessibility Act?" id="valt-mijn-webshop-eronder" >}}

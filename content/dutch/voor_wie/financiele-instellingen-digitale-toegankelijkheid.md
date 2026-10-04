@@ -6,7 +6,7 @@ date: 2026-09-08
 slug: "financiele-instellingen-digitale-toegankelijkheid"
 url: "/financiele-instellingen-digitale-toegankelijkheid/"
 layout: "financieel"
-description: "De AFM houdt toezicht op de EAA bij bankdiensten en financiële e-handelsdiensten en startte in 2026 een nalevingsonderzoek. Laat je website, klantportaal en app handmatig toetsen aan WCAG 2.2 en vul je EAA-melding concreet in."
+description: "De AFM houdt toezicht op de EAA bij bankdiensten en financiële e-handelsdiensten. Laat je website, klantportaal en app handmatig toetsen aan WCAG 2.2."
 keywords:
   - toegankelijkheid bank
   - AFM toegankelijkheid
@@ -59,6 +59,7 @@ faqs:
     answer: "Ja. In een traject van 3 tot 6 maanden brengen we in kaart wat er moet gebeuren, toetsen we al je digitale kanalen, zetten we een dashboard op waarin directie, jurist en teams de voortgang zien, trainen we je devteams, je webredactie en je klantenservice, en begeleiden we het herstel tot de hercontrole. Hoe lang het duurt hangt af van het aantal kanalen en van de capaciteit van je teams; dat bespreken we in de kennismaking."
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
+translationKey: "financiele-instellingen"
 ---
 
 {{< section-tweekolom title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}

@@ -77,6 +77,7 @@ faqs:
     answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens deze methode is uitgevoerd, dus je rapport is bruikbaar als bewijs."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
+translationKey: "toegankelijkheidsaudit"
 ---
 
 {{< section-full title="Wat is een toegankelijkheidsaudit?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
