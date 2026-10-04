@@ -1,1 +1,19 @@
-/* /en/404.html 404
+# Dit bestand doet niets.
+#
+# `_redirects` is een bestand van Cloudflare Pages en Netlify. Deze site staat op
+# GitHub Pages met Cloudflare als proxy ervoor, en GitHub Pages leest het niet.
+# Het staat bovendien in de wortel van de repo en niet in `static/`, dus Hugo
+# publiceert het niet: https://www.properaccess.nl/_redirects geeft 404.
+#
+# De regel hieronder stond hier tot 4 oktober 2026 actief bedoeld. Die zou elk pad
+# naar de Engelse foutpagina sturen, en dat gebeurt niet: /authors/julia/ geeft 200
+# en /en/bestaat-niet/ geeft de Nederlandse foutpagina.
+#
+# /* /en/404.html 404
+#
+# Zet hier dus geen doorverwijzing. Een echte 301 gaat via Bulk Redirects in
+# Cloudflare; de lijst staat in docs/redirects/ en de uitleg in
+# docs/oude-wordpress-urls.md.
+#
+# Dit bestand blijft staan omdat de naam vraagt om hier te zoeken. Verhuist de site
+# ooit naar Cloudflare Pages, dan werkt het weer en kan dit commentaar eruit.
