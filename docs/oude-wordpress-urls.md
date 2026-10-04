@@ -29,15 +29,25 @@ Dit kan niet vanuit een sessie: het token hier heeft alleen rechten voor Workers
 
 ## Wat Julia doet
 
-1. Open in het Cloudflare-dashboard de zone `properaccess.nl` en ga naar Bulk Redirects.
-2. Maak een lijst aan en importeer `docs/redirects/cloudflare-bulk-redirects.csv`.
-3. Zet er een Bulk Redirect-regel op die de lijst gebruikt.
-4. Controleer het resultaat met `python3 scripts/controleer_redirect_lijst.py`. Elke bron
+Bulk Redirects zitten op het niveau van het account en niet in de zone. Het zijn twee
+stappen: een lijst met de URL's, en een regel die die lijst gebruikt. Zonder die tweede
+stap doet de lijst niets.
+
+1. Download het bestand `docs/redirects/cloudflare-bulk-redirects.csv` uit de repo.
+2. Ga in het Cloudflare-dashboard naar het account en daar naar Bulk Redirects.
+3. Maak een lijst aan onder "Bulk Redirect Lists" en upload de CSV.
+4. Maak daarna onder "Bulk Redirect Rules" een regel die naar die lijst wijst, en zet hem
+   aan.
+5. Controleer het resultaat met `python3 scripts/controleer_redirect_lijst.py`. Elke bron
    die nog 404 geeft, is nog niet actief; na het importeren horen ze allemaal 301 te geven.
 
-De CSV heeft de kolommen `source`, `target` en `status`. Of het dashboard die kolomnamen
-accepteert, heb ik niet kunnen testen: ik kom niet in het Cloudflare-account. Klopt het
-formaat niet, dan is het een kwestie van de koppen aanpassen, niet van de inhoud.
+Julia heeft dit op 4 oktober 2026 gedaan. De kolommen `source`, `target` en `status` worden
+geaccepteerd en 190 regels passen binnen het abonnement. Daarna gaf elke bron een 301,
+gemeten met het controlescript.
+
+**Komt er een regel bij, dan moet de lijst opnieuw worden geïmporteerd.** De regel in de
+repo doet zelf niets. Dat geldt nu voor regel 191, de slug-wijziging van
+`/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/`.
 
 De alias in de front matter van `content/dutch/authors/julia.md` kan blijven staan. Zolang
 de 301 er niet is, is die doorverwijspagina het enige wat de bezoeker nog bij de juiste
@@ -75,6 +85,9 @@ Daarvan staan er 190 in de CSV. Per groep:
 | Auteur | 1 | `/author/julia_a11y/` naar `/authors/julia/` |
 | Feed | 1 | `/feed/` naar `/index.xml` |
 
+Regel 191 komt niet uit WordPress: dat is een slug die wij zelf hebben gewijzigd. Zie
+"Twee slugs noemen het verkeerde succescriterium" hieronder.
+
 Elke regel is gecontroleerd met `scripts/controleer_redirect_lijst.py`: 190 regels, 278
 URL's opgehaald, geen fouten. Dat script kijkt naar twee dingen.
 
@@ -82,7 +95,9 @@ URL's opgehaald, geen fouten. Dat script kijkt naar twee dingen.
   zelf een aliaspagina naar `/webshop-quickscan/`, en `/tools/tekstafstand-check/` een
   aliaspagina naar `/tools/wcag-radar/`. Een 301 daarheen zou een keten opleveren, dus de
   lijst wijst nu naar de eindpagina.
-- De bron geeft 404 en bestaat dus echt niet meer.
+- De bron geeft 404 en bestaat dus echt niet meer. Bij regel 191 is dat anders: daar is de
+  bron een aliaspagina van Hugo, dus een 200 met een meta-refresh. Het script rekent dat
+  sinds 4 oktober 2026 ook goed, want zo'n pagina is geen echte pagina en wacht op de 301.
 
 ### Twee slugs noemen het verkeerde succescriterium
 
@@ -98,9 +113,21 @@ artikelen klopt dat nummer niet met de inhoud:
   `/blog/sc-3-3-7-wat-betekent-redundante-invoer/`.
 
 Mijn eerste versie van de lijst stuurde `/tag/1-4-5/` daardoor naar het artikel over
-1.4.11. Dat is gecorrigeerd en die twee URL's zijn nu uitgesloten als doel. De slug zelf
-verander ik niet: dat is een URL die bestaat, dus dan is er weer een redirect nodig. Het
-staat als vraag bij Nata.
+1.4.11. Dat is gecorrigeerd en die twee URL's zijn nu uitgesloten als doel.
+
+Nata heeft op 4 oktober 2026 per artikel beslist wat er met de slug gebeurt.
+
+- **Toegankelijke authenticatie: hernoemd.** De slug is
+  `sc-3-3-8-wat-betekent-toegankelijke-authenticatie`, gezet in de front matter. De
+  bestandsnaam blijft staan, want de permalink is `:slugorcontentbasename`. De oude URL
+  `/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/` staat er als alias bij en is
+  regel 191 van de CSV. De twee interne links wijzen naar de nieuwe URL.
+- **Contrast voor niet-tekstuele onderdelen: nog niet hernoemd.** Er staan twee artikelen
+  over 1.4.11 live, en het oudere voegt niets toe aan het nieuwere. Nata stelt voor om ze
+  samen te voegen en `/blog/sc-1-4-5-wat-betekent-contrast-voor-niet-tekstuele-onderdelen/`
+  naar `/blog/sc-1-4-11-wat-betekent-contrast-UI/` te sturen. Een pagina weghalen is een
+  beslissing van Julia, dus die vraag ligt bij haar. Houdt ze beide artikelen, dan krijgt
+  het oudere een slug die het verschil laat zien en is er alsnog een redirect nodig.
 
 ### De koppelingen waar een keuze in zit
 
