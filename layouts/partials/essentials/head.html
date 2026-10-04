@@ -96,18 +96,20 @@
      stond blokkeerde de eerste render: de browser zette eerst een verbinding
      met een tweede domein op voordat er iets op het scherm kwam.
 
-     De twee bestanden hieronder zijn de snitten die op elke pagina boven de
-     vouw staan: Nunito voor de lopende tekst, Plus Jakarta Sans voor de koppen.
-     Ze worden vooraf opgehaald, zodat de tekst meteen in het juiste lettertype
-     verschijnt en niet eerst in het systeemlettertype. Het is de latin-subset;
-     latin-ext haalt de browser er zelf bij als een pagina die tekens gebruikt.
+     Hier stond een `rel="preload"` op Nunito en Plus Jakarta Sans, zodat de
+     tekst meteen in het juiste lettertype zou verschijnen. Die is er op
+     26 september 2026 weer uit gehaald. Gemeten met Lighthouse over HTTP/2 met
+     een afgeknepen verbinding, mediaan van vier metingen op de homepagina:
+     eerste render 2391 ms zonder preload, 2611 ms met alleen Nunito, 2762 ms
+     met allebei. De 66 kB aan lettertypen pakt bandbreedte af van
+     style.min.css, en dat bestand houdt de render tegen. Zonder preload haalt
+     de browser het lettertype op zodra hij de CSS gelezen heeft, en dat is
+     vroeg genoeg.
 
      Material Symbols blijft van Google komen. Dat is een icoonfont van
      honderden kilobytes die alleen op een deel van de pagina's staat, en hij
      laadt al buiten de eerste render om (media="print" met onload). De
      preconnects hieronder zijn daarvoor. -->
-<link rel="preload" href="/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
