@@ -183,7 +183,20 @@
 <!-- ######### OpenGraph others meta ############## -->
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $description }}" />
-<meta property="og:type" content="website" />
+{{/* Een blogartikel is een artikel en geen site. Alleen losse pagina's onder
+     blog/ krijgen `article`; de overzichtspagina /blog/ blijft `website`. */}}
+{{ $isArtikel := and .IsPage (eq .Section "blog") }}
+<meta property="og:type" content="{{ if $isArtikel }}article{{ else }}website{{ end }}" />
+{{ if $isArtikel }}
+  <meta
+    property="article:published_time"
+    content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+    <meta
+      property="article:modified_time"
+      content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ end }}
+{{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />
 
 <!-- ########## twitter others meta ############### -->
