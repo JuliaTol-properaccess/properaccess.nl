@@ -2,6 +2,8 @@
 title: 'SC 1.4.3 - Wat betekent "Contrast (minimum)"?'
 date: 2025-05-18
 translationKey: "sc-1-4-3"
+# Deze pagina gebruikt CSS uit assets/css/paginas/tools.css.
+paginacss: ["tools"]
 categories:
   - "wcag-uitgelegd"
 tags:

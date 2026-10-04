@@ -3,6 +3,8 @@ title: "Over Proper Access"
 meta_title: "Over ons: WCAG-audits voor websites en apps | Proper Access"
 date: 2026-02-17
 type: "over"
+# Deze pagina gebruikt CSS uit assets/css/paginas/tools.css.
+paginacss: ["tools"]
 description: "Onafhankelijk WCAG-auditbureau voor websites en mobiele apps. Audits en begeleiding voor overheid, bedrijfsleven en culturele instellingen."
 keywords:
   [

@@ -2,6 +2,8 @@
 title: "Alt-tekst schrijven: de keuzehulp voor de juiste alt-tekst bij elke afbeelding"
 date: 2026-02-23
 slug: "alt-tekst-keuzehulp"
+# Deze pagina gebruikt CSS uit assets/css/paginas/tools.css.
+paginacss: ["tools"]
 description: "Welke alt-tekst heeft jouw afbeelding nodig? Gebruik onze interactieve keuzehulp om in een paar stappen de juiste alt-tekst te bepalen, van productfoto's tot decoratieve afbeeldingen."
 categories:
   - "achtergrond_wcag"
