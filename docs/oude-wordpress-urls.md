@@ -129,6 +129,31 @@ Nata heeft op 4 oktober 2026 per artikel beslist wat er met de slug gebeurt.
   beslissing van Julia, dus die vraag ligt bij haar. Houdt ze beide artikelen, dan krijgt
   het oudere een slug die het verschil laat zien en is er alsnog een redirect nodig.
 
+### Een spelfout in de slug van 2.1.1
+
+`/blog/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/` schrijft "toegenkelijk" in plaats
+van "toegankelijk". De titel van het artikel is wel goed. De fout komt uit WordPress: de
+bestandsnaam en de alias zijn daar bij de migratie van overgenomen. Nata vond hem op
+4 oktober 2026.
+
+De slug staat nu als `sc-2-1-1-wat-betekent-toetsenbord-toegankelijk` in de front matter.
+Verder gewijzigd:
+
+- De oude URL `/blog/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/` staat erbij als
+  tweede alias en als regel in de CSV.
+- Drie regels in de CSV wezen naar de oude URL als doel: `/tag/2-1-1/`,
+  `/wcag_wiki/2-1-1-toetsenbord-toegankelijkheid/` en `/wcag_wiki/tag/toetsenbord/`. Die
+  wijzen nu naar de nieuwe URL. Zonder dat zou er een keten ontstaan: eerst een 301 naar
+  de oude URL, en daar nog een doorverwijzing.
+- De twee interne links in `content/dutch/tools/wcag-radar.md` wijzen naar de nieuwe URL.
+
+**De alias met de spelfout blijft staan zoals hij is.** `/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/`
+is de echte oude WordPress-URL, dus dat is de enige regel die een bezoeker van buiten nog
+bij het artikel brengt. Alle 51 gemigreerde uitlegartikelen hebben zo'n alias, en die is
+daar altijd gelijk aan de bestandsnaam. Verbeter je de spelling daar ook, dan geeft die
+URL een 404. Hetzelfde geldt voor de bestandsnaam: die bepaalt de alias niet, maar
+hernoemen levert alleen ruis in de historie op.
+
 ### De koppelingen waar een keuze in zit
 
 De meeste regels zijn een oude naam naar dezelfde pagina onder een nieuwe naam. Deze acht

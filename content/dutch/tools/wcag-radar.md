@@ -226,7 +226,7 @@ tabs:
         pro: true
       - titel: "Gebaren en muis-only bediening"
         uitleg: "Markeert elementen die alleen met de muis of aanraking te bedienen zijn: script-klikbare elementen zonder toetsenbordfocus, drag-en-drop zonder duidelijk alternatief en nep-knoppen met alleen een muiscursor."
-        wcag: "/blog/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/"
+        wcag: "/blog/sc-2-1-1-wat-betekent-toetsenbord-toegankelijk/"
         onderwerp: "toetsenbordbediening"
         pro: true
       - titel: "Alleen tekst vergroten (200%)"
@@ -319,7 +319,7 @@ tabs:
         pro: true
       - titel: "Gebaren en muis-only bediening"
         uitleg: "Markeert elementen die alleen met de muis of aanraking te bedienen zijn: script-klikbare elementen zonder toetsenbordfocus, drag-en-drop zonder duidelijk alternatief en nep-knoppen met alleen een muiscursor."
-        wcag: "/blog/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/"
+        wcag: "/blog/sc-2-1-1-wat-betekent-toetsenbord-toegankelijk/"
         onderwerp: "toetsenbordbediening"
         pro: true
       - titel: "Alleen tekst vergroten (200%)"
