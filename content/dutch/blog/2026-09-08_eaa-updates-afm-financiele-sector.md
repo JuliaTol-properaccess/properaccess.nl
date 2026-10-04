@@ -11,7 +11,7 @@ tags:
   - "toezichthouder"
   - "financiele-sector"
   - "meldplicht"
-description: "De AFM publiceerde sinds april 2025 drie EAA-updates voor banken, verzekeraars en andere financiële dienstverleners. Wat erin staat: de meldplicht, de vier criteria die altijd kritiek zijn, en het nalevingsonderzoek van 2026."
+description: "De AFM publiceerde sinds april 2025 drie EAA-updates. Wat erin staat over de meldplicht, de vier kritieke criteria en het nalevingsonderzoek van 2026."
 keywords:
   - "AFM EAA-update"
   - "AFM toegankelijkheid banken"
