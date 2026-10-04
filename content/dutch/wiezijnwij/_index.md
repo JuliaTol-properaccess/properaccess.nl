@@ -1,5 +1,11 @@
 ---
 layout: "second-page"
+# Tweede "over ons"-pagina naast /auditbureau-digitale-toegankelijkheid/. Die laatste
+# staat in het menu, in llms.txt en onder 588 pagina's in de footer; deze niet, en de
+# site linkt er nergens naar. Tot 28-09-2026 stond hij wél in de sitemap en in de index,
+# dus concurreerde hij met de echte pagina op dezelfde zoekvraag.
+noindex: true
+sitemap_exclude: true
 meta_title: "Over Proper Access: auditbureau digitale toegankelijkheid"
 description: "Proper Access is een onafhankelijk auditbureau voor digitale toegankelijkheid. 950+ audits, directe toegang tot je auditor en rapporten met concrete oplossingen."
 
