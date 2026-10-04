@@ -66,7 +66,7 @@ team:
         team er iets mee kan.
       highlights:
         - "Senior WCAG-auditor, IAAP-gecertificeerd (WAS)"
-        - "Betrokken bij DigiToegankelijk TOP Logius 2022-2026"
+        - "Betrokken bij DigiToegankelijk TOP Logius 2022-2025"
         - "950+ audits uitgevoerd sinds 2019"
         - "Rechtstreeks aanspreekbaar voor klanten met een rapport van ons"
     - name: "Het team achter Julia"
