@@ -30,7 +30,11 @@
 {{- $titel = or $titel site.Title -}}
 {{- $naam = or $naam site.Title -}}
 {{- $beschrijving := "" -}}
-{{- with $p -}}{{- $beschrijving = or .Description .Params.description "" -}}{{- end -}}
+{{- /* Zelfde voorrang als in basic-seo.html: `meta_description` gaat voor
+  `description`. Bij een blogartikel is `description` de zichtbare intro onder de
+  h1 en staat de korte variant in `meta_description`; zonder deze regel draagt de
+  doorverwijspagina een langere description dan de pagina zelf. */ -}}
+{{- with $p -}}{{- $beschrijving = or .Params.meta_description .Description .Params.description "" -}}{{- end -}}
 <!DOCTYPE html>
 <html lang="{{ with $p }}{{ .Language.LanguageCode }}{{ else }}nl{{ end }}">
 <head>
