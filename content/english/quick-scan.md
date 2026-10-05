@@ -21,9 +21,9 @@ keywords:
 banner:
   badge: "€495 · manual · senior auditor"
   title: "You need to know how big the accessibility problem is before you commit a budget. A senior auditor tells you in five working days, for €495"
-  content: "A mini audit by a senior auditor. Not an automated tool that flags a fraction of the issues — a person who spends up to five hours checking your site by hand for technical, design and content problems, and tells you exactly where you stand and what it takes to fix it."
+  content: "A mini audit by a senior auditor. Not an automated tool that flags a fraction of the issues, but a person who spends up to five hours checking your site by hand for technical, design and content problems, and tells you exactly where you stand and what it takes to fix it."
   bullets:
-    - "**A senior auditor, not a tool** — tested with a real screen reader and keyboard"
+    - "**A senior auditor, not a tool**: tested with a real screen reader and keyboard"
     - "**Technical, design and content issues** with advice on how to fix them"
     - "**An extensive report** within five working days"
   button:
@@ -46,7 +46,7 @@ sections:
       - "Forms, buttons and error messages"
       - "Components you're better off replacing"
   - eyebrow: "What you receive"
-    title: "A clear starting point — no sales pitch"
+    title: "A clear starting point, no sales pitch"
     body: "You get an extensive, readable document with the technical, design and content issues, advice on how to fix each one, and a list of components you're probably better off replacing. Plus an estimate of how long the work will take and how much your site still needs. A clear picture of where you stand before a full audit."
     card_eyebrow: "Independent"
     card_icon: "balance"

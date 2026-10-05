@@ -1,8 +1,8 @@
 ---
 title: "Contact"
-meta_title: "Contact — Proper Access"
+meta_title: "Contact | Proper Access"
 date: 2021-08-27
-description: "Questions about WCAG, the EAA, or digital accessibility? Get in touch. We're happy to help — from a mini audit to a full audit."
+description: "Questions about WCAG, the EAA, or digital accessibility? Get in touch. We help with anything from a mini audit to a full audit."
 keywords:
   - contact digital accessibility
   - WCAG specialist
@@ -18,7 +18,7 @@ url: "/en/contact/"
   <h3 class="card__title">Call or message</h3>
   <p><a href="tel:+31855055890"><strong>+31 85 5055 890</strong></a></p>
   <p><a href="https://wa.me/31628742275">WhatsApp or Signal</a></p>
-  <p class="card__meta">We pick up right away — or call back the same day.</p>
+  <p class="card__meta">We pick up right away, or call back the same day.</p>
 </div>
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
@@ -102,7 +102,7 @@ No. Most people who contact us only know: "I need to do something about accessib
 <summary class="faq-question">What information should I provide?</summary>
 <div class="faq-answer">
 
-The more context, the better we can help: the URL of your website or app, your deadline, and what you've already tried. But if you don't have those details yet — that's fine too. We'll ask.
+The more context, the better we can help: the URL of your website or app, your deadline, and what you've already tried. But if you don't have those details yet, that's fine too. We'll ask.
 
 </div>
 </details>
@@ -111,7 +111,7 @@ The more context, the better we can help: the URL of your website or app, your d
 <summary class="faq-question">Will I get a quote right away?</summary>
 <div class="faq-answer">
 
-Yes, you'll get a tailored quote. We ask about your situation and send you a clear proposal with a fixed price — no surprises. We'll help you find the best fit for your budget and goals.
+Yes, you'll get a tailored quote. We ask about your situation and send you a clear proposal with a fixed price: no surprises. We'll help you find the best fit for your budget and goals.
 
 </div>
 </details>
@@ -120,7 +120,7 @@ Yes, you'll get a tailored quote. We ask about your situation and send you a cle
 <summary class="faq-question">Do you offer rush service?</summary>
 <div class="faq-answer">
 
-Sometimes. Contact us directly and mention that it's urgent — we'll see what's possible. For example, if the regulator calls, a client demands an accessibility statement, or you're launching in 3 weeks.
+Sometimes. Contact us directly and mention that it's urgent, and we'll see what's possible. For example, if the regulator calls, a client demands an accessibility statement, or you're launching in 3 weeks.
 
 </div>
 </details>
@@ -129,7 +129,7 @@ Sometimes. Contact us directly and mention that it's urgent — we'll see what's
 <summary class="faq-question">Where are you based?</summary>
 <div class="faq-answer">
 
-In Amsterdam, the Netherlands. But we work fully remote — so location doesn't matter. We support organisations throughout the Netherlands and internationally.
+In Amsterdam, the Netherlands. But we work fully remote, so location doesn't matter. We support organisations throughout the Netherlands and internationally.
 
 </div>
 </details>
@@ -139,7 +139,7 @@ In Amsterdam, the Netherlands. But we work fully remote — so location doesn't 
 
 {{< section-cta title="Still hesitating?" >}}
 
-**63 organisations** chose us — together accounting for more than **950 audits**. Measured 7 August 2026. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports — we think along, explain, and solve.
+**63 organisations** chose us, together accounting for more than **950 audits**. Measured 7 August 2026. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports: we think along, explain, and solve.
 
 [Call us: +31 85 5055 890](tel:+31855055890) | [Email us](mailto:info@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 
