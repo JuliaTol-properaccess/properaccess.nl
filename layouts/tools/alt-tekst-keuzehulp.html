@@ -1,40 +1,44 @@
 {{ define "main" }}
+{{/* Teksten per taal uit data/tools/alt_tekst_keuzehulp.json. De keuzehulp zelf komt
+     uit het databestand dat daar per taal bij staat. Bestaat het Engelse bestand nog
+     niet, dan valt de pagina terug op het Nederlandse en breekt de build niet. */}}
+{{ $t := index site.Data.tools.alt_tekst_keuzehulp .Lang }}
+{{ if not $t }}{{ $t = site.Data.tools.alt_tekst_keuzehulp.nl }}{{ end }}
+{{ $keuzehulpData := printf "data/apps/%s" $t.data }}
+{{ if not (fileExists $keuzehulpData) }}{{ $keuzehulpData = "data/apps/alt_tekst_keuzehulp.json" }}{{ end }}
 <section class="section pt-14">
   <div class="tool-container">
 
     <h1 class="mb-2">{{ .Title }}</h1>
 
-    <p class="tool-heading__intro">
-      Beantwoord een paar vragen over je afbeelding en je krijgt direct te zien welke alt-tekst
-      erbij hoort, met een voorbeeld erbij.
-    </p>
+    <p class="tool-heading__intro">{{ $t.intro }}</p>
 
     <ul class="tool-heading__punten">
-      <li>Werkt voor decoratieve, informatieve, functionele en complexe afbeeldingen</li>
-      <li>Volgt WCAG succescriterium 1.1.1</li>
-      <li>Draait in je eigen browser, zonder account en zonder dat er iets wordt opgeslagen</li>
+      {{ range $t.punten }}
+      <li>{{ . }}</li>
+      {{ end }}
     </ul>
 
     <!-- Alt-tekst keuzehulp (zelfde component als shortcode) -->
     <section class="webapp-alt" id="webapp-alt-tekst" aria-labelledby="webapp-alt__title">
-      <h2 class="webapp-alt__title" id="webapp-alt__title">Kies de juiste alt-tekst</h2>
+      <h2 class="webapp-alt__title" id="webapp-alt__title">{{ $t.appTitle }}</h2>
       <div class="sr-only" aria-live="polite" aria-atomic="true" id="webapp-alt__live"></div>
-      <div class="webapp-alt__app" id="webapp-alt__app" role="region" aria-label="Keuzehulp stappen">
+      <div class="webapp-alt__app" id="webapp-alt__app" role="region" aria-label="{{ $t.appAriaLabel }}">
         <noscript>
-          <p>Deze keuzehulp vereist JavaScript. Schakel JavaScript in om de tool te gebruiken.</p>
+          <p>{{ $t.noscript }}</p>
         </noscript>
       </div>
     </section>
 
     <script type="application/json" id="webapp-alt-data">
-      {{ readFile "data/apps/alt_tekst_keuzehulp.json" | safeJS }}
+      {{ readFile $keuzehulpData | safeJS }}
     </script>
     <script src="{{ "js/webapp-alt-tekst.js" | relURL }}" defer></script>
 
     <!-- CTA -->
     <div class="tool-cta">
-      <p>Wil je meer weten over alt-teksten? Lees de <a href="/blog/alt-tekst-keuzehulp/">uitgebreide uitleg met voorbeelden en veelgemaakte fouten</a>.</p>
-      <p>Of <a href="/contact">vraag een audit aan</a> om alle afbeeldingen op je website te laten controleren.</p>
+      <p>{{ $t.ctaLine1 | safeHTML }}</p>
+      <p>{{ $t.ctaLine2 | safeHTML }}</p>
     </div>
 
   </div>

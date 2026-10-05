@@ -1,0 +1,30 @@
+{
+  "nl": {
+    "intro": "Beantwoord een paar vragen over je afbeelding en je krijgt direct te zien welke alt-tekst erbij hoort, met een voorbeeld erbij.",
+    "punten": [
+      "Werkt voor decoratieve, informatieve, functionele en complexe afbeeldingen",
+      "Volgt WCAG succescriterium 1.1.1",
+      "Draait in je eigen browser, zonder account en zonder dat er iets wordt opgeslagen"
+    ],
+    "appTitle": "Kies de juiste alt-tekst",
+    "appAriaLabel": "Keuzehulp stappen",
+    "noscript": "Deze keuzehulp vereist JavaScript. Schakel JavaScript in om de tool te gebruiken.",
+    "ctaLine1": "Wil je meer weten over alt-teksten? Lees de <a href=\"/blog/alt-tekst-keuzehulp/\">uitgebreide uitleg met voorbeelden en veelgemaakte fouten</a>.",
+    "ctaLine2": "Of <a href=\"/contact\">vraag een audit aan</a> om alle afbeeldingen op je website te laten controleren.",
+    "data": "alt_tekst_keuzehulp.json"
+  },
+  "en": {
+    "intro": "Answer a few questions about your image and you see straight away which alt text belongs with it, with an example.",
+    "punten": [
+      "Works for decorative, informative, functional and complex images",
+      "Follows WCAG success criterion 1.1.1",
+      "Runs in your own browser, without an account and without storing anything"
+    ],
+    "appTitle": "Choose the right alt text",
+    "appAriaLabel": "Decision tree steps",
+    "noscript": "This decision tree needs JavaScript. Switch JavaScript on to use the tool.",
+    "ctaLine1": "Want to know more about alt text? Read the <a href=\"/en/blog/wcag-1-1-1-non-text-content/\">full explanation with examples and common mistakes</a>.",
+    "ctaLine2": "Or <a href=\"/en/contact/\">request an audit</a> to have every image on your website checked.",
+    "data": "alt_text_decision_tree.json"
+  }
+}
