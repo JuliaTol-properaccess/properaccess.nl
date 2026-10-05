@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{/* Collect all sections for sidebar, sorted by section_number */}}
+{{ $voortgang := partialCached "academy-voortgang-data.html" . "academy" }}
 {{ $allSections := .Site.GetPage "/academy" }}
 {{ $sections := slice }}
 {{ if $allSections }}
@@ -33,6 +34,7 @@
       <a href="{{ "/academy/" | relLangURL }}" class="academy__sidebar-home">
         ← Alle secties
       </a>
+      {{ partial "academy-voortgangsbalk.html" . }}
       <p class="academy__sidebar-label">Inhoudsopgave</p>
 
       {{ range $i, $item := $sections }}
@@ -108,6 +110,22 @@
       <div class="academy__content-body">
         {{ .Content }}
       </div>
+
+      {{/* Les afronden. Staat op hidden tot de JavaScript de stand uit
+           localStorage heeft gelezen; zonder opslag valt er niets te bewaren en
+           blijft de knop weg. */}}
+      <div class="academy__afgerond" id="academyAfgerond"
+        data-pad="{{ .RelPermalink }}" data-titel="{{ .Title }}" hidden>
+        <button type="button" class="academy__afgerond-knop" id="academyAfgerondKnop" aria-pressed="false">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Les afgerond
+        </button>
+        <span class="academy__afgerond-datum" id="academyAfgerondDatum"></span>
+        <p class="sr-only" role="status" id="academyAfgerondMelding"></p>
+      </div>
+
       <nav class="academy__content-nav" aria-label="Hoofdstuknavigatie">
         {{ with .PrevInSection }}
           <a href="{{ .RelPermalink }}" class="academy__nav-link academy__nav-link--prev">
@@ -127,7 +145,12 @@
   </main>
 </div>
 
+{{ partial "academy-voortgang-json.html" $voortgang }}
+
 <script src="{{ "js/academy.js" | relURL }}" defer></script>
+{{/* academy-voortgang.js levert de opslag voor academy-quiz.js, dus het staat
+     erboven. Met defer houdt de browser deze volgorde aan. */}}
+<script src="{{ "js/academy-voortgang.js" | relURL }}" defer></script>
 {{ if not .Params.locked }}
 <script src="{{ "js/academy-quiz.js" | relURL }}" defer></script>
 {{ end }}

@@ -1,0 +1,14 @@
+{{/* Voortgangsbalk in de inhoudsopgave van de Academy.
+
+     Staat standaard op hidden. static/js/academy-voortgang.js vult de tekst en
+     de balk en haalt de hidden eraf. Zo ziet een bezoeker zonder JavaScript of
+     zonder localStorage geen lege balk die altijd op nul staat.
+
+     De balk zelf is aria-hidden: het getal staat als tekst in de alinea erboven,
+     en dat is wat een schermlezer nodig heeft. */}}
+<div class="academy__voortgang" id="academyVoortgang" hidden>
+  <p class="academy__voortgang-tekst" id="academyVoortgangTekst"></p>
+  <div class="academy__voortgang-balk" aria-hidden="true">
+    <span class="academy__voortgang-vulling" id="academyVoortgangVulling" style="width: 0%"></span>
+  </div>
+</div>

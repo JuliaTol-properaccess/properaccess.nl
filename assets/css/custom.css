@@ -10096,6 +10096,130 @@ html.dark .tool-fout__level {
   color: #474747;
 }
 
+/* Voortgang: balk in de inhoudsopgave, "verder waar je was" en de knop
+   "Les afgerond". De cijfers komen uit localStorage, zie
+   static/js/academy-voortgang.js. */
+/* De balk staat in de donkere inhoudsopgave (#1F2937), dus wit en niet
+   het karmijn van het merk: dat heeft op dit vlak te weinig contrast. */
+.academy__voortgang {
+  padding: 0 1.5rem 1rem;
+}
+
+.academy__voortgang-tekst {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.375rem;
+}
+
+.academy__voortgang-balk {
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(255,255,255,0.22);
+  overflow: hidden;
+}
+
+.academy__voortgang-vulling {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 0.25rem;
+  background: #ffffff;
+}
+
+.academy__verder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #A30D4B;
+  border-radius: 0.75rem;
+}
+
+.academy__verder-label {
+  font-size: 0.75rem;
+  color: #474747;
+  margin: 0;
+}
+
+.academy__verder-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #A30D4B;
+  text-decoration: underline;
+}
+
+.academy__afgerond {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.academy__afgerond-knop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #A30D4B;
+  background: #fff;
+  border: 1px solid #A30D4B;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.academy__afgerond-knop[aria-pressed="true"] {
+  color: #fff;
+  background: #A30D4B;
+}
+
+.academy__afgerond-knop:focus-visible {
+  outline: 2px solid #1F2937;
+  outline-offset: 2px;
+}
+
+.academy__afgerond-datum {
+  font-size: 0.8rem;
+  color: #474747;
+}
+
+/* Vinkje achter een afgeronde les in de inhoudsopgave. Wit, want de
+   inhoudsopgave is donker; de uitleg "(afgerond)" staat als tekst in de link. */
+.academy__chapter-af {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* In hoog contrast verdwijnt een achtergrondkleur; houd de balk en de stand van
+   de knop dan zichtbaar. */
+@media (forced-colors: active) {
+  .academy__voortgang-balk {
+    border: 1px solid CanvasText;
+  }
+
+  .academy__voortgang-vulling {
+    background: CanvasText;
+  }
+
+  .academy__afgerond-knop[aria-pressed="true"] {
+    border-width: 3px;
+  }
+}
+
 /* Hero */
 .academy__hero {
   max-width: 680px;
