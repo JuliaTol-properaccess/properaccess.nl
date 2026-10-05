@@ -142,7 +142,7 @@ Klik op de bookmark, en je ziet direct waar je website breekt. Kijk uit naar:
 
 .hero h1 {
   font-size: 48px;
-  /* geen vaste line-height — laat gebruiker bepalen */
+  /* geen vaste line-height, laat de gebruiker bepalen */
 }
 ```
 

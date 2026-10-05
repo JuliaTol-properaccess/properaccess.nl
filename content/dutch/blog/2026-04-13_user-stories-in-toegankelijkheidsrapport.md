@@ -36,7 +36,7 @@ Wij zijn gaan kijken wat er gebeurt als je diezelfde gedachte toepast op een toe
 
 Een toegankelijkheidsrapport beschrijft wat er mis is op een website. Dat klinkt simpel, maar de manier waaróp dat gebeurt, bepaalt of het rapport gebruikt wordt of in een la verdwijnt.
 
-De meeste rapporten beschrijven bevindingen in WCAG-taal: _"SC 1.3.2 niet voldaan — content volgorde niet logisch."_ Dat is technisch correct. Een auditor herkent het meteen. Maar een redacteur die de tekst moet aanpassen of een ontwikkelaar die de code moet veranderen, leest dit en denkt: _en nu?_
+De meeste rapporten beschrijven bevindingen in WCAG-taal: _"SC 1.3.2 niet voldaan: content volgorde niet logisch."_ Dat is technisch correct. Een auditor herkent het meteen. Maar een redacteur die de tekst moet aanpassen of een ontwikkelaar die de code moet veranderen, leest dit en denkt: _en nu?_
 
 3 jaar geleden hebben we besloten om te rapporteren per element, niet per succescriterium. Deze aanpak bespaart je tijd: alle bevindingen die te maken hebben met een element staan nu bij elkaar.
 

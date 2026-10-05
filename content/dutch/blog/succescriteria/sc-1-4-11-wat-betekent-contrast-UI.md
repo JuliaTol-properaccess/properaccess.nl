@@ -96,10 +96,10 @@ Als auditor zie ik steeds dezelfde problemen:
 
 <svg viewBox="0 0 520 105" width="520" role="img" aria-label="Vergelijking: invoerveld met #ccc border (contrast 1.6:1) versus #767676 border (contrast 4.5:1)">
   <rect width="520" height="105" fill="#f5f5f5" rx="8" />
-  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout — border: #ccc (1.6:1)</text>
+  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout: border #ccc (1.6:1)</text>
   <rect x="20" y="36" width="220" height="40" fill="#fff" stroke="#cccccc" stroke-width="1" rx="4" />
   <text x="32" y="61" font-family="system-ui, sans-serif" font-size="13" fill="#aaa">Typ hier...</text>
-  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed — border: #767676 (4.5:1)</text>
+  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed: border #767676 (4.5:1)</text>
   <rect x="280" y="36" width="220" height="40" fill="#fff" stroke="#767676" stroke-width="1" rx="4" />
   <text x="292" y="61" font-family="system-ui, sans-serif" font-size="13" fill="#aaa">Typ hier...</text>
   <text x="20" y="97" font-family="system-ui, sans-serif" font-size="12" fill="#666">Zie je het verschil? De linker rand is nauwelijks zichtbaar.</text>
@@ -125,7 +125,7 @@ input {
 ```css
 /* Goed: dit haalt makkelijk de 3:1 */
 input {
-  border: 1px solid #767676; /* Contrast: 4.54:1 — ruim voldoende */
+  border: 1px solid #767676; /* Contrast: 4.54:1, ruim voldoende */
   background: #fff;
 }
 
@@ -137,7 +137,7 @@ input {
 
 /* Of gewoon: */
 input {
-  border: 1px solid #000; /* Contrast: 21:1 — perfectie */
+  border: 1px solid #000; /* Contrast: 21:1, perfectie */
   background: #fff;
 }
 ```
@@ -148,11 +148,11 @@ input {
 
 <svg viewBox="0 0 520 105" width="520" role="img" aria-label="Vergelijking: focus-indicator met #a8d5ff (contrast 1.4:1) versus #005fcc (contrast 5.1:1)">
   <rect width="520" height="105" fill="#f5f5f5" rx="8" />
-  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout — outline: #a8d5ff (1.4:1)</text>
+  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout: outline #a8d5ff (1.4:1)</text>
   <rect x="20" y="38" width="120" height="40" fill="#0066cc" rx="6" />
   <text x="80" y="63" font-family="system-ui, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Verstuur</text>
   <rect x="15" y="33" width="130" height="50" fill="none" stroke="#a8d5ff" stroke-width="2" rx="9" />
-  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed — outline: #005fcc (5.1:1)</text>
+  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed: outline #005fcc (5.1:1)</text>
   <rect x="280" y="38" width="120" height="40" fill="#0066cc" rx="6" />
   <text x="340" y="63" font-family="system-ui, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Verstuur</text>
   <rect x="273" y="31" width="134" height="54" fill="none" stroke="#005fcc" stroke-width="3" rx="10" />
@@ -198,10 +198,10 @@ button:focus {
 
 <svg viewBox="0 0 520 90" width="520" role="img" aria-label="Vergelijking: zoekicoon in #bbb (contrast 1.9:1) versus #666 (contrast 5.7:1)">
   <rect width="520" height="90" fill="#f5f5f5" rx="8" />
-  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout — icon: #bbb (1.9:1)</text>
+  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout: icon #bbb (1.9:1)</text>
   <circle cx="50" cy="58" r="12" fill="none" stroke="#bbbbbb" stroke-width="3" />
   <line x1="58" y1="67" x2="72" y2="80" stroke="#bbbbbb" stroke-width="3" stroke-linecap="round" />
-  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed — icon: #666 (5.7:1)</text>
+  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed: icon #666 (5.7:1)</text>
   <circle cx="310" cy="58" r="12" fill="none" stroke="#666666" stroke-width="3" />
   <line x1="318" y1="67" x2="332" y2="80" stroke="#666666" stroke-width="3" stroke-linecap="round" />
 </svg>
@@ -232,21 +232,21 @@ button:focus {
 
 <svg viewBox="0 0 520 100" width="520" role="img" aria-label="Vergelijking: toggle switches met nauwelijks verschil versus duidelijk verschil">
   <rect width="520" height="100" fill="#f5f5f5" rx="8" />
-  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout — verschil nauwelijks zichtbaar</text>
+  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#cc0000" font-weight="bold">Fout: verschil nauwelijks zichtbaar</text>
   <text x="20" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#666">Uit:</text>
   <rect x="50" y="38" width="44" height="24" rx="12" fill="#e0e0e0" />
   <circle cx="62" cy="50" r="9" fill="#fff" />
   <text x="110" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#666">Aan:</text>
   <rect x="140" y="38" width="44" height="24" rx="12" fill="#c0c0c0" />
   <circle cx="172" cy="50" r="9" fill="#fff" />
-  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed — verschil direct duidelijk</text>
+  <text x="280" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#008000" font-weight="bold">Goed: verschil direct duidelijk</text>
   <text x="280" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#666">Uit:</text>
   <rect x="310" y="38" width="44" height="24" rx="12" fill="#999999" />
   <circle cx="322" cy="50" r="9" fill="#fff" />
   <text x="370" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#666">Aan:</text>
   <rect x="400" y="38" width="44" height="24" rx="12" fill="#2196f3" />
   <circle cx="432" cy="50" r="9" fill="#fff" />
-  <text x="20" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#666">Links: #e0e0e0 vs #c0c0c0 (1.2:1). Rechts: #999 vs #2196f3 — duidelijk verschil.</text>
+  <text x="20" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#666">Links: #e0e0e0 vs #c0c0c0 (1.2:1). Rechts: #999 vs #2196f3, duidelijk verschil.</text>
 </svg>
 
 ```css
@@ -256,7 +256,7 @@ button:focus {
 }
 
 .toggle.active {
-  background: #c0c0c0; /* Aan-status — contrast tussen de twee: 1.2:1 */
+  background: #c0c0c0; /* Aan-status, contrast tussen de twee: 1.2:1 */
 }
 ```
 
@@ -269,7 +269,7 @@ button:focus {
 }
 
 .toggle.active {
-  background: #2196f3; /* Aan-status — kleurverschil + contrast van beide met omgeving */
+  background: #2196f3; /* Aan-status, kleurverschil plus contrast van beide met omgeving */
 }
 
 /* Of met extra visuele aanduiding */

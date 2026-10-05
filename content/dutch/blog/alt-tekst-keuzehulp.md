@@ -60,7 +60,7 @@ Beschrijf wat je ziet, gericht op de context. Bij een productfoto: "Zwarte leren
 
 ### Functionele afbeeldingen
 
-Beschrijf niet wat je ziet, maar **wat er gebeurt als je klikt**. Een logo dat linkt naar de homepage: `alt="Proper Access — naar de homepage"`. Niet: `alt="logo"`.
+Beschrijf niet wat je ziet, maar **wat er gebeurt als je klikt**. Een logo dat linkt naar de homepage: `alt="Proper Access, naar de homepage"`. Niet: `alt="logo"`.
 
 ### Complexe afbeeldingen
 
@@ -72,7 +72,7 @@ Geef een korte alt-tekst ("Staafgrafiek: omzetontwikkeling per kwartaal") plus e
 2. **Informatieve afbeeldingen zonder alt-tekst**: een schermlezer leest de bestandsnaam voor
 3. **Alle afbeeldingen dezelfde alt-tekst**: "afbeelding" of "foto" geeft geen bruikbare informatie
 4. **Alt-tekst die begint met "afbeelding van"**: een schermlezer zegt al "afbeelding", je krijgt dan "afbeelding, afbeelding van..."
-5. **Tekst in afbeeldingen niet opnemen**: een banner met "SALE — 50% korting" als afbeelding zonder die tekst in de alt
+5. **Tekst in afbeeldingen niet opnemen**: een banner met "SALE: 50% korting" als afbeelding zonder die tekst in de alt
 
 ## Alt-teksten voor webshops
 
