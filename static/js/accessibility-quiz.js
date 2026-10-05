@@ -1230,9 +1230,23 @@
 
   // --- Language switching ---
 
+  // Zet lang op de quiz zodra die afwijkt van de taal van de pagina (WCAG 3.1.2).
+  // De taalknop staat binnen deze sectie en erft de taal daarmee mee.
+  function syncSectionLang() {
+    var section = el('quizSection');
+    if (!section) return;
+    var pageLang = (document.documentElement.getAttribute('lang') || 'nl').substring(0, 2);
+    if (lang === pageLang) {
+      section.removeAttribute('lang');
+    } else {
+      section.setAttribute('lang', lang);
+    }
+  }
+
   window.quizSetLang = function (newLang) {
     if (newLang !== 'nl' && newLang !== 'en') return;
     lang = newLang;
+    syncSectionLang();
 
     // Re-render based on current screen
     if (currentScreen === 'welcome') {
@@ -1258,14 +1272,19 @@
     var container = el('quizContainer');
     if (!container) return;
 
-    // Detect language from html lang attribute
-    var htmlLang = document.documentElement.getAttribute('lang');
-    if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
-      lang = 'nl';
-    } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
-      lang = 'en';
+    // De taal van de pagina: eerst wat de layout meegeeft, anders het lang-attribuut
+    if (window.__paToolLang === 'nl' || window.__paToolLang === 'en') {
+      lang = window.__paToolLang;
+    } else {
+      var htmlLang = document.documentElement.getAttribute('lang');
+      if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
+        lang = 'nl';
+      } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
+        lang = 'en';
+      }
     }
 
+    syncSectionLang();
     renderAll();
   }
 
