@@ -50,7 +50,7 @@ In Nederland onderscheiden we vier vormen van audits. We leggen ze hieronder kor
 {{< section-cards columns="2" bg="light" >}}
 {{< section-card title="Volledige audit" >}}
 
-De standaard. We toetsen alle 55 succescriteria van WCAG 2.2 op een representatieve selectie pagina's. Geschikt voor websites en apps waar je zowel de techniek als de content in eigen hand hebt. Vrijwel elke overheidsorganisatie en webshop kiest hiervoor.
+De standaard. We toetsen alle 55 succescriteria van WCAG 2.2 op niveau A en AA, op een representatieve selectie pagina's. Geschikt voor websites en apps waar je zowel de techniek als de content in eigen hand hebt. Vrijwel elke overheidsorganisatie en webshop kiest hiervoor.
 
 [Lees over de volledige audit →](/toegankelijkheidsaudit/)
 

@@ -13,7 +13,7 @@ description: "55 WCAG 2.2-succescriteria, gefilterd op type beperking. Ontdek we
 meta_description: "De 55 succescriteria van WCAG 2.2 op niveau A en AA, gefilterd op type beperking. Zo zie je welke eisen gelden voor jouw bezoekers."
 ---
 
-WCAG 2.2 bevat 55 succescriteria. Maar niet elk criterium is relevant voor elke bezoeker. Sommige gaan over kleurgebruik, andere over toetsenbordbediening, en weer andere over bewegende content.
+WCAG 2.2 heeft 55 succescriteria op niveau A en AA. Maar niet elk criterium is relevant voor elke bezoeker. Sommige gaan over kleurgebruik, andere over toetsenbordbediening, en weer andere over bewegende content.
 
 De vraag is: welke criteria zijn relevant voor de bezoekers van jouw website?
 

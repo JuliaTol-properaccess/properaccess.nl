@@ -29,7 +29,7 @@ Wij voeren grondige, handmatige toegankelijkheidstesten uit. Dit kun je van ons 
 
 - **Handmatige toetsing** – geen automatische tools alleen, maar écht menselijke controle
 - **Meer dan 200 controlepunten** – gebaseerd op praktijkervaring en best practices   
-- **Volledige dekking van alle 55 succescriteria van WCAG 2.1 of 2.2**    
+- **Volledige dekking van alle succescriteria op niveau A en AA, 50 bij WCAG 2.1 en 55 bij WCAG 2.2**    
 - **Getest in 3 browsers** – meestal Chrome, Firefox en Safari of Edge   
 - **Gebruik van 2 screenreaders** – onder andere NVDA en VoiceOver    
 - **Per websitecomponent** – dus grondig én modulair getest    

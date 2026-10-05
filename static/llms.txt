@@ -16,7 +16,7 @@ eigen index: [properaccess.nl/en/llms.txt](https://www.properaccess.nl/en/llms.t
 ## Toegankelijkheidsonderzoek
 
 - [Toegankelijkheidsonderzoek](https://www.properaccess.nl/toegankelijkheidsonderzoek/): overzicht van de vier soorten onderzoek, de WCAG-EM methode in vijf stappen, de prijzen en wat je krijgt
-- [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): volledig onderzoek van een website aan alle 55 succescriteria van WCAG 2.2 niveau AA, met een rapport per element
+- [Toegankelijkheidsaudit](https://www.properaccess.nl/toegankelijkheidsaudit/): volledig onderzoek van een website aan alle 55 succescriteria van WCAG 2.2 op niveau A en AA, met een rapport per element
 - [App-audit](https://www.properaccess.nl/app-toegankelijkheid-testen/): handmatig onderzoek van een iOS- of Android-app op echte toestellen met VoiceOver en TalkBack, getoetst aan WCAG 2.1 en EN 301 549
 - [Contentaudit](https://www.properaccess.nl/contentaudit/): deelonderzoek van alleen de content die je webredactie beheert, 33 van de 55 succescriteria
 - [Techniek- of systeemaudit](https://www.properaccess.nl/techniekaudit/): deelonderzoek van componenten, code en interactiepatronen, 48 van de 55 succescriteria, voor softwareleveranciers en SaaS-partijen

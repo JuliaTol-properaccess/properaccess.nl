@@ -14,7 +14,7 @@ een externe leverancier, dan heeft het weinig zin om een rapport te krijgen vol 
 waar je zelf niets mee kunt. Let op: een deelonderzoek van alleen de content kan alleen als de
 techniek ook is onderzocht, door ons of door iemand anders.
 
-| Onderzoek | Wat we toetsen | Succescriteria | Voor wie |
+| Onderzoek | Wat we toetsen | Succescriteria (niveau A en AA) | Voor wie |
 | --- | --- | --- | --- |
 | Volledig toegankelijkheidsonderzoek | Techniek en content samen, volgens WCAG-EM | 55 van de 55 | Organisaties die moeten aantonen dat ze voldoen aan de European Accessibility Act of het Besluit digitale toegankelijkheid overheid |
 | [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt. Alleen mogelijk als de techniek ook is onderzocht |
