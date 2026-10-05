@@ -1,5 +1,5 @@
 ---
-title: "WCAG-EM: de officiële methode voor een toegankelijkheidsonderzoek"
+title: "WCAG-EM: de methode van het W3C voor een toegankelijkheidsonderzoek"
 date: 2026-06-21
 slug: "wcag-em-methode-toegankelijkheidsonderzoek"
 categories:
@@ -10,18 +10,18 @@ tags:
   - "audit"
   - "methodiek"
   - "veelgestelde-vragen"
-description: "WCAG-EM is de W3C-methode voor een toegankelijkheidsonderzoek. In vijf stappen leg ik uit wat het is, hoe het werkt en wanneer je er niet omheen kunt."
+description: "WCAG-EM is de W3C-methode voor een toegankelijkheidsonderzoek. In vijf stappen leg ik uit wat het is, hoe het werkt en wanneer je het nodig hebt."
 keywords:
   - WCAG-EM
   - WCAG-EM methode
   - toegankelijkheidsonderzoek methode
   - WCAG audit methodiek
   - evaluatiemethodiek WCAG
-meta_title: "WCAG-EM uitgelegd: de 5 stappen van een officieel onderzoek | Proper Access"
+meta_title: "WCAG-EM uitgelegd: de 5 stappen van de W3C-methode | Proper Access"
 meta_description: "Wat is WCAG-EM en wanneer heb je het nodig? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
 ---
 
-Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een WCAG-audit hoort uit te voeren.
+Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een WCAG-audit opzet en uitvoert.
 
 WCAG zegt **wát** je moet toetsen. WCAG-EM zegt **hoe** je dat doet. Dat tweede is net zo belangrijk, want zonder een vaste methode kan iedereen z'n eigen conclusies trekken en is een audit niet vergelijkbaar of controleerbaar.
 
