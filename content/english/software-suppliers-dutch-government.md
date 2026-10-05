@@ -8,7 +8,7 @@ aliases:
   - /en/digital-accessibility-government/
 description: "Your government customers must prove their digital channels are accessible. We audit your product against WCAG 2.2 and EN 301 549, in English, so they can."
 tldr: |
-  Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch decree that implements the EU Web Accessibility Directive. It has been in force since 1 July 2018. Every digital channel needs its own accessibility statement in the Dutch Register of Accessibility Statements: the main website, subsites, application forms, portals behind a login, intranets and apps. A statement with status A or B needs an audit report behind it, and that report expires after 36 months, after which the statement drops to status D. The standard is EN 301 549, which in version V3.2.1 points to WCAG 2.1 level A and AA. When one of those channels runs on your software, the evidence your customer needs is evidence about your product, so they will ask you for an audit or ask you to allow one. We audit products against WCAG 2.2 and EN 301 549 and report in English.
+  Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch decree that implements the EU Web Accessibility Directive. It has been in force since 1 July 2018. Every digital channel has to be covered by an accessibility statement in the Dutch Register of Accessibility Statements: the main website, subsites, application forms, portals behind a login, intranets and apps. Everything a statement covers has to be covered by the audit behind it. A statement with status A or B needs an audit report behind it, and that report expires after 36 months, after which the statement drops to status D. The standard is EN 301 549, which in version V3.2.1 points to WCAG 2.1 level A and AA. When one of those channels runs on your software, the evidence your customer needs is evidence about your product, so they will ask you for an audit or ask you to allow one. We audit products against WCAG 2.2 and EN 301 549 and report in English.
 keywords:
   - software supplier Dutch government accessibility
   - EN 301 549 software supplier
@@ -46,16 +46,16 @@ sections_header: "What the Dutch rules mean for a supplier"
 sections:
   - eyebrow: "The obligation"
     title: "The law binds your customer. The evidence has to come from you"
-    body: "Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch implementation of the EU Web Accessibility Directive, in force since 2018. The standard is EN 301 549, which in version V3.2.1 points to WCAG 2.1 level A and AA. Every digital channel needs its own accessibility statement in the Dutch Register: the main website, subsites, application forms, portals behind a login, intranets and apps. A statement with status A or B needs an audit behind it; without one, the Register marks the substantiation as insufficient. When the channel is your product, your customer will come to you for that audit, or ask you to allow one."
+    body: "Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch implementation of the EU Web Accessibility Directive, in force since 2018. The standard is EN 301 549, which in version V3.2.1 points to WCAG 2.1 level A and AA. Every digital channel has to be covered by an accessibility statement in the Dutch Register: the main website, subsites, application forms, portals behind a login, intranets and apps. A statement with status A or B needs an audit behind it; without one, the Register marks the substantiation as insufficient. When the channel is your product, your customer will come to you for that audit, or ask you to allow one."
     card_eyebrow: "The Register"
     card_icon: "account_balance"
     card_title: "Five statuses your customer can claim"
     card_list:
       - "**A:** fully compliant"
       - "**B:** partially compliant"
-      - "**C:** audit in progress or first measures taken"
+      - "**C:** no audit yet, but the channel will be audited or taken offline within 6 months"
       - "**D:** does not comply"
-      - "**E:** no owner"
+      - "**E:** there is no statement at all"
       - "The audit has to use a well-documented evaluation method: WCAG-EM or equivalent. A report expires after 36 months."
   - eyebrow: "Where it goes wrong"
     title: "Most statements in the Register are missing the evidence"
@@ -95,7 +95,7 @@ faqs:
   - question: "A customer's tender asks for proof of accessibility. What do we send?"
     answer: "A current audit report following WCAG-EM, against EN 301 549 and WCAG, with a retest that shows what has been fixed. Our report is written to be used without a briefing, so a procurement officer can read it. If you do not have one yet, a [mini audit](/en/mini-audit/) of €495 gives you an overview of the biggest issues within five working days, so you know what you are promising."
   - question: "Do you test against WCAG 2.1 or 2.2?"
-    answer: "Against WCAG 2.2 level AA. The legal standard, EN 301 549 V3.2.1, points to WCAG 2.1 level A and AA; V4 of the standard adopts WCAG 2.2, but it has not been designated in the Official Journal of the EU. WCAG 2.2 contains everything in 2.1 plus nine new criteria, so a product that passes 2.2 passes 2.1."
+    answer: "Against WCAG 2.2 level AA. The legal standard, EN 301 549 V3.2.1, points to WCAG 2.1 level A and AA. ETSI published V4.1.1 of that standard in September 2026 and it adopts WCAG 2.2, but it has not been designated in the Official Journal of the EU, so 2.1 is still the floor. WCAG 2.2 adds nine criteria to 2.1 and drops 4.1.1 Parsing, so a product that meets 2.2 meets 2.1."
   - question: "Our product is a SaaS platform with hundreds of instances. Which one do you test?"
     answer: "One representative instance, agreed with you: usually a demo or test environment with realistic data, or a live customer instance with that customer's permission. Findings in the product apply to every instance. We note in the report which instance we used, so your customers know what the evidence is based on."
   - question: "Do you sign NDAs and can you work behind a login?"

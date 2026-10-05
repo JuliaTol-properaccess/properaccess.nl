@@ -25,8 +25,8 @@ Conclusie. Het gunstige beeld op het dashboard klopt alleen zolang overheden op 
 
 ## In het kort
 
-- Het DigiToegankelijk-dashboard meldt dat 63% van de overheidswebsites aan de wet voldoet. Dat getal telt drie statussen samen, over 9.075 sites: een afgerond rapport, een lopend onderzoek, of een site die wordt uitgefaseerd.
-- Van alle 9.075 sites heeft 42% geen enkel rapport: de sites met status C (onderzoek loopt), D (voldoet niet) en E (geen eigenaar, 807 sites zonder claim sinds 2023). Tel je de groene A- en B-verklaringen mee waarvan de onderbouwing niet compleet is, dan mist 49% een geldig, compleet onderzoek.
+- Het DigiToegankelijk-dashboard meldt dat 63% van de overheidswebsites aan de wet voldoet. Dat getal telt drie statussen samen, over 9.075 sites: een afgerond rapport, een onderzoek dat binnen 6 maanden volgt, of een site die wordt opgeheven.
+- Van alle 9.075 sites heeft 42% geen enkel rapport: de sites met status C (nog geen onderzoek, maar binnen 6 maanden onderzocht of opgeheven), D (voldoet niet) en E (geen verklaring, 807 sites zonder claim sinds 2023). Tel je de groene A- en B-verklaringen mee waarvan de onderbouwing niet compleet is, dan mist 49% een geldig, compleet onderzoek.
 - Bij de huidige vraag naar audits gaan bijna alle nieuwe onderzoeken op aan het vervangen van rapporten die verlopen. Websites die nog nooit zijn onderzocht, blijven daardoor liggen.
 - Het aantal nieuwe onderzoeken ligt in 2026 al ruim onder de piek van 2025.
 - Blijft de vraag zo laag als nu, dan zakt de 63% in onze projectie naar 57% eind 2027 en 54% eind 2028, en naar 45% als het tempo verder daalt.
@@ -179,7 +179,7 @@ Dat nieuwe onderzoek is geen kleine controle. Na drie jaar is een website zo ver
 
 ## De cijfers onder de oppervlakte
 
-Ruim vier op de tien sites heeft geen enkel rapport. Opgeteld gaat het om 3.803 sites, 42%: de volledige C- en D-groep, plus de 807 in status E die geen eigenaar hebben. Alleen al 2.506 sites staan op status D, "voldoet niet".
+Ruim vier op de tien sites heeft geen enkel rapport. Opgeteld gaat het om 3.803 sites, 42%: de volledige C- en D-groep, plus de 807 in status E waarvoor geen verklaring is. Alleen al 2.506 sites staan op status D, "voldoet niet".
 
 Bijna de helft heeft geen volledige, geldige onderbouwing. 603 verklaringen met de groene statussen A of B zijn niet compleet en dragen de annotatie 'onderbouwing ontoereikend'. Tel je D, C, die 603 en de 807 uit status E samen, dan mist 49% van alle 9.075 websites een compleet, geldig onderzoek dat de status onderbouwt. Belangrijk: dit zegt niets over hoe toegankelijk die sites echt zijn. Een verklaring met status B kan honderden fouten hebben en toch aan de wet voldoen, zolang er een rapport onder ligt. Het register meet of er onderzoek is gedaan, niet of een site werkt voor mensen met een beperking. Het dashboard zegt 63% voldoet aan de wet, 27% niet en 9% zonder eigenaar. De werkelijkheid onder de streep ligt daar ruim boven.
 
