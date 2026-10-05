@@ -1230,23 +1230,40 @@
 
   // --- Language switching ---
 
-  // Zet lang op de quiz zodra die afwijkt van de taal van de pagina (WCAG 3.1.2).
-  // De taalknop staat binnen deze sectie en erft de taal daarmee mee.
-  function syncSectionLang() {
-    var section = el('quizSection');
-    if (!section) return;
-    var pageLang = (document.documentElement.getAttribute('lang') || 'nl').substring(0, 2);
-    if (lang === pageLang) {
-      section.removeAttribute('lang');
-    } else {
-      section.setAttribute('lang', lang);
+  // De quiz is de hele hoofdinhoud van deze pagina, dus na een wissel is de pagina
+  // overwegend de gekozen taal. Daarom gaat lang op <html> mee (WCAG 3.1.1) en niet
+  // alleen op de quizsectie. De koptekst, de voettekst en de rest buiten <main> blijven
+  // de taal waarin de pagina is gebouwd (WCAG 3.1.2); die tekst wisselt niet mee.
+  function syncPageLang() {
+    var pageLang = window.__paToolLang === 'en' ? 'en' : 'nl';
+    var huidig = (document.documentElement.getAttribute('lang') || '').substring(0, 2);
+    if (huidig !== lang) document.documentElement.setAttribute('lang', lang);
+
+    var kinderen = document.body.children;
+    for (var i = 0; i < kinderen.length; i++) {
+      var k = kinderen[i];
+      var tag = k.tagName.toLowerCase();
+      if (tag === 'main' || tag === 'script' || tag === 'style') continue;
+      if (lang === pageLang) {
+        if (k.getAttribute('data-pa-lang') === '1') {
+          k.removeAttribute('lang');
+          k.removeAttribute('data-pa-lang');
+        }
+      } else if (!k.hasAttribute('lang')) {
+        k.setAttribute('lang', pageLang);
+        k.setAttribute('data-pa-lang', '1');
+      }
     }
+
+    // Met lang op <html> is lang op de quizsectie niet meer nodig.
+    var section = el('quizSection');
+    if (section) section.removeAttribute('lang');
   }
 
   window.quizSetLang = function (newLang) {
     if (newLang !== 'nl' && newLang !== 'en') return;
     lang = newLang;
-    syncSectionLang();
+    syncPageLang();
 
     // Re-render based on current screen
     if (currentScreen === 'welcome') {
@@ -1284,7 +1301,7 @@
       }
     }
 
-    syncSectionLang();
+    syncPageLang();
     renderAll();
   }
 
