@@ -165,6 +165,13 @@
     var history = [];
     var liveRegion = document.getElementById("webapp-alt__live");
 
+    // Labels per taal uit data/tools/alt_tekst_keuzehulp.json. Staan ze er niet,
+    // dan houdt de keuzehulp het Nederlands aan, zoals in de shortcode.
+    var UI = window.__paAltUi || {};
+    function u(sleutel, standaard) {
+      return UI[sleutel] || standaard;
+    }
+
     // Bouw lookup map van nodes
     data.nodes.forEach(function (node) {
       nodes[node.id] = node;
@@ -193,10 +200,10 @@
       html += '<div class="webapp-alt__nav">';
       if (history.length > 0) {
         html += '<button class="webapp-alt__back" type="button" data-action="back">';
-        html += '<span aria-hidden="true">\u2190</span> Terug';
+        html += '<span aria-hidden="true">\u2190</span> ' + escapeHtml(u("back", "Terug"));
         html += '</button>';
       }
-      html += '<span class="webapp-alt__stap">Stap ' + (history.length + 1) + '</span>';
+      html += '<span class="webapp-alt__stap">' + escapeHtml(u("step", "Stap")) + ' ' + (history.length + 1) + '</span>';
       html += '</div>';
 
       // Vraag
@@ -208,7 +215,7 @@
 
       // Opties als kaarten
       var hasIcons = node.options.some(function (o) { return o.icon && icons[o.icon]; });
-      html += '<div class="webapp-alt__opties' + (hasIcons ? ' webapp-alt__opties--with-icons' : '') + '" role="group" aria-label="Keuzemogelijkheden">';
+      html += '<div class="webapp-alt__opties' + (hasIcons ? ' webapp-alt__opties--with-icons' : '') + '" role="group" aria-label="' + escapeHtml(u("optionsAriaLabel", "Keuzemogelijkheden")) + '">';
       node.options.forEach(function (option) {
         var icon = getIconForOption(option);
         html += '<button class="webapp-alt__optie' + (icon ? ' webapp-alt__optie--has-icon' : '') + '" type="button" data-next="' + option.next + '">';
@@ -236,10 +243,10 @@
       html += '<div class="webapp-alt__nav">';
       if (history.length > 0) {
         html += '<button class="webapp-alt__back" type="button" data-action="back">';
-        html += '<span aria-hidden="true">\u2190</span> Terug';
+        html += '<span aria-hidden="true">\u2190</span> ' + escapeHtml(u("back", "Terug"));
         html += '</button>';
       }
-      html += '<span class="webapp-alt__stap">Resultaat</span>';
+      html += '<span class="webapp-alt__stap">' + escapeHtml(u("result", "Resultaat")) + '</span>';
       html += '</div>';
 
       // Resultaat
@@ -250,7 +257,7 @@
       // Oplossingen
       if (node.solutions && node.solutions.length > 0) {
         html += '<div class="webapp-alt__oplossingen">';
-        html += '<h4 class="webapp-alt__oplossingen-titel">Oplossing</h4>';
+        html += '<h4 class="webapp-alt__oplossingen-titel">' + escapeHtml(u("solutions", "Oplossing")) + '</h4>';
         html += '<ul class="webapp-alt__oplossingen-lijst">';
         node.solutions.forEach(function (s) {
           html += '<li>' + s + '</li>';
@@ -262,7 +269,7 @@
       // Voorbeelden
       if (node.examples && node.examples.length > 0) {
         html += '<div class="webapp-alt__voorbeelden">';
-        html += '<h4 class="webapp-alt__voorbeelden-titel">Voorbeelden</h4>';
+        html += '<h4 class="webapp-alt__voorbeelden-titel">' + escapeHtml(u("examples", "Voorbeelden")) + '</h4>';
         html += '<ul class="webapp-alt__voorbeelden-lijst">';
         node.examples.forEach(function (e) {
           html += '<li>' + e + '</li>';
@@ -276,7 +283,7 @@
       // Tips
       if (data.tips && data.tips.length > 0) {
         html += '<details class="webapp-alt__tips">';
-        html += '<summary class="webapp-alt__tips-samenvatting">Algemene schrijfregels voor goede alt-tekst</summary>';
+        html += '<summary class="webapp-alt__tips-samenvatting">' + escapeHtml(u("tipsSummary", "Algemene schrijfregels voor goede alt-tekst")) + '</summary>';
         html += '<ul class="webapp-alt__tips-lijst">';
         data.tips.forEach(function (tip) {
           html += '<li>' + escapeHtml(tip) + '</li>';
@@ -287,7 +294,7 @@
 
       // Opnieuw beginnen
       html += '<button class="webapp-alt__opnieuw" type="button" data-action="restart">';
-      html += 'Opnieuw beginnen';
+      html += escapeHtml(u("restart", "Opnieuw beginnen"));
       html += '</button>';
 
       return html;

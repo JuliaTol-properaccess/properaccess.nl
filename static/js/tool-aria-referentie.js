@@ -1740,16 +1740,12 @@
 
   /* ===== i18n ===== */
 
+  // Alleen de teksten die dit script zelf opbouwt. De teksten die ook in de HTML van
+  // de pagina staan, komen uit data/tools/aria_referentie.json en zet de layout in
+  // window.__paToolI18n. Zo staat elke tekst maar op een plaats.
   var LANG = {
     nl: {
       toolTitle: "ARIA Rollen & Attributen Referentie",
-      intro: 'Doorzoek alle WAI-ARIA rollen en attributen uit de <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2-specificatie</a>. Bekijk beschrijvingen, ondersteunde attributen, HTML-equivalenten en praktische codevoorbeelden.',
-      searchLabel: "Zoek een rol of attribuut",
-      searchPlaceholder: 'Zoek bijv. "button", "aria-label", "navigation"...',
-      filterAriaLabel: "Filter op categorie",
-      resultsAriaLabel: "Resultaten",
-      loadMore: "Toon meer resultaten",
-      ctaHtml: 'ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website. Wil je weten of jouw ARIA-implementatie klopt? <a href="/contact/">Vraag een audit aan</a> of bel <a href="tel:+31855055890">085\u00a05055\u00a0890</a>.',
       badgeRole: "Rol",
       badgeAttribute: "Attribuut",
       htmlEquivalent: "HTML-equivalent",
@@ -1769,18 +1765,10 @@
       noResults: "Geen resultaten voor",
       noResultsTip: 'Tip: probeer een Engelse naam (bijv. "button") of een ARIA-attribuut (bijv. "aria-label").',
       resultsSingular: "resultaat",
-      resultsPlural: "resultaten",
-      langLabel: "NL EN, switch to English"
+      resultsPlural: "resultaten"
     },
     en: {
       toolTitle: "ARIA Roles & Attributes Reference",
-      intro: 'Search all WAI-ARIA roles and attributes from the <a href="https://www.w3.org/TR/wai-aria-1.2/" rel="noopener" target="_blank">ARIA 1.2 specification</a>. View descriptions, supported attributes, HTML equivalents, and practical code examples.',
-      searchLabel: "Search for a role or attribute",
-      searchPlaceholder: 'Search e.g. "button", "aria-label", "navigation"...',
-      filterAriaLabel: "Filter by category",
-      resultsAriaLabel: "Results",
-      loadMore: "Show more results",
-      ctaHtml: 'Correctly applying ARIA attributes is essential for your website\u2019s accessibility. Want to know if your ARIA implementation is correct? <a href="/contact/">Request an audit</a> or call <a href="tel:+31855055890">+31\u00a085\u00a0505\u00a05890</a>.',
       badgeRole: "Role",
       badgeAttribute: "Attribute",
       htmlEquivalent: "HTML equivalent",
@@ -1800,8 +1788,7 @@
       noResults: "No results for",
       noResultsTip: 'Tip: try a role name (e.g. "button") or an ARIA attribute (e.g. "aria-label").',
       resultsSingular: "result",
-      resultsPlural: "results",
-      langLabel: "NL EN, schakel naar Nederlands"
+      resultsPlural: "results"
     }
   };
 
@@ -1817,11 +1804,17 @@
     { id: "live-region-attr", nl: "Live-regio-attributen", en: "Live region attributes" }
   ];
 
+  var pageLang = (document.documentElement.getAttribute("lang") || "nl").slice(0, 2);
   var currentLang = (window.__paToolLang === "en") ? "en" : "nl";
   try { var stored = localStorage.getItem("pa-tool-lang"); if (stored && !window.__paToolLang) currentLang = stored; } catch (e) { /* */ }
 
+  // De teksten die ook in de HTML staan, komen uit data/tools/aria_referentie.json.
+  var PAGE = window.__paToolI18n || {};
+
   function t(key) {
-    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
+    if (PAGE[currentLang] && PAGE[currentLang][key]) return PAGE[currentLang][key];
+    if (LANG[currentLang] && LANG[currentLang][key]) return LANG[currentLang][key];
+    return (PAGE.nl && PAGE.nl[key]) || LANG.nl[key] || key;
   }
 
   function getDesc(item) {
@@ -1849,9 +1842,10 @@
     for (var l = 0; l < ariaEls.length; l++) {
       ariaEls[l].setAttribute("aria-label", t(ariaEls[l].getAttribute("data-i18n-aria")));
     }
+    // Zet lang op de tool zodra die afwijkt van de taal van de pagina (WCAG 3.1.2)
     var container = document.querySelector(".tool-container");
     if (container) {
-      if (currentLang === "nl") {
+      if (currentLang === pageLang) {
         container.removeAttribute("lang");
       } else {
         container.setAttribute("lang", currentLang);
