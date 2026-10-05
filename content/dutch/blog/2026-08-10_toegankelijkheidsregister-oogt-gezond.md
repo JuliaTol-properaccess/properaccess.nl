@@ -10,6 +10,7 @@ tags:
   - "toegankelijkheidsverklaring"
   - "digitoegankelijk"
 description: "Het dashboard meldt dat 63% van de overheidswebsites voldoet. De vraag naar audits zakt al zeven maanden weg. Onze analyse van 8.268 toegankelijkheidsverklaringen laat zien waarom dat getal gaat dalen."
+meta_description: "Het dashboard meldt dat 63% van de overheidswebsites voldoet. Onze analyse van 8.268 toegankelijkheidsverklaringen laat zien waarom dat getal gaat dalen."
 keywords:
   - toegankelijkheidsverklaring
   - digitoegankelijk dashboard

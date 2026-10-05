@@ -11,6 +11,7 @@ tags:
   - "wcag"
   - "eaa"
 description: "Hoe maak je een website digitaal toegankelijk? Lees over het verschil tussen WCAG 2.1 en 2.2, niveau A en AA, wat het kost en waar je begint als je niet weet waar je staat."
+meta_description: "Hoe maak je een website digitaal toegankelijk? Het verschil tussen WCAG 2.1 en 2.2, niveau A en AA, wat het kost en waar je begint."
 keywords:
   - hoe maak je een website toegankelijk
   - website digitaal toegankelijk maken

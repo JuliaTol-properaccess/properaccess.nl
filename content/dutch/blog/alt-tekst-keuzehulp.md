@@ -3,6 +3,7 @@ title: "Alt-tekst schrijven: de keuzehulp voor de juiste alt-tekst bij elke afbe
 date: 2026-02-23
 slug: "alt-tekst-keuzehulp"
 description: "Welke alt-tekst heeft jouw afbeelding nodig? Gebruik onze interactieve keuzehulp om in een paar stappen de juiste alt-tekst te bepalen, van productfoto's tot decoratieve afbeeldingen."
+meta_description: "Welke alt-tekst heeft jouw afbeelding nodig? De keuzehulp brengt je in een paar stappen bij het juiste antwoord, van productfoto tot decoratie."
 categories:
   - "achtergrond_wcag"
   - "webredactie"
