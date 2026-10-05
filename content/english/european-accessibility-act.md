@@ -20,7 +20,7 @@ keywords:
 banner:
   badge: "In force since 28 June 2025"
   title: "You have to comply with the European Accessibility Act in the Netherlands, and nobody explains plainly what that means. This page does"
-  content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. This page tells you which rules apply to you, who supervises you and what to do first."
+  content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. Proper Access audits websites and apps against EN 301 549 and WCAG 2.2. This page tells you which rules apply to you, who supervises you and what to do first."
   bullets:
     - "**Directive (EU) 2019/882**, implemented in Dutch law and applied since 28 June 2025"
     - "**The standard is EN 301 549**, which currently points to WCAG 2.1 level A and AA"

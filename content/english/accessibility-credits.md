@@ -1,6 +1,6 @@
 ---
 title: "Accessibility credits"
-meta_title: "Ask a senior accessibility auditor one question | Proper Access"
+meta_title: "Ask a senior accessibility auditor | Proper Access"
 date: 2026-08-17
 slug: "accessibility-credits"
 layout: "service-en"

@@ -1,6 +1,6 @@
 ---
 title: "The EAA for e-commerce and e-services"
-meta_title: "WCAG audit and guidance for webshops and apps | Proper Access"
+meta_title: "WCAG audit for webshops and e-services | Proper Access"
 date: 2026-05-31
 slug: "e-commerce-digital-accessibility"
 layout: "service-en"
