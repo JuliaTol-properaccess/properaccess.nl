@@ -40,7 +40,7 @@ Daardoor zijn audits van verschillende partijen vergelijkbaar, en kan een hercon
 
 ## Wanneer heb je WCAG-EM nodig?
 
-Op één plek is het een harde eis. Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register) accepteert geen onderzoek dat er niet volgens is uitgevoerd, en dat geldt voor elke status die je aanvraagt, niet alleen voor status A. Val je onder het BDTO, dan moet je [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/) dus op een WCAG-EM-evaluatie zijn gebaseerd.
+Op één plek vraagt de wet om een methode. Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register) vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt, WCAG-EM of gelijkwaardig, en dat geldt voor status A en ook voor status B. DigiToegankelijk schrijft erbij dat er nog geen breed gedragen alternatief is, dus in de praktijk is WCAG-EM de methode. Val je onder het BDTO, dan ligt zo'n onderzoek dus onder je [toegankelijkheidsverklaring](/blog/moet-mijn-overheidswebsite-voldoen-aan-wcag/).
 
 Onder de EAA ligt het anders. Die wet verplicht je tot een toegankelijke website of app, niet tot een onderzoek. Een onderzoek is de manier om te weten waar je staat, en WCAG-EM is de manier om dat onderzoek volledig te maken. Kun je bij een toezichthouder niet laten zien hoe je aan je conclusie komt, dan heb je weinig in handen.
 
@@ -117,7 +117,7 @@ Voor een overheidsrapport levert dit uiteindelijk één van vier verklaringsstat
 
 ## WCAG-EM versus "gewoon een audit"
 
-Een audit *zonder* WCAG-EM is niet fout, maar is geen formele conformiteitsbeoordeling. Het kan nuttig zijn als snelle check, als UX-onderzoek of als voorbereiding op een officiële audit. Maar je kunt er niet op bouwen voor:
+Een audit *zonder* WCAG-EM of een gelijkwaardige, goed gedocumenteerde methode is niet fout, maar is geen formele conformiteitsbeoordeling. Het kan nuttig zijn als snelle check, als UX-onderzoek of als voorbereiding op een officiële audit. Maar je kunt er niet op bouwen voor:
 
 - Je toegankelijkheidsverklaring bij de overheid
 - Een EAA-conformiteitsbewijs

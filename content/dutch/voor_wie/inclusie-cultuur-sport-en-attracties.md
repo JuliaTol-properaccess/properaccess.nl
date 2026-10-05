@@ -113,8 +113,9 @@ toezicht van de overheid of heeft een bestuur dat de overheid grotendeels benoem
 een subsidie valt er dus niet automatisch onder. Twijfelgevallen leg je voor aan een jurist.
 
 Val je eronder, dan heb je een toegankelijkheidsverklaring nodig in het
-[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register),
-en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd.
+[Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
+Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. Wij
+werken volgens WCAG-EM.
 
 Ben je een commercieel bedrijf, dan val je onder de **European Accessibility Act**, die sinds
 28 juni 2025 geldt.

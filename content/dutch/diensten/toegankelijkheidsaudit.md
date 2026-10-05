@@ -74,7 +74,7 @@ faqs:
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
     answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een hercontrole die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
   - question: "Volgens welke methode voeren jullie het onderzoek uit?"
-    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens deze methode is uitgevoerd, dus je rapport is bruikbaar als bewijs."
+    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
 translationKey: "toegankelijkheidsaudit"
@@ -103,7 +103,7 @@ aan ons kunt stellen en aan elke andere partij die je spreekt.
 
 {{< /section-full >}}
 
-{{< section-steps id="methode" title="Volgens welke methode voeren we de audit uit?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van Toegankelijkheidsverklaringen accepteert alleen onderzoek dat er volgens is uitgevoerd, dus je rapport is bruikbaar als bewijs." >}}
+{{< section-steps id="methode" title="Volgens welke methode voeren we de audit uit?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing." >}}
 <div class="card">
   <i class="card__icon" aria-hidden="true">1</i>
   <h3 class="card__title">Reikwijdte bepalen</h3>
