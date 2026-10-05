@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Tools"
-meta_title: "Accessibility Tools — Proper Access"
+meta_title: "Free accessibility tools for your website | Proper Access"
 description: "Free online tools to check your website's accessibility. Test colour contrast, alt texts, text spacing, PDFs and more."
 aliases:
   - /en/tools/heading-structure-checker/
