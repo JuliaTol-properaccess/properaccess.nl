@@ -1,0 +1,27 @@
+{{- /* Filtert een lijst pagina's tot de pagina's die ook in de sitemap mogen staan.
+
+       Vier sleutels houden een pagina uit de index en ze worden door elkaar gebruikt:
+
+       - sitemap_exclude: formulieren en bedankpagina's
+       - locked: een academy-hoofdstuk zonder inhoud, dat de bezoeker alleen
+         "Dit hoofdstuk is nog niet beschikbaar" toont
+       - noindex: gelezen door layouts/partials/basic-seo.html
+       - robots: een string, gelezen door layouts/_default/baseof.html
+
+       layouts/sitemap.xml filtert op sitemap_exclude en locked. Dit is dezelfde regel
+       plus de twee sleutels die een meta robots noindex zetten, zodat llms-full.txt niets
+       aanbiedt wat we uit zoekmachines houden.
+
+       Eén plek, zodat elke lijst in index.llmsfull.txt dezelfde regel gebruikt. */ -}}
+{{- $zichtbaar := slice -}}
+{{- range $p := . -}}
+  {{- $robots := lower (printf "%v" (default "" $p.Params.robots)) -}}
+  {{- if and
+        (not $p.Params.sitemap_exclude)
+        (not $p.Params.locked)
+        (not ($p.Param "noindex"))
+        (not (strings.Contains $robots "noindex")) -}}
+    {{- $zichtbaar = $zichtbaar | append $p -}}
+  {{- end -}}
+{{- end -}}
+{{- return $zichtbaar -}}
