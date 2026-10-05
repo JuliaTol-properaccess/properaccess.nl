@@ -40,8 +40,8 @@
       "back": "Back",
       "step": "Step",
       "result": "Result",
-      "optionsAriaLabel": "Options",
-      "solutions": "Solution",
+      "optionsAriaLabel": "Answer options",
+      "solutions": "Solutions",
       "examples": "Examples",
       "tipsSummary": "General rules for writing good alt text",
       "restart": "Start again"
