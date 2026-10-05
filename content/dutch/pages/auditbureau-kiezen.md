@@ -57,7 +57,9 @@ emulator laat je niet zien wat een gebruiker werkelijk hoort.
 {{< section-card title="2. Volgt het onderzoek WCAG-EM?" >}}
 
 Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register)
-accepteert geen onderzoek dat niet volgens WCAG-EM is uitgevoerd. Dat geldt voor élk onderzoek.
+vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt:
+WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B. Er is nog geen breed
+gedragen alternatief voor WCAG-EM, dus vraag een bureau wel hoe het de methode toepast.
 
 Val je onder de EAA en niet onder het BDTO, dan heb je geen verklaring in het Register nodig. De
 methode is dan nog steeds de reden dat een steekproef representatief is voor je hele site.
@@ -149,11 +151,12 @@ overtreden.
 
 {{< /section-highlight >}}
 
-{{< section-full title="WCAG-EM: de vijf stappen waar het Register om vraagt" bg="light" >}}
+{{< section-full title="WCAG-EM: de vijf stappen van de methode" bg="light" >}}
 
 WCAG-EM staat voor Website Accessibility Conformance Evaluation Methodology 1.0, een Working
-Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het Register vraagt er
-wel om, en van de ACM weten we uit de eerste hand dat ze er zelf mee werkt.
+Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het model van de
+verklaring noemt de methode wel bij naam, met "of gelijkwaardig" erachter, en van de ACM weten we
+uit de eerste hand dat ze er zelf mee werkt.
 
 <img src="/images/pages/auditbureau-wcag-em-stappen.svg" alt="" loading="lazy" style="width:100%;height:auto;margin:1.5rem 0;" />
 
