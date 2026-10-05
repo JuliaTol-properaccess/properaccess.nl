@@ -116,7 +116,7 @@ Aan een bedrag zie je niet wat je ervoor krijgt. Deze zes vragen halen dat boven
 <details class="faq-item">
 <summary class="faq-question">Is een mini-audit genoeg voor de EAA?</summary>
 <div class="faq-answer">
-Nee. De EAA verplicht je tot een toegankelijke website of app; een onderzoek is de manier om te weten waar je staat. Een mini-audit geeft je een eerste beeld en dekt niet de hele norm. Wil je je bevindingen kunnen onderbouwen, bijvoorbeeld richting een toezichthouder, dan heb je een volledig WCAG-EM onderzoek nodig.
+Nee. De EAA verplicht je tot een toegankelijke website of app. Een onderzoek is geen wettelijke eis; het is de manier om te weten waar je staat. Een mini-audit geeft je een eerste beeld en dekt niet de hele norm. Vraagt een toezichthouder je om te laten zien dat je dienst aan de eisen voldoet, dan geldt dat voor alle eisen die voor jou gelden. Daar heb je een volledig onderzoek voor nodig. Wij doen dat onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. De ACM gebruikte die methode in 2026 bij de tien webshops die ze als eerste begeleidde.
 </div>
 </details>
 
