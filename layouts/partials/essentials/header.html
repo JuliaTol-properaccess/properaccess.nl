@@ -16,7 +16,13 @@
       class="order-3 cursor-pointer flex items-center lg:hidden text-text-dark lg:order-1"
       aria-expanded="false"
       aria-controls="nav-menu"
-      aria-label="Menu openen">
+      {{/* Het script wisselt de naam bij elke klik. Daarom gaan beide teksten
+           als data-attribuut mee: anders zou het script de Nederlandse tekst
+           terugzetten op de Engelse pagina. Hetzelfde patroon als data-done in
+           layouts/tools/bookmarklet-install.html. */}}
+      data-label-open="{{ T "open_menu" }}"
+      data-label-close="{{ T "close_menu" }}"
+      aria-label="{{ T "open_menu" }}">
       <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20" aria-hidden="true">
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
@@ -175,10 +181,13 @@
   var hideIcon = document.getElementById("hide-button");
   if (!toggle || !menu) return;
 
+  var labelOpen = toggle.getAttribute("data-label-open") || "Menu openen";
+  var labelClose = toggle.getAttribute("data-label-close") || "Menu sluiten";
+
   toggle.addEventListener("click", function () {
     var expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
-    toggle.setAttribute("aria-label", expanded ? "Menu openen" : "Menu sluiten");
+    toggle.setAttribute("aria-label", expanded ? labelOpen : labelClose);
     menu.classList.toggle("hidden");
     showIcon.classList.toggle("hidden");
     showIcon.classList.toggle("block");

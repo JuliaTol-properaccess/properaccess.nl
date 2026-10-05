@@ -7,10 +7,16 @@ weight = 1
 
 ################ English language ##################
 [en]
-languageName = "En"
+languageName = "EN"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 2
+
+# Het alt van het logo komt uit site.Params.logo_text in de logo-partial van de
+# hugo-module. Die is taalbewust, dus deze regel overschrijft alleen voor /en/
+# de Nederlandse waarde uit params.toml.
+[en.params]
+logo_text = "Proper Access, digital accessibility"
 
 [en.params.navigation_button]
 enable = true
