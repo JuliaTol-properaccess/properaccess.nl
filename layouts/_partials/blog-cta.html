@@ -124,19 +124,46 @@
         "text" "Tot 5 uur handmatige controle door een senior auditor, met een inschatting van het traject. € 495 exclusief btw.")))
 }}
 
-{{ if not .Params.hide_cta }}
-  {{/* Vaste prioriteit: een artikel heeft vaak meerdere categorieën, en de volgorde
-       in de front matter is willekeurig. De specifieke doelgroep wint van de algemene. */}}
-  {{ $priority := slice "webredactie" "webdeveloper" "e-commerce-eaa" "de eaa" "de-eaa" "wcag-vragen" "tips-en-tools" "wcag-uitgelegd" "achtergrond_wcag" }}
-  {{ $cats := slice }}
-  {{ range .Params.categories }}
-    {{ $cats = $cats | append (. | lower) }}
-  {{ end }}
+{{/* De mapping hierboven is Nederlands: Nederlandse teksten en Nederlandse URL's. De
+     Engelse blog gebruikt eigen categorieën ("wcag-explained") en eigen URL's, dus die
+     krijgt een eigen blok. Deed hij dat niet, dan kreeg een Engels artikel óf geen CTA,
+     óf een Nederlandse met paden als /en/strippenkaart/, en die bestaan niet.
 
+     De titel en de tekst van de Engelse kaartjes komen uit de doelpagina zelf, zodat er
+     geen tweede vertaling naast de pagina gaat leven. */}}
+{{ $enDoelen := slice "/tools/wcag-radar" "/accessibility-credits" "/accessibility-audit" }}
+
+{{ if not .Params.hide_cta }}
   {{ $block := false }}
-  {{ range $priority }}
-    {{ if and (not $block) (in $cats .) }}
-      {{ $block = index $map . }}
+
+  {{ if eq .Lang "en" }}
+    {{ $items := slice }}
+    {{ range $enDoelen }}
+      {{ with site.GetPage . }}
+        {{ $items = $items | append (dict
+          "url" .RelPermalink
+          "title" .Title
+          "text" .Description) }}
+      {{ end }}
+    {{ end }}
+    {{ if eq (len $items) (len $enDoelen) }}
+      {{ $block = dict "heading" (i18n "blog_cta_heading") "items" $items }}
+    {{ else }}
+      {{ errorf "blog-cta: niet alle Engelse doelpagina's bestaan (%d van %d gevonden in %v)" (len $items) (len $enDoelen) $enDoelen }}
+    {{ end }}
+  {{ else }}
+    {{/* Vaste prioriteit: een artikel heeft vaak meerdere categorieën, en de volgorde
+         in de front matter is willekeurig. De specifieke doelgroep wint van de algemene. */}}
+    {{ $priority := slice "webredactie" "webdeveloper" "e-commerce-eaa" "de eaa" "de-eaa" "wcag-vragen" "tips-en-tools" "wcag-uitgelegd" "achtergrond_wcag" }}
+    {{ $cats := slice }}
+    {{ range .Params.categories }}
+      {{ $cats = $cats | append (. | lower) }}
+    {{ end }}
+
+    {{ range $priority }}
+      {{ if and (not $block) (in $cats .) }}
+        {{ $block = index $map . }}
+      {{ end }}
     {{ end }}
   {{ end }}
 
@@ -148,7 +175,10 @@
           {{ range .items }}
             <li class="blog-cta__item">
               <h3 class="blog-cta__title">
-                <a class="blog-cta__link" href="{{ .url | relLangURL }}">{{ .title }}</a>
+                {{/* Geen relLangURL: de Nederlandse URL's hierboven staan al goed, want
+                     Nederlands is de standaardtaal en staat niet in een submap, en de
+                     Engelse komen als .RelPermalink al compleet uit de doelpagina. */}}
+                <a class="blog-cta__link" href="{{ .url }}">{{ .title }}</a>
               </h3>
               <p class="blog-cta__text">{{ .text }}</p>
             </li>
