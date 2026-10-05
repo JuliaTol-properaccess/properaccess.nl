@@ -1258,12 +1258,16 @@
     var container = el('quizContainer');
     if (!container) return;
 
-    // Detect language from html lang attribute
-    var htmlLang = document.documentElement.getAttribute('lang');
-    if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
-      lang = 'nl';
-    } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
-      lang = 'en';
+    // De taal van de pagina: eerst wat de layout meegeeft, anders het lang-attribuut
+    if (window.__paToolLang === 'nl' || window.__paToolLang === 'en') {
+      lang = window.__paToolLang;
+    } else {
+      var htmlLang = document.documentElement.getAttribute('lang');
+      if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
+        lang = 'nl';
+      } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
+        lang = 'en';
+      }
     }
 
     renderAll();
