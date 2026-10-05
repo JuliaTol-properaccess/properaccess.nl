@@ -11,14 +11,12 @@
   // Translations — UI strings
   // ============================================================
 
+  // Alleen de teksten die dit script zelf opbouwt. De teksten die ook in de HTML van
+  // de pagina staan, komen uit data/tools/foutmeldingen.json en zet de layout in
+  // window.__paToolI18n. Zo staat elke tekst maar op een plaats.
   var LANG = {
     nl: {
       toolTitle: "Foutmeldingen naslagwerk",
-      intro: "Goede foutmeldingen helpen gebruikers om fouten in formulieren te begrijpen en te herstellen. Dit naslagwerk toont per veldtype voorbeelden van duidelijke foutmeldingen, gebaseerd op <a href=\"/blog/sc-3-3-1-wat-betekent-foutidentificatie/\">SC&nbsp;3.3.1 Foutidentificatie</a> en <a href=\"/blog/sc-3-3-3-wat-betekent-foutsuggestie/\">SC&nbsp;3.3.3 Foutsuggestie</a>.",
-      searchLabel: "Zoek op veldtype",
-      searchPlaceholder: "Zoek bijv. \"e-mail\", \"wachtwoord\", \"datum\"...",
-      filterAriaLabel: "Filter op categorie",
-      resultsAriaLabel: "Resultaten",
       filterAll: "Alle",
       countSg: "1 veldtype gevonden",
       countPl: "{0} veldtypen gevonden",
@@ -28,23 +26,10 @@
       labelGood: "\u2713 Goed",
       scBad: "Voldoet niet aan SC 3.3.1",
       scOk: "Voldoet aan SC 3.3.1",
-      scGood: "Voldoet aan SC 3.3.1 + 3.3.3",
-      principlesTitle: "De regels volgens WCAG",
-      principle331dt: "<strong>SC 3.3.1</strong> Foutidentificatie <span class=\"tool-fout__level\">Niveau A</span>",
-      principle331dd: "Als er een invoerfout wordt ontdekt, wordt het onderdeel met de fout aan de gebruiker getoond en wordt de fout in tekst beschreven.",
-      principle333dt: "<strong>SC 3.3.3</strong> Foutsuggestie <span class=\"tool-fout__level\">Niveau AA</span>",
-      principle333dd: "Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond \u2014 tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.",
-      ctaLine1: "Wil je weten of de foutmeldingen op jouw website voldoen aan de WCAG-richtlijnen?",
-      ctaLine2: "<a href=\"/contact/\">Vraag een audit aan</a> of bel <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
-      langLabel: "NL EN, switch to English"
+      scGood: "Voldoet aan SC 3.3.1 + 3.3.3"
     },
     en: {
       toolTitle: "Error messages reference",
-      intro: "Good error messages help users understand and fix form errors. This reference shows examples of clear error messages per field type, based on <a href=\"/blog/sc-3-3-1-wat-betekent-foutidentificatie/\">SC&nbsp;3.3.1 Error Identification</a> and <a href=\"/blog/sc-3-3-3-wat-betekent-foutsuggestie/\">SC&nbsp;3.3.3 Error Suggestion</a>.",
-      searchLabel: "Search by field type",
-      searchPlaceholder: "Search e.g. \"email\", \"password\", \"date\"...",
-      filterAriaLabel: "Filter by category",
-      resultsAriaLabel: "Results",
       filterAll: "All",
       countSg: "1 field type found",
       countPl: "{0} field types found",
@@ -54,15 +39,7 @@
       labelGood: "\u2713 Good",
       scBad: "Does not meet SC 3.3.1",
       scOk: "Meets SC 3.3.1",
-      scGood: "Meets SC 3.3.1 + 3.3.3",
-      principlesTitle: "The rules according to WCAG",
-      principle331dt: "<strong>SC 3.3.1</strong> Error Identification <span class=\"tool-fout__level\">Level A</span>",
-      principle331dd: "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
-      principle333dt: "<strong>SC 3.3.3</strong> Error Suggestion <span class=\"tool-fout__level\">Level AA</span>",
-      principle333dd: "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user \u2014 unless it would jeopardize the security or purpose of the content.",
-      ctaLine1: "Want to know if the error messages on your website comply with WCAG guidelines?",
-      ctaLine2: "<a href=\"/contact/\">Request an audit</a> or call <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
-      langLabel: "NL EN, schakel naar Nederlands"
+      scGood: "Meets SC 3.3.1 + 3.3.3"
     }
   };
 
@@ -722,11 +699,17 @@
   // i18n helpers
   // ============================================================
 
+  var pageLang = (document.documentElement.getAttribute("lang") || "nl").slice(0, 2);
   var currentLang = (window.__paToolLang === "en") ? "en" : "nl";
   try { var stored = localStorage.getItem("pa-tool-lang"); if (stored && !window.__paToolLang) currentLang = stored; } catch (e) { /* private browsing */ }
 
+  // De teksten die ook in de HTML staan, komen uit data/tools/foutmeldingen.json.
+  var PAGE = window.__paToolI18n || {};
+
   function t(key) {
-    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
+    if (PAGE[currentLang] && PAGE[currentLang][key]) return PAGE[currentLang][key];
+    if (LANG[currentLang] && LANG[currentLang][key]) return LANG[currentLang][key];
+    return (PAGE.nl && PAGE.nl[key]) || LANG.nl[key] || key;
   }
 
   function tf(key) {
@@ -763,10 +746,10 @@
     for (var l = 0; l < ariaEls.length; l++) {
       ariaEls[l].setAttribute("aria-label", t(ariaEls[l].getAttribute("data-i18n-aria")));
     }
-    // Set lang attribute on tool container for screen readers
+    // Zet lang op de tool zodra die afwijkt van de taal van de pagina (WCAG 3.1.2)
     var container = document.querySelector(".tool-container");
     if (container) {
-      if (currentLang === "nl") {
+      if (currentLang === pageLang) {
         container.removeAttribute("lang");
       } else {
         container.setAttribute("lang", currentLang);

@@ -1,11 +1,11 @@
 ---
 title: "Passenger transport: the EAA and the ILT"
-meta_title: "How the ILT supervises digital accessibility in passenger transport under the EAA | Proper Access"
+meta_title: "ILT and the EAA for passenger transport | Proper Access"
 date: 2026-09-10
 slug: "eaa-ilt-passenger-transport"
 layout: "service-en"
 llms_group: "sectors"
-description: "The Dutch Human Environment and Transport Inspectorate (ILT) supervises the digital accessibility of passenger transport by air, bus, rail and water under the European Accessibility Act: websites, apps, e-tickets and travel information. What is covered and how we audit it."
+description: "The ILT supervises the accessibility of passenger transport by air, bus, rail and water under the European Accessibility Act: sites, apps and e-tickets."
 keywords:
   - ILT accessibility
   - ILT European Accessibility Act

@@ -10,6 +10,7 @@ tags:
   - "webdeveloper"
   - "semantiek"
 description: "ARIA verandert wat hulpsoftware voorleest, niet wat een element doet. Welke rollen en attributen je nodig hebt, de vier fouten die wij het vaakst vinden, en hoe je het test."
+meta_description: "ARIA verandert wat hulpsoftware voorleest, niet wat een element doet. Welke rollen je nodig hebt, de vier fouten die wij het vaakst vinden, en hoe je test."
 keywords:
   - ARIA rollen
   - aria attributen

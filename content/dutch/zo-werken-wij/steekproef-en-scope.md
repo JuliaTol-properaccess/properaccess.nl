@@ -8,7 +8,7 @@ date: 2026-05-30
 slug: "steekproef-en-scope"
 url: "/zo-werken-wij/steekproef-en-scope/"
 weight: 1
-description: "Voordat we testen, leggen we vast wat we testen. Welk type audit, welke pagina's en flows, en welke deadline we halen. Per mail, zonder verplicht kennismakingsgesprek."
+description: "Voordat we testen, leggen we vast wat we testen: welk type audit, welke pagina's en flows, en welke deadline. Per mail, zonder verplicht gesprek."
 keywords:
   - scope wcag audit
   - steekproef wcag

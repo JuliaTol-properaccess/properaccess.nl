@@ -19,7 +19,7 @@ keywords:
   - "EAA compliance webshop"
 image: "/images/blog/webshop-wireframe-eaa.svg"
 meta_title: "EAA-checklist 2026 voor webshops, 30 punten | Proper Access"
-meta_description: "Volledige 30-punten EAA-checklist voor webshops. Praktisch, per onderdeel van je site. Wat moet er kloppen om aan WCAG 2.1 AA en de European Accessibility Act te voldoen."
+meta_description: "EAA-checklist met 30 punten voor webshops, per onderdeel van je site. Wat moet kloppen om aan WCAG 2.1 AA en de European Accessibility Act te voldoen."
 ---
 
 Sinds 28 juni 2025 moet je webshop voldoen aan de [European Accessibility Act](/eaa/). Twijfel je nog of de wet voor jou geldt, dan staat dat op die pagina. Dit artikel slaat dat over en beantwoordt de vervolgvraag: _waar moet ik concreet op letten?_

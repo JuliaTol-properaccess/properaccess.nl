@@ -13,6 +13,7 @@ tags:
   - "excel"
   - "screenreader"
 description: "Google Sheets kan geen semantische tabelkoppen. Dat is een echte beperking, maar er valt veel aan te doen. Een handleiding voor koppen, lege cellen, kleur, samengevoegde cellen en de export naar Excel."
+meta_description: "Google Sheets kan geen semantische tabelkoppen. Wat je wel kunt doen met koppen, lege cellen, kleur, samengevoegde cellen en de export naar Excel."
 keywords:
   - toegankelijke spreadsheet
   - google sheets toegankelijkheid

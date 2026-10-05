@@ -13,6 +13,7 @@ tags:
   - "handhaving"
   - "wcag-em"
 description: "Op de Dag van Digitale Toegankelijkheid vertelde Caitlin de Rooij van de ACM hoe een toezichthouder de European Accessibility Act aanpakt. Wat doet een toezichthouder eigenlijk, en wat betekent dat voor jouw webshop?"
+meta_description: "Caitlin de Rooij van de ACM vertelde hoe een toezichthouder de European Accessibility Act aanpakt. Wat dat betekent voor jouw webshop."
 keywords:
   - "acm european accessibility act"
   - "toezichthouder eaa nederland"

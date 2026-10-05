@@ -11,6 +11,7 @@ tags:
   - "audit"
   - "tools"
 description: "Welke tool vindt wat, en vooral: wat vindt geen enkele tool? Overzicht van scanners, contrasttools, schermlezers en bookmarklets, met per categorie wat er buiten beeld blijft."
+meta_description: "Welke tool vindt wat, en vooral: wat vindt geen enkele tool? Scanners, contrasttools, schermlezers en bookmarklets, en wat er buiten beeld blijft."
 keywords:
   - WCAG tools
   - toegankelijkheid testen tool

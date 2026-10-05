@@ -6,6 +6,9 @@ type: intake
 layout: single
 robots: "noindex, nofollow"
 sitemap_exclude: true
+build:
+  list: never
+  render: true
 ---
 
 Je opdracht staat klaar. Vul dit formulier in zodat we het onderzoek kunnen inplannen en meteen goed van start gaan. Zie je later dat er iets mist of verandert? Mail ons gerust, dan passen we het aan.

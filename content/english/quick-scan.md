@@ -1,13 +1,15 @@
 ---
 title: "Mini audit"
-meta_title: "Accessibility mini audit (€495) — a senior auditor, not a tool | Proper Access"
+meta_title: "Accessibility mini audit, €495 | Proper Access"
 date: 2026-05-31
 slug: "mini-audit"
 url: "/en/mini-audit/"
 aliases:
   - /en/quick-scan/
 layout: "service-en"
-description: "A manual mini audit of your website or app by a senior accessibility auditor. Up to five hours of hands-on review of technical, design and content issues, with advice and a project estimate. €495 excl. VAT, report within five working days."
+description: "A senior auditor checks your website or app by hand for up to five hours and tells you where you stand. €495 excl. VAT, report in five working days."
+tldr: |
+  A mini audit is a manual check of your website or app by a senior accessibility auditor, up to five hours of work, for 495 euro excluding VAT. You get a report within five working days with the technical, design and content problems we found, advice on how to fix them, and an estimate of what a full audit and the repair work would take. An automated scan recognises about 30% of the WCAG success criteria, and that figure is an estimate from the field rather than a measurement of ours. The rest only surfaces when someone tests with a screen reader, with the keyboard alone and with zoom, which is what happens here.
 keywords:
   - accessibility mini audit
   - manual accessibility check
