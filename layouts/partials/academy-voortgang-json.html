@@ -1,0 +1,8 @@
+{{/* De gegevens uit academy-voortgang-data.html als JSON in de pagina, zodat
+     static/js/academy-voortgang.js weet welke lessen open staan en hoeveel
+     quizvragen daarin zitten. Roep aan met die partial als context. */}}
+{{/* safeJS is nodig: zonder dat zet Hugo de JSON als één tekenreeks in de
+     pagina ("{\"lessen\":...") en vindt JSON.parse een string in plaats van een
+     object. jsonify escapet < > en & zelf naar < en dergelijke, dus er kan
+     geen tag uit een lestitel ontsnappen. */}}
+<script type="application/json" id="academyVoortgangData">{{ . | jsonify | safeJS }}</script>

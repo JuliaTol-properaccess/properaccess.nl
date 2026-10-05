@@ -1,0 +1,50 @@
+{{/* Gegevens voor de voortgang in de Academy.
+
+     Levert de lijst met open lessen (niet vergrendeld, in de leesvolgorde) plus
+     het aantal quizzen en quizvragen daarin. static/js/academy-voortgang.js
+     rekent daarmee de tegels, de voortgangsbalk en de punten uit, zodat de
+     JavaScript niet hoeft te raden welke lessen bestaan.
+
+     De quizzen worden geteld in de gerenderde les, want een quiz staat als
+     losse HTML in de Markdown en niet in de front matter. De sleutel
+     `quizzes:` in de front matter van een sectie telt vragen, geen quizzen.
+
+     Roep dit aan met partialCached en een vaste sleutel: de uitkomst is voor
+     elke pagina in de Academy hetzelfde. */}}
+{{ $root := site.GetPage "/academy" }}
+{{ $lessen := slice }}
+{{ $lessenTotaal := 0 }}
+{{ $quizzen := 0 }}
+{{ $vragen := 0 }}
+
+{{ if $root }}
+  {{ range sort $root.Sections "Params.section_number" }}
+    {{ $sectie := . }}
+    {{ range sort $sectie.RegularPages "Params.chapter_number" }}
+      {{ $lessenTotaal = add $lessenTotaal 1 }}
+      {{ if not (or .Params.locked $sectie.Params.locked) }}
+        {{ $q := len (findRE `class="academy-quiz"` .Content) }}
+        {{ $v := len (findRE `academy-quiz__question` .Content) }}
+        {{ $quizzen = add $quizzen $q }}
+        {{ $vragen = add $vragen $v }}
+        {{ $lessen = $lessen | append (dict
+          "pad" .RelPermalink
+          "titel" .Title
+          "quizzen" $q
+          "vragen" $v) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* De puntentelling staat hier, zodat het template en de JavaScript dezelfde
+     waarden gebruiken: 10 punten voor een afgeronde les, 1 punt voor een goed
+     quizantwoord. Wil Julia andere punten, dan is dit de enige plek. */}}
+{{ return (dict
+  "lessen" $lessen
+  "lessenOpen" (len $lessen)
+  "lessenTotaal" $lessenTotaal
+  "quizzen" $quizzen
+  "vragen" $vragen
+  "puntenPerLes" 10
+  "puntenPerAntwoord" 1) }}

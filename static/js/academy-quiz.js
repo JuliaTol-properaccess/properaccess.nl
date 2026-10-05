@@ -1,6 +1,12 @@
 /**
- * Academy Quiz — Proper Access
- * Handles multiple-choice quizzes in Academy lesson pages.
+ * Academy Quiz - Proper Access
+ *
+ * Verwerkt de meerkeuzevragen in de lessen van de Academy.
+ *
+ * De gegeven antwoorden gaan naar localStorage via academy-voortgang.js, zodat
+ * ze na een verversing of een later bezoek nog staan. Dit bestand laadt dus na
+ * academy-voortgang.js; zonder dat bestand werkt de quiz wel, maar dan vergeet
+ * hij de antwoorden zodra de pagina sluit.
  */
 (function () {
   "use strict";
@@ -9,87 +15,121 @@
   if (!quiz) return;
 
   var questions = quiz.querySelectorAll(".academy-quiz__question");
+  var voortgang = window.academyVoortgang || null;
 
-  questions.forEach(function (q) {
+  // Eén sleutel per quiz: het pad van de les plus het id van het quizblok.
+  var sleutel = window.location.pathname + "#" + (quiz.id || "quiz");
+  var bewaard = voortgang ? voortgang.leesQuiz(sleutel) : null;
+  var antwoorden = bewaard && bewaard.antwoorden ? bewaard.antwoorden : {};
+
+  function vraagNummer(q, index) {
+    return q.getAttribute("data-question") || String(index + 1);
+  }
+
+  function goedAntwoord(q) {
     var feedbackWrap = q.querySelector(".academy-quiz__feedback");
-    var correctAnswer = feedbackWrap ? feedbackWrap.getAttribute("data-correct") : null;
+    return feedbackWrap ? feedbackWrap.getAttribute("data-correct") : null;
+  }
+
+  // Zet de vraag in de stand "beantwoord": opties op slot, het goede antwoord
+  // gemarkeerd en de uitleg open.
+  function toonUitslag(q, gekozen) {
+    var correctAnswer = goedAntwoord(q);
     var options = q.querySelectorAll(".academy-quiz__option");
-    var radios = q.querySelectorAll('input[type="radio"]');
-    var answered = false;
+    var isCorrect = gekozen === correctAnswer;
+    var selectedOption = null;
 
-    radios.forEach(function (radio) {
-      radio.addEventListener("change", function () {
-        if (answered) return;
-        answered = true;
-
-        var selected = radio.value;
-        var isCorrect = selected === correctAnswer;
-
-        // Disable all options
-        options.forEach(function (opt) {
-          opt.classList.add("academy-quiz__option--disabled");
-          var r = opt.querySelector('input[type="radio"]');
-          if (r) r.disabled = true;
-
-          // Highlight the correct answer
-          if (r && r.value === correctAnswer) {
-            opt.classList.add("academy-quiz__option--correct-answer");
-          }
-        });
-
-        // Highlight the selected option
-        var selectedOption = radio.closest(".academy-quiz__option");
-        if (isCorrect) {
-          selectedOption.classList.add("academy-quiz__option--selected-correct");
-        } else {
-          selectedOption.classList.add("academy-quiz__option--selected-incorrect");
+    options.forEach(function (opt) {
+      opt.classList.add("academy-quiz__option--disabled");
+      var r = opt.querySelector('input[type="radio"]');
+      if (r) {
+        r.disabled = true;
+        if (r.value === correctAnswer) {
+          opt.classList.add("academy-quiz__option--correct-answer");
         }
-
-        // Show feedback
-        if (feedbackWrap) {
-          feedbackWrap.hidden = false;
-          var correctFeedback = feedbackWrap.querySelector(".academy-quiz__feedback--correct");
-          var incorrectFeedback = feedbackWrap.querySelector(".academy-quiz__feedback--incorrect");
-
-          if (isCorrect && correctFeedback) {
-            correctFeedback.hidden = false;
-          } else if (!isCorrect && incorrectFeedback) {
-            incorrectFeedback.hidden = false;
-          }
-        }
-
-        // Check if all questions answered, show score
-        checkAllAnswered();
-      });
-    });
-  });
-
-  function checkAllAnswered() {
-    var total = questions.length;
-    var answeredCount = 0;
-    var correctCount = 0;
-
-    questions.forEach(function (q) {
-      var selected = q.querySelector('input[type="radio"]:checked');
-      if (selected) {
-        answeredCount++;
-        var feedbackWrap = q.querySelector(".academy-quiz__feedback");
-        var correctAnswer = feedbackWrap ? feedbackWrap.getAttribute("data-correct") : null;
-        if (selected.value === correctAnswer) {
-          correctCount++;
+        if (r.value === gekozen) {
+          r.checked = true;
+          selectedOption = opt;
         }
       }
     });
 
-    if (answeredCount === total) {
-      var existing = quiz.querySelector(".academy-quiz__score");
-      if (existing) return;
+    if (selectedOption) {
+      selectedOption.classList.add(
+        isCorrect ? "academy-quiz__option--selected-correct" : "academy-quiz__option--selected-incorrect"
+      );
+    }
 
-      var scoreDiv = document.createElement("div");
-      scoreDiv.className = "academy-quiz__score";
-      scoreDiv.setAttribute("role", "status");
-      scoreDiv.innerHTML = "Je score: <strong>" + correctCount + " van " + total + "</strong> goed";
-      quiz.appendChild(scoreDiv);
+    var feedbackWrap = q.querySelector(".academy-quiz__feedback");
+    if (feedbackWrap) {
+      feedbackWrap.hidden = false;
+      var correctFeedback = feedbackWrap.querySelector(".academy-quiz__feedback--correct");
+      var incorrectFeedback = feedbackWrap.querySelector(".academy-quiz__feedback--incorrect");
+
+      if (isCorrect && correctFeedback) {
+        correctFeedback.hidden = false;
+      } else if (!isCorrect && incorrectFeedback) {
+        incorrectFeedback.hidden = false;
+      }
     }
   }
+
+  function telling() {
+    var total = questions.length;
+    var answeredCount = 0;
+    var correctCount = 0;
+
+    questions.forEach(function (q, index) {
+      var gekozen = antwoorden[vraagNummer(q, index)];
+      if (!gekozen) return;
+      answeredCount++;
+      if (gekozen === goedAntwoord(q)) correctCount++;
+    });
+
+    return { totaal: total, beantwoord: answeredCount, goed: correctCount };
+  }
+
+  function toonScore() {
+    var t = telling();
+    if (t.beantwoord !== t.totaal) return;
+    if (quiz.querySelector(".academy-quiz__score")) return;
+
+    var scoreDiv = document.createElement("div");
+    scoreDiv.className = "academy-quiz__score";
+    scoreDiv.setAttribute("role", "status");
+    scoreDiv.innerHTML = "Je score: <strong>" + t.goed + " van " + t.totaal + "</strong> goed";
+    quiz.appendChild(scoreDiv);
+  }
+
+  questions.forEach(function (q, index) {
+    var nummer = vraagNummer(q, index);
+    var radios = q.querySelectorAll('input[type="radio"]');
+
+    radios.forEach(function (radio) {
+      radio.addEventListener("change", function () {
+        if (antwoorden[nummer]) return;
+
+        antwoorden[nummer] = radio.value;
+        toonUitslag(q, radio.value);
+
+        if (voortgang) {
+          var t = telling();
+          voortgang.bewaarQuiz(sleutel, antwoorden, t.goed, t.totaal);
+        }
+
+        toonScore();
+      });
+    });
+  });
+
+  // De antwoorden van een vorige keer terugzetten. Dat gebeurt zonder animatie
+  // en zonder iets op te slaan: de stand staat er al.
+  var terug = false;
+  questions.forEach(function (q, index) {
+    var gekozen = antwoorden[vraagNummer(q, index)];
+    if (!gekozen) return;
+    toonUitslag(q, gekozen);
+    terug = true;
+  });
+  if (terug) toonScore();
 })();

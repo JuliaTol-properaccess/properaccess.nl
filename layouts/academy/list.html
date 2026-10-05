@@ -7,16 +7,19 @@
 {{/* Collect all sections with their chapters for the sidebar + stats,
      always sourced from the Academy root so it works on section pages too. */}}
 {{ $sections := slice }}
-{{ $totalChapters := 0 }}
-{{ $totalQuizzes := 0 }}
-{{ $totalMinutes := 0 }}
+
+{{/* Open lessen, quizzen en quizvragen voor de voortgang. Zie
+     layouts/partials/academy-voortgang-data.html. De tellingen die hier eerder
+     stonden ($totalChapters, $totalQuizzes, $totalMinutes) waren alleen voor de
+     tegels en zijn vervangen door deze partial: zij telde de vergrendelde
+     hoofdstukken mee en nam `quizzes:` uit de front matter voor een aantal
+     quizzen, terwijl dat de quizvragen zijn. */}}
+{{ $voortgang := partialCached "academy-voortgang-data.html" . "academy" }}
+{{ $puntenMax := add (mul $voortgang.puntenPerLes $voortgang.lessenOpen) (mul $voortgang.puntenPerAntwoord $voortgang.vragen) }}
 {{ range sort $academyRoot.Sections "Params.section_number" }}
   {{ $section := . }}
   {{ $chapters := $section.RegularPages }}
   {{ $sections = $sections | append (dict "section" $section "chapters" $chapters) }}
-  {{ $totalChapters = add $totalChapters (len $chapters) }}
-  {{ $totalQuizzes = add $totalQuizzes ($section.Params.quizzes | default 0) }}
-  {{ $totalMinutes = add $totalMinutes ($section.Params.duration_minutes | default 0) }}
 {{ end }}
 
 <div class="academy" id="academy">
@@ -44,6 +47,7 @@
         ← Alle secties
       </a>
       {{ end }}
+      {{ partial "academy-voortgangsbalk.html" . }}
       <p class="academy__sidebar-label">Inhoudsopgave</p>
 
       {{ range $i, $item := $sections }}
@@ -136,15 +140,18 @@
     {{ else }}
       {{/* ---- Academy root: stats + hero + section cards ---- */}}
 
-      {{/* Stats bar */}}
-      <div class="academy__stats">
+      {{/* Stats bar. De waarden staan hier op de beginstand en worden door
+           static/js/academy-voortgang.js vervangen door de voortgang uit
+           localStorage. De noemers gaan over de lessen die open staan, niet
+           over de vergrendelde hoofdstukken: daar valt niets af te ronden. */}}
+      <div class="academy__stats" id="academyStats">
         <div class="academy__stat">
           <svg class="academy__stat-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
           </svg>
           <div class="academy__stat-data">
-            <span class="academy__stat-value">0/{{ $totalChapters }}</span>
+            <span class="academy__stat-value" id="academyStatHoofdstukken">0/{{ $voortgang.lessenOpen }}</span>
             <span class="academy__stat-label">Hoofdstukken</span>
           </div>
         </div>
@@ -153,7 +160,7 @@
             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
           </svg>
           <div class="academy__stat-data">
-            <span class="academy__stat-value">0 dagen</span>
+            <span class="academy__stat-value" id="academyStatReeks">0 dagen</span>
             <span class="academy__stat-label">Learning streak</span>
           </div>
         </div>
@@ -163,7 +170,7 @@
             <path d="M9 12l2 2 4-4"/>
           </svg>
           <div class="academy__stat-data">
-            <span class="academy__stat-value">0/{{ $totalQuizzes }}</span>
+            <span class="academy__stat-value" id="academyStatQuizzen">0/{{ $voortgang.quizzen }}</span>
             <span class="academy__stat-label">Quizzes gemaakt</span>
           </div>
         </div>
@@ -172,10 +179,22 @@
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
           </svg>
           <div class="academy__stat-data">
-            <span class="academy__stat-value">0/350</span>
+            <span class="academy__stat-value" id="academyStatPunten">0/{{ $puntenMax }}</span>
             <span class="academy__stat-label">Punten verdiend</span>
           </div>
         </div>
+      </div>
+
+      {{/* Verder waar je was. Staat op hidden tot de JavaScript een les uit
+           localStorage heeft. */}}
+      <div class="academy__verder" id="academyVerder" hidden>
+        <p class="academy__verder-label">Verder waar je was</p>
+        <a href="{{ "/academy/" | relLangURL }}" class="academy__verder-link" id="academyVerderLink">
+          <span id="academyVerderTitel"></span>
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
       </div>
 
       {{/* Hero */}}
@@ -248,5 +267,8 @@
   </main>
 </div>
 
+{{ partial "academy-voortgang-json.html" $voortgang }}
+
 <script src="{{ "js/academy.js" | relURL }}" defer></script>
+<script src="{{ "js/academy-voortgang.js" | relURL }}" defer></script>
 {{ end }}
