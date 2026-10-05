@@ -410,23 +410,7 @@
 
 
 <!-- ─── FAQ ─── -->
-{{ with .Params.faqs }}
-<section class="hp-faq">
-  <div class="hp-container">
-    <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
-    <div class="hp-faq__container faq-container">
-      {{ range . }}
-        <details class="faq-item">
-          <summary class="faq-question">{{ .question }}</summary>
-          <div class="faq-answer">
-            <p>{{ .answer | markdownify }}</p>
-          </div>
-        </details>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ partial "faq-blok.html" (dict "page" .) }}
 
 
 <!-- ─── CTA ─── -->

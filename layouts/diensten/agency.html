@@ -69,39 +69,7 @@
 </article>
 
 <!-- ─── FAQ ─── -->
-<!-- Deze layout toonde het faqs-veld niet, terwijl json-ld.html er wel FAQPage-schema
-     van maakte. Daarmee stond er gestructureerde data op de pagina die een bezoeker
-     nergens kon lezen, en dat is precies wat Google's richtlijn voor FAQ-schema
-     verbiedt. Zelfde blok als in layouts/diensten/audit.html. Pagina's zonder faqs
-     in de front matter renderen niets. -->
-{{ with .Params.faqs }}
-{{/* faq_style: "flat" in de front matter zet de FAQ op wit met hairlines in
-     plaats van de donkerblauwe standaardvariant. faq_title vervangt dan de
-     standaardkop, faq_eyebrow zet er een label boven. */}}
-{{ $flat := eq $.Params.faq_style "flat" }}
-<section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}">
-  <div class="hp-container">
-    {{ if $flat }}
-    <div class="hp-faq__header">
-      {{ with $.Params.faq_eyebrow }}<p class="hp-faq__eyebrow">{{ . }}</p>{{ end }}
-      <h2 class="hp-heading-lg hp-faq__title">{{ $.Params.faq_title | default "Veelgestelde vragen" }}</h2>
-    </div>
-    {{ else }}
-    <h2 class="hp-heading-lg hp-faq__title">Veelgestelde vragen</h2>
-    {{ end }}
-    <div class="hp-faq__container faq-container">
-      {{ range . }}
-        <details class="faq-item">
-          <summary class="faq-question">{{ .question }}</summary>
-          <div class="faq-answer">
-            <p>{{ .answer | markdownify }}</p>
-          </div>
-        </details>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ partial "faq-blok.html" (dict "page" .) }}
 
 <!-- ─── STATS ─── -->
 {{ partial "voor-wie/stats-bar.html" . }}

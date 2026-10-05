@@ -115,16 +115,11 @@
   </article>
   {{ end }}
 
-  {{/* Geen FAQ-blok, met opzet. Deze layout rendert .Params.faqs niet, terwijl
-  layouts/partials/json-ld.html er wel FAQPage-schema van maakt. Zet je faqs: op een
-  pagina met deze layout, zorg dan dat dezelfde vragen en antwoorden woordelijk in de
-  content staan. Anders staat er gestructureerde data die een bezoeker nergens kan
-  lezen, en dat verbiedt de richtlijn van Google voor FAQ-schema. Zo werkt
-  /auditbureau-kiezen/: de zeven vragen staan in een details-blok in de markdown. Ga je
-  faqs: hier alsnog renderen, haal die zichtbare tekst dan eerst weg, want anders staan
-  de vragen twee keer op de pagina. Dezelfde afweging staat in
-  layouts/diensten/agency.html. layouts/voor_wie/sectie.html rendert faqs: wel en
-  bedient de pagina's onder voor_wie. */}}
+  <!-- FAQ -->
+  {{/* De container is hier "container" en niet "hp-container", want de rest van deze
+       layout gebruikt die ook; hp-container heeft geen binnenmarge op smalle schermen. */}}
+  {{ partial "faq-blok.html" (dict "page" . "container" "container") }}
+  <!-- /FAQ -->
 
   <!-- Call to actions -->
   {{ partial "call-to-action.html" . }}
