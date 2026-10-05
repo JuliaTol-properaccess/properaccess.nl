@@ -1,0 +1,111 @@
+# Proper Access
+
+> Independent audit bureau for digital accessibility, based in Amsterdam, the Netherlands.
+> We audit websites and apps against WCAG 2.2 level AA and EN 301 549, using the WCAG-EM
+> methodology, and we guide organisations towards compliance with the European Accessibility
+> Act (EAA) and the Dutch government decree on digital accessibility (BDTO). We do not build
+> or maintain websites ourselves, so we never audit our own work. A team of 10, IAAP
+> WAS-certified, more than 950 audits since 2019. Reporting in English or Dutch.
+
+This is the English section of properaccess.nl. The Dutch section is larger and has its own
+index at [properaccess.nl/llms.txt](https://www.properaccess.nl/llms.txt).
+
+## Audits
+
+- [Accessibility audit](https://www.properaccess.nl/en/accessibility-audit/): full audit of a website against WCAG 2.2 level AA and EN 301 549, reported per element, with screenshots and code examples. Three to five weeks from start to delivery
+- [App accessibility audit](https://www.properaccess.nl/en/app-accessibility-audit/): manual audit of an iOS or Android app on real devices with VoiceOver and TalkBack, against WCAG 2.2 and EN 301 549. €2,150 per platform excluding VAT, a separate report per platform, no source code needed
+- [Mini audit](https://www.properaccess.nl/en/mini-audit/): up to five hours of manual review by a senior auditor of technical, design and content issues, with advice and a project estimate. €495 excluding VAT, report within five working days
+
+## Legislation and regulators
+
+- [The European Accessibility Act in the Netherlands](https://www.properaccess.nl/en/european-accessibility-act/): what the EAA requires from companies serving consumers in the Netherlands, which standard applies, which of the six Dutch regulators supervises you, and what to do first
+- [Webshops and online services: the EAA and the ACM](https://www.properaccess.nl/en/eaa-acm-e-commerce/): what the Netherlands Authority for Consumers and Markets checks in webshops, apps and electronic communication services, what you must report and by when
+- [Banks, insurers and other financial firms: the EAA and the AFM](https://www.properaccess.nl/en/eaa-afm-financial-services/): what the Dutch Authority for the Financial Markets expects from consumer banking and financial e-commerce services, how to report non-compliance in the AFM Portal, and what its 2026 compliance investigation looks at
+- [Passenger transport: the EAA and the ILT](https://www.properaccess.nl/en/eaa-ilt-passenger-transport/): what the Dutch Human Environment and Transport Inspectorate supervises in air, bus, rail and water transport: websites, apps, e-tickets and travel information
+- [Software suppliers to the Dutch government](https://www.properaccess.nl/en/software-suppliers-dutch-government/): what Dutch government customers ask a supplier for, what the Register of Accessibility Statements requires, and how an audit of your product gives them the evidence
+
+## Sectors
+
+- [The EAA for e-commerce and e-services](https://www.properaccess.nl/en/e-commerce-digital-accessibility/): the EAA has applied since 28 June 2025. Getting a webshop audited, avoiding complaints and penalties
+
+## Support
+
+- [Accessibility credits](https://www.properaccess.nl/en/accessibility-credits/): buy a bundle of credits and ask a senior auditor a question whenever you need one. One credit is one question on one topic. No audit required
+
+## Free tools
+
+- [WCAG Radar](https://www.properaccess.nl/en/tools/wcag-radar/): bookmarklet and browser extension for Chrome and Firefox, with three tabs (Editors, Designer, Developer) that show live, on the page you are looking at, whether alt text, headings, link text, labels, contrast, use of colour, focus, target size, text spacing, ARIA and tab order hold up. Runs locally in your browser, works behind a login and on localhost. The free version does 28 of the 45 checks, without an account. The tool itself runs on our English tool site [wcagtoolkit.com](https://wcagtoolkit.com)
+- [All tools](https://www.properaccess.nl/en/tools/): the full list
+- [Colour contrast checker](https://www.properaccess.nl/en/tools/colour-contrast-checker/): enter two colours and see whether the combination meets WCAG 2.2 level AA and AAA
+- [PDF accessibility checker](https://www.properaccess.nl/en/tools/pdf-checker/): which accessibility problems are in your PDF. No account, and the file is deleted as soon as the check is done
+- [Alt text decision tree](https://www.properaccess.nl/en/tools/alt-text-decision-tree/): which alt text belongs to which type of image
+- [Error messages reference](https://www.properaccess.nl/en/tools/error-messages/): examples of accessible error messages per form field type
+- [ARIA roles and attributes reference](https://www.properaccess.nl/en/tools/aria-reference/): descriptions, supported attributes, HTML equivalents and code examples
+- [Text spacing check](https://www.properaccess.nl/en/tools/text-spacing-check/): whether your text stays readable when visitors add more space between letters, words and lines
+- [Accessibility quiz for developers](https://www.properaccess.nl/en/tools/quiz-developers/): 20 real-world scenarios with interactive demos and source code
+- [Accessibility quiz for web editors](https://www.properaccess.nl/en/tools/quiz-web-editors/): 20 questions for editors who publish content
+- [Accessibility quiz for museums](https://www.properaccess.nl/en/tools/quiz-museum/): 20 questions for editors in the cultural sector
+
+## About us
+
+- [About Proper Access](https://www.properaccess.nl/en/about-us/): an independent audit firm in Amsterdam. A team of 10, IAAP WAS-certified, more than 950 audits of websites and apps since 2019
+- [Contact](https://www.properaccess.nl/en/contact/): +31 85 5055 890
+
+## Blog
+
+- [Blog](https://www.properaccess.nl/en/blog/): articles about WCAG, the European Accessibility Act and digital accessibility in practice
+
+### Our own research into AI and accessibility testing
+
+- [Can AI test your website for accessibility?](https://www.properaccess.nl/en/blog/can-ai-test-website-for-accessibility/): what language models and vision models do and do not find, and where you still need someone who uses and understands the site
+- [Can AI detect a div pretending to be a button?](https://www.properaccess.nl/en/blog/can-ai-detect-div-as-button/): the same test on a code snippet and on a live website, including dynamically loaded elements
+- [Can AI see that your text is too light?](https://www.properaccess.nl/en/blog/can-ai-see-low-contrast-text/): a vision model against a real screenshot with four low-contrast columns
+
+### Reporting
+
+- [What makes a good accessibility report?](https://www.properaccess.nl/en/blog/what-makes-a-good-accessibility-report/): what to look for in a report, and how a good WCAG report gets you to an accessible website in four steps
+- [Why every finding in our audit reports starts with a user story](https://www.properaccess.nl/en/blog/user-stories-in-accessibility-reports/): what a user story adds over a bare reference to a success criterion
+
+### WCAG success criteria explained
+
+Each article explains one success criterion: what it asks, what goes wrong in practice and
+how to test it.
+
+- [SC 1.1.1 Non-text Content](https://www.properaccess.nl/en/blog/wcag-1-1-1-non-text-content/)
+- [SC 1.3.1 Info and Relationships](https://www.properaccess.nl/en/blog/wcag-1-3-1-info-and-relationships/)
+- [SC 1.3.1 and tables](https://www.properaccess.nl/en/blog/wcag-1-3-1-tables/): the part of 1.3.1 that breaks most often
+- [SC 1.3.2 Meaningful Sequence](https://www.properaccess.nl/en/blog/wcag-1-3-2-meaningful-sequence/)
+- [SC 1.3.3 Sensory Characteristics](https://www.properaccess.nl/en/blog/wcag-1-3-3-sensory-characteristics/)
+- [SC 1.3.5 Identify Input Purpose](https://www.properaccess.nl/en/blog/wcag-1-3-5-identify-input-purpose/)
+- [SC 1.4.1 Use of Colour](https://www.properaccess.nl/en/blog/wcag-1-4-1-use-of-colour/)
+- [SC 1.4.3 Contrast (Minimum)](https://www.properaccess.nl/en/blog/wcag-1-4-3-contrast-minimum/)
+- [SC 1.4.4 Resize Text](https://www.properaccess.nl/en/blog/wcag-1-4-4-resize-text/)
+- [SC 1.4.10 Reflow](https://www.properaccess.nl/en/blog/wcag-1-4-10-reflow/)
+- [SC 1.4.11 Non-text Contrast](https://www.properaccess.nl/en/blog/wcag-1-4-11-non-text-contrast/)
+- [SC 1.4.12 Text Spacing](https://www.properaccess.nl/en/blog/wcag-1-4-12-text-spacing/)
+- [SC 2.1.1 Keyboard](https://www.properaccess.nl/en/blog/wcag-2-1-1-keyboard/)
+- [SC 2.2.2 Pause, Stop, Hide](https://www.properaccess.nl/en/blog/wcag-2-2-2-pause-stop-hide/)
+- [SC 2.4.2 Page Titled](https://www.properaccess.nl/en/blog/wcag-2-4-2-page-titled/)
+- [SC 2.4.3 Focus Order](https://www.properaccess.nl/en/blog/wcag-2-4-3-focus-order/)
+- [SC 2.4.4 Link Purpose (In Context)](https://www.properaccess.nl/en/blog/wcag-2-4-4-link-purpose-in-context/)
+- [SC 2.4.6 Headings and Labels](https://www.properaccess.nl/en/blog/wcag-2-4-6-headings-and-labels/)
+- [SC 2.4.7 Focus Visible](https://www.properaccess.nl/en/blog/wcag-2-4-7-focus-visible/)
+- [SC 2.5.3 Label in Name](https://www.properaccess.nl/en/blog/wcag-2-5-3-label-in-name/)
+- [SC 2.5.8 Target Size (Minimum)](https://www.properaccess.nl/en/blog/wcag-2-5-8-target-size-minimum/)
+- [SC 3.1.1 Language of Page](https://www.properaccess.nl/en/blog/wcag-3-1-1-language-of-page/)
+- [SC 3.1.2 Language of Parts](https://www.properaccess.nl/en/blog/wcag-3-1-2-language-of-parts/)
+- [SC 3.3.1 Error Identification](https://www.properaccess.nl/en/blog/wcag-3-3-1-error-identification/)
+- [SC 3.3.2 Labels or Instructions](https://www.properaccess.nl/en/blog/wcag-3-3-2-labels-or-instructions/)
+- [SC 3.3.8 Accessible Authentication (Minimum)](https://www.properaccess.nl/en/blog/wcag-3-3-8-accessible-authentication/)
+- [SC 4.1.2 Name, Role, Value](https://www.properaccess.nl/en/blog/wcag-4-1-2-name-role-value/)
+- [SC 4.1.3 Status Messages](https://www.properaccess.nl/en/blog/wcag-4-1-3-status-messages/)
+
+### Background
+
+- [ARIA roles and attributes: when you need them and when you do not](https://www.properaccess.nl/en/blog/aria-roles-and-attributes/)
+- [What is an accessible name?](https://www.properaccess.nl/en/blog/what-is-an-accessible-name/)
+
+## Our own tool sites
+
+- [WCAG Toolkit](https://wcagtoolkit.com): our English tool site, with the WCAG Radar and a scan that walks up to ten pages of a public address with axe-core in a real browser
+- [Testtoegankelijkheid.nl](https://testtoegankelijkheid.nl): the same tools in Dutch
