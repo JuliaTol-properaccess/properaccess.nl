@@ -4,6 +4,11 @@
   offerte-form.js kloont dit blok en geeft elk blok een eigen nummer,
   unieke namen en unieke id's.
 
+  Direct zichtbaar staat alleen wat we nodig hebben om te beginnen: wat het is
+  en hoe we eraan komen (de URL, het platform of het aantal documenten). De
+  overige vragen over dit onderzoek staan in een gesloten uitklapblok, zodat
+  wie meer wil opgeven dat nog kan.
+
   Velden dragen data-name en data-id in plaats van name en id: het script
   maakt daar per blok een unieke variant van, zodat radio's van blok 2 niet
   in dezelfde groep vallen als die van blok 1.
@@ -25,16 +30,6 @@
     </label>
     {{ end }}
   </fieldset>
-
-  <!-- Naam, zodat we in de offerte per regel kunnen benoemen waar het over gaat -->
-  <div class="hp-form__field">
-    <label class="hp-form__label" data-for="omschrijving">Naam of omschrijving</label>
-    <p class="offerte-form__help">
-      Handig als je meerdere onderzoeken aanvraagt. Dan zie je in de offerte meteen welke regel bij wat hoort.
-    </p>
-    <input class="hp-form__input" type="text" data-id="omschrijving" data-name="omschrijving"
-           placeholder="Bijvoorbeeld hoofdwebsite, klantportaal of bestel-app" />
-  </div>
 
   <!-- URL: alleen voor iets wat online staat -->
   <div class="hp-form__field offerte-cond"
@@ -74,80 +69,103 @@
            placeholder="Bijvoorbeeld 3 pdf's, samen zo'n 40 pagina's" />
   </div>
 
-  <!-- Type onderzoek: kan per onderzoek verschillen -->
-  <fieldset class="offerte-form__group">
-    <legend class="hp-form__label">Wat voor onderzoek wil je? <span class="offerte-form__req">*</span></legend>
-    {{ range $opt := slice
-        (dict "v" "volledig" "l" "Volledige audit (content én techniek)")
-        (dict "v" "content" "l" "Alleen content")
-        (dict "v" "techniek" "l" "Alleen techniek")
-        (dict "v" "weet-niet" "l" "Weet ik niet, denk met me mee") }}
-    <label class="offerte-form__option">
-      <input type="radio" data-name="type_onderzoek" value="{{ $opt.v }}" data-required />
-      <span>{{ $opt.l }}</span>
-    </label>
-    {{ end }}
-  </fieldset>
+  {{/*
+    Alles wat we ook later kunnen navragen staat hier, in een gesloten blok.
+    Wat erin staat, gaat gewoon mee bij verzenden, ook als het blok weer dicht
+    is: offerte-form.js leest de velden op naam en kijkt alleen naar de
+    offerte-cond-blokken om te bepalen of een veld meetelt.
+  */}}
+  <details class="offerte-form__meer">
+    <summary class="offerte-form__meer-summary">Meer over dit onderzoek (optioneel)</summary>
+    <div class="offerte-form__meer-body">
 
-  <!-- Omvang: niet van toepassing op losse documenten -->
-  <div class="offerte-cond"
-       data-show-when-any="soort=website|soort=webshop|soort=systeem|soort=app" hidden>
+      <!-- Naam, zodat we in de offerte per regel kunnen benoemen waar het over gaat -->
+      <div class="hp-form__field">
+        <label class="hp-form__label" data-for="omschrijving">Naam of omschrijving</label>
+        <p class="offerte-form__help">
+          Handig als je meerdere onderzoeken aanvraagt. Dan zie je in de offerte meteen welke regel bij wat hoort.
+        </p>
+        <input class="hp-form__input" type="text" data-id="omschrijving" data-name="omschrijving"
+               placeholder="Bijvoorbeeld hoofdwebsite, klantportaal of bestel-app" />
+      </div>
 
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Hoeveel verschillende pagina- of schermtypes zijn er?</legend>
-      <p class="offerte-form__help">
-        Denk aan sjablonen: homepage, artikel, formulier, productpagina, overzicht. Niet het totaal aantal pagina's.
-      </p>
-      {{ range $opt := slice
-          (dict "v" "1-5" "l" "1 tot 5")
-          (dict "v" "6-10" "l" "6 tot 10")
-          (dict "v" "11-20" "l" "11 tot 20")
-          (dict "v" "20-plus" "l" "Meer dan 20") }}
-      <label class="offerte-form__option">
-        <input type="radio" data-name="aantal_paginatypes" value="{{ $opt.v }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
+      <!-- Type onderzoek: kan per onderzoek verschillen -->
+      <fieldset class="offerte-form__group">
+        <legend class="hp-form__label">Wat voor onderzoek wil je?</legend>
+        <p class="offerte-form__help">Laat je dit leeg, dan denken we met je mee en zetten we de keuzes in de offerte.</p>
+        {{ range $opt := slice
+            (dict "v" "volledig" "l" "Volledige audit (content én techniek)")
+            (dict "v" "content" "l" "Alleen content")
+            (dict "v" "techniek" "l" "Alleen techniek")
+            (dict "v" "weet-niet" "l" "Weet ik niet, denk met me mee") }}
+        <label class="offerte-form__option">
+          <input type="radio" data-name="type_onderzoek" value="{{ $opt.v }}" />
+          <span>{{ $opt.l }}</span>
+        </label>
+        {{ end }}
+      </fieldset>
 
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Welke functionaliteiten zitten erin?</legend>
-      <p class="offerte-form__help">Vink aan wat van toepassing is. Meer functionaliteit betekent meer om te onderzoeken.</p>
-      {{ range $opt := slice
-          (dict "v" "inlog" "l" "Inlog of account")
-          (dict "v" "webshop" "l" "Webshop of afrekenen")
-          (dict "v" "formulieren" "l" "Formulieren")
-          (dict "v" "zoeken-filteren" "l" "Zoeken of filteren")
-          (dict "v" "widgets" "l" "Interactieve widgets (kalender, configurator)")
-          (dict "v" "video" "l" "Video of mediaspeler")
-          (dict "v" "kaart" "l" "Kaart")
-          (dict "v" "documenten" "l" "Downloads of documenten") }}
-      <label class="offerte-form__option">
-        <input type="checkbox" data-name="functionaliteiten" value="{{ $opt.l }}" />
-        <span>{{ $opt.l }}</span>
-      </label>
-      {{ end }}
-    </fieldset>
-  </div>
+      <!-- Omvang: niet van toepassing op losse documenten -->
+      <div class="offerte-cond"
+           data-show-when-any="soort=website|soort=webshop|soort=systeem|soort=app" hidden>
 
-  <!-- Talen: per onderzoek, want de ene site is meertalig en de andere niet -->
-  <fieldset class="offerte-form__group">
-    <legend class="hp-form__label">Is dit meertalig?</legend>
-    <p class="offerte-form__help">Extra talen betekenen extra pagina's om te onderzoeken.</p>
-    <label class="offerte-form__option">
-      <input type="radio" data-name="meertalig" value="nee" />
-      <span>Nee, één taal</span>
-    </label>
-    <label class="offerte-form__option">
-      <input type="radio" data-name="meertalig" value="ja" />
-      <span>Ja, meerdere talen</span>
-    </label>
-  </fieldset>
-  <div class="hp-form__field offerte-cond" data-show-when="meertalig=ja" hidden>
-    <label class="hp-form__label" data-for="talen">Welke talen?</label>
-    <input class="hp-form__input" type="text" data-id="talen" data-name="talen"
-           placeholder="Bijvoorbeeld Nederlands en Engels" data-required />
-  </div>
+        <fieldset class="offerte-form__group">
+          <legend class="hp-form__label">Hoeveel verschillende pagina- of schermtypes zijn er?</legend>
+          <p class="offerte-form__help">
+            Denk aan sjablonen: homepage, artikel, formulier, productpagina, overzicht. Niet het totaal aantal pagina's.
+          </p>
+          {{ range $opt := slice
+              (dict "v" "1-5" "l" "1 tot 5")
+              (dict "v" "6-10" "l" "6 tot 10")
+              (dict "v" "11-20" "l" "11 tot 20")
+              (dict "v" "20-plus" "l" "Meer dan 20") }}
+          <label class="offerte-form__option">
+            <input type="radio" data-name="aantal_paginatypes" value="{{ $opt.v }}" />
+            <span>{{ $opt.l }}</span>
+          </label>
+          {{ end }}
+        </fieldset>
+
+        <fieldset class="offerte-form__group">
+          <legend class="hp-form__label">Welke functionaliteiten zitten erin?</legend>
+          <p class="offerte-form__help">Vink aan wat van toepassing is. Meer functionaliteit betekent meer om te onderzoeken.</p>
+          {{ range $opt := slice
+              (dict "v" "inlog" "l" "Inlog of account")
+              (dict "v" "webshop" "l" "Webshop of afrekenen")
+              (dict "v" "formulieren" "l" "Formulieren")
+              (dict "v" "zoeken-filteren" "l" "Zoeken of filteren")
+              (dict "v" "widgets" "l" "Interactieve widgets (kalender, configurator)")
+              (dict "v" "video" "l" "Video of mediaspeler")
+              (dict "v" "kaart" "l" "Kaart")
+              (dict "v" "documenten" "l" "Downloads of documenten") }}
+          <label class="offerte-form__option">
+            <input type="checkbox" data-name="functionaliteiten" value="{{ $opt.l }}" />
+            <span>{{ $opt.l }}</span>
+          </label>
+          {{ end }}
+        </fieldset>
+      </div>
+
+      <!-- Talen: per onderzoek, want de ene site is meertalig en de andere niet -->
+      <fieldset class="offerte-form__group">
+        <legend class="hp-form__label">Is dit meertalig?</legend>
+        <p class="offerte-form__help">Extra talen betekenen extra pagina's om te onderzoeken.</p>
+        <label class="offerte-form__option">
+          <input type="radio" data-name="meertalig" value="nee" />
+          <span>Nee, één taal</span>
+        </label>
+        <label class="offerte-form__option">
+          <input type="radio" data-name="meertalig" value="ja" />
+          <span>Ja, meerdere talen</span>
+        </label>
+      </fieldset>
+      <div class="hp-form__field offerte-cond" data-show-when="meertalig=ja" hidden>
+        <label class="hp-form__label" data-for="talen">Welke talen?</label>
+        <input class="hp-form__input" type="text" data-id="talen" data-name="talen"
+               placeholder="Bijvoorbeeld Nederlands en Engels" data-required />
+      </div>
+    </div>
+  </details>
 
   <div class="offerte-item__actions">
     <button type="button" class="offerte-item__remove" data-item-remove hidden>

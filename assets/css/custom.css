@@ -16548,7 +16548,9 @@ html.dark .tool-pdf__upload-btn--focus {
 .offerte-item > .hp-form__field,
 .offerte-item > .hp-form__row,
 .offerte-cond > .hp-form__field,
-.offerte-cond > .hp-form__row {
+.offerte-cond > .hp-form__row,
+.offerte-form__meer-body > .hp-form__field,
+.offerte-form__meer-body > .hp-form__row {
   margin-bottom: 1.5rem;
 }
 .offerte-form__block > *:last-child,
@@ -16604,6 +16606,51 @@ html.dark .tool-pdf__upload-btn--focus {
 }
 .offerte-form .hp-form__input:focus {
   border-color: #A30D4B;
+}
+
+/* ─── Uitklapblok met de vragen die niet direct zichtbaar hoeven ───
+   Het driehoekje van de browser blijft staan: dat is de bekende aanwijzing
+   dat er iets open- en dichtgaat, en <details> regelt aria-expanded zelf. */
+.offerte-form__meer {
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  background: #fafafa;
+  margin: 1.5rem 0 0;
+}
+.offerte-form__meer--aanvraag {
+  margin: 0 0 2.5rem;
+}
+.offerte-form__meer-summary {
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: #004050;
+}
+.offerte-form__meer-summary::marker {
+  color: #A30D4B;
+}
+.offerte-form__meer-summary:hover {
+  text-decoration: underline;
+}
+.offerte-form__meer-summary:focus-visible {
+  outline: 2px solid #004050;
+  outline-offset: -2px;
+}
+.offerte-form__meer-body {
+  padding: 0.25rem 1rem 1.25rem;
+}
+.offerte-form__meer-body > *:last-child {
+  margin-bottom: 0;
+}
+/* Binnen een uitklapblok hoeft de kop van een blok geen scheidslijn meer */
+.offerte-form__meer-body .offerte-form__block {
+  margin-bottom: 2rem;
+}
+.offerte-form__meer-body .offerte-form__legend {
+  font-size: 1.0625rem;
+  padding-bottom: 0.625rem;
+  margin-bottom: 0.875rem;
 }
 
 /* ─── Onderzoeksblokken (meerdere audits in één aanvraag) ─── */

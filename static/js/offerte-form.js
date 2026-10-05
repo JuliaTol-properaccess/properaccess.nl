@@ -9,6 +9,11 @@
  * - Toont en verbergt voorwaardelijke velden per blok.
  * - Beheert het required-attribuut zodat verborgen velden nooit blokkeren.
  * - Vat alle blokken samen in verborgen velden en verstuurt via paFormSubmit.
+ *
+ * De vragen die niet direct zichtbaar hoeven staan in een <details> met de
+ * klasse offerte-form__meer. Zo'n blok verbergt zijn velden wel, maar is geen
+ * offerte-cond: wat erin is ingevuld gaat dus mee bij verzenden, ook als de
+ * bezoeker het blok daarna weer dichtklapt.
  */
 (function () {
   "use strict";
@@ -153,6 +158,18 @@
     return c ? isVisible(c) : true;
   }
 
+  // Een veld in een dichtgeklapt uitklapblok kan de bezoeker niet zien, maar
+  // het bestaat nog: Chrome zet op de inhoud van een gesloten <details>
+  // content-visibility: hidden, en dan is offsetParent niet null. Een melding
+  // over zo'n veld komt dus nergens aan. Klap de blokken eromheen eerst open.
+  function openBlokkenRond(el) {
+    var node = el.parentElement;
+    while (node) {
+      if (node.tagName === "DETAILS") node.open = true;
+      node = node.parentElement;
+    }
+  }
+
   function clearInput(input) {
     if (input.type === "radio" || input.type === "checkbox") {
       if (input.checked) input.checked = false;
@@ -286,6 +303,14 @@
     renumber();
   }
 
+  // form.reset() laat een uitklapblok open staan; na verzenden hoort het dicht.
+  function closeDetails() {
+    var blocks = form.querySelectorAll("details.offerte-form__meer");
+    for (var i = 0; i < blocks.length; i++) {
+      blocks[i].open = false;
+    }
+  }
+
   // ── Verzenden ──
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -295,13 +320,15 @@
     var fields = form.querySelectorAll("input, textarea, select");
     for (var i = 0; i < fields.length; i++) {
       var f = fields[i];
-      if (f.offsetParent === null && f.type !== "hidden") continue; // verborgen: overslaan
+      if (f.type === "hidden") continue; // samenvattingsvelden, daar gelden geen eisen
+      if (!inputVisible(f)) continue; // uitgezet door een eerdere keuze
       if (!f.checkValidity()) {
         invalid = f;
         break;
       }
     }
     if (invalid) {
+      openBlokkenRond(invalid);
       invalid.focus();
       if (invalid.reportValidity) invalid.reportValidity();
       return;
@@ -316,6 +343,7 @@
         "Wil je iets aanvullen? Beantwoord gewoon onze mail.",
       onSuccess: function () {
         resetItems(); // extra onderzoeken weg, eerste blok leeg
+        closeDetails(); // uitklapblokken weer dicht
         update(); // formulier is gereset, voorwaardelijke velden weer dicht
       }
     });
