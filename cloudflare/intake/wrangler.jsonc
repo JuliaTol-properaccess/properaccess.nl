@@ -4,14 +4,15 @@
   "compatibility_date": "2026-06-01",
   "workers_dev": true,
   "vars": {
-    "PROJECT_OWNER": "JuliaTol-properaccess",
-    "PROJECT_NUMBER": "3",
-    "ISSUES_REPO": "JuliaTol-properaccess/audit-planning",
+    "PROJECT_OWNER": "ProperAccessbv",
+    "PROJECT_NUMBER": "1",
+    "ISSUES_REPO": "ProperAccessbv/audit-planning",
     "ASSIGNEE": "JuliaTol-properaccess",
     "ALLOW_ORIGIN": "https://www.properaccess.nl",
     "NOTIFY_EMAIL": "julia@properaccess.nl",
     "FROM_EMAIL": "julia@properaccess.nl",
     "FROM_NAME": "Proper Access"
   }
-  // Secrets (wrangler secret put): GITHUB_TOKEN, AHASEND_API_KEY, AHASEND_ACCOUNT_ID
+  // Secrets (wrangler secret put): GITHUB_APP_ID, GITHUB_APP_KEY (PKCS#8),
+  // AHASEND_API_KEY, AHASEND_ACCOUNT_ID. GITHUB_TOKEN alleen als terugval.
 }
