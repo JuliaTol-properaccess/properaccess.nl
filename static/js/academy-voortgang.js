@@ -345,6 +345,12 @@
   var gegevens = paginaGegevens();
   if (!gegevens) return;
 
+  // Weigert de browser localStorage, dan valt er niets te bewaren. Dan blijven
+  // de balk en de knop "Les afgerond" verborgen, want die zouden een voortgang
+  // beloven die na een verversing weg is. De les en de quiz werken verder
+  // gewoon, alleen zonder geheugen.
+  if (!opslag) return;
+
   var data = lees();
 
   // Het bezoek aan een open les vastleggen: dat is de les waar de cursist de
@@ -377,7 +383,9 @@
 
   /* --- Voor academy-quiz.js -------------------------------------------- */
 
-  window.academyVoortgang = {
+  // De naam begint met pa: een element met een id staat als eigenschap op
+  // window, en window.academyVoortgang is daardoor al de div van de balk.
+  window.paAcademyVoortgang = {
     // Leest de stand van één quiz, zodat het quizscript de antwoorden van de
     // vorige keer kan terugzetten.
     leesQuiz: function (sleutel) {

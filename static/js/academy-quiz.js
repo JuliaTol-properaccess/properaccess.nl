@@ -15,7 +15,10 @@
   if (!quiz) return;
 
   var questions = quiz.querySelectorAll(".academy-quiz__question");
-  var voortgang = window.academyVoortgang || null;
+  // Ontbreekt academy-voortgang.js, of weigert de browser localStorage, dan
+  // werkt de quiz zonder geheugen.
+  var api = window.paAcademyVoortgang;
+  var voortgang = api && typeof api.leesQuiz === "function" && typeof api.bewaarQuiz === "function" ? api : null;
 
   // Eén sleutel per quiz: het pad van de les plus het id van het quizblok.
   var sleutel = window.location.pathname + "#" + (quiz.id || "quiz");

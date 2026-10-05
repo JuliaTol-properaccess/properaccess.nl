@@ -235,7 +235,9 @@
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M9 12l2 2 4-4"/>
                 </svg>
-                {{ $quizzes }} quizzes
+                {{/* De front matter-sleutel quizzes: telt vragen, geen quizzen:
+                     sectie 1 staat op 47 en heeft 10 quizzen met 47 vragen. */}}
+                {{ $quizzes }} quizvragen
               </span>
               <span class="academy__section-card-meta-item">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
