@@ -4,7 +4,7 @@ meta_title: "WCAG audit — independent, concrete, per element | Proper Access"
 date: 2026-05-31
 slug: "accessibility-audit"
 layout: "service-en"
-description: "An accessibility audit that goes beyond listing errors. You get concrete solutions, visually explained, with code examples — so your team can start fixing right away. WCAG 2.2 and EN 301 549."
+description: "An accessibility audit that goes beyond listing errors. You get concrete solutions, visually explained, with code examples, so your team can start fixing right away. WCAG 2.2 and EN 301 549."
 keywords:
   - accessibility audit
   - WCAG audit
