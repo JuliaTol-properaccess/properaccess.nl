@@ -10,6 +10,7 @@ toc_in_article: In this article
 article_updated: "Updated:"
 reading_time: "min read"
 tldr_title: "In short"
+tldr_capsule_title: "In short"
 share: Share
 contact_name: "Name"
 contact_email: "Email address"
@@ -18,6 +19,9 @@ contact_name_placeholder: "Your name"
 contact_email_placeholder: "your@email.com"
 contact_message_placeholder: "Tell us how we can help you..."
 contact_submit: "Send message"
+contact_form_title: "Send a message"
+contact_form_sub: "We reply within one working day."
+blog_cta_heading: "Continue on this topic"
 search_input_placeholder: Search Post...
 search_no_results: No results for
 search_initial_message: Type something to search..
