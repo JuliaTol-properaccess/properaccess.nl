@@ -23,7 +23,7 @@ Kort antwoord: waarschijnlijk wel. De [European Accessibility Act (EAA)](https:/
 
 ## Wat is de EAA?
 
-De EAA (in Nederland omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, Staatsblad 2024, 87) verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De wet is gebaseerd op de [Europese norm EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), die verwijst naar [WCAG 2.1 niveau A en AA](https://www.w3.org/TR/WCAG21/). Bij Proper Access toetsen we op WCAG 2.2, een versie hoger dan de norm vraagt.
+De EAA (in Nederland omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, Staatsblad 2024, 87) verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De wet is gebaseerd op de [Europese norm EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf). Versie V3.2.1 van die norm verwijst naar [WCAG 2.1 niveau A en AA](https://www.w3.org/TR/WCAG21/). Bij Proper Access toetsen we op WCAG 2.2, een versie hoger dan die norm vraagt.
 
 ## Voor wie geldt het?
 

@@ -8,7 +8,7 @@ slug: "eaa"
 url: "/eaa/"
 description: "De European Accessibility Act geldt sinds 28 juni 2025. Voor wie hij geldt, welke norm eronder ligt, wie toezicht houdt en wat je nu moet doen."
 tldr: |
-  De European Accessibility Act (EAA) is richtlijn (EU) 2019/882. In Nederland is die omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, en de regels gelden sinds 28 juni 2025. De wet verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken: webshops, bankieren, reizen boeken, ticketing, e-books en telecom. De maatstaf is EN 301 549, die nu verwijst naar WCAG 2.1 niveau A en AA. Het toezicht ligt bij zes toezichthouders; voor webshops en apps is dat de ACM. De wet schrijft een toegankelijke website of app voor, geen onderzoek. Een onderzoek is de manier om te weten waar je staat.
+  De European Accessibility Act (EAA) is richtlijn (EU) 2019/882. In Nederland is die omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, en de regels gelden sinds 28 juni 2025. De wet verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken: webshops, bankieren, reizen boeken, ticketing, e-books en telecom. De maatstaf is EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau A en AA. Het toezicht ligt bij zes toezichthouders; voor webshops en apps is dat de ACM. De wet schrijft een toegankelijke website of app voor, geen onderzoek. Een onderzoek is de manier om te weten waar je staat.
 keywords:
   - European Accessibility Act
   - EAA

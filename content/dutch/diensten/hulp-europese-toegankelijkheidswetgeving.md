@@ -46,7 +46,7 @@ hulp_feiten:
   - k: "De norm"
     v: "Allebei wijzen ze naar EN 301 549, dat in versie V3.2.1 op WCAG 2.1 niveau A en AA staat"
   - k: "Wij toetsen aan"
-    v: "WCAG 2.2, een versie hoger dan de norm vraagt. Die criteria zijn backwards compatible, dus alles uit 2.1 zit erin"
+    v: "WCAG 2.2, een versie hoger dan EN 301 549 V3.2.1 vraagt. Die criteria zijn backwards compatible, dus alles uit 2.1 zit erin"
   - k: "Verantwoording"
     v: "Onder het BDTO een verklaring in het Register. Onder de EAA informatie over toegankelijkheid op je eigen website"
   - k: "Uitzondering"

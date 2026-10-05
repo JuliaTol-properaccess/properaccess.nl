@@ -45,7 +45,7 @@ In de praktijk audit je bijna altijd op **WCAG 2.2 niveau AA**.
 
 ## Welke versie geldt er?
 
-Op dit moment verwijst de Nederlandse wetgeving naar WCAG 2.1, maar de nieuwste versie is WCAG 2.2 (gepubliceerd in oktober 2023). WCAG 2.2 is volledig backwards compatible: alles uit 2.1 zit er nog in, plus negen nieuwe criteria.
+De Nederlandse wetgeving verwijst via EN 301 549 V3.2.1 naar WCAG 2.1. De nieuwste versie is WCAG 2.2, gepubliceerd in oktober 2023. WCAG 2.2 is volledig backwards compatible: alles uit 2.1 zit er nog in, plus negen nieuwe criteria.
 
 Wij auditen standaard op WCAG 2.2, tenzij een opdrachtgever expliciet om 2.1 vraagt.
 
