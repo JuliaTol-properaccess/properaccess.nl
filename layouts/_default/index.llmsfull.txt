@@ -89,7 +89,15 @@ What sets us apart:
        toezichthouder of een sector. Voor een taalmodel zegt die kop iets over wat het
        leest. De frontmattersleutel `llms_group` zet een pagina onder een andere kop:
        `about`, `services`, `sectors` of `key-pages`. Zonder de sleutel blijft het
-       `services`, dus de Nederlandse lijst verandert er niet van. */ -}}
+       `services`, dus de Nederlandse lijst verandert er niet van.
+
+       De limiet hieronder is 2.000 tekens voor het Nederlands en 20.000 voor het Engels.
+       Dat is dezelfde lijst pagina's, maar niet dezelfde soort pagina. De elf Engelse
+       pagina's halen met hun frontmatterblokken erbij 1.800 tot 7.700 tekens, dus 20.000
+       kapt er geen enkele af; de Nederlandse dienstpagina's zijn veel langer en staan met
+       twaalf afkappingen op 2.000. Met 2.000 voor het Engels verloren vijf van de elf
+       hun nieuwe tekst weer, waaronder de vier sectorpagina's. Gemeten: NL blijft
+       byte-identiek, EN gaat van 38.048 naar 61.529 byte. */ -}}
 {{- $losse := where $zichtbaar "Section" (cond $nl "diensten" "") -}}
 {{- $groepen := slice
       (dict "sleutel" "about"     "kop" $t.aboutUs)
@@ -108,7 +116,7 @@ What sets us apart:
 {{- with $inGroep }}
 ## {{ $groep.kop }}
 {{ range . }}
-{{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" 2000) }}
+{{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" (cond $nl 2000 20000)) }}
 ---
 {{ end }}
 {{- end -}}

@@ -7,11 +7,33 @@
 
        Alleen links naar een pagina: een anker, een mailadres en een telefoonnummer vallen
        af, want het adres en het nummer staan al onder Contact. Dubbele doelen komen één
-       keer in de lijst, met de tekst van de eerste keer. Dertig is ruim: de langste pagina
-       van vandaag heeft er veertien. */ -}}
+       keer in de lijst, met de tekst van de eerste keer. Vijftig is ruim: de langste
+       pagina van vandaag is `/eaa/` met 29 links.
+
+       Naast `.Content` gaan de frontmatterblokken door `markdownify`, want ook daar staan
+       links in. Geteld over heel `content/` met een YAML-parse: 42 Markdown-links, in
+       `faqs[].answer` 22, `steps[].body` 8, `sections[].body` 7 en `sections[].card_list`
+       5, samen 29 unieke URL's. 32 van de 42 staan in `content/english/`. Zonder dit had
+       het Engelse bestand één linklijst met één regel, tegen 21 lijsten in het
+       Nederlandse. Alleen de tekst van die blokken meenemen is niet genoeg: de
+       Markdown-link blijft dan letterlijk en relatief in de tekst staan (`/en/contact/`),
+       en een taalmodel kan dat niet oplossen. Deze lijst doet `absURL`. Het Nederlands
+       verandert er nauwelijks van, want die links staan daar al in de body en dubbele
+       doelen vallen af. */ -}}
 {{- $regels := slice -}}
 {{- $gezien := slice -}}
-{{- range findRESubmatch `<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>` .Content -}}
+{{- $html := slice .Content -}}
+{{- range .Params.sections -}}
+{{- with .body }}{{ $html = $html | append (markdownify .) }}{{ end -}}
+{{- range .card_list }}{{ $html = $html | append (markdownify .) }}{{ end -}}
+{{- end -}}
+{{- range .Params.steps -}}
+{{- with .body }}{{ $html = $html | append (markdownify .) }}{{ end -}}
+{{- end -}}
+{{- range .Params.faqs -}}
+{{- with .answer }}{{ $html = $html | append (markdownify .) }}{{ end -}}
+{{- end -}}
+{{- range findRESubmatch `<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>` (delimit $html " ") -}}
   {{- $href := index . 1 -}}
   {{- $tekst := index . 2 | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "\\s*(→|->)\\s*$" "" | strings.TrimSpace -}}
   {{- $overslaan := or
@@ -28,4 +50,4 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- return first 30 $regels -}}
+{{- return first 50 $regels -}}

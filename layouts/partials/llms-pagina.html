@@ -31,11 +31,41 @@
        deed hetzelfde met `truncate`, want die functie is HTML-bewust en escapet de hele
        tekst. Vandaar ook de `htmlUnescape` na `truncate`, en de eerste ervoor voor een
        entiteit die `.Plain` laat staan (`&rsquo;` voor een aanhalingsteken). Met losse
-       proefregels gemeten; de volgorde doet er dus toe. */ -}}
+       proefregels gemeten; de volgorde doet er dus toe.
+
+       De tekst is `.Plain` plus `sections[].body` en `steps[].body` uit de frontmatter. Dat
+       is nodig voor de elf Engelse pagina's: die hebben hun paginatekst in die blokken en
+       niet in de body, dus `.Plain` is er bijna leeg. `/en/about-us/` leverde zo 245 tekens,
+       alleen kop, URL en description. De layout `service-en.html` rendert de blokken wel
+       zichtbaar (r74 de kop, r75 de body, r117 de stap), dus het is tekst die een bezoeker
+       ook leest. Het zijn 58 velden in 11 bestanden, samen 21.180 tekens. In
+       `content/dutch/` komen beide sleutels niet voor, dus de Nederlandse uitvoer verandert
+       hier niet van.
+
+       Een blok dat al in `.Plain` staat valt af. Vandaag gaat die regel nergens af:
+       `accessibility-credits` is de enige pagina met een body én blokken, en die body
+       herhaalt de blokken niet. De regel staat er voor de volgende keer, want een
+       geschreven body die een blok overneemt zou alles twee keer in het bestand zetten.
+       Bannertekst (`banner.content`) staat er niet in: die is ook zichtbaar, maar staat in
+       27 Nederlandse bestanden en verandert dan wel de Nederlandse uitvoer. */ -}}
 {{- $p := .pagina -}}
 {{- $t := .t -}}
 {{- $limiet := .limiet -}}
-{{- $tekst := $p.Plain | htmlUnescape | replaceRE "\\s+" " " | truncate $limiet | htmlUnescape -}}
+{{- $plain := $p.Plain | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- $blokken := slice $plain -}}
+{{- range $p.Params.sections -}}
+{{- with .body -}}
+{{- $blok := . | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- range $p.Params.steps -}}
+{{- with .body -}}
+{{- $blok := . | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $tekst := delimit $blokken " " | truncate $limiet | htmlUnescape -}}
 ### {{ $p.Title | safeHTML }}
 
 URL: {{ $p.Permalink }}
