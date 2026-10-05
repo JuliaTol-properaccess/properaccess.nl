@@ -1,6 +1,6 @@
 ---
 title: "Does your text stay readable with more space between it?"
-description: "Free tool that shows whether your text stays readable when visitors add more space between letters, words and lines. Drag the button to your bookmarks bar or play with the example."
+description: "Free tool that shows whether your text stays readable when visitors add more space between letters, words and lines. Drag it to your bookmarks bar."
 layout: "text-spacing-check"
 gratis: true
 weight: 4

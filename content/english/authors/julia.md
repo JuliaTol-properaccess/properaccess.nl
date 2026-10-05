@@ -1,6 +1,6 @@
 ---
 title: Julia Tol
-meta_title: "Julia Tol, founder and senior accessibility auditor at Proper Access"
+meta_title: "Julia Tol, senior accessibility auditor | Proper Access"
 email: juliatol@properaccess.nl
 image: "/images/julia.webp"
 description: "Julia Tol founded Proper Access in 2019. Her team has carried out more than 950 WCAG audits for Dutch museums, news media and government bodies."
