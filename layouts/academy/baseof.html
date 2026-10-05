@@ -17,7 +17,7 @@
   </head>
 
   <body class="academy-body">
-    <a href="#main-content" class="skiplink">Ga naar de inhoud</a>
+    <a href="#main-content" class="skiplink">{{ T "skip_to_content" }}</a>
 
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}

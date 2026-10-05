@@ -1,0 +1,80 @@
+{{/* Eigen kopie van themes/hugoplate/layouts/_partials/components/language-switcher.html.
+     Twee verschillen met het thema:
+     1. De naam van de select kwam uit een vaste Nederlandse tekst ("NL: taal"),
+        ook op de Engelse pagina. Nu uit i18n.
+     2. Het thema navigeerde met onchange="location = this.value". Met de
+        pijltjestoetsen vuurt change in sommige browsers per optie, dus je sprong
+        weg voordat je gekozen had. Het script onderaan wacht bij toetsenbord-
+        gebruik op Enter of op het verlaten van de select. */}}
+{{ if hugo.IsMultilingual }}
+{{ $class := .Class }}
+{{ $context := .Context }}
+{{ $pageLang := $context.Lang }}
+{{ $pageTranslations := newScratch }}
+{{/* First, fill all translations of the Home page (failsafe) */}}
+{{ range site.Home.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
+{{/* Second, if a translation exists for the current page for the target language, replace failsafe */}}
+{{ range $context.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
+
+<select class="{{ $class }}" data-taalkiezer aria-label="{{ T "language_label" }}">
+  {{ range site.Languages }}
+    {{/* Fill the dropdown with all known languages */}}
+    {{ $link := $pageTranslations.Get .Lang }}
+    {{ if $link }}
+      <option
+        id="{{ .Lang }}"
+        value="{{ $link }}"
+      {{ if eq .Lang $pageLang }}
+        selected
+      {{ end }}
+        >
+        {{ .LanguageName }}
+      </option>
+    {{ else }}
+      {{/* if we can't safely redirect the user to the translated page or at least to translated home, discard the language from options */}}
+    {{ end }}
+  {{ end }}
+</select>
+
+<script>
+(function () {
+  var kiezers = document.querySelectorAll("[data-taalkiezer]");
+  if (!kiezers.length) return;
+
+  var navigatietoetsen = [
+    "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight",
+    "Home", "End", "PageUp", "PageDown"
+  ];
+
+  function ga(kiezer) {
+    if (kiezer.value && kiezer.value !== window.location.href) {
+      window.location = kiezer.value;
+    }
+  }
+
+  Array.prototype.forEach.call(kiezers, function (kiezer) {
+    var viaToetsenbord = false;
+
+    kiezer.addEventListener("keydown", function (e) {
+      if (navigatietoetsen.indexOf(e.key) !== -1) {
+        viaToetsenbord = true;
+      } else if (e.key === "Enter") {
+        ga(kiezer);
+      }
+    });
+
+    kiezer.addEventListener("change", function () {
+      if (!viaToetsenbord) ga(kiezer);
+    });
+
+    kiezer.addEventListener("blur", function () {
+      if (viaToetsenbord) ga(kiezer);
+    });
+  });
+})();
+</script>
+{{ end }}

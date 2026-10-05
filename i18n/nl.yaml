@@ -108,3 +108,11 @@
   translation: "Home"
 - id: breadcrumb_label
   translation: "Kruimelpad"
+- id: skip_to_content
+  translation: "Ga naar de inhoud"
+- id: open_menu
+  translation: "Menu openen"
+- id: close_menu
+  translation: "Menu sluiten"
+- id: language_label
+  translation: "Taal"
