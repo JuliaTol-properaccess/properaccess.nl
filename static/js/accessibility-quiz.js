@@ -1230,9 +1230,23 @@
 
   // --- Language switching ---
 
+  // Zet lang op de quiz zodra die afwijkt van de taal van de pagina (WCAG 3.1.2).
+  // De taalknop staat binnen deze sectie en erft de taal daarmee mee.
+  function syncSectionLang() {
+    var section = el('quizSection');
+    if (!section) return;
+    var pageLang = (document.documentElement.getAttribute('lang') || 'nl').substring(0, 2);
+    if (lang === pageLang) {
+      section.removeAttribute('lang');
+    } else {
+      section.setAttribute('lang', lang);
+    }
+  }
+
   window.quizSetLang = function (newLang) {
     if (newLang !== 'nl' && newLang !== 'en') return;
     lang = newLang;
+    syncSectionLang();
 
     // Re-render based on current screen
     if (currentScreen === 'welcome') {
@@ -1270,6 +1284,7 @@
       }
     }
 
+    syncSectionLang();
     renderAll();
   }
 

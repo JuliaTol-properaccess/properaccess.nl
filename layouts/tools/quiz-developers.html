@@ -7,9 +7,10 @@
     {{ $nl := eq .Lang "nl" }}
     <section class="quiz-section" id="quizSection">
       <div class="quiz__lang-toggle">
-        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="{{ if $nl }}NL EN, switch to English{{ else }}NL EN, schakel naar Nederlands{{ end }}">
+        <button type="button" class="quiz__lang-btn" id="quizLangToggle">
           <span class="quiz__lang-opt{{ if $nl }} quiz__lang-opt--active{{ end }}" id="quizLangNL">NL</span>
           <span class="quiz__lang-opt{{ if not $nl }} quiz__lang-opt--active{{ end }}" id="quizLangEN">EN</span>
+          <span class="sr-only" id="quizLangAction">{{ if $nl }}, schakel naar Engels{{ else }}, switch to Dutch{{ end }}</span>
         </button>
       </div>
       <div id="quizContainer"></div>
@@ -24,13 +25,14 @@
     var btn = document.getElementById('quizLangToggle');
     var nlOpt = document.getElementById('quizLangNL');
     var enOpt = document.getElementById('quizLangEN');
+    var action = document.getElementById('quizLangAction');
     var currentLang = window.__paToolLang === 'en' ? 'en' : 'nl';
     if (btn) {
       btn.addEventListener('click', function () {
         currentLang = currentLang === 'nl' ? 'en' : 'nl';
         nlOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'nl');
         enOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'en');
-        btn.setAttribute('aria-label', currentLang === 'nl' ? 'NL EN, switch to English' : 'NL EN, schakel naar Nederlands');
+        action.textContent = currentLang === 'nl' ? ', schakel naar Engels' : ', switch to Dutch';
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }
