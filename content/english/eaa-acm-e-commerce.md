@@ -40,7 +40,7 @@ sections_header: "What the ACM checks, and what it expects from you"
 sections:
   - eyebrow: "Supervision"
     title: "Reports from consumers, and checks the ACM starts itself"
-    body: "The ACM writes that it is the regulator that watches whether e-commerce services and electronic communication services are accessible according to the law. Consumers can file a report with the ACM when they notice that your website or app is not accessible. The ACM also selects websites and apps to investigate on its own initiative. How it acts, in its own words, depends on how big the problems are and on the steps the company takes to solve them. What the law itself requires of a webshop or online service is on our page about [the EAA for e-commerce and e-services](/en/e-commerce-digital-accessibility/)."
+    body: "The ACM writes that it is the regulator that watches whether e-commerce services and electronic communication services are accessible according to the law. Consumers can file a report with the ACM when they notice that your website or app is not accessible. The ACM also selects websites and apps to investigate on its own initiative. How it acts, in its own words, depends on how big the problems are and on the steps the company takes to solve them. What the law itself requires of your webshop or online service is on our page about [the EAA for e-commerce and e-services](/en/e-commerce-digital-accessibility/)."
     card_eyebrow: "Who must comply"
     card_icon: "storefront"
     card_title: "The ACM's threshold"
