@@ -33,6 +33,7 @@
     <script type="application/json" id="webapp-alt-data">
       {{ readFile $keuzehulpData | safeJS }}
     </script>
+    <script>window.__paAltUi = {{ $t.app | jsonify | safeJS }};</script>
     <script src="{{ "js/webapp-alt-tekst.js" | relURL }}" defer></script>
 
     <!-- CTA -->

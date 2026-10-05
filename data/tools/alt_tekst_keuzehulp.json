@@ -11,7 +11,17 @@
     "noscript": "Deze keuzehulp vereist JavaScript. Schakel JavaScript in om de tool te gebruiken.",
     "ctaLine1": "Wil je meer weten over alt-teksten? Lees de <a href=\"/blog/alt-tekst-keuzehulp/\">uitgebreide uitleg met voorbeelden en veelgemaakte fouten</a>.",
     "ctaLine2": "Of <a href=\"/contact\">vraag een audit aan</a> om alle afbeeldingen op je website te laten controleren.",
-    "data": "alt_tekst_keuzehulp.json"
+    "data": "alt_tekst_keuzehulp.json",
+    "app": {
+      "back": "Terug",
+      "step": "Stap",
+      "result": "Resultaat",
+      "optionsAriaLabel": "Keuzemogelijkheden",
+      "solutions": "Oplossing",
+      "examples": "Voorbeelden",
+      "tipsSummary": "Algemene schrijfregels voor goede alt-tekst",
+      "restart": "Opnieuw beginnen"
+    }
   },
   "en": {
     "intro": "Answer a few questions about your image and you see straight away which alt text belongs with it, with an example.",
@@ -25,6 +35,16 @@
     "noscript": "This decision tree needs JavaScript. Switch JavaScript on to use the tool.",
     "ctaLine1": "Want to know more about alt text? Read the <a href=\"/en/blog/wcag-1-1-1-non-text-content/\">full explanation with examples and common mistakes</a>.",
     "ctaLine2": "Or <a href=\"/en/contact/\">request an audit</a> to have every image on your website checked.",
-    "data": "alt_text_decision_tree.json"
+    "data": "alt_text_decision_tree.json",
+    "app": {
+      "back": "Back",
+      "step": "Step",
+      "result": "Result",
+      "optionsAriaLabel": "Options",
+      "solutions": "Solution",
+      "examples": "Examples",
+      "tipsSummary": "General rules for writing good alt text",
+      "restart": "Start again"
+    }
   }
 }
