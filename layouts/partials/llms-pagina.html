@@ -11,6 +11,19 @@
        van de pagina zelf, zoals op `/auditbureau-kiezen/`, dan slaan we het blok over,
        anders staat alles er twee keer.
 
+       Die overslaanregel kijkt naar `$tekst`, de tekst die hieronder ook echt wordt
+       geprint, en niet naar de volle `.Plain`. Dat scheelt vandaag niets, want de body van
+       `/auditbureau-kiezen/` is 13.567 tekens en blijft onder de limiet van 20.000. Het
+       scheelt zodra iemand de limiet verlaagt: de zeven vragen van die pagina beginnen pas
+       op teken 10.707, dus met een lagere limiet verdwenen ze uit de tekst terwijl het blok
+       nog steeds werd overgeslagen. Dan stond er van die vragen niets meer in het bestand.
+
+       Om dezelfde reden moeten *alle* vragen in `$tekst` staan voordat het blok wegvalt, en
+       niet alleen de eerste. Wordt er middenin de vragen afgekapt, dan is het blok nodig.
+       Vandaag verandert ook dat niets: van de 22 pagina's met een `faqs:`-blok in dit
+       bestand is `/auditbureau-kiezen/` de enige waar de regel afgaat, en daar staan alle
+       zeven vragen in de tekst.
+
        `safeHTML` staat overal waar tekst de uitvoer in gaat, en dat is nodig: een partial
        escapet wat hij print, ook als de uitvoer een tekstbestand is en ook als je het
        bestand `.txt` noemt. Zonder `safeHTML` komt er `Pagina&#39;s` en `950&#43;` in een
@@ -22,6 +35,7 @@
 {{- $p := .pagina -}}
 {{- $t := .t -}}
 {{- $limiet := .limiet -}}
+{{- $tekst := $p.Plain | htmlUnescape | replaceRE "\\s+" " " | truncate $limiet | htmlUnescape -}}
 ### {{ $p.Title | safeHTML }}
 
 URL: {{ $p.Permalink }}
@@ -31,14 +45,19 @@ URL: {{ $p.Permalink }}
 {{- with $p.Params.service.serviceType }}
 {{ $t.type }}: {{ . | safeHTML }}
 {{ end }}
-{{ $p.Plain | htmlUnescape | replaceRE "\\s+" " " | truncate $limiet | htmlUnescape | safeHTML }}
+{{ $tekst | safeHTML }}
 {{ with partial "llms-links.html" $p }}
 {{ $t.links }}:
 {{ delimit . "\n" | safeHTML }}
 {{ end -}}
 {{- with $p.Params.faqs -}}
-{{- $eerste := (index . 0).question -}}
-{{- if not (and $eerste (strings.Contains $p.Plain $eerste)) }}
+{{- $ontbreekt := false -}}
+{{- range . -}}
+{{- if not (and .question (strings.Contains $tekst .question)) -}}
+{{- $ontbreekt = true -}}
+{{- end -}}
+{{- end -}}
+{{- if $ontbreekt }}
 {{ $t.faq }}:
 {{ range . }}
 #### {{ .question | safeHTML }}

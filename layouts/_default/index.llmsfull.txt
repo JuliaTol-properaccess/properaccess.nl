@@ -126,9 +126,18 @@ What sets us apart:
 {{ end }}
 
 {{- /* De kennispagina's krijgen 20.000 tekens in plaats van 2.000. Het zijn vijf pagina's
-       die juist voor dit doel zijn geschreven, de langste komt op 13.000 tekens en de
-       vragen staan er onderaan. Met 2.000 tekens stopte `/auditbureau-kiezen/` ruim voor
-       de zeven vragen waar we op geciteerd worden. */ -}}
+       die juist voor dit doel zijn geschreven en de vragen staan er onderaan. Gemeten na
+       het samenvoegen van witruimte: `/auditbureau-kiezen/` 13.567, `/eaa/` 13.216,
+       `/toegankelijkheidsverklaring/` 10.366, `/digitale-toegankelijkheid/` 8.400 en
+       `/in-de-media/` 2.229. Met 2.000 tekens stopte `/auditbureau-kiezen/` ruim voor de
+       zeven vragen waar we op geciteerd worden, en viel ook de mediatekst van
+       `/in-de-media/` af.
+
+       Verlaag deze limiet niet zonder naar `/auditbureau-kiezen/` te kijken. De zeven
+       vragen van die pagina staan niet in `faqs:` alleen, maar ook in de body, en die
+       beginnen pas op teken 10.707. Onder 13.567 raakt die pagina dus tekst kwijt en onder
+       10.707 alle zeven de vragen. Dat het blok uit `faqs:` dan niet inspringt, is een
+       aparte val; `llms-pagina.html` legt uit hoe die is dichtgezet. */ -}}
 {{- $kennis := where $zichtbaar "Section" "pages" -}}
 {{ with $kennis }}
 ## {{ $t.keyPages }}
