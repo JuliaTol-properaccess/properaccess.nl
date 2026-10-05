@@ -11,7 +11,7 @@ tags:
   - "user-stories"
   - "agile"
   - "wcag"
-description: "Atlassian puts end users first in agile development. We do the same in our accessibility reports — with one user story per finding."
+description: "Atlassian puts end users first in agile development. We do the same in our accessibility reports: one user story per finding."
 keywords:
   - user stories accessibility
   - wcag audit report
@@ -25,7 +25,7 @@ translationKey: "user-stories-in-rapport"
 
 Atlassian writes about user stories: *"A user story puts end users first. After reading a user story, the team knows why it is building, what it is building, and what value it creates."*
 
-We took that idea and asked: what happens if you apply it to an accessibility audit report? The answer turned out to be straightforward. The report becomes readable for everyone who has to act on it — not just the auditor who wrote it.
+We took that idea and asked: what happens if you apply it to an accessibility audit report? The answer turned out to be straightforward. The report becomes readable for everyone who has to act on it, not just the auditor who wrote it.
 
 {{< /case-section >}}
 
@@ -35,7 +35,7 @@ We took that idea and asked: what happens if you apply it to an accessibility au
 
 An accessibility report describes what is wrong with a website. That sounds simple, but the way you describe it determines whether the report gets used or quietly disappears into a folder.
 
-Most reports describe findings in WCAG language: *"SC 1.3.2 not met — meaningful sequence broken."* Technically correct. An auditor recognises it instantly. But an editor who has to rewrite the content, or a developer who has to change the markup, reads this and thinks: *and now what?*
+Most reports describe findings in WCAG language: *"SC 1.3.2 not met: meaningful sequence broken."* Technically correct. An auditor recognises it instantly. But an editor who has to rewrite the content, or a developer who has to change the markup, reads this and thinks: *and now what?*
 
 We solved part of this years ago by reporting per element instead of per success criterion. That way, the team at least knows *where* the problem is and *what* needs to change.
 
@@ -61,7 +61,7 @@ That is why every finding in our reports now starts with a user story.
 
 ## What our user stories look like
 
-Our user stories are not written from the perspective of one person with one disability. They combine the different ways someone can run into the same issue — with a screen reader, with a keyboard, with a screen magnifier, with a need for predictable reading flow. One story, multiple ways in.
+Our user stories are not written from the perspective of one person with one disability. They combine the different ways someone can run into the same issue: with a screen reader, with a keyboard, with a screen magnifier, with a need for predictable reading flow. One story, multiple ways in.
 
 Here is an example from a recent report:
 
@@ -77,7 +77,7 @@ Below that comes the technical explanation: which element, which WCAG criterion,
 
 ## What this changes
 
-The developer or editor who works with the report no longer has to look up the WCAG guideline to understand why something matters. They do not have to do an empathy exercise to imagine who is affected. It is right there — including all the ways someone can encounter it.
+The developer or editor who works with the report no longer has to look up the WCAG guideline to understand why something matters. They do not have to do an empathy exercise to imagine who is affected. It is right there, including all the ways someone can encounter it.
 
 We see three effects come back, again and again:
 
@@ -97,7 +97,7 @@ This is probably the most important detail. We do not write one user story per W
 
 Because the same success criterion can be a major problem for screen reader users in one place and mostly an annoyance for keyboard users somewhere else. That difference disappears the moment you start grouping things. By writing per finding, the story stays exactly where it belongs: at that one element, on that one page, in that one context.
 
-It costs us more writing time. We are honest about that. But this is what our work is — and it works.
+It costs us more writing time. We are honest about that. But this is what our work is, and it works.
 
 {{< /case-section >}}
 

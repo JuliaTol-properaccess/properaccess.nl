@@ -20,7 +20,7 @@ banner:
   title: "Your website has to be accessible, and a scanner will not tell you where it fails. A senior auditor will, per component, with the fix"
   content: "More reach, better conversion and a stronger reputation, through digital products that work for everyone. Get guided by a senior auditor and meet the European Accessibility Act (EAA) with as little cost and effort as possible."
   bullets:
-    - "**More reach** — the visitors who now give up halfway"
+    - "**More reach**: the visitors who now give up halfway"
     - "**Better conversion** and a stronger reputation"
     - "**Compliant** with the EAA, without the stress"
   button:
@@ -41,17 +41,17 @@ sections_header: "What you get with an audit"
 sections:
   - eyebrow: "The report"
     title: "A report your team can act on tomorrow"
-    body: "Per component, not per WCAG criterion. Every finding gets a user story and a priority — with a screenshot or code example where it helps. An action plan per team, a summary for managers, and findings you can export to Jira or GitHub."
+    body: "Per component, not per WCAG criterion. Every finding gets a user story and a priority, with a screenshot or code example where it helps. An action plan per team, a summary for managers, and findings you can export to Jira or GitHub."
     card_eyebrow: "Example finding"
     card_icon: "fact_check"
     card_title: "How a finding reads"
     card_list:
-      - "**Priority: high** — element `<button>`"
+      - "**Priority: high**, element `<button>`"
       - "**User story:** \"As a screen reader user I only hear 'button'. I don't know what happens when I click it.\""
       - "**Fix:** add a meaningful `aria-label`"
   - eyebrow: "The method"
-    title: "Tested by hand by a senior auditor — not by a scanner"
-    body: "Automated tools only find part of the WCAG issues. They don't start a screen reader, don't use the keyboard, don't test zoom. Our auditor does — with real assistive technology and the six-eyes principle: a second auditor reviews the work and every report is checked by three people before delivery."
+    title: "Tested by hand by a senior auditor, not by a scanner"
+    body: "Automated tools only find part of the WCAG issues. They don't start a screen reader, don't use the keyboard, don't test zoom. Our auditor does, with real assistive technology and the six-eyes principle: a second auditor reviews the work and every report is checked by three people before delivery."
     card_eyebrow: "Manually tested with"
     card_icon: "accessibility_new"
     card_title: ""
@@ -73,14 +73,14 @@ sections:
       - "We never audit our own work"
       - "We audit and advise"
 
-steps_header: "From first call to closed file — in 3 steps"
+steps_header: "From first call to closed file, in 3 steps"
 steps:
   - title: "Introduction + quote"
-    body: "In 30 minutes we discuss your site or app, your team, your deadlines and what you already have. You get a clear quote within two working days — no standard price list, just fixed hourly rates."
+    body: "In 30 minutes we discuss your site or app, your team, your deadlines and what you already have. You get a clear quote within two working days: no standard price list, just fixed hourly rates."
   - title: "Thorough audit"
     body: "A manual test by a senior auditor, reviewed by a second auditor, with every report checked by three people before delivery. We listen to your website or app with a screen reader, use the keyboard only and zoom up to 400%."
   - title: "Report + retest"
-    body: "You receive the report per component, with user stories, an action plan per team and export buttons. After your fixes we run the retest — to check everything works and the file can be closed."
+    body: "You receive the report per component, with user stories, an action plan per team and export buttons. After your fixes we run the retest to check everything works and the file can be closed."
 
 faqs:
   - question: "How long does an audit take?"
