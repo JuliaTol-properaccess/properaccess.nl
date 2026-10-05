@@ -75,7 +75,7 @@ En het gaat om een grote groep. Volgens cijfers van Eurostat en de Europese Comm
 
 Het meest concrete deel ging over de aanpak. De ACM doet niet alleen handhaving, maar begint met begeleiding. Daarvoor hebben ze een roadshow opgezet:
 
-- 10 bedrijven uitgebreid onderzoeken volgens WCAG-EM, de officiële Europese methode om een hele website te beoordelen
+- 10 bedrijven uitgebreid onderzoeken volgens WCAG-EM, de evaluatiemethode van het W3C waarmee je een hele website beoordeelt
 - voor elk bedrijf een rapport opstellen
 - twee weken later een bedrijfsbezoek, met hun CEO aan tafel en een ervaringsdeskundige van de ACM erbij
 - bij ruim honderd bedrijven een beperkt onderzoek doen naar alleen één belangrijk functioneel onderdeel van de website
@@ -121,7 +121,7 @@ Als je een webshop of online dienst hebt die onder de EAA valt, zijn er een paar
 
 De toezichthouder werkt feitelijk en onafhankelijk. Een goed verhaal of een mooie intentie helpt je niet als de techniek en de praktijk niet kloppen. De ACM meet wat er echt gebeurt op je site.
 
-Ze toetsen volgens WCAG-EM. Dat betekent dat ze niet één pagina pakken, maar een representatieve doorsnede van je hele website beoordelen. Caitlin vertelde dat ze daarbij juist het hele afrekenproces doorlopen, van product in het mandje tot betaling. Een toegankelijke homepage is niet genoeg als je bezoeker halverwege de checkout vastloopt.
+Bij de 10 volledige onderzoeken van de roadshow in 2026 toetste de ACM volgens WCAG-EM. Dat betekent een representatieve steekproef uit je hele website. Bij de ruim honderd andere bedrijven ging het om één functioneel onderdeel. Caitlin vertelde dat ze juist het hele afrekenproces doorlopen, van product in het mandje tot betaling. Een toegankelijke homepage is niet genoeg als je bezoeker halverwege de checkout vastloopt.
 
 Onze dank aan Caitlin de Rooij voor het heldere verhaal, aan Angeliek Lieverdink en stichting DUIT voor een waardevolle dag, en aan Blue Billywig voor het hosten van dit event.
 
