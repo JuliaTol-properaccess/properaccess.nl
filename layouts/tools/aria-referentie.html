@@ -10,9 +10,12 @@
 
     <div class="tool-pdf__header">
       <h1 class="mb-2"><span data-i18n="toolTitle">{{ .Title }}</span></h1>
-      <button type="button" class="tool-pdf__lang-btn" id="langToggle" aria-label="{{ $t.langLabel }}">
+      {{/* De naam van de knop komt uit de inhoud en niet uit een aria-label, zodat de
+           zichtbare tekst "NL EN" er altijd in zit (WCAG 2.5.3). */}}
+      <button type="button" class="tool-pdf__lang-btn" id="langToggle">
         <span class="tool-pdf__lang-opt{{ if ne .Lang "en" }} tool-pdf__lang-opt--active{{ end }}" id="langOptNL">NL</span>
         <span class="tool-pdf__lang-opt{{ if eq .Lang "en" }} tool-pdf__lang-opt--active{{ end }}" id="langOptEN">EN</span>
+        <span class="sr-only" id="langAction">{{ $t.langAction }}</span>
       </button>
     </div>
 

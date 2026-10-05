@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $nl := eq .Lang "nl" }}
-{{ $labelNL := "Taal: Nederlands. Schakel naar Engels." }}
-{{ $labelEN := "Language: English. Switch to Dutch." }}
+{{ $actieNL := ", schakel naar Engels" }}
+{{ $actieEN := ", switch to Dutch" }}
 <section class="section pt-14">
   <div class="container">
 
@@ -9,9 +9,12 @@
 
     <section class="quiz-section" id="quizSection">
       <div class="quiz__lang-toggle">
-        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="{{ if $nl }}{{ $labelNL }}{{ else }}{{ $labelEN }}{{ end }}">
+        {{/* De naam van de knop komt uit de inhoud en niet uit een aria-label, zodat de
+             zichtbare tekst "NL EN" er altijd in zit (WCAG 2.5.3). */}}
+        <button type="button" class="quiz__lang-btn" id="quizLangToggle">
           <span class="quiz__lang-opt{{ if $nl }} quiz__lang-opt--active{{ end }}" id="quizLangNL">NL</span>
           <span class="quiz__lang-opt{{ if not $nl }} quiz__lang-opt--active{{ end }}" id="quizLangEN">EN</span>
+          <span class="sr-only" id="quizLangActie">{{ if $nl }}{{ $actieNL }}{{ else }}{{ $actieEN }}{{ end }}</span>
         </button>
       </div>
       <div id="quizContainer"></div>
@@ -25,14 +28,26 @@
     var btn = document.getElementById('quizLangToggle');
     var nlOpt = document.getElementById('quizLangNL');
     var enOpt = document.getElementById('quizLangEN');
-    var labels = { nl: {{ $labelNL | jsonify | safeJS }}, en: {{ $labelEN | jsonify | safeJS }} };
-    var currentLang = {{ cond $nl "nl" "en" | jsonify | safeJS }};
+    var actie = document.getElementById('quizLangActie');
+    var sectie = document.getElementById('quizSection');
+    var acties = { nl: {{ $actieNL | jsonify | safeJS }}, en: {{ $actieEN | jsonify | safeJS }} };
+    // accessibility-quiz.js leest <html lang>, dus de knop begint op de taal van de pagina.
+    var paginaTaal = {{ cond $nl "nl" "en" | jsonify | safeJS }};
+    var currentLang = paginaTaal;
     if (btn) {
       btn.addEventListener('click', function () {
         currentLang = currentLang === 'nl' ? 'en' : 'nl';
         nlOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'nl');
         enOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'en');
-        btn.setAttribute('aria-label', labels[currentLang]);
+        if (actie) actie.textContent = acties[currentLang];
+        // Wijkt de quiz af van de taal van de pagina, dan hoort daar lang op (WCAG 3.1.2).
+        if (sectie) {
+          if (currentLang === paginaTaal) {
+            sectie.removeAttribute('lang');
+          } else {
+            sectie.setAttribute('lang', currentLang);
+          }
+        }
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }
