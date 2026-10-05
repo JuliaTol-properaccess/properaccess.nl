@@ -1,6 +1,6 @@
 ---
 title: "Quiz: Accessible content for web editors"
-meta_title: "Accessibility Quiz for Web Editors — Test your knowledge | Proper Access"
+meta_title: "Accessibility quiz for web editors | Proper Access"
 slug: "quiz-web-editors"
 url: "/en/tools/quiz-web-editors/"
 layout: "quiz-webredactie"

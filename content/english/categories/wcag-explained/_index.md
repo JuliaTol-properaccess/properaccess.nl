@@ -1,6 +1,6 @@
 ---
 title: "WCAG explained"
 translationKey: "wcag-uitgelegd"
-meta_title: "WCAG explained: what each success criterion actually means | Proper Access"
-description: "One success criterion at a time, in plain language. What the rule says, why it matters to real visitors, the mistakes we keep finding in audits, and how to test it yourself."
+meta_title: "WCAG explained, criterion by criterion | Proper Access"
+description: "One success criterion at a time, in plain language: what the rule says, the mistakes we keep finding in audits, and how to test it yourself."
 ---
