@@ -2,9 +2,13 @@
   Interactief offerteformulier voor /offerte-wcag-onderzoek/.
   Vraagt gericht de gegevens uit die de prijs van een audit bepalen.
 
-  Opbouw: één of meer onderzoeksblokken (offerte-item.html), gevolgd door de
-  vragen die voor de hele aanvraag gelden. Zo kan iemand met drie websites en
-  een app alles in één offerte aanvragen.
+  Opbouw: één of meer onderzoeksblokken (offerte-item.html), dan naam en
+  e-mailadres, en dan één gesloten uitklapblok met de vragen die voor de hele
+  aanvraag gelden. Zo kan iemand met drie websites en een app alles in één
+  offerte aanvragen zonder dat de pagina begint met twintig vragen.
+
+  De veldnamen zijn vast: de Worker pipedrive-forms kent ze bij naam.
+  Verplaats velden dus wel, maar hernoem ze niet.
 
   Toon/verberg-logica, nummering en verzending via static/js/offerte-form.js.
 */}}
@@ -14,9 +18,10 @@
   novalidate
   aria-describedby="offerte-form-hint">
   <p id="offerte-form-hint" class="offerte-form__hint">
-    Velden met een sterretje zijn verplicht. Afhankelijk van je keuzes verschijnen er extra vragen.
-    Heb je meerdere websites, apps of systemen? Voeg ze allemaal toe, dan krijg je één offerte voor het geheel.
-    We rekenen niet meteen een bedrag uit, maar sturen je binnen 1 werkdag een offerte op maat.
+    Zichtbaar staan alleen de vragen die we nodig hebben om te beginnen: wat we onderzoeken,
+    hoe we eraan komen, je naam en je e-mailadres. Velden met een sterretje zijn verplicht.
+    Wil je meer opgeven, klap dan een blok open. Dit formulier rekent geen prijs uit. Je krijgt
+    binnen 1 werkdag een offerte op maat.
   </p>
 
   <noscript>
@@ -55,70 +60,6 @@
   <input type="hidden" name="urls" id="offerte-urls-value" />
   <input type="hidden" name="onderzoeksobjecten" id="offerte-scope" />
 
-  <!-- ─── RAPPORT ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Rapport</legend>
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">In welke taal moet het rapport?</legend>
-      <p class="offerte-form__help">Deze keuze geldt voor alle onderzoeken in deze aanvraag.</p>
-      <label class="offerte-form__option">
-        <input type="radio" name="taal_rapport" value="nl" checked />
-        <span>Nederlands</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="taal_rapport" value="en" />
-        <span>Engels</span>
-      </label>
-    </fieldset>
-
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Heb je een JSON-bestand van de resultaten nodig?</legend>
-      <p class="offerte-form__help">
-        Alleen nodig voor klanten die DIP online gebruiken. Daarmee lees je de resultaten
-        rechtstreeks in.
-      </p>
-      <label class="offerte-form__option">
-        <input type="radio" name="json_nodig" value="ja" />
-        <span>Ja</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="radio" name="json_nodig" value="nee" />
-        <span>Nee</span>
-      </label>
-    </fieldset>
-  </fieldset>
-
-  <!-- ─── EXTRA'S ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Extra's</legend>
-    <fieldset class="offerte-form__group">
-      <legend class="hp-form__label">Wil je hier alvast rekening mee houden?</legend>
-      <p class="offerte-form__help">Optioneel. Je zit nergens aan vast, we zetten het als keuze in de offerte.</p>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Hercontrole na oplossen" />
-        <span>Hercontrole nadat we de bevindingen hebben opgelost</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Nabespreking (1 uur)" />
-        <span>Nabespreking van het rapport (1 uur)</span>
-      </label>
-      <label class="offerte-form__option">
-        <input type="checkbox" name="extras" value="Begeleiding bij oplossen" />
-        <span>Begeleiding bij het oplossen (strippenkaart)</span>
-      </label>
-    </fieldset>
-  </fieldset>
-
-  <!-- ─── TOELICHTING ─── -->
-  <fieldset class="offerte-form__block">
-    <legend class="offerte-form__legend">Toelichting</legend>
-    <div class="hp-form__field">
-      <label class="hp-form__label" for="offerte-toelichting">Iets wat we moeten weten? (optioneel)</label>
-      <textarea class="hp-form__input hp-form__textarea" id="offerte-toelichting" name="toelichting" rows="3"
-                placeholder="Bijvoorbeeld een deadline, welk onderzoek het eerst moet, of welke onderdelen het belangrijkst zijn"></textarea>
-    </div>
-  </fieldset>
-
   <!-- ─── JOUW GEGEVENS ─── -->
   <fieldset class="offerte-form__block">
     <legend class="offerte-form__legend">Jouw gegevens</legend>
@@ -132,17 +73,97 @@
         <input class="hp-form__input" type="email" id="offerte-email" name="email" autocomplete="email" required />
       </div>
     </div>
-    <div class="hp-form__field">
-      <label class="hp-form__label" for="offerte-organisatie">Organisatie</label>
-      <input class="hp-form__input" type="text" id="offerte-organisatie" name="organisatie"
-             autocomplete="organization" />
-    </div>
-    <div class="hp-form__field">
-      <label class="hp-form__label" for="offerte-telefoon">Telefoonnummer</label>
-      <input class="hp-form__input" type="tel" id="offerte-telefoon" name="telefoon" autocomplete="tel"
-             placeholder="Bijvoorbeeld 06-11 11 11 11" />
-    </div>
   </fieldset>
+
+  {{/*
+    Wat voor de hele aanvraag geldt, in één gesloten blok. Niets hiervan is
+    verplicht; wat leeg blijft, vragen we na. De ingevulde waarden gaan mee
+    bij verzenden, ook als het blok weer dicht staat.
+  */}}
+  <details class="offerte-form__meer offerte-form__meer--aanvraag">
+    <summary class="offerte-form__meer-summary">Meer over je aanvraag (optioneel)</summary>
+    <div class="offerte-form__meer-body">
+
+      <!-- ─── RAPPORT ─── -->
+      <fieldset class="offerte-form__block">
+        <legend class="offerte-form__legend">Rapport</legend>
+        <fieldset class="offerte-form__group">
+          <legend class="hp-form__label">In welke taal moet het rapport?</legend>
+          <p class="offerte-form__help">Deze keuze geldt voor alle onderzoeken in deze aanvraag.</p>
+          <label class="offerte-form__option">
+            <input type="radio" name="taal_rapport" value="nl" checked />
+            <span>Nederlands</span>
+          </label>
+          <label class="offerte-form__option">
+            <input type="radio" name="taal_rapport" value="en" />
+            <span>Engels</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="offerte-form__group">
+          <legend class="hp-form__label">Heb je een JSON-bestand van de resultaten nodig?</legend>
+          <p class="offerte-form__help">
+            Alleen nodig voor klanten die DIP online gebruiken. Daarmee lees je de resultaten
+            rechtstreeks in.
+          </p>
+          <label class="offerte-form__option">
+            <input type="radio" name="json_nodig" value="ja" />
+            <span>Ja</span>
+          </label>
+          <label class="offerte-form__option">
+            <input type="radio" name="json_nodig" value="nee" />
+            <span>Nee</span>
+          </label>
+        </fieldset>
+      </fieldset>
+
+      <!-- ─── EXTRA'S ─── -->
+      <fieldset class="offerte-form__block">
+        <legend class="offerte-form__legend">Extra's</legend>
+        <fieldset class="offerte-form__group">
+          <legend class="hp-form__label">Wil je hier alvast rekening mee houden?</legend>
+          <p class="offerte-form__help">Optioneel. Je zit nergens aan vast, we zetten het als keuze in de offerte.</p>
+          <label class="offerte-form__option">
+            <input type="checkbox" name="extras" value="Hercontrole na oplossen" />
+            <span>Hercontrole nadat we de bevindingen hebben opgelost</span>
+          </label>
+          <label class="offerte-form__option">
+            <input type="checkbox" name="extras" value="Nabespreking (1 uur)" />
+            <span>Nabespreking van het rapport (1 uur)</span>
+          </label>
+          <label class="offerte-form__option">
+            <input type="checkbox" name="extras" value="Begeleiding bij oplossen" />
+            <span>Begeleiding bij het oplossen (strippenkaart)</span>
+          </label>
+        </fieldset>
+      </fieldset>
+
+      <!-- ─── ORGANISATIE EN TELEFOON ─── -->
+      <fieldset class="offerte-form__block">
+        <legend class="offerte-form__legend">Organisatie en telefoon</legend>
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="offerte-organisatie">Organisatie</label>
+          <input class="hp-form__input" type="text" id="offerte-organisatie" name="organisatie"
+                 autocomplete="organization" />
+        </div>
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="offerte-telefoon">Telefoonnummer</label>
+          <input class="hp-form__input" type="tel" id="offerte-telefoon" name="telefoon" autocomplete="tel"
+                 placeholder="Bijvoorbeeld 06-11 11 11 11" />
+        </div>
+      </fieldset>
+
+      <!-- ─── TOELICHTING ─── -->
+      <fieldset class="offerte-form__block">
+        <legend class="offerte-form__legend">Toelichting</legend>
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="offerte-toelichting">Iets wat we moeten weten?</label>
+          <textarea class="hp-form__input hp-form__textarea" id="offerte-toelichting" name="toelichting" rows="3"
+                    placeholder="Bijvoorbeeld een deadline, welk onderzoek het eerst moet, of welke onderdelen het belangrijkst zijn"></textarea>
+        </div>
+      </fieldset>
+    </div>
+  </details>
 
   <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
     Offerte aanvragen
