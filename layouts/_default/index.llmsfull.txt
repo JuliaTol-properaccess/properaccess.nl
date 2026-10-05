@@ -21,6 +21,7 @@
   "about"     (cond $nl "Over Proper Access" "About Proper Access")
   "services"  (cond $nl "Diensten" "Services")
   "sectors"   (cond $nl "Sectoren / Voor wie" "Sectors we work in")
+  "keyPages"  (cond $nl "Kennispagina's" "Key pages")
   "academy"   (cond $nl "Academy: uitleg WCAG en BDTO" "Academy: WCAG and the law explained")
   "blog"      (cond $nl "Blog: recente artikelen" "Blog: recent articles")
   "contact"   (cond $nl "Contact" "Contact")
@@ -68,10 +69,24 @@ What sets us apart:
 - **Our own tools, entirely EU**: built on what we found in our audits, made and hosted in Europe
 {{- end }}
 
+{{- /* Alleen pagina's die ook voor een bezoeker in de index mogen staan. Formulieren en
+       bedankpagina's hebben noindex of sitemap_exclude en horen hier dus niet in. */ -}}
+{{- $zichtbaar := slice -}}
+{{- range $p := where site.RegularPages "Lang" site.Language.Lang -}}
+{{- if and (not $p.Params.sitemap_exclude) (not (strings.Contains (lower (printf "%v" (default "" $p.Params.robots))) "noindex")) -}}
+{{- $zichtbaar = $zichtbaar | append $p -}}
+{{- end -}}
+{{- end -}}
+
+{{- /* De Nederlandse dienstpagina's staan in content/dutch/diensten/, de Engelse los in
+       content/english/ en hebben dus geen sectie. Zonder de cond hieronder bleef de
+       Engelse lijst leeg. */ -}}
+{{- $diensten := where $zichtbaar "Section" (cond $nl "diensten" "") -}}
+{{ with $diensten }}
 ## {{ $t.services }}
 
-{{ range where (where site.RegularPages "Section" "diensten") "Lang" site.Language.Lang }}
-{{- if not (in (slice "offerte-wcag-onderzoek") .File.ContentBaseName) -}}
+{{ range . }}
+{{- if not (in (slice "offerte-wcag-onderzoek" "bedankt") .File.ContentBaseName) -}}
 
 ### {{ .Title }}
 
@@ -86,10 +101,15 @@ URL: {{ .Permalink }}
 ---
 {{ end -}}
 {{ end }}
+{{ end }}
 
+{{- /* Een kop zonder inhoud eronder helpt een taalmodel niet, dus elke lijst zit in een
+       with. Engels heeft geen voor_wie en geen pages. */ -}}
+{{- $sectoren := where $zichtbaar "Section" "voor_wie" -}}
+{{ with $sectoren }}
 ## {{ $t.sectors }}
 
-{{ range where (where site.RegularPages "Section" "voor_wie") "Lang" site.Language.Lang }}
+{{ range . }}
 
 ### {{ .Title }}
 
@@ -101,6 +121,28 @@ URL: {{ .Permalink }}
 {{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
 
 ---
+{{ end }}
+{{ end }}
+
+{{- $kennis := where $zichtbaar "Section" "pages" -}}
+{{ with $kennis }}
+## {{ $t.keyPages }}
+
+{{ range . }}
+{{- if not (in (slice "bedankt") .File.ContentBaseName) -}}
+
+### {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ with .Params.description }}
+{{ . }}
+{{ end }}
+
+{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
+
+---
+{{ end -}}
+{{ end }}
 {{ end }}
 
 ## {{ $t.academy }}
