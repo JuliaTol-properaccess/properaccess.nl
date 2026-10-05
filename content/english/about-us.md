@@ -1,12 +1,14 @@
 ---
 title: "About Proper Access"
 layout: "service-en"
-meta_title: "About Proper Access: independent web accessibility auditors in Amsterdam | Proper Access"
+meta_title: "About Proper Access: independent accessibility auditors"
 date: 2026-09-10
 slug: "about-us"
 aliases:
   - /en/proper_access_in_english/
-description: "Proper Access is an independent web accessibility audit firm in Amsterdam. A team of 10, IAAP WAS-certified, more than 950 audits of websites and apps since 2019, reporting in English or Dutch."
+description: "Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, in English or Dutch."
+tldr: |
+  Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, and we report per component: every finding sits with the element it belongs to, with a user story, a screenshot and a fix. We do not build websites and do not manage content, so we never audit our own work. Since 2019 we have done more than 950 audits, 236 assignments for 63 organisations, measured on 7 August 2026. Four in ten clients come back for a second audit. We report in English or Dutch at no extra cost.
 keywords:
   - accessibility audit firm Netherlands
   - web accessibility auditors Amsterdam

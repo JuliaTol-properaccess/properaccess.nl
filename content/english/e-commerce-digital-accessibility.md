@@ -1,10 +1,10 @@
 ---
 title: "The EAA for e-commerce and e-services"
-meta_title: "WCAG audit and guidance for webshops and apps | Proper Access"
+meta_title: "WCAG audit for webshops and e-services | Proper Access"
 date: 2026-05-31
 slug: "e-commerce-digital-accessibility"
 layout: "service-en"
-description: "The European Accessibility Act has been in force since June 2025. Get your webshop checked, avoid complaints and penalties, and turn accessibility into more reach and higher conversion."
+description: "Is your webshop ready for the European Accessibility Act? We test the whole buying journey, report per element and help your team fix what we find."
 keywords:
   - e-commerce accessibility
   - webshop WCAG

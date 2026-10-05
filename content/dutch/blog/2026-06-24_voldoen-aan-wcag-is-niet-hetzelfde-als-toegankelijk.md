@@ -13,6 +13,7 @@ tags:
   - "alt-tekst"
   - "acm"
 description: "De ACM zegt het zelf: toegankelijkheid gaat niet alleen om de techniek. Een site kan 0 bevindingen hebben volgens WCAG en alsnog onbruikbaar zijn. Een rondje langs de gevallen waarin voldoen en echt kunnen gebruiken uit elkaar lopen."
+meta_description: "Een site kan 0 bevindingen hebben volgens WCAG en alsnog onbruikbaar zijn. De gevallen waarin voldoen en echt kunnen gebruiken uit elkaar lopen."
 keywords:
   - "wcag voldoen niet toegankelijk"
   - "acm toegankelijkheid techniek gebruikers"

@@ -7,6 +7,9 @@ layout: single
 url: "/en/intake/"
 robots: "noindex, nofollow"
 sitemap_exclude: true
+build:
+  list: never
+  render: true
 ---
 
 Your audit is confirmed. Fill in this form so we can schedule the work and get off to a good start. Notice later that something is missing or has changed? Just email us and we will update it.

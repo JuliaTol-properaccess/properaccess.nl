@@ -1,10 +1,12 @@
 ---
 title: "App accessibility audit"
-meta_title: "Accessibility audit of iOS and Android apps: VoiceOver and TalkBack, on real devices | Proper Access"
+meta_title: "iOS and Android app accessibility audit | Proper Access"
 date: 2026-09-10
 slug: "app-accessibility-audit"
 layout: "service-en"
-description: "We test mobile apps by hand on real iPhones, iPads and Android devices, with VoiceOver and TalkBack, against WCAG 2.2 and EN 301 549. €2,150 per platform excl. VAT, a separate report per platform, no source code needed."
+description: "We test iOS and Android apps by hand on real devices, with VoiceOver and TalkBack, against WCAG 2.2 and EN 301 549. A separate report per platform."
+tldr: |
+  We audit iOS and Android apps for digital accessibility by hand, on real iPhones, iPads and Android devices, never in an emulator. We test with the screen reader built into the operating system, VoiceOver on iOS and TalkBack on Android, against WCAG 2.2 and EN 301 549, the European standard for accessible ICT. An app fails in different places than a website: screens instead of pages, gestures instead of a mouse, and system settings instead of browser settings. You get a separate report per platform, because iOS and Android fail differently, with the findings grouped per component and a fix for each one. We do not need your source code.
 keywords:
   - app accessibility audit
   - mobile app WCAG audit
