@@ -24,7 +24,7 @@ banner:
   title: "Your government customers have to prove their digital channels are accessible, and your software is one of those channels. Here is what they will ask you for"
   content: "Every Dutch government body must publish an accessibility statement for each website, app and portal, with an audit behind it. When that channel runs on your software, the evidence they need is evidence about your product. This page tells you what the Dutch rules require, what your customers will ask, and how an audit of your product answers it."
   bullets:
-    - "**The rule:** a statement per channel in the Dutch Register, substantiated by an audit following WCAG-EM, valid for 36 months"
+    - "**The rule:** a statement per channel in the Dutch Register, substantiated by an audit that uses a well-documented evaluation method, WCAG-EM or equivalent, valid for 36 months"
     - "**What lands on you:** your customers cannot claim status A or B without evidence about the technology you deliver"
     - "**Who can help:** an independent audit of your product against WCAG 2.2 and EN 301 549, in English, that your customers can use for their statements"
   button:
@@ -56,7 +56,7 @@ sections:
       - "**C:** audit in progress or first measures taken"
       - "**D:** does not comply"
       - "**E:** no owner"
-      - "Only an audit following WCAG-EM counts. A report expires after 36 months."
+      - "The audit has to use a well-documented evaluation method: WCAG-EM or equivalent. A report expires after 36 months."
   - eyebrow: "Where it goes wrong"
     title: "Most statements in the Register are missing the evidence"
     body: "In August 2026 we analysed all 9,075 websites in the Dutch Register. 42% had no audit report at all. At 603 statements with status A or B the Register marked the substantiation as insufficient, usually because a part of the audit was missing. That is the situation your customers are in, and the missing evidence is often about software they bought. A supplier who can hand over a current WCAG-EM report saves the customer that problem, and answers the accessibility question in the next tender before it is asked."
