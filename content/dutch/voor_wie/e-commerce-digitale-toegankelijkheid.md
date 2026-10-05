@@ -85,7 +85,7 @@ hoe ze toetsen: ze lopen het hele afrekenproces door, van product in het mandje 
 Dat verhaal staat in
 [wat doet een toezichthouder eigenlijk](/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/).
 
-De norm waar de wet naar verwijst is EN 301 549. De geldende norm is op dit moment WCAG 2.1
+De norm waar de wet naar verwijst is EN 301 549. In versie V3.2.1 is dat WCAG 2.1
 niveau AA. EN 301 549 stelt daarnaast eisen aan je klantondersteuning en aan de informatie die
 je over toegankelijkheid publiceert. Wij toetsen aan WCAG 2.2 als extra service; die criteria
 zijn backwards compatible, dus alles uit 2.1 zit erin. Een chatwidget die niet met het toetsenbord

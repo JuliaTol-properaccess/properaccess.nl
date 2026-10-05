@@ -63,7 +63,7 @@ sections:
       - "Screens designed in Figma that were never checked at 200% text size"
   - eyebrow: "The standard"
     title: "EN 301 549 asks more of an app than WCAG does"
-    body: "The benchmark is EN 301 549, the European standard under the EAA. It adopts the WCAG success criteria and adds requirements that do not exist on the web: your app has to follow the text size the user set in the phone settings, and your screens have to work in both orientations. Those two points produce findings in most apps we test. We test against WCAG 2.2, one version ahead of the standard, at no extra cost."
+    body: "The benchmark is EN 301 549, the European standard under the EAA. It adopts the WCAG success criteria and adds requirements that do not exist on the web: your app has to follow the text size the user set in the phone settings, and your screens have to work in both orientations. Those two points produce findings in most apps we test. Version V3.2.1 of the standard points to WCAG 2.1; we test against WCAG 2.2, at no extra cost."
     card_eyebrow: "No source code needed"
     card_icon: "lock_open"
     card_title: "How we get the app"

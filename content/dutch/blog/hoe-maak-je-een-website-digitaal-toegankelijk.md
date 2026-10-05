@@ -61,7 +61,7 @@ Waar het hier om gaat is welk niveau jij moet halen. WCAG kent er drie:
 
 Toen ik in 2019 begon met audits, toetsten we op WCAG 2.1. In 2026 is die versie nog steeds geldig. Maar in de praktijk toetsen alle auditbureaus inmiddels op **WCAG 2.2**, de nieuwste versie uit oktober 2023.
 
-Er is één uitzondering: **apps**. Die toetsen we nog steeds op WCAG 2.1, onder de Europese norm EN 301 549. Dat verandert waarschijnlijk de komende jaren, maar voorlopig is 2.1 de norm voor apps.
+Er is één uitzondering: **apps**. Die toetsen we nog steeds op WCAG 2.1, onder de Europese norm EN 301 549. Hoofdstuk 11 van die norm gaat over apps, en versie V3.2.1 wijst daar naar WCAG 2.1 niveau A en AA.
 
 ### Wat is er nieuw in WCAG 2.2?
 
@@ -85,7 +85,7 @@ De belangrijkste nieuwe criteria:
 
 - **Website of webshop?** Toets op WCAG 2.2
 - **App?** Toets op WCAG 2.1 (conform EN 301 549)
-- **Overheidswebsite?** Het BDTO verwijst naar EN 301 549, die nu WCAG 2.1 bevat. In de praktijk adviseer ik om op 2.2 te toetsen: die criteria komen er toch aan, en je bent dan voorbereid
+- **Overheidswebsite?** Het BDTO verwijst naar EN 301 549, en versie V3.2.1 van die norm bevat WCAG 2.1. In de praktijk adviseer ik om op 2.2 te toetsen: die criteria komen er toch aan, en je bent dan voorbereid
 
 ## Waar begin je als je niet weet waar je staat?
 

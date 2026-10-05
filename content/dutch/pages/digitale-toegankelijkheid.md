@@ -21,7 +21,7 @@ aliases:
   - "/blog/wat-is-digitale-toegankelijkheid/"
 
 tldr: |
-  Digitale toegankelijkheid betekent dat je website, app of document ook te gebruiken is met hulpsoftware, met alleen het toetsenbord of sterk ingezoomd. De standaard die dat uitwerkt heet WCAG; versie 2.2 telt 55 succescriteria op de niveaus A en AA. In Nederland gelden twee wetten: het Besluit digitale toegankelijkheid overheid voor overheidsinstanties en publiekrechtelijke instellingen, en de European Accessibility Act voor bedrijven die digitale diensten aan consumenten leveren. Onder allebei ligt de Europese norm EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau A en AA. Een deel kun je zelf testen met je toetsenbord, met zoom en met een gratis tool; voor een onderbouwing die standhoudt is handmatig onderzoek nodig.
+  Digitale toegankelijkheid betekent dat je website, app of document ook te gebruiken is met hulpsoftware, met alleen het toetsenbord of sterk ingezoomd. De standaard die dat uitwerkt heet WCAG; versie 2.2 telt 55 succescriteria op de niveaus A en AA. In Nederland gelden twee wetten: het Besluit digitale toegankelijkheid overheid voor overheidsinstanties en publiekrechtelijke instellingen, en de European Accessibility Act voor bedrijven die digitale diensten aan consumenten leveren. Onder allebei ligt de Europese norm EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau A en AA. Een deel kun je zelf testen met je toetsenbord, met zoom en met een gratis tool; voor een onderbouwing die standhoudt is handmatig onderzoek nodig.
 
 banner:
   badge: "WCAG 2.2, het BDTO en de EAA"
@@ -66,7 +66,7 @@ faqs:
   - question: "Is mijn website verplicht toegankelijk?"
     answer: "Dat hangt af van wat je organisatie is. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, dat sinds 2018 geldt. Commerciële bedrijven die digitale diensten aan consumenten leveren vallen onder de European Accessibility Act, die sinds 28 juni 2025 wordt toegepast. Voor je eigen website of app geldt het ene of het andere, nooit allebei."
   - question: "Wat is het verschil tussen WCAG en de wet?"
-    answer: "WCAG is de standaard, de wet verwijst ernaar. Onder beide Nederlandse regimes ligt EN 301 549, de Europese norm voor toegankelijkheid van ICT. Die norm verwijst op dit moment naar WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2, als extra service boven de geldende norm."
+    answer: "WCAG is de standaard, de wet verwijst ernaar. Onder beide Nederlandse regimes ligt EN 301 549, de Europese norm voor toegankelijkheid van ICT. Die norm verwijst in versie V3.2.1 naar WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2, als extra service boven de geldende norm."
   - question: "Kan ik zelf testen of mijn website toegankelijk is?"
     answer: "Voor een deel wel. Met je toetsenbord, met zoom tot 400% en met een gratis tool kom je een eind. Wat je daarmee niet ziet is of een foutmelding wordt voorgelezen, of je met alleen het toetsenbord door een bestelproces komt, en of een alt-tekst klopt met wat er op de afbeelding staat."
   - question: "Hoe lang duurt een onderzoek?"
@@ -139,7 +139,7 @@ Werkt het samen met hulpsoftware, ook met de versie van volgend jaar? Dat vraagt
 
 {{< /section-cards >}}
 
-{{< section-cards title="Wat de wet van je vraagt" id="wet" columns="2" bg="light" subtitle="Nederland kent twee regimes. Welke van de twee voor jou geldt hangt af van wat je organisatie is, niet van wat je aanbiedt. Voor je eigen website of app geldt het ene of het andere, nooit allebei." noot="Onder allebei ligt EN 301 549, de Europese norm voor toegankelijkheid van ICT. Die verwijst op dit moment naar WCAG 2.1 niveau A en AA, en dat is dus de juridische ondergrens. Wij toetsen aan WCAG 2.2, als extra service boven de geldende norm. De norm gaat trouwens over meer dan je website: ook je klantenondersteuning valt eronder." >}}
+{{< section-cards title="Wat de wet van je vraagt" id="wet" columns="2" bg="light" subtitle="Nederland kent twee regimes. Welke van de twee voor jou geldt hangt af van wat je organisatie is, niet van wat je aanbiedt. Voor je eigen website of app geldt het ene of het andere, nooit allebei." noot="Onder allebei ligt EN 301 549, de Europese norm voor toegankelijkheid van ICT. Die verwijst in versie V3.2.1 naar WCAG 2.1 niveau A en AA, en dat is dus de juridische ondergrens. Wij toetsen aan WCAG 2.2, als extra service boven de geldende norm. De norm gaat trouwens over meer dan je website: ook je klantenondersteuning valt eronder." >}}
 
 {{< section-card title="Ben je overheid? Het BDTO" >}}
 

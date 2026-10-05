@@ -145,7 +145,7 @@ Maar twee dingen. Eén: zulke uitspraken zijn zeldzaam en vaak zaak-specifiek (e
 
 ### En in Europa?
 
-De jurisprudentie rondom de EAA in Europa is nog jong (de wet is sinds 28 juni 2025 van kracht). Er zijn op dit moment nog weinig gepubliceerde Europese uitspraken over overlays. Wat wel vaststaat: de EAA verwijst voor e-commerce naar de Europese norm **EN 301 549**, die voor het web-hoofdstuk **WCAG 2.1 niveau AA** bevat. Die norm wordt ingevuld door wat er feitelijk in je HTML staat. Een widget die op het scherm kleuren en lettergrootte aanbiedt, wijzigt die onderliggende code niet. Het is daarom niet aannemelijk dat een Europese rechter of een toezichthouder zoals de ACM tot een andere conclusie komt dan de Amerikaanse FTC.
+De jurisprudentie rondom de EAA in Europa is nog jong (de wet is sinds 28 juni 2025 van kracht). Er zijn op dit moment nog weinig gepubliceerde Europese uitspraken over overlays. Wat wel vaststaat: de EAA verwijst voor e-commerce naar de Europese norm **EN 301 549**, die in versie V3.2.1 voor het web-hoofdstuk **WCAG 2.1 niveau AA** bevat. Die norm wordt ingevuld door wat er feitelijk in je HTML staat. Een widget die op het scherm kleuren en lettergrootte aanbiedt, wijzigt die onderliggende code niet. Het is daarom niet aannemelijk dat een Europese rechter of een toezichthouder zoals de ACM tot een andere conclusie komt dan de Amerikaanse FTC.
 
 Met andere woorden: de juridische bescherming die overlay-leveranciers verkopen, is er niet.
 

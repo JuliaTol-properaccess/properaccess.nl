@@ -71,8 +71,8 @@ terechtkomt.
 | Overheidsinstantie of publiekrechtelijke instelling | Besluit digitale toegankelijkheid overheid, sinds 2018 | Het Register van Toegankelijkheidsverklaringen |
 | Bedrijf dat producten of diensten aan consumenten levert | European Accessibility Act, sinds 28 juni 2025 | Een eigen pagina op je website |
 
-De norm is voor allebei dezelfde: EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau A
-en AA.
+De norm is voor allebei dezelfde: EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1
+niveau A en AA.
 
 {{< /section-full >}}
 
@@ -237,9 +237,9 @@ is dat de ACM. Alle zes staan op de pagina over
 {{< section-full title="Hulp bij de onderbouwing" id="hulp" bg="light" >}}
 
 Proper Access levert het rapport dat onder je verklaring komt te staan. De norm die het model vraagt
-is EN 301 549, en de aangewezen versie daarvan verwijst naar WCAG 2.1 niveau A en AA. Wij toetsen
-handmatig volgens WCAG-EM aan WCAG 2.2 niveau AA, dus een versie hoger dan de norm eist, met twee
-schermlezers, alleen toetsenbord en zoom tot 400%. Een senior auditor voert het onderzoek uit en een
+is EN 301 549, en de aangewezen versie daarvan is V3.2.1. Die verwijst naar WCAG 2.1 niveau A en AA.
+Wij toetsen handmatig volgens WCAG-EM aan WCAG 2.2 niveau AA, dus een versie hoger dan die norm
+eist, met twee schermlezers, alleen toetsenbord en zoom tot 400%. Een senior auditor voert het onderzoek uit en een
 tweede auditor reviewt. Dat heet het 6-ogen-principe: elk rapport wordt door drie mensen bekeken.
 
 De gegevens die het nieuwe model over het onderzoek vraagt staan bij elkaar in het rapport, in de

@@ -58,7 +58,7 @@ faqs:
   - question: "Kunnen jullie het hele traject begeleiden, van inventarisatie tot herstel?"
     answer: "Ja. In een traject van 3 tot 6 maanden brengen we in kaart wat er moet gebeuren, toetsen we al je digitale kanalen, zetten we een dashboard op waarin directie, jurist en teams de voortgang zien, trainen we je devteams, je webredactie en je klantenservice, en begeleiden we het herstel tot de hercontrole. Hoe lang het duurt hangt af van het aantal kanalen en van de capaciteit van je teams; dat bespreken we in de kennismaking."
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
-    answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat op dit moment op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
+    answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat in versie V3.2.1 op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
 translationKey: "financiele-instellingen"
 ---
 

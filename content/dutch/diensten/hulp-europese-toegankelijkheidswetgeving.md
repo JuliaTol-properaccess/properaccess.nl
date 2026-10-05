@@ -10,7 +10,7 @@ aliases:
   - "/hulp-europese-toegankelijkheidswetgeving/"
 description: "Welke wet voor je geldt, wat voldoen in de praktijk vraagt en wie welke stap doet. Van onderzoek tot verantwoording, voor webshops en overheden."
 tldr: |
-  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.250 of losse vragen vanaf € 20.
+  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.250 of losse vragen vanaf € 20.
 keywords:
   - hulp bij digitale toegankelijkheid
   - digitale toegankelijkheid hulp
@@ -44,9 +44,9 @@ hulp_feiten:
   - k: "BDTO"
     v: "Overheidsinstanties en publiekrechtelijke instellingen. Sinds 2018"
   - k: "De norm"
-    v: "Allebei wijzen ze naar EN 301 549, dat op dit moment op WCAG 2.1 niveau A en AA staat"
+    v: "Allebei wijzen ze naar EN 301 549, dat in versie V3.2.1 op WCAG 2.1 niveau A en AA staat"
   - k: "Wij toetsen aan"
-    v: "WCAG 2.2, een versie hoger dan de norm vraagt. Die criteria zijn backwards compatible, dus alles uit 2.1 zit erin"
+    v: "WCAG 2.2, een versie hoger dan EN 301 549 V3.2.1 vraagt. Die criteria zijn backwards compatible, dus alles uit 2.1 zit erin"
   - k: "Verantwoording"
     v: "Onder het BDTO een verklaring in het Register. Onder de EAA informatie over toegankelijkheid op je eigen website"
   - k: "Uitzondering"
