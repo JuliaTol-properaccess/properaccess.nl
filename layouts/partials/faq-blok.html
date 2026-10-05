@@ -1,0 +1,55 @@
+{{/* FAQ-blok: de zichtbare tegenhanger van het FAQPage-schema dat json-ld.html uit
+     hetzelfde faqs-veld maakt. Zonder dit blok staat er gestructureerde data op de
+     pagina die een bezoeker nergens kan lezen, en dat is precies wat Google's
+     richtlijn voor FAQ-schema verbiedt.
+
+     Dit blok stond los in diensten/agency.html, diensten/audit.html en
+     voor_wie/sectie.html, elke keer met een andere hardgecodeerde kop. Daardoor liep
+     een correctie drie keer mis te lopen. Eén bron, kop als parameter.
+
+     Aanroepen:
+       {{ partial "faq-blok.html" (dict "page" .) }}
+       {{ partial "faq-blok.html" (dict "page" . "kop" "Vragen die we vaak krijgen") }}
+
+     Parameters:
+       page       de pagina. Verplicht.
+       kop        de standaardkop. Zonder opgave "Veelgestelde vragen".
+       container  klasse van de binnenste div. Zonder opgave "hp-container".
+
+     Front matter:
+       faqs         lijst met question en answer. Zonder faqs rendert dit niets.
+       faq_title    vervangt de kop, ook in de donkerblauwe standaardvariant.
+       faq_style    "flat" zet de FAQ op wit met hairlines in plaats van donkerblauw.
+       faq_eyebrow  label boven de kop, alleen in de flat-variant.
+
+     Een answer mag meerdere alinea's hebben: zet \n\n in de YAML-string. Daarom
+     RenderString met display block en niet markdownify, want markdownify haalt de
+     omsluitende <p> van een enkele alinea weg. */}}
+{{ $page := .page }}
+{{ $kop := $page.Params.faq_title | default (.kop | default "Veelgestelde vragen") }}
+{{ $container := .container | default "hp-container" }}
+{{ with $page.Params.faqs }}
+{{ $flat := eq $page.Params.faq_style "flat" }}
+<section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}">
+  <div class="{{ $container }}">
+    {{ if $flat }}
+    <div class="hp-faq__header">
+      {{ with $page.Params.faq_eyebrow }}<p class="hp-faq__eyebrow">{{ . }}</p>{{ end }}
+      <h2 class="hp-heading-lg hp-faq__title">{{ $kop }}</h2>
+    </div>
+    {{ else }}
+    <h2 class="hp-heading-lg hp-faq__title">{{ $kop }}</h2>
+    {{ end }}
+    <div class="hp-faq__container faq-container">
+      {{ range . }}
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            {{ $page.RenderString (dict "display" "block") .answer }}
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
