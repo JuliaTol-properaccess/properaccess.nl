@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ $nl := eq .Lang "nl" }}
+{{ $labelNL := "Taal: Nederlands. Schakel naar Engels." }}
+{{ $labelEN := "Language: English. Switch to Dutch." }}
 <section class="section pt-14">
   <div class="container">
 
@@ -6,9 +9,9 @@
 
     <section class="quiz-section" id="quizSection">
       <div class="quiz__lang-toggle">
-        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="NL EN, switch to English">
-          <span class="quiz__lang-opt quiz__lang-opt--active" id="quizLangNL">NL</span>
-          <span class="quiz__lang-opt" id="quizLangEN">EN</span>
+        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="{{ if $nl }}{{ $labelNL }}{{ else }}{{ $labelEN }}{{ end }}">
+          <span class="quiz__lang-opt{{ if $nl }} quiz__lang-opt--active{{ end }}" id="quizLangNL">NL</span>
+          <span class="quiz__lang-opt{{ if not $nl }} quiz__lang-opt--active{{ end }}" id="quizLangEN">EN</span>
         </button>
       </div>
       <div id="quizContainer"></div>
@@ -22,13 +25,14 @@
     var btn = document.getElementById('quizLangToggle');
     var nlOpt = document.getElementById('quizLangNL');
     var enOpt = document.getElementById('quizLangEN');
-    var currentLang = 'nl';
+    var labels = { nl: {{ $labelNL | jsonify | safeJS }}, en: {{ $labelEN | jsonify | safeJS }} };
+    var currentLang = {{ cond $nl "nl" "en" | jsonify | safeJS }};
     if (btn) {
       btn.addEventListener('click', function () {
         currentLang = currentLang === 'nl' ? 'en' : 'nl';
         nlOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'nl');
         enOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'en');
-        btn.setAttribute('aria-label', currentLang === 'nl' ? 'NL EN, switch to English' : 'NL EN, schakel naar Nederlands');
+        btn.setAttribute('aria-label', labels[currentLang]);
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }
