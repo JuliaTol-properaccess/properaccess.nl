@@ -16,8 +16,15 @@
   const fontSizeSlider = document.getElementById("fontSizeSlider");
   const fontSizeValue = document.getElementById("fontSizeValue");
   const sizeIndicator = document.getElementById("sizeIndicator");
+  const resultsGrid = document.getElementById("resultsGrid");
 
   if (!fgColor || !bgColor) return;
+
+  // De layout rendert deze teksten per taal; de waarde hier is de terugval.
+  function tekst(el, naam, terugval) {
+    var waarde = el && el.getAttribute("data-" + naam);
+    return waarde || terugval;
+  }
 
   // WCAG contrast calculation
   function hexToRgb(hex) {
@@ -100,10 +107,10 @@
     if (!el) return;
     if (pass) {
       el.className = "tool-contrast__badge tool-contrast__badge--pass";
-      el.textContent = "Voldoet";
+      el.textContent = tekst(resultsGrid, "pass", "Voldoet");
     } else {
       el.className = "tool-contrast__badge tool-contrast__badge--fail";
-      el.textContent = "Onvoldoende";
+      el.textContent = tekst(resultsGrid, "fail", "Onvoldoende");
     }
   }
 
@@ -208,10 +215,10 @@
     // WCAG "large text" = 24px (18pt) or 18.66px (14pt) bold
     var isLarge = px >= 24;
     if (isLarge) {
-      sizeIndicator.textContent = "Dit is grote tekst \u2014 de drempel is 3:1 (AA) / 4.5:1 (AAA)";
+      sizeIndicator.textContent = tekst(sizeIndicator, "large", "Dit is grote tekst \u2014 de drempel is 3:1 (AA) / 4.5:1 (AAA)");
       sizeIndicator.className = "tool-contrast__size-indicator tool-contrast__size-indicator--large";
     } else {
-      sizeIndicator.textContent = "Dit is normale tekst \u2014 de drempel is 4.5:1 (AA) / 7:1 (AAA)";
+      sizeIndicator.textContent = tekst(sizeIndicator, "normal", "Dit is normale tekst \u2014 de drempel is 4.5:1 (AA) / 7:1 (AAA)");
       sizeIndicator.className = "tool-contrast__size-indicator tool-contrast__size-indicator--normal";
     }
   }

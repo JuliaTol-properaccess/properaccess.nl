@@ -68,7 +68,11 @@
           <input type="range" id="fontSizeSlider" min="10" max="48" value="16" step="1">
           <span class="tool-contrast__size-hint">48px</span>
         </div>
-        <div class="tool-contrast__size-indicator" id="sizeIndicator"></div>
+        <div
+          class="tool-contrast__size-indicator"
+          id="sizeIndicator"
+          data-large="{{ if eq .Lang "nl" }}Dit is grote tekst — de drempel is 3:1 (AA) / 4.5:1 (AAA){{ else }}This is large text, so the threshold is 3:1 (AA) / 4.5:1 (AAA){{ end }}"
+          data-normal="{{ if eq .Lang "nl" }}Dit is normale tekst — de drempel is 4.5:1 (AA) / 7:1 (AAA){{ else }}This is normal text, so the threshold is 4.5:1 (AA) / 7:1 (AAA){{ end }}"></div>
       </div>
     </div>
 
@@ -79,7 +83,14 @@
     </div>
 
     <!-- Results grid -->
-    <div class="tool-contrast__results" id="resultsGrid" role="region" aria-label="{{ if eq .Lang "nl" }}Resultaten per WCAG-niveau{{ else }}Results per WCAG level{{ end }}" aria-live="polite">
+    <div
+      class="tool-contrast__results"
+      id="resultsGrid"
+      role="region"
+      aria-label="{{ if eq .Lang "nl" }}Resultaten per WCAG-niveau{{ else }}Results per WCAG level{{ end }}"
+      data-pass="{{ if eq .Lang "nl" }}Voldoet{{ else }}Pass{{ end }}"
+      data-fail="{{ if eq .Lang "nl" }}Onvoldoende{{ else }}Fail{{ end }}"
+      aria-live="polite">
       <div class="tool-contrast__card">
         <h2>{{ if eq .Lang "nl" }}Niveau{{ else }}Level{{ end }} AA</h2>
         <div class="tool-contrast__row">
