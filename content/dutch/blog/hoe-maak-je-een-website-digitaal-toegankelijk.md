@@ -103,7 +103,7 @@ Je kunt pas een plan maken als je weet wat er aan de hand is. Er zijn twee manie
 - Draai Lighthouse in Chrome DevTools (maar weet dat dit maximaal 30 procent van de problemen vindt)
 
 **Een professionele audit laten doen:**
-Weet je nog niet of een volledig onderzoek nodig is, dan is een [mini-audit](/webshop-quickscan/) van 495 euro exclusief btw de kortste weg naar een eerste beeld: tot vijf uur handmatige controle, binnen een paar dagen. Een audit door een gespecialiseerd bureau geeft je een compleet beeld. Bij Proper Access toetsen we handmatig op alle 55 succescriteria van WCAG 2.2, met echte hulpsoftware. Je krijgt een rapport met per pagina en per element precies wat er aan de hand is en hoe je het oplost.
+Weet je nog niet of een volledig onderzoek nodig is, dan is een [mini-audit](/webshop-quickscan/) van 495 euro exclusief btw de kortste weg naar een eerste beeld: tot vijf uur handmatige controle, binnen een paar dagen. Een audit door een gespecialiseerd bureau geeft je een compleet beeld. Bij Proper Access toetsen we handmatig op alle 55 succescriteria van WCAG 2.2 op niveau A en AA, met echte hulpsoftware. Je krijgt een rapport met per pagina en per element precies wat er aan de hand is en hoe je het oplost.
 
 ### Stap 2: Prioriteer
 

@@ -69,7 +69,7 @@ De checkout is voor bijna elke webshop het meest complexe onderdeel. Multi-step?
 
 ### 3. Aantal interactieve componenten
 
-Mega-menu's, productfilters, varianten-pickers, maattabellen, mini-cart, image-zoom, zoekfunctionaliteiten, accordions, tabs, modals, chats, feedbackmechanismen: elk interactief element moet apart getest worden op veel checkpunten. We testen elke pagina op 55 succescriteria, die samen leiden tot honderden checks. Een minimalistische shop met weinig interacties kost minder dan een feature-rijke.
+Mega-menu's, productfilters, varianten-pickers, maattabellen, mini-cart, image-zoom, zoekfunctionaliteiten, accordions, tabs, modals, chats, feedbackmechanismen: elk interactief element moet apart getest worden op veel checkpunten. We testen elke pagina op de 55 succescriteria van WCAG 2.2 op niveau A en AA, die samen leiden tot honderden checks. Een minimalistische shop met weinig interacties kost minder dan een feature-rijke.
 
 ### 4. Multilingual
 

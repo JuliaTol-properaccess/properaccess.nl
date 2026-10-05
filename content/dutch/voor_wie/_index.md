@@ -38,8 +38,8 @@ onderzoek tot verantwoording.
 
 {{< section-full title="Wat per sector verschilt" >}}
 
-De succescriteria zijn overal dezelfde 55. Wat verschilt is waar we kijken, en wat je met het
-rapport moet aantonen.
+De succescriteria zijn overal dezelfde 55 op niveau A en AA. Wat verschilt is waar we kijken,
+en wat je met het rapport moet aantonen.
 
 Bij een webshop lopen we het hele afrekenproces door, van product in het mandje tot betaling.
 Daar kijkt de Autoriteit Consument en Markt ook naar. Die toetste in 2026 tien bedrijven volledig

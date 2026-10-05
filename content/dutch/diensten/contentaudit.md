@@ -9,7 +9,7 @@ slug: "contentaudit"
 url: "/contentaudit/"
 description: "We toetsen alleen de content van je website. Voor organisaties waar de techniek bij een externe leverancier ligt en jij daar niets aan kunt veranderen."
 tldr: |
-  Een contentaudit toetst alleen de content die je webredactie zelf beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's. We dekken 33 van de 55 succescriteria van WCAG 2.2, met een user story per bevinding zodat de impact leesbaar blijft. Bedoeld voor organisaties waar de techniek bij een externe leverancier ligt en je daar zelf niets aan kunt veranderen. Zo staat je rapport niet vol met bevindingen die je toch niet kunt oplossen.
+  Een contentaudit toetst alleen de content die je webredactie zelf beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's. We dekken 33 van de 55 succescriteria van WCAG 2.2 op niveau A en AA, met een user story per bevinding zodat de impact leesbaar blijft. Bedoeld voor organisaties waar de techniek bij een externe leverancier ligt en je daar zelf niets aan kunt veranderen. Zo staat je rapport niet vol met bevindingen die je toch niet kunt oplossen.
 keywords:
   - contentaudit wcag
   - deelonderzoek toegankelijkheid
@@ -47,7 +47,7 @@ Een contentaudit beperkt zich tot wat jij wel beheert: teksten, koppenstructuur,
 
 {{< section-full title="Wat we toetsen" bg="light" >}}
 
-Een contentaudit dekt 33 van de 55 succescriteria van WCAG 2.2. We toetsen alleen de content die je webredactie zelf heeft toegevoegd en in eigen hand heeft, niet de techniek eronder.
+Een contentaudit dekt 33 van de 55 succescriteria van WCAG 2.2 op niveau A en AA. We toetsen alleen de content die je webredactie zelf heeft toegevoegd en in eigen hand heeft, niet de techniek eronder.
 
 De grens tussen content en techniek is niet altijd scherp. Een voorbeeld: kan een redacteur een `autocomplete`-attribuut toevoegen aan een invoerveld waar persoonlijke informatie wordt verzameld? In de meeste CMS-en niet, dat is werk voor een ontwikkelaar. Maar er zijn formulier-plugins waarin het inmiddels wel kan, zonder dat een redacteur de techniek hoeft aan te raken. Wat eerst een technisch probleem was, is in zo'n geval redactie-werk.
 

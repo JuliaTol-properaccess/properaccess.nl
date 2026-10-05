@@ -66,8 +66,9 @@ namen die je in offertes en aanbestedingen door elkaar ziet staan, voor precies 
 Verwarrend, maar je hoeft er niet op te letten: wie een van deze vier vraagt, vraagt om een
 toets aan WCAG 2.2 op niveau A en AA.
 
-Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 op niveau AA telt 55 succescriteria. Een
-geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die een tool kan meten.
+Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 telt op niveau A en AA samen 55
+succescriteria. Een geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die
+een tool kan meten.
 De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
 formulier loopt, de focusvolgorde controleert en inzoomt tot 400%. Dat is waarom een onderzoek
 uren kost en een scan seconden, en waarom alleen het eerste bruikbaar is als bewijs.
@@ -114,7 +115,7 @@ Welk onderzoek je nodig hebt, hangt af van wat je zelf kunt veranderen. Ligt de 
 externe leverancier, dan heeft het weinig zin om een rapport te krijgen vol bevindingen waar je
 zelf niets mee kunt.
 
-| Onderzoek | Wat we toetsen | Succescriteria | Voor wie |
+| Onderzoek | Wat we toetsen | Succescriteria (niveau A en AA) | Voor wie |
 | --- | --- | --- | --- |
 | [Volledig onderzoek](/toegankelijkheidsaudit/) | Techniek en content samen, volgens WCAG-EM | 55 van de 55 | Organisaties die moeten aantonen dat ze voldoen aan de European Accessibility Act of het Besluit digitale toegankelijkheid overheid |
 | [Contentaudit](/contentaudit/) | Alleen wat je redactie beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's | 33 van de 55 | Organisaties waar de techniek bij een externe leverancier ligt. Alleen mogelijk als de techniek ook is onderzocht |

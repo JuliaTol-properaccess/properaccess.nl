@@ -13,7 +13,7 @@ description: "55 WCAG 2.2-succescriteria, gefilterd op type beperking. Ontdek we
 meta_description: "De 55 succescriteria van WCAG 2.2 op niveau A en AA, gefilterd op type beperking. Zo zie je welke eisen gelden voor jouw bezoekers."
 ---
 
-WCAG 2.2 bevat 55 succescriteria. Maar niet elk criterium is relevant voor elke bezoeker. Sommige gaan over kleurgebruik, andere over toetsenbordbediening, en weer andere over bewegende content.
+WCAG 2.2 heeft 55 succescriteria op niveau A en AA. Maar niet elk criterium is relevant voor elke bezoeker. Sommige gaan over kleurgebruik, andere over toetsenbordbediening, en weer andere over bewegende content.
 
 De vraag is: welke criteria zijn relevant voor de bezoekers van jouw website?
 
@@ -27,7 +27,7 @@ Onze gratis tool [WCAG-succescriteria per beperking](/tools/sc-per-beperking/) l
 - **Cognitief:** concentratieproblemen, leesproblemen
 - **Neurologisch:** epilepsie, vestibulaire aandoeningen
 
-Per criterium zie je het nummer, de naam, het niveau (A, AA of AAA) en welke beperkingen het raakt. Zo weet je in een oogopslag wat er speelt.
+Per criterium zie je het nummer, de naam, het niveau (A of AA) en welke beperkingen het raakt. Zo weet je in een oogopslag wat er speelt.
 
 ## Wanneer is dit handig?
 

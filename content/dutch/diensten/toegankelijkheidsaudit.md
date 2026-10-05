@@ -86,8 +86,9 @@ Toegankelijkheidsaudit, WCAG-audit, toegankelijkheidstoets, toegankelijkheidsond
 namen die je in offertes en aanbestedingen door elkaar ziet staan, voor hetzelfde werk. Wie een
 van deze vier vraagt, vraagt om een toets aan WCAG 2.2 op niveau A en AA.
 
-Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 op niveau AA telt 55 succescriteria. Een
-geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die een tool kan meten.
+Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 telt op niveau A en AA samen 55
+succescriteria. Een geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die
+een tool kan meten.
 De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
 formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
 
@@ -145,7 +146,7 @@ Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastl
 
 {{< /section-full >}}
 
-{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type audit past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria. Soms past een deelonderzoek beter." >}}
+{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type audit past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria op niveau A en AA. Soms past een deelonderzoek beter." >}}
 {{< section-card title="Contentaudit" >}}
 
 33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
