@@ -760,7 +760,7 @@
   function updateLangToggle() {
     var nlOpt = document.getElementById("langOptNL");
     var enOpt = document.getElementById("langOptEN");
-    var btn = document.getElementById("langToggle");
+    var action = document.getElementById("langAction");
     if (!nlOpt || !enOpt) return;
     if (currentLang === "en") {
       nlOpt.classList.remove("tool-pdf__lang-opt--active");
@@ -769,7 +769,9 @@
       nlOpt.classList.add("tool-pdf__lang-opt--active");
       enOpt.classList.remove("tool-pdf__lang-opt--active");
     }
-    if (btn) btn.setAttribute("aria-label", t("langLabel"));
+    // De naam van de knop rolt uit de inhoud, zodat de zichtbare tekst
+    // "NL EN" er altijd in zit (WCAG 2.5.3).
+    if (action) action.textContent = t("langAction");
   }
 
   function setLang(lang) {
