@@ -26,8 +26,8 @@ hetzelfde uitzien kunnen onder verschillende wetten vallen. "Publiekrechtelijke 
 namelijk een begrip uit het aanbestedingsrecht met drie voorwaarden, en een subsidie op zich is er
 geen van. Twijfel je, dan kijken we daar samen naar voordat we een offerte maken.
 
-Onder allebei de wetten ligt dezelfde norm: EN 301 549, die op dit moment verwijst naar WCAG 2.1
-niveau A en AA. Wij toetsen aan WCAG 2.2, een versie verder dan de wet vraagt.
+Onder allebei de wetten ligt dezelfde norm: EN 301 549, die in versie V3.2.1 verwijst naar
+WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2, als extra service boven die norm.
 
 Wil je weten wat dat voor jouw organisatie betekent, lees dan verder over
 [de European Accessibility Act](/eaa/) of over

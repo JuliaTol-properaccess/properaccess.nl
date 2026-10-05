@@ -119,7 +119,7 @@ en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd.
 Ben je een commercieel bedrijf, dan val je onder de **European Accessibility Act**, die sinds
 28 juni 2025 geldt.
 
-De norm eronder is in beide gevallen EN 301 549. De geldende norm is op dit moment WCAG 2.1
+De norm eronder is in beide gevallen EN 301 549. In versie V3.2.1 is dat WCAG 2.1
 niveau AA. Wij toetsen aan WCAG 2.2 als extra service. De eisen aan je website verschillen dus
 niet tussen de twee wetten; wat verschilt is hoe je erover verantwoording aflegt.
 

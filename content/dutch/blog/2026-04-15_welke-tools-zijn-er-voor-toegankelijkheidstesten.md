@@ -143,7 +143,7 @@ Val je onder het Besluit digitale toegankelijkheid overheid, dan heb je een verk
 
 Val je onder de European Accessibility Act, dan is er helemaal geen onderzoeksplicht. Wat de wet van je vraagt is een toegankelijke website of app. Een onderzoek is de manier om te weten of je daar staat, en een scan dekt daar ongeveer 30% van af.
 
-De norm waar beide wetten naar wijzen is EN 301 549. Die staat op dit moment op WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2 als extra service.
+De norm waar beide wetten naar wijzen is EN 301 549. Die staat in versie V3.2.1 op WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2 als extra service.
 
 ## Wat wij zelf gebruiken
 

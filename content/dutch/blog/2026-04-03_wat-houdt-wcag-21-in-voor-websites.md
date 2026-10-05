@@ -16,7 +16,7 @@ keywords:
   - EAA
 ---
 
-WCAG 2.1 is de versie van de Web Content Accessibility Guidelines waar de Nederlandse wetgeving op dit moment naar verwijst. Het beschrijft 78 succescriteria verdeeld over vier principes: waarneembaar, bedienbaar, begrijpelijk en robuust.
+WCAG 2.1 is de versie van de Web Content Accessibility Guidelines waar de Nederlandse wetgeving naar verwijst, via EN 301 549 V3.2.1. Het beschrijft 78 succescriteria verdeeld over vier principes: waarneembaar, bedienbaar, begrijpelijk en robuust.
 
 ## Wat is er nieuw in 2.1 vergeleken met 2.0?
 
@@ -47,7 +47,7 @@ In de praktijk hebben de meeste websites dezelfde problemen:
 
 ## WCAG 2.1 of 2.2?
 
-De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 is backwards compatible: alles uit 2.1 zit er nog in. De Europese wetgeving verwijst naar de EN 301 549-norm, en die staat op dit moment op WCAG 2.1 niveau AA. Dat is dus de versie waar je aan moet voldoen.
+De nieuwste versie is WCAG 2.2, die nog negen extra criteria toevoegt. WCAG 2.2 is backwards compatible: alles uit 2.1 zit er nog in. De Europese wetgeving verwijst naar de EN 301 549-norm, en die staat in versie V3.2.1 op WCAG 2.1 niveau AA. Dat is dus de versie waar je aan moet voldoen.
 
 Ons advies: laat toch op WCAG 2.2 toetsen. Je voldoet daarmee sowieso aan de geldende norm, je hebt de negen extra criteria alvast in beeld, en je hoeft niet opnieuw te beginnen zodra EN 301 549 wordt bijgewerkt. Wij toetsen daarom standaard aan 2.2.
 

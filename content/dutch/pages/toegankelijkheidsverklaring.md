@@ -71,8 +71,8 @@ terechtkomt.
 | Overheidsinstantie of publiekrechtelijke instelling | Besluit digitale toegankelijkheid overheid, sinds 2018 | Het Register van Toegankelijkheidsverklaringen |
 | Bedrijf dat producten of diensten aan consumenten levert | European Accessibility Act, sinds 28 juni 2025 | Een eigen pagina op je website |
 
-De norm is voor allebei dezelfde: EN 301 549, die op dit moment verwijst naar WCAG 2.1 niveau A
-en AA.
+De norm is voor allebei dezelfde: EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1
+niveau A en AA.
 
 {{< /section-full >}}
 

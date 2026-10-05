@@ -6,7 +6,7 @@ slug: "european-accessibility-act"
 layout: "service-en"
 description: "What the European Accessibility Act asks of companies serving Dutch consumers, which standard applies, and which of six regulators supervises you."
 tldr: |
-  The European Accessibility Act, Directive (EU) 2019/882, has applied since 28 June 2025. It requires companies that offer digital services to consumers to make those services accessible. The benchmark is EN 301 549, the European standard for accessible ICT, which currently points to WCAG 2.1 level A and AA. Enforcement in the Netherlands is not in the hands of one authority: it is split over six existing regulators, each for its own sector, and for most companies that is the ACM for webshops and online services, the AFM for financial services or the ILT for passenger transport. What the law requires is an accessible service, not an audit; an audit is how you find out where you stand. The exemption for micro-enterprises covers services only, and it applies when you have fewer than 10 employees and an annual turnover or balance sheet total of at most 2 million euro.
+  The European Accessibility Act, Directive (EU) 2019/882, has applied since 28 June 2025. It requires companies that offer digital services to consumers to make those services accessible. The benchmark is EN 301 549, the European standard for accessible ICT, which in version V3.2.1 points to WCAG 2.1 level A and AA. Enforcement in the Netherlands is not in the hands of one authority: it is split over six existing regulators, each for its own sector, and for most companies that is the ACM for webshops and online services, the AFM for financial services or the ILT for passenger transport. What the law requires is an accessible service, not an audit; an audit is how you find out where you stand. The exemption for micro-enterprises covers services only, and it applies when you have fewer than 10 employees and an annual turnover or balance sheet total of at most 2 million euro.
 keywords:
   - European Accessibility Act Netherlands
   - EAA Netherlands
@@ -23,7 +23,7 @@ banner:
   content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. Proper Access audits websites and apps against EN 301 549 and WCAG 2.2. This page tells you which rules apply to you, who supervises you and what to do first."
   bullets:
     - "**Directive (EU) 2019/882**, implemented in Dutch law and applied since 28 June 2025"
-    - "**The standard is EN 301 549**, which currently points to WCAG 2.1 level A and AA"
+    - "**The standard is EN 301 549**, which in version V3.2.1 points to WCAG 2.1 level A and AA"
     - "**Six regulators**: the ACM for webshops and online services, the AFM for financial services, the ILT for passenger transport"
   button:
     enable: true
@@ -54,7 +54,7 @@ sections:
       - "The exemption applies to services. Products keep their obligations, with lighter paperwork."
   - eyebrow: "What"
     title: "An accessible website or app, measured against EN 301 549"
-    body: "The law requires an accessible service. It does not require an audit; an audit is how you find out where you stand. The benchmark is EN 301 549, the European standard for accessible ICT. That standard currently points to WCAG 2.1 level A and AA. We test against WCAG 2.2, which contains everything in 2.1 plus nine new criteria, because the AFM already asks firms to work towards it. EN 301 549 goes beyond the web page: your customer support has to be reachable by someone who cannot phone, and documentation you supply has to be accessible too."
+    body: "The law requires an accessible service. It does not require an audit; an audit is how you find out where you stand. The benchmark is EN 301 549, the European standard for accessible ICT. In version V3.2.1 that standard points to WCAG 2.1 level A and AA. We test against WCAG 2.2, which contains everything in 2.1 plus nine new criteria, because the AFM already asks firms to work towards it. EN 301 549 goes beyond the web page: your customer support has to be reachable by someone who cannot phone, and documentation you supply has to be accessible too."
     card_eyebrow: "In practice"
     card_icon: "fact_check"
     card_title: "What that means for your site"
@@ -102,7 +102,7 @@ faqs:
   - question: "Does the EAA apply to B2B services?"
     answer: "The EAA is about services to consumers. The AFM writes on its page that services to business customers fall outside the EAA, and adds that a sole trader who takes a service privately is a consumer. If your website serves both, the consumer part is in scope."
   - question: "Is WCAG 2.1 AA enough to comply?"
-    answer: "WCAG 2.1 level A and AA is what EN 301 549 currently points to, so that is the legal floor for the web part of your service. Two things to know. First, EN 301 549 also covers your customer support and documentation, so a website that passes WCAG can still fall short on the standard as a whole. Second, a new version of EN 301 549 that adopts WCAG 2.2 exists as a draft and is expected to be designated in the Official Journal; the AFM already asks firms to work towards WCAG 2.2. We test against 2.2 for that reason."
+    answer: "WCAG 2.1 level A and AA is what EN 301 549 V3.2.1 points to, so that is the legal floor for the web part of your service. Two things to know. First, EN 301 549 also covers your customer support and documentation, so a website that passes WCAG can still fall short on the standard as a whole. Second, V4 of EN 301 549 adopts WCAG 2.2, but it has not been designated in the Official Journal of the EU; the AFM already asks firms to work towards WCAG 2.2. We test against 2.2 for that reason."
   - question: "Do we need to publish an accessibility statement?"
     answer: "Under the EAA you publish information about the accessibility of your service on a separate page on your website; the AFM calls this an accessibility statement and expects it from every firm it supervises. It is not the same as the accessibility statement in the Dutch government register: that register belongs to the government decree, not to the EAA."
   - question: "What are the penalties?"

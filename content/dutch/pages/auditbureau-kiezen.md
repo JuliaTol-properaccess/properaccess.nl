@@ -18,7 +18,7 @@ faqs:
   - question: "Moet ik het onderzoek door een extern bureau laten doen?"
     answer: "Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
   - question: "Toetsen jullie aan WCAG 2.1 of aan WCAG 2.2?"
-    answer: "Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm onder EN 301 549 staat op dit moment op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op één punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1."
+    answer: "Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm is EN 301 549 V3.2.1, en die staat op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op één punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1."
   - question: "Voldoet mijn website aan de wet zodra het rapport klaar is?"
     answer: "Nee. Het rapport vertelt je waar je staat en wat er moet gebeuren. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier om te weten wat daarvoor nodig is, en het oplossen komt daarna."
   - question: "Val ik onder het BDTO of onder de EAA?"
@@ -293,7 +293,7 @@ en browser meestal uit eigen waarneming kunnen beantwoorden.
 <details class="faq-item">
 <summary class="faq-question">Toetsen jullie aan WCAG 2.1 of aan WCAG 2.2?</summary>
 <div class="faq-answer">
-<p>Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm onder EN 301 549 staat op dit moment op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op &eacute;&eacute;n punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1.</p>
+<p>Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm is EN 301 549 V3.2.1, en die staat op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op &eacute;&eacute;n punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1.</p>
 </div>
 </details>
 <details class="faq-item">
