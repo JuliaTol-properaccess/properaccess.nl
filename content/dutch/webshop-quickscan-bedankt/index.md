@@ -4,4 +4,8 @@ description: "Je mini-audit is aangevraagd. We nemen contact op om hem in te pla
 type: quickscan
 layout: bedankt
 robots: "noindex, nofollow"
+sitemap_exclude: true
+build:
+  list: never
+  render: true
 ---
