@@ -38,10 +38,10 @@ Bij 100% zoom zie je het probleem niet. Bij 200% misschien ook niet. Maar bij 40
 /* Niet doen */
 .container { overflow: hidden; }
 
-/* Wel doen — container groeit mee */
+/* Wel doen: container groeit mee */
 .container { overflow: visible; }
 
-/* Of — scrollbar als fallback */
+/* Of: scrollbar als fallback */
 .container { overflow-x: auto; }
 ```
 

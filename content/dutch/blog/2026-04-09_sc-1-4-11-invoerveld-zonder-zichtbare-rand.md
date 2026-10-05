@@ -29,13 +29,13 @@ Dit is een trend die ik steeds vaker tegenkom: minimalistische formulieren. Stra
 **De eis:** als er geen placeholdertekst met voldoende contrast (4,5:1) aanwezig is, moet de rand van het invoerveld minimaal 3:1 contrasteren met de achtergrond.
 
 ```css
-/* Niet doen — contrast 1,5:1 */
+/* Niet doen: contrast 1,5:1 */
 .invoerveld {
   border: 1px solid #D9D9D9;
   background: #FFFFFF;
 }
 
-/* Wel doen — contrast 3,1:1 */
+/* Wel doen: contrast 3,1:1 */
 .invoerveld {
   border: 1px solid #767676;
   background: #FFFFFF;

@@ -28,10 +28,10 @@ Maar voor iemand met verminderd gezichtsvermogen is het alsof je door matglas pr
 Eén kleur donkerder. Van #999999 naar #767676. Verschil in design? Minimaal. Verschil in leesbaarheid? Enorm.
 
 ```css
-/* Niet doen — contrast 2,85:1 */
+/* Niet doen: contrast 2,85:1 */
 .subtekst { color: #999999; }
 
-/* Wel doen — contrast 4,64:1 */
+/* Wel doen: contrast 4,64:1 */
 .subtekst { color: #767676; }
 ```
 
