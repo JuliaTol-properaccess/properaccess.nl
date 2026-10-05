@@ -27,7 +27,7 @@ Onze gratis tool [WCAG-succescriteria per beperking](/tools/sc-per-beperking/) l
 - **Cognitief:** concentratieproblemen, leesproblemen
 - **Neurologisch:** epilepsie, vestibulaire aandoeningen
 
-Per criterium zie je het nummer, de naam, het niveau (A of AA) en welke beperkingen het raakt. Zo weet je in een oogopslag wat er speelt.
+Per criterium zie je het nummer, de naam, het niveau (A, AA of AAA) en welke beperkingen het raakt. Zo weet je in een oogopslag wat er speelt.
 
 ## Wanneer is dit handig?
 
