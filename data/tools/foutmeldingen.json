@@ -9,7 +9,7 @@
     "principle331dt": "<strong>SC 3.3.1</strong> Foutidentificatie <span class=\"tool-fout__level\">Niveau A</span>",
     "principle331dd": "Als er een invoerfout wordt ontdekt, wordt het onderdeel met de fout aan de gebruiker getoond en wordt de fout in tekst beschreven.",
     "principle333dt": "<strong>SC 3.3.3</strong> Foutsuggestie <span class=\"tool-fout__level\">Niveau AA</span>",
-    "principle333dd": "Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond — tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.",
+    "principle333dd": "Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond, tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.",
     "ctaLine1": "Wil je weten of de foutmeldingen op jouw website voldoen aan de WCAG-richtlijnen?",
     "ctaLine2": "<a href=\"/contact/\">Vraag een audit aan</a> of bel <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
     "langLabel": "Taal: Nederlands. Schakel naar Engels."
