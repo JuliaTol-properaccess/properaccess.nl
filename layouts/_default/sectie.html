@@ -115,6 +115,12 @@
   </article>
   {{ end }}
 
+  <!-- FAQ -->
+  {{/* De container is hier "container" en niet "hp-container", want de rest van deze
+       layout gebruikt die ook; hp-container heeft geen binnenmarge op smalle schermen. */}}
+  {{ partial "faq-blok.html" (dict "page" . "container" "container") }}
+  <!-- /FAQ -->
+
   <!-- Call to actions -->
   {{ partial "call-to-action.html" . }}
   <!-- /Call to actions -->
