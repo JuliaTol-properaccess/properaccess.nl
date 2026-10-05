@@ -4,6 +4,7 @@ meta_title: "European Accessibility Act (EAA) in the Netherlands: scope, standar
 date: 2026-09-10
 slug: "european-accessibility-act"
 layout: "service-en"
+llms_group: "key-pages"
 description: "What the European Accessibility Act requires from companies serving consumers in the Netherlands, which standard applies, which of the six Dutch regulators supervises you, and what to do first."
 keywords:
   - European Accessibility Act Netherlands

@@ -1,0 +1,31 @@
+{{- /* Geeft de links uit de tekst van een pagina terug als regels voor llms-full.txt.
+
+       `.Plain` haalt de HTML weg en dus ook de href. Op `/in-de-media/` bleef daardoor
+       "Lees het artikel op Frankwatching" staan zonder het artikel erachter, terwijl de
+       URL daar de inhoud is. Hetzelfde geldt voor een link tussen twee van onze pagina's:
+       die is voor een taalmodel het verband, en die viel weg.
+
+       Alleen links naar een pagina: een anker, een mailadres en een telefoonnummer vallen
+       af, want het adres en het nummer staan al onder Contact. Dubbele doelen komen één
+       keer in de lijst, met de tekst van de eerste keer. Dertig is ruim: de langste pagina
+       van vandaag heeft er veertien. */ -}}
+{{- $regels := slice -}}
+{{- $gezien := slice -}}
+{{- range findRESubmatch `<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>` .Content -}}
+  {{- $href := index . 1 -}}
+  {{- $tekst := index . 2 | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "\\s*(→|->)\\s*$" "" | strings.TrimSpace -}}
+  {{- $overslaan := or
+        (not $tekst)
+        (not $href)
+        (strings.HasPrefix $href "#")
+        (strings.HasPrefix $href "mailto:")
+        (strings.HasPrefix $href "tel:") -}}
+  {{- if not $overslaan -}}
+    {{- $url := cond (strings.HasPrefix $href "http") $href ($href | absURL) -}}
+    {{- if not (in $gezien $url) -}}
+      {{- $gezien = $gezien | append $url -}}
+      {{- $regels = $regels | append (printf "- %s: %s" $tekst $url) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return first 30 $regels -}}
