@@ -96,8 +96,19 @@ What sets us apart:
        pagina's halen met hun frontmatterblokken erbij 1.800 tot 7.700 tekens, dus 20.000
        kapt er geen enkele af; de Nederlandse dienstpagina's zijn veel langer en staan met
        twaalf afkappingen op 2.000. Met 2.000 voor het Engels verloren vijf van de elf
-       hun nieuwe tekst weer, waaronder de vier sectorpagina's. Gemeten: NL blijft
-       byte-identiek, EN gaat van 38.048 naar 61.529 byte. */ -}}
+       hun nieuwe tekst weer, waaronder de vier sectorpagina's.
+
+       Gemeten op dezelfde boom, EN van 38.048 naar 61.509 byte. Het Nederlands is niet
+       byte-identiek, zoals hier eerst stond, maar gaat van 159.381 naar 159.610 byte. Dat
+       zijn precies twee pagina's en alleen linkregels:
+       `/inclusie-cultuur-sport-en-attracties/` van 4 naar 6 en
+       `/digitale-toegankelijkheid-overheid/` van 6 naar 7, uit de links in
+       `faqs[].answer` die `llms-links.html` nu meeneemt. Er komt
+       geen Nederlandse tekst bij en het aantal afgekapte Nederlandse pagina's blijft 15.
+
+       Narekenen: `enableGitInfo = true` staat in de root-`hugo.toml`. Bouw je in een kopie
+       zonder `.git`, dan valt `Lastmod` terug op de datum, verschuift `ByLastmod` de hele
+       bloglijst en lijkt het Nederlandse bestand 3.180 byte kleiner. */ -}}
 {{- $losse := where $zichtbaar "Section" (cond $nl "diensten" "") -}}
 {{- $groepen := slice
       (dict "sleutel" "about"     "kop" $t.aboutUs)

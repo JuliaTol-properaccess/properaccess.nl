@@ -42,6 +42,17 @@
        `content/dutch/` komen beide sleutels niet voor, dus de Nederlandse uitvoer verandert
        hier niet van.
 
+       Een blok gaat door `markdownify` voordat `plainify` de HTML eraf haalt, net als in
+       `service-en.html` (r74, r75 en r117), want het blok is Markdown en geen HTML. Met
+       alleen `plainify` blijft de linksyntaxis letterlijk staan: op `/en/about-us/` stond
+       er "Use the [contact page](/en/contact/)", met vierkante haken en een relatief pad,
+       in een bestand dat een taalmodel als platte tekst leest. Geteld over het Engelse
+       bestand: 13 letterlijke Markdown-links zonder deze stap 29, met deze stap weer 13.
+       Die 13 komen uit `faqs[].answer`, dat blok gaat hieronder los door `plainify` en
+       staat niet in de tekst. `markdownify` doet ook de typografie, dus er komen zes
+       kromme aanhalingstekens in het Engelse bestand; het Nederlandse heeft die al, want
+       daar gaat de body dezelfde weg.
+
        Een blok dat al in `.Plain` staat valt af. Vandaag gaat die regel nergens af:
        `accessibility-credits` is de enige pagina met een body én blokken, en die body
        herhaalt de blokken niet. De regel staat er voor de volgende keer, want een
@@ -55,13 +66,13 @@
 {{- $blokken := slice $plain -}}
 {{- range $p.Params.sections -}}
 {{- with .body -}}
-{{- $blok := . | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- $blok := . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
 {{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
 {{- end -}}
 {{- end -}}
 {{- range $p.Params.steps -}}
 {{- with .body -}}
-{{- $blok := . | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- $blok := . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
 {{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
 {{- end -}}
 {{- end -}}
