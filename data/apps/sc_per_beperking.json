@@ -1,0 +1,168 @@
+{
+  "beperkingen": [
+    { "id": "visueel", "label": "Visuele beperking" },
+    { "id": "auditief", "label": "Auditieve beperking" },
+    { "id": "motorisch", "label": "Motorische beperking" },
+    { "id": "cognitief", "label": "Cognitieve beperking" },
+    { "id": "neurologisch", "label": "Neurologische beperking" }
+  ],
+  "principes": [
+    {
+      "nummer": 1,
+      "titel": "Waarneembaar",
+      "richtlijnen": [
+        {
+          "nummer": "1.1",
+          "titel": "Bied tekstalternatieven",
+          "succescriteria": [
+            { "nummer": "1.1.1", "titel": "Niet-tekstuele content", "beperkingen": ["visueel"], "niveau": "A" }
+          ]
+        },
+        {
+          "nummer": "1.2",
+          "titel": "Bied alternatieven voor tijdgebonden media",
+          "succescriteria": [
+            { "nummer": "1.2.1", "titel": "Alleen audio en alleen video (vooraf opgenomen)", "beperkingen": ["auditief", "visueel"], "niveau": "A" },
+            { "nummer": "1.2.2", "titel": "Ondertitels (vooraf opgenomen)", "beperkingen": ["auditief"], "niveau": "A" },
+            { "nummer": "1.2.3", "titel": "Audiobeschrijving of media-alternatief (vooraf opgenomen)", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "1.2.4", "titel": "Ondertitels (live)", "beperkingen": ["auditief"], "niveau": "AA" },
+            { "nummer": "1.2.5", "titel": "Audiobeschrijving (vooraf opgenomen)", "beperkingen": ["visueel"], "niveau": "AA" }
+          ]
+        },
+        {
+          "nummer": "1.3",
+          "titel": "Maak inhoud die op verschillende manieren kan worden weergegeven",
+          "succescriteria": [
+            { "nummer": "1.3.1", "titel": "Info en relaties", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "1.3.2", "titel": "Betekenisvolle volgorde", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "1.3.3", "titel": "Zintuiglijke eigenschappen", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "1.3.4", "titel": "Ori\u00ebntatie", "beperkingen": ["visueel", "cognitief", "motorisch"], "niveau": "AA" },
+            { "nummer": "1.3.5", "titel": "Identificeer inputdoel", "beperkingen": ["visueel", "cognitief"], "niveau": "AA" }
+          ]
+        },
+        {
+          "nummer": "1.4",
+          "titel": "Maak content gemakkelijk te zien en te horen",
+          "succescriteria": [
+            { "nummer": "1.4.1", "titel": "Gebruik van kleur", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "1.4.2", "titel": "Geluidsbediening", "beperkingen": ["auditief"], "niveau": "A" },
+            { "nummer": "1.4.3", "titel": "Contrast (Minimum)", "beperkingen": ["visueel"], "niveau": "AA" },
+            { "nummer": "1.4.4", "titel": "Tekstgrootte aanpassen", "beperkingen": ["visueel"], "niveau": "AA" },
+            { "nummer": "1.4.5", "titel": "Afbeeldingen van tekst", "beperkingen": ["visueel"], "niveau": "AA" },
+            { "nummer": "1.4.10", "titel": "Herformattering", "beperkingen": ["visueel", "cognitief"], "niveau": "AA" },
+            { "nummer": "1.4.11", "titel": "Niet-tekstueel contrast", "beperkingen": ["visueel"], "niveau": "AA" },
+            { "nummer": "1.4.12", "titel": "Tekstafstand", "beperkingen": ["visueel"], "niveau": "AA" },
+            { "nummer": "1.4.13", "titel": "Content bij hover of focus", "beperkingen": ["visueel", "motorisch"], "niveau": "AA" }
+          ]
+        }
+      ]
+    },
+    {
+      "nummer": 2,
+      "titel": "Bedienbaar",
+      "richtlijnen": [
+        {
+          "nummer": "2.1",
+          "titel": "Zorg dat alles werkt met een toetsenbord",
+          "succescriteria": [
+            { "nummer": "2.1.1", "titel": "Toetsenbord", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.1.2", "titel": "Geen toetsenbordval", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.1.4", "titel": "Karaktersneltoets", "beperkingen": ["motorisch"], "niveau": "A" }
+          ]
+        },
+        {
+          "nummer": "2.2",
+          "titel": "Geef mensen voldoende tijd",
+          "succescriteria": [
+            { "nummer": "2.2.1", "titel": "Tijdslimiet", "beperkingen": ["cognitief"], "niveau": "A" },
+            { "nummer": "2.2.2", "titel": "Pauzeer bewegende content", "beperkingen": ["cognitief"], "niveau": "A" }
+          ]
+        },
+        {
+          "nummer": "2.3",
+          "titel": "Veroorzaak geen epileptische aanvallen",
+          "succescriteria": [
+            { "nummer": "2.3.1", "titel": "Drie flitsen of onder drempelwaarde", "beperkingen": ["neurologisch"], "niveau": "A" }
+          ]
+        },
+        {
+          "nummer": "2.4",
+          "titel": "Bied manieren om te navigeren en inhoud te vinden",
+          "succescriteria": [
+            { "nummer": "2.4.1", "titel": "Blokken omzeilen", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.4.2", "titel": "Pagina titel", "beperkingen": ["cognitief", "visueel"], "niveau": "A" },
+            { "nummer": "2.4.3", "titel": "Focus volgorde", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.4.4", "titel": "Het linkdoel", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "2.4.5", "titel": "Meerdere manieren", "beperkingen": ["cognitief"], "niveau": "AA" },
+            { "nummer": "2.4.6", "titel": "Koppen en labels", "beperkingen": ["cognitief"], "niveau": "AA" },
+            { "nummer": "2.4.7", "titel": "Focus zichtbaar", "beperkingen": ["cognitief", "motorisch"], "niveau": "AA" },
+            { "nummer": "2.4.11", "titel": "Focus niet bedekt", "beperkingen": ["cognitief", "motorisch"], "niveau": "AA" }
+          ]
+        },
+        {
+          "nummer": "2.5",
+          "titel": "Maak functies eenvoudig te gebruiken via verschillende invoermogelijkheden",
+          "succescriteria": [
+            { "nummer": "2.5.1", "titel": "Aanwijzergesten", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.5.2", "titel": "Aanwijzerannulering", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.5.3", "titel": "Label in naam", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "2.5.4", "titel": "Actie bij beweging", "beperkingen": ["motorisch"], "niveau": "A" },
+            { "nummer": "2.5.5", "titel": "Grootte van aanrakingsdoel", "beperkingen": ["motorisch"], "niveau": "AAA" }
+          ]
+        }
+      ]
+    },
+    {
+      "nummer": 3,
+      "titel": "Begrijpelijk",
+      "richtlijnen": [
+        {
+          "nummer": "3.1",
+          "titel": "Maak tekst begrijpelijk en leesbaar",
+          "succescriteria": [
+            { "nummer": "3.1.1", "titel": "Taal van pagina", "beperkingen": ["cognitief", "visueel"], "niveau": "A" },
+            { "nummer": "3.1.2", "titel": "Taal van onderdelen", "beperkingen": ["cognitief", "visueel"], "niveau": "AA" }
+          ]
+        },
+        {
+          "nummer": "3.2",
+          "titel": "Maak pagina's voorspelbaar",
+          "succescriteria": [
+            { "nummer": "3.2.1", "titel": "Bij focus", "beperkingen": ["cognitief", "motorisch"], "niveau": "A" },
+            { "nummer": "3.2.2", "titel": "Bij invoer", "beperkingen": ["cognitief", "motorisch"], "niveau": "A" },
+            { "nummer": "3.2.3", "titel": "Consistente navigatie", "beperkingen": ["cognitief", "motorisch"], "niveau": "AA" },
+            { "nummer": "3.2.4", "titel": "Consistente identificatie", "beperkingen": ["cognitief", "motorisch"], "niveau": "AA" },
+            { "nummer": "3.2.6", "titel": "Consistente hulp", "beperkingen": ["cognitief"], "niveau": "A" }
+          ]
+        },
+        {
+          "nummer": "3.3",
+          "titel": "Help mensen fouten te voorkomen en te herstellen",
+          "succescriteria": [
+            { "nummer": "3.3.1", "titel": "Foutidentificatie", "beperkingen": ["cognitief"], "niveau": "A" },
+            { "nummer": "3.3.2", "titel": "Labels of instructies", "beperkingen": ["cognitief"], "niveau": "A" },
+            { "nummer": "3.3.3", "titel": "Foutcorrectie", "beperkingen": ["cognitief"], "niveau": "AA" },
+            { "nummer": "3.3.4", "titel": "Foutpreventie (Juridisch, Financieel, Data)", "beperkingen": ["cognitief"], "niveau": "AA" },
+            { "nummer": "3.3.5", "titel": "Hulp bij foutidentificatie", "beperkingen": ["cognitief"], "niveau": "AAA" },
+            { "nummer": "3.3.7", "titel": "Onnodig invoer", "beperkingen": ["cognitief", "motorisch"], "niveau": "A" },
+            { "nummer": "3.3.8", "titel": "Authenticatie", "beperkingen": ["cognitief"], "niveau": "AA" }
+          ]
+        }
+      ]
+    },
+    {
+      "nummer": 4,
+      "titel": "Robuust",
+      "richtlijnen": [
+        {
+          "nummer": "4.1",
+          "titel": "Zorg voor ondersteuning met hulptechnologie\u00ebn",
+          "succescriteria": [
+            { "nummer": "4.1.2", "titel": "Naam, rol, waarde", "beperkingen": ["visueel"], "niveau": "A" },
+            { "nummer": "4.1.3", "titel": "Statusberichten", "beperkingen": ["visueel"], "niveau": "AA" }
+          ]
+        }
+      ]
+    }
+  ]
+}
