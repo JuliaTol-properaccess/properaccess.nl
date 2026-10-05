@@ -20,17 +20,6 @@ keywords:
   - NVDA sneltoetsen
   - bladermodus focusmodus
 tldr: "Download NVDA gratis op nvaccess.org. De NVDA-toets is Insert of Caps Lock. In bladermodus lees je de pagina met de pijltjes en werken losse letters als snelnavigatie: H voor koppen, K voor links, F voor formuliervelden. NVDA+F7 opent de elementenlijst. Zet de spraakweergave aan, dan kun je teruglezen wat er wordt gezegd."
-faqs:
-  - question: "Is NVDA gratis?"
-    answer: "Ja. NVDA is gratis en open source, gemaakt door NV Access. Je downloadt het op nvaccess.org. Er is ook een draagbare versie die je vanaf een USB-stick draait, handig op een computer waarop je niets mag installeren."
-  - question: "Wat is de NVDA-toets?"
-    answer: "Insert. Tijdens de installatie kun je aanzetten dat ook Caps Lock als NVDA-toets werkt, wat handig is op een laptop zonder numeriek toetsenblok. Bijna elk commando begint met die toets, in handleidingen geschreven als NVDA."
-  - question: "Wat is het verschil tussen bladermodus en focusmodus in NVDA?"
-    answer: "In bladermodus lees je de pagina als een document: de pijltjestoetsen verplaatsen de leescursor en losse letters werken als snelnavigatie. In focusmodus gaan je toetsaanslagen naar de pagina zelf, wat nodig is in invoervelden en in zelfgebouwde componenten. NVDA schakelt meestal zelf en speelt daarbij een geluid af. Met NVDA+Spatie wissel je handmatig."
-  - question: "Welke browser gebruik ik bij NVDA?"
-    answer: "Firefox of Chrome. Beide werken goed samen met NVDA. Test in de browser die je bezoekers gebruiken, en houd er rekening mee dat de andere browser op onderdelen anders reageert."
-  - question: "Klinkt NVDA altijd zo robotachtig?"
-    answer: "Nee, dat is de standaardstem eSpeak NG. Met NVDA+Ctrl+S kies je een andere synthesizer, bijvoorbeeld de Windows OneCore-stemmen, en met NVDA+Ctrl+V kies je de stem zelf. Een Nederlandse stem voeg je toe via de spraakinstellingen van Windows."
 ---
 
 Op Windows moet je een schermlezer zelf installeren. Dat is de enige drempel, en hij is lager dan hij lijkt: NVDA is gratis, open source, gemaakt door de stichting NV Access, en de download is klein. Tien minuten later hoor je je eigen website zoals een blinde bezoeker hem hoort.

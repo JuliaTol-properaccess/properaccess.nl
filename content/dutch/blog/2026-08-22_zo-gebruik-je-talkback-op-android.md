@@ -19,15 +19,6 @@ keywords:
   - TalkBack aanzetten
   - TalkBack leesregelaars
 tldr: "Zet TalkBack aan via Instellingen, Toegankelijkheid, TalkBack, of houd de twee volumeknoppen 3 seconden ingedrukt. Vegen naar rechts en links gaat naar het volgende en vorige onderdeel, dubbeltikken activeert, en scrollen doe je met twee vingers. Met vegen omhoog of omlaag kies je een leesregelaar, bijvoorbeeld koppen, en daarna spring je met vegen naar rechts van kop naar kop."
-faqs:
-  - question: "Hoe zet ik TalkBack weer uit?"
-    answer: "Houd de twee volumeknoppen samen 3 seconden ingedrukt, als de snelkoppeling aan staat. Anders ga je naar Instellingen, Toegankelijkheid, TalkBack en zet je hem daar uit. Onthoud dat je in die schermen zelf ook met TalkBack werkt: één tik selecteert, en pas een dubbeltik activeert."
-  - question: "Waarom doet dubbeltikken niets?"
-    answer: "Een dubbeltik activeert het onderdeel dat op dat moment focus heeft, en niet het onderdeel waar je toevallig tikt. Veeg eerst naar het onderdeel dat je wilt bedienen, luister of TalkBack het noemt, en dubbeltik daarna. Werkt een gebaar helemaal niet, kijk dan in Instellingen, TalkBack, Gebaren aanpassen welk gebaar op jouw toestel aan die actie hangt."
-  - question: "Wat is het verschil tussen TalkBack en Selecteren om te laten voorlezen?"
-    answer: "Selecteren om te laten voorlezen leest een stuk scherm voor dat jij aanwijst, en verandert verder niets aan de bediening. TalkBack is een schermlezer: die neemt de bediening over met gebaren en vertelt ook wat een onderdeel is, welke naam het heeft en in welke staat het staat."
-  - question: "Werkt TalkBack in elke app?"
-    answer: "TalkBack werkt overal in Android, maar wat je te horen krijgt hangt af van de app. Heeft een knop geen naam meegekregen van de bouwer, dan hoor je alleen dat het een knop is. Dat is precies wat je in een onderzoek van een app terugziet."
 ---
 
 TalkBack zit al op je Android-toestel. Je hoeft niets te downloaden en niets te betalen, en met twee volumeknoppen staat hij aan. De schrik komt daarna: je tikt op een app en er gebeurt niets, je veegt om te scrollen en het scherm blijft staan.
@@ -125,7 +116,7 @@ Selecteren om te laten voorlezen leest een stuk scherm voor dat jij aanwijst en 
 
 ### Werkt TalkBack in elke app?
 
-TalkBack werkt overal in Android. Wat je te horen krijgt, hangt af van wat de bouwer van de app heeft meegegeven. Een knop zonder naam blijft ook in TalkBack een knop zonder naam.
+TalkBack werkt overal in Android. Wat je te horen krijgt, hangt af van wat de bouwer van de app heeft meegegeven. Een knop zonder naam blijft ook in TalkBack een knop zonder naam, en dat is precies het soort bevinding dat in een [onderzoek van een app](/app-toegankelijkheid-testen/) terugkomt.
 
 ## Verder
 
