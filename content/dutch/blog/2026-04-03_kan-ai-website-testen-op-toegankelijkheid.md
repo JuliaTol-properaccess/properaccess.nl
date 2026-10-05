@@ -11,6 +11,7 @@ tags:
   - "automatisch testen"
   - "toegankelijkheid"
 description: "Wat kan AI echt herkennen aan toegankelijkheidsproblemen? Wij combineren onze kennis van AI met ervaring in 900+ toegankelijkheidsaudits om deze vraag te beantwoorden. Deel 0 van onze serie AI en toegankelijkheid."
+meta_description: "Wat kan AI echt herkennen aan toegankelijkheidsproblemen? Deel 0 van onze serie over AI en toegankelijkheid, met de proeven die we gaan doen."
 keywords:
   - AI toegankelijkheid testen
   - WCAG AI

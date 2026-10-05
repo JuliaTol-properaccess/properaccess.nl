@@ -12,6 +12,7 @@ tags:
   - "screenreader"
   - "webredactie"
 description: "aria-hidden verbergt een element voor de schermlezer, maar niet voor het oog. Lees wat het doet, waarom het in je pagina staat en op welke elementen je het wel en niet mag zetten."
+meta_description: "aria-hidden verbergt een element voor de schermlezer, maar niet voor het oog. Op welke elementen je het wel en niet mag zetten, en waarom."
 keywords:
   - aria-hidden
   - aria-hidden uitleg

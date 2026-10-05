@@ -14,6 +14,7 @@ tags:
   - "e-commerce"
   - "eaa"
 description: "Een grote webshop kwam door een automatische scan met Axe zonder enkele fout. Onze handmatige audit vond er ruim honderd. Dit artikel laat zien wat een scanner mist en waarom dat juist de dingen zijn waar je bezoekers op vastlopen."
+meta_description: "Een webshop kwam zonder fout door een scan met Axe. Onze handmatige audit vond er ruim honderd. Dit is wat een scanner mist, en waar bezoekers vastlopen."
 keywords:
   - "axe scan 0 fouten"
   - "geautomatiseerd testen toegankelijkheid"

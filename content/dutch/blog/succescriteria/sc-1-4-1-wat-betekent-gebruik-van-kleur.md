@@ -7,7 +7,7 @@ categories:
 tags:
   - "1-4-1"
   - "kleur"
-description: "WCAG 1.4.1 stelt dat kleur nooit de enige manier mag zijn om informatie over te brengen. Praktische uitleg met voorbeelden voor design, webredactie en developers."
+description: "WCAG 1.4.1 stelt dat kleur nooit de enige manier mag zijn om informatie over te brengen."
 keywords:
   - WCAG SC 1.4.1
   - gebruik van kleur

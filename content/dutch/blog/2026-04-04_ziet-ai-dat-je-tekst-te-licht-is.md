@@ -10,6 +10,7 @@ tags:
   - "contrast"
   - "AI vision"
 description: "Ik gaf Claude een screenshot van een echte website met contrastproblemen. Kan AI vision zien dat gekleurde koppen en lichtgrijze tekst op wit onleesbaar zijn? Dit zijn de resultaten."
+meta_description: "Ik gaf Claude een screenshot van een echte website met contrastproblemen. Ziet AI dat gekleurde koppen en lichtgrijze tekst op wit onleesbaar zijn?"
 keywords:
   - AI toegankelijkheid testen
   - contrast WCAG

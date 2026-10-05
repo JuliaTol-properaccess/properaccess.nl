@@ -11,7 +11,8 @@ tags:
   - "alt-tekst"
   - "koppen"
   - "pdf"
-description: "Google Docs heeft bijna alles wat je nodig hebt voor een toegankelijk document. Je moet alleen weten waar het zit. Een handleiding voor koppen, alt-tekst, links, tabellen en de route naar een toegankelijke pdf."
+description: "Google Docs heeft bijna alles wat je nodig hebt voor een toegankelijk document. Je moet alleen weten waar het zit. Een handleiding voor koppen, alt-tekst, links, tabellen en de route naar een toegankelijke PDF."
+meta_description: "Google Docs heeft bijna alles voor een toegankelijk document. Zo zet je koppen, alt-tekst, links en tabellen goed, en zo maak je een toegankelijke PDF."
 keywords:
   - toegankelijk google docs
   - google docs alt-tekst
