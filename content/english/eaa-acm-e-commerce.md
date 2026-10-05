@@ -4,6 +4,7 @@ meta_title: "How the ACM enforces the European Accessibility Act for webshops an
 date: 2026-09-10
 slug: "eaa-acm-e-commerce"
 layout: "service-en"
+llms_group: "sectors"
 description: "The Netherlands Authority for Consumers and Markets (ACM) supervises the accessibility of webshops, apps and electronic communication services under the European Accessibility Act. What the ACM checks, what you must report and by when, and how it approached companies in 2026."
 keywords:
   - ACM accessibility

@@ -4,6 +4,7 @@ meta_title: "How the AFM enforces the European Accessibility Act for financial s
 date: 2026-09-10
 slug: "eaa-afm-financial-services"
 layout: "service-en"
+llms_group: "sectors"
 description: "The Dutch Authority for the Financial Markets (AFM) supervises the accessibility of consumer banking and financial e-commerce services under the European Accessibility Act. What the AFM expects, how to report non-compliance in the AFM Portal, and what its 2026 compliance investigation looks at."
 keywords:
   - AFM accessibility

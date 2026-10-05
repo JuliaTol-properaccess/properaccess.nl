@@ -4,6 +4,7 @@ meta_title: "Accessibility audits for software suppliers to the Dutch government
 date: 2026-09-10
 slug: "software-suppliers-dutch-government"
 layout: "service-en"
+llms_group: "sectors"
 aliases:
   - /en/digital-accessibility-government/
 description: "You sell software to Dutch government bodies, and they must publish an accessibility statement with an audit behind it for every channel your product powers. What they will ask you for, what the Register requires, and how an audit of your product gives them the evidence."

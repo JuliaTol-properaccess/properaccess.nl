@@ -1,0 +1,49 @@
+{{- /* Eén pagina in llms-full.txt: kop, URL, description, de tekst, de links eruit en de
+       vragen met antwoord.
+
+       Verwacht een dict met `pagina`, `t` (de labels uit index.llmsfull.txt) en `limiet`
+       (het aantal tekens van de tekst).
+
+       De vragen staan bijna overal in `faqs:` in de frontmatter en worden door de layout
+       gerenderd, niet door `.Content`. Ze zaten daardoor in geen enkele pagina van
+       llms-full.txt, ook niet in de pagina's die ver onder de limiet blijven. Juist die
+       vraag-en-antwoordtekst is wat een assistent citeert. Staat de vraag al in de tekst
+       van de pagina zelf, zoals op `/auditbureau-kiezen/`, dan slaan we het blok over,
+       anders staat alles er twee keer.
+
+       `safeHTML` staat overal waar tekst de uitvoer in gaat, en dat is nodig: een partial
+       escapet wat hij print, ook als de uitvoer een tekstbestand is en ook als je het
+       bestand `.txt` noemt. Zonder `safeHTML` komt er `Pagina&#39;s` en `950&#43;` in een
+       bestand dat een taalmodel als platte tekst leest. Dat stond er al: het template
+       deed hetzelfde met `truncate`, want die functie is HTML-bewust en escapet de hele
+       tekst. Vandaar ook de `htmlUnescape` na `truncate`, en de eerste ervoor voor een
+       entiteit die `.Plain` laat staan (`&rsquo;` voor een aanhalingsteken). Met losse
+       proefregels gemeten; de volgorde doet er dus toe. */ -}}
+{{- $p := .pagina -}}
+{{- $t := .t -}}
+{{- $limiet := .limiet -}}
+### {{ $p.Title | safeHTML }}
+
+URL: {{ $p.Permalink }}
+{{ with $p.Params.description }}
+{{ . | safeHTML }}
+{{ end }}
+{{- with $p.Params.service.serviceType }}
+{{ $t.type }}: {{ . | safeHTML }}
+{{ end }}
+{{ $p.Plain | htmlUnescape | replaceRE "\\s+" " " | truncate $limiet | htmlUnescape | safeHTML }}
+{{ with partial "llms-links.html" $p }}
+{{ $t.links }}:
+{{ delimit . "\n" | safeHTML }}
+{{ end -}}
+{{- with $p.Params.faqs -}}
+{{- $eerste := (index . 0).question -}}
+{{- if not (and $eerste (strings.Contains $p.Plain $eerste)) }}
+{{ $t.faq }}:
+{{ range . }}
+#### {{ .question | safeHTML }}
+
+{{ .answer | plainify | replaceRE "\\s+" " " | safeHTML }}
+{{ end -}}
+{{- end -}}
+{{- end }}
