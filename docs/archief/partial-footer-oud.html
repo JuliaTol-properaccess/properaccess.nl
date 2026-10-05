@@ -1,3 +1,18 @@
+{{/* GEARCHIVEERD op 5 oktober 2026. Niet in gebruik.
+
+Dit was `layouts/_partials/essentials/footer.html`. Er stond een tweede bestand met
+dezelfde naam in `layouts/partials/essentials/footer.html`. Bij zo'n duplicaat wint de
+kopie in `layouts/partials/`; gemeten met Hugo 0.151 door beide kopieen een eigen
+klasse te geven en de build na te lopen. Deze kopie kwam op geen enkele pagina terug.
+
+Het is de footer van voor de herbouw van 19 september 2026: opmaakklassen `footer-optin__*`
+en `footer-certs__*`, een nieuwsbriefformulier dat nog aanstond, en teksten die niet door
+i18n gaan. De footer die nu draait heet `site-footer__*` en staat in
+`layouts/partials/essentials/footer.html`. Nederlandse pagina's krijgen bovendien
+`footer-groot.html`.
+
+Terugzetten vraagt: de CSS voor `footer-optin__*` en `footer-certs__*` nalopen, de teksten
+door i18n halen, en het nieuwsbriefformulier opnieuw aansluiten. */}}
 <!-- Opt-in + IAAP sectie -->
 <div class="footer-optin">
   <div class="container">
@@ -6,26 +21,20 @@
         <h2 class="footer-optin__title">We doen meer dan audits</h2>
         <p class="footer-optin__desc">Elke week zijn we bezig met research naar hoe moderne browsers en hulpsoftware werken, bouwen we onze eigen tools en automatiseren we digitale toegankelijkheid voor onze klanten.</p>
         <p class="footer-optin__desc">Denk aan: hoe gedraagt een screenreader zich bij een bepaald ARIA-patroon? Welke WCAG-fouten komen we het vaakst tegen? Hoe bouw je een toegankelijke datepicker? We delen wat we leren — open en praktisch.</p>
-        <p class="footer-optin__desc">Daarnaast bouwen we gratis tools die iedereen kan gebruiken — zoals onze koppenstructuur-checker, kleurcontrast-checker en alt-tekst keuzehulp. Onze klanten krijgen daarbovenop toegang tot besloten tools die hen uren werk besparen.</p>
+        <p class="footer-optin__desc">Daarnaast bouwen we gratis tools die iedereen kan gebruiken, zoals onze WCAG Radar, alt-tekst keuzehulp en PDF-checker.</p>
         <p class="footer-optin__desc">We sturen je 1x per maand een nieuwsbrief met informatie waar je echt wat aan hebt. Geen spam.</p>
       </div>
       <div class="footer-optin__form">
         <h3 class="footer-optin__form-title">Aanmelden nieuwsbrief</h3>
-        <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/6iEymi0dYMAbkRAIcYyl8oAmUKDtyCqTBtpNApG9yI0mwFurNvMzWMuW2GvRUHtcUH">
-          <script src="https://webforms.pipedrive.com/f/loader"></script>
-        </div>
-        <script>
-          (function() {
-            var observer = new MutationObserver(function(mutations, obs) {
-              var emailInput = document.querySelector('.pipedriveWebForms input[type="email"]');
-              if (emailInput) {
-                emailInput.setAttribute('autocomplete', 'email');
-                obs.disconnect();
-              }
-            });
-            observer.observe(document.querySelector('.pipedriveWebForms'), { childList: true, subtree: true });
-          })();
-        </script>
+        <form id="newsletter-form" class="pa-form" novalidate onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'nieuwsbrief', successMessage: 'Je bent aangemeld!' });">
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+          <div class="pa-form__row">
+            <label for="newsletter-email" class="sr-only">E-mailadres</label>
+            <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="Je e-mailadres" class="pa-form__input" />
+            <button type="submit" class="pa-form__btn">Aanmelden</button>
+          </div>
+          <div role="status" aria-live="polite"></div>
+        </form>
       </div>
     </div>
   </div>
@@ -105,3 +114,4 @@
 </footer>
 <!-- custom navigation script -->
 <script src="{{ "js/navigation.js" | relURL }}" defer></script>
+<script src="{{ "js/form-submit.js" | relURL }}" defer></script>

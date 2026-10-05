@@ -1,3 +1,14 @@
+{{/* GEARCHIVEERD op 5 oktober 2026. Niet in gebruik.
+
+Dit was `layouts/_partials/essentials/header.html`, het duplicaat van
+`layouts/partials/essentials/header.html`. Gemeten met Hugo 0.151: de kopie in
+`layouts/partials/` wint en staat op 152 Engelse pagina's, deze kopie op nul.
+
+De twee liepen uit elkaar. Hierin zit wel een `aria-label` op de `nav`, maar niet de
+`aria-hidden` en `tabindex="-1"` op het stylingvakje en niet de klasse
+`nav-link--underline`. Wat hier aan toegankelijkheid in zit en in de levende kopie niet,
+hoort daar alsnog naartoe; dat is een aparte afweging voor Gerard, niet voor deze
+opruiming. */}}
 <header
   class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
   <nav class="navbar container" aria-label="{{ i18n "main_menu" | default "Main menu" }}">
