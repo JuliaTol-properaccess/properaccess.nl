@@ -4,7 +4,7 @@
 {{ with .Params.tldr }}
 <section class="hp-container">
   <aside class="article-tldr" aria-labelledby="tldr-heading">
-    <h2 id="tldr-heading" class="article-tldr__title">In het kort</h2>
+    <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_capsule_title" | default "In het kort" }}</h2>
     <div class="article-tldr__body">
       {{ . | markdownify }}
     </div>
