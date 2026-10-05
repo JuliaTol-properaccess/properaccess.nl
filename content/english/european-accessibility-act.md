@@ -1,10 +1,12 @@
 ---
 title: "The European Accessibility Act in the Netherlands"
-meta_title: "European Accessibility Act (EAA) in the Netherlands: scope, standard, regulators | Proper Access"
+meta_title: "European Accessibility Act in the Netherlands"
 date: 2026-09-10
 slug: "european-accessibility-act"
 layout: "service-en"
-description: "What the European Accessibility Act requires from companies serving consumers in the Netherlands, which standard applies, which of the six Dutch regulators supervises you, and what to do first."
+description: "What the European Accessibility Act asks of companies serving Dutch consumers, which standard applies, and which of six regulators supervises you."
+tldr: |
+  The European Accessibility Act, Directive (EU) 2019/882, has applied since 28 June 2025. It requires companies that offer digital services to consumers to make those services accessible. The benchmark is EN 301 549, the European standard for accessible ICT, which currently points to WCAG 2.1 level A and AA. Enforcement in the Netherlands is not in the hands of one authority: it is split over six existing regulators, each for its own sector, and for most companies that is the ACM for webshops and online services, the AFM for financial services or the ILT for passenger transport. What the law requires is an accessible service, not an audit; an audit is how you find out where you stand. The exemption for micro-enterprises covers services only, and it applies when you have fewer than 10 employees and an annual turnover or balance sheet total of at most 2 million euro.
 keywords:
   - European Accessibility Act Netherlands
   - EAA Netherlands
@@ -18,7 +20,7 @@ keywords:
 banner:
   badge: "In force since 28 June 2025"
   title: "You have to comply with the European Accessibility Act in the Netherlands, and nobody explains plainly what that means. This page does"
-  content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. This page tells you which rules apply to you, who supervises you and what to do first."
+  content: "The EAA requires companies that offer digital services to consumers to make those services accessible. In the Netherlands six regulators enforce it, each for its own sector. Proper Access audits websites and apps against EN 301 549 and WCAG 2.2. This page tells you which rules apply to you, who supervises you and what to do first."
   bullets:
     - "**Directive (EU) 2019/882**, implemented in Dutch law and applied since 28 June 2025"
     - "**The standard is EN 301 549**, which currently points to WCAG 2.1 level A and AA"

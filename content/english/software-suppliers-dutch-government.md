@@ -1,12 +1,14 @@
 ---
 title: "Software suppliers to the Dutch government"
-meta_title: "Accessibility audits for software suppliers to the Dutch government: EN 301 549, WCAG-EM and the Register | Proper Access"
+meta_title: "Audit for government software suppliers | Proper Access"
 date: 2026-09-10
 slug: "software-suppliers-dutch-government"
 layout: "service-en"
 aliases:
   - /en/digital-accessibility-government/
-description: "You sell software to Dutch government bodies, and they must publish an accessibility statement with an audit behind it for every channel your product powers. What they will ask you for, what the Register requires, and how an audit of your product gives them the evidence."
+description: "Your government customers must prove their digital channels are accessible. We audit your product against WCAG 2.2 and EN 301 549, in English, so they can."
+tldr: |
+  Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch decree that implements the EU Web Accessibility Directive. It has been in force since 1 July 2018. Every digital channel needs its own accessibility statement in the Dutch Register of Accessibility Statements: the main website, subsites, application forms, portals behind a login, intranets and apps. A statement with status A or B needs an audit report behind it, and that report expires after 36 months, after which the statement drops to status D. The standard is EN 301 549, which currently points to WCAG 2.1 level A and AA. When one of those channels runs on your software, the evidence your customer needs is evidence about your product, so they will ask you for an audit or ask you to allow one. We audit products against WCAG 2.2 and EN 301 549 and report in English.
 keywords:
   - software supplier Dutch government accessibility
   - EN 301 549 software supplier
