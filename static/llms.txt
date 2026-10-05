@@ -6,6 +6,9 @@
 > en het Besluit digitale toegankelijkheid overheid (BDTO). Wij bouwen en beheren zelf geen
 > websites, dus we keuren nooit ons eigen werk.
 
+Dit bestand beschrijft het Nederlandse deel van properaccess.nl. De Engelse sectie heeft een
+eigen index: [properaccess.nl/en/llms.txt](https://www.properaccess.nl/en/llms.txt).
+
 ## Wat digitale toegankelijkheid is
 
 - [Digitale toegankelijkheid](https://www.properaccess.nl/digitale-toegankelijkheid/): wat digitale toegankelijkheid inhoudt, zes soorten beperkingen en wat elke groep van een website vraagt, om hoeveel mensen het gaat (Eurostat: 23,9% van de EU-inwoners van 16 jaar en ouder over 2024, oplopend van 7,1% bij 16- tot 24-jarigen naar 72,3% bij 85-plussers), de vier WCAG-principes en de 55 succescriteria op niveau A en AA, welke van de twee Nederlandse wetten voor je geldt (BDTO of EAA), en vier stappen om zelf te ontdekken waar je staat
