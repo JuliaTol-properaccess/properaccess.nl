@@ -1230,9 +1230,40 @@
 
   // --- Language switching ---
 
+  // De quiz is de hele hoofdinhoud van deze pagina, dus na een wissel is de pagina
+  // overwegend de gekozen taal. Daarom gaat lang op <html> mee (WCAG 3.1.1) en niet
+  // alleen op de quizsectie. De koptekst, de voettekst en de rest buiten <main> blijven
+  // de taal waarin de pagina is gebouwd (WCAG 3.1.2); die tekst wisselt niet mee.
+  function syncPageLang() {
+    var pageLang = window.__paToolLang === 'en' ? 'en' : 'nl';
+    var huidig = (document.documentElement.getAttribute('lang') || '').substring(0, 2);
+    if (huidig !== lang) document.documentElement.setAttribute('lang', lang);
+
+    var kinderen = document.body.children;
+    for (var i = 0; i < kinderen.length; i++) {
+      var k = kinderen[i];
+      var tag = k.tagName.toLowerCase();
+      if (tag === 'main' || tag === 'script' || tag === 'style') continue;
+      if (lang === pageLang) {
+        if (k.getAttribute('data-pa-lang') === '1') {
+          k.removeAttribute('lang');
+          k.removeAttribute('data-pa-lang');
+        }
+      } else if (!k.hasAttribute('lang')) {
+        k.setAttribute('lang', pageLang);
+        k.setAttribute('data-pa-lang', '1');
+      }
+    }
+
+    // Met lang op <html> is lang op de quizsectie niet meer nodig.
+    var section = el('quizSection');
+    if (section) section.removeAttribute('lang');
+  }
+
   window.quizSetLang = function (newLang) {
     if (newLang !== 'nl' && newLang !== 'en') return;
     lang = newLang;
+    syncPageLang();
 
     // Re-render based on current screen
     if (currentScreen === 'welcome') {
@@ -1258,14 +1289,19 @@
     var container = el('quizContainer');
     if (!container) return;
 
-    // Detect language from html lang attribute
-    var htmlLang = document.documentElement.getAttribute('lang');
-    if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
-      lang = 'nl';
-    } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
-      lang = 'en';
+    // De taal van de pagina: eerst wat de layout meegeeft, anders het lang-attribuut
+    if (window.__paToolLang === 'nl' || window.__paToolLang === 'en') {
+      lang = window.__paToolLang;
+    } else {
+      var htmlLang = document.documentElement.getAttribute('lang');
+      if (htmlLang && htmlLang.substring(0, 2) === 'nl') {
+        lang = 'nl';
+      } else if (htmlLang && htmlLang.substring(0, 2) === 'en') {
+        lang = 'en';
+      }
     }
 
+    syncPageLang();
     renderAll();
   }
 

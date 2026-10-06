@@ -4,11 +4,13 @@
 
     <h1 class="mb-2">{{ .Title }}</h1>
 
+    {{ $nl := eq .Lang "nl" }}
     <section class="quiz-section" id="quizSection">
       <div class="quiz__lang-toggle">
-        <button type="button" class="quiz__lang-btn" id="quizLangToggle" aria-label="NL EN, switch to English">
-          <span class="quiz__lang-opt quiz__lang-opt--active" id="quizLangNL">NL</span>
-          <span class="quiz__lang-opt" id="quizLangEN">EN</span>
+        <button type="button" class="quiz__lang-btn" id="quizLangToggle">
+          <span class="quiz__lang-opt{{ if $nl }} quiz__lang-opt--active{{ end }}" id="quizLangNL">NL</span>
+          <span class="quiz__lang-opt{{ if not $nl }} quiz__lang-opt--active{{ end }}" id="quizLangEN">EN</span>
+          <span class="sr-only" id="quizLangAction">{{ if $nl }}, taal: Nederlands. Schakel naar Engels.{{ else }}, language: English. Switch to Dutch.{{ end }}</span>
         </button>
       </div>
       <div id="quizContainer"></div>
@@ -16,19 +18,21 @@
 
   </div>
 </section>
+<script>window.__paToolLang = "{{ .Lang }}";</script>
 <script src="{{ "js/accessibility-quiz.js" | relURL }}" defer></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var btn = document.getElementById('quizLangToggle');
     var nlOpt = document.getElementById('quizLangNL');
     var enOpt = document.getElementById('quizLangEN');
-    var currentLang = 'nl';
+    var action = document.getElementById('quizLangAction');
+    var currentLang = window.__paToolLang === 'en' ? 'en' : 'nl';
     if (btn) {
       btn.addEventListener('click', function () {
         currentLang = currentLang === 'nl' ? 'en' : 'nl';
         nlOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'nl');
         enOpt.classList.toggle('quiz__lang-opt--active', currentLang === 'en');
-        btn.setAttribute('aria-label', currentLang === 'nl' ? 'NL EN, switch to English' : 'NL EN, schakel naar Nederlands');
+        action.textContent = currentLang === 'nl' ? ', taal: Nederlands. Schakel naar Engels.' : ', language: English. Switch to Dutch.';
         if (window.quizSetLang) window.quizSetLang(currentLang);
       });
     }
