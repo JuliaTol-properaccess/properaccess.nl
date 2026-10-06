@@ -5,9 +5,14 @@
   De linkkolommen komen uit data/footer_groot.yaml.
 
   Bewust niet overgenomen uit het ontwerp: ISO 27001 en W3C WAI (niet
-  bevestigd), "Volg ons" (data/social.json bevat nog geen echte adressen),
-  "Nieuwsbrief" (staat uit) en "Het team" en "Werken bij" (die pagina's
-  bestaan niet).
+  bevestigd), "Nieuwsbrief" (staat uit) en "Het team" en "Werken bij"
+  (die pagina's bestaan niet).
+
+  "Volg ons" hoort er sinds 06-10-2026 wel bij: Julia zei er ja op en
+  data/social.json heeft nu onze echte adressen. Het is de laatste kolom in
+  fg__kolommen, met tekstlinks in de vorm van de andere kolommen. De
+  linktekst komt uit het veld naam; het veld name is de Engelse vorm voor
+  essentials/footer.html.
 */}}
 {{ $data := site.Data.footer_groot }}
 <footer class="fg">
@@ -41,6 +46,20 @@
           </ul>
         </div>
       {{ end }}
+
+      <div class="fg__kolom">
+        <h2 class="fg__titel">Volg ons</h2>
+        <ul class="fg__lijst">
+          {{ range site.Data.social.main }}
+            <li>
+              <a class="fg__link" href="{{ .link }}" target="_blank" rel="noopener">
+                {{- .naam | default .name -}}
+                <span class="sr-only"> (opent in een nieuw tabblad)</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
 
     <div class="fg__adressen">
