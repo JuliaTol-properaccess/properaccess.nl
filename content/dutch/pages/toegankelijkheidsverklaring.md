@@ -105,8 +105,8 @@ aan een jurist.
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">2</i>
-  <h3 class="card__title">Laat onderzoek doen volgens WCAG-EM</h3>
-  <p>Vijf stappen: reikwijdte bepalen, de site verkennen, een steekproef samenstellen, toetsen en rapporteren.</p>
+  <h3 class="card__title">Laat onderzoek doen</h3>
+  <p>Met een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig. WCAG-EM heeft vijf stappen: reikwijdte bepalen, de site verkennen, een steekproef samenstellen, toetsen en rapporteren.</p>
 </div>
 <div class="card">
   <i class="card__icon" aria-hidden="true">3</i>
