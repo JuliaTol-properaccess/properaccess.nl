@@ -12,17 +12,25 @@ keywords:
 aliases:
   - "/author/julia_a11y/"
 social:
-  - name: github
+  - name: GitHub-profiel van Julia Tol
+    title: GitHub-profiel van Julia Tol
     icon: fa-brands fa-github
     link: https://github.com/JuliaTol-properaccess
 
-  - name: codepen
+  - name: CodePen-profiel van Julia Tol
+    title: CodePen-profiel van Julia Tol
     icon: fa-brands fa-codepen
     link: https://codepen.io/Julia-Tol-wcag
 
-  - name: linkedin
+  - name: LinkedIn-profiel van Julia Tol
+    title: LinkedIn-profiel van Julia Tol
     icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/julia-a11y/
+
+  - name: Medium-profiel van Julia Tol
+    title: Medium-profiel van Julia Tol
+    icon: fa-brands fa-medium
+    link: https://medium.com/@juliatol
 ---
 
 Julia Tol test websites en apps op toegankelijkheid, en leert teams hoe ze dat zelf doen. Ze richtte Proper Access op in 2019. Haar team deed sindsdien meer dan 950 audits, voor opdrachtgevers als het Rijksmuseum, NRC en de provincie Noord-Holland. Stand 7 augustus 2026.

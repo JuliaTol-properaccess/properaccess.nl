@@ -83,6 +83,7 @@ sections:
       - "Keizersgracht 520 H, 1017 EK Amsterdam, the Netherlands"
       - "Phone or WhatsApp: [+31 85 5055 890](tel:+31855055890)"
       - "[LinkedIn](https://www.linkedin.com/company/proper-access-nl)"
+      - "[Julia Tol on Medium](https://medium.com/@juliatol)"
       - "Chamber of Commerce (KVK): 95350985"
 translationKey: "over-ons"
 ---
