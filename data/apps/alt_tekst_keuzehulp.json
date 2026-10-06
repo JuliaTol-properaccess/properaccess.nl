@@ -82,8 +82,8 @@
       "title": "Complexe afbeelding",
       "advice": "Bij complexe afbeeldingen heb je twee tekstalternatieven nodig.",
       "solutions": [
-        "<strong>1. Korte alt-tekst</strong> \u2014 verwijs naar de uitgebreide beschrijving. Voorbeeld: <code>alt=\"Aantal bezoekers in 2024, grafiek. Volledige beschrijving onder de afbeelding\"</code>",
-        "<strong>2. Uitgebreide uitleg</strong> \u2014 plaats onder de afbeelding: een volledige tekstbeschrijving, een tabel met data, of een downloadbaar bestand"
+        "<strong>1. Korte alt-tekst</strong>. Verwijs naar de uitgebreide beschrijving. Voorbeeld: <code>alt=\"Aantal bezoekers in 2024, grafiek. Volledige beschrijving onder de afbeelding\"</code>",
+        "<strong>2. Uitgebreide uitleg</strong>. Plaats onder de afbeelding: een volledige tekstbeschrijving, een tabel met data, of een downloadbaar bestand"
       ],
       "examples": []
     },
