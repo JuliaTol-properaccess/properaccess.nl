@@ -131,7 +131,7 @@ We hebben dat zelf uitgezocht en opgeschreven in
 
 Monitoringtools scannen je site periodiek en melden wat er verandert. Dat is nuttig voor wat ze kunnen zien: verdwijnt er een alt-tekst, zakt een contrastverhouding onder de norm, of komt er een formulierveld zonder label bij.
 
-Wat ze niet doen is beoordelen. Ze meten dezelfde ongeveer 30% als elke andere geautomatiseerde scan, alleen dan herhaald. Een groen dashboard is dus geen bewijs dat je voldoet, en het Register van Toegankelijkheidsverklaringen accepteert het ook niet als onderbouwing: daar is onderzoek volgens WCAG-EM voor nodig.
+Wat ze niet doen is beoordelen. Ze meten dezelfde ongeveer 30% als elke andere geautomatiseerde scan, alleen dan herhaald. Een groen dashboard is dus geen bewijs dat je voldoet, en het onderbouwt je verklaring in het Register van Toegankelijkheidsverklaringen niet: dat vraagt een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig.
 
 Waar monitoring wel voor werkt: voorkomen dat je na een audit langzaam terugzakt. De meeste bevindingen die wij bij een hercontrole tegenkomen zijn nieuw, en komen uit content en features die er na het onderzoek bij zijn gekomen.
 
@@ -139,7 +139,7 @@ Waar monitoring wel voor werkt: voorkomen dat je na een audit langzaam terugzakt
 
 Nee, en dat is geen mening.
 
-Val je onder het Besluit digitale toegankelijkheid overheid, dan heb je een verklaring in het Register nodig, en het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd. Die methode vraagt om een representatieve steekproef die handmatig wordt getoetst. Een scan voldoet daar niet aan, ook niet als er nul fouten uitkomt.
+Val je onder het Besluit digitale toegankelijkheid overheid, dan heb je een verklaring in het Register nodig, en het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. WCAG-EM vraagt om een representatieve steekproef die handmatig wordt getoetst, en gelijkwaardig betekent dat een andere methode dat ook moet doen. Een scan voldoet daar niet aan, ook niet als er nul fouten uitkomt.
 
 Val je onder de European Accessibility Act, dan is er helemaal geen onderzoeksplicht. Wat de wet van je vraagt is een toegankelijke website of app. Een onderzoek is de manier om te weten of je daar staat, en een scan dekt daar ongeveer 30% van af.
 

@@ -15,8 +15,9 @@ tldr: |
   Nederland: gemeenten, provincies, waterschappen, ministeries, uitvoeringsorganisaties,
   zelfstandige bestuursorganen en andere publiekrechtelijke instellingen. We onderzoeken
   websites, apps, intranetten, aanvraagformulieren en portalen achter een inlog volgens
-  WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek
-  vereist. Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
+  WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde
+  evaluatiemethode: WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B.
+  Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
   geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de
   provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en
   's-Hertogenbosch. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken.
@@ -58,7 +59,7 @@ trust:
 
 faqs:
   - question: "Kan ik met jullie rapport aantonen dat ik voldoe aan het Besluit digitale toegankelijkheid overheid (BDTO)?"
-    answer: "Ja, daar is het rapport voor gemaakt. We onderzoeken volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist, en volgens de richtlijnen van DigiToegankelijk. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Je gebruikt het rapport om je toegankelijkheidsverklaring te onderbouwen, en we helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk."
+    answer: "Ja, daar is het rapport voor gemaakt. We onderzoeken volgens WCAG-EM en volgens de richtlijnen van DigiToegankelijk. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, en dat geldt voor status A en ook voor status B. De geldende norm is WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. Je gebruikt het rapport om je toegankelijkheidsverklaring te onderbouwen, en we helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk."
   - question: "Kunnen jullie helpen bij het opstellen of actualiseren van een toegankelijkheidsverklaring?"
     answer: "Zeker. Na de audit helpen we je bij het opstellen van een correcte en actuele toegankelijkheidsverklaring, conform het format van toegankelijkheidsverklaring.nl. We begeleiden je ook in de Mijn-omgeving van DigiToegankelijk en bij het verwerken van feedback via DIP."
   - question: "Kunnen jullie ook apps en intranetten toetsen?"
@@ -76,7 +77,7 @@ faqs:
   - question: "Welk bureau kan een toegankelijkheidsonderzoek uitvoeren voor een overheidswebsite?"
     answer: "Proper Access doet dat, voor de website van elke organisatie die onder het BDTO valt. We werken volgens WCAG-EM en leveren het rapport in de vorm die het Register vraagt, zodat je het direct als onderbouwing kunt gebruiken. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
-    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM, de methode die het Register van Toegankelijkheidsverklaringen voor elk onderzoek vereist. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
+    answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---
 
 {{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
@@ -129,10 +130,11 @@ deelonderzoek.
 {{< section-full title="Wat houdt een onafhankelijk toegankelijkheidsonderzoek in?" >}}
 
 Een onafhankelijk toegankelijkheidsonderzoek is een handmatige toets aan WCAG 2.2, niveau A en
-AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Voor het
-Register telt alleen een onderzoek volgens
-[WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/), de evaluatiemethode van het W3C.
-Onderzoek dat er niet volgens is uitgevoerd, accepteert het Register niet.
+AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Het Register
+vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt:
+[WCAG-EM](/blog/wcag-em-methode-toegankelijkheidsonderzoek/) of gelijkwaardig. Dat geldt voor
+status A en ook voor status B. Er is nog geen breed gedragen alternatief voor WCAG-EM, dus in de
+praktijk is dat de methode.
 
 Ligt de techniek bij een externe leverancier en beheer je zelf alleen de teksten, beelden en
 PDF's, dan kan een [contentaudit](/contentaudit/) uitkomst bieden. Let op de voorwaarde: we

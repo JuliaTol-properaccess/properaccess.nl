@@ -49,8 +49,9 @@ site. Wie niet voldoet, krijgt drie maanden en daarna een hertest.
 Bij een overheidsorganisatie is het rapport het bewijsstuk onder je verklaring in het Register.
 Daar gelden eigen spelregels. Elk digitaal kanaal heeft een eigen verklaring nodig: je
 hoofdwebsite, je aanvraagformulieren, je portaal achter de inlog en je app zijn allemaal apart.
-Elk onderzoek moet volgens WCAG-EM zijn uitgevoerd, ook als je maar op status B mikt. En na
-36 maanden vervalt de onderbouwing, waarna je status zakt.
+Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. Dat
+geldt voor status A en ook voor status B. En na 36 maanden vervalt de onderbouwing, waarna je
+status zakt.
 
 Bij een museum of een festival begint het bezoek bij de ticketshop, lang voordat iemand bij de
 deur staat. Bij een bank of verzekeraar begint het bij het inloggen.

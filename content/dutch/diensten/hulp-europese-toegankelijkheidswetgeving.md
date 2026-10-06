@@ -194,7 +194,7 @@ Een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register
 {{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
 {{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
-We toetsen je website, webshop of app handmatig volgens WCAG-EM, de methode die voor toegankelijkheidsonderzoek is voorgeschreven. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
+We toetsen je website, webshop of app handmatig volgens WCAG-EM, de evaluatiemethode van het W3C. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
 
 Welk type onderzoek past hangt af van wat je zelf kunt veranderen. Wil je eerst een indicatie, dan is er de [mini-audit](/webshop-quickscan/) van € 495.
 {{< /dienst-kaart >}}
@@ -214,7 +214,7 @@ Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die pr
 {{< dienst-kaart title="Verantwoording" prijs="Onderdeel van het onderzoek, geen apart tarief" link="/toegankelijkheidsverklaring/" cta="Bekijk de verklaring" >}}
 We leveren het rapport in de vorm die het Register van Toegankelijkheidsverklaringen vraagt, en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
 
-Het Register accepteert alleen onderzoek dat volgens WCAG-EM is uitgevoerd, en dat is de methode die we hanteren. Val je onder de EAA, dan gaat het om de informatie die je zelf publiceert.
+Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. Wij werken volgens WCAG-EM. Val je onder de EAA, dan gaat het om de informatie die je zelf publiceert.
 {{< /dienst-kaart >}}
 
 {{< /section-diensten >}}

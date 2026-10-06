@@ -55,7 +55,7 @@ faqs:
     answer: "Ja. Er is geen regel die voorschrijft dat een externe partij het onderzoek uitvoert, en sommige webbureaus kiezen daar bewust voor. Het model heeft er een invulveld voor, met 'in eigen beheer' als een van de keuzes, en dat veld is openbaar. De eisen zijn dezelfde wie het ook doet: een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig, alle eisen uit hoofdstuk 9 van EN 301 549, representatief voor alle content, en jonger dan 36 maanden. Het argument om het toch uit te besteden gaat over risico: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek daarna over jouw oordeel."
   - question: "Heeft mijn webshop ook een toegankelijkheidsverklaring nodig?"
     answer: "Ja. Sinds 28 juni 2025 val je onder de European Accessibility Act en publiceer je een toegankelijkheidsverklaring over je dienst. Je zet die op een eigen pagina op je website, zodat een bezoeker hem kan vinden zonder door je algemene voorwaarden te hoeven lezen. Het verschil met de overheid: je hoeft je niet in het openbare Register te verantwoorden, want dat Register hoort bij het Besluit digitale toegankelijkheid overheid. Met onze gratis generator stel je de verklaring in een paar minuten op."
-  - question: "Accepteert het Register een automatische scan als onderbouwing?"
+  - question: "Is een automatische scan genoeg als onderbouwing?"
     answer: "Nee. Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria; de rest vraagt handwerk met een schermlezer, alleen toetsenbord en zoom tot 400%. Het Register vraagt een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig, en dat is een handmatige methode met een steekproef die je verantwoordt."
 ---
 

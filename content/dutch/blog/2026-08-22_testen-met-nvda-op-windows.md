@@ -183,7 +183,7 @@ Firefox of Chrome. Beide werken goed samen met NVDA en reageren op onderdelen ve
 
 ### Kan ik met NVDA zelf een toegankelijkheidsonderzoek doen?
 
-Je vindt er problemen mee die geen enkele geautomatiseerde scan vindt. Een volledig onderzoek is breder, en een onderzoek dat je in het Register van Toegankelijkheidsverklaringen wilt gebruiken moet volgens WCAG-EM zijn uitgevoerd.
+Je vindt er problemen mee die geen enkele geautomatiseerde scan vindt. Een volledig onderzoek is breder, en voor een onderzoek dat je in het Register van Toegankelijkheidsverklaringen wilt gebruiken geldt een extra eis: een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig.
 
 ## Verder
 

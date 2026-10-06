@@ -29,7 +29,7 @@ faqs:
   - question: "Wat is de VO-toets in VoiceOver?"
     answer: "VO staat voor Control+Option. Bijna elk VoiceOver-commando begint met die twee toetsen. Wil je ze niet steeds vasthouden, dan vergrendel je de VO-toets met Control+Option+puntkomma."
   - question: "Kan ik met VoiceOver zelf een toegankelijkheidsonderzoek doen?"
-    answer: "Je kunt er problemen mee vinden die geen enkele geautomatiseerde scan vindt, zoals knoppen zonder naam en formulieren die niets melden bij een fout. Een volledig onderzoek is meer dan een schermlezertest: contrast, zoom, focuszichtbaarheid en toetsenbordbediening toets je apart, en een onderzoek voor het Register moet volgens WCAG-EM zijn uitgevoerd."
+    answer: "Je kunt er problemen mee vinden die geen enkele geautomatiseerde scan vindt, zoals knoppen zonder naam en formulieren die niets melden bij een fout. Een volledig onderzoek is meer dan een schermlezertest: contrast, zoom, focuszichtbaarheid en toetsenbordbediening toets je apart. Wil je het onderzoek in het Register gebruiken, dan vraagt dat een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig."
   - question: "Hoe lang duurt het voordat ik VoiceOver kan bedienen?"
     answer: "Voor de tien commando's uit dit artikel heb je een uur nodig. Vlot navigeren met de rotor en snelnavigatie kost een paar sessies. Je hoeft VoiceOver niet zo goed te kennen als een dagelijkse gebruiker om er problemen mee te vinden."
 ---
@@ -158,7 +158,7 @@ VO staat voor <kbd>Control</kbd> + <kbd>Option</kbd>. Bijna elk commando begint 
 
 ### Kan ik met VoiceOver zelf een toegankelijkheidsonderzoek doen?
 
-Je vindt er problemen mee die geen enkele geautomatiseerde scan vindt. Een volledig onderzoek is breder: contrast, zoom, focuszichtbaarheid en toetsenbordbediening toets je apart, en een onderzoek dat je in het Register wilt gebruiken moet volgens WCAG-EM zijn uitgevoerd.
+Je vindt er problemen mee die geen enkele geautomatiseerde scan vindt. Een volledig onderzoek is breder: contrast, zoom, focuszichtbaarheid en toetsenbordbediening toets je apart. Wil je het onderzoek in het Register gebruiken, dan vraagt dat een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig.
 
 ### Hoe lang duurt het voordat ik VoiceOver kan bedienen?
 

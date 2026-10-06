@@ -145,7 +145,7 @@ Werkt het samen met hulpsoftware, ook met de versie van volgend jaar? Dat vraagt
 
 Het Besluit digitale toegankelijkheid overheid geldt sinds 2018, voor overheidsinstanties en publiekrechtelijke instellingen. Elk digitaal kanaal heeft een eigen toegankelijkheidsverklaring nodig in het Register: de hoofdwebsite, subsites, formulieren, portalen achter een inlog en apps staan er los van elkaar in.
 
-Onder die verklaring hoort onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. Een rapport telt 36 maanden mee; daarna zakt je status.
+Onder die verklaring hoort onderzoek met een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. Een rapport telt 36 maanden mee; daarna zakt je status.
 
 [Lees over de toegankelijkheidsverklaring →](/toegankelijkheidsverklaring/)
 
