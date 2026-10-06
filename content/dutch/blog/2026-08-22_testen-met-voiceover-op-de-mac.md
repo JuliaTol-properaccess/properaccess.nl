@@ -21,17 +21,6 @@ keywords:
   - VoiceOver sneltoetsen
   - website testen met schermlezer
 tldr: "Zet VoiceOver aan met Command+F5 en gebruik Safari. De VO-toets is Control+Option. Met VO+U open je de webrotor, en daarmee de koppen-, link- en formulierlijst van je pagina. Zet in het VoiceOver-hulpprogramma (VO+F8) het bijschriftvenster aan, zodat je kunt teruglezen wat er wordt gezegd."
-faqs:
-  - question: "Moet ik VoiceOver installeren op mijn Mac?"
-    answer: "Nee. VoiceOver zit in macOS zelf. Je zet hem aan met Command+F5, of door op een Mac met Touch ID drie keer snel op de Touch ID-knop te drukken. Met dezelfde toetscombinatie zet je hem weer uit."
-  - question: "Welke browser gebruik ik bij VoiceOver?"
-    answer: "Safari. VoiceOver en Safari komen van dezelfde maker en werken het beste samen. Chrome en Firefox werken ook met VoiceOver en gedragen zich op onderdelen anders, dus een uitkomst in Safari zegt niets over die browsers."
-  - question: "Wat is de VO-toets in VoiceOver?"
-    answer: "VO staat voor Control+Option. Bijna elk VoiceOver-commando begint met die twee toetsen. Wil je ze niet steeds vasthouden, dan vergrendel je de VO-toets met Control+Option+puntkomma."
-  - question: "Kan ik met VoiceOver zelf een toegankelijkheidsonderzoek doen?"
-    answer: "Je kunt er problemen mee vinden die geen enkele geautomatiseerde scan vindt, zoals knoppen zonder naam en formulieren die niets melden bij een fout. Een volledig onderzoek is meer dan een schermlezertest: contrast, zoom, focuszichtbaarheid en toetsenbordbediening toets je apart. Wil je het onderzoek in het Register gebruiken, dan vraagt dat een goed gedocumenteerde evaluatiemethode, WCAG-EM of gelijkwaardig."
-  - question: "Hoe lang duurt het voordat ik VoiceOver kan bedienen?"
-    answer: "Voor de tien commando's uit dit artikel heb je een uur nodig. Vlot navigeren met de rotor en snelnavigatie kost een paar sessies. Je hoeft VoiceOver niet zo goed te kennen als een dagelijkse gebruiker om er problemen mee te vinden."
 ---
 
 VoiceOver staat al op je Mac. Je hoeft niets te downloaden en niets te betalen: <kbd>Command</kbd> + <kbd>F5</kbd> en hij praat. Wat daarna gebeurt, zorgt ervoor dat de meeste mensen hem binnen twee minuten weer uitzetten. Er begint een stem die je niet kunt bijhouden en je pijltjestoetsen doen ineens iets anders dan je verwacht.

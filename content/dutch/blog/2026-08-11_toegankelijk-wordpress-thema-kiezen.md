@@ -21,17 +21,6 @@ keywords:
   - WCAG WordPress
   - toegankelijk thema
 image: "/images/blog/wordpress-thema-skiplink.webp"
-faqs:
-  - question: "Hoe kies je een toegankelijk WordPress-thema?"
-    answer: "Maak eerst een shortlist op basis van design en test daarna de demo van het thema, niet de website van de verkoper. Vijf tests: verschijnt er een skiplink als je op Tab drukt, staan alle koppen als kop gemarkeerd en klopt de opbouw, is de hamburgerknop een echte knop met een naam en aria-expanded, blijft de focus in het geopende menu, en zijn alle interactieve elementen op de pagina met het toetsenbord te bedienen."
-  - question: "Heeft WordPress een filter voor toegankelijke thema's?"
-    answer: "Ja. In de gratis themabibliotheek van WordPress staat onder Weergave, Thema's, Thema toevoegen een Eigenschapsfilter met de optie Toegankelijkheid voorbereid. De selectie is beperkt. Commerciële marktplaatsen zoals ThemeForest hebben geen filter op toegankelijkheid."
-  - question: "Hoe test je een WordPress-thema zonder technische kennis?"
-    answer: "Open de demo en druk op Tab: verschijnt er een skiplink? Bekijk de koppen met de WCAG Radar en kijk of elke kop een blokje met h1 tot en met h6 krijgt en of de opbouw klopt. Zoom in tot het hamburgermenu verschijnt en controleer met de Radar of het een knop is met een naam en met aria-expanded. Tab door het geopende menu en kijk of de focus erin blijft. Tab daarna door de hele pagina en kijk of alles met het toetsenbord te bedienen is."
-  - question: "Kun je een ontoegankelijk WordPress-thema zelf repareren?"
-    answer: "Sommige problemen wel. Een ontbrekende skiplink toevoegen kost weinig werk. Een hamburgerknop die geen echte knop is en een focusvolgorde die langs verborgen sliders loopt vragen om JavaScript-kennis. Bij een gekocht thema komt daar het onderhoud bij: je aanpassingen horen in een child theme, anders verdwijnen ze bij de eerstvolgende update, en na elke update moet je opnieuw testen of je oplossing nog werkt. Vooraf het juiste thema kiezen kost vrijwel altijd minder dan achteraf repareren."
-  - question: "Zijn de meeste WordPress-thema's toegankelijk?"
-    answer: "Nee. De meeste thema's zakken al bij de eerste tests op toetsenbordnavigatie en koppenstructuur. Thema-ontwikkelaars richten zich vooral op het visuele ontwerp, en de marktplaatsen stellen geen toegankelijkheidseisen."
 ---
 
 Ik was acht jaar WordPress-ontwikkelaar voordat ik overstapte naar toegankelijkheidsonderzoek. In de meer dan 900 audits die mijn team onder mijn begeleiding sinds 2019 heeft gedaan, zien we dat de meeste ontoegankelijke elementen al in het thema zitten. Dus in de code die je koopt, en niet in de content die je er als eigenaar later in hebt gezet.
