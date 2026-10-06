@@ -24,7 +24,7 @@
     "principle331dt": "<strong>SC 3.3.1</strong> Error Identification <span class=\"tool-fout__level\">Level A</span>",
     "principle331dd": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
     "principle333dt": "<strong>SC 3.3.3</strong> Error Suggestion <span class=\"tool-fout__level\">Level AA</span>",
-    "principle333dd": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user — unless it would jeopardize the security or purpose of the content.",
+    "principle333dd": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
     "ctaLine1": "Want to know if the error messages on your website comply with WCAG guidelines?",
     "ctaLine2": "<a href=\"/en/contact/\">Request an audit</a> or call <a href=\"tel:+31855055890\">+31&nbsp;85&nbsp;505&nbsp;5890</a>.",
     "langLabel": "Language: English. Switch to Dutch."
