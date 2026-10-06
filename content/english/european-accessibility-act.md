@@ -4,6 +4,7 @@ meta_title: "European Accessibility Act in the Netherlands"
 date: 2026-09-10
 slug: "european-accessibility-act"
 layout: "service-en"
+llms_group: "key-pages"
 description: "What the European Accessibility Act asks of companies serving Dutch consumers, which standard applies, and which of six regulators supervises you."
 tldr: |
   The European Accessibility Act, Directive (EU) 2019/882, has applied since 28 June 2025. It requires companies that offer digital services to consumers to make those services accessible. The benchmark is EN 301 549, the European standard for accessible ICT, which in version V3.2.1 points to WCAG 2.1 level A and AA. Enforcement in the Netherlands is not in the hands of one authority: it is split over six existing regulators, each for its own sector, and for most companies that is the ACM for webshops and online services, the AFM for financial services or the ILT for passenger transport. What the law requires is an accessible service, not an audit; an audit is how you find out where you stand. The exemption for micro-enterprises covers services only, and it applies when you have fewer than 10 employees and an annual turnover or balance sheet total of at most 2 million euro.

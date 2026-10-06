@@ -4,6 +4,7 @@ meta_title: "WCAG audit for webshops and e-services | Proper Access"
 date: 2026-05-31
 slug: "e-commerce-digital-accessibility"
 layout: "service-en"
+llms_group: "sectors"
 description: "Is your webshop ready for the European Accessibility Act? We test the whole buying journey, report per element and help your team fix what we find."
 keywords:
   - e-commerce accessibility

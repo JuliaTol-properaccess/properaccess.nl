@@ -4,6 +4,7 @@ meta_title: "ILT and the EAA for passenger transport | Proper Access"
 date: 2026-09-10
 slug: "eaa-ilt-passenger-transport"
 layout: "service-en"
+llms_group: "sectors"
 description: "The ILT supervises the accessibility of passenger transport by air, bus, rail and water under the European Accessibility Act: sites, apps and e-tickets."
 keywords:
   - ILT accessibility

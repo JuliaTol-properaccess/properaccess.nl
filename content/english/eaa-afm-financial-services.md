@@ -4,6 +4,7 @@ meta_title: "AFM and the EAA for financial services | Proper Access"
 date: 2026-09-10
 slug: "eaa-afm-financial-services"
 layout: "service-en"
+llms_group: "sectors"
 description: "The AFM supervises the accessibility of consumer banking and financial services under the European Accessibility Act. What it expects and how to report."
 keywords:
   - AFM accessibility

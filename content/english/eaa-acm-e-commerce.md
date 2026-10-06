@@ -4,6 +4,7 @@ meta_title: "ACM and the EAA for webshops and apps | Proper Access"
 date: 2026-09-10
 slug: "eaa-acm-e-commerce"
 layout: "service-en"
+llms_group: "sectors"
 description: "The ACM supervises the accessibility of webshops, apps and online services under the European Accessibility Act. What it checks and what you must report."
 keywords:
   - ACM accessibility

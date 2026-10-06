@@ -19,9 +19,12 @@
   "langList"  (cond $nl "Nederlands, Engels, Zweeds" "Dutch, English, Swedish")
   "seniorAud" (cond $nl "senior auditor" "senior auditor")
   "about"     (cond $nl "Over Proper Access" "About Proper Access")
+  "aboutUs"   (cond $nl "Over ons" "About us")
   "services"  (cond $nl "Diensten" "Services")
   "sectors"   (cond $nl "Sectoren / Voor wie" "Sectors we work in")
   "keyPages"  (cond $nl "Kennispagina's" "Key pages")
+  "links"     (cond $nl "Links op deze pagina" "Links on this page")
+  "faq"       (cond $nl "Vragen die we hierover krijgen" "Questions we get about this")
   "academy"   (cond $nl "Academy: uitleg WCAG en BDTO" "Academy: WCAG and the law explained")
   "blog"      (cond $nl "Blog: recente artikelen" "Blog: recent articles")
   "contact"   (cond $nl "Contact" "Contact")
@@ -79,66 +82,87 @@ What sets us apart:
 
 {{- /* De Nederlandse dienstpagina's staan in content/dutch/diensten/, de Engelse los in
        content/english/ en hebben dus geen sectie. Zonder de cond hieronder bleef de
-       Engelse lijst leeg. */ -}}
-{{- $diensten := where $zichtbaar "Section" (cond $nl "diensten" "") -}}
-{{ with $diensten }}
-## {{ $t.services }}
+       Engelse lijst leeg.
 
+       Die elf losse Engelse pagina's kwamen daarna allemaal onder de kop "Services" te
+       staan, ook `about-us`, `european-accessibility-act` en de vier pagina's over een
+       toezichthouder of een sector. Voor een taalmodel zegt die kop iets over wat het
+       leest. De frontmattersleutel `llms_group` zet een pagina onder een andere kop:
+       `about`, `services`, `sectors` of `key-pages`. Zonder de sleutel blijft het
+       `services`, dus de Nederlandse lijst verandert er niet van.
+
+       De limiet hieronder is 2.000 tekens voor het Nederlands en 20.000 voor het Engels.
+       Dat is dezelfde lijst pagina's, maar niet dezelfde soort pagina. De elf Engelse
+       pagina's halen met hun frontmatterblokken erbij 1.800 tot 7.700 tekens, dus 20.000
+       kapt er geen enkele af; de Nederlandse dienstpagina's zijn veel langer en staan met
+       twaalf afkappingen op 2.000. Met 2.000 voor het Engels verloren vijf van de elf
+       hun nieuwe tekst weer, waaronder de vier sectorpagina's.
+
+       Gemeten op dezelfde boom, EN van 38.048 naar 61.509 byte. Het Nederlands is niet
+       byte-identiek, zoals hier eerst stond, maar gaat van 159.381 naar 159.610 byte. Dat
+       zijn precies twee pagina's en alleen linkregels:
+       `/inclusie-cultuur-sport-en-attracties/` van 4 naar 6 en
+       `/digitale-toegankelijkheid-overheid/` van 6 naar 7, uit de links in
+       `faqs[].answer` die `llms-links.html` nu meeneemt. Er komt
+       geen Nederlandse tekst bij en het aantal afgekapte Nederlandse pagina's blijft 15.
+
+       Narekenen: `enableGitInfo = true` staat in de root-`hugo.toml`. Bouw je in een kopie
+       zonder `.git`, dan valt `Lastmod` terug op de datum, verschuift `ByLastmod` de hele
+       bloglijst en lijkt het Nederlandse bestand 3.180 byte kleiner. */ -}}
+{{- $losse := where $zichtbaar "Section" (cond $nl "diensten" "") -}}
+{{- $groepen := slice
+      (dict "sleutel" "about"     "kop" $t.aboutUs)
+      (dict "sleutel" "services"  "kop" $t.services)
+      (dict "sleutel" "sectors"   "kop" $t.sectors)
+      (dict "sleutel" "key-pages" "kop" $t.keyPages) -}}
+{{- range $groep := $groepen -}}
+{{- $inGroep := slice -}}
+{{- range $p := $losse -}}
+{{- if and
+      (eq (default "services" $p.Params.llms_group) $groep.sleutel)
+      (not (in (slice "offerte-wcag-onderzoek" "bedankt") $p.File.ContentBaseName)) -}}
+{{- $inGroep = $inGroep | append $p -}}
+{{- end -}}
+{{- end -}}
+{{- with $inGroep }}
+## {{ $groep.kop }}
 {{ range . }}
-{{- if not (in (slice "offerte-wcag-onderzoek" "bedankt") .File.ContentBaseName) -}}
-
-### {{ .Title }}
-
-URL: {{ .Permalink }}
-{{ with .Params.description }}
-{{ . }}
-{{ end }}
-{{ with .Params.service.serviceType }}{{ $t.type }}: {{ . }}{{ end }}
-
-{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
-
+{{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" (cond $nl 2000 20000)) }}
 ---
-{{ end -}}
 {{ end }}
-{{ end }}
+{{- end -}}
+{{- end }}
 
 {{- /* Een kop zonder inhoud eronder helpt een taalmodel niet, dus elke lijst zit in een
        with. Engels heeft geen voor_wie en geen pages. */ -}}
 {{- $sectoren := where $zichtbaar "Section" "voor_wie" -}}
 {{ with $sectoren }}
 ## {{ $t.sectors }}
-
 {{ range . }}
-
-### {{ .Title }}
-
-URL: {{ .Permalink }}
-{{ with .Params.description }}
-{{ . }}
-{{ end }}
-
-{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
-
+{{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" 2000) }}
 ---
 {{ end }}
 {{ end }}
 
+{{- /* De kennispagina's krijgen 20.000 tekens in plaats van 2.000. Het zijn vijf pagina's
+       die juist voor dit doel zijn geschreven en de vragen staan er onderaan. Gemeten na
+       het samenvoegen van witruimte: `/auditbureau-kiezen/` 13.567, `/eaa/` 13.216,
+       `/toegankelijkheidsverklaring/` 10.366, `/digitale-toegankelijkheid/` 8.400 en
+       `/in-de-media/` 2.229. Met 2.000 tekens stopte `/auditbureau-kiezen/` ruim voor de
+       zeven vragen waar we op geciteerd worden, en viel ook de mediatekst van
+       `/in-de-media/` af.
+
+       Verlaag deze limiet niet zonder naar `/auditbureau-kiezen/` te kijken. De zeven
+       vragen van die pagina staan niet in `faqs:` alleen, maar ook in de body, en die
+       beginnen pas op teken 10.707. Onder 13.567 raakt die pagina dus tekst kwijt en onder
+       10.707 alle zeven de vragen. Dat het blok uit `faqs:` dan niet inspringt, is een
+       aparte val; `llms-pagina.html` legt uit hoe die is dichtgezet. */ -}}
 {{- $kennis := where $zichtbaar "Section" "pages" -}}
 {{ with $kennis }}
 ## {{ $t.keyPages }}
-
 {{ range . }}
-{{- if not (in (slice "bedankt") .File.ContentBaseName) -}}
-
-### {{ .Title }}
-
-URL: {{ .Permalink }}
-{{ with .Params.description }}
-{{ . }}
-{{ end }}
-
-{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
-
+{{- if not (in (slice "bedankt") .File.ContentBaseName) }}
+{{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" 20000) }}
 ---
 {{ end -}}
 {{ end }}
@@ -178,7 +202,7 @@ URL: {{ .Permalink }}
 - Call: [+31 85 5055 890](tel:+31855055890)
 - Email: [info@properaccess.nl](mailto:info@properaccess.nl)
 - Book a video call: https://calendar.app.google/k4VvBfPKnH3Lk2ut8
-- Request a quote: {{ site.BaseURL }}en/quote/
+- Request a quote: {{ site.BaseURL }}en/contact/
 - LinkedIn company: https://www.linkedin.com/company/proper-access-nl
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag

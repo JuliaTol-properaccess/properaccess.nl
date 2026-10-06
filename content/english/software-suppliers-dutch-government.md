@@ -4,6 +4,7 @@ meta_title: "Audit for government software suppliers | Proper Access"
 date: 2026-09-10
 slug: "software-suppliers-dutch-government"
 layout: "service-en"
+llms_group: "sectors"
 aliases:
   - /en/digital-accessibility-government/
 description: "Your government customers must prove their digital channels are accessible. We audit your product against WCAG 2.2 and EN 301 549, in English, so they can."

@@ -1,6 +1,7 @@
 ---
 title: "About Proper Access"
 layout: "service-en"
+llms_group: "about"
 meta_title: "About Proper Access: independent accessibility auditors"
 date: 2026-09-10
 slug: "about-us"
