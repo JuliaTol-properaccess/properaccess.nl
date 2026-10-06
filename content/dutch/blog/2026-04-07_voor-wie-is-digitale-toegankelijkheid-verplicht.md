@@ -62,17 +62,15 @@ De ACM (Autoriteit Consument & Markt).
 
 ## Onderwijs
 
-Onderwijsinstellingen die door de overheid gefinancierd worden vallen onder het BDTO. Dat geldt voor:
+Ook bij een onderwijsinstelling is de vraag of ze een publiekrechtelijke instelling is. Dat de overheid het onderwijs betaalt, is niet het criterium: de drie voorwaarden hierboven moeten alle drie kloppen. Of een universiteit, hogeschool, MBO-instelling, basisschool of middelbare school eronder valt, hangt dus af van hoe die instelling is opgericht, gefinancierd en bestuurd. Leg een twijfelgeval voor aan een jurist.
 
-- Universiteiten en hogescholen
-- MBO-instellingen
-- Basisscholen en middelbare scholen
-
-Digitale leeromgevingen, studentenportalen en websites moeten dus ook toegankelijk zijn.
+Valt de instelling onder het BDTO, dan geldt dat voor alles wat digitaal is: de website, de digitale leeromgeving en portalen voor studenten.
 
 ## Zorg
 
-Zorginstellingen die publiek gefinancierd worden (via de Wlz, Zvw of Wmo) vallen doorgaans ook onder het BDTO. Private zorginstellingen die diensten aan consumenten aanbieden vallen mogelijk onder de EAA.
+Publiek geld is hier niet het criterium. Of een zorginstelling onder het BDTO valt, hangt af van de vraag of ze een publiekrechtelijke instelling is, en dan moeten de drie voorwaarden hierboven alle drie kloppen. Dat de zorg betaald wordt uit de Wet langdurige zorg, de Zorgverzekeringswet of de Wet maatschappelijke ondersteuning zegt daar niets over.
+
+Valt een zorginstelling niet onder het BDTO, dan geldt de EAA alleen als ze een dienst aanbiedt die in de lijst hierboven staat, bijvoorbeeld een webshop. Leg een twijfelgeval voor aan een jurist.
 
 ## En als je niet verplicht bent?
 
