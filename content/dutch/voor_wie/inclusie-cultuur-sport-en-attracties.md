@@ -6,7 +6,7 @@ date: 2025-04-02
 slug: "inclusie-cultuur-sport-en-attracties"
 url: "/inclusie-cultuur-sport-en-attracties/"
 layout: sectie
-description: "Het gebouw heeft een rolstoellift, de zaal een ringleiding. En de website? Audits voor musea, theaters, festivals en sportorganisaties."
+description: "Je museum heeft een rolstoellift, je theater een ringleiding. En de website? Audits voor musea, theaters, festivals en sportorganisaties."
 keywords:
   - wcag audit culturele sector
   - digitale toegankelijkheid museum
