@@ -14,6 +14,10 @@ hero_meta:
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
     value: "september 2026"
+# Deze zeven vragen staan woordelijk in het details-blok onderaan de content.
+# layout: sectie rendert faqs: niet, dus dit veld levert alleen FAQPage-schema.
+# Wijzig je hier een antwoord, wijzig het dan ook in de content. Zie het
+# commentaar in layouts/_default/sectie.html.
 faqs:
   - question: "Moet ik het onderzoek door een extern bureau laten doen?"
     answer: "Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
