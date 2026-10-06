@@ -173,7 +173,7 @@ Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het mo
 verklaring noemt de methode wel bij naam, met "of gelijkwaardig" erachter, en van de ACM weten we
 uit de eerste hand dat ze er zelf mee werkt.
 
-<img src="/images/pages/auditbureau-wcag-em-stappen.svg" alt="De vijf stappen van WCAG-EM op een rij: reikwijdte bepalen, de site verkennen, een steekproef samenstellen, toetsen en rapporteren." loading="lazy" style="width:100%;height:auto;margin:1.5rem 0;" />
+<img src="/images/pages/auditbureau-wcag-em-stappen.svg" alt="De vijf stappen van WCAG-EM op een rij: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, handmatig toetsen per succescriterium, en rapporteren met bewijs erbij. Onderaan staat dat het Register vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt, WCAG-EM of gelijkwaardig." loading="lazy" style="width:100%;height:auto;margin:1.5rem 0;" />
 
 De stap die in de praktijk het meeste uitmaakt is de derde. Een steekproef die niet representatief
 is, levert een rapport op dat netjes oogt en je site niet dekt. Vraag daarom hoe de steekproef tot
