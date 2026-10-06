@@ -1,5 +1,6 @@
 ---
 title: "AI & WCAG"
+translationKey: "ai-en-wcag"
 meta_title: "AI & WCAG: kan AI toegankelijkheidsproblemen herkennen? | Proper Access"
 description: "Kan AI jouw website testen op toegankelijkheid? In deze serie testen we wat AI wel en niet kan vinden aan WCAG-problemen. Echte tests, echte uitkomsten."
 ---
