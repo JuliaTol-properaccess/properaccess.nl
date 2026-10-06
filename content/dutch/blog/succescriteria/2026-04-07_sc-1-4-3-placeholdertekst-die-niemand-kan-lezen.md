@@ -28,10 +28,10 @@ Het wordt pas echt problematisch als je placeholder de enige plek is waar het in
 **De fix:**
 
 ```css
-/* Niet doen — contrast 1,6:1 */
+/* Niet doen: contrast 1,6:1 */
 ::placeholder { color: #C0C0C0; }
 
-/* Wel doen — contrast 4,64:1 */
+/* Wel doen: contrast 4,64:1 */
 ::placeholder { color: #767676; }
 ```
 

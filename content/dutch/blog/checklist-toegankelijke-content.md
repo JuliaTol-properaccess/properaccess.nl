@@ -175,10 +175,10 @@ Goed kleurcontrast is essentieel voor leesbaarheid. Lichtgrijze tekst op een lic
 <svg viewBox="0 0 720 90" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Vergelijking: lichtgrijze tekst op wit is onleesbaar (contrast 1,5:1), zwarte tekst op wit is goed leesbaar (contrast 21:1).">
   <rect x="10" y="5" width="340" height="80" fill="none" rx="10" stroke="#A30D4B" stroke-width="1"/>
   <text x="30" y="35" font-family="Nunito, sans-serif" font-size="13" font-weight="700" fill="#A30D4B">Slecht contrast</text>
-  <text x="30" y="60" font-family="Nunito, sans-serif" font-size="16" fill="#C0C0C0">Lichtgrijs op wit — 1,5:1</text>
+  <text x="30" y="60" font-family="Nunito, sans-serif" font-size="16" fill="#C0C0C0">Lichtgrijs op wit: 1,5:1</text>
   <rect x="370" y="5" width="340" height="80" fill="none" rx="10" stroke="#004050" stroke-width="1"/>
   <text x="390" y="35" font-family="Nunito, sans-serif" font-size="13" font-weight="700" fill="#004050">Goed contrast</text>
-  <text x="390" y="60" font-family="Nunito, sans-serif" font-size="16" fill="#1F2937">Zwart op wit — 21:1</text>
+  <text x="390" y="60" font-family="Nunito, sans-serif" font-size="16" fill="#1F2937">Zwart op wit: 21:1</text>
 </svg>
 
 ### Contrast controleren

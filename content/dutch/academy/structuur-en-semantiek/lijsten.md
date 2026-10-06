@@ -53,7 +53,7 @@ Voor termen met bijbehorende beschrijvingen: glossaria, metadata, specificaties.
 ```html
 <dl>
   <dt>WCAG</dt>
-  <dd>Web Content Accessibility Guidelines — de internationale richtlijnen voor webtoegankelijkheid.</dd>
+  <dd>Web Content Accessibility Guidelines, de internationale richtlijnen voor webtoegankelijkheid.</dd>
 
   <dt>Schermlezer</dt>
   <dd>Software die de inhoud van het scherm voorleest, zoals NVDA, JAWS of VoiceOver.</dd>
