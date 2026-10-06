@@ -725,8 +725,12 @@ Klein, blokkeert niets, opgekomen tijdens batch 1 tot en met 3. Alle vier nagelo
   een `aliases:` op de blijver.
 - Circa 500 gedachtestreepjes in Nederlandse teksten, tegen de schrijfregel in: ongeveer 65 in
   de layouts voor overheid, e-commerce, cultuur en audit, en 240 verspreid over 101
-  contentbestanden. `layouts/voor_wie/agency.html` is gedaan. Engelse content valt buiten de
-  regel. Streepjes vóór de naam bij een citaat zijn een naamsvermelding en blijven staan.
+  contentbestanden. `layouts/voor_wie/agency.html` is gedaan. Streepjes vóór de naam bij een
+  citaat zijn een naamsvermelding en blijven staan.
+  **Stand 5 oktober 2026: Engelse content valt niet meer buiten de regel.** De schrijfregel
+  van 23 september 2026 geldt in beide talen (`workflows/schrijfgids.md` in
+  `proper-access-marketing`). In `content/english` stonden op die dag 46 regels met een
+  streepje in 15 bestanden.
 - Drie claims die niet te onderbouwen zijn: "boetes tot € 900.000" in
   `layouts/voor_wie/agency.html`, "61% van de webshops voldoet niet" in
   `layouts/voor_wie/ecommerce.html`, en het woord "compliance" op meerdere plekken terwijl dat
