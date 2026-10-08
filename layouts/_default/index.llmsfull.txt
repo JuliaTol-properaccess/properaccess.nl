@@ -198,6 +198,7 @@ URL: {{ .Permalink }}
 - LinkedIn bedrijf: https://www.linkedin.com/company/proper-access-nl
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag
+- Medium Julia Tol: https://medium.com/@juliatol
 {{- else -}}
 - Call: [+31 85 5055 890](tel:+31855055890)
 - Email: [info@properaccess.nl](mailto:info@properaccess.nl)
@@ -206,6 +207,7 @@ URL: {{ .Permalink }}
 - LinkedIn company: https://www.linkedin.com/company/proper-access-nl
 - LinkedIn Julia Tol: https://www.linkedin.com/in/julia-a11y/
 - CodePen: https://codepen.io/Julia-Tol-wcag
+- Medium Julia Tol: https://medium.com/@juliatol
 {{- end }}
 
 ## {{ $t.ownTools }}

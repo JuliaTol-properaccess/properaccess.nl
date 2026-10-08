@@ -9,17 +9,25 @@ keywords:
   - accessibility auditor netherlands
   - wcag audit netherlands
 social:
-  - name: github
+  - name: GitHub profile of Julia Tol
+    title: GitHub profile of Julia Tol
     icon: fa-brands fa-github
     link: https://github.com/JuliaTol-properaccess
 
-  - name: codepen
+  - name: CodePen profile of Julia Tol
+    title: CodePen profile of Julia Tol
     icon: fa-brands fa-codepen
     link: https://codepen.io/Julia-Tol-wcag
 
-  - name: linkedin
+  - name: LinkedIn profile of Julia Tol
+    title: LinkedIn profile of Julia Tol
     icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/julia-a11y/
+
+  - name: Medium profile of Julia Tol
+    title: Medium profile of Julia Tol
+    icon: fa-brands fa-medium
+    link: https://medium.com/@juliatol
 ---
 
 Julia Tol tests websites and apps for accessibility, and teaches teams to do it themselves. She founded Proper Access in 2019. Since then her team has carried out more than 950 audits, for clients such as the [Rijksmuseum](https://www.rijksmuseum.nl/en), the national museum of the Netherlands, and [NRC](https://www.nrc.nl), a Dutch national newspaper. Figures as of 7 August 2026.

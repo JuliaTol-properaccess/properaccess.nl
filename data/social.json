@@ -1,19 +1,28 @@
 {
   "main": [
     {
-      "name": "github",
+      "name": "GitHub profile of Julia Tol",
+      "naam": "GitHub-profiel van Julia Tol",
       "icon": "fab fa-github",
-      "link": "https://www.github.com/"
+      "link": "https://github.com/JuliaTol-properaccess"
     },
     {
-      "name": "linkedin",
+      "name": "LinkedIn page of Proper Access",
+      "naam": "LinkedIn-pagina van Proper Access",
       "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "https://www.linkedin.com/company/proper-access-nl"
     },
     {
-      "name": "codepen",
+      "name": "CodePen profile of Julia Tol",
+      "naam": "CodePen-profiel van Julia Tol",
       "icon": "fab fa-codepen",
-      "link": "https://www.codepen.io/"
+      "link": "https://codepen.io/Julia-Tol-wcag"
+    },
+    {
+      "name": "Medium profile of Julia Tol",
+      "naam": "Medium-profiel van Julia Tol",
+      "icon": "fab fa-medium",
+      "link": "https://medium.com/@juliatol"
     }
   ]
 }
