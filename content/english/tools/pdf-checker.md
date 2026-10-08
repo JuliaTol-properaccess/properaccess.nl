@@ -8,8 +8,9 @@ doelgroep:
   - "Web developers"
 ---
 
-Upload a PDF and see which accessibility problems it contains. It costs nothing, there is no account
-to create, and your document leaves our server as soon as the check is done. The checker is at
+Upload a PDF and see which accessibility problems it contains. It costs nothing and there is no
+account to create. Your document goes to our own server in Germany and leaves it as soon as the
+check is done. The checker is at
 [pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). The result page is in
 Dutch for now.
 
@@ -38,6 +39,11 @@ on that. We do not store the address to do it: we compute an irreversible finger
 secret number that changes every day. What happens exactly is in the
 [privacy statement of pdf-toegankelijk.nl](https://pdf-toegankelijk.nl/privacy), which is in Dutch.
 
+Nothing about you goes to a US server when you use the tool. The pages of the tool load no script,
+no stylesheet and no font from another company. So your browser opens no connection to Google or to
+anyone else to display them, and your internet address does not reach them either. Two tests in our
+code fail as soon as an address from another company appears in a page.
+
 ## Repairing is in closed testing
 
 The check tells you what is wrong. Repairing sits in the same tool and is in closed testing at the
@@ -65,18 +71,10 @@ do deliver is a list of the problems that are still there, and a person can work
 
 ## Where your document stays
 
-Every step runs on our own server in the EU. Your document does not go to Adobe, to Google, to a
-language model or to any other supplier. We tested that by running the repair with the network
-connection closed.
-
-That server is at Hetzner in Falkenstein, Germany, and so is the nightly copy of it. The PDF/UA
-check runs on the same server and not at an outside service.
-
-Nothing about you reaches a US server either. The pages of the tool load no script, no stylesheet
-and no font from another company. The fonts have been on our own server since 24 August 2026. So
-your browser opens no connection to Google or to anyone else to display our page, and your internet
-address does not pass by there. Two tests hold that in place: they fail as soon as an outside
-address appears in a page.
+Every step runs on our own server in the EU, at Hetzner in Falkenstein, Germany. Your document does
+not go to Adobe, to Google, to a language model or to any other supplier. We tested that by running
+the repair with the network connection closed. The PDF/UA check runs on that same server, and the
+nightly backup of the server is in Falkenstein too.
 
 After a check your file is gone as soon as the check is done. If you have a document repaired, we
 delete the repaired file 8 hours after your last action in it.

@@ -8,8 +8,9 @@ doelgroep:
   - "Webdeveloper"
 ---
 
-Laad je PDF en zie welke toegankelijkheidsfouten erin zitten. Het kost niets, je hoeft geen account
-te maken, en je document gaat van onze server af zodra de controle klaar is. De controle staat op
+Laad je PDF en zie welke toegankelijkheidsfouten erin zitten. Het kost niets en je hoeft geen
+account te maken. Je document komt op onze eigen server in Duitsland en gaat daar weer af zodra de
+controle klaar is. De controle staat op
 [pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren).
 
 ## Wat je te zien krijgt
@@ -36,6 +37,12 @@ We tellen wel hoeveel controles er vanaf jouw internetadres komen, want daar han
 per dag aan. Je adres slaan we daarvoor niet op: we rekenen er een onomkeerbare afdruk van uit met
 een geheim getal dat elke dag wisselt. Wat er precies gebeurt staat in de
 [privacyverklaring van pdf-toegankelijk.nl](https://pdf-toegankelijk.nl/privacy).
+
+Van jou gaat er bij de tool niets naar een Amerikaanse server. De pagina's van de tool halen geen
+script, geen stijlbestand en geen lettertype bij een ander bedrijf op. Je browser legt dus geen
+verbinding met Google of met een andere partij om ze te laten zien, en je internetadres komt daar
+niet langs. Twee tests in onze code falen zodra er toch een adres van een ander bedrijf in een
+pagina staat.
 
 ## Repareren zit in de besloten test
 
@@ -64,18 +71,11 @@ wel leveren is een lijst met de fouten die er nog zijn, en daar kan een mens mee
 
 ## Waar je document blijft
 
-Alle stappen draaien op onze eigen server in de EU. Je document gaat niet naar Adobe, niet naar
-Google, niet naar een taalmodel en niet naar een andere leverancier. We hebben dat getest door de
-reparatie te draaien met de netwerkverbinding dicht.
-
-Die server staat bij Hetzner in Falkenstein, Duitsland. De nachtelijke kopie van de server staat
-daar ook. De controle op PDF/UA draait op diezelfde server en niet bij een dienst van buiten.
-
-Van jou gaat er ook niets naar een Amerikaanse server. De pagina's van de tool halen geen script,
-geen stijlbestand en geen lettertype bij een ander bedrijf op. De lettertypen staan sinds 24
-augustus 2026 op onze eigen server. Je browser legt dus geen verbinding met Google of met een andere
-partij om onze pagina te laten zien, en je internetadres komt daar niet langs. Twee tests houden dat
-vast: ze falen zodra er een adres van buiten in een pagina staat.
+Alle stappen draaien op onze eigen server in de EU, bij Hetzner in Falkenstein, Duitsland. Je
+document gaat niet naar Adobe, niet naar Google, niet naar een taalmodel en niet naar een andere
+leverancier. We hebben dat getest door de reparatie te draaien met de netwerkverbinding dicht. De
+controle op PDF/UA draait op diezelfde server, en de nachtelijke kopie van de server staat ook in
+Falkenstein.
 
 Bij een controle is je bestand weg zodra de controle klaar is. Laat je een document repareren, dan
 verwijderen we het gerepareerde bestand 8 uur na je laatste handeling erin.
