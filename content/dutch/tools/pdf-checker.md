@@ -43,7 +43,7 @@ script, geen stijlbestand en geen lettertype bij een ander bedrijf op. Je browse
 verbinding met Google of met een andere partij om ze te laten zien, en je internetadres komt daar
 niet langs. De server van de tool laat het ook niet toe: die geeft je browser de instructie om
 alleen bestanden van onze eigen server te laden. Twee tests in de code van de tool controleren vier
-pagina's en falen zodra er toch een adres van een ander bedrijf in staat.
+pagina's en falen zodra er toch een script of een stijlbestand van een ander bedrijf in staat.
 
 ## Repareren zit in de besloten test
 
@@ -74,9 +74,9 @@ wel leveren is een lijst met de fouten die er nog zijn, en daar kan een mens mee
 
 Alle stappen draaien op onze eigen server in de EU, bij Hetzner in Falkenstein, Duitsland. Je
 document gaat niet naar Adobe, niet naar Google, niet naar een taalmodel en niet naar een andere
-leverancier. We hebben dat getest door de reparatie te draaien met de netwerkverbinding dicht. De
-controle op PDF/UA draait op diezelfde server, en de nachtelijke kopie van de server staat ook in
-Falkenstein.
+leverancier. We hebben dat getest door de reparatie te draaien met de netwerkverbinding dicht.
+Hetzner maakt elke nacht een kopie van de hele server, en die kopie blijft in Duitsland.
 
 Bij een controle is je bestand weg zodra de controle klaar is. Laat je een document repareren, dan
-verwijderen we het gerepareerde bestand 8 uur na je laatste handeling erin.
+verwijderen we het gerepareerde bestand 8 uur na je laatste handeling erin. De nachtelijke kopie
+wordt na 7 dagen gewist, dus een bestand dat wij verwijderen kan nog 7 dagen in zo'n kopie staan.

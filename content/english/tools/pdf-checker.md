@@ -43,8 +43,8 @@ Nothing about you goes to a US server when you use the tool. The pages of the to
 no stylesheet and no font from another company. So your browser opens no connection to Google or to
 anyone else to display them, and your internet address does not reach them either. The server of the
 tool does not allow it either: it tells your browser to load files from our own server only. Two
-tests in the code of the tool check four pages and fail as soon as an address from another company
-appears in one of them.
+tests in the code of the tool check four pages and fail as soon as a script or a stylesheet from
+another company appears in one of them.
 
 ## Repairing is in closed testing
 
@@ -75,8 +75,9 @@ do deliver is a list of the problems that are still there, and a person can work
 
 Every step runs on our own server in the EU, at Hetzner in Falkenstein, Germany. Your document does
 not go to Adobe, to Google, to a language model or to any other supplier. We tested that by running
-the repair with the network connection closed. The PDF/UA check runs on that same server, and the
-nightly backup of the server is in Falkenstein too.
+the repair with the network connection closed. Hetzner makes a copy of the whole server every night,
+and that copy stays in Germany.
 
 After a check your file is gone as soon as the check is done. If you have a document repaired, we
-delete the repaired file 8 hours after your last action in it.
+delete the repaired file 8 hours after your last action in it. The nightly copy is wiped after
+7 days, so a file we delete can still sit in such a copy for 7 days.
