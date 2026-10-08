@@ -81,13 +81,13 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 {{< /section-full >}}
 
-{{< section-split title="De wetgeving is helder" bg="light" >}}
+{{< section-split title="Welke wet voor jou geldt" bg="light" >}}
 
-- **Overheidsonderwijs** (universiteiten, hogescholen, mbo's) valt onder het Besluit digitale toegankelijkheid overheid (BDTO): WCAG 2.1 is al verplicht
-- **Particuliere onderwijsinstellingen** vallen onder de European Accessibility Act (EAA) als ze digitale diensten aanbieden
-- Het VN-verdrag Handicap verplicht inclusief onderwijs, ook digitaal
+- Ben je een **overheidsinstantie of een publiekrechtelijke instelling**, dan geldt het Besluit digitale toegankelijkheid overheid (BDTO), en dat besluit geldt sinds 2018
+- Ben je dat niet en bied je digitale diensten aan, dan geldt de European Accessibility Act (EAA), sinds 28 juni 2025
+- Publiekrechtelijke instelling is een juridisch begrip uit het aanbestedingsrecht en geen kwestie van subsidie. Het hangt af van hoe je instelling is opgericht, bestuurd en gefinancierd, en een rijksbijdrage alleen is niet genoeg
 
-Dit is niet iets voor "later". Studenten met een beperking volgen nu onderwijs op jouw instelling.
+Twijfel je over je eigen instelling, leg dat dan voor aan een jurist. Wij toetsen je leeromgeving; onder welke wet je valt, bepalen wij niet. Wachten hoeft er in de tussentijd niet: studenten met een beperking volgen nu onderwijs op jouw instelling.
 
 Achter beide wetten ligt dezelfde standaard. Wat [digitale toegankelijkheid](/digitale-toegankelijkheid/) inhoudt en welke eisen daaruit volgen, staat op één pagina bij elkaar.
 
@@ -213,7 +213,7 @@ Zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschrev
 <details class="faq-item">
 <summary class="faq-question">Valt ons type instelling onder de wetgeving?</summary>
 <div class="faq-answer">
-<p>Publiek gefinancierde instellingen (universiteiten, hogescholen, mbo's, voortgezet onderwijs) vallen onder het BDTO. Particuliere instellingen en EdTech-bedrijven vallen onder de EAA als ze digitale diensten aanbieden. In de praktijk: als studenten digitaal lesstof raadplegen, toetsen maken of zich inschrijven, dan is toegankelijkheid verplicht.</p>
+<p>Dat hangt af van wat je instelling juridisch is, en niet van wat ze aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het BDTO. Instellingen en EdTech-bedrijven die dat niet zijn, vallen onder de EAA als ze digitale diensten aanbieden. Publiekrechtelijke instelling is een begrip uit het aanbestedingsrecht met drie voorwaarden die alle drie moeten gelden, over het doel van de oprichting, rechtspersoonlijkheid en de financiering of het toezicht. Een rijksbijdrage op zichzelf zet het BDTO dus niet in werking. Twijfel je, leg je eigen situatie dan voor aan een jurist.</p>
 </div>
 </details>
 
