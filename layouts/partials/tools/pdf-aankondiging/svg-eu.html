@@ -1,4 +1,21 @@
-{{/* Waar je document blijft: eigen server in de EU, en wanneer het weg is. Decoratief. */}}
+{{/* Waar je document blijft: eigen server in de EU, en wanneer het weg is. Decoratief.
+
+     Het getal onderaan de tijdlijn is de bewaartermijn van de tool zelf. Die staat niet hier
+     maar in pdf-toegankelijk: bewaartermijn_uren() in webapp/services/opruimen.py leest
+     BEWAARTERMIJN_UREN uit de omgeving en valt terug op 168 uur. De privacyverklaring van de
+     tool schrijft dat getal niet, hij leest het uit, dus pdf-toegankelijk.nl/privacy zegt wat
+     er werkelijk staat; op 8 oktober 2026 was dat 7 dagen. Hier stond 24 uur, uit de tijd dat
+     de termijn korter was. Verandert de termijn, dan verandert dit label mee en ook de zin in
+     content/dutch/tools/pdf-checker.md en zijn Engelse tegenhanger.
+
+     Het label eronder noemt het gerepareerde bestand en niet de uitslag van een controle. Deze
+     tekening hangt namelijk onder twee koppen, en onder "Wat we van je bewaren" staat dat de
+     uitslag van een controle een half uur blijft staan. Die termijn is een andere dan deze.
+
+     De twee labels van het laatste punt staan rechts uitgelijnd op x=396. Links uitgelijnd op
+     x=316, zoals de twee labels ervoor, liep het onderste label tot x=455.8 en dus buiten de
+     viewBox van 440; gemeten met getBBox in de browser, met Nunito geladen. Op x=412 past het
+     wel, maar dan raakt de tekst de rand van het grijze vlak, dat daar ophoudt. */}}
 {{ $nl := .nl }}
 <svg viewBox="0 0 440 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="pdfann-svg">
   <rect x="0.5" y="0.5" width="439" height="319" rx="14" fill="#fff" stroke="#e5e7eb"/>
@@ -55,6 +72,6 @@
 
   <circle cx="384" cy="244" r="7" fill="#A30D4B"/>
   <path d="M381 244 l2.5 2.5 4 -4.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <text x="332" y="234" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9.5" font-weight="800">{{ cond $nl "24 uur later" "24 hours later" }}</text>
-  <text x="316" y="268" fill="#4b5563" font-family="Nunito, sans-serif" font-size="9.5">{{ cond $nl "het resultaat is weg" "the result is deleted" }}</text>
+  <text x="396" y="234" text-anchor="end" fill="#A30D4B" font-family="Nunito, sans-serif" font-size="9.5" font-weight="800">{{ cond $nl "7 dagen later" "7 days later" }}</text>
+  <text x="396" y="268" text-anchor="end" fill="#4b5563" font-family="Nunito, sans-serif" font-size="9.5">{{ cond $nl "het gerepareerde bestand is weg" "the repaired file is deleted" }}</text>
 </svg>
