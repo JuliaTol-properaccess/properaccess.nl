@@ -69,5 +69,14 @@ Every step runs on our own server in the EU. Your document does not go to Adobe,
 language model or to any other supplier. We tested that by running the repair with the network
 connection closed.
 
+That server is at Hetzner in Falkenstein, Germany, and so is the nightly copy of it. The PDF/UA
+check runs on the same server and not at an outside service.
+
+Nothing about you reaches a US server either. The pages of the tool load no script, no stylesheet
+and no font from another company. The fonts have been on our own server since 24 August 2026. So
+your browser opens no connection to Google or to anyone else to display our page, and your internet
+address does not pass by there. Two tests hold that in place: they fail as soon as an outside
+address appears in a page.
+
 After a check your file is gone as soon as the check is done. If you have a document repaired, we
 delete the repaired file 8 hours after your last action in it.

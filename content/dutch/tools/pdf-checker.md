@@ -68,5 +68,14 @@ Alle stappen draaien op onze eigen server in de EU. Je document gaat niet naar A
 Google, niet naar een taalmodel en niet naar een andere leverancier. We hebben dat getest door de
 reparatie te draaien met de netwerkverbinding dicht.
 
+Die server staat bij Hetzner in Falkenstein, Duitsland. De nachtelijke kopie van de server staat
+daar ook. De controle op PDF/UA draait op diezelfde server en niet bij een dienst van buiten.
+
+Van jou gaat er ook niets naar een Amerikaanse server. De pagina's van de tool halen geen script,
+geen stijlbestand en geen lettertype bij een ander bedrijf op. De lettertypen staan sinds 24
+augustus 2026 op onze eigen server. Je browser legt dus geen verbinding met Google of met een andere
+partij om onze pagina te laten zien, en je internetadres komt daar niet langs. Twee tests houden dat
+vast: ze falen zodra er een adres van buiten in een pagina staat.
+
 Bij een controle is je bestand weg zodra de controle klaar is. Laat je een document repareren, dan
 verwijderen we het gerepareerde bestand 8 uur na je laatste handeling erin.
