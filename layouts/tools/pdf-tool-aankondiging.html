@@ -26,14 +26,14 @@
 {{ define "main" }}
 {{ $nl := eq .Lang "nl" }}
 
-{{/* De sectie "wat je te zien krijgt" heeft met opzet geen tekening. De vier die er zijn gaan over
+{{/* De sectie "wat de controle je laat zien" heeft met opzet geen tekening. De vier die er zijn gaan over
      repareren, over de grens van de tool en over waar het document blijft; een van die drie hier
      neerzetten zou de controle iets laten beloven wat hij niet doet. */}}
 {{ $secties := dict
   "wat-we-van-je-bewaren"          (dict "visual" "eu"        "toon" "grijs")
   "what-we-keep"                   (dict "visual" "eu"        "toon" "grijs")
-  "repareren-zit-in-de-besloten-test" (dict "visual" "reparatie" "toon" "wit")
-  "repairing-is-in-closed-testing" (dict "visual" "reparatie" "toon" "wit")
+  "de-stap-na-de-controle"         (dict "visual" "reparatie" "toon" "wit")
+  "the-step-after-the-check"       (dict "visual" "reparatie" "toon" "wit")
   "wat-de-tool-niet-doet"          (dict "visual" "grens"     "toon" "donker")
   "what-the-tool-does-not-do"      (dict "visual" "grens"     "toon" "donker")
   "waar-je-document-blijft"        (dict "visual" "eu"        "toon" "grijs")
@@ -48,7 +48,10 @@
   <div class="hp-container">
     <div class="pdfann-hero__grid">
       <div class="pdfann-hero__text">
-        <span class="hp-hero__badge">{{ if $nl }}Gratis, zonder account{{ else }}Free, no account{{ end }}</span>
+        {{/* Het label hangt aan de controle en niet aan de pagina: controleren is gratis en zonder
+             account, repareren draait in besloten test en loopt per organisatie. Aangescherpt op
+             8 oktober 2026, bij het besluit dat deze pagina de voordeur van de tool is. */}}
+        <span class="hp-hero__badge">{{ if $nl }}Gratis controleren, zonder account{{ else }}Checking is free, no account{{ end }}</span>
         <h1 class="pdfann-hero__title">{{ .Title }}</h1>
         <div class="pdfann-hero__intro">{{ $intro | safeHTML }}</div>
         {{/* Sinds 7 september 2026 is de controle er echt, dus de eerste knop gaat ernaartoe en niet
