@@ -78,5 +78,5 @@ leverancier. We hebben dat getest door de reparatie te draaien met de netwerkver
 Hetzner maakt elke nacht een kopie van de hele server, en die kopie blijft in Duitsland.
 
 Bij een controle is je bestand weg zodra de controle klaar is. Laat je een document repareren, dan
-verwijderen we het gerepareerde bestand 8 uur na je laatste handeling erin. De nachtelijke kopie
-wordt na 7 dagen gewist, dus een bestand dat wij verwijderen kan nog 7 dagen in zo'n kopie staan.
+verwijderen we het gerepareerde bestand 7 dagen na je laatste handeling erin. Daarna kan het nog in
+een nachtelijke kopie staan, en zo'n kopie wordt zelf na 7 dagen gewist.

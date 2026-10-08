@@ -79,5 +79,5 @@ the repair with the network connection closed. Hetzner makes a copy of the whole
 and that copy stays in Germany.
 
 After a check your file is gone as soon as the check is done. If you have a document repaired, we
-delete the repaired file 8 hours after your last action in it. The nightly copy is wiped after
-7 days, so a file we delete can still sit in such a copy for 7 days.
+delete the repaired file 7 days after your last action in it. After that it can still be in a
+nightly copy, and that copy is itself wiped after 7 days.
