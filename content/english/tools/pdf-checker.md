@@ -41,11 +41,10 @@ secret number that changes every day. What happens exactly is in the
 
 Nothing about you goes to a US server when you use the tool. The pages of the tool load no script,
 no stylesheet and no font from another company. So your browser opens no connection to Google or to
-anyone else to display them, and your internet address does not reach them either. Two tests in the
-code of the tool watch for that. The first fails if the home page loads the Tailwind styles from an
-outside address. The second goes through the home page, the privacy statement, the terms and the
-login screen. It fails on a font from Google, or on a stylesheet or script from an address without
-https.
+anyone else to display them, and your internet address does not reach them either. The server of the
+tool does not allow it either: it tells your browser to load files from our own server only. Two
+tests in the code of the tool check four pages and fail as soon as an address from another company
+appears in one of them.
 
 ## Repairing is in closed testing
 

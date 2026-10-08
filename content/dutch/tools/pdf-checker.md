@@ -41,10 +41,9 @@ een geheim getal dat elke dag wisselt. Wat er precies gebeurt staat in de
 Van jou gaat er bij de tool niets naar een Amerikaanse server. De pagina's van de tool halen geen
 script, geen stijlbestand en geen lettertype bij een ander bedrijf op. Je browser legt dus geen
 verbinding met Google of met een andere partij om ze te laten zien, en je internetadres komt daar
-niet langs. Twee tests in de code van de tool letten daarop. De eerste faalt zodra de startpagina de
-stijlen van Tailwind bij een adres van buiten ophaalt. De tweede loopt de startpagina, de
-privacyverklaring, de voorwaarden en het inlogscherm langs, en faalt op een lettertype bij Google of
-op een stijlbestand of script van een adres zonder https.
+niet langs. De server van de tool laat het ook niet toe: die geeft je browser de instructie om
+alleen bestanden van onze eigen server te laden. Twee tests in de code van de tool controleren vier
+pagina's en falen zodra er toch een adres van een ander bedrijf in staat.
 
 ## Repareren zit in de besloten test
 
