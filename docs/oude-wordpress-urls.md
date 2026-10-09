@@ -146,8 +146,10 @@ en helpt dan niet.
   `/trainen-van-webredactie/`.
 - `/instructie-pdfs-testen-met-pac-2024/` en `/hoe-toegankelijk-zijn-offertes-in-pdf-formaat/`
   naar `/tools/pdf-checker/`. Dat is het onderwerp, maar geen artikel.
-- `/coole-mensen-in-digitale-toegankelijkheid/` en `/toegankelijkheid_politieke_partijen/`
-  naar `/bijzondere-initiatieven/`.
+- `/coole-mensen-in-digitale-toegankelijkheid/` naar `/categories/tips-en-tools/` en
+  `/toegankelijkheid_politieke_partijen/` naar
+  `/blog/toegankelijke-websites-van-politieke-partijen/`. Tot 9 oktober 2026 wezen beide
+  naar `/bijzondere-initiatieven/`; zie "Bijzondere initiatieven van de site" hieronder.
 
 Bij die laatste hoort een opmerking. In het archief staat de URL ook als
 `/toegankelijkheid_politieke_partijen/?ref=felienne.nl`. Dat wijst op een link van buiten,
@@ -256,7 +258,33 @@ formaat uit.
 
 1. Importeer `docs/redirects/cloudflare-bulk-redirects.csv` opnieuw in de Bulk Redirect List.
    De regels in de repo doen zelf niets.
-2. Kijk of 312 regels binnen het abonnement passen. Bij de vorige import pasten 190 regels;
+2. Kijk of de lijst binnen het abonnement past. Bij de vorige import pasten 190 regels;
    wat het maximum is, staat in het dashboard en is hier niet te zien.
-3. Controleer daarna met `python3 scripts/controleer_redirect_lijst.py`. Nu: 312 regels, 457
-   URL's opgehaald, geen fouten, 190 bronnen geven al een 301.
+3. Controleer daarna met `python3 scripts/controleer_redirect_lijst.py`. Gemeten op
+   5 oktober 2026: 312 regels, 457 URL's opgehaald, geen fouten, 190 bronnen geven al
+   een 301.
+
+## Bijzondere initiatieven van de site
+
+Julia heeft op 9 oktober 2026 besloten dat `/bijzondere-initiatieven/` voorlopig van de
+site af gaat. Reden: wij geven Publiqa en Tolkie daar een eigen plek met logo en
+aanbeveling, en zij verwijzen niet of nauwelijks naar ons terug. Het definitieve besluit
+valt begin november, dus de ingreep is omkeerbaar gehouden: de pagina staat op
+`draft: true` en de tekst, `data/bijzondere-initiatieven.yaml` en
+`layouts/bijzondere-initiatieven/list.html` staan er nog.
+
+Dat raakt de redirectlijst op drie plekken. De lijst gaat van 312 naar 313 regels.
+
+- Regel 13, `/coole-mensen-in-digitale-toegankelijkheid/`, wijst nu naar
+  `/categories/tips-en-tools/`. Dat is de categorie waarin de artikelen staan waarin we
+  gereedschap van anderen aanraden, waaronder `/blog/tolkie-leeshulp-aanrader/`.
+- Regel 19, `/toegankelijkheid_politieke_partijen/`, wijst nu naar
+  `/blog/toegankelijke-websites-van-politieke-partijen/`. Dat is hetzelfde onderwerp als
+  de oude pagina en een betere koppeling dan de vorige.
+- Regel 313 is nieuw: `/bijzondere-initiatieven/` naar `/categories/tips-en-tools/`.
+
+Zolang die laatste regel niet in Cloudflare staat, houdt een `aliases`-regel in
+`content/dutch/categories/tips-en-tools/_index.md` de URL uit de 404. Dat is dezelfde
+constructie als bij de 120 aliassen hierboven: status 200 met een meta-refresh en een
+canonical, en het controlescript rekent dat goed voor een bron die op zijn 301 wacht.
+Staat de 301 er, dan komt Cloudflare eerst en wordt die pagina niet meer opgevraagd.
