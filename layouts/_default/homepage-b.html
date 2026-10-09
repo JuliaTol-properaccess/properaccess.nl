@@ -371,7 +371,9 @@
   .hb-hero__lead a:hover { color: var(--petrol); }
 
   /* 2. De assistent */
-  .hb-vraag { background: var(--navy); color: var(--papier); }
+  /* De bovenbalk blijft staan, dus een sprong naar #vraag (vanuit de knop
+     Zoeken of vanuit de footerlink) zou de eerste regel eronder verstoppen. */
+  .hb-vraag { background: var(--navy); color: var(--papier); scroll-margin-top: 84px; }
   .hb-vraag__grid {
     padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(44px, 6vw, 76px);
     display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));

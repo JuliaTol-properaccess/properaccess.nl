@@ -48,6 +48,9 @@ kolommen:
 
   - titel: "Kennis"
     links:
+      # icoon: zoek zet er het vergrootglas voor, net als in de bovenbalk.
+      # /#vraag is de assistent op de homepagina, waarmee je een pagina vindt.
+      - { naam: "Zoeken op de website", url: "/#vraag", icoon: "zoek" }
       - { naam: "Digitale toegankelijkheid", url: "/digitale-toegankelijkheid/" }
       - { naam: "De European Accessibility Act", url: "/eaa/" }
       - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }

@@ -55,7 +55,10 @@
             type="text"
             data-search-input
             autocomplete="off"
-            aria-label="Search"
+            {{/* Het venster doorzoekt alleen blogartikelen; de naam zegt dat
+                 nu ook, zodat het verschil met de knop "Zoeken" in de
+                 bovenbalk in de woorden zit (WCAG 3.2.4). */}}
+            aria-label="{{ i18n `search_input_label` }}"
             placeholder="{{ i18n `search_input_placeholder` | default .input_placeholder }}" />
         </div>
         <div class="search-wrapper-body">

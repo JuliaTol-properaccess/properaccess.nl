@@ -22,7 +22,8 @@ contact_submit: "Send message"
 contact_form_title: "Send a message"
 contact_form_sub: "We reply within one working day."
 blog_cta_heading: "Continue on this topic"
-search_input_placeholder: Search Post...
+search_input_placeholder: Search blog posts...
+search_input_label: Search blog posts
 search_no_results: No results for
 search_initial_message: Type something to search..
 search_navigate: to navigate
@@ -78,7 +79,7 @@ tools_promo_text1: "We built an application with 9 tools that allow web editors 
 tools_promo_text2: "The tools don't just flag issues. They also explain why something is a problem and how to fix it. So you learn while you check."
 tools_promo_text3: "The toolsuite includes checkers for heading structure, alt texts, links, tables, semantics, error messages, iframes, language and page titles."
 tools_promo_cta: "Contact us for a subscription"
-chat_toggle_label: "Open chat"
+chat_toggle_label: "Ask a question"
 chat_title: "Ask a question"
 chat_close: "Close chat"
 chat_welcome: "Hello! I'm the Proper Access AI assistant. Feel free to ask about digital accessibility, our services, or WCAG."

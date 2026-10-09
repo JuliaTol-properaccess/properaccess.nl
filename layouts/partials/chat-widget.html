@@ -1,7 +1,13 @@
 {{/* Chat Widget — Accessible AI assistant for Proper Access */}}
 <div class="pa-chat-wrapper" data-lang="{{ site.Language.Lang }}">
 
-  {{/* Toggle button */}}
+  {{/* Toggle button. De tekst is zichtbaar, niet alleen voor een schermlezer:
+       bezoekers lazen een los tekstballonnetje niet als zoekfunctie, terwijl
+       ze de assistent juist gebruiken om een pagina te vinden (Julia,
+       09-10-2026). Op de Nederlandse site staat er daarom een vergrootglas
+       bij, hetzelfde als in de bovenbalk en de footer. De Engelse site houdt
+       het tekstballonnetje, want daar wijst het vergrootglas in de header nog
+       naar het zoekvenster voor blogartikelen. */}}
   <button
     id="pa-chat-toggle"
     type="button"
@@ -9,10 +15,14 @@
     aria-expanded="false"
     aria-controls="pa-chat-dialog"
   >
-    <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-    </svg>
-    <span class="sr-only">{{ i18n "chat_toggle_label" }}</span>
+    {{ if eq site.Language.Lang "nl" }}
+      {{ partial "icoon-zoek.html" 22 }}
+    {{ else }}
+      <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    {{ end }}
+    <span class="pa-chat-toggle__tekst">{{ i18n "chat_toggle_label" }}</span>
   </button>
 
   {{/* Chat dialog */}}

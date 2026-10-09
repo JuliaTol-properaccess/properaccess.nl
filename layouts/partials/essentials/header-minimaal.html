@@ -7,21 +7,42 @@
   Het menu is een uitklapbaar paneel (disclosure), geen modaal venster: de
   rest van de pagina blijft bereikbaar, dus er is geen focus trap. Escape
   sluit het paneel en zet de focus terug op de knop.
+
+  De knop "Zoeken" wijst naar de assistent, want daarmee vinden bezoekers in
+  de praktijk een pagina (verzoek van Julia, 09-10-2026). Op de homepagina
+  staat die assistent als sectie #vraag in de pagina; daar springt de knop
+  naartoe en zet hij de focus in het invoerveld. Op elke andere pagina opent
+  hij de chatdialoog van partials/chat-widget.html, zodat de bezoeker op zijn
+  eigen pagina blijft. Welke van de twee het is, zoekt het script bij de klik
+  op: de chatwidget staat verderop in de body en bestaat hier nog niet.
+
+  De knop onder in het paneel ("Zoek in blogartikelen") is een andere functie:
+  die doorzoekt alleen blogartikelen. Twee verschillende functies achter
+  hetzelfde woord is WCAG 3.2.4, dus de woorden maken het verschil.
 */}}
 <header class="hm">
   <div class="hm__bar">
     <a class="hm__logo" href="{{ site.Home.RelPermalink }}">
       {{ partial "logo" }}
     </a>
-    <button
-      type="button"
-      class="hm__toggle"
-      id="hm-toggle"
-      aria-expanded="false"
-      aria-controls="hm-paneel">
-      Menu
-      <span class="hm__streepjes" aria-hidden="true"><span></span><span></span></span>
-    </button>
+    <div class="hm__acties">
+      <button
+        type="button"
+        class="hm__zoekknop"
+        id="hm-zoekknop">
+        {{ partial "icoon-zoek.html" 20 }}
+        Zoeken
+      </button>
+      <button
+        type="button"
+        class="hm__toggle"
+        id="hm-toggle"
+        aria-expanded="false"
+        aria-controls="hm-paneel">
+        Menu
+        <span class="hm__streepjes" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
   </div>
 
   <nav class="hm__paneel" id="hm-paneel" aria-label="Hoofdmenu" hidden>
@@ -59,7 +80,7 @@
         <a class="hm__cta" href="/offerte-wcag-onderzoek/">Audit aanvragen</a>
         <a class="hm__link hm__link--vet" href="https://portaal.properaccess.nl/" target="_blank" rel="noopener">Naar het portaal<span class="sr-only"> (opent in een nieuw tabblad)</span></a>
         <a class="hm__telefoon" href="tel:+31855055890">085 5055 890</a>
-        <button type="button" class="hm__zoek" data-target="search-modal">Zoeken in de blog</button>
+        <button type="button" class="hm__zoek" data-target="search-modal">Zoek in blogartikelen</button>
       </div>
     </div>
   </nav>
@@ -71,8 +92,17 @@
     max-width: 1320px; margin: 0 auto; padding: 14px 24px; min-height: 66px;
     display: flex; align-items: center; justify-content: space-between; gap: 20px;
   }
-  .hm__logo { display: inline-flex; }
-  .hm__logo img { height: 2rem; width: auto; }
+  .hm__logo { display: inline-flex; flex: none; }
+  .hm__logo img { height: 2rem; width: auto; max-width: none; flex: none; }
+  .hm__acties { display: flex; align-items: center; gap: 10px; flex: none; }
+  .hm__zoekknop {
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer; min-height: 44px;
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 13px;
+    letter-spacing: 2px; text-transform: uppercase; color: #1F2937; background: none;
+    border: 0; border-radius: 0; padding: 10px 12px;
+  }
+  .hm__zoekknop:hover { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.3em; }
+  .hm__zoekknop .icoon-zoek { flex: none; }
   .hm__toggle {
     display: flex; align-items: center; gap: 14px; cursor: pointer; min-height: 44px;
     font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 13px;
@@ -119,6 +149,17 @@
     font-weight: 700; color: #1F2937; text-decoration: underline; text-underline-offset: 0.2em;
   }
   .hm__zoek:hover { color: #A30D4B; }
+  /* Smalle schermen en 400% zoom: logo, Zoeken en Menu moeten samen op één
+     regel passen binnen 320 CSS-pixels, anders schuift de balk horizontaal. */
+  @media (max-width: 560px) {
+    .hm__bar { padding: 10px 14px; gap: 10px; min-height: 60px; }
+    .hm__logo img { height: 1.75rem; }
+    .hm__acties { gap: 4px; }
+    .hm__zoekknop, .hm__toggle { font-size: 12px; letter-spacing: 0.6px; gap: 7px; padding: 10px 10px; }
+    .hm__paneel { max-height: calc(100vh - 61px); }
+    .hm__paneel-inner { padding: 24px 14px 30px; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .hm__paneel:not([hidden]) { animation: none; }
     .hm__streepjes span { transition: none; }
@@ -152,6 +193,38 @@
       zet(false);
       knop.focus();
     }
+  });
+
+  // De knop "Zoeken" wijst naar de assistent. Welke vorm die heeft, hangt af
+  // van de pagina, dus kijken we pas bij de klik: dan staat de hele body er.
+  var zoekknop = document.getElementById("hm-zoekknop");
+  if (!zoekknop) return;
+
+  zoekknop.addEventListener("click", function () {
+    zet(false);
+
+    // 1. De homepagina heeft de assistent als sectie in de pagina staan.
+    var invoer = document.getElementById("hb-vraag-invoer");
+    if (invoer) {
+      var sectie = document.getElementById("vraag");
+      if (sectie && sectie.scrollIntoView) {
+        var zacht = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        sectie.scrollIntoView({ behavior: zacht ? "smooth" : "auto", block: "start" });
+      }
+      invoer.focus({ preventScroll: true });
+      return;
+    }
+
+    // 2. Elke andere pagina heeft de chatdialoog. Die zet zelf de focus in
+    //    het invoerveld en geeft de focus bij sluiten hieraan terug.
+    var chat = document.getElementById("pa-chat-toggle");
+    if (chat) {
+      chat.click();
+      return;
+    }
+
+    // 3. Staat geen van beide op de pagina, ga dan naar de homepagina.
+    window.location.href = "/#vraag";
   });
 })();
 </script>

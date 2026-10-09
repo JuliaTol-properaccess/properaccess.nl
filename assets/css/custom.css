@@ -14305,11 +14305,12 @@ a.tool-link__href-url:hover {
   font-family: "Nunito", sans-serif;
 }
 
-/* Toggle button */
+/* Toggle button. Icoon plus zichtbare tekst, dus een pil en geen rondje:
+   een los icoon las niemand als zoekfunctie (09-10-2026). */
 .pa-chat-toggle {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  min-height: 52px;
+  padding: 0 1.1rem;
+  border-radius: 26px;
   background: #A30D4B;
   color: #fff;
   border: none;
@@ -14317,8 +14318,22 @@ a.tool-link__href-url:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.2;
   box-shadow: 0 4px 14px rgba(163, 13, 75, 0.3);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pa-chat-toggle .icoon-zoek,
+.pa-chat-toggle svg {
+  flex: none;
+}
+
+.pa-chat-toggle__tekst {
+  white-space: nowrap;
 }
 
 .pa-chat-toggle:hover {
@@ -14577,6 +14592,16 @@ a.tool-link__href-url:hover {
   .pa-chat-wrapper {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  /* Smal scherm, en daarmee ook 400% zoom: dan is het venster 320 CSS-pixels
+     breed. De knop houdt zijn tekst en dekt zo min mogelijk van de pagina af. */
+  .pa-chat-toggle {
+    min-height: 46px;
+    padding: 0 0.85rem;
+    border-radius: 23px;
+    font-size: 14px;
+    gap: 0.4rem;
   }
 
   #pa-chat-dialog {
