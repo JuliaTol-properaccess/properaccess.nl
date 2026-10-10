@@ -50,7 +50,7 @@ Voor redacteurs die content aan websites toevoegen met een CMS. Je leert hoe je 
 - Inhoud logisch ordenen voor screenreaders
 - Kleurcontrast en gebruik van kleur
 
-**Duur:** 2 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse) · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< section-card title="Van Word naar toegankelijke PDF" >}}
@@ -63,12 +63,18 @@ Voor redacteurs die rapporten, verslagen of folders maken in PDF vanuit MS Word.
 - Inhoud logisch ordenen voor screenreaders
 - Kleurcontrast en gebruik van kleur
 - Inclusief een toegankelijk Word-sjabloon
-- Zelf PDF's leren testen op toegankelijkheid
+- Onder begeleiding je eigen document controleren
 
-**Duur:** 2 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< /section-cards >}}
+
+{{< section-full title="Of beide dagdelen op één dag" >}}
+
+Neem je de twee trainingen samen, dan doen we 's ochtends de webcontent en 's middags de PDF's, met lunch ertussen. De uitleg over WCAG hoeft dan maar één keer, dus er blijft meer tijd over om te oefenen met je eigen content.
+
+{{< /section-full >}}
 
 {{< section-cta >}}
 
