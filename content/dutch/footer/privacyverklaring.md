@@ -13,7 +13,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "september 2026"
+    value: "oktober 2026"
 ---
 
 {{< offerte-section title="1. Wie zijn wij" >}}
@@ -40,7 +40,9 @@ Voor websitestatistieken gebruiken we Plausible Analytics. Plausible werkt zonde
 
 **De chat op onze website**
 
-Stel je een vraag in de chat, dan sturen we je vraag naar Anthropic. Anthropic maakt met het taalmodel Claude het antwoord. De eerdere berichten uit hetzelfde gesprek gaan mee, zodat het antwoord op je vraag aansluit. We slaan de chatberichten zelf niet op. Zet geen persoonsgegevens in je vraag, zoals je naam, je e-mailadres of je telefoonnummer.
+Stel je een vraag in de chat, dan sturen we je vraag naar Anthropic. Anthropic maakt met het taalmodel Claude het antwoord. De eerdere berichten uit hetzelfde gesprek gaan mee, zodat het antwoord op je vraag aansluit.
+
+Je vraag bewaren we 90 dagen, zodat we zien welke vragen bezoekers stellen en de antwoorden en de website kunnen verbeteren. We bewaren de tekst van je vraag en het tijdstip. Verder niets: geen IP-adres, geen cookie en geen nummer waarmee we twee vragen aan elkaar kunnen koppelen. Het antwoord van de assistent bewaren we ook niet. Na 90 dagen verwijdert onze server je vraag automatisch. Zet geen persoonsgegevens in je vraag, zoals je naam, je e-mailadres of je telefoonnummer.
 
 Om misbruik te voorkomen, telt onze server hoeveel berichten er in 10 minuten van hetzelfde IP-adres komen. Dat getal staat alleen in het werkgeheugen van de server en wordt niet opgeslagen.
 
@@ -68,6 +70,8 @@ Proper Access gebruikt geanonimiseerde bezoekstatistieken om de website te verbe
 
 Voor de chat en voor het opzoeken van de organisatie achter een bezoek verwerken we je IP-adres kort. De grondslag daarvoor is ons gerechtvaardigd belang: je vragen beantwoorden, misbruik van de chat voorkomen, en weten welke organisaties onze website bezoeken.
 
+Je vraag uit de chat bewaren we op dezelfde grondslag: zien welke vragen bezoekers stellen, zodat we de antwoorden en de website kunnen verbeteren.
+
 Proper Access verwerkt jouw persoonsgegevens voor de volgende doelen:
 
 - Het afhandelen van jouw betaling
@@ -82,6 +86,8 @@ Proper Access verwerkt jouw persoonsgegevens voor de volgende doelen:
 {{< offerte-section title="5. Bewaartermijn" >}}
 
 Proper Access bewaart je persoonsgegevens niet langer dan strikt nodig is om de doelen te realiseren waarvoor je gegevens worden verzameld. Wij hanteren de volgende bewaartermijnen voor de volgende (categorieën) van persoonsgegevens: 1 jaar.
+
+Je vraag uit de chat bewaren we 90 dagen. Daarna verwijdert onze server hem automatisch.
 
 {{< /offerte-section >}}
 

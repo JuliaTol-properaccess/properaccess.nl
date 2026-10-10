@@ -2,13 +2,22 @@
  * Cloudflare Worker — AI Chat Widget
  * Proxies chat messages to the Claude API for the Proper Access website.
  *
- * POST /chat  → forward conversation to Claude, return response
+ * POST /chat     → forward conversation to Claude, return response
  *   Body: { messages: [{role, content}], lang: "nl"|"en" }
+ * GET  /rapport  → wat er gevraagd is in de afgelopen dagen (sleutel nodig)
  *
- * Secrets (set via wrangler secret put):
+ * Van elke vraag bewaren we de vraagtekst en het tijdstip, 90 dagen. Geen
+ * IP-adres, geen hash daarvan, geen cookie, geen gespreksnummer. Zie
+ * schema.sql en README.md. Het opruimen loopt op een cron trigger.
+ *
+ * Bindings (zie wrangler.json):
+ *   DB — D1-database pa-chat-vragen. Ontbreekt die, dan blijft de chat werken
+ *        en bewaart de Worker niets.
+ * Secrets (npx wrangler secret put):
  *   ANTHROPIC_API_KEY — Claude API key
+ *   RAPPORT_SLEUTEL   — wachtwoord voor /rapport
  *
- * Deploy: npx wrangler deploy worker.js --name pa-chat
+ * Deploy: cd tools/chat-worker && npx wrangler deploy
  */
 
 const ALLOWED_ORIGINS = [
@@ -32,6 +41,10 @@ const MAX_CONTENT_LENGTH = 500;
 const RATE_LIMIT = 20;
 const RATE_WINDOW = 10 * 60 * 1000;
 const rateLimitMap = new Map();
+
+// Bewaartermijn van de vragen. De cron trigger in wrangler.json gooit elke
+// nacht weg wat ouder is.
+const BEWAARTERMIJN_DAGEN = 90;
 
 // ── System prompts ────────────────────────────────────────────
 
@@ -128,7 +141,7 @@ const SYSTEM_PROMPT_EN = `You are the AI assistant of Proper Access, a digital a
 // ── Main handler ──────────────────────────────────────────────
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
     const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : "";
 
@@ -139,16 +152,27 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === "/chat" && request.method === "POST") {
-      return handleChat(request, env, allowedOrigin);
+      return handleChat(request, env, allowedOrigin, ctx);
+    }
+
+    if (url.pathname === "/rapport" && request.method === "GET") {
+      return handleRapport(env, url);
     }
 
     return json({ error: "Not found" }, 404, allowedOrigin);
+  },
+
+  // Cron trigger uit wrangler.json. Dwingt de bewaartermijn af, ook in een week
+  // waarin niemand iets vraagt.
+  async scheduled(event, env) {
+    const weg = await opschonen(env);
+    console.log("pa-chat opschonen: " + weg + " vragen ouder dan " + BEWAARTERMIJN_DAGEN + " dagen verwijderd");
   },
 };
 
 // ── Chat handler ──────────────────────────────────────────────
 
-async function handleChat(request, env, origin) {
+async function handleChat(request, env, origin, ctx) {
   // Rate limiting
   const clientIP = request.headers.get("CF-Connecting-IP") || "unknown";
   if (isRateLimited(clientIP)) {
@@ -188,6 +212,14 @@ async function handleChat(request, env, origin) {
     if (typeof msg.content !== "string" || msg.content.length > MAX_CONTENT_LENGTH) {
       return json({ ok: false, error: "Message content too long (max " + MAX_CONTENT_LENGTH + " chars)" }, 400, origin);
     }
+  }
+
+  // De vraag wegschrijven. Buiten het antwoord om, zodat de bezoeker er niet
+  // op wacht en een fout in de database de chat niet raakt.
+  if (ctx && typeof ctx.waitUntil === "function") {
+    ctx.waitUntil(bewaarVraag(env, trimmedMessages));
+  } else {
+    await bewaarVraag(env, trimmedMessages);
   }
 
   // Select system prompt
@@ -235,6 +267,235 @@ async function handleChat(request, env, origin) {
   }
 }
 
+// ── De vraag bewaren ──────────────────────────────────────────
+
+/**
+ * Schrijft één rij weg: de laatste vraag van de bezoeker en het tijdstip.
+ *
+ * Alleen de laatste. De widget stuurt bij elke vraag het hele gesprek mee, dus
+ * de eerdere vragen staan al in de database. En alleen een `user`-bericht: het
+ * antwoord van de assistent bewaren we niet.
+ */
+async function bewaarVraag(env, messages) {
+  if (!env.DB) return;
+
+  const laatste = messages[messages.length - 1];
+  if (!laatste || laatste.role !== "user") return;
+
+  const vraag = String(laatste.content).trim().slice(0, MAX_CONTENT_LENGTH);
+  if (!vraag) return;
+
+  try {
+    await env.DB.prepare("INSERT INTO vraag (moment, vraag) VALUES (?, ?)")
+      .bind(new Date().toISOString(), vraag)
+      .run();
+  } catch (err) {
+    // Een chat die blijft werken is belangrijker dan een complete meting.
+    console.error("pa-chat bewaren mislukt:", err.message);
+  }
+}
+
+/** Gooit weg wat ouder is dan de bewaartermijn. Geeft het aantal rijen terug. */
+async function opschonen(env) {
+  if (!env.DB) return 0;
+
+  const uitkomst = await env.DB.prepare("DELETE FROM vraag WHERE moment < ?")
+    .bind(dagenGeleden(BEWAARTERMIJN_DAGEN))
+    .run();
+
+  return (uitkomst && uitkomst.meta && uitkomst.meta.changes) || 0;
+}
+
+// ── Rapport ───────────────────────────────────────────────────
+
+/**
+ * Waar de vragen over gaan. Eén regel per onderwerp, in deze volgorde
+ * doorlopen; een vraag kan bij meer dan één onderwerp horen en wordt dan ook
+ * bij alle passende geteld. Zo zie je van een prijsvraag over een PDF beide
+ * kanten. Wat nergens op past, komt bij `zonder onderwerp` en is de lijst om
+ * naar te kijken: daar staan de onderwerpen die we nog niet herkennen.
+ */
+const ONDERWERPEN = [
+  ["prijs", /\b(prijs|prijzen|kost(en|t)?|tarief|tarieven|bedrag|budget|euro|duur|goedkoop|price|cost|how much)\b|€/i],
+  ["offerte", /\b(offerte|aanbieding|quote|proposal|aanvragen|aanvraag)\b/i],
+  ["audit of onderzoek", /\b(audit|onderzoek|toets(en|ing)?|keuring|steekproef|wcag-em|rapport(en|age)?|report)\b/i],
+  ["hercontrole", /\b(hercontrole|herkeuring|retest|opnieuw (ge)?test|na het oplossen)\b/i],
+  ["wcag-criterium", /\b(succescriterium|succes criterium|criterium|sc ?\d\.\d|\d\.\d\.\d+|niveau (a|aa|aaa)|wcag ?2\.\d)\b/i],
+  ["wetgeving", /\b(eaa|european accessibility act|bdto|besluit digitale|wet|wettelijk|verplicht|verplichting|boete|handhaving|toezicht|inspectie|wanneer moet|deadline|law|legal|required)\b/i],
+  ["toegankelijkheidsverklaring", /\b(verklaring|toegankelijkheidsverklaring|register|status (a|b|c|d)|logius|statement)\b/i],
+  ["pdf", /\bpdf('s|s)?\b|\b(document(en)?|word|powerpoint|indesign)\b/i],
+  ["monitoring", /\b(monitoring|monitoren|dashboard|elke maand|maandelijks|blijven meten)\b/i],
+  ["wcag radar of tools", /\b(radar|extensie|plug-?in|browser|tool(s)?|scan(nen|ner)?|checker|axe|lighthouse)\b/i],
+  ["app", /\b(app|apps|ios|android|native|mobiel)\b/i],
+  ["training of leren", /\b(training|cursus|workshop|les|leren|opleiding|webinar|kennissessie)\b/i],
+  ["strippenkaart", /\b(strip(pen)?|strippenkaart|credits?|vraag stellen|senior auditor)\b/i],
+  ["samenwerken", /\b(contact|bellen|telefoon|mail|afspraak|kennismaken|mens|iemand spreken|vacature|werken bij|partner|reseller)\b/i],
+  ["over Proper Access", /\b(wie (is|zijn|ben)|oprichter|julia|jullie bedrijf|ervaring|referenties|klanten|hoeveel audits|onafhankelijk|waar (zitten|staan) jullie|about you)\b/i],
+  ["zelf oplossen", /\b(hoe (maak|zorg|los|repareer|fix)|oplossen|repareren|alt-?tekst|contrast|focus|toetsenbord|schermlezer|aria|koppen|formulier|tabel|video|ondertitel)\b/i],
+];
+
+/**
+ * Woorden die in een vraag niets over het onderwerp zeggen. Nodig voor de
+ * woordenlijst onder het rapport: zonder deze lijst is de top tien `is`,
+ * `een`, `the` en `my`.
+ */
+const STOPWOORDEN = new Set(
+  ("de het een en of maar want dus als dan die dat deze dit daar hier er is zijn was waren wordt worden werd " +
+    "heb hebt heeft hebben had ik je jij jullie we wij ze zij hij u uw mijn ons onze hun haar zich " +
+    "wat welke wie waar waarom wanneer hoe hoeveel kan kun kunt kunnen moet moeten mag mogen wil willen zal zou zouden " +
+    "niet geen ook nog wel al alleen meer veel weinig heel erg even graag even misschien soms altijd nooit " +
+    "van voor met bij aan op in om te ten door over naar uit tot per sinds tegen zonder tussen onder boven " +
+    "ja nee hallo hoi goedemiddag goedemorgen dank bedankt alvast vraag vragen weten zien maken doen gaan komen " +
+    "the a an and or but so if then that this these those there here it its is are was were be been being " +
+    "have has had do does did can could should would will shall may might must i you we they he she my our your their " +
+    "not no also still only more much many very please thanks thank hello hi what which who where why when how " +
+    "of for with by at on in to from about into out until against without between under over up down " +
+    "me us them something anything nothing know see make get go come need want").split(/\s+/)
+);
+
+async function handleRapport(env, url) {
+  const sleutel = url.searchParams.get("sleutel") || "";
+  if (!env.RAPPORT_SLEUTEL || sleutel !== env.RAPPORT_SLEUTEL) {
+    return new Response("Geen toegang", { status: 401 });
+  }
+
+  if (!env.DB) {
+    return new Response("Geen database aan deze Worker gekoppeld", { status: 503 });
+  }
+
+  const dagen = Math.min(
+    parseInt(url.searchParams.get("dagen") || "7", 10) || 7,
+    BEWAARTERMIJN_DAGEN
+  );
+  const data = await rapportData(env, dagen);
+
+  // JSON voor een script, platte tekst in de browser. Zelfde keuze als bij de
+  // bezoekmeting.
+  if (url.searchParams.get("formaat") === "json") {
+    return new Response(JSON.stringify(data), {
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+    });
+  }
+
+  return new Response(tekstRapport(data), {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+async function rapportData(env, dagen) {
+  const vanaf = dagenGeleden(dagen);
+
+  const vragen = await env.DB.prepare(
+    "SELECT moment, vraag FROM vraag WHERE moment > ? ORDER BY moment DESC"
+  )
+    .bind(vanaf)
+    .all();
+  const rijen = vragen.results || [];
+
+  const perDag = await env.DB.prepare(
+    `SELECT substr(moment, 1, 10) AS dag, COUNT(*) AS aantal
+       FROM vraag WHERE moment > ? GROUP BY dag ORDER BY dag`
+  )
+    .bind(vanaf)
+    .all();
+
+  // Twee getallen om de bewaartermijn van buiten te controleren: staat er iets
+  // ouder dan 90 dagen, dan heeft de cron trigger niet gelopen.
+  const hele = await env.DB.prepare(
+    "SELECT COUNT(*) AS aantal, MIN(moment) AS oudste FROM vraag"
+  ).first();
+
+  const onderwerpen = ONDERWERPEN.map(function (o) {
+    return { onderwerp: o[0], aantal: 0 };
+  });
+  let zonder = 0;
+
+  const woorden = new Map();
+
+  for (const rij of rijen) {
+    let geraakt = false;
+    ONDERWERPEN.forEach(function (o, i) {
+      if (o[1].test(rij.vraag)) {
+        onderwerpen[i].aantal++;
+        geraakt = true;
+      }
+    });
+    if (!geraakt) zonder++;
+
+    const gezien = new Set();
+    const losse = rij.vraag.toLowerCase().match(/[a-zà-ÿ0-9][a-zà-ÿ0-9'’-]{2,}/g) || [];
+    for (const woord of losse) {
+      if (STOPWOORDEN.has(woord) || gezien.has(woord)) continue;
+      gezien.add(woord);
+      woorden.set(woord, (woorden.get(woord) || 0) + 1);
+    }
+  }
+
+  return {
+    peildatum: new Date().toISOString(),
+    dagen: dagen,
+    vragen: rijen.length,
+    per_dag: perDag.results || [],
+    onderwerpen: onderwerpen.filter((o) => o.aantal > 0).sort((a, b) => b.aantal - a.aantal),
+    zonder_onderwerp: zonder,
+    woorden: [...woorden.entries()]
+      .map(([woord, aantal]) => ({ woord: woord, aantal: aantal }))
+      .filter((w) => w.aantal > 1)
+      .sort((a, b) => b.aantal - a.aantal)
+      .slice(0, 25),
+    bewaartermijn_dagen: BEWAARTERMIJN_DAGEN,
+    rijen_totaal: (hele && hele.aantal) || 0,
+    oudste_vraag: (hele && hele.oudste) || null,
+    // De vragen zelf, om de onderwerpregels te kunnen bijstellen. Deze horen
+    // niet in Slack en niet in een commit; zie README.md.
+    laatste_vragen: rijen.slice(0, 50),
+  };
+}
+
+function tekstRapport(data) {
+  const regels = [];
+  regels.push("CHATVRAGEN properaccess.nl");
+  regels.push("Peildatum: " + data.peildatum.slice(0, 16).replace("T", " ") + " UTC");
+  regels.push("Periode: laatste " + data.dagen + " dagen");
+  regels.push("");
+  regels.push("Vragen gesteld: " + data.vragen);
+  regels.push(
+    "In de database: " + data.rijen_totaal + " vragen, oudste " +
+      (data.oudste_vraag ? data.oudste_vraag.slice(0, 10) : "geen") +
+      " (bewaartermijn " + data.bewaartermijn_dagen + " dagen)"
+  );
+  regels.push("");
+
+  regels.push("PER DAG");
+  if (!data.per_dag.length) regels.push("  (nog niets)");
+  for (const r of data.per_dag) {
+    regels.push("  " + r.dag + "  " + String(r.aantal).padStart(4));
+  }
+
+  regels.push("");
+  regels.push("ONDERWERPEN (een vraag kan bij meer dan één onderwerp horen)");
+  if (!data.onderwerpen.length) regels.push("  (nog niets)");
+  for (const r of data.onderwerpen) {
+    regels.push(
+      "  " + r.onderwerp.padEnd(30) + String(r.aantal).padStart(4) +
+        "  " + procent(r.aantal, data.vragen)
+    );
+  }
+  regels.push(
+    "  " + "zonder onderwerp".padEnd(30) + String(data.zonder_onderwerp).padStart(4) +
+      "  " + procent(data.zonder_onderwerp, data.vragen)
+  );
+
+  regels.push("");
+  regels.push("WOORDEN DIE VAKER TERUGKOMEN (losse woorden uit de vragen)");
+  if (!data.woorden.length) regels.push("  (nog niets)");
+  for (const r of data.woorden) {
+    regels.push("  " + r.woord.padEnd(30) + String(r.aantal).padStart(4));
+  }
+
+  return regels.join("\n") + "\n";
+}
+
 // ── Rate limiting ─────────────────────────────────────────────
 
 function isRateLimited(ip) {
@@ -265,6 +526,15 @@ function corsHeaders(origin) {
   };
   if (origin) headers["Access-Control-Allow-Origin"] = origin;
   return headers;
+}
+
+function dagenGeleden(dagen) {
+  return new Date(Date.now() - dagen * 86400000).toISOString();
+}
+
+function procent(deel, totaal) {
+  if (!totaal) return "0%";
+  return Math.round((deel / totaal) * 100) + "%";
 }
 
 function json(data, status, origin) {
