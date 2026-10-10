@@ -1,5 +1,15 @@
 {
   "name": "pa-chat",
   "main": "worker.js",
-  "compatibility_date": "2026-03-12"
+  "compatibility_date": "2026-03-12",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pa-chat-vragen",
+      "database_id": "ZET-HIER-DE-ID-UIT-WRANGLER-D1-CREATE"
+    }
+  ],
+  "triggers": {
+    "crons": ["20 3 * * *"]
+  }
 }
