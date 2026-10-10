@@ -22,7 +22,7 @@ service:
 
 banner:
   title: "Leer je redactie toegankelijke content maken"
-  content: "De meeste redacteuren hebben nooit geleerd hoe ze digitale content toegankelijk moeten maken. Onze training is praktisch, interactief en gebaseerd op jullie eigen content. Geen theorie op afstand, maar hands-on oefenen met direct resultaat."
+  content: "De meeste redacteuren hebben nooit geleerd hoe ze digitale content toegankelijk moeten maken. Onze training is praktisch en interactief. Geen theorie op afstand, maar hands-on oefenen met direct resultaat."
   button:
     enable: true
     label: "Vraag een offerte aan"
@@ -50,7 +50,7 @@ Voor redacteurs die content aan websites toevoegen met een CMS. Je leert hoe je 
 - Inhoud logisch ordenen voor screenreaders
 - Kleurcontrast en gebruik van kleur
 
-**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Prijs:** € 595 per deelnemer · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< section-card title="Van Word naar toegankelijke PDF" >}}
@@ -65,20 +65,20 @@ Voor redacteurs die rapporten, verslagen of folders maken in PDF vanuit MS Word.
 - Inclusief een toegankelijk Word-sjabloon
 - Onder begeleiding je eigen document controleren
 
-**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Prijs:** € 795 per deelnemer · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-full title="Of beide dagdelen op één dag" >}}
 
-Neem je de twee trainingen samen, dan doen we 's ochtends de webcontent en 's middags de PDF's, met lunch ertussen. De uitleg over WCAG hoeft dan maar één keer, dus er blijft meer tijd over om te oefenen met je eigen content.
+Neem je de twee trainingen samen, dan doen we 's ochtends de webcontent en 's middags de PDF's, met lunch ertussen. De uitleg over WCAG hoeft dan maar één keer, dus er blijft meer tijd over om te oefenen. De hele dag kost € 1.195 per deelnemer.
 
 {{< /section-full >}}
 
 {{< section-cta >}}
 
-Binnen 2 werkdagen een offerte op maat. Of bel direct.
+Binnen 2 werkdagen een offerte. Of bel direct.
 
 [Vraag een offerte aan →](/contact/) · [Bel ons: 085 5055 890 →](tel:+31855055890)
 
