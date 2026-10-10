@@ -126,20 +126,26 @@
         <p class="sr-only" role="status" id="academyAfgerondMelding"></p>
       </div>
 
+      {{/* Niet .PrevInSection en .NextInSection: die sorteren op titel en komen
+           niet over een sectiegrens. De partial sorteert op chapter_number en
+           laat vergrendelde hoofdstukken weg. */}}
+      {{ $buren := partial "academy-buren.html" . }}
+      {{ if or $buren.vorige $buren.volgende }}
       <nav class="academy__content-nav" aria-label="Hoofdstuknavigatie">
-        {{ with .PrevInSection }}
+        {{ with $buren.vorige }}
           <a href="{{ .RelPermalink }}" class="academy__nav-link academy__nav-link--prev">
             <span class="academy__nav-direction">← Vorig hoofdstuk</span>
             <span class="academy__nav-title">{{ .Title }}</span>
           </a>
         {{ end }}
-        {{ with .NextInSection }}
+        {{ with $buren.volgende }}
           <a href="{{ .RelPermalink }}" class="academy__nav-link academy__nav-link--next">
             <span class="academy__nav-direction">Volgend hoofdstuk →</span>
             <span class="academy__nav-title">{{ .Title }}</span>
           </a>
         {{ end }}
       </nav>
+      {{ end }}
     </article>
     {{ end }}
   </main>

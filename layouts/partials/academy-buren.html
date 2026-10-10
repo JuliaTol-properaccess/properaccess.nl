@@ -1,0 +1,29 @@
+{{- /* Het vorige en het volgende hoofdstuk van de Academy, over de secties heen.
+     De lessen hebben geen weight en geen date, dus .PrevInSection en
+     .NextInSection vallen terug op Hugo's standaardvolgorde (titel) en blijven
+     binnen een sectie. Sorteer daarom zelf op section_number en daarbinnen op
+     chapter_number, en sla vergrendelde hoofdstukken over.
+     Geeft een dict terug met "vorige" en "volgende"; die zijn false als er geen
+     open hoofdstuk voor of na dit hoofdstuk staat. */ -}}
+{{- $academy := site.GetPage "/academy" -}}
+{{- $open := slice -}}
+{{- with $academy -}}
+  {{- range .RegularPagesRecursive -}}
+    {{- if not .Params.locked -}}
+      {{- $sleutel := add (mul (int (.Params.section_number | default 0)) 1000) (int (.Params.chapter_number | default 0)) -}}
+      {{- $open = $open | append (dict "sleutel" $sleutel "pagina" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $open = sort $open "sleutel" -}}
+{{- $hier := add (mul (int (.Params.section_number | default 0)) 1000) (int (.Params.chapter_number | default 0)) -}}
+{{- $vorige := false -}}
+{{- $volgende := false -}}
+{{- range $open -}}
+  {{- if lt .sleutel $hier -}}
+    {{- $vorige = .pagina -}}
+  {{- else if and (gt .sleutel $hier) (not $volgende) -}}
+    {{- $volgende = .pagina -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "vorige" $vorige "volgende" $volgende -}}

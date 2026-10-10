@@ -2,7 +2,7 @@
 title: "Links"
 section_number: 2
 chapter_number: 11
-locked: true
+locked: false
 description: "Een link moet zeggen waar hij naartoe gaat, en zichtbaar zijn zonder dat je kleur kunt zien."
 points: 10
 layout: "academy"
