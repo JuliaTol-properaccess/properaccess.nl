@@ -2,7 +2,7 @@
 
 Verwerkt het intakeformulier van `properaccess.nl/intake`. Voor elke inzending:
 
-1. maakt een issue aan in `JuliaTol-properaccess/audit-planning`, met label `PA`;
+1. maakt een issue aan in `ProperAccessbv/audit-planning`, met label `PA`;
 2. zet die issue als kaartje op het GitHub Projects-bord, in de juiste kolom op basis van de opleverdatum;
 3. mailt de klant een bevestiging met een samenvatting;
 4. mailt Proper Access een interne melding, met het nummer van het kaartje erbij.
@@ -25,21 +25,19 @@ Het startmoment is de opleverdatum min 4 weken doorlooptijd. Ligt dat startmomen
 
 ## Eenmalig instellen
 
-### 1. GitHub-token
+### 1. GitHub App
 
-Het token heeft twee dingen nodig, want de Worker maakt nu ook een issue aan:
+Sinds oktober 2026 werkt de Worker met de GitHub App `properaccess-agents` (App ID 5196791) en niet meer met een persoonlijk token. Per intake haalt hij een token op dat een uur geldig is, alleen voor `audit-planning` en alleen met rechten op issues en het bord. Het bord is project 1 van de organisatie ProperAccessbv; tot 5 oktober 2026 was dat project 3 van Julia's persoonlijke account. Achtergrond: `github-app/README.md` in de dashboard-repo.
 
-- **Projects: Read and write** voor het bord;
-- **Issues: Read and write** op `JuliaTol-properaccess/audit-planning`.
-
-Een fijnmazige PAT met die twee permissies volstaat. Een classic PAT heeft de scopes `project` en `repo` nodig. De eigenaar van het token moet toegang hebben tot bord nummer 3 en tot de repo.
-
-Staat er nog een token uit de eerste opzet, met alleen Projects-rechten? Dan mislukt het aanmaken van de issue met `GitHub REST 403` en komt de intake per mail binnen in plaats van op het bord. Vervang het token dan:
+De Worker heeft twee secrets nodig. De sleutel moet in PKCS#8 staan (`BEGIN PRIVATE KEY`); GitHub levert hem in PKCS#1 (`BEGIN RSA PRIVATE KEY`), dus zet hem eerst om. Gebruik een eigen sleutel voor de Worker, zodat je hem kunt intrekken zonder dat de agents stoppen.
 
 ```bash
 cd cloudflare/intake
-npx wrangler secret put GITHUB_TOKEN
+echo 5196791 | npx wrangler secret put GITHUB_APP_ID
+openssl pkcs8 -topk8 -nocrypt -in <sleutel-van-de-app>.pem | npx wrangler secret put GITHUB_APP_KEY
 ```
+
+Zijn die twee er niet, dan valt de Worker terug op `GITHUB_TOKEN`. Is alles ingesteld en werkt het, verwijder dat oude token dan met `npx wrangler secret delete GITHUB_TOKEN`.
 
 ### 2. AhaSend-sleutel (zelfde account als de CRM-Worker)
 
