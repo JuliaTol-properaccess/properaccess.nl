@@ -1,0 +1,143 @@
+{{ define "main" }}
+  {{/* Editiepagina van de rubriek Onderzoek. Eén editie, één vaste URL. De gegevens in
+       het feitenblok staan ook in de JSON-LD (zie layouts/partials/json-ld.html), zodat
+       een lezer en een zoekmachine hetzelfde zien. */}}
+  <article class="onderzoek-editie">
+    <section class="onderzoek-editie__hero">
+      <div class="container">
+        {{ partial "breadcrumb.html" . }}
+        {{ if isset .Params "editie" }}
+          <p class="onderzoek-editie__eyebrow">{{ i18n "onderzoek_editie" }} {{ .Params.editie }}</p>
+        {{ end }}
+        <h1 class="onderzoek-editie__titel">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="onderzoek-editie__beschrijving">{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+
+    <div class="container onderzoek-editie__kolom">
+      <aside class="onderzoek-feiten" aria-labelledby="onderzoek-feiten-kop">
+        <h2 class="onderzoek-feiten__kop" id="onderzoek-feiten-kop">{{ i18n "onderzoek_over" }}</h2>
+        <dl class="onderzoek-feiten__lijst">
+          <div class="onderzoek-feiten__rij">
+            <dt>{{ i18n "onderzoek_auteur" }}</dt>
+            <dd>{{ site.Title }}</dd>
+          </div>
+          <div class="onderzoek-feiten__rij">
+            <dt>{{ i18n "onderzoek_gepubliceerd" }}</dt>
+            <dd>
+              <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+            </dd>
+          </div>
+          {{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+            <div class="onderzoek-feiten__rij">
+              <dt>{{ i18n "onderzoek_bijgewerkt" }}</dt>
+              <dd>
+                <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ time.Format ":date_long" .Lastmod }}</time>
+              </dd>
+            </div>
+          {{ end }}
+          {{ with .Params.meetdatum }}
+            {{ $van := time.AsTime . }}
+            {{ $tot := $van }}
+            {{ with $.Params.meetdatum_tot }}
+              {{ $tot = time.AsTime . }}
+            {{ end }}
+            <div class="onderzoek-feiten__rij">
+              <dt>{{ i18n "onderzoek_meetdatum" }}</dt>
+              <dd>
+                <time datetime="{{ $van.Format "2006-01-02" }}">{{ time.Format ":date_long" $van }}</time>
+                {{ if ne ($tot.Format "2006-01-02") ($van.Format "2006-01-02") }}
+                  {{ i18n "onderzoek_tot" }}
+                  <time datetime="{{ $tot.Format "2006-01-02" }}">{{ time.Format ":date_long" $tot }}</time>
+                {{ end }}
+              </dd>
+            </div>
+          {{ end }}
+          {{ with .Params.bron }}
+            <div class="onderzoek-feiten__rij">
+              <dt>{{ i18n "onderzoek_bron" }}</dt>
+              <dd>{{ . }}</dd>
+            </div>
+          {{ end }}
+          {{ with .Params.omvang }}
+            <div class="onderzoek-feiten__rij">
+              <dt>{{ i18n "onderzoek_omvang" }}</dt>
+              <dd>{{ . }}</dd>
+            </div>
+          {{ end }}
+        </dl>
+      </aside>
+
+      {{/* Samenvatting bovenaan. Dezelfde klasse als bij een blogartikel, zodat de
+           speakable-markering in json-ld.html er ook hier bij past. */}}
+      {{ with .Params.tldr }}
+        <aside class="article-tldr" aria-labelledby="tldr-heading">
+          <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_title" }}</h2>
+          <div class="article-tldr__body">{{ . | markdownify }}</div>
+        </aside>
+      {{ end }}
+
+      {{/* Inhoudsopgave uit Hugo zelf, zonder JavaScript. Pas vanaf drie koppen.
+           .Fragments.Identifiers is de vlakke lijst met alle kop-id's; .Headings
+           nestelt en gaf hier 1. */}}
+      {{ if gt (len .Fragments.Identifiers) 2 }}
+        <nav class="onderzoek-editie__toc" aria-labelledby="onderzoek-toc-kop">
+          <h2 class="onderzoek-editie__toc-kop" id="onderzoek-toc-kop">{{ i18n "toc_in_article" | default "In dit artikel" }}</h2>
+          {{/* Hugo zet zelf een <nav id="TableOfContents"> om de lijst. Die haalt de
+               regel hieronder eruit, zodat er één nav staat met een naam uit de kop
+               erboven in plaats van twee geneste navs waarvan de binnenste geen naam
+               heeft. De lijst zelf blijft ongemoeid. */}}
+          {{ .TableOfContents | replaceRE `</?nav[^>]*>` "" | safeHTML }}
+        </nav>
+      {{ end }}
+
+      <div class="onderzoek-editie__body content">{{ .Content }}</div>
+
+      {{/* Citeerregel: één regel die iemand kan overnemen, met onze URL erin. */}}
+      <section class="onderzoek-citeren" aria-labelledby="onderzoek-citeren-kop">
+        <h2 class="onderzoek-citeren__kop" id="onderzoek-citeren-kop">{{ i18n "onderzoek_citeren" }}</h2>
+        {{ $delen := slice (printf "%s (%s)" site.Title (.PublishDate.Format "2006")) .Title }}
+        {{ if isset .Params "editie" }}
+          {{ $delen = $delen | append (printf "%s %v" (i18n "onderzoek_editie") .Params.editie) }}
+        {{ end }}
+        {{ with .Params.meetdatum }}
+          {{ $van := time.AsTime . }}
+          {{ $tot := $van }}
+          {{ with $.Params.meetdatum_tot }}
+            {{ $tot = time.AsTime . }}
+          {{ end }}
+          {{ if eq ($tot.Format "2006-01-02") ($van.Format "2006-01-02") }}
+            {{ $delen = $delen | append (printf "%s %s" (i18n "onderzoek_gemeten_op") (time.Format ":date_long" $van)) }}
+          {{ else }}
+            {{ $delen = $delen | append (printf "%s %s %s %s" (i18n "onderzoek_gemeten_van") (time.Format ":date_long" $van) (i18n "onderzoek_tot") (time.Format ":date_long" $tot)) }}
+          {{ end }}
+        {{ end }}
+        {{ $delen = $delen | append .Permalink }}
+        <p class="onderzoek-citeren__regel">{{ delimit $delen ". " }}</p>
+      </section>
+
+      {{/* De kopieën op andere platforms. Die verwijzen met een canonical terug naar
+           deze pagina; deze lijst maakt voor een lezer zichtbaar waar ze staan. */}}
+      {{ with .Params.verspreiding }}
+        <section class="onderzoek-verspreiding" aria-labelledby="onderzoek-verspreiding-kop">
+          <h2 class="onderzoek-verspreiding__kop" id="onderzoek-verspreiding-kop">{{ i18n "onderzoek_verspreiding" }}</h2>
+          <ul class="onderzoek-verspreiding__lijst">
+            {{ range . }}
+              <li>
+                <a href="{{ .url }}" rel="noopener">{{ $.Title }} {{ i18n "onderzoek_op" }} {{ .naam }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+      <p class="onderzoek-editie__terug">
+        <a href="{{ .CurrentSection.RelPermalink }}">{{ i18n "onderzoek_alle_edities" }}</a>
+      </p>
+    </div>
+  </article>
+
+  {{ partial "call-to-action.html" . }}
+{{ end }}

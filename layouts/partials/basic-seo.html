@@ -190,8 +190,9 @@
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $description }}" />
 {{/* Een blogartikel is een artikel en geen site. Alleen losse pagina's onder
-     blog/ krijgen `article`; de overzichtspagina /blog/ blijft `website`. */}}
-{{ $isArtikel := and .IsPage (eq .Section "blog") }}
+     blog/ en onderzoek/ krijgen `article`; de overzichtspagina's /blog/ en
+     /onderzoek/ blijven `website`. */}}
+{{ $isArtikel := and .IsPage (in (slice "blog" "onderzoek") .Section) }}
 <meta property="og:type" content="{{ if $isArtikel }}article{{ else }}website{{ end }}" />
 {{ if $isArtikel }}
   <meta

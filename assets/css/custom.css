@@ -20233,3 +20233,251 @@ pre.chroma {
 .chroma .w {
   color: #f5f5f5;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Rubriek Onderzoek: /onderzoek/ en de editiepagina's.
+   Layouts: layouts/onderzoek/list.html en layouts/onderzoek/single.html.
+   ───────────────────────────────────────────────────────────── */
+
+.onderzoek__kop {
+  max-width: 48rem;
+  margin: 0 0 3rem;
+}
+
+.onderzoek__titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  color: #1F2937;
+  margin: 0 0 1rem;
+}
+
+.onderzoek__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.onderzoek__lijst {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .onderzoek__lijst {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.onderzoek__leeg {
+  font-size: 1.1rem;
+  color: #1F2937;
+  margin: 0;
+}
+
+.onderzoek-kaart {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.onderzoek-kaart__editie {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.5rem;
+}
+
+.onderzoek-kaart__titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 0.75rem;
+}
+
+.onderzoek-kaart__link {
+  color: #1F2937;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.onderzoek-kaart__link:hover {
+  color: #A30D4B;
+}
+
+.onderzoek-kaart__tekst {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1F2937;
+  margin: 0 0 1.25rem;
+}
+
+.onderzoek-kaart__meta,
+.onderzoek-feiten__lijst {
+  margin: 0;
+}
+
+.onderzoek-kaart__rij,
+.onderzoek-feiten__rij {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (min-width: 480px) {
+  .onderzoek-kaart__rij,
+  .onderzoek-feiten__rij {
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+  }
+}
+
+.onderzoek-kaart__rij dt,
+.onderzoek-feiten__rij dt {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0;
+}
+
+.onderzoek-kaart__rij dd,
+.onderzoek-feiten__rij dd {
+  font-size: 0.95rem;
+  color: #1F2937;
+  margin: 0;
+}
+
+/* Editiepagina */
+
+.onderzoek-editie__hero {
+  padding: 3.5rem 0 0;
+}
+
+.onderzoek-editie__hero > .container,
+.onderzoek-editie__kolom {
+  max-width: 48rem;
+}
+
+.onderzoek-editie__eyebrow {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #A30D4B;
+  margin: 0 0 0.5rem;
+}
+
+.onderzoek-editie__titel {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  color: #1F2937;
+  margin: 0 0 1rem;
+}
+
+.onderzoek-editie__beschrijving {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #1F2937;
+  margin: 0;
+}
+
+.onderzoek-feiten {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.onderzoek-feiten__kop,
+.onderzoek-citeren__kop,
+.onderzoek-verspreiding__kop,
+.onderzoek-editie__toc-kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 0.75rem;
+}
+
+.onderzoek-feiten__rij:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.onderzoek-editie__toc {
+  margin: 0 0 2.5rem;
+}
+
+.onderzoek-editie__toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* De afstand staat in px en niet in rem: op een telefoon is 1rem hier 12,8px, en dan
+   liggen de middelpunten van twee links 23px uit elkaar. Succescriterium 2.5.8 vraagt
+   24px, dus de regelafstand moet daarboven uitkomen. */
+.onderzoek-editie__toc li,
+.onderzoek-verspreiding__lijst li {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+
+.onderzoek-editie__toc a {
+  color: #1F2937;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.onderzoek-editie__toc a:hover {
+  color: #A30D4B;
+}
+
+.onderzoek-citeren,
+.onderzoek-verspreiding {
+  margin: 2.5rem 0 0;
+  padding: 1.5rem 1.75rem;
+  background: #f9fafb;
+  border-left: 6px solid #A30D4B;
+  border-radius: 0.5rem;
+}
+
+.onderzoek-citeren__regel {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1F2937;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.onderzoek-verspreiding__lijst {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+
+.onderzoek-editie__terug {
+  margin: 2.5rem 0 0;
+}
+
+/* Deze link staat buiten .content, dus de prose-opmaak raakt hem niet. Zonder deze
+   regel is hij alleen aan de kleur te herkennen. */
+.onderzoek-editie__terug a,
+.onderzoek-verspreiding__lijst a {
+  color: #1F2937;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.onderzoek-editie__terug a:hover,
+.onderzoek-verspreiding__lijst a:hover {
+  color: #A30D4B;
+}

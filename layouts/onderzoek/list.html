@@ -1,0 +1,68 @@
+{{ define "main" }}
+  {{/* Overzicht van de rubriek Onderzoek. De rubriek is geen blog: geen categorieën,
+       geen paginering en geen feed. Elke editie heeft een vaste eigen pagina. */}}
+  <section class="section onderzoek">
+    <div class="container">
+      {{ partial "breadcrumb.html" . }}
+
+      <div class="onderzoek__kop">
+        <h1 class="onderzoek__titel">{{ .Title }}</h1>
+        {{ with .Content }}
+          <div class="onderzoek__intro content">{{ . }}</div>
+        {{ end }}
+      </div>
+
+      {{/* Hoogste editienummer bovenaan. Het nummer staat in de front matter, dus de
+           volgorde hangt niet aan een datum en verschuift niet als een editie wordt
+           bijgewerkt. */}}
+      {{ $edities := sort .RegularPages "Params.editie" "desc" }}
+      {{ with $edities }}
+        <ul class="onderzoek__lijst">
+          {{ range . }}
+            {{ $editie := . }}
+            <li class="onderzoek-kaart">
+              {{ if isset .Params "editie" }}
+                <p class="onderzoek-kaart__editie">{{ i18n "onderzoek_editie" }} {{ .Params.editie }}</p>
+              {{ end }}
+              <h2 class="onderzoek-kaart__titel">
+                <a class="onderzoek-kaart__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              {{ with .Description }}
+                <p class="onderzoek-kaart__tekst">{{ . }}</p>
+              {{ end }}
+              <dl class="onderzoek-kaart__meta">
+                <div class="onderzoek-kaart__rij">
+                  <dt>{{ i18n "onderzoek_gepubliceerd" }}</dt>
+                  <dd>
+                    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+                  </dd>
+                </div>
+                {{ with .Params.meetdatum }}
+                  {{ $van := time.AsTime . }}
+                  {{ $tot := $van }}
+                  {{ with $editie.Params.meetdatum_tot }}
+                    {{ $tot = time.AsTime . }}
+                  {{ end }}
+                  <div class="onderzoek-kaart__rij">
+                    <dt>{{ i18n "onderzoek_meetdatum" }}</dt>
+                    <dd>
+                      <time datetime="{{ $van.Format "2006-01-02" }}">{{ time.Format ":date_long" $van }}</time>
+                      {{ if ne ($tot.Format "2006-01-02") ($van.Format "2006-01-02") }}
+                        {{ i18n "onderzoek_tot" }}
+                        <time datetime="{{ $tot.Format "2006-01-02" }}">{{ time.Format ":date_long" $tot }}</time>
+                      {{ end }}
+                    </dd>
+                  </div>
+                {{ end }}
+              </dl>
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <p class="onderzoek__leeg">{{ i18n "onderzoek_geen_editie" }}</p>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ partial "call-to-action.html" . }}
+{{ end }}
