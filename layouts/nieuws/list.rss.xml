@@ -1,0 +1,50 @@
+{{- /* Feed van de rubriek Nieuws over toegankelijkheid: /nieuws/index.xml.
+
+     Eigen template, want de ingebouwde feed van Hugo zet er Engelse tekst in:
+     "Nieuws over toegankelijkheid on Proper Access" en "Recent content in ...".
+     Op een Nederlandse site hoort dat Nederlands te zijn. Deze template geldt
+     alleen voor deze sectie; /index.xml en /en/index.xml blijven de ingebouwde.
+
+     De samenvatting per week is de tldr uit de front matter, met daaronder de
+     koppen van de berichten. Een abonnee ziet daarmee waar de week over gaat,
+     en de volledige tekst staat op onze eigen pagina. */ -}}
+{{- $weken := .RegularPages.ByDate.Reverse -}}
+{{- $limiet := 20 -}}
+{{- if gt (len $weken) $limiet }}{{ $weken = first $limiet $weken }}{{ end -}}
+{{- /* De XML-declaratie via printf en safeHTML, net als in de ingebouwde template van
+     Hugo. Staat hij letterlijk in het bestand, dan ziet de template-engine er een
+     HTML-processing instruction in en komt er &lt;?xml ... in de feed te staan. */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ with .Params.description }}{{ . }}{{ else }}{{ .Title }}{{ end }}</description>
+    <language>{{ site.Language.LanguageCode }}</language>
+    <copyright>{{ now.Format "2006" }} {{ site.Title }}</copyright>
+    {{- with $weken }}
+      <lastBuildDate>{{ (index . 0).PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    {{ with .OutputFormats.Get "rss" }}
+      {{ printf `<atom:link href=%q rel="self" type=%q/>` .Permalink .MediaType.Type | safeHTML }}
+    {{- end }}
+    {{- range $weken }}
+      <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <guid>{{ .Permalink }}</guid>
+        <description>
+          {{- $tekst := .Params.tldr | default .Params.description -}}
+          {{- $html := printf "<p>%s</p>" ($tekst | markdownify | plainify | chomp) -}}
+          {{- $koppen := "" -}}
+          {{- range .Params.items }}{{ $koppen = printf "%s<li>%s</li>" $koppen .kop }}{{ end -}}
+          {{- with $koppen -}}
+            {{- $html = printf "%s<ul>%s</ul>" $html . -}}
+          {{- end -}}
+          {{ $html | transform.XMLEscape | safeHTML }}
+        </description>
+      </item>
+    {{- end }}
+  </channel>
+</rss>

@@ -1,0 +1,106 @@
+{{ define "main" }}
+  {{/* Overzicht van de rubriek Nieuws over toegankelijkheid. Eén weekpagina per week,
+       de nieuwste bovenaan, met paginering zodra er meer dan pagerSize weken zijn.
+       Anders dan /onderzoek/ heeft deze rubriek een eigen feed; de link daarnaartoe
+       staat onder de lijst. */}}
+  <section class="section nieuws">
+    <div class="container">
+      {{ partial "breadcrumb.html" . }}
+
+      <div class="nieuws__kop">
+        <h1 class="nieuws__titel">{{ .Title }}</h1>
+        {{ with .Content }}
+          <div class="nieuws__intro content">{{ . }}</div>
+        {{ end }}
+      </div>
+
+      {{/* Nieuwste week bovenaan. De datum van een weekpagina is de zaterdag waarop
+           hij uitkomt, dus de datumvolgorde is de weekvolgorde. */}}
+      {{ $weken := .RegularPages.ByDate.Reverse }}
+      {{ with $weken }}
+        {{ $paginator := $.Paginate $weken }}
+        <ul class="nieuws__lijst">
+          {{ range $paginator.Pages }}
+            {{ $week := . }}
+            <li class="nieuws-kaart">
+              {{ partial "nieuws-weekperiode.html" (dict "pagina" . "klasse" "nieuws-kaart__week") }}
+              <h2 class="nieuws-kaart__titel">
+                <a class="nieuws-kaart__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              {{ with .Description }}
+                <p class="nieuws-kaart__tekst">{{ . }}</p>
+              {{ end }}
+              <dl class="nieuws-kaart__meta">
+                <div class="nieuws-kaart__rij">
+                  <dt>{{ i18n "nieuws_gepubliceerd" }}</dt>
+                  <dd>
+                    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ time.Format ":date_long" .PublishDate }}</time>
+                  </dd>
+                </div>
+                {{ with .Params.items }}
+                  <div class="nieuws-kaart__rij">
+                    <dt>{{ i18n "nieuws_aantal_berichten" }}</dt>
+                    <dd>{{ len . }}</dd>
+                  </div>
+                {{ end }}
+              </dl>
+              {{/* De koppen van deze week, zodat een lezer op het overzicht ziet
+                   waar de week over gaat zonder te klikken. */}}
+              {{ with $week.Params.items }}
+                <ul class="nieuws-kaart__koppen">
+                  {{ range . }}
+                    <li>{{ .kop }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+
+        {{/* Eigen paginering in plaats van components/pagination uit het thema. Die
+             zet aria-current="page" ook op de links naar andere pagina's en heeft
+             Engelse labels voor schermlezers; dat hoort niet op een Nederlandse
+             pagina van een auditbureau. */}}
+        {{ if gt $paginator.TotalPages 1 }}
+          <nav class="nieuws__paginering" aria-label="{{ i18n "nieuws_paginering" }}">
+            <ul class="nieuws__paginering-lijst">
+              {{ if $paginator.HasPrev }}
+                <li>
+                  <a class="nieuws__paginering-link" href="{{ $paginator.Prev.URL }}" rel="prev">{{ i18n "nieuws_paginering_vorige" }}</a>
+                </li>
+              {{ end }}
+              {{ range $paginator.Pagers }}
+                <li>
+                  {{ if eq . $paginator }}
+                    <span class="nieuws__paginering-link nieuws__paginering-link--huidig" aria-current="page">
+                      {{ i18n "nieuws_paginering_pagina" }} {{ .PageNumber }}
+                    </span>
+                  {{ else }}
+                    <a class="nieuws__paginering-link" href="{{ .URL }}">
+                      {{ i18n "nieuws_paginering_pagina" }} {{ .PageNumber }}
+                    </a>
+                  {{ end }}
+                </li>
+              {{ end }}
+              {{ if $paginator.HasNext }}
+                <li>
+                  <a class="nieuws__paginering-link" href="{{ $paginator.Next.URL }}" rel="next">{{ i18n "nieuws_paginering_volgende" }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </nav>
+        {{ end }}
+      {{ else }}
+        <p class="nieuws__leeg">{{ i18n "nieuws_geen_week" }}</p>
+      {{ end }}
+
+      {{ with .OutputFormats.Get "rss" }}
+        <p class="nieuws__feed">
+          <a href="{{ .RelPermalink }}">{{ i18n "nieuws_feed" }}</a>
+        </p>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ partial "call-to-action.html" . }}
+{{ end }}

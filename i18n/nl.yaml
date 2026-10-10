@@ -150,3 +150,35 @@
   translation: "op"
 - id: onderzoek_alle_edities
   translation: "Alle edities"
+- id: nieuws_geen_week
+  translation: "Het eerste weekoverzicht staat er nog niet."
+- id: nieuws_gepubliceerd
+  translation: "Gepubliceerd"
+- id: nieuws_aantal_berichten
+  translation: "Berichten"
+- id: nieuws_week_van
+  translation: "Week van"
+- id: nieuws_tot
+  translation: "tot"
+- id: nieuws_bij
+  translation: "bij"
+- id: nieuws_bericht_bij
+  translation: "Lees het bericht bij"
+- id: nieuws_andere_weken
+  translation: "Andere weken"
+- id: nieuws_vorige_week
+  translation: "Vorige week"
+- id: nieuws_volgende_week
+  translation: "Volgende week"
+- id: nieuws_alle_weken
+  translation: "Alle weekoverzichten"
+- id: nieuws_feed
+  translation: "Deze rubriek volgen met RSS"
+- id: nieuws_paginering
+  translation: "Meer weekoverzichten"
+- id: nieuws_paginering_vorige
+  translation: "Nieuwere weken"
+- id: nieuws_paginering_volgende
+  translation: "Oudere weken"
+- id: nieuws_paginering_pagina
+  translation: "Pagina"
