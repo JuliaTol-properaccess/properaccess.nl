@@ -2,7 +2,15 @@ User-agent: *
 Allow: /
 
 Disallow: /offertes/
-Disallow: /bedankt/
+
+# Hier stond tot 10 oktober 2026 "Disallow: /bedankt/". Die pagina heeft zelf
+# <meta name="robots" content="noindex, nofollow"> in de <head> staan, en om die
+# instructie te lezen moet Google de pagina wél kunnen ophalen. Met de Disallow
+# erbij wist Google alleen dat de URL bestond en niet dat hij eruit moest, dus
+# bleef hij in de index staan. Dat is dezelfde fout als bij /rapporten/ hieronder.
+# Zet die regel dus niet terug. De pagina blijft buiten de sitemap en buiten de
+# feeds, via sitemap_exclude en build.list: never in de front matter van
+# content/dutch/pages/bedankt.md.
 
 # Rapporten mogen niet in de zoekmachines staan. Dat regelen we met een noindex op
 # elke rapportpagina, en daarvoor moet Google de pagina wél kunnen ophalen: een
