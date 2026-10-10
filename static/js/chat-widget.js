@@ -165,6 +165,11 @@
       body: JSON.stringify({
         messages: historyToSend,
         lang: lang,
+        // De pagina waar de vraag gesteld is, voor het logboek. Alleen het pad:
+        // de querystring en het fragment gaan er niet mee. Via de Referer-header
+        // zou dit niet lukken, want bij een verzoek naar een ander domein
+        // stuurt de browser standaard alleen de origin mee.
+        pagina: window.location.pathname,
       }),
       signal: controller.signal,
     })

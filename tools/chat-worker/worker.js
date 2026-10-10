@@ -2,20 +2,23 @@
  * Cloudflare Worker — AI Chat Widget
  * Proxies chat messages to the Claude API for the Proper Access website.
  *
- * POST /chat     → forward conversation to Claude, return response
- *   Body: { messages: [{role, content}], lang: "nl"|"en" }
- * GET  /rapport  → wat er gevraagd is in de afgelopen dagen (sleutel nodig)
+ * POST /chat       → forward conversation to Claude, return response
+ *   Body: { messages: [{role, content}], lang: "nl"|"en", pagina: "/pad/" }
+ * GET  /rapport    → de cijfers over de afgelopen dagen (sleutel nodig)
+ * GET  /steekproef → de regels zelf, leesbaar, om de antwoorden na te kijken
+ *                    (sleutel nodig)
  *
- * Van elke vraag bewaren we de vraagtekst en het tijdstip, 90 dagen. Geen
- * IP-adres, geen hash daarvan, geen cookie, geen gespreksnummer. Zie
- * schema.sql en README.md. Het opruimen loopt op een cron trigger.
+ * Van elke vraag bewaren we de vraag, het antwoord, de links uit dat antwoord,
+ * het tijdstip, de taal en de pagina. 90 dagen. Geen IP-adres, geen hash
+ * daarvan, geen cookie, geen gespreksnummer. Zie schema.sql en README.md. Het
+ * opruimen loopt op een cron trigger.
  *
  * Bindings (zie wrangler.json):
  *   DB — D1-database pa-chat-vragen. Ontbreekt die, dan blijft de chat werken
  *        en bewaart de Worker niets.
  * Secrets (npx wrangler secret put):
  *   ANTHROPIC_API_KEY — Claude API key
- *   RAPPORT_SLEUTEL   — wachtwoord voor /rapport
+ *   RAPPORT_SLEUTEL   — wachtwoord voor /rapport en /steekproef
  *
  * Deploy: cd tools/chat-worker && npx wrangler deploy
  */
@@ -36,6 +39,15 @@ const ERROR_MESSAGES = {
 };
 const MAX_MESSAGES = 10;
 const MAX_CONTENT_LENGTH = 500;
+
+// Grenzen op wat er in het logboek komt. Het antwoord blijft door MAX_TOKENS
+// onder de 2.000 tekens; 4.000 is de harde grens als dat ooit verandert.
+const MAX_ANTWOORD_LENGTH = 4000;
+const MAX_PAGINA_LENGTH = 200;
+
+// Antwoorden die hierheen verwijzen, wijken uit naar de contactpagina: de
+// assistent wist het zelf niet. Het aandeel daarvan staat in het weekoverzicht.
+const CONTACTPADEN = ["/contact/", "/en/contact/"];
 
 // Rate limiting: 20 messages per 10 minutes per IP
 const RATE_LIMIT = 20;
@@ -159,6 +171,10 @@ export default {
       return handleRapport(env, url);
     }
 
+    if (url.pathname === "/steekproef" && request.method === "GET") {
+      return handleSteekproef(env, url);
+    }
+
     return json({ error: "Not found" }, 404, allowedOrigin);
   },
 
@@ -191,7 +207,7 @@ async function handleChat(request, env, origin, ctx) {
     return json({ ok: true, content: "" }, 200, origin);
   }
 
-  const { messages, lang } = body;
+  const { messages, lang, pagina } = body;
 
   // Validate messages
   if (!Array.isArray(messages) || messages.length === 0) {
@@ -214,16 +230,16 @@ async function handleChat(request, env, origin, ctx) {
     }
   }
 
-  // De vraag wegschrijven. Buiten het antwoord om, zodat de bezoeker er niet
-  // op wacht en een fout in de database de chat niet raakt.
-  if (ctx && typeof ctx.waitUntil === "function") {
-    ctx.waitUntil(bewaarVraag(env, trimmedMessages));
-  } else {
-    await bewaarVraag(env, trimmedMessages);
-  }
-
   // Select system prompt
-  const systemPrompt = lang === "en" ? SYSTEM_PROMPT_EN : SYSTEM_PROMPT_NL;
+  const taal = lang === "en" ? "en" : "nl";
+  const systemPrompt = taal === "en" ? SYSTEM_PROMPT_EN : SYSTEM_PROMPT_NL;
+
+  // Wat er van deze vraag in het logboek komt. Het antwoord komt er straks bij.
+  const regel = {
+    taal: taal,
+    pagina: schoonPagina(pagina),
+    vraag: laatsteVraag(trimmedMessages),
+  };
 
   // Check API key
   if (!env.ANTHROPIC_API_KEY) {
@@ -260,39 +276,119 @@ async function handleChat(request, env, origin, ctx) {
     const result = await apiResponse.json();
     const content = result.content && result.content[0] ? result.content[0].text : "";
 
+    wegschrijven(ctx, env, regel, content);
+
     return json({ ok: true, content: content }, 200, origin);
   } catch (err) {
     console.error("pa-chat error:", err.message);
-    return json({ ok: false, error: ERROR_MESSAGES[lang === "en" ? "en" : "nl"] }, 500, origin);
+    // De vraag gaat wel het logboek in, met een leeg antwoord. Een vraag die
+    // geen antwoord kreeg hoort juist op de verbeterlijst.
+    wegschrijven(ctx, env, regel, "");
+    return json({ ok: false, error: ERROR_MESSAGES[taal] }, 500, origin);
   }
 }
 
-// ── De vraag bewaren ──────────────────────────────────────────
+// ── Het logboek ───────────────────────────────────────────────
 
 /**
- * Schrijft één rij weg: de laatste vraag van de bezoeker en het tijdstip.
+ * Zet het wegschrijven in de wacht, buiten het antwoord om: de bezoeker wacht
+ * er niet op en een fout in de database raakt de chat niet.
+ */
+function wegschrijven(ctx, env, regel, antwoord) {
+  const klaar = bewaarRegel(env, regel, antwoord);
+  if (ctx && typeof ctx.waitUntil === "function") {
+    ctx.waitUntil(klaar);
+  }
+  return klaar;
+}
+
+/**
+ * De laatste vraag van de bezoeker uit het gesprek.
  *
  * Alleen de laatste. De widget stuurt bij elke vraag het hele gesprek mee, dus
- * de eerdere vragen staan al in de database. En alleen een `user`-bericht: het
- * antwoord van de assistent bewaren we niet.
+ * de eerdere vragen staan al in het logboek. En alleen een `user`-bericht.
  */
-async function bewaarVraag(env, messages) {
-  if (!env.DB) return;
-
+function laatsteVraag(messages) {
   const laatste = messages[messages.length - 1];
-  if (!laatste || laatste.role !== "user") return;
+  if (!laatste || laatste.role !== "user") return "";
+  return String(laatste.content).trim().slice(0, MAX_CONTENT_LENGTH);
+}
 
-  const vraag = String(laatste.content).trim().slice(0, MAX_CONTENT_LENGTH);
-  if (!vraag) return;
+/**
+ * Schrijft één rij weg: de vraag, het antwoord, de links uit dat antwoord, het
+ * tijdstip, de taal en de pagina. Een e-mailadres of telefoonnummer dat een
+ * bezoeker toch intypt, gaat eruit voordat de rij de database in gaat.
+ */
+async function bewaarRegel(env, regel, antwoord) {
+  if (!env.DB) return;
+  if (!regel.vraag) return;
+
+  const tekst = String(antwoord || "").slice(0, MAX_ANTWOORD_LENGTH);
 
   try {
-    await env.DB.prepare("INSERT INTO vraag (moment, vraag) VALUES (?, ?)")
-      .bind(new Date().toISOString(), vraag)
+    await env.DB.prepare(
+      "INSERT INTO vraag (moment, taal, pagina, vraag, antwoord, links) VALUES (?, ?, ?, ?, ?, ?)"
+    )
+      .bind(
+        new Date().toISOString(),
+        regel.taal,
+        regel.pagina,
+        anonimiseer(regel.vraag),
+        anonimiseer(tekst),
+        linksUit(tekst)
+      )
       .run();
   } catch (err) {
-    // Een chat die blijft werken is belangrijker dan een complete meting.
+    // Een chat die blijft werken is belangrijker dan een compleet logboek.
     console.error("pa-chat bewaren mislukt:", err.message);
   }
+}
+
+/**
+ * Haalt een e-mailadres en een telefoonnummer uit de tekst. De
+ * privacyverklaring vraagt bezoekers om geen persoonsgegevens in te typen; dit
+ * vangt op wat er toch in staat.
+ *
+ * Het telefoonpatroon staat geen punt toe als scheidingsteken. Anders zou
+ * "1.4.11 1.4.12 2.5.8" als telefoonnummer tellen, en juist dat soort vragen
+ * willen we kunnen teruglezen. Negen cijfers is de ondergrens: "085 5055 890"
+ * en "+31 6 28742275" vallen eronder, een prijs van "2250" niet.
+ */
+function anonimiseer(tekst) {
+  if (!tekst) return tekst;
+  let uit = String(tekst).replace(/[\w.+-]+@[\w-]+(\.[\w-]+)+/g, "[weggelaten]");
+  uit = uit.replace(/\+?\d[\d\s()/-]{7,}\d/g, function (gevonden) {
+    const cijfers = gevonden.replace(/\D/g, "").length;
+    return cijfers >= 9 ? "[weggelaten]" : gevonden;
+  });
+  return uit;
+}
+
+/**
+ * De URL's uit het antwoord, zonder dubbele, gescheiden door een spatie.
+ * Een punt of komma direct achter de URL hoort bij de zin, niet bij de link.
+ */
+function linksUit(antwoord) {
+  const gevonden = String(antwoord || "").match(/https?:\/\/[^\s<>"'`)\]]+/g) || [];
+  const uniek = [];
+  for (const ruw of gevonden) {
+    const url = ruw.replace(/[.,;:!?]+$/, "");
+    if (url && uniek.indexOf(url) === -1) uniek.push(url);
+  }
+  return uniek.join(" ");
+}
+
+/**
+ * De pagina waar de vraag gesteld is, als pad binnen de site. Alleen een pad:
+ * geen volledige URL, geen querystring en geen fragment, want daar kan van
+ * alles in staan wat we niet willen bewaren.
+ */
+function schoonPagina(pagina) {
+  if (typeof pagina !== "string") return null;
+  const pad = pagina.split("?")[0].split("#")[0].trim();
+  if (!pad.startsWith("/") || pad.startsWith("//")) return null;
+  if (/[\s<>"']/.test(pad)) return null;
+  return pad.slice(0, MAX_PAGINA_LENGTH);
 }
 
 /** Gooit weg wat ouder is dan de bewaartermijn. Geeft het aantal rijen terug. */
@@ -386,7 +482,7 @@ async function rapportData(env, dagen) {
   const vanaf = dagenGeleden(dagen);
 
   const vragen = await env.DB.prepare(
-    "SELECT moment, vraag FROM vraag WHERE moment > ? ORDER BY moment DESC"
+    "SELECT moment, taal, pagina, vraag, antwoord, links FROM vraag WHERE moment > ? ORDER BY moment DESC"
   )
     .bind(vanaf)
     .all();
@@ -411,6 +507,12 @@ async function rapportData(env, dagen) {
   let zonder = 0;
 
   const woorden = new Map();
+  const talen = new Map();
+  const paginas = new Map();
+  const zonderLink = [];
+  let metAntwoord = 0;
+  let zonderAntwoord = 0;
+  let naarContact = 0;
 
   for (const rij of rijen) {
     let geraakt = false;
@@ -421,6 +523,21 @@ async function rapportData(env, dagen) {
       }
     });
     if (!geraakt) zonder++;
+
+    const links = (rij.links || "").split(" ").filter(Boolean);
+    if (rij.antwoord) {
+      metAntwoord++;
+      if (!links.length) zonderLink.push(rij);
+      if (links.some(naarContactpagina)) naarContact++;
+    } else {
+      // Geen antwoord is iets anders dan een antwoord zonder link: daar ging de
+      // Claude API onderuit. Apart tellen, anders vervuilt het de verbeterlijst.
+      zonderAntwoord++;
+    }
+
+    const taal = rij.taal || "onbekend";
+    talen.set(taal, (talen.get(taal) || 0) + 1);
+    if (rij.pagina) paginas.set(rij.pagina, (paginas.get(rij.pagina) || 0) + 1);
 
     const gezien = new Set();
     const losse = rij.vraag.toLowerCase().match(/[a-zà-ÿ0-9][a-zà-ÿ0-9'’-]{2,}/g) || [];
@@ -436,8 +553,24 @@ async function rapportData(env, dagen) {
     dagen: dagen,
     vragen: rijen.length,
     per_dag: perDag.results || [],
-    onderwerpen: onderwerpen.filter((o) => o.aantal > 0).sort((a, b) => b.aantal - a.aantal),
+    onderwerpen: onderwerpen
+      .filter((o) => o.aantal > 0)
+      .sort((a, b) => b.aantal - a.aantal)
+      .slice(0, 10),
     zonder_onderwerp: zonder,
+    per_taal: [...talen.entries()]
+      .map(([taal, aantal]) => ({ taal: taal, aantal: aantal }))
+      .sort((a, b) => b.aantal - a.aantal),
+    per_pagina: [...paginas.entries()]
+      .map(([pagina, aantal]) => ({ pagina: pagina, aantal: aantal }))
+      .sort((a, b) => b.aantal - a.aantal)
+      .slice(0, 10),
+    met_antwoord: metAntwoord,
+    zonder_antwoord: zonderAntwoord,
+    naar_contact: naarContact,
+    // De verbeterlijst: een antwoord zonder link. Deze vragen horen niet in
+    // Slack en niet in een commit; zie README.md.
+    zonder_link: zonderLink,
     woorden: [...woorden.entries()]
       .map(([woord, aantal]) => ({ woord: woord, aantal: aantal }))
       .filter((w) => w.aantal > 1)
@@ -446,10 +579,15 @@ async function rapportData(env, dagen) {
     bewaartermijn_dagen: BEWAARTERMIJN_DAGEN,
     rijen_totaal: (hele && hele.aantal) || 0,
     oudste_vraag: (hele && hele.oudste) || null,
-    // De vragen zelf, om de onderwerpregels te kunnen bijstellen. Deze horen
-    // niet in Slack en niet in een commit; zie README.md.
-    laatste_vragen: rijen.slice(0, 50),
   };
+}
+
+/** Wijst deze URL naar de contactpagina? */
+function naarContactpagina(url) {
+  const pad = url.replace(/^https?:\/\/[^/]*/, "");
+  return CONTACTPADEN.some(function (c) {
+    return pad === c || pad.startsWith(c);
+  });
 }
 
 function tekstRapport(data) {
@@ -459,6 +597,18 @@ function tekstRapport(data) {
   regels.push("Periode: laatste " + data.dagen + " dagen");
   regels.push("");
   regels.push("Vragen gesteld: " + data.vragen);
+  regels.push(
+    "Antwoord gegeven: " + data.met_antwoord +
+      (data.zonder_antwoord ? ", mislukt: " + data.zonder_antwoord : "")
+  );
+  regels.push(
+    "Uitgeweken naar de contactpagina: " + data.naar_contact + "  " +
+      procent(data.naar_contact, data.met_antwoord) + " van de antwoorden"
+  );
+  regels.push(
+    "Antwoord zonder link: " + data.zonder_link.length + "  " +
+      procent(data.zonder_link.length, data.met_antwoord) + " van de antwoorden"
+  );
   regels.push(
     "In de database: " + data.rijen_totaal + " vragen, oudste " +
       (data.oudste_vraag ? data.oudste_vraag.slice(0, 10) : "geen") +
@@ -473,7 +623,21 @@ function tekstRapport(data) {
   }
 
   regels.push("");
-  regels.push("ONDERWERPEN (een vraag kan bij meer dan één onderwerp horen)");
+  regels.push("TAAL");
+  if (!data.per_taal.length) regels.push("  (nog niets)");
+  for (const r of data.per_taal) {
+    regels.push("  " + r.taal.padEnd(30) + String(r.aantal).padStart(4));
+  }
+
+  regels.push("");
+  regels.push("PAGINA WAAR DE VRAAG GESTELD IS (tien drukste)");
+  if (!data.per_pagina.length) regels.push("  (nog niets)");
+  for (const r of data.per_pagina) {
+    regels.push("  " + r.pagina.padEnd(50) + String(r.aantal).padStart(4));
+  }
+
+  regels.push("");
+  regels.push("ONDERWERPEN, TIEN MEESTGESTELDE (een vraag kan bij meer dan één onderwerp horen)");
   if (!data.onderwerpen.length) regels.push("  (nog niets)");
   for (const r of data.onderwerpen) {
     regels.push(
@@ -492,6 +656,83 @@ function tekstRapport(data) {
   for (const r of data.woorden) {
     regels.push("  " + r.woord.padEnd(30) + String(r.aantal).padStart(4));
   }
+
+  regels.push("");
+  regels.push("VERBETERLIJST: VRAGEN WAAROP GEEN LINK VOLGDE");
+  if (!data.zonder_link.length) regels.push("  (geen)");
+  for (const r of data.zonder_link) {
+    regels.push("  " + r.moment.slice(0, 16).replace("T", " ") + "  " + r.vraag);
+  }
+
+  return regels.join("\n") + "\n";
+}
+
+// ── Steekproef ────────────────────────────────────────────────
+
+/**
+ * De regels zelf, leesbaar, om de antwoorden na te kijken. Vraag, antwoord en
+ * links bij elkaar in één blok. Achter dezelfde sleutel als /rapport.
+ */
+async function handleSteekproef(env, url) {
+  const sleutel = url.searchParams.get("sleutel") || "";
+  if (!env.RAPPORT_SLEUTEL || sleutel !== env.RAPPORT_SLEUTEL) {
+    return new Response("Geen toegang", { status: 401 });
+  }
+
+  if (!env.DB) {
+    return new Response("Geen database aan deze Worker gekoppeld", { status: 503 });
+  }
+
+  const dagen = Math.min(
+    parseInt(url.searchParams.get("dagen") || "7", 10) || 7,
+    BEWAARTERMIJN_DAGEN
+  );
+  const max = Math.min(parseInt(url.searchParams.get("max") || "25", 10) || 25, 200);
+
+  const uitkomst = await env.DB.prepare(
+    "SELECT moment, taal, pagina, vraag, antwoord, links FROM vraag WHERE moment > ? ORDER BY moment DESC LIMIT ?"
+  )
+    .bind(dagenGeleden(dagen), max)
+    .all();
+  const rijen = uitkomst.results || [];
+
+  if (url.searchParams.get("formaat") === "json") {
+    return new Response(
+      JSON.stringify({ peildatum: new Date().toISOString(), dagen: dagen, regels: rijen }),
+      { headers: { "Content-Type": "application/json; charset=utf-8" } }
+    );
+  }
+
+  return new Response(steekproefTekst(rijen, dagen), {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+function steekproefTekst(rijen, dagen) {
+  const regels = [];
+  regels.push("STEEKPROEF CHAT properaccess.nl");
+  regels.push("Peildatum: " + new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC");
+  regels.push("Periode: laatste " + dagen + " dagen, nieuwste eerst");
+  regels.push("Regels: " + rijen.length);
+  regels.push("");
+  regels.push("Een e-mailadres en een telefoonnummer staan er als [weggelaten].");
+
+  if (!rijen.length) {
+    regels.push("");
+    regels.push("(nog niets)");
+    return regels.join("\n") + "\n";
+  }
+
+  rijen.forEach(function (r, i) {
+    regels.push("");
+    regels.push("── " + (i + 1) + " van " + rijen.length + " " + "─".repeat(40));
+    regels.push("Tijd:      " + r.moment.slice(0, 16).replace("T", " ") + " UTC");
+    regels.push("Taal:      " + (r.taal || "onbekend"));
+    regels.push("Pagina:    " + (r.pagina || "onbekend"));
+    regels.push("Vraag:     " + r.vraag);
+    regels.push("Antwoord:  " + (r.antwoord || "(geen antwoord, de Claude API gaf een fout)"));
+    regels.push("Links:     " + (r.links || "(geen)"));
+  });
 
   return regels.join("\n") + "\n";
 }
