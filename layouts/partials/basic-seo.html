@@ -103,6 +103,22 @@
 {{ end }}
 
 
+{{/* Feed van de rubriek Nieuws over toegankelijkheid. Alleen op /nieuws/ en op de
+     weekpagina's, want alleen die rubriek heeft een eigen feed. Zonder deze regel is
+     /nieuws/index.xml niet te vinden voor een feedlezer, en staat de link alleen
+     zichtbaar op de overzichtspagina. */}}
+{{ if eq .Section "nieuws" }}
+  {{ $sectie := cond .IsPage .CurrentSection . }}
+  {{ with $sectie.OutputFormats.Get "rss" }}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ $sectie.Title }}"
+      href="{{ .Permalink }}" />
+  {{ end }}
+{{ end }}
+
+
 <!-- meta keywords -->
 {{ if .Params.keywords }}
   <meta name="keywords" content="{{ delimit .Params.keywords `, ` }}" />
@@ -190,9 +206,9 @@
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $description }}" />
 {{/* Een blogartikel is een artikel en geen site. Alleen losse pagina's onder
-     blog/ en onderzoek/ krijgen `article`; de overzichtspagina's /blog/ en
-     /onderzoek/ blijven `website`. */}}
-{{ $isArtikel := and .IsPage (in (slice "blog" "onderzoek") .Section) }}
+     blog/, onderzoek/ en nieuws/ krijgen `article`; de overzichtspagina's /blog/,
+     /onderzoek/ en /nieuws/ blijven `website`. */}}
+{{ $isArtikel := and .IsPage (in (slice "blog" "onderzoek" "nieuws") .Section) }}
 <meta property="og:type" content="{{ if $isArtikel }}article{{ else }}website{{ end }}" />
 {{ if $isArtikel }}
   <meta

@@ -1,0 +1,117 @@
+{{ define "main" }}
+  {{/* Weekpagina van de rubriek Nieuws over toegankelijkheid. De berichten staan in
+       items in de front matter, niet in de tekst van de pagina. Daardoor staan de kop,
+       de bron, de link en onze eigen tekst ook in de ItemList in de JSON-LD, en zien
+       een lezer en een zoekmachine hetzelfde. Zie layouts/partials/json-ld.html. */}}
+
+  {{/* Eis uit het ontwerp: een weekpagina publiceert geen kale linkenlijst. Elk bericht
+       heeft een kop, een link naar de bron en eigen tekst van ons. Ontbreekt er iets,
+       dan laat errorf de build vallen met de naam van het bestand erbij, en dan deployt
+       er niets. Dat is met opzet: liever een gevallen build dan een pagina die alleen
+       het werk van anderen doorgeeft. Drafts bouwen niet mee in productie. */}}
+  {{ $items := .Params.items }}
+  {{ if not $items }}
+    {{ errorf "Weekpagina %q heeft geen items in de front matter. Een weekpagina zonder berichten hoort niet live te gaan. Zie docs/nieuws-rubriek.md." .File.Path }}
+  {{ end }}
+  {{ range $i, $item := $items }}
+    {{ $nummer := add $i 1 }}
+    {{ if not $item.kop }}
+      {{ errorf "Weekpagina %q: bericht %d heeft geen kop." $.File.Path $nummer }}
+    {{ end }}
+    {{ if not $item.url }}
+      {{ errorf "Weekpagina %q: bericht %d (%q) heeft geen url naar de bron." $.File.Path $nummer $item.kop }}
+    {{ end }}
+    {{ if not $item.bron }}
+      {{ errorf "Weekpagina %q: bericht %d (%q) heeft geen bron." $.File.Path $nummer $item.kop }}
+    {{ end }}
+    {{ if not (trim (string (default "" $item.tekst)) " \n\r\t") }}
+      {{ errorf "Weekpagina %q: bericht %d (%q) heeft geen eigen tekst. Zet er een eigen alinea bij in het veld tekst; een kop met alleen een link publiceren we niet." $.File.Path $nummer $item.kop }}
+    {{ end }}
+  {{ end }}
+
+  <article class="nieuws-week">
+    <section class="nieuws-week__hero">
+      <div class="container">
+        {{ partial "breadcrumb.html" . }}
+        {{ partial "nieuws-weekperiode.html" (dict "pagina" . "klasse" "nieuws-week__eyebrow") }}
+        <h1 class="nieuws-week__titel">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="nieuws-week__beschrijving">{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+
+    <div class="container nieuws-week__kolom">
+      {{/* Samenvatting bovenaan. Dezelfde klasse als bij een blogartikel, zodat de
+           speakable-markering in json-ld.html er ook hier bij past. */}}
+      {{ with .Params.tldr }}
+        <aside class="article-tldr" aria-labelledby="tldr-heading">
+          <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_title" }}</h2>
+          <div class="article-tldr__body">{{ . | markdownify }}</div>
+        </aside>
+      {{ end }}
+
+      {{ with .Content }}
+        <div class="nieuws-week__intro content">{{ . }}</div>
+      {{ end }}
+
+      {{/* De berichten. Een geordende lijst, want de volgorde is de volgorde van het
+           bestand en die is bedoeld: het belangrijkste bericht bovenaan. Het id per
+           bericht is bericht-1, bericht-2 en zo verder, zodat de ItemList in de JSON-LD
+           naar een plek op deze pagina kan wijzen en iemand een bericht kan doorsturen. */}}
+      <ol class="nieuws-berichten">
+        {{ range $i, $item := $items }}
+          {{ $nummer := add $i 1 }}
+          <li class="nieuws-bericht" id="bericht-{{ $nummer }}">
+            <h2 class="nieuws-bericht__kop">{{ $item.kop }}</h2>
+            <p class="nieuws-bericht__bron">
+              {{ with $item.bron_kop }}
+                <a class="nieuws-bericht__link" href="{{ $item.url }}" rel="noopener">{{ . }}</a>
+                <span class="nieuws-bericht__herkomst">{{ i18n "nieuws_bij" }} {{ $item.bron }}</span>
+              {{ else }}
+                <a class="nieuws-bericht__link" href="{{ $item.url }}" rel="noopener">{{ i18n "nieuws_bericht_bij" }} {{ $item.bron }}</a>
+              {{ end }}
+              {{ with $item.datum }}
+                {{ $datum := time.AsTime . }}
+                <span class="nieuws-bericht__herkomst">
+                  <time datetime="{{ $datum.Format "2006-01-02" }}">{{ time.Format ":date_long" $datum }}</time>
+                </span>
+              {{ end }}
+            </p>
+            <div class="nieuws-bericht__tekst content">{{ $item.tekst | markdownify }}</div>
+          </li>
+        {{ end }}
+      </ol>
+
+      {{/* De week ervoor en de week erna. .NextInSection is in de standaardvolgorde van
+           Hugo de pagina die vóór deze staat, en dat is de nieuwere week; .PrevInSection
+           is de oudere. Gemeten met twee weekpagina's, zie de pull request. */}}
+      {{ $ouder := .PrevInSection }}
+      {{ $nieuwer := .NextInSection }}
+      {{ if or $ouder $nieuwer }}
+        <nav class="nieuws-week__buren" aria-label="{{ i18n "nieuws_andere_weken" }}">
+          <ul class="nieuws-week__buren-lijst">
+            {{ with $ouder }}
+              <li class="nieuws-week__buur nieuws-week__buur--ouder">
+                <span class="nieuws-week__buur-label">{{ i18n "nieuws_vorige_week" }}</span>
+                <a class="nieuws-week__buur-link" href="{{ .RelPermalink }}" rel="prev">{{ .Title }}</a>
+              </li>
+            {{ end }}
+            {{ with $nieuwer }}
+              <li class="nieuws-week__buur nieuws-week__buur--nieuwer">
+                <span class="nieuws-week__buur-label">{{ i18n "nieuws_volgende_week" }}</span>
+                <a class="nieuws-week__buur-link" href="{{ .RelPermalink }}" rel="next">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      {{ end }}
+
+      <p class="nieuws-week__terug">
+        <a href="{{ .CurrentSection.RelPermalink }}">{{ i18n "nieuws_alle_weken" }}</a>
+      </p>
+    </div>
+  </article>
+
+  {{ partial "call-to-action.html" . }}
+{{ end }}
