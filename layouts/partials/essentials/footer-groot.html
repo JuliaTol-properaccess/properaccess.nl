@@ -36,8 +36,9 @@
           <ul class="fg__lijst">
             {{ range .links }}
               <li>
-                <a class="fg__link" href="{{ .url }}"
+                <a class="fg__link{{ if .icoon }} fg__link--icoon{{ end }}" href="{{ .url }}"
                   {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+                  {{- if eq .icoon "zoek" }}{{ partial "icoon-zoek.html" 16 }}{{ end -}}
                   {{- .naam -}}
                   {{ if findRE `^http` .url }}<span class="sr-only"> (opent in een nieuw tabblad)</span>{{ end }}
                 </a>
@@ -125,6 +126,8 @@
   .fg__lijst li { margin: 0; }
   .fg__link { display: inline-block; color: #C9C9C6; text-decoration: none; font-size: 14px; line-height: 1.45; padding: 5px 0; }
   .fg__link:hover { color: #F4F1EA; text-decoration: underline; text-underline-offset: 0.2em; }
+  .fg__link--icoon { display: inline-flex; align-items: center; gap: 7px; }
+  .fg__link--icoon .icoon-zoek { flex: none; }
 
   .fg__adressen {
     border-top: 1px solid rgba(244,241,234,0.22); padding: 30px 0;

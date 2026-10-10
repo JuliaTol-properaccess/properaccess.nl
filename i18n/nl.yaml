@@ -25,7 +25,9 @@
 - id: contact_submit
   translation: "Verstuur bericht"
 - id: search_input_placeholder
-  translation: "Zoek in blog..."
+  translation: "Zoek in blogartikelen..."
+- id: search_input_label
+  translation: "Zoek in blogartikelen"
 - id: search_no_results
   translation: "Geen resultaten voor"
 - id: search_initial_message
@@ -67,7 +69,7 @@
 - id: tools_promo_cta
   translation: "Neem contact op voor een abonnement"
 - id: chat_toggle_label
-  translation: "Chat openen"
+  translation: "Zoeken"
 - id: chat_title
   translation: "Stel een vraag"
 - id: chat_close

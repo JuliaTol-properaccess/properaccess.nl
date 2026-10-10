@@ -1,0 +1,9 @@
+{{- /* Vergrootglas voor de zoekfunctie: de header, de footer en de zwevende
+knop gebruiken alle drie dit icoon, zodat bezoekers het herkennen.
+
+Het icoon is decoratief: de naam van de knop of de link komt altijd uit de
+zichtbare tekst ernaast. Daarom aria-hidden en focusable="false".
+
+Parameter: de grootte in pixels (getal). Zonder parameter 20. */ -}}
+{{- $g := . | default 20 -}}
+<svg class="icoon-zoek" aria-hidden="true" focusable="false" width="{{ $g }}" height="{{ $g }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="20" y1="20" x2="16.2" y2="16.2"></line></svg>
