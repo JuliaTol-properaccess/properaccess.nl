@@ -73,9 +73,7 @@
               {{ end }}
               {{ with $item.datum }}
                 {{ $datum := time.AsTime . }}
-                <span class="nieuws-bericht__herkomst">
-                  <time datetime="{{ $datum.Format "2006-01-02" }}">{{ time.Format ":date_long" $datum }}</time>
-                </span>
+                <span class="nieuws-bericht__herkomst">, <time datetime="{{ $datum.Format "2006-01-02" }}">{{ time.Format ":date_long" $datum }}</time></span>
               {{ end }}
             </p>
             <div class="nieuws-bericht__tekst content">{{ $item.tekst | markdownify }}</div>
