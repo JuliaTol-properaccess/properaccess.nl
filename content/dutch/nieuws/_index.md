@@ -17,4 +17,6 @@ keywords:
 outputs: ["HTML", "RSS"]
 ---
 
-Elke zaterdag zetten we het nieuws over digitale toegankelijkheid op één pagina: wetgeving, uitspraken, hulpmiddelen en onderzoek. Bij elk bericht staat de bron, en een eigen alinea over wat het betekent voor wie een website of app beheert.
+Een uitspraak van een toezichthouder, een nieuwe versie van een norm: je hoort het meestal pas als een klant of een collega ernaar vraagt.
+
+Daarom staat hier elke zaterdag een nieuw weekoverzicht van het nieuws over digitale toegankelijkheid. Bij elk bericht zie je wie het publiceerde, met een link naar de bron, en lees je in een eigen alinea wat het betekent voor je eigen website of app. Wat die week het belangrijkst is, staat bovenaan.
