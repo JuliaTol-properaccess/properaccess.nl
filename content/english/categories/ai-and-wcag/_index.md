@@ -1,6 +1,6 @@
 ---
 title: "AI & WCAG"
 translationKey: "ai-en-wcag"
-meta_title: "AI & WCAG: can AI detect accessibility issues? | Proper Access"
-description: "Can AI test your website for accessibility? In this series we test what AI can and can't find when it comes to WCAG issues. Real tests, and the outcomes we got."
+meta_title: "AI and WCAG: can AI find accessibility issues?"
+description: "Can AI test your website for accessibility? In this series we put it to work on real pages and show what it finds and what it misses."
 ---

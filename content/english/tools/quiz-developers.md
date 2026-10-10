@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Quiz for Developers"
-meta_title: "WCAG Accessibility Quiz for Developers — Test your knowledge | Proper Access"
+meta_title: "WCAG accessibility quiz for developers | Proper Access"
 slug: "quiz-developers"
 url: "/en/tools/quiz-developers/"
 layout: "quiz-developers"
