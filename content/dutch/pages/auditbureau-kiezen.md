@@ -14,10 +14,12 @@ hero_meta:
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
     value: "september 2026"
-# Deze zeven vragen staan woordelijk in het details-blok onderaan de content.
-# layout: sectie rendert faqs: niet, dus dit veld levert alleen FAQPage-schema.
-# Wijzig je hier een antwoord, wijzig het dan ook in de content. Zie het
-# commentaar in layouts/_default/sectie.html.
+# De kop boven het FAQ-blok. Zonder dit veld staat er "Veelgestelde vragen".
+faq_title: "Vragen die we hierover krijgen"
+# Deze zeven vragen staan één keer in de bron. layouts/_default/sectie.html rendert ze
+# zichtbaar via partials/faq-blok.html, layouts/partials/json-ld.html maakt er FAQPage
+# van. Een correctie hoeft dus maar op één plek. Een antwoord mag meerdere alinea's
+# hebben: zet \n\n in de string.
 faqs:
   - question: "Moet ik het onderzoek door een extern bureau laten doen?"
     answer: "Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
@@ -26,11 +28,11 @@ faqs:
   - question: "Voldoet mijn website aan de wet zodra het rapport klaar is?"
     answer: "Nee. Het rapport vertelt je waar je staat en wat er moet gebeuren. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier om te weten wat daarvoor nodig is, en het oplossen komt daarna."
   - question: "Val ik onder het BDTO of onder de EAA?"
-    answer: "Dat hangt af van wat je organisatie is en niet van wat je aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, commerciële bedrijven onder de European Accessibility Act. Voor je eigen website of app geldt het ene of het andere, nooit allebei. Let op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist."
+    answer: "Dat hangt af van wat je organisatie is en niet van wat je aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, commerciële bedrijven onder de European Accessibility Act. Voor je eigen website of app geldt het ene of het andere, nooit allebei.\n\nLet op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist."
   - question: "Hoelang duurt een onderzoek?"
     answer: "Een mini-audit levert binnen een week resultaat op. Een volledig onderzoek duurt gewoonlijk drie tot vijf weken, inclusief de interne review door de tweede auditor."
   - question: "Kan ik na het rapport vragen blijven stellen?"
-    answer: "Ja. Zodra je een rapport van ons hebt, loopt het contact rechtstreeks met een senior auditor. Vragen gaan via de strippenkaart: één vraag over één onderwerp kost één strip, en vervolgvragen in dezelfde draad kosten niets extra. De strip gaat er af op het moment dat wij antwoorden, dus een vraag die buiten scope valt kost je niets. Een strip kost € 20 tot € 25, afhankelijk van de bundel, en een bundel is twaalf maanden geldig. Ben je nog geen klant, dan spreek je eerst onze relatiebeheerder."
+    answer: "Ja. Zodra je een rapport van ons hebt, loopt het contact rechtstreeks met een senior auditor. Vragen gaan via de strippenkaart: één vraag over één onderwerp kost één strip, en vervolgvragen in dezelfde draad kosten niets extra. De strip gaat er af op het moment dat wij antwoorden, dus een vraag die buiten scope valt kost je niets. Een strip kost € 20 tot € 25, afhankelijk van de bundel, en een bundel is twaalf maanden geldig.\n\nBen je nog geen klant, dan spreek je eerst onze relatiebeheerder."
   - question: "Wat als jullie een systeem niet kennen?"
     answer: "We kennen er inmiddels zo’n 150, van maatwerkframeworks tot standaard-CMS’en met modules en plug-ins eroverheen. Kom je met iets dat we nog niet zijn tegengekomen, dan verandert dat weinig aan het onderzoek: we toetsen wat de bezoeker in de browser krijgt. Bij het oplossen denken we mee over wat er binnen de grenzen van jouw systeem mogelijk is."
 ---
@@ -284,54 +286,3 @@ en browser meestal uit eigen waarneming kunnen beantwoorden.
 
 {{< /section-full >}}
 
-<section class="hp-faq">
-<div class="container">
-<h2 class="hp-heading-lg hp-faq__title">Vragen die we hierover krijgen</h2>
-<div class="hp-faq__container faq-container">
-<details class="faq-item">
-<summary class="faq-question">Moet ik het onderzoek door een extern bureau laten doen?</summary>
-<div class="faq-answer">
-<p>Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Toetsen jullie aan WCAG 2.1 of aan WCAG 2.2?</summary>
-<div class="faq-answer">
-<p>Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm is EN 301 549 V3.2.1, en die staat op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op &eacute;&eacute;n punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Voldoet mijn website aan de wet zodra het rapport klaar is?</summary>
-<div class="faq-answer">
-<p>Nee. Het rapport vertelt je waar je staat en wat er moet gebeuren. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier om te weten wat daarvoor nodig is, en het oplossen komt daarna.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Val ik onder het BDTO of onder de EAA?</summary>
-<div class="faq-answer">
-<p>Dat hangt af van wat je organisatie is en niet van wat je aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, commerci&euml;le bedrijven onder de European Accessibility Act. Voor je eigen website of app geldt het ene of het andere, nooit allebei.</p>
-<p>Let op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Hoelang duurt een onderzoek?</summary>
-<div class="faq-answer">
-<p>Een mini-audit levert binnen een week resultaat op. Een volledig onderzoek duurt gewoonlijk drie tot vijf weken, inclusief de interne review door de tweede auditor.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Kan ik na het rapport vragen blijven stellen?</summary>
-<div class="faq-answer">
-<p>Ja. Zodra je een rapport van ons hebt, loopt het contact rechtstreeks met een senior auditor. Vragen gaan via de strippenkaart: &eacute;&eacute;n vraag over &eacute;&eacute;n onderwerp kost &eacute;&eacute;n strip, en vervolgvragen in dezelfde draad kosten niets extra. De strip gaat er af op het moment dat wij antwoorden, dus een vraag die buiten scope valt kost je niets. Een strip kost &euro; 20 tot &euro; 25, afhankelijk van de bundel, en een bundel is twaalf maanden geldig.</p>
-<p>Ben je nog geen klant, dan spreek je eerst onze relatiebeheerder.</p>
-</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Wat als jullie een systeem niet kennen?</summary>
-<div class="faq-answer">
-<p>We kennen er inmiddels zo&rsquo;n 150, van maatwerkframeworks tot standaard-CMS&rsquo;en met modules en plug-ins eroverheen. Kom je met iets dat we nog niet zijn tegengekomen, dan verandert dat weinig aan het onderzoek: we toetsen wat de bezoeker in de browser krijgt. Bij het oplossen denken we mee over wat er binnen de grenzen van jouw systeem mogelijk is.</p>
-</div>
-</details>
-</div>
-</div>
-</section>
