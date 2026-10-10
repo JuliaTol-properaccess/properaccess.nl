@@ -23,6 +23,9 @@
   "services"  (cond $nl "Diensten" "Services")
   "sectors"   (cond $nl "Sectoren / Voor wie" "Sectors we work in")
   "keyPages"  (cond $nl "Kennispagina's" "Key pages")
+  "research"  (cond $nl "Onderzoek: eigen metingen" "Research: our own measurements")
+  "edition"   (cond $nl "editie" "edition")
+  "measured"  (cond $nl "Gegevens gemeten" "Data measured")
   "links"     (cond $nl "Links op deze pagina" "Links on this page")
   "faq"       (cond $nl "Vragen die we hierover krijgen" "Questions we get about this")
   "academy"   (cond $nl "Academy: uitleg WCAG en BDTO" "Academy: WCAG and the law explained")
@@ -165,6 +168,28 @@ What sets us apart:
 {{ partial "llms-pagina.html" (dict "pagina" . "t" $t "limiet" 20000) }}
 ---
 {{ end -}}
+{{ end }}
+{{ end }}
+
+{{- /* Rubriek Onderzoek. Staat er nog geen editie, dan komt de kop er niet in: een kop
+       zonder inhoud helpt een taalmodel niet. */ -}}
+{{- $onderzoek := where $zichtbaar "Section" "onderzoek" -}}
+{{ with $onderzoek }}
+## {{ $t.research }}
+
+{{ range . }}
+
+### {{ .Title }}{{ with .Params.editie }} ({{ $t.edition }} {{ . }}){{ end }}
+
+URL: {{ .Permalink }}
+{{ with .Params.description }}
+{{ . }}
+{{ end }}
+{{ with .Params.meetdatum }}{{ $t.measured }}: {{ (time.AsTime .).Format "2006-01-02" }}{{ end }}
+
+{{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
+
+---
 {{ end }}
 {{ end }}
 

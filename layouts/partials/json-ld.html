@@ -119,7 +119,7 @@
 {{ end }}
 
 {{/* CollectionPage / Blog — for section index pages */}}
-{{ if and (not .IsPage) (not .IsHome) (in (slice "blog" "academy") .Section) }}
+{{ if and (not .IsPage) (not .IsHome) (in (slice "blog" "academy" "onderzoek") .Section) }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,7 +128,8 @@
   "url": "{{ .Permalink }}",
   "name": "{{ .Title }}",
   {{ with .Params.description }}"description": "{{ . }}",{{ end }}
-  "inLanguage": "nl-NL",
+  {{/* De Engelse sectie hoort niet nl-NL te melden. */}}
+  "inLanguage": "{{ cond (eq site.Language.Lang "nl") "nl-NL" "en" }}",
   "isPartOf": {
     "@id": "{{ site.BaseURL }}#website"
   },
@@ -234,6 +235,87 @@
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["h1", ".article-tldr", "article > p:first-of-type"]
+  }
+}
+</script>
+{{ end }}
+
+{{/* Report + Article — editiepagina's van de rubriek Onderzoek.
+
+     Report is in schema.org een subtype van Article en is bedoeld voor een rapport van
+     een organisatie, dus het past precies op eigen marktonderzoek. We melden beide
+     types in een array, zodat een verwerker die letterlijk op "Article" zoekt de pagina
+     ook herkent. Dezelfde constructie als het Organization-blok bovenaan.
+
+     De auteur is de organisatie en niet Julia: het onderzoek staat op naam van Proper
+     Access. Met het @id hangt dat aan het Organization-blok dat op elke pagina staat,
+     inclusief de sameAs naar LinkedIn en Wikidata.
+
+     temporalCoverage is de meetdatum van de gegevens, los van de publicatiedatum. Bij
+     een meetperiode staat er een ISO-interval. */}}
+{{ if and (eq .Section "onderzoek") .IsPage }}
+{{ $taal := cond (eq site.Language.Lang "nl") "nl-NL" "en" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Report", "Article"],
+  "@id": "{{ .Permalink }}#report",
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": "{{ .Permalink }}",
+  "headline": "{{ .Title }}",
+  "name": "{{ .Title }}",
+  {{ with .Params.description }}"description": "{{ . }}",{{ end }}
+  {{ with .Params.image }}"image": "{{ . | absURL }}",{{ end }}
+  "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  {{ with .Params.meetdatum }}
+  {{- $van := time.AsTime . -}}
+  {{- $tot := $van -}}
+  {{- with $.Params.meetdatum_tot }}{{ $tot = time.AsTime . }}{{ end -}}
+  {{ if eq ($tot.Format "2006-01-02") ($van.Format "2006-01-02") }}
+  "temporalCoverage": "{{ $van.Format "2006-01-02" }}",
+  {{ else }}
+  "temporalCoverage": "{{ $van.Format "2006-01-02" }}/{{ $tot.Format "2006-01-02" }}",
+  {{ end }}
+  {{ end }}
+  {{/* reportNumber is het veld dat schema.org voor het nummer van een rapport heeft. */}}
+  {{ with .Params.editie }}"reportNumber": "{{ . }}",{{ end }}
+  {{ with .Params.keywords }}"keywords": "{{ delimit . ", " }}",{{ end }}
+  "inLanguage": "{{ $taal }}",
+  "isAccessibleForFree": true,
+  "creditText": "{{ site.Title }}",
+  "author": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": "{{ site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.BaseURL }}images/logo_pa.png"
+    }
+  },
+  "copyrightHolder": {
+    "@id": "{{ site.BaseURL }}#organization"
+  },
+  {{/* .Year geeft een getal. Met .Format "2006" zet Go er in een script-context
+       aanhalingstekens om, en schema.org wil hier een Number. */}}
+  "copyrightYear": {{ .PublishDate.Year }},
+  {{ with .CurrentSection }}
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "@id": "{{ .Permalink }}#collection",
+    "url": "{{ .Permalink }}",
+    "name": "{{ .Title }}"
+  },
+  {{ end }}
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".article-tldr", ".onderzoek-feiten"]
   }
 }
 </script>

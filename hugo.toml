@@ -43,6 +43,13 @@ ID = ''
 [permalinks.page]
 "pages" = "/:slugorcontentbasename/"
 "blog" = "/blog/:slugorcontentbasename/"
+# Rubriek Onderzoek. Een editie staat op /onderzoek/<slug>/, en die slug komt uit de
+# front matter. Zo hangt de URL niet aan de plek van het bestand: komt er later een
+# indeling per jaar (content/dutch/onderzoek/2027/...) of wordt een editie een
+# paginabundel met bijlagen, dan blijft de URL van een gepubliceerde editie gelijk.
+# De Engelse rubriek krijgt met content/english/onderzoek/ dezelfde regel, en Hugo
+# zet daar /en/ voor; de Nederlandse URL's veranderen daar niet van.
+"onderzoek" = "/onderzoek/:slugorcontentbasename/"
 
 
 ########################## Pagination ############################

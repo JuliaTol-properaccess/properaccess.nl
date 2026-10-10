@@ -118,3 +118,35 @@
   translation: "Menu sluiten"
 - id: language_label
   translation: "Taal"
+- id: onderzoek_editie
+  translation: "Editie"
+- id: onderzoek_geen_editie
+  translation: "De eerste editie staat er nog niet."
+- id: onderzoek_over
+  translation: "Over dit onderzoek"
+- id: onderzoek_auteur
+  translation: "Auteur"
+- id: onderzoek_gepubliceerd
+  translation: "Gepubliceerd"
+- id: onderzoek_bijgewerkt
+  translation: "Bijgewerkt"
+- id: onderzoek_meetdatum
+  translation: "Gegevens gemeten"
+- id: onderzoek_gemeten_op
+  translation: "Gegevens gemeten op"
+- id: onderzoek_gemeten_van
+  translation: "Gegevens gemeten van"
+- id: onderzoek_tot
+  translation: "tot"
+- id: onderzoek_bron
+  translation: "Bron van de gegevens"
+- id: onderzoek_omvang
+  translation: "Omvang van de meting"
+- id: onderzoek_citeren
+  translation: "Dit onderzoek citeren"
+- id: onderzoek_verspreiding
+  translation: "Deze editie staat ook op"
+- id: onderzoek_op
+  translation: "op"
+- id: onderzoek_alle_edities
+  translation: "Alle edities"
