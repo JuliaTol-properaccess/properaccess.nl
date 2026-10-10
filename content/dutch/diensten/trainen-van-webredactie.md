@@ -50,7 +50,7 @@ Voor redacteurs die content aan websites toevoegen met een CMS. Je leert hoe je 
 - Inhoud logisch ordenen voor screenreaders
 - Kleurcontrast en gebruik van kleur
 
-**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< section-card title="Van Word naar toegankelijke PDF" >}}
@@ -65,7 +65,7 @@ Voor redacteurs die rapporten, verslagen of folders maken in PDF vanuit MS Word.
 - Inclusief een toegankelijk Word-sjabloon
 - Onder begeleiding je eigen document controleren
 
-**Duur:** een dagdeel van 3,5 uur · **Voorbereiding:** 8 uur (inclusief contentanalyse en sjabloonontwikkeling) · **Locatie:** op locatie of online
+**Duur:** een dagdeel van 3,5 uur · **Locatie:** op locatie of online
 
 {{< /section-card >}}
 {{< /section-cards >}}
