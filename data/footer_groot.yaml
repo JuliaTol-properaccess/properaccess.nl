@@ -68,7 +68,9 @@ kolommen:
       - { naam: "Zo werken wij", url: "/zo-werken-wij/" }
       - { naam: "Klanten", url: "/klanten/" }
       - { naam: "In de media", url: "/in-de-media/" }
-      - { naam: "Bijzondere initiatieven", url: "/bijzondere-initiatieven/" }
+      # Pagina staat sinds 9 oktober 2026 op draft. Haal het hekje weg om de link terug
+      # te zetten; zie content/dutch/bijzondere-initiatieven/_index.md.
+      # - { naam: "Bijzondere initiatieven", url: "/bijzondere-initiatieven/" }
       - { naam: "Samenwerken", url: "/samenwerken-proper-access/" }
       - { naam: "Contact", url: "/contact/" }
       - { naam: "Portaal", url: "https://portaal.properaccess.nl/" }
