@@ -24,9 +24,16 @@
        Verhuist de duiding ooit uit items[].tekst naar de body van de pagina, dan is
        deze partial de enige plek die mee moet. Zolang dat niet gebeurd is en er toch
        geen enkel bericht een tekst heeft terwijl de body wel tekst heeft, zet de
-       partial "meetbaar" op false. Dan telt hij geen tekort en gaat de pagina niet op
-       noindex om de woorden: een pagina die klopt, hoort niet om te vallen op een
-       teller die op de verkeerde plek kijkt. Vraag van Nata, 11 oktober 2026.
+       partial "meetbaar" op false. Die vlag gaat alleen over de controle op een pull
+       request: die meldt het en wordt er niet rood op, want een teller die op de
+       verkeerde plek kijkt hoort geen pull request te blokkeren. Vraag van Nata,
+       11 oktober 2026.
+
+       De noindex kijkt niet naar "meetbaar". Niet te tellen is nul eigen woorden, en
+       nul woorden ligt onder de ondergrens. Een weekpagina met drie koppen, drie links
+       naar anderen en geen woord eigen duiding krijgt dus een noindex, ook al kan de
+       teller niet zeggen hoeveel woorden er precies ontbreken. Besluit van Chief,
+       11 oktober 2026.
 
        Roep de partial aan met partialCached en .RelPermalink als variant, zodat hij per
        pagina één keer rekent:
@@ -75,7 +82,8 @@
 
   {{- /* De teller kijkt in items[].tekst. Staat er in geen enkel bericht tekst terwijl
          de pagina wel een lead heeft, dan staat de duiding ergens anders en telt hij
-         hier niets zinnigs. */ -}}
+         hier niets zinnigs. Deze vlag stuurt alleen de controle; de noindex hieronder
+         rekent de nul woorden van zo'n bericht gewoon als een tekort. */ -}}
   {{- $meetbaar := true -}}
   {{- if and (gt (len $items) 0) (eq $met_tekst 0) (gt $lead 0) -}}
     {{- $meetbaar = false -}}
@@ -90,7 +98,7 @@
       {{- $redenen = $redenen | append (printf "bericht %d heeft %d eigen woorden, de ondergrens is %d" .nummer .woorden $min_woorden) -}}
     {{- end -}}
   {{- else -}}
-    {{- $redenen = $redenen | append "de eigen tekst staat niet in items[].tekst, dus de woorden zijn hier niet te tellen" -}}
+    {{- $redenen = $redenen | append (printf "geen enkel bericht heeft eigen tekst in items[].tekst, dus nul eigen woorden, en de ondergrens is %d per bericht" $min_woorden) -}}
   {{- end -}}
 
   {{- $bestand := "" -}}
@@ -98,6 +106,10 @@
     {{- $bestand = .Path -}}
   {{- end -}}
 
+  {{- /* De noindex kijkt alleen naar het aantal berichten en naar het tekort, en niet
+         naar "meetbaar": een bericht zonder eigen tekst staat met nul woorden in het
+         tekort en nul ligt onder de ondergrens. "meetbaar" gaat alleen over de controle
+         op een pull request. Besluit van Chief, 11 oktober 2026. */ -}}
   {{- $telling = dict
         "vantoepassing" true
         "bestand" $bestand
@@ -111,7 +123,7 @@
         "lead" $lead
         "tldr" $tldr
         "meetbaar" $meetbaar
-        "noindex" (or (lt (len $items) $min_berichten) (and $meetbaar (gt (len $tekort) 0)))
+        "noindex" (or (lt (len $items) $min_berichten) (gt (len $tekort) 0))
         "redenen" $redenen -}}
 {{- end -}}
 

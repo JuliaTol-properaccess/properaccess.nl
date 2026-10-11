@@ -135,7 +135,9 @@ def rapport(paginas: list[dict]) -> tuple[list[str], int, int]:
         if not p.get("meetbaar", True):
             regels.append(
                 "  MELDING: geen enkel bericht heeft tekst in items[].tekst, terwijl de "
-                "pagina wel een lead heeft. De woorden zijn hier niet te tellen. Pas "
+                "pagina wel een lead heeft. De woorden zijn hier niet te tellen, dus "
+                "nul eigen woorden, en de pagina krijgt een noindex. Staat de duiding "
+                "inmiddels in de body van de pagina, pas dan "
                 "layouts/partials/nieuws-telling.html aan; deze controle valt er niet op."
             )
         elif tekort:
@@ -205,8 +207,10 @@ def main() -> int:
     if met_noindex:
         paginas_tekst = "1 pagina krijgt" if met_noindex == 1 else f"{met_noindex} pagina's krijgen"
         slot.append(
-            f"{paginas_tekst} een noindex. Een noindex maakt deze controle niet rood: "
-            "het aantal berichten is een redactiekeuze en die ligt bij Julia."
+            f"{paginas_tekst} een noindex. Een noindex maakt deze controle op zichzelf "
+            "niet rood: te weinig berichten is een redactiekeuze en die ligt bij Julia, "
+            "en een pagina waarvan de eigen woorden hier niet te tellen zijn is een "
+            "melding."
         )
 
     uitvoer = kop + regels + slot

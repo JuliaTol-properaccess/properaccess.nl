@@ -98,6 +98,7 @@ hetzelfde:
 |---|---|---|
 | berichten per week | 3 | de pagina krijgt een noindex, de controle meldt het en wordt niet rood |
 | eigen woorden per bericht | 40 | de pagina krijgt een noindex en de controle op de pull request wordt rood |
+| geen enkel bericht met `tekst`, pagina wel een lead | - | de pagina krijgt een noindex, de controle meldt het en wordt niet rood |
 
 **Het aantal berichten laat de build nooit vallen en maakt de controle nooit rood.** Of
 er in een stille week een pagina uitgaat, is een redactiekeuze en die ligt bij Julia:
@@ -111,6 +112,14 @@ Een kop, een bronnaam, `bron_kop`, een datum en de vaste tekst van het sjabloon 
 dus niet mee, en van een link telt alleen de linktekst. De lead onder de front matter en
 de `tldr` worden geteld en staan in de melding, maar hebben geen ondergrens: die twee
 staan per pagina en niet per bericht.
+
+Heeft geen enkel bericht een `tekst`, dan valt er niets te tellen, en dan **krijgt de
+pagina ook een noindex**: niet te tellen is nul eigen woorden, en nul ligt onder de
+veertig. Een weekpagina met drie koppen, drie links naar anderen en geen woord eigen
+duiding komt dus niet in de zoekmachines, niet in `nl/sitemap.xml` en niet in
+`llms-full.txt`. De controle op de pull request meldt het en wordt er niet rood op:
+verhuist de duiding ooit naar de body van de pagina, dan kijkt de teller op de verkeerde
+plek, en dat hoort geen pull request te blokkeren. Besluit van Chief, 11 oktober 2026.
 
 ### Wat de noindex wel en niet doet
 
@@ -137,7 +146,8 @@ pagina staat. De partial laat zelf nooit een build vallen.
 Verhuist de duiding ooit uit `items[].tekst` naar de body van de pagina, dan is die
 partial de enige plek die mee moet. Staat er in geen enkel bericht een tekst terwijl de
 pagina wel een lead heeft, dan meldt de telling dat de woorden niet te tellen zijn, en
-wordt de controle daar niet rood op.
+wordt de controle daar niet rood op. De noindex kijkt daar niet naar: die rekent nul
+woorden als een tekort, dus zo'n pagina gaat wel op noindex.
 
 ### De controle draaien
 
