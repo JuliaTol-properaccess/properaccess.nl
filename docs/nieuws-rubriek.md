@@ -219,11 +219,52 @@ persoon, net als bij de rubriek Onderzoek.
 4. Hoort een Engelse week bij een Nederlandse, geef dan beide dezelfde
    `translationKey`. Dan zetten de twee pagina's hreflang naar elkaar.
 
+## Waar onze eigen duiding terechtkomt
+
+De berichten staan in `items:` in de front matter en niet in de tekst van de pagina.
+Dat heeft één gevolg dat je moet kennen: onze duiding valt buiten `.Content` en dus
+buiten `.Plain`. Een template dat `.Plain` leest, ziet van een weekpagina alleen de
+lead onder de front matter. Drie plekken lezen die duiding daarom apart uit.
+
+| Plek | Wat er in komt |
+|---|---|
+| `layouts/partials/nieuws-eigen-tekst.html` | De `tldr` en per bericht de kop en `tekst`, als één platte string |
+| `layouts/_default/list.searchindex.json` | De lead plus de string uit die partial, in het veld `content` |
+| `layouts/_default/index.llmsfull.txt` | Een eigen blok, met per bericht de bron, de link en onze duiding apart gelabeld |
+
+De rubriek staat in de zoekfunctie op de site omdat `nieuws` in `include_sections`
+staat, onder `[search]` in `config/_default/params.toml`. Die lijst doet twee dingen:
+hij bepaalt welke secties in `searchindex.json` komen, en `assets/js/search.js`
+groepeert de resultaten erop. Haal je `nieuws` eruit, dan is geen enkele weekpagina
+meer te vinden met de zoekfunctie, ook niet op de titel.
+
+In `llms-full.txt` komen de twaalf nieuwste weken volledig. Oudere weken staan er als
+linkregel onder de kop "Oudere weken". Twaalf is dezelfde grens als `pagerSize` voor
+`/nieuws/` en als de termijn waarop we de rubriek evalueren. Een week met vijf
+berichten kost ongeveer 2 kilobyte; alle 52 weken van een jaar zouden het bestand met
+de helft laten groeien.
+
+Drie dingen om op te letten als je hieraan werkt:
+
+- Een weekpagina die de telling op noindex zet, valt uit beide bestanden. Dat loopt
+  via `layouts/partials/llms-zichtbaar.html` en via het filter bovenaan
+  `list.searchindex.json`. Zie "Wat de noindex wel en niet doet".
+- Verhuist de duiding ooit naar de body van de pagina, dan kun je de partial en het
+  blok in `index.llmsfull.txt` weghalen. Zolang de duiding in `items[].tekst` staat,
+  zijn ze allebei nodig.
+- `markdownify` zet een apostrof om in `&rsquo;` en `plainify` laat die entiteit staan.
+  Daarom gaat elke tekst door `htmlUnescape`, net als in
+  `layouts/partials/llms-pagina.html`. Laat je die stap weg, dan staat er
+  `alinea&amp;rsquo;s` in de zoekindex.
+
 ## Wat nog open staat
 
 - Een item in het hoofdmenu en de rubriek in `static/llms.txt`. Voorstel: pas doen als
   de eerste weekpagina live staat, zodat die twee niet naar een lege rubriek wijzen.
-- De rubriek in de zoekfunctie, dus `nieuws` toevoegen aan `include_sections` onder
-  `[search]` in `config/_default/params.toml`. Dan komen de weekpagina's in de
-  zoekindex. Dat is een eigen afweging en een eigen wijziging; de rubriek Onderzoek
-  staat er ook niet in.
+- De `tldr` van een blogartikel staat niet in de zoekindex, want `list.searchindex.json`
+  leest daar alleen `.Plain`. Vier artikelen hebben zo'n `tldr`. Dat is een eigen
+  wijziging buiten deze rubriek.
+- De zoekresultaten tonen `programma&rsquo;s` in plaats van `programma's`. Oorzaak:
+  `.Plain` decodeert die entiteit niet, en `search.js` zet de tekst in `innerHTML`.
+  Het raakt 118 van de 275 blogartikelen en is op te lossen met `htmlUnescape` in
+  `list.searchindex.json`. Ook een eigen wijziging, want die raakt de hele site.
