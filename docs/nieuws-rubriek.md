@@ -89,6 +89,16 @@ De volgorde van `items` in het bestand is de volgorde op de pagina en in de Item
 Zet het belangrijkste bericht bovenaan. Elk bericht krijgt een eigen id: `#bericht-1`,
 `#bericht-2` en zo verder, zodat iemand naar één bericht kan linken.
 
+Zet geen eigen `type` in de front matter. Hugo kiest het sjabloon op `type`, en bestaat
+`layouts/<type>/` niet, dan valt hij terug op het sjabloon van het thema. Met
+`type: weekoverzicht` komt de pagina er dus wel, en de build blijft groen, maar de pagina
+houdt alleen de titel, het kruimelpad en de lead over: geen berichten, geen bronlinks,
+geen periode-regel en geen melding in het log. Gemeten op 11 oktober 2026: 67 zichtbare
+woorden tegen 390 zonder het veld, en de drie controles hieronder onder "Wat de build nog
+wel laat vallen" draaien dan niet. De sectie `nieuws` kiest `layouts/nieuws/single.html`
+zelf; `type: nieuws` mag ook en geeft dezelfde pagina. De controle op een pull request
+wordt rood zodra er geen enkele weekpagina gemeten is.
+
 ## De telling: drie berichten en veertig eigen woorden per bericht
 
 De twee ondergrenzen van de rubriek staan in `data/nieuws.yaml`. Ze doen met opzet niet

@@ -186,6 +186,14 @@ def main() -> int:
                 "Draait de build met HUGO_PARAMS_NIEUWSTELLING=true en --buildFuture? "
                 "Zonder die twee meet de controle niets en zegt een groene uitkomst niets."
             )
+            print()
+            print(
+                "Staat er een eigen type in de front matter, zoals type: weekoverzicht? "
+                "Dan rendert Hugo de pagina niet met layouts/nieuws/single.html maar met "
+                "het sjabloon van het thema, en komen de berichten, de periode en deze "
+                "telling niet op de pagina. Laat het veld weg: de sectie nieuws kiest het "
+                "sjabloon zelf."
+            )
             return 1
         print("Geen weekpagina's in de rubriek Nieuws over toegankelijkheid. Niets te tellen.")
         return 0
