@@ -141,10 +141,16 @@ wordt de controle daar niet rood op.
 
 ### De controle draaien
 
-De controle draait op een pull request, in `.github/workflows/nieuws-controle.yml`, en
-niet in `main.yml`: een gevallen build in `main.yml` deployt niets en laat de oude site
-staan, dus een teller die daar omvalt zet de hele site stil. De uitkomst staat in de
-samenvatting van de run en, als er iets te melden is, als reactie op de pull request.
+De controle hoort op een pull request te draaien en niet in `main.yml`: een gevallen
+build in `main.yml` deployt niets en laat de oude site staan, dus een teller die daar
+omvalt zet de hele site stil. De uitkomst komt in de samenvatting van de run en, als er
+iets te melden is, als reactie op de pull request.
+
+De workflow staat klaar in `docs/voorstel-nieuws-controle-workflow.yml` en hoort in
+`.github/workflows/nieuws-controle.yml`. **Alleen Julia kan hem daar neerzetten**: het
+agent-token heeft geen `workflows`-scope en GitHub weigert de push. In het bestand staat
+het commando. Zolang het voorstel in `docs/` staat, draait de controle niet automatisch
+en is het script hieronder de enige controle.
 
 Zelf draaien kan ook, met `hugo` op `PATH`:
 
