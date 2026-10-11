@@ -25,9 +25,9 @@
 - id: contact_submit
   translation: "Verstuur bericht"
 - id: search_input_placeholder
-  translation: "Zoek in blogartikelen..."
+  translation: "Zoek in blogartikelen en nieuws..."
 - id: search_input_label
-  translation: "Zoek in blogartikelen"
+  translation: "Zoek in blogartikelen en nieuws"
 - id: search_no_results
   translation: "Geen resultaten voor"
 - id: search_initial_message

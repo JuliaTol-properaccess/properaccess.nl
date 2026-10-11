@@ -154,7 +154,7 @@ en is het script hieronder de enige controle.
 
 Zelf draaien kan ook, met `hugo` op `PATH`:
 
-```
+```shell
 python3 scripts/nieuws_telling.py
 ```
 
@@ -243,6 +243,14 @@ linkregel onder de kop "Oudere weken". Twaalf is dezelfde grens als `pagerSize` 
 `/nieuws/` en als de termijn waarop we de rubriek evalueren. Een week met vijf
 berichten kost ongeveer 2 kilobyte; alle 52 weken van een jaar zouden het bestand met
 de helft laten groeien.
+
+Het label van het zoekveld moest mee. Het stond op "Zoek in blogartikelen" en dat
+beloofde iets anders dan de knop doet zodra de rubriek erbij staat. Nu is het "Zoek in
+blogartikelen en nieuws", op drie plekken: `search_input_label` en
+`search_input_placeholder` in `i18n/nl.yaml`, en de knop in
+`layouts/partials/essentials/header-minimaal.html`. De Engelse labels blijven "Search
+blog posts", want de Engelse site heeft geen nieuwssectie. Komt er later een sectie bij
+in `include_sections`, dan hoort dat label opnieuw mee.
 
 Drie dingen om op te letten als je hieraan werkt:
 
