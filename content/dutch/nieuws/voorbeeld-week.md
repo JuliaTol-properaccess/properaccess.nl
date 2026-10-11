@@ -41,8 +41,12 @@ tldr: |
 #   bron  wie het bericht publiceerde, in één of twee woorden.
 #   url   de volledige link naar het bericht bij de bron.
 #   datum de dag waarop de bron het publiceerde. Laat weg als die er niet is.
-#   tekst onze eigen alinea's. Verplicht. Een bericht zonder eigen tekst laat de
-#         build falen, dus een pagina met alleen koppen en links komt niet live.
+#   tekst onze eigen alinea's. Minimaal 40 woorden per bericht, en minimaal 3 berichten
+#         per week. Haalt een pagina dat niet, dan krijgt hij een noindex: hij staat dan
+#         wel op /nieuws/, maar niet in de zoekmachines. De controle op een pull request
+#         wordt rood op een bericht onder de 40 woorden, en niet op het aantal berichten.
+#         Zie "De telling" in docs/nieuws-rubriek.md. De teksten in dit voorbeeldbestand
+#         blijven met opzet onder die 40 woorden; het is een sjabloon en geen week.
 #
 # Zet het belangrijkste bericht bovenaan; de volgorde in dit bestand is de volgorde op
 # de pagina en in de ItemList.

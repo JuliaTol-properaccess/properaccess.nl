@@ -68,7 +68,14 @@
 <title>{{ $title }}</title>
 
 <!-- meta noindex -->
-{{ if .Param "noindex" }}
+{{ $noindex := .Param "noindex" }}
+{{ if not $noindex }}
+  {{/* Een weekpagina van /nieuws/ die de ondergrenzen van de rubriek niet haalt, krijgt
+       de noindex van de build mee, zonder noindex in de front matter. Zie
+       layouts/partials/nieuws-telling.html. */}}
+  {{ $noindex = (partialCached "nieuws-telling.html" . .RelPermalink).noindex }}
+{{ end }}
+{{ if $noindex }}
   <meta name="robots" content="noindex,nofollow" />
 {{ end }}
 

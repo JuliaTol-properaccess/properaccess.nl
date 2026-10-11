@@ -1,0 +1,118 @@
+{{- /* De telling van een weekpagina in de rubriek Nieuws over toegankelijkheid.
+
+       Geeft een dict terug met het aantal berichten, het aantal eigen woorden per
+       bericht en of de pagina een noindex moet krijgen. Deze partial rekent alleen; hij
+       laat nooit een build vallen en schrijft zelf niets in het log.
+
+       Twee ondergrenzen, uit data/nieuws.yaml:
+
+       - minimaal 3 berichten per week;
+       - minimaal 40 eigen woorden in de tekst van één bericht.
+
+       Haalt een pagina een van de twee niet, dan is "noindex" waar. De pagina blijft
+       dan gewoon staan en blijft op /nieuws/ te zien; hij komt alleen niet in de
+       zoekmachines, niet in de sitemap en niet in llms-full.txt. Het aantal berichten
+       laat de build dus niet vallen: of er in een stille week een pagina uitgaat, is
+       een redactiekeuze en die ligt bij Julia. Besluit van Chief, 11 oktober 2026.
+
+       Eigen woorden zijn de woorden in items[].tekst, door markdownify en plainify
+       heen. Een kop, een bronnaam, bron_kop, een datum en de vaste tekst van het
+       sjabloon tellen dus niet mee, en van een link telt alleen de linktekst. De lead
+       onder de front matter en de tldr worden geteld en meegegeven, maar hebben geen
+       ondergrens: die twee staan per pagina en niet per bericht.
+
+       Verhuist de duiding ooit uit items[].tekst naar de body van de pagina, dan is
+       deze partial de enige plek die mee moet. Zolang dat niet gebeurd is en er toch
+       geen enkel bericht een tekst heeft terwijl de body wel tekst heeft, zet de
+       partial "meetbaar" op false. Dan telt hij geen tekort en gaat de pagina niet op
+       noindex om de woorden: een pagina die klopt, hoort niet om te vallen op een
+       teller die op de verkeerde plek kijkt. Vraag van Nata, 11 oktober 2026.
+
+       Roep de partial aan met partialCached en .RelPermalink als variant, zodat hij per
+       pagina één keer rekent:
+
+           {{ $telling := partialCached "nieuws-telling.html" . .RelPermalink }}
+
+       Lezers van deze telling: layouts/nieuws/single.html (de melding in het
+       buildlog), layouts/partials/basic-seo.html (de noindex), layouts/sitemap.xml,
+       layouts/partials/llms-zichtbaar.html en scripts/nieuws_telling.py. */ -}}
+
+{{- /* Eén return, helemaal onderaan, en de hele telling in een if. Hugo herkent een
+       partial met een returnwaarde aan één return-opdracht op het hoogste niveau; staat
+       er een tweede, bijvoorbeeld om vroeg uit te stappen, dan valt elke build die de
+       partial aanroept op "wrong number of args for return". Gemeten 11 oktober 2026. */ -}}
+{{- $telling := dict "vantoepassing" false "noindex" false "meetbaar" true -}}
+
+{{- if and .IsPage (eq .Section "nieuws") -}}
+  {{- $min_berichten := int (default 3 site.Data.nieuws.minimum_berichten) -}}
+  {{- $min_woorden := int (default 40 site.Data.nieuws.minimum_woorden_per_item) -}}
+
+  {{- $items := default (slice) .Params.items -}}
+  {{- $woorden := slice -}}
+  {{- $tekort := slice -}}
+  {{- $met_tekst := 0 -}}
+  {{- range $i, $item := $items -}}
+    {{- $tekst := trim (printf "%v" (default "" $item.tekst)) " \n\r\t" -}}
+    {{- $aantal := 0 -}}
+    {{- with $tekst -}}
+      {{- $met_tekst = add $met_tekst 1 -}}
+      {{- $aantal = countwords (plainify (markdownify .)) -}}
+    {{- end -}}
+    {{- $woorden = $woorden | append $aantal -}}
+    {{- if lt $aantal $min_woorden -}}
+      {{- $tekort = $tekort | append (dict
+            "nummer" (add $i 1)
+            "kop" (printf "%v" (default "" $item.kop))
+            "woorden" $aantal) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $lead := countwords (plainify .Content) -}}
+  {{- $tldr := 0 -}}
+  {{- with .Params.tldr -}}
+    {{- $tldr = countwords (plainify (markdownify .)) -}}
+  {{- end -}}
+
+  {{- /* De teller kijkt in items[].tekst. Staat er in geen enkel bericht tekst terwijl
+         de pagina wel een lead heeft, dan staat de duiding ergens anders en telt hij
+         hier niets zinnigs. */ -}}
+  {{- $meetbaar := true -}}
+  {{- if and (gt (len $items) 0) (eq $met_tekst 0) (gt $lead 0) -}}
+    {{- $meetbaar = false -}}
+  {{- end -}}
+
+  {{- $redenen := slice -}}
+  {{- if lt (len $items) $min_berichten -}}
+    {{- $redenen = $redenen | append (printf "%d berichten, de ondergrens is %d" (len $items) $min_berichten) -}}
+  {{- end -}}
+  {{- if $meetbaar -}}
+    {{- range $tekort -}}
+      {{- $redenen = $redenen | append (printf "bericht %d heeft %d eigen woorden, de ondergrens is %d" .nummer .woorden $min_woorden) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $redenen = $redenen | append "de eigen tekst staat niet in items[].tekst, dus de woorden zijn hier niet te tellen" -}}
+  {{- end -}}
+
+  {{- $bestand := "" -}}
+  {{- with .File -}}
+    {{- $bestand = .Path -}}
+  {{- end -}}
+
+  {{- $telling = dict
+        "vantoepassing" true
+        "bestand" $bestand
+        "url" .RelPermalink
+        "titel" .Title
+        "berichten" (len $items)
+        "minimum_berichten" $min_berichten
+        "minimum_woorden" $min_woorden
+        "woorden" $woorden
+        "tekort" $tekort
+        "lead" $lead
+        "tldr" $tldr
+        "meetbaar" $meetbaar
+        "noindex" (or (lt (len $items) $min_berichten) (and $meetbaar (gt (len $tekort) 0)))
+        "redenen" $redenen -}}
+{{- end -}}
+
+{{- return $telling -}}

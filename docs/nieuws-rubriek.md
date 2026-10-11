@@ -89,16 +89,77 @@ De volgorde van `items` in het bestand is de volgorde op de pagina en in de Item
 Zet het belangrijkste bericht bovenaan. Elk bericht krijgt een eigen id: `#bericht-1`,
 `#bericht-2` en zo verder, zodat iemand naar één bericht kan linken.
 
-## Een bericht heeft eigen tekst, anders valt de build
+## De telling: drie berichten en veertig eigen woorden per bericht
+
+De twee ondergrenzen van de rubriek staan in `data/nieuws.yaml`. Ze doen met opzet niet
+hetzelfde:
+
+| Ondergrens | Waarde | Wat er gebeurt als een weekpagina hem niet haalt |
+|---|---|---|
+| berichten per week | 3 | de pagina krijgt een noindex, de controle meldt het en wordt niet rood |
+| eigen woorden per bericht | 40 | de pagina krijgt een noindex en de controle op de pull request wordt rood |
+
+**Het aantal berichten laat de build nooit vallen en maakt de controle nooit rood.** Of
+er in een stille week een pagina uitgaat, is een redactiekeuze en die ligt bij Julia:
+valt de build op het aantal berichten, dan kan er in zo'n week niets uit, ook niet als
+Julia zegt dat het wel moet. Besluit van Chief, 11 oktober 2026. Een bericht onder de
+veertig woorden is tekst die voor de merge bij te schrijven is, en dat mag wel rood
+worden.
+
+Eigen woorden zijn de woorden in `items[].tekst`, door `markdownify` en `plainify` heen.
+Een kop, een bronnaam, `bron_kop`, een datum en de vaste tekst van het sjabloon tellen
+dus niet mee, en van een link telt alleen de linktekst. De lead onder de front matter en
+de `tldr` worden geteld en staan in de melding, maar hebben geen ondergrens: die twee
+staan per pagina en niet per bericht.
+
+### Wat de noindex wel en niet doet
+
+Een weekpagina met een noindex van de build blijft staan en blijft op `/nieuws/` te
+zien, en blijft in de feed op `/nieuws/index.xml`: een lezer die de rubriek volgt, hoort
+de week van die week te kunnen lezen. De pagina komt niet in de zoekmachines, niet in
+`nl/sitemap.xml` en niet in `llms-full.txt`. Er hoeft geen `noindex: true` in de front
+matter; die blijft werken en telt even zwaar.
+
+### Wat de build nog wel laat vallen
 
 `layouts/nieuws/single.html` laat de build vallen met `errorf` als een bericht geen
-`kop`, `url`, `bron` of `tekst` heeft, of als een weekpagina helemaal geen `items`
-heeft. De melding noemt het bestand en het nummer van het bericht.
+`kop`, geen `url` of geen `bron` heeft. Dat is een bericht dat niet te renderen is: een
+kop die er niet staat, of een link zonder adres. De melding noemt het bestand en het
+nummer van het bericht. Een bericht zonder `tekst` laat de build niet meer vallen; dat is
+nul eigen woorden en dus de woordgrens hierboven.
 
-Dat is met opzet. Een pagina met alleen koppen en links naar anderen voegt niets toe,
-niet voor een lezer en niet voor een AI-assistent die ons citeert. Liever een gevallen
-build dan zo'n pagina live. Een gevallen build betekent dat er niets deployt en de oude
-site blijft staan.
+### Waar de telling wordt gerekend
+
+`layouts/partials/nieuws-telling.html` rekent de telling uit, voor de noindex en voor de
+controle allebei, zodat de melding op de pull request niet kan afwijken van wat er op de
+pagina staat. De partial laat zelf nooit een build vallen.
+
+Verhuist de duiding ooit uit `items[].tekst` naar de body van de pagina, dan is die
+partial de enige plek die mee moet. Staat er in geen enkel bericht een tekst terwijl de
+pagina wel een lead heeft, dan meldt de telling dat de woorden niet te tellen zijn, en
+wordt de controle daar niet rood op.
+
+### De controle draaien
+
+De controle draait op een pull request, in `.github/workflows/nieuws-controle.yml`, en
+niet in `main.yml`: een gevallen build in `main.yml` deployt niets en laat de oude site
+staan, dus een teller die daar omvalt zet de hele site stil. De uitkomst staat in de
+samenvatting van de run en, als er iets te melden is, als reactie op de pull request.
+
+Zelf draaien kan ook, met `hugo` op `PATH`:
+
+```
+python3 scripts/nieuws_telling.py
+```
+
+Het script bouwt met `--buildFuture` en zonder `--buildDrafts`. Een weekpagina met de
+datum van de komende zaterdag telt dus mee, en `content/dutch/nieuws/voorbeeld-week.md`
+niet. Dat laatste is nodig: de voorbeeldteksten in dat bestand staan onder de veertig
+woorden, want het is een sjabloon en geen week.
+
+De exitcode is 1 als een bericht onder de woordgrens zit, en 0 als er alleen een melding
+is over het aantal berichten. `--log <bestand>` telt een bestaand buildlog na, zonder te
+bouwen.
 
 ## Wanneer een weekpagina live komt
 
