@@ -73,11 +73,13 @@ blijft de slug staan. Moet een URL toch wijzigen, zet dan een redirect in `_redi
 
    | Veld | Verplicht | Wat het doet |
    |---|---|---|
-   | `kop` | ja | de h2 op de pagina en `name` in de ItemList |
+   | `kop` | ja | de kop boven het bericht en `name` in de ItemList. Onder een kopje per doelgroep is dat een h3, daarbuiten een h2 |
    | `bron` | ja | wie het bericht publiceerde. Komt als `publisher` in de ItemList |
    | `url` | ja | de link naar het bericht bij de bron |
    | `bron_kop` | nee | de kop die het bericht bij de bron heeft. Staat die er, dan is dat de linktekst |
    | `datum` | nee | de dag waarop de bron publiceerde |
+   | `sectie` | nee | de doelgroep van dit bericht, zie "De kopjes per doelgroep" |
+   | `hoofditem` | nee | `true` bij het bericht waar de titel van de pagina van komt. Dat bericht staat vooraan in zijn kopje |
    | `tekst` | ja | onze eigen alinea's bij het bericht, als Markdown |
 
 4. Zet `draft: false`.
@@ -85,9 +87,12 @@ blijft de slug staan. Moet een URL toch wijzigen, zet dan een redirect in `_redi
 6. `dateModified` in de JSON-LD komt uit de git-historie (`enableGitInfo`), dus een
    herschreven weekpagina meldt zichzelf vanzelf als bijgewerkt.
 
-De volgorde van `items` in het bestand is de volgorde op de pagina en in de ItemList.
-Zet het belangrijkste bericht bovenaan. Elk bericht krijgt een eigen id: `#bericht-1`,
-`#bericht-2` en zo verder, zodat iemand naar één bericht kan linken.
+De volgorde van `items` in het bestand is de volgorde in de ItemList en de volgorde
+binnen een kopje. Welk kopje bovenaan staat, ligt vast in `data/nieuws.yaml` en is voor
+elke week gelijk. Elk bericht krijgt een eigen id: `#bericht-1`, `#bericht-2` en zo
+verder, geteld in de front matter, zodat iemand naar één bericht kan linken. Dat nummer
+verschuift niet mee met de kopjes: het eerste bericht in het bestand is `#bericht-1`, ook
+als het op de pagina onder het tweede kopje staat.
 
 Zet geen eigen `type` in de front matter. Hugo kiest het sjabloon op `type`, en bestaat
 `layouts/<type>/` niet, dan valt hij terug op het sjabloon van het thema. Met
@@ -98,6 +103,82 @@ woorden tegen 390 zonder het veld, en de drie controles hieronder onder "Wat de 
 wel laat vallen" draaien dan niet. De sectie `nieuws` kiest `layouts/nieuws/single.html`
 zelf; `type: nieuws` mag ook en geeft dezelfde pagina. De controle op een pull request
 wordt rood zodra er geen enkele weekpagina gemeten is.
+
+## De kopjes per doelgroep
+
+Een weekpagina groepeert de berichten onder een kopje per doelgroep, zodat een lezer
+ziet voor wie een bericht bedoeld is. Voorstel van Julia, 11 oktober 2026.
+
+De zes kopjes staan in `data/nieuws.yaml` onder `secties:`:
+
+| Sleutel | Kop op de pagina |
+|---|---|
+| `wetten` | Wetten en toezicht |
+| `normen` | Normen en richtlijnen |
+| `ontwikkelaars` | Voor ontwikkelaars en ontwerpers |
+| `redacteuren` | Voor redacteuren en contentmakers |
+| `onderzoek` | Onderzoek en cijfers |
+| `gebruikers` | Gebruikers en hulpmiddelen |
+
+Een koptekst herschrijven is één regel in dat bestand, en daarna staat hij op alle
+weekpagina's. Er hoeft geen template open en geen weekpagina mee.
+
+**De sleutel verandert nooit.** Die is ook het anker van het kopje op de pagina, dus
+`/nieuws/2026-10-17/#wetten`. Een andere sleutel laat een link naar een week die al
+gepubliceerd is in het niets lopen. De koptekst is wel vrij: die staat nergens in een
+URL.
+
+Zo staat het op de pagina:
+
+- **De volgorde is vast**, voor elke week gelijk: de volgorde van `secties:` in
+  `data/nieuws.yaml`. Zo vindt een lezer die de rubriek volgt zijn eigen kopje op
+  dezelfde plek terug.
+- **Een kopje zonder berichten staat er niet.** Geen leeg kopje, en geen sprong naar
+  een kopje dat er niet is.
+- **De sprongenlijst erboven komt er vanaf twee kopjes.** Boven één kopje met drie
+  berichten is zo'n lijst ruis. Hij staat in een `nav` met de zichtbare kop "Op deze
+  pagina", en die kop is via `aria-labelledby` ook de naam van die `nav`.
+- **Het kopje is een h2 en de kop van een bericht een h3.** Staat een bericht buiten de
+  kopjes, dan is er geen kop boven en is de kop van het bericht zelf een h2.
+- **Onder een kopje staan geen nummers voor de berichten.** Ze zouden daar niet op 1
+  beginnen en een rangorde over de kopjes heen suggereren die er niet is. Een pagina
+  zonder kopjes houdt de genummerde lijst die er altijd stond.
+
+Een bericht hoort bij één sectie, dus het staat nooit twee keer op de pagina. Twee
+dingen houden de pagina heel als er iets mist:
+
+- **Een bericht zonder `sectie` komt onderaan te staan**, onder de kopjes. Een
+  weekpagina die het veld nog niet heeft, ziet er dus uit zoals hij eruitzag.
+- **Een bericht met een sectie die niet bestaat, komt op diezelfde plek.** De build
+  valt er niet op, en in het log staat een regel met het bestand, het nummer van het
+  bericht en de zes sleutels. Een typefout kost dus een kopje, geen bericht.
+
+### Het hoofditem
+
+Het bericht van 80 tot 100 woorden bepaalt de titel van de weekpagina. Met kopjes staat
+dat bericht niet meer vanzelf bovenaan: zijn plek volgt uit zijn sectie. Zet
+`hoofditem: true` bij dat ene bericht. Het staat dan vooraan in zijn eigen kopje, en in
+de front matter is te zien waar de titel vandaan komt.
+
+De sectie van het hoofditem schuift niet mee naar voren. De volgorde van de kopjes
+blijft voor elke week gelijk.
+
+Staat `hoofditem: true` bij meer dan één bericht, dan komt er een regel in het buildlog
+en gaan die berichten allebei vooraan in hun kopje. De build valt er niet op.
+
+### Waar het in de code staat
+
+| Bestand | Wat het doet |
+|---|---|
+| `data/nieuws.yaml` | de sleutels, de kopteksten en de volgorde |
+| `layouts/partials/nieuws-secties.html` | deelt de berichten in, rendert zelf niets |
+| `layouts/partials/nieuws-bericht.html` | één bericht, met het kopniveau als parameter |
+| `layouts/nieuws/single.html` | de sprongenlijst, de kopjes en de meldingen in het log |
+| `assets/css/custom.css` | de opmaak, onder "Rubriek Nieuws over toegankelijkheid" |
+
+De kopjes raken de ItemList in de JSON-LD niet. Die houdt de volgorde van de front
+matter, en dat is onze eigen rangorde van de week. Ook `llms-full.txt`, de zoekindex en
+de telling lezen `items:` en veranderen niet mee.
 
 ## De telling: drie berichten en veertig eigen woorden per bericht
 
@@ -219,9 +300,11 @@ laatste staat in `layouts/partials/basic-seo.html`, achter `.Section == "nieuws"
 | `/nieuws/` | `CollectionPage` | het bestaande blok in `layouts/partials/json-ld.html`, nu ook voor sectie `nieuws` |
 | Weekpagina | `Article` met een `ItemList` in `mainEntity` | het nieuwe blok in `layouts/partials/json-ld.html` |
 
-De `ItemList` bevat de berichten die een lezer ziet, in dezelfde volgorde en met
-dezelfde koppen. Per bericht wijst `url` naar de plek op onze pagina (`#bericht-1`) en
-`item` naar de bron, met de naam van de bron als `publisher`.
+De `ItemList` bevat de berichten die een lezer ziet, met dezelfde koppen, in de
+volgorde van `items:` in de front matter. Dat is onze eigen rangorde van de week; de
+pagina groepeert diezelfde berichten onder een kopje per doelgroep, en die indeling is
+voor de lezer en niet voor de rangorde. Per bericht wijst `url` naar de plek op onze
+pagina (`#bericht-1`) en `item` naar de bron, met de naam van de bron als `publisher`.
 
 Niet `NewsArticle`: dat type is voor een nieuwsuitgever, en wij schrijven wat het nieuws
 van anderen betekent. `Article` dekt dat. De auteur is de organisatie en niet een

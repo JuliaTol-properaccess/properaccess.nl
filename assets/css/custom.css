@@ -20726,12 +20726,94 @@ pre.chroma {
   margin: 2.5rem 0 0;
 }
 
+/* De sprongenlijst naar de kopjes per doelgroep. Staat op de pagina vanaf twee
+   secties; zie layouts/nieuws/single.html. Dezelfde opmaak als het blok met de week
+   ervoor en de week erna, want het is hetzelfde soort blok: links binnen de rubriek. */
+.nieuws-week__sprongen {
+  margin: 2.5rem 0 0;
+  padding: 1.5rem 1.75rem;
+  background: #f9fafb;
+  border-left: 6px solid #A30D4B;
+  border-radius: 0.5rem;
+}
+
+.nieuws-week__sprongen-kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1F2937;
+  margin: 0 0 0.75rem;
+}
+
+.nieuws-week__sprongen-lijst {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* De maat staat in px en niet in rem: op een telefoon is 1rem hier 12,8px, en dan
+   haalt een doel van 1.5rem de 24px van succescriterium 2.5.8 niet. */
+.nieuws-week__sprongen-link {
+  display: inline-block;
+  min-height: 24px;
+  padding: 6px 0;
+  line-height: 1.5;
+  color: #1F2937;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nieuws-week__sprongen-link:hover {
+  color: #A30D4B;
+}
+
+/* Het kopje per doelgroep. scroll-margin-top houdt de kop uit de sticky header als
+   iemand uit de sprongenlijst hierheen springt, dezelfde 6rem als bij een blogartikel. */
+.nieuws-sectie {
+  margin: 3rem 0 0;
+}
+
+.nieuws-sectie__kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1F2937;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #A30D4B;
+  scroll-margin-top: 6rem;
+}
+
 /* De berichten. Een geordende lijst met zichtbare nummers: de volgorde is bedoeld,
    dus die hoort ook te zien te zijn. */
 .nieuws-berichten {
   margin: 2.5rem 0 0;
   padding-left: 1.75rem;
   list-style: decimal;
+}
+
+/* Onder een kopje per doelgroep vallen de nummers weg: ze beginnen daar niet op 1 en
+   zouden een rangorde over de kopjes heen suggereren die er niet is. De volgorde blijft
+   bedoeld, dus de lijst blijft een ol. */
+.nieuws-berichten--zonder-nummers {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nieuws-sectie .nieuws-berichten {
+  margin-top: 1.5rem;
+}
+
+/* De berichten zonder doelgroep, onder de kopjes */
+.nieuws-berichten--los {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 .nieuws-bericht::marker {
@@ -20741,6 +20823,7 @@ pre.chroma {
 
 .nieuws-bericht {
   padding: 0 0 2rem;
+  scroll-margin-top: 6rem;
 }
 
 .nieuws-bericht + .nieuws-bericht {

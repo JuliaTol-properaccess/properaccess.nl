@@ -37,24 +37,39 @@ tldr: |
 
 # De berichten van deze week. Per bericht vier velden, en datum is optioneel:
 #
-#   kop   de kop van ons stukje. Wordt de h2 op de pagina en de naam in de ItemList.
-#   bron  wie het bericht publiceerde, in één of twee woorden.
-#   url   de volledige link naar het bericht bij de bron.
-#   datum de dag waarop de bron het publiceerde. Laat weg als die er niet is.
-#   tekst onze eigen alinea's. Minimaal 40 woorden per bericht, en minimaal 3 berichten
-#         per week. Haalt een pagina dat niet, dan krijgt hij een noindex: hij staat dan
-#         wel op /nieuws/, maar niet in de zoekmachines. De controle op een pull request
-#         wordt rood op een bericht onder de 40 woorden, en niet op het aantal berichten.
-#         Zie "De telling" in docs/nieuws-rubriek.md. De teksten in dit voorbeeldbestand
-#         blijven met opzet onder die 40 woorden; het is een sjabloon en geen week.
+#   kop       de kop van ons stukje. Wordt de kop boven het bericht op de pagina en de
+#             naam in de ItemList.
+#   bron      wie het bericht publiceerde, in één of twee woorden.
+#   url       de volledige link naar het bericht bij de bron.
+#   datum     de dag waarop de bron het publiceerde. Laat weg als die er niet is.
+#   sectie    voor welke doelgroep dit bericht is. Een van zes sleutels: wetten, normen,
+#             ontwikkelaars, redacteuren, onderzoek, gebruikers. De pagina groepeert de
+#             berichten onder het kopje van hun sectie, in de volgorde van
+#             data/nieuws.yaml. Eén sectie per bericht. Laat je het veld weg, dan komt
+#             het bericht onderaan te staan, buiten de kopjes.
+#   hoofditem zet dit op true bij het bericht waar de titel van de pagina van komt, dat
+#             van 80 tot 100 woorden. Dat bericht staat vooraan in zijn eigen sectie. Bij
+#             één bericht per week zetten; staat het bij meer, dan komt er een regel in
+#             het buildlog.
+#   tekst     onze eigen alinea's. Minimaal 40 woorden per bericht, en minimaal 3
+#             berichten per week. Haalt een pagina dat niet, dan krijgt hij een noindex:
+#             hij staat dan wel op /nieuws/, maar niet in de zoekmachines. De controle op
+#             een pull request wordt rood op een bericht onder de 40 woorden, en niet op
+#             het aantal berichten. Zie "De telling" in docs/nieuws-rubriek.md. De
+#             teksten in dit voorbeeldbestand blijven met opzet onder die 40 woorden; het
+#             is een sjabloon en geen week.
 #
-# Zet het belangrijkste bericht bovenaan; de volgorde in dit bestand is de volgorde op
-# de pagina en in de ItemList.
+# De volgorde in dit bestand is de volgorde binnen een kopje en de volgorde in de
+# ItemList. Welk kopje bovenaan de pagina staat, ligt vast in data/nieuws.yaml en is voor
+# elke week gelijk. Het nummer van een bericht blijft de plek in dit bestand: het eerste
+# bericht is #bericht-1, ook als het onder het tweede kopje staat.
 items:
   - kop: "Hier komt de kop van het eerste bericht"
     bron: "Naam van de bron"
     url: "https://example.com/eerste-bericht"
     datum: 2026-10-13
+    sectie: wetten
+    hoofditem: true
     tekst: |
       Hier komt onze eigen tekst bij het bericht: wat er staat, en wat het betekent voor
       wie een website of app beheert. Eén of twee alinea's, geen samenvatting van het
@@ -63,6 +78,7 @@ items:
   - kop: "Hier komt de kop van het tweede bericht"
     bron: "Naam van de bron"
     url: "https://example.com/tweede-bericht"
+    sectie: ontwikkelaars
     tekst: |
       Hier komt onze eigen tekst bij het tweede bericht. Een bericht zonder datum bij de
       bron kan ook; dan valt die regel weg.
@@ -71,9 +87,11 @@ items:
     bron: "Naam van de bron"
     url: "https://example.com/derde-bericht"
     datum: 2026-10-16
+    sectie: wetten
     tekst: |
-      Hier komt onze eigen tekst bij het derde bericht. Verwijs waar het kan naar een
-      pagina op onze site die er meer over zegt, zoals de pagina over
+      Hier komt onze eigen tekst bij het derde bericht. Dit bericht staat onder hetzelfde
+      kopje als het eerste, dus het staat op de pagina direct daaronder. Verwijs waar het
+      kan naar een pagina op onze site die er meer over zegt, zoals de pagina over
       [de European Accessibility Act](/eaa/).
 ---
 

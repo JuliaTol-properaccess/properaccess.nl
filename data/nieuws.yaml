@@ -1,4 +1,7 @@
-# Ondergrenzen van de rubriek Nieuws over toegankelijkheid, op één plek.
+# Instellingen van de rubriek Nieuws over toegankelijkheid, op één plek: de ondergrenzen
+# van een weekpagina en de kopjes per doelgroep.
+#
+# ## De ondergrenzen
 #
 # layouts/partials/nieuws-telling.html leest deze twee getallen, en de controle op een
 # pull request (scripts/nieuws_telling.py) krijgt ze uit diezelfde partial mee. Verander
@@ -15,3 +18,37 @@
 # De onderbouwing van de twee getallen staat in docs/nieuws-rubriek.md.
 minimum_berichten: 3
 minimum_woorden_per_item: 40
+
+# ## De kopjes per doelgroep
+#
+# Een weekpagina groepeert de berichten onder een kopje per doelgroep, zodat een lezer
+# ziet voor wie een bericht bedoeld is. Voorstel van Julia, 11 oktober 2026.
+#
+# Elk bericht in items[] zet zijn doelgroep in het veld `sectie`, met een van de
+# sleutels hieronder. Eén sectie per bericht, dus een bericht staat nooit twee keer op
+# de pagina. Een bericht zonder `sectie` komt onderaan de pagina te staan, buiten de
+# kopjes; een bericht met een sleutel die hier niet staat ook, en daar komt een regel
+# in het buildlog bij.
+#
+# sleutel  de waarde die in `sectie` hoort. Die is ook het anker van het kopje op de
+#          pagina (#wetten), dus hij verandert niet meer: een link naar een sectie van
+#          een gepubliceerde week blijft dan werken.
+# kop      de zichtbare kop boven de groep, als h2. Deze tekst is te herschrijven
+#          zonder dat er een template of een weekpagina open hoeft.
+#
+# De volgorde in deze lijst is de volgorde op de pagina, voor elke weekpagina gelijk.
+# Een sectie zonder berichten komt niet op de pagina: geen leeg kopje en geen dode
+# sprong in de lijst erboven. Zie layouts/partials/nieuws-secties.html.
+secties:
+  - sleutel: wetten
+    kop: "Wetten en toezicht"
+  - sleutel: normen
+    kop: "Normen en richtlijnen"
+  - sleutel: ontwikkelaars
+    kop: "Voor ontwikkelaars en ontwerpers"
+  - sleutel: redacteuren
+    kop: "Voor redacteuren en contentmakers"
+  - sleutel: onderzoek
+    kop: "Onderzoek en cijfers"
+  - sleutel: gebruikers
+    kop: "Gebruikers en hulpmiddelen"

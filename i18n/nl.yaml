@@ -164,6 +164,8 @@
   translation: "bij"
 - id: nieuws_bericht_bij
   translation: "Lees het bericht bij"
+- id: nieuws_op_deze_pagina
+  translation: "Op deze pagina"
 - id: nieuws_andere_weken
   translation: "Andere weken"
 - id: nieuws_vorige_week
