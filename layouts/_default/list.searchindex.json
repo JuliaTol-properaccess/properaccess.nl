@@ -35,6 +35,18 @@
 {{- $image:= $.Scratch.Get "image" -}}
 {{- $imageSM:= $.Scratch.Get "imageSM" -}}
 
+{{- /* `.Plain` is de tekst van de pagina en niet de front matter. Op een weekpagina van
+       /nieuws/ staan de berichten in `items:` in de front matter, dus onze eigen duiding
+       rendert wel op de pagina maar valt buiten `.Plain`. Zonder de partial hieronder
+       stond van zo'n pagina alleen de lead in de zoekindex en was de rubriek niet te
+       vinden op de tekst waar hij het van moet hebben. De partial geeft een lege string
+       voor elke pagina zonder `items:`, dus voor de andere secties verandert `content`
+       niet. */ -}}
+{{- $inhoud := $e.Plain -}}
+{{- with partial "nieuws-eigen-tekst.html" $e -}}
+  {{- $inhoud = printf "%s %s" $e.Plain . -}}
+{{- end -}}
+
 {
   "section": {{ .Section | humanize | jsonify }},
   "slug": {{ .RelPermalink | jsonify }},
@@ -46,7 +58,7 @@
   "searchKeyword": {{ .Params.search_keyword | default "" | jsonify }},
   "categories": {{ if .Params.categories }}{{ delimit .Params.categories ", " | jsonify }}{{ else }}""{{ end }},
   "tags": {{ if .Params.tags }}{{ delimit .Params.tags ", " | jsonify }}{{ else }}""{{ end }},
-  "content": {{- $e.Plain | jsonify -}}
+  "content": {{- $inhoud | jsonify -}}
 }{{- if ne $i (sub $totalPagesLength 1) -}},{{- end -}}
 
 {{- end -}}
