@@ -203,6 +203,14 @@
     .hm__paneel-inner { padding: 24px 14px 30px; }
   }
 
+  /* Een laag venster: een liggende telefoon, of 400% zoom op een laptop (dan
+     is het venster 320 bij 256 CSS-pixels). Een header die daar blijft staan
+     neemt 38% van het beeld in. Op zo'n venster schuift hij gewoon mee. */
+  @media (max-height: 460px) {
+    .hm { position: static; }
+    .hm__paneel { max-height: none; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .hm__paneel:not([hidden]) { animation: none; }
     .hm__streepjes span { transition: none; }
