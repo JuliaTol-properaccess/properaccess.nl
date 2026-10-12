@@ -43,6 +43,18 @@
         <span class="hm__streepjes" aria-hidden="true"><span></span><span></span></span>
       </button>
     </div>
+    {{/*
+      "Audit aanvragen" staat in de balk zelf en niet meer in het paneel: op een
+      telefoon moet de bezoeker hem zien zonder het menu te openen (verzoek van
+      Julia via Chief, 12-10-2026). Eén keer in de HTML, dus hij staat ook niet
+      dubbel als het paneel open is.
+
+      Tot 700 pixels past hij niet naast logo, Zoeken en Menu: daar wordt het een
+      eigen band onder die regel, over de volle breedte. Boven 700 pixels staat
+      hij rechts in de balk, achter Menu. De leesrichting en de tabvolgorde
+      blijven in beide gevallen gelijk aan de volgorde in de HTML.
+    */}}
+    <a class="hm__cta hm__cta--balk" href="/offerte-wcag-onderzoek/">Audit aanvragen</a>
   </div>
 
   <nav class="hm__paneel" id="hm-paneel" aria-label="Hoofdmenu" hidden>
@@ -77,7 +89,6 @@
       </div>
       <div class="hm__groep hm__groep--actie">
         <h2 class="hm__groep-titel">Zelf aan de slag</h2>
-        <a class="hm__cta" href="/offerte-wcag-onderzoek/">Audit aanvragen</a>
         <a class="hm__link hm__link--vet" href="https://portaal.properaccess.nl/" target="_blank" rel="noopener">Naar het portaal<span class="sr-only"> (opent in een nieuw tabblad)</span></a>
         <a class="hm__telefoon" href="tel:+31855055890">085 5055 890</a>
         <button type="button" class="hm__zoek" data-target="search-modal">Zoek in blogartikelen</button>
@@ -89,12 +100,18 @@
 <style>
   .hm { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid rgba(31,41,55,0.22); }
   .hm__bar {
-    max-width: 1320px; margin: 0 auto; padding: 14px 24px; min-height: 66px;
-    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    /* --hm-pad is de zijmarge van de balk. De knop in de balk leest hem uit om
+       op smalle schermen tot de rand door te lopen. */
+    --hm-pad: 24px;
+    max-width: 1320px; margin: 0 auto; padding: 14px var(--hm-pad); min-height: 66px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
   }
   .hm__logo { display: inline-flex; flex: none; }
   .hm__logo img { height: 2rem; width: auto; max-width: none; flex: none; }
-  .hm__acties { display: flex; align-items: center; gap: 10px; flex: none; }
+  /* De acties staan rechts; marge in plaats van space-between, zodat de knop
+     "Audit aanvragen" erachter blijft staan en niet het midden in wordt
+     geduwd als er een derde item in de balk staat. */
+  .hm__acties { display: flex; align-items: center; gap: 10px; flex: none; margin-left: auto; }
   .hm__zoekknop {
     display: inline-flex; align-items: center; gap: 8px; cursor: pointer; min-height: 44px;
     font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 800; font-size: 13px;
@@ -140,6 +157,32 @@
     letter-spacing: 1.5px; text-transform: uppercase;
   }
   .hm__cta:hover { background: #1F2937; color: #F4F1EA; }
+  /* Dezelfde knop als in het paneel, maar in de balk: hij staat op een eigen
+     regel zodra hij er niet meer naast past, en de focusrand is crème, want
+     een magenta rand op een magenta vlak zie je niet. */
+  .hm__cta--balk {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; flex: none; text-align: center;
+  }
+  /* Deze selector moet zwaarder wegen dan ".hm a:focus-visible" hierboven,
+     anders krijgt de knop daar een magenta rand op een magenta vlak. */
+  .hm a.hm__cta--balk:focus-visible { outline: 3px solid #F4F1EA; outline-offset: -7px; }
+  /* Tot 700 pixels past de knop niet naast logo, Zoeken en Menu: dan wordt het
+     een band over de volle breedte, tegen de onderrand van de balk aan. Zo
+     blijft de header zo laag als het kan. */
+  @media (max-width: 700px) {
+    .hm__bar { padding-bottom: 0; row-gap: 0; min-height: 0; }
+    .hm__cta--balk {
+      width: calc(100% + 2 * var(--hm-pad)); margin: 0 calc(-1 * var(--hm-pad));
+    }
+    .hm__paneel { max-height: calc(100vh - 110px); }
+    /* Deze header blijft staan en is met de band 97 tot 111 pixels hoog. Een
+       kop in een artikel zou daar bij een ankersprong onder verdwijnen: de
+       6rem uit custom.css is op een telefoon maar 76,8 pixels, want 1rem is
+       daar 12,8px. De regel staat hier en niet in custom.css omdat hij bij
+       deze header hoort; de Engelse site heeft een andere. */
+    .js-article-body h2, .js-article-body h3 { scroll-margin-top: 120px; }
+  }
   .hm__telefoon {
     color: #1F2937; text-decoration: none; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
     font-weight: 800; font-size: 19px;
@@ -152,11 +195,11 @@
   /* Smalle schermen en 400% zoom: logo, Zoeken en Menu moeten samen op één
      regel passen binnen 320 CSS-pixels, anders schuift de balk horizontaal. */
   @media (max-width: 560px) {
-    .hm__bar { padding: 10px 14px; gap: 10px; min-height: 60px; }
+    .hm__bar { --hm-pad: 14px; padding-top: 8px; gap: 0 4px; }
     .hm__logo img { height: 1.75rem; }
     .hm__acties { gap: 4px; }
     .hm__zoekknop, .hm__toggle { font-size: 12px; letter-spacing: 0.6px; gap: 7px; padding: 10px 10px; }
-    .hm__paneel { max-height: calc(100vh - 61px); }
+    .hm__cta--balk { font-size: 12px; letter-spacing: 1px; padding-top: 12px; padding-bottom: 12px; }
     .hm__paneel-inner { padding: 24px 14px 30px; }
   }
 

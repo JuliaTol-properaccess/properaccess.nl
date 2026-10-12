@@ -373,7 +373,10 @@
   /* 2. De assistent */
   /* De bovenbalk blijft staan, dus een sprong naar #vraag (vanuit de knop
      Zoeken of vanuit de footerlink) zou de eerste regel eronder verstoppen. */
+  /* Tot 700px staat "Audit aanvragen" als band onder de balk en is de header
+     hoger (97 tot 111px), dus daar hoort een grotere sprongmarge. */
   .hb-vraag { background: var(--navy); color: var(--papier); scroll-margin-top: 84px; }
+  @media (max-width: 700px) { .hb-vraag { scroll-margin-top: 120px; } }
   .hb-vraag__grid {
     padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(44px, 6vw, 76px);
     display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
