@@ -44,17 +44,18 @@
       </button>
     </div>
     {{/*
-      "Audit aanvragen" staat in de balk zelf en niet meer in het paneel: op een
+      "Offerte audit" staat in de balk zelf en niet meer in het paneel: op een
       telefoon moet de bezoeker hem zien zonder het menu te openen (verzoek van
       Julia via Chief, 12-10-2026). Eén keer in de HTML, dus hij staat ook niet
-      dubbel als het paneel open is.
+      dubbel als het paneel open is. Het label is op 12 oktober 2026 door Julia
+      gekozen; het stond eerder op "Audit aanvragen".
 
       Tot 700 pixels past hij niet naast logo, Zoeken en Menu: daar wordt het een
       eigen band onder die regel, over de volle breedte. Boven 700 pixels staat
       hij rechts in de balk, achter Menu. De leesrichting en de tabvolgorde
       blijven in beide gevallen gelijk aan de volgorde in de HTML.
     */}}
-    <a class="hm__cta hm__cta--balk" href="/offerte-wcag-onderzoek/">Audit aanvragen</a>
+    <a class="hm__cta hm__cta--balk" href="/offerte-wcag-onderzoek/">Offerte audit</a>
   </div>
 
   <nav class="hm__paneel" id="hm-paneel" aria-label="Hoofdmenu" hidden>
@@ -109,7 +110,7 @@
   .hm__logo { display: inline-flex; flex: none; }
   .hm__logo img { height: 2rem; width: auto; max-width: none; flex: none; }
   /* De acties staan rechts; marge in plaats van space-between, zodat de knop
-     "Audit aanvragen" erachter blijft staan en niet het midden in wordt
+     "Offerte audit" erachter blijft staan en niet het midden in wordt
      geduwd als er een derde item in de balk staat. */
   .hm__acties { display: flex; align-items: center; gap: 10px; flex: none; margin-left: auto; }
   .hm__zoekknop {
