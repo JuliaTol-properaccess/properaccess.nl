@@ -20506,3 +20506,44 @@ pre.chroma {
 .onderzoek-verspreiding__lijst a:hover {
   color: #A30D4B;
 }
+
+/* Antwoordblokken voor FAQPage. De klasse zit ook in de speakable-cssSelector.
+   De kop en de alinea zijn directe buren; de alinea is exact acceptedAnswer.text. */
+.answer-block {
+  margin: 0 0 1.75rem;
+  max-width: 42rem;
+}
+
+.answer-block__vraag {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+  color: #1F2937;
+}
+
+.answer-block > p {
+  margin: 0;
+}
+
+.hp-faq--flat .answer-block {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.375rem 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.hp-faq:not(.hp-faq--flat) .answer-block {
+  max-width: 48rem;
+  margin: 0.75rem auto 0;
+  padding: 0.75rem 1.5rem 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px -18px rgba(0, 0, 0, 0.4);
+}
+
+.hp-faq:not(.hp-faq--flat) .answer-block__vraag,
+.hp-faq:not(.hp-faq--flat) .answer-block > p {
+  color: #1F2937;
+}

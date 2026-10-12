@@ -55,7 +55,10 @@ kolommen:
       - { naam: "De European Accessibility Act", url: "/eaa/" }
       - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
       - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
-      - { naam: "Onderzoek", url: "/onderzoek/" }
+      # /onderzoek/ is live een 301 naar /toegankelijkheidsonderzoek/. De link wijst
+      # daarom direct naar het doel. De rubriek Onderzoek blijft op /onderzoek/
+      # staan, maar staat uit de sitemap tot die redirect weg is.
+      - { naam: "Onderzoek", url: "/toegankelijkheidsonderzoek/" }
       - { naam: "Academy", url: "/academy/" }
       - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
       - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }

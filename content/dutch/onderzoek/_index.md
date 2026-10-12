@@ -13,6 +13,10 @@ keywords:
 # De rubriek is geen datumfeed maar een vaste pagina per editie, dus geen RSS naast
 # de pagina zelf. De sitewijde feed op /index.xml blijft ongemoeid.
 outputs: ["HTML"]
+# Live stuurt Cloudflare /onderzoek/ met een 301 naar /toegankelijkheidsonderzoek/.
+# Zolang die redirect bestaat hoort deze URL niet in de sitemap. De pagina en de
+# redirect blijven staan. /toegankelijkheidsonderzoek/ heeft een eigen entry.
+sitemap_exclude: true
 ---
 
 Proper Access doet eigen onderzoek naar digitale toegankelijkheid in Nederland. Elke editie krijgt een eigen pagina, met de meetmethode, de meetdatum en de uitkomsten.

@@ -440,29 +440,43 @@
 </script>
 {{ end }}
 
-{{/* FAQ schema — on pages with faqs in front matter */}}
-{{ with .Params.faqs }}
+{{/* FAQ schema — één FAQPage per pagina.
+
+     faqs is het accordeon onderaan (faq-blok.html). answer_blocks zijn de
+     open antwoordblokken (answer-blocks.html). Beide komen in hetzelfde
+     mainEntity; een tweede FAQPage-blok mag er niet bijkomen.
+
+     acceptedAnswer.text is het ruwe antwoordveld. Dat moet gelijk zijn aan
+     de zichtbare tekst, dus answer_blocks renderen dat veld als platte
+     alinea. jsonify escaped aanhalingstekens, zodat een antwoord met
+     aanhalingstekens het script niet breekt. */}}
+{{- $faqEntities := slice -}}
+{{- range .Params.faqs -}}
+  {{- $faqEntities = $faqEntities | append (dict
+    "@type" "Question"
+    "name" .question
+    "acceptedAnswer" (dict "@type" "Answer" "text" .answer)
+  ) -}}
+{{- end -}}
+{{- range .Params.answer_blocks -}}
+  {{- $faqEntities = $faqEntities | append (dict
+    "@type" "Question"
+    "name" .question
+    "acceptedAnswer" (dict "@type" "Answer" "text" .answer)
+  ) -}}
+{{- end -}}
+{{- if gt (len $faqEntities) 0 }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".faq-question", ".faq-answer"]
-  },
-  "mainEntity": [
-    {{- range $i, $faq := . }}
-    {{- if $i }},{{ end }}
-    {
-      "@type": "Question",
-      "name": "{{ $faq.question }}",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ $faq.answer }}"
-      }
-    }
-    {{- end }}
-  ]
-}
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "FAQPage"
+  "speakable" (dict
+    "@type" "SpeakableSpecification"
+    "cssSelector" (slice ".faq-question" ".faq-answer" ".answer-block")
+  )
+  "mainEntity" $faqEntities
+  | jsonify (dict "indent" "  ")
+  | safeJS
+}}
 </script>
-{{ end }}
+{{- end }}

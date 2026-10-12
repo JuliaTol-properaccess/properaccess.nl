@@ -20,6 +20,7 @@
       </div>
     </div>
     {{ end }}
+    {{ partial "answer-blocks.html" (dict "page" .Page "bij" $id) }}
     <div class="section-cards__grid section-cards__grid--{{ $columns }}">
       {{ .Inner }}
     </div>

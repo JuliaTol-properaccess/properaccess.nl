@@ -225,7 +225,16 @@
 </section>
 
 
-<!-- ════════════════ 5. CONTACT ════════════════ -->
+<!-- ════════════════ 5. VEELGESTELDE VRAGEN ════════════════ -->
+<section class="hb-faq" id="veelgestelde-vragen" aria-labelledby="hb-faq-titel">
+  <div class="hb-container">
+    <h2 class="hb-faq__titel" id="hb-faq-titel">Veelgestelde vragen over digitale toegankelijkheid</h2>
+    {{ partial "answer-blocks.html" (dict "page" . "bij" "home") }}
+  </div>
+</section>
+
+
+<!-- ════════════════ 6. CONTACT ════════════════ -->
 <section class="hb-contact" id="contact" aria-labelledby="hb-contact-titel">
   <div class="hb-container hb-contact__grid">
     <div>
@@ -536,6 +545,23 @@
   .hb .hb-dienst--donker :focus-visible { outline-color: var(--licht-magenta) !important; }
 
   /* 5. Contact */
+  .hb-faq { border-bottom: 1px solid var(--lijn); }
+  .hb-faq .hb-container { padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(44px, 6vw, 80px); }
+  .hb-faq__titel {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(28px, 3.6vw, 44px);
+    letter-spacing: -1.4px; line-height: 1.1; margin: 0 0 clamp(28px, 4vw, 40px);
+    max-width: 22em; color: var(--navy);
+  }
+  .hb-faq .answer-block { max-width: 42rem; margin: 0 0 1.75rem; }
+  .hb-faq .answer-block:last-child { margin-bottom: 0; }
+  .hb-faq .answer-block__vraag {
+    font-family: var(--kop); font-weight: 800; font-size: clamp(18px, 1.8vw, 22px);
+    letter-spacing: -0.4px; line-height: 1.3; margin: 0 0 0.5rem; color: var(--navy);
+  }
+  .hb-faq .answer-block > p {
+    margin: 0; font-size: clamp(16px, 1.5vw, 18px); line-height: 1.6; color: var(--tekst);
+  }
+
   .hb-contact { background: var(--magenta); color: #fff; }
   .hb-contact__grid {
     padding-top: clamp(48px, 7vw, 92px); padding-bottom: clamp(48px, 7vw, 92px);

@@ -7,6 +7,7 @@
     <div class="section-full__inner">
       {{ with $title }}<h2 class="hp-heading-lg" style="margin-bottom: 1.5rem;">{{ . }}</h2>{{ end }}
       <div class="section-full__content">
+        {{ partial "answer-blocks.html" (dict "page" .Page "bij" $id) }}
         {{ .Inner | markdownify }}
       </div>
     </div>

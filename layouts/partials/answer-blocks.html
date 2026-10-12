@@ -1,0 +1,20 @@
+{{/* Zichtbare antwoordblokken bij answer_blocks in de front matter.
+
+     Zelfde bron als het FAQPage-schema in json-ld.html: de tekst van de <p>
+     is exact het veld answer, en de kop is exact het veld question. Daarom
+     geen markdown en geen HTML in answer, behalve als diezelfde tekst ook
+     in de JSON-LD staat.
+
+     Een blok is een kop (h3) met direct daaronder één alinea. `bij` kiest
+     welke blokken op deze plek horen, zodat een pagina ze onder een bestaande
+     kop kan zetten zonder een tweede FAQPage. */}}
+{{- $page := .page -}}
+{{- $bij := .bij -}}
+{{- range $page.Params.answer_blocks -}}
+  {{- if eq (printf "%v" .bij) (printf "%v" $bij) -}}
+<div class="answer-block">
+  <h3 class="answer-block__vraag">{{ .question }}</h3>
+  <p>{{ .answer }}</p>
+</div>
+  {{- end -}}
+{{- end -}}
