@@ -1,6 +1,6 @@
 ---
-title: "Making a PDF accessible: checking and repairing"
-description: "Check your PDF for accessibility problems, free and without an account. Repairing the code layer sits in the same tool and is in closed testing."
+title: "When does a PDF have to be accessible? Rules and advice"
+description: "When does your PDF fall under the Dutch accessibility decree or the European Accessibility Act? What the standard requires, and what an auditor checks."
 layout: "pdf-tool-aankondiging"
 weight: 10
 doelgroep:
@@ -8,12 +8,19 @@ doelgroep:
   - "Web developers"
 ---
 
-A check tells you what is wrong in your PDF. Fixing it still has to happen, and that is what this
-tool is for. The tag structure goes in, the title and the language come with it, and you see per
-element what is left after that. The check is public, free and without an account, at
-[pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). Repairing is in closed
-testing. Your document goes to our own server in Germany and leaves it as soon as the check is done.
-The result page is in Dutch for now.
+If you work for a Dutch public body, a PDF on your website or in your app falls under the Besluit
+digitale toegankelijkheid overheid, the decree that implements the European Web Accessibility
+Directive. Article 3 of that decree names the standard EN 301 549, and a document that visitors
+download falls under clause 10 of that standard. Office files published before 23 September 2018 are
+excluded, unless they are needed for an active administrative process. If you are a company
+delivering a digital product or service to consumers, the European Accessibility Act applies, and
+whether your PDF comes with it depends on that product or service. Documentation you supply with a
+product has to exist in an accessible format under EN 301 549.
+
+Which errors a document contains is what the free check at
+[pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren) shows you. Repairing is in
+closed testing. Whether a document is ready to publish follows from an audit by a person. The bottom
+of this page says what that involves. The result page of the check is in Dutch for now.
 
 ## What the check shows you
 

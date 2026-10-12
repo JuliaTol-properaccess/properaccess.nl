@@ -1,6 +1,6 @@
 ---
-title: "PDF toegankelijk maken: controleren en repareren"
-description: "Controleer je PDF op toegankelijkheidsfouten, gratis en zonder account. De codelaag laten repareren zit in dezelfde tool en draait nu in besloten test."
+title: "Wanneer moet een PDF toegankelijk zijn? Regels en advies"
+description: "Wanneer valt je PDF onder het Besluit digitale toegankelijkheid overheid of de European Accessibility Act? Wat de norm eist, en wat een auditor nakijkt."
 layout: "pdf-tool-aankondiging"
 weight: 10
 doelgroep:
@@ -8,12 +8,19 @@ doelgroep:
   - "Webdeveloper"
 ---
 
-Een controle zegt wat er mis is in je PDF. Oplossen moet daarna nog gebeuren, en daar is deze tool
-voor: de tagstructuur komt erin, de titel en de taal komen erbij, en je ziet per element wat er dan
-nog over is. De controle is openbaar, gratis en zonder account, op
+Werk je bij de overheid, dan valt een PDF op je website of in je app onder het Besluit digitale
+toegankelijkheid overheid. Artikel 3 van dat besluit wijst de standaard EN 301 549 aan, en een
+document dat bezoekers downloaden valt onder hoofdstuk 10 van die norm. Kantoorbestanden die vóór
+23 september 2018 zijn gepubliceerd, zijn uitgezonderd, tenzij ze nodig zijn voor een actief
+administratief proces. Lever je als bedrijf een digitaal product of een dienst aan consumenten, dan
+geldt de European Accessibility Act, en hangt het van dat product of die dienst af of je PDF
+meegaat. Documentatie die je bij een product meelevert, moet volgens EN 301 549 in een toegankelijk
+formaat bestaan.
+
+Welke fouten er in een document zitten, zie je in de gratis controle op
 [pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). Repareren draait in
-besloten test. Je document komt op onze eigen server in Duitsland en gaat daar weer af zodra de
-controle klaar is.
+besloten test. Of een document klaar is om te publiceren, blijkt uit een onderzoek door een auditor.
+Onderaan deze pagina staat wat dat inhoudt.
 
 ## Wat de controle je laat zien
 
