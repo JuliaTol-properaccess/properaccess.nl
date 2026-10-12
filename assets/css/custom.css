@@ -18276,6 +18276,39 @@ html.dark .contrast-voorbeeld__swatch {
   margin-bottom: 0;
 }
 
+/* Links op deze pagina hadden geen enkele opmaak: zelfde kleur als de lopende tekst
+   (rgb(75, 85, 99)) en geen onderstreping, gemeten op 12 oktober 2026 in de hero, in
+   "wat we van je bewaren" en in de wachtlijst. Zelfde behandeling als in
+   section-card__content. */
+.pdfann-hero__intro a,
+.pdfann-blok__tekst a,
+.pdfann-form__uitleg a {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pdfann-hero__intro a:hover,
+.pdfann-blok__tekst a:hover,
+.pdfann-form__uitleg a:hover {
+  color: #004050;
+}
+
+/* Op de donkere ondergrond (#1F2937) is de merkkleur te donker. */
+.pdfann-blok--donker .pdfann-blok__tekst a,
+html.dark .pdfann-hero__intro a,
+html.dark .pdfann-blok__tekst a,
+html.dark .pdfann-form__uitleg a {
+  color: #e8a0ba;
+}
+
+.pdfann-blok--donker .pdfann-blok__tekst a:hover,
+html.dark .pdfann-hero__intro a:hover,
+html.dark .pdfann-blok__tekst a:hover,
+html.dark .pdfann-form__uitleg a:hover {
+  color: #fff;
+}
+
 /* ─── De secties uit de content ─── */
 
 .pdfann-blok {
