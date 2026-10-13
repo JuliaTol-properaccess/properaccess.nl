@@ -88,7 +88,7 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 
 ## Eigen software
 - Monitoring: ons eigen dashboard, zie de dienst hierboven. https://www.properaccess.nl/automatische-monitoring/
-- WCAG Radar: checkt kleurcontrast, koppenstructuur, alt-teksten, linkteksten, tabellen en tekstafstand op elke pagina, in je eigen browser. 28 van de 45 checks zijn gratis en vragen geen account. https://www.properaccess.nl/tools/wcag-radar/
+- WCAG Radar: checkt kleurcontrast, koppenstructuur, alt-teksten, linkteksten, tabellen en tekstafstand op elke pagina, in je eigen browser. 29 van de 50 checks zijn gratis en vragen geen account. https://www.properaccess.nl/tools/wcag-radar/
 - PDF-checker: controleert gratis welke toegankelijkheidsfouten in een PDF zitten, zonder account. Het bestand gaat weg zodra de controle klaar is. https://www.properaccess.nl/tools/pdf-checker/
 - Alle tools: https://www.properaccess.nl/tools/
 

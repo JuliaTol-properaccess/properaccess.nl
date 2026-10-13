@@ -241,12 +241,12 @@ URL: {{ .Permalink }}
 Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengekomen.
 
 - {{ $toolsiteNaam }}: {{ $toolsite }}. Onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser. De andere taalversie staat op {{ $toolsiteAnder }}.
-- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet en browserextensie met drie tabbladen voor redactie, design en development. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 28 van de 45 checks. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor.
+- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet en browserextensie met drie tabbladen voor redactie, design en development. Rekent lokaal in je browser, werkt achter een login en op localhost. De gratis versie doet 29 van de 50 checks. Onder elke check zit een link waarmee je de bevinding voorlegt aan een auditor.
 {{- else -}}
 Made and hosted in the EU, built on what we ran into across more than 950 audits.
 
 - {{ $toolsiteNaam }}: {{ $toolsite }}. Our tool site, with the WCAG Radar and a scan that walks up to ten pages of a public address using axe-core in a real browser. The other language version is at {{ $toolsiteAnder }}.
-- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet and browser extension with three tabs, one each for editors, designers and developers. Everything runs locally in your browser, including behind a login and on localhost. The free version covers 28 of the 45 checks. Under every check is a link that puts the finding to an auditor.
+- WCAG Radar: {{ $toolsite }}/wcag-radar. Bookmarklet and browser extension with three tabs, one each for editors, designers and developers. Everything runs locally in your browser, including behind a login and on localhost. The free version covers 29 of the 50 checks. Under every check is a link that puts the finding to an auditor.
 {{- end }}
 
 ## {{ $t.freeTools }}
