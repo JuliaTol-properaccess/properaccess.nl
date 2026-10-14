@@ -1,6 +1,6 @@
 ---
-title: "Making a PDF accessible: checking and repairing"
-description: "Check your PDF for accessibility problems, free and without an account. Repairing the code layer sits in the same tool and is in closed testing."
+title: "The PDF checker: what it checks and what it does not"
+description: "Our PDF checker lives at pdf-toegankelijk.nl: free, no account needed. Read what the check tells you, what it does not, and when you need an auditor."
 layout: "pdf-tool-aankondiging"
 weight: 10
 doelgroep:
@@ -8,12 +8,14 @@ doelgroep:
   - "Web developers"
 ---
 
-A check tells you what is wrong in your PDF. Fixing it still has to happen, and that is what this
-tool is for. The tag structure goes in, the title and the language come with it, and you see per
-element what is left after that. The check is public, free and without an account, at
-[pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). Repairing is in closed
-testing. Your document goes to our own server in Germany and leaves it as soon as the check is done.
-The result page is in Dutch for now.
+Our PDF checker has had its own site since 7 September 2026:
+[pdf-toegankelijk.nl](https://pdf-toegankelijk.nl/controleren). You can check a PDF there for free,
+without an account. The result page is in Dutch for now. Repairing sits in the same tool and is still
+in closed testing. Your document goes to our own server in Germany and leaves it as soon as the check
+is done.
+
+Want to know whether your PDF has to be accessible in the Netherlands, or have an auditor look at
+it? [Get in touch](/en/contact/).
 
 ## What the check shows you
 
@@ -65,8 +67,6 @@ The full list comes with it: per element what is wrong, which page it is on, and
 lift into an audit report. That is the same arrangement we use in our audit reports, so everything
 wrong with one element sits together in one place. That list downloads as CSV and as JSON. The free
 check gives you the totals and not that list.
-
-Want to take part in the test? Leave your address and you get one message.
 
 ## What the tool does not do
 
