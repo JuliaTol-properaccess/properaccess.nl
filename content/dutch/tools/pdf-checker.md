@@ -69,8 +69,6 @@ die je in een auditrapport kunt overnemen. Dat is dezelfde indeling als in onze 
 alles wat er aan één element mankeert staat op één plek bij elkaar. Die lijst is te downloaden als
 CSV en als JSON. In de gratis controle staat de optelling en niet die lijst.
 
-Wil je meedoen aan de test, laat dan je adres achter. Je krijgt één bericht.
-
 ## Wat de tool niet doet
 
 Een gerepareerde codelaag is geen toegankelijk document. Of de leesorde klopt, of een tabelkop op de
