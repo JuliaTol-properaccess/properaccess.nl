@@ -1,6 +1,6 @@
 ---
-title: "PDF toegankelijk maken: controleren en repareren"
-description: "Controleer je PDF op toegankelijkheidsfouten, gratis en zonder account. De codelaag laten repareren zit in dezelfde tool en draait nu in besloten test."
+title: "De PDF-checker: wat hij controleert en wat niet"
+description: "De PDF-checker staat op pdf-toegankelijk.nl: gratis controleren, zonder account. Lees wat de controle wel en niet zegt, en wanneer je een auditor nodig hebt."
 layout: "pdf-tool-aankondiging"
 weight: 10
 doelgroep:
@@ -8,12 +8,13 @@ doelgroep:
   - "Webdeveloper"
 ---
 
-Een controle zegt wat er mis is in je PDF. Oplossen moet daarna nog gebeuren, en daar is deze tool
-voor: de tagstructuur komt erin, de titel en de taal komen erbij, en je ziet per element wat er dan
-nog over is. De controle is openbaar, gratis en zonder account, op
-[pdf-toegankelijk.nl/controleren](https://pdf-toegankelijk.nl/controleren). Repareren draait in
-besloten test. Je document komt op onze eigen server in Duitsland en gaat daar weer af zodra de
-controle klaar is.
+De PDF-checker staat sinds 7 september 2026 op een eigen site:
+[pdf-toegankelijk.nl](https://pdf-toegankelijk.nl/controleren). Je controleert er een PDF gratis en
+zonder account. Repareren zit in dezelfde tool en draait nog in besloten test. Je document komt op
+onze eigen server in Duitsland en gaat daar weer af zodra de controle klaar is.
+
+Wil je weten of jouw PDF toegankelijk moet zijn, of wil je hem door een auditor laten nakijken?
+[Neem contact met ons op](/contact/).
 
 ## Wat de controle je laat zien
 
