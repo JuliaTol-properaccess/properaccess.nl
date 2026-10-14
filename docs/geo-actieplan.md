@@ -645,6 +645,13 @@ Google.
   De oude WordPress-URL's die een 404 geven, zijn een los probleem en staan nu als
   importeerbare lijst in `docs/redirects/`; de uitleg staat in
   [docs/oude-wordpress-urls.md](oude-wordpress-urls.md).
+- **Stand 5 oktober 2026: groep A staat in de importeerbare lijst, groep B met opzet niet.**
+  Niet als losse CSV, maar als onderdeel van alle 136 aliassen die geen 301 hadden. Zes van de
+  136 zijn groep A, 16 zijn de toolstubs van groep B en die blijven er dus uit. De meting en
+  de reden staan in [docs/oude-wordpress-urls.md](oude-wordpress-urls.md), onder
+  "Aliaspagina's zonder 301". De aanleiding was een nieuwe waarneming: een aliaspagina wordt
+  niet alleen door Google geïndexeerd maar ook door AI-assistenten opgehaald en geciteerd.
+  Julia moet de lijst nog importeren, dus de 301's zijn er nog niet.
 
 ### Stap 2: de functienamen hun eigen pagina geven. Begonnen 17 september 2026
 

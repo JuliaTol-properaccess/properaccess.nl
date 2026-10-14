@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar: contrast, koppen en alt-teksten checken in je browser"
 meta_title: "Kleurcontrast, koppen en alt-teksten checken in je browser | Proper Access"
-description: "Check kleurcontrast, koppenstructuur, alt-teksten, linkteksten, tabellen en tekstafstand op elke pagina, in je eigen browser. 28 van de 45 checks zijn gratis en vragen geen account."
+description: "Check kleurcontrast, koppen, alt-teksten, linkteksten en tekstafstand op elke pagina in je browser. 28 van de 45 checks zijn gratis, zonder account."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
 bookmark_naam: "WCAG Radar"
@@ -299,9 +299,9 @@ tabs:
         wcag: "/blog/sc-3-3-1-wat-betekent-foutidentificatie/"
         onderwerp: "foutmeldingen"
       - titel: "Plakken geblokkeerd"
-        uitleg: "De Radar markeert elementen die plakken, kopiëren of slepen blokkeren via inline code (onpaste, oncopy, oncut, ondrop). Geblokkeerd plakken dwingt overtypen af en is een drempel, bijvoorbeeld bij wachtwoorden en e-mailbevestigingen. Blokkades via scripts kan de Radar niet zien; test het plakken ook zelf."
-        wcag: "/blog/sc-3-3-7-wat-betekent-redundante-invoer/"
-        onderwerp: "overtollige invoer"
+        uitleg: "De Radar markeert elementen die plakken, kopiëren of slepen blokkeren via inline code (onpaste, oncopy, oncut, ondrop). In een inlogstap is dat een fout op 3.3.8: plakken blokkeren dwingt overtypen af en haalt de hulp van een wachtwoordmanager weg, tenzij er een andere manier van inloggen is. Buiten een inlogstap, bijvoorbeeld bij een e-mailbevestiging, is het een drempel. Daar is het pas een bevinding op 3.3.7 als de bezoeker dezelfde informatie opnieuw moet invullen en de site geen vooringevulde waarde geeft. Blokkades via scripts kan de Radar niet zien; test het plakken ook zelf."
+        wcag: "/blog/sc-3-3-8-wat-betekent-toegankelijke-authenticatie/"
+        onderwerp: "toegankelijke authenticatie"
         pro: true
       - titel: "Focus zichtbaar maken"
         uitleg: "De Radar forceert een duidelijke focusrand op elk element. Tab door de pagina om te zien of de focus altijd zichtbaar is en logisch verspringt."

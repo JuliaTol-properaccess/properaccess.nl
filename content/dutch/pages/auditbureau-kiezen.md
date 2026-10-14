@@ -14,6 +14,21 @@ hero_meta:
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
     value: "september 2026"
+faqs:
+  - question: "Moet ik het onderzoek door een extern bureau laten doen?"
+    answer: "Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
+  - question: "Toetsen jullie aan WCAG 2.1 of aan WCAG 2.2?"
+    answer: "Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm onder EN 301 549 staat op dit moment op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op één punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1."
+  - question: "Voldoet mijn website aan de wet zodra het rapport klaar is?"
+    answer: "Nee. Het rapport vertelt je waar je staat en wat er moet gebeuren. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier om te weten wat daarvoor nodig is, en het oplossen komt daarna."
+  - question: "Val ik onder het BDTO of onder de EAA?"
+    answer: "Dat hangt af van wat je organisatie is en niet van wat je aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, commerciële bedrijven onder de European Accessibility Act. Voor je eigen website of app geldt het ene of het andere, nooit allebei. Let op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist."
+  - question: "Hoelang duurt een onderzoek?"
+    answer: "Een mini-audit levert binnen een week resultaat op. Een volledig onderzoek duurt gewoonlijk drie tot vijf weken, inclusief de interne review door de tweede auditor."
+  - question: "Kan ik na het rapport vragen blijven stellen?"
+    answer: "Ja. Zodra je een rapport van ons hebt, loopt het contact rechtstreeks met een senior auditor. Vragen gaan via de strippenkaart: één vraag over één onderwerp kost één strip, en vervolgvragen in dezelfde draad kosten niets extra. De strip gaat er af op het moment dat wij antwoorden, dus een vraag die buiten scope valt kost je niets. Een strip kost € 20 tot € 25, afhankelijk van de bundel, en een bundel is twaalf maanden geldig. Ben je nog geen klant, dan spreek je eerst onze relatiebeheerder."
+  - question: "Wat als jullie een systeem niet kennen?"
+    answer: "We kennen er inmiddels zo’n 150, van maatwerkframeworks tot standaard-CMS’en met modules en plug-ins eroverheen. Kom je met iets dat we nog niet zijn tegengekomen, dan verandert dat weinig aan het onderzoek: we toetsen wat de bezoeker in de browser krijgt. Bij het oplossen denken we mee over wat er binnen de grenzen van jouw systeem mogelijk is."
 ---
 
 {{< section-full >}}
@@ -57,7 +72,9 @@ emulator laat je niet zien wat een gebruiker werkelijk hoort.
 {{< section-card title="2. Volgt het onderzoek WCAG-EM?" >}}
 
 Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register)
-accepteert geen onderzoek dat niet volgens WCAG-EM is uitgevoerd. Dat geldt voor élk onderzoek.
+vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt:
+WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B. Er is nog geen breed
+gedragen alternatief voor WCAG-EM, dus vraag een bureau wel hoe het de methode toepast.
 
 Val je onder de EAA en niet onder het BDTO, dan heb je geen verklaring in het Register nodig. De
 methode is dan nog steeds de reden dat een steekproef representatief is voor je hele site.
@@ -149,11 +166,12 @@ overtreden.
 
 {{< /section-highlight >}}
 
-{{< section-full title="WCAG-EM: de vijf stappen waar het Register om vraagt" bg="light" >}}
+{{< section-full title="WCAG-EM: de vijf stappen van de methode" bg="light" >}}
 
 WCAG-EM staat voor Website Accessibility Conformance Evaluation Methodology 1.0, een Working
-Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het Register vraagt er
-wel om, en van de ACM weten we uit de eerste hand dat ze er zelf mee werkt.
+Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het model van de
+verklaring noemt de methode wel bij naam, met "of gelijkwaardig" erachter, en van de ACM weten we
+uit de eerste hand dat ze er zelf mee werkt.
 
 <img src="/images/pages/auditbureau-wcag-em-stappen.svg" alt="" loading="lazy" style="width:100%;height:auto;margin:1.5rem 0;" />
 

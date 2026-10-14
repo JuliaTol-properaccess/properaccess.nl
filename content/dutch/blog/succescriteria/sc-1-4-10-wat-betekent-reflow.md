@@ -7,7 +7,7 @@ categories:
 tags:
   - "1-4-10"
   - "zoom"
-description: "WCAG 1.4.10 vraagt dat content zich schikt naar een smal scherm of 400% zoom, zonder horizontaal scrollen. Praktische uitleg met voorbeelden voor design, webredactie en developers."
+description: "WCAG 1.4.10 vraagt dat content zich schikt naar een smal scherm of 400% zoom, zonder horizontaal scrollen."
 keywords:
   - WCAG SC 1.4.10
   - reflow

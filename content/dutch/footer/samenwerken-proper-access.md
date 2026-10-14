@@ -6,7 +6,7 @@ slug: "samenwerken-proper-access"
 url: "/samenwerken-proper-access/"
 layout: sectie
 subtitle: "WCAG-audits voor jouw klanten, zonder alles zelf op te zetten"
-description: "Bied je klanten digitale toegankelijkheid zonder zelf alles op te zetten. Wij leveren de audits, jij behoudt de klantrelatie. Aantrekkelijke samenwerking voor webbureaus."
+description: "Bied je klanten digitale toegankelijkheid zonder zelf alles op te zetten. Wij doen de audits, jij houdt de klantrelatie. Voor webbureaus en agencies."
 keywords: "WCAG audit samenwerking, digitale toegankelijkheid voor bureaus, white label toegankelijkheid, webbureau partner, WCAG expertise"
 sectie_layout: true
 hero_meta:

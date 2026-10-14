@@ -47,7 +47,8 @@ gemeten met het controlescript.
 
 **Komt er een regel bij, dan moet de lijst opnieuw worden geïmporteerd.** De regel in de
 repo doet zelf niets. Dat geldt nu voor regel 191, de slug-wijziging van
-`/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/`.
+`/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/`, en voor de regels 192 tot en met
+312 uit "Aliaspagina's zonder 301" hieronder.
 
 De alias in de front matter van `content/dutch/authors/julia.md` kan blijven staan. Zolang
 de 301 er niet is, is die doorverwijspagina het enige wat de bezoeker nog bij de juiste
@@ -175,11 +176,87 @@ soorten:
 - **Of deze URL's nog in Google staan.** Dat staat in Search Console en daar kom ik niet
   bij. Wat hier staat is welke URL's bestonden en nu een 404 geven. Nata zag
   `/author/julia_a11y/` zelf in de zoekresultaten staan.
-- **Groep A uit het geo-actieplan.** Dat zijn zes aliaspagina's die beter ranken dan de
-  pagina waar ze naar wijzen. Ze stonden op 17 september 2026 klaar als CSV op de computer
-  van Julia en geven nog steeds 200, dus die 301's zijn er nooit gekomen. Ze staan niet in
-  deze lijst, want het is een ander probleem: daar bestaat de pagina nog wel.
+- **Groep A uit het geo-actieplan** stond hier eerst buiten, want daar bestaat de pagina nog
+  wel. Sinds 5 oktober 2026 staan die zes er wel in, samen met de andere aliaspagina's. Zie
+  "Aliaspagina's zonder 301" hieronder.
 - **De Engelse foutpagina.** `/en/`-paden die niet bestaan, krijgen nu de Nederlandse
   foutpagina. GitHub Pages kent maar één `404.html` en dat is die in de wortel. Dat is op
   te lossen door de foutpagina zelf naar het pad te laten kijken, maar dat is een
   wijziging die bezoekers zien en die dus eerst langs Gerard moet.
+
+## Aliaspagina's zonder 301
+
+Uitgezocht op 5 oktober 2026, naar aanleiding van een bevinding van Nata: in haar meting
+van AI-antwoorden haalt `/en/proper_access_in_english/` in zes dagen 8 ophalingen en 12
+citaties, en die URL bestaat alleen nog als `aliases`-regel in `content/english/about-us.md`.
+
+### Wat een alias wel en niet doet
+
+Een `aliases`-regel in de front matter levert in Hugo een eigen HTML-pagina op met een
+meta-refresh en een canonical naar de echte pagina. Die pagina geeft status 200. Gemeten op
+`https://www.properaccess.nl/en/proper_access_in_english/`: 862 byte, met de titel en de
+description van `/en/about-us/`, een `<h1>This page has moved</h1>` en verder niets.
+
+Voor een bezoeker werkt dat. Voor een zoekmachine of een AI-crawler is het een eigen URL met
+status 200, die opgehaald en geciteerd kan worden. Dat is precies wat er gebeurt. Hetzelfde
+patroon stond al in `docs/geo-actieplan.md` als groep A: zes aliaspagina's die in Search
+Console beter ranken dan de pagina waar ze naar wijzen.
+
+### De meting
+
+`scripts/aliassen_zonder_301.py --live` leest alle `aliases`-regels uit `content/`, vergelijkt
+ze met de 301-lijst en haalt elke alias live op. Uitvoer van 5 oktober 2026:
+
+- 139 aliassen in `content/`.
+- 3 hadden al een 301: `/author/julia_a11y/`, `/team/` en
+  `/blog/sc-3-3-7-wat-betekent-toegankelijke-authenticatie/`.
+- 136 hadden er geen. Alle 136 gaven status 200 met een meta-refresh, en alle 136 doelen
+  gaven 200.
+
+Het doel komt uit de meta-refresh van de aliaspagina zelf en niet uit het bestandspad. Dat is
+nodig, want de secties in `config/_default` bepalen welke mapnamen in de URL komen: bij vijf
+aliassen week de afleiding uit het pad af van de echte URL, bijvoorbeeld
+`content/dutch/diensten/hercontrole.md`, dat op `/hercontrole/` staat en niet op
+`/diensten/hercontrole/`.
+
+### Wat er is toegevoegd: 121 regels
+
+De lijst gaat van 191 naar 312 regels.
+
+- **120 aliassen krijgen een 301.** Alle 136 minus de 16 toolstubs hieronder.
+- **1 regel voor een pad zonder slash**: `/services-digitale-toegankelijkheid` geeft 404,
+  terwijl `/services-digitale-toegankelijkheid/` sinds de import een 301 geeft. Cloudflare
+  matcht de bron letterlijk en GitHub Pages stuurt een onbekend pad zonder slash niet door
+  naar de versie met slash. Dat pad is deze week twee keer opgevraagd volgens de
+  bezoekmeting. De andere 104 paden uit `404-zonder-301.txt` hebben dit ook, maar zijn niet
+  opgevraagd; de lijst daarvoor verdubbelen kost meer dan het oplevert.
+
+De `aliases`-regels blijven staan. Zolang de lijst niet opnieuw is geïmporteerd, is de
+aliaspagina het enige wat de bezoeker bij de juiste pagina brengt. Staat de 301 er wel, dan
+komt Cloudflare eerst en wordt de aliaspagina niet meer opgevraagd.
+
+### De 16 toolstubs krijgen geen 301
+
+Dit is geen vergissing. Julia heeft op 17 september 2026 besloten dat de functienamen geen
+losse pagina's krijgen en dat de Radar-pagina zelf op die namen mikt (`docs/geo-actieplan.md`,
+groep B). Die stubs stonden in Search Console samen op 2.207 vertoningen en 52 klikken, met
+een hogere CTR dan de pagina waar ze naar wijzen. Een 301 haalt ze uit de index en dan
+verdwijnen die klikken mogelijk mee.
+
+Het gaat om tien stubs onder `/tools/` die naar `/tools/wcag-radar/` wijzen
+(`toegankelijkheids-lens` en de vier varianten, `alt-tekst-checker`,
+`koppenstructuur-checker`, `link-checker`, `tabel-checker`, `kleurcontrast-checker`,
+`tekstafstand-check`) en zes onder `/en/tools/` (`accessibility-lens`, `alt-text-checker`,
+`heading-checker`, `heading-structure-checker`, `link-checker`, `table-checker`).
+
+Komt die beslissing terug, dan zet `scripts/aliassen_zonder_301.py` ze er in het juiste
+formaat uit.
+
+### Wat Julia doet
+
+1. Importeer `docs/redirects/cloudflare-bulk-redirects.csv` opnieuw in de Bulk Redirect List.
+   De regels in de repo doen zelf niets.
+2. Kijk of 312 regels binnen het abonnement passen. Bij de vorige import pasten 190 regels;
+   wat het maximum is, staat in het dashboard en is hier niet te zien.
+3. Controleer daarna met `python3 scripts/controleer_redirect_lijst.py`. Nu: 312 regels, 457
+   URL's opgehaald, geen fouten, 190 bronnen geven al een 301.

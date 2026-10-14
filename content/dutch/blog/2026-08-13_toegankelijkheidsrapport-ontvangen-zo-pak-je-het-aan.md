@@ -15,6 +15,7 @@ keywords:
   - audit rapport toegankelijkheid
   - wcag bevindingen prioriteren
   - toegankelijkheid verbeteren
+translationKey: "goed-toegankelijkheidsrapport"
 ---
 
 ## Waaraan herken je een goed toegankelijkheidsrapport?

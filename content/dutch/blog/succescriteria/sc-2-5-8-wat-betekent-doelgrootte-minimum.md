@@ -7,7 +7,7 @@ categories:
 tags:
   - "2-5-8"
   - "doelgrootte"
-description: "WCAG 2.5.8 eist dat klikbare doelen minstens 24 bij 24 pixels zijn, of genoeg ruimte om zich heen hebben. Praktische uitleg met voorbeelden voor design, webredactie en developers."
+description: "WCAG 2.5.8 eist dat klikbare doelen minstens 24 bij 24 pixels zijn, of genoeg ruimte om zich heen hebben."
 keywords:
   - WCAG SC 2.5.8
   - doelgrootte minimum

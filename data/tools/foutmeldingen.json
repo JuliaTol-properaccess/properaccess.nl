@@ -1,0 +1,32 @@
+{
+  "nl": {
+    "intro": "Goede foutmeldingen helpen gebruikers om fouten in formulieren te begrijpen en te herstellen. Dit naslagwerk toont per veldtype voorbeelden van duidelijke foutmeldingen, gebaseerd op <a href=\"/blog/sc-3-3-1-wat-betekent-foutidentificatie/\">SC&nbsp;3.3.1 Foutidentificatie</a> en <a href=\"/blog/sc-3-3-3-wat-betekent-foutsuggestie/\">SC&nbsp;3.3.3 Foutsuggestie</a>.",
+    "searchLabel": "Zoek op veldtype",
+    "searchPlaceholder": "Zoek bijv. \"e-mail\", \"wachtwoord\", \"datum\"...",
+    "filterAriaLabel": "Filter op categorie",
+    "resultsAriaLabel": "Resultaten",
+    "principlesTitle": "De regels volgens WCAG",
+    "principle331dt": "<strong>SC 3.3.1</strong> Foutidentificatie <span class=\"tool-fout__level\">Niveau A</span>",
+    "principle331dd": "Als er een invoerfout wordt ontdekt, wordt het onderdeel met de fout aan de gebruiker getoond en wordt de fout in tekst beschreven.",
+    "principle333dt": "<strong>SC 3.3.3</strong> Foutsuggestie <span class=\"tool-fout__level\">Niveau AA</span>",
+    "principle333dd": "Als er een invoerfout wordt ontdekt en suggesties voor verbetering bekend zijn, worden deze aan de gebruiker getoond — tenzij dit de beveiliging of het doel van de inhoud in gevaar brengt.",
+    "ctaLine1": "Wil je weten of de foutmeldingen op jouw website voldoen aan de WCAG-richtlijnen?",
+    "ctaLine2": "<a href=\"/contact/\">Vraag een audit aan</a> of bel <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
+    "langLabel": "Taal: Nederlands. Schakel naar Engels."
+  },
+  "en": {
+    "intro": "Good error messages help users understand and fix form errors. This reference shows examples of clear error messages per field type, based on <a href=\"/en/blog/wcag-3-3-1-error-identification/\">SC&nbsp;3.3.1 Error Identification</a> and SC&nbsp;3.3.3 Error Suggestion.",
+    "searchLabel": "Search by field type",
+    "searchPlaceholder": "Search e.g. \"email\", \"password\", \"date\"...",
+    "filterAriaLabel": "Filter by category",
+    "resultsAriaLabel": "Results",
+    "principlesTitle": "The rules according to WCAG",
+    "principle331dt": "<strong>SC 3.3.1</strong> Error Identification <span class=\"tool-fout__level\">Level A</span>",
+    "principle331dd": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+    "principle333dt": "<strong>SC 3.3.3</strong> Error Suggestion <span class=\"tool-fout__level\">Level AA</span>",
+    "principle333dd": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user — unless it would jeopardize the security or purpose of the content.",
+    "ctaLine1": "Want to know if the error messages on your website comply with WCAG guidelines?",
+    "ctaLine2": "<a href=\"/en/contact/\">Request an audit</a> or call <a href=\"tel:+31855055890\">+31&nbsp;85&nbsp;505&nbsp;5890</a>.",
+    "langLabel": "Language: English. Switch to Dutch."
+  }
+}

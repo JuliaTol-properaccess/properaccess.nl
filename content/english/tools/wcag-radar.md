@@ -282,7 +282,7 @@ tabs:
         wcag: "/en/blog/wcag-3-3-1-error-identification/"
         onderwerp: "error messages"
       - titel: "Paste blocked"
-        uitleg: "Marks elements that block pasting, copying or dragging via inline code (onpaste, oncopy, oncut, ondrop). Blocked pasting forces retyping and is a barrier, for example with passwords and email confirmations. Blocks added through scripts are invisible to the Radar; also test pasting yourself."
+        uitleg: "Marks elements that block pasting, copying or dragging via inline code (onpaste, oncopy, oncut, ondrop). In an authentication step this fails SC 3.3.8: blocking paste forces retyping and takes away the help of a password manager, unless another way to sign in is available. Outside an authentication step, for example on an email confirmation field, it is a barrier. There it is only an SC 3.3.7 finding when the visitor has to enter the same information again and the site offers no pre-filled value. Blocks added through scripts are invisible to the Radar; also test pasting yourself."
         wcag: "/en/blog/wcag-3-3-8-accessible-authentication/"
         onderwerp: "accessible authentication"
         pro: true

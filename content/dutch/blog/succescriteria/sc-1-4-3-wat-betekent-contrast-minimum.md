@@ -8,6 +8,7 @@ tags:
   - "1-4-3"
   - "kleur"
 description: "WCAG 1.4.3 vraagt minimaal 4,5:1 contrast tussen tekst en achtergrond. Lees wat de regels zijn, welke fouten wij het vaakst zien en test je kleuren met onze gratis tools."
+meta_description: "WCAG 1.4.3 vraagt minimaal 4,5:1 contrast tussen tekst en achtergrond. Wat de regels zijn, welke fouten wij het vaakst zien en hoe je het test."
 keywords:
   - kleurcontrast WCAG
   - WCAG SC 1.4.3

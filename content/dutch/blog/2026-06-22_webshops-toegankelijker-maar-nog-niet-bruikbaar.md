@@ -13,6 +13,7 @@ tags:
   - "gebruikerstest"
   - "acm"
 description: "Een jaar na de EAA worden webshops langzaam toegankelijker, maar veel bezoekers met een beperking kunnen nog steeds niet zelfstandig winkelen. Waarom technisch voldoen niet hetzelfde is als kunnen gebruiken."
+meta_description: "Een jaar na de EAA zijn webshops toegankelijker, maar niet bruikbaar voor wie een beperking heeft. Waarom voldoen niet hetzelfde is als kunnen gebruiken."
 keywords:
   - "webshop toegankelijkheid slechtzienden"
   - "eaa webshop onderzoek"

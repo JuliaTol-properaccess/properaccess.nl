@@ -1,7 +1,7 @@
 ---
 title: "Voor wie we werken"
 meta_title: "Voor welke sectoren doet Proper Access toegankelijkheidsonderzoek? | Proper Access"
-description: "Overheid, cultuur, webshops, financiële instellingen, onderwijs en digital agencies. Welke wet voor je geldt hangt af van wat je organisatie is, en dat bepaalt wat je moet aantonen."
+description: "Overheid, cultuur, webshops, financiële instellingen, onderwijs en digital agencies. Wat je organisatie is bepaalt welke wet voor je geldt."
 date: 2025-07-12
 lastmod: 2026-09-20
 slug: "sectoren"

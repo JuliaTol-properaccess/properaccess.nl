@@ -7,7 +7,7 @@ date: 2026-03-07
 slug: "onderwijs-digitale-toegankelijkheid"
 url: "/onderwijs-digitale-toegankelijkheid/"
 layout: "agency"
-description: "Kunnen al je studenten bij de lesstof? Proper Access audits digitale leeromgevingen, LMS-platformen en e-learning modules op toegankelijkheid. 950+ audits uitgevoerd."
+description: "Kunnen al je studenten bij de lesstof? We testen digitale leeromgevingen, LMS-platformen en e-learningmodules op WCAG. Meer dan 950 audits sinds 2019."
 keywords:
   - digitale toegankelijkheid onderwijs
   - WCAG audit leeromgeving

@@ -15,6 +15,7 @@ keywords:
   - accessibility audit report
   - prioritise wcag findings
   - improve accessibility
+translationKey: "goed-toegankelijkheidsrapport"
 ---
 
 ## What makes a good accessibility report?

@@ -11,6 +11,7 @@ tags:
   - "accessibility tree"
   - "schermlezer"
 description: "Met WebMCP biedt een website zijn functies aan als tools voor AI-agents. In de W3C-groep liep zes maanden lang een discussie over de vraag of dat de accessibility tree overbodig maakt. Dit is wat er is besloten, en wat het betekent voor je eigen website."
+meta_description: "Met WebMCP biedt een website zijn functies aan als tools voor AI-agents. Maakt dat de accessibility tree overbodig? Dit besloot de W3C-groep."
 keywords:
   - WebMCP
   - WebMCP toegankelijkheid

@@ -7,7 +7,7 @@ weight: 5
 date: 2026-05-30
 slug: "techniekaudit"
 url: "/techniekaudit/"
-description: "Een techniek- of systeemaudit toetst de bouwstenen van een product op WCAG. Voor softwareleveranciers, productteams en SaaS-partijen die hun klanten een toegankelijk platform willen leveren."
+description: "We toetsen de bouwstenen van je product op WCAG en rapporteren per element, niet per succescriterium. Voor softwareleveranciers en productteams."
 tldr: |
   Een techniek- of systeemaudit toetst de bouwstenen van je product op WCAG 2.2: componenten, code en interactiepatronen, los van de content die er straks in komt. We dekken 48 van de 55 succescriteria; de zeven over multimedia en content vallen onder een contentaudit. Je krijgt een rapport per element dat je intern gebruikt om je product te verbeteren en dat je klanten kunnen aanhalen voor hun eigen toegankelijkheidsverklaring. Bedoeld voor softwareleveranciers, productteams en SaaS-partijen.
 keywords:

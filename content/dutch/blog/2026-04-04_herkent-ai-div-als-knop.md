@@ -11,6 +11,7 @@ tags:
   - "button"
   - "Playwright"
 description: "Kan AI een klikbare div herkennen op een live website? Ik testte het met Claude Code en Playwright. Dit zijn de resultaten, de beperkingen en de tools die je nodig hebt."
+meta_description: "Kan AI een klikbare div herkennen op een live website? Ik testte het met Claude Code en Playwright. De resultaten en de grenzen van die test."
 keywords:
   - AI toegankelijkheid testen
   - div onclick

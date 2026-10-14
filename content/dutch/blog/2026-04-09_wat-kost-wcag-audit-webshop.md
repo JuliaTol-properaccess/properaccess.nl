@@ -22,7 +22,7 @@ keywords:
   - "WCAG audit webshop"
   - "EAA audit kosten"
 image: "/images/blog/webshop-wireframe-eaa.svg"
-meta_description: "Wat kost een WCAG-audit voor een webshop in 2026? Een overzicht van prijsindicaties, variabelen en wat je er precies voor krijgt. Geschreven door een senior auditor."
+meta_description: "Wat kost een WCAG-audit voor een webshop in 2026? Prijsindicaties, wat de prijs bepaalt en wat je ervoor krijgt. Van een senior auditor."
 ---
 
 Dit is een vraag die bijna elke webshop-eigenaar mij stelt in het eerste gesprek: _wat gaat dit me kosten?_ En het is een vraag die bijna geen auditbureau beantwoordt op zijn site. Je krijgt zinnen als "neem contact op voor een offerte" of "afhankelijk van uw situatie". Soms krijg je achteraf een offerte van € 8.000 voor iets waar een ander bureau € 2.500 voor rekent, en je hebt geen idee hoe dat verschil ontstaat.

@@ -5,6 +5,7 @@ translationKey: "sc-1-1-1"
 categories:
   - "wcag-uitgelegd"
 description: "WCAG 1.1.1 vraagt een tekstalternatief voor elke informatieve afbeelding, video en elk icoon. Lees hoe je als webredacteur goede alt-teksten schrijft en zelf controleert."
+meta_description: "WCAG 1.1.1 vraagt een tekstalternatief voor elke informatieve afbeelding, video en elk icoon. Zo schrijf je goede alt-teksten en controleer je ze zelf."
 keywords:
   - WCAG 1.1.1
   - WCAG niet-tekstuele content

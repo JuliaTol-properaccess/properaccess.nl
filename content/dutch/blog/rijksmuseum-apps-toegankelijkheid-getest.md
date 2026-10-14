@@ -12,6 +12,7 @@ tags:
   - "rijksmuseum"
   - "mobiele apps"
 description: "In december 2025 testten we de iOS- en Android-app van het Rijksmuseum op toegankelijkheid. Met speurtochten, audiotours en interactieve kaarten waren het de meest complexe en leukste audits van het jaar."
+meta_description: "In december 2025 testten we de iOS- en Android-app van het Rijksmuseum. Speurtochten, audiotours en kaarten maakten dit onze complexste audit van 2025."
 keywords:
   - rijksmuseum app toegankelijkheid
   - app toegankelijkheidsaudit

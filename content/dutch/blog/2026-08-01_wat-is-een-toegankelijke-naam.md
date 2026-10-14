@@ -12,6 +12,7 @@ tags:
   - "webredactie"
   - "webdeveloper"
 description: "De toegankelijke naam is de tekst die voorleessoftware bij een knop, link of veld uitspreekt. Wat hij moet zeggen, hoe een element eraan komt en hoe je hem zelf bekijkt."
+meta_description: "De toegankelijke naam is de tekst die voorleessoftware bij een knop, link of veld uitspreekt. Wat die moet zeggen, en hoe je hem zelf bekijkt."
 keywords:
   - toegankelijke naam
   - accessible name

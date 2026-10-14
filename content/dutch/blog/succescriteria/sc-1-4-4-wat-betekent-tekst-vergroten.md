@@ -7,7 +7,7 @@ categories:
 tags:
   - "1-4-4"
   - "zoom"
-description: "WCAG 1.4.4 vraagt dat tekst tot 200% te vergroten is zonder verlies van inhoud of functionaliteit. Uitleg van het verschil tussen paginazoom en alleen tekst vergroten, met voorbeelden voor design, webredactie en developers."
+description: "WCAG 1.4.4 vraagt dat tekst tot 200% te vergroten is zonder verlies van inhoud of functionaliteit. Paginazoom en alleen tekst vergroten zijn niet hetzelfde."
 keywords:
   - WCAG SC 1.4.4
   - tekst vergroten

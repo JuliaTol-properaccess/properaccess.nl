@@ -1,0 +1,22 @@
+{
+  "nl": {
+    "intro": "Doorzoek alle WAI-ARIA rollen en attributen uit de <a href=\"https://www.w3.org/TR/wai-aria-1.2/\" rel=\"noopener\" target=\"_blank\">ARIA 1.2-specificatie</a>. Bekijk beschrijvingen, ondersteunde attributen, HTML-equivalenten en praktische codevoorbeelden.",
+    "searchLabel": "Zoek een rol of attribuut",
+    "searchPlaceholder": "Zoek bijv. \"button\", \"aria-label\", \"navigation\"...",
+    "filterAriaLabel": "Filter op categorie",
+    "resultsAriaLabel": "Resultaten",
+    "loadMore": "Toon meer resultaten",
+    "ctaHtml": "ARIA-attributen correct toepassen is essentieel voor de toegankelijkheid van je website. Wil je weten of jouw ARIA-implementatie klopt? <a href=\"/contact/\">Vraag een audit aan</a> of bel <a href=\"tel:+31855055890\">085&nbsp;5055&nbsp;890</a>.",
+    "langLabel": "Taal: Nederlands. Schakel naar Engels."
+  },
+  "en": {
+    "intro": "Search all WAI-ARIA roles and attributes from the <a href=\"https://www.w3.org/TR/wai-aria-1.2/\" rel=\"noopener\" target=\"_blank\">ARIA 1.2 specification</a>. View descriptions, supported attributes, HTML equivalents, and practical code examples.",
+    "searchLabel": "Search for a role or attribute",
+    "searchPlaceholder": "Search e.g. \"button\", \"aria-label\", \"navigation\"...",
+    "filterAriaLabel": "Filter by category",
+    "resultsAriaLabel": "Results",
+    "loadMore": "Show more results",
+    "ctaHtml": "Correctly applying ARIA attributes is essential for your website’s accessibility. Want to know if your ARIA implementation is correct? <a href=\"/en/contact/\">Request an audit</a> or call <a href=\"tel:+31855055890\">+31&nbsp;85&nbsp;505&nbsp;5890</a>.",
+    "langLabel": "Language: English. Switch to Dutch."
+  }
+}
