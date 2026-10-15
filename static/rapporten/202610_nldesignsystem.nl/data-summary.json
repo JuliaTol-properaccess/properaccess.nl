@@ -1,0 +1,22 @@
+{
+  "impact": {
+    "Klein": 2,
+    "Medium": 5,
+    "Groot": 4,
+    "Kritiek": 0,
+    "Advies": 0
+  },
+  "type": {
+    "Content": 0,
+    "Techniek": 11,
+    "Design": 0
+  },
+  "wcag": [
+    "1.4.3",
+    "2.4.3",
+    "2.4.6",
+    "2.4.7",
+    "4.1.2",
+    "4.1.3"
+  ]
+}
