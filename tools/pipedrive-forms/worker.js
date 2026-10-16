@@ -31,6 +31,8 @@ const NOTIFY_EMAIL = "juliatol@properaccess.nl";
 // Sommige formulieren gaan naar een ander intern adres.
 const NOTIFY_OVERRIDES = {
   "offerte-audit": "info@properaccess.nl",
+  "contactformulier": "info@properaccess.nl",
+  "contactformulier-en": "info@properaccess.nl",
 };
 
 // Leesbare labels voor de velden van de offerte-rekentool, in weergavevolgorde.
@@ -435,7 +437,7 @@ async function sendNotificationEmail(env, data) {
     : undefined;
 
   await sendViaAhaSend(env, {
-    to: NOTIFY_EMAIL,
+    to: NOTIFY_OVERRIDES[bron] || NOTIFY_EMAIL,
     subject: subject,
     html: html,
     text: text,
