@@ -15,10 +15,34 @@
 {{- $searchablePages = (where site.Pages "Section" "in" $search_sections) -}}
 {{- end -}}
 
-{{- $totalPagesLength := len $searchablePages -}}
+{{- /* Eerst filteren, dan tellen. De komma tussen twee items hangt aan
+       $totalPagesLength, dus elke pagina die in de lus wordt overgeslagen kan de JSON
+       ongeldig maken: valt de laatste pagina af, dan heeft de pagina ervoor al een komma
+       geschreven en eindigt het bestand op `,]`. Dat gold al voor `ignoreSearch` en zou
+       nu ook gaan gelden voor de noindex hieronder. Met de lijst vooraf gefilterd klopt
+       de telling altijd.
 
-[{{- range $i, $e := $searchablePages -}}
-{{- if not .Params.ignoreSearch -}}
+       Twee redenen om een pagina over te slaan:
+
+       - `ignoreSearch` in de front matter, zoals het hiervoor ook ging;
+       - de noindex die de build zelf op een weekpagina van /nieuws/ zet als die de
+         ondergrenzen van de rubriek niet haalt (zie layouts/partials/nieuws-telling.html).
+         Zo'n pagina houden we uit de zoekmachines en uit de sitemap, en dan hoort hij ook
+         niet in onze eigen zoekfunctie. `noindex` in de front matter houdt een pagina
+         hier niet uit; dat doet alleen `ignoreSearch`, en de telling kan die sleutel niet
+         zetten. */ -}}
+{{- $indexeerbaar := slice -}}
+{{- range $searchablePages -}}
+  {{- if and
+        (not .Params.ignoreSearch)
+        (not (partialCached "nieuws-telling.html" . .RelPermalink).noindex) -}}
+    {{- $indexeerbaar = $indexeerbaar | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $totalPagesLength := len $indexeerbaar -}}
+
+[{{- range $i, $e := $indexeerbaar -}}
 
 {{- $date:= time.Format ":date_long" .PublishDate -}}
 
@@ -35,6 +59,18 @@
 {{- $image:= $.Scratch.Get "image" -}}
 {{- $imageSM:= $.Scratch.Get "imageSM" -}}
 
+{{- /* `.Plain` is de tekst van de pagina en niet de front matter. Op een weekpagina van
+       /nieuws/ staan de berichten in `items:` in de front matter, dus onze eigen duiding
+       rendert wel op de pagina maar valt buiten `.Plain`. Zonder de partial hieronder
+       stond van zo'n pagina alleen de lead in de zoekindex en was de rubriek niet te
+       vinden op de tekst waar hij het van moet hebben. De partial geeft een lege string
+       voor elke pagina zonder `items:`, dus voor de andere secties verandert `content`
+       niet. */ -}}
+{{- $inhoud := $e.Plain -}}
+{{- with partial "nieuws-eigen-tekst.html" $e -}}
+  {{- $inhoud = printf "%s %s" $e.Plain . -}}
+{{- end -}}
+
 {
   "section": {{ .Section | humanize | jsonify }},
   "slug": {{ .RelPermalink | jsonify }},
@@ -46,8 +82,7 @@
   "searchKeyword": {{ .Params.search_keyword | default "" | jsonify }},
   "categories": {{ if .Params.categories }}{{ delimit .Params.categories ", " | jsonify }}{{ else }}""{{ end }},
   "tags": {{ if .Params.tags }}{{ delimit .Params.tags ", " | jsonify }}{{ else }}""{{ end }},
-  "content": {{- $e.Plain | jsonify -}}
+  "content": {{- $inhoud | jsonify -}}
 }{{- if ne $i (sub $totalPagesLength 1) -}},{{- end -}}
 
-{{- end -}}
 {{- end -}}]

@@ -16,11 +16,15 @@
 {{- $zichtbaar := slice -}}
 {{- range $p := . -}}
   {{- $robots := lower (printf "%v" (default "" $p.Params.robots)) -}}
+  {{- /* De laatste voorwaarde is de noindex die de build zelf zet op een weekpagina van
+       /nieuws/ die de ondergrenzen van de rubriek niet haalt. Die staat niet in de front
+       matter; zie layouts/partials/nieuws-telling.html. */ -}}
   {{- if and
         (not $p.Params.sitemap_exclude)
         (not $p.Params.locked)
         (not ($p.Param "noindex"))
-        (not (strings.Contains $robots "noindex")) -}}
+        (not (strings.Contains $robots "noindex"))
+        (not (partialCached "nieuws-telling.html" $p $p.RelPermalink).noindex) -}}
     {{- $zichtbaar = $zichtbaar | append $p -}}
   {{- end -}}
 {{- end -}}

@@ -1,0 +1,24 @@
+{{/* De week die een pagina van de rubriek Nieuws over toegankelijkheid beslaat, als
+     zichtbare regel met machineleesbare datums. Staat zowel op /nieuws/ als op de
+     weekpagina zelf, dus één partial in plaats van twee keer dezelfde code.
+
+     Aanroep: {{ partial "nieuws-weekperiode.html" (dict "pagina" . "klasse" "...") }}
+     week_van is de maandag, week_tot de zaterdag. Staat week_tot er niet, dan toont
+     de regel alleen de eerste dag. */}}
+{{ $pagina := .pagina }}
+{{ $klasse := .klasse }}
+{{ with $pagina.Params.week_van }}
+  {{ $van := time.AsTime . }}
+  {{ $tot := $van }}
+  {{ with $pagina.Params.week_tot }}
+    {{ $tot = time.AsTime . }}
+  {{ end }}
+  <p class="{{ $klasse }}">
+    {{ i18n "nieuws_week_van" }}
+    <time datetime="{{ $van.Format "2006-01-02" }}">{{ time.Format ":date_long" $van }}</time>
+    {{ if ne ($tot.Format "2006-01-02") ($van.Format "2006-01-02") }}
+      {{ i18n "nieuws_tot" }}
+      <time datetime="{{ $tot.Format "2006-01-02" }}">{{ time.Format ":date_long" $tot }}</time>
+    {{ end }}
+  </p>
+{{ end }}

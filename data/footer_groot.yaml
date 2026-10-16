@@ -56,6 +56,7 @@ kolommen:
       - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
       - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
       - { naam: "Onderzoek", url: "/onderzoek/" }
+      - { naam: "Nieuws over toegankelijkheid", url: "/nieuws/" }
       - { naam: "Academy", url: "/academy/" }
       - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
       - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }

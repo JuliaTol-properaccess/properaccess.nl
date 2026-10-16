@@ -68,7 +68,14 @@
 <title>{{ $title }}</title>
 
 <!-- meta noindex -->
-{{ if .Param "noindex" }}
+{{ $noindex := .Param "noindex" }}
+{{ if not $noindex }}
+  {{/* Een weekpagina van /nieuws/ die de ondergrenzen van de rubriek niet haalt, krijgt
+       de noindex van de build mee, zonder noindex in de front matter. Zie
+       layouts/partials/nieuws-telling.html. */}}
+  {{ $noindex = (partialCached "nieuws-telling.html" . .RelPermalink).noindex }}
+{{ end }}
+{{ if $noindex }}
   <meta name="robots" content="noindex,nofollow" />
 {{ end }}
 
@@ -100,6 +107,22 @@
        lang-attribuut vastligt. Nederlandse pagina's zijn de hoofdtaal en krijgen dit
        niet: daar voegt een verwijzing naar zichzelf niets toe. */}}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+
+
+{{/* Feed van de rubriek Nieuws over toegankelijkheid. Alleen op /nieuws/ en op de
+     weekpagina's, want alleen die rubriek heeft een eigen feed. Zonder deze regel is
+     /nieuws/index.xml niet te vinden voor een feedlezer, en staat de link alleen
+     zichtbaar op de overzichtspagina. */}}
+{{ if eq .Section "nieuws" }}
+  {{ $sectie := cond .IsPage .CurrentSection . }}
+  {{ with $sectie.OutputFormats.Get "rss" }}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ $sectie.Title }}"
+      href="{{ .Permalink }}" />
+  {{ end }}
 {{ end }}
 
 
@@ -190,9 +213,9 @@
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $description }}" />
 {{/* Een blogartikel is een artikel en geen site. Alleen losse pagina's onder
-     blog/ en onderzoek/ krijgen `article`; de overzichtspagina's /blog/ en
-     /onderzoek/ blijven `website`. */}}
-{{ $isArtikel := and .IsPage (in (slice "blog" "onderzoek") .Section) }}
+     blog/, onderzoek/ en nieuws/ krijgen `article`; de overzichtspagina's /blog/,
+     /onderzoek/ en /nieuws/ blijven `website`. */}}
+{{ $isArtikel := and .IsPage (in (slice "blog" "onderzoek" "nieuws") .Section) }}
 <meta property="og:type" content="{{ if $isArtikel }}article{{ else }}website{{ end }}" />
 {{ if $isArtikel }}
   <meta

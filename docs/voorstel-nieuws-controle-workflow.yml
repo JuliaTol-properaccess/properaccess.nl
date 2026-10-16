@@ -1,0 +1,118 @@
+# DIT BESTAND HOORT IN .github/workflows/nieuws-controle.yml EN KAN DAAR ALLEEN DOOR
+# JULIA KOMEN.
+#
+# Het agent-token heeft geen workflows-scope, dus GitHub weigert de push:
+#
+#   ! [remote rejected] HEAD -> nieuws-rubriek (refusing to allow a GitHub App to
+#   create or update workflow `.github/workflows/nieuws-controle.yml` without
+#   `workflows` permission)
+#
+# Zolang het bestand hier staat, draait de controle niet op een pull request. Zet hem
+# op zijn plek met:
+#
+#   git mv docs/voorstel-nieuws-controle-workflow.yml .github/workflows/nieuws-controle.yml
+#   git commit -m "Telling van de weekpagina's als controle op een pull request"
+#   git push
+#
+# De controle draait op elke pull request nadat dit bestand in main staat.
+#
+# ---
+#
+# Telt de weekpagina's van de rubriek Nieuws over toegankelijkheid na, op een pull
+# request en niet in de run die deployt.
+#
+# Waarom hier en niet in main.yml: een gevallen build in main.yml deployt niets en laat
+# de oude site staan. Een teller die daar omvalt, zet dus de hele site stil op een
+# woordenteller, en dat kan pas na de merge blijken. Op een pull request is het een
+# controle die rood wordt, en dan staat de site er nog.
+#
+# Wat de controle doet, staat in scripts/nieuws_telling.py en docs/nieuws-rubriek.md:
+#
+# - minder dan 3 berichten in een week maakt de controle niet rood. De build zet de
+#   pagina op noindex en de controle meldt het als reactie op de pull request. Of er in
+#   een stille week een pagina uitgaat, beslist Julia.
+# - een bericht met minder dan 40 eigen woorden maakt de controle rood. Dat is tekst die
+#   voor de merge bij te schrijven is.
+name: Telling weekpagina's Nieuws
+
+on:
+  pull_request:
+    paths:
+      - "content/dutch/nieuws/**"
+      - "content/english/nieuws/**"
+      - "layouts/nieuws/**"
+      - "layouts/partials/nieuws-telling.html"
+      - "data/nieuws.yaml"
+      - "scripts/nieuws_telling.py"
+      - ".github/workflows/nieuws-controle.yml"
+  workflow_dispatch:
+
+# contents: read om te bouwen, pull-requests: write voor de reactie met de telling.
+permissions:
+  contents: read
+  pull-requests: write
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  HUGO_ENV: production
+  HUGO_VERSION: "0.151.0"
+
+jobs:
+  telling:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Install Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      # fetch-depth: 0 omdat enableGitInfo in hugo.toml de historie nodig heeft voor
+      # Lastmod, net als in main.yml.
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Project
+        run: npm run project-setup
+
+      - name: Install npm dependencies
+        run: npm install
+
+      # Bouwt met --buildFuture en zonder --buildDrafts, en met
+      # HUGO_PARAMS_NIEUWSTELLING=true zodat de telling in het buildlog komt. Zo telt de
+      # weekpagina van de komende zaterdag mee en het voorbeeldbestand niet. Het script
+      # eindigt op 1 als een bericht onder de woordgrens zit.
+      - name: Tel de weekpagina's na
+        run: |
+          set -o pipefail
+          python3 scripts/nieuws_telling.py --samenvatting "$GITHUB_STEP_SUMMARY" \
+            | tee "${{ runner.temp }}/telling.txt"
+
+      - name: Zet de telling als reactie op de pull request
+        if: always() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bestand="${{ runner.temp }}/telling.txt"
+          if [ ! -f "$bestand" ]; then
+            echo "Geen telling om te melden; de build viel eerder om."
+            exit 0
+          fi
+          if ! grep -qE "^  (FOUT|MELDING):" "$bestand"; then
+            echo "Niets te melden, dus geen reactie op de pull request."
+            exit 0
+          fi
+          {
+            echo "**Telling van de weekpagina's**"
+            echo
+            echo '```'
+            sed -n '/^Telling van de rubriek/,$p' "$bestand"
+            echo '```'
+          } > "${{ runner.temp }}/reactie.md"
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body-file "${{ runner.temp }}/reactie.md"

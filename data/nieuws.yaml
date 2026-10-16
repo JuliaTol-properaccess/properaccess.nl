@@ -1,0 +1,17 @@
+# Ondergrenzen van de rubriek Nieuws over toegankelijkheid, op één plek.
+#
+# layouts/partials/nieuws-telling.html leest deze twee getallen, en de controle op een
+# pull request (scripts/nieuws_telling.py) krijgt ze uit diezelfde partial mee. Verander
+# je hier een getal, dan verandert de melding op de pull request mee en hoeft er geen
+# template open.
+#
+# minimum_berichten        een weekpagina met minder berichten krijgt een noindex. De
+#                          build valt er niet op: of er in een stille week een pagina
+#                          uitgaat, beslist Julia. Besluit van Chief, 11 oktober 2026.
+# minimum_woorden_per_item minimaal aantal eigen woorden in items[].tekst van één
+#                          bericht. Haalt een bericht dat niet, dan wordt de controle op
+#                          de pull request rood en krijgt de pagina een noindex.
+#
+# De onderbouwing van de twee getallen staat in docs/nieuws-rubriek.md.
+minimum_berichten: 3
+minimum_woorden_per_item: 40
