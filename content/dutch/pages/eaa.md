@@ -82,6 +82,26 @@ faqs:
     answer: "Nee. De EAA verplicht een toegankelijke website of app en zegt niets over onderzoek. Dat is een verschil met het BDTO, waar een toegankelijkheidsverklaring met onderzoek eronder wél verplicht is. Wat de EAA wel vraagt, is onderbouwing: artikel 13 lid 5 zegt dat je een toezichthouder op een gemotiveerd verzoek de informatie geeft waaruit blijkt dat je dienst aan de eisen voldoet, en dat geldt voor alle eisen die voor jou gelden. Met een volledig onderzoek heb je die informatie bij elkaar. Wij doen dat onderzoek volgens WCAG-EM, de evaluatiemethode van het W3C. De ACM gebruikte die methode in 2026 bij de tien webshops die ze als eerste begeleidde. En zonder onderzoek weet je niet wat er mis is. Een gemiddelde audit levert bij ons zo\u2019n honderd bevindingen op, en die zitten vrijwel nooit waar mensen ze verwachten."
   - question: "Voldoe ik als ik een overlay-tool installeer?"
     answer: "Nee. Een overlay is JavaScript dat bovenop je site draait en de code eronder ongemoeid laat. Een knop zonder toegankelijke naam blijft een knop zonder toegankelijke naam, ook met een widget erbij. Wij testten de drie bekendste overlay-tools en kwamen tot dezelfde conclusie als de ACM, die daar op de Dag van Digitale Toegankelijkheid in juni 2026 duidelijk over was. Wat een overlay wel doet, is een knop op je site zetten die suggereert dat het geregeld is."
+# Concepttekst. Zichtbare alinea en acceptedAnswer.text komen uit dit veld.
+answer_blocks:
+  - bij: wat-is-het
+    question: "Wat is de European Accessibility Act?"
+    answer: "De European Accessibility Act (EAA) is een Europese richtlijn die sinds 28 juni 2025 eisen stelt aan de toegankelijkheid van producten en diensten voor consumenten. Denk aan webshops, bank- en betaaldiensten, e-books, telecom en het boeken van reizen. In Nederland is de richtlijn omgezet in nationale wetgeving en houden sectorale toezichthouders toezicht."
+  - bij: uitzonderingen
+    question: "Wat is een micro-onderneming onder de EAA?"
+    answer: "Een micro-onderneming heeft minder dan tien medewerkers en een jaaromzet of balanstotaal van maximaal 2 miljoen euro. Micro-ondernemingen die diensten aanbieden zijn vrijgesteld van de EAA-eisen voor die diensten. Voor producten geldt die vrijstelling niet. Valt je bedrijf net boven de grens, dan gelden de eisen gewoon voor je website of app."
+  - bij: uitzonderingen
+    question: "Wat betekent onevenredige last onder de EAA?"
+    answer: "Een bedrijf mag een eis niet toepassen als die een onevenredige last vormt, bijvoorbeeld omdat de kosten niet in verhouding staan tot de omvang van het bedrijf. Je moet dat zelf onderbouwen en vastleggen, en de beoordeling periodiek herhalen. Het is geen algemene vrijstelling: je meldt het aan de toezichthouder als die erom vraagt."
+  - bij: norm
+    question: "Geldt de EAA ook voor apps en documenten?"
+    answer: "Ja. De EAA geldt voor de hele dienst waarmee je consumenten bedient, dus ook voor mobiele apps, klantportalen, e-mails, pdf's zoals facturen en voorwaarden, en het betaalproces. De norm EN 301 549 bevat eisen voor web, software en documenten. Een audit van alleen de homepage geeft daarom een onvolledig beeld."
+  - bij: faq
+    question: "Per wanneer moet mijn webshop voldoen aan de EAA?"
+    answer: "Nieuwe diensten en producten moeten sinds 28 juni 2025 voldoen. Voor bestaande diensten geldt een overgangstermijn in de richtlijn, maar websites en apps die je na die datum aanpast of opnieuw aanbiedt, vallen al onder de eisen. Toezichthouders zoals de ACM kunnen nu al informatie opvragen en handhaven."
+  - bij: faq
+    question: "Hoe begin ik met voldoen aan de EAA?"
+    answer: "Begin met vaststellen waar je staat: een WCAG-audit van je belangrijkste klantprocessen, zoals zoeken, bestellen en betalen. Maak daarna een plan van aanpak met prioriteiten, herstel de bevindingen en laat een hercontrole uitvoeren. Publiceer tot slot de toegankelijkheidsinformatie over je dienst en werk die bij na nieuwe releases."
 translationKey: "eaa"
 ---
 

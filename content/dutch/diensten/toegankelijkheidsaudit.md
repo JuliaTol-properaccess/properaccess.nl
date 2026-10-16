@@ -77,6 +77,23 @@ faqs:
     answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
+# Concepttekst. Zichtbare alinea en acceptedAnswer.text komen uit dit veld.
+answer_blocks:
+  - bij: wat-is-een-toegankelijkheidsonderzoek
+    question: "Wat is een toegankelijkheidsaudit?"
+    answer: "Een toegankelijkheidsaudit is een handmatige toets van een website of app aan WCAG 2.2 niveau AA. Een auditor controleert een representatieve steekproef van pagina's met toetsenbord, schermlezer en code-inspectie. Je ontvangt een rapport met per bevinding het getroffen succescriterium, de impact voor gebruikers en een concrete oplossing met codevoorbeeld."
+  - bij: welk-onderzoek
+    question: "Welk type audit past bij mijn situatie?"
+    answer: "Dat hangt af van wat je wilt weten. Een volledige WCAG-audit toetst techniek en content. Een contentaudit richt zich op teksten, afbeeldingen en documenten van de webredactie. Een techniek- of systeemaudit toetst een CMS, component library of platform. Een app-audit toetst iOS- en Android-apps. Bij twijfel adviseren we in het kennismakingsgesprek."
+  - bij: steekproef
+    question: "Waarom is een steekproef genoeg voor een audit?"
+    answer: "Websites hergebruiken templates en componenten. Als een steekproef alle paginatypes, kernprocessen en interactieve onderdelen bevat, vind je de structurele problemen die op veel pagina's terugkomen. Dat is de aanpak van WCAG-EM, de methode van het W3C. Herstel je een component, dan werkt de oplossing op elke pagina waar het voorkomt."
+  - bij: faq
+    question: "Wat is een hercontrole en wanneer heb ik die nodig?"
+    answer: "Een hercontrole is een tweede toets nadat je de bevindingen uit de audit hebt opgelost. De auditor controleert of de oplossingen werken en of er geen nieuwe problemen zijn ontstaan. Het resultaat gebruik je om je toegankelijkheidsverklaring bij te werken. Plan de hercontrole zodra je ontwikkelteam de prioritaire bevindingen heeft hersteld."
+  - bij: faq
+    question: "Kan ik de bevindingen in Jira of GitHub zetten?"
+    answer: "Ja. Naast het rapport ontvang je een CSV-bestand met alle bevindingen, ingedeeld per component. Elke bevinding bevat een user story, het WCAG-succescriterium, de ernst en een oplossing. Je kunt de CSV rechtstreeks importeren in Jira, GitHub of een ander ticketsysteem, zodat je team direct per sprint kan inplannen."
 translationKey: "toegankelijkheidsaudit"
 ---
 
@@ -132,7 +149,7 @@ aan ons kunt stellen en aan elke andere partij die je spreekt.
 </div>
 {{< /section-steps >}}
 
-{{< section-full title="Waarom een steekproef genoeg is" >}}
+{{< section-full title="Waarom een steekproef genoeg is" id="steekproef" >}}
 
 Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
 tweeduizend URL's. In 950 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de

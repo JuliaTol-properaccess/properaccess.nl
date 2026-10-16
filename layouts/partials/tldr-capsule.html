@@ -5,6 +5,7 @@
 <section class="hp-container">
   <aside class="article-tldr" aria-labelledby="tldr-heading">
     <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_capsule_title" | default "In het kort" }}</h2>
+    {{ partial "answer-blocks.html" (dict "page" $ "bij" "in-het-kort") }}
     <div class="article-tldr__body">
       {{ . | markdownify }}
     </div>

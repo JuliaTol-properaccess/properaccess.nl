@@ -35,6 +35,23 @@ faqs:
     answer: "Ja. Zodra je een rapport van ons hebt, loopt het contact rechtstreeks met een senior auditor. Vragen gaan via de strippenkaart: één vraag over één onderwerp kost één strip, en vervolgvragen in dezelfde draad kosten niets extra. De strip gaat er af op het moment dat wij antwoorden, dus een vraag die buiten scope valt kost je niets. Een strip kost € 20 tot € 25, afhankelijk van de bundel, en een bundel is twaalf maanden geldig.\n\nBen je nog geen klant, dan spreek je eerst onze relatiebeheerder."
   - question: "Wat als jullie een systeem niet kennen?"
     answer: "We kennen er inmiddels zo’n 150, van maatwerkframeworks tot standaard-CMS’en met modules en plug-ins eroverheen. Kom je met iets dat we nog niet zijn tegengekomen, dan verandert dat weinig aan het onderzoek: we toetsen wat de bezoeker in de browser krijgt. Bij het oplossen denken we mee over wat er binnen de grenzen van jouw systeem mogelijk is."
+# Concepttekst. Zichtbare alinea en acceptedAnswer.text komen uit dit veld.
+answer_blocks:
+  - bij: onder-h1
+    question: "Waar let ik op bij het kiezen van een auditbureau voor digitale toegankelijkheid?"
+    answer: "Let op vijf punten: wordt er handmatig getoetst met toetsenbord en schermlezer, volgt het onderzoek WCAG-EM, bevat het rapport concrete oplossingen per bevinding, is het bureau onafhankelijk van bouwers, en is er nazorg zoals vragen stellen en een hercontrole. Vraag ook naar certificering van de auditors, bijvoorbeeld IAAP."
+  - bij: beloften
+    question: "Welke beloften van auditbureaus moet ik wantrouwen?"
+    answer: "Wees kritisch op een belofte dat je na één audit of scan definitief voldoet aan de wet, en op een keurmerk zonder handmatig onderzoek. Toegankelijkheid verandert met elke release, en automatische scans vinden maar een deel van de problemen. Een betrouwbaar bureau beschrijft wat het toetst en wat buiten de scope valt."
+  - bij: faq
+    question: "Waarom is onafhankelijkheid van een auditbureau belangrijk?"
+    answer: "Een bureau dat ook websites bouwt of beheert, beoordeelt mogelijk zijn eigen werk of dat van een concurrent. Een onafhankelijk auditbureau heeft geen belang bij de uitkomst en geen herstelopdracht om te verkopen. Daardoor is het rapport geloofwaardiger richting toezichthouders, en kun je het herstel bij je eigen ontwikkelaar of leverancier beleggen."
+  - bij: faq
+    question: "Wat is het verschil tussen een stichting en een commercieel auditbureau?"
+    answer: "Beide kunnen onderzoek doen volgens WCAG-EM; de rechtsvorm zegt weinig over de kwaliteit. Vergelijk liever concreet: wie voert de audit uit en met welke certificering, hoeveel wordt handmatig getoetst, hoe is het rapport opgebouwd, wat kost het en welke nazorg zit erbij. Vraag een voorbeeldrapport op voordat je kiest."
+  - bij: faq
+    question: "Wat staat er in een goed toegankelijkheidsrapport?"
+    answer: "Een goed rapport ordent bevindingen per component of paginatype, noemt per bevinding het WCAG-succescriterium, de ernst en de impact voor gebruikers, en geeft een concrete oplossing, liefst met codevoorbeeld en screenshot. Een export naar CSV of je ticketsysteem helpt je team om het herstel direct in te plannen."
 ---
 
 {{< section-full >}}
@@ -143,7 +160,7 @@ Leg dit vast voordat je begint, zodat je later weet wat je mag verwachten.
 
 {{< /section-cards >}}
 
-{{< section-full title="Twee beloften die niet kloppen" >}}
+{{< section-full title="Twee beloften die niet kloppen" id="beloften" >}}
 
 Twee dingen klinken goed in een verkoopgesprek en houden geen stand.
 

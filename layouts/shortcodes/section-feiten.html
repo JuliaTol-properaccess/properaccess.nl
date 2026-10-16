@@ -14,6 +14,7 @@
       <div class="feiten__tekst">
         {{ with $eyebrow }}<p class="feiten__eyebrow">{{ . }}</p>{{ end }}
         {{ with $title }}<h2 class="hp-heading-lg feiten__titel">{{ . }}</h2>{{ end }}
+        {{ partial "answer-blocks.html" (dict "page" $page "bij" $id) }}
         {{ .Inner | markdownify }}
       </div>
       {{ with $feiten }}

@@ -82,6 +82,26 @@ faqs:
     answer: "Je blijft zelf verantwoordelijk voor je eigen website of webshop, ook als het probleem in het platform van je leverancier zit. Dat bevestigde de ACM. Wij schrijven de bevinding zo op dat je hem bij je leverancier kunt neerleggen, met de code erbij en het succescriterium waar het om gaat, en denken mee over een alternatief als de leverancier niet beweegt."
   - question: "Verschilt de wet per EU-land?"
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm. Wat verschilt zijn de sancties en de hersteltermijnen: Nederland geeft drie maanden, Noorwegen acht weken. Let bij dat laatste op dat Noorwegen de regels toepast zonder in de EU te zitten, dus reken het niet mee als je een lijstje EU-landen maakt."
+# Concepttekst. Zichtbare alinea en acceptedAnswer.text komen uit dit veld.
+answer_blocks:
+  - bij: in-het-kort
+    question: "Welke toegankelijkheidswetgeving geldt in Nederland?"
+    answer: "In Nederland gelden twee regelingen. Het Besluit digitale toegankelijkheid overheid (BDTO) verplicht overheidsorganisaties om websites en apps toegankelijk te maken. De European Accessibility Act (EAA), in Nederland omgezet in nationale wetgeving, geldt sinds 28 juni 2025 voor bedrijven die bepaalde producten en diensten aan consumenten leveren. Beide verwijzen naar EN 301 549."
+  - bij: welke-wet
+    question: "Wat is het BDTO?"
+    answer: "Het Besluit digitale toegankelijkheid overheid (BDTO) verplicht overheidsinstanties, zoals gemeenten, provincies, waterschappen en uitvoeringsorganisaties, om websites en mobiele apps te laten voldoen aan EN 301 549, gebaseerd op WCAG niveau AA. Ze moeten ook een toegankelijkheidsverklaring publiceren in het landelijke register, onderbouwd met een onderzoek naar de actuele stand van zaken."
+  - bij: welke-wet
+    question: "Wat is het verschil tussen de EAA en het BDTO?"
+    answer: "Het BDTO geldt voor de overheid, de EAA voor bedrijven die specifieke producten en diensten aan consumenten aanbieden, zoals e-commerce, bankdiensten, vervoer en e-books. Het BDTO vraagt een toegankelijkheidsverklaring in het register; de EAA vraagt informatie over toegankelijkheid in je algemene voorwaarden of op je site. Toezicht en handhaving zijn ook anders geregeld."
+  - bij: faq
+    question: "Welke norm moet een website volgen om aan de wet te voldoen?"
+    answer: "Zowel het BDTO als de EAA verwijzen naar de Europese norm EN 301 549. Voor websites en apps komt die neer op de succescriteria van WCAG op niveau A en AA. Proper Access toetst aan WCAG 2.2 AA, de nieuwste versie, zodat je ook voorbereid bent op een toekomstige update van de norm."
+  - bij: faq
+    question: "Wie houdt toezicht op digitale toegankelijkheid in Nederland?"
+    answer: "Voor de EAA zijn meerdere toezichthouders aangewezen, afhankelijk van je sector. De ACM houdt toezicht op onder meer e-commerce, de AFM op financiële diensten en de ILT op personenvervoer. Bij de overheid wordt naleving van het BDTO gevolgd via de toegankelijkheidsverklaringen in het register van Logius."
+  - bij: faq
+    question: "Hoe toon ik aan dat mijn website voldoet?"
+    answer: "Je toont het aan met een recent onderzoek door een onafhankelijke partij, een plan van aanpak voor de gevonden problemen en een hercontrole na herstel. Overheden leggen dit vast in een toegankelijkheidsverklaring. Bedrijven onder de EAA beschrijven in hun informatie over de dienst hoe deze aan de toegankelijkheidseisen voldoet."
 ---
 
 {{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" >}}
