@@ -19,6 +19,16 @@
     <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
     {{- end }}
     <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- /* x-default hoort in dezelfde set. Hij stond alleen in de HTML
+           (layouts/partials/basic-seo.html), niet hier, dus wie de sitemap leest zag een
+           vertaalcluster zonder x-default. Dezelfde keuze als in de HTML: binnen een
+           cluster wijst x-default op elke variant naar de Nederlandse pagina, want
+           Nederlands is de hoofdtaal. */}}
+    {{- $standaard := . }}
+    {{- range .AllTranslations }}
+    {{- if eq .Language.Lang "nl" }}{{ $standaard = . }}{{ end }}
+    {{- end }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ $standaard.Permalink }}" />
     {{- end }}
   </url>
     {{- end }}
