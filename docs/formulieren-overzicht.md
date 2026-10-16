@@ -50,6 +50,12 @@ leest hem, op regel 395. De algemene tak op regel 438 stuurt naar `NOTIFY_EMAIL`
 lijst te kijken. **Een nieuwe bron in `NOTIFY_OVERRIDES` zetten verandert dus niets**, zolang
 regel 438 niet mee verandert.
 
+Dat laatste is onderweg. Pull request 336, "Contactformulier NL en EN: meldingsmail naar
+info@properaccess.nl", zet `contactformulier` en `contactformulier-en` in de lijst **en** zet op
+regel 438 `NOTIFY_OVERRIDES[bron] || NOTIFY_EMAIL`. Die pull request stond op 16 oktober 2026 nog
+open. Gaat hij erin, dan is de lijst de enige plek die telt en is elk volgend formulier een regel
+erbij. De regelnummers in dit document schuiven er dan twee op.
+
 Daarnaast stuurt `form-submit.js` bij elke gelukte inzending een `form_submission`-gebeurtenis
 naar Plausible, met de bron als eigenschap. Dat is telemetrie en geen postbus.
 
@@ -345,10 +351,13 @@ GitHub Actions-workflows naar `info@eaa-monitor.nl`, beveiligd met een token in 
 
 ### Twee dingen om los van de adressen te regelen
 
-- **De override in de worker werkt maar half.** `NOTIFY_OVERRIDES` wordt alleen gelezen in de
-  offerte-tak van `sendNotificationEmail` (regel 395). Wie straks een bron naar een ander adres
-  wil sturen, moet ook regel 438 aanpassen. Anders lijkt de wijziging gedaan en verandert er
-  niets.
+- **De override in de worker werkt maar half, en pull request 336 repareert dat.** Op `main`
+  wordt `NOTIFY_OVERRIDES` alleen gelezen in de offerte-tak van `sendNotificationEmail` (regel
+  395); de algemene tak op regel 438 kijkt er niet naar. Wie nu een bron naar een ander adres
+  wil sturen zonder 336, moet ook regel 438 aanpassen, anders lijkt de wijziging gedaan en
+  verandert er niets. Met 336 erin is de lijst de enige plek die telt. Daarmee is het advies
+  hierboven uit te voeren met één regel per bron, plus een uitrol van de worker door Julia:
+  `npx wrangler deploy worker.js --name pipedrive-forms` in `tools/pipedrive-forms`.
 - **Dertien Engelse pagina's sturen de Nederlandse bron `contactformulier` mee.** Daardoor is
   een Engelse aanvraag in het CRM niet te herkennen, en valt hij ook onder de regel die alleen
   bij een Nederlands woord als "offerte" of "kosten" een lead maakt. Een Engelse aanvraag met
