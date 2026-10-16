@@ -119,7 +119,7 @@ Ben je nieuw in dit onderwerp, dan kost zelf uitzoeken zo veel tijd dat je niet 
 
 Er is veel dat je zelf kunt controleren, en daar heb je geen auditor voor nodig. Dit zijn de drie die wij dagelijks gebruiken.
 
-De **[WCAG Radar](/tools/wcag-radar/)** van Proper Access is een gratis bookmarklet en browserextensie. Die toont bevindingen op de pagina die je op dat moment bekijkt, met drie tabbladen voor redactie, design en development. De gratis versie doet 28 van de 45 checks, rekent lokaal in je browser, en werkt ook achter een login en op localhost.
+De **[WCAG Radar](/tools/wcag-radar/)** van Proper Access is een gratis bookmarklet en browserextensie. Die toont bevindingen op de pagina die je op dat moment bekijkt, met drie tabbladen voor redactie, design en development. De gratis versie doet 29 van de 50 checks, rekent lokaal in je browser, en werkt ook achter een login en op localhost.
 
 **axe** scant de code van een pagina en is sterk in wat een machine kan vaststellen: een ontbrekende alt-tekst, een veld zonder label, contrast dat rekenkundig tekortschiet. Houd er rekening mee dat een scan ongeveer 30% van de succescriteria raakt. De rest blijft handwerk.
 

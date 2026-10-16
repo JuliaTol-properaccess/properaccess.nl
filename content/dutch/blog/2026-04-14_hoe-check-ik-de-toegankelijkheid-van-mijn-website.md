@@ -26,7 +26,7 @@ Deze tools scannen je pagina en rapporteren technische fouten:
 - Bookmarklet of browserextensie voor Chrome en Firefox
 - Drie tabbladen: een voor redactie, een voor design en een voor development
 - Rekent in je eigen browser, dus werkt ook achter een login en op localhost
-- De gratis versie doet 28 van de 45 checks, zonder account
+- De gratis versie doet 29 van de 50 checks, zonder account
 - [Bekijk wat de WCAG Radar controleert](/tools/wcag-radar/)
 
 Deze bouwen we zelf bij Proper Access, op basis van wat we in 950 audits sinds 2019 zijn tegengekomen. Onder elke check zit een link waarmee je de bevinding voorlegt aan een van onze auditors.

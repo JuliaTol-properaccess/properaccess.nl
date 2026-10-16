@@ -234,7 +234,7 @@ Daarvoor is [de WCAG Radar van Proper Access](/tools/wcag-radar/) gemaakt, een b
 
 Het verschil zit in waar je kijkt. De Radar zet die gegevens op de pagina zelf, zodat je ze per element naast elkaar ziet zonder in een paneel te scrollen. Voor het narekenen van een enkel element blijft de tree preciezer, want die toont ook de berekende waarde en de toestand.
 
-28 van de 45 checks zijn gratis en vragen geen account. De Radar rekent alles in je eigen browser uit, verstuurt niets en slaat niets op. Hij werkt dus ook op een acceptatieomgeving of op localhost.
+29 van de 50 checks zijn gratis en vragen geen account. De Radar rekent alles in je eigen browser uit, verstuurt niets en slaat niets op. Hij werkt dus ook op een acceptatieomgeving of op localhost.
 
 ## Praktijkvoorbeelden
 
