@@ -146,6 +146,12 @@ Verder gewijzigd:
   `/wcag_wiki/2-1-1-toetsenbord-toegankelijkheid/` en `/wcag_wiki/tag/toetsenbord/`. Die
   wijzen nu naar de nieuwe URL. Zonder dat zou er een keten ontstaan: eerst een 301 naar
   de oude URL, en daar nog een doorverwijzing.
+- **Er was een vierde, en die is op 12 oktober 2026 rechtgezet.** Regel 269,
+  `/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/`, wees nog naar de oude URL met de
+  spelfout. Die oude URL is sinds de slug-wijziging een aliaspagina, dus daar stond precies
+  de keten die hierboven beschreven staat. Het controlescript meldde hem ook:
+  `FOUT ...: doel is zelf een doorverwijspagina`. De regel wijst nu naar de nieuwe URL. De
+  bron blijft de URL met de spelfout, want dat is de echte oude WordPress-URL.
 - De twee interne links in `content/dutch/tools/wcag-radar.md` wijzen naar de nieuwe URL.
 
 **De alias met de spelfout blijft staan zoals hij is.** `/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk/`
@@ -313,3 +319,37 @@ Zolang die laatste regel niet in Cloudflare staat, houdt een `aliases`-regel in
 constructie als bij de 120 aliassen hierboven: status 200 met een meta-refresh en een
 canonical, en het controlescript rekent dat goed voor een bron die op zijn 301 wacht.
 Staat de 301 er, dan komt Cloudflare eerst en wordt die pagina niet meer opgevraagd.
+
+## Een Nederlandse slug op een Engels pad
+
+`/en/toegankelijkheidsaudit/` gaf een 404. Dat pad komt niet uit WordPress: het is de
+Nederlandse slug van de auditpagina, met `/en/` ervoor. De Engelse auditpagina staat op
+`/en/accessibility-audit/` en geeft 200.
+
+De bezoekmeting telde er 2 weergaven in de week van 29 september tot 5 oktober 2026 en
+opnieuw 2 in de week van 5 tot 12 oktober, elke week van twee verschillende organisaties.
+De interne links naar dat pad zijn met regel 222 van de GEO-lijst weg, dus die bezoekers
+komen van buiten of uit een zoekmachine. Waar ze precies vandaan komen, is hier niet te
+zien: de bezoekmeting bewaart wel het domein van de verwijzer, maar `/rapport` geeft dat
+veld niet terug.
+
+Nata heeft op 12 oktober 2026 gevraagd om een permanente doorverwijzing in plaats van de
+404. De lijst gaat van 314 naar 315 regels. Regel 315 is nieuw:
+`/en/toegankelijkheidsaudit/` naar `/en/accessibility-audit/`.
+
+Zolang die regel niet in Cloudflare staat, houdt een `aliases`-regel in
+`content/english/accessibility-audit.md` de URL uit de 404. Dat is dezelfde constructie als
+bij de 120 aliassen hierboven, en als bij `/en/quick-scan/` en
+`/en/digital-accessibility-government/`, de twee Engelse paden die al zo'n paar vormen.
+
+### Het patroon zelf is groter dan deze ene regel
+
+Gemeten op 12 oktober 2026: alle dertien Nederlandse dienstenslugs geven onder `/en/` een
+404, en `/en/webshop-quickscan/`, `/en/klanten/`, `/en/over/`, `/en/diensten/` en
+`/en/academy/` ook. `/en/contact/`, `/en/tools/` en `/en/blog/` bestaan wel.
+
+Van die achttien paden is alleen `/en/toegankelijkheidsaudit/` opgevraagd, dus alleen dat
+pad krijgt nu een regel. Komen er meer weergaven bij, dan is het patroon bekend en kan de
+lijst mee. Een alternatief dat ze in één keer afvangt, is de Engelse foutpagina die hierboven
+onder "Wat hier niet in zit" staat: die laat een bezoeker op een onbekend `/en/`-pad in het
+Engels verder. Dat is een wijziging die bezoekers zien, dus die gaat eerst langs Gerard.
