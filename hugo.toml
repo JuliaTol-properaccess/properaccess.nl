@@ -50,6 +50,12 @@ ID = ''
 # De Engelse rubriek krijgt met content/english/onderzoek/ dezelfde regel, en Hugo
 # zet daar /en/ voor; de Nederlandse URL's veranderen daar niet van.
 "onderzoek" = "/onderzoek/:slugorcontentbasename/"
+# Rubriek Nieuws over toegankelijkheid. Eén pagina per week op /nieuws/<slug>/, met de
+# datum van de zaterdag waarop de pagina uitkomt als slug: /nieuws/2026-10-17/. Dezelfde
+# constructie als bij onderzoek, dus de URL hangt aan de slug en niet aan het bestandspad.
+# Komt er later een indeling per jaar (content/dutch/nieuws/2027/...), dan blijft de URL
+# van een gepubliceerde weekpagina gelijk.
+"nieuws" = "/nieuws/:slugorcontentbasename/"
 
 
 ########################## Pagination ############################

@@ -1,0 +1,39 @@
+{{- /* Eén bericht op een weekpagina van /nieuws/, als li in een ol.
+
+       Staat los in een partial omdat een bericht op twee plekken op de pagina kan
+       staan: onder het kopje van zijn doelgroep, en onderaan buiten de kopjes als het
+       geen `sectie` heeft. De opmaak hoort op die twee plekken gelijk te zijn, dus
+       staat ze één keer. Zie layouts/partials/nieuws-secties.html.
+
+       Aanroep met het bericht uit die partial en het kopniveau:
+
+           {{ partial "nieuws-bericht.html" (dict "bericht" $b "niveau" 3) }}
+
+       Het niveau is 3 onder het kopje van een sectie, want dat kopje is de h2. Staat
+       het bericht buiten de kopjes, dan is er geen kop boven en is het bericht zelf
+       niveau 2. Zo blijft de koppenstructuur sluitend, met of zonder secties.
+
+       Het id is bericht-<nummer>, met het nummer uit `items:` in de front matter. Dat
+       is hetzelfde id als voor de kopjes, zodat een link naar één bericht en de
+       ItemList in de JSON-LD blijven werken zoals ze werkten. */ -}}
+{{- $bericht := .bericht -}}
+{{- $niveau := default 3 .niveau -}}
+{{- $item := $bericht.item -}}
+<li class="nieuws-bericht" id="bericht-{{ $bericht.nummer }}">
+  <h{{ $niveau }} class="nieuws-bericht__kop">{{ $item.kop }}</h{{ $niveau }}>
+  <p class="nieuws-bericht__bron">
+    {{ with $item.bron_kop }}
+      <a class="nieuws-bericht__link" href="{{ $item.url }}" rel="noopener">{{ . }}</a>
+      <span class="nieuws-bericht__herkomst">{{ i18n "nieuws_bij" }} {{ $item.bron }}</span>
+    {{ else }}
+      <a class="nieuws-bericht__link" href="{{ $item.url }}" rel="noopener">{{ i18n "nieuws_bericht_bij" }} {{ $item.bron }}</a>
+    {{ end }}
+    {{ with $item.datum }}
+      {{ $datum := time.AsTime . }}
+      <span class="nieuws-bericht__herkomst">, <time datetime="{{ $datum.Format "2006-01-02" }}">{{ time.Format ":date_long" $datum }}</time></span>
+    {{ end }}
+  </p>
+  {{ with $item.tekst }}
+    <div class="nieuws-bericht__tekst content">{{ . | markdownify }}</div>
+  {{ end }}
+</li>

@@ -1,0 +1,49 @@
+{{- /* Alle tekst die wij zelf schrijven op een weekpagina van /nieuws/, als één platte
+       string. Neemt de samenvatting uit `tldr` mee en per bericht de kop en onze duiding
+       uit `items[].tekst`.
+
+       Waarom deze partial bestaat: op een weekpagina staan de berichten in `items:` in de
+       front matter en niet in de tekst van de pagina. Daardoor rendert onze duiding wel op
+       de pagina, maar valt hij buiten `.Content` en dus buiten `.Plain`. Twee templates
+       lezen `.Plain` en zouden de rubriek zonder deze partial terugbrengen tot een kale
+       bronnenlijst: `layouts/_default/list.searchindex.json` (de zoekfunctie op de site) en
+       `layouts/_default/index.llmsfull.txt` (`llms-full.txt`, wat AI-systemen lezen).
+       Precies die duiding is waar deze rubriek het van moet hebben.
+
+       Niet meegenomen: de bronnamen, de datums, de URL's en de vaste tekst uit de
+       template. Dat is niet van ons.
+
+       Dit is geen woordenteller. De koppen zitten er met opzet in, want iemand zoekt op
+       een kop; voor de woordendrempel per bericht tellen koppen niet mee.
+
+       Geeft een lege string voor elke pagina zonder `items:`, dus de aanroeper kan hem op
+       elke pagina aanroepen en met `with` afvangen.
+
+       Aanroep: {{ partial "nieuws-eigen-tekst.html" $pagina }} */ -}}
+{{- /* `markdownify` doet ook de typografie, dus een apostrof komt er als `&rsquo;` uit en
+       `plainify` laat die entiteit staan. Vandaar `htmlUnescape`, dezelfde keten als in
+       layouts/partials/llms-pagina.html regel 69. Zonder die stap staat er
+       `alinea&amp;rsquo;s` in searchindex.json (de template-engine escapet de `&` nog
+       eens) en vindt een zoekopdracht op het woord niets. */ -}}
+{{- $pagina := . -}}
+{{- $delen := slice -}}
+{{- /* Alleen een pagina met `items:` in de front matter. Zonder deze poort las de partial
+       ook de `tldr` van een blogartikel, en die vier artikelen kregen er tekst in de
+       zoekindex bij: niet fout, maar het is niet wat deze partial hoort te doen. Gemeten
+       op de productiebuild van 11 oktober 2026. */ -}}
+{{- if $pagina.Params.items -}}
+{{- with $pagina.Params.tldr -}}
+  {{- $delen = $delen | append (. | markdownify | plainify | htmlUnescape) -}}
+{{- end -}}
+{{- range $pagina.Params.items -}}
+  {{- with .kop -}}
+    {{- $delen = $delen | append (string . | htmlUnescape) -}}
+  {{- end -}}
+  {{- with .tekst -}}
+    {{- $delen = $delen | append (. | markdownify | plainify | htmlUnescape) -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+{{- /* De alinea's komen uit markdownify met een newline ertussen. Die vouwen we samen tot
+       enkele spaties, zodat de string op één regel past in JSON en in een tekstbestand. */ -}}
+{{- delimit $delen " " | replaceRE "\\s+" " " | strings.TrimSpace -}}

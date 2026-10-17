@@ -44,7 +44,13 @@ link = "/offerte-wcag-onderzoek/"
 [search]
 enable = true
 primary_color = "#121212"
-include_sections = ["blog"]
+# Welke secties in de zoekfunctie op de site komen. Deze lijst bepaalt twee dingen:
+# layouts/_default/list.searchindex.json zet alleen deze secties in searchindex.json, en
+# de partial search-index.html geeft dezelfde lijst aan assets/js/search.js, die de
+# resultaten erop groepeert. Staat een sectie er niet in, dan is geen enkele pagina
+# eruit te vinden. `nieuws` staat erbij sinds de rubriek Nieuws over toegankelijkheid.
+# De Engelse site heeft geen nieuwssectie; daar blijft de groep leeg en valt hij weg.
+include_sections = ["blog", "nieuws"]
 show_image = true
 show_description = true
 show_tags = true

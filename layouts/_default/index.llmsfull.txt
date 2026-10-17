@@ -26,6 +26,13 @@
   "research"  (cond $nl "Onderzoek: eigen metingen" "Research: our own measurements")
   "edition"   (cond $nl "editie" "edition")
   "measured"  (cond $nl "Gegevens gemeten" "Data measured")
+  "news"      (cond $nl "Nieuws over toegankelijkheid: per week" "Accessibility news: week by week")
+  "period"    (cond $nl "Periode" "Period")
+  "shortform" (cond $nl "Korte versie" "In short")
+  "source"    (cond $nl "Bron" "Source")
+  "sourceURL" (cond $nl "Link naar de bron" "Link to the source")
+  "ourTake"   (cond $nl "Onze duiding" "Our take")
+  "olderWeeks" (cond $nl "Oudere weken" "Older weeks")
   "links"     (cond $nl "Links op deze pagina" "Links on this page")
   "faq"       (cond $nl "Vragen die we hierover krijgen" "Questions we get about this")
   "academy"   (cond $nl "Academy: uitleg WCAG en BDTO" "Academy: WCAG and the law explained")
@@ -188,6 +195,70 @@ URL: {{ .Permalink }}
 {{ with .Params.meetdatum }}{{ $t.measured }}: {{ (time.AsTime .).Format "2006-01-02" }}{{ end }}
 
 {{ .Plain | replaceRE "\\s+" " " | truncate 2000 }}
+
+---
+{{ end }}
+{{ end }}
+
+{{- /* Rubriek Nieuws over toegankelijkheid: één pagina per week op /nieuws/<zaterdag>/.
+
+       De berichten staan in `items:` in de front matter en niet in de tekst van de
+       pagina. `.Plain` geeft daarom alleen de lead, en onze duiding per bericht moet
+       hieronder los uit `items[].tekst` komen. Zonder dat blijft van deze rubriek een
+       kale lijst links naar anderen over, en juist die duiding is wat deze rubriek te
+       bieden heeft. `$t.ourTake` staat erbij zodat te zien is welke tekst van ons is en
+       welke van de bron.
+
+       Sorteren vóór filteren. llms-zichtbaar.html geeft een gewone slice terug en daar
+       werkt .ByDate niet op, dus de sortering staat op de page.Pages die eruit gaat.
+       Dezelfde constructie als $recent hierboven.
+
+       De eerste twaalf weken komen er volledig in, oudere weken als linkregel. Twaalf,
+       omdat dat ook de paginagrootte van /nieuws/ is (pagerSize in hugo.toml) en de
+       termijn waarop we de rubriek evalueren. Een week met vijf berichten kost circa
+       2 kB; alle 52 weken van een jaar zouden dit bestand van 160 kB met de helft laten
+       groeien, terwijl een week van tien maanden terug geen nieuws meer is. De linkregel
+       houdt zo'n week wel vindbaar.
+
+       Staat er nog geen week, dan komt de kop er niet in: een kop zonder inhoud helpt
+       een taalmodel niet. De rubriek is alleen Nederlands, dus op de Engelse site is
+       deze lijst leeg en valt het hele blok weg. */ -}}
+{{- $nieuws := partial "llms-zichtbaar.html" (where $eigenTaal "Section" "nieuws").ByDate.Reverse -}}
+{{ with $nieuws }}
+## {{ $t.news }}
+
+{{ range first 12 . }}
+{{- $week := . }}
+
+### {{ .Title | safeHTML }} ({{ .PublishDate.Format "2006-01-02" }})
+
+URL: {{ .Permalink }}
+{{ with .Params.week_van }}{{ $t.period }}: {{ (time.AsTime .).Format "2006-01-02" }}{{ with $week.Params.week_tot }} - {{ (time.AsTime .).Format "2006-01-02" }}{{ end }}
+{{ end }}
+{{- with .Params.description }}
+{{ . | safeHTML }}
+{{ end }}
+{{- with .Params.tldr }}
+{{ $t.shortform }}: {{ . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace | safeHTML }}
+{{ end }}
+{{- with .Plain }}
+{{ . | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace | safeHTML }}
+{{ end }}
+{{- range $week.Params.items }}
+#### {{ .kop | safeHTML }}
+
+{{ $t.source }}: {{ .bron | safeHTML }}{{ with .datum }}, {{ (time.AsTime .).Format "2006-01-02" }}{{ end }}
+{{ $t.sourceURL }}: {{ .url | safeHTML }}
+{{ $t.ourTake }}: {{ .tekst | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace | safeHTML }}
+{{ end }}
+---
+{{ end }}
+{{- if gt (len .) 12 }}
+### {{ $t.olderWeeks }}
+
+{{ range after 12 . }}
+- [{{ .Title | safeHTML }}]({{ .Permalink }}){{ with .Params.description }}: {{ . | safeHTML }}{{ end }}
+{{- end }}
 
 ---
 {{ end }}

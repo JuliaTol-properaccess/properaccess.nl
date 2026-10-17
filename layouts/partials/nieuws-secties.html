@@ -1,0 +1,158 @@
+{{- /* De indeling van een weekpagina van /nieuws/ in kopjes per doelgroep.
+
+       Geeft de berichten terug, gegroepeerd per sectie en in de volgorde waarin ze op
+       de pagina horen te staan. Deze partial rekent alleen: hij rendert niets, laat
+       nooit een build vallen en schrijft zelf niets in het log. De meldingen staan in
+       layouts/nieuws/single.html, zodat ze één keer per pagina in het log komen.
+
+       Waarom de indeling hier staat en niet in het sjabloon: layouts/nieuws/single.html
+       en de controle op de kopteksten lezen dezelfde indeling, en de volgorde van de
+       secties en de kopteksten horen op één plek te staan. Die plek is data/nieuws.yaml
+       onder `secties:`. Julia kan een koptekst daar herschrijven zonder dat er een
+       template open hoeft. Voorstel van Julia, 11 oktober 2026.
+
+       Elk bericht in `items:` zet zijn doelgroep in het veld `sectie`, met een van de
+       sleutels uit data/nieuws.yaml. Eén sectie per bericht:
+
+       - een bericht zonder `sectie` komt in "los", onderaan de pagina en buiten de
+         kopjes. Dat houdt een weekpagina die nog geen secties heeft heel;
+       - een bericht met een sleutel die niet in data/nieuws.yaml staat komt ook in
+         "los", en staat daarnaast in "onbekend" voor de melding in het log. Het bericht
+         verdwijnt dus nooit van de pagina door een typefout;
+       - een sectie zonder berichten komt niet terug in "groepen". Zo staat er geen leeg
+         kopje op de pagina en geen dode sprong in de lijst erboven.
+
+       Het veld `hoofditem: true` markeert het bericht dat de titel van de pagina
+       bepaalt, de langste eigen tekst van de week. Dat bericht staat vooraan in zijn
+       eigen sectie. De sectie zelf schuift er niet mee naar voren: de volgorde van de
+       secties is voor elke weekpagina gelijk, zodat een lezer die de rubriek volgt zijn
+       eigen kopje op dezelfde plek terugvindt.
+
+       Het nummer per bericht is de plek in `items:` in de front matter, van 1 af. Dat
+       nummer is het id op de pagina (#bericht-1) en de plek in de ItemList in de
+       JSON-LD, en die twee blijven dus los staan van de indeling in secties: een link
+       naar één bericht blijft werken zoals hij werkte.
+
+       Teruggegeven dict:
+
+           vantoepassing  of deze pagina een weekpagina van /nieuws/ is
+           groepen        de secties met berichten, in de volgorde van data/nieuws.yaml.
+                          Per sectie: sleutel, kop en berichten
+           los            de berichten buiten de kopjes, onderaan de pagina
+           sprongen       of de sprongenlijst erboven hoort. Waar bij twee of meer
+                          secties; bij één sectie is die lijst ruis boven drie berichten
+           sleutels       alle sleutels uit data/nieuws.yaml, voor de melding
+           onbekend       de berichten met een sectie die niet bestaat, voor de melding
+           hoofditems     de nummers van de berichten met `hoofditem: true`, voor de
+                          melding als er meer dan één staat
+
+       Een bericht in "groepen" en in "los" is een dict met "nummer", "item" (het
+       bericht uit de front matter), "sectie" en "hoofd".
+
+       Roep de partial aan met partialCached en .RelPermalink als variant, zodat hij per
+       pagina één keer rekent:
+
+           {{ $secties := partialCached "nieuws-secties.html" . .RelPermalink }} */ -}}
+
+{{- /* Eén return, helemaal onderaan, en de hele berekening in een if. Een partial met
+       een returnwaarde mag er maar één hebben op het hoogste niveau; staat er een
+       tweede, dan valt elke build die de partial aanroept op "wrong number of args for
+       return". Zie layouts/partials/nieuws-telling.html. */ -}}
+{{- $uit := dict "vantoepassing" false "groepen" (slice) "los" (slice) "sprongen" false "sleutels" (slice) "onbekend" (slice) "hoofditems" (slice) -}}
+
+{{- if and .IsPage (eq .Section "nieuws") -}}
+  {{- $def := default (slice) site.Data.nieuws.secties -}}
+  {{- $sleutels := slice -}}
+  {{- range $def -}}
+    {{- $sleutels = $sleutels | append (printf "%v" .sleutel) -}}
+  {{- end -}}
+
+  {{- /* De berichten één keer langs: de sectie genormaliseerd, het nummer erbij en de
+         vlag voor het hoofditem. */ -}}
+  {{- $berichten := slice -}}
+  {{- $onbekend := slice -}}
+  {{- $hoofditems := slice -}}
+  {{- range $i, $item := (default (slice) .Params.items) -}}
+    {{- $nummer := add $i 1 -}}
+    {{- $sectie := lower (strings.TrimSpace (printf "%v" (default "" $item.sectie))) -}}
+    {{- if and (ne $sectie "") (not (in $sleutels $sectie)) -}}
+      {{- $onbekend = $onbekend | append (dict
+            "nummer" $nummer
+            "kop" (printf "%v" (default "" $item.kop))
+            "sectie" $sectie) -}}
+      {{- $sectie = "" -}}
+    {{- end -}}
+    {{- $hoofd := false -}}
+    {{- with $item.hoofditem -}}
+      {{- $hoofd = true -}}
+    {{- end -}}
+    {{- if $hoofd -}}
+      {{- $hoofditems = $hoofditems | append $nummer -}}
+    {{- end -}}
+    {{- $berichten = $berichten | append (dict
+          "nummer" $nummer
+          "item" $item
+          "sectie" $sectie
+          "hoofd" $hoofd) -}}
+  {{- end -}}
+
+  {{- /* De secties in de volgorde van data/nieuws.yaml. Per sectie eerst het hoofditem
+         en daarna de rest, allebei in de volgorde van de front matter. Een sleutel die
+         twee keer in het databestand staat, komt één keer op de pagina: anders stond
+         hetzelfde bericht er twee keer, met twee keer hetzelfde id. */ -}}
+  {{- $groepen := slice -}}
+  {{- $gedaan := slice -}}
+  {{- range $def -}}
+    {{- $sleutel := printf "%v" .sleutel -}}
+    {{- /* Zonder koptekst in het databestand valt de sleutel zelf terug als kop. Dan is
+           de fout op de pagina te zien en verdwijnen de berichten van die sectie niet
+           uit het zicht. */ -}}
+    {{- $kop := printf "%v" (default $sleutel .kop) -}}
+    {{- if not (in $gedaan $sleutel) -}}
+      {{- $gedaan = $gedaan | append $sleutel -}}
+      {{- $in_sectie := slice -}}
+      {{- range $b := $berichten -}}
+        {{- if and (eq $b.sectie $sleutel) $b.hoofd -}}
+          {{- $in_sectie = $in_sectie | append $b -}}
+        {{- end -}}
+      {{- end -}}
+      {{- range $b := $berichten -}}
+        {{- if and (eq $b.sectie $sleutel) (not $b.hoofd) -}}
+          {{- $in_sectie = $in_sectie | append $b -}}
+        {{- end -}}
+      {{- end -}}
+      {{- with $in_sectie -}}
+        {{- $groepen = $groepen | append (dict
+              "sleutel" $sleutel
+              "kop" $kop
+              "berichten" .) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* De berichten buiten de kopjes, in dezelfde orde: hoofditem vooraan. Staat er
+         geen enkele sectie op de pagina, dan staan alle berichten hier en ziet de
+         pagina eruit zoals hij er zonder dit veld uitzag. */ -}}
+  {{- $los := slice -}}
+  {{- range $b := $berichten -}}
+    {{- if and (eq $b.sectie "") $b.hoofd -}}
+      {{- $los = $los | append $b -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range $b := $berichten -}}
+    {{- if and (eq $b.sectie "") (not $b.hoofd) -}}
+      {{- $los = $los | append $b -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $uit = dict
+        "vantoepassing" true
+        "groepen" $groepen
+        "los" $los
+        "sprongen" (ge (len $groepen) 2)
+        "sleutels" $sleutels
+        "onbekend" $onbekend
+        "hoofditems" $hoofditems -}}
+{{- end -}}
+
+{{- return $uit -}}
