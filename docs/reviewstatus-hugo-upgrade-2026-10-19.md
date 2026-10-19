@@ -25,11 +25,9 @@ De twee technische reviewercontroles zijn uitgevoerd op branch
   `site.Language.Lang`) in niet-gemigreerde templates. Dat blokkeert de build
   niet, maar is een technisch restpunt voor een volgende opruimronde.
 
-## Resterend voor afronding
+## Resterend kwaliteitsrestpunt
 
 1. Voeg bij een volgende wijziging met een beschikbare axe-runner de
    automatische controle toe. Dit is een kwaliteitsrestpunt, geen bevinding
    die door deze Hugo-upgrade is veroorzaakt.
-2. Julia geeft het expliciete eindakkoord voordat deze wijziging wordt
-   gemerged.
 
