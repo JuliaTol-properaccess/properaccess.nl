@@ -48,6 +48,25 @@ Hieronder staan zeven vragen die dat verschil zichtbaar maken vóórdat je teken
 en stel ze ook aan de andere bureaus die je spreekt. Kom je bij een ander uit omdat die de vragen
 beter beantwoordt, dan is dat een goede uitkomst.
 
+Wil je snel beginnen? Ga direct naar [de zeven vragen](#zeven-vragen), [de prijsindicaties](#prijzen)
+of [onze ervaring](#ervaring). Liever eerst een korte checklist? Let dan in ieder geval op deze vijf
+punten:
+
+- wordt er voldoende handmatig getest, met echte hulpsoftware en relevante apparaten;
+- is de steekproef representatief en is duidelijk wat wel en niet is onderzocht;
+- krijg je een rapport waar je team concrete verbeteringen uit kan halen;
+- is helder wie de audit uitvoert en hoe onafhankelijk het bureau is;
+- is vooraf geregeld welke begeleiding en hertest je na het rapport kunt krijgen.
+
+{{< notice type="info" title="Maak een goede auditaanvraag" >}}
+Je hoeft nog geen bureau te kiezen om offertes te kunnen vergelijken. Beschrijf je website of app,
+je aanleiding, je deadline en wat je na het onderzoek nodig hebt. Stuur daarna dezelfde aanvraag
+naar meerdere bureaus en vraag om een voorbeeldrapport. Zo vergelijk je niet alleen de prijs, maar
+ook de kwaliteit van het onderzoek.
+
+[Vraag een offerte aan bij Proper Access](/offerte-wcag-onderzoek/)
+{{< /notice >}}
+
 {{< notice type="quote" title="Ons belangrijkste advies" >}}
 Vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
 {{< /notice >}}
@@ -60,12 +79,13 @@ om te weten waar je staat.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Zeven vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
+{{< section-cards columns="2" bg="light" id="zeven-vragen" title="Zeven vragen die het verschil maken" subtitle="Elk van deze vragen heeft een antwoord waar je iets aan hebt. Vaag blijven is zelf ook een antwoord." >}}
 
 {{< section-card title="1. Hoeveel wordt er met de hand getoetst?" >}}
 
-Een geautomatiseerde scan herkent ongeveer 30% van de succescriteria. De rest is handwerk. Vraag door
-welk deel van het onderzoek uit handmatig testen bestaat en waarmee er wordt getest. Denk aan een
+Een geautomatiseerde scan vindt in de praktijk vaak ongeveer 30% van alle fouten. Dat is een grove
+schatting, geen universele meting; de rest vraagt menselijke beoordeling. Vraag door welk deel van
+het onderzoek uit handmatig testen bestaat en waarmee er wordt getest. Denk aan een
 schermlezer, alleen het toetsenbord, zoom tot 400% en controle op contrast en kleurgebruik. Een
 volledig onderzoek omvat meer dan deze vier.
 
@@ -88,7 +108,10 @@ methode is dan nog steeds de reden dat een steekproef representatief is voor je 
 
 {{< section-card title="3. Begrijp je hoe je zelf moet toetsen?" >}}
 
-Een WCAG-audit is een steekproef van circa 15 tot 20 pagina's. Los je alle fouten op die pagina's op, dan is je hele website of app daarmee nog niet toegankelijk.
+Een WCAG-audit onderzoekt een representatieve steekproef van pagina's of schermen. De omvang hangt
+af van de scope, het aantal templates, de functionaliteit en de verschillende soorten content. Los
+je alle fouten uit de steekproef op, dan is je hele website of app daarmee nog niet automatisch
+toegankelijk.
 
 Staat er in het rapport hoe je deze problemen ook op andere pagina's opspoort? Met die kennis ben je op termijn niet meer afhankelijk van een auditbureau.
 
@@ -142,7 +165,13 @@ Leg dit vast voordat je begint, zodat je later weet wat je mag verwachten.
 
 {{< /section-cards >}}
 
-{{< section-full title="Twee beloften die niet kloppen" >}}
+{{< notice type="info" title="Neem deze vragen mee in je offerteaanvraag" >}}
+Vraag elk bureau om antwoord op deze zeven punten en vraag om een voorbeeldrapport. Je kunt de
+vragen letterlijk kopiëren naar je aanvraag. Let bij de antwoorden vooral op wat concreet is
+gemaakt: scope, steekproef, testmiddelen, rapportvorm, auditor, onafhankelijkheid en nazorg.
+{{< /notice >}}
+
+{{< section-full title="Twee beloften die niet kloppen" id="beloften" >}}
 
 Twee dingen klinken goed in een verkoopgesprek en houden geen stand.
 
@@ -215,7 +244,7 @@ vastlopen.
 
 {{< /section-highlight >}}
 
-{{< section-cards columns="2" title="Wat je van ons krijgt" >}}
+{{< section-cards columns="2" id="wat-je-krijgt" title="Wat je van ons krijgt" >}}
 
 {{< section-card title="Het rapport" >}}
 
@@ -270,7 +299,7 @@ redactielaag.
 
 {{< /section-full >}}
 
-{{< section-full title="Waar onze ervaring vandaan komt" >}}
+{{< section-full title="Waar onze ervaring vandaan komt" id="ervaring" >}}
 
 Sinds 2019 deden we ruim 950 audits. Dat waren 236 opdrachten voor 63 opdrachtgevers, en 40%
 daarvan kwam terug voor een tweede opdracht. Die cijfers zijn de stand per 7 augustus 2026.
