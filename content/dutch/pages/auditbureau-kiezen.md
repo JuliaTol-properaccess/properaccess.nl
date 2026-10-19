@@ -177,20 +177,6 @@ je.
 
 {{< /section-full >}}
 
-{{< section-highlight title="Waarom wij per element rapporteren" image="/images/pages/auditbureau-rapport-per-element.svg" link="/zo-werken-wij/rapport-en-bevindingen/" link_text="Zo ziet ons rapport eruit" >}}
-
-De rest van de markt rapporteert per succescriterium. Dat is logisch voor mensen die WCAG hebben geschreven en het werkt
-slecht voor de mensen die het moeten oplossen. Eén datepicker duikt op onder 1.3.1, 2.1.1, 2.4.3,
-2.4.7, 4.1.2 en nog zeven andere criteria. Je developer zoekt eerst twaalf stukken bij elkaar
-voordat er iets kan worden aangepast.
-
-Wij draaien het om. Elke bevinding hoort bij een component op een pagina, en alles over dat
-component staat bij elkaar. Elke bevinding begint met een user story vanuit een bezoeker met een
-beperking, zodat duidelijk is wat er voor iemand misgaat en niet alleen welk nummer er wordt
-overtreden.
-
-{{< /section-highlight >}}
-
 {{< section-full title="WCAG-EM: de vijf stappen van de methode" bg="light" >}}
 
 WCAG-EM staat voor Website Accessibility Conformance Evaluation Methodology 1.0, een Working
@@ -229,38 +215,6 @@ Een scan vindt maar een deel van de fouten. De exacte verhouding verschilt per s
 altijd wat een bureau handmatig test.
 
 {{< /section-highlight >}}
-
-{{< section-cards columns="2" id="wat-je-krijgt" title="Wat je van ons krijgt" >}}
-
-{{< section-card title="Het rapport" >}}
-
-Bevindingen gegroepeerd per component en per pagina, elk met een user story, een screenshot en
-een code-voorbeeld. Geschreven in taal die is afgestemd op wie het moet lezen.
-
-{{< /section-card >}}
-
-{{< section-card title="Een CSV met alle bevindingen" >}}
-
-Zodat je ze rechtstreeks in je eigen backlog of ticketsysteem kunt zetten, zonder overtypen.
-
-{{< /section-card >}}
-
-{{< section-card title="Een nabespreking als je die wilt" >}}
-
-Een uur waarin we het rapport doorlopen met je team en de vragen beantwoorden die tijdens het
-lezen zijn ontstaan. € 250 per uur, een half uur kan ook.
-
-{{< /section-card >}}
-
-{{< section-card title="Een hercontrole wanneer je zover bent" >}}
-
-Op de auditofferte staat de hercontrole als aanvinkregel zonder bedrag, want hoeveel werk het is hangt
-af van het aantal bevindingen. Na oplevering van het rapport krijg je daar een aparte offerte
-voor. Meestal komt dat uit tussen € 300 en € 1.100.
-
-{{< /section-card >}}
-
-{{< /section-cards >}}
 
 {{< section-tweekolom title="Wat een onderzoek ongeveer kost" bg="light" id="prijzen" >}}
 
@@ -307,4 +261,16 @@ werkelijk gedragen. Dat is de reden dat we vragen over een specifieke combinatie
 en browser meestal uit eigen waarneming kunnen beantwoorden.
 
 {{< /section-full >}}
+
+{{< section-highlight title="Waarom wij per element rapporteren" image="/images/pages/auditbureau-rapport-per-element.svg" link="/zo-werken-wij/rapport-en-bevindingen/" link_text="Zo ziet ons rapport eruit" >}}
+
+De rest van de markt rapporteert per succescriterium. Dat is logisch voor mensen die WCAG hebben geschreven en het werkt
+slecht voor de mensen die het moeten oplossen. Eén datepicker duikt op onder meerdere succescriteria. Je developer zoekt
+dan eerst verschillende stukken bij elkaar voordat er iets kan worden aangepast.
+
+Wij draaien het om. Elke bevinding hoort bij een component op een pagina, en alles over dat component staat bij elkaar.
+Elke bevinding begint met een user story vanuit een bezoeker met een beperking, zodat duidelijk is wat er voor iemand
+misgaat en niet alleen welk nummer er wordt overtreden.
+
+{{< /section-highlight >}}
 
