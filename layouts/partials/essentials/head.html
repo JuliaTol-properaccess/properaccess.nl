@@ -58,6 +58,21 @@
         data-api-bron="https://plausible.io/js/pa-EuRVvi2Qz629kFHPY_4ab.js"
         data-gedrag-steekproef="100"></script>
 
+<!-- Kleurstalen naast HEX-codes in zichtbare content. De swatch is decoratief; de code blijft de tekstuele informatie. -->
+<style>
+  .pa-color-swatch {
+    display: inline-block;
+    width: .85em;
+    height: .85em;
+    margin: 0 .18em 0 .08em;
+    border: 1px solid currentColor;
+    border-radius: .15em;
+    vertical-align: -.08em;
+    box-sizing: border-box;
+  }
+</style>
+<script defer src="/js/color-swatches.js"></script>
+
 
 <!-- bezoekmeting (tijdelijk, zie tools/bezoekmeting/) -->
 {{ partial "bezoekmeting.html" . }}
