@@ -1,5 +1,7 @@
 # Proefles: Koppen in de tekst (webredactie)
 
+> **Status:** concept/proefles; niet live en niet de actuele lesstof zolang de opleiding niet is goedgekeurd.
+
 Concept van 8 oktober 2026. Dit is hoofdstuk 1 van de opleiding voor webredactie, als
 proef op de taal en de diepte. Nog niet in `content/`, dus nog niet live. De frontmatter
 komt erbij als de opzet is goedgekeurd.

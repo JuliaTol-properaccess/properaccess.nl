@@ -45,18 +45,7 @@
 {{ partial "tldr-capsule.html" . }}
 
 <!-- ─── TRUST BAR ─── -->
-{{ with .Params.trust }}
-<section class="hp-trust">
-  <div class="hp-container">
-    <p class="hp-trust__label">{{ .label }}</p>
-    <div class="hp-trust__names">
-      {{ range .names }}
-        <span>{{ . }}</span>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ partial "trust-bar.html" . }}
 
 
 <!-- ─── PAIN POINT / BDTO ─── -->
