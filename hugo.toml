@@ -23,11 +23,13 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.nl]
-    languageName = "Nederlands"
+    label = "Nederlands"
+    locale = "nl"
     weight = 1
     contentDir = "content/dutch"
   [languages.en]
-    languageName = "English"
+    label = "English"
+    locale = "en-US"
     weight = 2
     contentDir = "content/english"
 
@@ -91,9 +93,13 @@ home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "LLMsFull"]
 ############################# Imaging ############################
 [imaging]
 # See https://github.com/disintegration/imaging
-# Default JPEG or WebP quality setting. Default is 75.
-quality = 80
 resampleFilter = "Lanczos"
+[imaging.jpeg]
+quality = 80
+[imaging.webp]
+quality = 80
+[imaging.avif]
+quality = 80
 
 ############################ Caches ##############################
 [caches]

@@ -53,7 +53,7 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">{{ i18n "footer_services_title" | default "Diensten" }}</h2>
           <ul class="site-footer__links">
-            {{ if eq site.Language.Lang "en" }}
+            {{ if eq site.Language.Name "en" }}
             <li><a href="/en/accessibility-audit/">Accessibility audit</a></li>
             <li><a href="/en/app-accessibility-audit/">App audit</a></li>
             <li><a href="/en/mini-audit/">Mini audit</a></li>
@@ -74,7 +74,7 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">{{ i18n "footer_company_title" | default "Bedrijf" }}</h2>
           <ul class="site-footer__links">
-            {{ if eq site.Language.Lang "en" }}
+            {{ if eq site.Language.Name "en" }}
             <li><a href="/en/about-us/">{{ i18n "footer_about" | default "About us" }}</a></li>
             <li><a href="/en/blog/">Blog</a></li>
             <li><a href="/en/tools/">Tools</a></li>
@@ -101,7 +101,7 @@
         <div class="site-footer__col">
           <h2 class="site-footer__col-title">{{ i18n "footer_legal_title" | default "Juridisch" }}</h2>
           <ul class="site-footer__links">
-            {{ if eq site.Language.Lang "en" }}
+            {{ if eq site.Language.Name "en" }}
             <li><a href="/privacyverklaring/" hreflang="nl">Privacy <span class="sr-only">(in Dutch)</span></a></li>
             <li><a href="/algemene-voorwaarden/" hreflang="nl">{{ i18n "footer_terms" | default "Terms and conditions" }} <span class="sr-only">(in Dutch)</span></a></li>
             <li><a href="/klachtenregeling/" hreflang="nl">{{ i18n "footer_complaints" | default "Complaints procedure" }} <span class="sr-only">(in Dutch)</span></a></li>
@@ -113,7 +113,7 @@
             {{ end }}
           </ul>
           <div class="site-footer__social">
-            {{ range site.Data.social.main }}
+            {{ range hugo.Data.social.main }}
               <a
                 href="{{ .link | safeURL }}"
                 target="_blank"

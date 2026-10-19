@@ -4,7 +4,7 @@
 
        Dit template levert beide talen. Alle vaste tekst staat in $t of in een
        if/else op $nl, zodat de Engelse versie niet half Nederlands is. */ -}}
-{{- $nl := eq site.Language.Lang "nl" -}}
+{{- $nl := eq site.Language.Name "nl" -}}
 {{- $toolsite := cond $nl "https://testtoegankelijkheid.nl" "https://wcagtoolkit.com" -}}
 {{- $toolsiteNaam := cond $nl "Testtoegankelijkheid.nl" "WCAG Toolkit" -}}
 {{- $toolsiteAnder := cond $nl "https://wcagtoolkit.com" "https://testtoegankelijkheid.nl" -}}
@@ -86,7 +86,7 @@ What sets us apart:
        bedankpagina's en academy-hoofdstukken zonder inhoud vallen af; welke sleutels dat
        doen staat in de partial. Elke lijst hieronder gebruikt $zichtbaar of $recent, want
        een lijst die rechtstreeks uit site.RegularPages leest, filtert niets. */ -}}
-{{- $eigenTaal := where site.RegularPages "Lang" site.Language.Lang -}}
+{{- $eigenTaal := where site.RegularPages "Lang" site.Language.Name -}}
 {{- $zichtbaar := partial "llms-zichtbaar.html" $eigenTaal -}}
 {{- $recent := partial "llms-zichtbaar.html" $eigenTaal.ByLastmod.Reverse -}}
 

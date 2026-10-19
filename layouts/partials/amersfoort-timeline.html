@@ -1,9 +1,9 @@
 {{/*
   Horizontale tijdlijn van vandaag tot +3 jaar met bolletjes per website.
-  Data: site.Data.amersfoort.websites (zie data/amersfoort.yaml)
+  Data: hugo.Data.amersfoort.websites (zie data/amersfoort.yaml)
 */}}
 
-{{ $data := site.Data.amersfoort }}
+{{ $data := hugo.Data.amersfoort }}
 {{ $today := now }}
 {{ $windowEnd := $today.AddDate 3 0 0 }}
 {{ $windowMs := sub $windowEnd.Unix $today.Unix }}

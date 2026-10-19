@@ -4,7 +4,7 @@
   class="{{- if not site.Params.theme_switcher -}}
     {{- site.Params.theme_default -}}
   {{- end -}}"
-  lang="{{ site.LanguageCode | default `en-US` }}"
+  lang="{{ site.Language.Locale | default `en-US` }}"
   itemtype="http://schema.org/WebPage">
   <head>
     <!-- head (don't cache it) -->
@@ -47,7 +47,7 @@
          de header en footer van de homepagina: alleen logo en menuknop, en de
          grote footer. De Engelse site houdt de oude, want die twee zijn in het
          Nederlands geschreven. -->
-    {{ $nieuw := or (eq site.Language.Lang "nl") .Params.header_minimaal }}
+    {{ $nieuw := or (eq site.Language.Name "nl") .Params.header_minimaal }}
     {{ if $nieuw }}
       {{ partial "essentials/header-minimaal.html" . }}
     {{ else }}

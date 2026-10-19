@@ -129,7 +129,7 @@
   "name": "{{ .Title }}",
   {{ with .Params.description }}"description": "{{ . }}",{{ end }}
   {{/* De Engelse sectie hoort niet nl-NL te melden. */}}
-  "inLanguage": "{{ cond (eq site.Language.Lang "nl") "nl-NL" "en" }}",
+  "inLanguage": "{{ cond (eq site.Language.Name "nl") "nl-NL" "en" }}",
   "isPartOf": {
     "@id": "{{ site.BaseURL }}#website"
   },
@@ -254,7 +254,7 @@
      temporalCoverage is de meetdatum van de gegevens, los van de publicatiedatum. Bij
      een meetperiode staat er een ISO-interval. */}}
 {{ if and (eq .Section "onderzoek") .IsPage }}
-{{ $taal := cond (eq site.Language.Lang "nl") "nl-NL" "en" }}
+{{ $taal := cond (eq site.Language.Name "nl") "nl-NL" "en" }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
