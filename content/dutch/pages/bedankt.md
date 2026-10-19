@@ -4,6 +4,10 @@ meta_title: "Bedankt | Proper Access"
 date: 2026-02-14
 noindex: true
 robots: noindex, nofollow
+sitemap_exclude: true
+build:
+  list: never
+  render: true
 description: "Contact met auditbureau Proper Access"
 keywords: ["WCAG", "toegankelijke websites", "web accessibility"]
 slug: "bedankt"

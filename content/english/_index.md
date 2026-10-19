@@ -1,8 +1,8 @@
 ---
 title: "Proper Access: digital accessibility that works"
-meta_title: "Proper Access: independent audit bureau for digital accessibility"
+meta_title: "Proper Access: digital accessibility audits and advice"
 date: 2026-01-24
-description: "Proper Access helps organisations with accessibility audits, concrete solutions and a report your developers can act on right away."
+description: "Proper Access audits websites and apps for the Dutch market. You get concrete solutions and a report your developers can act on right away."
 keywords:
   - WCAG
   - European Accessibility Act

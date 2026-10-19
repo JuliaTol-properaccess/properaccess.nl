@@ -1,0 +1,109 @@
+{{- /* Eén pagina in llms-full.txt: kop, URL, description, de tekst, de links eruit en de
+       vragen met antwoord.
+
+       Verwacht een dict met `pagina`, `t` (de labels uit index.llmsfull.txt) en `limiet`
+       (het aantal tekens van de tekst).
+
+       De vragen staan bijna overal in `faqs:` in de frontmatter en worden door de layout
+       gerenderd, niet door `.Content`. Ze zaten daardoor in geen enkele pagina van
+       llms-full.txt, ook niet in de pagina's die ver onder de limiet blijven. Juist die
+       vraag-en-antwoordtekst is wat een assistent citeert. Staat de vraag al in de tekst
+       van de pagina zelf, zoals op `/auditbureau-kiezen/`, dan slaan we het blok over,
+       anders staat alles er twee keer.
+
+       Die overslaanregel kijkt naar `$tekst`, de tekst die hieronder ook echt wordt
+       geprint, en niet naar de volle `.Plain`. Dat scheelt vandaag niets, want de body van
+       `/auditbureau-kiezen/` is 13.567 tekens en blijft onder de limiet van 20.000. Het
+       scheelt zodra iemand de limiet verlaagt: de zeven vragen van die pagina beginnen pas
+       op teken 10.707, dus met een lagere limiet verdwenen ze uit de tekst terwijl het blok
+       nog steeds werd overgeslagen. Dan stond er van die vragen niets meer in het bestand.
+
+       Om dezelfde reden moeten *alle* vragen in `$tekst` staan voordat het blok wegvalt, en
+       niet alleen de eerste. Wordt er middenin de vragen afgekapt, dan is het blok nodig.
+       Vandaag verandert ook dat niets: van de 22 pagina's met een `faqs:`-blok in dit
+       bestand is `/auditbureau-kiezen/` de enige waar de regel afgaat, en daar staan alle
+       zeven vragen in de tekst.
+
+       `safeHTML` staat overal waar tekst de uitvoer in gaat, en dat is nodig: een partial
+       escapet wat hij print, ook als de uitvoer een tekstbestand is en ook als je het
+       bestand `.txt` noemt. Zonder `safeHTML` komt er `Pagina&#39;s` en `950&#43;` in een
+       bestand dat een taalmodel als platte tekst leest. Dat stond er al: het template
+       deed hetzelfde met `truncate`, want die functie is HTML-bewust en escapet de hele
+       tekst. Vandaar ook de `htmlUnescape` na `truncate`, en de eerste ervoor voor een
+       entiteit die `.Plain` laat staan (`&rsquo;` voor een aanhalingsteken). Met losse
+       proefregels gemeten; de volgorde doet er dus toe.
+
+       De tekst is `.Plain` plus `sections[].body` en `steps[].body` uit de frontmatter. Dat
+       is nodig voor de elf Engelse pagina's: die hebben hun paginatekst in die blokken en
+       niet in de body, dus `.Plain` is er bijna leeg. `/en/about-us/` leverde zo 245 tekens,
+       alleen kop, URL en description. De layout `service-en.html` rendert de blokken wel
+       zichtbaar (r74 de kop, r75 de body, r117 de stap), dus het is tekst die een bezoeker
+       ook leest. Het zijn 58 velden in 11 bestanden, samen 21.180 tekens. In
+       `content/dutch/` komen beide sleutels niet voor, dus de Nederlandse uitvoer verandert
+       hier niet van.
+
+       Een blok gaat door `markdownify` voordat `plainify` de HTML eraf haalt, net als in
+       `service-en.html` (r74, r75 en r117), want het blok is Markdown en geen HTML. Met
+       alleen `plainify` blijft de linksyntaxis letterlijk staan: op `/en/about-us/` stond
+       er "Use the [contact page](/en/contact/)", met vierkante haken en een relatief pad,
+       in een bestand dat een taalmodel als platte tekst leest. Geteld over het Engelse
+       bestand: 13 letterlijke Markdown-links zonder deze stap 29, met deze stap weer 13.
+       Die 13 komen uit `faqs[].answer`, dat blok gaat hieronder los door `plainify` en
+       staat niet in de tekst. `markdownify` doet ook de typografie, dus er komen zes
+       kromme aanhalingstekens in het Engelse bestand; het Nederlandse heeft die al, want
+       daar gaat de body dezelfde weg.
+
+       Een blok dat al in `.Plain` staat valt af. Vandaag gaat die regel nergens af:
+       `accessibility-credits` is de enige pagina met een body én blokken, en die body
+       herhaalt de blokken niet. De regel staat er voor de volgende keer, want een
+       geschreven body die een blok overneemt zou alles twee keer in het bestand zetten.
+       Bannertekst (`banner.content`) staat er niet in: die is ook zichtbaar, maar staat in
+       27 Nederlandse bestanden en verandert dan wel de Nederlandse uitvoer. */ -}}
+{{- $p := .pagina -}}
+{{- $t := .t -}}
+{{- $limiet := .limiet -}}
+{{- $plain := $p.Plain | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- $blokken := slice $plain -}}
+{{- range $p.Params.sections -}}
+{{- with .body -}}
+{{- $blok := . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- range $p.Params.steps -}}
+{{- with .body -}}
+{{- $blok := . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+{{- if not (strings.Contains $plain $blok) -}}{{- $blokken = $blokken | append $blok -}}{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $tekst := delimit $blokken " " | truncate $limiet | htmlUnescape -}}
+### {{ $p.Title | safeHTML }}
+
+URL: {{ $p.Permalink }}
+{{ with $p.Params.description }}
+{{ . | safeHTML }}
+{{ end }}
+{{- with $p.Params.service.serviceType }}
+{{ $t.type }}: {{ . | safeHTML }}
+{{ end }}
+{{ $tekst | safeHTML }}
+{{ with partial "llms-links.html" $p }}
+{{ $t.links }}:
+{{ delimit . "\n" | safeHTML }}
+{{ end -}}
+{{- with $p.Params.faqs -}}
+{{- $ontbreekt := false -}}
+{{- range . -}}
+{{- if not (and .question (strings.Contains $tekst .question)) -}}
+{{- $ontbreekt = true -}}
+{{- end -}}
+{{- end -}}
+{{- if $ontbreekt }}
+{{ $t.faq }}:
+{{ range . }}
+#### {{ .question | safeHTML }}
+
+{{ .answer | plainify | replaceRE "\\s+" " " | safeHTML }}
+{{ end -}}
+{{- end -}}
+{{- end }}

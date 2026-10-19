@@ -13,6 +13,7 @@ tags:
   - "wcag"
   - "toetsenbord"
 description: "Bouw je je WordPress-website op een kant-en-klaar thema? Met deze 5 tests op de demo zie je vooraf of het thema toegankelijk is, zonder dat je code hoeft te lezen."
+meta_description: "Bouw je je WordPress-website op een kant-en-klaar thema? Met 5 tests op de demo zie je vooraf of het thema toegankelijk is, zonder code."
 keywords:
   - toegankelijk WordPress thema
   - WordPress accessibility

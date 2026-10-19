@@ -94,6 +94,12 @@
     {{ if eq .Lang "nl" }}{{ $default = . }}{{ end }}
   {{ end }}
   <link rel="alternate" hreflang="x-default" href="{{ $default.Permalink }}" />
+{{ else if and (ne .Kind "404") (ne .Lang "nl") }}
+  {{/* Een Engelse pagina zonder Nederlandse tegenhanger kreeg helemaal geen hreflang.
+       Hij verwijst nu naar zichzelf, zodat de taal van de URL ook los van het
+       lang-attribuut vastligt. Nederlandse pagina's zijn de hoofdtaal en krijgen dit
+       niet: daar voegt een verwijzing naar zichzelf niets toe. */}}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
 {{ end }}
 
 

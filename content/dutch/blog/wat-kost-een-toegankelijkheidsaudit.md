@@ -15,6 +15,7 @@ tags:
   - "kosten"
   - "mini-audit"
 description: "Wat kost een WCAG-audit? Van mini-audit tot volledig onderzoek: overzicht van indicatieprijzen, wat je ervoor krijgt en waar je op moet letten bij het vergelijken van offertes."
+meta_description: "Wat kost een WCAG-audit? Van mini-audit tot volledig onderzoek: wat je ervoor krijgt en waar je op let bij het vergelijken van offertes."
 keywords:
   - wat kost een toegankelijkheidsaudit
   - wcag audit kosten

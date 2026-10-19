@@ -11,6 +11,7 @@ tags:
   - "pdf"
   - "alternatief"
 description: "Mag je een ontoegankelijk element op je website laten staan als er een toegankelijk alternatief op of vlakbij de pagina staat? De '1-klik-regel' uitgelegd vanuit de auditpraktijk."
+meta_description: "Mag een ontoegankelijk element blijven staan als er vlakbij een toegankelijk alternatief is? De 1-klik-regel, uitgelegd vanuit de auditpraktijk."
 keywords:
   - digitale toegankelijkheid
   - WCAG

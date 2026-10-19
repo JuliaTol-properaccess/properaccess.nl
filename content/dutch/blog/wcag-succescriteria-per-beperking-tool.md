@@ -10,6 +10,7 @@ tags:
   - "tools"
   - "gratis"
 description: "55 WCAG 2.2-succescriteria, gefilterd op type beperking. Ontdek welke eisen gelden voor blinde, dove, motorisch beperkte, cognitief beperkte of neurologisch beperkte bezoekers."
+meta_description: "De 55 succescriteria van WCAG 2.2 op niveau A en AA, gefilterd op type beperking. Zo zie je welke eisen gelden voor jouw bezoekers."
 ---
 
 WCAG 2.2 bevat 55 succescriteria. Maar niet elk criterium is relevant voor elke bezoeker. Sommige gaan over kleurgebruik, andere over toetsenbordbediening, en weer andere over bewegende content.

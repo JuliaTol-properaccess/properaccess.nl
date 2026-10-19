@@ -12,6 +12,7 @@ tags:
   - "testen"
   - "wcag"
 description: "VoiceOver staat al op je Mac. Met vijftien toetscombinaties hoor je wat er van je pagina overblijft zonder scherm. Aanzetten, bedienen en herkennen wat er misgaat."
+meta_description: "VoiceOver staat al op je Mac. Met vijftien toetscombinaties hoor je wat er van je pagina overblijft zonder scherm. Zo zet je hem aan."
 image: "/images/blog/voiceover-vo-toets.webp"
 keywords:
   - VoiceOver testen

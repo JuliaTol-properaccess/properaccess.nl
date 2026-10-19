@@ -1,0 +1,214 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "question",
+      "title": "What kind of image is it?",
+      "description": "Answer a few short questions about your image. You get advice straight away on whether it needs alt text and what to write.",
+      "options": [
+        { "label": "Decorative", "description": "Mood shots, backgrounds, icons next to text", "next": "route1_stap1", "icon": "decoratief" },
+        { "label": "Informative", "description": "Charts, diagrams, photos carrying information that matters", "next": "route2_stap1", "icon": "informatief" },
+        { "label": "Clickable or functional", "description": "Buttons, links, icons that carry out an action", "next": "route3_stap1", "icon": "functioneel" },
+        { "label": "Logo", "description": "The logo of an organisation or a brand", "next": "route4_stap1", "icon": "logo" },
+        { "label": "Image of text", "description": "A screenshot, a poster, or any other text as an image", "next": "route5_stap1", "icon": "tekst" }
+      ]
+    },
+
+    {
+      "id": "route1_stap1",
+      "type": "question",
+      "title": "If you leave the image out, is any information lost?",
+      "description": "Think about whether the image adds something that is not already in the text.",
+      "options": [
+        { "label": "Yes, information is lost", "description": "The image holds information that appears nowhere else", "next": "route2_stap1", "icon": "info_verloren" },
+        { "label": "No, the image is purely decorative", "description": "The information is already in the text, or it is a mood shot", "next": "route1_result", "icon": "puur_decoratief" }
+      ]
+    },
+    {
+      "id": "route1_result",
+      "type": "result",
+      "title": "Decorative image",
+      "advice": "The image is decorative. Hide it from assistive technology.",
+      "solutions": [
+        "On an <code>&lt;img&gt;</code>: use <code>alt=\"\"</code>",
+        "On an <code>&lt;svg&gt;</code>: leave out the <code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code> elements, or add <code>aria-hidden=\"true\"</code>"
+      ],
+      "examples": [
+        "Mood shots",
+        "Background images",
+        "Icons next to text that says the same thing",
+        "Images whose information is already written out in text"
+      ]
+    },
+
+    {
+      "id": "route2_stap1",
+      "type": "question",
+      "title": "What kind of informative image is this?",
+      "description": "Work out whether the image stands on its own, is clickable, or turns out to be decorative after all.",
+      "options": [
+        { "label": "Informative", "description": "Holds information that is not written out on the page and is needed to understand the content", "next": "route2_stap2", "icon": "informatief" },
+        { "label": "Clickable without text", "description": "The image is a link or a button, with no text beside it", "next": "route3_stap1", "icon": "knop_zonder_tekst" },
+        { "label": "Clickable with text", "description": "The image is a link or a button, with text beside it", "next": "route3_stap1", "icon": "knop_met_tekst" },
+        { "label": "Decorative after all", "description": "The image adds no information of its own", "next": "route1_stap1", "icon": "puur_decoratief" }
+      ]
+    },
+    {
+      "id": "route2_stap2",
+      "type": "question",
+      "title": "How much information does the image hold?",
+      "description": "Work out whether a short description is enough, or whether you need a longer explanation.",
+      "options": [
+        { "label": "Short and simple", "description": "You can describe the image in two or three lines", "next": "route2_result_kort", "icon": "kort" },
+        { "label": "Complex, a lot of data", "description": "The image holds a lot of information, such as a detailed chart or diagram", "next": "route2_result_complex", "icon": "complex" }
+      ]
+    },
+    {
+      "id": "route2_result_kort",
+      "type": "result",
+      "title": "Short description",
+      "advice": "Write short, clear alt text that carries the information that matters.",
+      "solutions": [
+        "Use the <code>alt</code> attribute on <code>&lt;img&gt;</code>",
+        "Or put a sentence or a table directly above or below the image"
+      ],
+      "examples": [
+        "<code>alt=\"Bar chart of visitor growth in 2024. Monthly average 300, highest 400 in May.\"</code>"
+      ]
+    },
+    {
+      "id": "route2_result_complex",
+      "type": "result",
+      "title": "Complex image",
+      "advice": "A complex image needs two text alternatives.",
+      "solutions": [
+        "<strong>1. Short alt text</strong> that points to the longer description. For example: <code>alt=\"Visitor numbers in 2024, chart. Full description below the image\"</code>",
+        "<strong>2. A longer explanation</strong> below the image: a full description in text, a table with the data, or a file to download"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route3_stap1",
+      "type": "question",
+      "title": "Does the clickable image have text with it?",
+      "description": "A functional image carries out an action, as a button or a link.",
+      "options": [
+        { "label": "Image only, no text", "description": "For example a magnifying glass icon used as a search button", "next": "route3_result_alleen", "icon": "knop_zonder_tekst" },
+        { "label": "Image and text", "description": "For example an icon with the word \"Search\" next to it", "next": "route3_stap2b", "icon": "knop_met_tekst" }
+      ]
+    },
+    {
+      "id": "route3_result_alleen",
+      "type": "result",
+      "title": "Clickable image without text",
+      "advice": "The alt text describes what the image does, not what it looks like.",
+      "solutions": [
+        "Button: <code>alt=\"Search\"</code>",
+        "Link: <code>alt=\"Download annual report 2024\"</code>",
+        "You can use <code>aria-label=\"...\"</code> instead if you know what you are doing"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route3_stap2b",
+      "type": "question",
+      "title": "Does the visible text already explain enough?",
+      "description": "Check whether the text next to the image already makes the action clear.",
+      "options": [
+        { "label": "Yes, the text is enough", "description": "The image adds nothing to what the action is", "next": "route3_result_overbodig", "icon": "ja" },
+        { "label": "No, context is missing", "description": "The image adds context that is not in the text", "next": "route3_result_functie", "icon": "nee" }
+      ]
+    },
+    {
+      "id": "route3_result_overbodig",
+      "type": "result",
+      "title": "The image is redundant",
+      "advice": "The visible text already makes the action clear, so assistive technology does not need the image.",
+      "solutions": [
+        "Use <code>alt=\"\"</code> so screen readers skip the image"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route3_result_functie",
+      "type": "result",
+      "title": "The image adds context",
+      "advice": "Write alt text that describes the context the image adds.",
+      "solutions": [
+        "Describe what the image adds to the action. For example: <code>alt=\"PDF\"</code>"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route4_stap1",
+      "type": "question",
+      "title": "Is the logo clickable?",
+      "description": "A logo that links somewhere, usually the homepage, needs different alt text from a logo that just sits on the page.",
+      "options": [
+        { "label": "No, the logo is not clickable", "description": "The logo sits on the page as an image, without a link", "next": "route4_result_statisch", "icon": "logo_statisch" },
+        { "label": "Yes, the logo is a link", "description": "The logo links to another page, usually the homepage", "next": "route4_result_link", "icon": "logo_link" }
+      ]
+    },
+    {
+      "id": "route4_result_statisch",
+      "type": "result",
+      "title": "Static logo",
+      "advice": "Use the name of the organisation as the alt text.",
+      "solutions": [
+        "For example: <code>alt=\"City of Amsterdam, logo\"</code>"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route4_result_link",
+      "type": "result",
+      "title": "Clickable logo",
+      "advice": "The alt text has to carry the text in the logo and make the destination clear.",
+      "solutions": [
+        "For example: <code>alt=\"City of Amsterdam, to the homepage\"</code>"
+      ],
+      "examples": []
+    },
+
+    {
+      "id": "route5_stap1",
+      "type": "question",
+      "title": "Could you put the text on the page as real text instead?",
+      "description": "Text inside an image is hard to read, does not scale and is not accessible.",
+      "options": [
+        { "label": "Yes, real text is possible", "description": "The text can go on the page as HTML", "next": "route5_result_html", "icon": "html_tekst" },
+        { "label": "No, it is art or design", "description": "For example a poster, calligraphy or an artistic design", "next": "route5_result_alt", "icon": "kunst" }
+      ]
+    },
+    {
+      "id": "route5_result_html",
+      "type": "result",
+      "title": "Use real text",
+      "advice": "Put the text on the page as real HTML instead of an image. Text inside an image is hard to read and not accessible.",
+      "solutions": [
+        "Replace the image with real text, styled with CSS",
+        "Use a web font if the typeface matters"
+      ],
+      "examples": []
+    },
+    {
+      "id": "route5_result_alt",
+      "type": "result",
+      "title": "Describe the text in the alt text",
+      "advice": "Describe the text that appears in the image.",
+      "solutions": [
+        "For example: <code>alt=\"Poster reading 'Freedom for everyone' in handwritten lettering\"</code>"
+      ],
+      "examples": []
+    }
+  ],
+  "tips": [
+    "Describe meaning, not appearance",
+    "Keep it short and clear",
+    "Do not write \"image of\"",
+    "Do not repeat text that is already visible",
+    "Ask yourself: what does someone need to know if they cannot see this?"
+  ]
+}

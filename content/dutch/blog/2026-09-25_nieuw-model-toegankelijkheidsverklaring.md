@@ -10,6 +10,7 @@ tags:
   - "toegankelijkheidsverklaring"
   - "digitoegankelijk"
 description: "Per 1 oktober 2026 geldt een nieuw model voor de toegankelijkheidsverklaring. Wettelijke uitzonderingen en toegankelijke alternatieven moet je benoemen, en status C loopt bij opheffing 12 maanden. Met voorbeelden."
+meta_description: "Per 1 oktober 2026 geldt een nieuw model voor de toegankelijkheidsverklaring. Drie dingen veranderen: uitzonderingen, alternatieven en status C."
 keywords:
   - modeltoegankelijkheidsverklaring
   - toegankelijkheidsverklaring
