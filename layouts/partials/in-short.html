@@ -1,0 +1,28 @@
+{{/* "In short"-blok, direct onder de hero.
+
+     De tekst komt uit `in_short` in de front matter en wordt als platte alinea
+     getoond, zonder Markdown, zodat de zichtbare tekst gelijk is aan het veld.
+
+     Dezelfde pagina's krijgen één WebPage-node met speakable op #in-short en
+     #faq. De FAQPage komt apart uit `faqs` in json-ld.html; dit blok voegt
+     geen tweede FAQPage toe. */}}
+{{- with .Params.in_short }}
+<section class="hp-container" id="in-short">
+  <aside class="article-tldr" aria-labelledby="in-short-heading">
+    <h2 id="in-short-heading" class="article-tldr__title">{{ i18n "tldr_capsule_title" | default "In short" }}</h2>
+    <div class="article-tldr__body">
+      <p>{{ . }}</p>
+    </div>
+  </aside>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["#in-short", "#faq"]
+  }
+}
+</script>
+{{- end }}

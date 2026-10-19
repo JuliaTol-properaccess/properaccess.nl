@@ -38,6 +38,10 @@
 {{ end }}
 
 
+<!-- ─── IN SHORT (direct onder de hero, alleen als in_short gezet is) ─── -->
+{{ partial "in-short.html" . }}
+
+
 <!-- ─── TRUST BAR ─── -->
 {{ with .Params.trust }}
 <section class="hp-trust">
@@ -135,7 +139,7 @@
 
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+<section class="hp-faq"{{ if $.Params.in_short }} id="faq"{{ end }}>
   <div class="hp-container">
     <h2 class="hp-heading-lg hp-faq__title">Frequently asked questions</h2>
     <div class="hp-faq__container faq-container">
@@ -143,7 +147,11 @@
         <details class="faq-item">
           <summary class="faq-question">{{ .question }}</summary>
           <div class="faq-answer">
+            {{ if $.Params.in_short }}
+            <p>{{ .answer }}</p>
+            {{ else }}
             <p>{{ .answer | markdownify }}</p>
+            {{ end }}
           </div>
         </details>
       {{ end }}
