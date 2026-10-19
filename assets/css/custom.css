@@ -13816,6 +13816,38 @@ a.tool-link__href-url:hover {
   color: #A30D4B;
 }
 
+/* Info-notices uit de theme gebruiken standaard lichtblauw (#09c3ed) als
+   tekstkleur. Dat haalt niet genoeg contrast op de halftransparante achtergrond.
+   Gebruik hier Proper Access-teal voor tekst en rand, met een vaste lichte
+   achtergrond. */
+.notice.info {
+  color: #004050;
+  background-color: #e8f3f4;
+  border-color: #004050;
+}
+
+.notice.info .notice-head p {
+  color: #004050;
+}
+
+.notice.info .notice-head svg {
+  color: #004050;
+}
+
+html.dark .notice.info {
+  color: #e5f7f7;
+  background-color: #12323a;
+  border-color: #8bd3d3;
+}
+
+html.dark .notice.info .notice-head p {
+  color: #e5f7f7;
+}
+
+html.dark .notice.info .notice-head svg {
+  color: #8bd3d3;
+}
+
 /* Zelfde lijst-inspringing in de blog-wcag layout (categorie "wcag-uitgelegd"
    met afbeelding gebruikt .blog-wcag__text i.p.v. .case__body). De prose-regels
    uit @tailwindcss/typography hebben specificiteit 0,0,0 en verliezen het van de
