@@ -14,7 +14,7 @@
   linktekst komt uit het veld naam; het veld name is de Engelse vorm voor
   essentials/footer.html.
 */}}
-{{ $data := site.Data.footer_groot }}
+{{ $data := hugo.Data.footer_groot }}
 <footer class="fg">
   <div class="fg__inner">
 
@@ -51,7 +51,7 @@
       <div class="fg__kolom">
         <h2 class="fg__titel">Volg ons</h2>
         <ul class="fg__lijst">
-          {{ range site.Data.social.main }}
+          {{ range hugo.Data.social.main }}
             <li>
               <a class="fg__link" href="{{ .link }}" target="_blank" rel="noopener">
                 {{- .naam | default .name -}}

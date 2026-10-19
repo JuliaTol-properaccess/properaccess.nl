@@ -1,14 +1,14 @@
 ################ Dutch language ##################
 [nl]
-languageName = "NL"
-languageCode = "nl"
+label = "NL"
+locale = "nl"
 contentDir = "content/dutch"
 weight = 1
 
 ################ English language ##################
 [en]
-languageName = "EN"
-languageCode = "en-us"
+label = "EN"
+locale = "en-US"
 contentDir = "content/english"
 weight = 2
 

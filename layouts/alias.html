@@ -36,7 +36,7 @@
   doorverwijspagina een langere description dan de pagina zelf. */ -}}
 {{- with $p -}}{{- $beschrijving = or .Params.meta_description .Description .Params.description "" -}}{{- end -}}
 <!DOCTYPE html>
-<html lang="{{ with $p }}{{ .Language.LanguageCode }}{{ else }}nl{{ end }}">
+<html lang="{{ with $p }}{{ .Language.Locale }}{{ else }}nl{{ end }}">
 <head>
 <meta charset="utf-8">
 <title>{{ with $titel }}{{ . }}{{ else }}{{ $doel }}{{ end }}</title>
@@ -50,7 +50,7 @@
 </head>
 <body>
 {{- $en := false -}}
-{{- with $p }}{{ if eq .Language.Lang "en" }}{{ $en = true }}{{ end }}{{ end }}
+{{- with $p }}{{ if eq .Language.Name "en" }}{{ $en = true }}{{ end }}{{ end }}
 <main>
 <h1>{{ if $en }}This page has moved{{ else }}Deze pagina is verhuisd{{ end }}</h1>
 <p>{{ if $en }}Go to{{ else }}Ga naar{{ end }} <a href="{{ $doel }}">{{ $naam }}</a></p>

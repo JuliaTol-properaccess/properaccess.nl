@@ -9,7 +9,7 @@ Handleiding voor het handmatig beheren van properaccess.nl. De site draait op **
 
 Zorg dat je deze tools geinstalleerd hebt:
 
-- **Hugo Extended** v0.151.0+ — `brew install hugo`
+- **Hugo Extended** v0.168.0+ — `brew install hugo`
 - **Node.js** — `brew install node`
 - **Go** — `brew install go`
 - **Git** — al aanwezig op macOS

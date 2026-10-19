@@ -276,7 +276,7 @@
 {{/* Paginanamen voor de links in de antwoorden: de chat geeft een URL, het
      script maakt daar een link met de naam van de pagina van. */}}
 {{ $paginas := dict "/contact/" "Contact" "/" "De homepagina" }}
-{{ range site.Data.footer_groot.kolommen }}{{ range .links }}{{ $paginas = merge $paginas (dict .url .naam) }}{{ end }}{{ end }}
+{{ range hugo.Data.footer_groot.kolommen }}{{ range .links }}{{ $paginas = merge $paginas (dict .url .naam) }}{{ end }}{{ end }}
 <script type="application/json" id="hb-paginas">{{ $paginas | jsonify | safeJS }}</script>
 <script src="{{ "js/homepage-b.js" | relURL }}" defer></script>
 

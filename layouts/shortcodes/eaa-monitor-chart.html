@@ -2,7 +2,7 @@
      data/eaa_monitor.yaml. Eén reeks: het aandeel zonder verklaring. De
      volledige uitsplitsing staat in de tabel eronder, zodat niemand op
      kleur alleen hoeft te lezen. Teksten zijn Engels; de pagina is Engels. */}}
-{{- $d := site.Data.eaa_monitor -}}
+{{- $d := hugo.Data.eaa_monitor -}}
 {{- $id := .Get "id" | default "eaa-monitor" -}}
 <section class="emc" id="{{ $id }}">
   <div class="hp-container">

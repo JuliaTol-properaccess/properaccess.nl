@@ -85,7 +85,7 @@
         <a class="hm__link" href="/academy/">Academy</a>
         <a class="hm__link" href="/auditbureau-digitale-toegankelijkheid/">Over ons</a>
         {{- $en := "/en/" -}}
-        {{- range .Translations -}}{{- if eq .Language.Lang "en" -}}{{- $en = .RelPermalink -}}{{- end -}}{{- end }}
+        {{- range .Translations -}}{{- if eq .Language.Name "en" -}}{{- $en = .RelPermalink -}}{{- end -}}{{- end }}
         <a class="hm__link" href="{{ $en }}" lang="en" hreflang="en">English</a>
       </div>
       <div class="hm__groep hm__groep--actie">

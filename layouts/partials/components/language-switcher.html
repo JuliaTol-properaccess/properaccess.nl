@@ -13,26 +13,26 @@
 {{ $pageTranslations := newScratch }}
 {{/* First, fill all translations of the Home page (failsafe) */}}
 {{ range site.Home.AllTranslations }}
-  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+  {{ $pageTranslations.Set .Language.Name .Permalink }}
 {{ end }}
 {{/* Second, if a translation exists for the current page for the target language, replace failsafe */}}
 {{ range $context.AllTranslations }}
-  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+  {{ $pageTranslations.Set .Language.Name .Permalink }}
 {{ end }}
 
 <select class="{{ $class }}" data-taalkiezer aria-label="{{ T "language_label" }}">
-  {{ range site.Languages }}
+  {{ range hugo.Sites }}
     {{/* Fill the dropdown with all known languages */}}
-    {{ $link := $pageTranslations.Get .Lang }}
+    {{ $link := $pageTranslations.Get .Language.Name }}
     {{ if $link }}
       <option
-        id="{{ .Lang }}"
+        id="{{ .Language.Name }}"
         value="{{ $link }}"
-      {{ if eq .Lang $pageLang }}
+      {{ if eq .Language.Name $pageLang }}
         selected
       {{ end }}
         >
-        {{ .LanguageName }}
+        {{ .Language.Label }}
       </option>
     {{ else }}
       {{/* if we can't safely redirect the user to the translated page or at least to translated home, discard the language from options */}}

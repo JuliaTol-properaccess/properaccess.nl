@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
+{{ $bm := index hugo.Data.bookmarklets .Params.bookmarklet_key }}
 {{ $nl := eq .Lang "nl" }}
 {{/* De naam op de sleepknop wordt de naam van de bladwijzer in de browser. De
      paginatitel is daar te lang voor, dus die kan per pagina worden overschreven

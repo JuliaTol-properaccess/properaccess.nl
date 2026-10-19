@@ -7,7 +7,7 @@
 
       <p class="aanraders__note">We krijgen niets betaald voor deze vermeldingen. Het zijn bedrijven die we kennen en vertrouwen.</p>
 
-      {{ $items := where (index site.Data "bijzondere-initiatieven").items "naam" "!=" nil }}
+      {{ $items := where (index hugo.Data "bijzondere-initiatieven").items "naam" "!=" nil }}
 
       {{/* Vaste filters: de rollen waarvoor een initiatief nuttig kan zijn */}}
       {{ $filters := slice "Contentmaker" "Webbouwer" "Websitebezoeker" }}

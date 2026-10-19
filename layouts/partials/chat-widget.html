@@ -1,5 +1,5 @@
 {{/* Chat Widget — Accessible AI assistant for Proper Access */}}
-<div class="pa-chat-wrapper" data-lang="{{ site.Language.Lang }}">
+<div class="pa-chat-wrapper" data-lang="{{ site.Language.Name }}">
 
   {{/* Toggle button. De tekst is zichtbaar, niet alleen voor een schermlezer:
        bezoekers lazen een los tekstballonnetje niet als zoekfunctie, terwijl
@@ -15,7 +15,7 @@
     aria-expanded="false"
     aria-controls="pa-chat-dialog"
   >
-    {{ if eq site.Language.Lang "nl" }}
+    {{ if eq site.Language.Name "nl" }}
       {{ partial "icoon-zoek.html" 22 }}
     {{ else }}
       <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

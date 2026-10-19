@@ -8,7 +8,7 @@
       {{/* Uitgelichte rij: WCAG Radar met sleepbare bookmarklet-knop */}}
       {{ $lens := .GetPage "wcag-radar" }}
       {{ with $lens }}
-        {{ $bm := index site.Data.bookmarklets .Params.bookmarklet_key }}
+        {{ $bm := index hugo.Data.bookmarklets .Params.bookmarklet_key }}
         <div class="lens-hero">
           <div class="lens-hero__content">
             <p class="lens-hero__label">{{ if eq $.Lang "nl" }}Gratis bookmarklet{{ else }}Free bookmarklet{{ end }}</p>

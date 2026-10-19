@@ -2,7 +2,7 @@
 {{/* Teksten per taal uit data/tools/aria_referentie.json. Dezelfde bron gaat als
      window.__paToolI18n naar het script, zodat de HTML en de taalschakelaar
      dezelfde tekst gebruiken. */}}
-{{ $i18n := site.Data.tools.aria_referentie }}
+{{ $i18n := hugo.Data.tools.aria_referentie }}
 {{ $t := index $i18n .Lang }}
 {{ if not $t }}{{ $t = $i18n.nl }}{{ end }}
 <section class="section pt-14">

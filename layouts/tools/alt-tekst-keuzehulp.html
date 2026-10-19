@@ -2,8 +2,8 @@
 {{/* Teksten per taal uit data/tools/alt_tekst_keuzehulp.json. De keuzehulp zelf komt
      uit het databestand dat daar per taal bij staat. Bestaat het Engelse bestand nog
      niet, dan valt de pagina terug op het Nederlandse en breekt de build niet. */}}
-{{ $t := index site.Data.tools.alt_tekst_keuzehulp .Lang }}
-{{ if not $t }}{{ $t = site.Data.tools.alt_tekst_keuzehulp.nl }}{{ end }}
+{{ $t := index hugo.Data.tools.alt_tekst_keuzehulp .Lang }}
+{{ if not $t }}{{ $t = hugo.Data.tools.alt_tekst_keuzehulp.nl }}{{ end }}
 {{ $keuzehulpData := printf "data/apps/%s" $t.data }}
 {{ if not (fileExists $keuzehulpData) }}{{ $keuzehulpData = "data/apps/alt_tekst_keuzehulp.json" }}{{ end }}
 <section class="section pt-14">
