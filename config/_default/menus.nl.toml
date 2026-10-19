@@ -1,6 +1,11 @@
 ############# Dutch navigation ##############
 
 # main menu
+# Let op: dit hoofdmenu rendert sinds 19-09-2026 op geen enkele Nederlandse
+# pagina. Alleen layouts/partials/essentials/header.html leest site.Menus.main,
+# en die header draait alleen op /en/. Het Nederlandse menu staat als vaste
+# HTML in essentials/header-minimaal.html; wijzig een NL-menu-item daar.
+# Gemeten op de build van 13-10-2026.
 [[main]]
 name = "Voor wie"
 weight = 2
@@ -58,6 +63,12 @@ parent = "Diensten"
 name = "App-audit"
 url = "/app-toegankelijkheid-testen/"
 weight = 2
+
+[[main]]
+parent = "Diensten"
+name = "Training webredactie"
+url = "/trainen-van-webredactie/"
+weight = 3
 
 [[main]]
 name = "Blog"
