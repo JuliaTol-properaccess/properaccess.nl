@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar: contrast, koppen en alt-teksten checken in je browser"
 meta_title: "Kleurcontrast, koppen en alt-teksten checken in je browser | Proper Access"
-description: "Check kleurcontrast, koppen, alt-teksten, linkteksten en tekstafstand op elke pagina in je browser. 28 van de 45 checks zijn gratis, zonder account."
+description: "Check kleurcontrast, koppen, alt-teksten, linkteksten en tekstafstand op elke pagina in je browser. 29 van de 50 checks zijn gratis, zonder account."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"
 bookmark_naam: "WCAG Radar"
@@ -42,7 +42,7 @@ keywords:
   - tekst vergroten testen
   - focus zichtbaar maken
   - bookmarklet toegankelijkheid
-hero_sub: "Een knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, die op elke pagina laat zien hoe het met de toegankelijkheid staat. 28 van de 45 checks zijn gratis en vragen geen account. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De Radar rekent alles in je eigen browser uit: hij verstuurt niets en slaat niets op."
+hero_sub: "Een knop in je bladwijzerbalk of een extensie voor Chrome en Firefox, die op elke pagina laat zien hoe het met de toegankelijkheid staat. 29 van de 50 checks zijn gratis en vragen geen account. Koppen, alt-teksten, contrast, focus en ARIA, direct zichtbaar op je eigen scherm. De Radar rekent alles in je eigen browser uit: hij verstuurt niets en slaat niets op."
 rollen:
   - eyebrow: "Voor webredactie"
     titel: "De controles die je elke week doet, in één klik"
@@ -357,4 +357,4 @@ Bovenin het paneel wissel je tussen drie tabbladen, afgestemd op wat jij doet. E
 
 Vindt een check iets, dan verschijnen er knoppen om vooruit en achteruit door de resultaten te springen. Zo loop je elke bevinding op de pagina langs zonder zelf te zoeken.
 
-De Radar telt 45 checks. Daarvan zijn er 28 gratis en die blijven dat, zonder account. De overige 17 zijn gemarkeerd met "Licentie": die staan wel in het paneel, maar draaien pas als je een licentie hebt. Daarbij hoort ook het opslaan van een rapport van je testsessie. Wat een licentie kost, staat op [de prijzenpagina van Testtoegankelijkheid](https://testtoegankelijkheid.nl/prijzen).
+De Radar telt 50 checks. Daarvan zijn er 29 gratis en die blijven dat, zonder account. De overige 21 zijn gemarkeerd met "Licentie": die staan wel in het paneel, maar draaien pas als je een licentie hebt. Daarbij hoort ook het opslaan van een rapport van je testsessie. Wat een licentie kost, staat op [de prijzenpagina van Testtoegankelijkheid](https://testtoegankelijkheid.nl/prijzen).
