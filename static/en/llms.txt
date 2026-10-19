@@ -34,7 +34,7 @@ index at [properaccess.nl/llms.txt](https://www.properaccess.nl/llms.txt).
 
 ## Free tools
 
-- [WCAG Radar](https://www.properaccess.nl/en/tools/wcag-radar/): bookmarklet and browser extension for Chrome and Firefox, with three tabs (Editors, Designer, Developer) that show live, on the page you are looking at, whether alt text, headings, link text, labels, contrast, use of colour, focus, target size, text spacing, ARIA and tab order hold up. Runs locally in your browser, works behind a login and on localhost. The free version does 28 of the 45 checks, without an account. The tool itself runs on our English tool site [wcagtoolkit.com](https://wcagtoolkit.com)
+- [WCAG Radar](https://www.properaccess.nl/en/tools/wcag-radar/): bookmarklet and browser extension for Chrome and Firefox, with three tabs (Editors, Designer, Developer) that show live, on the page you are looking at, whether alt text, headings, link text, labels, contrast, use of colour, focus, target size, text spacing, ARIA and tab order hold up. Runs locally in your browser, works behind a login and on localhost. The free version does 29 of the 50 checks, without an account. The tool itself runs on our English tool site [wcagtoolkit.com](https://wcagtoolkit.com)
 - [All tools](https://www.properaccess.nl/en/tools/): the full list
 - [Colour contrast checker](https://www.properaccess.nl/en/tools/colour-contrast-checker/): enter two colours and see whether the combination meets WCAG 2.2 level AA and AAA
 - [PDF accessibility checker](https://www.properaccess.nl/en/tools/pdf-checker/): which accessibility problems are in your PDF. No account, and the file is deleted as soon as the check is done

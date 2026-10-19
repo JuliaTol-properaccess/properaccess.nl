@@ -1,8 +1,10 @@
 # Linkkolommen van de grote footer (partial essentials/footer-groot.html).
 # Staat onder de homepagina (front matter footer_groot), zie
 # docs/homepage-vernieuwing-ab-test.md. Een pagina toevoegen is één regel.
-# Trainingen staan er bewust niet in: die bieden we sinds 17-09-2026 niet
-# actief aan.
+# De training webredactie staat er sinds 13-10-2026 weer in: we bieden de
+# trainingen sinds 8 oktober 2026 weer actief aan, in dagdelen.
+# /training-devteams/ staat er bewust niet in en blijft bereikbaar via de
+# contentpagina's.
 
 kolommen:
   - titel: "Diensten"
@@ -10,6 +12,7 @@ kolommen:
       - { naam: "WCAG-audit", url: "/toegankelijkheidsaudit/" }
       - { naam: "Monitoring van je website", url: "/automatische-monitoring/" }
       - { naam: "App-audit", url: "/app-toegankelijkheid-testen/" }
+      - { naam: "Training webredactie", url: "/trainen-van-webredactie/" }
       - { naam: "Contentaudit", url: "/contentaudit/" }
       - { naam: "Techniek- of systeemaudit", url: "/techniekaudit/" }
       - { naam: "Hercontrole", url: "/hercontrole/" }
@@ -56,6 +59,7 @@ kolommen:
       - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
       - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
       - { naam: "Onderzoek", url: "/onderzoek/" }
+      - { naam: "Nieuws over toegankelijkheid", url: "/nieuws/" }
       - { naam: "Academy", url: "/academy/" }
       - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
       - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }

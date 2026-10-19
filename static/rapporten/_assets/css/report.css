@@ -293,6 +293,16 @@ body:has(.dashboard) {
   color: #1f2937;
 }
 
+/* De impactkaart heeft vier korte regels; in twee kolommen blijft er rechts
+   geen lege ruimte over. Gericht op #stat-klein, zodat ook al gepubliceerde
+   rapporten dit krijgen zonder nieuwe HTML. */
+.stat-breakdown:has(#stat-klein) {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 2rem;
+  row-gap: 0.25rem;
+}
+
 .stat-sublabel {
   display: block;
   font-size: 0.85rem;

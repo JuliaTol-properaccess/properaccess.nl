@@ -1,0 +1,174 @@
+{{ define "main" }}
+  {{/* Weekpagina van de rubriek Nieuws over toegankelijkheid. De berichten staan in
+       items in de front matter, niet in de tekst van de pagina. Daardoor staan de kop,
+       de bron, de link en onze eigen tekst ook in de ItemList in de JSON-LD, en zien
+       een lezer en een zoekmachine hetzelfde. Zie layouts/partials/json-ld.html. */}}
+
+  {{/* Eis uit het ontwerp: een weekpagina publiceert geen kale linkenlijst. Elk bericht
+       heeft een kop, een link naar de bron en eigen tekst van ons. Mist een bericht een
+       kop, een url of een bron, dan laat errorf de build vallen met de naam van het
+       bestand erbij: dat is een bericht dat niet te renderen is, en dan deployt er
+       niets. Drafts bouwen niet mee in productie. */}}
+  {{ $items := .Params.items }}
+  {{ range $i, $item := $items }}
+    {{ $nummer := add $i 1 }}
+    {{ if not $item.kop }}
+      {{ errorf "Weekpagina %q: bericht %d heeft geen kop." $.File.Path $nummer }}
+    {{ end }}
+    {{ if not $item.url }}
+      {{ errorf "Weekpagina %q: bericht %d (%q) heeft geen url naar de bron." $.File.Path $nummer $item.kop }}
+    {{ end }}
+    {{ if not $item.bron }}
+      {{ errorf "Weekpagina %q: bericht %d (%q) heeft geen bron." $.File.Path $nummer $item.kop }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Het aantal berichten en het aantal eigen woorden per bericht laten de build niet
+       vallen. Haalt de pagina de ondergrenzen van de rubriek niet, dan krijgt hij een
+       noindex (layouts/partials/basic-seo.html) en valt hij uit de sitemap en uit
+       llms-full.txt. Het aantal berichten is een redactiekeuze en die ligt bij Julia,
+       niet bij de build: valt de build daarop, dan kan er in een stille week niets uit,
+       ook niet als Julia zegt dat het wel moet. Besluit van Chief, 11 oktober 2026.
+
+       De melding hieronder staat in het log van elke build die zo'n pagina rendert. De
+       controle op een pull request leest de regel met het volledige getal terug; die
+       staat er alleen als de build draait met HUGO_PARAMS_NIEUWSTELLING=true, zodat het
+       log van de deploy-run er niet elke keer 52 regels bij krijgt. Zie
+       scripts/nieuws_telling.py en docs/nieuws-rubriek.md. */}}
+  {{ $telling := partialCached "nieuws-telling.html" . .RelPermalink }}
+  {{ if $telling.noindex }}
+    {{ warnf "Weekpagina %q krijgt een noindex: %s. De pagina blijft staan en blijft op /nieuws/ te zien, maar komt niet in de zoekmachines, niet in de sitemap en niet in llms-full.txt. Zie docs/nieuws-rubriek.md." $telling.bestand (delimit $telling.redenen "; ") }}
+  {{ end }}
+  {{ if site.Params.nieuwstelling }}
+    {{ warnf "NIEUWSTELLING %s" (jsonify $telling) }}
+  {{ end }}
+
+  <article class="nieuws-week">
+    <section class="nieuws-week__hero">
+      <div class="container">
+        {{ partial "breadcrumb.html" . }}
+        {{ partial "nieuws-weekperiode.html" (dict "pagina" . "klasse" "nieuws-week__eyebrow") }}
+        <h1 class="nieuws-week__titel">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="nieuws-week__beschrijving">{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+
+    <div class="container nieuws-week__kolom">
+      {{/* Samenvatting bovenaan. Dezelfde klasse als bij een blogartikel, zodat de
+           speakable-markering in json-ld.html er ook hier bij past. */}}
+      {{ with .Params.tldr }}
+        <aside class="article-tldr" aria-labelledby="tldr-heading">
+          <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_title" }}</h2>
+          <div class="article-tldr__body">{{ . | markdownify }}</div>
+        </aside>
+      {{ end }}
+
+      {{ with .Content }}
+        <div class="nieuws-week__intro content">{{ . }}</div>
+      {{ end }}
+
+      {{/* De berichten, gegroepeerd onder een kopje per doelgroep. De indeling komt uit
+           layouts/partials/nieuws-secties.html; de sleutels en de kopteksten staan in
+           data/nieuws.yaml onder `secties:`. Het id per bericht blijft bericht-1,
+           bericht-2 en zo verder, geteld in de front matter, zodat de ItemList in de
+           JSON-LD naar een plek op deze pagina kan wijzen en iemand een bericht kan
+           doorsturen.
+
+           Een bericht zonder `sectie` komt onderaan te staan, buiten de kopjes. Een
+           weekpagina die dat veld nog niet heeft, rendert dus zoals hij rendeerde: één
+           lijst met genummerde berichten, zonder kopjes en zonder sprongenlijst.
+
+           De lijsten staan er alleen als er berichten zijn: een weekpagina zonder items
+           valt de build niet meer, dus een lege ol is mogelijk en die hoort er niet. */}}
+      {{ $secties := partialCached "nieuws-secties.html" . .RelPermalink }}
+      {{ $gegroepeerd := gt (len $secties.groepen) 0 }}
+
+      {{/* Een sectie die niet in data/nieuws.yaml staat, is een typefout in de front
+           matter. Het bericht blijft op de pagina staan, onderaan buiten de kopjes, en
+           deze regel zegt in het buildlog welk bericht het is. De build valt er niet
+           op: een bericht dat wel te renderen is, hoort de hele site niet stil te
+           zetten. */}}
+      {{ range $secties.onbekend }}
+        {{ warnf "Weekpagina %q: bericht %d (%q) heeft sectie %q, en die staat niet in data/nieuws.yaml. Het bericht komt onderaan de pagina te staan, buiten de kopjes. De sleutels zijn: %s." $.File.Path .nummer .kop .sectie (delimit $secties.sleutels ", ") }}
+      {{ end }}
+      {{ if gt (len $secties.hoofditems) 1 }}
+        {{ warnf "Weekpagina %q: %d berichten hebben hoofditem: true (bericht %s). De titel van de pagina komt van één bericht, dus zet het veld bij één bericht." $.File.Path (len $secties.hoofditems) (delimit $secties.hoofditems ", " " en ") }}
+      {{ end }}
+
+      {{/* De sprongenlijst. Alleen bij twee of meer secties: boven één kopje met drie
+           berichten is hij ruis. De kop erboven is zichtbaar en is tegelijk de naam van
+           de nav, via aria-labelledby. */}}
+      {{ if $secties.sprongen }}
+        <nav class="nieuws-week__sprongen" aria-labelledby="op-deze-pagina">
+          <h2 class="nieuws-week__sprongen-kop" id="op-deze-pagina">{{ i18n "nieuws_op_deze_pagina" }}</h2>
+          <ul class="nieuws-week__sprongen-lijst">
+            {{ range $secties.groepen }}
+              <li class="nieuws-week__sprong">
+                <a class="nieuws-week__sprongen-link" href="#{{ .sleutel }}">{{ .kop }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      {{ end }}
+
+      {{/* Per sectie een eigen section met de kop als naam. Het anker is de sleutel uit
+           data/nieuws.yaml (#wetten) en niet de koptekst: een herschreven kop laat dan
+           geen kapotte link achter in een week die al gepubliceerd is. */}}
+      {{ range $secties.groepen }}
+        <section class="nieuws-sectie" aria-labelledby="{{ .sleutel }}">
+          <h2 class="nieuws-sectie__kop" id="{{ .sleutel }}">{{ .kop }}</h2>
+          <ol class="nieuws-berichten nieuws-berichten--zonder-nummers">
+            {{ range .berichten }}
+              {{ partial "nieuws-bericht.html" (dict "bericht" . "niveau" 3) }}
+            {{ end }}
+          </ol>
+        </section>
+      {{ end }}
+
+      {{/* De berichten buiten de kopjes. Zonder secties op de pagina is dit de hele
+           lijst, met de zichtbare nummers die er altijd stonden. Staan er wel secties,
+           dan vallen die nummers weg: ze zouden niet op 1 beginnen en een rangorde over
+           de kopjes heen suggereren die er niet is. De koppen van deze berichten staan
+           niet onder een sectiekop, dus ze zijn niveau 2 en niet 3. */}}
+      {{ with $secties.los }}
+        <ol class="nieuws-berichten{{ if $gegroepeerd }} nieuws-berichten--zonder-nummers nieuws-berichten--los{{ end }}">
+          {{ range . }}
+            {{ partial "nieuws-bericht.html" (dict "bericht" . "niveau" 2) }}
+          {{ end }}
+        </ol>
+      {{ end }}
+
+      {{/* De week ervoor en de week erna. .NextInSection is in de standaardvolgorde van
+           Hugo de pagina die vóór deze staat, en dat is de nieuwere week; .PrevInSection
+           is de oudere. Gemeten met twee weekpagina's, zie de pull request. */}}
+      {{ $ouder := .PrevInSection }}
+      {{ $nieuwer := .NextInSection }}
+      {{ if or $ouder $nieuwer }}
+        <nav class="nieuws-week__buren" aria-label="{{ i18n "nieuws_andere_weken" }}">
+          <ul class="nieuws-week__buren-lijst">
+            {{ with $ouder }}
+              <li class="nieuws-week__buur nieuws-week__buur--ouder">
+                <span class="nieuws-week__buur-label">{{ i18n "nieuws_vorige_week" }}</span>
+                <a class="nieuws-week__buur-link" href="{{ .RelPermalink }}" rel="prev">{{ .Title }}</a>
+              </li>
+            {{ end }}
+            {{ with $nieuwer }}
+              <li class="nieuws-week__buur nieuws-week__buur--nieuwer">
+                <span class="nieuws-week__buur-label">{{ i18n "nieuws_volgende_week" }}</span>
+                <a class="nieuws-week__buur-link" href="{{ .RelPermalink }}" rel="next">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      {{ end }}
+
+      <p class="nieuws-week__terug">
+        <a href="{{ .CurrentSection.RelPermalink }}">{{ i18n "nieuws_alle_weken" }}</a>
+      </p>
+    </div>
+  </article>
+
+  {{ partial "call-to-action.html" . }}
+{{ end }}

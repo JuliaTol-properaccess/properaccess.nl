@@ -179,7 +179,7 @@ Zet de zoom van je browser op 400%, met Ctrl en + of met Cmd en + op een Mac. Va
 
 {{< route-stap n="03" title="Laat een gratis tool meekijken" >}}
 
-Met de [WCAG Radar van Proper Access](/tools/wcag-radar/) loop je 45 checks langs, waarvan er 28 gratis zijn en zonder account werken. Voor pdf's is er de [pdf-checker](/tools/pdf-checker/). Een tool herkent ongeveer 30% van de succescriteria, dus je ziet hiermee de grofste dingen.
+Met de [WCAG Radar van Proper Access](/tools/wcag-radar/) loop je 50 checks langs, waarvan er 29 gratis zijn en zonder account werken. Voor pdf's is er de [pdf-checker](/tools/pdf-checker/). Een tool herkent ongeveer 30% van de succescriteria, dus je ziet hiermee de grofste dingen.
 
 {{< /route-stap >}}
 

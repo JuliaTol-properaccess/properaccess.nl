@@ -62,7 +62,7 @@ Die vraag loopt via de [strippenkaart](/strippenkaart/). Eén vraag over één o
 
 Twee dingen die hem praktisch maken: alles rekent lokaal in je browser, dus er gaat geen pagina-inhoud naar een server, en hij werkt achter een login en op localhost. Daarmee kun je een besloten omgeving of een staging-site testen, wat met een online scanner niet lukt.
 
-De gratis versie doet 28 van de 45 checks en vraagt geen account. Voor alle checks en een HTML-export is een licentie nodig, vanaf € 119 per jaar voor één persoon en vanaf € 350 per jaar voor een organisatie.
+De gratis versie doet 29 van de 50 checks en vraagt geen account. Voor alle checks en een HTML-export is een licentie nodig, vanaf € 119 per jaar voor één persoon en vanaf € 350 per jaar voor een organisatie.
 
 Wat hij niet is: geen crawler die je site afloopt, geen monitor die in de gaten houdt of er iets verandert, en geen vervanging van een handmatige audit. Hij geeft geen conformiteitsverklaring en geen user stories. Een strikt Content Security Policy blokkeert de bookmarklet, dus op sommige sites werkt alleen de extensie.
 

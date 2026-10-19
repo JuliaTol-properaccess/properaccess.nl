@@ -123,7 +123,7 @@ Nee. De EAA verplicht je tot een toegankelijke website of app. Een onderzoek is 
 <details class="faq-item">
 <summary class="faq-question">Kan ik het zelf doen?</summary>
 <div class="faq-answer">
-Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus in eigen beheer mag. Je kunt zelf al veel vinden met de <a href="/tools/wcag-radar/">WCAG Radar van Proper Access</a>: 28 van de 45 checks zijn gratis en vragen geen account. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel.
+Er is geen regel die voorschrijft dat een externe partij het onderzoek doet, dus in eigen beheer mag. Je kunt zelf al veel vinden met de <a href="/tools/wcag-radar/">WCAG Radar van Proper Access</a>: 29 van de 50 checks zijn gratis en vragen geen account. Het argument om het toch uit te besteden gaat over risico: lever je een site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek daarna over jouw oordeel.
 </div>
 </details>
 

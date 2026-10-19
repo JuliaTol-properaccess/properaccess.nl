@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="nl" data-report-id="202610_nldesignsystem.nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Audit digitale toegankelijkheid van de website van NL Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/rapporten/_assets/css/main.css">
+  
+  
+</head>
+<body class="open-sans-pa">
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rapporten/_assets/css/report.css?v=1789646421372">
+<link rel="stylesheet" href="/rapporten/_assets/css/icons.css?v=1771830438000">
+<script src="/rapporten/_assets/main.js?v=1788096029107"></script>
+
+
+
+
+
+<div class="dashboard">
+
+  
+  <aside class="dash-sidebar">
+    <a href="https://www.properaccess.nl/" class="dash-sidebar-logo">
+      
+      <img src="/rapporten/_assets/images/logo_P3_dark.svg" alt="Proper Access digitale toegankelijkheid">
+      
+    </a>
+
+    <nav aria-label="Rapportnavigatie">
+      <h2 class="dash-nav-heading">Het rapport</h2>
+      <ul class="dash-nav">
+        <li><a href="#samenvatting">Samenvatting</a></li>
+        <li><a href="#over-dit-onderzoek">Over dit onderzoek</a></li>
+        
+        <li><a href="#bevindingen">Bevindingen</a></li>
+        <li><a href="#vragen">Vragen over het rapport?</a></li>
+      </ul>
+
+      <h2 class="dash-nav-heading">Steekproef</h2>
+      <ul class="dash-nav dash-nav-sample">
+        
+        <li><a href="#01-op-alle-paginas">01 Op alle pagina&#39;s</a></li><li><a href="#02-home">02 Home</a></li><li><a href="#03-sitemap">03 Sitemap</a></li><li><a href="#04-tijdschema">04 Tijdschema</a></li><li><a href="#05-community">05 Community</a></li><li><a href="#06-componenten">06 Componenten</a></li><li><a href="#07-button">07 Button</a></li><li><a href="#08-videos-van-de-heartbeat">08 Video&#39;s van de <span lang="en">Heartbeat</span></a></li><li><a href="#09-kernteam">09 Kernteam</a></li><li><a href="#10-zoeken">10 Zoeken</a></li><li><a href="#11-belangenorganisaties">11 Belangenorganisaties</a></li><li><a href="#12-sluit-je-aan">12 Sluit je aan</a></li><li><a href="#13-bedankt-voor-je-aanmelding">13 Bedankt voor je aanmelding</a></li><li><a href="#14-wcag">14 WCAG</a></li><li><a href="#15-wcag-111-niet-tekstuele-content">15 WCAG 1.1.1 Niet-tekstuele content</a></li><li><a href="#16-wcag-131-info-en-relaties">16 WCAG 1.3.1 Info en relaties</a></li><li><a href="#17-wcag-141-gebruik-van-kleur">17 WCAG 1.4.1 Gebruik van kleur</a></li><li><a href="#18-wcag-211-toetsenbord">18 WCAG 2.1.1 Toetsenbord</a></li><li><a href="#19-wcag-241-blokken-omzeilen">19 WCAG 2.4.1 Blokken omzeilen</a></li><li><a href="#20-placeholder-goed-zichtbaar">20 Placeholder goed zichtbaar</a></li><li><a href="#21-inhoud-description">21 Inhoud description</a></li><li><a href="#22-kleurgebruik-in-tekst">22 Kleurgebruik in tekst</a></li><li><a href="#23-estafettemodel">23 Estafettemodel</a></li><li><a href="#24-figma-structuur">24 Figma structuur</a></li><li><a href="#25-basis-tokens">25 Basis-tokens</a></li><li><a href="#26-videos-van-design-systems-week-2025">26 Videos van <span lang="en">Design Systems Week</span> 2025</a></li><li><a href="#27-slack">27 Slack</a></li><li><a href="#28-toegankelijkheid">28 Toegankelijkheid</a></li><li><a href="#29-privacyverklaring">29 Privacyverklaring</a></li><li><a href="#30-woordenlijst">30 Woordenlijst</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  
+  <main class="dash-main">
+
+    
+    <div class="dash-topbar">
+      <h1 id="title">Audit digitale toegankelijkheid van de website van <span lang="en">NL Design System</span></h1>
+    </div>
+
+    
+    <section class="dash-summary-row" id="samenvatting">
+      <div class="dash-summary-text">
+        <h2>Samenvatting</h2>
+        <p>Wij hebben de website van <span lang="en">NL Design System</span> onderzocht tussen 21 september en 7 oktober 2026. De website voldoet volledig aan WCAG 2.2 op niveau A en AA. De bevindingen in dit rapport gaan alleen over de ingesloten videospeler van YouTube. Per bevinding lees je hoe die kan worden aangepakt.</p>
+
+      </div>
+      <div class="dash-summary-logo">
+        <p class="dash-summary-label">In opdracht van</p>
+        
+          <img src="images/opdrachtgever.svg" alt="Logo van NL Design System">
+        
+      </div>
+    </section>
+
+    
+    
+    <section class="dash-stats">
+      
+      <div class="stat-card stat-card-dark stat-card-sc-score" id="stat-sc-score"
+           data-total="55"
+           data-perceivable="20"
+           data-operable="20"
+           data-understandable="13"
+           data-robust="2">
+        <div class="sc-score-row">
+          <div class="sc-score-item sc-score-passed">
+            <span class="sc-score-number" id="stat-sc-passed">-</span>
+            <span class="sc-score-label">Voldoet</span>
+          </div>
+          <div class="sc-score-item sc-score-failed">
+            <span class="sc-score-number" id="stat-sc-failed">-</span>
+            <span class="sc-score-label">Afgekeurd</span>
+          </div>
+          <div class="sc-score-item sc-score-total">
+            <span class="sc-score-number">55</span>
+            <span class="sc-score-label">Totaal</span>
+          </div>
+        </div>
+        <div class="sc-score-bar">
+          <div class="sc-score-bar-passed" id="stat-sc-bar-passed"></div>
+        </div>
+        <div class="sc-score-pct">
+          <span id="stat-sc-passed-pct">-</span> voldoet
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Impact</span>
+        <div class="stat-breakdown">
+          <span>Klein: <strong id="stat-klein">0</strong></span>
+          <span>Matig: <strong id="stat-medium">0</strong></span>
+          <span>Serieus: <strong id="stat-groot">0</strong></span>
+          <span>Kritiek: <strong id="stat-kritiek">0</strong></span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-dark">
+        <span class="stat-label">Type</span>
+        <div class="stat-breakdown">
+          <span>Content: <strong id="stat-content">0</strong></span>
+          <span>Techniek: <strong id="stat-techniek">0</strong></span>
+        </div>
+      </div>
+    </section>
+    <section class="dash-principles" id="stat-principles-row"
+             data-total="55"
+             data-perceivable="20"
+             data-operable="20"
+             data-understandable="13"
+             data-robust="2">
+      <span class="stat-label">Score per richtlijn (goed)</span>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span class="principle-name">Waarneembaar</span>
+          <span class="principle-score"><strong id="stat-p-perceivable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Bedienbaar</span>
+          <span class="principle-score"><strong id="stat-p-operable">-</strong> van 20</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Begrijpelijk</span>
+          <span class="principle-score"><strong id="stat-p-understandable">-</strong> van 13</span>
+        </div>
+        <div class="principle-item">
+          <span class="principle-name">Robuust</span>
+          <span class="principle-score"><strong id="stat-p-robust">-</strong> van 2</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dash-failed-sc" id="failed-sc-row">
+      <strong>Deze SC zijn afgekeurd:</strong>
+      <span class="failed-sc-list" id="failed-sc-list"></span>
+    </div>
+
+    
+    <section class="dash-info" id="over-dit-onderzoek">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            <dl class="dash-research-list">
+              <dt>Onderzocht door</dt>
+              <dd>Proper Access</dd>
+              <dt>In opdracht van</dt>
+              <dd><span lang="en">NL Design System</span></dd>
+              
+              <dt>Datum rapport</dt>
+              <dd>15 oktober 2026</dd>
+              <dt>Standaard</dt>
+              <dd><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></dd>
+              <dt>Methodologie</dt>
+              <dd><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM</a></dd>
+              
+            </dl>
+
+            <h3>Scope van het onderzoek</h3>
+            
+            <ul>
+              
+              <li>De pagina's onder Steekproef, in de testomgeving documentatie-next-git-release-website-next-nl-design-system.vercel.app</li>
+              
+            </ul>
+            
+            
+
+            <h3>Basisniveau toegankelijkheidsondersteuning</h3>
+            <ul>
+              
+              <li>Google Chrome, versie 155</li>
+              
+              <li>Mozilla Firefox, versie 156</li>
+              
+              <li>Apple Safari, versie 26.6</li>
+              
+              <li>VoiceOver schermlezer op macOS Tahoe 26.6.2</li>
+              
+              <li>De website is gebouwd voor de browsers uit de baseline van <span lang="en">NL Design System</span>: <a href="https://nldesignsystem.nl/baseline/2026-09/">nldesignsystem.nl/baseline/2026-09</a></li>
+              
+            </ul>
+
+            <h3>Technologieën van de website</h3>
+            <ul>
+              
+              <li>HTML</li>
+              
+              <li>CSS</li>
+              
+              <li>JavaScript</li>
+              
+              <li>DOM</li>
+              
+              <li>SVG</li>
+              
+              <li>WAI-ARIA</li>
+              
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    <section class="dash-findings" id="bevindingen">
+      <h2 class="dash-findings-title">Gevonden problemen</h2>
+
+      <div class="container filters">
+        <strong class="filters-heading">Filter bevindingen op:</strong>
+        <div class="filter-group">
+          <strong>Impact:</strong>
+          <button class="impact-btn active" data-impact="all">Alle <span class="impact-count" data-impact-count="all"></span></button>
+          <button class="impact-btn" data-impact="kritiek">Kritiek <span class="impact-count" data-impact-count="kritiek"></span></button>
+          <button class="impact-btn" data-impact="groot">Serieus <span class="impact-count" data-impact-count="groot"></span></button>
+          <button class="impact-btn" data-impact="medium">Matig <span class="impact-count" data-impact-count="medium"></span></button>
+          <button class="impact-btn" data-impact="klein">Klein <span class="impact-count" data-impact-count="klein"></span></button>
+          <button class="impact-btn" data-impact="advies">Advies <span class="impact-count" data-impact-count="advies"></span></button>
+        </div>
+        <div class="filter-group">
+          <strong>Type:</strong>
+          <button class="filter-btn active" data-filter="all">Alle <span class="count" data-count="all"></span></button>
+          <button class="filter-btn" data-filter="content">Content <span class="count" data-count="content"></span></button>
+          <button class="filter-btn" data-filter="techniek">Techniek <span class="count" data-count="techniek"></span></button>
+        </div>
+        <div class="filter-group" id="status-filter-group" hidden>
+          <strong>Status:</strong>
+          <button class="status-btn active" data-status="all">Alle</button>
+          <button class="status-btn" data-status="open">Open</button>
+          <button class="status-btn" data-status="opgelost">Opgelost</button>
+        </div>
+      </div>
+
+      <div class="expand-controls">
+        <button class="expand-all-btn" id="expandAllBtn" aria-expanded="false">Alles uitklappen</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Geen bevindingen gevonden voor dit filter.</p>
+
+      <section id="issues">
+        
+          
+          <article class="issue" id="01-op-alle-paginas">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#01-op-alle-paginas">01 Op alle pagina&#39;s <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="02-home">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#02-home">02 Home <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/</a></p>
+<p>De bevindingen op deze pagina gaan over de ingesloten videospeler van YouTube. De speler wordt geladen vanaf youtube-nocookie.com, dus de code komt van YouTube en niet van deze website. De bevindingen over de videospeler zijn gevonden tijdens de audit in september 2026. In oktober 2026 zijn ze niet opnieuw gecontroleerd.</p>
+<div class="issue">
+<h3>#1 - Onzichtbare elementen krijgen toetsenbordfocus</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Serieus</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p><img src="images/01.webp" alt=""></p>
+<p>Als de video start en de bezoeker met het toetsenbord navigeert, komt de focus eerst op een onzichtbare knop in de speler. Nog 2 onzichtbare knoppen krijgen ook focus, direct voor en direct na de knop afspelen/pauzeren.</p>
+<p>Na de link met het zichtbare label &quot;YouTube&quot; staan ook meerdere onzichtbare links die toetsenbordfocus krijgen.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4876">https://github.com/nl-design-system/documentatie/issues/4876</a></p>
+<h4>Oplossing:</h4>
+<p>Zorg dat alleen zichtbare elementen toetsenbordfocus krijgen.</p>
+</div>
+<div class="issue">
+<h3>#2 - De logoknop heeft een onjuiste toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Matig</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>De logoknop opent de YouTube-pagina van de organisatie, maar de toegankelijke naam is &quot;thumbnail-image&quot;. Die naam beschrijft de afbeelding en niet wat de knop doet. Screenreadergebruikers weten daardoor niet dat de knop de YouTube-pagina van de organisatie opent.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4877">https://github.com/nl-design-system/documentatie/issues/4877</a></p>
+<h4>Oplossing:</h4>
+<p>Geef de knop een toegankelijke naam die beschrijft wat hij doet of waar hij heen gaat.</p>
+</div>
+<div class="issue">
+<h3>#3 - In de code staat niet dat de knop een pop-up opent</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>De knop voor instellingen, met de toegankelijke naam &quot;Instellingen voor afspelen&quot;, opent een dialoogvenster. Dat staat niet in de code.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4878">https://github.com/nl-design-system/documentatie/issues/4878</a></p>
+<h4>Oplossing:</h4>
+<p>Gebruik de attributen <code>aria-haspopup=&quot;dialog&quot;</code> en <code>aria-expanded</code>. Daarmee geef je door dat de knop een dialoogvenster opent en of dat venster open is.</p>
+</div>
+<div class="issue">
+<h3>#4 - Het dialoogvenster heeft een algemene toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Klein</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.6</span>
+	<span class="type"><b>EN</b>: 9.2.4.6</span>
+</div>
+<p>De knop met de toegankelijke naam &quot;Instellingen voor afspelen&quot; opent een dialoogvenster. Dat venster krijgt de toegankelijke naam &quot;Dialoogvenster&quot; uit <code>aria-label</code>. Die naam zegt wat voor component het is, maar niet waar het venster voor is of wat erin staat. Screenreadergebruikers horen dat er een dialoogvenster is geopend, maar niet waar het over gaat.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4879">https://github.com/nl-design-system/documentatie/issues/4879</a></p>
+<h4>Oplossing:</h4>
+<p>Geef het dialoogvenster een naam die het doel beschrijft. Neem die bij voorkeur over van de zichtbare kop, met <code>aria-labelledby</code>.</p>
+</div>
+<div class="issue">
+<h3>#5 - Het menu met instellingen heeft onvolledige menusemantiek</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Matig</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>De knop met de toegankelijke naam &quot;Instellingen voor afspelen&quot; opent een dialoogvenster. Daarin staan bedieningselementen als &quot;Kwaliteit 1080p&quot;, &quot;Snelheid Normaal&quot;, &quot;Ondertiteling Uit&quot; en &quot;Meer opties&quot;. Deze elementen hebben de rol <code>menuitem</code>, maar het element eromheen heeft geen rol <code>menu</code> of <code>menubar</code>. Hulpsoftware krijgt dus losse menu-items door, zonder het menu waar ze bij horen. In de submenu's gebeurt hetzelfde.</p>
+<p>De items die meer opties openen, geven ook niet door dat ze een submenu hebben: er is geen <code>aria-haspopup</code> en geen status open of dicht.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4880">https://github.com/nl-design-system/documentatie/issues/4880</a></p>
+<h4>Oplossing:</h4>
+<p>Zet de menu-items in een element met de rol <code>menu</code>. Geef de items die een submenu openen <code>aria-haspopup</code> en <code>aria-expanded</code>.</p>
+</div>
+<div class="issue">
+<h3>#6 - De toetsenbordfocus gaat buiten het dialoogvenster</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Serieus</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.3</span>
+	<span class="type"><b>EN</b>: 9.2.4.3</span>
+</div>
+<p>De knop met de toegankelijke naam &quot;Instellingen voor afspelen&quot; opent een modaal dialoogvenster. Terwijl het venster open is, kan de toetsenbordfocus het venster verlaten en naar de inhoud van de pagina gaan.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4881">https://github.com/nl-design-system/documentatie/issues/4881</a></p>
+<h4>Oplossing:</h4>
+<p>Houd de toetsenbordfocus in een modaal dialoogvenster zolang het open is.</p>
+</div>
+<div class="issue">
+<h3>#7 - De toetsenbordfocus is niet zichtbaar op interactieve elementen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Serieus</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 2.4.7</span>
+	<span class="type"><b>EN</b>: 9.2.4.7</span>
+</div>
+<p>De knop met de toegankelijke naam &quot;Instellingen voor afspelen&quot; opent een modaal dialoogvenster. De interactieve elementen in dit venster hebben geen zichtbare focusindicator. Toetsenbordgebruikers zien niet welk element focus heeft.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4882">https://github.com/nl-design-system/documentatie/issues/4882</a></p>
+<h4>Oplossing:</h4>
+<p>Geef elk interactief element in het dialoogvenster een zichtbare focusindicator.</p>
+</div>
+<div class="issue">
+<h3>#8 - De gekozen videokwaliteit wordt niet doorgegeven aan hulpsoftware</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Matig</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>In het submenu voor videokwaliteit (&quot;Kwaliteit&quot;) laat een vinkje zien welke optie gekozen is, bijvoorbeeld &quot;Automatisch (1080p)&quot;. Die status is alleen zichtbaar. Screenreadergebruikers horen de opties, maar niet welke gekozen is.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4883">https://github.com/nl-design-system/documentatie/issues/4883</a></p>
+<h4>Oplossing:</h4>
+<p>Zet de gekozen status in de code, bijvoorbeeld met <code>aria-checked=&quot;true&quot;</code> op een <code>menuitemradio</code>.</p>
+</div>
+<div class="issue">
+<h3>#9 - De melding over het kopiëren van de link wordt niet voorgelezen</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Matig</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.3</span>
+	<span class="type"><b>EN</b>: 9.4.1.3</span>
+</div>
+<p>Als je de link naar de video wilt kopiëren en dat mislukt, verschijnt de melding &quot;Kan link niet naar klembord kopiëren&quot; op het scherm. Screenreaders lezen die melding niet voor. Screenreadergebruikers weten dus niet dat het kopiëren is mislukt.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4884">https://github.com/nl-design-system/documentatie/issues/4884</a></p>
+<h4>Oplossing:</h4>
+<p>Zet de melding in een <span lang="en">live region</span>, bijvoorbeeld een element met <code>role=&quot;status&quot;</code>. Dan leest hulpsoftware hem vanzelf voor.</p>
+</div>
+<div class="issue">
+<h3>#10 - Links hebben geen toegankelijke naam</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Serieus</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 4.1.2</span>
+	<span class="type"><b>EN</b>: 9.4.1.2</span>
+</div>
+<p>Na de link met het zichtbare label &quot;YouTube&quot; staan in de speler meerdere onzichtbare links. Een deel daarvan heeft geen toegankelijke naam. Screenreadergebruikers weten niet waar deze links voor zijn of waar ze heen gaan.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4885">https://github.com/nl-design-system/documentatie/issues/4885</a></p>
+<h4>Oplossing:</h4>
+<p>Geef elke link een toegankelijke naam die beschrijft waar de link heen gaat.</p>
+</div>
+<div class="issue">
+<h3>#11 - Grote tekst heeft een contrast lager dan 3,0:1</h3>
+<div class="meta">
+	<span class="impact"><b>Impact</b>: Matig</span>
+	<span class="type"><b>Type</b>: Techniek</span>
+	<span class="type"><b>WCAG</b>: 1.4.3</span>
+	<span class="type"><b>EN</b>: 9.1.4.3</span>
+</div>
+<p>Bij een schermresolutie van 1280 bij 1024 pixels en een zoomniveau van 400% (320 pixels breed) ligt de link met de witte tekst &quot;YouTube&quot; over de video. Het contrast met de video erachter kan te laag zijn. Rond 1:29 in de video staat de witte tekst bijvoorbeeld op een lichtroze (<code>#F8DDFF</code>) achtergrond. De contrastratio is dan 1,3:1.</p>
+<p>GitHub-issue: <a href="https://github.com/nl-design-system/documentatie/issues/4887">https://github.com/nl-design-system/documentatie/issues/4887</a></p>
+<h4>Oplossing:</h4>
+<p>Zorg dat de tekst bij elk zoomniveau een contrastratio van minimaal 3,0:1 heeft met de achtergrond, bijvoorbeeld door hem op een effen achtergrond te zetten.</p>
+</div>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="03-sitemap">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#03-sitemap">03 Sitemap <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/sitemap/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/sitemap/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="04-tijdschema">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#04-tijdschema">04 Tijdschema <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/design-systems-week-2026/tijdschema/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/design-systems-week-2026/tijdschema/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="05-community">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#05-community">05 Community <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="06-componenten">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#06-componenten">06 Componenten <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/componenten/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/componenten/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="07-button">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#07-button">07 Button <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/button/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/button/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="08-videos-van-de-heartbeat">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#08-videos-van-de-heartbeat">08 Video&#39;s van de <span lang="en">Heartbeat</span> <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/heartbeat/videos/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/heartbeat/videos/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="09-kernteam">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#09-kernteam">09 Kernteam <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/project/kernteam/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/project/kernteam/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="10-zoeken">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#10-zoeken">10 Zoeken <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/zoeken/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/zoeken/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="11-belangenorganisaties">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#11-belangenorganisaties">11 Belangenorganisaties <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/belangenorganisaties/aanmelden/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/belangenorganisaties/aanmelden/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="12-sluit-je-aan">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#12-sluit-je-aan">12 Sluit je aan <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/sluit-je-aan/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/sluit-je-aan/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="13-bedankt-voor-je-aanmelding">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#13-bedankt-voor-je-aanmelding">13 Bedankt voor je aanmelding <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/sluit-je-aan/bedankt/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/community/sluit-je-aan/bedankt/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="14-wcag">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#14-wcag">14 WCAG <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/wcag/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/wcag/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="15-wcag-111-niet-tekstuele-content">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#15-wcag-111-niet-tekstuele-content">15 WCAG 1.1.1 Niet-tekstuele content <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-git-111-nl-design-system.vercel.app/wcag/1.1.1/">https://documentatie-git-111-nl-design-system.vercel.app/wcag/1.1.1/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="16-wcag-131-info-en-relaties">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#16-wcag-131-info-en-relaties">16 WCAG 1.3.1 Info en relaties <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-git-131-nl-design-system.vercel.app/wcag/1.3.1/">https://documentatie-git-131-nl-design-system.vercel.app/wcag/1.3.1/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="17-wcag-141-gebruik-van-kleur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#17-wcag-141-gebruik-van-kleur">17 WCAG 1.4.1 Gebruik van kleur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-git-141-nl-design-system.vercel.app/wcag/1.4.1/">https://documentatie-git-141-nl-design-system.vercel.app/wcag/1.4.1/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="18-wcag-211-toetsenbord">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#18-wcag-211-toetsenbord">18 WCAG 2.1.1 Toetsenbord <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-git-211-2-nl-design-system.vercel.app/wcag/2.1.1/">https://documentatie-git-211-2-nl-design-system.vercel.app/wcag/2.1.1/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="19-wcag-241-blokken-omzeilen">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#19-wcag-241-blokken-omzeilen">19 WCAG 2.4.1 Blokken omzeilen <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-git-241-nl-design-system.vercel.app/wcag/2.4.1/">https://documentatie-git-241-nl-design-system.vercel.app/wcag/2.4.1/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="20-placeholder-goed-zichtbaar">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#20-placeholder-goed-zichtbaar">20 Placeholder goed zichtbaar <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="21-inhoud-description">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#21-inhoud-description">21 Inhoud description <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/formulieren/descriptions/inhoud/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/formulieren/descriptions/inhoud/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="22-kleurgebruik-in-tekst">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#22-kleurgebruik-in-tekst">22 Kleurgebruik in tekst <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="23-estafettemodel">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#23-estafettemodel">23 Estafettemodel <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/estafettemodel/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/estafettemodel/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="24-figma-structuur">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#24-figma-structuur">24 Figma structuur <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/designer/figma-structuur/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/designer/figma-structuur/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="25-basis-tokens">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#25-basis-tokens">25 Basis-tokens <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/huisstijl/basis-tokens/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/handboek/huisstijl/basis-tokens/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="26-videos-van-design-systems-week-2025">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#26-videos-van-design-systems-week-2025">26 Videos van <span lang="en">Design Systems Week</span> 2025 <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/design-systems-week-2025/en/program/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/events/design-systems-week-2025/en/program/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="27-slack">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#27-slack">27 Slack <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/slack/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/slack/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="28-toegankelijkheid">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#28-toegankelijkheid">28 Toegankelijkheid <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/toegankelijkheidsverklaring/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/toegankelijkheidsverklaring/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="29-privacyverklaring">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#29-privacyverklaring">29 Privacyverklaring <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/privacyverklaring/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/privacyverklaring/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+          
+          <article class="issue" id="30-woordenlijst">
+            <div class="issue-meta">
+              <h2 class="issue-title"><a href="#30-woordenlijst">30 Woordenlijst <i class="fa-solid fa-link" aria-hidden="true"></i></a></h2>
+              <p></p>
+            </div>
+            <p>Link naar pagina: <a href="https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/woordenlijst/">https://documentatie-next-git-release-website-next-nl-design-system.vercel.app/woordenlijst/</a></p>
+<p>Geen bevindingen.</p>
+
+          </article>
+          
+        
+      </section>
+    </section>
+
+    
+    <section class="dash-info dash-info-bottom">
+      <div class="accordion">
+        <details>
+          <summary>Over dit onderzoek</summary>
+          <div>
+            
+            
+            <h3>Leeswijzer</h3>
+<p>Onze rapporten zijn anders. Bij het bespreken van de gevonden problemen volgen wij niet de structuur van de norm, maar die van jouw website of app. Hierdoor kun je gewoon per pagina of scherm aan de slag gaan. Wel zo makkelijk! Je vindt verderop een overzicht van alle pagina’s met problemen.</p>
+<p>We geven je bij elk gevonden issue een paar voorbeelden, maar niet een complete lijst. Controleer zelf of het probleem ook nog op andere plekken voorkomt. Zie het rapport als een leidraad.</p>
+<h3>Gebruikte norm</h3>
+<p>Dit onderzoek laat zien in hoeverre de website op dit moment voldoet aan WCAG 2.2, niveau A en AA. WCAG staat voor Web Content Accessibility Guidelines. Dit is de internationale norm voor digitale toegankelijkheid. De Europese norm EN 301 549 bevat alle eisen van WCAG op niveau A en AA.</p>
+<p>In dit rapport hebben we korte beschrijvingen van de succescriteria uit de norm opgenomen, met een algemene uitleg erbij. Wil je ze helemaal lezen? Bekijk dan de documentatie van WCAG.</p>
+<h3>Gebruikte onderzoeksmethode</h3>
+<p>We gebruiken de onderzoeksmethode WCAG-EM van het W3C. Het proces ziet er als volgt uit:</p>
+<ul>
+<li>vaststellen wat binnen en buiten scope valt</li>
+<li>vaststellen welke technologieën zijn gebruikt</li>
+<li>steekproef (sample) samenstellen</li>
+<li>steekproef onderzoeken</li>
+<li>gevonden issues beschrijven</li>
+</ul>
+<p>Het grootste deel van het onderzoek doen we met de hand. Voor een deel van de toegankelijkheidseisen gebruiken we automatische tools als ondersteuning, zoals axe-core en Chrome Developer Tools.</p>
+<h3>Belangrijk om te weten</h3>
+<p>Dit rapport helpt je om de toegankelijkheid van je website te verbeteren. Maar let op: het is geen definitieve, volledige lijst van alle aanwezige toegankelijkheidsproblemen. Dat zit zo:</p>
+<h4>Het is een steekproef</h4>
+<p>Ten eerste is het onderzoek gebaseerd op een steekproef. Die is op een betrouwbare manier genomen, en de meeste problemen zullen daardoor zeker aan het licht komen. Toch kan een probleem net buiten de steekproef vallen. Bij een volgend onderzoek kan het wel ontdekt worden.</p>
+<h4>Op basis van falsificatie</h4>
+<p>We beoordelen vanuit het principe van falsificatie. Dat houdt in dat we proberen te bewijzen dat iets niet waar is, in plaats van te bevestigen dat het klopt. ‘Voldoet’ betekent daarom dat we geen reden hebben gevonden om een punt af te keuren. Maar als we later wél een reden vinden, kan het alsnog worden afgekeurd.</p>
+<h4>Voortschrijdend inzicht</h4>
+<p>Het komt voor dat de beoordeling van een succescriterium op detailniveau verandert. De norm beschrijft namelijk niet élk mogelijk scenario. Samen met andere onderzoeksbureaus overleggen we hoe we met bepaalde situaties omgaan. Zo kan iets dat nu wordt afgekeurd, soms bij een volgend onderzoek worden goedgekeurd en andersom.</p>
+<h4>Oplossen leidt tot nieuw probleem</h4>
+<p>Ten slotte kan het gebeuren dat bij het oplossen van een probleem onbedoeld een nieuw toegankelijkheidsprobleem ontstaat. Dat komt dan bij een volgend onderzoek pas naar voren.</p>
+
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Hoe werkt dit rapport?</summary>
+          <div>
+            <h3>Bevindingen bekijken en filteren</h3>
+<p>Alle gevonden toegankelijkheidsproblemen staan onder <strong>Gevonden problemen</strong>. Je kunt de bevindingen filteren op:</p>
+<ul>
+<li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
+<li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
+<li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
+</ul>
+<h3>Voortgang bijhouden</h3>
+<p>Je kunt je voortgang op twee manieren bijhouden:</p>
+<ul>
+<li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
+<li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
+<li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
+<li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
+</ul>
+<h3>Link naar een specifieke bevinding delen</h3>
+<p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    
+    <footer class="dash-footer" id="vragen">
+      <div class="dash-footer-content">
+        <div class="dash-footer-col">
+          <h2>Vragen over het rapport?</h2>
+          <p>Heb je vragen over een bevinding? Kopieer de link en stuur deze samen met je vraag naar <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>. We denken graag met je mee over alternatieve oplossingen.</p>
+        </div>
+        <div class="dash-footer-col dash-footer-address">
+          <strong>Proper Access</strong><br>
+          Keizersgracht 520H, 1017 EK Amsterdam<br>
+          085 5055 890<br>
+          <a href="https://www.properaccess.nl">properaccess.nl</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+    
+</body>
+</html>

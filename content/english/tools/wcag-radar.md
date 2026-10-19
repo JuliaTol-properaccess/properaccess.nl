@@ -1,7 +1,7 @@
 ---
 title: "WCAG Radar"
-meta_title: "WCAG Radar: 28 free accessibility checks | Proper Access"
-description: "Bookmarklet and browser extension for Chrome and Firefox. Checks alt text, headings, contrast, focus and tab order live on any page. 28 of 45 checks are free."
+meta_title: "WCAG Radar: 29 free accessibility checks | Proper Access"
+description: "Bookmarklet and browser extension for Chrome and Firefox. Checks alt text, headings, contrast, focus and tab order live on any page. 29 of 50 checks are free."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens-en"
 gratis: true
@@ -27,7 +27,7 @@ keywords:
   - resize text test
   - make focus visible
   - accessibility bookmarklet
-hero_sub: "A button in your bookmarks bar, or an extension for Chrome and Firefox, that shows how any page is doing on accessibility. 28 of the 45 checks are free and need no account. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The Radar does all the work in your own browser: it sends nothing and stores nothing."
+hero_sub: "A button in your bookmarks bar, or an extension for Chrome and Firefox, that shows how any page is doing on accessibility. 29 of the 50 checks are free and need no account. Headings, alt text, contrast, focus, ARIA and tab order, visible right on your own screen. The Radar does all the work in your own browser: it sends nothing and stores nothing."
 rollen:
   - eyebrow: "For web editors"
     titel: "The checks you run every week, in one click"
@@ -340,4 +340,4 @@ At the top of the panel you switch between three tabs, tuned to what you do. Eac
 
 When a check finds something, previous and next buttons appear in the panel. Use them to jump along every finding on the page instead of hunting for them yourself.
 
-The Radar holds 45 checks. 28 of them are free and will stay that way, with no account. The other 17 are marked "Licence": they sit in the panel but only run once you have one. Saving a report of your test session belongs to that group too. What a licence costs is on [the WCAG Radar page at WCAG Toolkit](https://wcagtoolkit.com/wcag-radar#licentie).
+The Radar holds 50 checks. 29 of them are free and will stay that way, with no account. The other 21 are marked "Licence": they sit in the panel but only run once you have one. Saving a report of your test session belongs to that group too. What a licence costs is on [the WCAG Radar page at WCAG Toolkit](https://wcagtoolkit.com/wcag-radar#licentie).

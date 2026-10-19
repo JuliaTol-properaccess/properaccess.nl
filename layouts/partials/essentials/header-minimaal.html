@@ -16,9 +16,15 @@
   eigen pagina blijft. Welke van de twee het is, zoekt het script bij de klik
   op: de chatwidget staat verderop in de body en bestaat hier nog niet.
 
-  De knop onder in het paneel ("Zoek in blogartikelen") is een andere functie:
-  die doorzoekt alleen blogartikelen. Twee verschillende functies achter
-  hetzelfde woord is WCAG 3.2.4, dus de woorden maken het verschil.
+  De knop onder in het paneel ("Zoek in blogartikelen en nieuws") is een andere
+  functie: die doorzoekt de secties uit include_sections onder [search] in
+  config/_default/params.toml. Twee verschillende functies achter hetzelfde
+  woord is WCAG 3.2.4, dus de woorden maken het verschil.
+
+  Komt er een sectie bij in include_sections, dan moet dit label mee, net als
+  search_input_label en search_input_placeholder in i18n/nl.yaml. Anders belooft
+  de knop iets anders dan hij doet. De Engelse labels blijven "blog posts": de
+  Engelse site heeft geen nieuwssectie.
 */}}
 <header class="hm">
   <div class="hm__bar">
@@ -64,6 +70,7 @@
         <h2 class="hm__groep-titel">Diensten</h2>
         <a class="hm__link hm__link--groot" href="/toegankelijkheidsaudit/">WCAG-audit</a>
         <a class="hm__link hm__link--groot" href="/automatische-monitoring/">Monitoring van je website</a>
+        <a class="hm__link hm__link--groot" href="/trainen-van-webredactie/">Training webredactie</a>
         <a class="hm__link hm__link--groot" href="/tools/">Zelf testen met onze tools</a>
         <a class="hm__link hm__link--groot" href="/hulp-bij-europese-toegankelijkheidswetgeving/">Hulp bij de EAA</a>
       </div>
@@ -92,7 +99,7 @@
         <h2 class="hm__groep-titel">Zelf aan de slag</h2>
         <a class="hm__link hm__link--vet" href="https://portaal.properaccess.nl/" target="_blank" rel="noopener">Naar het portaal<span class="sr-only"> (opent in een nieuw tabblad)</span></a>
         <a class="hm__telefoon" href="tel:+31855055890">085 5055 890</a>
-        <button type="button" class="hm__zoek" data-target="search-modal">Zoek in blogartikelen</button>
+        <button type="button" class="hm__zoek" data-target="search-modal">Zoek in blogartikelen en nieuws</button>
       </div>
     </div>
   </nav>
