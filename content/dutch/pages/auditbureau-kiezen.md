@@ -208,10 +208,8 @@ stand komt en welke sjablonen, processen en interactieve componenten erin zitten
 
 {{< section-highlight title="Wat handmatig testen betekent" image="/images/pages/auditbureau-handmatig-testen.svg" >}}
 
-Een scan vindt ontbrekende alt-teksten, lege knoppen en een deel van de contrastfouten. Wat een
-scan niet ziet: of de volgorde waarin een schermlezer voorleest klopt, of je met het toetsenbord
-uit een dialoogvenster komt, of een foutmelding wordt aangekondigd, en of een alt-tekst behalve
-aanwezig ook zinnig is.
+Een scan vindt bijvoorbeeld ontbrekende alt-teksten, lege knoppen en sommige contrastfouten.
+Alleen handmatig testen laat zien hoe je site werkt met hulpsoftware en met alleen het toetsenbord.
 
 Zo ziet onze eigen testlijst eruit. Vraag een bureau waarmee zij testen en leg de antwoorden
 ernaast:
@@ -227,11 +225,8 @@ ernaast:
 - multimedia, zoals iemand met een beperking het ervaart
 - formulieren, op circa 100 punten
 
-Dat cijfer van ongeveer 30% is een schatting uit het vakgebied en geen meting van ons. Als orde
-van grootte klopt het met wat we in de praktijk zien. We kennen inmiddels zo'n 150 verschillende
-systemen, van maatwerkframeworks tot standaard-CMS'en, en het patroon is overal hetzelfde: de
-scan levert de makkelijke bevindingen, het handwerk levert de bevindingen waar bezoekers op
-vastlopen.
+Een scan vindt maar een deel van de fouten. De exacte verhouding verschilt per site; vraag daarom
+altijd wat een bureau handmatig test.
 
 {{< /section-highlight >}}
 
@@ -267,10 +262,23 @@ voor. Meestal komt dat uit tussen € 300 en € 1.100.
 
 {{< /section-cards >}}
 
-{{< section-full title="Wat een onderzoek ongeveer kost" bg="light" id="prijzen" >}}
+{{< section-tweekolom title="Wat een onderzoek ongeveer kost" bg="light" id="prijzen" >}}
+
+{{< kolom-tekst >}}
 
 De prijs hangt af van de omvang en de complexiteit van je site of app. Dit zijn indicaties; je
 krijgt altijd vooraf een offerte met de uren erbij.
+
+Alle bedragen zijn exclusief 21% btw. De meeste websites vallen in de categorie gemiddeld.
+
+Eén ding waar we streng in zijn: een content-audit doen we alleen als de techniek van de website
+ook is onderzocht, door ons of door iemand anders. Een content-audit op zichzelf levert een halve
+onderbouwing op, want een verklaring vraagt om bewijs over de hele website en niet alleen over de
+redactielaag.
+
+{{< /kolom-tekst >}}
+
+{{< kolom-naast >}}
 
 | Type onderzoek     | Indicatie           |
 | ------------------ | ------------------- |
@@ -281,14 +289,9 @@ krijgt altijd vooraf een offerte met de uren erbij.
 | Content-audit      | circa € 1.650       |
 | Techniekaudit      | circa € 2.700       |
 
-Alle bedragen zijn exclusief 21% btw. De meeste websites vallen in de categorie gemiddeld.
+{{< /kolom-naast >}}
 
-Eén ding waar we streng in zijn: een content-audit doen we alleen als de techniek van de website
-ook is onderzocht, door ons of door iemand anders. Een content-audit op zichzelf levert een halve
-onderbouwing op, want een verklaring vraagt om bewijs over de hele website en niet alleen over de
-redactielaag.
-
-{{< /section-full >}}
+{{< /section-tweekolom >}}
 
 {{< section-full title="Waar onze ervaring vandaan komt" id="ervaring" >}}
 

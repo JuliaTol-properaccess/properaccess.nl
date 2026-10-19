@@ -14163,6 +14163,30 @@ html.dark .notice.info .notice-body {
   margin-bottom: 0;
 }
 
+.section-highlight__content ul,
+.section-highlight__content ol {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.section-highlight__content ul {
+  list-style: disc;
+}
+
+.section-highlight__content ol {
+  list-style: decimal;
+}
+
+.section-highlight__content li {
+  color: #374151;
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+html.dark .section-highlight__content li {
+  color: var(--color-darkmode-text);
+}
+
 .section-highlight__link {
   display: inline-block;
   margin-top: 0.75rem;
