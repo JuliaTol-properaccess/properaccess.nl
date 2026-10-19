@@ -4,10 +4,8 @@
 > toegankelijkheidsonderzoek uit volgens WCAG 2.2 niveau AA en de WCAG-EM methodiek, geven
 > trainingen en begeleiden organisaties bij het voldoen aan de European Accessibility Act (EAA)
 > en het Besluit digitale toegankelijkheid overheid (BDTO). Wij bouwen en beheren zelf geen
-> websites, dus we keuren nooit ons eigen werk.
-
-Dit bestand beschrijft het Nederlandse deel van properaccess.nl. De Engelse sectie heeft een
-eigen index: [properaccess.nl/en/llms.txt](https://www.properaccess.nl/en/llms.txt).
+> websites, dus we keuren nooit ons eigen werk. Dit is de Nederlandse index van properaccess.nl;
+> de Engelse sectie heeft een eigen index op https://www.properaccess.nl/en/llms.txt.
 
 ## Wat digitale toegankelijkheid is
 
@@ -46,8 +44,6 @@ eigen index: [properaccess.nl/en/llms.txt](https://www.properaccess.nl/en/llms.t
 
 ## Onze eigen tools
 
-Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengekomen.
-
 - [Testtoegankelijkheid.nl](https://testtoegankelijkheid.nl): onze toolsite met de WCAG Radar en een scan die tot tien pagina's van een openbaar adres naloopt met axe-core in een echte browser
 - [WCAG Toolkit](https://wcagtoolkit.com): dezelfde tools in het Engels
 
@@ -72,12 +68,8 @@ Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengek
 
 - [Blog](https://www.properaccess.nl/blog/): artikelen over WCAG, de EAA, het BDTO en digitale toegankelijkheid
 
-### Achtergrond en standpunten
-
 - [Wat de AFM in drie EAA-updates van financiële instellingen verwacht](https://www.properaccess.nl/blog/eaa-updates-afm-financiele-sector/): samenvatting met citaten van de EAA-updates van de AFM van april 2025, november 2025 en april 2026: de reikwijdte (bankdiensten en financiële e-handelsdiensten), de meldplicht met vier impactniveaus en termijnen van een week en een maand, het nalevingsonderzoek van 2026 met prioriteit voor de niveau-A-criteria terwijl de norm AA blijft, de vier non-interferentiecriteria 1.4.2, 2.1.2, 2.2.2 en 2.3.1, en de zes vragen van het meldformulier met de instructies van de AFM
 - [WebMCP: wat het is, en waarom het toegankelijkheid niet vervangt](https://www.properaccess.nl/blog/webmcp-en-toegankelijkheid/): wat de voorgestelde browser-API doet waarmee een website zijn functies aanbiedt als tools voor AI-agents, de status van het voorstel (Draft Community Group Report van de W3C Web Machine Learning Community Group, origin trial in Chrome 149, de API heet document.modelContext en niet meer navigator.modelContext), waarom het niets verandert aan vindbaarheid in AI-antwoorden, en waarom het geen vervanging is van een toegankelijke pagina. Met de discussie in de W3C-groep over de verhouding tot de accessibility tree, die op 17 augustus 2026 is gesloten omdat geen browserpartij WebMCP-tools in de accessibility tree wil zetten
-
-### Veelgelezen artikelen
 
 - [Welke tools gebruik je om je website op WCAG te testen?](https://www.properaccess.nl/blog/welke-tools-zijn-er-voor-toegankelijkheidstesten/): vergelijking van in-pagina checkers, contrasttools, schermlezers en bookmarklets, met per categorie wat er buiten beeld blijft
 - [Automatische tool of handmatige test?](https://www.properaccess.nl/blog/automatische-tool-vs-handmatige-test/): wat een scan dekt, wat handwerk vraagt en waarom de combinatie nodig is
@@ -86,7 +78,5 @@ Gemaakt en gehost in de EU, op basis van wat we in ruim 950 audits zijn tegengek
 - [Kan AI een website testen op toegankelijkheid?](https://www.properaccess.nl/blog/kan-ai-website-testen-op-toegankelijkheid/): eigen onderzoek naar wat taalmodellen en vision-modellen wel en niet vinden
 - [Hoe kies je een toegankelijkheidsbureau?](https://www.properaccess.nl/blog/hoe-kies-je-een-toegankelijkheidsbureau/): waar offertes van elkaar verschillen en welke vragen je stelt
 - [Wat doet een toezichthouder? De ACM over de EAA](https://www.properaccess.nl/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/): verslag van de aanpak die de ACM in 2026 presenteerde
-
-## Kiezen en vergelijken
 
 - [Auditbureau kiezen](https://www.properaccess.nl/auditbureau-kiezen/): zeven vragen waarmee je offertes van auditbureaus naast elkaar legt
