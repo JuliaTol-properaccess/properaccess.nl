@@ -39,7 +39,7 @@ trust:
 
 Een audit laat zien waar de problemen zitten. Het oplossen is jouw werk, of dat van je leverancier, je redactie of je devteam. Maar daarna komt de vraag: hoe weet je zeker dat het ook echt is opgelost? En hoe bewijs je dat aan je toezichthouder?
 
-Een hercontrole beantwoordt beide vragen. We lopen elke eerdere bevinding na, kijken of de oplossing werkt, en controleren of er bij het oplossen geen nieuwe problemen zijn ontstaan. Het resultaat is een aangepast rapport dat je opneemt in je toegankelijkheidsverklaring als bewijs.
+Een hercontrole (ook wel hertest) beantwoordt beide vragen. We lopen elke eerdere bevinding na, kijken of de oplossing werkt, en controleren of er bij het oplossen geen nieuwe problemen zijn ontstaan. Het resultaat is een aangepast rapport dat je opneemt in je toegankelijkheidsverklaring als bewijs.
 
 {{< /section-full >}}
 

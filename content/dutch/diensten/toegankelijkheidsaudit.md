@@ -77,6 +77,12 @@ faqs:
     answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing."
   - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
     answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
+  - question: "Wat is het verschil tussen een hertest en een nieuwe audit?"
+    answer: "Een hertest kijkt alleen naar de bevindingen uit je eerdere rapport, op dezelfde steekproef. Een nieuwe audit toetst opnieuw alle 55 succescriteria op niveau A en AA, bijvoorbeeld na een redesign of grote release. Is een pagina uit de steekproef verdwenen, dan nemen we een vergelijkbare pagina en kijken die volledig na."
+  - question: "Wat kost een hertest en hoe lang duurt die?"
+    answer: "De prijs hangt af van het aantal bevindingen in je rapport, want we lopen ze allemaal na: [JULIA: prijs]. Je vinkt bij de offerte voor de audit aan dat je een hertest wilt; de definitieve prijs krijg je zodra het rapport klaar is. Doorlooptijd: [JULIA: doorlooptijd]."
+  - question: "Wanneer plan ik de hertest in?"
+    answer: "Binnen twaalf weken na oplevering van het rapport. Daarna verandert er vaak zoveel aan je site dat de oude steekproef niet meer representatief is. Werk je naar een EAA- of BDTO-deadline toe, plan de hertest dan al in bij de start van de audit, zodat je team weet naar welke datum het toewerkt."
 # Concepttekst. Zichtbare alinea en acceptedAnswer.text komen uit dit veld.
 answer_blocks:
   - bij: wat-is-een-toegankelijkheidsonderzoek
@@ -222,6 +228,20 @@ van € 250 per uur betekent dat we het rapport samen doorlopen en helpen priori
 
 Meer over de opbouw lees je in het artikel
 [wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
+
+{{< /section-full >}}
+
+{{< section-full title="Hertest (hercontrole) na je fixes" id="hertest" >}}
+
+<div class="notice warning" role="note">
+<p><strong>Concept, nog niet publiceren.</strong> Prijs en doorlooptijd zijn nog niet ingevuld. In deze alinea en in de FAQ staan de placeholders [JULIA: prijs] en [JULIA: doorlooptijd]. Die moeten eerst worden vervangen.</p>
+</div>
+
+Een hertest, bij ons hercontrole, volgt op je audit zodra je bevindingen hebt opgelost. We lopen elke eerdere bevinding na op dezelfde steekproef: is het probleem weg, is het goed opgelost en is er geen nieuw probleem ontstaan? Je krijgt een aangepast rapport met per bevinding een status. Prijs: [JULIA: prijs]. Doorlooptijd: [JULIA: doorlooptijd].
+
+<a class="hp-btn hp-btn--primary" href="https://www.properaccess.nl/offerte-wcag-onderzoek/?utm_source=properaccess.nl&utm_medium=internal&utm_campaign=hertest">Vraag een offerte aan voor audit + hertest</a>
+
+[Alles over de hercontrole](/hercontrole/)
 
 {{< /section-full >}}
 
