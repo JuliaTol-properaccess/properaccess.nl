@@ -8,8 +8,18 @@ slug: "about-us"
 aliases:
   - /en/proper_access_in_english/
 description: "Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, in English or Dutch."
-tldr: |
-  Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, and we report per component: every finding sits with the element it belongs to, with a user story, a screenshot and a fix. We do not build websites and do not manage content, so we never audit our own work. Since 2019 we have done more than 950 audits, 236 assignments for 63 organisations, measured on 7 August 2026. Four in ten clients come back for a second audit. We report in English or Dutch at no extra cost.
+# Vervangt de eerdere tldr-intro. Zichtbare alinea (id="in-short") en FAQ uit deze velden.
+# Geen Markdown in de antwoorden: de tekst moet gelijk zijn aan FAQPage acceptedAnswer.text.
+in_short: "Proper Access is an independent accessibility audit firm in Amsterdam, IAAP WAS-certified since 2023. Since 2019 we have done more than 950 audits of websites and apps for 63 organisations (measured 7 August 2026). We report per component, in English or Dutch, and we never audit our own work because we do not build websites."
+faqs:
+  - question: "Who is behind Proper Access?"
+    answer: "Proper Access B.V. is an accessibility audit firm at Keizersgracht 520 H in Amsterdam (KVK 95350985), founded by senior auditor Julia Tol. A team of ten works on accessibility full time and is trained in house. Since 2019 we have done more than 950 audits for 63 organisations, including Rijksmuseum, NRC and Jumbo."
+  - question: "Which certifications do your auditors hold?"
+    answer: "Our auditors are certified by the International Association of Accessibility Professionals (IAAP) as Web Accessibility Specialists (WAS), since 2023. That means their knowledge of the technique and the standard has been tested against an external bar. Every report is also checked by three people before delivery."
+  - question: "How do you make sure a report is right?"
+    answer: "With the six-eyes principle. A senior auditor runs the audit, a second auditor does the internal review, and every report is checked by three people before it reaches you. We test by hand with NVDA, VoiceOver and TalkBack, keyboard only and zoom up to 400%, on real devices for apps."
+  - question: "Who do I talk to after delivery?"
+    answer: "Before delivery a relationship manager is your contact; after delivery you talk to the senior auditor who wrote your report. Questions run through accessibility credits: one credit is one question about one topic, and follow-up questions in the same thread cost nothing extra."
 keywords:
   - accessibility audit firm Netherlands
   - web accessibility auditors Amsterdam
