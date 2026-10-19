@@ -22,13 +22,13 @@ faq_title: "Vragen die we hierover krijgen"
 # hebben: zet \n\n in de string.
 faqs:
   - question: "Moet ik het onderzoek door een extern bureau laten doen?"
-    answer: "Nee. Onderzoek in eigen beheer is toegestaan en er is geen regel die een externe partij voorschrijft. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
+    answer: "Niet algemeen. De regelgeving schrijft niet voor dat je altijd een externe auditor moet inschakelen. Wel moet je kunnen onderbouwen hoe je de toegankelijkheid hebt beoordeeld. Voor overheidsorganisaties hoort die onderbouwing bij de toegankelijkheidsverklaring; commerciële diensten onder de EAA moeten op verzoek informatie kunnen geven waaruit blijkt dat ze aan de eisen voldoen. De reden om het uit te besteden is een risico-argument: heb je de site zelf gebouwd en zelf getoetst, dan gaat het gesprek met een toezichthouder of een klant daarna over jouw eigen oordeel."
   - question: "Toetsen jullie aan WCAG 2.1 of aan WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau A en AA, samen 55 succescriteria. De geldende norm is EN 301 549 V3.2.1, en die staat op WCAG 2.1 niveau A en AA; wij toetsen aan 2.2 als extra service. WCAG 2.2 is backwards compatible met 2.1, op één punt na: succescriterium 4.1.1 Parsen is vervallen omdat browsers die fouten inmiddels zelf opvangen. Wie aan 2.2 voldoet, voldoet dus ook aan 2.1."
   - question: "Voldoet mijn website aan de wet zodra het rapport klaar is?"
     answer: "Nee. Het rapport vertelt je waar je staat en wat er moet gebeuren. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier om te weten wat daarvoor nodig is, en het oplossen komt daarna."
   - question: "Val ik onder het BDTO of onder de EAA?"
-    answer: "Dat hangt af van wat je organisatie is en niet van wat je aanbiedt. Overheidsinstanties en publiekrechtelijke instellingen vallen onder het Besluit digitale toegankelijkheid overheid, commerciële bedrijven onder de European Accessibility Act. Voor je eigen website of app geldt het ene of het andere, nooit allebei.\n\nLet op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist."
+    answer: "Dat hangt af van je organisatie, doelgroep, dienst en sector. Overheidsinstanties en publiekrechtelijke instellingen vallen doorgaans onder het Besluit digitale toegankelijkheid overheid; commerciële diensten kunnen onder de European Accessibility Act vallen. De regelingen sluiten elkaar niet automatisch uit voor iedere organisatie of dienst. Let op bij het begrip publiekrechtelijke instelling: dat is een juridische term uit het aanbestedingsrecht met drie voorwaarden die allemaal moeten gelden. Een museum met een subsidie valt er dus niet automatisch onder. In de culturele sector loopt die grens vaak anders dan je verwacht, dus leg een twijfelgeval voor aan een jurist. Lees de uitleg van de [Rijksoverheid](https://www.rijksoverheid.nl/service/toegankelijkheid) en de [Europese richtlijn 2019/882](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882)."
   - question: "Hoelang duurt een onderzoek?"
     answer: "Een mini-audit levert binnen een week resultaat op. Een volledig onderzoek duurt gewoonlijk drie tot vijf weken, inclusief de interne review door de tweede auditor."
   - question: "Kan ik na het rapport vragen blijven stellen?"
@@ -52,8 +52,7 @@ beter beantwoordt, dan is dat een goede uitkomst.
 Vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
 {{< /notice >}}
 
-**Eerst iets wat vaak verkeerd wordt verteld.** Onderzoek in eigen beheer is toegestaan. Er is
-geen regel die voorschrijft dat een externe partij het onderzoek doet, en sommige webbureaus
+**Eerst iets wat vaak verkeerd wordt verteld.** Onderzoek in eigen beheer is toegestaan. De regelgeving schrijft niet algemeen voor dat een externe partij het onderzoek doet, en sommige webbureaus
 kiezen daar bewust voor. Het argument om het toch uit te besteden gaat over risico: lever je een
 site op die je zelf hebt gebouwd en zelf hebt getoetst, dan gaat het gesprek met de toezichthouder daarna over jouw
 oordeel. Wat de wet van je vraagt is een toegankelijke website of app. Het onderzoek is de manier
@@ -79,7 +78,7 @@ emulator laat je niet zien wat een gebruiker werkelijk hoort.
 
 Het [Register van Toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register)
 vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt:
-WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B. Er is nog geen breed
+[WCAG-EM](https://www.w3.org/TR/WCAG-EM/) of gelijkwaardig. Dat geldt voor status A en ook voor status B. Er is nog geen breed
 gedragen alternatief voor WCAG-EM, dus vraag een bureau wel hoe het de methode toepast.
 
 Val je onder de EAA en niet onder het BDTO, dan heb je geen verklaring in het Register nodig. De
@@ -175,9 +174,9 @@ overtreden.
 {{< section-full title="WCAG-EM: de vijf stappen van de methode" bg="light" >}}
 
 WCAG-EM staat voor Website Accessibility Conformance Evaluation Methodology 1.0, een Working
-Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het model van de
-verklaring noemt de methode wel bij naam, met "of gelijkwaardig" erachter, en van de ACM weten we
-uit de eerste hand dat ze er zelf mee werkt.
+Group Note van het W3C uit 2014. Een Note is geen norm en geen standaard. Het [model van de
+toegankelijkheidsverklaring](https://www.toegankelijkheidsverklaring.nl/model) noemt de methode
+wel bij naam, met "of gelijkwaardig" erachter, en van de ACM weten we uit de eerste hand dat ze er zelf mee werkt.
 
 <img src="/images/pages/auditbureau-wcag-em-stappen.svg" alt="De vijf stappen van WCAG-EM op een rij: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, handmatig toetsen per succescriterium, en rapporteren met bewijs erbij. Onderaan staat dat het Register vraagt dat uit je rapport blijkt dat je een goed gedocumenteerde evaluatiemethode hebt gebruikt, WCAG-EM of gelijkwaardig." loading="lazy" style="width:100%;height:auto;margin:1.5rem 0;" />
 

@@ -18,7 +18,7 @@ keywords:
 banner:
   badge: "WCAG 2.2, level AA"
   title: "Your website has to be accessible, and a scanner will not tell you where it fails. A senior auditor will, per component, with the fix"
-  content: "More reach, better conversion and a stronger reputation, through digital products that work for everyone. Get guided by a senior auditor and meet the European Accessibility Act (EAA) with as little cost and effort as possible."
+  content: "More reach, better conversion and a stronger reputation, through digital products that work for everyone. Get guided by a senior auditor and work toward meeting the European Accessibility Act (EAA) with as little cost and effort as possible."
   bullets:
     - "**More reach**: the visitors who now give up halfway"
     - "**Better conversion** and a stronger reputation"
@@ -88,7 +88,7 @@ faqs:
   - question: "Do we have to fix everything at once?"
     answer: "No. We help you prioritise. For each issue we indicate the impact: minor, moderate or severe. So you can start with the most important issues and pick up the rest later."
   - question: "Is this mandatory for us?"
-    answer: "If your website or app falls under the [European Accessibility Act](/en/european-accessibility-act/): yes, since 28 June 2025. That covers services to consumers such as webshops, banking and other financial services, passenger transport, e-books and communication services. The law requires an accessible service, not an audit; an audit is how you find out where you stand. Public sector bodies in the EU have had to comply with the Web Accessibility Directive and EN 301 549 for longer."
+    answer: "If your website or app falls under the [European Accessibility Act](/en/european-accessibility-act/): the accessibility requirements for covered services have applied since 28 June 2025. That covers services to consumers such as webshops, banking and other financial services, passenger transport, e-books and communication services. The [European Accessibility Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882) requires an accessible service, not an audit; an audit is how you find out where you stand. Public sector bodies in the EU have separate obligations under the Web Accessibility Directive."
   - question: "What if we're not technical?"
     answer: "No problem. We translate everything into plain language. And if you have a developer with questions, they can ask us anything too. We adapt to your situation."
   - question: "Can you fix the problems as well?"
