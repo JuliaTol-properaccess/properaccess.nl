@@ -1,0 +1,79 @@
+name: Weekly SEO, AEO and AI visibility audit
+
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  HUGO_ENV: production
+  HUGO_VERSION: "0.168.0"
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo
+        run: |
+          wget -O "$RUNNER_TEMP/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb"
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
+
+      - name: Setup Node
+        uses: actions/setup-node@v5.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Setup project
+        run: npm run project-setup
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and run site audit
+        continue-on-error: true
+        run: npm run seo:audit
+
+      - name: Run Lighthouse against production
+        run: |
+          npx --yes lighthouse@13 https://www.properaccess.nl/ \
+            --only-categories=seo,performance,best-practices \
+            --output=json --output=html \
+            --output-path=.audit/lighthouse \
+            --chrome-flags="--headless --no-sandbox"
+
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v5.0.0
+        with:
+          name: seo-aeo-ai-audit-${{ github.run_number }}
+          path: .audit/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Fail when the audit found regressions
+        if: always()
+        run: |
+          if [ ! -f .audit/seo-aeo-ai-audit.json ]; then
+            echo "Auditrapport ontbreekt; de build/auditstap is niet voltooid."
+            exit 1
+          fi
+          node - <<'NODE'
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('.audit/seo-aeo-ai-audit.json', 'utf8'));
+          const failures = report.checks.filter((check) => check.status === 'fail');
+          if (failures.length) {
+            console.error(`${failures.length} auditcontrole(s) gefaald:`);
+            for (const failure of failures) console.error(`- ${failure.id}: ${failure.message}`);
+            process.exit(1);
+          }
+          NODE
