@@ -58,15 +58,6 @@ punten:
 - is helder wie de audit uitvoert en hoe onafhankelijk het bureau is;
 - is vooraf geregeld welke begeleiding en hertest je na het rapport kunt krijgen.
 
-{{< notice type="info" title="Maak een goede auditaanvraag" >}}
-Je hoeft nog geen bureau te kiezen om offertes te kunnen vergelijken. Beschrijf je website of app,
-je aanleiding, je deadline en wat je na het onderzoek nodig hebt. Stuur daarna dezelfde aanvraag
-naar meerdere bureaus en vraag om een voorbeeldrapport. Zo vergelijk je niet alleen de prijs, maar
-ook de kwaliteit van het onderzoek.
-
-[Vraag een offerte aan bij Proper Access](/offerte-wcag-onderzoek/)
-{{< /notice >}}
-
 {{< notice type="quote" title="Ons belangrijkste advies" >}}
 Vraag bij meerdere auditbureaus een offerte aan en vraag om voorbeeldrapporten. Let bij het lezen op twee dingen: begrijp je wat er staat, en weet je hoe je de bevinding moet oplossen?
 {{< /notice >}}
@@ -165,10 +156,10 @@ Leg dit vast voordat je begint, zodat je later weet wat je mag verwachten.
 
 {{< /section-cards >}}
 
-{{< notice type="info" title="Neem deze vragen mee in je offerteaanvraag" >}}
-Vraag elk bureau om antwoord op deze zeven punten en vraag om een voorbeeldrapport. Je kunt de
-vragen letterlijk kopiëren naar je aanvraag. Let bij de antwoorden vooral op wat concreet is
-gemaakt: scope, steekproef, testmiddelen, rapportvorm, auditor, onafhankelijkheid en nazorg.
+{{< notice type="info" title="Gebruik deze vragen als checklist" >}}
+Vraag elk bureau om antwoord op deze zeven punten en vraag om een voorbeeldrapport. Let vooral op
+wat concreet is gemaakt: scope, steekproef, testmiddelen, rapportvorm, auditor, onafhankelijkheid
+en nazorg.
 {{< /notice >}}
 
 {{< section-full title="Twee beloften die niet kloppen" id="beloften" >}}

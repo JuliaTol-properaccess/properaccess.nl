@@ -13834,6 +13834,10 @@ a.tool-link__href-url:hover {
   color: #004050;
 }
 
+.notice.info .notice-body {
+  max-width: 62ch;
+}
+
 html.dark .notice.info {
   color: #e5f7f7;
   background-color: #12323a;
@@ -13846,6 +13850,10 @@ html.dark .notice.info .notice-head p {
 
 html.dark .notice.info .notice-head svg {
   color: #8bd3d3;
+}
+
+html.dark .notice.info .notice-body {
+  max-width: 62ch;
 }
 
 /* Zelfde lijst-inspringing in de blog-wcag layout (categorie "wcag-uitgelegd"
