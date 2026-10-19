@@ -11,12 +11,16 @@
  * zet alleen de velden over die binnenkomen.
  *
  * Secrets (via `wrangler secret put`):
- *   GITHUB_TOKEN    fijnmazige of classic PAT met Projects-rechten (read/write)
+ *   GITHUB_APP_ID   App ID van de GitHub App properaccess-agents
+ *   GITHUB_APP_KEY  private key van die App, in PKCS#8 (BEGIN PRIVATE KEY)
+ *   GITHUB_TOKEN    alleen als terugval zolang de App-secrets er niet zijn:
+ *                   PAT met Projects- en Issues-rechten
  *   AHASEND_API_KEY API-sleutel van AhaSend (EU), zelfde account als de CRM-Worker
  *
  * Vars (in wrangler.jsonc):
- *   PROJECT_OWNER   "JuliaTol-properaccess"
- *   PROJECT_NUMBER  "3"
+ *   PROJECT_OWNER   "ProperAccessbv" (persoon of organisatie)
+ *   PROJECT_NUMBER  "1"
+ *   ISSUES_REPO     "ProperAccessbv/audit-planning"
  *   ALLOW_ORIGIN    "https://www.properaccess.nl"
  *   NOTIFY_EMAIL    "julia@properaccess.nl"
  *   FROM_EMAIL      afzender die in AhaSend is geverifieerd
@@ -359,6 +363,54 @@ function bepaalKolom(opleverdatum) {
 
 /* ─────────────────────── GitHub Projects ─────────────────────── */
 
+// Sinds oktober 2026 werkt de Worker met de GitHub App properaccess-agents en
+// niet meer met een persoonlijk token van Julia. Per intake haalt hij een
+// installatietoken op dat een uur geldig is, alleen voor de issues-repo, met
+// alleen de rechten voor issues en het bord.
+
+function b64url(bytes) {
+  let bin = "";
+  for (const b of new Uint8Array(bytes)) bin += String.fromCharCode(b);
+  return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+async function appJwt(env) {
+  const pem = env.GITHUB_APP_KEY.replace(/-----[^-]+-----/g, "").replace(/\s+/g, "");
+  const der = Uint8Array.from(atob(pem), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey(
+    "pkcs8", der, { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" }, false, ["sign"]
+  );
+  const nu = Math.floor(Date.now() / 1000);
+  const enc = (o) => b64url(new TextEncoder().encode(JSON.stringify(o)));
+  const data = `${enc({ alg: "RS256", typ: "JWT" })}.${enc({ iat: nu - 60, exp: nu + 540, iss: String(env.GITHUB_APP_ID) })}`;
+  const sig = await crypto.subtle.sign("RSASSA-PKCS1-v1_5", key, new TextEncoder().encode(data));
+  return `${data}.${b64url(sig)}`;
+}
+
+async function githubToken(env) {
+  if (!env.GITHUB_APP_ID || !env.GITHUB_APP_KEY) return env.GITHUB_TOKEN;
+  const jwt = await appJwt(env);
+  const kop = {
+    Authorization: `Bearer ${jwt}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "properaccess-intake",
+  };
+  const inst = await fetch(`https://api.github.com/repos/${env.ISSUES_REPO}/installation`, { headers: kop });
+  if (!inst.ok) throw new Error(`GitHub App: geen installatie voor ${env.ISSUES_REPO} (${inst.status})`);
+  const { id } = await inst.json();
+  const res = await fetch(`https://api.github.com/app/installations/${id}/access_tokens`, {
+    method: "POST",
+    headers: { ...kop, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      repositories: [env.ISSUES_REPO.split("/")[1]],
+      permissions: { issues: "write", metadata: "read", organization_projects: "write" },
+    }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(`GitHub App: geen token (${res.status}: ${data.message || "onbekend"})`);
+  return data.token;
+}
+
 async function gh(env, query, variables) {
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
@@ -394,24 +446,46 @@ async function ghRest(env, pad, init) {
   return data;
 }
 
+// Nooit prijzen op het auditbord (Julia, 5 oktober 2026). Een klant kan in een
+// vrij veld een budget of bedrag typen; dat gaat niet mee naar het kaartje.
+// Dezelfde regel staat in bord_prijswacht.py (dashboard-repo), het CRM en
+// board.py. Pas ze samen aan.
+const VALUTA = String.raw`(?:€|\bEUR\b|\beuro(?:'s)?\b)`;
+const BEDRAG = String.raw`\d[\d.,]*(?:\s*[kK]\b)?(?:\s*,-)?`;
+const PRIJS = new RegExp(
+  `${VALUTA}\\s*${BEDRAG}|(?<![\\w])${BEDRAG}\\s*${VALUTA}|\\b\\d{1,3}(?:\\.\\d{3})*,-|€`,
+  "gi"
+);
+
+function zonderPrijzen(tekst) {
+  return String(tekst || "").replace(PRIJS, "[bedrag verwijderd]");
+}
+
 async function maakKaartje(env, title, bodyMd, columnName, labels) {
+  env = { ...env, GITHUB_TOKEN: await githubToken(env) };
+  title = zonderPrijzen(title);
+  bodyMd = zonderPrijzen(bodyMd);
+
   // 1. Project-id + Status-veld met opties ophalen (op naam, dus geen harde id's).
-  const info = await gh(
-    env,
-    `query($login:String!, $number:Int!){
-      user(login:$login){
-        projectV2(number:$number){
+  // repositoryOwner, zodat het bord van een persoon of van een organisatie mag zijn.
+  const bord = `projectV2(number:$number){
           id
           field(name:"Status"){
             ... on ProjectV2SingleSelectField { id options { id name } }
           }
-        }
+        }`;
+  const info = await gh(
+    env,
+    `query($login:String!, $number:Int!){
+      repositoryOwner(login:$login){
+        ... on Organization { ${bord} }
+        ... on User { ${bord} }
       }
     }`,
     { login: env.PROJECT_OWNER, number: Number(env.PROJECT_NUMBER) }
   );
 
-  const project = info.user && info.user.projectV2;
+  const project = info.repositoryOwner && info.repositoryOwner.projectV2;
   if (!project) throw new Error("Project niet gevonden");
   const projectId = project.id;
 
