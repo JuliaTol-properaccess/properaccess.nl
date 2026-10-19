@@ -59,7 +59,7 @@
 
     // Send to Worker — handles CRM, the notification email to Proper Access,
     // and the quiz follow-up email, all server-side via AhaSend (EU).
-    var workerRequest = fetch(opts.endpoint || WORKER_URL, {
+    var workerRequest = fetch(resolveEndpoint(opts.endpoint || WORKER_URL), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -107,5 +107,23 @@
     }
     status.textContent = message;
     status.className = "pa-form__status pa-form__status--" + type;
+  }
+
+  // Alleen op een lokale Hugo-server kan een QA-run de endpoint vervangen.
+  // Zo blijven productiepagina's altijd aan hun vaste Worker gekoppeld, terwijl
+  // browserchecks een veilige mock-Worker kunnen gebruiken.
+  function resolveEndpoint(defaultEndpoint) {
+    if (window.location && window.location.hostname === "127.0.0.1") {
+      var localParams = new URLSearchParams(window.location.search);
+      return localParams.get("pa_form_endpoint") || defaultEndpoint;
+    }
+
+    if (!window.location || !/^(localhost|127\\.0\\.0\\.1)$/.test(window.location.hostname)) {
+      return defaultEndpoint;
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var mockEndpoint = params.get("pa_form_endpoint");
+    return mockEndpoint || defaultEndpoint;
   }
 })();
