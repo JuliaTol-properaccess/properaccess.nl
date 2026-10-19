@@ -15,6 +15,9 @@ keywords:
 
 service:
   serviceType: "WCAG-training voor webredactie"
+  price:
+    amount: 595
+    description: "€ 595 per deelnemer voor het dagdeel over toegankelijke webcontent, € 795 voor het dagdeel van Word naar toegankelijke PDF en € 1.195 voor beide dagdelen op één dag. Alle prijzen exclusief btw."
   isCourse: true
   courseMode: "onsite"
   duration: "PT1D"
@@ -52,6 +55,10 @@ Voor redacteurs die content aan websites toevoegen met een CMS. Je leert hoe je 
 
 **Duur:** een dagdeel van 3,5 uur · **Prijs:** € 595 per deelnemer · **Locatie:** op locatie of online
 
+**Prijs:** € 595 per deelnemer, exclusief btw · **Groep:** maximaal 8 deelnemers
+
+Bij de prijs zit het eerste jaar van een WCAG Radar-licentie. Die licentie staat op naam van de deelnemer en geldt één jaar. Het is geen domeinlicentie: collega's die er niet bij waren kunnen hem niet gebruiken.
+
 {{< /section-card >}}
 {{< section-card title="Van Word naar toegankelijke PDF" >}}
 
@@ -67,12 +74,20 @@ Voor redacteurs die rapporten, verslagen of folders maken in PDF vanuit MS Word.
 
 **Duur:** een dagdeel van 3,5 uur · **Prijs:** € 795 per deelnemer · **Locatie:** op locatie of online
 
+**Prijs:** € 795 per deelnemer, exclusief btw · **Groep:** maximaal 8 deelnemers
+
+Bij de prijs zit het eerste jaar van onze PDF-tool. Ook die licentie staat op naam van de deelnemer en geldt één jaar. Het is geen domeinlicentie: collega's die er niet bij waren kunnen hem niet gebruiken.
+
 {{< /section-card >}}
 {{< /section-cards >}}
 
 {{< section-full title="Of beide dagdelen op één dag" >}}
 
 Neem je de twee trainingen samen, dan doen we 's ochtends de webcontent en 's middags de PDF's, met lunch ertussen. De uitleg over WCAG hoeft dan maar één keer, dus er blijft meer tijd over om te oefenen. De hele dag kost € 1.195 per deelnemer.
+
+**Prijs:** € 1.195 per deelnemer, exclusief btw, inclusief lunch · **Groep:** maximaal 8 deelnemers
+
+Bij deze dag krijg je allebei de licenties: het eerste jaar van de WCAG Radar en het eerste jaar van onze PDF-tool. Ze staan allebei op naam van de deelnemer en gelden allebei één jaar. Een domeinlicentie zit er niet bij. De twee dagdelen apart kosten samen € 1.390, dus op één dag ben je € 195 per deelnemer goedkoper uit.
 
 {{< /section-full >}}
 
