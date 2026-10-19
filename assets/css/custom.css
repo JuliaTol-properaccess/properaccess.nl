@@ -13824,6 +13824,10 @@ a.tool-link__href-url:hover {
   color: #004050;
   background-color: #e8f3f4;
   border-color: #004050;
+  max-width: 80rem;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 .notice.info .notice-head p {
@@ -13854,6 +13858,12 @@ html.dark .notice.info .notice-head svg {
 
 html.dark .notice.info .notice-body {
   max-width: 62ch;
+}
+
+@media (max-width: 767px) {
+  .notice.info {
+    padding-inline: 1rem;
+  }
 }
 
 /* Zelfde lijst-inspringing in de blog-wcag layout (categorie "wcag-uitgelegd"
