@@ -1,0 +1,20 @@
+{{ with .Params.trust }}
+<section class="hp-trust">
+  <div class="hp-container">
+    <p class="hp-trust__label">{{ .label }}</p>
+    <div class="hp-trust__names">
+      {{ range .names }}
+        {{ if reflect.IsMap . }}
+          {{ if .link }}
+            <a href="{{ .link }}"{{ if hasPrefix .link "http" }} rel="noopener"{{ end }}>{{ .name }}</a>
+          {{ else }}
+            <span>{{ .name }}</span>
+          {{ end }}
+        {{ else }}
+          <span>{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -121,6 +121,12 @@ startLevel = 2
 endLevel = 5
 ordered = true
 
+############################ Security ############################
+# Tailwind CSS wordt door Hugo's CSS-pipeline als extern proces aangeroepen.
+# Houd dit expliciet beperkt tot de tools die de build nodig heeft.
+[security.exec]
+allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 
 ########################### Media types ###########################
 [mediaTypes]

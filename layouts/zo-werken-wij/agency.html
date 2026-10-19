@@ -33,18 +33,7 @@
 {{ end }}
 
 <!-- ─── TRUST BAR ─── -->
-{{ with .Params.trust }}
-<section class="hp-trust">
-  <div class="hp-container">
-    <p class="hp-trust__label">{{ .label }}</p>
-    <div class="hp-trust__names">
-      {{ range .names }}
-        <span>{{ . }}</span>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ partial "trust-bar.html" . }}
 
 <!-- ─── CONTENT ─── -->
 <article class="offerte-content zwj-content">

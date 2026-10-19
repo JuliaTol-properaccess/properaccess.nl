@@ -1,5 +1,7 @@
 # Academy voor webredactie: opzet
 
+> **Status:** concept; techniek en content zijn als aparte opleidingen besloten, maar deze opzet is nog geen actuele publicatie-instructie.
+
 Concept van 8 oktober 2026. Besluit van Julia dezelfde dag: techniek en content worden
 twee aparte opleidingen met eigen lesstof. Niet één stel hoofdstukken met twee routes.
 Dit bestand staat in `docs/` en niet in `content/`, dus er gaat niets live zolang de opzet
