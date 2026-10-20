@@ -135,4 +135,4 @@ Voor ons is het ook een manier om het gesprek met klanten te structureren. Stap 
 
 Wil je weten hoe een WCAG-EM-onderzoek er voor jouw site uit zou zien? [Vraag een offerte aan](/offerte-wcag-onderzoek/); je krijgt binnen twee werkdagen een prijs met de scope en de steekproef erbij. Liever eerst overleggen, [neem dan contact op](/contact/).
 
-Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek: wat is het en wanneer heb je het nodig?](/blog/toegankelijkheidsonderzoek-wat-is-het/)
+Meer over wat er überhaupt in een toegankelijkheidsonderzoek zit: [Toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/)

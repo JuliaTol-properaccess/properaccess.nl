@@ -43,6 +43,15 @@ WCAG heeft drie conformiteitsniveaus:
 
 In de praktijk audit je bijna altijd op **WCAG 2.2 niveau AA**.
 
+## Hoe ziet zo'n probleem er in de praktijk uit?
+
+Een scan kan bijvoorbeeld signaleren dat een knop geen toegankelijke naam heeft. Dat vertelt je
+nog niet waarom het probleem ertoe doet, hoe iemand het ervaart of hoe je het veilig oplost. Een
+goede bevinding bevat daarom altijd de gebruikersimpact, een reproduceerstap en een concrete
+oplossing voor het developmentteam.
+
+{{< voorbeeld-bevinding >}}
+
 ## Welke versie geldt er?
 
 De Nederlandse wetgeving verwijst via EN 301 549 V3.2.1 naar WCAG 2.1. De nieuwste versie is WCAG 2.2, gepubliceerd in oktober 2023. WCAG 2.2 is volledig backwards compatible: alles uit 2.1 zit er nog in, plus negen nieuwe criteria.
@@ -51,7 +60,11 @@ Wij auditen standaard op WCAG 2.2, tenzij een opdrachtgever expliciet om 2.1 vra
 
 ## Wat betekent dit voor jou?
 
-Als je een website hebt die onder de EAA of het BDTO valt, moet je aantoonbaar voldoen aan WCAG. Dat doe je met een toegankelijkheidsaudit: een grondige handmatige en geautomatiseerde test van je website. Welke van de twee wetten voor je geldt en waar WCAG in dat geheel past, staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/).
+Als je een website hebt die onder de EAA of het BDTO valt, moet je voldoen aan de eisen die via
+EN 301 549 gelden. Die norm verwijst naar WCAG 2.1 niveau A en AA. Wij toetsen standaard aan
+WCAG 2.2, zodat je ook de aanvullende criteria meeneemt. Een audit is geen wettelijke eis voor
+iedere EAA-dienst, maar wel de praktische manier om te weten waar je staat en je verbeteringen te
+onderbouwen. Welke wet voor je geldt en waar WCAG in dat geheel past, staat op [digitale toegankelijkheid](/digitale-toegankelijkheid/).
 
 Het klinkt misschien overweldigend, 55 criteria op A en AA, maar in de praktijk komen dezelfde problemen steeds terug. Ontbrekende alt-teksten, te laag contrast, formulieren zonder labels, focusindicators die zijn uitgeschakeld. De meeste websites hebben vijf tot tien terugkerende patronen die 80% van de issues veroorzaken.
 

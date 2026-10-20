@@ -1,0 +1,30 @@
+<details class="faq-item voorbeeld-bevinding">
+  <summary class="faq-question">Voorbeeldbevinding: knop zonder toegankelijke naam</summary>
+  <div class="faq-answer">
+    <p><strong>Succescriterium:</strong> WCAG 4.1.2 Naam, rol, waarde</p>
+    <p><strong>Prioriteit:</strong> hoog</p>
+
+    <h3>Wat gaat er mis?</h3>
+    <p>De knop bevat alleen een pijl-icoon. Een schermlezer kondigt hem aan als “knop”, maar vertelt niet wat er gebeurt. Een bezoeker die de pagina niet ziet, weet daardoor niet of de knop een artikel opent, naar de volgende stap gaat of iets anders doet.</p>
+
+    <h3>Zo reproduceer je het</h3>
+    <ol>
+      <li>Open de pagina met NVDA en Firefox, of VoiceOver en Safari.</li>
+      <li>Navigeer met <kbd>Tab</kbd> naar de pijlknop.</li>
+      <li>Luister naar de aankondiging van de schermlezer.</li>
+    </ol>
+    <p>De knop wordt aangekondigd als “knop”, zonder doel of naam.</p>
+
+    <h3>Waarom is dit een probleem?</h3>
+    <p>De bezoeker kan de knop technisch bedienen, maar kan niet bepalen wat de bediening doet. Dat maakt de gebruikersflow onvoorspelbaar en kan ervoor zorgen dat iemand afhaakt.</p>
+
+    <h3>Oplossing</h3>
+    <pre><code>&lt;button type="button" aria-label="Lees verder"&gt;
+  &lt;svg aria-hidden="true"&gt;...&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+    <p>Gebruik liever zichtbare tekst als die in het ontwerp past. Staat er al tekst op de knop, zorg dan dat die tekst onderdeel blijft van de toegankelijke naam.</p>
+
+    <h3>Test na de oplossing</h3>
+    <p>Herhaal de test met toetsenbord en schermlezer. De knop moet nu worden aangekondigd als “Lees verder, knop” en de naam moet het werkelijke doel beschrijven.</p>
+  </div>
+</details>
