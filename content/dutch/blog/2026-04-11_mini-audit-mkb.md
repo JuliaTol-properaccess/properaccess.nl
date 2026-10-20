@@ -59,13 +59,22 @@ Wil je verder gaan dan een geautomatiseerde tool? In onze mini-audit bekijkt een
 
 Het is geen volledige audit, daar heb je een aparte opdracht voor nodig, maar het geeft je genoeg informatie om een geïnformeerde beslissing te nemen. De mini-audit kost 495 euro exclusief btw.
 
+### Zo ziet een bevinding eruit
+
+Je krijgt geen lijst met losse foutmeldingen. We beschrijven wat er misgaat, wat een bezoeker met
+een beperking merkt en welke eerste oplossing je team kan testen. Hieronder staat een voorbeeld van
+het detailniveau. Dit is illustratief; een mini-audit onderzoekt niet automatisch ieder component of
+iedere pagina van je website.
+
+{{< voorbeeld-bevinding >}}
+
 ## Wanneer heb je meer nodig dan een mini-audit?
 
 Een mini-audit is voldoende als je wilt weten **waar je staat**. Maar voor de EAA heb je uiteindelijk nodig:
 
-- Een **volledige WCAG-audit** om alle problemen in kaart te brengen
-- Een **rapport** dat je kunt delen met je development-team
-- Een **toegankelijkheidsverklaring** die je op je website publiceert
+- Een **volledig onderzoek** als je alle relevante problemen en gebruikersflows in kaart wilt brengen
+- Een **rapport** dat je kunt delen met je development-team en kunt gebruiken als onderbouwing
+- Een passende **informatiepagina over toegankelijkheid**; een toegankelijkheidsverklaring in het Register hoort bij het BDTO, niet automatisch bij de EAA
 
 Die onderdelen vereisen een volledige audit. Maar de mini-audit is een uitstekend startpunt.
 

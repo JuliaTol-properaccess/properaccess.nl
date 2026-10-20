@@ -156,6 +156,16 @@ Een voorbeeld dat we in de praktijk tegenkomen. Stel dat je webshop netjes aan W
 
 {{< /section-full >}}
 
+{{< section-full title="Zo ziet een ontwikkelbare bevinding eruit" id="voorbeeld-bevinding" bg="light" >}}
+
+Een auditrapport hoort niet alleen te zeggen dat iets niet voldoet. Je developmentteam moet het
+probleem kunnen reproduceren, de impact begrijpen en weten hoe het opgelost kan worden. Daarom
+schrijven we bevindingen per element, met een user story, teststappen en codevoorbeeld.
+
+{{< voorbeeld-bevinding >}}
+
+{{< /section-full >}}
+
 {{< section-tweekolom title="Wie houdt er toezicht?" id="toezicht" bg="light" >}}
 
 {{< kolom-tekst >}}

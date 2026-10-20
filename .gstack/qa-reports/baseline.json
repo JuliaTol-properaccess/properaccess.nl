@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "url": "https://www.properaccess.nl/",
+  "healthScore": 100,
+  "issues": [],
+  "categoryScores": {
+    "console": 100,
+    "links": 100,
+    "visual": 100,
+    "functional": 100,
+    "responsive": 100
+  }
+}

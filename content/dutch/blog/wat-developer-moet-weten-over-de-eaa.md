@@ -14,19 +14,19 @@ description: "Wat moeten web agencies weten over de European Accessibility Act (
 
 ## Wat is de toegankelijkheidswet?
 
-De toegankelijkheidswet is een Europese wet die op **28 juni** van **2025** ingaat en gevolgen heeft voor **heel veel** bedrijven die via een website diensten of producten leveren aan consumenten of de overheid. De wet is ook bekend als de EAA, de [European Accessibility Act](/eaa/). **Alle** bedrijven met **10 of meer** medewerkers moeten eraan voldoen, en kleinere bedrijven zodra hun jaaromzet **én** hun balanstotaal boven de **2 miljoen** euro liggen. 
+De European Accessibility Act (EAA) wordt sinds **28 juni 2025** toegepast. De wet heeft gevolgen voor commerciële bedrijven die digitale producten of diensten aan consumenten leveren, zoals webshops, ticketing, bankieren, reizen boeken, e-books en telecom. De EAA is niet hetzelfde als het BDTO voor overheidsinstanties en publiekrechtelijke instellingen. Micro-ondernemingen zijn voor diensten uitgezonderd; laat een jurist je situatie beoordelen als je precies op een grens zit.
 
 Om te voldoen aan deze wet, moet je zorgen dat jouw websites, apps of andere digitale kanalen **toegankelijk** zijn voor mensen met een functiebeperking. Dat zijn bijvoorbeeld mensen die niet kunnen zien, die de muis niet kunnen gebruiken of die kleurenblind zijn. Uit onderzoeken blijkt dat het om zo’n **25 procent** van alle mensen gaat. De wet is bedacht om ervoor te zorgen dat **elk mens**, met of zonder beperking, digitale diensten en producten kan gebruiken.
 
-Vanaf 26 juni 2025 moeten alle websites die je nieuw oplevert of ingrijpend aanpast voldoen aan de eisen van de toegankelijkheidswet, de European Accessibility Act. 
+Voor een website of app die je vandaag onderhoudt betekent een overgangstermijn niet dat je toegankelijkheid kunt uitstellen. Begin bij de belangrijkste gebruikersflow: bij een webshop is dat van productkeuze tot betaling.
 
 ## Wie moet voldoen aan de toegankelijkheidswet?
 
-De wet geldt voor de meeste middelgrote en grote bedrijven die via digitale kanalen diensten of producten leveren aan consumenten of de overheid. Er zijn een paar uitzonderingen. Ten eerste geldt de wet niet voor bedrijven die uitsluitend aan de zakelijke markt leveren. Maar let op: de overheid valt hier dus niet onder. De wet geldt ook niet voor de diensten van micro-ondernemingen. Dat zijn bedrijven met minder dan 10 werknemers én een jaaromzet óf een jaarlijks balanstotaal van ten hoogste 2 miljoen euro. Het personeelsaantal is een harde grens: kom je daarboven, dan val je er hoe dan ook onder. Van de omzet en het balanstotaal hoeft er maar één onder de twee miljoen te zitten.
+De wet geldt niet voor iedere organisatie en iedere dienst. De precieze kwalificatie hangt af van de organisatie, de dienst en de uitzonderingen. Gebruik de [EAA-pagina](/eaa/) voor de hoofdlijnen en laat twijfelgevallen juridisch toetsen.
 
 ## Wat gebeurt er als ik niet voldoe aan de toegankelijkheidswet?
 
-Niet voldoen aan de wet betekent dat je straks te maken kunt krijgen met een toezichthouder die het naleven van deze wet komt controleren. Er wordt nu gezegd dat er 7 verschillende toezichthouders komen die dit gaan doen. Op dit moment, in maart 2025, is het nog niet duidelijk hoe dit precies gaat werken.
+Het toezicht is verdeeld over zes toezichthouders. Voor e-handelsdiensten en veel webshops is de ACM relevant. Houd je dossier actueel: leg vast wat je hebt onderzocht, welke problemen zijn gevonden, welke oplossingen zijn doorgevoerd en wat een hercontrole bevestigt.
 
 ## Hoe kan een web agency digitale toegankelijkheid het beste aanpakken?
 
@@ -130,6 +130,14 @@ In deze lijst verkorten we de toegankelijkheidsnaam tot een a11y naam.
 - Berichten die de status van de uitgevoerde acties bevestigen hebben geen aria-live region.
 
 Deze punten komen we in elke audit tegen. Dit zijn ongeveer 60% van alle technische fouten die ontwikkelaars regelmatig maken. Laat je website altijd door een expert bekijken om echt alle issues te detecteren.
+
+## Hoe een ontwikkelaar een bevinding gebruikt
+
+Een goede bevinding is een werkitem, geen abstracte afkeur. Je moet kunnen zien welk element
+faalt, hoe je het probleem reproduceert, welke gebruiker hinder ondervindt en welke oplossing je
+opnieuw kunt testen.
+
+{{< voorbeeld-bevinding >}}
 
 ## Wil je digitale toegankelijkheid écht goed aanpakken?
 
