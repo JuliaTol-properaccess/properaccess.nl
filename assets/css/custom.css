@@ -19455,6 +19455,10 @@ html.dark .jaartijdlijn dd {
     grid-template-columns: 0.85fr 1.15fr;
     gap: 3rem;
   }
+
+  .tweekolom--one-third-two-thirds .tweekolom__grid {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .tweekolom__tekst,
@@ -19500,6 +19504,84 @@ html.dark .jaartijdlijn dd {
 .tweekolom__naast table {
   margin-top: 0;
   font-size: 0.875rem;
+}
+
+/* Voorbeeldbevinding in dezelfde compacte stijl als onze rapporten. */
+.pa-example-finding {
+  color: #1f2937;
+}
+
+.pa-example-finding__title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+.pa-example-finding__title-row h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.pa-example-finding__impact {
+  color: #a30d4b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pa-example-finding__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #eef2f7;
+  font-size: 0.875rem;
+}
+
+.pa-example-finding__meta strong {
+  color: #64748b;
+}
+
+.pa-example-finding__screenshot {
+  margin: 0 0 1.5rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #f8fafc;
+}
+
+.pa-example-finding__screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pa-example-finding__body h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.pa-example-finding__body blockquote {
+  margin: 0.75rem 0 1.25rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #006477;
+  background: #f5f5f5;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .pa-example-finding__title-row {
+    display: block;
+  }
+
+  .pa-example-finding__impact {
+    display: inline-block;
+    margin-top: 0.35rem;
+  }
 }
 
 /* ─── Money page financiële instellingen (fin-) ───

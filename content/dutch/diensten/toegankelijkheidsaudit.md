@@ -184,17 +184,12 @@ wilt. Een senior auditor bekijkt je site en benoemt de grootste knelpunten.
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-full title="Wat kost een toegankelijkheidsaudit?" id="prijzen" >}}
+{{< section-tweekolom title="Wat kost een toegankelijkheidsaudit?" id="prijzen" bg="light" ratio="one-third-two-thirds" >}}
+
+{{< kolom-tekst >}}
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
 aantal pagina's. Alle bedragen zijn exclusief 21% btw.
-
-| Type website | Indicatieprijs |
-| --- | --- |
-| Eenvoudige website, informatief, weinig interactie | circa € 2.250 |
-| Gemiddelde website, formulieren, enige interactie | circa € 3.150 |
-| Gemiddeld-complexe website, webshop, inlog, filters | circa € 4.200 |
-| Complexe website, maatwerkapplicatie, veel interactie | circa € 5.100 |
 
 De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categorie bij jou past,
 [plan dan een kennismaking van 30 minuten](/contact/). We kijken samen naar je site, zeggen
@@ -208,7 +203,20 @@ van € 250 per uur betekent dat we het rapport samen doorlopen en helpen priori
 Meer over de opbouw lees je in het artikel
 [wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
 
-{{< /section-full >}}
+{{< /kolom-tekst >}}
+
+{{< kolom-naast >}}
+
+| Type website | Indicatieprijs |
+| --- | --- |
+| Eenvoudige website, informatief, weinig interactie | circa € 2.250 |
+| Gemiddelde website, formulieren, enige interactie | circa € 3.150 |
+| Gemiddeld-complexe website, webshop, inlog, filters | circa € 4.200 |
+| Complexe website, maatwerkapplicatie, veel interactie | circa € 5.100 |
+
+{{< /kolom-naast >}}
+
+{{< /section-tweekolom >}}
 
 {{< section-cards id="onafhankelijk" columns="3" bg="light" title="Waarom een onafhankelijk bureau?" >}}
 {{< section-card title="We bouwen zelf niets" >}}

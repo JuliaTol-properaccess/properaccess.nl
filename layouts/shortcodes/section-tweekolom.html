@@ -4,8 +4,9 @@
 {{- $eyebrow := .Get "eyebrow" -}}
 {{- $bg := .Get "bg" -}}
 {{- $id := .Get "id" -}}
+{{- $ratio := .Get "ratio" -}}
 
-<section class="tweekolom{{ if eq $bg "light" }} tweekolom--light{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+<section class="tweekolom{{ if eq $bg "light" }} tweekolom--light{{ end }}{{ if eq $ratio "one-third-two-thirds" }} tweekolom--one-third-two-thirds{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
   <div class="hp-container">
     {{ if or $title $eyebrow }}
     <div class="tweekolom__header">
