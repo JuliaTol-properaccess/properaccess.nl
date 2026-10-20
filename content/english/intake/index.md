@@ -1,7 +1,7 @@
 ---
 title: "Intake form"
 meta_title: "Intake form | Proper Access"
-description: "Fill in the intake form so we can schedule and carry out your digital accessibility audit."
+description: "Fill in the intake for your digital accessibility audit in the Proper Access client portal."
 type: intake
 layout: single
 url: "/en/intake/"
@@ -12,6 +12,8 @@ build:
   render: true
 ---
 
-Your audit is confirmed. Fill in this form so we can schedule the work and get off to a good start. Notice later that something is missing or has changed? Just email us and we will update it.
+You fill in the intake in our client portal. After you accept the quote, you receive an email with an invitation. It explains how to log in: you enter your email address and receive a login link. You do not need a password.
 
-Your details do not stay on the website; they go straight to our planning.
+The intake has four steps. You can stop in between. The portal keeps what you have filled in until you continue.
+
+No invitation received? Check your spam folder, or email us at [info@properaccess.nl](mailto:info@properaccess.nl).
