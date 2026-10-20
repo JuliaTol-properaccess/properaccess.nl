@@ -4,11 +4,12 @@ meta_title: "European Accessibility Act (EAA): wat het is en wat je moet doen | 
 type: "diensten"
 layout: "agency"
 date: 2026-08-29
+lastmod: 2026-10-20
 slug: "eaa"
 url: "/eaa/"
-description: "De European Accessibility Act geldt sinds 28 juni 2025. Voor wie hij geldt, welke norm eronder ligt, wie toezicht houdt en wat je nu moet doen."
+description: "De European Accessibility Act uitgelegd: voor wie de EAA geldt, hoe EAA, EN 301 549 en WCAG samenhangen en wat je als organisatie nu moet regelen."
 tldr: |
-  De European Accessibility Act (EAA) is richtlijn (EU) 2019/882. In Nederland is die omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, en de regels gelden sinds 28 juni 2025. De wet verplicht bedrijven die producten en diensten aan consumenten leveren om die toegankelijk te maken: webshops, bankieren, reizen boeken, ticketing, e-books en telecom. De maatstaf is EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau A en AA. Het toezicht ligt bij zes toezichthouders; voor webshops en apps is dat de ACM. De wet schrijft een toegankelijke website of app voor, geen onderzoek. Een onderzoek is de manier om te weten waar je staat.
+  De European Accessibility Act (EAA) is richtlijn (EU) 2019/882. In Nederland is die omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, en de regels gelden sinds 28 juni 2025. De wet verplicht bedrijven die bepaalde producten en diensten aan consumenten leveren om die toegankelijk te maken: onder meer webshops, bankieren, reizen boeken, ticketing, e-books en telecom. Voor websites verwijst de technische norm EN 301 549 V3.2.1 naar WCAG 2.1 niveau A en AA; de norm bevat daarnaast eisen voor onder meer software, hardware, documenten en ondersteuning. Het toezicht ligt bij zes toezichthouders; voor webshops en apps is dat de ACM. De wet schrijft geen audit voor, maar je moet wel kunnen uitleggen hoe je aan de eisen voldoet.
 keywords:
   - European Accessibility Act
   - EAA
@@ -22,7 +23,7 @@ keywords:
 banner:
   badge: "Geldt sinds 28 juni 2025"
   title: "European Accessibility Act (EAA): wat het is en wat je moet doen"
-  content: "De wet die bedrijven verplicht hun digitale producten en diensten toegankelijk te maken. Op deze pagina staat wat de EAA is, voor wie hij geldt, welke norm eronder ligt, wie er toezicht houdt en welke stappen je nu zet."
+  content: "De wet die bedrijven verplicht bepaalde producten en diensten voor consumenten toegankelijk te maken. Op deze pagina staat wat de EAA is, voor wie hij geldt, welke norm eronder ligt, wie er toezicht houdt en welke stappen je nu zet."
   button:
     enable: true
     label: "Plan een kennismaking"
@@ -41,11 +42,11 @@ eaa_feiten:
   - k: "Uitzondering"
     v: "Micro-ondernemingen: minder dan 10 werknemers, én een jaaromzet óf een balanstotaal van maximaal € 2 miljoen"
   - k: "Norm"
-    v: "EN 301 549 V3.2.1, en dat is WCAG 2.1 niveau A en AA"
+    v: "EN 301 549 V3.2.1. Voor websites verwijst die naar WCAG 2.1 niveau A en AA"
   - k: "Toezicht"
     v: "Zes toezichthouders. Voor webshops en apps is dat de ACM"
   - k: "Verplicht"
-    v: "Een toegankelijke website of app. Een onderzoek is geen wettelijke eis"
+    v: "Een toegankelijke website of app als die onder de EAA valt. Een onderzoek is geen wettelijke eis"
 
 eaa_monitor_punten:
   - k: "De markt"
@@ -71,11 +72,11 @@ faqs:
   - question: "Gelden de regels ook voor kleine bedrijven?"
     answer: "Ja, tenzij je een micro-onderneming bent. De richtlijn omschrijft die als een onderneming met minder dan 10 werknemers én een jaaromzet óf een balanstotaal van ten hoogste 2 miljoen euro. Het personeelsaantal is een harde grens; van de twee financiële cijfers hoeft er maar één onder de grens te zitten. De ACM noemt op haar eigen pagina alleen de omzet. Let op hoe je die tien telt: de Europese definitie rekent in arbeidsjaareenheden, dus in voltijdbanen opgeteld over een heel jaar. Twee mensen die halve weken werken zijn samen één, en een drukke zomer met tijdelijke krachten telt naar rato mee. Eigenaren en meewerkende vennoten tellen mee, leerlingen met een leerovereenkomst niet, en zwangerschaps- en ouderschapsverlof wordt er niet bij gerekend. Kom je boven een grens uit, dan verandert je status pas als dat twee boekjaren op rij gebeurt."
   - question: "Waaraan moet een website of app precies voldoen?"
-    answer: "Aan EN 301 549, de Europese norm voor toegankelijke ICT. Die staat in versie V3.2.1 op WCAG 2.1 niveau A en AA, samen 50 succescriteria; wij toetsen aan WCAG 2.2, dat er 55 heeft. Concreet gaat het om dingen als: elk formulierveld heeft een zichtbaar label, je kunt de hele bestelling met alleen het toetsenbord afronden, een foutmelding zegt wat er mis is en bij welk veld, en een schermlezer leest je knoppen voor met een naam die klopt. Een geautomatiseerde scan raakt ongeveer 30% van de succescriteria, de rest is handwerk. En de norm houdt niet op bij je website: ook je klantondersteuning valt eronder."
+    answer: "Aan de toepasselijke eisen uit EN 301 549, de Europese norm voor toegankelijke ICT. Voor websites verwijst versie V3.2.1 naar WCAG 2.1 niveau A en AA, samen 50 succescriteria; wij toetsen aan WCAG 2.2, dat er 55 heeft. Concreet gaat het om dingen als: elk formulierveld heeft een zichtbaar label, je kunt de hele bestelling met alleen het toetsenbord afronden, een foutmelding zegt wat er mis is en bij welk veld, en een schermlezer leest je knoppen voor met een naam die klopt. Een geautomatiseerde scan raakt maar een deel van de succescriteria; de rest vraagt handwerk. En de norm houdt niet op bij je website: ook je klantondersteuning kan eronder vallen."
   - question: "Moet ik mijn bestaande website direct aanpassen?"
     answer: "Ja. Voor een website of app die je vandaag onderhoudt is er geen overgangsperiode; die valt sinds 28 juni 2025 onder de plicht. De datum 28 juni 2030 die je soms tegenkomt gaat over iets anders: diensten die op 28 juni 2025 al liepen, mogen tot die datum doorwerken met producten die er toen al waren. Zelfbedieningsterminals die toen al in gebruik waren mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Begin bij het onderdeel waar je geld binnenkomt. Bij een webshop is dat het afrekenproces, en dat is ook het eerste waar de ACM naar kijkt."
   - question: "Wat zijn de straffen of sancties bij niet-naleving?"
-    answer: "De toezichthouder kan waarschuwen, een last onder dwangsom opleggen en een bestuurlijke boete geven. De ACM begon in 2026 met begeleiden: wie niet voldoet krijgt drie maanden om het op orde te brengen, daarna volgt een hertest. Concrete boetebedragen noemen we niet, want die hebben we niet uit een bron die we kunnen aanwijzen; kom je online een bedrag tegen, kijk dan uit welke wet dat komt. Werk je in meerdere landen, houd er dan rekening mee dat de sancties en de hersteltermijnen per land verschillen. Nederland geeft drie maanden, Noorwegen acht weken, en Noorwegen past de regels toe zonder in de EU te zitten."
+    answer: "De toezichthouder kan waarschuwen, herstelmaatregelen opleggen en een bestuurlijke boete geven. Hoe de toezichthouder optreedt hangt af van de ernst van de problemen en van de stappen die je als organisatie zet. Concrete boetebedragen noemen we niet zonder een specifieke wettelijke grondslag; kom je online een bedrag tegen, kijk dan uit welke wet en welk land dat bedrag komt."
   - question: "Wie houdt er in Nederland toezicht op?"
     answer: "Zes toezichthouders, elk voor een eigen soort product of dienst. Heb je een webshop of een app, dan is dat de ACM. Je komt online ook \"zeven toezichthouders\" tegen; in dat lijstje zit er een die over de Wet digitale overheid gaat en niet over de EAA. Tweede plek waar het misgaat: de Implementatiewet wijzigt zeven wetten, en dat is iets anders dan zeven toezichthouders. En Logius is geen toezichthouder, ook al kom je die naam vaak tegen: Logius beheert DigiToegankelijk en het Register, en dat hoort bij het BDTO."
   - question: "Ben ik verplicht een audit te laten doen?"
@@ -97,6 +98,34 @@ Voor die datum was digitale toegankelijkheid in Nederland vooral een verplichtin
 Er lopen twee overgangstermijnen. Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Voor een website of app die je vandaag onderhoudt betekent dat weinig: die valt gewoon onder de plicht.
 
 {{< /section-feiten >}}
+
+{{< section-cards title="EAA, EN 301 549 en WCAG: wat is wat?" subtitle="Deze drie begrippen worden vaak door elkaar gebruikt. Ze hebben elk een andere rol." id="begrippen" columns="2" bg="light" >}}
+
+{{< section-card title="1. EAA: de Europese wet" >}}
+
+De **European Accessibility Act** is richtlijn (EU) 2019/882. De richtlijn beschrijft voor welke producten en diensten Europese toegankelijkheidseisen gelden. Nederland heeft de richtlijn omgezet in de Implementatiewet toegankelijkheidsvoorschriften producten en diensten.
+
+{{< /section-card >}}
+
+{{< section-card title="2. Implementatiewet: de Nederlandse regels" >}}
+
+De Nederlandse wet maakt de Europese verplichtingen toepasbaar in Nederland. Daarin staat onder meer wie toezicht houdt en welke bevoegdheden toezichthouders hebben. De EAA is dus niet zelf een Nederlandse wet, maar de naam die meestal wordt gebruikt voor het Europese kader.
+
+{{< /section-card >}}
+
+{{< section-card title="3. EN 301 549: de technische norm" >}}
+
+EN 301 549 werkt de toegankelijkheidseisen voor ICT uit. De norm gaat over meer dan een website: ook apps, software, hardware, documenten en klantondersteuning kunnen onderdeel zijn van de dienst.
+
+{{< /section-card >}}
+
+{{< section-card title="4. WCAG: richtlijnen voor webcontent" >}}
+
+**WCAG** zijn de Web Content Accessibility Guidelines van het W3C. Voor websites verwijst EN 301 549 V3.2.1 naar WCAG 2.1 niveau A en AA. WCAG 2.2 is nieuwer; wij gebruiken die versie bij onderzoek als extra praktische maatstaf.
+
+{{< /section-card >}}
+
+{{< /section-cards >}}
 
 {{< section-cards title="Voor wie geldt de EAA?" subtitle="De wet geldt voor commerciële bedrijven die digitale producten of diensten aan consumenten aanbieden. Dit zijn de groepen die we in de praktijk het vaakst tegenkomen." id="voor-wie" bg="light" columns="3" >}}
 
@@ -126,6 +155,27 @@ Welke wet voor je geldt hangt af van **wat je organisatie is**, niet van wat je 
 
 Kies hieronder je situatie, dan licht de wet op die daarbij hoort. Allebei de kaarten blijven staan, zodat je het verschil kunt zien.
 {{< /wetkiezer >}}
+
+{{< section-route id="wat-regelen" eyebrow="Praktische checklist" title="Wat moet je als organisatie regelen?" subtitle="De EAA vraagt geen specifiek certificaat of verplicht auditrapport. Je moet wel zorgen dat de dienst toegankelijk is, informatie daarover beschikbaar maken en kunnen aantonen hoe je tot je onderbouwing komt." >}}
+
+{{< route-stap n="01" title="Bepaal je scope" >}}
+Breng in kaart welke organisatie, dienst, website, app, documenten en klantondersteuning onder de regels vallen. Controleer ook of je onder de EAA of het BDTO valt en welke toezichthouder bij je sector hoort.
+{{< /route-stap >}}
+
+{{< route-stap n="02" title="Controleer de hele klantreis" >}}
+Test niet alleen de homepage. Kijk ook naar zoeken, inloggen, formulieren, betalen, reserveren, foutmeldingen, documenten en contact met de klantenservice. Een toegankelijke webpagina is niet genoeg als iemand daarna niet toegankelijk geholpen kan worden.
+{{< /route-stap >}}
+
+{{< route-stap n="03" title="Los problemen structureel op" >}}
+Prioriteer problemen die een taak blokkeren, zoals een ontoegankelijke checkout of een formulier dat niet met het toetsenbord werkt. Los ze op in componenten en processen, niet alleen op één losse pagina.
+{{< /route-stap >}}
+
+{{< route-stap n="04" title="Leg uit en blijf bijhouden" >}}
+Publiceer informatie over de toegankelijkheid van je dienst. Bewaar je onderbouwing en herhaal controles wanneer je content, techniek, dienstverlening of de toepasselijke norm verandert.
+{{< /route-stap >}}
+
+{{< /section-route >}}
+
 {{< section-cards title="Twee uitzonderingen, en ze worden vaak door elkaar gehaald" subtitle="Val je onder de EAA, dan zijn er twee routes waarlangs de plicht kan vervallen of verlicht worden. Ze werken totaal verschillend." id="uitzonderingen" bg="light" columns="2" >}}
 
 {{< section-card title="Micro-onderneming: vrijgesteld" >}}
@@ -156,15 +206,7 @@ Een voorbeeld dat we in de praktijk tegenkomen. Stel dat je webshop netjes aan W
 
 {{< /section-full >}}
 
-{{< section-full title="Zo ziet een ontwikkelbare bevinding eruit" id="voorbeeld-bevinding" bg="light" >}}
-
-Een auditrapport hoort niet alleen te zeggen dat iets niet voldoet. Je developmentteam moet het
-probleem kunnen reproduceren, de impact begrijpen en weten hoe het opgelost kan worden. Daarom
-schrijven we bevindingen per element, met een user story, teststappen en codevoorbeeld.
-
-{{< voorbeeld-bevinding >}}
-
-{{< /section-full >}}
+{{< voorbeeld-bevinding-sectie title="Zo ziet een ontwikkelbare bevinding eruit" id="voorbeeld-bevinding" intro="Een auditrapport hoort niet alleen te zeggen dat iets niet voldoet. Je developmentteam moet het probleem kunnen reproduceren, de impact begrijpen en weten hoe het opgelost kan worden. Daarom schrijven we bevindingen per element, met een user story, teststappen en codevoorbeeld." >}}
 
 {{< section-tweekolom title="Wie houdt er toezicht?" id="toezicht" bg="light" >}}
 
@@ -188,26 +230,6 @@ Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Ons verslag van 
 {{< /kolom-naast >}}
 
 {{< /section-tweekolom >}}
-
-{{< section-route id="wat-nu" eyebrow="De route" title="Wat moet je nu doen?" subtitle="De EAA verplicht een toegankelijke website of app. Een onderzoek is geen wettelijke eis. Je doet het omdat je zonder onderzoek niet weet wat er mis is, en omdat je het moet kunnen onderbouwen als een toezichthouder ernaar vraagt. Dit is de route die wij aanhouden." >}}
-
-{{< route-stap n="01" title="Weten waar je staat" >}}
-Een handmatig onderzoek volgens WCAG-EM laat zien welke problemen er zijn en hoe ernstig ze zijn. [Vraag een offerte aan](/offerte-wcag-onderzoek/) voor een volledige audit; je krijgt binnen twee werkdagen een prijs die past bij de omvang van je site.
-{{< /route-stap >}}
-
-{{< route-stap n="02" title="Oplossen met een plan van aanpak" >}}
-Een gemiddelde audit levert in onze praktijk zo'n honderd bevindingen op, en die zitten in de componenten van je website. Je krijgt er een plan van aanpak bij, met per bevinding hoe je hem oplost en hoe je zelf controleert of het klaar is. Dit is de langste stap.
-{{< /route-stap >}}
-
-{{< route-stap n="03" title="Vastleggen dat het weg is" >}}
-Met een [hercontrole](/hercontrole/) toetsen we de opgeloste bevindingen opnieuw. Zonder die stap heb je een rapport met problemen en geen bewijs van een oplossing, en dat laatste wil een toezichthouder zien.
-{{< /route-stap >}}
-
-{{< route-stap n="04" title="Publiceren en bijhouden" >}}
-Publiceer informatie over de toegankelijkheid van je dienst op een eigen pagina op je website, zodat een bezoeker hem kan vinden zonder door je algemene voorwaarden te hoeven lezen. Dat is iets anders dan een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register, want dat hoort bij het BDTO. Houd het daarna bij: de meeste bevindingen die wij bij een hercontrole vinden zijn nieuw.
-{{< /route-stap >}}
-
-{{< /section-route >}}
 
 {{< section-diensten id="hoe-we-helpen" eyebrow="Hoe we helpen" title="Praktische hulp bij elke stap" subtitle="Je hoeft niet alles zelf te doen. Wat je wel zelf moet weten, is waar je staat." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
@@ -234,6 +256,18 @@ We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het 
 In de [EAA-monitor](https://eaa-monitor.nl) van Flonam staat de informatie over de European Accessibility Act bij elkaar op één website. Je leest er hoe andere bedrijven de wet aanpakken en waar zij tegenaan lopen, je stelt anoniem je eigen vragen, en je vindt er partijen die je verder helpen. Handig als je wilt weten waar je staat vergeleken met de rest van je branche.
 
 {{< /section-monitor >}}
+
+{{< section-full title="Officiële bronnen" id="bronnen" bg="light" >}}
+
+Deze gids is gecontroleerd op **20 oktober 2026**. Wetgeving, normen en handhavingspraktijk kunnen veranderen. Gebruik voor een juridisch oordeel altijd de actuele bron en vraag bij twijfel advies aan een jurist.
+
+- [European Accessibility Act: richtlijn (EU) 2019/882](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882)
+- [Implementatiewet toegankelijkheidsvoorschriften producten en diensten](https://zoek.officielebekendmakingen.nl/stb-2024-87.html)
+- [ACM: toegankelijkheid van e-handelsdiensten en elektronische communicatiediensten](https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten)
+- [EN 301 549 V3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)
+- [WCAG 2.1](https://www.w3.org/TR/WCAG21/) en [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+
+{{< /section-full >}}
 
 {{< section-cards title="Verder lezen over de EAA" id="verder-lezen" bg="light" columns="3" noot="Zoek je begeleiding over de hele route, van onderzoek tot verantwoording, kijk dan bij [hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/)." >}}
 

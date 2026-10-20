@@ -163,15 +163,7 @@ Wat de wet verplicht is een toegankelijke website of app, plus informatie over d
 
 {{< /section-cards >}}
 
-{{< section-full title="Van WCAG-eis naar werkitem" id="voorbeeld-bevinding" bg="light" >}}
-
-Een WCAG-succescriterium wordt pas bruikbaar voor een team als duidelijk is wat er op de pagina
-misgaat, wie daar last van heeft en hoe je de oplossing test. Dit is een voorbeeld van het
-detailniveau in een auditrapport.
-
-{{< voorbeeld-bevinding >}}
-
-{{< /section-full >}}
+{{< voorbeeld-bevinding-sectie title="Van WCAG-eis naar werkitem" id="voorbeeld-bevinding" intro="Een WCAG-succescriterium wordt pas bruikbaar voor een team als duidelijk is wat er op de pagina misgaat, wie daar last van heeft en hoe je de oplossing test. Dit is een voorbeeld van het detailniveau in een auditrapport." >}}
 
 {{< section-route id="meten" eyebrow="Zelf beginnen" title="Hoe je erachter komt waar je staat" subtitle="Je hebt geen technische kennis nodig voor een eerste indruk. Deze vier stappen kun je vandaag zetten, in deze volgorde." >}}
 

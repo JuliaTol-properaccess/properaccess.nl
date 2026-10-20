@@ -1,0 +1,15 @@
+{{ $title := .Get "title" }}
+{{ $id := .Get "id" }}
+{{ $intro := .Get "intro" }}
+
+<section class="section-full section-full--light"{{ with $id }} id="{{ . }}"{{ end }}>
+  <div class="hp-container">
+    <div class="section-full__inner">
+      <h2 class="hp-heading-lg" style="margin-bottom: 1.5rem;">{{ $title }}</h2>
+      <div class="section-full__content">
+        <p>{{ $intro }}</p>
+        {{ partial "voorbeeld-bevinding.html" . }}
+      </div>
+    </div>
+  </div>
+</section>

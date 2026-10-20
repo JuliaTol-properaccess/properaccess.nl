@@ -146,15 +146,7 @@ Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastl
 
 {{< /section-full >}}
 
-{{< section-full title="Een voorbeeld van een bevinding" id="voorbeeld-bevinding" bg="light" >}}
-
-Dit is het detailniveau waarop we bevindingen opleveren. Je ziet niet alleen welk succescriterium
-geraakt wordt, maar ook wat een bezoeker ervaart, hoe je het probleem reproduceert en welke
-oplossing je developmentteam kan testen.
-
-{{< voorbeeld-bevinding >}}
-
-{{< /section-full >}}
+{{< voorbeeld-bevinding-sectie title="Een voorbeeld van een bevinding" id="voorbeeld-bevinding" intro="Dit is het detailniveau waarop we bevindingen opleveren. Je ziet niet alleen welk succescriterium geraakt wordt, maar ook wat een bezoeker ervaart, hoe je het probleem reproduceert en welke oplossing je developmentteam kan testen." >}}
 
 {{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type audit past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria op niveau A en AA. Soms past een deelonderzoek beter." >}}
 {{< section-card title="Contentaudit" >}}
