@@ -95,6 +95,9 @@ De European Accessibility Act is
 Voor die datum was digitale toegankelijkheid in Nederland vooral een verplichting voor de overheid, via het
 [Besluit digitale toegankelijkheid overheid](https://wetten.overheid.nl/BWBR0040936) uit 2018. De EAA breidt die plicht uit naar het bedrijfsleven.
 
+Wil je weten wat je nu praktisch moet doen, van onderzoek tot herstel en verantwoording? Bekijk
+dan ook onze [route voor hulp bij de Europese toegankelijkheidswetgeving](/hulp-bij-europese-toegankelijkheidswetgeving/).
+
 Er lopen twee overgangstermijnen. Diensten die op 28 juni 2025 al liepen, mogen tot 28 juni 2030 doorwerken met producten die er toen al waren. Zelfbedieningsterminals die op die datum al in gebruik waren, mogen mee tot het einde van hun economische levensduur, met een maximum van twintig jaar. Voor een website of app die je vandaag onderhoudt betekent dat weinig: die valt gewoon onder de plicht.
 
 {{< /section-feiten >}}

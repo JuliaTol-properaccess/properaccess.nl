@@ -37,6 +37,10 @@ trust:
 
 Een automatische scan is een goed startpunt en geen eindpunt. Tools als axe en WAVE pakken een deel van de problemen, vooral de dingen die te formuleren zijn als regel ("dit veld heeft geen label", "deze afbeelding heeft geen alt-tekst"). Maar het grootste deel van de WCAG kun je niet automatisch toetsen, omdat de materie te complex is. Of een alt-tekst klopt. Of een focusvolgorde logisch is. Of een knop een herkenbare naam heeft voor iemand die hem niet ziet.
 
+Dit is de kern van het verschil tussen een automatische scan en een handmatige WCAG-audit. Wil
+je weten wat zo'n audit verder oplevert en welk type onderzoek bij je past, lees dan de pagina
+over de [WCAG-audit](/toegankelijkheidsaudit/) of het [overzicht van onderzoeken](/toegankelijkheidsonderzoek/).
+
 Daar komen wij langs. Per pagina in de steekproef lopen we systematisch alle HTML-elementen na terwijl we allerlei beperkingen simuleren. Dat is geen kunst, maar wel veel werk. Een gemiddelde audit zit op zestien tot vierentwintig uur testen.
 
 {{< /section-full >}}

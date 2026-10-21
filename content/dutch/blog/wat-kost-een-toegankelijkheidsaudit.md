@@ -29,6 +29,10 @@ keywords:
   - wat kost een wcag audit
 ---
 
+Dit artikel gaat over de prijs. Voor de hoofdroute over wat een audit inhoudt en wat je krijgt,
+zie [WCAG-audit laten uitvoeren](/toegankelijkheidsaudit/). Wil je verschillende soorten
+onderzoeken vergelijken, bekijk dan het [overzicht van toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/).
+
 ## Wat het kost
 
 "Wat kost zo'n audit eigenlijk?" Het is de vraag die ik het vaakst krijg. Hieronder staat onze hele lijst. Alle bedragen zijn exclusief 21% btw.

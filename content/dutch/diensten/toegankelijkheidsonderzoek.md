@@ -66,6 +66,10 @@ namen die je in offertes en aanbestedingen door elkaar ziet staan, voor precies 
 Verwarrend, maar je hoeft er niet op te letten: wie een van deze vier vraagt, vraagt om een
 toets aan WCAG 2.2 op niveau A en AA.
 
+Deze pagina helpt je kiezen welk onderzoek je laat uitvoeren: volledig, content, techniek of
+app. Je vindt hier ook de methode, steekproef, prijs en doorlooptijd. Voor de korte uitleg van
+wat een audit oplevert, lees je de pagina [WCAG-audit laten uitvoeren](/toegankelijkheidsaudit/).
+
 Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 telt op niveau A en AA samen 55
 succescriteria. Een geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die
 een tool kan meten.
