@@ -2,7 +2,7 @@
 title: "Proper Access: WCAG-audits, tools en advies over digitale toegankelijkheid"
 meta_title: "Digitale toegankelijkheid: WCAG-audits, tools en advies | Proper Access"
 date: 2026-09-19
-description: "De EAA geldt al. Proper Access test je website of app op WCAG 2.2 AA. Onafhankelijk auditbureau voor digitale toegankelijkheid, sinds 2019 en IAAP-gecertificeerd."
+description: "Proper Access helpt bedrijven en overheden om websites en apps toegankelijk te maken voor iedereen. Onafhankelijk specialistisch auditbureau voor digitale toegankelijkheid."
 keywords:
   - WCAG-audit
   - toegankelijkheidsonderzoek

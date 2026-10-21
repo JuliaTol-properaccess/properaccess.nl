@@ -8,9 +8,9 @@ date: 2024-12-05
 lastmod: 2026-09-17
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
-description: "Een toegankelijkheidsaudit is een handmatige toets van je website aan WCAG 2.2 niveau AA. Concrete oplossingen met code-voorbeelden. Vanaf circa 2.250 euro."
+description: "Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. Je krijgt een handmatige WCAG-audit met concrete oplossingen, vanaf circa 2.250 euro."
 tldr: |
-  Een toegankelijkheidsaudit is een handmatig onderzoek waarin we je website of app toetsen aan WCAG 2.2, niveau AA. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.250 en duurt 3 tot 5 weken. Je weet daarna precies wat er nog niet voldoet aan de EAA of het BDTO en hoe je het oplost.
+  Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. We toetsen handmatig aan WCAG 2.2, niveau AA, en geven concrete adviezen waarmee je team direct aan de slag kan. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.250 en duurt 3 tot 5 weken.
 keywords:
   - wcag
   - WCAG 2.2

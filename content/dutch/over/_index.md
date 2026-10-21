@@ -6,7 +6,7 @@ type: "over"
 # /team gaf een 404 en werd in de week van 21-09-2026 nog bezocht.
 aliases:
   - "/team"
-description: "Onafhankelijk WCAG-auditbureau voor websites en mobiele apps. Audits en begeleiding voor overheid, bedrijfsleven en culturele instellingen."
+description: "Proper Access helpt bedrijven en overheden om websites en apps toegankelijk te maken voor iedereen. Onafhankelijk specialistisch auditbureau voor digitale toegankelijkheid."
 keywords:
   [
     "WCAG",
@@ -27,10 +27,9 @@ hide_cta: true
 banner:
   title: "Wij zijn vakidioten in digitale toegankelijkheid"
   content: >
-    Elke ochtend worden we wakker met hetzelfde doel: de digitale wereld beter maken
-    voor iedereen. Dat is geen tagline, dat is onze passie. We willen de beste zijn
-    in ons vak, en daar werken we elke dag keihard aan. Die passie delen we graag
-    met onze klanten.
+    Proper Access helpt bedrijven en overheden om websites en apps toegankelijk te maken
+    voor iedereen, ook voor mensen met een beperking. We onderzoeken wat er in de praktijk
+    beter kan en geven concrete adviezen waarmee je team direct aan de slag kan.
   tijdlijn:
     - jaar: "2019"
       tekst: "Proper Access opgericht in Amsterdam"
@@ -96,10 +95,10 @@ stats:
 faqs:
   - question: "Waarom zijn jullie beter dan andere auditbureaus?"
     answer: >
-      Wij zijn niet per se beter. Maar wij zijn anders.
-
-
-      **Andere bureaus leveren rapporten.** Wij leveren oplossingen. Andere bureaus zijn inspectie-instellingen. Wij helpen je je websites toegankelijk te maken voor echte gebruikers.
+      Proper Access is gespecialiseerd in audits die niet eindigen bij een rapport. We combineren
+      handmatig testen, senior expertise en peer review met rapportages waar teams direct mee
+      kunnen herstellen. Dat maakt ons vooral geschikt voor organisaties die niet alleen willen
+      weten wat er fout gaat, maar ook hoe ze het oplossen.
 
 
       Het verschil zit in de details: rapporten per webpagina en per element, dus niet per
@@ -139,6 +138,10 @@ translationKey: "over-ons"
 ---
 
 {{< section-full title="Onze missie: toegankelijkheid als vanzelfsprekend fundament" >}}
+
+Proper Access is een onafhankelijk specialistisch auditbureau voor digitale toegankelijkheid.
+We onderzoeken websites en apps met de hand en vertalen onze bevindingen naar concrete
+oplossingen waarmee digitale teams direct aan de slag kunnen.
 
 We werken sinds 2019 met product owners, digitale teams, marketingleiders en webredacties, binnen musea, culturele instellingen, e-commerce en de overheid. Wat we overal zien: toegankelijkheid voelt vaak als een last-minute zorg. Een bron van onzekerheid, stress en paniekerig herstelwerk vlak voor een deadline.
 

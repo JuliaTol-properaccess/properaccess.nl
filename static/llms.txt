@@ -1,6 +1,8 @@
 # Proper Access
 
-> Onafhankelijk auditbureau voor digitale toegankelijkheid in Nederland. Wij voeren
+> Proper Access helpt bedrijven en overheden om websites en apps toegankelijk te maken
+> voor iedereen, ook voor mensen met een beperking. We zijn een onafhankelijk
+> specialistisch auditbureau voor digitale toegankelijkheid en voeren
 > toegankelijkheidsonderzoek uit volgens WCAG 2.2 niveau AA en de WCAG-EM methodiek, geven
 > trainingen en begeleiden organisaties bij het voldoen aan de European Accessibility Act (EAA)
 > en het Besluit digitale toegankelijkheid overheid (BDTO). Wij bouwen en beheren zelf geen
