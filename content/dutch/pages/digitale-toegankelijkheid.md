@@ -1,13 +1,13 @@
 ---
 title: "Digitale toegankelijkheid"
-meta_title: "Digitale toegankelijkheid: wat het is en wat de wet vraagt | Proper Access"
+meta_title: "Digitale toegankelijkheid: wat moet je doen? | Proper Access"
 type: "diensten"
 layout: "agency"
 hide_cta: true
 date: 2026-08-30
 slug: "digitale-toegankelijkheid"
 url: "/digitale-toegankelijkheid/"
-description: "Wat digitale toegankelijkheid is: je site te gebruiken met hulpsoftware, met alleen het toetsenbord en sterk ingezoomd. En welke wet voor jou geldt."
+description: "Wat digitale toegankelijkheid betekent, welke wet voor jou geldt en hoe je stap voor stap naar een toegankelijke website werkt."
 keywords:
   - digitale toegankelijkheid
   - wat is digitale toegankelijkheid

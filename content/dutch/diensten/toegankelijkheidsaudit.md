@@ -1,6 +1,6 @@
 ---
 title: "Toegankelijkheidsaudit"
-meta_title: "WCAG-audit laten uitvoeren: onafhankelijk en concreet | Proper Access"
+meta_title: "WCAG-audit laten uitvoeren vanaf €2.250 | Proper Access"
 layout: "audit"
 weight: 2
 featured: true
@@ -8,7 +8,7 @@ date: 2024-12-05
 lastmod: 2026-09-17
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
-description: "Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. Je krijgt een handmatige WCAG-audit met concrete oplossingen, vanaf circa 2.250 euro."
+description: "Laat je website of app handmatig toetsen aan WCAG 2.2. Je krijgt concrete oplossingen, een rapport per pagina en alle bevindingen vanaf €2.250."
 tldr: |
   Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. We toetsen handmatig aan WCAG 2.2, niveau AA, en geven concrete adviezen waarmee je team direct aan de slag kan. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.250 en duurt 3 tot 5 weken.
 keywords:
