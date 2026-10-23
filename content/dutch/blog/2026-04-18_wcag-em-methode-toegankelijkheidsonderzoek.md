@@ -21,7 +21,7 @@ meta_title: "WCAG-EM uitgelegd: de 5 stappen van de W3C-methode | Proper Access"
 meta_description: "Wat is WCAG-EM en wanneer heb je het nodig? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
 ---
 
-Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Website Accessibility Conformance Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een WCAG-audit opzet en uitvoert.
+Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Web Content Accessibility Guidelines Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een toegankelijkheidsevaluatie opzet en uitvoert. De actuele versie is WCAG-EM 2.0. Die is niet alleen bedoeld voor websites, maar ook voor apps en andere digitale producten.
 
 WCAG zegt **wát** je moet toetsen. WCAG-EM zegt **hoe** je dat doet. Dat tweede is net zo belangrijk, want zonder een vaste methode kan iedereen z'n eigen conclusies trekken en is een audit niet vergelijkbaar of controleerbaar.
 
@@ -32,8 +32,8 @@ Stel dat drie auditors dezelfde website onderzoeken. Zonder methode kiest de een
 WCAG-EM lost dat op. Het legt vast:
 
 - **Hoe je bepaalt wat bij de website hoort** (scope)
-- **Welke pagina's altijd mee moeten** in het onderzoek
-- **Hoe je een representatieve steekproef samenstelt**
+- **Welke views, functionaliteit en technologieën** in het onderzoek vertegenwoordigd moeten zijn
+- **Hoe je een representatieve steekproef samenstelt**, met een gestructureerde én een willekeurige selectie
 - **Hoe je de evaluatie uitvoert en rapporteert**
 
 Daardoor zijn audits van verschillende partijen vergelijkbaar, en kan een hercontrole door een andere auditor dezelfde conclusies opleveren.
@@ -72,23 +72,17 @@ Zonder deze stap weet je niet wat je moet testen. Met deze stap wordt duidelijk 
 
 ### Stap 3: Representatieve steekproef samenstellen
 
-Je gaat niet elke pagina van een website met 10.000 producten testen. Dat hoeft ook niet. WCAG-EM schrijft voor dat je een steekproef samenstelt uit twee soorten pagina's:
+Je gaat niet elke pagina of view van een digital product met 10.000 producten testen. Dat hoeft ook niet. WCAG-EM 2.0 schrijft voor dat je een representatieve steekproef samenstelt met twee manieren van selecteren:
 
-**Verplichte pagina's** (moeten altijd mee):
-- Homepage
-- Contactpagina
-- Zoekfunctie en resultatenpagina
-- Inlog- en registratiepagina
-- Foutpagina's (404, sessie verlopen)
-- Toegankelijkheidsverklaring
-- Voorbeelden van elke kritieke flow (bestellen, aanvragen, downloaden)
+**De gestructureerde steekproef** dekt de variatie in het digital product af. Daarin neem je onder meer mee:
+- Veelvoorkomende views en verschillende typen content, ontwerpen en functionaliteit
+- Essentiële functionaliteit en complete processen, zoals bestellen, aanvragen of downloaden
+- De technologieën waarop het digital product leunt, zoals HTML, PDF of video
+- Andere samples die relevant zijn voor mensen met een beperking, zoals informatie over toegankelijkheidsfuncties, hulp en ondersteuning, of authenticatie
 
-**Representatieve pagina's** (dekken de variatie af):
-- Eén pagina per paginatype of template
-- Pagina's met uiteenlopende componenten (tabellen, formulieren, video, interactieve elementen)
-- Documenten die op de site staan (PDF's, Word-bestanden)
+**De willekeurige steekproef** is een aanvulling op de gestructureerde steekproef. Volgens WCAG-EM 2.0 bestaat die uit 10% van de gestructureerde steekproef. De willekeurig gekozen views mogen niet al in de gestructureerde steekproef zitten. Je legt ook vast hoe je ze hebt geselecteerd. Zo controleer je of de gestructureerde steekproef inderdaad representatief is.
 
-Vuistregel: voor een gemiddelde site kom je op 15 tot 25 pagina's. Te weinig en je mist problemen, te veel en je betaalt voor dubbel werk.
+Een vuistregel van 15 tot 25 pagina's voor een gemiddelde site is mijn eigen praktische richtlijn, niet een aantal dat WCAG-EM voorschrijft. De benodigde omvang hangt af van onder meer de grootte, leeftijd, complexiteit en technologieën van het digital product.
 
 ### Stap 4: De evaluatie uitvoeren
 
