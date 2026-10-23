@@ -1,6 +1,6 @@
 ---
-title: "Website toegankelijk maken in 4 stappen: van scan tot hercontrole"
-meta_title: "Website toegankelijk maken in 4 stappen | Proper Access"
+title: "Hoe maak je een website digitaal toegankelijk? 4 stappen"
+meta_title: "Website digitaal toegankelijk maken: 4 stappen"
 date: 2026-03-11
 slug: "hoe-maak-je-een-website-digitaal-toegankelijk"
 categories:
@@ -10,8 +10,8 @@ tags:
   - "toegankelijke-website"
   - "wcag"
   - "eaa"
-description: "Een praktisch stappenplan om je website toegankelijk te maken: van eerste scan en WCAG-keuze tot herstel, hertest en borging."
-meta_description: "Website toegankelijk maken? Volg deze 4 stappen: eerste scan, WCAG-keuze, herstel en hercontrole. Met kosten en praktische voorbeelden."
+description: "Hoe maak je een website digitaal toegankelijk? Volg vier stappen: ontdek waar je staat, kies WCAG 2.2, herstel problemen en laat opnieuw testen."
+meta_description: "Hoe maak je een website digitaal toegankelijk? Volg vier stappen van eerste scan en WCAG 2.2 tot herstel, hercontrole en borging."
 keywords:
   - hoe maak je een website toegankelijk
   - website digitaal toegankelijk maken
