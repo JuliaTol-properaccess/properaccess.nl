@@ -236,7 +236,7 @@ Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Ons verslag van 
 
 {{< section-diensten id="hoe-we-helpen" eyebrow="Hoe we helpen" title="Praktische hulp bij elke stap" subtitle="Je hoeft niet alles zelf te doen. Wat je wel zelf moet weten, is waar je staat." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
-{{< dienst-kaart title="WCAG-audit" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsaudit/" cta="Bekijk de WCAG-audit" >}}
+{{< dienst-kaart title="WCAG-audit" prijs="Vanaf circa € 2.175 · 3 tot 5 weken" link="/toegankelijkheidsaudit/" cta="Bekijk de WCAG-audit" >}}
 Een handmatig onderzoek volgens WCAG-EM, getoetst aan WCAG 2.2 niveau AA. Je krijgt een rapport per element, met screenshots en code-voorbeelden, en een user story per bevinding.
 {{< /dienst-kaart >}}
 
@@ -248,7 +248,7 @@ Tot 5 uur handmatige controle door een senior auditor. Voor als je eerst wilt we
 Kom je bij een bevinding niet verder, dan leg je de vraag voor aan een senior auditor. Eén strip is één vraag over één onderwerp; vervolgvragen in dezelfde draad kosten niets extra.
 {{< /dienst-kaart >}}
 
-{{< dienst-kaart title="Hercontrole" prijs="Prijs hangt af van het aantal bevindingen" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+{{< dienst-kaart title="Hercontrole" prijs="Eerste hercontrole in de auditprijs" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
 We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het probleem weg is. Dat is het bewijs dat een toezichthouder wil zien.
 {{< /dienst-kaart >}}
 

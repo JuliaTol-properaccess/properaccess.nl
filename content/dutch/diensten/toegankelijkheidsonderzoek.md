@@ -9,7 +9,7 @@ slug: "toegankelijkheidsonderzoek"
 url: "/toegankelijkheidsonderzoek/"
 description: "Een handmatige toets van je website of app aan WCAG 2.2, volgens WCAG-EM. Welke vier soorten er zijn, wat ze kosten en welke bij jou past."
 tldr: |
-  Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2 niveau AA, uitgevoerd volgens WCAG-EM, de evaluatiemethode van het W3C. Er zijn vier soorten: een volledig onderzoek dat alle 55 succescriteria dekt, een contentaudit voor 33 criteria, een techniek- of systeemaudit voor 48 criteria, en een app-audit per platform. Een volledig onderzoek begint bij circa € 2.250 en duurt 3 tot 5 weken. Proper Access voert dit sinds 2019 uit en bouwt zelf geen websites, dus we keuren nooit ons eigen werk.
+  Een toegankelijkheidsonderzoek is een handmatige toets van je website of app aan WCAG 2.2 niveau AA, uitgevoerd volgens WCAG-EM, de evaluatiemethode van het W3C. Er zijn vier soorten: een volledig onderzoek dat alle 55 succescriteria dekt, een contentaudit voor 33 criteria, een techniek- of systeemaudit voor 48 criteria, en een app-audit per platform. Een volledig onderzoek begint bij circa € 2.175 en duurt 3 tot 5 weken. Proper Access voert dit sinds 2019 uit en bouwt zelf geen websites, dus we keuren nooit ons eigen werk.
 keywords:
   - toegankelijkheidsonderzoek
   - toegankelijkheidsonderzoek laten uitvoeren
@@ -22,8 +22,8 @@ keywords:
 service:
   serviceType: "Toegankelijkheidsonderzoek volgens WCAG 2.2 en WCAG-EM"
   price:
-    amount: 2250
-    description: "Indicatie vanaf circa € 2.250 exclusief btw voor een volledig onderzoek. De definitieve prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie."
+    amount: 2175
+    description: "Indicatie vanaf circa € 2.175 exclusief btw voor een volledig onderzoek. De definitieve prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie."
 
 banner:
   badge: "WCAG 2.2 en WCAG-EM"
@@ -180,20 +180,18 @@ met honderd pagina's en een configurator. Alle bedragen zijn exclusief 21% btw.
 | Type website | Indicatieprijs |
 | --- | --- |
 | Mini-audit, tot 5 uur | € 495 |
-| Eenvoudige website, informatief, weinig interactie | circa € 2.250 |
-| Gemiddelde website, formulieren, enige interactie | circa € 3.150 |
-| Gemiddeld-complexe website, webshop, inlog, filters | circa € 4.200 |
-| Complexe website, maatwerkapplicatie, veel interactie | circa € 5.100 |
+| Eenvoudige website, informatief, weinig interactie | circa € 2.175 |
+| Gemiddelde website, formulieren, enige interactie | circa € 2.850 |
+| Gemiddeld-complexe website, webshop, inlog, filters | circa € 3.675 |
+| Complexe website, maatwerkapplicatie, veel interactie | circa € 4.350 |
 
 De meeste websites vallen in de categorie gemiddeld. Een onderzoek duurt 3 tot 5 weken en na een
 kennismaking krijg je een vaste prijs, geen nacalculatie.
 
-Twee dingen bieden we er altijd bij aan, allebei optioneel. Een [hercontrole](/hercontrole/) legt
-vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt voor je
-[toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) en bij handhaving. Wat die kost hangt
-af van het aantal bevindingen, meestal € 300 tot € 1.100, en je krijgt die prijs in een aparte
-offerte nadat het rapport er ligt. Een nabespreking van € 250 per uur
-betekent dat we het rapport samen doorlopen en helpen prioriteren. Wil je tijdens het oplossen
+In de prijs zitten ook een nabespreking en één [hercontrole](/hercontrole/). In de
+nabespreking lopen we het rapport samen door en helpen we prioriteren. De hercontrole binnen
+4 maanden legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt
+voor je [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) en bij handhaving. Wil je tijdens het oplossen
 kunnen overleggen, dan kan dat met een [strippenkaart](/strippenkaart/).
 
 Meer over de opbouw van de prijs lees je in het artikel

@@ -74,7 +74,7 @@ sections:
 steps_header: "How we help a webshop through this"
 steps:
   - title: "Audit the checkout the way the ACM does"
-    body: "A senior auditor goes through the full customer journey by hand, from product listing to payment, with a screen reader, the keyboard and zoom. A full [accessibility audit](/en/accessibility-audit/) of a webshop starts from approximately €2,895 excl. VAT for a simple shop and takes three to five weeks. A [mini audit](/en/mini-audit/) of €495 gives you the biggest problems within five working days."
+    body: "A senior auditor goes through the full customer journey by hand, from product listing to payment, with a screen reader, the keyboard and zoom. A full [accessibility audit](/en/accessibility-audit/) of a webshop starts from approximately €2,625 excl. VAT for a simple shop and takes three to five weeks. A [mini audit](/en/mini-audit/) of €495 gives you the biggest problems within five working days."
   - title: "Give you the wording for the ACM form"
     body: "The report groups findings per component, with the WCAG criterion, a severity and a fix. That is the information the ACM form asks for: which parts, what impact, what plan."
   - title: "Retest and record"

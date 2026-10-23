@@ -197,7 +197,7 @@ Of een foutmelding echt wordt voorgelezen, of je met alleen het toetsenbord door
 
 {{< kolom-tekst >}}
 
-De prijs volgt de omvang en de complexiteit van je site, want het werk is handwerk. Een mini-audit levert binnen een paar dagen een eerste beeld op. Een volledig onderzoek begint bij ongeveer € 2.250 voor een eenvoudige site, en de meeste websites vallen in de categorie gemiddeld. Alle bedragen zijn exclusief btw.
+De prijs volgt de omvang en de complexiteit van je site, want het werk is handwerk. Een mini-audit levert binnen een paar dagen een eerste beeld op. Een volledig onderzoek begint bij ongeveer € 2.175 voor een eenvoudige site, en de meeste websites vallen in de categorie gemiddeld. Alle bedragen zijn exclusief btw.
 
 Wat de prijs bepaalt is het aantal unieke paginatypes en de hoeveelheid interactie, niet het aantal pagina's. Een webshop met vijfduizend productpagina's kan goedkoper uitvallen dan een gemeentesite met veertig formulieren.
 
@@ -212,10 +212,10 @@ De hele lijst, plus zes vragen die je aan elk bureau kunt stellen voordat je een
 | Onderzoek | Indicatieprijs |
 | --- | --- |
 | Mini-audit, tot 5 uur | € 495 |
-| Eenvoudige website | circa € 2.250 |
-| Gemiddelde website | circa € 3.150 |
-| Gemiddeld-complexe website | circa € 4.200 |
-| Complexe website | circa € 5.100 |
+| Eenvoudige website | circa € 2.175 |
+| Gemiddelde website | circa € 2.850 |
+| Gemiddeld-complexe website | circa € 3.675 |
+| Complexe website | circa € 4.350 |
 
 {{< /kolom-naast >}}
 

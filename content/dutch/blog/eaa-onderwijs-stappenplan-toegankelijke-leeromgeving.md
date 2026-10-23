@@ -101,7 +101,7 @@ Bij onderwijsinstellingen auditen we per platform:
 
 We weten bovendien of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
 
-_Indicatieve prijs: een website-audit start vanaf circa € 2.250, exclusief btw. Wat een leeromgeving kost, hangt af van het aantal platformen en de omvang van de steekproef; dat rekenen we uit in de kennismaking._
+_Indicatieve prijs: een website-audit start vanaf circa € 2.175, exclusief btw. Wat een leeromgeving kost, hangt af van het aantal platformen en de omvang van de steekproef; dat rekenen we uit in de kennismaking._
 
 ### Stap 4: Prioriteer en plan de verbeteringen
 
@@ -138,7 +138,7 @@ Verbeteringen doorgevoerd? Dan wil je zeker weten dat alles goed is opgelost en 
 
 Daarmee ben je er nog niet. Nieuwe content, een nieuwe plugin of een nieuw stuk functionaliteit kan opnieuw barrières opleveren.
 
-**Hoe wij hierbij helpen:** Wat een hercontrole kost hangt af van het aantal bevindingen in je rapport; meestal ligt dat tussen € 300 en € 1.100. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
+**Hoe wij hierbij helpen:** De eerste hercontrole zit in de prijs van de audit, als je hem binnen 4 maanden na de oplevering plant. We controleren of de bevindingen uit de oorspronkelijke audit zijn opgelost en signaleren eventuele nieuwe problemen.
 
 Voor instellingen die structureel willen borgen, bieden we een toegankelijkheids-abonnement of strippenkaart aan. Dan denken we doorlopend mee: bij nieuwe releases, bij de keuze voor een nieuwe plugin, bij de inrichting van een nieuw deel van je leeromgeving. Zo voorkom je dat je over een jaar weer van voren af aan moet beginnen.
 

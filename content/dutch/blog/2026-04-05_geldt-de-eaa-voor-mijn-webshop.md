@@ -68,7 +68,7 @@ In de webshop-audits die we bij Proper Access uitvoeren, zien we steeds dezelfde
 
 ## Hoeveel kost het om aan de wet te voldoen?
 
-Dat hangt af van de staat en de omvang van je webshop. Een audit kost bij Proper Access vanaf circa € 2.250 exclusief btw; de meeste websites vallen in de categorie daarboven. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
+Dat hangt af van de staat en de omvang van je webshop. Een audit kost bij Proper Access vanaf circa € 2.175 exclusief btw; de meeste websites vallen in de categorie daarboven. Het oplossen van de gevonden issues is afhankelijk van je platform, je development-team en de ernst van de problemen.
 
 Het goede nieuws: de meeste webshops hebben dezelfde soort issues, en die zijn vaak in een paar sprints op te lossen.
 
