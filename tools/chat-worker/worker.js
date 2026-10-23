@@ -73,10 +73,10 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - Iedereen kan een strippenkaart kopen, ook zonder audit bij ons
 
 ## Diensten (indicaties, exclusief btw)
-- WCAG-audit (WCAG 2.2 AA): vanaf circa € 2.250 voor een eenvoudige website. De meeste websites liggen rond € 3.150. https://www.properaccess.nl/toegankelijkheidsaudit/
+- WCAG-audit (WCAG 2.2 AA): vanaf circa € 2.175 voor een eenvoudige website. De meeste websites liggen rond € 2.850. https://www.properaccess.nl/toegankelijkheidsaudit/
 - Mini-audit: € 495. https://www.properaccess.nl/webshop-quickscan/
 - Contentaudit, gericht op redactionele content: vanaf circa € 1.650. https://www.properaccess.nl/contentaudit/
-- Techniekaudit, gericht op de technische bouw: vanaf circa € 2.700. https://www.properaccess.nl/techniekaudit/
+- Techniekaudit, gericht op de technische bouw: vanaf circa € 1.995. https://www.properaccess.nl/techniekaudit/
 - App-audit: https://www.properaccess.nl/app-toegankelijkheid-testen/
 - Hercontrole na het oplossen: de prijs hangt af van het aantal bevindingen in het rapport, meestal € 300 tot € 1.100. https://www.properaccess.nl/hercontrole/
 - Nabespreking van het rapport: € 250 per uur
@@ -127,7 +127,7 @@ const SYSTEM_PROMPT_EN = `You are the AI assistant of Proper Access, a digital a
 - Anyone can buy accessibility credits, also without an audit from us
 
 ## Services (indicative pricing, excluding VAT)
-- Accessibility audit (WCAG 2.2 AA): from approx. EUR 2,250 for a simple website. https://www.properaccess.nl/en/accessibility-audit/
+- Accessibility audit (WCAG 2.2 AA): from approx. EUR 2,175 for a simple website. https://www.properaccess.nl/en/accessibility-audit/
 - Mini audit: EUR 495. https://www.properaccess.nl/en/mini-audit/
 - Re-check after fixes: the price depends on the number of findings, usually EUR 300 to 1,100
 - Debrief of the report: EUR 250 per hour

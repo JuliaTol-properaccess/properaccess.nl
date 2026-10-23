@@ -84,7 +84,7 @@ sections:
 steps_header: "From tender question to a report your customers can rely on"
 steps:
   - title: "Scope"
-    body: "In a 30-minute call we go through your product, the roles and flows your customers use, and which customer instance we test on. You get a quote within two working days. A web application costs from approximately €2,250 to around €5,100 excl. VAT depending on size; an [app](/en/app-accessibility-audit/) costs €2,150 per platform."
+    body: "In a 30-minute call we go through your product, the roles and flows your customers use, and which customer instance we test on. You get a quote within two working days. A web application costs from approximately €2,175 to around €4,350 excl. VAT depending on size; an [app](/en/app-accessibility-audit/) costs €2,150 per platform."
   - title: "Audit"
     body: "Three to five weeks. We test the sample WCAG-EM prescribes, by hand, and we tell you which findings you own and which belong to the content your customer puts in."
   - title: "Fix and retest"

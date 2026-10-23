@@ -71,7 +71,7 @@ sections:
 steps_header: "How an audit maps onto the AFM's six questions"
 steps:
   - title: "Audit website, customer portal and app"
-    body: "A senior auditor tests by hand what a consumer touches: logging in, identification, applying, paying, signing, uploading. Screens that run at a supplier are part of your service, so we include them. A website audit costs from approximately €2,250 to around €5,100 excl. VAT depending on size; an [app audit](/en/app-accessibility-audit/) costs €2,150 per platform."
+    body: "A senior auditor tests by hand what a consumer touches: logging in, identification, applying, paying, signing, uploading. Screens that run at a supplier are part of your service, so we include them. A website audit costs from approximately €2,175 to around €4,350 excl. VAT depending on size; an [app audit](/en/app-accessibility-audit/) costs €2,150 per platform."
   - title: "Report per component, with the criterion and the platform"
     body: "Every finding names the function, the WCAG criterion, the severity, whether it is iOS or Android, and a fix. That is the information the AFM form asks for, ready to copy."
   - title: "Retest and keep a file"

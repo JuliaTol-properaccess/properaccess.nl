@@ -236,7 +236,7 @@ Wie niet voldoet krijgt drie maanden, daarna volgt een hertest. Ons verslag van 
 
 {{< section-diensten id="hoe-we-helpen" eyebrow="Hoe we helpen" title="Praktische hulp bij elke stap" subtitle="Je hoeft niet alles zelf te doen. Wat je wel zelf moet weten, is waar je staat." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
-{{< dienst-kaart title="WCAG-audit" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsaudit/" cta="Bekijk de WCAG-audit" >}}
+{{< dienst-kaart title="WCAG-audit" prijs="Vanaf circa € 2.175 · 3 tot 5 weken" link="/toegankelijkheidsaudit/" cta="Bekijk de WCAG-audit" >}}
 Een handmatig onderzoek volgens WCAG-EM, getoetst aan WCAG 2.2 niveau AA. Je krijgt een rapport per element, met screenshots en code-voorbeelden, en een user story per bevinding.
 {{< /dienst-kaart >}}
 

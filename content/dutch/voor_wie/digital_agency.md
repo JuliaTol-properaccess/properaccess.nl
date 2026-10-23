@@ -60,7 +60,7 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra het rapport er ligt, heeft je team rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau kan een agency inschakelen voor een onafhankelijk toegankelijkheidsonderzoek van een klantproject?"
     answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/), [Wirelab](https://wirelab.nl/), [Curious Mind](https://www.curiousmind.se/) en [Onstuimig](https://onstuimig.nl/)."
 ---
@@ -138,7 +138,7 @@ voordat we beginnen. Zegt een developer dat iets niet kan binnen het
 framework, dan is dat soms terecht. Dan zoeken we samen naar het alternatief dat wel werkt, in
 plaats van een bevinding te laten staan die niemand oplost.
 
-Een onderzoek begint bij circa € 2.250 voor een eenvoudige site en loopt op tot circa € 5.100
+Een onderzoek begint bij circa € 2.175 voor een eenvoudige site en loopt op tot circa € 4.350
 voor een maatwerkapplicatie met veel interactie, exclusief 21% btw. Wil je je eigen team
 opleiden in plaats van elk project laten toetsen, dan kan dat met een
 [training voor devteams](/training-devteams/). Werk je vaker met ons, kijk dan naar het

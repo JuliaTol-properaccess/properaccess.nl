@@ -101,7 +101,7 @@ Bij onderwijsinstellingen auditen we per platform:
 
 We weten bovendien of een probleem in je Moodle-thema zit, in een plugin, of in de core. Dat scheelt je IT-afdeling weken zoekwerk.
 
-_Indicatieve prijs: een website-audit start vanaf circa € 2.250, exclusief btw. Wat een leeromgeving kost, hangt af van het aantal platformen en de omvang van de steekproef; dat rekenen we uit in de kennismaking._
+_Indicatieve prijs: een website-audit start vanaf circa € 2.175, exclusief btw. Wat een leeromgeving kost, hangt af van het aantal platformen en de omvang van de steekproef; dat rekenen we uit in de kennismaking._
 
 ### Stap 4: Prioriteer en plan de verbeteringen
 
