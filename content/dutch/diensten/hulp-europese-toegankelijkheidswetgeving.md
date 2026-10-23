@@ -205,7 +205,7 @@ Het oplossen doet je eigen team. De vragen die daarbij ontstaan gaan bijna altij
 Wil je je team opleiden, dan kan dat met een [training voor devteams](/training-devteams/) of voor je [webredactie](/trainen-van-webredactie/).
 {{< /dienst-kaart >}}
 
-{{< dienst-kaart title="Hercontrole" prijs="Meestal € 300 tot € 1.100" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+{{< dienst-kaart title="Hercontrole" prijs="Eerste hercontrole in de auditprijs" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
 We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Dat is het bewijs dat een toezichthouder wil zien.
 
 Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja tegen zegt.

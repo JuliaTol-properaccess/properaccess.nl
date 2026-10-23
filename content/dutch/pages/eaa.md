@@ -248,7 +248,7 @@ Tot 5 uur handmatige controle door een senior auditor. Voor als je eerst wilt we
 Kom je bij een bevinding niet verder, dan leg je de vraag voor aan een senior auditor. Eén strip is één vraag over één onderwerp; vervolgvragen in dezelfde draad kosten niets extra.
 {{< /dienst-kaart >}}
 
-{{< dienst-kaart title="Hercontrole" prijs="Prijs hangt af van het aantal bevindingen" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+{{< dienst-kaart title="Hercontrole" prijs="Eerste hercontrole in de auditprijs" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
 We toetsen de opgeloste bevindingen opnieuw en leggen per bevinding vast of het probleem weg is. Dat is het bewijs dat een toezichthouder wil zien.
 {{< /dienst-kaart >}}
 

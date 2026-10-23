@@ -30,7 +30,7 @@ Als vuistregel: laat je website **minimaal één keer per jaar** volledig audite
 Naast de jaarlijkse audit zijn er situaties waarin je eerder moet laten testen:
 
 ### Na het oplossen van auditbevindingen
-Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **hercontrole**: gerichter en goedkoper dan een volledige audit. Wat hij kost hangt af van het aantal bevindingen in je rapport, want die lopen we één voor één na. Meestal ligt dat tussen € 300 en € 1.100.
+Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **hercontrole**: we lopen de bevindingen uit je rapport één voor één na. Bij een audit van Proper Access zit de eerste hercontrole in de prijs, als je hem binnen 4 maanden na de oplevering plant.
 
 ### Na een redesign of rebranding
 Een nieuw ontwerp betekent nieuwe componenten, nieuwe kleuren, nieuwe interactiepatronen. Laat testen voordat je live gaat, niet erna.
@@ -79,6 +79,6 @@ Een hercontrole focust op de punten uit de eerdere audit. We controleren of:
 - De oplossingen geen nieuwe problemen hebben geïntroduceerd
 - Er geen regressie is op eerder goedgekeurde onderdelen
 
-Kosten: we rekenen per bevinding die we nakijken, met een minimum van € 300. Meestal komt een hercontrole daarmee tussen € 300 en € 1.100 uit. Je krijgt de prijs als het rapport er is en het aantal bevindingen vaststaat.
+Kosten: de eerste hercontrole zit in de prijs van de audit. Voor een tweede hercontrole rekenen we per bevinding die we nakijken, met een minimum van € 300.
 
 Wil je starten met een eerste meting? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je een baseline om vanuit te werken.

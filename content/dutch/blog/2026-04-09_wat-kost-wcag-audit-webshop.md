@@ -47,8 +47,8 @@ Bij Proper Access werken we daarom met indicatieve ranges:
 | ------------------------------------- | ----------------- |
 | Webshop-audit (eenvoudig tot complex) | € 2.625 - € 4.350 |
 | Mini-audit (handmatige eerste controle) | € 495 exclusief btw |
-| Hercontrole na fixes                       | meestal € 300 tot € 1.100 |
-| Nabespreking met je team              | € 250 per uur     |
+| Eerste hercontrole na fixes                | in de prijs       |
+| Nabespreking met je team              | in de prijs       |
 | Strippenkaart (per vraag)             | € 20 tot € 25     |
 
 Waar je in die range zit, hangt af van je webshop. Een eenvoudige Shopify-shop zit aan de onderkant. Een marketplace met meerdere talen, een uitgebreid accountgedeelte, subdomeinen met eigen templates en een actieve blog zit aan de bovenkant. De meeste Nederlandse webshops vallen in de categorie gemiddeld en liggen rond de € 2.850.
@@ -101,7 +101,7 @@ Als je bij ons een audit afneemt voor de gemiddelde webshop, dan krijg je:
 4. **Visuele voorbeelden.** Screenshots van het probleem, inclusief annotaties. Let op, geen screenshots van de pagina of een element. Je weet zelf toch wel hoe je logo eruit ziet. Daar heb je geen screenshot van nodig.
 5. **Een prioriteitenlijst.** Niet alles is even erg. We labelen issues op impact en urgentie zodat je weet waar je moet beginnen.
 6. **Eén nabespreking** waarin we het rapport met je team doorlopen en vragen beantwoorden.
-7. **Optionele hercontrole** nadat je de issues hebt opgelost. Dat is een aparte stap met aparte prijs, zodat je niet betaalt voor herwerk dat je niet nodig hebt.
+7. **Eén hercontrole** binnen 4 maanden, nadat je de issues hebt opgelost. Een tweede hercontrole krijgt een aparte offerte.
 
 ## Hoe verhoudt dit zich tot een mini-audit?
 

@@ -78,8 +78,7 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - Contentaudit, gericht op redactionele content: vanaf circa € 1.650. https://www.properaccess.nl/contentaudit/
 - Techniekaudit, gericht op de technische bouw: vanaf circa € 1.995. https://www.properaccess.nl/techniekaudit/
 - App-audit: https://www.properaccess.nl/app-toegankelijkheid-testen/
-- Hercontrole na het oplossen: de prijs hangt af van het aantal bevindingen in het rapport, meestal € 300 tot € 1.100. https://www.properaccess.nl/hercontrole/
-- Nabespreking van het rapport: € 250 per uur
+- In de prijs van elke audit zitten een nabespreking van het rapport en één hercontrole binnen 4 maanden na oplevering. Een tweede hercontrole krijgt een aparte offerte; die prijs hangt af van het aantal bevindingen. https://www.properaccess.nl/hercontrole/
 - Strippenkaart: één strip is één vraag over één onderwerp. Bundels vanaf 10 strippen voor € 250. https://www.properaccess.nl/strippenkaart/
 - Monitoring van je website: elke maand meten we je hele website automatisch na. Je ziet in één dashboard of je website beter of slechter wordt, wat er nieuw is en wat er is opgelost. https://www.properaccess.nl/automatische-monitoring/
 - Training voor webredacteuren, per deelnemer: een dagdeel over content € 595, een dagdeel over PDF's € 795, beide op één dag € 1.195. https://www.properaccess.nl/trainen-van-webredactie/
@@ -129,8 +128,7 @@ const SYSTEM_PROMPT_EN = `You are the AI assistant of Proper Access, a digital a
 ## Services (indicative pricing, excluding VAT)
 - Accessibility audit (WCAG 2.2 AA): from approx. EUR 2,175 for a simple website. https://www.properaccess.nl/en/accessibility-audit/
 - Mini audit: EUR 495. https://www.properaccess.nl/en/mini-audit/
-- Re-check after fixes: the price depends on the number of findings, usually EUR 300 to 1,100
-- Debrief of the report: EUR 250 per hour
+- Every audit includes a debrief of the report and one re-check within 4 months of delivery. A second re-check gets a separate quote; its price depends on the number of findings.
 - Accessibility credits: one credit is one question on one topic. https://www.properaccess.nl/en/accessibility-credits/
 - The European Accessibility Act: https://www.properaccess.nl/en/european-accessibility-act/
 - Tools: https://www.properaccess.nl/en/tools/

@@ -71,12 +71,13 @@ onderzoeken vergelijken, bekijk dan het [overzicht van toegankelijkheidsonderzoe
 | Content-audit: teksten, afbeeldingen, video's, documenten | v.a. 1.650 euro |
 | Techniekaudit: HTML, ARIA, toetsenbord, formuliervalidatie | v.a. 1.995 euro |
 | Systeem-audit: herbruikbare componenten en design systems | 3.800 euro |
-| Nabespreking, 1 uur (een half uur kan ook, voor 125 euro) | 250 euro |
-| Hercontrole nadat je de bevindingen hebt opgelost | meestal 300 tot 1.100 euro |
+| Nabespreking van het rapport | in de prijs |
+| Eerste hercontrole, binnen 4 maanden na oplevering | in de prijs |
+| Extra uur nabespreking | 250 euro |
 
 Een content-audit voeren we alleen uit als de techniek van de website ook is onderzocht, door ons of door iemand anders. Een verklaring vraagt om bewijs over de hele website en niet alleen over de redactielaag.
 
-Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk het is hangt af van het aantal bevindingen, en dat weet niemand vooraf: het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs in een tweede offerte, zodra het rapport klaar is.
+Sinds 23 oktober 2026 zitten de nabespreking en de eerste hercontrole in de prijs van elke audit. Wil je daarna nog een hercontrole, dan krijg je een aparte offerte. Die prijs hangt af van het aantal bevindingen: het ene rapport heeft er twintig, het andere honderdtwintig.
 
 ## Waar betaal je voor?
 

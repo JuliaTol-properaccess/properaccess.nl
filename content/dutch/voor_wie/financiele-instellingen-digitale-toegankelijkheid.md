@@ -90,6 +90,6 @@ Een senior auditor stelt volgens WCAG-EM een steekproef samen en loopt de klantr
 Je ontvangt het rapport per component, met CSV en schermafbeeldingen. In een nabespreking lopen we de bevindingen door met je team en je leveranciers.
 {{< /route-stap >}}
 {{< route-stap n="4" title="Herstel en hercontrole" >}}
-Tijdens het herstel stel je vragen aan de auditor via de strippenkaart. Daarna legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is; die staat in een aparte offerte op basis van het aantal bevindingen.
+Tijdens het herstel stel je vragen aan de auditor via de strippenkaart. Daarna legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is; de eerste hercontrole zit in de prijs van de audit.
 {{< /route-stap >}}
 {{< /section-route >}}

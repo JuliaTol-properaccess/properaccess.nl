@@ -1,6 +1,6 @@
 ---
 title: "Toegankelijkheidsaudit"
-meta_title: "WCAG-audit laten uitvoeren vanaf €2.175 | Proper Access"
+meta_title: "WCAG-audit laten uitvoeren vanaf € 2.175 | Proper Access"
 layout: "audit"
 weight: 2
 featured: true
@@ -8,7 +8,7 @@ date: 2024-12-05
 lastmod: 2026-09-17
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
-description: "Laat je website of app handmatig toetsen aan WCAG 2.2. Je krijgt concrete oplossingen, een rapport per pagina en alle bevindingen vanaf €2.175."
+description: "Laat je website of app handmatig toetsen aan WCAG 2.2. Je krijgt concrete oplossingen, een rapport per pagina en alle bevindingen vanaf € 2.175."
 tldr: |
   Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. We toetsen handmatig aan WCAG 2.2, niveau AA, en geven concrete adviezen waarmee je team direct aan de slag kan. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.175 en duurt 3 tot 5 weken.
 keywords:
@@ -199,10 +199,10 @@ De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categori
 [plan dan een kennismaking van 30 minuten](/contact/). We kijken samen naar je site, zeggen
 welk onderzoek past en je krijgt daarna een vaste prijs, geen nacalculatie.
 
-Twee dingen bieden we er altijd bij aan, allebei optioneel. Een
-[hercontrole](/hercontrole/) legt vast dat je bevindingen zijn opgelost,
-en dat is het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring. Een nabespreking
-van € 250 per uur betekent dat we het rapport samen doorlopen en helpen prioriteren.
+In de prijs zitten ook een nabespreking en één [hercontrole](/hercontrole/). In de
+nabespreking lopen we het rapport samen door en helpen we prioriteren. De hercontrole binnen
+4 maanden legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt
+voor je toegankelijkheidsverklaring.
 
 Meer over de opbouw lees je in het artikel
 [wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).

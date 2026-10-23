@@ -65,9 +65,11 @@ We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniek
 
 {{< section-full title="Wat een hercontrole kost" bg="light" >}}
 
-Dat hangt af van het aantal bevindingen in je rapport, want we lopen ze allemaal na. Het ene rapport heeft twintig bevindingen, het andere honderdtwintig, en dat is een verschil van uren werk. Meestal komt een hercontrole tussen € 300 en € 1.100 uit, exclusief 21% btw.
+De eerste hercontrole zit in de prijs van de audit. Je plant hem binnen 4 maanden na de oplevering van het rapport.
 
-Je krijgt die prijs op het moment dat hij te bepalen is. Op de offerte voor de audit vink je aan dat je een hercontrole wilt: dat is een voorkeur, geen opdracht, en het kost niets. Zodra je rapport klaar is en we weten hoeveel bevindingen erin staan, sturen we je een aparte offerte voor de hercontrole.
+Wil je daarna nog een hercontrole, dan krijg je daar een aparte offerte voor. Die prijs hangt af van het aantal bevindingen, want we lopen ze allemaal na.
+
+Heb je je audit vóór 23 oktober 2026 besteld? Dan geldt je offerte van toen, en krijg je voor de hercontrole een aparte offerte. Meestal komt die tussen € 300 en € 1.100 uit, exclusief 21% btw.
 
 {{< /section-full >}}
 
