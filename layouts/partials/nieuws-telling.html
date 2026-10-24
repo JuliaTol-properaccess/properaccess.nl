@@ -51,8 +51,8 @@
 {{- $telling := dict "vantoepassing" false "noindex" false "meetbaar" true -}}
 
 {{- if and .IsPage (eq .Section "nieuws") -}}
-  {{- $min_berichten := int (default 3 site.Data.nieuws.minimum_berichten) -}}
-  {{- $min_woorden := int (default 40 site.Data.nieuws.minimum_woorden_per_item) -}}
+  {{- $min_berichten := int (default 3 hugo.Data.nieuws.minimum_berichten) -}}
+  {{- $min_woorden := int (default 40 hugo.Data.nieuws.minimum_woorden_per_item) -}}
 
   {{- $items := default (slice) .Params.items -}}
   {{- $woorden := slice -}}

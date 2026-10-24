@@ -61,7 +61,7 @@
 {{- $uit := dict "vantoepassing" false "groepen" (slice) "los" (slice) "sprongen" false "sleutels" (slice) "onbekend" (slice) "hoofditems" (slice) -}}
 
 {{- if and .IsPage (eq .Section "nieuws") -}}
-  {{- $def := default (slice) site.Data.nieuws.secties -}}
+  {{- $def := default (slice) hugo.Data.nieuws.secties -}}
   {{- $sleutels := slice -}}
   {{- range $def -}}
     {{- $sleutels = $sleutels | append (printf "%v" .sleutel) -}}
