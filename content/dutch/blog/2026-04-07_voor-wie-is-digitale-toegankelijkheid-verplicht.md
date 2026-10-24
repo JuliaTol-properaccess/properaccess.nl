@@ -1,6 +1,6 @@
 ---
-title: "Is een toegankelijke website verplicht? BDTO of EAA"
-meta_title: "Is een toegankelijke website verplicht? BDTO of EAA"
+title: "Voor wie gelden het BDTO en de EAA?"
+meta_title: "Voor wie gelden het BDTO en de EAA?"
 date: 2026-04-07
 slug: "voor-wie-is-digitale-toegankelijkheid-verplicht"
 categories:
@@ -11,7 +11,7 @@ tags:
   - "webshop"
   - "wcag"
   - "overheid"
-description: "Geldt het BDTO of de EAA voor jouw organisatie? Lees wat er geldt voor overheid, webshops, onderwijs en zorg, inclusief uitzonderingen en eerste stappen."
+description: "Ontdek of het BDTO of de EAA voor jouw organisatie geldt. Een overzicht voor overheid, webshops, onderwijs en zorg, met uitzonderingen en eerste stappen."
 keywords:
   - voor wie is digitale toegankelijkheid verplicht
   - is een toegankelijke website verplicht
