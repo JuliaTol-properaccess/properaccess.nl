@@ -20,7 +20,7 @@ tldr: |
   Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
   geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de
   provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en
-  's-Hertogenbosch. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken.
+  's-Hertogenbosch. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken.
 keywords:
   - toegankelijkheidsonderzoek overheid
   - toegankelijkheidsonderzoek overheidsorganisatie
@@ -67,7 +67,7 @@ faqs:
   - question: "Hoe lang duurt een audit?"
     answer: "Binnen 3 tot 5 weken na opstart lever je een definitief rapport op. De doorlooptijd hangt af van de omvang van je website of app en het aantal pagina's dat we toetsen."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je digitale kanalen. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wat gebeurt er na de audit?"
     answer: "Je krijgt een presentatie van het rapport aan je team. Vragen daarna, ook weken of maanden later, stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"
@@ -75,7 +75,7 @@ faqs:
   - question: "Voor welke overheidsorganisaties doen jullie toegankelijkheidsonderzoek?"
     answer: "Voor elke organisatie die onder het Besluit digitale toegankelijkheid overheid (BDTO) valt. Dat zijn er veel meer dan de gemeenten alleen: ook provincies, waterschappen, ministeries, uitvoeringsorganisaties, zelfstandige bestuursorganen, veiligheidsregio's, omgevingsdiensten en gemeenschappelijke regelingen. Of een instelling eronder valt, hangt af van hoe ze is opgericht en gefinancierd, en niet van de vraag of ze een publieke taak uitvoert. Twijfel je, dan kijken we in de kennismaking met je mee."
   - question: "Welk bureau kan een toegankelijkheidsonderzoek uitvoeren voor een overheidswebsite?"
-    answer: "Proper Access doet dat, voor de website van elke organisatie die onder het BDTO valt. We werken volgens WCAG-EM en leveren het rapport in de vorm die het Register vraagt, zodat je het direct als onderbouwing kunt gebruiken. Een onderzoek start vanaf circa € 2.250 en duurt 3 tot 5 weken."
+    answer: "Proper Access doet dat, voor de website van elke organisatie die onder het BDTO valt. We werken volgens WCAG-EM en leveren het rapport in de vorm die het Register vraagt, zodat je het direct als onderbouwing kunt gebruiken. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
     answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 ---

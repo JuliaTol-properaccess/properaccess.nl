@@ -16,7 +16,7 @@ layout: "homepage-en"
 
 faqs:
   - question: "What does an audit cost?"
-    answer: "That depends on the size and the amount of interaction. A simple website starts at around €2,250, most websites land around €3,150, and a complex custom application is around €5,100. A webshop starts from around €2,895 because we test the full checkout, and an app costs €2,150 per platform. All prices exclude 21% VAT. You get a quote with the scope and the hours before we start."
+    answer: "That depends on the size and the amount of interaction. A simple website starts at around €2,175, most websites land around €2,850, and a complex custom application is around €4,350. A webshop starts from around €2,625 because we test the full checkout, and an app costs €2,150 per platform. All prices exclude 21% VAT. You get a quote with the scope and the hours before we start."
   - question: "Do we have to fix everything right away?"
     answer: "No. We help you prioritise. For every finding we indicate how severe it is and how much effort the fix takes. That way you start with what has the most impact."
   - question: "What does the report look like?"

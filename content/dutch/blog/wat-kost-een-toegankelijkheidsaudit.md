@@ -2,7 +2,7 @@
 title: "Wat kost een toegankelijkheidsaudit? Prijzen, pakketten en waar je op moet letten"
 date: 2026-03-16
 slug: "wat-kost-een-toegankelijkheidsaudit"
-meta_title: "Wat kost een toegankelijkheidsaudit? Van 495 tot 5.100 euro"
+meta_title: "Wat kost een toegankelijkheidsaudit? Van 495 tot 4.350 euro"
 breadcrumb_title: "Wat kost een audit?"
 aliases:
   - "/blog/wat-kost-toegankelijkheidsaudit-detail/"
@@ -42,23 +42,23 @@ onderzoeken vergelijken, bekijk dan het [overzicht van toegankelijkheidsonderzoe
 <ul class="prijsbalken">
   <li class="prijsbalk">
     <span class="prijsbalk__label">Eenvoudig<span class="prijsbalk__toelichting">informatief, weinig interactie</span></span>
-    <span class="prijsbalk__prijs">circa 2.250 euro</span>
-    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 44%"></span></span>
+    <span class="prijsbalk__prijs">circa 2.175 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 50%"></span></span>
   </li>
   <li class="prijsbalk prijsbalk--nadruk">
     <span class="prijsbalk__label">Gemiddeld<span class="prijsbalk__toelichting">formulieren, enige interactie</span></span>
-    <span class="prijsbalk__prijs">circa 3.150 euro</span>
-    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 62%"></span></span>
+    <span class="prijsbalk__prijs">circa 2.850 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 66%"></span></span>
     <span class="prijsbalk__tag">Hier valt het merendeel van de websites in</span>
   </li>
   <li class="prijsbalk">
     <span class="prijsbalk__label">Gemiddeld-complex<span class="prijsbalk__toelichting">webshop, inlog, filters</span></span>
-    <span class="prijsbalk__prijs">circa 4.200 euro</span>
-    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 82%"></span></span>
+    <span class="prijsbalk__prijs">circa 3.675 euro</span>
+    <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 84%"></span></span>
   </li>
   <li class="prijsbalk">
     <span class="prijsbalk__label">Complex<span class="prijsbalk__toelichting">maatwerkapplicatie, veel interactie</span></span>
-    <span class="prijsbalk__prijs">circa 5.100 euro</span>
+    <span class="prijsbalk__prijs">circa 4.350 euro</span>
     <span class="prijsbalk__spoor" aria-hidden="true"><span class="prijsbalk__vulling" style="width: 100%"></span></span>
   </li>
 </ul>
@@ -69,14 +69,15 @@ onderzoeken vergelijken, bekijk dan het [overzicht van toegankelijkheidsonderzoe
 |---|---|
 | Mini-audit: een senior auditor kijkt tot 5 uur met de hand | 495 euro |
 | Content-audit: teksten, afbeeldingen, video's, documenten | v.a. 1.650 euro |
-| Techniekaudit: HTML, ARIA, toetsenbord, formuliervalidatie | v.a. 2.700 euro |
-| Systeem-audit: herbruikbare componenten en design systems | 4.500 euro |
-| Nabespreking, 1 uur (een half uur kan ook, voor 125 euro) | 250 euro |
-| Hercontrole nadat je de bevindingen hebt opgelost | meestal 300 tot 1.100 euro |
+| Techniekaudit: HTML, ARIA, toetsenbord, formuliervalidatie | v.a. 1.995 euro |
+| Systeem-audit: herbruikbare componenten en design systems | 3.800 euro |
+| Nabespreking van het rapport | in de prijs |
+| Eerste hercontrole, binnen 4 maanden na oplevering | in de prijs |
+| Extra uur nabespreking | 250 euro |
 
 Een content-audit voeren we alleen uit als de techniek van de website ook is onderzocht, door ons of door iemand anders. Een verklaring vraagt om bewijs over de hele website en niet alleen over de redactielaag.
 
-Voor de hercontrole staat er geen bedrag op de auditofferte, alleen een aanvinkregel. Hoeveel werk het is hangt af van het aantal bevindingen, en dat weet niemand vooraf: het ene rapport heeft er twintig, het andere honderdtwintig. Je krijgt de prijs in een tweede offerte, zodra het rapport klaar is.
+Sinds 23 oktober 2026 zitten de nabespreking en de eerste hercontrole in de prijs van elke audit. Wil je daarna nog een hercontrole, dan krijg je een aparte offerte. Die prijs hangt af van het aantal bevindingen: het ene rapport heeft er twintig, het andere honderdtwintig.
 
 ## Waar betaal je voor?
 

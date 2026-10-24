@@ -19,7 +19,7 @@ keywords:
   - toegankelijkheid beleggingsapp
   - AFM nalevingsonderzoek toegankelijkheid
 tldr: |
-  Bankdiensten en financiële e-handelsdiensten aan consumenten vallen sinds 28 juni 2025 onder de European Accessibility Act, met de AFM als toezichthouder. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen; wie niet voldoet, meldt dat in het AFM Portaal. Proper Access toetst websites, klantportalen en apps handmatig aan WCAG 2.2 niveau AA en levert een rapport per component waarmee je die melding concreet invult. Een audit kost circa € 2.250 tot € 5.100 per website en € 2.150 per app-platform, exclusief btw. Wie alles in één keer wil regelen, kiest een begeleidingstraject van 3 tot 6 maanden: inventarisatie, audits van alle kanalen, een voortgangsdashboard, trainingen voor devteams, webredactie en klantenservice, en begeleiding bij het herstel.
+  Bankdiensten en financiële e-handelsdiensten aan consumenten vallen sinds 28 juni 2025 onder de European Accessibility Act, met de AFM als toezichthouder. In april 2026 kondigde de AFM een nalevingsonderzoek aan naar de websites van financiële ondernemingen; wie niet voldoet, meldt dat in het AFM Portaal. Proper Access toetst websites, klantportalen en apps handmatig aan WCAG 2.2 niveau AA en levert een rapport per component waarmee je die melding concreet invult. Een audit kost circa € 2.175 tot € 4.350 per website en € 2.150 per app-platform, exclusief btw. Wie alles in één keer wil regelen, kiest een begeleidingstraject van 3 tot 6 maanden: inventarisatie, audits van alle kanalen, een voortgangsdashboard, trainingen voor devteams, webredactie en klantenservice, en begeleiding bij het herstel.
 
 banner:
   badge: "EAA en AFM-toezicht"
@@ -48,7 +48,7 @@ faqs:
   - question: "Valt mijn organisatie onder de AFM of onder de ACM?"
     answer: "Dat hangt af van de dienst. Bankdiensten aan consumenten en financiële e-handelsdiensten vallen onder de AFM: kredietovereenkomsten, beleggingsdiensten, betalingsdiensten, elektronisch geld, betaalrekeningen, online verzekeringen, crowdfunding en online advies en bemiddeling in financiële producten. Webshops en apps die geen financiële dienst zijn, vallen onder de ACM. Verkoop je verzekeringen via een webshop van een andere partij, dan kan die partij met de ACM te maken krijgen en jij met de AFM. Twijfel je, leg de vraag dan voor aan je jurist; de AFM verwacht dat je zelf in kaart brengt of je onder de EAA valt."
   - question: "Wat kost een audit voor een bank of verzekeraar?"
-    answer: "Dat hangt af van het aantal unieke paginatypes en de hoeveelheid interactie. Een eenvoudige website begint vanaf circa € 2.250, een gemiddelde website kost circa € 3.150 en een complexe website met klantportaal, aanvraagflows en ondertekenen circa € 5.100. Een app kost € 2.150 per platform, dus iOS en Android tellen apart. Alle bedragen zijn exclusief 21% btw. Je krijgt vooraf een offerte met de reikwijdte en het aantal uren."
+    answer: "Dat hangt af van het aantal unieke paginatypes en de hoeveelheid interactie. Een eenvoudige website begint vanaf circa € 2.175, een gemiddelde website kost circa € 2.850 en een complexe website met klantportaal, aanvraagflows en ondertekenen circa € 4.350. Een app kost € 2.150 per platform, dus iOS en Android tellen apart. Alle bedragen zijn exclusief 21% btw. Je krijgt vooraf een offerte met de reikwijdte en het aantal uren."
   - question: "Hoelang duurt een audit?"
     answer: "Een volledige audit van een website duurt 3 tot 5 weken. Een mini-audit levert binnen 5 werkdagen de grootste knelpunten op. Laat je website, portaal en app tegelijk toetsen, dan plannen we ze parallel zodat je één samenhangend beeld krijgt."
   - question: "Moet ik de melding bij de AFM doen voordat de audit klaar is?"
@@ -71,10 +71,10 @@ De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie
 {{< kolom-naast >}}
 | Wat we toetsen | Indicatieprijs |
 | --- | --- |
-| Eenvoudige website, informatie en contact, geen portaal | vanaf circa € 2.250 |
-| Gemiddelde website, met aanvraagformulieren en een eenvoudig portaal | circa € 3.150 |
-| Website met klantportaal, inlog, aanvraagflows en ondertekenen | circa € 4.200 |
-| Complexe omgeving met meerdere labels, portalen of maatwerkcomponenten | circa € 5.100 |
+| Eenvoudige website, informatie en contact, geen portaal | vanaf circa € 2.175 |
+| Gemiddelde website, met aanvraagformulieren en een eenvoudig portaal | circa € 2.850 |
+| Website met klantportaal, inlog, aanvraagflows en ondertekenen | circa € 3.675 |
+| Complexe omgeving met meerdere labels, portalen of maatwerkcomponenten | circa € 4.350 |
 | App, per platform (iOS of Android) | € 2.150 |
 {{< /kolom-naast >}}
 {{< /section-tweekolom >}}
@@ -90,6 +90,6 @@ Een senior auditor stelt volgens WCAG-EM een steekproef samen en loopt de klantr
 Je ontvangt het rapport per component, met CSV en schermafbeeldingen. In een nabespreking lopen we de bevindingen door met je team en je leveranciers.
 {{< /route-stap >}}
 {{< route-stap n="4" title="Herstel en hercontrole" >}}
-Tijdens het herstel stel je vragen aan de auditor via de strippenkaart. Daarna legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is; die staat in een aparte offerte op basis van het aantal bevindingen.
+Tijdens het herstel stel je vragen aan de auditor via de strippenkaart. Daarna legt een [hercontrole](/hercontrole/) per bevinding vast dat het probleem weg is; de eerste hercontrole zit in de prijs van de audit.
 {{< /route-stap >}}
 {{< /section-route >}}

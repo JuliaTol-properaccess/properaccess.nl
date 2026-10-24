@@ -54,7 +54,7 @@ faqs:
   - question: "Hoelang duurt het voordat mijn webshop toegankelijk is?"
     answer: "Een mini-audit levert binnen 1 week resultaat op. Een volledige audit duurt 3-5 weken. Implementatie hangt af van je development-capaciteit. We denken graag mee over een realistische planning."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.895 voor een eenvoudige shop, en kan oplopen tot circa € 5.100 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.625 voor een eenvoudige shop, en kan oplopen tot circa € 4.350 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
     answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de evaluatiemethode van het W3C. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 translationKey: "e-commerce"
@@ -148,10 +148,10 @@ met honderd artikelen en een configurator. Alle bedragen zijn exclusief 21% btw.
 
 | Type webshop | Indicatieprijs |
 | --- | --- |
-| Eenvoudige webshop, standaardtemplate, één taal | vanaf circa € 2.895 |
-| Gemiddelde webshop, filters, account, meerdere betaalmethoden | circa € 3.150 |
-| Webshop met inlog, configurator of complexe filters | circa € 4.200 |
-| Internationale of maatwerkwebshop, veel interactie | circa € 5.100 |
+| Eenvoudige webshop, standaardtemplate, één taal | vanaf circa € 2.625 |
+| Gemiddelde webshop, filters, account, meerdere betaalmethoden | circa € 2.850 |
+| Webshop met inlog, configurator of complexe filters | circa € 3.675 |
+| Internationale of maatwerkwebshop, veel interactie | circa € 4.350 |
 
 Een volledig onderzoek duurt 3 tot 5 weken. Weet je nog niet waar je staat, dan is een
 [mini-audit](/webshop-quickscan/) van € 495 het startpunt: tot 5 uur handmatige controle door

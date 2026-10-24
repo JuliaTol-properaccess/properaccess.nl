@@ -246,7 +246,7 @@ De gegevens die het nieuwe model over het onderzoek vraagt staan bij elkaar in h
 woorden van het model, zodat je ze kunt overnemen in de invulassistent. De wettelijke uitzonderingen
 staan er met het onderdeel van artikel 2 lid 2 en de vindplaats erbij.
 
-Een volledig onderzoek begint bij circa € 2.250; welk type bij je kanaal past staat op de pagina
+Een volledig onderzoek begint bij circa € 2.175; welk type bij je kanaal past staat op de pagina
 over [toegankelijkheidsonderzoek](/toegankelijkheidsonderzoek/). Zijn de bevindingen opgelost, dan
 legt een [hercontrole](/hercontrole/) vast dat ze weg zijn, en dat is de onderbouwing waarmee je
 van B naar A gaat. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk.

@@ -242,11 +242,11 @@ redactielaag.
 | Type onderzoek     | Indicatie           |
 | ------------------ | ------------------- |
 | Mini-audit         | circa € 495         |
-| Eenvoudige website | vanaf circa € 2.250 |
-| Gemiddelde website | circa € 3.150       |
-| Complexe website   | circa € 5.100       |
+| Eenvoudige website | vanaf circa € 2.175 |
+| Gemiddelde website | circa € 2.850       |
+| Complexe website   | circa € 4.350       |
 | Content-audit      | circa € 1.650       |
-| Techniekaudit      | circa € 2.700       |
+| Techniekaudit      | circa € 1.995       |
 
 {{< /kolom-naast >}}
 

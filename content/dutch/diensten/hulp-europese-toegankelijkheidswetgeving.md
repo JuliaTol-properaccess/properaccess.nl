@@ -10,7 +10,7 @@ aliases:
   - "/hulp-europese-toegankelijkheidswetgeving/"
 description: "Welke wet voor je geldt, wat voldoen in de praktijk vraagt en wie welke stap doet. Van onderzoek tot verantwoording, voor webshops en overheden."
 tldr: |
-  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.250 of losse vragen vanaf € 20.
+  Twee wetten doen er in Nederland toe: de European Accessibility Act voor bedrijven die producten en diensten aan consumenten leveren, en het Besluit digitale toegankelijkheid overheid voor overheidsorganisaties. Welke voor jou geldt hangt af van wat je organisatie is. Allebei wijzen ze naar dezelfde norm, EN 301 549, die in versie V3.2.1 verwijst naar WCAG 2.1 niveau AA. De EAA schrijft voor dat je website of app toegankelijk is, niet dat je een onderzoek laat doen. Het BDTO vraagt daarnaast een toegankelijkheidsverklaring met onderzoek eronder. Proper Access begeleidt de hele route, van onderzoek tot verklaring, sinds 2019 en voor 63 opdrachtgevers. Zelf testen kan met de WCAG Radar, axe en de Colour Contrast Analyzer, maar die vinden samen ongeveer 30% van de succescriteria; voor de rest schakel je een expert in, met een mini-audit van € 495, een volledig onderzoek vanaf circa € 2.175 of losse vragen vanaf € 20.
 keywords:
   - hulp bij digitale toegankelijkheid
   - digitale toegankelijkheid hulp
@@ -73,7 +73,7 @@ faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
     answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, begeleiden het oplossen met een strippenkaart, leggen met een hercontrole vast dat de problemen weg zijn, en helpen bij de verantwoording. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
   - question: "Wat kost het om te voldoen?"
-    answer: "Het onderzoek is het enige deel waar wij vooraf een prijs op kunnen zetten: een volledig onderzoek begint bij circa € 2.250 exclusief btw. Wat het oplossen kost hangt af van je eigen team of je leverancier, en daar hebben wij geen zicht op. Wat we wel zien in de praktijk: een gemiddelde audit levert zo\u2019n honderd bevindingen op, en het grootste deel daarvan zit in een klein aantal componenten die op elke pagina terugkomen. Eén keer een datepicker of een formulier goed maken lost er dus vaak tientallen tegelijk op. Daarom groeperen we de bevindingen per element, zodat alles wat er aan één component mankeert op één plek staat."
+    answer: "Het onderzoek is het enige deel waar wij vooraf een prijs op kunnen zetten: een volledig onderzoek begint bij circa € 2.175 exclusief btw. Wat het oplossen kost hangt af van je eigen team of je leverancier, en daar hebben wij geen zicht op. Wat we wel zien in de praktijk: een gemiddelde audit levert zo\u2019n honderd bevindingen op, en het grootste deel daarvan zit in een klein aantal componenten die op elke pagina terugkomen. Eén keer een datepicker of een formulier goed maken lost er dus vaak tientallen tegelijk op. Daarom groeperen we de bevindingen per element, zodat alles wat er aan één component mankeert op één plek staat."
   - question: "Hoe lang duurt zo\u2019n traject?"
     answer: "Het onderzoek duurt 3 tot 5 weken, afhankelijk van de omvang van je site. Het oplossen is de langste stap en duurt zo lang als je eigen planning toelaat; dat deel ligt bij je developers en je redactie. Voor de hercontrole houden we als richtlijn 12 weken na de audit aan, en later mag ook. Val je onder het BDTO, houd er dan rekening mee dat een rapport na 36 maanden vervalt en de status in het Register dan zakt."
   - question: "Kunnen we het onderzoek niet zelf doen?"
@@ -141,7 +141,7 @@ Eén strip is één vraag over één onderwerp. Vervolgvragen in dezelfde draad 
 
 Er komt een moment waarop zelf doorgaan meer kost dan het oplevert. Dat moment herken je aan drie dingen: je weet niet zeker of je een succescriterium goed uitlegt, je weet niet wat je als eerste moet oplossen, en je hebt niets om aan een toezichthouder te laten zien.
 
-Je kunt klein beginnen. Een [mini-audit](/webshop-quickscan/) van € 495 is tot 5 uur handmatige controle door een senior auditor, met een rapport binnen 5 werkdagen. Wil je het compleet, dan toetst een [volledig onderzoek](/toegankelijkheidsonderzoek/) je site volgens WCAG-EM aan alle succescriteria, vanaf circa € 2.250.
+Je kunt klein beginnen. Een [mini-audit](/webshop-quickscan/) van € 495 is tot 5 uur handmatige controle door een senior auditor, met een rapport binnen 5 werkdagen. Wil je het compleet, dan toetst een [volledig onderzoek](/toegankelijkheidsonderzoek/) je site volgens WCAG-EM aan alle succescriteria, vanaf circa € 2.175.
 
 Daarna houdt het niet op. Met een [strippenkaart](/strippenkaart/) blijft er iemand bereikbaar tijdens het oplossen, en met een [hercontrole](/hercontrole/) leg je vast dat de bevindingen weg zijn.
 
@@ -193,7 +193,7 @@ Een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register
 
 {{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
-{{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.250 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
+{{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.175 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
 We toetsen je website, webshop of app handmatig volgens WCAG-EM, de evaluatiemethode van het W3C. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
 
 Welk type onderzoek past hangt af van wat je zelf kunt veranderen. Wil je eerst een indicatie, dan is er de [mini-audit](/webshop-quickscan/) van € 495.
@@ -205,7 +205,7 @@ Het oplossen doet je eigen team. De vragen die daarbij ontstaan gaan bijna altij
 Wil je je team opleiden, dan kan dat met een [training voor devteams](/training-devteams/) of voor je [webredactie](/trainen-van-webredactie/).
 {{< /dienst-kaart >}}
 
-{{< dienst-kaart title="Hercontrole" prijs="Meestal € 300 tot € 1.100" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
+{{< dienst-kaart title="Hercontrole" prijs="Eerste hercontrole in de auditprijs" link="/hercontrole/" cta="Bekijk de hercontrole" >}}
 We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Dat is het bewijs dat een toezichthouder wil zien.
 
 Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja tegen zegt.

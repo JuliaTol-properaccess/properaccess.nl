@@ -45,7 +45,7 @@ faqs:
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
   - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.250. We geven je altijd vooraf een duidelijke indicatie."
+    answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?"
     answer: "Proper Access doet dat. We toetsen websites, ticketingsystemen, evenementenkalenders, digitale collecties en apps van culturele instellingen volgens WCAG-EM, de evaluatiemethode van het W3C, aan WCAG 2.2 niveau AA. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde."
 ---
@@ -136,8 +136,8 @@ toegankelijkheidsparagraaf. Een auditrapport met een datum en een methode erbij 
 bruikbaar; een scanresultaat uit een gratis tool niet.
 
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
-aantal pagina's. Een onderzoek begint bij circa € 2.250 voor een informatieve site en loopt op
-tot circa € 5.100 als er ticketing, een collectie en een inlog in zitten. Een app-onderzoek
+aantal pagina's. Een onderzoek begint bij circa € 2.175 voor een informatieve site en loopt op
+tot circa € 4.350 als er ticketing, een collectie en een inlog in zitten. Een app-onderzoek
 rekenen we per platform. Alle bedragen zijn exclusief 21% btw, en na een kennismaking krijg je
 een vaste prijs.
 

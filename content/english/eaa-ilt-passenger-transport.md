@@ -66,7 +66,7 @@ sections:
 steps_header: "How we work with a carrier"
 steps:
   - title: "Scope the journey"
-    body: "In a 30-minute call we go through your channels: website, iOS and Android app, e-ticket documents. You get a quote within two working days. A website audit costs from approximately €2,250 to around €5,100 excl. VAT depending on size; an [app audit](/en/app-accessibility-audit/) costs €2,150 per platform."
+    body: "In a 30-minute call we go through your channels: website, iOS and Android app, e-ticket documents. You get a quote within two working days. A website audit costs from approximately €2,175 to around €4,350 excl. VAT depending on size; an [app audit](/en/app-accessibility-audit/) costs €2,150 per platform."
   - title: "Audit by hand"
     body: "A senior auditor plans, books and checks in with a screen reader, the keyboard and zoom, on real devices for the app. A second auditor reviews the work and every report is checked by three people before delivery."
   - title: "Retest before the ILT asks"
