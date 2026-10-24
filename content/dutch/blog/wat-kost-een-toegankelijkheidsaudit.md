@@ -32,6 +32,8 @@ keywords:
 Dit artikel gaat over de prijs. Voor de hoofdroute over wat een audit inhoudt en wat je krijgt,
 zie [WCAG-audit laten uitvoeren](/toegankelijkheidsaudit/). Wil je verschillende soorten
 onderzoeken vergelijken, bekijk dan het [overzicht van toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/).
+Heb je specifiek een webshop? Bekijk dan de aparte [prijsindicatie voor een webshop-audit](/blog/wat-kost-wcag-audit-webshop/),
+met de extra kostenfactoren van checkout, account en productfilters.
 
 ## Wat het kost
 

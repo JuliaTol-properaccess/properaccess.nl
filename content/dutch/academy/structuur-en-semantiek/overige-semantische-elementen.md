@@ -236,7 +236,7 @@ Het `<details>`-element maakt content uitklapbaar zonder JavaScript. `<summary>`
 <details>
   <summary>Wat kost een toegankelijkheidsaudit?</summary>
   <p>De kosten hangen af van de complexiteit van de website.
-  Een gemiddelde audit kost vanaf ca. 2.175 euro.</p>
+  Een eenvoudige audit kost vanaf ca. 2.175 euro.</p>
 </details>
 ```
 

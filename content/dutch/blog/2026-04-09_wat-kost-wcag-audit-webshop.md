@@ -18,7 +18,7 @@ description: "Wat betaal je voor een WCAG-audit van een webshop, en waar zit het
 keywords:
   - "kosten WCAG audit webshop"
   - "prijs WCAG audit"
-  - "wat kost een toegankelijkheidsaudit"
+  - "prijs webshop-audit"
   - "WCAG audit webshop"
   - "EAA audit kosten"
 image: "/images/blog/webshop-wireframe-eaa.svg"
@@ -28,6 +28,8 @@ meta_description: "Wat kost een WCAG-audit voor een webshop in 2026? Prijsindica
 Dit is een vraag die bijna elke webshop-eigenaar mij stelt in het eerste gesprek: _wat gaat dit me kosten?_ En het is een vraag die bijna geen auditbureau beantwoordt op zijn site. Je krijgt zinnen als "neem contact op voor een offerte" of "afhankelijk van uw situatie". Soms krijg je achteraf een offerte van € 8.000 voor iets waar een ander bureau € 2.500 voor rekent, en je hebt geen idee hoe dat verschil ontstaat.
 
 Deze post is onderdeel van onze serie [E-commerce en de EAA](/blog/geldt-de-eaa-voor-mijn-webshop/). Onderaan vind je de andere artikelen.
+Voor de algemene prijsopbouw van toegankelijkheidsonderzoeken, inclusief niet-webshops, zie
+[wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
 
 ## Korte antwoord
 

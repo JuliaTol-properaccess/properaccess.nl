@@ -66,7 +66,7 @@ faqs:
   - question: "Kunnen jullie ook de problemen oplossen?"
     answer: "Wij adviseren, jouw developers voeren uit. Maar als je geen eigen developers hebt, kunnen we je doorverwijzen naar agencies waarmee we samenwerken."
   - question: "Wat krijgen we precies?"
-    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een toelichting in een online sessie, die laatste optioneel. Vragen daarna, en meedenken bij het oplossen, lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag."
+    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een nabespreking in een online sessie. Vragen daarna, en meedenken bij het oplossen, lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag."
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.175 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
   - question: "Wat is het verschil met een automatische scan?"
