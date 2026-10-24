@@ -1,6 +1,6 @@
 ---
 title: "Toegankelijkheidsaudit"
-meta_title: "WCAG-audit laten uitvoeren vanaf € 2.175 | Proper Access"
+meta_title: "Toegankelijkheidsaudit (WCAG 2.2) laten uitvoeren | Proper Access"
 layout: "audit"
 weight: 2
 featured: true
