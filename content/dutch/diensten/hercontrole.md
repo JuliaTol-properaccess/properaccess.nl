@@ -10,6 +10,16 @@ url: "/hercontrole/"
 aliases:
   - "/zo-werken-wij/heronderzoek/"
 description: "Een hercontrole toetst of de bevindingen uit een eerdere audit correct zijn opgelost. De richtlijn is binnen 12 weken na de audit, later kan ook."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "De werkwijze is gecontroleerd door de senior auditors van Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
+    - { label: "Proper Access: zo werken wij", url: "/zo-werken-wij/" }
 keywords:
   - hercontrole wcag
   - heronderzoek toegankelijkheid

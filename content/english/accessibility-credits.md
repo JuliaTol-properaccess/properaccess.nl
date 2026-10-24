@@ -5,6 +5,16 @@ date: 2026-08-17
 slug: "accessibility-credits"
 layout: "service-en"
 description: "Buy a bundle of credits and ask a senior accessibility auditor a question whenever you need one. One credit is one question on one topic. No audit required."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "The service description is reviewed by Proper Access's senior accessibility auditors."
+  sources_label: "Sources"
+  sources:
+    - { label: "Proper Access: Julia Tol, founder and senior auditor", url: "/en/authors/julia/" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 keywords:
   - accessibility question
   - WCAG advice

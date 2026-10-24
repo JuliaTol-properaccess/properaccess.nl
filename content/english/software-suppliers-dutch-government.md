@@ -8,6 +8,16 @@ llms_group: "sectors"
 aliases:
   - /en/digital-accessibility-government/
 description: "Your government customers must prove their digital channels are accessible. We audit your product against WCAG 2.2 and EN 301 549, in English, so they can."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "The explanation is reviewed by Proper Access's senior accessibility auditors."
+  sources_label: "Sources"
+  sources:
+    - { label: "ETSI: EN 301 549 V3.2.1", url: "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 tldr: |
   Dutch government bodies and other public sector bodies fall under the Besluit digitale toegankelijkheid overheid, the Dutch decree that implements the EU Web Accessibility Directive. It has been in force since 1 July 2018. Every digital channel has to be covered by an accessibility statement in the Dutch Register of Accessibility Statements: the main website, subsites, application forms, portals behind a login, intranets and apps. Everything a statement covers has to be covered by the audit behind it. A statement with status A or B needs an audit report behind it, and that report expires after 36 months, after which the statement drops to status D. The standard is EN 301 549, which in version V3.2.1 points to WCAG 2.1 level A and AA. When one of those channels runs on your software, the evidence your customer needs is evidence about your product, so they will ask you for an audit or ask you to allow one. We audit products against WCAG 2.2 and EN 301 549 and report in English.
 keywords:

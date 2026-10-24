@@ -8,6 +8,16 @@ slug: "about-us"
 aliases:
   - /en/proper_access_in_english/
 description: "Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, in English or Dutch."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "Reviewed by Proper Access's senior accessibility auditors."
+  sources_label: "Sources"
+  sources:
+    - { label: "Proper Access: Julia Tol, founder and senior auditor", url: "/en/authors/julia/" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 tldr: |
   Proper Access is an independent accessibility audit firm in Amsterdam. We audit websites and apps against WCAG 2.2 and EN 301 549, and we report per component: every finding sits with the element it belongs to, with a user story, a screenshot and a fix. We do not build websites and do not manage content, so we never audit our own work. Since 2019 we have done more than 950 audits, 236 assignments for 63 organisations, measured on 7 August 2026. Four in ten clients come back for a second audit. We report in English or Dutch at no extra cost.
 keywords:

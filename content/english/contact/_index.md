@@ -3,6 +3,15 @@ title: "Contact"
 meta_title: "Contact | Proper Access"
 date: 2021-08-27
 description: "Questions about WCAG, the EAA, or digital accessibility? Get in touch. We help with anything from a mini audit to a full audit."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "The information about our services and contact options is reviewed by Proper Access."
+  sources_label: "Sources"
+  sources:
+    - { label: "About Proper Access and our auditors", url: "/en/about-us/" }
 keywords:
   - contact digital accessibility
   - WCAG specialist

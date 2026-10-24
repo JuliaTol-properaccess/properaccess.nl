@@ -60,6 +60,8 @@
       {{ block "main" . }}{{ end }}
     </main>
 
+    {{ partial "source-context.html" . }}
+
     <!-- footer -->
     {{ if or $nieuw .Params.footer_groot }}
       {{ partial "essentials/footer-groot.html" . }}

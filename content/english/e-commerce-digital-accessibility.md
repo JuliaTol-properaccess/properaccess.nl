@@ -6,6 +6,16 @@ slug: "e-commerce-digital-accessibility"
 layout: "service-en"
 llms_group: "sectors"
 description: "Is your webshop ready for the European Accessibility Act? We test the whole buying journey, report per element and help your team fix what we find."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "The guidance is reviewed by Proper Access's senior accessibility auditors."
+  sources_label: "Sources"
+  sources:
+    - { label: "European Union: European Accessibility Act (Directive (EU) 2019/882)", url: "https://eur-lex.europa.eu/eli/dir/2019/882/oj" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 keywords:
   - e-commerce accessibility
   - webshop WCAG

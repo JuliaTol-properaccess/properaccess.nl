@@ -9,6 +9,16 @@ slug: "handmatig-testen"
 url: "/zo-werken-wij/handmatig-testen/"
 weight: 2
 description: "Automatische scans vinden maar een deel van de problemen. De rest komt naar boven via handmatig testen met schermlezer, toetsenbord en zoom."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "De testaanpak is gecontroleerd door de senior auditors van Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
+    - { label: "ETSI: EN 301 549 V3.2.1", url: "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" }
 keywords:
   - handmatig testen wcag
   - schermlezer test

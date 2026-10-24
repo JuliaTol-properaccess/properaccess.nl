@@ -7,6 +7,16 @@ date: 2026-02-28
 slug: "strippenkaart"
 url: "/strippenkaart/"
 description: "Stel een korte vraag over digitale toegankelijkheid aan een senior auditor. Eén strip is één vraag over één onderwerp. Geen audit nodig."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "De uitleg over deze dienst is gecontroleerd door de senior auditors van Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "Proper Access: over onze auditors", url: "/auditbureau-digitale-toegankelijkheid/" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 keywords:
   - strippenkaart toegankelijkheid
   - wcag vraag stellen

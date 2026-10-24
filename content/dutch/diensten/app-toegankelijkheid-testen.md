@@ -7,6 +7,16 @@ date: 2026-03-29
 slug: "app-toegankelijkheid-testen"
 url: "/app-toegankelijkheid-testen/"
 description: "Wij testen mobiele apps op digitale toegankelijkheid. Handmatig, op echte apparaten, met VoiceOver en TalkBack. Zodat je app werkt voor iedereen."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "Inhoudelijk gecontroleerd door de senior auditors van Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
+    - { label: "ETSI: EN 301 549 V3.2.1", url: "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" }
 tldr: |
   Wij testen mobiele apps handmatig op echte iPhones, iPads en Android-toestellen, met VoiceOver en TalkBack. We toetsen aan WCAG 2.1 in combinatie met de Europese norm EN 301 549, de standaard die ook de European Accessibility Act voor apps hanteert. Je krijgt een rapport per onderdeel met concrete oplossingen, zodat je app werkt voor iedereen en voldoet aan de wet.
 keywords:

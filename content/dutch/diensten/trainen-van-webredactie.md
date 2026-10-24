@@ -8,6 +8,16 @@ slug: "trainen-van-webredactie"
 url: "/trainen-van-webredactie/"
 layout: "agency"
 description: "Praktische training digitale toegankelijkheid voor webredacties. Leer toegankelijke webcontent en PDF's maken met direct toepasbare kennis."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "De training is samengesteld en gecontroleerd door de senior auditors van Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
+    - { label: "Proper Access Academy", url: "/academy/" }
 keywords:
   - training digitale toegankelijkheid webredactie
   - training toegankelijke webcontent

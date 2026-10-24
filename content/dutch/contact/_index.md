@@ -3,6 +3,15 @@ title: "Contact"
 meta_title: "Contact | Proper Access"
 date: 2021-08-27
 description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee, van mini-audit tot volledige audit."
+source_context:
+  title: "Bron en actualiteit"
+  updated_label: "Laatst gecontroleerd"
+  date: "2026-10-24"
+  date_display: "24 oktober 2026"
+  expert: "De informatie over onze diensten en contactmogelijkheden is gecontroleerd door Proper Access."
+  sources_label: "Bronnen"
+  sources:
+    - { label: "Proper Access: over onze auditors", url: "/auditbureau-digitale-toegankelijkheid/" }
 keywords:
   - contact digitale toegankelijkheid
   - WCAG specialist

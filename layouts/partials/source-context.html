@@ -1,0 +1,17 @@
+{{ with .Params.source_context }}
+<aside class="source-context section-sm" aria-labelledby="source-context-title">
+  <div class="hp-container">
+    <h2 id="source-context-title" class="source-context__title">{{ .title }}</h2>
+    <p class="source-context__meta">
+      {{ .updated_label }}: <time datetime="{{ .date }}">{{ .date_display }}</time>
+      · {{ .expert | markdownify }}
+    </p>
+    <p class="source-context__label">{{ .sources_label }}</p>
+    <ul class="source-context__list">
+      {{ range .sources }}
+      <li><a href="{{ .url }}" rel="noopener noreferrer"{{ if strings.HasPrefix .url "http" }} target="_blank"{{ end }}>{{ .label }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</aside>
+{{ end }}

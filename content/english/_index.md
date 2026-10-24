@@ -3,6 +3,16 @@ title: "Proper Access: digital accessibility that works"
 meta_title: "Proper Access: digital accessibility audits and advice"
 date: 2026-01-24
 description: "Proper Access audits websites and apps for the Dutch market. You get concrete solutions and a report your developers can act on right away."
+source_context:
+  title: "Sources and currency"
+  updated_label: "Last checked"
+  date: "2026-10-24"
+  date_display: "24 October 2026"
+  expert: "The service information is reviewed by Proper Access's senior accessibility auditors."
+  sources_label: "Sources"
+  sources:
+    - { label: "Proper Access: about our auditors", url: "/en/about-us/" }
+    - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
 keywords:
   - WCAG
   - European Accessibility Act
