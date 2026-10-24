@@ -14,6 +14,18 @@ keywords:
   - digitale toegankelijkheid
   - WCAG
   - overheid
+howto:
+  name: "Een overheidswebsite laten voldoen aan WCAG"
+  description: "De vier belangrijkste stappen om de digitale toegankelijkheid van een overheidswebsite op orde te brengen."
+  steps:
+    - name: "Voldoe aan de EN 301 549-norm"
+      text: "Laat alle 50 succescriteria op A- en AA-niveau toetsen, omdat de EN 301 549-norm naar WCAG 2.1 niveau AA verwijst."
+    - name: "Publiceer een toegankelijkheidsverklaring"
+      text: "Maak voor de website of app een toegankelijkheidsverklaring met de huidige status, onderdelen die nog niet voldoen, de geplande oplossingen en een manier waarop bezoekers problemen kunnen melden."
+    - name: "Registreer de verklaring bij DigiToegankelijk"
+      text: "Maak de toegankelijkheidsverklaring aan en publiceer die via het Register van Toegankelijkheidsverklaringen op digitoegankelijk.nl."
+    - name: "Hertest periodiek"
+      text: "Plan minimaal jaarlijks een hertest, omdat wijzigingen aan de website nieuwe toegankelijkheidsproblemen kunnen veroorzaken."
 ---
 
 Ja. Overheidswebsites zijn al sinds 2018 verplicht om te voldoen aan WCAG 2.1 niveau AA. Dit is vastgelegd in het Besluit digitale toegankelijkheid overheid (BDTO).

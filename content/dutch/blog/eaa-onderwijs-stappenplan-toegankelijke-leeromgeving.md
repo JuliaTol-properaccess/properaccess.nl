@@ -13,6 +13,22 @@ tags:
 aliases:
   - /eaa-onderwijs-stappenplan-toegankelijke-leeromgeving/
 description: "Wat moet jouw onderwijsinstelling doen voor de European Accessibility Act? Een concreet stappenplan voor Moodle, Canvas en WordPress, van mini-audit tot borging."
+howto:
+  name: "Een toegankelijke digitale leeromgeving opzetten"
+  description: "Een stappenplan voor onderwijsinstellingen van de eerste meting tot hercontrole en borging van digitale toegankelijkheid."
+  steps:
+    - name: "Breng je digitale landschap in kaart"
+      text: "Maak een overzicht van je websites, leeromgevingen, studentportalen, apps en documenten, en bepaal welke wet op jouw instelling van toepassing is."
+    - name: "Start met een mini-audit"
+      text: "Test de belangrijkste onderdelen van je platform, zoals inloggen, toetsen, formulieren en cursusmateriaal, om de grootste risico's snel te vinden."
+    - name: "Laat een volledige WCAG-audit uitvoeren"
+      text: "Laat je belangrijkste digitale platformen grondig toetsen aan de relevante WCAG-criteria."
+    - name: "Prioriteer en plan verbeteringen"
+      text: "Zet de bevindingen om in een planning met duidelijke prioriteiten, eigenaars en deadlines."
+    - name: "Voer verbeteringen door en betrek de organisatie"
+      text: "Herstel de problemen en betrek IT, docenten, contentmakers, inkoop en bestuur bij de afspraken over toegankelijkheid."
+    - name: "Laat hercontroleren en borg toegankelijkheid"
+      text: "Laat na de verbeteringen een hercontrole uitvoeren en leg toegankelijkheid vast in beleid, processen en terugkerende tests."
 ---
 
 Je leeromgeving draait, je docenten zijn enthousiast over digitaal onderwijs en je studenten loggen dagelijks in op Moodle of Canvas. Maar kun je garanderen dat een blinde student die toets kan maken? Of dat een student met een motorische beperking door je WordPress-site kan navigeren om zich in te schrijven voor een minor?

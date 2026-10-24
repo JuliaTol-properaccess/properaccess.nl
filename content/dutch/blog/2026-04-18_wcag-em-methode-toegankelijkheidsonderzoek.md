@@ -19,6 +19,20 @@ keywords:
   - evaluatiemethodiek WCAG
 meta_title: "WCAG-EM uitgelegd: de 5 stappen van de W3C-methode | Proper Access"
 meta_description: "Wat is WCAG-EM en wanneer heb je het nodig? De vijf stappen van de W3C-evaluatiemethodiek, uitgelegd in gewone taal."
+howto:
+  name: "Een toegankelijkheidsonderzoek uitvoeren volgens WCAG-EM"
+  description: "De vijf stappen van WCAG-EM: van scope bepalen en steekproef samenstellen tot evaluatie en rapportage."
+  steps:
+    - name: "Bepaal de scope"
+      text: "Leg vast welke URL's en subdomeinen bij het onderzoek horen, welk WCAG-niveau je toetst, welke hulpsoftware en browsers gelden en welke technologieën worden meegenomen."
+    - name: "Verken de website"
+      text: "Breng de primaire functies, paginatypes, kritieke processen en essentiële functionaliteit van het digitale product in kaart."
+    - name: "Stel een representatieve steekproef samen"
+      text: "Selecteer gestructureerd de verschillende views, contenttypen, functionaliteit en technologieën en voeg een willekeurige steekproef toe."
+    - name: "Voer de evaluatie uit"
+      text: "Toets elke geselecteerde pagina met geautomatiseerde scans, handmatige tests met toetsenbord, schermlezer, zoom en spraakbesturing, en code-inspectie."
+    - name: "Maak de rapportage"
+      text: "Leg de scope, steekproef, bevindingen per succescriterium en conclusie over conformiteit vast in het eindrapport."
 ---
 
 Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term langs die niet meteen iets zegt: **WCAG-EM**. Het staat voor *Web Content Accessibility Guidelines Evaluation Methodology*. Het is de methode die het W3C, dezelfde club die WCAG maakt, heeft vastgelegd voor hoe je een toegankelijkheidsevaluatie opzet en uitvoert. De actuele versie is WCAG-EM 2.0. Die is niet alleen bedoeld voor websites, maar ook voor apps en andere digitale producten.

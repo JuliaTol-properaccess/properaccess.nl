@@ -12,6 +12,20 @@ description: "Wil je beginnen met digitale toegankelijkheid maar weet je niet wa
 keywords:
   - digitale toegankelijkheid
   - WCAG
+howto:
+  name: "Beginnen met digitale toegankelijkheid"
+  description: "Een praktisch stappenplan om vandaag nog met digitale toegankelijkheid te beginnen."
+  steps:
+    - name: "Doe de 5-minutentest"
+      text: "Navigeer met alleen het toetsenbord, zoom naar 200 procent, controleer de alt-teksten van afbeeldingen, lees formulieren na en check het kleurcontrast."
+    - name: "Gebruik een gratis geautomatiseerde tool"
+      text: "Scan je website met een gratis toegankelijkheidstool om technische problemen te vinden die je snel kunt oplossen."
+    - name: "Prioriteer op impact"
+      text: "Kies eerst problemen die bezoekers blokkeren, zoals een onbruikbaar formulier, ontbrekende toetsenbordbediening of onvoldoende contrast."
+    - name: "Laat professioneel testen"
+      text: "Laat de website onderzoeken door een onafhankelijke deskundige wanneer je een betrouwbaar beeld van de toegankelijkheid nodig hebt."
+    - name: "Maak toegankelijkheid onderdeel van je proces"
+      text: "Leg afspraken vast en test nieuwe content en wijzigingen steeds opnieuw, zodat toegankelijkheid niet een eenmalige actie blijft."
 ---
 
 De hoeveelheid informatie over digitale toegankelijkheid kan overweldigend zijn. 55 succescriteria op de niveaus A en AA, vier principes, meerdere wetten. Maar je hoeft niet alles tegelijk te doen. Dit is hoe je begint.

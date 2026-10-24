@@ -14,6 +14,16 @@ keywords:
   - toetsenbord focus testen
 aliases:
   - /hoe-test-ik-focus-zichtbaarheid/
+howto:
+  name: "Focuszichtbaarheid testen"
+  description: "Controleer met drie praktische stappen of interactieve elementen een zichtbare focusmarkering hebben."
+  steps:
+    - name: "Navigeer met het toetsenbord"
+      text: "Gebruik Tab en Shift+Tab om vooruit en achteruit te navigeren, en gebruik waar nodig de pijltjestoetsen, Enter en de spatiebalk binnen componenten."
+    - name: "Controleer de focusmarkering"
+      text: "Kijk bij elk element dat focus krijgt of je altijd een duidelijke visuele verandering ziet, zoals een rand, outline, achtergrondkleur of schaduw."
+    - name: "Controleer de CSS"
+      text: "Open de Inspector wanneer je geen focusmarkering ziet en controleer of de focusstijl ontbreekt of door CSS, bijvoorbeeld outline: none, wordt verwijderd."
 ---
 
 Navigeer je met de muis door een website, dan zie je welk element actief is doordat je muisaanwijzer erop staat. Maar voor mensen die het toetsenbord gebruiken, is er een ander visueel signaal nodig: de **focusmarkering**. Zonder die markering ben je verdwaald op de pagina. Je drukt op Tab, er gebeurt iets -- maar je hebt geen idee waar je bent.

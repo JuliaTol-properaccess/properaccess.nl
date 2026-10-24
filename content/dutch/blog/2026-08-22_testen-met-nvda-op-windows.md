@@ -20,6 +20,18 @@ keywords:
   - NVDA sneltoetsen
   - bladermodus focusmodus
 tldr: "Download NVDA gratis op nvaccess.org. De NVDA-toets is Insert of Caps Lock. In bladermodus lees je de pagina met de pijltjes en werken losse letters als snelnavigatie: H voor koppen, K voor links, F voor formuliervelden. NVDA+F7 opent de elementenlijst. Zet de spraakweergave aan, dan kun je teruglezen wat er wordt gezegd."
+howto:
+  name: "Een website testen met NVDA op Windows"
+  description: "Installeer NVDA, stel de spraakweergave in en loop een website door met de belangrijkste schermlezercontroles."
+  steps:
+    - name: "Installeer NVDA"
+      text: "Download NVDA van nvaccess.org en installeer het programma of maak een draagbare versie. Stel Insert of Caps Lock in als NVDA-toets."
+    - name: "Zet de spraakweergave aan"
+      text: "Open het NVDA-menu met NVDA+N en zet onder Extra de spraakweergave aan, zodat je kunt teruglezen wat NVDA voorleest."
+    - name: "Leer bladermodus en focusmodus kennen"
+      text: "Gebruik bladermodus om door de pagina te navigeren en focusmodus om formuliervelden te bedienen; controleer in welke modus NVDA staat."
+    - name: "Loop de pagina door"
+      text: "Laat de pagina voorlezen, open de elementenlijst, test een formulier, controleer tabellen en kijk wat er gebeurt bij wijzigingen zonder herladen."
 ---
 
 Op Windows moet je een schermlezer zelf installeren. Dat is de enige drempel, en hij is lager dan hij lijkt: NVDA is gratis, open source, gemaakt door de stichting NV Access, en de download is klein. Tien minuten later hoor je je eigen website zoals een blinde bezoeker hem hoort.

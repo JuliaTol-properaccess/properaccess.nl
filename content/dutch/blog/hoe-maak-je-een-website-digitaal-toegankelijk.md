@@ -22,6 +22,18 @@ keywords:
 aliases:
   - /hoe-maak-je-een-website-digitaal-toegankelijk/
   - /blog/hoe-maak-ik-mijn-website-toegankelijk/
+howto:
+  name: "Een website digitaal toegankelijk maken"
+  description: "Volg vier stappen van de eerste scan en WCAG-keuze tot herstel, hercontrole en borging."
+  steps:
+    - name: "Breng je huidige situatie in kaart"
+      text: "Laat onderzoeken waar je website nu staat met een eerste scan en handmatige controles, zodat je weet welke problemen er zijn."
+    - name: "Prioriteer de problemen"
+      text: "Bepaal welke problemen de grootste impact hebben en maak op basis daarvan een haalbare planning."
+    - name: "Los problemen op en test opnieuw"
+      text: "Herstel de belangrijkste toegankelijkheidsproblemen en test de oplossingen opnieuw om te controleren of ze werken."
+    - name: "Laat een hercontrole doen"
+      text: "Laat na de verbeteringen een hercontrole uitvoeren en borg toegankelijkheid in je ontwikkel- en contentproces."
 ---
 
 Sinds de European Accessibility Act (EAA) in juni 2025 van kracht is, krijg ik wekelijks dezelfde vraag: "We moeten iets met toegankelijkheid, maar waar beginnen we?" Het antwoord: dat hangt af van je website, je team en je budget. Maar er is een duidelijk pad. In dit artikel loop ik je er doorheen.

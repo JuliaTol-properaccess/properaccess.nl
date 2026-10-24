@@ -17,6 +17,16 @@ keywords:
   - Chrome Accessibility Tree
   - Toegankelijkheidstest Chrome
   - Chrome DevTools accessibility
+howto:
+  name: "De Accessibility Tree in Chrome openen en gebruiken"
+  description: "Volg deze stappen om de Accessibility Tree in Chrome DevTools te openen en de toegankelijkheidsinformatie van een pagina te bekijken."
+  steps:
+    - name: "Open Chrome DevTools"
+      text: "Open Chrome DevTools met F12, Ctrl+Shift+I op Windows of Linux, Cmd+Option+I op een Mac, of via de optie Inspecteren in het contextmenu."
+    - name: "Open het Accessibility-paneel"
+      text: "Ga in DevTools naar het tabblad Elements en open het Accessibility-paneel. Staat het paneel niet naast Styles en Computed, open het dan via de pijlen of via More tools > Accessibility."
+    - name: "Geef de volledige Accessibility Tree weer"
+      text: "Klik in het Accessibility-paneel op Enable full-page accessibility tree, of open chrome://accessibility/ en kies de Accessibility Tree van je pagina."
 ---
 
 ## Accessibility Tree in Chrome: Installatie en Interpretatie

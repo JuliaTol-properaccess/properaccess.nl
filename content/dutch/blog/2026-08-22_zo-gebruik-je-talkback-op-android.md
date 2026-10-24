@@ -19,6 +19,20 @@ keywords:
   - TalkBack aanzetten
   - TalkBack leesregelaars
 tldr: "Zet TalkBack aan via Instellingen, Toegankelijkheid, TalkBack, of houd de twee volumeknoppen 3 seconden ingedrukt. Vegen naar rechts en links gaat naar het volgende en vorige onderdeel, dubbeltikken activeert, en scrollen doe je met twee vingers. Met vegen omhoog of omlaag kies je een leesregelaar, bijvoorbeeld koppen, en daarna spring je met vegen naar rechts van kop naar kop."
+howto:
+  name: "TalkBack gebruiken op Android"
+  description: "Zet TalkBack aan, leer de basisgebaren en gebruik aanraking, leesregelaars en het TalkBack-menu om Android te bedienen."
+  steps:
+    - name: "Zet TalkBack aan"
+      text: "Ga naar Instellingen > Toegankelijkheid > TalkBack en zet TalkBack en de snelkoppeling aan. Daarna kun je de twee volumeknoppen drie seconden ingedrukt houden om TalkBack te starten of stoppen."
+    - name: "Leer de basisgebaren"
+      text: "Veeg naar rechts of links om naar een volgend of vorig onderdeel te gaan, dubbeltik om het onderdeel met focus te activeren en veeg met twee vingers om te scrollen."
+    - name: "Verken het scherm met aanraking"
+      text: "Sleep je vinger langzaam over het scherm om te horen wat er onder je vinger staat en welk onderdeel de focus krijgt."
+    - name: "Gebruik de leesregelaars"
+      text: "Veeg omhoog of omlaag om een leesregelaar te kiezen, zoals koppen, links of bedieningselementen, en veeg daarna naar rechts of links om per eenheid te navigeren."
+    - name: "Open het TalkBack-menu"
+      text: "Tik met drie vingers om het TalkBack-menu te openen en kies daar bijvoorbeeld voorlezen vanaf boven, voorlezen vanaf het volgende onderdeel of feedback pauzeren."
 ---
 
 TalkBack zit al op je Android-toestel. Je hoeft niets te downloaden en niets te betalen, en met twee volumeknoppen staat hij aan. De schrik komt daarna: je tikt op een app en er gebeurt niets, je veegt om te scrollen en het scherm blijft staan.

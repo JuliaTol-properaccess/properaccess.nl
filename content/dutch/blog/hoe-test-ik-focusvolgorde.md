@@ -14,6 +14,18 @@ keywords:
   - toetsenbord navigatie testen
 aliases:
   - /hoe-test-ik-focusvolgorde/
+howto:
+  name: "De focusvolgorde van een website testen"
+  description: "Controleer met het toetsenbord of de focusvolgorde logisch is en interactieve componenten goed werken."
+  steps:
+    - name: "Begin bij de adresbalk"
+      text: "Klik in de adresbalk en loop de hele pagina door met Tab om vooruit te navigeren en Shift+Tab om achteruit te navigeren."
+    - name: "Let op de volgorde"
+      text: "Controleer of de focus een logisch pad volgt van navigatie naar hoofdcontent en footer, zonder verwarrende sprongen."
+    - name: "Test interactieve componenten"
+      text: "Open met het toetsenbord menu's, dialoogvensters, tabs en andere componenten en controleer of de focus naar het geopende element gaat."
+    - name: "Controleer op focusvallen"
+      text: "Controleer of je elk onderdeel met het toetsenbord kunt verlaten en of de focus niet achter een overlay of in een component blijft hangen."
 ---
 
 Focusvolgorde is een van die dingen die je pas opvalt als het misgaat. Je drukt op Tab en ineens spring je van de header naar de footer, of je opent een modal en de focus blijft achter de overlay hangen. Voor iemand die alleen het toetsenbord gebruikt, is dat het verschil tussen een bruikbare website en een onbruikbare.

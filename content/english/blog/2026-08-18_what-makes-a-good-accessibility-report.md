@@ -16,6 +16,18 @@ keywords:
   - prioritise wcag findings
   - improve accessibility
 translationKey: "goed-toegankelijkheidsrapport"
+howto:
+  name: "Turn an accessibility report into an accessible website"
+  description: "Use a WCAG report in four steps: read the summary, make a plan, understand the findings and test again."
+  steps:
+    - name: "Don't read the report front to back"
+      text: "Start with the management summary and review the total number of findings, their impact and the people with disabilities most affected."
+    - name: "Make a plan of action and a presentation"
+      text: "Use the plan of action for editors, designers and developers, and use the presentation to share the core findings and work plan with everyone involved."
+    - name: "Understand the findings"
+      text: "For each finding, check what is wrong, who is affected, where the problem occurs and which solution fits the team responsible for fixing it."
+    - name: "Test, and test again"
+      text: "Look for similar problems on other pages, check your changes yourself and arrange a retest, preferably with people with disabilities as well."
 ---
 
 ## What makes a good accessibility report?

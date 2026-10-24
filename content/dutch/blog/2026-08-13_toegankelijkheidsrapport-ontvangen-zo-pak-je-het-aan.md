@@ -16,6 +16,18 @@ keywords:
   - wcag bevindingen prioriteren
   - toegankelijkheid verbeteren
 translationKey: "goed-toegankelijkheidsrapport"
+howto:
+  name: "Van toegankelijkheidsrapport naar een toegankelijke website"
+  description: "Gebruik een WCAG-rapport in vier stappen: lees de samenvatting, maak een plan, begrijp de bevindingen en test opnieuw."
+  steps:
+    - name: "Lees het rapport niet van voor naar achter"
+      text: "Begin met de managementsamenvatting en bekijk het totale aantal bevindingen, de verdeling naar impact en de mensen met een beperking die het meest worden getroffen."
+    - name: "Maak een plan van aanpak en presentatie"
+      text: "Gebruik het plan van aanpak voor de redactie, designers en ontwikkelaars en gebruik de presentatie om de kern van het onderzoek en het werkplan te delen."
+    - name: "Begrijp de bevindingen"
+      text: "Controleer per bevinding wat er mis is, voor wie dat probleem gevolgen heeft, waar het probleem staat en welke oplossing bij het verantwoordelijke team past."
+    - name: "Test en test opnieuw"
+      text: "Zoek vergelijkbare problemen op andere pagina's, controleer je aanpassingen zelf en laat daarna opnieuw testen, bij voorkeur ook met mensen met een beperking."
 ---
 
 ## Waaraan herken je een goed toegankelijkheidsrapport?

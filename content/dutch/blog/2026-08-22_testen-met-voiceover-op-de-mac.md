@@ -21,6 +21,18 @@ keywords:
   - VoiceOver sneltoetsen
   - website testen met schermlezer
 tldr: "Zet VoiceOver aan met Command+F5 en gebruik Safari. De VO-toets is Control+Option. Met VO+U open je de webrotor, en daarmee de koppen-, link- en formulierlijst van je pagina. Zet in het VoiceOver-hulpprogramma (VO+F8) het bijschriftvenster aan, zodat je kunt teruglezen wat er wordt gezegd."
+howto:
+  name: "Een website testen met VoiceOver op de Mac"
+  description: "Zet VoiceOver aan, gebruik de webrotor en loop een website door met de belangrijkste schermlezercontroles."
+  steps:
+    - name: "Zet VoiceOver aan"
+      text: "Druk op Command+F5 of drie keer snel op de Touch ID-knop en gebruik Safari voor de test."
+    - name: "Stel VoiceOver in voor de test"
+      text: "Open het VoiceOver-hulpprogramma met VO+F8 en zet het bijschriftvenster aan, zodat je kunt teruglezen wat VoiceOver zegt."
+    - name: "Open de webrotor"
+      text: "Druk op VO+U en gebruik de lijsten met koppen, links, formuliervelden en oriëntatiepunten om snel door de pagina te navigeren."
+    - name: "Loop de pagina door"
+      text: "Controleer de paginatitel, koppen, links, formulieren en interactieve componenten en let op wat VoiceOver aankondigt."
 ---
 
 VoiceOver staat al op je Mac. Je hoeft niets te downloaden en niets te betalen: <kbd>Command</kbd> + <kbd>F5</kbd> en hij praat. Wat daarna gebeurt, zorgt ervoor dat de meeste mensen hem binnen twee minuten weer uitzetten. Er begint een stem die je niet kunt bijhouden en je pijltjestoetsen doen ineens iets anders dan je verwacht.
