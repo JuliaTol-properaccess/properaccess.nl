@@ -16,11 +16,11 @@ aliases:
   - /accessible-name-que/
 ---
 
-Bij Proper Access beginnen we al onze trainingen voor webdevelopers met iets dat simpel lijkt, maar reuze belangrijk is. Als ik je als ontwikkelaar een tip mag geven: begrijp hoe de **toegankelijke naam** (accessible name) van een interactief element werkt. Het is de basis van digitale toegankelijkheid -- en het punt waar het vaakst iets misgaat.
+Bij Proper Access beginnen we al onze trainingen voor webdevelopers met iets dat simpel lijkt, maar reuze belangrijk is. Als ik je als ontwikkelaar een tip mag geven: begrijp hoe de **toegankelijke naam** (accessible name) van een interactief element werkt. Het is de basis van digitale toegankelijkheid, en het punt waar het vaakst iets misgaat.
 
 ## Wat is een accessible name?
 
-De accessible name is de naam die hulpsoftware -- een schermlezer, spraakbesturing, brailleleesregel -- gebruikt om een interactief element te identificeren. Het is wat een blinde bezoeker hoort als de schermlezer een knop, link of invoerveld voorleest. En het is het woord dat een gebruiker van spraakbesturing uitspreekt om een element te activeren.
+De accessible name is de naam die hulpsoftware (een schermlezer, spraakbesturing of brailleleesregel) gebruikt om een interactief element te identificeren. Het is wat een blinde bezoeker hoort als de schermlezer een knop, link of invoerveld voorleest. En het is het woord dat een gebruiker van spraakbesturing uitspreekt om een element te activeren.
 
 Zonder accessible name is een element onbruikbaar voor deze gebruikers. De schermlezer zegt dan "knop" zonder verdere uitleg, of leest een cryptische bestandsnaam voor.
 
@@ -28,7 +28,7 @@ Zonder accessible name is een element onbruikbaar voor deze gebruikers. De scher
 
 **1. Elk interactief element moet een toegankelijke naam hebben.**
 
-Links, knoppen, invoervelden, checkboxes, selectvelden -- alles waarmee je kunt interacteren. Controleer dit zelf in Chrome DevTools onder de tab **Accessibility**. Daar zie je de berekende accessible name van elk element.
+Links, knoppen, invoervelden, checkboxes en selectvelden: alles waarmee je kunt interacteren. Controleer dit zelf in Chrome DevTools onder de tab **Accessibility**. Daar zie je de berekende accessible name van elk element.
 
 **2. De naam moet de functie beschrijven.**
 
@@ -38,14 +38,14 @@ Een hamburger-menuknop moet niet "drie streepjes" heten, maar "Open menu". Een k
 
 Dit is **SC 2.5.3** (Label in Name) en het wordt vaak vergeten. Als er "Verstuur" op een knop staat, moet de accessible name ook "Verstuur" bevatten. Niet "Submit form" of "Formulier verzenden". Waarom? Omdat spraakbesturingssoftware de zichtbare tekst gebruikt om het element te vinden. Zegt de gebruiker "klik Verstuur", maar is de accessible name "Submit", dan werkt het niet.
 
-**Belangrijk:** controleer je website ook op 200% en 400% zoom. Dan verandert de layout en zie je soms andere knoppen en links -- die ook allemaal een correcte naam nodig hebben.
+**Belangrijk:** controleer je website ook op 200% en 400% zoom. Dan verandert de layout en zie je soms andere knoppen en links, die ook allemaal een correcte naam nodig hebben.
 
 ## Hoe wordt de accessible name berekend?
 
 De browser berekent de accessible name via een vaste volgorde (de "accessible name computation"). In vereenvoudigde vorm:
 
-1. `aria-labelledby` -- verwijst naar een ander element op de pagina
-2. `aria-label` -- een onzichtbare naam direct op het element
+1. `aria-labelledby`, verwijst naar een ander element op de pagina
+2. `aria-label`, een onzichtbare naam direct op het element
 3. **Tekstinhoud** van het element (bij links en knoppen)
 4. **Label** (bij invoervelden via `<label for="...">`)
 5. `title`-attribuut (als laatste redmiddel)

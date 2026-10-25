@@ -133,7 +133,7 @@ Lijsten kunnen genest worden. Dat is nuttig voor submenu's of gecategoriseerde o
 </ul>
 ```
 
-De geneste `<ul>` staat direct in de buitenste `<ul>` -- dat is ongeldige HTML. Een `<ul>` mag alleen `<li>`-elementen als directe kinderen hebben.
+De geneste `<ul>` staat direct in de buitenste `<ul>`, dat is ongeldige HTML. Een `<ul>` mag alleen `<li>`-elementen als directe kinderen hebben.
 
 </div>
 <div class="academy-example__good">
@@ -180,9 +180,9 @@ Alleen als je `list-style: none` gebruikt en het belangrijk is dat de lijst als 
 
 Niet alles wat onder elkaar staat, is een lijst:
 
-- **Een enkel item** -- een `<ul>` met een `<li>` is zinloos. Gebruik een `<p>` of een ander passend element.
-- **Layout** -- items die visueel naast elkaar staan maar inhoudelijk niet gerelateerd zijn, vormen geen lijst.
-- **Alinea's** -- als elke "item" een volledige alinea is met eigen context, zijn het alinea's, geen lijstitems.
+- **Een enkel item**: een `<ul>` met een `<li>` is zinloos. Gebruik een `<p>` of een ander passend element.
+- **Layout**: items die visueel naast elkaar staan maar inhoudelijk niet gerelateerd zijn, vormen geen lijst.
+- **Alinea's**: als elke "item" een volledige alinea is met eigen context, zijn het alinea's, geen lijstitems.
 
 <div class="academy-tip">
 <p class="academy-tip__title">De vuistregel</p>
@@ -209,7 +209,7 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Niets -- de bullets maken visueel duidelijk dat het een lijst is</span>
+<span>Niets, de bullets maken visueel duidelijk dat het een lijst is</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
@@ -217,7 +217,7 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="c" />
-<span>Een schermlezer herkent dit niet als lijst -- de gebruiker krijgt geen telling en kan de groep niet overslaan</span>
+<span>Een schermlezer herkent dit niet als lijst, de gebruiker krijgt geen telling en kan de groep niet overslaan</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="d" />
@@ -251,7 +251,7 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="d" />
-<span>Altijd -- <code>&lt;ol&gt;</code> is de standaard</span>
+<span>Altijd, <code>&lt;ol&gt;</code> is de standaard</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -311,7 +311,7 @@ Als je de items kunt samenvatten als "X dingen van hetzelfde type", is het een l
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="d" />
-<span>Het maakt niet uit -- browsers corrigeren het automatisch</span>
+<span>Het maakt niet uit, browsers corrigeren het automatisch</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>

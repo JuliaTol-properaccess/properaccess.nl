@@ -35,17 +35,17 @@ Wat heeft het aria-label gedaan?
 
 ## Wat leren we hiervan?
 
-Dit voorbeeld illustreert een breder probleem: **aria-label wordt te vaak ingezet als snelle fix, terwijl het eigenlijk een gevaarlijk attribuut is.** Het overschrijft alle bestaande content van een element -- alt-teksten, linkteksten, knopteksten. Alles. En die overschrijving is onzichtbaar voor ziende bezoekers en ontwikkelaars die niet testen met hulpsoftware.
+Dit voorbeeld illustreert een breder probleem: **aria-label wordt te vaak ingezet als snelle fix, terwijl het eigenlijk een gevaarlijk attribuut is.** Het overschrijft alle bestaande content van een element, alt-teksten, linkteksten, knopteksten. Alles. En die overschrijving is onzichtbaar voor ziende bezoekers en ontwikkelaars die niet testen met hulpsoftware.
 
 ### De eerste regel van ARIA
 
-Er is een bekende vuistregel in de toegankelijkheidswereld: **"De eerste regel van ARIA is: gebruik geen ARIA."** Dat klinkt paradoxaal, maar het punt is helder. Native HTML-elementen (`<button>`, `<a>`, `<label>`) brengen hun eigen toegankelijkheidsinformatie mee. ARIA is bedoeld om die informatie aan te vullen waar HTML tekortschiet -- niet om het te overschrijven.
+Er is een bekende vuistregel in de toegankelijkheidswereld: **"De eerste regel van ARIA is: gebruik geen ARIA."** Dat klinkt paradoxaal, maar het punt is helder. Native HTML-elementen (`<button>`, `<a>`, `<label>`) brengen hun eigen toegankelijkheidsinformatie mee. ARIA is bedoeld om die informatie aan te vullen waar HTML tekortschiet, niet om het te overschrijven.
 
 ### Andere voorbeelden van ARIA-misbruik die we tegenkomen
 
 - **`aria-label` op een div of span.** Die elementen hebben geen interactieve rol. Een schermlezer negeert de aria-label in de meeste gevallen.
 - **`role="button"` op een link.** Een link navigeert, een knop voert een actie uit. Door de rol te veranderen creeer je verwarring: de schermlezer zegt "knop", maar het element gedraagt zich als een link.
-- **`aria-hidden="true"` op zichtbare content.** Hiermee verberg je content voor schermlezers terwijl het visueel zichtbaar blijft. Soms bewust (bij decoratieve iconen), maar vaak per ongeluk -- waardoor hele secties ontoegankelijk worden.
+- **`aria-hidden="true"` op zichtbare content.** Hiermee verberg je content voor schermlezers terwijl het visueel zichtbaar blijft. Soms bewust (bij decoratieve iconen), maar vaak per ongeluk, waardoor hele secties ontoegankelijk worden.
 
 ## De regels voor het toegankelijkheidslabel
 

@@ -26,14 +26,14 @@ howto:
       text: "Open de Inspector wanneer je geen focusmarkering ziet en controleer of de focusstijl ontbreekt of door CSS, bijvoorbeeld outline: none, wordt verwijderd."
 ---
 
-Navigeer je met de muis door een website, dan zie je welk element actief is doordat je muisaanwijzer erop staat. Maar voor mensen die het toetsenbord gebruiken, is er een ander visueel signaal nodig: de **focusmarkering**. Zonder die markering ben je verdwaald op de pagina. Je drukt op Tab, er gebeurt iets -- maar je hebt geen idee waar je bent.
+Navigeer je met de muis door een website, dan zie je welk element actief is doordat je muisaanwijzer erop staat. Maar voor mensen die het toetsenbord gebruiken, is er een ander visueel signaal nodig: de **focusmarkering**. Zonder die markering ben je verdwaald op de pagina. Je drukt op Tab, er gebeurt iets, maar je hebt geen idee waar je bent.
 
 **WCAG succescriterium 2.4.7** (Focus zichtbaar) eist dat elk interactief element een zichtbare focus-indicator heeft wanneer het toetsenbordfocus krijgt.
 
 ## Wie heeft hier last van?
 
 - **Mensen met een motorische beperking** die het toetsenbord gebruiken in plaats van een muis
-- **Mensen die tijdelijk geen muis gebruiken** -- een gebroken arm, een kapotte muis, of gewoon een voorkeur voor toetsenbordnavigatie
+- **Mensen die tijdelijk geen muis gebruiken**: een gebroken arm, een kapotte muis, of gewoon een voorkeur voor toetsenbordnavigatie
 - **Blinde gebruikers** worden indirect geraakt: als een schermlezer de focus kwijtraakt door slechte focus-management, is het probleem hetzelfde
 
 ## Zo test je focus zichtbaarheid

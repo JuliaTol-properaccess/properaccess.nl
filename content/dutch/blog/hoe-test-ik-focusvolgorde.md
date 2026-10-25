@@ -30,12 +30,12 @@ howto:
 
 Focusvolgorde is een van die dingen die je pas opvalt als het misgaat. Je drukt op Tab en ineens spring je van de header naar de footer, of je opent een modal en de focus blijft achter de overlay hangen. Voor iemand die alleen het toetsenbord gebruikt, is dat het verschil tussen een bruikbare website en een onbruikbare.
 
-**WCAG succescriterium 2.4.3** (Focusvolgorde) eist dat de volgorde waarin elementen toetsenbordfocus krijgen, logisch en bruikbaar is. Dat betekent niet dat de focusvolgorde exact de visuele volgorde moet volgen -- kleine afwijkingen zijn prima. Maar de volgorde mag niet verwarrend zijn of de betekenis van de content aantasten.
+**WCAG succescriterium 2.4.3** (Focusvolgorde) eist dat de volgorde waarin elementen toetsenbordfocus krijgen, logisch en bruikbaar is. Dat betekent niet dat de focusvolgorde exact de visuele volgorde moet volgen, kleine afwijkingen zijn prima. Maar de volgorde mag niet verwarrend zijn of de betekenis van de content aantasten.
 
 ## Wie heeft hier last van?
 
 - **Mensen met een motorische beperking** die een toetsenbord, schakelaar of andere invoerapparatuur gebruiken
-- **Blinde gebruikers** die met een schermlezer navigeren -- zij zien niet waar de focus naartoe springt
+- **Blinde gebruikers** die met een schermlezer navigeren, zij zien niet waar de focus naartoe springt
 - **Mensen met een cognitieve beperking** die afhankelijk zijn van voorspelbare patronen
 
 ## Zo test je focusvolgorde
@@ -54,7 +54,7 @@ Volgt de focus een logisch pad? Van navigatie naar hoofdcontent naar footer? Of 
 
 Open met het toetsenbord alle menu's, dialoogvensters, tabs en andere componenten. Let op:
 
-- **Wordt de focus verplaatst naar het geopende element?** Als je een modal opent, moet de focus naar die modal gaan -- niet achter de overlay blijven.
+- **Wordt de focus verplaatst naar het geopende element?** Als je een modal opent, moet de focus naar die modal gaan, niet achter de overlay blijven.
 - **Keert de focus terug na sluiting?** Als je de modal sluit, moet de focus teruggaan naar de knop waarmee je de modal opende.
 - **Kun je het element weer sluiten?** Escape moet werken bij modals en menu's.
 

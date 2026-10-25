@@ -17,7 +17,7 @@ aliases:
   - /hoe-test-ik-kleurcontrast/
 ---
 
-Kleurcontrast is een van de meest voorkomende toegankelijkheidsproblemen die we tegenkomen in audits. Lichtgrijze tekst op een witte achtergrond, pastelkleurige knoppen, subtiele placeholdertekst -- het ziet er misschien strak uit, maar voor honderdduizenden mensen met een visuele beperking is het simpelweg niet te lezen.
+Kleurcontrast is een van de meest voorkomende toegankelijkheidsproblemen die we tegenkomen in audits. Lichtgrijze tekst op een witte achtergrond, pastelkleurige knoppen, subtiele placeholdertekst, het ziet er misschien strak uit, maar voor honderdduizenden mensen met een visuele beperking is het simpelweg niet te lezen.
 
 WCAG kent twee succescriteria voor contrast:
 - **SC 1.4.3** (Contrast minimum): gaat over tekst
@@ -71,15 +71,15 @@ Snel en handig als je al in de browser aan het inspecteren bent:
 
 Kun je geen software installeren? Gebruik een online checker:
 
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) -- vul twee hex-codes in en je ziet direct het resultaat
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/), vul twee hex-codes in en je ziet direct het resultaat
 
 ## Veelvoorkomende valkuilen
 
-- **Placeholdertekst.** Die lichtgrijze tekst in invoervelden die verdwijnt zodra je typt. Die moet ook voldoen aan 4,5:1 -- het is gewone tekst.
+- **Placeholdertekst.** Die lichtgrijze tekst in invoervelden die verdwijnt zodra je typt. Die moet ook voldoen aan 4,5:1, het is gewone tekst.
 - **Tekst op foto's.** Als je tekst over een afbeelding plaatst, controleer dan het contrast op het donkerste en lichtste punt van de afbeelding. Of gebruik een semi-transparante overlay.
 - **Hover- en focusstaten.** Niet alleen de standaardkleur moet voldoen, maar ook de kleur bij hover en focus.
 - **Disabled elementen.** Inactieve knoppen en velden zijn uitgezonderd van de contrasteis. Maar wees voorzichtig: als een gebruiker niet kan zien dat een element er is, is dat ook een probleem.
 
 ## Mijn tip
 
-Leer een paar veilige kleurcombinaties uit je hoofd. `#767676` is de lichtste grijs die 4,5:1 haalt op wit -- dat dekt zowel tekst als UI-componenten. Gebruik dit als baseline en ga bij twijfel donkerder.
+Leer een paar veilige kleurcombinaties uit je hoofd. `#767676` is de lichtste grijs die 4,5:1 haalt op wit, dat dekt zowel tekst als UI-componenten. Gebruik dit als baseline en ga bij twijfel donkerder.

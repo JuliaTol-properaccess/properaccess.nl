@@ -112,7 +112,7 @@ Dit helpt zoekmachines en hulpsoftware om datums en tijden correct te interprete
 
 ## Nadruk: em en strong
 
-`<em>` geeft **nadruk** (emphasis) aan -- het verandert de betekenis van een zin. `<strong>` markeert **belang** (importance). Beide zijn semantisch, in tegenstelling tot CSS-styling.
+`<em>` geeft **nadruk** (emphasis) aan, het verandert de betekenis van een zin. `<strong>` markeert **belang** (importance). Beide zijn semantisch, in tegenstelling tot CSS-styling.
 
 <div class="academy-example">
 <div class="academy-example__header">Voorbeeld: nadruk vs. styling</div>
@@ -143,8 +143,8 @@ Het verschil tussen `<em>` en `<strong>`:
 
 | Element | Betekenis | Voorbeeld |
 |---------|-----------|-----------|
-| `<em>` | Klemtoon -- verandert hoe je de zin leest | "Ik zei dat *jij* het moest doen" (niet iemand anders) |
-| `<strong>` | Belang -- dit is belangrijk | "**Let op:** dit veld is verplicht" |
+| `<em>` | Klemtoon, verandert hoe je de zin leest | "Ik zei dat *jij* het moest doen" (niet iemand anders) |
+| `<strong>` | Belang, dit is belangrijk | "**Let op:** dit veld is verplicht" |
 
 ## Markering: mark
 
@@ -261,7 +261,7 @@ Het `<address>`-element markeert contactinformatie voor de auteur of eigenaar va
 </address>
 ```
 
-Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor contactinformatie van de auteur of organisatie.
+Gebruik `<address>` niet voor willekeurige adressen in de content, alleen voor contactinformatie van de auteur of organisatie.
 
 ## WCAG-succescriteria
 
@@ -281,7 +281,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Niets -- de CSS maakt de doorstreping zichtbaar</span>
+<span>Niets, de CSS maakt de doorstreping zichtbaar</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
@@ -311,7 +311,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
-<span><code>&lt;em&gt;</code> maakt tekst cursief, <code>&lt;strong&gt;</code> maakt tekst vet -- verder geen verschil</span>
+<span><code>&lt;em&gt;</code> maakt tekst cursief, <code>&lt;strong&gt;</code> maakt tekst vet, verder geen verschil</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="b" />
@@ -323,7 +323,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="d" />
-<span>Er is geen verschil -- ze zijn uitwisselbaar</span>
+<span>Er is geen verschil, ze zijn uitwisselbaar</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -331,7 +331,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>Goed. <code>&lt;em&gt;</code> legt klemtoon ("ik zei dat <em>jij</em> het moest doen") en <code>&lt;strong&gt;</code> markeert iets als belangrijk. Het visuele verschil (cursief vs. vet) is een bijeffect, niet het doel.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p><code>&lt;em&gt;</code> geeft klemtoon -- het verandert hoe je de zin leest. <code>&lt;strong&gt;</code> markeert belang -- dit is belangrijk. Beide zijn semantisch, niet alleen visueel.</p>
+<p><code>&lt;em&gt;</code> geeft klemtoon, het verandert hoe je de zin leest. <code>&lt;strong&gt;</code> markeert belang, dit is belangrijk. Beide zijn semantisch, niet alleen visueel.</p>
 </div>
 </div>
 </fieldset>
@@ -349,7 +349,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="c" />
-<span>Niets -- visuele nabijheid is voldoende</span>
+<span>Niets, visuele nabijheid is voldoende</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="d" />
@@ -421,7 +421,7 @@ Gebruik `<address>` niet voor willekeurige adressen in de content -- alleen voor
 <p>Goed. De eerste keer voluit schrijven geeft context, en het <code>&lt;abbr&gt;</code>-element met <code>title</code> maakt de betekenis ook programmatisch beschikbaar bij volgende vermeldingen.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>De beste aanpak: schrijf de afkorting de eerste keer voluit -- "European Accessibility Act (EAA)" -- en gebruik daarna <code>&lt;abbr title="European Accessibility Act"&gt;EAA&lt;/abbr&gt;</code>. Dat geeft zowel visuele als programmatische duidelijkheid.</p>
+<p>De beste aanpak: schrijf de afkorting de eerste keer voluit, "European Accessibility Act (EAA)", en gebruik daarna <code>&lt;abbr title="European Accessibility Act"&gt;EAA&lt;/abbr&gt;</code>. Dat geeft zowel visuele als programmatische duidelijkheid.</p>
 </div>
 </div>
 </fieldset>

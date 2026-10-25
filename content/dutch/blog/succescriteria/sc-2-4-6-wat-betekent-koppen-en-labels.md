@@ -14,7 +14,7 @@ aliases:
 
 Je opent een pagina en de eerste kop is "Overzicht". Overzicht van wat? Je scrollt naar beneden en ziet koppen als "Details", "Meer informatie" en "Overig". Geen enkele kop vertelt je wat er in die sectie staat. Je moet alles lezen om te begrijpen waar de pagina over gaat.
 
-Voor iemand met een schermlezer is dat nog problematischer. Schermlezergebruikers navigeren vaak via een lijst van koppen op de pagina -- een soort inhoudsopgave. Als die koppen "Overzicht", "Details" en "Meer informatie" zijn, is die lijst waardeloos.
+Voor iemand met een schermlezer is dat nog problematischer. Schermlezergebruikers navigeren vaak via een lijst van koppen op de pagina, een soort inhoudsopgave. Als die koppen "Overzicht", "Details" en "Meer informatie" zijn, is die lijst waardeloos.
 
 **WCAG succescriterium 2.4.6** (Headings and Labels) eist dat koppen en labels de inhoud of het doel beschrijven waar ze bij horen.
 
@@ -51,7 +51,7 @@ Labels vertellen gebruikers wat ze in een formulierveld moeten invullen. Een goe
 - **Schermlezergebruikers** die navigeren via een lijst van koppen. Beschrijvende koppen zijn hun inhoudsopgave
 - **Mensen met cognitieve beperkingen** die snel moeten begrijpen waar een sectie over gaat zonder alles te lezen
 - **Mensen met een visuele beperking** die vergrotingssoftware gebruiken en maar een klein deel van de pagina zien. De kop is het anker dat hen vertelt waar ze zijn
-- **Iedereen die snel scant** -- de meeste bezoekers lezen niet elke zin maar scannen koppen
+- **Iedereen die snel scant**: de meeste bezoekers lezen niet elke zin maar scannen koppen
 
 ## Het verschil met SC 1.3.1
 
@@ -61,18 +61,18 @@ SC 2.4.6 gaat over de **inhoud**: is die kop ook beschrijvend? Is dat label ook 
 
 ## Veelgemaakte fouten bij koppen
 
-- **Generieke koppen** -- "Informatie", "Details", "Overzicht" zonder context
-- **Duplicate koppen** -- drie secties die allemaal "Producten" heten
-- **Koppen die niet aansluiten bij de content** -- een kop "Contact" boven een sectie die eigenlijk over vacatures gaat
-- **Alleen visueel opgemaakte koppen** -- grote, vette tekst die geen echte HTML-kop is (dat is SC 1.3.1, maar het leidt ook tot problemen bij 2.4.6 als de koptekst zelf niet beschrijvend is)
+- **Generieke koppen**: "Informatie", "Details", "Overzicht" zonder context
+- **Duplicate koppen**: drie secties die allemaal "Producten" heten
+- **Koppen die niet aansluiten bij de content**: een kop "Contact" boven een sectie die eigenlijk over vacatures gaat
+- **Alleen visueel opgemaakte koppen**: grote, vette tekst die geen echte HTML-kop is (dat is SC 1.3.1, maar het leidt ook tot problemen bij 2.4.6 als de koptekst zelf niet beschrijvend is)
 
 ## Veelgemaakte fouten bij labels
 
-- **Geen label** -- een invoerveld zonder enige aanduiding
-- **Alleen een placeholder** -- "Voer hier je naam in" dat verdwijnt zodra je begint te typen
-- **Onduidelijk label** -- "Nummer" (telefoonnummer? klantnummer? huisnummer?)
-- **Label dat niet bij het veld past** -- een label "E-mail" dat in de code gekoppeld is aan het naamveld
-- **Geen format-instructie** -- een datumveld zonder aanduiding of je dd-mm-jjjj of mm/dd/yyyy moet gebruiken
+- **Geen label**: een invoerveld zonder enige aanduiding
+- **Alleen een placeholder**: "Voer hier je naam in" dat verdwijnt zodra je begint te typen
+- **Onduidelijk label**: "Nummer" (telefoonnummer? klantnummer? huisnummer?)
+- **Label dat niet bij het veld past**: een label "E-mail" dat in de code gekoppeld is aan het naamveld
+- **Geen format-instructie**: een datumveld zonder aanduiding of je dd-mm-jjjj of mm/dd/yyyy moet gebruiken
 
 ## Hoe test je het?
 

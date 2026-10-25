@@ -12,7 +12,7 @@ layout: "academy"
 
 Een `<iframe>` plaatst een complete externe pagina binnen jouw pagina. Bijvoorbeeld YouTube-video's, Google Maps-kaarten, betaalformulieren of chatwidgets. De content in een iframe heeft een eigen document, eigen focusvolgorde en vaak een eigen oorsprong.
 
-Voor hulpsoftware is een iframe een blok dat je kunt betreden of overslaan. Maar dan moet de gebruiker wel weten **wat** er in dat blok zit. Zonder beschrijving meldt een schermlezer alleen "frame" -- en dan moet de gebruiker erin navigeren om te ontdekken wat het is.
+Voor hulpsoftware is een iframe een blok dat je kunt betreden of overslaan. Maar dan moet de gebruiker wel weten **wat** er in dat blok zit. Zonder beschrijving meldt een schermlezer alleen "frame", en dan moet de gebruiker erin navigeren om te ontdekken wat het is.
 
 ## Waarom het ertoe doet
 
@@ -24,7 +24,7 @@ De <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H64" rel="noopener">H6
 
 ## Het title-attribuut
 
-Elk iframe dat content bevat, heeft een `title`-attribuut nodig. Dat attribuut moet beschrijven **wat** er in het iframe staat -- niet dat het een iframe is.
+Elk iframe dat content bevat, heeft een `title`-attribuut nodig. Dat attribuut moet beschrijven **wat** er in het iframe staat, niet dat het een iframe is.
 
 <div class="academy-example">
 <div class="academy-example__header">Voorbeeld: YouTube-embed</div>
@@ -92,7 +92,7 @@ Een goede iframe-title beantwoordt de vraag: "Wat vind ik als ik dit blok binnen
 
 ## Decoratieve of verborgen iframes
 
-Soms bevat een iframe geen content die voor de gebruiker relevant is -- bijvoorbeeld een trackingpixel of een verborgen technisch frame. In dat geval wil je voorkomen dat een schermlezer het aankondigt.
+Soms bevat een iframe geen content die voor de gebruiker relevant is, bijvoorbeeld een trackingpixel of een verborgen technisch frame. In dat geval wil je voorkomen dat een schermlezer het aankondigt.
 
 <div class="academy-example">
 <div class="academy-example__header">Voorbeeld: decoratief iframe verbergen</div>
@@ -132,7 +132,7 @@ Elk type iframe heeft specifieke aandachtspunten:
 | **YouTube / Vimeo** | Beschrijf de video in de title. YouTube voegt standaard een title toe, maar die is vaak generiek. |
 | **Google Maps** | Beschrijf de locatie, niet alleen "Google Maps". |
 | **Betaalformulieren** | De title moet duidelijk maken dat het een betaalstap is. De focus moet correct verplaatsen naar het iframe. |
-| **Chatwidgets** | Vaak meerdere iframes -- elk moet een beschrijvende title hebben. |
+| **Chatwidgets** | Vaak meerdere iframes, elk moet een beschrijvende title hebben. |
 | **Social media embeds** | Beschrijf wat de embed toont: "Instagram-post van @bedrijfsnaam" of "Twitter-tijdlijn". |
 
 ## Lazy loading
@@ -176,15 +176,15 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
-<span>Alleen "frame" of de URL -- de gebruiker weet niet wat erin staat</span>
+<span>Alleen "frame" of de URL, de gebruiker weet niet wat erin staat</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="c" />
-<span>Niets -- iframes worden overgeslagen door schermlezers</span>
+<span>Niets, iframes worden overgeslagen door schermlezers</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="d" />
-<span>"YouTube-video" -- de browser herkent het domein automatisch</span>
+<span>"YouTube-video", de browser herkent het domein automatisch</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -240,7 +240,7 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="c" />
-<span>Laat het zonder attributen -- het is toch onzichtbaar</span>
+<span>Laat het zonder attributen, het is toch onzichtbaar</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="d" />
@@ -262,7 +262,7 @@ Gebruik `tabindex="-1"` alleen op iframes die **geen interactieve content** beva
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
-<span>Niets -- het formulier in het iframe blijft gewoon bereikbaar</span>
+<span>Niets, het formulier in het iframe blijft gewoon bereikbaar</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="b" />

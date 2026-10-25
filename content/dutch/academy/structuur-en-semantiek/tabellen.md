@@ -12,7 +12,7 @@ layout: "academy"
 
 Een tabel is bedoeld voor **data die in rijen en kolommen** thuishoort. Bijvoorbeeld een prijslijst, een rooster, vergelijkende specificaties of zoekresultaten. De relatie tussen rij en kolom is de informatie: "dit product kost dit bedrag" of "deze medewerker werkt op die dag".
 
-Gebruik een tabel **niet** voor layout. In de jaren negentig werden tabellen gebruikt om kolommen en witruimte te creeren. Dat patroon is achterhaald, maar komt nog steeds voor -- vooral in e-mail templates en oudere websites. Een layout-tabel geeft een schermlezer verkeerde informatie: die leest "tabel met 3 rijen en 2 kolommen" terwijl er geen data-relatie is.
+Gebruik een tabel **niet** voor layout. In de jaren negentig werden tabellen gebruikt om kolommen en witruimte te creeren. Dat patroon is achterhaald, maar komt nog steeds voor, vooral in e-mail templates en oudere websites. Een layout-tabel geeft een schermlezer verkeerde informatie: die leest "tabel met 3 rijen en 2 kolommen" terwijl er geen data-relatie is.
 
 ## Hoe een schermlezer een tabel leest
 
@@ -55,16 +55,16 @@ Een toegankelijke tabel heeft deze onderdelen:
 
 | Onderdeel | Doel |
 |---|---|
-| `<caption>` | Titel van de tabel -- beschrijft waar de tabel over gaat |
+| `<caption>` | Titel van de tabel, beschrijft waar de tabel over gaat |
 | `<thead>` | Groepeert de koprij(en) |
 | `<tbody>` | Groepeert de datarijen |
-| `<th scope="col">` | Kolomkop -- geldt voor alle cellen in die kolom |
-| `<th scope="row">` | Rijkop -- geldt voor alle cellen in die rij |
+| `<th scope="col">` | Kolomkop, geldt voor alle cellen in die kolom |
+| `<th scope="row">` | Rijkop, geldt voor alle cellen in die rij |
 | `<td>` | Datacel |
 
 ## scope: de sleutel tot toegankelijke tabellen
 
-Het `scope`-attribuut vertelt de schermlezer welke cellen bij welke kop horen. Zonder `scope` moet de schermlezer raden -- en dat gaat bij complexere tabellen mis.
+Het `scope`-attribuut vertelt de schermlezer welke cellen bij welke kop horen. Zonder `scope` moet de schermlezer raden, en dat gaat bij complexere tabellen mis.
 
 <div class="academy-example">
 <div class="academy-example__header">Voorbeeld: tabelkoppen</div>
@@ -182,7 +182,7 @@ Soms heeft een tabel koppen op meerdere niveaus, samengevoegde cellen of kruisen
 </table>
 ```
 
-Elke `<td>` verwijst met `headers` naar de `id`'s van de bijbehorende koppen. Zo weet de schermlezer exact welke koppen bij welke cel horen -- ook bij complexe structuren.
+Elke `<td>` verwijst met `headers` naar de `id`'s van de bijbehorende koppen. Zo weet de schermlezer exact welke koppen bij welke cel horen, ook bij complexe structuren.
 
 <div class="academy-tip">
 <p class="academy-tip__title">Vermijd complexe tabellen</p>
@@ -204,7 +204,7 @@ Als je onverhoopt een tabel voor layout moet gebruiken (bijvoorbeeld in een HTML
 </table>
 ```
 
-De schermlezer negeert de tabelstructuur en leest alleen de inhoud. Gebruik geen `<th>`, `<caption>` of `scope` in een layout-tabel -- dat zou tegenstrijdig zijn.
+De schermlezer negeert de tabelstructuur en leest alleen de inhoud. Gebruik geen `<th>`, `<caption>` of `scope` in een layout-tabel, dat zou tegenstrijdig zijn.
 
 ## Tabel, lijst of beschrijvingslijst?
 
@@ -266,7 +266,7 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 
 ## Verder lezen
 
-- [Tabellen](/blog/sc-1-3-1-tabellen/) -- veelgemaakte fouten bij het opbouwen van tabellen
+- [Tabellen](/blog/sc-1-3-1-tabellen/), veelgemaakte fouten bij het opbouwen van tabellen
 
 ---
 
@@ -279,7 +279,7 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Er is geen probleem -- de tekst is vetgedrukt dus het is duidelijk een kop</span>
+<span>Er is geen probleem, de tekst is vetgedrukt dus het is duidelijk een kop</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
@@ -369,7 +369,7 @@ Een beschrijvingslijst past beter bij sleutel-waarde-paren.
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
-<span>Geen verschil -- beide geven de tabel een titel</span>
+<span>Geen verschil, beide geven de tabel een titel</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="b" />

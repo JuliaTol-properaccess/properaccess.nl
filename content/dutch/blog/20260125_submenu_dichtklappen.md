@@ -38,7 +38,7 @@ Dat is verwarrend. Het submenu overlapt mogelijk andere content, en de visuele s
 
 ## Waarom gebeurt dit?
 
-De meeste submenu's worden geopend met een CSS `:hover` of `:focus-within` selector, of met JavaScript dat luistert naar een `mouseenter` of `focus` event. Maar het sluiten van het menu bij het vertrekken van de focus wordt vaak vergeten -- vooral bij toetsenbordnavigatie.
+De meeste submenu's worden geopend met een CSS `:hover` of `:focus-within` selector, of met JavaScript dat luistert naar een `mouseenter` of `focus` event. Maar het sluiten van het menu bij het vertrekken van de focus wordt vaak vergeten, vooral bij toetsenbordnavigatie.
 
 Bij een muis is het simpel: de muis verlaat het menu-gebied en het menu klapt dicht. Bij toetsenbordnavigatie is er geen "verlaat"-event op dezelfde manier. Je moet expliciet luisteren of de focus zich nog binnen het menu bevindt.
 
@@ -91,7 +91,7 @@ document.addEventListener('keydown', (e) => {
 
 1. Navigeer met Tab naar het menu-item dat het submenu opent
 2. Tab door alle items in het submenu
-3. Tab voorbij het laatste item -- het submenu moet nu dichtklappen
-4. Druk op Escape terwijl je in het submenu bent -- het menu moet sluiten en de focus moet teruggaan naar de trigger
+3. Tab voorbij het laatste item, het submenu moet nu dichtklappen
+4. Druk op Escape terwijl je in het submenu bent, het menu moet sluiten en de focus moet teruggaan naar de trigger
 
 Doet het menu dit niet? Dan heb je een focusvolgorde-probleem dat je moet oplossen.

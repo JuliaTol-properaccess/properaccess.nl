@@ -124,7 +124,7 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 
 ## Verder lezen
 
-- [SC 2.4.2: Paginatitel ontbreekt](/blog/sc-2-4-2-paginatitel-ontbreekt/) -- wat er misgaat als de titel ontbreekt
+- [SC 2.4.2: Paginatitel ontbreekt](/blog/sc-2-4-2-paginatitel-ontbreekt/), wat er misgaat als de titel ontbreekt
 
 ---
 
@@ -137,7 +137,7 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Niets -- de sitenaam is voldoende als titel</span>
+<span>Niets, de sitenaam is voldoende als titel</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
@@ -197,7 +197,7 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
-<span>Niets -- de browser regelt dit automatisch</span>
+<span>Niets, de browser regelt dit automatisch</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="b" />
@@ -227,7 +227,7 @@ Zorg dat de linktekst en de paginatitel van de bestemmingspagina op elkaar aansl
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
-<span>De linktekst klopt niet bij de paginatitel -- de gebruiker raakt gedesori&euml;nteerd</span>
+<span>De linktekst klopt niet bij de paginatitel, de gebruiker raakt gedesori&euml;nteerd</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="b" />

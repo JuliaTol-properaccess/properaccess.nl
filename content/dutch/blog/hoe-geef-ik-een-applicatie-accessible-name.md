@@ -23,19 +23,19 @@ Soms kom je in een audit een element tegen met `role="application"` dat geen toe
 
 Het attribuut `role="application"` vertelt een schermlezer: "dit is geen gewone webpagina-content, maar een applicatie." Dat heeft grote gevolgen. Normaal gesproken onderschept een schermlezer toetsaanslagen om er eigen navigatiefuncties aan te koppelen. Bijvoorbeeld de **H**-toets om naar de volgende kop te springen, of de **Tab**-toets om naar het volgende interactieve element te gaan.
 
-Met `role="application"` schakelt de schermlezer die eigen sneltoetsen uit. Alle toetsaanslagen gaan direct naar de webpagina. Dat is handig als je een interactieve widget hebt gebouwd die eigen toetsenbordbediening nodig heeft -- zoals een kalender, een kaartapplicatie of een tekenprogramma.
+Met `role="application"` schakelt de schermlezer die eigen sneltoetsen uit. Alle toetsaanslagen gaan direct naar de webpagina. Dat is handig als je een interactieve widget hebt gebouwd die eigen toetsenbordbediening nodig heeft, zoals een kalender, een kaartapplicatie of een tekenprogramma.
 
 **Let op:** gebruik `role="application"` alleen als je echt een reden hebt. In de meeste gevallen is het beter om standaard HTML-elementen te gebruiken. Verkeerd gebruik van deze role kan de navigatie voor schermlezers ernstig verstoren.
 
 ## Het probleem: geen accessible name
 
-Elk element met een ARIA-role heeft een **accessible name** nodig. Die naam is wat de schermlezer voorleest als de gebruiker het element bereikt. Zonder naam hoort de gebruiker alleen "application" -- en weet niet waar die applicatie over gaat of wat er mee kan.
+Elk element met een ARIA-role heeft een **accessible name** nodig. Die naam is wat de schermlezer voorleest als de gebruiker het element bereikt. Zonder naam hoort de gebruiker alleen "application", en weet niet waar die applicatie over gaat of wat er mee kan.
 
 In de accessibility tree van Chrome (DevTools > Accessibility tab) zie je dit terug als een leeg Name-veld.
 
 ## De oplossing: aria-labelledby
 
-De beste manier om een `role="application"` een naam te geven, is met `aria-labelledby`. Dit attribuut verwijst naar het `id` van een bestaand element op de pagina -- bijvoorbeeld de kop boven de applicatie.
+De beste manier om een `role="application"` een naam te geven, is met `aria-labelledby`. Dit attribuut verwijst naar het `id` van een bestaand element op de pagina, bijvoorbeeld de kop boven de applicatie.
 
 ```html
 <h2 id="kalender-kop">Beschikbare data</h2>

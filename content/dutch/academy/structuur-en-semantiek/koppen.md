@@ -12,14 +12,14 @@ layout: "academy"
 
 Koppen zijn het belangrijkste navigatiemiddel voor schermlezergebruikers. Uit het WebAIM-onderzoek blijkt dat **67% van de schermlezergebruikers** koppen gebruikt als primaire manier om door een pagina te navigeren. Ze drukken op de H-toets om van kop naar kop te springen, net zoals een ziende gebruiker de pagina scant op vetgedrukte titels.
 
-Als je koppen niet goed zijn opgebouwd -- of helemaal ontbreken -- dan is je pagina voor deze gebruikers een muur van tekst zonder structuur.
+Als je koppen niet goed zijn opgebouwd, of helemaal ontbreken, dan is je pagina voor deze gebruikers een muur van tekst zonder structuur.
 
 ## Twee aparte eisen
 
 WCAG stelt twee verschillende eisen aan koppen, en die worden vaak door elkaar gehaald:
 
-1. **SC 1.3.1 (Informatie en relaties)** -- koppen moeten in de code als kop zijn gemarkeerd. Gebruik `<h1>` t/m `<h6>`, geen gestylede `<div>` of `<p>`.
-2. **SC 2.4.6 (Koppen en labels)** -- koppen moeten het onderwerp van de content beschrijven. Een kop die "Sectie 3" zegt, is technisch correct gemarkeerd maar inhoudelijk nietszeggend.
+1. **SC 1.3.1 (Informatie en relaties)**: koppen moeten in de code als kop zijn gemarkeerd. Gebruik `<h1>` t/m `<h6>`, geen gestylede `<div>` of `<p>`.
+2. **SC 2.4.6 (Koppen en labels)**: koppen moeten het onderwerp van de content beschrijven. Een kop die "Sectie 3" zegt, is technisch correct gemarkeerd maar inhoudelijk nietszeggend.
 
 Dit zijn twee aparte criteria. Je kunt aan het ene voldoen en het andere overtreden.
 
@@ -38,7 +38,7 @@ Een schermlezer herkent alleen `<h1>` t/m `<h6>` als koppen. Een `<div class="he
 <div class="section-title">Onze diensten</div>
 ```
 
-Visueel een kop, maar de schermlezer zegt alleen "Onze diensten" -- zonder aan te geven dat het een kop is.
+Visueel een kop, maar de schermlezer zegt alleen "Onze diensten", zonder aan te geven dat het een kop is.
 
 </div>
 <div class="academy-example__good">
@@ -136,11 +136,11 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 
 ## Veelgemaakte fouten
 
-- **Kop die geen kop is** -- visueel groot en vet, maar in de code een `<div>` of `<p>`
-- **Niveaus overslaan** -- van `<h2>` naar `<h4>` springen
-- **Meerdere h1's** -- twee of meer `<h1>`'s op dezelfde pagina
-- **Kop voor styling** -- een `<h4>` gebruiken omdat het lettertype kleiner moet
-- **Vage koppen** -- "Lees meer", "Klik hier", "Informatie"
+- **Kop die geen kop is**: visueel groot en vet, maar in de code een `<div>` of `<p>`
+- **Niveaus overslaan**: van `<h2>` naar `<h4>` springen
+- **Meerdere h1's**: twee of meer `<h1>`'s op dezelfde pagina
+- **Kop voor styling**: een `<h4>` gebruiken omdat het lettertype kleiner moet
+- **Vage koppen**: "Lees meer", "Klik hier", "Informatie"
 
 ## WCAG-succescriteria
 
@@ -151,8 +151,8 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 
 ## Verder lezen
 
-- [SC 1.3.1: Kopniveaus](/blog/sc-1-3-1-kopniveaus/) -- wanneer een overgeslagen kopniveau een probleem is
-- [Zo controleer je de koppenstructuur van je website](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/) -- stap-voor-stap uitleg met tools
+- [SC 1.3.1: Kopniveaus](/blog/sc-1-3-1-kopniveaus/), wanneer een overgeslagen kopniveau een probleem is
+- [Zo controleer je de koppenstructuur van je website](/blog/zo-controleer-je-de-koppenstructuur-van-je-website/), stap-voor-stap uitleg met tools
 
 ---
 
@@ -169,7 +169,7 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
-<span>Niveau 3 wordt overgeslagen -- van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code></span>
+<span>Niveau 3 wordt overgeslagen, van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code></span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="c" />
@@ -182,10 +182,10 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
 <div class="academy-quiz__feedback--correct" hidden>
-<p>Klopt. De sprong van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code> slaat niveau 3 over. De hierarchie is daardoor onduidelijk. Meerdere <code>&lt;h2&gt;</code>'s op een pagina is prima -- dat zijn secties op hetzelfde niveau.</p>
+<p>Klopt. De sprong van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code> slaat niveau 3 over. De hierarchie is daardoor onduidelijk. Meerdere <code>&lt;h2&gt;</code>'s op een pagina is prima, dat zijn secties op hetzelfde niveau.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>Het probleem is het overgeslagen kopniveau: van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code> zonder een <code>&lt;h3&gt;</code> ertussen. Meerdere <code>&lt;h2&gt;</code>'s mag -- die staan op hetzelfde niveau in de hierarchie.</p>
+<p>Het probleem is het overgeslagen kopniveau: van <code>&lt;h2&gt;</code> naar <code>&lt;h4&gt;</code> zonder een <code>&lt;h3&gt;</code> ertussen. Meerdere <code>&lt;h2&gt;</code>'s mag, die staan op hetzelfde niveau in de hierarchie.</p>
 </div>
 </div>
 </fieldset>
@@ -237,7 +237,7 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="d" />
-<span>Geen -- de <code>&lt;title&gt;</code> vervangt de <code>&lt;h1&gt;</code></span>
+<span>Geen, de <code>&lt;title&gt;</code> vervangt de <code>&lt;h1&gt;</code></span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -255,7 +255,7 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
-<span>Prima -- een <code>&lt;h4&gt;</code> is kleiner dan een <code>&lt;h2&gt;</code></span>
+<span>Prima, een <code>&lt;h4&gt;</code> is kleiner dan een <code>&lt;h2&gt;</code></span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="b" />
@@ -285,19 +285,19 @@ Elke kop beschrijft duidelijk het onderwerp van de sectie.
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
-<span>SC 1.3.1 -- Informatie en relaties</span>
+<span>SC 1.3.1, Informatie en relaties</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="b" />
-<span>SC 2.4.6 -- Koppen en labels</span>
+<span>SC 2.4.6, Koppen en labels</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="c" />
-<span>SC 2.4.2 -- Paginatitel</span>
+<span>SC 2.4.2, Paginatitel</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="d" />
-<span>SC 4.1.2 -- Naam, Rol, Waarde</span>
+<span>SC 4.1.2, Naam, Rol, Waarde</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>

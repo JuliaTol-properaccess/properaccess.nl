@@ -38,7 +38,7 @@ Je mag wel items **toevoegen** (een submenu dat uitklapt) of **verwijderen** (ee
 
 ## Responsive design en consistentie
 
-Op kleinere schermen verandert de navigatie vaak: een horizontaal menu wordt een hamburger-menu, een sidebar verdwijnt. Dat is prima -- zolang de volgorde van de items binnen het menu consistent blijft. Het menu mag er anders uitzien op mobiel, maar de interne structuur moet hetzelfde zijn.
+Op kleinere schermen verandert de navigatie vaak: een horizontaal menu wordt een hamburger-menu, een sidebar verdwijnt. Dat is prima, zolang de volgorde van de items binnen het menu consistent blijft. Het menu mag er anders uitzien op mobiel, maar de interne structuur moet hetzelfde zijn.
 
 ## Veelgemaakte fouten
 

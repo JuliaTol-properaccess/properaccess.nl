@@ -17,16 +17,16 @@ Je organiseert een webinar over je nieuwe product. Honderden mensen kijken mee. 
 
 ## Het verschil met vooraf opgenomen ondertiteling
 
-Bij vooraf opgenomen video's (SC 1.2.2) heb je alle tijd om ondertitels te maken, te corrigeren en te perfectioneren. Bij live content is dat niet mogelijk -- de ondertiteling moet in realtime worden gegenereerd terwijl er gesproken wordt.
+Bij vooraf opgenomen video's (SC 1.2.2) heb je alle tijd om ondertitels te maken, te corrigeren en te perfectioneren. Bij live content is dat niet mogelijk, de ondertiteling moet in realtime worden gegenereerd terwijl er gesproken wordt.
 
 Dat maakt live ondertiteling technisch uitdagender, maar niet minder belangrijk. De mensen die afhankelijk zijn van ondertiteling hebben er juist bij live events het meeste baat, omdat ze de inhoud niet later opnieuw kunnen bekijken.
 
 ## Wie heeft hier baat bij?
 
-- **Dove en slechthorende kijkers** -- voor hen is live ondertiteling de enige manier om een webinar of livestream te volgen
-- **Niet-moedertaalsprekers** -- geschreven tekst is vaak makkelijker te volgen dan gesproken taal
-- **Mensen in een lawaaierige omgeving** -- kantoor, trein, wachtruimte
-- **Mensen met aandachtsproblemen** -- ondertiteling helpt bij het vasthouden van de focus
+- **Dove en slechthorende kijkers**: voor hen is live ondertiteling de enige manier om een webinar of livestream te volgen
+- **Niet-moedertaalsprekers**: geschreven tekst is vaak makkelijker te volgen dan gesproken taal
+- **Mensen in een lawaaierige omgeving**: kantoor, trein, wachtruimte
+- **Mensen met aandachtsproblemen**: ondertiteling helpt bij het vasthouden van de focus
 
 ## Drie opties voor live ondertiteling
 
@@ -58,8 +58,8 @@ Een professionele velotypist typt de ondertitels in realtime mee. Dit is de mees
 - **Alle gesproken tekst** wordt weergegeven, niet alleen de highlights
 - **Sprekeridentificatie** als er meerdere sprekers zijn
 - **Relevante geluiden** worden beschreven ([applaus], [muziek], [technische storing])
-- **Minimale vertraging** -- meer dan 5 seconden achterstand maakt het moeilijk om te volgen
-- **Leesbare snelheid** -- niet meer dan 160 woorden per minuut
+- **Minimale vertraging**: meer dan 5 seconden achterstand maakt het moeilijk om te volgen
+- **Leesbare snelheid**: niet meer dan 160 woorden per minuut
 
 ## Veelgemaakte fouten
 
@@ -73,15 +73,15 @@ Een professionele velotypist typt de ondertitels in realtime mee. Dit is de mees
 
 1. **Test de automatische ondertiteling** vooraf met een proefwebinar. Spreek je vaktermen uit en kijk wat er verschijnt
 2. **Maak een woordenlijst** van vaktermen en eigennamen die vaak voorkomen. Sommige platforms laten je deze als custom vocabulary toevoegen
-3. **Gebruik een goede microfoon** -- audiokwaliteit heeft direct invloed op de kwaliteit van automatische ondertitels
-4. **Spreek duidelijk en niet te snel** -- dat helpt zowel de ondertiteling als je dove en slechthorende kijkers
+3. **Gebruik een goede microfoon**: audiokwaliteit heeft direct invloed op de kwaliteit van automatische ondertitels
+4. **Spreek duidelijk en niet te snel**: dat helpt zowel de ondertiteling als je dove en slechthorende kijkers
 5. **Vermeld bij de uitnodiging** dat er live ondertiteling beschikbaar is
 
 ## Wat kun je als webredacteur of manager doen?
 
 - **Controleer je live content**: heeft elk webinar of elke livestream ondertiteling?
 - **Kies het juiste niveau**: automatisch voor intern, professioneel voor extern
-- **Maak een opname beschikbaar** na afloop, met gecorrigeerde ondertiteling -- dan voldoe je ook aan SC 1.2.2
+- **Maak een opname beschikbaar** na afloop, met gecorrigeerde ondertiteling, dan voldoe je ook aan SC 1.2.2
 - **Vraag je evenementenorganisator**: is live ondertiteling standaard opgenomen in het draaiboek?
 
-Live ondertiteling is niet alleen een toegankelijkheidsvereiste -- het maakt je webinars en livestreams beter voor iedereen.
+Live ondertiteling is niet alleen een toegankelijkheidsvereiste, het maakt je webinars en livestreams beter voor iedereen.

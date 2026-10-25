@@ -20,9 +20,9 @@ Stel je voor: je vult voor de zoveelste keer een contactformulier in. Naam, e-ma
 
 Het `autocomplete`-attribuut doet meer dan alleen autofill mogelijk maken. Het helpt ook:
 
-- **Mensen met cognitieve beperkingen** -- sommige tools tonen iconen bij invoervelden (een telefoontje bij "tel", een envelop bij "email"). Dat maakt formulieren visueel duidelijker.
-- **Mensen met een motorische beperking** -- minder typen betekent minder belasting. Autofill kan een formulier van vijf minuten terugbrengen naar tien seconden.
-- **Iedereen** -- autofill is gewoon fijn. Het bespaart tijd en voorkomt tikfouten.
+- **Mensen met cognitieve beperkingen**: sommige tools tonen iconen bij invoervelden (een telefoontje bij "tel", een envelop bij "email"). Dat maakt formulieren visueel duidelijker.
+- **Mensen met een motorische beperking**: minder typen betekent minder belasting. Autofill kan een formulier van vijf minuten terugbrengen naar tien seconden.
+- **Iedereen**: autofill is gewoon fijn. Het bespaart tijd en voorkomt tikfouten.
 
 ## Wat wordt er verwacht?
 
@@ -52,7 +52,7 @@ De volledige lijst staat in de [HTML-specificatie](https://html.spec.whatwg.org/
 ## Veelgemaakte fouten
 
 - **Helemaal geen autocomplete-attribuut.** Dit is veruit de meest voorkomende fout. Het kost een paar seconden om toe te voegen, maar wordt standaard vergeten.
-- **Verkeerde waarden.** `autocomplete="on"` is niet genoeg -- je moet de specifieke waarde opgeven (`email`, `tel`, en zo verder).
+- **Verkeerde waarden.** `autocomplete="on"` is niet genoeg, je moet de specifieke waarde opgeven (`email`, `tel`, en zo verder).
 - **Autocomplete uitgeschakeld.** `autocomplete="off"` op velden die het wel zouden moeten ondersteunen. Sommige browsers negeren dit overigens bewust.
 
 ## Voorbeeld

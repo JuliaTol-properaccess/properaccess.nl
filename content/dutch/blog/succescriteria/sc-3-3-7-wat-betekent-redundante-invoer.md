@@ -15,7 +15,7 @@ Je bent bezig met een online bestelling. In stap 1 vul je je naam en adres in. I
 
 Voor jou is dat vervelend. Voor iemand met een motorische beperking die elke toetsaanslag moeite kost, is het drie keer zo veel moeite als nodig. Voor iemand met een cognitieve beperking die moeite heeft met typen en formulieren, is het drie keer zo veel kans op fouten en frustratie.
 
-**WCAG succescriterium 3.3.7** (Redundant Entry) eist dat informatie die de gebruiker eerder in hetzelfde proces heeft ingevoerd, niet opnieuw gevraagd wordt -- tenzij dat nodig is voor beveiliging of de informatie niet meer geldig is.
+**WCAG succescriterium 3.3.7** (Redundant Entry) eist dat informatie die de gebruiker eerder in hetzelfde proces heeft ingevoerd, niet opnieuw gevraagd wordt, tenzij dat nodig is voor beveiliging of de informatie niet meer geldig is.
 
 ## Nieuw in WCAG 2.2
 
@@ -66,9 +66,9 @@ Een vragenlijst die op pagina 3 opnieuw om je naam en e-mailadres vraagt, terwij
 
 Er zijn legitieme redenen om informatie opnieuw te vragen:
 
-- **Beveiliging** -- het opnieuw invoeren van een wachtwoord bij een gevoelige actie (account verwijderen, betaling bevestigen)
-- **Vervallen informatie** -- als de eerder ingevoerde informatie mogelijk niet meer klopt (bijvoorbeeld een sessie die is verlopen)
-- **Bewuste bevestiging** -- "Typ je e-mailadres nogmaals om tikfouten te voorkomen" bij accountregistratie
+- **Beveiliging**: het opnieuw invoeren van een wachtwoord bij een gevoelige actie (account verwijderen, betaling bevestigen)
+- **Vervallen informatie**: als de eerder ingevoerde informatie mogelijk niet meer klopt (bijvoorbeeld een sessie die is verlopen)
+- **Bewuste bevestiging**: "Typ je e-mailadres nogmaals om tikfouten te voorkomen" bij accountregistratie
 
 Dat laatste is een grijs gebied. Het opnieuw typen van een e-mailadres bij registratie is een veelgebruikt patroon dat bedoeld is om fouten te voorkomen. WCAG staat dit toe als het een beveiligings- of verificatiedoel dient.
 
@@ -91,4 +91,4 @@ SC 1.3.5 gaat over het `autocomplete`-attribuut, waardoor de browser eerder inge
 - **Controleer ingelogde processen**: worden bekende gegevens automatisch ingevuld?
 - **Vraag je webbouwer**: worden sessiegegevens correct doorgegeven tussen formulierstappen?
 
-Redundante invoer voorkomen is niet alleen een toegankelijkheidseis -- het maakt je formulieren sneller en prettiger voor iedereen. En snellere formulieren leiden tot hogere conversie.
+Redundante invoer voorkomen is niet alleen een toegankelijkheidseis, het maakt je formulieren sneller en prettiger voor iedereen. En snellere formulieren leiden tot hogere conversie.

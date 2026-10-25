@@ -19,7 +19,7 @@ Je navigeert met je toetsenbord door een webshop. Je drukt op Tab om naar de vol
 
 Dit criterium is toegevoegd in WCAG 2.2 (oktober 2023) en is niveau AA. Het bestond niet in eerdere versies van WCAG. De reden voor de toevoeging: moderne websites gebruiken steeds meer overlappende elementen (sticky headers, cookiebanners, chatwidgets) die de focus kunnen bedekken.
 
-Er is ook een strengere variant: SC 2.4.12 (niveau AAA) eist dat het gefocuste element **helemaal niet** bedekt wordt -- ook niet gedeeltelijk.
+Er is ook een strengere variant: SC 2.4.12 (niveau AAA) eist dat het gefocuste element **helemaal niet** bedekt wordt, ook niet gedeeltelijk.
 
 ## Wat wordt er verwacht?
 
@@ -65,7 +65,7 @@ Als een modal opent maar de focus niet correct wordt beheerd, kan de gebruiker m
 1. Open je website in een browser
 2. Navigeer met **Tab** door de hele pagina
 3. Let specifiek op momenten waarop het gefocuste element achter een sticky header, footer, banner of overlay verdwijnt
-4. Scroll door de pagina terwijl je tabt -- de combinatie van scrollen en focussen is waar de meeste problemen optreden
+4. Scroll door de pagina terwijl je tabt, de combinatie van scrollen en focussen is waar de meeste problemen optreden
 5. Test ook met geopende cookiebanners en chatwidgets
 
 **Tip:** gebruik de CSS-outline of border op `:focus` om de focuspositie beter zichtbaar te maken tijdens het testen:

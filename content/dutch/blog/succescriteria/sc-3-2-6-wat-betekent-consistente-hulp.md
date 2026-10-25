@@ -18,16 +18,16 @@ Voor iemand met een cognitieve beperking of lage digitale vaardigheden kan die i
 
 ## Nieuw in WCAG 2.2
 
-Dit criterium is toegevoegd in WCAG 2.2 en is niveau A. Het is een van de criteria die gericht zijn op mensen met cognitieve beperkingen -- een groep die in eerdere WCAG-versies ondervertegenwoordigd was.
+Dit criterium is toegevoegd in WCAG 2.2 en is niveau A. Het is een van de criteria die gericht zijn op mensen met cognitieve beperkingen, een groep die in eerdere WCAG-versies ondervertegenwoordigd was.
 
 ## Welke hulpmechanismen vallen hieronder?
 
 Het criterium noemt specifiek vier typen hulp:
 
-1. **Contactgegevens** -- telefoonnummer, e-mailadres, openingstijden
-2. **Contactformulier of chatfunctie** -- een directe manier om hulp te vragen
-3. **Zelfhulpmechanismen** -- FAQ, kennisbank, handleidingen
-4. **Volledig geautomatiseerde contactmechanismen** -- chatbots
+1. **Contactgegevens**: telefoonnummer, e-mailadres, openingstijden
+2. **Contactformulier of chatfunctie**: een directe manier om hulp te vragen
+3. **Zelfhulpmechanismen**: FAQ, kennisbank, handleidingen
+4. **Volledig geautomatiseerde contactmechanismen**: chatbots
 
 Als je een of meer van deze hulpopties aanbiedt op meerdere pagina's, moeten ze steeds op **dezelfde relatieve plek** staan. Dat betekent niet per se dezelfde pixelcoördinaten, maar dezelfde plek in de structuur van de pagina.
 
@@ -55,7 +55,7 @@ De sleutel is **voorspelbaarheid**. Een gebruiker die heeft geleerd waar de hulp
 
 ## Wat is niet verplicht?
 
-- Je hoeft niet op **elke pagina** hulp aan te bieden. Het criterium geldt alleen als je hulp op meerdere pagina's aanbiedt -- dan moet die consistent zijn
+- Je hoeft niet op **elke pagina** hulp aan te bieden. Het criterium geldt alleen als je hulp op meerdere pagina's aanbiedt, dan moet die consistent zijn
 - Als je verschillende hulpmechanismen op verschillende pagina's toont (chatbot op de homepage, FAQ op productpagina's), hoeven die niet identiek te zijn. Maar als hetzelfde mechanisme op meerdere pagina's voorkomt, moet het consistent gepositioneerd zijn
 - De exacte visuele vormgeving mag variëren, zolang de positie in de paginastructuur hetzelfde blijft
 

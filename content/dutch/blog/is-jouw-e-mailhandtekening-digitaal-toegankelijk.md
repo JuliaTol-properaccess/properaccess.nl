@@ -22,14 +22,14 @@ En weet je wat een schermlezer dan voorleest?
 
 _”signature\_1293438474”_
 
-Daar word je niet wijzer van. En dit komt dagelijks voor -- bij elke e-mail die je verstuurt.
+Daar word je niet wijzer van. En dit komt dagelijks voor, bij elke e-mail die je verstuurt.
 
 ## Wat gaat er mis in e-mailhandtekeningen?
 
 De meeste e-mailhandtekeningen zijn opgebouwd als een kleine HTML-pagina, vaak met tabellen, afbeeldingen en links. Dat levert een aantal veelvoorkomende problemen op:
 
 - **Afbeeldingen zonder alt-tekst.** Logo’s, profielfoto’s en banners die geen alternatieve tekst hebben. Een schermlezer leest dan de bestandsnaam voor of slaat de afbeelding over.
-- **Tekst als afbeelding.** Soms wordt de hele handtekening als een afbeelding ingevoegd. Alle informatie -- naam, functie, telefoonnummer -- is dan ontoegankelijk.
+- **Tekst als afbeelding.** Soms wordt de hele handtekening als een afbeelding ingevoegd. Alle informatie, naam, functie, telefoonnummer, is dan ontoegankelijk.
 - **Onnodig complexe tabelstructuur.** E-mailhandtekeningen worden vaak in geneste tabellen opgemaakt voor de layout. Een schermlezer leest die tabelstructuur voor, wat de handtekening onnodig verwarrend maakt.
 - **Links zonder duidelijk doel.** Iconen voor LinkedIn, Twitter of Instagram zonder tekst of alt-tekst. Een schermlezer zegt dan alleen “link” of leest de volledige URL voor.
 
@@ -48,7 +48,7 @@ De meeste e-mailhandtekeningen zijn opgebouwd als een kleine HTML-pagina, vaak m
 1. Ga naar **Instellingen** (tandwielpictogram) en dan **Alle instellingen bekijken**
 2. Scroll naar het gedeelte **Handtekening**
 3. Klik op de afbeelding in je handtekening
-4. Er verschijnt een optie om alt-tekst toe te voegen -- vul die in
+4. Er verschijnt een optie om alt-tekst toe te voegen, vul die in
 5. Sla de instellingen op
 
 ### Algemene tips

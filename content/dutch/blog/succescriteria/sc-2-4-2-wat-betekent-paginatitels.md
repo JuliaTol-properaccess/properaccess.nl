@@ -21,9 +21,9 @@ Dat is al irritant met een muis. Maar voor iemand die een schermlezer gebruikt, 
 
 De paginatitel zit in het `<title>`-element in de HTML-head. Je ziet hem op drie plekken:
 
-1. **In het browsertabblad** -- de tekst die je ziet als je met de muis over het tabblad beweegt
-2. **In zoekresultaten** -- Google toont de paginatitel als de klikbare kop in de zoekresultaten
-3. **In de schermlezer** -- het eerste wat wordt voorgelezen als een pagina opent
+1. **In het browsertabblad**: de tekst die je ziet als je met de muis over het tabblad beweegt
+2. **In zoekresultaten**: Google toont de paginatitel als de klikbare kop in de zoekresultaten
+3. **In de schermlezer**: het eerste wat wordt voorgelezen als een pagina opent
 
 ## Wat maakt een goede paginatitel?
 
@@ -78,20 +78,20 @@ Bij foutpagina's: maak duidelijk dat er een fout is:
 
 ## Veelgemaakte fouten
 
-- **Generieke titels** -- "Home", "Welkom", "Pagina" zonder verdere context
-- **Ontbrekende titels** -- geen `<title>`-element, waardoor de browser de URL toont
-- **Duplicate titels** -- meerdere pagina's met exact dezelfde titel
-- **Alleen de sitenaam** -- "Proper Access" op elke pagina, zonder pagina-specifieke informatie
-- **Te lange titels** -- hele zinnen die afgekapt worden in tabbladen
-- **Titels die niet kloppen** -- een titel "Contact" op een pagina die eigenlijk de FAQ toont
-- **Sitenaam eerst** -- waardoor bij meerdere open tabbladen alle tabs identiek lijken
+- **Generieke titels**: "Home", "Welkom", "Pagina" zonder verdere context
+- **Ontbrekende titels**: geen `<title>`-element, waardoor de browser de URL toont
+- **Duplicate titels**: meerdere pagina's met exact dezelfde titel
+- **Alleen de sitenaam**: "Proper Access" op elke pagina, zonder pagina-specifieke informatie
+- **Te lange titels**: hele zinnen die afgekapt worden in tabbladen
+- **Titels die niet kloppen**: een titel "Contact" op een pagina die eigenlijk de FAQ toont
+- **Sitenaam eerst**: waardoor bij meerdere open tabbladen alle tabs identiek lijken
 
 ## Hoe test je het?
 
-1. **Beweeg je muis over het browsertabblad** -- de volledige titel verschijnt als tooltip
-2. **Bekijk de broncode** -- zoek naar het `<title>`-element in de `<head>`
-3. **Open meerdere pagina's in tabbladen** -- kun je ze uit elkaar houden op basis van de titel?
-4. **Test met een schermlezer** -- wordt de titel voorgelezen bij het openen van de pagina?
+1. **Beweeg je muis over het browsertabblad**: de volledige titel verschijnt als tooltip
+2. **Bekijk de broncode**: zoek naar het `<title>`-element in de `<head>`
+3. **Open meerdere pagina's in tabbladen**: kun je ze uit elkaar houden op basis van de titel?
+4. **Test met een schermlezer**: wordt de titel voorgelezen bij het openen van de pagina?
 
 ## Wat kun je als webredacteur of manager doen?
 

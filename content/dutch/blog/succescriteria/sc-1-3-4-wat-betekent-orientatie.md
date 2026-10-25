@@ -13,7 +13,7 @@ aliases:
 
 Je opent een website op je telefoon. Je draait je scherm op z'n kant om een tabel beter te bekijken, en ineens springt alles terug naar staand. Of je ligt in bed met je telefoon op z'n kant, en de hele website is onbruikbaar omdat die alleen in portretmodus werkt.
 
-Voor de meeste mensen is dat irritant. Maar voor iemand die een telefoon of tablet in een vaste houder heeft gemonteerd -- bijvoorbeeld aan een rolstoel of een bedframe -- is het een serieus probleem. Die persoon kan het apparaat niet draaien. Als jouw website alleen in één oriëntatie werkt, is die voor hen ontoegankelijk.
+Voor de meeste mensen is dat irritant. Maar voor iemand die een telefoon of tablet in een vaste houder heeft gemonteerd, bijvoorbeeld aan een rolstoel of een bedframe, is het een serieus probleem. Die persoon kan het apparaat niet draaien. Als jouw website alleen in één oriëntatie werkt, is die voor hen ontoegankelijk.
 
 **WCAG succescriterium 1.3.4** (Orientation) eist dat je website in zowel staande als liggende oriëntatie werkt, tenzij een specifieke oriëntatie echt noodzakelijk is voor de inhoud.
 
@@ -37,7 +37,7 @@ Kort gezegd: dwing je gebruikers niet om hun apparaat te draaien.
 De meest voorkomende manier is via het `screen.orientation` API of de `orientation` media query in CSS:
 
 ```css
-/* Dit blokkeert landscape -- niet doen */
+/* Dit blokkeert landscape, niet doen */
 @media (orientation: landscape) {
   body {
     display: none;
@@ -60,9 +60,9 @@ WCAG kent een uitzondering voor situaties waar de oriëntatie **essentieel** is.
 - Een digitaal cheque-depositoformulier dat de cheque horizontaal moet scannen
 
 **Niet essentieel:**
-- "Het design ziet er beter uit in portret" -- dat is geen geldige reden
-- "De tabel past niet goed in staand formaat" -- maak de tabel responsive
-- "De video is horizontaal" -- de gebruiker kan de video in beide oriëntaties bekijken
+- "Het design ziet er beter uit in portret", dat is geen geldige reden
+- "De tabel past niet goed in staand formaat", maak de tabel responsive
+- "De video is horizontaal", de gebruiker kan de video in beide oriëntaties bekijken
 
 ## Veelgemaakte fouten
 
@@ -90,4 +90,4 @@ Test op meerdere pagina's, niet alleen de homepage. Formulieren, tabellen en int
 - **Controleer responsive breakpoints**: werken ze in beide richtingen?
 - **Test specifiek formulieren en tabellen**: die gaan het vaakst mis
 
-Een website die in beide oriëntaties werkt, is niet alleen toegankelijker maar ook flexibeler voor alle bezoekers. Je weet nooit hoe iemand z'n apparaat vasthoudt -- en dat hoeft ook niet jouw keuze te zijn.
+Een website die in beide oriëntaties werkt, is niet alleen toegankelijker maar ook flexibeler voor alle bezoekers. Je weet nooit hoe iemand z'n apparaat vasthoudt, en dat hoeft ook niet jouw keuze te zijn.

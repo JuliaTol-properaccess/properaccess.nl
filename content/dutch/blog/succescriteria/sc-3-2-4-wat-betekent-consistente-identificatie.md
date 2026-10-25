@@ -28,7 +28,7 @@ Mensen leren patronen herkennen. Als een zoekknop op pagina A "Zoek" heet, verwa
 - Knoppen of links met dezelfde functie moeten **hetzelfde klinken en eruitzien**
 - Iconen moeten consistent dezelfde betekenis hebben, ongeacht waar ze staan
 
-Dit gaat niet alleen over zichtbare tekst. Ook de **accessible name** (de naam die hulpsoftware voorleest) moet consistent zijn. Een knop kan er visueel hetzelfde uitzien maar een andere aria-label hebben op verschillende pagina's -- dat is ook een probleem.
+Dit gaat niet alleen over zichtbare tekst. Ook de **accessible name** (de naam die hulpsoftware voorleest) moet consistent zijn. Een knop kan er visueel hetzelfde uitzien maar een andere aria-label hebben op verschillende pagina's, dat is ook een probleem.
 
 ## Voorbeelden uit de praktijk
 

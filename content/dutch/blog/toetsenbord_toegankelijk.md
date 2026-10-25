@@ -39,7 +39,7 @@ Daarna kun je weer soepel navigeren met de Tab-toets, zoals het hoort.
 
 ## Waarom Tab-testen zo belangrijk is
 
-De Tab-toets is de basis van elke toegankelijkheidstest. Als je met Tab door een pagina navigeert, test je in feite het hele toetsenbordpad dat een bezoeker met een motorische beperking dagelijks aflegt. Alles wat niet met Tab bereikbaar is, is ook niet bereikbaar voor veel hulpsoftware -- schakelbesturing, spraakbesturing en in veel gevallen ook schermlezers.
+De Tab-toets is de basis van elke toegankelijkheidstest. Als je met Tab door een pagina navigeert, test je in feite het hele toetsenbordpad dat een bezoeker met een motorische beperking dagelijks aflegt. Alles wat niet met Tab bereikbaar is, is ook niet bereikbaar voor veel hulpsoftware, schakelbesturing, spraakbesturing en in veel gevallen ook schermlezers.
 
 Bij onze audits beginnen we altijd met het toetsenbord. Binnen een paar minuten weet je:
 
@@ -62,6 +62,6 @@ De Chrome-melding is niet het enige obstakel. Hier zijn een paar andere browser-
 Een paar tips om je testomgeving schoon te houden:
 
 - **Gebruik een apart browserprofiel** zonder extensies voor toegankelijkheidstests
-- **Zet browserupdates niet uit** -- nieuwe versies lossen soms toegankelijkheidsproblemen op, maar kunnen ook nieuwe introduceren
+- **Zet browserupdates niet uit**: nieuwe versies lossen soms toegankelijkheidsproblemen op, maar kunnen ook nieuwe introduceren
 - **Test in meerdere browsers.** Chrome, Firefox en Safari hebben elk hun eigen focusgedrag. Wat in Chrome werkt, werkt niet per se in Safari
-- **Houd een toetsenbordcheatsheet bij.** Tab, Shift+Tab, Enter, Spatiebalk, Escape, pijltoetsen -- dat zijn je basistoetsen. Maar elke component heeft eigen verwachtingen (zie de [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/))
+- **Houd een toetsenbordcheatsheet bij.** Tab, Shift+Tab, Enter, Spatiebalk, Escape, pijltoetsen, dat zijn je basistoetsen. Maar elke component heeft eigen verwachtingen (zie de [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/))

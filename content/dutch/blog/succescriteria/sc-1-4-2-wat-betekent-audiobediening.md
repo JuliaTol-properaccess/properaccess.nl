@@ -11,7 +11,7 @@ aliases:
   - /sc-1-4-2-wat-betekent-audiobediening/
 ---
 
-Je opent een website en ineens begint er muziek te spelen. Of een promotievideo start automatisch met geluid. Voor de meeste mensen is dat irritant. Voor iemand die een schermlezer gebruikt, is het een ramp. Die schermlezer praat namelijk ook -- en twee geluidsbronnen tegelijk maken het onmogelijk om de website te gebruiken.
+Je opent een website en ineens begint er muziek te spelen. Of een promotievideo start automatisch met geluid. Voor de meeste mensen is dat irritant. Voor iemand die een schermlezer gebruikt, is het een ramp. Die schermlezer praat namelijk ook, en twee geluidsbronnen tegelijk maken het onmogelijk om de website te gebruiken.
 
 **WCAG succescriterium 1.4.2** (Audio Control) vraagt dat gebruikers audio kunnen pauzeren, stoppen of het volume kunnen aanpassen als het automatisch afspeelt.
 
@@ -35,7 +35,7 @@ Dat bedieningsmechanisme moet bovendien met het toetsenbord bereikbaar zijn en v
 ## Wat is niet verplicht?
 
 - Geluiden **korter dan 3 seconden** vallen niet onder deze eis
-- Video's die pas starten na een klik van de gebruiker vallen hier niet onder -- de gebruiker heeft dan zelf gekozen om het geluid af te spelen
+- Video's die pas starten na een klik van de gebruiker vallen hier niet onder, de gebruiker heeft dan zelf gekozen om het geluid af te spelen
 - Decoratieve geluidseffecten zonder cruciale informatie
 
 ## Voorbeelden uit de praktijk

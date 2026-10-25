@@ -55,13 +55,13 @@ Als het bijvoorbeeld om een menu gaat, controleer dan minimaal:
 - Of het menu met de ESC-toets kan worden gesloten  
     
 
-Deze lijst is niet volledig -- de knop die het venster opent, heeft z’n eigen checklist.
+Deze lijst is niet volledig, de knop die het venster opent, heeft z’n eigen checklist.
 
 ## WCAG 1.4.13: Content on Hover or Focus
 
 Er is een specifiek WCAG-criterium dat hierover gaat: **SC 1.4.13 Content on Hover or Focus**. Dit criterium stelt drie eisen aan content die verschijnt bij hover of focus:
 
-**1. Wegklikbaar (Dismissible).** De gebruiker moet het verschenen element kunnen sluiten zonder de muis te verplaatsen of de focus te verliezen. De standaard manier: druk op **Escape**. Dit is belangrijk voor vergrotingssoftware-gebruikers -- als een tooltip hun leestekst bedekt, moeten ze die kunnen wegsluiten.
+**1. Wegklikbaar (Dismissible).** De gebruiker moet het verschenen element kunnen sluiten zonder de muis te verplaatsen of de focus te verliezen. De standaard manier: druk op **Escape**. Dit is belangrijk voor vergrotingssoftware-gebruikers, als een tooltip hun leestekst bedekt, moeten ze die kunnen wegsluiten.
 
 **2. Hoverbaar (Hoverable).** Als de content verschijnt door een muishover, moet de gebruiker de muis naar het verschenen element kunnen bewegen zonder dat het verdwijnt. Neem een tooltip: als je je muis ernaartoe beweegt om de tekst te lezen, mag de tooltip niet dichtklappen.
 

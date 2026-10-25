@@ -31,7 +31,7 @@ Uit een enquete onder meer dan 1.000 freelancers blijkt dat ongeveer een derde n
 
 Dit is misschien wel het grootste probleem. Niet onwil, maar onwetendheid. Ondernemers en freelancers weten niet wat er precies van ze wordt verwacht, en de officiële bronnen helpen niet mee. WCAG-richtlijnen lezen als een technisch handboek. EU-documenten zijn geschreven voor juristen. En de meeste samenvattingen online zijn oppervlakkig of onvolledig.
 
-**Wat je moet weten in vijf zinnen:** De EAA verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De technische standaard is WCAG 2.1 niveau AA -- zo'n 50 criteria. De wet geldt voor bedrijven met 10 of meer medewerkers, en voor kleinere bedrijven zodra hun jaaromzet én hun balanstotaal boven de 2 miljoen euro liggen. Micro-ondernemingen zijn uitgezonderd voor diensten, maar niet voor producten. Alles wat je na 28 juni 2025 lanceert of substantieel wijzigt, moet direct voldoen.
+**Wat je moet weten in vijf zinnen:** De EAA verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De technische standaard is WCAG 2.1 niveau AA, zo'n 50 criteria. De wet geldt voor bedrijven met 10 of meer medewerkers, en voor kleinere bedrijven zodra hun jaaromzet én hun balanstotaal boven de 2 miljoen euro liggen. Micro-ondernemingen zijn uitgezonderd voor diensten, maar niet voor producten. Alles wat je na 28 juni 2025 lanceert of substantieel wijzigt, moet direct voldoen.
 
 ## "Ik ben een micro-onderneming, dus ik hoef niks te doen"
 
@@ -41,7 +41,7 @@ Maar er zitten twee valkuilen aan die opluchting.
 
 **Valkuil 1: de inhaalslag.** Als je nu niet meebeweegt met toegankelijkheid, loop je straks achter. En hoe langer je wacht, hoe duurder de aanpassingen worden. Een website die vanaf het begin toegankelijk is gebouwd, kost nauwelijks meer dan een ontoegankelijke. Een bestaande site achteraf volledig toegankelijk maken is een ander verhaal.
 
-**Valkuil 2: je sluit klanten uit.** Of je nu verplicht bent of niet -- als je website niet werkt voor mensen met een beperking, mis je omzet. Niet een beetje: in Nederland gaat het om zo'n 4,5 miljoen mensen met een chronische aandoening of beperking. Tel daar hun directe omgeving bij op, en je hebt het over een enorme groep potentiele klanten.
+**Valkuil 2: je sluit klanten uit.** Of je nu verplicht bent of niet, als je website niet werkt voor mensen met een beperking, mis je omzet. Niet een beetje: in Nederland gaat het om zo'n 4,5 miljoen mensen met een chronische aandoening of beperking. Tel daar hun directe omgeving bij op, en je hebt het over een enorme groep potentiele klanten.
 
 ## Webshop-eigenaren: "Dit voelt als een complete herbouw"
 
@@ -51,7 +51,7 @@ Een webshop-eigenaar beschrijft: *"Alles toetsenbordtoegankelijk en screenreader
 
 Ondernemers vragen zich bovendien af wat precies onder de wet valt. Alleen de productpagina's en checkout? Of ook het klantportaal, het abonnementsbeheer, de retourmodule?
 
-**Het antwoord:** alles waarmee je klant in aanraking komt. Maar -- en dit is belangrijk -- je hoeft niet alles tegelijk te doen.
+**Het antwoord:** alles waarmee je klant in aanraking komt. Maar, en dit is belangrijk, je hoeft niet alles tegelijk te doen.
 
 Begin met de pagina's die het meest worden bezocht: je homepage, productoverzicht, productpagina en checkout. Los daar de grootste barrières op (toetsenbordbediening, formulierlabels, koppenstructuur, contrast) en werk van daaruit verder. Die pragmatische aanpak is niet alleen realistischer, het is ook hoe toezichthouders ernaar kijken: ze willen zien dat je actief werkt aan verbetering.
 
@@ -71,7 +71,7 @@ Freelancers en webbureaus zitten in een lastige positie. Zij bouwen de websites,
 
 In communities zie je ontwikkelaars die zich afvragen: *"Hoeveel moet ik me hier zorgen over maken?"* En die hopen dat platforms als WordPress, Shopify en Wix de toegankelijkheidsbasis "inbouwen", zodat zij minder technische kennis nodig hebben.
 
-Die hoop is deels terecht. De grote platforms worden steeds beter. Maar een platform kan niet alles oplossen. Custom thema's, plugins, content -- die verantwoordelijkheid ligt bij jou als bouwer. En bij je opdrachtgever als content-eigenaar.
+Die hoop is deels terecht. De grote platforms worden steeds beter. Maar een platform kan niet alles oplossen. Custom thema's, plugins, content, die verantwoordelijkheid ligt bij jou als bouwer. En bij je opdrachtgever als content-eigenaar.
 
 **Ons advies aan bureaus en freelancers:** begin met de basis. Leer semantische HTML schrijven, begrijp hoe een screenreader door een pagina navigeert, en test elke oplevering minimaal met toetsenbord. Dat dekt al een groot deel van de WCAG-criteria. En als je klanten adviseert over toegankelijkheid, wees dan duidelijk: een overlay of plugin lost het niet op. Een audit door een specialist wel.
 
@@ -81,7 +81,7 @@ Er leeft flinke angst voor handhaving. Ondernemers vrezen hoge boetes en "cease 
 
 De realiteit is genuanceerder. De EAA wordt in Nederland gehandhaafd door verschillende toezichthouders, afhankelijk van de sector. De precieze invulling is nog in ontwikkeling. Maar het is onwaarschijnlijk dat een toezichthouder direct met boetes komt als je kunt laten zien dat je actief aan verbetering werkt.
 
-Dat gezegd hebbende: wacht niet tot een toezichthouder langskomt. Als je nu een audit laat uitvoeren en een verbeterplan maakt, heb je straks iets om te laten zien. Dat is niet alleen juridisch slim -- het is ook het juiste om te doen.
+Dat gezegd hebbende: wacht niet tot een toezichthouder langskomt. Als je nu een audit laat uitvoeren en een verbeterplan maakt, heb je straks iets om te laten zien. Dat is niet alleen juridisch slim, het is ook het juiste om te doen.
 
 ## Wat je nu kunt doen: de pragmatische aanpak
 
@@ -90,7 +90,7 @@ De meest constructieve stemmen in het EAA-debat pleiten allemaal voor hetzelfde:
 Dat is precies hoe wij het aanpakken bij onze klanten. Vijf dingen die je morgen kunt oppakken:
 
 1. **Toetsenbordbediening.** Tab door je hele website. Kun je overal bij komen? Zie je waar je bent (focus-indicator)? Kun je menu's openen en sluiten?
-2. **Koppenstructuur.** Gebruik koppen (h1, h2, h3) niet voor de opmaak maar voor de structuur. Een screenreader navigeert via koppen -- als die ontbreken of door elkaar staan, is je site een doolhof.
+2. **Koppenstructuur.** Gebruik koppen (h1, h2, h3) niet voor de opmaak maar voor de structuur. Een screenreader navigeert via koppen, als die ontbreken of door elkaar staan, is je site een doolhof.
 3. **Alternatieve teksten.** Elke afbeelding die informatie overbrengt, heeft een alt-tekst nodig. Decoratieve afbeeldingen krijgen een lege alt (alt="").
 4. **Kleurcontrast.** Tekst moet voldoende contrast hebben tegenover de achtergrond. Minimaal 4,5:1 voor gewone tekst, 3:1 voor grote tekst.
 5. **Formulierlabels.** Elk invoerveld heeft een zichtbaar label nodig dat technisch is gekoppeld aan het veld. Placeholder-tekst is geen label.

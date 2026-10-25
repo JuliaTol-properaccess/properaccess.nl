@@ -14,7 +14,7 @@ aliases:
 
 Stel je voor dat je een formulier invult met je muis, maar de cursor is onzichtbaar. Je klikt ergens en hoopt dat je het juiste veld raakt. Dat klinkt absurd, maar precies dat is wat er gebeurt als een website geen zichtbare focus-indicator heeft voor toetsenbordgebruikers.
 
-De focus-indicator -- meestal een rand of highlight rond het actieve element -- is voor toetsenbordgebruikers wat de muiscursor is voor muisgebruikers. Zonder kun je niet zien waar je bent.
+De focus-indicator, meestal een rand of highlight rond het actieve element, is voor toetsenbordgebruikers wat de muiscursor is voor muisgebruikers. Zonder kun je niet zien waar je bent.
 
 **WCAG succescriterium 2.4.7** (Focus Visible) vraagt dat elk interactief element een zichtbare focus-indicator heeft wanneer het toetsenbordfocus krijgt.
 
@@ -89,11 +89,11 @@ Een focus-indicator moet **duidelijk zichtbaar** zijn, op alle achtergrondkleure
 
 ## Veelgemaakte fouten
 
-- **`outline: none` zonder vervanging** -- de nummer-één fout. De focus is weg, en niemand merkt het totdat een toetsenbordgebruiker de site test
-- **Te subtiele focusstijl** -- een 1px lichtgrijze lijn op een witte achtergrond is technisch aanwezig maar praktisch onzichtbaar
-- **Focus alleen op sommige elementen** -- knoppen hebben een focusstijl, maar links of formuliervelden niet
-- **Focusstijl die niet werkt op donkere achtergronden** -- een donkerblauwe outline op een donkere achtergrond is onzichtbaar
-- **Hover-stijl maar geen focusstijl** -- een knop verandert van kleur bij :hover maar niet bij :focus
+- **`outline: none` zonder vervanging**: de nummer-één fout. De focus is weg, en niemand merkt het totdat een toetsenbordgebruiker de site test
+- **Te subtiele focusstijl**: een 1px lichtgrijze lijn op een witte achtergrond is technisch aanwezig maar praktisch onzichtbaar
+- **Focus alleen op sommige elementen**: knoppen hebben een focusstijl, maar links of formuliervelden niet
+- **Focusstijl die niet werkt op donkere achtergronden**: een donkerblauwe outline op een donkere achtergrond is onzichtbaar
+- **Hover-stijl maar geen focusstijl**: een knop verandert van kleur bij :hover maar niet bij :focus
 
 ## De relatie met SC 2.4.11, 2.4.12 en 2.4.13
 

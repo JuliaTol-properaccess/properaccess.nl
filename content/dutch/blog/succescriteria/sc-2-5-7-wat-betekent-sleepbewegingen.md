@@ -22,11 +22,11 @@ Dit criterium is toegevoegd in WCAG 2.2 en is niveau AA. Het erkent dat drag-and
 
 ## Wie heeft hier last van?
 
-- **Mensen met tremoren of beperkte motoriek** -- een sleepbeweging vereist het ingedrukt houden van een knop terwijl je precies beweegt, wat zeer moeilijk kan zijn
-- **Gebruikers van spraakbesturing** -- spraakcommando's kunnen klikken simuleren, maar geen sleepbewegingen
-- **Gebruikers van schakelaars** -- een enkelknops-interface kan geen sleepbeweging uitvoeren
-- **Mensen met een touchscreen en beperkte vingervaardigheid** -- precies slepen op een klein scherm is lastig
-- **Toetsenbordgebruikers** -- het toetsenbord heeft geen native sleepfunctionaliteit
+- **Mensen met tremoren of beperkte motoriek**: een sleepbeweging vereist het ingedrukt houden van een knop terwijl je precies beweegt, wat zeer moeilijk kan zijn
+- **Gebruikers van spraakbesturing**: spraakcommando's kunnen klikken simuleren, maar geen sleepbewegingen
+- **Gebruikers van schakelaars**: een enkelknops-interface kan geen sleepbeweging uitvoeren
+- **Mensen met een touchscreen en beperkte vingervaardigheid**: precies slepen op een klein scherm is lastig
+- **Toetsenbordgebruikers**: het toetsenbord heeft geen native sleepfunctionaliteit
 
 ## Wat wordt er verwacht?
 
@@ -66,7 +66,7 @@ Voor elke functie die slepen vereist, moet er een alternatief zijn dat werkt met
 
 ## Wanneer geldt de uitzondering?
 
-Het criterium kent een uitzondering: als de sleepbeweging **essentieel** is. Dat komt in de praktijk zelden voor. Een tekenapp waar je vrij moet tekenen is essentieel -- de sleepbeweging is de functie zelf. Maar een sorteerbare lijst of een kanban-bord? Daar is slepen een interactiemethode, niet de functie zelf.
+Het criterium kent een uitzondering: als de sleepbeweging **essentieel** is. Dat komt in de praktijk zelden voor. Een tekenapp waar je vrij moet tekenen is essentieel, de sleepbeweging is de functie zelf. Maar een sorteerbare lijst of een kanban-bord? Daar is slepen een interactiemethode, niet de functie zelf.
 
 ## Veelgemaakte fouten
 
@@ -79,7 +79,7 @@ Het criterium kent een uitzondering: als de sleepbeweging **essentieel** is. Dat
 ## Hoe test je het?
 
 1. Identificeer alle elementen op je website die gesleept kunnen worden
-2. Probeer dezelfde actie uit te voeren **zonder te slepen** -- alleen met klikken
+2. Probeer dezelfde actie uit te voeren **zonder te slepen**: alleen met klikken
 3. Test ook met het toetsenbord: kun je dezelfde functie bereiken?
 4. Controleer of het alternatief duidelijk zichtbaar en vindbaar is
 
@@ -90,4 +90,4 @@ Het criterium kent een uitzondering: als de sleepbeweging **essentieel** is. Dat
 - **Vraag je webbouwer**: zijn er knoppen, dropdowns of invoervelden als alternatief voor elke sleepfunctie?
 - **Test met het toetsenbord**: zijn alle sleepfuncties ook via Tab en Enter bereikbaar?
 
-Een goed alternatief voor slepen maakt je interface niet alleen toegankelijker, maar vaak ook sneller en preciezer in gebruik. Niet iedereen wil slepen -- zelfs als ze het kunnen.
+Een goed alternatief voor slepen maakt je interface niet alleen toegankelijker, maar vaak ook sneller en preciezer in gebruik. Niet iedereen wil slepen, zelfs als ze het kunnen.

@@ -73,13 +73,13 @@ Geef de gebruiker de mogelijkheid om een actie ongedaan te maken na verzending.
 1. Stap 1: Producten in winkelwagen
 2. Stap 2: Adresgegevens invullen
 3. Stap 3: Betaalmethode kiezen
-4. Stap 4: **Besteloverzicht** -- samenvatting van alles, met "Wijzig"-links bij elke sectie
+4. Stap 4: **Besteloverzicht**: samenvatting van alles, met "Wijzig"-links bij elke sectie
 5. Stap 5: "Bestelling plaatsen"-knop
 
 **Fout:**
 1. Producten in winkelwagen
 2. Alles in een formulier
-3. "Betaal nu" -- bestelling is geplaatst zonder overzicht
+3. "Betaal nu", bestelling is geplaatst zonder overzicht
 
 ### Accountverwijdering
 
@@ -112,4 +112,4 @@ SC 3.3.4 (niveau AA) geldt voor juridische, financiele en data-transacties. SC 3
 - **Controleer formulieren met persoonlijke gegevens**: is er een bevestigingsstap?
 - **Vraag je webbouwer**: is er bij elke onomkeerbare actie een bevestigingsdialoog?
 
-Foutpreventie is niet alleen een toegankelijkheidseis -- het is gewoon goed webdesign. Niemand wil per ongeluk een verkeerde bestelling plaatsen of z'n account kwijtraken.
+Foutpreventie is niet alleen een toegankelijkheidseis, het is gewoon goed webdesign. Niemand wil per ongeluk een verkeerde bestelling plaatsen of z'n account kwijtraken.

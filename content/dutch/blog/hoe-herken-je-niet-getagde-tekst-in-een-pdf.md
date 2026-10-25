@@ -16,11 +16,11 @@ aliases:
   - "/hoe-herken-je-niet-getagde-tekst-in-een-pdf/"
 ---
 
-PDF's zijn een van de meest voorkomende struikelblokken bij digitale toegankelijkheid. Een PDF kan er perfect uitzien terwijl een schermlezer er niets mee kan. De oorzaak is vaak **niet-getagde tekst** -- tekst die visueel gewoon op de pagina staat, maar technisch niet is opgenomen in de tagstructuur van het document.
+PDF's zijn een van de meest voorkomende struikelblokken bij digitale toegankelijkheid. Een PDF kan er perfect uitzien terwijl een schermlezer er niets mee kan. De oorzaak is vaak **niet-getagde tekst**: tekst die visueel gewoon op de pagina staat, maar technisch niet is opgenomen in de tagstructuur van het document.
 
 ## Wat zijn tags in een PDF?
 
-Een getagde PDF bevat een onzichtbare structuurlaag die beschrijft wat elk element op de pagina is: een kop, een alinea, een tabel, een afbeelding. Zonder die tags is een PDF voor een schermlezer een platte lap tekst zonder structuur -- of erger: sommige stukken tekst worden helemaal overgeslagen.
+Een getagde PDF bevat een onzichtbare structuurlaag die beschrijft wat elk element op de pagina is: een kop, een alinea, een tabel, een afbeelding. Zonder die tags is een PDF voor een schermlezer een platte lap tekst zonder structuur, of erger: sommige stukken tekst worden helemaal overgeslagen.
 
 **WCAG succescriterium 1.3.1** (Info en relaties) eist dat de structuur die visueel zichtbaar is, ook technisch beschikbaar is. Als een ziende bezoeker een kop, een opsomming of een tabel ziet, maar een schermlezer dat niet kan herkennen, voldoet het document niet.
 
@@ -55,5 +55,5 @@ Heb je al een PDF zonder tags? Dan kun je in **Adobe Acrobat Pro** de tagstructu
 
 Daarom bouwen we [pdf-toegankelijk.nl](https://pdf-toegankelijk.nl). Je uploadt je document en je krijgt hetzelfde bestand terug met een tagstructuur erin, plus de titel en de taal. Aan de pagina's verandert niets: elke pagina gaat van voor en na de reparatie als afbeelding langs elkaar, en verschilt er iets, dan staat in het verslag welke pagina het is. Wat een tool niet kan beoordelen, zoals de leesorde en de alt-teksten, staat er als openstaand punt in. De tool is van ons en nu in besloten test.
 
-Niet-getagde tekst is een van de meest voorkomende problemen in PDF's. Het is visueel onzichtbaar -- je ziet het pas als je het test. Gebruik PAC om het te controleren en zorg dat je brondocumenten goed zijn opgemaakt.
+Niet-getagde tekst is een van de meest voorkomende problemen in PDF's. Het is visueel onzichtbaar, je ziet het pas als je het test. Gebruik PAC om het te controleren en zorg dat je brondocumenten goed zijn opgemaakt.
 

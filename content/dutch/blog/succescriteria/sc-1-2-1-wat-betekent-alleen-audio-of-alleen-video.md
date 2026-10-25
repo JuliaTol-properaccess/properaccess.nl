@@ -23,7 +23,7 @@ Dit criterium dekt twee verschillende scenario's:
 
 ### Alleen-audio (bijvoorbeeld een podcast)
 
-Als je een audiobestand publiceert -- een podcast, een interview, een audioboodschap -- moet je er een **teksttranscript** bij aanbieden. Dat transcript bevat:
+Als je een audiobestand publiceert, een podcast, een interview, een audioboodschap, moet je er een **teksttranscript** bij aanbieden. Dat transcript bevat:
 
 - Alle gesproken tekst, woordelijk uitgeschreven
 - Sprekeridentificatie als er meerdere sprekers zijn
@@ -34,32 +34,32 @@ Als je een audiobestand publiceert -- een podcast, een interview, een audioboods
 
 ### Alleen-video (zonder geluid)
 
-Als je een video publiceert die geen gesproken tekst bevat -- een screencast zonder voice-over, een instructievideo met alleen beeld, een timelapse -- moet je een **tekstbeschrijving** bieden van wat er in beeld gebeurt.
+Als je een video publiceert die geen gesproken tekst bevat, een screencast zonder voice-over, een instructievideo met alleen beeld, een timelapse, moet je een **tekstbeschrijving** bieden van wat er in beeld gebeurt.
 
 **Voorbeeld:** Een instructievideo die laat zien hoe je een formulier invult, zonder gesproken uitleg. De tekstbeschrijving beschrijft elke stap: "De cursor klikt op het naamveld. Er wordt 'Jan de Vries' getypt. Vervolgens wordt het e-mailveld geselecteerd..."
 
 ## Wie heeft hier baat bij?
 
-- **Dove en slechthorende mensen** -- het transcript is hun enige manier om de audio-inhoud te begrijpen
-- **Blinde en slechtziende mensen** -- de tekstbeschrijving vertelt wat er in een stille video te zien is
-- **Mensen in een stille omgeving** -- vergadering, bibliotheek, 's nachts
-- **Zoekmachines** -- een transcript maakt je audio- en video-inhoud vindbaar in Google
-- **Niet-moedertaalsprekers** -- geschreven tekst is vaak makkelijker te volgen dan gesproken taal
+- **Dove en slechthorende mensen**: het transcript is hun enige manier om de audio-inhoud te begrijpen
+- **Blinde en slechtziende mensen**: de tekstbeschrijving vertelt wat er in een stille video te zien is
+- **Mensen in een stille omgeving**: vergadering, bibliotheek, 's nachts
+- **Zoekmachines**: een transcript maakt je audio- en video-inhoud vindbaar in Google
+- **Niet-moedertaalsprekers**: geschreven tekst is vaak makkelijker te volgen dan gesproken taal
 
 ## Wat valt hier niet onder?
 
 - **Video's met geluid** (beeld + audio samen) vallen onder andere criteria (SC 1.2.2 voor ondertiteling, SC 1.2.3/1.2.5 voor audiodescriptie)
 - **Live audio en video** hebben hun eigen regels
-- **Decoratieve media** zonder inhoudelijke waarde -- een achtergrondvideo op je homepage die puur sfeer creëert
+- **Decoratieve media** zonder inhoudelijke waarde, een achtergrondvideo op je homepage die puur sfeer creëert
 
 ## Hoe maak je een goed transcript?
 
 Een transcript is meer dan alleen het uittypen van woorden. Een goed transcript:
 
-1. **Identificeert sprekers** -- "Julia: Welkom bij deze podcast" in plaats van alleen "Welkom bij deze podcast"
-2. **Beschrijft relevante geluiden** -- [telefoon gaat over], niet alleen de gesproken tekst
-3. **Behoudt de structuur** -- gebruik kopjes als het transcript lang is, zodat lezers kunnen navigeren
-4. **Is te vinden** -- zet het transcript op dezelfde pagina als de media, of link er direct naartoe
+1. **Identificeert sprekers**: "Julia: Welkom bij deze podcast" in plaats van alleen "Welkom bij deze podcast"
+2. **Beschrijft relevante geluiden**: [telefoon gaat over], niet alleen de gesproken tekst
+3. **Behoudt de structuur**: gebruik kopjes als het transcript lang is, zodat lezers kunnen navigeren
+4. **Is te vinden**: zet het transcript op dezelfde pagina als de media, of link er direct naartoe
 
 ### Voorbeeld van een goed transcript
 
@@ -79,9 +79,9 @@ groot e-commerceplatform.
 
 ## Veelgemaakte fouten
 
-- Podcasts zonder transcript -- veruit de meest voorkomende fout
+- Podcasts zonder transcript, veruit de meest voorkomende fout
 - Transcripten die alleen de gesproken tekst bevatten, zonder geluidseffecten of sprekeridentificatie
-- Transcripten die automatisch zijn gegenereerd en niet gecorrigeerd -- vol tikfouten en verkeerd herkende woorden
+- Transcripten die automatisch zijn gegenereerd en niet gecorrigeerd, vol tikfouten en verkeerd herkende woorden
 - Stille instructievideo's zonder tekstbeschrijving van wat er in beeld gebeurt
 - Het transcript op een andere pagina plaatsen zonder duidelijke link
 
@@ -92,4 +92,4 @@ groot e-commerceplatform.
 - **Maak transcripten vindbaar**: zet ze op dezelfde pagina of link er prominent naartoe
 - **Neem transcriptie op in je workflow**: maak het onderdeel van het publicatieproces, niet een nagedachte
 
-Een transcript maakt je audio-inhoud toegankelijk voor iedereen -- en als bonus wordt je podcast of interview ook vindbaar in zoekmachines.
+Een transcript maakt je audio-inhoud toegankelijk voor iedereen, en als bonus wordt je podcast of interview ook vindbaar in zoekmachines.

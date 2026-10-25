@@ -12,7 +12,7 @@ layout: "academy"
 
 Landmarks zijn herkenbare regio's op een pagina: de header, de navigatie, de hoofdcontent, de footer. Visueel zie je ze aan de lay-out. Maar voor schermlezergebruikers bestaan ze alleen als de HTML ze correct markeert.
 
-Met landmarks kan een schermlezergebruiker in een oogopslag de structuur van je pagina zien en direct naar de gewenste regio springen. Zonder landmarks moet die gebruiker alles van boven naar beneden doorlopen -- inclusief het volledige menu, de zoekbalk en eventuele banners -- om bij de hoofdcontent te komen.
+Met landmarks kan een schermlezergebruiker in een oogopslag de structuur van je pagina zien en direct naar de gewenste regio springen. Zonder landmarks moet die gebruiker alles van boven naar beneden doorlopen, inclusief het volledige menu, de zoekbalk en eventuele banners, om bij de hoofdcontent te komen.
 
 ## Waarom het ertoe doet
 
@@ -22,9 +22,9 @@ Een schermlezergebruiker die op elke pagina eerst 40 links in het menu moet door
 
 Er zijn drie technieken die samen het probleem oplossen:
 
-1. **Landmarks** -- verdelen de pagina in navigeerbare regio's
-2. **Skip links** -- bieden een snelkoppeling naar de hoofdcontent
-3. **Koppenstructuur** -- maakt navigatie via koppen mogelijk
+1. **Landmarks**: verdelen de pagina in navigeerbare regio's
+2. **Skip links**: bieden een snelkoppeling naar de hoofdcontent
+3. **Koppenstructuur**: maakt navigatie via koppen mogelijk
 
 In dit hoofdstuk richten we ons op landmarks en skip links.
 
@@ -121,7 +121,7 @@ Een schermlezer zegt "Hoofdnavigatie, navigatie" en "Voettekstnavigatie, navigat
 
 ## ARIA-landmark-rollen
 
-Soms kun je de HTML5-elementen niet gebruiken -- bijvoorbeeld in een oudere codebase of bij frameworks die de markup beperken. Dan kun je ARIA-rollen als fallback gebruiken:
+Soms kun je de HTML5-elementen niet gebruiken, bijvoorbeeld in een oudere codebase of bij frameworks die de markup beperken. Dan kun je ARIA-rollen als fallback gebruiken:
 
 | ARIA-rol | Equivalent HTML-element |
 |---|---|
@@ -163,7 +163,7 @@ Het HTML5-element is voldoende. Geen ARIA nodig.
 <div class="academy-tip">
 <p class="academy-tip__title">De eerste regel van ARIA</p>
 
-Gebruik geen ARIA-rol als er een HTML-element is dat dezelfde semantiek biedt. `<nav>` is altijd beter dan `<div role="navigation">`. ARIA voegt niets toe aan het gedrag -- het voegt alleen metadata toe aan de accessibility tree.
+Gebruik geen ARIA-rol als er een HTML-element is dat dezelfde semantiek biedt. `<nav>` is altijd beter dan `<div role="navigation">`. ARIA voegt niets toe aan het gedrag, het voegt alleen metadata toe aan de accessibility tree.
 
 </div>
 
@@ -223,9 +223,9 @@ Een skip link helpt toetsenbordgebruikers. Landmarks helpen schermlezergebruiker
 
 Schermlezergebruikers navigeren op meerdere manieren door een pagina:
 
-- **Landmarklijst** -- alle landmarks op een rij, direct beschikbaar via een sneltoets
-- **Koppenlijst** -- alle koppen op een rij
-- **Tab-toets** -- springt alleen naar interactieve elementen (links, knoppen, formuliervelden)
+- **Landmarklijst**: alle landmarks op een rij, direct beschikbaar via een sneltoets
+- **Koppenlijst**: alle koppen op een rij
+- **Tab-toets**: springt alleen naar interactieve elementen (links, knoppen, formuliervelden)
 
 Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is die lijst leeg en verliest de gebruiker een belangrijk navigatiemiddel.
 
@@ -260,7 +260,7 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="d" />
-<span>Er is geen probleem -- het menu staat toch op een andere plek op de pagina</span>
+<span>Er is geen probleem, het menu staat toch op een andere plek op de pagina</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -278,7 +278,7 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
-<span>Zoveel als nodig -- een per sectie</span>
+<span>Zoveel als nodig, een per sectie</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="b" />
@@ -290,7 +290,7 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="d" />
-<span>Geen -- je gebruikt <code>role="main"</code> op een <code>&lt;div&gt;</code></span>
+<span>Geen, je gebruikt <code>role="main"</code> op een <code>&lt;div&gt;</code></span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -350,7 +350,7 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="d" />
-<span>Nooit -- <code>&lt;header&gt;</code> is geen landmark</span>
+<span>Nooit, <code>&lt;header&gt;</code> is geen landmark</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
@@ -368,11 +368,11 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="a" />
-<span>Prima -- ARIA-rollen zijn betrouwbaarder dan HTML-elementen</span>
+<span>Prima, ARIA-rollen zijn betrouwbaarder dan HTML-elementen</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="b" />
-<span>Vervang het door <code>&lt;nav&gt;</code> -- gebruik het HTML-element als dat beschikbaar is</span>
+<span>Vervang het door <code>&lt;nav&gt;</code>, gebruik het HTML-element als dat beschikbaar is</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="c" />
@@ -380,7 +380,7 @@ Landmarks zorgen ervoor dat de landmarklijst bruikbaar is. Zonder landmarks is d
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="d" />
-<span>Verwijder de rol -- <code>&lt;div&gt;</code> hoort geen rol te hebben</span>
+<span>Verwijder de rol, <code>&lt;div&gt;</code> hoort geen rol te hebben</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>

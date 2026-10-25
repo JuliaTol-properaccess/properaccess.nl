@@ -104,7 +104,7 @@ Dit script vindt elke div, span of ander niet-interactief element met een onclic
 
 ## Wat kan Playwright testen?
 
-Playwright draait een echte Chromium-browser. Alle JavaScript wordt uitgevoerd, dus je ziet de pagina zoals een bezoeker die ziet -- niet de broncode. Je kunt klikken, wachten tot een pop-up verschijnt, en dan de nieuwe HTML inspecteren. Pop-ups, uitklapmenu's, tabbladen, content die pas laadt bij scrollen, iframes (ingesloten pagina's). Het werkt allemaal.
+Playwright draait een echte Chromium-browser. Alle JavaScript wordt uitgevoerd, dus je ziet de pagina zoals een bezoeker die ziet, niet de broncode. Je kunt klikken, wachten tot een pop-up verschijnt, en dan de nieuwe HTML inspecteren. Pop-ups, uitklapmenu's, tabbladen, content die pas laadt bij scrollen, iframes (ingesloten pagina's). Het werkt allemaal.
 
 {{< /case-section >}}
 
@@ -128,7 +128,7 @@ Je kunt wel zoeken naar signalen dat een element klikbaar bedoeld is:
 - Heeft het een class als "btn", "button", "clickable"?
 - Is het een `<div>` of `<span>` met `tabindex="0"` maar zonder `role="button"`?
 
-Maar dat zijn heuristieken -- vuistregels die vaak kloppen, maar niet altijd. Je krijgt vals positieven (elementen die er klikbaar uitzien maar het niet zijn) en vals negatieven (klikbare elementen zonder visuele hints).
+Maar dat zijn heuristieken, vuistregels die vaak kloppen, maar niet altijd. Je krijgt vals positieven (elementen die er klikbaar uitzien maar het niet zijn) en vals negatieven (klikbare elementen zonder visuele hints).
 
 Andere beperkingen:
 

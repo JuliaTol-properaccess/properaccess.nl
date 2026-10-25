@@ -17,7 +17,7 @@ Een carrousel die automatisch door slides heen scrollt. Een nieuwsticker die lan
 
 ## Waarom is dit zo belangrijk?
 
-Beweging trekt automatisch de aandacht. Dat is precies waarom marketeers het gebruiken -- het valt op. Maar diezelfde eigenschap maakt het problematisch voor mensen die hun aandacht niet kunnen sturen:
+Beweging trekt automatisch de aandacht. Dat is precies waarom marketeers het gebruiken, het valt op. Maar diezelfde eigenschap maakt het problematisch voor mensen die hun aandacht niet kunnen sturen:
 
 - **Mensen met ADHD** kunnen niet anders dan naar de beweging kijken, waardoor ze de rest van de pagina niet kunnen lezen
 - **Mensen met vestibulaire aandoeningen** kunnen duizelig of misselijk worden van bepaalde bewegingen
@@ -31,17 +31,17 @@ Het criterium maakt onderscheid tussen twee soorten beweging:
 ### 1. Automatisch bewegende content (carrousels, tickers, animaties)
 
 Als iets automatisch beweegt, scrollt of knippert en dat langer dan **5 seconden** duurt, moet de gebruiker het kunnen:
-- **Pauzeren** -- tijdelijk stopzetten en weer hervatten
-- **Stoppen** -- definitief uitschakelen
-- **Verbergen** -- uit het zicht halen
+- **Pauzeren**: tijdelijk stopzetten en weer hervatten
+- **Stoppen**: definitief uitschakelen
+- **Verbergen**: uit het zicht halen
 
 Dit geldt voor: carrousels, slideshows, nieuwstickers, scrollende tekst, achtergrondanimaties, en geanimeerde banners.
 
 ### 2. Automatisch wisselende content (auto-updating)
 
-Als content automatisch ververst wordt -- denk aan een live scorebord, een aandelenticker, of een chat die automatisch nieuwe berichten toont -- moet de gebruiker dat ook kunnen pauzeren of stoppen.
+Als content automatisch ververst wordt, denk aan een live scorebord, een aandelenticker, of een chat die automatisch nieuwe berichten toont, moet de gebruiker dat ook kunnen pauzeren of stoppen.
 
-**Uitzondering:** als het pauzeren of stoppen de functie fundamenteel kapot zou maken. Een live videostream is live -- daar kun je de tijd niet stoppen. Maar een carrousel is geen live content.
+**Uitzondering:** als het pauzeren of stoppen de functie fundamenteel kapot zou maken. Een live videostream is live, daar kun je de tijd niet stoppen. Maar een carrousel is geen live content.
 
 ## Waar gaat het in de praktijk mis?
 

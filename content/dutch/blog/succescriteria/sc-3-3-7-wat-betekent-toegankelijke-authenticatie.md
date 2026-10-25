@@ -23,10 +23,10 @@ Voor de meeste mensen is dat vervelend. Voor iemand met dyslexie, een visuele be
 
 Een cognitieve functietest is een taak die je vraagt om iets te onthouden, te herkennen, te puzzelen of te berekenen. In de context van authenticatie zijn dat:
 
-- **Wachtwoorden onthouden** -- uit je hoofd, zonder wachtwoordmanager
-- **CAPTCHA's oplossen** -- vervormde tekst overtypen, objecten herkennen in foto's. Alleen die eerste is een afkeur op niveau AA; zie de uitzonderingen verderop
-- **Puzzels oplossen** -- schuifpuzzels, patroonherkenning
-- **Vragen beantwoorden** -- "Wat is de naam van je eerste huisdier?"
+- **Wachtwoorden onthouden**: uit je hoofd, zonder wachtwoordmanager
+- **CAPTCHA's oplossen**: vervormde tekst overtypen, objecten herkennen in foto's. Alleen die eerste is een afkeur op niveau AA; zie de uitzonderingen verderop
+- **Puzzels oplossen**: schuifpuzzels, patroonherkenning
+- **Vragen beantwoorden**: "Wat is de naam van je eerste huisdier?"
 
 Het punt is niet dat deze methoden per definitie verboden zijn. Het punt is dat er een alternatief moet zijn dat geen beroep doet op geheugen, herkenning of puzzelvaardigheden.
 
@@ -36,8 +36,8 @@ De kern van het criterium: als je een cognitieve functietest gebruikt voor authe
 
 - **Kopieer-plakken toestaan** in wachtwoordvelden, zodat wachtwoordmanagers werken
 - **Een alternatieve authenticatiemethode** zoals een magische link via e-mail, een sms-code, of biometrische authenticatie (vingerafdruk, gezichtsherkenning)
-- **Passkeys** -- de moderne vervanging van wachtwoorden, ondersteund door alle grote browsers
-- **OAuth/SSO** -- inloggen via een bestaand account (Google, Apple, enzovoort)
+- **Passkeys**: de moderne vervanging van wachtwoorden, ondersteund door alle grote browsers
+- **OAuth/SSO**: inloggen via een bestaand account (Google, Apple, enzovoort)
 
 ## Verwar 3.3.8 niet met 3.3.7
 
@@ -63,9 +63,9 @@ Wat wél afkeurt op AA: een CAPTCHA met vervormde tekst die je moet overtypen. D
 
 ## Veelgemaakte fouten
 
-- **Kopieer-plakken blokkeren** in wachtwoordvelden -- dit voorkomt dat wachtwoordmanagers werken en is de meest voorkomende fout
+- **Kopieer-plakken blokkeren** in wachtwoordvelden, dit voorkomt dat wachtwoordmanagers werken en is de meest voorkomende fout
 - **Een CAPTCHA met vervormde tekst** als enige verificatie. Overtypen wat je nauwelijks kunt lezen valt onder geen enkele uitzondering en is dus een afkeur op AA. Een plaatjes-CAPTCHA als reCAPTCHA v2 ("klik alle fietsen aan") mag op AA wel, maar houdt nog steeds bezoekers buiten: bied er iets naast aan
-- **Beveiligingsvragen** als enige herstelmethode -- "Wat is je moeders meisjesnaam?" vereist geheugen
+- **Beveiligingsvragen** als enige herstelmethode, "Wat is je moeders meisjesnaam?" vereist geheugen
 - **Tijdgebonden verificatiecodes** die te kort geldig zijn voor mensen die moeite hebben met snel typen
 - **Tweefactorauthenticatie** die alleen via sms werkt, zonder alternatief voor mensen die moeite hebben met het overschrijven van codes
 
@@ -82,8 +82,8 @@ Wat wél afkeurt op AA: een CAPTCHA met vervormde tekst die je moet overtypen. D
 
 ## Wat kun je als webredacteur of manager doen?
 
-- **Test of wachtwoordvelden plakken toestaan** -- open je wachtwoordmanager en probeer het
-- **Controleer je CAPTCHA** -- is er een alternatief voor mensen die de visuele puzzel niet kunnen oplossen?
+- **Test of wachtwoordvelden plakken toestaan**: open je wachtwoordmanager en probeer het
+- **Controleer je CAPTCHA**: is er een alternatief voor mensen die de visuele puzzel niet kunnen oplossen?
 - **Vraag je webbouwer**: ondersteunen we passkeys of andere moderne authenticatiemethoden?
 - **Test met een schermlezer**: kan iemand het volledige inlogproces doorlopen zonder visuele puzzels?
 

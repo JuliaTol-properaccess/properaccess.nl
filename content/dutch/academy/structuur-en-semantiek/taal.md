@@ -10,7 +10,7 @@ layout: "academy"
 
 ## Waarom taal ertoe doet
 
-Een schermlezer moet weten in welke taal een pagina is geschreven. Op basis van het `lang`-attribuut laadt de schermlezer de juiste uitspraakregels, het juiste stemgeluid en de juiste intonatie. Zonder dat attribuut raadt de schermlezer de taal -- en die gok is lang niet altijd goed.
+Een schermlezer moet weten in welke taal een pagina is geschreven. Op basis van het `lang`-attribuut laadt de schermlezer de juiste uitspraakregels, het juiste stemgeluid en de juiste intonatie. Zonder dat attribuut raadt de schermlezer de taal, en die gok is lang niet altijd goed.
 
 Stel je voor: een Nederlandstalige pagina zonder `lang="nl"`. De schermlezer staat ingesteld op Engels en leest alle Nederlandse tekst voor met Engelse uitspraak. Het resultaat is onverstaanbaar.
 
@@ -101,9 +101,9 @@ De schermlezer schakelt over naar Engelse uitspraak voor het citaat.
 
 Niet elk vreemd woord heeft een `lang`-attribuut nodig. SC 3.1.2 kent uitzonderingen:
 
-- **Ingeburgerde leenwoorden** -- woorden als "website", "computer", "team" of "design" die in het Nederlands zijn opgenomen
-- **Technische termen** -- vakjargon dat in de oorspronkelijke taal wordt gebruikt (zoals "framework" of "responsive")
-- **Eigennamen** -- merknamen, persoonsnamen, plaatsnamen
+- **Ingeburgerde leenwoorden**: woorden als "website", "computer", "team" of "design" die in het Nederlands zijn opgenomen
+- **Technische termen**: vakjargon dat in de oorspronkelijke taal wordt gebruikt (zoals "framework" of "responsive")
+- **Eigennamen**: merknamen, persoonsnamen, plaatsnamen
 
 De vuistregel: als het woord in een Nederlands woordenboek staat, hoef je geen `lang`-attribuut toe te voegen.
 
@@ -116,10 +116,10 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 
 ## Veelgemaakte fouten
 
-1. **Geen `lang`-attribuut** -- het meest voorkomende probleem. Makkelijk te voorkomen.
-2. **Verkeerde taalcode** -- `lang="en"` op een Nederlandstalige pagina. Komt voor bij templates die niet zijn aangepast.
-3. **Taalcode op de verkeerde plek** -- `lang` op de `<body>` in plaats van op `<html>`. Het moet op `<html>`.
-4. **Ongeldige taalcode** -- `lang="dutch"` of `lang="ned"` zijn geen geldige BCP 47 codes.
+1. **Geen `lang`-attribuut**: het meest voorkomende probleem. Makkelijk te voorkomen.
+2. **Verkeerde taalcode**: `lang="en"` op een Nederlandstalige pagina. Komt voor bij templates die niet zijn aangepast.
+3. **Taalcode op de verkeerde plek**: `lang` op de `<body>` in plaats van op `<html>`. Het moet op `<html>`.
+4. **Ongeldige taalcode**: `lang="dutch"` of `lang="ned"` zijn geen geldige BCP 47 codes.
 
 ## WCAG-succescriteria
 
@@ -130,8 +130,8 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 
 ## Verder lezen
 
-- [W3C: Understanding SC 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html) -- de officiële toelichting op het taalcriterium
-- [BCP 47 taalcodes](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) -- het register met alle geldige taalcodes
+- [W3C: Understanding SC 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html), de officiële toelichting op het taalcriterium
+- [BCP 47 taalcodes](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry), het register met alle geldige taalcodes
 
 ---
 
@@ -174,7 +174,7 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="a" />
-<span>Dat hoeft niet -- de schermlezer herkent de taal automatisch</span>
+<span>Dat hoeft niet, de schermlezer herkent de taal automatisch</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q2" value="b" />
@@ -194,7 +194,7 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>Goed. Je markeert de taalwisseling met <code>lang="de"</code> op het element dat de Duitse tekst bevat. Het <code>lang</code>-attribuut op <code>&lt;html&gt;</code> blijft <code>"nl"</code> voor de rest van de pagina.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>Voeg <code>lang="de"</code> toe aan het element dat de Duitse alinea bevat (bijvoorbeeld een <code>&lt;p&gt;</code> of <code>&lt;blockquote&gt;</code>). Verander niet de taal op <code>&lt;html&gt;</code> -- die blijft de standaardtaal van de pagina.</p>
+<p>Voeg <code>lang="de"</code> toe aan het element dat de Duitse alinea bevat (bijvoorbeeld een <code>&lt;p&gt;</code> of <code>&lt;blockquote&gt;</code>). Verander niet de taal op <code>&lt;html&gt;</code>, die blijft de standaardtaal van de pagina.</p>
 </div>
 </div>
 </fieldset>
@@ -272,7 +272,7 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="c" />
-<span>Er is geen effect -- schermlezers negeren het lang-attribuut</span>
+<span>Er is geen effect, schermlezers negeren het lang-attribuut</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="d" />
@@ -284,7 +284,7 @@ Markeer een taalwisseling als een schermlezer de tekst anders zou moeten uitspre
 <p>Precies. De schermlezer laadt Engelse uitspraakregels en probeert de Nederlandse tekst op z'n Engels voor te lezen. Het resultaat is onverstaanbaar.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>Een schermlezer gebruikt het <code>lang</code>-attribuut om de juiste uitspraakregels te laden. Bij <code>lang="en"</code> op een Nederlandstalige pagina wordt alle tekst met Engelse uitspraak voorgelezen -- onverstaanbaar voor de luisteraar.</p>
+<p>Een schermlezer gebruikt het <code>lang</code>-attribuut om de juiste uitspraakregels te laden. Bij <code>lang="en"</code> op een Nederlandstalige pagina wordt alle tekst met Engelse uitspraak voorgelezen, onverstaanbaar voor de luisteraar.</p>
 </div>
 </div>
 </fieldset>

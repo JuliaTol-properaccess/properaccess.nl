@@ -10,7 +10,7 @@ layout: "academy"
 
 ## Waarom valide HTML ertoe doet
 
-HTML is de taal die hulpsoftware leest. Als die taal fouten bevat -- ontbrekende tags, dubbele ID's, verkeerd geneste elementen -- dan moet de browser gokken wat je bedoelt. Browsers zijn daar inmiddels goed in, maar hulpsoftware niet altijd.
+HTML is de taal die hulpsoftware leest. Als die taal fouten bevat, ontbrekende tags, dubbele ID's, verkeerd geneste elementen, dan moet de browser gokken wat je bedoelt. Browsers zijn daar inmiddels goed in, maar hulpsoftware niet altijd.
 
 WCAG succescriterium 4.1.1 (Parsing) stelde oorspronkelijk vier eisen aan HTML:
 
@@ -19,16 +19,16 @@ WCAG succescriterium 4.1.1 (Parsing) stelde oorspronkelijk vier eisen aan HTML:
 3. Elementen bevatten geen dubbele attributen
 4. ID's zijn uniek binnen de pagina
 
-### SC 4.1.1 is afgeschaft -- maar de principes niet
+### SC 4.1.1 is afgeschaft, maar de principes niet
 
 In WCAG 2.2 is SC 4.1.1 **afgeschaft** (deprecated). De reden: moderne browsers parsen HTML inmiddels zo consistent dat de meeste fouten geen problemen meer veroorzaken. Een ontbrekende `</p>`-tag? De browser fixt dat automatisch.
 
-Maar dat betekent niet dat valide HTML onbelangrijk is. De problemen die er **echt** toe doen -- dubbele ID's, verkeerde nesting van interactieve elementen -- vallen nu onder andere succescriteria zoals 1.3.1 en 4.1.2. De technische eis is weg, maar de impact op toegankelijkheid is gebleven.
+Maar dat betekent niet dat valide HTML onbelangrijk is. De problemen die er **echt** toe doen, dubbele ID's, verkeerde nesting van interactieve elementen, vallen nu onder andere succescriteria zoals 1.3.1 en 4.1.2. De technische eis is weg, maar de impact op toegankelijkheid is gebleven.
 
 <div class="academy-tip">
 <p class="academy-tip__title">WCAG 2.1 vs. 2.2</p>
 
-Als je auditeert tegen WCAG 2.1 (bijvoorbeeld voor het BDTO), dan is SC 4.1.1 nog van toepassing. Bij WCAG 2.2 is het afgeschaft, maar de fouten die het criterium beschreef zijn nog steeds relevant -- ze vallen alleen onder andere criteria.
+Als je auditeert tegen WCAG 2.1 (bijvoorbeeld voor het BDTO), dan is SC 4.1.1 nog van toepassing. Bij WCAG 2.2 is het afgeschaft, maar de fouten die het criterium beschreef zijn nog steeds relevant, ze vallen alleen onder andere criteria.
 
 </div>
 
@@ -36,7 +36,7 @@ Als je auditeert tegen WCAG 2.1 (bijvoorbeeld voor het BDTO), dan is SC 4.1.1 no
 
 Van alle validatiefouten zijn dubbele ID's het meest impactvol voor toegankelijkheid. Een ID moet uniek zijn binnen een pagina. Als twee elementen hetzelfde ID hebben, breekt er van alles:
 
-- Een `<label for="email">` koppelt aan het **eerste** element met `id="email"` -- het tweede formulierveld krijgt geen label
+- Een `<label for="email">` koppelt aan het **eerste** element met `id="email"`, het tweede formulierveld krijgt geen label
 - Een skiplink naar `#main-content` springt altijd naar het eerste element met dat ID
 - `aria-labelledby` en `aria-describedby` verwijzen naar het verkeerde element
 - JavaScript met `getElementById()` vindt alleen het eerste element
@@ -155,7 +155,7 @@ Ontbrekende begin- of eindtags zijn meestal cosmetische fouten die browsers goed
 </ul>
 ```
 
-Werkt in de praktijk -- browsers sluiten de `<li>` impliciet. Maar het is slordig en kan verwarrend zijn bij complexere structuren.
+Werkt in de praktijk, browsers sluiten de `<li>` impliciet. Maar het is slordig en kan verwarrend zijn bij complexere structuren.
 
 </div>
 <div class="academy-example__good">
@@ -182,11 +182,11 @@ Niet elke fout die de validator meldt is een toegankelijkheidsprobleem. Focus op
 
 | Fouttype | Impact op toegankelijkheid |
 |----------|---------------------------|
-| **Dubbele ID's** | Hoog -- breekt labels, skiplinks en ARIA-verwijzingen |
-| **Interactieve elementen in interactieve elementen** | Hoog -- onvoorspelbaar gedrag in hulpsoftware |
-| **Ontbrekende verplichte attributen** | Gemiddeld -- afhankelijk van het element |
-| **Ontbrekende eindtags** | Laag -- browsers herstellen dit meestal correct |
-| **Verouderde attributen** | Laag -- geen directe impact op toegankelijkheid |
+| **Dubbele ID's** | Hoog, breekt labels, skiplinks en ARIA-verwijzingen |
+| **Interactieve elementen in interactieve elementen** | Hoog, onvoorspelbaar gedrag in hulpsoftware |
+| **Ontbrekende verplichte attributen** | Gemiddeld, afhankelijk van het element |
+| **Ontbrekende eindtags** | Laag, browsers herstellen dit meestal correct |
+| **Verouderde attributen** | Laag, geen directe impact op toegankelijkheid |
 
 <div class="academy-tip">
 <p class="academy-tip__title">Pragmatisch valideren</p>
@@ -214,11 +214,11 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="a" />
-<span>Niets -- beide labels koppelen aan hun eigen veld</span>
+<span>Niets, beide labels koppelen aan hun eigen veld</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="b" />
-<span>Beide labels koppelen aan het eerste veld -- het tweede veld heeft effectief geen label</span>
+<span>Beide labels koppelen aan het eerste veld, het tweede veld heeft effectief geen label</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q1" value="c" />
@@ -264,7 +264,7 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <p>Klopt. Browsers zijn zo goed geworden in het herstellen van HTML-fouten dat de meeste parsing-problemen geen impact meer hebben. De fouten die er wel toe doen vallen nu onder andere criteria (1.3.1 en 4.1.2).</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>SC 4.1.1 is afgeschaft omdat moderne browsers HTML-fouten consistent herstellen. De fouten die er nog toe doen -- zoals dubbele ID's en verkeerde nesting -- vallen onder andere criteria.</p>
+<p>SC 4.1.1 is afgeschaft omdat moderne browsers HTML-fouten consistent herstellen. De fouten die er nog toe doen, zoals dubbele ID's en verkeerde nesting, vallen onder andere criteria.</p>
 </div>
 </div>
 </fieldset>
@@ -274,7 +274,7 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="a" />
-<span>Een link in een knop is ongeldig -- interactieve elementen mogen niet in elkaar genest worden</span>
+<span>Een link in een knop is ongeldig, interactieve elementen mogen niet in elkaar genest worden</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="b" />
@@ -286,7 +286,7 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q3" value="d" />
-<span>Niets -- dit is een gangbare manier om een knop te linken</span>
+<span>Niets, dit is een gangbare manier om een knop te linken</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="a" hidden>
@@ -338,7 +338,7 @@ Je hoeft niet elke validatiefout op te lossen. Richt je op fouten die hulpsoftwa
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="b" />
-<span>Dubbele ID's -- labels en ARIA-verwijzingen koppelen aan de verkeerde velden</span>
+<span>Dubbele ID's, labels en ARIA-verwijzingen koppelen aan de verkeerde velden</span>
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q5" value="c" />
