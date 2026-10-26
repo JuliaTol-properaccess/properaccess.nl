@@ -1,5 +1,7 @@
 ---
 title: "De PDF-checker: wat hij controleert en wat niet"
+meta_title: "PDF-checker: controleer je PDF op toegankelijkheid | Proper Access"
+translationKey: "pdf-checker"
 description: "De PDF-checker staat op pdf-toegankelijk.nl: gratis controleren, zonder account. Lees wat de controle wel en niet zegt, en wanneer je een auditor nodig hebt."
 layout: "pdf-tool-aankondiging"
 weight: 10
@@ -14,7 +16,8 @@ zonder account. Repareren zit in dezelfde tool en draait nog in besloten test. J
 onze eigen server in Duitsland en gaat daar weer af zodra de controle klaar is.
 
 Wil je weten of jouw PDF toegankelijk moet zijn, of wil je hem door een auditor laten nakijken?
-[Neem contact met ons op](/contact/).
+Lees wat je krijgt bij een [volledige toegankelijkheidsaudit](/toegankelijkheidsaudit/) of
+[neem contact met ons op](/contact/).
 
 ## Wat de controle je laat zien
 

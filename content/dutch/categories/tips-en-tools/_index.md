@@ -16,3 +16,6 @@ aliases:
 Van kleurcontrast en koppenstructuur tot handige browsertools: hier verzamelen we praktische hulpmiddelen voor digitale toegankelijkheid.
 
 Gebruik deze tips om zelf eerste controles te doen en verbeteringen door te voeren. Een tool geeft je een aanwijzing, geen volledig toegankelijkheidsonderzoek; combineer automatische checks daarom met handmatig testen.
+
+Begin met de [WCAG Radar](/tools/wcag-radar/) voor controles in je browser. Wil je weten hoe
+je website als geheel ervoor staat, lees dan over een [volledige toegankelijkheidsaudit](/toegankelijkheidsaudit/).

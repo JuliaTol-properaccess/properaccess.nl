@@ -1,5 +1,6 @@
 ---
 title: "Can AI test your website for accessibility? I'm going to find out"
+meta_title: "AI accessibility testing: can AI test your website? | Proper Access"
 date: 2026-04-03
 slug: "can-ai-test-website-for-accessibility"
 categories:
@@ -146,6 +147,6 @@ No AI hype. No doom scenarios. Just honest tests with real code.
 
 ---
 
-_This is part 0 of the series "AI and Accessibility Testing." At Proper Access, we're investigating what AI can actually detect, and where human expertise makes the difference. Curious how accessible your website or app is? Have it tested by a human for the best results. [Get in touch](/en/contact/)._
+_This is part 0 of the series "AI and Accessibility Testing." At Proper Access, we're investigating what AI can actually detect, and where human expertise makes the difference. Curious how accessible your website or app is? Read what you get from a [full accessibility audit](/en/accessibility-audit/), or [get in touch](/en/contact/)._
 
 {{< /case-section >}}

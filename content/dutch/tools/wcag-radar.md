@@ -1,6 +1,7 @@
 ---
 title: "WCAG Radar: contrast, koppen en alt-teksten checken in je browser"
 meta_title: "Kleurcontrast, koppen en alt-teksten checken in je browser | Proper Access"
+translationKey: "wcag-radar"
 description: "Check kleurcontrast, koppen, alt-teksten, linkteksten en tekstafstand op elke pagina in je browser. 29 van de 50 checks zijn gratis, zonder account."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens"

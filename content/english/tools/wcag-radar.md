@@ -1,6 +1,7 @@
 ---
 title: "WCAG Radar"
 meta_title: "WCAG Radar: 29 free accessibility checks | Proper Access"
+translationKey: "wcag-radar"
 description: "Bookmarklet and browser extension for Chrome and Firefox. Checks alt text, headings, contrast, focus and tab order live on any page. 29 of 50 checks are free."
 layout: "bookmarklet-install"
 bookmarklet_key: "lens-en"

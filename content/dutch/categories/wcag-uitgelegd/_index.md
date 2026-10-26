@@ -9,3 +9,6 @@ indexable: true
 Op deze pagina vind je onze uitleg van WCAG 2.2, stap voor stap. Per succescriterium lees je in gewone taal wat de regel betekent, waar het in de praktijk misgaat en hoe je het zelf kunt controleren.
 
 De artikelen zijn geschreven voor developers, designers en webredacties die digitale toegankelijkheid concreet willen verbeteren — zonder te verdwalen in normteksten.
+
+Wil je weten hoe je website er in de praktijk voor staat? Lees wat je krijgt bij een
+[toegankelijkheidsaudit](/toegankelijkheidsaudit/).

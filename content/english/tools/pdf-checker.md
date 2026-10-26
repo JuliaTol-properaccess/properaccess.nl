@@ -1,5 +1,7 @@
 ---
 title: "The PDF checker: what it checks and what it does not"
+meta_title: "PDF checker: check your PDF for accessibility | Proper Access"
+translationKey: "pdf-checker"
 description: "Our PDF checker lives at pdf-toegankelijk.nl: free, no account needed. Read what the check tells you, what it does not, and when you need an auditor."
 layout: "pdf-tool-aankondiging"
 weight: 10
@@ -15,7 +17,8 @@ in closed testing. Your document goes to our own server in Germany and leaves it
 is done.
 
 Want to know whether your PDF has to be accessible in the Netherlands, or have an auditor look at
-it? [Get in touch](/en/contact/).
+it? Read what you get from a [full accessibility audit](/en/accessibility-audit/), or
+[get in touch](/en/contact/).
 
 ## What the check shows you
 

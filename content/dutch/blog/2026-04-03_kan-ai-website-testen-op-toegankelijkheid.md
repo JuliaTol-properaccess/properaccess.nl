@@ -152,6 +152,6 @@ Geen AI-hype. Geen doemscenario's. Gewoon echte tests met echte code.
 
 ---
 
-_Dit is deel 0 van de serie "AI en Toegankelijkheidstesten". Bij Proper Access onderzoeken we wat AI echt kan detecteren, en waar menselijke expertise het verschil maakt. Nieuwsgierig hoe toegankelijk jouw website of app is? Laat het door een mens testen voor het beste resultaat. [Neem contact met ons op](/contact/)._
+_Dit is deel 0 van de serie "AI en Toegankelijkheidstesten". Bij Proper Access onderzoeken we wat AI echt kan detecteren, en waar menselijke expertise het verschil maakt. Nieuwsgierig hoe toegankelijk jouw website of app is? Lees wat je krijgt bij een [volledige toegankelijkheidsaudit](/toegankelijkheidsaudit/) of [neem contact met ons op](/contact/)._
 
 {{< /case-section >}}
