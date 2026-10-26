@@ -45,7 +45,7 @@ Heb je een webshop? Dan testen we ook het bestelproces. We doen ons uiterste bes
 {{< offerte-section title="5. Jouw verplichtingen" >}}
 
 - Je zorgt dat de informatie die je ons geeft klopt en volledig is. Hoe beter wij geinformeerd zijn, hoe beter het onderzoek.
-- Je volgt onze adviezen binnen redelijke grenzen op om je digitale toegankelijkheid te verbeteren. De hercontrole van een onderzoek kan maximaal zes maanden na oplevering worden ingepland. Daarna is een nieuw onderzoek nodig.
+- Je volgt onze adviezen binnen redelijke grenzen op om je digitale toegankelijkheid te verbeteren. De hercontrole van een onderzoek kan maximaal drie maanden na oplevering worden ingepland. Daarna is een nieuw onderzoek nodig.
 - Je respecteert de intellectuele eigendomsrechten op de materialen die wij verstrekken. Oftewel: niet doorverkopen aan je buurman.
 
 {{< /offerte-section >}}
