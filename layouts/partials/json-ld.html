@@ -446,16 +446,22 @@
      open antwoordblokken (answer-blocks.html). Beide komen in hetzelfde
      mainEntity; een tweede FAQPage-blok mag er niet bijkomen.
 
-     acceptedAnswer.text is het ruwe antwoordveld. Dat moet gelijk zijn aan
-     de zichtbare tekst, dus answer_blocks renderen dat veld als platte
-     alinea. jsonify escaped aanhalingstekens, zodat een antwoord met
-     aanhalingstekens het script niet breekt. */}}
+     acceptedAnswer.text is platte tekst en moet woord voor woord gelijk zijn
+     aan wat de bezoeker leest. Het accordeon rendert faqs via RenderString,
+     dus een markdown-link wordt daar een <a> en de linktekst is wat je ziet.
+     In de JSON-LD gaat diezelfde markdown door markdownify, plainify en
+     htmlUnescape, zodat [strippenkaart](/strippenkaart/) "strippenkaart"
+     wordt en de zichtbare link blijft staan. answer_blocks zijn al platte
+     tekst in de HTML (geen markdownify), dus die blijven het ruwe veld:
+     markdownify zou de apostrof in pagina's tot een ander teken omzetten
+     en de twee teksten uit elkaar trekken. jsonify escaped aanhalingstekens. */}}
 {{- $faqEntities := slice -}}
 {{- range .Params.faqs -}}
+  {{- $text := .answer | markdownify | plainify | htmlUnescape | strings.TrimRight "\n" -}}
   {{- $faqEntities = $faqEntities | append (dict
     "@type" "Question"
     "name" .question
-    "acceptedAnswer" (dict "@type" "Answer" "text" .answer)
+    "acceptedAnswer" (dict "@type" "Answer" "text" $text)
   ) -}}
 {{- end -}}
 {{- range .Params.answer_blocks -}}
