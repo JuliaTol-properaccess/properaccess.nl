@@ -42,7 +42,37 @@
 </section>
 {{ end }}
 
-{{ partial "tldr-capsule.html" . }}
+{{/* In het kort: de alinea met id="in-short" is de spreekbare samenvatting.
+     De zin over opdrachtgevers blijft eronder, als gewone alinea zonder id,
+     zodat die niet in de speakable-selector valt. Geen Markdown: de tekst
+     moet gelijk zijn aan het veld. */}}
+{{ with .Params.tldr }}
+<section class="hp-container">
+  <aside class="article-tldr" aria-labelledby="tldr-heading">
+    <h2 id="tldr-heading" class="article-tldr__title">{{ i18n "tldr_capsule_title" | default "In het kort" }}</h2>
+    <div class="article-tldr__body">
+      <p id="in-short">{{ . }}</p>
+      {{ with $.Params.opdrachtgevers }}<p style="margin-top: 0.75rem">{{ . }}</p>{{ end }}
+    </div>
+  </aside>
+</section>
+{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ .Permalink }}#webpage",
+  "url": "{{ .Permalink }}",
+  "name": "{{ .Title }}",
+  "inLanguage": "nl-NL",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["#in-short", "#faq"]
+  }
+}
+</script>
 
 <!-- ─── TRUST BAR ─── -->
 {{ partial "trust-bar.html" . }}
@@ -408,7 +438,7 @@
 
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+<section class="hp-faq" id="faq">
   <div class="hp-container">
     <h2 class="hp-heading-lg hp-faq__title">Vragen die we vaak krijgen</h2>
     <div class="hp-faq__container faq-container">
@@ -424,6 +454,16 @@
   </div>
 </section>
 {{ end }}
+
+
+<!-- ─── CTA onder de FAQ, boven "Krijg duidelijkheid" ─── -->
+<section class="hp-container py-16">
+  <p class="mb-6">Staat je verklaring op C, D of E, of verloopt je rapport binnen een jaar?</p>
+  <a class="hp-btn hp-btn--primary" href="https://www.properaccess.nl/offerte-wcag-onderzoek/?utm_source=properaccess.nl&amp;utm_medium=internal&amp;utm_campaign=overheid-faq">
+    Vraag een offerte aan voor een onderzoek volgens WCAG-EM
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+  </a>
+</section>
 
 
 <!-- ─── CTA ─── -->

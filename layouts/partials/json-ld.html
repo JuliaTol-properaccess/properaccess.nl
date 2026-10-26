@@ -561,12 +561,21 @@
   "mainEntity": [
     {{- range $i, $faq := . }}
     {{- if $i }},{{ end }}
+    {{- /* Op /digitale-toegankelijkheid-overheid/ is acceptedAnswer.text platte tekst,
+         gelijk aan wat de bezoeker in het accordeon leest. markdownify | plainify |
+         htmlUnescape haalt een markdown-link eruit; andere pagina's houden de ruwe
+         string, zodat deze wijziging hun JSON-LD niet herschrijft. #317 vervangt
+         dit hele blok. */ -}}
+    {{- $antwoord := $faq.answer -}}
+    {{- if eq $.RelPermalink "/digitale-toegankelijkheid-overheid/" -}}
+      {{- $antwoord = $faq.answer | markdownify | plainify | htmlUnescape | strings.TrimSpace -}}
+    {{- end }}
     {
       "@type": "Question",
       "name": "{{ $faq.question }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "{{ $faq.answer }}"
+        "text": "{{ $antwoord }}"
       }
     }
     {{- end }}

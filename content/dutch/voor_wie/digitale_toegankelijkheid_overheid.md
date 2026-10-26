@@ -3,24 +3,18 @@ title: "Toegankelijkheidsonderzoek voor overheidsorganisaties"
 weight: 1
 meta_title: "Toegankelijkheidsonderzoek voor overheidsorganisaties | Proper Access"
 date: 2025-04-02
-lastmod: 2026-09-17
+lastmod: 2026-10-26
 slug: "digitale-toegankelijkheid-overheid"
 url: "/digitale-toegankelijkheid-overheid/"
 aliases:
   - /digitale_toegankelijkheid_overheid/
 layout: "single"
 description: "Onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties, volgens WCAG-EM. Bruikbaar als onderbouwing van je verklaring in het Register."
-tldr: |
-  Proper Access doet onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties in
-  Nederland: gemeenten, provincies, waterschappen, ministeries, uitvoeringsorganisaties,
-  zelfstandige bestuursorganen en andere publiekrechtelijke instellingen. We onderzoeken
-  websites, apps, intranetten, aanvraagformulieren en portalen achter een inlog volgens
-  WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde
-  evaluatiemethode: WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B.
-  Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
-  geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de
-  provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en
-  's-Hertogenbosch. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken.
+# Zichtbare alinea onder de kop "In het kort" (id="in-short"). Geen Markdown:
+# de tekst moet gelijk zijn aan wat de bezoeker leest.
+tldr: "Overheidsorganisaties moeten onder het Besluit digitale toegankelijkheid overheid (BDTO) voor elke website en app een toegankelijkheidsverklaring publiceren in het register. Voor status A of B is een onderzoek nodig volgens WCAG-EM, op alle 50 eisen van WCAG 2.1 niveau AA, maximaal 3 jaar oud. Proper Access voert dat onderzoek onafhankelijk uit, vanaf circa € 2.175, in 3 tot 5 weken."
+# Zin uit het oude blok, onder de alinea, zonder id. Niet in #in-short.
+opdrachtgevers: "Opdrachtgevers zijn onder meer de provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
 keywords:
   - toegankelijkheidsonderzoek overheid
   - toegankelijkheidsonderzoek overheidsorganisatie
@@ -72,6 +66,20 @@ faqs:
     answer: "Je krijgt een presentatie van het rapport aan je team. Vragen daarna, ook weken of maanden later, stel je met een [strippenkaart](/strippenkaart/): één strip is één vraag over één onderwerp. We voeren hercontroles uit op punten die zijn aangepast. En als je doorlopende ondersteuning wilt: we bieden ook abonnementen aan voor organisaties die structureel willen borgen."
   - question: "Wie doet het werk?"
     answer: "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra je je rapport hebt, heb je rechtstreeks toegang tot de auditor voor inhoudelijke vragen. Die vragen lopen via een strippenkaart. In de fase daarvoor is een relatiebeheerder je aanspreekpunt."
+  - question: "Wat is het BDTO en welke norm geldt?"
+    answer: "Het Besluit digitale toegankelijkheid overheid (BDTO) geldt sinds 1 juli 2018 en voert de Europese richtlijn (EU) 2016/2102 uit. Overheidsinstanties maken hun websites en apps toegankelijk door de Europese norm EN 301 549 toe te passen. In de huidige versie V3.2.1 betekent dat WCAG 2.1 op niveau A en AA: samen 50 toegankelijkheidseisen."
+  - question: "Wat staat er in een toegankelijkheidsverklaring en waar publiceer je die?"
+    answer: "Je maakt de verklaring via de invulassistent op toegankelijkheidsverklaring.nl, volgens het verplichte model. Daarin staan onder meer de webadressen, links naar onderzoeksrapporten, de gevonden problemen met een oplosdatum, contact- en klachtenpagina en wie tekent. Na publicatie staat de verklaring in het register en plaats je het toegankelijkheidslabel op je site."
+  - question: "Wat betekenen de statussen A tot en met E in het register?"
+    answer: "Status A: een volledig onderzoek en alle 50 eisen gehaald. Status B: een volledig onderzoek, nog niet alle eisen gehaald; je voldoet aan de wet als je maatregelen beschrijft en elk jaar verbetert. Status C: onderzoek of opheffing gepland binnen 6 maanden, daarna wordt het D. Status D: geen onderzoek gepland. Status E: geen verklaring."
+  - question: "Hoe vaak moet je opnieuw laten onderzoeken of je verklaring bijwerken?"
+    answer: "Een onderzoek voor status A of B is 3 jaar geldig. Daarna zakt je verklaring automatisch naar status D, tot je een nieuw rapport toevoegt. Daarnaast werk je elke verklaring met status A of B minimaal één keer per jaar bij, en moet er vooruitgang zichtbaar zijn, bijvoorbeeld opgeloste toegankelijkheidsproblemen."
+  - question: "Wie controleert de toegankelijkheidsverklaring van een overheidsorganisatie?"
+    answer: "Het team van DigiToegankelijk controleert sinds 2020 elke gepubliceerde toegankelijkheidsverklaring met een vaste checklist en geeft verbetertips. Elke verklaring krijgt de annotatie voorlopig, onderbouwing toereikend of onderbouwing ontoereikend. Het ministerie van Binnenlandse Zaken en Koninkrijksrelaties is verantwoordelijk voor monitoring en werkt aan toezicht en handhaving. Ondersteuning vraag je aan via digitoegankelijk@logius.nl."
+  - question: "Aan welke eisen moet een toegankelijkheidsonderzoek voldoen voor status A of B?"
+    answer: "Het rapport is maximaal 3 jaar oud, volgt de methode WCAG-EM en toetst alle 50 eisen. Het dekt de hele site of app: techniek, content, pdf-bestanden en ook de delen achter een inlog. Je mag deelonderzoeken combineren, bijvoorbeeld techniek en content, maar alleen een techniek- of contentonderzoek is niet genoeg."
+  - question: "Wat doet Proper Access als je verklaring op status C of D staat?"
+    answer: "We starten met de reikwijdte: welke webadressen in je verklaring staan en welke onderzoeken nodig zijn. Daarna toetsen we volgens WCAG-EM, leveren we het rapport in de vorm die het register vraagt en helpen we in de Mijn-omgeving van DigiToegankelijk. Na je fixes volgt een hercontrole. Een onderzoek start vanaf circa € 2.175."
   - question: "Voor welke overheidsorganisaties doen jullie toegankelijkheidsonderzoek?"
     answer: "Voor elke organisatie die onder het Besluit digitale toegankelijkheid overheid (BDTO) valt. Dat zijn er veel meer dan de gemeenten alleen: ook provincies, waterschappen, ministeries, uitvoeringsorganisaties, zelfstandige bestuursorganen, veiligheidsregio's, omgevingsdiensten en gemeenschappelijke regelingen. Of een instelling eronder valt, hangt af van hoe ze is opgericht en gefinancierd, en niet van de vraag of ze een publieke taak uitvoert. Twijfel je, dan kijken we in de kennismaking met je mee."
   - question: "Welk bureau kan een toegankelijkheidsonderzoek uitvoeren voor een overheidswebsite?"
