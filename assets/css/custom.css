@@ -4296,6 +4296,16 @@ html.dark .toolsuite-promo__text {
   transform: scale(0.98);
 }
 
+/* Offerteknop onder In short en onder de FAQ op /en/about-us/. */
+.about-quote {
+  margin: 0 0 2.5rem;
+}
+
+.about-quote .hp-btn:focus-visible {
+  outline: 3px solid #1F2937;
+  outline-offset: 3px;
+}
+
 .hp-btn--outline {
   padding: 1rem 2rem;
   font-size: 1rem;

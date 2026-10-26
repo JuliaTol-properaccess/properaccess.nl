@@ -1,0 +1,11 @@
+{{/* Offerteknop alleen op /en/about-us/. Twee aanroepen: direct na #in-short
+     en direct onder #faq. De knop staat buiten die twee elementen, zodat de
+     speakable-tekst gelijk blijft aan de alinea en de FAQ.
+
+     Een gewone link met de zichtbare tekst als naam. Geen target, zodat de
+     knop in hetzelfde tabblad opent en met het toetsenbord te bereiken is. */}}
+{{- if eq .RelPermalink "/en/about-us/" }}
+<div class="hp-container about-quote">
+  <a class="hp-btn hp-btn--primary" href="https://www.properaccess.nl/en/contact/?utm_source=properaccess.nl&amp;utm_medium=internal&amp;utm_campaign=about-cta">Request a quote <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+</div>
+{{- end }}
