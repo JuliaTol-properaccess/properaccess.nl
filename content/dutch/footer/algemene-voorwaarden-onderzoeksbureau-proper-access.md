@@ -3,7 +3,7 @@ title: "Algemene voorwaarden"
 hide_cta: true
 meta_title: "Algemene voorwaarden | Proper Access"
 description: "De algemene voorwaarden van Proper Access, auditbureau voor digitale toegankelijkheid."
-date: 2026-02-21
+date: 2026-10-26
 slug: "algemene-voorwaarden"
 url: "/algemene-voorwaarden/"
 layout: sectie
@@ -13,7 +13,7 @@ hero_meta:
   - label: "Auteur"
     value: "Julia Tol"
   - label: "Laatst bijgewerkt"
-    value: "februari 2026"
+    value: "oktober 2026"
 ---
 
 {{< offerte-section title="1. Introductie" >}}
@@ -52,7 +52,11 @@ Heb je een webshop? Dan testen we ook het bestelproces. We doen ons uiterste bes
 
 {{< offerte-section title="6. Betalingen" bg="light" >}}
 
-De prijs spreken we vooraf af. Elke offerte is maatwerk: geen verborgen kosten, geen verrassingen. Betalingen moeten binnen 30 dagen na de factuurdatum worden voldaan, tenzij we iets anders afspreken.
+De prijs spreken we vooraf af. Elke offerte is maatwerk: geen verborgen kosten, geen verrassingen. Voor audits en andere diensten betaal je 50% bij het ondertekenen van de offerte en 50% bij de oplevering van de dienst. Betalingen moeten binnen 30 dagen na de factuurdatum worden voldaan, tenzij we iets anders afspreken.
+
+Annuleer je de opdracht meer dan twee weken voor de afgesproken startdatum van de audit, dan storten we de aanbetaling van 50% volledig terug. Bij annulering binnen twee weken voor de startdatum wordt de aanbetaling niet terugbetaald.
+
+Als Proper Access een dienst na ontvangst van de aanbetaling niet levert, storten we de aanbetaling van 50% volledig terug.
 
 {{< /offerte-section >}}
 
