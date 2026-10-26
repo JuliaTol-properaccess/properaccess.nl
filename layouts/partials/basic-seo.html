@@ -69,6 +69,17 @@
 
 <!-- meta noindex -->
 {{ $noindex := .Param "noindex" }}
+{{/* Taxonomy pages are only indexable when their _index.md explicitly opts in.
+     Tags and pagination are navigation aids, not standalone search landing pages. */}}
+{{ if or (eq .Type "tags") (and (in (slice "taxonomy" "term") .Kind) (not .Params.indexable)) }}
+  {{ $noindex = true }}
+{{ end }}
+{{ if in (slice "section" "taxonomy" "term") .Kind }}
+  {{ with .Paginator }}
+    {{ if gt .PageNumber 1 }}{{ $noindex = true }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if findRE `/page/[0-9]+/?$` .RelPermalink }}{{ $noindex = true }}{{ end }}
 {{ if not $noindex }}
   {{/* Een weekpagina van /nieuws/ die de ondergrenzen van de rubriek niet haalt, krijgt
        de noindex van de build mee, zonder noindex in de front matter. Zie

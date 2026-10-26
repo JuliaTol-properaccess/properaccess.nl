@@ -5,6 +5,9 @@
       <header class="blog-list__header">
         <h1 class="blog-list__title">{{ .Title }}</h1>
         {{ with .Params.description }}<p class="blog-list__intro">{{ . }}</p>{{ end }}
+        {{ with .Content }}
+          <div class="blog-list__intro content">{{ . }}</div>
+        {{ end }}
       </header>
 
       {{/* Alleen filters tonen voor category-terms, niet voor tags */}}

@@ -62,7 +62,9 @@ ID = ''
 
 ########################## Pagination ############################
 [pagination]
-disableAliases = false
+# De eerste paginatorpagina is gelijk aan het overzicht en hoeft geen aparte
+# verhuis-URL op /page/1/ te krijgen.
+disableAliases = true
 pagerSize = 12
 path = 'page'
 
