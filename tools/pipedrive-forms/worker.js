@@ -26,7 +26,7 @@ const CRM_WEBHOOK_URL = "https://crm.properaccess.nl/api/webhooks/website-form";
 // E-mail via AhaSend (EU). Afzender en interne ontvanger.
 const FROM_EMAIL = "noreply@properaccess.nl";
 const FROM_NAME = "Proper Access";
-const NOTIFY_EMAIL = "juliatol@properaccess.nl";
+const NOTIFY_EMAIL = "info@properaccess.nl";
 
 // Sommige formulieren gaan naar een ander intern adres.
 const NOTIFY_OVERRIDES = {
