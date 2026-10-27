@@ -9,6 +9,8 @@
  *     onSuccess: function() { ... },
  *     onError: function(msg) { ... },
  *     successMessage: 'Bedankt!',
+ *     successRedirect: '/bedankt/',
+ *     openaiConversion: 'lead_created',
  *     errorMessage: 'Er ging iets mis.'
  *   });
  */
@@ -82,7 +84,12 @@
             props: { form_bron: data.bron || 'onbekend' }
           });
         }
+        if (opts.openaiConversion && window.paOpenAiMeasure) {
+          var eventId = "pa-" + Date.now() + "-" + Math.random().toString(36).slice(2);
+          window.paOpenAiMeasure(opts.openaiConversion, eventId);
+        }
         if (opts.onSuccess) opts.onSuccess();
+        if (opts.successRedirect) window.location.assign(opts.successRedirect);
       })
       .catch(function () {
         showStatus(form, opts.errorMessage || "Er ging iets mis. Probeer het later opnieuw.", "error");

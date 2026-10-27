@@ -83,13 +83,11 @@ mastodon = "" # Your verification code
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
-# Cookiebanner uitgeschakeld per juni 2026: er zijn geen tracking-cookies meer
-# (Leadfeeder/Dealfront verwijderd, Plausible is cookieloos), dus geen toestemming nodig.
 [cookies]
-enable = false
+enable = true
 expire_days = 365
-content = "We gebruiken cookies voor de werking van de website en om bedrijven te herkennen die onze site bezoeken."
-content_detail = "Meer informatie vind je in onze [privacyverklaring](/privacyverklaring/)."
+content = "We gebruiken een advertentiemeting-cookie van ChatGPT Ads alleen als je daarvoor kiest. Zonder toestemming werkt de website gewoon en meten we geen advertentieconversies."
+content_detail = "Kies Accepteren of Weigeren. Meer informatie vind je in onze [privacyverklaring](/privacyverklaring/)."
 button_accept = "Accepteren"
 button_reject = "Alleen noodzakelijke"
 
@@ -123,6 +121,11 @@ sidebar = ["categories", "tags"]
 [params.robots]
     noindex = false
     nofollow = false
+
+# ChatGPT Ads conversion measurement. Empty until the Pixel ID exists in Ads Manager.
+[openai_ads]
+    pixel_id = "MHYVNdaou7JS9rBqoFLKER"
+    debug = false
 
 [sitemap]
   changefreq = "monthly"

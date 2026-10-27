@@ -38,6 +38,10 @@ Proper Access verwerkt persoonsgegevens doordat je gebruik maakt van onze dienst
 
 Voor websitestatistieken gebruiken we Plausible Analytics. Plausible werkt zonder cookies en verzamelt geen persoonsgegevens: bezoeken worden geanonimiseerd en alleen als totalen bijgehouden. We kunnen individuele bezoekers niet herkennen of volgen.
 
+**Advertentiemeting voor ChatGPT Ads**
+
+Voor advertentiemeting van ChatGPT Ads gebruiken we de ChatGPT Ads Measurement Pixel alleen om te meten of iemand na een advertentie een formulier voor een offerte of kennismaking verstuurt. De pixel kan daarvoor een advertentieklikkenmerk (`oppref`) en een eerste-partijcookie gebruiken. De pixel wordt pas actief nadat je daarvoor toestemming hebt gegeven. We delen geen formulierinhoud, chatgeschiedenis of andere persoonlijke gegevens met adverteerders.
+
 **De chat op onze website**
 
 Stel je een vraag in de chat, dan sturen we je vraag naar Anthropic. Anthropic maakt met het taalmodel Claude het antwoord. De eerdere berichten uit hetzelfde gesprek gaan mee, zodat het antwoord op je vraag aansluit.
@@ -100,6 +104,7 @@ Je vraag uit de chat bewaren we 90 dagen, met het antwoord erbij. Daarna verwijd
 Proper Access verstrekt gegevens uitsluitend aan derden als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting. Wij maken gebruik van de volgende derde partijen:
 
 - **Plausible Analytics**: voor geanonimiseerde websitestatistieken. Plausible plaatst geen cookies en verzamelt geen persoonsgegevens. Plausible is gevestigd in de EU en verwerkt gegevens conform de AVG. Meer informatie: [plausible.io/data-policy](https://plausible.io/data-policy).
+- **OpenAI**: voor de meting en toeschrijving van conversies uit ChatGPT Ads. Meer informatie: [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy/).
 - **AhaSend**: voor het versturen van e-mail na een bericht via een formulier op onze website. AhaSend is gevestigd in de EU. Meer informatie: [ahasend.com/privacy](https://ahasend.com/privacy).
 - **Anthropic**: voor de antwoorden in de chat op onze website. Anthropic krijgt de berichten uit het gesprek, zie sectie 2. Meer informatie: [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy).
 - **Cloudflare**: voor beveiliging en prestatie-optimalisatie van de website. Onze formulieren, de chat en het opzoeken van de organisatie achter een bezoek draaien op servers van Cloudflare. Cloudflare kan technische cookies plaatsen (zie sectie 7).
@@ -108,13 +113,17 @@ Proper Access verstrekt gegevens uitsluitend aan derden als dit nodig is voor de
 
 {{< offerte-section title="7. Cookies" >}}
 
-Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. Proper Access gebruikt geen tracking cookies. Daarom zie je op onze website ook geen cookiebanner: die is alleen verplicht als een website cookies plaatst waarvoor toestemming nodig is.
+Een cookie is een klein tekstbestand dat bij het bezoek aan deze website wordt opgeslagen op jouw computer, tablet of smartphone. Proper Access gebruikt geen tracking cookies zonder jouw toestemming. Voor de optionele meting van ChatGPT Ads tonen we daarom een cookiebanner. Als je weigert, blijft de website gewoon werken en worden geen advertentieconversies gemeten.
+
+Wanneer ChatGPT Ads-meting actief is, kan de pixel na toestemming de cookies `__oppref` en `__obref` plaatsen voor advertentietoeschrijving. Zonder toestemming worden deze cookies niet geplaatst en worden geen advertentieconversies gemeten. Je kunt je keuze intrekken door de cookies van deze website in je browser te verwijderen; daarna verschijnt de keuze opnieuw.
 
 De enige cookie die je van ons kunt tegenkomen is een technische cookie:
 
 | Cookie | Doel | Bewaartermijn |
 |--------|------|---------------|
 | `__cf_bm` | Cloudflare botbescherming | 1 uur |
+| `__oppref` | OpenAI advertentietoeschrijving voor ChatGPT Ads, alleen na toestemming | maximaal 30 dagen |
+| `__obref` | OpenAI advertentietoeschrijving voor ChatGPT Ads, alleen na toestemming | maximaal 365 dagen |
 
 Deze cookie is noodzakelijk voor de beveiliging van de website en bevat geen gegevens waarmee wij jou kunnen identificeren.
 

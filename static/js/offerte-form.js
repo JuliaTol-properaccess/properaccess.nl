@@ -338,6 +338,8 @@
 
     window.paFormSubmit(form, {
       bron: "offerte-audit",
+      openaiConversion: "lead_created",
+      successRedirect: "/bedankt/",
       successMessage:
         "Bedankt, je aanvraag is binnen. We sturen je binnen 1 werkdag een offerte op maat. " +
         "Wil je iets aanvullen? Beantwoord gewoon onze mail.",

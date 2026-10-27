@@ -35,11 +35,13 @@
 
         acceptBtn.onclick = function () {
           Cookies.set('cookie-consent', 'accepted', { expires: {{ .expire_days }} });
+          if (window.paOpenAiGrantConsent) window.paOpenAiGrantConsent();
           cookieBox.classList.add('cookie-box-hide');
         };
 
         rejectBtn.onclick = function () {
           Cookies.set('cookie-consent', 'rejected', { expires: {{ .expire_days }} });
+          if (window.paOpenAiRevokeConsent) window.paOpenAiRevokeConsent();
           cookieBox.classList.add('cookie-box-hide');
         };
       })();
