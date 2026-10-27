@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="hp-hero">
+  <div class="hp-container" style="max-width: 40rem; padding: 4rem 0;">
+    <h1 class="hp-heading-lg">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="hp-hero__subtitle">{{ . }}</div>
+    {{ end }}
+    {{ with .Params.return_link }}
+    <p style="margin-top: 1.5rem;">
+      <a class="hp-btn hp-btn--primary" href="{{ . }}">{{ $.Params.return_label }}</a>
+    </p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

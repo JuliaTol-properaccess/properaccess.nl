@@ -1,0 +1,15 @@
+{{/*
+  Verborgen velden zodat het formulier zonder JavaScript naar dezelfde worker
+  post als paFormSubmit. Namen die met __ beginnen slaat dat script over, dus
+  __next en __lang zitten niet in de JSON. bron heeft dezelfde waarde als in de
+  onsubmit-aanroep, en overschrijft die dus niet.
+*/}}
+<input type="hidden" name="bron" value="{{ .bron }}" />
+<input type="hidden" name="__lang" value="{{ .lang | default "nl" }}" />
+{{- $next := "bericht-verstuurd/" | absURL -}}
+{{- if eq .next "offerte" -}}
+  {{- $next = "offerte-verstuurd/" | absURL -}}
+{{- else if eq (.lang | default "nl") "en" -}}
+  {{- $next = "message-sent/" | absLangURL -}}
+{{- end }}
+<input type="hidden" name="__next" value="{{ $next }}" />
