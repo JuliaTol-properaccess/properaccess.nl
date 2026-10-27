@@ -11,10 +11,18 @@
   Verplaats velden dus wel, maar hernoem ze niet.
 
   Toon/verberg-logica, nummering en verzending via static/js/offerte-form.js.
+  Zonder JavaScript blijven de voorwaardelijke vragen zichtbaar (het script
+  verbergt ze pas). Zo gaan de URL en de rest mee in de POST.
 */}}
+<script>document.documentElement.classList.add("offerte-enhanced")</script>
+<style>
+  html.offerte-enhanced .offerte-cond:not([data-cond-ready]) { display: none; }
+</style>
 <form
   id="offerte-form"
   class="hp-form offerte-form"
+  method="post"
+  action="{{ site.Params.form_submit_endpoint }}"
   novalidate
   aria-describedby="offerte-form-hint">
   <p id="offerte-form-hint" class="offerte-form__hint">
@@ -23,14 +31,17 @@
 
   <noscript>
     <p class="offerte-form__hint">
-      Dit formulier werkt alleen met JavaScript. Mail je aanvraag anders naar
-      <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of bel 085 5055 890.
+      Zonder JavaScript kun je dit formulier gewoon versturen. Alle vragen staan
+      op de pagina. Eén onderzoek per aanvraag. Liever mailen of bellen?
+      <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>
+      of <a href="tel:+31855055890">085 5055 890</a>.
     </p>
   </noscript>
 
   <!-- Honeypot tegen bots, niet zichtbaar voor bezoekers -->
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
          style="position:absolute;left:-9999px" />
+  {{ partial "form-post-fields.html" (dict "bron" "offerte-audit" "lang" "nl" "next" "offerte") }}
 
   <!-- ─── WAT ONDERZOEKEN WE: één blok per website, app of systeem ─── -->
   <div id="offerte-items" class="offerte-form__items">

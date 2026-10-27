@@ -16,7 +16,7 @@
         <div class="hp-hero__actions">
           <a class="hp-btn hp-btn--primary" href="tel:+31855055890">
             <span class="material-symbols-outlined" aria-hidden="true">phone</span>
-            085 5055 890
+            {{ if eq site.Language.Lang "en" }}<span lang="nl">085 5055 890</span>{{ else }}085 5055 890{{ end }}
           </a>
           <a class="hp-btn hp-btn--outline" href="mailto:info@properaccess.nl">
             {{ i18n "contact_hero_email_btn" | default "Mail ons" }}
@@ -30,9 +30,12 @@
           <form
             id="contact-hero-form"
             class="hp-form"
+            method="post"
+            action="{{ site.Params.form_submit_endpoint }}"
             novalidate
-            onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
+            onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: '{{ i18n "contact_success" }}' });">
             <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+            {{ partial "form-post-fields.html" (dict "bron" "contactformulier" "lang" site.Language.Lang) }}
             <div class="hp-form__row">
               <div class="hp-form__field">
                 <label class="hp-form__label" for="hero-name">{{ i18n "contact_name" | default "Naam" }}</label>

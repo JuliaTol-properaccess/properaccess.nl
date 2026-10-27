@@ -24,6 +24,8 @@
   translation: "Vertel ons waar we je mee kunnen helpen..."
 - id: contact_submit
   translation: "Verstuur bericht"
+- id: contact_success
+  translation: "Bericht verstuurd! We nemen binnen 1 werkdag contact op."
 - id: search_input_placeholder
   translation: "Zoek in blogartikelen en nieuws..."
 - id: search_input_label

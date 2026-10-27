@@ -182,6 +182,9 @@
     var conds = form.querySelectorAll(".offerte-cond");
     for (var i = 0; i < conds.length; i++) {
       conds[i].hidden = !isVisible(conds[i]);
+      // Zonder dit attribuut houdt de CSS in offerte-calculator.html de
+      // vragen dicht tot dit script draait. Daarna stuurt hidden het zicht.
+      conds[i].setAttribute("data-cond-ready", "");
     }
     var inputs = form.querySelectorAll("input, textarea, select");
     for (var j = 0; j < inputs.length; j++) {

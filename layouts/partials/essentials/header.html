@@ -123,7 +123,7 @@
               {{- else -}}
                 {{- .URL | relLangURL -}}
               {{- end -}}"
-              >{{ .Name }}{{ if .Params.highlight }}<span class="nav-link__badge">Nieuw</span>{{ end }}</a
+              >{{ .Name }}{{ if .Params.highlight }}<span class="nav-link__badge" lang="nl">Nieuw</span>{{ end }}</a
             >
           </li>
         {{ end }}
@@ -144,6 +144,7 @@
         {{ if .enable }}
           <button
             aria-label="Zoek"
+            lang="nl"
             class="border-border text-text-dark hover:text-primary
             mr-5 inline-block border-r pr-5
             text-xl cursor-pointer

@@ -26,14 +26,14 @@
                   <img src="{{ "images/julia.webp" | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
                   <div class="cta-people__meta">
                     <span class="cta-people__name">Julia Tol</span>
-                    <span class="cta-people__role">Directeur</span>
+                    <span class="cta-people__role"{{ if eq site.Language.Lang "en" }} lang="nl"{{ end }}>Directeur</span>
                   </div>
                 </div>
                 <div class="cta-people__person">
                   <img src="{{ "images/phi.jpeg" | relURL }}" alt="" class="hp-contact__photo" loading="lazy" />
                   <div class="cta-people__meta">
                     <span class="cta-people__name">Phi Pham</span>
-                    <span class="cta-people__role">Projectmanager</span>
+                    <span class="cta-people__role">{{ if eq site.Language.Lang "en" }}Project manager{{ else }}Projectmanager{{ end }}</span>
                   </div>
                 </div>
               </div>
@@ -43,9 +43,12 @@
               <form
                 id="cta-form"
                 class="space-y-5"
+                method="post"
+                action="{{ site.Params.form_submit_endpoint }}"
                 novalidate
-                onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
+                onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: '{{ i18n "contact_success" }}' });">
                 <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+                {{ partial "form-post-fields.html" (dict "bron" "contactformulier" "lang" site.Language.Lang) }}
 
                 <div>
                   <label

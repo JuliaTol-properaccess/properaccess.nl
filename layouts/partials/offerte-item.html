@@ -9,9 +9,10 @@
   overige vragen over dit onderzoek staan in een gesloten uitklapblok, zodat
   wie meer wil opgeven dat nog kan.
 
-  Velden dragen data-name en data-id in plaats van name en id: het script
-  maakt daar per blok een unieke variant van, zodat radio's van blok 2 niet
-  in dezelfde groep vallen als die van blok 1.
+  Velden dragen name én data-name, en waar nodig id én data-id. Zonder
+  JavaScript gaat de name mee in de POST. Het script maakt van data-name per
+  blok een unieke name (__onderzoekN_…), zodat radio's van blok 2 niet in
+  dezelfde groep vallen als die van blok 1. paFormSubmit slaat die __-namen over.
 */}}
 <fieldset class="offerte-item" data-offerte-item>
   <legend class="offerte-item__legend" data-item-title>Onderzoek 1</legend>
@@ -25,7 +26,7 @@
         (dict "v" "systeem" "l" "Een systeem of portaal")
         (dict "v" "documenten" "l" "Een of meer documenten (pdf)") }}
     <label class="offerte-form__option">
-      <input type="radio" data-name="soort" value="{{ $opt.v }}" data-required />
+      <input type="radio" name="soort" data-name="soort" value="{{ $opt.v }}" data-required />
       <span>{{ $opt.l }}</span>
     </label>
     {{ end }}
@@ -33,17 +34,17 @@
 
   <!-- URL: alleen voor iets wat online staat -->
   <div class="hp-form__field offerte-cond"
-       data-show-when-any="soort=website|soort=webshop|soort=systeem" hidden>
-    <label class="hp-form__label" data-for="url">URL <span class="offerte-form__req">*</span></label>
+       data-show-when-any="soort=website|soort=webshop|soort=systeem">
+    <label class="hp-form__label" data-for="url" for="offerte-1-url">URL <span class="offerte-form__req">*</span></label>
     <p class="offerte-form__help">
       Staat het achter een inlog? Zet de link naar de inlogpagina erbij, dan regelen we later testtoegang.
     </p>
-    <input class="hp-form__input" type="url" data-id="url" data-name="url"
+    <input class="hp-form__input" type="url" id="offerte-1-url" name="url" data-id="url" data-name="url"
            placeholder="https://" data-required />
   </div>
 
   <!-- App: welk platform -->
-  <fieldset class="offerte-form__group offerte-cond" data-show-when="soort=app" hidden>
+  <fieldset class="offerte-form__group offerte-cond" data-show-when="soort=app">
     <legend class="hp-form__label">Welk platform? <span class="offerte-form__req">*</span></legend>
     <p class="offerte-form__help">
       Twee platforms betekent meer werk. Onderzoeken we zowel iOS als Android, kies dan "Beide".
@@ -53,19 +54,19 @@
         (dict "v" "android" "l" "Android (Google Play)")
         (dict "v" "beide" "l" "Beide") }}
     <label class="offerte-form__option">
-      <input type="radio" data-name="app_platform" value="{{ $opt.v }}" data-required />
+      <input type="radio" name="app_platform" data-name="app_platform" value="{{ $opt.v }}" data-required />
       <span>{{ $opt.l }}</span>
     </label>
     {{ end }}
   </fieldset>
 
   <!-- Documenten: hoeveelheid -->
-  <div class="hp-form__field offerte-cond" data-show-when="soort=documenten" hidden>
-    <label class="hp-form__label" data-for="aantal-documenten">Hoeveel documenten en pagina's ongeveer?</label>
+  <div class="hp-form__field offerte-cond" data-show-when="soort=documenten">
+    <label class="hp-form__label" data-for="aantal-documenten" for="offerte-1-aantal-documenten">Hoeveel documenten en pagina's ongeveer?</label>
     <p class="offerte-form__help">
       Het aantal documenten en de totale omvang bepalen de prijs van een documentaudit.
     </p>
-    <input class="hp-form__input" type="text" data-id="aantal-documenten" data-name="aantal_documenten"
+    <input class="hp-form__input" type="text" id="offerte-1-aantal-documenten" name="aantal_documenten" data-id="aantal-documenten" data-name="aantal_documenten"
            placeholder="Bijvoorbeeld 3 pdf's, samen zo'n 40 pagina's" />
   </div>
 
@@ -81,11 +82,11 @@
 
       <!-- Naam, zodat we in de offerte per regel kunnen benoemen waar het over gaat -->
       <div class="hp-form__field">
-        <label class="hp-form__label" data-for="omschrijving">Naam of omschrijving</label>
+        <label class="hp-form__label" data-for="omschrijving" for="offerte-1-omschrijving">Naam of omschrijving</label>
         <p class="offerte-form__help">
           Handig als je meerdere onderzoeken aanvraagt. Dan zie je in de offerte meteen welke regel bij wat hoort.
         </p>
-        <input class="hp-form__input" type="text" data-id="omschrijving" data-name="omschrijving"
+        <input class="hp-form__input" type="text" id="offerte-1-omschrijving" name="omschrijving" data-id="omschrijving" data-name="omschrijving"
                placeholder="Bijvoorbeeld hoofdwebsite, klantportaal of bestel-app" />
       </div>
 
@@ -99,7 +100,7 @@
             (dict "v" "techniek" "l" "Alleen techniek")
             (dict "v" "weet-niet" "l" "Weet ik niet, denk met me mee") }}
         <label class="offerte-form__option">
-          <input type="radio" data-name="type_onderzoek" value="{{ $opt.v }}" />
+          <input type="radio" name="type_onderzoek" data-name="type_onderzoek" value="{{ $opt.v }}" />
           <span>{{ $opt.l }}</span>
         </label>
         {{ end }}
@@ -107,7 +108,7 @@
 
       <!-- Omvang: niet van toepassing op losse documenten -->
       <div class="offerte-cond"
-           data-show-when-any="soort=website|soort=webshop|soort=systeem|soort=app" hidden>
+           data-show-when-any="soort=website|soort=webshop|soort=systeem|soort=app">
 
         <fieldset class="offerte-form__group">
           <legend class="hp-form__label">Hoeveel verschillende pagina- of schermtypes zijn er?</legend>
@@ -120,7 +121,7 @@
               (dict "v" "11-20" "l" "11 tot 20")
               (dict "v" "20-plus" "l" "Meer dan 20") }}
           <label class="offerte-form__option">
-            <input type="radio" data-name="aantal_paginatypes" value="{{ $opt.v }}" />
+            <input type="radio" name="aantal_paginatypes" data-name="aantal_paginatypes" value="{{ $opt.v }}" />
             <span>{{ $opt.l }}</span>
           </label>
           {{ end }}
@@ -139,7 +140,7 @@
               (dict "v" "kaart" "l" "Kaart")
               (dict "v" "documenten" "l" "Downloads of documenten") }}
           <label class="offerte-form__option">
-            <input type="checkbox" data-name="functionaliteiten" value="{{ $opt.l }}" />
+            <input type="checkbox" name="functionaliteiten" data-name="functionaliteiten" value="{{ $opt.l }}" />
             <span>{{ $opt.l }}</span>
           </label>
           {{ end }}
@@ -151,17 +152,17 @@
         <legend class="hp-form__label">Is dit meertalig?</legend>
         <p class="offerte-form__help">Extra talen betekenen extra pagina's om te onderzoeken.</p>
         <label class="offerte-form__option">
-          <input type="radio" data-name="meertalig" value="nee" />
+          <input type="radio" name="meertalig" data-name="meertalig" value="nee" />
           <span>Nee, één taal</span>
         </label>
         <label class="offerte-form__option">
-          <input type="radio" data-name="meertalig" value="ja" />
+          <input type="radio" name="meertalig" data-name="meertalig" value="ja" />
           <span>Ja, meerdere talen</span>
         </label>
       </fieldset>
-      <div class="hp-form__field offerte-cond" data-show-when="meertalig=ja" hidden>
-        <label class="hp-form__label" data-for="talen">Welke talen?</label>
-        <input class="hp-form__input" type="text" data-id="talen" data-name="talen"
+      <div class="hp-form__field offerte-cond" data-show-when="meertalig=ja">
+        <label class="hp-form__label" data-for="talen" for="offerte-1-talen">Welke talen?</label>
+        <input class="hp-form__input" type="text" id="offerte-1-talen" name="talen" data-id="talen" data-name="talen"
                placeholder="Bijvoorbeeld Nederlands en Engels" data-required />
       </div>
     </div>

@@ -25,7 +25,7 @@ url: "/en/contact/"
 <div class="card">
   <div class="card__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
   <h3 class="card__title">Call or message</h3>
-  <p><a href="tel:+31855055890"><strong>+31 85 5055 890</strong></a></p>
+  <p><a href="tel:+31855055890"><strong><span lang="nl">085 5055 890</span></strong></a></p>
   <p><a href="https://wa.me/31628742275">WhatsApp or Signal</a></p>
   <p class="card__meta">We pick up right away, or call back the same day.</p>
 </div>
@@ -46,7 +46,10 @@ url: "/en/contact/"
 
 {{< section-full title="Or send a message" id="formulier" >}}
 
-<form id="contact-form" class="contact-form" style="max-width: 600px;" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
+<form id="contact-form" class="contact-form" style="max-width: 600px;" method="post" action="https://pipedrive-forms.juliatol.workers.dev/submit" onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier-en', successMessage: 'Message sent! We will get back to you within 1 business day.' });">
+  <input type="hidden" name="bron" value="contactformulier-en" />
+  <input type="hidden" name="__lang" value="en" />
+  <input type="hidden" name="__next" value="https://www.properaccess.nl/en/message-sent/" />
   <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
 
   <div style="margin-bottom: 1.25rem;">
@@ -150,6 +153,6 @@ In Amsterdam, the Netherlands. But we work fully remote, so location doesn't mat
 
 **63 organisations** chose us, together accounting for more than **950 audits**. Measured 7 August 2026. From government institutions to online stores, from museums to digital agencies. They chose Proper Access because we don't just write reports: we think along, explain, and solve.
 
-[Call us: +31 85 5055 890](tel:+31855055890) | [Email us](mailto:info@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
+<a href="tel:+31855055890">Call us: <span lang="nl">085 5055 890</span></a> | [Email us](mailto:info@properaccess.nl) | [Schedule a video call](https://calendar.app.google/k4VvBfPKnH3Lk2ut8)
 
 {{< /section-cta >}}

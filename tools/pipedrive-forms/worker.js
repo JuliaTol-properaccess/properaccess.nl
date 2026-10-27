@@ -5,7 +5,11 @@
  * personalized quiz follow-up email to participants — all via AhaSend (EU).
  *
  * POST /submit  → forward to CRM webhook, notify Proper Access, send quiz email if applicable
- *   Body: { bron, email, naam?, bedrijf?, bericht?, quiz_* }
+ *   JSON body (what static/js/form-submit.js sends): { bron, email, naam?, bedrijf?, bericht?, quiz_* }
+ *   Or a normal HTML form POST (application/x-www-form-urlencoded or multipart/form-data),
+ *   same field names. A form POST gets a 303 to an allowlisted thank-you page.
+ *   Deploy this file before no-JS submissions can arrive:
+ *   npx wrangler deploy worker.js --name pipedrive-forms
  *
  * Secrets (set via wrangler secret put):
  *   WEBSITE_FORM_SECRET   — shared secret for CRM webhook
@@ -83,6 +87,9 @@ export default {
     if (url.pathname === "/submit" && request.method === "POST") {
       const clientIP = request.headers.get("CF-Connecting-IP") || "unknown";
       if (isRateLimited(clientIP)) {
+        if (isFormRequest(request)) {
+          return htmlResponse(errorDocument("nl"), 429, allowedOrigin);
+        }
         return json({ error: "Too many requests. Please try again later." }, 429, allowedOrigin);
       }
       return handleSubmit(request, env, allowedOrigin);
@@ -93,32 +100,45 @@ export default {
 };
 
 async function handleSubmit(request, env, origin) {
-  let body;
-  try {
-    body = await request.json();
-  } catch {
-    return json({ error: "Invalid JSON" }, 400, origin);
+  const parsed = await parseBody(request);
+  if (parsed.error) {
+    return respond(parsed.mode, { error: parsed.error }, parsed.status || 400, origin);
   }
+
+  const mode = parsed.mode;
+  const body = parsed.body;
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return respond(mode, { error: mode === "form" ? "Invalid form" : "Invalid JSON" }, 400, origin);
+  }
+  const nextUrl = safeNext(body.__next);
+  const pageLang = body.__lang === "en" || body.bron === "contactformulier-en" ? "en" : "nl";
+  // __next en __lang sturen alleen de bedankpagina. Het CRM krijgt ze niet.
+  delete body.__next;
+  delete body.__lang;
 
   const { bron, email } = body;
 
   if (!bron || !email) {
-    return json({ error: "Missing required fields: bron, email" }, 400, origin);
+    return respond(mode, { error: "Missing required fields: bron, email" }, 400, origin, "", pageLang);
   }
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return json({ error: "Invalid email" }, 400, origin);
+    return respond(mode, { error: "Invalid email" }, 400, origin, "", pageLang);
   }
 
   // Honeypot check
   if (body._gotcha) {
-    return json({ ok: true }, 200, origin);
+    return respond(mode, { ok: true }, 200, origin, nextUrl, pageLang, body);
   }
 
   const secret = env.WEBSITE_FORM_SECRET;
   if (!secret) {
-    return json({ error: "Server configuration error" }, 500, origin);
+    return respond(mode, { error: "Server configuration error" }, 500, origin, "", pageLang);
   }
+
+  // Alleen een formulier-POST zonder JavaScript mist de samenvatting die
+  // offerte-form.js anders opbouwt. De JSON-route blijft ongemoeid.
+  if (mode === "form") normalizeOfferteForm(body);
 
   try {
     // Forward to CRM webhook
@@ -154,10 +174,251 @@ async function handleSubmit(request, env, origin) {
       } catch (e) { /* e-mailfout is niet-blokkerend */ }
     }
 
-    return json({ ok: true }, 200, origin);
+    return respond(mode, { ok: true }, 200, origin, nextUrl, pageLang, body);
   } catch (err) {
-    return json({ error: "Internal error" }, 500, origin);
+    return respond(mode, { error: "Internal error" }, 500, origin, "", pageLang);
   }
+}
+
+// Velden van één onderzoek, in dezelfde volgorde als ITEM_FIELDS in offerte-form.js.
+const OFFERTE_ITEM_VELDEN = [
+  ["soort", "Soort"],
+  ["omschrijving", "Omschrijving"],
+  ["url", "URL"],
+  ["app_platform", "Platform"],
+  ["aantal_documenten", "Documenten"],
+  ["type_onderzoek", "Type onderzoek"],
+  ["aantal_paginatypes", "Pagina- of schermtypes"],
+  ["functionaliteiten", "Functionaliteiten"],
+  ["meertalig", "Meertalig"],
+  ["talen", "Talen"],
+];
+
+// Zelfde zichtbare teksten als de <span> bij de keuzeknoppen in offerte-item.html.
+// offerte-form.js zet die teksten in de samenvatting; een formulier-POST stuurt
+// de value. Alleen de weergave in de mail wordt hier gelijkgetrokken.
+const OFFERTE_KEUZE_LABELS = {
+  soort: {
+    website: "Een website",
+    webshop: "Een webshop",
+    app: "Een mobiele app",
+    systeem: "Een systeem of portaal",
+    documenten: "Een of meer documenten (pdf)",
+  },
+  app_platform: {
+    ios: "iOS (App Store)",
+    android: "Android (Google Play)",
+    beide: "Beide",
+  },
+  type_onderzoek: {
+    volledig: "Volledige audit (content én techniek)",
+    content: "Alleen content",
+    techniek: "Alleen techniek",
+    "weet-niet": "Weet ik niet, denk met me mee",
+  },
+  aantal_paginatypes: {
+    "1-5": "1 tot 5",
+    "6-10": "6 tot 10",
+    "11-20": "11 tot 20",
+    "20-plus": "Meer dan 20",
+  },
+  meertalig: {
+    nee: "Nee, één taal",
+    ja: "Ja, meerdere talen",
+  },
+};
+
+function offerteWeergave(key, value) {
+  const map = OFFERTE_KEUZE_LABELS[key];
+  if (!map) return value;
+  return String(value)
+    .split(", ")
+    .map((part) => map[part] || part)
+    .join(", ");
+}
+
+function normalizeOfferteForm(body) {
+  if (body.bron !== "offerte-audit" || body.onderzoeksobjecten) return;
+  const lines = ["Onderzoek 1"];
+  let any = false;
+  for (const [key, label] of OFFERTE_ITEM_VELDEN) {
+    if (body[key]) {
+      lines.push("  " + label + ": " + offerteWeergave(key, body[key]));
+      any = true;
+    }
+  }
+  if (!any) return;
+  if (!body.aantal_onderzoeken) body.aantal_onderzoeken = "1";
+  if (!body.onderzoeksobject && body.soort) body.onderzoeksobject = body.soort;
+  if (!body.urls && body.url) body.urls = body.url;
+  body.onderzoeksobjecten = lines.join("\n");
+  for (const [key] of OFFERTE_ITEM_VELDEN) delete body[key];
+}
+
+function isFormRequest(request) {
+  const ct = (request.headers.get("Content-Type") || "").toLowerCase();
+  return ct.includes("application/x-www-form-urlencoded") || ct.includes("multipart/form-data");
+}
+
+async function parseBody(request) {
+  if (isFormRequest(request)) {
+    let form;
+    try {
+      form = await request.formData();
+    } catch {
+      return { mode: "form", error: "Invalid form", status: 400 };
+    }
+    const body = {};
+    for (const [key, value] of form.entries()) {
+      if (typeof value !== "string") continue;
+      if (Object.prototype.hasOwnProperty.call(body, key)) {
+        body[key] = body[key] + ", " + value;
+      } else {
+        body[key] = value;
+      }
+    }
+    return { mode: "form", body };
+  }
+
+  try {
+    return { mode: "json", body: await request.json() };
+  } catch {
+    return { mode: "json", error: "Invalid JSON", status: 400 };
+  }
+}
+
+const THANK_YOU_PATHS = new Set([
+  "/bericht-verstuurd/",
+  "/en/message-sent/",
+  "/offerte-verstuurd/",
+]);
+
+function safeNext(value) {
+  if (!value || typeof value !== "string") return "";
+  let url;
+  try {
+    url = new URL(value);
+  } catch {
+    return "";
+  }
+  const local = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+  const site = url.hostname === "www.properaccess.nl" || url.hostname === "properaccess.nl";
+  if (local) {
+    if (url.protocol !== "http:") return "";
+  } else if (!site || url.protocol !== "https:") {
+    return "";
+  }
+  if (url.username || url.password || url.search || url.hash) return "";
+  if (!THANK_YOU_PATHS.has(url.pathname)) return "";
+  return url.origin + url.pathname;
+}
+
+function respond(mode, data, status, origin, nextUrl, pageLang, body) {
+  if (mode !== "form") return json(data, status, origin);
+  if (status >= 200 && status < 300 && nextUrl) {
+    return new Response(null, {
+      status: 303,
+      headers: {
+        Location: nextUrl,
+        "Cache-Control": "no-store",
+        ...corsHeaders(origin),
+      },
+    });
+  }
+  const html = status >= 200 && status < 300
+    ? successDocument(body || {}, pageLang)
+    : errorDocument(pageLang || "nl");
+  return htmlResponse(html, status, origin);
+}
+
+function htmlResponse(html, status, origin) {
+  return new Response(html, {
+    status,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+      ...corsHeaders(origin),
+    },
+  });
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function pageShell(lang, title, innerHtml, href, linkText) {
+  const safeTitle = escapeHtml(title);
+  return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>${safeTitle}</title>
+</head>
+<body>
+<main>
+<h1>${safeTitle}</h1>
+${innerHtml}
+<p><a href="${escapeHtml(href)}">${escapeHtml(linkText)}</a></p>
+</main>
+</body>
+</html>`;
+}
+
+function successDocument(body, pageLang) {
+  if (body.bron === "offerte-audit") {
+    const message = "Bedankt, je aanvraag is binnen. We sturen je binnen 1 werkdag een offerte op maat. Wil je iets aanvullen? Beantwoord gewoon onze mail.";
+    return pageShell(
+      "nl",
+      "Bedankt, je aanvraag is binnen",
+      `<p>${escapeHtml(message)}</p>`,
+      "https://www.properaccess.nl/offerte-wcag-onderzoek/",
+      "Offerte aanvragen"
+    );
+  }
+  if (pageLang === "en") {
+    const message = "Message sent! We will get back to you within 1 business day.";
+    return pageShell(
+      "en",
+      "Message sent",
+      `<p>${escapeHtml(message)}</p>`,
+      "https://www.properaccess.nl/en/contact/",
+      "Contact"
+    );
+  }
+  const message = "Bericht verstuurd! We nemen binnen 1 werkdag contact op.";
+  return pageShell(
+    "nl",
+    "Bericht verstuurd",
+    `<p>${escapeHtml(message)}</p>`,
+    "https://www.properaccess.nl/contact/",
+    "Contact"
+  );
+}
+
+function errorDocument(pageLang) {
+  const message = "Er ging iets mis. Probeer het later opnieuw.";
+  if (pageLang === "en") {
+    return pageShell(
+      "en",
+      "Contact",
+      `<p lang="nl">${escapeHtml(message)}</p>`,
+      "https://www.properaccess.nl/en/contact/",
+      "Contact"
+    );
+  }
+  return pageShell(
+    "nl",
+    "Er ging iets mis",
+    `<p>${escapeHtml(message)}</p>`,
+    "https://www.properaccess.nl/contact/",
+    "Contact"
+  );
 }
 
 // ── Quiz email ──────────────────────────────────────────────

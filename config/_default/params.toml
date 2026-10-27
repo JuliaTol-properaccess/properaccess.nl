@@ -19,6 +19,10 @@ theme_switcher = false
 mainSections = ["blog"]
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+# Zelfde adres als WORKER_URL in static/js/form-submit.js. Contact, CTA en offerte
+# posten hier ook zonder JavaScript. De worker moet daarvoor uitgerold zijn
+# (tools/pipedrive-forms/worker.js).
+form_submit_endpoint = "https://pipedrive-forms.juliatol.workers.dev/submit"
 # google tag manager — niet meer in gebruik, analytics loopt via Plausible (zie head.html)
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
