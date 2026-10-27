@@ -45,18 +45,28 @@ Heb je een webshop? Dan testen we ook het bestelproces. We doen ons uiterste bes
 {{< offerte-section title="5. Jouw verplichtingen" >}}
 
 - Je zorgt dat de informatie die je ons geeft klopt en volledig is. Hoe beter wij geinformeerd zijn, hoe beter het onderzoek.
-- Je volgt onze adviezen binnen redelijke grenzen op om je digitale toegankelijkheid te verbeteren. De hercontrole van een onderzoek kan maximaal drie maanden na oplevering worden ingepland. Daarna is een nieuw onderzoek nodig.
+- Je volgt onze adviezen binnen redelijke grenzen op om je digitale toegankelijkheid te verbeteren. Een hercontrole kan maximaal drie maanden na oplevering worden ingepland. Daarna is een nieuw onderzoek nodig.
 - Je respecteert de intellectuele eigendomsrechten op de materialen die wij verstrekken. Oftewel: niet doorverkopen aan je buurman.
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="6. Betalingen" bg="light" >}}
+{{< offerte-section title="6. Hercontrole en algemene toegankelijkheid" bg="light" >}}
+
+Wanneer uit een audit blijkt dat een website volledig toegankelijk is, kunnen we met vertrouwen verklaren dat de website volledig toegankelijk is.
+
+Voor een hercontrole geldt een andere werkwijze. Een hercontrole is bedoeld om te controleren of de bevindingen uit het eerste rapport zijn opgelost. De website wordt dan niet opnieuw volledig onderzocht; daarvoor is binnen een hercontrole simpelweg geen tijd. Een hercontrole duurt maximaal vier uur. Dat komt neer op ongeveer vijf tot zeven minuten per bevinding.
+
+Na een hercontrole kunnen we daarom geen uitspraak doen over de volledige toegankelijkheid van de website. We kunnen wel verklaren dat alle bevindingen uit het eerste onderzoek zijn opgelost. We kunnen niet verklaren dat de website volledig toegankelijk is, omdat de rest van de website tijdens de hercontrole niet opnieuw is onderzocht. Dit is de gebruikelijke werkwijze bij hercontroles door toegankelijkheidsbureaus in Nederland.
+
+{{< /offerte-section >}}
+
+{{< offerte-section title="7. Betalingen" >}}
 
 De prijs van de dienst wordt vooraf overeengekomen en vastgelegd in de offerte. Elke offerte is maatwerk. Er zijn geen verborgen kosten of onverwachte toeslagen.
 
 Voor audits en andere diensten geldt een aanbetaling van 50% van het offertebedrag bij ondertekening van de offerte. De resterende 50% wordt gefactureerd bij oplevering van de dienst.
 
-Facturen dienen binnen 30 dagen na factuurdatum te worden voldaan, tenzij schriftelijk anders is overeengekomen.
+Facturen dienen binnen 21 dagen na factuurdatum te worden voldaan, tenzij schriftelijk anders is overeengekomen.
 
 Bij annulering van de opdracht door de opdrachtgever meer dan 14 kalenderdagen vóór de overeengekomen startdatum van de audit wordt de aanbetaling volledig terugbetaald. Bij annulering binnen 14 kalenderdagen vóór de startdatum vervalt het recht op terugbetaling van de aanbetaling.
 
@@ -64,35 +74,35 @@ Indien Proper Access de overeengekomen dienst na ontvangst van de aanbetaling ni
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="7. SEO en webstatistieken" >}}
+{{< offerte-section title="8. SEO en webstatistieken" >}}
 
 Goed om te weten: het toegankelijk maken van je website kan invloed hebben op je SEO-resultaten of andere webstatistieken. Soms tijdelijk, soms structureel. Dat is een normaal bijeffect van het aanpassen van je code en content. Het goede nieuws? Een toegankelijke website is op de lange termijn bijna altijd beter voor je vindbaarheid. Maar we willen dat je het weet voordat je begint.
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="8. Beperking van aansprakelijkheid" bg="light" >}}
+{{< offerte-section title="9. Beperking van aansprakelijkheid" bg="light" >}}
 
 We doen ons best om je van topkwaliteit te voorzien. Een toegankelijkheidsonderzoek kan niet leiden tot het stuk maken van je website of app: we kijken alleen mee, we bouwen niks om.
 
-We gaan zeer zorgvuldig om met alle informatie die je ons verstrekt en zullen de informatie die we op jouw website tegenkomen niet openbaar maken.
+We gaan zeer zorgvuldig om met alle informatie die je ons verstrekt en zullen de informatie die we op jouw website tegenkomen niet openbaar maken. Alle verstrekte testacounts en wachtwoorden worden na het opleveren van de audit gewist. 
 
 We kunnen niet garanderen dat onze diensten altijd aan al je verwachtingen voldoen, maar we doen ons uiterste best om elke fout in de dienstverlening binnen de afgesproken tijd te corrigeren. Wij zijn niet aansprakelijk voor indirecte schade of gevolgschade, waaronder eventuele wijzigingen in SEO-resultaten of webstatistieken als gevolg van het doorvoeren van toegankelijkheidsverbeteringen.
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="9. Wijzigingen in de voorwaarden" >}}
+{{< offerte-section title="10. Wijzigingen in de voorwaarden" >}}
 
 We kunnen deze voorwaarden af en toe bijwerken. We doen ons best om je daarover te informeren, maar het is je eigen verantwoordelijkheid om de laatste versie te checken. Tip: bookmark deze pagina.
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="10. Toepasselijk recht" bg="light" >}}
+{{< offerte-section title="11. Toepasselijk recht" bg="light" >}}
 
 Op deze algemene voorwaarden is het Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland. Maar we lossen het liever op met een goed gesprek.
 
 {{< /offerte-section >}}
 
-{{< offerte-section title="11. Contact" >}}
+{{< offerte-section title="12. Contact" >}}
 
 Heb je vragen over deze voorwaarden? Neem gerust contact met ons op via [info@properaccess.nl](mailto:info@properaccess.nl).
 
