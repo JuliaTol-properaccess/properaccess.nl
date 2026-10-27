@@ -52,11 +52,15 @@ Heb je een webshop? Dan testen we ook het bestelproces. We doen ons uiterste bes
 
 {{< offerte-section title="6. Betalingen" bg="light" >}}
 
-De prijs spreken we vooraf af. Elke offerte is maatwerk: geen verborgen kosten, geen verrassingen. Voor audits en andere diensten betaal je 50% bij het ondertekenen van de offerte en 50% bij de oplevering van de dienst. Betalingen moeten binnen 30 dagen na de factuurdatum worden voldaan, tenzij we iets anders afspreken.
+De prijs van de dienst wordt vooraf overeengekomen en vastgelegd in de offerte. Elke offerte is maatwerk. Er zijn geen verborgen kosten of onverwachte toeslagen.
 
-Annuleer je de opdracht meer dan twee weken voor de afgesproken startdatum van de audit, dan storten we de aanbetaling van 50% volledig terug. Bij annulering binnen twee weken voor de startdatum wordt de aanbetaling niet terugbetaald.
+Voor audits en andere diensten geldt een aanbetaling van 50% van het offertebedrag bij ondertekening van de offerte. De resterende 50% wordt gefactureerd bij oplevering van de dienst.
 
-Als Proper Access een dienst na ontvangst van de aanbetaling niet levert, storten we de aanbetaling van 50% volledig terug.
+Facturen dienen binnen 30 dagen na factuurdatum te worden voldaan, tenzij schriftelijk anders is overeengekomen.
+
+Bij annulering van de opdracht door de opdrachtgever meer dan 14 kalenderdagen vóór de overeengekomen startdatum van de audit wordt de aanbetaling volledig terugbetaald. Bij annulering binnen 14 kalenderdagen vóór de startdatum vervalt het recht op terugbetaling van de aanbetaling.
+
+Indien Proper Access de overeengekomen dienst na ontvangst van de aanbetaling niet levert, wordt de aanbetaling volledig terugbetaald.
 
 {{< /offerte-section >}}
 
