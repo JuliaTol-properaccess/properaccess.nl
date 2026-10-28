@@ -58,6 +58,8 @@ Voor een hercontrole geldt een andere werkwijze. Een hercontrole is bedoeld om t
 
 Na een hercontrole kunnen we daarom geen uitspraak doen over de volledige toegankelijkheid van de website. We kunnen wel verklaren dat alle bevindingen uit het eerste onderzoek zijn opgelost. We kunnen niet verklaren dat de website volledig toegankelijk is, omdat de rest van de website tijdens de hercontrole niet opnieuw is onderzocht. Dit is de gebruikelijke werkwijze bij hercontroles door toegankelijkheidsbureaus in Nederland.
 
+Als bij de hercontrole blijkt dat meer dan 40% van de pagina's uit de oorspronkelijke steekproef niet meer live staat, kunnen we de hercontrole niet meer uitvoeren. De website is dan te veel veranderd om de resultaten nog betrouwbaar met de oorspronkelijke audit te vergelijken. Bestaat een pdf-document uit de oorspronkelijke steekproef niet meer, dan zoeken we altijd twee nieuwe pdf-documenten. Zo blijft de steekproef van de hercontrole gelijk aan die van de oorspronkelijke audit.
+
 {{< /offerte-section >}}
 
 {{< offerte-section title="7. Betalingen" >}}
