@@ -56,7 +56,8 @@ kolommen:
       - { naam: "Zoeken op de website", url: "/#vraag", icoon: "zoek" }
       - { naam: "Digitale toegankelijkheid", url: "/digitale-toegankelijkheid/" }
       - { naam: "De European Accessibility Act", url: "/eaa/" }
-      - { naam: "De toegankelijkheidsverklaring", url: "/toegankelijkheidsverklaring/" }
+      - { naam: "Toegankelijkheidsverklaring overheid", url: "/toegankelijkheidsverklaring-overheid/" }
+      - { naam: "Toegankelijkheidsverklaring markt", url: "/toegankelijkheidsverklaring-markt/" }
       - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
       - { naam: "Onderzoek", url: "/onderzoek/" }
       - { naam: "Nieuws over toegankelijkheid", url: "/nieuws/" }

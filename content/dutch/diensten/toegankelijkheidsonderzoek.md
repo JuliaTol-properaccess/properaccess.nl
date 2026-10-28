@@ -191,7 +191,7 @@ kennismaking krijg je een vaste prijs, geen nacalculatie.
 In de prijs zitten ook een nabespreking en één [hercontrole](/hercontrole/). In de
 nabespreking lopen we het rapport samen door en helpen we prioriteren. De hercontrole binnen
 4 maanden legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt
-voor je [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) en bij handhaving. Wil je tijdens het oplossen
+voor je [toegankelijkheidsverklaring](/toegankelijkheidsverklaring-overheid/) en bij handhaving. Wil je tijdens het oplossen
 kunnen overleggen, dan kan dat met een [strippenkaart](/strippenkaart/).
 
 Meer over de opbouw van de prijs lees je in het artikel

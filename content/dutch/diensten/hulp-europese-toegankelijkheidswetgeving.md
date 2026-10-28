@@ -186,7 +186,7 @@ Iemand legt vast dat de problemen werkelijk zijn opgelost. Zonder die stap heb j
 {{< /route-stap >}}
 
 {{< route-stap n="04" title="Verantwoording" >}}
-Een [toegankelijkheidsverklaring](/toegankelijkheidsverklaring/) in het Register bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op een eigen pagina op je website publiceert.
+Een [toegankelijkheidsverklaring in het Register](/toegankelijkheidsverklaring-overheid/) bij het BDTO, en onder de EAA de informatie over toegankelijkheid die je op een eigen pagina op je website publiceert in een [EAA-toegankelijkheidsverklaring](/toegankelijkheidsverklaring-markt/).
 {{< /route-stap >}}
 
 {{< /section-route >}}
@@ -211,7 +211,7 @@ We toetsen de opgeloste bevindingen opnieuw en leggen vast dat ze weg zijn. Dat 
 Wat het kost hangt af van het aantal bevindingen in je rapport. Je krijgt die prijs in een aparte offerte nadat het rapport er ligt, zodat je weet waar je ja tegen zegt.
 {{< /dienst-kaart >}}
 
-{{< dienst-kaart title="Verantwoording" prijs="Onderdeel van het onderzoek, geen apart tarief" link="/toegankelijkheidsverklaring/" cta="Bekijk de verklaring" >}}
+{{< dienst-kaart title="Verantwoording" prijs="Onderdeel van het onderzoek, geen apart tarief" link="/toegankelijkheidsverklaring-overheid/" cta="Bekijk de verklaring" >}}
 We leveren het rapport in de vorm die het Register van Toegankelijkheidsverklaringen vraagt, en helpen bij het invullen in de Mijn-omgeving van DigiToegankelijk.
 
 Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. Wij werken volgens WCAG-EM. Val je onder de EAA, dan gaat het om de informatie die je zelf publiceert.
