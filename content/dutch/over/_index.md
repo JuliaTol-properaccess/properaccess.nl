@@ -6,7 +6,7 @@ type: "over"
 # /team gaf een 404 en werd in de week van 21-09-2026 nog bezocht.
 aliases:
   - "/team"
-description: "Proper Access helpt bedrijven en overheden om websites en apps toegankelijk te maken voor iedereen. Onafhankelijk specialistisch auditbureau voor digitale toegankelijkheid."
+description: "Over Proper Access: onafhankelijk auditbureau voor digitale toegankelijkheid, met handmatige WCAG-audits, concrete rapporten en begeleiding."
 keywords:
   [
     "WCAG",
