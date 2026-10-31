@@ -1,5 +1,5 @@
 ---
-title: "Tabellen"
+title: "HTML-tabellen voor gestructureerde data"
 section_number: 1
 chapter_number: 7
 locked: false

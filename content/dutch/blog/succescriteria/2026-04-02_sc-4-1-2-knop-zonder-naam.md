@@ -1,5 +1,5 @@
 ---
-title: "Knop zonder naam"
+title: "WCAG 4.1.2: knop zonder naam"
 date: 2026-04-02
 slug: "sc-4-1-2-knop-zonder-naam"
 categories:
