@@ -1,5 +1,5 @@
 ---
-title: "Knop zonder naam"
+title: "Knop zonder naam in een webshop"
 date: 2026-05-02
 slug: "webshop-knop-zonder-naam"
 categories:

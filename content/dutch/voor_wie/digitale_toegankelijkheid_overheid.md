@@ -1,7 +1,7 @@
 ---
 title: "Toegankelijkheidsonderzoek voor overheidsorganisaties"
 weight: 1
-meta_title: "Toegankelijkheidsonderzoek voor overheidsorganisaties | Proper Access"
+meta_title: "Toegankelijkheidsonderzoek voor gemeenten en overheden | Proper Access"
 date: 2025-04-02
 lastmod: 2026-09-17
 slug: "digitale-toegankelijkheid-overheid"

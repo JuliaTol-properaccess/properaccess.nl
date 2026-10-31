@@ -163,6 +163,31 @@ if (!(await exists(publicDir))) {
   addCheck("html-pages", "pass", `${pages.length} HTML-pagina's gevonden`, { count: pages.length });
   addCheck("indexable-pages", "pass", `${pages.filter((page) => !page.noindex).length} indexeerbare pagina's gecontroleerd`);
 
+  for (const field of ["title", "description"]) {
+    const byValue = new Map();
+    for (const page of pages) {
+      const value = page[field];
+      if (!value || page.noindex) continue;
+      // Een Nederlandse en Engelse pagina mogen dezelfde fallbacktitel hebben.
+      // Zoek alleen dubbelen binnen dezelfde taalvariant.
+      const language = page.url.startsWith("/en/") ? "en" : "nl";
+      const key = `${language}\u0000${value}`;
+      const urls = byValue.get(key) || [];
+      urls.push(page.url);
+      byValue.set(key, urls);
+    }
+    for (const [key, urls] of byValue) {
+      if (urls.length < 2) continue;
+      addFinding(
+        field === "title" ? "medium" : "low",
+        "SEO",
+        `Indexeerbare pagina's delen dezelfde ${field}`,
+        urls.join(" | "),
+        `Maak de ${field} uniek per zoekintentie, of geef één pagina een passende canonical/noindex-instructie.`
+      );
+    }
+  }
+
   const robotsPath = join(publicDir, "robots.txt");
   if (await exists(robotsPath)) {
     const robots = await readFile(robotsPath, "utf8");
