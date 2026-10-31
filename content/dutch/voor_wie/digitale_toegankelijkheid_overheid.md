@@ -11,16 +11,10 @@ aliases:
 layout: "single"
 description: "Onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties, volgens WCAG-EM. Bruikbaar als onderbouwing van je verklaring in het Register."
 tldr: |
-  Proper Access doet onafhankelijk toegankelijkheidsonderzoek voor overheidsorganisaties in
-  Nederland: gemeenten, provincies, waterschappen, ministeries, uitvoeringsorganisaties,
-  zelfstandige bestuursorganen en andere publiekrechtelijke instellingen. We onderzoeken
-  websites, apps, intranetten, aanvraagformulieren en portalen achter een inlog volgens
-  WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde
-  evaluatiemethode: WCAG-EM of gelijkwaardig. Dat geldt voor status A en ook voor status B.
-  Het rapport onderbouwt je toegankelijkheidsverklaring. Wij bouwen en beheren zelf
-  geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de
-  provincies Noord-Holland en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en
-  's-Hertogenbosch. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken.
+  Proper Access onderzoekt de toegankelijkheid van websites, apps en portalen van
+  overheidsorganisaties. Met ons rapport onderbouw je je toegankelijkheidsverklaring in het
+  Register van Toegankelijkheidsverklaringen. Wij bouwen zelf geen websites, dus we keuren
+  nooit ons eigen werk. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken.
 keywords:
   - toegankelijkheidsonderzoek overheid
   - toegankelijkheidsonderzoek overheidsorganisatie
