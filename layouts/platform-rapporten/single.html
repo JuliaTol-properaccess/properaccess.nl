@@ -82,7 +82,7 @@
                       <th scope="col">Datum</th>
                       <th scope="col">Geldigheid</th>
                       <th scope="col">Contentonderzoek nodig?</th>
-                      <th scope="col">Goedgekeurde SC</th>
+                      <th scope="col">Goedgekeurde / afgekeurde SC</th>
                       <th scope="col">Rapport</th>
                     </tr>
                   </thead>
@@ -95,12 +95,16 @@
                         <td><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
                         <td>{{ .status }}</td>
                         <td>{{ .content_nodig }}</td>
-                        <td>{{ .goedgekeurde_sc }}</td>
+                        <td>{{ .goedgekeurde_sc }} / {{ with .afgekeurde_sc }}{{ . }}{{ else }}Onbekend{{ end }}</td>
                         <td>
-                          {{ with .rapport_url }}
-                            <a class="pr-table__link" href="{{ . }}" target="_blank" rel="noopener">Bekijk<span class="sr-only"> rapport (opent in nieuw venster)</span></a>
+                          {{ if .geen_rapport }}
+                            Geen rapport
                           {{ else }}
-                            Onbekend
+                            {{ with .rapport_url }}
+                            <a class="pr-table__link" href="{{ . }}" target="_blank" rel="noopener">Bekijk<span class="sr-only"> rapport (opent in nieuw venster)</span></a>
+                            {{ else }}
+                              Onbekend
+                            {{ end }}
                           {{ end }}
                         </td>
                       </tr>
@@ -271,14 +275,14 @@
   .pr-table tbody td {
     border-bottom: 1px solid #e5e7eb;
   }
-  .pr-table__platform { width: 20%; }
-  .pr-table__supplier { width: 14%; }
-  .pr-table__type { width: 11%; }
-  .pr-table__date { width: 11%; }
-  .pr-table__status { width: 13%; }
-  .pr-table__content { width: 15%; }
-  .pr-table__sc { width: 9%; }
-  .pr-table__report { width: 7%; }
+  .pr-table__platform { width: 19%; }
+  .pr-table__supplier { width: 13%; }
+  .pr-table__type { width: 10%; }
+  .pr-table__date { width: 10%; }
+  .pr-table__status { width: 12%; }
+  .pr-table__content { width: 14%; }
+  .pr-table__sc { width: 12%; }
+  .pr-table__report { width: 10%; }
   .pr-table__link { white-space: nowrap; }
   .pr-rapport-update {
     display: flex;
