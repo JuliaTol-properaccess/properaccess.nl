@@ -31,18 +31,21 @@
     <div class="sectie-prose">
       <h2>Techniek van het platform, content van je organisatie</h2>
       <p>Een leverancier kan de techniek van een platform laten onderzoeken. Gebruik je dat platform voor je eigen website, dan moet je nog controleren of het rapport jouw versie en gebruikssituatie dekt. De content van je organisatie staat meestal los van het technische platform.</p>
-      <p>In dit overzicht staat per technisch rapport welke informatie beschikbaar is. Zo zie je direct of je naast het rapport over de techniek ook een contentaudit nodig hebt. Een rapport is geen uitspraak dat elke website op het platform toegankelijk is.</p>
+      <p>In dit overzicht staat per rapport welke informatie beschikbaar is. Zo zie je direct of je naast het rapport over de techniek ook een contentaudit nodig hebt. Een rapport is geen uitspraak dat elke website op het platform toegankelijk is.</p>
+      <p><small>Bron: {{ hugo.Data.platform_rapporten.bron }}. Dit overzicht bevat {{ len hugo.Data.platform_rapporten.rapporten }} rapportregels. De status is bijgewerkt op {{ hugo.Data.platform_rapporten.peildatum }}.</small></p>
 
       <h2 id="overzicht">Overzicht technische rapporten</h2>
       <div class="overflow-x-auto" tabindex="0" aria-label="Tabel met technische rapporten. Veeg horizontaal om alle kolommen te bekijken.">
-        <table class="min-w-[1050px]">
+        <table class="min-w-[1200px]">
           <caption class="sr-only">Technische rapporten van platformen voor overheidsorganisaties</caption>
           <thead>
             <tr>
               <th scope="col">Platform</th>
               <th scope="col">Leverancier</th>
               <th scope="col">Categorie</th>
+              <th scope="col">Soort rapport</th>
               <th scope="col">Datum rapport</th>
+              <th scope="col">Status</th>
               <th scope="col">Content nodig?</th>
               <th scope="col">Goedgekeurde SC</th>
               <th scope="col">Rapport</th>
@@ -55,7 +58,9 @@
                   <th scope="row">{{ .platform }}</th>
                   <td>{{ .leverancier }}</td>
                   <td>{{ .categorie }}</td>
+                  <td>{{ .rapport_type }}</td>
                   <td><time datetime="{{ .rapport_datum_iso | default .rapport_datum }}">{{ .rapport_datum }}</time></td>
+                  <td>{{ .status }}</td>
                   <td>{{ .content_nodig }}</td>
                   <td>{{ .goedgekeurde_sc }}</td>
                   <td>
@@ -69,13 +74,14 @@
               {{ end }}
             {{ else }}
               <tr>
-                <td colspan="7">De rapporten worden toegevoegd zodra de brongegevens zijn verwerkt.</td>
+                <td colspan="9">De rapporten worden toegevoegd zodra de brongegevens zijn verwerkt.</td>
               </tr>
             {{ end }}
           </tbody>
         </table>
       </div>
       <p><small>De tabel wordt aangevuld op basis van beschikbare rapportgegevens. Controleer altijd de reikwijdte, de datum en de inhoud van het rapport voordat je het gebruikt als onderbouwing van een toegankelijkheidsverklaring.</small></p>
+      <p><small>De kolom <strong>Content nodig?</strong> is afgeleid van het rapporttype in de bron. Bij een techniekrapport staat “Ja”, bij een contentrapport “Nee”. Bij “Volledig of onbekend” en “Techniek en content genoemd” staat “Onbekend”. Het aantal goedgekeurde succescriteria is berekend als getoetste criteria minus afgekeurde criteria.</small></p>
       <p><a href="#nieuw-rapport">Wil je jouw technische rapport laten opnemen? Meld het rapport aan.</a></p>
 
       <div class="pr-rapport-update">
