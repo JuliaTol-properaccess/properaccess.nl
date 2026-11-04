@@ -38,7 +38,7 @@
             {{ $rapporten := hugo.Data.platform_rapporten.rapporten }}
             {{ $categories := slice }}
             {{ range $rapporten }}
-              {{ if not (in $categories .categorie) }}
+              {{ if and (ne .categorie "Gedeelde websites en samenwerkingen") (not (in $categories .categorie)) }}
                 {{ $categories = $categories | append .categorie }}
               {{ end }}
             {{ end }}
