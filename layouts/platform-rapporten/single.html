@@ -6,7 +6,7 @@
       <div class="hp-hero__text">
         <span class="hp-hero__badge">Voor de overheid</span>
         <h1 class="hp-hero__title">Technische rapporten van overheidsplatformen</h1>
-        <p class="hp-hero__subtitle">Vind sneller het technische rapport van het platform waarop jouw overheidswebsite draait. Vergelijk leverancier, categorie, datum, contentonderzoek en goedgekeurde succescriteria.</p>
+        <p class="hp-hero__subtitle">Vind het technische rapport van het platform waarop jouw overheidswebsite draait. Bekijk per categorie de leverancier, de rapportdatum, de geldigheid, de vraag of contentonderzoek nodig is en het aantal goedgekeurde succescriteria.</p>
       </div>
       <div class="hp-hero__visual" aria-hidden="true">
         <div class="hp-pain-card hp-pain-card--summary">
@@ -17,7 +17,7 @@
           <h2 class="hp-pain-card__title">Eén overzicht voor je platformkeuze</h2>
           <ul class="hp-pain-card__list">
             <li>Leverancier en categorie</li>
-            <li>Datum en rapportlink</li>
+            <li>Datum en geldigheid</li>
             <li>Is een contentonderzoek nodig?</li>
             <li>Hoe toegankelijk is het?</li>
           </ul>
@@ -27,88 +27,110 @@
   </div>
 </section>
 
-<section class="section-sm">
-  <div class="container">
-    <div class="sectie-prose">
-      <h2>Techniek van het platform, content van je organisatie</h2>
-      <p>Een leverancier kan de techniek van een platform laten onderzoeken. Gebruik je dat platform voor je eigen website, dan moet je nog controleren of het rapport jouw versie en gebruikssituatie dekt. De content van je organisatie staat meestal los van het technische platform.</p>
-      <p>In dit overzicht staat per rapport welke informatie beschikbaar is. Zo zie je direct of je naast het rapport over de techniek ook een contentaudit nodig hebt. Een rapport is geen uitspraak dat elke website op het platform toegankelijk is.</p>
-      <p><small>Bron: {{ hugo.Data.platform_rapporten.bron }}. Dit overzicht bevat {{ len hugo.Data.platform_rapporten.rapporten }} rapportregels. De status is bijgewerkt op {{ hugo.Data.platform_rapporten.peildatum }}.</small></p>
-
-      <h2 id="overzicht">Overzicht technische rapporten</h2>
-      <div class="overflow-x-auto" tabindex="0" aria-label="Tabel met technische rapporten. Veeg horizontaal om alle kolommen te bekijken.">
-        <table class="min-w-[1200px]">
-          <caption class="sr-only">Technische rapporten van platformen voor overheidsorganisaties</caption>
-          <thead>
-            <tr>
-              <th scope="col">Platform</th>
-              <th scope="col">Leverancier</th>
-              <th scope="col">Categorie</th>
-              <th scope="col">Soort rapport</th>
-              <th scope="col">Datum rapport</th>
-              <th scope="col">Status</th>
-              <th scope="col">Content nodig?</th>
-              <th scope="col">Goedgekeurde SC</th>
-              <th scope="col">Rapport</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{ with hugo.Data.platform_rapporten.rapporten }}
-              {{ range . }}
-                <tr>
-                  <th scope="row">{{ .platform }}</th>
-                  <td>{{ .leverancier }}</td>
-                  <td>{{ .categorie }}</td>
-                  <td>{{ .rapport_type }}</td>
-                  <td><time datetime="{{ .rapport_datum_iso | default .rapport_datum }}">{{ .rapport_datum }}</time></td>
-                  <td>{{ .status }}</td>
-                  <td>{{ .content_nodig }}</td>
-                  <td>{{ .goedgekeurde_sc }}</td>
-                  <td>
-                    {{ with .rapport_url }}
-                      <a href="{{ . }}" target="_blank" rel="noopener">Bekijk rapport<span class="sr-only"> (opent in nieuw venster)</span></a>
-                    {{ else }}
-                      Nog niet beschikbaar
-                    {{ end }}
-                  </td>
-                </tr>
+<section class="section-sm pr-overzicht">
+  <div class="pr-container">
+    <div class="pr-layout">
+      <aside class="pr-toc" aria-label="Op deze pagina">
+        <span class="pr-toc__label">Op deze pagina</span>
+        <nav>
+          <ul>
+            <li><a href="#overzicht">Overzicht</a></li>
+            {{ $rapporten := hugo.Data.platform_rapporten.rapporten }}
+            {{ $categories := slice }}
+            {{ range $rapporten }}
+              {{ if not (in $categories .categorie) }}
+                {{ $categories = $categories | append .categorie }}
               {{ end }}
-            {{ else }}
-              <tr>
-                <td colspan="9">De rapporten worden toegevoegd zodra de brongegevens zijn verwerkt.</td>
-              </tr>
             {{ end }}
-          </tbody>
-        </table>
-      </div>
-      <p><small>De tabel wordt aangevuld op basis van beschikbare rapportgegevens. Controleer altijd de reikwijdte, de datum en de inhoud van het rapport voordat je het gebruikt als onderbouwing van een toegankelijkheidsverklaring.</small></p>
-      <p><small>De kolom <strong>Content nodig?</strong> is afgeleid van het rapporttype in de bron. Bij een techniekrapport staat “Ja”, bij een contentrapport “Nee”. Bij “Volledig of onbekend” en “Techniek en content genoemd” staat “Onbekend”. Het aantal goedgekeurde succescriteria is berekend als getoetste criteria minus afgekeurde criteria.</small></p>
-      <p><a href="#nieuw-rapport">Wil je jouw technische rapport laten opnemen? Meld het rapport aan.</a></p>
+            {{ range $categories }}
+              <li><a href="#{{ anchorize . }}">{{ . }}</a></li>
+            {{ end }}
+            <li><a href="#rapport-wijzigen">Rapport corrigeren</a></li>
+            <li><a href="#nieuw-rapport">Rapport toevoegen</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <div class="pr-rapport-update">
-        <div>
-          <h2 id="rapport-wijzigen">Zie je iets wat niet klopt?</h2>
-          <p>Is je rapport vernieuwd, gewijzigd of verkeerd vermeld? Mail ons de correctie en de nieuwe rapportlink. Dan controleren we de gegevens.</p>
+      <main class="pr-content">
+        <h2 id="overzicht">Overzicht technische rapporten</h2>
+        <p>Een leverancier kan de techniek van een platform laten onderzoeken. Gebruik je dat platform voor je eigen website, dan moet je nog controleren of het rapport jouw versie en gebruikssituatie dekt. De content van je organisatie staat meestal los van het technische platform.</p>
+        <p>In dit overzicht staan alleen rapporten over techniek of een volledig onderzoek. Rapporten met alleen een contentonderzoek staan hier niet tussen. Een rapport is geen uitspraak dat elke website op het platform toegankelijk is.</p>
+        <p class="pr-meta"><strong>Laatst bijgewerkt:</strong> {{ hugo.Data.platform_rapporten.bijgewerkt }} · <strong>Updatefrequentie:</strong> {{ hugo.Data.platform_rapporten.updatefrequentie }} · <strong>Rapporten:</strong> {{ len $rapporten }}</p>
+
+        <p class="pr-uitleg"><strong>Contentonderzoek nodig?</strong> Bij een techniekrapport staat “Ja”. Bij een volledig rapport staat “Nee”, behalve wanneer in de rapportbeschrijving staat dat content buiten de scope valt. Dan staat er “Ja”.</p>
+
+        {{ if $categories }}
+          {{ range $categories }}
+            {{ $category := . }}
+            <section class="pr-category" id="{{ anchorize $category }}">
+              <h3>{{ $category }}</h3>
+              <div class="pr-table-wrap">
+                <table class="pr-table">
+                  <caption class="sr-only">Technische rapporten in de categorie {{ $category }}</caption>
+                  <colgroup>
+                    <col class="pr-table__platform" />
+                    <col class="pr-table__supplier" />
+                    <col class="pr-table__type" />
+                    <col class="pr-table__date" />
+                    <col class="pr-table__status" />
+                    <col class="pr-table__content" />
+                    <col class="pr-table__sc" />
+                    <col class="pr-table__report" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Platform</th>
+                      <th scope="col">Leverancier</th>
+                      <th scope="col">Soort rapport</th>
+                      <th scope="col">Datum</th>
+                      <th scope="col">Geldigheid</th>
+                      <th scope="col">Contentonderzoek nodig?</th>
+                      <th scope="col">Goedgekeurde SC</th>
+                      <th scope="col">Rapport</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{ range where $rapporten "categorie" $category }}
+                      <tr>
+                        <th scope="row">{{ .platform }}</th>
+                        <td>{{ .leverancier }}</td>
+                        <td>{{ .rapport_type }}</td>
+                        <td><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
+                        <td>{{ .status }}</td>
+                        <td>{{ .content_nodig }}</td>
+                        <td>{{ .goedgekeurde_sc }}</td>
+                        <td>
+                          {{ with .rapport_url }}
+                            <a class="pr-table__link" href="{{ . }}" target="_blank" rel="noopener">Bekijk<span class="sr-only"> rapport (opent in nieuw venster)</span></a>
+                          {{ else }}
+                            Onbekend
+                          {{ end }}
+                        </td>
+                      </tr>
+                    {{ end }}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          {{ end }}
+        {{ else }}
+          <p>De rapporten worden toegevoegd zodra de brongegevens zijn verwerkt.</p>
+        {{ end }}
+
+        <div class="pr-rapport-update" id="rapport-wijzigen">
+          <div>
+            <h2>Zie je iets wat niet klopt?</h2>
+            <p>Is je rapport vernieuwd, gewijzigd of verkeerd vermeld? Mail ons de correctie en de nieuwe rapportlink. Dan controleren we de gegevens.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:julia@properaccess.nl?subject=Correctie%20of%20vernieuwing%20technisch%20rapport">Zie je iets wat niet klopt?</a>
         </div>
-        <a class="btn btn-primary" href="mailto:julia@properaccess.nl?subject=Correctie%20of%20vernieuwing%20technisch%20rapport">Zie je iets wat niet klopt?</a>
-      </div>
-
-      <h2>Welke gegevens staan in de tabel?</h2>
-      <dl>
-        <dt>Content nodig?</dt>
-        <dd>Geeft aan of je naast het technische rapport nog een afzonderlijk contentonderzoek moet laten uitvoeren.</dd>
-        <dt>Goedgekeurde SC</dt>
-        <dd>Het aantal succescriteria dat in het technische rapport als goedgekeurd staat vermeld. SC betekent succescriterium.</dd>
-      </dl>
-
-      <h2>Mis je een platform?</h2>
-      <p>Ken je een technisch rapport dat nog niet in het overzicht staat? <a href="/contact/">Laat het ons weten</a>. We voegen alleen gegevens toe die we kunnen controleren.</p>
+      </main>
     </div>
   </div>
 </section>
 
 <section class="section-sm bg-light" id="nieuw-rapport">
-  <div class="container">
+  <div class="pr-container">
     <div class="pr-aanmelden">
       <div class="pr-aanmelden__intro">
         <span class="hp-hero__badge">Voor leveranciers</span>
@@ -170,13 +192,102 @@
   </div>
 </section>
 
+<a class="pr-floating-cta" href="#nieuw-rapport">
+  <span class="material-symbols-outlined" aria-hidden="true">add</span>
+  <span>Rapport toevoegen</span>
+</a>
+
 <style>
+  .pr-container {
+    width: min(100% - 2rem, 1440px);
+    margin: 0 auto;
+  }
+  .pr-layout {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .pr-toc {
+    position: sticky;
+    top: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #A30D4B;
+  }
+  .pr-toc__label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #A30D4B;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pr-toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pr-toc li { margin: 0 0 0.6rem; }
+  .pr-toc a { color: #1F2937; font-weight: 700; }
+  .pr-toc a:hover,
+  .pr-toc a:focus-visible { color: #A30D4B; }
+  .pr-meta {
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #A30D4B;
+    background: #f5f5f5;
+  }
+  .pr-uitleg {
+    font-size: 0.95rem;
+  }
+  .pr-category {
+    scroll-margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  .pr-category h3 {
+    margin-bottom: 1rem;
+  }
+  .pr-table-wrap {
+    overflow-x: auto;
+  }
+  .pr-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .pr-table th,
+  .pr-table td {
+    width: auto;
+    padding: 0.7rem 0.55rem;
+    text-align: left !important;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+  .pr-table thead th {
+    border-bottom: 2px solid #1F2937;
+    font-weight: 800;
+  }
+  .pr-table tbody th,
+  .pr-table tbody td {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .pr-table__platform { width: 20%; }
+  .pr-table__supplier { width: 14%; }
+  .pr-table__type { width: 11%; }
+  .pr-table__date { width: 11%; }
+  .pr-table__status { width: 13%; }
+  .pr-table__content { width: 15%; }
+  .pr-table__sc { width: 9%; }
+  .pr-table__report { width: 7%; }
+  .pr-table__link { white-space: nowrap; }
   .pr-rapport-update {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    margin: 2rem 0 3rem;
+    margin: 3rem 0 0;
     padding: 1.5rem;
     border: 1px solid #e5e7eb;
     border-left: 4px solid #A30D4B;
@@ -199,6 +310,41 @@
   }
   .pr-aanmelden__form .hp-form__input { border-color: #1F2937; }
   .pr-aanmelden__form .hp-form__input:focus { border-color: #A30D4B; }
+  .pr-floating-cta {
+    position: fixed;
+    right: 1rem;
+    bottom: 5.25rem;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.8rem 1.1rem;
+    border-radius: 999px;
+    background: #A30D4B;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 4px 18px rgba(31, 41, 55, 0.25);
+  }
+  .pr-floating-cta:hover,
+  .pr-floating-cta:focus-visible {
+    background: #8a0b3f;
+    color: #fff;
+  }
+  @media (max-width: 900px) {
+    .pr-layout { grid-template-columns: 1fr; }
+    .pr-toc {
+      position: static;
+      padding: 1rem;
+      border: 1px solid #e5e7eb;
+      border-left: 3px solid #A30D4B;
+    }
+    .pr-toc ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+    }
+    .pr-toc li { margin: 0; }
+  }
   @media (max-width: 768px) {
     .pr-rapport-update,
     .pr-aanmelden { display: block; }

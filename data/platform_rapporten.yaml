@@ -1,130 +1,120 @@
-bron: "platform-rapporten-register.csv"
-peildatum: "4 november 2026"
+bron: platform-rapporten-register.csv
+bijgewerkt: 4 november 2026
+updatefrequentie: Elk kwartaal
 rapporten:
 - platform: Afvalinzamelapp
   leverancier: Opzet B.V.
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-11-24'
   rapport_datum_iso: '2024-11-24'
   geldig_tot: '2027-11-24'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-12/Audit_Opzet_b_v_Afvalinzamelapp_app_Android_v5_0_1.pdf
 - platform: Afvalinzamelapp
   leverancier: Opzet B.V.
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-17'
   rapport_datum_iso: '2024-12-17'
   geldig_tot: '2027-12-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-12/Audit_Opzet_b_v_Afvalinzamelapp_app_iOS_v9_0_0%20(1).pdf
 - platform: Afvalstoffendienst app
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-02-18'
   rapport_datum_iso: '2026-02-18'
   geldig_tot: '2029-02-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://app.caat.report/share/0614dd44-0e9e-488c-8c01-bd2e82835701
 - platform: Afvalstoffendienst app
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-02-27'
   rapport_datum_iso: '2026-02-27'
   geldig_tot: '2029-02-27'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://app.caat.report/share/dff5c98d-a2ce-4120-8359-f0e87a0f37e0
 - platform: Andes bereikbaarheidsportaal
   leverancier: Andes
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-28'
   rapport_datum_iso: '2025-10-28'
   geldig_tot: '2028-10-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '54'
   rapport_url: https://bereikbaarheid.andes.nl/assets/documents/Andes_Bereikbaarheidsportaal_WCAG_2.2.pdf
 - platform: ArcGIS Hub
   leverancier: Esri
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2023-12-11'
-  rapport_datum_iso: '2023-12-11'
-  geldig_tot: '2026-12-11'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: '33'
-  rapport_url: https://valleienveluwe.maps.arcgis.com/sharing/rest/content/items/517e119d2c344063bfc3e62c5769a893/data
-- platform: ArcGIS Hub
-  leverancier: Esri
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-17'
   rapport_datum_iso: '2025-06-17'
   geldig_tot: '2028-06-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://hub.arcgis.com/pages/a11y
 - platform: Archiefweb / Sitearchief
   leverancier: Archiefweb
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-12-02'
   rapport_datum_iso: '2023-12-02'
   geldig_tot: '2026-12-02'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-archivering/archiefweb-en-sitearchief
 - platform: Archiefweb / Sitearchief
   leverancier: Archiefweb
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-12-22'
   rapport_datum_iso: '2023-12-22'
   geldig_tot: '2026-12-22'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '37'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/archiefweb-sitearchief/audit/
 - platform: Archiefweb / Sitearchief
   leverancier: Archiefweb
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-12-22'
   rapport_datum_iso: '2023-12-22'
   geldig_tot: '2026-12-22'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '37'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/archiefweb-sitearchief/
 - platform: Archiefweb / Sitearchief
   leverancier: Archiefweb
-  categorie: Platform van leverancier
-  rapport_type: Techniek en content genoemd
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-01'
   rapport_datum_iso: '2025-10-01'
   geldig_tot: '2028-10-01'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Ja
   goedgekeurde_sc: '37'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/archiefweb-gemeente-amsterdam-en-sitearchief-rijksoverheid/audit/
 - platform: Begrotingsapp
   leverancier: Pepperflow
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-07-04'
   rapport_datum_iso: '2024-07-04'
@@ -135,205 +125,139 @@ rapporten:
   rapport_url: https://www.pepperflow.nl/media/48b967f7-76a6-4788-b8d7-d3dfc2fd9dc5/ouMMlg/PDF%20Bestanden/Inspectie%20techniek%20Begrotingsapp%201.1%202024.pdf
 - platform: Begrotingsapp
   leverancier: Pepperflow
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-07-04'
   rapport_datum_iso: '2024-07-04'
   geldig_tot: '2027-07-04'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.pepperflow.nl/Begrotingsapp
 - platform: Belastingbalie
   leverancier: Bakerware
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-18'
   rapport_datum_iso: '2024-04-18'
   geldig_tot: '2027-04-18'
   status: Verloopt binnen 6 maanden
   content_nodig: Nee
-  goedgekeurde_sc: '50'
-  rapport_url: https://www.bakerware.nl/wp-content/uploads/2024/09/Hercontrole-onderzoek-https___audit-belastingbalie.bakerware.nl-WCAG-2.1-AA.pdf
-- platform: Belastingbalie
-  leverancier: Bakerware
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2024-04-18'
-  rapport_datum_iso: '2024-04-18'
-  geldig_tot: '2027-04-18'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://open.boxtel.nl/sites/default/files/2024-10/Hercontrole%20onderzoek%20audit-belastingbalie.bakerware.nl%20WCAG%202.1%20AA.pdf
-- platform: Bereken uw recht
-  leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-01-28'
-  rapport_datum_iso: '2025-01-28'
-  geldig_tot: '2028-01-28'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '45'
-  rapport_url: https://www.accessy.club/wp-content/uploads/2025/02/Toegankelijkheidsonderzoek-content-berekenuwrechtplus.nl_.pdf
 - platform: Bibliotheek Twente
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-17'
   rapport_datum_iso: '2025-06-17'
   geldig_tot: '2028-06-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '27'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/bibliotheektwente.nl/
 - platform: Brabant Alert
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-04-14'
   rapport_datum_iso: '2025-04-14'
   geldig_tot: '2028-04-14'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://brabantalert.nl/toegankelijkheidsverklaring
-- platform: Brabant Woont Slim (Regionaal Energieloket)
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-01-20'
-  rapport_datum_iso: '2024-01-20'
-  geldig_tot: '2027-01-20'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/PxHfirnSob0zJjafIDNZr/1c5a2adbe8c5fef28789cd3fad025769/Contentonderzoek_brabantwoontslim.nl_WCAG2.1-AA.pdf
 - platform: BuitenBeter app
   leverancier: BuitenBeter
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-23'
   rapport_datum_iso: '2024-12-23'
   geldig_tot: '2027-12-23'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-01/Audit_BuitenBeter_app_iOS_v6_0_0.pdf
 - platform: BuitenBeter app
   leverancier: BuitenBeter
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-05-28'
   rapport_datum_iso: '2026-05-28'
   geldig_tot: '2029-05-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.properaccess.nl/rapporten/202605_buitenbeter_android/
 - platform: BuitenBeter app
   leverancier: BuitenBeter
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-05-28'
   rapport_datum_iso: '2026-05-28'
   geldig_tot: '2029-05-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.properaccess.nl/rapporten/202605_buitenbeter_ios/#01-op-alle-schermen
 - platform: Centric e-diensten Burgerzaken
   leverancier: Centric
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-05'
   rapport_datum_iso: '2024-09-05'
   geldig_tot: '2027-09-05'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/ediensten-burgerzaken-centric-hercontrole/audit/
 - platform: Cultuur- en sportstimulering platforms
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Techniek en content genoemd
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-03-10'
   rapport_datum_iso: '2026-03-10'
   geldig_tot: '2029-03-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.cultuurensportstimulering.nl/wp-content/uploads/2026/05/20260421-Heronderzoek-deelonderzoek-techniek-Platforms-Cultuur-Sportstimulering-Nederland.pdf
-- platform: De BouwApp
-  leverancier: De BouwApp
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-04-25'
-  rapport_datum_iso: '2025-04-25'
-  geldig_tot: '2028-04-25'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://debouwapp.nl/wp-content/uploads/2025/09/Audit-de-BouwApp-app-iOS.pdf
-- platform: De BouwApp
-  leverancier: De BouwApp
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-04-25'
-  rapport_datum_iso: '2025-04-25'
-  geldig_tot: '2028-04-25'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://debouwapp.nl/wp-content/uploads/2025/09/Audit-de-BouwApp-app-Android.pdf
-- platform: De BouwApp
-  leverancier: De BouwApp
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-06-02'
-  rapport_datum_iso: '2025-06-02'
-  geldig_tot: '2028-06-02'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.debouwapp.nl/wp-content/uploads/2025/09/Audit-digitale-toegankelijkheid-webversie-de-BouwApp.pdf
 - platform: De Voorzieningenwijzer
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-09-03'
   rapport_datum_iso: '2025-09-03'
   geldig_tot: '2028-09-03'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.noordoostpolder.nl/file/onderzoeksrapport-devoorzieningenwijzernl
 - platform: DeAfvalApp
   leverancier: DeAfvalApp
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-28'
   rapport_datum_iso: '2024-12-28'
   geldig_tot: '2027-12-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-01/Audit_DeAfvalApp_app_iOS_v7_0_0.pdf
 - platform: DIP Webarchief
   leverancier: webarchief.online
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-11-04'
   rapport_datum_iso: '2025-11-04'
   geldig_tot: '2028-11-04'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsonderzoek.nl/webarchief.online/
 - platform: Djuma
   leverancier: Visma Circle
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-11-27'
   rapport_datum_iso: '2024-11-27'
@@ -344,7 +268,7 @@ rapporten:
   rapport_url: https://www.vismacircle.nl/hubfs/Downloads/WCAG/inspectie-techniek-Djuma-OpenInfo.pdf
 - platform: Djuma
   leverancier: Visma Circle
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-12-23'
   rapport_datum_iso: '2024-12-23'
@@ -355,73 +279,73 @@ rapporten:
   rapport_url: https://www.vismacircle.nl/hubfs/Downloads/WCAG/inspectie-techniek-Djuma-Formulieren.pdf
 - platform: Duurzaam Bouwloket
   leverancier: Duurzaam Bouwloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-03-12'
   rapport_datum_iso: '2025-03-12'
   geldig_tot: '2028-03-12'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '39'
   rapport_url: https://res.cloudinary.com/duurzaambouwloket/image/upload/v1750926335/Toegankelijkheidsonderzoek%20Duurzaam%20Bouwloket.pdf
 - platform: Duurzaam Bouwloket
   leverancier: Duurzaam Bouwloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-08-28'
   rapport_datum_iso: '2025-08-28'
   geldig_tot: '2028-08-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '49'
   rapport_url: https://dblpublicblob.blob.core.windows.net/dbl/wcag/Hercontrole%20onderzoek%20www.duurzaambouwloket.nl%20WCAG%202.1%20AA.%201.pdf
 - platform: Easycruit
   leverancier: Easycruit
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-10'
   rapport_datum_iso: '2025-07-10'
   geldig_tot: '2028-07-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://easycruit.com/helpcenter/nl/articles/367429-wcag-report
 - platform: Embrace workspace (intranet)
   leverancier: Embrace
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-29'
   rapport_datum_iso: '2024-03-29'
   geldig_tot: '2027-03-29'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://cdn.prod.website-files.com/6526758f5aca44536ecb76d3/662a24ddbf5f0089f4983325_WCAG%202.1%20Audit%20Embrace%20Workspace%201.3.1.pdf
 - platform: Embrace workspace (intranet)
   leverancier: Embrace
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-17'
   rapport_datum_iso: '2024-04-17'
   geldig_tot: '2027-04-17'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.embracecloud.nl/meer-info/toegankelijkheid-wcag
 - platform: Enalyzer
   leverancier: Enalyzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-01-01'
   rapport_datum_iso: '2024-01-01'
   geldig_tot: '2027-01-01'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://prodenalyzerwebjobs.blob.core.windows.net/marketing/Documents/WCAG-Compliancy-2.1-01-2024.pdf
 - platform: Energieloketten.nl
   leverancier: Energieloketten
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-05-01'
   rapport_datum_iso: '2025-05-01'
@@ -432,128 +356,117 @@ rapporten:
   rapport_url: https://dblpublicblob.blob.core.windows.net/wel/wcag/Hercontrole%20deelonderzoek%20techniek%20www.energieloketten.nl%20WCAG%202.2%20AA.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-10'
   rapport_datum_iso: '2023-10-10'
   geldig_tot: '2026-10-10'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.fixi.nl/toegankelijkheid/onderzoeksrapport-fixi.html
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-10'
   rapport_datum_iso: '2023-10-10'
   geldig_tot: '2026-10-10'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://decos.com/toegankelijkheidsrapporten/2023%20Oktober%20rapport%20-%20Fixi%20website.html
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-10'
   rapport_datum_iso: '2023-10-10'
   geldig_tot: '2026-10-10'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.fixi.nl/toegankelijkheid/onderzoeksrapport-fixi.html?utm_campaign=Fixi&utm_medium=email&_hsmi=95816487&_hsenc=p2ANqtz--mBB5aE_ZZKoUtSKL0VTFccAUG4SBJr5PZxTpEf2ksesw1eiX9j37q8tO231HW3j58SpOSpL4DmRCpvgnml8pervMrLw&utm_content=95816487&utm_source=
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-06'
   rapport_datum_iso: '2024-03-06'
   geldig_tot: '2027-03-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-04/Toegankelijkheidsonderzoek%20Fixi%20App%20Android%20v8.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-06'
   rapport_datum_iso: '2024-03-06'
   geldig_tot: '2027-03-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://decos.com/sites/default/files/2024-07/Toegankelijkheidsonderzoek%20Fixi%20App%20Android%20v8.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-06'
   rapport_datum_iso: '2024-03-06'
   geldig_tot: '2027-03-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.decos.com/sites/default/files/2024-04/Toegankelijkheidsonderzoek%20Fixi%20App%20Android%20v8.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-05'
   rapport_datum_iso: '2024-04-05'
   geldig_tot: '2027-04-05'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-04/Toegankelijkheidsonderzoek%20Fixi%20App%20iOS%20v9.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-05'
   rapport_datum_iso: '2024-04-05'
   geldig_tot: '2027-04-05'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://decos.com/sites/default/files/2024-07/Toegankelijkheidsonderzoek%20Fixi%20App%20iOS%20v9.pdf
 - platform: Fixi
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-05'
   rapport_datum_iso: '2024-04-05'
   geldig_tot: '2027-04-05'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.decos.com/sites/default/files/2024-04/Toegankelijkheidsonderzoek%20Fixi%20App%20iOS%20v9.pdf
-- platform: Fixi
-  leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2026-06-09'
-  rapport_datum_iso: '2026-06-09'
-  geldig_tot: '2029-06-09'
-  status: Geldig
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: https://info.decos.com/accessibility-report-fixi-website-june2026
+  rapport_url: https://www.decos.com/sites/default/files/2024-04/Toegankelijkheidsonderzoek%20Fixi%20App%20iOS%20v9.pdf
 - platform: Fries Archiefnet
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-10-17'
   rapport_datum_iso: '2024-10-17'
   geldig_tot: '2027-10-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '31'
   rapport_url: https://friesarchiefnet.nl/images/Verklaring/Onderzoek_FriesArchiefnet_Okt2024.pdf
 - platform: Gemeenteoplossingen raadsinformatie
   leverancier: Gemeenteoplossingen
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-08-08'
   rapport_datum_iso: '2025-08-08'
@@ -564,7 +477,7 @@ rapporten:
   rapport_url: https://www.gemeenteoplossingen.nl/wcag_2.2_aa_inspectie_techniek_-_gemeenteoplossingen_v2025.1
 - platform: Gemeenteoplossingen raadsinformatie
   leverancier: Gemeenteoplossingen
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-11-13'
   rapport_datum_iso: '2025-11-13'
@@ -575,84 +488,51 @@ rapporten:
   rapport_url: https://www.gemeenteoplossingen.nl/wcag_2.2_aa_inspectie_techniek_-_gemeenteoplossingen_v2025.2
 - platform: Gemeentepanel (inwonerspanel)
   leverancier: Gemeentepanel
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-05-15'
   rapport_datum_iso: '2025-05-15'
   geldig_tot: '2028-05-15'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/gemeentepanel-her-hercontrole/audit/
 - platform: Gezond Verzekerd (gemeentepolis)
   leverancier: Gezond Verzekerd
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-12'
   rapport_datum_iso: '2024-04-12'
   geldig_tot: '2027-04-12'
   status: Verloopt binnen 6 maanden
   content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://test.gezondverzekerd.nl/content/uploads/WCAG-rapport-2Gezondverzekerd.nl_.pdf
-- platform: Gezond Verzekerd (gemeentepolis)
-  leverancier: Gezond Verzekerd
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-04-12'
-  rapport_datum_iso: '2024-04-12'
-  geldig_tot: '2027-04-12'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.gezondverzekerd.nl/content/uploads/WCAG-rapport-2Gezondverzekerd.nl_.pdf
-- platform: Gezond Verzekerd (gemeentepolis)
-  leverancier: Gezond Verzekerd
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2024-04-12'
-  rapport_datum_iso: '2024-04-12'
-  geldig_tot: '2027-04-12'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.gezondverzekerd.nl/toegankelijkheid/
-- platform: Gildebor
-  leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-03-20'
-  rapport_datum_iso: '2025-03-20'
-  geldig_tot: '2028-03-20'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.gildebor.nl/wp-content/uploads/onderzoeksrapport2025_Gildebor.pdf
 - platform: Go Vocal (participatie)
   leverancier: Go Vocal
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-21'
   rapport_datum_iso: '2024-08-21'
   geldig_tot: '2027-08-21'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://support.govocal.com/nl/articles/2723680-hoe-presteert-mijn-platform-op-het-gebied-van-toegankelijkheid#h_ac65d865b6
 - platform: Go Vocal (participatie)
   leverancier: Go Vocal
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-06-26'
   rapport_datum_iso: '2026-06-26'
   geldig_tot: '2029-06-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://toegankelijkheidsrapport.frameless.io/rapport/govocal-2026-06-26
 - platform: GO voor elkaar
   leverancier: onbekend
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-03-15'
   rapport_datum_iso: '2024-03-15'
@@ -661,64 +541,42 @@ rapporten:
   content_nodig: Ja
   goedgekeurde_sc: '16'
   rapport_url: https://cuatro.sim-cdn.nl/goereeoverflakkee/uploads/Toegankelijkheidsonderzoek%20(techniek)%20govoorelkaar.nl_.pdf
-- platform: GO voor elkaar
-  leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-06-28'
-  rapport_datum_iso: '2024-06-28'
-  geldig_tot: '2027-06-28'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://cuatro.sim-cdn.nl/goereeoverflakkee/uploads/Toegankelijkheidsonderzoek%20(content)%20govoorelkaar.nl_.pdf
 - platform: Harmonics (Winkwaves)
   leverancier: Winkwaves
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-02-05'
   rapport_datum_iso: '2024-02-05'
   geldig_tot: '2027-02-05'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '36'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/intranet-harmonics-hercontrole/audit/
 - platform: Harmonics (Winkwaves)
   leverancier: Winkwaves
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-12'
   rapport_datum_iso: '2024-08-12'
   geldig_tot: '2027-08-12'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '40'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/harmonics-hercontrole/audit/
 - platform: Harmonics (Winkwaves)
   leverancier: Winkwaves
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-31'
   rapport_datum_iso: '2025-07-31'
   geldig_tot: '2028-07-31'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/winkwaves-harmonics-hercontrole/audit/
 - platform: Hecht websites (CJG)
   leverancier: Hecht
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-10-22'
-  rapport_datum_iso: '2024-10-22'
-  geldig_tot: '2027-10-22'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '23'
-  rapport_url: https://wijzijnhecht.nl/download/digitoegankelijkheid-rapporten-websites-hecht/?wpdmdl=2127&refresh=672b3bc28e2511730886594&ind=1730806234407&filename=inspectie-content-cjgprofnl-21-2024.pdf
-- platform: Hecht websites (CJG)
-  leverancier: Hecht
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-10-29'
   rapport_datum_iso: '2024-10-29'
@@ -729,73 +587,73 @@ rapporten:
   rapport_url: https://wijzijnhecht.nl/download/digitoegankelijkheid-rapporten-websites-hecht/?wpdmdl=2127&refresh=672b3bc28e2511730886594&ind=1730806234980&filename=inspectie-techniek-platform-opvoedenin-11-2024.pdf
 - platform: Hoge Nood app
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-01-22'
   rapport_datum_iso: '2024-01-22'
   geldig_tot: '2027-01-22'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://cdn.prod.website-files.com/5ec4ef7186f0e44f4b1cd23b/65b8b618458ceea484e1093b_WCAG%202.1%20AA%20inspectie%20-%20HogeNood%20App%20-%201.1.pdf
 - platform: HVC app
   leverancier: HVC
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-29'
   rapport_datum_iso: '2025-10-29'
   geldig_tot: '2028-10-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '30'
   rapport_url: https://www.hvcgroep.nl/sites/default/files/2025-11/20251029_HVC_App_Android.pdf.pdf
 - platform: HVC app
   leverancier: HVC
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-29'
   rapport_datum_iso: '2025-10-29'
   geldig_tot: '2028-10-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '30'
   rapport_url: https://www.hvcgroep.nl/sites/default/files/2025-11/20251029_HVC_App_iOS.pdf.pdf
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-11-16'
   rapport_datum_iso: '2023-11-16'
   geldig_tot: '2026-11-16'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://cuatro.sim-cdn.nl/isdbol/uploads/ibabs-isdbol-app-digitaal-toegankelijk-wcag-em.pdf
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-11-16'
   rapport_datum_iso: '2023-11-16'
   geldig_tot: '2026-11-16'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://cuatro.sim-cdn.nl/bladel/uploads/ibabs-isdbol-app-digitaal-toegankelijk-wcag-em.pdf?cb=edZs7VSi
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
-  rapport_type: Techniek en content genoemd
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-01-31'
   rapport_datum_iso: '2024-01-31'
   geldig_tot: '2027-01-31'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '41'
   rapport_url: https://content.ibabs.eu/hubfs/3.%20iBabs/Documents/Hercontrole%20Deelonderzoek%20Techniek%20Publieksportaal%20WCAG%202.1%20Jan%202024.pdf?_gl=1*1ef9erp*_gcl_au*NTY4OTU1MDk2LjE3NTYxMTEwOTM
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-06-11'
   rapport_datum_iso: '2025-06-11'
@@ -806,18 +664,18 @@ rapporten:
   rapport_url: https://info.ibabs.com/hubfs/3.%20iBabs/Documents/Deelonderzoek%20Techniek%20Publieksportaal%20WCAG%202.2%20-%20juni%202025.pdf
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-11'
   rapport_datum_iso: '2025-06-11'
   geldig_tot: '2028-06-11'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.ibabs.com/nl/toegankelijkheid/
 - platform: iBabs
   leverancier: iBabs
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-10-16'
   rapport_datum_iso: '2025-10-16'
@@ -828,7 +686,7 @@ rapporten:
   rapport_url: https://info.ibabs.com/hubfs/3.%20iBabs/Documents/Heronderzoek%20Deelonderzoek%20Techniek%20gemeenteraad.rotterdam.nl%20WCAG%202.2.pdf
 - platform: iBabs Publieksportaal (bestuurlijkeinformatie.nl)
   leverancier: iBabs
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-01-31'
   rapport_datum_iso: '2024-01-31'
@@ -837,119 +695,108 @@ rapporten:
   content_nodig: Ja
   goedgekeurde_sc: '36'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-01/Hercontrole%20Deelonderzoek%20techniek%20rotterdamraad.bestuurlijkeinformatie.nl%20WCAG%202.1%20Jan%202024.pdf
-- platform: iBabs Publieksportaal (bestuurlijkeinformatie.nl)
-  leverancier: iBabs
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-03-24'
-  rapport_datum_iso: '2025-03-24'
-  geldig_tot: '2028-03-24'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '22'
-  rapport_url: https://www.wijchen.nl/data/downloadables/1/8/4/2/wcag-22-aa-deelonderzoek-content-wijchenbestuurlijkeinformatienl-10-202503241537.pdf
 - platform: iBurgerzaken
   leverancier: PinkRoccade Local Government
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-09-25'
   rapport_datum_iso: '2023-09-25'
   geldig_tot: '2026-09-25'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.pinkroccadelocalgovernment.nl/media/4032/wcag-iburgerzaken-2023.pdf
 - platform: iBurgerzaken
   leverancier: PinkRoccade Local Government
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-26'
   rapport_datum_iso: '2024-08-26'
   geldig_tot: '2027-08-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '43'
   rapport_url: https://www.pinkroccadelocalgovernment.nl/media/4118/202408-wcag-rapport-iburgerzaken.pdf
 - platform: iBurgerzaken
   leverancier: PinkRoccade Local Government
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-26'
   rapport_datum_iso: '2024-08-26'
   geldig_tot: '2027-08-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.pinkroccadelocalgovernment.nl/onze-expertise/themas/digitoegankelijk/wcag-certificering-van-iburgerzaken/
 - platform: iLost (gevonden voorwerpen)
   leverancier: iLost
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-27'
   rapport_datum_iso: '2023-10-27'
   geldig_tot: '2026-10-27'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-07/2023-10-27%20demo.ilost.co-Digitaal-Toegankelijk-WCAG-EM.pdf
 - platform: Inergy LIAS (begroting)
   leverancier: Inergy
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-11-11'
   rapport_datum_iso: '2024-11-11'
   geldig_tot: '2027-11-11'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '42'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/inergy-systeem-audit-hercontrole/audit/
 - platform: Inergy LIAS (begroting)
   leverancier: Inergy
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-01-02'
   rapport_datum_iso: '2025-01-02'
   geldig_tot: '2028-01-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '43'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/inergy-lias-hercontrole/audit/
 - platform: Inwonerspanel (Rhenen spreekt)
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-02-02'
   rapport_datum_iso: '2026-02-02'
   geldig_tot: '2029-02-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/RhenenSpreekt-hercontrole/audit/
 - platform: IPO
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-06-10'
   rapport_datum_iso: '2026-06-10'
   geldig_tot: '2029-06-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.properaccess.nl/rapporten/202606_ipo.nl/
 - platform: IRIS intranet
   leverancier: IRIS
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-11-14'
   rapport_datum_iso: '2025-11-14'
   geldig_tot: '2028-11-14'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/wcag-demo.irisintranet.com-hercontrole/audit/
 - platform: Jalp sociaal domein
   leverancier: Jalp
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-08-01'
   rapport_datum_iso: '2023-08-01'
@@ -960,7 +807,7 @@ rapporten:
   rapport_url: https://informatieservice.info/media/Technisch%20deelonderzoek%20sociaaldomein.jalp.nl%20WCAG%202.1.pdf
 - platform: Jalp sociaal domein
   leverancier: Jalp
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2026-07-22'
   rapport_datum_iso: '2026-07-22'
@@ -969,86 +816,42 @@ rapporten:
   content_nodig: Ja
   goedgekeurde_sc: Onbekend
   rapport_url: https://informatieservice.info/media/Hercontrole%20deelonderzoek%20techniek%20sociaaldomein.jalp.nl2026.pdf
-- platform: JCC Internetafsprakenportaal
-  leverancier: JCC Software
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-09-25'
-  rapport_datum_iso: '2024-09-25'
-  geldig_tot: '2027-09-25'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://jccsoftware.nl/wp-content/uploads/2025/05/Toegankelijkheidsverklaring-Internetafsprakenportaal-WCAG-2.2.pdf
-- platform: JCC Internetafsprakenportaal
-  leverancier: JCC Software
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-09-09'
-  rapport_datum_iso: '2025-09-09'
-  geldig_tot: '2028-09-09'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://jccsoftware.nl/wp-content/uploads/2025/09/Audit-report-internetafsprakenportaal-25090.pdf
 - platform: JCC Naar mijn afspraak
   leverancier: JCC Software
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-23'
   rapport_datum_iso: '2025-07-23'
   geldig_tot: '2028-07-23'
   status: Geldig
   content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://jccsoftware.nl/wp-content/uploads/2025/07/Audit-report-naarmijnafspraak-250723.pdf
-- platform: JCC Naar mijn afspraak
-  leverancier: JCC Software
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2025-07-23'
-  rapport_datum_iso: '2025-07-23'
-  geldig_tot: '2028-07-23'
-  status: Geldig
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://cuatro.sim-cdn.nl/capelleaandenijssel/uploads/Audit-report-naarmijnafspraak-250723%20(1).pdf?cb=Pvsg6VOw
 - platform: JOIN Burgerberichten
   leverancier: Decos
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-02-09'
   rapport_datum_iso: '2024-02-09'
   geldig_tot: '2027-02-09'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://decos.com/toegankelijkheidsrapporten/join-burgerberichten-e-form-report.html
-- platform: KCM survey
-  leverancier: KCM
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-05-16'
-  rapport_datum_iso: '2024-05-16'
-  geldig_tot: '2027-05-16'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '50'
-  rapport_url: https://kcmsurvey.eu/wp-content/uploads/2024/06/202406-Onderzoeksrapport-kcmg.nl-WCAG-2.1-AA.pdf
 - platform: LMS storing melden
   leverancier: LMS
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-06'
   rapport_datum_iso: '2024-12-06'
   geldig_tot: '2027-12-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/storing-melden-lms-hercontrole/audit/
 - platform: MEE De Meent Groep
   leverancier: MEE De Meent Groep
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-03-11'
   rapport_datum_iso: '2025-03-11'
@@ -1057,185 +860,163 @@ rapporten:
   content_nodig: Ja
   goedgekeurde_sc: '36'
   rapport_url: https://www.meedemeentgroep.nl/assets/uploads/Offici%C3%ABle-documenten/Deelonderzoek-techniek-meedemeentgroep.nl-WCAG-2.2_2025.pdf
-- platform: MEE De Meent Groep
-  leverancier: MEE De Meent Groep
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-03-12'
-  rapport_datum_iso: '2025-03-12'
-  geldig_tot: '2028-03-12'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '19'
-  rapport_url: https://www.meedemeentgroep.nl/assets/uploads/Offici%C3%ABle-documenten/Deelonderzoek-content-meedemeentgroep.nl-WCAG-2.2_2025.pdf
 - platform: Mett
   leverancier: Mett
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-26'
   rapport_datum_iso: '2024-09-26'
   geldig_tot: '2027-09-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '32'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/mett-3-systeem/audit/
 - platform: Mett
   leverancier: Mett
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-26'
   rapport_datum_iso: '2024-09-26'
   geldig_tot: '2027-09-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '32'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/mett-3-systeem/
 - platform: Mett
   leverancier: Mett
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-26'
   rapport_datum_iso: '2024-09-26'
   geldig_tot: '2027-09-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '32'
   rapport_url: https://www.toegankelijkheidscertificaat.nl/mett-3-systeem/audit/
 - platform: Mett
   leverancier: Mett
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-11-13'
   rapport_datum_iso: '2025-11-13'
   geldig_tot: '2028-11-13'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '37'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/mettstudio.nl/audit/
 - platform: Mett
   leverancier: Mett
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-03-12'
   rapport_datum_iso: '2026-03-12'
   geldig_tot: '2029-03-12'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '39'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/toegankelijkheid.mett.nl-hercontrole/audit/
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-18'
   rapport_datum_iso: '2024-09-18'
   geldig_tot: '2027-09-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://rapport.properaccess.nl/reports/202409_afvalwijzer_boxtel/
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-29'
   rapport_datum_iso: '2024-12-29'
   geldig_tot: '2027-12-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '27'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-01/Audit_Runner_Afvalwijzer_UAT_app_Android_v2_0_0.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-29'
   rapport_datum_iso: '2024-12-29'
   geldig_tot: '2027-12-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '27'
   rapport_url: https://iproxnl-api.iproxapi.nl/asset/iproxnl/752/35/audit_runner_afvalwijzer_uat_app_android_v2_0_0.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-31'
   rapport_datum_iso: '2024-12-31'
   geldig_tot: '2027-12-31'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '29'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-01/Audit_Runner_Afvalwijzer_UAT_app_iOS_v2_0_0.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-31'
   rapport_datum_iso: '2024-12-31'
   geldig_tot: '2027-12-31'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '29'
   rapport_url: https://iproxnl-api.iproxapi.nl/asset/iproxnl/752/35/audit_runner_afvalwijzer_uat_app_ios_v2_0_0.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-29'
   rapport_datum_iso: '2025-10-29'
   geldig_tot: '2028-10-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '42'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-11/Hercontrole%20onderzoek%20www.mijnafvalwijzer.nl%20WCAG%202.2%20AA.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-29'
   rapport_datum_iso: '2025-10-29'
   geldig_tot: '2028-10-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.middendrenthe.nl/fileadmin/Toegankelijkheidsverklaringen/Hercontrole_onderzoek_www.mijnafvalwijzer.nl_WCAG_2.2_AA.pdf
 - platform: Mijn Afvalwijzer
   leverancier: Mijn Afvalwijzer
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2026-03-12'
   rapport_datum_iso: '2026-03-12'
   geldig_tot: '2029-03-12'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '40'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/mijnafvalwijzer.nl/audit/
 - platform: Mijn Taxi Op Maat
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-02-16'
   rapport_datum_iso: '2025-02-16'
   geldig_tot: '2028-02-16'
   status: Geldig
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.kampen.nl/file/rapport-onderzoek-wcag-22-mijntaxiopmaatnl
-- platform: MOON meldingen openbare verlichting
-  leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-03-29'
-  rapport_datum_iso: '2024-03-29'
-  geldig_tot: '2027-03-29'
-  status: Verloopt binnen 6 maanden
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: https://www.accessy.club/wp-content/uploads/2024/04/Toegankelijkheidsonderzoek-hertest-storing.moononline.nl-gemeentewinterswijk.pdf
+  rapport_url: https://www.kampen.nl/file/rapport-onderzoek-wcag-22-mijntaxiopmaatnl
 - platform: Mozard formulieren
   leverancier: Mozard
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-06-16'
   rapport_datum_iso: '2025-06-16'
@@ -1246,29 +1027,29 @@ rapporten:
   rapport_url: https://www.bunnik.nl/fileadmin/bestanden/Over_deze_site/Deelonderzoek_techniek_MOZARD_WCAG_2.2_Juni_2025.pdf
 - platform: Nijmegen formulieren/sites
   leverancier: Gemeente Nijmegen
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-01-16'
   rapport_datum_iso: '2024-01-16'
   geldig_tot: '2027-01-16'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '37'
   rapport_url: https://www.nijmegen.nl/toegankelijkheidsverklaringen/sportzaal-huren-rapport-digitale-toegankelijkheid
 - platform: Nijmegen formulieren/sites
   leverancier: Gemeente Nijmegen
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-04-17'
   rapport_datum_iso: '2025-04-17'
   geldig_tot: '2028-04-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '36'
   rapport_url: https://www.nijmegen.nl/toegankelijkheidsverklaringen/formulieren-regel-dit-rapport-digitale-toegankelijkheid/
 - platform: NotuBiz raadsinformatie
   leverancier: NotuBiz
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-01-30'
   rapport_datum_iso: '2024-01-30'
@@ -1279,117 +1060,117 @@ rapporten:
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-04/2024%20NotuBiz%20Technisch%20onderzoek%20https_accessibility.notubiz.nl%20WCAG%202.1.pdf
 - platform: NotuBiz raadsinformatie
   leverancier: NotuBiz
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-02'
   rapport_datum_iso: '2024-08-02'
   geldig_tot: '2027-08-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-05/2024_NotuBiz_App_Onderzoek_NotuBox_WCAG_2.1-AA.pdf
 - platform: NotuBox app
   leverancier: NotuBiz
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-02'
   rapport_datum_iso: '2024-08-02'
   geldig_tot: '2027-08-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '47'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-08/App%20Onderzoek%20NotuBox%20WCAG%202.1-AA%20januari%202024_1.pdf
 - platform: OmgevingsAlert app
   leverancier: OmgevingsAlert
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-12'
   rapport_datum_iso: '2024-04-12'
   geldig_tot: '2027-04-12'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '31'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-04/Audit%20OmgevingsAlert%20app%20Android%20v5.0.0.pdf
 - platform: OmgevingsAlert app
   leverancier: OmgevingsAlert
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-11-19'
   rapport_datum_iso: '2024-11-19'
   geldig_tot: '2027-11-19'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-11/Audit_OmgevingsAlert_app_iOS_v8_0_0.pdf
 - platform: OmgevingsAlert app
   leverancier: OmgevingsAlert
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-23'
   rapport_datum_iso: '2024-12-23'
   geldig_tot: '2027-12-23'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-12/Audit_OmgevingsAlert_app_Android_v9_0_0.pdf
 - platform: Open Gemeenten
   leverancier: Open Gemeenten
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-07-04'
   rapport_datum_iso: '2024-07-04'
   geldig_tot: '2027-07-04'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '42'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/open-gemeenten/audit/
 - platform: Open Gemeenten
   leverancier: Open Gemeenten
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-18'
   rapport_datum_iso: '2025-06-18'
   geldig_tot: '2028-06-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/open-gemeenten-hercontrole/audit/
 - platform: Open Gemeenten
   leverancier: Open Gemeenten
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-18'
   rapport_datum_iso: '2025-06-18'
   geldig_tot: '2028-06-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/open-gemeenten-hercontrole/
 - platform: OpenStad
   leverancier: OpenStad
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-11-22'
   rapport_datum_iso: '2024-11-22'
   geldig_tot: '2027-11-22'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/openstad-hercontrole/audit/
 - platform: ParkeerService
   leverancier: ParkeerService
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-10-24'
   rapport_datum_iso: '2024-10-24'
   geldig_tot: '2027-10-24'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '38'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/parkeerservice-alphen-aan-de-rijn-hercontrole/audit/
 - platform: Parlaeus
   leverancier: Parlaeus
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-12-20'
   rapport_datum_iso: '2023-12-20'
@@ -1400,7 +1181,7 @@ rapporten:
   rapport_url: https://www.leiderdorp.nl/fileadmin/Leiderdorp_bestanden/Afbeeldingen_nieuws_en_home/Foto_s_bij_nieuwsberichten/2025/WCAG_2.1_AA_inspectie_techniek_-_Oegstgeest.parlaeus.nl_app_-_2.1__2_.pdf
 - platform: Platform Rijksoverheid Online (PRO)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-01-06'
   rapport_datum_iso: '2025-01-06'
@@ -1411,7 +1192,7 @@ rapporten:
   rapport_url: https://www.platformrijksoverheidonline.nl/documenten/2022/10/27/toegankelijkheidsonderzoek-techniek-pro-oktober-2022
 - platform: Platform Rijksoverheid Online (PRO)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-09-16'
   rapport_datum_iso: '2025-09-16'
@@ -1422,7 +1203,7 @@ rapporten:
   rapport_url: https://www.platformrijksoverheidonline.nl/documenten/rapport/2022/10/27/toegankelijkheidsonderzoek-techniek-pro-oktober-2022
 - platform: Platform Rijksoverheid Online (PRO2)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-05-20'
   rapport_datum_iso: '2025-05-20'
@@ -1433,18 +1214,18 @@ rapporten:
   rapport_url: https://www.platformrijksoverheidonline.nl/documenten/2025/05/20/toegankelijkheidsonderzoek-techniek-pro2-nulmeting-mei-2025
 - platform: Platform Rijksoverheid Online (PRO2)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
-  rapport_type: Techniek en content genoemd
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-05-20'
   rapport_datum_iso: '2025-05-20'
   geldig_tot: '2028-05-20'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '35'
   rapport_url: https://www.platformrijksoverheidonline.nl/site/binaries/site-content/collections/documents/2025/05/20/toegankelijkheidsonderzoek-techniek-pro2-nulmeting-mei-2025/toegankelijkheidsonderzoek-techniek-pro2-nulmeting-mei-2025.pdf
 - platform: Platform Rijksoverheid Online (PRO2)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-09-16'
   rapport_datum_iso: '2025-09-16'
@@ -1455,139 +1236,128 @@ rapporten:
   rapport_url: https://www.platformrijksoverheidonline.nl/documenten/2025/09/16/toegankelijkheidsonderzoek-techniek-pro2-september-2025
 - platform: Platform Rijksoverheid Online (PRO2)
   leverancier: Rijksoverheid (platformrijksoverheidonline.nl)
-  categorie: Platform van leverancier
-  rapport_type: Techniek en content genoemd
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-09-16'
   rapport_datum_iso: '2025-09-16'
   geldig_tot: '2028-09-16'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '48'
   rapport_url: https://www.platformrijksoverheidonline.nl/site/binaries/site-content/collections/documents/2025/09/16/toegankelijkheidsonderzoek-techniek-pro2-september-2025/toegankelijkheidsonderzoek-techniek-pro2-september-2025.pdf
 - platform: Plein 6
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-11-29'
   rapport_datum_iso: '2023-11-29'
   geldig_tot: '2026-11-29'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '26'
   rapport_url: https://www.goes.nl/sites/goes/files/2023-12/Onderzoek%20https_plein6.grdebevelanden.nl%20WCAG%202.1.pdf
 - platform: Pleio
   leverancier: Pleio
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-26'
   rapport_datum_iso: '2024-08-26'
   geldig_tot: '2027-08-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '36'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/pleio-nl/audit/
 - platform: Pleio
   leverancier: Pleio
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-26'
   rapport_datum_iso: '2024-08-26'
   geldig_tot: '2027-08-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '36'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/pleio-nl/
 - platform: Pleio
   leverancier: Pleio
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-03-10'
   rapport_datum_iso: '2025-03-10'
   geldig_tot: '2028-03-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '36'
   rapport_url: https://toegankelijkheidsonderzoek.nl/pleio-platform/
 - platform: Qmatic afspraken
   leverancier: Qmatic
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-20'
   rapport_datum_iso: '2024-08-20'
   geldig_tot: '2027-08-20'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.qmatic.com/hubfs/inspectie-sandboxqmaticiobookingsinglebookingserviceselection-11-2024.pdf
 - platform: Qmatic afspraken
   leverancier: Qmatic
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-08-26'
   rapport_datum_iso: '2024-08-26'
   geldig_tot: '2027-08-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.qmatic.com/hubfs/inspectie-wb-salesdemoqmaticcloudqmaticwebbooking-11-2024%20(1)%20(1).pdf
 - platform: RD4
   leverancier: RD4
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-12-01'
   rapport_datum_iso: '2023-12-01'
   geldig_tot: '2026-12-01'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '22'
   rapport_url: https://www.rd4.nl/uploads/inspectie-wwwrd4nl-10-2023.pdf
 - platform: RDW Parkeren Plus GPK app
   leverancier: RDW
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-06-02'
   rapport_datum_iso: '2025-06-02'
   geldig_tot: '2028-06-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.rdw.nl/over-rdw/kwaliteits--en-servicenormen/-/media/rdwnl/documenten/privacy-en-toegankelijkheid/rapporten-apps/wcag-22-aa-onderzoek-app-ios-rdw-app-parkeren-plus-gpk-10-202506022014-(1).pdf?rev=e0176e644525433faa919f0b5f045234&hash=A1AEBAF19
 - platform: RDW Parkeren Plus GPK app
   leverancier: RDW
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-12-11'
   rapport_datum_iso: '2025-12-11'
   geldig_tot: '2028-12-11'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.rdw.nl/over-rdw/kwaliteits--en-servicenormen/-/media/rdwnl/documenten/privacy-en-toegankelijkheid/rapporten-apps/wcag-22-aa-onderzoek-app-android-rdw-app-parkeren-plus-gpk-10-202506051540.pdf?rev=0663383a7ffe4cdf9cc35dffb5cff810&hash=A8D4E8E36
 - platform: ReadSpeaker webReader
   leverancier: ReadSpeaker
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-04-15'
   rapport_datum_iso: '2025-04-15'
   geldig_tot: '2028-04-15'
   status: Geldig
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: https://www.readspeaker.com/wp-content/uploads/2025/04/proper_2025_report_ReadSpeaker.pdf
-- platform: ReadSpeaker webReader
-  leverancier: ReadSpeaker
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2025-04-15'
-  rapport_datum_iso: '2025-04-15'
-  geldig_tot: '2028-04-15'
-  status: Geldig
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
   rapport_url: https://audit.properaccess.nl/reports/202504_readspeaker_retest/
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
@@ -1598,40 +1368,18 @@ rapporten:
   rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/5QaG63WRcQZUyrY7DiskmZ/1523dc53eed7f9dacada08e5a5654549/Hercheck_deelonderzoek_techniek_regionaalenergieloket.nl_WCAG_2.1_.pdf
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
   geldig_tot: '2026-10-18'
   status: Verlopen
   content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/21fUWftqhNU9P7lzBa1TUT/d7a317a15918ccff9496269487dfdde5/Hercheck_deelonderzoek_content_zakelijk.regionaalenergieloket.nl_WCAG2.1-AA.pdf
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2023-10-18'
-  rapport_datum_iso: '2023-10-18'
-  geldig_tot: '2026-10-18'
-  status: Verlopen
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://drive.google.com/file/d/1_fgbOz9qphmr7CTAJ0p0j9sns32xz1g0/view
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2023-10-18'
-  rapport_datum_iso: '2023-10-18'
-  geldig_tot: '2026-10-18'
-  status: Verlopen
-  content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/2zDiRU2Nf4RWbL8hPNeSaJ/6ae25d452138f5505d890ef46cd8528b/Hercheck_deelonderzoek_content_vve.regionaalenergieloket.nl_WCAG2.1-AA.pdf
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
@@ -1642,40 +1390,18 @@ rapporten:
   rapport_url: https://www.regionaalenergieloket.nl/WCAG-deelonderzoek-techniek
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
   geldig_tot: '2026-10-18'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://gemeente.regionaalenergieloket.nl/toegankelijkheid/
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2023-10-18'
-  rapport_datum_iso: '2023-10-18'
-  geldig_tot: '2026-10-18'
-  status: Verlopen
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: http://www.regionaalenergieloket.nl/WCAG-contentonderzoek-zakelijk
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2023-10-18'
-  rapport_datum_iso: '2023-10-18'
-  geldig_tot: '2026-10-18'
-  status: Verlopen
-  content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://www.oegstgeest.nl/fileadmin/Oegstgeest_bestanden/Documenten/Inwoners/Hercontrole_Contentonderzoek_regionaalenergieloket.nl_WCAG2.1_AA.pdf
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
@@ -1686,29 +1412,18 @@ rapporten:
   rapport_url: https://www.oegstgeest.nl/fileadmin/Oegstgeest_bestanden/Documenten/Inwoners/Hercheck_deelonderzoek_techniek_regionaalenergieloket.nl_WCAG_2.1_.pdf
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2023-10-18'
-  rapport_datum_iso: '2023-10-18'
-  geldig_tot: '2026-10-18'
-  status: Verlopen
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://drive.google.com/file/d/1MBNTxT_BWS3RKHMQiNxxbViarXJebyoL/view
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
   geldig_tot: '2026-10-18'
   status: Verlopen
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: http://www.regionaalenergieloket.nl/WCAG-contentonderzoek-vve
+  rapport_url: https://drive.google.com/file/d/1MBNTxT_BWS3RKHMQiNxxbViarXJebyoL/view
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-10-18'
   rapport_datum_iso: '2023-10-18'
@@ -1719,62 +1434,40 @@ rapporten:
   rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/6xatv15mjZCWG9e94qDYIe/b6fc3ab540a07e5dde2eef17f06d2bb7/Hercheck_deelonderzoek_techniek_regionaalenergieloket.nl_WCAG_2.1_.pdf
 - platform: Regionaal Energieloket
   leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-10-20'
   rapport_datum_iso: '2023-10-20'
   geldig_tot: '2026-10-20'
   status: Verlopen
   content_nodig: Nee
-  goedgekeurde_sc: '29'
-  rapport_url: https://assets.ctfassets.net/2qwrovdxnzov/1Kr5DRbvQL7sQJVEFFxLge/25644c74b1457034890f3c604c640cb8/Hercontrole_Contentonderzoek_regionaalenergieloket.nl_WCAG2.1_AA.pdf
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2023-10-20'
-  rapport_datum_iso: '2023-10-20'
-  geldig_tot: '2026-10-20'
-  status: Verlopen
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.regionaalenergieloket.nl/WCAG-contentonderzoek-particulier
-- platform: Regionaal Energieloket
-  leverancier: Regionaal Energieloket
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2023-10-20'
-  rapport_datum_iso: '2023-10-20'
-  geldig_tot: '2026-10-20'
-  status: Verlopen
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://drive.google.com/file/d/1sWxKc1047YLPHOTYCaaMLGoMF7FF_yer/view
 - platform: ROVA
   leverancier: ROVA
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-11-30'
   rapport_datum_iso: '2024-11-30'
   geldig_tot: '2027-11-30'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '21'
   rapport_url: https://cdn.rova.nl/media/onderzoek-wwwrovanl-10-2024.pdf
 - platform: ROVA
   leverancier: ROVA
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-02'
   rapport_datum_iso: '2024-12-02'
   geldig_tot: '2027-12-02'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '29'
   rapport_url: https://cdn.rova.nl/media/onderzoek-app-mijnrovanl-10-2024_IOS.pdf
 - platform: Shift2 (SIM-platform)
   leverancier: Shift2
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-12-10'
   rapport_datum_iso: '2024-12-10'
@@ -1785,7 +1478,7 @@ rapporten:
   rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/WCAG%202.1%20AA%20inspectie%20techniek-shift2-2024.pdf?cb=Fk-NoRyy
 - platform: Shift2 (SIM-platform)
   leverancier: Shift2
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2026-03-19'
   rapport_datum_iso: '2026-03-19'
@@ -1796,7 +1489,7 @@ rapporten:
   rapport_url: https://www.shift2toegankelijk.nl/technische-rapportages
 - platform: Signalen (meldingen openbare ruimte)
   leverancier: Common Ground
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-04-08'
   rapport_datum_iso: '2024-04-08'
@@ -1807,7 +1500,7 @@ rapporten:
   rapport_url: https://commonground.nl/files/view/01f4a0d1-86fb-42e8-8109-6030eea370fb/wcag-rapportage-1-techniekonderzoek-2024-04_meldingen.pdf
 - platform: Signalen (meldingen openbare ruimte)
   leverancier: Common Ground
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-04-08'
   rapport_datum_iso: '2024-04-08'
@@ -1818,62 +1511,40 @@ rapporten:
   rapport_url: https://commonground.nl/file/download/01f4a0d1-86fb-42e8-8109-6030eea370fb/wcag-rapportage-1-techniekonderzoek-2024-04_meldingen.pdf
 - platform: Signalen (meldingen openbare ruimte)
   leverancier: Gemeente Amsterdam
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-08'
   rapport_datum_iso: '2024-04-08'
   geldig_tot: '2027-04-08'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://meldingen.amsterdam.nl/assets/2024-04_meldingen.amsterdam.nl_Digitaal-Toegankelijk-WCAG-EM.pdf
 - platform: Signalen (meldingen openbare ruimte)
   leverancier: Common Ground
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2024-04-08'
-  rapport_datum_iso: '2024-04-08'
-  geldig_tot: '2027-04-08'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://commonground.nl/files/view/af43d409-3ca4-4483-b44e-01e7148ab3d3/wcag-rapportage-2-contentonderzoek-2024-04_meldingen.pdf
-- platform: Signalen (meldingen openbare ruimte)
-  leverancier: Common Ground
-  categorie: Platform van leverancier
-  rapport_type: Content
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-04-30'
   rapport_datum_iso: '2024-04-30'
   geldig_tot: '2027-04-30'
   status: Verloopt binnen 6 maanden
   content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://commonground.nl/file/download/af43d409-3ca4-4483-b44e-01e7148ab3d3/wcag-rapportage-2-contentonderzoek-2024-04_meldingen.pdf
-- platform: Signalen (meldingen openbare ruimte)
-  leverancier: Common Ground
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
-  rapport_datum: '2024-04-30'
-  rapport_datum_iso: '2024-04-30'
-  geldig_tot: '2027-04-30'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
   goedgekeurde_sc: Onbekend
   rapport_url: https://commonground.nl/groups/view/6232d985-a695-4168-a351-8c55212f0634/signalen/files/2c2df113-6b55-43bc-90ab-a72cc86d9e6b
 - platform: SIM-platform
   leverancier: Shift2
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-11-06'
   rapport_datum_iso: '2023-11-06'
   geldig_tot: '2026-11-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/wcag-2.1-aa-inspectie-www.simtoegankelijk.nl-1.1.pdf
 - platform: SIM-platform
   leverancier: Shift2
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2023-11-06'
   rapport_datum_iso: '2023-11-06'
@@ -1884,7 +1555,7 @@ rapporten:
   rapport_url: https://cuatro.sim-cdn.nl/leudal/uploads/wcag-2.1-aa-inspectie-techniek-www.simtoegankelijk.nl-1.1.pdf
 - platform: SIM-platform
   leverancier: Shift2
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-02-01'
   rapport_datum_iso: '2024-02-01'
@@ -1895,18 +1566,18 @@ rapporten:
   rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/inspectie-techniek-shitf2-formulieren.pdf?cb=1Zj2iIrl
 - platform: SIM-platform
   leverancier: Shift2
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-12-10'
   rapport_datum_iso: '2024-12-10'
   geldig_tot: '2027-12-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '26'
   rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/onderzoek-pipsimtoegankelijknl-20-2024%20(2).pdf?cb=4RODMesZ
 - platform: SIM-platform
   leverancier: Shift2
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-06-04'
   rapport_datum_iso: '2025-06-04'
@@ -1917,73 +1588,73 @@ rapporten:
   rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/WCAG%202.1%20AA%20inspectie%20techniek-aanvullend-simtoegankelijk.nl_.pdf?cb=h2yV1Cwa
 - platform: Solutions Factory (werving/inhuur)
   leverancier: Solutions Factory
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-05-06'
   rapport_datum_iso: '2024-05-06'
   geldig_tot: '2027-05-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '40'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/softwareplatform-solutions-factory-hercontrole/audit/
 - platform: Solutions Factory (werving/inhuur)
   leverancier: Solutions Factory
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-05-06'
   rapport_datum_iso: '2024-05-06'
   geldig_tot: '2027-05-06'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '40'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/softwareplatform-solutions-factory-hercontrole/
 - platform: Startpunt Geldzaken
   leverancier: Nibud
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-15'
   rapport_datum_iso: '2025-07-15'
   geldig_tot: '2028-07-15'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.startpuntgeldzaken.nl/nibud/geldplannen/digitale-toegankelijkheid/
 - platform: Stembureaumanager
   leverancier: SBM
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-02-25'
   rapport_datum_iso: '2025-02-25'
   geldig_tot: '2028-02-25'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '55'
   rapport_url: https://static.sbm.cloud/documentatie/onderzoek_stembureaumanager_op_devnl_sbm_cloud_WCAG_2_2_AA.pdf
 - platform: Swing (Mosaic)
   leverancier: Swing
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-09-22'
   rapport_datum_iso: '2023-09-22'
   geldig_tot: '2026-09-22'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/swing-mosaic/audit/
 - platform: Swing (Mosaic)
   leverancier: Swing
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2023-09-22'
   rapport_datum_iso: '2023-09-22'
   geldig_tot: '2026-09-22'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/swing-mosaic/
 - platform: Timeblockr
   leverancier: Timeblockr
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-04-09'
   rapport_datum_iso: '2024-04-09'
@@ -1994,7 +1665,7 @@ rapporten:
   rapport_url: https://timeblockr.com/app/uploads/2024/08/Deelonderzoek-techniek-T_MEBLOCKR-WCAG-2.1-AA-nieuwste.pdf
 - platform: Timeblockr
   leverancier: Timeblockr
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2025-10-01'
   rapport_datum_iso: '2025-10-01'
@@ -2005,95 +1676,95 @@ rapporten:
   rapport_url: https://timeblockr.com/app/uploads/2025/11/Deelonderzoek-techniek-TIMEBLOCKR-WCAG-2.2-Juni-2025.pdf
 - platform: Twente Milieu
   leverancier: Twente Milieu
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-10-31'
   rapport_datum_iso: '2024-10-31'
   geldig_tot: '2027-10-31'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://s3.eu-central-1.amazonaws.com/twente-milieu-2020/media/Twente-Milieu_Richtlijnen_WC3_30-10-2024.pdf
 - platform: Verkiezing in Beeld
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-11'
   rapport_datum_iso: '2024-03-11'
   geldig_tot: '2027-03-11'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '35'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/zwolle.verkiezinginbeeld.nl/audit/
 - platform: Verloren of Gevonden
   leverancier: PerfectView
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-29'
   rapport_datum_iso: '2025-07-29'
   geldig_tot: '2028-07-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '40'
   rapport_url: https://resources.perfectview.nl/vog/WCAG-22-AA-onderzoek-wwwverlorenofgevondennl-20250729.pdf
 - platform: Visma Roxit RxFront
   leverancier: Visma Roxit
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-10-08'
   rapport_datum_iso: '2024-10-08'
   geldig_tot: '2027-10-08'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/visma-roxit-rxfront/audit/
 - platform: Visma Roxit RxFront
   leverancier: Visma Roxit
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-10-08'
   rapport_datum_iso: '2024-10-08'
   geldig_tot: '2027-10-08'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/visma-roxit-rxfront/
 - platform: Visma Roxit RxFront
   leverancier: Visma Roxit
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-09-26'
   rapport_datum_iso: '2025-09-26'
   geldig_tot: '2028-09-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/visma-roxit-rxfront-hercontrole/audit/
 - platform: WAAS4 bibliotheekplatform
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-09-10'
   rapport_datum_iso: '2024-09-10'
   geldig_tot: '2027-09-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '28'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/waas4-bibliotheekplatform/
 - platform: WAAS4 bibliotheekplatform
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-09-10'
   rapport_datum_iso: '2025-09-10'
   geldig_tot: '2028-09-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '28'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/waas4-bibliotheekplatform/audit/
 - platform: Webformulieren
   leverancier: onbekend
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-11-26'
   rapport_datum_iso: '2024-11-26'
@@ -2102,31 +1773,20 @@ rapporten:
   content_nodig: Ja
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.noordoostpolder.nl/file/deelonderzoek-techniek-formulieren
-- platform: Werken in Zuidoost-Brabant
-  leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Content
-  rapport_datum: '2025-02-21'
-  rapport_datum_iso: '2025-02-21'
-  geldig_tot: '2028-02-21'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '24'
-  rapport_url: https://cuatro.sim-cdn.nl/cranendonck/uploads/wcag-22-aa-deelonderzoek-content-werkinzuidoostbrabantnl-10.pdf?cb=LzrurqbG
 - platform: Werken voor Groningen
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-02-28'
   rapport_datum_iso: '2025-02-28'
   geldig_tot: '2028-02-28'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '46'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/werkenvoorgroningen.nl/audit/
 - platform: White label websites Eindhoven
   leverancier: Gemeente Eindhoven
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-03-07'
   rapport_datum_iso: '2024-03-07'
@@ -2137,7 +1797,7 @@ rapporten:
   rapport_url: https://www.eindhoven.nl/sites/default/files/2024-04/WCAG_2.1_AA_inspectie_techniek_white_label_websites_GemeenteEindhoven.pdf
 - platform: White label websites Tilburg
   leverancier: Gemeente Tilburg
-  categorie: Platform van leverancier
+  categorie: Platformen van leveranciers
   rapport_type: Techniek
   rapport_datum: '2024-10-10'
   rapport_datum_iso: '2024-10-10'
@@ -2148,293 +1808,260 @@ rapporten:
   rapport_url: https://www.tilburg.nl/fileadmin/files/footer/onderzoeksrapporten/inspectie-techniek-wwwwhitelabeltilburgnl-22-2024.pdf
 - platform: Woningbouwkaart
   leverancier: onbekend
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-07-17'
   rapport_datum_iso: '2025-07-17'
   geldig_tot: '2028-07-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditor.cardan.com/report/01jqxhjrdjg85h9xese5dv4vt4
 - platform: Ximmio afvalapp
   leverancier: Ximmio
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-29'
   rapport_datum_iso: '2024-03-29'
   geldig_tot: '2027-03-29'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '34'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-03/Toegankelijkheidsonderzoek%20Ximmio%20app%20(Westland)%20Android%20V3.pdf
 - platform: Ximmio afvalapp
   leverancier: Ximmio
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2024-03-29'
   rapport_datum_iso: '2024-03-29'
   geldig_tot: '2027-03-29'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-03/Toegankelijkheidsonderzoek%20Ximmio%20app%20(Westland)%20iOS%20V3.pdf
 - platform: xxllnc Zaken (zaaksysteem.nl)
   leverancier: xxllnc
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-05-26'
   rapport_datum_iso: '2025-05-26'
   geldig_tot: '2028-05-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-10/Hercontrole%20toegankelijkheid.zaaksysteem.nl%20WCAG%202.2%20%28v2%29.pdf
 - platform: Zo Gemeld app
   leverancier: Zo Gemeld
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-01-05'
   rapport_datum_iso: '2025-01-05'
   geldig_tot: '2028-01-05'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.zogemeld.nl/assets/Audit_Zo_Gemeld_app_iOS_v6_0_0.pdf
 - platform: Zo Gemeld app
   leverancier: Zo Gemeld
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-01-06'
   rapport_datum_iso: '2025-01-06'
   geldig_tot: '2028-01-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '44'
   rapport_url: https://www.zogemeld.nl/assets/Audit_Zo_Gemeld_app_Android_v6_0_0.pdf
 - platform: ZorgNed cliëntportaal
   leverancier: ZorgNed
-  categorie: Platform van leverancier
-  rapport_type: Volledig of onbekend
+  categorie: Platformen van leveranciers
+  rapport_type: Volledig
   rapport_datum: '2025-10-10'
   rapport_datum_iso: '2025-10-10'
   geldig_tot: '2028-10-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://zorgned.nl/digitoegankelijkheidsonderzoek-clientportaal-2025-9/
 - platform: 18 in de SED
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-01-29'
   rapport_datum_iso: '2025-01-29'
   geldig_tot: '2028-01-29'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '32'
   rapport_url: https://janitatop.nl/rapporten/2025/enkhuizen.nl
 - platform: Afval scheiden doe je goed!
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-04-07'
   rapport_datum_iso: '2025-04-07'
   geldig_tot: '2028-04-07'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '55'
   rapport_url: https://www.goes.nl/sites/goes/files/2025-04/hercontrole-onderzoek-www.goes_.nl-wcag-2.2-aa-002.pdf
 - platform: Anti Money Laundering Centre (EU)
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-05-26'
   rapport_datum_iso: '2026-05-26'
   geldig_tot: '2029-05-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditor.cardan.com/report/01k8tt4617r6egqstvp7z21fx5
 - platform: Banenplein Limburg
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-08-06'
   rapport_datum_iso: '2024-08-06'
   geldig_tot: '2027-08-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '41'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/banenplein-limburg/audit/
 - platform: BEL Combinatie - BEL Combinatie
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-03-19'
   rapport_datum_iso: '2026-03-19'
   geldig_tot: '2029-03-19'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditor.cardan.com/report/01k56ggdfp59xenwmy03xv0nw1
 - platform: Belastingbalie Nissewaard
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-04-18'
   rapport_datum_iso: '2024-04-18'
   geldig_tot: '2027-04-18'
   status: Verloopt binnen 6 maanden
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://gblt.nl/file-download/download/public/1444
 - platform: Belastingenportaal Aa en Hunze
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-05-20'
   rapport_datum_iso: '2025-05-20'
   geldig_tot: '2028-05-20'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://grip.digitaaltoegankelijk.nl/ax/accessibility-report.php?show=333&shared=1517476399226069&lang=nl
 - platform: Belastingenportaal Aa en Hunze
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-06-06'
   rapport_datum_iso: '2025-06-06'
   geldig_tot: '2028-06-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://grip.digitaaltoegankelijk.nl/ax/accessibility-report.php?show=332&shared=9117500744072321&lang=nl
 - platform: Belastingloket OWO gemeenten
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-09-26'
   rapport_datum_iso: '2025-09-26'
   geldig_tot: '2028-09-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditing.accessibilitydesk.com/api/reports/268#scoping
 - platform: Brabantscan
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-03-10'
   rapport_datum_iso: '2026-03-10'
   geldig_tot: '2029-03-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditing.accessibilitydesk.com/public/reports/80/202603101357/940
 - platform: Denkmee.nieuwkoop.nl
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-08-21'
   rapport_datum_iso: '2024-08-21'
   geldig_tot: '2027-08-21'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://downloads.intercomcdn.com/i/o/p4lr69wg/1235199163/28b5f9089ca16e8d858ae80371aa/AnySurfer+Report.pdf?expires=1730379750&signature=9d955143e93449c1d5f5b295e0ab03fd2381f6daedfcf4bfd782e172091f4401&req=dSIkE8h3lIBZWvMU3HP0gJXI9HpZ7BPu%2BLaNK85Rgrw3MRt
-- platform: Digitale belastingbalie
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2024-04-15'
-  rapport_datum_iso: '2024-04-15'
-  geldig_tot: '2027-04-15'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: '27'
-  rapport_url: https://open.sint-michielsgestel.nl/sites/default/files/2024-05/Hercheck%20contentonderzoek%20www.sint-michielsgestel.nl_.pdf
 - platform: Dijkenwaard.nl
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-10-10'
   rapport_datum_iso: '2024-10-10'
   geldig_tot: '2027-10-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://toegankelijkonline.nl/audits/30903e59-aa08-45ee-b359-cd39256b3b8b
 - platform: Documenten Aalsmeer
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-03-05'
   rapport_datum_iso: '2026-03-05'
   geldig_tot: '2029-03-05'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '41'
   rapport_url: https://www.toegankelijkheidsonderzoek.nl/amstelveen.nl/
 - platform: Documenten Enschede
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-05-13'
   rapport_datum_iso: '2026-05-13'
   geldig_tot: '2029-05-13'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditing.accessibilitydesk.com/public/reports/87/202605130750/1340
 - platform: Douane
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-06-18'
   rapport_datum_iso: '2025-06-18'
   geldig_tot: '2028-06-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditor.cardan.com/report/01jnjn3ffw8xh82as4t9ygxj84
-- platform: Duurzaamwonen (Sittard-Geleen)
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2025-08-08'
-  rapport_datum_iso: '2025-08-08'
-  geldig_tot: '2028-08-08'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '49'
-  rapport_url: https://sittard-geleen.nl/wp-content/uploads/2025/08/wcag-22-aa-onderzoek-sittard-geleennl-11-202508081039.pdf
-- platform: eFormulieren Barendrecht (eloket)
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2024-03-22'
-  rapport_datum_iso: '2024-03-22'
-  geldig_tot: '2027-03-22'
-  status: Verloopt binnen 6 maanden
-  content_nodig: Nee
-  goedgekeurde_sc: '38'
-  rapport_url: https://www.barendrecht.nl/wp-content/uploads/2024/06/WCAG-2.2-AA-inspectie-Loketten-Gemeente-Barendrecht-Albrandswaard-en-Ridderkerk-1.0.pdf
 - platform: Gelderse Omgevingsdiensten
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Techniek en content genoemd
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-10-06'
   rapport_datum_iso: '2025-10-06'
   geldig_tot: '2028-10-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '41'
   rapport_url: https://www.gelderseomgevingsdiensten.nl/wp-content/uploads/2026/01/Techniek-inspectie-WCAG-2.2-Gelderse-Omgevingsdiensten.pdf
 - platform: Gemeente Alphen-Chaam
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
+  categorie: Gedeelde websites en samenwerkingen
   rapport_type: Techniek
   rapport_datum: '2024-04-08'
   rapport_datum_iso: '2024-04-08'
@@ -2445,161 +2072,117 @@ rapporten:
   rapport_url: https://www.alphen-chaam.nl/fileadmin/Bestanden_AlphenChaam/Over_deze_website/WCAG_2.1_AA_inspectie_techniek_-_baarle-nassau.nl_alphen-chaam.nl_gilzerijen.nl_-_1.1.pdf
 - platform: Gemeente Capelle aan den IJssel
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-04-20'
   rapport_datum_iso: '2026-04-20'
   geldig_tot: '2029-04-20'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://swink-axeauditor.dequecloud.com/test-run/14c04990-0d79-11f1-9d85-a39f56720122/test-run-report?report_type=audit-report&automated_tools_comply=true
 - platform: Gemeente Delft
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-11-11'
   rapport_datum_iso: '2024-11-11'
   geldig_tot: '2027-11-11'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '49'
   rapport_url: https://www.delft.nl/sites/default/files/2025-04/onderzoeksrapport-toegankelijkheid-website-gemeente-delft.pdf
 - platform: Gemeenteraad Groningen
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-08-08'
   rapport_datum_iso: '2025-08-08'
   geldig_tot: '2028-08-08'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '23'
   rapport_url: https://www.weert.nl/downloads/Toegankelijkheid/Toegankelijkheidsonderzoek%20gemeenteraad.weert%2008-08-2025.pdf
 - platform: GGD Kennemerland
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-09-17'
   rapport_datum_iso: '2025-09-17'
   geldig_tot: '2028-09-17'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '31'
   rapport_url: https://www.vrk.nl/sites/vrk/files/2025-12/wcag-22-aa-onderzoek-wwwvrknl-11-202509171512.pdf
 - platform: Goed verhuurderschap Heerlen
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-12-12'
   rapport_datum_iso: '2024-12-12'
   geldig_tot: '2027-12-12'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '43'
   rapport_url: https://wcagnl.wcagonderzoek.nl/nl-NL/onderzoeksrapport/6751938db374751e4571d69c
-- platform: Goes praat mee
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2024-11-29'
-  rapport_datum_iso: '2024-11-29'
-  geldig_tot: '2027-11-29'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '38'
-  rapport_url: https://cuatro.sim-cdn.nl/goereeoverflakkee/uploads/praatmee.goeree-overflakkee.nl%20(content)%20-%20WCAG-EM%20Toegankelijkheidsonderzoek.pdf
 - platform: Groot Clooster
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-06-10'
   rapport_datum_iso: '2026-06-10'
   geldig_tot: '2029-06-10'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.accessy.club/toegankelijkheidsonderzoeken/124-gemeentes-heemstede-en-bloemendaal
 - platform: InSite 's-Hertogenbosch
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-09-01'
   rapport_datum_iso: '2025-09-01'
   geldig_tot: '2028-09-01'
   status: Geldig
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://drive.google.com/file/d/1FJuaiIQFaYHPMBMOem1rwq6iSyQyB4DF/view
-- platform: Jeugdhulp Rijnmond
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2023-11-13'
-  rapport_datum_iso: '2023-11-13'
-  geldig_tot: '2026-11-13'
-  status: Verloopt binnen 6 maanden
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: https://www.jeugdhulprijnmond.nl/wp-content/uploads/2024/02/jeugdhulprijnmond.nl-Digitaal-Toegankelijk-WCAG-EM.pdf
+  rapport_url: https://drive.google.com/file/d/1FJuaiIQFaYHPMBMOem1rwq6iSyQyB4DF/view
 - platform: Kaart.haarlem.nl
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-11-18'
   rapport_datum_iso: '2025-11-18'
   geldig_tot: '2028-11-18'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '43'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/kaarthaarlem.nl-hercontrole/
-- platform: Meedoen Maasgouw
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2025-05-16'
-  rapport_datum_iso: '2025-05-16'
-  geldig_tot: '2028-05-16'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://aan-z.eu/wp-content/uploads/2025/09/wcag-22-aa-onderzoek-httpswwwsameninterneuzennl-10-1.pdf
 - platform: Mijn Sport in Rijssen-Holten (persoonlijk loket)
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2025-04-10'
   rapport_datum_iso: '2025-04-10'
   geldig_tot: '2028-04-10'
   status: Geldig
-  content_nodig: Onbekend
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://www.horstaandemaas.nl/sites/horst-ad-maas/files/2025-04/Inspectierapport%20zwembad.horstaandemaas.nl%202025.pdf
-- platform: MijnAalsmeer
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2025-05-28'
-  rapport_datum_iso: '2025-05-28'
-  geldig_tot: '2028-05-28'
-  status: Geldig
   content_nodig: Nee
   goedgekeurde_sc: Onbekend
-  rapport_url: https://www.accessy.club/wp-content/uploads/2025/06/Toegankelijkheidsonderzoek-heronderzoek-loket.amstelveen.nl_.pdf
+  rapport_url: https://www.horstaandemaas.nl/sites/horst-ad-maas/files/2025-04/Inspectierapport%20zwembad.horstaandemaas.nl%202025.pdf
 - platform: Nieuwkoop Actief
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-10-03'
   rapport_datum_iso: '2024-10-03'
   geldig_tot: '2027-10-03'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '30'
   rapport_url: https://rapporten.wcag.nl/rapporten/eenmeting/667579fae086cb226f068514
 - platform: Open data - dataportaal van de gemeente Nijmegen
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
+  categorie: Gedeelde websites en samenwerkingen
   rapport_type: Techniek
   rapport_datum: '2024-02-28'
   rapport_datum_iso: '2024-02-28'
@@ -2610,89 +2193,45 @@ rapporten:
   rapport_url: https://janitatop.nl/rapporten/2024/data.oss.nl-techniek
 - platform: Presurf (gearchiveerde website)
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2026-02-26'
   rapport_datum_iso: '2026-02-26'
   geldig_tot: '2029-02-26'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://auditor.cardan.com/report/01khwzxzzy1fb8wfys9dev59k6
-- platform: Regionale Belasting Groep
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2024-06-07'
-  rapport_datum_iso: '2024-06-07'
-  geldig_tot: '2027-06-07'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '28'
-  rapport_url: https://www.derbg.nl/wp-content/uploads/2024/06/Onderzoek-www.derbg_.nl-WCAG-2.1-AA.pdf
-- platform: Regionale Belasting Groep
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2024-06-07'
-  rapport_datum_iso: '2024-06-07'
-  geldig_tot: '2027-06-07'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '25'
-  rapport_url: https://www.derbg.nl/wp-content/uploads/2024/06/Deelonderzoek-content-https___mijnrbg-test.derbg_.nl-WCAG-2.1.pdf
 - platform: Ruim Baan Voor Vissen
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2023-10-20'
   rapport_datum_iso: '2023-10-20'
   geldig_tot: '2026-10-20'
   status: Verlopen
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '32'
   rapport_url: https://rapporten.wcag.nl/rapporten/nulmeting/651fd116f724ab18a853f2e0#uitvoering
 - platform: Samen werken aan Driebergen-Zeist
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-12-06'
   rapport_datum_iso: '2024-12-06'
   geldig_tot: '2027-12-06'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: Onbekend
   rapport_url: https://www.zeist.nl/fileadmin/bestanden/Open_gemeenten_nieuwe_bestandenboom/Toegankelijkheid/Q4-2024-Onderzoeksrapport-WCA-_2.1-AA-samenwerkenaandriebergen-zeist.nl.pdf
 - platform: Werken bij Capelle aan den IJssel
   leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Volledig of onbekend
+  categorie: Gedeelde websites en samenwerkingen
+  rapport_type: Volledig
   rapport_datum: '2024-12-13'
   rapport_datum_iso: '2024-12-13'
   geldig_tot: '2027-12-13'
   status: Geldig
-  content_nodig: Onbekend
+  content_nodig: Nee
   goedgekeurde_sc: '50'
   rapport_url: https://toegankelijkheidsrapport.swink.nl/werkenbijcapelleaandenijssel-hercontrole/audit/
-- platform: Werkgevers Servicepunt Rijnmond
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2023-09-18'
-  rapport_datum_iso: '2023-09-18'
-  geldig_tot: '2026-09-18'
-  status: Verlopen
-  content_nodig: Nee
-  goedgekeurde_sc: Onbekend
-  rapport_url: https://wsprijnmond.nl/content/uploads/2023/09/Onderzoek-wsprijnmond.nl-WCAG-2.1-AA.pdf
-- platform: Zorgonline Aalsmeer (website)
-  leverancier: ''
-  categorie: Gedeelde website of samenwerking
-  rapport_type: Content
-  rapport_datum: '2025-07-04'
-  rapport_datum_iso: '2025-07-04'
-  geldig_tot: '2028-07-04'
-  status: Geldig
-  content_nodig: Nee
-  goedgekeurde_sc: '47'
-  rapport_url: https://www.accessy.club/wp-content/uploads/2025/07/Toegankelijkheidsonderzoek-socialekaart.amstelveen.nl_.pdf
