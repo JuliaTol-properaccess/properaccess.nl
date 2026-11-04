@@ -1,15 +1,15 @@
 ---
 title: "Techniek- of systeemaudit"
 hide_cta: true
-meta_title: "Techniek- of systeemaudit: voor softwareleveranciers en productteams | Proper Access"
+meta_title: "Techniekaudit voor je platform | Proper Access"
 layout: "agency"
 weight: 5
 date: 2026-05-30
 slug: "techniekaudit"
 url: "/techniekaudit/"
-description: "We toetsen de bouwstenen van je product op WCAG en rapporteren per element, niet per succescriterium. Voor softwareleveranciers en productteams."
+description: "Laat de techniek van je platform toetsen aan WCAG 2.2. Je krijgt een rapport per element waarmee je ontwikkelteam direct kan werken."
 tldr: |
-  Een techniek- of systeemaudit toetst de bouwstenen van je product op WCAG 2.2: componenten, code en interactiepatronen, los van de content die er straks in komt. We dekken 48 van de 55 succescriteria op niveau A en AA; de zeven over multimedia en content vallen onder een contentaudit. Je krijgt een rapport per element dat je intern gebruikt om je product te verbeteren en dat je klanten kunnen aanhalen voor hun eigen toegankelijkheidsverklaring. Bedoeld voor softwareleveranciers, productteams en SaaS-partijen.
+  Met een techniek- of systeemaudit laat je de techniek van je platform handmatig toetsen aan WCAG 2.2. We onderzoeken 48 van de 55 succescriteria en rapporteren per element, zodat je ontwikkelteam gericht kan verbeteren. Voor softwareleveranciers, productteams en SaaS-partijen.
 keywords:
   - techniekaudit wcag
   - systeemaudit toegankelijkheid
@@ -20,161 +20,104 @@ service:
   serviceType: "Techniek- en systeemaudit volgens WCAG 2.2"
 
 banner:
-  title: "Techniek- of systeemaudit"
-  content: "Voor softwareleveranciers en productteams die een component, plug-in of compleet platform laten toetsen, los van de content die er straks in komt."
+  title: "Techniekaudit voor je platform"
+  content: "Laat de techniek van je platform handmatig toetsen aan WCAG 2.2. Voor softwareleveranciers, productteams en SaaS-partijen."
   button:
     enable: true
     label: "Vraag een techniekaudit aan"
     link: "/contact/"
 
 trust:
-  label: "Wat erin zit"
+  label: "Techniekonderzoeken voor"
   names:
-    - "48 succescriteria"
-    - "15-30 uur testen"
-    - "Per element rapport"
-    - "Multimedia uitgesloten"
-    - "Herbruikbaar door je klanten"
+    - "Foleon"
+    - "Pleio"
+    - "Postex"
+    - "Hoplr"
 ---
 
 {{< section-full >}}
 
-Bouw je software die door anderen wordt gebruikt? Een CMS, een webshop-platform, een widget die op de site van een klant terechtkomt, een SaaS-applicatie? Dan is jouw werk de basis waarop straks honderden of duizenden websites draaien. Als jouw fundament niet klopt, kunnen je klanten geen toegankelijke website maken, hoe hard ze ook hun best doen.
+Je platform bepaalt mede of de websites van je klanten toegankelijk zijn. Een probleem in een formulier, dialoogvenster of interactief element kan op iedere implementatie terugkomen.
 
-Een techniek- of systeemaudit toetst die fundamenten. We testen je componenten, je code, je interactie-patronen, los van wat er straks aan content in komt. Het resultaat is een rapport dat je intern gebruikt om je product te verbeteren, en dat je klanten kunnen aanhalen voor hun eigen toegankelijkheidsverklaring.
+Met een techniekaudit laat je de techniek van je platform handmatig toetsen. Je krijgt een rapport waarmee je ontwikkelteam gericht kan verbeteren. Je klanten kunnen het rapport gebruiken als onderbouwing van het techniekdeel van hun eigen toegankelijkheidsonderzoek.
 
-{{< /section-full >}}
+**Voor softwareleveranciers, productteams en SaaS-partijen.**
 
-{{< section-full title="Wat we toetsen" bg="light" >}}
-
-Een techniek- of systeemaudit dekt 48 van de 55 succescriteria van WCAG 2.2 op niveau A en AA: alle criteria die over techniek en interactie gaan. De zeven criteria die we niet toetsen, gaan over multimedia en content; die vallen onder een contentaudit.
-
-Een greep uit wat we per component nalopen (een uitputtende opsomming zou een handleiding op zich zijn):
-
-- **Toetsenbordbediening.** Werkt elk interactief element met Tab, Enter, Space, pijltjes? Is de focusvolgorde logisch? Kun je niet vast komen te zitten in een widget?
-- **Focuszichtbaarheid.** Zie je altijd waar je staat? Voldoet de focus-ring aan de contrasteisen? Wordt focus niet weggetransporteerd door scripts?
-- **ARIA-rollen en -attributen.** Klopt de semantiek? Zijn dialogs, tabs, accordions, menus en buttons correct gemarkeerd? Verwart een schermlezer niet?
-- **Foutmeldingen en formulieren.** Worden fouten gekoppeld aan het juiste veld? Worden ze voorgelezen door een schermlezer? Kun je de fout herstellen?
-- **Zoom en herschalen.** Werkt het component op 200% en 400% zoom? Op 320 pixels breedte? Wanneer letterafstand vergroot wordt?
-- **Tijdslimieten en pauzefuncties.** Krijgt de gebruiker tijd, of kan hij hem verlengen? Kunnen animaties en carrousels gepauzeerd worden?
-- **Skiplinks en landmarks.** Zijn de structurele oriëntatie-elementen aanwezig en correct?
-- **Naam, rol en waarde.** Hebben alle interactieve elementen een toegankelijke naam? Worden statusveranderingen aangekondigd?
-
-Dit is een selectie. De complete opsomming van 48 succescriteria die we in een techniek- of systeemaudit toetsen, staat verderop op deze pagina in een uitklapbare lijst.
-
-We werken met meerdere browsers, met NVDA en VoiceOver, met toetsenbord-only en met zoom-tools. De versies leggen we vast in het rapport. Bij een hercontrole later weten we dan precies wat de uitgangssituatie was.
+[Vraag een techniekaudit aan](/contact/)
 
 {{< /section-full >}}
 
-{{< section-full title="Wat we niet toetsen" >}}
+{{< section-full title="Wat we onderzoeken" bg="light" >}}
 
-De zeven criteria die we niet toetsen, gaan grotendeels over multimedia: ondertiteling van video, audiodescriptie, transcripts en alternatieven voor audio-only en video-only content. Daarnaast vallen twee criteria buiten beschouwing die strikt content-gerelateerd zijn: zintuiglijke instructies in tekst ("klik op de groene knop rechts") en afbeeldingen van tekst. Die hangen af van wat er straks in jouw platform geüpload wordt, niet van het platform zelf.
+We toetsen de techniek en interactie van je platform aan WCAG 2.2, niveau A en AA.
 
-In het rapport krijgt elk niet-getoetst criterium de vermelding "Dit is een audit van techniek, daarom is dit SC niet onderzocht". Net zoals bij een contentaudit blijft transparant wat we wel en niet hebben getoetst: bewijsmateriaal dat klopt voor jou én voor de toezichthouder van je klant.
+We onderzoeken 48 van de 55 succescriteria. Bijvoorbeeld:
 
-{{< /section-full >}}
+- bediening met toetsenbord;
+- focus en focusvolgorde;
+- formulieren en foutmeldingen;
+- HTML, ARIA en semantiek;
+- interactieve componenten;
+- zoom, reflow en contrast;
+- naam, rol en waarde;
+- statusberichten en dynamische content.
 
-{{< section-full title="De volledige lijst" bg="light" >}}
+We testen handmatig met toetsenbord, NVDA, VoiceOver, browsers en zoom.
 
-Voor wie het naadje wil weten: alle 55 succescriteria van WCAG 2.2 (niveau A en AA), per criterium of we het in een techniek- of systeemaudit toetsen.
-
-<details class="pa-disclosure">
-<summary>Bekijk de lijst van alle 55 succescriteria</summary>
-
-| Succescriterium | Wordt getoetst? |
-| --- | --- |
-| 1.1.1 Niet-tekstuele content | Ja |
-| 1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen) | Nee |
-| 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen) | Nee |
-| 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen) | Nee |
-| 1.2.4 Ondertitels voor doven en slechthorenden (live) | Nee |
-| 1.2.5 Audiodescriptie (vooraf opgenomen) | Nee |
-| 1.3.1 Info en relaties | Ja |
-| 1.3.2 Betekenisvolle volgorde | Ja |
-| 1.3.3 Zintuiglijke eigenschappen | Nee |
-| 1.3.4 Weergavestand | Ja |
-| 1.3.5 Identificeer het doel van de input | Ja |
-| 1.4.1 Gebruik van kleur | Ja |
-| 1.4.2 Geluidsbediening | Ja |
-| 1.4.3 Contrast (minimum) | Ja |
-| 1.4.4 Herschalen van tekst | Ja |
-| 1.4.5 Afbeeldingen van tekst | Nee |
-| 1.4.10 Reflow | Ja |
-| 1.4.11 Contrast van niet-tekstuele content | Ja |
-| 1.4.12 Tekstafstand | Ja |
-| 1.4.13 Content bij hover of focus | Ja |
-| 2.1.1 Toetsenbord | Ja |
-| 2.1.2 Geen toetsenbordval | Ja |
-| 2.1.4 Enkel teken sneltoetsen | Ja |
-| 2.2.1 Timing aanpasbaar | Ja |
-| 2.2.2 Pauzeren, stoppen, verbergen | Ja |
-| 2.3.1 Drie flitsen of beneden drempelwaarde | Ja |
-| 2.4.1 Blokken omzeilen | Ja |
-| 2.4.2 Paginatitel | Ja |
-| 2.4.3 Focus volgorde | Ja |
-| 2.4.4 Linkdoel (in context) | Ja |
-| 2.4.5 Meerdere manieren | Ja |
-| 2.4.6 Koppen en labels | Ja |
-| 2.4.7 Focus zichtbaar | Ja |
-| 2.4.11 Focus niet volledig bedekt (WCAG 2.2) | Ja |
-| 2.5.1 Aanwijzergebaren | Ja |
-| 2.5.2 Aanwijzerannulering | Ja |
-| 2.5.3 Label in naam | Ja |
-| 2.5.4 Bewegingsactivering | Ja |
-| 2.5.7 Sleepbewegingen (WCAG 2.2) | Ja |
-| 2.5.8 Doelgebied grootte (WCAG 2.2) | Ja |
-| 3.1.1 Taal van de pagina | Ja |
-| 3.1.2 Taal van onderdelen | Ja |
-| 3.2.1 Bij focus | Ja |
-| 3.2.2 Bij input | Ja |
-| 3.2.3 Consistente navigatie | Ja |
-| 3.2.4 Consistente identificatie | Ja |
-| 3.2.6 Consistente hulp (WCAG 2.2) | Ja |
-| 3.3.1 Foutidentificatie | Ja |
-| 3.3.2 Labels of instructies | Ja |
-| 3.3.3 Foutsuggestie | Ja |
-| 3.3.4 Foutpreventie (wettelijk, financieel, gegevens) | Ja |
-| 3.3.7 Overtollige invoer (WCAG 2.2) | Ja |
-| 3.3.8 Toegankelijke authenticatie (WCAG 2.2) | Ja |
-| 4.1.2 Naam, rol, waarde | Ja |
-| 4.1.3 Statusberichten | Ja |
-
-**Totaal:** 48 van de 55 succescriteria worden in een techniek- of systeemaudit getoetst.
-
-</details>
+Content en multimedia vallen buiten deze audit. Bijvoorbeeld teksten, alt-teksten, ondertiteling en audiodescriptie. Daarvoor is een contentaudit nodig.
 
 {{< /section-full >}}
 
-{{< section-full title="Techniek- of systeemaudit: wat is het verschil?" >}}
+{{< section-full title="Techniekaudit of systeemaudit?" >}}
 
-We hanteren twee varianten. Het verschil zit in scope, steekproef en doorlooptijd, niet in de manier van werken.
+| | Techniekaudit | Systeemaudit |
+|---|---|---|
+| Onderzoek | Representatieve steekproef | Alle belangrijke componenten en varianten |
+| Geschikt voor | Een product of deel van een platform | Een compleet platform |
+| Omvang | 15 tot 20 uur | 25 tot 30 uur |
+| Resultaat | Inzicht in de geteste techniek | Brede dekking van het platform |
 
-Een **techniekaudit** lijkt qua aanpak op een volledige audit: we werken met een representatieve steekproef volgens WCAG-EM, met de homepage, formulieren, processen en multimedia in elk geval erin. Het enige verschil is dat we de content die duidelijk door de webredactie is toegevoegd, buiten beschouwing laten. Doorlooptijd zit tussen de 15 en 20 uur. Geschikt voor leveranciers die hun product op één representatief deel willen laten toetsen.
-
-Een **systeemaudit** is veel groter. In plaats van een steekproef proberen we álle componenten van een platform te raken: elk type pagina, elke interactie-flow, elke variant van een formulier of dialoog. Doorlooptijd is 25 tot 30 uur en het rapport dekt dus een aanzienlijk breder onderzoeksveld. Geschikt voor leveranciers die hun complete platform willen kunnen verantwoorden tegenover hun klanten en de toezichthouders waarmee die klanten te maken hebben.
-
-Voor beide varianten vragen we van jou een **inventarisatie vooraf**: alle templates, schermtypes en functionaliteiten van het platform. Zonder die lijst kunnen we geen representatieve steekproef samenstellen, en bij een systeemaudit kunnen we niet borgen dat we echt alle componenten hebben geraakt. Bij een techniekaudit is dat een handig hulpmiddel; bij een systeemaudit is het de basis waar het hele onderzoek op leunt.
-
-In beide gevallen ordenen we het rapport per component, met user stories per bevinding. Dat maakt het voor je devteam direct werkbaar. Lees daarover meer in [stap 3 over het rapport](/zo-werken-wij/rapport-en-bevindingen/).
+Bij beide varianten bespreken we vooraf welke templates, schermen en functionaliteiten je wilt laten onderzoeken.
 
 {{< /section-full >}}
 
-{{< section-full title="Wat krijgen je klanten ervan?" bg="light" >}}
+{{< section-full title="Wat je krijgt" bg="light" >}}
 
-Een goed techniek- of systeemauditrapport is dubbel inzetbaar. Voor jou intern is het een werkplan: hier zit het scheef, dit moet de volgende sprint mee. Voor je klanten is het bewijsmateriaal: zij kunnen het rapport opnemen in hun eigen toegankelijkheidsverklaring als bewijs dat de techniek getoetst is door een onafhankelijke partij.
+- een rapport per element of component;
+- een user story bij iedere bevinding;
+- concrete voorbeelden van het probleem;
+- informatie waarmee je ontwikkelteam direct kan werken;
+- een overzicht van wat wel en niet is onderzocht;
+- een rapport dat je kunt delen met klanten die jouw platform gebruiken.
 
-Veel van onze klanten leveren ons rapport door aan hun eigen klanten, vaak gewoon als PDF, of met een korte begeleidende verklaring. Dat scheelt iedereen tijd: jouw klanten hoeven niet zelf nog een audit te laten doen op het deel dat jij beheert, en jij hebt één rapport dat over al je implementaties tegelijk gaat.
+Je krijgt dus geen lange lijst met losse succescriteria. Je ziet per component wat er misgaat en wat je moet verbeteren.
 
-Wil je controleren of jouw platform al in ons overzicht staat? Bekijk het [overzicht van technische rapporten van platformen](/platform-rapporten/).
+{{< /section-full >}}
+
+{{< section-full title="Zo werkt het" >}}
+
+1. We bespreken je product, scope en gewenste auditvariant.
+2. We bepalen de steekproef of inventariseren de componenten van je platform.
+3. We testen handmatig en leggen de bevindingen per element vast.
+4. We bespreken het rapport en beantwoorden vragen van je team.
+
+Een techniekaudit begint bij circa € 1.995 exclusief btw. De definitieve prijs hangt af van de omvang van je product.
+
+{{< /section-full >}}
+
+{{< section-full title="Past dit bij jouw product?" bg="light" >}}
+
+Deze audit past bij je als andere organisaties jouw software, CMS, webshopplatform, widget of SaaS-product gebruiken.
+
+Stuur de URL van je product en een korte beschrijving van de onderdelen die je wilt laten toetsen. We laten binnen twee werkdagen weten welke audit past en sturen een offerte.
 
 {{< /section-full >}}
 
 {{< section-cta >}}
 
-## Klaar voor een techniek- of systeemaudit?
+## Vraag een techniekaudit aan
 
-Stuur ons een mail met een korte beschrijving van je product en wat je laat toetsen. We bepalen samen of een techniek- of systeemaudit past, en sturen binnen twee werkdagen een offerte.
-
-[Stuur ons een mail](/contact/) · [Lees over de volledige audit](/toegankelijkheidsaudit/)
+[Neem contact op](/contact/) · [Lees over de volledige audit](/toegankelijkheidsaudit/)
 
 {{< /section-cta >}}
