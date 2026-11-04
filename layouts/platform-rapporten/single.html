@@ -53,11 +53,8 @@
 
       <main class="pr-content">
         <h2 id="overzicht">Overzicht technische rapporten</h2>
-        <p>Een leverancier kan de techniek van een platform laten onderzoeken. Gebruik je dat platform voor je eigen website, dan moet je nog controleren of het rapport jouw versie en gebruikssituatie dekt. De content van je organisatie staat meestal los van het technische platform.</p>
-        <p>In dit overzicht staan alleen rapporten over techniek of een volledig onderzoek. Rapporten met alleen een contentonderzoek staan hier niet tussen. Een rapport is geen uitspraak dat elke website op het platform toegankelijk is.</p>
-        <p class="pr-meta"><strong>Laatst bijgewerkt:</strong> {{ hugo.Data.platform_rapporten.bijgewerkt }} · <strong>Updatefrequentie:</strong> {{ hugo.Data.platform_rapporten.updatefrequentie }} · <strong>Rapporten:</strong> {{ len $rapporten }}</p>
-
-        <p class="pr-uitleg"><strong>Contentonderzoek nodig?</strong> Bij een techniekrapport staat “Ja”. Bij een volledig rapport staat “Nee”, behalve wanneer in de rapportbeschrijving staat dat content buiten de scope valt. Dan staat er “Ja”.</p>
+        <p>Bekijk per categorie het meest recente technische of volledige rapport van een platform voor overheidsorganisaties.</p>
+        <p class="pr-meta"><strong>Laatst bijgewerkt:</strong> {{ hugo.Data.platform_rapporten.bijgewerkt }} · <strong>Updatefrequentie:</strong> {{ hugo.Data.platform_rapporten.updatefrequentie }}</p>
 
         {{ if $categories }}
           {{ range $categories }}
