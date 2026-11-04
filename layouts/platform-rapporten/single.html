@@ -76,26 +76,26 @@
                   </colgroup>
                   <thead>
                     <tr>
-                      <th scope="col">Platform</th>
-                      <th scope="col">Leverancier</th>
-                      <th scope="col">Soort rapport</th>
-                      <th scope="col">Datum</th>
-                      <th scope="col">Geldigheid</th>
-                      <th scope="col">Contentonderzoek nodig?</th>
-                      <th scope="col">Goedgekeurde / afgekeurde SC</th>
+                      <th scope="col" data-sort-key="platform"><button class="pr-sort-button" type="button">Platform <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="supplier"><button class="pr-sort-button" type="button">Leverancier <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="type"><button class="pr-sort-button" type="button">Soort rapport <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="date"><button class="pr-sort-button" type="button">Datum <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="status"><button class="pr-sort-button" type="button">Geldigheid <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="content"><button class="pr-sort-button" type="button">Contentonderzoek nodig? <span aria-hidden="true">↕</span></button></th>
+                      <th scope="col" data-sort-key="sc"><button class="pr-sort-button" type="button">Afgekeurde SC <span aria-hidden="true">↕</span></button></th>
                       <th scope="col">Rapport</th>
                     </tr>
                   </thead>
                   <tbody>
                     {{ range where $rapporten "categorie" $category }}
-                      <tr>
-                        <th scope="row">{{ .platform }}</th>
-                        <td>{{ .leverancier }}</td>
-                        <td>{{ .rapport_type }}</td>
-                        <td><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
-                        <td>{{ .status }}</td>
-                        <td>{{ .content_nodig }}</td>
-                        <td>{{ .goedgekeurde_sc }} / {{ with .afgekeurde_sc }}{{ . }}{{ else }}Onbekend{{ end }}</td>
+                      <tr{{ if eq .afgekeurde_sc "0" }} class="pr-table__row--zero-rejected"{{ end }}>
+                        <th scope="row" data-sort-value="{{ lower .platform }}">{{ .platform }}</th>
+                        <td data-sort-value="{{ lower .leverancier }}">{{ .leverancier }}</td>
+                        <td data-sort-value="{{ lower .rapport_type }}">{{ .rapport_type }}</td>
+                        <td data-sort-value="{{ .rapport_datum_iso }}"><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
+                        <td data-sort-value="{{ lower .status }}">{{ .status }}</td>
+                        <td data-sort-value="{{ lower .content_nodig }}">{{ .content_nodig }}</td>
+                        <td data-sort-value="{{ with .afgekeurde_sc }}{{ . }}{{ else }}-1{{ end }}">{{ with .afgekeurde_sc }}{{ . }}{{ else }}Onbekend{{ end }}</td>
                         <td>
                           {{ if .geen_rapport }}
                             Geen rapport
@@ -271,9 +271,29 @@
     border-bottom: 2px solid #1F2937;
     font-weight: 800;
   }
+  .pr-sort-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  .pr-sort-button:hover,
+  .pr-sort-button:focus-visible {
+    color: #A30D4B;
+  }
   .pr-table tbody th,
   .pr-table tbody td {
     border-bottom: 1px solid #e5e7eb;
+  }
+  .pr-table tbody tr.pr-table__row--zero-rejected {
+    background: #e8f5e9;
   }
   .pr-table__platform { width: 19%; }
   .pr-table__supplier { width: 13%; }
@@ -354,6 +374,43 @@
     .pr-aanmelden__form { margin-top: 2rem; padding: 1.25rem; }
   }
 </style>
+
+<script>
+  document.querySelectorAll('.pr-table').forEach(function (table) {
+    var headers = table.querySelectorAll('thead th[data-sort-key]');
+    var body = table.querySelector('tbody');
+
+    headers.forEach(function (header) {
+      var button = header.querySelector('button');
+      button.addEventListener('click', function () {
+        var key = header.dataset.sortKey;
+        var column = Array.prototype.indexOf.call(header.parentNode.children, header);
+        var ascending = header.dataset.sortDirection !== 'ascending';
+        var rows = Array.prototype.slice.call(body.querySelectorAll('tr'));
+
+        rows.sort(function (a, b) {
+          var first = a.children[column].dataset.sortValue || '';
+          var second = b.children[column].dataset.sortValue || '';
+          var comparison = key === 'sc'
+            ? Number(first) - Number(second)
+            : first.localeCompare(second, 'nl', { sensitivity: 'base' });
+          return ascending ? comparison : -comparison;
+        });
+
+        rows.forEach(function (row) { body.appendChild(row); });
+        headers.forEach(function (item) {
+          item.removeAttribute('aria-sort');
+          delete item.dataset.sortDirection;
+          var icon = item.querySelector('span');
+          if (icon) icon.textContent = '↕';
+        });
+        header.setAttribute('aria-sort', ascending ? 'ascending' : 'descending');
+        header.dataset.sortDirection = ascending ? 'ascending' : 'descending';
+        button.querySelector('span').textContent = ascending ? '↑' : '↓';
+      });
+    });
+  });
+</script>
 
 {{ partial "call-to-action.html" . }}
 
