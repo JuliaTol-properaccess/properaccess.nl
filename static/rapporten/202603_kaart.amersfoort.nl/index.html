@@ -231,40 +231,6 @@
 
     
     
-    <div class="dash-voortgang" id="voortgang">
-      <h2>Voortgang opgeloste bevindingen</h2>
-      <div class="voortgang-opties-grid">
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Samenwerken met je team</h3>
-          <p>Exporteer alle bevindingen als CSV-bestand. Je kunt het in een (online) spreadsheet inladen om met je team samen te werken.</p>
-          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Exporteer bevindingen</button>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Importeer in Jira</h3>
-          <p>Exporteer alle bevindingen als Jira-compatibel CSV-bestand. Je kunt het direct importeren via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Exporteer voor Jira</button>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Zelf bijhouden in de browser</h3>
-          <p>Houd per bevinding bij of het is opgelost. Je voortgang wordt opgeslagen in jouw browser. Niemand anders kan je resultaat zien.</p>
-          <label class="browser-tracking-toggle">
-            <input type="checkbox" id="browserTrackingToggle">
-            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registreer in de browser</span>
-          </label>
-        </div>
-      </div>
-      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
-        <div class="resolved-progress">
-          <div class="resolved-progress-bar">
-            <div class="resolved-progress-fill" style="width: 0%"></div>
-          </div>
-          <span class="resolved-progress-text">
-            <strong class="resolved-count">0</strong> van
-            <strong class="resolved-total">0</strong> opgelost
-          </span>
-        </div>
-      </div>
-    </div>
     
 
     
@@ -634,17 +600,10 @@
             <ul>
               <li><strong>Impact</strong> (Groot, Medium, Klein, Advies) — hoe ernstig is het probleem voor de gebruiker?</li>
               <li><strong>Type</strong> (Content, Techniek) — moet de inhoud of de techniek worden aangepast?</li>
-              <li><strong>Status</strong> (Open, Opgelost) — welke problemen zijn al verholpen?</li>
             </ul>
 
-            <h3>Voortgang bijhouden</h3>
-            <p>Je kunt je voortgang op twee manieren bijhouden:</p>
-            <ul>
-              <li><strong>CSV-export</strong> — exporteer alle bevindingen als CSV-bestand en laad het in een (online) spreadsheet om met je team samen te werken.</li>
-              <li><strong>Jira-export</strong> — exporteer alle bevindingen als Jira-compatibel CSV-bestand. Importeer het via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Bevindingen worden aangemaakt als bugs met prioriteit op basis van impact.</li>
-              <li><strong>Registreer in de browser</strong> — activeer deze optie om per bevinding bij te houden of het is opgelost. Je voortgang wordt opgeslagen in je browser. Niemand anders kan je resultaat zien. Let op: de voortgang is gekoppeld aan je browser. Als je een andere browser of een ander apparaat gebruikt, begint de telling opnieuw.</li>
-              <li><strong>Plan van aanpak</strong> — download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</li>
-            </ul>
+            <h3>Plan van aanpak</h3>
+<p>Download een geprioriteerd plan van aanpak om de gevonden problemen stap voor stap op te lossen. Dit is beschikbaar bij audits vanaf maart 2026.</p>
 
             <h3>Link naar een specifieke bevinding delen</h3>
             <p>Bij elke bevinding verschijnt een <strong>link-icoon</strong> wanneer je er met de muis overheen gaat. Klik op dit icoon om de directe link naar die bevinding te kopiëren. Je kunt deze link plakken in een e-mail of chatbericht, bijvoorbeeld om een vraag te stellen aan Proper Access over een specifiek punt.</p>

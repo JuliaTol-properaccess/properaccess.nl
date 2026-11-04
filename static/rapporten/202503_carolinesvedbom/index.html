@@ -242,40 +242,6 @@
 
     
     
-    <div class="dash-voortgang" id="voortgang">
-      <h2>Progress on resolved findings</h2>
-      <div class="voortgang-opties-grid">
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-file-csv" aria-hidden="true"></i> Collaborate with your team</h3>
-          <p>Export all findings as a CSV file. You can load it into an (online) spreadsheet to collaborate with your team.</p>
-          <button class="voortgang-btn voortgang-btn--secondary" id="exportCsvBtn">Export findings</button>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Import into Jira</h3>
-          <p>Export all findings as a Jira-compatible CSV file. You can import it directly via <em>Jira &gt; Issues &gt; Import issues from CSV</em>.</p>
-          <button class="voortgang-btn voortgang-btn--secondary" id="exportJiraCsvBtn">Export for Jira</button>
-        </div>
-        <div class="voortgang-optie">
-          <h3><i class="fa-solid fa-browser" aria-hidden="true"></i> Track in your browser</h3>
-          <p>Keep track per finding of whether it has been resolved. Your progress is stored in your own browser. No one else can see your result.</p>
-          <label class="browser-tracking-toggle">
-            <input type="checkbox" id="browserTrackingToggle">
-            <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Track in the browser</span>
-          </label>
-        </div>
-      </div>
-      <div class="resolved-dashboard" id="resolved-dashboard-issues" hidden>
-        <div class="resolved-progress">
-          <div class="resolved-progress-bar">
-            <div class="resolved-progress-fill" style="width: 0%"></div>
-          </div>
-          <span class="resolved-progress-text">
-            <strong class="resolved-count">0</strong> of
-            <strong class="resolved-total">0</strong> resolved
-          </span>
-        </div>
-      </div>
-    </div>
     
 
     
@@ -2038,16 +2004,9 @@ This order is not optimal for accessibility. When a page contains multiple artic
 <ul>
 <li><strong>Impact</strong> (Serious, Medium, Minor, Advice) — how severe is the problem for the user?</li>
 <li><strong>Type</strong> (Content, Technical) — does the content or the code need to change?</li>
-<li><strong>Status</strong> (Open, Resolved) — which problems have already been fixed?</li>
 </ul>
-<h3>Tracking progress</h3>
-<p>You can track your progress in two ways:</p>
-<ul>
-<li><strong>CSV export</strong> — export all findings as a CSV file and load it into an (online) spreadsheet to collaborate with your team.</li>
-<li><strong>Jira export</strong> — export all findings as a Jira-compatible CSV file. Import it via <em>Jira &gt; Issues &gt; Import issues from CSV</em>. Findings are created as bugs with a priority based on impact.</li>
-<li><strong>Track in the browser</strong> — enable this option to keep track per finding of whether it has been resolved. Your progress is stored in your browser. No one else can see your result. Note: the progress is tied to your browser. If you use a different browser or device, the count starts over.</li>
-<li><strong>Action plan</strong> — download a prioritised action plan to resolve the issues step by step. This is available for audits from March 2026 onwards.</li>
-</ul>
+<h3>Action plan</h3>
+<p>Download a prioritised action plan to resolve the issues step by step. This is available for audits from March 2026 onwards.</p>
 <h3>Sharing a link to a specific finding</h3>
 <p>A <strong>link icon</strong> appears at each finding when you hover over it. Click this icon to copy the direct link to that finding. You can paste this link into an email or chat message, for example to ask Proper Access a question about a specific point.</p>
           </div>
