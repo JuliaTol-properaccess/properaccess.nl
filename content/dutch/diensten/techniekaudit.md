@@ -165,6 +165,8 @@ Een goed techniek- of systeemauditrapport is dubbel inzetbaar. Voor jou intern i
 
 Veel van onze klanten leveren ons rapport door aan hun eigen klanten, vaak gewoon als PDF, of met een korte begeleidende verklaring. Dat scheelt iedereen tijd: jouw klanten hoeven niet zelf nog een audit te laten doen op het deel dat jij beheert, en jij hebt één rapport dat over al je implementaties tegelijk gaat.
 
+Wil je controleren of jouw platform al in ons overzicht staat? Bekijk het [overzicht van technische rapporten van platformen](/platform-rapporten/).
+
 {{< /section-full >}}
 
 {{< section-cta >}}

@@ -155,7 +155,7 @@ Komen we tijdens de contentaudit een technisch probleem tegen, dan controleren w
 
 Twee veelvoorkomende routes:
 
-- **Check of er al een techniekaudit van jouw platform bestaat.** Op [digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps](https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps) staat een overzicht van bestaande techniekonderzoeken van CMS-en, platforms en apps. Vraag het anders na bij je leverancier; veel softwarepartijen laten zelf hun product toetsen en kunnen het rapport aan jou leveren. Dit is de meest voorkomende route bij overheidsorganisaties.
+- **Check of er al een techniekaudit van jouw platform bestaat.** In het [overzicht van technische rapporten van platformen](/platform-rapporten/) staan bestaande rapporten van CMS-en, platforms en apps. Vraag het anders na bij je leverancier; veel softwarepartijen laten zelf hun product toetsen en kunnen het rapport aan jou leveren. Dit is de meest voorkomende route bij overheidsorganisaties.
 - **Neem contact op met de leverancier van het platform.** Als het goed is, staat in je inkoopvoorwaarden dat je geen digitale producten mag kopen als een technisch rapport ontbreekt. Mocht een rapport toch ontbreken, breng ons dan in contact met de leverancier. We kunnen in opdracht van de leverancier een [techniekonderzoek](/techniekaudit/) uitvoeren.
 
 Welke route past, leggen we per mail vast tijdens de scope-fase. Lees over [hoe we scope en steekproef bepalen](/zo-werken-wij/steekproef-en-scope/).
