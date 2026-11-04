@@ -76,6 +76,15 @@
         </table>
       </div>
       <p><small>De tabel wordt aangevuld op basis van beschikbare rapportgegevens. Controleer altijd de reikwijdte, de datum en de inhoud van het rapport voordat je het gebruikt als onderbouwing van een toegankelijkheidsverklaring.</small></p>
+      <p><a href="#nieuw-rapport">Wil je jouw technische rapport laten opnemen? Meld het rapport aan.</a></p>
+
+      <div class="pr-rapport-update">
+        <div>
+          <h2 id="rapport-wijzigen">Zie je iets wat niet klopt?</h2>
+          <p>Is je rapport vernieuwd, gewijzigd of verkeerd vermeld? Mail ons de correctie en de nieuwe rapportlink. Dan controleren we de gegevens.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:julia@properaccess.nl?subject=Correctie%20of%20vernieuwing%20technisch%20rapport">Zie je iets wat niet klopt?</a>
+      </div>
 
       <h2>Welke gegevens staan in de tabel?</h2>
       <dl>
@@ -90,6 +99,106 @@
     </div>
   </div>
 </section>
+
+<section class="section-sm bg-light" id="nieuw-rapport">
+  <div class="container">
+    <div class="pr-aanmelden">
+      <div class="pr-aanmelden__intro">
+        <span class="hp-hero__badge">Voor leveranciers</span>
+        <h2>Wil je jouw technische rapport laten opnemen?</h2>
+        <p>Vul het formulier in als je leverancier bent van een platform voor overheidsorganisaties. Stuur een link naar het rapport mee. We controleren de gegevens voordat we ze plaatsen.</p>
+        <p>We nemen geen rapport op zonder controleerbare bron. Na je bericht nemen we contact met je op als we aanvullende informatie nodig hebben.</p>
+      </div>
+
+      <form id="platform-rapport-aanmelden" class="hp-form pr-aanmelden__form" novalidate onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'platformrapport-aanmelden', successMessage: 'Bedankt, je aanmelding is binnen. We nemen contact met je op zodra we de gegevens hebben gecontroleerd.' });">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" />
+
+        <div class="hp-form__row">
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-leverancier">Leverancier <span aria-hidden="true">*</span></label>
+            <input class="hp-form__input" type="text" id="platform-leverancier" name="leverancier" autocomplete="organization" required />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-contactpersoon">Contactpersoon <span aria-hidden="true">*</span></label>
+            <input class="hp-form__input" type="text" id="platform-contactpersoon" name="contactpersoon" autocomplete="name" required />
+          </div>
+        </div>
+
+        <div class="hp-form__row">
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-email">E-mailadres <span aria-hidden="true">*</span></label>
+            <input class="hp-form__input" type="email" id="platform-email" name="email" autocomplete="email" required />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-naam">Naam van het platform <span aria-hidden="true">*</span></label>
+            <input class="hp-form__input" type="text" id="platform-naam" name="platform" required />
+          </div>
+        </div>
+
+        <div class="hp-form__row">
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-categorie">Categorie</label>
+            <input class="hp-form__input" type="text" id="platform-categorie" name="categorie" placeholder="Bijvoorbeeld: Contentmanagementsysteem" />
+          </div>
+          <div class="hp-form__field">
+            <label class="hp-form__label" for="platform-datum">Datum van het rapport</label>
+            <input class="hp-form__input" type="date" id="platform-datum" name="rapport_datum" />
+          </div>
+        </div>
+
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="platform-link">Link naar het technische rapport <span aria-hidden="true">*</span></label>
+          <input class="hp-form__input" type="url" id="platform-link" name="rapport_url" autocomplete="url" placeholder="https://" required />
+        </div>
+
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="platform-toelichting">Toelichting</label>
+          <textarea class="hp-form__input hp-form__textarea" id="platform-toelichting" name="toelichting" rows="5" placeholder="Welke overheidsorganisaties gebruiken dit platform? En wat moeten we weten over het rapport?"></textarea>
+        </div>
+
+        <button type="submit" class="hp-btn hp-btn--primary">Rapport aanmelden</button>
+        <div role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pr-rapport-update {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 2rem 0 3rem;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #A30D4B;
+  }
+  .pr-rapport-update h2,
+  .pr-rapport-update p { margin-top: 0; }
+  .pr-rapport-update p { margin-bottom: 0; }
+  .pr-aanmelden {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 3rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .pr-aanmelden__intro h2 { margin-top: 0.75rem; }
+  .pr-aanmelden__form {
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+  }
+  .pr-aanmelden__form .hp-form__input { border-color: #1F2937; }
+  .pr-aanmelden__form .hp-form__input:focus { border-color: #A30D4B; }
+  @media (max-width: 768px) {
+    .pr-rapport-update,
+    .pr-aanmelden { display: block; }
+    .pr-rapport-update .btn { margin-top: 1rem; }
+    .pr-aanmelden__form { margin-top: 2rem; padding: 1.25rem; }
+  }
+</style>
 
 {{ partial "call-to-action.html" . }}
 
