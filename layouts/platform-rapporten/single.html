@@ -342,15 +342,21 @@
     gap: 0.4rem;
     padding: 0.8rem 1.1rem;
     border-radius: 999px;
-    background: #A30D4B;
+    /* Donkerblauw en niet magenta: een magenta knop die blijft staan leest
+       als een foutmelding (Julia, 05-11-2026). */
+    background: #1F2937;
     color: #fff;
     font-weight: 800;
     box-shadow: 0 4px 18px rgba(31, 41, 55, 0.25);
   }
   .pr-floating-cta:hover,
   .pr-floating-cta:focus-visible {
-    background: #8a0b3f;
+    background: #004050;
     color: #fff;
+  }
+  .pr-floating-cta:focus-visible {
+    outline: 3px solid #1F2937;
+    outline-offset: 2px;
   }
   @media (max-width: 900px) {
     .pr-layout { grid-template-columns: 1fr; }

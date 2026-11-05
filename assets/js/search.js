@@ -478,7 +478,11 @@ const disableBodyScroll = () => {
 };
 
 // Show/Hide Search Modal
+// Bij sluiten gaat de focus terug naar de knop die het venster opende, anders
+// begint een toetsenbordgebruiker weer bovenaan de pagina (WCAG 2.4.3).
+let searchOpener = null;
 const showModal = () => {
+  searchOpener = document.activeElement;
   searchModal.classList.add("show");
   ensureIndexLoaded();
   window.setTimeout(
@@ -497,6 +501,12 @@ const closeModal = () => {
     enableBodyScroll();
     searchModalVisible = false;
   }
+  if (searchOpener && searchOpener.focus) {
+    // Wacht tot navigation.js het venster weer inert heeft gemaakt.
+    const terug = searchOpener;
+    window.setTimeout(() => terug.focus(), 50);
+  }
+  searchOpener = null;
 };
 
 // Trigger Search Modal Show/Hide Events

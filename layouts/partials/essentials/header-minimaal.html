@@ -8,23 +8,14 @@
   rest van de pagina blijft bereikbaar, dus er is geen focus trap. Escape
   sluit het paneel en zet de focus terug op de knop.
 
-  De knop "Zoeken" wijst naar de assistent, want daarmee vinden bezoekers in
-  de praktijk een pagina (verzoek van Julia, 09-10-2026). Op de homepagina
-  staat die assistent als sectie #vraag in de pagina; daar springt de knop
-  naartoe en zet hij de focus in het invoerveld. Op elke andere pagina opent
-  hij de chatdialoog van partials/chat-widget.html, zodat de bezoeker op zijn
-  eigen pagina blijft. Welke van de twee het is, zoekt het script bij de klik
-  op: de chatwidget staat verderop in de body en bestaat hier nog niet.
+  De knop "Zoeken" opent het zoekvenster van partials/search-modal.html, dat
+  de hele Nederlandse site doorzoekt (zie layouts/_default/list.searchindex.json).
+  Tot 5 november 2026 opende hij de chat-assistent; daarmee kon een bezoeker
+  niet meer zoeken (Julia, 05-11-2026). De assistent blijft bereikbaar via de
+  eigen chatknop en op de homepagina via de sectie #vraag.
 
-  De knop onder in het paneel ("Zoek in blogartikelen en nieuws") is een andere
-  functie: die doorzoekt de secties uit include_sections onder [search] in
-  config/_default/params.toml. Twee verschillende functies achter hetzelfde
-  woord is WCAG 3.2.4, dus de woorden maken het verschil.
-
-  Komt er een sectie bij in include_sections, dan moet dit label mee, net als
-  search_input_label en search_input_placeholder in i18n/nl.yaml. Anders belooft
-  de knop iets anders dan hij doet. De Engelse labels blijven "blog posts": de
-  Engelse site heeft geen nieuwssectie.
+  Er is één zoekknop. De oude tweede knop onder in het menupaneel ("Zoek in
+  blogartikelen en nieuws") is weg, want die deed nu hetzelfde.
 */}}
 <header class="hm">
   <div class="hm__bar">
@@ -35,7 +26,8 @@
       <button
         type="button"
         class="hm__zoekknop"
-        id="hm-zoekknop">
+        id="hm-zoekknop"
+        data-target="search-modal">
         {{ partial "icoon-zoek.html" 20 }}
         Zoeken
       </button>
@@ -99,7 +91,6 @@
         <h2 class="hm__groep-titel">Zelf aan de slag</h2>
         <a class="hm__link hm__link--vet" href="https://portaal.properaccess.nl/" target="_blank" rel="noopener">Naar het portaal<span class="sr-only"> (opent in een nieuw tabblad)</span></a>
         <a class="hm__telefoon" href="tel:+31855055890">085 5055 890</a>
-        <button type="button" class="hm__zoek" data-target="search-modal">Zoek in blogartikelen en nieuws</button>
       </div>
     </div>
   </nav>
@@ -195,11 +186,6 @@
     color: #1F2937; text-decoration: none; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
     font-weight: 800; font-size: 19px;
   }
-  .hm__zoek {
-    background: none; border: 0; padding: 5px 0; min-height: 44px; cursor: pointer; font: inherit; font-size: 15px;
-    font-weight: 700; color: #1F2937; text-decoration: underline; text-underline-offset: 0.2em;
-  }
-  .hm__zoek:hover { color: #A30D4B; }
   /* Smalle schermen en 400% zoom: logo, Zoeken en Menu moeten samen op één
      regel passen binnen 320 CSS-pixels, anders schuift de balk horizontaal. */
   @media (max-width: 560px) {
@@ -240,10 +226,9 @@
     zet(knop.getAttribute("aria-expanded") !== "true");
   });
 
-  // Een link naar een plek op dezelfde pagina sluit het menu, net als de
-  // zoekknop: het zoekvenster opent dan boven een rustige pagina.
+  // Een link naar een plek op dezelfde pagina sluit het menu.
   paneel.addEventListener("click", function (e) {
-    var a = e.target.closest("a[href^='#'], .hm__zoek");
+    var a = e.target.closest("a[href^='#']");
     if (a) zet(false);
   });
 
@@ -254,36 +239,9 @@
     }
   });
 
-  // De knop "Zoeken" wijst naar de assistent. Welke vorm die heeft, hangt af
-  // van de pagina, dus kijken we pas bij de klik: dan staat de hele body er.
+  // De knop "Zoeken" opent het zoekvenster (search.js luistert naar
+  // data-target). Staat het menu open, dan gaat dat eerst dicht.
   var zoekknop = document.getElementById("hm-zoekknop");
-  if (!zoekknop) return;
-
-  zoekknop.addEventListener("click", function () {
-    zet(false);
-
-    // 1. De homepagina heeft de assistent als sectie in de pagina staan.
-    var invoer = document.getElementById("hb-vraag-invoer");
-    if (invoer) {
-      var sectie = document.getElementById("vraag");
-      if (sectie && sectie.scrollIntoView) {
-        var zacht = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        sectie.scrollIntoView({ behavior: zacht ? "smooth" : "auto", block: "start" });
-      }
-      invoer.focus({ preventScroll: true });
-      return;
-    }
-
-    // 2. Elke andere pagina heeft de chatdialoog. Die zet zelf de focus in
-    //    het invoerveld en geeft de focus bij sluiten hieraan terug.
-    var chat = document.getElementById("pa-chat-toggle");
-    if (chat) {
-      chat.click();
-      return;
-    }
-
-    // 3. Staat geen van beide op de pagina, ga dan naar de homepagina.
-    window.location.href = "/#vraag";
-  });
+  if (zoekknop) zoekknop.addEventListener("click", function () { zet(false); });
 })();
 </script>
