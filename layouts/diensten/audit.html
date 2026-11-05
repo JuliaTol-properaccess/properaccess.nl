@@ -46,6 +46,9 @@
 <!-- ─── TRUST BAR ─── -->
 {{ partial "trust-bar.html" . }}
 
+<!-- ─── OP DEZE PAGINA ─── -->
+{{ partial "pagina-nav.html" . }}
+
 <!-- ─── TL;DR CAPSULE ─── -->
 {{ partial "tldr-capsule.html" . }}
 
@@ -264,7 +267,7 @@
 
 
 <!-- ─── HOW IT WORKS ─── -->
-<section class="hp-how">
+<section class="hp-how"{{ if .Params.paginanav }} id="werkwijze"{{ end }}>
   <div class="hp-container">
 
     <div class="hp-how__header">
@@ -316,7 +319,7 @@
 
 
 <!-- ─── SOCIAL PROOF ─── -->
-<section class="hp-proof">
+<section class="hp-proof"{{ if .Params.paginanav }} id="ervaring"{{ end }}>
   <div class="hp-container">
     <div class="hp-proof__header">
       <h2 class="hp-proof__title">Dit is waarom 63 organisaties ons kiezen</h2>
