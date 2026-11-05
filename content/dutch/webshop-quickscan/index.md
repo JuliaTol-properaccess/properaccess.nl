@@ -13,6 +13,13 @@ source_context:
     - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
     - { label: "Proper Access: volledige WCAG-audit", url: "/toegankelijkheidsonderzoek/" }
 type: quickscan
+paginanav:
+  - { label: "Wat je krijgt", id: "aanbod" }
+  - { label: "Vergelijking", id: "vergelijking" }
+  - { label: "Voorbeeld", id: "voorbeeld-bevinding" }
+  - { label: "Werkwijze", id: "werkwijze" }
+  - { label: "Vragen", id: "vragen" }
+  - { label: "Aanvragen", id: "bestel" }
 aliases:
   - /quickscan/
   - /mini-audit/
