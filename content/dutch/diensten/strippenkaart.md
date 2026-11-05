@@ -44,9 +44,16 @@ trust:
     - "Technisch advies"
     - "Vragen over een rapport"
 translationKey: "strippenkaart"
+paginanav:
+  - { label: "Hoe het werkt", id: "hoe-het-werkt" }
+  - { label: "Prijs", id: "prijs" }
+  - { label: "Een kwartier", id: "kwartier" }
+  - { label: "Voor wie", id: "voor-wie" }
+  - { label: "Wie antwoordt", id: "wie-antwoordt" }
+  - { label: "Vragen", id: "vragen" }
 ---
 
-{{< section-full title="Eén strip is één vraag over één onderwerp" >}}
+{{< section-full title="Eén strip is één vraag over één onderwerp" id="hoe-het-werkt" >}}
 
 Je koopt een bundel strippen en stelt je vragen in ons klantportaal. Elke vraag start een eigen
 gesprek. Zodra de auditor antwoordt, gaat er één strip af. Vervolgvragen in datzelfde gesprek
@@ -66,7 +73,7 @@ Wat je met een strip kunt doen:
 
 {{< /section-full >}}
 
-{{< section-full title="Wat het kost" bg="light" >}}
+{{< section-full title="Wat het kost" bg="light" id="prijs" >}}
 
 | Bundel | Prijs | Per vraag |
 | --- | --- | --- |
@@ -84,7 +91,7 @@ wanneer de eerstvolgende strippen verlopen.
 
 {{< /section-full >}}
 
-{{< section-full title="Wat een kwartier per vraag betekent" >}}
+{{< section-full title="Wat een kwartier per vraag betekent" id="kwartier" >}}
 
 Het kwartier is een gemiddelde en geen stopwatch. Sommige vragen kosten drie minuten, andere
 drie kwartier. Staat `aria-expanded` op het verkeerde element, dan is dat een kort antwoord met
@@ -102,7 +109,7 @@ kijken of het sneller kan.
 
 {{< /section-full >}}
 
-{{< section-cards title="Past in elke werkwijze" columns="2" bg="light" >}}
+{{< section-cards title="Past in elke werkwijze" columns="2" bg="light" id="voor-wie" >}}
 {{< section-card title="Development teams" >}}
 
 Snel een review, snel een antwoord, snel verder. Past in je sprint-ritme.
@@ -134,7 +141,7 @@ vaak je ons wilt inzetten.
 
 {{< /section-split >}}
 
-{{< section-full title="Je vraag komt bij een senior auditor" >}}
+{{< section-full title="Je vraag komt bij een senior auditor" id="wie-antwoordt" >}}
 
 Je vragen gaan naar de senior auditor die je site of je rapport kent. Geen wachtrij en geen
 tussenlaag die je vraag doorstuurt.
@@ -149,7 +156,7 @@ tussenlaag die je vraag doorstuurt.
 
 {{< /section-full >}}
 
-{{< section-full title="Veelgestelde vragen" >}}
+{{< section-full title="Veelgestelde vragen" id="vragen" >}}
 
 <details class="faq-item">
 <summary class="faq-question">Hoeveel strippen heb ik nodig?</summary>
