@@ -50,7 +50,10 @@ primary_color = "#121212"
 # resultaten erop groepeert. Staat een sectie er niet in, dan is geen enkele pagina
 # eruit te vinden. `nieuws` staat erbij sinds de rubriek Nieuws over toegankelijkheid.
 # De Engelse site heeft geen nieuwssectie; daar blijft de groep leeg en valt hij weg.
-include_sections = ["blog", "nieuws"]
+# "pagina's" is geen Hugo-sectie: het is de groep die list.searchindex.json maakt van
+# alle overige Nederlandse pagina's. Hij staat vooraan, zodat een dienst- of
+# sectorpagina boven de blogartikelen verschijnt.
+include_sections = ["pagina's", "blog", "nieuws"]
 show_image = true
 show_description = true
 show_tags = true

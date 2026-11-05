@@ -40,6 +40,32 @@
   {{- end -}}
 {{- end -}}
 
+{{- /* De knop "Zoeken" in de bovenbalk opent sinds 5 november 2026 dit zoekvenster, en
+       een bezoeker verwacht daar de hele site in. Op de Nederlandse site komen daarom ook
+       de overige pagina's erin (diensten, sectoren, tools, academy, platformrapporten),
+       in een eigen groep "Pagina's". Die naam staat ook in include_sections in
+       config/_default/params.toml; search.js groepeert op die lijst.
+
+       Overgeslagen: navigatie en taxonomieën, de homepagina, pagina's die we uit de
+       zoekmachines of de sitemap houden (noindex, robots, sitemap_exclude, ignoreSearch),
+       en de academy-lessen achter de inlog (locked). De Engelse site heeft deze groep
+       niet: daar blijft hij leeg en valt hij weg, net als nieuws. */ -}}
+{{- if eq site.Language.Lang "nl" -}}
+  {{- $nietDoorzoeken := slice "blog" "nieuws" "authors" "footer" "sections" "categories" "tags" "offertes" "intake" "webshop-quickscan-bedankt" -}}
+  {{- range where site.Pages "Kind" "in" (slice "page" "section") -}}
+    {{- if and
+          (not (in $nietDoorzoeken .Section))
+          (not .Params.noindex)
+          (not .Params.robots)
+          (not .Params.sitemap_exclude)
+          (not .Params.ignoreSearch)
+          (not .Params.locked)
+          (ne .Title "") -}}
+      {{- $indexeerbaar = $indexeerbaar | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 {{- $totalPagesLength := len $indexeerbaar -}}
 
 [{{- range $i, $e := $indexeerbaar -}}
@@ -72,7 +98,7 @@
 {{- end -}}
 
 {
-  "section": {{ .Section | humanize | jsonify }},
+  "section": {{ if in (slice "blog" "nieuws") .Section }}{{ .Section | humanize | jsonify }}{{ else }}{{ "Pagina's" | jsonify }}{{ end }},
   "slug": {{ .RelPermalink | jsonify }},
   "title": {{ .Title | jsonify }},
   "description": {{ .Description | jsonify }},
