@@ -37,8 +37,8 @@ controles:
   platform: Andes bereikbaarheidsportaal
   onderzoeksbureau: Stichting Accessibility (logo op voorblad)
   onderzoeksdatum: '2025-10-28'
-  score: 8
-  toelichting: NVDA en Colour Contrast Analyser staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -46,7 +46,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://hub.arcgis.com/pages/a11y
@@ -54,8 +54,8 @@ controles:
   onderzoeksbureau: Esri (intern getest)
   onderzoeksdatum: '2025-06-17'
   score: 4
-  toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De steekproef ontbreekt. VoiceOver,
-    NVDA en Chrome staan er zonder versienummer in.
+  toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De steekproef ontbreekt. Chrome
+    staat er zonder versienummer in.
   punten:
     '7': nee
     '8': ja
@@ -70,8 +70,8 @@ controles:
   platform: Archiefweb / Sitearchief
   onderzoeksbureau: Swink (Sophie, Ralph)
   onderzoeksdatum: '2025-10-01'
-  score: 8
-  toelichting: VoiceOver en Colour Contrast Analyser staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -79,15 +79,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.pepperflow.nl/media/48b967f7-76a6-4788-b8d7-d3dfc2fd9dc5/ouMMlg/PDF%20Bestanden/Inspectie%20techniek%20Begrotingsapp%201.1%202024.pdf
   platform: Begrotingsapp
   onderzoeksbureau: Cardan Technobility (Pieternel de Jonge)
   onderzoeksdatum: '2024-07-04'
-  score: 7
-  toelichting: De steekproef is onvolledig. Adobe Acrobat Pro DC, PAC, NVDA en VoiceOver staan er zonder versienummer in.
+  score: 8
+  toelichting: De steekproef is onvolledig.
   punten:
     '7': ja
     '8': nvt
@@ -95,15 +95,15 @@ controles:
     '10': ja
     '11': ja
     '12': deels
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://open.boxtel.nl/sites/default/files/2024-10/Hercontrole%20onderzoek%20audit-belastingbalie.bakerware.nl%20WCAG%202.1%20AA.pdf
   platform: Belastingbalie
   onderzoeksbureau: Stichting Accessibility (info@accessibility.nl, logo-template)
   onderzoeksdatum: '2024-04-18'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -111,7 +111,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.properaccess.nl/rapporten/202605_buitenbeter_android/
@@ -134,8 +134,8 @@ controles:
   platform: Centric e-diensten Burgerzaken
   onderzoeksbureau: Swink (Michiel, Kaylee)
   onderzoeksdatum: '2024-09-05'
-  score: 8
-  toelichting: Adobe Acrobat Pro DC staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -143,7 +143,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.cultuurensportstimulering.nl/wp-content/uploads/2026/05/20260421-Heronderzoek-deelonderzoek-techniek-Platforms-Cultuur-Sportstimulering-Nederland.pdf
@@ -182,8 +182,8 @@ controles:
   platform: DIP Webarchief
   onderzoeksbureau: 200 OK (Jules Ernst)
   onderzoeksdatum: '2025-11-04'
-  score: 8
-  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -191,15 +191,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.vismacircle.nl/hubfs/Downloads/WCAG/inspectie-techniek-Djuma-Formulieren.pdf
   platform: Djuma
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-12-23'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -207,15 +207,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://dblpublicblob.blob.core.windows.net/dbl/wcag/Hercontrole%20onderzoek%20www.duurzaambouwloket.nl%20WCAG%202.1%20AA.%201.pdf
   platform: Duurzaam Bouwloket
   onderzoeksbureau: Expertisecentrum voor toegankelijke ICT (contact via info@accessibility.nl)
   onderzoeksdatum: '2025-08-28'
-  score: 8
-  toelichting: NVDA, PAC, Adobe Acrobat Pro en Colour Contrast Analyser staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -223,7 +223,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://easycruit.com/helpcenter/nl/articles/367429-wcag-report
@@ -232,7 +232,7 @@ controles:
   onderzoeksdatum: '2025-07-10'
   score: 5
   toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning
-    ontbreekt. Er staan geen browsers in. VoiceOver en NVDA staan er zonder versienummer in.
+    ontbreekt. Er staan geen browsers in.
   punten:
     '7': nee
     '8': onduidelijk
@@ -280,8 +280,8 @@ controles:
   platform: Energieloketten.nl
   onderzoeksbureau: Expertisecentrum voor toegankelijke ICT (contact via info@accessibility.nl)
   onderzoeksdatum: '2025-05-01'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -289,7 +289,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://info.decos.com/accessibility-report-fixi-website-june2026
@@ -312,8 +312,8 @@ controles:
   platform: Fries Archiefnet
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-17'
-  score: 8
-  toelichting: PAC en NVDA staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -321,15 +321,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.gemeenteoplossingen.nl/wcag_2.2_aa_inspectie_techniek_-_gemeenteoplossingen_v2025.2
   platform: Gemeenteoplossingen raadsinformatie
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-11-13'
-  score: 6
-  toelichting: De scope is onvolledig beschreven. De steekproef is onvolledig. NVDA staat er zonder versienummer in.
+  score: 7
+  toelichting: De scope is onvolledig beschreven. De steekproef is onvolledig.
   punten:
     '7': ja
     '8': nvt
@@ -337,15 +337,15 @@ controles:
     '10': ja
     '11': ja
     '12': deels
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/gemeentepanel-her-hercontrole/audit/
   platform: Gemeentepanel (inwonerspanel)
   onderzoeksbureau: 'Swink (onderzoeker: Julia)'
   onderzoeksdatum: '2025-05-15'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -353,15 +353,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.gezondverzekerd.nl/toegankelijkheid/
   platform: Gezond Verzekerd (gemeentepolis)
   onderzoeksbureau: WCAG.nl (Niek Derksen)
   onderzoeksdatum: '2024-04-12'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -369,7 +369,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.frameless.io/rapport/govocal-2026-06-26
@@ -392,8 +392,8 @@ controles:
   platform: GO voor elkaar
   onderzoeksbureau: Cardan Technobility
   onderzoeksdatum: '2024-03-15'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in. Het rapport onderzoekt nlvoorelkaar.nl, een ander platform van dezelfde leverancier.
+  score: 9
+  toelichting: Het rapport onderzoekt nlvoorelkaar.nl, een ander platform van dezelfde leverancier.
   punten:
     '7': ja
     '8': nvt
@@ -401,7 +401,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/winkwaves-harmonics-hercontrole/audit/
@@ -424,8 +424,8 @@ controles:
   platform: Hecht websites (CJG)
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-29'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -433,7 +433,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://cdn.prod.website-files.com/5ec4ef7186f0e44f4b1cd23b/65b8b618458ceea484e1093b_WCAG%202.1%20AA%20inspectie%20-%20HogeNood%20App%20-%201.1.pdf
@@ -472,8 +472,8 @@ controles:
   platform: iBabs
   onderzoeksbureau: Stichting Accessibility
   onderzoeksdatum: '2025-10-16'
-  score: 8
-  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -481,7 +481,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-01/Hercontrole%20Deelonderzoek%20techniek%20rotterdamraad.bestuurlijkeinformatie.nl%20WCAG%202.1%20Jan%202024.pdf
@@ -504,8 +504,8 @@ controles:
   platform: iBurgerzaken
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-08-26'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -513,16 +513,16 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-07/2023-10-27%20demo.ilost.co-Digitaal-Toegankelijk-WCAG-EM.pdf
   platform: iLost (gevonden voorwerpen)
   onderzoeksbureau: Digitaal Toegankelijk BV
   onderzoeksdatum: '2023-10-27'
-  score: 5
-  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte tools
-    staan er zonder versienummer in. Het onderzoek is ouder dan 3 jaar.
+  score: 6
+  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Het onderzoek is ouder
+    dan 3 jaar.
   punten:
     '7': ja
     '8': onduidelijk
@@ -530,7 +530,7 @@ controles:
     '10': onduidelijk
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': nee
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/inergy-lias-hercontrole/audit/
@@ -553,8 +553,8 @@ controles:
   platform: Inwonerspanel (Rhenen spreekt)
   onderzoeksbureau: Swink
   onderzoeksdatum: '2026-02-02'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -562,15 +562,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/wcag-demo.irisintranet.com-hercontrole/audit/
   platform: IRIS intranet
   onderzoeksbureau: Swink
   onderzoeksdatum: '2025-11-14'
-  score: 8
-  toelichting: VoiceOver en NVDA staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -578,7 +578,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://informatieservice.info/media/Hercontrole%20deelonderzoek%20techniek%20sociaaldomein.jalp.nl2026.pdf
@@ -601,9 +601,8 @@ controles:
   platform: JCC Naar mijn afspraak
   onderzoeksbureau: TWIN CUBES GmbH (tester Sascha Noack)
   onderzoeksdatum: '2025-07-23'
-  score: 6
-  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. De gebruikte technologieën ontbreken. NVDA staat er zonder versienummer in. Het rapport gaat over de Duitse versie en
-    gebruikt de BITV-test.
+  score: 7
+  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. De gebruikte technologieën ontbreken. Het rapport gaat over de Duitse versie en gebruikt de BITV-test.
   punten:
     '7': onduidelijk
     '8': nvt
@@ -611,7 +610,7 @@ controles:
     '10': ja
     '11': nee
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/storing-melden-lms-hercontrole/audit/
@@ -666,8 +665,8 @@ controles:
   platform: Mijn Afvalwijzer
   onderzoeksbureau: Swink (onderzoeker Sterre)
   onderzoeksdatum: '2026-03-10'
-  score: 8
-  toelichting: VoiceOver en Adobe Acrobat staan er zonder versienummer in. Dit is een contentonderzoek; de techniek valt buiten de scope.
+  score: 9
+  toelichting: Dit is een contentonderzoek; de techniek valt buiten de scope.
   punten:
     '7': ja
     '8': nvt
@@ -675,7 +674,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.bunnik.nl/fileadmin/bestanden/Over_deze_site/Deelonderzoek_techniek_MOZARD_WCAG_2.2_Juni_2025.pdf
@@ -698,8 +697,8 @@ controles:
   platform: Nijmegen formulieren/sites
   onderzoeksbureau: Gemeente Nijmegen (onderzoeker Els Groffen)
   onderzoeksdatum: '2025-04-17'
-  score: 8
-  toelichting: NVDA en Colour Contrast Analyser staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -707,7 +706,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-08/App%20Onderzoek%20NotuBox%20WCAG%202.1-AA%20januari%202024_1.pdf
@@ -778,8 +777,8 @@ controles:
   platform: ParkeerService
   onderzoeksbureau: Swink (Julia, Michiel, Mirjam)
   onderzoeksdatum: '2024-10-24'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -787,15 +786,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.leiderdorp.nl/fileadmin/Leiderdorp_bestanden/Afbeeldingen_nieuws_en_home/Foto_s_bij_nieuwsberichten/2025/WCAG_2.1_AA_inspectie_techniek_-_Oegstgeest.parlaeus.nl_app_-_2.1__2_.pdf
   platform: Parlaeus
   onderzoeksbureau: Cardan Technobility (Gerard Copinga)
   onderzoeksdatum: '2023-12-20'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -803,7 +802,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.platformrijksoverheidonline.nl/documenten/rapport/2022/10/27/toegankelijkheidsonderzoek-techniek-pro-oktober-2022
@@ -842,8 +841,8 @@ controles:
   platform: Plein 6
   onderzoeksbureau: Stichting Accessibility
   onderzoeksdatum: '2023-11-29'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -851,7 +850,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsonderzoek.nl/pleio-platform/
@@ -874,8 +873,8 @@ controles:
   platform: Qmatic afspraken
   onderzoeksbureau: Cardan (Nicole de Zeeuw)
   onderzoeksdatum: '2024-08-26'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in. Onderzocht is een demo-omgeving.
+  score: 9
+  toelichting: Onderzocht is een demo-omgeving.
   punten:
     '7': ja
     '8': nvt
@@ -883,15 +882,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.rd4.nl/uploads/inspectie-wwwrd4nl-10-2023.pdf
   platform: RD4
   onderzoeksbureau: Cardan Technobility (Dennis van Zanten)
   onderzoeksdatum: '2023-12-01'
-  score: 8
-  toelichting: Adobe Acrobat Pro DC en NVDA staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -899,15 +898,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://audit.properaccess.nl/reports/202504_readspeaker_retest/
   platform: ReadSpeaker webReader
   onderzoeksbureau: Proper Access (Julia T, Julia F)
   onderzoeksdatum: '2025-04-15'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': ja
@@ -915,7 +914,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://cdn.rova.nl/media/onderzoek-app-mijnrovanl-10-2024_IOS.pdf
@@ -938,8 +937,8 @@ controles:
   platform: Signalen (meldingen openbare ruimte)
   onderzoeksbureau: Digitaal Toegankelijk BV
   onderzoeksdatum: '2024-04-08'
-  score: 8
-  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -947,15 +946,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://cuatro.sim-cdn.nl/simtoegankelijk/uploads/WCAG%202.1%20AA%20inspectie%20techniek-aanvullend-simtoegankelijk.nl_.pdf?cb=h2yV1Cwa
   platform: SIM-platform
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-06-04'
-  score: 7
-  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. Adobe Acrobat, PAC en NVDA staan er zonder versienummer in.
+  score: 8
+  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt.
   punten:
     '7': deels
     '8': nvt
@@ -963,7 +962,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/softwareplatform-solutions-factory-hercontrole/audit/
@@ -986,8 +985,8 @@ controles:
   platform: Stembureaumanager
   onderzoeksbureau: 'Accessibility.nl (alleen af te leiden uit info@accessibility.nl en ''onze website: www.accessibility.nl'')'
   onderzoeksdatum: '2025-02-25'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -995,7 +994,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/swing-mosaic/audit/
@@ -1018,8 +1017,8 @@ controles:
   platform: Timeblockr
   onderzoeksbureau: 'Accessibility.nl (alleen af te leiden uit ''onze website: www.accessibility.nl'')'
   onderzoeksdatum: '2025-10-01'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1027,7 +1026,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/zwolle.verkiezinginbeeld.nl/audit/
@@ -1050,8 +1049,8 @@ controles:
   platform: Verloren of Gevonden
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-07-29'
-  score: 8
-  toelichting: Adobe Acrobat Pro, PAC en NVDA staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1059,15 +1058,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/visma-roxit-rxfront-hercontrole/audit/
   platform: Visma Roxit RxFront
   onderzoeksbureau: Swink
   onderzoeksdatum: '2025-09-26'
-  score: 8
-  toelichting: VoiceOver en axe DevTools staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': ja
@@ -1075,7 +1074,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/werkenvoorgroningen.nl/audit/
@@ -1098,8 +1097,8 @@ controles:
   platform: White label websites Eindhoven
   onderzoeksbureau: Cardan Technobility
   onderzoeksdatum: '2024-03-07'
-  score: 8
-  toelichting: Adobe Acrobat Pro DC, PAC, NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1107,15 +1106,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.tilburg.nl/fileadmin/files/footer/onderzoeksrapporten/inspectie-techniek-wwwwhitelabeltilburgnl-22-2024.pdf
   platform: White label websites Tilburg
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-10'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1123,15 +1122,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://auditor.cardan.com/report/01jqxhjrdjg85h9xese5dv4vt4
   platform: Woningbouwkaart
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-07-17'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1139,7 +1138,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2024-03/Toegankelijkheidsonderzoek%20Ximmio%20app%20(Westland)%20Android%20V3.pdf
@@ -1196,7 +1195,7 @@ controles:
   onderzoeksdatum: '2025-10-10'
   score: 4
   toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. De scope is
-    onvolledig beschreven. De steekproef ontbreekt. Firefox en JAWS staan er zonder versienummer in.
+    onvolledig beschreven. De steekproef ontbreekt. Firefox staat er zonder versienummer in.
   punten:
     '7': onduidelijk
     '8': onduidelijk
@@ -1243,8 +1242,8 @@ controles:
   platform: Anti Money Laundering Centre (EU)
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-05-26'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1252,15 +1251,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://auditor.cardan.com/report/01k56ggdfp59xenwmy03xv0nw1
   platform: BEL Combinatie - BEL Combinatie
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-03-19'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1268,15 +1267,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://gblt.nl/file-download/download/public/1444
   platform: Belastingbalie Nissewaard
   onderzoeksbureau: Stichting Accessibility (afgeleid uit info@accessibility.nl)
   onderzoeksdatum: '2024-04-18'
-  score: 8
-  toelichting: VoiceOver staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1284,16 +1283,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://grip.digitaaltoegankelijk.nl/ax/accessibility-report.php?show=332&shared=9117500744072321&lang=nl
   platform: Belastingenportaal Aa en Hunze
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2025-06-16'
-  score: 6
-  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Colour Contrast Analyser
-    en VoiceOver staan er zonder versienummer in.
+  score: 7
+  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': onduidelijk
@@ -1301,7 +1299,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://auditing.accessibilitydesk.com/public/reports/80/202603101357/940
@@ -1309,7 +1307,7 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2026-03-10'
   score: 8
-  toelichting: De browsers staan er als “meest recente versie” in. VoiceOver, NVDA en Colour Contrast Analyser staan er zonder versienummer in.
+  toelichting: De browsers staan er als “meest recente versie” in, zonder versienummer.
   punten:
     '7': ja
     '8': ja
@@ -1340,8 +1338,8 @@ controles:
   platform: Documenten Aalsmeer
   onderzoeksbureau: 200 OK (Jules Ernst) en Studio Lite (Pieternel de Jonge)
   onderzoeksdatum: '2026-03-05'
-  score: 8
-  toelichting: Colour Contrast Analyser staat er zonder versienummer in. Het rapport gaat over amstelveen.nl.
+  score: 9
+  toelichting: Het rapport gaat over amstelveen.nl.
   punten:
     '7': ja
     '8': nvt
@@ -1349,15 +1347,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://auditing.accessibilitydesk.com/public/reports/87/202605130750/1340
   platform: Documenten Enschede
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2026-05-13'
-  score: 8
-  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': ja
@@ -1365,15 +1363,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://auditor.cardan.com/report/01jnjn3ffw8xh82as4t9ygxj84
   platform: Douane
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-06-18'
-  score: 8
-  toelichting: PAC en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1381,15 +1379,15 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://swink-axeauditor.dequecloud.com/test-run/14c04990-0d79-11f1-9d85-a39f56720122/test-run-report?report_type=audit-report&automated_tools_comply=true
   platform: Gemeente Capelle aan den IJssel
   onderzoeksbureau: Swink
   onderzoeksdatum: '2026-07-21'
-  score: 8
-  toelichting: Colour Contrast Analyser en HeadingsMap staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': ja
@@ -1397,7 +1395,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.delft.nl/sites/default/files/2025-04/onderzoeksrapport-toegankelijkheid-website-gemeente-delft.pdf
@@ -1420,8 +1418,8 @@ controles:
   platform: Gemeenteraad Groningen
   onderzoeksbureau: Cardan (onderzoeker Lucie Barlin)
   onderzoeksdatum: '2025-08-08'
-  score: 8
-  toelichting: NVDA staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1429,7 +1427,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.vrk.nl/sites/vrk/files/2025-12/wcag-22-aa-onderzoek-wwwvrknl-11-202509171512.pdf
@@ -1452,8 +1450,8 @@ controles:
   platform: Goed verhuurderschap Heerlen
   onderzoeksbureau: WCAG.nl (Niek Derksen)
   onderzoeksdatum: '2024-12-12'
-  score: 8
-  toelichting: Adobe Acrobat Pro DC, Colour Contrast Analyser, NVDA en VoiceOver staan er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1461,7 +1459,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.accessy.club/toegankelijkheidsonderzoeken/124-gemeentes-heemstede-en-bloemendaal
@@ -1484,8 +1482,8 @@ controles:
   platform: InSite 's-Hertogenbosch
   onderzoeksbureau: Nils Willekes (onderzoeker); geen bureau genoemd
   onderzoeksdatum: '2025-09-01'
-  score: 8
-  toelichting: WebAIM Contrast Checker staat er zonder versienummer in.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
@@ -1493,7 +1491,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/kaarthaarlem.nl-hercontrole/
@@ -1532,8 +1530,8 @@ controles:
   platform: Presurf (gearchiveerde website)
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-02-26'
-  score: 7
-  toelichting: De steekproef is onvolledig. PAC en NVDA staan er zonder versienummer in.
+  score: 8
+  toelichting: De steekproef is onvolledig.
   punten:
     '7': ja
     '8': nvt
@@ -1541,7 +1539,7 @@ controles:
     '10': ja
     '11': ja
     '12': deels
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/werkenbijcapelleaandenijssel-hercontrole/audit/
