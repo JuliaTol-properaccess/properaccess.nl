@@ -27,6 +27,13 @@ banner:
     label: "Vraag een techniekaudit aan"
     link: "/contact/"
 
+trust:
+  label: "Techniekonderzoeken voor"
+  names:
+    - "Foleon"
+    - "Pleio"
+    - "Postex"
+    - "Hoplr"
 ---
 
 <!-- De inhoud van deze pagina staat in layouts/diensten/techniekaudit.html. -->

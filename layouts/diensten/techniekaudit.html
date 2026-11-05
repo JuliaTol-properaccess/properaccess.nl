@@ -12,10 +12,6 @@
 {{ $pr := hugo.Data.platform_rapporten }}
 {{ $platformen := where $pr.rapporten "categorie" "ne" "Gedeelde websites en samenwerkingen" }}
 {{ $techniek := where $platformen "rapport_type" "Techniek" }}
-{{ $recent := slice }}
-{{ range sort $techniek "rapport_datum_iso" "desc" }}
-  {{ if and (not .geen_rapport) .afgekeurde_sc (lt (len $recent) 4) }}{{ $recent = $recent | append . }}{{ end }}
-{{ end }}
 
 <div class="ta">
 
@@ -68,6 +64,16 @@
 </div>
 </div>
 </section>
+
+<!-- KLANTNAMEN -->
+{{ with .Params.trust }}
+<section class="ta-trust" aria-label="Klanten">
+<div class="ta-container ta-trust__inner">
+<p class="ta-trust__label">{{ .label }}</p>
+<ul class="ta-trust__names">{{ range .names }}<li>{{ . }}</li>{{ end }}</ul>
+</div>
+</section>
+{{ end }}
 
 <!-- OP DEZE PAGINA -->
 <nav aria-label="Op deze pagina" class="ta-onpage">
@@ -219,20 +225,18 @@
 </div>
 <div class="ta-col ta-col--440">
 <div class="ta-market">
+<div class="ta-market__head"><span class="ta-market__title">Zo ziet het overzicht eruit</span><span class="ta-report__tag">Voorbeeld</span></div>
 <table class="ta-market__table">
-<caption>Recentste techniekrapporten in het overzicht</caption>
+<caption class="ta-sr">Voorbeeld van het overzicht met fictieve platformen</caption>
 <thead><tr><th scope="col">Platform</th><th scope="col">Rapportdatum</th><th scope="col">Afgekeurd</th></tr></thead>
 <tbody>
-{{ range $recent }}
-<tr>
-<th scope="row"><span class="ta-market__platform">{{ .platform }}</span>{{ with .leverancier }}{{ if ne . "onbekend" }}<span class="ta-market__lev">{{ . }}</span>{{ end }}{{ end }}</th>
-<td>{{ (time .rapport_datum_iso) | time.Format "2 Jan 2006" }}</td>
-<td>{{ .afgekeurde_sc }}</td>
-</tr>
-{{ end }}
+<tr><th scope="row"><span class="ta-market__platform">Zaakzicht</span><span class="ta-market__lev">Loketwerk B.V.</span></th><td>14 sep 2026</td><td>3</td></tr>
+<tr><th scope="row"><span class="ta-market__platform">Buurtstem</span><span class="ta-market__lev">Wijkdigitaal</span></th><td>2 jul 2026</td><td>7</td></tr>
+<tr><th scope="row"><span class="ta-market__platform">Raadsvenster</span><span class="ta-market__lev">Bestuurshuis Software</span></th><td>19 mei 2026</td><td>12</td></tr>
+<tr><th scope="row"><span class="ta-market__platform">Formulierkompas</span><span class="ta-market__lev">Kompas Digitaal</span></th><td>8 mrt 2026</td><td>19</td></tr>
 </tbody>
 </table>
-<p class="ta-market__foot">Afgekeurd: het aantal succescriteria waaraan het platform niet voldoet.</p>
+<p class="ta-market__foot">Fictieve platformen. Afgekeurd: het aantal succescriteria waaraan het platform niet voldoet.</p>
 </div>
 </div>
 </div>
@@ -287,7 +291,7 @@
 <div class="ta-cta">
 <div class="ta-cta__text">
 <h2 class="ta-cta__title">Vraag een techniekaudit aan</h2>
-<p class="ta-on-dark">Bel <a href="tel:+31855055890">085 5055 890</a> of mail <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>. We reageren binnen één werkdag.</p>
+<p class="ta-on-dark">Bel <a href="tel:+31855055890">085 5055 890</a> of mail <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>. We reageren binnen twee werkdagen.</p>
 </div>
 <div class="ta-actions">
 <a href="/contact/" class="ta-btn ta-btn--white">Neem contact op</a>
@@ -377,6 +381,12 @@
 .ta-finding span span{color:#5E6877}
 .ta-finding__dot{flex:0 0 auto;margin-top:5px;width:8px;height:8px;border-radius:50%;background:#A3134D}
 
+/* Klantnamen */
+.ta-trust{background:#fff;border-top:1px solid #E3E6EB}
+.ta-trust__inner{display:flex;flex-wrap:wrap;align-items:center;gap:12px 40px;padding-top:28px;padding-bottom:28px}
+.ta-trust__label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5E6877;margin:0}
+.ta-trust__names{display:flex;flex-wrap:wrap;gap:12px 40px;font-size:22px;font-weight:800;letter-spacing:-.02em;color:#18202B}
+
 /* Op deze pagina */
 .ta-onpage{background:#1F2734}
 .ta-onpage__inner{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;min-height:64px}
@@ -442,7 +452,10 @@
 .ta-section--dark .ta-actions{margin-top:8px}
 .ta-market{background:#fff;color:#18202B;border-radius:20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);padding:24px;overflow-x:auto}
 .ta-market__table{width:100%;border-collapse:collapse;font-size:15px}
-.ta-market__table caption{text-align:left;font-weight:800;font-size:16px;padding-bottom:12px}
+.ta-market__head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:12px}
+.ta-market__title{font-weight:800;font-size:16px}
+.ta .ta-market .ta-report__tag{color:#fff}
+.ta-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .ta-market__table th,.ta-market__table td{text-align:left;padding:12px 8px;border-top:1px solid #E3E6EB;vertical-align:top}
 .ta-market__table thead th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5E6877;border-top:0;padding-top:4px}
 .ta-market__table td{white-space:nowrap;color:#4A5463}
