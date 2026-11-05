@@ -36,6 +36,22 @@ service:
     amount: 2175
     description: "Indicatie vanaf circa € 2.175 exclusief btw voor een volledig onderzoek. De definitieve prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie."
 
+paginanav:
+  - label: "Waarom"
+    id: "waarom"
+  - label: "Het rapport"
+    id: "voorbeeld"
+  - label: "Werkwijze"
+    id: "werkwijze"
+  - label: "Stappen"
+    id: "stappen"
+  - label: "Prijs"
+    id: "prijs"
+  - label: "Andere onderzoeken"
+    id: "andere-onderzoeken"
+  - label: "Vragen"
+    id: "vragen"
+
 faqs:
   - question: "Is een onderzoek verplicht?"
     answer: "Een toegankelijke website of app is verplicht, een onderzoek niet altijd. De EAA vraagt om een product dat werkt. Zonder onderzoek weet je alleen niet waar je staat en kun je het niet aantonen. Val je onder het BDTO, dan is onderzoek wel nodig: je toegankelijkheidsverklaring moet erop gebaseerd zijn."
@@ -109,6 +125,8 @@ faqs:
 </div>
 </section>
 
+{{< pagina-nav >}}
+
 <!-- IN HET KORT -->
 <section style="background: #ffffff">
 <div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
@@ -127,7 +145,7 @@ faqs:
 </section>
 
 <!-- VOOR WIE -->
-<section style="background: #F6F7F9">
+<section id="waarom" style="background: #F6F7F9">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Waarom onderzoek</span>
@@ -219,7 +237,7 @@ faqs:
 </section>
 
 <!-- WAT JE KUNT VERWACHTEN -->
-<section style="background: #F6F7F9">
+<section id="werkwijze" style="background: #F6F7F9">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Onze werkwijze</span>
@@ -251,7 +269,7 @@ faqs:
 </section>
 
 <!-- ZO VERLOOPT HET -->
-<section style="background: #ffffff">
+<section id="stappen" style="background: #ffffff">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Stappen</span>
@@ -299,7 +317,7 @@ faqs:
 </section>
 
 <!-- ANDERE AUDITS -->
-<section style="background: #ffffff">
+<section id="andere-onderzoeken" style="background: #ffffff">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Andere onderzoeken</span>
