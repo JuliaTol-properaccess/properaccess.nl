@@ -191,4 +191,4 @@ Een zichtbaar label zie je staan, een toegankelijke naam hoor je. Meestal zijn z
 - Ontwikkelaar: gebruik het juiste element met tekst erin, en pak ARIA er pas bij als er geen zichtbare tekst is.
 - Controleer het met **Toon toegankelijke naam** in de [WCAG Radar](/tools/wcag-radar/), op het tabblad Redactie of Developer.
 
-Een naam die er staat maar niets zegt, is de lastigste categorie: geen enkele scan meldt hem, en de bezoeker loopt er wel op vast. Daar kijken wij per element naar. Wil je weten hoe jouw site ervoor staat? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan.
+Een naam die er staat maar niets zegt, is de lastigste categorie: geen enkele scan meldt hem, en de bezoeker loopt er wel op vast. Daar kijken wij per element naar. Wil je weten hoe jouw site ervoor staat? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan.

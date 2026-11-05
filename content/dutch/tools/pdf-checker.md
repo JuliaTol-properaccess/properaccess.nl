@@ -16,7 +16,7 @@ zonder account. Repareren zit in dezelfde tool en draait nog in besloten test. J
 onze eigen server in Duitsland en gaat daar weer af zodra de controle klaar is.
 
 Wil je weten of jouw PDF toegankelijk moet zijn, of wil je hem door een auditor laten nakijken?
-Lees wat je krijgt bij een [volledige toegankelijkheidsaudit](/toegankelijkheidsaudit/) of
+Lees wat je krijgt bij een [volledige toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) of
 [neem contact met ons op](/contact/).
 
 ## Wat de controle je laat zien

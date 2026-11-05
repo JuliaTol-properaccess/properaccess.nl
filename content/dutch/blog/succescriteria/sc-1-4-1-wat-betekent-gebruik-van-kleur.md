@@ -147,4 +147,4 @@ De belangrijkste punten:
 - Developer: onderstreep links in lopende tekst, bouw foutmeldingen met tekst en icoon, en style actieve standen met meer dan kleur.
 - Test met de grijswaarden-check van de [WCAG Radar](/tools/wcag-radar/): één klik en je ziet wat er zonder kleur overblijft.
 
-**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien waar kleur nu de enige drager is en welke oplossing daar past.
+**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan. We testen elk sjabloon en laten per bevinding zien waar kleur nu de enige drager is en welke oplossing daar past.

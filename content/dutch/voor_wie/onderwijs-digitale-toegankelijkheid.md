@@ -65,7 +65,7 @@ vp_framework:
     gebruiken.
   button:
     label: "Bekijk een voorbeeldrapport"
-    link: "/toegankelijkheidsaudit/#voorbeeldrapporten"
+    link: "/toegankelijkheidsonderzoek/#voorbeeldrapporten"
 ---
 
 {{< section-full title="Digitaal onderwijs is pas inclusief als iedereen erbij kan" >}}

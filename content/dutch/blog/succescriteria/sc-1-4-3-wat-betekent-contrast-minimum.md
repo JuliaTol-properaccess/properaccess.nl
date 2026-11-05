@@ -144,4 +144,4 @@ De belangrijkste punten:
 - Logo's, decoratieve tekst en uitgeschakelde knoppen zijn uitgezonderd.
 - Test een complete pagina met de [WCAG Radar](/tools/wcag-radar/), ook op localhost.
 
-**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien welke kleuren je moet aanpassen en waarom.
+**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan. We testen elk sjabloon en laten per bevinding zien welke kleuren je moet aanpassen en waarom.

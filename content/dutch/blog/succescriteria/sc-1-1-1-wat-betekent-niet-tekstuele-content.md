@@ -110,7 +110,7 @@ Twijfel je of een afbeelding decoratief is? Mail je vraag naar info@properaccess
 
 Wil je weten hoe jouw pagina's ervoor staan? Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. Je ziet direct welke afbeeldingen een goede alt-tekst hebben, welke decoratief zijn en welke er nog een missen.
 
-De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
 
 ## Veelgestelde vragen
 

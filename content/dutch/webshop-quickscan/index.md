@@ -11,7 +11,7 @@ source_context:
   sources_label: "Bronnen"
   sources:
     - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
-    - { label: "Proper Access: volledige WCAG-audit", url: "/toegankelijkheidsaudit/" }
+    - { label: "Proper Access: volledige WCAG-audit", url: "/toegankelijkheidsonderzoek/" }
 type: quickscan
 aliases:
   - /quickscan/

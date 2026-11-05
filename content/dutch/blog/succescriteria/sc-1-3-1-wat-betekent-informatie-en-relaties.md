@@ -104,7 +104,7 @@ Wil je weten hoe jouw pagina's ervoor staan? Gebruik de gratis [WCAG Radar van P
 - **Tabellen:** de radar markeert tabellen zonder kopcellen of bijschrift.
 - **Invoervelden zonder naam:** je ziet welke formuliervelden geen toegankelijke naam hebben, zodat je dit kunt doorgeven aan je webbouwer.
 
-De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
 
 ## Veelgestelde vragen
 

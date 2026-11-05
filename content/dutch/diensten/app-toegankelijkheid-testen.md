@@ -149,7 +149,7 @@ hulpsoftware we gebruikten en op welk toestel, en een concrete oplossingsrichtin
 een CSV met alle bevindingen, zodat je ze rechtstreeks in je backlog kunt inlezen.
 
 Heb je naast een app ook een website, dan is een
-[toegankelijkheidsonderzoek van de website](/toegankelijkheidsaudit/) een apart onderzoek met een
+[toegankelijkheidsonderzoek van de website](/toegankelijkheidsonderzoek/) een apart onderzoek met een
 eigen rapport. Val je onder het Besluit digitale toegankelijkheid overheid, dan vraagt het
 Register van Toegankelijkheidsverklaringen dat ook zo: elk digitaal kanaal heeft een eigen
 verklaring met een eigen onderbouwing.

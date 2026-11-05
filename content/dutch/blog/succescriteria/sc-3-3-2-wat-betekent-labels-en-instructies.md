@@ -78,7 +78,7 @@ Een groep keuzerondjes of aankruisvakjes heeft een vraag of kop nodig die bij de
 
 Wil je weten hoe jouw formulieren ervoor staan? Gebruik de gratis [WCAG Radar van Proper Access](/tools/wcag-radar/). Je sleept de knop één keer naar je bladwijzerbalk en klikt hem daarna op elke pagina aan. De radar markeert direct de invoervelden zonder toegankelijke naam, dus velden waar voorleessoftware geen label bij kan vinden. Velden die hun naam alleen uit de placeholder halen krijgen een waarschuwing: de naam bestaat wel, maar hij is weg zodra iemand typt.
 
-De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar helpt je de meest voorkomende fouten zelf op te sporen en op te lossen voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
 
 ## Veelgestelde vragen
 

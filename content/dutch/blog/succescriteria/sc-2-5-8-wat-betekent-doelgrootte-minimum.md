@@ -154,4 +154,4 @@ De belangrijkste punten:
 - Developer: geef icoonknoppen een minimale maat, vergroot klikgebieden met padding of een pseudo-element en let op dat ze elkaar niet overlappen.
 - Test met de doelgrootte-check van de [WCAG Radar](/tools/wcag-radar/): één klik en elk te klein doel licht op.
 
-**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon en laten per bevinding zien welk doel te klein is en welke oplossing daar past.
+**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan. We testen elk sjabloon en laten per bevinding zien welk doel te klein is en welke oplossing daar past.

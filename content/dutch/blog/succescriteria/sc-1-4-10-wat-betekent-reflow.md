@@ -147,4 +147,4 @@ De belangrijkste punten:
 - Developer: `max-width: 100%` op media, geen vaste breedtes en hoogtes, functionaliteit nooit verbergen in media queries.
 - Test op 320 pixels in de responsive mode, of met de check Tekst vergroten 400% van de [WCAG Radar](/tools/wcag-radar/).
 
-**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon op 400% zoom en laten per bevinding zien waar de pagina breekt en hoe je dat oplost.
+**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan. We testen elk sjabloon op 400% zoom en laten per bevinding zien waar de pagina breekt en hoe je dat oplost.

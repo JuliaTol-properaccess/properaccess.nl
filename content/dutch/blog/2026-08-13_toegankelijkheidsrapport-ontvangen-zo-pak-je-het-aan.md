@@ -126,4 +126,4 @@ Je staat er niet alleen voor. Met de [EAA-monitor](https://eaa-monitor.nl) van F
 
 ## Van rapport naar resultaat
 
-Wil je weten waar je een rapport kunt krijgen zoals ik het hierboven heb beschreven? Neem contact op met mijn collega Phi via info@properaccess.nl of kijk op de pagina over de [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+Wil je weten waar je een rapport kunt krijgen zoals ik het hierboven heb beschreven? Neem contact op met mijn collega Phi via info@properaccess.nl of kijk op de pagina over de [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
