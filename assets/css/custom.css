@@ -14413,7 +14413,9 @@ html.dark .section-highlight__content li {
   min-height: 52px;
   padding: 0 1.1rem;
   border-radius: 26px;
-  background: #A30D4B;
+  /* Donkerblauw en niet magenta: een magenta knop die blijft staan leest als
+     een foutmelding (Julia, 05-11-2026). */
+  background: #1F2937;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -14425,7 +14427,7 @@ html.dark .section-highlight__content li {
   font-size: 15px;
   font-weight: 800;
   line-height: 1.2;
-  box-shadow: 0 4px 14px rgba(163, 13, 75, 0.3);
+  box-shadow: 0 4px 14px rgba(31, 41, 55, 0.3);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -14447,11 +14449,12 @@ a.pa-chat-toggle:hover {
 
 .pa-chat-toggle:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(163, 13, 75, 0.4);
+  background: #004050;
+  box-shadow: 0 6px 20px rgba(31, 41, 55, 0.4);
 }
 
 .pa-chat-toggle:focus-visible {
-  outline: 3px solid #004050;
+  outline: 3px solid #1F2937;
   outline-offset: 2px;
 }
 
