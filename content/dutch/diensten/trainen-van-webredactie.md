@@ -40,6 +40,12 @@ trust:
     - "Linkteksten"
     - "Kleurcontrast"
     - "Toegankelijke PDF's"
+
+paginanav:
+  - { label: "Twee trainingen", id: "trainingen" }
+  - { label: "Beide op één dag", id: "beide" }
+  - { label: "Aanpak", id: "aanpak" }
+  - { label: "Offerte", id: "contact" }
 ---
 
 <!-- HERO -->
@@ -90,6 +96,8 @@ trust:
 <span style="font-weight: 700; font-size: 15px; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 6px 16px">Toegankelijke pdf's</span>
 </div>
 </section>
+
+{{< pagina-nav >}}
 
 <!-- TWEE TRAININGEN -->
 <section id="trainingen" style="background: #F6F7F9">
@@ -142,7 +150,7 @@ trust:
 </div>
 
 <!-- combi -->
-<div style="background: linear-gradient(100deg, #1F2937 55%, #3B2440); color: #ffffff; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div id="beide" style="scroll-margin-top: 6rem; background: linear-gradient(100deg, #1F2937 55%, #3B2440); color: #ffffff; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
 <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <span style="align-self: flex-start; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; background: #A30D4B; border-radius: 999px; padding: 3px 12px">Voordeliger</span>
 <h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15">Of beide trainingen op één dag</h3>
@@ -162,7 +170,7 @@ trust:
 {{< whitepaper-aanmelding cover="ja" >}}
 
 <!-- HANDS-ON -->
-<section style="background: #F6F7F9">
+<section id="aanpak" style="background: #F6F7F9">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Aanpak</span>
