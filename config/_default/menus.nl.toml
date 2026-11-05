@@ -54,8 +54,8 @@ hasChildren = true
 
 [[main]]
 parent = "Diensten"
-name = "WCAG-audit"
-url = "/toegankelijkheidsaudit/"
+name = "Toegankelijkheidsonderzoek"
+url = "/toegankelijkheidsonderzoek/"
 weight = 1
 
 [[main]]

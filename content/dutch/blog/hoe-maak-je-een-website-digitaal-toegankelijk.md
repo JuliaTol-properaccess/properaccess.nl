@@ -194,7 +194,7 @@ Reken op drie tot zes maanden voor het hele traject: audit, verbeteringen doorvo
 
 Wil je weten waar jouw website staat? Neem [contact op](https://www.properaccess.nl/contact/) voor een vrijblijvend gesprek. In 30 minuten bespreken we je website en geef ik je een eerste inschatting: van de situatie, de aanpak en de kosten.
 
-Liever eerst zelf checken? Gebruik onze [gratis tools](https://www.properaccess.nl/tools/) om de basis te controleren. Wil je een onderbouwing die standhoudt richting het Register of een toezichthouder, kijk dan bij de [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+Liever eerst zelf checken? Gebruik onze [gratis tools](https://www.properaccess.nl/tools/) om de basis te controleren. Wil je een onderbouwing die standhoudt richting het Register of een toezichthouder, kijk dan bij de [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
 
 Kom je bij het zelf verbeteren ergens niet uit, dan kun je die ene vraag voorleggen via de [strippenkaart](/strippenkaart/). Eén vraag over één onderwerp kost één strip, vanaf 20 euro, en een auditor van Proper Access antwoordt binnen 3 tot 5 werkdagen. Vervolgvragen in dezelfde draad zijn gratis.
 

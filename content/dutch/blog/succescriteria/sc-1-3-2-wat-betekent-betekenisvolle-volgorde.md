@@ -102,7 +102,7 @@ Twee checks die de leesvolgorde ondersteunen:
 - **Koppen en structuur** laat zien of je koppen op de juiste plek en het juiste niveau staan. Een kop is voor een schermlezergebruiker het startpunt van een blok, dus alles wat erbij hoort, moet erna komen.
 - **Tabellen** markeert tabellen zonder kopcellen. Zonder kopcellen valt het verband tussen rij en kolom weg.
 
-De radar vervangt geen volledige audit, maar hij haalt de meest voorkomende fouten eruit voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsaudit/).
+De radar vervangt geen volledige audit, maar hij haalt de meest voorkomende fouten eruit voordat je publiceert. Wil je een complete check door een specialist? Bekijk dan onze [contentaudit](/contentaudit/) of [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
 
 ## Veelgemaakte fouten
 

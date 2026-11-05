@@ -24,7 +24,7 @@ keywords:
 Een toegankelijkheidsaudit is een grondige beoordeling van je website of app op basis van de WCAG-standaard. Het doel: vaststellen welke onderdelen niet toegankelijk zijn voor mensen met een beperking, en concreet beschrijven hoe je dat kunt oplossen.
 
 Dit artikel geeft een korte uitleg. Voor de volledige beschrijving van de aanpak, het rapport en
-de mogelijkheden bij Proper Access, zie [WCAG-audit laten uitvoeren](/toegankelijkheidsaudit/).
+de mogelijkheden bij Proper Access, zie [WCAG-audit laten uitvoeren](/toegankelijkheidsonderzoek/).
 
 ## Wat wordt er precies getest?
 

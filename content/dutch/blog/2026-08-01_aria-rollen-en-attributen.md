@@ -179,4 +179,4 @@ Eén. Je mag er meerdere opschrijven, gescheiden door spaties, maar de browser g
 - Een state die niet meebeweegt is erger dan geen state, want hulpsoftware meldt dan iets dat niet klopt.
 - Controleer met **ARIA-rollen en -attributen** in de [WCAG Radar](/tools/wcag-radar/), zoek rollen op in de [ARIA-referentie](/tools/aria-referentie/) en test je kennis met de [quiz voor developers](/tools/quiz-developers/).
 
-Of een rol klopt met wat het onderdeel doet, kan geen enkele scan bepalen. Dat is de reden dat wij elk zelfgemaakt component met de hand nalopen. Wil je weten hoe jouw componenten ervoor staan? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan.
+Of een rol klopt met wat het onderdeel doet, kan geen enkele scan bepalen. Dat is de reden dat wij elk zelfgemaakt component met de hand nalopen. Wil je weten hoe jouw componenten ervoor staan? Vraag een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan.

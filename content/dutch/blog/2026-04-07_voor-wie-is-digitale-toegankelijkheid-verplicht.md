@@ -87,4 +87,4 @@ Ongeacht welke wet voor jou geldt: de eerste stap is inzicht. Laat je website te
 
 [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan weet je binnen een paar dagen waar je staat en welke wet op jouw organisatie van toepassing is.
 
-Heb je een onderbouwing nodig die standhoudt richting het Register of een toezichthouder, dan is een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) de volgende stap.
+Heb je een onderbouwing nodig die standhoudt richting het Register of een toezichthouder, dan is een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) de volgende stap.

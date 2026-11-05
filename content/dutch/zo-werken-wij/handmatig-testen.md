@@ -49,7 +49,7 @@ Een automatische scan is een goed startpunt en geen eindpunt. Tools als axe en W
 
 Dit is de kern van het verschil tussen een automatische scan en een handmatige WCAG-audit. Wil
 je weten wat zo'n audit verder oplevert en welk type onderzoek bij je past, lees dan de pagina
-over de [WCAG-audit](/toegankelijkheidsaudit/) of het [overzicht van onderzoeken](/toegankelijkheidsonderzoek/).
+over de [WCAG-audit](/toegankelijkheidsonderzoek/).
 
 Daar komen wij langs. Per pagina in de steekproef lopen we systematisch alle HTML-elementen na terwijl we allerlei beperkingen simuleren. Dat is geen kunst, maar wel veel werk. Een gemiddelde audit zit op zestien tot vierentwintig uur testen.
 
@@ -119,6 +119,6 @@ We meten contrast op tekst, op interactieve onderdelen en op informatieve iconen
 
 Het handmatige werk is de kern van wat een audit waardevol maakt. Wil je weten hoeveel uur je daarvoor moet rekenen, of welk type audit het beste past?
 
-[Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsaudit/)
+[Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsonderzoek/#prijzen)
 
 {{< /section-cta >}}

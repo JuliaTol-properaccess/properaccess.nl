@@ -69,7 +69,7 @@ Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bev
 
 We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type hercontrole volgt het type oorspronkelijke audit: een contentaudit krijgt een content-hercontrole, een systeemaudit krijgt een systeem-hercontrole.
 
-We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniekaudit/), een systeemaudit en een [volledige audit](/toegankelijkheidsaudit/).
+We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniekaudit/), een systeemaudit en een [volledige audit](/toegankelijkheidsonderzoek/).
 
 {{< /section-full >}}
 
@@ -117,6 +117,6 @@ Bij overheidsorganisaties leg je die onderbouwing vast in het Register van Toega
 
 Je rapport staat in het portaal. Daar vink je per bevinding aan dat het is opgelost en dat wij mogen controleren, dus je hoeft niet te wachten tot alles klaar is. Onze richtlijn is binnen twaalf weken na de audit.
 
-[Stuur ons een mail](/contact/) · [Lees over de audit zelf](/toegankelijkheidsaudit/)
+[Stuur ons een mail](/contact/) · [Lees over de audit zelf](/toegankelijkheidsonderzoek/)
 
 {{< /section-cta >}}

@@ -18,7 +18,7 @@ keywords:
 Dit is een van de belangrijkste dingen om te weten over toegankelijkheidstesten: **geautomatiseerde tools vinden maximaal 30% van de problemen**. De overige 70% vereist menselijke beoordeling.
 
 Deze pagina beantwoordt specifiek het verschil tussen automatisch en handmatig testen. Voor de
-volledige audit waarin beide onderdelen samenkomen, zie [de pagina over de WCAG-audit](/toegankelijkheidsaudit/).
+volledige audit waarin beide onderdelen samenkomen, zie [de pagina over de WCAG-audit](/toegankelijkheidsonderzoek/).
 
 ## Wat vindt een automatische tool?
 

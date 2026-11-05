@@ -49,9 +49,8 @@ en stel ze ook aan de andere bureaus die je spreekt. Kom je bij een ander uit om
 beter beantwoordt, dan is dat een goede uitkomst.
 
 Heb je daarna een beeld van wat je nodig hebt? Bekijk dan het [overzicht van
-toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/) voor de verschillende soorten en
-de werkwijze, of de pagina over de [WCAG-audit](/toegankelijkheidsaudit/) voor wat je concreet
-krijgt.
+toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/) voor de verschillende soorten, de
+werkwijze en wat je concreet krijgt.
 
 Wil je snel beginnen? Ga direct naar [de zeven vragen](#zeven-vragen), [de prijsindicaties](#prijzen)
 of [onze ervaring](#ervaring). Liever eerst een korte checklist? Let dan in ieder geval op deze vijf

@@ -206,4 +206,4 @@ De belangrijkste punten:
 - Developer: gebruik `min-height` in plaats van `height` en combineer viewport-eenheden met `rem`.
 - Test met Ctrl en plus, of Command en plus op een Mac, op 1280 pixels, en met de checks Alleen tekst vergroten en Pagina-zoom 200% in de [WCAG Radar](/tools/wcag-radar/).
 
-**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsaudit/) aan. We testen elk sjabloon op 200% en laten per bevinding zien waar tekst wegvalt en hoe je dat oplost.
+**Wil je zeker weten dat je hele website voldoet?** Vraag dan een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/) aan. We testen elk sjabloon op 200% en laten per bevinding zien waar tekst wegvalt en hoe je dat oplost.

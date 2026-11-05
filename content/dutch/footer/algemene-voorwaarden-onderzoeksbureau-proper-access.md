@@ -18,7 +18,7 @@ hero_meta:
 
 {{< offerte-section title="1. Introductie" >}}
 
-Welkom bij Proper Access! Wij zijn gespecialiseerd in [toegankelijkheidsaudits](https://www.properaccess.nl/toegankelijkheidsaudit/) van websites en apps en het geven van remedie-advies om de gevonden issues zo efficient mogelijk te verhelpen. Door onze diensten te gebruiken, ga je akkoord met deze algemene voorwaarden. Ze zijn niet lang, beloofd.
+Welkom bij Proper Access! Wij zijn gespecialiseerd in [toegankelijkheidsaudits](https://www.properaccess.nl/toegankelijkheidsonderzoek/) van websites en apps en het geven van remedie-advies om de gevonden issues zo efficient mogelijk te verhelpen. Door onze diensten te gebruiken, ga je akkoord met deze algemene voorwaarden. Ze zijn niet lang, beloofd.
 
 {{< /offerte-section >}}
 
