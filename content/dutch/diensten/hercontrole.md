@@ -2,7 +2,7 @@
 title: "Hercontrole"
 hide_cta: true
 meta_title: "Hercontrole WCAG: bewijs dat de bevindingen zijn opgelost | Proper Access"
-layout: "agency"
+layout: "landing"
 weight: 6
 date: 2026-05-30
 slug: "hercontrole"
@@ -27,104 +27,69 @@ keywords:
   - status A toegankelijkheidsverklaring
   - wcag heronderzoek
 
-banner:
-  title: "Hercontrole"
-  content: "Een eerdere audit laat zien waar het mis was. Een hercontrole laat zien dat het opgelost is. Voor overheid én bedrijfsleven."
-  button:
-    enable: true
-    label: "Plan een hercontrole"
-    link: "/contact/"
-
 trust:
   label: "Wat erin zit"
   names:
-    - "Je bepaalt wanneer"
+    - "Jij bepaalt wanneer"
     - "Elke bevinding nagelopen"
     - "Bewijs voor status A"
-    - "Onafhankelijke beoordeling"
-    - "Per element rapport"
+    - "Onafhankelijk beoordeeld"
+    - "Rapport per element"
 
 paginanav:
-  - { label: "Wat we controleren", id: "controle" }
-  - { label: "Welke audits", id: "welke-audits" }
+  - { label: "Wat we controleren", id: "controleren" }
+  - { label: "Welke audits", id: "audits" }
   - { label: "Prijs", id: "prijs" }
   - { label: "Wanneer", id: "wanneer" }
   - { label: "Wat we tegenkomen", id: "onderweg" }
-  - { label: "Wat het oplevert", id: "resultaat" }
+  - { label: "Wat het oplevert", id: "oplevert" }
+
+sections:
+  - type: hero
+    eyebrow: "Hercontrole"
+    title: "Hercontrole: het bewijs dat het is opgelost"
+    intro: "Een audit laat zien waar het mis was. Een hercontrole laat zien dat het is opgelost. Voor overheid én bedrijfsleven."
+    buttons:
+      - { label: "Plan een hercontrole", link: "#contact", pijl: true }
+      - { label: "Bel 085 5055 890", link: "tel:+31855055890", variant: "outline" }
+
+  - type: trust
+
+  - type: paginanav
+
+  - type: intro-split
+    lead: "Het oplossen is jullie werk. Maar hoe weet je zeker dat het echt is opgelost? En hoe bewijs je dat?"
+    text: |
+      Een audit laat zien waar de problemen zitten. Daarna gaan je leverancier, je redactie of je devteam aan de slag. Dan komt de vraag: werkt de oplossing echt? En hoe laat je dat zien aan je toezichthouder?
+
+      Een hercontrole beantwoordt beide vragen. We lopen elke eerdere bevinding na, kijken of de oplossing werkt en controleren of er geen nieuwe problemen zijn ontstaan. Je krijgt een aangepast rapport dat je als bewijs opneemt in je toegankelijkheidsverklaring.
+
+  - type: cards
+    id: "controleren"
+    bg: "grijs"
+    eyebrow: "Werkwijze"
+    title: "Wat we precies controleren"
+    intro: "We gebruiken dezelfde steekproef als in de oorspronkelijke audit. Bij elke bevinding stellen we drie vragen."
+    numbered: true
+    columns: 3
+    items:
+      - title: "Is het probleem weg?"
+        text: "De oplossing is doorgevoerd en we zien hem werken: in de browser, met de schermlezer en met het toetsenbord."
+      - title: "Is het goed opgelost?"
+        text: "Een onlogische workaround is geen oplossing. Een knop die nu een naam heeft, maar de verkeerde, is nog steeds een probleem."
+      - title: "Zijn er nieuwe problemen?"
+        text: "Dat gebeurt vaker dan je denkt. Een component die eindelijk met het toetsenbord werkt, kan intussen zijn zichtbare focus kwijt zijn."
+
+  - type: cta-dark
+    id: "contact"
+    title: "Plan je hercontrole op tijd"
+    text: "Je rapport staat in het portaal. Daar vink je per bevinding aan dat hij is opgelost en dat wij hem mogen controleren. Je hoeft dus niet te wachten tot alles klaar is."
+    buttons:
+      - { label: "Stuur ons een mail", link: "mailto:info@properaccess.nl", variant: "licht", pijl: true }
+      - { label: "Lees over de audit zelf", link: "/toegankelijkheidsonderzoek/", variant: "spook" }
+
+  - type: feiten
+    peildatum: "7 augustus 2026"
+
+  - type: bron
 ---
-
-{{< section-full >}}
-
-Een audit laat zien waar de problemen zitten. Het oplossen is jouw werk, of dat van je leverancier, je redactie of je devteam. Maar daarna komt de vraag: hoe weet je zeker dat het ook echt is opgelost? En hoe bewijs je dat aan je toezichthouder?
-
-Een hercontrole beantwoordt beide vragen. We lopen elke eerdere bevinding na, kijken of de oplossing werkt, en controleren of er bij het oplossen geen nieuwe problemen zijn ontstaan. Het resultaat is een aangepast rapport dat je opneemt in je toegankelijkheidsverklaring als bewijs.
-
-{{< /section-full >}}
-
-{{< section-full title="Wat we precies controleren" id="controle" bg="light" >}}
-
-We pakken dezelfde steekproef erbij die we in de oorspronkelijke audit hebben gebruikt. Per bevinding controleren we drie dingen:
-
-- **Is het probleem weg?** De fix is doorgevoerd, en we zien hem werken in de browser, met de schermlezer, met het toetsenbord.
-- **Is het probleem juist opgelost?** Een onlogische workaround is geen oplossing. Een knop die nu wel een naam heeft maar de verkeerde naam, is nog steeds een probleem.
-- **Zijn er bij het oplossen nieuwe problemen ontstaan?** Dat gebeurt vaker dan je denkt. Een component dat eindelijk toetsenbordtoegankelijk is, kan in dat proces zijn focuszichtbaarheid verloren hebben.
-
-Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bevinding (opgelost, deels opgelost, niet opgelost) en eventuele nieuwe bevindingen die we onderweg tegenkwamen.
-
-{{< /section-full >}}
-
-{{< section-full title="Voor welk type audit?" id="welke-audits" >}}
-
-We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type hercontrole volgt het type oorspronkelijke audit: een contentaudit krijgt een content-hercontrole, een systeemaudit krijgt een systeem-hercontrole.
-
-We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniekaudit/), een systeemaudit en een [volledige audit](/toegankelijkheidsonderzoek/).
-
-{{< /section-full >}}
-
-{{< section-full title="Wat een hercontrole kost" id="prijs" bg="light" >}}
-
-De eerste hercontrole zit in de prijs van de audit. Je plant hem binnen 12 weken na de oplevering van het rapport.
-
-Wil je daarna nog een hercontrole, dan krijg je daar een aparte offerte voor. Die prijs hangt af van het aantal bevindingen, want we lopen ze allemaal na.
-
-Heb je je audit vóór 23 oktober 2026 besteld? Dan geldt je offerte van toen, en krijg je voor de hercontrole een aparte offerte. Meestal komt die tussen € 300 en € 1.100 uit, exclusief 21% btw.
-
-{{< /section-full >}}
-
-{{< section-full title="Wanneer plan je het in?" id="wanneer" >}}
-
-Onze richtlijn is binnen twaalf weken na oplevering van het oorspronkelijke rapport. Hoe langer je wacht, hoe meer er op de website verandert: nieuwe content, nieuwe componenten, een nieuwe release. Op een gegeven moment is de oude steekproef niet meer representatief en heeft een hercontrole geen zin meer. Duurt het oplossen bij jullie langer dan twaalf weken, overleg dan even; het hoeft geen harde grens te zijn.
-
-Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het moment dat de oorspronkelijke audit start. Dan weet je team naar welke datum ze toewerken, en weten wij wanneer we tijd vrij moeten houden.
-
-{{< /section-full >}}
-
-{{< section-full title="Wat we onderweg tegenkomen" id="onderweg" bg="light" >}}
-
-Een hercontrole is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we moeten benoemen.
-
-- **Vervangende pagina's.** Een pagina uit de oorspronkelijke steekproef die inmiddels weg is, vervangen we door een vergelijkbare pagina. Die kijken we vervolgens volledig na, wat kan betekenen dat eerder goedgekeurde succescriteria alsnog worden afgekeurd op die nieuwe pagina.
-- **Nieuwe componenten.** Heeft het team in de tussentijd een nieuw type kaart, modal of formulier toegevoegd op een pagina in de steekproef? Dan nemen we dat mee.
-- **Nieuwe fouten in de fix.** Soms ontstaat een nieuw probleem tijdens het oplossen: een aria-label dat per ongeluk de oude label-tekst overschrijft, een focus-trap die te streng is afgesteld.
-
-We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je website werkt voor je gebruikers, en dat je toegankelijkheidsverklaring klopt met de werkelijkheid.
-
-{{< /section-full >}}
-
-{{< section-full title="Wat een hercontrole oplevert" id="resultaat" >}}
-
-Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een hercontrole laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
-
-Bij overheidsorganisaties leg je die onderbouwing vast in het Register van Toegankelijkheidsverklaringen. Onder de European Accessibility Act is het toezicht verdeeld over zes toezichthouders, elk voor een eigen soort product of dienst; voor webshops en apps is dat de Autoriteit Consument en Markt. In beide gevallen is een audit plus hercontrole de sterkste vorm van bewijs: geen zelfverklaring, maar een onafhankelijk rapport waarin de oorspronkelijke bevindingen één voor één zijn nagelopen en gecontroleerd.
-
-{{< /section-full >}}
-
-{{< section-cta >}}
-
-## Plan je hercontrole op tijd
-
-Je rapport staat in het portaal. Daar vink je per bevinding aan dat het is opgelost en dat wij mogen controleren, dus je hoeft niet te wachten tot alles klaar is. Onze richtlijn is binnen twaalf weken na de audit.
-
-[Stuur ons een mail](/contact/) · [Lees over de audit zelf](/toegankelijkheidsonderzoek/)
-
-{{< /section-cta >}}

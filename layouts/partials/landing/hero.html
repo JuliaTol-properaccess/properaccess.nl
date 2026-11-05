@@ -1,0 +1,24 @@
+{{/* Hero met eyebrow-pil, h1, intro, optionele vinkjeslijst, knoppen en een
+     optionele visual (naam van een partial in landing/, zonder .html).
+     Velden: eyebrow, title, intro, checks[], buttons[], visual */}}
+{{ $s := .s }}
+<section class="lp-hero">
+  <div class="lp-wrap lp-hero__grid">
+    <div class="lp-hero__tekst">
+      {{ with $s.eyebrow }}<p class="lp-pil">{{ . }}</p>{{ end }}
+      <h1 class="lp-hero__titel">{{ $s.title | default .page.Title | markdownify }}</h1>
+      {{ with $s.intro }}<p class="lp-hero__intro">{{ . | markdownify }}</p>{{ end }}
+      {{ with $s.checks }}
+      <ul class="lp-checks">
+        {{ range . }}<li><i class="fa-solid fa-check" aria-hidden="true"></i><span>{{ . | markdownify }}</span></li>{{ end }}
+      </ul>
+      {{ end }}
+      {{ partial "landing/_knoppen.html" $s.buttons }}
+    </div>
+    {{ with $s.visual }}
+    <div class="lp-hero__visual">
+      {{ partial (printf "landing/%s.html" .) (dict "s" $s "page" $.page) }}
+    </div>
+    {{ end }}
+  </div>
+</section>
