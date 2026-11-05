@@ -1,0 +1,14 @@
+{{- /* De tabel van /platform-rapporten/ als JSON, voor het portaal (portaal.properaccess.nl/platformrapporten). */ -}}
+{{- $d := hugo.Data.platform_rapporten -}}
+{{- $rapporten := slice -}}
+{{- range $d.rapporten -}}
+  {{- $rapporten = $rapporten | append (dict
+      "platform" .platform
+      "leverancier" .leverancier
+      "categorie" .categorie
+      "rapport_type" .rapport_type
+      "datum" .rapport_datum_iso
+      "geldig_tot" .geldig_tot
+      "rapport_url" .rapport_url) -}}
+{{- end -}}
+{{- dict "bijgewerkt" $d.bijgewerkt "rapporten" $rapporten | jsonify (dict "indent" "  ") -}}
