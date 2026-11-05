@@ -154,6 +154,12 @@ baseName = "searchindex"
 isPlainText = true
 notAlternative = true
 
+[outputFormats.PlatformRapporten]
+mediaType = "application/json"
+baseName = "rapporten"
+isPlainText = true
+notAlternative = true
+
 [outputFormats.LLMsFull]
 mediaType = "text/plain"
 baseName = "llms-full"
