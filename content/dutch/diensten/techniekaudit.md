@@ -27,6 +27,18 @@ banner:
     label: "Vraag een techniekaudit aan"
     link: "/contact/"
 
+paginanav:
+  - label: "Wat we onderzoeken"
+    id: "onderzoek"
+  - label: "Techniek of systeem"
+    id: "vergelijk"
+  - label: "Wat je krijgt"
+    id: "resultaat"
+  - label: "Marktoverzicht"
+    id: "marktoverzicht"
+  - label: "Werkwijze en prijs"
+    id: "werkwijze"
+
 trust:
   label: "Techniekonderzoeken voor"
   names:

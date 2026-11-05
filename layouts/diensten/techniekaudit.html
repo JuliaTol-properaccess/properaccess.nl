@@ -76,16 +76,7 @@
 {{ end }}
 
 <!-- OP DEZE PAGINA -->
-<nav aria-label="Op deze pagina" class="ta-onpage">
-<div class="ta-container ta-onpage__inner">
-<span class="ta-onpage__label">Op deze pagina</span>
-<a href="#onderzoek">Wat we onderzoeken</a>
-<a href="#vergelijk">Techniek of systeem</a>
-<a href="#resultaat">Wat je krijgt</a>
-<a href="#marktoverzicht">Marktoverzicht</a>
-<a href="#werkwijze">Werkwijze en prijs</a>
-</div>
-</nav>
+{{ partial "pagina-nav.html" . }}
 
 <!-- INTRO -->
 <section class="ta-section">
@@ -359,7 +350,7 @@
 .ta .ta-btn--white{background:#fff;color:#1F2734;padding:0 26px}.ta .ta-btn--white:hover{background:#F6F7F9;color:#1F2734}
 .ta .ta-btn--ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);padding:0 26px}.ta .ta-btn--ghost:hover{color:#fff;border-color:#fff}
 .ta-btn--sm{padding:0 24px;min-height:48px;margin-top:auto;align-self:flex-start}
-.ta-section--dark a:focus-visible,.ta-panel--dark a:focus-visible,.ta-variant--dark a:focus-visible,.ta-cta a:focus-visible,.ta-onpage a:focus-visible{outline-color:#fff}
+.ta-section--dark a:focus-visible,.ta-panel--dark a:focus-visible,.ta-variant--dark a:focus-visible,.ta-cta a:focus-visible{outline-color:#fff}
 .ta-hero__checks{margin-top:16px!important;padding-top:24px!important;border-top:1px solid #E3E6EB;display:flex;flex-wrap:wrap;gap:12px 32px;font-size:15px;font-weight:600;color:#18202B}
 .ta-hero__checks li{display:flex;align-items:center;gap:8px}
 
@@ -386,13 +377,6 @@
 .ta-trust__inner{display:flex;flex-wrap:wrap;align-items:center;gap:12px 40px;padding-top:28px;padding-bottom:28px}
 .ta-trust__label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5E6877;margin:0}
 .ta-trust__names{display:flex;flex-wrap:wrap;gap:12px 40px;font-size:22px;font-weight:800;letter-spacing:-.02em;color:#18202B}
-
-/* Op deze pagina */
-.ta-onpage{background:#1F2734}
-.ta-onpage__inner{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;min-height:64px}
-.ta-onpage__label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#AEB6C2;margin-right:16px}
-.ta .ta-onpage a{color:#fff;font-weight:600;font-size:15px;text-decoration:none;padding:10px 14px;border-radius:8px}
-.ta .ta-onpage a:hover{background:#2E3847;color:#fff;text-decoration:underline}
 
 /* Intro-feiten */
 .ta-facts{background:#F6F7F9;border-radius:20px;padding:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
