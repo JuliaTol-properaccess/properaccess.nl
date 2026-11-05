@@ -103,7 +103,7 @@ Als je bij ons een audit afneemt voor de gemiddelde webshop, dan krijg je:
 4. **Visuele voorbeelden.** Screenshots van het probleem, inclusief annotaties. Let op, geen screenshots van de pagina of een element. Je weet zelf toch wel hoe je logo eruit ziet. Daar heb je geen screenshot van nodig.
 5. **Een prioriteitenlijst.** Niet alles is even erg. We labelen issues op impact en urgentie zodat je weet waar je moet beginnen.
 6. **Eén nabespreking** waarin we het rapport met je team doorlopen en vragen beantwoorden.
-7. **Eén hercontrole** binnen 4 maanden, nadat je de issues hebt opgelost. Een tweede hercontrole krijgt een aparte offerte.
+7. **Eén hercontrole** binnen 12 weken, nadat je de issues hebt opgelost. Een tweede hercontrole krijgt een aparte offerte.
 
 ## Hoe verhoudt dit zich tot een mini-audit?
 

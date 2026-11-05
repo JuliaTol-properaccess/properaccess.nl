@@ -73,7 +73,7 @@ met de extra kostenfactoren van checkout, account en productfilters.
 | Techniekaudit: HTML, ARIA, toetsenbord, formuliervalidatie | v.a. 1.995 euro |
 | Systeem-audit: herbruikbare componenten en design systems | 3.800 euro |
 | Nabespreking van het rapport | in de prijs |
-| Eerste hercontrole, binnen 4 maanden na oplevering | in de prijs |
+| Eerste hercontrole, binnen 12 weken na oplevering | in de prijs |
 | Extra uur nabespreking | 250 euro |
 
 Een content-audit voeren we alleen uit als de techniek van de website ook is onderzocht, door ons of door iemand anders. Een verklaring vraagt om bewijs over de hele website en niet alleen over de redactielaag.
