@@ -118,12 +118,12 @@ controles:
   platform: BuitenBeter app
   onderzoeksbureau: Proper Access
   onderzoeksdatum: '2026-05-28'
-  score: 8
-  toelichting: De scope is onvolledig beschreven.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
-    '9': deels
+    '9': ja
     '10': ja
     '11': ja
     '12': ja
@@ -713,12 +713,12 @@ controles:
   platform: NotuBox app
   onderzoeksbureau: Stichting Accessibility (via info@accessibility.nl)
   onderzoeksdatum: '2024-08-02'
-  score: 5
-  toelichting: De scope is onvolledig beschreven. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De gebruikte browsers en programma’s ontbreken.
+  score: 6
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De gebruikte browsers en programma’s ontbreken.
   punten:
     '7': ja
     '8': nvt
-    '9': deels
+    '9': ja
     '10': nee
     '11': nee
     '12': ja
