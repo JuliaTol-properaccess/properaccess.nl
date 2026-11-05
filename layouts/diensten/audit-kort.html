@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- ─── HERO ─── -->
+{{ with .Params.banner }}
+<section class="hp-hero">
+  <div class="hp-container">
+    <div class="hp-hero__grid">
+      <div class="hp-hero__text">
+        <span class="hp-hero__badge">WCAG 2.2, niveau AA</span>
+        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
+        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
+        {{ with .bullets }}
+        <div class="hp-contrast__checks" style="margin-top: 0.5rem;">
+          {{ range . }}
+          <div class="hp-contrast__check">
+            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span>{{ . | markdownify }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ with .button }}
+          {{ if .enable }}
+            <div class="hp-hero__actions" style="margin-top: 1.5rem;">
+              <a class="hp-btn hp-btn--primary" href="{{ if strings.HasPrefix .link "#" }}{{ .link }}{{ else }}{{ .link | absURL }}{{ end }}"
+                {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
+                {{ .label }}
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+              <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
+                Bel 085 5055 890
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="hp-hero__visual" aria-hidden="true">
+        {{ partial "voor-wie/svg-audit.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- ─── TRUST BAR ─── -->
+{{ partial "trust-bar.html" . }}
+
+<!-- ─── TL;DR CAPSULE ─── -->
+{{ partial "tldr-capsule.html" . }}
+
+<article class="offerte-content">
+  {{ .Content }}
+</article>
+
+{{ partial "faq-blok.html" (dict "page" .) }}
+
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

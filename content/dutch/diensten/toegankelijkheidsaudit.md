@@ -1,22 +1,24 @@
 ---
 title: "Toegankelijkheidsaudit"
 meta_title: "WCAG-audit laten uitvoeren vanaf € 2.175 | Proper Access"
-layout: "audit"
+layout: "audit-kort"
 weight: 2
 featured: true
 date: 2024-12-05
-lastmod: 2026-09-17
+lastmod: 2026-11-05
 slug: "toegankelijkheidsaudit"
 url: "/toegankelijkheidsaudit/"
-description: "Laat je website of app handmatig toetsen aan WCAG 2.2. Je krijgt concrete oplossingen, een rapport per pagina en alle bevindingen vanaf € 2.175."
+description: "Laat je website of app handmatig toetsen aan WCAG 2.2. Vaste prijs vanaf € 2.175, met alle bevindingen in je eigen dashboard."
 tldr: |
-  Proper Access onderzoekt hoe je website of app in de praktijk werkt voor mensen met verschillende beperkingen. We toetsen handmatig aan WCAG 2.2, niveau AA, en geven concrete adviezen waarmee je team direct aan de slag kan. Je krijgt een rapport per pagina met screenshots, uitleg en code-voorbeelden, plus een overzicht van alle bevindingen voor je projectmanagement. Een volledige audit start vanaf circa € 2.175 en duurt 3 tot 5 weken.
+  Proper Access toetst je website of app met de hand aan WCAG 2.2, niveau AA. Overheden noemen dit een toegankelijkheidsonderzoek, bedrijven vaak een audit: het is hetzelfde werk. Je krijgt een vaste prijs vooraf, vanaf circa € 2.175. Alle bevindingen staan in je eigen dashboard op portaal.properaccess.nl, waar je team per bevinding met ons overlegt. Een nabespreking en een hercontrole zitten in de prijs.
 keywords:
   - wcag
   - WCAG 2.2
   - digitale toegankelijkheid
   - toegankelijkheidsaudit
   - toegankelijkheidsaudit laten uitvoeren
+  - toegankelijkheidsonderzoek
+  - WCAG-onderzoek
   - WCAG audit
   - handmatige audit
   - auditbureau
@@ -33,12 +35,12 @@ service:
     description: "Indicatie vanaf circa € 2.175 exclusief btw. De definitieve prijs hangt af van omvang en type site en volgt na een gratis kennismaking."
 
 banner:
-  title: "Toegankelijkheidsaudit: in minder dan 12 weken een toegankelijke website of app"
-  content: "Meer bereik, betere conversie en een sterker imago, door digitale producten die voor iedereen werken. Laat je begeleiden door een expert en voldoe met zo min mogelijk kosten en inspanning aan de European Accessibility Act (EAA) of het Besluit digitale toegankelijkheid overheid (BDTO)."
+  title: "Toegankelijkheidsaudit of WCAG-onderzoek"
+  content: "Een senior auditor toetst je website of app met de hand aan WCAG 2.2, niveau AA. Je weet vooraf wat het kost, en alle bevindingen staan in je eigen dashboard."
   bullets:
-    - "**Meer bereik**: de bezoekers die nu halverwege afhaken"
-    - "**Betere conversie** en sterker imago"
-    - "**Voldoe** aan EAA of BDTO, zonder stress"
+    - "**Vaste prijs vooraf**, vanaf circa € 2.175"
+    - "**Nabespreking en hercontrole** zitten in de prijs"
+    - "**Bruikbaar als onderbouwing** voor je toegankelijkheidsverklaring"
   button:
     enable: true
     label: "Plan een gratis kennismaking (30 min)"
@@ -56,137 +58,69 @@ trust:
 
 faqs:
   - question: "Hoe lang duurt een audit?"
-    answer: "3-5 weken van start tot oplevering. Hangt af van de omvang van je website. We stemmen de planning af op jouw deadline."
-  - question: "Moeten we alles meteen oplossen?"
-    answer: "Nee. We helpen je prioriteren. Per knelpunt geven we de impact aan: klein, gemiddeld of ernstig. Zo kun je starten met de belangrijkste issues en de rest later oppakken."
-  - question: "Is dit verplicht voor ons?"
-    answer: "Een toegankelijke website of app is verplicht. Een onderzoek niet: de European Accessibility Act, die sinds 28 juni 2025 geldt, vraagt om een product dat werkt, niet om een rapport. Zonder onderzoek weet je alleen niet waar je staat en kun je het ook niet aantonen. Val je onder het Besluit digitale toegankelijkheid overheid, dat sinds 2018 geldt, dan ligt het anders: daar hoort een toegankelijkheidsverklaring bij met onderzoek eronder."
-  - question: "Wat als we niet technisch zijn?"
-    answer: "Geen probleem. Wij vertalen alles naar begrijpelijke taal. En als je een developer hebt die vragen heeft: die mag ons ook alles vragen. We passen ons aan jouw situatie aan."
-  - question: "Kunnen jullie ook de problemen oplossen?"
-    answer: "Wij adviseren, jouw developers voeren uit. Maar als je geen eigen developers hebt, kunnen we je doorverwijzen naar agencies waarmee we samenwerken."
-  - question: "Wat krijgen we precies?"
-    answer: "Een rapport per pagina met screenshots en uitleg, een CSV-bestand met alle bevindingen voor projectmanagement, code-snippets per oplossing en een nabespreking in een online sessie. Vragen daarna, en meedenken bij het oplossen, lopen via een [strippenkaart](/strippenkaart/): één strip is één vraag."
-  - question: "Wat kost een audit?"
-    answer: "Dat hangt af van de omvang en het type site. Een volledige audit start vanaf circa 2.175 euro. Tijdens een kennismaking geven we direct een duidelijke indicatie, geen verrassingen achteraf."
-  - question: "Wat is het verschil met een automatische scan?"
-    answer: "Automatische scans herkennen ongeveer 30% van de WCAG-succescriteria, vooral codefouten die een tool kan meten. De overige circa 70% vereist handmatige beoordeling: een schermlezer starten, met het toetsenbord navigeren, focusvolgorde en zoom tot 400% testen. Dat doen wij met de hand, met echte assistieve technologie en volgens het 6-ogen-principe: elk rapport wordt door drie mensen bekeken voordat het de deur uit gaat."
+    answer: "3 tot 5 weken van start tot oplevering. Dat hangt af van de omvang van je website. We stemmen de planning af op jouw deadline."
+  - question: "Is een audit verplicht?"
+    answer: "Een toegankelijke website of app is verplicht. Een audit niet: de European Accessibility Act, die sinds 28 juni 2025 geldt, vraagt om een product dat werkt. Zonder audit weet je alleen niet waar je staat en kun je het ook niet aantonen. Val je onder het Besluit digitale toegankelijkheid overheid, dan hoort bij je toegankelijkheidsverklaring een onderzoek volgens WCAG-EM."
   - question: "Voldoen we na de audit aan de EAA of het BDTO?"
-    answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw fixes doen we een hercontrole die aantoonbaar vastlegt dat de bevindingen zijn opgelost. Dat is precies het bewijs dat je nodig hebt voor je toegankelijkheidsverklaring en voor handhaving onder de EAA of het BDTO."
-  - question: "Volgens welke methode voeren jullie het onderzoek uit?"
-    answer: "Met WCAG-EM, de evaluatiemethode van het W3C. Die kent vijf stappen: reikwijdte bepalen, de site verkennen, een representatieve steekproef samenstellen, de steekproef toetsen en de bevindingen rapporteren. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing."
-  - question: "Wat is het verschil tussen een toegankelijkheidsonderzoek en een toegankelijkheidsaudit?"
-    answer: "Niets. Toegankelijkheidsonderzoek, toegankelijkheidsaudit, WCAG-audit en toegankelijkheidstoets zijn vier namen voor hetzelfde werk: een handmatige toets van je website aan WCAG 2.2, niveau AA."
+    answer: "De audit laat zien wat er nog niet voldoet en hoe je het oplost. Na jouw aanpassingen doen we een hercontrole. Die legt vast welke bevindingen zijn opgelost. Dat is de onderbouwing voor je toegankelijkheidsverklaring."
+  - question: "Moeten we alles meteen oplossen?"
+    answer: "Nee. Per bevinding geven we de impact aan: klein, gemiddeld of ernstig. Zo begin je met de belangrijkste problemen. In de nabespreking helpen we je prioriteren."
+  - question: "Wat als we niet technisch zijn?"
+    answer: "Elke bevinding begint met een user story: wat een bezoeker met een beperking ervaart. Dat lees je zonder technische kennis. De codevoorbeelden zijn voor je developer, of voor het bureau dat je website bouwt."
 translationKey: "toegankelijkheidsaudit"
 ---
 
-{{< section-full title="Wat is een toegankelijkheidsaudit?" id="wat-is-een-toegankelijkheidsonderzoek" >}}
+{{< section-cards id="voor-wie" columns="2" title="Voor overheden en voor bedrijven" >}}
+{{< section-card title="Overheid: onderzoek voor het Register" >}}
 
-Toegankelijkheidsaudit, WCAG-audit, toegankelijkheidstoets, toegankelijkheidsonderzoek. Vier
-namen die je in offertes en aanbestedingen door elkaar ziet staan, voor hetzelfde werk. Wie een
-van deze vier vraagt, vraagt om een toets aan WCAG 2.2 op niveau A en AA.
+Valt je organisatie onder het Besluit digitale toegankelijkheid overheid (BDTO), dan hoort
+bij elke website en app een toegankelijkheidsverklaring in het Register. Ons onderzoek volgt
+WCAG-EM, de methode die het Register vraagt. Je gebruikt het rapport dus direct als
+onderbouwing.
 
-Op deze pagina lees je wat een WCAG-audit inhoudt en wat je ervoor terugkrijgt. Wil je vooral
-weten welk type onderzoek bij jouw situatie past, wat de methode en doorlooptijd zijn, ga dan
-naar het [overzicht van toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/).
-
-Wat wel uitmaakt is dat het handwerk is. WCAG 2.2 telt op niveau A en AA samen 55
-succescriteria. Een geautomatiseerde scan herkent daarvan ongeveer 30%, vooral codefouten die
-een tool kan meten.
-De overige 70% vraagt om een mens die een schermlezer start, met het toetsenbord door een
-formulier loopt, de focusvolgorde controleert en inzoomt tot 400%.
-
-De maatstaf onder de European Accessibility Act en onder het Besluit digitale toegankelijkheid
-overheid is de Europese norm EN 301 549. In versie V3.2.1 is dat WCAG 2.1 niveau AA.
-EN 301 549 stelt daarnaast eisen aan onder meer documentatie en klantondersteuning. Wij toetsen
-aan WCAG 2.2 als extra service; die criteria zijn backwards compatible, dus alles uit 2.1 zit
-erin.
-
-Ben je nog aan het vergelijken tussen bureaus? We hebben opgeschreven
-[waar je op let bij het kiezen van een auditbureau](/auditbureau-kiezen/): zeven vragen die je
-aan ons kunt stellen en aan elke andere partij die je spreekt.
-
-{{< /section-full >}}
-
-{{< section-steps id="methode" title="Volgens welke methode voeren we de audit uit?" subtitle="We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig, dus je rapport is bruikbaar als onderbouwing." >}}
-<div class="card">
-  <i class="card__icon" aria-hidden="true">1</i>
-  <h3 class="card__title">Reikwijdte bepalen</h3>
-  <p>Welke website, welke subdomeinen, welke talen, welke apps. We leggen ook vast op welke browsers en hulpsoftware we toetsen.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">2</i>
-  <h3 class="card__title">De site verkennen</h3>
-  <p>Welke paginatypes zijn er, welke onderdelen zitten erin zoals formulieren, filters en video's, en waar lopen de gebruikersroutes.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">3</i>
-  <h3 class="card__title">Steekproef samenstellen</h3>
-  <p>We kiezen pagina's die samen alle paginatypes en alle interactie dekken. Die selectie krijg je vooraf te zien.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">4</i>
-  <h3 class="card__title">De steekproef toetsen</h3>
-  <p>Handmatig, met schermlezer, alleen toetsenbord en zoom tot 400%. Daarna doet een tweede auditor de interne review.</p>
-</div>
-<div class="card">
-  <i class="card__icon" aria-hidden="true">5</i>
-  <h3 class="card__title">Bevindingen rapporteren</h3>
-  <p>Per element in plaats van per succescriterium, met per bevinding een user story vanuit een bezoeker met een beperking.</p>
-</div>
-{{< /section-steps >}}
-
-{{< section-full title="Waarom een steekproef genoeg is" >}}
-
-Over die steekproef krijgen we geregeld de vraag of tien pagina's genoeg zijn op een site met
-tweeduizend URL's. In 950 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de
-templates zitten. Een pagina toevoegen die dezelfde template gebruikt levert dan dezelfde
-bevinding nog een keer op, en die tijd besteed je beter aan het uitwerken van oplossingen.
-Zitten er uitzonderingen tussen, zoals een kaartmodule of een pdf-viewer, dan nemen we die er
-apart bij.
-
-Hoe we de steekproef precies samenstellen en welke keuzes we vooraf met je vastleggen, staat in
-[stap 1 van onze werkwijze](/zo-werken-wij/steekproef-en-scope/).
-
-{{< /section-full >}}
-
-{{< voorbeeld-bevinding-sectie title="Een voorbeeld van een bevinding" id="voorbeeld-bevinding" intro="Dit is het detailniveau waarop we bevindingen opleveren. Je ziet niet alleen welk succescriterium geraakt wordt, maar ook wat een bezoeker ervaart, hoe je het probleem reproduceert en welke oplossing je developmentteam kan testen." >}}
-
-{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Welk type audit past bij jouw situatie?" subtitle="Een volledig onderzoek toetst alle 55 succescriteria op niveau A en AA. Soms past een deelonderzoek beter." >}}
-{{< section-card title="Contentaudit" >}}
-
-33 van de 55 succescriteria. Voor organisaties waar de techniek bij een externe leverancier
-ligt en je alleen de redactie zelf beheert. Alleen mogelijk als de techniek ook is onderzocht,
-door ons of door een andere partij.
-
-[Lees over de contentaudit →](/contentaudit/)
+[Digitale toegankelijkheid voor de overheid →](/digitale-toegankelijkheid-overheid/)
 
 {{< /section-card >}}
-{{< section-card title="Techniek- of systeemaudit" >}}
+{{< section-card title="Bedrijven: audit voor de EAA" >}}
 
-48 van de 55 succescriteria. Voor softwareleveranciers en productteams die hun klanten een
-toegankelijk platform willen leveren, los van de content die er straks in komt.
+Sinds 28 juni 2025 moeten webshops, apps en andere digitale diensten toegankelijk zijn. Dat
+vraagt de European Accessibility Act (EAA). Met een audit weet je waar je staat en toon je aan
+wat je hebt opgelost. Je toegankelijkheidsverklaring stel je op in je dashboard, en je
+publiceert hem op een eigen pagina van je website.
 
-[Lees over de techniek- of systeemaudit →](/techniekaudit/)
-
-{{< /section-card >}}
-{{< section-card title="App-audit" >}}
-
-Voor iOS- en Android-apps, handmatig getest op echte toestellen met VoiceOver en TalkBack. We
-toetsen aan WCAG 2.1 in combinatie met de Europese norm EN 301 549.
-
-[Lees over de app-audit →](/app-toegankelijkheid-testen/)
-
-{{< /section-card >}}
-{{< section-card title="Mini-audit" >}}
-
-€ 495. Tot 5 uur handmatige controle als je nog niet weet waar je staat en eerst een beeld
-wilt. Een senior auditor bekijkt je site en benoemt de grootste knelpunten.
-
-[Lees over de mini-audit →](/webshop-quickscan/)
+[Wat de EAA van je vraagt →](/eaa/)
 
 {{< /section-card >}}
 {{< /section-cards >}}
+
+{{< section-cards id="portaal" columns="2" bg="light" title="Alles van je audit in je eigen portaal" subtitle="Elke audit krijgt een eigen dashboard op portaal.properaccess.nl, en dat zit in de auditprijs. Heb je meerdere websites, dan zie je ze ook samen in één overzicht." >}}
+{{< section-card title="Overleg per bevinding" >}}
+
+Je team stelt een vraag bij de bevinding zelf, en wij antwoorden daar ook. Wie er toegang
+heeft, regel je zelf, ook voor meerdere teams.
+
+{{< /section-card >}}
+{{< section-card title="Zie hoe je website verbetert" >}}
+
+Van audit tot hercontrole zie je wat is opgelost en wat nog openstaat. Wil je elke maand weten
+hoe je website ervoor staat, dan is er [automatische monitoring](/automatische-monitoring/).
+
+{{< /section-card >}}
+{{< section-card title="Een plan van aanpak per team" >}}
+
+Bij elke audit krijg je een plan van aanpak per team, een presentatie van de uitkomsten en een
+openbare versie van het rapport. Je toegankelijkheidsverklaring stel je op in het dashboard.
+
+{{< /section-card >}}
+{{< section-card title="Een jaar de WCAG Radar, gratis" >}}
+
+We vinden het belangrijk dat je zelf leert testen. Daarom krijg je bij elke audit een jaar een
+licentie op [de WCAG Radar van Proper Access](/tools/wcag-radar/).
+
+{{< /section-card >}}
+{{< /section-cards >}}
+
+{{< voorbeeld-bevinding-sectie title="Zo ziet een bevinding eruit" id="voorbeeld-bevinding" intro="Per bevinding lees je wat een bezoeker ervaart, hoe je het probleem reproduceert en welke oplossing je developer kan testen." >}}
 
 {{< section-tweekolom title="Wat kost een toegankelijkheidsaudit?" id="prijzen" bg="light" ratio="one-third-two-thirds" >}}
 
@@ -195,17 +129,11 @@ wilt. Een senior auditor bekijkt je site en benoemt de grootste knelpunten.
 De prijs hangt af van het aantal unieke paginatypes en de hoeveelheid interactie, niet van het
 aantal pagina's. Alle bedragen zijn exclusief 21% btw.
 
-De meeste websites vallen in de categorie gemiddeld. Weet je niet welke categorie bij jou past,
-[plan dan een kennismaking van 30 minuten](/contact/). We kijken samen naar je site, zeggen
-welk onderzoek past en je krijgt daarna een vaste prijs, geen nacalculatie.
+In een [kennismaking van 30 minuten](/contact/) kijken we samen naar je site. Daarna krijg je
+een vaste prijs, zonder nacalculatie. De nabespreking, één [hercontrole](/hercontrole/) binnen
+4 maanden en het dashboard zitten erin.
 
-In de prijs zitten ook een nabespreking en één [hercontrole](/hercontrole/). In de
-nabespreking lopen we het rapport samen door en helpen we prioriteren. De hercontrole binnen
-4 maanden legt vast dat je bevindingen zijn opgelost, en dat is het bewijs dat je nodig hebt
-voor je toegankelijkheidsverklaring.
-
-Meer over de opbouw lees je in het artikel
-[wat een toegankelijkheidsaudit kost](/blog/wat-kost-een-toegankelijkheidsaudit/).
+[Hoe de prijs van een audit is opgebouwd](/blog/wat-kost-een-toegankelijkheidsaudit/)
 
 {{< /kolom-tekst >}}
 
@@ -222,30 +150,46 @@ Meer over de opbouw lees je in het artikel
 
 {{< /section-tweekolom >}}
 
-{{< section-cards id="onafhankelijk" columns="3" bg="light" title="Waarom een onafhankelijk bureau?" >}}
-{{< section-card title="We bouwen zelf niets" >}}
+{{< section-full title="Onafhankelijk, en met de hand getest" id="werkwijze" >}}
 
-Proper Access bouwt en beheert geen websites. We keuren dus nooit ons eigen werk en we hebben
-geen belang bij een uitkomst. Opdrachtgevers als het Rijksmuseum, NRC, de provincies Noord- en
-Zuid-Holland en de gemeenten Amersfoort en Alkmaar schakelen ons daarom in naast hun eigen
-bouwer.
+Proper Access bouwt en beheert zelf geen websites. We keuren dus nooit ons eigen werk. Sinds
+2019 deden we ruim 950 audits.
+
+We toetsen volgens WCAG-EM, met schermlezer, alleen toetsenbord en zoom tot 400%. Elk rapport
+wordt door drie mensen bekeken: dat noemen we het 6-ogen-principe. Hoe een audit verloopt,
+van steekproef tot hercontrole, lees je op [zo werken wij](/zo-werken-wij/).
+
+Vergelijk je nog bureaus? Lees [waar je op let bij het kiezen van een auditbureau](/auditbureau-kiezen/).
+
+{{< /section-full >}}
+
+{{< section-cards id="welk-onderzoek" columns="2" bg="light" title="Past een andere audit beter?" >}}
+{{< section-card title="Contentaudit" >}}
+
+Als je alleen de redactie zelf beheert. Kan alleen als de techniek ook is onderzocht.
+
+[Lees over de contentaudit →](/contentaudit/)
 
 {{< /section-card >}}
-{{< section-card title="Je ziet vooraf wat je krijgt" >}}
+{{< section-card title="Techniek- of systeemaudit" >}}
 
-Een deel van onze rapporten is openbaar. Je kunt dus lezen hoe een bevinding bij ons is
-opgeschreven en welke taal we gebruiken, voordat je iets afspreekt.
+Voor softwareleveranciers die hun klanten een toegankelijk platform leveren.
 
-[Bekijk een voorbeeldrapport →](#voorbeeldrapporten)
+[Lees over de techniekaudit →](/techniekaudit/)
 
 {{< /section-card >}}
-{{< section-card title="We denken mee bij het oplossen" >}}
+{{< section-card title="App-audit" >}}
 
-Wil je tijdens het oplossen kunnen overleggen, dan kan dat met een strippenkaart. Eén strip is
-één vraag over één onderwerp: alternatieven bekijken, code reviewen of
-tussentijds testen.
+Voor iOS- en Android-apps, getest op echte toestellen met VoiceOver en TalkBack.
 
-[Lees over de strippenkaart →](/strippenkaart/)
+[Lees over de app-audit →](/app-toegankelijkheid-testen/)
+
+{{< /section-card >}}
+{{< section-card title="Mini-audit" >}}
+
+€ 495. Een senior auditor benoemt in maximaal 5 uur de grootste knelpunten.
+
+[Lees over de mini-audit →](/webshop-quickscan/)
 
 {{< /section-card >}}
 {{< /section-cards >}}
