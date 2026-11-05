@@ -21,6 +21,9 @@
        faq_title    vervangt de kop, ook in de donkerblauwe standaardvariant.
        faq_style    "flat" zet de FAQ op wit met hairlines in plaats van donkerblauw.
        faq_eyebrow  label boven de kop, alleen in de flat-variant.
+     paginanav    staat dit veld er, dan krijgt de sectie id="vragen" als doel voor de
+                  balk "Op deze pagina". Niet altijd: sommige pagina's hebben dat id al
+                  op een andere sectie.
 
      Een answer mag meerdere alinea's hebben: zet \n\n in de YAML-string. Daarom
      RenderString met display block en niet markdownify, want markdownify haalt de
@@ -30,7 +33,7 @@
 {{ $container := .container | default "hp-container" }}
 {{ with $page.Params.faqs }}
 {{ $flat := eq $page.Params.faq_style "flat" }}
-<section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}">
+<section class="hp-faq{{ if $flat }} hp-faq--flat{{ end }}"{{ if $page.Params.paginanav }} id="vragen"{{ end }}>
   <div class="{{ $container }}">
     {{ if $flat }}
     <div class="hp-faq__header">

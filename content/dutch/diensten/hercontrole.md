@@ -43,6 +43,14 @@ trust:
     - "Bewijs voor status A"
     - "Onafhankelijke beoordeling"
     - "Per element rapport"
+
+paginanav:
+  - { label: "Wat we controleren", id: "controle" }
+  - { label: "Welke audits", id: "welke-audits" }
+  - { label: "Prijs", id: "prijs" }
+  - { label: "Wanneer", id: "wanneer" }
+  - { label: "Wat we tegenkomen", id: "onderweg" }
+  - { label: "Wat het oplevert", id: "resultaat" }
 ---
 
 {{< section-full >}}
@@ -53,7 +61,7 @@ Een hercontrole beantwoordt beide vragen. We lopen elke eerdere bevinding na, ki
 
 {{< /section-full >}}
 
-{{< section-full title="Wat we precies controleren" bg="light" >}}
+{{< section-full title="Wat we precies controleren" id="controle" bg="light" >}}
 
 We pakken dezelfde steekproef erbij die we in de oorspronkelijke audit hebben gebruikt. Per bevinding controleren we drie dingen:
 
@@ -65,7 +73,7 @@ Aan het einde krijg je een aangepast rapport, met de status van elke eerdere bev
 
 {{< /section-full >}}
 
-{{< section-full title="Voor welk type audit?" >}}
+{{< section-full title="Voor welk type audit?" id="welke-audits" >}}
 
 We doen hercontroles op alle audits die we eerder hebben uitgevoerd. Het type hercontrole volgt het type oorspronkelijke audit: een contentaudit krijgt een content-hercontrole, een systeemaudit krijgt een systeem-hercontrole.
 
@@ -73,7 +81,7 @@ We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniek
 
 {{< /section-full >}}
 
-{{< section-full title="Wat een hercontrole kost" bg="light" >}}
+{{< section-full title="Wat een hercontrole kost" id="prijs" bg="light" >}}
 
 De eerste hercontrole zit in de prijs van de audit. Je plant hem binnen 4 maanden na de oplevering van het rapport.
 
@@ -83,7 +91,7 @@ Heb je je audit vóór 23 oktober 2026 besteld? Dan geldt je offerte van toen, e
 
 {{< /section-full >}}
 
-{{< section-full title="Wanneer plan je het in?" >}}
+{{< section-full title="Wanneer plan je het in?" id="wanneer" >}}
 
 Onze richtlijn is binnen twaalf weken na oplevering van het oorspronkelijke rapport. Hoe langer je wacht, hoe meer er op de website verandert: nieuwe content, nieuwe componenten, een nieuwe release. Op een gegeven moment is de oude steekproef niet meer representatief en heeft een hercontrole geen zin meer. Duurt het oplossen bij jullie langer dan twaalf weken, overleg dan even; het hoeft geen harde grens te zijn.
 
@@ -91,7 +99,7 @@ Werk je naar een EAA- of BDTO-deadline toe? Plan de hercontrole dan al in op het
 
 {{< /section-full >}}
 
-{{< section-full title="Wat we onderweg tegenkomen" bg="light" >}}
+{{< section-full title="Wat we onderweg tegenkomen" id="onderweg" bg="light" >}}
 
 Een hercontrole is niet alleen een afvinklijst. We komen vrijwel altijd dingen tegen die we moeten benoemen.
 
@@ -103,7 +111,7 @@ We schrijven dat allemaal op. Het doel is geen mooi rapport, het doel is dat je 
 
 {{< /section-full >}}
 
-{{< section-full title="Wat een hercontrole oplevert" >}}
+{{< section-full title="Wat een hercontrole oplevert" id="resultaat" >}}
 
 Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief werkt aan toegankelijkheid. Een audit laat zien wat er fout is. Een hercontrole laat zien dat je het hebt opgelost. Samen vormen ze het bewijspakket dat je in je verklaring opneemt.
 

@@ -1,0 +1,105 @@
+{{/* Inhoudsnavigatie binnen de pagina, onder de trust bar.
+
+     Front matter:
+       paginanav:
+         - label: "Prijzen"
+           id: "prijzen"
+
+     Aanroepen met de pagina als context, direct onder de trust bar:
+       in een layout: partial "pagina-nav.html" .
+       in de content: de shortcode pagina-nav (tussen dubbele accolades)
+     Zonder paginanav rendert dit niets. Elk id moet als id op een sectie van de
+     pagina staan.
+
+     Vanaf 48rem plakt de balk onder de sticky header. Op mobiel niet: de links lopen
+     daar over meerdere regels en een plakkende balk zou dan een groot deel van het
+     scherm afdekken. De hoogte van de header wordt gemeten, omdat die op smalle
+     schermen over twee regels kan lopen. */}}
+{{ with .Params.paginanav }}
+<nav class="pn" aria-label="Op deze pagina">
+  <div class="pn__binnen">
+    <p class="pn__label" aria-hidden="true">Op deze pagina</p>
+    <ul class="pn__lijst">
+      {{ range . }}
+      <li><a class="pn__link" href="#{{ .id }}">{{ .label }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .pn {
+    background: #fff;
+    border-bottom: 1px solid rgba(31,41,55,0.22);
+    z-index: 40;
+  }
+  .pn__binnen {
+    max-width: 1240px; margin: 0 auto; padding-left: 24px; padding-right: 24px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px;
+    padding-top: 8px; padding-bottom: 8px;
+  }
+  .pn__label {
+    margin: 0; font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif;
+    font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+    color: #A30D4B;
+  }
+  .pn__lijst {
+    display: flex; flex-wrap: wrap; gap: 0 4px;
+    margin: 0; padding: 0; list-style: none;
+  }
+  .pn .pn__link {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px;
+    font-family: "Plus Jakarta Sans", "Nunito Sans", sans-serif; font-weight: 700; font-size: 15px;
+    color: #1F2937; text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+  .pn .pn__link:hover { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.3em; }
+  .pn .pn__link:focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; }
+  .pn .pn__link[aria-current="true"] { color: #A30D4B; border-bottom-color: #A30D4B; }
+
+  @media (min-width: 48rem) {
+    .pn { position: sticky; top: var(--pn-top, 67px); }
+    /* Doelen van de links landen onder header en balk, en een element dat focus
+       krijgt verdwijnt er niet onder (WCAG 2.4.11). */
+    html { scroll-padding-top: calc(var(--pn-top, 67px) + var(--pn-hoogte, 62px) + 16px); }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+</style>
+
+<script>
+  (function () {
+    var nav = document.querySelector('.pn');
+    if (!nav) return;
+    var header = document.querySelector('.hm');
+    var root = document.documentElement;
+    var links = Array.prototype.slice.call(nav.querySelectorAll('.pn__link'));
+    var doelen = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+
+    function meet() {
+      root.style.setProperty('--pn-top', (header ? header.offsetHeight : 0) + 'px');
+      root.style.setProperty('--pn-hoogte', nav.offsetHeight + 'px');
+    }
+
+    var gepland = false;
+    function markeer() {
+      gepland = false;
+      var grens = nav.getBoundingClientRect().bottom + 24;
+      var actief = -1;
+      doelen.forEach(function (el, i) {
+        if (el && el.getBoundingClientRect().top <= grens) actief = i;
+      });
+      links.forEach(function (a, i) {
+        if (i === actief) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
+    }
+    function plan() { if (!gepland) { gepland = true; requestAnimationFrame(markeer); } }
+
+    meet(); markeer();
+    window.addEventListener('resize', function () { meet(); plan(); });
+    window.addEventListener('scroll', plan, { passive: true });
+  })();
+</script>
+{{ end }}
