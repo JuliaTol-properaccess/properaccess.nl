@@ -123,6 +123,16 @@ Test je een app? Dan stellen we een aparte steekproef en een apart rapport op pe
 
 {{< /section-full >}}
 
+{{< section-full title="Waarom een steekproef genoeg is" >}}
+
+We krijgen geregeld de vraag of tien pagina's genoeg zijn op een site met tweeduizend URL's. In
+ruim 950 audits sinds 2019 zagen we dat de problemen vrijwel altijd in de templates zitten. Een
+pagina toevoegen die dezelfde template gebruikt, levert dan dezelfde bevinding nog een keer op.
+Die tijd besteed je beter aan het uitwerken van oplossingen. Zitten er uitzonderingen tussen,
+zoals een kaartmodule of een pdf-viewer, dan nemen we die er apart bij.
+
+{{< /section-full >}}
+
 {{< section-cta >}}
 
 ## Klaar voor stap 1?

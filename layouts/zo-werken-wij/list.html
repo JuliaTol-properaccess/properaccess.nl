@@ -66,6 +66,17 @@
   </div>
 </section>
 
+<!-- ─── Achtergrond: methode en begrippen, uit de front matter ─── -->
+{{ with .Params.achtergrond }}
+<section class="zwj-intro">
+  <div class="container">
+    <div class="zwj-intro__inner">
+      {{ $.RenderString (dict "display" "block") . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- ─── CTA ─── -->
 {{ partial "call-to-action.html" . }}
 
