@@ -1,0 +1,71 @@
+{{/*
+  Inschrijfsectie voor de whitepaper "Toegankelijke content voor webredacties" (november 2026).
+
+  Gebruik: {{< whitepaper-aanmelding >}}
+  Optioneel: bron="..." (standaard whitepaper-content-pa), id="..." (anker, standaard whitepaper),
+  bg="grijs" voor een lichtgrijze ondergrond, cover="ja" voor de variant met de voorkant van de
+  whitepaper links in een grijs kader (trainingspagina webredactie, ontwerp Julia november 2026).
+
+  Levering is een directe download: na een gelukte verzending verschijnt de link in het
+  statusgebied en krijgt hij de focus. Er gaat geen mail naar de inzender.
+  Het formulier gaat via paFormSubmit (static/js/form-submit.js, in de footer) naar de
+  pipedrive-forms-Worker. Validatie en de downloadlink staan in static/js/whitepaper-aanmelding.js,
+  de stijl onder "WHITEPAPER-AANMELDING" in assets/css/custom.css.
+
+  Het vinkje nieuws_akkoord staat nooit vooraf aan (besluit Julia, 5 november 2026). Zonder
+  vinkje gebruiken we het adres alleen voor de whitepaper.
+*/}}
+{{ $bron := .Get "bron" | default "whitepaper-content-pa" }}
+{{ $id := .Get "id" | default "whitepaper" }}
+{{ $pdf := "/downloads/toegankelijke-content-voor-webredacties.pdf" }}
+{{ $cover := eq (.Get "cover") "ja" }}
+<section class="wpa{{ if eq (.Get "bg") "grijs" }} wpa--grijs{{ end }}{{ if $cover }} wpa--cover{{ end }}" id="{{ $id }}" aria-labelledby="{{ $id }}-kop">
+  <div class="wpa__wrap">
+    {{ if $cover }}
+    <div class="wpa__cover" role="img" aria-label="Voorkant van de whitepaper Toegankelijke content voor webredacties">
+      <div class="wpa__cover-achter"></div>
+      <div class="wpa__cover-voor">
+        <span class="wpa__cover-merk">PROPER ACCESS</span>
+        <span class="wpa__cover-label">Whitepaper</span>
+        <span class="wpa__cover-titel">Toegankelijke content voor webredacties</span>
+        <span class="wpa__cover-balk"></span>
+      </div>
+    </div>
+    <div class="wpa__rechts">
+    {{ end }}
+    <div class="wpa__tekst">
+      <p class="wpa__label">Gratis whitepaper</p>
+      <h2 class="wpa__kop" id="{{ $id }}-kop">Toegankelijke content voor webredacties</h2>
+      <p>Welke fouten in content kom je het vaakst tegen, en hoe herstel je ze zelf? Per fout lees je wie er last van heeft en hoe je hem met WCAG Radar vindt. Daarna zie je hoe je hem in je editor oplost. De whitepaper telt 24 pagina's.</p>
+      <ul class="wpa__lijst">
+        <li>Koppen, alt-teksten, linkteksten en tabellen</li>
+        <li>Voorbeelden van vóór en na, met schermafdrukken van WCAG Radar</li>
+        <li>Een checklist van één pagina om naast je editor te leggen</li>
+      </ul>
+    </div>
+    <div class="wpa__kaart">
+      <form class="wpa__form" novalidate data-wpa-form data-bron="{{ $bron }}" data-pdf="{{ $pdf }}">
+        {{/* Honeypot. Geen aria-hidden: display:none verbergt hem al, en de Radar meldt aria-hidden op een veld als fout. */}}
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="{{ $id }}-email">E-mailadres (verplicht)</label>
+          <input class="hp-form__input" type="email" id="{{ $id }}-email" name="email" required autocomplete="email" aria-describedby="{{ $id }}-email-fout" />
+          <p class="wpa__fout" id="{{ $id }}-email-fout" hidden></p>
+        </div>
+        <div class="hp-form__field">
+          <label class="hp-form__label" for="{{ $id }}-naam">Naam</label>
+          <input class="hp-form__input" type="text" id="{{ $id }}-naam" name="naam" autocomplete="name" />
+        </div>
+        <div class="wpa__vinkje">
+          <input type="checkbox" id="{{ $id }}-nieuws" name="nieuws_akkoord" value="ja" />
+          <label for="{{ $id }}-nieuws">Stuur me af en toe nieuws over toegankelijke content</label>
+        </div>
+        <p class="wpa__privacy">Zonder vinkje gebruiken we je e-mailadres alleen voor deze whitepaper. Meer hierover lees je in onze <a href="/privacyverklaring/">privacyverklaring</a>.</p>
+        <button type="submit" class="wpa__knop">Ontvang de whitepaper</button>
+        <div class="wpa__status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+    {{ if $cover }}</div>{{ end }}
+  </div>
+</section>
+<script src="{{ "js/whitepaper-aanmelding.js" | relURL }}" defer></script>

@@ -21369,3 +21369,83 @@ pre.chroma {
 @media (prefers-reduced-motion: reduce) { .ca-finding__toggle { transition: none; } }
 .ca-finding__img { width: 100%; height: auto; border: 1px solid var(--ca-line); border-radius: 0.75rem; }
 .ca-finding__h { font-size: 1.0625rem; font-weight: 700; color: var(--ca-navy); margin-top: 0.75rem; }
+
+/* ════════════════════════════════════════════════════════════════════
+   WHITEPAPER-AANMELDING, november 2026
+   Shortcode: layouts/shortcodes/whitepaper-aanmelding.html
+   Script: static/js/whitepaper-aanmelding.js
+   Eigen klassen, zodat de sectie ook buiten /contentaudit/ werkt.
+   Contrast op wit: navy #1F2937 14,7:1, magenta #A30D4B 7,5:1,
+   grijs #4A5463 7,7:1, foutrood #b91c1c 6,5:1.
+   ════════════════════════════════════════════════════════════════════ */
+.wpa { padding: 6rem 0; background: #fff; color: #1F2937; font-size: 1.0625rem; line-height: 1.6; }
+.wpa--grijs { background: #f5f5f5; }
+.wpa[id] { scroll-margin-top: 6rem; }
+.wpa p, .wpa ul, .wpa h2 { margin: 0; }
+.wpa__wrap {
+  max-width: 77.5rem; margin-inline: auto; padding-inline: 1.5rem; box-sizing: border-box;
+  display: flex; flex-wrap: wrap; gap: 3rem; align-items: flex-start;
+}
+.wpa__tekst { flex: 1 1 26rem; min-width: 0; display: flex; flex-direction: column; gap: 1.25rem; }
+.wpa__label {
+  font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #A30D4B;
+}
+.wpa__kop {
+  font-family: "Plus Jakarta Sans", "Nunito Sans", system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800;
+  hyphens: auto; overflow-wrap: anywhere;
+}
+.wpa .wpa__lijst { list-style: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.wpa__kaart {
+  flex: 1 1 22rem; min-width: 0; background: #fff; border: 1px solid #D9DDE3; border-radius: 1.25rem;
+  padding: 2rem; box-sizing: border-box;
+}
+.wpa--grijs .wpa__kaart { border-color: #fff; }
+.wpa__form { display: flex; flex-direction: column; gap: 1.25rem; }
+.wpa__fout { color: #b91c1c; font-weight: 700; font-size: 0.9375rem; }
+.wpa .hp-form__input[aria-invalid="true"] { border: 2px solid #b91c1c; }
+.wpa__vinkje { display: flex; gap: 0.75rem; align-items: flex-start; }
+.wpa__vinkje input { width: 1.5rem; height: 1.5rem; margin: 0.05rem 0 0; flex: none; accent-color: #A30D4B; }
+.wpa__privacy { font-size: 0.9375rem; color: #4A5463; }
+.wpa a { color: #A30D4B; text-decoration: underline; }
+.wpa a:hover { color: #7E0A3A; }
+.wpa a:focus-visible, .wpa__knop:focus-visible, .wpa__vinkje input:focus-visible {
+  outline: 3px solid #A30D4B; outline-offset: 3px;
+}
+.wpa__knop {
+  align-self: flex-start; min-height: 3.25rem; padding: 0 1.75rem; border: 0; border-radius: 999px;
+  background: #A30D4B; color: #fff; font-weight: 700; font-size: 1rem; cursor: pointer;
+}
+.wpa__knop:hover { background: #7E0A3A; }
+.wpa__knop:disabled { cursor: wait; }
+.wpa__status:empty { display: none; }
+.wpa__status--klaar { display: flex; flex-direction: column; gap: 0.5rem; font-weight: 600; }
+.wpa .wpa__download { font-weight: 800; }
+/* Variant cover="ja": voorkant links, tekst en formulier rechts, alles in een grijs kader. */
+.wpa--cover .wpa__wrap {
+  background: #f5f5f5; border-radius: 1.75rem; padding: 3.5rem; align-items: center; gap: 3.5rem;
+  max-width: calc(77.5rem - 3rem);
+}
+.wpa--cover .wpa__rechts { flex: 1 1 28rem; min-width: 0; display: flex; flex-direction: column; gap: 2rem; }
+.wpa--cover .wpa__tekst, .wpa--cover .wpa__kaart { flex: none; }
+.wpa--cover .wpa__kaart { border-color: #fff; }
+.wpa__cover { flex: 0 0 18.75rem; height: 23.75rem; position: relative; margin-inline: auto; }
+.wpa__cover-achter {
+  position: absolute; left: 2.125rem; top: 1.375rem; width: 15.625rem; height: 21.25rem;
+  border-radius: 0.375rem 0.875rem 0.875rem 0.375rem; background: #fff; border: 2px solid #A30D4B; transform: rotate(6deg);
+}
+.wpa__cover-voor {
+  position: absolute; left: 0.875rem; top: 0.625rem; width: 15.625rem; height: 21.25rem; box-sizing: border-box;
+  border-radius: 0.375rem 0.875rem 0.875rem 0.375rem; background: #1F2937; color: #fff; padding: 1.75rem;
+  display: flex; flex-direction: column; gap: 0.875rem; box-shadow: 0 30px 50px -20px rgba(31,41,55,0.5);
+}
+.wpa__cover-merk { font-weight: 800; font-size: 0.75rem; letter-spacing: 0.02em; }
+.wpa__cover-label { margin-top: 1.5rem; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.wpa__cover-titel { font-family: "Plus Jakarta Sans", system-ui, sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+.wpa__cover-balk { margin-top: auto; height: 6px; width: 60px; border-radius: 99px; background: #fff; }
+@media (max-width: 767px) {
+  .wpa { padding: 4rem 0; }
+  .wpa--cover .wpa__wrap { padding: 2rem 1.25rem; margin-inline: 1rem; }
+  .wpa__cover { display: none; }
+  .wpa__kaart { padding: 1.5rem; }
+}
