@@ -51,9 +51,10 @@ kolommen:
 
   - titel: "Kennis"
     links:
-      # icoon: zoek zet er het vergrootglas voor, net als in de bovenbalk.
-      # /#vraag is de assistent op de homepagina, waarmee je een pagina vindt.
-      - { naam: "Zoeken op de website", url: "/#vraag", icoon: "zoek" }
+      # /#vraag is de assistent op de homepagina. Tot 05-11-2026 heette deze link
+      # "Zoeken op de website", maar "Zoeken" in de bovenbalk opent nu het
+      # zoekvenster; twee functies achter hetzelfde woord is WCAG 3.2.4.
+      - { naam: "Stel je vraag aan de assistent", url: "/#vraag" }
       - { naam: "Digitale toegankelijkheid", url: "/digitale-toegankelijkheid/" }
       - { naam: "De European Accessibility Act", url: "/eaa/" }
       - { naam: "Toegankelijkheidsverklaring overheid", url: "/toegankelijkheidsverklaring-overheid/" }

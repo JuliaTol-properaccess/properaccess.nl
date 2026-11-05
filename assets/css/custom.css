@@ -14438,6 +14438,13 @@ html.dark .section-highlight__content li {
   white-space: nowrap;
 }
 
+/* Op de Nederlandse site is de knop een link naar WhatsApp. */
+a.pa-chat-toggle,
+a.pa-chat-toggle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .pa-chat-toggle:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(163, 13, 75, 0.4);
