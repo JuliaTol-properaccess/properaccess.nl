@@ -1,0 +1,12 @@
+{{/* Witte balk met een zin en de vier statuslabels van een hercontrole.
+     Gebruik als `extra: status-bar` in een cards-sectie; leest `status_tekst`. */}}
+{{ $s := .s }}
+<div class="lp-statusbalk">
+  <p class="lp-statusbalk__tekst">{{ $s.status_tekst | markdownify }}</p>
+  <ul class="lp-statusbalk__labels" aria-label="Mogelijke statussen">
+    <li class="lp-status lp-status--opgelost">Opgelost</li>
+    <li class="lp-status lp-status--deels">Deels opgelost</li>
+    <li class="lp-status lp-status--niet">Niet opgelost</li>
+    <li class="lp-status lp-status--nieuw">Nieuw</li>
+  </ul>
+</div>

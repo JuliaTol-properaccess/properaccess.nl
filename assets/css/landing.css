@@ -199,6 +199,119 @@
 .lp-bron ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .lp-bron a { color: var(--lp-magenta); text-decoration: underline; text-underline-offset: 0.2em; }
 
+/* ─── Statuslabels hercontrole ───
+   Geen groen of oranje: onderscheid met paletkleur, randstijl en de tekst zelf.
+   Contrast (tekst op wit en op #f5f5f5): petrol 11,4:1 / 10,4:1,
+   magenta 7,7:1 / 7,1:1, wit op navy 14,7:1. Randen hebben de tekstkleur. */
+.lp-status {
+  display: inline-block; white-space: nowrap;
+  font-family: var(--lp-kopfont); font-size: 12px; font-weight: 800; line-height: 1.4;
+  border-radius: 99px; padding: 2px 10px; border: 1.5px solid currentColor;
+  background: #fff;
+}
+.lp-status--opgelost { color: var(--lp-petrol); }
+.lp-status--deels { color: var(--lp-petrol); border-style: dashed; }
+.lp-status--niet { color: var(--lp-magenta); }
+.lp-status--nieuw { color: #fff; background: var(--lp-navy); border-color: var(--lp-navy); }
+
+/* ─── Hero-visual: hercontrolerapport ─── */
+.lp-rapport {
+  background: #fff; border: 1px solid var(--lp-rand); border-radius: 22px; overflow: hidden;
+  box-shadow: 0 30px 60px -24px rgba(31, 41, 55, 0.3);
+  font-size: 14px;
+}
+.lp-rapport__kop {
+  background: var(--lp-navy); color: #fff; padding: 16px 22px;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.lp-rapport__titel { font-family: var(--lp-kopfont); font-weight: 800; font-size: 15px; }
+.lp-rapport__aantal { font-size: 12px; color: #fff; }
+.lp-rapport__samenvatting { background: var(--lp-grijs); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.lp-rapport__balk { height: 10px; border-radius: 99px; overflow: hidden; display: flex; gap: 2px; }
+.lp-rapport__deel--opgelost { background: var(--lp-petrol); }
+.lp-rapport__deel--deels { background: repeating-linear-gradient(135deg, var(--lp-petrol) 0 3px, #fff 3px 5px); }
+.lp-rapport__deel--niet { background: var(--lp-magenta); }
+.lp-rapport__deel--nieuw { background: var(--lp-navy); }
+.lp-rapport__legenda { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; font-weight: 700; color: var(--lp-gedempt); }
+.lp-rapport__rij {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 22px; border-top: 1px solid var(--lp-grijs);
+}
+.lp-rapport__bevinding { flex: 1; display: flex; flex-direction: column; line-height: 1.35; }
+.lp-rapport__bevinding span { font-size: 12px; color: var(--lp-gedempt); }
+
+/* ─── Statusbalk onder kaarten ─── */
+.lp-statusbalk {
+  background: #fff; border-radius: 20px; padding: 28px 32px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px;
+}
+.lp-statusbalk__tekst { flex: 1 1 380px; font-weight: 600; }
+.lp-statusbalk__labels { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.lp-statusbalk .lp-status { font-size: 14px; padding: 4px 14px; }
+
+/* ─── Prijs in twee kaarten ─── */
+.lp-stapel--40 { gap: 40px; }
+.lp-prijs { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.lp-prijs__kaart { border-radius: 22px; padding: 36px; display: flex; flex-direction: column; gap: 14px; background: #fff; }
+.lp-prijs__kaart--donker { background: var(--lp-navy); color: #fff; }
+.lp-prijs__kicker {
+  font-family: var(--lp-kopfont);
+  font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--lp-magenta);
+}
+.lp-prijs__kaart--donker .lp-prijs__kicker { color: #fff; }
+.lp-prijs__bedrag { font-family: var(--lp-kopfont); font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.lp-prijs__tekst { font-size: 16px; color: var(--lp-gedempt); }
+.lp-prijs__kaart--donker .lp-prijs__tekst { color: #fff; }
+.lp-notitie {
+  background: #fff; border: 1.5px dashed var(--lp-gedempt); border-radius: 18px; padding: 22px 26px;
+  display: flex; gap: 16px; align-items: flex-start;
+  font-size: 16px; color: var(--lp-gedempt);
+}
+.lp-notitie strong { color: var(--lp-navy); }
+.lp-notitie__icoon {
+  flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--lp-grijs); color: var(--lp-magenta);
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+
+/* ─── Tijdlijn ─── */
+.lp-tijdlijn {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.lp-tijdlijn__punt { display: flex; flex-direction: column; gap: 10px; padding-right: 24px; }
+.lp-tijdlijn__markering { display: flex; align-items: center; margin-right: -24px; }
+.lp-tijdlijn__stip { flex: 0 0 auto; width: 18px; height: 18px; border-radius: 50%; background: var(--lp-navy); }
+.lp-tijdlijn__lijn { flex: 1; height: 3px; background: var(--lp-rand); }
+.lp-tijdlijn__punt--accent .lp-tijdlijn__stip { background: var(--lp-magenta); }
+.lp-tijdlijn__punt--eind .lp-tijdlijn__stip { background: var(--lp-petrol); }
+.lp-tijdlijn__punt--eind .lp-tijdlijn__lijn { display: none; }
+.lp .lp-tijdlijn__titel { margin: 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.lp-tijdlijn__tekst { font-size: 15px; color: var(--lp-gedempt); }
+
+/* ─── Som (Audit + Hercontrole = Bewijspakket) ─── */
+.lp-som-kop { display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-end; }
+.lp-som-kop .lp-kop { flex: 1 1 480px; min-width: 0; }
+.lp-som {
+  flex: 1 1 460px; min-width: 0;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+  font-family: var(--lp-kopfont); font-weight: 800; font-size: 18px;
+}
+.lp-som__term { background: var(--lp-grijs); border-radius: 14px; padding: 14px 18px; }
+.lp-som__term--accent { background: var(--lp-magenta); color: #fff; }
+.lp-som__sub { display: block; font-size: 13px; font-weight: 600; color: var(--lp-gedempt); }
+.lp-som__term--accent .lp-som__sub { color: #fff; }
+.lp-som__teken { color: var(--lp-magenta); font-size: 24px; }
+.lp-label {
+  align-self: flex-start;
+  font-family: var(--lp-kopfont);
+  font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--lp-navy); background: var(--lp-grijs); border-radius: 999px; padding: 4px 12px;
+}
+.lp-cards--rand .lp-card--label { padding: 32px; gap: 12px; border-radius: 20px; }
+.lp-slot--gewoon { font-family: inherit; font-size: inherit; font-weight: 400; letter-spacing: 0; color: var(--lp-gedempt); }
+
 /* ─── Mobiel ─── */
 @media (max-width: 47.99rem) {
   .lp-sectie { padding: 64px 0; }
@@ -210,6 +323,13 @@
   .lp-split { gap: 24px; }
   .lp-feiten__lijst { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lp-feit__getal { font-size: 32px; }
+  .lp-tijdlijn { grid-template-columns: 1fr; gap: 24px; }
+  .lp-tijdlijn__lijn { display: none; }
+  .lp-prijs { grid-template-columns: 1fr; }
+  .lp-prijs__kaart { padding: 28px 24px; }
+  .lp-prijs__bedrag { font-size: 32px; }
+  .lp-statusbalk { padding: 24px; }
+  .lp-som-kop .lp-kop, .lp-som { flex-basis: 100%; }
 }
 
 /* Na een grijze sectie staat het CTA-blok anders tegen de rand van het grijze vlak. */
