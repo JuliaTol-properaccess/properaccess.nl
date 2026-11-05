@@ -8,6 +8,9 @@
      Aanroepen met de pagina als context, direct onder de trust bar:
        in een layout: partial "pagina-nav.html" .
        in de content: de shortcode pagina-nav (tussen dubbele accolades)
+     Ook aan te roepen met een dict, als de links uit data komen:
+       partial "pagina-nav.html" (dict "items" $lijst "grijs" true)
+     waarbij $lijst items met label en id bevat. "grijs" geeft een lichtgrijze balk.
      Zonder paginanav rendert dit niets. Elk id moet als id op een sectie van de
      pagina staan.
 
@@ -15,8 +18,10 @@
      daar over meerdere regels en een plakkende balk zou dan een groot deel van het
      scherm afdekken. De hoogte van de header wordt gemeten, omdat die op smalle
      schermen over twee regels kan lopen. */}}
-{{ with .Params.paginanav }}
-<nav class="pn" aria-label="Op deze pagina">
+{{ $items := "" }}{{ $grijs := false }}
+{{ if reflect.IsMap . }}{{ $items = .items }}{{ $grijs = .grijs }}{{ else }}{{ $items = .Params.paginanav }}{{ end }}
+{{ with $items }}
+<nav class="pn{{ if $grijs }} pn--grijs{{ end }}" aria-label="Op deze pagina">
   <div class="pn__binnen">
     <p class="pn__label" aria-hidden="true">Op deze pagina</p>
     <ul class="pn__lijst">
@@ -33,6 +38,7 @@
     border-bottom: 1px solid rgba(31,41,55,0.22);
     z-index: 40;
   }
+  .pn--grijs { background: #f5f5f5; }
   .pn__binnen {
     max-width: 1240px; margin: 0 auto; padding-left: 24px; padding-right: 24px;
     display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px;
