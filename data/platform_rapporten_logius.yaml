@@ -21,8 +21,8 @@ controles:
   platform: Afvalinzamelapp
   onderzoeksbureau: Abra B.V. (Tanya van Workum, reviewer Paul van Workum)
   onderzoeksdatum: '2024-12-17'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -30,7 +30,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://bereikbaarheid.andes.nl/assets/documents/Andes_Bereikbaarheidsportaal_WCAG_2.2.pdf
@@ -38,7 +38,7 @@ controles:
   onderzoeksbureau: Stichting Accessibility (logo op voorblad)
   onderzoeksdatum: '2025-10-28'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en Colour Contrast Analyser staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -54,8 +54,8 @@ controles:
   onderzoeksbureau: Esri (intern getest)
   onderzoeksdatum: '2025-06-17'
   score: 4
-  toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De steekproef ontbreekt. Niet
-    alle browsers en programma’s hebben een versienummer.
+  toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. De steekproef ontbreekt. VoiceOver,
+    NVDA en Chrome staan er zonder versienummer in.
   punten:
     '7': nee
     '8': ja
@@ -71,7 +71,7 @@ controles:
   onderzoeksbureau: Swink (Sophie, Ralph)
   onderzoeksdatum: '2025-10-01'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver en Colour Contrast Analyser staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -87,7 +87,7 @@ controles:
   onderzoeksbureau: Cardan Technobility (Pieternel de Jonge)
   onderzoeksdatum: '2024-07-04'
   score: 7
-  toelichting: De steekproef is onvolledig. Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: De steekproef is onvolledig. Adobe Acrobat Pro DC, PAC, NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -103,7 +103,7 @@ controles:
   onderzoeksbureau: Stichting Accessibility (info@accessibility.nl, logo-template)
   onderzoeksdatum: '2024-04-18'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -118,8 +118,8 @@ controles:
   platform: BuitenBeter app
   onderzoeksbureau: Proper Access
   onderzoeksdatum: '2026-05-28'
-  score: 7
-  toelichting: De scope is onvolledig beschreven. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: De scope is onvolledig beschreven.
   punten:
     '7': ja
     '8': nvt
@@ -127,7 +127,7 @@ controles:
     '10': ja
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/ediensten-burgerzaken-centric-hercontrole/audit/
@@ -135,7 +135,7 @@ controles:
   onderzoeksbureau: Swink (Michiel, Kaylee)
   onderzoeksdatum: '2024-09-05'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Adobe Acrobat Pro DC staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -166,8 +166,8 @@ controles:
   platform: DeAfvalApp
   onderzoeksbureau: Abra (Paul van Workum, reviewer Tanya van Workum)
   onderzoeksdatum: '2024-12-28'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -175,7 +175,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsonderzoek.nl/webarchief.online/
@@ -183,7 +183,7 @@ controles:
   onderzoeksbureau: 200 OK (Jules Ernst)
   onderzoeksdatum: '2025-11-04'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -199,7 +199,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-12-23'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -215,7 +215,7 @@ controles:
   onderzoeksbureau: Expertisecentrum voor toegankelijke ICT (contact via info@accessibility.nl)
   onderzoeksdatum: '2025-08-28'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA, PAC, Adobe Acrobat Pro en Colour Contrast Analyser staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -232,7 +232,7 @@ controles:
   onderzoeksdatum: '2025-07-10'
   score: 5
   toelichting: WCAG-EM of een gelijkwaardige methode wordt niet genoemd. Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning
-    ontbreekt. De gebruikte browsers en programma’s ontbreken.
+    ontbreekt. Er staan geen browsers in. VoiceOver en NVDA staan er zonder versienummer in.
   punten:
     '7': nee
     '8': onduidelijk
@@ -281,7 +281,7 @@ controles:
   onderzoeksbureau: Expertisecentrum voor toegankelijke ICT (contact via info@accessibility.nl)
   onderzoeksdatum: '2025-05-01'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -313,7 +313,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-17'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: PAC en NVDA staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -329,7 +329,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-11-13'
   score: 6
-  toelichting: De scope is onvolledig beschreven. De steekproef is onvolledig. Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: De scope is onvolledig beschreven. De steekproef is onvolledig. NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -345,7 +345,7 @@ controles:
   onderzoeksbureau: 'Swink (onderzoeker: Julia)'
   onderzoeksdatum: '2025-05-15'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -361,7 +361,7 @@ controles:
   onderzoeksbureau: WCAG.nl (Niek Derksen)
   onderzoeksdatum: '2024-04-12'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -393,7 +393,7 @@ controles:
   onderzoeksbureau: Cardan Technobility
   onderzoeksdatum: '2024-03-15'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer. Het rapport onderzoekt nlvoorelkaar.nl, een ander platform van dezelfde leverancier.
+  toelichting: NVDA staat er zonder versienummer in. Het rapport onderzoekt nlvoorelkaar.nl, een ander platform van dezelfde leverancier.
   punten:
     '7': ja
     '8': nvt
@@ -425,7 +425,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-29'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -440,8 +440,8 @@ controles:
   platform: Hoge Nood app
   onderzoeksbureau: Cardan Technobility
   onderzoeksdatum: '2024-01-22'
-  score: 6
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken. Niet alle browsers en programma’s hebben een versienummer.
+  score: 7
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte technologieën ontbreken.
   punten:
     '7': ja
     '8': nvt
@@ -449,15 +449,15 @@ controles:
     '10': nee
     '11': nee
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.hvcgroep.nl/sites/default/files/2025-11/20251029_HVC_App_Android.pdf.pdf
   platform: HVC app
   onderzoeksbureau: Abra
   onderzoeksdatum: '2025-10-29'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -465,7 +465,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://info.ibabs.com/hubfs/3.%20iBabs/Documents/Heronderzoek%20Deelonderzoek%20Techniek%20gemeenteraad.rotterdam.nl%20WCAG%202.2.pdf
@@ -473,7 +473,7 @@ controles:
   onderzoeksbureau: Stichting Accessibility
   onderzoeksdatum: '2025-10-16'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -505,7 +505,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-08-26'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -521,8 +521,8 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk BV
   onderzoeksdatum: '2023-10-27'
   score: 5
-  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers
-    en programma’s hebben een versienummer. Het onderzoek is ouder dan 3 jaar.
+  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. De gebruikte tools
+    staan er zonder versienummer in. Het onderzoek is ouder dan 3 jaar.
   punten:
     '7': ja
     '8': onduidelijk
@@ -554,7 +554,7 @@ controles:
   onderzoeksbureau: Swink
   onderzoeksdatum: '2026-02-02'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -570,7 +570,7 @@ controles:
   onderzoeksbureau: Swink
   onderzoeksdatum: '2025-11-14'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver en NVDA staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -602,8 +602,8 @@ controles:
   onderzoeksbureau: TWIN CUBES GmbH (tester Sascha Noack)
   onderzoeksdatum: '2025-07-23'
   score: 6
-  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. De gebruikte technologieën ontbreken. Niet alle browsers en programma’s hebben een versienummer. Het rapport gaat over
-    de Duitse versie en gebruikt de BITV-test.
+  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. De gebruikte technologieën ontbreken. NVDA staat er zonder versienummer in. Het rapport gaat over de Duitse versie en
+    gebruikt de BITV-test.
   punten:
     '7': onduidelijk
     '8': nvt
@@ -667,7 +667,7 @@ controles:
   onderzoeksbureau: Swink (onderzoeker Sterre)
   onderzoeksdatum: '2026-03-10'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer. Dit is een contentonderzoek; de techniek valt buiten de scope.
+  toelichting: VoiceOver en Adobe Acrobat staan er zonder versienummer in. Dit is een contentonderzoek; de techniek valt buiten de scope.
   punten:
     '7': ja
     '8': nvt
@@ -699,7 +699,7 @@ controles:
   onderzoeksbureau: Gemeente Nijmegen (onderzoeker Els Groffen)
   onderzoeksdatum: '2025-04-17'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en Colour Contrast Analyser staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -730,8 +730,8 @@ controles:
   platform: OmgevingsAlert app
   onderzoeksbureau: Abra B.V. (onderzoeker Tanya van Workum, reviewer Paul van Workum)
   onderzoeksdatum: '2024-12-23'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -739,7 +739,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://toegankelijkheidsrapport.swink.nl/open-gemeenten-hercontrole/audit/
@@ -779,7 +779,7 @@ controles:
   onderzoeksbureau: Swink (Julia, Michiel, Mirjam)
   onderzoeksdatum: '2024-10-24'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -795,7 +795,7 @@ controles:
   onderzoeksbureau: Cardan Technobility (Gerard Copinga)
   onderzoeksdatum: '2023-12-20'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -843,7 +843,7 @@ controles:
   onderzoeksbureau: Stichting Accessibility
   onderzoeksdatum: '2023-11-29'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -875,7 +875,7 @@ controles:
   onderzoeksbureau: Cardan (Nicole de Zeeuw)
   onderzoeksdatum: '2024-08-26'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer. Onderzocht is een demo-omgeving.
+  toelichting: NVDA staat er zonder versienummer in. Onderzocht is een demo-omgeving.
   punten:
     '7': ja
     '8': nvt
@@ -891,7 +891,7 @@ controles:
   onderzoeksbureau: Cardan Technobility (Dennis van Zanten)
   onderzoeksdatum: '2023-12-01'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Adobe Acrobat Pro DC en NVDA staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -907,7 +907,7 @@ controles:
   onderzoeksbureau: Proper Access (Julia T, Julia F)
   onderzoeksdatum: '2025-04-15'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': ja
@@ -939,7 +939,7 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk BV
   onderzoeksdatum: '2024-04-08'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -955,7 +955,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-06-04'
   score: 7
-  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. Adobe Acrobat, PAC en NVDA staan er zonder versienummer in.
   punten:
     '7': deels
     '8': nvt
@@ -987,7 +987,7 @@ controles:
   onderzoeksbureau: 'Accessibility.nl (alleen af te leiden uit info@accessibility.nl en ''onze website: www.accessibility.nl'')'
   onderzoeksdatum: '2025-02-25'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1019,7 +1019,7 @@ controles:
   onderzoeksbureau: 'Accessibility.nl (alleen af te leiden uit ''onze website: www.accessibility.nl'')'
   onderzoeksdatum: '2025-10-01'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1051,7 +1051,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-07-29'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Adobe Acrobat Pro, PAC en NVDA staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1067,7 +1067,7 @@ controles:
   onderzoeksbureau: Swink
   onderzoeksdatum: '2025-09-26'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver en axe DevTools staan er zonder versienummer in.
   punten:
     '7': ja
     '8': ja
@@ -1099,7 +1099,7 @@ controles:
   onderzoeksbureau: Cardan Technobility
   onderzoeksdatum: '2024-03-07'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Adobe Acrobat Pro DC, PAC, NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1115,7 +1115,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2024-10-10'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1131,7 +1131,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-07-17'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1146,8 +1146,8 @@ controles:
   platform: Ximmio afvalapp
   onderzoeksbureau: Abra B.V.
   onderzoeksdatum: '2024-03-29'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -1155,7 +1155,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://www.digitoegankelijk.nl/sites/default/files/2025-10/Hercontrole%20toegankelijkheid.zaaksysteem.nl%20WCAG%202.2%20%28v2%29.pdf
@@ -1178,8 +1178,8 @@ controles:
   platform: Zo Gemeld app
   onderzoeksbureau: Abra
   onderzoeksdatum: '2025-01-06'
-  score: 7
-  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers en programma’s hebben een versienummer.
+  score: 8
+  toelichting: Het basisniveau van toegankelijkheidsondersteuning ontbreekt.
   punten:
     '7': ja
     '8': nvt
@@ -1187,7 +1187,7 @@ controles:
     '10': nee
     '11': ja
     '12': ja
-    '13': deels
+    '13': ja
     '14': ja
     '15': ja
 - rapport_url: https://zorgned.nl/digitoegankelijkheidsonderzoek-clientportaal-2025-9/
@@ -1196,7 +1196,7 @@ controles:
   onderzoeksdatum: '2025-10-10'
   score: 4
   toelichting: Niet duidelijk of WCAG-EM of een gelijkwaardige methode is gebruikt. Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. De scope is
-    onvolledig beschreven. De steekproef ontbreekt. De gebruikte browsers en programma’s ontbreken.
+    onvolledig beschreven. De steekproef ontbreekt. Firefox en JAWS staan er zonder versienummer in.
   punten:
     '7': onduidelijk
     '8': onduidelijk
@@ -1244,7 +1244,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-05-26'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1260,7 +1260,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-03-19'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1276,7 +1276,7 @@ controles:
   onderzoeksbureau: Stichting Accessibility (afgeleid uit info@accessibility.nl)
   onderzoeksdatum: '2024-04-18'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: VoiceOver staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1292,8 +1292,8 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2025-06-16'
   score: 6
-  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Niet alle browsers
-    en programma’s hebben een versienummer.
+  toelichting: Niet alle genoemde automatische testtools zijn gebaseerd op ACT-regels, of het rapport vermeldt dat niet. Het basisniveau van toegankelijkheidsondersteuning ontbreekt. Colour Contrast Analyser
+    en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': onduidelijk
@@ -1309,7 +1309,7 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2026-03-10'
   score: 8
-  toelichting: De gebruikte browsers en programma’s ontbreken.
+  toelichting: De browsers staan er als “meest recente versie” in. VoiceOver, NVDA en Colour Contrast Analyser staan er zonder versienummer in.
   punten:
     '7': ja
     '8': ja
@@ -1341,7 +1341,7 @@ controles:
   onderzoeksbureau: 200 OK (Jules Ernst) en Studio Lite (Pieternel de Jonge)
   onderzoeksdatum: '2026-03-05'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer. Het rapport gaat over amstelveen.nl.
+  toelichting: Colour Contrast Analyser staat er zonder versienummer in. Het rapport gaat over amstelveen.nl.
   punten:
     '7': ja
     '8': nvt
@@ -1357,7 +1357,7 @@ controles:
   onderzoeksbureau: Digitaal Toegankelijk
   onderzoeksdatum: '2026-05-13'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Colour Contrast Analyser staat er zonder versienummer in.
   punten:
     '7': ja
     '8': ja
@@ -1373,7 +1373,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-06-18'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: PAC en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1389,7 +1389,7 @@ controles:
   onderzoeksbureau: Swink
   onderzoeksdatum: '2026-07-21'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Colour Contrast Analyser en HeadingsMap staan er zonder versienummer in.
   punten:
     '7': ja
     '8': ja
@@ -1421,7 +1421,7 @@ controles:
   onderzoeksbureau: Cardan (onderzoeker Lucie Barlin)
   onderzoeksdatum: '2025-08-08'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: NVDA staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1453,7 +1453,7 @@ controles:
   onderzoeksbureau: WCAG.nl (Niek Derksen)
   onderzoeksdatum: '2024-12-12'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: Adobe Acrobat Pro DC, Colour Contrast Analyser, NVDA en VoiceOver staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1485,7 +1485,7 @@ controles:
   onderzoeksbureau: Nils Willekes (onderzoeker); geen bureau genoemd
   onderzoeksdatum: '2025-09-01'
   score: 8
-  toelichting: Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: WebAIM Contrast Checker staat er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
@@ -1533,7 +1533,7 @@ controles:
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-02-26'
   score: 7
-  toelichting: De steekproef is onvolledig. Niet alle browsers en programma’s hebben een versienummer.
+  toelichting: De steekproef is onvolledig. PAC en NVDA staan er zonder versienummer in.
   punten:
     '7': ja
     '8': nvt
