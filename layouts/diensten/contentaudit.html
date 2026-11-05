@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{/* Eigen layout voor /contentaudit/, naar het ontwerp van november 2026.
+     De inhoud staat als HTML in content/dutch/diensten/contentaudit.md, zodat
+     .Plain (llms-full.txt) en de zoekindex de tekst blijven zien. De stijlen
+     staan onder "CONTENTAUDIT" in assets/css/custom.css. */}}
+<div class="ca">
+  <div class="ca-wrap ca-crumbs">
+    {{ partial "breadcrumb.html" . }}
+  </div>
+  {{ .Content }}
+</div>
+{{ end }}
