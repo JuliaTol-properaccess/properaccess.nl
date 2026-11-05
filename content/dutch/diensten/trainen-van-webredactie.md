@@ -44,6 +44,7 @@ trust:
 paginanav:
   - { label: "Twee trainingen", id: "trainingen" }
   - { label: "Beide op één dag", id: "beide" }
+  - { label: "Whitepaper", id: "whitepaper" }
   - { label: "Aanpak", id: "aanpak" }
   - { label: "Offerte", id: "contact" }
 ---
