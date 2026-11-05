@@ -21421,7 +21421,31 @@ pre.chroma {
 .wpa__status:empty { display: none; }
 .wpa__status--klaar { display: flex; flex-direction: column; gap: 0.5rem; font-weight: 600; }
 .wpa .wpa__download { font-weight: 800; }
+/* Variant cover="ja": voorkant links, tekst en formulier rechts, alles in een grijs kader. */
+.wpa--cover .wpa__wrap {
+  background: #f5f5f5; border-radius: 1.75rem; padding: 3.5rem; align-items: center; gap: 3.5rem;
+  max-width: calc(77.5rem - 3rem);
+}
+.wpa--cover .wpa__rechts { flex: 1 1 28rem; min-width: 0; display: flex; flex-direction: column; gap: 2rem; }
+.wpa--cover .wpa__tekst, .wpa--cover .wpa__kaart { flex: none; }
+.wpa--cover .wpa__kaart { border-color: #fff; }
+.wpa__cover { flex: 0 0 18.75rem; height: 23.75rem; position: relative; margin-inline: auto; }
+.wpa__cover-achter {
+  position: absolute; left: 2.125rem; top: 1.375rem; width: 15.625rem; height: 21.25rem;
+  border-radius: 0.375rem 0.875rem 0.875rem 0.375rem; background: #fff; border: 2px solid #A30D4B; transform: rotate(6deg);
+}
+.wpa__cover-voor {
+  position: absolute; left: 0.875rem; top: 0.625rem; width: 15.625rem; height: 21.25rem; box-sizing: border-box;
+  border-radius: 0.375rem 0.875rem 0.875rem 0.375rem; background: #1F2937; color: #fff; padding: 1.75rem;
+  display: flex; flex-direction: column; gap: 0.875rem; box-shadow: 0 30px 50px -20px rgba(31,41,55,0.5);
+}
+.wpa__cover-merk { font-weight: 800; font-size: 0.75rem; letter-spacing: 0.02em; }
+.wpa__cover-label { margin-top: 1.5rem; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.wpa__cover-titel { font-family: "Plus Jakarta Sans", system-ui, sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+.wpa__cover-balk { margin-top: auto; height: 6px; width: 60px; border-radius: 99px; background: #fff; }
 @media (max-width: 767px) {
   .wpa { padding: 4rem 0; }
+  .wpa--cover .wpa__wrap { padding: 2rem 1.25rem; margin-inline: 1rem; }
+  .wpa__cover { display: none; }
   .wpa__kaart { padding: 1.5rem; }
 }

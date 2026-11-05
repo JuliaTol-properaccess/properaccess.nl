@@ -3,7 +3,8 @@
 
   Gebruik: {{< whitepaper-aanmelding >}}
   Optioneel: bron="..." (standaard whitepaper-content-pa), id="..." (anker, standaard whitepaper),
-  bg="grijs" voor een lichtgrijze ondergrond.
+  bg="grijs" voor een lichtgrijze ondergrond, cover="ja" voor de variant met de voorkant van de
+  whitepaper links in een grijs kader (trainingspagina webredactie, ontwerp Julia november 2026).
 
   Levering is een directe download: na een gelukte verzending verschijnt de link in het
   statusgebied en krijgt hij de focus. Er gaat geen mail naar de inzender.
@@ -17,8 +18,21 @@
 {{ $bron := .Get "bron" | default "whitepaper-content-pa" }}
 {{ $id := .Get "id" | default "whitepaper" }}
 {{ $pdf := "/downloads/toegankelijke-content-voor-webredacties.pdf" }}
-<section class="wpa{{ if eq (.Get "bg") "grijs" }} wpa--grijs{{ end }}" id="{{ $id }}" aria-labelledby="{{ $id }}-kop">
+{{ $cover := eq (.Get "cover") "ja" }}
+<section class="wpa{{ if eq (.Get "bg") "grijs" }} wpa--grijs{{ end }}{{ if $cover }} wpa--cover{{ end }}" id="{{ $id }}" aria-labelledby="{{ $id }}-kop">
   <div class="wpa__wrap">
+    {{ if $cover }}
+    <div class="wpa__cover" role="img" aria-label="Voorkant van de whitepaper Toegankelijke content voor webredacties">
+      <div class="wpa__cover-achter"></div>
+      <div class="wpa__cover-voor">
+        <span class="wpa__cover-merk">PROPER ACCESS</span>
+        <span class="wpa__cover-label">Whitepaper</span>
+        <span class="wpa__cover-titel">Toegankelijke content voor webredacties</span>
+        <span class="wpa__cover-balk"></span>
+      </div>
+    </div>
+    <div class="wpa__rechts">
+    {{ end }}
     <div class="wpa__tekst">
       <p class="wpa__label">Gratis whitepaper</p>
       <h2 class="wpa__kop" id="{{ $id }}-kop">Toegankelijke content voor webredacties</h2>
@@ -51,6 +65,7 @@
         <div class="wpa__status" role="status" aria-live="polite"></div>
       </form>
     </div>
+    {{ if $cover }}</div>{{ end }}
   </div>
 </section>
 <script src="{{ "js/whitepaper-aanmelding.js" | relURL }}" defer></script>

@@ -57,6 +57,7 @@ trust:
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
 <a href="#trainingen" style="background: #A30D4B; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 16px; border-radius: 999px; padding: 0 28px; min-height: 52px; display: flex; align-items: center; gap: 10px">Bekijk de trainingen
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a href="#whitepaper" style="background: #ffffff; color: #A30D4B; text-decoration: none; font-weight: 700; font-size: 16px; border-radius: 999px; padding: 0 26px; min-height: 52px; display: flex; align-items: center; border: 1.5px solid #A30D4B">Gratis whitepaper</a>
 </div>
 </div>
 
@@ -156,6 +157,9 @@ trust:
 </div>
 </div>
 </section>
+
+<!-- WHITEPAPER -->
+{{< whitepaper-aanmelding cover="ja" >}}
 
 <!-- HANDS-ON -->
 <section style="background: #F6F7F9">
