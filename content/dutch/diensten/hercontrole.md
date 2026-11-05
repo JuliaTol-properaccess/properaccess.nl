@@ -83,7 +83,7 @@ We doen dat na een [contentaudit](/contentaudit/), een [techniekaudit](/techniek
 
 {{< section-full title="Wat een hercontrole kost" id="prijs" bg="light" >}}
 
-De eerste hercontrole zit in de prijs van de audit. Je plant hem binnen 4 maanden na de oplevering van het rapport.
+De eerste hercontrole zit in de prijs van de audit. Je plant hem binnen 12 weken na de oplevering van het rapport.
 
 Wil je daarna nog een hercontrole, dan krijg je daar een aparte offerte voor. Die prijs hangt af van het aantal bevindingen, want we lopen ze allemaal na.
 

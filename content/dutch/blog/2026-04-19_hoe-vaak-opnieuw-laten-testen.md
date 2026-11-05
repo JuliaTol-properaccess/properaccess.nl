@@ -30,7 +30,7 @@ Als vuistregel: laat je website **minimaal één keer per jaar** volledig audite
 Naast de jaarlijkse audit zijn er situaties waarin je eerder moet laten testen:
 
 ### Na het oplossen van auditbevindingen
-Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **hercontrole**: we lopen de bevindingen uit je rapport één voor één na. Bij een audit van Proper Access zit de eerste hercontrole in de prijs, als je hem binnen 4 maanden na de oplevering plant.
+Als je team de issues uit een audit heeft opgelost, wil je bevestigen dat de fixes werken. Dat is een **hercontrole**: we lopen de bevindingen uit je rapport één voor één na. Bij een audit van Proper Access zit de eerste hercontrole in de prijs, als je hem binnen 12 weken na de oplevering plant.
 
 ### Na een redesign of rebranding
 Een nieuw ontwerp betekent nieuwe componenten, nieuwe kleuren, nieuwe interactiepatronen. Laat testen voordat je live gaat, niet erna.
