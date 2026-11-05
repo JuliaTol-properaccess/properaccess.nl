@@ -19,7 +19,21 @@ const ALLOWED_ORIGINS = [
   "https://www.properaccess.nl",
   "https://properaccess.nl",
   "http://localhost:1313",
+  // Inschrijfsectie whitepaper op testtoegankelijkheid.nl (bron whitepaper-content-tt).
+  "https://testtoegankelijkheid.nl",
+  "https://www.testtoegankelijkheid.nl",
+  "http://localhost:3000",
 ];
+
+// Leesbaar onderwerp voor de notificatie, per bron.
+const BRON_ONDERWERPEN = {
+  "whitepaper-content-pa": "Whitepaper webredacties (properaccess.nl)",
+  "whitepaper-content-tt": "Whitepaper webredacties (testtoegankelijkheid.nl)",
+};
+
+// Bronnen met het vinkje nieuws_akkoord. Het vinkje staat nooit vooraf aan;
+// een formulier stuurt "ja" mee als het aangevinkt is en laat het veld anders weg.
+const BRONNEN_MET_NIEUWS_AKKOORD = ["whitepaper-content-pa", "whitepaper-content-tt"];
 
 const CRM_WEBHOOK_URL = "https://crm.properaccess.nl/api/webhooks/website-form";
 
@@ -369,6 +383,9 @@ async function sendNotificationEmail(env, data) {
   if (bron === "klacht") {
     subject = "Klacht: " + (data.naam || email);
   }
+  if (BRON_ONDERWERPEN[bron]) {
+    subject = BRON_ONDERWERPEN[bron] + ": " + (data.naam || email);
+  }
   const lines = [
     "Nieuwe inzending via de website.",
     "",
@@ -376,6 +393,12 @@ async function sendNotificationEmail(env, data) {
     "Naam: " + naam,
     "E-mail: " + email,
   ];
+  if (BRONNEN_MET_NIEUWS_AKKOORD.includes(bron) || data.nieuws_akkoord) {
+    lines.push(
+      "Nieuws over toegankelijke content: " +
+        (data.nieuws_akkoord === "ja" ? "ja, toestemming gegeven" : "nee, adres alleen voor de whitepaper")
+    );
+  }
 
   // Offerte-rekentool: herkenbaar onderwerp en nette samenvatting van de scope.
   if (bron === "offerte-audit") {

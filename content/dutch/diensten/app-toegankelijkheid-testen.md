@@ -50,6 +50,14 @@ trust:
     - Museumkaart
     - Eteck
 
+paginanav:
+  - { label: "Wat je krijgt", id: "voorbeeldrapporten" }
+  - { label: "Werkwijze", id: "werkwijze" }
+  - { label: "Ervaring", id: "ervaring" }
+  - { label: "Wat we testen", id: "wat-we-testen" }
+  - { label: "Prijs", id: "prijs" }
+  - { label: "Vragen", id: "vragen" }
+
 faqs:
   - question: "Welke richtlijnen gebruiken jullie voor apps?"
     answer: "We toetsen aan **WCAG 2.1** in combinatie met de **EN 301 549**, de Europese standaard die specifieke eisen stelt aan mobiele apps. Dat is ook de norm die de European Accessibility Act (EAA) hanteert."
@@ -95,7 +103,7 @@ TestFlight of de App Store bij iOS en via een APK of de Play Store bij Android.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Wat we in een app toetsen" subtitle="Een app valt op andere dingen om dan een website. Dit zijn de vier onderdelen waar we in elke app-audit de meeste bevindingen noteren." >}}
+{{< section-cards columns="2" bg="light" id="wat-we-testen" title="Wat we in een app toetsen" subtitle="Een app valt op andere dingen om dan een website. Dit zijn de vier onderdelen waar we in elke app-audit de meeste bevindingen noteren." >}}
 {{< section-card title="Schermlezer en labels" >}}
 
 Knoppen die als "knop" worden voorgelezen zonder te zeggen wat ze doen, iconen zonder
