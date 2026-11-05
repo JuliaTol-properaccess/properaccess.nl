@@ -1,0 +1,499 @@
+{{ define "main" }}
+{{/* Techniekaudit: eigen layout, één-op-één naar het ontwerp "Techniekaudit pagina"
+     (november 2026). Header en footer zijn die van de site. De sectie
+     "Marktoverzicht" haalt haar cijfers en rijen uit data/platform_rapporten.yaml,
+     dezelfde bron als /platform-rapporten/. */}}
+
+{{ $check := `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3134D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>` | safeHTML }}
+{{ $check22 := `<svg class="ta-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A3134D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>` | safeHTML }}
+{{ $arrow := `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>` | safeHTML }}
+
+{{/* Cijfers voor het marktoverzicht */}}
+{{ $pr := hugo.Data.platform_rapporten }}
+{{ $platformen := where $pr.rapporten "categorie" "ne" "Gedeelde websites en samenwerkingen" }}
+{{ $techniek := where $platformen "rapport_type" "Techniek" }}
+{{ $recent := slice }}
+{{ range sort $techniek "rapport_datum_iso" "desc" }}
+  {{ if and (not .geen_rapport) .afgekeurde_sc (lt (len $recent) 4) }}{{ $recent = $recent | append . }}{{ end }}
+{{ end }}
+
+<div class="ta">
+
+<!-- HERO -->
+<section class="ta-section">
+<div class="ta-container ta-hero">
+<nav aria-label="Kruimelpad" class="ta-crumbs">
+<a href="/">Home</a><span aria-hidden="true">/</span><a href="/diensten/">Diensten</a><span aria-hidden="true">/</span><span aria-current="page" class="ta-crumbs__current">Techniekaudit</span>
+</nav>
+<div class="ta-hero__grid">
+<div class="ta-hero__text">
+<span class="ta-badge">Techniek- of systeemaudit</span>
+<h1 class="ta-h1">Techniekaudit voor je platform</h1>
+<p class="ta-lead">Laat de techniek van je platform handmatig testen aan WCAG 2.2. Voor softwareleveranciers, productteams en SaaS-partijen.</p>
+<div class="ta-actions">
+<a href="#contact" class="ta-btn ta-btn--primary">Vraag een techniekaudit aan {{ $arrow }}</a>
+<a href="tel:+31855055890" class="ta-btn ta-btn--outline">Bel 085 5055 890</a>
+</div>
+<ul class="ta-hero__checks">
+<li>{{ $check }}48 van 55 succescriteria</li>
+<li>{{ $check }}Handmatig getest</li>
+<li>{{ $check }}IAAP-gecertificeerd</li>
+</ul>
+</div>
+
+<div class="ta-mock" role="img" aria-label="Illustratie: code van een formulier met drie gemarkeerde toegankelijkheidsbevindingen">
+<div class="ta-code" aria-hidden="true">
+<div class="ta-code__bar">
+<span class="ta-dot" style="background:#E0566F"></span><span class="ta-dot" style="background:#E8B04A"></span><span class="ta-dot" style="background:#4CB782"></span>
+<span class="ta-code__file">signup-form.html</span>
+</div>
+<div class="ta-code__body">
+<div><span class="c-n">1  </span><span class="c-t">&lt;form</span> <span class="c-a">class</span>=<span class="c-s">"signup"</span><span class="c-t">&gt;</span></div>
+<div class="ta-code__err"><span class="c-n">2  </span>  <span class="c-t">&lt;div</span> <span class="c-a">class</span>=<span class="c-s">"label"</span><span class="c-t">&gt;</span>E-mail<span class="c-t">&lt;/div&gt;</span></div>
+<div><span class="c-n">3  </span>  <span class="c-t">&lt;input</span> <span class="c-a">type</span>=<span class="c-s">"email"</span><span class="c-t">&gt;</span></div>
+<div class="ta-code__err"><span class="c-n">4  </span>  <span class="c-t">&lt;span</span> <span class="c-a">class</span>=<span class="c-s">"error"</span><span class="c-t">&gt;</span>Ongeldig<span class="c-t">&lt;/span&gt;</span></div>
+<div class="ta-code__err"><span class="c-n">5  </span>  <span class="c-t">&lt;div</span> <span class="c-a">onclick</span>=<span class="c-s">"send()"</span><span class="c-t">&gt;</span></div>
+<div><span class="c-n">6  </span>    Verstuur</div>
+<div><span class="c-n">7  </span>  <span class="c-t">&lt;/div&gt;</span></div>
+<div><span class="c-n">8  </span><span class="c-t">&lt;/form&gt;</span></div>
+</div>
+</div>
+<div class="ta-findings" aria-hidden="true">
+<div class="ta-findings__head"><span class="ta-findings__title">Bevindingen</span><span class="ta-pill">3</span></div>
+<div class="ta-finding"><span class="ta-finding__dot"></span><span><strong>Label niet gekoppeld</strong><span>1.3.1 · Info en relaties</span></span></div>
+<div class="ta-finding"><span class="ta-finding__dot"></span><span><strong>Foutmelding niet aangekondigd</strong><span>4.1.3 · Statusberichten</span></span></div>
+<div class="ta-finding"><span class="ta-finding__dot"></span><span><strong>Knop niet bedienbaar met toetsenbord</strong><span>2.1.1 · Toetsenbord</span></span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OP DEZE PAGINA -->
+<nav aria-label="Op deze pagina" class="ta-onpage">
+<div class="ta-container ta-onpage__inner">
+<span class="ta-onpage__label">Op deze pagina</span>
+<a href="#onderzoek">Wat we onderzoeken</a>
+<a href="#vergelijk">Techniek of systeem</a>
+<a href="#resultaat">Wat je krijgt</a>
+<a href="#marktoverzicht">Marktoverzicht</a>
+<a href="#werkwijze">Werkwijze en prijs</a>
+</div>
+</nav>
+
+<!-- INTRO -->
+<section class="ta-section">
+<div class="ta-container ta-pad ta-split">
+<div class="ta-col ta-col--520 ta-stack-20">
+<span class="ta-eyebrow">Waarom een techniekaudit</span>
+<h2 class="ta-h2 ta-h2--intro">Eén fout in je platform komt terug op iedere website van je klanten</h2>
+<p class="ta-muted">Je platform bepaalt mede of de websites van je klanten toegankelijk zijn. Een probleem in een formulier, dialoogvenster of interactief element kan op iedere implementatie terugkomen.</p>
+<p class="ta-muted">Met een techniekaudit laat je de techniek van je platform handmatig testen. Je krijgt een rapport waarmee je ontwikkelteam gericht kan verbeteren. Je klanten kunnen het rapport gebruiken als onderbouwing van het technische deel van hun eigen toegankelijkheidsonderzoek.</p>
+</div>
+<div class="ta-col ta-col--380">
+<div class="ta-facts">
+<div class="ta-fact"><span class="ta-fact__num">WCAG 2.2</span><span class="ta-fact__label">Niveau A en AA</span></div>
+<div class="ta-fact"><span class="ta-fact__num">48 / 55</span><span class="ta-fact__label">Succescriteria onderzocht</span></div>
+<div class="ta-fact"><span class="ta-fact__num">Per element</span><span class="ta-fact__label">Bevindingen per component</span></div>
+<div class="ta-fact"><span class="ta-fact__num">€ 1.995</span><span class="ta-fact__label">Vanaf, exclusief btw</span></div>
+<p class="ta-facts__foot">Voor softwareleveranciers, productteams en SaaS-partijen.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WAT WE ONDERZOEKEN -->
+<section id="onderzoek" class="ta-section ta-section--light">
+<div class="ta-container ta-pad ta-stack-48">
+<div class="ta-stack-16 ta-max-620">
+<span class="ta-eyebrow">Scope</span>
+<h2 class="ta-h2">Wat we onderzoeken</h2>
+<p class="ta-muted">We testen de techniek en interactie van je platform aan WCAG 2.2, niveau A en AA. We onderzoeken 48 van de 55 succescriteria, bijvoorbeeld:</p>
+</div>
+<ul class="ta-scope">
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></span><h3 class="ta-h3">Bediening met toetsenbord</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8"/></svg></span><h3 class="ta-h3">Focus en focusvolgorde</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="6" rx="1.5"/><path d="M3 15h10M3 19h7"/><circle cx="18" cy="17" r="3.5"/><path d="M18 15.5v1.8M18 18.8h.01"/></svg></span><h3 class="ta-h3">Formulieren en foutmeldingen</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><h3 class="ta-h3">HTML, ARIA en semantiek</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="7" width="19" height="10" rx="5"/><circle cx="16.5" cy="12" r="3"/></svg></span><h3 class="ta-h3">Interactieve componenten</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8M8 10.5h5M10.5 8v5"/></svg></span><h3 class="ta-h3">Zoom, reflow en contrast</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg></span><h3 class="ta-h3">Naam, rol en waarde</h3></li>
+<li class="ta-scope__card"><span class="ta-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span><h3 class="ta-h3">Statusberichten en dynamische content</h3></li>
+</ul>
+<div class="ta-row">
+<div class="ta-panel">
+<h3 class="ta-h3">Zo testen we</h3>
+<p class="ta-muted ta-16">Handmatig, met de hulpmiddelen die je gebruikers ook gebruiken.</p>
+<ul class="ta-chips">
+<li>Toetsenbord</li><li>NVDA</li><li>VoiceOver</li><li>Browsers</li><li>Zoom</li>
+</ul>
+</div>
+<div class="ta-panel ta-panel--dark">
+<h3 class="ta-h3">Buiten deze audit</h3>
+<p class="ta-16 ta-on-dark">Content en multimedia, bijvoorbeeld teksten, alt-teksten, ondertiteling en audiodescriptie. Daarvoor is een contentaudit nodig.</p>
+<a href="/contentaudit/" class="ta-link-white">Bekijk de contentaudit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VERGELIJK -->
+<section id="vergelijk" class="ta-section">
+<div class="ta-container ta-pad ta-stack-48">
+<div class="ta-stack-16 ta-max-720">
+<span class="ta-eyebrow">Twee varianten</span>
+<h2 class="ta-h2">Techniekaudit of systeemaudit?</h2>
+<p class="ta-muted">Bij beide varianten bespreken we vooraf welke templates, schermen en functionaliteiten je wilt laten onderzoeken.</p>
+</div>
+<div class="ta-compare">
+<div class="ta-variant">
+<div class="ta-stack-8"><h3 class="ta-variant__title">Techniekaudit</h3><p class="ta-muted">Voor één product of een deel van een platform.</p></div>
+<dl class="ta-dl">
+<div><dt>Onderzoek</dt><dd>Representatieve steekproef</dd></div>
+<div><dt>Geschikt voor</dt><dd>Eén product of deel van een platform</dd></div>
+<div><dt>Omvang</dt><dd>15 tot 24 uur</dd></div>
+<div><dt>Resultaat</dt><dd>Inzicht in de grootste knelpunten</dd></div>
+</dl>
+<a href="#contact" class="ta-btn ta-btn--primary ta-btn--sm">Kies techniekaudit</a>
+</div>
+<div class="ta-variant ta-variant--dark">
+<div class="ta-stack-8"><h3 class="ta-variant__title">Systeemaudit</h3><p class="ta-on-dark">Voor een compleet platform, met al zijn componenten.</p></div>
+<dl class="ta-dl">
+<div><dt>Onderzoek</dt><dd>Alle templates, componenten en varianten</dd></div>
+<div><dt>Geschikt voor</dt><dd>Een compleet platform</dd></div>
+<div><dt>Omvang</dt><dd>25 tot 30 uur</dd></div>
+<div><dt>Resultaat</dt><dd>Brede dekking van het platform</dd></div>
+</dl>
+<a href="#contact" class="ta-btn ta-btn--white ta-btn--sm">Kies systeemaudit</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WAT JE KRIJGT -->
+<section id="resultaat" class="ta-section ta-section--light">
+<div class="ta-container ta-pad ta-split ta-split--center">
+<div class="ta-col ta-col--480 ta-stack-20">
+<span class="ta-eyebrow">Het rapport</span>
+<h2 class="ta-h2">Wat je krijgt</h2>
+<p class="ta-muted">Je krijgt geen lange lijst met losse succescriteria. Je ziet per component wat er misgaat en wat je moet verbeteren.</p>
+<ul class="ta-list">
+<li>{{ $check22 }}Een rapport per element of component</li>
+<li>{{ $check22 }}Een user story bij iedere bevinding</li>
+<li>{{ $check22 }}Concrete voorbeelden van het probleem</li>
+<li>{{ $check22 }}Informatie waarmee je ontwikkelteam direct kan werken</li>
+<li>{{ $check22 }}Een overzicht van wat wel en niet is onderzocht</li>
+<li>{{ $check22 }}Een rapport dat je kunt delen met klanten die jouw platform gebruiken</li>
+</ul>
+</div>
+<div class="ta-col ta-col--440">
+<figure class="ta-report" aria-label="Voorbeeld van een bevinding in het rapport">
+<div class="ta-report__head"><span class="ta-report__comp">Component: Datumkiezer</span><span class="ta-report__tag">Voorbeeld</span></div>
+<div class="ta-report__body">
+<div class="ta-kv"><span class="ta-kv__k">Succescriterium</span><span class="ta-kv__v ta-strong">2.1.1 Toetsenbord · niveau A</span></div>
+<div class="ta-story"><span class="ta-kv__k ta-magenta">User story</span><span class="ta-kv__v">Als toetsenbordgebruiker wil ik een datum kunnen kiezen zonder muis, zodat ik het formulier zelfstandig kan invullen.</span></div>
+<div class="ta-kv"><span class="ta-kv__k">Probleem</span><span class="ta-kv__v ta-muted">De dagen in de kalender zijn niet bereikbaar met Tab of pijltjestoetsen.</span></div>
+<div class="ta-kv"><span class="ta-kv__k">Oplossing</span><span class="ta-kv__v ta-muted">Maak iedere dag een knop en ondersteun pijltjestoetsen binnen het raster.</span></div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- MARKTOVERZICHT -->
+<section id="marktoverzicht" class="ta-section ta-section--dark">
+<div class="ta-container ta-pad ta-split ta-split--center">
+<div class="ta-col ta-col--480 ta-stack-20">
+<span class="ta-eyebrow ta-eyebrow--dark">Marktoverzicht</span>
+<h2 class="ta-h2">Zo doen andere platformen het</h2>
+<p class="ta-on-dark">We hebben een overzicht gemaakt van alle technische rapporten die organisaties nu gebruiken in het Register van toegankelijkheidsverklaringen. Zo zie je hoe jouw concurrenten het doen.</p>
+<p class="ta-on-dark">Ook je potentiële klanten gebruiken dit overzicht om een leverancier te kiezen. Ze zien per platform de leverancier, de rapportdatum, de geldigheid en het aantal afgekeurde succescriteria.</p>
+<dl class="ta-market-stats">
+<div><dt>Platformen</dt><dd>{{ len $platformen }}</dd></div>
+<div><dt>Met een techniekrapport</dt><dd>{{ len $techniek }}</dd></div>
+<div><dt>Bijgewerkt</dt><dd class="ta-market-stats__date">{{ $pr.bijgewerkt }}</dd></div>
+</dl>
+<div class="ta-actions">
+<a href="/platform-rapporten/" class="ta-btn ta-btn--white">Bekijk het overzicht van platformrapporten {{ $arrow }}</a>
+</div>
+</div>
+<div class="ta-col ta-col--440">
+<div class="ta-market">
+<table class="ta-market__table">
+<caption>Recentste techniekrapporten in het overzicht</caption>
+<thead><tr><th scope="col">Platform</th><th scope="col">Rapportdatum</th><th scope="col">Afgekeurd</th></tr></thead>
+<tbody>
+{{ range $recent }}
+<tr>
+<th scope="row"><span class="ta-market__platform">{{ .platform }}</span>{{ with .leverancier }}{{ if ne . "onbekend" }}<span class="ta-market__lev">{{ . }}</span>{{ end }}{{ end }}</th>
+<td>{{ (time .rapport_datum_iso) | time.Format "2 Jan 2006" }}</td>
+<td>{{ .afgekeurde_sc }}</td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+<p class="ta-market__foot">Afgekeurd: het aantal succescriteria waaraan het platform niet voldoet.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ZO WERKT HET -->
+<section id="werkwijze" class="ta-section">
+<div class="ta-container ta-pad ta-stack-48">
+<div class="ta-stack-16">
+<span class="ta-eyebrow">Werkwijze</span>
+<h2 class="ta-h2">Zo werkt het</h2>
+</div>
+<ol class="ta-steps">
+<li><span class="ta-steps__num" aria-hidden="true">01</span><span class="ta-steps__text">We bespreken je product, scope en gewenste auditvariant.</span></li>
+<li><span class="ta-steps__num" aria-hidden="true">02</span><span class="ta-steps__text">We bepalen de steekproef of inventariseren de componenten van je platform.</span></li>
+<li><span class="ta-steps__num" aria-hidden="true">03</span><span class="ta-steps__text">We testen handmatig en leggen de bevindingen per element vast.</span></li>
+<li><span class="ta-steps__num" aria-hidden="true">04</span><span class="ta-steps__text">We bespreken het rapport en beantwoorden vragen van je team.</span></li>
+</ol>
+<div class="ta-price">
+<div class="ta-price__text">
+<span class="ta-eyebrow">Prijs</span>
+<span class="ta-price__amount">Vanaf circa € 1.995 <span class="ta-price__vat">exclusief btw</span></span>
+<span class="ta-muted">De definitieve prijs hangt af van de omvang van je product.</span>
+</div>
+<a href="#contact" class="ta-btn ta-btn--primary">Vraag een offerte aan{{ $arrow }}</a>
+</div>
+</div>
+</section>
+
+<!-- PAST DIT + CTA -->
+<section id="contact" class="ta-section ta-section--light">
+<div class="ta-container ta-pad ta-stack-56">
+<div class="ta-split">
+<div class="ta-col ta-col--480 ta-stack-20">
+<span class="ta-eyebrow">Voor wie</span>
+<h2 class="ta-h2">Past dit bij jouw product?</h2>
+<p class="ta-muted">Deze audit past bij je als andere organisaties jouw software, CMS, webshopplatform, widget of SaaS-product gebruiken.</p>
+<ul class="ta-chips ta-chips--white">
+<li>Software</li><li>CMS</li><li>Webshopplatform</li><li>Widget</li><li>SaaS-product</li>
+</ul>
+</div>
+<div class="ta-col ta-col--420 ta-need">
+<h3 class="ta-need__title">Wat we van je nodig hebben</h3>
+<ol class="ta-need__list">
+<li><span class="ta-need__num" aria-hidden="true">1</span>De URL van je product</li>
+<li><span class="ta-need__num" aria-hidden="true">2</span>Een korte beschrijving van de onderdelen die je wilt laten testen</li>
+</ol>
+<p class="ta-need__foot">We laten binnen twee werkdagen weten welke audit past en sturen een offerte.</p>
+</div>
+</div>
+
+<div class="ta-cta">
+<div class="ta-cta__text">
+<h2 class="ta-cta__title">Vraag een techniekaudit aan</h2>
+<p class="ta-on-dark">Bel <a href="tel:+31855055890">085 5055 890</a> of mail <a href="mailto:info@properaccess.nl">info@properaccess.nl</a>. We reageren binnen één werkdag.</p>
+</div>
+<div class="ta-actions">
+<a href="/contact/" class="ta-btn ta-btn--white">Neem contact op</a>
+<a href="/toegankelijkheidsaudit/" class="ta-btn ta-btn--ghost">Lees over de volledige audit</a>
+</div>
+</div>
+
+<div>
+<ul class="ta-stats">
+<li><span class="ta-stats__num">950+</span><span class="ta-stats__label">Websites geaudit</span></li>
+<li><span class="ta-stats__num">50+</span><span class="ta-stats__label">Apps geaudit</span></li>
+<li><span class="ta-stats__num">63</span><span class="ta-stats__label">Opdrachtgevers</span></li>
+<li><span class="ta-stats__num">40%</span><span class="ta-stats__label">Herhalingsklanten</span></li>
+</ul>
+<p class="ta-peildatum">Peildatum 7 augustus 2026</p>
+</div>
+</div>
+</section>
+
+</div>
+
+<style>
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/jetbrains-mono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+.ta{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#18202B;background:#fff;font-size:17px;line-height:1.6}
+.ta *,.ta *::before,.ta *::after{box-sizing:border-box}
+.ta h1,.ta h2,.ta h3,.ta p,.ta ul,.ta ol,.ta dl,.ta dd,.ta figure{margin:0}
+.ta ul,.ta ol{padding:0;list-style:none}
+.ta a{color:#A3134D}.ta a:hover{color:#7E0C3A}
+.ta a:focus-visible{outline:3px solid #A3134D;outline-offset:3px;border-radius:4px}
+.ta-section{background:#fff}
+.ta-section--light{background:#F6F7F9}
+.ta-section--dark{background:#1F2734;color:#fff}
+.ta-container{max-width:1240px;margin:0 auto;padding-left:24px;padding-right:24px}
+.ta-pad{padding-top:104px;padding-bottom:104px}
+.ta-split{display:flex;flex-wrap:wrap;gap:64px}
+.ta-split--center{align-items:center}
+.ta-col{min-width:0}
+.ta-col--520{flex:1 1 520px}.ta-col--480{flex:1 1 480px}.ta-col--440{flex:1 1 440px}.ta-col--420{flex:1 1 420px}.ta-col--380{flex:1 1 380px}
+.ta-stack-8,.ta-stack-16,.ta-stack-20,.ta-stack-48,.ta-stack-56{display:flex;flex-direction:column}
+.ta-stack-8{gap:8px}.ta-stack-16{gap:16px}.ta-stack-20{gap:20px}.ta-stack-48{gap:48px}.ta-stack-56{gap:56px}
+.ta-max-620{max-width:620px}.ta-max-720{max-width:720px}
+.ta-muted{color:#4A5463}.ta-16{font-size:16px}.ta-strong{font-weight:700}.ta-magenta{color:#A3134D!important}
+.ta-on-dark{color:#D3D9E1}
+.ta-eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#A3134D}
+.ta-eyebrow--dark{color:#F28AAE}
+.ta-h1{font-size:clamp(40px,5vw,64px);line-height:1.05;letter-spacing:-.035em;font-weight:800;color:#18202B}
+.ta-h2{font-size:clamp(32px,3.6vw,48px);line-height:1.1;letter-spacing:-.03em;font-weight:800;color:inherit}
+.ta-h2--intro{font-size:clamp(30px,3.4vw,42px);line-height:1.15}
+.ta-h3{font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.4;color:inherit}
+
+/* Hero */
+.ta-hero{padding-top:32px;padding-bottom:88px}
+.ta-crumbs{font-size:14px;color:#5E6877;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:48px}
+.ta .ta-crumbs a{color:#5E6877}
+.ta-crumbs__current{color:#18202B;font-weight:600}
+.ta-hero__grid{display:flex;flex-wrap:wrap;align-items:center;gap:64px}
+.ta-hero__text{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.ta-badge{align-self:flex-start;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#A3134D;background:#FBEFF4;border-radius:999px;padding:6px 14px}
+.ta-lead{font-size:20px;line-height:1.55;color:#4A5463;max-width:560px}
+.ta-actions{display:flex;flex-wrap:wrap;gap:12px}
+.ta-hero__text .ta-actions{margin-top:8px}
+.ta-btn{text-decoration:none;font-weight:700;font-size:16px;border-radius:999px;padding:0 28px;min-height:52px;display:inline-flex;align-items:center;gap:10px;line-height:1.3}
+.ta .ta-btn--primary{background:#A3134D;color:#fff}.ta .ta-btn--primary:hover{background:#7E0C3A;color:#fff}
+.ta .ta-btn--outline{background:#fff;color:#A3134D;border:1.5px solid #E3E6EB;padding:0 26px}
+.ta .ta-btn--white{background:#fff;color:#1F2734;padding:0 26px}.ta .ta-btn--white:hover{background:#F6F7F9;color:#1F2734}
+.ta .ta-btn--ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);padding:0 26px}.ta .ta-btn--ghost:hover{color:#fff;border-color:#fff}
+.ta-btn--sm{padding:0 24px;min-height:48px;margin-top:auto;align-self:flex-start}
+.ta-section--dark a:focus-visible,.ta-panel--dark a:focus-visible,.ta-variant--dark a:focus-visible,.ta-cta a:focus-visible,.ta-onpage a:focus-visible{outline-color:#fff}
+.ta-hero__checks{margin-top:16px!important;padding-top:24px!important;border-top:1px solid #E3E6EB;display:flex;flex-wrap:wrap;gap:12px 32px;font-size:15px;font-weight:600;color:#18202B}
+.ta-hero__checks li{display:flex;align-items:center;gap:8px}
+
+/* Code-illustratie */
+.ta-mock{flex:1 1 460px;min-width:0;position:relative}
+.ta-code{background:#1F2734;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(24,32,43,.35)}
+.ta-code__bar{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid #2E3847}
+.ta-dot{width:11px;height:11px;border-radius:50%}
+.ta-code__file{margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#AEB6C2;background:#2A3442;border-radius:6px;padding:3px 10px}
+.ta-code__body{padding:22px 24px 110px;font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.9;color:#C9D1DC;white-space:pre;overflow:hidden}
+.ta-code__err{background:rgba(224,86,111,.16);margin:0 -24px;padding:0 24px 0 21px;border-left:3px solid #E0566F}
+.c-n{color:#6B7686}.c-t{color:#F28AAE}.c-a{color:#9CC8F5}.c-s{color:#B9E4A6}
+.ta-findings{position:absolute;right:-8px;bottom:-40px;width:300px;max-width:80%;background:#fff;border-radius:16px;box-shadow:0 24px 50px -16px rgba(24,32,43,.35);padding:18px;display:flex;flex-direction:column;gap:12px}
+.ta-findings__head{display:flex;justify-content:space-between;align-items:center}
+.ta-findings__title{font-weight:800;font-size:14px}
+.ta-pill{font-size:12px;font-weight:700;color:#A3134D;background:#FBEFF4;border-radius:999px;padding:2px 10px}
+.ta-finding{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.4}
+.ta-finding strong{display:block}
+.ta-finding span span{color:#5E6877}
+.ta-finding__dot{flex:0 0 auto;margin-top:5px;width:8px;height:8px;border-radius:50%;background:#A3134D}
+
+/* Op deze pagina */
+.ta-onpage{background:#1F2734}
+.ta-onpage__inner{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;min-height:64px}
+.ta-onpage__label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#AEB6C2;margin-right:16px}
+.ta .ta-onpage a{color:#fff;font-weight:600;font-size:15px;text-decoration:none;padding:10px 14px;border-radius:8px}
+.ta .ta-onpage a:hover{background:#2E3847;color:#fff;text-decoration:underline}
+
+/* Intro-feiten */
+.ta-facts{background:#F6F7F9;border-radius:20px;padding:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.ta-fact{display:flex;flex-direction:column;gap:4px}
+.ta-fact__num{font-size:32px;font-weight:800;letter-spacing:-.03em;color:#A3134D;line-height:1.25}
+.ta-fact__label{font-size:14px;color:#4A5463}
+.ta-facts__foot{grid-column:1/-1;padding-top:20px;border-top:1px solid #E3E6EB;font-size:15px;font-weight:600;color:#18202B}
+
+/* Scope */
+.ta-scope{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px}
+.ta-scope__card{background:#fff;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px}
+.ta-icon{width:48px;height:48px;border-radius:12px;background:#FBEFF4;color:#A3134D;display:flex;align-items:center;justify-content:center}
+.ta-row{display:flex;flex-wrap:wrap;gap:16px}
+.ta-panel{flex:1 1 460px;min-width:0;background:#fff;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px}
+.ta-panel--dark{background:#1F2734;color:#fff;gap:12px}
+.ta-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ta-chips li{font-size:14px;font-weight:600;background:#F6F7F9;border:1px solid #E3E6EB;border-radius:999px;padding:6px 14px}
+.ta-chips--white li{background:#fff}
+.ta .ta-link-white{color:#fff;font-weight:700;font-size:16px;display:inline-flex;align-items:center;gap:8px;margin-top:auto}
+.ta .ta-link-white:hover{color:#fff}
+
+/* Vergelijk */
+.ta-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
+.ta-variant{border:1.5px solid #E3E6EB;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:24px}
+.ta-variant--dark{background:#1F2734;color:#fff;border-color:#1F2734}
+.ta-variant__title{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.25}
+.ta-dl{display:flex;flex-direction:column}
+.ta-dl>div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:16px 0;border-top:1px solid #E3E6EB}
+.ta-dl>div:last-child{border-bottom:1px solid #E3E6EB}
+.ta-dl dt{font-size:14px;font-weight:700;color:#5E6877}
+.ta-dl dd{font-weight:600}
+.ta-variant--dark .ta-dl>div{border-color:#364152}
+.ta-variant--dark .ta-dl dt{color:#AEB6C2}
+
+/* Wat je krijgt */
+.ta-list{margin-top:8px!important;display:flex;flex-direction:column;gap:14px}
+.ta-list li{display:flex;gap:12px;align-items:flex-start}
+.ta-check{flex:0 0 auto;margin-top:3px}
+.ta-report{background:#fff;border-radius:20px;box-shadow:0 24px 50px -24px rgba(24,32,43,.25);overflow:hidden}
+.ta-report__head{background:#1F2734;color:#fff;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.ta-report__comp{font-weight:700}
+.ta-report__tag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#A3134D;border-radius:999px;padding:3px 10px}
+.ta-report__body{padding:24px;display:flex;flex-direction:column;gap:18px}
+.ta-kv,.ta-story{display:flex;flex-direction:column;gap:4px}
+.ta-story{background:#FBEFF4;border-radius:12px;padding:16px}
+.ta-kv__k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5E6877}
+.ta-kv__v{font-size:15px;line-height:1.5}
+.ta-kv .ta-strong{font-size:17px}
+
+/* Marktoverzicht */
+.ta-section--dark .ta-h2{color:#fff}
+.ta-market-stats{display:flex;flex-wrap:wrap;gap:24px 40px;padding-top:8px}
+.ta-market-stats>div{display:flex;flex-direction:column-reverse;gap:2px}
+.ta-market-stats dt{font-size:14px;color:#D3D9E1}
+.ta-market-stats dd{font-size:32px;font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1.2}
+.ta-market-stats dd.ta-market-stats__date{font-size:20px;line-height:1.6}
+.ta-section--dark .ta-actions{margin-top:8px}
+.ta-market{background:#fff;color:#18202B;border-radius:20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);padding:24px;overflow-x:auto}
+.ta-market__table{width:100%;border-collapse:collapse;font-size:15px}
+.ta-market__table caption{text-align:left;font-weight:800;font-size:16px;padding-bottom:12px}
+.ta-market__table th,.ta-market__table td{text-align:left;padding:12px 8px;border-top:1px solid #E3E6EB;vertical-align:top}
+.ta-market__table thead th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5E6877;border-top:0;padding-top:4px}
+.ta-market__table td{white-space:nowrap;color:#4A5463}
+.ta-market__table td:last-child{font-weight:800;color:#A3134D;text-align:right}
+.ta-market__table thead th:last-child{text-align:right}
+.ta-market__platform{display:block;font-weight:700}
+.ta-market__lev{display:block;font-size:13px;font-weight:500;color:#5E6877}
+.ta-market__foot{font-size:13px;color:#5E6877;padding-top:12px;border-top:1px solid #E3E6EB}
+
+/* Werkwijze */
+.ta-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px}
+.ta-steps li{border:1.5px solid #E3E6EB;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.ta-steps__num{font-size:15px;font-weight:800;color:#A3134D}
+.ta-steps__text{font-size:18px;font-weight:700;line-height:1.4}
+.ta-price{background:#FBEFF4;border-radius:20px;padding:32px 36px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.ta-price__text{display:flex;flex-direction:column;gap:4px;flex:1 1 420px;min-width:0}
+.ta-price__amount{font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
+.ta-price__vat{font-size:16px;font-weight:600;color:#4A5463;letter-spacing:0}
+
+/* Contact */
+.ta-need{background:#fff;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:16px}
+.ta-need__title{font-size:20px;font-weight:800}
+.ta-need__list{display:flex;flex-direction:column;gap:12px}
+.ta-need__list li{display:flex;gap:14px;align-items:flex-start}
+.ta-need__num{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:#1F2734;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.ta-need__foot{padding-top:16px;border-top:1px solid #E3E6EB;font-weight:600}
+.ta-cta{background:linear-gradient(100deg,#1F2734 55%,#3B2440);border-radius:28px;padding:56px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px}
+.ta-cta__text{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.ta-cta__title{font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-.03em;font-weight:800}
+.ta .ta-cta__text a{color:#fff;font-weight:700}
+.ta-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px}
+.ta-stats li{background:#fff;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:4px}
+.ta-stats__num{font-size:40px;font-weight:800;letter-spacing:-.03em;color:#18202B;line-height:1.2}
+.ta-stats__label{font-size:14px;font-weight:600;color:#4A5463}
+.ta-peildatum{margin-top:16px!important;font-size:13px;color:#5E6877}
+
+/* Mobiel */
+@media (max-width:640px){
+  .ta-container{padding-left:16px;padding-right:16px}
+  .ta-pad{padding-top:64px;padding-bottom:64px}
+  .ta-split,.ta-hero__grid{gap:40px}
+  .ta-col,.ta-hero__text,.ta-mock,.ta-panel,.ta-price__text,.ta-cta__text{flex-basis:100%}
+  .ta-findings{position:static;width:auto;max-width:none;margin-top:-80px;margin-left:16px;margin-right:16px;position:relative}
+  .ta-code__body{padding-bottom:100px}
+  .ta-variant,.ta-cta{padding:28px}
+  .ta-dl>div{grid-template-columns:1fr;gap:4px}
+  .ta-facts{padding:24px}
+  .ta-fact__num{font-size:26px}
+  .ta-price{padding:28px 24px}
+  .ta-market{padding:16px}
+}
+@media (prefers-reduced-motion:no-preference){.ta-btn{transition:background-color .15s,color .15s}}
+</style>
+{{ end }}
