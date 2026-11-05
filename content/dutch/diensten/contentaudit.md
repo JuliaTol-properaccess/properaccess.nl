@@ -197,7 +197,7 @@ service:
 </div>
 </section>
 
-{{< whitepaper-aanmelding >}}
+{{< whitepaper-aanmelding cover="ja" >}}
 
 <section id="contact" class="ca-section ca-section--cta">
 <div class="ca-wrap">
