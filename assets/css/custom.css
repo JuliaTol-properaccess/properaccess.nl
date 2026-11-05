@@ -21277,7 +21277,6 @@ pre.chroma {
 .ca-checks li { display: flex; gap: 0.75rem; align-items: flex-start; }
 .ca-checks svg { color: var(--ca-magenta); margin-top: 3px; }
 .ca-checks--box {
-  padding: 1.75rem 2rem; border: 1.5px solid var(--ca-line); border-radius: 1.25rem;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr)); gap: 1rem 2rem;
 }
 .ca-checks--box li { font-weight: 600; }
@@ -21368,3 +21367,5 @@ pre.chroma {
   .ca-duo { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .ca-finding__toggle { transition: none; } }
+.ca-finding__img { width: 100%; height: auto; border: 1px solid var(--ca-line); border-radius: 0.75rem; }
+.ca-finding__h { font-size: 1.0625rem; font-weight: 700; color: var(--ca-navy); margin-top: 0.75rem; }

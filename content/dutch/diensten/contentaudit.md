@@ -174,28 +174,26 @@ service:
 <span class="ca-eyebrow">Uit het rapport</span>
 <h2 class="ca-h2">Voorbeeld van een bevinding</h2>
 </div>
-<details class="ca-finding" open>
-<summary><span>Voorbeeldbevinding: een afbeelding zonder goede alt-tekst</span><span class="ca-finding__toggle" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 15 6-6 6 6"/></svg></span></summary>
+<details class="ca-finding">
+<summary><span>#4 Een afbeelding heeft geen tekstalternatief</span><span class="ca-finding__toggle" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 15 6-6 6 6"/></svg></span></summary>
 <div class="ca-finding__body ca-stack ca-stack--sm">
-<div class="ca-finding__title">
-<h3 class="ca-h3 ca-h3--dark">#1 – Afbeelding zonder goede alternatieve tekst</h3>
-<span class="ca-tag">Hoog</span>
-</div>
 <dl class="ca-meta">
-<div><dt>Impact:</dt><dd>Hoog</dd></div>
+<div><dt>Impact:</dt><dd>Matig</dd></div>
 <div><dt>Type:</dt><dd>Content</dd></div>
 <div><dt>WCAG:</dt><dd>1.1.1</dd></div>
 <div><dt>EN:</dt><dd>9.1.1.1</dd></div>
-<div><dt>Principe:</dt><dd>Waarneembaar</dd></div>
-<div><dt>Niveau:</dt><dd>A</dd></div>
-<div><dt>Beperking:</dt><dd>Visueel</dd></div>
 </dl>
-<div class="ca-shot" aria-hidden="true">[Screenshot van de afbeelding op de pagina]</div>
-<p class="ca-muted">Op deze pagina staat een afbeelding zonder goede alternatieve tekst. Daardoor krijgt iemand die een schermlezer gebruikt niet de informatie die de afbeelding overbrengt.</p>
-<p class="ca-muted">In het rapport zie je de afbeelding, de plek op de pagina, een screenshot en een concreet voorstel voor een betere alternatieve tekst.</p>
+<p>Na het verzenden van het formulier en het geven van feedback staat er bij "Uw waardering" een afbeelding van een smiley. Deze afbeelding heeft geen tekstalternatief.</p>
+<img class="ca-finding__img" src="/rapporten/202611_koggenland.nl_content/images/3.webp" width="780" height="419" loading="lazy" alt="Schermafdruk van de WCAG Radar naast de pagina. Bij de smiley onder Uw waardering staat het label no alt attribute.">
+<h3 class="ca-finding__h">User story</h3>
+<p>Ik lees de website met een schermlezer. Bij een afbeelding zonder beschrijving leest mijn schermlezer een bestandsnaam voor. Ik verwacht dat elke afbeelding een duidelijke beschrijving heeft of als decoratie is gemarkeerd.</p>
+<h3 class="ca-finding__h">Hoe te testen</h3>
+<p>Open de WCAG Radar en zet de optie "Afbeeldingen en alt-tekst" aan. Elke afbeelding hoort een tekstalternatief te hebben. Alleen een decoratieve afbeelding zonder betekenis heeft een leeg tekstalternatief. Een informatieve afbeelding heeft een duidelijke beschrijving nodig.</p>
+<h3 class="ca-finding__h">Oplossing</h3>
+<p>De afbeelding is informatief. Geef hem een kort tekstalternatief dat zegt wat de afbeelding laat zien.</p>
 </div>
 </details>
-<a class="ca-arrowlink" href="https://audit.properaccess.nl/reports/202503_shertogenbosch_makelpunt/">Bekijk het contentauditrapport van Makelpunt<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="ca-arrowlink" href="/rapporten/202611_koggenland.nl_content/">Bekijk het contentauditrapport van gemeente Koggenland<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 </section>
 
