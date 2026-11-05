@@ -1,173 +1,215 @@
 ---
 title: "Contentaudit"
 hide_cta: true
-meta_title: "Contentaudit: alleen je content getoetst op WCAG | Proper Access"
-layout: "agency"
+meta_title: "Contentaudit voor je webredactie | Proper Access"
+layout: "contentaudit"
 weight: 4
 date: 2026-05-30
+lastmod: 2026-11-05
 slug: "contentaudit"
 url: "/contentaudit/"
-description: "We toetsen alleen de content van je website. Voor organisaties waar de techniek bij een externe leverancier ligt en jij daar niets aan kunt veranderen."
+description: "We onderzoeken de content die je redactie beheert: koppen, alt-teksten, linkteksten, PDF's en formulieren. Met uitleg in gewone taal en concrete tips."
 tldr: |
-  Een contentaudit toetst alleen de content die je webredactie zelf beheert: teksten, koppenstructuur, alt-teksten, linkteksten, taal-attributen en PDF's. We dekken 33 van de 55 succescriteria van WCAG 2.2 op niveau A en AA, met een user story per bevinding zodat de impact leesbaar blijft. Bedoeld voor organisaties waar de techniek bij een externe leverancier ligt en je daar zelf niets aan kunt veranderen. Zo staat je rapport niet vol met bevindingen die je toch niet kunt oplossen.
+  Een contentaudit onderzoekt wat je redactie aan de website heeft toegevoegd: koppen, teksten, tabellen, linkteksten, alt-teksten, PDF's en formulieren. We toetsen 33 van de 55 succescriteria van WCAG 2.2 op niveau A en AA. Je krijgt een rapport per element en per pagina, met screenshots, een user story en concrete tips bij elke bevinding. Technische problemen nemen we als informatie op, zodat je ze aan je leverancier kunt doorgeven. Bij iedere contentaudit krijg je 1 jaar toegang tot de WCAG Radar.
 keywords:
   - contentaudit wcag
   - deelonderzoek toegankelijkheid
   - content audit toegankelijkheid
   - wcag content
+  - contentonderzoek webredactie
 
 service:
   serviceType: "Contentaudit volgens WCAG 2.2"
-
-banner:
-  title: "Contentaudit"
-  content: "Alleen de content getoetst, voor overheidsorganisaties waar de techniek bij een externe leverancier ligt en je zelf alleen de redactie beheert."
-  button:
-    enable: true
-    label: "Vraag een contentaudit aan"
-    link: "/contact/"
-
-trust:
-  label: "Wat erin zit"
-  names:
-    - "33 succescriteria"
-    - "Tot 9 uur testen"
-    - "Per element rapport"
-    - "User story per bevinding"
-    - "Technische fouten als info"
 ---
 
-{{< section-full >}}
+<section class="ca-hero">
+<div class="ca-wrap ca-hero__grid">
+<div class="ca-hero__text">
+<span class="ca-pill">Contentaudit</span>
+<h1 class="ca-hero__title">Contentaudit voor je webredactie</h1>
+<p class="ca-hero__lead">Je redactie beheert de redactionele inhoud van je website. Om een toegankelijkheidsverklaring te kunnen opstellen, moet je die content laten onderzoeken in een contentonderzoek.</p>
+<p class="ca-muted">Wij onderzoeken wat je redactie aan de website heeft toegevoegd. Je krijgt uitleg in gewone taal, screenshots en concrete tips om problemen op te lossen.</p>
+<div class="ca-actions">
+<a class="ca-btn ca-btn--primary" href="#contact">Vraag een contentaudit aan<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="ca-btn ca-btn--outline" href="tel:+31855055890">Bel 085 5055 890</a>
+</div>
+</div>
+<div class="ca-mock" role="img" aria-label="Illustratie: een webpagina met drie gemarkeerde contentbevindingen: alt-tekst ontbreekt, een overgeslagen kopniveau en een onduidelijke linktekst">
+<div class="ca-mock__window" aria-hidden="true">
+<div class="ca-mock__bar"><span class="ca-mock__dot"></span><span class="ca-mock__dot"></span><span class="ca-mock__dot"></span><span class="ca-mock__url">jouwgemeente.nl/nieuws/nieuwe-bibliotheek</span></div>
+<div class="ca-mock__body">
+<div class="ca-mock__line" style="width:30%;height:14px"></div>
+<div class="ca-mock__h">Nieuwe bibliotheek open</div>
+<div class="ca-mock__img ca-mark"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5E6877" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg><span class="ca-mock__num" style="left:-10px;top:-12px">1</span></div>
+<div class="ca-mock__line"></div>
+<div class="ca-mock__line" style="width:92%"></div>
+<div class="ca-mock__sub ca-mark">Openingstijden <small>(h4)</small><span class="ca-mock__num" style="left:-16px;top:-14px">2</span></div>
+<div class="ca-mock__line" style="width:84%"></div>
+<div class="ca-mock__text">Meer informatie? <span class="ca-mock__link ca-mark">Klik hier<span class="ca-mock__num" style="right:-18px;top:-16px">3</span></span></div>
+</div>
+</div>
+<div class="ca-mock__card" aria-hidden="true">
+<span class="ca-mock__card-title">3 bevindingen op deze pagina</span>
+<span><strong>1</strong>Afbeelding zonder goede alt-tekst</span>
+<span><strong>2</strong>Kopniveau overgeslagen</span>
+<span><strong>3</strong>Linktekst zegt niet waar hij heen gaat</span>
+</div>
+</div>
+</div>
+</section>
 
-Het idee om alleen content te toetsen is ooit ontstaan uit kostenbesparende overwegingen. Vele overheidsorganisaties werken met een CMS dat door een externe leverancier wordt beheerd. De redactie heeft geen toegang tot de techniek, dus heeft het weinig zin om een volledige audit te laten doen: de helft van de bevindingen kun je toch niet zelf oplossen.
+<nav class="ca-toc" aria-label="Op deze pagina">
+<div class="ca-wrap ca-toc__inner">
+<span class="ca-toc__label">Op deze pagina</span>
+<a href="#kort">In het kort</a>
+<a href="#onderzoek">Wat onderzoeken we?</a>
+<a href="#techniek">Technische problemen</a>
+<a href="#resultaat">Wat krijg je?</a>
+<a href="#voorbeeld">Voorbeeld</a>
+</div>
+</nav>
 
-Een contentaudit beperkt zich tot wat jij wel beheert: teksten, koppenstructuur, alt-teksten op afbeeldingen, koppelteksten, taal-attributen, PDF's. Daarmee weet je waar je redactieteam aan de slag moet, zonder dat het rapport vol staat met bevindingen die bij je leverancier liggen.
+<section id="kort" class="ca-section">
+<div class="ca-wrap ca-stack">
+<div class="ca-head">
+<span class="ca-eyebrow">Overzicht</span>
+<h2 class="ca-h2">In het kort</h2>
+</div>
+<div class="ca-stats">
+<div class="ca-stat"><span class="ca-stat__value">Tot 12 uur</span><span class="ca-muted">Onderzoek en interne controle</span></div>
+<div class="ca-stat"><span class="ca-stat__value">33 / 55</span><span class="ca-muted">Succescriteria van WCAG 2.2 op niveau A en AA</span></div>
+<div class="ca-stat ca-stat--dark"><span class="ca-tag">Cadeau</span><span class="ca-stat__title">1 jaar WCAG Radar</span><span>Licentie bij iedere contentaudit</span></div>
+</div>
+<ul class="ca-checks ca-checks--box">
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Rapport per element en per pagina</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Screenshots bij de bevindingen</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Concrete tips om problemen op te lossen</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Een user story bij elke bevinding</li>
+</ul>
+</div>
+</section>
 
-{{< /section-full >}}
+<section id="onderzoek" class="ca-section ca-section--grey">
+<div class="ca-wrap ca-stack ca-stack--lg">
+<div class="ca-head ca-head--narrow">
+<span class="ca-eyebrow">Scope</span>
+<h2 class="ca-h2">Wat onderzoeken we?</h2>
+<p class="ca-muted">We toetsen onder andere:</p>
+</div>
+<ul class="ca-topics">
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5v14M12 5v14M4 12h8M16 9l3-2v12"/></svg></span>Koppen, teksten, lijsten en citaten</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M10 4v16"/></svg></span>Tabellen</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>Linkteksten</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>Alt-teksten en andere tekstalternatieven</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Interactieve presentaties, zoals Power BI</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg></span>De taal van tekstpassages in een andere taal</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg></span>Of afbeeldingen toegankelijk zijn</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg></span>Kleurgebruik en kleurcontrast</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 14h8M8 17h5"/></svg></span>PDF's</li>
+<li><span class="ca-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="6" rx="1.5"/><path d="M3 15h10M3 19h7"/><circle cx="18" cy="17" r="3.5"/><path d="M18 15.5v1.8M18 18.8h.01"/></svg></span>Formulieren, instructies en foutmeldingen</li>
+</ul>
+<div class="ca-note">
+<span class="ca-note__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 8h10M7 12h6"/><path d="M4 4h16v12H9l-5 4z"/></svg></span>
+<p>We leggen alles uit in gewone taal. Je hoeft geen technische kennis te hebben om met het rapport aan de slag te gaan.</p>
+</div>
+</div>
+</section>
 
-{{< section-full title="Wat we toetsen" bg="light" >}}
+<section id="techniek" class="ca-section">
+<div class="ca-wrap ca-split">
+<div class="ca-split__main ca-stack ca-stack--sm">
+<span class="ca-eyebrow">Afbakening</span>
+<h2 class="ca-h2">Wat gebeurt er met technische problemen?</h2>
+<p class="ca-muted">Technische problemen nemen we als informatie op, zodat je ze kunt doorgeven aan de juiste partij.</p>
+<p class="ca-muted">Tijdens dit onderzoek kijken we ook in het techniekonderzoek dat je leverancier heeft laten opstellen. Daarom vragen we je om dat technische rapport met ons te delen. Zo voorkomen we dubbele bevindingen en kunnen we beter bepalen waar een probleem thuishoort.</p>
+</div>
+<div class="ca-split__side ca-stack ca-stack--sm">
+<div class="ca-duo">
+<div class="ca-duo__item ca-duo__item--accent"><span class="ca-duo__label">Content</span><span class="ca-duo__text">Je redactie lost het op</span></div>
+<div class="ca-duo__item"><span class="ca-duo__label">Techniek</span><span class="ca-duo__text">Je geeft het door aan je leverancier</span></div>
+</div>
+<div class="ca-dark ca-stack ca-stack--sm">
+<h3 class="ca-h3">Technische platformrapporten</h3>
+<p>Om je daarbij te helpen, hebben we zelf een uitgebreide collectie van actuele technische rapporten van platforms verzameld.</p>
+<a class="ca-btn ca-btn--white" href="/platform-rapporten/">Bekijk de technische platformrapporten<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</div>
+</section>
 
-Een contentaudit dekt 33 van de 55 succescriteria van WCAG 2.2 op niveau A en AA. We toetsen alleen de content die je webredactie zelf heeft toegevoegd en in eigen hand heeft, niet de techniek eronder.
+<section id="resultaat" class="ca-section ca-section--grey">
+<div class="ca-wrap ca-split ca-split--stretch">
+<div class="ca-split__main ca-stack ca-stack--sm">
+<span class="ca-eyebrow">Het rapport</span>
+<h2 class="ca-h2">Wat krijg je?</h2>
+<p class="ca-muted">Je krijgt een rapport met:</p>
+<ul class="ca-checks ca-checks--list">
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Uitleg in gewone taal</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Screenshots van de onderzochte pagina's</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Het element waar het probleem zit</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Een user story vanuit de bezoeker</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Concrete tips om het probleem op te lossen</li>
+<li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>Informatie over de bijbehorende WCAG-eis</li>
+</ul>
+</div>
+<div class="ca-split__side ca-dark ca-dark--lg ca-stack">
+<span class="ca-tag">Inbegrepen</span>
+<h3 class="ca-h3 ca-h3--lg">1 jaar toegang tot de WCAG Radar</h3>
+<p>Met deze tool kan je webredactie zelf content testen in de browser. De Radar helpt onder andere bij:</p>
+<ul class="ca-chips">
+<li>Koppen</li>
+<li>Alt-teksten</li>
+<li>Linkteksten</li>
+<li>Formulieren</li>
+<li>Contrast</li>
+</ul>
+<a class="ca-arrowlink ca-arrowlink--light" href="/tools/wcag-radar/">Meer over de WCAG Radar<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
 
-De grens tussen content en techniek is niet altijd scherp. Een voorbeeld: kan een redacteur een `autocomplete`-attribuut toevoegen aan een invoerveld waar persoonlijke informatie wordt verzameld? In de meeste CMS-en niet, dat is werk voor een ontwikkelaar. Maar er zijn formulier-plugins waarin het inmiddels wel kan, zonder dat een redacteur de techniek hoeft aan te raken. Wat eerst een technisch probleem was, is in zo'n geval redactie-werk.
-
-Er zullen dus altijd grensgevallen zijn. We schrijven in het rapport waar we een bevinding plaatsen en waarom. Mocht de classificatie in jouw context niet kloppen, laat het ons weten, dan zetten we hem over. Beter grijs benoemd dan onterecht zwart-wit.
-
-We werken met dezelfde steekproef-aanpak als een volledige audit: een representatieve selectie pagina's volgens WCAG-EM, met de homepage, contactpagina, formulieren, processen en multimedia in elk geval erin. User stories per bevinding, rapport per element op de pagina. Lees daarover meer in [stap 3 over het rapport](/zo-werken-wij/rapport-en-bevindingen/).
-
-{{< /section-full >}}
-
-{{< section-full title="Wat we niet toetsen" >}}
-
-De andere 22 succescriteria, de criteria die over techniek en interactie gaan, laten we expliciet buiten beschouwing. Het gaat dan om:
-
-- Toetsenbordbediening en focusvolgorde
-- ARIA-rollen en -attributen
-- Focuszichtbaarheid
-- Foutmeldingen en formuliervalidatie
-- Tijdslimieten en pauzefuncties
-- Skiplinks en landmarks
-
-In het rapport krijgt elk niet-getoetst criterium de vermelding "Dit is een audit van content, daarom is dit SC niet onderzocht". Dat is belangrijk voor je toegankelijkheidsverklaring: je toezichthouder mag niet de indruk krijgen dat alles is getoetst.
-
-{{< /section-full >}}
-
-{{< section-full title="De volledige lijst" bg="light" >}}
-
-Voor wie het naadje wil weten: alle 55 succescriteria van WCAG 2.2 (niveau A en AA), per criterium of we het in een contentaudit toetsen.
-
-<details class="pa-disclosure">
-<summary>Bekijk de lijst van alle 55 succescriteria</summary>
-
-| Succescriterium | Wordt getoetst? |
-| --- | --- |
-| 1.1.1 Niet-tekstuele content | Ja |
-| 1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen) | Ja |
-| 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen) | Ja |
-| 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen) | Ja |
-| 1.2.4 Ondertitels voor doven en slechthorenden (live) | Ja |
-| 1.2.5 Audiodescriptie (vooraf opgenomen) | Ja |
-| 1.3.1 Info en relaties | Ja |
-| 1.3.2 Betekenisvolle volgorde | Ja |
-| 1.3.3 Zintuiglijke eigenschappen | Ja |
-| 1.3.4 Weergavestand | Nee |
-| 1.3.5 Identificeer het doel van de input | Ja |
-| 1.4.1 Gebruik van kleur | Ja |
-| 1.4.2 Geluidsbediening | Ja |
-| 1.4.3 Contrast (minimum) | Ja |
-| 1.4.4 Herschalen van tekst | Nee |
-| 1.4.5 Afbeeldingen van tekst | Ja |
-| 1.4.10 Reflow | Ja |
-| 1.4.11 Contrast van niet-tekstuele content | Ja |
-| 1.4.12 Tekstafstand | Nee |
-| 1.4.13 Content bij hover of focus | Nee |
-| 2.1.1 Toetsenbord | Nee |
-| 2.1.2 Geen toetsenbordval | Ja |
-| 2.1.4 Enkel teken sneltoetsen | Ja |
-| 2.2.1 Timing aanpasbaar | Nee |
-| 2.2.2 Pauzeren, stoppen, verbergen | Ja |
-| 2.3.1 Drie flitsen of beneden drempelwaarde | Ja |
-| 2.4.1 Blokken omzeilen | Nee |
-| 2.4.2 Paginatitel | Ja |
-| 2.4.3 Focus volgorde | Nee |
-| 2.4.4 Linkdoel (in context) | Ja |
-| 2.4.5 Meerdere manieren | Nee |
-| 2.4.6 Koppen en labels | Ja |
-| 2.4.7 Focus zichtbaar | Nee |
-| 2.4.11 Focus niet volledig bedekt (WCAG 2.2) | Nee |
-| 2.5.1 Aanwijzergebaren | Nee |
-| 2.5.2 Aanwijzerannulering | Nee |
-| 2.5.3 Label in naam | Ja |
-| 2.5.4 Bewegingsactivering | Nee |
-| 2.5.7 Sleepbewegingen (WCAG 2.2) | Nee |
-| 2.5.8 Doelgebied grootte (WCAG 2.2) | Ja |
-| 3.1.1 Taal van de pagina | Ja |
-| 3.1.2 Taal van onderdelen | Ja |
-| 3.2.1 Bij focus | Nee |
-| 3.2.2 Bij input | Nee |
-| 3.2.3 Consistente navigatie | Nee |
-| 3.2.4 Consistente identificatie | Ja |
-| 3.2.6 Consistente hulp (WCAG 2.2) | Nee |
-| 3.3.1 Foutidentificatie | Ja |
-| 3.3.2 Labels of instructies | Ja |
-| 3.3.3 Foutsuggestie | Ja |
-| 3.3.4 Foutpreventie (wettelijk, financieel, gegevens) | Nee |
-| 3.3.7 Overtollige invoer (WCAG 2.2) | Ja |
-| 3.3.8 Toegankelijke authenticatie (WCAG 2.2) | Nee |
-| 4.1.2 Naam, rol, waarde | Ja |
-| 4.1.3 Statusberichten | Nee |
-
-**Totaal:** 33 van de 55 succescriteria worden in een contentaudit getoetst.
-
+<section id="voorbeeld" class="ca-section">
+<div class="ca-wrap ca-wrap--narrow ca-stack">
+<div class="ca-head">
+<span class="ca-eyebrow">Uit het rapport</span>
+<h2 class="ca-h2">Voorbeeld van een bevinding</h2>
+</div>
+<details class="ca-finding" open>
+<summary><span>Voorbeeldbevinding: een afbeelding zonder goede alt-tekst</span><span class="ca-finding__toggle" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 15 6-6 6 6"/></svg></span></summary>
+<div class="ca-finding__body ca-stack ca-stack--sm">
+<div class="ca-finding__title">
+<h3 class="ca-h3 ca-h3--dark">#1 – Afbeelding zonder goede alternatieve tekst</h3>
+<span class="ca-tag">Hoog</span>
+</div>
+<dl class="ca-meta">
+<div><dt>Impact:</dt><dd>Hoog</dd></div>
+<div><dt>Type:</dt><dd>Content</dd></div>
+<div><dt>WCAG:</dt><dd>1.1.1</dd></div>
+<div><dt>EN:</dt><dd>9.1.1.1</dd></div>
+<div><dt>Principe:</dt><dd>Waarneembaar</dd></div>
+<div><dt>Niveau:</dt><dd>A</dd></div>
+<div><dt>Beperking:</dt><dd>Visueel</dd></div>
+</dl>
+<div class="ca-shot" aria-hidden="true">[Screenshot van de afbeelding op de pagina]</div>
+<p class="ca-muted">Op deze pagina staat een afbeelding zonder goede alternatieve tekst. Daardoor krijgt iemand die een schermlezer gebruikt niet de informatie die de afbeelding overbrengt.</p>
+<p class="ca-muted">In het rapport zie je de afbeelding, de plek op de pagina, een screenshot en een concreet voorstel voor een betere alternatieve tekst.</p>
+</div>
 </details>
+<a class="ca-arrowlink" href="https://audit.properaccess.nl/reports/202503_shertogenbosch_makelpunt/">Bekijk het contentauditrapport van Makelpunt<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</section>
 
-{{< /section-full >}}
-
-{{< section-full title="Altijd in combinatie met een techniekonderzoek" >}}
-
-Wij voeren contentaudits alleen uit als er ook een onderzoek van de techniek bestaat, door ons of door iemand anders. Een toegankelijkheidsverklaring met status A vraagt om bewijs dat de hele website is getoetst, niet alleen de redactie-laag. Een contentaudit op zichzelf zou daarom een halve verklaring opleveren, en daar helpen we je niet mee.
-
-Komen we tijdens de contentaudit een technisch probleem tegen, dan controleren we eerst of het al in het techniekonderzoek staat. Zo ja, dan vermelden we het niet opnieuw: geen dubbele bevinding in je dossier. Zo nee, dan nemen we het op in het contentrapport, duidelijk gemarkeerd als technisch, zodat je het bij de juiste partij neer kunt leggen.
-
-{{< /section-full >}}
-
-{{< section-full title="Hoe regel je een techniekonderzoek?" bg="light" >}}
-
-Twee veelvoorkomende routes:
-
-- **Check of er al een techniekaudit van jouw platform bestaat.** In het [overzicht van technische rapporten van platformen](/platform-rapporten/) staan bestaande rapporten van CMS-en, platforms en apps. Vraag het anders na bij je leverancier; veel softwarepartijen laten zelf hun product toetsen en kunnen het rapport aan jou leveren. Dit is de meest voorkomende route bij overheidsorganisaties.
-- **Neem contact op met de leverancier van het platform.** Als het goed is, staat in je inkoopvoorwaarden dat je geen digitale producten mag kopen als een technisch rapport ontbreekt. Mocht een rapport toch ontbreken, breng ons dan in contact met de leverancier. We kunnen in opdracht van de leverancier een [techniekonderzoek](/techniekaudit/) uitvoeren.
-
-Welke route past, leggen we per mail vast tijdens de scope-fase. Lees over [hoe we scope en steekproef bepalen](/zo-werken-wij/steekproef-en-scope/).
-
-{{< /section-full >}}
-
-{{< section-cta >}}
-
-## Klaar voor een contentaudit?
-
-Stuur ons een mail met de URL van je website en wat je rol is in de organisatie. Binnen twee werkdagen sturen we een offerte met scope, steekproef en prijs.
-
-[Stuur ons een mail](/contact/) · [Lees over de volledige audit](/toegankelijkheidsaudit/)
-
-{{< /section-cta >}}
+<section id="contact" class="ca-section ca-section--cta">
+<div class="ca-wrap">
+<div class="ca-cta">
+<div class="ca-cta__text ca-stack ca-stack--sm">
+<h2 class="ca-h2 ca-h2--cta">Wil je weten wat je redactie zelf kan verbeteren?</h2>
+<p>Stuur de URL van je website en vertel welke rol je hebt. We sturen je een voorstel met de scope, de steekproef en de prijs.</p>
+</div>
+<div class="ca-cta__actions">
+<a class="ca-btn ca-btn--white" href="/contact/">Vraag een contentaudit aan<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="ca-cta__phone" href="tel:+31855055890">Of bel 085 5055 890</a>
+</div>
+</div>
+</div>
+</section>
