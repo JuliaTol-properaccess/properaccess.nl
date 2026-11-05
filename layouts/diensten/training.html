@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{/* Training webredactie: naar het ontwerp van Julia (november 2026).
+     De secties staan als HTML in content/dutch/diensten/trainen-van-webredactie.md,
+     zodat .Plain en llms-full.txt de tekst blijven zien. */}}
+<style>
+.pa-training{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#18202B;background:#fff;font-size:17px;line-height:1.6}
+.pa-training h1,.pa-training h2,.pa-training h3{color:inherit;font-family:inherit}
+.pa-training a{color:#A30D4B}
+.pa-training a:hover{color:#7E0C3A}
+.pa-training a:focus-visible{outline:3px solid #A30D4B;outline-offset:3px}
+.pa-training section[style*="#1F2937"] a:focus-visible,.pa-training div[style*="#1F2937 55%"] a:focus-visible{outline-color:#fff}
+.pa-training section[id]{scroll-margin-top:6rem}
+@media (max-width:47.99rem){.pa-training section>div{padding-top:64px!important;padding-bottom:64px!important}.pa-training div[style*="padding: 56px"],.pa-training div[style*="padding: 40px"]{padding:32px 20px!important}.pa-training div[style*="minmax(340px"]{grid-template-columns:1fr!important}}
+</style>
+<div class="pa-training">
+{{ .Content }}
+</div>
+{{ end }}
