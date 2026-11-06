@@ -47,12 +47,12 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?"
-    answer: "Proper Access doet dat. We toetsen websites, ticketingsystemen, evenementenkalenders, digitale collecties en apps van culturele instellingen volgens WCAG-EM, de evaluatiemethode van het W3C, aan WCAG 2.2 niveau AA. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde."
+    answer: "Bij Proper Access toetsen we websites, ticketingsystemen, evenementenkalenders, digitale collecties en apps van culturele instellingen volgens WCAG-EM, de evaluatiemethode van het W3C, aan WCAG 2.2 niveau AA. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde."
 ---
 
-{{< section-full title="Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?" id="wie-doet-het-onderzoek" >}}
+{{< section-full title="Toegankelijkheidsonderzoek voor een museum of theater" id="wie-doet-het-onderzoek" >}}
 
-Proper Access doet dat. We toetsen de website, het ticketingsysteem, de evenementenkalender, de
+Bij Proper Access toetsen we de website, het ticketingsysteem, de evenementenkalender, de
 digitale collectie en de app van culturele instellingen, handmatig aan WCAG 2.2 niveau AA en
 volgens WCAG-EM, de evaluatiemethode van het W3C. Een senior auditor voert het onderzoek uit,
 een tweede auditor doet de interne review.

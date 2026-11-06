@@ -62,7 +62,7 @@ faqs:
 translationKey: "financiele-instellingen"
 ---
 
-{{< section-tweekolom title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}
+{{< section-tweekolom title="Toetsen van een bank of verzekeraar op de European Accessibility Act" id="welk-bureau" >}}
 {{< kolom-tekst >}}
 Bij Proper Access toetsen we websites, klantportalen en apps van financiële dienstverleners handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM. Een senior auditor voert de audit uit, een tweede auditor doet de interne review, en elk rapport wordt door drie mensen bekeken. We bouwen en beheren zelf geen websites of apps, dus we keuren nooit ons eigen werk.
 
