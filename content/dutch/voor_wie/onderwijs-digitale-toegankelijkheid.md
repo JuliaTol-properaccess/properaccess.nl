@@ -7,7 +7,7 @@ date: 2026-03-07
 slug: "onderwijs-digitale-toegankelijkheid"
 url: "/onderwijs-digitale-toegankelijkheid/"
 layout: "landing"
-description: "Kunnen al je studenten bij de lesstof? We testen digitale leeromgevingen, LMS-platformen en e-learningmodules op WCAG. Meer dan 950 audits sinds 2019."
+description: "We testen leeromgeving, toetsomgeving en e-learning met de hand, zoals een student met een beperking ze gebruikt. Per onderdeel lees je hoe je het oplost."
 keywords:
   - digitale toegankelijkheid onderwijs
   - WCAG audit leeromgeving
