@@ -36,9 +36,16 @@ trust:
     - "Toetsenbordnavigatie"
     - "Focusmanagement"
     - "Screenreader-testen"
+paginanav:
+  - label: "Waarom deze training"
+    id: "waarom"
+  - label: "Wat je leert"
+    id: "wat-je-leert"
+  - label: "Voor wie"
+    id: "voor-wie"
 ---
 
-{{< section-full title="Waarom deze training?" >}}
+{{< section-full title="Waarom deze training?" id="waarom" >}}
 
 - **Praktisch en technisch**: ontwikkelvaardigheden in semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en contrastoptimalisatie
 - **Gegeven door IAAP-gecertificeerde auditors** met ervaring in WCAG-EM audits en toegankelijke development in de praktijk
@@ -47,7 +54,7 @@ trust:
 
 {{< /section-full >}}
 
-{{< section-cards title="Wat leer je in deze training?" columns="2" bg="light" >}}
+{{< section-cards title="Wat leer je in deze training?" id="wat-je-leert" columns="2" bg="light" >}}
 {{< section-card title="Semantiek en toegankelijke UI" >}}
 
 Correct gebruik van HTML-structuur en ARIA-toepassingen voor WCAG-conformiteit.
@@ -78,7 +85,7 @@ Binnen 2 werkdagen een offerte op maat. Of bel direct.
 
 {{< /section-cta >}}
 
-{{< section-full title="Voor wie is deze training?" >}}
+{{< section-full title="Voor wie is deze training?" id="voor-wie" >}}
 
 - **Front-end developers en full-stack teams** die technisch de diepte in willen
 - **Agencies** die toegankelijkheidskennis willen integreren in hun dienstenaanbod

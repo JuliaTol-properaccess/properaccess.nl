@@ -45,6 +45,9 @@
 <!-- ─── TRUST BAR ─── -->
 {{ partial "trust-bar.html" . }}
 
+<!-- ─── OP DEZE PAGINA ─── -->
+{{ partial "pagina-nav.html" . }}
+
 
 <!-- ─── PAIN POINT / AGENCY ─── -->
 <section class="hp-pain">
@@ -314,7 +317,7 @@
 
 
 <!-- ─── HOW IT WORKS ─── -->
-<section class="hp-how">
+<section class="hp-how" id="werkwijze">
   <div class="hp-container">
 
     <div class="hp-how__header">
@@ -453,7 +456,7 @@
 
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+<section class="hp-faq" id="vragen">
   <div class="hp-container">
     <h2 class="hp-heading-lg hp-faq__title">Vragen die we vaak krijgen van agencies</h2>
     <div class="hp-faq__container faq-container">

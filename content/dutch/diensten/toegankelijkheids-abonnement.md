@@ -36,9 +36,16 @@ trust:
     - "Trainingen"
     - "Onbeperkt tools"
     - "Vaste contactpersoon"
+paginanav:
+  - label: "Partner voor je portfolio"
+    id: "portfolio"
+  - label: "Wat is inbegrepen"
+    id: "inbegrepen"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
-{{< section-full title="Een partner voor je hele portfolio" >}}
+{{< section-full title="Een partner voor je hele portfolio" id="portfolio" >}}
 
 Bij het abonnement krijg je een vaste partner die al je websites en apps kent. We stellen samen een meerjarenplanning op: welke sites worden wanneer geaudit, wanneer zijn hertoetsen nodig, en hoe houd je alles op koers. Jij houdt je bezig met je organisatie, wij houden het overzicht over de toegankelijkheid.
 
@@ -50,7 +57,7 @@ Bij het abonnement krijg je een vaste partner die al je websites en apps kent. W
 
 {{< /section-full >}}
 
-{{< section-cards title="Trainingen en tools: inbegrepen" columns="2" bg="light" >}}
+{{< section-cards title="Trainingen en tools: inbegrepen" id="inbegrepen" columns="2" bg="light" >}}
 {{< section-card title="Training devteam" >}}
 
 Semantische HTML, ARIA, toetsenbordnavigatie, focusmanagement en testen met screenreaders. Gebaseerd op jullie eigen code, geen generieke slides.
@@ -87,7 +94,7 @@ Benieuwd wat een abonnement voor jouw organisatie kan betekenen? Neem contact op
 
 {{< /section-cta >}}
 
-{{< section-full title="Veelgestelde vragen" >}}
+{{< section-full title="Veelgestelde vragen" id="vragen" >}}
 
 <details class="faq-item">
 <summary class="faq-question">Voor wie is het abonnement bedoeld?</summary>

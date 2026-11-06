@@ -60,6 +60,19 @@ faqs:
   - question: "Toetsen jullie aan WCAG 2.1 of WCAG 2.2?"
     answer: "Aan WCAG 2.2 niveau AA. De norm onder de EAA is EN 301 549, en die staat in versie V3.2.1 op WCAG 2.1 niveau A en AA. WCAG 2.2 bevat alles uit 2.1 plus negen nieuwe criteria, waaronder toegankelijke authenticatie. De AFM schrijft in haar EAA-update van april 2026 dat ondernemingen nu al naar de nieuwe criteria van WCAG 2.2 moeten toewerken. Wij toetsen er al aan, als extra service boven de geldende norm."
 translationKey: "financiele-instellingen"
+paginanav:
+  - label: "Valt je organisatie eronder?"
+    id: "valt-mijn-organisatie-eronder"
+  - label: "Traject"
+    id: "traject"
+  - label: "Wat we toetsen"
+    id: "wat-we-toetsen"
+  - label: "Welk bureau"
+    id: "welk-bureau"
+  - label: "Stappenplan"
+    id: "stappenplan"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
 {{< section-tweekolom title="Welk bureau toetst een bank of verzekeraar op de European Accessibility Act?" id="welk-bureau" >}}

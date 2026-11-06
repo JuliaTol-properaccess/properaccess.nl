@@ -47,6 +47,9 @@
 <!-- ─── TRUST BAR ─── -->
 {{ partial "trust-bar.html" . }}
 
+<!-- ─── OP DEZE PAGINA ─── -->
+{{ partial "pagina-nav.html" . }}
+
 
 <!-- ─── PAIN / AFM ─── -->
 <section class="hp-pain">
@@ -327,7 +330,7 @@
 </section>
 
 <!-- ─── WAT WE TOETSEN (tabs) ─── -->
-<section class="hp-diff fin-tabs-section">
+<section class="hp-diff fin-tabs-section" id="wat-we-toetsen">
   <div class="hp-container">
     <div class="hp-diff__header">
       <h2 class="hp-diff__title">Wat we toetsen bij een financi&euml;le dienstverlener</h2>
@@ -546,7 +549,7 @@
 
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+<section class="hp-faq" id="vragen">
   <div class="hp-container">
     <h2 class="hp-heading-lg hp-faq__title">Vragen die financi&euml;le dienstverleners ons stellen</h2>
     <div class="hp-faq__container faq-container">

@@ -66,6 +66,17 @@ vp_framework:
   button:
     label: "Bekijk een voorbeeldrapport"
     link: "/toegankelijkheidsonderzoek/#voorbeeldrapporten"
+paginanav:
+  - label: "Welke wet geldt"
+    id: "welke-wet"
+  - label: "Wat we zien"
+    id: "wat-we-zien"
+  - label: "Toegankelijkheidsverklaring"
+    id: "verklaring"
+  - label: "Waarom Proper Access"
+    id: "waarom-proper-access"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
 {{< section-full title="Digitaal onderwijs is pas inclusief als iedereen erbij kan" >}}
@@ -81,7 +92,7 @@ Onderwijsinstellingen investeren miljoenen in digitale leeromgevingen, toetssyst
 
 {{< /section-full >}}
 
-{{< section-split title="Welke wet voor jou geldt" bg="light" >}}
+{{< section-split title="Welke wet voor jou geldt" bg="light" id="welke-wet" >}}
 
 - Ben je een **overheidsinstantie of een publiekrechtelijke instelling**, dan geldt het Besluit digitale toegankelijkheid overheid (BDTO), en dat besluit geldt sinds 2018
 - Ben je dat niet en bied je digitale diensten aan, dan geldt de European Accessibility Act (EAA), sinds 28 juni 2025
@@ -93,7 +104,7 @@ Achter beide wetten ligt dezelfde standaard. Wat [digitale toegankelijkheid](/di
 
 {{< /section-split >}}
 
-{{< section-cards title="Dit zien we bij elke onderwijsinstelling" columns="2" bg="light" >}}
+{{< section-cards title="Dit zien we bij elke onderwijsinstelling" id="wat-we-zien" columns="2" bg="light" >}}
 {{< section-card title="Toetsen die niet werken met hulpsoftware" >}}
 
 De toetsomgeving is het meest kritieke onderdeel. Studenten moeten onder tijdsdruk presteren, en dan werkt de timer niet met een screenreader, zijn multiple-choice vragen niet gekoppeld aan hun antwoordopties, of sluit een pop-up niet met Escape.
@@ -124,7 +135,7 @@ Benieuwd hoe jouw digitale leeromgeving scoort? Vraag een mini-audit aan (495 eu
 
 {{< /section-cta >}}
 
-{{< section-highlight title="Toegankelijkheidsverklaring nodig?" bg="light" image="/images/pages/tool-verklaring-wdo.svg" alt="Illustratie van de toegankelijkheidsverklaring-tool" >}}
+{{< section-highlight title="Toegankelijkheidsverklaring nodig?" id="verklaring" bg="light" image="/images/pages/tool-verklaring-wdo.svg" alt="Illustratie van de toegankelijkheidsverklaring-tool" >}}
 
 Val je onder het Besluit digitale toegankelijkheid overheid, dan heeft elk digitaal kanaal een eigen verklaring nodig in het Register van Toegankelijkheidsverklaringen: je website, je leeromgeving, je studentportaal en je apps. Wat daarin telt:
 
@@ -148,7 +159,7 @@ Inmiddels kennen we zo'n 150 verschillende systemen, van maatwerkframeworks tot 
 
 {{< /section-full >}}
 
-{{< section-cards title="Waarom Proper Access voor onderwijs?" columns="2" bg="dark" >}}
+{{< section-cards title="Waarom Proper Access voor onderwijs?" id="waarom-proper-access" columns="2" bg="dark" >}}
 {{< section-card title="We kennen de techniek achter je platform" >}}
 
 Andere bureaus testen de voorkant. Wij begrijpen de achterkant. We weten of een probleem in je thema zit, in een plugin, of in de core van je leeromgeving. Dat scheelt je IT-afdeling weken zoekwerk.
@@ -180,7 +191,7 @@ Zodra je rapport er ligt, spreek je rechtstreeks met de auditor die het geschrev
 {{< /section-cta >}}
 
 
-{{< section-full title="Veelgestelde vragen" >}}
+{{< section-full title="Veelgestelde vragen" id="vragen" >}}
 
 <details class="faq-item">
 <summary class="faq-question">Kunnen jullie ons LMS auditen, of alleen de website?</summary>

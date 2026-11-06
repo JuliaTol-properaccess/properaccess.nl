@@ -3,7 +3,7 @@
 {{ $photos := .Get "photos" }}
 {{ $contact := .Get "contact" }}
 
-<section class="section-split{{ if eq $bg "light" }} section-split--light{{ end }}">
+<section class="section-split{{ if eq $bg "light" }} section-split--light{{ end }}"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
   <div class="hp-container">
     <div class="section-split__grid">
       <div class="section-split__content">
