@@ -20,6 +20,15 @@ keywords:
 
 service:
   serviceType: "Contentaudit volgens WCAG 2.2"
+trust:
+  label: "Vertrouwd door overheidsorganisaties"
+  names:
+    - "Provincie Noord-Holland"
+    - "Provincie Zuid-Holland"
+    - "IPO"
+    - "Gemeente Amersfoort"
+    - "Gemeente Alkmaar"
+    - "Gemeente 's-Hertogenbosch"
 paginanav:
   - label: "In het kort"
     id: "kort"
@@ -68,6 +77,8 @@ paginanav:
 </div>
 </div>
 </section>
+
+{{< trust-bar >}}
 
 {{< pagina-nav >}}
 

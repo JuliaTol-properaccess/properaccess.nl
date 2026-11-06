@@ -21149,6 +21149,8 @@ pre.chroma {
 .ca a:hover { color: var(--ca-magenta-dark); }
 .ca a:focus-visible, .ca summary:focus-visible { outline: 3px solid var(--ca-magenta); outline-offset: 3px; }
 .ca svg { flex: 0 0 auto; }
+/* Trust bar staat binnen .ca; .ca p zet de marge onder het label anders op 0. */
+.ca .hp-trust__label { margin-bottom: 0.5rem; }
 
 .ca-wrap { max-width: 77.5rem; margin-inline: auto; padding-inline: 1.5rem; box-sizing: border-box; }
 .ca-wrap--narrow { max-width: 60rem; }
