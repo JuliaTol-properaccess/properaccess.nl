@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Faal als een rapportpagina geen noindex heeft.
 
+Controleert static/rapporten/ en static/rapport/.
+
 Rapporten mogen niet in de zoekmachines staan. Dat regelen we met
 <meta name="robots" content="noindex, follow"> in de <head> van elke rapportpagina,
 en niet met een Disallow in robots.txt: een geblokkeerde URL kan gewoon in de index
@@ -23,19 +25,22 @@ import re
 import sys
 from pathlib import Path
 
-RAP = Path(__file__).resolve().parent.parent / "static" / "rapporten"
+STATIC = Path(__file__).resolve().parent.parent / "static"
+# /rapporten/ voor de oudere rapporten, /rapport/ sinds 6 november 2026 voor de nieuwe.
+MAPPEN = [STATIC / "rapporten", STATIC / "rapport"]
 
 
 def main() -> int:
-    if not RAP.is_dir():
-        print(f"map niet gevonden: {RAP}")
+    if not MAPPEN[0].is_dir():
+        print(f"map niet gevonden: {MAPPEN[0]}")
         return 1
 
     ontbreekt: list[Path] = []
     fragmenten = 0
     gecontroleerd = 0
 
-    for f in sorted(RAP.rglob("*.html")):
+    bestanden = sorted(f for m in MAPPEN if m.is_dir() for f in m.rglob("*.html"))
+    for f in bestanden:
         tekst = f.read_text(encoding="utf-8", errors="ignore")
         if not re.search(r"<head", tekst, re.I):
             fragmenten += 1
@@ -48,7 +53,7 @@ def main() -> int:
     if ontbreekt:
         print(f"{len(ontbreekt)} rapportpagina's zonder noindex in de <head>:")
         for f in ontbreekt:
-            print(f"  {f.relative_to(RAP.parent.parent)}")
+            print(f"  {f.relative_to(STATIC.parent)}")
         print()
         print('Voeg toe: <meta name="robots" content="noindex, follow">')
         return 1
