@@ -1,0 +1,130 @@
+{{ define "main" }}
+{{/* Testen tijdens de bouw: naar het ontwerp van Julia (november 2026).
+     De secties staan als HTML in content/dutch/diensten/toegankelijkheid-testen-tijdens-de-bouw.md,
+     zodat .Plain en llms-full.txt de tekst blijven zien. Header en footer zijn die van de site. */}}
+<style>
+.tb{color:#1F2937;background:#fff;font-size:17px;line-height:1.55}
+.tb *{box-sizing:border-box}
+.tb h1,.tb h2,.tb h3{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;color:inherit;text-wrap:pretty}
+.tb a{color:#A30D4B}
+.tb a:hover{color:#004050}
+.tb a:focus-visible{outline:3px solid #A30D4B;outline-offset:2px;border-radius:4px}
+.tb-dark a:focus-visible{outline-color:#fff}
+.tb section[id]{scroll-margin-top:6rem}
+.tb-wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.tb-sec{padding:96px 0}
+.tb-dark{background:#1F2937;color:#fff}
+.tb-grey{background:#F5F5F5}
+.tb-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#A30D4B}
+.tb-dark .tb-eyebrow{color:#FF66A0}
+.tb-h2{font-size:clamp(32px,4vw,40px);letter-spacing:-1px;line-height:1.08;margin:12px 0 16px}
+.tb-intro{max-width:720px;margin-bottom:48px}
+.tb-intro p{font-size:17px;color:#374151;margin:0}
+.tb-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px}
+.tb-card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:24px}
+/* Hero */
+.tb-hero{background:linear-gradient(180deg,#fff 0%,#F5F5F5 100%);padding-top:56px}
+.tb-crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:#4B5563;font-weight:600}
+.tb .tb-crumbs a{color:#4B5563;text-decoration:none}
+.tb .tb-crumbs a:hover{color:#A30D4B}
+.tb-hero .tb-cols{align-items:end;margin-top:40px}
+.tb-badge{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#A30D4B}
+.tb-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#A30D4B;box-shadow:0 0 0 4px rgba(163,13,75,0.2)}
+.tb-h1{font-size:clamp(40px,6vw,64px);line-height:1.02;letter-spacing:-2px;margin:16px 0 20px}
+.tb-h1 span{color:#A30D4B}
+.tb-lead{font-size:19px;line-height:1.5;color:#374151;max-width:600px;margin:0 0 28px}
+.tb-lead b{color:#1F2937}
+.tb-actions{display:flex;gap:12px;flex-wrap:wrap}
+.tb .tb-btn{display:inline-flex;align-items:center;min-height:48px;text-decoration:none;font-weight:700;font-size:16px;padding:12px 24px;border-radius:8px;border:2px solid #A30D4B;background:#A30D4B;color:#fff}
+.tb .tb-btn:hover{background:#8C0B40;border-color:#8C0B40;color:#fff}
+.tb .tb-btn--outline{background:#fff;color:#1F2937;border-color:#1F2937}
+.tb .tb-btn--outline:hover{background:#1F2937;border-color:#1F2937;color:#fff}
+.tb-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tb-stat__num{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:48px;letter-spacing:-1.5px;line-height:1;color:#A30D4B}
+.tb-stat__label{font-size:15px;color:#374151;margin-top:10px;line-height:1.4}
+.tb-stat--wide{grid-column:span 2;background:#1F2937;border-color:#1F2937;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.tb-stat--wide .tb-stat__num{color:#FF66A0}
+.tb-stat--wide .tb-stat__label{color:#fff;margin:0}
+.tb-strip{margin-top:56px;background:#fff;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
+.tb-strip ul{list-style:none;margin:0 auto;max-width:1200px;padding:20px 32px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 16px;font-size:14px;font-weight:600;color:#374151}
+.tb-strip li+li::before{content:"·";color:#6B7280;margin-right:16px}
+.tb-strip li:first-child{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;color:#1F2937}
+/* Werkwijze */
+.tb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px;list-style:none;margin:0;padding:0}
+.tb-step{display:flex;gap:16px;transition:border-color .15s}
+.tb-step:hover{border-color:#A30D4B}
+.tb-step__nr{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:14px;color:#A30D4B;min-width:22px;line-height:1.6}
+.tb-step h3{font-size:18px;letter-spacing:-0.3px;margin:0 0 6px}
+.tb-step p{margin:0;font-size:15px;line-height:1.5;color:#374151}
+/* Wat je krijgt */
+.tb-dark .tb-cols{gap:64px;align-items:center}
+.tb-dark .tb-intro-p{font-size:17px;color:rgba(255,255,255,0.82);margin:0 0 28px}
+.tb-parts{list-style:none;padding:0;margin:0}
+.tb-parts li{display:flex;gap:16px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.14)}
+.tb-parts li:last-child{border-bottom:1px solid rgba(255,255,255,0.14)}
+.tb-parts__nr{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;color:#FF66A0;min-width:22px}
+.tb-parts span:last-child{color:rgba(255,255,255,0.82)}
+.tb-parts b{color:#fff}
+.tb-finding{margin:0;background:#fff;color:#1F2937;border-radius:16px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,0.35);transform:rotate(-0.8deg)}
+.tb-finding__head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.tb-finding__title{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:18px;letter-spacing:-0.3px}
+.tb-pills{display:flex;gap:6px}
+.tb-pill{padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(163,13,75,0.1);color:#A30D4B}
+.tb-pill--sec{background:rgba(0,64,80,0.1);color:#004050}
+.tb-finding__label{margin-top:12px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#4B5563}
+.tb-finding code{font-family:'JetBrains Mono',ui-monospace,monospace}
+.tb-finding__loc{display:block;margin-top:4px;font-size:13px;background:#F5F5F5;border-radius:6px;padding:8px 10px;color:#1F2937}
+.tb-story{display:flex;gap:14px;align-items:flex-start;margin-top:14px;padding:14px;background:rgba(163,13,75,0.06);border-left:6px solid #A30D4B;border-radius:6px}
+.tb-story__icon{width:40px;height:40px;flex-shrink:0;border-radius:50%;background:#A30D4B;color:#fff;display:flex;align-items:center;justify-content:center}
+.tb-story__label{font-size:10px;letter-spacing:2px;color:#A30D4B;font-weight:700;text-transform:uppercase}
+.tb-story__text{font-style:italic;font-size:14px;line-height:1.45;margin-top:4px}
+.tb-meta{display:flex;flex-wrap:wrap;gap:6px 14px;background:#F5F5F5;border-radius:8px;padding:10px 12px;margin-top:12px;font-size:12px;color:#374151}
+.tb-meta b{color:#1F2937}
+.tb-fix{margin-top:12px;background:#1F2937;border-radius:8px;padding:12px 14px;color:#fff}
+.tb-fix__label{font-size:10px;font-weight:800;letter-spacing:2px;color:#FF66A0;text-transform:uppercase}
+.tb-fix__text{font-size:13px;line-height:1.5;margin-top:6px}
+.tb-fix code{background:rgba(255,255,255,0.14);padding:2px 6px;border-radius:5px;font-size:12px;color:#FF66A0}
+/* Sprint */
+.tb-sprint .tb-cols{align-items:start}
+.tb-sprint .tb-h2{margin-bottom:0}
+.tb-sprint__text{display:flex;flex-direction:column;gap:16px;padding-top:8px}
+.tb-sprint__text p{font-size:19px;color:#374151;margin:0;text-wrap:pretty}
+.tb-sprint__text b{color:#1F2937}
+/* Opbrengst */
+.tb-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;list-style:none;margin:0;padding:0}
+.tb-benefits .tb-card{padding:28px}
+.tb-benefits h3{font-size:22px;letter-spacing:-0.4px;margin:18px 0 8px}
+.tb-benefits p{margin:0;font-size:15px;color:#374151}
+/* Contact */
+.tb-contact{background-color:#1F2937;background-image:radial-gradient(circle at 90% 0%,rgba(163,13,75,0.55),transparent 45%),radial-gradient(circle at 0% 100%,rgba(0,64,80,0.45),transparent 45%);padding:100px 0}
+.tb-contact .tb-cols{gap:56px;align-items:center}
+.tb-contact .tb-h2{font-size:clamp(32px,4vw,44px);margin-bottom:18px}
+.tb-contact__lead{font-size:17px;color:rgba(255,255,255,0.82);margin:0;max-width:480px}
+.tb-person{background:#fff;color:#1F2937;border-radius:16px;padding:32px;box-shadow:0 30px 60px rgba(0,0,0,0.3)}
+.tb-person__head{display:flex;align-items:center;gap:20px}
+.tb-person__head img{width:112px;height:112px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.tb-person__label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4B5563}
+.tb-person__name{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:28px;letter-spacing:-0.6px;margin-top:4px;line-height:1.2}
+.tb-person__role{font-size:15px;color:#4B5563}
+.tb-person__links{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.tb .tb-person__link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid #E5E7EB;border-radius:12px;text-decoration:none;color:#1F2937;font-weight:700;font-size:17px}
+.tb .tb-person__link:hover{border-color:#A30D4B;color:#A30D4B}
+.tb-person__link span{color:#A30D4B}
+.tb .tb-person .tb-btn{justify-content:center;margin-top:4px}
+.tb .tb-person a:focus-visible{outline-color:#A30D4B}
+@media (max-width:47.99rem){
+.tb-wrap,.tb-strip ul{padding-left:16px;padding-right:16px}
+.tb-sec,.tb-contact{padding:64px 0}
+.tb-stats{grid-template-columns:1fr}
+.tb-stat--wide{grid-column:auto}
+.tb-stat__num{font-size:40px}
+.tb-finding{transform:none}
+.tb-person{padding:24px 20px}
+.tb-person__head img{width:88px;height:88px}
+}
+@media (prefers-reduced-motion:reduce){.tb-step{transition:none}}
+</style>
+<div class="tb">
+{{ .Content }}
+</div>
+{{ end }}
