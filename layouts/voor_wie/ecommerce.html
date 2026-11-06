@@ -1,494 +1,598 @@
 {{ define "main" }}
+{{/*
+  E-commerce-pagina, uitwerking van het ontwerp "E-commerce pagina Proper Access" uit Claude Design (6 november 2026).
+  Palet: magenta #A30D4B, donkerblauw #1F2937, petrol #004050, lichtgrijs #F5F5F5, wit.
+  Op donkere vlakken staat #FF66A0 als lichte variant van magenta (5,4:1 op #1F2937),
+  net als in homepage-aaas-v2. Grijze lopende tekst #4B5563 haalt 7,6:1 op wit en 6,9:1 op #F5F5F5.
+  Inhoud die in de front matter staat: trust (namen), paginanav en faqs (ook voor de FAQ-JSON-LD).
+*/}}
+{{ $check := `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF66A0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7"/></svg>` | safeHTML }}
 
-<!-- ─── HERO ─── -->
-{{ with .Params.banner }}
-<section class="hp-hero">
-  <div class="hp-container">
-    <div class="hp-hero__grid">
-      <div class="hp-hero__text">
-        <span class="hp-hero__badge">{{ .badge | default "E-commerce en EAA" }}</span>
-        <h1 class="hp-hero__title">{{ .title | markdownify }}</h1>
-        <p class="hp-hero__subtitle">{{ .content | markdownify }}</p>
-        {{ with .bullets }}
-        <div class="hp-contrast__checks" style="margin-top: 0.25rem;">
-          {{ range . }}
-          <div class="hp-contrast__check">
-            <span class="material-symbols-outlined hp-contrast__check-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span>{{ . | markdownify }}</span>
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}
-        {{ with .button }}
-          {{ if .enable }}
-            <div class="hp-hero__actions">
-              <a class="hp-btn hp-btn--primary" href="{{ .link | absURL }}"
-                {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
-                {{ .label }}
-                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-              </a>
-              <a href="tel:+31855055890" class="hp-btn hp-btn--outline">
-                Bel 085 5055 890
-              </a>
-            </div>
-          {{ end }}
-        {{ end }}
+<div class="ecx">
+
+<!-- HERO -->
+<section class="ecx-hero">
+  <div class="ecx-wrap ecx-hero__grid">
+    <div>
+      <p class="ecx-eyebrow ecx-eyebrow--dot"><span aria-hidden="true"></span>Voor webshops onder de EAA</p>
+      <h1 class="ecx-h1">Je webshop moet toegankelijk worden. Wij maken het werk <span class="ecx-accent">concreet</span>.</h1>
+      <p class="ecx-hero__lead">Een handmatige audit van je hele klantpad, van zoeken tot betaalbevestiging. Per element de oplossing, per team een plan. Zo weet je <strong>wat het kost, wie wat doet en wanneer je klaar bent</strong>.</p>
+      <div class="ecx-actions">
+        <a href="#offerte" class="ecx-btn ecx-btn--primary">Vraag een offerte aan</a>
+        <a href="/rapporten/202508_igc/" class="ecx-btn ecx-btn--outline">Bekijk een voorbeeldrapport</a>
       </div>
-      <div class="hp-hero__visual">
-        <div class="hp-hero__form-card">
-          <h2 class="hp-hero__form-title">Liever eerst weten waar je webshop staat?</h2>
-          <p class="hp-hero__form-intro">
-            Vraag een mini-audit aan (495 euro excl. btw). Een senior auditor kijkt tot 5 uur
-            handmatig naar je webshop en je ontvangt binnen 5 werkdagen een uitgebreid overzicht
-            van de grootste toegankelijkheidsproblemen.
-          </p>
-          <form class="hp-form" id="ec-qs-form" novalidate>
-            <input type="hidden" name="_subject" value="Nieuwe mini-audit aanvraag (e-commerce pagina)" />
-            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+      <p class="ecx-hero__note">Offerte binnen 2 werkdagen</p>
+    </div>
 
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="ec-qs-url">
-                URL van je webshop <span aria-label="verplicht">*</span>
-              </label>
-              <input class="hp-form__input" type="url" id="ec-qs-url" name="website_url" required autocomplete="url" placeholder="https://jouwwebshop.nl" />
-            </div>
-
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="ec-qs-name">
-                Je naam <span aria-label="verplicht">*</span>
-              </label>
-              <input class="hp-form__input" type="text" id="ec-qs-name" name="naam" required autocomplete="name" placeholder="Voornaam Achternaam" />
-            </div>
-
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="ec-qs-email">
-                E-mailadres <span aria-label="verplicht">*</span>
-              </label>
-              <input class="hp-form__input" type="email" id="ec-qs-email" name="email" required autocomplete="email" placeholder="naam@bedrijf.nl" />
-            </div>
-
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="ec-qs-tel">
-                Telefoonnummer <span class="hp-form__optional">(optioneel)</span>
-              </label>
-              <input class="hp-form__input" type="tel" id="ec-qs-tel" name="telefoon" autocomplete="tel" placeholder="06 12345678" />
-            </div>
-
-            <button type="submit" class="hp-btn hp-btn--primary hp-btn--full">
-              Vraag de mini-audit aan
-              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-            </button>
-          </form>
+    <div class="ecx-finding" aria-label="Voorbeeld van een bevinding uit een rapport" role="group">
+      <div class="ecx-finding__top">
+        <div>
+          <p class="ecx-finding__kicker">Checkout · stap 3 van 4</p>
+          <p class="ecx-finding__title">Bankkeuze iDEAL</p>
         </div>
+        <div class="ecx-finding__tags">
+          <span class="ecx-tag ecx-tag--impact">Hoge impact</span>
+          <span class="ecx-tag ecx-tag--type">Techniek</span>
+        </div>
+      </div>
+      <p class="ecx-finding__meta"><span>WCAG <b>4.1.2</b></span><span>Niveau <b>A</b></span><span>Beperking <b>blind</b></span></p>
+      <div class="ecx-finding__story">
+        <span class="ecx-finding__avatar" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span>
+        <div>
+          <p class="ecx-finding__label">User story</p>
+          <p class="ecx-finding__quote">Als blinde bezoeker wil ik horen welke bank ik kies, zodat ik zelfstandig kan afrekenen.</p>
+        </div>
+      </div>
+      <div class="ecx-finding__fix">
+        <p class="ecx-finding__label ecx-finding__label--light">Oplossing</p>
+        <p>Koppel elke bankoptie aan een <code>&lt;label&gt;</code> met de naam van de bank. Het logo alleen is voor een schermlezer leeg.</p>
+      </div>
+    </div>
+  </div>
+
+  {{ with .Params.trust }}
+  <div class="ecx-trust">
+    <p class="ecx-wrap ecx-trust__row">
+      <span>{{ .label }}</span>
+      {{ range $i, $n := .names }}{{ if $i }}<span class="ecx-trust__sep" aria-hidden="true">·</span>{{ end }}<span class="ecx-trust__name">{{ $n }}</span>{{ end }}
+    </p>
+  </div>
+  {{ end }}
+</section>
+
+{{ partial "pagina-nav.html" . }}
+
+<!-- DE OPDRACHT -->
+<section id="opdracht" class="ecx-section">
+  <div class="ecx-wrap">
+    <div class="ecx-head">
+      <p class="ecx-eyebrow">De opdracht ligt bij jou</p>
+      <h2 class="ecx-h2">De webshop moet toegankelijk. Maar waar begin je?</h2>
+    </div>
+    <div class="ecx-grid ecx-grid--300 ecx-grid--gap40">
+      <div class="ecx-numbered">
+        <p class="ecx-numbered__n" aria-hidden="true">01</p>
+        <h3 class="ecx-h3">De wet geldt al.</h3>
+        <p>Sinds 28 juni 2025 valt je webshop onder de EAA. De ACM loopt het afrekenproces door, van mandje tot betaling. Wie niet voldoet, krijgt drie maanden.</p>
+        <a href="/eaa/" class="ecx-more">Valt jouw webshop eronder? <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="ecx-numbered">
+        <p class="ecx-numbered__n" aria-hidden="true">02</p>
+        <h3 class="ecx-h3">Je weet niet hoe groot het werk is.</h3>
+        <p>Een scanner vindt een deel van de problemen, maar niet of je checkout met een toetsenbord werkt. Zonder handmatige audit kun je niet plannen of begroten.</p>
+      </div>
+      <div class="ecx-numbered">
+        <p class="ecx-numbered__n" aria-hidden="true">03</p>
+        <h3 class="ecx-h3">Meerdere teams moeten aan de slag.</h3>
+        <p>Developers, content, design en de leverancier van je chatwidget of betaalprovider. Iedereen moet weten wat er van hen verwacht wordt, en waarom.</p>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-(function() {
-  var form = document.getElementById('ec-qs-form');
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    window.paFormSubmit(form, {
-      bron: 'mini-audit-ecommerce',
-      onSuccess: function() { window.location.href = '/webshop-quickscan-bedankt/'; }
-    });
-  });
-})();
-</script>
-{{ end }}
+<!-- SELF-ASSESSMENT EN TOEZICHT -->
+<section id="toezicht" class="ecx-section ecx-section--top0">
+  <div class="ecx-wrap ecx-grid ecx-grid--440 ecx-grid--gap56">
+    <div>
+      <p class="ecx-eyebrow">Al begonnen met een self-assessment?</p>
+      <h2 class="ecx-h2">Zo begonnen bijna alle webshops die dit jaar bij ons kwamen.</h2>
+      <p class="ecx-lead">En bijna allemaal kwamen ze tot dezelfde conclusie: zelf toetsen kost meer tijd dan gedacht, en je weet nooit zeker of je iets over het hoofd ziet.</p>
+      <ul class="ecx-points">
+        <li><span class="ecx-points__n" aria-hidden="true">55</span><span><b>Succescriteria op niveau A en AA in WCAG 2.2.</b> Elk met eigen uitzonderingen en technieken. Zonder ervaring is de kans groot dat je een criterium verkeerd toepast.</span></li>
+        <li><span class="ecx-points__n" aria-hidden="true">?</span><span><b>Je weet niet wat je mist.</b> Een checkout die met de muis werkt, kan voor een schermlezer onbruikbaar zijn. Dat zie je alleen als je ermee test.</span></li>
+        <li><span class="ecx-points__n" aria-hidden="true">1</span><span><b>Het blijft je eigen oordeel.</b> Een self-assessment is jouw mening over je eigen webshop. Ziet de ACM het anders, dan sta je daar alleen mee.</span></li>
+      </ul>
+    </div>
 
-<!-- ─── TRUST BAR ─── -->
-{{ partial "trust-bar.html" . }}
-
-
-<!-- ─── PAIN POINT / ACM ─── -->
-<section class="hp-pain">
-  <div class="hp-container">
-    <div class="hp-pain__grid">
-      <div class="hp-pain__text">
-        <h2 class="hp-pain__title">
-          Veel webshops hebben nog werk te doen &mdash;
-          <span class="hp-pain__title-accent">de <span class="hp-pain__title-highlight">ACM</span> houdt toezicht</span>
-        </h2>
-        <p class="hp-pain__body">
-          Sinds 28 juni 2025 vallen alle e-commerce diensten onder de European Accessibility Act.
-          Webshops, apps, betaalprocessen en klantenportalen moeten allemaal voldoen aan de norm
-          EN 301 549, die in versie V3.2.1 op WCAG 2.1 niveau AA staat. Wij toetsen aan WCAG 2.2
-          als extra service.
-        </p>
-        <p class="hp-pain__body">
-          De
-          <a href="https://www.acm.nl/nl/toegankelijkheid"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="hp-pain__link">ACM<span class="sr-only"> (opent in nieuw venster)</span></a>
-          houdt toezicht op de toegankelijkheid van e-handelsdiensten. Een handmatige audit maakt
-          zichtbaar waar je klantreis nog problemen oplevert en welke verbeteringen prioriteit hebben.
-        </p>
-        <div class="hp-pain__cta">
-          <a href="/blog/wat-doet-een-toezichthouder-acm-over-de-eaa/" class="hp-pain__cta-link">
-            Lees wat de ACM zei over de EAA (25 juni 2026)
-            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="hp-pain__visuals">
-        <div class="hp-pain-card hp-pain-card--summary">
-          <span class="hp-pain-card__eyebrow">
-            <span class="material-symbols-outlined" aria-hidden="true">analytics</span>
-            ACM-onderzoek, maart 2026
-          </span>
-          <h3 class="hp-pain-card__title">Hoe erg is het?</h3>
-          <ul class="hp-pain-card__list">
-            <li><strong>Toegankelijkheid</strong> hoort bij de hele klantreis.</li>
-            <li>Van productoverzicht tot betaling kunnen problemen ontstaan.</li>
-            <li>Een handmatige audit maakt herstelpunten concreet.</li>
-            <li>De ACM houdt <strong>toezicht</strong>.</li>
-          </ul>
-          <a href="https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten/meldplicht-bij-niet-voldoen-aan-toegankelijkheid"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="hp-pain-card__link">
-            Lees de meldplicht op acm.nl<span class="sr-only"> (opent in nieuw venster)</span>
-            <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
-          </a>
-        </div>
-      </div>
+    <div class="ecx-darkcard">
+      <p class="ecx-eyebrow ecx-eyebrow--light">Als de ACM aanklopt</p>
+      <h3 class="ecx-darkcard__title">De toezichthouder vindt iets niet toegankelijk. Jij wel. Wie heeft gelijk?</h3>
+      <p class="ecx-darkcard__text">Dan heb je een onafhankelijke derde partij nodig die de norm kent en je keuzes kan onderbouwen. Wij staan naast je in dat gesprek.</p>
+      <ul class="ecx-checks">
+        <li>{{ $check }}<span><b>Onderbouwing per bevinding:</b> welk succescriterium, welke techniek en waarom.</span></li>
+        <li>{{ $check }}<span><b>We schuiven aan bij het gesprek</b> met de toezichthouder en lichten onze toetsing toe.</span></li>
+        <li>{{ $check }}<span><b>Getoetst zoals de ACM toetst:</b> volgens WCAG-EM, het hele afrekenproces door.</span></li>
+        <li>{{ $check }}<span><b>Hercontrole als vastlegging</b> van wat je hebt opgelost, met datum.</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-
-<!-- ─── VALUE PROPS ─── -->
-<section class="hp-vp">
-  <div class="hp-container">
-
-    <div class="hp-vp__header">
-      <h2 class="hp-vp__section-title">Wat levert een toegankelijke webshop op?</h2>
+<!-- KLANTPAD -->
+<section id="klantpad" class="ecx-section ecx-section--grey">
+  <div class="ecx-wrap">
+    <div class="ecx-head">
+      <p class="ecx-eyebrow">Wat we toetsen</p>
+      <h2 class="ecx-h2">Een webshop valt zelden om op de homepage.</h2>
+      <p class="ecx-lead">We lopen het hele klantpad door, met schermlezer, toetsenbord en op mobiel. En we rekenen echt af.</p>
     </div>
-
-    <!-- VP 1: Bereik -->
-    <div class="hp-vp__row">
-      <div class="hp-vp__visual">
-        <div class="ec-bigstat" aria-hidden="true">
-          <span class="ec-bigstat__number">4,4 M</span>
-          <span class="ec-bigstat__label">Nederlanders met een beperking</span>
-          <ul class="ec-bigstat__list">
-            <li>20&ndash;25% van de bevolking</li>
-            <li>Niet-toegankelijk = zij haken af</li>
-            <li>Zonder dat je het ziet</li>
-          </ul>
-        </div>
-      </div>
-      <div class="hp-vp__content">
-        <span class="hp-vp__eyebrow">Bereik</span>
-        <h3 class="hp-vp__title">4,4 miljoen potenti&euml;le klanten die je nu misloopt</h3>
-        <p class="hp-vp__body">
-          In Nederland leven 4,4 miljoen mensen met een beperking &mdash; 20 tot 25% van de bevolking.
-          Als je checkout niet werkt met toetsenbord of je productfilters niet met een schermlezer,
-          dan haken die klanten af. Zonder dat jij het ziet.
-        </p>
-      </div>
-    </div>
-
-    <!-- VP 2: Conversie -->
-    <div class="hp-vp__row hp-vp__row--reverse">
-      <div class="hp-vp__visual">
-        <div class="hp-vp-methods" aria-hidden="true">
-          <span class="hp-vp-methods__label">Toegankelijkheid verbetert:</span>
-          <ul class="hp-vp-methods__list">
-            <li><span class="material-symbols-outlined" aria-hidden="true">label</span> Formulier-labels</li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">error</span> Foutmeldingen</li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">keyboard</span> Toetsenbord-flow</li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span> Mobiele conversie</li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">support</span> Minder support-tickets</li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">shopping_cart_checkout</span> Checkout-voltooing</li>
-          </ul>
-          <p class="hp-vp-methods__footer">Toegankelijkheid overlapt voor 80% met usability.</p>
-        </div>
-      </div>
-      <div class="hp-vp__content">
-        <span class="hp-vp__eyebrow">Conversie</span>
-        <h3 class="hp-vp__title">Een toegankelijke checkout converteert beter &mdash; voor iedereen</h3>
-        <p class="hp-vp__body">
-          Toegankelijkheid overlapt voor 80% met usability. Betere labels en foutmeldingen betekenen
-          minder support-aanvragen. Betere toetsenbordnavigatie betekent hogere mobiele conversie.
-          Je checkout wordt niet alleen inclusiever, maar ook sneller &mdash; voor elke klant.
-        </p>
-        <a href="/rapporten/202508_igc/" class="hp-btn hp-btn--primary">
-          Zie voorbeeld rapport
-          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- VP 3: SEO -->
-    <div class="hp-vp__row">
-      <div class="hp-vp__visual">
-        <div class="hp-vp-finding" aria-hidden="true">
-          <div class="hp-vp-finding__header">
-            <span class="hp-vp-finding__priority">SEO &amp; toegankelijkheid</span>
-            <span class="hp-vp-finding__element">Element <code>&lt;h1&gt; + alt</code></span>
-          </div>
-          <div class="hp-vp-finding__story">
-            <span class="hp-vp-finding__label">Gedeeld principe</span>
-            <p>
-              Google crawlers en schermlezers gebruiken <em>dezelfde code</em> om te snappen
-              wat een pagina betekent.
-            </p>
-          </div>
-          <div class="hp-vp-finding__code">
-            <span class="hp-vp-finding__label">Goede code = beide tevreden</span>
-            <pre><code>&lt;h1&gt;Zomerjurk bloemenprint&lt;/h1&gt;
-&lt;img src="jurk.jpg"
-     alt="Blauwe zomerjurk
-          met witte bloemen"&gt;</code></pre>
-          </div>
-          <div class="hp-vp-finding__export">
-            <span class="hp-vp-finding__export-label">Wint</span>
-            <span class="hp-vp-finding__export-btn">Google</span>
-            <span class="hp-vp-finding__export-btn">Schermlezer</span>
-            <span class="hp-vp-finding__export-btn">Spraakzoek</span>
-          </div>
-        </div>
-      </div>
-      <div class="hp-vp__content">
-        <span class="hp-vp__eyebrow">SEO</span>
-        <h3 class="hp-vp__title">Schermlezers en Google crawlers gebruiken dezelfde code</h3>
-        <p class="hp-vp__body">
-          Goede semantische HTML, duidelijke koppen en zinvolle alt-teksten verbeteren
-          je vindbaarheid én je gebruikservaring. Toegankelijkheid is SEO is UX &mdash;
-          je investeert één keer, je krijgt drie voordelen.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ─── WEBSHOP-SPECIFIEKE ISSUES ─── -->
-<section class="hp-diff ec-issues">
-  <div class="hp-container">
-
-    <div class="hp-diff__header">
-      <h2 class="hp-diff__title">De meest voorkomende problemen op webshops</h2>
-    </div>
-
-    <div class="hp-diff__grid ec-issues__grid">
-      <div class="hp-diff__card">
-        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">shopping_cart_checkout</span>
-        <h3 class="hp-diff__card-title">Ontoegankelijke checkout</h3>
-        <p class="hp-diff__card-body">
-          Formuliervelden zonder label, foutmeldingen die niet worden voorgelezen, knoppen
-          niet bereikbaar met het toetsenbord. De plek waar je omzet wordt gemaakt, is
-          vaak de plek waar de meeste barrières zitten.
-        </p>
-      </div>
-
-      <div class="hp-diff__card">
-        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">filter_alt</span>
-        <h3 class="hp-diff__card-title">Onbruikbare productfilters</h3>
-        <p class="hp-diff__card-body">
-          Niet bedienbaar met toetsenbord, geen focus-indicator, geen feedback over
-          gefilterde resultaten. Je klant kan je assortiment niet doorzoeken.
-        </p>
-      </div>
-
-      <div class="hp-diff__card">
-        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">image</span>
-        <h3 class="hp-diff__card-title">Productafbeeldingen zonder alt-tekst</h3>
-        <p class="hp-diff__card-body">
-          Klanten die blind zijn weten niet wat ze bekijken. En het is ook slechter
-          voor SEO &mdash; Google leest dezelfde alt-teksten als een schermlezer.
-        </p>
-      </div>
-
-      <div class="hp-diff__card">
-        <span class="material-symbols-outlined hp-diff__icon" aria-hidden="true">support_agent</span>
-        <h3 class="hp-diff__card-title">Ontoegankelijke klantenservice-widgets</h3>
-        <p class="hp-diff__card-body">
-          Chatbots die niet gesloten kunnen worden met toetsenbord, die de hele pagina
-          blokkeren voor schermlezer-gebruikers. Je klant kan niet eens om hulp vragen.
-        </p>
-      </div>
-    </div>
-
-    <div class="hp-diff__cta">
-      <a href="/contact/" class="hp-btn hp-btn--primary">
-        Plan een kennismaking
-        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ─── HOW IT WORKS ─── -->
-<section class="hp-how">
-  <div class="hp-container">
-
-    <div class="hp-how__header">
-      <h2 class="hp-how__title">
-        Van audit tot toegankelijke webshop &mdash; in 3 stappen
-      </h2>
-    </div>
-
-    <ol class="hp-how__grid">
-      <li class="hp-how__step">
-        <span class="hp-how__step-number">1</span>
-        <h3 class="hp-how__step-title">Kennismaking + offerte</h3>
-        <p class="hp-how__step-body">
-          In 30 minuten bespreken we je webshop, je team, je deadlines en je platform.
-          Je krijgt een heldere offerte binnen 2 werkdagen &mdash; geen standaardprijslijst,
-          wel vaste uurtarieven.
-        </p>
+    <ol class="ecx-path">
+      <li class="ecx-path__step">
+        <div class="ecx-path__head"><span class="ecx-path__n" aria-hidden="true">1</span><h3 class="ecx-h3 ecx-h3--sm">Zoeken en filteren</h3></div>
+        <p>Filters die alleen met de muis werken. Een schermlezer die niet hoort dat de resultaten zijn ververst.</p>
+        <p class="ecx-path__flag">Hier noteren we de meeste bevindingen</p>
       </li>
-
-      <li class="hp-how__step">
-        <span class="hp-how__step-number">2</span>
-        <h3 class="hp-how__step-title">Handmatige audit</h3>
-        <p class="hp-how__step-body">
-          Senior auditor, 6-ogen-principe. We testen de volledige klantreis &mdash;
-          van productoverzicht tot betaling &mdash; met schermlezer, toetsenbord
-          en verschillende devices.
-        </p>
+      <li class="ecx-path__step">
+        <div class="ecx-path__head"><span class="ecx-path__n" aria-hidden="true">2</span><h3 class="ecx-h3 ecx-h3--sm">Productpagina</h3></div>
+        <p>Afbeeldingen zonder tekstalternatief, een maattabel als plaatje, varianten die je zonder muis niet kiest.</p>
       </li>
-
-      <li class="hp-how__step">
-        <span class="hp-how__step-number">3</span>
-        <h3 class="hp-how__step-title">Rapport + retest</h3>
-        <p class="hp-how__step-body">
-          Rapport per component, user stories, plan van aanpak per team.
-          Na jouw fixes doen we de retest &mdash; om vast te leggen welke bevindingen zijn opgelost.
-        </p>
+      <li class="ecx-path__step ecx-path__step--hl">
+        <div class="ecx-path__head"><span class="ecx-path__n" aria-hidden="true">3</span><h3 class="ecx-h3 ecx-h3--sm">Winkelwagen en betalen</h3></div>
+        <p>Foutmeldingen alleen in rood, velden zonder label, een iDEAL-stap waar je met het toetsenbord niet verder komt.</p>
+        <p class="ecx-path__flag">Dit deel loopt de ACM door</p>
+      </li>
+      <li class="ecx-path__step">
+        <div class="ecx-path__head"><span class="ecx-path__n" aria-hidden="true">4</span><h3 class="ecx-h3 ecx-h3--sm">Klantenservice</h3></div>
+        <p>Chatwidgets, retourformulieren en PDF-facturen. Vaak vergeten, omdat het bij een externe leverancier ligt.</p>
       </li>
     </ol>
-
-    <div class="hp-how__cta">
-      <a href="/rapporten/202508_igc/" class="hp-btn hp-btn--primary">
-        Zie voorbeeld rapport
-        <span class="material-symbols-outlined" aria-hidden="true">description</span>
-      </a>
-    </div>
-
   </div>
 </section>
 
-
-<!-- ─── SOCIAL PROOF ─── -->
-<section class="hp-proof">
-  <div class="hp-container">
-    <div class="hp-proof__header">
-      <h2 class="hp-proof__title">Webshops die ons vertrouwen</h2>
-      <p class="hp-proof__intro">
-        Van een Jumbo-checkout tot een NRC-abonnementsflow &mdash; we leveren rapporten
-        waar e-commerce-teams direct mee verder komen.
-      </p>
+<!-- WAAROM -->
+<section id="waarom" class="ecx-section ecx-section--dark ecx-section--lg">
+  <div class="ecx-wrap">
+    <div class="ecx-grid ecx-grid--420 ecx-grid--gap56 ecx-why__top">
+      <div>
+        <p class="ecx-eyebrow ecx-eyebrow--light">Waarom Proper Access</p>
+        <h2 class="ecx-h2 ecx-h2--light">Een rapport waar je team morgen mee aan de slag kan.</h2>
+        <p class="ecx-lead ecx-lead--light">Per element alle problemen bij elkaar, met een user story, een oplossing en code. En een plan van aanpak dat je zo in je backlog zet.</p>
+      </div>
+      <div class="ecx-stack">
+        <img src="/images/ecommerce/rapport-voorkant.jpg" alt="" class="ecx-stack__l" loading="lazy" width="900" height="1273">
+        <img src="/images/ecommerce/rapport-onderdelen.jpg" alt="" class="ecx-stack__r" loading="lazy" width="900" height="1273">
+        <img src="/images/ecommerce/rapport-plan-van-aanpak.jpg" alt="Pagina uit een plan van aanpak: wie wordt het meest geraakt" class="ecx-stack__c" loading="lazy" width="900" height="1273">
+      </div>
     </div>
-
-    <div class="hp-proof__grid">
-      <div class="hp-proof__card hp-proof__card--stats">
-        <div class="hp-proof__stat">
-          <span class="hp-proof__stat-number">950+</span>
-          <span class="hp-proof__stat-label">audits van websites</span>
-        </div>
-        <div class="hp-proof__stat">
-          <span class="hp-proof__stat-number">50+</span>
-          <span class="hp-proof__stat-label">audits van apps</span>
-        </div>
-        <div class="hp-proof__stat">
-          <span class="hp-proof__stat-number">63</span>
-          <span class="hp-proof__stat-label">organisaties en bedrijven</span>
-          <span class="hp-proof__stat-sub">Jumbo &middot; Plus &middot; NRC &middot; Eteck</span>
-        </div>
-        <div class="hp-proof__stat">
-          <span class="hp-proof__stat-number">4 op de 10</span>
-          <span class="hp-proof__stat-label">klanten komt terug voor een tweede audit</span>
-        </div>
-        <p class="stats-peildatum">Peildatum 7 augustus 2026.</p>
+    <div class="ecx-grid ecx-grid--320 ecx-why__list">
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">Rapport per element</h3>
+        <p>Je developer ziet per filter, knop of formulier alles wat er mis is. Niet verspreid over vijftig succescriteria.</p>
       </div>
-
-      <div class="hp-proof__card hp-proof__card--case">
-        <h3 class="hp-proof__case-title">Volledige klantreis onder de loep</h3>
-        <p class="hp-proof__case-body">Per component getest &mdash; niet alleen de homepage:</p>
-        <ul class="hp-proof__case-list">
-          <li>Productoverzicht &amp; filters</li>
-          <li>Productdetailpagina &amp; varianten</li>
-          <li>Winkelmand &amp; checkout</li>
-          <li>Betaalproviders (iDEAL, creditcard, Klarna)</li>
-        </ul>
-        <p class="hp-proof__case-plus">
-          Plus je <strong>klantenservice-widget</strong> en mobiele ervaring &mdash; waar veel webshops struikelen.
-        </p>
-        <p class="hp-proof__case-result">
-          <span class="material-symbols-outlined hp-proof__case-icon" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
-          <span><strong>Resultaat:</strong> elke klant rekent af, ongeacht apparaat of hulpsoftware.</span>
-        </p>
-        <a href="/rapporten/202508_igc/" class="hp-proof__case-link">
-          Zie voorbeeld rapport
-          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-        </a>
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">Plan van aanpak per team</h3>
+        <p>Development, content, design en externe leveranciers krijgen elk hun eigen lijst, op volgorde van impact.</p>
       </div>
-
-      <div class="hp-proof__card hp-proof__card--quote">
-        <span class="material-symbols-outlined hp-proof__quote-icon" aria-hidden="true">format_quote</span>
-        <blockquote class="hp-proof__quote">
-          <p class="hp-proof__quote-text">
-            Na de audit ging onze mobiele conversie met 8% omhoog. Toegankelijkheid
-            is geen extra &mdash; het is UX.
-          </p>
-          <footer class="hp-proof__quote-attribution">
-            &mdash; Head of E-commerce, retail
-          </footer>
-        </blockquote>
-        <blockquote class="hp-proof__quote">
-          <p class="hp-proof__quote-text">
-            Onze klantenservice krijgt nu half zoveel contrast-klachten. Letterlijk.
-          </p>
-          <footer class="hp-proof__quote-attribution">
-            &mdash; Digital Manager, webshop
-          </footer>
-        </blockquote>
-        <p class="hp-proof__quote-note">Uit respect voor de privacy laten we de namen van onze klanten weg.</p>
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">Het 6-ogen-principe</h3>
+        <p>Een senior auditor voert het onderzoek uit, een tweede auditor doet de review. Elk rapport wordt door drie mensen bekeken.</p>
       </div>
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">We denken mee binnen je platform</h3>
+        <p>We kennen zo'n 150 systemen. Kan iets niet binnen je platform, dan zoeken we een alternatief of formuleren we het voor je leverancier.</p>
+      </div>
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">Onafhankelijk</h3>
+        <p>We bouwen en beheren zelf geen webshops. We keuren dus nooit ons eigen werk en verkopen je geen bouwtraject.</p>
+      </div>
+      <div class="ecx-why__item">
+        <h3 class="ecx-h3 ecx-h3--sm">Hercontrole als bewijs</h3>
+        <p>Na je fixes leggen we vast welke bevindingen zijn opgelost. Dat laat je zien als de ACM aanklopt.</p>
+      </div>
+    </div>
+    <a href="/rapporten/202508_igc/" class="ecx-btn ecx-btn--white ecx-why__btn">Bekijk een voorbeeldrapport</a>
+  </div>
+</section>
+
+<!-- PORTAAL -->
+<section id="portaal" class="ecx-section ecx-section--lg">
+  <div class="ecx-wrap ecx-grid ecx-grid--420 ecx-grid--gap56 ecx-grid--center">
+    <div>
+      <p class="ecx-eyebrow">Het portaal van Proper Access</p>
+      <h2 class="ecx-h2">Alle bevindingen in één besloten omgeving.</h2>
+      <p class="ecx-lead">Je team en onze auditors werken in hetzelfde portaal, van de eerste bevinding tot de gepubliceerde verklaring.</p>
+      <ul class="ecx-features">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span><b>Overleg per bevinding.</b> Stel je vraag direct bij de bevinding. De auditor die hem vond, antwoordt.</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><span><b>Hercontrole in hetzelfde dossier.</b> Na je fixes toetsen wij opnieuw. Je ziet per bevinding wat is opgelost en wat nog openstaat.</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg><span><b>Toegankelijkheidsverklaring.</b> Stel vanuit het portaal een verklaring op met de actuele stand van je webshop.</span></li>
+      </ul>
+      <div class="ecx-actions ecx-actions--mt">
+        <a href="https://portaal.properaccess.nl/demo" class="ecx-btn ecx-btn--primary">Bekijk de demo van het portaal</a>
+      </div>
+    </div>
+    <div>
+      <img src="/images/ecommerce/portaal-bevindingen.jpg" alt="Het portaal: een lijst met bevindingen, met per bevinding de impact, het type en de beperking" class="ecx-shot" loading="lazy" width="1600" height="900">
     </div>
   </div>
 </section>
 
+<!-- AANPAK -->
+<section id="aanpak" class="ecx-section ecx-section--top0">
+  <div class="ecx-wrap">
+    <div class="ecx-head">
+      <p class="ecx-eyebrow">Aanpak</p>
+      <h2 class="ecx-h2">Van offerte tot hercontrole. In drie stappen.</h2>
+    </div>
+    <ol class="ecx-grid ecx-grid--300 ecx-steps">
+      <li class="ecx-step">
+        <p class="ecx-step__big">2 werkdagen</p>
+        <h3 class="ecx-h3 ecx-h3--sm">1. Kennismaking en offerte</h3>
+        <p>In een kort gesprek bespreken we je webshop, platform, team en deadline. Binnen twee werkdagen heb je een offerte op maat.</p>
+      </li>
+      <li class="ecx-step">
+        <p class="ecx-step__big">3 tot 5 weken</p>
+        <h3 class="ecx-h3 ecx-h3--sm">2. Handmatige audit</h3>
+        <p>Volgens WCAG-EM, getoetst aan WCAG 2.2 AA. Op je live webshop: je klanten merken er niets van.</p>
+      </li>
+      <li class="ecx-step">
+        <p class="ecx-step__big">12 weken</p>
+        <h3 class="ecx-h3 ecx-h3--sm">3. Rapport, oplossen, hercontrole</h3>
+        <p>Je team werkt het plan af. Daarna toetsen we opnieuw en leggen vast wat is opgelost. Onze richtlijn is een hercontrole binnen 12 weken.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-<!-- ─── CONTENT (webinar + residu) ─── -->
-<article class="offerte-content">
-  {{ .Content }}
-</article>
+<!-- PRIJZEN -->
+<section id="prijzen" class="ecx-section ecx-section--grey">
+  <div class="ecx-wrap ecx-grid ecx-grid--440 ecx-grid--gap48">
+    <div>
+      <p class="ecx-eyebrow">Wat kost het</p>
+      <h2 class="ecx-h2">De prijs hangt af van je templates, niet van je assortiment.</h2>
+      <p class="ecx-lead">Tienduizend artikelen op vier templates is goedkoper dan honderd artikelen met een configurator. Je krijgt vooraf een offerte op maat.</p>
+      <div class="ecx-mini">
+        <div class="ecx-mini__head">
+          <h3 class="ecx-h3 ecx-h3--sm">Eerst weten waar je staat?</h3>
+          <p class="ecx-mini__price">€ 495</p>
+        </div>
+        <p>Mini-audit: een senior auditor kijkt tot 5 uur handmatig naar je webshop. Binnen 5 werkdagen heb je de grootste knelpunten op een rij.</p>
+        <a href="/webshop-quickscan/" class="ecx-more">Vraag een mini-audit aan <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="ecx-tablecard">
+      <table class="ecx-table">
+        <caption>Indicatieprijzen volledige audit</caption>
+        <thead><tr><th scope="col">Type webshop</th><th scope="col">Circa</th></tr></thead>
+        <tbody>
+          <tr><td>Eenvoudig: standaardtemplate, één taal</td><td>€ 2.625</td></tr>
+          <tr><td>Gemiddeld: filters, account, meerdere betaalmethoden</td><td>€ 2.850</td></tr>
+          <tr><td>Complex: inlog, configurator of complexe filters</td><td>€ 3.675</td></tr>
+          <tr><td>Internationaal of maatwerk, veel interactie</td><td>€ 4.350</td></tr>
+        </tbody>
+      </table>
+      <p class="ecx-table__note">Bedragen exclusief 21% btw. De eerste hercontrole zit in de prijs.</p>
+    </div>
+  </div>
+</section>
 
+<!-- BEWIJS -->
+<section class="ecx-section" aria-labelledby="ecx-bewijs-titel">
+  <div class="ecx-wrap">
+    <h2 id="ecx-bewijs-titel" class="ecx-sr">Ervaring in cijfers</h2>
+    <div class="ecx-grid ecx-grid--220 ecx-stats">
+      <div><p class="ecx-stats__n">950+</p><p>audits sinds 2019</p></div>
+      <div><p class="ecx-stats__n">63</p><p>opdrachtgevers, samen goed voor 236 opdrachten</p></div>
+      <div><p class="ecx-stats__n">4 op 10</p><p>opdrachtgevers komt terug voor een tweede opdracht</p></div>
+    </div>
+    <p class="ecx-stats__date">Stand augustus 2026.</p>
+    <p class="ecx-stats__case">Hoe zo'n samenwerking eruitziet? Lees <a href="/blog/case-nrc-de-klant-die-de-meeste-vragen-stelt/">het verhaal over NRC</a>.</p>
+  </div>
+</section>
 
-<!-- ─── FAQ ─── -->
+<!-- VRAGEN -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
-  <div class="hp-container">
-    <h2 class="hp-heading-lg hp-faq__title">Vragen die webshop-eigenaren ons stellen</h2>
-    <div class="hp-faq__container faq-container">
+<section id="vragen" class="ecx-section ecx-section--grey">
+  <div class="ecx-wrap">
+    <h2 class="ecx-h2 ecx-faq__title">Vragen van product owners</h2>
+    <div class="ecx-faq">
       {{ range . }}
-        <details class="faq-item">
-          <summary class="faq-question">{{ .question }}</summary>
-          <div class="faq-answer">
-            <p>{{ .answer | markdownify }}</p>
-          </div>
-        </details>
+      <details class="ecx-faq__item">
+        <summary><h3>{{ .question }}</h3><span class="ecx-faq__sign" aria-hidden="true"></span></summary>
+        <div class="ecx-faq__answer">{{ .answer | markdownify }}</div>
+      </details>
       {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 
+<!-- OFFERTE -->
+<section id="offerte" class="ecx-section ecx-section--dark ecx-section--lg">
+  <div class="ecx-wrap ecx-grid ecx-grid--440 ecx-grid--gap56 ecx-grid--center">
+    <div>
+      <p class="ecx-eyebrow ecx-eyebrow--light">Offerte aanvragen</p>
+      <h2 class="ecx-h2 ecx-h2--light ecx-h2--xl">Weet binnen twee werkdagen wat het kost.</h2>
+      <p class="ecx-lead ecx-lead--light">Stuur ons je webshop-URL. We kijken vooraf mee en bellen je voor een kort gesprek over platform, team en deadline. Daarna krijg je een offerte op maat.</p>
+      <div class="ecx-person">
+        <img src="/images/phi.jpeg" alt="" width="96" height="96" loading="lazy">
+        <div><p class="ecx-person__name">Phi Pham</p><p class="ecx-person__role">Projectmanager</p></div>
+      </div>
+      <p class="ecx-call">Liever direct bellen? <a href="tel:+31855055890">085 5055 890</a></p>
+    </div>
 
-<!-- ─── CTA ─── -->
-{{ partial "call-to-action.html" . }}
+    <div class="ecx-formcard">
+      <form id="ecx-offerte-form" class="ecx-form" novalidate>
+        <input type="hidden" name="_subject" value="Offerte-aanvraag e-commerce pagina">
+        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+        <div class="ecx-field">
+          <label for="ecx-url">URL van je webshop</label>
+          <input id="ecx-url" name="website_url" type="url" required autocomplete="url" placeholder="https://">
+        </div>
+        <div class="ecx-form__row">
+          <div class="ecx-field">
+            <label for="ecx-naam">Je naam</label>
+            <input id="ecx-naam" name="naam" type="text" required autocomplete="name">
+          </div>
+          <div class="ecx-field">
+            <label for="ecx-email">E-mailadres</label>
+            <input id="ecx-email" name="email" type="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="ecx-field">
+          <label for="ecx-bericht">Platform en deadline <span class="ecx-optional">(optioneel)</span></label>
+          <textarea id="ecx-bericht" name="bericht" rows="3" placeholder="Bijvoorbeeld: Shopify, live voor 1 maart"></textarea>
+        </div>
+        <button type="submit" class="ecx-btn ecx-btn--primary ecx-btn--full">Vraag een offerte aan</button>
+        <p class="ecx-form__note">Vrijblijvend. We reageren binnen 1 werkdag.</p>
+      </form>
+      <div id="ecx-offerte-ok" class="ecx-sent" role="status" hidden>
+        <span class="ecx-sent__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12l5 5L20 7"/></svg></span>
+        <h3 class="ecx-h3">Bedankt, we hebben je aanvraag.</h3>
+        <p>Je hoort binnen 1 werkdag van ons, of sneller.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+</div>
+
+<script>
+(function () {
+  var form = document.getElementById('ecx-offerte-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.paFormSubmit(form, {
+      bron: 'offerte-ecommerce',
+      onSuccess: function () {
+        var ok = document.getElementById('ecx-offerte-ok');
+        form.hidden = true;
+        ok.hidden = false;
+        ok.setAttribute('tabindex', '-1');
+        ok.focus();
+      }
+    });
+  });
+})();
+</script>
+
+<style>
+  .ecx { color: #1F2937; font-family: "Nunito", system-ui, sans-serif; }
+  .ecx p { margin: 0; }
+  .ecx-wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; }
+  .ecx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .ecx a:not(.ecx-btn) { color: #A30D4B; }
+  .ecx a:not(.ecx-btn):hover { color: #004050; }
+  .ecx :focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; }
+  .ecx-section--dark :focus-visible { outline-color: #FF66A0; }
+
+  /* typografie */
+  .ecx-eyebrow { font-size: 12px; font-weight: 700; color: #A30D4B; letter-spacing: 2px; text-transform: uppercase; }
+  .ecx-eyebrow--light { color: #FF66A0; }
+  .ecx-eyebrow--dot { display: flex; align-items: center; gap: 8px; }
+  .ecx-eyebrow--dot span { width: 8px; height: 8px; border-radius: 50%; background: #A30D4B; box-shadow: 0 0 0 4px rgba(163,13,75,0.2); }
+  .ecx-h1 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; letter-spacing: -2px; margin: 18px 0 22px; text-wrap: pretty; color: #1F2937; }
+  .ecx-h2 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: clamp(30px, 3.6vw, 40px); letter-spacing: -1px; line-height: 1.1; margin: 12px 0 0; text-wrap: pretty; color: #1F2937; }
+  .ecx-h2--light { color: #fff; }
+  .ecx-h2--xl { font-size: clamp(32px, 4vw, 48px); }
+  .ecx-h3 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.4px; line-height: 1.25; margin: 8px 0 10px; color: inherit; }
+  .ecx-h3--sm { font-size: 20px; letter-spacing: -0.3px; margin: 0 0 8px; }
+  .ecx-accent { color: #A30D4B; }
+  .ecx-lead { font-size: 17px; line-height: 1.55; color: #4B5563; margin-top: 16px !important; }
+  .ecx-lead--light { color: rgba(255,255,255,0.88); max-width: 480px; }
+  .ecx-more { display: inline-flex; gap: 6px; margin-top: 14px; font-weight: 700; font-size: 15px; }
+
+  /* knoppen */
+  .ecx-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .ecx-actions--mt { margin-top: 32px; }
+  .ecx-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; box-sizing: border-box; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 26px; border-radius: 8px; border: 0; cursor: pointer; font-family: inherit; }
+  .ecx-btn--primary { background: #A30D4B; color: #fff; }
+  .ecx-btn--primary:hover { background: #8C0B40; color: #fff; }
+  .ecx-btn--outline { background: #fff; color: #1F2937; border: 2px solid #1F2937; padding: 12px 24px; }
+  .ecx-btn--outline:hover { background: #1F2937; color: #fff; }
+  .ecx-btn--white { background: #fff; color: #1F2937; }
+  .ecx-btn--white:hover { background: #F5F5F5; color: #A30D4B; }
+  .ecx-btn--full { width: 100%; margin-top: 4px; }
+
+  /* grids */
+  .ecx-grid { display: grid; gap: 20px; }
+  .ecx-grid--220 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 32px; }
+  .ecx-grid--300 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .ecx-grid--320 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px 48px; }
+  .ecx-grid--420 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .ecx-grid--440 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); align-items: start; }
+  .ecx-grid--gap40 { gap: 40px; }
+  .ecx-grid--gap48 { gap: 48px; }
+  .ecx-grid--gap56 { gap: 56px; }
+  .ecx-grid--center { align-items: center; }
+
+  /* secties */
+  .ecx-section { padding: 96px 0; scroll-margin-top: 72px; }
+  .ecx-section--lg { padding: 110px 0; }
+  .ecx-section--top0 { padding-top: 0; }
+  .ecx-section--grey { background: #F5F5F5; }
+  .ecx-section--dark { background: #1F2937; color: #fff; }
+  .ecx-section--dark a:not(.ecx-btn) { color: #FF66A0; }
+  .ecx-section--dark a:not(.ecx-btn):hover { color: #fff; }
+  .ecx-head { max-width: 720px; margin-bottom: 48px; }
+
+  /* hero */
+  .ecx-hero { background: linear-gradient(180deg, #fff 0%, #F5F5F5 100%); padding: 72px 0 0; }
+  .ecx-hero__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 56px; align-items: center; }
+  .ecx-hero__lead { font-size: 19px; line-height: 1.5; color: #4B5563; margin-bottom: 28px !important; max-width: 560px; text-wrap: pretty; }
+  .ecx-hero__lead strong { color: #1F2937; }
+  .ecx-hero__note { margin-top: 16px !important; font-size: 14px; color: #4B5563; }
+
+  .ecx-finding { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 30px 80px rgba(0,0,0,0.18); transform: rotate(-0.8deg); max-width: 540px; justify-self: center; width: 100%; box-sizing: border-box; }
+  .ecx-finding__top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+  .ecx-finding__kicker { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #4B5563; text-transform: uppercase; }
+  .ecx-finding__title { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.3px; margin-top: 4px !important; }
+  .ecx-finding__tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .ecx-tag { padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .ecx-tag--impact { background: rgba(163,13,75,0.1); color: #A30D4B; }
+  .ecx-tag--type { background: rgba(0,64,80,0.1); color: #004050; }
+  .ecx-finding__meta { display: flex; flex-wrap: wrap; gap: 6px 16px; background: #F5F5F5; border-radius: 8px; padding: 10px 12px; margin: 14px 0 !important; font-size: 12.5px; color: #4B5563; }
+  .ecx-finding__meta b { color: #1F2937; }
+  .ecx-finding__story { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; background: rgba(163,13,75,0.06); border-left: 6px solid #A30D4B; border-radius: 6px; }
+  .ecx-finding__avatar { width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: #A30D4B; display: flex; align-items: center; justify-content: center; }
+  .ecx-finding__label { font-size: 10.5px; letter-spacing: 2px; color: #A30D4B; font-weight: 800; text-transform: uppercase; }
+  .ecx-finding__label--light { color: #FF66A0; }
+  .ecx-finding__quote { font-style: italic; font-size: 14.5px; line-height: 1.45; margin-top: 4px !important; }
+  .ecx-finding__fix { margin-top: 12px; background: #1F2937; border-radius: 8px; padding: 12px 14px; color: #fff; }
+  .ecx-finding__fix p:last-child { font-size: 13.5px; line-height: 1.5; margin-top: 6px; }
+  .ecx-finding__fix code { background: rgba(255,255,255,0.14); padding: 2px 6px; border-radius: 5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #fff; }
+
+  .ecx-trust { margin-top: 64px; background: #fff; border-top: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB; }
+  .ecx-trust__row { padding-top: 20px; padding-bottom: 20px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 10px 16px; font-size: 14px; color: #4B5563; font-weight: 600; }
+  .ecx-trust__name { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; color: #1F2937; font-size: 15px; }
+  .ecx-trust__sep { color: #6B7280; }
+
+  /* opdracht */
+  .ecx-numbered { border-top: 2px solid #1F2937; padding-top: 20px; }
+  .ecx-numbered__n { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 15px; color: #A30D4B; }
+  .ecx-numbered > p:not(.ecx-numbered__n) { font-size: 16px; line-height: 1.55; color: #4B5563; }
+  .ecx-numbered .ecx-more { color: #1F2937; text-decoration: none; }
+  .ecx-numbered .ecx-more span, .ecx-mini .ecx-more span { color: #A30D4B; }
+  .ecx-numbered .ecx-more:hover, .ecx-mini .ecx-more:hover { color: #A30D4B; text-decoration: underline; }
+
+  /* toezicht */
+  .ecx-points { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .ecx-points li { display: flex; gap: 14px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #4B5563; }
+  .ecx-points b { color: #1F2937; }
+  .ecx-points__n { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 22px; color: #A30D4B; line-height: 1.2; min-width: 44px; }
+  .ecx-darkcard { background: #1F2937; color: #fff; border-radius: 24px; padding: 36px; box-sizing: border-box; }
+  .ecx-darkcard :focus-visible { outline-color: #FF66A0; }
+  .ecx-darkcard__title { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: clamp(24px, 2.6vw, 30px); letter-spacing: -0.6px; line-height: 1.15; margin: 12px 0 14px; text-wrap: pretty; color: #fff; }
+  .ecx-darkcard__text { font-size: 16px; line-height: 1.55; color: rgba(255,255,255,0.88); margin-bottom: 24px !important; }
+  .ecx-checks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .ecx-checks li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; line-height: 1.5; }
+  .ecx-checks svg { flex-shrink: 0; margin-top: 2px; }
+
+  /* klantpad */
+  .ecx-path { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 16px; }
+  .ecx-path__step { background: #fff; border-radius: 16px; padding: 26px 24px; display: flex; flex-direction: column; gap: 12px; border: 2px solid transparent; }
+  .ecx-path__step--hl { border-color: #A30D4B; }
+  .ecx-path__step > p { font-size: 15px; line-height: 1.55; color: #4B5563; }
+  .ecx-path__head { display: flex; align-items: center; gap: 10px; }
+  .ecx-path__head .ecx-h3 { margin: 0; }
+  .ecx-path__n { width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%; background: #1F2937; color: #fff; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+  .ecx-path__step--hl .ecx-path__n { background: #A30D4B; }
+  .ecx-path__step > .ecx-path__flag { margin-top: auto; font-size: 13px; font-weight: 700; color: #A30D4B; }
+
+  /* waarom */
+  .ecx-why__top { align-items: center; margin-bottom: 72px; }
+  .ecx-stack { position: relative; height: 340px; }
+  .ecx-stack img { position: absolute; width: 44%; height: auto; border-radius: 8px; box-shadow: 0 30px 80px rgba(0,0,0,0.35); }
+  .ecx-stack__l { left: 4%; top: 24px; transform: rotate(-6deg); }
+  .ecx-stack__r { right: 4%; top: 24px; transform: rotate(5deg); }
+  .ecx-stack__c { left: 28%; top: 0; box-shadow: 0 30px 80px rgba(0,0,0,0.4); }
+  .ecx-why__item { border-top: 1px solid rgba(255,255,255,0.25); padding-top: 20px; }
+  .ecx-why__item p { font-size: 15.5px; line-height: 1.55; color: rgba(255,255,255,0.86); }
+  .ecx-why__btn { margin-top: 56px; }
+
+  /* portaal */
+  .ecx-features { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+  .ecx-features li { display: flex; gap: 14px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #4B5563; }
+  .ecx-features b { color: #1F2937; }
+  .ecx-features svg { flex-shrink: 0; margin-top: 2px; }
+  .ecx-shot { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 30px 80px rgba(0,0,0,0.30); display: block; }
+
+  /* aanpak */
+  .ecx-steps { list-style: none; margin: 0; padding: 0; }
+  .ecx-step { border: 1px solid #9CA3AF; border-radius: 16px; padding: 28px; }
+  .ecx-step__big { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -1.5px; color: #A30D4B; line-height: 1; margin-bottom: 16px !important; }
+  .ecx-step > p:last-child { font-size: 15.5px; line-height: 1.55; color: #4B5563; }
+
+  /* prijzen */
+  .ecx-mini { background: #fff; border-radius: 16px; padding: 24px; border: 2px solid #A30D4B; margin-top: 28px; }
+  .ecx-mini__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .ecx-mini__head .ecx-h3 { margin: 0; }
+  .ecx-mini__price { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 22px; color: #A30D4B; }
+  .ecx-mini > p { margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #4B5563; }
+  .ecx-mini .ecx-more { color: #1F2937; text-decoration: none; }
+  .ecx-tablecard { background: #fff; border-radius: 16px; padding: 8px 28px 20px; }
+  .ecx-table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 0; }
+  .ecx-table caption { text-align: left; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 18px; padding: 20px 0 8px; letter-spacing: -0.3px; color: #1F2937; }
+  .ecx-table th { text-align: left; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #4B5563; padding: 10px 0; border-bottom: 1px solid #9CA3AF; }
+  .ecx-table th:last-child, .ecx-table td:last-child { text-align: right; }
+  .ecx-table td { padding: 16px 16px 16px 0; border-bottom: 1px solid #E5E7EB; line-height: 1.4; }
+  .ecx-table td:last-child { padding-right: 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; white-space: nowrap; }
+  .ecx-table tr:last-child td { border-bottom: 0; }
+  .ecx-table__note { margin-top: 12px !important; font-size: 13px; color: #4B5563; }
+
+  /* bewijs */
+  .ecx-stats { padding-bottom: 40px; border-bottom: 1px solid #E5E7EB; }
+  .ecx-stats__n { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 56px; letter-spacing: -2px; color: #A30D4B; line-height: 1; }
+  .ecx-stats p:not(.ecx-stats__n) { margin-top: 10px; font-size: 16px; color: #4B5563; }
+  .ecx-stats__date { margin-top: 12px !important; font-size: 13px; color: #4B5563; }
+  .ecx-stats__case { margin-top: 32px !important; font-size: 16px; color: #4B5563; }
+  .ecx-stats__case a { font-weight: 700; }
+
+  /* vragen */
+  .ecx-faq__title { margin: 0 0 32px; }
+  .ecx-faq { max-width: 820px; }
+  .ecx-faq__item { border-bottom: 1px solid #9CA3AF; }
+  .ecx-faq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; }
+  .ecx-faq__item summary::-webkit-details-marker { display: none; }
+  .ecx-faq__item summary h3 { margin: 0; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.3px; color: #1F2937; line-height: 1.35; }
+  .ecx-faq__item summary:hover h3 { color: #A30D4B; }
+  .ecx-faq__sign::before { content: "+"; font-size: 26px; color: #A30D4B; width: 24px; display: inline-block; text-align: center; }
+  .ecx-faq__item[open] .ecx-faq__sign::before { content: "\2212"; }
+  .ecx-faq__answer { padding: 0 0 22px; font-size: 16px; line-height: 1.6; color: #4B5563; max-width: 680px; }
+
+  /* offerte */
+  .ecx-person { display: flex; gap: 16px; align-items: center; margin-top: 32px; }
+  .ecx-person img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: #374151; }
+  .ecx-person__name { font-weight: 700; font-size: 17px; }
+  .ecx-person__role { font-size: 14px; color: rgba(255,255,255,0.8); }
+  .ecx-call { margin-top: 28px !important; font-size: 16px; color: rgba(255,255,255,0.88); }
+  .ecx-call a { font-weight: 700; }
+  .ecx-formcard { background: #fff; color: #1F2937; border-radius: 16px; padding: 32px; box-shadow: 0 30px 60px rgba(0,0,0,0.3); }
+  .ecx-formcard :focus-visible { outline-color: #A30D4B; }
+  .ecx-form { display: flex; flex-direction: column; gap: 16px; }
+  .ecx-form__row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .ecx-field { display: flex; flex-direction: column; gap: 6px; }
+  .ecx-field label { font-size: 14px; font-weight: 700; }
+  .ecx-optional { font-weight: 400; color: #4B5563; }
+  .ecx-field input, .ecx-field textarea { font: inherit; font-size: 16px; padding: 12px 14px; border: 1.5px solid #1F2937; border-radius: 12px; color: #1F2937; background: #fff; }
+  .ecx-field textarea { resize: vertical; }
+  .ecx-field input::placeholder, .ecx-field textarea::placeholder { color: #4B5563; opacity: 1; }
+  .ecx-field input:focus-visible, .ecx-field textarea:focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; border-color: #A30D4B; }
+  .ecx-form__note { font-size: 13px; color: #4B5563; text-align: center; }
+  .ecx-sent { text-align: center; padding: 24px 8px; }
+  .ecx-sent:focus { outline: none; }
+  .ecx-sent__icon { width: 52px; height: 52px; border-radius: 50%; background: #004050; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .ecx-sent p { font-size: 15.5px; color: #4B5563; }
+
+  @media (max-width: 48rem) {
+    .ecx-wrap { padding: 0 16px; }
+    .ecx-section { padding: 64px 0; }
+    .ecx-section--top0 { padding-top: 0; }
+    .ecx-hero { padding-top: 48px; }
+    .ecx-finding { transform: none; }
+    .ecx-stack { height: 260px; }
+    .ecx-darkcard, .ecx-formcard { padding: 24px; }
+    .ecx-tablecard { padding: 4px 16px 16px; }
+  }
+</style>
 {{ end }}
