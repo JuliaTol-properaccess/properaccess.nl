@@ -103,6 +103,9 @@
 <!-- ─── TRUST BAR ─── -->
 {{ partial "trust-bar.html" . }}
 
+<!-- ─── OP DEZE PAGINA ─── -->
+{{ partial "pagina-nav.html" . }}
+
 
 <!-- ─── PAIN POINT / ACM ─── -->
 <section class="hp-pain">
@@ -272,7 +275,7 @@
 
 
 <!-- ─── WEBSHOP-SPECIFIEKE ISSUES ─── -->
-<section class="hp-diff ec-issues">
+<section class="hp-diff ec-issues" id="problemen">
   <div class="hp-container">
 
     <div class="hp-diff__header">
@@ -330,7 +333,7 @@
 
 
 <!-- ─── HOW IT WORKS ─── -->
-<section class="hp-how">
+<section class="hp-how" id="werkwijze">
   <div class="hp-container">
 
     <div class="hp-how__header">
@@ -470,7 +473,7 @@
 
 <!-- ─── FAQ ─── -->
 {{ with .Params.faqs }}
-<section class="hp-faq">
+<section class="hp-faq" id="vragen">
   <div class="hp-container">
     <h2 class="hp-heading-lg hp-faq__title">Vragen die webshop-eigenaren ons stellen</h2>
     <div class="hp-faq__container faq-container">

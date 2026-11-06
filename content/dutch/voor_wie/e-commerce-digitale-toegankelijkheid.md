@@ -58,6 +58,19 @@ faqs:
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
     answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de evaluatiemethode van het W3C. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 translationKey: "e-commerce"
+paginanav:
+  - label: "Veelvoorkomende problemen"
+    id: "problemen"
+  - label: "Werkwijze"
+    id: "werkwijze"
+  - label: "Valt je webshop eronder?"
+    id: "valt-mijn-webshop-eronder"
+  - label: "Wat we toetsen"
+    id: "wat-we-toetsen"
+  - label: "Welk bureau"
+    id: "welk-bureau"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
 {{< section-full title="Valt jouw webshop onder de European Accessibility Act?" id="valt-mijn-webshop-eronder" >}}
@@ -93,7 +106,7 @@ te bedienen is, is dus ook een probleem onder de EAA.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Wat we in een webshop toetsen" subtitle="We lopen het hele klantpad door, van zoeken tot betaalbevestiging. Een webshop valt zelden om op de homepage." >}}
+{{< section-cards columns="2" bg="light" id="wat-we-toetsen" title="Wat we in een webshop toetsen" subtitle="We lopen het hele klantpad door, van zoeken tot betaalbevestiging. Een webshop valt zelden om op de homepage." >}}
 {{< section-card title="Zoeken en filteren" >}}
 
 Filters die alleen met de muis werken, aantallen die niet worden aangekondigd, en zoekresultaten

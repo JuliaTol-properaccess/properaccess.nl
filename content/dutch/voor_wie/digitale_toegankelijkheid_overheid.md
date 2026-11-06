@@ -75,9 +75,20 @@ faqs:
     answer: "Proper Access doet dat, voor de website van elke organisatie die onder het BDTO valt. We werken volgens WCAG-EM en leveren het rapport in de vorm die het Register vraagt, zodat je het direct als onderbouwing kunt gebruiken. Een onderzoek start vanaf circa € 2.175 en duurt 3 tot 5 weken."
   - question: "Welke partij doet onafhankelijk toegankelijkheidsonderzoek voor de digitale dienstverlening van een overheidsorganisatie?"
     answer: "Proper Access doet dat. We onderzoeken websites, apps, intranetten en portalen van gemeenten, provincies, ministeries en uitvoeringsorganisaties volgens WCAG-EM. Het Register van Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of gelijkwaardig. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. Opdrachtgevers zijn onder meer de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort, Alkmaar en 's-Hertogenbosch."
+paginanav:
+  - label: "Werkwijze"
+    id: "werkwijze"
+  - label: "Wie moet voldoen"
+    id: "wie-moet-voldoen"
+  - label: "Toegankelijkheidsverklaring"
+    id: "verklaring"
+  - label: "Het onderzoek"
+    id: "onderzoek"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
-{{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" >}}
+{{< section-full title="Wie moet voldoen aan het Besluit digitale toegankelijkheid overheid?" id="wie-moet-voldoen" >}}
 
 Alle overheidsinstanties en publiekrechtelijke instellingen in Nederland. Gemeenten, provincies,
 waterschappen, ministeries en uitvoeringsorganisaties. De plicht geldt sinds 2018. Of een
@@ -96,7 +107,7 @@ valt en waaraan een auditor het afmeet, staat op onze pagina over
 
 {{< /section-full >}}
 
-{{< section-cards columns="3" bg="light" title="Wat betekent dit voor je toegankelijkheidsverklaring?" >}}
+{{< section-cards columns="3" bg="light" title="Wat betekent dit voor je toegankelijkheidsverklaring?" id="verklaring" >}}
 {{< section-card title="Vijf statussen in het Register" >}}
 
 - **A:** je voldoet volledig
@@ -124,7 +135,7 @@ deelonderzoek.
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-full title="Wat houdt een onafhankelijk toegankelijkheidsonderzoek in?" >}}
+{{< section-full title="Wat houdt een onafhankelijk toegankelijkheidsonderzoek in?" id="onderzoek" >}}
 
 Een onafhankelijk toegankelijkheidsonderzoek is een handmatige toets aan WCAG 2.2, niveau A en
 AA, uitgevoerd door een partij die het kanaal niet zelf heeft gebouwd of beheert. Het Register
