@@ -191,7 +191,7 @@ Een [toegankelijkheidsverklaring in het Register](/toegankelijkheidsverklaring-o
 
 {{< /section-route >}}
 
-{{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
+{{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wat we per stap voor je doen" subtitle="We helpen bij alle vier de stappen. Per stap zie je wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
 {{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.175 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
 We toetsen je website, webshop of app handmatig volgens WCAG-EM, de evaluatiemethode van het W3C. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.
