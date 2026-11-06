@@ -30,6 +30,9 @@ howto:
 
 Ja. Overheidswebsites zijn al sinds 2018 verplicht om te voldoen aan WCAG 2.1 niveau AA. Dit is vastgelegd in het Besluit digitale toegankelijkheid overheid (BDTO).
 
+Voor gemeenten en andere overheidsorganisaties staat de praktische route op onze pagina over
+[toegankelijkheidsonderzoek voor overheidsorganisaties](/digitale-toegankelijkheid-overheid/).
+
 ## Wat is de huidige stand van zaken?
 
 Ondanks dat de verplichting al jaren geldt, voldoen veel overheidswebsites nog niet volledig. Uit de meest recente monitor van Logius blijkt dat een groot deel van de toegankelijkheidsverklaringen de status "B" of "C" heeft. Dat betekent dat er nog substantiële problemen zijn.
@@ -81,5 +84,9 @@ De route is:
 5. **Verklaring updaten**: pas je status aan in het register
 
 Wij helpen overheden door dit hele traject heen. Van de eerste audit tot de hercontrole en de nabespreking.
+
+Wil je een rapport dat je toegankelijkheidsverklaring onderbouwt? Lees dan hoe een
+[toegankelijkheidsonderzoek voor overheidsorganisaties](/digitale-toegankelijkheid-overheid/)
+wordt uitgevoerd.
 
 Wil je weten waar je website nu staat? [Vraag een mini-audit aan](/webshop-quickscan/) (495 euro exclusief btw). Dan heb je snel een eerste beeld.

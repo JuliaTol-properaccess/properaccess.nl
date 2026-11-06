@@ -21,6 +21,8 @@ keywords:
 
 Kort antwoord: waarschijnlijk wel. De [European Accessibility Act (EAA)](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882) is op 28 juni 2025 van kracht geworden en geldt voor vrijwel alle webshops die producten of diensten verkopen aan consumenten.
 
+Wil je weten wat dit voor je eigen webshop betekent? Bekijk de pagina over [e-commerce en digitale toegankelijkheid](/e-commerce-digitale-toegankelijkheid/).
+
 ## Wat is de EAA?
 
 De EAA (in Nederland omgezet met de Implementatiewet toegankelijkheidsvoorschriften producten en diensten, Staatsblad 2024, 87) verplicht bedrijven om hun digitale producten en diensten toegankelijk te maken voor mensen met een beperking. De wet is gebaseerd op de [Europese norm EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf). Versie V3.2.1 van die norm verwijst naar [WCAG 2.1 niveau A en AA](https://www.w3.org/TR/WCAG21/). Bij Proper Access toetsen we op WCAG 2.2, een versie hoger dan die norm vraagt.
