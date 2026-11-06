@@ -3,7 +3,6 @@ title: "Testen tijdens de bouw"
 meta_title: "Toegankelijkheid testen tijdens development: sprint-testing | Proper Access"
 weight: 8
 date: 2025-07-13
-layout: "second-page"
 slug: "toegankelijkheid-testen-tijdens-de-bouw"
 url: "/toegankelijkheid-testen-tijdens-de-bouw/"
 description: "Toegankelijkheidstesten tijdens de bouw of redesign van je website. Handmatige WCAG-tests in de sprint, met directe feedback voor developers."
@@ -16,8 +15,6 @@ service:
   serviceType: "Toegankelijkheidstesten tijdens development"
 
 ---
-
-# Testen tijdens de (her)bouw van een website
 
 Wil je digitale toegankelijkheid goed aanpakken? Begin dan tijdens de bouw of major update van een website. Wij zijn jouw QA-partner binnen de sprint – gericht op toegankelijkheid én resultaat.
 
