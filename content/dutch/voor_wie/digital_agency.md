@@ -62,7 +62,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van het project. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau kan een agency inschakelen voor een onafhankelijk toegankelijkheidsonderzoek van een klantproject?"
-    answer: "Proper Access doet dat. We toetsen websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/), [Wirelab](https://wirelab.nl/), [Curious Mind](https://www.curiousmind.se/) en [Onstuimig](https://onstuimig.nl/)."
+    answer: "Bij Proper Access toetsen we websites, webshops en apps van jullie klanten volgens WCAG-EM aan WCAG 2.2 niveau AA, en op een staging-omgeving als het project nog niet live is. Omdat we zelf niets bouwen of beheren, is het rapport bruikbaar als onafhankelijk bewijs richting jullie klant en richting toezicht. We werken onder meer samen met [Fabrique](https://www.fabrique.nl/), [Q42](https://www.q42.nl/), [Wirelab](https://wirelab.nl/), [Curious Mind](https://www.curiousmind.se/) en [Onstuimig](https://onstuimig.nl/)."
 paginanav:
   - label: "Werkwijze"
     id: "werkwijze"

@@ -276,16 +276,12 @@
         <a href="mailto:info@properaccess.nl">info@properaccess.nl</a> of laat hiernaast je gegevens achter.
         Je hoort binnen 1 werkdag van ons.
       </p>
-      <ul class="hb-contact__mensen">
-        <li class="hb-persoon">
-          <img class="hb-persoon__foto" src="{{ "images/julia.webp" | relURL }}" alt="" width="64" height="64" loading="lazy">
-          <span><span class="hb-contact__naam">Julia Tol</span><span class="hb-contact__functie">Directeur</span></span>
-        </li>
-        <li class="hb-persoon">
-          <img class="hb-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="64" height="64" loading="lazy">
+      <div class="hb-contact__mensen">
+        <div class="hb-persoon">
+          <img class="hb-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="96" height="96" loading="lazy">
           <span><span class="hb-contact__naam">Phi Pham</span><span class="hb-contact__functie">Projectmanager</span></span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <form
@@ -647,8 +643,8 @@
     border-top: 1px solid rgba(255,255,255,0.35);
   }
   .hb-contact__mensen li { margin: 0; }
-  .hb-persoon { display: flex; align-items: center; gap: 14px; }
-  .hb-persoon__foto { width: 64px; height: 64px; object-fit: cover; border-radius: 999px; }
+  .hb-persoon { display: flex; align-items: center; gap: 18px; }
+  .hb-persoon__foto { width: 96px; height: 96px; object-fit: cover; border-radius: 999px; }
   .hb-contact__naam { display: block; font-family: var(--kop); font-weight: 800; font-size: 15px; }
   .hb-contact__functie { display: block; font-size: 13px; color: #F7DCE6; }
 

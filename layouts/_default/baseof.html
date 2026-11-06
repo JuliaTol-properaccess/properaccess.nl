@@ -60,7 +60,8 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    {{ partial "source-context.html" . }}
+    {{/* layout: landing toont de bron zelf, in de sectie "bron". */}}
+    {{ if ne .Layout "landing" }}{{ partial "source-context.html" . }}{{ end }}
 
     <!-- footer -->
     {{ if or $nieuw .Params.footer_groot }}

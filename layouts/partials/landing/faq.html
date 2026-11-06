@@ -1,0 +1,6 @@
+{{/* Veelgestelde vragen. Gebruikt faq-blok.html, dus het veld faqs van de
+     pagina (dat ook het FAQPage-schema voedt) en de donkerblauwe huisstijl.
+     Het blok krijgt id="vragen" als de pagina een paginanav heeft. */}}
+<div class="lp-faq">
+  {{ partial "faq-blok.html" (dict "page" .page "kop" (.s.title | default "Veelgestelde vragen")) }}
+</div>

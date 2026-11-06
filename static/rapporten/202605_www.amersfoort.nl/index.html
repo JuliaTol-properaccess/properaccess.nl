@@ -536,29 +536,6 @@
 <h4>Oplossing:</h4>
 <p>Vertaal de teksten van de <code>aria-label</code>-attributen naar het Nederlands, zodat schermlezers ze correct voorlezen.</p>
 </div>
-<div class="issue">
-<h3>#13 - Decoratieve afbeeldingen zijn niet verborgen voor schermlezers</h3>
-<div class="meta">  
-	<span class="impact"><b>Impact</b>: Medium</span>  
-	<span class="type"><b>Type</b>: Content</span>  
-	<span class="type"><b>WCAG</b>: 1.1.1</span>  
-	<span class="type"><b>EN</b>: 9.1.1.1</span>  
-</div>
-<figure class="screenshot">
-<img src="images/3.webp" alt="">
-</figure>
-<p>Op deze pagina staan onder de kop &quot;College en gemeenteraad&quot; decoratieve afbeeldingen met een leeg tekstalternatief (<code>alt=&quot;&quot;</code>). Een leeg <code>alt</code>-attribuut geeft aan dat een afbeelding decoratief is, maar deze afbeeldingen zijn nog steeds bereikbaar voor hulpsoftware. Een bezoeker die met een schermlezer afbeelding voor afbeelding doorloopt, krijgt ze daardoor als naamloze afbeeldingen aangekondigd. Decoratieve afbeeldingen hebben geen informatieve waarde en moeten volledig verborgen worden voor schermlezers.</p>
-<h4>User story</h4>
-<blockquote>
-<p><i>Als bezoeker die de pagina via een schermlezer hoort, of die afhankelijk is van een schone en voorspelbare leesvolgorde, heb ik nodig dat elke puur decoratieve afbeelding volledig verborgen is voor hulpsoftware — want zolang een decoratieve afbeelding bereikbaar blijft, wordt hij aangekondigd als een naamloze afbeelding, wordt mijn leesstroom onderbroken door inhoud die ik niet nodig heb, en kan ik niet meer in één oogopslag bepalen welke aankondigingen informatie bevatten en welke niet.</i></p>
-</blockquote>
-<h4>Oplossing:</h4>
-<p>Dit kan op verschillende manieren:</p>
-<ul>
-<li>Voeg bij <code>&lt;img&gt;</code>-elementen naast een leeg <code>alt</code>-attribuut (<code>alt=&quot;&quot;</code>) ook <code>aria-hidden=&quot;true&quot;</code> toe, of gebruik <code>role=&quot;presentation&quot;</code> (of <code>role=&quot;none&quot;</code>). Zorg dat er geen <code>title</code>-attribuut aanwezig is, omdat dat alsnog een naam aan de afbeelding geeft.</li>
-<li>Implementeer de decoratie als CSS-achtergrondafbeelding in plaats van als <code>&lt;img&gt;</code>-element, zodat deze geen onderdeel meer is van de documentinhoud.</li>
-</ul>
-</div>
 
           </article>
           
@@ -594,28 +571,6 @@ De toegankelijkheidsproblemen op deze pagina zijn hierboven al beschreven.</p>
               <p></p>
             </div>
             <p>Link naar pagina: <a href="https://www.amersfoort.nl/belastingen"><a href="https://www.amersfoort.nl/belastingen">https://www.amersfoort.nl/belastingen</a></a></p>
-<div class="issue">
-<h3>#14 - Koptekst is onduidelijk</h3>
-<div class="meta">  
-	<span class="impact"><b>Impact</b>: Medium</span>  
-	<span class="type"><b>Type</b>: Content</span>  
-	<span class="type"><b>WCAG</b>: 2.4.6</span>  
-	<span class="type"><b>EN</b>: 9.2.4.6</span>  
-</div>
-<p>Op deze pagina beschrijft de kop &quot;Zie ook&quot; de inhoud die volgt onvoldoende. Koppen als &quot;Snel naar&quot;, &quot;Direct naar&quot; en &quot;Ga naar&quot; zijn te algemeen en geven geen betekenisvolle informatie over het onderwerp van de inhoud. Bezoekers met een schermlezer gebruiken koppen om de structuur van de pagina te begrijpen en snel relevante inhoud te vinden. Koppen moeten daarom duidelijk en concreet zijn en het onderwerp van de volgende inhoud goed weergeven.</p>
-<p>Hetzelfde probleem komt voor op de pagina's:</p>
-<ul>
-<li><a href="https://www.amersfoort.nl/paspoort"><a href="https://www.amersfoort.nl/paspoort">https://www.amersfoort.nl/paspoort</a></a></li>
-<li><a href="https://www.amersfoort.nl/tarieven-gemeentelijke-belastingen"><a href="https://www.amersfoort.nl/tarieven-gemeentelijke-belastingen">https://www.amersfoort.nl/tarieven-gemeentelijke-belastingen</a></a></li>
-</ul>
-<p>en op andere pagina's.</p>
-<h4>User story</h4>
-<blockquote>
-<p><i>Als bezoeker die de pagina scant door met een schermlezer van kop naar kop te springen, heb ik nodig dat elke kop echt iets zegt over de sectie eronder — niet algemene aanwijzingen als &quot;Ga naar&quot;, &quot;Direct naar&quot; of &quot;Snel naar&quot; die alleen aangeven dat er links volgen — want álle koppen in een lijst met links zijn al &quot;links naar andere pagina's&quot;, en een kop die dat als enige zegt, geeft mij geen idee over welke groep links ik nu kijk.</i></p>
-</blockquote>
-<h4>Oplossing:</h4>
-<p>Vervang de vage koppen door beschrijvende koppen die duidelijk het onderwerp van de bijbehorende sectie weergeven.</p>
-</div>
 
           </article>
           

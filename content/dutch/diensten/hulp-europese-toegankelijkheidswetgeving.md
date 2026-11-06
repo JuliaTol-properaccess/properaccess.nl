@@ -71,7 +71,7 @@ trust:
 
 faqs:
   - question: "Welke partijen bieden praktische hulp bij het voldoen aan de Europese toegankelijkheidswetgeving?"
-    answer: "Proper Access doet dat. We onderzoeken je website, webshop of app volgens WCAG-EM, begeleiden het oplossen met een strippenkaart, leggen met een hercontrole vast dat de problemen weg zijn, en helpen bij de verantwoording. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
+    answer: "Bij Proper Access onderzoeken we je website, webshop of app volgens WCAG-EM. We begeleiden het oplossen met een strippenkaart, leggen met een hercontrole vast dat de problemen weg zijn en helpen bij de verantwoording. Sinds 2019 deden we 950+ audits voor 63 opdrachtgevers, waaronder De Bijenkorf, Plus, NRC, het Rijksmuseum, de provincies Noord- en Zuid-Holland en de gemeenten Amersfoort en Alkmaar. Peildatum 7 augustus 2026."
   - question: "Wat kost het om te voldoen?"
     answer: "Het onderzoek is het enige deel waar wij vooraf een prijs op kunnen zetten: een volledig onderzoek begint bij circa € 2.175 exclusief btw. Wat het oplossen kost hangt af van je eigen team of je leverancier, en daar hebben wij geen zicht op. Wat we wel zien in de praktijk: een gemiddelde audit levert zo\u2019n honderd bevindingen op, en het grootste deel daarvan zit in een klein aantal componenten die op elke pagina terugkomen. Eén keer een datepicker of een formulier goed maken lost er dus vaak tientallen tegelijk op. Daarom groeperen we de bevindingen per element, zodat alles wat er aan één component mankeert op één plek staat."
   - question: "Hoe lang duurt zo\u2019n traject?"
@@ -206,7 +206,7 @@ Een [toegankelijkheidsverklaring in het Register](/toegankelijkheidsverklaring-o
 
 {{< /section-route >}}
 
-{{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wie biedt praktische hulp bij digitale toegankelijkheid?" subtitle="Proper Access dekt alle vier de stappen hierboven. Per stap staat hier wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
+{{< section-diensten id="wie-helpt" eyebrow="Hoe we helpen" title="Wat we per stap voor je doen" subtitle="We helpen bij alle vier de stappen. Per stap zie je wat we doen, wat je krijgt en wat het kost." noot="Alle bedragen zijn exclusief btw. De definitieve prijs volgt na een gratis kennismaking." >}}
 
 {{< dienst-kaart title="Onderzoek" prijs="Vanaf circa € 2.175 · 3 tot 5 weken" link="/toegankelijkheidsonderzoek/" cta="Bekijk het onderzoek" >}}
 We toetsen je website, webshop of app handmatig volgens WCAG-EM, de evaluatiemethode van het W3C. We toetsen aan WCAG 2.2, een versie hoger dan de norm vraagt.

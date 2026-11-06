@@ -1,0 +1,15 @@
+{{/* Donker CTA-blok. Velden: id, title, text, buttons[] (zie _knoppen.html;
+     gebruik variant licht en spook op de donkere achtergrond). */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+<section class="lp-cta"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap">
+    <div class="lp-cta__blok">
+      <div class="lp-cta__tekst">
+        <h2 class="lp-cta__titel" id="{{ $kopid }}">{{ $s.title }}</h2>
+        {{ with $s.text }}<p>{{ . | markdownify }}</p>{{ end }}
+      </div>
+      {{ partial "landing/_knoppen.html" $s.buttons }}
+    </div>
+  </div>
+</section>

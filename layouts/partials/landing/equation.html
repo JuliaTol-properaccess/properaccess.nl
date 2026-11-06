@@ -1,0 +1,36 @@
+{{/* Kop met een som ernaast (A + B = C), twee kaarten met een label en een slottekst.
+     Velden: id, bg, eyebrow, title, intro,
+     som[]: {label, sub, accent (laatste term, magenta vlak)}; tussen de termen
+     komt "+" en voor de laatste "=",
+     items[]: {label, title, text}, slot */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+{{ $n := len $s.som }}
+<section class="lp-sectie{{ if eq $s.bg "grijs" }} lp-sectie--grijs{{ end }}"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap lp-stapel">
+    <div class="lp-som-kop">
+      {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+      {{ with $s.som }}
+      <p class="lp-som">
+        {{ range $j, $t := . }}
+          {{ if gt $j 0 }}
+            {{ if eq (add $j 1) $n }}<span class="lp-som__teken"><span aria-hidden="true">=</span><span class="sr-only">is</span></span>
+            {{ else }}<span class="lp-som__teken"><span aria-hidden="true">+</span><span class="sr-only">plus</span></span>{{ end }}
+          {{ end }}
+          <span class="lp-som__term{{ if $t.accent }} lp-som__term--accent{{ end }}">{{ $t.label }}<span class="lp-som__sub">{{ $t.sub }}</span></span>
+        {{ end }}
+      </p>
+      {{ end }}
+    </div>
+    <ul class="lp-cards lp-cards--2 lp-cards--rand">
+      {{ range $s.items }}
+      <li class="lp-card lp-card--label">
+        {{ with .label }}<span class="lp-label">{{ . }}</span>{{ end }}
+        <h3 class="lp-card__titel">{{ .title }}</h3>
+        {{ with .text }}<p class="lp-card__tekst">{{ . | markdownify }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ with $s.slot }}<p class="lp-slot lp-slot--gewoon">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</section>
