@@ -1,0 +1,9 @@
+{{/* Grote kop links, lopende tekst rechts.
+     Velden: id, lead (de grote zin links), text (markdown, rechts). */}}
+{{ $s := .s }}
+<section class="lp-sectie"{{ with $s.id }} id="{{ . }}"{{ end }}>
+  <div class="lp-wrap lp-split">
+    <p class="lp-split__lead">{{ $s.lead | markdownify }}</p>
+    <div class="lp-split__tekst">{{ $s.text | markdownify }}</div>
+  </div>
+</section>

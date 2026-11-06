@@ -1,0 +1,43 @@
+{{/* Welke wet geldt: twee keuzekaarten, een grijs blok met een genummerde
+     lijst, een donker blok met knop, en een slottekst.
+     Velden: id, eyebrow, title, intro,
+     keuzes[] {kicker, title, text},
+     uitleg {title, text, punten[], na},
+     donker {title, text, button {label, link}},
+     slot (markdown) */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+<section class="lp-sectie"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap lp-stapel">
+    {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+    <div class="lp-wet">
+      <ul class="lp-wet__keuzes">
+        {{ range $s.keuzes }}
+        <li class="lp-wet__keuze">
+          {{ with .kicker }}<span class="lp-wet__kicker">{{ . }}</span>{{ end }}
+          <h3 class="lp-wet__titel">{{ .title }}</h3>
+          <p class="lp-wet__tekst">{{ .text | markdownify }}</p>
+        </li>
+        {{ end }}
+      </ul>
+      <div class="lp-wet__rij">
+        {{ with $s.uitleg }}
+        <div class="lp-wet__uitleg">
+          <h3 class="lp-wet__blokkop">{{ .title }}</h3>
+          {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .punten }}<ol class="lp-wet__punten">{{ range . }}<li>{{ . }}</li>{{ end }}</ol>{{ end }}
+          {{ with .na }}<p>{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ end }}
+        {{ with $s.donker }}
+        <div class="lp-wet__donker">
+          <h3 class="lp-wet__blokkop">{{ .title }}</h3>
+          {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .button }}{{ partial "landing/_knoppen.html" (slice (dict "label" .label "link" .link "variant" "licht" "pijl" true)) }}{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ with $s.slot }}<p class="lp-wet__slot">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</section>

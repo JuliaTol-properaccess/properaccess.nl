@@ -1,0 +1,14 @@
+{{/* Knoppenrij. Context: lijst met items {label, link, variant, pijl}.
+     variant: primary (magenta, standaard), outline (wit met rand),
+     licht (wit op donker), spook (rand op donker). pijl: true toont een pijl. */}}
+{{ with . }}
+<div class="lp-knoppen">
+  {{ range . }}
+  {{ $extern := hasPrefix .link "http" }}
+  <a class="lp-knop lp-knop--{{ .variant | default "primary" }}" href="{{ .link }}"{{ if $extern }} rel="noopener"{{ end }}>
+    {{- .label -}}
+    {{ if .pijl }}<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>{{ end }}
+  </a>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+{{/* Kaarten in een raster.
+     Velden: id, bg (grijs|wit), eyebrow, title, intro, columns (2|3|4),
+     numbered (true: 01, 02 … en een <ol>), stijl (vlak: witte kaart op grijs,
+     rand: kaart met rand), slot (markdown onder de kaarten),
+     extra (partial uit landing/ tussen kaarten en slot, bv. status-bar),
+     items[]: {kicker, title, text, icon (Font Awesome-klasse), link, linklabel}.
+     Met een link wordt de hele kaart klikbaar; de link zit op de kop. */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+{{ $lijst := cond (eq $s.numbered true) "ol" "ul" }}
+<section class="lp-sectie{{ if eq $s.bg "grijs" }} lp-sectie--grijs{{ end }}"{{ with $s.id }} id="{{ . }}"{{ end }}{{ if $s.title }} aria-labelledby="{{ $kopid }}"{{ end }}>
+  <div class="lp-wrap lp-stapel">
+    {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+    {{ printf "<%s class=\"lp-cards lp-cards--%v lp-cards--%s\">" $lijst ($s.columns | default 3) ($s.stijl | default "vlak") | safeHTML }}
+      {{ range $n, $k := $s.items }}
+      <li class="lp-card{{ if $k.link }} lp-card--link{{ end }}">
+        {{ if $s.numbered }}<span class="lp-card__nr" aria-hidden="true">{{ printf "%02d" (add $n 1) }}</span>{{ end }}
+        {{ with $k.icon }}<span class="lp-card__icoon" aria-hidden="true"><i class="{{ . }}"></i></span>{{ end }}
+        {{ with $k.kicker }}<span class="lp-card__kicker">{{ . }}</span>{{ end }}
+        <h3 class="lp-card__titel">
+          {{- if $k.link -}}<a href="{{ $k.link }}">{{ $k.title }}</a>{{- else -}}{{ $k.title }}{{- end -}}
+        </h3>
+        {{ with $k.text }}<p class="lp-card__tekst">{{ . | markdownify }}</p>{{ end }}
+        {{ with $k.linklabel }}<span class="lp-card__linklabel"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+      </li>
+      {{ end }}
+    {{ printf "</%s>" $lijst | safeHTML }}
+    {{ with $s.extra }}{{ partial (printf "landing/%s.html" .) (dict "s" $s "page" $.page "i" $.i) }}{{ end }}
+    {{ with $s.slot }}<p class="lp-slot">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</section>

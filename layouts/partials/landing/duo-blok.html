@@ -1,0 +1,19 @@
+{{/* Rij met een donker blok (groot getal) en een wit blok (icoon), onder
+     kaarten. Aanroepen via cards: extra: duo-blok.
+     Velden in de sectie: duo {donker {getal, kop, text}, licht {icon, kop, text}} */}}
+{{ with .s.duo }}
+<div class="lp-duo">
+  {{ with .donker }}
+  <div class="lp-duo__blok lp-duo__blok--donker">
+    <span class="lp-duo__getal">{{ .getal }}</span>
+    <p><strong>{{ .kop }}</strong> {{ .text | markdownify }}</p>
+  </div>
+  {{ end }}
+  {{ with .licht }}
+  <div class="lp-duo__blok">
+    {{ with .icon }}<span class="lp-duo__icoon" aria-hidden="true"><i class="{{ . }}"></i></span>{{ end }}
+    <p><strong>{{ .kop }}</strong> {{ .text | markdownify }}</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

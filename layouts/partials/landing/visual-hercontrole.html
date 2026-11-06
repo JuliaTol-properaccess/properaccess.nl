@@ -1,0 +1,31 @@
+{{/* Hero-visual voor /hercontrole/: een hercontrolerapport met de status per
+     bevinding. Een illustratie in HTML, voor hulpsoftware één afbeelding met
+     een beschrijving. Statuskleuren alleen uit het palet, het label draagt de
+     betekenis (zie .lp-status in landing.css). */}}
+{{ $rijen := slice
+  (dict "titel" "Label ontbreekt bij invoerveld" "sc" "WCAG 1.3.1" "status" "opgelost" "label" "Opgelost")
+  (dict "titel" "Knop heeft geen naam" "sc" "WCAG 4.1.2" "status" "deels" "label" "Deels opgelost")
+  (dict "titel" "Focus niet zichtbaar" "sc" "WCAG 2.4.7" "status" "niet" "label" "Niet opgelost")
+  (dict "titel" "Focus-trap in nieuwe modal" "sc" "WCAG 2.1.2" "status" "nieuw" "label" "Nieuw")
+}}
+<div class="lp-rapport" role="img" aria-label="Illustratie: een hercontrolerapport waarin elke eerdere bevinding een nieuwe status heeft gekregen: opgelost, deels opgelost, niet opgelost of nieuw">
+  <div class="lp-rapport__kop">
+    <span class="lp-rapport__titel">Hercontrole · status per bevinding</span>
+    <span class="lp-rapport__aantal">12 bevindingen</span>
+  </div>
+  <div class="lp-rapport__samenvatting">
+    <div class="lp-rapport__balk">
+      <span class="lp-rapport__deel lp-rapport__deel--opgelost" style="width:66%"></span>
+      <span class="lp-rapport__deel lp-rapport__deel--deels" style="width:17%"></span>
+      <span class="lp-rapport__deel lp-rapport__deel--niet" style="width:9%"></span>
+      <span class="lp-rapport__deel lp-rapport__deel--nieuw" style="width:8%"></span>
+    </div>
+    <div class="lp-rapport__legenda"><span>8 opgelost</span><span>2 deels</span><span>1 niet opgelost</span><span>1 nieuw</span></div>
+  </div>
+  {{ range $rijen }}
+  <div class="lp-rapport__rij">
+    <span class="lp-rapport__bevinding"><strong>{{ .titel }}</strong><span>{{ .sc }}</span></span>
+    <span class="lp-status lp-status--{{ .status }}">{{ .label }}</span>
+  </div>
+  {{ end }}
+</div>

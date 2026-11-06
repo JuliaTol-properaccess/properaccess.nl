@@ -1,0 +1,9 @@
+{{/* Kop van een sectie: eyebrow, h2 en intro. Context: dict "s" (sectie) "id" (id voor de h2). */}}
+{{ $s := .s }}
+{{ if or $s.eyebrow $s.title $s.intro }}
+<div class="lp-kop">
+  {{ with $s.eyebrow }}<p class="lp-eyebrow">{{ . }}</p>{{ end }}
+  {{ with $s.title }}<h2 class="lp-h2" id="{{ $.id }}">{{ . | markdownify }}</h2>{{ end }}
+  {{ with $s.intro }}<p class="lp-kop__intro">{{ . | markdownify }}</p>{{ end }}
+</div>
+{{ end }}

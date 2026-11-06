@@ -1,0 +1,28 @@
+{{/* Landingspagina opgebouwd uit secties in de front matter.
+
+     Front matter:
+       layout: landing
+       sections:
+         - type: hero
+           ...
+         - type: cards
+           ...
+
+     Elk item rendert de partial landing/<type>.html. Die krijgt een dict mee:
+       s     het sectie-item uit de front matter
+       page  de pagina
+       i     de volgnummer van de sectie (voor unieke id's)
+     Een onbekend type laat de build falen, zodat een tikfout niet stil een
+     sectie weglaat. De opmaak staat in assets/css/landing.css (prefix lp-). */}}
+{{ define "main" }}
+<div class="lp">
+  {{ range $i, $s := .Params.sections }}
+    {{ $naam := printf "landing/%s.html" $s.type }}
+    {{ if templates.Exists (printf "partials/%s" $naam) }}
+      {{ partial $naam (dict "s" $s "page" $ "i" $i) }}
+    {{ else }}
+      {{ errorf "landing: onbekend sectietype %q op %s" $s.type $.File.Path }}
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
