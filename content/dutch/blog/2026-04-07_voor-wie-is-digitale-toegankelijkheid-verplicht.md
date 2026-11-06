@@ -44,6 +44,10 @@ Dat laatste is een juridisch begrip uit het aanbestedingsrecht, en geen kwestie 
 **Waar je verklaring terechtkomt**
 In het Register van Toegankelijkheidsverklaringen. Logius beheert dat Register en de omgeving DigiToegankelijk waarmee je de verklaring invult. Logius is geen toezichthouder.
 
+Werk je bij een gemeente, provincie of andere overheidsorganisatie? Bekijk dan het
+[toegankelijkheidsonderzoek voor overheidsorganisaties](/digitale-toegankelijkheid-overheid/),
+met de route van onderzoek naar verklaring.
+
 ## Bedrijfsleven: de EAA
 
 De **European Accessibility Act** (EAA) geldt sinds 28 juni 2025 voor bedrijven die producten of diensten aanbieden aan consumenten. Dat omvat:

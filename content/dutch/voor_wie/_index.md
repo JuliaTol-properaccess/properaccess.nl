@@ -29,6 +29,10 @@ geen van. Twijfel je, dan kijken we daar samen naar voordat we een offerte maken
 Onder allebei de wetten ligt dezelfde norm: EN 301 549, die in versie V3.2.1 verwijst naar
 WCAG 2.1 niveau A en AA. Wij toetsen aan WCAG 2.2, als extra service boven die norm.
 
+Wil je direct weten welk onderzoek bij jouw situatie past? Bekijk het [overzicht van
+toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/). Voor de algemene uitleg over
+wat je zelf kunt doen staat er één [pagina over digitale toegankelijkheid](/digitale-toegankelijkheid/).
+
 Wil je weten wat dat voor jouw organisatie betekent, lees dan verder over
 [de European Accessibility Act](/eaa/) of over
 [hulp bij digitale toegankelijkheid](/hulp-bij-europese-toegankelijkheidswetgeving/), van

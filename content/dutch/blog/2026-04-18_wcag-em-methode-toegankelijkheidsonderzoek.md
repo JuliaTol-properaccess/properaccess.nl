@@ -39,6 +39,10 @@ Als je een toegankelijkheidsonderzoek laat uitvoeren, komt er vaak een term lang
 
 WCAG zegt **wát** je moet toetsen. WCAG-EM zegt **hoe** je dat doet. Dat tweede is net zo belangrijk, want zonder een vaste methode kan iedereen z'n eigen conclusies trekken en is een audit niet vergelijkbaar of controleerbaar.
 
+Wil je niet alleen de methode begrijpen maar een onderzoek laten uitvoeren? Bekijk dan het
+[overzicht van toegankelijkheidsonderzoeken](/toegankelijkheidsonderzoek/) met de verschillende
+onderzoekstypen, scope en prijs.
+
 ## Waarom WCAG-EM bestaat
 
 Stel dat drie auditors dezelfde website onderzoeken. Zonder methode kiest de een alleen de homepage, de ander tien willekeurige pagina's, de derde alleen het contactformulier. Ze komen met drie verschillende lijsten problemen en drie verschillende conclusies. Wie heeft gelijk?

@@ -32,6 +32,9 @@ image: "/images/blog/webshop-wireframe-eaa.svg"
 
 Sinds 28 juni 2025 is de [European Accessibility Act (EAA)](/eaa/) van kracht. En ja, die geldt ook voor jouw webshop. Toch merk ik dat veel webshophouders nog niet weten wat ze precies moeten doen.
 
+De praktische route voor webshops staat op onze pagina over [e-commerce en digitale toegankelijkheid](/e-commerce-digitale-toegankelijkheid/).
+Daar lees je wat we testen en hoe een onderzoek naar je webshop eruitziet.
+
 Je online winkel moet voldoen aan **WCAG 2.1**, niveau A en AA samen: 50 succescriteria. Dat is wat EN 301 549 V3.2.1 voorschrijft. In de praktijk adviseer ik om te toetsen op WCAG 2.2. Die versie voegde negen criteria toe, waarvan er zes op niveau A en AA vallen, en een aantal daarvan raakt precies waar het in een webshop misgaat: doelgebiedgrootte, consistente hulp, overtollige invoer en toegankelijke authenticatie. Zo doen we het bij Proper Access ook, een versie hoger dan die norm vraagt.
 
 ## Voor wie geldt de EAA?
