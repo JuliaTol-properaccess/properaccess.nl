@@ -1,0 +1,19 @@
+{{/* Bron en actualiteit, uit de front matter "source_context". */}}
+{{ with .page.Params.source_context }}
+<aside class="lp-bron" aria-labelledby="lp-bron-kop">
+  <div class="lp-wrap lp-bron__grid">
+    <div class="lp-bron__kolom">
+      <h2 class="lp-bron__kop" id="lp-bron-kop">{{ .title }}</h2>
+      <p>{{ .updated_label }}: <time datetime="{{ .date }}">{{ .date_display }}</time>. {{ .expert | markdownify }}</p>
+    </div>
+    <div class="lp-bron__kolom">
+      <p class="lp-bron__kop">{{ .sources_label }}</p>
+      <ul>
+        {{ range .sources }}
+        <li><a href="{{ .url }}"{{ if hasPrefix .url "http" }} rel="noopener noreferrer"{{ end }}>{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</aside>
+{{ end }}

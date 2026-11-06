@@ -1,0 +1,26 @@
+{{/* Hero-visual voor /onderwijs-digitale-toegankelijkheid/: een digitale toets
+     met een popup over wat een schermlezer mist. Een illustratie in HTML, voor
+     hulpsoftware één afbeelding met een beschrijving. De gestippelde magenta
+     randen wijzen de twee problemen aan. */}}
+<div class="lp-toets" role="img" aria-label="Illustratie: een digitale toets met een vraag en drie antwoorden. Een schermlezer mist twee dingen: de antwoorden zijn niet aan de vraag gekoppeld, en de resterende tijd wordt nooit genoemd.">
+  <div class="lp-toets__scherm">
+    <div class="lp-toets__kop">
+      <span class="lp-toets__titel">Toets · Statistiek 1</span>
+      <span class="lp-toets__tijd lp-toets__probleem"><i class="fa-regular fa-clock"></i> 24:12</span>
+    </div>
+    <div class="lp-toets__body">
+      <span class="lp-toets__teller">Vraag 4 van 20</span>
+      <span class="lp-toets__vraag">Welke maat is het minst gevoelig voor uitschieters?</span>
+      <span class="lp-toets__antwoorden lp-toets__probleem">
+        <span class="lp-toets__antwoord">Gemiddelde</span>
+        <span class="lp-toets__antwoord">Mediaan</span>
+        <span class="lp-toets__antwoord">Spreidingsbreedte</span>
+      </span>
+    </div>
+  </div>
+  <div class="lp-toets__popup">
+    <span class="lp-toets__popupkop">Wat een schermlezer mist</span>
+    <span class="lp-toets__punt"><span>1</span>Antwoorden zijn niet aan de vraag gekoppeld</span>
+    <span class="lp-toets__punt"><span>2</span>De resterende tijd wordt nooit genoemd</span>
+  </div>
+</div>

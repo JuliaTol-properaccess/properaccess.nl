@@ -1,0 +1,28 @@
+{{/* Prijs in twee kaarten (donker en wit) met een notitieregel eronder.
+     Velden: id, bg, eyebrow, title, intro,
+     donker: {kicker, prijs, text}, licht: {kicker, prijs, text},
+     notitie: {icon (Font Awesome-klasse), kop, text} */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+<section class="lp-sectie{{ if eq $s.bg "grijs" }} lp-sectie--grijs{{ end }}"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap lp-stapel lp-stapel--40">
+    {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+    <div class="lp-prijs">
+      {{ range $variant := slice "donker" "licht" }}
+      {{ with index $s $variant }}
+      <div class="lp-prijs__kaart lp-prijs__kaart--{{ $variant }}">
+        {{ with .kicker }}<p class="lp-prijs__kicker">{{ . }}</p>{{ end }}
+        <p class="lp-prijs__bedrag">{{ .prijs }}</p>
+        {{ with .text }}<p class="lp-prijs__tekst">{{ . | markdownify }}</p>{{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ with $s.notitie }}
+    <div class="lp-notitie">
+      <span class="lp-notitie__icoon" aria-hidden="true"><i class="{{ .icon | default "fa-regular fa-calendar" }}"></i></span>
+      <p>{{ with .kop }}<strong>{{ . }}</strong> {{ end }}{{ .text | markdownify }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>

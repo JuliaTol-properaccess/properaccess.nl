@@ -1,0 +1,18 @@
+{{/* Kerncijfers in vier tegels, met peildatum.
+     Velden: items[] {getal, label} (standaard de vaste cijfers), peildatum. */}}
+{{ $s := .s }}
+{{ $items := $s.items | default (slice
+  (dict "getal" "950+" "label" "Websites geaudit")
+  (dict "getal" "50+" "label" "Apps geaudit")
+  (dict "getal" "63" "label" "Opdrachtgevers")
+  (dict "getal" "40%" "label" "Herhalingsklanten")) }}
+<section class="lp-feiten" aria-label="Proper Access in cijfers">
+  <div class="lp-wrap">
+    <ul class="lp-feiten__lijst">
+      {{ range $items }}
+      <li class="lp-feit"><span class="lp-feit__getal">{{ .getal }}</span> <span class="lp-feit__label">{{ .label }}</span></li>
+      {{ end }}
+    </ul>
+    <p class="lp-feiten__peildatum">Peildatum {{ $s.peildatum | default "7 augustus 2026" }}.</p>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{{/* Tijdlijn met punten naast elkaar (op mobiel onder elkaar).
+     Velden: id, bg, eyebrow, title, intro,
+     items[]: {title, text, accent (magenta punt), eind (petrol punt, geen lijn erna)} */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+<section class="lp-sectie{{ if eq $s.bg "grijs" }} lp-sectie--grijs{{ end }}"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap lp-stapel">
+    {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+    <ol class="lp-tijdlijn">
+      {{ range $s.items }}
+      <li class="lp-tijdlijn__punt{{ if .accent }} lp-tijdlijn__punt--accent{{ end }}{{ if .eind }} lp-tijdlijn__punt--eind{{ end }}">
+        <span class="lp-tijdlijn__markering" aria-hidden="true"><span class="lp-tijdlijn__stip"></span><span class="lp-tijdlijn__lijn"></span></span>
+        <h3 class="lp-tijdlijn__titel">{{ .title }}</h3>
+        {{ with .text }}<p class="lp-tijdlijn__tekst">{{ . | markdownify }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
