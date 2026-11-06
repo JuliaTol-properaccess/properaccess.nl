@@ -56,7 +56,7 @@ faqs:
   - question: "Wat kost een audit?"
     answer: "Dat hangt af van de omvang en complexiteit van je webshop. Een audit begint vanaf circa € 2.625 voor een eenvoudige shop, en kan oplopen tot circa € 4.350 voor een complexe internationale webshop. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Welk bureau toetst een webshop op de European Accessibility Act?"
-    answer: "Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de evaluatiemethode van het W3C. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
+    answer: "Bij Proper Access toetsen we webshops handmatig aan WCAG 2.2 niveau AA volgens WCAG-EM, de evaluatiemethode van het W3C. De geldende norm onder EN 301 549 is op dit moment WCAG 2.1 niveau AA; wij toetsen aan WCAG 2.2 als extra service. We lopen het hele klantpad door: zoeken, filteren, een product kiezen, in de winkelwagen leggen, afrekenen en betalen. We bouwen en beheren zelf geen webshops, dus we keuren nooit ons eigen werk. Onder onze opdrachtgevers zitten De Bijenkorf, Plus, Jumbo, NRC en Crisp."
 translationKey: "e-commerce"
 ---
 
@@ -126,9 +126,9 @@ externe leverancier ligt.
 {{< /section-card >}}
 {{< /section-cards >}}
 
-{{< section-full title="Welk bureau toetst een webshop op de European Accessibility Act?" id="welk-bureau" >}}
+{{< section-full title="Toetsen van een webshop op de European Accessibility Act" id="welk-bureau" >}}
 
-Proper Access doet dat. We toetsen webshops handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM,
+Bij Proper Access toetsen we webshops handmatig aan WCAG 2.2 niveau AA, volgens WCAG-EM,
 de evaluatiemethode van het W3C. Een senior auditor voert het
 toegankelijkheidsonderzoek uit, een tweede auditor doet de interne review. We bouwen en beheren
 zelf geen webshops, dus we keuren nooit ons eigen werk.
