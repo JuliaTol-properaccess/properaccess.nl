@@ -49,6 +49,9 @@ trust:
     - Rijksmuseum
     - Museumkaart
     - Eteck
+    - Museumvereniging
+    - NRC
+    - de Bijenkorf
 
 paginanav:
   - { label: "Wat je krijgt", id: "voorbeeldrapporten" }
