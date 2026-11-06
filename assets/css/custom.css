@@ -6222,6 +6222,15 @@ html.dark .toolsuite-promo__text {
   gap: 0.875rem;
 }
 
+.cta-people__photo--solo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.cta-people__person:has(.cta-people__photo--solo) {
+  gap: 1.25rem;
+}
+
 .cta-people__meta {
   display: flex;
   flex-direction: column;
