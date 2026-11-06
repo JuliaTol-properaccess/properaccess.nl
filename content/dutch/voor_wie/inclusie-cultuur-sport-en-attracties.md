@@ -48,6 +48,17 @@ faqs:
     answer: "Dat hangt af van de omvang en complexiteit van je site. Een audit begint vanaf circa € 2.175. We geven je altijd vooraf een duidelijke indicatie."
   - question: "Wie kan een toegankelijkheidsonderzoek doen voor een museum of theater?"
     answer: "Bij Proper Access toetsen we websites, ticketingsystemen, evenementenkalenders, digitale collecties en apps van culturele instellingen volgens WCAG-EM, de evaluatiemethode van het W3C, aan WCAG 2.2 niveau AA. We bouwen en beheren zelf geen websites, dus we keuren nooit ons eigen werk. In de culturele sector werkten we onder meer voor het Rijksmuseum, het Van Gogh Museum, de Museumvereniging, Museumkaart, Museum.nl en Huis van Hilde."
+paginanav:
+  - label: "Werkwijze"
+    id: "werkwijze"
+  - label: "Wie doet het onderzoek"
+    id: "wie-doet-het-onderzoek"
+  - label: "Wat we toetsen"
+    id: "wat-we-toetsen"
+  - label: "Welke regels gelden"
+    id: "welke-regels"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
 {{< section-full title="Toegankelijkheidsonderzoek voor een museum of theater" id="wie-doet-het-onderzoek" >}}
@@ -66,7 +77,7 @@ gemeente maakt dat het verschil tussen een document en bewijs.
 
 {{< /section-full >}}
 
-{{< section-cards columns="2" bg="light" title="Wat we in de culturele sector toetsen" subtitle="Het bezoekerspad loopt van de programmapagina tot het kaartje op de telefoon bij de ingang. We toetsen die hele route, niet alleen de homepage." >}}
+{{< section-cards columns="2" bg="light" id="wat-we-toetsen" title="Wat we in de culturele sector toetsen" subtitle="Het bezoekerspad loopt van de programmapagina tot het kaartje op de telefoon bij de ingang. We toetsen die hele route, niet alleen de homepage." >}}
 {{< section-card title="Ticketing en reservering" >}}
 
 Het onderdeel waar het vaakst iets misgaat, en meestal precies op het moment dat het geld kost.

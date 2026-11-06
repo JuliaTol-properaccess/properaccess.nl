@@ -20,6 +20,17 @@ keywords:
 
 service:
   serviceType: "Contentaudit volgens WCAG 2.2"
+paginanav:
+  - label: "In het kort"
+    id: "kort"
+  - label: "Wat we onderzoeken"
+    id: "onderzoek"
+  - label: "Technische problemen"
+    id: "techniek"
+  - label: "Wat je krijgt"
+    id: "resultaat"
+  - label: "Voorbeeld"
+    id: "voorbeeld"
 ---
 
 <section class="ca-hero">
@@ -58,16 +69,7 @@ service:
 </div>
 </section>
 
-<nav class="ca-toc" aria-label="Op deze pagina">
-<div class="ca-wrap ca-toc__inner">
-<span class="ca-toc__label">Op deze pagina</span>
-<a href="#kort">In het kort</a>
-<a href="#onderzoek">Wat onderzoeken we?</a>
-<a href="#techniek">Technische problemen</a>
-<a href="#resultaat">Wat krijg je?</a>
-<a href="#voorbeeld">Voorbeeld</a>
-</div>
-</nav>
+{{< pagina-nav >}}
 
 <section id="kort" class="ca-section">
 <div class="ca-wrap ca-stack">

@@ -17,6 +17,17 @@ source_context:
   sources:
     - { label: "Proper Access: hoe wij handmatig testen", url: "/zo-werken-wij/handmatig-testen/" }
     - { label: "W3C: Web Content Accessibility Guidelines (WCAG) 2.2", url: "https://www.w3.org/TR/WCAG22/" }
+paginanav:
+  - label: "Wat je krijgt"
+    id: "wat-je-krijgt"
+  - label: "Onderwerpen"
+    id: "onderwerpen"
+  - label: "Prijzen"
+    id: "prijzen"
+  - label: "Vragen"
+    id: "vragen"
+  - label: "Contact"
+    id: "contact"
 ---
 
 <!-- De inhoud en de opmaak van deze pagina staan in layouts/_default/monitoring.html. -->

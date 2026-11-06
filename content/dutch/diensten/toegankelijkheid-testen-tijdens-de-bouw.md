@@ -13,12 +13,22 @@ keywords:
 
 service:
   serviceType: "Toegankelijkheidstesten tijdens development"
-
+paginanav:
+  - label: "Hoe we testen"
+    id: "hoe-wij-digitale-toegankelijkheid-testen"
+  - label: "Wat je krijgt"
+    id: "wat-je-van-ons-krijgt"
+  - label: "In de sprint"
+    id: "we-werken-met-je-mee-in-de-sprint"
+  - label: "Wat het oplevert"
+    id: "wat-het-oplevert"
 ---
 
 Wil je digitale toegankelijkheid goed aanpakken? Begin dan tijdens de bouw of major update van een website. Wij zijn jouw QA-partner binnen de sprint – gericht op toegankelijkheid én resultaat.
 
 Onze testers hebben allemaal minimaal **5 jaar ervaring in QA** en meer dan **2 jaar ervaring met toegankelijkheidstesten**.
+
+{{< pagina-nav >}}
 
 ## Hoe wij digitale toegankelijkheid testen
 

@@ -82,6 +82,21 @@ faqs:
     answer: "Je blijft zelf verantwoordelijk voor je eigen website of webshop, ook als het probleem in het platform van je leverancier zit. Dat bevestigde de ACM. Wij schrijven de bevinding zo op dat je hem bij je leverancier kunt neerleggen, met de code erbij en het succescriterium waar het om gaat, en denken mee over een alternatief als de leverancier niet beweegt."
   - question: "Verschilt de wet per EU-land?"
     answer: "De European Accessibility Act is een richtlijn, en elk land zet die in eigen wetgeving om. De eisen aan je website zijn overal dezelfde, want ze komen uit dezelfde norm. Wat verschilt zijn de sancties en de hersteltermijnen: Nederland geeft drie maanden, Noorwegen acht weken. Let bij dat laatste op dat Noorwegen de regels toepast zonder in de EU te zitten, dus reken het niet mee als je een lijstje EU-landen maakt."
+paginanav:
+  - label: "Welke wet geldt"
+    id: "welke-wet"
+  - label: "Zelf leren"
+    id: "zelf-leren"
+  - label: "Tools"
+    id: "tools"
+  - label: "Wanneer een expert"
+    id: "expert"
+  - label: "De route"
+    id: "stappen"
+  - label: "Hoe we helpen"
+    id: "wie-helpt"
+  - label: "Vragen"
+    id: "vragen"
 ---
 
 {{< section-feiten title="Welke wet geldt voor jou?" eyebrow="Twee wetten, één norm" id="welke-wet" feiten="hulp_feiten" >}}
@@ -127,7 +142,7 @@ De **Colour Contrast Analyzer** meet twee kleuren tegen elkaar, ook buiten de br
 
 {{< /section-highlight >}}
 
-{{< section-highlight title="Loop je vast? Stel je vraag via de WCAG Radar" id="vragen" reverse="true" bg="light" image="/images/pages/hulp-vraag-stellen.svg" alt="" link="/strippenkaart/" link_text="Bekijk de strippenkaart" >}}
+{{< section-highlight title="Loop je vast? Stel je vraag via de WCAG Radar" id="vraag-stellen" reverse="true" bg="light" image="/images/pages/hulp-vraag-stellen.svg" alt="" link="/strippenkaart/" link_text="Bekijk de strippenkaart" >}}
 
 Een tool laat zien dát er iets mis is. Wat een goed alternatief is, staat er zelden bij. Precies daar komen teams niet verder: je ziet de bevinding, je begrijpt hem, en dan botst de oplossing met het ontwerp of met het framework waarin je werkt.
 

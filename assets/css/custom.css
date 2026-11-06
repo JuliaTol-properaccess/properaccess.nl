@@ -21196,7 +21196,7 @@ pre.chroma {
 .ca .ca-btn--outline:hover { border-color: var(--ca-magenta); }
 .ca .ca-btn--white { background: #fff; color: var(--ca-navy); min-height: 3rem; }
 .ca .ca-btn--white:hover { background: var(--ca-grey); color: var(--ca-navy); }
-.ca-dark .ca-btn:focus-visible, .ca-cta a:focus-visible, .ca-toc a:focus-visible { outline-color: #fff; }
+.ca-dark .ca-btn:focus-visible, .ca-cta a:focus-visible { outline-color: #fff; }
 .ca-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
 .ca-arrowlink { display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start; font-weight: 700; }
 .ca .ca-arrowlink--light { color: #fff; margin-top: auto; }
@@ -21255,19 +21255,6 @@ pre.chroma {
 .ca-mock__card-title { font-weight: 800; font-size: 0.875rem; }
 .ca-mock__card span { display: flex; gap: 0.625rem; }
 .ca-mock__card strong { color: #F7B6CC; }
-
-/* Op deze pagina */
-.ca-toc { background: var(--ca-navy); }
-.ca-toc__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; min-height: 4rem; padding-block: 0.5rem; }
-.ca-toc__label {
-  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-  color: #AEB6C2; margin-right: 1rem;
-}
-.ca .ca-toc a {
-  color: #fff; font-weight: 600; font-size: 0.9375rem; text-decoration: none;
-  padding: 0.625rem 0.875rem; border-radius: 8px;
-}
-.ca .ca-toc a:hover { background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: underline; }
 
 /* Secties */
 .ca-section { padding: 6.5rem 0; background: #fff; }
