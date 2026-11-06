@@ -121,7 +121,7 @@ faqs:
 <section aria-label="Opdrachtgevers" style="background: #1F2937; color: #ffffff">
 <div style="max-width: 1240px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 40px">
 <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #AEB6C2">Onderzoek gedaan voor onder meer</span>
-<span style="font-weight: 800; font-size: 17px">Rijksmuseum</span><span style="font-weight: 800; font-size: 17px">NRC</span><span style="font-weight: 800; font-size: 17px">Provincie Noord-Holland</span><span style="font-weight: 800; font-size: 17px">De Bijenkorf</span><span style="font-weight: 800; font-size: 17px">Gemeente Amersfoort</span><span style="font-weight: 800; font-size: 17px">Jumbo</span>
+<span style="font-weight: 800; font-size: 17px">Rijksmuseum</span><span style="font-weight: 800; font-size: 17px">De Bijenkorf</span><span style="font-weight: 800; font-size: 17px">NRC</span><span style="font-weight: 800; font-size: 17px">Plus</span><span style="font-weight: 800; font-size: 17px">Jumbo</span><span style="font-weight: 800; font-size: 17px">Provincie Noord-Holland</span><span style="font-weight: 800; font-size: 17px">Provincie Zuid-Holland</span><span style="font-weight: 800; font-size: 17px">Pleio</span><span style="font-weight: 800; font-size: 17px">BIJ12</span><span style="font-weight: 800; font-size: 17px">Gemeente Amersfoort</span><span style="font-weight: 800; font-size: 17px">en vele gemeenten</span>
 </div>
 </section>
 
