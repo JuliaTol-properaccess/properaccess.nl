@@ -148,7 +148,7 @@ sections:
     id: "oplevert"
     eyebrow: "Resultaat"
     title: "Wat een hercontrole oplevert"
-    intro: "Voor een toegankelijkheidsverklaring met status A heb je bewijs nodig dat je actief aan toegankelijkheid werkt."
+    intro: "Status A: een compleet onderzoek van hooguit 3 jaar oud, en de site voldoet aan alle eisen."
     som:
       - { label: "Audit", sub: "wat er fout is" }
       - { label: "Hercontrole", sub: "dat het is opgelost" }

@@ -334,3 +334,125 @@
 
 /* Na een grijze sectie staat het CTA-blok anders tegen de rand van het grijze vlak. */
 .lp-sectie--grijs + .lp-cta { padding-top: 56px; }
+
+/* ─── Vinkjes in de hero: witte check in een magenta rondje ─── */
+.lp-checks li { align-items: flex-start; font-weight: 400; }
+.lp-checks i {
+  flex: 0 0 auto; width: 24px; height: 24px; margin-top: 1px; border-radius: 50%;
+  background: var(--lp-magenta); color: #fff; font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.lp-checks strong { font-weight: 800; }
+
+/* ─── Trust bar met klantnamen (zonder vinkjes) ─── */
+.lp-trust--namen .hp-trust__names span::before { display: none; }
+.lp-trust--namen .hp-trust__names span { font-size: 18px; }
+
+/* ─── Vlakke kaarten op een witte sectie: grijs vlak, wit icoonvak ─── */
+.lp-sectie:not(.lp-sectie--grijs) .lp-cards--vlak .lp-card { background: var(--lp-grijs); }
+.lp-sectie:not(.lp-sectie--grijs) .lp-cards--vlak .lp-card__icoon { background: #fff; }
+
+/* ─── Hero-visual: digitale toets ─── */
+.lp-toets { position: relative; padding-bottom: 48px; font-size: 15px; }
+.lp-toets__scherm {
+  background: #fff; border: 1px solid var(--lp-rand); border-radius: 22px; overflow: hidden;
+  box-shadow: 0 30px 60px -24px rgba(31, 41, 55, 0.3);
+}
+.lp-toets__kop {
+  background: var(--lp-navy); color: #fff; padding: 14px 22px;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.lp-toets__titel { font-family: var(--lp-kopfont); font-weight: 800; font-size: 15px; }
+.lp-toets__tijd { font-family: var(--lp-kopfont); font-weight: 800; font-size: 14px; padding: 4px 10px; border-radius: 10px; }
+.lp-toets__kop .lp-toets__probleem { border-color: #fff; }
+.lp-toets__probleem { border: 2px dashed var(--lp-magenta); }
+.lp-toets__body { padding: 26px 22px 22px; display: flex; flex-direction: column; gap: 10px; }
+.lp-toets__teller { font-size: 13px; font-weight: 700; color: var(--lp-gedempt); }
+.lp-toets__vraag { font-family: var(--lp-kopfont); font-size: 18px; font-weight: 800; line-height: 1.35; }
+.lp-toets__antwoorden { display: flex; flex-direction: column; gap: 8px; padding: 8px; border-radius: 14px; }
+.lp-toets__antwoord {
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid var(--lp-rand); border-radius: 10px; padding: 12px 14px;
+}
+.lp-toets__antwoord::before {
+  content: ""; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--lp-gedempt); flex: 0 0 auto;
+}
+.lp-toets__popup {
+  position: absolute; right: -16px; bottom: 0; width: min(330px, 80%);
+  background: var(--lp-navy); color: #fff; border-radius: 14px; padding: 18px 20px;
+  box-shadow: 0 20px 40px -16px rgba(31, 41, 55, 0.5);
+  display: flex; flex-direction: column; gap: 8px; font-size: 13px; line-height: 1.4;
+}
+.lp-toets__popupkop { font-family: var(--lp-kopfont); font-weight: 800; font-size: 15px; }
+.lp-toets__punt { display: flex; gap: 10px; }
+.lp-toets__punt span { font-weight: 800; }
+
+/* ─── Welke wet ─── */
+.lp-wet { display: flex; flex-direction: column; gap: 40px; }
+.lp-wet__keuzes { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.lp-wet__keuze { border: 1.5px solid var(--lp-rand); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 10px; }
+.lp-wet__kicker { font-family: var(--lp-kopfont); font-size: 14px; font-weight: 700; color: var(--lp-gedempt); }
+.lp .lp-wet__titel { margin: 0; font-size: 24px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
+.lp-wet__tekst { color: var(--lp-gedempt); font-size: 16px; }
+.lp-wet__rij { display: flex; flex-wrap: wrap; gap: 24px; }
+.lp-wet__uitleg, .lp-wet__donker { border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; font-size: 16px; }
+.lp-wet__uitleg { flex: 1.2 1 440px; background: var(--lp-grijs); color: var(--lp-gedempt); }
+.lp-wet__donker { flex: 1 1 380px; background: var(--lp-navy); color: #fff; }
+.lp-wet__donker .lp-knoppen { margin-top: auto; padding-top: 14px; }
+.lp .lp-wet__blokkop { margin: 0; font-size: 20px; font-weight: 800; color: var(--lp-navy); }
+.lp .lp-wet__donker .lp-wet__blokkop { color: #fff; }
+.lp-wet__punten { list-style: none; counter-reset: wet; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; color: var(--lp-navy); }
+.lp-wet__punten li { counter-increment: wet; display: flex; gap: 12px; align-items: center; }
+.lp-wet__punten li::before {
+  content: counter(wet); flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--lp-navy); color: #fff; font-size: 13px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.lp-wet__slot { max-width: 820px; color: var(--lp-gedempt); font-size: 16px; }
+.lp-wet__slot a, .lp-faq .faq-answer a { color: var(--lp-magenta); text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* ─── Duo-blok onder kaarten ─── */
+.lp-duo { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.lp-duo__blok { background: #fff; border-radius: 20px; padding: 32px; display: flex; gap: 20px; align-items: flex-start; color: var(--lp-gedempt); }
+.lp-duo__blok strong { color: var(--lp-navy); }
+.lp-duo__blok--donker { background: var(--lp-navy); color: #fff; }
+.lp-duo__blok--donker strong { color: #fff; }
+.lp-duo__getal { font-family: var(--lp-kopfont); font-size: 44px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: #fff; }
+.lp-duo__icoon {
+  flex: 0 0 auto; width: 48px; height: 48px; border-radius: 12px;
+  background: var(--lp-grijs); color: var(--lp-magenta); font-size: 20px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ─── Prijs in drie kaarten ─── */
+.lp-prijskaarten { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.lp-prijskaart { border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; background: #fff; border: 1.5px solid var(--lp-rand); }
+.lp-prijskaart--accent { border: 2px solid var(--lp-magenta); }
+.lp-prijskaart--grijs { background: var(--lp-grijs); border-color: var(--lp-grijs); }
+.lp .lp-prijskaart__kicker {
+  margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--lp-gedempt);
+}
+.lp .lp-prijskaart--accent .lp-prijskaart__kicker { color: var(--lp-magenta); }
+.lp-prijskaart__bedrag { font-family: var(--lp-kopfont); font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.lp-prijskaart__vanaf { font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0; color: var(--lp-gedempt); }
+.lp-prijskaart__tekst { font-size: 16px; color: var(--lp-gedempt); }
+.lp-prijskaart .lp-knoppen, .lp-prijskaart .lp-tekstlink { margin-top: auto; padding-top: 10px; }
+.lp .lp-tekstlink {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--lp-kopfont); font-weight: 700; color: var(--lp-magenta);
+  text-decoration: underline; text-underline-offset: 0.25em;
+}
+.lp .lp-tekstlink:focus-visible { outline: 3px solid var(--lp-magenta); outline-offset: 3px; }
+
+@media (max-width: 47.99rem) {
+  .lp-toets__popup { position: relative; right: auto; width: auto; margin: -24px 12px 0; }
+  .lp-toets { padding-bottom: 0; }
+  .lp-wet__keuzes, .lp-duo, .lp-prijskaarten { grid-template-columns: 1fr; }
+  .lp-wet__uitleg, .lp-wet__donker { flex-basis: 100%; padding: 24px; }
+  .lp-wet__keuze, .lp-duo__blok, .lp-prijskaart { padding: 24px; }
+  .lp-duo__blok { flex-direction: column; }
+}
+
+/* ─── FAQ (faq-blok.html, donkerblauw) binnen een landing ─── */
+.lp .lp-faq .hp-faq__title { color: #fff; }
+.lp-faq + .lp-cta { padding-top: 56px; }

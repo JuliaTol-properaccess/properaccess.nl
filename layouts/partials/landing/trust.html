@@ -1,5 +1,6 @@
 {{/* Donkere balk met kenmerken of klantnamen. Gebruikt trust-bar.html en
-     dus de front matter "trust" van de pagina. */}}
-<div class="lp-trust">
+     dus de front matter "trust" van de pagina.
+     Veld: vinkjes (false: klantnamen zonder vinkje). */}}
+<div class="lp-trust{{ if eq .s.vinkjes false }} lp-trust--namen{{ end }}">
   {{ partial "trust-bar.html" .page }}
 </div>

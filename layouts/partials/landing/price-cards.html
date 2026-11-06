@@ -1,0 +1,28 @@
+{{/* Prijs in drie kaarten.
+     Velden: id, bg, eyebrow, title, intro,
+     items[] {kicker, vanaf (true: "vanaf" voor de prijs), prijs, text,
+              stijl (accent: magenta rand | rand | grijs),
+              button {label, link, variant: primary|outline|tekst}} */}}
+{{ $s := .s }}
+{{ $kopid := printf "lp-%d-kop" .i }}
+<section class="lp-sectie{{ if eq $s.bg "grijs" }} lp-sectie--grijs{{ end }}"{{ with $s.id }} id="{{ . }}"{{ end }} aria-labelledby="{{ $kopid }}">
+  <div class="lp-wrap lp-stapel lp-stapel--40">
+    {{ partial "landing/_kop.html" (dict "s" $s "id" $kopid) }}
+    <ul class="lp-prijskaarten">
+      {{ range $s.items }}
+      <li class="lp-prijskaart lp-prijskaart--{{ .stijl | default "rand" }}">
+        <h3 class="lp-prijskaart__kicker">{{ .kicker }}</h3>
+        <p class="lp-prijskaart__bedrag">{{ if .vanaf }}<span class="lp-prijskaart__vanaf">vanaf</span> {{ end }}{{ .prijs }}</p>
+        {{ with .text }}<p class="lp-prijskaart__tekst">{{ . | markdownify }}</p>{{ end }}
+        {{ with .button }}
+          {{ if eq .variant "tekst" }}
+          <a class="lp-tekstlink" href="{{ .link }}">{{ .label }}<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          {{ else }}
+          {{ partial "landing/_knoppen.html" (slice (dict "label" .label "link" .link "variant" (.variant | default "primary"))) }}
+          {{ end }}
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
