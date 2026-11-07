@@ -328,15 +328,15 @@ controles:
   platform: Gemeenteoplossingen raadsinformatie
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2025-11-13'
-  score: 7
-  toelichting: De scope is onvolledig beschreven. De steekproef is onvolledig.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
-    '9': deels
+    '9': ja
     '10': ja
     '11': ja
-    '12': deels
+    '12': ja
     '13': ja
     '14': ja
     '15': ja
