@@ -1,144 +1,372 @@
 {{ define "main" }}
+{{ $julia := resources.Get "images/julia.webp" }}
+<style>
+.rs{--m:#A30D4B;--mh:#8C0B40;--n:#1F2937;--t:#004050;--g:#F5F5F5;--b:#E5E7EB;--tx:#374151;--mu:#4B5563;--pink:#FF66A0;--h:"Plus Jakarta Sans","Nunito Sans",sans-serif;color:var(--n);font-family:Nunito,system-ui,sans-serif}
+.rs *{box-sizing:border-box}
+.rs :focus-visible{outline:3px solid var(--m);outline-offset:2px}
+.rs-dark :focus-visible{outline-color:#fff}
+.rs-w{max-width:1200px;margin:0 auto;padding:0 2rem}
+@media (max-width:48rem){.rs-w{padding:0 1rem}}
+.rs-lbl{font-size:.75rem;font-weight:700;color:var(--m);letter-spacing:2px;text-transform:uppercase}
+.rs-dark .rs-lbl{color:var(--pink)}
+.rs-h2{font-family:var(--h);font-weight:800;font-size:clamp(1.875rem,3.4vw,2.5rem);letter-spacing:-1px;line-height:1.08;margin:.75rem 0 0;text-wrap:pretty;color:inherit}
+.rs-p{font-size:1.0625rem;line-height:1.6;color:var(--tx);margin:0;text-wrap:pretty}
+.rs-p b{color:var(--n)}
+.rs-dark{background:var(--n);color:#fff}
+.rs-dark .rs-p{color:rgba(255,255,255,.85)}
+.rs-btn{display:inline-block;background:var(--m);color:#fff;text-decoration:none;font-weight:700;font-size:1rem;padding:.875rem 1.625rem;border-radius:8px}
+.rs-btn:hover{background:var(--mh);color:#fff}
+.rs-btn--ghost{background:#fff;color:var(--n);padding:.75rem 1.5rem;border:2px solid var(--n)}
+.rs-btn--ghost:hover{background:var(--n);color:#fff}
 
-<!-- ─── Hero ─── -->
-{{ with .Params.banner }}
-<section class="vw-hero">
-  <div class="container">
-    <div class="vw-hero__inner">
-      <div class="vw-hero__text">
-        <span class="vw-section-label">{{ $.Params.title }}</span>
-        <h1 class="vw-hero__title">{{ .title | markdownify }}</h1>
-        <p class="vw-hero__subtitle">{{ .content | markdownify }}</p>
-        {{ with .button }}
-          {{ if .enable }}
-            <div class="vw-hero__actions">
-              <div class="vw-hero__cta-row">
-                <img src="{{ "images/julia.webp" | relURL }}" alt="" class="vw-hero__photo" loading="lazy" />
-                <div>
-                  <a class="btn btn-primary" href="{{ .link | absURL }}"
-                    {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>
-                    {{ .label }}
-                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </a>
-                  <span class="vw-hero__cta-secondary">
-                    Of bel direct: <a href="tel:+31855055890">085&nbsp;5055&nbsp;890</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          {{ end }}
+/* Hero */
+.rs-hero{background:linear-gradient(180deg,#fff 0%,var(--g) 100%);padding:4.5rem 0 5rem}
+.rs-hero .rs-w{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28.75rem),1fr));gap:3.5rem;align-items:center}
+.rs-crumb ol{display:flex;align-items:center;gap:6px;list-style:none;margin:0 0 1.25rem;padding:0;font-size:.875rem;color:var(--mu);font-weight:600}
+.rs-crumb li+li::before{content:"/";color:#9CA3AF;margin-right:6px}
+.rs-crumb a{color:var(--mu);text-decoration:underline}
+.rs-crumb a:hover{color:var(--m)}
+.rs-eyebrow{display:flex;align-items:center;gap:10px}
+.rs-eyebrow span{width:8px;height:8px;border-radius:50%;background:var(--m);box-shadow:0 0 0 4px rgba(163,13,75,.2)}
+.rs-h1{font-family:var(--h);font-weight:800;font-size:clamp(2.375rem,5vw,3.625rem);line-height:1.04;letter-spacing:-1.8px;margin:1rem 0 1.375rem;text-wrap:pretty;color:var(--n)}
+.rs-h1 span{color:var(--m)}
+.rs-hero__p{font-size:1.1875rem;line-height:1.55;color:var(--tx);margin:0 0 1rem;max-width:36.25rem;text-wrap:pretty}
+.rs-hero__p b{color:var(--n)}
+.rs-hero__p--last{margin-bottom:1.875rem}
+.rs-actions{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
+.rs-person{display:flex;align-items:center;gap:.875rem;margin-top:1.75rem}
+.rs-person img{width:52px;height:52px;border-radius:50%;object-fit:cover;background:var(--b);flex-shrink:0}
+.rs-person div{font-size:.875rem;line-height:1.45;color:var(--mu)}
+.rs-person b{color:var(--n)}
+.rs-who{background:#fff;border-radius:20px;box-shadow:0 8px 24px rgba(163,13,75,.15);overflow:hidden}
+.rs-who__top{padding:1.625rem 1.75rem .5rem}
+.rs-who__bottom{padding:1.25rem 1.75rem 1.625rem}
+.rs-who__lbl{font-size:.6875rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin:0 0 .75rem}
+.rs-who ol,.rs-who ul{list-style:none;padding:0;margin:0}
+.rs-who ol{display:flex;flex-direction:column;gap:8px}
+.rs-who ol li{display:flex;align-items:center;gap:.75rem;padding:.75rem .875rem;border:2px solid var(--m);border-radius:12px;font-weight:700;font-size:.9375rem}
+.rs-who ol li span{font-family:var(--h);font-weight:800;color:var(--m);width:18px}
+.rs-who ul{display:flex;flex-wrap:wrap;gap:8px}
+.rs-who ul li{padding:.5rem .875rem;background:var(--g);border-radius:999px;font-size:.875rem;font-weight:600}
+.rs-who__pay{background:var(--n);color:#fff;padding:1.375rem 1.75rem;display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.rs-who__pay .k{font-size:.6875rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--pink)}
+.rs-who__pay .v{font-family:var(--h);font-weight:800;font-size:2.75rem;letter-spacing:-1.5px;line-height:1}
+.rs-who__pay .s{font-size:.875rem;color:rgba(255,255,255,.85)}
+
+/* Cijfers */
+.rs-stats{background:#fff;border-top:1px solid var(--b);border-bottom:1px solid var(--b)}
+.rs-stats ul{max-width:1200px;margin:0 auto;padding:1.375rem 2rem;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:10px 28px;font-size:.875rem;color:var(--mu);font-weight:600;list-style:none}
+.rs-stats li{display:flex;gap:8px;align-items:baseline}
+.rs-stats li span{font-family:var(--h);font-weight:800;color:var(--m);font-size:1.375rem}
+
+/* Hoe werkt het */
+.rs-sec{padding:6rem 0}
+.rs-intro2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,23.75rem),1fr));gap:1.5rem 4rem;margin-bottom:3rem;align-items:end}
+.rs-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16.25rem),1fr));gap:1.25rem}
+.rs-card{border:1px solid var(--b);border-radius:16px;padding:1.75rem;transition:border-color .2s}
+.rs-card:hover{border-color:var(--m)}
+.rs-card h3{font-family:var(--h);font-weight:800;font-size:1.3125rem;letter-spacing:-.4px;margin:0 0 1rem;color:var(--n)}
+.rs-card ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.75rem;font-size:.9375rem;line-height:1.5;color:var(--tx)}
+.rs-card li{display:flex;gap:10px}
+.rs-card svg{flex-shrink:0;margin-top:3px}
+
+/* Rekenvoorbeeld */
+.rs-calc{padding:5rem 0;background-image:radial-gradient(circle at 85% 0%,rgba(163,13,75,.55),transparent 45%),radial-gradient(circle at 0% 100%,rgba(0,64,80,.45),transparent 50%)}
+.rs-calc .rs-w{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26.25rem),1fr));gap:3rem;align-items:center}
+.rs-calc .rs-h2{margin-bottom:1rem}
+.rs-calc .rs-p{max-width:28.75rem}
+.rs-calc__box{background:#fff;color:var(--n);border-radius:16px;padding:1.875rem;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.rs-calc__box :focus-visible{outline-color:var(--m)}
+.rs-calc__box label{display:flex;justify-content:space-between;align-items:baseline;font-size:.9375rem;font-weight:700;gap:.75rem}
+.rs-calc__n{font-family:var(--h);font-weight:800;font-size:1.375rem;color:var(--m)}
+.rs-calc__box input{width:100%;margin:1.125rem 0 1.5rem;accent-color:var(--m)}
+.rs-calc__res{border-top:1px solid var(--b);padding-top:1.25rem;display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;flex-wrap:wrap}
+.rs-calc__res .k{font-size:.9375rem;color:var(--mu);font-weight:600}
+.rs-calc__res output{font-family:var(--h);font-weight:800;font-size:2.75rem;letter-spacing:-1.5px;line-height:1}
+.rs-calc__note{font-size:.8125rem;color:var(--mu);margin:.75rem 0 0}
+
+/* Stappen */
+.rs-steps-sec{background:var(--g)}
+.rs-head{max-width:45rem;margin-bottom:3rem}
+.rs-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:1rem}
+.rs-step{background:#fff;border-radius:16px;padding:1.625rem;border:2px solid transparent;display:flex;flex-direction:column;gap:10px}
+.rs-step--jij{border-color:var(--m)}
+.rs-step__top{display:flex;justify-content:space-between;align-items:center}
+.rs-step__num{font-family:var(--h);font-weight:800;font-size:2.25rem;color:var(--t);line-height:1}
+.rs-step__tag{font-size:.6875rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,64,80,.1);color:var(--t);padding:5px 10px;border-radius:999px}
+.rs-step--jij .rs-step__num{color:var(--m)}
+.rs-step--jij .rs-step__tag{background:var(--m);color:#fff}
+.rs-step h3{font-family:var(--h);font-weight:800;font-size:1.25rem;margin:6px 0 0;letter-spacing:-.3px;color:var(--n)}
+.rs-step p{margin:0;font-size:.9375rem;line-height:1.55;color:var(--tx)}
+.rs-free{margin-top:2.5rem;background:#fff;border:2px solid var(--m);border-radius:20px;padding:2rem;display:flex;gap:1.5rem 2.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:0 8px 24px rgba(163,13,75,.15)}
+.rs-free>div{max-width:40rem}
+.rs-free h3{font-family:var(--h);font-weight:800;font-size:1.75rem;letter-spacing:-.6px;margin:.625rem 0 .5rem;line-height:1.15;color:var(--n)}
+.rs-free p{margin:0;font-size:1rem;line-height:1.55;color:var(--tx)}
+.rs-free .rs-btn{white-space:nowrap}
+
+/* Over + FAQ */
+.rs-about .rs-w{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22.5rem),1fr));gap:3.5rem 5rem;align-items:start}
+.rs-about .rs-h2{margin-bottom:1.125rem}
+.rs-about .rs-p+.rs-p{margin-top:1rem}
+.rs-faq{border-top:1px solid var(--b);margin-top:.5rem}
+.rs-faq__item{border-bottom:1px solid var(--b)}
+.rs-faq h3{margin:0}
+.rs-faq button{width:100%;text-align:left;background:transparent;border:0;padding:1.25rem 0;font-family:var(--h);font-weight:700;font-size:1.125rem;color:var(--n);display:flex;justify-content:space-between;align-items:center;gap:1rem;cursor:pointer;letter-spacing:-.3px}
+.rs-faq button:hover{color:var(--m)}
+.rs-faq__icon{font-weight:400;font-size:1.625rem;color:var(--m);width:24px;text-align:center;flex-shrink:0}
+.rs-faq__a{margin:0;padding:0 0 1.375rem;font-size:1rem;line-height:1.6;color:var(--tx);max-width:38.75rem}
+
+/* Slot */
+.rs-end{padding:5.5rem 0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:22px 22px}
+.rs-end .rs-w{display:flex;flex-wrap:wrap;gap:2rem 3.5rem;align-items:center;justify-content:space-between}
+.rs-end .rs-w>div:first-child{max-width:38.75rem}
+.rs-end .rs-h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.4px;line-height:1.05;margin-bottom:.875rem}
+.rs-end__cta{display:flex;flex-direction:column;gap:.875rem;align-items:flex-start}
+.rs-end__cta .rs-btn{box-shadow:0 20px 60px rgba(163,13,75,.4)}
+.rs-end__cta span{font-size:.9375rem;color:rgba(255,255,255,.85)}
+.rs-end__cta span a{color:var(--pink);font-weight:700;text-decoration:underline}
+@media (prefers-reduced-motion:reduce){.rs *{transition:none!important}}
+</style>
+
+{{ $check := `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>` | safeHTML }}
+
+<div class="rs">
+
+<section class="rs-hero">
+  <div class="rs-w">
+    <div>
+      <nav class="rs-crumb" aria-label="Kruimelpad">
+        <ol>
+          <li><a href="{{ "/sectoren/" | relLangURL }}">Voor wie</a></li>
+          <li aria-current="page">Resellers</li>
+        </ol>
+      </nav>
+      <div class="rs-lbl rs-eyebrow"><span aria-hidden="true"></span>Reseller-programma</div>
+      <h1 class="rs-h1">Bied je klanten een accessibility-audit aan. <span>Wij doen het werk.</span></h1>
+      <p class="rs-hero__p">Je klanten moeten voldoen aan de European Accessibility Act. Een WCAG-audit is specialistisch werk, en dat hoeft niet in jouw team te zitten.</p>
+      <p class="rs-hero__p rs-hero__p--last">Je biedt de audit aan als onderdeel van je eigen dienstverlening. <b>Jij verdient 7% mee.</b></p>
+      <div class="rs-actions">
+        <a class="rs-btn" href="{{ "/contact/" | relLangURL }}">Plan een gesprek van 20 minuten</a>
+        <a class="rs-btn rs-btn--ghost" href="tel:+31855055890">Bel 085 5055 890</a>
+      </div>
+      <div class="rs-person">
+        {{ with $julia }}<img src="{{ .RelPermalink }}" alt="" width="52" height="52" loading="lazy">{{ end }}
+        <div>Je spreekt direct met <b>Julia Tol</b>, senior auditor.<br>Geen account manager ertussen.</div>
+      </div>
+    </div>
+
+    <div class="rs-who" role="group" aria-label="Wie doet wat in het reseller-programma">
+      <div class="rs-who__top">
+        <p class="rs-who__lbl">Jouw bureau</p>
+        <ol>
+          <li><span aria-hidden="true">1</span>Klant signaleren</li>
+          <li><span aria-hidden="true">2</span>Mail sturen</li>
+          <li><span aria-hidden="true">3</span>Factuur sturen</li>
+        </ol>
+      </div>
+      <div class="rs-who__bottom">
+        <p class="rs-who__lbl">Proper Access</p>
+        <ul>
+          <li>Intake &amp; planning</li>
+          <li>Audit uitvoeren</li>
+          <li>Rapport opleveren</li>
+          <li>Nabespreking</li>
+          <li>Vragen beantwoorden</li>
+        </ul>
+      </div>
+      <div class="rs-who__pay">
+        <span class="k">Jij ontvangt</span>
+        <span class="v">7%</span>
+        <span class="s">commissie per opdracht · ca. € 200 per audit</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rs-stats">
+  <ul>
+    <li><span>900+</span>audits uitgevoerd</li>
+    <li><span>63</span>opdrachtgevers</li>
+    <li><span>40%</span>herhalingsklanten</li>
+    <li><span>2019</span>actief sinds</li>
+  </ul>
+</div>
+
+<section class="rs-sec">
+  <div class="rs-w">
+    <div class="rs-intro2">
+      <div>
+        <div class="rs-lbl">Hoe werkt het?</div>
+        <h2 class="rs-h2">Jij verwijst door. Wij nemen het over.</h2>
+      </div>
+      <p class="rs-p">Intake, planning, audit, rapport en nabespreking: alle communicatie met je klant loopt via ons. <b>Het enige wat jij doet is de factuur sturen.</b></p>
+    </div>
+    <div class="rs-cards">
+      <article class="rs-card">
+        <h3>Kant-en-klare materialen</h3>
+        <ul>
+          <li>{{ $check }}Een landingspagina in jouw huisstijl</li>
+          <li>{{ $check }}Een voorbeeldrapport om aan klanten te laten zien</li>
+          <li>{{ $check }}Een FAQ-document voor je accountmanagers</li>
+          <li>{{ $check }}Tekst voor je nieuwsbrief</li>
+        </ul>
+      </article>
+      <article class="rs-card">
+        <h3>Doorlopende content</h3>
+        <ul>
+          <li>{{ $check }}Elke maand een blogartikel voor jouw blog, door ons geschreven</li>
+          <li>{{ $check }}Elk kwartaal een EAA- en WCAG-update om door te sturen naar klanten</li>
+        </ul>
+      </article>
+      <article class="rs-card">
+        <h3>Commissie</h3>
+        <ul>
+          <li>{{ $check }}7% van de opdrachtwaarde, het eerste jaar</li>
+          <li>{{ $check }}Gemiddeld circa € 200 per audit</li>
+          <li>{{ $check }}Geen minimum, geen commitment</li>
+        </ul>
+      </article>
+      <article class="rs-card">
+        <h3>Geen werk voor jou</h3>
+        <ul>
+          <li>{{ $check }}Alle communicatie met de eindklant loopt via ons</li>
+          <li>{{ $check }}Wij doen intake, planning, uitvoering en oplevering</li>
+          <li>{{ $check }}Wij beantwoorden alle vragen over het rapport</li>
+          <li>{{ $check }}Het rapport gaat onder de naam van Proper Access</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="rs-dark rs-calc">
+  <div class="rs-w">
+    <div>
+      <div class="rs-lbl">Rekenvoorbeeld</div>
+      <h2 class="rs-h2">Wat levert het je op?</h2>
+      <p class="rs-p">Een gemiddelde audit kost circa € 2.850. Jij ontvangt 7% van de opdrachtwaarde, gedurende het eerste jaar.</p>
+    </div>
+    <div class="rs-calc__box">
+      <label for="pa-audits">Doorverwezen audits per jaar<span class="rs-calc__n" id="pa-audits-n">6</span></label>
+      <input id="pa-audits" type="range" min="1" max="24" step="1" value="6">
+      <div class="rs-calc__res">
+        <span class="k" id="pa-commissie-lbl">Jouw commissie</span>
+        <output for="pa-audits" id="pa-commissie" aria-labelledby="pa-commissie-lbl" aria-live="polite">€ 1.197</output>
+      </div>
+      <p class="rs-calc__note">Indicatie op basis van € 2.850 per audit. De werkelijke opdrachtwaarde verschilt per website.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rs-sec rs-steps-sec">
+  <div class="rs-w">
+    <div class="rs-head">
+      <div class="rs-lbl">In de praktijk</div>
+      <h2 class="rs-h2">Zes stappen. Twee daarvan zijn voor jou.</h2>
+    </div>
+    <ol class="rs-steps">
+      {{ $steps := slice
+        (dict "jij" true "t" "Signaleren" "p" "Je merkt dat accessibility een aandachtspunt is bij een klant. Of je klant komt er zelf mee.")
+        (dict "jij" true "t" "Doorsturen" "p" "Je stuurt ons een korte mail met de klantnaam en de URL. Dat is alles.")
+        (dict "jij" false "t" "Wij nemen het over" "p" "Intake, planning, uitvoering en oplevering van het rapport.")
+        (dict "jij" false "t" "Oplevering" "p" "Het rapport gaat onder de naam van Proper Access. Wij beantwoorden alle vragen van de eindklant.")
+        (dict "jij" true "t" "Facturatie" "p" "Jij stuurt de factuur naar je klant en ontvangt 7% commissie van de opdrachtwaarde.")
+        (dict "jij" false "t" "Doorlopend" "p" "Je ontvangt elke maand een blogartikel en elk kwartaal een EAA/WCAG-update voor je klanten.")
+      }}
+      {{ range $i, $s := $steps }}
+      <li class="rs-step{{ if $s.jij }} rs-step--jij{{ end }}">
+        <div class="rs-step__top"><span class="rs-step__num" aria-hidden="true">{{ add $i 1 }}</span><span class="rs-step__tag">{{ if $s.jij }}Jij{{ else }}Proper Access{{ end }}</span></div>
+        <h3>{{ $s.t }}</h3>
+        <p>{{ $s.p }}</p>
+      </li>
+      {{ end }}
+    </ol>
+
+    <div class="rs-free">
+      <div>
+        <div class="rs-lbl">Eerste klant</div>
+        <h3>De eerste mini-audit is gratis.</h3>
+        <p>Zo laat je het product zien aan een van je klanten, zonder risico.</p>
+      </div>
+      <a class="rs-btn" href="{{ "/contact/" | relLangURL }}">Plan een gesprek van 20 minuten <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="rs-sec rs-about">
+  <div class="rs-w">
+    <div>
+      <div class="rs-lbl">Over Proper Access</div>
+      <h2 class="rs-h2">Rapport per element. Niet per succescriterium.</h2>
+      <p class="rs-p">We zijn gespecialiseerd in audits voor digitale toegankelijkheid en voerden er 900+ uit, voor onder meer het Rijksmuseum, Provincie Noord-Holland en NRC.</p>
+      <p class="rs-p">Een senior auditor doet het onderzoek, een tweede auditor de interne review. Zo weten de developers van je klant direct wat ze moeten aanpassen.</p>
+    </div>
+    <div>
+      <h2 class="rs-lbl" style="margin:0">Vragen</h2>
+      <div class="rs-faq">
+        {{ $faqs := slice
+          (slice "Wat kost het mij om mee te doen?" "Niets. Er zijn geen kosten, geen minimum aantal opdrachten en geen commitment. Je verwijst een klant door wanneer het je uitkomt.")
+          (slice "Hoeveel verdien ik per audit?" "7% van de opdrachtwaarde, gedurende het eerste jaar. Bij een gemiddelde audit van circa € 2.850 is dat ongeveer € 200 per opdracht.")
+          (slice "Moet ik zelf iets doen na het doorverwijzen?" "Nee. Wij nemen het volledig over: intake, planning, uitvoering, oplevering en nabespreking. Het enige wat jij doet is de factuur sturen naar je klant.")
+          (slice "Gaat het rapport onder mijn naam?" "Nee, het rapport gaat onder de naam van Proper Access. Zo is voor iedereen duidelijk wie de audit heeft uitgevoerd en wie verantwoordelijk is voor de inhoud.")
+          (slice "Kan ik het product eerst zelf testen?" "Ja. De eerste mini-audit voor een van je klanten is gratis. Zo kun je het product demonstreren zonder risico.")
+          (slice "Wie doet het werk?" "Een senior auditor voert het onderzoek uit en een tweede auditor doet de interne review. Zodra het rapport er ligt, kan je klant met inhoudelijke vragen rechtstreeks bij de auditor terecht.")
+        }}
+        {{ range $i, $f := $faqs }}
+        <div class="rs-faq__item">
+          <h3>
+            <button type="button" aria-expanded="true" aria-controls="rs-faq-{{ $i }}">
+              <span>{{ index $f 0 }}</span><span class="rs-faq__icon" aria-hidden="true">–</span>
+            </button>
+          </h3>
+          <p class="rs-faq__a" id="rs-faq-{{ $i }}">{{ index $f 1 }}</p>
+        </div>
         {{ end }}
       </div>
-      <div class="vw-hero__visual" aria-hidden="true">
-        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="vw-hero__svg">
-          <!-- Background card -->
-          <rect x="20" y="20" width="360" height="360" rx="16" fill="#fff" stroke="#e5e7eb" stroke-width="1"/>
-
-          <!-- Header -->
-          <rect x="20" y="20" width="360" height="50" rx="16" fill="#1F2937"/>
-          <rect x="20" y="54" width="360" height="16" fill="#1F2937"/>
-          <text x="44" y="52" fill="#fff" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="700">Reseller-programma</text>
-          <circle cx="352" cy="45" r="8" fill="#A30D4B" opacity="0.3"/>
-          <circle cx="332" cy="45" r="8" fill="#A30D4B" opacity="0.15"/>
-
-          <!-- Two columns: Bureau (left) and Proper Access (right) -->
-
-          <!-- Left column: Bureau -->
-          <rect x="40" y="90" width="150" height="36" rx="8" fill="#f5f5f5" stroke="#e5e7eb" stroke-width="0.5"/>
-          <text x="68" y="113" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Jouw bureau</text>
-
-          <!-- Bureau tasks -->
-          <circle cx="56" cy="150" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="66" y="153" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Klant signaleren</text>
-
-          <circle cx="56" cy="172" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="66" y="175" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Mail sturen</text>
-
-          <circle cx="56" cy="194" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="66" y="197" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Factuur sturen</text>
-
-          <!-- Checkmarks -->
-          <path d="M168 147 l3 3 6-6" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-          <path d="M168 169 l3 3 6-6" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-          <path d="M168 191 l3 3 6-6" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-
-          <!-- Right column: Proper Access -->
-          <rect x="210" y="90" width="150" height="36" rx="8" fill="#A30D4B" opacity="0.08" stroke="#A30D4B" stroke-width="0.5" stroke-opacity="0.2"/>
-          <text x="228" y="113" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">Proper Access</text>
-
-          <!-- PA tasks -->
-          <circle cx="226" cy="150" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="236" y="153" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Intake &amp; planning</text>
-
-          <circle cx="226" cy="172" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="236" y="175" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Audit uitvoeren</text>
-
-          <circle cx="226" cy="194" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="236" y="197" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Rapport opleveren</text>
-
-          <circle cx="226" cy="216" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="236" y="219" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Nabespreking</text>
-
-          <circle cx="226" cy="238" r="4" fill="#A30D4B" opacity="0.2"/>
-          <text x="236" y="241" fill="#6B7280" font-family="Nunito, sans-serif" font-size="9">Vragen beantwoorden</text>
-
-          <!-- Arrow connecting the two -->
-          <path d="M190 108 L210 108" stroke="#A30D4B" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrowhead-rs)"/>
-
-          <!-- Divider -->
-          <line x1="40" y1="270" x2="360" y2="270" stroke="#e5e7eb" stroke-width="1"/>
-
-          <!-- Commission highlight -->
-          <rect x="40" y="288" width="320" height="80" rx="10" fill="#A30D4B" opacity="0.06" stroke="#A30D4B" stroke-width="0.5" stroke-opacity="0.15"/>
-
-          <text x="200" y="315" fill="#1F2937" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Jij ontvangt</text>
-
-          <text x="200" y="345" fill="#A30D4B" font-family="Nunito Sans, sans-serif" font-size="28" font-weight="700" text-anchor="middle">7%</text>
-          <text x="200" y="362" fill="#6B7280" font-family="Nunito, sans-serif" font-size="10" text-anchor="middle">commissie per opdracht &middot; ca. &euro; 252 per audit</text>
-
-          <defs>
-            <marker id="arrowhead-rs" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
-              <polygon points="0 0, 6 2, 0 4" fill="#A30D4B"/>
-            </marker>
-          </defs>
-        </svg>
-      </div>
     </div>
   </div>
 </section>
-{{ end }}
 
-<!-- ─── Content (shortcodes) ─── -->
-<article class="offerte-content">
-  {{ .Content }}
-</article>
-
-<!-- ─── Stats bar ─── -->
-<section class="vw-stats">
-  <div class="container">
-    <div class="vw-stats__grid">
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">900+</span>
-        <span class="vw-stats__label">audits uitgevoerd</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">63</span>
-        <span class="vw-stats__label">opdrachtgevers</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">40%</span>
-        <span class="vw-stats__label">herhalingsklanten</span>
-      </div>
-      <div class="vw-stats__item">
-        <span class="vw-stats__number">2019</span>
-        <span class="vw-stats__label">actief sinds</span>
-      </div>
+<section class="rs-dark rs-end">
+  <div class="rs-w">
+    <div>
+      <div class="rs-lbl">20 minuten · geen verplichting</div>
+      <h2 class="rs-h2">Benieuwd of het past bij jouw bureau?</h2>
+      <p class="rs-p">We lopen het programma samen door en kijken welke klanten in aanmerking komen.</p>
     </div>
-    <p class="stats-peildatum stats-peildatum--center">Peildatum 7 augustus 2026.</p>
+    <div class="rs-end__cta">
+      <a class="rs-btn" href="{{ "/contact/" | relLangURL }}">Plan een gesprek van 20 minuten</a>
+      <span>Of bel direct: <a href="tel:+31855055890">085 5055 890</a></span>
+    </div>
   </div>
 </section>
 
-<!-- ─── CTA ─── -->
-{{ partial "call-to-action.html" . }}
+</div>
 
+<script>
+(function () {
+  var r = document.getElementById('pa-audits');
+  if (r) {
+    var n = document.getElementById('pa-audits-n'), o = document.getElementById('pa-commissie');
+    r.addEventListener('input', function () {
+      n.textContent = r.value;
+      o.textContent = '€ ' + Math.round(r.value * 2850 * 0.07).toLocaleString('nl-NL');
+    });
+  }
+  var btns = document.querySelectorAll('.rs-faq button');
+  function set(b, open) {
+    b.setAttribute('aria-expanded', open);
+    b.querySelector('.rs-faq__icon').textContent = open ? '–' : '+';
+    document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+  }
+  btns.forEach(function (b, i) {
+    set(b, i === 0);
+    b.addEventListener('click', function () {
+      var open = b.getAttribute('aria-expanded') !== 'true';
+      btns.forEach(function (x) { set(x, false); });
+      set(b, open);
+    });
+  });
+})();
+</script>
 {{ end }}
