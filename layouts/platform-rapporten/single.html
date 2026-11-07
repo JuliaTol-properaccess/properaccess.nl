@@ -102,7 +102,7 @@
                   <tbody>
                     {{ range where $rapporten "categorie" $category }}
                       <tr{{ if eq .afgekeurde_sc "0" }} class="pr-table__row--zero-rejected"{{ end }}>
-                        <th scope="row" data-sort-value="{{ lower .platform }}">{{ .platform }}</th>
+                        <th scope="row" data-sort-value="{{ lower .platform }}">{{ $profielpagina := false }}{{ range first 1 (where (hugo.Data.platform_profielen.profielen | default slice) "platform" .platform) }}{{ $profielpagina = site.GetPage (printf "/platformen/%s" .slug) }}{{ end }}{{ with $profielpagina }}<a class="pr-table__platform-link" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .platform }}{{ end }}</th>
                         <td data-sort-value="{{ lower .leverancier }}">{{ .leverancier }}</td>
                         <td data-sort-value="{{ lower .rapport_type }}">{{ .rapport_type }}</td>
                         <td data-sort-value="{{ .rapport_datum_iso }}"><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
@@ -239,6 +239,8 @@
   .pr-content p a { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
   .pr-content p a:hover, .pr-content p a:focus-visible { color: #1F2937; }
   .pr-checklist li { margin-bottom: 0.25rem; }
+  .pr-table__platform-link { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
+  .pr-table__platform-link:hover, .pr-table__platform-link:focus-visible { color: #1F2937; }
   .pr-accordion { border: 1px solid #1F2937; border-radius: 0.5rem; margin: 0.75rem 0 1.5rem; }
   .pr-accordion__summary { cursor: pointer; padding: 0.875rem 1rem; font-weight: 700; color: #1F2937; list-style: none; display: flex; align-items: center; gap: 0.75rem; }
   .pr-accordion__summary::-webkit-details-marker { display: none; }

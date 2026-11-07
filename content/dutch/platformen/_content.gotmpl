@@ -1,0 +1,19 @@
+{{/* Maakt een pagina per profiel uit data/platform_profielen.yaml.
+     Profielen met voorbeeld: true worden alleen op de lokale server gebouwd. */}}
+{{ range hugo.Data.platform_profielen.profielen }}
+  {{ if or (not .voorbeeld) (not hugo.IsProduction) }}
+    {{ $params := dict
+      "profiel_slug" .slug
+      "meta_title" (printf "%s: toegankelijkheid en functionaliteiten | Proper Access" .platform)
+      "description" (printf "Wat je met %s kunt doen en hoe toegankelijk het platform is: rapportdatum, geldigheid, afgekeurde succescriteria en de Logius-checklist." .platform)
+      "noindex" (.voorbeeld | default false)
+      "sitemap_exclude" (.voorbeeld | default false)
+    }}
+    {{ $.AddPage (dict
+      "path" .slug
+      "kind" "page"
+      "title" .platform
+      "params" $params
+    ) }}
+  {{ end }}
+{{ end }}

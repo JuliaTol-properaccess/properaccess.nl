@@ -1,0 +1,51 @@
+# Profielen van platformen, op /platformen/<slug>/.
+#
+# De beschrijving en de functionaliteiten levert de leverancier aan. De
+# toegankelijkheidsgegevens (rapport, status, Logius-checklist) haalt de pagina
+# zelf uit platform_rapporten.yaml en platform_rapporten_logius.yaml. Die zet je
+# hier dus niet neer.
+#
+# Velden:
+#   platform        Precies dezelfde naam als in platform_rapporten.yaml. Daarmee
+#                   koppelt de pagina het rapport.
+#   slug            Het laatste deel van de URL: /platformen/<slug>/.
+#   leverancier     Naam van de leverancier zoals die op de pagina moet staan.
+#   aangeleverd_op  Datum waarop de leverancier de tekst aanleverde (JJJJ-MM-DD).
+#   samenvatting    Eén of twee zinnen: wat het platform is.
+#   functionaliteiten  Lijst met wat je met het platform kunt doen.
+#   voor_wie        Optioneel: soorten organisaties die het gebruiken.
+#   logo            Optioneel: pad naar het logo in static/images/platformen/,
+#                   bijvoorbeeld /images/platformen/ibabs.svg. Het logo krijgt een
+#                   leeg alt, want de naam staat er als kop naast.
+#   website         Optioneel: productpagina van de leverancier.
+#   toegankelijkheidsverklaring  Optioneel: link naar de verklaring of het register.
+#   voorbeeld       true = alleen zichtbaar op de lokale server, nooit live.
+#
+# Een platform dat hier staat krijgt in de tabel op /platform-rapporten/
+# vanzelf een link naar zijn pagina.
+
+profielen:
+  - platform: "iBabs"
+    slug: "ibabs"
+    leverancier: "iBabs"
+    aangeleverd_op: "2026-11-07"
+    voorbeeld: true
+    logo: "/images/platformen/voorbeeld-logo.svg"
+    samenvatting: "Voorbeeldtekst. Hier komt in één of twee zinnen wat het platform is, zoals de leverancier het aanlevert."
+    functionaliteiten:
+      - "Voorbeeld: eerste functionaliteit uit de lijst van de leverancier"
+      - "Voorbeeld: tweede functionaliteit"
+      - "Voorbeeld: derde functionaliteit"
+    voor_wie:
+      - "Voorbeeld: gemeenten"
+      - "Voorbeeld: provincies"
+
+  - platform: "Pleio"
+    slug: "pleio"
+    leverancier: "Pleio"
+    aangeleverd_op: "2026-11-07"
+    voorbeeld: true
+    samenvatting: "Voorbeeldtekst. Dit profiel heeft geen doelgroep en geen links, zodat je ziet hoe de pagina eruitziet als die velden leeg zijn."
+    functionaliteiten:
+      - "Voorbeeld: eerste functionaliteit"
+      - "Voorbeeld: tweede functionaliteit"
