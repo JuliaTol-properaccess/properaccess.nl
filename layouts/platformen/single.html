@@ -1,16 +1,18 @@
 {{ define "main" }}
+{{ $naam := .Params.platform }}
 {{ $profiel := dict }}
-{{ range first 1 (where hugo.Data.platform_profielen.profielen "slug" .Params.profiel_slug) }}{{ $profiel = . }}{{ end }}
+{{ range first 1 (where (hugo.Data.platform_profielen.profielen | default slice) "platform" $naam) }}{{ $profiel = . }}{{ end }}
 {{ $rapport := dict }}
-{{ range first 1 (where hugo.Data.platform_rapporten.rapporten "platform" $profiel.platform) }}{{ $rapport = . }}{{ end }}
+{{ range first 1 (where hugo.Data.platform_rapporten.rapporten "platform" $naam) }}{{ $rapport = . }}{{ end }}
 {{ $controle := dict }}
 {{ with $rapport.rapport_url }}{{ range first 1 (where (hugo.Data.platform_rapporten_logius.controles | default slice) "rapport_url" .) }}{{ $controle = . }}{{ end }}{{ end }}
 {{ $leverancier := $profiel.leverancier | default $rapport.leverancier }}
+{{ if eq (lower ($leverancier | default "")) "onbekend" }}{{ $leverancier = "" }}{{ end }}
 
 <section class="hp-hero">
   <div class="hp-container">
     <nav class="pp-kruimel" aria-label="Kruimelpad">
-      <a href="/platform-rapporten/">Rapporten van platformen</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ $profiel.platform }}</span>
+      <a href="/platform-rapporten/">Rapporten van platformen</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ $naam }}</span>
     </nav>
     {{ if $profiel.voorbeeld }}
       <p class="pp-voorbeeld"><strong>Voorbeeldpagina.</strong> Deze pagina zie je alleen op de lokale server. Hij gaat niet live.</p>
@@ -18,9 +20,8 @@
     <div class="pp-kop">
       <div class="pp-kop__tekst">
         <span class="hp-hero__badge">Platform voor de overheid</span>
-        <h1 class="hp-hero__title">{{ $profiel.platform }}</h1>
+        <h1 class="hp-hero__title">{{ $naam }}</h1>
         {{ with $leverancier }}<p class="pp-leverancier">Leverancier: {{ . }}</p>{{ end }}
-        {{ with $profiel.samenvatting }}<p class="hp-hero__subtitle">{{ . }}</p>{{ end }}
       </div>
       {{ with $profiel.logo }}
         <div class="pp-logo"><img src="{{ . }}" alt="" loading="eager"></div>
@@ -32,11 +33,19 @@
 <section class="section-sm">
   <div class="hp-container pp-grid">
     <div class="pp-blok">
-      <h2>Wat je met {{ $profiel.platform }} kunt doen</h2>
+      <h2>Over {{ $naam }}</h2>
+      {{ with $profiel.samenvatting }}
+        <p>{{ . }}</p>
+      {{ else }}
+        <p class="pp-volgt">De beschrijving van {{ $naam }} volgt.</p>
+      {{ end }}
       {{ with $profiel.functionaliteiten }}
+        <h3>Wat je ermee kunt doen</h3>
         <ul class="pp-lijst">
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
+      {{ else }}
+        {{ if $profiel.samenvatting }}<p class="pp-volgt">Een overzicht van de functionaliteiten volgt.</p>{{ end }}
       {{ end }}
       {{ with $profiel.voor_wie }}
         <h3>Wie gebruiken het</h3>
@@ -44,10 +53,14 @@
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
       {{ end }}
-      <p class="pp-bron">De beschrijving komt van {{ $leverancier }}{{ with $profiel.aangeleverd_op }} en is aangeleverd op <time datetime="{{ . }}">{{ time.Format "2 January 2006" (time.AsTime .) }}</time>{{ end }}. Proper Access heeft de functionaliteiten niet getest.</p>
+      {{ if $profiel.aangeleverd_op }}
+        <p class="pp-bron">De beschrijving komt van {{ $leverancier }} en is aangeleverd op <time datetime="{{ $profiel.aangeleverd_op }}">{{ time.Format "2 January 2006" (time.AsTime $profiel.aangeleverd_op) }}</time>. Proper Access heeft de functionaliteiten niet getest.</p>
+      {{ else if $profiel.bron_url }}
+        <p class="pp-bron">De beschrijving is gebaseerd op <a href="{{ $profiel.bron_url }}" target="_blank" rel="noopener">de pagina over {{ $naam }} op DigiToegankelijk<span class="sr-only"> (opent in nieuw venster)</span></a>.</p>
+      {{ end }}
       {{ if or $profiel.website $profiel.toegankelijkheidsverklaring }}
         <ul class="pp-links">
-          {{ with $profiel.website }}<li><a href="{{ . }}" target="_blank" rel="noopener">Website van {{ $profiel.platform }}<span class="sr-only"> (opent in nieuw venster)</span></a></li>{{ end }}
+          {{ with $profiel.website }}<li><a href="{{ . }}" target="_blank" rel="noopener">Website van {{ $naam }}<span class="sr-only"> (opent in nieuw venster)</span></a></li>{{ end }}
           {{ with $profiel.toegankelijkheidsverklaring }}<li><a href="{{ . }}" target="_blank" rel="noopener">Toegankelijkheidsverklaring<span class="sr-only"> (opent in nieuw venster)</span></a></li>{{ end }}
         </ul>
       {{ end }}
@@ -109,6 +122,7 @@
   .pp-feiten dt { font-weight: 700; color: #1F2937; }
   .pp-feiten dd { margin: 0; }
   .pp-blok .btn { text-transform: none; }
+  .pp-volgt { border: 1px dashed #1F2937; border-radius: 0.5rem; padding: 0.75rem 1rem; }
   .pp-toelichting { display: block; font-size: 0.95rem; margin-top: 0.25rem; }
 </style>
 {{ end }}

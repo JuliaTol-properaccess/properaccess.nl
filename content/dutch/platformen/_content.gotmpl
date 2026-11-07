@@ -1,16 +1,25 @@
-{{/* Maakt een pagina per profiel uit data/platform_profielen.yaml.
+{{/* Maakt een pagina voor elk platform uit data/platform_rapporten.yaml, behalve
+     de gedeelde websites. De beschrijving komt uit data/platform_profielen.yaml.
+     Een platform zonder beschrijving krijgt een pagina met een plek voor tekst,
+     maar blijft uit de zoekmachines tot de beschrijving er is.
      Profielen met voorbeeld: true worden alleen op de lokale server gebouwd. */}}
-{{ range hugo.Data.platform_profielen.profielen }}
-  {{ if or (not .voorbeeld) (not hugo.IsProduction) }}
+{{ $profielen := hugo.Data.platform_profielen.profielen | default slice }}
+{{ range where hugo.Data.platform_rapporten.rapporten "categorie" "ne" "Gedeelde websites en samenwerkingen" }}
+  {{ $profiel := dict }}
+  {{ range first 1 (where $profielen "platform" .platform) }}{{ $profiel = . }}{{ end }}
+  {{ if or (not $profiel.voorbeeld) (not hugo.IsProduction) }}
+    {{ $slug := partial "platform-slug.html" (dict "platform" .platform) }}
+    {{ $zonderTekst := not $profiel.samenvatting }}
+    {{ $verbergen := or $zonderTekst ($profiel.voorbeeld | default false) }}
     {{ $params := dict
-      "profiel_slug" .slug
-      "meta_title" (printf "%s: toegankelijkheid en functionaliteiten | Proper Access" .platform)
-      "description" (printf "Wat je met %s kunt doen en hoe toegankelijk het platform is: rapportdatum, geldigheid, afgekeurde succescriteria en de Logius-checklist." .platform)
-      "noindex" (.voorbeeld | default false)
-      "sitemap_exclude" (.voorbeeld | default false)
+      "platform" .platform
+      "meta_title" (printf "%s: toegankelijkheid en rapport | Proper Access" .platform)
+      "description" (printf "Hoe toegankelijk is %s? Rapportdatum, geldigheid, afgekeurde succescriteria en de Logius-checklist van het technische rapport." .platform)
+      "noindex" $verbergen
+      "sitemap_exclude" $verbergen
     }}
     {{ $.AddPage (dict
-      "path" .slug
+      "path" $slug
       "kind" "page"
       "title" .platform
       "params" $params

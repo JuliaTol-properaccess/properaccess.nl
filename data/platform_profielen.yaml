@@ -1,4 +1,8 @@
-# Profielen van platformen, op /platformen/<slug>/.
+# Beschrijvingen van platformen, op /platformen/<slug>/.
+#
+# Elk platform uit platform_rapporten.yaml krijgt vanzelf een pagina, behalve de
+# gedeelde websites. Staat een platform hier niet, of zonder samenvatting, dan
+# toont de pagina een plek voor tekst en krijgt hij een noindex.
 #
 # De beschrijving en de functionaliteiten levert de leverancier aan. De
 # toegankelijkheidsgegevens (rapport, status, Logius-checklist) haalt de pagina
@@ -8,9 +12,13 @@
 # Velden:
 #   platform        Precies dezelfde naam als in platform_rapporten.yaml. Daarmee
 #                   koppelt de pagina het rapport.
-#   slug            Het laatste deel van de URL: /platformen/<slug>/.
+#   slug            Optioneel: het laatste deel van de URL. Zonder slug maakt
+#                   layouts/partials/platform-slug.html er een van de naam.
 #   leverancier     Naam van de leverancier zoals die op de pagina moet staan.
 #   aangeleverd_op  Datum waarop de leverancier de tekst aanleverde (JJJJ-MM-DD).
+#                   Alleen bij tekst van de leverancier.
+#   bron_url        Bij tekst die we samenvatten van DigiToegankelijk: de pagina
+#                   daar. Haal bron_url weg zodra de leverancier tekst aanlevert.
 #   samenvatting    Eén of twee zinnen: wat het platform is.
 #   functionaliteiten  Lijst met wat je met het platform kunt doen.
 #   voor_wie        Optioneel: soorten organisaties die het gebruiken.
@@ -21,31 +29,175 @@
 #   toegankelijkheidsverklaring  Optioneel: link naar de verklaring of het register.
 #   voorbeeld       true = alleen zichtbaar op de lokale server, nooit live.
 #
-# Een platform dat hier staat krijgt in de tabel op /platform-rapporten/
-# vanzelf een link naar zijn pagina.
+# De samenvattingen met bron_url zijn op 7 november 2026 samengevat van de
+# platformpagina's op digitoegankelijk.nl.
 
 profielen:
-  - platform: "iBabs"
-    slug: "ibabs"
-    leverancier: "iBabs"
-    aangeleverd_op: "2026-11-07"
-    voorbeeld: true
-    logo: "/images/platformen/voorbeeld-logo.svg"
-    samenvatting: "Voorbeeldtekst. Hier komt in één of twee zinnen wat het platform is, zoals de leverancier het aanlevert."
-    functionaliteiten:
-      - "Voorbeeld: eerste functionaliteit uit de lijst van de leverancier"
-      - "Voorbeeld: tweede functionaliteit"
-      - "Voorbeeld: derde functionaliteit"
-    voor_wie:
-      - "Voorbeeld: gemeenten"
-      - "Voorbeeld: provincies"
+  - platform: Afvalinzamelapp
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afval/prezero-app"
+    samenvatting: PreZero inzamelwijzer is een mobiele app van Opzet voor communicatie over afvalinzameling.
 
-  - platform: "Pleio"
-    slug: "pleio"
-    leverancier: "Pleio"
-    aangeleverd_op: "2026-11-07"
-    voorbeeld: true
-    samenvatting: "Voorbeeldtekst. Dit profiel heeft geen doelgroep en geen links, zodat je ziet hoe de pagina eruitziet als die velden leeg zijn."
-    functionaliteiten:
-      - "Voorbeeld: eerste functionaliteit"
-      - "Voorbeeld: tweede functionaliteit"
+  - platform: Archiefweb / Sitearchief
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-archivering/archiefweb-en-sitearchief"
+    samenvatting: Archiefweb en Sitearchief zijn een applicatie van Visma voor webarchivering. Gearchiveerde content valt onder de wettelijke uitzondering.
+
+  - platform: Begrotingsapp
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/begrotingen-en-jaarverslagen/begrotingsapp"
+    samenvatting: De Begrotingsapp is een publicatieplatform van Pepperflow voor planning- en controldocumenten en andere rapportages.
+
+  - platform: BuitenBeter app
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/buitenbeter-app-beheervisie"
+    samenvatting: BuitenBeter is een mobiele app om meldingen over de openbare ruimte te doen en te volgen. De app is voor alle afnemers hetzelfde.
+
+  - platform: Centric e-diensten Burgerzaken
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-loket/ediensten-burgerzaken-centric"
+    samenvatting: eDiensten Burgerzaken is het platform van Centric waarmee inwoners zaken regelen bij hun gemeente.
+
+  - platform: DeAfvalApp
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afval/deafvalapp-certus"
+    samenvatting: DeAfvalApp is een mobiele app voor afvalbeheer van Certus.
+
+  - platform: DIP Webarchief
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-archivering/dip-webarchief"
+    samenvatting: DIP Webarchief is een applicatie voor webarchivering. Gearchiveerde content valt onder de wettelijke uitzondering.
+
+  - platform: Djuma
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-loket/djuma-formulieren-visma-circle"
+    samenvatting: Met Djuma Formulieren van Visma Circle doen inwoners een aanvraag voor een product, dienst of melding.
+
+  - platform: Fixi website
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/fixi-app-decos"
+    samenvatting: Fixi is een applicatie van Decos om meldingen over de openbare ruimte te doen en te volgen. Fixi is voor alle afnemers hetzelfde.
+
+  - platform: Gemeenteoplossingen raadsinformatie
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/raadsinformatie/gemeenteoplossingen"
+    samenvatting: GO. vergaderen is een applicatie van GemeenteOplossingen voor raadsinformatie. Je publiceert en raadpleegt er agenda's, vergaderingen, documenten en audio- en video-uitzendingen mee.
+
+  - platform: Go Vocal (participatie)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/participatie/go-vocal"
+    samenvatting: Go Vocal is een participatieplatform voor gemeenten.
+
+  - platform: Harmonics (Winkwaves)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/harmonics-winkwaves"
+    samenvatting: Harmonics van Winkwaves is een platform voor sociaal intranet, kennismanagement en community's.
+
+  - platform: HVC app
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afval/hvc-app-hvc-groep"
+    samenvatting: De HVC-app is van HVC, een gemeenschappelijke regeling van gemeenten en waterschappen. De app is voor alle deelnemende overheden hetzelfde. Gemeenten maken er geen eigen verklaring voor.
+
+  - platform: iBabs
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/raadsinformatie/ibabs"
+    samenvatting: Het iBabs Publieksportaal, ook wel Publish, gebruik je voor documenten en besluitvorming.
+
+  - platform: iBabs Publieksportaal (bestuurlijkeinformatie.nl)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/raadsinformatie/ibabs"
+    samenvatting: Het iBabs Publieksportaal, ook wel Publish, gebruik je voor documenten en besluitvorming.
+
+  - platform: iBurgerzaken
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-loket/iburgerzaken-pinkroccade"
+    samenvatting: iBurgerzaken is een applicatie voor burgerzaken van PinkRoccade.
+
+  - platform: iLost (gevonden voorwerpen)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/verloren-gevonden/ilost"
+    samenvatting: Via iLost plaatsen inwoners gevonden voorwerpen en vinden ze die terug. Het platform is voor alle afnemers hetzelfde.
+
+  - platform: Inergy LIAS (begroting)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/begrotingen-en-jaarverslagen/lias-incontrol"
+    samenvatting: LIAS Publisher is software om onder meer jaarverslagen en begrotingen te publiceren.
+
+  - platform: Jalp sociaal domein
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/sociaal-domein/jalp-elkander"
+    samenvatting: Met Jalp informeren overheidsorganisaties inwoners over zaken in het sociaal domein.
+
+  - platform: JCC Naar mijn afspraak
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afspraken/naarmijnafspraak-jcc"
+    samenvatting: Naarmijnafspraak is onderdeel van het afsprakensysteem JCC-Afspraken van JCC Software.
+
+  - platform: LMS storing melden
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/licht-management-systeem-nli"
+    samenvatting: LMS is een systeem van het Nederlands Licht Instituut voor het beheer van openbare verlichting. De applicatie is voor alle afnemers hetzelfde.
+
+  - platform: NotuBox app
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/raadsinformatie/notubox"
+    samenvatting: Met de NotuBox-app voor iPad raadpleeg je onder andere het Politiek Portaal van NotuBiz.
+
+  - platform: OmgevingsAlert app
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/omgevingsalert-app-9to5-software"
+    samenvatting: OmgevingsAlert is een mobiele app die inwoners informeert over gebeurtenissen in hun buurt. De app is voor alle afnemers hetzelfde.
+
+  - platform: Open Gemeenten
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/opengemeenten"
+    samenvatting: OpenGemeenten is een contentmanagementsysteem van de gelijknamige leverancier.
+
+  - platform: OpenStad
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/digitale-participatie-projecten/openstad"
+    samenvatting: OpenStad is een open source participatieplatform.
+
+  - platform: Platform Rijksoverheid Online (PRO)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/platform"
+    samenvatting: Platform Rijksoverheid Online is het centrale platform van de Rijksoverheid. Organisaties maken en beheren er websites, online magazines en digitale nieuwsbrieven mee.
+
+  - platform: Platform Rijksoverheid Online (PRO2)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/platform"
+    samenvatting: Platform Rijksoverheid Online is het centrale platform van de Rijksoverheid. Organisaties maken en beheren er websites, online magazines en digitale nieuwsbrieven mee.
+
+  - platform: Pleio
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/pleio"
+    samenvatting: Pleio is een online samenwerkingsplatform.
+
+  - platform: Qmatic afspraken
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afspraken/qwebbook-en-qmatic-experience-cloud"
+    samenvatting: Web Booking en Experience Cloud zijn afsprakentools van Qmatic.
+
+  - platform: ReadSpeaker webReader
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/gebruikertools/readspeaker-webreader"
+    samenvatting: ReadSpeaker webReader is een hulpmiddel dat je toevoegt aan een bestaande website. Het is geen losse website, dus je publiceert er geen aparte verklaring voor.
+
+  - platform: Regionaal Energieloket
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-loketten/regionaal-energieloket"
+    samenvatting: Via het Regionaal Energieloket regelen inwoners zaken met hun gemeente over energie en duurzaamheid.
+
+  - platform: Shift2 (SIM-platform)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/drupal-powered"
+    samenvatting: SIMsite powered by Drupal is een set websitetemplates van Shift2.
+
+  - platform: SIM-platform
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/drupal-powered"
+    samenvatting: SIMsite powered by Drupal is een set websitetemplates van Shift2.
+
+  - platform: Signalen (meldingen openbare ruimte)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/signalen-vng"
+    samenvatting: Signalen is een open source-oplossing van Common Ground. Gemeenten ontvangen en behandelen er meldingen over de openbare ruimte mee.
+
+  - platform: Stembureaumanager
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/participatie/stembureaumanager"
+    samenvatting: Met Stembureaumanager bereiden organisaties verkiezingen voor.
+
+  - platform: Swing (Mosaic)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/dashboard/swing-mosaic-en-swing-viewer-abf"
+    samenvatting: Swing is een platform van ABF Research voor het beheren en visualiseren van data.
+
+  - platform: Timeblockr
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afspraken/timeblockr"
+    samenvatting: TIMEBLOCKR is een afsprakenplatform van de gelijknamige leverancier.
+
+  - platform: Verloren of Gevonden
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/verlorenofgevondennl-efficy"
+    samenvatting: Op Verlorenofgevonden.nl plaatsen inwoners gevonden voorwerpen en vinden ze die terug. Het platform is voor alle gemeenten hetzelfde.
+
+  - platform: Visma Roxit RxFront
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/content-management-systeem/rxfront-roxit"
+    samenvatting: Rx.Front is een CMS-oplossing van Roxit.
+
+  - platform: Ximmio afvalapp
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/afval/ximmio-app"
+    samenvatting: Ximmio biedt gemeenten een eigen app voor afvalinzameling en afvalbeheer.
+
+  - platform: xxllnc Zaken (zaaksysteem.nl)
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/online-loket/zaaksysteemnl-xxllnc"
+    samenvatting: xxllnc Zaken is een applicatie voor zaakgericht werken. Het heette eerder Zaaksysteem.nl.
+
+  - platform: Zo Gemeld app
+    bron_url: "https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps/meldingen/zo-gemeld-delta10"
+    samenvatting: Zo Gemeld is een meldingenapp van Delta10. De app is voor alle afnemers hetzelfde.
+

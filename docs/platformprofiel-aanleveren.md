@@ -19,10 +19,12 @@ Elk platform uit het overzicht op /platform-rapporten/ kan een eigen pagina krij
 - We plaatsen de tekst onder vermelding "De beschrijving komt van <leverancier>". Op de pagina staat dat Proper Access de functionaliteiten niet heeft getest.
 - We halen wervende taal en superlatieven weg, en klantnamen die we niet kunnen controleren.
 - Betalen voor een plek of voor een betere positie kan niet.
-- Een platform zonder aangeleverde beschrijving blijft gewoon in het overzicht staan.
+- Een platform zonder aangeleverde beschrijving blijft in het overzicht staan en houdt zijn pagina.
 
 ## Verwerken
 
 Zet de aangeleverde tekst in `data/platform_profielen.yaml`. De velden staan bovenaan dat bestand uitgelegd. De naam bij `platform` moet precies gelijk zijn aan de naam in `data/platform_rapporten.yaml`, anders vindt de pagina het rapport niet. Een logo zet je in `static/images/platformen/` en je noemt het pad bij `logo`. De pagina en de link in de tabel ontstaan dan vanzelf.
 
-De twee profielen met `voorbeeld: true` (iBabs en Pleio) zijn alleen zichtbaar op de lokale server. Verwijder ze zodra de eerste echte profielen binnen zijn.
+Elk platform uit het overzicht heeft al een pagina. Voor 42 platforms staat er een korte beschrijving die we op 7 november 2026 hebben samengevat van de platformpagina's op digitoegankelijk.nl; die profielen hebben een `bron_url`. De andere platforms tonen een plek voor tekst en krijgen een noindex tot er een samenvatting is.
+
+Levert een leverancier tekst aan, vervang dan de samenvatting, zet `aangeleverd_op` erbij en haal `bron_url` weg.

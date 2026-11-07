@@ -1,0 +1,10 @@
+{{/* Geeft de slug van een platformpagina: /platformen/<slug>/.
+     Context: dict "platform" (naam uit platform_rapporten.yaml).
+     Een profiel in platform_profielen.yaml kan met slug een eigen slug kiezen. */}}
+{{ $slug := "" }}
+{{ range first 1 (where (hugo.Data.platform_profielen.profielen | default slice) "platform" .platform) }}{{ $slug = .slug | default "" }}{{ end }}
+{{ if not $slug }}
+  {{ $slug = lower .platform | replaceRE "[ëéèê]" "e" | replaceRE "[ïí]" "i" | replaceRE "[öó]" "o" | replaceRE "[üú]" "u" | replaceRE "[^a-z0-9]+" "-" }}
+  {{ $slug = strings.Trim $slug "-" }}
+{{ end }}
+{{ return $slug }}
