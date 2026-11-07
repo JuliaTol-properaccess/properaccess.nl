@@ -10,6 +10,7 @@ Elk platform uit het overzicht op /platform-rapporten/ kan een eigen pagina krij
 | Samenvatting | ja | Eén of twee zinnen: wat het platform is. Maximaal 300 tekens |
 | Functionaliteiten | ja | Een lijst met wat je met het platform kunt doen. Maximaal 10 punten, één zin per punt |
 | Voor wie | nee | Soorten organisaties die het gebruiken, bijvoorbeeld gemeenten of waterschappen |
+| Logo | nee | SVG, of PNG met transparante achtergrond van minstens 480 pixels breed. Het logo moet leesbaar zijn op wit |
 | Website | nee | Link naar de productpagina |
 | Toegankelijkheidsverklaring | nee | Link naar de verklaring of naar het Register |
 
@@ -22,6 +23,6 @@ Elk platform uit het overzicht op /platform-rapporten/ kan een eigen pagina krij
 
 ## Verwerken
 
-Zet de aangeleverde tekst in `data/platform_profielen.yaml`. De velden staan bovenaan dat bestand uitgelegd. De naam bij `platform` moet precies gelijk zijn aan de naam in `data/platform_rapporten.yaml`, anders vindt de pagina het rapport niet. De pagina en de link in de tabel ontstaan dan vanzelf.
+Zet de aangeleverde tekst in `data/platform_profielen.yaml`. De velden staan bovenaan dat bestand uitgelegd. De naam bij `platform` moet precies gelijk zijn aan de naam in `data/platform_rapporten.yaml`, anders vindt de pagina het rapport niet. Een logo zet je in `static/images/platformen/` en je noemt het pad bij `logo`. De pagina en de link in de tabel ontstaan dan vanzelf.
 
 De twee profielen met `voorbeeld: true` (iBabs en Pleio) zijn alleen zichtbaar op de lokale server. Verwijder ze zodra de eerste echte profielen binnen zijn.

@@ -14,6 +14,9 @@
 #   samenvatting    Eén of twee zinnen: wat het platform is.
 #   functionaliteiten  Lijst met wat je met het platform kunt doen.
 #   voor_wie        Optioneel: soorten organisaties die het gebruiken.
+#   logo            Optioneel: pad naar het logo in static/images/platformen/,
+#                   bijvoorbeeld /images/platformen/ibabs.svg. Het logo krijgt een
+#                   leeg alt, want de naam staat er als kop naast.
 #   website         Optioneel: productpagina van de leverancier.
 #   toegankelijkheidsverklaring  Optioneel: link naar de verklaring of het register.
 #   voorbeeld       true = alleen zichtbaar op de lokale server, nooit live.
@@ -27,6 +30,7 @@ profielen:
     leverancier: "iBabs"
     aangeleverd_op: "2026-11-07"
     voorbeeld: true
+    logo: "/images/platformen/voorbeeld-logo.svg"
     samenvatting: "Voorbeeldtekst. Hier komt in één of twee zinnen wat het platform is, zoals de leverancier het aanlevert."
     functionaliteiten:
       - "Voorbeeld: eerste functionaliteit uit de lijst van de leverancier"

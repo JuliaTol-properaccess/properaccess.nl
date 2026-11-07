@@ -15,10 +15,17 @@
     {{ if $profiel.voorbeeld }}
       <p class="pp-voorbeeld"><strong>Voorbeeldpagina.</strong> Deze pagina zie je alleen op de lokale server. Hij gaat niet live.</p>
     {{ end }}
-    <span class="hp-hero__badge">Platform voor de overheid</span>
-    <h1 class="hp-hero__title">{{ $profiel.platform }}</h1>
-    {{ with $leverancier }}<p class="pp-leverancier">Leverancier: {{ . }}</p>{{ end }}
-    {{ with $profiel.samenvatting }}<p class="hp-hero__subtitle">{{ . }}</p>{{ end }}
+    <div class="pp-kop">
+      <div class="pp-kop__tekst">
+        <span class="hp-hero__badge">Platform voor de overheid</span>
+        <h1 class="hp-hero__title">{{ $profiel.platform }}</h1>
+        {{ with $leverancier }}<p class="pp-leverancier">Leverancier: {{ . }}</p>{{ end }}
+        {{ with $profiel.samenvatting }}<p class="hp-hero__subtitle">{{ . }}</p>{{ end }}
+      </div>
+      {{ with $profiel.logo }}
+        <div class="pp-logo"><img src="{{ . }}" alt="" loading="eager"></div>
+      {{ end }}
+    </div>
   </div>
 </section>
 
@@ -79,6 +86,10 @@
   .pp-kruimel a { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
   .pp-kruimel a:hover, .pp-kruimel a:focus-visible { color: #1F2937; }
   .pp-voorbeeld { border: 2px dashed #A30D4B; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1.5rem; color: #1F2937; }
+  .pp-kop { display: flex; flex-direction: column-reverse; gap: 1.5rem; }
+  @media (min-width: 48rem) { .pp-kop { flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 3rem; } }
+  .pp-logo { flex: 0 0 auto; width: 12rem; max-width: 60%; border: 1px solid #1F2937; border-radius: 0.75rem; padding: 1rem; background: #ffffff; display: flex; align-items: center; justify-content: center; }
+  .pp-logo img { display: block; max-width: 100%; max-height: 6rem; width: auto; height: auto; }
   .pp-leverancier { font-weight: 700; color: #1F2937; margin: 0.5rem 0 1rem; }
   .pp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   @media (min-width: 64rem) { .pp-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
