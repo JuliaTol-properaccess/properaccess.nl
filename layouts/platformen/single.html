@@ -1,0 +1,103 @@
+{{ define "main" }}
+{{ $profiel := dict }}
+{{ range first 1 (where hugo.Data.platform_profielen.profielen "slug" .Params.profiel_slug) }}{{ $profiel = . }}{{ end }}
+{{ $rapport := dict }}
+{{ range first 1 (where hugo.Data.platform_rapporten.rapporten "platform" $profiel.platform) }}{{ $rapport = . }}{{ end }}
+{{ $controle := dict }}
+{{ with $rapport.rapport_url }}{{ range first 1 (where (hugo.Data.platform_rapporten_logius.controles | default slice) "rapport_url" .) }}{{ $controle = . }}{{ end }}{{ end }}
+{{ $leverancier := $profiel.leverancier | default $rapport.leverancier }}
+
+<section class="hp-hero">
+  <div class="hp-container">
+    <nav class="pp-kruimel" aria-label="Kruimelpad">
+      <a href="/platform-rapporten/">Rapporten van platformen</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ $profiel.platform }}</span>
+    </nav>
+    {{ if $profiel.voorbeeld }}
+      <p class="pp-voorbeeld"><strong>Voorbeeldpagina.</strong> Deze pagina zie je alleen op de lokale server. Hij gaat niet live.</p>
+    {{ end }}
+    <span class="hp-hero__badge">Platform voor de overheid</span>
+    <h1 class="hp-hero__title">{{ $profiel.platform }}</h1>
+    {{ with $leverancier }}<p class="pp-leverancier">Leverancier: {{ . }}</p>{{ end }}
+    {{ with $profiel.samenvatting }}<p class="hp-hero__subtitle">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="hp-container pp-grid">
+    <div class="pp-blok">
+      <h2>Wat je met {{ $profiel.platform }} kunt doen</h2>
+      {{ with $profiel.functionaliteiten }}
+        <ul class="pp-lijst">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+      {{ with $profiel.voor_wie }}
+        <h3>Wie gebruiken het</h3>
+        <ul class="pp-lijst">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+      <p class="pp-bron">De beschrijving komt van {{ $leverancier }}{{ with $profiel.aangeleverd_op }} en is aangeleverd op <time datetime="{{ . }}">{{ time.Format "2 January 2006" (time.AsTime .) }}</time>{{ end }}. Proper Access heeft de functionaliteiten niet getest.</p>
+      {{ if or $profiel.website $profiel.toegankelijkheidsverklaring }}
+        <ul class="pp-links">
+          {{ with $profiel.website }}<li><a href="{{ . }}" target="_blank" rel="noopener">Website van {{ $profiel.platform }}<span class="sr-only"> (opent in nieuw venster)</span></a></li>{{ end }}
+          {{ with $profiel.toegankelijkheidsverklaring }}<li><a href="{{ . }}" target="_blank" rel="noopener">Toegankelijkheidsverklaring<span class="sr-only"> (opent in nieuw venster)</span></a></li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+
+    <div class="pp-blok">
+      <h2>Digitale toegankelijkheid</h2>
+      {{ if $rapport.platform }}
+        <dl class="pp-feiten">
+          <div><dt>Soort rapport</dt><dd>{{ $rapport.rapport_type }}</dd></div>
+          <div><dt>Rapportdatum</dt><dd><time datetime="{{ $rapport.rapport_datum_iso }}">{{ $rapport.rapport_datum }}</time></dd></div>
+          <div><dt>Geldig tot</dt><dd>{{ $rapport.geldig_tot }}</dd></div>
+          <div><dt>Status</dt><dd>{{ $rapport.status }}</dd></div>
+          <div><dt>Contentonderzoek nodig</dt><dd>{{ $rapport.content_nodig }}</dd></div>
+          <div><dt>Afgekeurde succescriteria</dt><dd>{{ $rapport.afgekeurde_sc | default "Onbekend" }}</dd></div>
+          <div><dt>Logius-checklist</dt><dd>
+            {{ if $controle.score }}{{ $controle.score }} van 9 punten{{ with $controle.toelichting }}<span class="pp-toelichting">{{ . }}</span>{{ end }}
+            {{ else }}Nog niet gecontroleerd{{ end }}
+          </dd></div>
+        </dl>
+        {{ if $rapport.geen_rapport }}
+          <p>Er is geen openbaar rapport gevonden.</p>
+        {{ else }}{{ with $rapport.rapport_url }}
+          <p><a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Bekijk het rapport<span class="sr-only"> (opent in nieuw venster)</span></a></p>
+        {{ end }}{{ end }}
+        <p class="pp-bron">Deze gegevens komen uit <a href="/platform-rapporten/">ons overzicht van rapporten</a>. We controleren ze elk kwartaal.</p>
+      {{ else }}
+        <p>We hebben nog geen rapport van dit platform in <a href="/platform-rapporten/">ons overzicht</a>.</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<style>
+  .pp-kruimel { margin-bottom: 1.5rem; font-size: 0.95rem; }
+  .pp-kruimel a { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
+  .pp-kruimel a:hover, .pp-kruimel a:focus-visible { color: #1F2937; }
+  .pp-voorbeeld { border: 2px dashed #A30D4B; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1.5rem; color: #1F2937; }
+  .pp-leverancier { font-weight: 700; color: #1F2937; margin: 0.5rem 0 1rem; }
+  .pp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  @media (min-width: 64rem) { .pp-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+  .pp-blok { border: 1px solid #1F2937; border-radius: 0.75rem; padding: 1.5rem; }
+  .pp-blok h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .pp-blok h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+  .pp-lijst { list-style: disc; padding-left: 1.5rem; }
+  .pp-lijst li { margin-bottom: 0.35rem; }
+  .pp-lijst li::marker { color: #A30D4B; }
+  .pp-bron { font-size: 0.95rem; margin-top: 1.25rem; color: #1F2937; }
+  .pp-bron a, .pp-blok > p a:not(.btn), .pp-links a { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
+  .pp-bron a:hover, .pp-bron a:focus-visible, .pp-links a:hover, .pp-links a:focus-visible { color: #1F2937; }
+  .pp-links { margin-top: 1rem; padding: 0; list-style: none; }
+  .pp-links li { margin-bottom: 0.35rem; }
+  .pp-feiten { margin: 0 0 1.25rem; }
+  .pp-feiten > div { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid #1F2937; }
+  .pp-feiten dt { font-weight: 700; color: #1F2937; }
+  .pp-feiten dd { margin: 0; }
+  .pp-blok .btn { text-transform: none; }
+  .pp-toelichting { display: block; font-size: 0.95rem; margin-top: 0.25rem; }
+</style>
+{{ end }}
