@@ -1530,15 +1530,15 @@ controles:
   platform: Presurf (gearchiveerde website)
   onderzoeksbureau: Cardan
   onderzoeksdatum: '2026-02-26'
-  score: 8
-  toelichting: De steekproef is onvolledig.
+  score: 9
+  toelichting: Voldoet aan alle punten.
   punten:
     '7': ja
     '8': nvt
     '9': ja
     '10': ja
     '11': ja
-    '12': deels
+    '12': ja
     '13': ja
     '14': ja
     '15': ja
