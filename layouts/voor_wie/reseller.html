@@ -192,7 +192,9 @@
   </ul>
 </div>
 
-<section class="rs-sec">
+{{ partial "pagina-nav.html" . }}
+
+<section class="rs-sec" id="hoe-werkt-het">
   <div class="rs-w">
     <div class="rs-intro2">
       <div>
@@ -239,7 +241,7 @@
   </div>
 </section>
 
-<section class="rs-dark rs-calc">
+<section class="rs-dark rs-calc" id="rekenvoorbeeld">
   <div class="rs-w">
     <div>
       <div class="rs-lbl">Rekenvoorbeeld</div>
@@ -258,7 +260,7 @@
   </div>
 </section>
 
-<section class="rs-sec rs-steps-sec">
+<section class="rs-sec rs-steps-sec" id="in-de-praktijk">
   <div class="rs-w">
     <div class="rs-head">
       <div class="rs-lbl">In de praktijk</div>
@@ -293,7 +295,7 @@
   </div>
 </section>
 
-<section class="rs-sec rs-about">
+<section class="rs-sec rs-about" id="over-proper-access">
   <div class="rs-w">
     <div>
       <div class="rs-lbl">Over Proper Access</div>
@@ -302,7 +304,7 @@
       <p class="rs-p">Een senior auditor doet het onderzoek, een tweede auditor de interne review. Zo weten de developers van je klant direct wat ze moeten aanpassen.</p>
     </div>
     <div>
-      <h2 class="rs-lbl" style="margin:0">Vragen</h2>
+      <h2 class="rs-lbl" id="vragen" style="margin:0">Vragen</h2>
       <div class="rs-faq">
         {{ $faqs := slice
           (slice "Wat kost het mij om mee te doen?" "Niets. Er zijn geen kosten, geen minimum aantal opdrachten en geen commitment. Je verwijst een klant door wanneer het je uitkomt.")
@@ -327,7 +329,7 @@
   </div>
 </section>
 
-<section class="rs-dark rs-end">
+<section class="rs-dark rs-end" id="kennismaken">
   <div class="rs-w">
     <div>
       <div class="rs-lbl">20 minuten · geen verplichting</div>

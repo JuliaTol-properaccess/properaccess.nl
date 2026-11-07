@@ -12,5 +12,17 @@ build:
   list: never
   render: true
 description: "Bied je klanten een accessibility-audit aan zonder dat je er iets voor hoeft te doen. 7% commissie, kant-en-klare materialen en doorlopende content."
-
+paginanav:
+  - label: "Hoe werkt het"
+    id: "hoe-werkt-het"
+  - label: "Rekenvoorbeeld"
+    id: "rekenvoorbeeld"
+  - label: "In de praktijk"
+    id: "in-de-praktijk"
+  - label: "Over Proper Access"
+    id: "over-proper-access"
+  - label: "Vragen"
+    id: "vragen"
+  - label: "Kennismaken"
+    id: "kennismaken"
 ---
