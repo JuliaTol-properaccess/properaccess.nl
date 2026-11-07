@@ -47,6 +47,9 @@
         <p>Bekijk het meest recente technische of volledige toegankelijkheidsrapport van een platform voor overheidsorganisaties. Zo zie je of het platform voldoet aan de eisen voor digitale toegankelijkheid.</p>
         <p class="pr-meta"><strong>Laatst bijgewerkt:</strong> {{ hugo.Data.platform_rapporten.bijgewerkt }} · <strong>Updatefrequentie:</strong> {{ hugo.Data.platform_rapporten.updatefrequentie }}</p>
         <h3 id="logius-checklist">Wat we controleren in de kolom Logius-checklist</h3>
+        <details class="pr-accordion">
+          <summary class="pr-accordion__summary">Bekijk de 9 controlepunten</summary>
+          <div class="pr-accordion__body">
         <p>DigiToegankelijk, onderdeel van Logius, controleert elke toegankelijkheidsverklaring in het register met een vaste checklist. Deel 2 van die checklist bevat de eisen aan elk onderzoeksrapport. Je leest ze op de pagina <a href="https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/controle" target="_blank" rel="noopener">Controle van de verklaringen op digitoegankelijk.nl<span class="sr-only"> (opent in nieuw venster)</span></a>. Wij hebben elk rapport in deze tabel op deze 9 punten gecontroleerd:</p>
         <ol class="pr-checklist" start="7">
           <li>De onderzoeksmethode WCAG-EM of een gelijkwaardige methode is gebruikt.</li>
@@ -60,6 +63,8 @@
           <li>Het onderzoek is niet meer dan 3 jaar oud.</li>
         </ol>
         <p>De nummers zijn die van de checklist. Bij punt 13 kijken we of de browsers een versienummer hebben. Bij een app kijken we naar de versie van het besturingssysteem. In de kolom zie je hoeveel punten het rapport haalt en welke punten ontbreken. Mist het rapport van je leverancier een punt, dan krijg je bij de controle van je verklaring een mail met verbeterpunten.</p>
+          </div>
+        </details>
 
         {{ $controles := hugo.Data.platform_rapporten_logius.controles | default slice }}
         {{ if $categories }}
@@ -234,6 +239,15 @@
   .pr-content p a { color: #A30D4B; text-decoration: underline; text-underline-offset: 0.2em; }
   .pr-content p a:hover, .pr-content p a:focus-visible { color: #1F2937; }
   .pr-checklist li { margin-bottom: 0.25rem; }
+  .pr-accordion { border: 1px solid #1F2937; border-radius: 0.5rem; margin: 0.75rem 0 1.5rem; }
+  .pr-accordion__summary { cursor: pointer; padding: 0.875rem 1rem; font-weight: 700; color: #1F2937; list-style: none; display: flex; align-items: center; gap: 0.75rem; }
+  .pr-accordion__summary::-webkit-details-marker { display: none; }
+  .pr-accordion__summary::before { content: "+"; color: #A30D4B; font-size: 1.25rem; line-height: 1; width: 1rem; text-align: center; }
+  .pr-accordion[open] > .pr-accordion__summary::before { content: "\2212"; }
+  .pr-accordion__summary:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+  .pr-accordion__summary:focus-visible { outline: 3px solid #A30D4B; outline-offset: 2px; border-radius: 0.5rem; }
+  .pr-accordion__body { padding: 0 1rem 0.5rem; border-top: 1px solid #1F2937; }
+  .pr-accordion__body > p:first-child { margin-top: 1rem; }
   .pr-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
