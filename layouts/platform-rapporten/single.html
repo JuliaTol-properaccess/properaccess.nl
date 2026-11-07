@@ -102,7 +102,7 @@
                   <tbody>
                     {{ range where $rapporten "categorie" $category }}
                       <tr{{ if eq .afgekeurde_sc "0" }} class="pr-table__row--zero-rejected"{{ end }}>
-                        <th scope="row" data-sort-value="{{ lower .platform }}">{{ $profielpagina := false }}{{ range first 1 (where (hugo.Data.platform_profielen.profielen | default slice) "platform" .platform) }}{{ $profielpagina = site.GetPage (printf "/platformen/%s" .slug) }}{{ end }}{{ with $profielpagina }}<a class="pr-table__platform-link" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .platform }}{{ end }}</th>
+                        <th scope="row" data-sort-value="{{ lower .platform }}">{{ $profielpagina := site.GetPage (printf "/platformen/%s" (partial "platform-slug.html" (dict "platform" .platform))) }}{{ with $profielpagina }}<a class="pr-table__platform-link" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .platform }}{{ end }}</th>
                         <td data-sort-value="{{ lower .leverancier }}">{{ .leverancier }}</td>
                         <td data-sort-value="{{ lower .rapport_type }}">{{ .rapport_type }}</td>
                         <td data-sort-value="{{ .rapport_datum_iso }}"><time datetime="{{ .rapport_datum_iso }}">{{ .rapport_datum }}</time></td>
