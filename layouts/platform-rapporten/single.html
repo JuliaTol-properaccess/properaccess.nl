@@ -62,7 +62,7 @@
           <li>De naam van de onderzoeker of het onderzoeksbureau is genoemd.</li>
           <li>Het onderzoek is niet meer dan 3 jaar oud.</li>
         </ol>
-        <p>De nummers zijn die van de checklist. Bij punt 13 kijken we of de browsers een versienummer hebben. Bij een app kijken we naar de versie van het besturingssysteem. In de kolom zie je hoeveel punten het rapport haalt en welke punten ontbreken. Mist het rapport van je leverancier een punt, dan krijg je bij de controle van je verklaring een mail met verbeterpunten.</p>
+        <p>De nummers zijn die van de checklist. Bij punt 13 kijken we of de browsers een versienummer hebben. Bij een app kijken we naar de versie van het besturingssysteem. In de kolom zie je hoeveel punten het rapport haalt. Mist het rapport van je leverancier een punt, dan krijg je bij de controle van je verklaring een mail met verbeterpunten.</p>
           </div>
         </details>
 
@@ -127,8 +127,7 @@
                           {{ else if not .rapport_url }}
                             Geen link naar het rapport
                           {{ else if $controle }}
-                            <strong>{{ $controle.score }} van 9 punten</strong>
-                            <span class="pr-logius__toelichting">{{ $controle.toelichting }}</span>
+                            {{ $controle.score }} van 9 punten voldoen
                           {{ else }}
                             <span class="pr-logius__bezig">Bezig met controle</span>
                           {{ end }}
@@ -338,7 +337,6 @@
   .pr-table__sc { width: 9%; }
   .pr-table__report { width: 7%; }
   .pr-table__logius { width: 22%; }
-  .pr-logius__toelichting { display: block; margin-top: 0.25rem; }
   .pr-logius__bezig { font-style: italic; }
   .pr-table__link { white-space: nowrap; }
   .pr-rapport-update {
