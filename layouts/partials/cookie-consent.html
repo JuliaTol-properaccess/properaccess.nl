@@ -2,10 +2,12 @@
 {{ with site.Params.cookies }}
   {{ if .enable }}
     <div id="cookie-box" class="cookie-box cookie-box-hide">
-      <p class="cookie-box-text">{{ .content | markdownify }}</p>
-      {{ with .content_detail }}
-        <p class="cookie-box-detail">{{ . | markdownify }}</p>
-      {{ end }}
+      <div class="cookie-box-teksten">
+        <p class="cookie-box-text">{{ .content | markdownify }}</p>
+        {{ with .content_detail }}
+          <p class="cookie-box-detail">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
       <div class="cookie-box-buttons">
         <button
           id="cookie-accept"
@@ -48,28 +50,40 @@
     </script>
 
     <style>
+      /* Een smalle balk over de volle breedte onderaan. Als blok linksonder lag
+         hij over de eerste vraag van het offerteformulier, en op een telefoon
+         over de helft van het scherm (UX-review 9 november 2026). */
       .cookie-box {
         position: fixed;
-        left: 2rem;
-        bottom: 2rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 9999;
-        padding: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem 1.5rem;
+        padding: 0.75rem 1.25rem;
         background-color: #fff;
-        max-width: calc(100% - 4rem);
-        width: 28rem;
-        box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
-        border-radius: 0.5rem;
+        border-top: 1px solid #E5E7EB;
+        box-shadow: 0 -4px 12px rgba(154, 154, 154, 0.15);
       }
       .cookie-box-hide {
         display: none;
       }
+      .cookie-box-teksten {
+        flex: 1 1 32rem;
+      }
+      .cookie-box-buttons {
+        flex: 0 0 auto;
+      }
       .cookie-box-text {
-        margin: 0 0 0.25rem;
-        font-size: 0.95rem;
-        line-height: 1.5;
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.45;
       }
       .cookie-box-detail {
-        margin: 0 0 0.75rem;
+        margin: 0;
         font-size: 0.8rem;
         color: #6B7280;
         line-height: 1.5;

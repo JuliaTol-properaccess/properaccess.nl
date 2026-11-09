@@ -90,7 +90,7 @@ mastodon = "" # Your verification code
 enable = true
 expire_days = 365
 content = "We gebruiken een advertentiemeting-cookie van ChatGPT Ads alleen als je daarvoor kiest. Zonder toestemming werkt de website gewoon en meten we geen advertentieconversies."
-content_detail = "Kies Accepteren of Weigeren. Meer informatie vind je in onze [privacyverklaring](/privacyverklaring/)."
+content_detail = "Kies Accepteren of Alleen noodzakelijke. Meer informatie vind je in onze [privacyverklaring](/privacyverklaring/)."
 button_accept = "Accepteren"
 button_reject = "Alleen noodzakelijke"
 
