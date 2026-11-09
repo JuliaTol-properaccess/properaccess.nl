@@ -5,6 +5,9 @@ date: 2023-10-05
 layout: "second-page"
 slug: "offerte-wcag-onderzoek"
 url: "/offerte-wcag-onderzoek/"
+# Geen zwevende WhatsApp-knop: die lag op een telefoon over de antwoorden van
+# het formulier (UX-review 9 november 2026). Mail en telefoon staan onder het formulier.
+zonder_chatknop: true
 description: "Vraag een offerte aan voor een WCAG-audit en begeleiding. Onafhankelijke auditrapporten, juridisch onderbouwd en direct toepasbaar voor je naleving."
 keywords:
   - wcag audit offerte

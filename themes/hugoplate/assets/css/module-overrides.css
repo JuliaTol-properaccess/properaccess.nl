@@ -54,7 +54,7 @@
 
 /* cookie consent */
 .cookie-box {
-  @apply !rounded-lg;
+  @apply !rounded-none;
 }
 
 /* slider */

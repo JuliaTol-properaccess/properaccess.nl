@@ -225,6 +225,6 @@ De hele lijst, plus zes vragen die je aan elk bureau kunt stellen voordat je een
 
 We doen dit sinds 2019 en we bouwen of beheren zelf geen websites, dus we keuren nooit ons eigen werk. Elk rapport wordt door drie mensen bekeken voordat het de deur uit gaat.
 
-[Vraag een offerte aan](/offerte-wcag-onderzoek/) en je krijgt binnen twee werkdagen een prijs die klopt met het werk. Liever eerst overleggen? Bel of mail, we reageren binnen een werkdag.
+[Vraag een offerte aan](/offerte-wcag-onderzoek/) en je krijgt binnen 1 werkdag een prijs die klopt met het werk. Liever eerst overleggen? Bel of mail, we reageren binnen een werkdag.
 
 {{< /section-split >}}
