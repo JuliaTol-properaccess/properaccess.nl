@@ -148,9 +148,7 @@ Ligt de techniek bij een externe leverancier en beheer je zelf alleen de teksten
 PDF's, dan kan een [contentaudit](/contentaudit/) uitkomst bieden. Let op de voorwaarde: we
 voeren een contentaudit alleen uit als de techniek ook is onderzocht, door ons of door iemand
 anders. Je verklaring vraagt om bewijs dat de hele website is getoetst, niet alleen de
-redactie-laag, dus een contentaudit op zichzelf levert je een halve onderbouwing op. Bekijk ook
-het [overzicht van technische rapporten van platformen](/platform-rapporten/) om te zien of er al
-een rapport voor jouw platform beschikbaar is.
+redactie-laag, dus een contentaudit op zichzelf levert je een halve onderbouwing op.
 
 {{< /section-full >}}
 

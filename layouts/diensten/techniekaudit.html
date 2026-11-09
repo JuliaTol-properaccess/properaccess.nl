@@ -1,17 +1,10 @@
 {{ define "main" }}
 {{/* Techniekaudit: eigen layout, één-op-één naar het ontwerp "Techniekaudit pagina"
-     (november 2026). Header en footer zijn die van de site. De sectie
-     "Marktoverzicht" haalt haar cijfers en rijen uit data/platform_rapporten.yaml,
-     dezelfde bron als /platform-rapporten/. */}}
+     (november 2026). Header en footer zijn die van de site. */}}
 
 {{ $check := `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3134D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>` | safeHTML }}
 {{ $check22 := `<svg class="ta-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A3134D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>` | safeHTML }}
 {{ $arrow := `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>` | safeHTML }}
-
-{{/* Cijfers voor het marktoverzicht */}}
-{{ $pr := hugo.Data.platform_rapporten }}
-{{ $platformen := where $pr.rapporten "categorie" "ne" "Gedeelde websites en samenwerkingen" }}
-{{ $techniek := where $platformen "rapport_type" "Techniek" }}
 
 <div class="ta">
 
@@ -193,42 +186,6 @@
 <div class="ta-kv"><span class="ta-kv__k">Oplossing</span><span class="ta-kv__v ta-muted">Maak iedere dag een knop en ondersteun pijltjestoetsen binnen het raster.</span></div>
 </div>
 </figure>
-</div>
-</div>
-</section>
-
-<!-- MARKTOVERZICHT -->
-<section id="marktoverzicht" class="ta-section ta-section--dark">
-<div class="ta-container ta-pad ta-split ta-split--center">
-<div class="ta-col ta-col--480 ta-stack-20">
-<span class="ta-eyebrow ta-eyebrow--dark">Marktoverzicht</span>
-<h2 class="ta-h2">Zo doen andere platformen het</h2>
-<p class="ta-on-dark">We hebben een overzicht gemaakt van alle technische rapporten die organisaties nu gebruiken in het Register van toegankelijkheidsverklaringen. Zo zie je hoe jouw concurrenten het doen.</p>
-<p class="ta-on-dark">Ook je potentiële klanten gebruiken dit overzicht om een leverancier te kiezen. Ze zien per platform de leverancier, de rapportdatum, de geldigheid en het aantal afgekeurde succescriteria.</p>
-<dl class="ta-market-stats">
-<div><dt>Platformen</dt><dd>{{ len $platformen }}</dd></div>
-<div><dt>Met een techniekrapport</dt><dd>{{ len $techniek }}</dd></div>
-<div><dt>Bijgewerkt</dt><dd class="ta-market-stats__date">{{ $pr.bijgewerkt }}</dd></div>
-</dl>
-<div class="ta-actions">
-<a href="/platform-rapporten/" class="ta-btn ta-btn--white">Bekijk het overzicht van platformrapporten {{ $arrow }}</a>
-</div>
-</div>
-<div class="ta-col ta-col--440">
-<div class="ta-market">
-<div class="ta-market__head"><span class="ta-market__title">Zo ziet het overzicht eruit</span><span class="ta-report__tag">Voorbeeld</span></div>
-<table class="ta-market__table">
-<caption class="ta-sr">Voorbeeld van het overzicht met fictieve platformen</caption>
-<thead><tr><th scope="col">Platform</th><th scope="col">Rapportdatum</th><th scope="col">Afgekeurd</th></tr></thead>
-<tbody>
-<tr><th scope="row"><span class="ta-market__platform">Zaakzicht</span><span class="ta-market__lev">Loketwerk B.V.</span></th><td>14 sep 2026</td><td>3</td></tr>
-<tr><th scope="row"><span class="ta-market__platform">Buurtstem</span><span class="ta-market__lev">Wijkdigitaal</span></th><td>2 jul 2026</td><td>7</td></tr>
-<tr><th scope="row"><span class="ta-market__platform">Raadsvenster</span><span class="ta-market__lev">Bestuurshuis Software</span></th><td>19 mei 2026</td><td>12</td></tr>
-<tr><th scope="row"><span class="ta-market__platform">Formulierkompas</span><span class="ta-market__lev">Kompas Digitaal</span></th><td>8 mrt 2026</td><td>19</td></tr>
-</tbody>
-</table>
-<p class="ta-market__foot">Fictieve platformen. Afgekeurd: het aantal succescriteria waaraan het platform niet voldoet.</p>
-</div>
 </div>
 </div>
 </section>

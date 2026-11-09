@@ -34,8 +34,6 @@ paginanav:
     id: "vergelijk"
   - label: "Wat je krijgt"
     id: "resultaat"
-  - label: "Marktoverzicht"
-    id: "marktoverzicht"
   - label: "Werkwijze en prijs"
     id: "werkwijze"
 

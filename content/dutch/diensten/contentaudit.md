@@ -141,11 +141,6 @@ paginanav:
 <div class="ca-duo__item ca-duo__item--accent"><span class="ca-duo__label">Content</span><span class="ca-duo__text">Je redactie lost het op</span></div>
 <div class="ca-duo__item"><span class="ca-duo__label">Techniek</span><span class="ca-duo__text">Je geeft het door aan je leverancier</span></div>
 </div>
-<div class="ca-dark ca-stack ca-stack--sm">
-<h3 class="ca-h3">Technische platformrapporten</h3>
-<p>Om je daarbij te helpen, hebben we zelf een uitgebreide collectie van actuele technische rapporten van platforms verzameld.</p>
-<a class="ca-btn ca-btn--white" href="/platform-rapporten/">Bekijk de technische platformrapporten<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-</div>
 </div>
 </div>
 </section>
