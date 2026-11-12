@@ -3,7 +3,7 @@ title: "Algemene voorwaarden"
 hide_cta: true
 meta_title: "Algemene voorwaarden | Proper Access"
 description: "De algemene voorwaarden van Proper Access, auditbureau voor digitale toegankelijkheid."
-date: 2026-11-06
+date: 2026-11-12
 slug: "algemene-voorwaarden"
 url: "/algemene-voorwaarden/"
 layout: sectie
@@ -87,7 +87,7 @@ Wijzigingen in content, techniek, software, plug-ins, documenten of systemen na 
 
 Een hercontrole is beperkt tot de bevindingen en onderdelen die in de offerte of opdrachtbevestiging zijn afgesproken. Een hercontrole is geen nieuw volledig toegankelijkheidsonderzoek. Als de digitale omgeving sinds het eerste onderzoek wezenlijk is veranderd, kan Proper Access een nieuwe scope of offerte voorstellen.
 
-Bij een audit is één hercontrole inbegrepen als dat in de offerte staat. Die hercontrole kan binnen 12 weken na oplevering van het rapport worden ingepland. Als de opdrachtgever de verbeteringen niet tijdig beschikbaar stelt of de website te veel is veranderd, kan een nieuwe offerte nodig zijn.
+Bij een audit is één hercontrole inbegrepen in de prijs. Die hercontrole wordt binnen 12 weken na oplevering van het rapport uitgevoerd. Als de opdrachtgever de verbeteringen niet tijdig beschikbaar stelt of de website te veel is veranderd, kan een nieuwe offerte nodig zijn.
 
 {{< /offerte-section >}}
 
