@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{/* Eigen layout voor /gemeentepakket-digitale-toegankelijkheid/, naar het
+     ontwerp van november 2026. De inhoud staat als HTML in
+     content/dutch/diensten/gemeentepakket-digitale-toegankelijkheid.md, zodat
+     .Plain (llms-full.txt) en de zoekindex de tekst blijven zien. De stijlen
+     staan onder "GEMEENTEPAKKET" in assets/css/custom.css. */}}
+<div class="gp">
+  <div class="gp-wrap gp-crumbs">
+    {{ partial "breadcrumb.html" . }}
+  </div>
+  {{ .Content }}
+</div>
+{{ end }}
