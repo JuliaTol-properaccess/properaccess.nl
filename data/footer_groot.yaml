@@ -16,10 +16,6 @@ kolommen:
       - { naam: "Contentaudit", url: "/contentaudit/" }
       - { naam: "Techniek- of systeemaudit", url: "/techniekaudit/" }
       - { naam: "Hercontrole", url: "/hercontrole/" }
-      - { naam: "Mini-audit", url: "/webshop-quickscan/" }
-      - { naam: "Strippenkaart", url: "/strippenkaart/" }
-      - { naam: "Toegankelijkheids-abonnement", url: "/toegankelijkheids-abonnement/" }
-      - { naam: "Testen tijdens de bouw", url: "/toegankelijkheid-testen-tijdens-de-bouw/" }
       - { naam: "Hulp bij de EAA", url: "/hulp-bij-europese-toegankelijkheidswetgeving/" }
       - { naam: "Offerte aanvragen", url: "/offerte-wcag-onderzoek/" }
 
@@ -40,13 +36,6 @@ kolommen:
       - { naam: "PDF-checker", url: "/tools/pdf-checker/" }
       - { naam: "Toegankelijkheidsverklaring (EAA)", url: "/tools/toegankelijkheidsverklaring-generator/" }
       - { naam: "Toegankelijkheidsverklaring (BDTO)", url: "/tools/toegankelijkheidsverklaring-wdo/" }
-      - { naam: "Alt-tekst keuzehulp", url: "/tools/alt-tekst-keuzehulp/" }
-      - { naam: "ARIA-referentie", url: "/tools/aria-referentie/" }
-      - { naam: "Foutmeldingen", url: "/tools/foutmeldingen/" }
-      - { naam: "Succescriteria per beperking", url: "/tools/sc-per-beperking/" }
-      - { naam: "Quiz: museum", url: "/tools/quiz-museum/" }
-      - { naam: "Quiz: webredactie", url: "/tools/quiz-webredactie/" }
-      - { naam: "Quiz: developers", url: "/tools/quiz-developers/" }
       - { naam: "Alle tools en quizzen", url: "/tools/" }
 
   - titel: "Kennis"
@@ -57,11 +46,6 @@ kolommen:
       - { naam: "Stel je vraag aan de assistent", url: "/#vraag" }
       - { naam: "Digitale toegankelijkheid", url: "/digitale-toegankelijkheid/" }
       - { naam: "De European Accessibility Act", url: "/eaa/" }
-      - { naam: "Toegankelijkheidsverklaring overheid", url: "/toegankelijkheidsverklaring-overheid/" }
-      - { naam: "Toegankelijkheidsverklaring markt", url: "/toegankelijkheidsverklaring-markt/" }
-      - { naam: "Een auditbureau kiezen", url: "/auditbureau-kiezen/" }
-      - { naam: "Onderzoek", url: "/onderzoek/" }
-      - { naam: "Nieuws over toegankelijkheid", url: "/nieuws/" }
       - { naam: "Academy", url: "/academy/" }
       - { naam: "Blog: WCAG uitgelegd", url: "/categories/wcag-uitgelegd/" }
       - { naam: "Blog: de EAA", url: "/categories/de-eaa/" }
