@@ -21471,7 +21471,10 @@ pre.chroma {
   line-height: 1.6;
   background: #fff;
 }
-.gp p, .gp ul, .gp ol, .gp h1, .gp h2, .gp h3 { margin: 0; }
+/* :where houdt de reset licht, zodat klassen met een marge hem overschrijven. */
+.gp :where(p, ul, ol, h1, h2, h3) { margin: 0; }
+/* Koppen nemen de tekstkleur van hun sectie over, ook wit op donkerblauw en magenta. */
+.gp h1, .gp h2, .gp h3 { color: inherit; }
 .gp ul, .gp ol { list-style: none; padding: 0; }
 .gp a { color: var(--gp-magenta); }
 .gp a:hover { color: var(--gp-magenta-dark); }
