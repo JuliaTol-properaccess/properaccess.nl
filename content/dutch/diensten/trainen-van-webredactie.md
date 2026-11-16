@@ -17,8 +17,8 @@ keywords:
 service:
   serviceType: "WCAG-training voor webredactie"
   price:
-    amount: 595
-    description: "€ 595 per deelnemer voor het dagdeel over toegankelijke webcontent, € 795 voor het dagdeel van Word naar toegankelijke PDF en € 1.195 voor beide dagdelen op één dag. Alle prijzen exclusief btw."
+    amount: 400
+    description: "Per dagdeel € 595 per deelnemer online, of € 400 per deelnemer op ons kantoor in Emmeloord of bij de organisatie op kantoor. Beide dagdelen op één dag: € 1.195 per deelnemer online, of € 800 op kantoor. Alle prijzen exclusief btw."
   isCourse: true
   courseMode: "onsite"
   duration: "PT1D"
@@ -58,7 +58,7 @@ paginanav:
 <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #4A5463; max-width: 580px">De meeste redacteuren hebben nooit geleerd hoe ze content toegankelijk maken. In onze training oefenen ze met hun eigen werk, en zien ze direct resultaat.</p>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 28px; font-weight: 600; font-size: 16px">
 <li style="display: flex; gap: 8px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Maximaal 8 deelnemers</li>
-<li style="display: flex; gap: 8px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Op jullie eigen locatie</li>
+<li style="display: flex; gap: 8px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Online of op kantoor</li>
 <li style="display: flex; gap: 8px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Licentie voor een tool inbegrepen</li>
 </ul>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
@@ -106,7 +106,7 @@ paginanav:
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A30D4B">Aanbod</span>
 <h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800">Twee trainingen, twee doelgroepen</h2>
-<p style="margin: 0; color: #4A5463">Allebei een dagdeel van 3,5 uur, bij jullie op locatie, met maximaal 8 deelnemers.</p>
+<p style="margin: 0; color: #4A5463">Allebei een dagdeel van 3,5 uur met maximaal 8 deelnemers. Online, op ons kantoor in Emmeloord of bij jullie op kantoor.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px">
 
@@ -116,7 +116,7 @@ paginanav:
 <h3 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2">Toegankelijke webcontent</h3>
 <p style="margin: 0; color: #4A5463; font-size: 16px">Voor redacteuren die content in een CMS plaatsen. Je ervaart hoe bezoekers met verschillende beperkingen je content lezen, en leert hoe je het goed doet.</p>
 </div>
-<div style="display: flex; align-items: baseline; gap: 10px; padding: 18px 0; border-top: 1px solid #E3E6EB; border-bottom: 1px solid #E3E6EB"><span style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">€ 595</span><span style="font-size: 15px; color: #4A5463">per deelnemer, excl. btw</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid #E3E6EB; border-bottom: 1px solid #E3E6EB"><div style="display: flex; align-items: baseline; gap: 10px"><span style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">€ 595</span><span style="font-size: 15px; color: #4A5463">per deelnemer online, excl. btw</span></div><span style="font-size: 15px; color: #4A5463">Op ons kantoor in Emmeloord of bij jullie op kantoor: <strong style="color: #1F2937">€ 400 per deelnemer</strong>.</span></div>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px">
 <li style="display: flex; gap: 10px; align-items: flex-start"><svg style="flex: 0 0 auto; margin-top: 3px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Structuur met koppen, lijsten en tussenkoppen</li>
 <li style="display: flex; gap: 10px; align-items: flex-start"><svg style="flex: 0 0 auto; margin-top: 3px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Goede linkteksten en tabellen</li>
@@ -135,7 +135,7 @@ paginanav:
 <h3 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2">Van Word naar toegankelijke pdf</h3>
 <p style="margin: 0; color: #4A5463; font-size: 16px">Voor redacteuren die rapporten, verslagen of folders als pdf maken vanuit Word. We maken vooraf een toegankelijk Word-sjabloon in jullie huisstijl.</p>
 </div>
-<div style="display: flex; align-items: baseline; gap: 10px; padding: 18px 0; border-top: 1px solid #E3E6EB; border-bottom: 1px solid #E3E6EB"><span style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">€ 795</span><span style="font-size: 15px; color: #4A5463">per deelnemer, excl. btw</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid #E3E6EB; border-bottom: 1px solid #E3E6EB"><div style="display: flex; align-items: baseline; gap: 10px"><span style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">€ 595</span><span style="font-size: 15px; color: #4A5463">per deelnemer online, excl. btw</span></div><span style="font-size: 15px; color: #4A5463">Op ons kantoor in Emmeloord of bij jullie op kantoor: <strong style="color: #1F2937">€ 400 per deelnemer</strong>.</span></div>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px">
 <li style="display: flex; gap: 10px; align-items: flex-start"><svg style="flex: 0 0 auto; margin-top: 3px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Een toegankelijk Word-sjabloon in jullie huisstijl</li>
 <li style="display: flex; gap: 10px; align-items: flex-start"><svg style="flex: 0 0 auto; margin-top: 3px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A30D4B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"></path></svg>Structuur met koppen, lijsten en tussenkoppen</li>
@@ -153,15 +153,13 @@ paginanav:
 <!-- combi -->
 <div id="beide" style="scroll-margin-top: 6rem; background: linear-gradient(100deg, #1F2937 55%, #3B2440); color: #ffffff; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
 <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<span style="align-self: flex-start; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; background: #A30D4B; border-radius: 999px; padding: 3px 12px">Voordeliger</span>
 <h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15">Of beide trainingen op één dag</h3>
 <p style="margin: 0; color: #D3D9E1; font-size: 16px">'s Ochtends webcontent, 's middags pdf's, met lunch ertussen. De uitleg over WCAG doen we maar één keer, dus er blijft meer tijd over om te oefenen. Je krijgt allebei de licenties.</p>
 </div>
 <div style="flex: 0 1 300px; background: rgba(255,255,255,0.07); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 15px; color: #D3D9E1">Apart <s>€ 1.390</s></span>
 <span style="font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05">€ 1.195</span>
-<span style="font-size: 14px; color: #D3D9E1">per deelnemer, excl. btw, incl. lunch</span>
-<span style="margin-top: 6px; align-self: flex-start; font-size: 13px; font-weight: 800; color: #1F2937; background: #ffffff; border-radius: 999px; padding: 3px 12px">€ 195 voordeel</span>
+<span style="font-size: 14px; color: #D3D9E1">per deelnemer online, excl. btw</span>
+<span style="margin-top: 10px; font-size: 15px; color: #ffffff">Op ons kantoor in Emmeloord of bij jullie op kantoor: <strong>€ 800 per deelnemer</strong>, incl. lunch.</span>
 </div>
 </div>
 </div>

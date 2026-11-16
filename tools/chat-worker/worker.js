@@ -81,7 +81,7 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - In de prijs van elke audit zitten een nabespreking van het rapport en één hercontrole binnen 4 maanden na oplevering. Een tweede hercontrole krijgt een aparte offerte; die prijs hangt af van het aantal bevindingen. https://www.properaccess.nl/hercontrole/
 - Strippenkaart: één strip is één vraag over één onderwerp. Bundels vanaf 10 strippen voor € 250. https://www.properaccess.nl/strippenkaart/
 - Monitoring van je website: elke maand meten we je hele website automatisch na. Je ziet in één dashboard of je website beter of slechter wordt, wat er nieuw is en wat er is opgelost. https://www.properaccess.nl/automatische-monitoring/
-- Training voor webredacteuren, per deelnemer: een dagdeel over content € 595, een dagdeel over PDF's € 795, beide op één dag € 1.195. https://www.properaccess.nl/trainen-van-webredactie/
+- Training voor webredacteuren, per deelnemer: een dagdeel over content of over PDF's € 595 online of € 400 op kantoor (bij Proper Access in Emmeloord of bij de organisatie), beide op één dag € 1.195 online of € 800 op kantoor. https://www.properaccess.nl/trainen-van-webredactie/
 - Toegankelijkheids-abonnement, voor organisaties met meerdere websites en apps: https://www.properaccess.nl/toegankelijkheids-abonnement/
 - Offerte aanvragen: https://www.properaccess.nl/offerte-wcag-onderzoek/
 
