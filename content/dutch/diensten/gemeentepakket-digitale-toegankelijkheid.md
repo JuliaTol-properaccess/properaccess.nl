@@ -144,7 +144,7 @@ service:
 <div><p class="gp-stats__num">40%</p><p class="gp-stats__label">komt terug voor een tweede opdracht</p></div>
 </div>
 <p class="gp-peildatum">Peildatum 7 augustus 2026.</p>
-<h2 class="gp-clients__title">We werkten onder meer voor</h2>
+<h2 class="gp-clients__title">Wij werken onder meer voor</h2>
 <ul class="gp-clients">
 <li>Provincie Noord-Holland</li>
 <li>Provincie Zuid-Holland</li>
@@ -152,6 +152,9 @@ service:
 <li>Gemeente Amersfoort</li>
 <li>Gemeente 's-Hertogenbosch</li>
 <li>Gemeente Alkmaar</li>
+<li>Pleio</li>
+<li>Onderzoeksraad voor Veiligheid</li>
+<li>RADIO</li>
 </ul>
 </div>
 </section>
