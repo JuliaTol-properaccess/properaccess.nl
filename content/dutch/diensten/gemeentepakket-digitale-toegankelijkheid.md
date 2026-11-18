@@ -40,6 +40,7 @@ service:
 <li><span class="gp-summary__num">1</span><span>jaar licentie op de WCAG Radar</span></li>
 <li><span class="gp-summary__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 6"/></svg></span><span>Hercontrole inbegrepen</span></li>
 <li><span class="gp-summary__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 6"/></svg></span><span>Toegang tot de Community voor webredactie</span></li>
+<li><span class="gp-summary__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 6"/></svg></span><span>Toegang tot onze Academy</span></li>
 </ul>
 </div>
 </div>
@@ -155,6 +156,9 @@ service:
 <li>Pleio</li>
 <li>Onderzoeksraad voor Veiligheid</li>
 <li>RADIO</li>
+<li>Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</li>
+<li>SVB</li>
+<li>Gemeente Breda</li>
 </ul>
 </div>
 </section>
