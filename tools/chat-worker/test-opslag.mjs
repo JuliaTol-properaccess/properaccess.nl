@@ -128,7 +128,7 @@ console.log("\n1. Wat er in het logboek komt");
 {
   const { sqlite, env } = nieuweOmgeving();
   antwoordVanClaude =
-    "Een audit kost rond 3.150 euro. Kijk op https://www.properaccess.nl/toegankelijkheidsaudit/ voor meer.";
+    "Een audit kost rond 3.150 euro. Kijk op https://www.properaccess.nl/toegankelijkheidsonderzoek/ voor meer.";
   const antwoord = await chat(
     env,
     {
@@ -149,7 +149,7 @@ console.log("\n1. Wat er in het logboek komt");
   controleer("het antwoord van de assistent staat erin", r[0].antwoord === antwoordVanClaude, r[0].antwoord);
   controleer(
     "de link uit het antwoord staat er apart bij, zonder punt",
-    r[0].links === "https://www.properaccess.nl/toegankelijkheidsaudit/",
+    r[0].links === "https://www.properaccess.nl/toegankelijkheidsonderzoek/",
     r[0].links
   );
   controleer("de taal staat erin", r[0].taal === "nl", r[0].taal);
@@ -372,9 +372,9 @@ console.log("\n8. Het rapport");
   );
   const nu = new Date().toISOString();
   const contact = "https://www.properaccess.nl/contact/";
-  const audit = "https://www.properaccess.nl/toegankelijkheidsaudit/";
-  zet.run(nu, "nl", "/toegankelijkheidsaudit/", "Wat kost een audit van een webshop?", "Rond 3.150 euro.", audit);
-  zet.run(nu, "nl", "/toegankelijkheidsaudit/", "Hoeveel kost een hercontrole?", "Dat hangt af van de bevindingen.", contact);
+  const audit = "https://www.properaccess.nl/toegankelijkheidsonderzoek/";
+  zet.run(nu, "nl", "/toegankelijkheidsonderzoek/", "Wat kost een audit van een webshop?", "Rond 3.150 euro.", audit);
+  zet.run(nu, "nl", "/toegankelijkheidsonderzoek/", "Hoeveel kost een hercontrole?", "Dat hangt af van de bevindingen.", contact);
   zet.run(nu, "nl", "/eaa/", "Moet mijn webshop in juni 2025 aan de EAA voldoen?", "Ja, sinds 28 juni 2025.", audit);
   zet.run(nu, "en", "/en/tools/", "How do I make a PDF accessible?", "Use our checker.", "");
   zet.run(nu, "nl", "/", "Wie is de oprichter van jullie bedrijf?", "Julia Tol.", contact);
@@ -405,7 +405,7 @@ console.log("\n8. Het rapport");
   controleer("per taal: vijf nl en één en", JSON.stringify(data.per_taal) === JSON.stringify([{ taal: "nl", aantal: 5 }, { taal: "en", aantal: 1 }]), JSON.stringify(data.per_taal));
   controleer(
     "de drukste pagina staat bovenaan",
-    data.per_pagina[0].pagina === "/toegankelijkheidsaudit/" && data.per_pagina[0].aantal === 2,
+    data.per_pagina[0].pagina === "/toegankelijkheidsonderzoek/" && data.per_pagina[0].aantal === 2,
     JSON.stringify(data.per_pagina)
   );
 

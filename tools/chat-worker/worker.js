@@ -73,7 +73,7 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 - Iedereen kan een strippenkaart kopen, ook zonder audit bij ons
 
 ## Diensten (indicaties, exclusief btw)
-- WCAG-audit (WCAG 2.2 AA): vanaf circa € 2.175 voor een eenvoudige website. De meeste websites liggen rond € 2.850. https://www.properaccess.nl/toegankelijkheidsaudit/
+- WCAG-audit (WCAG 2.2 AA): vanaf circa € 2.175 voor een eenvoudige website. De meeste websites liggen rond € 2.850. https://www.properaccess.nl/toegankelijkheidsonderzoek/
 - Mini-audit: € 495. https://www.properaccess.nl/webshop-quickscan/
 - Contentaudit, gericht op redactionele content: vanaf circa € 1.650. https://www.properaccess.nl/contentaudit/
 - Techniekaudit, gericht op de technische bouw: vanaf circa € 1.995. https://www.properaccess.nl/techniekaudit/
