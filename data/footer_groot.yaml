@@ -5,6 +5,8 @@
 # trainingen sinds 8 oktober 2026 weer actief aan, in dagdelen.
 # /training-devteams/ staat er bewust niet in en blijft bereikbaar via de
 # contentpagina's.
+# Op 16-11-2026 gingen er 16 links uit (losse tools, quizzen, Mini-audit,
+# Strippenkaart, abonnement, testen tijdens de bouw en enkele kennispagina's).
 
 kolommen:
   - titel: "Diensten"
