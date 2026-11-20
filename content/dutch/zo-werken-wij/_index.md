@@ -18,8 +18,8 @@ achtergrond: |
   ## Volgens welke methode werken we?
 
   We werken volgens WCAG-EM, de evaluatiemethode van het W3C. Het Register van
-  Toegankelijkheidsverklaringen accepteert alleen onderzoek dat volgens WCAG-EM is
-  uitgevoerd. Je rapport is dus bruikbaar als onderbouwing. WCAG-EM kent vijf stappen:
+  Toegankelijkheidsverklaringen vraagt een goed gedocumenteerde evaluatiemethode: WCAG-EM of
+  gelijkwaardig. Je rapport is dus bruikbaar als onderbouwing. WCAG-EM kent vijf stappen:
 
   1. **Reikwijdte bepalen.** Welke website, welke subdomeinen, welke talen, welke apps. We leggen ook vast op welke browsers en hulpsoftware we toetsen.
   2. **De site verkennen.** Welke paginatypes er zijn, welke onderdelen erin zitten zoals formulieren, filters en video's, en waar de gebruikersroutes lopen.
