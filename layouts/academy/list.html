@@ -5,16 +5,57 @@
      3. een sectie binnen een opleiding (de hoofdstukken van die sectie). */}}
 {{ $academyRoot := partial "academy-opleiding.html" . }}
 {{ if not $academyRoot }}
-  {{/* ---- Keuzepagina /academy/. De kaarten per opleiding volgen in stap 3
-       van het plan academy-twee-opleidingen. ---- */}}
-  <div class="academy" id="academy">
+  {{/* ---- Keuzepagina /academy/: een kaart per opleiding. Een opleiding is
+       een submap met `opleiding:` in de front matter; een nieuwe opleiding
+       verschijnt hier vanzelf, in de volgorde van `weight`. ---- */}}
+  {{ $opleidingen := where .Sections "Params.opleiding" "!=" nil }}
+  {{/* Voor "Verder waar je was": de open lessen van alle opleidingen samen,
+       zodat academy-voortgang.js de laatst bezochte les kan vinden. */}}
+  {{ $alleLessen := slice }}
+  <div class="academy academy--keuze" id="academy">
     <main class="academy__main" id="academyMain">
+      <div class="academy__verder" id="academyVerder" hidden>
+        <p class="academy__verder-label">Verder waar je was</p>
+        <a href="{{ .RelPermalink }}" class="academy__verder-link" id="academyVerderLink">
+          <span id="academyVerderTitel"></span>
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </div>
+
       <div class="academy__hero">
-        <h1 class="academy__hero-title">{{ .Title }}</h1>
-        {{ with .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
+        <h1 class="academy__hero-title">{{ .Params.hero_title | default .Title }}</h1>
+        {{ with .Params.hero_intro | default .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
+      </div>
+
+      <div class="academy__sections-grid">
+        {{ range $opleidingen.ByWeight }}
+          {{ $data := partialCached "academy-voortgang-data.html" . .RelPermalink }}
+          {{ $alleLessen = $alleLessen | append $data.lessen }}
+          <a href="{{ .RelPermalink }}" class="academy__section-card">
+            <div class="academy__section-card-header">
+              <h2 class="academy__section-card-title">{{ .Title }}</h2>
+            </div>
+            {{ with .Description }}<p class="academy__section-card-desc">{{ . }}</p>{{ end }}
+            <div class="academy__section-card-meta">
+              <span class="academy__section-card-meta-item">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+                {{ with $data.lessenOpen }}{{ . }} open {{ cond (eq . 1) "les" "lessen" }}{{ else }}Nog geen open lessen{{ end }}
+              </span>
+            </div>
+          </a>
+        {{ end }}
       </div>
     </main>
   </div>
+  {{/* Alleen de lessen: zonder quizzen en vragen tekent de JavaScript geen
+       tegels, want die staan niet op deze pagina. */}}
+  {{ partial "academy-voortgang-json.html" (dict "lessen" $alleLessen) }}
+  <script src="{{ "js/academy-voortgang.js" | relURL }}" defer></script>
 {{ else }}
 {{ $isSection := ne .RelPermalink $academyRoot.RelPermalink }}
 {{ $labelSectie := $academyRoot.Params.label_sectie | default "Sectie" }}

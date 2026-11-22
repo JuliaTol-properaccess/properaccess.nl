@@ -9996,6 +9996,15 @@ html.dark .tool-fout__level {
   min-width: 0;
 }
 
+/* Keuzepagina /academy/: geen zijbalk, dus de inhoud over de volle breedte. */
+.academy--keuze {
+  grid-template-columns: 1fr;
+}
+
+.academy--keuze .academy__main {
+  grid-column: 1;
+}
+
 /* Password gate */
 .academy__gate {
   display: flex;
