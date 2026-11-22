@@ -1,10 +1,12 @@
 ---
 title: "EAA en wetgeving"
-meta_title: "De European Accessibility Act (EAA): artikelen en uitleg | Proper Access"
-description: "Alles over de European Accessibility Act. Wat de wet inhoudt, voor wie hij geldt, welke boetes er zijn en hoe je je voorbereidt."
+meta_title: "EAA en wetgeving: de EAA, het BDTO en toezicht | Proper Access"
+description: "Voor wie de EAA en het BDTO gelden, wat toezichthouders als de ACM en de AFM verwachten, welke boetes er zijn en wat er in de toegankelijkheidsverklaring moet."
 indexable: true
 ---
 
-De European Accessibility Act (EAA) maakt digitale toegankelijkheid verplicht voor veel producten en diensten die aan consumenten worden aangeboden. Op deze pagina leggen we uit voor wie de wet geldt, wat je moet regelen en hoe WCAG en EN 301 549 daarin terugkomen.
+De European Accessibility Act (EAA) geldt voor veel producten en diensten voor consumenten, waaronder webshops en bankdiensten. Voor de overheid geldt het Besluit digitale toegankelijkheid overheid (BDTO).
 
-Je vindt hier praktische uitleg over de verplichtingen, toezicht en voorbereiding — voor organisaties die willen weten wat de EAA concreet betekent voor hun website, app of webshop.
+In deze artikelen lees je voor wie welke wet geldt, wat de ACM en de AFM als toezichthouder doen en hoe de boetes per land verschillen. Er zijn ook artikelen per sector: onderwijs, musea, financiële instellingen en webbureaus.
+
+Over het nieuwe model van de toegankelijkheidsverklaring en over het register staan aparte artikelen. Heb je een webshop, kijk dan bij [Webshops](/categories/e-commerce-eaa/).
