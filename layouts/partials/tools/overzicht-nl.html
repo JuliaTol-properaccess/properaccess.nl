@@ -1,0 +1,184 @@
+{{/* Toolspagina (NL), naar het design "Toolspagina properaccess.nl" van 22 november 2026.
+     De Engelse toolspagina gebruikt nog de oude opbouw in layouts/tools/list.html.
+     Getallen op deze pagina komen uit de toolpagina's zelf: 50 checks en 29 gratis uit
+     content/dutch/tools/wcag-radar.md, 55 succescriteria uit sc-per-beperking.md. */}}
+{{ $lens := .GetPage "wcag-radar" }}
+{{ $pdf := .GetPage "pdf-checker" }}
+{{ $bm := index hugo.Data.bookmarklets "lens" }}
+{{ $pijlOmlaag := `<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>` | safeHTML }}
+
+<div class="tp">
+
+<!-- 1. Introductie -->
+<section class="tp-intro">
+  <div class="tp-wrap tp-intro__grid">
+    <div class="tp-intro__text">
+      <p class="tp-eyebrow tp-eyebrow--muted">/ tools</p>
+      <h1 class="tp-intro__title">Toegankelijkheids&shy;tools</h1>
+      <p class="tp-intro__lede">Controleer en verbeter de toegankelijkheid van je website. De meeste tools zijn gratis.</p>
+      <p class="tp-muted">Met de WCAG Radar test je een webpagina. Met de PDF-checker controleer je een PDF.</p>
+    </div>
+
+    <ul class="tp-intro__cards" aria-label="De tools op deze pagina">
+      <li>
+        <a class="tp-toolcard" href="#wcag-radar">
+          <span class="tp-toolcard__meta"><span>[ webpagina ]</span><span>50 checks, 29 gratis</span></span>
+          <span class="tp-toolcard__title">WCAG Radar</span>
+          <span class="tp-muted">50 checks op toegankelijkheid, in je eigen browser.</span>
+          <span class="tp-chips"><span class="tp-chip">webredacties</span><span class="tp-chip">designers</span><span class="tp-chip">developers</span></span>
+          <span class="tp-toolcard__go">Naar WCAG Radar{{ $pijlOmlaag }}</span>
+        </a>
+      </li>
+      <li>
+        <a class="tp-toolcard" href="#pdf-tool">
+          <span class="tp-toolcard__meta"><span>[ pdf ]</span><span>2 functies</span></span>
+          <span class="tp-toolcard__title">PDF-checker</span>
+          <span class="tp-muted">Controleer je PDF gratis. Repareren is in besloten test.</span>
+          <span class="tp-chips"><span class="tp-chip">controleren</span><span class="tp-chip">repareren</span></span>
+          <span class="tp-toolcard__go">Naar PDF-checker{{ $pijlOmlaag }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2. WCAG Radar -->
+<section class="tp-section tp-section--grey" id="wcag-radar" aria-labelledby="wcag-radar-titel">
+  <div class="tp-wrap tp-split">
+
+    <div class="tp-split__col tp-radar__visual">
+      <img class="tp-radar__shot" src="/images/tools/wcag-radar-paneel.webp" width="534" height="442" loading="lazy"
+           alt="Het paneel van de WCAG Radar, met de tabbladen Redactie, Designer en Developer. Per check zet je een schakelaar aan, zoals Paginatitel en Koppen en structuur. Checks met het label PRO vragen een licentie.">
+
+      {{ with $bm }}
+      <div class="tp-panel">
+        <div class="tp-panel__bar"><span>bookmarklet</span><span>wcag radar</span></div>
+        <div class="tp-panel__body">
+          <div class="tp-stack">
+            <p class="tp-mono">stap 1: sleep naar je bladwijzerbalk</p>
+            <div class="tp-dropzone">
+              {{/* Geen draggable="true": anchors zijn standaard sleepbaar en de browser vult
+                   dan zelf de bookmark-URL. Met draggable="true" start HTML5-drag-en-drop en
+                   blijft de bookmark leeg. */}}
+              <a class="tp-btn tp-btn--drag" href="{{ .href | safeURL }}">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="6" r="1"/><circle cx="15" cy="6" r="1"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><circle cx="9" cy="18" r="1"/><circle cx="15" cy="18" r="1"/></svg>
+                WCAG Radar
+              </a>
+            </div>
+            <p class="tp-mono">Sleep de knop, klik hem niet aan.</p>
+          </div>
+
+          <div class="tp-stack">
+            <p class="tp-mono">zie je geen bladwijzerbalk?</p>
+            <dl class="tp-keys">
+              <div><dt>Windows en Linux</dt><dd><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>B</kbd></dd></div>
+              <div><dt>Mac</dt><dd><kbd>Cmd</kbd><kbd>Shift</kbd><kbd>B</kbd></dd></div>
+            </dl>
+          </div>
+
+          <p class="tp-mono tp-panel__step">stap 2: open een pagina en klik op de bladwijzer</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="tp-split__col tp-stack-lg">
+      <p class="tp-eyebrow">/ wcag radar</p>
+      <h2 class="tp-h2" id="wcag-radar-titel">50 checks op toegankelijkheid, in je eigen browser</h2>
+      <p class="tp-lede">De WCAG Radar test de pagina die je open hebt. 29 van de 50 checks zijn gratis en vragen geen account.</p>
+      <div class="tp-stack">
+        <p class="tp-mono">gemaakt voor</p>
+        <ul class="tp-audience" aria-label="Doelgroepen">
+          <li><span class="tp-audience__nr" aria-hidden="true">[ 01 ]</span><span class="tp-audience__name">Webredacties</span></li>
+          <li><span class="tp-audience__nr" aria-hidden="true">[ 02 ]</span><span class="tp-audience__name">Designers</span></li>
+          <li><span class="tp-audience__nr" aria-hidden="true">[ 03 ]</span><span class="tp-audience__name">Developers</span></li>
+        </ul>
+      </div>
+      <ul class="tp-checks">
+        <li><span aria-hidden="true">✓</span>Draait volledig in je browser</li>
+        <li><span aria-hidden="true">✓</span>Geen installatie, geen account</li>
+        <li><span aria-hidden="true">✓</span>Werkt achter een login en op localhost</li>
+        <li><span aria-hidden="true">✓</span>Verstuurt niets</li>
+      </ul>
+      {{ with $lens }}<a class="tp-link" href="{{ .RelPermalink }}">Bekijk alle 50 checks van de WCAG Radar</a>{{ end }}
+    </div>
+
+  </div>
+</section>
+
+<!-- 3. PDF-checker -->
+<section class="tp-section" id="pdf-tool" aria-labelledby="pdf-tool-titel">
+  <div class="tp-wrap tp-split tp-split--center">
+
+    <div class="tp-split__col tp-stack-lg">
+      <p class="tp-eyebrow">/ pdf-checker</p>
+      <h2 class="tp-h2" id="pdf-tool-titel">Controleer en repareer je PDF's</h2>
+      <p class="tp-lede">De tool doet twee dingen. Je gebruikt ze apart of samen.</p>
+      <p class="tp-muted">Wil je weten welke fouten er in een PDF zitten? Gebruik de controle, gratis en zonder account. Wil je een PDF toegankelijk maken? Het repareren zit in dezelfde tool en is nu in besloten test.</p>
+      <div class="tp-actions">
+        <a class="tp-btn" href="https://pdf-toegankelijk.nl/controleren">Naar pdf-toegankelijk.nl</a>
+        {{ with $pdf }}<a class="tp-link" href="{{ .RelPermalink }}">Wat de PDF-checker controleert</a>{{ end }}
+      </div>
+    </div>
+
+    <div class="tp-split__col tp-panel">
+      <div class="tp-panel__bar"><span>pdf-toegankelijk.nl</span><span>2 functies</span></div>
+      <ul class="tp-functions" aria-label="Functies van de PDF-tool">
+        <li>
+          <p class="tp-mono">[ controleren ]</p>
+          <h3 class="tp-h3">PDF controleren</h3>
+          <p class="tp-muted">Upload je PDF en zie welke toegankelijkheidsfouten erin zitten. Gratis, zonder account.</p>
+        </li>
+        <li>
+          <p class="tp-mono">[ repareren ]</p>
+          <h3 class="tp-h3">PDF repareren</h3>
+          <p class="tp-muted">Je krijgt je eigen document terug, met een tagstructuur waar die ontbrak.</p>
+          <p class="tp-chips"><span class="tp-chip">in besloten test</span></p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. Gratis tools -->
+<section class="tp-section tp-section--grey" id="gratis-tools" aria-labelledby="gratis-tools-titel">
+  <div class="tp-wrap tp-stack-xl">
+    <div class="tp-stack tp-narrow">
+      <p class="tp-eyebrow">/ gratis tools</p>
+      <h2 class="tp-h2" id="gratis-tools-titel">Naslagwerk en hulpmiddelen voor je team</h2>
+      <p class="tp-lede">Voor developers, designers en webredacties. Zonder account.</p>
+    </div>
+
+    {{ $gratis := slice
+      (dict "page" "aria-referentie" "tag" "developers" "titel" "ARIA-rollen en -attributen" "tekst" "Zoek WAI-ARIA-rollen en -attributen op. Per rol zie je de ondersteunde attributen, het HTML-element dat hetzelfde doet en een codevoorbeeld." "link" "Naar de ARIA-referentie")
+      (dict "page" "foutmeldingen" "tag" "formulieren" "titel" "Foutmeldingen" "tekst" "Goede foutmeldingen voor elk type formulierveld. Met voorbeelden van wat je volgens WCAG wel en niet schrijft." "link" "Naar het naslagwerk foutmeldingen")
+      (dict "page" "alt-tekst-keuzehulp" "tag" "webredactie" "titel" "Alt-tekst keuzehulp" "tekst" "Beantwoord een paar vragen en je weet welke alt-tekst past: decoratief, informatief, functioneel of complex. Werkt in je eigen browser." "link" "Naar de alt-tekst keuzehulp")
+      (dict "page" "sc-per-beperking" "tag" "wcag" "titel" "Succescriteria per beperking" "tekst" "De 55 succescriteria van WCAG 2.2, ingedeeld per beperking. Filter op visueel, auditief, motorisch, cognitief of neurologisch." "link" "Naar de succescriteria per beperking")
+      (dict "page" "toegankelijkheidsverklaring-generator" "tag" "eaa" "titel" "Toegankelijkheidsverklaring voor bedrijven" "tekst" "Stel stap voor stap een toegankelijkheidsverklaring op voor je bedrijf, volgens de European Accessibility Act (EAA)." "link" "Verklaring opstellen onder de EAA")
+      (dict "page" "toegankelijkheidsverklaring-wdo" "tag" "bdto" "titel" "Toegankelijkheidsverklaring onder het BDTO" "tekst" "Stel stap voor stap een toegankelijkheidsverklaring op voor culturele en onderwijsinstellingen, volgens het Besluit digitale toegankelijkheid overheid (BDTO)." "link" "Verklaring opstellen onder het BDTO")
+    }}
+    <div class="tp-freegrid">
+      {{ range $i, $t := $gratis }}
+        {{ with $.GetPage $t.page }}
+        <article class="tp-free">
+          <p class="tp-free__meta"><span>[ {{ $t.tag }} ]</span><span aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span></p>
+          <h3 class="tp-h3 tp-h3--lg">{{ $t.titel }}</h3>
+          <p class="tp-muted tp-free__text">{{ $t.tekst }}</p>
+          <a class="tp-link" href="{{ .RelPermalink }}">{{ $t.link }}</a>
+        </article>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="tp-note">
+      <p><strong>Een tool geeft je een eerste aanwijzing.</strong> Wil je weten of je website voldoet aan WCAG 2.2 niveau AA? Dan heb je een audit nodig.</p>
+      <ul>
+        <li><a class="tp-link" href="/toegankelijkheidsaudit/">Toegankelijkheidsaudit</a></li>
+        <li><a class="tp-link" href="/digitale-toegankelijkheid-overheid/">WCAG-EM-onderzoek voor overheden</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</div>

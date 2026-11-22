@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ if eq .Lang "nl" }}
+  {{ partial "tools/overzicht-nl.html" . }}
+{{ else }}
   {{ partial "page-header" . }}
 
   <section class="section tool-overview__page">
@@ -177,4 +180,5 @@
     });
   })();
   </script>
+{{ end }}
 {{ end }}
