@@ -1,17 +1,18 @@
 ---
 title: "WCAG en achtergrond"
 translationKey: "wcag-uitgelegd"
-meta_title: "WCAG uitgelegd: alle succescriteria helder toegelicht | Proper Access"
-description: "Heldere uitleg van WCAG 2.2 succescriteria. Per criterium lees je wat het betekent, waarom het belangrijk is en hoe je eraan voldoet."
+meta_title: "WCAG uitgelegd: versies, achtergrond en cases | Proper Access"
+description: "Wat WCAG is, wat er in versie 2.1 en 2.2 veranderde en voor wie de eisen er zijn. Met cases, eigen onderzoek en gesprekken met mensen die ermee werken."
 indexable: true
 aliases:
   - /categories/achtergrond_wcag/
   - /categories/cases/
 ---
 
-Op deze pagina vind je onze uitleg van WCAG 2.2, stap voor stap. Per succescriterium lees je in gewone taal wat de regel betekent, waar het in de praktijk misgaat en hoe je het zelf kunt controleren.
+Hier lees je wat WCAG is en hoe de richtlijnen zijn opgebouwd. Er staan artikelen bij over WCAG 2.1 en 2.2, over de eisen per beperking, en over het verschil tussen voldoen aan WCAG en toegankelijk zijn.
 
-De artikelen zijn geschreven voor developers, designers en webredacties die digitale toegankelijkheid concreet willen verbeteren — zonder te verdwalen in normteksten.
+Je vindt hier ook cases en eigen onderzoek: de apps van het Rijksmuseum, negen videospelers van Blue Billywig, de websites van opticiens en die van politieke partijen. En gesprekken, onder meer met een blinde collega.
 
-Wil je weten hoe je website er in de praktijk voor staat? Lees wat je krijgt bij een
-[toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
+Zoek je uitleg bij één succescriterium? Die staat bij het onderwerp waar het criterium over gaat, zoals [Kleur en contrast](/categories/kleur-en-contrast/) of [Formulieren](/categories/formulieren/).
+
+Wil je weten hoe je eigen website ervoor staat? Lees wat je krijgt bij een [toegankelijkheidsaudit](/toegankelijkheidsonderzoek/).
