@@ -73,6 +73,12 @@ const OFFERTE_VELDEN = [
   ["organisatie", "Organisatie"],
   ["telefoon", "Telefoon"],
   ["website", "Website"],
+  // Offerteformulier in drie stappen (sinds november 2026).
+  ["fase", "Fase"],
+  ["url", "URL"],
+  ["soort", "Soort onderzoek"],
+  ["paginasoorten", "Paginasoorten"],
+  ["strippenkaart", "Strippenkaart"],
 ];
 
 // Rate limiting: max 5 inzendingen per 10 minuten per IP.
@@ -404,7 +410,8 @@ async function sendNotificationEmail(env, data) {
 
   // Offerte-rekentool: herkenbaar onderwerp en nette samenvatting van de scope.
   if (bron === "offerte-audit") {
-    subject = "Offerte-aanvraag: " + (data.organisatie || data.naam || email);
+    const fase = data.fase === "aanvulling" ? " (aanvulling)" : "";
+    subject = "Offerte-aanvraag" + fase + ": " + (data.organisatie || data.naam || email);
     for (const [key, label] of OFFERTE_VELDEN) {
       if (data[key]) lines.push(label + ": " + data[key]);
     }
