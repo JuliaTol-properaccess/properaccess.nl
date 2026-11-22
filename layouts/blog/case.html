@@ -33,7 +33,7 @@
           {{ if $tags }}
             <div class="case__tags">
               {{ range $tags }}
-                <a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/" class="case__tag">{{ . | humanize }}</a>
+                <a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/" class="case__tag">{{ partial "tag-label.html" . }}</a>
               {{ end }}
             </div>
           {{ end }}
