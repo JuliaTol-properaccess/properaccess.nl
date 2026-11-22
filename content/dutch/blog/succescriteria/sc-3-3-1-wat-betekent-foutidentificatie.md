@@ -2,9 +2,11 @@
 title: 'SC 3.3.1 - Wat betekent "Foutidentificatie"'
 translationKey: "sc-3-3-1"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "formulieren"
+doelgroepen:
+  - "developer"
+tags:
   - "3-3-1"
   - "formulier"
 description: "WCAG 3.3.1 vereist dat fouten in formulieren duidelijk worden geidentificeerd en beschreven. Lees hoe je goede foutmeldingen schrijft."

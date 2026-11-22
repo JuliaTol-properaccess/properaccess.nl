@@ -3,7 +3,10 @@ title: "Geldt de EAA-wet voor mijn webshop?"
 date: 2026-04-05
 slug: "geldt-de-eaa-voor-mijn-webshop"
 categories:
-  - "wcag-vragen"
+  - "e-commerce-eaa"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

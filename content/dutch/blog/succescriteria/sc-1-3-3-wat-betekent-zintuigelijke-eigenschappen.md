@@ -2,8 +2,10 @@
 title: '1.3.3 - Wat betekent "Zintuiglijke kenmerken"?'
 translationKey: "sc-1-3-3"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
+categories:
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
 tags:
   - "1-3-3"
 description: "WCAG 1.3.3 stelt dat instructies niet alleen mogen verwijzen naar kleur, vorm of locatie. Leer hoe je content begrijpelijk maakt voor iedereen."

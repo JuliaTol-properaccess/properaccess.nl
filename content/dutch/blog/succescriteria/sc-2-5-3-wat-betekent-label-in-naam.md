@@ -2,9 +2,11 @@
 title: "SC 2.5.3 - Wat betekent “Label in naam”"
 translationKey: "sc-2-5-3"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
+tags:
   - "2-5-3"
 description: "WCAG 2.5.3 vereist dat de zichtbare tekst overeenkomt met de technische naam van een element. Belangrijk voor spraakherkenning en schermlezers."
 aliases:

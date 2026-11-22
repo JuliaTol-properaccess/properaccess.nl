@@ -3,12 +3,14 @@ title: "CSS order die de logica verbreekt"
 date: 2026-06-18
 slug: "sc-1-3-2-css-order-die-de-logica-verbreekt"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"
   - "volgorde"
-  - "screenreader"
+  - "schermlezer"
 description: "CSS order die de logica verbreekt, WCAG 1.3.2 Betekenisvolle volgorde (post 3/9)"
 keywords:
   - digitale toegankelijkheid

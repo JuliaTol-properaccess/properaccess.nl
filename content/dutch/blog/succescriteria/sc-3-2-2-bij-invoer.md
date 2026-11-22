@@ -1,9 +1,11 @@
 ---
 title: "SC 3.2.2 - Wat betekent “Bij invoer”"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "formulieren"
+doelgroepen:
+  - "developer"
+tags:
   - "3-2-2"
 description: "WCAG 3.2.2 stelt dat formulieren niet onverwacht mogen veranderen bij het invullen. Lees hoe je voorspelbaar gedrag garandeert."
 aliases:

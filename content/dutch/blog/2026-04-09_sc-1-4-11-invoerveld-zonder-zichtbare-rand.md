@@ -3,7 +3,10 @@ title: "Invoerveld zonder zichtbare rand"
 date: 2026-06-09
 slug: "sc-1-4-11-invoerveld-zonder-zichtbare-rand"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

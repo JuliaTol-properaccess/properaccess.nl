@@ -3,7 +3,10 @@ title: "Kopniveaus"
 date: 2026-03-20
 slug: "sc-1-3-1-kopniveaus"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

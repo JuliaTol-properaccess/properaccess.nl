@@ -1,8 +1,10 @@
 ---
 title: '1.2.5 - Wat betekent "Audiodescriptie"?'
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
+categories:
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "1-2-3"
   - "1-2-5"

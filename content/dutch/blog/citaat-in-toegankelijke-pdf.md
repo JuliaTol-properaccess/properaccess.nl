@@ -2,10 +2,11 @@
 title: "Hoe maak je een citaat in een PDF-document (en waarom dat belangrijk is voor toegankelijkheid)"
 date: 2025-08-19
 slug: "citaat-in-toegankelijke-pdf"
-categories: 
-  - "tips-en-tools"
+categories:
+  - "teksten-en-documenten"
+doelgroepen:
   - "webredactie"
-tags: 
+tags:
   - "webredactie"
 description: "Leer hoe je een citaat correct tagt in een toegankelijke PDF. Praktische uitleg voor webredacties volgens WCAG-richtlijnen."
 keywords:

@@ -3,8 +3,9 @@ title: "EAA en het onderwijs: 6 stappen naar een toegankelijke leeromgeving"
 slug: "eaa-onderwijs-stappenplan-toegankelijke-leeromgeving"
 date: 2026-03-09
 categories:
-  - "de EAA"
-  - "achtergrond_wcag"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijke-website"
   - "onderwijs"

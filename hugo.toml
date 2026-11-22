@@ -228,3 +228,8 @@ lazy = true
 [params]
   [params.sitemap]
     excludeSections = ["offertes"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  doelgroep = "doelgroepen"

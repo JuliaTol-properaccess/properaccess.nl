@@ -2,10 +2,12 @@
 title: "Video transcript: goed resultaat met een gratis tool"
 date: 2025-07-18
 slug: "video-transcript-de-makkelijkste-manier"
-categories: 
+categories:
+  - "afbeeldingen-en-media"
   - "tips-en-tools"
-  - "Webredactie"
-tags: 
+doelgroepen:
+  - "webredactie"
+tags:
   - "webredactie"
 aliases:
   - /video-transcript-de-makkelijkste-manier/

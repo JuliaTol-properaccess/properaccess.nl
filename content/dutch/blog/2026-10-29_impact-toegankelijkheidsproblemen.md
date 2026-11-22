@@ -3,7 +3,9 @@ title: "Wat betekent impact bij een toegankelijkheidsprobleem?"
 date: 2026-10-29
 slug: "impact-toegankelijkheidsproblemen"
 categories:
-  - "wcag-uitgelegd"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "wcag"
   - "impact"

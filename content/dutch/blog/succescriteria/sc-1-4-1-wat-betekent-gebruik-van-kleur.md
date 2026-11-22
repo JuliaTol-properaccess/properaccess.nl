@@ -3,7 +3,10 @@ title: 'SC 1.4.1 - Wat betekent "Gebruik van kleur"?'
 translationKey: "sc-1-4-1"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "1-4-1"
   - "kleur"

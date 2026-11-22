@@ -4,11 +4,14 @@ date: 2026-04-18
 slug: "webshop-decoratieve-afbeeldingen"
 categories:
   - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Decoratieve afbeeldingen, Afbeeldingen in webshops (post 3/8)"
 keywords:
   - digitale toegankelijkheid

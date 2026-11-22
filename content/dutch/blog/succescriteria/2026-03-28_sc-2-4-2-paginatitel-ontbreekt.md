@@ -3,7 +3,10 @@ title: "Paginatitel ontbreekt"
 date: 2026-03-28
 slug: "sc-2-4-2-paginatitel-ontbreekt"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "wcag"
   - "2-4-2"

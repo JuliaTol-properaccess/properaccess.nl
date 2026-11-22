@@ -4,11 +4,14 @@ date: 2026-05-16
 slug: "webshop-tekst-in-afbeelding"
 categories:
   - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Tekst in afbeelding. Afbeeldingen in webshops (post 5/8)"
 keywords:
   - digitale toegankelijkheid

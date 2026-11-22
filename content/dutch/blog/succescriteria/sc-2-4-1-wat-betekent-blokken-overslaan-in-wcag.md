@@ -1,9 +1,11 @@
 ---
 title: "SC 2.4.1 - Wat betekent “Blokken overslaan” in WCAG?"
 date: 2025-05-17
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
+tags:
   - "2-4-1"
 description: "WCAG 2.4.1 vraagt om een manier om herhalende blokken te overslaan, zoals een skiplink. Lees hoe je dit toepast en test."
 aliases:

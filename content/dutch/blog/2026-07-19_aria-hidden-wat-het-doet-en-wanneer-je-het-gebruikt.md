@@ -3,13 +3,14 @@ title: "aria-hidden: wat het doet en wanneer je het wel of niet gebruikt"
 date: 2026-07-19
 slug: "aria-hidden-wat-het-doet-en-wanneer-je-het-gebruikt"
 categories:
-  - "wcag-uitgelegd"
-  - "webredactie"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"
   - "aria"
-  - "screenreader"
+  - "schermlezer"
   - "webredactie"
 description: "aria-hidden verbergt een element voor de schermlezer, maar niet voor het oog. Lees wat het doet, waarom het in je pagina staat en op welke elementen je het wel en niet mag zetten."
 meta_description: "aria-hidden verbergt een element voor de schermlezer, maar niet voor het oog. Op welke elementen je het wel en niet mag zetten, en waarom."

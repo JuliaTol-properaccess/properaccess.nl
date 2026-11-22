@@ -3,8 +3,9 @@ title: "Tabel met knoppen om in de kolommen te sorteren"
 date: 2025-11-17
 slug: "tabel-met-knoppen-om-in-de-kolommen-te-sorteren"
 categories:
-  - "tips-en-tools"
-  - "Webdeveloper"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 aliases:
   - /tabel-met-knoppen-om-in-de-kolommen-te-sorteren/
 description: "Hoe maak je sorteerbare tabelkolommen toegankelijk voor schermlezers? Lees over de juiste ARIA-attributen en toetsenbordinteractie."

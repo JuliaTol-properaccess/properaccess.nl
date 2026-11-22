@@ -7,8 +7,9 @@ breadcrumb_title: "Wat kost een audit?"
 aliases:
   - "/blog/wat-kost-toegankelijkheidsaudit-detail/"
 categories:
-  - "achtergrond_wcag"
-  - "de EAA"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijkheidsaudit"
   - "wcag"

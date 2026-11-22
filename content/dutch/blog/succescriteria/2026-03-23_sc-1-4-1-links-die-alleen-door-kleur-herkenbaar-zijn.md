@@ -3,7 +3,10 @@ title: "Links die alleen door kleur herkenbaar zijn"
 date: 2026-03-23
 slug: "sc-1-4-1-links-die-alleen-door-kleur-herkenbaar-zijn"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-1"

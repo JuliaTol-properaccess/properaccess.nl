@@ -3,7 +3,10 @@ title: "SC 3.3.2 - Wat betekent “Labels en instructies”"
 translationKey: "sc-3-3-2"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "WCAG 3.3.2 vraagt een duidelijk label of instructie bij elk invoerveld. Lees hoe je als webredacteur begrijpelijke formulieren maakt en zelf controleert."
 keywords:
   - WCAG 3.3.2

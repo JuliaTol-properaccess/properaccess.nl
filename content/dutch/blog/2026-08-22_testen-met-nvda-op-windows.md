@@ -5,7 +5,8 @@ date: 2026-08-22
 slug: "testen-met-nvda-op-windows"
 categories:
   - "tips-en-tools"
-  - "webdeveloper"
+doelgroepen:
+  - "developer"
 tags:
   - "nvda"
   - "schermlezer"

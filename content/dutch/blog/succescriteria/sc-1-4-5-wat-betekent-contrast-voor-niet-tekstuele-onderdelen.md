@@ -1,8 +1,10 @@
 ---
 title: "SC 1.4.11 - Wat betekent “Contrast voor niet-tekstuele onderdelen”"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
+categories:
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-11"
   - "kleur"

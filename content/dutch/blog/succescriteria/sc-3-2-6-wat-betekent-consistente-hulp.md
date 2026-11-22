@@ -2,7 +2,9 @@
 title: 'SC 3.2.6 - Wat betekent "Consistente hulp"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "3-2-6"
 description: "WCAG 3.2.6 vereist dat hulpopties zoals chat of FAQ altijd op dezelfde plek te vinden zijn. Lees hoe je consistente hulp biedt."

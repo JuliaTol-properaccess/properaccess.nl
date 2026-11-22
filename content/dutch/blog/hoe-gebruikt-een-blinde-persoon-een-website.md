@@ -2,9 +2,11 @@
 title: "Gesprek met een blinde collega"
 date: 2025-09-24
 slug: "hoe-gebruikt-een-blinde-persoon-een-website"
-categories: 
-  - "achtergrond_wcag"
-  - "de EAA"
+categories:
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "Hoe gebruikt een blinde persoon een website? Inzichten uit een gesprek over structuur, navigatie en digitale toegankelijkheid."
 keywords:
   - hoe gebruikt een blinde een website

@@ -3,8 +3,9 @@ title: "Een toegankelijk iframe"
 date: 2024-06-16
 slug: "een-toegankelijk-iframe"
 categories:
-  - "achtergrond_wcag"
-  - "webdeveloper"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "2-4-6"
   - "4-1-2"

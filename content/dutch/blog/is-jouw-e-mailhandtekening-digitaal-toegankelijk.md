@@ -2,8 +2,9 @@
 title: "Is jouw e-mailhandtekening digitaal toegankelijk?"
 date: 2025-06-29
 slug: "is-jouw-e-mailhandtekening-digitaal-toegankelijk"
-categories: 
-  - "tips-en-tools"
+categories:
+  - "teksten-en-documenten"
+doelgroepen:
   - "webredactie"
 description: "Is jouw e-mailhandtekening toegankelijk? Praktische uitleg en tips om afbeeldingen en logo’s correct leesbaar te maken voor schermlezers."
 keywords:

@@ -3,7 +3,9 @@ title: "Taalswitch met alleen 'EN' en 'NL': hoe maak je die toegankelijk?"
 date: 2026-03-02
 slug: "taalswitch-met-alleen-en-en-nl-hoe-maak-je-die-toegankelijk"
 categories:
-  - "webdeveloper"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "2-5-3"
   - "4-1-2"

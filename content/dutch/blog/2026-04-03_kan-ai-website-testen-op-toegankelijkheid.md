@@ -4,7 +4,10 @@ date: 2026-04-03
 weight: 1
 slug: "kan-ai-website-testen-op-toegankelijkheid"
 categories:
-  - "ai-en-wcag"
+  - "tips-en-tools"
+doelgroepen:
+  - "developer"
+  - "manager"
 tags:
   - "AI"
   - "wcag"

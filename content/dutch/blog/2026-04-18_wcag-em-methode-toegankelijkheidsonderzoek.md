@@ -3,7 +3,9 @@ title: "WCAG-EM: de methode van het W3C voor een toegankelijkheidsonderzoek"
 date: 2026-06-21
 slug: "wcag-em-methode-toegankelijkheidsonderzoek"
 categories:
-  - "achtergrond_wcag"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "wcag"
   - "wcag-em"

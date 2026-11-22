@@ -1,9 +1,11 @@
 ---
 title: "SC 2.1.4 - Wat betekent “Sneltoetsen met tekens”"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
+tags:
   - "2-1-4"
   - "video"
 description: "WCAG 2.1.4 stelt dat sneltoetsen met enkele tekens uitschakelbaar of aanpasbaar moeten zijn. Lees waarom dit belangrijk is voor spraakherkenning."

@@ -3,7 +3,11 @@ title: "Een ontoegankelijk element met een toegankelijk alternatief: mag je het 
 date: 2026-06-25
 slug: "toegankelijk-alternatief-1-klik-regel"
 categories:
+  - "audits"
   - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
+  - "developer"
 tags:
   - "wcag"
   - "conformiteit"

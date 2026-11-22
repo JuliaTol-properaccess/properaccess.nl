@@ -3,7 +3,10 @@ title: "Hoeveel problemen vindt een automatische tool vs. een handmatige test?"
 date: 2026-04-18
 slug: "automatische-tool-vs-handmatige-test"
 categories:
-  - "wcag-vragen"
+  - "audits"
+  - "tips-en-tools"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "audit"

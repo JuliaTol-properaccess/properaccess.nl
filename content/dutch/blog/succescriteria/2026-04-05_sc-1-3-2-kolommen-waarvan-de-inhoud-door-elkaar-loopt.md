@@ -3,12 +3,14 @@ title: "Kolommen waarvan de inhoud door elkaar loopt"
 date: 2026-04-05
 slug: "sc-1-3-2-kolommen-waarvan-de-inhoud-door-elkaar-loopt"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"
   - "volgorde"
-  - "screenreader"
+  - "schermlezer"
 description: "Kolommen waarvan de inhoud door elkaar loopt: WCAG 1.3.2 Betekenisvolle volgorde (post 2/9)"
 keywords:
   - digitale toegankelijkheid

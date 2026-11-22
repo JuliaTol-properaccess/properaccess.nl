@@ -3,12 +3,14 @@ title: "Metadata boven de kop van een artikel"
 date: 2026-03-22
 slug: "sc-1-3-2-metadata-boven-de-kop-van-een-artikel"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"
   - "volgorde"
-  - "screenreader"
+  - "schermlezer"
 description: "Metadata boven de kop van een artikel: WCAG 1.3.2 Betekenisvolle volgorde (post 1/9)"
 keywords:
   - digitale toegankelijkheid

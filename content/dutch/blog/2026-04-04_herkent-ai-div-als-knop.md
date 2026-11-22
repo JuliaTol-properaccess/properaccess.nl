@@ -3,7 +3,10 @@ title: "AI-test: Herkent AI een div die doet alsof het een knop is?"
 date: 2026-04-04
 slug: "herkent-ai-div-als-knop"
 categories:
-  - "ai-en-wcag"
+  - "tips-en-tools"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "AI"
   - "wcag"

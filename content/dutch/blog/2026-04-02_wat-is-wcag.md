@@ -3,7 +3,9 @@ title: "Wat is WCAG?"
 date: 2026-04-02
 slug: "wat-is-wcag"
 categories:
-  - "wcag-vragen"
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

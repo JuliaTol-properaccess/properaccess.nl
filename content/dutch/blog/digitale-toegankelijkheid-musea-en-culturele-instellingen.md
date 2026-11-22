@@ -4,13 +4,14 @@ date: 2026-03-19
 slug: "digitale-toegankelijkheid-musea-cultuur"
 meta_title: "Twee musea die op elkaar lijken, twee verschillende wetten"
 categories:
-  - "de EAA"
-  - "achtergrond_wcag"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "museum"
   - "cultuur"
   - "ticketing"
-  - "digitale-toegankelijkheid"
+  - "digitale toegankelijkheid"
   - "eaa"
 description: "Musea, theaters en culturele instellingen krijgen te maken met de EAA. Wat zijn de specifieke uitdagingen bij ticketing, interactieve kaarten en audiogidsen?"
 keywords:

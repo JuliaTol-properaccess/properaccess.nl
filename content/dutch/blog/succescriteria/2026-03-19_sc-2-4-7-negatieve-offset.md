@@ -5,7 +5,9 @@ slug: "sc-2-4-7-negatieve-offset"
 aliases:
   - "/blog/sc-2-4-7-negatieve-outline-offset-die-de-focus-verbergt/"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"

@@ -3,7 +3,9 @@ title: "Hoe kies je een toegankelijkheidsbureau? De vragen die je stelt en hoe j
 date: 2026-06-30
 slug: "hoe-kies-je-een-toegankelijkheidsbureau"
 categories:
-  - "wcag-vragen"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "auditbureau"
   - "audit"

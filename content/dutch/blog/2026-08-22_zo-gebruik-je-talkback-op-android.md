@@ -5,7 +5,8 @@ date: 2026-08-22
 slug: "zo-gebruik-je-talkback-op-android"
 categories:
   - "tips-en-tools"
-  - "webdeveloper"
+doelgroepen:
+  - "developer"
 tags:
   - "talkback"
   - "schermlezer"

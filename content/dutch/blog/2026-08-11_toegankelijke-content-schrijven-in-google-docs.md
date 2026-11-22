@@ -3,8 +3,9 @@ title: "Toegankelijke content schrijven in Google Docs"
 date: 2026-08-11
 slug: "toegankelijke-content-schrijven-in-google-docs"
 categories:
+  - "teksten-en-documenten"
+doelgroepen:
   - "webredactie"
-  - "tips-en-tools"
 tags:
   - "google docs"
   - "documenten"

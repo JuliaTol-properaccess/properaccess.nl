@@ -3,7 +3,10 @@ title: "Formulierveld kleurt rood bij een fout. Dat is alles."
 date: 2026-04-06
 slug: "sc-1-4-1-formulierveld-kleurt-rood-bij-een-fout-dat-is-alles"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-1"

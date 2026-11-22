@@ -4,6 +4,10 @@ date: 2026-04-09
 slug: "eaa-checklist-2026-webshops"
 categories:
   - "e-commerce-eaa"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
+  - "developer"
 tags:
   - "eaa"
   - "wcag"

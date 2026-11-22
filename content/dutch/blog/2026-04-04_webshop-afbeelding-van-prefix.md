@@ -3,12 +3,15 @@ title: "Afbeelding van prefix"
 date: 2026-04-04
 slug: "webshop-afbeelding-van-prefix"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Afbeelding van prefix. Afbeeldingen in webshops (post 2/8)"
 keywords:
   - digitale toegankelijkheid

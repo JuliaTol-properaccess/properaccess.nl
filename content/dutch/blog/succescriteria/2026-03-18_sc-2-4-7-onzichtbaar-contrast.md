@@ -5,7 +5,9 @@ slug: "sc-2-4-7-onzichtbaar-contrast"
 aliases:
   - "/blog/sc-2-4-7-focusindicator-die-opgaat-in-de-achtergrond/"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"

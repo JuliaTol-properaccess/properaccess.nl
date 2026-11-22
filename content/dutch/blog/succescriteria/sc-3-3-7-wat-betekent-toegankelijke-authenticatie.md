@@ -4,7 +4,9 @@ translationKey: "sc-3-3-8"
 slug: "sc-3-3-8-wat-betekent-toegankelijke-authenticatie"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "3-3-8"
 description: "WCAG 3.3.8 vraagt om toegankelijke authenticatie zonder onnodige obstakels zoals CAPTCHA. Lees de alternatieven en hoe je ze toepast."

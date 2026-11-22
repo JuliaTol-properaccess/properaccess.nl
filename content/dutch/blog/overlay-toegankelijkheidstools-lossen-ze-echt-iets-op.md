@@ -2,9 +2,10 @@
 title: "Overlay-toegankelijkheidstools: lossen ze echt iets op?"
 date: 2025-08-23
 slug: "overlay-toegankelijkheidstools-lossen-ze-echt-iets-op"
-categories: 
+categories:
   - "tips-en-tools"
-  - "de EAA"
+doelgroepen:
+  - "manager"
 description: "Werken overlay-toegankelijkheidstools echt? Mini-onderzoek naar widgets, WCAG-problemen, EAA/BDTO-naleving en gebruikerservaring."
 keywords:
   - overlay toegankelijkheidstools

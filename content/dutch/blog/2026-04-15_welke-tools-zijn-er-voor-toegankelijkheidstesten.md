@@ -3,8 +3,11 @@ title: "Gratis tools om je website op WCAG te testen: welke vindt wat?"
 date: 2026-04-15
 slug: "welke-tools-zijn-er-voor-toegankelijkheidstesten"
 categories:
-  - "wcag-vragen"
   - "tips-en-tools"
+  - "audits"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

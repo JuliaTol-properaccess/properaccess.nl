@@ -5,7 +5,9 @@ slug: "sc-2-4-7-overflow-hidden"
 aliases:
   - "/blog/sc-2-4-7-overflow-hidden-knipt-de-focusindicator-af/"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"

@@ -2,10 +2,13 @@
 title: "Tools om contrast te checken"
 date: 2024-05-15
 slug: "tools-om-contrast-te-checken"
-categories: 
+categories:
   - "tips-en-tools"
-  - "Webredactie"
-tags: 
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
+  - "developer"
+tags:
   - "1-4-11"
   - "1-4-3"
   - "webredactie"

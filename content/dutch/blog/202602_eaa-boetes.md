@@ -4,8 +4,9 @@ date: 2026-02-09
 slug: "eaa-boetes"
 auteur: Julia Tol
 categories:
-  - "de EAA"
-  - "webredactie"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 description: "Wat zijn de boetes onder de European Accessibility Act? Overzicht per EU-land: sancties, toezichthouders en handhaving van de EAA."
 keywords:
   - de EAA (Eauropean Accessibility Act)

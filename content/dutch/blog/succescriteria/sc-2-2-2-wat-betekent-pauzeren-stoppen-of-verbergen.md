@@ -3,7 +3,10 @@ title: 'SC 2.2.2 - Wat betekent "Pauzeren, stoppen of verbergen"'
 translationKey: "sc-2-2-2"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "2-2-2"
 description: "WCAG 2.2.2 vereist dat bewegende of automatisch wisselende content gepauzeerd of gestopt kan worden. Lees de regels en veelgemaakte fouten."

@@ -3,7 +3,10 @@ title: 'SC 2.4.2 - Wat betekent "Paginatitels"'
 translationKey: "sc-2-4-2"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "2-4-2"
 description: "WCAG 2.4.2 vraagt dat elke pagina een beschrijvende titel heeft. Lees hoe je goede paginatitels schrijft voor toegankelijkheid en SEO."

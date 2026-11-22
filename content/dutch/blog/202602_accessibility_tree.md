@@ -5,7 +5,9 @@ slug: "accessibility-tree-voor-developers"
 aliases:
   - /blog/accessibility_tree_voor_developers/
 categories:
-  - "webdeveloper"
+  - "tips-en-tools"
+doelgroepen:
+  - "developer"
 tags:
   - "4-1-2"
 description: "Leer hoe je de Chrome Accessibility Tree installeert en gebruikt voor toegankelijkheidstesten. Stapsgewijze handleiding met praktijkvoorbeelden voor developers."

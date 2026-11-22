@@ -4,7 +4,9 @@ date: 2026-08-01
 slug: "aria-rollen-en-attributen"
 translationKey: "aria-rollen-attributen"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "aria"
   - "webdeveloper"

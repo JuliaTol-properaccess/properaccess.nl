@@ -3,7 +3,9 @@ title: "Focus springt onverwacht door de pagina"
 date: 2026-03-29
 slug: "sc-2-4-3-focus-springt-onverwacht-door-de-pagina"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

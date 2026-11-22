@@ -4,7 +4,9 @@ translationKey: "sc-1-4-11"
 date: 2026-02-19
 description: "Slechtzienden zien je formuliervelden niet. Leer hoe je UI-componenten en iconen toegankelijk maakt met voldoende contrast. Met code-voorbeelden."
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-11"
   - "kleur"

@@ -3,8 +3,9 @@ title: "Waarom is het belangrijk om koppen als kopteksten op te maken?"
 date: 2024-04-07
 slug: "toegankelijke-kopteksten-wcag"
 categories:
-  - "achtergrond_wcag"
-  - "Webredactie"
+  - "teksten-en-documenten"
+doelgroepen:
+  - "webredactie"
 aliases:
   - "/toegankelijke_kopteksten_wcag/"
   - /blog/toegankelijke_kopteksten_wcag/

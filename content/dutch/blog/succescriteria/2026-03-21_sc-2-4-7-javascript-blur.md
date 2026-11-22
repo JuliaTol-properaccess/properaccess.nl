@@ -5,7 +5,9 @@ slug: "sc-2-4-7-javascript-blur"
 aliases:
   - "/blog/sc-2-4-7-javascript-dat-de-focus-actief-verwijdert/"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"
