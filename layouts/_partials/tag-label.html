@@ -1,0 +1,13 @@
+{{- /* Weergavenaam van een tag. Uitzonderingen staan in data/tag_labels.yaml. */ -}}
+{{- $t := . -}}
+{{- with index site.Data.tag_labels (lower $t) -}}
+  {{- . -}}
+{{- else -}}
+  {{- if findRE `^\d+-\d+-\d+$` $t -}}
+    SC {{ replace $t "-" "." -}}
+  {{- else if ne $t (lower $t) -}}
+    {{- $t -}}
+  {{- else -}}
+    {{- humanize $t -}}
+  {{- end -}}
+{{- end -}}
