@@ -1,0 +1,11 @@
+{{- /* Lesblok voor de webredactie-opleiding: genummerde stappen in het CMS.
+     Gebruik: {{< academy-cms >}}…markdown…{{< /academy-cms >}}
+     Parameters: titel (standaard "Zo doe je het in je CMS"), niveau (kopniveau, standaard 3;
+     gebruik 2 als het blok een eigen hoofdstuk in de les is).
+     Stijl: .academy-blok in assets/css/custom.css. */ -}}
+{{- $niveau := .Get "niveau" | default "3" -}}
+{{- $titel := .Get "titel" | default "Zo doe je het in je CMS" -}}
+<div class="academy-blok academy-blok--cms">
+{{ printf "<h%s class=\"academy-blok__titel\">%s</h%s>" $niveau ($titel | htmlEscape) $niveau | safeHTML }}
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

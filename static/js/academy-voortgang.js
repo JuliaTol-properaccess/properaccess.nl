@@ -11,15 +11,23 @@
  * Vorm van de opslag (sleutel pa-academy-voortgang):
  *
  *   {
- *     versie: 1,
- *     lessen: { "/academy/sectie/les/": { bezocht: "2026-10-05",
- *                                         af: true, afOp: "2026-10-05" } },
- *     quizzen: { "/academy/sectie/les/#quiz-les": { antwoorden: { "1": "b" },
- *                                                   goed: 4, totaal: 5,
- *                                                   af: true, datum: "2026-10-05" } },
+ *     versie: 2,
+ *     lessen: { "/academy/opleiding/sectie/les/": { bezocht: "2026-10-05",
+ *                                                   af: true, afOp: "2026-10-05" } },
+ *     quizzen: { "/academy/opleiding/sectie/les/#quiz-les": { antwoorden: { "1": "b" },
+ *                                                             goed: 4, totaal: 5,
+ *                                                             af: true, datum: "2026-10-05" } },
  *     dagen: ["2026-10-04", "2026-10-05"],
- *     laatste: { pad: "/academy/sectie/les/", titel: "Koppen", datum: "2026-10-05" }
+ *     laatste: { pad: "/academy/opleiding/sectie/les/", titel: "Koppen", datum: "2026-10-05" }
  *   }
+ *
+ * De opleiding is "developers" of "webredactie". Elke opleidingspagina telt
+ * alleen de lessen uit haar eigen lessenlijst (zie stand()), dus voortgang van
+ * de ene opleiding telt niet mee bij de andere.
+ *
+ * Versie 1 (tot november 2026) had nog geen opleiding in het pad, want toen
+ * was er alleen de developers-opleiding. lees() zet een versie 1 eenmalig om
+ * naar versie 2: "/academy/sectie/les/" wordt "/academy/developers/sectie/les/".
  *
  * De dagen zijn er voor de reeks ("streak") op de overzichtspagina. Ze gaan per
  * dag maar één keer in de lijst en de lijst blijft bij de laatste 400 dagen.
@@ -28,6 +36,7 @@
   "use strict";
 
   var SLEUTEL = "pa-academy-voortgang";
+  var VERSIE = 2;
   var MAX_DAGEN = 400;
 
   var MAANDEN = [
@@ -51,7 +60,33 @@
   })();
 
   function leeg() {
-    return { versie: 1, lessen: {}, quizzen: {}, dagen: [], laatste: null };
+    return { versie: VERSIE, lessen: {}, quizzen: {}, dagen: [], laatste: null };
+  }
+
+  // Versie 1 kende alleen de developers-opleiding, direct onder /academy/.
+  // Paden die al een opleiding hebben, blijven staan.
+  function nieuwPad(pad) {
+    if (typeof pad !== "string") return pad;
+    if (pad.indexOf("/academy/") !== 0) return pad;
+    if (pad.indexOf("/academy/developers/") === 0) return pad;
+    if (pad.indexOf("/academy/webredactie/") === 0) return pad;
+    return "/academy/developers/" + pad.slice("/academy/".length);
+  }
+
+  function zetSleutelsOm(lijst) {
+    var nieuw = {};
+    Object.keys(lijst).forEach(function (sleutel) {
+      nieuw[nieuwPad(sleutel)] = lijst[sleutel];
+    });
+    return nieuw;
+  }
+
+  function migreer(data) {
+    data.lessen = zetSleutelsOm(data.lessen);
+    data.quizzen = zetSleutelsOm(data.quizzen);
+    if (data.laatste && data.laatste.pad) data.laatste.pad = nieuwPad(data.laatste.pad);
+    data.versie = VERSIE;
+    return data;
   }
 
   function lees() {
@@ -79,6 +114,11 @@
     if (gelezen.quizzen && typeof gelezen.quizzen === "object") data.quizzen = gelezen.quizzen;
     if (Object.prototype.toString.call(gelezen.dagen) === "[object Array]") data.dagen = gelezen.dagen;
     if (gelezen.laatste && typeof gelezen.laatste === "object") data.laatste = gelezen.laatste;
+
+    if (gelezen.versie !== VERSIE) {
+      migreer(data);
+      schrijf(data);
+    }
 
     return data;
   }

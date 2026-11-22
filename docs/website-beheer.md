@@ -107,9 +107,27 @@ image: "/images/blog/mijn-afbeelding.png"
 
 In blogposts kun je speciale Hugo-shortcodes gebruiken:
 
-- `{{< button label="Tekst" link="/url/" >}}` — knop
-- `{{< notice "type" >}} tekst {{< /notice >}}` — notificatieblok
-- `{{< case-section >}}` — case study-sectie
+- `{{< button label="Tekst" link="/url/" >}}`: knop
+- `{{< notice "type" >}} tekst {{< /notice >}}`: notificatieblok
+- `{{< case-section >}}`: case study-sectie
+
+### Een les voor de webredactie-opleiding
+
+De Academy heeft twee opleidingen: `content/dutch/academy/developers/` en `content/dutch/academy/webredactie/`. Een les is een `.md`-bestand in de map van een sectie, zoals `webredactie/linkteksten/linkteksten.md`. Voorbeeld: die les.
+
+Front matter: `title`, `section_number` (gelijk aan die van de sectie), `chapter_number`, `locked: false`, `description`, `points: 10` en `layout: "academy"`. Zet ook `locked: false` in de `_index.md` van de sectie, anders blijft die dicht en staat hij niet in de sitemap.
+
+De opbouw van een les:
+
+1. Waarom het onderwerp telt, voor de bezoeker.
+2. Wat WCAG vraagt, met nummer, naam en niveau van het succescriterium.
+3. De regels, elk onder een eigen kop, met voorbeelden in `<div class="academy-example">` (fout en goed). Gewone tekst werkt daarin ook, een codeblok is niet nodig.
+4. `{{< academy-cms niveau="2" >}}` met genummerde stappen: zo doe je het in het CMS.
+5. `{{< academy-controle niveau="2" >}}` met controles die je zonder ontwikkeltools doet.
+6. Veelgemaakte fouten, een tabel met de succescriteria, en Verder lezen.
+7. Een quiz in `<div class="academy-quiz" id="quiz-<onderwerp>">`. Kopieer de opbouw van een bestaande quiz. De quiz telt vanzelf mee in de voortgang van de eigen opleiding.
+
+Beide blokken hebben als standaardkop "Zo doe je het in je CMS" en "Controleer het zelf". Een andere kop geef je mee met `titel="…"`. Laat je `niveau` weg, dan wordt de kop een `h3`. Laat feitelijke claims over WCAG controleren met `/gerard` voordat de les live gaat.
 
 ### Publiceren naar productie
 

@@ -1,0 +1,16 @@
+{{- /* De opleiding waar deze pagina bij hoort, zoals /academy/developers/.
+     Een opleiding-root herken je aan `opleiding:` in de front matter. Kijkt
+     eerst naar de pagina zelf en loopt dan de bovenliggende pagina's af, van
+     dichtbij naar ver weg. Geeft false terug als er geen opleiding is: dat is
+     op de keuzepagina /academy/ zelf. */ -}}
+{{- $root := false -}}
+{{- if .Params.opleiding -}}
+  {{- $root = . -}}
+{{- else -}}
+  {{- range .Ancestors -}}
+    {{- if and (not $root) .Params.opleiding -}}
+      {{- $root = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $root -}}

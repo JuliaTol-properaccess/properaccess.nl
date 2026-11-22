@@ -1,0 +1,11 @@
+{{- /* Lesblok voor de webredactie-opleiding: controles zonder ontwikkeltools.
+     Gebruik: {{< academy-controle >}}…markdown…{{< /academy-controle >}}
+     Parameters: titel (standaard "Controleer het zelf"), niveau (kopniveau, standaard 3;
+     gebruik 2 als het blok een eigen hoofdstuk in de les is).
+     Stijl: .academy-blok in assets/css/custom.css. */ -}}
+{{- $niveau := .Get "niveau" | default "3" -}}
+{{- $titel := .Get "titel" | default "Controleer het zelf" -}}
+<div class="academy-blok academy-blok--controle">
+{{ printf "<h%s class=\"academy-blok__titel\">%s</h%s>" $niveau ($titel | htmlEscape) $niveau | safeHTML }}
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>
