@@ -3,7 +3,9 @@ title: "Dark mode met nieuwe contrastproblemen"
 date: 2026-07-28
 slug: "sc-1-4-3-dark-mode-met-nieuwe-contrastproblemen"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

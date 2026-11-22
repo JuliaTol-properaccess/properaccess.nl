@@ -3,7 +3,9 @@ title: "Kolommen die niet onder elkaar gaan"
 date: 2026-07-03
 slug: "sc-1-4-10-kolommen-die-niet-onder-elkaar-gaan"
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-10"

@@ -3,7 +3,9 @@ title: "Links die alleen door kleur te herkennen zijn"
 date: 2026-07-15
 slug: "sc-1-4-3-links-die-alleen-door-kleur-te-herkennen-zijn"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

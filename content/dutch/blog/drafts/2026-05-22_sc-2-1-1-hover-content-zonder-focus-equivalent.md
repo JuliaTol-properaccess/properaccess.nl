@@ -3,7 +3,9 @@ title: "Hover-content zonder focus-equivalent"
 date: 2026-07-18
 slug: "sc-2-1-1-hover-content-zonder-focus-equivalent"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-1-1"

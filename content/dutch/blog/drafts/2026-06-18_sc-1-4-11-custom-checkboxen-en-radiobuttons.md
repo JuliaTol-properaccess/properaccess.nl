@@ -3,7 +3,10 @@ title: "Custom checkboxen en radiobuttons"
 date: 2026-08-12
 slug: "sc-1-4-11-custom-checkboxen-en-radiobuttons"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

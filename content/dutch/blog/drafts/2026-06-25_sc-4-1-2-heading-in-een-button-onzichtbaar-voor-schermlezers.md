@@ -3,7 +3,9 @@ title: "Heading in een button: onzichtbaar voor schermlezers"
 date: 2026-08-19
 slug: "sc-4-1-2-heading-in-een-button-onzichtbaar-voor-schermlezers"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "4-1-2"

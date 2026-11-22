@@ -3,7 +3,9 @@ title: "Foutmelding en zoekresultaat ontbreken in de titel"
 date: 2026-08-01
 slug: "sc-2-4-2-foutmelding-en-zoekresultaat-ontbreken-in-de-titel"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-2"

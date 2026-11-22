@@ -3,7 +3,9 @@ title: 'Zichtbaar "Submit", aria-label "Verzenden"'
 date: 2026-07-23
 slug: "sc-2-5-3-zichtbaar-submit-aria-label-verzenden"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-5-3"

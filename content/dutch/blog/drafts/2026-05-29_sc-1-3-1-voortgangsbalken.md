@@ -3,7 +3,9 @@ title: "Voortgangsbalken"
 date: 2026-07-25
 slug: "sc-1-3-1-voortgangsbalken"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

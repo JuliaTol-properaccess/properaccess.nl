@@ -3,7 +3,9 @@ title: "De knop die eruitziet als disabled maar het niet is"
 date: 2026-08-30
 slug: "sc-1-4-3-de-knop-die-eruitziet-als-disabled-maar-het-niet-is"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

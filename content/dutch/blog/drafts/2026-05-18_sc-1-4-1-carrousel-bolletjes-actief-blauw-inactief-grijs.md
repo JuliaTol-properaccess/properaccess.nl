@@ -3,7 +3,9 @@ title: "Carrousel-bolletjes: actief = blauw, inactief = grijs"
 date: 2026-07-14
 slug: "sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-1"

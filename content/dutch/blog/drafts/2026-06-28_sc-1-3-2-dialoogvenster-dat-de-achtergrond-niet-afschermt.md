@@ -3,7 +3,9 @@ title: "Dialoogvenster dat de achtergrond niet afschermt"
 date: 2026-08-21
 slug: "sc-1-3-2-dialoogvenster-dat-de-achtergrond-niet-afschermt"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"

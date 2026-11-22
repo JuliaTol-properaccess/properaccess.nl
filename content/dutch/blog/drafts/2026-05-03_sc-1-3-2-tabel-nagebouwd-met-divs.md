@@ -3,7 +3,10 @@ title: "Tabel nagebouwd met divs"
 date: 2026-06-30
 slug: "sc-1-3-2-tabel-nagebouwd-met-divs"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"

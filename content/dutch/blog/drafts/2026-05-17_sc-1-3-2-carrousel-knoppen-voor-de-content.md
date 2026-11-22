@@ -3,7 +3,9 @@ title: "Carrousel-knoppen voor de content"
 date: 2026-07-13
 slug: "sc-1-3-2-carrousel-knoppen-voor-de-content"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-2"

@@ -3,7 +3,10 @@ title: "Fieldset legend"
 date: 2026-06-29
 slug: "sc-1-3-1-fieldset-legend"
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

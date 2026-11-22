@@ -3,7 +3,10 @@ title: "Focus gaat niet naar de foutmelding na het versturen"
 date: 2026-08-26
 slug: "sc-2-4-3-focus-gaat-niet-naar-de-foutmelding-na-het-versturen"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

@@ -3,7 +3,9 @@ title: "Markeringen op screenshots die onzichtbaar zijn"
 date: 2026-07-30
 slug: "sc-1-4-11-markeringen-op-screenshots-die-onzichtbaar-zijn"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
 tags:
   - "wcag"
   - "1-4-11"

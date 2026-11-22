@@ -3,7 +3,9 @@ title: "Skiplink die de focus niet verplaatst"
 date: 2026-09-02
 slug: "sc-2-4-3-skiplink-die-de-focus-niet-verplaatst"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

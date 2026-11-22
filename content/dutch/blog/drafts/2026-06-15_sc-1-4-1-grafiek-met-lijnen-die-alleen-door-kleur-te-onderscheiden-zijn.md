@@ -3,7 +3,10 @@ title: "Grafiek met lijnen die alleen door kleur te onderscheiden zijn"
 date: 2026-08-09
 slug: "sc-1-4-1-grafiek-met-lijnen-die-alleen-door-kleur-te-onderscheiden-zijn"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "1-4-1"

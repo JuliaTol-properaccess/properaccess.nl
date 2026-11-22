@@ -621,5 +621,270 @@
 ],
 "succescriteria/sc-3-1-2-wat-betekent-taal-van-onderdelen.md": [
 "structuur-en-navigatie"
+],
+"2026-04-23_sc-1-4-11-actieve-link-in-het-menu-met-onzichtbare-indicator.md": [
+"kleur-en-contrast"
+],
+"2026-04-24_sc-2-1-1-custom-dropdown-die-niet-met-toetsen-werkt.md": [
+"toetsenbord-en-focus"
+],
+"2026-04-25_sc-2-4-2-welkom-zegt-niets.md": [
+"structuur-en-navigatie"
+],
+"2026-04-26_sc-2-4-3-focus-verlaat-het-dialoogvenster.md": [
+"toetsenbord-en-focus"
+],
+"2026-04-27_sc-2-4-4-afbeelding-als-link-zonder-beschrijvend-alt.md": [
+"structuur-en-navigatie",
+"afbeeldingen-en-media"
+],
+"2026-04-29_sc-2-5-3-knop-met-icoon-en-tekst-maar-aria-label-vervangt-alles.md": [
+"html-en-aria"
+],
+"2026-05-01_sc-1-3-1-fieldset-legend.md": [
+"formulieren",
+"html-en-aria"
+],
+"2026-05-03_sc-1-3-2-tabel-nagebouwd-met-divs.md": [
+"structuur-en-navigatie",
+"html-en-aria"
+],
+"2026-05-04_sc-1-4-1-actieve-pagina-in-het-menu-alleen-een-andere-kleur.md": [
+"kleur-en-contrast"
+],
+"2026-05-05_sc-1-4-3-die-mooie-oranje-knop-met-witte-tekst.md": [
+"kleur-en-contrast"
+],
+"2026-05-06_sc-1-4-10-kolommen-die-niet-onder-elkaar-gaan.md": [
+"zoom-en-mobiel"
+],
+"2026-05-07_sc-1-4-11-zelfgemaakte-focusindicator-die-onzichtbaar-is.md": [
+"kleur-en-contrast",
+"toetsenbord-en-focus"
+],
+"2026-05-08_sc-2-1-1-drag-and-drop-zonder-alternatief.md": [
+"toetsenbord-en-focus"
+],
+"2026-05-09_sc-2-4-2-sitenaam-voor-de-paginanaam.md": [
+"structuur-en-navigatie"
+],
+"2026-05-10_sc-2-4-3-focus-verdwijnt-na-het-sluiten-van-een-dialoogvenster.md": [
+"toetsenbord-en-focus"
+],
+"2026-05-11_sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing.md": [
+"structuur-en-navigatie"
+],
+"2026-05-13_sc-2-5-3-afbeeldingsknop-met-afwijkende-alt-tekst.md": [
+"html-en-aria"
+],
+"2026-05-14_sc-4-1-2-aria-expandd-met-twee-ds.md": [
+"html-en-aria"
+],
+"2026-05-15_sc-1-3-1-foutmeldingen.md": [
+"formulieren",
+"html-en-aria"
+],
+"2026-05-17_sc-1-3-2-carrousel-knoppen-voor-de-content.md": [
+"structuur-en-navigatie"
+],
+"2026-05-18_sc-1-4-1-carrousel-bolletjes-actief-blauw-inactief-grijs.md": [
+"kleur-en-contrast"
+],
+"2026-05-19_sc-1-4-3-links-die-alleen-door-kleur-te-herkennen-zijn.md": [
+"kleur-en-contrast"
+],
+"2026-05-20_sc-1-4-10-navigatiemenu-verdwijnt-bij-inzoomen.md": [
+"zoom-en-mobiel"
+],
+"2026-05-21_sc-1-4-11-grafiekbalken-die-in-elkaar-overlopen.md": [
+"kleur-en-contrast"
+],
+"2026-05-22_sc-2-1-1-hover-content-zonder-focus-equivalent.md": [
+"toetsenbord-en-focus"
+],
+"2026-05-23_sc-2-4-2-single-page-app-die-de-titel-niet-bijwerkt.md": [
+"structuur-en-navigatie"
+],
+"2026-05-24_sc-2-4-3-cookiebanner-die-pas-na-30-tabs-bereikbaar-is.md": [
+"toetsenbord-en-focus"
+],
+"2026-05-25_sc-2-4-4-link-naar-een-pdf-zonder-het-te-zeggen.md": [
+"structuur-en-navigatie"
+],
+"2026-05-27_sc-2-5-3-zichtbaar-submit-aria-label-verzenden.md": [
+"html-en-aria"
+],
+"2026-05-28_sc-4-1-2-aria-label-op-een-div-wordt-genegeerd.md": [
+"html-en-aria"
+],
+"2026-05-29_sc-1-3-1-voortgangsbalken.md": [
+"html-en-aria"
+],
+"2026-05-31_sc-1-3-2-grafiek-die-onbegrijpelijk-wordt-voorgelezen.md": [
+"structuur-en-navigatie"
+],
+"2026-06-01_sc-1-4-1-focusrand-die-alleen-door-kleur-werkt.md": [
+"kleur-en-contrast",
+"toetsenbord-en-focus"
+],
+"2026-06-02_sc-1-4-3-dark-mode-met-nieuwe-contrastproblemen.md": [
+"kleur-en-contrast"
+],
+"2026-06-03_sc-1-4-10-vaste-elementen-die-het-scherm-overnemen.md": [
+"zoom-en-mobiel"
+],
+"2026-06-04_sc-1-4-11-markeringen-op-screenshots-die-onzichtbaar-zijn.md": [
+"kleur-en-contrast"
+],
+"2026-06-05_sc-2-1-1-carrousel-die-alleen-met-klikken-werkt.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-06_sc-2-4-2-foutmelding-en-zoekresultaat-ontbreken-in-de-titel.md": [
+"structuur-en-navigatie"
+],
+"2026-06-07_sc-2-4-3-accordion-paneel-op-de-verkeerde-plek-in-de-focusvolgorde.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-08_sc-2-4-4-hele-alinea-als-link.md": [
+"structuur-en-navigatie"
+],
+"2026-06-09_sc-2-4-7-custom-component-waarvan-de-focus-is-vergeten.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-10_sc-2-5-3-css-voegt-tekst-toe-die-niet-in-de-naam-zit.md": [
+"html-en-aria"
+],
+"2026-06-11_sc-4-1-2-tabs-zonder-tablist.md": [
+"html-en-aria"
+],
+"2026-06-12_sc-1-3-1-doorgestreepte-prijzen.md": [
+"html-en-aria"
+],
+"2026-06-14_sc-1-3-2-uitklapbare-content-op-de-verkeerde-plek.md": [
+"structuur-en-navigatie"
+],
+"2026-06-15_sc-1-4-1-grafiek-met-lijnen-die-alleen-door-kleur-te-onderscheiden-zijn.md": [
+"kleur-en-contrast"
+],
+"2026-06-16_sc-1-4-3-foutmeldingen-die-je-niet-kunt-lezen.md": [
+"kleur-en-contrast",
+"formulieren"
+],
+"2026-06-17_sc-1-4-10-dialoogvenster-met-geen-ruimte-voor-de-inhoud.md": [
+"zoom-en-mobiel"
+],
+"2026-06-18_sc-1-4-11-custom-checkboxen-en-radiobuttons.md": [
+"kleur-en-contrast",
+"formulieren"
+],
+"2026-06-19_sc-2-1-1-infinite-scroll-zonder-laad-meer-knop.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-20_sc-2-4-2-meerstappenformulier-zonder-stap-in-de-titel.md": [
+"structuur-en-navigatie",
+"formulieren"
+],
+"2026-06-21_sc-2-4-3-links-in-een-carrousel-die-niet-bereikbaar-zijn.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-22_sc-2-4-4-lege-link.md": [
+"structuur-en-navigatie"
+],
+"2026-06-23_sc-2-4-7-focus-die-alleen-een-kleurverandering-is.md": [
+"toetsenbord-en-focus"
+],
+"2026-06-24_sc-2-5-3-framework-met-engels-label-nederlandse-interface.md": [
+"html-en-aria"
+],
+"2026-06-25_sc-4-1-2-heading-in-een-button-onzichtbaar-voor-schermlezers.md": [
+"html-en-aria"
+],
+"2026-06-26_sc-1-3-1-actieve-pagina.md": [
+"html-en-aria"
+],
+"2026-06-28_sc-1-3-2-dialoogvenster-dat-de-achtergrond-niet-afschermt.md": [
+"structuur-en-navigatie"
+],
+"2026-06-29_sc-1-4-1-kaart-met-legenda-die-alleen-op-kleur-werkt.md": [
+"kleur-en-contrast"
+],
+"2026-06-30_sc-1-4-3-de-footer-die-niemand-kan-lezen.md": [
+"kleur-en-contrast"
+],
+"2026-07-01_sc-1-4-10-viewport-meta-tag-die-inzoomen-blokkeert.md": [
+"zoom-en-mobiel"
+],
+"2026-07-02_sc-2-1-1-custom-videospeler-met-onbereikbare-knoppen.md": [
+"toetsenbord-en-focus",
+"afbeeldingen-en-media"
+],
+"2026-07-03_sc-2-4-3-focus-gaat-niet-naar-de-foutmelding-na-het-versturen.md": [
+"toetsenbord-en-focus",
+"formulieren"
+],
+"2026-07-04_sc-2-4-4-linktekst-verborgen-met-display-none.md": [
+"structuur-en-navigatie"
+],
+"2026-07-05_sc-4-1-2-heading-in-een-summary-zelfde-probleem.md": [
+"html-en-aria"
+],
+"2026-07-06_sc-1-3-2-verborgen-menu-dat-toch-wordt-voorgelezen.md": [
+"structuur-en-navigatie"
+],
+"2026-07-07_sc-1-4-3-de-knop-die-eruitziet-als-disabled-maar-het-niet-is.md": [
+"kleur-en-contrast"
+],
+"2026-07-08_sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt.md": [
+"zoom-en-mobiel"
+],
+"2026-07-09_sc-2-1-1-captcha-die-niet-met-het-toetsenbord-werkt.md": [
+"toetsenbord-en-focus",
+"formulieren"
+],
+"2026-07-10_sc-2-4-3-skiplink-die-de-focus-niet-verplaatst.md": [
+"toetsenbord-en-focus"
+],
+"2026-07-11_sc-2-4-4-paginering-1-2-3.md": [
+"structuur-en-navigatie"
+],
+"2026-07-12_sc-4-1-2-toggle-knop-zonder-status.md": [
+"html-en-aria"
+],
+"2026-07-13_sc-1-4-3-ik-kan-het-prima-lezen.md": [
+"kleur-en-contrast"
+],
+"2026-07-14_sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden.md": [
+"zoom-en-mobiel"
+],
+"2026-07-15_sc-2-4-3-in-page-link-die-de-focus-niet-meeneemt.md": [
+"toetsenbord-en-focus"
+],
+"2026-07-16_sc-2-4-4-link-met-een-enkel-teken.md": [
+"structuur-en-navigatie"
+],
+"2026-07-17_sc-4-1-2-accordion-zonder-aria-expanded.md": [
+"html-en-aria"
+],
+"2026-07-18_sc-2-4-3-positieve-tabindex-die-alles-in-de-war-gooit.md": [
+"toetsenbord-en-focus"
+],
+"2026-07-19_sc-2-4-4-winkelwagen-winkelwagen.md": [
+"structuur-en-navigatie"
+],
+"2026-07-20_sc-4-1-2-video-zonder-toegankelijke-naam.md": [
+"html-en-aria",
+"afbeeldingen-en-media"
+],
+"2026-07-21_sc-2-4-4-bekijk-aanbiedingen-groter-dan-groter-dan.md": [
+"structuur-en-navigatie"
+],
+"2026-07-22_sc-4-1-2-de-drie-regels-van-aria.md": [
+"html-en-aria"
+],
+"2026-07-23_sc-2-4-4-download-maar-download-van-wat.md": [
+"structuur-en-navigatie"
+],
+"2026-07-24_sc-2-4-4-engelse-linktekst-op-een-nederlandse-pagina.md": [
+"structuur-en-navigatie"
 ]
 }

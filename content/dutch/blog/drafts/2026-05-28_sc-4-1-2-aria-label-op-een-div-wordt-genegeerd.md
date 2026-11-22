@@ -3,7 +3,9 @@ title: "aria-label op een div: wordt genegeerd"
 date: 2026-07-24
 slug: "sc-4-1-2-aria-label-op-een-div-wordt-genegeerd"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "4-1-2"

@@ -3,7 +3,9 @@ title: "Custom component waarvan de focus is vergeten"
 date: 2026-08-04
 slug: "sc-2-4-7-custom-component-waarvan-de-focus-is-vergeten"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"

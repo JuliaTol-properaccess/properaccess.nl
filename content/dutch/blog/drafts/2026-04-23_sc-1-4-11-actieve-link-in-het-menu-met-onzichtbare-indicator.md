@@ -3,7 +3,9 @@ title: "Actieve link in het menu met onzichtbare indicator"
 date: 2026-06-22
 slug: "sc-1-4-11-actieve-link-in-het-menu-met-onzichtbare-indicator"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

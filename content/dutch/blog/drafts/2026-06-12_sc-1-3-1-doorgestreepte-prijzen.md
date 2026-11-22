@@ -3,7 +3,9 @@ title: "Doorgestreepte prijzen"
 date: 2026-08-07
 slug: "sc-1-3-1-doorgestreepte-prijzen"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

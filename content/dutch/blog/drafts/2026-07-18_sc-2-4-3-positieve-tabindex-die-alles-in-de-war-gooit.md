@@ -3,7 +3,9 @@ title: "Positieve tabindex die alles in de war gooit"
 date: 2026-09-10
 slug: "sc-2-4-3-positieve-tabindex-die-alles-in-de-war-gooit"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

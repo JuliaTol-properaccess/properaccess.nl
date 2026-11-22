@@ -3,7 +3,9 @@ title: "Carrousel die alleen met klikken werkt"
 date: 2026-07-31
 slug: "sc-2-1-1-carrousel-die-alleen-met-klikken-werkt"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-1-1"

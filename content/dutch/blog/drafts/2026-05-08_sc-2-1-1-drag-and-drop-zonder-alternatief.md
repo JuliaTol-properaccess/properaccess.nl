@@ -3,7 +3,9 @@ title: "Drag-and-drop zonder alternatief"
 date: 2026-07-05
 slug: "sc-2-1-1-drag-and-drop-zonder-alternatief"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-1-1"

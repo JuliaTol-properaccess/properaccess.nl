@@ -3,7 +3,9 @@ title: "Focus die alleen een kleurverandering is"
 date: 2026-08-17
 slug: "sc-2-4-7-focus-die-alleen-een-kleurverandering-is"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"
