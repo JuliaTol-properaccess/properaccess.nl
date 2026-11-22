@@ -35,7 +35,7 @@ trust:
 
 {{< section-full >}}
 
-De meeste audits beginnen met een mail. Je beschrijft wat er getest moet worden, welke deadline er staat, en of er eerder iemand naar gekeken heeft. Wij vragen door waar nodig en sturen binnen twee werkdagen een offerte met scope, type audit, prijs en doorlooptijd. Een kennismakingsgesprek hoeft niet, maar mag wel.
+De meeste audits beginnen met een mail. Je beschrijft wat er getest moet worden, welke deadline er staat, en of er eerder iemand naar gekeken heeft. Wij vragen door waar nodig en sturen binnen 1 werkdag een offerte met scope, type audit, prijs en doorlooptijd. Een kennismakingsgesprek hoeft niet, maar mag wel.
 
 Scope en steekproef leggen we expliciet vast. Een audit van "de website" klinkt simpel, maar bij elke website komen we situaties tegen die om een keuze vragen. Hieronder leggen we uit welke keuzes dat zijn.
 
@@ -137,7 +137,7 @@ zoals een kaartmodule of een pdf-viewer, dan nemen we die er apart bij.
 
 ## Klaar voor stap 1?
 
-Stuur een mail met wat je wilt laten testen en je deadline. Binnen twee werkdagen sturen we een offerte met scope, steekproef en prijs.
+Stuur een mail met wat je wilt laten testen en je deadline. Binnen 1 werkdag sturen we een offerte met scope, steekproef en prijs.
 
 [Stuur ons een mail](/contact/) [Bekijk wat een audit kost](/toegankelijkheidsonderzoek/#prijzen)
 
