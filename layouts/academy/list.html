@@ -1,8 +1,23 @@
 {{ define "main" }}
-{{/* This template renders both the Academy root (all sections) and a single
-     section landing page (the chapters within that section). */}}
-{{ $academyRoot := site.GetPage "/academy" }}
+{{/* Dit template rendert drie soorten pagina's:
+     1. de keuzepagina /academy/, met een kaart per opleiding (geen opleiding-root);
+     2. de root van een opleiding, zoals /academy/developers/ (alle secties);
+     3. een sectie binnen een opleiding (de hoofdstukken van die sectie). */}}
+{{ $academyRoot := partial "academy-opleiding.html" . }}
+{{ if not $academyRoot }}
+  {{/* ---- Keuzepagina /academy/. De kaarten per opleiding volgen in stap 3
+       van het plan academy-twee-opleidingen. ---- */}}
+  <div class="academy" id="academy">
+    <main class="academy__main" id="academyMain">
+      <div class="academy__hero">
+        <h1 class="academy__hero-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
+      </div>
+    </main>
+  </div>
+{{ else }}
 {{ $isSection := ne .RelPermalink $academyRoot.RelPermalink }}
+{{ $labelSectie := $academyRoot.Params.label_sectie | default "Sectie" }}
 
 {{/* Collect all sections with their chapters for the sidebar + stats,
      always sourced from the Academy root so it works on section pages too. */}}
@@ -14,7 +29,7 @@
      tegels en zijn vervangen door deze partial: zij telde de vergrendelde
      hoofdstukken mee en nam `quizzes:` uit de front matter voor een aantal
      quizzen, terwijl dat de quizvragen zijn. */}}
-{{ $voortgang := partialCached "academy-voortgang-data.html" . "academy" }}
+{{ $voortgang := partialCached "academy-voortgang-data.html" $academyRoot $academyRoot.RelPermalink }}
 {{ $puntenMax := add (mul $voortgang.puntenPerLes $voortgang.lessenOpen) (mul $voortgang.puntenPerAntwoord $voortgang.vragen) }}
 {{ range sort $academyRoot.Sections "Params.section_number" }}
   {{ $section := . }}
@@ -43,7 +58,7 @@
   <nav class="academy__sidebar" id="academySidebar" aria-label="Academy inhoudsopgave">
     <div class="academy__sidebar-inner">
       {{ if $isSection }}
-      <a href="{{ "/academy/" | relLangURL }}" class="academy__sidebar-home">
+      <a href="{{ $academyRoot.RelPermalink }}" class="academy__sidebar-home">
         ← Alle secties
       </a>
       {{ end }}
@@ -102,7 +117,7 @@
     {{ if $isSection }}
       {{/* ---- Section landing: hero + chapter cards for this section ---- */}}
       <div class="academy__hero">
-        <p class="academy__content-label">Sectie {{ .Params.section_number }}</p>
+        <p class="academy__content-label">{{ $labelSectie }} {{ .Params.section_number }}</p>
         <h1 class="academy__hero-title">{{ .Title }}</h1>
         {{ with .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
       </div>
@@ -189,7 +204,7 @@
            localStorage heeft. */}}
       <div class="academy__verder" id="academyVerder" hidden>
         <p class="academy__verder-label">Verder waar je was</p>
-        <a href="{{ "/academy/" | relLangURL }}" class="academy__verder-link" id="academyVerderLink">
+        <a href="{{ $academyRoot.RelPermalink }}" class="academy__verder-link" id="academyVerderLink">
           <span id="academyVerderTitel"></span>
           <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9 18 15 12 9 6"/>
@@ -199,8 +214,9 @@
 
       {{/* Hero */}}
       <div class="academy__hero">
-        <h1 class="academy__hero-title">Leer digitale toegankelijkheid</h1>
-        <p class="academy__hero-intro">We hebben een cursus over WCAG ontwikkeld, geschreven in heldere en begrijpelijke taal, met honderden praktische voorbeelden die de soms complexe stof toegankelijk en behapbaar maken.</p>
+        {{/* Titel en intro uit de front matter van de opleiding-root. */}}
+        <h1 class="academy__hero-title">{{ .Params.hero_title | default .Title }}</h1>
+        {{ with .Params.hero_intro | default .Description }}<p class="academy__hero-intro">{{ . }}</p>{{ end }}
       </div>
 
       {{/* Section cards */}}
@@ -273,4 +289,5 @@
 
 <script src="{{ "js/academy.js" | relURL }}" defer></script>
 <script src="{{ "js/academy-voortgang.js" | relURL }}" defer></script>
+{{ end }}{{/* einde if not $academyRoot */}}
 {{ end }}

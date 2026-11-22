@@ -1,7 +1,11 @@
 {{ define "main" }}
 {{/* Collect all sections for sidebar, sorted by section_number */}}
-{{ $voortgang := partialCached "academy-voortgang-data.html" . "academy" }}
-{{ $allSections := .Site.GetPage "/academy" }}
+{{/* De opleiding waar deze les bij hoort, zoals /academy/developers/. De
+     zijbalk, de voortgang en de labels komen uit die root. */}}
+{{ $allSections := partial "academy-opleiding.html" . }}
+{{ $voortgang := partialCached "academy-voortgang-data.html" $allSections $allSections.RelPermalink }}
+{{ $labelSectie := $allSections.Params.label_sectie | default "Sectie" }}
+{{ $labelHoofdstuk := $allSections.Params.label_hoofdstuk | default "Hoofdstuk" }}
 {{ $sections := slice }}
 {{ if $allSections }}
   {{ range sort $allSections.Sections "Params.section_number" }}
@@ -31,7 +35,7 @@
   {{/* Sidebar */}}
   <nav class="academy__sidebar" id="academySidebar" aria-label="Academy inhoudsopgave">
     <div class="academy__sidebar-inner">
-      <a href="{{ "/academy/" | relLangURL }}" class="academy__sidebar-home">
+      <a href="{{ $allSections.RelPermalink }}" class="academy__sidebar-home">
         ← Alle secties
       </a>
       {{ partial "academy-voortgangsbalk.html" . }}
@@ -93,17 +97,17 @@
           <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
         </svg>
       </div>
-      <p class="academy__locked-label">Hoofdstuk {{ .Params.chapter_number }}</p>
+      <p class="academy__locked-label">{{ $labelHoofdstuk }} {{ .Params.chapter_number }}</p>
       <h1 class="academy__locked-title">{{ .Title }}</h1>
       <p class="academy__locked-desc">{{ .Description }}</p>
       <p class="academy__locked-msg">Dit hoofdstuk is nog niet beschikbaar. De Academy is in ontwikkeling — meld je aan om als eerste toegang te krijgen.</p>
       <a href="/contact" class="academy__cta-btn">Houd me op de hoogte</a>
-      <a href="{{ "/academy/" | relLangURL }}" class="academy__locked-back">← Terug naar overzicht</a>
+      <a href="{{ $allSections.RelPermalink }}" class="academy__locked-back">← Terug naar overzicht</a>
     </div>
     {{ else }}
     <article class="academy__content">
       <div class="academy__content-header">
-        <p class="academy__content-label">Sectie {{ .Params.section_number }} · Hoofdstuk {{ .Params.chapter_number }}</p>
+        <p class="academy__content-label">{{ $labelSectie }} {{ .Params.section_number }} · {{ $labelHoofdstuk }} {{ .Params.chapter_number }}</p>
         <h1 class="academy__content-title">{{ .Title }}</h1>
         {{ with .Description }}<p class="academy__content-intro">{{ . }}</p>{{ end }}
       </div>

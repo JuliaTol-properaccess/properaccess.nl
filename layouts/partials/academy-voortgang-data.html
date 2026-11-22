@@ -9,9 +9,11 @@
      losse HTML in de Markdown en niet in de front matter. De sleutel
      `quizzes:` in de front matter van een sectie telt vragen, geen quizzen.
 
-     Roep dit aan met partialCached en een vaste sleutel: de uitkomst is voor
-     elke pagina in de Academy hetzelfde. */}}
-{{ $root := site.GetPage "/academy" }}
+     Roep dit aan met de opleiding-root als context (zie academy-opleiding.html)
+     en met partialCached, met de RelPermalink van die root als sleutel: de
+     uitkomst is voor elke pagina in dezelfde opleiding hetzelfde, en elke
+     opleiding telt alleen haar eigen lessen. */}}
+{{ $root := . }}
 {{ $lessen := slice }}
 {{ $lessenTotaal := 0 }}
 {{ $quizzen := 0 }}
