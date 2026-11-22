@@ -38,7 +38,6 @@
     ["app_platform", "Platform"],
     ["aantal_documenten", "Documenten"],
     ["type_onderzoek", "Type onderzoek"],
-    ["aantal_paginatypes", "Pagina- of schermtypes"],
     ["functionaliteiten", "Functionaliteiten"],
     ["meertalig", "Meertalig"],
     ["talen", "Talen"]

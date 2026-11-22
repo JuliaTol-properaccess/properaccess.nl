@@ -110,23 +110,6 @@
            data-show-when-any="soort=website|soort=webshop|soort=systeem|soort=app" hidden>
 
         <fieldset class="offerte-form__group">
-          <legend class="hp-form__label">Hoeveel verschillende pagina- of schermtypes zijn er?</legend>
-          <p class="offerte-form__help">
-            Denk aan sjablonen: homepage, artikel, formulier, productpagina, overzicht. Niet het totaal aantal pagina's.
-          </p>
-          {{ range $opt := slice
-              (dict "v" "1-5" "l" "1 tot 5")
-              (dict "v" "6-10" "l" "6 tot 10")
-              (dict "v" "11-20" "l" "11 tot 20")
-              (dict "v" "20-plus" "l" "Meer dan 20") }}
-          <label class="offerte-form__option">
-            <input type="radio" data-name="aantal_paginatypes" value="{{ $opt.v }}" />
-            <span>{{ $opt.l }}</span>
-          </label>
-          {{ end }}
-        </fieldset>
-
-        <fieldset class="offerte-form__group">
           <legend class="hp-form__label">Welke functionaliteiten zitten erin?</legend>
           <p class="offerte-form__help">Vink aan wat van toepassing is. Meer functionaliteit betekent meer om te onderzoeken.</p>
           {{ range $opt := slice
