@@ -18,11 +18,9 @@
       {{ end }}
       {{ $paginator := .Paginate $posts }}
 
-      <div class="blog-list__grid row">
+      <div class="blog-list__grid">
         {{ range $paginator.Pages }}
-          <div class="md:col-6 lg:col-4 mb-10">
-            {{ partial "components/blog-card" . }}
-          </div>
+          {{ partial "components/blog-item.html" . }}
         {{ end }}
       </div>
 

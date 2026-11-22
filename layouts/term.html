@@ -5,9 +5,6 @@
       <header class="blog-list__header">
         <h1 class="blog-list__title">{{ .Title }}</h1>
         {{ with .Params.description }}<p class="blog-list__intro">{{ . }}</p>{{ end }}
-        {{ with .Content }}
-          <div class="blog-list__intro content">{{ . }}</div>
-        {{ end }}
       </header>
 
       {{/* Alleen filters tonen voor category-terms, niet voor tags */}}
@@ -18,15 +15,18 @@
       {{ end }}
 
       {{ $paginator := .Paginate .Pages.ByWeight }}
-      <div class="blog-list__grid row">
+      <div class="blog-list__grid">
         {{ range $paginator.Pages }}
-          <div class="md:col-6 lg:col-4 mb-10">
-            {{ partial "components/blog-card" . }}
-          </div>
+          {{ partial "components/blog-item.html" . }}
         {{ end }}
       </div>
 
       {{ partial "components/pagination.html" . }}
+
+      {{/* De langere uitleg staat onder de artikelen, zodat de lijst bovenaan begint. */}}
+      {{ with .Content }}
+        <div class="blog-list__outro content">{{ . }}</div>
+      {{ end }}
     </div>
   </section>
 {{ end }}

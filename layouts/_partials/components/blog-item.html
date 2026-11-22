@@ -1,0 +1,19 @@
+{{/* Artikel in het blogoverzicht en op categoriepagina's: zonder afbeelding
+     en zonder auteursfoto. De kaart met beeld (components/blog-card) blijft
+     voor "lees ook" onder artikelen. */}}
+<article class="blog-item">
+  {{ with .Params.categories }}
+    {{ $slug := index . 0 | urlize | lower }}
+    {{ $catPage := site.GetPage (printf "/categories/%s" $slug) }}
+    {{ $label := index . 0 | humanize }}
+    {{ if $catPage }}{{ $label = $catPage.Title }}{{ end }}
+    <p class="blog-card__cat">{{ $label }}</p>
+  {{ end }}
+  <h2 class="blog-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="blog-item__summary">{{ .Summary | plainify | htmlUnescape }}</p>
+  <p class="blog-item__meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+    <span aria-hidden="true">·</span>
+    {{ .ReadingTime }} {{ i18n "reading_time" }}
+  </p>
+</article>

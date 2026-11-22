@@ -14818,6 +14818,56 @@ body.pa-chat--open {
   margin: 0 0 0.5rem;
 }
 
+/* ── Blogoverzicht: artikelen zonder beeld, dunne lijn erboven ── */
+.blog-list__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem 3rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 48rem) { .blog-list__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .blog-list__grid { grid-template-columns: repeat(3, 1fr); } }
+.blog-item {
+  border-top: 1px solid #1F2937;
+  padding-top: 1.5rem;
+}
+.blog-item__title {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+.blog-item__title a {
+  color: #1F2937;
+  text-decoration: none;
+}
+.blog-item__title a:hover,
+.blog-item__title a:focus-visible {
+  color: #A30D4B;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.blog-item__summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 1rem;
+  color: #454D57;
+}
+.blog-item__meta {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #5F656D;
+}
+.blog-list__outro {
+  max-width: 42rem;
+  margin: 2rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid #d1d5db;
+}
+
 /* ── Blog byline (auteur + leestijd) ── */
 .blog-byline {
   display: flex;
