@@ -44,12 +44,13 @@
 
 
     <!-- header (don't cache it). Sinds 19-09-2026 krijgt elke Nederlandse pagina
-         de header en footer van de homepagina: alleen logo en menuknop, en de
-         grote footer. De Engelse site houdt de oude, want die twee zijn in het
-         Nederlands geschreven. -->
+         de grote footer. De Engelse site houdt de oude header en footer, want
+         die twee zijn in het Nederlands geschreven. Sinds 22-11-2026 is de
+         Nederlandse header header-nieuw.html (prototype); de vorige,
+         header-minimaal.html, blijft bestaan om terug te kunnen. -->
     {{ $nieuw := or (eq site.Language.Name "nl") .Params.header_minimaal }}
     {{ if $nieuw }}
-      {{ partial "essentials/header-minimaal.html" . }}
+      {{ partial "essentials/header-nieuw.html" . }}
     {{ else }}
       {{ partial "essentials/header.html" . }}
     {{ end }}
