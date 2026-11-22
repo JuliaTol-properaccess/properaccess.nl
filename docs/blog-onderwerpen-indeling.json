@@ -1,0 +1,625 @@
+{
+"2026-04-17_sc-1-3-1-labels.md": [
+"formulieren",
+"html-en-aria"
+],
+"2026-06-16_case-nrc.md": [
+"wcag-uitgelegd"
+],
+"skiplinks-issue-op-mijn-wordpress-website.md": [
+"structuur-en-navigatie"
+],
+"2026-04-19_hoe-vaak-opnieuw-laten-testen.md": [
+"audits"
+],
+"overlay-toegankelijkheidstools-lossen-ze-echt-iets-op.md": [
+"tips-en-tools"
+],
+"2026-06-30_hoe-kies-je-een-toegankelijkheidsbureau.md": [
+"audits"
+],
+"wat-developer-moet-weten-over-de-eaa.md": [
+"de-eaa"
+],
+"2026-05-16_webshop-tekst-in-afbeelding.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"toegankelijke-websites-van-politieke-partijen.md": [
+"wcag-uitgelegd"
+],
+"2026-03-02_nl_taalswitch-met-alleen-en-en-nl-hoe-maak-je-die-toegankelijk.md": [
+"html-en-aria"
+],
+"2026-04-12_sc-2-4-3-dialoogvenster-krijgt-geen-focus-bij-openen.md": [
+"toetsenbord-en-focus"
+],
+"2026-04-16_hoe-lang-duurt-een-toegankelijkheidsaudit.md": [
+"audits"
+],
+"2026-04-18_wat-is-wcag-2-2.md": [
+"wcag-uitgelegd"
+],
+"2026-04-09_eaa-checklist-2026-webshops.md": [
+"e-commerce-eaa",
+"de-eaa"
+],
+"eaa-onderwijs-stappenplan-toegankelijke-leeromgeving.md": [
+"de-eaa"
+],
+"2026-08-22_testen-met-voiceover-op-de-mac.md": [
+"tips-en-tools"
+],
+"accessible-name-que.md": [
+"html-en-aria"
+],
+"2026-06-22_webshops-toegankelijker-maar-nog-niet-bruikbaar.md": [
+"e-commerce-eaa",
+"de-eaa"
+],
+"2026-04-08_sc-1-4-10-content-verdwijnt-door-overflow-hidden.md": [
+"zoom-en-mobiel"
+],
+"2026-04-04_herkent-ai-div-als-knop.md": [
+"tips-en-tools",
+"html-en-aria"
+],
+"toetsenbord_toegankelijk.md": [
+"tips-en-tools"
+],
+"2026-06-26_wat-doet-een-toezichthouder-acm-over-de-eaa.md": [
+"de-eaa"
+],
+"2026-04-07_voor-wie-is-digitale-toegankelijkheid-verplicht.md": [
+"de-eaa"
+],
+"hoe-maak-je-een-website-digitaal-toegankelijk.md": [
+"wcag-uitgelegd"
+],
+"202602_eaa-boetes.md": [
+"de-eaa"
+],
+"2026-04-15_sc-2-5-3-aria-labelledby-verwijst-naar-de-verkeerde-tekst.md": [
+"formulieren",
+"html-en-aria"
+],
+"zo-controleer-je-de-koppenstructuur-van-je-website.md": [
+"teksten-en-documenten"
+],
+"2026-04-13_user-stories-in-toegankelijkheidsrapport.md": [
+"audits"
+],
+"checklist-toegankelijke-content.md": [
+"teksten-en-documenten"
+],
+"tabel-met-knoppen-om-in-de-kolommen-te-sorteren.md": [
+"html-en-aria"
+],
+"2026-04-13_hoe-begin-ik-met-digitale-toegankelijkheid.md": [
+"audits",
+"tips-en-tools"
+],
+"hoe-gebruikt-een-blinde-persoon-een-website.md": [
+"wcag-uitgelegd"
+],
+"2026-04-09_sc-1-4-11-invoerveld-zonder-zichtbare-rand.md": [
+"kleur-en-contrast",
+"formulieren"
+],
+"hoe-test-ik-kleurcontrast.md": [
+"tips-en-tools",
+"kleur-en-contrast"
+],
+"202602_accessibility_tree.md": [
+"tips-en-tools"
+],
+"20260125_submenu_dichtklappen.md": [
+"toetsenbord-en-focus"
+],
+"is-jouw-e-mailhandtekening-digitaal-toegankelijk.md": [
+"teksten-en-documenten"
+],
+"button-vreet-de-kop-op.md": [
+"html-en-aria"
+],
+"2026-04-13_sc-2-4-4-url-als-linktekst.md": [
+"structuur-en-navigatie"
+],
+"meerdere-knoppen-met-dezelfde-naam.md": [
+"html-en-aria"
+],
+"huisstijlkleuren-software-contrastproblemen-wcag.md": [
+"kleur-en-contrast"
+],
+"2026-03-21_webshop-productafbeelding-zonder-beschrijving.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"2026-06-27_webshop-maattabel-screenshot.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"hoe-toegankelijk-zijn-de-websites-van-de-grootste-opticiens.md": [
+"wcag-uitgelegd"
+],
+"hoe-toegankelijk-is-het-dl-element.md": [
+"html-en-aria"
+],
+"2026-06-08_toegankelijk-alternatief-1-klik-regel.md": [
+"audits",
+"wcag-uitgelegd"
+],
+"2026-08-27_webmcp-en-toegankelijkheid.md": [
+"tips-en-tools"
+],
+"tools-om-contrast-te-checken.md": [
+"tips-en-tools",
+"kleur-en-contrast"
+],
+"2026-04-04_ziet-ai-dat-je-tekst-te-licht-is.md": [
+"tips-en-tools",
+"kleur-en-contrast"
+],
+"citaat-in-toegankelijke-pdf.md": [
+"teksten-en-documenten"
+],
+"2026-05-30_webshop-plattegrond.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"2026-08-12_toegankelijke-spreadsheets-maken-in-google-sheets.md": [
+"teksten-en-documenten"
+],
+"hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-weer-verdwijnen.md": [
+"tips-en-tools",
+"toetsenbord-en-focus"
+],
+"2026-04-22_sc-1-4-10-tekst-afgesneden-door-een-vaste-hoogte.md": [
+"zoom-en-mobiel"
+],
+"2026-04-14_hoe-check-ik-de-toegankelijkheid-van-mijn-website.md": [
+"audits",
+"tips-en-tools"
+],
+"2026-04-16_sc-4-1-2-div-als-knop-naam-maar-geen-rol.md": [
+"html-en-aria"
+],
+"hoe-geef-ik-een-applicatie-accessible-name.md": [
+"html-en-aria"
+],
+"logo-toegankelijk-maken-wcag.md": [
+"afbeeldingen-en-media"
+],
+"toegankelijkheidslabel-ontoegankelijk-plaatsen.md": [
+"formulieren",
+"html-en-aria"
+],
+"2026-04-21_sc-1-4-3-witte-tekst-op-een-foto.md": [
+"kleur-en-contrast"
+],
+"hoe-herken-je-niet-getagde-tekst-in-een-pdf.md": [
+"teksten-en-documenten"
+],
+"2026-08-10_toegankelijkheidsregister-oogt-gezond.md": [
+"de-eaa"
+],
+"2026-04-15_welke-tools-zijn-er-voor-toegankelijkheidstesten.md": [
+"tips-en-tools",
+"audits"
+],
+"een-toegankelijk-iframe.md": [
+"html-en-aria"
+],
+"2026-07-19_aria-hidden-wat-het-doet-en-wanneer-je-het-gebruikt.md": [
+"html-en-aria"
+],
+"2026-08-01_wat-is-een-toegankelijke-naam.md": [
+"html-en-aria"
+],
+"browserstack-vs-proper-access-een-mini-experiment-met-automatische-toegankelijkheidstests.md": [
+"tips-en-tools"
+],
+"interview-met-julia-tol-over-digitale-toegankelijkheid-in-het-financieel-dagblad.md": [
+"wcag-uitgelegd"
+],
+"toegankelijke_pin_automaat.md": [
+"wcag-uitgelegd"
+],
+"wat-ondernemers-vinden-van-de-eaa.md": [
+"de-eaa"
+],
+"2026-04-19_sc-1-3-2-css-order-die-de-logica-verbreekt.md": [
+"structuur-en-navigatie"
+],
+"2026-06-26_nul-fouten-scan-ruim-honderd-bevindingen.md": [
+"tips-en-tools",
+"audits"
+],
+"hoeveel_tijd_nodig_om_digitale_toegankelijkheid_te_leren.md": [
+"wcag-uitgelegd"
+],
+"2026-04-03_wat-houdt-wcag-21-in-voor-websites.md": [
+"wcag-uitgelegd"
+],
+"2026-04-18_webshop-decoratieve-afbeeldingen.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"hoe-test-ik-focusvolgorde.md": [
+"tips-en-tools",
+"toetsenbord-en-focus"
+],
+"wat-kost-een-toegankelijkheidsaudit.md": [
+"audits"
+],
+"2026-04-11_mini-audit-mkb.md": [
+"audits",
+"de-eaa"
+],
+"2026-08-01_aria-rollen-en-attributen.md": [
+"html-en-aria"
+],
+"2026-04-18_automatische-tool-vs-handmatige-test.md": [
+"audits",
+"tips-en-tools"
+],
+"2026-04-18_wcag-em-methode-toegankelijkheidsonderzoek.md": [
+"audits"
+],
+"wcag-succescriteria-per-beperking-tool.md": [
+"wcag-uitgelegd",
+"tips-en-tools"
+],
+"202601_UI_contrast_exception.md": [
+"kleur-en-contrast",
+"html-en-aria"
+],
+"2026-04-03_kan-ai-website-testen-op-toegankelijkheid.md": [
+"tips-en-tools"
+],
+"video-transcript-de-makkelijkste-manier.md": [
+"afbeeldingen-en-media",
+"tips-en-tools"
+],
+"2026-04-05_geldt-de-eaa-voor-mijn-webshop.md": [
+"e-commerce-eaa",
+"de-eaa"
+],
+"202602_logoin h1.md": [
+"structuur-en-navigatie",
+"afbeeldingen-en-media"
+],
+"alt-tekst-keuzehulp.md": [
+"afbeeldingen-en-media"
+],
+"2026-05-02_webshop-knop-zonder-naam.md": [
+"e-commerce-eaa",
+"html-en-aria"
+],
+"2026-04-09_wat-kost-wcag-audit-webshop.md": [
+"audits",
+"e-commerce-eaa"
+],
+"2026-04-17_desktop-en-mobiele-audit.md": [
+"audits"
+],
+"2026-04-20_sc-1-4-1-groene-rij-goedgekeurd-rode-rij-afgewezen.md": [
+"kleur-en-contrast"
+],
+"2026-10-29_impact-toegankelijkheidsproblemen.md": [
+"audits"
+],
+"rijksmuseum-apps-toegankelijkheid-getest.md": [
+"wcag-uitgelegd",
+"zoom-en-mobiel"
+],
+"2026-04-04_wat-is-een-toegankelijkheidsaudit.md": [
+"audits"
+],
+"2026-04-02_wat-is-wcag.md": [
+"wcag-uitgelegd"
+],
+"2026-08-11_toegankelijke-content-schrijven-in-google-docs.md": [
+"teksten-en-documenten"
+],
+"toegankelijkheid-en-cybersecurity.md": [
+"wcag-uitgelegd",
+"formulieren"
+],
+"2026-06-13_webshop-gelinkte-afbeelding.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"2026-08-13_toegankelijkheidsrapport-ontvangen-zo-pak-je-het-aan.md": [
+"audits"
+],
+"2026-04-08_moet-mijn-overheidswebsite-voldoen-aan-wcag.md": [
+"de-eaa"
+],
+"google-lighthouse-als-toegankelijkheidstool.md": [
+"tips-en-tools"
+],
+"2026-06-21_case-bluebillywig-videospelers.md": [
+"wcag-uitgelegd",
+"afbeeldingen-en-media"
+],
+"rapport-per-element-vs-per-succescriterium.md": [
+"audits"
+],
+"2026-08-22_zo-gebruik-je-talkback-op-android.md": [
+"tips-en-tools"
+],
+"2026-08-22_testen-met-nvda-op-windows.md": [
+"tips-en-tools"
+],
+"2026-06-24_voldoen-aan-wcag-is-niet-hetzelfde-als-toegankelijk.md": [
+"wcag-uitgelegd"
+],
+"waarom-correcte-html-lijsten-het-verschil-maken-in-toegankelijkheid.md": [
+"teksten-en-documenten",
+"html-en-aria"
+],
+"2026-09-25_nieuw-model-toegankelijkheidsverklaring.md": [
+"de-eaa"
+],
+"2026-09-08_eaa-updates-afm-financiele-sector.md": [
+"de-eaa"
+],
+"toegankelijke_kopteksten_wcag.md": [
+"teksten-en-documenten"
+],
+"2026-04-06_boetes-niet-nakoming-eaa.md": [
+"de-eaa"
+],
+"hoe-test-ik-focus-zichtbaarheid.md": [
+"tips-en-tools",
+"toetsenbord-en-focus"
+],
+"digitale-toegankelijkheid-musea-en-culturele-instellingen.md": [
+"de-eaa"
+],
+"2026-04-11_sc-2-4-2-alle-paginas-hebben-dezelfde-titel.md": [
+"structuur-en-navigatie"
+],
+"2026-05-28_tolkie-leeshulp-aanrader.md": [
+"teksten-en-documenten",
+"de-eaa"
+],
+"2026-04-10_sc-2-1-1-mouseover-zonder-focus-equivalent.md": [
+"toetsenbord-en-focus"
+],
+"2026-04-04_webshop-afbeelding-van-prefix.md": [
+"e-commerce-eaa",
+"afbeeldingen-en-media"
+],
+"eaa-voor-webshops-wat-moet-je-regelen.md": [
+"e-commerce-eaa",
+"de-eaa"
+],
+"2026-08-11_toegankelijk-wordpress-thema-kiezen.md": [
+"tips-en-tools",
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-2-5-wat-betekent-audiodescriptie.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-1-3-4-wat-betekent-orientatie.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/sc-1-4-4-wat-betekent-tekst-vergroten.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/sc-3-2-6-wat-betekent-consistente-hulp.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-03-21_sc-2-4-7-javascript-blur.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/2026-03-17_sc-2-4-7-outline-none.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-4-12-wat-betekent-tekstafstand.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/sc-1-2-3-wat-betekent-audiodescriptie-of-media-alternatief-vooraf-opgenomen.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-3-2-4-wat-betekent-consistente-identificatie.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-03-20_sc-2-4-7-overflow-hidden.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-2-4-wat-betekent-ondertiteling-live.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/2026-03-29_sc-2-4-3-focus-springt-onverwacht-door-de-pagina.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/2026-04-01_sc-2-5-3-klik-op-zoeken-niets-gebeurt.md": [
+"html-en-aria"
+],
+"succescriteria/sc-3-3-7-wat-betekent-toegankelijke-authenticatie.md": [
+"formulieren"
+],
+"succescriteria/sc-1-4-1-wat-betekent-gebruik-van-kleur.md": [
+"kleur-en-contrast"
+],
+"succescriteria/sc-1-3-5-wat-betekent-invoerdoel-identificeren.md": [
+"formulieren"
+],
+"succescriteria/2026-03-30_sc-2-4-4-lees-meer.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-2-4-3-wat-betekent-focusvolgorde.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/2026-04-03_sc-1-3-1-tabellen.md": [
+"html-en-aria"
+],
+"succescriteria/sc-3-3-3-wat-betekent-foutsuggestie.md": [
+"formulieren"
+],
+"succescriteria/sc-3-3-1-wat-betekent-foutidentificatie.md": [
+"formulieren"
+],
+"succescriteria/sc-3-3-4-wat-betekent-foutpreventie-juridisch-financieel-data.md": [
+"formulieren"
+],
+"succescriteria/sc-2-4-6-wat-betekent-koppen-en-labels.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-3-2-2-bij-invoer.md": [
+"formulieren"
+],
+"succescriteria/sc-2-1-4-wat-betekent-sneltoetsen-met-tekens.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-4-3-wat-betekent-contrast-minimum.md": [
+"kleur-en-contrast"
+],
+"succescriteria/sc-2-5-8-wat-betekent-doelgrootte-minimum.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/2026-04-30_sc-4-1-2-knop-die-navigeert-link-die-een-actie-uitvoert.md": [
+"html-en-aria"
+],
+"succescriteria/sc-3-2-1-wat-betekent-bij-focus.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-4-5-wat-betekent-contrast-voor-niet-tekstuele-onderdelen.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/2026-03-20_sc-1-3-1-kopniveaus.md": [
+"html-en-aria"
+],
+"succescriteria/sc-1-4-11-wat-betekent-contrast-UI.md": [
+"kleur-en-contrast"
+],
+"succescriteria/sc-1-1-1-wat-betekent-niet-tekstuele-content.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-1-3-2-wat-betekent-betekenisvolle-volgorde.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-04-02_sc-4-1-2-knop-zonder-naam.md": [
+"html-en-aria"
+],
+"succescriteria/sc-2-4-2-wat-betekent-paginatitels.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-4-1-3-wat-betekent-statusbericht.md": [
+"html-en-aria"
+],
+"succescriteria/sc-3-2-3-wat-betekent-consistente-navigatie.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-4-1-2-wat-betekent-naam-rol-waarde.md": [
+"html-en-aria"
+],
+"succescriteria/sc-2-4-5-wat-betekent-meerdere-manieren.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-2-2-2-wat-betekent-pauzeren-stoppen-of-verbergen.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-2-5-7-wat-betekent-sleepbewegingen.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/sc-2-1-1-wat-betekent-toetsenbord-toegenkelijk.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-4-2-wat-betekent-audiobediening.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/2026-03-18_sc-2-4-7-onzichtbaar-contrast.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-2-5-3-wat-betekent-label-in-naam.md": [
+"html-en-aria"
+],
+"succescriteria/sc-3-3-7-wat-betekent-redundante-invoer.md": [
+"formulieren"
+],
+"succescriteria/2026-03-19_sc-2-4-7-negatieve-offset.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/sc-1-2-2-wat-betekent-ondertiteling-vooraf-opgenomen.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-1-4-13-wat-betekent-inhoud-bij-hover-of-focus.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/sc-2-4-7-wat-betekent-focus-zichtbaar.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/2026-03-27_sc-2-1-1-klikbare-div-in-plaats-van-een-button.md": [
+"toetsenbord-en-focus",
+"html-en-aria"
+],
+"succescriteria/sc-3-3-2-wat-betekent-labels-en-instructies.md": [
+"formulieren"
+],
+"succescriteria/sc-2-4-1-wat-betekent-blokken-overslaan-in-wcag.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-1-4-5-wat-betekent-afbeeldingen-van-tekst.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/2026-03-23_sc-1-4-1-links-die-alleen-door-kleur-herkenbaar-zijn.md": [
+"kleur-en-contrast",
+"html-en-aria"
+],
+"succescriteria/sc-1-3-3-wat-betekent-zintuigelijke-eigenschappen.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-03-25_sc-1-4-10-elementen-met-een-vaste-breedte.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/2026-04-05_sc-1-3-2-kolommen-waarvan-de-inhoud-door-elkaar-loopt.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-04-06_sc-1-4-1-formulierveld-kleurt-rood-bij-een-fout-dat-is-alles.md": [
+"kleur-en-contrast",
+"formulieren"
+],
+"succescriteria/sc-1-3-1-wat-betekent-informatie-en-relaties.md": [
+"html-en-aria"
+],
+"succescriteria/sc-1-4-10-wat-betekent-reflow.md": [
+"zoom-en-mobiel"
+],
+"succescriteria/2026-03-24_sc-1-4-3-lichtgrijze-tekst-op-een-witte-achtergrond.md": [
+"kleur-en-contrast"
+],
+"succescriteria/sc-2-4-11-wat-betekent-focusweergave-minimum.md": [
+"toetsenbord-en-focus"
+],
+"succescriteria/2026-03-28_sc-2-4-2-paginatitel-ontbreekt.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-04-07_sc-1-4-3-placeholdertekst-die-niemand-kan-lezen.md": [
+"kleur-en-contrast"
+],
+"succescriteria/sc-2-2-1-wat-betekent-tijdslimiet-aanpassen.md": [
+"formulieren"
+],
+"succescriteria/sc-2-4-4-wat-betekent-doel-van-links-in-context.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-3-1-1-wat-betekent-taal-van-de-pagina.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/2026-03-26_sc-1-4-11-informatief-icoon-dat-onzichtbaar-is.md": [
+"kleur-en-contrast"
+],
+"succescriteria/2026-03-22_sc-1-3-2-metadata-boven-de-kop-van-een-artikel.md": [
+"structuur-en-navigatie"
+],
+"succescriteria/sc-1-2-1-wat-betekent-alleen-audio-of-alleen-video.md": [
+"afbeeldingen-en-media"
+],
+"succescriteria/sc-3-1-2-wat-betekent-taal-van-onderdelen.md": [
+"structuur-en-navigatie"
+]
+}
