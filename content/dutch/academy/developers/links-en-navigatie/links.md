@@ -37,7 +37,7 @@ Twee dingen zitten daarin. Het doel van de link moet duidelijk zijn uit de linkt
 
 ### Welke context meetelt
 
-De woordenlijst van WCAG geeft als voorbeeld van context: tekst in dezelfde alinea, in hetzelfde lijstitem, in dezelfde tabelcel, of in de kopcel van de tabel die bij die cel hoort. Schermlezers kunnen ook de zin eromheen gebruiken.
+De woordenlijst van WCAG geeft als voorbeeld van context: tekst in dezelfde alinea, in dezelfde lijst, in dezelfde tabelcel, of in de kopcel van de tabel die bij die cel hoort. Schermlezers kunnen ook de zin eromheen gebruiken.
 
 Wat er niet bij staat: een kop boven een blok met links. Een `<h2>` boven een rij kaartjes maakt de linkteksten eronder dus niet duidelijk. In onze audits leunen we daar niet op.
 
@@ -92,7 +92,7 @@ De klasse `sr-only` is een stukje CSS dat de tekst van het scherm haalt en voor 
 
 Staan er twee links met de tekst "Aanmelden" op één pagina die naar verschillende formulieren gaan, dan kun je ze op naam niet onderscheiden. Bij ons is dat een bevinding op 2.4.4 binnen één pagina, met impact Matig.
 
-Het spiegelbeeld bestaat ook. Drie links met de teksten "Contact", "Neem contact op" en "Contactgegevens" die alle drie naar `/contact` gaan, zijn hetzelfde onderdeel met drie namen. Dat melden wij op **succescriterium 3.2.4 Consistente identificatie**, niveau AA: onderdelen met dezelfde functie moeten op de hele site hetzelfde worden aangeduid. Kies één tekst en houd die vast.
+Het spiegelbeeld bestaat ook. Een link die op elke pagina terugkomt, zoals in het menu of de footer, heet op de ene pagina "Contact" en op de andere "Neem contact op". Dat melden wij op **succescriterium 3.2.4 Consistente identificatie**, niveau AA: onderdelen met dezelfde functie die op meer pagina's terugkomen, moeten overal hetzelfde worden aangeduid. Geef zo'n terugkerende link overal dezelfde tekst. Een link in de lopende tekst van een artikel mag wel anders heten dan de link in het menu.
 
 ### Een afbeelding als link krijgt de bestemming als alt-tekst
 
@@ -182,7 +182,7 @@ Dit zijn de bevindingen die wij in audits het vaakst op links schrijven:
 
 - **Onduidelijke linktekst**, zoals "lees meer" of "klik hier" zonder context. Impact Matig.
 - **Dezelfde linktekst, verschillende bestemming** op één pagina. Impact Matig.
-- **Verschillende linkteksten, dezelfde bestemming** over de site heen. Dat is 3.2.4. Impact Matig.
+- **Een terugkerende link met steeds een andere tekst**, bijvoorbeeld in het menu of de footer. Dat is 3.2.4. Impact Matig.
 - **Gelinkte afbeelding zonder bruikbare alt-tekst**, dus een link zonder naam. Impact Matig.
 - **Links onvoldoende herkenbaar**, alleen een kleurverschil in lopende tekst. Impact Matig.
 - **Zichtbare linktekst ontbreekt in de toegankelijke naam.** Impact Serieus, want spraakbesturing werkt dan niet.
@@ -195,7 +195,7 @@ Dit zijn de bevindingen die wij in audits het vaakst op links schrijven:
 | **2.4.4** Linkdoel (in context) | A | Het doel van de link blijkt uit de linktekst, of uit de linktekst plus de context in de code |
 | **1.4.1** Gebruik van kleur | A | Een link in lopende tekst is niet alleen aan kleur te herkennen |
 | **2.5.3** Label in naam | A | De naam van de link bevat de zichtbare tekst |
-| **3.2.4** Consistente identificatie | AA | Dezelfde link heeft op de hele site dezelfde tekst |
+| **3.2.4** Consistente identificatie | AA | Een link die op meer pagina's terugkomt, heeft overal dezelfde tekst |
 | **4.1.2** Naam, rol, waarde | A | De link heeft een naam en de rol link, ook als hij met JavaScript is gemaakt |
 
 ## Verder lezen
@@ -232,10 +232,10 @@ Dit zijn de bevindingen die wij in audits het vaakst op links schrijven:
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
 <div class="academy-quiz__feedback--correct" hidden>
-<p>Klopt. De woordenlijst van WCAG noemt als context dezelfde alinea, hetzelfde lijstitem, dezelfde tabelcel of de bijbehorende kopcel. Een kop boven een blok staat daar niet bij. Zet het jaartal in de linktekst, of verberg het met <code>sr-only</code>.</p>
+<p>Klopt. De woordenlijst van WCAG noemt als context dezelfde alinea, dezelfde lijst, dezelfde tabelcel of de bijbehorende kopcel. Een kop boven een blok staat daar niet bij. Zet het jaartal in de linktekst, of verberg het met <code>sr-only</code>.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>Het antwoord is b. De context die meetelt, staat in de code dichtbij de link: dezelfde alinea, hetzelfde lijstitem, dezelfde tabelcel of de bijbehorende kopcel. Een kop boven een rij links hoort daar niet bij, en een <code>title</code> lost het niet op.</p>
+<p>Het antwoord is b. De context die meetelt, staat in de code dichtbij de link: dezelfde alinea, dezelfde lijst, dezelfde tabelcel of de bijbehorende kopcel. Een kop boven een rij links hoort daar niet bij, en een <code>title</code> lost het niet op.</p>
 </div>
 </div>
 </fieldset>
@@ -301,7 +301,7 @@ Dit zijn de bevindingen die wij in audits het vaakst op links schrijven:
 </fieldset>
 
 <fieldset class="academy-quiz__question" data-question="4">
-<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Op de site staan de linkteksten "Contact", "Neem contact op" en "Contactgegevens". Alle drie gaan ze naar <code>/contact</code>. Waar hoort die bevinding?</legend>
+<legend class="academy-quiz__q-text"><strong>Vraag 4.</strong> Het hoofdmenu staat op elke pagina. De link naar <code>/contact</code> heet daarin op de homepage "Contact", op de dienstpagina's "Neem contact op" en op het blog "Contactgegevens". Waar hoort die bevinding?</legend>
 <div class="academy-quiz__options">
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="a" />
@@ -317,15 +317,15 @@ Dit zijn de bevindingen die wij in audits het vaakst op links schrijven:
 </label>
 <label class="academy-quiz__option">
 <input type="radio" name="q4" value="d" />
-<span>Nergens, drie teksten naar dezelfde pagina mag</span>
+<span>Nergens, elke tekst is op zichzelf duidelijk</span>
 </label>
 </div>
 <div class="academy-quiz__feedback" data-correct="b" hidden>
 <div class="academy-quiz__feedback--correct" hidden>
-<p>Klopt. 3.2.4 vraagt dat onderdelen met dezelfde functie op de hele site hetzelfde worden aangeduid. Elke linktekst is op zichzelf duidelijk, dus 2.4.4 is gehaald. 2.4.6 vraagt beschrijvende labels, geen unieke.</p>
+<p>Klopt. 3.2.4 vraagt dat onderdelen met dezelfde functie die op meer pagina's terugkomen, overal hetzelfde worden aangeduid. Elke linktekst is op zichzelf duidelijk, dus 2.4.4 is gehaald. 2.4.6 vraagt beschrijvende labels, geen unieke.</p>
 </div>
 <div class="academy-quiz__feedback--incorrect" hidden>
-<p>Het antwoord is 3.2.4 Consistente identificatie, niveau AA. De drie teksten zijn elk duidelijk, dus 2.4.4 zakt niet. Het probleem is dat hetzelfde onderdeel drie namen heeft. Kies één tekst en houd die op de hele site vast.</p>
+<p>Het antwoord is 3.2.4 Consistente identificatie, niveau AA. De drie teksten zijn elk duidelijk, dus 2.4.4 zakt niet. Het probleem is dat dezelfde menulink op verschillende pagina's drie namen heeft. Kies één tekst en gebruik die op elke pagina.</p>
 </div>
 </div>
 </fieldset>
