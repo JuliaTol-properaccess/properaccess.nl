@@ -18,7 +18,7 @@ keywords:
   - opmaak uitzetten
 tags:
   - "1-3-2"
-  - "Structuur"
+  - "structuur"
 aliases:
   - /sc-1-3-2-wat-betekent-betekenisvolle-volgorde/
 ---

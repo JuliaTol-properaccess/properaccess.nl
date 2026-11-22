@@ -5,7 +5,7 @@ slug: "can-ai-detect-div-as-button"
 categories:
   - "ai-and-wcag"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "keyboard accessibility"
   - "Playwright"
