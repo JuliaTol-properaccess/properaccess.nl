@@ -2,7 +2,7 @@
 title: "Offerte aanvragen – WCAG-audit en training"
 meta_title: "Offerte aanvragen voor een WCAG-audit | Proper Access"
 date: 2023-10-05
-layout: "second-page"
+layout: "offerte"
 slug: "offerte-wcag-onderzoek"
 url: "/offerte-wcag-onderzoek/"
 # Geen zwevende WhatsApp-knop: die lag op een telefoon over de antwoorden van
@@ -14,45 +14,11 @@ keywords:
   - toegankelijkheidsaudit aanvragen
   - wcag onderzoek kosten
 
-# Features
-features:
-  - title: "Vraag een offerte aan voor een audit en begeleiding"
-    image: "/images/oplossing.webp"
-    content: "Onze audits geven inzicht, maar dat niet alleen: onze rapporten staan bomvol begrijpelijke tips en oplossingen. Jouw team kan dus direct aan de slag. Waar kun je op rekenen:"
-    bulletpoints:
-      - "Aantoonbare naleving van de EAA"
-      - "Onderbouwd plan van aanpak richting toezichthouder"
-      - "Beter imago en groter bereik"
-      - "Een senior auditor die je vragen beantwoordt, via de strippenkaart"
-      - "Juridische onderbouwing"
-    button:
-      enable: true
-      label: "Stuur een bericht"
-      link: "mailto:julia@properaccess.nl"
-
-  - title: "Waarom Proper Access?"
-    image: "/images/nrc_screenshot.webp"
-    content: "Bij Proper Access ontvang je niet alleen een lijst met WCAG-fouten, maar een helder rapport vol oplossingen, prioriteiten en slimme keuzes. Zo kun je gericht verbeteren."
-    bulletpoints:
-        - 950+ audits uitgevoerd sinds 2019
-        - IAAP-gecertificeerd team van 10 specialisten
-        - We toetsen volledig volgens WCAG-EM en de eisen van de EAA
-        - Heldere rapporten met concrete oplossingen
-        - Vragen over je rapport stel je via de strippenkaart: één strip per vraag, vervolgvragen in dezelfde draad gratis
-    button:
-      enable: true
-      label: "Neem contact op"
-      link: "/contact/"
-
+# Eén vraag, gerenderd onder het formulier door layouts/diensten/offerte.html.
+# De vroegere features en de andere drie vragen staan in de git-historie (vóór 22-11-2026).
 faqs:
-  - question: Krijg ik een certificaat of keurmerk na de audit?
-    answer: Wij leveren onafhankelijke auditrapporten die gebruikt kunnen worden voor het invullen van een toegankelijkheidsverklaring. Hoewel er (nog) geen nationaal keurmerk is, gebruiken veel organisaties onze audits als bewijs van naleving.
-  - question: Hoe lang duurt een audittraject?
-    answer: "Gemiddeld duurt een audit tussen de 1 en 4 weken, afhankelijk van de complexiteit van je website of app. Vragen daarna, en de begeleiding bij het oplossen, lopen via een strippenkaart: één strip is één vraag over één onderwerp."
   - question: Wat kost een toegankelijkheidsaudit?
-    answer: De kosten variëren afhankelijk van de omvang en complexiteit van je digitale product. Vraag vrijblijvend een offerte aan via onze website.
-  - question: Hoe vaak moet ik een audit laten uitvoeren?
-    answer: Het rapport is 36 maanden geldig. Wij adviseren om jaarlijks of bij elke grote release een nieuwe audit te laten doen. Zo blijft je digitale omgeving up-to-date en toegankelijk.
+    answer: "De kosten hangen af van de omvang en complexiteit van je digitale product. Tot en met 31 december kost ons complete pakket voor een website € 2.795 exclusief btw, inclusief hercontrole. Voor een prijs op maat vul je het formulier hierboven in: binnen 1 werkdag heb je een offerte."
 ---
 
 
