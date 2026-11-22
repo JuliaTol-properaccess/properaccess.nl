@@ -168,7 +168,7 @@ Maak eerst een shortlist op design en test daarna de demo van het thema, niet de
 
 ### Heeft WordPress een filter voor toegankelijke thema's?
 
-Ja, in de gratis themabibliotheek staat het Eigenschapsfilter met de optie Toegankelijkheid voorbereid. De selectie is beperkt. Commerciële marktplaatsen zoals ThemeForest hebben geen filter op toegankelijkheid, stand augustus 2026.
+Ja, in de gratis themabibliotheek staat het Eigenschapsfilter met de optie Toegankelijkheid voorbereid. De selectie is beperkt. Commerciële marktplaatsen zoals ThemeForest hebben geen filter op toegankelijkheid.
 
 ### Kun je een ontoegankelijk thema zelf repareren?
 
