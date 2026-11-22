@@ -3,15 +3,6 @@ title: "Contact"
 meta_title: "Contact | Proper Access"
 date: 2021-08-27
 description: "Vragen over WCAG, de EAA of digitale toegankelijkheid? Neem vrijblijvend contact op. We denken graag met je mee, van mini-audit tot volledige audit."
-source_context:
-  title: "Bron en actualiteit"
-  updated_label: "Laatst gecontroleerd"
-  date: "2026-10-24"
-  date_display: "24 oktober 2026"
-  expert: "De informatie over onze diensten en contactmogelijkheden is gecontroleerd door Proper Access."
-  sources_label: "Bronnen"
-  sources:
-    - { label: "Proper Access: over onze auditors", url: "/auditbureau-digitale-toegankelijkheid/" }
 keywords:
   - contact digitale toegankelijkheid
   - WCAG specialist
@@ -20,112 +11,20 @@ keywords:
 slug: "contact"
 url: "/contact/"
 hide_cta: true
+
+# De pagina zelf staat in layouts/contact/list.html (sinds 22-11-2026, naar het prototype).
+# De vroegere section-cards en het contactformulier staan in de git-historie.
+# Deze vragen rendert de layout, en json-ld.html maakt er FAQPage-data van.
+# "36 maanden" gecontroleerd tegen de skill proper-access-vakinhoud (Register: rapport vervalt na 36 maanden).
+faqs:
+  - question: Moet ik precies weten wat ik nodig heb?
+    answer: 'Nee. De meeste mensen die contact opnemen weten alleen: "Ik moet iets met toegankelijkheid, maar wat precies?" Dat is prima. Wij helpen je uitzoeken wat de beste aanpak is.'
+  - question: Krijg ik een certificaat of keurmerk na de audit?
+    answer: "Nee. Je krijgt een onafhankelijk auditrapport. Daarmee vul je je toegankelijkheidsverklaring in en laat je zien hoe toegankelijk je website of app is."
+  - question: Hoe lang duurt een WCAG-audittraject?
+    answer: "Gemiddeld duurt een audit 2 tot 4 weken, afhankelijk van de complexiteit van je website of app. Vragen daarna, en de begeleiding bij het oplossen, lopen via een strippenkaart: één strip is één vraag over één onderwerp."
+  - question: Wat kost een toegankelijkheidsaudit?
+    answer: "Dat hangt af van de omvang en complexiteit van je website of app. Tot en met 31 december kost ons complete pakket voor een website € 2.795 exclusief btw, inclusief hercontrole. Voor een prijs op maat vraag je een offerte aan: binnen 1 werkdag heb je hem."
+  - question: Hoe vaak moet ik een audit laten uitvoeren?
+    answer: "Ben je een overheidsorganisatie? Dan vervalt je rapport in het Register van Toegankelijkheidsverklaringen na 36 maanden. Wij adviseren een nieuwe audit bij elke grote release."
 ---
-
-{{< section-cards title="Kies hoe je contact opneemt" columns="4" >}}
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
-  <h3 class="card__title">Bel of app</h3>
-  <p><a href="tel:+31855055890"><strong>085 5055 890</strong></a></p>
-  <p><a href="https://wa.me/31628742275">WhatsApp of Signal</a></p>
-  <p class="card__meta">We nemen direct op, of bellen dezelfde dag terug.</p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
-  <h3 class="card__title">Mail ons</h3>
-  <p><a href="mailto:info@properaccess.nl"><strong>info@properaccess.nl</strong></a></p>
-  <p class="card__meta">Reactie binnen 1 werkdag. Meestal sneller.</p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-video" aria-hidden="true"></i></div>
-  <h3 class="card__title">Plan een videocall</h3>
-  <p>Liever even sparren in een videogesprek?</p>
-  <p><a href="https://calendar.app.google/k4VvBfPKnH3Lk2ut8"><strong>Kies een moment via Google Meet</strong></a></p>
-</div>
-<div class="card">
-  <div class="card__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
-  <h3 class="card__title">Ons kantoor</h3>
-  <address style="font-style: normal;">
-    <strong>Proper Access B.V.</strong><br>
-    Keizersgracht 520 H<br>
-    1017 EK Amsterdam<br>
-    Nederland
-  </address>
-</div>
-{{< /section-cards >}}
-
-
-
-
-{{< section-cards title="Wat gebeurt er als je contact opneemt?" subtitle="Geen verkooppraatje. Wel een helder gesprek over wat je nodig hebt." columns="2" bg="light" >}}
-<div class="card">
-  <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">1</div>
-  <h3 class="card__title">We nemen binnen 1 werkdag contact op</h3>
-  <p>Meestal sneller. Via mail of telefoon, wat jij prettiger vindt.</p>
-</div>
-<div class="card">
-  <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">2</div>
-  <h3 class="card__title">We luisteren naar je situatie</h3>
-  <p>Waar loop je tegenaan? Wat is je deadline? Wat heb je al gedaan of onderzocht?</p>
-</div>
-<div class="card">
-  <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">3</div>
-  <h3 class="card__title">We adviseren de kortste route</h3>
-  <p>Soms een mini-audit om snel te weten waar je staat. Soms een volledige WCAG-audit. En soms adviseren we een training voor je team.</p>
-</div>
-<div class="card">
-  <div class="card__icon" style="font-size: 1.5rem; color: #A30D4B;">4</div>
-  <h3 class="card__title">Jij beslist de volgende stap</h3>
-  <p>Een offerte? Een kennismakingsgesprek? Even meedenken over een concreet probleem? Geen verplichtingen. Alleen hulp waar je iets aan hebt.</p>
-</div>
-{{< /section-cards >}}
-
-
-{{< section-full title="Veelgestelde vragen" bg="light" >}}
-
-<details class="faq-item">
-<summary class="faq-question">Moet ik precies weten wat ik nodig heb?</summary>
-<div class="faq-answer">
-
-Nee. De meeste mensen die contact opnemen weten alleen: "Ik moet iets met toegankelijkheid, maar wat precies?" Dat is prima. Wij helpen je uitzoeken wat de beste aanpak is.
-
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Wat moet ik aanleveren als ik een vraag stel?</summary>
-<div class="faq-answer">
-
-Hoe meer context, hoe beter we kunnen helpen: de URL van je website of app, wat je deadline is en wat je al hebt geprobeerd. Maar als je die details nog niet hebt: ook prima. We vragen het wel.
-
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Krijg ik direct een prijsopgave?</summary>
-<div class="faq-answer">
-
-Ja, je krijgt een offerte op maat. We vragen je situatie uit en sturen je een helder voorstel met een vaste prijs, geen verrassingen achteraf. We denken met je mee over wat het beste past bij je budget en je doel.
-
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Bieden jullie spoedservice aan?</summary>
-<div class="faq-answer">
-
-Soms wel. Neem direct contact op en vermeld dat het om spoed gaat, dan kijken we wat mogelijk is. Bijvoorbeeld als de toezichthouder belt, een klant een toegankelijkheidsverklaring eist, of je over 3 weken lanceert.
-
-</div>
-</details>
-
-<details class="faq-item">
-<summary class="faq-question">Waar zijn jullie gevestigd?</summary>
-<div class="faq-answer">
-
-Ons postadres is Keizersgracht 520 H, 1017 EK Amsterdam. We werken volledig digitaal, dus locatie maakt niet uit. We begeleiden organisaties door het hele land.
-
-</div>
-</details>
-
-{{< /section-full >}}

@@ -1,0 +1,264 @@
+{{ define "main" }}
+{{/*
+  Offertepagina naar het prototype in ~/Downloads/properaccess-prototype/offerte.html
+  (plan: ~/.claude/plans/properaccess-website-redesign-home-offerte-contact.md, stap 4).
+  De oude rekentool (partials/offerte-calculator.html + js/offerte-form.js) staat nog in
+  layouts/diensten/second-page.html en wordt hier niet meer aangeroepen.
+
+  Verzending: static/js/offerte-stappen.js, via paFormSubmit (js/form-submit.js, in de footer).
+  Stap 1 stuurt fase "aanvraag", stap 2/3 fase "aanvulling"; beide met bron "offerte-audit".
+
+  Kleuren: alleen het palet. Grijs uit het prototype is donkerblauw met opacity
+  (--ho-zacht ±6,3:1 op wit, ±5,8:1 op #f5f5f5); veldranden volledig donkerblauw.
+  Lettermaten in px: onder 48rem is 1rem hier 12.8px.
+*/}}
+<div class="ho">
+
+<section>
+  <div class="ho-wrap ho-intro">
+    <div class="ho-hoofd">
+      <div class="ho-kop">
+        <p class="ho-label ho-magenta">/ offerte</p>
+        <h1 class="ho-h1">Stel je offerte samen</h1>
+        <p class="ho-lead">Weet binnen 1 werkdag wat je audit kost.</p>
+      </div>
+
+      <ol class="ho-voortgang" aria-label="Voortgang">
+        <li id="ho-stap-1" class="ho-voortgang__stap" aria-current="step">stap 1 · gegevens<span class="ho-voortgang__klaar" hidden><span aria-hidden="true"> ✓</span><span class="sr-only"> (klaar)</span></span></li>
+        <li id="ho-stap-2" class="ho-voortgang__stap">stap 2 · project<span class="ho-voortgang__klaar" hidden><span aria-hidden="true"> ✓</span><span class="sr-only"> (klaar)</span></span></li>
+        <li id="ho-stap-3" class="ho-voortgang__stap">stap 3 · optioneel<span class="ho-voortgang__klaar" hidden><span aria-hidden="true"> ✓</span><span class="sr-only"> (klaar)</span></span></li>
+      </ol>
+
+      <form class="ho-kaart" id="ho-form-1">
+        <h2 class="ho-h2">Stap 1. Jouw gegevens</h2>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+        <input type="hidden" name="fase" value="aanvraag">
+        <input type="hidden" name="url" id="ho-url-1" value="">
+        <div class="ho-velden">
+          <div class="ho-veld">
+            <label for="ho-naam">Naam</label>
+            <input class="ho-invoer" id="ho-naam" name="naam" type="text" autocomplete="name" required>
+          </div>
+          <div class="ho-veld">
+            <label for="ho-email">E-mailadres</label>
+            <input class="ho-invoer" id="ho-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="ho-knoprij" id="ho-knop-1">
+          <button class="ho-knop" type="submit">Offerte aanvragen</button>
+          <p class="ho-klein ho-zacht">Of mail Phi direct: <a href="mailto:phi@properaccess.nl">phi@properaccess.nl</a></p>
+        </div>
+        <p class="ho-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="na-stap-1" hidden>
+        <form class="ho-kaart ho-kaart--ruim" id="ho-form-2">
+          <h2 class="ho-h2">Stap 2. Vertel ons meer over je project</h2>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+          <input type="hidden" name="fase" value="aanvulling">
+          <input type="hidden" name="naam" id="ho-naam-2" value="">
+          <input type="hidden" name="email" id="ho-email-2" value="">
+          <div class="ho-veld">
+            <label for="url">Adres van je website</label>
+            <input class="ho-invoer ho-invoer--mono" id="url" name="url" type="url" autocomplete="url" placeholder="https://jouwwebsite.nl">
+          </div>
+          <fieldset class="ho-groep">
+            <legend>Wat mogen we voor je onderzoeken?</legend>
+            <label class="ho-keuze"><input type="radio" name="soort" value="Weet ik niet, denk met me mee" checked> Weet ik niet, denk met me mee</label>
+            <label class="ho-keuze"><input type="radio" name="soort" value="Volledige audit, content en techniek"> Volledige audit, content én techniek</label>
+            <label class="ho-keuze"><input type="radio" name="soort" value="Alleen content"> Alleen content</label>
+            <label class="ho-keuze"><input type="radio" name="soort" value="Alleen techniek"> Alleen techniek</label>
+          </fieldset>
+          <div class="ho-veld">
+            <label for="ho-soorten">Hoeveel soorten pagina's heeft je website?</label>
+            <p class="ho-klein ho-zacht" id="ho-soorten-hint">Bijvoorbeeld: homepage, artikel, productpagina, contactformulier. Niet het totaal aantal pagina's.</p>
+            <input class="ho-invoer ho-invoer--kort" id="ho-soorten" name="paginasoorten" type="number" min="1" inputmode="numeric" aria-describedby="ho-soorten-hint">
+          </div>
+
+          <div class="ho-stap3">
+            <h2 class="ho-h2">Stap 3. Nog een optionele vraag</h2>
+            <fieldset class="ho-groep">
+              <legend>Extra's</legend>
+              <label class="ho-keuze ho-keuze--lang"><input type="checkbox" name="strippenkaart" value="ja"> <span>Hulp van een auditor terwijl je team oplost. Via de strippenkaart, vanaf € 20 per vraag.</span></label>
+            </fieldset>
+          </div>
+
+          <div id="ho-knop-2">
+            <button class="ho-knop" type="submit">Verstuur je aanvulling</button>
+          </div>
+          <p class="ho-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <aside class="ho-waarom" aria-labelledby="ho-waarom">
+      <h2 class="ho-h2 ho-h2--zwaar" id="ho-waarom">Waarom Proper Access?</h2>
+      <ul class="ho-redenen">
+        <li><span class="ho-label ho-label--klein" aria-hidden="true">01</span><div><p class="ho-reden">Onafhankelijk</p><p>We lossen niets zelf op. Ons oordeel hangt dus niet af van werk dat we daarna krijgen.</p></div></li>
+        <li><span class="ho-label ho-label--klein" aria-hidden="true">02</span><div><p class="ho-reden">Concrete oplossingen</p><p>Per probleem de oorzaak en de code om het op te lossen. Een screenshot waar dat helpt.</p></div></li>
+        <li><span class="ho-label ho-label--klein" aria-hidden="true">03</span><div><p class="ho-reden">Klaar voor de wet</p><p>Je vult er direct je toegankelijkheidsverklaring mee in.</p></div></li>
+        <li><span class="ho-label ho-label--klein" aria-hidden="true">04</span><div><p class="ho-reden">Vooraf duidelijk</p><p>Een vaste prijs en binnen 1 werkdag een offerte.</p></div></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+{{/* Cijfers: ~/.claude/proper-access-merk.md, "Track record", stand augustus 2026 (zoals homepage-e). */}}
+<section class="ho-trust" aria-labelledby="ho-vertrouwd">
+  <div class="ho-wrap ho-trust__wrap">
+    <h2 class="ho-label ho-label--klein ho-trust__titel" id="ho-vertrouwd">vertrouwd door</h2>
+    <ul class="ho-trust__namen">
+      <li>Rijksmuseum</li>
+      <li>De Bijenkorf</li>
+      <li>NRC</li>
+      <li>Jumbo</li>
+      <li>Provincie Noord-Holland</li>
+      <li>Gemeente <span class="ho-nowrap">'s-Hertogenbosch</span></li>
+    </ul>
+    <p class="ho-label ho-label--klein">950+ audits sinds 2019 · 63 opdrachtgevers · 40% komt terug (stand augustus 2026)</p>
+  </div>
+</section>
+
+{{/* De prijsvraag staat als enige vraag in de front matter (faqs), zodat eventuele FAQ-data gelijk blijft aan de pagina. */}}
+{{ with .Params.faqs }}
+<section class="ho-faq">
+  <div class="ho-wrap ho-faq__wrap">
+    <p class="ho-label ho-magenta">/ veelgestelde vraag</p>
+    {{ range . }}
+    <details class="ho-vraag" open>
+      <summary>{{ .question }}</summary>
+      <p>{{ .answer }}</p>
+    </details>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section>
+  <div class="ho-wrap ho-sparren">
+    <figure class="ho-persoon">
+      <img class="ho-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="240" height="280" loading="lazy">
+      <figcaption class="ho-label ho-label--klein">Phi Pham, projectmanager</figcaption>
+    </figure>
+    <div class="ho-sparren__tekst">
+      <p class="ho-label ho-magenta">/ kennismaken</p>
+      <h2 class="ho-h2 ho-h2--groot">Liever eerst even sparren?</h2>
+      <p class="ho-lead">Plan een videocall met Phi of bel <a href="tel:+31855055890"><strong>085 5055 890</strong></a>. Je zit nergens aan vast. Na het gesprek weet je welke risico's je loopt.</p>
+      <div><a class="ho-knop ho-knop--donker" href="/contact/">Plan een videocall met Phi</a></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<style>
+.ho {
+  --ho-navy: #1F2937; --ho-magenta: #A30D4B; --ho-teal: #004050;
+  --ho-grijs: #f5f5f5; --ho-zacht: rgba(31,41,55,.78); --ho-rand: rgba(31,41,55,.15);
+  --ho-mono: "JetBrains Mono", ui-monospace, monospace;
+  --ho-kopfont: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: Nunito, system-ui, sans-serif; color: var(--ho-navy);
+  font-size: 17px; line-height: 1.6; background: #fff;
+}
+.ho [hidden] { display: none !important; }
+.ho p { margin: 0; }
+.ho a:not(.ho-knop) { color: var(--ho-teal); }
+.ho a:not(.ho-knop):hover { color: var(--ho-magenta); }
+.ho a:focus-visible, .ho button:focus-visible, .ho input:focus-visible, .ho summary:focus-visible { outline: 3px solid var(--ho-teal); outline-offset: 2px; }
+.ho-wrap { max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; box-sizing: border-box; }
+.ho-magenta { color: var(--ho-magenta); }
+.ho-zacht { color: var(--ho-zacht); }
+.ho-nowrap { white-space: nowrap; }
+.ho-label { font-family: var(--ho-mono); font-size: 14px; color: var(--ho-zacht); }
+.ho-label.ho-magenta { color: var(--ho-magenta); }
+.ho-label--klein { font-size: 13px; }
+.ho-klein { font-size: 15px; }
+.ho-lead { font-size: 18px; }
+.ho-kop { display: flex; flex-direction: column; gap: 16px; }
+.ho-kop .ho-lead { font-size: 20px; }
+.ho-h1 { margin: 0; font-family: var(--ho-kopfont); font-weight: 800; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em; }
+.ho-h2 { margin: 0; font-family: var(--ho-kopfont); font-weight: 700; font-size: 24px; line-height: 1.25; }
+.ho-h2--zwaar { font-weight: 800; }
+.ho-h2--groot { font-weight: 800; font-size: clamp(28px, 3vw, 40px); line-height: 1.12; letter-spacing: -0.02em; }
+.ho-knop {
+  display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border: 0; border-radius: 10px;
+  background: var(--ho-magenta); color: #fff; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.ho-knop:hover { background: var(--ho-navy); color: #fff; }
+.ho-knop:disabled { opacity: .7; cursor: wait; }
+.ho-knop--donker { background: var(--ho-navy); }
+.ho-knop--donker:hover { background: var(--ho-magenta); }
+
+/* Intro en formulier */
+.ho-intro { padding-top: 96px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; }
+.ho-hoofd { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px; }
+.ho-voortgang { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-family: var(--ho-mono); font-size: 13px; }
+.ho-voortgang__stap { margin: 0; padding: 10px 0; border-top: 2px solid rgba(31,41,55,.3); color: var(--ho-zacht); }
+.ho-voortgang__stap[aria-current="step"] { border-top-color: var(--ho-navy); color: var(--ho-navy); font-weight: 500; }
+.ho-voortgang__stap--klaar { border-top-color: var(--ho-teal); color: var(--ho-teal); }
+.ho-kaart { border: 1px solid rgba(31,41,55,.3); border-radius: 12px; padding: 32px; display: flex; flex-direction: column; gap: 20px; background: #fff; }
+.ho-kaart--ruim { gap: 28px; }
+.ho-velden { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.ho-veld { display: flex; flex-direction: column; gap: 6px; }
+.ho-veld label, .ho-groep legend { font-weight: 700; }
+.ho-invoer {
+  min-height: 52px; box-sizing: border-box; padding: 0 16px; border: 1.5px solid var(--ho-navy); border-radius: 10px;
+  font-family: Nunito, system-ui, sans-serif; font-size: 16px; color: var(--ho-navy); background: #fff; width: 100%;
+}
+.ho-invoer--mono { font-family: var(--ho-mono); font-size: 15px; }
+.ho-invoer--kort { max-width: 160px; }
+.ho-invoer::placeholder { color: var(--ho-zacht); opacity: 1; }
+.ho-knoprij { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.ho-groep { margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.ho-groep legend { padding: 0; margin-bottom: 10px; }
+.ho-keuze { display: flex; gap: 12px; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid rgba(31,41,55,.3); border-radius: 8px; cursor: pointer; }
+.ho-keuze--lang { align-items: flex-start; padding: 14px 16px; }
+.ho-keuze input { width: 20px; height: 20px; flex: none; margin: 0; accent-color: var(--ho-magenta); }
+.ho-keuze--lang input { margin-top: 3px; }
+.ho-stap3 { border-top: 1px solid var(--ho-rand); padding-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+/* Op role selecteren: paFormSubmit vervangt de className van de melding. */
+.ho-kaart [role="status"] { padding: 14px 16px; border-radius: 8px; border: 1.5px solid var(--ho-teal); color: var(--ho-teal); font-weight: 600; }
+.ho-kaart [role="status"]:empty { display: none; }
+.ho-kaart [role="status"].pa-form__status--error { border-color: var(--ho-magenta); color: var(--ho-magenta); }
+
+/* Zijkolom */
+.ho-waarom { flex: 1 1 340px; min-width: 0; border-top: 1px solid var(--ho-navy); padding-top: 24px; display: flex; flex-direction: column; gap: 24px; }
+.ho-redenen { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+.ho-redenen li { margin: 0; display: flex; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid var(--ho-rand); }
+.ho-redenen li > .ho-label { flex: none; width: 28px; padding-top: 3px; }
+.ho-reden { font-family: var(--ho-kopfont); font-weight: 700; }
+.ho-reden + p { margin-top: 2px; }
+
+/* Trustbar */
+.ho-trust { border-top: 1px solid var(--ho-rand); }
+.ho-trust__wrap { padding-top: 32px; padding-bottom: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; }
+.ho-trust__titel { margin: 0; font-weight: 500; }
+.ho-trust__namen { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px; flex: 1 1 520px; }
+.ho-trust__namen li { margin: 0; font-family: var(--ho-kopfont); font-weight: 800; font-size: 17px; }
+
+/* Prijsvraag */
+.ho-faq { background: var(--ho-grijs); }
+.ho-faq__wrap { max-width: 820px; padding-top: 96px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 20px; }
+.ho-vraag { background: #fff; border: 1px solid rgba(31,41,55,.3); border-radius: 12px; padding: 8px 32px; }
+.ho-vraag summary { min-height: 64px; display: flex; align-items: center; cursor: pointer; font-family: var(--ho-kopfont); font-weight: 700; font-size: 20px; }
+.ho-vraag p { margin: 0 0 24px; }
+
+/* Sparren */
+.ho-sparren { max-width: 1000px; padding-top: 104px; padding-bottom: 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 56px; }
+.ho-persoon { flex: 0 0 auto; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.ho-persoon__foto { width: 240px; height: 280px; border-radius: 8px; object-fit: cover; display: block; }
+.ho-sparren__tekst { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.ho-sparren__tekst > div { margin-top: 8px; }
+.ho-sparren__tekst a:not(.ho-knop) { text-decoration: underline; text-underline-offset: .2em; }
+
+@media (max-width: 600px) {
+  .ho-intro { padding-top: 56px; padding-bottom: 64px; gap: 40px; }
+  .ho-kaart { padding: 24px 20px; }
+  .ho-vraag { padding: 8px 20px; }
+  .ho-faq__wrap, .ho-sparren { padding-top: 64px; padding-bottom: 64px; }
+  .ho-voortgang { font-size: 12px; }
+}
+</style>
+
+<script src="{{ "js/offerte-stappen.js" | relURL }}" defer></script>
+{{ end }}

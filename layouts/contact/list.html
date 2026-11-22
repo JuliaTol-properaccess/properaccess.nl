@@ -1,75 +1,149 @@
 {{ define "main" }}
+{{/*
+  Contactpagina naar het prototype in ~/Downloads/properaccess-prototype/contact.html
+  (plan: ~/.claude/plans/properaccess-website-redesign-home-offerte-contact.md, stap 6).
+  Het oude contactformulier (bron "contactformulier") en de section-cards zijn weg;
+  ze staan in de git-historie (vóór 22-11-2026).
 
-<!-- ─── HERO ─── -->
-<section class="hp-hero">
-  <div class="hp-container">
-    <div class="hp-hero__grid">
-      <div class="hp-hero__text">
-        <span class="hp-hero__badge">Contact</span>
-        <h1 class="hp-hero__title">
-          {{ i18n "contact_hero_title" | default "Laten we kennismaken" }}
-        </h1>
-        <p class="hp-hero__subtitle">
-          {{ i18n "contact_hero_subtitle" | default "Misschien wil je weten of je website toegankelijk is. Of je zoekt een partner die meekijkt bij je volgende release. Wellicht belt de toezichthouder en wil je weten waar je staat." }}
-        </p>
-        <p class="hp-hero__subtitle"><strong>{{ i18n "contact_hero_cta_text" | default "Wat je vraag ook is, stel hem gerust." }}</strong></p>
-        <div class="hp-hero__actions">
-          <a class="hp-btn hp-btn--primary" href="tel:+31855055890">
-            <span class="material-symbols-outlined" aria-hidden="true">phone</span>
-            085 5055 890
-          </a>
-          <a class="hp-btn hp-btn--outline" href="mailto:info@properaccess.nl">
-            {{ i18n "contact_hero_email_btn" | default "Mail ons" }}
-          </a>
-        </div>
-      </div>
-      <div class="hp-hero__visual">
-        <div class="hp-contact__form-card">
-          <h2 class="hp-heading-md">{{ i18n "contact_form_title" | default "Stuur een bericht" }}</h2>
-          <p class="hp-contact__form-sub">{{ i18n "contact_form_sub" | default "We reageren binnen 1 werkdag." }}</p>
-          <form
-            id="contact-hero-form"
-            class="hp-form"
-            novalidate
-            onsubmit="event.preventDefault(); paFormSubmit(this, { bron: 'contactformulier', successMessage: 'Bericht verstuurd! We nemen binnen 1 werkdag contact op.' });">
-            <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
-            <div class="hp-form__row">
-              <div class="hp-form__field">
-                <label class="hp-form__label" for="hero-name">{{ i18n "contact_name" | default "Naam" }}</label>
-                <input class="hp-form__input" id="hero-name" name="naam" autocomplete="name" required type="text" placeholder="{{ i18n "contact_name_placeholder" | default "Je naam" }}" />
-              </div>
-              <div class="hp-form__field">
-                <label class="hp-form__label" for="hero-email">{{ i18n "contact_email" | default "E-mail" }}</label>
-                <input class="hp-form__input" id="hero-email" name="email" autocomplete="email" required type="email" placeholder="{{ i18n "contact_email_placeholder" | default "je@email.nl" }}" />
-              </div>
-            </div>
-            <div class="hp-form__field">
-              <label class="hp-form__label" for="hero-message">{{ i18n "contact_message" | default "Bericht" }}</label>
-              <textarea class="hp-form__input hp-form__textarea" id="hero-message" name="bericht" required placeholder="{{ i18n "contact_message_placeholder" | default "Waar kunnen we je mee helpen?" }}" rows="4"></textarea>
-            </div>
-            <button class="hp-btn hp-btn--primary hp-btn--full" type="submit">
-              {{ i18n "contact_submit" | default "Verstuur bericht" }}
-            </button>
-            <div role="status" aria-live="polite"></div>
-          </form>
-        </div>
+  De vragen komen uit .Params.faqs, zodat de FAQPage-JSON-LD (partials/json-ld.html)
+  gelijk blijft aan de pagina. Geen source_context: Julia liet dat blok op 22-11-2026 weghalen.
+
+  Kleuren: alleen het palet. Grijs uit het prototype is donkerblauw met opacity
+  (--hc-zacht ±6,3:1 op wit). Lettermaten in px: onder 48rem is 1rem hier 12.8px.
+*/}}
+<div class="hc">
+
+<section>
+  <div class="hc-wrap hc-intro">
+    <div class="hc-intro__tekst">
+      <p class="hc-label hc-magenta">/ contact</p>
+      <h1 class="hc-h1">Twijfel je of je website voldoet aan de wet?</h1>
+      <p class="hc-lead">Belt de toezichthouder, moet je je toegankelijkheidsverklaring bijwerken of komt er een nieuwe release aan? Na één videocall weet je wat je moet regelen.</p>
+      <div class="hc-acties">
+        <a class="hc-knop hc-knop--groot" href="mailto:phi@properaccess.nl"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="M16 10l5-3v10l-5-3"></path></svg>Mail Phi om een videocall te plannen</a>
+        <p class="hc-zacht">Liever bellen of mailen? Bel of app <a href="tel:+31855055890"><strong>085 5055 890</strong></a>, of mail <a href="mailto:info@properaccess.nl"><strong>info@properaccess.nl</strong></a>. Je hebt binnen 1 werkdag antwoord.</p>
       </div>
     </div>
+
+    <figure class="hc-persoon">
+      <img class="hc-persoon__foto" src="{{ "images/phi.jpeg" | relURL }}" alt="" width="480" height="360">
+      <blockquote class="hc-citaat">“Vertel me waar je tegenaan loopt. Na ons gesprek weet je precies wat je volgende stap is.”</blockquote>
+      <figcaption class="hc-label">Phi Pham, projectmanager</figcaption>
+    </figure>
   </div>
 </section>
 
+<section class="hc-feiten-sectie">
+  <div class="hc-feiten">
+    <dl class="hc-cijfers">
+      <div><dt class="hc-label hc-label--klein">audits sinds 2019</dt><dd>950+</dd></div>
+      <div><dt class="hc-label hc-label--klein">opdrachtgevers</dt><dd>63</dd></div>
+      <div><dt class="hc-label hc-label--klein">van onze klanten komt terug</dt><dd>40%</dd></div>
+    </dl>
+    <div>
+      <h2 class="hc-label hc-label--klein hc-adreskop">postadres</h2>
+      <address class="hc-adres">Proper Access B.V.<br>Keizersgracht 520 H<br>1017 EK Amsterdam</address>
+    </div>
+  </div>
+  <p class="hc-wrap hc-peil hc-label hc-label--klein">Stand augustus 2026</p>
+</section>
 
-<!-- ─── CONTENT (shortcodes) ─── -->
-<article class="offerte-content">
-  {{ .Content }}
-</article>
+{{ with .Params.faqs }}
+<section>
+  <div class="hc-wrap hc-faq">
+    <div class="hc-kop">
+      <p class="hc-label hc-magenta">/ veelgestelde vragen</p>
+      <h2 class="hc-h2">Wat je wilt weten voordat je belt</h2>
+    </div>
+    <div class="hc-vragen">
+      {{ range $i, $faq := . }}
+      <details class="hc-vraag"{{ if eq $i 0 }} open{{ end }}>
+        <summary>{{ $faq.question }}</summary>
+        <p>{{ $faq.answer }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
+<section class="hc-band">
+  <div class="hc-wrap hc-band__wrap">
+    <h2 class="hc-h2">Weet je al wat je nodig hebt?</h2>
+    <p class="hc-lead">Vraag direct een offerte aan. Binnen 1 werkdag weet je wat je audit kost.</p>
+    <a class="hc-knop hc-knop--wit" href="/offerte-wcag-onderzoek/">Vraag een offerte aan</a>
+  </div>
+</section>
 
-<!-- ─── STATS ─── -->
-{{ partial "voor-wie/stats-bar.html" . }}
+</div>
 
+<style>
+.hc {
+  --hc-navy: #1F2937; --hc-magenta: #A30D4B; --hc-teal: #004050;
+  --hc-zacht: rgba(31,41,55,.78); --hc-rand: rgba(31,41,55,.3);
+  --hc-mono: "JetBrains Mono", ui-monospace, monospace;
+  --hc-kopfont: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: Nunito, system-ui, sans-serif; color: var(--hc-navy);
+  font-size: 17px; line-height: 1.6; background: #fff;
+}
+.hc p { margin: 0; }
+.hc a:not(.hc-knop) { color: var(--hc-teal); }
+.hc a:not(.hc-knop):hover { color: var(--hc-magenta); }
+.hc a:focus-visible, .hc summary:focus-visible { outline: 3px solid var(--hc-teal); outline-offset: 2px; }
+.hc-band a:focus-visible { outline-color: #fff; }
+.hc-wrap { max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; box-sizing: border-box; }
+.hc-magenta { color: var(--hc-magenta); }
+.hc-zacht { color: var(--hc-zacht); }
+.hc-label { font-family: var(--hc-mono); font-size: 14px; color: var(--hc-zacht); }
+.hc-label.hc-magenta { color: var(--hc-magenta); }
+.hc-label--klein { font-size: 13px; }
+.hc-lead { font-size: 20px; max-width: 32em; }
+.hc-h1, .hc-h2 { color: inherit; }
+.hc-h1 { margin: 0; font-family: var(--hc-kopfont); font-weight: 800; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em; }
+.hc-h2 { margin: 0; font-family: var(--hc-kopfont); font-weight: 800; font-size: clamp(28px, 3vw, 40px); line-height: 1.12; letter-spacing: -0.02em; }
+.hc-knop {
+  display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border-radius: 10px;
+  background: var(--hc-magenta); color: #fff; font-weight: 700; text-decoration: none;
+}
+.hc-knop:hover { background: var(--hc-navy); color: #fff; }
+.hc-knop--groot { min-height: 60px; padding: 0 32px; font-size: 18px; }
+.hc-knop--wit { background: #fff; color: var(--hc-navy); margin-top: 8px; }
+.hc-knop--wit:hover { background: #f5f5f5; color: var(--hc-magenta); }
 
-<!-- ─── CTA ─── -->
-{{ partial "call-to-action.html" . }}
+/* Intro */
+.hc-intro { padding-top: 104px; padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center; }
+.hc-intro__tekst { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.hc-acties { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; margin-top: 4px; }
+.hc-persoon { flex: 1 1 360px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 20px; }
+.hc-persoon__foto { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; display: block; }
+.hc-citaat { margin: 0; padding: 0; border: 0; font-family: var(--hc-kopfont); font-weight: 700; font-size: 20px; line-height: 1.4; font-style: normal; }
 
+/* Cijfers en postadres */
+.hc-feiten-sectie { padding: 0 24px; }
+.hc-feiten { max-width: 1152px; margin: 0 auto; border-top: 1px solid var(--hc-rand); border-bottom: 1px solid var(--hc-rand); padding: 40px 0; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; }
+.hc-cijfers { margin: 0; display: flex; flex-wrap: wrap; gap: 24px 48px; }
+.hc-cijfers dd { margin: 4px 0 0; font-family: var(--hc-kopfont); font-weight: 800; font-size: 32px; line-height: 1; }
+.hc-adreskop { margin: 0; font-weight: 500; }
+.hc-adres { margin: 4px 0 0; font-style: normal; }
+.hc-peil { max-width: 1200px; padding: 12px 0 0; }
+
+/* Veelgestelde vragen: witte lijst zoals het prototype */
+.hc-faq { max-width: 860px; padding-top: 104px; padding-bottom: 104px; display: flex; flex-direction: column; gap: 28px; }
+.hc-kop { display: flex; flex-direction: column; gap: 12px; }
+.hc-vragen { display: flex; flex-direction: column; border-top: 1px solid var(--hc-navy); }
+.hc-vraag { border: 0; border-bottom: 1px solid var(--hc-rand); }
+.hc-vraag summary { min-height: 64px; display: flex; align-items: center; cursor: pointer; font-family: var(--hc-kopfont); font-weight: 700; font-size: 19px; }
+.hc-vraag p { margin: 0 0 24px; color: var(--hc-zacht); }
+
+/* Afsluitende band */
+.hc-band { background: var(--hc-navy); color: #fff; }
+.hc-band__wrap { padding-top: 96px; padding-bottom: 96px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+.hc-band .hc-lead { font-size: 18px; color: rgba(255,255,255,.9); }
+
+@media (max-width: 600px) {
+  .hc-intro { padding-top: 56px; padding-bottom: 64px; gap: 40px; }
+  .hc-faq, .hc-band__wrap { padding-top: 64px; padding-bottom: 64px; }
+  .hc-knop--groot { padding: 12px 24px; }
+}
+</style>
 {{ end }}

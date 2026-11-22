@@ -1,0 +1,167 @@
+{{/*
+  Header uit het prototype van 22-11-2026 (~/Downloads/properaccess-prototype/).
+  Staat op elke Nederlandse pagina (zie baseof.html). De vorige header,
+  header-minimaal.html, blijft bestaan: terugzetten is één regel in baseof.
+
+  Logo, zes links en de knop "Offerte audit". Niet sticky, net als het
+  prototype. Geen zoekknop, geen link naar de Engelse site en geen portaallink:
+  zo staat het in het prototype (Julia, 22-11-2026).
+
+  Actieve link: aria-current="page" als de link precies naar deze pagina gaat,
+  aria-current="true" als deze pagina eronder valt (een blogartikel onder
+  "/ kennis"). Beide krijgen de stijl uit het prototype: magenta, onderstreept.
+
+  Onder 960 pixels past de lijst niet in de balk (gemeten: vanaf 930 past
+  hij op één regel). Dan verschijnt een knop
+  "Menu" die de lijst toont en verbergt (disclosure, geen modaal venster).
+  Escape sluit de lijst en zet de focus terug op de knop. Zonder JavaScript
+  blijft de knop verborgen en staat de lijst gewoon open onder het logo.
+*/}}
+{{ $hier := .RelPermalink }}
+{{ $links := slice
+  (dict "label" "/ onderzoek" "href" "/toegankelijkheidsonderzoek/" "onder" (slice "/toegankelijkheidsonderzoek/" "/contentaudit/" "/techniekaudit/"))
+  (dict "label" "/ training" "href" "/trainen-van-webredactie/" "onder" (slice "/trainen-van-webredactie/"))
+  (dict "label" "/ tools" "href" "/tools/" "onder" (slice "/tools/"))
+  (dict "label" "/ kennis" "href" "/blog/" "onder" (slice "/blog/" "/categories/" "/academy/" "/eaa/"))
+  (dict "label" "/ over ons" "href" "/auditbureau-digitale-toegankelijkheid/" "onder" (slice "/auditbureau-digitale-toegankelijkheid/"))
+  (dict "label" "/ contact" "href" "/contact/" "onder" (slice "/contact/"))
+}}
+<header class="hn" id="hn">
+  <div class="hn__bar">
+    <a class="hn__logo" href="{{ site.Home.RelPermalink }}">
+      {{ partial "logo" }}
+    </a>
+    <nav class="hn__nav" aria-label="Hoofdmenu">
+      <button
+        type="button"
+        class="hn__toggle"
+        id="hn-toggle"
+        aria-expanded="false"
+        aria-controls="hn-lijst"
+        hidden>
+        Menu
+        <span class="hn__streepjes" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <ul class="hn__lijst" id="hn-lijst">
+        {{ range $links }}
+          {{ $huidig := "" }}
+          {{ if eq $hier .href }}
+            {{ $huidig = "page" }}
+          {{ else }}
+            {{ range .onder }}{{ if hasPrefix $hier . }}{{ $huidig = "true" }}{{ end }}{{ end }}
+          {{ end }}
+          <li><a class="hn__link" href="{{ .href }}"{{ with $huidig }} aria-current="{{ . }}"{{ end }}>{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <a class="hn__cta" href="/offerte-wcag-onderzoek/"{{ if eq $hier "/offerte-wcag-onderzoek/" }} aria-current="page"{{ end }}>Offerte audit</a>
+  </div>
+</header>
+
+<style>
+  .hn { background: #fff; border-bottom: 1px solid rgba(31,41,55,0.22); position: relative; z-index: 50; }
+  .hn__bar {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 76px;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .hn__logo { display: inline-flex; flex: none; }
+  .hn__logo img { height: 2rem; width: auto; max-width: none; flex: none; }
+  .hn__lijst {
+    list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 24px;
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 14px;
+  }
+  .hn__lijst li { margin: 0; padding: 0; }
+  .hn__lijst li::before { content: none; }
+  .hn__link { color: #1F2937; text-decoration: none; display: inline-block; padding: 12px 0; }
+  .hn__link:hover { color: #A30D4B; text-decoration: underline; text-underline-offset: 6px; }
+  .hn__link[aria-current] { color: #A30D4B; text-decoration: underline; text-underline-offset: 6px; }
+  .hn__cta {
+    font-weight: 700; text-decoration: none; color: #1F2937; background: #fff;
+    border: 1.5px solid #1F2937; padding: 10px 20px; border-radius: 10px; min-height: 44px;
+    box-sizing: border-box; display: inline-flex; align-items: center; flex: none; font-size: 16px;
+  }
+  .hn__cta:hover { background: #1F2937; color: #fff; }
+  .hn__cta[aria-current] { border-color: #A30D4B; color: #A30D4B; }
+  .hn__cta[aria-current]:hover { background: #A30D4B; color: #fff; }
+  .hn__toggle {
+    display: inline-flex; align-items: center; gap: 10px; cursor: pointer; min-height: 44px;
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 14px; color: #1F2937;
+    background: #fff; border: 1.5px solid #1F2937; border-radius: 10px; padding: 8px 14px;
+  }
+  .hn__toggle[hidden] { display: none; }
+  .hn__streepjes { display: flex; flex-direction: column; gap: 4px; }
+  .hn__streepjes span { display: block; width: 16px; height: 2px; background: #1F2937; transition: transform 200ms; }
+  .hn__toggle[aria-expanded="true"] .hn__streepjes span:first-child { transform: translateY(3px) rotate(45deg); }
+  .hn__toggle[aria-expanded="true"] .hn__streepjes span:last-child { transform: translateY(-3px) rotate(-45deg); }
+  .hn a:focus-visible, .hn button:focus-visible { outline: 3px solid #A30D4B; outline-offset: 3px; }
+
+  /* Onder 960 pixels: logo, Menu en Offerte audit op één regel. De lijst
+     klapt open onder de balk, over de volle breedte. */
+  @media (max-width: 960px) {
+    .hn__nav { margin-left: auto; }
+    .hn--js .hn__lijst {
+      display: none; position: absolute; left: 0; right: 0; top: 100%;
+      flex-direction: column; gap: 0; padding: 8px 24px 16px;
+      background: #fff; border-bottom: 1px solid rgba(31,41,55,0.22);
+    }
+    .hn--js .hn__lijst.is-open { display: flex; }
+    .hn--js .hn__link { display: block; min-height: 44px; padding: 12px 0; }
+    /* Zonder JavaScript staat de lijst onder het logo, over de volle breedte. */
+    .hn:not(.hn--js) .hn__nav { order: 3; flex-basis: 100%; margin-left: 0; padding-bottom: 8px; }
+  }
+  /* Smalle schermen en 400% zoom: logo, Menu en Offerte audit moeten samen
+     binnen 320 CSS-pixels passen, anders schuift de balk horizontaal. */
+  @media (max-width: 560px) {
+    .hn__bar { padding: 8px 14px; min-height: 0; gap: 8px; }
+    .hn__logo img { height: 1.6rem; }
+    .hn__toggle { font-size: 13px; padding: 8px 10px; gap: 7px; }
+    .hn__cta { font-size: 13px; padding: 8px 10px; }
+    .hn--js .hn__lijst { padding: 4px 14px 12px; }
+  }
+  @media (max-width: 360px) {
+    .hn__logo img { height: 1.35rem; }
+    .hn__streepjes { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hn__streepjes span { transition: none; }
+  }
+</style>
+
+<script>
+(function () {
+  var header = document.getElementById("hn");
+  var knop = document.getElementById("hn-toggle");
+  var lijst = document.getElementById("hn-lijst");
+  if (!header || !knop || !lijst) return;
+
+  header.classList.add("hn--js");
+  knop.hidden = false;
+
+  // Boven 960 pixels staat de lijst altijd in de balk en is de knop weg.
+  var smal = window.matchMedia("(max-width: 960px)");
+  function zetKnop() {
+    knop.style.display = smal.matches ? "" : "none";
+    if (!smal.matches) zet(false);
+  }
+
+  function zet(open) {
+    knop.setAttribute("aria-expanded", String(open));
+    lijst.classList.toggle("is-open", open);
+  }
+
+  knop.addEventListener("click", function () {
+    zet(knop.getAttribute("aria-expanded") !== "true");
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && knop.getAttribute("aria-expanded") === "true") {
+      zet(false);
+      knop.focus();
+    }
+  });
+
+  if (smal.addEventListener) smal.addEventListener("change", zetKnop);
+  else if (smal.addListener) smal.addListener(zetKnop);
+  zetKnop();
+})();
+</script>
