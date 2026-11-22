@@ -4,8 +4,7 @@ date: 2026-03-15
 slug: "rijksmuseum-apps-toegankelijkheid-getest"
 layout: "case"
 categories:
-  - "wcag-uitgelegd"
-  - "zoom-en-mobiel"
+  - "cases"
 doelgroepen:
   - "manager"
 tags:

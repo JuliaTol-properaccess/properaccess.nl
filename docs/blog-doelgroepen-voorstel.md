@@ -236,7 +236,7 @@ Nog niets in de front matter veranderd. Indeling per artikel staat ook in `docs/
 |---|---|---|
 | `wcag-uitgelegd` | 96 | blijft, als "WCAG en achtergrond" |
 | `achtergrond_wcag` | 23 | alias naar `wcag-uitgelegd` |
-| `cases` | 3 | alias naar `wcag-uitgelegd` |
+| `cases` | 3 | blijft een eigen categorie "Cases" (Julia, 22 november 2026) |
 | `wcag-vragen` | 16 | alias naar `audits` |
 | `ai-en-wcag` | 4 | alias naar `tips-en-tools` |
 | `de-eaa` / `de EAA` | 21 | blijft |

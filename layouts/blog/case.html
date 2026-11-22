@@ -6,7 +6,7 @@
         <div class="case__hero-inner">
           {{ with .Params.categories }}
             <p class="case__label">
-              {{ range $i, $cat := . }}{{ if $i }}, {{ end }}{{ $cat | humanize }}{{ end }}
+              {{ range $i, $cat := . }}{{ if $i }}, {{ end }}{{ with site.GetPage (printf "/categories/%s" ($cat | urlize)) }}{{ .Title }}{{ else }}{{ $cat | humanize }}{{ end }}{{ end }}
             </p>
           {{ end }}
           <h1 class="case__title">{{ .Title }}</h1>
