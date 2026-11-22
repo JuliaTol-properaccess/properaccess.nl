@@ -21738,7 +21738,7 @@ pre.chroma {
 .tp-btn:hover { background: #1F2937; color: #FFFFFF; }
 .tp-btn--drag { padding: 0 24px; cursor: grab; }
 
-.tp-chips { display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.8125rem; }
+.tp-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.8125rem; }
 .tp-chip { padding: 3px 10px; border-radius: 6px; background: #F5F5F5; border: 1px solid #D1D5DB; color: #1F2937; }
 
 .tp-panel { border: 1px solid #D1D5DB; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E5E7EB, 0 12px 32px rgba(31,41,55,0.08); overflow: hidden; }

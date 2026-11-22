@@ -33,7 +33,7 @@
         <a class="tp-toolcard" href="#pdf-tool">
           <span class="tp-toolcard__meta"><span>[ pdf ]</span><span>2 functies</span></span>
           <span class="tp-toolcard__title">PDF-checker</span>
-          <span class="tp-muted">Controleer je PDF gratis. Repareren is in besloten test.</span>
+          <span class="tp-muted">Controleer je PDF gratis, of repareer hem en exporteer als HTML, PDF of Word.</span>
           <span class="tp-chips"><span class="tp-chip">controleren</span><span class="tp-chip">repareren</span></span>
           <span class="tp-toolcard__go">Naar PDF-checker{{ $pijlOmlaag }}</span>
         </a>
@@ -114,7 +114,7 @@
       <p class="tp-eyebrow">/ pdf-checker</p>
       <h2 class="tp-h2" id="pdf-tool-titel">Controleer en repareer je PDF's</h2>
       <p class="tp-lede">De tool doet twee dingen. Je gebruikt ze apart of samen.</p>
-      <p class="tp-muted">Wil je weten welke fouten er in een PDF zitten? Gebruik de controle, gratis en zonder account. Wil je een PDF toegankelijk maken? Het repareren zit in dezelfde tool en is nu in besloten test.</p>
+      <p class="tp-muted">Wil je weten welke fouten er in een PDF zitten? Gebruik de controle, gratis en zonder account. Wil je een PDF toegankelijk maken? Repareer hem en exporteer het resultaat als HTML, PDF of Word. Het repareren is nu in besloten test.</p>
       <div class="tp-actions">
         <a class="tp-btn" href="https://pdf-toegankelijk.nl/controleren">Naar pdf-toegankelijk.nl</a>
         {{ with $pdf }}<a class="tp-link" href="{{ .RelPermalink }}">Wat de PDF-checker controleert</a>{{ end }}
@@ -132,8 +132,9 @@
         <li>
           <p class="tp-mono">[ repareren ]</p>
           <h3 class="tp-h3">PDF repareren</h3>
-          <p class="tp-muted">Je krijgt je eigen document terug, met een tagstructuur waar die ontbrak.</p>
-          <p class="tp-chips"><span class="tp-chip">in besloten test</span></p>
+          <p class="tp-muted">Maak je PDF toegankelijk en exporteer hem als:</p>
+          <ul class="tp-chips" aria-label="Exportformaten"><li class="tp-chip">HTML</li><li class="tp-chip">PDF</li><li class="tp-chip">Word</li></ul>
+          <p class="tp-mono">in besloten test</p>
         </li>
       </ul>
     </div>
