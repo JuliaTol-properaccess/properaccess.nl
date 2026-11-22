@@ -13,7 +13,7 @@ keywords:
   - toegankelijkheidsverklaring
 slug: ""
 url: "/"
-layout: "homepage-b"
+layout: "homepage-e"
 # De homepagina volgt sinds 19-09-2026 het ontwerp "Homepage D papier", dat
 # eerst als variant B op /home-b/ stond. Dat adres verwijst hierheen.
 aliases:
