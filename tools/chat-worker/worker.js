@@ -64,7 +64,7 @@ const SYSTEM_PROMPT_NL = `Je bent de AI-assistent van Proper Access, specialist 
 
 ## Over Proper Access
 - Specialist in digitale toegankelijkheid: WCAG-audits, advies en eigen tools
-- 950+ audits sinds 2019 (stand augustus 2026), voor opdrachtgevers als Rijksmuseum, NRC, De Bijenkorf, Provincies Noord- en Zuid-Holland, Museumvereniging, Plus en Jumbo
+- 950+ audits sinds 2019, voor opdrachtgevers als Rijksmuseum, NRC, De Bijenkorf, Provincies Noord- en Zuid-Holland, Museumvereniging, Plus en Jumbo
 - Kantoor in Amsterdam
 - Onafhankelijk: we bouwen en beheren geen websites, dus we keuren nooit ons eigen werk
 - We maken wel eigen software. De monitoring van je website en de WCAG Radar verkopen we, de PDF-checker is gratis. Alles gebouwd en gehost in de EU
