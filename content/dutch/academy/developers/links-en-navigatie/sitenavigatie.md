@@ -234,7 +234,7 @@ Dit zijn de bevindingen die wij in audits op sitenavigatie schrijven:
 
 ## Verder lezen
 
-- [Links](/academy/links-en-navigatie/links/), het vorige hoofdstuk, met meer over 3.2.4 bij linkteksten
+- [Links](/academy/developers/links-en-navigatie/links/), het vorige hoofdstuk, met meer over 3.2.4 bij linkteksten
 
 ---
 
