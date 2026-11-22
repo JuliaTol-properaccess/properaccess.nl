@@ -3,7 +3,9 @@ title: "WCAG-audit: het verschil tussen rapporteren per element en per succescri
 date: 2026-03-18
 slug: "rapport-per-element-vs-per-succescriterium"
 categories:
-  - "achtergrond_wcag"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijkheidsaudit"
   - "wcag"

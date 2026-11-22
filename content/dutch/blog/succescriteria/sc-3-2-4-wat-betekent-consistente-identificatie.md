@@ -2,7 +2,9 @@
 title: 'SC 3.2.4 - Wat betekent "Consistente identificatie"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "3-2-4"
 description: "WCAG 3.2.4 vereist dat dezelfde elementen overal dezelfde naam en functie hebben. Lees hoe je consistentie waarborgt op je website."

@@ -3,7 +3,10 @@ title: "Witte tekst op een foto"
 date: 2026-06-20
 slug: "sc-1-4-3-witte-tekst-op-een-foto"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

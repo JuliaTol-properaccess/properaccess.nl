@@ -4,11 +4,14 @@ date: 2026-05-02
 slug: "webshop-knop-zonder-naam"
 categories:
   - "e-commerce-eaa"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Knop zonder naam. Afbeeldingen in webshops (post 4/8)"
 keywords:
   - digitale toegankelijkheid

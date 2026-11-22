@@ -5,7 +5,9 @@ slug: "submenu-dichtklappen"
 aliases:
   - /blog/submenu_dichtklappen/
 categories:
-  - "webdeveloper"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "developer"
   - "2-4-3"

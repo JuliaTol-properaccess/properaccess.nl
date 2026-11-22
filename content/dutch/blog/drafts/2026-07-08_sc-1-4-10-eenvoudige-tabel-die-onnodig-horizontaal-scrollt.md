@@ -3,7 +3,9 @@ title: "Eenvoudige tabel die onnodig horizontaal scrollt"
 date: 2026-08-31
 slug: "sc-1-4-10-eenvoudige-tabel-die-onnodig-horizontaal-scrollt"
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-10"

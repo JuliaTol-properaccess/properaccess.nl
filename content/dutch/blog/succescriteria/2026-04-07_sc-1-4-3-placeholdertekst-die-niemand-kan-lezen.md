@@ -3,7 +3,9 @@ title: "Placeholdertekst die niemand kan lezen"
 date: 2026-04-07
 slug: "sc-1-4-3-placeholdertekst-die-niemand-kan-lezen"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

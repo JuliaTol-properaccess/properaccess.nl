@@ -3,12 +3,14 @@ title: "Nul fouten in de scan, ruim honderd bevindingen in de audit"
 date: 2026-06-26
 slug: "nul-fouten-scan-ruim-honderd-bevindingen-audit"
 categories:
-  - "wcag-uitgelegd"
-  - "webdeveloper"
+  - "tips-en-tools"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "axe"
   - "geautomatiseerd-testen"
-  - "screenreader"
+  - "schermlezer"
   - "toetsenbordtoegankelijkheid"
   - "aria"
   - "e-commerce"

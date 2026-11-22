@@ -3,7 +3,9 @@ title: "Wat is een toegankelijkheidsaudit?"
 date: 2026-04-04
 slug: "wat-is-een-toegankelijkheidsaudit"
 categories:
-  - "wcag-vragen"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

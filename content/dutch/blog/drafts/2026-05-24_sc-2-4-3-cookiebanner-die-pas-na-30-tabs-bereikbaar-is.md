@@ -3,7 +3,9 @@ title: "Cookiebanner die pas na 30 tabs bereikbaar is"
 date: 2026-07-20
 slug: "sc-2-4-3-cookiebanner-die-pas-na-30-tabs-bereikbaar-is"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

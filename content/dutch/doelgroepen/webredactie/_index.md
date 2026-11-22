@@ -1,8 +1,9 @@
 ---
 title: "Webredactie"
 meta_title: "Toegankelijkheid voor webredactie: artikelen en tips | Proper Access"
-description: "Artikelen over digitale toegankelijkheid specifiek voor webredactie. Alt-teksten, koppenstructuur, linksteksten en meer."
-indexable: true
+description: "Artikelen voor wie teksten, afbeeldingen en pagina's op een website plaatst. Alt-teksten, koppen, linkteksten, video en documenten."
+aliases:
+  - /categories/webredactie/
 ---
 
 Digitale toegankelijkheid voor webredacties begint bij dagelijkse keuzes: een duidelijke kop, een goede alt-tekst, een begrijpelijke link en content die ook zonder kleur of muis werkt.

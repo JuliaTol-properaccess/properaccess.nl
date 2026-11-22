@@ -2,10 +2,11 @@
 title: "Zo controleer je de koppenstructuur van je website"
 date: 2025-08-22
 slug: "zo-controleer-je-de-koppenstructuur-van-je-website"
-categories: 
-  - "tips-en-tools"
-  - "Webredactie"
-tags: 
+categories:
+  - "teksten-en-documenten"
+doelgroepen:
+  - "webredactie"
+tags:
   - "1-3-1"
 aliases:
   - /zo-controleer-je-de-koppenstructuur-van-je-website/

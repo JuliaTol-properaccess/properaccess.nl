@@ -15,32 +15,18 @@
     {{ $src := printf "images/blog/placeholders/%s.webp" (index $placeholders $idx) }}
     <img src="{{ $src | relURL }}" alt="" class="mb-6 w-full rounded" loading="lazy" />
   {{ end }}
+  {{ with .Params.categories }}
+    {{ $slug := index . 0 | urlize | lower }}
+    {{ $catPage := site.GetPage (printf "/categories/%s" $slug) }}
+    {{ $label := index . 0 | humanize }}
+    {{ if $catPage }}{{ $label = $catPage.Title }}{{ end }}
+    <p class="blog-card__cat">{{ $label }}</p>
+  {{ end }}
   <h2 class="mb-3 h4">
     <a href="{{ .RelPermalink }}">
       {{ .Title }}
     </a>
   </h2>
-  {{ $categories:= .Params.categories }}
-  {{ if $categories }}
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        {{ range $i,$p:= $categories }}
-          {{ $slug := . | urlize | lower }}
-          {{ $catPage := site.GetPage (printf "/categories/%s" $slug) }}
-          {{ $label := . | humanize }}
-          {{ if $catPage }}{{ $label = $catPage.Title }}{{ end }}
-          <a
-            href="{{ `categories/` | relLangURL }}{{ $slug }}/"
-            class="ms-1"
-            >{{ $label }}{{ if ne $i (sub (len $categories) 1) }}
-              {{ "," }}
-            {{ end }}
-          </a>
-        {{ end }}
-      </li>
-    </ul>
-  {{ end }}
   <p class="mb-6">{{ .Summary | plainify }}</p>
   <div class="blog-byline blog-byline--card">
     {{ partial "image" (dict "Src" "images/julia.webp" "Alt" "" "Class" "blog-byline__photo") }}

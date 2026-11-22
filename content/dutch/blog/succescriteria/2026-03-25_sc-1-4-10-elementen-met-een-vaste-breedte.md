@@ -3,7 +3,9 @@ title: "Elementen met een vaste breedte"
 date: 2026-03-25
 slug: "sc-1-4-10-elementen-met-een-vaste-breedte"
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-10"

@@ -4,11 +4,14 @@ date: 2026-06-27
 slug: "webshop-maattabel-screenshot"
 categories:
   - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Maattabel screenshot. Afbeeldingen in webshops (post 8/8)"
 keywords:
   - digitale toegankelijkheid

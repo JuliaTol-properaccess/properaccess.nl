@@ -2,8 +2,10 @@
 title: "Hoe toegankelijk zijn de websites van de grootste opticiens?"
 date: 2025-08-26
 slug: "hoe-toegankelijk-zijn-de-websites-van-de-grootste-opticiens"
-categories: 
-  - "de EAA"
+categories:
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
 tags:
   - "1-4-3"
   - "1-4-11"

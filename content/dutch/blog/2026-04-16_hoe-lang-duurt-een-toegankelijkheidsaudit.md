@@ -3,7 +3,9 @@ title: "Hoe lang duurt een toegankelijkheidsaudit?"
 date: 2026-04-16
 slug: "hoe-lang-duurt-een-toegankelijkheidsaudit"
 categories:
-  - "wcag-vragen"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "audit"

@@ -5,7 +5,10 @@ slug: "mini-audit-mkb"
 aliases:
   - "/blog/gratis-eaa-scan-mkb/"
 categories:
-  - "wcag-vragen"
+  - "audits"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

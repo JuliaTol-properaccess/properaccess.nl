@@ -3,11 +3,13 @@ title: '"Klik op Zoeken." Niets gebeurt.'
 date: 2026-04-01
 slug: "sc-2-5-3-klik-op-zoeken-niets-gebeurt"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-5-3"
-  - "label"
+  - "labels"
   - "spraaksturing"
 description: '"Klik op Zoeken." Niets gebeurt. WCAG 2.5.3 Label in naam (post 1/7)'
 keywords:

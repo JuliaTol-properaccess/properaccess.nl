@@ -3,7 +3,9 @@ title: "Dialoogvenster krijgt geen focus bij openen"
 date: 2026-06-12
 slug: "sc-2-4-3-dialoogvenster-krijgt-geen-focus-bij-openen"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

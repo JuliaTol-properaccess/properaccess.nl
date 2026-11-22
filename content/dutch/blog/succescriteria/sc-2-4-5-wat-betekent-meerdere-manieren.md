@@ -1,9 +1,11 @@
 ---
 title: 'SC 2.4.5 - Wat betekent "Meerdere manieren"'
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
+tags:
   - "2-4-5"
 description: "WCAG 2.4.5 vraagt om minstens twee manieren om een pagina te vinden, zoals navigatie en zoekfunctie. Lees welke opties je hebt."
 aliases:

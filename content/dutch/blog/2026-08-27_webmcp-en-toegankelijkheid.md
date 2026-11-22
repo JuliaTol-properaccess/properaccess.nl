@@ -3,7 +3,10 @@ title: "WebMCP: wat het is, en waarom het toegankelijkheid niet vervangt"
 date: 2026-08-27
 slug: "webmcp-en-toegankelijkheid"
 categories:
-  - "ai-en-wcag"
+  - "tips-en-tools"
+doelgroepen:
+  - "developer"
+  - "manager"
 tags:
   - "AI"
   - "wcag"

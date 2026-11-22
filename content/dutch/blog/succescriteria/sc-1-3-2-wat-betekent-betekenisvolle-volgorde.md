@@ -3,7 +3,10 @@ title: "1.3.2 - Wat betekent “Betekenisvolle volgorde”?"
 translationKey: "sc-1-3-2"
 date: 2025-05-17
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "WCAG 1.3.2 vraagt dat je pagina in een logische volgorde wordt voorgelezen. Lees hoe je als webredacteur de leesvolgorde controleert met de WCAG Radar."
 keywords:
   - WCAG 1.3.2

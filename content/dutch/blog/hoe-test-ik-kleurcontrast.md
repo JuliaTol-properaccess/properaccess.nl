@@ -4,7 +4,9 @@ date: 2025-05-10
 slug: "hoe-test-ik-kleurcontrast"
 categories:
   - "tips-en-tools"
-  - "Webredactie"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
 tags:
   - "1-4-3"
   - "1-4-11"

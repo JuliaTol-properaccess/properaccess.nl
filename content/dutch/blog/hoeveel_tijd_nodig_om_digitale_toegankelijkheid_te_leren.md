@@ -3,8 +3,10 @@ title: "Hoe veel tijd is nodig om digitale toegankelijkheid te leren?"
 date: 2025-10-28
 slug: "hoeveel-tijd-nodig-om-digitale-toegankelijkheid-te-leren"
 categories:
-  - "achtergrond_wcag"
-  - "de EAA"
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "Hoeveel tijd kost het om digitale toegankelijkheid echt te leren? Persoonlijke inzichten over WCAG, audits en het leerproces van professionals."
 keywords:
   - digitale toegankelijkheid leren

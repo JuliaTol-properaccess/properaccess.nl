@@ -3,7 +3,9 @@ title: 'SC 1.4.4 - Wat betekent "Tekst vergroten"?'
 translationKey: "sc-1-4-4"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-4"
   - "zoom"

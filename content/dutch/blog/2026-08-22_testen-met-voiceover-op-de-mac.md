@@ -5,7 +5,8 @@ date: 2026-08-22
 slug: "testen-met-voiceover-op-de-mac"
 categories:
   - "tips-en-tools"
-  - "webdeveloper"
+doelgroepen:
+  - "developer"
 tags:
   - "voiceover"
   - "schermlezer"

@@ -3,7 +3,9 @@ title: "SC 3.1.1 - Wat betekent “Taal van de pagina”"
 translationKey: "sc-3-1-1"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 description: "WCAG 3.1.1 vraagt dat de hoofdtaal van elke pagina in de code staat. Lees waarom dat belangrijk is en hoe je het als webredacteur zelf controleert."
 keywords:
   - WCAG 3.1.1

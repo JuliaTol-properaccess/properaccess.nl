@@ -3,7 +3,11 @@ title: "Afbeelding als link zonder beschrijvend alt"
 date: 2026-06-26
 slug: "sc-2-4-4-afbeelding-als-link-zonder-beschrijvend-alt"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "2-4-4"

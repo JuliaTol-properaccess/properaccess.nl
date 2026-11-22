@@ -3,8 +3,10 @@ title: "Webshops worden toegankelijker, maar nog niet bruikbaar"
 date: 2026-06-22
 slug: "webshops-toegankelijker-maar-nog-niet-bruikbaar"
 categories:
-  - "de EAA"
   - "e-commerce-eaa"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "eaa"
   - "webshop"

@@ -3,7 +3,9 @@ title: "Actieve pagina"
 date: 2026-08-20
 slug: "sc-1-3-1-actieve-pagina"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

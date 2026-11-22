@@ -4,12 +4,15 @@ date: 2026-03-17
 slug: "eaa-voor-webshops"
 categories:
   - "e-commerce-eaa"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "eaa"
   - "webshop"
   - "european-accessibility-act"
   - "e-commerce"
-  - "digitale-toegankelijkheid"
+  - "digitale toegankelijkheid"
 description: "De European Accessibility Act geldt sinds juni 2025 ook voor webshops. Wat betekent dat concreet? Welke eisen gelden er en wat moet je als eerste aanpakken?"
 keywords:
   - eaa webshop

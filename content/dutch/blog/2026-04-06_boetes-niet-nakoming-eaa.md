@@ -3,7 +3,9 @@ title: "Wat zijn de boetes bij niet-nakoming van de EAA?"
 date: 2026-04-06
 slug: "boetes-niet-nakoming-eaa"
 categories:
-  - "wcag-vragen"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

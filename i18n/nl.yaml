@@ -41,7 +41,11 @@
 - id: tools_filter_label
   translation: "Filter tools op doelgroep"
 - id: blog_filter_label
-  translation: "Filter blog op categorie"
+  translation: "Filter blog op doelgroep"
+- id: blog_filter_all
+  translation: "Alle artikelen"
+- id: blog_topics_label
+  translation: "Onderwerpen"
 - id: tools_filter_all
   translation: "Alle tools"
 - id: tools_filter_webredactie

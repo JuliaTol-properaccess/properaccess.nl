@@ -3,7 +3,9 @@ title: "Accordion-paneel op de verkeerde plek in de focusvolgorde"
 date: 2026-08-02
 slug: "sc-2-4-3-accordion-paneel-op-de-verkeerde-plek-in-de-focusvolgorde"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

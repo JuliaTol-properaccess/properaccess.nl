@@ -3,7 +3,9 @@ title: "Lichtgrijze tekst op een witte achtergrond"
 date: 2026-03-24
 slug: "sc-1-4-3-lichtgrijze-tekst-op-een-witte-achtergrond"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

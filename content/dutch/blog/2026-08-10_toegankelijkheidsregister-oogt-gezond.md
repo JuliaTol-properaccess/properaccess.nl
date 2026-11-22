@@ -3,7 +3,9 @@ title: "Het toegankelijkheidsregister oogt gezond. Onder de oppervlakte brokkelt
 date: 2026-08-10
 slug: "toegankelijkheidsregister-oogt-gezond-brokkelt-af"
 categories:
-  - "achtergrond_wcag"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "overheid"
   - "bdto"

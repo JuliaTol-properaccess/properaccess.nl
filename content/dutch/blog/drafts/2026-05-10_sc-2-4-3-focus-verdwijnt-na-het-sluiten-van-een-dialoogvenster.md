@@ -3,7 +3,9 @@ title: "Focus verdwijnt na het sluiten van een dialoogvenster"
 date: 2026-07-07
 slug: "sc-2-4-3-focus-verdwijnt-na-het-sluiten-van-een-dialoogvenster"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

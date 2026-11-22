@@ -3,7 +3,9 @@ title: "Heb ik een desktop- en mobiele audit nodig?"
 date: 2026-04-17
 slug: "desktop-en-mobiele-audit"
 categories:
-  - "wcag-vragen"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "audit"

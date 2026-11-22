@@ -3,7 +3,10 @@ title: "Klikbare div in plaats van een button"
 date: 2026-03-27
 slug: "sc-2-1-1-klikbare-div-in-plaats-van-een-button"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-1-1"

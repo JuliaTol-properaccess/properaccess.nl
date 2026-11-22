@@ -2,7 +2,9 @@
 title: 'SC 1.2.1 - Wat betekent "Alleen audio of alleen video"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "1-2-1"
   - "podcast"

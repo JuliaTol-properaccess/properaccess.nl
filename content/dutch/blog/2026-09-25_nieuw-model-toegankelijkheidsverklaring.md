@@ -3,7 +3,9 @@ title: "Nieuw model toegankelijkheidsverklaring per 1 oktober 2026: 3 dingen ver
 date: 2026-09-25
 slug: "nieuw-model-toegankelijkheidsverklaring-1-oktober-2026"
 categories:
-  - "achtergrond_wcag"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "overheid"
   - "bdto"

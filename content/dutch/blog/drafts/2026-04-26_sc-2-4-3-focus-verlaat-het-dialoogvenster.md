@@ -3,7 +3,9 @@ title: "Focus verlaat het dialoogvenster"
 date: 2026-06-25
 slug: "sc-2-4-3-focus-verlaat-het-dialoogvenster"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-3"

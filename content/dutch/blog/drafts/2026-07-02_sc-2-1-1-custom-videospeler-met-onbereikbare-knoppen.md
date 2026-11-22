@@ -3,7 +3,10 @@ title: "Custom videospeler met onbereikbare knoppen"
 date: 2026-08-25
 slug: "sc-2-1-1-custom-videospeler-met-onbereikbare-knoppen"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-1-1"

@@ -3,7 +3,9 @@ title: "Knop die navigeert, link die een actie uitvoert"
 date: 2026-04-30
 slug: "sc-4-1-2-knop-die-navigeert-link-die-een-actie-uitvoert"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "4-1-2"

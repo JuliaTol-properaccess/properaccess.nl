@@ -2,9 +2,12 @@
 title: 'SC 3.1.2 - Wat betekent "Taal van onderdelen"'
 translationKey: "sc-3-1-2"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
+  - "developer"
+tags:
   - "3-1-2"
 description: "WCAG 3.1.2 vereist dat anderstalige tekstfragmenten gemarkeerd worden met een lang-attribuut. Lees hoe je dit correct toepast."
 aliases:

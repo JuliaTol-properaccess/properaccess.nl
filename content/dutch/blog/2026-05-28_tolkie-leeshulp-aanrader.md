@@ -3,7 +3,10 @@ title: "Tolkie als leeshulp voor je overheidswebsite: zo wordt je tekst begrijpe
 date: 2026-05-28
 slug: "tolkie-leeshulp-aanrader"
 categories:
-  - "tips-en-tools"
+  - "teksten-en-documenten"
+  - "de-eaa"
+doelgroepen:
+  - "webredactie"
 tags:
   - "tolkie"
   - "leeshulp"

@@ -2,10 +2,12 @@
 title: "Browserstack vs Proper Access"
 date: 2025-06-21
 slug: "browserstack-vs-proper-access-een-mini-experiment-met-automatische-toegankelijkheidstests"
-categories: 
+categories:
   - "tips-en-tools"
-  - "de EAA"
-tags: 
+doelgroepen:
+  - "manager"
+  - "developer"
+tags:
   - "developer"
 description: "Mini-experiment met BrowserStack en automatische toegankelijkheidstests. Wat mis je zonder handmatige WCAG-audit? Een developerperspectief uit de praktijk."
 keywords:

@@ -4,11 +4,14 @@ date: 2026-06-13
 slug: "webshop-gelinkte-afbeelding"
 categories:
   - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Gelinkte afbeelding. Afbeeldingen in webshops (post 7/8)"
 keywords:
   - digitale toegankelijkheid

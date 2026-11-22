@@ -2,7 +2,9 @@
 title: 'SC 2.5.7 - Wat betekent "Sleepbewegingen"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "2-5-7"
 description: "WCAG 2.5.7 vereist een alternatief voor sleepbewegingen (drag-and-drop). Lees waarom dit belangrijk is en welke alternatieven je kunt bieden."

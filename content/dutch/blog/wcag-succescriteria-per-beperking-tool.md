@@ -3,7 +3,12 @@ title: "WCAG-succescriteria per beperking: welke eisen gelden voor jouw bezoeker
 slug: "wcag-succescriteria-per-beperking-tool"
 date: 2026-03-18
 categories:
-  - "tips en tools"
+  - "wcag-uitgelegd"
+  - "tips-en-tools"
+doelgroepen:
+  - "developer"
+  - "webredactie"
+  - "manager"
 tags:
   - "wcag"
   - "toegankelijkheid"

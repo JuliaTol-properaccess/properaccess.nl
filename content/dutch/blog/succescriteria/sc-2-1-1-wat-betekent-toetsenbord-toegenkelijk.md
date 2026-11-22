@@ -3,9 +3,11 @@ title: 'SC 2.1.1 - Wat betekent "Toetsenbord toegankelijk"'
 translationKey: "sc-2-1-1"
 slug: "sc-2-1-1-wat-betekent-toetsenbord-toegankelijk"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
+tags:
   - "2-1-1"
 description: "WCAG 2.1.1 vraagt dat alle functionaliteit via het toetsenbord bereikbaar is. Lees hoe je toetsenbordtoegankelijkheid test en veelgemaakte fouten voorkomt."
 aliases:

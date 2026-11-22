@@ -5,7 +5,9 @@ date: 2026-08-11
 slug: "toegankelijk-wordpress-thema-kiezen-waar-let-je-op"
 categories:
   - "tips-en-tools"
-  - "webdeveloper"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wordpress"
   - "thema"

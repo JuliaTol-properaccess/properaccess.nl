@@ -3,8 +3,9 @@ title: "Accessible name: wat moet je weten"
 date: 2025-04-17
 slug: "accessible-name-que"
 categories:
-  - "achtergrond_wcag"
-  - "webdeveloper"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-3"
 description: "Wat is een accessible name en waarom is dit cruciaal voor digitale toegankelijkheid? Praktische uitleg voor developers volgens WCAG."

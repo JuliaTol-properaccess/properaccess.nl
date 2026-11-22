@@ -1,32 +1,36 @@
 {{ define "main" }}
-  {{ $slug := .Data.Term | urlize | lower }}
+  {{ $slug := path.Base .RelPermalink }}
+  {{ $isBlogTaxonomy := in (slice "categories" "doelgroepen") .Type }}
   <section class="section blog-list">
     <div class="container">
       <header class="blog-list__header">
         <h1 class="blog-list__title">{{ .Title }}</h1>
         {{ with .Params.description }}<p class="blog-list__intro">{{ . }}</p>{{ end }}
-        {{ with .Content }}
-          <div class="blog-list__intro content">{{ . }}</div>
-        {{ end }}
       </header>
 
-      {{/* Alleen filters tonen voor category-terms, niet voor tags */}}
-      {{ if eq .Type "categories" }}
-        {{ if ge (len site.Taxonomies.categories) 2 }}
-          {{ partial "blog-filters.html" (dict "activeSlug" $slug "Context" .) }}
-        {{ end }}
+      {{ if $isBlogTaxonomy }}
+        {{ partial "blog-filters.html" (dict "active" (cond (eq .Type "doelgroepen") $slug "-") "Context" .) }}
       {{ end }}
 
-      {{ $paginator := .Paginate .Pages.ByWeight }}
-      <div class="blog-list__grid row">
-        {{ range $paginator.Pages }}
-          <div class="md:col-6 lg:col-4 mb-10">
-            {{ partial "components/blog-card" . }}
-          </div>
+      {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+      <div class="blog-list__layout">
+        {{ if $isBlogTaxonomy }}
+          {{ partial "blog-topics.html" (dict "active" (cond (eq .Type "categories") $slug "") "Context" .) }}
         {{ end }}
-      </div>
+        <div class="blog-list__main">
+          <div class="blog-list__grid">
+            {{ range $paginator.Pages }}
+              {{ partial "components/blog-item.html" . }}
+            {{ end }}
+          </div>
+          {{ partial "components/pagination.html" . }}
 
-      {{ partial "components/pagination.html" . }}
+          {{/* De langere uitleg staat onder de artikelen, zodat de lijst bovenaan begint. */}}
+          {{ with .Content }}
+            <div class="blog-list__outro content">{{ . }}</div>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </section>
 {{ end }}

@@ -2,7 +2,10 @@
 title: 'SC 1.4.2 - Wat betekent "Audiobediening"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "1-4-2"
   - "geluid"

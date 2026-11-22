@@ -7,7 +7,10 @@ breadcrumb_title: "Wat kost een webshop-audit?"
 aliases:
   - "/blog/kosten-wcag-naleving-webshop/"
 categories:
+  - "audits"
   - "e-commerce-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "wcag"
   - "audit"

@@ -3,7 +3,9 @@ title: '"Download" — maar download van wat?'
 date: 2026-09-15
 slug: "sc-2-4-4-download-maar-download-van-wat"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
 tags:
   - "wcag"
   - "2-4-4"

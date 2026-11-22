@@ -2,9 +2,11 @@
 title: "Logo met veel tekst: hoe maak je het toegankelijk én gebruiksvriendelijk?"
 date: 2025-12-03
 slug: "logo-toegankelijk-maken-wcag"
-categories: 
-  - "de EAA"
-  - "tips-en-tools"
+categories:
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "Hoe maak je een logo met veel tekst toegankelijk volgens WCAG? Praktische tips over alt-tekst, linkdoel en gebruiksvriendelijkheid."
 keywords:
   - logo toegankelijkheid wcag

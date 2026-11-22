@@ -3,12 +3,15 @@ title: "Productafbeelding zonder beschrijving"
 date: 2026-03-21
 slug: "webshop-productafbeelding-zonder-beschrijving"
 categories:
-  - "wcag-uitgelegd"
+  - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Productafbeelding zonder beschrijving. Afbeeldingen in webshops (post 1/8)"
 keywords:
   - digitale toegankelijkheid

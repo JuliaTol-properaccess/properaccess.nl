@@ -3,11 +3,14 @@ title: "aria-labelledby verwijst naar de verkeerde tekst"
 date: 2026-06-15
 slug: "sc-2-5-3-aria-labelledby-verwijst-naar-de-verkeerde-tekst"
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-5-3"
-  - "label"
+  - "labels"
   - "spraaksturing"
 description: "aria-labelledby verwijst naar de verkeerde tekst. WCAG 2.5.3 Label in naam (post 2/7)"
 keywords:

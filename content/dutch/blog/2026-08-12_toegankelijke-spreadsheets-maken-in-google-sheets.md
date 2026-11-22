@@ -4,14 +4,15 @@ date: 2026-08-12
 slug: "toegankelijke-spreadsheets-maken-in-google-sheets"
 meta_title: "Google Sheets kan geen tabelkoppen. Wat je dan wel kunt doen"
 categories:
+  - "teksten-en-documenten"
+doelgroepen:
   - "webredactie"
-  - "tips-en-tools"
 tags:
   - "google sheets"
   - "spreadsheets"
   - "tabellen"
   - "excel"
-  - "screenreader"
+  - "schermlezer"
 description: "Google Sheets kan geen semantische tabelkoppen. Dat is een echte beperking, maar er valt veel aan te doen. Een handleiding voor koppen, lege cellen, kleur, samengevoegde cellen en de export naar Excel."
 meta_description: "Google Sheets kan geen semantische tabelkoppen. Wat je wel kunt doen met koppen, lege cellen, kleur, samengevoegde cellen en de export naar Excel."
 keywords:

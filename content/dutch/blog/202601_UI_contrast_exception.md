@@ -3,7 +3,10 @@ title: "Native HTML-componenten en kleurcontrast volgens WCAG 2.1"
 date: 2026-01-31
 slug: "contrast-ui-wcag"
 categories:
-  - "webdeveloper"
+  - "kleur-en-contrast"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-11"
 description: "Moet je het kleurcontrast van native HTML-componenten zoals checkboxes en selects controleren? Uitleg over de WCAG 1.4.11 uitzondering."

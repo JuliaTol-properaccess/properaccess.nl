@@ -3,7 +3,9 @@ title: "Informatief icoon dat onzichtbaar is"
 date: 2026-03-26
 slug: "sc-1-4-11-informatief-icoon-dat-onzichtbaar-is"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

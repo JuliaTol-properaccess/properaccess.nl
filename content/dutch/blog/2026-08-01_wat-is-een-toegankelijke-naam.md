@@ -4,7 +4,10 @@ date: 2026-08-01
 slug: "wat-is-een-toegankelijke-naam"
 translationKey: "toegankelijke-naam"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
+  - "webredactie"
 tags:
   - "toegankelijke naam"
   - "accessible name"

@@ -3,7 +3,10 @@ title: "SC 1.1.1 - Wat betekent “Niet-tekstuele content”"
 date: 2026-02-15
 translationKey: "sc-1-1-1"
 categories:
-  - "wcag-uitgelegd"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 description: "WCAG 1.1.1 vraagt een tekstalternatief voor elke informatieve afbeelding, video en elk icoon. Lees hoe je als webredacteur goede alt-teksten schrijft en zelf controleert."
 meta_description: "WCAG 1.1.1 vraagt een tekstalternatief voor elke informatieve afbeelding, video en elk icoon. Zo schrijf je goede alt-teksten en controleer je ze zelf."
 keywords:
@@ -17,7 +20,7 @@ keywords:
   - alt-teksten productafbeeldingen
 tags:
   - "1-1-1"
-  - "Afbeeldingen"
+  - "afbeeldingen"
 aliases:
   - /sc-1-1-1-wat-betekent-niet-tekstuele-content/
 ---

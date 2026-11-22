@@ -3,7 +3,10 @@ title: "Die mooie oranje knop met witte tekst"
 date: 2026-07-02
 slug: "sc-1-4-3-die-mooie-oranje-knop-met-witte-tekst"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "1-4-3"

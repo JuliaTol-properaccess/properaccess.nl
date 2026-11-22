@@ -4,7 +4,9 @@ date: 2026-04-13
 slug: "user-stories-in-toegankelijkheidsrapport"
 layout: "case"
 categories:
-  - "achtergrond_wcag"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijkheidsaudit"
   - "rapportage"

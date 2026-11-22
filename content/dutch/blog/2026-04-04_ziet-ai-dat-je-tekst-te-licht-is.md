@@ -3,7 +3,10 @@ title: "Ziet AI dat je tekst te licht is?"
 date: 2026-04-05
 slug: "ziet-ai-dat-je-tekst-te-licht-is"
 categories:
-  - "ai-en-wcag"
+  - "tips-en-tools"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "developer"
 tags:
   - "AI"
   - "wcag"

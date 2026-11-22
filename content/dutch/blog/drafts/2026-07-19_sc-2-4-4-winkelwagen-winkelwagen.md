@@ -3,7 +3,9 @@ title: '"Winkelwagen Winkelwagen"'
 date: 2026-09-11
 slug: "sc-2-4-4-winkelwagen-winkelwagen"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-4"

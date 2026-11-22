@@ -3,7 +3,10 @@ title: "Grafiekbalken die in elkaar overlopen"
 date: 2026-07-17
 slug: "sc-1-4-11-grafiekbalken-die-in-elkaar-overlopen"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

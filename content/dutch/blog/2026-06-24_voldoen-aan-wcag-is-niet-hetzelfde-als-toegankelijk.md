@@ -4,11 +4,13 @@ date: 2026-06-24
 slug: "voldoen-aan-wcag-is-niet-hetzelfde-als-toegankelijk"
 categories:
   - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
   - "webredactie"
 tags:
   - "wcag"
   - "toegankelijkheid"
-  - "screenreader"
+  - "schermlezer"
   - "gebruikerstest"
   - "alt-tekst"
   - "acm"

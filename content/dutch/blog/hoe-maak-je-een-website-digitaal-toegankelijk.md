@@ -4,8 +4,9 @@ meta_title: "Website digitaal toegankelijk maken: 4 stappen"
 date: 2026-03-11
 slug: "hoe-maak-je-een-website-digitaal-toegankelijk"
 categories:
-  - "de EAA"
-  - "achtergrond_wcag"
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijke-website"
   - "wcag"

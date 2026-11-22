@@ -3,7 +3,9 @@ title: 'SC 2.4.7 - Wat betekent "Focus zichtbaar"'
 translationKey: "sc-2-4-7"
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "2-4-7"
   - "focus"

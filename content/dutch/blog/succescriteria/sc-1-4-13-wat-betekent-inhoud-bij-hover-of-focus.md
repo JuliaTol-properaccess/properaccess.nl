@@ -1,8 +1,10 @@
 ---
 title: "SC 1.4.13 - Wat betekent “Inhoud bij hover of focus”"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
+categories:
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "1-4-13"
 description: "WCAG 1.4.13 stelt eisen aan content die verschijnt bij hover of focus, zoals tooltips en uitklapmenu's. Lees de drie regels en hoe je ze toepast."

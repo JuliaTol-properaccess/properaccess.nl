@@ -3,7 +3,9 @@ title: 'SC 2.5.8 - Wat betekent "Doelgrootte (minimum)"?'
 translationKey: "sc-2-5-8"
 date: 2026-07-05
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "2-5-8"
   - "doelgrootte"

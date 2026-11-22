@@ -3,7 +3,9 @@ title: "aria-expandd (met twee d's)"
 date: 2026-07-11
 slug: "sc-4-1-2-aria-expandd-met-twee-ds"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "4-1-2"

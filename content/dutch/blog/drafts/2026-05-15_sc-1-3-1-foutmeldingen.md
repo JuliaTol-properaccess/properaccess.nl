@@ -3,7 +3,10 @@ title: "Foutmeldingen"
 date: 2026-07-12
 slug: "sc-1-3-1-foutmeldingen"
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-3-1"

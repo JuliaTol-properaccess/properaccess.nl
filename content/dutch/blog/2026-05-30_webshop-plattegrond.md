@@ -4,11 +4,14 @@ date: 2026-05-30
 slug: "webshop-plattegrond"
 categories:
   - "e-commerce-eaa"
+  - "afbeeldingen-en-media"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webshop"
   - "alt-tekst"
   - "afbeeldingen"
-  - "ecommerce"
+  - "e-commerce"
 description: "Plattegrond. Afbeeldingen in webshops (post 6/8)"
 keywords:
   - digitale toegankelijkheid

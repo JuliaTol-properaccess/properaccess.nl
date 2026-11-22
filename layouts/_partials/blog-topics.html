@@ -1,0 +1,34 @@
+{{/*
+  Zijkolom met onderwerpen (categories). Vaste volgorde; een onderwerp zonder
+  artikelen in deze taal verschijnt niet. De Engelse slugs staan er ook in.
+  Parameters:
+    - active: slug van het actieve onderwerp, of ""
+    - Context: de pagina
+*/}}
+{{ $active := .active }}
+{{ $ctx := .Context }}
+{{ $order := slice
+  "wcag-uitgelegd" "de-eaa" "e-commerce-eaa" "audits" "tips-en-tools"
+  "teksten-en-documenten" "afbeeldingen-en-media" "kleur-en-contrast"
+  "toetsenbord-en-focus" "formulieren" "html-en-aria" "structuur-en-navigatie"
+  "zoom-en-mobiel"
+  "wcag-explained" "ai-and-wcag" "achtergrond_wcag" }}
+{{ $items := slice }}
+{{ range $slug := $order }}
+  {{ with $ctx.Site.GetPage (printf "/categories/%s" $slug) }}
+    {{ if gt (len .Pages) 0 }}{{ $items = $items | append (dict "slug" $slug "page" .) }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if ge (len $items) 2 }}
+<nav class="blog-topics" aria-labelledby="blog-topics-title">
+  <h2 id="blog-topics-title" class="blog-topics__title">{{ T "blog_topics_label" }}</h2>
+    <ul class="blog-topics__list">
+      {{ range $items }}
+        {{ $isActive := eq .slug $active }}
+        <li>
+          <a href="{{ .page.RelPermalink }}" class="blog-topics__link{{ if $isActive }} blog-topics__link--active{{ end }}"{{ if $isActive }} aria-current="page"{{ end }}>{{ .page.Title }} <span class="blog-topics__count">({{ len .page.Pages }})</span></a>
+        </li>
+      {{ end }}
+    </ul>
+</nav>
+{{ end }}

@@ -2,10 +2,13 @@
 title: "Toegankelijkheidslabel ontoegankelijk plaatsen (doe dat niet!)"
 date: 2024-06-21
 slug: "toegankelijkheidslabel-ontoegankelijk-plaatsen"
-categories: 
-  - "tips-en-tools"
-  - "Webdeveloper"
-tags: 
+categories:
+  - "formulieren"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
+  - "webredactie"
+tags:
   - "aria-label"
   - "toegankelijke-website"
 aliases:

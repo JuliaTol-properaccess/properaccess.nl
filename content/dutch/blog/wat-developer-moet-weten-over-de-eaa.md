@@ -3,8 +3,10 @@ title: "Wat je als Web Agency moet weten om te voldoen aan de toegankelijkheidsw
 slug: "wat-developer-moet-weten-over-de-eaa"
 date: 2025-03-25
 categories:
-  - "achtergrond_wcag"
-  - "de EAA"
+  - "de-eaa"
+doelgroepen:
+  - "developer"
+  - "manager"
 tags:
   - "toegankelijke-website"
 aliases:

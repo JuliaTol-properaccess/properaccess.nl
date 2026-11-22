@@ -3,10 +3,12 @@ title: "Wat ondernemers echt vinden van de European Accessibility Act"
 slug: "wat-ondernemers-vinden-van-de-eaa"
 date: 2026-03-09
 categories:
-  - "de EAA"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijke-website"
-  - "webshops"
+  - "webshop"
 aliases:
   - /wat-ondernemers-vinden-van-de-eaa/
 description: "De EAA is sinds juni 2025 van kracht. Maar wat vinden ondernemers, freelancers en webshop-eigenaren er echt van? We onderzochten de meningen en geven duidelijke antwoorden."

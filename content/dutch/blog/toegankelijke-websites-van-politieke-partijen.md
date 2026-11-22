@@ -2,9 +2,10 @@
 title: "Hoe toegankelijk zijn de websites van politieke partijen eigenlijk?"
 date: 2025-09-08
 slug: "toegankelijke-websites-van-politieke-partijen"
-categories: 
-  - "achtergrond_wcag"
-  - "de EAA"
+categories:
+  - "wcag-uitgelegd"
+doelgroepen:
+  - "manager"
 aliases:
   - /toegankelijke-websites-van-politieke-partijen/
 description: "Hoe toegankelijk zijn de websites van Nederlandse politieke partijen? Een praktijktest met alleen het toetsenbord laat verrassende resultaten zien."

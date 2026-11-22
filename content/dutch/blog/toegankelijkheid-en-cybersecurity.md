@@ -9,7 +9,10 @@ coauthors:
     url: "https://janitatop.nl/"
 categories:
   - "wcag-uitgelegd"
-  - "achtergrond_wcag"
+  - "formulieren"
+doelgroepen:
+  - "developer"
+  - "manager"
 tags:
   - "wcag"
   - "cybersecurity"

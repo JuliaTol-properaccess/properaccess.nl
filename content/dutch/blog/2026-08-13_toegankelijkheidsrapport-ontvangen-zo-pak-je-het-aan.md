@@ -3,7 +3,9 @@ title: "Waaraan herken je een goed toegankelijkheidsrapport?"
 date: 2026-08-13
 slug: "toegankelijkheidsrapport-ontvangen-zo-pak-je-het-aan"
 categories:
-  - "tips-en-tools"
+  - "audits"
+doelgroepen:
+  - "manager"
 tags:
   - "toegankelijkheidsrapport"
   - "wcag"

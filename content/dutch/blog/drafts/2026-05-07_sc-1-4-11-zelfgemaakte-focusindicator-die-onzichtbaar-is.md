@@ -3,7 +3,10 @@ title: "Zelfgemaakte focusindicator die onzichtbaar is"
 date: 2026-07-04
 slug: "sc-1-4-11-zelfgemaakte-focusindicator-die-onzichtbaar-is"
 categories:
-  - "wcag-uitgelegd"
+  - "kleur-en-contrast"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-11"

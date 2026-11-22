@@ -1,9 +1,11 @@
 ---
 title: 'SC 2.2.1 - Wat betekent "Tijdslimiet aanpassen"'
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "formulieren"
+doelgroepen:
+  - "developer"
+tags:
   - "2-2-1"
 description: "WCAG 2.2.1 vraagt dat bezoekers tijdslimieten kunnen aanpassen of uitschakelen. Lees de regels voor formulieren, sessies en automatische time-outs."
 aliases:

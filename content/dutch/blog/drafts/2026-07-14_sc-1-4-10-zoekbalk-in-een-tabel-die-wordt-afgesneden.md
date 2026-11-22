@@ -3,7 +3,9 @@ title: "Zoekbalk in een tabel die wordt afgesneden"
 date: 2026-09-06
 slug: "sc-1-4-10-zoekbalk-in-een-tabel-die-wordt-afgesneden"
 categories:
-  - "wcag-uitgelegd"
+  - "zoom-en-mobiel"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "1-4-10"

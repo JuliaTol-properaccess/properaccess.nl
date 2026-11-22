@@ -6,27 +6,23 @@
         {{ with .Params.description }}<p class="blog-list__intro">{{ . }}</p>{{ end }}
       </header>
 
-      {{/* Filters alleen renderen als er minstens 2 categorieën zijn */}}
-      {{ if ge (len site.Taxonomies.categories) 2 }}
-        {{ partial "blog-filters.html" (dict "activeSlug" "achtergrond_wcag" "Context" .) }}
-      {{ end }}
+      {{ partial "blog-filters.html" (dict "active" "" "Context" .) }}
 
-      {{/* NL: alleen achtergrond_wcag posts tonen. EN: alle posts (te weinig om te filteren). */}}
-      {{ $posts := .RegularPages }}
-      {{ if eq .Lang "nl" }}
-        {{ $posts = where $posts "Params.categories" "intersect" (slice "achtergrond_wcag") }}
-      {{ end }}
-      {{ $paginator := .Paginate $posts }}
-
-      <div class="blog-list__grid row">
-        {{ range $paginator.Pages }}
-          <div class="md:col-6 lg:col-4 mb-10">
-            {{ partial "components/blog-card" . }}
+      {{/* Let op: partials/basic-seo.html roept .Paginator al in de head aan, met de
+           standaardvolgorde (weight eerst). Die wint van de sortering hier. Geef een
+           blogartikel daarom geen weight. */}}
+      {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+      <div class="blog-list__layout">
+        {{ partial "blog-topics.html" (dict "active" "" "Context" .) }}
+        <div class="blog-list__main">
+          <div class="blog-list__grid">
+            {{ range $paginator.Pages }}
+              {{ partial "components/blog-item.html" . }}
+            {{ end }}
           </div>
-        {{ end }}
+          {{ partial "components/pagination.html" . }}
+        </div>
       </div>
-
-      {{ partial "components/pagination.html" . }}
     </div>
   </section>
 {{ end }}

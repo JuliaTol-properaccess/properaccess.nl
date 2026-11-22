@@ -3,7 +3,9 @@ title: "Framework met Engels label, Nederlandse interface"
 date: 2026-08-18
 slug: "sc-2-5-3-framework-met-engels-label-nederlandse-interface"
 categories:
-  - "wcag-uitgelegd"
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-5-3"

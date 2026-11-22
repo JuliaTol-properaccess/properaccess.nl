@@ -2,7 +2,9 @@
 title: 'SC 3.2.3 - Wat betekent "Consistente navigatie"'
 date: 2025-05-17
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "developer"
 description: "WCAG 3.2.3 vereist dat navigatie op elke pagina op dezelfde plek en in dezelfde volgorde staat. Lees waarom en hoe je dit aanpakt."
 aliases:
   - /sc-3-2-3-wat-betekent-consistente-navigatie/

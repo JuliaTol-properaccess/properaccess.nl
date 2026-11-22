@@ -5,7 +5,9 @@ slug: "sc-2-4-7-outline-none"
 aliases:
   - "/blog/sc-2-4-7-outline-none-de-meest-destructieve-regel-in-css/"
 categories:
-  - "wcag-uitgelegd"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "wcag"
   - "2-4-7"

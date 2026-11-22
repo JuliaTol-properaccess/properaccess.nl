@@ -1,9 +1,11 @@
 ---
 title: "SC 3.3.3 - Wat betekent “Foutsuggestie”"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "formulieren"
+doelgroepen:
+  - "developer"
+tags:
   - "3-3-3"
   - "formulier"
 description: "WCAG 3.3.3 vereist dat je suggesties biedt om fouten in formulieren op te lossen. Lees hoe je gebruikers helpt met duidelijke foutsuggesties."

@@ -2,7 +2,9 @@
 title: 'SC 3.3.7 - Wat betekent "Redundante invoer"'
 date: 2025-05-18
 categories:
-  - "wcag-uitgelegd"
+  - "formulieren"
+doelgroepen:
+  - "developer"
 tags:
   - "3-3-7"
   - "formulier"

@@ -4,7 +4,8 @@ slug: "toetsenbord-toegankelijk"
 date: 2025-11-09
 categories:
   - "tips-en-tools"
-  - "Webdeveloper"
+doelgroepen:
+  - "developer"
 aliases:
   - "/toetsenbord_toegankelijk/"
   - /blog/toetsenbord_toegankelijk/

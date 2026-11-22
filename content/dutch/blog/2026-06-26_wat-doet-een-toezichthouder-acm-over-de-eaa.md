@@ -4,7 +4,8 @@ date: 2026-06-26
 slug: "wat-doet-een-toezichthouder-acm-over-de-eaa"
 categories:
   - "de-eaa"
-  - "achtergrond_wcag"
+doelgroepen:
+  - "manager"
 tags:
   - "eaa"
   - "european-accessibility-act"

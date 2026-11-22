@@ -2,9 +2,10 @@
 title: "Hoe geef ik een applicatie een accessible name?"
 date: 2025-08-10
 slug: "hoe-geef-ik-een-applicatie-accessible-name"
-categories: 
-  - "tips-en-tools"
-  - "Webdeveloper"
+categories:
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
 tags:
   - "4-1-2"
   - "2-4-6"

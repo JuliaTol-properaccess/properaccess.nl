@@ -2,9 +2,11 @@
 title: "Hoe test je elementen die op hover, focus of klik verschijnen (en meteen weer verdwijnen)?"
 slug: "hoe-test-je-elementen-die-op-hover-focus-of-klik-verschijnen-en-meteen-weer-verdwijnen"
 date: 2025-10-25
-categories: 
+categories:
   - "tips-en-tools"
-  - "Webdeveloper"
+  - "toetsenbord-en-focus"
+doelgroepen:
+  - "developer"
 tags:
   - "4-1-2"
 description: "Hoe test je UI-elementen die op hover, focus of klik verschijnen en weer verdwijnen? Praktische testmethode met Chrome DevTools."

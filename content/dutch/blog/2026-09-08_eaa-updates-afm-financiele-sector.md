@@ -4,7 +4,8 @@ date: 2026-09-08
 slug: "eaa-updates-afm-financiele-sector"
 categories:
   - "de-eaa"
-  - "achtergrond_wcag"
+doelgroepen:
+  - "manager"
 tags:
   - "eaa"
   - "afm"

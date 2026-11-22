@@ -2,9 +2,10 @@
 title: "Hoe herken je niet-getagde tekst in een PDF"
 date: 2025-03-18
 slug: "hoe-herken-je-niet-getagde-tekst-in-een-pdf"
-categories: 
-  - "tips-en-tools"
-  - "Webredactie"
+categories:
+  - "teksten-en-documenten"
+doelgroepen:
+  - "webredactie"
 tags:
   - "webredactie"
 description: "Leer hoe je niet-getagde tekst in een PDF herkent met PAC. Praktische uitleg voor webredacties volgens WCAG 1.3.1."

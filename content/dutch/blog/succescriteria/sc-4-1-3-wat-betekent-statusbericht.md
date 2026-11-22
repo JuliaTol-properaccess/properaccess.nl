@@ -2,9 +2,11 @@
 title: 'SC 4.1.3 - Wat betekent "Statusbericht"'
 translationKey: "sc-4-1-3"
 date: 2025-05-18
-categories: 
-  - "wcag-uitgelegd"
-tags: 
+categories:
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
+tags:
   - "4-1-3"
 description: "Bij WCAG 4.1.3 moeten statusberichten programmatisch bepaalbaar zijn voor schermlezers. Lees hoe je aria-live en ARIA-rollen correct gebruikt."
 aliases:

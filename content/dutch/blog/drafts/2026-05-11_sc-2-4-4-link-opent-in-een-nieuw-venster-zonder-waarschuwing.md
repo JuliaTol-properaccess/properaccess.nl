@@ -3,7 +3,10 @@ title: "Link opent in een nieuw venster zonder waarschuwing"
 date: 2026-07-08
 slug: "sc-2-4-4-link-opent-in-een-nieuw-venster-zonder-waarschuwing"
 categories:
-  - "wcag-uitgelegd"
+  - "structuur-en-navigatie"
+doelgroepen:
+  - "webredactie"
+  - "developer"
 tags:
   - "wcag"
   - "2-4-4"

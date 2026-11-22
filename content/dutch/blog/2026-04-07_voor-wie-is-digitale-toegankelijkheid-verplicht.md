@@ -4,7 +4,9 @@ meta_title: "Voor wie gelden het BDTO en de EAA?"
 date: 2026-04-07
 slug: "voor-wie-is-digitale-toegankelijkheid-verplicht"
 categories:
-  - "wcag-vragen"
+  - "de-eaa"
+doelgroepen:
+  - "manager"
 tags:
   - "veelgestelde-vragen"
   - "eaa"

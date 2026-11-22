@@ -2,10 +2,11 @@
 title: "Meerdere knoppen met dezelfde naam"
 date: 2025-01-25
 slug: "meerdere-knoppen-met-dezelfde-naam"
-categories: 
-  - "achtergrond_wcag"
-  - "Webdeveloper"
-tags: 
+categories:
+  - "html-en-aria"
+doelgroepen:
+  - "developer"
+tags:
   - "2-4-6"
   - "toegankelijke-website"
 description: "Waarom meerdere knoppen met dezelfde naam problematisch zijn voor schermlezers en hoe je dit oplost volgens WCAG."
