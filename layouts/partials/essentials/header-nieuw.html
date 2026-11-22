@@ -3,9 +3,15 @@
   Staat op elke Nederlandse pagina (zie baseof.html). De vorige header,
   header-minimaal.html, blijft bestaan: terugzetten is één regel in baseof.
 
-  Logo, zes links en de knop "Offerte audit". Niet sticky, net als het
-  prototype. Geen zoekknop, geen link naar de Engelse site en geen portaallink:
+  Logo, zes links, de knop "Zoeken" en de knop "Offerte audit". Niet sticky,
+  net als het prototype. Geen link naar de Engelse site en geen portaallink:
   zo staat het in het prototype (Julia, 22-11-2026).
+
+  "Zoeken" stond niet in het prototype en is er op 22-11-2026 op verzoek van
+  Julia bij gekomen. De knop opent het zoekvenster van partials/search-modal.html;
+  assets/js/search.js luistert naar data-target="search-modal". Onder 560
+  pixels toont hij alleen het vergrootglas, met "Zoeken" als verborgen tekst,
+  anders passen logo, Menu, Zoeken en Offerte audit niet binnen 320 pixels.
 
   Actieve link: aria-current="page" als de link precies naar deze pagina gaat,
   aria-current="true" als deze pagina eronder valt (een blogartikel onder
@@ -54,7 +60,13 @@
         {{ end }}
       </ul>
     </nav>
-    <a class="hn__cta" href="/offerte-wcag-onderzoek/"{{ if eq $hier "/offerte-wcag-onderzoek/" }} aria-current="page"{{ end }}>Offerte audit</a>
+    <div class="hn__acties">
+      <button type="button" class="hn__zoek" data-target="search-modal">
+        {{ partial "icoon-zoek.html" 18 }}
+        <span class="hn__zoek-tekst">Zoeken</span>
+      </button>
+      <a class="hn__cta" href="/offerte-wcag-onderzoek/"{{ if eq $hier "/offerte-wcag-onderzoek/" }} aria-current="page"{{ end }}>Offerte audit</a>
+    </div>
   </div>
 </header>
 
@@ -75,6 +87,14 @@
   .hn__link { color: #1F2937; text-decoration: none; display: inline-block; padding: 12px 0; }
   .hn__link:hover { color: #A30D4B; text-decoration: underline; text-underline-offset: 6px; }
   .hn__link[aria-current] { color: #A30D4B; text-decoration: underline; text-underline-offset: 6px; }
+  .hn__acties { display: flex; align-items: center; gap: 12px; flex: none; }
+  .hn__zoek {
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer; min-height: 44px;
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 14px; color: #1F2937;
+    background: none; border: 0; padding: 8px 6px;
+  }
+  .hn__zoek:hover { color: #A30D4B; text-decoration: underline; text-underline-offset: 6px; }
+  .hn__zoek .icoon-zoek { flex: none; }
   .hn__cta {
     font-weight: 700; text-decoration: none; color: #1F2937; background: #fff;
     border: 1.5px solid #1F2937; padding: 10px 20px; border-radius: 10px; min-height: 44px;
@@ -109,13 +129,19 @@
     /* Zonder JavaScript staat de lijst onder het logo, over de volle breedte. */
     .hn:not(.hn--js) .hn__nav { order: 3; flex-basis: 100%; margin-left: 0; padding-bottom: 8px; }
   }
-  /* Smalle schermen en 400% zoom: logo, Menu en Offerte audit moeten samen
+  /* Smalle schermen en 400% zoom: logo, Menu, Zoeken en Offerte audit moeten samen
      binnen 320 CSS-pixels passen, anders schuift de balk horizontaal. */
   @media (max-width: 560px) {
     .hn__bar { padding: 8px 14px; min-height: 0; gap: 8px; }
     .hn__logo img { height: 1.6rem; }
     .hn__toggle { font-size: 13px; padding: 8px 10px; gap: 7px; }
     .hn__cta { font-size: 13px; padding: 8px 10px; }
+    .hn__acties { gap: 4px; }
+    .hn__zoek { min-width: 44px; justify-content: center; padding: 8px; }
+    .hn__zoek-tekst {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
     .hn--js .hn__lijst { padding: 4px 14px 12px; }
   }
   @media (max-width: 360px) {
