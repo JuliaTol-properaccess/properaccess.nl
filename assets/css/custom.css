@@ -10638,6 +10638,33 @@ html.dark .tool-fout__level {
   color: #dc2626;
 }
 
+/* Lesblokken webredactie: {{< academy-cms >}} en {{< academy-controle >}}.
+   Alleen een rand, geen achtergrondkleur. */
+.academy__content-body .academy-blok {
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #004050;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem 0.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.academy__content-body .academy-blok__titel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #004050;
+  margin: 0 0 0.75rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.academy__content-body .academy-blok--controle {
+  border-left-color: #A30D4B;
+}
+
+.academy__content-body .academy-blok--controle .academy-blok__titel {
+  color: #A30D4B;
+}
+
 /* Chapter navigation */
 .academy__content-nav {
   display: flex;
