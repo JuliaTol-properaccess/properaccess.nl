@@ -8,7 +8,7 @@ categories:
 doelgroepen:
   - "developer"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "contrast"
   - "AI vision"

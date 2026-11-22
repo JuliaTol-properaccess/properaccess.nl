@@ -8,7 +8,7 @@ doelgroepen:
   - "developer"
   - "manager"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "automatisch testen"
   - "toegankelijkheid"

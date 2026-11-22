@@ -5,7 +5,7 @@ slug: "can-ai-see-low-contrast-text"
 categories:
   - "ai-and-wcag"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "contrast"
   - "AI vision"

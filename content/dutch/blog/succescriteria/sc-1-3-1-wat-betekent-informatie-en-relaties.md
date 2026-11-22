@@ -18,7 +18,7 @@ keywords:
   - structuur webredactie
 tags:
   - "1-3-1"
-  - "Structuur"
+  - "structuur"
 aliases:
   - /sc-1-3-1-wat-betekent-informatie-en-relaties/
 ---

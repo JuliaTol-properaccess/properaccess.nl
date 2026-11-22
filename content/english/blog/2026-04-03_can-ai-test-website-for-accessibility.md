@@ -6,7 +6,7 @@ slug: "can-ai-test-website-for-accessibility"
 categories:
   - "ai-and-wcag"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "automated testing"
   - "accessibility"

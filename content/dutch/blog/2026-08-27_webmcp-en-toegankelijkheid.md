@@ -8,7 +8,7 @@ doelgroepen:
   - "developer"
   - "manager"
 tags:
-  - "AI"
+  - "ai"
   - "wcag"
   - "WebMCP"
   - "accessibility tree"
