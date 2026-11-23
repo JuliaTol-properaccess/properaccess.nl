@@ -68,89 +68,19 @@
   </div>
 </section>
 
-<!-- 2. Pakket vierde kwartaal -->
-<section class="he-pakket">
-  <div class="he-wrap he-pakket__wrap">
-    <div class="he-pakket__tekst">
-      <div class="he-kop">
-        <p class="he-label he-magenta">/ pakket vierde kwartaal</p>
-        <h2 class="he-h2">Van audit tot hercontrole, voor één vaste prijs.</h2>
-        <p class="he-pakket__lead">Wij zoeken het voor je uit, in vijf stappen:</p>
-      </div>
-
-      <ol class="he-stappen">
-        <li class="he-stap">
-          <div class="he-stap__as"><span class="he-stap__nr">01</span><span class="he-stap__lijn" aria-hidden="true"></span></div>
-          <div class="he-stap__tekst"><p class="he-stap__titel">Intake</p><p>We bespreken wat jij precies nodig hebt.</p></div>
-        </li>
-        <li class="he-stap">
-          <div class="he-stap__as"><span class="he-stap__nr">02</span><span class="he-stap__lijn" aria-hidden="true"></span></div>
-          <div class="he-stap__tekst"><p class="he-stap__titel">Audit</p><p>We testen je website op alle eisen van WCAG 2.2 niveau AA.</p></div>
-        </li>
-        <li class="he-stap">
-          <div class="he-stap__as"><span class="he-stap__nr">03</span><span class="he-stap__lijn" aria-hidden="true"></span></div>
-          <div class="he-stap__tekst"><p class="he-stap__titel">Plan van aanpak</p><p>Per probleem de oplossing, met code en een screenshot waar dat helpt.</p></div>
-        </li>
-        <li class="he-stap">
-          <div class="he-stap__as"><span class="he-stap__nr">04</span><span class="he-stap__lijn" aria-hidden="true"></span></div>
-          <div class="he-stap__tekst"><p class="he-stap__titel">Hercontrole</p><p>We checken of alles is opgelost.</p></div>
-        </li>
-        <li class="he-stap he-stap--laatste">
-          <div class="he-stap__as"><span class="he-stap__nr he-stap__nr--accent">05</span></div>
-          <div class="he-stap__tekst"><p class="he-stap__titel">Een jaar WCAG Radar</p><p>Zo controleer je daarna zelf je website.</p></div>
-        </li>
-      </ol>
-
-      <div class="he-prijs">
-        <div>
-          <p class="he-prijs__bedrag">€ 2.795</p>
-          <p class="he-prijs__noot">exclusief btw, tot en met 31 december 2026</p>
-        </div>
-        <a class="he-knop" href="/offerte-wcag-onderzoek/">Vraag het pakket aan</a>
-      </div>
-    </div>
-
-    <figure class="he-bevinding">
-      <article class="he-bevinding__kaart">
-        <header class="he-bevinding__kop">
-          <div class="he-bevinding__meta"><span>bevinding</span><span>/formulier</span></div>
-          <h3 class="he-bevinding__titel">#1 Knoptekst heeft te weinig contrast</h3>
-          <ul class="he-chips" aria-label="Kenmerken">
-            <li class="he-chip">impact: matig</li>
-            <li class="he-chip">techniek</li>
-            <li class="he-chip">WCAG 1.4.3 · AA</li>
-            <li class="he-chip">EN 9.1.4.3</li>
-            <li class="he-chip">beperking: visueel</li>
-          </ul>
-        </header>
-
-        <div class="he-shot" role="img" aria-label="Screenshot: de knop Verzenden met witte tekst op lichtgroen, gemeten contrast 3,03 op 1">
-          <div class="he-shot__knopkant" aria-hidden="true">
-            <span class="he-shot__meting">3,03:1 bij 16px (moet ≥ 4,5)</span>
-            {{/* SVG, zodat axe het nagebootste slechte contrast niet als fout op onze eigen pagina telt. */}}
-            <svg class="he-shot__knop" width="118" height="44" viewBox="0 0 118 44" focusable="false"><rect width="118" height="44" rx="4" fill="#14AC14"/><text x="59" y="28" text-anchor="middle" fill="#fff" font-family="Nunito, system-ui, sans-serif" font-weight="700" font-size="17">Verzenden</text></svg>
-          </div>
-          <div class="he-shot__kleuren" aria-hidden="true">
-            <span class="he-shot__kleur"><span class="he-shot__staal he-shot__staal--groen"></span>#14AC14</span>
-            <span class="he-shot__kleur"><span class="he-shot__staal he-shot__staal--wit"></span>#FFFFFF</span>
-            <span class="he-shot__ratio">3,03:1</span>
-            <span class="he-shot__fout">✗ normale tekst</span>
-          </div>
-        </div>
-
-        <div class="he-bevinding__body">
-          <p>Op de formulieren wordt de achtergrond van knoppen lichtgroen als de muis erop staat. Het contrast van de witte tekst is dan 3,0:1. Dat geldt voor "Vorige stap", "Volgende stap", "Controleren" en "Verzenden".</p>
-          <div class="he-story">
-            <p class="he-label he-label--mini">user story</p>
-            <p class="he-story__tekst">Ik heb een visuele beperking. Als ik met de muis op een knop sta, is de tekst soms slecht te lezen.</p>
-          </div>
-          <div class="he-twee he-bevinding__voet">
-            <div><p class="he-label he-label--mini">hoe te testen</p><p>Zet de muis op een knop. Meet met de WCAG Radar de kleur van de tekst en van de achtergrond.</p></div>
-            <div><p class="he-label he-label--mini">oplossing</p><p>Geef de knoptekst ook bij hover een contrast van minimaal 4,5:1.</p></div>
-          </div>
-        </div>
-      </article>
-      <figcaption class="he-label he-label--klein">zo ziet een bevinding eruit in ons rapport</figcaption>
+<!-- 2. Klantcitaat -->
+<section class="he-citaat" aria-label="Ervaring van een klant">
+  <div class="he-wrap he-citaat__wrap">
+    <figure class="he-citaat__figuur">
+      <svg class="he-citaat__icoon" aria-hidden="true" focusable="false" viewBox="0 0 64 48" width="72" height="54">
+        <path d="M0 48V28C0 12.5 7.6 3.2 22.6 0l3 6.3C17.4 9 13.4 14 13 21h11v27H0Zm38 0V28c0-15.5 7.6-24.8 22.6-28l3 6.3C55.4 9 51.4 14 51 21h11v27H38Z"/>
+      </svg>
+      <blockquote class="he-citaat__tekst">
+        <p class="he-citaat__eerste">Wij hebben onlangs een audit van onze website laten uitvoeren door Proper Access. Het rapport was duidelijk en overzichtelijk met een duidelijk plan van aanpak.</p>
+        <p>De bevindingen werden helder uitgelegd, waardoor we direct inzicht kregen in de verbeterpunten en prioriteiten. Wat wij vooral waardeerden, waren de concrete aanbevelingen en het plan van aanpak en de communicatie met Julia. Hierdoor wisten we precies welke stappen nodig waren om de toegankelijkheid en gebruiksvriendelijkheid van onze website te verbeteren.</p>
+        <p>Wij zijn zeer tevreden over de samenwerking en bevelen Proper Access aan organisaties die hun website professioneel willen laten toetsen en verbeteren.</p>
+      </blockquote>
+      <figcaption class="he-citaat__bron"><span class="he-citaat__naam">Dionne</span><span class="he-label">Kixx</span></figcaption>
     </figure>
   </div>
 </section>
@@ -398,47 +328,16 @@
 .he-code { margin: 6px 0 0; padding: 14px 16px; background: var(--he-navy); color: #fff; border-radius: 8px; font-family: var(--he-mono); font-size: 13px; line-height: 1.6; white-space: pre-wrap; overflow-x: auto; }
 .he-paneel__voet { padding-top: 14px !important; border-top: 1px dashed var(--he-rand); }
 
-/* 2. Pakket */
-.he-pakket { background: var(--he-grijs); border-bottom: 1px solid var(--he-rand); }
-.he-pakket__wrap { max-width: 1200px; padding-top: 104px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; }
-.he-pakket__tekst { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
-.he-pakket__lead { font-size: 18px; }
-.he-stappen { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
-.he-stap { display: flex; gap: 20px; }
-.he-stap__as { display: flex; flex-direction: column; align-items: center; }
-.he-stap__nr { width: 40px; height: 40px; flex: none; border: 1px solid var(--he-navy); background: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--he-mono); font-size: 14px; }
-.he-stap__nr--accent { border-color: var(--he-magenta); background: var(--he-magenta); color: #fff; }
-.he-stap__lijn { width: 1px; flex-grow: 1; min-height: 20px; background: rgba(31,41,55,.45); }
-.he-stap__tekst { padding: 6px 0 24px; }
-.he-stap--laatste .he-stap__tekst { padding-bottom: 0; }
-.he-stap__titel { font-family: var(--he-kopfont); font-weight: 700; font-size: 18px; }
-.he-stap__titel + p { margin-top: 2px; }
-.he-prijs { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; padding-top: 24px; border-top: 1px solid rgba(31,41,55,.25); }
-.he-prijs__bedrag { font-family: var(--he-kopfont); font-weight: 800; font-size: 44px; line-height: 1; }
-.he-prijs__noot { margin-top: 6px !important; font-size: 15px; color: var(--he-zacht); }
-
-.he-bevinding { flex: 1 1 440px; min-width: 0; margin: 0; align-self: stretch; display: flex; flex-direction: column; gap: 12px; }
-.he-bevinding__kaart { flex-grow: 1; display: flex; flex-direction: column; border: 1px solid var(--he-rand); border-radius: 12px; background: #fff; box-shadow: 0 12px 32px rgba(31,41,55,.08); overflow: hidden; font-size: 15px; }
-.he-bevinding__kop { padding: 18px 22px 14px; border-bottom: 1px solid var(--he-rand); display: flex; flex-direction: column; gap: 12px; }
-.he-bevinding__meta { display: flex; justify-content: space-between; gap: 12px; font-family: var(--he-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--he-zacht); }
-.he-bevinding__titel { margin: 0; font-family: var(--he-kopfont); font-weight: 700; font-size: 19px; line-height: 1.3; }
-.he-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--he-mono); font-size: 12px; }
-.he-chip { padding: 2px 8px; border-radius: 6px; border: 1px solid var(--he-rand); }
-.he-shot { margin: 18px 22px 0; padding: 20px; border-radius: 8px; background: var(--he-grijs); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
-.he-shot__knopkant { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
-.he-shot__meting { font-family: var(--he-mono); font-size: 11px; color: #fff; background: #9B1C4A; padding: 2px 6px; border-radius: 3px; }
-.he-shot__knop { display: block; border-radius: 4px; outline: 3px solid #9B1C4A; outline-offset: 2px; }
-.he-shot__kleuren { background: #fff; border: 1px solid var(--he-rand); border-radius: 8px; padding: 10px 12px; font-family: var(--he-mono); font-size: 12px; display: flex; flex-direction: column; gap: 4px; min-width: 160px; }
-.he-shot__kleur { display: flex; align-items: center; gap: 6px; }
-.he-shot__staal { width: 12px; height: 12px; border-radius: 2px; }
-.he-shot__staal--groen { background: #14AC14; }
-.he-shot__staal--wit { background: #fff; border: 1px solid rgba(31,41,55,.45); }
-.he-shot__ratio { font-family: var(--he-kopfont); font-weight: 800; font-size: 18px; }
-.he-shot__fout { color: #9B1C4A; }
-.he-bevinding__body { padding: 16px 22px 22px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1; }
-.he-story { background: var(--he-grijs); border-radius: 8px; padding: 12px 14px; }
-.he-story__tekst { font-style: italic; }
-.he-bevinding__voet { gap: 14px; padding-top: 14px; border-top: 1px solid var(--he-rand); }
+/* 2. Klantcitaat */
+.he-citaat { background: var(--he-grijs); border-bottom: 1px solid var(--he-rand); }
+.he-citaat__wrap { padding-top: 104px; padding-bottom: 104px; }
+.he-citaat__figuur { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+.he-citaat__icoon { display: block; width: clamp(56px, 6vw, 72px); height: auto; fill: var(--he-magenta); }
+.he-citaat__tekst { margin: 0; display: flex; flex-direction: column; gap: 16px; font-size: 18px; }
+.he .he-citaat__eerste { font-family: var(--he-kopfont); font-weight: 700; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.3; letter-spacing: -0.01em; }
+.he-citaat__bron { display: flex; align-items: center; gap: 14px; padding-top: 20px; border-top: 1px solid rgba(31,41,55,.25); }
+.he-citaat__naam { font-family: var(--he-kopfont); font-weight: 800; font-size: 18px; }
+.he-citaat__naam::after { content: ""; display: inline-block; width: 24px; height: 2px; margin-left: 14px; vertical-align: middle; background: var(--he-magenta); }
 
 /* 3. Diensten */
 .he-diensten__wrap { padding-top: 120px; padding-bottom: 104px; display: flex; flex-direction: column; gap: 48px; }
@@ -537,9 +436,9 @@
   .he-punt { padding-right: 0; }
   .he-cijfer dd { font-size: 40px; }
   .he-intro__wrap { padding-top: 56px; padding-bottom: 56px; gap: 40px; }
-  .he-pakket__wrap { padding-top: 64px; padding-bottom: 64px; }
+  .he-citaat__wrap { padding-top: 64px; padding-bottom: 64px; }
   .he-diensten__wrap { padding-top: 72px; padding-bottom: 64px; }
-  .he-intro__tekst, .he-paneel, .he-pakket__tekst, .he-bevinding { flex-basis: 100%; }
+  .he-intro__tekst, .he-paneel { flex-basis: 100%; }
   .he-twee { grid-template-columns: 1fr; }
   .he-dienst { padding-right: 0; }
   .he-diensten__rij { grid-template-columns: 1fr; }
