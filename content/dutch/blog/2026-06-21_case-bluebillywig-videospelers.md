@@ -3,8 +3,7 @@ title: "Blue Billywig: negen videospelers naast elkaar"
 date: 2026-06-21
 slug: "case-bluebillywig-quickscan-9-videospelers"
 categories:
-  - "wcag-uitgelegd"
-  - "afbeeldingen-en-media"
+  - "cases"
 doelgroepen:
   - "manager"
 tags:
