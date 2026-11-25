@@ -200,7 +200,7 @@
 
     var wie = document.createElement("span");
     wie.className = "sr-only";
-    wie.textContent = rol === "vraag" ? "Jij: " : "Assistent: ";
+    wie.textContent = rol === "vraag" ? "Jij: " : "AI-assistent: ";
     p.appendChild(wie);
 
     if (rol === "antwoord") {
