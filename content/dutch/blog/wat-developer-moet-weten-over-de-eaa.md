@@ -48,8 +48,8 @@ In deze lijst verkorten we de toegankelijkheidsnaam tot een a11y naam.
 
 ### Header
 
-- Pagina heeft geen <title> of deze bevat tekst die de pagina niet beschrijft.
-- lang-attribuut ontbreekt op <html> of bevat een ongeldige waarde.
+- Pagina heeft geen `<title>` of deze bevat tekst die de pagina niet beschrijft.
+- lang-attribuut ontbreekt op `<html>` of bevat een ongeldige waarde.
 - Logo: zichtbare tekst staat niet in de a11y naam, interactieve rol en naam ontbreken, linkdoel is onduidelijk, tekst verdwijnt bij zoom tot 200% en 400%.
 - Skiplink ontbreekt, is niet zichtbaar bij focus of verwijst niet naar unieke inhoud. 
 
@@ -62,7 +62,7 @@ In deze lijst verkorten we de toegankelijkheidsnaam tot een a11y naam.
 - Bij 200% en 400% zoom gaat content of functionaliteit verloren.
 - Content op hover en focus kan niet met ESC worden afgesloten.
 - Actieve link is alleen visueel te herkennen, dit is niet in de HTML vastgelegd.
-- Relatie tussen links is niet zichtbaar in de HTML (op te lossen met <ul> of <nav>).
+- Relatie tussen links is niet zichtbaar in de HTML (op te lossen met `<ul>` of `<nav>`).
 - Button met dropdown mist aria-expanded-attribuut.
 - Hamburgerknop mist aria-expanded-attribuut om de toestand van het menu aan te geven.
 - De functie van de hamburgerknop (openen/sluiten) staat niet in de a11y naam. 
@@ -82,7 +82,7 @@ In deze lijst verkorten we de toegankelijkheidsnaam tot een a11y naam.
 
 - Koppen staan niet in <h>-elementen, niet in de correcte volgorde, <h>-element is voor opmaak gebruikt.
 - <strong> en <em> worden voor opmaak gebruikt of als alternatief voor koppen.
-- Opsommingen zijn niet gemarkeerd met <ul> of <ol>.
+- Opsommingen zijn niet gemarkeerd met `<ul>` of `<ol>`.
 - Meerdere alinea's staan in één<p>-element.
 - Niet alles wat je op de pagina ziet is in de HTML aanwezig. Denk bijvoorbeeld aan voortgangsbalken en informatie over de voortgang zelf.
 
