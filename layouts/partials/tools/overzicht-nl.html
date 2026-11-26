@@ -142,8 +142,37 @@
   </div>
 </section>
 
-<!-- 4. Gratis tools -->
-<section class="tp-section tp-section--grey" id="gratis-tools" aria-labelledby="gratis-tools-titel">
+<!-- 4. Quizzes -->
+<section class="tp-section tp-section--grey" id="quizzes" aria-labelledby="quizzes-titel">
+  <div class="tp-wrap tp-stack-xl">
+    <div class="tp-stack tp-narrow">
+      <p class="tp-eyebrow">/ quizzes</p>
+      <h2 class="tp-h2" id="quizzes-titel">Test je kennis met een quiz</h2>
+      <p class="tp-lede">Drie gratis quizzes over digitale toegankelijkheid: voor developers, voor webredacties en voor musea en culturele instellingen.</p>
+    </div>
+
+    {{ $quizzes := slice
+      (dict "page" "quiz-developers" "tag" "developers" "titel" "Quiz voor developers" "tekst" "Test je WCAG-kennis met praktijkscenario's. Je bekijkt een interactieve demo en de broncode, en kiest welke antwoorden kloppen." "link" "Naar de quiz voor developers")
+      (dict "page" "quiz-webredactie" "tag" "webredactie" "titel" "Quiz voor webredacties" "tekst" "20 vragen over toegankelijke content, zoals alt-teksten en koppen. Voor iedereen die teksten op een website publiceert." "link" "Naar de quiz voor webredacties")
+      (dict "page" "quiz-museum" "tag" "cultuur" "titel" "Quiz voor musea en culturele instellingen" "tekst" "20 vragen voor webredacteuren van musea, theaters en festivals. Test hoe toegankelijk jullie content is." "link" "Naar de quiz voor musea")
+    }}
+    <div class="tp-freegrid">
+      {{ range $i, $t := $quizzes }}
+        {{ with $.GetPage $t.page }}
+        <article class="tp-free">
+          <p class="tp-free__meta"><span>[ {{ $t.tag }} ]</span><span aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span></p>
+          <h3 class="tp-h3 tp-h3--lg">{{ $t.titel }}</h3>
+          <p class="tp-muted tp-free__text">{{ $t.tekst }}</p>
+          <a class="tp-link" href="{{ .RelPermalink }}">{{ $t.link }}</a>
+        </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- 5. Gratis tools -->
+<section class="tp-section" id="gratis-tools" aria-labelledby="gratis-tools-titel">
   <div class="tp-wrap tp-stack-xl">
     <div class="tp-stack tp-narrow">
       <p class="tp-eyebrow">/ gratis tools</p>
@@ -158,9 +187,6 @@
       (dict "page" "sc-per-beperking" "tag" "wcag" "titel" "Succescriteria per beperking" "tekst" "De 55 succescriteria van WCAG 2.2, ingedeeld per beperking. Filter op visueel, auditief, motorisch, cognitief of neurologisch." "link" "Naar de succescriteria per beperking")
       (dict "page" "toegankelijkheidsverklaring-generator" "tag" "eaa" "titel" "Toegankelijkheidsverklaring voor bedrijven" "tekst" "Stel stap voor stap een toegankelijkheidsverklaring op voor je bedrijf, volgens de European Accessibility Act (EAA)." "link" "Verklaring opstellen onder de EAA")
       (dict "page" "toegankelijkheidsverklaring-wdo" "tag" "bdto" "titel" "Toegankelijkheidsverklaring onder het BDTO" "tekst" "Stel stap voor stap een toegankelijkheidsverklaring op voor culturele en onderwijsinstellingen, volgens het Besluit digitale toegankelijkheid overheid (BDTO)." "link" "Verklaring opstellen onder het BDTO")
-      (dict "page" "quiz-developers" "tag" "quiz" "titel" "Quiz voor developers" "tekst" "Test je WCAG-kennis met praktijkscenario's. Je bekijkt een interactieve demo en de broncode, en kiest welke antwoorden kloppen." "link" "Naar de quiz voor developers")
-      (dict "page" "quiz-webredactie" "tag" "quiz" "titel" "Quiz voor webredacties" "tekst" "20 vragen over toegankelijke content, zoals alt-teksten en koppen. Voor iedereen die teksten op een website publiceert." "link" "Naar de quiz voor webredacties")
-      (dict "page" "quiz-museum" "tag" "quiz" "titel" "Quiz voor musea en culturele instellingen" "tekst" "20 vragen voor webredacteuren van musea, theaters en festivals. Test hoe toegankelijk jullie content is." "link" "Naar de quiz voor musea")
     }}
     <div class="tp-freegrid">
       {{ range $i, $t := $gratis }}
