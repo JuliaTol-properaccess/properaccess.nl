@@ -341,10 +341,10 @@
     perfect: 'Goed',
     incorrect: 'Fout',
     resultsTitle: 'Quiz voltooid',
-    resultsExcellent: 'Je mag onze audit doen (grapje \u2014 of toch niet?).',
+    resultsExcellent: 'Je mag onze audit doen (grapje, of toch niet?).',
     resultsGood: 'Goed bezig. Met een paar kleine aanpassingen maak je een groot verschil.',
-    resultsFair: 'De basis is er, maar er zijn blinde vlekken. Een quickscan kan helpen.',
-    resultsNeedsWork: 'Geen zorgen \u2014 de meeste museumwebsites scoren niet veel beter. Tijd voor een gesprek?',
+    resultsFair: 'De basis is er, maar een paar onderwerpen ken je nog niet. Een quickscan kan helpen.',
+    resultsNeedsWork: 'Geen zorgen: dit zijn fouten die we bij veel museumwebsites zien. Tijd voor een gesprek?',
     reviewTitle: 'Antwoorden bekijken',
     retakeBtn: 'Opnieuw doen',
     reviewBtn: 'Antwoorden bekijken',
@@ -364,7 +364,7 @@
   function t(key) { return UI[key] || key; }
 
   /* ═══════════════════════════════════════════
-     Question data — 20 questions, single-select
+     Question data: 20 questions, single-select
      ═══════════════════════════════════════════ */
 
   var Q = [
@@ -380,7 +380,7 @@
         { l: 'D', t: 'Je laat het alt-attribuut helemaal weg' }
       ],
       correct: ['A', 'C'],
-      explanation: 'Dit mag je als webredacteur zelf bepalen. De foto voegt geen informatie toe die niet al in de kop staat, dus alt="" (C) is prima. Maar een korte beschrijving zoals "Foto van het museumgebouw vanaf de straat" (A) is ook goed \u2014 het geeft de sfeer mee. Optie B herhaalt de kop, dat is overbodig. Optie D is het slechtst: zonder alt-attribuut leest een schermlezer de bestandsnaam voor, zoals "DSC_0482_homepage_header_final_v3.jpg".'
+      explanation: 'Dit mag je als webredacteur zelf bepalen. De foto voegt geen informatie toe die niet al in de kop staat, dus alt="" (C) is prima. Maar een korte beschrijving zoals "Foto van het museumgebouw vanaf de straat" (A) is ook goed: het geeft de sfeer mee. Optie B herhaalt de kop, dat is overbodig. Optie D is het slechtst: zonder alt-attribuut leest een schermlezer de bestandsnaam voor, zoals "DSC_0482_homepage_header_final_v3.jpg".'
     },
     {
       id: 2,
@@ -394,7 +394,7 @@
         { l: 'D', t: '"het-melkmeisje-vermeer-1660.jpg"' }
       ],
       correct: 'C',
-      explanation: 'Het bijschrift geeft al de titel en de kunstenaar. De alt-tekst moet beschrijven wat er op de afbeelding te zien is. "Schilderij" (A) is te vaag. Optie B herhaalt het bijschrift. Optie D is een bestandsnaam \u2014 dit gebeurt als het CMS automatisch de bestandsnaam invult. We zagen dit bij meerdere museumsites.'
+      explanation: 'Het bijschrift geeft al de titel en de kunstenaar. De alt-tekst moet beschrijven wat er op de afbeelding te zien is. "Schilderij" (A) is te vaag. Optie B herhaalt het bijschrift. Optie D is een bestandsnaam. Dit gebeurt als het CMS automatisch de bestandsnaam invult. We zagen dit bij meerdere museumsites.'
     },
     {
       id: 3,
@@ -402,13 +402,13 @@
       svg: 'headingStructure',
       scenario: 'Je maakt een pagina over openingstijden. De paginatitel is "Bezoek ons museum" (h1). Daaronder wil je secties maken voor "Openingstijden", "Bereikbaarheid" en "Toegangsprijzen". Welk kopniveau gebruik je?',
       options: [
-        { l: 'A', t: 'h1 \u2014 het zijn belangrijke onderwerpen' },
-        { l: 'B', t: 'h2 \u2014 het zijn subsecties van de h1' },
-        { l: 'C', t: 'h3 \u2014 h2 gebruik je alleen voor hele belangrijke koppen' },
+        { l: 'A', t: 'h1: het zijn belangrijke onderwerpen' },
+        { l: 'B', t: 'h2: het zijn subsecties van de h1' },
+        { l: 'C', t: 'h3: h2 gebruik je alleen voor hele belangrijke koppen' },
         { l: 'D', t: 'Je mag deze tekst vet maken met de B-knop' }
       ],
       correct: 'B',
-      explanation: 'Kopniveaus werken als een inhoudsopgave. De h1 is de paginatitel, de h2\'s zijn de hoofdsecties. Er mag maar \u00e9\u00e9n h1 per pagina zijn (A). Kopniveaus sla je niet over: van h1 naar h3 (C) is verwarrend. Vet (D) is geen kop \u2014 een schermlezer herkent het niet als zodanig.'
+      explanation: 'Kopniveaus werken als een inhoudsopgave. De h1 is de paginatitel, de h2\'s zijn de hoofdsecties. Gebruik bij voorkeur \u00e9\u00e9n h1 per pagina (A). Een niveau overslaan, van h1 naar h3 (C), maakt de structuur minder duidelijk. Dat zijn geen WCAG-eisen, wel goede gewoontes. Vet (D) is geen kop: een schermlezer herkent het niet als kop.'
     },
     {
       id: 4,
@@ -431,12 +431,12 @@
       scenario: 'Op de tentoonstellingspagina staan drie blokken met elk een link met de tekst "Lees meer". Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, "Lees meer" staat onder het bericht en dat is duidelijk genoeg' },
-        { l: 'B', t: 'Een schermlezer leest drie keer "Lees meer" voor zonder context \u2014 de gebruiker weet niet waar elke link naartoe gaat' },
+        { l: 'B', t: 'Een schermlezer leest drie keer "Lees meer" voor zonder context: de gebruiker weet niet waar elke link naartoe gaat' },
         { l: 'C', t: '"Lees meer" is te informeel voor een museumwebsite' },
         { l: 'D', t: 'De links moeten minstens vijf woorden bevatten' }
       ],
       correct: 'B',
-      explanation: 'Een schermlezergebruiker kan een lijst van alle links opvragen. Als er drie keer "Lees meer" staat, is niet te onderscheiden welke link bij welke tentoonstelling hoort. Beter: "Meer over Vermeer-tentoonstelling", "Meer over Mondriaan-expositie", enzovoort.'
+      explanation: 'Een schermlezergebruiker kan een lijst van alle links opvragen. Als er drie keer "Lees meer" staat, is niet te onderscheiden welke link bij welke tentoonstelling hoort. Staat de link in een eigen blok, los van de tekst, dan kan software niet bepalen waar hij heen gaat. Beter: "Meer over Vermeer-tentoonstelling", "Meer over Mondriaan-expositie", enzovoort.'
     },
     {
       id: 6,
@@ -450,16 +450,16 @@
         { l: 'D', t: '"https://tickets.museum.nl/koop-nu"' }
       ],
       correct: 'C',
-      explanation: 'Als een link in een nieuw venster opent, moet de gebruiker dat van tevoren weten. "Klik hier" (A) is nietszeggend. "Tickets kopen" (B) mist de waarschuwing. Een kale URL (D) wordt letter voor letter voorgelezen door een schermlezer.'
+      explanation: '"Tickets kopen" (B) is een goede linktekst. C is beter, omdat de bezoeker dan vooraf weet dat er een nieuw venster opent. Dat is geen eis op niveau AA. "Klik hier" (A) is nietszeggend. Een kale URL (D) wordt letter voor letter voorgelezen door een schermlezer.'
     },
     {
       id: 7,
       cat: 'paginatitel',
       svg: 'heading',
-      scenario: 'Je maakt vijf pagina\'s aan voor een nieuwe tentoonstelling. Het CMS vult automatisch "Museum \u2014 Tentoonstellingen" in als paginatitel voor allemaal. Wat doe je?',
+      scenario: 'Je maakt vijf pagina\'s aan voor een nieuwe tentoonstelling. Het CMS vult automatisch "Museum | Tentoonstellingen" in als paginatitel voor allemaal. Wat doe je?',
       options: [
         { l: 'A', t: 'Prima zo, de titel klopt toch' },
-        { l: 'B', t: 'Je past elke paginatitel aan: "Kunstwerken \u2014 Vermeer-tentoonstelling \u2014 Museum"' },
+        { l: 'B', t: 'Je past elke paginatitel aan: "Kunstwerken | Vermeer-tentoonstelling | Museum"' },
         { l: 'C', t: 'Je verwijdert de paginatitel, die ziet toch niemand' },
         { l: 'D', t: 'Je maakt alle titels zo kort mogelijk: "Vermeer"' }
       ],
@@ -472,7 +472,7 @@
       svg: 'threeCardsDate',
       scenario: 'Je maakt een nieuwsoverzicht. Elk artikel heeft een datum, categorie, afbeelding en kop. In het CMS voer je ze in deze volgorde in: datum, categorie, afbeelding, kop. Waarom is dat een probleem?',
       options: [
-        { l: 'A', t: 'Een schermlezer leest de datum en categorie voor voordat de kop komt \u2014 daardoor lijkt de datum bij het vorige artikel te horen' },
+        { l: 'A', t: 'Een schermlezer leest de datum en categorie voor voordat de kop komt. Daardoor lijkt de datum bij het vorige artikel te horen' },
         { l: 'B', t: 'Google kan de artikelen niet indexeren' },
         { l: 'C', t: 'De afbeelding laadt langzamer als die voor de kop staat' }
       ],
@@ -500,12 +500,12 @@
       scenario: 'Je plaatst witte tekst over een sfeervolle, donkere foto van een tentoonstellingszaal. Waar moet je op letten?',
       options: [
         { l: 'A', t: 'De tekst moet minimaal 16px zijn' },
-        { l: 'B', t: 'De contrastverhouding tussen tekst en achtergrond moet minstens 4,5:1 zijn \u2014 en bij foto\'s varieert de achtergrondkleur' },
+        { l: 'B', t: 'De contrastverhouding tussen tekst en achtergrond moet minstens 4,5:1 zijn, of 3:1 bij grote tekst, en bij foto\'s varieert de achtergrondkleur' },
         { l: 'C', t: 'Witte tekst op een donkere foto is altijd goed leesbaar' },
         { l: 'D', t: 'Je hoeft alleen te controleren of de tekst er mooi uitziet' }
       ],
       correct: 'B',
-      explanation: 'Bij tekst op een foto verschilt het contrast per plek. Gebruik een semi-transparant vlak achter de tekst. Grotere tekst (A) lost het contrastprobleem niet op. Foto\'s wisselen vaak (C), en "mooi" (D) is niet hetzelfde als "leesbaar".'
+      explanation: 'Bij tekst op een foto verschilt het contrast per plek. Gebruik een semi-transparant vlak achter de tekst. Een minimale lettergrootte (A) zegt niets over contrast. Foto\'s wisselen vaak (C), en "mooi" (D) is niet hetzelfde als "leesbaar".'
     },
     {
       id: 11,
@@ -514,7 +514,7 @@
       scenario: 'In het contactformulier gebruik je placeholder-tekst ("Je naam") als label voor de invoervelden. Wat is het probleem?',
       options: [
         { l: 'A', t: 'Niets, placeholders zijn hetzelfde als labels' },
-        { l: 'B', t: 'Placeholder-tekst verdwijnt zodra iemand begint te typen \u2014 dan weet de gebruiker niet meer welk veld het is' },
+        { l: 'B', t: 'Placeholder-tekst verdwijnt zodra iemand begint te typen. Dan weet de gebruiker niet meer welk veld het is' },
         { l: 'C', t: 'Placeholders zijn alleen zichtbaar op mobiel' },
         { l: 'D', t: 'Placeholders worden niet vertaald door Google Translate' }
       ],
@@ -528,7 +528,7 @@
       scenario: 'Een bezoeker vult het bestelformulier in maar vergeet een e-mailadres. De foutmelding luidt: "Vul een geldig e-mailadres in." Wat is er mis met deze foutmelding?',
       options: [
         { l: 'A', t: 'Niets, dit is een duidelijke instructie' },
-        { l: 'B', t: 'De melding zegt wat je moet doen, maar niet wat er fout is gegaan \u2014 beter: "Het veld E-mailadres is niet ingevuld"' },
+        { l: 'B', t: 'De melding zegt wat je moet doen, maar niet wat er fout is gegaan. Beter: "Het veld E-mailadres is niet ingevuld"' },
         { l: 'C', t: 'De melding is te lang' },
         { l: 'D', t: 'De melding moet in het Engels zijn' }
       ],
@@ -546,7 +546,7 @@
         { l: 'C', t: 'De PDF kleiner maken voor sneller laden' }
       ],
       correct: 'B',
-      explanation: 'Een ongetagde PDF is voor een schermlezer een blanco pagina. Teksten, koppen, lijsten en afbeeldingen moeten in de PDF getagd zijn. Bij drie van de vier musea die we auditeerden waren de PDF\'s volledig ontoegankelijk.'
+      explanation: 'In een ongetagde PDF vindt een schermlezer geen koppen, lijsten of alt-teksten. Teksten, koppen, lijsten en afbeeldingen moeten in de PDF getagd zijn. Bij drie van de vier musea die we auditeerden waren de PDF\'s volledig ontoegankelijk.'
     },
     {
       id: 14,
@@ -560,7 +560,7 @@
         { l: 'D', t: 'Nederlandse ondertiteling die overeenkomt met het gesproken commentaar' }
       ],
       correct: 'B',
-      explanation: 'Ondertiteling moet nauwkeurig overeenkomen met wat er gezegd wordt, in de taal die gesproken wordt. Automatische ondertiteling (C) bevat vaak fouten. Nederlandse ondertiteling (D) voor Engelse spraak is een vertaling, geen ondertiteling \u2014 dat is een andere eis.'
+      explanation: 'Ondertiteling moet nauwkeurig overeenkomen met wat er gezegd wordt, in de taal die gesproken wordt. Automatische ondertiteling (C) bevat vaak fouten. Nederlandse ondertiteling (D) voor Engelse spraak is een vertaling. Die telt voor WCAG niet als ondertiteling.'
     },
     {
       id: 15,
@@ -570,7 +570,7 @@
       options: [
         { l: 'A', t: 'Met tabs en spaties zodat het er netjes uitziet' },
         { l: 'B', t: 'Als een echte HTML-tabel met koprij (&lt;th&gt;) zodat een schermlezer de kolom- en rijkoppen kan voorlezen' },
-        { l: 'C', t: 'Als een afbeelding van een tabel \u2014 dan ziet het er altijd goed uit' },
+        { l: 'C', t: 'Als een afbeelding van een tabel: dan ziet het er altijd goed uit' },
         { l: 'D', t: 'Als een opsomming: "Volwassenen: \u20ac20, Kinderen: gratis"' }
       ],
       correct: 'B',
@@ -588,7 +588,7 @@
         { l: 'D', t: 'Niets, iedereen weet wat een sterretje betekent' }
       ],
       correct: 'B',
-      explanation: 'Niet iedereen kent de conventie van het rode sterretje \u2014 en een schermlezer leest het voor als "ster" of slaat het over. Leg bovenaan het formulier uit wat het symbool betekent. Dit ontbrak bij meerdere museumformulieren.'
+      explanation: 'Dit is een advies, geen fout in een audit. Niet iedereen kent de conventie van het rode sterretje, en een schermlezer leest het voor als "ster" of slaat het over. Leg bovenaan het formulier uit wat het symbool betekent. Dit ontbrak bij meerdere museumformulieren.'
     },
     {
       id: 17,
@@ -602,13 +602,13 @@
         { l: 'D', t: 'Het YouTube-logo verbergen' }
       ],
       correct: 'B',
-      explanation: 'Een iframe zonder titel is voor een schermlezer een raadsel. De gebruiker hoort alleen "iframe" zonder te weten wat erin zit. Autoplay (A) is juist een toegankelijkheidsprobleem. Kwaliteit (C) en logo (D) zijn cosmetisch.'
+      explanation: 'Bij een iframe zonder titel hoort de gebruiker alleen "iframe", zonder te weten wat erin zit. Autoplay (A) is juist een toegankelijkheidsprobleem. Kwaliteit (C) en logo (D) zijn cosmetisch.'
     },
     {
       id: 18,
       cat: 'alt-teksten',
       svg: 'bannerText',
-      scenario: 'De grafisch ontwerper levert een banner aan voor de homepage: een afbeelding met daarin de tekst "Zomerprogramma 2026 \u2014 Ontdek onze activiteiten". Wat is het probleem?',
+      scenario: 'De grafisch ontwerper levert een banner aan voor de homepage: een afbeelding met daarin de tekst "Zomerprogramma 2026: ontdek onze activiteiten". Wat is het probleem?',
       options: [
         { l: 'A', t: 'De afbeelding is te groot voor mobiel' },
         { l: 'B', t: 'Tekst in een afbeelding kan niet worden vergroot door gebruikers die inzoomen, wordt niet voorgelezen door schermlezers (tenzij er alt-tekst is), en is niet vertaalbaar' },
@@ -630,7 +630,7 @@
         { l: 'D', t: 'Of de antwoorden niet te lang zijn' }
       ],
       correct: 'A',
-      explanation: 'Een schermlezergebruiker navigeert via koppen. Als de accordeon-vragen niet als koppen (h2 of h3) zijn gemarkeerd, kan de gebruiker niet snel door de lijst scannen. Gebruik geen vet (B) om ze te laten opvallen \u2014 dat geeft geen structuur.'
+      explanation: 'Een schermlezergebruiker navigeert via koppen. Als de accordeon-vragen niet als koppen (h2 of h3) zijn gemarkeerd, kan de gebruiker niet snel door de lijst scannen. Gebruik geen vet (B) om ze te laten opvallen: dat geeft geen structuur.'
     },
     {
       id: 20,
@@ -639,7 +639,7 @@
       scenario: 'Je plakt een tekst in het CMS. In de broncode zie je dat er drie alinea\'s in \u00e9\u00e9n &lt;p&gt;-element staan, gescheiden door &lt;br&gt;-tags. Waarom is dat een probleem?',
       options: [
         { l: 'A', t: 'Het ziet er visueel anders uit' },
-        { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren \u2014 de structuur gaat verloren' },
+        { l: 'B', t: 'Een schermlezer behandelt het als \u00e9\u00e9n lange alinea en kan niet per alinea navigeren: de structuur gaat verloren' },
         { l: 'C', t: '&lt;br&gt;-tags zijn verouderd' },
         { l: 'D', t: 'Google straft je af voor het gebruik van &lt;br&gt;' }
       ],
