@@ -1,0 +1,7 @@
+{
+  "name": "blokkadecheck",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "browser": { "binding": "BROWSER" },
+  "rules": [{ "type": "Text", "globs": ["**/axe.min.js"], "fallthrough": true }]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "blokkadecheck",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "^2.0.0",
+    "axe-core": "^4.10.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
