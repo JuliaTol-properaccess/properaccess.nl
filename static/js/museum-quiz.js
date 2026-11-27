@@ -449,7 +449,7 @@
         { l: 'C', t: '"Tickets kopen (opent in nieuw venster)"' },
         { l: 'D', t: '"https://tickets.museum.nl/koop-nu"' }
       ],
-      correct: 'C',
+      correct: ['B', 'C'],
       explanation: '"Tickets kopen" (B) is een goede linktekst. C is beter, omdat de bezoeker dan vooraf weet dat er een nieuw venster opent. Dat is geen eis op niveau AA. "Klik hier" (A) is nietszeggend. Een kale URL (D) wordt letter voor letter voorgelezen door een schermlezer.'
     },
     {
