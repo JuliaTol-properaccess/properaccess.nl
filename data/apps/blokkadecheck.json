@@ -1,0 +1,134 @@
+{
+  "axeVersie": "4.14.1",
+  "toelichting": "Koppeling van axe-regels naar profielen voor de Blokkadecheck. Alleen regels waarbij het onderdeel voor iemand met deze beperking onbruikbaar is. Een axe-fout zonder regel in dit bestand krijgt geen blok. Regels met paginabreed: true hebben geen plek op de pagina en komen alleen in de lijst.",
+  "profielen": [
+    {
+      "id": "schermlezer",
+      "label": "Schermlezer",
+      "regels": [
+        {
+          "regel": "image-alt",
+          "sc": ["1.1.1"],
+          "titel": "Afbeelding zonder beschrijving",
+          "uitleg": "De schermlezer zegt alleen \"afbeelding\" of leest de bestandsnaam voor, dus wat er op de afbeelding staat, hoort de bezoeker niet."
+        },
+        {
+          "regel": "svg-img-alt",
+          "sc": ["1.1.1"],
+          "titel": "Afbeelding of pictogram zonder beschrijving",
+          "uitleg": "De schermlezer zegt niet wat de afbeelding of het pictogram laat zien."
+        },
+        {
+          "regel": "role-img-alt",
+          "sc": ["1.1.1"],
+          "titel": "Afbeelding of pictogram zonder beschrijving",
+          "uitleg": "De schermlezer zegt niet wat de afbeelding of het pictogram laat zien."
+        },
+        {
+          "regel": "area-alt",
+          "sc": ["2.4.4", "4.1.2"],
+          "titel": "Klikbaar deel van een afbeelding zonder beschrijving",
+          "uitleg": "De schermlezer zegt niet waar dit deel van de afbeelding heen gaat."
+        },
+        {
+          "regel": "input-image-alt",
+          "sc": ["1.1.1", "4.1.2"],
+          "titel": "Knop van een afbeelding zonder beschrijving",
+          "uitleg": "De schermlezer zegt alleen \"knop\". Wat de knop doet, hoort de bezoeker niet."
+        },
+        {
+          "regel": "button-name",
+          "sc": ["4.1.2"],
+          "titel": "Knop zonder tekst",
+          "uitleg": "De schermlezer zegt alleen \"knop\". Wat de knop doet, hoort de bezoeker niet."
+        },
+        {
+          "regel": "input-button-name",
+          "sc": ["4.1.2"],
+          "titel": "Knop zonder tekst",
+          "uitleg": "De schermlezer zegt alleen \"knop\". Wat de knop doet, hoort de bezoeker niet."
+        },
+        {
+          "regel": "aria-command-name",
+          "sc": ["4.1.2"],
+          "titel": "Knop zonder tekst",
+          "uitleg": "De schermlezer zegt alleen \"knop\" of \"menu-item\". Wat het onderdeel doet, hoort de bezoeker niet."
+        },
+        {
+          "regel": "link-name",
+          "sc": ["2.4.4", "4.1.2"],
+          "titel": "Link zonder tekst",
+          "uitleg": "De schermlezer zegt alleen \"link\" of leest het webadres voor. Waar de link heen gaat, hoort de bezoeker niet."
+        },
+        {
+          "regel": "label",
+          "sc": ["4.1.2"],
+          "titel": "Invulveld zonder omschrijving",
+          "uitleg": "De schermlezer zegt alleen \"invoerveld\". Wat de bezoeker moet invullen, hoort die niet."
+        },
+        {
+          "regel": "aria-input-field-name",
+          "sc": ["4.1.2"],
+          "titel": "Invulveld zonder omschrijving",
+          "uitleg": "De schermlezer zegt niet wat de bezoeker hier moet invullen of kiezen."
+        },
+        {
+          "regel": "select-name",
+          "sc": ["4.1.2"],
+          "titel": "Keuzelijst zonder omschrijving",
+          "uitleg": "De schermlezer leest de keuzes voor, maar niet waar de keuze over gaat."
+        },
+        {
+          "regel": "aria-toggle-field-name",
+          "sc": ["4.1.2"],
+          "titel": "Aan/uit-knop of vinkje zonder omschrijving",
+          "uitleg": "De schermlezer zegt wel of het aan of uit staat, maar niet waarvoor."
+        },
+        {
+          "regel": "nested-interactive",
+          "sc": ["4.1.2"],
+          "titel": "Knop of link binnen een andere knop of link",
+          "uitleg": "De schermlezer leest het binnenste onderdeel niet apart voor, dus de bezoeker kan het niet vinden of gebruiken."
+        },
+        {
+          "regel": "aria-hidden-focus",
+          "sc": ["4.1.2"],
+          "titel": "Onderdeel dat verborgen is voor de schermlezer",
+          "uitleg": "De bezoeker komt met de Tab-toets op dit onderdeel, maar de schermlezer zegt niets."
+        },
+        {
+          "regel": "aria-hidden-body",
+          "sc": ["1.3.1", "4.1.2"],
+          "titel": "Hele pagina verborgen voor de schermlezer",
+          "uitleg": "De schermlezer leest niets van deze pagina voor.",
+          "paginabreed": true
+        },
+        {
+          "regel": "no-autoplay-audio",
+          "sc": ["1.4.2"],
+          "titel": "Geluid dat vanzelf start",
+          "uitleg": "Het geluid speelt door de schermlezer heen, waardoor de bezoeker de pagina niet meer verstaat."
+        }
+      ]
+    },
+    {
+      "id": "slechtziend",
+      "label": "Slechtziend",
+      "regels": [
+        {
+          "regel": "color-contrast",
+          "sc": ["1.4.3"],
+          "titel": "Tekst met te weinig contrast",
+          "uitleg": "De tekst verschilt te weinig van de achtergrond. Wie slecht ziet, kan hem niet lezen."
+        },
+        {
+          "regel": "meta-viewport",
+          "sc": ["1.4.4"],
+          "titel": "Vergroten uitgezet op de telefoon",
+          "uitleg": "Op een telefoon kan de bezoeker de pagina niet groter maken met twee vingers, dus kleine tekst blijft onleesbaar.",
+          "paginabreed": true
+        }
+      ]
+    }
+  ]
+}
