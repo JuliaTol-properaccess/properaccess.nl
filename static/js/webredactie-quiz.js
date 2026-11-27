@@ -225,10 +225,10 @@
     perfect: 'Goed',
     incorrect: 'Fout',
     resultsTitle: 'Quiz voltooid',
-    resultsExcellent: 'Toegankelijkheidskampioen — je weet precies wat je doet.',
-    resultsGood: 'Goed op weg — met een paar tips ben je helemaal bij.',
-    resultsFair: 'Basis is er — tijd om je kennis te verdiepen.',
-    resultsNeedsWork: 'Geen zorgen — iedereen begint ergens.',
+    resultsExcellent: 'Toegankelijkheidskampioen: je weet precies wat je doet.',
+    resultsGood: 'Goed op weg. Met een paar tips ben je helemaal bij.',
+    resultsFair: 'De basis is er. Tijd om je kennis te verdiepen.',
+    resultsNeedsWork: 'Geen zorgen, iedereen begint ergens.',
     reviewTitle: 'Antwoorden bekijken',
     retakeBtn: 'Opnieuw doen',
     reviewBtn: 'Antwoorden bekijken',
@@ -248,7 +248,7 @@
   function t(key) { return UI[key] || key; }
 
   /* ═══════════════════════════════════════════
-     Question data — 20 questions, single-select
+     Question data: 20 questions, single-select
      ═══════════════════════════════════════════ */
 
   var Q = [
@@ -277,7 +277,7 @@
         { l: 'D', t: '"Meer informatie hier"' }
       ],
       correct: 'C',
-      explanation: 'Als een afbeelding een link is, beschrijft de alt-tekst de bestemming van de link — niet wat er op de foto staat. Een schermlezergebruiker wil weten waar de link naartoe gaat.'
+      explanation: 'Als een afbeelding een link is, beschrijft de alt-tekst de bestemming van de link. Niet wat er op de foto staat. Een schermlezergebruiker wil weten waar de link naartoe gaat.'
     },
     {
       id: 3,
@@ -290,7 +290,7 @@
         { l: 'D', t: 'Korte alt-tekst en een volledige tekstversie dichtbij de afbeelding op de pagina' }
       ],
       correct: 'D',
-      explanation: 'Een infographic, organogram of schema bevat te veel informatie voor een alt-tekst (max 150 tekens). Geef een korte beschrijving als alt-tekst en zet de volledige inhoud als tekst op de pagina of link naar een uitgeschreven versie.'
+      explanation: 'Een infographic, organogram of schema bevat te veel informatie voor een alt-tekst. Een alt-tekst houd je kort. Geef een korte beschrijving als alt-tekst en zet de volledige inhoud als tekst op de pagina of link naar een uitgeschreven versie.'
     },
     {
       id: 4,
@@ -303,7 +303,7 @@
         { l: 'D', t: 'Je laat het alt-attribuut helemaal weg' }
       ],
       correct: 'C',
-      explanation: 'Een lege alt-tekst (alt="") vertelt de schermlezer: sla deze afbeelding over. Geen alt-attribuut (D) is fout — dan leest de schermlezer de bestandsnaam voor, zoals "DSC_0847_final_v2.jpg".'
+      explanation: 'Een lege alt-tekst (alt="") vertelt de schermlezer: sla deze afbeelding over. Geen alt-attribuut (D) is fout. Dan leest de schermlezer de bestandsnaam voor, zoals "DSC_0847_final_v2.jpg".'
     },
     {
       id: 5,
@@ -316,12 +316,12 @@
         { l: 'D', t: 'Een logo dat een link is naar de homepage heeft geen alt-tekst nodig' }
       ],
       correct: 'C',
-      explanation: 'De alt-tekst van een logo bevat de tekst die erin staat, bijvoorbeeld "Gemeente Amsterdam". Als het logo ook een link is, mag je de bestemming toevoegen: "Gemeente Amsterdam — Ga naar de homepage."'
+      explanation: 'De alt-tekst van een logo bevat de tekst die erin staat, bijvoorbeeld "Gemeente Amsterdam". Als het logo ook een link is, mag je de bestemming toevoegen: "Gemeente Amsterdam, ga naar de homepage".'
     },
     {
       id: 6,
       svg: 'heading',
-      scenario: 'Je wilt een tekst visueel groter en opvallender maken. Wat doe je?',
+      scenario: 'Je wilt een woord of zin in een alinea visueel groter en opvallender maken. Wat doe je?',
       options: [
         { l: 'A', t: 'Je maakt er een H2 van' },
         { l: 'B', t: 'Je past de lettergrootte aan via de opmaakopties in je tekstbewerker' },
@@ -329,7 +329,7 @@
         { l: 'D', t: 'Je maakt er een H1 van, want die is het grootst' }
       ],
       correct: 'B',
-      explanation: 'Tekst groter maken doe je via de opmaakopties in je tekstbewerker, niet met koppen of bold. Koppen (A, D) zijn er voor structuur, niet voor opmaak — een schermlezer gebruikt koppen om door de pagina te navigeren. Bold (C) is bedoeld voor nadruk op een woord of zin, niet om tekst visueel groter te maken.'
+      explanation: 'Tekst groter maken doe je via de opmaakopties in je tekstbewerker, niet met koppen of bold. Koppen (A, D) zijn er voor structuur, niet voor opmaak. Een schermlezer gebruikt koppen om door de pagina te navigeren. Is de tekst een tussenkop, maak er dan wel een kop van. Bold (C) is bedoeld voor nadruk op een woord of zin, niet om tekst visueel groter te maken.'
     },
     {
       id: 7,
@@ -342,7 +342,7 @@
         { l: 'D', t: 'Niets, dit is correct' }
       ],
       correct: 'B',
-      explanation: 'Na een H2 hoort een H3 te komen, niet een H4. Het overslaan van een kopniveau maakt de structuur onduidelijk voor schermlezers die van kop naar kop navigeren. Meerdere H2\'s op een pagina mag wel — dat is juist hoe je parallelle secties aangeeft.'
+      explanation: 'Na een H2 hoort een H3 te komen, niet een H4. Het overslaan van een kopniveau maakt de structuur onduidelijk voor schermlezers die van kop naar kop navigeren. Volgens WCAG is een overgeslagen kopniveau geen fout, maar het is wel verwarrend. Houd de niveaus daarom op volgorde. Meerdere H2\'s op een pagina mag wel: dat is juist hoe je parallelle secties aangeeft.'
     },
     {
       id: 8,
@@ -350,7 +350,7 @@
       scenario: 'Een collega maakt tussenkopjes vet met de B-knop en zet de eerste alinea van elk artikel cursief met de I-knop. Wat gaat er mis?',
       options: [
         { l: 'A', t: 'Niets, dat is een gangbare opmaakstijl' },
-        { l: 'B', t: 'Vet en cursief zijn voor nadruk op losse woorden of korte zinnen — niet voor hele alinea\'s of tussenkopjes' },
+        { l: 'B', t: 'Vet en cursief zijn voor nadruk op losse woorden of korte zinnen, niet voor hele alinea\'s of tussenkopjes' },
         { l: 'C', t: 'Je mag de B-knop wel gebruiken voor tussenkopjes, maar de I-knop niet voor alinea\'s' },
         { l: 'D', t: 'Je moet de B- en I-knoppen helemaal niet gebruiken' }
       ],
@@ -381,7 +381,7 @@
         { l: 'D', t: '"https://www.example.com/voorwaarden/retourneren"' }
       ],
       correct: 'C',
-      explanation: 'Een schermlezergebruiker navigeert vaak van link naar link. "Klik hier" en "Lees meer" zeggen dan niets over de bestemming. Stel je voor dat je tien keer "Lees meer" achter elkaar hoort — welke is welke?'
+      explanation: 'Een schermlezergebruiker navigeert vaak van link naar link. "Klik hier" en "Lees meer" zeggen dan niets over de bestemming. Stel je voor dat je tien keer "Lees meer" achter elkaar hoort. Welke is welke?'
     },
     {
       id: 11,
@@ -399,7 +399,7 @@
     {
       id: 12,
       svg: 'newWindow',
-      scenario: 'Je link opent in een nieuw tabblad. Wat moet je doen?',
+      scenario: 'Een link moet in een nieuw tabblad openen. Wat doe je?',
       options: [
         { l: 'A', t: 'Niets, dat is normaal tegenwoordig' },
         { l: 'B', t: 'Vermeld in de linktekst dat het in een nieuw venster opent' },
@@ -407,7 +407,7 @@
         { l: 'D', t: 'Zorg dat het niet in een nieuw venster opent' }
       ],
       correct: 'B',
-      explanation: 'Een bezoeker met een schermlezer moet weten dat een nieuw venster wordt geopend. Vermeld dit in de linktekst, bijvoorbeeld: "Bekijk de voorwaarden (opent in nieuw venster)". Niets doen (A) is verwarrend — de terugknop werkt niet meer. Een icoontje alleen (C) helpt niet als het geen tekstalternatief heeft.'
+      explanation: 'Op niveau AA is dit geen harde eis, maar een bezoeker met een schermlezer wil wel weten dat er een nieuw venster opent. Vermeld dit daarom in de linktekst, bijvoorbeeld: "Bekijk de voorwaarden (opent in nieuw venster)". Niets doen (A) is verwarrend: de terugknop werkt niet meer. Een icoontje alleen (C) helpt niet als het geen tekstalternatief heeft.'
     },
     {
       id: 13,
@@ -441,7 +441,7 @@
       scenario: 'Je plaatst een banner met witte tekst over een foto. Wat moet je controleren?',
       options: [
         { l: 'A', t: 'Of de afbeelding niet te groot is voor de pagina' },
-        { l: 'B', t: 'Of het contrast tussen de tekst en de achtergrond minimaal 4.5:1 is' },
+        { l: 'B', t: 'Of het contrast tussen de tekst en de achtergrond minimaal 4,5:1 is (3:1 bij grote tekst)' },
         { l: 'C', t: 'Of de tekst in het midden van de afbeelding staat' },
         { l: 'D', t: 'Of de bestandsgrootte acceptabel is' }
       ],
@@ -459,7 +459,7 @@
         { l: 'D', t: 'De elementen uitlijnen met spaties' }
       ],
       correct: 'B',
-      explanation: 'Het kolommenblok in je tekstbewerker is de juiste keuze. Het maakt een visuele layout zonder de inhoud ontoegankelijk te maken. Een tabel (A) is bedoeld voor data — een schermlezer leest tabelcellen voor met rij- en kolomaanduiding, wat verwarrend is bij layout. De tekst korter maken (C) lost het probleem niet op. Spaties (D) worden in HTML genegeerd, dus de witruimte verdwijnt.'
+      explanation: 'Het kolommenblok in je tekstbewerker is de juiste keuze. Het maakt een visuele layout zonder de inhoud ontoegankelijk te maken. Een tabel (A) is bedoeld voor gegevens. Gebruik je hem voor de opmaak, dan leest een schermlezer hem vaak toch als tabel voor, met rij- en kolomaanduiding. De tekst korter maken (C) lost het probleem niet op. Spaties (D) worden in HTML genegeerd, dus de witruimte verdwijnt.'
     },
     {
       id: 17,
@@ -481,7 +481,7 @@
       options: [
         { l: 'A', t: 'Niets, de kleuren zijn duidelijk genoeg' },
         { l: 'B', t: 'Een legenda met de kleurnamen' },
-        { l: 'C', t: 'Extra visuele aanduidingen zoals arceringen of patronen' },
+        { l: 'C', t: 'Een extra aanduiding naast kleur, zoals patronen of labels bij de lijnen' },
         { l: 'D', t: 'Alleen een alt-tekst bij de grafiek' }
       ],
       correct: 'C',
